@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-17 00:14+0000\n"
+"POT-Creation-Date: 2022-09-18 00:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,6 +65,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession
+#: abaqus.Canvas.CanvasSession.CanvasSession
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession
 #: abaqus.Job.JobSession.JobSession abaqus.Odb.OdbSession.OdbSession
@@ -854,6 +855,7 @@ msgid "A repository of Drawing objects."
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession
+#: abaqus.Canvas.CanvasSession.CanvasSession
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession
 #: abaqus.Job.JobSession.JobSession abaqus.Odb.OdbSession.OdbSession
@@ -892,6 +894,19 @@ msgstr ""
 msgid ""
 "This method creates a Movie object from the contents of the specified "
 "file."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ""
+":py:obj:`Viewport <abaqus.Session.Session.Session.Viewport>`\\ "
+"\\(name\\[\\, origin\\, width\\, height\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:2 of
+msgid ""
+"This method creates a Viewport object with the specified origin and "
+"dimensions."
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -1377,6 +1392,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.Movie:5
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:5
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:5
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:5
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:5
@@ -1408,6 +1424,7 @@ msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.Movie
 #: abaqus.Animation.AnimationSession.AnimationSession.writeImageAnimation
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport
@@ -1498,6 +1515,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.Movie
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport
 #: abaqus.Job.JobSession.JobSession.Queue
@@ -1543,6 +1561,7 @@ msgid "An :py:class:`~abaqus.XY.AreaStyle.AreaStyle` object."
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.Movie
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport
 #: abaqus.Job.JobSession.JobSession.Queue
 #: abaqus.PathAndProbe.PathSession.PathSession.Path
@@ -1586,6 +1605,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession.Movie:15
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:15
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:15
 #: abaqus.Job.JobSession.JobSession.Queue:16
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:15
@@ -1600,7 +1620,7 @@ msgstr ""
 msgid "**name**"
 msgstr ""
 
-#: ../../docstring
+#: ../../docstring abaqus.Canvas.CanvasSession.CanvasSession.Viewport:15
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:15
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:15
 #: abaqus.Session.Drawing.Drawing.name:2
@@ -2705,6 +2725,128 @@ msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.TextStyle:34 of
 msgid "A :py:class:`~abaqus.XY.TextStyle.TextStyle` object."
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:10 of
+msgid ""
+"Check `Viewport on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:20 of
+msgid "**origin**"
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:18 of
+msgid ""
+"A pair of Floats specifying the **X**- and **Y**-coordinates in "
+"millimeters in the canvas coordinate system of the lower left corner of "
+"the viewport. The default origin is (0, 0)."
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:25 of
+msgid "**width**"
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:23 of
+msgid ""
+"A Float specifying the width in millimeters of the viewport. Possible "
+"values are 30 ≤ **width** ≤ (*maxWidth*). The default value is 120.0. "
+"Note: The maximum value of width (*maxWidth*) is the width of the screen "
+"in millimeters."
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:31 of
+msgid "**height**"
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:28 of
+msgid ""
+"A Float specifying the height in millimeters of the viewport. This height"
+" includes the title bar. Possible values are 30 ≤ **height** ≤ "
+"(*maxHeight*). The default value is 80.0. Note: The maximum value of "
+"height (*maxHeight*) is the height of the screen in millimeters."
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:35 of
+msgid "**border**"
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:34 of
+msgid ""
+"A Boolean specifying whether the viewport border is visible in a printed "
+"image. The default value is ON."
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:40 of
+msgid "**titleBar**"
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:38 of
+msgid ""
+"A Boolean specifying whether the viewport title should be displayed in a "
+"printed image. The default value is ON.If **border** = OFF, the title "
+"will not be visible, even if **titleBar** =ON."
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:46 of
+msgid "**titleStyle**"
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:43 of
+msgid ""
+"A SymbolicConstant specifying which title to use for the viewport title. "
+"Possible values are CUSTOM and SYSTEM. The default value is SYSTEM.If "
+"**titleStyle** = CUSTOM, **customTitleString** will be used. If "
+"**titleStyle** =  SYSTEM, a system-generated string will be used."
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:50 of
+msgid "**customTitleString**"
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:49 of
+msgid ""
+"A String specifying the viewport title when **titleStyle** =CUSTOM. The "
+"default value is an empty string."
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:58 of
+msgid ":obj:`Viewport`"
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:55 of
+msgid "A :py:class:`~abaqus.Canvas.Viewport.Viewport` object."
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:63 of
+msgid ""
+"SystemError: :obj:`the` :obj:`current` :obj:`viewport` :obj:`may` "
+":obj:`not` :obj:`be` :obj:`deleted`"
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:63 of
+msgid "If the user attempts to delete the only viewport."
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:66 of
+msgid ""
+"RangeError: :obj:`width` :obj:`must` :obj:`be` :obj:`a` :obj:`Float` "
+":obj:`in` :obj:`the` range: 30 <= :obj:`width` <= **maxWidth**"
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:66 of
+msgid "If **width** is out of range."
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:77 of
+msgid ""
+"RangeError: :obj:`height` :obj:`must` :obj:`be` :obj:`a` :obj:`Float` "
+":obj:`in` :obj:`the` range: 30 <= :obj:`width` <= **maxHeight**"
+msgstr ""
+
+#: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:69 of
+msgid "If **height** is out of range."
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromFile:13 of
@@ -5636,6 +5778,510 @@ msgid ""
 msgstr ""
 
 #: ../../reference/session.rst:52
+msgid "CanvasSession"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`attachedToGui "
+"<abaqus.Canvas.CanvasSession.CanvasSession.attachedToGui>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`replayInProgress "
+"<abaqus.Canvas.CanvasSession.CanvasSession.replayInProgress>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryFootprint "
+"<abaqus.Canvas.CanvasSession.CanvasSession.kernelMemoryFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryMaxFootprint "
+"<abaqus.Canvas.CanvasSession.CanvasSession.kernelMemoryMaxFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`kernelMemoryLimit "
+"<abaqus.Canvas.CanvasSession.CanvasSession.kernelMemoryLimit>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`colors <abaqus.Canvas.CanvasSession.CanvasSession.colors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`journalOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.journalOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`memoryReductionOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.memoryReductionOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`nodeQuery "
+"<abaqus.Canvas.CanvasSession.CanvasSession.nodeQuery>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sketcherOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.sketcherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`viewerOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.viewerOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`animationOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.animationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`aviOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.aviOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimationOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.imageAnimationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`imageAnimation "
+"<abaqus.Canvas.CanvasSession.CanvasSession.imageAnimation>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`quickTimeOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.quickTimeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`viewports "
+"<abaqus.Canvas.CanvasSession.CanvasSession.viewports>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`customData "
+"<abaqus.Canvas.CanvasSession.CanvasSession.customData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFieldReportOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultFieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultFreeBodyReportOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultFreeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`fieldReportOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.fieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodyReportOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.freeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbs <abaqus.Canvas.CanvasSession.CanvasSession.odbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`scratchOdbs "
+"<abaqus.Canvas.CanvasSession.CanvasSession.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultOdbDisplay "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultOdbDisplay>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultPlot "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultChartOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultChartOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbData <abaqus.Canvas.CanvasSession.CanvasSession.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`mdbData <abaqus.Canvas.CanvasSession.CanvasSession.mdbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`paths <abaqus.Canvas.CanvasSession.CanvasSession.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`freeBodies "
+"<abaqus.Canvas.CanvasSession.CanvasSession.freeBodies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`streams <abaqus.Canvas.CanvasSession.CanvasSession.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`spectrums "
+"<abaqus.Canvas.CanvasSession.CanvasSession.spectrums>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentProbeValues "
+"<abaqus.Canvas.CanvasSession.CanvasSession.currentProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.probeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`probeReport "
+"<abaqus.Canvas.CanvasSession.CanvasSession.probeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultProbeReport "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultProbeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`selectedProbeValues "
+"<abaqus.Canvas.CanvasSession.CanvasSession.selectedProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`printOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`epsOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.epsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pageSetupOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`pngOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.pngOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`psOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`svgOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.svgOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`tiffOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`autoColors "
+"<abaqus.Canvas.CanvasSession.CanvasSession.autoColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyColors <abaqus.Canvas.CanvasSession.CanvasSession.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyDataObjects "
+"<abaqus.Canvas.CanvasSession.CanvasSession.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`curves <abaqus.Canvas.CanvasSession.CanvasSession.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyPlots <abaqus.Canvas.CanvasSession.CanvasSession.xyPlots>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`charts <abaqus.Canvas.CanvasSession.CanvasSession.charts>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultXYReportOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`xyReportOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.xyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`views <abaqus.Canvas.CanvasSession.CanvasSession.views>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`networkDatabaseConnectors "
+"<abaqus.Canvas.CanvasSession.CanvasSession.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`displayGroups "
+"<abaqus.Canvas.CanvasSession.CanvasSession.displayGroups>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsInfo "
+"<abaqus.Canvas.CanvasSession.CanvasSession.graphicsInfo>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultGraphicsOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`graphicsOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.graphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultViewportAnnotationOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultViewportAnnotationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`queues <abaqus.Canvas.CanvasSession.CanvasSession.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`currentViewportName "
+"<abaqus.Canvas.CanvasSession.CanvasSession.currentViewportName>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`sessionState "
+"<abaqus.Canvas.CanvasSession.CanvasSession.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`images <abaqus.Canvas.CanvasSession.CanvasSession.images>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`movies <abaqus.Canvas.CanvasSession.CanvasSession.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultLightOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultLightOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`drawingArea "
+"<abaqus.Canvas.CanvasSession.CanvasSession.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ""
+":py:obj:`defaultMesherOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.defaultMesherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawings <abaqus.Canvas.CanvasSession.CanvasSession.drawings>`\\"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ""
+":py:obj:`Viewport <abaqus.Canvas.CanvasSession.CanvasSession.Viewport>`\\"
+" \\(name\\[\\, origin\\, width\\, height\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ""
+":py:obj:`setValues "
+"<abaqus.Canvas.CanvasSession.CanvasSession.setValues>`\\ "
+"\\(\\[kernelMemoryLimit\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ""
+":py:obj:`enableCADConnection "
+"<abaqus.Canvas.CanvasSession.CanvasSession.enableCADConnection>`\\ "
+"\\(CADName\\[\\, portNum\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ""
+":py:obj:`isCADConnectionEnabled "
+"<abaqus.Canvas.CanvasSession.CanvasSession.isCADConnectionEnabled>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ""
+":py:obj:`disableCADConnection "
+"<abaqus.Canvas.CanvasSession.CanvasSession.disableCADConnection>`\\ "
+"\\(CADName\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ""
+":py:obj:`enableParameterUpdate "
+"<abaqus.Canvas.CanvasSession.CanvasSession.enableParameterUpdate>`\\ "
+"\\(CADName\\, CADVersion\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ""
+":py:obj:`setCADPortNumber "
+"<abaqus.Canvas.CanvasSession.CanvasSession.setCADPortNumber>`\\ "
+"\\(CADName\\, Port\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ""
+":py:obj:`updateCADParameters "
+"<abaqus.Canvas.CanvasSession.CanvasSession.updateCADParameters>`\\ "
+"\\(modelName\\, CADName\\, ...\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ""
+":py:obj:`disableParameterUpdate "
+"<abaqus.Canvas.CanvasSession.CanvasSession.disableParameterUpdate>`\\ "
+"\\(CADName\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ""
+":py:obj:`printToFile "
+"<abaqus.Canvas.CanvasSession.CanvasSession.printToFile>`\\ "
+"\\(fileName\\[\\, format\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ""
+":py:obj:`printToPrinter "
+"<abaqus.Canvas.CanvasSession.CanvasSession.printToPrinter>`\\ "
+"\\(\\[printCommand\\, numCopies\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ""
+":py:obj:`saveOptions "
+"<abaqus.Canvas.CanvasSession.CanvasSession.saveOptions>`\\ "
+"\\(directory\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ""
+":py:obj:`writeVrmlFile "
+"<abaqus.Canvas.CanvasSession.CanvasSession.writeVrmlFile>`\\ "
+"\\(fileName\\[\\, format\\, canvasObjects\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ""
+":py:obj:`write3DXMLFile "
+"<abaqus.Canvas.CanvasSession.CanvasSession.write3DXMLFile>`\\ "
+"\\(fileName\\[\\, format\\, canvasObjects\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ""
+":py:obj:`writeOBJFile "
+"<abaqus.Canvas.CanvasSession.CanvasSession.writeOBJFile>`\\ "
+"\\(fileName\\[\\, canvasObjects\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ""
+":py:obj:`openOdb <abaqus.Canvas.CanvasSession.CanvasSession.openOdb>`\\ "
+"\\(name\\[\\, path\\, readOnly\\]\\)"
+msgstr ""
+
+#: ../../reference/session.rst:61
 msgid "DisplayGroupSession"
 msgstr ""
 
@@ -6171,7 +6817,7 @@ msgid ""
 "\\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
-#: ../../reference/session.rst:61
+#: ../../reference/session.rst:70
 msgid "FieldReportSession"
 msgstr ""
 
@@ -6714,7 +7360,7 @@ msgid ""
 "\\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
-#: ../../reference/session.rst:70
+#: ../../reference/session.rst:79
 msgid "JobSession"
 msgstr ""
 
@@ -7164,7 +7810,7 @@ msgid ""
 "\\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
-#: ../../reference/session.rst:79
+#: ../../reference/session.rst:88
 msgid "OdbSession"
 msgstr ""
 
@@ -7614,7 +8260,7 @@ msgid ""
 "\\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
-#: ../../reference/session.rst:88
+#: ../../reference/session.rst:97
 msgid "PathSession"
 msgstr ""
 
@@ -8135,7 +8781,7 @@ msgid ""
 " \\(name\\[\\, path\\, readOnly\\]\\)"
 msgstr ""
 
-#: ../../reference/session.rst:97
+#: ../../reference/session.rst:106
 msgid "XYSession"
 msgstr ""
 
@@ -8676,7 +9322,7 @@ msgid ""
 " path\\, readOnly\\]\\)"
 msgstr ""
 
-#: ../../reference/session.rst:107
+#: ../../reference/session.rst:116
 msgid "AutoColors"
 msgstr ""
 
@@ -8716,7 +9362,7 @@ msgid ""
 "for blue"
 msgstr ""
 
-#: ../../reference/session.rst:115
+#: ../../reference/session.rst:124
 msgid "Color"
 msgstr ""
 
@@ -8785,7 +9431,7 @@ msgid ""
 "Float values must be between 0.0 and 1.0."
 msgstr ""
 
-#: ../../reference/session.rst:123
+#: ../../reference/session.rst:132
 msgid "Drawing"
 msgstr ""
 
@@ -9586,7 +10232,7 @@ msgid ""
 " to the setVertices method. The default value is 0."
 msgstr ""
 
-#: ../../reference/session.rst:131
+#: ../../reference/session.rst:140
 msgid "Image"
 msgstr ""
 
@@ -9717,7 +10363,7 @@ msgid ""
 ".jpg, .jpeg, .ico, .pcx, .png, .rgb, .tga, .tif, or .xpm)."
 msgstr ""
 
-#: ../../reference/session.rst:139
+#: ../../reference/session.rst:148
 msgid "JournalOptions"
 msgstr ""
 
@@ -9893,7 +10539,7 @@ msgid ""
 "values are the same as the default values for the NumberFormat object."
 msgstr ""
 
-#: ../../reference/session.rst:147
+#: ../../reference/session.rst:156
 msgid "MemoryReductionOptions"
 msgstr ""
 
@@ -9950,7 +10596,7 @@ msgid ""
 "reduced memory mode starts. The default value is 75.0."
 msgstr ""
 
-#: ../../reference/session.rst:155
+#: ../../reference/session.rst:164
 msgid "NetworkDatabaseConnector"
 msgstr ""
 
@@ -10232,7 +10878,7 @@ msgid ""
 "#simaker-networkdatabaseconnectorstartpyc>`__."
 msgstr ""
 
-#: ../../reference/session.rst:163
+#: ../../reference/session.rst:172
 msgid "NumberFormat"
 msgstr ""
 
