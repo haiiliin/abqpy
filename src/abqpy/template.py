@@ -159,6 +159,8 @@ This is a template for {cls.name}.
 
 
 class _DocumentTemplate(ScriptTemplate):
+    #: The name of the template, the corresponding template filename must be `name.tmpl`, and the corresponding config
+    #: filename must be `name.toml`.
     name = 'template'
 
     def __new__(cls):
