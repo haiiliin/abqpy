@@ -62,7 +62,7 @@ class ScriptTemplate(Template):
     #: Parameter config source
     config_source = property(lambda self: self._config_source)
     #: User config source
-    params_source = property(lambda self: self._user_source)
+    params_source = property(lambda self: self._params_source)
 
     def __new__(
         cls,
@@ -104,7 +104,7 @@ class ScriptTemplate(Template):
         # Read the user config file
         if os.path.exists(params) and os.path.isfile(params):
             obj._user_source = open(params, 'r', encoding='utf-8').read()
-        obj._user = load_json_or_toml(params) if params else {}
+        obj._params = load_json_or_toml(params) if params else {}
         return obj
 
     def check(self, correct_bounds=True, **kwargs):
@@ -141,7 +141,7 @@ class ScriptTemplate(Template):
                 else:
                     raise ValueError(f'Parameter {name} is too large: {param}')
         params = self.defaults
-        params.update(self._user)
+        params.update(self._params)
         params.update(kwargs)
         return params
 
