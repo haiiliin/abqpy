@@ -4,6 +4,7 @@ Templates to generate python scripts.
 API Reference
 -------------
 """
+import json
 import os
 from typing import Dict, Union, Type
 import textwrap
@@ -21,6 +22,7 @@ class ScriptTemplate(Template):
     """A template class for Abaqus script.
     """
     _params: Dict[str, Dict[str, Union[str, int, float, bool]]]
+    _user: Dict[str, Union[str, int, float, bool]]
     #: A list of parameters required by the template.
     parameters = property(lambda self: list(self._params))
     #: The default parameters.
@@ -37,6 +39,10 @@ class ScriptTemplate(Template):
             Dict[str, Dict[str, Union[str, int, float, bool]]],
             os.PathLike, str,
         ] = None,
+        user: Union[
+            Dict[str, Dict[str, Union[str, int, float, bool]]],
+            os.PathLike, str,
+        ] = None,
     ):
         """Create a new template.
 
@@ -45,16 +51,19 @@ class ScriptTemplate(Template):
         source : str or PathLike or Template
             The template source.
         config : str or PathLike or dict, optional
-            The config file or dict, by default None
+            The config file (a json or toml file) or dict, by default None
+        user : str or PathLike or dict, optional
+            The user config file (a json or toml file) or dict, by default None
         """
         if os.path.exists(source) and os.path.isfile(config):
             source = open(source, 'r', encoding='utf-8').read()
         obj = super().__new__(cls, source)
+
+        # Read the config file
         if os.path.exists(config) and os.path.isfile(config):
             if config.endswith('.toml'):
                 config = toml.load(config)
             elif config.endswith('.json'):
-                import json
                 with open(config, 'r', encoding='utf-8') as f:
                     config = json.load(f)
         obj._params = {}
@@ -64,6 +73,18 @@ class ScriptTemplate(Template):
                     obj._params[name] = dict(name=name, **param)
                 else:
                     raise TypeError(f'Invalid parameter type: {type(param)}')
+
+        # Read the user config file
+        if os.path.exists(user) and os.path.isfile(user):
+            if user.endswith('.toml'):
+                obj._user = toml.load(user)
+            elif user.endswith('.json'):
+                with open(user, 'r', encoding='utf-8') as f:
+                    obj._user = json.load(f)
+        elif isinstance(user, dict):
+            obj._user = user
+        else:
+            obj._user = {}
         return obj
 
     def check(self, correct_bounds=True, **kwargs):
@@ -100,6 +121,7 @@ class ScriptTemplate(Template):
                 else:
                     raise ValueError(f'Parameter {name} is too large: {param}')
         params = self.defaults
+        params.update(self._user)
         params.update(kwargs)
         return params
 
@@ -145,14 +167,27 @@ def template_doc(cls: Type['CompressionTemplate']):
     docstring = f"""
 This is a template for {cls.name}.
 
-.. note::
-    Details of the parameters requirements to render the template:
+.. admonition:: Details of required parameters
 
 {textwrap.indent(attrs_docstring, ' ' * 4)}
 
-    The source code of the template is::
+.. admonition:: User config file (A `toml <https://toml.io/>`_ or `json <https://www.json.org/>`_ file)
+    
+    .. code-block:: toml
+    
+{textwrap.indent(obj.user, ' ' * 8)}
+
+.. admonition:: The template source code
+
+    .. code-block:: python
     
 {textwrap.indent(obj.source, ' ' * 8)}
+
+.. admonition:: The template config file  (A `toml <https://toml.io/>`_ or `json <https://www.json.org/>`_ file)
+    
+    .. code-block:: toml
+    
+{textwrap.indent(obj.config, ' ' * 8)}
 """
     cls.__doc__ = docstring
     return cls
@@ -167,8 +202,11 @@ class _DocumentTemplate(ScriptTemplate):
         dirname = os.path.dirname(__file__)
         source = os.path.join(dirname, 'templates', f'{cls.name}.tmpl')
         config = os.path.join(dirname, 'templates', f'{cls.name}.toml')
-        obj = super().__new__(cls, source, config)
+        user = os.path.join(dirname, 'templates', f'{cls.name}.conf.toml')
+        obj = super().__new__(cls, source, config, user)
         obj.source = open(source, 'r', encoding='utf-8').read()
+        obj.config = open(config, 'r', encoding='utf-8').read()
+        obj.user = open(user, 'r', encoding='utf-8').read()
         return obj
 
 
