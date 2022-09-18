@@ -1,6 +1,12 @@
 """
 Templates to generate python scripts.
 
+User's Guide
+------------
+
+The :py:class:`~abqpy.template.ScriptTemplate` class provides a simple interface to generate python scripts from
+templates.
+
 API Reference
 -------------
 """
@@ -18,23 +24,55 @@ __all__ = [
 ]
 
 
+def load_json_or_toml(path: Union[str, Dict]) -> Dict:
+    """Load a json or toml file."""
+    if isinstance(path, dict):
+        return path
+    if not os.path.exists(path):
+        raise FileNotFoundError(f'File {path} does not exist.')
+    if path.endswith('.json'):
+        with open(path, encoding='utf-8') as f:
+            return json.load(f)
+    elif path.endswith('.toml'):
+        with open(path, encoding='utf-8') as f:
+            return toml.load(f)
+    else:
+        raise ValueError(f'Unknown file type: {path}')
+
+
 class ScriptTemplate(Template):
     """A template class for Abaqus script.
     """
-    _params: Dict[str, Dict[str, Union[str, int, float, bool]]]
+    #: Parameter config
+    _config: Dict[str, Dict[str, Union[str, int, float, bool]]]
+    #: User config
     _user: Dict[str, Union[str, int, float, bool]]
+    #: Template source
+    _template_source: str
+    #: Parameter config source
+    _config_source: str
+    #: User config source
+    _user_source: str
     #: A list of parameters required by the template.
-    parameters = property(lambda self: list(self._params))
+    parameters = property(lambda self: list(self._config))
     #: The default parameters.
-    defaults = property(lambda self: {name: param['default'] for name, param in self._params.items()})
+    defaults = property(lambda self: {name: param['default'] for name, param in self._config.items()})
     #: The types of the parameters.
-    types = property(lambda self: {name: param['type'] for name, param in self._params.items()})
+    types = property(lambda self: {name: param['type'] for name, param in self._config.items()})
     #: The descriptions of the parameters.
-    descriptions = property(lambda self: {name: param['description'] for name, param in self._params.items()})
+    descriptions = property(lambda self: {name: param['description'] for name, param in self._config.items()})
+    #: Template source
+    template_source = property(lambda self: self._template_source)
+    #: Parameter config source
+    config_source = property(lambda self: self._config_source)
+    #: User config source
+    user_source = property(lambda self: self._user_source)
 
     def __new__(
         cls,
-        source: Union[os.PathLike, str, Template],
+        source: Union[
+            os.PathLike, str,
+        ],
         config: Union[
             Dict[str, Dict[str, Union[str, int, float, bool]]],
             os.PathLike, str,
@@ -58,33 +96,19 @@ class ScriptTemplate(Template):
         if os.path.exists(source) and os.path.isfile(config):
             source = open(source, 'r', encoding='utf-8').read()
         obj = super().__new__(cls, source)
+        obj._template_source = source
 
         # Read the config file
         if os.path.exists(config) and os.path.isfile(config):
-            if config.endswith('.toml'):
-                config = toml.load(config)
-            elif config.endswith('.json'):
-                with open(config, 'r', encoding='utf-8') as f:
-                    config = json.load(f)
-        obj._params = {}
-        if isinstance(config, dict):
-            for name, param in config.items():
-                if isinstance(param, Dict):
-                    obj._params[name] = dict(name=name, **param)
-                else:
-                    raise TypeError(f'Invalid parameter type: {type(param)}')
+            obj._config_source = open(config, 'r', encoding='utf-8').read()
+        obj._config = load_json_or_toml(config) if config else {}
+        for name in obj._config.keys():
+            obj._config[name]['name'] = name
 
         # Read the user config file
         if os.path.exists(user) and os.path.isfile(user):
-            if user.endswith('.toml'):
-                obj._user = toml.load(user)
-            elif user.endswith('.json'):
-                with open(user, 'r', encoding='utf-8') as f:
-                    obj._user = json.load(f)
-        elif isinstance(user, dict):
-            obj._user = user
-        else:
-            obj._user = {}
+            obj._user_source = open(user, 'r', encoding='utf-8').read()
+        obj._user = load_json_or_toml(user) if user else {}
         return obj
 
     def check(self, correct_bounds=True, **kwargs):
@@ -108,16 +132,16 @@ class ScriptTemplate(Template):
             If the parameters are invalid.
         """
         for name, param in kwargs.items():
-            if name not in self._params:
+            if name not in self._config:
                 raise ValueError(f'Invalid parameter: {name}')
-            if 'min' in self._params[name] and param < self._params[name]['min']:
+            if 'min' in self._config[name] and param < self._config[name]['min']:
                 if correct_bounds:
-                    kwargs[name] = self._params[name]['min']
+                    kwargs[name] = self._config[name]['min']
                 else:
                     raise ValueError(f'Parameter {name} is too small: {param}')
-            if 'max' in self._params[name] and param > self._params[name]['max']:
+            if 'max' in self._config[name] and param > self._config[name]['max']:
                 if correct_bounds:
-                    kwargs[name] = self._params[name]['max']
+                    kwargs[name] = self._config[name]['max']
                 else:
                     raise ValueError(f'Parameter {name} is too large: {param}')
         params = self.defaults
@@ -165,7 +189,12 @@ def template_doc(cls: Type['CompressionTemplate']):
                                f'    {descriptions[var]}')
     attrs_docstring = '\n\n'.join(attr_docstrings)
     docstring = f"""
-This is a template for {cls.name}.
+This is a template for {cls.name}. Example usage::
+    
+    from abqpy.template import {cls.__name__}
+    
+    template = {cls.__name__}()
+    template.write('script.py')
 
 .. admonition:: Details of required parameters
 
@@ -175,19 +204,19 @@ This is a template for {cls.name}.
     
     .. code-block:: toml
     
-{textwrap.indent(obj.user, ' ' * 8)}
+{textwrap.indent(obj.user_source, ' ' * 8)}
 
 .. admonition:: The template source code
 
     .. code-block:: python
     
-{textwrap.indent(obj.source, ' ' * 8)}
+{textwrap.indent(obj.template_source, ' ' * 8)}
 
 .. admonition:: The template config file  (A `toml <https://toml.io/>`_ or `json <https://www.json.org/>`_ file)
     
     .. code-block:: toml
     
-{textwrap.indent(obj.config, ' ' * 8)}
+{textwrap.indent(obj.config_source, ' ' * 8)}
 """
     cls.__doc__ = docstring
     return cls
@@ -198,16 +227,19 @@ class _DocumentTemplate(ScriptTemplate):
     #: filename must be `name.toml`.
     name = 'template'
 
-    def __new__(cls):
+    def __new__(
+        cls,
+        user: Union[
+            Dict[str, Dict[str, Union[str, int, float, bool]]],
+            os.PathLike, str,
+        ] = None,
+    ):
         dirname = os.path.dirname(__file__)
         source = os.path.join(dirname, 'templates', f'{cls.name}.tmpl')
         config = os.path.join(dirname, 'templates', f'{cls.name}.toml')
-        user = os.path.join(dirname, 'templates', f'{cls.name}.conf.toml')
-        obj = super().__new__(cls, source, config, user)
-        obj.source = open(source, 'r', encoding='utf-8').read()
-        obj.config = open(config, 'r', encoding='utf-8').read()
-        obj.user = open(user, 'r', encoding='utf-8').read()
-        return obj
+        if user is None:
+            user = os.path.join(dirname, 'templates', f'{cls.name}.conf.toml')
+        return super().__new__(cls, source, config, user)
 
 
 @template_doc
