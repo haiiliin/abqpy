@@ -145,9 +145,6 @@ def template_doc(cls: Type['CompressionTemplate']):
     docstring = f"""
 This is a template for {cls.name}.
 
-.. warning::
-    This is a template class just for documentation, do not use it directly.
-
 .. note::
     Details of the parameters requirements to render the template:
 
