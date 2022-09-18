@@ -46,25 +46,23 @@ class ScriptTemplate(Template):
     Examples
     --------
     >>> from abqpy.template import ScriptTemplate
-    >>>
-    >>> template = ScriptTemplate(template='template.py', config='config.toml', user='user.toml')
+    >>> template = ScriptTemplate(template='template.py', config='config.toml', params='params.toml')
     >>> template.write('script.py')
-    >>>
     >>> template = ScriptTemplate(template='template.py', config='config.toml')
     >>> template.write('script.py', param1=1, param2=2)
     """
     #: Parameter config
     _config: Dict[str, Dict[str, Union[str, int, float, bool]]]
-    #: User config
-    _user: Dict[str, Union[str, int, float, bool]]
+    #: User parameters config
+    _params: Dict[str, Union[str, int, float, bool]]
     #: Template source
     _template_source: str
     #: Parameter config source
     _config_source: str
     #: User config source
-    _user_source: str
+    _params_source: str
     #: A list of parameters required by the template.
-    parameters = property(lambda self: list(self._config))
+    keys = property(lambda self: list(self._config))
     #: The default parameters.
     defaults = property(lambda self: {name: param['default'] for name, param in self._config.items()})
     #: The types of the parameters.
@@ -76,7 +74,7 @@ class ScriptTemplate(Template):
     #: Parameter config source
     config_source = property(lambda self: self._config_source)
     #: User config source
-    user_source = property(lambda self: self._user_source)
+    params_source = property(lambda self: self._user_source)
 
     def __new__(
         cls,
@@ -87,12 +85,21 @@ class ScriptTemplate(Template):
             Dict[str, Dict[str, Union[str, int, float, bool]]],
             os.PathLike, str,
         ] = None,
-        user: Union[
+        params: Union[
             Dict[str, Dict[str, Union[str, int, float, bool]]],
             os.PathLike, str,
         ] = None,
     ):
         """Create a new template.
+
+        Parameters
+        ----------
+        template : str or PathLike or Template
+            The template source.
+        config : str or PathLike or dict, optional
+            The config file (a json or toml file) or dict, by default None
+        params : str or PathLike or dict, optional
+            The user params config file (a json or toml file) or dict, by default None
         """
         if os.path.exists(template) and os.path.isfile(config):
             template = open(template, 'r', encoding='utf-8').read()
@@ -107,9 +114,9 @@ class ScriptTemplate(Template):
             obj._config[name]['name'] = name
 
         # Read the user config file
-        if os.path.exists(user) and os.path.isfile(user):
-            obj._user_source = open(user, 'r', encoding='utf-8').read()
-        obj._user = load_json_or_toml(user) if user else {}
+        if os.path.exists(params) and os.path.isfile(params):
+            obj._user_source = open(params, 'r', encoding='utf-8').read()
+        obj._user = load_json_or_toml(params) if params else {}
         return obj
 
     def check(self, correct_bounds=True, **kwargs):
@@ -183,11 +190,11 @@ def template_doc(cls: Type['CompressionTemplate']):
     """Generate the docstring for the template class."""
     obj = cls()
     attr_docstrings = []
-    parameters, types, defaults, descriptions = obj.parameters, obj.types, obj.defaults, obj.descriptions
-    for var in parameters:
-        attr_docstrings.append(f'.. confval:: {var}\n'
-                               f'    :type: {types[var]}, defaults to {defaults[var]}\n\n'
-                               f'    {descriptions[var]}')
+    keys, types, defaults, descriptions = obj.keys, obj.types, obj.defaults, obj.descriptions
+    for key in keys:
+        attr_docstrings.append(f'.. confval:: {key}\n'
+                               f'    :type: {types[key]}, defaults to {defaults[key]}\n\n'
+                               f'    {descriptions[key]}')
     attrs_docstring = '\n\n'.join(attr_docstrings)
     docstring = f"""
 This is a template for {cls.name}. Example usage::
@@ -205,7 +212,7 @@ This is a template for {cls.name}. Example usage::
     
     .. code-block:: toml
     
-{textwrap.indent(obj.user_source, ' ' * 8)}
+{textwrap.indent(obj.params_source, ' ' * 8)}
 
 .. admonition:: The template source code
 
@@ -230,7 +237,7 @@ class _DocumentTemplate(ScriptTemplate):
 
     def __new__(
         cls,
-        user: Union[
+        params: Union[
             Dict[str, Dict[str, Union[str, int, float, bool]]],
             os.PathLike, str,
         ] = None,
@@ -238,9 +245,9 @@ class _DocumentTemplate(ScriptTemplate):
         dirname = os.path.dirname(__file__)
         template = os.path.join(dirname, 'templates', f'{cls.name}.tmpl')
         config = os.path.join(dirname, 'templates', f'{cls.name}.toml')
-        if user is None:
-            user = os.path.join(dirname, 'templates', f'{cls.name}.conf.toml')
-        return super().__new__(cls, template, config, user)
+        if params is None:
+            params = os.path.join(dirname, 'templates', f'{cls.name}.conf.toml')
+        return super().__new__(cls, template, config, params)
 
 
 @template_doc
@@ -250,10 +257,8 @@ class CompressionTemplate(_DocumentTemplate):
     Examples
     --------
     >>> from abqpy.template import CompressionTemplate
-    >>>
-    >>> template = CompressionTemplate(user='user.toml')
+    >>> template = CompressionTemplate(params='params.toml')
     >>> template.write('script.py')
-    >>>
     >>> template = CompressionTemplate()
     >>> template.write('script.py', width=10.0, height=10.0)
     """
