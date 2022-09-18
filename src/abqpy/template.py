@@ -244,9 +244,9 @@ class _DocumentTemplate(ScriptTemplate):
     ):
         dirname = os.path.dirname(__file__)
         template = os.path.join(dirname, 'templates', f'{cls.name}.tmpl')
-        config = os.path.join(dirname, 'templates', f'{cls.name}.toml')
+        config = os.path.join(dirname, 'templates', f'{cls.name}.conf.toml')
         if params is None:
-            params = os.path.join(dirname, 'templates', f'{cls.name}.conf.toml')
+            params = os.path.join(dirname, 'templates', f'{cls.name}.toml')
         return super().__new__(cls, template, config, params)
 
 
