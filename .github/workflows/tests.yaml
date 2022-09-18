@@ -8,8 +8,6 @@ on:
     - 'src/**'
   pull_request:
     types: [opened, reopened, synchronize]
-    paths:
-    - 'src/**'
   workflow_dispatch:
 
 jobs:
