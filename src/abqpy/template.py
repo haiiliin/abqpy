@@ -42,6 +42,16 @@ def load_json_or_toml(path: Union[str, Dict]) -> Dict:
 
 class ScriptTemplate(Template):
     """A template class for Abaqus script.
+
+    Examples
+    --------
+    >>> from abqpy.template import ScriptTemplate
+    >>>
+    >>> template = ScriptTemplate(template='template.py', config='config.toml', user='user.toml')
+    >>> template.write('script.py')
+    >>>
+    >>> template = ScriptTemplate(template='template.py', config='config.toml')
+    >>> template.write('script.py', param1=1, param2=2)
     """
     #: Parameter config
     _config: Dict[str, Dict[str, Union[str, int, float, bool]]]
@@ -70,7 +80,7 @@ class ScriptTemplate(Template):
 
     def __new__(
         cls,
-        source: Union[
+        template: Union[
             os.PathLike, str,
         ],
         config: Union[
@@ -83,20 +93,11 @@ class ScriptTemplate(Template):
         ] = None,
     ):
         """Create a new template.
-
-        Parameters
-        ----------
-        source : str or PathLike or Template
-            The template source.
-        config : str or PathLike or dict, optional
-            The config file (a json or toml file) or dict, by default None
-        user : str or PathLike or dict, optional
-            The user config file (a json or toml file) or dict, by default None
         """
-        if os.path.exists(source) and os.path.isfile(config):
-            source = open(source, 'r', encoding='utf-8').read()
-        obj = super().__new__(cls, source)
-        obj._template_source = source
+        if os.path.exists(template) and os.path.isfile(config):
+            template = open(template, 'r', encoding='utf-8').read()
+        obj = super().__new__(cls, template)
+        obj._template_source = template
 
         # Read the config file
         if os.path.exists(config) and os.path.isfile(config):
@@ -235,15 +236,27 @@ class _DocumentTemplate(ScriptTemplate):
         ] = None,
     ):
         dirname = os.path.dirname(__file__)
-        source = os.path.join(dirname, 'templates', f'{cls.name}.tmpl')
+        template = os.path.join(dirname, 'templates', f'{cls.name}.tmpl')
         config = os.path.join(dirname, 'templates', f'{cls.name}.toml')
         if user is None:
             user = os.path.join(dirname, 'templates', f'{cls.name}.conf.toml')
-        return super().__new__(cls, source, config, user)
+        return super().__new__(cls, template, config, user)
 
 
 @template_doc
 class CompressionTemplate(_DocumentTemplate):
+    """A template for compression analysis.
+
+    Examples
+    --------
+    >>> from abqpy.template import CompressionTemplate
+    >>>
+    >>> template = CompressionTemplate(user='user.toml')
+    >>> template.write('script.py')
+    >>>
+    >>> template = CompressionTemplate()
+    >>> template.write('script.py', width=10.0, height=10.0)
+    """
     name = 'compression'
 
 
