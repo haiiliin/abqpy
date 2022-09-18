@@ -306,7 +306,7 @@ class SymbolicConstant(str,Enum):
     BLUE_TO_RED = 'BLUE_TO_RED'
     BOLT = 'BOLT'
     BOOLEAN = 'BOOLEAN'
-    BOTH = 'BOTH'
+    # BOTH = 'BOTH'
     BOTHSIDES = 'BOTHSIDES'
     BOTH_SIDES = 'BOTH_SIDES'
     BOTH_SURFACES = 'BOTH_SURFACES'
@@ -1627,7 +1627,7 @@ class SymbolicConstant(str,Enum):
     NEWTONIAN = 'NEWTONIAN'
     NEW_CONTACT_PATCH = 'NEW_CONTACT_PATCH'
     NMORI = 'NMORI'
-    NO = 'NO'
+    # NO = 'NO'
     NODAL = 'NODAL'
     NODAL_ANALYTICAL_FIELD = 'NODAL_ANALYTICAL_FIELD'
     NODAL_AVERAGE = 'NODAL_AVERAGE'
@@ -2591,14 +2591,14 @@ class SymbolicConstant(str,Enum):
     def getText(self) -> str:
         return self.text
     
-    @staticmethod 
-    def __new__(cls, name: str, *args, **kargs) -> Union[SymbolicConstant,AbaqusBoolean]:
-        if name == "ON":
-            return AbaqusBoolean(1)
-        elif name == "OFF":
-            return AbaqusBoolean(0)
-        else:
-            return super().__new__(cls)
+    # @staticmethod 
+    # def __new__(cls, name: str, *args, **kargs) -> Union[SymbolicConstant,AbaqusBoolean]:
+    #     if name == "ON":
+    #         return AbaqusBoolean(1)
+    #     elif name == "OFF":
+    #         return AbaqusBoolean(0)
+    #     else:
+    #         return super().__new__(cls)
     
     @classmethod
     def _addToCache(cls, *args, **kwargs):  # real signature unknown
