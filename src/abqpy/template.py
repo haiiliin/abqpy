@@ -197,12 +197,15 @@ def template_doc(cls: Type['CompressionTemplate']):
                                f'    {descriptions[key]}')
     attrs_docstring = '\n\n'.join(attr_docstrings)
     docstring = f"""
-This is a template for {cls.name}. Example usage::
-    
-    from abqpy.template import {cls.__name__}
-    
-    template = {cls.__name__}()
-    template.write('script.py')
+This is a template for {cls.name}. 
+
+Examples
+--------
+>>> from abqpy.template import {cls.__name__}
+>>> template = {cls.__name__}(params='params.toml')
+>>> template.write('script.py')
+>>> template = {cls.__name__}()
+>>> template.write('script.py', param1=1, param2=2)
 
 .. admonition:: Details of required parameters
 
@@ -252,16 +255,6 @@ class _DocumentTemplate(ScriptTemplate):
 
 @template_doc
 class CompressionTemplate(_DocumentTemplate):
-    """A template for compression analysis.
-
-    Examples
-    --------
-    >>> from abqpy.template import CompressionTemplate
-    >>> template = CompressionTemplate(params='params.toml')
-    >>> template.write('script.py')
-    >>> template = CompressionTemplate()
-    >>> template.write('script.py', width=10.0, height=10.0)
-    """
     name = 'compression'
 
 
