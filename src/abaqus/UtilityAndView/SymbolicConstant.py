@@ -2565,8 +2565,8 @@ class SymbolicConstant(str,Enum):
     def __getstate__(self) -> str:
         return self.text
     
-    def __hash__(self) -> int:
-        ...
+    # def __hash__(self) -> int:
+    #     ...
     
     def __lt__(self, other: Any) -> bool:
         """Sorting method; True if self is < other"""
