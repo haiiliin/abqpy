@@ -1,7 +1,15 @@
+import os
+import shutil
+
 import setuptools
 
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
+
+# TODO:  A temporary solution to copy the template files to the package directory.
+if os.path.exists('src/abqpy/templates'):
+    shutil.rmtree('src/abqpy/templates')
+shutil.copytree('templates', 'src/abqpy/templates')
 
 setuptools.setup(
     name="abqpy",
@@ -52,4 +60,5 @@ setuptools.setup(
             'abqpy = abqpy.__main__:cli',
         ]
     },
+    package_data={'abqpy': ['templates/*.toml', 'templates/*.tmpl']},
 )
