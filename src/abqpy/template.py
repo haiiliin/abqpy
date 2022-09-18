@@ -103,7 +103,7 @@ class ScriptTemplate(Template):
 
         # Read the user config file
         if os.path.exists(params) and os.path.isfile(params):
-            obj._user_source = open(params, 'r', encoding='utf-8').read()
+            obj._params_source = open(params, 'r', encoding='utf-8').read()
         obj._params = load_json_or_toml(params) if params else {}
         return obj
 
