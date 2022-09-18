@@ -1,9 +1,20 @@
+"""
+Templates to generate python scripts.
+
+API Reference
+-------------
+"""
 import os
-from typing import Any, Dict, Union, Type
+from typing import Dict, Union, Type
 import textwrap
 
 import toml
 from jinja2 import Template
+
+__all__ = [
+    'CompressionTemplate',
+    'ScriptTemplate',
+]
 
 
 class ScriptTemplate(Template):
