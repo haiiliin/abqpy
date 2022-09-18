@@ -1,15 +1,3 @@
-"""
-Templates to generate python scripts.
-
-User's Guide
-------------
-
-The :py:class:`~abqpy.template.ScriptTemplate` class provides a simple interface to generate python scripts from
-templates.
-
-API Reference
--------------
-"""
 import json
 import os
 from typing import Dict, Union, Type
