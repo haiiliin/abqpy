@@ -1,10 +1,10 @@
-from typing import Optional, Any
+from typing import Optional, Any, Dict
 
 
 def execfile(
     filename: str,
-    globals: Optional[dict[str, Any]] = None,
-    locals: Optional[dict[str, Any]] = None,
+    globals: Optional[Dict[str, Any]] = None,
+    locals: Optional[Dict[str, Any]] = None,
 ) -> None:
     """Read and execute a Python script from a file.
     The globals and locals are dictionaries, defaulting to the current
@@ -21,8 +21,8 @@ def execfile(
 
 def execPyFile(
     filePath: str,
-    globs: Optional[dict[str, Any]] = None,
-    locs: Optional[dict[str, Any]] = None,
+    globs: Optional[Dict[str, Any]] = None,
+    locs: Optional[Dict[str, Any]] = None,
     atxPort: int = -1,
 ) -> None:
     """Similar to execfile, but will run a compiled .pyc file
