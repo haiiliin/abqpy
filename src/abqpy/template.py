@@ -121,7 +121,7 @@ class ScriptTemplate(Template):
             f.write(self.render(**kwargs))
 
 
-def template_doc(cls: Type['_CompressionTemplate']):
+def template_doc(cls: Type['CompressionTemplate']):
     """Generate the docstring for the template class."""
     obj = cls()
     attr_docstrings = []
@@ -163,7 +163,7 @@ class _DocumentTemplate(ScriptTemplate):
 
 
 @template_doc
-class _CompressionTemplate(_DocumentTemplate):
+class CompressionTemplate(_DocumentTemplate):
     name = 'compression'
 
 
@@ -177,4 +177,4 @@ def test_render():
 
 def test_decorator():
     """Test the decorator."""
-    print(_CompressionTemplate.__doc__)
+    print(CompressionTemplate.__doc__)
