@@ -62,7 +62,7 @@ def getDisplayNamesInGuiPreferences(fileName: str) -> typing.List[str]:
 @abaqus_function_doc
 def printValuesList(
     object: str,
-    maxRecursionDepth: typing.Union[int, typing.Literal["UNLIMITED"]] = None,
+    maxRecursionDepth: typing.Union[int, typing.Literal[UNLIMITED]] = UNLIMITED,
     asString: Boolean = False,
 ) -> str:
     """This function enables you to print all of the options and their values for a set of
@@ -78,7 +78,7 @@ def printValuesList(
     object: str
         The guiPreferences object or sessionOptions object for which you want to print options
         and their values.
-    maxRecursionDepth: typing.Union[int, typing.Literal['UNLIMITED']]
+    maxRecursionDepth: typing.Union[int, typing.Literal[UNLIMITED]]
         An Int, or SymbolicConstant UNLIMITED, that specifies the depth of recursion when
         accessing the attributes of **object**.
     asString: Boolean
@@ -129,7 +129,7 @@ def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
 
 @abaqus_function_doc
 def openSessionOptions(
-    fileName: str = "", directory: typing.Literal["CURRENT", "HOME"] = HOME
+    fileName: str = "", directory: typing.Literal[CURRENT, HOME] = HOME
 ) -> CaeKerPrefs:
     """This function enables you to examine and change the default behavior for many session
     options Abaqus/CAE; that is, the settings that you can save in Abaqus/CAE from the
@@ -146,9 +146,9 @@ def openSessionOptions(
     fileName: str
         A String specifying the path to the preferences file. The openSessionOptions method uses
         this argument if you are working with a preferences file that is not at the default
-        location.If this argument is omitted, the abaqus_2021.gpr file in your home directory is
+        location. If this argument is omitted, the abaqus_2021.gpr file in your home directory is
         opened.
-    directory: typing.Literal['CURRENT', 'HOME']
+    directory: typing.Literal[CURRENT, HOME]
         A SymbolicConstant specifying the location of the preferences file. Possible values
         are:
 
@@ -158,11 +158,13 @@ def openSessionOptions(
           (caePrefsAccess.HOME)
 
         The default value is HOME. Either **fileName** or **directory** must be
-        supplied. The **fileName** or **directory** arguments are mutually exclusive.
+        supplied. The `fileName` or `directory` arguments are mutually exclusive.
 
     Returns
     -------
     CaeKerPrefs
         A :py:class:`~abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs` object.
     """
+    if fileName and directory:
+        raise TypeError('fileName and directory arguments are mutually exclusive')
     return CaeKerPrefs()
