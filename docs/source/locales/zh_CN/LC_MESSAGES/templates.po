@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2021.3.3 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-18 00:15+0000\n"
+"POT-Creation-Date: 2022-09-19 00:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,50 +26,72 @@ msgid "Templates to generate python scripts."
 msgstr ""
 
 #: ../../templates.rst:8
-msgid "Compression Model Template"
+msgid "User's Guide"
 msgstr ""
 
-#: abqpy.template._CompressionTemplate:2 of
-msgid "This is a template for compression."
-msgstr ""
-
-#: abqpy.template._CompressionTemplate:5 of
-msgid "This is a template class just for documentation, do not use it directly."
-msgstr ""
-
-#: abqpy.template._CompressionTemplate:8 of
-msgid "Details of the parameters requirements to render the template:"
-msgstr ""
-
-#: abqpy.template._CompressionTemplate of
-msgid "**Type:** float, defaults to 1.0"
-msgstr ""
-
-#: abqpy.template._CompressionTemplate of
-msgid "**Type:** float, defaults to 0.3"
-msgstr ""
-
-#: abqpy.template._CompressionTemplate of
-msgid "**Type:** int, defaults to 1000"
-msgstr ""
-
-#: abqpy.template._CompressionTemplate of
-msgid "**Type:** float, defaults to 0.1"
-msgstr ""
-
-#: abqpy.template._CompressionTemplate of
-msgid "**Type:** float, defaults to 0.01"
-msgstr ""
-
-#: abqpy.template._CompressionTemplate of
-msgid "**Type:** str, defaults to Job-1"
-msgstr ""
-
-#: abqpy.template._CompressionTemplate:75 of
-msgid "The source code of the template is::"
+#: ../../templates.rst:10
+msgid ""
+"The :py:class:`~abqpy.template.ScriptTemplate` class provides a simple "
+"interface to generate python scripts from templates."
 msgstr ""
 
 #: ../../templates.rst:14
+msgid "CompressionTemplate"
+msgstr ""
+
+#: abqpy.template.CompressionTemplate:2 of
+msgid "This is a template for compression."
+msgstr ""
+
+#: abqpy.template.CompressionTemplate:17 abqpy.template.ScriptTemplate:17 of
+msgid "Examples"
+msgstr ""
+
+#: abqpy.template.CompressionTemplate:24 of
+msgid "Details of required parameters"
+msgstr ""
+
+#: abqpy.template.CompressionTemplate of
+msgid "**Type:** float, defaults to 1.0"
+msgstr ""
+
+#: abqpy.template.CompressionTemplate of
+msgid "**Type:** float, defaults to 0.3"
+msgstr ""
+
+#: abqpy.template.CompressionTemplate of
+msgid "**Type:** int, defaults to 1000"
+msgstr ""
+
+#: abqpy.template.CompressionTemplate of
+msgid "**Type:** float, defaults to 0.1"
+msgstr ""
+
+#: abqpy.template.CompressionTemplate of
+msgid "**Type:** float, defaults to 0.01"
+msgstr ""
+
+#: abqpy.template.CompressionTemplate of
+msgid "**Type:** str, defaults to Job-1"
+msgstr ""
+
+#: abqpy.template.CompressionTemplate:91 of
+msgid ""
+"User config file (A `toml <https://toml.io/>`_ or `json "
+"<https://www.json.org/>`_ file)"
+msgstr ""
+
+#: abqpy.template.CompressionTemplate:111 of
+msgid "The template source code"
+msgstr ""
+
+#: abqpy.template.CompressionTemplate:190 of
+msgid ""
+"The template config file  (A `toml <https://toml.io/>`_ or `json "
+"<https://www.json.org/>`_ file)"
+msgstr ""
+
+#: ../../templates.rst:20
 msgid "ScriptTemplate"
 msgstr ""
 
@@ -136,6 +158,10 @@ msgstr ""
 msgid "If the parameters are invalid."
 msgstr ""
 
+#: abqpy.template.ScriptTemplate.config_source:2 of
+msgid "Parameter config source"
+msgstr ""
+
 #: abqpy.template.ScriptTemplate.defaults:2 of
 msgid "The default parameters."
 msgstr ""
@@ -144,8 +170,12 @@ msgstr ""
 msgid "The descriptions of the parameters."
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.parameters:2 of
+#: abqpy.template.ScriptTemplate.keys:2 of
 msgid "A list of parameters required by the template."
+msgstr ""
+
+#: abqpy.template.ScriptTemplate.params_source:2 of
+msgid "User config source"
 msgstr ""
 
 #: abqpy.template.ScriptTemplate.render:2 of
@@ -163,6 +193,10 @@ msgstr ""
 
 #: abqpy.template.ScriptTemplate.render:13 of
 msgid "The rendered template."
+msgstr ""
+
+#: abqpy.template.ScriptTemplate.template_source:2 of
+msgid "Template source"
 msgstr ""
 
 #: abqpy.template.ScriptTemplate.types:2 of
@@ -184,4 +218,19 @@ msgstr ""
 #: abqpy.template.ScriptTemplate.write:8 of
 msgid "The file to write to."
 msgstr ""
+
+#~ msgid "Compression Model Template"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This is a template class just for"
+#~ " documentation, do not use it "
+#~ "directly."
+#~ msgstr ""
+
+#~ msgid "Details of the parameters requirements to render the template:"
+#~ msgstr ""
+
+#~ msgid "The source code of the template is::"
+#~ msgstr ""
 
