@@ -73,43 +73,58 @@ own Python interpreter without opening Abaqus**, which is achieved via the **aba
 
     abaqus cae noGUI=script.py
 
-The secret is hided in the :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method:
+The secret is hided in the :py:meth:`~abqpy.abaqus.run()` function:
 
 .. autolink-concat:: off
 .. code-block:: python
 
-    def saveAs(self, pathName: str):
+    def run():
         abaqus = 'abaqus'
         if 'ABAQUS_BAT_PATH' in os.environ.keys():
             abaqus = os.environ['ABAQUS_BAT_PATH']
 
-        filePath = os.path.abspath(sys.argv[0])
+        filePath = os.path.abspath(__main__.__file__)
         args = " ".join(sys.argv[1:])
 
         os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
+        
+        sys.exit(0)
 
-In this package, the :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method is reimplemented, if you call this method in your
-script (i.e., `mdb.saveAs('model.cae')`), the Python interpreter (not Abaqus Python interpreter) will use the
-**abaqus** command to submit this script to Abaqus, when it is submited to Abaqus, :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs`
-will be just a normal method to save the model because `abqpy` is not installed in Abaqus Python interpreter.
+In this package, the :py:mod:`~abaqus` module is reimplemented to automatically call this function. If you import this module in the top of your
+script (i.e., ``from abaqus import *``), your Python interpreter (not Abaqus Python interpreter) will call this function and use the
+**abaqus** command to submit the script to Abaqus. When it is submitted to Abaqus, :py:meth:`~abqpy.abaqus.run()`
+will exit the interpreter, because the script will already run in Abaqus Python interpreter.
 
-In the output script, we might not have to use the :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method, then another similar
-method :py:meth:`~abaqus.Session.Session.Session.openOdb` is also reimplemented:
+In the output script, we might not want to always use the :py:mod:`~abaqus` module, which needs the Abaqus CAE kernel (and its license),
+but instead the module :py:mod:`~odbAccess` (i.e., ``from odbAccess import *``), then another similar **abaqus** command line is needed:
+
+.. code-block:: sh
+
+    abaqus python script.py
+
+So, :py:mod:`~odbAccess` is also reimplemented to call the :py:meth:`~abqpy.abaqus.run()` function, and the actual implementation of this function is similar to:
 
 .. autolink-skip:: section
 .. code-block:: python
 
-    def openOdb(self, name: str, *args, **kwargs):
+    def run(cae = True):
         abaqus = 'abaqus'
         if 'ABAQUS_BAT_PATH' in os.environ.keys():
             abaqus = os.environ['ABAQUS_BAT_PATH']
 
-        filePath = os.path.abspath(sys.argv[0])
+        filePath = os.path.abspath(__main__.__file__)
         args = " ".join(sys.argv[1:])
 
-        os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
+        if cae:
+            os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
+        else:
+            os.system(f"{abaqus} python {filePath} {args}")
+        sys.exit(0)
 
-Therefore, if you want to run your Python script in Abaqus Python environment, please make sure to use these methods.
+In summary: this function will be called when you import one of the two modules (:py:mod:`~abaqus` or :py:mod:`~odbAccess`). It will pass the argument ``cae = True`` 
+in :py:mod:`~abaqus` module and ``cae = False`` in :py:mod:`~odbAccess` module.
+Therefore, if you want to run your Python script in Abaqus Python environment, please make sure to import one of these modules
+on the top of your script.
 
 Installation
 ------------
