@@ -33,7 +33,7 @@ class CaeKerPrefs:
         ...
     
     @abaqus_method_doc
-    def saveAs(self, fileName: str = '', directory: typing.Literal["CURRENT", "HOME"] = HOME):
+    def saveAs(self, fileName: str = '', directory: typing.Literal[CURRENT, HOME] = HOME):
         """This method saves the sessionOptions to the specified location.
 
         Parameters

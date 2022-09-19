@@ -15,8 +15,8 @@ mdb = Mdb()
 
 backwardCompatibility = BackwardCompatibility()
 
-YES = SymbolicConstant('YES')
-NO = SymbolicConstant('NO')
+YES = SymbolicConstant.YES
+NO = SymbolicConstant.NO
 
 abqpy.abaqus.run(cae=True)
 
