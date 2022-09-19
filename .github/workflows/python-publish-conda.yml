@@ -23,14 +23,14 @@ jobs:
         uses: conda-incubator/setup-miniconda@v2
         with:
           python-version: ${{ matrix.python-version }}
-          environment-file: conda/build_env.yaml    # Path to the build conda environment
+          environment-file: .github/build_env.yaml    # Path to the build conda environment
           auto-update-conda: false
           auto-activate-base: false
           show-channel-urls: true
       - name: Build and upload the conda packages
         uses: uibcdf/action-build-and-upload-conda-packages@v1.1.0
         with:
-          meta_yaml_dir: conda
+          meta_yaml_dir: .github
           python-version: ${{ matrix.python-version }} # Values previously defined in `matrix`
           platform_linux-64: true
           platform_osx-64: true
