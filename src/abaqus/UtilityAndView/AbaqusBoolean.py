@@ -72,10 +72,10 @@ class AbaqusBoolean(int):
     def __hash__(self) -> int:
         ...
     
-    @staticmethod  # known case of __new__
-    def __new__(cls, *args, **kargs):  # reliably restored by inspect
-        # no doc
-        pass
+    # @staticmethod  # known case of __new__
+    # def __new__(cls, *args, **kargs):  # reliably restored by inspect
+    #     # no doc
+    #     pass
 
     def __reduce__(self) -> tuple:  # known return case of __reduce__
         ...
