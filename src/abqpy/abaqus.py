@@ -16,7 +16,7 @@ def run(cae: bool = True) -> None:
     """
     abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
     try:
-        filePath: str = os.path.abspath(sys.modules['__main__'].__file__)
+        filePath = os.path.abspath(sys.modules['__main__'].__file__)
     except (AttributeError, TypeError, Exception):
         return 
     args = " ".join(sys.argv[1:])
