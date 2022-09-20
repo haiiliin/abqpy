@@ -256,28 +256,34 @@ We can use :py:class:`~abaqus.Mdb.MdbBase.MdbBase.saveAs` to save the Abaqus mod
 
     mdb.saveAs('compression.cae')
 
-It should be noted that we have to use this function to save the model when we use `abqpy` to build an Abaqus model. It is because that when we execute all the above codes, the Python script has not been sent to Abaqus kernel. All the functions mentioned above are included in `abqpy`, however, nothing has been done inside this functions, they are just provided for type hints. Therefore, if we want to send the Python script to the Abaqus kernel, we have to use the Abaqus command like this:
+How the model is submitted to Abaqus?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It should be noted that when we execute all the above codes, the Python script have to not be sent to the Python interpreter. Instead, we have to call the Abaqus kernel, using the command like this:
 
 .. autolink-concat:: on
 .. code-block:: sh
 
     abaqus cae noGUI=script.py
 
-In order to make it simple, this has been done in the :py:meth:`~abaqus.Mdb.MdbBase.MdbBase.saveAs` function:
+In order to make it simple, this has been done inside the :py:mod:`~abaqus` module, in the :py:meth:`~abqpy.abaqus.run()` function:
 
 .. autolink-concat:: on
 .. code-block:: Python
 
-    def saveAs(self, pathName: str):
+    def run():
         abaqus = 'abaqus'
         if 'ABAQUS_BAT_PATH' in os.environ.keys():
             abaqus = os.environ['ABAQUS_BAT_PATH']
-        
-        filePath = os.path.abspath(sys.argv[0])
+
+        filePath = os.path.abspath(__main__.__file__)
         args = " ".join(sys.argv[1:])
 
         os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
+        
+        sys.exit(0)
 
+This function is called when we import the :py:mod:`~abaqus` module, with the line ``from abaqus import *``. So, we have to import the :py:mod:`~abaqus` module to submit the model when we use `abqpy` to build an Abaqus model. All the functions mentioned above are included in `abqpy`, however, nothing has been done inside this functions, they are just provided for type hints. 
 
 The whole script
 ~~~~~~~~~~~~~~~~
