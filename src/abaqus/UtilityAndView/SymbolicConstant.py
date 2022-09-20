@@ -9,8 +9,7 @@ from .AbaqusBoolean import AbaqusBoolean
 value = 'SymbolicConstant'
 name = 'SymbolicConstant'
 
-@abaqus_class_doc
-class SymbolicConstant(str,Enum):
+class abaqusConstants(str,Enum):
     """The SymbolicConstant object represents a string in a way that can be stored in a replay
     file and used as an argument to Abaqus Scripting Interface methods and functions. By
     convention the string representation of the SymbolicConstant object is the same as its
@@ -2612,3 +2611,5 @@ class SymbolicConstant(str,Enum):
 
     __weakref__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """list of weak references to the object (if defined)"""
+
+SymbolicConstant = abaqus_class_doc(abaqusConstants)
