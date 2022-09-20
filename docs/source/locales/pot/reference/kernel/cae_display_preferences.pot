@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2021.3.3 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-17 00:14+0000\n"
+"POT-Creation-Date: 2022-09-20 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -189,7 +189,6 @@ msgid "HOME to open the preferences file in your home directory  (caePrefsAccess
 msgstr ""
 
 #: ../../../../src/abaqus/AbaqusCAEDisplayPreferences/CaeKerPrefs.py:docstring of abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:21
-#: ../../../../src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py:docstring of abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:32
 msgid "The default value is HOME. Either **fileName** or **directory** must be supplied. The **fileName** or **directory** arguments are mutually exclusive."
 msgstr ""
 
@@ -283,11 +282,11 @@ msgid "Check `caePrefsAccess.openSessionOptions on help.3ds.com/2021 <https://he
 msgstr ""
 
 #: ../../../../src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py:docstring of abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:18
-msgid "A String specifying the path to the preferences file. The openSessionOptions method uses this argument if you are working with a preferences file that is not at the default location.If this argument is omitted, the abaqus_2021.gpr file in your home directory is opened."
+msgid "A String specifying the path to the preferences file. The openSessionOptions method uses this argument if you are working with a preferences file that is not at the default location. If this argument is omitted, the abaqus_2021.gpr file in your home directory is opened."
 msgstr ""
 
 #: ../../../../src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py:docstring of abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:33
-msgid "**directory: typing.Literal['CURRENT', 'HOME']**"
+msgid "**directory: typing.Literal[CURRENT, HOME]**"
 msgstr ""
 
 #: ../../../../src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py:docstring of abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:27
@@ -296,6 +295,10 @@ msgstr ""
 
 #: ../../../../src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py:docstring of abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:29
 msgid "HOME to open the preferences file in your home directory (caePrefsAccess.HOME)"
+msgstr ""
+
+#: ../../../../src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py:docstring of abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:32
+msgid "The default value is HOME. Either **fileName** or **directory** must be supplied. The `fileName` or `directory` arguments are mutually exclusive."
 msgstr ""
 
 #: ../../../../src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py:docstring of abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:50
@@ -323,7 +326,7 @@ msgid "The guiPreferences object or sessionOptions object for which you want to 
 msgstr ""
 
 #: ../../../../src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py:docstring of abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:21
-msgid "**maxRecursionDepth: typing.Union[int, typing.Literal['UNLIMITED']]**"
+msgid "**maxRecursionDepth: typing.Union[int, typing.Literal[UNLIMITED]]**"
 msgstr ""
 
 #: ../../../../src/abaqus/AbaqusCAEDisplayPreferences/caePrefsAccess.py:docstring of abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:20
