@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 09:28+0000\n"
+"POT-Creation-Date: 2022-09-20 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -239,8 +239,7 @@ msgid ""
 "(caePrefsAccess.HOME)"
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:21
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:32 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:21 of
 msgid ""
 "The default value is HOME. Either **fileName** or **directory** must be "
 "supplied. The **fileName** or **directory** arguments are mutually "
@@ -379,12 +378,12 @@ msgstr ""
 msgid ""
 "A String specifying the path to the preferences file. The "
 "openSessionOptions method uses this argument if you are working with a "
-"preferences file that is not at the default location.If this argument is "
-"omitted, the abaqus_2021.gpr file in your home directory is opened."
+"preferences file that is not at the default location. If this argument is"
+" omitted, the abaqus_2021.gpr file in your home directory is opened."
 msgstr ""
 
 #: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:33 of
-msgid "**directory: typing.Literal['CURRENT', 'HOME']**"
+msgid "**directory: typing.Literal[CURRENT, HOME]**"
 msgstr ""
 
 #: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:27 of
@@ -397,6 +396,12 @@ msgstr ""
 msgid ""
 "HOME to open the preferences file in your home directory "
 "(caePrefsAccess.HOME)"
+msgstr ""
+
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:32 of
+msgid ""
+"The default value is HOME. Either **fileName** or **directory** must be "
+"supplied. The `fileName` or `directory` arguments are mutually exclusive."
 msgstr ""
 
 #: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:50 of
@@ -434,7 +439,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:21 of
-msgid "**maxRecursionDepth: typing.Union[int, typing.Literal['UNLIMITED']]**"
+msgid "**maxRecursionDepth: typing.Union[int, typing.Literal[UNLIMITED]]**"
 msgstr ""
 
 #: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:20 of
@@ -528,5 +533,22 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "This function can be accessed by:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the path to "
+#~ "the preferences file. The openSessionOptions"
+#~ " method uses this argument if you "
+#~ "are working with a preferences file "
+#~ "that is not at the default "
+#~ "location.If this argument is omitted, "
+#~ "the abaqus_2021.gpr file in your home"
+#~ " directory is opened."
+#~ msgstr ""
+
+#~ msgid "**directory: typing.Literal['CURRENT', 'HOME']**"
+#~ msgstr ""
+
+#~ msgid "**maxRecursionDepth: typing.Union[int, typing.Literal['UNLIMITED']]**"
 #~ msgstr ""
 
