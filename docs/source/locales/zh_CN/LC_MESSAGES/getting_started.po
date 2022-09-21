@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  abqpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-17 00:14+0000\n"
+"POT-Creation-Date: 2022-09-21 00:17+0000\n"
 "PO-Revision-Date: 2022-08-29 13:21+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
@@ -124,46 +124,52 @@ msgstr ""
 "**abaqus** 命令实现的，如下所示："
 
 #: ../../getting_started.rst:76
-msgid "The secret is hided in the :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method:"
+#, fuzzy
+msgid "The secret is hided in the :py:meth:`~abqpy.abaqus.run()` function:"
 msgstr "这个秘密隐藏在 :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` 方法中："
 
-#: ../../getting_started.rst:91
+#: ../../getting_started.rst:93
 msgid ""
-"In this package, the :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method is "
-"reimplemented, if you call this method in your script (i.e., "
-"`mdb.saveAs('model.cae')`), the Python interpreter (not Abaqus Python "
-"interpreter) will use the **abaqus** command to submit this script to "
-"Abaqus, when it is submited to Abaqus, "
-":py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` will be just a normal method to "
-"save the model because `abqpy` is not installed in Abaqus Python "
-"interpreter."
+"In this package, the :py:mod:`~abaqus` module is reimplemented to "
+"automatically call this function. If you import this module in the top of"
+" your script (i.e., ``from abaqus import *``), your Python interpreter "
+"(not Abaqus Python interpreter) will call this function and use the "
+"**abaqus** command to submit the script to Abaqus. After it is submitted "
+"to Abaqus, :py:meth:`~abqpy.abaqus.run()` will exit the interpreter, "
+"because the script will already run in Abaqus Python interpreter."
 msgstr ""
-"在此包中，:py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` 方法被重新实现，如果你在脚本中调用此方法（即 "
-"`mdb.saveAs('model.cae')`），Python 解释器（而非 Abaqus Python 解释器）将使用 **abaqus**"
-" 命令将此脚本提交给 Abaqus，当它被提交给 Abaqus 时，:py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` "
-"只是保存模型的一个正常方法，因为 `abqpy` 并没有被安装在 Abaqus Python 解释器中。"
 
-#: ../../getting_started.rst:96
+#: ../../getting_started.rst:98
 msgid ""
-"In the output script, we might not have to use the "
-":py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method, then another similar method"
-" :py:meth:`~abaqus.Session.Session.Session.openOdb` is also "
-"reimplemented:"
+"In the output script, we might not want to always use the "
+":py:mod:`~abaqus` module, which needs the Abaqus/CAE kernel (and its "
+"license), but instead the module :py:mod:`~odbAccess` (i.e., ``from "
+"odbAccess import *``), which requires only the Abaqus Python interpreter."
+" Then another similar **abaqus** command line is needed:"
 msgstr ""
-"在输出脚本中，我们可能不必使用 :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` 方法，另一个类似的方法 "
-":py:meth:`~abaqus.Session.Session.Session.openOdb` 也被重新实现："
 
-#: ../../getting_started.rst:112
+#: ../../getting_started.rst:106
 msgid ""
-"Therefore, if you want to run your Python script in Abaqus Python "
-"environment, please make sure to use these methods."
-msgstr "因此，如果您想在 Abaqus Python 环境中运行 Python 脚本，请确保使用这些方法。"
+"So, :py:mod:`~odbAccess` is also reimplemented to call the "
+":py:meth:`~abqpy.abaqus.run()` function, and the actual implementation of"
+" this function is similar to:"
+msgstr ""
 
-#: ../../getting_started.rst:115
+#: ../../getting_started.rst:125
+msgid ""
+"In summary: this function will be called when you import one of the two "
+"modules (:py:mod:`~abaqus` or :py:mod:`~odbAccess`). It will pass the "
+"argument ``cae = True`` in :py:mod:`~abaqus` module and ``cae = False`` "
+"in :py:mod:`~odbAccess` module. Therefore, if you want to run your Python"
+" script in Abaqus Python environment, please make sure to import one of "
+"these modules on the top of your script."
+msgstr ""
+
+#: ../../getting_started.rst:131
 msgid "Installation"
 msgstr "安装"
 
-#: ../../getting_started.rst:117
+#: ../../getting_started.rst:133
 msgid ""
 "`abqpy` supports Python 3.7 or a later version. If you are using Python "
 "3.6 or an earlier version, please upgrade to Python 3.7 or a later "
@@ -172,7 +178,7 @@ msgstr ""
 "`abqpy` 支持 Python 3.7 或更高版本。如果您使用的是 Python 3.6 或更早版本，请升级到 Python 3.7 "
 "或更高版本。"
 
-#: ../../getting_started.rst:120
+#: ../../getting_started.rst:136
 #, fuzzy
 msgid ""
 "`abqpy` is uploaded to `PyPI <https://pypi.org/project/abqpy>`_, you can "
@@ -181,7 +187,7 @@ msgstr ""
 "`abqpy` 也被上传到 `anaconda "
 "<https://anaconda.org/haiiliin/abqpy>`_，你可以使用`conda`来安装它："
 
-#: ../../getting_started.rst:127
+#: ../../getting_started.rst:143
 msgid ""
 "`abqpy` is also uploaded to `anaconda "
 "<https://anaconda.org/haiiliin/abqpy>`_, you can use `conda` to install "
@@ -190,7 +196,7 @@ msgstr ""
 "`abqpy` 也被上传到 `anaconda "
 "<https://anaconda.org/haiiliin/abqpy>`_，你可以使用`conda`来安装它："
 
-#: ../../getting_started.rst:134
+#: ../../getting_started.rst:150
 msgid ""
 "You may install the latest development version by cloning the `GitHub "
 "repository <https://github.com/haiiliin/abqpy>`_ and use `python` to "
@@ -199,41 +205,41 @@ msgstr ""
 "您可以通过克隆 `GitHub仓库 <https://github.com/haiiliin/abqpy>`_ 来安装最新的开发版本，并使用 "
 "`python` 从本地目录进行安装："
 
-#: ../../getting_started.rst:146
+#: ../../getting_started.rst:162
 msgid "Optional Requirements"
 msgstr ""
 
-#: ../../getting_started.rst:148
+#: ../../getting_started.rst:164
 msgid ""
 "If you want to use the Jupyter notebook to write your Abaqus/Python "
 "scripts, you need to install `ipynbname`:"
 msgstr ""
 
-#: ../../getting_started.rst:156
+#: ../../getting_started.rst:172
 msgid "Install A Specific Version"
 msgstr "安装特定版本"
 
-#: ../../getting_started.rst:158
+#: ../../getting_started.rst:174
 msgid "You can specify the version number when installing `abqpy`, for example:"
 msgstr "您可以在安装 `abqpy` 时指定版本号，例如："
 
-#: ../../getting_started.rst:160
+#: ../../getting_started.rst:176
 msgid "Using `pip`:"
 msgstr ""
 
-#: ../../getting_started.rst:166
+#: ../../getting_started.rst:182
 msgid "Using `conda`:"
 msgstr ""
 
-#: ../../getting_started.rst:172
+#: ../../getting_started.rst:188
 msgid "A better way is to use * to match specific version:"
 msgstr "更好的方法是使用 * 来匹配特定版本："
 
-#: ../../getting_started.rst:180
+#: ../../getting_started.rst:196
 msgid "Abaqus command"
 msgstr "Abaqus 命令"
 
-#: ../../getting_started.rst:182
+#: ../../getting_started.rst:198
 msgid ""
 "In order to use Abaqus command to execute the Python script and submit "
 "the job, you need to tell `abqpy` where the Abaqus command located. "
@@ -242,7 +248,7 @@ msgstr ""
 "为了使用 Abaqus 命令执行 Python 脚本并提交作业，您需要告诉 `abqpy` Abaqus 命令所在的位置。通常，Abaqus "
 "命令位于如下目录中："
 
-#: ../../getting_started.rst:189
+#: ../../getting_started.rst:205
 msgid ""
 "You can add the directory `C:/SIMULIA/Commands` to the system environment"
 " variable `Path`, or you can create a new system variable named "
@@ -267,4 +273,45 @@ msgstr ""
 #~ "`abqpy` 依赖于 `ipynbname` （从 V1.0.15 开始），而"
 #~ " `ipynbname` 并没有被上传到 Anaconda，因此你必须使用 `pip` "
 #~ "手动安装它："
+
+#~ msgid ""
+#~ "In this package, the "
+#~ ":py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method is "
+#~ "reimplemented, if you call this method"
+#~ " in your script (i.e., "
+#~ "`mdb.saveAs('model.cae')`), the Python interpreter"
+#~ " (not Abaqus Python interpreter) will "
+#~ "use the **abaqus** command to submit "
+#~ "this script to Abaqus, when it is"
+#~ " submited to Abaqus, "
+#~ ":py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` will be just"
+#~ " a normal method to save the "
+#~ "model because `abqpy` is not installed"
+#~ " in Abaqus Python interpreter."
+#~ msgstr ""
+#~ "在此包中，:py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` "
+#~ "方法被重新实现，如果你在脚本中调用此方法（即 `mdb.saveAs('model.cae')`），Python "
+#~ "解释器（而非 Abaqus Python 解释器）将使用 **abaqus** "
+#~ "命令将此脚本提交给 Abaqus，当它被提交给 Abaqus "
+#~ "时，:py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` 只是保存模型的一个正常方法，因为 "
+#~ "`abqpy` 并没有被安装在 Abaqus Python 解释器中。"
+
+#~ msgid ""
+#~ "In the output script, we might not"
+#~ " have to use the "
+#~ ":py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` method, then "
+#~ "another similar method "
+#~ ":py:meth:`~abaqus.Session.Session.Session.openOdb` is also"
+#~ " reimplemented:"
+#~ msgstr ""
+#~ "在输出脚本中，我们可能不必使用 :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` "
+#~ "方法，另一个类似的方法 :py:meth:`~abaqus.Session.Session.Session.openOdb`"
+#~ " 也被重新实现："
+
+#~ msgid ""
+#~ "Therefore, if you want to run your"
+#~ " Python script in Abaqus Python "
+#~ "environment, please make sure to use "
+#~ "these methods."
+#~ msgstr "因此，如果您想在 Abaqus Python 环境中运行 Python 脚本，请确保使用这些方法。"
 
