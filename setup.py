@@ -46,7 +46,7 @@ setuptools.setup(
                 'displayGroupOdbToolset', 'driverUtils', 'field', 'fields', 'inpParser', 'interaction', 'material',
                 'mesh', 'meshEdit', 'methodCallback', 'monitorManager', 'odbAccess', 'odbConnectorBehavior',
                 'odbMaterial', 'odbSection', 'part', 'redentABQ', 'section', 'symbolicConstants', 'textRepr',
-                'upgradeScript', 'visualization'],
+                'upgradeScript', 'visualization', 'regionToolset', 'step' , 'load' , 'optimization' , 'job' , 'sketch' , 'xyPlot'],
     entry_points={
         'console_scripts': [
             'abqpy = abqpy.__main__:cli',
