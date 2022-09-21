@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2017.3.3 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-17 00:14+0000\n"
+"POT-Creation-Date: 2022-09-21 00:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -204,82 +204,90 @@ msgstr ""
 msgid "We can use :py:class:`~abaqus.Mdb.MdbBase.MdbBase.saveAs` to save the Abaqus model to a `.cae` file:"
 msgstr ""
 
-#: ../../tutorials.rst:259
-msgid "It should be noted that we have to use this function to save the model when we use `abqpy` to build an Abaqus model. It is because that when we execute all the above codes, the Python script has not been sent to Abaqus kernel. All the functions mentioned above are included in `abqpy`, however, nothing has been done inside this functions, they are just provided for type hints. Therefore, if we want to send the Python script to the Abaqus kernel, we have to use the Abaqus command like this:"
+#: ../../tutorials.rst:260
+msgid "How the model is submitted to Abaqus?"
 msgstr ""
 
-#: ../../tutorials.rst:266
-msgid "In order to make it simple, this has been done in the :py:meth:`~abaqus.Mdb.MdbBase.MdbBase.saveAs` function:"
+#: ../../tutorials.rst:262
+msgid "It should be noted that when we execute all the above codes, the Python script have to not be sent to the Python interpreter. Instead, we have to call the Abaqus kernel, using the command like this:"
 msgstr ""
 
-#: ../../tutorials.rst:283
+#: ../../tutorials.rst:269
+msgid "In order to make it simple, this has been done inside the :py:mod:`~abaqus` module, in the :py:meth:`~abqpy.abaqus.run()` function:"
+msgstr ""
+
+#: ../../tutorials.rst:286
+msgid "This function is called when we import the :py:mod:`~abaqus` module, with the line ``from abaqus import *``. So, we have to import the :py:mod:`~abaqus` module to submit the model when we use `abqpy` to build an Abaqus model. All the functions mentioned above are included in `abqpy`, however, nothing has been done inside this functions, they are just provided for type hints."
+msgstr ""
+
+#: ../../tutorials.rst:289
 msgid "The whole script"
 msgstr ""
 
-#: ../../tutorials.rst:285
+#: ../../tutorials.rst:291
 msgid "The whole script of this example is showed as follows:"
 msgstr ""
 
-#: ../../tutorials.rst:288
+#: ../../tutorials.rst:294
 msgid "compression.py"
 msgstr ""
 
-#: ../../tutorials.rst:367
+#: ../../tutorials.rst:373
 msgid "Extract output data"
 msgstr ""
 
-#: ../../tutorials.rst:369
+#: ../../tutorials.rst:375
 msgid "If we want to extract the output data, we have to write an output script."
 msgstr ""
 
-#: ../../tutorials.rst:372
+#: ../../tutorials.rst:378
 msgid "Header of the output script"
 msgstr ""
 
-#: ../../tutorials.rst:374
+#: ../../tutorials.rst:380
 msgid "Similarly, we have to import some modules:"
 msgstr ""
 
-#: ../../tutorials.rst:387
+#: ../../tutorials.rst:393
 msgid "Open the output database"
 msgstr ""
 
-#: ../../tutorials.rst:389
+#: ../../tutorials.rst:395
 msgid "We can use :py:meth:`~abaqus.Session.SessionBase.SessionBase.openOdb` to open the output database:"
 msgstr ""
 
-#: ../../tutorials.rst:399
+#: ../../tutorials.rst:405
 msgid "Extract the data"
 msgstr ""
 
-#: ../../tutorials.rst:401
+#: ../../tutorials.rst:407
 msgid "We can use the :py:meth:`~abaqus.XY.XYSession.XYSession.xyDataListFromField` to extract the output data:"
 msgstr ""
 
-#: ../../tutorials.rst:410
+#: ../../tutorials.rst:416
 msgid "`dataList` is a list of `XYData` objects. `XYData` is a data type defined in Abaqus, the data is stored in tuples of tuples, so we can simply save it to a file, i.e., using the `numpy` (`numpy` is installed in Python interpreter of Abaqus already):"
 msgstr ""
 
-#: ../../tutorials.rst:422
+#: ../../tutorials.rst:428
 msgid "Results of above example"
 msgstr ""
 
-#: ../../tutorials.rst:424
+#: ../../tutorials.rst:430
 msgid "The distribution of `U3` of above model is showed as follows:"
 msgstr ""
 
-#: ../../tutorials.rst:432
+#: ../../tutorials.rst:438
 msgid "The distribution of the vertical displacement of a point in the top surface is showed as follows:"
 msgstr ""
 
-#: ../../tutorials.rst:441
+#: ../../tutorials.rst:447
 msgid "The whole output script"
 msgstr ""
 
-#: ../../tutorials.rst:443
+#: ../../tutorials.rst:449
 msgid "The whole output script of this example is showed as follows:"
 msgstr ""
 
-#: ../../tutorials.rst:446
+#: ../../tutorials.rst:452
 msgid "compression-output.py"
 msgstr ""
