@@ -60,11 +60,11 @@ python setup.py install
 您可以在安装 `abqpy` 时指定版本号，例如：
 使用 `pip`:
 ```shell
-pip install abqpy==2018.3.2
+pip install abqpy==2018.3.3
 ```
 使用 `conda`:
 ```shell
-conda install -c haiiliin abqpy=2018.3.2
+conda install -c haiiliin abqpy=2018.3.3
 ```
 更好的方法是使用 * 来匹配特定版本：
 ```shell
