@@ -209,9 +209,12 @@ html_theme = 'pydata_sphinx_theme'
 
 html_theme_options = {
     'navigation_depth': 9,
+    "github_url": "https://github.com/haiiliin/abqpy",
     "switcher": {
         "json_url": "https://abqpy.com/en/latest/_static/switcher.json",
-    }
+        "version_match": f"v{version[:4]}",
+    },
+    "navbar_end": ["version-switcher", "theme-switcher", "navbar-icon-links"],
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
