@@ -209,6 +209,9 @@ html_theme = 'pydata_sphinx_theme'
 
 html_theme_options = {
     'navigation_depth': 9,
+    "switcher": {
+        "json_url": "https://abqpy.com/en/latest/_static/switcher.json",
+    }
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
