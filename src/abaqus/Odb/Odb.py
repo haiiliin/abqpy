@@ -1,4 +1,5 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing import Optional
 from .OdbPart import OdbPart
 from .OdbStep import OdbStep
 from .SectionCategory import SectionCategory
@@ -7,10 +8,11 @@ from ..BeamSectionProfile.BeamSectionProfileOdb import BeamSectionProfileOdb
 from ..Filter.FilterOdb import FilterOdb
 from ..Material.MaterialOdb import MaterialOdb
 from ..UtilityAndView.abaqusConstants import *
+from ..Canvas.Displayable import Displayable
 
 
 @abaqus_class_doc
-class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
+class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayable):
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
     .. note:: 
@@ -60,7 +62,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
         timePeriod: float = 0,
         previousStepName: str = "",
         procedure: str = "",
-        totalTime: float = None,
+        totalTime: float = -1.0,
     ) -> OdbStep:
         """This method creates an OdbStep object.
 

@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Literal, Dict, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .FieldOutput import FieldOutput
@@ -21,45 +21,45 @@ class OdbStepBase:
     """
 
     #: An Int specifying the step number.
-    number: int = None
+    number: Optional[int] = None
 
     #: A Boolean specifying whether geometric nonlinearity can occur in this step.
     nlgeom: Boolean = OFF
 
     #: A Float specifying the current value of the mass of the model. This does not include the
     #: mass of the acoustic media if any present.
-    mass: float = None
+    mass: Optional[float] = None
 
     #: A Float specifying the current value of the mass of the acoustic media of the model.
-    acousticMass: float = None
+    acousticMass: Optional[float] = None
 
     #: An :py:class:`~abaqus.Odb.OdbFrameArray.OdbFrameArray` object.
     frames: OdbFrameArray = []
 
     #: A repository of HistoryRegion objects.
-    historyRegions: typing.Dict[str, HistoryRegion] = {}
+    historyRegions: Dict[str, HistoryRegion] = {}
 
     #: A repository of OdbLoadCase objects.
-    loadCases: typing.Dict[str, OdbLoadCase] = {}
+    loadCases: Dict[str, OdbLoadCase] = {}
 
     #: A tuple of Floats specifying the coordinates of the center of mass.
-    massCenter: float = None
+    massCenter: Optional[float] = None
 
     #: A tuple of Floats specifying the moments and products of inertia about the center of
     #: mass. For 3-D models inertia quantities are written in the following order: I(XX),
     #: I(YY), I(ZZ), I(XY), I(XZ), and I(YZ). For 2-D models only I(ZZ) and I(XY) are
     #: outputted.
-    inertiaAboutCenter: float = None
+    inertiaAboutCenter: Optional[float] = None
 
     #: A tuple of Floats specifying the moments and products of inertia about the origin of the
     #: global coordinate system. For 3-D models inertia quantities are written in the following
     #: order: I(XX), I(YY), I(ZZ), I(XY), I(XZ), and I(YZ). For 2-D models only I(ZZ) and I(XY)
     #: are outputted.
-    inertiaAboutOrigin: float = None
+    inertiaAboutOrigin: Optional[float] = None
 
     #: A tuple of Floats specifying the coordinates of the center of mass of the acoustic
     #: media.
-    acousticMassCenter: float = None
+    acousticMassCenter: Optional[float] = None
 
     @abaqus_method_doc
     def __init__(
@@ -70,7 +70,7 @@ class OdbStepBase:
         timePeriod: float = 0,
         previousStepName: str = "",
         procedure: str = "",
-        totalTime: float = None,
+        totalTime: Optional[float] = None,
     ):
         """This method creates an OdbStep object.
 
@@ -165,9 +165,11 @@ class OdbStepBase:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
-    def getFrame(self, frameValue: str, match: SymbolicConstant = CLOSEST):
+    def getFrame(
+        self, frameValue: str, match: Literal[CLOSEST, BEFORE, AFTER, EXACT] = CLOSEST
+    ):
         """This method retrieves an OdbFrame object associated with a given frame value.
 
         Parameters
@@ -195,7 +197,7 @@ class OdbStepBase:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def getFrame(self, loadCase: OdbLoadCase):
         """This method retrieves an OdbFrame object associated with a given load case.
@@ -217,10 +219,13 @@ class OdbStepBase:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def getFrame(
-        self, loadCase: OdbLoadCase, frameValue: str, match: SymbolicConstant = CLOSEST
+        self,
+        loadCase: OdbLoadCase,
+        frameValue: str,
+        match: Literal[CLOSEST, BEFORE, AFTER, EXACT] = CLOSEST,
     ):
         """This method retrieves an OdbFrame object associated with a given load case and frame
         value.

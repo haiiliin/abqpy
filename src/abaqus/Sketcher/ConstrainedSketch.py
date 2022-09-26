@@ -1,4 +1,5 @@
-import typing
+from __future__ import annotations
+from typing import Optional, Tuple, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchConstraint.ConstrainedSketchConstraintModel import (
@@ -32,14 +33,13 @@ class ConstrainedSketch(
     ConstrainedSketchParameterModel,
     ConstrainedSketchVertexModel,
 ):
-    
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
         name: str,
         sheetSize: float,
-        gridSpacing: float = None,
+        gridSpacing: Optional[float] = None,
         transform: tuple = (),
     ):
         """This method creates a ConstrainedSketch object. If the sketch cannot be created, the
@@ -74,9 +74,9 @@ class ConstrainedSketch(
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
-    def __init__(self, name: str, objectToCopy: "ConstrainedSketch"):
+    def __init__(self, name: str, objectToCopy: ConstrainedSketch) -> None:
         """This method copies one ConstrainedSketch object to a new ConstrainedSketch object. Note:
         If the name of the sketch to be copied to is __edit__, Abaqus creates an exact copy that
         contains both reference geometry and a non-identity transform matrix. Otherwise, the
@@ -178,7 +178,9 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def autoTrimCurve(self, curve1: str, point1: typing.Tuple[float, ...], parameter1: float):
+    def autoTrimCurve(
+        self, curve1: str, point1: Tuple[float, float], parameter1: float
+    ):
         """This method automatically trims a selected ConstrainedSketchGeometry object at the
         specified location. If the object does not intersect other ConstrainedSketchGeometry
         objects, the entire selected object will be deleted.
@@ -200,10 +202,10 @@ class ConstrainedSketch(
     def breakCurve(
         self,
         curve1: ConstrainedSketchGeometry,
-        point1: typing.Tuple[float, ...],
+        point1: Tuple[float, float],
         curve2: ConstrainedSketchGeometry,
-        point2: typing.Tuple[float, ...],
-    ):
+        point2: Tuple[float, float],
+    ) -> None:
         """This method breaks a specified ConstrainedSketchGeometry object (*curve1*) using another
         specified ConstrainedSketchGeometry object (*curve2*). If the selected
         ConstrainedSketchGeometry objects intersect, then only **curve1** will be broken; **curve2**
@@ -229,7 +231,7 @@ class ConstrainedSketch(
     def copyMirror(
         self,
         mirrorLine: ConstrainedSketchGeometry,
-        objectList: typing.Tuple[ConstrainedSketchGeometry, ...],
+        objectList: Tuple[ConstrainedSketchGeometry, ...],
     ):
         """This method creates copies of the given ConstrainedSketchGeometry objects, mirrors them
         about a selected line, and inserts them into the appropriate repositories of the
@@ -247,7 +249,9 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def copyMove(self, vector: tuple, objectList: typing.Tuple[ConstrainedSketchGeometry, ...]):
+    def copyMove(
+        self, vector: tuple, objectList: Tuple[ConstrainedSketchGeometry, ...]
+    ):
         """This method creates copies of the given ConstrainedSketchGeometry objects, moves them
         from their original position, and inserts them into the appropriate repositories of the
         ConstrainedSketch object.
@@ -264,10 +268,10 @@ class ConstrainedSketch(
     @abaqus_method_doc
     def copyRotate(
         self,
-        centerPoint: typing.Tuple[float, ...],
+        centerPoint: Tuple[float, float],
         angle: float,
-        objectList: typing.Tuple[ConstrainedSketchGeometry, ...],
-    ):
+        objectList: Tuple[ConstrainedSketchGeometry, ...],
+    ) -> None:
         """This method creates copies of the given ConstrainedSketchGeometry objects, rotates them,
         and inserts them into the appropriate repositories of the ConstrainedSketch object.
 
@@ -286,9 +290,9 @@ class ConstrainedSketch(
     def copyScale(
         self,
         scaleValue: float,
-        scaleCenter: typing.Tuple[float, ...],
-        objectList: typing.Tuple[ConstrainedSketchGeometry, ...],
-    ):
+        scaleCenter: Tuple[float, float],
+        objectList: Tuple[ConstrainedSketchGeometry, ...],
+    ) -> None:
         """This method creates copies of the given ConstrainedSketchGeometry objects, scales them
         by the specified value about a selected point, and inserts them into the appropriate
         repositories of the ConstrainedSketch object.
@@ -351,11 +355,11 @@ class ConstrainedSketch(
         number1: int,
         spacing1: float,
         angle1: float,
-        vertexList: typing.Tuple[ConstrainedSketchVertex, ...] = (),
-        geomList: typing.Tuple[ConstrainedSketchGeometry, ...] = (),
-        number2: str = 1,
-        spacing2: float = None,
-        angle2: float = None,
+        vertexList: Tuple[ConstrainedSketchVertex, ...] = (),
+        geomList: Tuple[ConstrainedSketchGeometry, ...] = (),
+        number2: int = 1,
+        spacing2: Optional[float] = None,
+        angle2: Optional[float] = None,
     ):
         """This method copies ConstrainedSketchGeometry objects in a linear pattern along one or
         two directions. This method also copies any associated dimension or constraint objects
@@ -402,7 +406,9 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def mergeVertices(self, value: float, vertexList: typing.Tuple[ConstrainedSketchVertex, ...]):
+    def mergeVertices(
+        self, value: float, vertexList: Tuple[ConstrainedSketchVertex, ...]
+    ):
         """This method merges the ConstrainedSketchVertex objects that lie within the specified
         distance of each other. If only one ConstrainedSketchVertex object is selected, it will
         merge all ConstrainedSketchVertex objects that lie within the specified distance of that
@@ -419,7 +425,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def move(self, vector: tuple, objectList: typing.Tuple[ConstrainedSketchGeometry, ...]):
+    def move(self, vector: tuple, objectList: Tuple[ConstrainedSketchGeometry, ...]):
         """This method translates the given ConstrainedSketchGeometry objects by the given vector.
 
         Parameters
@@ -435,7 +441,7 @@ class ConstrainedSketch(
     def offset(
         self,
         distance: float,
-        objectList: typing.Tuple[ConstrainedSketchGeometry, ...],
+        objectList: Tuple[ConstrainedSketchGeometry, ...],
         side: SymbolicConstant,
         filletCorners: Boolean = OFF,
     ):
@@ -463,10 +469,10 @@ class ConstrainedSketch(
         self,
         number: int,
         totalAngle: float,
-        centerPoint: typing.Tuple[float, ...],
-        vertexList: typing.Tuple[ConstrainedSketchVertex, ...] = (),
-        geomList: typing.Tuple[ConstrainedSketchGeometry, ...] = (),
-    ):
+        centerPoint: Tuple[float, float],
+        vertexList: Tuple[ConstrainedSketchVertex, ...] = (),
+        geomList: Tuple[ConstrainedSketchGeometry, ...] = (),
+    ) -> None:
         """This method copies ConstrainedSketchGeometry objects in a radial pattern about a
         specified center point.
 
@@ -496,7 +502,9 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def rectangle(self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...]):
+    def rectangle(
+        self, point1: Tuple[float, float], point2: Tuple[float, float]
+    ) -> int:
         """This method creates four lines that form a rectangle with diagonal corners defined by
         the given points and inserts them into the geometry repository of the ConstrainedSketch
         object.
@@ -517,7 +525,7 @@ class ConstrainedSketch(
 
     @abaqus_method_doc
     def removeGapsAndOverlaps(
-        self, tolerance: str, geomList: typing.Tuple[ConstrainedSketchGeometry, ...]
+        self, tolerance: str, geomList: Tuple[ConstrainedSketchGeometry, ...]
     ):
         """This method removes gaps and overlaps between sketch geometries specified by the user.
         This method is particularly useful when cleaning up imported sketches
@@ -537,7 +545,7 @@ class ConstrainedSketch(
 
     @abaqus_method_doc
     def repairShortEdges(
-        self, geomList: typing.Tuple[ConstrainedSketchGeometry, ...], tolerance: str = ""
+        self, geomList: Tuple[ConstrainedSketchGeometry, ...], tolerance: str = ""
     ):
         """This method deletes the short edges specified, optionally selecting only those short
         edges whose lengths are smaller than the specified tolerance and healing the resultant
@@ -572,7 +580,9 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def rotate(self, centerPoint: typing.Tuple[float, ...], angle: float, objectList: tuple):
+    def rotate(
+        self, centerPoint: Tuple[float, float], angle: float, objectList: tuple
+    ) -> None:
         """This method rotates the given ConstrainedSketchGeometry objects by the given angle and
         about the given point.
 
@@ -591,9 +601,9 @@ class ConstrainedSketch(
     def scale(
         self,
         scaleValue: float,
-        scaleCenter: typing.Tuple[float, ...],
-        objectList: typing.Tuple[ConstrainedSketchGeometry, ...],
-    ):
+        scaleCenter: Tuple[float, float],
+        objectList: Tuple[ConstrainedSketchGeometry, ...],
+    ) -> None:
         """This method scales the given ConstrainedSketchGeometry objects by the given scale factor
         and about the given point.
 
@@ -628,8 +638,12 @@ class ConstrainedSketch(
 
     @abaqus_method_doc
     def trimExtendCurve(
-        self, curve1: str, point1: typing.Tuple[float, ...], curve2: str, point2: typing.Tuple[float, ...]
-    ):
+        self,
+        curve1: str,
+        point1: Tuple[float, float],
+        curve2: str,
+        point2: Tuple[float, float],
+    ) -> None:
         """This method trims or extends a specified ConstrainedSketchGeometry object (*curve1*)
         using another specified ConstrainedSketchGeometry object (*curve2*). **curve2** is not
         affected by the operation. The location for the trim or extend is determined by the
@@ -667,7 +681,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def writeAcisFile(self, fileName: str, version: float = None):
+    def writeAcisFile(self, fileName: str, version: Optional[float] = None):
         """This method exports the geometry of the sketch to a named file in ACIS format.
 
         Parameters
@@ -686,7 +700,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def writeIgesFile(self, filename: str, flavor: SymbolicConstant = None):
+    def writeIgesFile(self, filename: str, flavor: Optional[SymbolicConstant] = None):
         """This method exports the geometry of the sketch to a named file in IGES format.
 
         Parameters

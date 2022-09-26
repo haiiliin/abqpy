@@ -1,3 +1,4 @@
+from typing import Optional, Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .GeometryShellSection import GeometryShellSection
 from .RebarLayers import RebarLayers
@@ -27,10 +28,10 @@ class CompositeShellSection(GeometryShellSection):
     """
 
     #: A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
-    rebarLayers: RebarLayers = None
+    rebarLayers: Optional[RebarLayers] = None
 
     #: A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object specifying the transverse shear stiffness properties.
-    transverseShear: TransverseShearShell = None
+    transverseShear: Optional[TransverseShearShell] = None
 
     #: A String specifying the repository key.
     name: str
@@ -45,7 +46,13 @@ class CompositeShellSection(GeometryShellSection):
     #: A SymbolicConstant specifying the distribution used for defining the thickness of the
     #: elements. Possible values are UNIFORM, ANALYTICAL_FIELD, DISCRETE_FIELD,
     #: NODAL_ANALYTICAL_FIELD, and NODAL_DISCRETE_FIELD. The default value is UNIFORM.
-    thicknessType: SymbolicConstant = UNIFORM
+    thicknessType: Literal[
+        UNIFORM,
+        ANALYTICAL_FIELD,
+        DISCRETE_FIELD,
+        NODAL_ANALYTICAL_FIELD,
+        NODAL_DISCRETE_FIELD,
+    ] = UNIFORM
 
     #: A Boolean specifying whether the shell section properties are specified by the user
     #: prior to the analysis (ON) or integrated during the analysis (OFF). The default value is
@@ -53,11 +60,11 @@ class CompositeShellSection(GeometryShellSection):
     preIntegrate: Boolean = OFF
 
     #: A SymbolicConstant specifying whether to use the default value for the Poisson's ratio.
-    #: Possible values are:DEFAULT, specifying that the default value for the Poisson's ratio
+    #: Possible values are: DEFAULT, specifying that the default value for the Poisson's ratio
     #: is 0.5 in an Abaqus/Standard analysis and is obtained from the material definition in an
-    #: Abaqus/Explicit analysis.VALUE, specifying that the Poisson's ratio used in the analysis
+    #: Abaqus/Explicit analysis. VALUE, specifying that the Poisson's ratio used in the analysis
     #: is the value provided in **poisson**.The default value is DEFAULT.
-    poissonDefinition: SymbolicConstant = DEFAULT
+    poissonDefinition: Literal[DEFAULT, VALUE] = DEFAULT
 
     #: A Float specifying the Poisson's ratio. Possible values are −1.0 ≤ **poisson** ≤ 0.5.
     #: This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
@@ -65,27 +72,29 @@ class CompositeShellSection(GeometryShellSection):
 
     #: A SymbolicConstant specifying the shell section integration rule. Possible values are
     #: SIMPSON and GAUSS. The default value is SIMPSON.
-    integrationRule: SymbolicConstant = SIMPSON
+    integrationRule: Literal[SIMPSON, GAUSS] = SIMPSON
 
     #: A SymbolicConstant specifying the mode used for temperature and field variable input
     #: across the section thickness. Possible values are GRADIENT and POINTWISE. The default
     #: value is GRADIENT.
-    temperature: SymbolicConstant = GRADIENT
+    temperature: Literal[GRADIENT, POINTWISE] = GRADIENT
 
     #: A SymbolicConstant specifying the mechanical idealization used for the section
     #: calculations. This member is only applicable when **preIntegrate** is set to ON. Possible
     #: values are NO_IDEALIZATION, SMEAR_ALL_LAYERS, MEMBRANE, and BENDING. The default value
     #: is NO_IDEALIZATION.
-    idealization: SymbolicConstant = NO_IDEALIZATION
+    idealization: Literal[
+        NO_IDEALIZATION, SMEAR_ALL_LAYERS, MEMBRANE, BENDING
+    ] = NO_IDEALIZATION
 
     #: None or an Int specifying the number of temperature points to be input. This argument is
     #: valid only when **temperature** = POINTWISE. The default value is None.
-    nTemp: int = None
+    nTemp: Optional[int] = None
 
     #: None or a Float specifying the effective thickness modulus. This argument is relevant
     #: only for continuum shells and must be used in conjunction with the argument **poisson**.
     #: The default value is None.
-    thicknessModulus: float = None
+    thicknessModulus: Optional[float] = None
 
     #: A Boolean specifying whether or not to use the value of **density**. The default value is
     #: OFF.
@@ -117,21 +126,29 @@ class CompositeShellSection(GeometryShellSection):
         name: str,
         layup: SectionLayerArray,
         symmetric: Boolean = OFF,
-        thicknessType: SymbolicConstant = UNIFORM,
+        thicknessType: Literal[
+            UNIFORM,
+            ANALYTICAL_FIELD,
+            DISCRETE_FIELD,
+            NODAL_ANALYTICAL_FIELD,
+            NODAL_DISCRETE_FIELD,
+        ] = UNIFORM,
         preIntegrate: Boolean = OFF,
-        poissonDefinition: SymbolicConstant = DEFAULT,
+        poissonDefinition: Literal[DEFAULT, VALUE] = DEFAULT,
         poisson: float = 0,
-        integrationRule: SymbolicConstant = SIMPSON,
-        temperature: SymbolicConstant = GRADIENT,
-        idealization: SymbolicConstant = NO_IDEALIZATION,
-        nTemp: int = None,
-        thicknessModulus: float = None,
+        integrationRule: Literal[SIMPSON, GAUSS] = SIMPSON,
+        temperature: Literal[GRADIENT, POINTWISE] = GRADIENT,
+        idealization: Literal[
+            NO_IDEALIZATION, SMEAR_ALL_LAYERS, MEMBRANE, BENDING
+        ] = NO_IDEALIZATION,
+        nTemp: Optional[int] = None,
+        thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         layupName: str = "",
         thicknessField: str = "",
         nodalThicknessField: str = "",
-    ):
+    ) -> None:
         """This method creates a CompositeShellSection object.
 
         .. note:: 
@@ -217,21 +234,29 @@ class CompositeShellSection(GeometryShellSection):
     def setValues(
         self,
         symmetric: Boolean = OFF,
-        thicknessType: SymbolicConstant = UNIFORM,
+        thicknessType: Literal[
+            UNIFORM,
+            ANALYTICAL_FIELD,
+            DISCRETE_FIELD,
+            NODAL_ANALYTICAL_FIELD,
+            NODAL_DISCRETE_FIELD,
+        ] = UNIFORM,
         preIntegrate: Boolean = OFF,
-        poissonDefinition: SymbolicConstant = DEFAULT,
+        poissonDefinition: Literal[DEFAULT, VALUE] = DEFAULT,
         poisson: float = 0,
-        integrationRule: SymbolicConstant = SIMPSON,
-        temperature: SymbolicConstant = GRADIENT,
-        idealization: SymbolicConstant = NO_IDEALIZATION,
-        nTemp: int = None,
-        thicknessModulus: float = None,
+        integrationRule: Literal[SIMPSON, GAUSS] = SIMPSON,
+        temperature: Literal[GRADIENT, POINTWISE] = GRADIENT,
+        idealization: Literal[
+            NO_IDEALIZATION, SMEAR_ALL_LAYERS, MEMBRANE, BENDING
+        ] = NO_IDEALIZATION,
+        nTemp: Optional[int] = None,
+        thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         layupName: str = "",
         thicknessField: str = "",
         nodalThicknessField: str = "",
-    ):
+    ) -> None:
         """This method modifies the CompositeShellSection object.
 
         Parameters

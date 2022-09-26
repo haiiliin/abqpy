@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Dict, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .HistoryOutput import HistoryOutput
@@ -19,10 +19,10 @@ class HistoryRegion:
 
     #: A SymbolicConstant specifying the position of the history output. Possible values are
     #: NODAL, INTEGRATION_POINT, WHOLE_ELEMENT, WHOLE_REGION, and WHOLE_MODEL.
-    position: SymbolicConstant = None
+    position: Optional[SymbolicConstant] = None
 
     #: A repository of HistoryOutput objects.
-    historyOutputs: typing.Dict[str, HistoryOutput] = {}
+    historyOutputs: Dict[str, HistoryOutput] = {}
 
     #: A String specifying the name of the HistoryRegion object.
     name: str
@@ -35,11 +35,15 @@ class HistoryRegion:
 
     #: None or an OdbLoadCase object specifying the load case associated with the HistoryRegion
     #: object. The default value is None.
-    loadCase: str = None
+    loadCase: Optional[str] = None
 
     @abaqus_method_doc
     def __init__(
-        self, name: str, description: str, point: HistoryPoint, loadCase: str = None
+        self,
+        name: str,
+        description: str,
+        point: HistoryPoint,
+        loadCase: Optional[str] = None,
     ):
         """This method creates a HistoryRegion object.
 
@@ -67,7 +71,7 @@ class HistoryRegion:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def getSubset(self, variableName: str):
         """This method returns a subset of the data in the HistoryRegion object.
@@ -84,7 +88,7 @@ class HistoryRegion:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def getSubset(self, start: float):
         """This method returns a subset of the data in the HistoryRegion object.
@@ -102,7 +106,7 @@ class HistoryRegion:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def getSubset(self, start: float, end: float):
         """This method returns a subset of the data in the HistoryRegion object.
@@ -131,7 +135,7 @@ class HistoryRegion:
         name: str,
         description: str,
         type: SymbolicConstant,
-        validInvariants: SymbolicConstant = None,
+        validInvariants: Optional[SymbolicConstant] = None,
     ):
         """This method creates a HistoryOutput object.
 

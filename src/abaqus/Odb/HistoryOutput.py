@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
@@ -19,12 +19,12 @@ class HistoryOutput:
     #: A tuple of pairs of Floats specifying the pairs (*frameValue*, **value**) where
     #: **frameValue** is either time, frequency, or mode and **value** is the value of the
     #: specified variable at **frameValue**. (This value depends on the type of the variable.)
-    data: float = None
+    data: Optional[float] = None
 
     #: A tuple of pairs of Floats specifying the imaginary portion of a specified complex
     #: variable at each frame value (time, frequency, or mode). The pairs have the form
     #: (*frameValue*, **value**).
-    conjugateData: float = None
+    conjugateData: Optional[float] = None
 
     #: A String specifying the output variable name.
     name: str
@@ -38,7 +38,7 @@ class HistoryOutput:
     #: A sequence of SymbolicConstants specifying which invariants should be calculated for
     #: this field. Possible values are MAGNITUDE, MISES, TRESCA, PRESS, INV3, MAX_PRINCIPAL,
     #: MID_PRINCIPAL, and MIN_PRINCIPAL. The default value is an empty sequence.
-    validInvariants: SymbolicConstant = None
+    validInvariants: Optional[SymbolicConstant] = None
 
     @abaqus_method_doc
     def __init__(
@@ -46,7 +46,7 @@ class HistoryOutput:
         name: str,
         description: str,
         type: SymbolicConstant,
-        validInvariants: SymbolicConstant = None,
+        validInvariants: Optional[SymbolicConstant] = None,
     ):
         """This method creates a HistoryOutput object.
 
@@ -75,7 +75,7 @@ class HistoryOutput:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def addData(self, frame: str, value: str):
         """This method adds data to the **data** member of the HistoryOutput object.
@@ -90,7 +90,7 @@ class HistoryOutput:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def addData(self, frame: tuple, value: tuple):
         """This method adds data to the **data** member of the HistoryOutput object.
@@ -111,7 +111,7 @@ class HistoryOutput:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def addData(self, data: tuple):
         """This method adds data to the **data** member of the HistoryOutput object.

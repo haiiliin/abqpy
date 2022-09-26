@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Union, Literal, Tuple, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..BasicGeometry.Cell import Cell
@@ -37,18 +37,20 @@ class Feature:
     name: str = ""
 
     #: An Int specifying the ID of the feature.
-    id: int = None
+    id: Optional[int] = None
 
     @abaqus_method_doc
     def AttachmentPoints(
         self,
         name: str,
         points: float,
-        projectionMethod: SymbolicConstant = PROJECT_BY_PROXIMITY,
-        projectOnFaces: typing.Tuple[Face, ...] = (),
-        projectOnElementFaces: typing.Tuple[MeshFace, ...] = (),
-        projectionDirStartPt: float = None,
-        projectionDirEndPt: float = None,
+        projectionMethod: Literal[
+            PROJECT_BY_PROXIMITY, PROJECT_BY_DIRECTION
+        ] = PROJECT_BY_PROXIMITY,
+        projectOnFaces: Tuple[Face, ...] = (),
+        projectOnElementFaces: Tuple[MeshFace, ...] = (),
+        projectionDirStartPt: Optional[float] = None,
+        projectionDirEndPt: Optional[float] = None,
         setName: str = "",
     ):
         """This method creates an attachment points Feature. Attachment points may be created using
@@ -103,19 +105,21 @@ class Feature:
         self,
         name: str,
         startPoint: float,
-        pointCreationMethod: SymbolicConstant,
-        endPoint: float = None,
+        pointCreationMethod: Literal[AUTO_FIT, NUM_PTS_ALONG_DIR, NUM_PTS_BETWEEN_PTS],
+        endPoint: Optional[float] = None,
         direction: str = "",
         spacing: str = "",
         numPtsAlongDir: str = "",
         numPtsBetweenPts: str = "",
         createPtAtStartPt: Boolean = True,
         createPtAtEndPt: Boolean = True,
-        projectionMethod: SymbolicConstant = PROJECT_BY_PROXIMITY,
-        projectOnFaces: typing.Tuple[Face, ...] = (),
-        projectOnElementFaces: typing.Tuple[MeshFace, ...] = (),
-        projectionDirStartPt: float = None,
-        projectionDirEndPt: float = None,
+        projectionMethod: Literal[
+            PROJECT_BY_PROXIMITY, PROJECT_BY_DIRECTION
+        ] = PROJECT_BY_PROXIMITY,
+        projectOnFaces: Tuple[Face, ...] = (),
+        projectOnElementFaces: Tuple[MeshFace, ...] = (),
+        projectionDirStartPt: Optional[float] = None,
+        projectionDirEndPt: Optional[float] = None,
         flipDirection: Boolean = OFF,
         setName: str = "",
     ):
@@ -199,24 +203,26 @@ class Feature:
         edges: tuple,
         startPoint: str = "",
         flipDirection: str = "",
-        pointCreationMethod: SymbolicConstant = None,
+        pointCreationMethod: Literal[BY_NUMBER, BY_SPACING] = ...,
         numberOfPoints: str = "",
         spacingBetweenPoints: str = "",
-        offsetFromStartPoint: str = 0,
-        offsetFromEndPoint: str = 0,
-        spacingMethod: SymbolicConstant = AUTO_FIT_PTS,
-        patterningMethod: SymbolicConstant = None,
+        offsetFromStartPoint: float = 0,
+        offsetFromEndPoint: float = 0,
+        spacingMethod: Literal[AUTO_FIT_PTS, SPECIFY_NUM_PTS] = AUTO_FIT_PTS,
+        patterningMethod: Literal[PATTERN_ORTHOGONALLY, PATTERN_ALONG_DIRECTION] = ...,
         referenceFace: str = "",
-        startPointForPatternDirection: float = None,
-        endPointForPatternDirection: float = None,
+        startPointForPatternDirection: Tuple[float, ...] = ...,
+        endPointForPatternDirection: Tuple[float, ...] = ...,
         offsetFromEdges: str = "",
-        numberOfRows: str = 1,
+        numberOfRows: int = 1,
         spacingBetweenRows: str = "",
-        projectionMethod: SymbolicConstant = PROJECT_BY_PROXIMITY,
-        projectOnFaces: typing.Tuple[Face, ...] = (),
-        projectOnElementFaces: typing.Tuple[MeshFace, ...] = (),
-        projectionDirStartPt: float = None,
-        projectionDirEndPt: float = None,
+        projectionMethod: Literal[
+            PROJECT_BY_PROXIMITY, PROJECT_BY_DIRECTION
+        ] = PROJECT_BY_PROXIMITY,
+        projectOnFaces: Tuple[Face, ...] = (),
+        projectOnElementFaces: Tuple[MeshFace, ...] = (),
+        projectionDirStartPt: Tuple[float, ...] = ...,
+        projectionDirEndPt: Tuple[float, ...] = ...,
         setName: str = "",
     ):
         """This method creates a Feature object by creating attachment points along or offset from
@@ -429,7 +435,7 @@ class Feature:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def DatumAxisByRotation(self, line: str, axis: str, angle: float):
         """This method creates a Feature object and a DatumAxis object in a three-dimensional model
@@ -463,7 +469,7 @@ class Feature:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def DatumAxisByRotation(self, line: str, point: int, angle: float):
         """This method creates a Feature object and a DatumAxis object in a two-dimensional model
@@ -824,7 +830,7 @@ class Feature:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def DatumPlaneByOffset(self, plane: str, flip: SymbolicConstant, offset: float):
         """This method creates a Feature object and a DatumPlane object offset by a specified
@@ -857,7 +863,7 @@ class Feature:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def DatumPlaneByOffset(self, plane: str, point: int):
         """This method creates a Feature object and a DatumPlane object offset from an existing
@@ -1244,8 +1250,8 @@ class Feature:
         self,
         sketchPlane: str,
         origin: tuple = (),
-        sketchOrientation: SymbolicConstant = RIGHT,
-        sketchPlaneSide: SymbolicConstant = SIDE1,
+        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        sketchPlaneSide: Literal[SIDE1, SIDE2] = SIDE1,
         sketchUpEdge: str = "",
     ):
         """This method creates a Transform object. A :py:class:`~abaqus.BasicGeometry.Transform.Transform` object is a 4x3 matrix of Floats
@@ -1288,7 +1294,9 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionCellByDatumPlane(self, cells: typing.Tuple[Cell, ...], datumPlane: DatumPlane):
+    def PartitionCellByDatumPlane(
+        self, cells: Tuple[Cell, ...], datumPlane: DatumPlane
+    ):
         """This method partitions one or more cells using the given datum plane.
 
         .. note:: 
@@ -1316,7 +1324,7 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionCellByExtendFace(self, cells: typing.Tuple[Cell, ...], extendFace: str):
+    def PartitionCellByExtendFace(self, cells: Tuple[Cell, ...], extendFace: str):
         """This method partitions one or more cells by extending the underlying geometry of a given
         face to partition the target cells.
 
@@ -1346,7 +1354,7 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionCellByExtrudeEdge(
-        self, cells: typing.Tuple[Cell, ...], edges: str, line: str, sense: SymbolicConstant
+        self, cells: Tuple[Cell, ...], edges: str, line: str, sense: SymbolicConstant
     ):
         """This method partitions one or more cells by extruding selected edges in the given
         direction.
@@ -1414,7 +1422,7 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionCellByPatchNEdges(self, cell: str, edges: typing.Tuple[Edge, ...]):
+    def PartitionCellByPatchNEdges(self, cell: str, edges: Tuple[Edge, ...]):
         """This method partitions a cell using an N-sided cutting patch defined by the given edges.
 
         .. note:: 
@@ -1444,7 +1452,7 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionCellByPlaneNormalToEdge(
-        self, cells: typing.Tuple[Cell, ...], edge: Edge, point: int
+        self, cells: Tuple[Cell, ...], edge: Edge, point: int
     ):
         """This method partitions one or more cells using a plane normal to an edge at the given
         edge point.
@@ -1477,7 +1485,7 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionCellByPlanePointNormal(
-        self, cells: typing.Tuple[Cell, ...], point: int, normal: str
+        self, cells: Tuple[Cell, ...], point: int, normal: str
     ):
         """This method partitions one or more cells using a plane defined by a point and a normal
         direction.
@@ -1510,7 +1518,7 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionCellByPlaneThreePoints(
-        self, cells: typing.Tuple[Cell, ...], point1: int, point2: int, point3: int
+        self, cells: Tuple[Cell, ...], point1: int, point2: int, point3: int
     ):
         """This method partitions one or more cells using a plane defined by three points.
 
@@ -1545,7 +1553,7 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionCellBySweepEdge(
-        self, cells: typing.Tuple[Cell, ...], edges: typing.Tuple[Edge, ...], sweepPath: Edge
+        self, cells: Tuple[Cell, ...], edges: Tuple[Edge, ...], sweepPath: Edge
     ):
         """This method partitions one or more cells by sweeping selected edges along the given
         sweep path.
@@ -1580,7 +1588,9 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionEdgeByDatumPlane(self, edges: typing.Tuple[Edge, ...], datumPlane: DatumPlane):
+    def PartitionEdgeByDatumPlane(
+        self, edges: Tuple[Edge, ...], datumPlane: DatumPlane
+    ):
         """This method partitions an edge where it intersects with a datum plane.
 
         .. note:: 
@@ -1608,7 +1618,7 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionEdgeByParam(self, edges: typing.Tuple[Edge, ...], parameter: float):
+    def PartitionEdgeByParam(self, edges: Tuple[Edge, ...], parameter: float):
         """This method partitions one or more edges at the given normalized edge parameter.
 
         .. note:: 
@@ -1764,7 +1774,9 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionFaceByDatumPlane(self, faces: typing.Tuple[Face, ...], datumPlane: DatumPlane):
+    def PartitionFaceByDatumPlane(
+        self, faces: Tuple[Face, ...], datumPlane: DatumPlane
+    ):
         """This method partitions one or more faces using the given datum plane.
 
         .. note:: 
@@ -1788,7 +1800,7 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionFaceByExtendFace(self, faces: typing.Tuple[Face, ...], extendFace: Face):
+    def PartitionFaceByExtendFace(self, faces: Tuple[Face, ...], extendFace: Face):
         """This method partitions one or more faces by extending the underlying geometry of another
         given face to partition the target faces.
 
@@ -1815,7 +1827,7 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionFaceByIntersectFace(
-        self, faces: typing.Tuple[Face, ...], cuttingFaces: typing.Tuple[Face, ...]
+        self, faces: Tuple[Face, ...], cuttingFaces: Tuple[Face, ...]
     ):
         """This method partitions one or more faces using the given cutting faces to partition the
         target faces.
@@ -1842,7 +1854,10 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionFaceByProjectingEdges(
-        self, faces: typing.Tuple[Face, ...], edges: typing.Tuple[Edge, ...], extendEdges: Boolean = False
+        self,
+        faces: Tuple[Face, ...],
+        edges: Tuple[Edge, ...],
+        extendEdges: Boolean = False,
     ):
         """This method partitions one or more faces by projecting the given edges on the target
         faces.
@@ -1872,7 +1887,9 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionFaceByShortestPath(self, faces: typing.Tuple[Face, ...], point1: int, point2: int):
+    def PartitionFaceByShortestPath(
+        self, faces: Tuple[Face, ...], point1: int, point2: int
+    ):
         """This method partitions one or more faces using a minimum distance path between the two
         given points.
 
@@ -1907,10 +1924,10 @@ class Feature:
     @abaqus_method_doc
     def PartitionFaceBySketch(
         self,
-        faces: typing.Tuple[Face, ...],
+        faces: Tuple[Face, ...],
         sketch: ConstrainedSketch,
         sketchUpEdge: str = "",
-        sketchOrientation: SymbolicConstant = RIGHT,
+        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
     ):
         """This method partitions one or more planar faces by sketching on them.
 
@@ -1948,13 +1965,13 @@ class Feature:
     @abaqus_method_doc
     def PartitionFaceBySketchDistance(
         self,
-        faces: typing.Tuple[Face, ...],
+        faces: Tuple[Face, ...],
         sketchPlane: str,
         sketchPlaneSide: SymbolicConstant,
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         distance: float,
-        sketchOrientation: SymbolicConstant = RIGHT,
+        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
     ):
         """This method partitions one or more faces by sketching on a sketch plane and then
         projecting the sketch toward the target faces through the given distance.
@@ -1999,12 +2016,12 @@ class Feature:
     @abaqus_method_doc
     def PartitionFaceBySketchRefPoint(
         self,
-        faces: typing.Tuple[Face, ...],
+        faces: Tuple[Face, ...],
         sketchPlane: str,
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         point: int,
-        sketchOrientation: SymbolicConstant = RIGHT,
+        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
     ):
         """This method partitions one or more faces by sketching on a sketch plane and then
         projecting the sketch toward the target faces through a distance governed by the
@@ -2048,12 +2065,12 @@ class Feature:
     @abaqus_method_doc
     def PartitionFaceBySketchThruAll(
         self,
-        faces: typing.Tuple[Face, ...],
+        faces: Tuple[Face, ...],
         sketchPlane: str,
         sketchPlaneSide: SymbolicConstant,
         sketchUpEdge: str,
         sketch: ConstrainedSketch,
-        sketchOrientation: SymbolicConstant = RIGHT,
+        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
     ):
         """This method partitions one or more faces by sketching on a sketch plane and then
         projecting toward the target faces through an infinite distance.
@@ -2096,7 +2113,7 @@ class Feature:
     @abaqus_method_doc
     def ReferencePoint(
         self,
-        point: typing.Union[tuple, Vertex, InterestingPoint, MeshNode, Datum],
+        point: Union[tuple, Vertex, InterestingPoint, MeshNode, Datum],
         instanceName: str = "",
     ) -> "Feature":
         """This method creates a Feature object and a ReferencePoint object at the specified
@@ -2125,7 +2142,7 @@ class Feature:
         return self
 
     @abaqus_method_doc
-    def RemoveWireEdges(self, wireEdgeList: typing.Tuple[Edge, ...]):
+    def RemoveWireEdges(self, wireEdgeList: Tuple[Edge, ...]):
         """This method removes wire edges.
 
         .. note:: 
@@ -2151,7 +2168,7 @@ class Feature:
     def WirePolyLine(
         self,
         points: float,
-        mergeType: SymbolicConstant = IMPRINT,
+        mergeType: Literal[MERGE, IMPRINT, SEPARATE] = IMPRINT,
         meshable: Boolean = ON,
     ):
         """This method creates an additional Feature object by creating a series of wires joining
@@ -2228,11 +2245,11 @@ class Feature:
     @abaqus_method_doc
     def setValues(
         self,
-        parameter: float = None,
-        parameter1: float = None,
-        parameter2: float = None,
-        sketch: ConstrainedSketch = None,
-        distance: float = None,
+        parameter: float = ...,
+        parameter1: float = ...,
+        parameter2: float = ...,
+        sketch: ConstrainedSketch = ...,
+        distance: float = ...,
     ):
         """This method modifies the Feature object.
 

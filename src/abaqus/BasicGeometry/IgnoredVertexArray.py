@@ -1,4 +1,5 @@
-import typing
+from __future__ import annotations
+from typing import Union, List, Tuple, Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .IgnoredVertex import IgnoredVertex
@@ -6,7 +7,7 @@ from ..UtilityAndView.abaqusConstants import *
 
 
 @abaqus_class_doc
-class IgnoredVertexArray(typing.List[IgnoredVertex]):
+class IgnoredVertexArray(List[IgnoredVertex]):
     """The IgnoredVertexArray is a sequence of IgnoredVertex objects. If the part is modified,
     then IgnoredVertexArray must be updated for that part.
 
@@ -21,7 +22,7 @@ class IgnoredVertexArray(typing.List[IgnoredVertex]):
     """
 
     @abaqus_method_doc
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[IgnoredVertex, typing.List[IgnoredVertex]]:
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> Union[IgnoredVertex, List[IgnoredVertex]]:
         """This method returns the object or objects in the IgnoredVertexArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any
@@ -90,7 +91,7 @@ class IgnoredVertexArray(typing.List[IgnoredVertex]):
         ...
 
     @abaqus_method_doc
-    def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
+    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
         """This method returns a object or objects in the IgnoredVertexArray closest to the given
         set of points, where the given points need not lie on the vertices in the
         IgnoredVertexArray.
