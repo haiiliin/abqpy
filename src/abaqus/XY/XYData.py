@@ -349,7 +349,22 @@ class XYData(tuple):
             ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, NODAL
         ],
         variable: Tuple[
-            Tuple[str, SymbolicConstant, Tuple[Tuple[SymbolicConstant, str], ...]]
+            Tuple[
+                str,
+                Literal[
+                    ELEMENT_CENTROID,
+                    ELEMENT_FACE,
+                    ELEMENT_NODAL,
+                    GENERAL_PARTICLE,
+                    INTEGRATION_POINT,
+                    NODAL,
+                    WHOLE_ELEMENT,
+                    WHOLE_MODEL,
+                    WHOLE_PART_INSTANCE,
+                    WHOLE_REGION,
+                ],
+                Tuple[Tuple[Literal[INVARIANT, COMPONENT], str], ...],
+            ]
         ],
         elementSets: Union[Tuple[str, ...], str] = ...,
         elementLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,
@@ -684,10 +699,20 @@ class XYData(tuple):
         path: Path,
         name: str,
         includeIntersections: Boolean,
-        shape: SymbolicConstant,
-        pathStyle: SymbolicConstant,
+        shape: Literal[UNDEFORMED, DEFORMED],
+        pathStyle: Literal[PATH_POINTS, UNIFORM_SPACING],
         numIntervals: int,
-        labelType: SymbolicConstant,
+        labelType: Literal[
+            NORM_DISTANCE,
+            SEQ_ID,
+            TRUE_DISTANCE,
+            TRUE_DISTANCE_X,
+            TRUE_DISTANCE_Y,
+            TRUE_DISTANCE_Z,
+            X_COORDINATE,
+            Y_COORDINATE,
+            Z_COORDINATE,
+        ],
         viewport: str = "",
         removeDuplicateXYPairs: Boolean = True,
         includeAllElements: Boolean = False,

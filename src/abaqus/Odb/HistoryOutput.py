@@ -1,4 +1,4 @@
-from typing import Optional, overload
+from typing import Optional, Literal, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
@@ -45,9 +45,9 @@ class HistoryOutput:
         self,
         name: str,
         description: str,
-        type: SymbolicConstant,
+        type: Literal[SCALAR],
         validInvariants: Optional[SymbolicConstant] = None,
-    ):
+    ) -> None:
         """This method creates a HistoryOutput object.
 
         .. note:: 
@@ -77,7 +77,7 @@ class HistoryOutput:
 
     @overload
     @abaqus_method_doc
-    def addData(self, frame: str, value: str):
+    def addData(self, frame: str, value: str) -> None:
         """This method adds data to the **data** member of the HistoryOutput object.
 
         Parameters
@@ -92,7 +92,7 @@ class HistoryOutput:
 
     @overload
     @abaqus_method_doc
-    def addData(self, frame: tuple, value: tuple):
+    def addData(self, frame: tuple, value: tuple) -> None:
         """This method adds data to the **data** member of the HistoryOutput object.
 
         Parameters
@@ -113,7 +113,7 @@ class HistoryOutput:
 
     @overload
     @abaqus_method_doc
-    def addData(self, data: tuple):
+    def addData(self, data: tuple) -> None:
         """This method adds data to the **data** member of the HistoryOutput object.
 
         Parameters
@@ -125,5 +125,5 @@ class HistoryOutput:
         """
         ...
 
-    def addData(self, *args, **kwargs):
+    def addData(self, *args, **kwargs) -> None:
         ...

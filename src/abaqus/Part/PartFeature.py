@@ -23,7 +23,7 @@ class PartFeature(BaseFeature):
     """
 
     @abaqus_method_doc
-    def AutoRepair(self):
+    def AutoRepair(self) -> BaseFeature:
         """This method carries out a sequence of geometry repair operations if it contains invalid
         entities. It is expected to improve the geometry, but it does not guarantee that the
         number of invalid entities will decrease. In some cases, it can also increase the number
@@ -43,7 +43,9 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def AddCells(self, faceList: Tuple[Face, ...], flipped: Boolean = OFF):
+    def AddCells(
+        self, faceList: Tuple[Face, ...], flipped: Boolean = OFF
+    ) -> BaseFeature:
         """This method tries to convert a shell entity to a solid entity. The conversion is not
         always successful.
 
@@ -70,7 +72,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def AnalyticRigidSurf2DPlanar(self, sketch: ConstrainedSketch):
+    def AnalyticRigidSurf2DPlanar(self, sketch: ConstrainedSketch) -> BaseFeature:
         """This method creates a first Feature object for an analytical rigid surface by creating a
         planar wire from the given ConstrainedSketch object.
 
@@ -92,7 +94,9 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def AnalyticRigidSurfExtrude(self, sketch: ConstrainedSketch, depth: float = 1):
+    def AnalyticRigidSurfExtrude(
+        self, sketch: ConstrainedSketch, depth: float = 1
+    ) -> BaseFeature:
         """This method creates a first Feature object for an analytical rigid surface by extruding
         the given ConstrainedSketch object by the given depth, creating a surface.
 
@@ -116,7 +120,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def AnalyticRigidSurfRevolve(self, sketch: ConstrainedSketch):
+    def AnalyticRigidSurfRevolve(self, sketch: ConstrainedSketch) -> BaseFeature:
         """This method creates a first Feature object for an analytical rigid surface by revolving
         the given ConstrainedSketch object by 360° about the **Y**-axis.
 
@@ -138,7 +142,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def AssignMidsurfaceRegion(self, cellList: Tuple[Cell, ...]):
+    def AssignMidsurfaceRegion(self, cellList: Tuple[Cell, ...]) -> BaseFeature:
         """This method assign a mid-surface property to sequence of Cell objects. If a reference
         representation of the part does not exist, it creates one. It also copies the **cells** to
         the reference representation and deletes the **cells** from the active representation of
@@ -169,7 +173,7 @@ class PartFeature(BaseFeature):
         depth: float,
         draftAngle: Optional[float] = None,
         pitch: Optional[float] = None,
-    ):
+    ) -> BaseFeature:
         """This method creates a first Feature object by extruding the given ConstrainedSketch
         object by the given depth, creating a solid. The ConstrainedSketch object must define a
         closed profile.
@@ -215,7 +219,7 @@ class PartFeature(BaseFeature):
         flipRevolveDirection: Boolean = OFF,
         flipPitchDirection: Boolean = OFF,
         moveSketchNormalToPath: Boolean = OFF,
-    ):
+    ) -> BaseFeature:
         """This method creates a first Feature object by revolving the given ConstrainedSketch
         object by the given angle, creating a solid. The ConstrainedSketch object must define a
         closed profile and an axis of revolution. The axis is defined by a single construction
@@ -266,7 +270,9 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def BaseSolidSweep(self, sketch: ConstrainedSketch, path: ConstrainedSketch):
+    def BaseSolidSweep(
+        self, sketch: ConstrainedSketch, path: ConstrainedSketch
+    ) -> BaseFeature:
         """This method creates a first Feature object by sweeping the given profile
         ConstrainedSketch object along the path defined by the path ConstrainedSketch object,
         creating a solid. The profile ConstrainedSketch object must define a closed profile. The
@@ -293,7 +299,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def BaseShell(self, sketch: ConstrainedSketch):
+    def BaseShell(self, sketch: ConstrainedSketch) -> BaseFeature:
         """This method creates a first Feature object by creating a planar shell from the given
         ConstrainedSketch object. The ConstrainedSketch object must define a closed profile.
 
@@ -321,7 +327,7 @@ class PartFeature(BaseFeature):
         depth: float,
         draftAngle: Optional[float] = None,
         pitch: Optional[float] = None,
-    ):
+    ) -> BaseFeature:
         """This method creates a first Feature object by extruding the given ConstrainedSketch
         object by the given depth, creating a shell. The ConstrainedSketch object can define
         either an open or closed profile.
@@ -371,7 +377,7 @@ class PartFeature(BaseFeature):
         flipRevolveDirection: Boolean = OFF,
         flipPitchDirection: Boolean = OFF,
         moveSketchNormalToPath: Boolean = OFF,
-    ):
+    ) -> BaseFeature:
         """This method creates a first Feature object by revolving the given ConstrainedSketch
         object by the given angle, creating a shell. The ConstrainedSketch object can define
         either an open or closed profile and an axis of revolution. The axis is defined by a
@@ -418,7 +424,9 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def BaseShellSweep(self, sketch: ConstrainedSketch, path: ConstrainedSketch):
+    def BaseShellSweep(
+        self, sketch: ConstrainedSketch, path: ConstrainedSketch
+    ) -> BaseFeature:
         """This method creates a first Feature object by sweeping the given section
         ConstrainedSketch object along the path defined by the path ConstrainedSketch object,
         creating a shell. The ConstrainedSketch object can define either an open or closed
@@ -445,7 +453,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def BaseWire(self, sketch: ConstrainedSketch):
+    def BaseWire(self, sketch: ConstrainedSketch) -> BaseFeature:
         """This method creates a first Feature object by creating a planar wire from the given
         ConstrainedSketch object.
 
@@ -509,7 +517,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def Chamfer(self, length: float, edgeList: Tuple[Edge, ...]):
+    def Chamfer(self, length: float, edgeList: Tuple[Edge, ...]) -> BaseFeature:
         """This method creates an additional Feature object by chamfering the given list of edges
         with a given length.
 
@@ -538,7 +546,7 @@ class PartFeature(BaseFeature):
         mirrorPlane: str,
         keepOriginal: Boolean,
         keepInternalBoundaries: Boolean = OFF,
-    ):
+    ) -> BaseFeature:
         """This method mirrors existing part geometry across a plane to create new geometry.
 
         .. note:: 
@@ -564,7 +572,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def ConvertToAnalytical(self):
+    def ConvertToAnalytical(self) -> BaseFeature:
         """This method attempts to change entities into a simpler form that will speed up
         processing and make entities available during feature operations.
 
@@ -583,7 +591,7 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def ConvertToPrecise(
         self, method: Literal[RECOMPUTE_GEOMETRY, TIGHTEN_GAPS] = RECOMPUTE_GEOMETRY
-    ):
+    ) -> BaseFeature:
         """This method attempts to change imprecise entities so that the geometry becomes precise.
 
         .. note:: 
@@ -606,7 +614,9 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def CoverEdges(self, edgeList: Tuple[Edge, ...], tryAnalytical: Boolean = False):
+    def CoverEdges(
+        self, edgeList: Tuple[Edge, ...], tryAnalytical: Boolean = False
+    ) -> BaseFeature:
         """This method generates a face using the given edges as the face's boundaries. The
         CoverEdges method generates a face by creating the geometry consisting of the underlying
         surface, associated edges, and vertices.
@@ -644,7 +654,7 @@ class PartFeature(BaseFeature):
     def Cut(
         self,
         sketchPlane: str,
-        sketchPlaneSide: SymbolicConstant,
+        sketchPlaneSide: Literal[SIDE1, SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         sketchOrientation: Optional[Literal[RIGHT, LEFT, TOP, BOTTOM]] = None,
@@ -684,7 +694,7 @@ class PartFeature(BaseFeature):
     def CutExtrude(
         self,
         sketchPlane: str,
-        sketchPlaneSide: SymbolicConstant,
+        sketchPlaneSide: Literal[SIDE1, SIDE2],
         sketchUpEdge: Edge,
         sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM],
         sketch: ConstrainedSketch,
@@ -693,7 +703,7 @@ class PartFeature(BaseFeature):
         draftAngle: Optional[float] = None,
         pitch: Optional[float] = None,
         flipExtrudeDirection: Boolean = OFF,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by extruding the given
         ConstrainedSketch object by the given depth and cutting away material in the solid and
         shell regions of the part. The ConstrainedSketch object must define a closed profile.
@@ -829,7 +839,7 @@ class PartFeature(BaseFeature):
     def CutRevolve(
         self,
         sketchPlane: str,
-        sketchPlaneSide: SymbolicConstant,
+        sketchPlaneSide: Literal[SIDE1, SIDE2],
         sketchUpEdge: Edge,
         sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM],
         sketch: ConstrainedSketch,
@@ -838,7 +848,7 @@ class PartFeature(BaseFeature):
         flipRevolveDirection: Boolean = OFF,
         flipPitchDirection: Boolean = OFF,
         moveSketchNormalToPath: Boolean = OFF,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by revolving the given
         ConstrainedSketch object by the given angle and cutting away material from the part. The
         ConstrainedSketch object must define a closed profile and an axis of revolution.
@@ -908,7 +918,7 @@ class PartFeature(BaseFeature):
         pitch: Optional[float] = None,
         profileNormal: Boolean = OFF,
         flipSweepDirection: Boolean = OFF,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by sweeping the given ConstrainedSketch
         object along a path which may be a ConstrainedSketch or a sequence of Edge objects and
         cutting away material from the part. If the profile section is a ConstrainedSketch
@@ -991,7 +1001,7 @@ class PartFeature(BaseFeature):
         upToFaces: Tuple[Face, ...] = (),
         trimToExtendedTargetSurfaces: Boolean = True,
         upToReferenceRep: Boolean = OFF,
-    ):
+    ) -> BaseFeature:
         """This method extends faces along its free edges by offsetting the external edges along
         the surfaces. One of **distance**, **upToReferenceRep**, or **upToFaces** must be used to
         specify how far the faces need to be extended.
@@ -1039,7 +1049,7 @@ class PartFeature(BaseFeature):
         stitchTolerance: Optional[float] = None,
         analyticFitTolerance: Optional[float] = None,
         associateFace: Boolean = OFF,
-    ):
+    ) -> BaseFeature:
         """This method creates a geometry face from a collection of orphan element faces.
 
         .. note:: 
@@ -1078,14 +1088,14 @@ class PartFeature(BaseFeature):
     def HoleBlindFromEdges(
         self,
         plane: str,
-        planeSide: SymbolicConstant,
+        planeSide: Literal[SIDE1, SIDE2],
         diameter: float,
         edge1: Edge,
         distance1: float,
         edge2: Edge,
         distance2: float,
         depth: float,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by creating a circular blind hole of
         the given diameter and depth and cutting away material in the solid and shell regions of
         the part. The center of the hole is offset from two non-parallel straight edges by the
@@ -1131,7 +1141,7 @@ class PartFeature(BaseFeature):
         distance1: float,
         edge2: Edge,
         distance2: float,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by creating a circular hole of the
         given diameter in a 2D planar part and cutting away material in the shell and wire
         regions of the part. The center of the hole is offset from two non-parallel straight
@@ -1166,13 +1176,13 @@ class PartFeature(BaseFeature):
     def HoleThruAllFromEdges(
         self,
         plane: str,
-        planeSide: SymbolicConstant,
+        planeSide: Literal[SIDE1, SIDE2],
         diameter: float,
         edge1: Edge,
         distance1: float,
         edge2: Edge,
         distance2: float,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by creating a circular through hole of
         the given diameter and cutting away material in the solid and shell regions of the part.
         The center of the hole is offset from two non-parallel straight edges by the given
@@ -1211,7 +1221,7 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def MergeEdges(
         self, edgeList: Tuple[Edge, ...] = (), extendSelection: Boolean = OFF
-    ):
+    ) -> BaseFeature:
         """This method merges edges either by extending the user selection or using only the
         selected edges.
 
@@ -1290,7 +1300,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def RemoveCells(self, cellList: Tuple[Cell, ...]):
+    def RemoveCells(self, cellList: Tuple[Cell, ...]) -> bool:
         """This method converts a solid entity to a shell entity.
 
         .. note:: 
@@ -1316,7 +1326,9 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def RemoveFaces(self, faceList: Tuple[Face, ...], deleteCells: Boolean = False):
+    def RemoveFaces(
+        self, faceList: Tuple[Face, ...], deleteCells: Boolean = False
+    ) -> BaseFeature:
         """This method removes faces from a solid entity or from a shell entity.
 
         .. note:: 
@@ -1340,7 +1352,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def RemoveFacesAndStitch(self, faceList: Tuple[Face, ...]):
+    def RemoveFacesAndStitch(self, faceList: Tuple[Face, ...]) -> BaseFeature:
         """This method removes faces from a solid entity and attempts to close the resulting gap by
         extending the neighboring faces of the solid.
 
@@ -1367,7 +1379,7 @@ class PartFeature(BaseFeature):
         vertexList: Tuple[Vertex, ...] = (),
         edgeList: Tuple[Edge, ...] = (),
         removeEdgeVertices: Boolean = True,
-    ):
+    ) -> BaseFeature:
         """This method removes redundant edges and vertices from a solid or a shell entity. One of
         the two arguments is required.
 
@@ -1399,7 +1411,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def RepairFaceNormals(self, faceList: Tuple[Face, ...] = ()):
+    def RepairFaceNormals(self, faceList: Tuple[Face, ...] = ()) -> BaseFeature:
         """This method works on the entire part or a sequence of shell faces. When the entire part
         is selected, it aligns all the shell face normals, and inverts all of the solid faces'
         normals if the solid was originally inside out. When a few shell faces are selected, it
@@ -1423,7 +1435,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def RepairInvalidEdges(self, edgeList: Tuple[Edge, ...]):
+    def RepairInvalidEdges(self, edgeList: Tuple[Edge, ...]) -> BaseFeature:
         """This method repairs invalid edges. It will always attempt to improve edges even if none
         of selected edges are initially invalid and may leave behind invalid edges that could
         not be repaired.
@@ -1448,7 +1460,7 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def RepairSliver(
         self, face: Face, point1: int, point2: int, toleranceChecks: Boolean = True
-    ):
+    ) -> BaseFeature:
         """This method repairs the selected sliver from the selected face. The sliver area is
         specified using two points. A face partition is carried out at the specified points and
         the smaller of the two faces is removed.
@@ -1482,7 +1494,7 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def RepairSmallEdges(
         self, edgeList: Tuple[Edge, ...], toleranceChecks: Boolean = True
-    ):
+    ) -> BaseFeature:
         """This method repairs small edges. This method will attempt to replace selected small
         edges with vertices and extend the adjacent faces and edges. This method might leave
         behind some small edges that cannot be removed.
@@ -1510,7 +1522,7 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def RepairSmallFaces(
         self, faceList: Tuple[Face, ...], toleranceChecks: Boolean = True
-    ):
+    ) -> BaseFeature:
         """This method repairs small faces. It will attempt to replace the selected small faces
         with edges or vertices and extend the adjacent faces. This method might leave behind
         some small faces that cannot be removed.
@@ -1536,7 +1548,9 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def ReplaceFaces(self, faceList: Tuple[Face, ...], stitch: Boolean = True):
+    def ReplaceFaces(
+        self, faceList: Tuple[Face, ...], stitch: Boolean = True
+    ) -> BaseFeature:
         """This method replaces the selected faces with a single face. If one single face is
         selected, that alone is replaced with a new face.
 
@@ -1563,7 +1577,7 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def Round(
         self, radius: float, edgeList: Tuple[Edge, ...], vertexList: Tuple[Vertex, ...]
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by rounding (filleting) the given list
         of entities with the given radius.
 
@@ -1596,11 +1610,11 @@ class PartFeature(BaseFeature):
     def Shell(
         self,
         sketchPlane: str,
-        sketchPlaneSide: SymbolicConstant,
+        sketchPlaneSide: Literal[SIDE1, SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by creating a planar shell from the
         given ConstrainedSketch object. The ConstrainedSketch object must define a closed
         profile.
@@ -1637,7 +1651,7 @@ class PartFeature(BaseFeature):
     def ShellExtrude(
         self,
         sketchPlane: str,
-        sketchPlaneSide: SymbolicConstant,
+        sketchPlaneSide: Literal[SIDE1, SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         depth: Optional[float] = None,
@@ -1647,7 +1661,7 @@ class PartFeature(BaseFeature):
         pitch: Optional[float] = None,
         flipExtrudeDirection: Boolean = OFF,
         keepInternalBoundaries: Boolean = OFF,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by extruding the given
         ConstrainedSketch object by the given depth, creating a shell protrusion. The
         ConstrainedSketch object can define either an open or closed profile.
@@ -1798,7 +1812,7 @@ class PartFeature(BaseFeature):
     def ShellRevolve(
         self,
         sketchPlane: str,
-        sketchPlaneSide: SymbolicConstant,
+        sketchPlaneSide: Literal[SIDE1, SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         angle: float,
@@ -1808,7 +1822,7 @@ class PartFeature(BaseFeature):
         flipPitchDirection: Boolean = OFF,
         moveSketchNormalToPath: Boolean = OFF,
         keepInternalBoundaries: Boolean = OFF,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by revolving the given
         ConstrainedSketch object by the given angle, creating a shell protrusion. The
         ConstrainedSketch object can define either an open or closed profile and an axis of
@@ -1884,7 +1898,7 @@ class PartFeature(BaseFeature):
         profileNormal: Boolean = OFF,
         flipSweepDirection: Boolean = OFF,
         keepInternalBoundaries: Boolean = OFF,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by sweeping the given ConstrainedSketch
         object or a sequence of Edge objects along a path which may be a ConstrainedSketch or a
         sequence of Edge objects, creating a shell swept protrusion. The section can be an open
@@ -1965,7 +1979,7 @@ class PartFeature(BaseFeature):
     def SolidExtrude(
         self,
         sketchPlane: str,
-        sketchPlaneSide: SymbolicConstant,
+        sketchPlaneSide: Literal[SIDE1, SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         depth: Optional[float] = None,
@@ -1975,7 +1989,7 @@ class PartFeature(BaseFeature):
         pitch: Optional[float] = None,
         flipExtrudeDirection: Boolean = OFF,
         keepInternalBoundaries: Boolean = OFF,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by extruding the given
         ConstrainedSketch object by the given depth, creating a solid protrusion. The
         ConstrainedSketch object must define a closed profile.
@@ -2125,7 +2139,7 @@ class PartFeature(BaseFeature):
     def SolidRevolve(
         self,
         sketchPlane: str,
-        sketchPlaneSide: SymbolicConstant,
+        sketchPlaneSide: Literal[SIDE1, SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         angle: float,
@@ -2135,7 +2149,7 @@ class PartFeature(BaseFeature):
         flipPitchDirection: Boolean = OFF,
         moveSketchNormalToPath: Boolean = OFF,
         keepInternalBoundaries: Boolean = OFF,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by revolving the given
         ConstrainedSketch object by the given angle, creating a solid protrusion. The
         ConstrainedSketch object must define a closed profile and an axis of revolution. The
@@ -2210,7 +2224,7 @@ class PartFeature(BaseFeature):
         profileNormal: Boolean = OFF,
         flipSweepDirection: Boolean = OFF,
         keepInternalBoundaries: Boolean = OFF,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by sweeping the given ConstrainedSketch
         object or a Face object along a path which may be a ConstrainedSketch or a sequence of
         Edge objects, creating a solid swept protrusion. If the profile section is a
@@ -2290,7 +2304,7 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def Stitch(
         self, edgeList: Tuple[Edge, ...] = (), stitchTolerance: Optional[float] = None
-    ):
+    ) -> BaseFeature:
         """This method attempts to create a valid part by binding together free and imprecise edges
         of all the faces of a part. If **edgeList** is not given, a global stitch will be
         performed. If **stitchTolerance** is not specified, a value of 1.0 will be used.
@@ -2321,11 +2335,11 @@ class PartFeature(BaseFeature):
     def Wire(
         self,
         sketchPlane: str,
-        sketchPlaneSide: SymbolicConstant,
+        sketchPlaneSide: Literal[SIDE1, SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by creating a planar wire from the
         given ConstrainedSketch object. The ConstrainedSketch object must define a closed
         profile.
@@ -2364,7 +2378,7 @@ class PartFeature(BaseFeature):
         points: tuple,
         mergeType: Literal[MERGE, IMPRINT, SEPARATE] = IMPRINT,
         smoothClosedSpline: Boolean = OFF,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by creating a spline wire that passes
         through a sequence of given points. Each point can be a datum point, a vertex, an
         interesting point, or a tuple.
@@ -2407,7 +2421,7 @@ class PartFeature(BaseFeature):
         points: tuple,
         mergeType: Literal[MERGE, IMPRINT, SEPARATE] = IMPRINT,
         meshable: Boolean = ON,
-    ):
+    ) -> BaseFeature:
         """This method creates an additional Feature object by creating a polyline wire that passes
         through a sequence of given points. Each point can be a datum point, a vertex, an
         interesting point, or a tuple.
@@ -2443,7 +2457,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def WireFromEdge(self, edgeList: str):
+    def WireFromEdge(self, edgeList: str) -> BaseFeature:
         """This method creates an additional Feature object by creating a Wire by selecting one or
         more Edge objects of a Solid or Shell part.
 

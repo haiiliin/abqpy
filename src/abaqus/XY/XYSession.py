@@ -644,7 +644,22 @@ class XYSession(XYSessionBase):
             ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, NODAL
         ],
         variable: Tuple[
-            Tuple[str, SymbolicConstant, Tuple[Tuple[SymbolicConstant, str], ...]]
+            Tuple[
+                str,
+                Literal[
+                    ELEMENT_CENTROID,
+                    ELEMENT_FACE,
+                    ELEMENT_NODAL,
+                    GENERAL_PARTICLE,
+                    INTEGRATION_POINT,
+                    NODAL,
+                    WHOLE_ELEMENT,
+                    WHOLE_MODEL,
+                    WHOLE_PART_INSTANCE,
+                    WHOLE_REGION,
+                ],
+                Tuple[Tuple[Literal[INVARIANT, COMPONENT], str], ...],
+            ]
         ],
         elementSets: Union[Tuple[str, ...], str] = ...,
         elementLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,

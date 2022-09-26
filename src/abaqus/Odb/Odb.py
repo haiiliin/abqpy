@@ -1,5 +1,5 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from typing import Optional
+from typing import Literal
 from .OdbPart import OdbPart
 from .OdbStep import OdbStep
 from .SectionCategory import SectionCategory
@@ -24,7 +24,10 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
 
     @abaqus_method_doc
     def Part(
-        self, name: str, embeddedSpace: SymbolicConstant, type: SymbolicConstant
+        self,
+        name: str,
+        embeddedSpace: Literal[THREE_D, TWO_D_PLANAR, AXISYMMETRIC],
+        type: Literal[DEFORMABLE_BODY, ANALYTIC_RIGID_SURFACE],
     ) -> OdbPart:
         """This method creates an OdbPart object. Nodes and elements are added to this object at a
         later stage.
@@ -58,7 +61,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
         self,
         name: str,
         description: str,
-        domain: SymbolicConstant,
+        domain: Literal[TIME, FREQUENCY, ARC_LENGTH, MODAL],
         timePeriod: float = 0,
         previousStepName: str = "",
         procedure: str = "",

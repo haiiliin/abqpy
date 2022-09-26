@@ -1,4 +1,5 @@
-from typing import Optional, Dict, overload
+from __future__ import annotations
+from typing import Optional, Dict, overload, Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .HistoryOutput import HistoryOutput
@@ -44,7 +45,7 @@ class HistoryRegion:
         description: str,
         point: HistoryPoint,
         loadCase: Optional[str] = None,
-    ):
+    ) -> None:
         """This method creates a HistoryRegion object.
 
         .. note:: 
@@ -73,7 +74,7 @@ class HistoryRegion:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, variableName: str):
+    def getSubset(self, variableName: str) -> HistoryRegion:
         """This method returns a subset of the data in the HistoryRegion object.
 
         Parameters
@@ -90,7 +91,7 @@ class HistoryRegion:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, start: float):
+    def getSubset(self, start: float) -> HistoryRegion:
         """This method returns a subset of the data in the HistoryRegion object.
 
         Parameters
@@ -108,7 +109,7 @@ class HistoryRegion:
 
     @overload
     @abaqus_method_doc
-    def getSubset(self, start: float, end: float):
+    def getSubset(self, start: float, end: float) -> HistoryRegion:
         """This method returns a subset of the data in the HistoryRegion object.
 
         Parameters
@@ -127,16 +128,16 @@ class HistoryRegion:
         ...
 
     @abaqus_method_doc
-    def getSubset(self, *args, **kwargs):
+    def getSubset(self, *args, **kwargs) -> HistoryRegion:
         ...
 
     def HistoryOutput(
         self,
         name: str,
         description: str,
-        type: SymbolicConstant,
+        type: Literal[SCALAR],
         validInvariants: Optional[SymbolicConstant] = None,
-    ):
+    ) -> HistoryOutput:
         """This method creates a HistoryOutput object.
 
         .. note:: 

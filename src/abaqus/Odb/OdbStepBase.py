@@ -6,6 +6,7 @@ from .HistoryPoint import HistoryPoint
 from .HistoryRegion import HistoryRegion
 from .OdbFrameArray import OdbFrameArray
 from .OdbLoadCase import OdbLoadCase
+from .OdbFrame import OdbFrame
 from ..UtilityAndView.abaqusConstants import *
 
 
@@ -66,12 +67,12 @@ class OdbStepBase:
         self,
         name: str,
         description: str,
-        domain: SymbolicConstant,
+        domain: Literal[TIME, FREQUENCY, ARC_LENGTH, MODAL],
         timePeriod: float = 0,
         previousStepName: str = "",
         procedure: str = "",
         totalTime: Optional[float] = None,
-    ):
+    ) -> None:
         """This method creates an OdbStep object.
 
         .. note:: 
@@ -169,7 +170,7 @@ class OdbStepBase:
     @abaqus_method_doc
     def getFrame(
         self, frameValue: str, match: Literal[CLOSEST, BEFORE, AFTER, EXACT] = CLOSEST
-    ):
+    ) -> OdbFrame:
         """This method retrieves an OdbFrame object associated with a given frame value.
 
         Parameters
@@ -199,7 +200,7 @@ class OdbStepBase:
 
     @overload
     @abaqus_method_doc
-    def getFrame(self, loadCase: OdbLoadCase):
+    def getFrame(self, loadCase: OdbLoadCase) -> OdbFrame:
         """This method retrieves an OdbFrame object associated with a given load case.
 
         Parameters
@@ -226,7 +227,7 @@ class OdbStepBase:
         loadCase: OdbLoadCase,
         frameValue: str,
         match: Literal[CLOSEST, BEFORE, AFTER, EXACT] = CLOSEST,
-    ):
+    ) -> OdbFrame:
         """This method retrieves an OdbFrame object associated with a given load case and frame
         value.
 
@@ -258,12 +259,12 @@ class OdbStepBase:
         ...
 
     @abaqus_method_doc
-    def getFrame(self, *args, **kwargs):
+    def getFrame(self, *args, **kwargs) -> OdbFrame:
         ...
 
     def getHistoryRegion(
         self, point: HistoryPoint, loadCase: OdbLoadCase = OdbLoadCase("loadCase")
-    ):
+    ) -> HistoryRegion:
         """This method retrieves a HistoryRegion object associated with a HistoryPoint in the
         model.
 
@@ -287,7 +288,7 @@ class OdbStepBase:
         ...
 
     @abaqus_method_doc
-    def setDefaultDeformedField(self, field: FieldOutput):
+    def setDefaultDeformedField(self, field: FieldOutput) -> None:
         """This method sets the default deformed field variable in a step.
 
         Parameters
@@ -298,7 +299,7 @@ class OdbStepBase:
         ...
 
     @abaqus_method_doc
-    def setDefaultField(self, field: FieldOutput):
+    def setDefaultField(self, field: FieldOutput) -> None:
         """This method sets the default field variable in a step.
 
         Parameters
