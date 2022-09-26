@@ -4,13 +4,6 @@
 [![Documentation Status](https://img.shields.io/readthedocs/abqpy-zh-cn?label=docs-zh-cn)](https://readthedocs.org/projects/abqpy-zh-cn/)
 [![Tests](https://github.com/haiiliin/abqpy/actions/workflows/tests.yaml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/tests.yaml)
 [![CodeQL](https://github.com/haiiliin/abqpy/actions/workflows/codeql.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/codeql.yml)
-<<<<<<< HEAD
-[![Build Status](https://app.travis-ci.com/haiiliin/abqpy.svg?branch=V2020)](https://app.travis-ci.com/haiiliin/abqpy)
-[![PyPI pyversions](https://img.shields.io/pypi/pyversions/abqpy.svg)](https://www.python.org/)
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/haiiliin/abqpy)](https://github.com/haiiliin/abqpy/releases/latest)
-[![PyPI download month](https://img.shields.io/pypi/dm/abqpy.svg?color=blue)](https://pypi.python.org/pypi/abqpy/)
-=======
->>>>>>> 08f94c03 (Remove extra badges in READMEs to keep it clean (#1708))
 
 其它语言版本: [English](README.md), [简体中文](README-zh-cn.md).
 
