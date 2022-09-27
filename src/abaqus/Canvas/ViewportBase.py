@@ -1,4 +1,5 @@
-import typing
+from typing import Optional, Tuple, Dict, overload
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AttributeColorMap import AttributeColorMap
@@ -31,12 +32,13 @@ class ViewportBase(_OptionsBase):
 
             session.viewports[name]
     """
+
     #: A String specifying the repository key.
     name: str
 
     #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters in the canvas
     #: coordinate system of the lower left corner of the viewport. The default origin is (0, 0).
-    origin: typing.Tuple[float, ...] = (0.0, 0.0)
+    origin: Tuple[float, ...] = (0.0, 0.0)
 
     #: A Float specifying the width in millimeters of the viewport. Possible values are 30 ≤
     #: **width** ≤ (*maxWidth*). The default value is 120. Note: The maximum value of width
@@ -61,7 +63,7 @@ class ViewportBase(_OptionsBase):
     #: are CUSTOM and SYSTEM. The default value is SYSTEM.If **titleStyle** = CUSTOM,
     #: **customTitleString** will be used. If **titleStyle** =  SYSTEM, a system-generated string
     #: will be used.
-    titleStyle: SymbolicConstant = SYSTEM
+    titleStyle: Literal[CUSTOM, SYSTEM] = SYSTEM
 
     #: A String specifying the viewport title when **titleStyle** =CUSTOM. The default value is
     #: an empty string.
@@ -70,28 +72,28 @@ class ViewportBase(_OptionsBase):
     #: A SymbolicConstant specifying the display mode of the viewport. Possible values
     #: are:SINGLE, specifying a single **displayedObject**.OVERLAY, specifying one or more layers
     #: to be displayed simultaneously—each layer contains one **displayedObject**.
-    displayMode: SymbolicConstant = None
+    displayMode: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying which layer or layers will be controlled by the view
     #: manipulation tools when **displayMode** = OVERLAY. Possible values are ALL and CURRENT.
-    viewManipLayers: SymbolicConstant = None
+    viewManipLayers: Optional[SymbolicConstant] = None
 
     #: A Float specifying a factor to be used in offsetting layers in the screen Z direction.
     #: Possible values are -1 to 1. A negative value reverses the apparent order in which the
     #: layers are plotted.
-    layerOffset: float = None
+    layerOffset: Optional[float] = None
 
     #: A SymbolicConstant specifying the current state of a viewport. Possible values are
     #: NORMAL, MAXIMIZED, and MINIMIZED.
-    windowState: SymbolicConstant = None
+    windowState: Optional[SymbolicConstant] = None
 
     #: A Float specifying the width in millimeters of the current viewport, regardless of the
     #: value of **windowState**.
-    currentWidth: float = None
+    currentWidth: Optional[float] = None
 
     #: A Float specifying the height in millimeters of the current viewport, regardless of the
     #: value of **windowState**, and including the title bar.
-    currentHeight: float = None
+    currentHeight: Optional[float] = None
 
     #: A Boolean specifying whether the viewport is linked for synchronization. The default
     #: value is ON.
@@ -121,7 +123,29 @@ class ViewportBase(_OptionsBase):
     #: PLOT_MAP_COLORS
     #: MESH_MAP_COLORS
     #: The default value is DEFAULT_COLORS.
-    activeColorModes: SymbolicConstant = DEFAULT_COLORS
+    activeColorModes: Literal[
+        DEFAULT_COLORS,
+        PART_GEOM_MAP_COLORS,
+        ASSEMBLY_MAP_COLORS,
+        PART_MAP_COLORS,
+        INSTANCE_MAP_COLORS,
+        INSTANCE_TYPE_MAP_COLORS,
+        SECTION_MAP_COLORS,
+        MATERIAL_MAP_COLORS,
+        LOAD_MAP_COLORS,
+        BC_MAP_COLORS,
+        INTERACTION_MAP_COLORS,
+        CONSTRAINT_MAP_COLORS,
+        SET_MAP_COLORS,
+        SURFACE_MAP_COLORS,
+        INTERNAL_SET_MAP_COLORS,
+        INTERNAL_SURFACE_MAP_COLORS,
+        DISPLAY_GRP_MAP_COLORS,
+        SELECTION_GRP_MAP_COLORS,
+        ELTYPE_MAP_COLORS,
+        PLOT_MAP_COLORS,
+        MESH_MAP_COLORS,
+    ] = DEFAULT_COLORS
 
     #: A SymbolicConstant specifying the last applied color mapping. Possible values
     #: are:
@@ -147,12 +171,34 @@ class ViewportBase(_OptionsBase):
     #: PLOT_MAP_COLORS
     #: MESH_MAP_COLORS
     #: The default value is DEFAULT_COLORS.
-    colorMode: SymbolicConstant = DEFAULT_COLORS
+    colorMode: Literal[
+        DEFAULT_COLORS,
+        PART_GEOM_MAP_COLORS,
+        ASSEMBLY_MAP_COLORS,
+        PART_MAP_COLORS,
+        INSTANCE_MAP_COLORS,
+        INSTANCE_TYPE_MAP_COLORS,
+        SECTION_MAP_COLORS,
+        MATERIAL_MAP_COLORS,
+        LOAD_MAP_COLORS,
+        BC_MAP_COLORS,
+        INTERACTION_MAP_COLORS,
+        CONSTRAINT_MAP_COLORS,
+        SET_MAP_COLORS,
+        SURFACE_MAP_COLORS,
+        INTERNAL_SET_MAP_COLORS,
+        INTERNAL_SURFACE_MAP_COLORS,
+        DISPLAY_GRP_MAP_COLORS,
+        SELECTION_GRP_MAP_COLORS,
+        ELTYPE_MAP_COLORS,
+        PLOT_MAP_COLORS,
+        MESH_MAP_COLORS,
+    ] = DEFAULT_COLORS
 
     #: A Float specifying the translucency that will be applied to objects colored using
     #: **initialColor** and it needs to be set along with **initialColor**. If **initialColor** is
     #: set to 'As is' then translucency will have no effect.
-    translucency: float = None
+    translucency: Optional[float] = None
 
     #: A Boolean specifying whether an animation is connected to the viewport.
     animationConnect: Boolean = OFF
@@ -209,7 +255,7 @@ class ViewportBase(_OptionsBase):
     #: - "initialColor"
     #: - "Layup"
     #: - "Ply"
-    colorMappings: typing.Dict[str, AttributeColorMap] = {}
+    colorMappings: Dict[str, AttributeColorMap] = {}
 
     #: A String specifying the color that will be applied to all objects in the viewport at the
     #: start of color coding. The possible values are 'As is', 'Default' or a string with a
@@ -229,11 +275,11 @@ class ViewportBase(_OptionsBase):
 
     #: A repository of Layer objects specifying the key to the repository is a String with the
     #: name of the layer.
-    layers: typing.Dict[str, Layer] = {}
+    layers: Dict[str, Layer] = {}
 
     #: A :py:class:`~abaqus.UtilityAndView.View.View` object specifying the object that controls viewing of the
     #: viewport content.
-    view: View = None
+    view: Optional[View] = None
 
     #: An :py:class:`~abaqus.OdbDisplay.OdbDisplay.OdbDisplay` object specifying the display options for the Odb object.
     odbDisplay: OdbDisplay = OdbDisplay()
@@ -253,7 +299,7 @@ class ViewportBase(_OptionsBase):
     detailPlotOptions: DetailPlotOptions = DetailPlotOptions()
 
     #: An :py:class:`~abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray` object.
-    annotationsToPlot: AnnotationsToPlotArray = []
+    annotationsToPlot: AnnotationsToPlotArray = AnnotationsToPlotArray()
 
     #: A tuple of Strings specifying the names of layers that will be displayed in the viewport
     #: when **displayMode** = OVERLAY.
@@ -262,13 +308,13 @@ class ViewportBase(_OptionsBase):
     #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters in the canvas
     #: coordinate system of the lower left corner of the current viewport, regardless of the
     #: value of **windowState**.
-    currentOrigin: typing.Tuple[float, ...] = ()
+    currentOrigin: Tuple[float, ...] = ()
 
     #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters of the lower
     #: left corner of the current viewport from a coordinate system having its origin in the
     #: lower left corner of the drawing area. This origin refers to the viewport location when
     #: **windowState** =MINIMIZED.
-    iconOrigin: typing.Tuple[float, ...] = ()
+    iconOrigin: Tuple[float, ...] = ()
 
     #: A :py:class:`~abaqus.DisplayOptions.LightOptions.LightOptions` object.
     lightOptions: LightOptions = LightOptions()
@@ -293,12 +339,12 @@ class ViewportBase(_OptionsBase):
     def __init__(
         self,
         name: str,
-        origin: typing.Tuple[float, float] = (0.0, 0.0),
+        origin: Tuple[float, float] = (0.0, 0.0),
         width: float = 120.0,
         height: float = 80.0,
         border: Boolean = ON,
         titleBar: Boolean = ON,
-        titleStyle: SymbolicConstant = SYSTEM,
+        titleStyle: Literal[CUSTOM, SYSTEM] = SYSTEM,
         customTitleString: str = "",
     ):
         """This method creates a Viewport object with the specified origin and dimensions.
@@ -532,7 +578,7 @@ class ViewportBase(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def setColor(self, initialColor: str, translucency: str = ""):
         """This method specifies the color assignment using **initialColor** and **translucency**. If
@@ -550,7 +596,7 @@ class ViewportBase(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def setColor(self, colorMapping: AttributeColorMap):
         """This method specifies the color assignment using attributes specified by an
@@ -565,7 +611,7 @@ class ViewportBase(_OptionsBase):
         # TODO: implement this method
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def setColor(
         self,
@@ -574,8 +620,19 @@ class ViewportBase(_OptionsBase):
         edgeColorFillShade: str = "",
         fillColor: str = "",
         nodeSymbolColor: str = "",
-        nodeSymbolType: SymbolicConstant = HOLLOW_CIRCLE,
-        nodeSymbolSize: SymbolicConstant = SMALL,
+        nodeSymbolType: Literal[
+            FILLED_CIRCLE,
+            FILLED_SQUARE,
+            FILLED_DIAMOND,
+            FILLED_TRI,
+            HOLLOW_CIRCLE,
+            HOLLOW_SQUARE,
+            HOLLOW_DIAMOND,
+            HOLLOW_TRI,
+            CROSS,
+            XMARKER,
+        ] = HOLLOW_CIRCLE,
+        nodeSymbolSize: Literal[SMALL, MEDIUM, LARGE] = SMALL,
     ):
         """This method specifies the color of a Leaf object.
 
@@ -596,7 +653,7 @@ class ViewportBase(_OptionsBase):
             A String specifying the color to be used for drawing the nodes contained in **leaf**.
         nodeSymbolType
             A SymbolicConstant specifying the node symbol types for the nodes contained in **leaf**.
-            Possible values areFILLED_CIRCLE, FILLED_SQUARE, FILLED_DIAMOND, FILLED_TRI,
+            Possible values are FILLED_CIRCLE, FILLED_SQUARE, FILLED_DIAMOND, FILLED_TRI,
             HOLLOW_CIRCLE, HOLLOW_SQUARE, HOLLOW_DIAMOND, HOLLOW_TRI, CROSS, and XMARKER. The
             default value is HOLLOW_CIRCLE.
         nodeSymbolSize
@@ -622,12 +679,12 @@ class ViewportBase(_OptionsBase):
     @abaqus_method_doc
     def setValues(
         self,
-        displayedObject: Displayable = None,
-        displayMode: SymbolicConstant = None,
-        visibleLayers: tuple = (),
-        viewManipLayers: SymbolicConstant = None,
+        displayedObject: Optional[Displayable] = None,
+        displayMode: Optional[Literal[SINGLE, OVERLAY]] = None,
+        visibleLayers: Tuple[str, ...] = (),
+        viewManipLayers: Optional[Literal[ALL, CURRENT]] = None,
         currentLayer: str = "",
-        layerOffset: float = None,
+        layerOffset: Optional[float] = None,
     ):
         """This method modifies the Viewport object. The arguments to setValues are the same as the
         arguments to the Viewport method, except for the **name** argument. In addition, the
@@ -642,8 +699,11 @@ class ViewportBase(_OptionsBase):
             displays an empty viewport.
         displayMode
             A SymbolicConstant specifying the display mode of the viewport. Possible values
-            are:SINGLE, specifying a single **displayedObject**.OVERLAY, specifying one or more layers
-            to be displayed simultaneously—each layer contains one **displayedObject**.
+            are:
+            
+            * SINGLE, specifying a single **displayedObject**.
+            * OVERLAY, specifying one or more layers to be displayed simultaneously—each layer contains one **displayedObject**.
+            
         visibleLayers
             A sequence of Strings specifying the names of layers that will be displayed in the
             viewport when **displayMode** = OVERLAY.

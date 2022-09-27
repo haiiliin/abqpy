@@ -1,3 +1,5 @@
+from typing import Optional
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Section import Section
 from ..UtilityAndView.abaqusConstants import *
@@ -27,17 +29,17 @@ class CohesiveSection(Section):
     #: A SymbolicConstant specifying the geometric assumption that defines the constitutive
     #: behavior of the cohesive elements. Possible values are TRACTION_SEPARATION, CONTINUUM,
     #: and GASKET.
-    response: SymbolicConstant
+    response: Literal[TRACTION_SEPARATION, CONTINUUM, GASKET]
 
     #: A String specifying the name of the material.
     material: str
 
     #: A SymbolicConstant specifying the method used to compute the initial thickness. Possible
-    #: values are:SOLVER_DEFAULT, specifying that Abaqus will use the analysis product
-    #: defaultGEOMETRY, specifying that Abaqus will compute the thickness from the nodal
-    #: coordinates of the elements.SPECIFY, specifying that Abaqus will use the value given for
+    #: values are: SOLVER_DEFAULT, specifying that Abaqus will use the analysis product
+    #: default; GEOMETRY, specifying that Abaqus will compute the thickness from the nodal
+    #: coordinates of the elements. SPECIFY, specifying that Abaqus will use the value given for
     #: **initialThickness** The default value is SOLVER_DEFAULT.
-    initialThicknessType: SymbolicConstant = SOLVER_DEFAULT
+    initialThicknessType: Literal[SOLVER_DEFAULT, GEOMETRY, SPECIFY] = SOLVER_DEFAULT
 
     #: A Float specifying the initial thickness for the section. The **initialThickness**
     #: argument applies only when **initialThicknessType** = SPECIFY. The default value is 1.0.
@@ -45,18 +47,20 @@ class CohesiveSection(Section):
 
     #: None or a Float specifying the out-of-plane thickness for the section. The default value
     #: is None.
-    outOfPlaneThickness: float = None
+    outOfPlaneThickness: Optional[float] = None
 
     @abaqus_method_doc
     def __init__(
         self,
         name: str,
-        response: SymbolicConstant,
+        response: Literal[TRACTION_SEPARATION, CONTINUUM, GASKET],
         material: str,
-        initialThicknessType: SymbolicConstant = SOLVER_DEFAULT,
+        initialThicknessType: Literal[
+            SOLVER_DEFAULT, GEOMETRY, SPECIFY
+        ] = SOLVER_DEFAULT,
         initialThickness: float = 1,
-        outOfPlaneThickness: float = None,
-    ):
+        outOfPlaneThickness: Optional[float] = None,
+    ) -> None:
         """This method creates a CohesiveSection object.
 
         .. note:: 
@@ -102,10 +106,12 @@ class CohesiveSection(Section):
     @abaqus_method_doc
     def setValues(
         self,
-        initialThicknessType: SymbolicConstant = SOLVER_DEFAULT,
+        initialThicknessType: Literal[
+            SOLVER_DEFAULT, GEOMETRY, SPECIFY
+        ] = SOLVER_DEFAULT,
         initialThickness: float = 1,
-        outOfPlaneThickness: float = None,
-    ):
+        outOfPlaneThickness: Optional[float] = None,
+    ) -> None:
         """This method modifies the CohesiveSection object.
 
         Parameters
