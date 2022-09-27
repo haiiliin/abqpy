@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Union, Tuple, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..BasicGeometry.Cell import Cell
@@ -57,23 +57,23 @@ class Region:
             import regionToolset
     """
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
-        elements: typing.Tuple[Element, ...] = None,
-        nodes: typing.Tuple[Node, ...] = None,
-        vertices: typing.Tuple[Vertex, ...] = None,
-        edges: typing.Tuple[Edge, ...] = None,
-        faces: typing.Tuple[Face, ...] = None,
-        cells: typing.Tuple[Cell, ...] = None,
-        referencePoints: typing.Tuple[ReferencePoint, ...] = (),
-        xVertices: typing.Tuple[Vertex, ...] = None,
-        xEdges: typing.Tuple[Vertex, ...] = None,
-        xFaces: typing.Tuple[Vertex, ...] = None,
-        skinFaces: tuple = (),
-        skinEdges: tuple = (),
-        stringerEdges: tuple = (),
+        elements: Optional[Tuple[Element, ...]] = None,
+        nodes: Optional[Tuple[Node, ...]] = None,
+        vertices: Optional[Tuple[Vertex, ...]] = None,
+        edges: Optional[Tuple[Edge, ...]] = None,
+        faces: Optional[Tuple[Face, ...]] = None,
+        cells: Optional[Tuple[Cell, ...]] = None,
+        referencePoints: Optional[Tuple[ReferencePoint, ...]] = (),
+        xVertices: Optional[Tuple[Vertex, ...]] = None,
+        xEdges: Optional[Tuple[Vertex, ...]] = None,
+        xFaces: Optional[Tuple[Vertex, ...]] = None,
+        skinFaces: tuple = ...,
+        skinEdges: tuple = ...,
+        stringerEdges: tuple = ...,
     ):
         """This command creates a set-like region. For example
         myRegion = regionToolset.Region(vertices=v[2:4]
@@ -134,30 +134,30 @@ class Region:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
-        side1Faces: typing.Tuple[Face, ...] = None,
-        side2Faces: typing.Tuple[Face, ...] = None,
-        side12Faces: typing.Tuple[Face, ...] = None,
-        side1Edges: typing.Tuple[Edge, ...] = None,
-        side2Edges: typing.Tuple[Edge, ...] = None,
-        end1Edges: typing.Tuple[Edge, ...] = None,
-        end2Edges: typing.Tuple[Edge, ...] = None,
-        circumEdges: typing.Tuple[Edge, ...] = None,
-        face1Elements: typing.Tuple[Element, ...] = None,
-        face2Elements: typing.Tuple[Element, ...] = None,
-        face3Elements: typing.Tuple[Element, ...] = None,
-        face4Elements: typing.Tuple[Element, ...] = None,
-        face5Elements: typing.Tuple[Element, ...] = None,
-        face6Elements: typing.Tuple[Element, ...] = None,
-        side1Elements: typing.Tuple[Element, ...] = None,
-        side2Elements: typing.Tuple[Element, ...] = None,
-        side12Elements: typing.Tuple[Element, ...] = None,
-        end1Elements: typing.Tuple[Element, ...] = None,
-        end2Elements: typing.Tuple[Element, ...] = None,
-        circumElements: typing.Tuple[Element, ...] = None,
+        side1Faces: Union[Face, Tuple[Face, ...], None] = None,
+        side2Faces: Union[Face, Tuple[Face, ...], None] = None,
+        side12Faces: Union[Face, Tuple[Face, ...], None] = None,
+        side1Edges: Union[Edge, Tuple[Edge, ...], None] = None,
+        side2Edges: Union[Edge, Tuple[Edge, ...], None] = None,
+        end1Edges: Union[Edge, Tuple[Edge, ...], None] = None,
+        end2Edges: Union[Edge, Tuple[Edge, ...], None] = None,
+        circumEdges: Union[Edge, Tuple[Edge, ...], None] = None,
+        face1Elements: Union[Element, Tuple[Element, ...], None] = None,
+        face2Elements: Union[Element, Tuple[Element, ...], None] = None,
+        face3Elements: Union[Element, Tuple[Element, ...], None] = None,
+        face4Elements: Union[Element, Tuple[Element, ...], None] = None,
+        face5Elements: Union[Element, Tuple[Element, ...], None] = None,
+        face6Elements: Union[Element, Tuple[Element, ...], None] = None,
+        side1Elements: Union[Element, Tuple[Element, ...], None] = None,
+        side2Elements: Union[Element, Tuple[Element, ...], None] = None,
+        side12Elements: Union[Element, Tuple[Element, ...], None] = None,
+        end1Elements: Union[Element, Tuple[Element, ...], None] = None,
+        end2Elements: Union[Element, Tuple[Element, ...], None] = None,
+        circumElements: Union[Element, Tuple[Element, ...], None] = None,
     ):
         """This command creates a surface-like region. For example
         myRegion = regionToolset.Region(side1Faces=f[12:14])

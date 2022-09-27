@@ -1,4 +1,4 @@
-import typing
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
@@ -33,7 +33,7 @@ class CaeKerPrefs:
         ...
     
     @abaqus_method_doc
-    def saveAs(self, fileName: str = '', directory: typing.Literal[CURRENT, HOME] = HOME):
+    def saveAs(self, fileName: str = '', directory: Literal[CURRENT, HOME] = HOME):
         """This method saves the sessionOptions to the specified location.
 
         Parameters
