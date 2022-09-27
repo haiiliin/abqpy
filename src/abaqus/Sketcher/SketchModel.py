@@ -1,4 +1,5 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing import Optional
 from .ConstrainedSketch import ConstrainedSketch
 from ..Model.ModelBase import ModelBase
 
@@ -18,7 +19,7 @@ class SketchModel(ModelBase):
         self,
         name: str,
         sheetSize: float,
-        gridSpacing: float = None,
+        gridSpacing: Optional[float] = None,
         transform: tuple = (),
     ) -> ConstrainedSketch:
         """This method creates a ConstrainedSketch object. If the sketch cannot be created, the

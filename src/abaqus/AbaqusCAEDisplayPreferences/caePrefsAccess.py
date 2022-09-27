@@ -1,4 +1,5 @@
-import typing
+from typing import Union, List
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_function_doc
 from .CaeGuiPrefs import CaeGuiPrefs
@@ -35,7 +36,7 @@ def getGuiPrefsFileName() -> str:
 
 
 @abaqus_function_doc
-def getDisplayNamesInGuiPreferences(fileName: str) -> typing.List[str]:
+def getDisplayNamesInGuiPreferences(fileName: str) -> List[str]:
     """The abaqus_2021.gpr file stores a separate guiPreferences record for each display that
     you use. This function returns a list of every displayName recorded in the preferences
     file.
@@ -52,7 +53,7 @@ def getDisplayNamesInGuiPreferences(fileName: str) -> typing.List[str]:
 
     Returns
     -------
-    typing.List[str]
+    List[str]
         A list of Strings of displayNames.
     """
     # TODO: Implement this function
@@ -62,7 +63,7 @@ def getDisplayNamesInGuiPreferences(fileName: str) -> typing.List[str]:
 @abaqus_function_doc
 def printValuesList(
     object: str,
-    maxRecursionDepth: typing.Union[int, typing.Literal[UNLIMITED]] = UNLIMITED,
+    maxRecursionDepth: Union[int, Literal[UNLIMITED]] = UNLIMITED,
     asString: Boolean = False,
 ) -> str:
     """This function enables you to print all of the options and their values for a set of
@@ -78,7 +79,7 @@ def printValuesList(
     object: str
         The guiPreferences object or sessionOptions object for which you want to print options
         and their values.
-    maxRecursionDepth: typing.Union[int, typing.Literal[UNLIMITED]]
+    maxRecursionDepth: Union[int, Literal[UNLIMITED]]
         An Int, or SymbolicConstant UNLIMITED, that specifies the depth of recursion when
         accessing the attributes of **object**.
     asString: Boolean
@@ -129,7 +130,7 @@ def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
 
 @abaqus_function_doc
 def openSessionOptions(
-    fileName: str = "", directory: typing.Literal[CURRENT, HOME] = HOME
+    fileName: str = "", directory: Literal[CURRENT, HOME] = HOME
 ) -> CaeKerPrefs:
     """This function enables you to examine and change the default behavior for many session
     options Abaqus/CAE; that is, the settings that you can save in Abaqus/CAE from the
@@ -148,7 +149,7 @@ def openSessionOptions(
         this argument if you are working with a preferences file that is not at the default
         location. If this argument is omitted, the abaqus_2021.gpr file in your home directory is
         opened.
-    directory: typing.Literal[CURRENT, HOME]
+    directory: Literal[CURRENT, HOME]
         A SymbolicConstant specifying the location of the preferences file. Possible values
         are:
 

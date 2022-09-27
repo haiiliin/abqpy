@@ -1,7 +1,9 @@
-import typing
+from typing import Optional, Union, Tuple
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
+from ..Region.Region import Region
 
 
 @abaqus_class_doc
@@ -37,46 +39,48 @@ class HistoryOutputRequest:
     #: requested. The SymbolicConstant MODEL represents the whole model. The default value is
     #: MODEL.If the region is a surface region, the surface must lie within the general contact
     #: surface domain.
-    region: SymbolicConstant = MODEL
+    region: Union[Literal[MODEL], Region] = MODEL
 
     #: The SymbolicConstant DEFAULT or a tuple of Ints specifying the section points for which
     #: output is requested. The default value is DEFAULT.
-    sectionPoints: SymbolicConstant = DEFAULT
+    sectionPoints: Union[Literal[DEFAULT], Tuple[int, ...]] = DEFAULT
 
     #: None or a tuple of Strings specifying the interaction names. The default value is
     #: None.The sequence can contain only one String.
-    interactions: tuple = None
+    interactions: Optional[tuple] = None
 
     @abaqus_method_doc
     def __init__(
         self,
         name: str,
         createStepName: str,
-        region: SymbolicConstant = MODEL,
-        variables: SymbolicConstant = PRESELECT,
-        frequency: SymbolicConstant = 1,
-        modes: SymbolicConstant = ALL,
-        timeInterval: typing.Union[SymbolicConstant, float] = EVERY_TIME_INCREMENT,
+        region: Union[Literal[MODEL], Region] = MODEL,
+        variables: Union[Tuple[str, ...], Literal[PRESELECT, ALL]] = PRESELECT,
+        frequency: Union[int, Literal[LAST_INCREMENT]] = 1,
+        modes: Union[Literal[ALL], Tuple[int, ...]] = ALL,
+        timeInterval: Union[
+            Literal[EVERY_TIME_INCREMENT], float
+        ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         boltLoad: str = "",
-        sectionPoints: SymbolicConstant = DEFAULT,
+        sectionPoints: Union[Literal[DEFAULT], Tuple[int, ...]] = DEFAULT,
         stepName: str = "",
-        interactions: str = None,
-        contourIntegral: str = None,
+        interactions: Optional[str] = None,
+        contourIntegral: Optional[str] = None,
         numberOfContours: int = 0,
-        stressInitializationStep: str = None,
-        contourType: SymbolicConstant = J_INTEGRAL,
-        kFactorDirection: SymbolicConstant = MTS,
-        rebar: SymbolicConstant = EXCLUDE,
+        stressInitializationStep: Optional[str] = None,
+        contourType: Literal[J_INTEGRAL, C_INTEGRAL, T_STRESS, K_FACTORS] = J_INTEGRAL,
+        kFactorDirection: Literal[MTS, MERR, K110] = MTS,
+        rebar: Literal[EXCLUDE, INCLUDE, ONLY] = EXCLUDE,
         integratedOutputSection: str = "",
-        springs: tuple = None,
-        filter: SymbolicConstant = None,
+        springs: Optional[tuple] = None,
+        filter: Optional[SymbolicConstant] = None,
         fasteners: str = "",
         assembledFastener: str = "",
         assembledFastenerSet: str = "",
         sensor: Boolean = OFF,
         useGlobal: Boolean = True,
-    ):
+    ) -> None:
         """This method creates a HistoryOutputRequest object.
 
         .. note:: 
@@ -166,7 +170,7 @@ class HistoryOutputRequest:
         ...
 
     @abaqus_method_doc
-    def deactivate(self, stepName: str):
+    def deactivate(self, stepName: str) -> None:
         """This method deactivates the history output request in the specified step and all
         subsequent steps.
 
@@ -179,7 +183,7 @@ class HistoryOutputRequest:
         ...
 
     @abaqus_method_doc
-    def move(self, fromStepName: str, toStepName: str):
+    def move(self, fromStepName: str, toStepName: str) -> None:
         """This method moves the history output request state object from one step to a different
         step.
 
@@ -195,7 +199,7 @@ class HistoryOutputRequest:
         ...
 
     @abaqus_method_doc
-    def reset(self, stepName: str):
+    def reset(self, stepName: str) -> None:
         """This method resets the history output request state of the specified step to the state
         of the previous step.
 
@@ -208,43 +212,45 @@ class HistoryOutputRequest:
         ...
 
     @abaqus_method_doc
-    def resume(self):
+    def resume(self) -> None:
         """This method resumes the history output request that was previously suppressed."""
         ...
 
     @abaqus_method_doc
-    def suppress(self):
+    def suppress(self) -> None:
         """This method suppresses the history output request."""
         ...
 
     @abaqus_method_doc
     def setValues(
         self,
-        region: SymbolicConstant = MODEL,
-        variables: SymbolicConstant = PRESELECT,
-        frequency: SymbolicConstant = 1,
-        modes: SymbolicConstant = ALL,
-        timeInterval: typing.Union[SymbolicConstant, float] = EVERY_TIME_INCREMENT,
+        region: Union[Literal[MODEL], Region] = MODEL,
+        variables: Union[Tuple[str, ...], Literal[PRESELECT, ALL]] = PRESELECT,
+        frequency: Union[int, Literal[LAST_INCREMENT]] = 1,
+        modes: Union[Literal[ALL], Tuple[int, ...]] = ALL,
+        timeInterval: Union[
+            Literal[EVERY_TIME_INCREMENT], float
+        ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         boltLoad: str = "",
-        sectionPoints: SymbolicConstant = DEFAULT,
+        sectionPoints: Union[Literal[DEFAULT], Tuple[int, ...]] = DEFAULT,
         stepName: str = "",
-        interactions: str = None,
-        contourIntegral: str = None,
+        interactions: Optional[str] = None,
+        contourIntegral: Optional[str] = None,
         numberOfContours: int = 0,
-        stressInitializationStep: str = None,
-        contourType: SymbolicConstant = J_INTEGRAL,
-        kFactorDirection: SymbolicConstant = MTS,
-        rebar: SymbolicConstant = EXCLUDE,
+        stressInitializationStep: Optional[str] = None,
+        contourType: Literal[J_INTEGRAL, C_INTEGRAL, T_STRESS, K_FACTORS] = J_INTEGRAL,
+        kFactorDirection: Literal[MTS, MERR, K110] = MTS,
+        rebar: Literal[EXCLUDE, INCLUDE, ONLY] = EXCLUDE,
         integratedOutputSection: str = "",
-        springs: tuple = None,
-        filter: SymbolicConstant = None,
+        springs: Optional[tuple] = None,
+        filter: Optional[SymbolicConstant] = None,
         fasteners: str = "",
         assembledFastener: str = "",
         assembledFastenerSet: str = "",
         sensor: Boolean = OFF,
         useGlobal: Boolean = True,
-    ):
+    ) -> None:
         """This method modifies the data for an existing HistoryOutputRequest object in the step
         where it is created.
 
@@ -329,13 +335,15 @@ class HistoryOutputRequest:
     def setValuesInStep(
         self,
         stepName: str,
-        variables: SymbolicConstant = None,
-        frequency: SymbolicConstant = 1,
-        modes: SymbolicConstant = ALL,
-        timeInterval: typing.Union[SymbolicConstant, float] = EVERY_TIME_INCREMENT,
+        variables: Union[Tuple[str, ...], Literal[PRESELECT, ALL]] = ...,
+        frequency: Union[int, Literal[LAST_INCREMENT]] = 1,
+        modes: Union[Literal[ALL], Tuple[int, ...]] = ALL,
+        timeInterval: Union[
+            Literal[EVERY_TIME_INCREMENT], float
+        ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
-        timePoints: str = None,
-    ):
+        timePoints: Optional[str] = None,
+    ) -> None:
         """This method modifies the propagating data for an existing HistoryOutputRequest object in
         the specified step.
 

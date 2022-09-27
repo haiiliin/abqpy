@@ -1,11 +1,11 @@
-import typing
-
+from __future__ import annotations
+from typing import Type, List
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Annotation import Annotation
 
 
 @abaqus_class_doc
-class AnnotationsToPlotArray(typing.List[Annotation]):
+class AnnotationsToPlotArray(List[Annotation]):
     """The AnnotationsToPlotArray object is a sequence that stores references to plotted
     annotations. By adding annotations to and removing annotations from this sequence, you
     can control which annotations are displayed in a particular viewport.
@@ -16,6 +16,9 @@ class AnnotationsToPlotArray(typing.List[Annotation]):
             import annotationToolset
             session.viewports[name].annotationsToPlot
     """
+
+    def __new__(cls: Type[AnnotationsToPlotArray]) -> AnnotationsToPlotArray:
+        return super().__new__(cls)
 
     @abaqus_method_doc
     def bringForward(self, index: str):

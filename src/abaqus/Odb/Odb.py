@@ -1,4 +1,5 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 from .OdbPart import OdbPart
 from .OdbStep import OdbStep
 from .SectionCategory import SectionCategory
@@ -7,10 +8,11 @@ from ..BeamSectionProfile.BeamSectionProfileOdb import BeamSectionProfileOdb
 from ..Filter.FilterOdb import FilterOdb
 from ..Material.MaterialOdb import MaterialOdb
 from ..UtilityAndView.abaqusConstants import *
+from ..Canvas.Displayable import Displayable
 
 
 @abaqus_class_doc
-class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
+class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayable):
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
     .. note:: 
@@ -22,7 +24,10 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
 
     @abaqus_method_doc
     def Part(
-        self, name: str, embeddedSpace: SymbolicConstant, type: SymbolicConstant
+        self,
+        name: str,
+        embeddedSpace: Literal[THREE_D, TWO_D_PLANAR, AXISYMMETRIC],
+        type: Literal[DEFORMABLE_BODY, ANALYTIC_RIGID_SURFACE],
     ) -> OdbPart:
         """This method creates an OdbPart object. Nodes and elements are added to this object at a
         later stage.
@@ -56,11 +61,11 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb):
         self,
         name: str,
         description: str,
-        domain: SymbolicConstant,
+        domain: Literal[TIME, FREQUENCY, ARC_LENGTH, MODAL],
         timePeriod: float = 0,
         previousStepName: str = "",
         procedure: str = "",
-        totalTime: float = None,
+        totalTime: float = -1.0,
     ) -> OdbStep:
         """This method creates an OdbStep object.
 

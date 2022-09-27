@@ -1,12 +1,14 @@
-import typing
+from __future__ import annotations
+from typing import Union, Tuple, List, Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Cell import Cell
+from .FaceArray import FaceArray
 from ..UtilityAndView.abaqusConstants import *
 
 
 @abaqus_class_doc
-class CellArray(typing.List[Cell]):
+class CellArray(List[Cell]):
     """The CellArray is a sequence of Cell objects.
 
     .. note:: 
@@ -29,7 +31,7 @@ class CellArray(typing.List[Cell]):
     """
 
     @abaqus_method_doc
-    def __init__(self, cells: typing.List[Cell]):
+    def __init__(self, cells: List[Cell]) -> None:
         """This method creates a CellArray object.
 
         .. note:: 
@@ -51,7 +53,13 @@ class CellArray(typing.List[Cell]):
         ...
 
     @abaqus_method_doc
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[Cell, typing.List[Cell]]:
+    def findAt(
+        self,
+        coordinates: Union[
+            Tuple[float, float, float], Tuple[Tuple[float, float, float],]
+        ],
+        printWarning: Boolean = True,
+    ) -> Union[Cell, Tuple[Cell, ...]]:
         """This method returns the object or objects in the CellArray located at the given
         coordinates. findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt
         returns any entity that is at the arbitrary point specified or at a distance of less
@@ -68,12 +76,14 @@ class CellArray(typing.List[Cell]):
         ----------
         coordinates
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to
-            find.findAt returns either a Cell object or a sequence of Cell objects based on the type
-            of input. If **coordinates** is a sequence of Floats, findAt returns the Cell object at
-            that point. If **coordinates** is a sequence of sequence of Floats, findAt returns a
-            sequence of Cell objects at the given locations. The sequence of sequence of Floats must
-            be a sequence of sequence of point and normal data, not a sequence of point data. For
-            example::
+            find. `findAt` returns either a Cell object or a sequence of Cell objects based on the type
+            of input. 
+
+            * If **coordinates** is a sequence of Floats, findAt returns the Cell object at that point. 
+            
+            * If **coordinates** is a sequence of sequence of Floats, findAt returns a sequence of Cell
+              objects at the given locations. The sequence of sequence of Floats must be a sequence of 
+              sequence of point and normal data, not a sequence of point data. For example::
             
                 cells1 = myCrackedBlockInstance.cells.findAt(((5.5, -8.3, 294.2),), 
                                                              ((12.1, -8.3, 287.8),), 
@@ -91,7 +101,24 @@ class CellArray(typing.List[Cell]):
         return Cell()
 
     @abaqus_method_doc
+<<<<<<< HEAD
     def getSequenceFromMask(self, mask: str):
+=======
+    def getExteriorFaces(self) -> FaceArray:
+        """This method returns the cell faces on the exterior of the CellArray. That is, it returns
+        the faces that are referenced by exactly one of the cells in the sequence.
+
+        Returns
+        -------
+        FaceArray
+            A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object representing the faces on the exterior of the cells.
+
+        """
+        ...
+
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: str) -> Cell:
+>>>>>>> 74234014 (Improve type hints (#1716))
         """This method returns the object or objects in the CellArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
         COMPRESSEDINDEX. When large number of objects are involved, this method is highly
@@ -115,7 +142,7 @@ class CellArray(typing.List[Cell]):
         ...
 
     @abaqus_method_doc
-    def getMask(self):
+    def getMask(self) -> str:
         """This method returns a string specifying the object or objects.
 
         Returns
@@ -129,13 +156,13 @@ class CellArray(typing.List[Cell]):
     @abaqus_method_doc
     def getByBoundingBox(
         self,
-        xMin: str = "",
-        yMin: str = "",
-        zMin: str = "",
-        xMax: str = "",
-        yMax: str = "",
-        zMax: str = "",
-    ):
+        xMin: float = ...,
+        yMin: float = ...,
+        zMin: float = ...,
+        xMax: float = ...,
+        yMax: float = ...,
+        zMax: float = ...,
+    ) -> CellArray:
         """This method returns an array of cell objects that lie within the specified bounding box.
 
         Parameters
@@ -162,7 +189,12 @@ class CellArray(typing.List[Cell]):
         ...
 
     @abaqus_method_doc
-    def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
+    def getByBoundingCylinder(
+        self,
+        center1: Tuple[float, float, float],
+        center2: Tuple[float, float, float],
+        radius: float,
+    ) -> CellArray:
         """This method returns an array of cell objects that lie within the specified bounding
         cylinder.
 
@@ -186,7 +218,7 @@ class CellArray(typing.List[Cell]):
         ...
 
     @abaqus_method_doc
-    def getByBoundingSphere(self, center: tuple, radius: str):
+    def getByBoundingSphere(self, center: Tuple[float, float, float], radius: float) -> CellArray:
         """This method returns an array of cell objects that lie within the specified bounding
         sphere.
 
@@ -206,13 +238,13 @@ class CellArray(typing.List[Cell]):
         ...
 
     @abaqus_method_doc
-    def getBoundingBox(self):
+    def getBoundingBox(self) -> Dict[str, Tuple[float, float, float]]:
         """This method returns a dictionary of two tuples representing minimum and maximum boundary
         values of the bounding box of the minimum size containing the cell sequence.
 
         Returns
         -------
-        typing.Dict[str, typing.Tuple[float, float, float]]
+        Dict[str, Tuple[float, float, float]]
             A Dictionary object with the following items:
             
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z** -boundary

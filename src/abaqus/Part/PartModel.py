@@ -1,4 +1,5 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 from ..Model.ModelBase import ModelBase
 from ..Part.Part import Part
 from ..UtilityAndView.abaqusConstants import *
@@ -18,8 +19,10 @@ class PartModel(ModelBase):
     def Part(
         self,
         name: str,
-        dimensionality: SymbolicConstant,
-        type: SymbolicConstant,
+        dimensionality: Literal[THREE_D, TWO_D_PLANAR, AXISYMMETRIC],
+        type: Literal[
+            DEFORMABLE_BODY, EULERIAN, DISCRETE_RIGID_SURFACE, ANALYTIC_RIGID_SURFACE
+        ],
         twist: Boolean = OFF,
     ):
         """This method creates a Part object and places it in the parts repository.
