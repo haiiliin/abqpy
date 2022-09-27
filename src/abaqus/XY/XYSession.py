@@ -101,11 +101,7 @@ class XYSession(XYSessionBase):
 
     @staticmethod
     @abaqus_method_doc
-<<<<<<< HEAD
-    def QuantityType(type: SymbolicConstant, label: str = "") -> QuantityType:
-=======
     def QuantityType(
-        label: str = "",
         type: Literal[
             NONE,
             ACCELERATION,
@@ -179,9 +175,9 @@ class XYSession(XYSessionBase):
             VOLUME_FLUX,
             VOLUME_FLUX_AREA,
             VOLUME_FRACTION,
-        ] = NONE,
+        ],
+        label: str = "",
     ) -> QuantityType:
->>>>>>> 74234014 (Improve type hints (#1716))
         """This method creates a QuantityType object.
 
         .. note:: 

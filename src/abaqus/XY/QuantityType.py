@@ -207,12 +207,8 @@ class QuantityType:
     ] = NONE
 
     @abaqus_method_doc
-<<<<<<< HEAD
-    def __init__(self, type: SymbolicConstant, label: str = ""):
-=======
     def __init__(
         self,
-        label: str = "",
         type: Literal[
             NONE,
             ACCELERATION,
@@ -286,9 +282,9 @@ class QuantityType:
             VOLUME_FLUX,
             VOLUME_FLUX_AREA,
             VOLUME_FRACTION,
-        ] = NONE,
+        ],
+        label: str = "",
     ):
->>>>>>> 74234014 (Improve type hints (#1716))
         """This method creates a QuantityType object.
 
         .. note:: 
