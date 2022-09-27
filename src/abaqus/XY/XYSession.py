@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union, Tuple, List, Dict, overload
+from typing import Union, Tuple, List, Dict, overload
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
