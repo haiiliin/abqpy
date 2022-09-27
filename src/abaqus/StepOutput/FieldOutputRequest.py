@@ -1,7 +1,9 @@
-import typing
+from typing import Optional, Tuple
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
+from ..Region.Region import Region
 
 
 @abaqus_class_doc
@@ -35,29 +37,31 @@ class FieldOutputRequest:
     #: The SymbolicConstant MODEL or a Region object specifying the region from which output is
     #: requested. The SymbolicConstant MODEL represents the whole model. The default value is
     #: MODEL.
-    region: SymbolicConstant = MODEL
+    region: Union[Literal[MODEL], Region] = MODEL
 
     #: None or a tuple of Strings specifying the interaction names. The default value is
     #: None.The sequence can contain only one String.
-    interactions: tuple = None
+    interactions: Optional[tuple] = None
 
     @abaqus_method_doc
     def __init__(
         self,
         name: str,
         createStepName: str,
-        region: SymbolicConstant = MODEL,
-        variables: SymbolicConstant = PRESELECT,
-        frequency: SymbolicConstant = 1,
-        modes: SymbolicConstant = ALL,
-        timeInterval: typing.Union[SymbolicConstant, float] = EVERY_TIME_INCREMENT,
+        region: Union[Literal[MODEL], Region] = MODEL,
+        variables: Union[Tuple[str, ...], Literal[PRESELECT, ALL]] = PRESELECT,
+        frequency: Union[int, Literal[LAST_INCREMENT]] = 1,
+        modes: Union[Literal[ALL], Tuple[int, ...]] = ALL,
+        timeInterval: Union[
+            Literal[EVERY_TIME_INCREMENT], float
+        ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         timeMarks: Boolean = OFF,
         boltLoad: str = "",
-        sectionPoints: SymbolicConstant = DEFAULT,
-        interactions: str = None,
-        rebar: SymbolicConstant = EXCLUDE,
-        filter: SymbolicConstant = None,
+        sectionPoints: Union[Tuple[int, ...], Literal[DEFAULT]] = DEFAULT,
+        interactions: Optional[str] = None,
+        rebar: Literal[EXCLUDE, INCLUDE, ONLY] = EXCLUDE,
+        filter: Union[Literal[ANTIALIASING], str, None] = None,
         directions: Boolean = ON,
         fasteners: str = "",
         assembledFastener: str = "",
@@ -68,8 +72,10 @@ class FieldOutputRequest:
         outputAtPlyTop: Boolean = False,
         outputAtPlyMid: Boolean = True,
         outputAtPlyBottom: Boolean = False,
-        position: SymbolicConstant = INTEGRATION_POINTS,
-    ):
+        position: Literal[
+            INTEGRATION_POINTS, AVERAGED_AT_NODES, CENTROIDAL, NODES
+        ] = INTEGRATION_POINTS,
+    ) -> None:
         """This method creates a FieldOutputRequest object.
 
         .. note:: 
@@ -159,7 +165,7 @@ class FieldOutputRequest:
         ...
 
     @abaqus_method_doc
-    def deactivate(self, stepName: str):
+    def deactivate(self, stepName: str) -> None:
         """This method deactivates the field output request in the specified step and all its
         subsequent steps.
 
@@ -172,7 +178,7 @@ class FieldOutputRequest:
         ...
 
     @abaqus_method_doc
-    def move(self, fromStepName: str, toStepName: str):
+    def move(self, fromStepName: str, toStepName: str) -> None:
         """This method moves the field output request state object from one step to a different
         step.
 
@@ -188,7 +194,7 @@ class FieldOutputRequest:
         ...
 
     @abaqus_method_doc
-    def reset(self, stepName: str):
+    def reset(self, stepName: str) -> None:
         """This method resets the field output request state of the specified step to the state of
         the previous step.
 
@@ -201,30 +207,32 @@ class FieldOutputRequest:
         ...
 
     @abaqus_method_doc
-    def resume(self):
+    def resume(self) -> None:
         """This method resumes the field output request that was previously suppressed."""
         ...
 
     @abaqus_method_doc
-    def suppress(self):
+    def suppress(self) -> None:
         """This method suppresses the field output request."""
         ...
 
     @abaqus_method_doc
     def setValues(
         self,
-        region: SymbolicConstant = MODEL,
-        variables: SymbolicConstant = PRESELECT,
-        frequency: SymbolicConstant = 1,
-        modes: SymbolicConstant = ALL,
-        timeInterval: typing.Union[SymbolicConstant, float] = EVERY_TIME_INCREMENT,
+        region: Union[Literal[MODEL], Region] = MODEL,
+        variables: Union[Tuple[str, ...], Literal[PRESELECT, ALL]] = PRESELECT,
+        frequency: Union[int, Literal[LAST_INCREMENT]] = 1,
+        modes: Union[Literal[ALL], int] = ALL,
+        timeInterval: Union[
+            Literal[EVERY_TIME_INCREMENT], float
+        ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         timeMarks: Boolean = OFF,
         boltLoad: str = "",
-        sectionPoints: SymbolicConstant = DEFAULT,
-        interactions: str = None,
-        rebar: SymbolicConstant = EXCLUDE,
-        filter: SymbolicConstant = None,
+        sectionPoints: Union[int, Literal[DEFAULT]] = DEFAULT,
+        interactions: Optional[str] = None,
+        rebar: Literal[EXCLUDE, INCLUDE, ONLY] = EXCLUDE,
+        filter: Union[Literal[ANTIALIASING], str, None] = None,
         directions: Boolean = ON,
         fasteners: str = "",
         assembledFastener: str = "",
@@ -235,8 +243,10 @@ class FieldOutputRequest:
         outputAtPlyTop: Boolean = False,
         outputAtPlyMid: Boolean = True,
         outputAtPlyBottom: Boolean = False,
-        position: SymbolicConstant = INTEGRATION_POINTS,
-    ):
+        position: Literal[
+            INTEGRATION_POINTS, AVERAGED_AT_NODES, CENTROIDAL, NODES
+        ] = INTEGRATION_POINTS,
+    ) -> None:
         """This method modifies the data for an existing FieldOutputRequest object in the step
         where it is created.
 
@@ -321,14 +331,16 @@ class FieldOutputRequest:
     def setValuesInStep(
         self,
         stepName: str,
-        variables: SymbolicConstant = None,
-        frequency: SymbolicConstant = 1,
-        modes: SymbolicConstant = ALL,
-        timeInterval: typing.Union[SymbolicConstant, float] = EVERY_TIME_INCREMENT,
+        variables: Union[Tuple[str, ...], Literal[PRESELECT, ALL], None] = None,
+        frequency: Union[int, Literal[LAST_INCREMENT]] = 1,
+        modes: Union[Literal[ALL], int] = ALL,
+        timeInterval: Union[
+            Literal[EVERY_TIME_INCREMENT], float
+        ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
-        timePoint: str = None,
+        timePoint: Optional[str] = None,
         timeMarks: Boolean = OFF,
-    ):
+    ) -> None:
         """This method modifies the propagating data for an existing FieldOutputRequest object in
         the specified step.
 
