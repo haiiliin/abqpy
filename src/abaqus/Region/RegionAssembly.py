@@ -1,4 +1,5 @@
-import typing
+from __future__ import annotations
+from typing import Optional, Union, Tuple, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Region import Region
@@ -30,26 +31,26 @@ class RegionAssembly(RegionAssemblyBase):
     @abaqus_method_doc
     def Surface(
         self,
-        side1Faces: typing.Tuple[Face, ...] = None,
-        side2Faces: typing.Tuple[Face, ...] = None,
-        side12Faces: typing.Tuple[Face, ...] = None,
-        end1Edges: typing.Tuple[Face, ...] = None,
-        end2Edges: typing.Tuple[Face, ...] = None,
-        circumEdges: typing.Tuple[Face, ...] = None,
-        side1Edges: typing.Tuple[Face, ...] = None,
-        side2Edges: typing.Tuple[Face, ...] = None,
-        face1Elements: typing.Tuple[Face, ...] = None,
-        face2Elements: typing.Tuple[Face, ...] = None,
-        face3Elements: typing.Tuple[Face, ...] = None,
-        face4Elements: typing.Tuple[Face, ...] = None,
-        face5Elements: typing.Tuple[Face, ...] = None,
-        face6Elements: typing.Tuple[Face, ...] = None,
-        side1Elements: typing.Tuple[Face, ...] = None,
-        side2Elements: typing.Tuple[Face, ...] = None,
-        side12Elements: typing.Tuple[Face, ...] = None,
-        end1Elements: typing.Tuple[Face, ...] = None,
-        end2Elements: typing.Tuple[Face, ...] = None,
-        circumElements: typing.Tuple[Face, ...] = None,
+        side1Faces: Union[Face, Tuple[Face, ...], None] = None,
+        side2Faces: Union[Face, Tuple[Face, ...], None] = None,
+        side12Faces: Union[Face, Tuple[Face, ...], None] = None,
+        end1Edges: Union[Face, Tuple[Face, ...], None] = None,
+        end2Edges: Union[Face, Tuple[Face, ...], None] = None,
+        circumEdges: Union[Face, Tuple[Face, ...], None] = None,
+        side1Edges: Union[Face, Tuple[Face, ...], None] = None,
+        side2Edges: Union[Face, Tuple[Face, ...], None] = None,
+        face1Elements: Union[Face, Tuple[Face, ...], None] = None,
+        face2Elements: Union[Face, Tuple[Face, ...], None] = None,
+        face3Elements: Union[Face, Tuple[Face, ...], None] = None,
+        face4Elements: Union[Face, Tuple[Face, ...], None] = None,
+        face5Elements: Union[Face, Tuple[Face, ...], None] = None,
+        face6Elements: Union[Face, Tuple[Face, ...], None] = None,
+        side1Elements: Union[Face, Tuple[Face, ...], None] = None,
+        side2Elements: Union[Face, Tuple[Face, ...], None] = None,
+        side12Elements: Union[Face, Tuple[Face, ...], None] = None,
+        end1Elements: Union[Face, Tuple[Face, ...], None] = None,
+        end2Elements: Union[Face, Tuple[Face, ...], None] = None,
+        circumElements: Union[Face, Tuple[Face, ...], None] = None,
         name: str = "",
     ) -> Surface:
         """This method creates a surface from a sequence of objects in a model database. The
@@ -183,25 +184,25 @@ class RegionAssembly(RegionAssemblyBase):
         self.allSurfaces[name] = surface
         return surface
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def Set(
         self,
         name: str,
-        nodes: typing.Tuple[MeshNode, ...] = None,
-        elements: typing.Tuple[MeshElement, ...] = None,
-        region: Region = None,
-        vertices: typing.Tuple[Vertex, ...] = None,
-        edges: typing.Tuple[Edge, ...] = None,
-        faces: typing.Tuple[Face, ...] = None,
-        cells: typing.Tuple[Cell, ...] = None,
-        xVertices: typing.Tuple[Vertex, ...] = None,
-        xEdges: typing.Tuple[Edge, ...] = None,
-        xFaces: typing.Tuple[Face, ...] = None,
-        referencePoints: typing.Tuple[ReferencePoint, ...] = (),
-        skinFaces: tuple = (),
-        skinEdges: tuple = (),
-        stringerEdges: tuple = (),
+        nodes: Optional[Tuple[MeshNode, ...]] = None,
+        elements: Optional[Tuple[MeshElement, ...]] = None,
+        region: Optional[Region] = None,
+        vertices: Optional[Tuple[Vertex, ...]] = None,
+        edges: Optional[Tuple[Edge, ...]] = None,
+        faces: Optional[Tuple[Face, ...]] = None,
+        cells: Optional[Tuple[Cell, ...]] = None,
+        xVertices: Optional[Tuple[Vertex, ...]] = None,
+        xEdges: Optional[Tuple[Edge, ...]] = None,
+        xFaces: Optional[Tuple[Face, ...]] = None,
+        referencePoints: Tuple[ReferencePoint, ...] = (),
+        skinFaces: tuple = ...,
+        skinEdges: tuple = ...,
+        stringerEdges: tuple = ...,
     ) -> Set:
         """This method creates a set from a sequence of objects in a model database.
 
@@ -258,7 +259,7 @@ class RegionAssembly(RegionAssemblyBase):
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def Set(self, name: str, objectToCopy: Set) -> Set:
         """This method copies a set from an existing set.

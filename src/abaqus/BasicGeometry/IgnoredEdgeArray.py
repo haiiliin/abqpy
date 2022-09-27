@@ -1,4 +1,5 @@
-import typing
+from __future__ import annotations
+from typing import Union, List, Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .IgnoredEdge import IgnoredEdge
@@ -6,7 +7,7 @@ from ..UtilityAndView.abaqusConstants import *
 
 
 @abaqus_class_doc
-class IgnoredEdgeArray(typing.List[IgnoredEdge]):
+class IgnoredEdgeArray(List[IgnoredEdge]):
     """The IgnoredEdgeArray is a sequence of IgnoredEdge objects. If the part is modified, then
     IgnoredEdgeArray must be updated for that part.
 
@@ -21,7 +22,7 @@ class IgnoredEdgeArray(typing.List[IgnoredEdge]):
     """
 
     @abaqus_method_doc
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[IgnoredEdge, typing.List[IgnoredEdge]]:
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> Union[IgnoredEdge, List[IgnoredEdge]]:
         """This method returns the object or objects in the IgnoredEdgeArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any
@@ -93,7 +94,7 @@ class IgnoredEdgeArray(typing.List[IgnoredEdge]):
         ...
 
     @abaqus_method_doc
-    def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
+    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
         """This method returns a object or objects in the IgnoredEdgeArray closest to the given set
         of points, where the given points need not lie on the edges in the IgnoredEdgeArray.
 
