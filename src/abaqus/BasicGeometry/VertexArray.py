@@ -1,12 +1,14 @@
-import typing
+from __future__ import annotations
+from typing import List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Vertex import Vertex
+from ..Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex import ConstrainedSketchVertex
 from ..UtilityAndView.abaqusConstants import *
 
 
 @abaqus_class_doc
-class VertexArray(typing.List[Vertex]):
+class VertexArray(List[Vertex]):
     """The VertexArray is a sequence of ConstrainedSketchVertex objects. If the part is modified, then
     VertexArray must be updated for that part.
 
@@ -32,7 +34,7 @@ class VertexArray(typing.List[Vertex]):
     """
 
     @abaqus_method_doc
-    def __init__(self, vertices: typing.List[Vertex]):
+    def __init__(self, vertices: List[Vertex]):
         """This method creates a VertexArray object.
 
         .. note:: 
@@ -54,7 +56,7 @@ class VertexArray(typing.List[Vertex]):
         ...
 
     @abaqus_method_doc
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True):
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> ConstrainedSketchVertex:
         """This method returns the object or objects in the VertexArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any ConstrainedSketchVertex
@@ -90,7 +92,7 @@ class VertexArray(typing.List[Vertex]):
         ...
 
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str):
+    def getSequenceFromMask(self, mask: str) -> ConstrainedSketchVertex:
         """This method returns the object or objects in the VertexArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
         COMPRESSEDINDEX. When a large number of objects are involved, this method is highly
@@ -110,7 +112,7 @@ class VertexArray(typing.List[Vertex]):
         ...
 
     @abaqus_method_doc
-    def getMask(self):
+    def getMask(self) -> str:
         """This method returns a string specifying the object or objects.
 
         Returns
@@ -124,13 +126,13 @@ class VertexArray(typing.List[Vertex]):
     @abaqus_method_doc
     def getByBoundingBox(
         self,
-        xMin: str = "",
-        yMin: str = "",
-        zMin: str = "",
-        xMax: str = "",
-        yMax: str = "",
-        zMax: str = "",
-    ):
+        xMin: float = ...,
+        yMin: float = ...,
+        zMin: float = ...,
+        xMax: float = ...,
+        yMax: float = ...,
+        zMax: float = ...,
+    ) -> VertexArray:
         """This method returns an array of vertex objects that lie within the specified bounding
         box.
 
@@ -208,7 +210,7 @@ class VertexArray(typing.List[Vertex]):
 
         Returns
         -------
-        typing.Dict[str, typing.Tuple[float, float, float]]
+        Dict[str, Tuple[float, float, float]]
             A Dictionary object with the following items:
             
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z** -boundary

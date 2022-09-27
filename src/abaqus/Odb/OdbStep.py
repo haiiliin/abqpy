@@ -12,7 +12,11 @@ from .OdbStepBase import OdbStepBase
 class OdbStep(OdbStepBase):
     @abaqus_method_doc
     def HistoryRegion(
-        self, name: str, description: str, point: HistoryPoint, loadCase: str = None
+        self,
+        name: str,
+        description: str,
+        point: HistoryPoint,
+        loadCase: typing.Optional[str] = None,
     ) -> HistoryRegion:
         """This method creates a HistoryRegion object.
 
