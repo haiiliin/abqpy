@@ -1,4 +1,5 @@
-import typing
+from typing import Optional, Union, Tuple
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .FieldOutputRequest import FieldOutputRequest
@@ -25,18 +26,20 @@ class OutputModel(ModelBase):
         self,
         name: str,
         createStepName: str,
-        region: SymbolicConstant = MODEL,
-        variables: SymbolicConstant = PRESELECT,
-        frequency: SymbolicConstant = 1,
-        modes: SymbolicConstant = ALL,
-        timeInterval: typing.Union[SymbolicConstant, float] = EVERY_TIME_INCREMENT,
+        region: Union[Literal[MODEL], Region] = MODEL,
+        variables: Union[Tuple[str, ...], Literal[PRESELECT, ALL]] = PRESELECT,
+        frequency: Union[int, Literal[LAST_INCREMENT]] = 1,
+        modes: Union[Literal[ALL], Tuple[int, ...]] = ALL,
+        timeInterval: Union[
+            Literal[EVERY_TIME_INCREMENT], float
+        ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         timeMarks: Boolean = OFF,
         boltLoad: str = "",
-        sectionPoints: SymbolicConstant = DEFAULT,
-        interactions: str = None,
-        rebar: SymbolicConstant = EXCLUDE,
-        filter: SymbolicConstant = None,
+        sectionPoints: Union[Literal[DEFAULT], Tuple[int, ...]] = DEFAULT,
+        interactions: Optional[str] = None,
+        rebar: Literal[EXCLUDE, INCLUDE, ONLY] = EXCLUDE,
+        filter: Optional[SymbolicConstant] = None,
         directions: Boolean = ON,
         fasteners: str = "",
         assembledFastener: str = "",
@@ -47,8 +50,10 @@ class OutputModel(ModelBase):
         outputAtPlyTop: Boolean = False,
         outputAtPlyMid: Boolean = True,
         outputAtPlyBottom: Boolean = False,
-        position: SymbolicConstant = INTEGRATION_POINTS,
-    ):
+        position: Literal[
+            INTEGRATION_POINTS, AVERAGED_AT_NODES, CENTROIDAL, NODES
+        ] = INTEGRATION_POINTS,
+    ) -> FieldOutputRequest:
         """This method creates a FieldOutputRequest object.
 
         .. note:: 
@@ -174,31 +179,33 @@ class OutputModel(ModelBase):
         self,
         name: str,
         createStepName: str,
-        region: SymbolicConstant = MODEL,
-        variables: SymbolicConstant = PRESELECT,
-        frequency: SymbolicConstant = 1,
-        modes: SymbolicConstant = ALL,
-        timeInterval: typing.Union[SymbolicConstant, float] = EVERY_TIME_INCREMENT,
+        region: Union[Literal[MODEL], Region] = MODEL,
+        variables: Union[Tuple[str, ...], Literal[PRESELECT, ALL]] = PRESELECT,
+        frequency: Union[int, Literal[LAST_INCREMENT]] = 1,
+        modes: Union[Literal[ALL], Tuple[int, ...]] = ALL,
+        timeInterval: Union[
+            Literal[EVERY_TIME_INCREMENT], float
+        ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         boltLoad: str = "",
-        sectionPoints: SymbolicConstant = DEFAULT,
+        sectionPoints: Union[Literal[DEFAULT], Tuple[int, ...]] = DEFAULT,
         stepName: str = "",
-        interactions: str = None,
-        contourIntegral: str = None,
+        interactions: Optional[str] = None,
+        contourIntegral: Optional[str] = None,
         numberOfContours: int = 0,
-        stressInitializationStep: str = None,
-        contourType: SymbolicConstant = J_INTEGRAL,
-        kFactorDirection: SymbolicConstant = MTS,
-        rebar: SymbolicConstant = EXCLUDE,
+        stressInitializationStep: Optional[str] = None,
+        contourType: Literal[J_INTEGRAL, C_INTEGRAL, T_STRESS, K_FACTORS] = J_INTEGRAL,
+        kFactorDirection: Literal[MTS, MERR, K110] = MTS,
+        rebar: Literal[EXCLUDE, INCLUDE, ONLY] = EXCLUDE,
         integratedOutputSection: str = "",
-        springs: tuple = None,
-        filter: SymbolicConstant = None,
+        springs: Optional[tuple] = None,
+        filter: Optional[SymbolicConstant] = None,
         fasteners: str = "",
         assembledFastener: str = "",
         assembledFastenerSet: str = "",
         sensor: Boolean = OFF,
         useGlobal: Boolean = True,
-    ):
+    ) -> HistoryOutputRequest:
         """This method creates a HistoryOutputRequest object.
 
         .. note:: 
@@ -215,7 +222,7 @@ class OutputModel(ModelBase):
         region
             The SymbolicConstant MODEL or a Region object specifying the region from which output is
             requested. The SymbolicConstant MODEL represents the whole model. The default value is
-            MODEL.If the region is a surface region, the surface must lie within the general contact
+            MODEL. If the region is a surface region, the surface must lie within the general contact
             surface domain.
         variables
             A sequence of Strings specifying output request variable or component names, or the
@@ -325,10 +332,12 @@ class OutputModel(ModelBase):
         self,
         name: str,
         surface: Region,
-        refPoint: SymbolicConstant = None,
+        refPoint: Optional[SymbolicConstant] = None,
         refPointAtCenter: Boolean = OFF,
-        refPointMotion: SymbolicConstant = INDEPENDENT,
-        localCsys: str = None,
+        refPointMotion: Literal[
+            AVERAGE_TRANSLATION, AVERAGE, INDEPENDENT
+        ] = INDEPENDENT,
+        localCsys: Optional[str] = None,
         projectOrientation: Boolean = OFF,
     ) -> IntegratedOutputSection:
         """This method creates an IntegratedOutputSection object.

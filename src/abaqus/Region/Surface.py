@@ -1,4 +1,6 @@
-import typing
+from __future__ import annotations
+from typing import Optional, Tuple, overload
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Region import Region
@@ -45,39 +47,39 @@ class Surface(Region):
     nodes: MeshNodeArray = MeshNodeArray([])
 
     #: A tuple of SymbolicConstants specifying the sides; for example, (SIDE1, SIDE2).
-    sides: SymbolicConstant = None
+    sides: Optional[Tuple[SymbolicConstant, ...]] = None
 
     #: A tuple of Ints specifying the instances. This member is not applicable for a Surface
     #: object on an output database.
-    instances: int = None
+    instances: Optional[int] = None
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
-        side1Faces: typing.Tuple[Face, ...] = None,
-        side2Faces: typing.Tuple[Face, ...] = None,
-        side12Faces: typing.Tuple[Face, ...] = None,
-        end1Edges: typing.Tuple[Face, ...] = None,
-        end2Edges: typing.Tuple[Face, ...] = None,
-        circumEdges: typing.Tuple[Face, ...] = None,
-        side1Edges: typing.Tuple[Face, ...] = None,
-        side2Edges: typing.Tuple[Face, ...] = None,
-        face1Elements: typing.Tuple[Face, ...] = None,
-        face2Elements: typing.Tuple[Face, ...] = None,
-        face3Elements: typing.Tuple[Face, ...] = None,
-        face4Elements: typing.Tuple[Face, ...] = None,
-        face5Elements: typing.Tuple[Face, ...] = None,
-        face6Elements: typing.Tuple[Face, ...] = None,
-        side1Elements: typing.Tuple[Face, ...] = None,
-        side2Elements: typing.Tuple[Face, ...] = None,
-        side12Elements: typing.Tuple[Face, ...] = None,
-        end1Elements: typing.Tuple[Face, ...] = None,
-        end2Elements: typing.Tuple[Face, ...] = None,
-        circumElements: typing.Tuple[Face, ...] = None,
+        side1Faces: Union[Face, Tuple[Face, ...], None] = None,
+        side2Faces: Union[Face, Tuple[Face, ...], None] = None,
+        side12Faces: Union[Face, Tuple[Face, ...], None] = None,
+        end1Edges: Union[Face, Tuple[Face, ...], None] = None,
+        end2Edges: Union[Face, Tuple[Face, ...], None] = None,
+        circumEdges: Union[Face, Tuple[Face, ...], None] = None,
+        side1Edges: Union[Face, Tuple[Face, ...], None] = None,
+        side2Edges: Union[Face, Tuple[Face, ...], None] = None,
+        face1Elements: Union[Face, Tuple[Face, ...], None] = None,
+        face2Elements: Union[Face, Tuple[Face, ...], None] = None,
+        face3Elements: Union[Face, Tuple[Face, ...], None] = None,
+        face4Elements: Union[Face, Tuple[Face, ...], None] = None,
+        face5Elements: Union[Face, Tuple[Face, ...], None] = None,
+        face6Elements: Union[Face, Tuple[Face, ...], None] = None,
+        side1Elements: Union[Face, Tuple[Face, ...], None] = None,
+        side2Elements: Union[Face, Tuple[Face, ...], None] = None,
+        side12Elements: Union[Face, Tuple[Face, ...], None] = None,
+        end1Elements: Union[Face, Tuple[Face, ...], None] = None,
+        end2Elements: Union[Face, Tuple[Face, ...], None] = None,
+        circumElements: Union[Face, Tuple[Face, ...], None] = None,
         name: str = "",
         **kwargs
-    ):
+    ) -> None:
         """This method creates a surface from a sequence of objects in a model database. The
         surface will apply to the sides specified by the arguments.For example
         surface=mdb.models['Model-1'].parts['Part-1'].Surface(side1Faces=side1Faces,
@@ -184,9 +186,9 @@ class Surface(Region):
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
-    def __init__(self, name: str, objectToCopy: "Surface"):
+    def __init__(self, name: str, objectToCopy: Surface) -> None:
         """This method copies a surface from an existing surface.
 
         .. note:: 
@@ -210,12 +212,15 @@ class Surface(Region):
         ...
 
     @abaqus_method_doc
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args, **kwargs) -> None:
         ...
 
     def SurfaceByBoolean(
-        self, name: str, surfaces: typing.Tuple["Surface"], operation: SymbolicConstant = UNION
-    ):
+        self,
+        name: str,
+        surfaces: Tuple[Surface],
+        operation: Literal[UNION, INTERSECTION, DIFFERENCE] = UNION,
+    ) -> Surface:
         """This method creates a surface by performing a boolean operation on two or more input
         surfaces.
 
@@ -233,7 +238,7 @@ class Surface(Region):
             A sequence of Surface objects.
         operation
             A SymbolicConstant specifying the boolean operation to perform. Possible values are
-            UNION, INTERSECTION, andDIFFERENCE. The default value is UNION. Note that if DIFFERENCE
+            UNION, INTERSECTION, and DIFFERENCE. The default value is UNION. Note that if DIFFERENCE
             is specified, the order of the given input surfaces is important; All surfaces specified
             after the first one are subtracted from the first one.
 
@@ -245,7 +250,7 @@ class Surface(Region):
         ...
 
     @abaqus_method_doc
-    def SurfaceFromElsets(self, name: str, elementSetSeq: tuple):
+    def SurfaceFromElsets(self, name: str, elementSetSeq: tuple) -> Surface:
         """This method creates a surface from a sequence of element sets in a model database.
 
         .. note:: 
