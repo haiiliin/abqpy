@@ -1,4 +1,5 @@
-import typing
+from __future__ import annotations
+from typing import Tuple, Dict, List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Edge import Edge
@@ -6,7 +7,7 @@ from ..UtilityAndView.abaqusConstants import *
 
 
 @abaqus_class_doc
-class EdgeArray(typing.List[Edge]):
+class EdgeArray(List[Edge]):
     """The EdgeArray is a sequence of Edge objects. If the part is modified, then EdgeArray
     must be updated for that part.
 
@@ -41,7 +42,7 @@ class EdgeArray(typing.List[Edge]):
     """
 
     @abaqus_method_doc
-    def __init__(self, edges: typing.List[Edge]):
+    def __init__(self, edges: List[Edge]) -> None:
         """This method creates an EdgeArray object.
 
         .. note:: 
@@ -63,7 +64,7 @@ class EdgeArray(typing.List[Edge]):
         ...
 
     @abaqus_method_doc
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[Edge, typing.List[Edge]]:
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> Union[Edge, List[Edge]]:
         """This method returns the object or objects in the EdgeArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any edge
@@ -102,7 +103,7 @@ class EdgeArray(typing.List[Edge]):
         return Edge() 
 
     @abaqus_method_doc
-    def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
+    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
         """This method returns an object or objects in the EdgeArray closest to the given set of
         points, where the given points need not lie on the edges in the EdgeArray.
 
@@ -173,13 +174,13 @@ class EdgeArray(typing.List[Edge]):
     @abaqus_method_doc
     def getByBoundingBox(
         self,
-        xMin: str = "",
-        yMin: str = "",
-        zMin: str = "",
-        xMax: str = "",
-        yMax: str = "",
-        zMax: str = "",
-    ):
+        xMin: float = ...,
+        yMin: float = ...,
+        zMin: float = ...,
+        xMax: float = ...,
+        yMax: float = ...,
+        zMax: float = ...,
+    ) -> EdgeArray:
         """This method returns an array of edge objects that lie within the specified bounding box.
 
         Parameters
@@ -206,7 +207,7 @@ class EdgeArray(typing.List[Edge]):
         ...
 
     @abaqus_method_doc
-    def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
+    def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str) -> EdgeArray:
         """This method returns an array of edge objects that lie within the specified bounding
         cylinder.
 
@@ -230,7 +231,7 @@ class EdgeArray(typing.List[Edge]):
         ...
 
     @abaqus_method_doc
-    def getByBoundingSphere(self, center: tuple, radius: str):
+    def getByBoundingSphere(self, center: tuple, radius: str) ->  Dict[str, Tuple[float, float, float]]:
         """This method returns an array of edge objects that lie within the specified bounding
         sphere.
 
@@ -250,13 +251,13 @@ class EdgeArray(typing.List[Edge]):
         ...
 
     @abaqus_method_doc
-    def getBoundingBox(self):
+    def getBoundingBox(self) -> Dict[str, Tuple[float, float, float]]:
         """This method returns a dictionary of two tuples representing minimum and maximum boundary
         values of the bounding box of the minimum size containing the edge sequence.
 
         Returns
         -------
-        typing.Dict[str, typing.Tuple[float, float, float]]
+        Dict[str, Tuple[float, float, float]]
             A Dictionary object with the following items:
             
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z** -boundary
