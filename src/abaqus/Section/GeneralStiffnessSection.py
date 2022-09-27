@@ -1,3 +1,5 @@
+from typing import Optional
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .RebarLayers import RebarLayers
 from .ShellSection import ShellSection
@@ -25,10 +27,10 @@ class GeneralStiffnessSection(ShellSection):
     """
 
     #: A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
-    rebarLayers: RebarLayers = None
+    rebarLayers: Optional[RebarLayers] = None
 
     #: A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object specifying the transverse shear stiffness properties.
-    transverseShear: TransverseShearShell = None
+    transverseShear: Optional[TransverseShearShell] = None
 
     #: A String specifying the repository key.
     name: str
@@ -39,7 +41,7 @@ class GeneralStiffnessSection(ShellSection):
 
     #: None or a Float specifying the reference temperature for thermal expansion. The default
     #: value is None.
-    referenceTemperature: float = None
+    referenceTemperature: Optional[float] = None
 
     #: A Boolean specifying whether or not the section stiffness varies with thermal stresses.
     #: The default value is OFF.
@@ -56,7 +58,7 @@ class GeneralStiffnessSection(ShellSection):
     #: is 0.5 in an Abaqus/Standard analysis and is obtained from the material definition in an
     #: Abaqus/Explicit analysis.VALUE, specifying that the Poisson's ratio used in the analysis
     #: is the value provided in **poisson**.The default value is DEFAULT.
-    poissonDefinition: SymbolicConstant = DEFAULT
+    poissonDefinition: Literal[VALUE, DEFAULT] = DEFAULT
 
     #: A Float specifying the Poisson's ratio. Possible values are −1.0 ≤ **poisson** ≤ 0.5.
     #: This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
@@ -85,17 +87,17 @@ class GeneralStiffnessSection(ShellSection):
         self,
         name: str,
         stiffnessMatrix: tuple,
-        referenceTemperature: float = None,
+        referenceTemperature: Optional[float] = None,
         applyThermalStress: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        poissonDefinition: SymbolicConstant = DEFAULT,
+        poissonDefinition: Literal[VALUE, DEFAULT] = DEFAULT,
         poisson: float = 0,
         useDensity: Boolean = OFF,
         density: float = 0,
         thermalStresses: tuple = (),
         scalingData: tuple = (),
-    ):
+    ) -> None:
         """This method creates a GeneralStiffnessSection object.
 
         .. note:: 
@@ -155,17 +157,17 @@ class GeneralStiffnessSection(ShellSection):
     @abaqus_method_doc
     def setValues(
         self,
-        referenceTemperature: float = None,
+        referenceTemperature: Optional[float] = None,
         applyThermalStress: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        poissonDefinition: SymbolicConstant = DEFAULT,
+        poissonDefinition: Literal[VALUE, DEFAULT] = DEFAULT,
         poisson: float = 0,
         useDensity: Boolean = OFF,
         density: float = 0,
         thermalStresses: tuple = (),
         scalingData: tuple = (),
-    ):
+    ) -> None:
         """This method modifies the GeneralStiffnessSection object.
 
         Parameters
