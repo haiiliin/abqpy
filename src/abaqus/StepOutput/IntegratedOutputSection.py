@@ -1,3 +1,5 @@
+from typing import Optional
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
@@ -23,7 +25,7 @@ class IntegratedOutputSection:
     #: None or a Region object specifying the anchor point about which the integrated moment
     #: over the output region is computed or the SymbolicConstant None representing the global
     #: origin. The default value is None.
-    refPoint: SymbolicConstant = None
+    refPoint: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying that the **refPoint** be adjusted so that it coincides with the
     #: center of the output region in the initial configuration. This argument is valid only
@@ -37,12 +39,12 @@ class IntegratedOutputSection:
     #: value of AVERAGE will set the displacement and rotation of the **refPoint** equal to the
     #: average translation of the output region. The default value is INDEPENDENT.This argument
     #: is valid only when you include the **refPoint** argument.
-    refPointMotion: SymbolicConstant = INDEPENDENT
+    refPointMotion: Literal[AVERAGE_TRANSLATION, AVERAGE, INDEPENDENT] = INDEPENDENT
 
     #: None or a DatumCsys object specifying the local coordinate system used to express vector
     #: output. If **localCsys** = None, the degrees of freedom are defined in the global coordinate
     #: system. The default value is None.
-    localCsys: str = None
+    localCsys: Optional[str] = None
 
     #: A Boolean specifying that the coordinate system be projected onto the **surface** such
     #: that the 1-axis is normal to the **surface**. Projection onto a planar **surface** is such
@@ -55,12 +57,14 @@ class IntegratedOutputSection:
         self,
         name: str,
         surface: Region,
-        refPoint: SymbolicConstant = None,
+        refPoint: Optional[SymbolicConstant] = None,
         refPointAtCenter: Boolean = OFF,
-        refPointMotion: SymbolicConstant = INDEPENDENT,
-        localCsys: str = None,
+        refPointMotion: Literal[
+            AVERAGE_TRANSLATION, AVERAGE, INDEPENDENT
+        ] = INDEPENDENT,
+        localCsys: Optional[str] = None,
         projectOrientation: Boolean = OFF,
-    ):
+    ) -> None:
         """This method creates an IntegratedOutputSection object.
 
         .. note:: 
@@ -111,12 +115,14 @@ class IntegratedOutputSection:
     def setValues(
         self,
         surface: Region,
-        refPoint: SymbolicConstant = None,
+        refPoint: Optional[SymbolicConstant] = None,
         refPointAtCenter: Boolean = OFF,
-        refPointMotion: SymbolicConstant = INDEPENDENT,
-        localCsys: str = None,
+        refPointMotion: Literal[
+            AVERAGE_TRANSLATION, AVERAGE, INDEPENDENT
+        ] = INDEPENDENT,
+        localCsys: Optional[str] = None,
         projectOrientation: Boolean = OFF,
-    ):
+    ) -> None:
         """This method modifies the IntegratedOutputSection object.
 
         Parameters
