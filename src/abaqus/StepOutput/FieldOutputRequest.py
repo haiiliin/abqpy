@@ -338,11 +338,7 @@ class FieldOutputRequest:
             Literal[EVERY_TIME_INCREMENT], float
         ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
-<<<<<<< HEAD
-        timePoints: str = None,
-=======
-        timePoint: Optional[str] = None,
->>>>>>> 74234014 (Improve type hints (#1716))
+        timePoints: Optional[str] = None,
         timeMarks: Boolean = OFF,
     ) -> None:
         """This method modifies the propagating data for an existing FieldOutputRequest object in
