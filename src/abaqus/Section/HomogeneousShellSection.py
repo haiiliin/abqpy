@@ -1,4 +1,5 @@
-from typing import Optional, Literal
+from typing import Optional
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .GeometryShellSection import GeometryShellSection
 from .RebarLayers import RebarLayers

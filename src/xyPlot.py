@@ -1,4 +1,5 @@
-from typing import Optional, Tuple, Union, Literal, List, Dict
+from typing import Optional, Tuple, Union, List, Dict
+from typing_extensions import Literal
 from abaqus.XY.AreaStyle import AreaStyle
 from abaqus.XY.LineStyle import LineStyle
 from abaqus.XY.QuantityType import QuantityType
