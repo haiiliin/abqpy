@@ -1,4 +1,5 @@
-from typing import List, Tuple, Optional
+from typing import Optional, Tuple, Union, List, Dict
+from typing_extensions import Literal
 from abaqus.XY.AreaStyle import AreaStyle
 from abaqus.XY.LineStyle import LineStyle
 from abaqus.XY.QuantityType import QuantityType
@@ -7,9 +8,10 @@ from abaqus.XY.TextStyle import TextStyle
 from abaqus.XY.XYData import XYData
 from abaqus.XY.XYSession import XYSession
 from abaqus.Odb.Odb import Odb
-from abaqus.UtilityAndView.abaqusConstants import Boolean, ON, OFF, REAL
+from abaqus.UtilityAndView.abaqusConstants import *
 from abaqus.UtilityAndView.SymbolicConstant import SymbolicConstant
 from abaqus.PathAndProbe.Path import Path
+
 
 def XYDataFromFile(
     self,
@@ -88,7 +90,8 @@ def XYDataFromFile(
     RangeError
     """
     return XYData(())
-    
+
+
 def XYDataFromFreeBody(
     self,
     odb: Odb,
@@ -144,7 +147,8 @@ def XYDataFromFreeBody(
     RangeError
     """
     return [XYData(())]
-    
+
+
 def XYDataFromHistory(
     self,
     odb: Odb,
@@ -156,7 +160,9 @@ def XYDataFromHistory(
     positionDescription: str = "",
     legendLabel: str = "",
     skipFrequency: Optional[int] = None,
-    numericForm: SymbolicConstant = REAL,
+    numericForm: Literal[
+        COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, COMPLEX_VAL_AT_ANGLE
+    ] = REAL,
     complexAngle: float = 0,
     stepTuple: Optional[int] = None,
 ) -> XYData:
@@ -220,15 +226,26 @@ def XYDataFromHistory(
     """
     return XYData(())
 
+
 def XYDataFromPath(
     self,
     path: Path,
     name: str,
     includeIntersections: Boolean,
-    shape: SymbolicConstant,
-    pathStyle: SymbolicConstant,
+    shape: Literal[UNDEFORMED, DEFORMED],
+    pathStyle: Literal[PATH_POINTS, UNIFORM_SPACING],
     numIntervals: int,
-    labelType: SymbolicConstant,
+    labelType: Literal[
+        NORM_DISTANCE,
+        SEQ_ID,
+        TRUE_DISTANCE,
+        TRUE_DISTANCE_X,
+        TRUE_DISTANCE_Y,
+        TRUE_DISTANCE_Z,
+        X_COORDINATE,
+        Y_COORDINATE,
+        Z_COORDINATE,
+    ],
     viewport: str = "",
     removeDuplicateXYPairs: Boolean = True,
     includeAllElements: Boolean = False,
@@ -236,7 +253,9 @@ def XYDataFromPath(
     frame: Optional[int] = None,
     variable: Optional[SymbolicConstant] = None,
     deformedMag: Optional[float] = None,
-    numericForm: SymbolicConstant = REAL,
+    numericForm: Literal[
+        COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, COMPLEX_VAL_AT_ANGLE
+    ] = REAL,
     complexAngle: float = 0,
     projectOntoMesh: Boolean = False,
     projectionTolerance: float = 0,
@@ -359,17 +378,39 @@ def XYDataFromPath(
         If **deformedMag** does not contain three Floats.
     """
     return XYData(())
-    
+
+
 def XYDataFromShellThickness(
     self,
     odb: Odb,
-    outputPosition: SymbolicConstant,
-    variable: SymbolicConstant,
-    elementSets: tuple = (),
-    elementLabels: tuple = (),
-    nodeSets: tuple = (),
-    nodeLabels: tuple = (),
-    numericForm: SymbolicConstant = REAL,
+    outputPosition: Literal[ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, NODAL],
+    variable: Tuple[
+        Tuple[
+            str,
+            Literal[
+                ELEMENT_CENTROID,
+                ELEMENT_FACE,
+                ELEMENT_NODAL,
+                GENERAL_PARTICLE,
+                INTEGRATION_POINT,
+                NODAL,
+                WHOLE_ELEMENT,
+                WHOLE_MODEL,
+                WHOLE_PART_INSTANCE,
+                WHOLE_REGION,
+            ],
+            Tuple[Literal[INVARIANT, COMPONENT], str],
+            Dict[str, str],
+        ],
+        ...,
+    ],
+    elementSets: Union[str, Tuple[str, ...]] = ...,
+    elementLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,
+    nodeSets: Union[str, Tuple[str, ...]] = ...,
+    nodeLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,
+    numericForm: Literal[
+        COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, COMPLEX_VAL_AT_ANGLE
+    ] = REAL,
     complexAngle: float = 0,
 ) -> List[XYData]:
     """This method creates a list of XYData objects by reading through the thickness field data
@@ -389,26 +430,35 @@ def XYDataFromShellThickness(
         A SymbolicConstant specifying the position from which output will be read. Possible
         values are ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, and NODAL.
     variable
-        A tuple of tuples containing the descriptions of variables for which to extract data
-        from the field. Each tuple specifies the following:Variable label: A String specifying
-        the variable; for example, 'U'.Variable output position: A SymbolicConstant specifying
-        the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL,
-        GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL,
-        WHOLE_PART_INSTANCE, and WHOLE_REGION.Refinement: A tuple specifying the refinement. If
-        the refinement tuple is omitted, data are written for all components and invariants (if
-        applicable). This element is required if the location dictionary (the following element
-        in the tuple) is included. The refinement tuple contains the following:Type: A
-        SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and
-        COMPONENT.Label: A String specifying the invariant or the component; for example,
-        'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The
-        dictionary contains pairs of the following:A String specifying the category selection
-        label.A String specifying the section point label. For example::
+        A tuple of tuples containing the descriptions of variables for which to extract data from the
+        field. Each tuple specifies the following:
+
+        * Variable label: A String specifying the variable; for example, 'U'.
+        * Variable output position: A SymbolicConstant specifying
+            the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL,
+            GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and
+            WHOLE_REGION.
+        * Refinement: A tuple specifying the refinement. If
+            the refinement tuple is omitted, data are written for all components and invariants (if
+            applicable). This element is required if the location dictionary (the following element in the
+            tuple) is included. The refinement tuple contains the following:
+
+            * Type: A SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and COMPONENT.
+            * Label: A String specifying the invariant or the component; for example, 'Mises' or 'S22'.
+
+        * Location: An optional Dictionary specifying the location. The
+            dictionary contains pairs of the following:
+            
+            * A String specifying the category selection label.
+            * A String specifying the section point label.
+
+        For example::
 
             variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
             variable = (('S', INTEGRATION_POINT, ((COMPONENT, 'S11'), ), ),
                         ('U', NODAL,((COMPONENT, 'U1'), )), )
             variable = (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises'), ),
-                        {'shell < STEEL > < 3 section points >': 'SNEG, (fraction = -1.0)', }), )
+                            {'shell < STEEL > < 3 section points >': 'SNEG, (fraction = -1.0)', }), )
     elementSets
         A sequence of Strings specifying element sets or a String specifying a single element
         set.
@@ -450,18 +500,75 @@ def XYDataFromShellThickness(
     """
     return [XYData(())]
 
+
 def xyDataListFromField(
     self,
     odb: Odb,
-    outputPosition: SymbolicConstant,
-    variable: Tuple[Tuple[str, SymbolicConstant, Tuple[SymbolicConstant, str]]],
-    elementSets: tuple = (),
-    elementLabels: tuple = (),
-    nodeSets: tuple = (),
-    nodeLabels: tuple = (),
-    numericForm: SymbolicConstant = REAL,
+    outputPosition: Literal[ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, NODAL],
+    variable: Tuple[
+        Tuple[
+            str,
+            Literal[
+                ELEMENT_CENTROID,
+                ELEMENT_FACE,
+                ELEMENT_NODAL,
+                GENERAL_PARTICLE,
+                INTEGRATION_POINT,
+                NODAL,
+                WHOLE_ELEMENT,
+                WHOLE_MODEL,
+                WHOLE_PART_INSTANCE,
+                WHOLE_REGION,
+            ],
+            Tuple[Literal[INVARIANT, COMPONENT], str],
+            Dict[str, str],
+        ],
+        ...,
+    ],
+    elementSets: Union[Tuple[str, ...], str] = ...,
+    elementLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,
+    nodeSets: Union[str, Tuple[str, ...]] = ...,
+    nodeLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,
+    numericForm: Literal[
+        COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, COMPLEX_VAL_AT_ANGLE
+    ] = REAL,
     complexAngle: float = 0,
-    operator: Optional[SymbolicConstant] = None,
+    operator: Literal[
+        ADD,
+        SUBTRACT,
+        MULTIPLY,
+        DIVIDE,
+        POWER,
+        MINIMUM,
+        MAXIMUM,
+        AVERAGE,
+        RANGE,
+        SRSS,
+        ABSOLUTE,
+        UNARY_NEGATIVE,
+        COSINE,
+        HYPERBOLIC_COSINE,
+        INVERSE_COSINE,
+        SINE,
+        HYPERBOLIC_SINE,
+        INVERSE_SINE,
+        TANGENT,
+        HYPERBOLIC_TANGENT,
+        INVERSE_TANGENT,
+        EXPONENTIAL,
+        NATURAL_LOG,
+        LOG,
+        SQUARE_ROOT,
+        NORMALIZE,
+        DEG2RAD,
+        RAD2DEG,
+        SMOOTH,
+        SWAP,
+        AVERAGE_ALL,
+        MAXIMUM_ENVELOPE,
+        MINIMUM_ENVELOPE,
+        RANGE_ALL,
+    ] = ...,
 ) -> List[XYData]:
     """This method creates a list of XYData objects by reading field data from an Odb object.
 
@@ -480,25 +587,34 @@ def xyDataListFromField(
         values are ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, and NODAL.
     variable
         A tuple of tuples containing the descriptions of variables for which to extract data
-        from the field. Each tuple specifies the following:Variable label: A String specifying
-        the variable; for example, 'U'.Variable output position: A SymbolicConstant specifying
-        the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL,
-        GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL,
-        WHOLE_PART_INSTANCE, and WHOLE_REGION.Refinement: A tuple specifying the refinement. If
-        the refinement tuple is omitted, data are written for all components and invariants (if
-        applicable). This element is required if the location dictionary (the following element
-        in the tuple) is included. The refinement tuple contains the following:Type: A
-        SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and
-        COMPONENT.Label: A String specifying the invariant or the component; for example,
-        'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The
-        dictionary contains pairs of the following:A String specifying the category selection
-        label.A String specifying the section point label. For example::
+        from the field. Each tuple specifies the following: 
+        
+        * Variable label: A String specifying the variable; for example, 'U'.
+        * Variable output position: A SymbolicConstant specifying the output position. Possible values are
+            ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT, NODAL,
+            WHOLE_ELEMENT,  WHOLE_MODEL, WHOLE_PART_INSTANCE, and WHOLE_REGION.
+        * Refinement: A tuple specifying the refinement. If the refinement tuple is omitted, data are
+            written  for all components and invariants (if applicable). This element is required if the
+            location dictionary (the following element in the tuple) is included. The refinement tuple
+            contains the following: 
+            
+            * Type: A SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and
+            COMPONENT.
+            * Label: A String specifying the invariant or the component; for example, 'Mises' or 'S22'.
+            
+        * Location: An optional Dictionary specifying the location. The dictionary contains pairs of the
+            following:
+            
+            * A String specifying the category selection label.
+            * A String specifying the section point label.
+            
+        For example::
 
             variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
             variable = (('S', INTEGRATION_POINT, ((COMPONENT, 'S11'), ), ),
                         ('U', NODAL,((COMPONENT, 'U1'), )), )
             variable = (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises'), ),
-                        {'shell < STEEL > < 3 section points >': 'SNEG, (fraction = -1.0)', }), )
+                            {'shell < STEEL > < 3 section points >': 'SNEG, (fraction = -1.0)', }), )
 
     elementSets
         A sequence of Strings specifying element sets or a String specifying a single element
@@ -508,9 +624,12 @@ def xyDataListFromField(
         part instance element expression is a sequence of a String specifying the part instance
         name and a sequence of element expressions; for example,
         `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The element
-        expressions can be any of the following:An Int specifying a single element label; for
-        example, `1`.A String specifying a single element label; for example, `'7'`.A String
-        specifying a sequence of element labels; for example, `'3:5'` and `'3:15:3'`.
+        expressions can be any of the following:
+
+        * An Int specifying a single element label; for example, `1`.
+        * A String specifying a single element label; for example, `'7'`.
+        * A String specifying a sequence of element labels; for example, `'3:5'` and `'3:15:3'`.
+
     nodeSets
         A sequence of Strings specifying node sets or a String specifying a single node set.
     nodeLabels
@@ -518,9 +637,12 @@ def xyDataListFromField(
         part instance node expression is a sequence of a String specifying the part instance
         name and a sequence of node expressions; for example,
         `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The node expressions
-        can be any of the following:An Int specifying a single node label; for example, `1`.A
-        String specifying a single node label; for example, `'7'`.A String specifying a sequence
-        of node labels; for example, `'3:5'` and `'3:15:3'`.
+        can be any of the following:
+
+        * An Int specifying a single node label; for example, `1`.A
+        * String specifying a single node label; for example, `'7'`.
+        * A String specifying a sequence of node labels; for example, `'3:5'` and `'3:15:3'`.
+
     numericForm
         A SymbolicConstant specifying the numeric form in which to display results that contain
         complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,

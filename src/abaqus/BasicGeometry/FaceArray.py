@@ -1,12 +1,14 @@
-import typing
+from __future__ import annotations
+from typing import Union, Tuple, Dict, List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Face import Face
+from .EdgeArray import EdgeArray
 from ..UtilityAndView.abaqusConstants import *
 
 
 @abaqus_class_doc
-class FaceArray(typing.List[Face]):
+class FaceArray(List[Face]):
     """The FaceArray is a sequence of Face objects. If the part is modified, then FaceArray
     must be updated for that part.
 
@@ -39,7 +41,7 @@ class FaceArray(typing.List[Face]):
     """
 
     @abaqus_method_doc
-    def __init__(self, faces: typing.List[Face]):
+    def __init__(self, faces: List[Face]) -> None:
         """This method creates a FaceArray object.
 
         .. note:: 
@@ -62,8 +64,13 @@ class FaceArray(typing.List[Face]):
 
     @abaqus_method_doc
     def findAt(
-        self, coordinates: tuple, normal: tuple = (), printWarning: Boolean = True
-    ):
+        self,
+        coordinates: Union[
+            Tuple[float, float, float], Tuple[Tuple[float, float, float],]
+        ],
+        normal: tuple = (),
+        printWarning: Boolean = True,
+    ) -> Union[Face, Tuple[Face, ...]]:
         """This method returns the object or objects in the FaceArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any face
@@ -81,13 +88,19 @@ class FaceArray(typing.List[Face]):
         ----------
         coordinates
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to
-            find.findAt returns either a Face object or a sequence of Face objects based on the type
-            of input.If **coordinates** is a sequence of Floats, findAt returns the Face object at
-            that point.If you omit the **coordinates** keyword argument, findAt accepts as arguments a
-            sequence of pairs of sequences describing each face's coordinate and normal, and findAt
-            returns a sequence of Face objects at the given locations. If you omit the **coordinates**
-            keyword argument, you must also omit the **normal** argument.
-            `faces = f.findAt(((-16.438578, -41.835673, -24.19804), ), ((25.210364, -35.689868, 1.860314), ), ((26.727683, -38.207055, 4.164759), ))`
+            find. `findAt` returns either a Face object or a sequence of Face objects based on the type
+            of input.
+            
+            * If **coordinates** is a sequence of Floats, findAt returns the Face object at that point.
+            
+            * If you omit the **coordinates** keyword argument, findAt accepts as arguments a
+              sequence of pairs of sequences describing each face's coordinate and normal, and findAt
+              returns a sequence of Face objects at the given locations. If you omit the **coordinates**
+              keyword argument, you must also omit the **normal** argument::
+            
+                faces = f.findAt(((-16.438578, -41.835673, -24.19804), ), 
+                                 ((25.210364, -35.689868, 1.860314), ), 
+                                 ((26.727683, -38.207055, 4.164759), ))
         normal
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components of a vector
             indicating the face normal.
@@ -104,7 +117,24 @@ class FaceArray(typing.List[Face]):
         ...
 
     @abaqus_method_doc
+<<<<<<< HEAD
     def getSequenceFromMask(self, mask: str):
+=======
+    def getExteriorEdges(self) -> EdgeArray:
+        """This method returns the edges on the exterior of the faces in the FaceArray. That is, it
+        returns the edges that are referenced by exactly one of the faces in the sequence.
+
+        Returns
+        -------
+        EdgeArray
+            An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying the exterior edges.
+
+        """
+        ...
+
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: str) -> Face:
+>>>>>>> 74234014 (Improve type hints (#1716))
         """This method returns the object or objects in the FaceArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
         COMPRESSEDINDEX. When a large number of objects are involved, this method is highly
@@ -124,7 +154,7 @@ class FaceArray(typing.List[Face]):
         ...
 
     @abaqus_method_doc
-    def getMask(self):
+    def getMask(self) -> str:
         """This method returns a string specifying the object or objects.
 
         Returns
@@ -138,13 +168,13 @@ class FaceArray(typing.List[Face]):
     @abaqus_method_doc
     def getByBoundingBox(
         self,
-        xMin: str = "",
-        yMin: str = "",
-        zMin: str = "",
-        xMax: str = "",
-        yMax: str = "",
-        zMax: str = "",
-    ):
+        xMin: float = ...,
+        yMin: float = ...,
+        zMin: float = ...,
+        xMax: float = ...,
+        yMax: float = ...,
+        zMax: float = ...,
+    ) -> FaceArray:
         """This method returns an array of face objects that lie within the specified bounding box.
 
         Parameters
@@ -171,7 +201,9 @@ class FaceArray(typing.List[Face]):
         ...
 
     @abaqus_method_doc
-    def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str):
+    def getByBoundingCylinder(
+        self, center1: tuple, center2: tuple, radius: str
+    ) -> FaceArray:
         """This method returns an array of face objects that lie within the specified bounding
         cylinder.
 
@@ -195,7 +227,7 @@ class FaceArray(typing.List[Face]):
         ...
 
     @abaqus_method_doc
-    def getByBoundingSphere(self, center: tuple, radius: str):
+    def getByBoundingSphere(self, center: tuple, radius: str) -> FaceArray:
         """This method returns an array of face objects that lie within the specified bounding
         sphere.
 
@@ -215,13 +247,13 @@ class FaceArray(typing.List[Face]):
         ...
 
     @abaqus_method_doc
-    def getBoundingBox(self):
+    def getBoundingBox(self) -> Dict[str, Tuple[float, ...]]:
         """This method returns a dictionary of two tuples representing minimum and maximum boundary
         values of the bounding box of the minimum size containing the face sequence.
 
         Returns
         -------
-        typing.Dict[str, typing.Tuple[float, ...]]
+        Dict[str, Tuple[float, ...]]
             A Dictionary object with the following items:
             
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z**  -boundary
@@ -232,7 +264,7 @@ class FaceArray(typing.List[Face]):
         ...
 
     @abaqus_method_doc
-    def getClosest(self, coordinates: tuple, searchTolerance: str = ""):
+    def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
         """This method returns an object or objects in the FaceArray closest to the given set of
         points, where the given points need not lie on the faces in the FaceArray.
 
