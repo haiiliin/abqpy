@@ -375,47 +375,7 @@ class XYData(tuple):
             COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, COMPLEX_VAL_AT_ANGLE
         ] = REAL,
         complexAngle: float = 0,
-<<<<<<< HEAD
-    ) -> typing.List[XYData]:
-=======
-        operator: Literal[
-            ADD,
-            SUBTRACT,
-            MULTIPLY,
-            DIVIDE,
-            POWER,
-            MINIMUM,
-            MAXIMUM,
-            AVERAGE,
-            RANGE,
-            SRSS,
-            ABSOLUTE,
-            UNARY_NEGATIVE,
-            COSINE,
-            HYPERBOLIC_COSINE,
-            INVERSE_COSINE,
-            SINE,
-            HYPERBOLIC_SINE,
-            INVERSE_SINE,
-            TANGENT,
-            HYPERBOLIC_TANGENT,
-            INVERSE_TANGENT,
-            EXPONENTIAL,
-            NATURAL_LOG,
-            LOG,
-            SQUARE_ROOT,
-            NORMALIZE,
-            DEG2RAD,
-            RAD2DEG,
-            SMOOTH,
-            SWAP,
-            AVERAGE_ALL,
-            MAXIMUM_ENVELOPE,
-            MINIMUM_ENVELOPE,
-            RANGE_ALL,
-        ] = ...,
     ) -> List[XYData]:
->>>>>>> 74234014 (Improve type hints (#1716))
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
         .. note:: 
