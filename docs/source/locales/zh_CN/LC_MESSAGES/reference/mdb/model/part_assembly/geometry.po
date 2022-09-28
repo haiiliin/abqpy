@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 09:27+0000\n"
+"POT-Creation-Date: 2022-09-28 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -944,10 +944,10 @@ msgid ""
 "#simaker-cellarrayfindatpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:30
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:32
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:29
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:18
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:28
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:34
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:18
 #: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:30
 #: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:18
@@ -961,27 +961,36 @@ msgstr ""
 #: abaqus.BasicGeometry.CellArray.CellArray.findAt:20 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
-" of the object to find.findAt returns either a Cell object or a sequence "
-"of Cell objects based on the type of input. If **coordinates** is a "
-"sequence of Floats, findAt returns the Cell object at that point. If "
-"**coordinates** is a sequence of sequence of Floats, findAt returns a "
-"sequence of Cell objects at the given locations. The sequence of sequence"
-" of Floats must be a sequence of sequence of point and normal data, not a"
-" sequence of point data. For example::"
+" of the object to find. `findAt` returns either a Cell object or a "
+"sequence of Cell objects based on the type of input."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:34
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:24 of
+msgid ""
+"If **coordinates** is a sequence of Floats, findAt returns the Cell "
+"object at that point."
+msgstr ""
+
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:26 of
+msgid ""
+"If **coordinates** is a sequence of sequence of Floats, findAt returns a "
+"sequence of Cell objects at the given locations. The sequence of sequence"
+" of Floats must be a sequence of  sequence of point and normal data, not "
+"a sequence of point data. For example::"
+msgstr ""
+
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:36
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:33
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:36
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:42
 #: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:34
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:31
 #: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:30 of
 msgid "**printWarning**"
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:33
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:35
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:32
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:35
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:41
 #: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:33
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:30
 #: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:29 of
@@ -990,12 +999,12 @@ msgid ""
 "entity is found at the specified location. The default value is True."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:51
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:53
 #: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:21 of
 msgid ":obj:`Cell`"
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:39 of
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:41 of
 msgid "A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object."
 msgstr ""
 
@@ -1003,9 +1012,8 @@ msgstr ""
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox:27
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox:27 of
 msgid ""
-":obj:`typing.Dict`\\[:class:`python:str`, "
-":obj:`typing.Tuple`\\[:class:`python:float`, :class:`python:float`, "
-":class:`python:float`]]"
+":obj:`Dict`\\[:class:`python:str`, :obj:`Tuple`\\[:class:`python:float`, "
+":class:`python:float`, :class:`python:float`]]"
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox:10
@@ -2914,41 +2922,48 @@ msgstr ""
 #: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:21 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
-" of the object to find.findAt returns either a Face object or a sequence "
-"of Face objects based on the type of input.If **coordinates** is a "
-"sequence of Floats, findAt returns the Face object at that point.If you "
-"omit the **coordinates** keyword argument, findAt accepts as arguments a "
-"sequence of pairs of sequences describing each face's coordinate and "
-"normal, and findAt returns a sequence of Face objects at the given "
-"locations. If you omit the **coordinates** keyword argument, you must "
-"also omit the **normal** argument. `faces = f.findAt(((-16.438578, "
-"-41.835673, -24.19804), ), ((25.210364, -35.689868, 1.860314), ), "
-"((26.727683, -38.207055, 4.164759), ))`"
+" of the object to find. `findAt` returns either a Face object or a "
+"sequence of Face objects based on the type of input."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:32 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:25 of
+msgid ""
+"If **coordinates** is a sequence of Floats, findAt returns the Face "
+"object at that point."
+msgstr ""
+
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:27 of
+msgid ""
+"If you omit the **coordinates** keyword argument, findAt accepts as "
+"arguments a sequence of pairs of sequences describing each face's "
+"coordinate and normal, and findAt returns a sequence of Face objects at "
+"the given locations. If you omit the **coordinates** keyword argument, "
+"you must also omit the **normal** argument::"
+msgstr ""
+
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:38 of
 msgid "**normal**"
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:31 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:37 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components "
 "of a vector indicating the face normal."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:53
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:59
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask:30 of
 msgid ":obj:`Face`"
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:41 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:47 of
 msgid "A :py:class:`~abaqus.BasicGeometry.Face.Face` object."
 msgstr ""
 
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:27 of
 msgid ""
-":obj:`typing.Dict`\\[:class:`python:str`, "
-":obj:`typing.Tuple`\\[:class:`python:float`, ...]]"
+":obj:`Dict`\\[:class:`python:str`, :obj:`Tuple`\\[:class:`python:float`, "
+"...]]"
 msgstr ""
 
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:12 of
@@ -5556,5 +5571,58 @@ msgstr ""
 #~ " accepts as arguments a sequence of"
 #~ " sequence of floats in the following"
 #~ " format:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the object to find.findAt returns either"
+#~ " a Cell object or a sequence of"
+#~ " Cell objects based on the type "
+#~ "of input. If **coordinates** is a "
+#~ "sequence of Floats, findAt returns the"
+#~ " Cell object at that point. If "
+#~ "**coordinates** is a sequence of "
+#~ "sequence of Floats, findAt returns a "
+#~ "sequence of Cell objects at the "
+#~ "given locations. The sequence of "
+#~ "sequence of Floats must be a "
+#~ "sequence of sequence of point and "
+#~ "normal data, not a sequence of "
+#~ "point data. For example::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`typing.Dict`\\[:class:`python:str`, "
+#~ ":obj:`typing.Tuple`\\[:class:`python:float`, "
+#~ ":class:`python:float`, :class:`python:float`]]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the object to find.findAt returns either"
+#~ " a Face object or a sequence of"
+#~ " Face objects based on the type "
+#~ "of input.If **coordinates** is a "
+#~ "sequence of Floats, findAt returns the"
+#~ " Face object at that point.If you "
+#~ "omit the **coordinates** keyword argument, "
+#~ "findAt accepts as arguments a sequence"
+#~ " of pairs of sequences describing "
+#~ "each face's coordinate and normal, and"
+#~ " findAt returns a sequence of Face"
+#~ " objects at the given locations. If"
+#~ " you omit the **coordinates** keyword "
+#~ "argument, you must also omit the "
+#~ "**normal** argument. `faces = "
+#~ "f.findAt(((-16.438578, -41.835673, -24.19804), ),"
+#~ " ((25.210364, -35.689868, 1.860314), ), "
+#~ "((26.727683, -38.207055, 4.164759), ))`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`typing.Dict`\\[:class:`python:str`, "
+#~ ":obj:`typing.Tuple`\\[:class:`python:float`, ...]]"
 #~ msgstr ""
 

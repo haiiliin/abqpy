@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 09:27+0000\n"
+"POT-Creation-Date: 2022-09-28 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2032,7 +2032,7 @@ msgstr ""
 
 #: abaqus.Canvas.ImageOptions.ImageOptions.setValues:101
 #: abaqus.Canvas.MovieOptions.MovieOptions.setValues:103
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:55 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:57 of
 msgid ":obj:`RangeError`"
 msgstr ""
 
@@ -2561,7 +2561,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.currentLayer:2
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:31 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:33 of
 msgid ""
 "A String specifying which layer is affected by options settings when "
 "**displayMode** =OVERLAY. The current layer is also the only layer "
@@ -2591,8 +2591,7 @@ msgid ""
 "use this method sparingly."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.displayMode:2
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:18 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.displayMode:2 of
 msgid ""
 "A SymbolicConstant specifying the display mode of the viewport. Possible "
 "values are:SINGLE, specifying a single **displayedObject**.OVERLAY, "
@@ -2753,7 +2752,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.layerOffset:2
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:36 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:38 of
 msgid ""
 "A Float specifying a factor to be used in offsetting layers in the screen"
 " Z direction. Possible values are -1 to 1. A negative value reverses the "
@@ -2823,25 +2822,41 @@ msgstr ""
 msgid "**displayedObject**"
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:20 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:22 of
 msgid "**displayMode**"
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:24 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:18 of
+msgid ""
+"A SymbolicConstant specifying the display mode of the viewport. Possible "
+"values are:"
+msgstr ""
+
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:21 of
+msgid "SINGLE, specifying a single **displayedObject**."
+msgstr ""
+
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:22 of
+msgid ""
+"OVERLAY, specifying one or more layers to be displayed "
+"simultaneously—each layer contains one **displayedObject**."
+msgstr ""
+
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:26 of
 msgid "**visibleLayers**"
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:23 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:25 of
 msgid ""
 "A sequence of Strings specifying the names of layers that will be "
 "displayed in the viewport when **displayMode** = OVERLAY."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:28 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:30 of
 msgid "**viewManipLayers**"
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.setValues:27
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.setValues:29
 #: abaqus.Canvas.ViewportBase.ViewportBase.viewManipLayers:2 of
 msgid ""
 "A SymbolicConstant specifying which layer or layers will be controlled by"
@@ -2849,11 +2864,11 @@ msgid ""
 "values are ALL and CURRENT."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:33 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:35 of
 msgid "**currentLayer**"
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:42 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:44 of
 msgid "**layerOffset**"
 msgstr ""
 

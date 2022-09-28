@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 09:27+0000\n"
+"POT-Creation-Date: 2022-09-28 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -527,14 +527,11 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyoutputrequestpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.region:2
-#: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValues:11
 #: abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest:21 of
 msgid ""
 "The SymbolicConstant MODEL or a Region object specifying the region from "
 "which output is requested. The SymbolicConstant MODEL represents the "
-"whole model. The default value is MODEL.If the region is a surface "
+"whole model. The default value is MODEL. If the region is a surface "
 "region, the surface must lie within the general contact surface domain."
 msgstr ""
 
@@ -2162,6 +2159,16 @@ msgstr ""
 msgid ""
 "A String specifying the name of the step to which the history output "
 "request state is moved."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.region:2
+#: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValues:11 of
+msgid ""
+"The SymbolicConstant MODEL or a Region object specifying the region from "
+"which output is requested. The SymbolicConstant MODEL represents the "
+"whole model. The default value is MODEL.If the region is a surface "
+"region, the surface must lie within the general contact surface domain."
 msgstr ""
 
 #: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.reset:6 of
