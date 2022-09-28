@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018.3.4 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-24 00:17+0000\n"
+"POT-Creation-Date: 2022-09-28 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -457,10 +457,8 @@ msgstr ""
 msgid "Check `HistoryOutputRequest on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-historyoutputrequestpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/StepOutput/HistoryOutputRequest.py:docstring of abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValues:11
 #: ../../../../src/abaqus/StepOutput/OutputModel.py:docstring of abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest:21
-#: ../../docstring of abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.region:2
-msgid "The SymbolicConstant MODEL or a Region object specifying the region from which output is requested. The SymbolicConstant MODEL represents the whole model. The default value is MODEL.If the region is a surface region, the surface must lie within the general contact surface domain."
+msgid "The SymbolicConstant MODEL or a Region object specifying the region from which output is requested. The SymbolicConstant MODEL represents the whole model. The default value is MODEL. If the region is a surface region, the surface must lie within the general contact surface domain."
 msgstr ""
 
 #: ../../../../src/abaqus/StepOutput/HistoryOutputRequest.py:docstring of abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValues:39
@@ -1649,6 +1647,11 @@ msgstr ""
 
 #: ../../../../src/abaqus/StepOutput/HistoryOutputRequest.py:docstring of abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.move:15
 msgid "A String specifying the name of the step to which the history output request state is moved."
+msgstr ""
+
+#: ../../../../src/abaqus/StepOutput/HistoryOutputRequest.py:docstring of abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.setValues:11
+#: ../../docstring of abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.region:2
+msgid "The SymbolicConstant MODEL or a Region object specifying the region from which output is requested. The SymbolicConstant MODEL represents the whole model. The default value is MODEL.If the region is a surface region, the surface must lie within the general contact surface domain."
 msgstr ""
 
 #: ../../../../src/abaqus/StepOutput/HistoryOutputRequest.py:docstring of abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest.reset:6
