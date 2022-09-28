@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2019.3.4 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-24 00:17+0000\n"
+"POT-Creation-Date: 2022-09-28 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -841,10 +841,10 @@ msgstr ""
 msgid "Check `CellArray.findAt on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cellarraypyc.htm?contextscope=all#simaker-cellarrayfindatpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:30
+#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:32
 #: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:29
 #: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:18
-#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:28
+#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:34
 #: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:18
 #: ../../../../src/abaqus/BasicGeometry/IgnoredEdgeArray.py:docstring of abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:30
 #: ../../../../src/abaqus/BasicGeometry/IgnoredEdgeArray.py:docstring of abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:18
@@ -856,40 +856,48 @@ msgid "**coordinates**"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:20
-msgid "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to find.findAt returns either a Cell object or a sequence of Cell objects based on the type of input. If **coordinates** is a sequence of Floats, findAt returns the Cell object at that point. If **coordinates** is a sequence of sequence of Floats, findAt returns a sequence of Cell objects at the given locations. The sequence of sequence of Floats must be a sequence of sequence of point and normal data, not a sequence of point data. For example::"
+msgid "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to find. `findAt` returns either a Cell object or a sequence of Cell objects based on the type of input."
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:34
+#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:24
+msgid "If **coordinates** is a sequence of Floats, findAt returns the Cell object at that point."
+msgstr ""
+
+#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:26
+msgid "If **coordinates** is a sequence of sequence of Floats, findAt returns a sequence of Cell objects at the given locations. The sequence of sequence of Floats must be a sequence of  sequence of point and normal data, not a sequence of point data. For example::"
+msgstr ""
+
+#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:36
 #: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:33
-#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:36
+#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:42
 #: ../../../../src/abaqus/BasicGeometry/IgnoredEdgeArray.py:docstring of abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:34
 #: ../../../../src/abaqus/BasicGeometry/IgnoredVertexArray.py:docstring of abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:31
 #: ../../../../src/abaqus/BasicGeometry/VertexArray.py:docstring of abaqus.BasicGeometry.VertexArray.VertexArray.findAt:30
 msgid "**printWarning**"
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:33
+#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:35
 #: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:32
-#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:35
+#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:41
 #: ../../../../src/abaqus/BasicGeometry/IgnoredEdgeArray.py:docstring of abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:33
 #: ../../../../src/abaqus/BasicGeometry/IgnoredVertexArray.py:docstring of abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:30
 #: ../../../../src/abaqus/BasicGeometry/VertexArray.py:docstring of abaqus.BasicGeometry.VertexArray.VertexArray.findAt:29
 msgid "A Boolean specifying whether a message is to be printed to the CLI if no entity is found at the specified location. The default value is True."
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:51
+#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:53
 #: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:21
 msgid ":obj:`Cell`"
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:39
+#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:41
 msgid "A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object."
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox:27
 #: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox:27
 #: ../../../../src/abaqus/BasicGeometry/VertexArray.py:docstring of abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox:27
-msgid ":obj:`typing.Dict`\\[:class:`python:str`, :obj:`typing.Tuple`\\[:class:`python:float`, :class:`python:float`, :class:`python:float`]]"
+msgid ":obj:`Dict`\\[:class:`python:str`, :obj:`Tuple`\\[:class:`python:float`, :class:`python:float`, :class:`python:float`]]"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox:10
@@ -2305,28 +2313,36 @@ msgid "Check `FaceArray.findAt on help.3ds.com/2019 <https://help.3ds.com/2019/E
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:21
-msgid "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to find.findAt returns either a Face object or a sequence of Face objects based on the type of input.If **coordinates** is a sequence of Floats, findAt returns the Face object at that point.If you omit the **coordinates** keyword argument, findAt accepts as arguments a sequence of pairs of sequences describing each face's coordinate and normal, and findAt returns a sequence of Face objects at the given locations. If you omit the **coordinates** keyword argument, you must also omit the **normal** argument. `faces = f.findAt(((-16.438578, -41.835673, -24.19804), ), ((25.210364, -35.689868, 1.860314), ), ((26.727683, -38.207055, 4.164759), ))`"
+msgid "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to find. `findAt` returns either a Face object or a sequence of Face objects based on the type of input."
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:32
+#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:25
+msgid "If **coordinates** is a sequence of Floats, findAt returns the Face object at that point."
+msgstr ""
+
+#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:27
+msgid "If you omit the **coordinates** keyword argument, findAt accepts as arguments a sequence of pairs of sequences describing each face's coordinate and normal, and findAt returns a sequence of Face objects at the given locations. If you omit the **coordinates** keyword argument, you must also omit the **normal** argument::"
+msgstr ""
+
+#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:38
 msgid "**normal**"
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:31
+#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:37
 msgid "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components of a vector indicating the face normal."
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:53
+#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:59
 #: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask:30
 msgid ":obj:`Face`"
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:41
+#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:47
 msgid "A :py:class:`~abaqus.BasicGeometry.Face.Face` object."
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:27
-msgid ":obj:`typing.Dict`\\[:class:`python:str`, :obj:`typing.Tuple`\\[:class:`python:float`, ...]]"
+msgid ":obj:`Dict`\\[:class:`python:str`, :obj:`Tuple`\\[:class:`python:float`, ...]]"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:12
