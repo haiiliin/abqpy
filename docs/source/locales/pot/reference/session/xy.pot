@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022.3.4 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-24 00:17+0000\n"
+"POT-Creation-Date: 2022-09-28 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -732,7 +732,7 @@ msgid "This method creates a list of XYData objects by reading through the thick
 msgstr ""
 
 #: ../../None:14:<autosummary>:1
-msgid ":py:obj:`XYDataFromPath <abaqus.XY.XYSession.XYSession.XYDataFromPath>`\\ \\(path\\, name\\, ...\\[\\, viewport\\, ...\\]\\)"
+msgid ":py:obj:`XYDataFromPath <abaqus.XY.XYSession.XYSession.XYDataFromPath>`\\ \\(path\\, name\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:2
@@ -2052,13 +2052,13 @@ msgstr ""
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromFile:75
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromFreeBody:56
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromHistory:75
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:88
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:99
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:99
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:112
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromFile:75
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:56
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:75
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:90
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:99
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:103
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:112
 msgid ":obj:`InvalidNameError`"
 msgstr ""
 
@@ -2068,14 +2068,14 @@ msgstr ""
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromFile:86
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromFreeBody:67
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromHistory:86
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:99
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:110
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:110
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:123
 #: ../../../../src/abaqus/XY/XYReportOptions.py:docstring of abaqus.XY.XYReportOptions.XYReportOptions.setValues:62
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromFile:86
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:67
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:86
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:101
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:110
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:114
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:123
 msgid ":obj:`RangeError`"
 msgstr ""
 
@@ -2177,21 +2177,20 @@ msgid "A boolean indicating whether to compute the third component. It applies o
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromFreeBody:51
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:83
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:94
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:94
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:107
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:51
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:85
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:94
-#: ../../../../src/abaqus/XY/XYSessionBase.py:docstring of abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:108
-msgid ":obj:`typing.List`\\[:obj:`XYData`]"
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:98
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:107
+msgid ":obj:`List`\\[:obj:`XYData`]"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromFreeBody:48
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:80
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:91
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:91
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:104
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:48
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:82
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:91
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:95
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:104
 msgid "A list of XYData objects."
 msgstr ""
 
@@ -2247,45 +2246,45 @@ msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromHistory:55
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:99
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:71
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:72
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:82
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:85
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:55
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:98
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:73
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:72
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:107
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:86
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:85
 msgid "**numericForm**"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromHistory:53
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:97
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:69
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:70
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:80
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:83
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:53
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:96
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:71
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:70
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:105
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:84
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:83
 msgid "A SymbolicConstant specifying the numeric form in which to display results that contain complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, and COMPLEX_VAL_AT_ANGLE. The default value is REAL."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromHistory:59
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:103
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:75
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:76
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:86
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:89
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:59
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:102
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:77
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:76
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:111
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:90
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:89
 msgid "**complexAngle**"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromHistory:58
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:102
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:74
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:75
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:85
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:88
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromHistory:58
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:101
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:76
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:75
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:110
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:89
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:88
 msgid "A Float specifying the angle (in degrees) at which to display results that contain complex numbers when **numericForm** = COMPLEX_VAL_AT_ANGLE. The default value is 0."
 msgstr ""
 
@@ -2431,146 +2430,213 @@ msgid "An Int identifying the frame from which to obtain values. The default val
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:90
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:41
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:52
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:51
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:98
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:52
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:51
+msgid "**variable**"
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:69
+msgid "A tuple of tuples containing the descriptions of variables for which to extract data along the path. The default value is the current variable. Each tuple specifies the following:"
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:27
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:26
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:73
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:27
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:26
+msgid "Variable label: A String specifying the variable; for example, 'U'."
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:28
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:74
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:28
+msgid "Variable output position: A SymbolicConstant specifying the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and WHOLE_REGION."
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:32
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:77
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:32
+msgid "Refinement: A tuple specifying the refinement. If the refinement tuple is omitted, data are written for all components and invariants (if applicable). This element is required if the location dictionary (the following element in the tuple) is included. The refinement tuple contains the following:"
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:37
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:35
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:82
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:37
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:35
+msgid "Type: A SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and COMPONENT."
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:38
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:37
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:84
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:38
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:37
+msgid "Label: A String specifying the invariant or the component; for example, 'Mises' or 'S22'."
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:40
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:39
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:86
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:40
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:39
+msgid "Location: An optional Dictionary specifying the location. The dictionary contains pairs of the following:"
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:43
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:42
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:89
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:43
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:42
-msgid "**variable**"
+msgid "A String specifying the category selection label."
 msgstr ""
 
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:69
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:69
-msgid "A tuple of tuples containing the descriptions of variables for which to extract data along the path. The default value is the current variable. Each tuple specifies the following:Variable label: A String specifying the variable; for example, 'U'.Variable output position: A SymbolicConstant specifying the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and WHOLE_REGION.Refinement: A tuple specifying the refinement. If the refinement tuple is omitted, data are written for all components and invariants (if applicable). This element is required if the location dictionary (the following element in the tuple) is included. The refinement tuple contains the following:Type: A SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and COMPONENT.Label: A String specifying the invariant or the component; for example, 'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The dictionary contains pairs of the following:A String specifying the category selection label.A String specifying the section point label.For example::"
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:44
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:43
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:90
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:44
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:43
+msgid "A String specifying the section point label."
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:46
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:45
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:92
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:46
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:45
+msgid "For example::"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:94
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:93
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:102
 msgid "**deformedMag**"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:93
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:92
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:101
 msgid "A tuple of three Floats specifying the deformation magnitude in the *X-*, *Y-*, and *Z-* planes. The default value is (1, 1, 1)."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:107
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:106
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:115
 msgid "**projectOntoMesh**"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:106
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:105
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:114
 msgid "A Boolean to specify whether to consider the data points that do not lie on or inside the mesh. The default value is False."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:111
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:110
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:119
 msgid "**projectionTolerance**"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:110
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:109
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:118
 msgid "A Float specifying the tolerance value for the projected distance considered for the data extraction when **projectOntoMesh** =  True. The default value is 0."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:116
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:115
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:124
 msgid ":obj:`If` **variable** :obj:`specified` :obj:`has` :obj:`one` fieldoutput: :obj:`Returns` :obj:`an` :obj:`XYData` object."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:122
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:121
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:130
 msgid ":obj:`If` **variable** :obj:`specified` :obj:`has` :obj:`more` :obj:`than` :obj:`one` fieldoutputs: :obj:`Returns` :class:`python:list` :obj:`of` :obj:`XYData` objects."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:127
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:126
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:135
 msgid "ErrorPathNotFound: :obj:`Path` :obj:`not` :obj:`found`"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:127
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:126
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:135
 msgid "If **path** is invalid."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:130
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:129
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:138
 msgid "ErrorCurrentVPNotFound: :obj:`Current` :obj:`viewport` :obj:`not` :obj:`found`"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:130
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:129
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:138
 msgid "If **viewport** is invalid."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:133
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:132
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:141
 msgid "ErrorInvalidUserStepAndFrame: :obj:`The` :obj:`user` :obj:`step` :obj:`and` :obj:`frame` :obj:`specified` :obj:`have` :obj:`not` :obj:`been` :obj:`defined`"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:133
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:132
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:141
 msgid "If **step** and/or **frame** are invalid."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:136
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:135
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:144
 msgid "ErrorNoVarInPathExtract: :obj:`No` :obj:`variable` :obj:`selection` :obj:`for` :obj:`XY` :obj:`data` :obj:`extraction` :obj:`from` :obj:`path`"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:136
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:135
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:144
 msgid "If the **variable** argument is empty."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:139
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:138
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:147
 msgid "ErrorUnavailableSelectedVariable: :obj:`The` :obj:`selected` :obj:`variable` :obj:`is` :obj:`not` :obj:`available` :obj:`for` :obj:`the` :obj:`current` :obj:`frame`"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:139
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:138
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:147
 msgid "If the specified output variable is not available in the output database."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:142
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:141
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:150
 msgid "ErrorUnusableVarInPathExtract: :obj:`Specified` :obj:`variable` :obj:`cannot` :obj:`be` :obj:`used` :obj:`in` :obj:`XY` :obj:`data` :obj:`extraction`"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:142
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:141
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:150
 msgid "If the specified output variable cannot be used to obtain **X - Y** data from path."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:145
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:144
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:153
 msgid "ErrorUnsupportedRefinementType: :obj:`Unsupported` :obj:`refinement` :obj:`type`"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:145
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:144
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:153
 msgid "If the SymbolicConstant specifying the refinement type is invalid."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:148
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:147
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:156
 msgid "ErrorInvalidRefinementSpecification: :obj:`Invalid` :obj:`refinement` :obj:`specification`"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:148
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:147
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:156
 msgid "If the label specifying the refinement invariant or component is invalid."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:159
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:158
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:167
 msgid "ErrorDeformedMagTupleInPathExtract: :obj:`Deformed` :obj:`magnification` :class:`python:tuple` :obj:`must` :obj:`contain` :obj:`X`, :obj:`Y` :obj:`and` :obj:`Z` :obj:`values`"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:151
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:150
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromPath:159
 msgid "If **deformedMag** does not contain three Floats."
 msgstr ""
 
@@ -2593,82 +2659,130 @@ msgstr ""
 msgid "A SymbolicConstant specifying the position from which output will be read. Possible values are ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, and NODAL."
 msgstr ""
 
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:24
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:23
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:24
-msgid "A tuple of tuples containing the descriptions of variables for which to extract data from the field. Each tuple specifies the following:Variable label: A String specifying the variable; for example, 'U'.Variable output position: A SymbolicConstant specifying the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and WHOLE_REGION.Refinement: A tuple specifying the refinement. If the refinement tuple is omitted, data are written for all components and invariants (if applicable). This element is required if the location dictionary (the following element in the tuple) is included. The refinement tuple contains the following:Type: A SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and COMPONENT.Label: A String specifying the invariant or the component; for example, 'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The dictionary contains pairs of the following:A String specifying the category selection label.A String specifying the section point label. For example::"
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:23
+msgid "A tuple of tuples containing the descriptions of variables for which to extract data from the field. Each tuple specifies the following:"
 msgstr ""
 
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:45
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:46
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:47
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:46
-msgid "**elementSets**"
-msgstr ""
-
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:44
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:45
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:46
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:45
-msgid "A sequence of Strings specifying element sets or a String specifying a single element set."
-msgstr ""
-
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:54
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:56
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:55
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:56
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:55
+msgid "**elementSets**"
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:55
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:54
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:55
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:54
+msgid "A sequence of Strings specifying element sets or a String specifying a single element set."
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:65
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:66
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:67
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:66
 msgid "**elementLabels**"
 msgstr ""
 
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:48
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:49
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:50
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:49
-msgid "A sequence of expressions specifying element labels per part instance in the model. Each part instance element expression is a sequence of a String specifying the part instance name and a sequence of element expressions; for example, `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The element expressions can be any of the following:An Int specifying a single element label; for example, `1`.A String specifying a single element label; for example, `'7'`.A String specifying a sequence of element labels; for example, `'3:5'` and `'3:15:3'`."
-msgstr ""
-
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:57
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:58
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:59
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:58
+msgid "A sequence of expressions specifying element labels per part instance in the model. Each part instance element expression is a sequence of a String specifying the part instance name and a sequence of element expressions; for example, `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The element expressions can be any of the following:"
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:64
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:65
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:64
+msgid "An Int specifying a single element label; for example, `1`."
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:65
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:66
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:65
+msgid "A String specifying a single element label; for example, `'7'`."
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:66
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:67
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:66
+msgid "A String specifying a sequence of element labels; for example, `'3:5'` and `'3:15:3'`."
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:68
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:69
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:70
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:69
 msgid "**nodeSets**"
 msgstr ""
 
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:57
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:58
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:59
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:58
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:68
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:69
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:70
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:69
 msgid "A sequence of Strings specifying node sets or a String specifying a single node set."
 msgstr ""
 
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:66
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:67
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:68
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:67
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:77
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:80
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:81
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:80
 msgid "**nodeLabels**"
 msgstr ""
 
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:60
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:61
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:62
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:61
-msgid "A sequence of expressions specifying node labels per part instance in the model. Each part instance node expression is a sequence of a String specifying the part instance name and a sequence of node expressions; for example, `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The node expressions can be any of the following:An Int specifying a single node label; for example, `1`.A String specifying a single node label; for example, `'7'`.A String specifying a sequence of node labels; for example, `'3:5'` and `'3:15:3'`."
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:72
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:73
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:72
+msgid "A sequence of expressions specifying node labels per part instance in the model. Each part instance node expression is a sequence of a String specifying the part instance name and a sequence of node expressions; for example, `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The node expressions can be any of the following:"
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:79
+msgid "An Int specifying a single node label; for example, `1`."
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:80
+msgid "A String specifying a single node label; for example, `'7'`."
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:80
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:81
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:80
+msgid "A String specifying a sequence of node labels; for example, `'3:5'` and `'3:15:3'`."
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:11
 msgid "Check `XYSession.xyDataListFromField on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xysessionpyc.htm?contextscope=all#simaker-xysessionxydatalistfromfieldpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:23
-msgid "A tuple of tuples containing the descriptions of variables for which to extract data from the field. Each tuple specifies the following: Variable label: A String specifying the variable; for example, 'U'.Variable output position: A SymbolicConstant specifying the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and WHOLE_REGION.Refinement: A tuple specifying the refinement. If the refinement tuple is omitted, data are written for all components and invariants (if applicable). This element is required if the location dictionary (the following element in the tuple) is included. The refinement tuple contains the following Type: A SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and COMPONENT.Label: A String specifying the invariant or the component; for example, 'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The dictionary contains pairs of the following:A String specifying the category selection label.A String specifying the section point label. For example::"
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:27
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:27
+msgid "Variable output position: A SymbolicConstant specifying the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT,  WHOLE_MODEL, WHOLE_PART_INSTANCE, and WHOLE_REGION."
 msgstr ""
 
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:86
-#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:86
-msgid "**operator**"
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:30
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:30
+msgid "Refinement: A tuple specifying the refinement. If the refinement tuple is omitted, data are written  for all components and invariants (if applicable). This element is required if the location dictionary (the following element in the tuple) is included. The refinement tuple contains the following:"
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:78
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:78
+msgid "An Int specifying a single node label; for example, `1`.A"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:79
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:79
+msgid "String specifying a single node label; for example, `'7'`."
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:99
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:99
+msgid "**operator**"
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.xyDataListFromField:92
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:92
 msgid "A SymbolicConstant specifying the mathematical, trigonometric, logarithmic, exponential, or other operations. Possible values are ADD, SUBTRACT, MULTIPLY, DIVIDE, POWER, MINIMUM, MAXIMUM, AVERAGE, RANGE, SRSS, ABSOLUTE, UNARY_NEGATIVE, COSINE, HYPERBOLIC_COSINE, INVERSE_COSINE, SINE, HYPERBOLIC_SINE, INVERSE_SINE, TANGENT, HYPERBOLIC_TANGENT, INVERSE_TANGENT, EXPONENTIAL, NATURAL_LOG, LOG, SQUARE_ROOT, NORMALIZE, DEG2RAD, RAD2DEG, SMOOTH, SWAP, AVERAGE_ALL, MAXIMUM_ENVELOPE, MINIMUM_ENVELOPE, and RANGE_ALL. If no value is defined, no operation will be performed on the data, and the data will be saved as is."
 msgstr ""
 
@@ -3236,6 +3350,10 @@ msgstr ""
 
 #: ../../../../src/abaqus/XY/XYSessionBase.py:docstring of abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:97
 msgid "A Boolean specifying whether to create a Path object containing all the points used when performing the linearized stress computation. The default value is OFF . When this argument is set to ON , a Path object is created with the same name as that of the stress line and placed in the Path repository."
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYSessionBase.py:docstring of abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:108
+msgid ":obj:`typing.List`\\[:obj:`XYData`]"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYSessionBase.py:docstring of abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:105
@@ -5759,8 +5877,16 @@ msgstr ""
 msgid "See PEP 585"
 msgstr ""
 
-#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:24
-msgid "A tuple of tuples containing the descriptions of variables for which to extract data from the field. Each tuple specifies the following:Variable label: A String specifying the variable; for example, 'U'.Variable output position: A SymbolicConstant specifying the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and WHOLE_REGION.Refinement: A tuple specifying the refinement. If the refinement tuple is omitted, data are written for all components and invariants (if applicable). This element is required if the location dictionary (the following element in the tuple) is included. The refinement tuple contains the following:Type: A SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and COMPONENT.Label: A String specifying the invariant or the component; for example, 'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The dictionary contains pairs of the following:A String specifying the category selection label.A String specifying the section point label.For example,`variable= ('S',INTEGRATION_POINT, ( (COMPONENT, 'S22' ), ), ) variable= (('S',INTEGRATION_POINT, ((COMPONENT, 'S11' ), ), ),            ('U',NODAL,((COMPONENT, 'U1'),)),) variable= (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises' ), ),            {'shell < STEEL > < 3 section points >':'SNEG,                                    (fraction = -1.0)', }), )`"
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromPath:69
+msgid "A tuple of tuples containing the descriptions of variables for which to extract data along the path. The default value is the current variable. Each tuple specifies the following:Variable label: A String specifying the variable; for example, 'U'.Variable output position: A SymbolicConstant specifying the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and WHOLE_REGION.Refinement: A tuple specifying the refinement. If the refinement tuple is omitted, data are written for all components and invariants (if applicable). This element is required if the location dictionary (the following element in the tuple) is included. The refinement tuple contains the following:Type: A SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and COMPONENT.Label: A String specifying the invariant or the component; for example, 'Mises' or 'S22'.Location: An optional Dictionary specifying the location. The dictionary contains pairs of the following:A String specifying the category selection label.A String specifying the section point label.For example::"
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:59
+msgid "A sequence of expressions specifying element labels per part instance in the model. Each part instance element expression is a sequence of a String specifying the part instance name and a sequence of element expressions; for example, `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The element expressions can be any of the following:An Int specifying a single element label; for example, `1`.A String specifying a single element label; for example, `'7'`.A String specifying a sequence of element labels; for example, `'3:5'` and `'3:15:3'`."
+msgstr ""
+
+#: ../../../../src/abaqus/XY/XYData.py:docstring of abaqus.XY.XYData.XYData.XYDataFromShellThickness:71
+msgid "A sequence of expressions specifying node labels per part instance in the model. Each part instance node expression is a sequence of a String specifying the part instance name and a sequence of node expressions; for example, `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The node expressions can be any of the following:An Int specifying a single node label; for example, `1`.A String specifying a single node label; for example, `'7'`.A String specifying a sequence of node labels; for example, `'3:5'` and `'3:15:3'`."
 msgstr ""
 
 #: ../../docstring of abaqus.XY.XYData.XYData.data:2
