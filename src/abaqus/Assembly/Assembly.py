@@ -1,5 +1,6 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConnectorOrientation import ConnectorOrientation
+from ..Canvas.Displayable import Displayable
 from ..Datum.DatumCsys import DatumCsys
 from ..EditMesh.MeshEditAssembly import MeshEditAssembly
 from ..Mesh.MeshAssembly import MeshAssembly
@@ -10,7 +11,7 @@ from ..UtilityAndView.abaqusConstants import *
 
 
 @abaqus_class_doc
-class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly):
+class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly, Displayable):
     """An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
