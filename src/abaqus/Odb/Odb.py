@@ -4,11 +4,11 @@ from .OdbPart import OdbPart
 from .OdbStep import OdbStep
 from .SectionCategory import SectionCategory
 from ..Amplitude.AmplitudeOdb import AmplitudeOdb
+from ..Canvas.Displayable import Displayable
 from ..BeamSectionProfile.BeamSectionProfileOdb import BeamSectionProfileOdb
 from ..Filter.FilterOdb import FilterOdb
 from ..Material.MaterialOdb import MaterialOdb
 from ..UtilityAndView.abaqusConstants import *
-from ..Canvas.Displayable import Displayable
 
 
 @abaqus_class_doc
