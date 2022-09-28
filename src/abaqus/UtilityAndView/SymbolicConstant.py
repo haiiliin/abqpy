@@ -2579,6 +2579,7 @@ class abaqusConstants(str,Enum):
     MAXIMUM_ENVELOPE = "MAXIMUM_ENVELOPE"
     MINIMUM_ENVELOPE = "MINIMUM_ENVELOPE"
     RANGE_ALL = "RANGE_ALL"
+    SS = "SS"
     
     @abaqus_method_doc
     def __copy__(self) -> SymbolicConstant:

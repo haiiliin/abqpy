@@ -2547,4 +2547,5 @@ AVERAGE_ALL = SymbolicConstant.AVERAGE_ALL
 MAXIMUM_ENVELOPE = SymbolicConstant.MAXIMUM_ENVELOPE
 MINIMUM_ENVELOPE = SymbolicConstant.MINIMUM_ENVELOPE
 RANGE_ALL = SymbolicConstant.RANGE_ALL
+SS = SymbolicConstant.SS
 # okay decompiling abaqusConstants.pyc
