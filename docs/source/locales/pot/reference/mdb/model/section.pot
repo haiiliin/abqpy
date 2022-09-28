@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2017.3.4 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-24 00:17+0000\n"
+"POT-Creation-Date: 2022-09-28 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1650,7 +1650,6 @@ msgstr ""
 #: ../../../../src/abaqus/Section/CohesiveSection.py:docstring of abaqus.Section.CohesiveSection.CohesiveSection.setValues:10
 #: ../../../../src/abaqus/Section/SectionModel.py:docstring of abaqus.Section.SectionModel.SectionModel.CohesiveSection:27
 #: ../../../../src/abaqus/Section/SectionOdb.py:docstring of abaqus.Section.SectionOdb.SectionOdb.CohesiveSection:27
-#: ../../docstring of abaqus.Section.CohesiveSection.CohesiveSection.initialThicknessType:2
 msgid "A SymbolicConstant specifying the method used to compute the initial thickness. Possible values are:SOLVER_DEFAULT, specifying that Abaqus will use the analysis product defaultGEOMETRY, specifying that Abaqus will compute the thickness from the nodal coordinates of the elements.SPECIFY, specifying that Abaqus will use the value given for **initialThickness** The default value is SOLVER_DEFAULT."
 msgstr ""
 
@@ -1817,7 +1816,6 @@ msgstr ""
 #: ../../../../src/abaqus/Section/SectionOdb.py:docstring of abaqus.Section.SectionOdb.SectionOdb.GeneralStiffnessSection:37
 #: ../../../../src/abaqus/Section/SectionOdb.py:docstring of abaqus.Section.SectionOdb.SectionOdb.HomogeneousShellSection:43
 #: ../../../../src/abaqus/Section/SectionOdb.py:docstring of abaqus.Section.SectionOdb.SectionOdb.MembraneSection:31
-#: ../../docstring of abaqus.Section.CompositeShellSection.CompositeShellSection.poissonDefinition:2
 #: ../../docstring of abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection.poissonDefinition:2
 #: ../../docstring of abaqus.Section.GeometryShellSection.GeometryShellSection.poissonDefinition:2
 #: ../../docstring of abaqus.Section.HomogeneousShellSection.HomogeneousShellSection.poissonDefinition:2
@@ -2129,7 +2127,6 @@ msgstr ""
 #: ../../../../src/abaqus/Section/ConnectorSection.py:docstring of abaqus.Section.ConnectorSection.ConnectorSection.setValues:10
 #: ../../../../src/abaqus/Section/SectionModel.py:docstring of abaqus.Section.SectionModel.SectionModel.ConnectorSection:19
 #: ../../../../src/abaqus/Section/SectionOdb.py:docstring of abaqus.Section.SectionOdb.SectionOdb.ConnectorSection:19
-#: ../../docstring of abaqus.Section.ConnectorSection.ConnectorSection.assembledType:2
 msgid "A SymbolicConstant specifying the assembled connection type. Possible values are:NONEBEAMBUSHINGCVJOINTCYLINDRICALHINGEPLANARRETRACTORSLIPRINGTRANSLATORUJOINTWELDThe default value is NONE.You cannot include the **assembledType** argument if **translationalType** or **rotationalType** are given a value other than NONE. At least one of the arguments **assembledType**, **translationalType**, or **rotationalType** must be given a value other than NONE."
 msgstr ""
 
@@ -2142,7 +2139,6 @@ msgstr ""
 #: ../../../../src/abaqus/Section/ConnectorSection.py:docstring of abaqus.Section.ConnectorSection.ConnectorSection.setValues:18
 #: ../../../../src/abaqus/Section/SectionModel.py:docstring of abaqus.Section.SectionModel.SectionModel.ConnectorSection:27
 #: ../../../../src/abaqus/Section/SectionOdb.py:docstring of abaqus.Section.SectionOdb.SectionOdb.ConnectorSection:27
-#: ../../docstring of abaqus.Section.ConnectorSection.ConnectorSection.rotationalType:2
 msgid "A SymbolicConstant specifying the basic rotational connection type. Possible values are:NONEALIGNCARDANCONSTANT_VELOCITYEULERFLEXION_TORSIONFLOW_CONVERTERPROJECTION_FLEXION_TORSIONREVOLUTEROTATIONROTATION_ACCELEROMETERUNIVERSALThe default value is NONE.You cannot include the **rotationalType** argument if **assembledType** is given a value other than NONE. At least one of the arguments **assembledType**, **translationalType**, or **rotationalType** must be given an value other than NONE."
 msgstr ""
 
@@ -2155,7 +2151,6 @@ msgstr ""
 #: ../../../../src/abaqus/Section/ConnectorSection.py:docstring of abaqus.Section.ConnectorSection.ConnectorSection.setValues:26
 #: ../../../../src/abaqus/Section/SectionModel.py:docstring of abaqus.Section.SectionModel.SectionModel.ConnectorSection:35
 #: ../../../../src/abaqus/Section/SectionOdb.py:docstring of abaqus.Section.SectionOdb.SectionOdb.ConnectorSection:35
-#: ../../docstring of abaqus.Section.ConnectorSection.ConnectorSection.translationalType:2
 msgid "A SymbolicConstant specifying the basic translational connection type. Possible values are:NONEACCELEROMETERAXIALCARTESIANJOINLINKPROJECTION_CARTESIANRADIAL_THRUSTSLIDE_PLANESLOTThe default value is NONE.You cannot include the **translationalType** argument if **assembledType** is given a value other than NONE. At least one of the arguments **assembledType**, **translationalType**, or **rotationalType** must be given an value other than NONE."
 msgstr ""
 
@@ -4817,6 +4812,10 @@ msgstr ""
 msgid ":py:obj:`sectionsFromOdb <abaqus.Section.CohesiveSection.CohesiveSection.sectionsFromOdb>`\\ \\(fileName\\)"
 msgstr ""
 
+#: ../../docstring of abaqus.Section.CohesiveSection.CohesiveSection.initialThicknessType:2
+msgid "A SymbolicConstant specifying the method used to compute the initial thickness. Possible values are: SOLVER_DEFAULT, specifying that Abaqus will use the analysis product default; GEOMETRY, specifying that Abaqus will compute the thickness from the nodal coordinates of the elements. SPECIFY, specifying that Abaqus will use the value given for **initialThickness** The default value is SOLVER_DEFAULT."
+msgstr ""
+
 #: ../../../../src/abaqus/Section/CohesiveSection.py:docstring of abaqus.Section.CohesiveSection.CohesiveSection.setValues:5
 msgid "Check `CohesiveSection.setValues on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cohesivesectionpyc.htm?contextscope=all#simaker-cohesivesectionsetvaluespyc>`__."
 msgstr ""
@@ -5130,6 +5129,10 @@ msgstr ""
 msgid ":py:obj:`sectionsFromOdb <abaqus.Section.CompositeShellSection.CompositeShellSection.sectionsFromOdb>`\\ \\(fileName\\)"
 msgstr ""
 
+#: ../../docstring of abaqus.Section.CompositeShellSection.CompositeShellSection.poissonDefinition:2
+msgid "A SymbolicConstant specifying whether to use the default value for the Poisson's ratio. Possible values are: DEFAULT, specifying that the default value for the Poisson's ratio is 0.5 in an Abaqus/Standard analysis and is obtained from the material definition in an Abaqus/Explicit analysis. VALUE, specifying that the Poisson's ratio used in the analysis is the value provided in **poisson**.The default value is DEFAULT."
+msgstr ""
+
 #: ../../../../src/abaqus/Section/CompositeShellSection.py:docstring of abaqus.Section.CompositeShellSection.CompositeShellSection.setValues:5
 msgid "Check `CompositeShellSection.setValues on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-compositeshellsectionpyc.htm?contextscope=all#simaker-compositeshellsectionsetvaluespyc>`__."
 msgstr ""
@@ -5272,7 +5275,7 @@ msgid ":py:obj:`rotationalType <abaqus.Section.ConnectorSection.ConnectorSection
 msgstr ""
 
 #: ../../None:20:<autosummary>:1
-msgid "A SymbolicConstant specifying the basic rotational connection type."
+msgid "default value is NONE.You cannot include the **rotationalType** argument if **assembledType** is given a value other than NONE."
 msgstr ""
 
 #: ../../None:20:<autosummary>:1
@@ -5481,8 +5484,20 @@ msgstr ""
 msgid ":py:obj:`sectionsFromOdb <abaqus.Section.ConnectorSection.ConnectorSection.sectionsFromOdb>`\\ \\(fileName\\)"
 msgstr ""
 
+#: ../../docstring of abaqus.Section.ConnectorSection.ConnectorSection.assembledType:2
+msgid "A SymbolicConstant specifying the assembled connection type. Possible values are: NONE, BEAM, BUSHING, CVJOINT, CYLINDRICAL, HINGE, PLANAR, RETRACTOR, SLIPRING, TRANSLATOR, UJOINT, WELD The default value is NONE.You cannot include the **assembledType** argument if **translationalType** or **rotationalType** are given a value other than NONE. At least one of the arguments **assembledType**, **translationalType**, or **rotationalType** must be given a value other than NONE."
+msgstr ""
+
+#: ../../docstring of abaqus.Section.ConnectorSection.ConnectorSection.rotationalType:2
+msgid "default value is NONE.You cannot include the **rotationalType** argument if **assembledType** is given a value other than NONE. At least one of the arguments **assembledType**, **translationalType**, or **rotationalType** must be given an value other than NONE."
+msgstr ""
+
 #: ../../../../src/abaqus/Section/ConnectorSection.py:docstring of abaqus.Section.ConnectorSection.ConnectorSection.setValues:5
 msgid "Check `ConnectorSection.setValues on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorsectionpyc.htm?contextscope=all#simaker-connectorsectionsetvaluespyc>`__."
+msgstr ""
+
+#: ../../docstring of abaqus.Section.ConnectorSection.ConnectorSection.translationalType:2
+msgid "A SymbolicConstant specifying the basic translational connection type. Possible values are: NONE, ACCELEROMETER, AXIAL, CARTESIAN, JOIN, LINK, PROJECTION_CARTESIAN, RADIAL_THRUST, SLIDE_PLANE, SLOT Thedefault value is NONE. You cannot include the **translationalType** argument if **assembledType** is given a value other than NONE. At least one of the arguments **assembledType**, **translationalType**, or **rotationalType** must be given an value other than NONE."
 msgstr ""
 
 #: ../../reference/mdb/model/section.rst:112

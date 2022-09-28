@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 09:27+0000\n"
+"POT-Creation-Date: 2022-09-28 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1903,8 +1903,6 @@ msgstr ""
 msgid "**initialThicknessType**"
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Section.CohesiveSection.CohesiveSection.initialThicknessType:2
 #: abaqus.Section.CohesiveSection.CohesiveSection.setValues:10
 #: abaqus.Section.SectionModel.SectionModel.CohesiveSection:27
 #: abaqus.Section.SectionOdb.SectionOdb.CohesiveSection:27 of
@@ -2093,7 +2091,6 @@ msgid "**poissonDefinition**"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.Section.CompositeShellSection.CompositeShellSection.poissonDefinition:2
 #: abaqus.Section.CompositeShellSection.CompositeShellSection.setValues:24
 #: abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection.poissonDefinition:2
 #: abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection.setValues:24
@@ -2477,8 +2474,6 @@ msgstr ""
 msgid "**assembledType**"
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Section.ConnectorSection.ConnectorSection.assembledType:2
 #: abaqus.Section.ConnectorSection.ConnectorSection.setValues:10
 #: abaqus.Section.SectionModel.SectionModel.ConnectorSection:19
 #: abaqus.Section.SectionOdb.SectionOdb.ConnectorSection:19 of
@@ -2499,8 +2494,6 @@ msgstr ""
 msgid "**rotationalType**"
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Section.ConnectorSection.ConnectorSection.rotationalType:2
 #: abaqus.Section.ConnectorSection.ConnectorSection.setValues:18
 #: abaqus.Section.SectionModel.SectionModel.ConnectorSection:27
 #: abaqus.Section.SectionOdb.SectionOdb.ConnectorSection:27 of
@@ -2520,9 +2513,7 @@ msgstr ""
 msgid "**translationalType**"
 msgstr ""
 
-#: ../../docstring
 #: abaqus.Section.ConnectorSection.ConnectorSection.setValues:26
-#: abaqus.Section.ConnectorSection.ConnectorSection.translationalType:2
 #: abaqus.Section.SectionModel.SectionModel.ConnectorSection:35
 #: abaqus.Section.SectionOdb.SectionOdb.ConnectorSection:35 of
 msgid ""
@@ -6212,6 +6203,17 @@ msgid ""
 "\\(fileName\\)"
 msgstr ""
 
+#: ../../docstring
+#: abaqus.Section.CohesiveSection.CohesiveSection.initialThicknessType:2 of
+msgid ""
+"A SymbolicConstant specifying the method used to compute the initial "
+"thickness. Possible values are: SOLVER_DEFAULT, specifying that Abaqus "
+"will use the analysis product default; GEOMETRY, specifying that Abaqus "
+"will compute the thickness from the nodal coordinates of the elements. "
+"SPECIFY, specifying that Abaqus will use the value given for "
+"**initialThickness** The default value is SOLVER_DEFAULT."
+msgstr ""
+
 #: abaqus.Section.CohesiveSection.CohesiveSection.setValues:5 of
 msgid ""
 "Check `CohesiveSection.setValues on help.3ds.com/2017 "
@@ -6604,6 +6606,19 @@ msgid ""
 " \\(fileName\\)"
 msgstr ""
 
+#: ../../docstring
+#: abaqus.Section.CompositeShellSection.CompositeShellSection.poissonDefinition:2
+#: of
+msgid ""
+"A SymbolicConstant specifying whether to use the default value for the "
+"Poisson's ratio. Possible values are: DEFAULT, specifying that the "
+"default value for the Poisson's ratio is 0.5 in an Abaqus/Standard "
+"analysis and is obtained from the material definition in an "
+"Abaqus/Explicit analysis. VALUE, specifying that the Poisson's ratio used"
+" in the analysis is the value provided in **poisson**.The default value "
+"is DEFAULT."
+msgstr ""
+
 #: abaqus.Section.CompositeShellSection.CompositeShellSection.setValues:5 of
 msgid ""
 "Check `CompositeShellSection.setValues on help.3ds.com/2017 "
@@ -6822,7 +6837,9 @@ msgid ""
 msgstr ""
 
 #: ../../None:20:<autosummary>:1
-msgid "A SymbolicConstant specifying the basic rotational connection type."
+msgid ""
+"default value is NONE.You cannot include the **rotationalType** argument "
+"if **assembledType** is given a value other than NONE."
 msgstr ""
 
 #: ../../None:20:<autosummary>:1
@@ -7141,11 +7158,45 @@ msgid ""
 "\\(fileName\\)"
 msgstr ""
 
+#: ../../docstring
+#: abaqus.Section.ConnectorSection.ConnectorSection.assembledType:2 of
+msgid ""
+"A SymbolicConstant specifying the assembled connection type. Possible "
+"values are: NONE, BEAM, BUSHING, CVJOINT, CYLINDRICAL, HINGE, PLANAR, "
+"RETRACTOR, SLIPRING, TRANSLATOR, UJOINT, WELD The default value is "
+"NONE.You cannot include the **assembledType** argument if "
+"**translationalType** or **rotationalType** are given a value other than "
+"NONE. At least one of the arguments **assembledType**, "
+"**translationalType**, or **rotationalType** must be given a value other "
+"than NONE."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Section.ConnectorSection.ConnectorSection.rotationalType:2 of
+msgid ""
+"default value is NONE.You cannot include the **rotationalType** argument "
+"if **assembledType** is given a value other than NONE. At least one of "
+"the arguments **assembledType**, **translationalType**, or "
+"**rotationalType** must be given an value other than NONE."
+msgstr ""
+
 #: abaqus.Section.ConnectorSection.ConnectorSection.setValues:5 of
 msgid ""
 "Check `ConnectorSection.setValues on help.3ds.com/2017 "
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectorsectionpyc.htm?contextscope=all"
 "#simaker-connectorsectionsetvaluespyc>`__."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Section.ConnectorSection.ConnectorSection.translationalType:2 of
+msgid ""
+"A SymbolicConstant specifying the basic translational connection type. "
+"Possible values are: NONE, ACCELEROMETER, AXIAL, CARTESIAN, JOIN, LINK, "
+"PROJECTION_CARTESIAN, RADIAL_THRUST, SLIDE_PLANE, SLOT Thedefault value "
+"is NONE. You cannot include the **translationalType** argument if "
+"**assembledType** is given a value other than NONE. At least one of the "
+"arguments **assembledType**, **translationalType**, or **rotationalType**"
+" must be given an value other than NONE."
 msgstr ""
 
 #: ../../reference/mdb/model/section.rst:112
@@ -10583,5 +10634,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "This function can be accessed by:"
+#~ msgstr ""
+
+#~ msgid "A SymbolicConstant specifying the basic rotational connection type."
 #~ msgstr ""
 
