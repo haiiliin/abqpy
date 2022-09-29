@@ -1,11 +1,12 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
+
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .OdbPart import OdbPart
 from .OdbStep import OdbStep
 from .SectionCategory import SectionCategory
 from ..Amplitude.AmplitudeOdb import AmplitudeOdb
-from ..Canvas.Displayable import Displayable
 from ..BeamSectionProfile.BeamSectionProfileOdb import BeamSectionProfileOdb
+from ..Canvas.Displayable import Displayable
 from ..Filter.FilterOdb import FilterOdb
 from ..Material.MaterialOdb import MaterialOdb
 from ..UtilityAndView.abaqusConstants import *

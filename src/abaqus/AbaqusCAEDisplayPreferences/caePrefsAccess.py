@@ -1,4 +1,5 @@
 from typing import Union, List
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_function_doc

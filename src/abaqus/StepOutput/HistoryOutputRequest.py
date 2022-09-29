@@ -1,9 +1,10 @@
-from typing import Optional, Union, Tuple
+from typing import Optional, Tuple
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import *
 
 
 @abaqus_class_doc

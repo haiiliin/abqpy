@@ -1,4 +1,5 @@
 from typing import Union
+
 from .AbaqusBoolean import AbaqusBoolean
 from .SymbolicConstant import SymbolicConstant
 

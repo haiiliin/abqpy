@@ -1,9 +1,10 @@
 from __future__ import annotations
-from typing import Union, Tuple, Dict, List
+
+from typing import Tuple, Dict, List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from .Face import Face
 from .EdgeArray import EdgeArray
+from .Face import Face
 from ..UtilityAndView.abaqusConstants import *
 
 

@@ -1,4 +1,4 @@
-from typing import Tuple, Union
+from typing import Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Material.Material import Material

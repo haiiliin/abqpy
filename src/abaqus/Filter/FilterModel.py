@@ -1,4 +1,5 @@
 from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ButterworthFilter import ButterworthFilter
 from .Chebyshev1Filter import Chebyshev1Filter

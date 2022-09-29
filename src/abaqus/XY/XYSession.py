@@ -1,6 +1,7 @@
 from __future__ import annotations
 
-from typing import overload, Union, Tuple, List, Dict, overload
+from typing import Tuple, List, Dict, overload
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -11,9 +12,9 @@ from .SymbolStyle import SymbolStyle
 from .TextStyle import TextStyle
 from .XYData import XYData
 from .XYSessionBase import XYSessionBase
+from ..Odb.Odb import Odb
 from ..PathAndProbe.Path import Path
 from ..UtilityAndView.abaqusConstants import *
-from ..Odb.Odb import Odb
 
 
 @abaqus_class_doc
