@@ -1,4 +1,4 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .BeadTask import BeadTask
@@ -6,7 +6,11 @@ from .ShapeTask import ShapeTask
 from .SizingTask import SizingTask
 from .TopologyTask import TopologyTask
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AVERAGE_EDGE_LENGTH, Boolean, CONSERVATIVE,
+                                              CONSTRAINED_LAPLACIAN, DEFAULT, EVERY_CYCLE, FE_SAFE,
+                                              GENERAL_OPTIMIZATION, LOW, MEDIUM, MINIMUM, MODEL,
+                                              NORMAL, OFF, ON, POSITIONS, STANDARD,
+                                              SymbolicConstant, TASK_REGION_LAYERS, VALUE)
 
 
 @abaqus_class_doc
@@ -162,23 +166,23 @@ class OptimizationTaskModel(ModelBase):
         curvatureSmoothingEdgeLength: float = 5,
         durabilityInputfile: str = "",
         durabilitySolver: str = FE_SAFE,
-        equalityConstraintTolerance: float = None,
+        equalityConstraintTolerance: Optional[float] = None,
         featureRecognitionAngle: float = 30,
         filterExponent: float = 1,
-        filterMaxRadius: float = None,
-        filterRadiusReduction: float = None,
+        filterMaxRadius: Optional[float] = None,
+        filterRadiusReduction: Optional[float] = None,
         firstCycleDeletedVolumeTechnique: SymbolicConstant = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
         frozenBoundaryConditionRegion: SymbolicConstant = MODEL,
         geometricRestrictionEvaluationFrequency: SymbolicConstant = LOW,
         growthScaleFactor: float = 1,
         haltUponViolation: Boolean = OFF,
-        layerReferenceRegion: str = None,
+        layerReferenceRegion: Optional[str] = None,
         meshSmoothingRegionMethod: SymbolicConstant = TASK_REGION_LAYERS,
         meshSmoothingStrategy: SymbolicConstant = CONSTRAINED_LAPLACIAN,
         midsideInterpolation: SymbolicConstant = POSITIONS,
         numFreeNodeLayers: SymbolicConstant = 0,
-        numSmoothedElementLayers: int = None,
+        numSmoothedElementLayers: Optional[int] = None,
         presumeFeasibleBCRegionAtStart: Boolean = ON,
         quadMaxAngle: float = 160,
         quadMinAngle: float = 20,
@@ -188,7 +192,7 @@ class OptimizationTaskModel(ModelBase):
         reportPoorQualityElements: Boolean = OFF,
         reportQualityViolation: Boolean = OFF,
         shrinkScaleFactor: float = 1,
-        smoothingRegion: str = None,
+        smoothingRegion: Optional[str] = None,
         targetMeshQuality: SymbolicConstant = LOW,
         tetAspectRatio: float = 100,
         tetMaxAspect: float = 8,
@@ -500,7 +504,7 @@ class OptimizationTaskModel(ModelBase):
         densityMoveLimit: float = 0,
         densityUpdateStrategy: SymbolicConstant = NORMAL,
         elementDensityDeltaStopCriteria: float = 0,
-        filterRadius: float = None,
+        filterRadius: Optional[float] = None,
         firstCycleDeletedVolume: float = 5,
         firstCycleDeletedVolumeTechnique: SymbolicConstant = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
@@ -510,25 +514,32 @@ class OptimizationTaskModel(ModelBase):
         materialInterpolationPenalty: float = 3,
         materialInterpolationTechnique: SymbolicConstant = DEFAULT,
         maxDensity: float = 1,
-        minDensity: float = None,
+        minDensity: Optional[float] = None,
         modeTrackingRegion: SymbolicConstant = MODEL,
         numDesignCycles: int = 15,
         numFulfilledStopCriteria: int = 2,
         numTrackedModes: int = 5,
-        objectiveFunctionDeltaStopCriteria: float = None,
+        objectiveFunctionDeltaStopCriteria: Optional[float] = None,
         region: SymbolicConstant = MODEL,
         softDeletionMethod: SymbolicConstant = STANDARD,
         softDeletionRadius: float = 0,
-        softDeletionRegion: str = None,
-        softDeletionThreshold: float = None,
+        softDeletionRegion: Optional[str] = None,
+        softDeletionThreshold: Optional[float] = None,
         stepSize: SymbolicConstant = MEDIUM,
-        stiffnessMassDamping: typing.Union[
+        stiffnessMassDamping: Union[
             SymbolicConstant, float
         ] = AVERAGE_EDGE_LENGTH,
         stopCriteriaDesignCycle: int = 4,
+<<<<<<< HEAD
         structuralMassDamping: float = None,
         viscousMassDamping: float = None,
         viscousStiffnessDamping: float = None,
+=======
+        structuralMassDamping: Optional[float] = None,
+        viscousMassDamping: Optional[float] = None,
+        viscousStiffnessDamping: Optional[float] = None,
+        groupOperator: Boolean = OFF,
+>>>>>>> cfc3482e (Update type hints (#1762))
     ) -> TopologyTask:
         """This method creates a TopologyTask object.
 

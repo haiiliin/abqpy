@@ -1,7 +1,7 @@
-import typing
+from typing import Union, List, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc
@@ -19,7 +19,7 @@ class Path:
     #: If **type** = NODE_LIST, **coordinates** is a sequence of tuples of three Floats. This can be
     #: used as the value for the **expression** argument when creating a Path object of **type** =
     #: POINT_LIST.
-    coordinates: typing.List[typing.Tuple[float, ...]] = []
+    coordinates: List[Tuple[float, ...]] = []
 
     #: A String specifying the repository key.
     name: str
@@ -75,7 +75,7 @@ class Path:
 
     #: The SymbolicConstant CIRCLE_RADIUS or a Float specifying the radius of the
     #: circumferential path. This argument is valid only when **type** = CIRCUMFERENTIAL.
-    radius: typing.Union[SymbolicConstant, float]
+    radius: Union[SymbolicConstant, float]
 
     #: A Float specifying the angle between the radial path and the **X**-axis of the specified
     #: coordinate system. This argument is valid only when **type** = RADIAL.
@@ -83,11 +83,11 @@ class Path:
 
     #: The SymbolicConstant CIRCLE_RADIUS or a Float specifying the start radius of the radial
     #: path. This argument is valid only when **type** = RADIAL.
-    startRadius: typing.Union[SymbolicConstant, float]
+    startRadius: Union[SymbolicConstant, float]
 
     #: The SymbolicConstant CIRCLE_RADIUS or a Float specifying the end radius of the radial
     #: path. This argument is valid only when **type** = RADIAL.
-    endRadius: typing.Union[SymbolicConstant, float]
+    endRadius: Union[SymbolicConstant, float]
 
     @abaqus_method_doc
     def __init__(
@@ -99,10 +99,10 @@ class Path:
         numSegments: int,
         startAngle: float,
         endAngle: float,
-        radius: typing.Union[SymbolicConstant, float],
+        radius: Union[SymbolicConstant, float],
         radialAngle: float,
-        startRadius: typing.Union[SymbolicConstant, float],
-        endRadius: typing.Union[SymbolicConstant, float],
+        startRadius: Union[SymbolicConstant, float],
+        endRadius: Union[SymbolicConstant, float],
     ):
         """This method creates a Path object.
 

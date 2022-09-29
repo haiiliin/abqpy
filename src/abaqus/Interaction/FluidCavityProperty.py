@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactProperty import ContactProperty
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, HYDRAULIC, OFF, POLYNOMIAL, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -34,12 +36,12 @@ class FluidCavityProperty(ContactProperty):
 
     #: None or a Float specifying the reference fluid density. This argument is applicable only
     #: when **definition** = HYDRAULIC, and is required in that case. The default value is None.
-    fluidDensity: float = None
+    fluidDensity: Optional[float] = None
 
     #: None or a Float specifying the molecular weight of the ideal gas species. This argument
     #: is applicable only when **definition** = PNEUMATIC, and is required in that case. The
     #: default value is None.
-    molecularWeight: float = None
+    molecularWeight: Optional[float] = None
 
     #: A Boolean specifying whether thermal expansion coefficients will be defined. This
     #: argument is applicable only when **definition** = HYDRAULIC. The default value is OFF.
@@ -143,8 +145,8 @@ class FluidCavityProperty(ContactProperty):
         self,
         name: str,
         definition: SymbolicConstant = HYDRAULIC,
-        fluidDensity: float = None,
-        molecularWeight: float = None,
+        fluidDensity: Optional[float] = None,
+        molecularWeight: Optional[float] = None,
         useExpansion: Boolean = OFF,
         expansionTempDep: Boolean = OFF,
         expansionDependencies: int = 0,
@@ -276,8 +278,8 @@ class FluidCavityProperty(ContactProperty):
     def setValues(
         self,
         definition: SymbolicConstant = HYDRAULIC,
-        fluidDensity: float = None,
-        molecularWeight: float = None,
+        fluidDensity: Optional[float] = None,
+        molecularWeight: Optional[float] = None,
         useExpansion: Boolean = OFF,
         expansionTempDep: Boolean = OFF,
         expansionDependencies: int = 0,

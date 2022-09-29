@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .PlanarTestData import PlanarTestData
 
-PlanarTestDataArray = typing.List[PlanarTestData]
+PlanarTestDataArray = List[PlanarTestData]

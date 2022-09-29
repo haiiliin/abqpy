@@ -1,7 +1,7 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, OFF, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -28,7 +28,7 @@ class OptimizationObjective:
     #: evaluating a design response. For topology optimization, DEFAULT> indicates the
     #: reference value is 0. For shape optimization, DEFAULT indicates the reference value is
     #: the nodal average. The default value is DEFAULT.
-    referenceValue: typing.Union[SymbolicConstant, float] = DEFAULT
+    referenceValue: Union[SymbolicConstant, float] = DEFAULT
 
     #: A String specifying the name of the design response.
     designResponse: str = ""

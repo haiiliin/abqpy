@@ -1,8 +1,11 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, FORCE, LINEAR, MAXIMUM, MOTION_TYPE, OFF, ON,
+                                              SUM, SymbolicConstant, UNCOUPLED)
 
 
 @abaqus_class_doc
@@ -181,13 +184,13 @@ class ConnectorDamage(ConnectorBehaviorOption):
     #: A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each
     #: initiation potential contribution. This member can be specified only if
     #: **coupling** = COUPLED and if **criterion** = FORCE or MOTION.
-    initiationPotentials: ConnectorPotentialArray = None
+    initiationPotentials: Optional[ConnectorPotentialArray] = None
 
     #: A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each
     #: evolution potential contribution). This member can be specified only if
     #: **coupling** = COUPLED, if **evolution** = ON, if **evolutionType** = MOTION, and if
     #: **criterion** = FORCE or MOTION.
-    evolutionPotentials: ConnectorPotentialArray = None
+    evolutionPotentials: Optional[ConnectorPotentialArray] = None
 
     #: A sequence of sequences of Floats specifying the initiation properties. The default
     #: value is an empty sequence.Items in the **initiationTable** data are described below.
@@ -228,8 +231,8 @@ class ConnectorDamage(ConnectorBehaviorOption):
         evolutionDependencies: int = 0,
         evolutionPotentialOperator: SymbolicConstant = SUM,
         evolutionPotentialExponent: float = 2,
-        initiationPotentials: ConnectorPotentialArray = None,
-        evolutionPotentials: ConnectorPotentialArray = None,
+        initiationPotentials: Optional[ConnectorPotentialArray] = None,
+        evolutionPotentials: Optional[ConnectorPotentialArray] = None,
         initiationTable: tuple = (),
         evolutionTable: tuple = (),
         affectedComponents: tuple = (),

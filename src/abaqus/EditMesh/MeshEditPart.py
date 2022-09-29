@@ -1,4 +1,4 @@
-import typing
+from typing import overload, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Datum.DatumCsys import DatumCsys
@@ -8,7 +8,7 @@ from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
 from ..Part.PartBase import PartBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, OUTWARD, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -27,7 +27,7 @@ class MeshEditPart(PartBase):
     """
 
     @abaqus_method_doc
-    def adjustMidsideNode(self, cornerNodes: typing.Tuple[Node, ...], parameter: float):
+    def adjustMidsideNode(self, cornerNodes: Tuple[Node, ...], parameter: float):
         """This method is used to adjust the midside node of second-order elements of an orphan
         mesh part.
 
@@ -50,7 +50,7 @@ class MeshEditPart(PartBase):
         growEdges: Boolean = OFF,
         elements: str = "",
         refEdge: str = "",
-        thicknessDir: float = None,
+        thicknessDir: Optional[float] = None,
         moveLayers: Boolean = False,
     ):
         """This method is used to collapse short element edges and delete collapsed elements, or
@@ -124,7 +124,7 @@ class MeshEditPart(PartBase):
 
     @abaqus_method_doc
     def deleteElement(
-        self, elements: typing.Tuple[MeshElement, ...], deleteUnreferencedNodes: Boolean = OFF
+        self, elements: Tuple[MeshElement, ...], deleteUnreferencedNodes: Boolean = OFF
     ):
         """This method deletes the given elements from an orphan mesh part or an Abaqus native
         mesh. If the elements belong to an Abaqus native mesh then the elements must have been
@@ -142,7 +142,7 @@ class MeshEditPart(PartBase):
 
     @abaqus_method_doc
     def deleteNode(
-        self, nodes: typing.Tuple[MeshNode, ...], deleteUnreferencedNodes: Boolean = OFF
+        self, nodes: Tuple[MeshNode, ...], deleteUnreferencedNodes: Boolean = OFF
     ):
         """This method deletes the given nodes from an orphan mesh part.
 
@@ -160,15 +160,15 @@ class MeshEditPart(PartBase):
     @abaqus_method_doc
     def editNode(
         self,
-        nodes: typing.Tuple[MeshNode, ...],
-        coordinate1: float = None,
-        coordinate2: float = None,
-        coordinate3: float = None,
+        nodes: Tuple[MeshNode, ...],
+        coordinate1: Optional[float] = None,
+        coordinate2: Optional[float] = None,
+        coordinate3: Optional[float] = None,
         coordinates: tuple = (),
-        offset1: float = None,
-        offset2: float = None,
-        offset3: float = None,
-        localCsys: DatumCsys = None,
+        offset1: Optional[float] = None,
+        offset2: Optional[float] = None,
+        offset3: Optional[float] = None,
+        localCsys: Optional[DatumCsys] = None,
         projectToGeometry: Boolean = ON,
     ):
         """This method changes the coordinates of the given nodes on an orphan mesh part or on an
@@ -217,7 +217,7 @@ class MeshEditPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def projectNode(self, nodes: typing.Tuple[MeshNode, ...], projectionReference: str):
+    def projectNode(self, nodes: Tuple[MeshNode, ...], projectionReference: str):
         """This method projects the given nodes onto a mesh entity, geometric entity, or a datum
         object. The nodes may belong to an orphan mesh part or to an Abaqus native mesh.
 
@@ -233,7 +233,7 @@ class MeshEditPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def generateMesh(self, elemShape: SymbolicConstant = None):
+    def generateMesh(self, elemShape: Optional[SymbolicConstant] = None):
         """This method generates a new mesh on an orphan mesh part based on the original mesh.
 
         Parameters
@@ -318,12 +318,12 @@ class MeshEditPart(PartBase):
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def mergeNodes(
         self,
-        nodes: typing.Tuple[Node, ...],
-        tolerance: float = None,
+        nodes: Tuple[Node, ...],
+        tolerance: Optional[float] = None,
         removeDuplicateElements: Boolean = True,
         keepHighLabels: Boolean = False,
     ):
@@ -348,7 +348,7 @@ class MeshEditPart(PartBase):
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def mergeNodes(
         self,
@@ -382,7 +382,7 @@ class MeshEditPart(PartBase):
         ...
 
     def orientElements(
-        self, pickedElements: typing.Tuple[MeshElement, ...], referenceRegion: MeshFace
+        self, pickedElements: Tuple[MeshElement, ...], referenceRegion: MeshFace
     ):
         """This method orients the stack direction of elements in a continuum shell or gasket mesh.
 
@@ -405,9 +405,9 @@ class MeshEditPart(PartBase):
     def renumberElement(
         self,
         elements: tuple = (),
-        startLabel: int = None,
-        increment: int = None,
-        offset: int = None,
+        startLabel: Optional[int] = None,
+        increment: Optional[int] = None,
+        offset: Optional[int] = None,
         labels: str = "",
     ):
         """This method assigns new labels to orphan mesh elements.
@@ -445,9 +445,9 @@ class MeshEditPart(PartBase):
     def renumberNode(
         self,
         nodes: tuple = (),
-        startLabel: int = None,
-        increment: int = None,
-        offset: int = None,
+        startLabel: Optional[int] = None,
+        increment: Optional[int] = None,
+        offset: Optional[int] = None,
         labels: str = "",
     ):
         """This method assigns new labels to orphan mesh nodes.
@@ -525,8 +525,8 @@ class MeshEditPart(PartBase):
         self,
         elements: str = "",
         divisionNumber: int = 2,
-        face: MeshFace = None,
-        edge: MeshEdge = None,
+        face: Optional[MeshFace] = None,
+        edge: Optional[MeshEdge] = None,
     ):
         """Subdivide a selection of elements on an orphan mesh part in one or more directions.
 

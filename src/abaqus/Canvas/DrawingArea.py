@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -15,11 +15,11 @@ class DrawingArea:
     """
 
     #: A Float specifying the width in millimeters.
-    width: float = None
+    width: Optional[float] = None
 
     #: A Float specifying the height in millimeters.
-    height: float = None
+    height: Optional[float] = None
 
     #: A pair of Floats specifying the coordinates of the bottom left hand corner in
     #: millimeters.
-    origin: typing.Tuple[float, ...] = (0.0, 0.0)
+    origin: Tuple[float, ...] = (0.0, 0.0)

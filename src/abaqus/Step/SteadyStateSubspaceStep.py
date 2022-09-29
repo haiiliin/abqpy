@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AnalysisStep import AnalysisStep
@@ -18,7 +18,8 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALL_FREQUENCIES, Boolean, COMPLEX, LOGARITHMIC, OFF,
+                                              ON, SOLVER_DEFAULT, SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -89,7 +90,7 @@ class SteadyStateSubspaceStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: SymbolicConstant = None
+    explicit: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -125,31 +126,31 @@ class SteadyStateSubspaceStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: SymbolicConstant = None
+    procedureType: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: typing.Dict[str, FieldOutputRequestState] = {}
+    fieldOutputRequestState: Dict[str, FieldOutputRequestState] = {}
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: typing.Dict[str, HistoryOutputRequestState] = {}
+    historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
 
     #: A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
-    monitor: Monitor = None
+    monitor: Optional[Monitor] = None
 
     #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: typing.Dict[str, AdaptiveMeshConstraintState] = {}
+    adaptiveMeshConstraintStates: Dict[str, AdaptiveMeshConstraintState] = {}
 
     #: A repository of AdaptiveMeshDomain objects.
-    adaptiveMeshDomains: typing.Dict[str, AdaptiveMeshDomain] = {}
+    adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
 
     #: A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
     control: Control = Control()
@@ -158,19 +159,19 @@ class SteadyStateSubspaceStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
+    boundaryConditionStates: Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: int = None
+    interactionStates: Optional[int] = None
 
     #: A repository of LoadState objects.
-    loadStates: typing.Dict[str, LoadState] = {}
+    loadStates: Dict[str, LoadState] = {}
 
     #: A repository of LoadCase objects.
-    loadCases: typing.Dict[str, LoadCase] = {}
+    loadCases: Dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
+    predefinedFieldStates: Dict[str, PredefinedFieldState] = {}
 
     @abaqus_method_doc
     def __init__(

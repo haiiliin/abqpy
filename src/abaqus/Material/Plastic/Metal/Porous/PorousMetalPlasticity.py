@@ -1,7 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .PorousFailureCriteria import PorousFailureCriteria
 from .VoidNucleation import VoidNucleation
-from .....UtilityAndView.abaqusConstants import *
+from .....UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
@@ -41,7 +43,7 @@ class PorousMetalPlasticity:
     def __init__(
         self,
         table: tuple,
-        relativeDensity: float = None,
+        relativeDensity: Optional[float] = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

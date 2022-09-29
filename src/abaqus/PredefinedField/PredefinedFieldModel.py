@@ -1,3 +1,5 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Field import Field
 from .FluidCavityPressure import FluidCavityPressure
@@ -10,7 +12,9 @@ from .Velocity import Velocity
 from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT_THROUGH_THICKNESS,
+                                              KINEMATIC_HARDENING, LAST_STEP, MAGNITUDE, OFF,
+                                              STEP_END, SymbolicConstant, UNIFORM, UNSET)
 
 
 @abaqus_class_doc
@@ -236,10 +240,10 @@ class PredefinedFieldModel(ModelBase):
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: SymbolicConstant = None,
-        beginIncrement: SymbolicConstant = None,
-        endStep: SymbolicConstant = None,
-        endIncrement: SymbolicConstant = None,
+        beginStep: Optional[SymbolicConstant] = None,
+        beginIncrement: Optional[SymbolicConstant] = None,
+        endStep: Optional[SymbolicConstant] = None,
+        endIncrement: Optional[SymbolicConstant] = None,
         interpolate: SymbolicConstant = OFF,
         magnitudes: str = "",
         absoluteExteriorTolerance: float = 0,
@@ -436,12 +440,12 @@ class PredefinedFieldModel(ModelBase):
         name: str,
         region: Region,
         distributionType: SymbolicConstant = UNIFORM,
-        sigma11: float = None,
-        sigma22: float = None,
-        sigma33: float = None,
-        sigma12: float = None,
-        sigma13: float = None,
-        sigma23: float = None,
+        sigma11: Optional[float] = None,
+        sigma22: Optional[float] = None,
+        sigma33: Optional[float] = None,
+        sigma12: Optional[float] = None,
+        sigma13: Optional[float] = None,
+        sigma23: Optional[float] = None,
     ):
         """This method creates a Stress predefined field object.
 
@@ -500,16 +504,16 @@ class PredefinedFieldModel(ModelBase):
         createStepName: str,
         region: Region,
         outputVariable: str = "",
-        fieldVariableNum: int = None,
+        fieldVariableNum: Optional[int] = None,
         distributionType: SymbolicConstant = UNIFORM,
         crossSectionDistribution: SymbolicConstant = CONSTANT_THROUGH_THICKNESS,
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: SymbolicConstant = None,
-        beginIncrement: SymbolicConstant = None,
-        endStep: SymbolicConstant = None,
-        endIncrement: SymbolicConstant = None,
+        beginStep: Optional[SymbolicConstant] = None,
+        beginIncrement: Optional[SymbolicConstant] = None,
+        endStep: Optional[SymbolicConstant] = None,
+        endIncrement: Optional[SymbolicConstant] = None,
         interpolate: SymbolicConstant = OFF,
         magnitudes: str = "",
     ):

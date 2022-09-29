@@ -1,3 +1,5 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -14,14 +16,14 @@ class SteadyStateModalFrequency:
 
     #: A Float specifying the lower limit of frequency range or a single frequency, in
     #: cycles/time.
-    lower: float = None
+    lower: Optional[float] = None
 
     #: A Float specifying the upper limit of frequency range, in cycles/time.
-    upper: float = None
+    upper: Optional[float] = None
 
     #: An Int specifying the number of points in the frequency range at which results should be
     #: given.
-    nPoints: int = None
+    nPoints: Optional[int] = None
 
     #: A Float specifying the bias parameter. When results are requested at four or more
     #: frequency points, Abaqus biases the results toward the ends of the intervals to obtain

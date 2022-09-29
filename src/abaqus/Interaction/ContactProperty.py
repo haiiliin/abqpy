@@ -1,4 +1,4 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .CohesiveBehavior import CohesiveBehavior
@@ -13,7 +13,11 @@ from .InteractionProperty import InteractionProperty
 from .NormalBehavior import NormalBehavior
 from .Radiation import Radiation
 from .ThermalConductance import ThermalConductance
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALL_NODES, BK, Boolean, COEFFICIENTS,
+                                              DAMPING_COEFFICIENT, DEFAULT, DISPLACEMENT, ENERGY,
+                                              FRACTION, FRICTIONLESS, HARD, ISOTROPIC, LINEAR,
+                                              MAX_STRESS, OFF, ON, STEP, SymbolicConstant, TABULAR,
+                                              UNCOUPLED, VCCT)
 
 
 @abaqus_class_doc
@@ -57,7 +61,7 @@ class ContactProperty(InteractionProperty):
     heatGeneration: GapHeatGeneration = GapHeatGeneration()
 
     #: A :py:class:`~abaqus.Interaction.Radiation.Radiation` object.
-    radiation: Radiation = None
+    radiation: Optional[Radiation] = None
 
     #: A :py:class:`~abaqus.Interaction.GeometricProperties.GeometricProperties` object.
     geometricProperties: GeometricProperties = GeometricProperties()
@@ -97,11 +101,11 @@ class ContactProperty(InteractionProperty):
         dependencies: int = 0,
         exponentialDecayDefinition: SymbolicConstant = COEFFICIENTS,
         table: tuple = (),
-        shearStressLimit: float = None,
+        shearStressLimit: Optional[float] = None,
         maximumElasticSlip: SymbolicConstant = FRACTION,
         fraction: float = 0,
         absoluteDistance: float = 0,
-        elasticSlipStiffness: float = None,
+        elasticSlipStiffness: Optional[float] = None,
         nStateDependentVars: int = 0,
         useProperties: Boolean = OFF,
     ):
@@ -182,10 +186,10 @@ class ContactProperty(InteractionProperty):
     @abaqus_method_doc
     def NormalBehavior(
         self,
-        contactStiffness: typing.Union[SymbolicConstant, float] = DEFAULT,
+        contactStiffness: Union[SymbolicConstant, float] = DEFAULT,
         pressureOverclosure: SymbolicConstant = HARD,
         allowSeparation: Boolean = ON,
-        maxStiffness: float = None,
+        maxStiffness: Optional[float] = None,
         table: tuple = (),
         constraintEnforcementMethod: SymbolicConstant = DEFAULT,
         overclosureFactor: float = 0,
@@ -293,7 +297,7 @@ class ContactProperty(InteractionProperty):
     def Damping(
         self,
         definition: SymbolicConstant = DAMPING_COEFFICIENT,
-        tangentFraction: typing.Union[SymbolicConstant, float] = DEFAULT,
+        tangentFraction: Union[SymbolicConstant, float] = DEFAULT,
         clearanceDependence: SymbolicConstant = STEP,
         table: tuple = (),
     ):
@@ -344,12 +348,12 @@ class ContactProperty(InteractionProperty):
         useMixedMode: Boolean = OFF,
         mixedModeType: SymbolicConstant = TABULAR,
         modeMixRatio: SymbolicConstant = ENERGY,
-        exponent: float = None,
+        exponent: Optional[float] = None,
         evolTempDep: Boolean = OFF,
         evolDependencies: int = 0,
         evolTable: tuple = (),
         useStabilization: Boolean = OFF,
-        viscosityCoef: float = None,
+        viscosityCoef: Optional[float] = None,
     ):
         """This method creates a ContactDamage object.
 
@@ -452,7 +456,7 @@ class ContactProperty(InteractionProperty):
         dependencies: int = 0,
         tolerance: float = 0,
         specifyUnstableCrackProp: SymbolicConstant = OFF,
-        unstableTolerance: typing.Union[SymbolicConstant, float] = DEFAULT,
+        unstableTolerance: Union[SymbolicConstant, float] = DEFAULT,
     ):
         """This method creates a FractureCriterion object.
 
@@ -702,12 +706,12 @@ class ContactProperty(InteractionProperty):
     def GeometricProperties(
         self,
         contactArea: float = 1,
-        padThickness: float = None,
-        trackingThickness: float = None,
+        padThickness: Optional[float] = None,
+        trackingThickness: Optional[float] = None,
         dependentVariables: int = 0,
         numProperties: int = 0,
         useUnsymmetricEqunProcedure: Boolean = OFF,
-        modelType: SymbolicConstant = None,
+        modelType: Optional[SymbolicConstant] = None,
     ):
         """This method creates a GeometricProperties object.
 

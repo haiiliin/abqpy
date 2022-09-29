@@ -1,5 +1,5 @@
 import re
-import typing
+from typing import Tuple
 from . import __version__ as version
 
 version = version[:4]
@@ -15,7 +15,7 @@ class AbaqusDoc:
         prefix='',
         suffix='',
         label=None,
-    ) -> typing.Tuple[str, str]:
+    ) -> Tuple[str, str]:
         """Generate a link to the Abaqus class documentation.
 
         Parameters
@@ -54,7 +54,7 @@ class AbaqusDoc:
         prefix='',
         suffix='',
         label=None,
-    ) -> typing.Tuple[str, str]:
+    ) -> Tuple[str, str]:
         """Generate a link to the Abaqus function documentation.
 
         Parameters

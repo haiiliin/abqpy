@@ -1,10 +1,13 @@
 from typing import Optional, Tuple
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Section import Section
 from .TransverseShearBeam import TransverseShearBeam
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ANALYSIS_DEFAULT, BEFORE_ANALYSIS, Boolean, CONSTANT,
+                                              DURING_ANALYSIS, FULLY, HALF, INTERPOLATED, LINEAR,
+                                              OFF, TAPERED)
 
 
 @abaqus_class_doc
