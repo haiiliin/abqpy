@@ -31,7 +31,7 @@ class BackwardCompatibility:
 
     In addition, the BackwardCompatibility object provides tools to assist you in
     determining the deprecated commands that have been used. For example, to determine the
-    deprecated commands used in the script createLug.py, use the following commands::2
+    deprecated commands used in the script createLug.py, use the following commands::
 
         backwardCompatibility.resetDeprecatedMethodsUsed()
         backwardCompatibility.resetDeprecatedMembersUsed()
