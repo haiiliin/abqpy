@@ -1,10 +1,10 @@
 from auto_all import start_all, end_all
 from typing import Union
 
+start_all()
+
 from .AbaqusBoolean import AbaqusBoolean
 from .SymbolicConstant import SymbolicConstant
-
-start_all()
 
 # Alias for methods type annotation
 Boolean = Union[AbaqusBoolean,bool]
