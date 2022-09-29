@@ -84,7 +84,6 @@ from abaqus.PathAndProbe.Path import Path
 
 
 def XYDataFromFile(
-    self,
     fileName: str,
     name: str = "",
     sourceDescription: str = "",
@@ -163,7 +162,6 @@ def XYDataFromFile(
 
 
 def XYDataFromFreeBody(
-    self,
     odb: Odb,
     force: Boolean = ON,
     moment: Boolean = OFF,
@@ -220,7 +218,6 @@ def XYDataFromFreeBody(
 
 
 def XYDataFromHistory(
-    self,
     odb: Odb,
     outputVariableName: str,
     steps: tuple,
@@ -298,7 +295,6 @@ def XYDataFromHistory(
 
 
 def XYDataFromPath(
-    self,
     path: Path,
     name: str,
     includeIntersections: Boolean,
@@ -451,7 +447,6 @@ def XYDataFromPath(
 
 
 def XYDataFromShellThickness(
-    self,
     odb: Odb,
     outputPosition: Literal[ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, NODAL],
     variable: Tuple[
@@ -572,7 +567,6 @@ def XYDataFromShellThickness(
 
 
 def xyDataListFromField(
-    self,
     odb: Odb,
     outputPosition: Literal[ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, NODAL],
     variable: Tuple[
