@@ -2,6 +2,7 @@ from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
+from ..Datum.DatumCsys import DatumCsys
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import *
 
@@ -47,7 +48,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         ur3: Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
         motionType: SymbolicConstant = INDEPENDENT,
-        localCsys: Optional[str] = None,
+        localCsys: Optional[DatumCsys] = None,
     ):
         """This method creates a DisplacementAdaptiveMeshConstraint object.
 
@@ -170,12 +171,12 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     def setValuesInStep(
         self,
         stepName: str,
-        u1: Union[SymbolicConstant, float] = None,
-        u2: Union[SymbolicConstant, float] = None,
-        u3: Union[SymbolicConstant, float] = None,
-        ur1: Union[SymbolicConstant, float] = None,
-        ur2: Union[SymbolicConstant, float] = None,
-        ur3: Union[SymbolicConstant, float] = None,
+        u1: Union[SymbolicConstant, float, None] = None,
+        u2: Union[SymbolicConstant, float, None] = None,
+        u3: Union[SymbolicConstant, float, None] = None,
+        ur1: Union[SymbolicConstant, float, None] = None,
+        ur2: Union[SymbolicConstant, float, None] = None,
+        ur3: Union[SymbolicConstant, float, None] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing
