@@ -1,5 +1,7 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import AXIS_3, ROTATION_NONE, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -63,7 +65,7 @@ class SectionLayer:
     #: for the relative orientation of this layer. If this reference is valid it is used as the
     #: relative orientation of the layer, otherwise the **orientAngle** is used as described. The
     #: default value is None.
-    orientation: SymbolicConstant = None
+    orientation: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the field specifying the additional rotation. The
     #: default value is "".
@@ -80,7 +82,7 @@ class SectionLayer:
         angle: float = 0,
         additionalRotationType: SymbolicConstant = ROTATION_NONE,
         plyName: str = "",
-        orientation: SymbolicConstant = None,
+        orientation: Optional[SymbolicConstant] = None,
         additionalRotationField: str = "",
     ):
         """This method creates a SectionLayer object.

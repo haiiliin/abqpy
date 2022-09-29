@@ -1,9 +1,10 @@
-import typing
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
+from ..Datum.DatumCsys import DatumCsys
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import INDEPENDENT, MECHANICAL, SymbolicConstant, UNSET
 
 
 @abaqus_class_doc
@@ -23,7 +24,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
 
     #: A SymbolicConstant specifying the category of the adaptive mesh constraint. Possible
     #: values are MECHANICAL and THERMAL.
-    category: SymbolicConstant = None
+    category: Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh constraint is applied.
     region: Region = Region()
@@ -31,7 +32,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     #: None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
     #: constraint's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: str = None
+    localCsys: Optional[str] = None
 
     @abaqus_method_doc
     def __init__(
@@ -39,15 +40,15 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         name: str,
         createStepName: str,
         region: Region,
-        u1: typing.Union[SymbolicConstant, float] = UNSET,
-        u2: typing.Union[SymbolicConstant, float] = UNSET,
-        u3: typing.Union[SymbolicConstant, float] = UNSET,
-        ur1: typing.Union[SymbolicConstant, float] = UNSET,
-        ur2: typing.Union[SymbolicConstant, float] = UNSET,
-        ur3: typing.Union[SymbolicConstant, float] = UNSET,
+        u1: Union[SymbolicConstant, float] = UNSET,
+        u2: Union[SymbolicConstant, float] = UNSET,
+        u3: Union[SymbolicConstant, float] = UNSET,
+        ur1: Union[SymbolicConstant, float] = UNSET,
+        ur2: Union[SymbolicConstant, float] = UNSET,
+        ur3: Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
         motionType: SymbolicConstant = INDEPENDENT,
-        localCsys: str = None,
+        localCsys: Optional[DatumCsys] = None,
     ):
         """This method creates a DisplacementAdaptiveMeshConstraint object.
 
@@ -112,15 +113,15 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     @abaqus_method_doc
     def setValues(
         self,
-        u1: typing.Union[SymbolicConstant, float] = UNSET,
-        u2: typing.Union[SymbolicConstant, float] = UNSET,
-        u3: typing.Union[SymbolicConstant, float] = UNSET,
-        ur1: typing.Union[SymbolicConstant, float] = UNSET,
-        ur2: typing.Union[SymbolicConstant, float] = UNSET,
-        ur3: typing.Union[SymbolicConstant, float] = UNSET,
+        u1: Union[SymbolicConstant, float] = UNSET,
+        u2: Union[SymbolicConstant, float] = UNSET,
+        u3: Union[SymbolicConstant, float] = UNSET,
+        ur1: Union[SymbolicConstant, float] = UNSET,
+        ur2: Union[SymbolicConstant, float] = UNSET,
+        ur3: Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
         motionType: SymbolicConstant = INDEPENDENT,
-        localCsys: str = None,
+        localCsys: Optional[str] = None,
     ):
         """This method modifies the data for an existing DisplacementAdaptiveMeshConstraint object
         in the step where it is created.
@@ -170,12 +171,12 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     def setValuesInStep(
         self,
         stepName: str,
-        u1: typing.Union[SymbolicConstant, float] = None,
-        u2: typing.Union[SymbolicConstant, float] = None,
-        u3: typing.Union[SymbolicConstant, float] = None,
-        ur1: typing.Union[SymbolicConstant, float] = None,
-        ur2: typing.Union[SymbolicConstant, float] = None,
-        ur3: typing.Union[SymbolicConstant, float] = None,
+        u1: Union[SymbolicConstant, float, None] = None,
+        u2: Union[SymbolicConstant, float, None] = None,
+        u3: Union[SymbolicConstant, float, None] = None,
+        ur1: Union[SymbolicConstant, float, None] = None,
+        ur2: Union[SymbolicConstant, float, None] = None,
+        ur3: Union[SymbolicConstant, float, None] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing

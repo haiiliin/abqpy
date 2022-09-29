@@ -36,7 +36,7 @@ setuptools.setup(
         "write_to": "src/abqpy/_version.py",
         "fallback_version": "2022.0.0-unknown",
     },
-    setup_requires=['setuptools_scm'],
+    setup_requires=['auto-all'],
     python_requires='>=3.7',
     package_dir={'': 'src'},
     install_requires=['typing-extensions', 'setuptools_scm'],

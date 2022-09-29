@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .Region import Region
 
-RegionArray = typing.List[Region]
+RegionArray = List[Region]

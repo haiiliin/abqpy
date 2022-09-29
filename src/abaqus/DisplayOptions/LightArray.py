@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .Light import Light
 
-LightArray = typing.List[Light]
+LightArray = List[Light]

@@ -1,7 +1,10 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .PredefinedField import PredefinedField
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (CONSTANT_THROUGH_THICKNESS, OFF, SymbolicConstant,
+                                              UNIFORM, UNSET)
 
 
 @abaqus_class_doc
@@ -52,16 +55,16 @@ class Field(PredefinedField):
         createStepName: str,
         region: Region,
         outputVariable: str = "",
-        fieldVariableNum: int = None,
+        fieldVariableNum: Optional[int] = None,
         distributionType: SymbolicConstant = UNIFORM,
         crossSectionDistribution: SymbolicConstant = CONSTANT_THROUGH_THICKNESS,
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: SymbolicConstant = None,
-        beginIncrement: SymbolicConstant = None,
-        endStep: SymbolicConstant = None,
-        endIncrement: SymbolicConstant = None,
+        beginStep: Optional[SymbolicConstant] = None,
+        beginIncrement: Optional[SymbolicConstant] = None,
+        endStep: Optional[SymbolicConstant] = None,
+        endIncrement: Optional[SymbolicConstant] = None,
         interpolate: SymbolicConstant = OFF,
         magnitudes: str = "",
     ):
@@ -185,16 +188,16 @@ class Field(PredefinedField):
     def setValues(
         self,
         outputVariable: str = "",
-        fieldVariableNum: int = None,
+        fieldVariableNum: Optional[int] = None,
         distributionType: SymbolicConstant = UNIFORM,
         crossSectionDistribution: SymbolicConstant = CONSTANT_THROUGH_THICKNESS,
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: SymbolicConstant = None,
-        beginIncrement: SymbolicConstant = None,
-        endStep: SymbolicConstant = None,
-        endIncrement: SymbolicConstant = None,
+        beginStep: Optional[SymbolicConstant] = None,
+        beginIncrement: Optional[SymbolicConstant] = None,
+        endStep: Optional[SymbolicConstant] = None,
+        endIncrement: Optional[SymbolicConstant] = None,
         interpolate: SymbolicConstant = OFF,
         magnitudes: str = "",
     ):
@@ -280,14 +283,14 @@ class Field(PredefinedField):
         self,
         stepName: str,
         outputVariable: str = "",
-        fieldVariableNum: int = None,
+        fieldVariableNum: Optional[int] = None,
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: SymbolicConstant = None,
-        beginIncrement: SymbolicConstant = None,
-        endStep: SymbolicConstant = None,
-        endIncrement: SymbolicConstant = None,
+        beginStep: Optional[SymbolicConstant] = None,
+        beginIncrement: Optional[SymbolicConstant] = None,
+        endStep: Optional[SymbolicConstant] = None,
+        endIncrement: Optional[SymbolicConstant] = None,
         interpolate: SymbolicConstant = OFF,
         magnitudes: str = "",
     ):

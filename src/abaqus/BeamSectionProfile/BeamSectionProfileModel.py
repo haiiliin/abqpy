@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ArbitraryProfile import ArbitraryProfile
@@ -14,7 +14,7 @@ from .RectangularProfile import RectangularProfile
 from .TProfile import TProfile
 from .TrapezoidalProfile import TrapezoidalProfile
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean
 
 
 @abaqus_class_doc
@@ -46,10 +46,10 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-        typing.List[Profile]
+        List[Profile]
             A list of Profile objects.
         """
-        profiles: typing.Dict[str, Profile] = {}
+        profiles: Dict[str, Profile] = {}
         self.profiles.update(profiles)
         return profiles
 

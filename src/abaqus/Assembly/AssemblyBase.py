@@ -1,4 +1,4 @@
-import typing
+from typing import Union, overload, Dict, List, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AssemblyFeature import AssemblyFeature
@@ -23,7 +23,7 @@ from ..Region.Set import Set
 from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import ALL_EDGES, Boolean, LOW, OFF, ON, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -41,13 +41,13 @@ class AssemblyBase(AssemblyFeature):
 
     #: An Int specifying that feature parameters have been modified but that the assembly has
     #: not been regenerated. Possible values are 0 and 1.
-    isOutOfDate: int = None
+    isOutOfDate: Optional[int] = None
 
     #: A Float specifying which gives an indication when the assembly was last modified.
-    timeStamp: float = None
+    timeStamp: Optional[float] = None
 
     #: An Int specifying whether the assembly is locked or not. Possible values are 0 and 1.
-    isLocked: int = None
+    isLocked: Optional[int] = None
 
     #: A Boolean specifying whether the positioning constraints in the assembly should be
     #: regenerated together before regenerating other assembly features. The default value is
@@ -72,57 +72,57 @@ class AssemblyBase(AssemblyFeature):
     nodes: MeshNodeArray = MeshNodeArray([])
 
     #: A repository of PartInstance objects.
-    instances: typing.Dict[str, PartInstance] = {}
+    instances: Dict[str, PartInstance] = {}
 
     #: A repository of Datum objects specifying all Datum objects in the assembly.
-    datums: typing.List[Datum] = []
+    datums: List[Datum] = []
 
     #: A repository of Feature objects specifying all Feature objects in the assembly.
-    features: typing.Dict[str, AssemblyFeature] = {}
+    features: Dict[str, AssemblyFeature] = {}
 
     #: A repository of Feature objects specifying all Feature objects in the assembly.The
     #: Feature objects in the featuresById repository are the same as the Feature objects in
     #: the features repository. However, the key to the objects in the featuresById repository
     #: is an integer specifying the **ID**, whereas the key to the objects in the features
     #: repository is a string specifying the **name**.
-    featuresById: typing.Dict[str, AssemblyFeature] = {}
+    featuresById: Dict[str, AssemblyFeature] = {}
 
     #: A repository of Surface objects specifying for more information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    surfaces: typing.Dict[str, Surface] = {}
+    surfaces: Dict[str, Surface] = {}
 
     #: A repository of Surface objects specifying for more information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    allSurfaces: typing.Dict[str, Surface] = {}
+    allSurfaces: Dict[str, Surface] = {}
 
     #: A repository of Surface objects specifying picked regions.
-    allInternalSurfaces: typing.Dict[str, Surface] = {}
+    allInternalSurfaces: Dict[str, Surface] = {}
 
     #: A repository of Set objects.
-    sets: typing.Dict[str, Set] = {}
+    sets: Dict[str, Set] = {}
 
     #: A repository of Set objects specifying for more information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    allSets: typing.Dict[str, Set] = {}
+    allSets: Dict[str, Set] = {}
 
     #: A repository of Set objects specifying picked regions.
-    allInternalSets: typing.Dict[str, Set] = {}
+    allInternalSets: Dict[str, Set] = {}
 
     #: A repository of Skin objects specifying the skins created on the assembly.
-    skins: typing.Dict[str, Skin] = {}
+    skins: Dict[str, Skin] = {}
 
     #: A repository of Stringer objects specifying the stringers created on the assembly.
-    stringers: typing.Dict[str, Stringer] = {}
+    stringers: Dict[str, Stringer] = {}
 
     #: A repository of ReferencePoint objects.
-    referencePoints: typing.Dict[str, ReferencePoint] = {}
+    referencePoints: Dict[str, ReferencePoint] = {}
 
     #: A repository of ModelInstance objects.
-    modelInstances: typing.Dict[str, ModelInstance] = {}
+    modelInstances: Dict[str, ModelInstance] = {}
 
     #: A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object specifying the PartInstances and A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object specifying
     #: the ModelInstances.
-    allInstances: typing.Dict[str, typing.Union[PartInstance, ModelInstance]] = {}
+    allInstances: Dict[str, Union[PartInstance, ModelInstance]] = {}
 
     #: An :py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature` object.
     engineeringFeatures: EngineeringFeature = EngineeringFeature()
@@ -136,7 +136,7 @@ class AssemblyBase(AssemblyFeature):
     #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
     sectionAssignments: SectionAssignmentArray = []
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def Instance(
         self, name: str, part: Part, autoOffset: Boolean = OFF, dependent: Boolean = OFF
@@ -169,7 +169,7 @@ class AssemblyBase(AssemblyFeature):
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def Instance(
         self, name: str, model: AssemblyModel, autoOffset: Boolean = OFF
@@ -202,7 +202,7 @@ class AssemblyBase(AssemblyFeature):
     @abaqus_method_doc
     def Instance(
         self, name: str, *args, **kwargs
-    ) -> typing.Union[PartInstance, ModelInstance]:
+    ) -> Union[PartInstance, ModelInstance]:
         """This method creates a PartInstance object and puts it into the instances repository.
 
         .. note:: 
@@ -263,7 +263,7 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def excludeFromSimulation(self, instances: typing.Tuple[PartInstance, ...], exclude: str):
+    def excludeFromSimulation(self, instances: Tuple[PartInstance, ...], exclude: str):
         """This method excludes the specified part instances from the analysis.
 
         Parameters
@@ -446,7 +446,7 @@ class AssemblyBase(AssemblyFeature):
 
         Returns
         -------
-        typing.Tuple[float, float]
+        Tuple[float, float]
             A tuple of three Floats representing the coordinates of the specified point.
         """
         ...
@@ -490,7 +490,7 @@ class AssemblyBase(AssemblyFeature):
 
         Returns
         -------
-        typing.Tuple[dict, ...]
+        Tuple[dict, ...]
             A tuple of dictionary objects. Each dictionary contains five items with the following keys:
         
             - **edge**: An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the attachment line.
@@ -517,7 +517,7 @@ class AssemblyBase(AssemblyFeature):
 
         Returns
         -------
-        typing.Tuple[str, ...]
+        Tuple[str, ...]
             A tuple of strings representing the section names. If no section names are found, the
             tuple will contain one empty string.
         """
@@ -628,7 +628,7 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def makeDependent(self, instances: typing.Tuple[PartInstance, ...]):
+    def makeDependent(self, instances: Tuple[PartInstance, ...]):
         """This method converts the specified part instances from independent to dependent part
         instances.
 
@@ -640,7 +640,7 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def makeIndependent(self, instances: typing.Tuple[PartInstance, ...]):
+    def makeIndependent(self, instances: Tuple[PartInstance, ...]):
         """This method converts the specified part instances from dependent to independent part
         instances.
 
@@ -666,7 +666,7 @@ class AssemblyBase(AssemblyFeature):
         self,
         sketch: str,
         filter: SymbolicConstant = ALL_EDGES,
-        upToFeature: AssemblyFeature = None,
+        upToFeature: Optional[AssemblyFeature] = None,
         edges: tuple = (),
         vertices: tuple = (),
     ):
@@ -818,7 +818,7 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def unlinkInstances(self, instances: typing.Tuple[PartInstance, ...]):
+    def unlinkInstances(self, instances: Tuple[PartInstance, ...]):
         """This method converts the specified PartInstance objects from linked child instances to
         regular instances. The parts associated with the selected instances will be converted to
         regular parts as well.
@@ -831,7 +831,7 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def writeAcisFile(self, fileName: str, version: float = None):
+    def writeAcisFile(self, fileName: str, version: Optional[float] = None):
         """This method exports the assembly to a named file in ACIS part (SAT) or assembly (ASAT)
         format.
 
@@ -885,9 +885,9 @@ class AssemblyBase(AssemblyFeature):
     @abaqus_method_doc
     def setMeshNumberingControl(
         self,
-        instances: typing.Tuple[PartInstance, ...],
-        startNodeLabel: int = None,
-        startElemLabel: int = None,
+        instances: Tuple[PartInstance, ...],
+        startNodeLabel: Optional[int] = None,
+        startElemLabel: Optional[int] = None,
     ):
         """This method changes the start node and/or element labels on the specified independent
         part instances before or after Abaqus/CAE generates the meshes. For the meshed
@@ -908,11 +908,11 @@ class AssemblyBase(AssemblyFeature):
     @abaqus_method_doc
     def copyMeshPattern(
         self,
-        elements: typing.Tuple[MeshElement, ...] = (),
-        faces: typing.Tuple[Face, ...] = (),
-        elemFaces: typing.Tuple[MeshFace, ...] = (),
-        targetFace: MeshFace = None,
-        nodes: typing.Tuple[MeshNode, ...] = (),
+        elements: Tuple[MeshElement, ...] = (),
+        faces: Tuple[Face, ...] = (),
+        elemFaces: Tuple[MeshFace, ...] = (),
+        targetFace: Optional[MeshFace] = None,
+        nodes: Tuple[MeshNode, ...] = (),
         coordinates: tuple = (),
     ):
         """This method copies a mesh pattern from a source region consisting of a set of shell
@@ -946,7 +946,7 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def smoothNodes(
-        self, nodes: typing.Tuple[MeshNode, ...] = ()
+        self, nodes: Tuple[MeshNode, ...] = ()
     ):
         """This method smooths the given nodes of a native mesh, moving them locally to a more
         optimal location that improves the quality of the mesh

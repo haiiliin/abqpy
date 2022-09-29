@@ -1,12 +1,31 @@
 from __future__ import annotations
 
-from typing import Optional, Tuple, Union, List, Dict, overload
+from typing import Union, Optional, Tuple, List, Dict, overload
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .QuantityType import QuantityType
 from ..PathAndProbe.Path import Path
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ABSOLUTE, ADD, AVERAGE, AVERAGE_ALL, Boolean,
+                                              COMPLEX_MAGNITUDE, COMPLEX_PHASE,
+                                              COMPLEX_VAL_AT_ANGLE, COMPONENT, COSINE, DEFORMED,
+                                              DEG2RAD, DIVIDE, ELEMENT_CENTROID, ELEMENT_FACE,
+                                              ELEMENT_NODAL, EXPONENTIAL, GENERAL_PARTICLE,
+                                              HYPERBOLIC_COSINE, HYPERBOLIC_SINE,
+                                              HYPERBOLIC_TANGENT, IMAGINARY, INTEGRATION_POINT,
+                                              INVARIANT, INVERSE_COSINE, INVERSE_SINE,
+                                              INVERSE_TANGENT, LOG, MAXIMUM, MAXIMUM_ENVELOPE,
+                                              MINIMUM, MINIMUM_ENVELOPE, MULTIPLY, NATURAL_LOG,
+                                              NODAL, NORMALIZE, NORM_DISTANCE, OFF, ON, PATH_POINTS,
+                                              POWER, RAD2DEG, RANGE, RANGE_ALL, REAL, SEQ_ID, SINE,
+                                              SMOOTH, SQUARE_ROOT, SRSS, SUBTRACT, SWAP,
+                                              SymbolicConstant, TANGENT, TRUE_DISTANCE,
+                                              TRUE_DISTANCE_X, TRUE_DISTANCE_Y, TRUE_DISTANCE_Z,
+                                              UNARY_NEGATIVE, UNDEFORMED, UNIFORM_SPACING,
+                                              WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE,
+                                              WHOLE_REGION, X_COORDINATE, Y_COORDINATE,
+                                              Z_COORDINATE)
 
 
 class Odb:

@@ -1,7 +1,7 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, OFF, ON, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -21,19 +21,19 @@ class Control:
         allowPropagation: Boolean = ON,
         resetDefaultValues: Boolean = OFF,
         discontinuous: Boolean = OFF,
-        constraints: typing.Union[SymbolicConstant, float] = DEFAULT,
-        lineSearch: typing.Union[SymbolicConstant, float] = DEFAULT,
-        timeIncrementation: typing.Union[SymbolicConstant, float] = DEFAULT,
-        directCyclic: typing.Union[SymbolicConstant, float] = DEFAULT,
-        concentrationField: typing.Union[SymbolicConstant, float] = DEFAULT,
-        displacementField: typing.Union[SymbolicConstant, float] = DEFAULT,
-        electricalPotentialField: typing.Union[SymbolicConstant, float] = DEFAULT,
-        globalField: typing.Union[SymbolicConstant, float] = DEFAULT,
-        hydrostaticFluidPressureField: typing.Union[SymbolicConstant, float] = DEFAULT,
-        poreFluidPressureField: typing.Union[SymbolicConstant, float] = DEFAULT,
-        rotationField: typing.Union[SymbolicConstant, float] = DEFAULT,
-        temperatureField: typing.Union[SymbolicConstant, float] = DEFAULT,
-        vcctLinearScaling: typing.Union[SymbolicConstant, float] = DEFAULT,
+        constraints: Union[SymbolicConstant, float] = DEFAULT,
+        lineSearch: Union[SymbolicConstant, float] = DEFAULT,
+        timeIncrementation: Union[SymbolicConstant, float] = DEFAULT,
+        directCyclic: Union[SymbolicConstant, float] = DEFAULT,
+        concentrationField: Union[SymbolicConstant, float] = DEFAULT,
+        displacementField: Union[SymbolicConstant, float] = DEFAULT,
+        electricalPotentialField: Union[SymbolicConstant, float] = DEFAULT,
+        globalField: Union[SymbolicConstant, float] = DEFAULT,
+        hydrostaticFluidPressureField: Union[SymbolicConstant, float] = DEFAULT,
+        poreFluidPressureField: Union[SymbolicConstant, float] = DEFAULT,
+        rotationField: Union[SymbolicConstant, float] = DEFAULT,
+        temperatureField: Union[SymbolicConstant, float] = DEFAULT,
+        vcctLinearScaling: Union[SymbolicConstant, float] = DEFAULT,
     ):
         """This method modifies the Control object.
 

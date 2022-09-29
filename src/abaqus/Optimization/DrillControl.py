@@ -1,7 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, MAXIMUM, ON, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -32,14 +34,21 @@ class DrillControl(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: int = None
+    csys: Optional[int] = None
 
     #: A Float specifying the draw angle. The default value is 0.0.
     drawAngle: float = 0
 
     #: None or a Region object specifying the master point used when **masterPointDetermination** is
     #: SPECIFY. The default value is None.
+<<<<<<< HEAD
     masterPoint: str = None
+=======
+    #:
+    #: .. versionchanged:: 2022
+    #:    The attribute `masterPoint` was renamed to `mainPoint`.
+    mainPoint: Optional[str] = None
+>>>>>>> cfc3482e (Update type hints (#1762))
 
     #: A SymbolicConstant specifying the rule for assigning point priority. Possible values are
     #: MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
@@ -70,10 +79,15 @@ class DrillControl(GeometricRestriction):
         name: str,
         clientDirection: tuple,
         region: Region,
-        csys: int = None,
+        csys: Optional[int] = None,
         drawAngle: float = 0,
+<<<<<<< HEAD
         masterPoint: str = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
+=======
+        mainPoint: Optional[str] = None,
+        mainPointDetermination: SymbolicConstant = MAXIMUM,
+>>>>>>> cfc3482e (Update type hints (#1762))
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -136,10 +150,15 @@ class DrillControl(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
-        csys: int = None,
+        csys: Optional[int] = None,
         drawAngle: float = 0,
+<<<<<<< HEAD
         masterPoint: str = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
+=======
+        mainPoint: Optional[str] = None,
+        mainPointDetermination: SymbolicConstant = MAXIMUM,
+>>>>>>> cfc3482e (Update type hints (#1762))
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,

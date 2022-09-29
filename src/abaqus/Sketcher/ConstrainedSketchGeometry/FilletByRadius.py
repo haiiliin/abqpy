@@ -1,4 +1,4 @@
-import typing
+from typing import Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
@@ -11,9 +11,9 @@ class FilletByRadius(ConstrainedSketchGeometry):
         self,
         radius: float,
         curve1: "ConstrainedSketchGeometry",
-        nearPoint1: typing.Tuple[float, ...],
+        nearPoint1: Tuple[float, ...],
         curve2: "ConstrainedSketchGeometry",
-        nearPoint2: typing.Tuple[float, ...],
+        nearPoint2: Tuple[float, ...],
     ):
         """This method constructs a fillet arc of a given radius between two curves. The fillet is
         added to the geometry repository of the ConstrainedSketch object.

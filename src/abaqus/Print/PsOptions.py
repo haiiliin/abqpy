@@ -1,5 +1,6 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, DPI_150, LETTER, MEDIUM, ON, PORTRAIT,
+                                              PS_IF_AVAILABLE, SymbolicConstant, VECTOR)
 from .._OptionsBase import _OptionsBase
 
 

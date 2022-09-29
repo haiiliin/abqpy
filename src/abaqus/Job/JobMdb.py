@@ -1,9 +1,13 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .JobFromInputFile import JobFromInputFile
 from .ModelJob import ModelJob
 from .OptimizationProcess import OptimizationProcess
 from ..Mdb.MdbBase import MdbBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, DOMAIN, OFF,
+                                              OPT_DATASAVE_SPECIFY_CYCLE, PERCENTAGE, SINGLE,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -322,7 +326,7 @@ class JobMdb(MdbBase):
         saveInitial: Boolean = True,
         saveFirst: Boolean = True,
         saveLast: Boolean = True,
-        saveEvery: int = None,
+        saveEvery: Optional[int] = None,
     ) -> OptimizationProcess:
         """This method creates an OptimizationProcess object.
 

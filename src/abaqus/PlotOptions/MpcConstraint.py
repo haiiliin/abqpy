@@ -20,7 +20,7 @@ class MpcConstraint:
 
         Returns
         -------
-        typing.Tuple[float, ...]
+        Tuple[float, ...]
             A tuple containing coordinates of the nodes pertaining to the constraint.
         """
         # TODO: Implement this method

@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AnalysisStep import AnalysisStep
@@ -15,7 +15,9 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AUTOMATIC, Boolean, FULL_NEWTON, IMPLICIT, LINEAR,
+                                              NONE, OFF, PROPAGATED, SOLVER_DEFAULT, STEP,
+                                              SymbolicConstant, TRANSIENT)
 
 
 @abaqus_class_doc
@@ -58,7 +60,7 @@ class CoupledTempDisplacementStep(AnalysisStep):
     #: A Float specifying the damping intensity of the automatic damping algorithm if the
     #: problem is expected to be unstable and **stabilizationMethod** ≠ NONE. The default value is
     #: 2×10-4.
-    stabilizationMagnitude: float = None
+    stabilizationMagnitude: Optional[float] = None
 
     #: A SymbolicConstant specifying the time incrementation method to be used. Possible values
     #: are FIXED and AUTOMATIC. The default value is AUTOMATIC.
@@ -69,15 +71,15 @@ class CoupledTempDisplacementStep(AnalysisStep):
 
     #: A Float specifying the initial time increment. The default value is the total time
     #: period for the step.
-    initialInc: float = None
+    initialInc: Optional[float] = None
 
     #: A Float specifying the minimum time increment allowed. The default value is the smaller
     #: of the suggested initial time increment or 10−5 times the total time period.
-    minInc: float = None
+    minInc: Optional[float] = None
 
     #: A Float specifying the maximum time increment allowed. The default value is the total
     #: time period for the step.
-    maxInc: float = None
+    maxInc: Optional[float] = None
 
     #: A Float specifying the maximum temperature change to be allowed in an increment in a
     #: transient analysis. The default value is 0.0.
@@ -134,7 +136,7 @@ class CoupledTempDisplacementStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: SymbolicConstant = None
+    explicit: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -170,31 +172,31 @@ class CoupledTempDisplacementStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: SymbolicConstant = None
+    procedureType: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: typing.Dict[str, FieldOutputRequestState] = {}
+    fieldOutputRequestState: Dict[str, FieldOutputRequestState] = {}
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: typing.Dict[str, HistoryOutputRequestState] = {}
+    historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
 
     #: A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
-    monitor: Monitor = None
+    monitor: Optional[Monitor] = None
 
     #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: typing.Dict[str, AdaptiveMeshConstraintState] = {}
+    adaptiveMeshConstraintStates: Dict[str, AdaptiveMeshConstraintState] = {}
 
     #: A repository of AdaptiveMeshDomain objects.
-    adaptiveMeshDomains: typing.Dict[str, AdaptiveMeshDomain] = {}
+    adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
 
     #: A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
     control: Control = Control()
@@ -203,19 +205,19 @@ class CoupledTempDisplacementStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
+    boundaryConditionStates: Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: int = None
+    interactionStates: Optional[int] = None
 
     #: A repository of LoadState objects.
-    loadStates: typing.Dict[str, LoadState] = {}
+    loadStates: Dict[str, LoadState] = {}
 
     #: A repository of LoadCase objects.
-    loadCases: typing.Dict[str, LoadCase] = {}
+    loadCases: Dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
+    predefinedFieldStates: Dict[str, PredefinedFieldState] = {}
 
     @abaqus_method_doc
     def __init__(
@@ -227,12 +229,12 @@ class CoupledTempDisplacementStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         stabilizationMethod: SymbolicConstant = NONE,
-        stabilizationMagnitude: float = None,
+        stabilizationMagnitude: Optional[float] = None,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
         maxNumInc: int = 100,
-        initialInc: float = None,
-        minInc: float = None,
-        maxInc: float = None,
+        initialInc: Optional[float] = None,
+        minInc: Optional[float] = None,
+        maxInc: Optional[float] = None,
         deltmx: float = 0,
         cetol: float = 0,
         creepIntegration: SymbolicConstant = IMPLICIT,
@@ -349,12 +351,12 @@ class CoupledTempDisplacementStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         stabilizationMethod: SymbolicConstant = NONE,
-        stabilizationMagnitude: float = None,
+        stabilizationMagnitude: Optional[float] = None,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
         maxNumInc: int = 100,
-        initialInc: float = None,
-        minInc: float = None,
-        maxInc: float = None,
+        initialInc: Optional[float] = None,
+        minInc: Optional[float] = None,
+        maxInc: Optional[float] = None,
         deltmx: float = 0,
         cetol: float = 0,
         creepIntegration: SymbolicConstant = IMPLICIT,
