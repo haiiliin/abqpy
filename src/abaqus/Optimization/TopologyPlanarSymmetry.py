@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
@@ -33,7 +33,7 @@ class TopologyPlanarSymmetry(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: typing.Optional[int] = None
+    csys: Optional[int] = None
 
     #: A Boolean specifying whether to ignore frozen areas. The default value is OFF.
     ignoreFrozenArea: Boolean = OFF
@@ -44,7 +44,7 @@ class TopologyPlanarSymmetry(GeometricRestriction):
         name: str,
         region: Region,
         axis: SymbolicConstant = AXIS_1,
-        csys: typing.Optional[int] = None,
+        csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ):
         """This method creates a TopologyPlanarSymmetry object.
@@ -83,7 +83,7 @@ class TopologyPlanarSymmetry(GeometricRestriction):
     def setValues(
         self,
         axis: SymbolicConstant = AXIS_1,
-        csys: typing.Optional[int] = None,
+        csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ):
         """This method modifies the TopologyPlanarSymmetry object.

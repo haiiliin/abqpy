@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
@@ -35,7 +35,7 @@ class NormalBehavior:
     #: **pressureOverclosure** = HARD when **constraintEnforcementMethod** = AUGMENTED_LAGRANGE or
     #: PENALTY. A value of DEFAULT is valid only when the later conditions are met. A value of
     #: zero is equivalent to specifying DEFAULT. The default value is DEFAULT.
-    contactStiffness: typing.Union[SymbolicConstant, float] = DEFAULT
+    contactStiffness: Union[SymbolicConstant, float] = DEFAULT
 
     #: A SymbolicConstant specifying the pressure-overclosure relationship to be used. Possible
     #: values are HARD, EXPONENTIAL, LINEAR, TABULAR, and SCALE_FACTOR. The default value is
@@ -47,7 +47,7 @@ class NormalBehavior:
 
     #: None or a Float specifying the maximum stiffness. If **maxStiffness** = None, there is no
     #: upper limit. The default value is None.
-    maxStiffness: typing.Optional[float] = None
+    maxStiffness: Optional[float] = None
 
     #: A sequence of sequences of Floats specifying the normal behavior properties. This
     #: argument is valid only for **pressureOverclosure** = EXPONENTIAL or TABULAR. The items in
@@ -105,10 +105,10 @@ class NormalBehavior:
     @abaqus_method_doc
     def __init__(
         self,
-        contactStiffness: typing.Union[SymbolicConstant, float] = DEFAULT,
+        contactStiffness: Union[SymbolicConstant, float] = DEFAULT,
         pressureOverclosure: SymbolicConstant = HARD,
         allowSeparation: Boolean = ON,
-        maxStiffness: typing.Optional[float] = None,
+        maxStiffness: Optional[float] = None,
         table: tuple = (),
         constraintEnforcementMethod: SymbolicConstant = DEFAULT,
         overclosureFactor: float = 0,

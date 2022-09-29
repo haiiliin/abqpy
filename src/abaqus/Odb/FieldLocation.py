@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 from .SectionPointArray import SectionPointArray
 from ..UtilityAndView.abaqusConstants import *
@@ -25,7 +25,7 @@ class FieldLocation:
     #: obtained by extrapolating results calculated at the integration
     #: points.ELEMENT_FACE.CENTROID, specifying the value at the centroid obtained by
     #: extrapolating results calculated at the integration points.
-    position: typing.Optional[SymbolicConstant] = None
+    position: Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Odb.SectionPointArray.SectionPointArray` object.
     sectionPoints: SectionPointArray = []

@@ -1,13 +1,13 @@
 """The following commands are used to request data entry from a user.
 
 """
-import typing
+from typing import Tuple
 
 from abqpy.decorators import abaqus_function_doc
 
 
 @abaqus_function_doc
-@typing.overload
+@overload
 def getInput(prompt: str, default: str = ""):
     r"""This method is used to obtain a single input from a user from a dialog box. The method
     displays a modal dialog box with a text field prefaced by the specified label. The user
@@ -44,7 +44,7 @@ def getInput(prompt: str, default: str = ""):
 
 
 @abaqus_function_doc
-@typing.overload
+@overload
 def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
     """This method is used to obtain multiple inputs from a user from a dialog box. The method
     displays a modal dialog box with a column of text fields prefaced by the specified
@@ -76,7 +76,7 @@ def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
 
     Returns
     -------
-    typing.Tuple[str, ...]
+    Tuple[str, ...]
         A sequence of Strings representing the data in each of the text fields in the dialog
         box. If the user clicks the Cancel button, the method returns a sequence of None
         objects.

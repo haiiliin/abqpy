@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Optional, Tuple, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ElemType import ElemType
@@ -27,7 +27,7 @@ class MeshPart(PartBase):
     """
 
     @abaqus_method_doc
-    def assignStackDirection(self, cells: typing.Tuple[Cell, ...], referenceRegion: Face):
+    def assignStackDirection(self, cells: Tuple[Cell, ...], referenceRegion: Face):
         """This method assigns a stack direction to geometric cells. The stack direction will be
         used to orient the elements during mesh generation.
 
@@ -44,9 +44,9 @@ class MeshPart(PartBase):
     def associateMeshWithGeometry(
         self,
         geometricEntity: str,
-        elements: typing.Tuple[MeshElement, ...] = (),
-        elemFaces: typing.Tuple[MeshFace, ...] = (),
-        elemEdges: typing.Tuple[MeshEdge, ...] = (),
+        elements: Tuple[MeshElement, ...] = (),
+        elemFaces: Tuple[MeshFace, ...] = (),
+        elemEdges: Tuple[MeshEdge, ...] = (),
         node: MeshNode = MeshNode((0, 0, 0)),
     ):
         """This method associates a geometric entity with mesh entities that are either orphan
@@ -78,22 +78,22 @@ class MeshPart(PartBase):
     @abaqus_method_doc
     def createVirtualTopology(
         self,
-        regions: typing.Tuple[Face, ...] = (),
+        regions: Tuple[Face, ...] = (),
         mergeShortEdges: Boolean = False,
-        shortEdgeThreshold: typing.Optional[float] = None,
+        shortEdgeThreshold: Optional[float] = None,
         mergeSmallFaces: Boolean = False,
-        smallFaceAreaThreshold: typing.Optional[float] = None,
+        smallFaceAreaThreshold: Optional[float] = None,
         mergeSliverFaces: Boolean = False,
-        faceAspectRatioThreshold: typing.Optional[float] = None,
+        faceAspectRatioThreshold: Optional[float] = None,
         mergeSmallAngleFaces: Boolean = False,
-        smallFaceCornerAngleThreshold: typing.Optional[float] = None,
+        smallFaceCornerAngleThreshold: Optional[float] = None,
         mergeThinStairFaces: Boolean = False,
-        thinStairFaceThreshold: typing.Optional[float] = None,
+        thinStairFaceThreshold: Optional[float] = None,
         ignoreRedundantEntities: Boolean = False,
         cornerAngleTolerance: float = 30,
         applyBlendControls: Boolean = False,
-        blendSubtendedAngleTolerance: typing.Optional[float] = None,
-        blendRadiusTolerance: typing.Optional[float] = None,
+        blendSubtendedAngleTolerance: Optional[float] = None,
+        blendRadiusTolerance: Optional[float] = None,
     ):
         """This method creates a virtual topology feature by automatically merging faces and edges
         based on a set of geometric parameters. The edges and vertices that are being merged
@@ -176,7 +176,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def deleteBoundaryLayerControls(self, regions: typing.Tuple[Cell, ...]):
+    def deleteBoundaryLayerControls(self, regions: Tuple[Cell, ...]):
         """This method deletes the control parameters for boundary layer mesh for all the specified
         regions.
 
@@ -189,7 +189,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def deleteMesh(self, regions: typing.Tuple["MeshPart"]):
+    def deleteMesh(self, regions: Tuple["MeshPart"]):
         """This method deletes a subset of the mesh that contains the native elements from the
         given parts or regions.
 
@@ -203,7 +203,7 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def deleteMeshAssociationWithGeometry(
-        self, geometricEntities: typing.Tuple[Cell, ...], addBoundingEntities: Boolean = False
+        self, geometricEntities: Tuple[Cell, ...], addBoundingEntities: Boolean = False
     ):
         """This method deletes the association of geometric entities with mesh entities.
 
@@ -229,7 +229,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def deleteSeeds(self, regions: typing.Tuple["MeshPart"]):
+    def deleteSeeds(self, regions: Tuple["MeshPart"]):
         """This method deletes the global edge seeds from the given parts or deletes the local edge
         seeds from the given edges.
 
@@ -244,7 +244,7 @@ class MeshPart(PartBase):
     @abaqus_method_doc
     def generateMesh(
         self,
-        regions: typing.Tuple["MeshPart"] = (),
+        regions: Tuple["MeshPart"] = (),
         seedConstraintOverride: Boolean = OFF,
         meshTechniqueOverride: Boolean = OFF,
         boundaryPreview: Boolean = OFF,
@@ -283,9 +283,9 @@ class MeshPart(PartBase):
         numberOfLayers: int,
         extrudeVector: tuple,
         geometrySourceSide: str = "",
-        elemFacesSourceSide: typing.Tuple[MeshFace, ...] = (),
+        elemFacesSourceSide: Tuple[MeshFace, ...] = (),
         elemSourceSide: tuple = (),
-        depth: typing.Optional[float] = None,
+        depth: Optional[float] = None,
         targetSide: str = "",
         biasRatio: float = 1,
         extendElementSets: Boolean = False,
@@ -336,13 +336,13 @@ class MeshPart(PartBase):
         self,
         cell: Cell,
         geometrySourceSide: str = "",
-        elemFacesSourceSide: typing.Tuple[MeshFace, ...] = (),
+        elemFacesSourceSide: Tuple[MeshFace, ...] = (),
         elemSourceSide: tuple = (),
         geometryConnectingSides: str = "",
-        elemFacesConnectingSides: typing.Tuple[MeshFace, ...] = (),
+        elemFacesConnectingSides: Tuple[MeshFace, ...] = (),
         elemConnectingSides: tuple = (),
-        targetSide: typing.Optional[Face] = None, 
-        numberOfLayers: typing.Optional[int] = None,
+        targetSide: Optional[Face] = None, 
+        numberOfLayers: Optional[int] = None,
         extendElementSets: Boolean = False,
     ):
         """This method generates solid elements by sweeping a 2D mesh, either on an orphan mesh or
@@ -389,7 +389,7 @@ class MeshPart(PartBase):
         axisOfRevolution: tuple,
         angleOfRevolution: float,
         geometrySourceSide: str = "",
-        elemFacesSourceSide: typing.Tuple[MeshFace, ...] = (),
+        elemFacesSourceSide: Tuple[MeshFace, ...] = (),
         elemSourceSide: tuple = (),
         extendElementSets: Boolean = False,
     ):
@@ -430,7 +430,7 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def getEdgeSeeds(
-        self, edge: Edge, attribute: typing.Union[SymbolicConstant, float]
+        self, edge: Edge, attribute: Union[SymbolicConstant, float]
     ):
         """This method returns an edge seed parameter for a specified edge of a part.
 
@@ -457,7 +457,7 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        typing.Union[float, int, SymbolicConstant]
+        Union[float, int, SymbolicConstant]
             The return value is a Float, an Int, or a SymbolicConstant depending on the value of the
             **attribute** argument.
 
@@ -535,7 +535,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def getIncompatibleMeshInterfaces(self, cells: typing.Tuple[Cell, ...] = ()):
+    def getIncompatibleMeshInterfaces(self, cells: Tuple[Cell, ...] = ()):
         """This method returns a sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects that are meshed with incompatible
         elements.
 
@@ -546,7 +546,7 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        typing.Tuple[Face, ...]
+        Tuple[Face, ...]
             A sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects.
         """
         ...
@@ -582,7 +582,7 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        typing.Union[bool, SymbolicConstant]
+        Union[bool, SymbolicConstant]
             The return value is a SymbolicConstant or a Boolean depending on the value of the
             **attribute** argument.
 
@@ -610,7 +610,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def getPartSeeds(self, attribute: typing.Union[SymbolicConstant, float]):
+    def getPartSeeds(self, attribute: Union[SymbolicConstant, float]):
         """This method returns a part seed parameter for the part.
 
         Parameters
@@ -681,7 +681,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def restoreIgnoredEntity(self, entities: typing.Tuple[IgnoredVertex, ...]):
+    def restoreIgnoredEntity(self, entities: Tuple[IgnoredVertex, ...]):
         """This method restores vertices and edges that have been merged using a virtual topology
         feature.
 
@@ -702,10 +702,10 @@ class MeshPart(PartBase):
     def seedEdgeByBias(
         self,
         biasMethod: SymbolicConstant,
-        end1Edges: typing.Tuple[Edge, ...],
-        end2Edges: typing.Tuple[Edge, ...],
-        centerEdges: typing.Tuple[Edge, ...],
-        endEdges: typing.Tuple[Edge, ...],
+        end1Edges: Tuple[Edge, ...],
+        end2Edges: Tuple[Edge, ...],
+        centerEdges: Tuple[Edge, ...],
+        endEdges: Tuple[Edge, ...],
         ratio: float,
         number: int,
         minSize: float,
@@ -766,7 +766,7 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def seedEdgeByNumber(
-        self, edges: typing.Tuple[Edge, ...], number: int, constraint: SymbolicConstant = FREE
+        self, edges: Tuple[Edge, ...], number: int, constraint: SymbolicConstant = FREE
     ):
         """This method seeds the given edges uniformly based on the number of elements along the
         edges.
@@ -793,10 +793,10 @@ class MeshPart(PartBase):
     @abaqus_method_doc
     def seedEdgeBySize(
         self,
-        edges: typing.Tuple[Edge, ...],
+        edges: Tuple[Edge, ...],
         size: float,
-        deviationFactor: typing.Optional[float] = None,
-        minSizeFactor: typing.Optional[float] = None,
+        deviationFactor: Optional[float] = None,
+        minSizeFactor: Optional[float] = None,
         constraint: SymbolicConstant = FREE,
     ):
         """This method seeds the given edges either uniformly or following edge curvature
@@ -830,8 +830,8 @@ class MeshPart(PartBase):
     def seedPart(
         self,
         size: float,
-        deviationFactor: typing.Optional[float] = None,
-        minSizeFactor: typing.Optional[float] = None,
+        deviationFactor: Optional[float] = None,
+        minSizeFactor: Optional[float] = None,
         constraint: SymbolicConstant = FREE,
     ):
         """This method assigns global edge seeds to the given parts.
@@ -857,11 +857,11 @@ class MeshPart(PartBase):
     @abaqus_method_doc
     def setBoundaryLayerControls(
         self,
-        regions: typing.Tuple[Cell, ...],
+        regions: Tuple[Cell, ...],
         firstElemSize: float,
         growthFactor: float,
         numLayers: int,
-        inactiveFaces: typing.Tuple[Face, ...] = (),
+        inactiveFaces: Tuple[Face, ...] = (),
         setName: str = "",
     ):
         """This method sets the control parameters for boundary layer mesh for the specified
@@ -891,7 +891,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def setElementType(self, regions: tuple, elemTypes: typing.Tuple[ElemType, ...]):
+    def setElementType(self, regions: tuple, elemTypes: Tuple[ElemType, ...]):
         """This method assigns element types to the specified regions.
 
         Parameters
@@ -938,11 +938,11 @@ class MeshPart(PartBase):
     def setMeshControls(
         self,
         regions: tuple,
-        elemShape: typing.Optional[SymbolicConstant] = None,
-        technique: typing.Optional[SymbolicConstant] = None,
-        algorithm: typing.Optional[SymbolicConstant] = None,
+        elemShape: Optional[SymbolicConstant] = None,
+        technique: Optional[SymbolicConstant] = None,
+        algorithm: Optional[SymbolicConstant] = None,
         minTransition: Boolean = ON,
-        sizeGrowth: typing.Optional[SymbolicConstant] = None,
+        sizeGrowth: Optional[SymbolicConstant] = None,
         allowMapped: Boolean = OFF,
     ):
         """This method sets the mesh control parameters for the specified regions.
@@ -1037,8 +1037,8 @@ class MeshPart(PartBase):
     def verifyMeshQuality(
         self,
         criterion: SymbolicConstant,
-        threshold: typing.Optional[float] = None,
-        elemShape: typing.Optional[SymbolicConstant] = None,
+        threshold: Optional[float] = None,
+        elemShape: Optional[SymbolicConstant] = None,
         regions: tuple = (),
     ):
         """This method tests the mesh quality of a part and returns poor-quality elements.
@@ -1106,7 +1106,7 @@ class MeshPart(PartBase):
 
         Returns
         -------
-        typing.Dict[str, int | float, MeshElement]
+        Dict[str, int | float, MeshElement]
             A Dictionary object containing values for some number of the following keys:
             failedElements, warningElements, naElements (sequences of MeshElement objects);
             numElements (Int); average, worst (Float); worstElement 
@@ -1116,7 +1116,7 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def Node(
-        self, coordinates: tuple, localCsys: typing.Optional[DatumCsys] = None,  label: typing.Optional[int] = None
+        self, coordinates: tuple, localCsys: Optional[DatumCsys] = None,  label: Optional[int] = None
     ):
         """This method creates a node on an orphan mesh part.
 

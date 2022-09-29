@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Constraint import Constraint
 from ..Region.Region import Region
@@ -44,7 +44,7 @@ class MultipointConstraint(Constraint):
     #: system for the MultipointConstraint's degrees of freedom. If **localCsys** = None, the
     #: MultipointConstraint is defined in the global coordinate system. The default value is
     #: None.
-    csys: typing.Optional[str] = None
+    csys: Optional[str] = None
 
     #: An Int specifying to differentiate between different constraint types in a user-defined
     #: MultipointConstraint. The default value is 0.The **userType** argument applies only when
@@ -63,7 +63,7 @@ class MultipointConstraint(Constraint):
         surface: Region,
         controlPoint: Region,
         mpcType: SymbolicConstant,
-        csys: typing.Optional[str] = None,
+        csys: Optional[str] = None,
         userType: int = 0,
         userMode: SymbolicConstant = DOF_MODE_MPC,
     ):
@@ -110,7 +110,7 @@ class MultipointConstraint(Constraint):
     @abaqus_method_doc
     def setValues(
         self,
-        csys: typing.Optional[str] = None,
+        csys: Optional[str] = None,
         userType: int = 0,
         userMode: SymbolicConstant = DOF_MODE_MPC,
     ):

@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConnectorDamage import ConnectorDamage
 from .ConnectorDamping import ConnectorDamping
@@ -36,8 +36,8 @@ class ConnectorSection(SectionBase):
         evolutionDependencies: int = 0,
         evolutionPotentialOperator: SymbolicConstant = SUM,
         evolutionPotentialExponent: float = 2,
-        initiationPotentials: typing.Optional[ConnectorPotentialArray] = None,
-        evolutionPotentials: typing.Optional[ConnectorPotentialArray] = None,
+        initiationPotentials: Optional[ConnectorPotentialArray] = None,
+        evolutionPotentials: Optional[ConnectorPotentialArray] = None,
         initiationTable: tuple = (),
         evolutionTable: tuple = (),
         affectedComponents: tuple = (),
@@ -305,10 +305,10 @@ class ConnectorSection(SectionBase):
     def ConnectorFailure(
         self,
         releaseComponent: SymbolicConstant = ALL,
-        minMotion: typing.Optional[float] = None,
-        maxMotion: typing.Optional[float] = None,
-        minForce: typing.Optional[float] = None,
-        maxForce: typing.Optional[float] = None,
+        minMotion: Optional[float] = None,
+        maxMotion: Optional[float] = None,
+        minForce: Optional[float] = None,
+        maxForce: Optional[float] = None,
         components: tuple = (),
     ):
         """This method creates a connector failure behavior option for a ConnectorSection object.
@@ -364,8 +364,8 @@ class ConnectorSection(SectionBase):
         self,
         frictionModel: SymbolicConstant = PREDEFINED,
         slipStyle: SymbolicConstant = SPECIFY,
-        tangentDirection: typing.Optional[int] = None,
-        stickStiffness: typing.Optional[float] = None,
+        tangentDirection: Optional[int] = None,
+        stickStiffness: Optional[float] = None,
         componentType: SymbolicConstant = NO_INDEPENDENT_COMPONENTS,
         slipDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
@@ -375,7 +375,7 @@ class ConnectorSection(SectionBase):
         contactForceComponent: int = 0,
         forcePotentialOperator: SymbolicConstant = SUM,
         forcePotentialExponent: float = 2,
-        connectorPotentials: typing.Optional[ConnectorPotentialArray] = None,
+        connectorPotentials: Optional[ConnectorPotentialArray] = None,
         table: tuple = (),
         independentComponents: tuple = (),
     ):
@@ -497,10 +497,10 @@ class ConnectorSection(SectionBase):
     def ConnectorLock(
         self,
         lockingComponent: SymbolicConstant = ALL,
-        minMotion: typing.Optional[float] = None,
-        maxMotion: typing.Optional[float] = None,
-        minForce: typing.Optional[float] = None,
-        maxForce: typing.Optional[float] = None,
+        minMotion: Optional[float] = None,
+        maxMotion: Optional[float] = None,
+        minForce: Optional[float] = None,
+        maxForce: Optional[float] = None,
         components: tuple = (),
     ):
         """This method creates a connector lock behavior option for a ConnectorSection.
@@ -566,7 +566,7 @@ class ConnectorSection(SectionBase):
         kinematicDependencies: int = 0,
         forcePotentialOperator: SymbolicConstant = SUM,
         forcePotentialExponent: float = 2,
-        connectorPotentials: typing.Optional[ConnectorPotentialArray] = None,
+        connectorPotentials: Optional[ConnectorPotentialArray] = None,
         isotropicTable: tuple = (),
         kinematicTable: tuple = (),
         components: tuple = (),
@@ -714,7 +714,7 @@ class ConnectorSection(SectionBase):
 
     @abaqus_method_doc
     def ConnectorStop(
-        self, minMotion: typing.Optional[float] = None, maxMotion: typing.Optional[float] = None, components: tuple = ()
+        self, minMotion: Optional[float] = None, maxMotion: Optional[float] = None, components: tuple = ()
     ):
         """This method creates a connector stop behavior option for a ConnectorSection object.
 
@@ -790,10 +790,10 @@ class ConnectorSection(SectionBase):
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         exponentialDecayDefinition: SymbolicConstant = COEFFICIENTS,
-        shearStressLimit: typing.Optional[float] = None,
+        shearStressLimit: Optional[float] = None,
         maximumElasticSlip: SymbolicConstant = FRACTION,
-        fraction: typing.Optional[float] = None,
-        absoluteDistance: typing.Optional[float] = None,
+        fraction: Optional[float] = None,
+        absoluteDistance: Optional[float] = None,
         table: tuple = (),
     ):
         """This method creates a TangentialBehavior object.

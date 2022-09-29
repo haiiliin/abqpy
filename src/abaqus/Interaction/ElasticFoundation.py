@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Interaction import Interaction
 from ..Region.Region import Region
@@ -71,7 +71,7 @@ class ElasticFoundation(Interaction):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(self, stepName: str, stiffness: typing.Optional[float] = None):
+    def setValuesInStep(self, stepName: str, stiffness: Optional[float] = None):
         """This method modifies the propagating data of an existing ElasticFoundation object in the
         specified step.
 

@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Leaf import Leaf
 from ..UtilityAndView.abaqusConstants import *
@@ -20,7 +20,7 @@ class LeafFromModelElemLabels(Leaf):
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-    leafType: typing.Optional[SymbolicConstant] = None
+    leafType: Optional[SymbolicConstant] = None
 
     #: A sequence of Strings specifying expressions that denote element labels per part
     #: instance in the model. Each part instance element expression is a sequence of a String

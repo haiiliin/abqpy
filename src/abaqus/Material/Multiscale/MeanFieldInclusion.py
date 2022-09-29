@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ...UtilityAndView.abaqusConstants import *
 
@@ -37,7 +37,7 @@ class MeanFieldInclusion:
         name: str,
         table: tuple,
         material: str = "",
-        isotropizationCoefficient: typing.Optional[float] = None,
+        isotropizationCoefficient: Optional[float] = None,
         volumeFractionType: SymbolicConstant = UNIFORM,
         volumeFractionFieldName: str = "",
         aspectRatioType: SymbolicConstant = UNIFORM,
@@ -45,7 +45,7 @@ class MeanFieldInclusion:
         orientationTensorType: SymbolicConstant = UNIFORM,
         orientationTensorFieldName: str = "",
         shape: SymbolicConstant = SPHERE,
-        direction: typing.Optional[SymbolicConstant] = None,
+        direction: Optional[SymbolicConstant] = None,
         strainConcentrationTensor: tuple = (),
         temperatureGradientConcentrationTensor: tuple = (),
     ):

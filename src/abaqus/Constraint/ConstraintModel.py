@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AdjustPoints import AdjustPoints
@@ -61,10 +61,10 @@ class ConstraintModel(ModelBase):
         name: str,
         surface: Region,
         controlPoint: Region,
-        influenceRadius: typing.Union[SymbolicConstant, float],
+        influenceRadius: Union[SymbolicConstant, float],
         couplingType: SymbolicConstant,
         adjust: Boolean = OFF,
-        localCsys: typing.Optional[str] = None,
+        localCsys: Optional[str] = None,
         u1: Boolean = ON,
         u2: Boolean = ON,
         u3: Boolean = ON,
@@ -200,7 +200,7 @@ class ConstraintModel(ModelBase):
         name: str,
         embeddedRegion: Region,
         hostRegion: Region,
-        weightFactorTolerance: typing.Optional[float] = None,
+        weightFactorTolerance: Optional[float] = None,
         toleranceMethod: SymbolicConstant = BOTH,
         absoluteTolerance: float = 0,
         fractionalTolerance: float = 0,
@@ -292,7 +292,7 @@ class ConstraintModel(ModelBase):
         surface: Region,
         controlPoint: Region,
         mpcType: SymbolicConstant,
-        csys: typing.Optional[str] = None,
+        csys: Optional[str] = None,
         userType: int = 0,
         userMode: SymbolicConstant = DOF_MODE_MPC,
     ) -> MultipointConstraint:
@@ -344,10 +344,10 @@ class ConstraintModel(ModelBase):
         self,
         name: str,
         refPointRegion: Region,
-        bodyRegion: typing.Optional[str] = None,
-        tieRegion: typing.Optional[str] = None,
-        pinRegion: typing.Optional[str] = None,
-        surfaceRegion: typing.Optional[str] = None,
+        bodyRegion: Optional[str] = None,
+        tieRegion: Optional[str] = None,
+        pinRegion: Optional[str] = None,
+        surfaceRegion: Optional[str] = None,
         refPointAtCOM: Boolean = OFF,
         isothermal: Boolean = OFF,
     ) -> RigidBody:

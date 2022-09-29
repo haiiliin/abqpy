@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -25,7 +25,7 @@ class MesherOptions:
         quadAlgorithm: SymbolicConstant = ADVANCING_FRONT,
         allowMapped: Boolean = OFF,
         minTransition: Boolean = ON,
-        guiPreferredElements: typing.Optional[SymbolicConstant] = None,
+        guiPreferredElements: Optional[SymbolicConstant] = None,
     ):
         """This method modifies the MesherOptions object.
 

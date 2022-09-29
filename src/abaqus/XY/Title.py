@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Area import Area
 from .TextStyle import TextStyle
@@ -36,9 +36,9 @@ class Title:
         self,
         title: "Title",
         text: str = "",
-        area: typing.Optional[Area] = None, 
+        area: Optional[Area] = None, 
         useDefault: Boolean = OFF,
-        titleStyle: typing.Optional[TextStyle] = None, 
+        titleStyle: Optional[TextStyle] = None, 
     ):
         """This method modifies the Title object.
 

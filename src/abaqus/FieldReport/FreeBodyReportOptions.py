@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -22,8 +22,8 @@ class FreeBodyReportOptions:
     def setValues(
         self,
         numDigits: int = 3,
-        forceThreshold: typing.Optional[float] = None,
-        momentThreshold: typing.Optional[float] = None,
+        forceThreshold: Optional[float] = None,
+        momentThreshold: Optional[float] = None,
         numberFormat: SymbolicConstant = SCIENTIFIC,
         reportFormat: SymbolicConstant = NORMAL_ANNOTATED,
         csysType: SymbolicConstant = GLOBAL,

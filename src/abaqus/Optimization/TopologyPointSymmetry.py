@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
@@ -29,7 +29,7 @@ class TopologyPointSymmetry(GeometricRestriction):
     #: None or a DatumCsys object specifying the position of the symmetry point defined as the
     #: origin of a local coordinate system. If **csys** = None, the global coordinate system is
     #: used. When this member is queried, it returns an Int. The default value is None.
-    csys: typing.Optional[int] = None
+    csys: Optional[int] = None
 
     #: A Boolean specifying whether to ignore frozen areas. The default value is OFF.
     ignoreFrozenArea: Boolean = OFF
@@ -39,7 +39,7 @@ class TopologyPointSymmetry(GeometricRestriction):
         self,
         name: str,
         region: Region,
-        csys: typing.Optional[int] = None,
+        csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ):
         """This method creates a TopologyPointSymmetry object.
@@ -72,7 +72,7 @@ class TopologyPointSymmetry(GeometricRestriction):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(self, csys: typing.Optional[int] = None, ignoreFrozenArea: Boolean = OFF):
+    def setValues(self, csys: Optional[int] = None, ignoreFrozenArea: Boolean = OFF):
         """This method modifies the TopologyPointSymmetry object.
 
         Parameters

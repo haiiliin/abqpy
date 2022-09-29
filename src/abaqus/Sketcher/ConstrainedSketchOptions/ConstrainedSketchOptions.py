@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ...UtilityAndView.abaqusConstants import *
 
@@ -18,12 +18,12 @@ class ConstrainedSketchOptions:
     @abaqus_method_doc
     def setValues(
         self,
-        sheetSize: typing.Optional[float] = None,
-        gridSpacing: typing.Optional[float] = None,
+        sheetSize: Optional[float] = None,
+        gridSpacing: Optional[float] = None,
         grid: Boolean = ON,
         gridFrequency: int = 1,
         dimensionTextHeight: float = 12,
-        decimalPlaces: typing.Optional[int] = None,
+        decimalPlaces: Optional[int] = None,
         constructionGeometry: Boolean = ON,
         gridSnap: Boolean = ON,
         preselection: Boolean = ON,
@@ -34,8 +34,8 @@ class ConstrainedSketchOptions:
         addImpliedConstraints: Boolean = ON,
         maxCoplanarEntities: int = 300,
         autoConstrainAngularTolerance: float = 0,
-        autoConstrainLinearTolerance: typing.Optional[float] = None,
-        autoConstrainOptions: typing.Optional[SymbolicConstant] = None,
+        autoConstrainLinearTolerance: Optional[float] = None,
+        autoConstrainOptions: Optional[SymbolicConstant] = None,
         dragMethod: SymbolicConstant = MINIMUM_MOVE,
         editMethod: SymbolicConstant = STANDARD,
     ):

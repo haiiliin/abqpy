@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AutoColors import AutoColors
@@ -82,18 +82,18 @@ class SessionBase:
 
     #: A Float specifying the memory usage value for the Abaqus/CAE kernel process in
     #: megabytes.
-    kernelMemoryFootprint: typing.Optional[float] = None
+    kernelMemoryFootprint: Optional[float] = None
 
     #: A Float specifying the maximum value for the memory usage for the Abaqus/CAE kernel
     #: process in megabytes.
-    kernelMemoryMaxFootprint: typing.Optional[float] = None
+    kernelMemoryMaxFootprint: Optional[float] = None
 
     #: A Float specifying the limit for the memory use for the Abaqus/CAE kernel process in
     #: megabytes.
-    kernelMemoryLimit: typing.Optional[float] = None
+    kernelMemoryLimit: Optional[float] = None
 
     #: A repository of Color objects.
-    colors: typing.Dict[str, Color] = {}
+    colors: Dict[str, Color] = {}
 
     #: A :py:class:`~abaqus.Session.JournalOptions.JournalOptions` object specifying how to record selection of geometry in the journal
     #: and replay files.
@@ -127,7 +127,7 @@ class SessionBase:
     quickTimeOptions: QuickTimeOptions = QuickTimeOptions()
 
     #: A repository of Viewport objects.
-    viewports: typing.Dict[str, Viewport] = {}
+    viewports: Dict[str, Viewport] = {}
 
     #: A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object.
     customData: RepositorySupport = RepositorySupport()
@@ -145,10 +145,10 @@ class SessionBase:
     freeBodyReportOptions: FreeBodyReportOptions = FreeBodyReportOptions()
 
     #: A repository of Odb objects.
-    odbs: typing.Dict[str, Odb] = {}
+    odbs: Dict[str, Odb] = {}
 
     #: A repository of ScratchOdb objects.
-    scratchOdbs: typing.Dict[str, ScratchOdb] = {}
+    scratchOdbs: Dict[str, ScratchOdb] = {}
 
     #: A :py:class:`~abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay` object.
     defaultOdbDisplay: DefaultOdbDisplay = DefaultOdbDisplay()
@@ -160,22 +160,22 @@ class SessionBase:
     defaultChartOptions: DefaultChartOptions = DefaultChartOptions()
 
     #: A repository of OdbData objects.
-    odbData: typing.Dict[str, OdbData] = {}
+    odbData: Dict[str, OdbData] = {}
 
     #: A repository of MdbData objects.
-    mdbData: typing.Dict[str, MdbData] = {}
+    mdbData: Dict[str, MdbData] = {}
 
     #: A repository of Path objects.
-    paths: typing.Dict[str, Path] = {}
+    paths: Dict[str, Path] = {}
 
     #: A repository of FreeBody objects.
-    freeBodies: typing.Dict[str, FreeBody] = {}
+    freeBodies: Dict[str, FreeBody] = {}
 
     #: A repository of Stream objects.
-    streams: typing.Dict[str, Stream] = {}
+    streams: Dict[str, Stream] = {}
 
     #: A repository of Spectrum objects.
-    spectrums: typing.Dict[str, Spectrum] = {}
+    spectrums: Dict[str, Spectrum] = {}
 
     #: A :py:class:`~abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues` object.
     currentProbeValues: CurrentProbeValues = CurrentProbeValues()
@@ -223,16 +223,16 @@ class SessionBase:
     xyColors: AutoColors = AutoColors()
 
     #: A repository of XYData objects.
-    xyDataObjects: typing.Dict[str, XYData] = {}
+    xyDataObjects: Dict[str, XYData] = {}
 
     #: A repository of XYCurve objects.
-    curves: typing.Dict[str, XYCurve] = {}
+    curves: Dict[str, XYCurve] = {}
 
     #: A repository of XYPlot objects.
-    xyPlots: typing.Dict[str, XYPlot] = {}
+    xyPlots: Dict[str, XYPlot] = {}
 
     #: A repository of Chart objects.
-    charts: typing.Dict[str, Chart] = {}
+    charts: Dict[str, Chart] = {}
 
     #: An :py:class:`~abaqus.XY.XYReportOptions.XYReportOptions` object.
     defaultXYReportOptions: XYReportOptions = XYReportOptions()
@@ -241,13 +241,13 @@ class SessionBase:
     xyReportOptions: XYReportOptions = XYReportOptions()
 
     #: A repository of View objects.
-    views: typing.Dict[str, View] = {}
+    views: Dict[str, View] = {}
 
     #: A repository of NetworkDatabaseConnector objects.
-    networkDatabaseConnectors: typing.Dict[str, NetworkDatabaseConnector] = {}
+    networkDatabaseConnectors: Dict[str, NetworkDatabaseConnector] = {}
 
     #: A repository of DisplayGroup objects.
-    displayGroups: typing.Dict[str, DisplayGroup] = {}
+    displayGroups: Dict[str, DisplayGroup] = {}
 
     #: A :py:class:`~abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo` object.
     graphicsInfo: GraphicsInfo = GraphicsInfo()
@@ -264,7 +264,7 @@ class SessionBase:
     )
 
     #: A repository of Queue objects.
-    queues: typing.Dict[str, Queue] = {}
+    queues: Dict[str, Queue] = {}
 
     #: A String specifying the name of the current viewport.
     currentViewportName: str = ""
@@ -272,13 +272,13 @@ class SessionBase:
     #: A Dictionary object specifying the viewports and their associated models. The Dictionary
     #: key specifies the viewport name. The Dictionary value is a Dictionary specifying the
     #: model name.
-    sessionState: typing.Optional[dict] = None
+    sessionState: Optional[dict] = None
 
     #: A repository of Image objects.
-    images: typing.Dict[str, Image] = {}
+    images: Dict[str, Image] = {}
 
     #: A repository of Movie objects.
-    movies: typing.Dict[str, Movie] = {}
+    movies: Dict[str, Movie] = {}
 
     #: A :py:class:`~abaqus.DisplayOptions.LightOptions.LightOptions` object.
     defaultLightOptions: LightOptions = LightOptions()
@@ -290,10 +290,10 @@ class SessionBase:
     defaultMesherOptions: MesherOptions = MesherOptions()
 
     #: A repository of Drawing objects.
-    drawings: typing.Dict[str, Drawing] = {}
+    drawings: Dict[str, Drawing] = {}
 
     @abaqus_method_doc
-    def setValues(self, kernelMemoryLimit: typing.Optional[float] = None):
+    def setValues(self, kernelMemoryLimit: Optional[float] = None):
         """This method modifies the Session object.
 
         Parameters
@@ -317,7 +317,7 @@ class SessionBase:
         ...
 
     @abaqus_method_doc
-    def enableCADConnection(self, CADName: str, portNum: typing.Optional[int] = None):
+    def enableCADConnection(self, CADName: str, portNum: Optional[int] = None):
         """This method enables the Abaqus/CAE listening port for the specified **CAD** system.
 
         Parameters
@@ -363,7 +363,7 @@ class SessionBase:
         ...
 
     @abaqus_method_doc
-    def enableParameterUpdate(self, CADName: str, CADVersion: str, CADPort: typing.Optional[int] = None):
+    def enableParameterUpdate(self, CADName: str, CADVersion: str, CADPort: Optional[int] = None):
         """This method enables parameter updates for ProE and NX by establishing a connection with
         the listening port previously setup by the CAD application.
 
@@ -455,7 +455,7 @@ class SessionBase:
         self,
         fileName: str,
         format: SymbolicConstant = PNG,
-        canvasObjects: typing.Tuple[Canvas, ...] = (),
+        canvasObjects: Tuple[Canvas, ...] = (),
         compression: Boolean = OFF,
     ):
         """This method prints canvas objects to a file using the attributes stored in the
@@ -487,7 +487,7 @@ class SessionBase:
         self,
         printCommand: str = "",
         numCopies: int = 1,
-        canvasObjects: typing.Tuple[Canvas, ...] = (),
+        canvasObjects: Tuple[Canvas, ...] = (),
     ):
         """This method prints canvas objects to a Windows printer or to a PostScript printer. The
         attributes used for printing to a Windows printer are stored in the PrintOptions object
@@ -546,7 +546,7 @@ class SessionBase:
 
     @abaqus_method_doc
     def writeVrmlFile(
-        self, fileName: str, format: Boolean = OFF, canvasObjects: typing.Tuple[Canvas, ...] = ()
+        self, fileName: str, format: Boolean = OFF, canvasObjects: Tuple[Canvas, ...] = ()
     ):
         """This method exports the current viewport objects to a file.
 
@@ -565,7 +565,7 @@ class SessionBase:
 
     @abaqus_method_doc
     def write3DXMLFile(
-        self, fileName: str, format: Boolean = OFF, canvasObjects: typing.Tuple[Canvas, ...] = ()
+        self, fileName: str, format: Boolean = OFF, canvasObjects: Tuple[Canvas, ...] = ()
     ):
         """This method exports the current viewport objects to a file.
 
@@ -583,7 +583,7 @@ class SessionBase:
         ...
 
     @abaqus_method_doc
-    def writeOBJFile(self, fileName: str, canvasObjects: typing.Tuple[Canvas, ...] = ()):
+    def writeOBJFile(self, fileName: str, canvasObjects: Tuple[Canvas, ...] = ()):
         """This method exports the current viewport objects to a file.
 
         Parameters

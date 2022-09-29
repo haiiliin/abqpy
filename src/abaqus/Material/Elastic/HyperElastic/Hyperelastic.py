@@ -1,4 +1,4 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ViscoElastic.Hysteresis import Hysteresis
@@ -117,7 +117,7 @@ class Hyperelastic:
         moduliTimeScale: SymbolicConstant = LONG_TERM,
         temperatureDependency: Boolean = OFF,
         n: int = 1,
-        beta: typing.Union[SymbolicConstant, float] = FITTED_VALUE,
+        beta: Union[SymbolicConstant, float] = FITTED_VALUE,
         testData: Boolean = ON,
         compressible: Boolean = OFF,
         properties: int = 0,

@@ -1,4 +1,4 @@
-import typing
+from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ElementProgressiveActivation import ElementProgressiveActivation
@@ -23,7 +23,7 @@ class TableCollectionAssembly(AssemblyBase):
         The `TableCollectionAssembly` class was added.
     """
 
-    elementProgressiveActivations: typing.Dict[str, ElementProgressiveActivation] = {}
+    elementProgressiveActivations: Dict[str, ElementProgressiveActivation] = {}
 
     @abaqus_method_doc
     def ElementProgressiveActivation(

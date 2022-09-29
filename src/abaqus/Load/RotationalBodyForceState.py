@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 from .LoadState import LoadState
 from ..UtilityAndView.abaqusConstants import *
@@ -25,15 +25,15 @@ class RotationalBodyForceState(LoadState):
     """
 
     #: A Float specifying the load magnitude.
-    magnitude: typing.Optional[float] = None
+    magnitude: Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the load magnitude. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    magnitudeState: typing.Optional[SymbolicConstant] = None
+    magnitudeState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    amplitudeState: typing.Optional[SymbolicConstant] = None
+    amplitudeState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
     #: values are:
@@ -47,7 +47,7 @@ class RotationalBodyForceState(LoadState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: typing.Optional[SymbolicConstant] = None
+    status: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the amplitude reference. The String is empty if the load
     #: has no amplitude reference.

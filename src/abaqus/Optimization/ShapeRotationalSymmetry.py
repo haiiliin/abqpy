@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
@@ -38,7 +38,7 @@ class ShapeRotationalSymmetry(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: typing.Optional[int] = None
+    csys: Optional[int] = None
 
     #: A Boolean specifying whether to allow a nonsymmetric mesh for this geometric
     #: restriction. The default value is TRUE.
@@ -52,7 +52,7 @@ class ShapeRotationalSymmetry(GeometricRestriction):
     #:
     #: .. versionchanged:: 2022
     #:    The attribute `masterPoint` was renamed to `mainPoint`.
-    mainPoint: typing.Optional[str] = None
+    mainPoint: Optional[str] = None
 
     #: A SymbolicConstant specifying the rule for determining the main node. Possible values
     #: are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
@@ -67,7 +67,7 @@ class ShapeRotationalSymmetry(GeometricRestriction):
 
     #: A tuple of Floats representing the coordinates of a start point of the rotational
     #: symmetry.
-    startPoint: typing.Optional[float] = None
+    startPoint: Optional[float] = None
 
     #: A Float specifying the geometric tolerance in the 1-direction. The default value is
     #: 0.01.
@@ -89,11 +89,11 @@ class ShapeRotationalSymmetry(GeometricRestriction):
         region: Region,
         allowNonSymmetricMesh: Boolean = TRUE,
         angle: float = 0,
-        csys: typing.Optional[int] = None,
-        mainPoint: typing.Optional[str] = None,
+        csys: Optional[int] = None,
+        mainPoint: Optional[str] = None,
         mainPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
-        startPoint: typing.Optional[float] = None,
+        startPoint: Optional[float] = None,
         tolerance1: float = 0,
         tolerance2: float = 0,
         tolerance3: float = 0,
@@ -170,11 +170,11 @@ class ShapeRotationalSymmetry(GeometricRestriction):
         self,
         allowNonSymmetricMesh: Boolean = TRUE,
         angle: float = 0,
-        csys: typing.Optional[int] = None,
-        mainPoint: typing.Optional[str] = None,
+        csys: Optional[int] = None,
+        mainPoint: Optional[str] = None,
         mainPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
-        startPoint: typing.Optional[float] = None,
+        startPoint: Optional[float] = None,
         tolerance1: float = 0,
         tolerance2: float = 0,
         tolerance3: float = 0,

@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 from .InteractionState import InteractionState
 from ..UtilityAndView.abaqusConstants import *
@@ -21,11 +21,11 @@ class ElasticFoundationState(InteractionState):
     """
 
     #: A Float specifying the foundation stiffness per area.
-    stiffness: typing.Optional[float] = None
+    stiffness: Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the stiffness member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    stiffnessState: typing.Optional[SymbolicConstant] = None
+    stiffnessState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:
@@ -39,4 +39,4 @@ class ElasticFoundationState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: typing.Optional[SymbolicConstant] = None
+    status: Optional[SymbolicConstant] = None

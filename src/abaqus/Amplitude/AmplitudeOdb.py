@@ -1,4 +1,4 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ActuatorAmplitude import ActuatorAmplitude
@@ -115,7 +115,7 @@ class AmplitudeOdb(OdbBase):
         fixedInterval: float,
         data: tuple,
         begin: float = 0,
-        smooth: typing.Union[SymbolicConstant, float] = SOLVER_DEFAULT,
+        smooth: Union[SymbolicConstant, float] = SOLVER_DEFAULT,
         timeSpan: SymbolicConstant = STEP,
     ) -> EquallySpacedAmplitude:
         """This method creates an EquallySpacedAmplitude object.
@@ -516,7 +516,7 @@ class AmplitudeOdb(OdbBase):
         self,
         name: str,
         data: tuple,
-        smooth: typing.Union[SymbolicConstant, float] = SOLVER_DEFAULT,
+        smooth: Union[SymbolicConstant, float] = SOLVER_DEFAULT,
         timeSpan: SymbolicConstant = STEP,
     ) -> TabularAmplitude:
         """This method creates a TabularAmplitude object.

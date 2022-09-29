@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -17,8 +17,8 @@ class NodeQuery:
 
     #: An Int specifying the ID of the most recently queried node. If the last query was
     #: unsuccessful, **nodeID** = −1.
-    nodeId: typing.Optional[int] = None
+    nodeId: Optional[int] = None
 
     #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the most recently
     #: queried node.
-    nodePos: typing.Optional[float] = None
+    nodePos: Optional[float] = None

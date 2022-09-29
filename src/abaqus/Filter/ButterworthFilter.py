@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Filter import Filter
 from ..UtilityAndView.abaqusConstants import *
@@ -46,7 +46,7 @@ class ButterworthFilter(Filter):
     #: None or a Float specifying the threshold limit, an upper or lower bound for output
     #: values depending on the operation, or a bound for stopping the analysis when Halt is
     #: used. The default value is None.
-    limit: typing.Optional[float] = None
+    limit: Optional[float] = None
 
     #: A SymbolicConstant specifying the invariant to which filtering is applied. Possible
     #: values are NONE, FIRST, and SECOND. The default value is NONE.
@@ -60,7 +60,7 @@ class ButterworthFilter(Filter):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: typing.Optional[float] = None,
+        limit: Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ):
         """This method creates a ButterworthFilter object.
@@ -115,7 +115,7 @@ class ButterworthFilter(Filter):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: typing.Optional[float] = None,
+        limit: Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ):
         """This method modifies the ButterworthFilter object.

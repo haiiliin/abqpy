@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -15,13 +15,13 @@ class RayleighDampingComponent:
     """
 
     #: An Int specifying the mode number of the lowest mode of a range.
-    start: typing.Optional[int] = None
+    start: Optional[int] = None
 
     #: An Int specifying the mode number of the highest mode of a range.
-    end: typing.Optional[int] = None
+    end: Optional[int] = None
 
     #: A Float specifying the mass proportional damping, αM.
-    alpha: typing.Optional[float] = None
+    alpha: Optional[float] = None
 
     #: A Float specifying the stiffness proportional damping, βM.
-    beta: typing.Optional[float] = None
+    beta: Optional[float] = None

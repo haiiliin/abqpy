@@ -1,4 +1,4 @@
-import typing
+from typing import List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .PartInstance import PartInstance
@@ -63,7 +63,7 @@ class AssemblyModel(ModelBase):
 
         Returns
         -------
-        typing.List[str]
+        List[str]
             A list of strings describing any warnings or errors encountered during the conversion
             process.
         """
@@ -84,7 +84,7 @@ class AssemblyModel(ModelBase):
 
         Returns
         -------
-        typing.List[str]
+        List[str]
             A list of strings describing any warnings or errors encountered during the conversion
             process.
         """

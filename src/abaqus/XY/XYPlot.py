@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AreaStyle import AreaStyle
@@ -97,7 +97,7 @@ class XYPlot(XYPlotBase):
 
     @staticmethod
     @abaqus_method_doc
-    def QuantityType(label: str = "", type: typing.Optional[SymbolicConstant] = None) -> QuantityType:
+    def QuantityType(label: str = "", type: Optional[SymbolicConstant] = None) -> QuantityType:
         """This method creates a QuantityType object.
 
         .. note:: 
@@ -294,7 +294,7 @@ class XYPlot(XYPlotBase):
         return textStyle
 
     @staticmethod
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def XYData(
         data: tuple,
@@ -305,8 +305,8 @@ class XYPlot(XYPlotBase):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: typing.Optional[QuantityType] = None,
-        axis2QuantityType: typing.Optional[QuantityType] = None,
+        axis1QuantityType: Optional[QuantityType] = None,
+        axis2QuantityType: Optional[QuantityType] = None,
     ) -> XYData:
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
@@ -358,7 +358,7 @@ class XYPlot(XYPlotBase):
         ...
 
     @staticmethod
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def XYData(objectToCopy: XYData) -> XYData:
         """This method creates an XYData object by copying an existing XYData object.

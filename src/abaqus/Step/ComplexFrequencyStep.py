@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AnalysisStep import AnalysisStep
@@ -45,7 +45,7 @@ class ComplexFrequencyStep(AnalysisStep):
 
     #: None or a Float specifying the shift point in cycles per time. The default value is
     #: None.
-    shift: typing.Optional[float] = None
+    shift: Optional[float] = None
 
     #: A Boolean specifying whether to add to the damping matrix contributions due to friction
     #: effects. The default value is OFF.
@@ -57,11 +57,11 @@ class ComplexFrequencyStep(AnalysisStep):
 
     #: None or a Float specifying the minimum frequency of interest in cycles per time. The
     #: default value is None.
-    minEigen: typing.Optional[float] = None
+    minEigen: Optional[float] = None
 
     #: None or a Float specifying the maximum frequency of interest in cycles per time. The
     #: default value is None.
-    maxEigen: typing.Optional[float] = None
+    maxEigen: Optional[float] = None
 
     #: None or a Float specifying the frequency at which to evaluate frequency-dependent
     #: properties for viscoelasticity, springs, and dashpots during the eigenvalue extraction.
@@ -69,7 +69,7 @@ class ComplexFrequencyStep(AnalysisStep):
     #: frequency-dependent springs and dashpots at zero frequency and will not consider the
     #: stiffness contributions from frequency-domain viscoelasticity in the step. The default
     #: value is None.
-    propertyEvaluationFrequency: typing.Optional[float] = None
+    propertyEvaluationFrequency: Optional[float] = None
 
     #: A String specifying the name of the previous step. The new step appears after this step
     #: in the list of analysis steps.
@@ -80,7 +80,7 @@ class ComplexFrequencyStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: typing.Optional[SymbolicConstant] = None
+    explicit: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -116,31 +116,31 @@ class ComplexFrequencyStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: typing.Optional[SymbolicConstant] = None
+    procedureType: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: typing.Dict[str, FieldOutputRequestState] = {}
+    fieldOutputRequestState: Dict[str, FieldOutputRequestState] = {}
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: typing.Dict[str, HistoryOutputRequestState] = {}
+    historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
 
     #: A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
-    monitor: typing.Optional[Monitor] = None
+    monitor: Optional[Monitor] = None
 
     #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: typing.Dict[str, AdaptiveMeshConstraintState] = {}
+    adaptiveMeshConstraintStates: Dict[str, AdaptiveMeshConstraintState] = {}
 
     #: A repository of AdaptiveMeshDomain objects.
-    adaptiveMeshDomains: typing.Dict[str, AdaptiveMeshDomain] = {}
+    adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
 
     #: A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
     control: Control = Control()
@@ -149,19 +149,19 @@ class ComplexFrequencyStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
+    boundaryConditionStates: Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: typing.Optional[int] = None
+    interactionStates: Optional[int] = None
 
     #: A repository of LoadState objects.
-    loadStates: typing.Dict[str, LoadState] = {}
+    loadStates: Dict[str, LoadState] = {}
 
     #: A repository of LoadCase objects.
-    loadCases: typing.Dict[str, LoadCase] = {}
+    loadCases: Dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
+    predefinedFieldStates: Dict[str, PredefinedFieldState] = {}
 
     @abaqus_method_doc
     def __init__(
@@ -170,13 +170,13 @@ class ComplexFrequencyStep(AnalysisStep):
         previous: str,
         numEigen: SymbolicConstant = ALL,
         description: str = "",
-        shift: typing.Optional[float] = None,
+        shift: Optional[float] = None,
         frictionDamping: Boolean = OFF,
         matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
         maintainAttributes: Boolean = False,
-        minEigen: typing.Optional[float] = None,
-        maxEigen: typing.Optional[float] = None,
-        propertyEvaluationFrequency: typing.Optional[float] = None,
+        minEigen: Optional[float] = None,
+        maxEigen: Optional[float] = None,
+        propertyEvaluationFrequency: Optional[float] = None,
     ):
         """This method creates a ComplexFrequencyStep object.
 
@@ -239,12 +239,12 @@ class ComplexFrequencyStep(AnalysisStep):
         self,
         numEigen: SymbolicConstant = ALL,
         description: str = "",
-        shift: typing.Optional[float] = None,
+        shift: Optional[float] = None,
         frictionDamping: Boolean = OFF,
         matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        minEigen: typing.Optional[float] = None,
-        maxEigen: typing.Optional[float] = None,
-        propertyEvaluationFrequency: typing.Optional[float] = None,
+        minEigen: Optional[float] = None,
+        maxEigen: Optional[float] = None,
+        propertyEvaluationFrequency: Optional[float] = None,
     ):
         """This method modifies the ComplexFrequencyStep object.
 

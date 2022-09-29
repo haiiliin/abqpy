@@ -1,4 +1,4 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
@@ -197,7 +197,7 @@ class ShellEdgeLoad(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        magnitude: typing.Union[SymbolicConstant, float] = None,
+        magnitude: Union[SymbolicConstant, float] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing ShellEdgeLoad object in the

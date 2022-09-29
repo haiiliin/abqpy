@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .KeywordBlock import KeywordBlock
@@ -57,10 +57,10 @@ class ModelBase:
     name: str = ""
 
     #: None or a Float specifying the Stefan-Boltzmann constant. The default value is None.
-    stefanBoltzmann: typing.Optional[float] = None
+    stefanBoltzmann: Optional[float] = None
 
     #: None or a Float specifying the absolute zero constant. The default value is None.
-    absoluteZero: typing.Optional[float] = None
+    absoluteZero: Optional[float] = None
 
     #: A SymbolicConstant specifying the type of incident wave formulation to be used in
     #: acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value
@@ -68,7 +68,7 @@ class ModelBase:
     waveFormulation: SymbolicConstant = NOT_SET
 
     #: None or a Float specifying the universal gas constant. The default value is None.
-    universalGas: typing.Optional[float] = None
+    universalGas: Optional[float] = None
 
     #: A Boolean specifying whether an input file should be written without parts and
     #: assemblies. The default value is OFF.
@@ -76,7 +76,7 @@ class ModelBase:
 
     #: An Int specifying the increment, interval, iteration or cycle where the restart analysis
     #: will start. To select the end of the step use the SymbolicConstant STEP_END.
-    restartIncrement: typing.Optional[SymbolicConstant] = None
+    restartIncrement: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying that the step specified by **restartStep** should be terminated at
     #: the increment specified by **restartIncrement**.
@@ -86,7 +86,7 @@ class ModelBase:
     shellToSolid: Boolean = OFF
 
     #: A Float specifying the time stamp that indicates when the model was last changed.
-    lastChangedCount: typing.Optional[float] = None
+    lastChangedCount: Optional[float] = None
 
     #: A String specifying the purpose and contents of the Model object. The default value is
     #: an empty string.
@@ -120,40 +120,40 @@ class ModelBase:
     rootAssembly: Assembly = Assembly()
 
     #: A repository of Amplitude objects.
-    amplitudes: typing.Dict[str, Amplitude] = {}
+    amplitudes: Dict[str, Amplitude] = {}
 
     #: A repository of Profile objects.
-    profiles: typing.Dict[str, Profile] = {}
+    profiles: Dict[str, Profile] = {}
 
     #: A repository of BoundaryCondition objects.
-    boundaryConditions: typing.Dict[str, BoundaryCondition] = {}
+    boundaryConditions: Dict[str, BoundaryCondition] = {}
 
     #: A repository of ConstrainedSketchConstraint objects.
-    constraints: typing.Dict[str, Constraint] = {}
+    constraints: Dict[str, Constraint] = {}
 
     #: A repository of AnalyticalField objects.
-    analyticalFields: typing.Dict[str, AnalyticalField] = {}
+    analyticalFields: Dict[str, AnalyticalField] = {}
 
     #: A repository of DiscreteField objects.
-    discreteFields: typing.Dict[str, DiscreteField] = {}
+    discreteFields: Dict[str, DiscreteField] = {}
 
     #: A repository of PredefinedField objects.
-    predefinedFields: typing.Dict[str, PredefinedField] = {}
+    predefinedFields: Dict[str, PredefinedField] = {}
 
     #: A repository of Interaction objects.
-    interactions: typing.Dict[str, Interaction] = {}
+    interactions: Dict[str, Interaction] = {}
 
     #: A repository of InteractionProperty objects.
-    interactionProperties: typing.Dict[str, ContactProperty] = {}
+    interactionProperties: Dict[str, ContactProperty] = {}
 
     #: A repository of ContactControl objects.
-    contactControls: typing.Dict[str, ContactControl] = {}
+    contactControls: Dict[str, ContactControl] = {}
 
     #: A repository of ContactInitialization objects.
-    contactInitializations: typing.Dict[str, ContactInitialization] = {}
+    contactInitializations: Dict[str, ContactInitialization] = {}
 
     #: A repository of ContactStabilization objects.
-    contactStabilizations: typing.Dict[str, ContactStabilization] = {}
+    contactStabilizations: Dict[str, ContactStabilization] = {}
 
     #: A tuple of tuples of Strings specifying the linked child PartInstance name in the
     #: current model to the corresponding parent PartInstance name in a different model.
@@ -164,84 +164,84 @@ class ModelBase:
     linkedParts: tuple = ()
 
     #: A repository of Load objects.
-    loads: typing.Dict[str, Load] = {}
+    loads: Dict[str, Load] = {}
 
     #: A repository of Material objects.
-    materials: typing.Dict[str, Material] = {}
+    materials: Dict[str, Material] = {}
 
     #: A repository of Calibration objects.
-    calibrations: typing.Dict[str, Calibration] = {}
+    calibrations: Dict[str, Calibration] = {}
 
     #: A repository of Section objects.
-    sections: typing.Dict[str, Section] = {}
+    sections: Dict[str, Section] = {}
 
     #: A repository of RemeshingRule objects.
-    remeshingRules: typing.Dict[str, RemeshingRule] = {}
+    remeshingRules: Dict[str, RemeshingRule] = {}
 
     #: A repository of ConstrainedSketch objects.
-    sketches: typing.Dict[str, ConstrainedSketch] = {}
+    sketches: Dict[str, ConstrainedSketch] = {}
 
     #: A repository of Part objects.
-    parts: typing.Dict[str, Part] = {}
+    parts: Dict[str, Part] = {}
 
     #: A repository of Step objects.
-    steps: typing.Dict[str, Step] = {}
+    steps: Dict[str, Step] = {}
 
     #: A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object.
     featureOptions: FeatureOptions = FeatureOptions()
 
     #: A repository of AdaptiveMeshConstraint objects.
-    adaptiveMeshConstraints: typing.Dict[str, AdaptiveMeshConstraint] = {}
+    adaptiveMeshConstraints: Dict[str, AdaptiveMeshConstraint] = {}
 
     #: A repository of AdaptiveMeshControl objects.
-    adaptiveMeshControls: typing.Dict[str, AdaptiveMeshControl] = {}
+    adaptiveMeshControls: Dict[str, AdaptiveMeshControl] = {}
 
     #: A repository of TimePoint objects.
-    timePoints: typing.Dict[str, TimePoint] = {}
+    timePoints: Dict[str, TimePoint] = {}
 
     #: A repository of Filter objects.
-    filters: typing.Dict[str, Filter] = {}
+    filters: Dict[str, Filter] = {}
 
     #: A repository of IntegratedOutputSection objects.
-    integratedOutputSections: typing.Dict[str, IntegratedOutputSection] = {}
+    integratedOutputSections: Dict[str, IntegratedOutputSection] = {}
 
     #: A repository of FieldOutputRequest objects.
-    fieldOutputRequests: typing.Dict[str, FieldOutputRequest] = {}
+    fieldOutputRequests: Dict[str, FieldOutputRequest] = {}
 
     #: A repository of HistoryOutputRequest objects.
-    historyOutputRequests: typing.Dict[str, HistoryOutputRequest] = {}
+    historyOutputRequests: Dict[str, HistoryOutputRequest] = {}
 
     #: A repository of OptimizationTask objects.
-    optimizationTasks: typing.Dict[str, OptimizationTask] = {}
+    optimizationTasks: Dict[str, OptimizationTask] = {}
 
     #: A repository of TableCollection objects.
     #:
     #: .. versionadded:: 2020
     #:     The `tableCollections` attribute was added.
-    tableCollections: typing.Dict[str, TableCollection] = {}
+    tableCollections: Dict[str, TableCollection] = {}
 
     #: A repository of EventSeriesType objects.
     #:
     #: .. versionadded:: 2020
     #:     The `eventSeriesTypes` attribute was added.
-    eventSeriesTypes: typing.Dict[str, EventSeriesType] = {}
+    eventSeriesTypes: Dict[str, EventSeriesType] = {}
 
     #: A repository of EventSeriesData objects.
     #:
     #: .. versionadded:: 2020
     #:     The `eventSeriesDatas` attribute was added.
-    eventSeriesDatas: typing.Dict[str, EventSeriesData] = {}
+    eventSeriesDatas: Dict[str, EventSeriesData] = {}
 
     @abaqus_method_doc
     def __init__(
         self,
         name: str,
         description: str = "",
-        stefanBoltzmann: typing.Optional[float] = None,
-        absoluteZero: typing.Optional[float] = None,
+        stefanBoltzmann: Optional[float] = None,
+        absoluteZero: Optional[float] = None,
         waveFormulation: SymbolicConstant = NOT_SET,
         modelType: SymbolicConstant = STANDARD_EXPLICIT,
-        universalGas: typing.Optional[float] = None,
+        universalGas: Optional[float] = None,
         copyConstraints: Boolean = ON,
         copyConnectors: Boolean = ON,
         copyInteractions: Boolean = ON,
@@ -434,13 +434,13 @@ class ModelBase:
         self,
         description: str = "",
         noPartsInputFile: Boolean = OFF,
-        absoluteZero: typing.Optional[float] = None,
-        stefanBoltzmann: typing.Optional[float] = None,
+        absoluteZero: Optional[float] = None,
+        stefanBoltzmann: Optional[float] = None,
         waveFormulation: SymbolicConstant = NOT_SET,
-        universalGas: typing.Optional[float] = None,
+        universalGas: Optional[float] = None,
         restartJob: str = "",
         restartStep: str = "",
-        restartIncrement: typing.Optional[SymbolicConstant] = None,
+        restartIncrement: Optional[SymbolicConstant] = None,
         endRestartStep: Boolean = OFF,
         globalJob: str = "",
         shellToSolid: Boolean = OFF,

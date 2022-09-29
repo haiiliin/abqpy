@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 from .OdbInstance import OdbInstance
 from .OdbPart import OdbPart
@@ -28,12 +28,12 @@ class FieldBulkData:
     #: - ELEMENT_FACE.
     #: - CENTROID, specifying the value at the centroid obtained by extrapolating results
     #:   calculated at the integration points.
-    position: typing.Optional[SymbolicConstant] = None
+    position: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the output type. Possible values are SCALAR, VECTOR,
     #: TENSOR_3D_FULL, TENSOR_3D_PLANAR, TENSOR_3D_SURFACE, TENSOR_2D_PLANAR, and
     #: TENSOR_2D_SURFACE.
-    type: typing.Optional[SymbolicConstant] = None
+    type: Optional[SymbolicConstant] = None
 
     #: An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object specifying the part to which the labels belong.
     instance: OdbInstance = OdbInstance(
@@ -41,7 +41,7 @@ class FieldBulkData:
     )
 
     #: A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object specifying the section point number of the current block of data.
-    sectionPoint: typing.Optional[SectionPoint] = None
+    sectionPoint: Optional[SectionPoint] = None
 
     #: A sequence of Ints specifying the element labels of the elements in the block.
     #: **elementLabels** is valid only if **position** = INTEGRATION_POINT, CENTROID, ELEMENT_NODAL,
@@ -86,4 +86,4 @@ class FieldBulkData:
     #: outputs the quaternion form is q=(q0,q)q=(q0,q), which represents the rotation from
     #: local to global. If the underlying data are in double precision, an exception will be
     #: thrown.
-    localCoordSystem: typing.Optional[float] = None
+    localCoordSystem: Optional[float] = None

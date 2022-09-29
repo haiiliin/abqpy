@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .BoundaryCondition import BoundaryCondition
@@ -32,7 +32,7 @@ class TemperatureBC(BoundaryCondition):
 
     #: A SymbolicConstant specifying the category of the boundary condition. Possible values
     #: are MECHANICAL and THERMAL.
-    category: typing.Optional[SymbolicConstant] = None
+    category: Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
@@ -40,7 +40,7 @@ class TemperatureBC(BoundaryCondition):
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: typing.Optional[str] = None
+    localCsys: Optional[str] = None
 
     @abaqus_method_doc
     def __init__(
@@ -140,7 +140,7 @@ class TemperatureBC(BoundaryCondition):
     def setValuesInStep(
         self,
         stepName: str,
-        magnitude: typing.Union[SymbolicConstant, float] = UNCHANGED,
+        magnitude: Union[SymbolicConstant, float] = UNCHANGED,
         dof: tuple = (),
         amplitude: str = "",
     ):

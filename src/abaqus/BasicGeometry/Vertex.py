@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Tuple
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -29,21 +29,21 @@ class Vertex:
     """
 
     #: An Int specifying the index of the ConstrainedSketchVertex in the VertexArray.
-    index: typing.Optional[int] = None
+    index: Optional[int] = None
 
     #: A Boolean specifying whether the vertex belongs to the reference representation of the
     #: Part or Instance.
     isReferenceRep: Boolean = OFF
 
     #: A tuple of Floats specifying the **X** -, **Y** -, and **Z** -coordinates of the vertex.
-    pointOn: typing.Optional[float] = None
+    pointOn: Optional[float] = None
 
     #: A tuple of Floats specifying the name of the feature that created this vertex.
-    featureName: typing.Optional[float] = None
+    featureName: Optional[float] = None
 
     #: A tuple of Floats specifying the name of the part instance for this vertex (if
     #: applicable).
-    instanceName: typing.Optional[float] = None
+    instanceName: Optional[float] = None
 
     @abaqus_method_doc
     def getEdges(self):
@@ -52,7 +52,7 @@ class Vertex:
 
         Returns
         -------
-        typing.Tuple[int, ...]
+        Tuple[int, ...]
             A tuple of integers.
 
         """

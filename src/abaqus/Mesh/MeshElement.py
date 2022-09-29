@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .MeshNode import MeshNode
@@ -43,10 +43,10 @@ class MeshElement:
     """
 
     #: An Int specifying the element label.
-    label: typing.Optional[int] = None
+    label: Optional[int] = None
 
     #: A SymbolicConstant specifying the Abaqus element code.
-    type: typing.Optional[SymbolicConstant] = None
+    type: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the part instance that owns this element.
     instanceName: str = ""
@@ -54,11 +54,11 @@ class MeshElement:
     #: A tuple of Ints specifying the internal node indices that define the nodal connectivity.
     #: It is important to note the difference with OdbMeshElement object of ODB where the
     #: connectivity is node labels instead of node indices.
-    connectivity: typing.Optional[int] = None
+    connectivity: Optional[int] = None
 
     @abaqus_method_doc
     def Element(
-        self, nodes: typing.Tuple[MeshNode, ...], elemShape: SymbolicConstant, label: typing.Optional[int] = None
+        self, nodes: Tuple[MeshNode, ...], elemShape: SymbolicConstant, label: Optional[int] = None
     ):
         """This method creates an element on an orphan mesh part from a sequence of nodes.
 
@@ -90,7 +90,7 @@ class MeshElement:
 
         Returns
         -------
-        typing.Tuple[MeshNode, ...]
+        Tuple[MeshNode, ...]
             A tuple of :py:class:`~abaqus.Mesh.MeshNode.MeshNode` objects.
         """
         ...
@@ -101,7 +101,7 @@ class MeshElement:
 
         Returns
         -------
-        typing.Tuple[MeshEdge, ...]
+        Tuple[MeshEdge, ...]
             A tuple of :py:class:`~abaqus.Mesh.MeshEdge.MeshEdge` objects.
         """
         ...
@@ -112,7 +112,7 @@ class MeshElement:
 
         Returns
         -------
-        typing.Tuple[MeshFace, ...]
+        Tuple[MeshFace, ...]
             A tuple of :py:class:`~abaqus.Mesh.MeshFace.MeshFace` objects.
         """
         ...
@@ -147,7 +147,7 @@ class MeshElement:
         ...
 
     @abaqus_method_doc
-    def setValues(self, label: typing.Optional[int] = None):
+    def setValues(self, label: Optional[int] = None):
         """This method modifies the MeshElement object.
 
         Parameters

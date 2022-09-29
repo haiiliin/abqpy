@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Region import Region
@@ -82,22 +82,22 @@ class Set(Region):
     #: A :py:class:`~abaqus.BasicGeometry.ReferencePointArray.ReferencePointArray` object.
     referencePoints: ReferencePointArray = []
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
         name: str,
-        nodes: typing.Tuple[MeshNode, ...] = None,
-        elements: typing.Tuple[MeshElement, ...] = None,
-        region: typing.Optional[Region] = None,
-        vertices: typing.Tuple[Vertex, ...] = None,
-        edges: typing.Tuple[Edge, ...] = None,
-        faces: typing.Tuple[Face, ...] = None,
-        cells: typing.Tuple[Cell, ...] = None,
-        xVertices: typing.Tuple[Vertex, ...] = None,
-        xEdges: typing.Tuple[Edge, ...] = None,
-        xFaces: typing.Tuple[Face, ...] = None,
-        referencePoints: typing.Tuple[ReferencePoint, ...] = (),
+        nodes: Tuple[MeshNode, ...] = None,
+        elements: Tuple[MeshElement, ...] = None,
+        region: Optional[Region] = None,
+        vertices: Tuple[Vertex, ...] = None,
+        edges: Tuple[Edge, ...] = None,
+        faces: Tuple[Face, ...] = None,
+        cells: Tuple[Cell, ...] = None,
+        xVertices: Tuple[Vertex, ...] = None,
+        xEdges: Tuple[Edge, ...] = None,
+        xFaces: Tuple[Face, ...] = None,
+        referencePoints: Tuple[ReferencePoint, ...] = (),
         skinFaces: tuple = (),
         skinEdges: tuple = (),
         stringerEdges: tuple = (),
@@ -157,7 +157,7 @@ class Set(Region):
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(self, name: str, objectToCopy: "Set"):
         """This method copies a set from an existing set.
@@ -187,7 +187,7 @@ class Set(Region):
         ...
 
     def SetByBoolean(
-        self, name: str, sets: typing.Tuple["Set"], operation: SymbolicConstant = UNION
+        self, name: str, sets: Tuple["Set"], operation: SymbolicConstant = UNION
     ):
         """This method creates a set by performing a boolean operation on two or more input sets.
 

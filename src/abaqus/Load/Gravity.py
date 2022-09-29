@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
@@ -40,10 +40,10 @@ class Gravity(Load):
         createStepName: str,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
-        region: typing.Optional[Region] = None,
-        comp1: typing.Optional[float] = None,
-        comp2: typing.Optional[float] = None,
-        comp3: typing.Optional[float] = None,
+        region: Optional[Region] = None,
+        comp1: Optional[float] = None,
+        comp2: Optional[float] = None,
+        comp3: Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method creates a Gravity object.
@@ -93,10 +93,10 @@ class Gravity(Load):
         self,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
-        region: typing.Optional[Region] = None,
-        comp1: typing.Optional[float] = None,
-        comp2: typing.Optional[float] = None,
-        comp3: typing.Optional[float] = None,
+        region: Optional[Region] = None,
+        comp1: Optional[float] = None,
+        comp2: Optional[float] = None,
+        comp3: Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing Gravity object in the step where it is
@@ -132,9 +132,9 @@ class Gravity(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        comp1: typing.Union[SymbolicConstant, float] = None,
-        comp2: typing.Union[SymbolicConstant, float] = None,
-        comp3: typing.Union[SymbolicConstant, float] = None,
+        comp1: Union[SymbolicConstant, float] = None,
+        comp2: Union[SymbolicConstant, float] = None,
+        comp3: Union[SymbolicConstant, float] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing Gravity object in the

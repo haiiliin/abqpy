@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -73,7 +73,7 @@ class ContactTangentialBehavior:
 
     #: None or a Float specifying the shear stress limit. If **shearStressLimit** = None, there is
     #: no upper limit. The default value is None.
-    shearStressLimit: typing.Optional[float] = None
+    shearStressLimit: Optional[float] = None
 
     #: A SymbolicConstant specifying what the maximum elastic slip will be. Possible values are
     #: FRACTION and ABSOLUTE_DISTANCE. The default value is FRACTION.
@@ -88,7 +88,7 @@ class ContactTangentialBehavior:
 
     #: None or a Float specifying the elastic slip stiffness. If **elasticSlipStiffness** = None,
     #: there is no upper limit. The default value is None.
-    elasticSlipStiffness: typing.Optional[float] = None
+    elasticSlipStiffness: Optional[float] = None
 
     #: An Int specifying the number of state-dependent variables. The default value is 0.
     nStateDependentVars: int = 0
@@ -98,7 +98,7 @@ class ContactTangentialBehavior:
 
     #: A tuple of tuples of Floats specifying tangential behavior. The items in the table data
     #: are described below.
-    table: typing.Optional[float] = None
+    table: Optional[float] = None
 
     @abaqus_method_doc
     def __init__(
@@ -111,11 +111,11 @@ class ContactTangentialBehavior:
         dependencies: int = 0,
         exponentialDecayDefinition: SymbolicConstant = COEFFICIENTS,
         table: tuple = (),
-        shearStressLimit: typing.Optional[float] = None,
+        shearStressLimit: Optional[float] = None,
         maximumElasticSlip: SymbolicConstant = FRACTION,
         fraction: float = 0,
         absoluteDistance: float = 0,
-        elasticSlipStiffness: typing.Optional[float] = None,
+        elasticSlipStiffness: Optional[float] = None,
         nStateDependentVars: int = 0,
         useProperties: Boolean = OFF,
     ):

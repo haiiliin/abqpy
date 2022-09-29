@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
 from ..Datum.DatumAxis import DatumAxis
@@ -100,7 +100,7 @@ class BoltLoad(Load):
     def setValues(
         self,
         boltMethod: SymbolicConstant = APPLY_FORCE,
-        datumAxis: typing.Optional[DatumAxis] = None, 
+        datumAxis: Optional[DatumAxis] = None, 
         amplitude: str = UNSET,
         preTenSecPartLevel: Boolean = False,
     ):
@@ -133,7 +133,7 @@ class BoltLoad(Load):
         self,
         stepName: str,
         boltMethod: SymbolicConstant = APPLY_FORCE,
-        magnitude: typing.Optional[float] = None,
+        magnitude: Optional[float] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing BoltLoad object in the

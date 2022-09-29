@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ArbitraryProfile import ArbitraryProfile
@@ -46,10 +46,10 @@ class BeamSectionProfileModel(ModelBase):
 
         Returns
         -------
-        typing.List[Profile]
+        List[Profile]
             A list of Profile objects.
         """
-        profiles: typing.Dict[str, Profile] = {}
+        profiles: Dict[str, Profile] = {}
         self.profiles.update(profiles)
         return profiles
 

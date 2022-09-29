@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .Message import Message
 
-MessageArray = typing.List[Message]
+MessageArray = List[Message]

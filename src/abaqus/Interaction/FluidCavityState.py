@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 from .InteractionState import InteractionState
 from ..UtilityAndView.abaqusConstants import *
@@ -31,4 +31,4 @@ class FluidCavityState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: typing.Optional[SymbolicConstant] = None
+    status: Optional[SymbolicConstant] = None

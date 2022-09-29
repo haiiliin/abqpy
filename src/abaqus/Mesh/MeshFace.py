@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Tuple
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
@@ -21,10 +21,10 @@ class MeshFace:
     """
 
     #: An Int specifying an Int specifying the element label.
-    label: typing.Optional[int] = None
+    label: Optional[int] = None
 
     #: An Int specifying a symbolic constant specifying the side of the element.
-    face: typing.Optional[int] = None
+    face: Optional[int] = None
 
     @abaqus_method_doc
     def getElemEdges(self):
@@ -32,7 +32,7 @@ class MeshFace:
 
         Returns
         -------
-        edges: typing.Tuple[MeshEdge, ...]
+        edges: Tuple[MeshEdge, ...]
             A tuple of MeshEdge objects
         """
         ...
@@ -43,7 +43,7 @@ class MeshFace:
 
         Returns
         -------
-        elements: typing.Tuple[MeshElement, ...]
+        elements: Tuple[MeshElement, ...]
             A tuple of MeshElement objects
         """
         ...
@@ -54,7 +54,7 @@ class MeshFace:
 
         Returns
         -------
-        nodes: typing.Tuple[MeshNode, ...]
+        nodes: Tuple[MeshNode, ...]
             A tuple of MeshNode objects
         """
         ...
@@ -83,7 +83,7 @@ class MeshFace:
 
         Returns
         -------
-        normal: typing.Tuple[float, ...]
+        normal: Tuple[float, ...]
             A tuple of 3 floats representing the unit normal vector. If the element face is
             collapsed such that a normal cannot be computed, a zero-length vector is returned.
         """

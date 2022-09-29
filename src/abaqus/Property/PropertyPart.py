@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .CompositeLayup import CompositeLayup
 from .MaterialOrientation import MaterialOrientation
@@ -129,8 +129,8 @@ class PropertyPart(PartBase):
     @abaqus_method_doc
     def MaterialOrientation(
         self,
-        region: typing.Optional[Set] = None,
-        localCsys: typing.Optional[DatumCsys] = None, 
+        region: Optional[Set] = None,
+        localCsys: Optional[DatumCsys] = None, 
         axis: SymbolicConstant = AXIS_1,
         angle: float = 0,
         stackDirection: SymbolicConstant = STACK_3,
@@ -138,14 +138,14 @@ class PropertyPart(PartBase):
         orientationType: SymbolicConstant = GLOBAL,
         normalAxisDirection: SymbolicConstant = AXIS_3,
         normalAxisDefinition: SymbolicConstant = NORMAL_VECTOR,
-        normalAxisRegion: typing.Optional[Surface] = None,
-        normalAxisDatum: typing.Optional[DatumAxis] = None, 
+        normalAxisRegion: Optional[Surface] = None,
+        normalAxisDatum: Optional[DatumAxis] = None, 
         flipNormalDirection: Boolean = OFF,
         normalAxisVector: tuple = (),
         primaryAxisDirection: SymbolicConstant = AXIS_1,
         primaryAxisDefinition: SymbolicConstant = PRIMARY_VECTOR,
-        primaryAxisRegion: typing.Optional[Set] = None,
-        primaryAxisDatum: typing.Optional[DatumAxis] = None, 
+        primaryAxisRegion: Optional[Set] = None,
+        primaryAxisDatum: Optional[DatumAxis] = None, 
         flipPrimaryDirection: Boolean = OFF,
         primaryAxisVector: tuple = (),
     ) -> MaterialOrientation:

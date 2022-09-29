@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, List, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Adaptivity.AdaptivityProcess import AdaptivityProcess
@@ -23,36 +23,36 @@ class MdbBase:
     """
 
     #: An Int specifying the release number of the Mdb object in memory.
-    version: typing.Optional[int] = None
+    version: Optional[int] = None
 
     #: A Float specifying the value of a counter associated with the Mdb object. The counter
     #: indicates when the Mdb object was last changed.
-    lastChangedCount: typing.Optional[float] = None
+    lastChangedCount: Optional[float] = None
 
     #: A repository of Job objects.
-    jobs: typing.Dict[str, Job] = {}
+    jobs: Dict[str, Job] = {}
 
     #: A repository of AdaptivityProcess objects.
-    adaptivityProcesses: typing.Dict[str, AdaptivityProcess] = {}
+    adaptivityProcesses: Dict[str, AdaptivityProcess] = {}
 
     #: A repository of Coexecution objects.
-    coexecutions: typing.Dict[str, Coexecution] = {}
+    coexecutions: Dict[str, Coexecution] = {}
 
     #: A repository of OptimizationProcess objects.
-    optimizationProcesses: typing.Dict[str, OptimizationProcess] = {}
+    optimizationProcesses: Dict[str, OptimizationProcess] = {}
 
     #: A :py:class:`~abaqus.EditMesh.MeshEditOptions.MeshEditOptions` object specifying the undo/redo behavior when editing meshes on parts
     #: or part instances.
     meshEditOptions: MeshEditOptions = MeshEditOptions()
 
     #: A repository of Model objects.
-    models: typing.Dict[str, Model] = {}
+    models: Dict[str, Model] = {}
 
     #: A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object.
     customData: RepositorySupport = RepositorySupport()
 
     #: A repository of Annotation objects.
-    annotations: typing.Dict[str, Annotation] = {}
+    annotations: Dict[str, Annotation] = {}
 
     @abaqus_method_doc
     def __init__(self, pathName: str = ""):
@@ -239,7 +239,7 @@ class MdbBase:
 
         Returns
         -------
-        typing.List[str]
+        List[str]
             A list of model names present in the auxiliaryMdb
 
         Raises

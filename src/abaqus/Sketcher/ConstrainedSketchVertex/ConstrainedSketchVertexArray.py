@@ -1,4 +1,4 @@
-import typing
+from typing import List, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchVertex import ConstrainedSketchVertex
@@ -6,7 +6,7 @@ from ...UtilityAndView.abaqusConstants import *
 
 
 @abaqus_class_doc
-class ConstrainedSketchVertexArray(typing.List[ConstrainedSketchVertex]):
+class ConstrainedSketchVertexArray(List[ConstrainedSketchVertex]):
     """The ConstrainedSketchVertexArray is a sequence of ConstrainedSketchVertex objects.
 
     .. note:: 
@@ -17,7 +17,7 @@ class ConstrainedSketchVertexArray(typing.List[ConstrainedSketchVertex]):
     """
 
     @abaqus_method_doc
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[ConstrainedSketchVertex, typing.List[ConstrainedSketchVertex]]:
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> Union[ConstrainedSketchVertex, List[ConstrainedSketchVertex]]:
         """This method returns the ConstrainedSketchVertex located at the given coordinates.
 
         Parameters

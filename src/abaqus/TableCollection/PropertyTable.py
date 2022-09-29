@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .PropertyTableData import PropertyTableData
@@ -29,7 +29,7 @@ class PropertyTable:
     """
 
     #: A repository of PropertyTableData. Specifies all the propertyTableData in PropertyTable
-    propertyTableDatas: typing.Dict[str, PropertyTableData] = {}
+    propertyTableDatas: Dict[str, PropertyTableData] = {}
 
     #: A String specifying the repository key.
     name: str
@@ -94,10 +94,10 @@ class PropertyTable:
     def PropertyTableData(
         self,
         label: str = "",
-        regularize: typing.Optional[SymbolicConstant] = None,
-        extrapolate: typing.Optional[SymbolicConstant] = None,
+        regularize: Optional[SymbolicConstant] = None,
+        extrapolate: Optional[SymbolicConstant] = None,
         isTemp: Boolean = OFF,
-        fieldNums: typing.Optional[int] = None,
+        fieldNums: Optional[int] = None,
         regularizeTolerance: str = "",
         data: str = "",
     ) -> PropertyTableData:

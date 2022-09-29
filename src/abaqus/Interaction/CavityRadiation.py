@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Interaction import Interaction
 from ..BasicGeometry.ModelDot import ModelDot
@@ -34,7 +34,7 @@ class CavityRadiation(Interaction):
 
     #: None or a Float specifying the reference ambient temperature value, θ0θ0. Specifying a
     #: value indicates an open cavity. The default value is None.
-    ambientTemp: typing.Optional[float] = None
+    ambientTemp: Optional[float] = None
 
     #: A Float specifying the facet area ratio above which the infinitesimal-to-finite area
     #: approximation is used for viewfactor calculations. The default value is 64.0.
@@ -86,12 +86,12 @@ class CavityRadiation(Interaction):
     #: None or a Float specifying the Z value indicating the symmetry reference line in
     #: axisymmetric models. This argument applies only for axisymmetric models, and when
     #: **periodicSymmetries** = 1. The default value is None.
-    periodicSymZ: typing.Optional[float] = None
+    periodicSymZ: Optional[float] = None
 
     #: None or a Float specifying the Z value indicating the periodic distance in axisymmetric
     #: models. This argument applies only for axisymmetric models, and when
     #: **periodicSymmetries** = 1. The default value is None.
-    periodicDistZ: typing.Optional[float] = None
+    periodicDistZ: Optional[float] = None
 
     #: An Int specifying the number of reflection symmetries will be applied. The default value
     #: is 0.
@@ -100,7 +100,7 @@ class CavityRadiation(Interaction):
     #: None or a Float specifying the Z value indicating the symmetry reference line in
     #: axisymmetric models. This argument applies only for axisymmetric models, and when
     #: **reflectionSymmetries** = 1. The default value is None.
-    reflectionSymZ: typing.Optional[float] = None
+    reflectionSymZ: Optional[float] = None
 
     #: A String specifying the name of the step in which the cavity radiation interaction
     #: should be created.
@@ -152,10 +152,10 @@ class CavityRadiation(Interaction):
         createStepName: str,
         surfaces: RegionArray,
         surfaceEmissivities: tuple,
-        ambientTemp: typing.Optional[float] = None,
+        ambientTemp: Optional[float] = None,
         blocking: SymbolicConstant = BLOCKING_ALL,
-        blockingSurfaces: typing.Optional[RegionArray] = None,
-        rangeOfView: typing.Optional[float] = None,
+        blockingSurfaces: Optional[RegionArray] = None,
+        rangeOfView: Optional[float] = None,
         surfaceReflection: Boolean = ON,
         viewfactorAccurTol: float = 0,
         minInfinitesimalRatio: float = 64,
@@ -163,9 +163,9 @@ class CavityRadiation(Interaction):
         minLumpedAreaDS: float = 5,
         cyclicSymmetry: Boolean = OFF,
         cyclicImages: int = 2,
-        cyclicRotPt: typing.Optional[ModelDot] = None, 
-        cyclicRotEndPt: typing.Optional[ModelDot] = None, 
-        cyclicSymPt: typing.Optional[ModelDot] = None, 
+        cyclicRotPt: Optional[ModelDot] = None, 
+        cyclicRotEndPt: Optional[ModelDot] = None, 
+        cyclicSymPt: Optional[ModelDot] = None, 
         periodicSymmetries: int = 0,
         periodicImages_1: int = 2,
         periodicImages_2: int = 2,
@@ -178,15 +178,15 @@ class CavityRadiation(Interaction):
         periodicDistance_1: tuple = (),
         periodicDistance_2: tuple = (),
         periodicDistance_3: tuple = (),
-        periodicSymZ: typing.Optional[float] = None,
-        periodicDistZ: typing.Optional[float] = None,
+        periodicSymZ: Optional[float] = None,
+        periodicDistZ: Optional[float] = None,
         reflectionSymmetries: int = 0,
         reflectionSymAxis_1: str = "",
         reflectionSymAxis_2: str = "",
         reflectionSymPlane_1: str = "",
         reflectionSymPlane_2: str = "",
         reflectionSymPlane_3: str = "",
-        reflectionSymZ: typing.Optional[float] = None,
+        reflectionSymZ: Optional[float] = None,
     ):
         """This method creates a CavityRadiation object.
 
@@ -360,10 +360,10 @@ class CavityRadiation(Interaction):
     def setValues(
         self,
         surfaceEmissivities: tuple = (),
-        ambientTemp: typing.Optional[float] = None,
+        ambientTemp: Optional[float] = None,
         blocking: SymbolicConstant = BLOCKING_ALL,
-        blockingSurfaces: typing.Optional[RegionArray] = None,
-        rangeOfView: typing.Optional[float] = None,
+        blockingSurfaces: Optional[RegionArray] = None,
+        rangeOfView: Optional[float] = None,
         surfaceReflection: Boolean = ON,
         viewfactorAccurTol: float = 0,
         minInfinitesimalRatio: float = 64,
@@ -371,9 +371,9 @@ class CavityRadiation(Interaction):
         minLumpedAreaDS: float = 5,
         cyclicSymmetry: Boolean = OFF,
         cyclicImages: int = 2,
-        cyclicRotPt: typing.Optional[ModelDot] = None, 
-        cyclicRotEndPt: typing.Optional[ModelDot] = None, 
-        cyclicSymPt: typing.Optional[ModelDot] = None, 
+        cyclicRotPt: Optional[ModelDot] = None, 
+        cyclicRotEndPt: Optional[ModelDot] = None, 
+        cyclicSymPt: Optional[ModelDot] = None, 
         periodicSymmetries: int = 0,
         periodicImages_1: int = 2,
         periodicImages_2: int = 2,
@@ -386,15 +386,15 @@ class CavityRadiation(Interaction):
         periodicDistance_1: tuple = (),
         periodicDistance_2: tuple = (),
         periodicDistance_3: tuple = (),
-        periodicSymZ: typing.Optional[float] = None,
-        periodicDistZ: typing.Optional[float] = None,
+        periodicSymZ: Optional[float] = None,
+        periodicDistZ: Optional[float] = None,
         reflectionSymmetries: int = 0,
         reflectionSymAxis_1: str = "",
         reflectionSymAxis_2: str = "",
         reflectionSymPlane_1: str = "",
         reflectionSymPlane_2: str = "",
         reflectionSymPlane_3: str = "",
-        reflectionSymZ: typing.Optional[float] = None,
+        reflectionSymZ: Optional[float] = None,
     ):
         """This method modifies the data for an existing CavityRadiation object in the step where
         it is created.
@@ -552,8 +552,8 @@ class CavityRadiation(Interaction):
         self,
         stepName: str,
         blocking: SymbolicConstant = BLOCKING_ALL,
-        blockingSurfaces: typing.Optional[RegionArray] = None,
-        rangeOfView: typing.Optional[float] = None,
+        blockingSurfaces: Optional[RegionArray] = None,
+        rangeOfView: Optional[float] = None,
         surfaceReflection: Boolean = ON,
         viewfactorAccurTol: float = 0,
     ):

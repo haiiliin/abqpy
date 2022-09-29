@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -28,7 +28,7 @@ class ProbeOptions:
     #: ELEMENT_NODAL, and ELEMENT_CENTROID.When **probeEntity** = NODE, the only possible value is
     #: NODAL. When **probeEntity** = ELEMENT, the only possible values are INTEGRATION_POINT,
     #: ELEMENT_FACE, ELEMENT_NODAL, and ELEMENT_CENTROID, and the default is INTEGRATION_POINT.
-    probeOutputPosition: typing.Optional[SymbolicConstant] = None
+    probeOutputPosition: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether to display the part instance information. This member is
     #: valid when **probeObject** = ODB. The default value is ON.
@@ -107,9 +107,9 @@ class ProbeOptions:
     @abaqus_method_doc
     def setValues(
         self,
-        options: typing.Optional["ProbeOptions"] = None,
+        options: Optional["ProbeOptions"] = None,
         probeEntity: SymbolicConstant = ELEMENT,
-        probeOutputPosition: typing.Optional[SymbolicConstant] = None,
+        probeOutputPosition: Optional[SymbolicConstant] = None,
         partInstance: Boolean = ON,
         elementID: Boolean = ON,
         elementType: Boolean = ON,

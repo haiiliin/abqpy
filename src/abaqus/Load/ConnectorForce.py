@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
@@ -43,9 +43,9 @@ class ConnectorForce(Load):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        f1: typing.Optional[float] = None,
-        f2: typing.Optional[float] = None,
-        f3: typing.Optional[float] = None,
+        f1: Optional[float] = None,
+        f2: Optional[float] = None,
+        f3: Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method creates a ConnectorForce object on a wire region. Alternatively, the load
@@ -102,9 +102,9 @@ class ConnectorForce(Load):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        f1: typing.Optional[float] = None,
-        f2: typing.Optional[float] = None,
-        f3: typing.Optional[float] = None,
+        f1: Optional[float] = None,
+        f2: Optional[float] = None,
+        f3: Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing ConnectorForce object in the step where it
@@ -145,9 +145,9 @@ class ConnectorForce(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        f1: typing.Union[SymbolicConstant, float] = None,
-        f2: typing.Union[SymbolicConstant, float] = None,
-        f3: typing.Union[SymbolicConstant, float] = None,
+        f1: Union[SymbolicConstant, float] = None,
+        f2: Union[SymbolicConstant, float] = None,
+        f3: Union[SymbolicConstant, float] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing ConnectorForce object in the

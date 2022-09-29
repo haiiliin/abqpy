@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConnectorOrientation import ConnectorOrientation
 from ..Canvas.Displayable import Displayable
@@ -28,11 +28,11 @@ class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly,
     def ConnectorOrientation(
         self,
         region: Set,
-        localCsys1: typing.Optional[DatumCsys] = None,
+        localCsys1: Optional[DatumCsys] = None,
         axis1: SymbolicConstant = AXIS_1,
         angle1: float = 0,
         orient2sameAs1: Boolean = ON,
-        localCsys2: typing.Optional[DatumCsys] = None,
+        localCsys2: Optional[DatumCsys] = None,
         axis2: SymbolicConstant = AXIS_1,
         angle2: float = 0,
     ) -> ConnectorOrientation:

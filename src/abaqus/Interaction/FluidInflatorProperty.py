@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactProperty import ContactProperty
 
@@ -58,9 +58,9 @@ class FluidInflatorProperty(ContactProperty):
         definition: str,
         effectiveArea: float,
         tankVolume: float,
-        dischargeCoefficient: typing.Optional[float] = None,
+        dischargeCoefficient: Optional[float] = None,
         dataTable: tuple = (),
-        numFluids: typing.Optional[int] = None,
+        numFluids: Optional[int] = None,
         mixtureType: str = "",
         inflationTime: tuple = (),
         fluidbehaviorName: tuple = (),
@@ -116,9 +116,9 @@ class FluidInflatorProperty(ContactProperty):
     @abaqus_method_doc
     def setValues(
         self,
-        dischargeCoefficient: typing.Optional[float] = None,
+        dischargeCoefficient: Optional[float] = None,
         dataTable: tuple = (),
-        numFluids: typing.Optional[int] = None,
+        numFluids: Optional[int] = None,
         mixtureType: str = "",
         inflationTime: tuple = (),
         fluidbehaviorName: tuple = (),

@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
@@ -19,7 +19,7 @@ class ImageAnimationOptions(_OptionsBase):
     #: An Int specifying the frame rate to record on the saved animation file. The effective
     #: frame rate in frames per second will be obtained by dividing the given frame rate by the
     #: time scale.
-    frameRate: typing.Optional[int] = None
+    frameRate: Optional[int] = None
 
     #: An Int specifying the time scale to apply to the frame rate.
     vpDecorations: Boolean = ON
@@ -33,8 +33,8 @@ class ImageAnimationOptions(_OptionsBase):
     @abaqus_method_doc
     def setValues(
         self,
-        frameRate: typing.Optional[int] = None,
-        timeScale: typing.Optional[int] = None,
+        frameRate: Optional[int] = None,
+        timeScale: Optional[int] = None,
         vpDecorations: Boolean = ON,
         vpBackground: Boolean = OFF,
         compass: Boolean = OFF,

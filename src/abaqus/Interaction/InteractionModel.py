@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Tuple, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .InteractionContactControlModel import InteractionContactControlModel
@@ -74,7 +74,7 @@ class InteractionModel(
         searchDomain: SymbolicConstant = MODEL,
         defaultType: SymbolicConstant = CONTACT,
         interactionProperty: str = "",
-        separationTolerance: typing.Optional[float] = None,
+        separationTolerance: Optional[float] = None,
         extendByAngle: float = 20,
         mergeWithinAngle: float = 20,
         searchSingleInstances: Boolean = OFF,
@@ -92,7 +92,7 @@ class InteractionModel(
         includeNonOverlapping: Boolean = OFF,
         meshedGeometrySearchTechnique: SymbolicConstant = USE_GEOMETRY,
         useShellThickness: Boolean = ON,
-        surfaceSmoothing: typing.Optional[SymbolicConstant] = None,
+        surfaceSmoothing: Optional[SymbolicConstant] = None,
     ):
         """This method uses contact detection to create SurfaceToSurfaceContactStd,
         SurfaceToSurfaceContactExp, and Tie objects.
@@ -196,7 +196,7 @@ class InteractionModel(
 
         Returns
         -------
-        typing.Tuple[typing.Tuple[str, str, float, bool], ...]
+        Tuple[Tuple[str, str, float, bool], ...]
             Tuple of tuples, where each tuple holds information, to be used in contact creation as
             follows:
             
@@ -364,10 +364,10 @@ class InteractionModel(
         createStepName: str,
         surfaces: RegionArray,
         surfaceEmissivities: tuple = (),
-        ambientTemp: typing.Optional[float] = None,
+        ambientTemp: Optional[float] = None,
         blocking: SymbolicConstant = BLOCKING_ALL,
-        blockingSurfaces: typing.Optional[RegionArray] = None,
-        rangeOfView: typing.Optional[float] = None,
+        blockingSurfaces: Optional[RegionArray] = None,
+        rangeOfView: Optional[float] = None,
         surfaceReflection: Boolean = ON,
         viewfactorAccurTol: float = 0,
         minInfinitesimalRatio: float = 64,
@@ -375,9 +375,9 @@ class InteractionModel(
         minLumpedAreaDS: float = 5,
         cyclicSymmetry: Boolean = OFF,
         cyclicImages: int = 2,
-        cyclicRotPt: typing.Optional[ModelDot] = None, 
-        cyclicRotEndPt: typing.Optional[ModelDot] = None, 
-        cyclicSymPt: typing.Optional[ModelDot] = None, 
+        cyclicRotPt: Optional[ModelDot] = None, 
+        cyclicRotEndPt: Optional[ModelDot] = None, 
+        cyclicSymPt: Optional[ModelDot] = None, 
         periodicSymmetries: int = 0,
         periodicImages_1: int = 2,
         periodicImages_2: int = 2,
@@ -390,15 +390,15 @@ class InteractionModel(
         periodicDistance_1: tuple = (),
         periodicDistance_2: tuple = (),
         periodicDistance_3: tuple = (),
-        periodicSymZ: typing.Optional[float] = None,
-        periodicDistZ: typing.Optional[float] = None,
+        periodicSymZ: Optional[float] = None,
+        periodicDistZ: Optional[float] = None,
         reflectionSymmetries: int = 0,
         reflectionSymAxis_1: str = "",
         reflectionSymAxis_2: str = "",
         reflectionSymPlane_1: str = "",
         reflectionSymPlane_2: str = "",
         reflectionSymPlane_3: str = "",
-        reflectionSymZ: typing.Optional[float] = None,
+        reflectionSymZ: Optional[float] = None,
     ) -> CavityRadiation:
         """This method creates a CavityRadiation object.
 
@@ -798,16 +798,16 @@ class InteractionModel(
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-        includedPairs: typing.Optional[RegionPairs] = None, 
-        excludedPairs: typing.Optional[RegionPairs] = None, 
-        contactPropertyAssignments: typing.Optional[ContactPropertyAssignment] = None, 
-        surfaceThicknessAssignments: typing.Optional[SurfaceThicknessAssignment] = None, 
-        surfaceOffsetAssignments: typing.Optional[SurfaceOffsetAssignment] = None, 
-        surfaceFeatureAssignments: typing.Optional[SurfaceFeatureAssignment] = None, 
-        smoothingAssignments: typing.Optional[SmoothingAssignment] = None,
+        includedPairs: Optional[RegionPairs] = None, 
+        excludedPairs: Optional[RegionPairs] = None, 
+        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
+        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
+        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
+        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None, 
+        smoothingAssignments: Optional[SmoothingAssignment] = None,
         surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
         surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-        mainSecondaryAssignments: typing.Optional[MainSecondaryAssignment] = None,
+        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -904,20 +904,20 @@ class InteractionModel(
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-        includedPairs: typing.Optional[RegionPairs] = None, 
-        excludedPairs: typing.Optional[RegionPairs] = None, 
-        contactPropertyAssignments: typing.Optional[ContactPropertyAssignment] = None, 
-        surfaceThicknessAssignments: typing.Optional[SurfaceThicknessAssignment] = None, 
-        surfaceOffsetAssignments: typing.Optional[SurfaceOffsetAssignment] = None, 
-        surfaceFeatureAssignments: typing.Optional[SurfaceFeatureAssignment] = None,
+        includedPairs: Optional[RegionPairs] = None, 
+        excludedPairs: Optional[RegionPairs] = None, 
+        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
+        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
+        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
+        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: typing.Tuple[SlidingFormulationAssignment, ...] = None,
-        mainSecondaryAssignments: typing.Optional[MainSecondaryAssignment] = None, 
-        initializationAssignments: typing.Optional[InitializationAssignment] = None, 
-        stabilizationAssignments: typing.Optional[StabilizationAssignment] = None, 
-        smoothingAssignments: typing.Optional[SmoothingAssignment] = None, 
-        slidingTransitionAssignments: typing.Optional[SlidingTransitionAssignment] = None, 
+        slidingFormulationAssignments: Tuple[SlidingFormulationAssignment, ...] = None,
+        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
+        initializationAssignments: Optional[InitializationAssignment] = None, 
+        stabilizationAssignments: Optional[StabilizationAssignment] = None, 
+        smoothingAssignments: Optional[SmoothingAssignment] = None, 
+        slidingTransitionAssignments: Optional[SlidingTransitionAssignment] = None, 
     ) -> ContactStd:
         """This method creates a ContactStd object.
 
@@ -1435,9 +1435,9 @@ class InteractionModel(
         amplitude: str = "",
         imaginaryAmplitude: str = "",
         surfaceNormal: tuple = (),
-        initialDepth: typing.Optional[float] = None,
-        referenceMagnitude: typing.Optional[float] = None,
-        detonationTime: typing.Optional[float] = None,
+        initialDepth: Optional[float] = None,
+        referenceMagnitude: Optional[float] = None,
+        detonationTime: Optional[float] = None,
         magnitudeFactor: float = 1,
     ) -> IncidentWave:
         """This method creates an IncidentWave object.
@@ -1527,7 +1527,7 @@ class InteractionModel(
         createStepName: str,
         isRestart: Boolean = OFF,
         regionType: SymbolicConstant = GEOMETRY,
-        region: typing.Optional[Region] = None,
+        region: Optional[Region] = None,
         activeInStep: Boolean = OFF,
         includeStrain: Boolean = OFF,
     ) -> ModelChange:
@@ -1904,14 +1904,14 @@ class InteractionModel(
         weightingFactorType: SymbolicConstant = DEFAULT,
         weightingFactor: float = 0,
         contactControls: str = "",
-        initialClearance: typing.Union[SymbolicConstant, float] = OMIT,
-        halfThreadAngle: typing.Optional[str] = None,
-        pitch: typing.Optional[str] = None,
-        majorBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED,
-        meanBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED,
-        datumAxis: typing.Optional[DatumAxis] = None, 
+        initialClearance: Union[SymbolicConstant, float] = OMIT,
+        halfThreadAngle: Optional[str] = None,
+        pitch: Optional[str] = None,
+        majorBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
-        clearanceRegion: typing.Optional[Region] = None,
+        clearanceRegion: Optional[Region] = None,
     ) -> SurfaceToSurfaceContactExp:
         """This method creates a SurfaceToSurfaceContactExp object.
 
@@ -2026,23 +2026,23 @@ class InteractionModel(
         extensionZone: float = 0,
         adjustMethod: SymbolicConstant = NONE,
         adjustTolerance: float = 0,
-        adjustSet: typing.Optional[Region] = None,
+        adjustSet: Optional[Region] = None,
         enforcement: SymbolicConstant = SURFACE_TO_SURFACE,
         thickness: Boolean = ON,
         contactControls: str = "",
         tied: Boolean = OFF,
-        initialClearance: typing.Union[SymbolicConstant, float] = OMIT,
-        halfThreadAngle: typing.Optional[str] = None,
-        pitch: typing.Optional[str] = None,
-        majorBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED,
-        meanBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED,
-        datumAxis: typing.Optional[DatumAxis] = None, 
+        initialClearance: Union[SymbolicConstant, float] = OMIT,
+        halfThreadAngle: Optional[str] = None,
+        pitch: Optional[str] = None,
+        majorBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
-        clearanceRegion: typing.Optional[Region] = None,
+        clearanceRegion: Optional[Region] = None,
         surfaceSmoothing: SymbolicConstant = NONE,
-        bondingSet: typing.Optional[Region] = None,
+        bondingSet: Optional[Region] = None,
         handedness: SymbolicConstant = RIGHT,
-        normalAdjustment: typing.Optional[SymbolicConstant] = None,
+        normalAdjustment: Optional[SymbolicConstant] = None,
     ) -> SurfaceToSurfaceContactStd:
         """This method creates a SurfaceToSurfaceContactStd object.
 

@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from ..TableCollection.ParameterColumn import ParameterColumn
 
-ParameterColumnArray = typing.List[ParameterColumn]
+ParameterColumnArray = List[ParameterColumn]

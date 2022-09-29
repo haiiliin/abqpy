@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Leaf import Leaf
 from ..UtilityAndView.abaqusConstants import *
@@ -24,7 +24,7 @@ class LeafFromConstraintNames(Leaf):
 
     #: A SymbolicConstant specifying the leaf type. Possible values are TIE,
     #: SHELL_TO_SOLID_COUPLING, DISTRIBUTING_COUPLING, KINEMATIC_COUPLING, RIGID_BODY, and MPC.
-    leafType: typing.Optional[SymbolicConstant] = None
+    leafType: Optional[SymbolicConstant] = None
 
     @abaqus_method_doc
     def __init__(self, name: tuple, type: SymbolicConstant):

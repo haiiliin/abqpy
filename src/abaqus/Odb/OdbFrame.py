@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .FieldOutput import FieldOutput
@@ -19,26 +19,26 @@ class OdbFrame:
 
     #: An Int specifying the cyclic mode number associated with the data stored on this frame.
     #: Only frequency analyses of cyclic symmetry models possess cyclic mode numbers.
-    cyclicModeNumber: typing.Optional[int] = None
+    cyclicModeNumber: Optional[int] = None
 
     #: A SymbolicConstant specifying the domain of the step of which the frame is a member.
     #: Possible values are TIME, FREQUENCY, and MODAL.
-    domain: typing.Optional[SymbolicConstant] = None
+    domain: Optional[SymbolicConstant] = None
 
     #: A Float specifying the frequency. This member is valid only if **domain** = FREQUENCY or if
     #: the **procedureType** member of the Step object=FREQUENCY. The default value is 0.0.
     frequency: float = 0
 
     #: An Int specifying the eigenmode. This member is valid only if **domain** = MODAL.
-    mode: typing.Optional[int] = None
+    mode: Optional[int] = None
 
     #: An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object specifying the real or imaginary portion of the data corresponding to
     #: this cyclic symmetry mode.
-    associatedFrame: typing.Optional["OdbFrame"] = None
+    associatedFrame: Optional["OdbFrame"] = None
 
     #: A repository of FieldOutput objects specifying the key to the **fieldOutputs** repository
     #: is a String representing an output variable.
-    fieldOutputs: typing.Dict[str, FieldOutput] = {}
+    fieldOutputs: Dict[str, FieldOutput] = {}
 
     #: An :py:class:`~abaqus.Odb.OdbLoadCase.OdbLoadCase` object specifying the load case for the frame.
     loadCase: OdbLoadCase = OdbLoadCase("loadCase")
@@ -56,7 +56,7 @@ class OdbFrame:
     #: A String specifying the contents of the frame. The default value is an empty string.
     description: str = ""
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(self, incrementNumber: int, frameValue: float, description: str = ""):
         """This method creates an OdbFrame object and appends it to the frame sequence.
@@ -86,7 +86,7 @@ class OdbFrame:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(self, mode: int, frequency: float, description: str = ""):
         """This constructor creates an OdbFrame object in the frequency domain and appends it to
@@ -115,7 +115,7 @@ class OdbFrame:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self, loadCase: OdbLoadCase, description: str = "", frequency: float = 0
@@ -149,14 +149,14 @@ class OdbFrame:
     def Frame(self, *args, **kwargs):
         ...
 
-    @typing.overload
+    @overload
     def FieldOutput(
         self,
         name: str,
         description: str,
         type: SymbolicConstant,
         componentLabels: tuple = (),
-        validInvariants: typing.Optional[SymbolicConstant] = None,
+        validInvariants: Optional[SymbolicConstant] = None,
         isEngineeringTensor: Boolean = OFF,
     ):
         """This method creates a FieldOutput object.
@@ -202,7 +202,7 @@ class OdbFrame:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def FieldOutput(self, field: "FieldOutput", name: str = "", description: str = ""):
         """This method creates a FieldOutput object from an existing FieldOutput object of the same

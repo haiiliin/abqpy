@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .DisplayGroup import DisplayGroup
 
-DisplayGroupArray = typing.List[DisplayGroup]
+DisplayGroupArray = List[DisplayGroup]

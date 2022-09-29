@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .HistoryPoint import HistoryPoint
@@ -16,7 +16,7 @@ class OdbStep(OdbStepBase):
         name: str,
         description: str,
         point: HistoryPoint,
-        loadCase: typing.Optional[str] = None,
+        loadCase: Optional[str] = None,
     ) -> HistoryRegion:
         """This method creates a HistoryRegion object.
 
@@ -47,7 +47,7 @@ class OdbStep(OdbStepBase):
         )
         return historyRegion
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def Frame(
         self, incrementNumber: int, frameValue: float, description: str = ""
@@ -79,7 +79,7 @@ class OdbStep(OdbStepBase):
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def Frame(self, mode: int, frequency: float, description: str = "") -> OdbFrame:
         """This constructor creates an OdbFrame object in the frequency domain and appends it to
@@ -108,7 +108,7 @@ class OdbStep(OdbStepBase):
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def Frame(
         self, loadCase: OdbLoadCase, description: str = "", frequency: float = 0

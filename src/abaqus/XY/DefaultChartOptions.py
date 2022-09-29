@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Area import Area
 from .AreaStyle import AreaStyle
@@ -28,18 +28,18 @@ class DefaultChartOptions:
     def setValues(
         self,
         areaStyle: AreaStyle,
-        aspectRatio: typing.Optional[float] = None,
-        defaultAxis1Options: typing.Optional[Axis] = None, 
-        defaultAxis2Options: typing.Optional[Axis] = None, 
-        gridArea: typing.Optional[Area] = None, 
-        legend: typing.Optional[Legend] = None, 
-        majorAxis1GridStyle: typing.Optional[LineStyle] = None, 
-        majorAxis2GridStyle: typing.Optional[LineStyle] = None, 
-        minorAxis1GridStyle: typing.Optional[LineStyle] = None, 
-        minorAxis2GridStyle: typing.Optional[LineStyle] = None, 
-        tagAreaStyle: typing.Optional[AreaStyle] = None, 
-        tagBorder: typing.Optional[LineStyle] = None, 
-        tagTextStyle: typing.Optional[TextStyle] = None, 
+        aspectRatio: Optional[float] = None,
+        defaultAxis1Options: Optional[Axis] = None, 
+        defaultAxis2Options: Optional[Axis] = None, 
+        gridArea: Optional[Area] = None, 
+        legend: Optional[Legend] = None, 
+        majorAxis1GridStyle: Optional[LineStyle] = None, 
+        majorAxis2GridStyle: Optional[LineStyle] = None, 
+        minorAxis1GridStyle: Optional[LineStyle] = None, 
+        minorAxis2GridStyle: Optional[LineStyle] = None, 
+        tagAreaStyle: Optional[AreaStyle] = None, 
+        tagBorder: Optional[LineStyle] = None, 
+        tagTextStyle: Optional[TextStyle] = None, 
         useQuantityType: Boolean = ON,
     ):
         """This method modifies the DefaultChartOptions object.

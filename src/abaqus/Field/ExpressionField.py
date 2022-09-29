@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AnalyticalField import AnalyticalField
 
@@ -26,14 +26,14 @@ class ExpressionField(AnalyticalField):
     #: None or a DatumCsys object specifying the local coordinate system of the field. If
     #: **localCsys** = None, the field is defined in the global coordinate system. The default
     #: value is None.
-    localCsys: typing.Optional[str] = None
+    localCsys: Optional[str] = None
 
     #: A String specifying the description of the field. The default value is an empty string.
     description: str = ""
 
     @abaqus_method_doc
     def __init__(
-        self, name: str, expression: str, localCsys: typing.Optional[str] = None, description: str = ""
+        self, name: str, expression: str, localCsys: Optional[str] = None, description: str = ""
     ):
         """This method creates an ExpressionField object.
 
@@ -68,7 +68,7 @@ class ExpressionField(AnalyticalField):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(self, localCsys: typing.Optional[str] = None, description: str = ""):
+    def setValues(self, localCsys: Optional[str] = None, description: str = ""):
         """This method modifies the ExpressionField object.
 
         Parameters

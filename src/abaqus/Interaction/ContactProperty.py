@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .CohesiveBehavior import CohesiveBehavior
@@ -57,7 +57,7 @@ class ContactProperty(InteractionProperty):
     heatGeneration: GapHeatGeneration = GapHeatGeneration()
 
     #: A :py:class:`~abaqus.Interaction.Radiation.Radiation` object.
-    radiation: typing.Optional[Radiation] = None
+    radiation: Optional[Radiation] = None
 
     #: A :py:class:`~abaqus.Interaction.GeometricProperties.GeometricProperties` object.
     geometricProperties: GeometricProperties = GeometricProperties()
@@ -97,11 +97,11 @@ class ContactProperty(InteractionProperty):
         dependencies: int = 0,
         exponentialDecayDefinition: SymbolicConstant = COEFFICIENTS,
         table: tuple = (),
-        shearStressLimit: typing.Optional[float] = None,
+        shearStressLimit: Optional[float] = None,
         maximumElasticSlip: SymbolicConstant = FRACTION,
         fraction: float = 0,
         absoluteDistance: float = 0,
-        elasticSlipStiffness: typing.Optional[float] = None,
+        elasticSlipStiffness: Optional[float] = None,
         nStateDependentVars: int = 0,
         useProperties: Boolean = OFF,
     ):
@@ -182,10 +182,10 @@ class ContactProperty(InteractionProperty):
     @abaqus_method_doc
     def NormalBehavior(
         self,
-        contactStiffness: typing.Union[SymbolicConstant, float] = DEFAULT,
+        contactStiffness: Union[SymbolicConstant, float] = DEFAULT,
         pressureOverclosure: SymbolicConstant = HARD,
         allowSeparation: Boolean = ON,
-        maxStiffness: typing.Optional[float] = None,
+        maxStiffness: Optional[float] = None,
         table: tuple = (),
         constraintEnforcementMethod: SymbolicConstant = DEFAULT,
         overclosureFactor: float = 0,
@@ -293,7 +293,7 @@ class ContactProperty(InteractionProperty):
     def Damping(
         self,
         definition: SymbolicConstant = DAMPING_COEFFICIENT,
-        tangentFraction: typing.Union[SymbolicConstant, float] = DEFAULT,
+        tangentFraction: Union[SymbolicConstant, float] = DEFAULT,
         clearanceDependence: SymbolicConstant = STEP,
         table: tuple = (),
     ):
@@ -344,12 +344,12 @@ class ContactProperty(InteractionProperty):
         useMixedMode: Boolean = OFF,
         mixedModeType: SymbolicConstant = TABULAR,
         modeMixRatio: SymbolicConstant = ENERGY,
-        exponent: typing.Optional[float] = None,
+        exponent: Optional[float] = None,
         evolTempDep: Boolean = OFF,
         evolDependencies: int = 0,
         evolTable: tuple = (),
         useStabilization: Boolean = OFF,
-        viscosityCoef: typing.Optional[float] = None,
+        viscosityCoef: Optional[float] = None,
     ):
         """This method creates a ContactDamage object.
 
@@ -452,7 +452,7 @@ class ContactProperty(InteractionProperty):
         dependencies: int = 0,
         tolerance: float = 0,
         specifyUnstableCrackProp: SymbolicConstant = OFF,
-        unstableTolerance: typing.Union[SymbolicConstant, float] = DEFAULT,
+        unstableTolerance: Union[SymbolicConstant, float] = DEFAULT,
     ):
         """This method creates a FractureCriterion object.
 
@@ -711,12 +711,12 @@ class ContactProperty(InteractionProperty):
     def GeometricProperties(
         self,
         contactArea: float = 1,
-        padThickness: typing.Optional[float] = None,
-        trackingThickness: typing.Optional[float] = None,
+        padThickness: Optional[float] = None,
+        trackingThickness: Optional[float] = None,
         dependentVariables: int = 0,
         numProperties: int = 0,
         useUnsymmetricEqunProcedure: Boolean = OFF,
-        modelType: typing.Optional[SymbolicConstant] = None,
+        modelType: Optional[SymbolicConstant] = None,
     ):
         """This method creates a GeometricProperties object.
 

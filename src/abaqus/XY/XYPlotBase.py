@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Area import Area
@@ -27,14 +27,14 @@ class XYPlotBase:
     title: Title = Title()
 
     #: A repository of Chart objects.
-    charts: typing.Dict[str, Chart] = {}
+    charts: Dict[str, Chart] = {}
 
     #: A repository of XYCurve objects.
-    curves: typing.Dict[str, XYCurve] = {}
+    curves: Dict[str, XYCurve] = {}
 
     #: A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
     #: of the active Chart object of this XYPlot.
-    transform: typing.Optional[float] = None
+    transform: Optional[float] = None
 
     @abaqus_method_doc
     def __init__(self, name: str):

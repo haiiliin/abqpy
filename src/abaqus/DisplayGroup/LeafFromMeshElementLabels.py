@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Leaf import Leaf
@@ -22,10 +22,10 @@ class LeafFromMeshElementLabels(Leaf):
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-    leafType: typing.Optional[SymbolicConstant] = None
+    leafType: Optional[SymbolicConstant] = None
 
     @abaqus_method_doc
-    def __init__(self, elementSeq: typing.Tuple[MeshElement, ...]):
+    def __init__(self, elementSeq: Tuple[MeshElement, ...]):
         """This method creates a Leaf object from a sequence of mesh element objects. Leaf objects
         specify the items in a display group.
 

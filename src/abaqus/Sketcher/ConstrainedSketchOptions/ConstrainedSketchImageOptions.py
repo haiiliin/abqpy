@@ -1,4 +1,4 @@
-import typing
+from typing import Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ...UtilityAndView.abaqusConstants import *
@@ -22,7 +22,7 @@ class ConstrainedSketchImageOptions:
         self,
         imageName: str = "",
         showImage: Boolean = OFF,
-        origin: typing.Tuple[float, ...] = (),
+        origin: Tuple[float, ...] = (),
         xScale: float = 1,
         yScale: float = 1,
         translucency: float = 1,

@@ -1,4 +1,4 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
@@ -20,7 +20,7 @@ class SolverControl:
         self,
         allowPropagation: Boolean = ON,
         resetDefaultValues: Boolean = OFF,
-        relativeTolerance: typing.Union[SymbolicConstant, float] = DEFAULT,
+        relativeTolerance: Union[SymbolicConstant, float] = DEFAULT,
         maxIterations: SymbolicConstant = DEFAULT,
         fillInLevel: SymbolicConstant = DEFAULT,
     ):

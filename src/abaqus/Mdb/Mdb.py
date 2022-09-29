@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Job.JobMdb import JobMdb
 from ..Model.Model import Model
@@ -22,11 +22,11 @@ class Mdb(AcisMdb, JobMdb):
         self,
         name: str,
         description: str = "",
-        stefanBoltzmann: typing.Optional[float] = None,
-        absoluteZero: typing.Optional[float] = None,
+        stefanBoltzmann: Optional[float] = None,
+        absoluteZero: Optional[float] = None,
         waveFormulation: SymbolicConstant = NOT_SET,
         modelType: SymbolicConstant = STANDARD_EXPLICIT,
-        universalGas: typing.Optional[float] = None,
+        universalGas: Optional[float] = None,
         copyConstraints: Boolean = ON,
         copyConnectors: Boolean = ON,
         copyInteractions: Boolean = ON,

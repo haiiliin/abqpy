@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Datum import Datum
@@ -32,7 +32,7 @@ class DatumCsys(Datum):
 
     #: A SymbolicConstant specifying the type of the coordinate system. Possible values are
     #: CARTESIAN, CYLINDRICAL, and SPHERICAL.
-    coordSysType: typing.Optional[SymbolicConstant] = None
+    coordSysType: Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Datum.DatumPoint.DatumPoint` object specifying the origin of the coordinate system.
     origin: DatumPoint = DatumPoint()
@@ -48,8 +48,8 @@ class DatumCsys(Datum):
 
     @abaqus_method_doc
     def globalToLocal(
-        self, coordinates: typing.Tuple[float, float, float]
-    ) -> typing.Tuple[float, float, float]:
+        self, coordinates: Tuple[float, float, float]
+    ) -> Tuple[float, float, float]:
         """This method transforms specified coordinates in the global coordinate system into this
         local coordinate system.
 
@@ -63,15 +63,15 @@ class DatumCsys(Datum):
 
         Returns
         -------
-        typing.Tuple[float, float, float]
+        Tuple[float, float, float]
             A tuple of three Floats representing the coordinates in this local coordinate system.
         """
         ...
 
     @abaqus_method_doc
     def localToGlobal(
-        self, coordinates: typing.Tuple[float, float, float]
-    ) -> typing.Tuple[float, float, float]:
+        self, coordinates: Tuple[float, float, float]
+    ) -> Tuple[float, float, float]:
         """This method transforms specified coordinates in this local coordinate system into the global coordinate system.
 
         .. versionadded:: 2022
@@ -84,7 +84,7 @@ class DatumCsys(Datum):
 
         Returns
         -------
-        typing.Tuple[float, float, float]
+        Tuple[float, float, float]
             A tuple of three Floats representing the coordinates in this global coordinate system.
         """
         ...

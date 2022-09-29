@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
@@ -39,11 +39,11 @@ class SlideRegionControl(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. This
     #: is used when **approach** is TURN. The default value is None.
-    csys: typing.Optional[int] = None
+    csys: Optional[int] = None
 
     #: None or a Region object specifying the free-form region. This is used when **approach** is
     #: FREE_FORM. The default value is None.
-    freeFormRegion: typing.Optional[str] = None
+    freeFormRegion: Optional[str] = None
 
     #: A Boolean specifying whether to ignore the geometric restriction in the first design
     #: cycle. The default value is ON.
@@ -51,7 +51,7 @@ class SlideRegionControl(GeometricRestriction):
 
     #: None or a Region object specifying the region to revolve into a slide region. This is
     #: used when **approach** is TURN. The default value is None.
-    revolvedRegion: typing.Optional[str] = None
+    revolvedRegion: Optional[str] = None
 
     #: A Float specifying the geometric tolerance in the 1-direction. This is used when
     #: **approach** is TURN. The default value is 0.01.
@@ -72,10 +72,10 @@ class SlideRegionControl(GeometricRestriction):
         clientDirection: tuple,
         region: Region,
         approach: SymbolicConstant = FREE_FORM,
-        csys: typing.Optional[int] = None,
-        freeFormRegion: typing.Optional[str] = None,
+        csys: Optional[int] = None,
+        freeFormRegion: Optional[str] = None,
         presumeFeasibleRegionAtStart: Boolean = ON,
-        revolvedRegion: typing.Optional[str] = None,
+        revolvedRegion: Optional[str] = None,
         tolerance1: float = 0,
         tolerance2: float = 0,
         tolerance3: float = 0,
@@ -138,10 +138,10 @@ class SlideRegionControl(GeometricRestriction):
     def setValues(
         self,
         approach: SymbolicConstant = FREE_FORM,
-        csys: typing.Optional[int] = None,
-        freeFormRegion: typing.Optional[str] = None,
+        csys: Optional[int] = None,
+        freeFormRegion: Optional[str] = None,
         presumeFeasibleRegionAtStart: Boolean = ON,
-        revolvedRegion: typing.Optional[str] = None,
+        revolvedRegion: Optional[str] = None,
         tolerance1: float = 0,
         tolerance2: float = 0,
         tolerance3: float = 0,

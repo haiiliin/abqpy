@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .OdbAssembly import OdbAssembly
 from .OdbInstance import OdbInstance
@@ -64,13 +64,13 @@ class HistoryPoint:
     #: - WHOLE_REGION, specifying the results for an entire region of the model.
     #: - WHOLE_PART_INSTANCE, specifying the results for an entire part instance of the model.
     #: - WHOLE_MODEL, specifying the results for the entire model.
-    position: typing.Optional[SymbolicConstant] = None
+    position: Optional[SymbolicConstant] = None
 
     #: An :py:class:`~abaqus.Odb.OdbMeshElement.OdbMeshElement` object specifying the element for which the data are to be collected.
     element: OdbMeshElement = OdbMeshElement()
 
     #: A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object.
-    sectionPoint: typing.Optional[SectionPoint] = None
+    sectionPoint: Optional[SectionPoint] = None
 
     #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying the region for which the data are to be collected.
     region: OdbSet = OdbSet("set", ())
@@ -112,9 +112,9 @@ class HistoryPoint:
         self,
         element: OdbMeshElement,
         ipNumber: int = 0,
-        sectionPoint: typing.Optional[SectionPoint] = None,
+        sectionPoint: Optional[SectionPoint] = None,
         face: SymbolicConstant = FACE_UNKNOWN,
-        node: typing.Optional[OdbMeshNode] = None, 
+        node: Optional[OdbMeshNode] = None, 
     ):
         """This method creates a HistoryPoint object for an element.
 

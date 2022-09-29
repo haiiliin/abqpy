@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -42,9 +42,9 @@ class Message:
     #: - STATUS
     #: - STEP
     #: - WARNING
-    type: typing.Optional[SymbolicConstant] = None
+    type: Optional[SymbolicConstant] = None
 
     #: A Dictionary object specifying the data returned by the analysis product. The value
     #: depends on the message returned. For a list of the possible entries, see the members of
     #: DataObject.
-    data: typing.Optional[dict] = None
+    data: Optional[dict] = None

@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .JobFromInputFile import JobFromInputFile
 from .ModelJob import ModelJob
@@ -326,7 +326,7 @@ class JobMdb(MdbBase):
         saveInitial: Boolean = True,
         saveFirst: Boolean = True,
         saveLast: Boolean = True,
-        saveEvery: typing.Optional[int] = None,
+        saveEvery: Optional[int] = None,
     ) -> OptimizationProcess:
         """This method creates an OptimizationProcess object.
 

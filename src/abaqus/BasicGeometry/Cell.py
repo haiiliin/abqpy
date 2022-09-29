@@ -1,4 +1,4 @@
-import typing
+from typing import List, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
@@ -28,7 +28,7 @@ class Cell:
     """
 
     #: An Int specifying the index of the cell in the CellArray.
-    index: typing.Optional[int] = None
+    index: Optional[int] = None
 
     #: A Boolean specifying whether the cell belongs to the reference representation of the
     #: Part or Instance.
@@ -36,14 +36,14 @@ class Cell:
 
     #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
     #: the cell.
-    pointOn: typing.Optional[float] = None
+    pointOn: Optional[float] = None
 
     #: A tuple of Floats specifying the name of the feature that created this cell.
-    featureName: typing.Optional[float] = None
+    featureName: Optional[float] = None
 
     #: A tuple of Floats specifying the name of the part instance for this cell (if
     #: applicable).
-    instanceName: typing.Optional[float] = None
+    instanceName: Optional[float] = None
 
     @abaqus_method_doc
     def getSize(self, printResults: Boolean = True):
@@ -70,7 +70,7 @@ class Cell:
 
         Returns
         -------
-        typing.Tuple[int, ...]
+        Tuple[int, ...]
             A tuple of integers.
 
         """
@@ -82,7 +82,7 @@ class Cell:
 
         Returns
         -------
-        typing.Tuple[int, ...]
+        Tuple[int, ...]
             A tuple of integers.
 
         """
@@ -94,7 +94,7 @@ class Cell:
 
         Returns
         -------
-        typing.Tuple[int, ...]
+        Tuple[int, ...]
             A tuple of integers.
 
         """
@@ -143,7 +143,7 @@ class Cell:
 
         Returns
         -------
-        typing.List[str]
+        List[str]
             An array of String.
 
         """

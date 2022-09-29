@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
@@ -33,14 +33,14 @@ class TurnControl(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: typing.Optional[int] = None
+    csys: Optional[int] = None
 
     #: None or a Region object specifying the main point used when **mainPointDetermination** is
     #: SPECIFY. The default value is None.
     #:
     #: .. versionchanged:: 2022
     #:    The attribute `masterPoint` was renamed to `mainPoint`.
-    mainPoint: typing.Optional[str] = None
+    mainPoint: Optional[str] = None
 
     #: A SymbolicConstant specifying the rule for assigning point priority. Possible values are
     #: MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
@@ -71,8 +71,8 @@ class TurnControl(GeometricRestriction):
         name: str,
         clientDirection: tuple,
         region: Region,
-        csys: typing.Optional[int] = None,
-        mainPoint: typing.Optional[str] = None,
+        csys: Optional[int] = None,
+        mainPoint: Optional[str] = None,
         mainPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
@@ -134,8 +134,8 @@ class TurnControl(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
-        csys: typing.Optional[int] = None,
-        mainPoint: typing.Optional[str] = None,
+        csys: Optional[int] = None,
+        mainPoint: Optional[str] = None,
         mainPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,

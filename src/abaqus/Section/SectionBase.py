@@ -1,4 +1,4 @@
-import typing
+from typing import List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .TransverseShearBeam import TransverseShearBeam
@@ -54,7 +54,7 @@ class SectionBase:
 
         Returns
         -------
-        typing.List[Section]
+        List[Section]
             A list of :py:class:`~abaqus.Section.Section.Section` objects.
         """
         ...

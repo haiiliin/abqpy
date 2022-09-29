@@ -1,4 +1,4 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Section import Section
@@ -40,7 +40,7 @@ class GasketSection(Section):
     #: The SymbolicConstant DEFAULT or a Float specifying the initial gasket thickness. If
     #: DEFAULT is specified, the initial thickness is determined using nodal coordinates. The
     #: default value is DEFAULT.
-    initialThickness: typing.Union[SymbolicConstant, float] = DEFAULT
+    initialThickness: Union[SymbolicConstant, float] = DEFAULT
 
     #: A Float specifying the initial void. The default value is 0.0.
     initialVoid: float = 0
@@ -50,7 +50,7 @@ class GasketSection(Section):
     #: nodes, such as those that extend outside neighboring components. If DEFAULT is
     #: specified, a value is used equal to 10-9 times the initial compressive stiffness in the
     #: thickness direction. The default value is DEFAULT.
-    stabilizationStiffness: typing.Union[SymbolicConstant, float] = DEFAULT
+    stabilizationStiffness: Union[SymbolicConstant, float] = DEFAULT
 
     @abaqus_method_doc
     def __init__(
@@ -59,9 +59,9 @@ class GasketSection(Section):
         material: str,
         crossSection: float = 1,
         initialGap: float = 0,
-        initialThickness: typing.Union[SymbolicConstant, float] = DEFAULT,
+        initialThickness: Union[SymbolicConstant, float] = DEFAULT,
         initialVoid: float = 0,
-        stabilizationStiffness: typing.Union[SymbolicConstant, float] = DEFAULT,
+        stabilizationStiffness: Union[SymbolicConstant, float] = DEFAULT,
     ):
         """This method creates a GasketSection object.
 
@@ -108,9 +108,9 @@ class GasketSection(Section):
         self,
         crossSection: float = 1,
         initialGap: float = 0,
-        initialThickness: typing.Union[SymbolicConstant, float] = DEFAULT,
+        initialThickness: Union[SymbolicConstant, float] = DEFAULT,
         initialVoid: float = 0,
-        stabilizationStiffness: typing.Union[SymbolicConstant, float] = DEFAULT,
+        stabilizationStiffness: Union[SymbolicConstant, float] = DEFAULT,
     ):
         """This method modifies the GasketSection object.
 

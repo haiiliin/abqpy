@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .BoundaryCondition import BoundaryCondition
@@ -49,7 +49,7 @@ class ConnDisplacementBC(BoundaryCondition):
 
     #: A SymbolicConstant specifying the category of the boundary condition. Possible values
     #: are MECHANICAL and THERMAL.
-    category: typing.Optional[SymbolicConstant] = None
+    category: Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
@@ -57,7 +57,7 @@ class ConnDisplacementBC(BoundaryCondition):
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: typing.Optional[str] = None
+    localCsys: Optional[str] = None
 
     @abaqus_method_doc
     def __init__(
@@ -67,12 +67,12 @@ class ConnDisplacementBC(BoundaryCondition):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        u1: typing.Union[SymbolicConstant, float] = UNSET,
-        u2: typing.Union[SymbolicConstant, float] = UNSET,
-        u3: typing.Union[SymbolicConstant, float] = UNSET,
-        ur1: typing.Union[SymbolicConstant, float] = UNSET,
-        ur2: typing.Union[SymbolicConstant, float] = UNSET,
-        ur3: typing.Union[SymbolicConstant, float] = UNSET,
+        u1: Union[SymbolicConstant, float] = UNSET,
+        u2: Union[SymbolicConstant, float] = UNSET,
+        u3: Union[SymbolicConstant, float] = UNSET,
+        ur1: Union[SymbolicConstant, float] = UNSET,
+        ur2: Union[SymbolicConstant, float] = UNSET,
+        ur3: Union[SymbolicConstant, float] = UNSET,
         fixed: Boolean = OFF,
         amplitude: str = UNSET,
         distributionType: SymbolicConstant = UNIFORM,
@@ -160,12 +160,12 @@ class ConnDisplacementBC(BoundaryCondition):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        u1: typing.Union[SymbolicConstant, float] = UNSET,
-        u2: typing.Union[SymbolicConstant, float] = UNSET,
-        u3: typing.Union[SymbolicConstant, float] = UNSET,
-        ur1: typing.Union[SymbolicConstant, float] = UNSET,
-        ur2: typing.Union[SymbolicConstant, float] = UNSET,
-        ur3: typing.Union[SymbolicConstant, float] = UNSET,
+        u1: Union[SymbolicConstant, float] = UNSET,
+        u2: Union[SymbolicConstant, float] = UNSET,
+        u3: Union[SymbolicConstant, float] = UNSET,
+        ur1: Union[SymbolicConstant, float] = UNSET,
+        ur2: Union[SymbolicConstant, float] = UNSET,
+        ur3: Union[SymbolicConstant, float] = UNSET,
         fixed: Boolean = OFF,
         amplitude: str = UNSET,
         distributionType: SymbolicConstant = UNIFORM,
@@ -236,12 +236,12 @@ class ConnDisplacementBC(BoundaryCondition):
     def setValuesInStep(
         self,
         stepName: str,
-        u1: typing.Union[SymbolicConstant, float] = SET,
-        u2: typing.Union[SymbolicConstant, float] = SET,
-        u3: typing.Union[SymbolicConstant, float] = SET,
-        ur1: typing.Union[SymbolicConstant, float] = SET,
-        ur2: typing.Union[SymbolicConstant, float] = SET,
-        ur3: typing.Union[SymbolicConstant, float] = SET,
+        u1: Union[SymbolicConstant, float] = SET,
+        u2: Union[SymbolicConstant, float] = SET,
+        u3: Union[SymbolicConstant, float] = SET,
+        ur1: Union[SymbolicConstant, float] = SET,
+        ur2: Union[SymbolicConstant, float] = SET,
+        ur3: Union[SymbolicConstant, float] = SET,
         amplitude: str = "",
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
     ):

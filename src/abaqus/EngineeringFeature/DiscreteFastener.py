@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Fastener import Fastener
@@ -35,7 +35,7 @@ class DiscreteFastener(Fastener):
     region: Region
 
     #: The SymbolicConstant WHOLE_SURFACE or a Float specifying the coupling influence radius.
-    influenceRadius: typing.Union[SymbolicConstant, float]
+    influenceRadius: Union[SymbolicConstant, float]
 
     #: A Boolean specifying whether to constrain rotational displacement component about the
     #: 1-direction. The default value is ON.
@@ -66,20 +66,20 @@ class DiscreteFastener(Fastener):
     #: None or a DatumCsys object specifying the local coordinate system of fastener couplings.
     #: If **localCsys** = None, couplings are defined in the global coordinate system. When this
     #: member is queried, it returns an Int. The default value is None.
-    localCsys: typing.Optional[int] = None
+    localCsys: Optional[int] = None
 
     @abaqus_method_doc
     def __init__(
         self,
         name: str,
         region: Region,
-        influenceRadius: typing.Union[SymbolicConstant, float],
+        influenceRadius: Union[SymbolicConstant, float],
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
         coupling: SymbolicConstant = CONTINUUM,
         weightingMethod: SymbolicConstant = UNIFORM,
-        localCsys: typing.Optional[int] = None,
+        localCsys: Optional[int] = None,
     ):
         """This method creates a DiscreteFastener object. Although the constructor is available
         both for parts and for the assembly, DiscreteFastener objects are currently supported
@@ -140,7 +140,7 @@ class DiscreteFastener(Fastener):
         ur3: Boolean = ON,
         coupling: SymbolicConstant = CONTINUUM,
         weightingMethod: SymbolicConstant = UNIFORM,
-        localCsys: typing.Optional[int] = None,
+        localCsys: Optional[int] = None,
     ):
         """This method modifies the DiscreteFastener object.
 

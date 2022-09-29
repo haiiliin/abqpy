@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Filter import Filter
 from ..UtilityAndView.abaqusConstants import *
@@ -50,7 +50,7 @@ class Chebyshev1Filter(Filter):
     #: None or a Float specifying the threshold limit, an upper or lower bound for output
     #: values depending on the operation, or a bound for stopping the analysis when Halt is
     #: used. The default value is None.
-    limit: typing.Optional[float] = None
+    limit: Optional[float] = None
 
     #: A SymbolicConstant specifying the invariant to which filtering is applied. Possible
     #: values are NONE, FIRST, and SECOND. The default value is NONE.
@@ -65,7 +65,7 @@ class Chebyshev1Filter(Filter):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: typing.Optional[float] = None,
+        limit: Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ):
         """This method creates a Chebyshev1Filter object.
@@ -124,7 +124,7 @@ class Chebyshev1Filter(Filter):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: typing.Optional[float] = None,
+        limit: Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ):
         """This method modifies the Chebyshev1Filter object.

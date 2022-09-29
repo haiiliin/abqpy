@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -163,4 +163,4 @@ class DGSuperimposeOptions:
 
     #: A tuple of three Floats specifying the coordinate scaling in each of the three
     #: coordinate directions when **coordinateScale** = ON. The default value is (1, 1, 1).
-    coordinateScaleFactors: typing.Optional[float] = None
+    coordinateScaleFactors: Optional[float] = None

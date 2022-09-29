@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .MeanFieldInclusion import MeanFieldInclusion
 from .MeanFieldMatrix import MeanFieldMatrix
@@ -29,7 +29,7 @@ class MeanFieldHomogenization:
     @abaqus_method_doc
     def __init__(
         self,
-        angleSubdivision: typing.Optional[int] = None,
+        angleSubdivision: Optional[int] = None,
         formulation: SymbolicConstant = MT,
         isotropization: SymbolicConstant = ALLISO,
         uniformMatrixStrain: SymbolicConstant = NO,
@@ -73,7 +73,7 @@ class MeanFieldHomogenization:
         name: str,
         table: tuple,
         material: str = "",
-        isotropizationCoefficient: typing.Optional[float] = None,
+        isotropizationCoefficient: Optional[float] = None,
         volumeFractionType: SymbolicConstant = UNIFORM,
         volumeFractionFieldName: str = "",
         aspectRatioType: SymbolicConstant = UNIFORM,
@@ -81,7 +81,7 @@ class MeanFieldHomogenization:
         orientationTensorType: SymbolicConstant = UNIFORM,
         orientationTensorFieldName: str = "",
         shape: SymbolicConstant = SPHERE,
-        direction: typing.Optional[SymbolicConstant] = None,
+        direction: Optional[SymbolicConstant] = None,
         strainConcentrationTensor: tuple = (),
         temperatureGradientConcentrationTensor: tuple = (),
     ):
@@ -158,7 +158,7 @@ class MeanFieldHomogenization:
 
     @abaqus_method_doc
     def MeanFieldMatrix(
-        self, name: str, material: str = "", isotropizationCoefficient: typing.Optional[float] = None
+        self, name: str, material: str = "", isotropizationCoefficient: Optional[float] = None
     ):
         """This method creates a MeanFieldMatrix object.
 
@@ -194,7 +194,7 @@ class MeanFieldHomogenization:
         name: str,
         table: tuple,
         material: str = "",
-        isotropizationCoefficient: typing.Optional[float] = None,
+        isotropizationCoefficient: Optional[float] = None,
         volumeFractionType: SymbolicConstant = UNIFORM,
         volumeFractionFieldName: str = "",
         aspectRatioType: SymbolicConstant = UNIFORM,
@@ -202,7 +202,7 @@ class MeanFieldHomogenization:
         orientationTensorType: SymbolicConstant = UNIFORM,
         orientationTensorFieldName: str = "",
         shape: SymbolicConstant = SPHERE,
-        direction: typing.Optional[SymbolicConstant] = None,
+        direction: Optional[SymbolicConstant] = None,
         strainConcentrationTensor: tuple = (),
         temperatureGradientConcentrationTensor: tuple = (),
     ):

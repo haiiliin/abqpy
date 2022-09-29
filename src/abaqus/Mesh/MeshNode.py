@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Tuple
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Datum.DatumCsys import DatumCsys
 
@@ -41,17 +41,17 @@ class MeshNode:
     """
 
     #: An Int specifying the node label.
-    label: typing.Optional[int] = None
+    label: Optional[int] = None
 
     #: A String specifying the name of the part instance that owns this node.
     instanceName: str = ""
 
     #: A tuple of three Floats specifying the coordinates of the new node.
-    coordinates: typing.Optional[float] = None
+    coordinates: Optional[float] = None
 
     @abaqus_method_doc
     def __init__(
-        self, coordinates: tuple, localCsys: typing.Optional[DatumCsys] = None,  label: typing.Optional[int] = None
+        self, coordinates: tuple, localCsys: Optional[DatumCsys] = None,  label: Optional[int] = None
     ):
         """This method creates a node on an orphan mesh part.
 
@@ -83,7 +83,7 @@ class MeshNode:
 
         Returns
         -------
-        edges: typing.Tuple[MeshEdge, ...]
+        edges: Tuple[MeshEdge, ...]
             A tuple of MeshEdge objects
         """
         ...
@@ -94,7 +94,7 @@ class MeshNode:
 
         Returns
         -------
-        faces: typing.Tuple[MeshFace, ...]
+        faces: Tuple[MeshFace, ...]
             A tuple of MeshFace objects
         """
         ...
@@ -105,7 +105,7 @@ class MeshNode:
 
         Returns
         -------
-        elements: typing.Tuple[MeshElement, ...]
+        elements: Tuple[MeshElement, ...]
             A tuple of MeshElement objects
         """
         ...
@@ -129,7 +129,7 @@ class MeshNode:
         ...
 
     @abaqus_method_doc
-    def setValues(self, label: typing.Optional[int] = None):
+    def setValues(self, label: Optional[int] = None):
         """This method modifies the MeshNode object.
 
         Parameters

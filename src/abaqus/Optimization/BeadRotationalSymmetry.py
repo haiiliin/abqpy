@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
@@ -34,7 +34,7 @@ class BeadRotationalSymmetry(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: typing.Optional[int] = None
+    csys: Optional[int] = None
 
     @abaqus_method_doc
     def __init__(
@@ -43,7 +43,7 @@ class BeadRotationalSymmetry(GeometricRestriction):
         angle: float,
         region: Region,
         axis: SymbolicConstant = AXIS_1,
-        csys: typing.Optional[int] = None,
+        csys: Optional[int] = None,
     ):
         """This method creates a BeadRotationalSymmetry object.
 
@@ -76,7 +76,7 @@ class BeadRotationalSymmetry(GeometricRestriction):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(self, axis: SymbolicConstant = AXIS_1, csys: typing.Optional[int] = None):
+    def setValues(self, axis: SymbolicConstant = AXIS_1, csys: Optional[int] = None):
         """This method modifies the BeadRotationalSymmetry object.
 
         Parameters

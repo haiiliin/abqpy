@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 from .InteractionState import InteractionState
 from ..UtilityAndView.abaqusConstants import *
@@ -34,7 +34,7 @@ class CyclicSymmetryState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **extractedNodalDiameter**
     #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    extractedNodalDiameterState: typing.Optional[SymbolicConstant] = None
+    extractedNodalDiameterState: Optional[SymbolicConstant] = None
 
     #: An Int specifying the lowest nodal diameter to be used in the eigenfrequency analysis.
     #: The default value is 0.
@@ -42,7 +42,7 @@ class CyclicSymmetryState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **lowestNodalDiameter** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    lowestNodalDiameterState: typing.Optional[SymbolicConstant] = None
+    lowestNodalDiameterState: Optional[SymbolicConstant] = None
 
     #: An Int specifying the highest nodal diameter to be used in the eigenfrequency analysis.
     #: This argument value should be less than or equal to the half of the total number of
@@ -51,7 +51,7 @@ class CyclicSymmetryState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **highestNodalDiameter**
     #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    highestNodalDiameterState: typing.Optional[SymbolicConstant] = None
+    highestNodalDiameterState: Optional[SymbolicConstant] = None
 
     #: An Int specifying the nodal diameter for which the modal-based steady-state dynamic
     #: analysis will be performed. This value should be greater than or equal to the lowest
@@ -62,7 +62,7 @@ class CyclicSymmetryState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **excitiationNodalDiameter**
     #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    excitiationNodalDiameterState: typing.Optional[SymbolicConstant] = None
+    excitiationNodalDiameterState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:
@@ -76,4 +76,4 @@ class CyclicSymmetryState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: typing.Optional[SymbolicConstant] = None
+    status: Optional[SymbolicConstant] = None

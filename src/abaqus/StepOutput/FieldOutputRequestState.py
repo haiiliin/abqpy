@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc
 from ..UtilityAndView.abaqusConstants import *
@@ -21,7 +21,7 @@ class FieldOutputRequestState:
 
     #: A SymbolicConstant specifying the propagation state of the field output request
     #: variables. Possible values are UNSET, SET, and UNCHANGED.
-    variablesState: typing.Optional[SymbolicConstant] = None
+    variablesState: Optional[SymbolicConstant] = None
 
     #: The SymbolicConstant LAST_INCREMENT or an Int specifying the output frequency in
     #: increments. The default value is 1.
@@ -29,19 +29,19 @@ class FieldOutputRequestState:
 
     #: A SymbolicConstant specifying the propagation state of the field output request
     #: frequency. Possible values are UNSET, SET, and UNCHANGED.
-    frequencyState: typing.Optional[SymbolicConstant] = None
+    frequencyState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the field output request modes.
     #: Possible values are UNSET, SET, and UNCHANGED.
-    modesState: typing.Optional[SymbolicConstant] = None
+    modesState: Optional[SymbolicConstant] = None
 
     #: The SymbolicConstant EVERY_TIME_INCREMENT or a Float specifying the time interval at
     #: which the output states are to be written. The default value is EVERY_TIME_INCREMENT.
-    timeInterval: typing.Union[SymbolicConstant, float] = EVERY_TIME_INCREMENT
+    timeInterval: Union[SymbolicConstant, float] = EVERY_TIME_INCREMENT
 
     #: A SymbolicConstant specifying the propagation state of the field output request time
     #: interval. Possible values are UNSET, SET, and UNCHANGED.
-    timeIntervalState: typing.Optional[SymbolicConstant] = None
+    timeIntervalState: Optional[SymbolicConstant] = None
 
     #: An Int specifying the number of intervals during the step at which output database
     #: states are to be written. The default value is 20.
@@ -49,7 +49,7 @@ class FieldOutputRequestState:
 
     #: A SymbolicConstant specifying the propagation state of the field output request.
     #: Possible values are UNSET, SET, and UNCHANGED.
-    numIntervalsState: typing.Optional[SymbolicConstant] = None
+    numIntervalsState: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying when to write results to the output database. The default value is
     #: OFF.
@@ -57,21 +57,21 @@ class FieldOutputRequestState:
 
     #: A SymbolicConstant specifying the propagation state of the field output request.
     #: Possible values are UNSET, SET, and UNCHANGED.
-    timeMarksState: typing.Optional[SymbolicConstant] = None
+    timeMarksState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the field output request.
     #: Possible values are UNSET, SET, and UNCHANGED.
-    timePointState: typing.Optional[SymbolicConstant] = None
+    timePointState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the FieldOutputRequestState
     #: object. Possible values are NOT_YET_ACTIVE, CREATED, PROPAGATED, MODIFIED, DEACTIVATED,
     #: NO_LONGER_ACTIVE, TYPE_NOT_APPLICABLE, and INSTANCE_NOT_APPLICABLE.
-    status: typing.Optional[SymbolicConstant] = None
+    status: Optional[SymbolicConstant] = None
 
     #: A tuple of Strings specifying output request variable or component names, or the
     #: SymbolicConstant PRESELECT or ALL. PRESELECT represents all default output variables for
     #: the given step. ALL represents all valid output variables.
-    variables: typing.Optional[SymbolicConstant] = None
+    variables: Optional[SymbolicConstant] = None
 
     #: The SymbolicConstant ALL or a tuple of Ints specifying a list of eigenmodes for which
     #: output is desired. The default value is ALL.

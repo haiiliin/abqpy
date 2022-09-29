@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
 from .AdaptiveMeshDomain import AdaptiveMeshDomain
@@ -28,8 +28,8 @@ class AdaptivityStep(StepBase):
     @abaqus_method_doc
     def AdaptiveMeshConstraintState(
         self,
-        amplitudeState: typing.Optional[SymbolicConstant] = None,
-        status: typing.Optional[SymbolicConstant] = None,
+        amplitudeState: Optional[SymbolicConstant] = None,
+        status: Optional[SymbolicConstant] = None,
         amplitude: str = "",
     ) -> AdaptiveMeshConstraintState:
         """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary
@@ -83,20 +83,20 @@ class AdaptivityStep(StepBase):
     @abaqus_method_doc
     def DisplacementAdaptiveMeshConstraintState(
         self,
-        u1: typing.Optional[float] = None,
-        u2: typing.Optional[float] = None,
-        u3: typing.Optional[float] = None,
-        ur1: typing.Optional[float] = None,
-        ur2: typing.Optional[float] = None,
-        ur3: typing.Optional[float] = None,
-        u1State: typing.Optional[SymbolicConstant] = None,
-        u2State: typing.Optional[SymbolicConstant] = None,
-        u3State: typing.Optional[SymbolicConstant] = None,
-        ur1State: typing.Optional[SymbolicConstant] = None,
-        ur2State: typing.Optional[SymbolicConstant] = None,
-        ur3State: typing.Optional[SymbolicConstant] = None,
-        amplitudeState: typing.Optional[SymbolicConstant] = None,
-        status: typing.Optional[SymbolicConstant] = None,
+        u1: Optional[float] = None,
+        u2: Optional[float] = None,
+        u3: Optional[float] = None,
+        ur1: Optional[float] = None,
+        ur2: Optional[float] = None,
+        ur3: Optional[float] = None,
+        u1State: Optional[SymbolicConstant] = None,
+        u2State: Optional[SymbolicConstant] = None,
+        u3State: Optional[SymbolicConstant] = None,
+        ur1State: Optional[SymbolicConstant] = None,
+        ur2State: Optional[SymbolicConstant] = None,
+        ur3State: Optional[SymbolicConstant] = None,
+        amplitudeState: Optional[SymbolicConstant] = None,
+        status: Optional[SymbolicConstant] = None,
         amplitude: str = "",
     ) -> DisplacementAdaptiveMeshConstraintState:
         """The DisplacementAdaptiveMeshConstraintState object stores the propagating data for an
@@ -192,20 +192,20 @@ class AdaptivityStep(StepBase):
     @abaqus_method_doc
     def VelocityAdaptiveMeshConstraintState(
         self,
-        v1: typing.Optional[float] = None,
-        v2: typing.Optional[float] = None,
-        v3: typing.Optional[float] = None,
-        vr1: typing.Optional[float] = None,
-        vr2: typing.Optional[float] = None,
-        vr3: typing.Optional[float] = None,
-        v1State: typing.Optional[SymbolicConstant] = None,
-        v2State: typing.Optional[SymbolicConstant] = None,
-        v3State: typing.Optional[SymbolicConstant] = None,
-        vr1State: typing.Optional[SymbolicConstant] = None,
-        vr2State: typing.Optional[SymbolicConstant] = None,
-        vr3State: typing.Optional[SymbolicConstant] = None,
-        amplitudeState: typing.Optional[SymbolicConstant] = None,
-        status: typing.Optional[SymbolicConstant] = None,
+        v1: Optional[float] = None,
+        v2: Optional[float] = None,
+        v3: Optional[float] = None,
+        vr1: Optional[float] = None,
+        vr2: Optional[float] = None,
+        vr3: Optional[float] = None,
+        v1State: Optional[SymbolicConstant] = None,
+        v2State: Optional[SymbolicConstant] = None,
+        v3State: Optional[SymbolicConstant] = None,
+        vr1State: Optional[SymbolicConstant] = None,
+        vr2State: Optional[SymbolicConstant] = None,
+        vr3State: Optional[SymbolicConstant] = None,
+        amplitudeState: Optional[SymbolicConstant] = None,
+        status: Optional[SymbolicConstant] = None,
         amplitude: str = "",
     ) -> VelocityAdaptiveMeshConstraintState:
         """The VelocityAdaptiveMeshConstraintState object stores the propagating data for an

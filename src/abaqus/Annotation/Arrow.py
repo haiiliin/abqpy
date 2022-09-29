@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Tuple, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Annotation import Annotation
@@ -25,11 +25,11 @@ class Arrow(Annotation, _OptionsBase):
 
     #: A pair of Floats specifying the start point **X**- and **Y**-offsets in millimeters from
     #: **startAnchor**. The default value is (0, 0).
-    startPoint: typing.Tuple[float, ...] = (0.0, 0.0)
+    startPoint: Tuple[float, ...] = (0.0, 0.0)
 
     #: A pair of Floats specifying the end point **X**- and **Y**-offsets in millimeters from
     #: **endAnchor**. The default value is (0, 0).
-    endPoint: typing.Tuple[float, ...] = (0.0, 0.0)
+    endPoint: Tuple[float, ...] = (0.0, 0.0)
 
     #: A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
     #: specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
@@ -48,7 +48,7 @@ class Arrow(Annotation, _OptionsBase):
     #: - TOP_RIGHT
     #: 
     #: The default value is BOTTOM_LEFT.
-    startAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT
+    startAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT
 
     #: A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
     #: specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
@@ -67,7 +67,7 @@ class Arrow(Annotation, _OptionsBase):
     #: - TOP_RIGHT
     #: 
     #: The default value is BOTTOM_LEFT.
-    endAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT
+    endAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT
 
     #: A SymbolicConstant specifying the style of the start head. Possible values are:
     #: 
@@ -123,10 +123,10 @@ class Arrow(Annotation, _OptionsBase):
     def __init__(
         self,
         name: str,
-        startPoint: typing.Tuple[float, ...] = (0.0, 0.0),
-        endPoint: typing.Tuple[float, ...] = (0.0, 0.0),
-        startAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        endAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
+        startPoint: Tuple[float, ...] = (0.0, 0.0),
+        endPoint: Tuple[float, ...] = (0.0, 0.0),
+        startAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
+        endAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         startHeadStyle: SymbolicConstant = NONE,
         endHeadStyle: SymbolicConstant = FILLED_ARROW,
         startGap: float = 0.0,
@@ -254,7 +254,7 @@ class Arrow(Annotation, _OptionsBase):
         self.lineThickness = lineThickness
 
     @abaqus_method_doc
-    def translateStartPoint(self, x: typing.Optional[float] = None, y: typing.Optional[float] = None):
+    def translateStartPoint(self, x: Optional[float] = None, y: Optional[float] = None):
         """This method translates the start point of the Arrow object on the viewport plane.
 
         Parameters
@@ -269,7 +269,7 @@ class Arrow(Annotation, _OptionsBase):
         ...
 
     @abaqus_method_doc
-    def translateEndPoint(self, x: typing.Optional[float] = None, y: typing.Optional[float] = None):
+    def translateEndPoint(self, x: Optional[float] = None, y: Optional[float] = None):
         """This method translates the end point of the Arrow object on the viewport plane.
 
         Parameters
@@ -286,10 +286,10 @@ class Arrow(Annotation, _OptionsBase):
     @abaqus_method_doc
     def setValues(
         self,
-        startPoint: typing.Tuple[float, ...] = (0.0, 0.0),
-        endPoint: typing.Tuple[float, ...] = (0.0, 0.0),
-        startAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        endAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
+        startPoint: Tuple[float, ...] = (0.0, 0.0),
+        endPoint: Tuple[float, ...] = (0.0, 0.0),
+        startAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
+        endAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         startHeadStyle: SymbolicConstant = NONE,
         endHeadStyle: SymbolicConstant = FILLED_ARROW,
         startGap: float = 0.0,

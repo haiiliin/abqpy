@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .SectionCategory import SectionCategory
 from ..UtilityAndView.abaqusConstants import *
@@ -32,20 +32,20 @@ class OdbMeshElement:
     """
 
     #: An Int specifying the element label.
-    label: typing.Optional[int] = None
+    label: Optional[int] = None
 
     #: A String specifying the element type.
     type: str = ""
 
     #: A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object specifying the element section properties.
-    sectionCategory: typing.Optional[SectionCategory] = None
+    sectionCategory: Optional[SectionCategory] = None
 
     #: A tuple of Ints specifying the element connectivity. For connector elements connected to
     #: ground, the other node is repeated in the connectivity data. The position of the ground
     #: node cannot be ascertained. This is a limitation. It is important to note the difference
     #: with MeshElement object of MDB where the connectivity is node indices instead of node
     #: labels.
-    connectivity: typing.Optional[int] = None
+    connectivity: Optional[int] = None
 
     #: A tuple of Strings specifying the instance names for nodes in the element connectivity.
     instanceNames: tuple = ()

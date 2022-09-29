@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 from .InteractionState import InteractionState
 from ..UtilityAndView.abaqusConstants import *
@@ -26,37 +26,37 @@ class ConcentratedFilmConditionState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **interactionProperty** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    interactionPropertyState: typing.Optional[SymbolicConstant] = None
+    interactionPropertyState: Optional[SymbolicConstant] = None
 
     #: A Float specifying the sink temperature.
-    sinkTemperature: typing.Optional[float] = None
+    sinkTemperature: Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the **sinkTemperature** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    sinkTemperatureState: typing.Optional[SymbolicConstant] = None
+    sinkTemperatureState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **sinkAmplitude** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    sinkAmplitudeState: typing.Optional[SymbolicConstant] = None
+    sinkAmplitudeState: Optional[SymbolicConstant] = None
 
     #: A Float specifying the film coefficient.
-    filmCoeff: typing.Optional[float] = None
+    filmCoeff: Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the **filmCoeff** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    filmCoeffState: typing.Optional[SymbolicConstant] = None
+    filmCoeffState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **filmCoeffAmplitude** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    filmCoeffAmplitudeState: typing.Optional[SymbolicConstant] = None
+    filmCoeffAmplitudeState: Optional[SymbolicConstant] = None
 
     #: A Float specifying the area associated with the node where the concentrated film
     #: condition is applied.
-    nodalArea: typing.Optional[float] = None
+    nodalArea: Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the **nodalArea** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    nodalAreaState: typing.Optional[SymbolicConstant] = None
+    nodalAreaState: Optional[SymbolicConstant] = None
 
     #: A String specifying the FilmConditionProp object associated with this interaction.
     interactionProperty: str = ""
@@ -81,4 +81,4 @@ class ConcentratedFilmConditionState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: typing.Optional[SymbolicConstant] = None
+    status: Optional[SymbolicConstant] = None

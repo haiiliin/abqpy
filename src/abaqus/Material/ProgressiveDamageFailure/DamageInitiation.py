@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .DamageEvolution import DamageEvolution
 from .DamageStabilization import DamageStabilization
@@ -221,13 +221,13 @@ class DamageInitiation:
     direction: SymbolicConstant = NMORI
 
     #: A tuple of tuples of Floats specifying the items described in the "Table data" section.
-    table: typing.Optional[float] = None
+    table: Optional[float] = None
 
     #: A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution` object.
-    damageEvolution: typing.Optional[DamageEvolution] = None
+    damageEvolution: Optional[DamageEvolution] = None
 
     #: A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilization.DamageStabilization` object.
-    damageStabilization: typing.Optional[DamageStabilization] = None
+    damageStabilization: Optional[DamageStabilization] = None
 
     #: A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive` object.
     damageStabilizationCohesive: DamageStabilizationCohesive = (

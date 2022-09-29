@@ -138,7 +138,7 @@ def XYDataFromFreeBody(
 
     Returns
     -------
-    typing.List[XYData]
+    List[XYData]
         A list of XYData objects.
 
     Raises
@@ -490,7 +490,7 @@ def XYDataFromShellThickness(
 
     Returns
     -------
-    typing.List[XYData]
+    List[XYData]
         A list of XYData objects.
 
     Raises
@@ -662,7 +662,7 @@ def xyDataListFromField(
 
     Returns
     -------
-    typing.List[XYData]
+    List[XYData]
         A list of XYData objects.
 
     Raises

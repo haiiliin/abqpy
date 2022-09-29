@@ -1,4 +1,4 @@
-import typing
+from typing import List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
@@ -66,7 +66,7 @@ class BackwardCompatibility:
 
         Returns
         -------
-        typing.List[str]
+        List[str]
             A list of Strings.
         """
         ...
@@ -78,7 +78,7 @@ class BackwardCompatibility:
 
         Returns
         -------
-        typing.List[str]
+        List[str]
             A list of Strings.
         """
         ...

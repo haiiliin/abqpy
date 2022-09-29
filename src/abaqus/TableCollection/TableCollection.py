@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..TableCollection.DataTable import DataTable
@@ -25,13 +25,13 @@ class TableCollection:
     """
 
     #: A repository of the PropertyTable object.
-    propertyTables: typing.Dict[str, PropertyTable] = {}
+    propertyTables: Dict[str, PropertyTable] = {}
 
     #: A repository of the ParameterTable object
-    parameterTables: typing.Dict[str, ParameterTable] = {}
+    parameterTables: Dict[str, ParameterTable] = {}
 
     #: sequence of the DataTable object
-    dataTables: typing.List[DataTable] = []
+    dataTables: List[DataTable] = []
 
     @abaqus_method_doc
     def __init__(self, name: str):

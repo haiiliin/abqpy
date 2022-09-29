@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -14,7 +14,7 @@ class AcisFile:
     """
 
     #: An Int specifying the number of parts in the object.
-    numberOfParts: typing.Optional[int] = None
+    numberOfParts: Optional[int] = None
 
     @abaqus_method_doc
     def openAcis(self, fileName: str, scaleFromFile: Boolean = OFF):
@@ -52,7 +52,7 @@ class AcisFile:
     def openCatia(
         self,
         fileName: str,
-        topology: typing.Optional[SymbolicConstant] = None,
+        topology: Optional[SymbolicConstant] = None,
         convertUnits: SymbolicConstant = OFF,
         combineBodies: Boolean = OFF,
     ):
@@ -317,7 +317,7 @@ class AcisFile:
         ...
 
     @abaqus_method_doc
-    def writeAcisFile(self, fileName: str, version: typing.Optional[float] = None):
+    def writeAcisFile(self, fileName: str, version: Optional[float] = None):
         """This method exports the assembly to a named file in ACIS format.
 
         Parameters

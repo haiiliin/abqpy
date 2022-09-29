@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AnalysisStep import AnalysisStep
@@ -57,7 +57,7 @@ class SoilsStep(AnalysisStep):
     #: A Float specifying the damping intensity of the automatic damping algorithm if the
     #: problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
     #: value is 2×10-4.
-    stabilizationMagnitude: typing.Optional[float] = None
+    stabilizationMagnitude: Optional[float] = None
 
     #: A Boolean specifying whether a creep response occurs during this step. The default value
     #: is ON.
@@ -69,15 +69,15 @@ class SoilsStep(AnalysisStep):
 
     #: A Float specifying the initial time increment. The default value is the total time
     #: period for the step.
-    initialInc: typing.Optional[float] = None
+    initialInc: Optional[float] = None
 
     #: A Float specifying the minimum time increment allowed. The default value is the smaller
     #: of the suggested initial time increment or 10−5 times the total time period.
-    minInc: typing.Optional[float] = None
+    minInc: Optional[float] = None
 
     #: A Float specifying the maximum time increment allowed. The default value is the total
     #: time period for the step.
-    maxInc: typing.Optional[float] = None
+    maxInc: Optional[float] = None
 
     #: An Int specifying the maximum number of increments in a step. The default value is 100.
     maxNumInc: int = 100
@@ -88,7 +88,7 @@ class SoilsStep(AnalysisStep):
 
     #: None or a Float specifying the maximum pore pressure change permitted in any increment
     #: (in pressure units) in a transient consolidation analysis. The default value is None.
-    utol: typing.Optional[float] = None
+    utol: Optional[float] = None
 
     #: A Float specifying the maximum allowable difference in the creep strain increment
     #: calculated from the creep strain rates at the beginning and end of the increment. The
@@ -144,7 +144,7 @@ class SoilsStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: typing.Optional[SymbolicConstant] = None
+    explicit: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -180,31 +180,31 @@ class SoilsStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: typing.Optional[SymbolicConstant] = None
+    procedureType: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: typing.Dict[str, FieldOutputRequestState] = {}
+    fieldOutputRequestState: Dict[str, FieldOutputRequestState] = {}
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: typing.Dict[str, HistoryOutputRequestState] = {}
+    historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
 
     #: A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
-    monitor: typing.Optional[Monitor] = None
+    monitor: Optional[Monitor] = None
 
     #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: typing.Dict[str, AdaptiveMeshConstraintState] = {}
+    adaptiveMeshConstraintStates: Dict[str, AdaptiveMeshConstraintState] = {}
 
     #: A repository of AdaptiveMeshDomain objects.
-    adaptiveMeshDomains: typing.Dict[str, AdaptiveMeshDomain] = {}
+    adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
 
     #: A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
     control: Control = Control()
@@ -213,19 +213,19 @@ class SoilsStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
+    boundaryConditionStates: Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: typing.Optional[int] = None
+    interactionStates: Optional[int] = None
 
     #: A repository of LoadState objects.
-    loadStates: typing.Dict[str, LoadState] = {}
+    loadStates: Dict[str, LoadState] = {}
 
     #: A repository of LoadCase objects.
-    loadCases: typing.Dict[str, LoadCase] = {}
+    loadCases: Dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
+    predefinedFieldStates: Dict[str, PredefinedFieldState] = {}
 
     @abaqus_method_doc
     def __init__(
@@ -237,15 +237,15 @@ class SoilsStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         stabilizationMethod: SymbolicConstant = NONE,
-        stabilizationMagnitude: typing.Optional[float] = None,
+        stabilizationMagnitude: Optional[float] = None,
         creep: Boolean = ON,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
-        initialInc: typing.Optional[float] = None,
-        minInc: typing.Optional[float] = None,
-        maxInc: typing.Optional[float] = None,
+        initialInc: Optional[float] = None,
+        minInc: Optional[float] = None,
+        maxInc: Optional[float] = None,
         maxNumInc: int = 100,
         end: SymbolicConstant = PERIOD,
-        utol: typing.Optional[float] = None,
+        utol: Optional[float] = None,
         cetol: float = 0,
         amplitude: SymbolicConstant = STEP,
         extrapolation: SymbolicConstant = LINEAR,
@@ -370,15 +370,15 @@ class SoilsStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         stabilizationMethod: SymbolicConstant = NONE,
-        stabilizationMagnitude: typing.Optional[float] = None,
+        stabilizationMagnitude: Optional[float] = None,
         creep: Boolean = ON,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
-        initialInc: typing.Optional[float] = None,
-        minInc: typing.Optional[float] = None,
-        maxInc: typing.Optional[float] = None,
+        initialInc: Optional[float] = None,
+        minInc: Optional[float] = None,
+        maxInc: Optional[float] = None,
         maxNumInc: int = 100,
         end: SymbolicConstant = PERIOD,
-        utol: typing.Optional[float] = None,
+        utol: Optional[float] = None,
         cetol: float = 0,
         amplitude: SymbolicConstant = STEP,
         extrapolation: SymbolicConstant = LINEAR,

@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ...TestData.UniaxialTestData import UniaxialTestData
 from ....UtilityAndView.abaqusConstants import *
@@ -31,10 +31,10 @@ class LowDensityFoam:
     def __init__(
         self,
         elementRemoval: Boolean = OFF,
-        maxAllowablePrincipalStress: typing.Optional[float] = None,
+        maxAllowablePrincipalStress: Optional[float] = None,
         extrapolateStressStrainCurve: Boolean = OFF,
         strainRateType: SymbolicConstant = VOLUMETRIC,
-        mu0: typing.Optional[float] = None,
+        mu0: Optional[float] = None,
         mu1: float = 0,
         alpha: float = 2,
     ):

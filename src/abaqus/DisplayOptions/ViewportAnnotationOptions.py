@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -27,7 +27,7 @@ class ViewportAnnotationOptions:
     def setValues(
         self,
         triad: Boolean = ON,
-        triadPosition: typing.Optional[int] = None,
+        triadPosition: Optional[int] = None,
         triadColor: str = "",
         triadLabels: SymbolicConstant = NUMBERS,
         triadFont: str = "",
@@ -36,21 +36,21 @@ class ViewportAnnotationOptions:
         legendMinMax: Boolean = OFF,
         legendBox: Boolean = ON,
         legendDecimalPlaces: int = 3,
-        legendPosition: typing.Optional[int] = None,
+        legendPosition: Optional[int] = None,
         legendFont: str = "",
         legendTextColor: str = "",
         legendBackgroundStyle: SymbolicConstant = TRANSPARENT,
         legendBackgroundColor: str = "",
         title: Boolean = ON,
         titleBox: Boolean = OFF,
-        titlePosition: typing.Optional[int] = None,
+        titlePosition: Optional[int] = None,
         titleFont: str = "",
         titleTextColor: str = "",
         titleBackgroundStyle: SymbolicConstant = TRANSPARENT,
         titleBackgroundColor: str = "",
         state: Boolean = ON,
         stateBox: Boolean = OFF,
-        statePosition: typing.Optional[int] = None,
+        statePosition: Optional[int] = None,
         stateFont: str = "",
         stateTextColor: str = "",
         stateBackgroundStyle: SymbolicConstant = TRANSPARENT,

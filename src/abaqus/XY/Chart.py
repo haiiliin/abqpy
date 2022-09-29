@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Area import Area
@@ -34,11 +34,11 @@ class Chart:
 
     #: A Float specifying the aspect ratio of the grid area. A value of -1 specifies that the
     #: gridArea will take up all available space. The default value is −1.
-    aspectRatio: typing.Optional[float] = None
+    aspectRatio: Optional[float] = None
 
     #: A repository of XYCurve objects specifying a repository of XYCurve objects to display in
     #: the Chart.
-    curves: typing.Dict[str, XYCurve] = {}
+    curves: Dict[str, XYCurve] = {}
 
     #: An :py:class:`~abaqus.XY.AxisArray.AxisArray` object specifying a read-only sequence of axis objects displayed as axes1 -
     #: the abscissa for a Cartesian chart.
@@ -85,7 +85,7 @@ class Chart:
 
     #: A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
     #: of the Chart.
-    transform: typing.Optional[float] = None
+    transform: Optional[float] = None
 
     @abaqus_method_doc
     def autoColor(self, lines: Boolean = OFF, symbols: Boolean = OFF):
@@ -206,11 +206,11 @@ class Chart:
     @abaqus_method_doc
     def setValues(
         self,
-        chart: typing.Optional["Chart"] = None,
-        curvesToPlot: typing.Tuple[XYCurve, ...] = (),
-        aspectRatio: typing.Optional[float] = None,
+        chart: Optional["Chart"] = None,
+        curvesToPlot: Tuple[XYCurve, ...] = (),
+        aspectRatio: Optional[float] = None,
         transform: tuple = (),
-        view: typing.Optional[View] = None,
+        view: Optional[View] = None,
         useQuantityType: Boolean = ON,
     ):
         """This method modifies the Chart object.

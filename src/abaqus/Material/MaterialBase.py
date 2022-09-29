@@ -1,4 +1,4 @@
-import typing
+from typing import List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Density.Density import Density
@@ -371,7 +371,7 @@ class MaterialBase:
 
         Returns
         -------
-        typing.List[Material]
+        List[Material]
             A list of :py:class:`~abaqus.Material.Material.Material` objects.
         """
         ...

@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
@@ -84,7 +84,7 @@ class ImageOptions(_CopyOptionsBase):
     #: A pair of Floats specifying the **X**- and **Y**-offsets in millimeters from the lower-left
     #: corner of the viewport. The **origin** argument is ignored unless **positionMethod**
     #: =MANUAL. The default value is (0, 0).
-    origin: typing.Tuple[float, ...] = (0.0, 0.0)
+    origin: Tuple[float, ...] = (0.0, 0.0)
 
     #: A Float specifying the translucency factor to use when displaying the image. Possible
     #: values are 0.0 ≤ **translucency** ≤ 1.0 with 0.0 being invisible and 1.0 being opaque.
@@ -101,9 +101,9 @@ class ImageOptions(_CopyOptionsBase):
         alignment: SymbolicConstant = CENTER,
         xScale: float = 1.0,
         yScale: float = 1.0,
-        origin: typing.Tuple[float, ...] = (0.0, 0.0),
+        origin: Tuple[float, ...] = (0.0, 0.0),
         translucency: float = 1.0,
-        options: typing.Optional["ImageOptions"] = None,
+        options: Optional["ImageOptions"] = None,
     ):
         """This method modifies the ImageOptions object.
 

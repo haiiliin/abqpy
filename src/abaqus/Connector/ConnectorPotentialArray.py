@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .ConnectorPotential import ConnectorPotential
 
-ConnectorPotentialArray = typing.List[ConnectorPotential]
+ConnectorPotentialArray = List[ConnectorPotential]

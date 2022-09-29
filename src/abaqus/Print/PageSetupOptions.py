@@ -1,4 +1,4 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
@@ -20,7 +20,7 @@ class PageSetupOptions(_OptionsBase):
     #: of the image in the units specified by **units**. Possible numeric values are **imageSize**
     #: ≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value
     #: of width and height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 inches).
-    imageSize: typing.Union[SymbolicConstant, float] = FIT_TO_PAGE
+    imageSize: Union[SymbolicConstant, float] = FIT_TO_PAGE
 
     #: A SymbolicConstant specifying the units to use for the margins and image size. Possible
     #: values are INCHES and MM. The default value is INCHES.
@@ -60,7 +60,7 @@ class PageSetupOptions(_OptionsBase):
     def setValues(
         self,
         *,
-        imageSize: typing.Union[SymbolicConstant, float] = FIT_TO_PAGE,
+        imageSize: Union[SymbolicConstant, float] = FIT_TO_PAGE,
         units: SymbolicConstant = INCHES,
         quality: SymbolicConstant = MEDIUM,
         topMargin: float = 0.5,

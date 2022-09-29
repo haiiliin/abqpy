@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .BCDisplayOptions import BCDisplayOptions
@@ -107,7 +107,7 @@ class AssemblyDisplayOptions:
     displayGroup: DisplayGroup = DisplayGroup("dg", Leaf(EMPTY_LEAF))
 
     #: A repository of DisplayGroupInstance objects.
-    displayGroupInstances: typing.Dict[str, DisplayGroupInstance] = {}
+    displayGroupInstances: Dict[str, DisplayGroupInstance] = {}
 
     #: An :py:class:`~abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions` object.
     engineeringFeatureOptions: EngineeringFeatureDisplayOptions = (
@@ -172,7 +172,7 @@ class AssemblyDisplayOptions:
         cnxTypeLabels: Boolean = ON,
         cnxTagDisplay: Boolean = OFF,
         predefinedFields: Boolean = OFF,
-        visibleDisplayGroups: typing.Tuple[DisplayGroup, ...] = (),
+        visibleDisplayGroups: Tuple[DisplayGroup, ...] = (),
         engineeringFeatures: Boolean = OFF,
         renderBeamProfiles: Boolean = OFF,
         beamScaleFactor: float = 1,

@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc
 from .MdbDataInstance import MdbDataInstance
@@ -19,12 +19,12 @@ class MdbData:
     """
 
     #: A tuple of (String, Float) tuples specifying the stepName and the stepPeriod.
-    stepPeriods: typing.Optional[float] = None
+    stepPeriods: Optional[float] = None
 
     #: A repository of MdbDataStep objects specifying the list of steps. The repository is
     #: read-only.
-    steps: typing.Dict[str, MdbDataStep] = {}
+    steps: Dict[str, MdbDataStep] = {}
 
     #: A repository of MdbDataInstance objects specifying the list of instances. The repository
     #: is read-only.
-    instances: typing.Dict[str, MdbDataInstance] = {}
+    instances: Dict[str, MdbDataInstance] = {}

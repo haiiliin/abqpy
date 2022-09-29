@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -14,31 +14,31 @@ class MeshStats:
     """
 
     #: An Int specifying the number of point elements.
-    numPointElems: typing.Optional[int] = None
+    numPointElems: Optional[int] = None
 
     #: An Int specifying the number of line elements.
-    numLineElems: typing.Optional[int] = None
+    numLineElems: Optional[int] = None
 
     #: An Int specifying the number of quadrilateral elements.
-    numQuadElems: typing.Optional[int] = None
+    numQuadElems: Optional[int] = None
 
     #: An Int specifying the number of triangular elements.
-    numTriElems: typing.Optional[int] = None
+    numTriElems: Optional[int] = None
 
     #: An Int specifying the number of hexahedral elements.
-    numHexElems: typing.Optional[int] = None
+    numHexElems: Optional[int] = None
 
     #: An Int specifying the number of wedge elements.
-    numWedgeElems: typing.Optional[int] = None
+    numWedgeElems: Optional[int] = None
 
     #: An Int specifying the number of tetrahedral elements.
-    numTetElems: typing.Optional[int] = None
+    numTetElems: Optional[int] = None
 
     #: An Int specifying the number of pyramid elements.
-    numPyramidElems: typing.Optional[int] = None
+    numPyramidElems: Optional[int] = None
 
     #: An Int specifying the number of nodes.
-    numNodes: typing.Optional[int] = None
+    numNodes: Optional[int] = None
 
     #: An Int specifying the number of regions that contain a mesh.
-    numMeshedRegions: typing.Optional[int] = None
+    numMeshedRegions: Optional[int] = None

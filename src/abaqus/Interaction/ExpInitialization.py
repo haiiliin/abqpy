@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactInitialization import ContactInitialization
 from ..UtilityAndView.abaqusConstants import *
@@ -33,22 +33,22 @@ class ExpInitialization(ContactInitialization):
 
     #: None or a Float specifying the interference distance. This argument is valid only when
     #: **overclosureType** = INTERFERENCE. The default value is None.
-    interferenceDistance: typing.Optional[float] = None
+    interferenceDistance: Optional[float] = None
 
     #: None or a Float specifying the initial clearance distance. This argument is valid only
     #: when **overclosureType** = CLEARANCE and must be specified in that case. The default value
     #: is None.
-    clearanceDistance: typing.Optional[float] = None
+    clearanceDistance: Optional[float] = None
 
     #: None or a Float specifying the distance tolerance within which initial openings will
     #: undergo strain-free adjustments. This argument is not valid when
     #: **overclosureType** = INTERFERENCE unless a value has been specified for
     #: **interferenceDistance**. The default value is None.
-    openingTolerance: typing.Optional[float] = None
+    openingTolerance: Optional[float] = None
 
     #: None or a Float specifying the distance tolerance within which initial overclosures will
     #: undergo strain-free adjustments. The default value is None.
-    overclosureTolerance: typing.Optional[float] = None
+    overclosureTolerance: Optional[float] = None
 
     #: A Boolean specifying whether to resolve clearances/overclosures by adjusting the nodal
     #: coordinates without creating strain in the model. **adjustNodalCoords** = True can be used
@@ -63,7 +63,7 @@ class ExpInitialization(ContactInitialization):
     #:
     #: .. versionchanged:: 2022
     #:     The attribute `slaveNodesetName` was renamed to `secondaryNodesetName`.
-    secondaryNodesetName: typing.Optional[str] = None
+    secondaryNodesetName: Optional[str] = None
 
     #: A Float specifying the fraction of the step time (between 0.0 and 1.0) in which the
     #: interference fit has to be solved. The default value is 1.0. This argument is valid only
@@ -75,12 +75,12 @@ class ExpInitialization(ContactInitialization):
         self,
         name: str,
         overclosureType: SymbolicConstant = ADJUST,
-        interferenceDistance: typing.Optional[float] = None,
-        clearanceDistance: typing.Optional[float] = None,
-        openingTolerance: typing.Optional[float] = None,
-        overclosureTolerance: typing.Optional[float] = None,
+        interferenceDistance: Optional[float] = None,
+        clearanceDistance: Optional[float] = None,
+        openingTolerance: Optional[float] = None,
+        overclosureTolerance: Optional[float] = None,
         adjustNodalCoords: Boolean = True,
-        secondaryNodesetName: typing.Optional[str] = None,
+        secondaryNodesetName: Optional[str] = None,
         stepFraction: float = 1,
     ):
         """This method creates an ExpInitialization object.
@@ -145,12 +145,12 @@ class ExpInitialization(ContactInitialization):
     def setValues(
         self,
         overclosureType: SymbolicConstant = ADJUST,
-        interferenceDistance: typing.Optional[float] = None,
-        clearanceDistance: typing.Optional[float] = None,
-        openingTolerance: typing.Optional[float] = None,
-        overclosureTolerance: typing.Optional[float] = None,
+        interferenceDistance: Optional[float] = None,
+        clearanceDistance: Optional[float] = None,
+        openingTolerance: Optional[float] = None,
+        overclosureTolerance: Optional[float] = None,
         adjustNodalCoords: Boolean = True,
-        secondaryNodesetName: typing.Optional[str] = None,
+        secondaryNodesetName: Optional[str] = None,
         stepFraction: float = 1,
     ):
         """This method modifies the ExpInitialization object.

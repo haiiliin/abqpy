@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ClayHardening import ClayHardening
 from ....UtilityAndView.abaqusConstants import *
@@ -56,7 +56,7 @@ class ClayPlasticity:
     def __init__(
         self,
         table: tuple,
-        intercept: typing.Optional[float] = None,
+        intercept: Optional[float] = None,
         hardening: SymbolicConstant = EXPONENTIAL,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,

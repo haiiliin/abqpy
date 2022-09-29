@@ -1,4 +1,4 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Path import Path
@@ -21,10 +21,10 @@ class PathSession(SessionBase):
         numSegments: int,
         startAngle: float,
         endAngle: float,
-        radius: typing.Union[SymbolicConstant, float],
+        radius: Union[SymbolicConstant, float],
         radialAngle: float,
-        startRadius: typing.Union[SymbolicConstant, float],
-        endRadius: typing.Union[SymbolicConstant, float],
+        startRadius: Union[SymbolicConstant, float],
+        endRadius: Union[SymbolicConstant, float],
     ) -> Path:
         """This method creates a Path object.
 

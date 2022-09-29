@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -168,9 +168,9 @@ class OdbMeshRegionData:
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
         sectionPoint: str = "",
-        refinementType: typing.Optional[SymbolicConstant] = None,
+        refinementType: Optional[SymbolicConstant] = None,
         refinementLabel: str = "",
-        displayOutputPosition: typing.Optional[SymbolicConstant] = None,
+        displayOutputPosition: Optional[SymbolicConstant] = None,
     ):
         """This method creates an OdbMeshRegionData object.
 

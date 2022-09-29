@@ -1,4 +1,4 @@
-import typing
+from typing import List, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
@@ -37,7 +37,7 @@ class Face:
     """
 
     #: An Int specifying the index of the face in the FaceArray.
-    index: typing.Optional[int] = None
+    index: Optional[int] = None
 
     #: A Boolean specifying whether the face belongs to the reference representation of the
     #: Part or Instance.
@@ -47,14 +47,14 @@ class Face:
     #: specifies the **X**-, **Y**-, and **Z**-coordinates of a point located on the face and the
     #: **X**-, **Y**-, and **Z**-components of the normal to the face.For a face of a solid **pointOn**
     #: specifies the **X**-, **Y**-, and **Z**-coordinates of a point located on the face.
-    pointOn: typing.Optional[float] = None
+    pointOn: Optional[float] = None
 
     #: A tuple of Floats specifying the name of the feature that created this face.
-    featureName: typing.Optional[float] = None
+    featureName: Optional[float] = None
 
     #: A tuple of Floats specifying the name of the part instance for this face (if
     #: applicable).
-    instanceName: typing.Optional[float] = None
+    instanceName: Optional[float] = None
 
     @abaqus_method_doc
     def getCentroid(self):
@@ -62,7 +62,7 @@ class Face:
 
         Returns
         -------
-        typing.Tuple[float, ...]
+        Tuple[float, ...]
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid of
             the face.
         """
@@ -166,7 +166,7 @@ class Face:
 
         Returns
         -------
-        typing.Tuple[float, ...]
+        Tuple[float, ...]
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components of the normal to the
             face.
 
@@ -200,7 +200,7 @@ class Face:
 
         Returns
         -------
-        typing.Tuple[int, ...]
+        Tuple[int, ...]
         A tuple of integers.
 
         """
@@ -212,7 +212,7 @@ class Face:
 
         Returns
         -------
-        typing.Tuple[int, ...]
+        Tuple[int, ...]
             A tuple of integers.
 
         """
@@ -225,7 +225,7 @@ class Face:
 
         Returns
         -------
-        typing.Tuple[int, ...]
+        Tuple[int, ...]
             A tuple of integers.
 
         """
@@ -294,7 +294,7 @@ class Face:
 
         Returns
         -------
-        typing.List[str]
+        List[str]
             An array of String.
 
         """

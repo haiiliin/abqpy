@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
@@ -52,8 +52,8 @@ class FreeBodyOptions(_OptionsBase):
         numDigitsM: int = 3,
         sizePercentageF: float = 10,
         sizePercentageM: float = 10,
-        thresholdF: typing.Optional[float] = None,
-        thresholdM: typing.Optional[float] = None,
+        thresholdF: Optional[float] = None,
+        thresholdM: Optional[float] = None,
         drawLabelF: Boolean = ON,
         drawLabelM: Boolean = ON,
         showComp1F: Boolean = ON,

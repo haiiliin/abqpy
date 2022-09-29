@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -182,7 +182,7 @@ class ContactDamage:
     #: None or a Float specifying the exponent in the power-law or BK criterion that defines
     #: the variation of fracture energy with mode mix. This argument is valid only when
     #: **useEvolution** = ON and when **mixedModeType** = POWER_LAW or BK. The default value is None.
-    exponent: typing.Optional[float] = None
+    exponent: Optional[float] = None
 
     #: A Boolean specifying whether the evolution data depend on temperature. This argument is
     #: valid only when **useEvolution** = ON. The default value is OFF.
@@ -198,16 +198,16 @@ class ContactDamage:
 
     #: None or a Float specifying the viscosity coefficient. This argument is valid only when
     #: **useStabilization** = ON. The default value is None.
-    viscosityCoef: typing.Optional[float] = None
+    viscosityCoef: Optional[float] = None
 
     #: A tuple of tuples of Floats specifying the values defining the damage initiation. The
     #: items in the table data are described below.
-    initTable: typing.Optional[float] = None
+    initTable: Optional[float] = None
 
     #: A tuple of tuples of Floats specifying the values defining the damage evolution. The
     #: items in the table data are described below. This argument is valid only when
     #: **useEvolution** = ON.
-    evolTable: typing.Optional[float] = None
+    evolTable: Optional[float] = None
 
     @abaqus_method_doc
     def __init__(
@@ -222,12 +222,12 @@ class ContactDamage:
         useMixedMode: Boolean = OFF,
         mixedModeType: SymbolicConstant = TABULAR,
         modeMixRatio: SymbolicConstant = ENERGY,
-        exponent: typing.Optional[float] = None,
+        exponent: Optional[float] = None,
         evolTempDep: Boolean = OFF,
         evolDependencies: int = 0,
         evolTable: tuple = (),
         useStabilization: Boolean = OFF,
-        viscosityCoef: typing.Optional[float] = None,
+        viscosityCoef: Optional[float] = None,
     ):
         """This method creates a ContactDamage object.
 

@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 from .BoundaryConditionState import BoundaryConditionState
 from ..UtilityAndView.abaqusConstants import *
@@ -25,15 +25,15 @@ class FluidCavityPressureBCState(BoundaryConditionState):
     """
 
     #: A Float specifying the fluid cavity pressure magnitude.
-    magnitude: typing.Optional[float] = None
+    magnitude: Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the fluid cavity pressure
     #: magnitude. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    magnitudeState: typing.Optional[SymbolicConstant] = None
+    magnitudeState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    amplitudeState: typing.Optional[SymbolicConstant] = None
+    amplitudeState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the BoundaryConditionState object. Possible values are:
     #: 
@@ -49,7 +49,7 @@ class FluidCavityPressureBCState(BoundaryConditionState):
     #: - MODIFIED_FROM_BASE_STATE
     #: - DEACTIVATED_FROM_BASE_STATE
     #: - BUILT_INTO_MODES
-    status: typing.Optional[SymbolicConstant] = None
+    status: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the amplitude reference. The String is empty if the
     #: boundary condition has no amplitude reference.

@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Area import Area
 from .TextStyle import TextStyle
@@ -57,8 +57,8 @@ class Legend:
         title: str = "",
         numberFormat: SymbolicConstant = AUTOMATIC,
         numDigits: int = 2,
-        textStyle: typing.Optional[TextStyle] = None, 
-        titleStyle: typing.Optional[TextStyle] = None, 
+        textStyle: Optional[TextStyle] = None, 
+        titleStyle: Optional[TextStyle] = None, 
     ):
         """This method modifies the Legend object.
 

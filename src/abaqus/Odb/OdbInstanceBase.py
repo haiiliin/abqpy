@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AnalyticSurface import AnalyticSurface
@@ -34,11 +34,11 @@ class OdbInstanceBase:
 
     #: A SymbolicConstant specifying the type of the Part object. Only a value of
     #: DEFORMABLE_BODY is currently supported.
-    type: typing.Optional[SymbolicConstant] = None
+    type: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the dimensionality of the Part object. Possible values are
     #: THREE_D, TWO_D_PLANAR, AXISYMMETRIC, and UNKNOWN_DIMENSION.
-    embeddedSpace: typing.Optional[SymbolicConstant] = None
+    embeddedSpace: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the state of the Instance as modified by the analysis.
     #: This member is only present if the Instance is part of the RootAssemblyState tree.
@@ -54,13 +54,13 @@ class OdbInstanceBase:
     elements: OdbMeshElementArray = []
 
     #: A repository of OdbSet objects specifying node sets.
-    nodeSets: typing.Dict[str, OdbSet] = {}
+    nodeSets: Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying element sets.
-    elementSets: typing.Dict[str, OdbSet] = {}
+    elementSets: Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying surfaces.
-    surfaces: typing.Dict[str, OdbSet] = {}
+    surfaces: Dict[str, OdbSet] = {}
 
     #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
     sectionAssignments: SectionAssignmentArray = []
@@ -258,7 +258,7 @@ class OdbInstanceBase:
 
     @abaqus_method_doc
     def AnalyticRigidSurf2DPlanar(
-        self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
+        self, name: str, profile: Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
     ):
         """This method is used to define a two-dimensional AnalyticSurface object on the instance.
 
@@ -286,7 +286,7 @@ class OdbInstanceBase:
     def AnalyticRigidSurfExtrude(
         self,
         name: str,
-        profile: typing.Tuple[AnalyticSurfaceSegment, ...],
+        profile: Tuple[AnalyticSurfaceSegment, ...],
         filletRadius: str = 0,
         localCoordData: tuple = (),
     ):
@@ -320,7 +320,7 @@ class OdbInstanceBase:
     def AnalyticRigidSurfRevolve(
         self,
         name: str,
-        profile: typing.Tuple[AnalyticSurfaceSegment, ...],
+        profile: Tuple[AnalyticSurfaceSegment, ...],
         filletRadius: str = 0,
         localCoordData: tuple = (),
     ):

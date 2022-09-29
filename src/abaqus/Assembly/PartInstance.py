@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, List, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..BasicGeometry.CellArray import CellArray
@@ -55,34 +55,34 @@ class PartInstance:
 
     #: A SymbolicConstant specifying the part type. Possible values are DEFORMABLE_BODY,
     #: EULERIAN, DISCRETE_RIGID_SURFACE, and ANALYTIC_RIGID_SURFACE.
-    analysisType: typing.Optional[SymbolicConstant] = None
+    analysisType: Optional[SymbolicConstant] = None
 
     #: An Int specifying the reference node number. This member is valid only if
     #: **analysisType** = DISCRETE_RIGID_SURFACE or ANALYTIC_RIGID_SURFACE.
-    referenceNode: typing.Optional[int] = None
+    referenceNode: Optional[int] = None
 
     #: A :py:class:`~abaqus.Part.Part.Part` object specifying the instanced part.
-    part: typing.Optional[Part] = None
+    part: Optional[Part] = None
 
     #: A repository of Set objects specifying the sets created on the part. For more
     #: information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    sets: typing.Dict[str, Set] = {}
+    sets: Dict[str, Set] = {}
 
     #: A repository of Surface objects specifying the surfaces created on the part. For more
     #: information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    surfaces: typing.Dict[str, Surface] = {}
+    surfaces: Dict[str, Surface] = {}
 
     #: A repository of Skin objects specifying the skins created on the part. For more
     #: information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    skins: typing.Dict[str, Skin] = {}
+    skins: Dict[str, Skin] = {}
 
     #: A repository of Stringer objects specifying the stringers created on the part. For more
     #: information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    stringers: typing.Dict[str, Stringer] = {}
+    stringers: Dict[str, Stringer] = {}
 
     #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
     vertices: VertexArray = VertexArray([])
@@ -103,7 +103,7 @@ class PartInstance:
     cells: CellArray = CellArray([])
 
     #: A repository of Datum objects.
-    datums: typing.List[Datum] = []
+    datums: List[Datum] = []
 
     #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object.
     elements: MeshElementArray = MeshElementArray([])
@@ -115,7 +115,7 @@ class PartInstance:
     #: For a given element and a given face index within that element, the corresponding
     #: MeshFace object can be retrieved from the repository by using the key calculated as (i*8
     #: + j), where i and j are zero-based element and face indices, respectively.
-    elemFaces: typing.Dict[str, MeshFace] = {}
+    elemFaces: Dict[str, MeshFace] = {}
 
     #: A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object.
     elementFaces: MeshFaceArray = MeshFaceArray([])
@@ -125,13 +125,13 @@ class PartInstance:
     #: corresponding MeshEdge object can be retrieved from the repository by using the key
     #: calculated as (i*32 + j*4 + k), where i, j, and k are zero-based element, face, and edge
     #: indices, respectively.
-    elemEdges: typing.Dict[str, MeshEdge] = {}
+    elemEdges: Dict[str, MeshEdge] = {}
 
     #: A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object.
     elementEdges: MeshEdgeArray = MeshEdgeArray([])
 
     #: A repository of ReferencePoint objects.
-    referencePoints: typing.Dict[str, ReferencePoint] = {}
+    referencePoints: Dict[str, ReferencePoint] = {}
 
     #: A String specifying the name of the part from which the instance was created.
     partName: str = ""
@@ -188,7 +188,7 @@ class PartInstance:
         self,
         name: str,
         instanceToBeCut: str,
-        cuttingInstances: typing.Tuple["PartInstance"],
+        cuttingInstances: Tuple["PartInstance"],
         originalInstances: SymbolicConstant = SUPPRESS,
     ):
         """This method creates a PartInstance in the instances repository after subtracting or
@@ -224,12 +224,12 @@ class PartInstance:
     def InstanceFromBooleanMerge(
         self,
         name: str,
-        instances: typing.Tuple["PartInstance"],
+        instances: Tuple["PartInstance"],
         keepIntersections: Boolean = False,
         originalInstances: SymbolicConstant = SUPPRESS,
         domain: SymbolicConstant = GEOMETRY,
         mergeNodes: SymbolicConstant = BOUNDARY_ONLY,
-        nodeMergingTolerance: typing.Optional[float] = None,
+        nodeMergingTolerance: Optional[float] = None,
         removeDuplicateElements: Boolean = True,
     ):
         """This method creates a PartInstance in the instances repository after merging two or more
@@ -288,7 +288,7 @@ class PartInstance:
         spacing2: float,
         direction1: tuple = (),
         direction2: tuple = (),
-    ) -> typing.Tuple['PartInstance']:
+    ) -> Tuple['PartInstance']:
         """This method creates multiple PartInstance objects in a linear pattern and puts them into
         the instances repository.
 
@@ -322,7 +322,7 @@ class PartInstance:
 
         Returns
         -------
-        typing.Tuple[PartInstance, ...]
+        Tuple[PartInstance, ...]
             A sequence of :py:class:`~abaqus.Assembly.PartInstance.PartInstance` objects.
         """
         ...
@@ -366,13 +366,13 @@ class PartInstance:
 
         Returns
         -------
-        typing.Tuple[PartInstance, ...]
+        Tuple[PartInstance, ...]
             A sequence of PartInstance objects.
         """
         ...
 
     @abaqus_method_doc
-    def checkGeometry(self, detailed: Boolean = OFF, level: typing.Optional[int] = None):
+    def checkGeometry(self, detailed: Boolean = OFF, level: Optional[int] = None):
         """This method checks the validity of the geometry of the part instance and prints a count
         of all topological entities on the part instance (faces, edges, vertices, etc.).
 
@@ -466,7 +466,7 @@ class PartInstance:
 
         Returns
         -------
-        typing.Tuple[float, float, float]
+        Tuple[float, float, float]
             A tuple of three Floats representing the translation.
         """
         ...

@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_function_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -18,8 +18,8 @@ the recursive listing of a Python object.
 @abaqus_function_doc
 def getIndentedRepr(
     object,
-    maxRecursionDepth: typing.Optional[SymbolicConstant] = None,
-    maxElementsInSequence: typing.Optional[SymbolicConstant] = None,
+    maxRecursionDepth: Optional[SymbolicConstant] = None,
+    maxElementsInSequence: Optional[SymbolicConstant] = None,
     significantDigits: float = 6,
 ):
     """This method returns a String with each level of parentheses indented.
@@ -56,8 +56,8 @@ def getIndentedRepr(
 @abaqus_function_doc
 def getPaths(
     object,
-    maxRecursionDepth: typing.Optional[SymbolicConstant] = None,
-    maxElementsInSequence: typing.Optional[SymbolicConstant] = None,
+    maxRecursionDepth: Optional[SymbolicConstant] = None,
+    maxElementsInSequence: Optional[SymbolicConstant] = None,
     pathRoot: str = "",
 ):
     """This method processes the argument and interprets its structure. It then returns a
@@ -95,8 +95,8 @@ def getPaths(
 @abaqus_function_doc
 def getTypes(
     object,
-    maxRecursionDepth: typing.Optional[SymbolicConstant] = None,
-    maxElementsInSequence: typing.Optional[SymbolicConstant] = None,
+    maxRecursionDepth: Optional[SymbolicConstant] = None,
+    maxElementsInSequence: Optional[SymbolicConstant] = None,
     pathRoot: str = "",
 ):
     """This method processes the argument, interprets its structure, and returns a String
@@ -132,8 +132,8 @@ def getTypes(
 @abaqus_function_doc
 def prettyPrint(
     object,
-    maxRecursionDepth: typing.Optional[SymbolicConstant] = None,
-    maxElementsInSequence: typing.Optional[SymbolicConstant] = None,
+    maxRecursionDepth: Optional[SymbolicConstant] = None,
+    maxElementsInSequence: Optional[SymbolicConstant] = None,
     significantDigits: float = 6,
 ):
     """This method prints a formatted version of the object. The prettyPrint function uses
@@ -165,8 +165,8 @@ def prettyPrint(
 @abaqus_function_doc
 def printPaths(
     object,
-    maxRecursionDepth: typing.Optional[SymbolicConstant] = None,
-    maxElementsInSequence: typing.Optional[SymbolicConstant] = None,
+    maxRecursionDepth: Optional[SymbolicConstant] = None,
+    maxElementsInSequence: Optional[SymbolicConstant] = None,
     pathRoot: str = "",
 ):
     """This method prints the object path of the **object** argument and its members, depending
@@ -199,8 +199,8 @@ def printPaths(
 @abaqus_function_doc
 def printTypes(
     object,
-    maxRecursionDepth: typing.Optional[SymbolicConstant] = None,
-    maxElementsInSequence: typing.Optional[SymbolicConstant] = None,
+    maxRecursionDepth: Optional[SymbolicConstant] = None,
+    maxElementsInSequence: Optional[SymbolicConstant] = None,
     pathRoot: str = "",
 ):
     """This method prints the object type. The printTypes function uses getTypes to print a

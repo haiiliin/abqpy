@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 from .BoundaryConditionState import BoundaryConditionState
 from ..UtilityAndView.abaqusConstants import *
@@ -25,15 +25,15 @@ class TypeBCState(BoundaryConditionState):
 
     #: A SymbolicConstant specifying the predefined boundary condition type. Possible values
     #: are XSYMM, YSYMM, ZSYMM, XASYMM, YASYMM, ZASYMM, PINNED, and ENCASTRE.
-    typeName: typing.Optional[SymbolicConstant] = None
+    typeName: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the predefined boundary condition
     #: type. The only possible value is UNCHANGED.
-    typeNameState: typing.Optional[SymbolicConstant] = None
+    typeNameState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    amplitudeState: typing.Optional[SymbolicConstant] = None
+    amplitudeState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the BoundaryConditionState object. Possible values are:
     #: 
@@ -49,7 +49,7 @@ class TypeBCState(BoundaryConditionState):
     #: - MODIFIED_FROM_BASE_STATE
     #: - DEACTIVATED_FROM_BASE_STATE
     #: - BUILT_INTO_MODES
-    status: typing.Optional[SymbolicConstant] = None
+    status: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the amplitude reference. The String is empty if the
     #: boundary condition has no amplitude reference.

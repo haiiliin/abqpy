@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ....TestData.BiaxialTestData import BiaxialTestData
 from ....TestData.PlanarTestData import PlanarTestData
@@ -52,7 +52,7 @@ class Hyperfoam:
     def __init__(
         self,
         testData: Boolean = OFF,
-        poisson: typing.Optional[float] = None,
+        poisson: Optional[float] = None,
         n: int = 1,
         temperatureDependency: Boolean = OFF,
         moduli: SymbolicConstant = LONG_TERM,

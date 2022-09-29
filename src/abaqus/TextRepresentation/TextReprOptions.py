@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -23,10 +23,10 @@ class TextReprOptions:
     @abaqus_method_doc
     def setValues(
         self,
-        style: typing.Optional[SymbolicConstant] = None,
-        maxRecursionDepth: typing.Optional[SymbolicConstant] = None,
+        style: Optional[SymbolicConstant] = None,
+        maxRecursionDepth: Optional[SymbolicConstant] = None,
         maxRecursionString: str = "",
-        maxElementsInSequence: typing.Optional[SymbolicConstant] = None,
+        maxElementsInSequence: Optional[SymbolicConstant] = None,
     ):
         """This method modifies the TextReprOptions object.
 

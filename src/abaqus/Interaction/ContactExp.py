@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactPropertyAssignment import ContactPropertyAssignment
@@ -80,7 +80,7 @@ class ContactExp(Interaction):
     #:     The `polarityAssignments` attribute was added.
     polarityAssignments: PolarityAssignments = PolarityAssignments()
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
@@ -88,16 +88,16 @@ class ContactExp(Interaction):
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-        includedPairs: typing.Optional[RegionPairs] = None, 
-        excludedPairs: typing.Optional[RegionPairs] = None, 
-        contactPropertyAssignments: typing.Optional[ContactPropertyAssignment] = None, 
-        surfaceThicknessAssignments: typing.Optional[SurfaceThicknessAssignment] = None, 
-        surfaceOffsetAssignments: typing.Optional[SurfaceOffsetAssignment] = None, 
-        surfaceFeatureAssignments: typing.Optional[SurfaceFeatureAssignment] = None, 
-        smoothingAssignments: typing.Optional[SmoothingAssignment] = None,
+        includedPairs: Optional[RegionPairs] = None, 
+        excludedPairs: Optional[RegionPairs] = None, 
+        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
+        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
+        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
+        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None, 
+        smoothingAssignments: Optional[SmoothingAssignment] = None,
         surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
         surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-        mainSecondaryAssignments: typing.Optional[MainSecondaryAssignment] = None,
+        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -170,7 +170,7 @@ class ContactExp(Interaction):
         """
         super().__init__()
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
@@ -180,15 +180,15 @@ class ContactExp(Interaction):
         surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
         surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
         useAllstar: Boolean = OFF,
-        includedPairs: typing.Optional[SymbolicConstant] = None,
-        excludedPairs: typing.Optional[SymbolicConstant] = None,
-        contactPropertyAssignments: typing.Optional[SymbolicConstant] = None,
-        surfaceThicknessAssignments: typing.Union[SymbolicConstant, float] = ORIGINAL,
-        surfaceOffsetAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
-        surfaceFeatureAssignments: typing.Union[SymbolicConstant, float] = PERIMETER,
-        smoothingAssignments: typing.Optional[SymbolicConstant] = None,
-        mainSecondaryAssignments: typing.Optional[SymbolicConstant] = None,
-        polarityAssignments: typing.Optional[SymbolicConstant] = None,
+        includedPairs: Optional[SymbolicConstant] = None,
+        excludedPairs: Optional[SymbolicConstant] = None,
+        contactPropertyAssignments: Optional[SymbolicConstant] = None,
+        surfaceThicknessAssignments: Union[SymbolicConstant, float] = ORIGINAL,
+        surfaceOffsetAssignments: Union[SymbolicConstant, float] = GLOBAL,
+        surfaceFeatureAssignments: Union[SymbolicConstant, float] = PERIMETER,
+        smoothingAssignments: Optional[SymbolicConstant] = None,
+        mainSecondaryAssignments: Optional[SymbolicConstant] = None,
+        polarityAssignments: Optional[SymbolicConstant] = None,
     ):
         """This method creates a ContactExp object.
 

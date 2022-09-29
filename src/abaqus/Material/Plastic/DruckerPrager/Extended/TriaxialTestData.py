@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
@@ -25,7 +25,7 @@ class TriaxialTestData:
 
     @abaqus_method_doc
     def __init__(
-        self, table: tuple, a: typing.Optional[float] = None, b: typing.Optional[float] = None, pt: typing.Optional[float] = None
+        self, table: tuple, a: Optional[float] = None, b: Optional[float] = None, pt: Optional[float] = None
     ):
         """This method creates a TriaxialTestData object.
 

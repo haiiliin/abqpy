@@ -1,4 +1,4 @@
-import typing
+from typing import Optional
 from abqpy.decorators import abaqus_class_doc
 from .BoundaryConditionState import BoundaryConditionState
 from ..UtilityAndView.abaqusConstants import *
@@ -29,7 +29,7 @@ class EulerianBCState(BoundaryConditionState):
 
     #: A SymbolicConstant specifying the propagation state of the definition member. Possible
     #: values are UNSET, SET, and UNCHANGED.
-    definitionState: typing.Optional[SymbolicConstant] = None
+    definitionState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the material flow conditions to be defined. Possible
     #: values are FREE, NONE, and VOID. The default value is FREE.
@@ -37,7 +37,7 @@ class EulerianBCState(BoundaryConditionState):
 
     #: A SymbolicConstant specifying the propagation state of the definition member. Possible
     #: values are UNSET, SET, and UNCHANGED.
-    inflowTypeState: typing.Optional[SymbolicConstant] = None
+    inflowTypeState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the material flow conditions to be defined. Possible
     #: values are ZERO_PRESSURE, FREE, NON_REFLECTING, and EQUILIBRIUM. The default value is
@@ -46,11 +46,11 @@ class EulerianBCState(BoundaryConditionState):
 
     #: A SymbolicConstant specifying the propagation state of the definition member. Possible
     #: values are UNSET, SET, and UNCHANGED.
-    outflowTypeState: typing.Optional[SymbolicConstant] = None
+    outflowTypeState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    amplitudeState: typing.Optional[SymbolicConstant] = None
+    amplitudeState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the BoundaryConditionState object. Possible values are:
     #: 
@@ -66,7 +66,7 @@ class EulerianBCState(BoundaryConditionState):
     #: - MODIFIED_FROM_BASE_STATE
     #: - DEACTIVATED_FROM_BASE_STATE
     #: - BUILT_INTO_MODES
-    status: typing.Optional[SymbolicConstant] = None
+    status: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the amplitude reference. The String is empty if the
     #: boundary condition has no amplitude reference.
