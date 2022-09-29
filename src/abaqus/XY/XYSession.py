@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Tuple, List, Dict, overload
+from typing import Union, Tuple, List, Dict, overload
 
 from typing_extensions import Literal
 

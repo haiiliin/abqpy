@@ -1,4 +1,4 @@
-from typing import Optional, Tuple
+from typing import Union, Optional, Tuple
 
 from typing_extensions import Literal
 

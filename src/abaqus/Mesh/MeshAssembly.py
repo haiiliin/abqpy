@@ -1,4 +1,4 @@
-from typing import Dict, Optional, Tuple, Union
+from typing import Union, Dict, Optional, Tuple, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ElemType import ElemType
