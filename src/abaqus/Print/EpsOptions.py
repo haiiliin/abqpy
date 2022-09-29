@@ -1,7 +1,8 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (DPI_150, INCHES, MEDIUM, PS_IF_AVAILABLE,
+                                              SIZE_ON_SCREEN, SymbolicConstant, VECTOR)
 from .._OptionsBase import _OptionsBase
 
 
@@ -20,7 +21,7 @@ class EpsOptions(_OptionsBase):
     #: of the image in the units specified by **units**. Possible numeric values are **imageSize**
     #: ≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value
     #: of width and height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 inches).
-    imageSize: typing.Union[SymbolicConstant, float] = SIZE_ON_SCREEN
+    imageSize: Union[SymbolicConstant, float] = SIZE_ON_SCREEN
 
     #: A SymbolicConstant specifying the units of the **imageSize** argument. This argument is
     #: ignored if **imageSize** is SIZE_ON_SCREEN. Possible values are INCHES and MM. The default
@@ -50,7 +51,7 @@ class EpsOptions(_OptionsBase):
     def setValues(
         self,
         *,
-        imageSize: typing.Union[SymbolicConstant, float] = SIZE_ON_SCREEN,
+        imageSize: Union[SymbolicConstant, float] = SIZE_ON_SCREEN,
         units: SymbolicConstant = INCHES,
         resolution: SymbolicConstant = DPI_150,
         fontType: SymbolicConstant = PS_IF_AVAILABLE,

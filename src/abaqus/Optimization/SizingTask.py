@@ -1,4 +1,4 @@
-import typing
+from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .DesignResponse import DesignResponse
@@ -7,7 +7,7 @@ from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
 from .StopCondition import StopCondition
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, MODEL, NORMAL, OFF, ON, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -23,19 +23,19 @@ class SizingTask(OptimizationTask):
     """
 
     #: A repository of DesignResponse objects.
-    designResponses: typing.Dict[str, DesignResponse] = {}
+    designResponses: Dict[str, DesignResponse] = {}
 
     #: A repository of ObjectiveFunction objects.
-    objectiveFunctions: typing.Dict[str, ObjectiveFunction] = {}
+    objectiveFunctions: Dict[str, ObjectiveFunction] = {}
 
     #: A repository of OptimizationConstraint objects.
-    optimizationConstraints: typing.Dict[str, OptimizationConstraint] = {}
+    optimizationConstraints: Dict[str, OptimizationConstraint] = {}
 
     #: A repository of GeometricRestriction objects.
-    geometricRestrictions: typing.Dict[str, GeometricRestriction] = {}
+    geometricRestrictions: Dict[str, GeometricRestriction] = {}
 
     #: A repository of StopCondition objects.
-    stopConditions: typing.Dict[str, StopCondition] = {}
+    stopConditions: Dict[str, StopCondition] = {}
 
     #: A String specifying the optimization task repository key.
     name: str

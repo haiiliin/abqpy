@@ -1,9 +1,9 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Constraint import Constraint
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, SymbolicConstant, UNIFORM
 
 
 @abaqus_class_doc
@@ -37,7 +37,7 @@ class Coupling(Constraint):
     controlPoint: Region
 
     #: The SymbolicConstant WHOLE_SURFACE or a Float specifying the influence radius.
-    influenceRadius: typing.Union[SymbolicConstant, float]
+    influenceRadius: Union[SymbolicConstant, float]
 
     #: A SymbolicConstant specifying the coupling constraint type. Possible values are
     #: KINEMATIC, DISTRIBUTING, and STRUCTURAL.
@@ -51,7 +51,7 @@ class Coupling(Constraint):
     #: None or a DatumCsys object specifying the initial orientation of the local coordinate
     #: system for the coupling's degrees of freedom. If **localCsys** = None, the coupling is
     #: defined in the global coordinate system. The default value is None.
-    localCsys: str = None
+    localCsys: Optional[str] = None
 
     #: A Boolean specifying if the displacement component in the 1-direction is constrained to
     #: the reference node for a kinematic coupling constraint. The default value is ON.The **u1**
@@ -95,10 +95,10 @@ class Coupling(Constraint):
         name: str,
         surface: Region,
         controlPoint: Region,
-        influenceRadius: typing.Union[SymbolicConstant, float],
+        influenceRadius: Union[SymbolicConstant, float],
         couplingType: SymbolicConstant,
         adjust: Boolean = OFF,
-        localCsys: str = None,
+        localCsys: Optional[str] = None,
         u1: Boolean = ON,
         u2: Boolean = ON,
         u3: Boolean = ON,
@@ -176,7 +176,7 @@ class Coupling(Constraint):
     def setValues(
         self,
         adjust: Boolean = OFF,
-        localCsys: str = None,
+        localCsys: Optional[str] = None,
         u1: Boolean = ON,
         u2: Boolean = ON,
         u3: Boolean = ON,

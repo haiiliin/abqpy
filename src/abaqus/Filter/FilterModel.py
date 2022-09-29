@@ -1,10 +1,12 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ButterworthFilter import ButterworthFilter
 from .Chebyshev1Filter import Chebyshev1Filter
 from .Chebyshev2Filter import Chebyshev2Filter
 from .OperatorFilter import OperatorFilter
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, NONE, OFF, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -25,7 +27,7 @@ class FilterModel(ModelBase):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: float = None,
+        limit: Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ) -> ButterworthFilter:
         """This method creates a ButterworthFilter object.
@@ -86,7 +88,7 @@ class FilterModel(ModelBase):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: float = None,
+        limit: Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ) -> Chebyshev1Filter:
         """This method creates a Chebyshev1Filter object.
@@ -157,7 +159,7 @@ class FilterModel(ModelBase):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: float = None,
+        limit: Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ) -> Chebyshev2Filter:
         """This method creates a Chebyshev2Filter object.
@@ -227,7 +229,7 @@ class FilterModel(ModelBase):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: float = None,
+        limit: Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ) -> OperatorFilter:
         """This method creates an OperatorFilter object.

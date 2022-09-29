@@ -8,13 +8,82 @@ from abaqus.XY.TextStyle import TextStyle
 from abaqus.XY.XYData import XYData
 from abaqus.XY.XYSession import XYSession
 from abaqus.Odb.Odb import Odb
-from abaqus.UtilityAndView.abaqusConstants import *
+from abaqus.UtilityAndView.abaqusConstants import (
+    Boolean,
+    ABSOLUTE,
+    ADD,
+    AVERAGE,
+    AVERAGE_ALL,
+    COMPLEX_MAGNITUDE,
+    COMPLEX_PHASE,
+    COMPLEX_VAL_AT_ANGLE,
+    COMPONENT,
+    COSINE,
+    DEFORMED,
+    DEG2RAD,
+    DIVIDE,
+    ELEMENT_CENTROID,
+    ELEMENT_FACE,
+    ELEMENT_NODAL,
+    EXPONENTIAL,
+    GENERAL_PARTICLE,
+    HYPERBOLIC_COSINE,
+    HYPERBOLIC_SINE,
+    HYPERBOLIC_TANGENT,
+    IMAGINARY,
+    INTEGRATION_POINT,
+    INVARIANT,
+    INVERSE_COSINE,
+    INVERSE_SINE,
+    INVERSE_TANGENT,
+    LOG,
+    MAXIMUM,
+    MAXIMUM_ENVELOPE,
+    MINIMUM,
+    MINIMUM_ENVELOPE,
+    MULTIPLY,
+    NATURAL_LOG,
+    NODAL,
+    NORMALIZE,
+    NORM_DISTANCE,
+    OFF,
+    ON,
+    PATH_POINTS,
+    POWER,
+    RAD2DEG,
+    RANGE,
+    RANGE_ALL,
+    REAL,
+    SEQ_ID,
+    SINE,
+    SMOOTH,
+    SQUARE_ROOT,
+    SRSS,
+    SUBTRACT,
+    SWAP,
+    TANGENT,
+    TRUE_DISTANCE,
+    TRUE_DISTANCE_X,
+    TRUE_DISTANCE_Y,
+    TRUE_DISTANCE_Z,
+    UNARY_NEGATIVE,
+    UNDEFORMED,
+    UNIFORM_SPACING,
+    WHOLE_ELEMENT,
+    WHOLE_MODEL,
+    WHOLE_PART_INSTANCE,
+    WHOLE_REGION,
+    X_COORDINATE,
+    Y_COORDINATE,
+    Z_COORDINATE,
+)
+
+
 from abaqus.UtilityAndView.SymbolicConstant import SymbolicConstant
 from abaqus.PathAndProbe.Path import Path
 
 
 def XYDataFromFile(
-    self,
     fileName: str,
     name: str = "",
     sourceDescription: str = "",
@@ -93,7 +162,6 @@ def XYDataFromFile(
 
 
 def XYDataFromFreeBody(
-    self,
     odb: Odb,
     force: Boolean = ON,
     moment: Boolean = OFF,
@@ -138,7 +206,7 @@ def XYDataFromFreeBody(
 
     Returns
     -------
-    typing.List[XYData]
+    List[XYData]
         A list of XYData objects.
 
     Raises
@@ -150,7 +218,6 @@ def XYDataFromFreeBody(
 
 
 def XYDataFromHistory(
-    self,
     odb: Odb,
     outputVariableName: str,
     steps: tuple,
@@ -228,7 +295,6 @@ def XYDataFromHistory(
 
 
 def XYDataFromPath(
-    self,
     path: Path,
     name: str,
     includeIntersections: Boolean,
@@ -381,7 +447,6 @@ def XYDataFromPath(
 
 
 def XYDataFromShellThickness(
-    self,
     odb: Odb,
     outputPosition: Literal[ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, NODAL],
     variable: Tuple[
@@ -490,7 +555,7 @@ def XYDataFromShellThickness(
 
     Returns
     -------
-    typing.List[XYData]
+    List[XYData]
         A list of XYData objects.
 
     Raises
@@ -502,7 +567,6 @@ def XYDataFromShellThickness(
 
 
 def xyDataListFromField(
-    self,
     odb: Odb,
     outputPosition: Literal[ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, NODAL],
     variable: Tuple[
@@ -662,7 +726,7 @@ def xyDataListFromField(
 
     Returns
     -------
-    typing.List[XYData]
+    List[XYData]
         A list of XYData objects.
 
     Raises

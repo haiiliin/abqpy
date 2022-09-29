@@ -1,4 +1,4 @@
-import typing
+from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc
 from .ConstrainedSketchConstraint.ConstrainedSketchConstraint import (
@@ -37,10 +37,10 @@ class ConstrainedSketchBase:
     """
 
     #: A repository of ConstrainedSketchConstraint objects.
-    constraints: typing.Dict[str, ConstrainedSketchConstraint] = {}
+    constraints: Dict[str, ConstrainedSketchConstraint] = {}
 
     #: A repository of ConstrainedSketchDimension objects.
-    dimensions: typing.Dict[str, ConstrainedSketchDimension] = {}
+    dimensions: Dict[str, ConstrainedSketchDimension] = {}
 
     #: A :py:class:`~abaqus.Amplitude.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray` object specifying the sketch geometry, such as lines,
     #: arcs, circles, and splines.
@@ -48,7 +48,7 @@ class ConstrainedSketchBase:
 
     #: A repository of ConstrainedSketchParameter objects specifying sketch parameters, which
     #: may be associated with dimensions.
-    parameters: typing.Dict[str, ConstrainedSketchParameter] = {}
+    parameters: Dict[str, ConstrainedSketchParameter] = {}
 
     #: A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions` object specifying the sketch option settings.
     sketchOptions: ConstrainedSketchOptions = ConstrainedSketchOptions()

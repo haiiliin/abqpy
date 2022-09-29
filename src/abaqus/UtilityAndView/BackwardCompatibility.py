@@ -1,7 +1,7 @@
-import typing
+from typing import List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, ON
 
 
 @abaqus_class_doc
@@ -31,7 +31,7 @@ class BackwardCompatibility:
 
     In addition, the BackwardCompatibility object provides tools to assist you in
     determining the deprecated commands that have been used. For example, to determine the
-    deprecated commands used in the script createLug.py, use the following commands::2
+    deprecated commands used in the script createLug.py, use the following commands::
 
         backwardCompatibility.resetDeprecatedMethodsUsed()
         backwardCompatibility.resetDeprecatedMembersUsed()
@@ -66,7 +66,7 @@ class BackwardCompatibility:
 
         Returns
         -------
-        typing.List[str]
+        List[str]
             A list of Strings.
         """
         ...
@@ -78,7 +78,7 @@ class BackwardCompatibility:
 
         Returns
         -------
-        typing.List[str]
+        List[str]
             A list of Strings.
         """
         ...

@@ -1,14 +1,17 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
+
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .OdbPart import OdbPart
 from .OdbStep import OdbStep
 from .SectionCategory import SectionCategory
 from ..Amplitude.AmplitudeOdb import AmplitudeOdb
 from ..BeamSectionProfile.BeamSectionProfileOdb import BeamSectionProfileOdb
+from ..Canvas.Displayable import Displayable
 from ..Filter.FilterOdb import FilterOdb
 from ..Material.MaterialOdb import MaterialOdb
-from ..UtilityAndView.abaqusConstants import *
-from ..Canvas.Displayable import Displayable
+from ..UtilityAndView.abaqusConstants import (ANALYTIC_RIGID_SURFACE, ARC_LENGTH, AXISYMMETRIC,
+                                              DEFORMABLE_BODY, FREQUENCY, MODAL, THREE_D, TIME,
+                                              TWO_D_PLANAR)
 
 
 @abaqus_class_doc

@@ -1,7 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Area import Area
 from .TextStyle import TextStyle
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import AUTOMATIC, Boolean, OFF, ON, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -56,8 +58,8 @@ class Legend:
         title: str = "",
         numberFormat: SymbolicConstant = AUTOMATIC,
         numDigits: int = 2,
-        textStyle: TextStyle = None, 
-        titleStyle: TextStyle = None, 
+        textStyle: Optional[TextStyle] = None, 
+        titleStyle: Optional[TextStyle] = None, 
     ):
         """This method modifies the Legend object.
 

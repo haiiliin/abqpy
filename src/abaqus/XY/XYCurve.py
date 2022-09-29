@@ -1,8 +1,10 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .LineStyle import LineStyle
 from .SymbolStyle import SymbolStyle
 from .XYData import XYData
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, CURVE_LEGEND, ON, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -43,7 +45,7 @@ class XYCurve:
     legendSource: SymbolicConstant = CURVE_LEGEND
 
     #: An :py:class:`~abaqus.XY.XYData.XYData` object specifying the data for the curve.
-    data: XYData = None
+    data: Optional[XYData] = None
 
     #: A :py:class:`~abaqus.XY.LineStyle.LineStyle` object specifying the line properties used to display the curve.
     lineStyle: LineStyle = LineStyle()
@@ -57,7 +59,7 @@ class XYCurve:
 
     #: A tuple of SymbolicConstants specifying that describe how curves are to be displayed.
     #: Possible values are LINE and SYMBOL. The default value is (LINE).
-    displayTypes: SymbolicConstant = None
+    displayTypes: Optional[SymbolicConstant] = None
 
     @abaqus_method_doc
     def Curve(self, name: str, data: XYData):
@@ -85,7 +87,7 @@ class XYCurve:
     @abaqus_method_doc
     def setValues(
         self,
-        displayTypes: SymbolicConstant = None,
+        displayTypes: Optional[SymbolicConstant] = None,
         legendLabel: str = "",
         symbolFrequency: int = 1,
         useDefault: Boolean = ON,

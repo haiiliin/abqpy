@@ -1,5 +1,7 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ...UtilityAndView.abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
@@ -40,7 +42,7 @@ class PlanarTestData:
     def __init__(
         self,
         table: tuple,
-        smoothing: int = None,
+        smoothing: Optional[int] = None,
         lateralNominalStrain: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,

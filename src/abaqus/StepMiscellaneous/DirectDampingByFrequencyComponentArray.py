@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .DirectDampingByFrequencyComponent import DirectDampingByFrequencyComponent
 
-DirectDampingByFrequencyComponentArray = typing.List[DirectDampingByFrequencyComponent]
+DirectDampingByFrequencyComponentArray = List[DirectDampingByFrequencyComponent]

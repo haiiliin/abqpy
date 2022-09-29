@@ -1,5 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, OFF, OPT_DATASAVE_SPECIFY_CYCLE,
+                                              OPT_EXTRACT_SMOOTH_ABAQUS_INPUT_FILE)
 
 
 @abaqus_class_doc
@@ -59,7 +62,7 @@ class OptimizationProcess:
     #: OPT_DATASAVE_SPECIFY_CYCLE. Abaqus saves file iterations for every nth iteration after
     #: iteration 1; if you set **saveEvery** = 3, Abaqus saves file iterations for cycles 1, 4, 7,
     #: and so on. The default value is None.
-    saveEvery: int = None
+    saveEvery: Optional[int] = None
 
     @abaqus_method_doc
     def __init__(
@@ -74,7 +77,7 @@ class OptimizationProcess:
         saveInitial: Boolean = True,
         saveFirst: Boolean = True,
         saveLast: Boolean = True,
-        saveEvery: int = None,
+        saveEvery: Optional[int] = None,
     ):
         """This method creates an OptimizationProcess object.
 
@@ -222,7 +225,7 @@ class OptimizationProcess:
         saveInitial: Boolean = True,
         saveFirst: Boolean = True,
         saveLast: Boolean = True,
-        saveEvery: int = None,
+        saveEvery: Optional[int] = None,
     ):
         """This method modifies the OptimizationProcess object.
 

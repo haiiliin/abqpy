@@ -1,4 +1,5 @@
-from typing import Optional, Union, Tuple
+from typing import Union, Optional, Tuple
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -22,7 +23,23 @@ from .SurfaceSection import SurfaceSection
 from .TrussSection import TrussSection
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ACCELEROMETER, ALIGN, ANALYTICAL_FIELD, AXIAL, BEAM,
+                                              BEAM_MPC, BEFORE_ANALYSIS, BENDING, BUSHING, Boolean,
+                                              CARDAN, CARTESIAN, CONSTANT, CONSTANT_VELOCITY,
+                                              CONTINUUM, CVJOINT, CYLINDRICAL, DEFAULT,
+                                              DISCRETE_FIELD, DOF_MODE, DURING_ANALYSIS, ELBOW_MPC,
+                                              EULER, EXPLICIT, FLEXION_TORSION, FLOW_CONVERTER,
+                                              FULLY, GASKET, GAUSS, GRADIENT, HALF, HINGE, IMPLICIT,
+                                              INTERPOLATED, JOIN, LINEAR, LINK, LINK_MPC, MEMBRANE,
+                                              NODAL_ANALYTICAL_FIELD, NODAL_DISCRETE_FIELD,
+                                              NODE_MODE, NONE, NO_IDEALIZATION, OFF, ON, PIN_MPC,
+                                              PLANAR, POINTWISE, PROJECTION_CARTESIAN,
+                                              PROJECTION_FLEXION_TORSION, RADIAL_THRUST, RETRACTOR,
+                                              REVOLUTE, ROTATION, ROTATION_ACCELEROMETER, SIMPSON,
+                                              SLIDE_PLANE, SLIPRING, SLOT, SMEAR_ALL_LAYERS,
+                                              SOLVER_DEFAULT, SPECIFY, TAPERED, TIE_MPC,
+                                              TRACTION_SEPARATION, TRANSLATOR, UJOINT, UNIFORM,
+                                              UNIVERSAL, UNSPECIFIED, USER_DEFINED, VALUE, WELD)
 
 
 @abaqus_class_doc

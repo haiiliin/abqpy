@@ -1,10 +1,11 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Fastener import Fastener
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALL, AXIS_1, Boolean, CONNECTOR, CONTINUUM, DEFAULT,
+                                              FACETOFACE, MODEL, OFF, ON, SymbolicConstant, UNIFORM)
 
 
 @abaqus_class_doc
@@ -41,7 +42,7 @@ class PointFastener(Fastener):
     #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of projection. Instead of
     #: through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. The
     #: default value is None.
-    directionVector: tuple = None
+    directionVector: Optional[tuple] = None
 
     #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying surfaces to be fastened. The default value is MODEL.
     targetSurfaces: RegionArray = MODEL
@@ -68,11 +69,11 @@ class PointFastener(Fastener):
     #: to contribute to the motion of the projection point. If the value is DEFAULT, a radius
     #: is computed from the fastener diameter and the surface facet lengths. The default value
     #: is DEFAULT.
-    influenceRadius: typing.Union[SymbolicConstant, float] = DEFAULT
+    influenceRadius: Union[SymbolicConstant, float] = DEFAULT
 
     #: The SymbolicConstant DEFAULT or a Float specifying the distance from the positioning
     #: points within which the connected points must lie. The default value is DEFAULT.
-    searchRadius: typing.Union[SymbolicConstant, float] = DEFAULT
+    searchRadius: Union[SymbolicConstant, float] = DEFAULT
 
     #: The SymbolicConstant ALL or an Int specifying the maximum number of layers for each
     #: fastener. If the value is ALL, the maximum possible number of layers within the
@@ -105,7 +106,7 @@ class PointFastener(Fastener):
     #: None or a DatumCsys object specifying the local coordinate system. If **localCsys** = None,
     #: the global coordinate system is used. When this member is queried, it returns an Int.
     #: The default value is None.
-    localCsys: int = None
+    localCsys: Optional[int] = None
 
     #: A SymbolicConstant specifying the fastener connection type. Possible values are
     #: CONNECTOR and BEAM_MPC. The default value is CONNECTOR.
@@ -119,7 +120,7 @@ class PointFastener(Fastener):
     #: point in generated connectors. If **connectorOrientationLocalCsys1** = None, the degrees of
     #: freedom are defined in the global coordinate system. When this member is queried, it
     #: returns an Int. The default value is None.
-    connectorOrientationLocalCsys1: int = None
+    connectorOrientationLocalCsys1: Optional[int] = None
 
     #: A SymbolicConstant specifying the axis of a datum coordinate system about which an
     #: additional rotation is applied for the first point in generated connectors. Possible
@@ -139,7 +140,7 @@ class PointFastener(Fastener):
     #: connector point in generated connectors. If **connectorOrientationLocalCsys2** = None, the
     #: degrees of freedom are defined in the global coordinate system. When this member is
     #: queried, it returns an Int. The default value is None.
-    connectorOrientationLocalCsys2: int = None
+    connectorOrientationLocalCsys2: Optional[int] = None
 
     #: A SymbolicConstant specifying the axis of a datum coordinate system about which an
     #: additional rotation is applied for the second point in generated connectors. Possible
@@ -161,27 +162,27 @@ class PointFastener(Fastener):
         name: str,
         region: Region,
         physicalRadius: float,
-        directionVector: tuple = None,
+        directionVector: Optional[tuple] = None,
         targetSurfaces: RegionArray = MODEL,
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
         attachmentMethod: SymbolicConstant = FACETOFACE,
-        influenceRadius: typing.Union[SymbolicConstant, float] = DEFAULT,
-        searchRadius: typing.Union[SymbolicConstant, float] = DEFAULT,
+        influenceRadius: Union[SymbolicConstant, float] = DEFAULT,
+        searchRadius: Union[SymbolicConstant, float] = DEFAULT,
         maximumLayers: SymbolicConstant = ALL,
         coupling: SymbolicConstant = CONTINUUM,
         weightingMethod: SymbolicConstant = UNIFORM,
         additionalMass: float = 0,
         adjustOrientation: Boolean = ON,
-        localCsys: int = None,
+        localCsys: Optional[int] = None,
         connectionType: SymbolicConstant = CONNECTOR,
         sectionName: str = "",
-        connectorOrientationLocalCsys1: int = None,
+        connectorOrientationLocalCsys1: Optional[int] = None,
         axis1: SymbolicConstant = AXIS_1,
         angle1: float = 0,
         orient2SameAs1: Boolean = ON,
-        connectorOrientationLocalCsys2: int = None,
+        connectorOrientationLocalCsys2: Optional[int] = None,
         axis2: SymbolicConstant = AXIS_1,
         angle2: float = 0,
         unsorted: Boolean = OFF,
@@ -308,27 +309,27 @@ class PointFastener(Fastener):
     @abaqus_method_doc
     def setValues(
         self,
-        directionVector: tuple = None,
+        directionVector: Optional[tuple] = None,
         targetSurfaces: RegionArray = MODEL,
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
         attachmentMethod: SymbolicConstant = FACETOFACE,
-        influenceRadius: typing.Union[SymbolicConstant, float] = DEFAULT,
-        searchRadius: typing.Union[SymbolicConstant, float] = DEFAULT,
+        influenceRadius: Union[SymbolicConstant, float] = DEFAULT,
+        searchRadius: Union[SymbolicConstant, float] = DEFAULT,
         maximumLayers: SymbolicConstant = ALL,
         coupling: SymbolicConstant = CONTINUUM,
         weightingMethod: SymbolicConstant = UNIFORM,
         additionalMass: float = 0,
         adjustOrientation: Boolean = ON,
-        localCsys: int = None,
+        localCsys: Optional[int] = None,
         connectionType: SymbolicConstant = CONNECTOR,
         sectionName: str = "",
-        connectorOrientationLocalCsys1: int = None,
+        connectorOrientationLocalCsys1: Optional[int] = None,
         axis1: SymbolicConstant = AXIS_1,
         angle1: float = 0,
         orient2SameAs1: Boolean = ON,
-        connectorOrientationLocalCsys2: int = None,
+        connectorOrientationLocalCsys2: Optional[int] = None,
         axis2: SymbolicConstant = AXIS_1,
         angle2: float = 0,
         unsorted: Boolean = OFF,

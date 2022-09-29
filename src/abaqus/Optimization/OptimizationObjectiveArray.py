@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .OptimizationObjective import OptimizationObjective
 
-OptimizationObjectiveArray = typing.List[OptimizationObjective]
+OptimizationObjectiveArray = List[OptimizationObjective]
