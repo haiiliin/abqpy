@@ -19,22 +19,22 @@ class OdbFrame:
 
     #: An Int specifying the cyclic mode number associated with the data stored on this frame.
     #: Only frequency analyses of cyclic symmetry models possess cyclic mode numbers.
-    cyclicModeNumber: int = None
+    cyclicModeNumber: typing.Optional[int] = None
 
     #: A SymbolicConstant specifying the domain of the step of which the frame is a member.
     #: Possible values are TIME, FREQUENCY, and MODAL.
-    domain: SymbolicConstant = None
+    domain: typing.Optional[SymbolicConstant] = None
 
     #: A Float specifying the frequency. This member is valid only if **domain** = FREQUENCY or if
     #: the **procedureType** member of the Step object=FREQUENCY. The default value is 0.0.
     frequency: float = 0
 
     #: An Int specifying the eigenmode. This member is valid only if **domain** = MODAL.
-    mode: int = None
+    mode: typing.Optional[int] = None
 
     #: An :py:class:`~abaqus.Odb.OdbFrame.OdbFrame` object specifying the real or imaginary portion of the data corresponding to
     #: this cyclic symmetry mode.
-    associatedFrame: "OdbFrame" = None
+    associatedFrame: typing.Optional["OdbFrame"] = None
 
     #: A repository of FieldOutput objects specifying the key to the **fieldOutputs** repository
     #: is a String representing an output variable.
@@ -156,7 +156,7 @@ class OdbFrame:
         description: str,
         type: SymbolicConstant,
         componentLabels: tuple = (),
-        validInvariants: SymbolicConstant = None,
+        validInvariants: typing.Optional[SymbolicConstant] = None,
         isEngineeringTensor: Boolean = OFF,
     ):
         """This method creates a FieldOutput object.

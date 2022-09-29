@@ -57,7 +57,7 @@ class ContactProperty(InteractionProperty):
     heatGeneration: GapHeatGeneration = GapHeatGeneration()
 
     #: A :py:class:`~abaqus.Interaction.Radiation.Radiation` object.
-    radiation: Radiation = None
+    radiation: typing.Optional[Radiation] = None
 
     #: A :py:class:`~abaqus.Interaction.GeometricProperties.GeometricProperties` object.
     geometricProperties: GeometricProperties = GeometricProperties()
@@ -97,11 +97,11 @@ class ContactProperty(InteractionProperty):
         dependencies: int = 0,
         exponentialDecayDefinition: SymbolicConstant = COEFFICIENTS,
         table: tuple = (),
-        shearStressLimit: float = None,
+        shearStressLimit: typing.Optional[float] = None,
         maximumElasticSlip: SymbolicConstant = FRACTION,
         fraction: float = 0,
         absoluteDistance: float = 0,
-        elasticSlipStiffness: float = None,
+        elasticSlipStiffness: typing.Optional[float] = None,
         nStateDependentVars: int = 0,
         useProperties: Boolean = OFF,
     ):
@@ -185,7 +185,7 @@ class ContactProperty(InteractionProperty):
         contactStiffness: typing.Union[SymbolicConstant, float] = DEFAULT,
         pressureOverclosure: SymbolicConstant = HARD,
         allowSeparation: Boolean = ON,
-        maxStiffness: float = None,
+        maxStiffness: typing.Optional[float] = None,
         table: tuple = (),
         constraintEnforcementMethod: SymbolicConstant = DEFAULT,
         overclosureFactor: float = 0,
@@ -344,12 +344,12 @@ class ContactProperty(InteractionProperty):
         useMixedMode: Boolean = OFF,
         mixedModeType: SymbolicConstant = TABULAR,
         modeMixRatio: SymbolicConstant = ENERGY,
-        exponent: float = None,
+        exponent: typing.Optional[float] = None,
         evolTempDep: Boolean = OFF,
         evolDependencies: int = 0,
         evolTable: tuple = (),
         useStabilization: Boolean = OFF,
-        viscosityCoef: float = None,
+        viscosityCoef: typing.Optional[float] = None,
     ):
         """This method creates a ContactDamage object.
 
@@ -711,12 +711,12 @@ class ContactProperty(InteractionProperty):
     def GeometricProperties(
         self,
         contactArea: float = 1,
-        padThickness: float = None,
-        trackingThickness: float = None,
+        padThickness: typing.Optional[float] = None,
+        trackingThickness: typing.Optional[float] = None,
         dependentVariables: int = 0,
         numProperties: int = 0,
         useUnsymmetricEqunProcedure: Boolean = OFF,
-        modelType: SymbolicConstant = None,
+        modelType: typing.Optional[SymbolicConstant] = None,
     ):
         """This method creates a GeometricProperties object.
 

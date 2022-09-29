@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .LayerPropertiesArray import LayerPropertiesArray
 from .RebarLayers import RebarLayers
@@ -64,12 +65,12 @@ class GeometryShellSection(ShellSection):
 
     #: None or an Int specifying the number of temperature points to be input. This argument is
     #: valid only when **temperature** = POINTWISE. The default value is None.
-    nTemp: int = None
+    nTemp: typing.Optional[int] = None
 
     #: None or a Float specifying the effective thickness modulus. This argument is relevant
     #: only for continuum shells and must be used in conjunction with the argument **poisson**.
     #: The default value is None.
-    thicknessModulus: float = None
+    thicknessModulus: typing.Optional[float] = None
 
     #: A Boolean specifying whether or not to use the value of **density**. The default value is
     #: OFF.
@@ -95,7 +96,7 @@ class GeometryShellSection(ShellSection):
     nodalThicknessField: str = ""
 
     #: A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object specifying the transverse shear stiffness properties.
-    transverseShear: TransverseShearShell = None
+    transverseShear: typing.Optional[TransverseShearShell] = None
 
     @abaqus_method_doc
     def __init__(
@@ -108,8 +109,8 @@ class GeometryShellSection(ShellSection):
         poisson: float = 0,
         integrationRule: SymbolicConstant = SIMPSON,
         temperature: SymbolicConstant = GRADIENT,
-        nTemp: int = None,
-        thicknessModulus: float = None,
+        nTemp: typing.Optional[int] = None,
+        thicknessModulus: typing.Optional[float] = None,
         useDensity: Boolean = OFF,
         density: float = 0,
     ):

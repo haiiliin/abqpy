@@ -50,7 +50,7 @@ class MeshEditPart(PartBase):
         growEdges: Boolean = OFF,
         elements: str = "",
         refEdge: str = "",
-        thicknessDir: float = None,
+        thicknessDir: typing.Optional[float] = None,
         moveLayers: Boolean = False,
     ):
         """This method is used to collapse short element edges and delete collapsed elements, or
@@ -161,14 +161,14 @@ class MeshEditPart(PartBase):
     def editNode(
         self,
         nodes: typing.Tuple[MeshNode, ...],
-        coordinate1: float = None,
-        coordinate2: float = None,
-        coordinate3: float = None,
+        coordinate1: typing.Optional[float] = None,
+        coordinate2: typing.Optional[float] = None,
+        coordinate3: typing.Optional[float] = None,
         coordinates: tuple = (),
-        offset1: float = None,
-        offset2: float = None,
-        offset3: float = None,
-        localCsys: DatumCsys = None,
+        offset1: typing.Optional[float] = None,
+        offset2: typing.Optional[float] = None,
+        offset3: typing.Optional[float] = None,
+        localCsys: typing.Optional[DatumCsys] = None,
         projectToGeometry: Boolean = ON,
     ):
         """This method changes the coordinates of the given nodes on an orphan mesh part or on an
@@ -233,7 +233,7 @@ class MeshEditPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def generateMesh(self, elemShape: SymbolicConstant = None):
+    def generateMesh(self, elemShape: typing.Optional[SymbolicConstant] = None):
         """This method generates a new mesh on an orphan mesh part based on the original mesh.
 
         Parameters
@@ -323,7 +323,7 @@ class MeshEditPart(PartBase):
     def mergeNodes(
         self,
         nodes: typing.Tuple[Node, ...],
-        tolerance: float = None,
+        tolerance: typing.Optional[float] = None,
         removeDuplicateElements: Boolean = True,
         keepHighLabels: Boolean = False,
     ):
@@ -405,9 +405,9 @@ class MeshEditPart(PartBase):
     def renumberElement(
         self,
         elements: tuple = (),
-        startLabel: int = None,
-        increment: int = None,
-        offset: int = None,
+        startLabel: typing.Optional[int] = None,
+        increment: typing.Optional[int] = None,
+        offset: typing.Optional[int] = None,
         labels: str = "",
     ):
         """This method assigns new labels to orphan mesh elements.
@@ -445,9 +445,9 @@ class MeshEditPart(PartBase):
     def renumberNode(
         self,
         nodes: tuple = (),
-        startLabel: int = None,
-        increment: int = None,
-        offset: int = None,
+        startLabel: typing.Optional[int] = None,
+        increment: typing.Optional[int] = None,
+        offset: typing.Optional[int] = None,
         labels: str = "",
     ):
         """This method assigns new labels to orphan mesh nodes.
@@ -525,8 +525,8 @@ class MeshEditPart(PartBase):
         self,
         elements: str = "",
         divisionNumber: int = 2,
-        face: MeshFace = None,
-        edge: MeshEdge = None,
+        face: typing.Optional[MeshFace] = None,
+        edge: typing.Optional[MeshEdge] = None,
     ):
         """Subdivide a selection of elements on an orphan mesh part in one or more directions.
 

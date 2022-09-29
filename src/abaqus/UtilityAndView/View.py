@@ -25,16 +25,16 @@ class View:
     #: A Float specifying the width in viewport millimeters of the bounding rectangle around
     #: the viewport contents. This value does not include annotations or symbols and it is not
     #: clipped to the size of the viewport window.
-    displayedObjectScreenWidth: float = None
+    displayedObjectScreenWidth: typing.Optional[float] = None
 
     #: A Float specifying the height in viewport millimeters of the bounding rectangle around
     #: the viewport contents. This value does not include annotations or symbols and it is not
     #: clipped to the size of the viewport window.
-    displayedObjectScreenHeight: float = None
+    displayedObjectScreenHeight: typing.Optional[float] = None
 
     #: A tuple of Floats specifying a transformation matrix used to position the contents of
     #: the Layer within a viewport.
-    layerTransform: float = None
+    layerTransform: typing.Optional[float] = None
 
     #: A String specifying the name of the view (also used as the repository key). Possible
     #: values are 'Front', 'Back', 'Top', 'Bottom', 'Left', 'Right', 'Iso', 'User-1', 'User-2',
@@ -297,7 +297,7 @@ class View:
     def setLayerTransform(
         self,
         layerTransform: tuple = (),
-        options: "View" = None,
+        options: typing.Optional["View"] = None,
         drawImmediately: Boolean = False,
     ):
         """This method modifies the transformation used to position a Layer.

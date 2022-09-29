@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Interaction import Interaction
 from ..Region.Region import Region
@@ -39,7 +40,7 @@ class ModelChange(Interaction):
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the elements to be removed or reactivated. This argument is
     #: valid only when **isRestart** = False.
-    region: Region = None
+    region: typing.Optional[Region] = None
 
     #: A Boolean specifying whether elements are being removed or reactivated. This argument is
     #: valid only when **isRestart** = False. The default value is OFF.
@@ -57,7 +58,7 @@ class ModelChange(Interaction):
         createStepName: str,
         isRestart: Boolean = OFF,
         regionType: SymbolicConstant = GEOMETRY,
-        region: Region = None,
+        region: typing.Optional[Region] = None,
         activeInStep: Boolean = OFF,
         includeStrain: Boolean = OFF,
     ):
@@ -105,7 +106,7 @@ class ModelChange(Interaction):
         self,
         isRestart: Boolean = OFF,
         regionType: SymbolicConstant = GEOMETRY,
-        region: Region = None,
+        region: typing.Optional[Region] = None,
         activeInStep: Boolean = OFF,
         includeStrain: Boolean = OFF,
     ):

@@ -34,7 +34,7 @@ class XYPlotBase:
 
     #: A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
     #: of the active Chart object of this XYPlot.
-    transform: float = None
+    transform: typing.Optional[float] = None
 
     @abaqus_method_doc
     def __init__(self, name: str):

@@ -47,7 +47,7 @@ class NormalBehavior:
 
     #: None or a Float specifying the maximum stiffness. If **maxStiffness** = None, there is no
     #: upper limit. The default value is None.
-    maxStiffness: float = None
+    maxStiffness: typing.Optional[float] = None
 
     #: A sequence of sequences of Floats specifying the normal behavior properties. This
     #: argument is valid only for **pressureOverclosure** = EXPONENTIAL or TABULAR. The items in
@@ -108,7 +108,7 @@ class NormalBehavior:
         contactStiffness: typing.Union[SymbolicConstant, float] = DEFAULT,
         pressureOverclosure: SymbolicConstant = HARD,
         allowSeparation: Boolean = ON,
-        maxStiffness: float = None,
+        maxStiffness: typing.Optional[float] = None,
         table: tuple = (),
         constraintEnforcementMethod: SymbolicConstant = DEFAULT,
         overclosureFactor: float = 0,

@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .DesignResponse import DesignResponse
 from .StepOptionArray import StepOptionArray
@@ -25,11 +26,11 @@ class SingleTermDesignResponse(DesignResponse):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: int = None
+    csys: typing.Optional[int] = None
 
     #: None or a sequence of Floats specifying the driving region used when **identifier** is an
     #: internal nodal variable. The default value is None.
-    drivingRegion: str = None
+    drivingRegion: typing.Optional[str] = None
 
     #: A SymbolicConstant specifying the operation used on values in the region. Possible
     #: values are MAXIMUM, MINIMUM, and SUM. The default value is SUM.
@@ -48,20 +49,20 @@ class SingleTermDesignResponse(DesignResponse):
     stepOperation: SymbolicConstant = SUM
 
     #: A :py:class:`~abaqus.Optimization.StepOptionArray.StepOptionArray` object.
-    stepOptions: StepOptionArray = None
+    stepOptions: typing.Optional[StepOptionArray] = None
 
     @abaqus_method_doc
     def __init__(
         self,
         name: str,
         identifier: str,
-        csys: int = None,
-        drivingRegion: str = None,
+        csys: typing.Optional[int] = None,
+        drivingRegion: typing.Optional[str] = None,
         operation: SymbolicConstant = SUM,
         region: SymbolicConstant = MODEL,
         shellLayer: SymbolicConstant = MAXIMUM,
         stepOperation: SymbolicConstant = SUM,
-        stepOptions: StepOptionArray = None,
+        stepOptions: typing.Optional[StepOptionArray] = None,
     ):
         """This method creates a SingleTermDesignResponse object.
 
@@ -108,13 +109,13 @@ class SingleTermDesignResponse(DesignResponse):
     @abaqus_method_doc
     def setValues(
         self,
-        csys: int = None,
-        drivingRegion: str = None,
+        csys: typing.Optional[int] = None,
+        drivingRegion: typing.Optional[str] = None,
         operation: SymbolicConstant = SUM,
         region: SymbolicConstant = MODEL,
         shellLayer: SymbolicConstant = MAXIMUM,
         stepOperation: SymbolicConstant = SUM,
-        stepOptions: StepOptionArray = None,
+        stepOptions: typing.Optional[StepOptionArray] = None,
     ):
         """This method modifies the SingleTermDesignResponse object.
 

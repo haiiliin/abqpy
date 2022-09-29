@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ExpContactControl import ExpContactControl
 from .StdContactControl import StdContactControl
@@ -12,7 +13,7 @@ class InteractionContactControlModel(ModelBase):
         self,
         name: str,
         globTrkChoice: SymbolicConstant = DEFAULT,
-        globTrkInc: int = None,
+        globTrkInc: typing.Optional[int] = None,
         fastLocalTrk: Boolean = ON,
         scalePenalty: float = 1,
         warpCheckPeriod: int = 20,
@@ -77,9 +78,9 @@ class InteractionContactControlModel(ModelBase):
         name: str,
         stiffnessScaleFactor: float = 1,
         penetrationTolChoice: SymbolicConstant = RELATIVE,
-        relativePenetrationTolerance: float = None,
-        absolutePenetrationTolerance: float = None,
-        frictionOnset: SymbolicConstant = None,
+        relativePenetrationTolerance: typing.Optional[float] = None,
+        absolutePenetrationTolerance: typing.Optional[float] = None,
+        frictionOnset: typing.Optional[SymbolicConstant] = None,
         automaticTolerances: Boolean = OFF,
         maxchp: int = 0,
         perrmx: float = 0,
@@ -90,7 +91,7 @@ class InteractionContactControlModel(ModelBase):
         tangFraction: float = 1,
         eosFraction: float = 0,
         zeroDampingChoice: SymbolicConstant = COMPUTE,
-        zeroDamping: float = None,
+        zeroDamping: typing.Optional[float] = None,
         enforceWithLagrangeMultipliers: SymbolicConstant = DEFAULT,
     ) -> StdContactControl:
         """This method creates an StdContactControl object.

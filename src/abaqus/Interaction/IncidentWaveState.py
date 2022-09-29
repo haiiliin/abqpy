@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from .InteractionState import InteractionState
 from ..UtilityAndView.abaqusConstants import *
@@ -25,4 +26,4 @@ class IncidentWaveState(InteractionState):
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values
     #: are:NOT_YET_ACTIVECREATEDPROPAGATEDMODIFIEDDEACTIVATEDNO_LONGER_ACTIVETYPE_NOT_APPLICABLEINSTANCE_NOT_APPLICABLEBUILT_INTO_BASE_STATE
-    status: SymbolicConstant = None
+    status: typing.Optional[SymbolicConstant] = None

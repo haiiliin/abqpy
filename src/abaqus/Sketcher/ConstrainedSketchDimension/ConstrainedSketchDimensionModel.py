@@ -29,7 +29,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         line1: ConstrainedSketchGeometry,
         line2: ConstrainedSketchGeometry,
         textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        value: typing.Optional[float] = None,
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension object between two
@@ -67,7 +67,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
         textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        value: typing.Optional[float] = None,
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension object between two vertices. A
@@ -106,7 +106,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
         textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        value: typing.Optional[float] = None,
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension object between two vertices. An
@@ -143,10 +143,10 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         curve: ConstrainedSketchGeometry,
         textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        value: typing.Optional[float] = None,
         reference: Boolean = OFF,
-        majorRadius: float = None,
-        minorRadius: float = None,
+        majorRadius: typing.Optional[float] = None,
+        minorRadius: typing.Optional[float] = None,
     ):
         """This method constructs a ConstrainedSketchDimension object on a circular or elliptical
         arc. A radial dimension indicates the radius of an arc or circle or the major or minor
@@ -188,7 +188,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
         textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        value: typing.Optional[float] = None,
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension between two vertices. A vertical
@@ -226,7 +226,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         entity1: ConstrainedSketchVertex,
         entity2: ConstrainedSketchVertex,
         textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        value: typing.Optional[float] = None,
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension object between two

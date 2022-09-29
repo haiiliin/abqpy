@@ -63,7 +63,7 @@ class ExplicitDynamicsStep(AnalysisStep):
     #: None or a Float specifying the maximum time increment. If there is no upper limit,
     #: **maxIncrement** = None. This argument is required only when
     #: **timeIncrementationMethod** = AUTOMATIC_GLOBAL or AUTOMATIC_EBE. The default value is None.
-    maxIncrement: float = None
+    maxIncrement: typing.Optional[float] = None
 
     #: A Float specifying the factor that is used to scale the time increment. This argument is
     #: required only when **timeIncrementationMethod** = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
@@ -79,7 +79,7 @@ class ExplicitDynamicsStep(AnalysisStep):
 
     #: None or a Float specifying the user-defined time increment. This argument is required
     #: only when **timeIncrementationMethod** = FIXED_USER_DEFINED_INC. The default value is None.
-    userDefinedInc: float = None
+    userDefinedInc: typing.Optional[float] = None
 
     #: A Boolean specifying whether to use the "improved" (*improvedDtMethod* = ON) or
     #: "conservative" (*improvedDtMethod* = OFF) method to estimate the element stable time
@@ -104,7 +104,7 @@ class ExplicitDynamicsStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: SymbolicConstant = None
+    explicit: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -140,7 +140,7 @@ class ExplicitDynamicsStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: SymbolicConstant = None
+    procedureType: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
@@ -155,7 +155,7 @@ class ExplicitDynamicsStep(AnalysisStep):
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
-    monitor: Monitor = None
+    monitor: typing.Optional[Monitor] = None
 
     #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
@@ -176,7 +176,7 @@ class ExplicitDynamicsStep(AnalysisStep):
     boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: int = None
+    interactionStates: typing.Optional[int] = None
 
     #: A repository of LoadState objects.
     loadStates: typing.Dict[str, LoadState] = {}
@@ -197,12 +197,12 @@ class ExplicitDynamicsStep(AnalysisStep):
         nlgeom: Boolean = ON,
         adiabatic: Boolean = OFF,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC_GLOBAL,
-        maxIncrement: float = None,
+        maxIncrement: typing.Optional[float] = None,
         scaleFactor: float = 1,
         massScaling: MassScalingArray = PREVIOUS_STEP,
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
-        userDefinedInc: float = None,
+        userDefinedInc: typing.Optional[float] = None,
         maintainAttributes: Boolean = False,
         improvedDtMethod: Boolean = ON,
     ):
@@ -285,12 +285,12 @@ class ExplicitDynamicsStep(AnalysisStep):
         nlgeom: Boolean = ON,
         adiabatic: Boolean = OFF,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC_GLOBAL,
-        maxIncrement: float = None,
+        maxIncrement: typing.Optional[float] = None,
         scaleFactor: float = 1,
         massScaling: MassScalingArray = PREVIOUS_STEP,
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
-        userDefinedInc: float = None,
+        userDefinedInc: typing.Optional[float] = None,
         improvedDtMethod: Boolean = ON,
     ):
         """This method modifies the ExplicitDynamicsStep object.

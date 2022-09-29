@@ -41,7 +41,7 @@ class AnnealStep(AnalysisStep):
 
     #: A Float specifying the post-anneal reference temperature. The default value is the
     #: current temperature at all nodes in the model after the annealing has completed.
-    refTemp: float = None
+    refTemp: typing.Optional[float] = None
 
     #: A String specifying the name of the previous step. The new step appears after this step
     #: in the list of analysis steps.
@@ -52,7 +52,7 @@ class AnnealStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: SymbolicConstant = None
+    explicit: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -88,7 +88,7 @@ class AnnealStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: SymbolicConstant = None
+    procedureType: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
@@ -103,7 +103,7 @@ class AnnealStep(AnalysisStep):
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
-    monitor: Monitor = None
+    monitor: typing.Optional[Monitor] = None
 
     #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
@@ -124,7 +124,7 @@ class AnnealStep(AnalysisStep):
     boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: int = None
+    interactionStates: typing.Optional[int] = None
 
     #: A repository of LoadState objects.
     loadStates: typing.Dict[str, LoadState] = {}
@@ -141,7 +141,7 @@ class AnnealStep(AnalysisStep):
         name: str,
         previous: str,
         description: str = "",
-        refTemp: float = None,
+        refTemp: typing.Optional[float] = None,
         maintainAttributes: Boolean = False,
     ):
         """This method creates an AnnealStep object.
@@ -179,7 +179,7 @@ class AnnealStep(AnalysisStep):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(self, description: str = "", refTemp: float = None):
+    def setValues(self, description: str = "", refTemp: typing.Optional[float] = None):
         """This method modifies the AnnealStep object.
 
         Parameters

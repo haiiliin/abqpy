@@ -89,7 +89,7 @@ class Set(Region):
         name: str,
         nodes: typing.Tuple[MeshNode, ...] = None,
         elements: typing.Tuple[MeshElement, ...] = None,
-        region: Region = None,
+        region: typing.Optional[Region] = None,
         vertices: typing.Tuple[Vertex, ...] = None,
         edges: typing.Tuple[Edge, ...] = None,
         faces: typing.Tuple[Face, ...] = None,

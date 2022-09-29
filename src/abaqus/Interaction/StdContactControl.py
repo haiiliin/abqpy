@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactControl import ContactControl
 from ..UtilityAndView.abaqusConstants import *
@@ -41,7 +42,7 @@ class StdContactControl(ContactControl):
     #: by this argument. The default value is 10-3.The **relativePenetrationTolerance** argument
     #: applies only when **penetrationTolChoice** = RELATIVE. The **relativePenetrationTolerance**
     #: and **absolutePenetrationTolerance** arguments are mutually exclusive.
-    relativePenetrationTolerance: float = None
+    relativePenetrationTolerance: typing.Optional[float] = None
 
     #: None or a Float specifying the allowable penetration. Only contact interactions defined
     #: with augmented Lagrangian surface behavior will be affected by this argument. The
@@ -49,7 +50,7 @@ class StdContactControl(ContactControl):
     #: **penetrationTolChoice** = ABSOLUTE. The **relativePenetrationTolerance** and
     #: **absolutePenetrationTolerance** arguments are mutually exclusive. The default value is
     #: None.
-    absolutePenetrationTolerance: float = None
+    absolutePenetrationTolerance: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying when the application of friction occurs. Possible values
     #: are:
@@ -58,7 +59,7 @@ class StdContactControl(ContactControl):
     #: - DELAYED, specifying the application of friction is delayed until the increment after
     #: 
     #: contact occurs.
-    frictionOnset: SymbolicConstant = None
+    frictionOnset: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether Abaqus/Standard should automatically compute an overclosure
     #: tolerance and a separation tolerance to prevent chattering in contact. The default value
@@ -117,7 +118,7 @@ class StdContactControl(ContactControl):
     #: None or a Float specifying the clearance at which damping becomes zero. This argument is
     #: valid only when **zeroDampingChoice** = SPECIFY. This argument is valid only if
     #: **stabilizeChoice** = AUTOMATIC or COEFFICIENT. The default value is None.
-    zeroDamping: float = None
+    zeroDamping: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying whether to enforce the contact constraints with Lagrange
     #: multipliers. Possible values are DEFAULT, ENFORCEMENT_OFF, and ENFORCEMENT_ON. The
@@ -130,9 +131,9 @@ class StdContactControl(ContactControl):
         name: str,
         stiffnessScaleFactor: float = 1,
         penetrationTolChoice: SymbolicConstant = RELATIVE,
-        relativePenetrationTolerance: float = None,
-        absolutePenetrationTolerance: float = None,
-        frictionOnset: SymbolicConstant = None,
+        relativePenetrationTolerance: typing.Optional[float] = None,
+        absolutePenetrationTolerance: typing.Optional[float] = None,
+        frictionOnset: typing.Optional[SymbolicConstant] = None,
         automaticTolerances: Boolean = OFF,
         maxchp: int = 0,
         perrmx: float = 0,
@@ -143,7 +144,7 @@ class StdContactControl(ContactControl):
         tangFraction: float = 1,
         eosFraction: float = 0,
         zeroDampingChoice: SymbolicConstant = COMPUTE,
-        zeroDamping: float = None,
+        zeroDamping: typing.Optional[float] = None,
         enforceWithLagrangeMultipliers: SymbolicConstant = DEFAULT,
     ):
         """This method creates an StdContactControl object.
@@ -256,9 +257,9 @@ class StdContactControl(ContactControl):
         self,
         stiffnessScaleFactor: float = 1,
         penetrationTolChoice: SymbolicConstant = RELATIVE,
-        relativePenetrationTolerance: float = None,
-        absolutePenetrationTolerance: float = None,
-        frictionOnset: SymbolicConstant = None,
+        relativePenetrationTolerance: typing.Optional[float] = None,
+        absolutePenetrationTolerance: typing.Optional[float] = None,
+        frictionOnset: typing.Optional[SymbolicConstant] = None,
         automaticTolerances: Boolean = OFF,
         maxchp: int = 0,
         perrmx: float = 0,
@@ -269,7 +270,7 @@ class StdContactControl(ContactControl):
         tangFraction: float = 1,
         eosFraction: float = 0,
         zeroDampingChoice: SymbolicConstant = COMPUTE,
-        zeroDamping: float = None,
+        zeroDamping: typing.Optional[float] = None,
         enforceWithLagrangeMultipliers: SymbolicConstant = DEFAULT,
     ):
         """This method modifies the StdContactControl object.

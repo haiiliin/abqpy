@@ -37,7 +37,7 @@ class Face:
     """
 
     #: An Int specifying the index of the face in the FaceArray.
-    index: int = None
+    index: typing.Optional[int] = None
 
     #: A Boolean specifying whether the face belongs to the reference representation of the
     #: Part or Instance.
@@ -47,14 +47,14 @@ class Face:
     #: specifies the **X**-, **Y**-, and **Z**-coordinates of a point located on the face and the
     #: **X**-, **Y**-, and **Z**-components of the normal to the face.For a face of a solid **pointOn**
     #: specifies the **X**-, **Y**-, and **Z**-coordinates of a point located on the face.
-    pointOn: float = None
+    pointOn: typing.Optional[float] = None
 
     #: A tuple of Floats specifying the name of the feature that created this face.
-    featureName: float = None
+    featureName: typing.Optional[float] = None
 
     #: A tuple of Floats specifying the name of the part instance for this face (if
     #: applicable).
-    instanceName: float = None
+    instanceName: typing.Optional[float] = None
 
     @abaqus_method_doc
     def getCentroid(self):

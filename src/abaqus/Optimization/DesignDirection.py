@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
@@ -27,14 +28,14 @@ class DesignDirection(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: int = None
+    csys: typing.Optional[int] = None
 
     #: None or a Region object specifying the main point used when **mainPointDetermination** is
     #: SPECIFY. The default value is None.
     #:
     #: .. versionchanged:: 2022
     #:    The attribute `masterPoint` was renamed to `mainPoint`.
-    mainPoint: str = None
+    mainPoint: typing.Optional[str] = None
 
     #: A SymbolicConstant specifying the rule for assigning point priority. Possible values are
     #: MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
@@ -73,8 +74,8 @@ class DesignDirection(GeometricRestriction):
         self,
         name: str,
         region: Region,
-        csys: int = None,
-        mainPoint: str = None,
+        csys: typing.Optional[int] = None,
+        mainPoint: typing.Optional[str] = None,
         mainPointDetermination: SymbolicConstant = MAXIMUM,
         movementRestriction: SymbolicConstant = VECTOR,
         presumeFeasibleRegionAtStart: Boolean = ON,
@@ -144,8 +145,8 @@ class DesignDirection(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
-        csys: int = None,
-        mainPoint: str = None,
+        csys: typing.Optional[int] = None,
+        mainPoint: typing.Optional[str] = None,
         mainPointDetermination: SymbolicConstant = MAXIMUM,
         movementRestriction: SymbolicConstant = VECTOR,
         presumeFeasibleRegionAtStart: Boolean = ON,

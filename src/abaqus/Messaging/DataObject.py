@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -12,61 +13,61 @@ class DataObject:
     #: A SymbolicConstant specifying the phase of the analysis. Possible values are
     #: BATCHPRE_PHASE, PACKAGER_PHASE, STANDARD_PHASE, EXPLICIT_PHASE, CALCULATOR_PHASE, and
     #: UNKNOWN_PHASE.
-    phase: SymbolicConstant = None
+    phase: typing.Optional[SymbolicConstant] = None
 
     #: An Int specifying the process ID of the analysis product.
-    processId: int = None
+    processId: typing.Optional[int] = None
 
     #: An Int specifying the thread ID of the analysis product. Threads are used for parallel
     #: or multiprocessing; in most cases **threadId** is set to zero.
-    threadId: int = None
+    threadId: typing.Optional[int] = None
 
     #: An Int specifying the time the message was sent in seconds since 00:00:00 UTC, January
     #: 1, 1970.
-    timeStamp: int = None
+    timeStamp: typing.Optional[int] = None
 
     #: An Int specifying the number of attempts made to reach equilibrium during this step.
-    attempts: int = None
+    attempts: typing.Optional[int] = None
 
     #: An Int specifying the degree of freedom requested for monitoring the output.
-    dof: int = None
+    dof: typing.Optional[int] = None
 
     #: An Int specifying the number of equilibrium iterations made during this increment.
-    equilibrium: int = None
+    equilibrium: typing.Optional[int] = None
 
     #: An Int specifying the increment of the analysis.
-    increment: int = None
+    increment: typing.Optional[int] = None
 
     #: An Int specifying the number of iterations in the step.
-    iterations: int = None
+    iterations: typing.Optional[int] = None
 
     #: An Int specifying the node number requested for monitoring output.
-    node: int = None
+    node: typing.Optional[int] = None
 
     #: An Int specifying the number of severe discontinuity iterations completed during this
     #: increment.
-    severe: int = None
+    severe: typing.Optional[int] = None
 
     #: An Int specifying the current step number. Step number 1 corresponds to the first step.
-    step: int = None
+    step: typing.Optional[int] = None
 
     #: An Int specifying the ID of the step.
-    stepId: int = None
+    stepId: typing.Optional[int] = None
 
     #: A Float specifying the step time corresponding to the current increment.
-    stepTime: float = None
+    stepTime: typing.Optional[float] = None
 
     #: A Float specifying the total time corresponding to the monitor data.
-    time: float = None
+    time: typing.Optional[float] = None
 
     #: A Float specifying the time increment used in the current step.
-    timeIncrement: float = None
+    timeIncrement: typing.Optional[float] = None
 
     #: A Float specifying the total time completed in the analysis.
-    totalTime: float = None
+    totalTime: typing.Optional[float] = None
 
     #: A Float specifying the current value of the degree of freedom requested for monitoring.
-    value: float = None
+    value: typing.Optional[float] = None
 
     #: A String specifying the host name of the machine that is running the analysis.
     clientHost: str = ""

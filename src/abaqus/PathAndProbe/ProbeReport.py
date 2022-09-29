@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -21,7 +22,7 @@ class ProbeReport:
     @abaqus_method_doc
     def setValues(
         self,
-        options: str = None,
+        options: typing.Optional[str] = None,
         numColumns: int = 80,
         numDigits: int = 6,
         numFormat: SymbolicConstant = ENGINEERING,

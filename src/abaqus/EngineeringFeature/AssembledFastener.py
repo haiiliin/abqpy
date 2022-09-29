@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Fastener import Fastener
 from ..Region.Region import Region
@@ -57,7 +58,7 @@ class AssembledFastener(Fastener):
     #: None or a DatumCsys object specifying the local coordinate system. If **localCsys** = None,
     #: the global coordinate system is used. When this member is queried, it returns an Int.
     #: The default value is None.This argument applies only when **orientMethod** = CSYS.
-    localCsys: int = None
+    localCsys: typing.Optional[int] = None
 
     #: A String specifying the name of the property generation script. The default value is an
     #: empty string.
@@ -74,7 +75,7 @@ class AssembledFastener(Fastener):
         assignedSurfaces: tuple,
         propertyPrefix: str,
         orientMethod: SymbolicConstant = NORMALS,
-        localCsys: int = None,
+        localCsys: typing.Optional[int] = None,
         scriptName: str = "",
     ):
         """This method creates an AssembledFastener object. Although the constructor is available
@@ -132,7 +133,7 @@ class AssembledFastener(Fastener):
     def setValues(
         self,
         orientMethod: SymbolicConstant = NORMALS,
-        localCsys: int = None,
+        localCsys: typing.Optional[int] = None,
         scriptName: str = "",
     ):
         """This method modifies the AssembledFastener object.

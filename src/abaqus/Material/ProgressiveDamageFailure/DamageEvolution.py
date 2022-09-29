@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ...UtilityAndView.abaqusConstants import *
 
@@ -162,7 +163,7 @@ class DamageEvolution:
         dependencies: int = 0,
         mixedModeBehavior: SymbolicConstant = MODE_INDEPENDENT,
         modeMixRatio: SymbolicConstant = ENERGY,
-        power: float = None,
+        power: typing.Optional[float] = None,
         softening: SymbolicConstant = LINEAR,
     ):
         """This method creates a DamageEvolution object.

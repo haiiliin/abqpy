@@ -254,7 +254,7 @@ class Arrow(Annotation, _OptionsBase):
         self.lineThickness = lineThickness
 
     @abaqus_method_doc
-    def translateStartPoint(self, x: float = None, y: float = None):
+    def translateStartPoint(self, x: typing.Optional[float] = None, y: typing.Optional[float] = None):
         """This method translates the start point of the Arrow object on the viewport plane.
 
         Parameters
@@ -269,7 +269,7 @@ class Arrow(Annotation, _OptionsBase):
         ...
 
     @abaqus_method_doc
-    def translateEndPoint(self, x: float = None, y: float = None):
+    def translateEndPoint(self, x: typing.Optional[float] = None, y: typing.Optional[float] = None):
         """This method translates the end point of the Arrow object on the viewport plane.
 
         Parameters

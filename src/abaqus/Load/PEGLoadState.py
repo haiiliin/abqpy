@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from .LoadState import LoadState
 from ..UtilityAndView.abaqusConstants import *
@@ -23,29 +24,29 @@ class PEGLoadState(LoadState):
     """
 
     #: A Float or a Complex specifying the load component at dof 1 of reference node 1.
-    comp1: float = None
+    comp1: typing.Optional[float] = None
 
     #: A Float or a Complex specifying the load component at dof 1 of reference node 2.
-    comp2: float = None
+    comp2: typing.Optional[float] = None
 
     #: A Float or a Complex specifying the load component at dof 2 of reference node 2.
-    comp3: float = None
+    comp3: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the load component at dof 1 of
     #: reference node 1. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    comp1State: SymbolicConstant = None
+    comp1State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the load component at dof 1 of
     #: reference node 2. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    comp2State: SymbolicConstant = None
+    comp2State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the load component at dof 2 of
     #: reference node 2. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    comp3State: SymbolicConstant = None
+    comp3State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    amplitudeState: SymbolicConstant = None
+    amplitudeState: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
     #: values are:
@@ -59,7 +60,7 @@ class PEGLoadState(LoadState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: SymbolicConstant = None
+    status: typing.Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the amplitude reference. The String is empty if the load
     #: has no amplitude reference.

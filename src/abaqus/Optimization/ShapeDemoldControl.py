@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
@@ -37,7 +38,7 @@ class ShapeDemoldControl(GeometricRestriction):
     #: **pullDirection**. If **csys** = None, the global coordinate system is used. When this member
     #: is queried, it returns an Int indicating the identifier of the DatumCsys. The default
     #: value is None.
-    csys: int = None
+    csys: typing.Optional[int] = None
 
     #: A Float specifying the draw angle. The default value is 0.0.
     drawAngle: float = 0
@@ -75,7 +76,7 @@ class ShapeDemoldControl(GeometricRestriction):
         pullDirection: tuple,
         region: Region,
         collisionCheckRegion: SymbolicConstant = DEMOLD_REGION,
-        csys: int = None,
+        csys: typing.Optional[int] = None,
         drawAngle: float = 0,
         mainPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
@@ -145,7 +146,7 @@ class ShapeDemoldControl(GeometricRestriction):
     def setValues(
         self,
         collisionCheckRegion: SymbolicConstant = DEMOLD_REGION,
-        csys: int = None,
+        csys: typing.Optional[int] = None,
         drawAngle: float = 0,
         mainPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,

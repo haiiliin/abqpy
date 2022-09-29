@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from .LoadState import LoadState
 from ..UtilityAndView.abaqusConstants import *
@@ -24,34 +25,34 @@ class ConnectorForceState(LoadState):
 
     #: A Float or a Complex specifying the connector force component in the connector's local
     #: 1-direction.
-    f1: float = None
+    f1: typing.Optional[float] = None
 
     #: A Float or a Complex specifying the connector force component in the connector's local
     #: 2-direction.
-    f2: float = None
+    f2: typing.Optional[float] = None
 
     #: A Float or a Complex specifying the connector force component in the connector's local
     #: 3-direction.
-    f3: float = None
+    f3: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the connector force component in
     #: the connector's local 1-direction. Possible values are UNSET, SET, UNCHANGED, and
     #: MODIFIED.
-    f1State: SymbolicConstant = None
+    f1State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the connector force component in
     #: the connector's local 2-direction. Possible values are UNSET, SET, UNCHANGED, and
     #: MODIFIED.
-    f2State: SymbolicConstant = None
+    f2State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the connector force component in
     #: the connector's local 3-direction. Possible values are UNSET, SET, UNCHANGED, and
     #: MODIFIED.
-    f3State: SymbolicConstant = None
+    f3State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    amplitudeState: SymbolicConstant = None
+    amplitudeState: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
     #: values are:
@@ -65,7 +66,7 @@ class ConnectorForceState(LoadState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: SymbolicConstant = None
+    status: typing.Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the amplitude reference. The String is empty if the load
     #: has no amplitude reference.

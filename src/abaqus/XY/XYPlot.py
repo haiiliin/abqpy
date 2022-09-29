@@ -97,7 +97,7 @@ class XYPlot(XYPlotBase):
 
     @staticmethod
     @abaqus_method_doc
-    def QuantityType(label: str = "", type: SymbolicConstant = None) -> QuantityType:
+    def QuantityType(label: str = "", type: typing.Optional[SymbolicConstant] = None) -> QuantityType:
         """This method creates a QuantityType object.
 
         .. note:: 
@@ -305,8 +305,8 @@ class XYPlot(XYPlotBase):
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: QuantityType = None,
-        axis2QuantityType: QuantityType = None,
+        axis1QuantityType: typing.Optional[QuantityType] = None,
+        axis2QuantityType: typing.Optional[QuantityType] = None,
     ) -> XYData:
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 

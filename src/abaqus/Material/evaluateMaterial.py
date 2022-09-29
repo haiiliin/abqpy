@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_function_doc
 from .Material import Material
 from ..UtilityAndView.abaqusConstants import *
@@ -18,20 +19,20 @@ conditions.
 def evaluateMaterial(
     material: Material,
     simulationName: str,
-    dataSource: SymbolicConstant = None,
-    strainEnergyPotentials: SymbolicConstant = None,
-    marlowData: SymbolicConstant = None,
-    marlowDataType: SymbolicConstant = None,
-    testDataTypes: SymbolicConstant = None,
-    uniaxialStrainRange: float = None,
-    biaxialStrainRange: float = None,
-    planarStrainRange: float = None,
-    volumeRatioRange: float = None,
-    simpleShearStrainRange: float = None,
-    viscoDataSource: SymbolicConstant = None,
-    viscoTestDataTypes: SymbolicConstant = None,
-    relaxationTime: float = None,
-    creepTime: float = None,
+    dataSource: typing.Optional[SymbolicConstant] = None,
+    strainEnergyPotentials: typing.Optional[SymbolicConstant] = None,
+    marlowData: typing.Optional[SymbolicConstant] = None,
+    marlowDataType: typing.Optional[SymbolicConstant] = None,
+    testDataTypes: typing.Optional[SymbolicConstant] = None,
+    uniaxialStrainRange: typing.Optional[float] = None,
+    biaxialStrainRange: typing.Optional[float] = None,
+    planarStrainRange: typing.Optional[float] = None,
+    volumeRatioRange: typing.Optional[float] = None,
+    simpleShearStrainRange: typing.Optional[float] = None,
+    viscoDataSource: typing.Optional[SymbolicConstant] = None,
+    viscoTestDataTypes: typing.Optional[SymbolicConstant] = None,
+    relaxationTime: typing.Optional[float] = None,
+    creepTime: typing.Optional[float] = None,
 ):
     """This method evaluates the behavior of a hyperelastic material under standard test
     conditions.

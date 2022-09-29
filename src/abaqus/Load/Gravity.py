@@ -40,10 +40,10 @@ class Gravity(Load):
         createStepName: str,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
-        region: Region = None,
-        comp1: float = None,
-        comp2: float = None,
-        comp3: float = None,
+        region: typing.Optional[Region] = None,
+        comp1: typing.Optional[float] = None,
+        comp2: typing.Optional[float] = None,
+        comp3: typing.Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method creates a Gravity object.
@@ -93,10 +93,10 @@ class Gravity(Load):
         self,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
-        region: Region = None,
-        comp1: float = None,
-        comp2: float = None,
-        comp3: float = None,
+        region: typing.Optional[Region] = None,
+        comp1: typing.Optional[float] = None,
+        comp2: typing.Optional[float] = None,
+        comp3: typing.Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing Gravity object in the step where it is

@@ -46,7 +46,7 @@ class AdaptivityModel(ModelBase):
         name: str,
         category: SymbolicConstant,
         region: Region,
-        localCsys: DatumCsys = None,
+        localCsys: typing.Optional[DatumCsys] = None,
     ) -> AdaptiveMeshConstraint:
         """The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary
         Lagrangian Eularian (ALE) style AdaptiveMeshConstraint objects. The
@@ -198,7 +198,7 @@ class AdaptivityModel(ModelBase):
         ur3: typing.Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
         motionType: SymbolicConstant = INDEPENDENT,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
     ) -> DisplacementAdaptiveMeshConstraint:
         """This method creates a DisplacementAdaptiveMeshConstraint object.
 
@@ -296,7 +296,7 @@ class AdaptivityModel(ModelBase):
         specifyMaxSize: Boolean = ON,
         coarseningFactor: SymbolicConstant = DEFAULT_LIMIT,
         refinementFactor: SymbolicConstant = DEFAULT_LIMIT,
-        elementCountLimit: int = None,
+        elementCountLimit: typing.Optional[int] = None,
     ) -> RemeshingRule:
         """This method creates a RemeshingRule object.
 
@@ -413,7 +413,7 @@ class AdaptivityModel(ModelBase):
         vr2: typing.Union[SymbolicConstant, float] = UNSET,
         vr3: typing.Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
         motionType: SymbolicConstant = INDEPENDENT,
     ) -> VelocityAdaptiveMeshConstraint:
         """This method creates a VelocityAdaptiveMeshConstraint object.

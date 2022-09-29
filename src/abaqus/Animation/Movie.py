@@ -18,19 +18,19 @@ class Movie(_OptionsBase):
     """
 
     #: An Int specifying the width of the movie in pixels.
-    width: int = None
+    width: typing.Optional[int] = None
 
     #: An Int specifying the height of the movie in pixels.
-    height: int = None
+    height: typing.Optional[int] = None
 
     #: An Int specifying the total number of frames on the movie file.
-    numFrames: int = None
+    numFrames: typing.Optional[int] = None
 
     #: A Float specifying the duration of the movie in seconds.
-    duration: float = None
+    duration: typing.Optional[float] = None
 
     #: An Int specifying the memory taken by the movie frames as selected.
-    memory: int = None
+    memory: typing.Optional[int] = None
 
     #: A String specifying the repository name for the movie.
     name: str
@@ -45,7 +45,7 @@ class Movie(_OptionsBase):
 
     #: An Int specifying the last frame to be displayed from this movie. A negative number will
     #: indicate reverse numbering: -1 is the last frame of the movie. The default value is −1.
-    endFrame: int = None
+    endFrame: typing.Optional[int] = None
 
     #: An Int specifying the global timeline frame number that corresponds to **startFrame**. A
     #: value of 0 will indicate the first frame to be displayed in the viewport. The default
@@ -55,7 +55,7 @@ class Movie(_OptionsBase):
     #: An Int specifying the global timeline frame number that corresponds to **endFrame**. A
     #: negative number will indicate reverse numbering: -1 indicates the last frame to be
     #: displayed in the viewport. The default value is −1.
-    timelineEndFrame: int = None
+    timelineEndFrame: typing.Optional[int] = None
 
     #: A Float specifying the global timeline time that corresponds to the time of
     #: **startFrame**. The default value is 0.0.
@@ -72,9 +72,9 @@ class Movie(_OptionsBase):
         name: str,
         fileName: str,
         startFrame: int = 0,
-        endFrame: int = None,
+        endFrame: typing.Optional[int] = None,
         timelineStartFrame: int = 0,
-        timelineEndFrame: int = None,
+        timelineEndFrame: typing.Optional[int] = None,
         timelineStartTime: float = 0,
         timelineEndTime: typing.Union[SymbolicConstant, float] = END_FRAME_TIME,
     ):
@@ -141,9 +141,9 @@ class Movie(_OptionsBase):
     def setValues(
         self,
         startFrame: int = 0,
-        endFrame: int = None,
+        endFrame: typing.Optional[int] = None,
         timelineStartFrame: int = 0,
-        timelineEndFrame: int = None,
+        timelineEndFrame: typing.Optional[int] = None,
         timelineStartTime: float = 0,
         timelineEndTime: typing.Union[SymbolicConstant, float] = END_FRAME_TIME,
     ):

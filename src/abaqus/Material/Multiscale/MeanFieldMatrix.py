@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
@@ -23,7 +24,7 @@ class MeanFieldMatrix:
 
     @abaqus_method_doc
     def __init__(
-        self, name: str, material: str = "", isotropizationCoefficient: float = None
+        self, name: str, material: str = "", isotropizationCoefficient: typing.Optional[float] = None
     ):
         """This method creates a MeanFieldMatrix object.
 

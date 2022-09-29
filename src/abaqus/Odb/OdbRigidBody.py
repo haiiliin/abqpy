@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AnalyticSurface import AnalyticSurface
 from .OdbSet import OdbSet
@@ -46,7 +47,7 @@ class OdbRigidBody:
 
     #: An :py:class:`~abaqus.Odb.AnalyticSurface.AnalyticSurface` object specifying the analytic surface whose motion is governed by
     #: the motion of rigid body reference node.
-    analyticSurface: AnalyticSurface = None
+    analyticSurface: typing.Optional[AnalyticSurface] = None
 
     @abaqus_method_doc
     def __init__(
@@ -57,7 +58,7 @@ class OdbRigidBody:
         elements: OdbSet = OdbSet("set", ()),
         tieNodes: OdbSet = OdbSet("set", ()),
         pinNodes: OdbSet = OdbSet("set", ()),
-        analyticSurface: AnalyticSurface = None, 
+        analyticSurface: typing.Optional[AnalyticSurface] = None, 
     ):
         """This method creates a OdbRigidBody object.
 

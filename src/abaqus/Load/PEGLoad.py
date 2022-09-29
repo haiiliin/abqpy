@@ -41,9 +41,9 @@ class PEGLoad(Load):
         region: Region,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
-        comp1: float = None,
-        comp2: float = None,
-        comp3: float = None,
+        comp1: typing.Optional[float] = None,
+        comp2: typing.Optional[float] = None,
+        comp3: typing.Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method creates a PEGLoad object.
@@ -93,9 +93,9 @@ class PEGLoad(Load):
         self,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
-        comp1: float = None,
-        comp2: float = None,
-        comp3: float = None,
+        comp1: typing.Optional[float] = None,
+        comp2: typing.Optional[float] = None,
+        comp3: typing.Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing PEGLoad object in the step where it is

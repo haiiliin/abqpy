@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .StdStabilization import StdStabilization
 from ..Model.ModelBase import ModelBase
@@ -11,7 +12,7 @@ class InteractionContactStabilizationModel(ModelBase):
     def StdStabilization(
         self,
         name: str,
-        zeroDistance: float = None,
+        zeroDistance: typing.Optional[float] = None,
         reductionFactor: float = 0,
         scaleFactor: float = 1,
         tangentialFactor: float = 0,

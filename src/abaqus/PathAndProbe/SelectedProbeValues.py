@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -15,14 +16,14 @@ class SelectedProbeValues:
     """
 
     #: An Int specifying the length of the **values** member.
-    length: int = None
+    length: typing.Optional[int] = None
 
     #: A Boolean specifying whether any probe values have been selected (as is necessary prior
     #: to writing to a file).
     fieldOutputAvailable: Boolean = OFF
 
     #: A tuple of tuples of Floats specifying the selected probe values.
-    values: float = None
+    values: typing.Optional[float] = None
 
     #: A tuple of Floats specifying the last sequence of the **values** member.
     lastValues: tuple = ()

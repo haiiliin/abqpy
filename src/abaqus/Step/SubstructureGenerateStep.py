@@ -106,7 +106,7 @@ class SubstructureGenerateStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: SymbolicConstant = None
+    explicit: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -142,7 +142,7 @@ class SubstructureGenerateStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: SymbolicConstant = None
+    procedureType: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
@@ -157,7 +157,7 @@ class SubstructureGenerateStep(AnalysisStep):
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
-    monitor: Monitor = None
+    monitor: typing.Optional[Monitor] = None
 
     #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
@@ -178,7 +178,7 @@ class SubstructureGenerateStep(AnalysisStep):
     boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: int = None
+    interactionStates: typing.Optional[int] = None
 
     #: A repository of LoadState objects.
     loadStates: typing.Dict[str, LoadState] = {}
@@ -197,7 +197,7 @@ class SubstructureGenerateStep(AnalysisStep):
         substructureIdentifier: int,
         description: str = "",
         recoveryMatrix: SymbolicConstant = WHOLE_MODEL,
-        recoveryRegion: Region = None,
+        recoveryRegion: typing.Optional[Region] = None,
         computeGravityLoadVectors: Boolean = False,
         computeReducedMassMatrix: Boolean = False,
         computeReducedStructuralDampingMatrix: Boolean = False,
@@ -205,8 +205,8 @@ class SubstructureGenerateStep(AnalysisStep):
         evaluateFrequencyDependentProperties: Boolean = False,
         frequency: float = 0,
         retainedEigenmodesMethod: SymbolicConstant = NONE,
-        modeRange: SubstructureGenerateModesArray = None,
-        frequencyRange: SubstructureGenerateFrequencyArray = None,
+        modeRange: typing.Optional[SubstructureGenerateModesArray] = None,
+        frequencyRange: typing.Optional[SubstructureGenerateFrequencyArray] = None,
         globalDampingField: SymbolicConstant = NONE,
         alphaDampingRatio: float = 0,
         betaDampingRatio: float = 0,
@@ -300,7 +300,7 @@ class SubstructureGenerateStep(AnalysisStep):
         self,
         description: str = "",
         recoveryMatrix: SymbolicConstant = WHOLE_MODEL,
-        recoveryRegion: Region = None,
+        recoveryRegion: typing.Optional[Region] = None,
         computeGravityLoadVectors: Boolean = False,
         computeReducedMassMatrix: Boolean = False,
         computeReducedStructuralDampingMatrix: Boolean = False,
@@ -308,8 +308,8 @@ class SubstructureGenerateStep(AnalysisStep):
         evaluateFrequencyDependentProperties: Boolean = False,
         frequency: float = 0,
         retainedEigenmodesMethod: SymbolicConstant = NONE,
-        modeRange: SubstructureGenerateModesArray = None,
-        frequencyRange: SubstructureGenerateFrequencyArray = None,
+        modeRange: typing.Optional[SubstructureGenerateModesArray] = None,
+        frequencyRange: typing.Optional[SubstructureGenerateFrequencyArray] = None,
         globalDampingField: SymbolicConstant = NONE,
         alphaDampingRatio: float = 0,
         betaDampingRatio: float = 0,

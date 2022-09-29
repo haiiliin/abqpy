@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
@@ -69,17 +70,17 @@ class EulerianMotionBC(BoundaryCondition):
     #: None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
     #: 1 direction. If **expansionRatio1** = None, then there is no upper limit. The default value
     #: is None.
-    expansionRatio1: float = None
+    expansionRatio1: typing.Optional[float] = None
 
     #: None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
     #: 2 direction. If **expansionRatio2** = None, then there is no upper limit. The default value
     #: is None.
-    expansionRatio2: float = None
+    expansionRatio2: typing.Optional[float] = None
 
     #: None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
     #: 3 direction. If **expansionRatio3** = None, then there is no upper limit. The default value
     #: is None.
-    expansionRatio3: float = None
+    expansionRatio3: typing.Optional[float] = None
 
     #: A Float specifying the lower bounds on the allowable scaling of the mesh in the 1
     #: direction. The default value is 0.0.
@@ -122,7 +123,7 @@ class EulerianMotionBC(BoundaryCondition):
 
     #: A SymbolicConstant specifying the category of the boundary condition. Possible values
     #: are MECHANICAL and THERMAL.
-    category: SymbolicConstant = None
+    category: typing.Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
@@ -130,7 +131,7 @@ class EulerianMotionBC(BoundaryCondition):
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: str = None
+    localCsys: typing.Optional[str] = None
 
     @abaqus_method_doc
     def __init__(
@@ -139,22 +140,22 @@ class EulerianMotionBC(BoundaryCondition):
         createStepName: str,
         instanceName: str,
         followRegion: Boolean = ON,
-        region: Region = None,
+        region: typing.Optional[Region] = None,
         materialName: str = "",
         ctrPosition1: SymbolicConstant = FREE,
         posPosition1: SymbolicConstant = FREE,
         negPosition1: SymbolicConstant = FREE,
-        expansionRatio1: float = None,
+        expansionRatio1: typing.Optional[float] = None,
         contractRatio1: float = 0,
         ctrPosition2: SymbolicConstant = FREE,
         posPosition2: SymbolicConstant = FREE,
         negPosition2: SymbolicConstant = FREE,
-        expansionRatio2: float = None,
+        expansionRatio2: typing.Optional[float] = None,
         contractRatio2: float = 0,
         ctrPosition3: SymbolicConstant = FREE,
         posPosition3: SymbolicConstant = FREE,
         negPosition3: SymbolicConstant = FREE,
-        expansionRatio3: float = None,
+        expansionRatio3: typing.Optional[float] = None,
         contractRatio3: float = 0,
         allowContraction: Boolean = ON,
         aspectLimit: float = 10,
@@ -267,22 +268,22 @@ class EulerianMotionBC(BoundaryCondition):
         self,
         instanceName: str,
         followRegion: Boolean = ON,
-        region: Region = None,
+        region: typing.Optional[Region] = None,
         materialName: str = "",
         ctrPosition1: SymbolicConstant = FREE,
         posPosition1: SymbolicConstant = FREE,
         negPosition1: SymbolicConstant = FREE,
-        expansionRatio1: float = None,
+        expansionRatio1: typing.Optional[float] = None,
         contractRatio1: float = 0,
         ctrPosition2: SymbolicConstant = FREE,
         posPosition2: SymbolicConstant = FREE,
         negPosition2: SymbolicConstant = FREE,
-        expansionRatio2: float = None,
+        expansionRatio2: typing.Optional[float] = None,
         contractRatio2: float = 0,
         ctrPosition3: SymbolicConstant = FREE,
         posPosition3: SymbolicConstant = FREE,
         negPosition3: SymbolicConstant = FREE,
-        expansionRatio3: float = None,
+        expansionRatio3: typing.Optional[float] = None,
         contractRatio3: float = 0,
         allowContraction: Boolean = ON,
         aspectLimit: float = 10,
@@ -384,17 +385,17 @@ class EulerianMotionBC(BoundaryCondition):
         ctrPosition1: SymbolicConstant = FREE,
         posPosition1: SymbolicConstant = FREE,
         negPosition1: SymbolicConstant = FREE,
-        expansionRatio1: float = None,
+        expansionRatio1: typing.Optional[float] = None,
         contractRatio1: float = 0,
         ctrPosition2: SymbolicConstant = FREE,
         posPosition2: SymbolicConstant = FREE,
         negPosition2: SymbolicConstant = FREE,
-        expansionRatio2: float = None,
+        expansionRatio2: typing.Optional[float] = None,
         contractRatio2: float = 0,
         ctrPosition3: SymbolicConstant = FREE,
         posPosition3: SymbolicConstant = FREE,
         negPosition3: SymbolicConstant = FREE,
-        expansionRatio3: float = None,
+        expansionRatio3: typing.Optional[float] = None,
         contractRatio3: float = 0,
         allowContraction: Boolean = ON,
         aspectLimit: float = 10,

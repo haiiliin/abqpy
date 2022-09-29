@@ -34,7 +34,7 @@ class Moment(Load):
     #: local coordinate system of the load. If **localCsys** = None, the load is defined in the
     #: global coordinate system. When this member is queried, it returns an Int. The default
     #: value is None.
-    localCsys: int = None
+    localCsys: typing.Optional[int] = None
 
     #: A String specifying the name of the AnalyticalField object associated with this load.
     #: The **field** argument applies only when **distributionType** = FIELD. The default value is an
@@ -50,12 +50,12 @@ class Moment(Load):
         name: str,
         createStepName: str,
         region: Region,
-        cm1: float = None,
-        cm2: float = None,
-        cm3: float = None,
+        cm1: typing.Optional[float] = None,
+        cm2: typing.Optional[float] = None,
+        cm3: typing.Optional[float] = None,
         amplitude: str = UNSET,
         follower: Boolean = OFF,
-        localCsys: int = None,
+        localCsys: typing.Optional[int] = None,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
     ):
@@ -113,12 +113,12 @@ class Moment(Load):
     @abaqus_method_doc
     def setValues(
         self,
-        cm1: float = None,
-        cm2: float = None,
-        cm3: float = None,
+        cm1: typing.Optional[float] = None,
+        cm2: typing.Optional[float] = None,
+        cm3: typing.Optional[float] = None,
         amplitude: str = UNSET,
         follower: Boolean = OFF,
-        localCsys: int = None,
+        localCsys: typing.Optional[int] = None,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
     ):

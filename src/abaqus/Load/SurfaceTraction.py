@@ -63,7 +63,7 @@ class SurfaceTraction(Load):
     #: of freedom. If **localCsys** = None, the degrees of freedom are defined in the global
     #: coordinate system or by the **userCsys** parameter if defined. When this member is
     #: queried, it returns an Int. The default value is None.
-    localCsys: int = None
+    localCsys: typing.Optional[int] = None
 
     #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of the load. Instead of
     #: through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. If
@@ -86,7 +86,7 @@ class SurfaceTraction(Load):
         amplitude: str = UNSET,
         angle: float = 0,
         axis: SymbolicConstant = AXIS_1,
-        localCsys: int = None,
+        localCsys: typing.Optional[int] = None,
         userCsys: str = "",
         directionVector: tuple = (),
         follower: Boolean = ON,
@@ -171,7 +171,7 @@ class SurfaceTraction(Load):
         amplitude: str = UNSET,
         angle: float = 0,
         axis: SymbolicConstant = AXIS_1,
-        localCsys: int = None,
+        localCsys: typing.Optional[int] = None,
         userCsys: str = "",
         directionVector: tuple = (),
         follower: Boolean = ON,

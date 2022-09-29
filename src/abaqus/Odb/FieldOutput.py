@@ -23,10 +23,10 @@ class FieldOutput:
 
     #: An Int specifying the dimension of vector or the first dimension (number of rows) of
     #: matrix.
-    dim: int = None
+    dim: typing.Optional[int] = None
 
     #: An Int specifying the second dimension (number of columns) of matrix.
-    dim2: int = None
+    dim2: typing.Optional[int] = None
 
     #: A Boolean specifying whether the data are complex.
     isComplex: Boolean = OFF
@@ -37,7 +37,7 @@ class FieldOutput:
     #: A :py:class:`~abaqus.Odb.FieldValueArray.FieldValueArray` object specifying the order of the objects in the array is determined
     #: by the Abaqus Scripting Interface; see the **data** argument to the addData method for a
     #: description of the order.
-    values: FieldValueArray = None
+    values: typing.Optional[FieldValueArray] = None
 
     #: A String specifying the output variable name.
     name: str
@@ -63,7 +63,7 @@ class FieldOutput:
     #: Possible values
     #: are:MAGNITUDEMISESTRESCAPRESSINV3MAX_PRINCIPALMID_PRINCIPALMIN_PRINCIPALMAX_INPLANE_PRINCIPALMIN_INPLANE_PRINCIPALOUTOFPLANE_PRINCIPALThe
     #: default value is an empty sequence.
-    validInvariants: SymbolicConstant = None
+    validInvariants: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the field is an engineering tensor or not. Setting
     #: isEngineeringTensor to true makes a tensor field behave as a strain like quantity where
@@ -78,7 +78,7 @@ class FieldOutput:
         description: str,
         type: SymbolicConstant,
         componentLabels: tuple = (),
-        validInvariants: SymbolicConstant = None,
+        validInvariants: typing.Optional[SymbolicConstant] = None,
         isEngineeringTensor: Boolean = OFF,
     ):
         """This method creates a FieldOutput object.
@@ -162,7 +162,7 @@ class FieldOutput:
         instance: OdbInstance,
         labels: tuple,
         data: tuple,
-        sectionPoint: SectionPoint = None,
+        sectionPoint: typing.Optional[SectionPoint] = None,
         localCoordSystem: tuple = (),
     ):
         """This method adds data to a FieldOutput object.
@@ -249,8 +249,8 @@ class FieldOutput:
         position: SymbolicConstant,
         set: OdbSet,
         data: tuple,
-        sectionPoint: SectionPoint = None,
-        conjugateData: float = None,
+        sectionPoint: typing.Optional[SectionPoint] = None,
+        conjugateData: typing.Optional[float] = None,
     ):
         """This method adds data to a FieldOutput object.
 
@@ -354,7 +354,7 @@ class FieldOutput:
         ...
 
     @typing.overload
-    def getSubset(self, position: SymbolicConstant = None, readOnly: Boolean = OFF):
+    def getSubset(self, position: typing.Optional[SymbolicConstant] = None, readOnly: Boolean = OFF):
         """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
         Parameters
@@ -425,7 +425,7 @@ class FieldOutput:
 
     @typing.overload
     @abaqus_method_doc
-    def getSubset(self, sectionPoint: SectionPoint = None):
+    def getSubset(self, sectionPoint: typing.Optional[SectionPoint] = None):
         """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object with a subset of the field values.
 
         Parameters
@@ -532,7 +532,7 @@ class FieldOutput:
 
     @typing.overload
     def getTransformedField(
-        self, datumCsys: str, projected22Axis: int = None, projectionTol: str = ""
+        self, datumCsys: str, projected22Axis: typing.Optional[int] = None, projectionTol: str = ""
     ):
         """This method generates a new vector or tensor field containing the transformed component
         values of the parent field. The new field will hold values for the same nodes or
@@ -574,8 +574,8 @@ class FieldOutput:
     def getTransformedField(
         self,
         datumCsys: str,
-        deformationField: "FieldOutput" = None,
-        projected22Axis: int = None,
+        deformationField: typing.Optional["FieldOutput"] = None,
+        projected22Axis: typing.Optional[int] = None,
         projectionTol: str = "",
     ):
         """This method generates a new vector or tensor field containing the transformed component
@@ -621,9 +621,9 @@ class FieldOutput:
     def getTransformedField(
         self,
         datumCsys: str,
-        deformationField: "FieldOutput" = None,
-        rotationField: "FieldOutput" = None,
-        projected22Axis: int = None,
+        deformationField: typing.Optional["FieldOutput"] = None,
+        rotationField: typing.Optional["FieldOutput"] = None,
+        projected22Axis: typing.Optional[int] = None,
         projectionTol: str = "",
     ):
         """This method generates a new vector or tensor field containing the transformed component
@@ -672,7 +672,7 @@ class FieldOutput:
     def getTransformedField(self, *args, **kwargs):
         ...
 
-    def getConnectorFieldXformedToNodeA(self, deformationField: "FieldOutput" = None):
+    def getConnectorFieldXformedToNodeA(self, deformationField: typing.Optional["FieldOutput"] = None):
         """This method generates a new vector field containing the transformed component values of
         the parent connector field to the node A coordinate system. The new field will hold
         values for the same connector elements as the parent field. Some connection types such

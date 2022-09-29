@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Filter import Filter
 from ..UtilityAndView.abaqusConstants import *
@@ -45,7 +46,7 @@ class OperatorFilter(Filter):
     #: None or a Float specifying the threshold limit, an upper or lower bound for output
     #: values depending on the operation, or a bound for stopping the analysis when Halt is
     #: used. The default value is None.
-    limit: float = None
+    limit: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the invariant to which filtering is applied. Possible
     #: values are NONE, FIRST, and SECOND. The default value is NONE.
@@ -59,7 +60,7 @@ class OperatorFilter(Filter):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: float = None,
+        limit: typing.Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ):
         """This method creates an OperatorFilter object.
@@ -114,7 +115,7 @@ class OperatorFilter(Filter):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: float = None,
+        limit: typing.Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ):
         """This method modifies the OperatorFilter object.

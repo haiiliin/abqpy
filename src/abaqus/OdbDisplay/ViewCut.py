@@ -20,25 +20,25 @@ class ViewCut:
     """
 
     #: A Float specifying the rotation angle of the cut defined with a **shape** set to PLANE.
-    angle: float = None
+    angle: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the type of motion for the cut defined with a **shape** set
     #: to PLANE. Possible values are TRANSLATE and ROTATE. The default value is TRANSLATE.
     motion: SymbolicConstant = TRANSLATE
 
     #: A Float specifying the position of the cut defined with a **shape** set to PLANE.
-    position: float = None
+    position: typing.Optional[float] = None
 
     #: A Float specifying the radius of the cut defined with a **shape** set to CYLINDER or
     #: SPHERE.
-    radius: float = None
+    radius: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the rotation axis for the cut defined with a **shape** set
     #: to PLANE. Possible values are AXIS_1, AXIS_2, and AXIS_3. The default value is AXIS_2.
     rotationAxis: SymbolicConstant = AXIS_2
 
     #: A Float specifying the value of the cut defined with a **shape** set to ISOSURFACE.
-    value: float = None
+    value: typing.Optional[float] = None
 
     #: A Boolean specifying whether to display the model above the cut. The default value is
     #: OFF.
@@ -117,7 +117,7 @@ class ViewCut:
     #:
     #: ..versionadded:: 2018
     #:     The `crossSectionalArea` attribute was added.
-    crossSectionalArea: float = None
+    crossSectionalArea: typing.Optional[float] = None
 
     @abaqus_method_doc
     def __init__(
@@ -196,12 +196,12 @@ class ViewCut:
     @abaqus_method_doc
     def setValues(
         self,
-        angle: float = None,
+        angle: typing.Optional[float] = None,
         motion: SymbolicConstant = TRANSLATE,
-        position: float = None,
-        radius: float = None,
+        position: typing.Optional[float] = None,
+        radius: typing.Optional[float] = None,
         rotationAxis: SymbolicConstant = AXIS_2,
-        value: float = None,
+        value: typing.Optional[float] = None,
         showModelAboveCut: Boolean = OFF,
         showModelOnCut: Boolean = ON,
         showModelBelowCut: Boolean = ON,

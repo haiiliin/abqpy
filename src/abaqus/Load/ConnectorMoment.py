@@ -43,9 +43,9 @@ class ConnectorMoment(Load):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        m1: float = None,
-        m2: float = None,
-        m3: float = None,
+        m1: typing.Optional[float] = None,
+        m2: typing.Optional[float] = None,
+        m3: typing.Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method creates a ConnectorMoment object on a wire region. Alternatively, the load
@@ -101,9 +101,9 @@ class ConnectorMoment(Load):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        m1: float = None,
-        m2: float = None,
-        m3: float = None,
+        m1: typing.Optional[float] = None,
+        m2: typing.Optional[float] = None,
+        m3: typing.Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing ConnectorMoment object in the step where

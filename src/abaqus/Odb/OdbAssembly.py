@@ -245,7 +245,7 @@ class OdbAssembly(OdbAssemblyBase):
         elements: OdbSet = OdbSet("set", ()),
         tieNodes: OdbSet = OdbSet("set", ()),
         pinNodes: OdbSet = OdbSet("set", ()),
-        analyticSurface: AnalyticSurface = None, 
+        analyticSurface: typing.Optional[AnalyticSurface] = None, 
     ) -> OdbRigidBody:
         """This method creates a OdbRigidBody object.
 

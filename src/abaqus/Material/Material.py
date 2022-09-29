@@ -276,7 +276,7 @@ class Material(MaterialBase):
     def ClayPlasticity(
         self,
         table: tuple,
-        intercept: float = None,
+        intercept: typing.Optional[float] = None,
         hardening: SymbolicConstant = EXPONENTIAL,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -1168,7 +1168,7 @@ class Material(MaterialBase):
     def GapFlow(
         self,
         table: tuple,
-        kmax: float = None,
+        kmax: typing.Optional[float] = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         type: SymbolicConstant = NEWTONIAN,
@@ -1246,7 +1246,7 @@ class Material(MaterialBase):
         table: tuple,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        tensileStiffnessFactor: float = None,
+        tensileStiffnessFactor: typing.Optional[float] = None,
         type: SymbolicConstant = ELASTIC_PLASTIC,
         unloadingDependencies: int = 0,
         unloadingTemperatureDependency: Boolean = OFF,
@@ -1521,7 +1521,7 @@ class Material(MaterialBase):
     def Hyperfoam(
         self,
         testData: Boolean = OFF,
-        poisson: float = None,
+        poisson: typing.Optional[float] = None,
         n: int = 1,
         temperatureDependency: Boolean = OFF,
         moduli: SymbolicConstant = LONG_TERM,
@@ -1682,10 +1682,10 @@ class Material(MaterialBase):
     def LowDensityFoam(
         self,
         elementRemoval: Boolean = OFF,
-        maxAllowablePrincipalStress: float = None,
+        maxAllowablePrincipalStress: typing.Optional[float] = None,
         extrapolateStressStrainCurve: Boolean = OFF,
         strainRateType: SymbolicConstant = VOLUMETRIC,
-        mu0: float = None,
+        mu0: typing.Optional[float] = None,
         mu1: float = 0,
         alpha: float = 2,
     ) -> LowDensityFoam:
@@ -1811,7 +1811,7 @@ class Material(MaterialBase):
     def MohrCoulombPlasticity(
         self,
         table: tuple,
-        deviatoricEccentricity: float = None,
+        deviatoricEccentricity: typing.Optional[float] = None,
         meridionalEccentricity: float = 0,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -2162,7 +2162,7 @@ class Material(MaterialBase):
     def PorousMetalPlasticity(
         self,
         table: tuple,
-        relativeDensity: float = None,
+        relativeDensity: typing.Optional[float] = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ) -> PorousMetalPlasticity:
@@ -3814,7 +3814,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def MeanFieldHomogenization(
         self,
-        angleSubdivision: int = None,
+        angleSubdivision: typing.Optional[int] = None,
         formulation: SymbolicConstant = MT,
         isotropization: SymbolicConstant = ALLISO,
         uniformMatrixStrain: SymbolicConstant = NO,

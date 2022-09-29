@@ -59,10 +59,10 @@ class PartBase(PartFeature):
 
     #: An Int specifying that feature parameters have been modified but that the part has not
     #: been regenerated. Possible values are 0 and 1.
-    isOutOfDate: int = None
+    isOutOfDate: typing.Optional[int] = None
 
     #: A Float specifying when the part was last modified.
-    timeStamp: float = None
+    timeStamp: typing.Optional[float] = None
 
     #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object specifying all the vertices in the part.
     vertices: VertexArray = VertexArray([])
@@ -290,7 +290,7 @@ class PartBase(PartFeature):
         instances: typing.Tuple[PartInstance, ...],
         keepIntersections: Boolean = False,
         mergeNodes: SymbolicConstant = BOUNDARY_ONLY,
-        nodeMergingTolerance: float = None,
+        nodeMergingTolerance: typing.Optional[float] = None,
         removeDuplicateElements: Boolean = ON,
         domain: SymbolicConstant = GEOMETRY,
     ):
@@ -641,8 +641,8 @@ class PartBase(PartFeature):
         instance: str = "",
         elementSet: str = "",
         shape: SymbolicConstant = UNDEFORMED,
-        step: int = None,
-        frame: int = None,
+        step: typing.Optional[int] = None,
+        frame: typing.Optional[int] = None,
         twist: Boolean = OFF,
     ):
         """This method creates an orphan mesh Part object by reading an output database. The new
@@ -873,7 +873,7 @@ class PartBase(PartFeature):
     def assignThickness(
         self,
         faces: typing.Tuple[Face, ...],
-        thickness: float = None,
+        thickness: typing.Optional[float] = None,
         topFaces: typing.Tuple[Face, ...] = (),
         bottomFaces: typing.Tuple[Face, ...] = (),
     ):
@@ -916,7 +916,7 @@ class PartBase(PartFeature):
         self,
         detailed: Boolean = OFF,
         reportFacetErrors: Boolean = OFF,
-        level: int = None,
+        level: typing.Optional[int] = None,
     ):
         """This method checks the validity of the geometry of the part and prints a count of all
         topological entities on the part (faces, edges, vertices, etc.).
@@ -1452,7 +1452,7 @@ class PartBase(PartFeature):
         self,
         sketch: str,
         filter: SymbolicConstant = ALL_EDGES,
-        upToFeature: PartFeature = None,
+        upToFeature: typing.Optional[PartFeature] = None,
         edges: tuple = (),
         vertices: tuple = (),
     ):
@@ -1649,7 +1649,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def writeAcisFile(self, fileName: str, version: float = None):
+    def writeAcisFile(self, fileName: str, version: typing.Optional[float] = None):
         """This method exports the geometry of the part to a named file in ACIS format.
 
         Parameters

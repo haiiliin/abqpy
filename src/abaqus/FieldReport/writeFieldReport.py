@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_function_doc
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..Odb.Odb import Odb
@@ -19,8 +20,8 @@ def writeFieldReport(
     outputPosition: SymbolicConstant,
     displayGroup: DisplayGroup,
     variable: SymbolicConstant,
-    numericForm: SymbolicConstant = None,
-    complexAngle: float = None,
+    numericForm: typing.Optional[SymbolicConstant] = None,
+    complexAngle: typing.Optional[float] = None,
     stepFrame: SymbolicConstant = SPECIFY,
 ):
     """This function writes a FieldOutput object to a user-defined ASCII file.

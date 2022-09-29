@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..PlotOptions.DGDisplayBodyOptions import DGDisplayBodyOptions
 from ..UtilityAndView.abaqusConstants import *
@@ -83,12 +84,12 @@ class DisplayBodyOptions(DGDisplayBodyOptions):
 
     #: A tuple of three Floats specifying the coordinate scaling in each of the three
     #: coordinate directions when **coordinateScale** = ON. The default value is (1, 1, 1).
-    coordinateScaleFactors: float = None
+    coordinateScaleFactors: typing.Optional[float] = None
 
     @abaqus_method_doc
     def setValues(
         self,
-        options: "DisplayBodyOptions" = None,
+        options: typing.Optional["DisplayBodyOptions"] = None,
         visibleEdges: SymbolicConstant = EXTERIOR,
         edgeColorWireHide: str = "",
         edgeColorFillShade: str = "",

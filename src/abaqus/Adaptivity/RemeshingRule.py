@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -99,7 +100,7 @@ class RemeshingRule:
     #: None or an Int specifying an approximate limit on the number of elements that will be
     #: created during remeshing. Use None to indicate there is not upper limit. The default
     #: value is None.
-    elementCountLimit: int = None
+    elementCountLimit: typing.Optional[int] = None
 
     @abaqus_method_doc
     def __init__(
@@ -121,7 +122,7 @@ class RemeshingRule:
         specifyMaxSize: Boolean = ON,
         coarseningFactor: SymbolicConstant = DEFAULT_LIMIT,
         refinementFactor: SymbolicConstant = DEFAULT_LIMIT,
-        elementCountLimit: int = None,
+        elementCountLimit: typing.Optional[int] = None,
     ):
         """This method creates a RemeshingRule object.
 
@@ -238,7 +239,7 @@ class RemeshingRule:
         specifyMaxSize: Boolean = ON,
         coarseningFactor: SymbolicConstant = DEFAULT_LIMIT,
         refinementFactor: SymbolicConstant = DEFAULT_LIMIT,
-        elementCountLimit: int = None,
+        elementCountLimit: typing.Optional[int] = None,
     ):
         """This method modifies the RemeshingRule object.
 

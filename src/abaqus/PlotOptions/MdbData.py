@@ -19,7 +19,7 @@ class MdbData:
     """
 
     #: A tuple of (String, Float) tuples specifying the stepName and the stepPeriod.
-    stepPeriods: float = None
+    stepPeriods: typing.Optional[float] = None
 
     #: A repository of MdbDataStep objects specifying the list of steps. The repository is
     #: read-only.

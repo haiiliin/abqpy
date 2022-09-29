@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -94,4 +95,4 @@ class DGContourOptions:
     #: specifying the line style and line thickness. For possible values, refer to the
     #: **edgeLineStyle** and **edgeLineThickness** members of the DGCommonOptions object. The
     #: default is ((SOLID, VERY_THIN), ).
-    intervalLineAttributes: SymbolicConstant = None
+    intervalLineAttributes: typing.Optional[SymbolicConstant] = None

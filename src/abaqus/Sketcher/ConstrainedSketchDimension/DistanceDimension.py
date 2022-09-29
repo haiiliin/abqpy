@@ -14,7 +14,7 @@ class DistanceDimension(ConstrainedSketchDimension):
         entity1: ConstrainedSketchVertex,
         entity2: ConstrainedSketchVertex,
         textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        value: typing.Optional[float] = None,
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension object between two

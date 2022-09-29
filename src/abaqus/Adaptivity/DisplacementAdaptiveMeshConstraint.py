@@ -23,7 +23,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
 
     #: A SymbolicConstant specifying the category of the adaptive mesh constraint. Possible
     #: values are MECHANICAL and THERMAL.
-    category: SymbolicConstant = None
+    category: typing.Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh constraint is applied.
     region: Region = Region()
@@ -31,7 +31,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     #: None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
     #: constraint's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: str = None
+    localCsys: typing.Optional[str] = None
 
     @abaqus_method_doc
     def __init__(
@@ -47,7 +47,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         ur3: typing.Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
         motionType: SymbolicConstant = INDEPENDENT,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
     ):
         """This method creates a DisplacementAdaptiveMeshConstraint object.
 
@@ -120,7 +120,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         ur3: typing.Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
         motionType: SymbolicConstant = INDEPENDENT,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
     ):
         """This method modifies the data for an existing DisplacementAdaptiveMeshConstraint object
         in the step where it is created.

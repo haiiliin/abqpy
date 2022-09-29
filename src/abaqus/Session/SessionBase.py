@@ -82,15 +82,15 @@ class SessionBase:
 
     #: A Float specifying the memory usage value for the Abaqus/CAE kernel process in
     #: megabytes.
-    kernelMemoryFootprint: float = None
+    kernelMemoryFootprint: typing.Optional[float] = None
 
     #: A Float specifying the maximum value for the memory usage for the Abaqus/CAE kernel
     #: process in megabytes.
-    kernelMemoryMaxFootprint: float = None
+    kernelMemoryMaxFootprint: typing.Optional[float] = None
 
     #: A Float specifying the limit for the memory use for the Abaqus/CAE kernel process in
     #: megabytes.
-    kernelMemoryLimit: float = None
+    kernelMemoryLimit: typing.Optional[float] = None
 
     #: A repository of Color objects.
     colors: typing.Dict[str, Color] = {}
@@ -272,7 +272,7 @@ class SessionBase:
     #: A Dictionary object specifying the viewports and their associated models. The Dictionary
     #: key specifies the viewport name. The Dictionary value is a Dictionary specifying the
     #: model name.
-    sessionState: dict = None
+    sessionState: typing.Optional[dict] = None
 
     #: A repository of Image objects.
     images: typing.Dict[str, Image] = {}
@@ -293,7 +293,7 @@ class SessionBase:
     drawings: typing.Dict[str, Drawing] = {}
 
     @abaqus_method_doc
-    def setValues(self, kernelMemoryLimit: float = None):
+    def setValues(self, kernelMemoryLimit: typing.Optional[float] = None):
         """This method modifies the Session object.
 
         Parameters
@@ -317,7 +317,7 @@ class SessionBase:
         ...
 
     @abaqus_method_doc
-    def enableCADConnection(self, CADName: str, portNum: int = None):
+    def enableCADConnection(self, CADName: str, portNum: typing.Optional[int] = None):
         """This method enables the Abaqus/CAE listening port for the specified **CAD** system.
 
         Parameters
@@ -363,7 +363,7 @@ class SessionBase:
         ...
 
     @abaqus_method_doc
-    def enableParameterUpdate(self, CADName: str, CADVersion: str, CADPort: int = None):
+    def enableParameterUpdate(self, CADName: str, CADVersion: str, CADPort: typing.Optional[int] = None):
         """This method enables parameter updates for ProE and NX by establishing a connection with
         the listening port previously setup by the CAD application.
 

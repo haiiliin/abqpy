@@ -55,14 +55,14 @@ class PartInstance:
 
     #: A SymbolicConstant specifying the part type. Possible values are DEFORMABLE_BODY,
     #: EULERIAN, DISCRETE_RIGID_SURFACE, and ANALYTIC_RIGID_SURFACE.
-    analysisType: SymbolicConstant = None
+    analysisType: typing.Optional[SymbolicConstant] = None
 
     #: An Int specifying the reference node number. This member is valid only if
     #: **analysisType** = DISCRETE_RIGID_SURFACE or ANALYTIC_RIGID_SURFACE.
-    referenceNode: int = None
+    referenceNode: typing.Optional[int] = None
 
     #: A :py:class:`~abaqus.Part.Part.Part` object specifying the instanced part.
-    part: Part = None
+    part: typing.Optional[Part] = None
 
     #: A repository of Set objects specifying the sets created on the part. For more
     #: information, see [Region
@@ -229,7 +229,7 @@ class PartInstance:
         originalInstances: SymbolicConstant = SUPPRESS,
         domain: SymbolicConstant = GEOMETRY,
         mergeNodes: SymbolicConstant = BOUNDARY_ONLY,
-        nodeMergingTolerance: float = None,
+        nodeMergingTolerance: typing.Optional[float] = None,
         removeDuplicateElements: Boolean = True,
     ):
         """This method creates a PartInstance in the instances repository after merging two or more
@@ -372,7 +372,7 @@ class PartInstance:
         ...
 
     @abaqus_method_doc
-    def checkGeometry(self, detailed: Boolean = OFF, level: int = None):
+    def checkGeometry(self, detailed: Boolean = OFF, level: typing.Optional[int] = None):
         """This method checks the validity of the geometry of the part instance and prints a count
         of all topological entities on the part instance (faces, edges, vertices, etc.).
 

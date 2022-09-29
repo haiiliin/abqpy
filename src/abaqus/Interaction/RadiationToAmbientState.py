@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from .InteractionState import InteractionState
 from ..UtilityAndView.abaqusConstants import *
@@ -24,22 +25,22 @@ class RadiationToAmbientState(InteractionState):
     """
 
     #: A Float specifying the ambient temperature.
-    ambientTemperature: float = None
+    ambientTemperature: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the **ambientTemperature** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    ambientTemperatureState: SymbolicConstant = None
+    ambientTemperatureState: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **ambientTemperatureAmp**
     #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    ambientTemperatureAmpState: SymbolicConstant = None
+    ambientTemperatureAmpState: typing.Optional[SymbolicConstant] = None
 
     #: A Float specifying the emissivity.
-    emissivity: float = None
+    emissivity: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the **emissivity** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    emissivityState: SymbolicConstant = None
+    emissivityState: typing.Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the Amplitude object that gives the variation of the
     #: ambient temperature with time.
@@ -57,4 +58,4 @@ class RadiationToAmbientState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: SymbolicConstant = None
+    status: typing.Optional[SymbolicConstant] = None

@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
 from ..Region.Region import Region
@@ -82,7 +83,7 @@ class SubstructureLoad(Load):
         self,
         stepName: str,
         loadCaseNames: str = "",
-        magnitude: float = None,
+        magnitude: typing.Optional[float] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing SubstructureLoad object in the

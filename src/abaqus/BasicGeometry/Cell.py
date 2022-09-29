@@ -28,7 +28,7 @@ class Cell:
     """
 
     #: An Int specifying the index of the cell in the CellArray.
-    index: int = None
+    index: typing.Optional[int] = None
 
     #: A Boolean specifying whether the cell belongs to the reference representation of the
     #: Part or Instance.
@@ -36,14 +36,14 @@ class Cell:
 
     #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
     #: the cell.
-    pointOn: float = None
+    pointOn: typing.Optional[float] = None
 
     #: A tuple of Floats specifying the name of the feature that created this cell.
-    featureName: float = None
+    featureName: typing.Optional[float] = None
 
     #: A tuple of Floats specifying the name of the part instance for this cell (if
     #: applicable).
-    instanceName: float = None
+    instanceName: typing.Optional[float] = None
 
     @abaqus_method_doc
     def getSize(self, printResults: Boolean = True):

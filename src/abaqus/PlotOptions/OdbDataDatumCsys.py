@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -18,7 +19,7 @@ class OdbDataDatumCsys:
 
     #: A SymbolicConstant specifying the coordinate system type. This String is read-only.
     #: Possible values are CARTESIAN, CYLINDRICAL, and SPHERICAL.
-    type: SymbolicConstant = None
+    type: typing.Optional[SymbolicConstant] = None
 
     #: A tuple of three Floats specifying a sequence of three floats specifying the x-Axis
     #: vector. The default value is (1, 0, 0).

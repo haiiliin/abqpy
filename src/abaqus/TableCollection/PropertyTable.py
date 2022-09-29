@@ -94,10 +94,10 @@ class PropertyTable:
     def PropertyTableData(
         self,
         label: str = "",
-        regularize: SymbolicConstant = None,
-        extrapolate: SymbolicConstant = None,
+        regularize: typing.Optional[SymbolicConstant] = None,
+        extrapolate: typing.Optional[SymbolicConstant] = None,
         isTemp: Boolean = OFF,
-        fieldNums: int = None,
+        fieldNums: typing.Optional[int] = None,
         regularizeTolerance: str = "",
         data: str = "",
     ) -> PropertyTableData:

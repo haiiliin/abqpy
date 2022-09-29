@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AcisFile import AcisFile
 from ..Mdb.MdbBase import MdbBase
@@ -52,7 +53,7 @@ class AcisMdb(MdbBase):
     @abaqus_method_doc
     def openCatia(
         fileName: str,
-        topology: SymbolicConstant = None,
+        topology: typing.Optional[SymbolicConstant] = None,
         convertUnits: SymbolicConstant = OFF,
         combineBodies: Boolean = OFF,
     ):

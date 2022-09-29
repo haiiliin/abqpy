@@ -103,7 +103,7 @@ class ImageOptions(_CopyOptionsBase):
         yScale: float = 1.0,
         origin: typing.Tuple[float, ...] = (0.0, 0.0),
         translucency: float = 1.0,
-        options: "ImageOptions" = None,
+        options: typing.Optional["ImageOptions"] = None,
     ):
         """This method modifies the ImageOptions object.
 

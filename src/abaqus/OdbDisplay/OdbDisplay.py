@@ -222,29 +222,29 @@ class OdbDisplay:
 
     #: A tuple of SymbolicConstants specifying variables.For information on the sequence, see
     #: the member **primaryVariable**.
-    statusVariable: SymbolicConstant = None
+    statusVariable: typing.Optional[SymbolicConstant] = None
 
     #: A tuple of SymbolicConstants specifying variables.For information on the sequence, see
     #: the member **primaryVariable**.
-    symbolVariable: SymbolicConstant = None
+    symbolVariable: typing.Optional[SymbolicConstant] = None
 
     #: A tuple of SymbolicConstants specifying a Boolean to specify if elements are to be
     #: removed in undeformed states based on an active status variable
-    applyStatusToUndeformed: SymbolicConstant = None
+    applyStatusToUndeformed: typing.Optional[SymbolicConstant] = None
 
     #: A tuple of SymbolicConstants specifying a Boolean to specify if the status range should
     #: be inside a specified minimum and maximum. The range will be outside when false.
-    statusInsideRange: SymbolicConstant = None
+    statusInsideRange: typing.Optional[SymbolicConstant] = None
 
     #: A tuple of Floats specifying a Float value for the minimum status range value.
-    statusMinimum: float = None
+    statusMinimum: typing.Optional[float] = None
 
     #: A tuple of Floats specifying a Float value for the maximum status range value.
-    statusMaximum: float = None
+    statusMaximum: typing.Optional[float] = None
 
     #: A tuple of SymbolicConstants specifying a Boolean to specify if elements are to be
     #: removed based on the status variable
-    useStatus: SymbolicConstant = None
+    useStatus: typing.Optional[SymbolicConstant] = None
 
     #: A pair of Ints specifying the step index and the frame index of the first available
     #: frame. This sequence is read-only.
@@ -337,8 +337,8 @@ class OdbDisplay:
         variableLabel: str,
         field: str,
         outputPosition: SymbolicConstant,
-        refinement: SymbolicConstant = None,
-        sectionPoint: dict = None,
+        refinement: typing.Optional[SymbolicConstant] = None,
+        sectionPoint: typing.Optional[dict] = None,
     ):
         """This method specifies the field output variable for which to obtain results.
 
@@ -408,10 +408,10 @@ class OdbDisplay:
         variableLabel: str,
         field: str,
         outputPosition: SymbolicConstant,
-        refinement: SymbolicConstant = None,
-        sectionPoint: dict = None,
-        statusMinimum: float = None,
-        statusMaximum: float = None,
+        refinement: typing.Optional[SymbolicConstant] = None,
+        sectionPoint: typing.Optional[dict] = None,
+        statusMinimum: typing.Optional[float] = None,
+        statusMaximum: typing.Optional[float] = None,
         statusInsideRange: Boolean = OFF,
         useStatus: Boolean = OFF,
         applyStatusToUndeformed: Boolean = False,
@@ -472,10 +472,10 @@ class OdbDisplay:
         variableLabel: str,
         field: str,
         outputPosition: SymbolicConstant,
-        refinement: SymbolicConstant = None,
-        sectionPoint: dict = None,
-        tensorQuantity: SymbolicConstant = None,
-        vectorQuantity: SymbolicConstant = None,
+        refinement: typing.Optional[SymbolicConstant] = None,
+        sectionPoint: typing.Optional[dict] = None,
+        tensorQuantity: typing.Optional[SymbolicConstant] = None,
+        vectorQuantity: typing.Optional[SymbolicConstant] = None,
     ):
         """This method specifies the field output variable for which to obtain results used for
         symbol plots. This variable must be in the form of vector or tensor data. The output

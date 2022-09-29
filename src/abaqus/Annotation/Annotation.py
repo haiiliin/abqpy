@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 @abaqus_class_doc
@@ -67,7 +68,7 @@ class Annotation:
         ...
 
     @abaqus_method_doc
-    def translate(self, x: float = None, y: float = None):
+    def translate(self, x: typing.Optional[float] = None, y: typing.Optional[float] = None):
         """This method translates the Annotation object on the viewport plane.
 
         Parameters

@@ -85,14 +85,14 @@ class MeshEditAssembly(AssemblyBase):
     def editNode(
         self,
         nodes: typing.Tuple[MeshNode, ...],
-        coordinate1: float = None,
-        coordinate2: float = None,
-        coordinate3: float = None,
+        coordinate1: typing.Optional[float] = None,
+        coordinate2: typing.Optional[float] = None,
+        coordinate3: typing.Optional[float] = None,
         coordinates: tuple = (),
-        offset1: float = None,
-        offset2: float = None,
-        offset3: float = None,
-        localCsys: DatumCsys = None,
+        offset1: typing.Optional[float] = None,
+        offset2: typing.Optional[float] = None,
+        offset3: typing.Optional[float] = None,
+        localCsys: typing.Optional[DatumCsys] = None,
         projectToGeometry: Boolean = ON,
     ):
         """This method changes the coordinates of the given nodes on a part instance.
@@ -144,7 +144,7 @@ class MeshEditAssembly(AssemblyBase):
     def mergeNodes(
         self,
         nodes: typing.Tuple[MeshNode, ...],
-        tolerance: float = None,
+        tolerance: typing.Optional[float] = None,
         removeDuplicateElements: Boolean = True,
     ):
         """Merge the nodes of a part instance. The nodes must have been generated using the

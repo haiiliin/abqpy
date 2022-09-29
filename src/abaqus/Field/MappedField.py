@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AnalyticalField import AnalyticalField
 from .OdbMeshRegionData import OdbMeshRegionData
@@ -90,16 +91,16 @@ class MappedField(AnalyticalField):
     xyzPointData: tuple = ()
 
     #: An :py:class:`~abaqus.Field.OdbMeshRegionData.OdbMeshRegionData` object specifying the external source data from ODB mesh region.
-    odbMeshRegionData: OdbMeshRegionData = None
+    odbMeshRegionData: typing.Optional[OdbMeshRegionData] = None
 
     #: A tuple of Floats specifying the scaling factors for the global 1, 2 and 3 directions.
     #: The default value is (1.0, 1.0, 1.0).
-    coordinateScalingFactors: float = None
+    coordinateScalingFactors: typing.Optional[float] = None
 
     #: None or a DatumCsys object specifying the local coordinate system of the field. If
     #: **localCsys** = None, the field is defined in the global coordinate system. The default
     #: value is None.
-    localCsys: str = None
+    localCsys: typing.Optional[str] = None
 
     #: A String specifying the description of the field. The default value is an empty string.
     description: str = ""
@@ -123,7 +124,7 @@ class MappedField(AnalyticalField):
         gridPointData: tuple = (),
         xyzPointData: tuple = (),
         coordinateScalingFactors: tuple = (),
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
         description: str = "",
     ):
         """This method creates an MappedField object.
@@ -231,7 +232,7 @@ class MappedField(AnalyticalField):
         gridPointData: tuple = (),
         xyzPointData: tuple = (),
         coordinateScalingFactors: tuple = (),
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
         description: str = "",
     ):
         """This method modifies the MappedField object.

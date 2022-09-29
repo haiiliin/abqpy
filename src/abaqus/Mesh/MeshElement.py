@@ -43,10 +43,10 @@ class MeshElement:
     """
 
     #: An Int specifying the element label.
-    label: int = None
+    label: typing.Optional[int] = None
 
     #: A SymbolicConstant specifying the Abaqus element code.
-    type: SymbolicConstant = None
+    type: typing.Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the part instance that owns this element.
     instanceName: str = ""
@@ -54,11 +54,11 @@ class MeshElement:
     #: A tuple of Ints specifying the internal node indices that define the nodal connectivity.
     #: It is important to note the difference with OdbMeshElement object of ODB where the
     #: connectivity is node labels instead of node indices.
-    connectivity: int = None
+    connectivity: typing.Optional[int] = None
 
     @abaqus_method_doc
     def Element(
-        self, nodes: typing.Tuple[MeshNode, ...], elemShape: SymbolicConstant, label: int = None
+        self, nodes: typing.Tuple[MeshNode, ...], elemShape: SymbolicConstant, label: typing.Optional[int] = None
     ):
         """This method creates an element on an orphan mesh part from a sequence of nodes.
 
@@ -147,7 +147,7 @@ class MeshElement:
         ...
 
     @abaqus_method_doc
-    def setValues(self, label: int = None):
+    def setValues(self, label: typing.Optional[int] = None):
         """This method modifies the MeshElement object.
 
         Parameters

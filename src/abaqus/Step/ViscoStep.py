@@ -53,7 +53,7 @@ class ViscoStep(AnalysisStep):
     #: A Float specifying the damping intensity of the automatic damping algorithm if the
     #: problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
     #: value is 2×10-4.
-    stabilizationMagnitude: float = None
+    stabilizationMagnitude: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the time incrementation method to be used. Possible values
     #: are FIXED and AUTOMATIC. The default value is AUTOMATIC.
@@ -69,14 +69,14 @@ class ViscoStep(AnalysisStep):
 
     #: A Float specifying the initial time increment. The default value is the total time
     #: period for the step.
-    initialInc: float = None
+    initialInc: typing.Optional[float] = None
 
     #: An Int specifying the maximum number of increments in a step. The default value is 100.
     maxNumInc: int = 100
 
     #: A Float specifying the minimum time increment allowed. The default value is the smaller
     #: of the suggested initial time increment or 10−5 times the total time period.
-    minInc: float = None
+    minInc: typing.Optional[float] = None
 
     #: A Float specifying the maximum time increment allowed. The default is the total time
     #: period for the step. The default value is 1.0.
@@ -133,7 +133,7 @@ class ViscoStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: SymbolicConstant = None
+    explicit: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -169,7 +169,7 @@ class ViscoStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: SymbolicConstant = None
+    procedureType: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
@@ -184,7 +184,7 @@ class ViscoStep(AnalysisStep):
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
-    monitor: Monitor = None
+    monitor: typing.Optional[Monitor] = None
 
     #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
@@ -205,7 +205,7 @@ class ViscoStep(AnalysisStep):
     boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: int = None
+    interactionStates: typing.Optional[int] = None
 
     #: A repository of LoadState objects.
     loadStates: typing.Dict[str, LoadState] = {}
@@ -225,13 +225,13 @@ class ViscoStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         stabilizationMethod: SymbolicConstant = NONE,
-        stabilizationMagnitude: float = None,
+        stabilizationMagnitude: typing.Optional[float] = None,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
         matrixSolver: SymbolicConstant = DIRECT,
         matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        initialInc: float = None,
+        initialInc: typing.Optional[float] = None,
         maxNumInc: int = 100,
-        minInc: float = None,
+        minInc: typing.Optional[float] = None,
         maxInc: float = 1,
         integration: SymbolicConstant = IMPLICIT_EXPLICIT,
         cetol: float = 0,
@@ -347,13 +347,13 @@ class ViscoStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         stabilizationMethod: SymbolicConstant = NONE,
-        stabilizationMagnitude: float = None,
+        stabilizationMagnitude: typing.Optional[float] = None,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
         matrixSolver: SymbolicConstant = DIRECT,
         matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        initialInc: float = None,
+        initialInc: typing.Optional[float] = None,
         maxNumInc: int = 100,
-        minInc: float = None,
+        minInc: typing.Optional[float] = None,
         maxInc: float = 1,
         integration: SymbolicConstant = IMPLICIT_EXPLICIT,
         cetol: float = 0,

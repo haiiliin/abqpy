@@ -25,7 +25,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
 
     #: A SymbolicConstant specifying the category of the adaptive mesh constraint. Possible
     #: values are MECHANICAL and THERMAL.
-    category: SymbolicConstant = None
+    category: typing.Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh constraint is applied.
     region: Region = Region()
@@ -33,7 +33,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     #: None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
     #: constraint's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: str = None
+    localCsys: typing.Optional[str] = None
 
     @abaqus_method_doc
     def __init__(
@@ -48,7 +48,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         vr2: typing.Union[SymbolicConstant, float] = UNSET,
         vr3: typing.Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
         motionType: SymbolicConstant = INDEPENDENT,
     ):
         """This method creates a VelocityAdaptiveMeshConstraint object.
@@ -121,7 +121,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         vr2: typing.Union[SymbolicConstant, float] = UNSET,
         vr3: typing.Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
         motionType: SymbolicConstant = INDEPENDENT,
     ):
         """This method modifies the data for an existing VelocityAdaptiveMeshConstraint object in

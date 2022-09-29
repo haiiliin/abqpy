@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -15,7 +16,7 @@ class SubstructureGenerateFrequency:
     """
 
     #: A Float specifying the lower limit of the frequency range, in cycles/time.
-    lower: float = None
+    lower: typing.Optional[float] = None
 
     #: A Float specifying the upper limit of the frequency range, in cycles/time.
-    upper: float = None
+    upper: typing.Optional[float] = None

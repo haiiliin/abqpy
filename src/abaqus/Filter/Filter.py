@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -23,7 +24,7 @@ class Filter:
 
     #: A Float specifying the attenuation point of the filter. Possible values are non-negative
     #: numbers. Order is not available for OperatorFilter.
-    cutoffFrequency: float = None
+    cutoffFrequency: typing.Optional[float] = None
 
     #: An Int specifying the highest power of the filter transfer function. Possible values are
     #: non-negative numbers less than or equal to 20. Order is not available for
@@ -41,7 +42,7 @@ class Filter:
     #: None or a Float specifying the threshold limit, an upper or lower bound for output
     #: values depending on the operation, or a bound for stopping the analysis when Halt is
     #: used. The default value is None.
-    limit: float = None
+    limit: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the invariant to which filtering is applied. Possible
     #: values are NONE, FIRST, and SECOND. The default value is NONE.

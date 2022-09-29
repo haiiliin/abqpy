@@ -13,8 +13,8 @@ class Section(ConnectorSection):
     def TransverseShearBeam(
         self,
         scfDefinition: SymbolicConstant,
-        k23: float = None,
-        k13: float = None,
+        k23: typing.Optional[float] = None,
+        k13: typing.Optional[float] = None,
         slendernessCompensation: typing.Union[SymbolicConstant, float] = 0,
     ) -> TransverseShearBeam:
         """This method creates a TransverseShearBeam object.

@@ -69,7 +69,7 @@ class BoundaryConditionModel(ModelBase):
         dof: SymbolicConstant,
         amplitudeScaleFactor: float = 1,
         centerOfRotation: tuple = (),
-        correlation: Correlation = None,
+        correlation: typing.Optional[Correlation] = None,
         secondaryBase: str = "",
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
@@ -144,7 +144,7 @@ class BoundaryConditionModel(ModelBase):
         ar2: typing.Union[SymbolicConstant, float] = UNSET,
         ar3: typing.Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
         distributionType: SymbolicConstant = UNIFORM,
     ) -> AccelerationBC:
         """This method creates an AccelerationBC object.
@@ -686,7 +686,7 @@ class BoundaryConditionModel(ModelBase):
         dof: SymbolicConstant,
         amplitudeScaleFactor: float = 1,
         centerOfRotation: tuple = (),
-        correlation: Correlation = None,
+        correlation: typing.Optional[Correlation] = None,
         secondaryBase: str = "",
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
@@ -763,7 +763,7 @@ class BoundaryConditionModel(ModelBase):
         fixed: Boolean = OFF,
         amplitude: str = UNSET,
         distributionType: SymbolicConstant = UNIFORM,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
     ) -> DisplacementBC:
         """This method creates a DisplacementBC object.
@@ -977,22 +977,22 @@ class BoundaryConditionModel(ModelBase):
         createStepName: str,
         instanceName: str,
         followRegion: Boolean = ON,
-        region: Region = None,
+        region: typing.Optional[Region] = None,
         materialName: str = "",
         ctrPosition1: SymbolicConstant = FREE,
         posPosition1: SymbolicConstant = FREE,
         negPosition1: SymbolicConstant = FREE,
-        expansionRatio1: float = None,
+        expansionRatio1: typing.Optional[float] = None,
         contractRatio1: float = 0,
         ctrPosition2: SymbolicConstant = FREE,
         posPosition2: SymbolicConstant = FREE,
         negPosition2: SymbolicConstant = FREE,
-        expansionRatio2: float = None,
+        expansionRatio2: typing.Optional[float] = None,
         contractRatio2: float = 0,
         ctrPosition3: SymbolicConstant = FREE,
         posPosition3: SymbolicConstant = FREE,
         negPosition3: SymbolicConstant = FREE,
-        expansionRatio3: float = None,
+        expansionRatio3: typing.Optional[float] = None,
         contractRatio3: float = 0,
         allowContraction: Boolean = ON,
         aspectLimit: float = 10,
@@ -1186,12 +1186,12 @@ class BoundaryConditionModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        component1: SymbolicConstant = None,
+        component1: typing.Optional[SymbolicConstant] = None,
         component2: SymbolicConstant = UNSET,
         component3: SymbolicConstant = UNSET,
         amplitude: str = UNSET,
         distributionType: SymbolicConstant = UNIFORM,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
     ) -> MagneticVectorPotentialBC:
         """This method creates a MagneticVectorPotentialBC object.
 
@@ -1486,11 +1486,11 @@ class BoundaryConditionModel(ModelBase):
         timeScale: Boolean,
         shellThickness: float,
         globalDrivingRegion: str = "",
-        absoluteExteriorTolerance: float = None,
+        absoluteExteriorTolerance: typing.Optional[float] = None,
         exteriorTolerance: float = 0,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
         globalIncrement: int = 0,
-        centerZoneSize: float = None,
+        centerZoneSize: typing.Optional[float] = None,
         intersectionOnly: Boolean = OFF,
     ) -> SubmodelBC:
         """This method creates a SubmodelBC object.
@@ -1654,7 +1654,7 @@ class BoundaryConditionModel(ModelBase):
         dof: SymbolicConstant,
         amplitudeScaleFactor: float = 1,
         centerOfRotation: tuple = (),
-        correlation: Correlation = None,
+        correlation: typing.Optional[Correlation] = None,
         secondaryBase: str = "",
         useComplex: Boolean = OFF,
         amplitude: str = UNSET,
@@ -1729,7 +1729,7 @@ class BoundaryConditionModel(ModelBase):
         vr2: typing.Union[SymbolicConstant, float] = UNSET,
         vr3: typing.Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
         distributionType: SymbolicConstant = UNIFORM,
     ) -> VelocityBC:
         """This method creates a VelocityBC object.
@@ -1817,7 +1817,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
     ) -> TypeBC:
         """This method creates an encastre TypeBC object.
         
@@ -1864,7 +1864,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
     ) -> TypeBC:
         """This method creates a pinned TypeBC object.
         
@@ -1911,7 +1911,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies symmetry about the **X**-axis.
         
@@ -1958,7 +1958,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies symmetry about the **Y**-axis.
         
@@ -2005,7 +2005,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies symmetry about the **Z**-axis.
         
@@ -2052,7 +2052,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies antisymmetry about the **X**-axis.
         
@@ -2099,7 +2099,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies antisymmetry about the **Y**-axis.
         
@@ -2146,7 +2146,7 @@ class BoundaryConditionModel(ModelBase):
         createStepName: str,
         region: Region,
         buckleCase: SymbolicConstant = NOT_APPLICABLE,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies antisymmetry about the **Z**-axis.
         

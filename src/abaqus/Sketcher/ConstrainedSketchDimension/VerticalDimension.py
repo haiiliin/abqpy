@@ -14,7 +14,7 @@ class VerticalDimension(ConstrainedSketchDimension):
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
         textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        value: typing.Optional[float] = None,
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension between two vertices. A vertical

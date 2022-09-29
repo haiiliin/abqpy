@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Area import Area
 from .AreaStyle import AreaStyle
@@ -27,18 +28,18 @@ class DefaultChartOptions:
     def setValues(
         self,
         areaStyle: AreaStyle,
-        aspectRatio: float = None,
-        defaultAxis1Options: Axis = None, 
-        defaultAxis2Options: Axis = None, 
-        gridArea: Area = None, 
-        legend: Legend = None, 
-        majorAxis1GridStyle: LineStyle = None, 
-        majorAxis2GridStyle: LineStyle = None, 
-        minorAxis1GridStyle: LineStyle = None, 
-        minorAxis2GridStyle: LineStyle = None, 
-        tagAreaStyle: AreaStyle = None, 
-        tagBorder: LineStyle = None, 
-        tagTextStyle: TextStyle = None, 
+        aspectRatio: typing.Optional[float] = None,
+        defaultAxis1Options: typing.Optional[Axis] = None, 
+        defaultAxis2Options: typing.Optional[Axis] = None, 
+        gridArea: typing.Optional[Area] = None, 
+        legend: typing.Optional[Legend] = None, 
+        majorAxis1GridStyle: typing.Optional[LineStyle] = None, 
+        majorAxis2GridStyle: typing.Optional[LineStyle] = None, 
+        minorAxis1GridStyle: typing.Optional[LineStyle] = None, 
+        minorAxis2GridStyle: typing.Optional[LineStyle] = None, 
+        tagAreaStyle: typing.Optional[AreaStyle] = None, 
+        tagBorder: typing.Optional[LineStyle] = None, 
+        tagTextStyle: typing.Optional[TextStyle] = None, 
         useQuantityType: Boolean = ON,
     ):
         """This method modifies the DefaultChartOptions object.

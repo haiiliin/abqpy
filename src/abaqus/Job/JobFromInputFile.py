@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Job import Job
 from .MessageArray import MessageArray
@@ -25,12 +26,12 @@ class JobFromInputFile(Job):
     #: A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or
     #: Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If the object has
     #: the type JobFromInputFile, **analysis** = UNKNOWN.
-    analysis: SymbolicConstant = None
+    analysis: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,
     #: RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If the
     #: **message** member is empty, **status** is set to NONE.
-    status: SymbolicConstant = None
+    status: typing.Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Job.MessageArray.MessageArray` object specifying the messages received during an analysis.
     messages: MessageArray = []

@@ -103,7 +103,7 @@ class MovieOptions(_CopyOptionsBase):
         yScale: float = 1.0,
         origin: typing.Tuple[float, ...] = (0.0, 0.0),
         translucency: float = 1.0,
-        options: str = None,
+        options: typing.Optional[str] = None,
     ):
         """This method modifies the MovieOptions object.
 

@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from .BoundaryConditionState import BoundaryConditionState
 from ..UtilityAndView.abaqusConstants import *
@@ -68,17 +69,17 @@ class EulerianMotionBCState(BoundaryConditionState):
     #: None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
     #: 1 direction. If **expansionRatio1** = None, then there is no upper limit. The default value
     #: is None.
-    expansionRatio1: float = None
+    expansionRatio1: typing.Optional[float] = None
 
     #: None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
     #: 2 direction. If **expansionRatio2** = None, then there is no upper limit. The default value
     #: is None.
-    expansionRatio2: float = None
+    expansionRatio2: typing.Optional[float] = None
 
     #: None or a Float specifying the upper bounds on the allowable scaling of the mesh in the
     #: 3 direction. If **expansionRatio3** = None, then there is no upper limit. The default value
     #: is None.
-    expansionRatio3: float = None
+    expansionRatio3: typing.Optional[float] = None
 
     #: A Float specifying the lower bounds on the allowable scaling of the mesh in the 1
     #: direction. The default value is 0.0.
@@ -114,7 +115,7 @@ class EulerianMotionBCState(BoundaryConditionState):
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    amplitudeState: SymbolicConstant = None
+    amplitudeState: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the BoundaryConditionState object. Possible values are:
     #: 
@@ -130,7 +131,7 @@ class EulerianMotionBCState(BoundaryConditionState):
     #: - MODIFIED_FROM_BASE_STATE
     #: - DEACTIVATED_FROM_BASE_STATE
     #: - BUILT_INTO_MODES
-    status: SymbolicConstant = None
+    status: typing.Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the amplitude reference. The String is empty if the
     #: boundary condition has no amplitude reference.

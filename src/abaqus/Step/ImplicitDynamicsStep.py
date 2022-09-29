@@ -69,11 +69,11 @@ class ImplicitDynamicsStep(AnalysisStep):
 
     #: A Float specifying the initial time increment. The default value is the total time
     #: period for the step.
-    initialInc: float = None
+    initialInc: typing.Optional[float] = None
 
     #: A Float specifying the minimum time increment allowed. The default value is the smaller
     #: of the suggested initial time increment or 10−5 times the total time period.
-    minInc: float = None
+    minInc: typing.Optional[float] = None
 
     #: The SymbolicConstant DEFAULT or a Float specifying the maximum time increment allowed.
     maxInc: typing.Union[SymbolicConstant, float] = None
@@ -85,11 +85,11 @@ class ImplicitDynamicsStep(AnalysisStep):
 
     #: None or a Float specifying the half-increment residual tolerance to be used with the
     #: automatic time incrementation scheme. The default value is None.
-    haftol: float = None
+    haftol: typing.Optional[float] = None
 
     #: None or a Float specifying the half-increment residual tolerance scale factor to be used
     #: with the automatic time incrementation scheme. The default value is None.
-    halfIncScaleFactor: float = None
+    halfIncScaleFactor: typing.Optional[float] = None
 
     #: A Boolean specifying whether to suppress calculation of the half-increment residual. The
     #: default value is OFF.
@@ -143,7 +143,7 @@ class ImplicitDynamicsStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: SymbolicConstant = None
+    explicit: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -179,7 +179,7 @@ class ImplicitDynamicsStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: SymbolicConstant = None
+    procedureType: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
@@ -194,7 +194,7 @@ class ImplicitDynamicsStep(AnalysisStep):
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
-    monitor: Monitor = None
+    monitor: typing.Optional[Monitor] = None
 
     #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
@@ -215,7 +215,7 @@ class ImplicitDynamicsStep(AnalysisStep):
     boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: int = None
+    interactionStates: typing.Optional[int] = None
 
     #: A repository of LoadState objects.
     loadStates: typing.Dict[str, LoadState] = {}
@@ -239,12 +239,12 @@ class ImplicitDynamicsStep(AnalysisStep):
         adiabatic: Boolean = OFF,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
         maxNumInc: int = 100,
-        initialInc: float = None,
-        minInc: float = None,
+        initialInc: typing.Optional[float] = None,
+        minInc: typing.Optional[float] = None,
         maxInc: typing.Union[SymbolicConstant, float] = DEFAULT,
         hafTolMethod: SymbolicConstant = VALUE,
-        haftol: float = None,
-        halfIncScaleFactor: float = None,
+        haftol: typing.Optional[float] = None,
+        halfIncScaleFactor: typing.Optional[float] = None,
         nohaf: Boolean = OFF,
         amplitude: SymbolicConstant = STEP,
         alpha: typing.Union[SymbolicConstant, float] = DEFAULT,
@@ -370,12 +370,12 @@ class ImplicitDynamicsStep(AnalysisStep):
         adiabatic: Boolean = OFF,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
         maxNumInc: int = 100,
-        initialInc: float = None,
-        minInc: float = None,
+        initialInc: typing.Optional[float] = None,
+        minInc: typing.Optional[float] = None,
         maxInc: typing.Union[SymbolicConstant, float] = DEFAULT,
         hafTolMethod: SymbolicConstant = VALUE,
-        haftol: float = None,
-        halfIncScaleFactor: float = None,
+        haftol: typing.Optional[float] = None,
+        halfIncScaleFactor: typing.Optional[float] = None,
         nohaf: Boolean = OFF,
         amplitude: SymbolicConstant = STEP,
         alpha: typing.Union[SymbolicConstant, float] = DEFAULT,

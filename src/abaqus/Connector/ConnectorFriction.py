@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 from .ConnectorOptions import ConnectorOptions
@@ -53,12 +54,12 @@ class ConnectorFriction(ConnectorBehaviorOption):
     #: Possible values are 1 ≤ **tangentDirection** ≤ 6, indicating an available component of
     #: relative motion. This argument applies only if **frictionModel** = USER_CUSTOMIZED and if
     #: **slipStyle** = SPECIFY. The default value is None.
-    tangentDirection: int = None
+    tangentDirection: typing.Optional[int] = None
 
     #: None or a Float specifying the stick stiffness associated with the frictional behavior
     #: in the direction specified by **tangentDirection**. If this argument is omitted, Abaqus
     #: computes an appropriate number for the stick stiffness. The default value is None.
-    stickStiffness: float = None
+    stickStiffness: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the type of the **independentComponents**. Possible values
     #: are POSITION, MOTION, and NO_INDEPENDENT_COMPONENTS. The default value is
@@ -108,7 +109,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
     #: A :py:class:`~abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray` object specifying one ConnectorPotential object for each force
     #: potential contribution. This member can be specified only if
     #: **frictionModel** = USER_CUSTOMIZED, and if **slipStyle** = COMPUTE.
-    connectorPotentials: ConnectorPotentialArray = None
+    connectorPotentials: typing.Optional[ConnectorPotentialArray] = None
 
     #: A sequence of sequences of Floats specifying friction properties. The default value is
     #: an empty sequence.If **frictionModel** = PREDEFINED, each sequence of the table data
@@ -146,8 +147,8 @@ class ConnectorFriction(ConnectorBehaviorOption):
         self,
         frictionModel: SymbolicConstant = PREDEFINED,
         slipStyle: SymbolicConstant = SPECIFY,
-        tangentDirection: int = None,
-        stickStiffness: float = None,
+        tangentDirection: typing.Optional[int] = None,
+        stickStiffness: typing.Optional[float] = None,
         componentType: SymbolicConstant = NO_INDEPENDENT_COMPONENTS,
         slipDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
@@ -157,7 +158,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
         contactForceComponent: int = 0,
         forcePotentialOperator: SymbolicConstant = SUM,
         forcePotentialExponent: float = 2,
-        connectorPotentials: ConnectorPotentialArray = None,
+        connectorPotentials: typing.Optional[ConnectorPotentialArray] = None,
         table: tuple = (),
         independentComponents: tuple = (),
     ):

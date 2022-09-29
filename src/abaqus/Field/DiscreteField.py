@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .DataTableArray import DataTableArray
 from .Field import Field
@@ -37,7 +38,7 @@ class DiscreteField(Field):
     dataWidth: int = 1
 
     #: A :py:class:`~abaqus.Field.DataTableArray.DataTableArray` object.
-    data: DataTableArray = None
+    data: typing.Optional[DataTableArray] = None
 
     #: A String specifying the description of the field. The default value is an empty string.
     description: str = ""
@@ -59,7 +60,7 @@ class DiscreteField(Field):
         fieldType: SymbolicConstant,
         location: SymbolicConstant = NODES,
         dataWidth: int = 1,
-        data: DataTableArray = None,
+        data: typing.Optional[DataTableArray] = None,
         description: str = "",
         orientationType: SymbolicConstant = CARTESIAN,
         partLevelOrientation: Boolean = OFF,
@@ -203,7 +204,7 @@ class DiscreteField(Field):
         self,
         location: SymbolicConstant = NODES,
         dataWidth: int = 1,
-        data: DataTableArray = None,
+        data: typing.Optional[DataTableArray] = None,
         description: str = "",
         orientationType: SymbolicConstant = CARTESIAN,
         partLevelOrientation: Boolean = OFF,

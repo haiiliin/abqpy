@@ -56,7 +56,7 @@ class BasicOptions(_CopyOptionsBase):
 
     #: A SymbolicConstant specifying the extrapolation algorithm. This member is for internal
     #: use only. The only possible value is EXTRAP_COMPUTE_AVERAGE.
-    extrapAlgorithm: SymbolicConstant = None
+    extrapAlgorithm: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the refinement level for drawing curves. Possible values
     #: are EXTRA_COARSE, COARSE, MEDIUM, FINE, and EXTRA_FINE. The default value is COARSE.
@@ -162,11 +162,11 @@ class BasicOptions(_CopyOptionsBase):
 
     #: An Int specifying the number of segments to display when **sweepArs** = ON. The default
     #: value is 10 or 20, depending on characteristics of your model.
-    numSweepSegmentsArs: int = None
+    numSweepSegmentsArs: typing.Optional[int] = None
 
     #: An Int specifying the number of segments to display when **sweepElem** = ON. The default
     #: value is 10 or 20, depending on characteristics of your model.
-    numSweepSegmentsElem: int = None
+    numSweepSegmentsElem: typing.Optional[int] = None
 
     #: A SymbolicConstant specifying the numeric form in which to display results that contain
     #: complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
@@ -335,7 +335,7 @@ class BasicOptions(_CopyOptionsBase):
 
     #: An Int specifying the types of sweepable elements and surfaces contained in the model,
     #: if any.
-    sweepModelType: int = None
+    sweepModelType: typing.Optional[int] = None
 
     #: A Boolean specifying whether to average the element output. The default value is ON.
     averageElementOutput: Boolean = ON
@@ -363,15 +363,15 @@ class BasicOptions(_CopyOptionsBase):
 
     #: An Int specifying the number of sectors of a cyclic symmetric model. The value is
     #: automatically computed from the cyclic symmetric model. This value is read-only.
-    numSectors: int = None
+    numSectors: typing.Optional[int] = None
 
     #: A Float specifying the sector angle of a cyclic symmetric model. The value is
     #: automatically computed from the cyclic symmetric model. This value is read-only.
-    sectorAngle: float = None
+    sectorAngle: typing.Optional[float] = None
 
     #: A Float specifying the automatic extrude depth used to extrude analytical rigid surfaces
     #: in the default setting. This value is read-only.
-    automaticExtrudeDepth: float = None
+    automaticExtrudeDepth: typing.Optional[float] = None
 
     #: A String specifying the name of the coordinate system driving the moving camera.
     cameraCsysName: str = ""
@@ -406,7 +406,7 @@ class BasicOptions(_CopyOptionsBase):
     @abaqus_method_doc
     def setValues(
         self,
-        options: "BasicOptions" = None,
+        options: typing.Optional["BasicOptions"] = None,
         *,
         cameraCsysName: str = "",
         cameraMovesWithCsys: Boolean = OFF,
@@ -441,8 +441,8 @@ class BasicOptions(_CopyOptionsBase):
         sweepStartAngleElem: float = 0,
         sweepEndAngleArs: float = 360,
         sweepEndAngleElem: float = 180,
-        numSweepSegmentsArs: int = None,
-        numSweepSegmentsElem: int = None,
+        numSweepSegmentsArs: typing.Optional[int] = None,
+        numSweepSegmentsElem: typing.Optional[int] = None,
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
         sectionResults: SymbolicConstant = USE_BOTTOM,
@@ -480,7 +480,7 @@ class BasicOptions(_CopyOptionsBase):
         coordSystemDisplay: Boolean = OFF,
         scratchCoordSystemDisplay: Boolean = OFF,
         transformationType: SymbolicConstant = DEFAULT,
-        datumCsys: DatumCsys = None, 
+        datumCsys: typing.Optional[DatumCsys] = None, 
         rigidTransformPrimary: Boolean = OFF,
         rigidTransformDeformed: Boolean = OFF,
         transformOnDeformed: Boolean = ON,

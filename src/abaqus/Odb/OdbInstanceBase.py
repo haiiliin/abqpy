@@ -34,11 +34,11 @@ class OdbInstanceBase:
 
     #: A SymbolicConstant specifying the type of the Part object. Only a value of
     #: DEFORMABLE_BODY is currently supported.
-    type: SymbolicConstant = None
+    type: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the dimensionality of the Part object. Possible values are
     #: THREE_D, TWO_D_PLANAR, AXISYMMETRIC, and UNKNOWN_DIMENSION.
-    embeddedSpace: SymbolicConstant = None
+    embeddedSpace: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the state of the Instance as modified by the analysis.
     #: This member is only present if the Instance is part of the RootAssemblyState tree.

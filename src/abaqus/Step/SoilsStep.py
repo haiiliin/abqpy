@@ -57,7 +57,7 @@ class SoilsStep(AnalysisStep):
     #: A Float specifying the damping intensity of the automatic damping algorithm if the
     #: problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
     #: value is 2×10-4.
-    stabilizationMagnitude: float = None
+    stabilizationMagnitude: typing.Optional[float] = None
 
     #: A Boolean specifying whether a creep response occurs during this step. The default value
     #: is ON.
@@ -69,15 +69,15 @@ class SoilsStep(AnalysisStep):
 
     #: A Float specifying the initial time increment. The default value is the total time
     #: period for the step.
-    initialInc: float = None
+    initialInc: typing.Optional[float] = None
 
     #: A Float specifying the minimum time increment allowed. The default value is the smaller
     #: of the suggested initial time increment or 10−5 times the total time period.
-    minInc: float = None
+    minInc: typing.Optional[float] = None
 
     #: A Float specifying the maximum time increment allowed. The default value is the total
     #: time period for the step.
-    maxInc: float = None
+    maxInc: typing.Optional[float] = None
 
     #: An Int specifying the maximum number of increments in a step. The default value is 100.
     maxNumInc: int = 100
@@ -88,7 +88,7 @@ class SoilsStep(AnalysisStep):
 
     #: None or a Float specifying the maximum pore pressure change permitted in any increment
     #: (in pressure units) in a transient consolidation analysis. The default value is None.
-    utol: float = None
+    utol: typing.Optional[float] = None
 
     #: A Float specifying the maximum allowable difference in the creep strain increment
     #: calculated from the creep strain rates at the beginning and end of the increment. The
@@ -144,7 +144,7 @@ class SoilsStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: SymbolicConstant = None
+    explicit: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -180,7 +180,7 @@ class SoilsStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: SymbolicConstant = None
+    procedureType: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
@@ -195,7 +195,7 @@ class SoilsStep(AnalysisStep):
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
-    monitor: Monitor = None
+    monitor: typing.Optional[Monitor] = None
 
     #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
@@ -216,7 +216,7 @@ class SoilsStep(AnalysisStep):
     boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: int = None
+    interactionStates: typing.Optional[int] = None
 
     #: A repository of LoadState objects.
     loadStates: typing.Dict[str, LoadState] = {}
@@ -237,15 +237,15 @@ class SoilsStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         stabilizationMethod: SymbolicConstant = NONE,
-        stabilizationMagnitude: float = None,
+        stabilizationMagnitude: typing.Optional[float] = None,
         creep: Boolean = ON,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
-        initialInc: float = None,
-        minInc: float = None,
-        maxInc: float = None,
+        initialInc: typing.Optional[float] = None,
+        minInc: typing.Optional[float] = None,
+        maxInc: typing.Optional[float] = None,
         maxNumInc: int = 100,
         end: SymbolicConstant = PERIOD,
-        utol: float = None,
+        utol: typing.Optional[float] = None,
         cetol: float = 0,
         amplitude: SymbolicConstant = STEP,
         extrapolation: SymbolicConstant = LINEAR,
@@ -370,15 +370,15 @@ class SoilsStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         stabilizationMethod: SymbolicConstant = NONE,
-        stabilizationMagnitude: float = None,
+        stabilizationMagnitude: typing.Optional[float] = None,
         creep: Boolean = ON,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
-        initialInc: float = None,
-        minInc: float = None,
-        maxInc: float = None,
+        initialInc: typing.Optional[float] = None,
+        minInc: typing.Optional[float] = None,
+        maxInc: typing.Optional[float] = None,
         maxNumInc: int = 100,
         end: SymbolicConstant = PERIOD,
-        utol: float = None,
+        utol: typing.Optional[float] = None,
         cetol: float = 0,
         amplitude: SymbolicConstant = STEP,
         extrapolation: SymbolicConstant = LINEAR,

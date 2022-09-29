@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from .Section import Section
 from .TransverseShearShell import TransverseShearShell
@@ -23,4 +24,4 @@ class ShellSection(Section):
     name: str = ""
 
     #: A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object specifying the transverse shear stiffness properties.
-    transverseShear: TransverseShearShell = None
+    transverseShear: typing.Optional[TransverseShearShell] = None

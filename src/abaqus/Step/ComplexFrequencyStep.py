@@ -45,7 +45,7 @@ class ComplexFrequencyStep(AnalysisStep):
 
     #: None or a Float specifying the shift point in cycles per time. The default value is
     #: None.
-    shift: float = None
+    shift: typing.Optional[float] = None
 
     #: A Boolean specifying whether to add to the damping matrix contributions due to friction
     #: effects. The default value is OFF.
@@ -57,11 +57,11 @@ class ComplexFrequencyStep(AnalysisStep):
 
     #: None or a Float specifying the minimum frequency of interest in cycles per time. The
     #: default value is None.
-    minEigen: float = None
+    minEigen: typing.Optional[float] = None
 
     #: None or a Float specifying the maximum frequency of interest in cycles per time. The
     #: default value is None.
-    maxEigen: float = None
+    maxEigen: typing.Optional[float] = None
 
     #: None or a Float specifying the frequency at which to evaluate frequency-dependent
     #: properties for viscoelasticity, springs, and dashpots during the eigenvalue extraction.
@@ -69,7 +69,7 @@ class ComplexFrequencyStep(AnalysisStep):
     #: frequency-dependent springs and dashpots at zero frequency and will not consider the
     #: stiffness contributions from frequency-domain viscoelasticity in the step. The default
     #: value is None.
-    propertyEvaluationFrequency: float = None
+    propertyEvaluationFrequency: typing.Optional[float] = None
 
     #: A String specifying the name of the previous step. The new step appears after this step
     #: in the list of analysis steps.
@@ -80,7 +80,7 @@ class ComplexFrequencyStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: SymbolicConstant = None
+    explicit: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -116,7 +116,7 @@ class ComplexFrequencyStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: SymbolicConstant = None
+    procedureType: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
@@ -131,7 +131,7 @@ class ComplexFrequencyStep(AnalysisStep):
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
-    monitor: Monitor = None
+    monitor: typing.Optional[Monitor] = None
 
     #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
@@ -152,7 +152,7 @@ class ComplexFrequencyStep(AnalysisStep):
     boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: int = None
+    interactionStates: typing.Optional[int] = None
 
     #: A repository of LoadState objects.
     loadStates: typing.Dict[str, LoadState] = {}
@@ -170,13 +170,13 @@ class ComplexFrequencyStep(AnalysisStep):
         previous: str,
         numEigen: SymbolicConstant = ALL,
         description: str = "",
-        shift: float = None,
+        shift: typing.Optional[float] = None,
         frictionDamping: Boolean = OFF,
         matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
         maintainAttributes: Boolean = False,
-        minEigen: float = None,
-        maxEigen: float = None,
-        propertyEvaluationFrequency: float = None,
+        minEigen: typing.Optional[float] = None,
+        maxEigen: typing.Optional[float] = None,
+        propertyEvaluationFrequency: typing.Optional[float] = None,
     ):
         """This method creates a ComplexFrequencyStep object.
 
@@ -239,12 +239,12 @@ class ComplexFrequencyStep(AnalysisStep):
         self,
         numEigen: SymbolicConstant = ALL,
         description: str = "",
-        shift: float = None,
+        shift: typing.Optional[float] = None,
         frictionDamping: Boolean = OFF,
         matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        minEigen: float = None,
-        maxEigen: float = None,
-        propertyEvaluationFrequency: float = None,
+        minEigen: typing.Optional[float] = None,
+        maxEigen: typing.Optional[float] = None,
+        propertyEvaluationFrequency: typing.Optional[float] = None,
     ):
         """This method modifies the ComplexFrequencyStep object.
 

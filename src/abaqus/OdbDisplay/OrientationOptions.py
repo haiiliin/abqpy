@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..PlotOptions.DGOrientationOptions import DGOrientationOptions
 from ..UtilityAndView.abaqusConstants import *
@@ -81,7 +82,7 @@ class OrientationOptions(DGOrientationOptions):
     @abaqus_method_doc
     def setValues(
         self,
-        options: "OrientationOptions" = None,
+        options: typing.Optional["OrientationOptions"] = None,
         axis1Color: str = "",
         showAxis1: Boolean = ON,
         axis2Color: str = "",

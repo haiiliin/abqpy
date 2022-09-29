@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from .OdbSet import OdbSet
 from ..UtilityAndView.abaqusConstants import *
@@ -20,11 +21,11 @@ class BeamOrientation:
 
     #: A SymbolicConstant specifying the orientation assignment method. Possible values are
     #: N1_COSINES, CSYS, and VECT.
-    method: SymbolicConstant = None
+    method: typing.Optional[SymbolicConstant] = None
 
     #: An :py:class:`~abaqus.Odb.OdbSet.OdbSet` object specifying a region for which the beam orientation is defined.
     region: OdbSet = OdbSet("set", ())
 
     #: A tuple of Floats specifying direction cosines of the n1-direction of the beam
     #: cross-section.
-    vector: float = None
+    vector: typing.Optional[float] = None

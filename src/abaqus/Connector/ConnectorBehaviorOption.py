@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
@@ -63,10 +64,10 @@ class ConnectorBehaviorOption:
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         exponentialDecayDefinition: SymbolicConstant = COEFFICIENTS,
-        shearStressLimit: float = None,
+        shearStressLimit: typing.Optional[float] = None,
         maximumElasticSlip: SymbolicConstant = FRACTION,
-        fraction: float = None,
-        absoluteDistance: float = None,
+        fraction: typing.Optional[float] = None,
+        absoluteDistance: typing.Optional[float] = None,
         table: tuple = (),
     ) -> TangentialBehavior:
         """This method creates a TangentialBehavior object.

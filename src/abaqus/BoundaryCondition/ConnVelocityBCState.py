@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from .BoundaryConditionState import BoundaryConditionState
 from ..UtilityAndView.abaqusConstants import *
@@ -24,59 +25,59 @@ class ConnVelocityBCState(BoundaryConditionState):
     """
 
     #: A Float specifying the velocity component in the connector's local 1-direction.
-    v1: float = None
+    v1: typing.Optional[float] = None
 
     #: A Float specifying the velocity component in the connector's local 2-direction.
-    v2: float = None
+    v2: typing.Optional[float] = None
 
     #: A Float specifying the velocity component in the connector's local 3-direction.
-    v3: float = None
+    v3: typing.Optional[float] = None
 
     #: A Float specifying the rotational velocity component in the connector's local
     #: 4-direction.
-    vr1: float = None
+    vr1: typing.Optional[float] = None
 
     #: A Float specifying the rotational velocity component in the connector's local
     #: 5-direction.
-    vr2: float = None
+    vr2: typing.Optional[float] = None
 
     #: A Float specifying the rotational velocity component in the connector's local
     #: 6-direction.
-    vr3: float = None
+    vr3: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the velocity component in the
     #: connector's local 1-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and
     #: MODIFIED.
-    v1State: SymbolicConstant = None
+    v1State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the velocity component in the
     #: connector's local 2-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and
     #: MODIFIED.
-    v2State: SymbolicConstant = None
+    v2State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the velocity component in the
     #: connector's local 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and
     #: MODIFIED.
-    v3State: SymbolicConstant = None
+    v3State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the rotational velocity component
     #: in the connector's local 4-direction. Possible values are UNSET, SET, UNCHANGED, FREED,
     #: and MODIFIED.
-    vr1State: SymbolicConstant = None
+    vr1State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the rotational velocity component
     #: in the connector's local 5-direction. Possible values are UNSET, SET, UNCHANGED, FREED,
     #: and MODIFIED.
-    vr2State: SymbolicConstant = None
+    vr2State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the rotational velocity component
     #: in the connector's local 6-direction. Possible values are UNSET, SET, UNCHANGED, FREED,
     #: and MODIFIED.
-    vr3State: SymbolicConstant = None
+    vr3State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    amplitudeState: SymbolicConstant = None
+    amplitudeState: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the BoundaryConditionState object. Possible values are:
     #: 
@@ -92,7 +93,7 @@ class ConnVelocityBCState(BoundaryConditionState):
     #: - MODIFIED_FROM_BASE_STATE
     #: - DEACTIVATED_FROM_BASE_STATE
     #: - BUILT_INTO_MODES
-    status: SymbolicConstant = None
+    status: typing.Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the amplitude reference. The String is empty if the
     #: boundary condition has no amplitude reference.

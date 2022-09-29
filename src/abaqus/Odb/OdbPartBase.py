@@ -99,7 +99,7 @@ class OdbPartBase:
         connectivity: tuple,
         type: str,
         elementSetName: str = "",
-        sectionCategory: SectionCategory = None,
+        sectionCategory: typing.Optional[SectionCategory] = None,
     ):
         """This method adds elements to an OdbPart object using element labels and nodal
         connectivity.
@@ -127,8 +127,8 @@ class OdbPartBase:
         self,
         elementData: tuple,
         type: str,
-        elementSetName: str = None,
-        sectionCategory: SectionCategory = None,
+        elementSetName: typing.Optional[str] = None,
+        sectionCategory: typing.Optional[SectionCategory] = None,
     ):
         """This method adds elements to an OdbPart object using a sequence of element labels and
         nodal connectivity.
@@ -154,7 +154,7 @@ class OdbPartBase:
         ...
 
     @typing.overload
-    def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: str = None):
+    def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: typing.Optional[str] = None):
         """This method adds nodes to an OdbPart object using node labels and coordinates.
         Warning:Adding nodes not in ascending order of their labels may cause Abaqus/Viewer to
         plot contours incorrectly.
@@ -172,7 +172,7 @@ class OdbPartBase:
 
     @typing.overload
     @abaqus_method_doc
-    def addNodes(self, nodeData: tuple, nodeSetName: str = None):
+    def addNodes(self, nodeData: tuple, nodeSetName: typing.Optional[str] = None):
         """This method adds nodes to an OdbPart object using a sequence of node labels and
         coordinates.
         Warning:Adding nodes not in ascending order of their labels may cause Abaqus/Viewer to

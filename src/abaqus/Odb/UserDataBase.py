@@ -60,7 +60,7 @@ class UserDataBase:
     annotations: typing.Dict[str, Annotation] = {}
 
     #: A tuple of pairs of Floats specifying the **X - Y** data pairs.
-    data: float = None
+    data: typing.Optional[float] = None
 
     @abaqus_method_doc
     def XYData(
@@ -73,8 +73,8 @@ class UserDataBase:
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: QuantityType = None, 
-        axis2QuantityType: QuantityType = None, 
+        axis1QuantityType: typing.Optional[QuantityType] = None, 
+        axis2QuantityType: typing.Optional[QuantityType] = None, 
     ):
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 

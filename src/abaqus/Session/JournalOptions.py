@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .NumberFormat import NumberFormat
 from ..UtilityAndView.abaqusConstants import *
@@ -25,9 +26,9 @@ class JournalOptions:
         self,
         replayGeometry: SymbolicConstant = COMPRESSEDINDEX,
         recoverGeometry: SymbolicConstant = COMPRESSEDINDEX,
-        defaultFormat: NumberFormat = None, 
-        fieldReportFormat: NumberFormat = None, 
-        geometryFormat: NumberFormat = None, 
+        defaultFormat: typing.Optional[NumberFormat] = None, 
+        fieldReportFormat: typing.Optional[NumberFormat] = None, 
+        geometryFormat: typing.Optional[NumberFormat] = None, 
     ):
         """This method modifies the JournalOptions object.
 

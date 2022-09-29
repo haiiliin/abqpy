@@ -45,9 +45,9 @@ class BodyForce(Load):
         region: Region,
         field: str = "",
         distributionType: SymbolicConstant = UNIFORM,
-        comp1: float = None,
-        comp2: float = None,
-        comp3: float = None,
+        comp1: typing.Optional[float] = None,
+        comp2: typing.Optional[float] = None,
+        comp3: typing.Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method creates a BodyForce object.
@@ -97,9 +97,9 @@ class BodyForce(Load):
         self,
         field: str = "",
         distributionType: SymbolicConstant = UNIFORM,
-        comp1: float = None,
-        comp2: float = None,
-        comp3: float = None,
+        comp1: typing.Optional[float] = None,
+        comp2: typing.Optional[float] = None,
+        comp3: typing.Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing BodyForce object in the step where it is

@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .CompositePly import CompositePly
 from .CompositePlyArray import CompositePlyArray
@@ -184,7 +185,7 @@ class CompositeLayup:
         axis: SymbolicConstant = AXIS_1,
         angle: float = 0,
         additionalRotationType: SymbolicConstant = ROTATION_NONE,
-        orientation: SymbolicConstant = None,
+        orientation: typing.Optional[SymbolicConstant] = None,
         additionalRotationField: str = "",
     ) -> CompositePly:
         """This method creates a CompositePly object.
@@ -292,8 +293,8 @@ class CompositeLayup:
         integrationRule: SymbolicConstant = SIMPSON,
         temperature: SymbolicConstant = GRADIENT,
         idealization: SymbolicConstant = NO_IDEALIZATION,
-        nTemp: int = None,
-        thicknessModulus: float = None,
+        nTemp: typing.Optional[int] = None,
+        thicknessModulus: typing.Optional[float] = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         layupName: str = "",
@@ -409,8 +410,8 @@ class CompositeLayup:
         poisson: float = 0,
         integrationRule: SymbolicConstant = SIMPSON,
         temperature: SymbolicConstant = GRADIENT,
-        nTemp: int = None,
-        thicknessModulus: float = None,
+        nTemp: typing.Optional[int] = None,
+        thicknessModulus: typing.Optional[float] = None,
         useDensity: Boolean = OFF,
         density: float = 0,
     ) -> GeometryShellSection:
@@ -506,8 +507,8 @@ class CompositeLayup:
         integrationRule: SymbolicConstant = SIMPSON,
         temperature: SymbolicConstant = GRADIENT,
         idealization: SymbolicConstant = NO_IDEALIZATION,
-        nTemp: int = None,
-        thicknessModulus: float = None,
+        nTemp: typing.Optional[int] = None,
+        thicknessModulus: typing.Optional[float] = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         thicknessField: str = "",

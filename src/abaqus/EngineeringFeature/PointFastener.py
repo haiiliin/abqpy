@@ -41,7 +41,7 @@ class PointFastener(Fastener):
     #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object of length 2 specifying the direction of projection. Instead of
     #: through a ConstrainedSketchVertex, each point may be specified through a tuple of coordinates. The
     #: default value is None.
-    directionVector: tuple = None
+    directionVector: typing.Optional[tuple] = None
 
     #: A :py:class:`~abaqus.Region.RegionArray.RegionArray` object specifying surfaces to be fastened. The default value is MODEL.
     targetSurfaces: RegionArray = MODEL
@@ -105,7 +105,7 @@ class PointFastener(Fastener):
     #: None or a DatumCsys object specifying the local coordinate system. If **localCsys** = None,
     #: the global coordinate system is used. When this member is queried, it returns an Int.
     #: The default value is None.
-    localCsys: int = None
+    localCsys: typing.Optional[int] = None
 
     #: A SymbolicConstant specifying the fastener connection type. Possible values are
     #: CONNECTOR and BEAM_MPC. The default value is CONNECTOR.
@@ -119,7 +119,7 @@ class PointFastener(Fastener):
     #: point in generated connectors. If **connectorOrientationLocalCsys1** = None, the degrees of
     #: freedom are defined in the global coordinate system. When this member is queried, it
     #: returns an Int. The default value is None.
-    connectorOrientationLocalCsys1: int = None
+    connectorOrientationLocalCsys1: typing.Optional[int] = None
 
     #: A SymbolicConstant specifying the axis of a datum coordinate system about which an
     #: additional rotation is applied for the first point in generated connectors. Possible
@@ -139,7 +139,7 @@ class PointFastener(Fastener):
     #: connector point in generated connectors. If **connectorOrientationLocalCsys2** = None, the
     #: degrees of freedom are defined in the global coordinate system. When this member is
     #: queried, it returns an Int. The default value is None.
-    connectorOrientationLocalCsys2: int = None
+    connectorOrientationLocalCsys2: typing.Optional[int] = None
 
     #: A SymbolicConstant specifying the axis of a datum coordinate system about which an
     #: additional rotation is applied for the second point in generated connectors. Possible
@@ -161,7 +161,7 @@ class PointFastener(Fastener):
         name: str,
         region: Region,
         physicalRadius: float,
-        directionVector: tuple = None,
+        directionVector: typing.Optional[tuple] = None,
         targetSurfaces: RegionArray = MODEL,
         ur1: Boolean = ON,
         ur2: Boolean = ON,
@@ -174,14 +174,14 @@ class PointFastener(Fastener):
         weightingMethod: SymbolicConstant = UNIFORM,
         additionalMass: float = 0,
         adjustOrientation: Boolean = ON,
-        localCsys: int = None,
+        localCsys: typing.Optional[int] = None,
         connectionType: SymbolicConstant = CONNECTOR,
         sectionName: str = "",
-        connectorOrientationLocalCsys1: int = None,
+        connectorOrientationLocalCsys1: typing.Optional[int] = None,
         axis1: SymbolicConstant = AXIS_1,
         angle1: float = 0,
         orient2SameAs1: Boolean = ON,
-        connectorOrientationLocalCsys2: int = None,
+        connectorOrientationLocalCsys2: typing.Optional[int] = None,
         axis2: SymbolicConstant = AXIS_1,
         angle2: float = 0,
         unsorted: Boolean = OFF,
@@ -308,7 +308,7 @@ class PointFastener(Fastener):
     @abaqus_method_doc
     def setValues(
         self,
-        directionVector: tuple = None,
+        directionVector: typing.Optional[tuple] = None,
         targetSurfaces: RegionArray = MODEL,
         ur1: Boolean = ON,
         ur2: Boolean = ON,
@@ -321,14 +321,14 @@ class PointFastener(Fastener):
         weightingMethod: SymbolicConstant = UNIFORM,
         additionalMass: float = 0,
         adjustOrientation: Boolean = ON,
-        localCsys: int = None,
+        localCsys: typing.Optional[int] = None,
         connectionType: SymbolicConstant = CONNECTOR,
         sectionName: str = "",
-        connectorOrientationLocalCsys1: int = None,
+        connectorOrientationLocalCsys1: typing.Optional[int] = None,
         axis1: SymbolicConstant = AXIS_1,
         angle1: float = 0,
         orient2SameAs1: Boolean = ON,
-        connectorOrientationLocalCsys2: int = None,
+        connectorOrientationLocalCsys2: typing.Optional[int] = None,
         axis2: SymbolicConstant = AXIS_1,
         angle2: float = 0,
         unsorted: Boolean = OFF,

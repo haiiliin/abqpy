@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .BodyCharge import BodyCharge
 from .BodyConcentrationFlux import BodyConcentrationFlux
@@ -270,9 +271,9 @@ class LoadModel(ModelBase):
         region: Region,
         field: str = "",
         distributionType: SymbolicConstant = UNIFORM,
-        comp1: float = None,
-        comp2: float = None,
-        comp3: float = None,
+        comp1: typing.Optional[float] = None,
+        comp2: typing.Optional[float] = None,
+        comp3: typing.Optional[float] = None,
         amplitude: str = UNSET,
     ) -> BodyForce:
         """This method creates a BodyForce object.
@@ -604,12 +605,12 @@ class LoadModel(ModelBase):
         region: Region,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
-        cf1: float = None,
-        cf2: float = None,
-        cf3: float = None,
+        cf1: typing.Optional[float] = None,
+        cf2: typing.Optional[float] = None,
+        cf3: typing.Optional[float] = None,
         amplitude: str = UNSET,
         follower: Boolean = OFF,
-        localCsys: int = None,
+        localCsys: typing.Optional[int] = None,
     ) -> ConcentratedForce:
         """This method creates a ConcentratedForce object.
 
@@ -796,9 +797,9 @@ class LoadModel(ModelBase):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        f1: float = None,
-        f2: float = None,
-        f3: float = None,
+        f1: typing.Optional[float] = None,
+        f2: typing.Optional[float] = None,
+        f3: typing.Optional[float] = None,
         amplitude: str = UNSET,
     ) -> ConnectorForce:
         """This method creates a ConnectorForce object on a wire region. Alternatively, the load
@@ -868,9 +869,9 @@ class LoadModel(ModelBase):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        m1: float = None,
-        m2: float = None,
-        m3: float = None,
+        m1: typing.Optional[float] = None,
+        m2: typing.Optional[float] = None,
+        m3: typing.Optional[float] = None,
         amplitude: str = UNSET,
     ) -> ConnectorMoment:
         """This method creates a ConnectorMoment object on a wire region. Alternatively, the load
@@ -1003,10 +1004,10 @@ class LoadModel(ModelBase):
         createStepName: str,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
-        region: Region = None,
-        comp1: float = None,
-        comp2: float = None,
-        comp3: float = None,
+        region: typing.Optional[Region] = None,
+        comp1: typing.Optional[float] = None,
+        comp2: typing.Optional[float] = None,
+        comp3: typing.Optional[float] = None,
         amplitude: str = UNSET,
     ) -> Gravity:
         """This method creates a Gravity object.
@@ -1074,7 +1075,7 @@ class LoadModel(ModelBase):
         ur2: Boolean = OFF,
         ur3: Boolean = OFF,
         referencePoint: tuple = (),
-        localCoordinates: int = None,
+        localCoordinates: typing.Optional[int] = None,
     ) -> InertiaRelief:
         """This method creates an InertiaRelief object.
 
@@ -1193,9 +1194,9 @@ class LoadModel(ModelBase):
         region: Region,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
-        comp1: float = None,
-        comp2: float = None,
-        comp3: float = None,
+        comp1: typing.Optional[float] = None,
+        comp2: typing.Optional[float] = None,
+        comp3: typing.Optional[float] = None,
         amplitude: str = UNSET,
         system: SymbolicConstant = GLOBAL,
     ) -> LineLoad:
@@ -1263,12 +1264,12 @@ class LoadModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        cm1: float = None,
-        cm2: float = None,
-        cm3: float = None,
+        cm1: typing.Optional[float] = None,
+        cm2: typing.Optional[float] = None,
+        cm3: typing.Optional[float] = None,
         amplitude: str = UNSET,
         follower: Boolean = OFF,
-        localCsys: int = None,
+        localCsys: typing.Optional[int] = None,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
     ) -> Moment:
@@ -1344,9 +1345,9 @@ class LoadModel(ModelBase):
         region: Region,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
-        comp1: float = None,
-        comp2: float = None,
-        comp3: float = None,
+        comp1: typing.Optional[float] = None,
+        comp2: typing.Optional[float] = None,
+        comp3: typing.Optional[float] = None,
         amplitude: str = UNSET,
     ) -> PEGLoad:
         """This method creates a PEGLoad object.
@@ -1744,7 +1745,7 @@ class LoadModel(ModelBase):
         region: Region,
         globalStep: str,
         globalDrivingRegion: str = "",
-        absoluteExteriorTolerance: float = None,
+        absoluteExteriorTolerance: typing.Optional[float] = None,
         exteriorTolerance: float = 0,
         globalIncrement: int = 0,
     ) -> SubmodelSB:
@@ -2173,7 +2174,7 @@ class LoadModel(ModelBase):
         amplitude: str = UNSET,
         angle: float = 0,
         axis: SymbolicConstant = AXIS_1,
-        localCsys: int = None,
+        localCsys: typing.Optional[int] = None,
         userCsys: str = "",
         directionVector: tuple = (),
         follower: Boolean = ON,

@@ -99,7 +99,7 @@ class ResponseSpectrumStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: SymbolicConstant = None
+    explicit: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -135,7 +135,7 @@ class ResponseSpectrumStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: SymbolicConstant = None
+    procedureType: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
@@ -150,7 +150,7 @@ class ResponseSpectrumStep(AnalysisStep):
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
-    monitor: Monitor = None
+    monitor: typing.Optional[Monitor] = None
 
     #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
@@ -171,7 +171,7 @@ class ResponseSpectrumStep(AnalysisStep):
     boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: int = None
+    interactionStates: typing.Optional[int] = None
 
     #: A repository of LoadState objects.
     loadStates: typing.Dict[str, LoadState] = {}
@@ -191,11 +191,11 @@ class ResponseSpectrumStep(AnalysisStep):
         description: str = "",
         comp: SymbolicConstant = SINGLE_DIRECTION,
         sum: SymbolicConstant = ABS,
-        directDamping: DirectDamping = None, 
-        compositeDamping: CompositeDamping = None, 
-        rayleighDamping: RayleighDamping = None, 
-        directDampingByFrequency: DirectDampingByFrequency = None, 
-        rayleighDampingByFrequency: RayleighDampingByFrequency = None, 
+        directDamping: typing.Optional[DirectDamping] = None, 
+        compositeDamping: typing.Optional[CompositeDamping] = None, 
+        rayleighDamping: typing.Optional[RayleighDamping] = None, 
+        directDampingByFrequency: typing.Optional[DirectDampingByFrequency] = None, 
+        rayleighDampingByFrequency: typing.Optional[RayleighDampingByFrequency] = None, 
         maintainAttributes: Boolean = False,
     ):
         """This method creates a ResponseSpectrumStep object.
@@ -255,11 +255,11 @@ class ResponseSpectrumStep(AnalysisStep):
         description: str = "",
         comp: SymbolicConstant = SINGLE_DIRECTION,
         sum: SymbolicConstant = ABS,
-        directDamping: DirectDamping = None, 
-        compositeDamping: CompositeDamping = None, 
-        rayleighDamping: RayleighDamping = None, 
-        directDampingByFrequency: DirectDampingByFrequency = None, 
-        rayleighDampingByFrequency: RayleighDampingByFrequency = None, 
+        directDamping: typing.Optional[DirectDamping] = None, 
+        compositeDamping: typing.Optional[CompositeDamping] = None, 
+        rayleighDamping: typing.Optional[RayleighDamping] = None, 
+        directDampingByFrequency: typing.Optional[DirectDampingByFrequency] = None, 
+        rayleighDampingByFrequency: typing.Optional[RayleighDampingByFrequency] = None, 
     ):
         """This method modifies the ResponseSpectrumStep object.
 

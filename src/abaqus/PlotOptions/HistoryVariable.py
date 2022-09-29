@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -24,4 +25,4 @@ class HistoryVariable:
     #: specifying the step label. *stepNumber*: An Int specifying the step
     #: number. *procedureDomain*: A SymbolicConstant specifying the analysis type of the step,
     #: which can have these values: “TIME,” “FREQUENCY,” or “MODAL.”
-    steps: SymbolicConstant = None
+    steps: typing.Optional[SymbolicConstant] = None

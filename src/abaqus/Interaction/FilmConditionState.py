@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from .InteractionState import InteractionState
 from ..UtilityAndView.abaqusConstants import *
@@ -25,29 +26,29 @@ class FilmConditionState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **interactionProperty** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    interactionPropertyState: SymbolicConstant = None
+    interactionPropertyState: typing.Optional[SymbolicConstant] = None
 
     #: A Float specifying the sink temperature.
-    sinkTemperature: float = None
+    sinkTemperature: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the **sinkTemperature** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    sinkTemperatureState: SymbolicConstant = None
+    sinkTemperatureState: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **sinkAmplitude** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    sinkAmplitudeState: SymbolicConstant = None
+    sinkAmplitudeState: typing.Optional[SymbolicConstant] = None
 
     #: A Float specifying the film coefficient.
-    filmCoeff: float = None
+    filmCoeff: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the **filmCoeff** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    filmCoeffState: SymbolicConstant = None
+    filmCoeffState: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **filmCoeffAmplitude** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    filmCoeffAmplitudeState: SymbolicConstant = None
+    filmCoeffAmplitudeState: typing.Optional[SymbolicConstant] = None
 
     #: A String specifying the FilmConditionProp object associated with this interaction.
     interactionProperty: str = ""
@@ -72,4 +73,4 @@ class FilmConditionState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: SymbolicConstant = None
+    status: typing.Optional[SymbolicConstant] = None

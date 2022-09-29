@@ -41,11 +41,11 @@ class OdbData(_OptionsBase):
     #: - A String specifying a sequence of frame numbers; for example, `'3:5'` and `'3:15:3'`.
     #: For these expressions a negative number will indicate reverse numbering: -1 is the last
     #: frame of the step, -2 is the one before the last frame. Frame numbering starts at 0.
-    activeFrames: SymbolicConstant = None
+    activeFrames: typing.Optional[SymbolicConstant] = None
 
     #: A tuple of (String, Float) tuples specifying the stepName and the stepPeriod.
     #: Alternatively, this member may take the value ODB_VALUES.
-    stepPeriods: float = None
+    stepPeriods: typing.Optional[float] = None
 
     #: A repository of HistoryVariable objects specifying the history request label. The
     #: repository is read-only.
@@ -111,7 +111,7 @@ class OdbData(_OptionsBase):
     diagnosticData: OdbDiagnosticData = OdbDiagnosticData()
 
     @abaqus_method_doc
-    def setValues(self, activeFrames: SymbolicConstant = None, stepPeriods: tuple = ()):
+    def setValues(self, activeFrames: typing.Optional[SymbolicConstant] = None, stepPeriods: tuple = ()):
         """This method modifies the OdbData object.
 
         Parameters

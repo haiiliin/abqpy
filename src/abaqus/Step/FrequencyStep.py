@@ -47,7 +47,7 @@ class FrequencyStep(AnalysisStep):
     #: **eigensolver** = AMS: **projectDamping**, **acousticRangeFactor**,
     #: **substructureCutoffMultiplier**, **firstCutoffMultiplier**, **secondCutoffMultiplier**,
     #: **residualModeRegion**, **regionalModeDof**, and **limitSavedEigenvectorRegion**.
-    eigensolver: SymbolicConstant = None
+    eigensolver: typing.Optional[SymbolicConstant] = None
 
     #: The SymbolicConstant ALL or an Int specifying the number of eigenvalues to be calculated
     #: or ALL. The default value is ALL.
@@ -58,16 +58,16 @@ class FrequencyStep(AnalysisStep):
 
     #: None or a Float specifying the minimum frequency of interest in cycles per time. The
     #: default value is None.
-    minEigen: float = None
+    minEigen: typing.Optional[float] = None
 
     #: None or a Float specifying the maximum frequency of interest in cycles per time. The
     #: default value is None.
-    maxEigen: float = None
+    maxEigen: typing.Optional[float] = None
 
     #: None or an Int specifying the number of vectors used in the iteration. The default is
     #: the minimum of (2*n*, **n** + 8), where **n** is the number of eigenvalues requested. The
     #: default value is None.
-    vectors: int = None
+    vectors: typing.Optional[int] = None
 
     #: An Int specifying the maximum number of iterations. The default value is 30.
     maxIterations: int = 30
@@ -94,7 +94,7 @@ class FrequencyStep(AnalysisStep):
     #: frequency-dependent springs and dashpots at zero frequency and will not consider the
     #: stiffness contributions from frequency-domain viscoelasticity in the step. The default
     #: value is None.
-    propertyEvaluationFrequency: float = None
+    propertyEvaluationFrequency: typing.Optional[float] = None
 
     #: A Boolean specifying whether to include projection of viscous and structural damping
     #: operators during **AMS** eigenvalue extraction. Valid only when **eigenSolver** = AMS. The
@@ -148,19 +148,19 @@ class FrequencyStep(AnalysisStep):
 
     #: None or a tuple of Strings specifying the name of a region for which residual modes are
     #: requested. The default value is None.
-    residualModeRegion: tuple = None
+    residualModeRegion: typing.Optional[tuple] = None
 
     #: None or a tuple of Ints specifying the degree of freedom for which residual modes are
     #: requested. The default value is None.
-    residualModeDof: int = None
+    residualModeDof: typing.Optional[int] = None
 
     #: None or a Region object specifying a region for which eigenvectors should be saved or
     #: the SymbolicConstant None representing the whole model. The default value is None.
-    limitSavedEigenvectorRegion: SymbolicConstant = None
+    limitSavedEigenvectorRegion: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: SymbolicConstant = None
+    explicit: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -196,7 +196,7 @@ class FrequencyStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: SymbolicConstant = None
+    procedureType: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
@@ -211,7 +211,7 @@ class FrequencyStep(AnalysisStep):
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
-    monitor: Monitor = None
+    monitor: typing.Optional[Monitor] = None
 
     #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
@@ -232,7 +232,7 @@ class FrequencyStep(AnalysisStep):
     boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: int = None
+    interactionStates: typing.Optional[int] = None
 
     #: A repository of LoadState objects.
     loadStates: typing.Dict[str, LoadState] = {}
@@ -252,14 +252,14 @@ class FrequencyStep(AnalysisStep):
         numEigen: SymbolicConstant = ALL,
         description: str = "",
         shift: float = 0,
-        minEigen: float = None,
-        maxEigen: float = None,
-        vectors: int = None,
+        minEigen: typing.Optional[float] = None,
+        maxEigen: typing.Optional[float] = None,
+        vectors: typing.Optional[int] = None,
         maxIterations: int = 30,
         blockSize: SymbolicConstant = DEFAULT,
         maxBlocks: SymbolicConstant = DEFAULT,
         normalization: SymbolicConstant = DISPLACEMENT,
-        propertyEvaluationFrequency: float = None,
+        propertyEvaluationFrequency: typing.Optional[float] = None,
         projectDamping: Boolean = ON,
         acousticCoupling: SymbolicConstant = AC_ON,
         acousticRangeFactor: float = 1,
@@ -271,9 +271,9 @@ class FrequencyStep(AnalysisStep):
         substructureCutoffMultiplier: float = 5,
         firstCutoffMultiplier: float = 1,
         secondCutoffMultiplier: float = 1,
-        residualModeRegion: str = None,
-        residualModeDof: str = None,
-        limitSavedEigenvectorRegion: SymbolicConstant = None,
+        residualModeRegion: typing.Optional[str] = None,
+        residualModeDof: typing.Optional[str] = None,
+        limitSavedEigenvectorRegion: typing.Optional[SymbolicConstant] = None,
     ):
         """This method creates a FrequencyStep object.
 
@@ -400,14 +400,14 @@ class FrequencyStep(AnalysisStep):
         numEigen: SymbolicConstant = ALL,
         description: str = "",
         shift: float = 0,
-        minEigen: float = None,
-        maxEigen: float = None,
-        vectors: int = None,
+        minEigen: typing.Optional[float] = None,
+        maxEigen: typing.Optional[float] = None,
+        vectors: typing.Optional[int] = None,
         maxIterations: int = 30,
         blockSize: SymbolicConstant = DEFAULT,
         maxBlocks: SymbolicConstant = DEFAULT,
         normalization: SymbolicConstant = DISPLACEMENT,
-        propertyEvaluationFrequency: float = None,
+        propertyEvaluationFrequency: typing.Optional[float] = None,
         projectDamping: Boolean = ON,
         acousticCoupling: SymbolicConstant = AC_ON,
         acousticRangeFactor: float = 1,
@@ -418,9 +418,9 @@ class FrequencyStep(AnalysisStep):
         substructureCutoffMultiplier: float = 5,
         firstCutoffMultiplier: float = 1,
         secondCutoffMultiplier: float = 1,
-        residualModeRegion: str = None,
-        residualModeDof: str = None,
-        limitSavedEigenvectorRegion: SymbolicConstant = None,
+        residualModeRegion: typing.Optional[str] = None,
+        residualModeDof: typing.Optional[str] = None,
+        limitSavedEigenvectorRegion: typing.Optional[SymbolicConstant] = None,
     ):
         """This method modifies the FrequencyStep object.
 

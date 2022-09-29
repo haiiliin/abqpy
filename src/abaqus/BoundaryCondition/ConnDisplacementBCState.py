@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from .BoundaryConditionState import BoundaryConditionState
 from ..UtilityAndView.abaqusConstants import *
@@ -25,61 +26,61 @@ class ConnDisplacementBCState(BoundaryConditionState):
 
     #: A Float or a Complex specifying the displacement component in the connector's local
     #: 1-direction.
-    u1: float = None
+    u1: typing.Optional[float] = None
 
     #: A Float or a Complex specifying the displacement component in the connector's local
     #: 2-direction.
-    u2: float = None
+    u2: typing.Optional[float] = None
 
     #: A Float or a Complex specifying the displacement component in the connector's local
     #: 3-direction.
-    u3: float = None
+    u3: typing.Optional[float] = None
 
     #: A Float or a Complex specifying the rotational component in the connector's local
     #: 4-direction.
-    ur1: float = None
+    ur1: typing.Optional[float] = None
 
     #: A Float or a Complex specifying the rotational component in the connector's local
     #: 5-direction.
-    ur2: float = None
+    ur2: typing.Optional[float] = None
 
     #: A Float or a Complex specifying the rotational component in the connector's local
     #: 6-direction.
-    ur3: float = None
+    ur3: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the displacement component in the
     #: connector's local 1-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and
     #: MODIFIED.
-    u1State: SymbolicConstant = None
+    u1State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the displacement component in the
     #: connector's local 2-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and
     #: MODIFIED.
-    u2State: SymbolicConstant = None
+    u2State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the displacement component in the
     #: connector's local 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and
     #: MODIFIED.
-    u3State: SymbolicConstant = None
+    u3State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the rotational component in the
     #: connector's local 4-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and
     #: MODIFIED.
-    ur1State: SymbolicConstant = None
+    ur1State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the rotational component in the
     #: connector's local 5-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and
     #: MODIFIED.
-    ur2State: SymbolicConstant = None
+    ur2State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the rotational component in the
     #: connector's local 6-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and
     #: MODIFIED.
-    ur3State: SymbolicConstant = None
+    ur3State: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    amplitudeState: SymbolicConstant = None
+    amplitudeState: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the BoundaryConditionState object. Possible values are:
     #: 
@@ -95,7 +96,7 @@ class ConnDisplacementBCState(BoundaryConditionState):
     #: - MODIFIED_FROM_BASE_STATE
     #: - DEACTIVATED_FROM_BASE_STATE
     #: - BUILT_INTO_MODES
-    status: SymbolicConstant = None
+    status: typing.Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the amplitude reference. The String is empty if the
     #: boundary condition has no amplitude reference.

@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..PlotOptions.DGContourOptions import DGContourOptions
 from ..UtilityAndView.abaqusConstants import *
@@ -51,7 +52,7 @@ class ContourOptions(DGContourOptions):
 
     #: A Float specifying the contour range maximum value to be used in the plot when
     #: **maxAutoCompute** = ON. The default value is **autoMaxValue**.
-    maxValue: float = None
+    maxValue: typing.Optional[float] = None
 
     #: A Boolean specifying whether the contour range minimum value should be computed from the
     #: output data to be contoured. The default value is ON.
@@ -59,7 +60,7 @@ class ContourOptions(DGContourOptions):
 
     #: A Float specifying the contour range minimum value to be used in the plot when
     #: **minAutoCompute** = ON. The default value is **autoMinValue**.
-    minValue: float = None
+    minValue: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the method to be used when contour limits are
     #: automatically computed for animation. **animationAutoLimits** will only effect the minimum
@@ -73,7 +74,7 @@ class ContourOptions(DGContourOptions):
     #: maximum and minimum contour spectrum colors are used for values that exceed the limits
     #: of the plot. When **outsideLimitsMode** = SPECIFY, the values of **outsideLimitsAboveColor**
     #: and **outsideLimitsBelowColor** are used for values that exceed the limits of the plot.
-    outsideLimitsMode: SymbolicConstant = None
+    outsideLimitsMode: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether to auto-compute contour limits using extrapolated values
     #: alone or extrapolated values that are averaged. The default value is OFF.
@@ -89,11 +90,11 @@ class ContourOptions(DGContourOptions):
 
     #: A Float specifying the maximum value to be used in the plot. The value is computed from
     #: the output data to be contoured. This value is read-only.
-    autoMaxValue: float = None
+    autoMaxValue: typing.Optional[float] = None
 
     #: A Float specifying the minimum value to be used in the plot. The value is computed from
     #: the output data to be contoured. This value is read-only.
-    autoMinValue: float = None
+    autoMinValue: typing.Optional[float] = None
 
     #: A String specifying the color to be used for values that exceed the limits of the plot
     #: when **outsideLimitsMode** = SPECIFY. The default value is "Grey80".
@@ -116,7 +117,7 @@ class ContourOptions(DGContourOptions):
     reversedContourLegendRange: Boolean = OFF
 
     #: A tuple of Floats specifying the interval values when **intervalType** = USER_DEFINED.
-    intervalValues: float = None
+    intervalValues: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the contour rendering method. Possible values are
     #: TEXTURE_MAPPED and TESSELLATED. The default value is TEXTURE_MAPPED.
@@ -192,7 +193,7 @@ class ContourOptions(DGContourOptions):
     #: specifying the line style and line thickness. For possible values, refer to the
     #: **edgeLineStyle** and **edgeLineThickness** members of the DGCommonOptions object. The
     #: default is ((SOLID, VERY_THIN), ).
-    intervalLineAttributes: SymbolicConstant = None
+    intervalLineAttributes: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether to hide the values outside the specified min/max in the
     #: contour legend. This setting hides the **autoMinValue** and **autoMaxValue** from the
@@ -205,7 +206,7 @@ class ContourOptions(DGContourOptions):
     @abaqus_method_doc
     def setValues(
         self,
-        options: "ContourOptions" = None,
+        options: typing.Optional["ContourOptions"] = None,
         contourType: SymbolicConstant = BANDED,
         contourMethod: SymbolicConstant = TEXTURE_MAPPED,
         tickmarkPlots: Boolean = OFF,
@@ -214,18 +215,18 @@ class ContourOptions(DGContourOptions):
         intervalType: SymbolicConstant = UNIFORM,
         intervalValues: tuple = (),
         maxAutoCompute: Boolean = ON,
-        maxValue: float = None,
+        maxValue: typing.Optional[float] = None,
         minAutoCompute: Boolean = ON,
-        minValue: float = None,
+        minValue: typing.Optional[float] = None,
         animationAutoLimits: SymbolicConstant = ALL_FRAMES,
         edgeColorLine: str = "",
         edgeColorBandedQuilt: str = "",
         spectrum: str = "",
         reversedContourLegendRange: Boolean = OFF,
-        outsideLimitsMode: SymbolicConstant = None,
+        outsideLimitsMode: typing.Optional[SymbolicConstant] = None,
         outsideLimitsAboveColor: str = "",
         outsideLimitsBelowColor: str = "",
-        intervalLineAttributes: SymbolicConstant = None,
+        intervalLineAttributes: typing.Optional[SymbolicConstant] = None,
         contourEdges: Boolean = OFF,
         contourEdgeColor: str = "",
         contourEdgeStyle: SymbolicConstant = SOLID,

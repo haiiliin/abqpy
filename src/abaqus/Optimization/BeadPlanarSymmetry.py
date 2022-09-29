@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
@@ -29,7 +30,7 @@ class BeadPlanarSymmetry(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: int = None
+    csys: typing.Optional[int] = None
 
     @abaqus_method_doc
     def __init__(
@@ -37,7 +38,7 @@ class BeadPlanarSymmetry(GeometricRestriction):
         name: str,
         region: Region,
         axis: SymbolicConstant = AXIS_1,
-        csys: int = None,
+        csys: typing.Optional[int] = None,
     ):
         """This method creates a BeadPlanarSymmetry object.
 
@@ -68,7 +69,7 @@ class BeadPlanarSymmetry(GeometricRestriction):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(self, axis: SymbolicConstant = AXIS_1, csys: int = None):
+    def setValues(self, axis: SymbolicConstant = AXIS_1, csys: typing.Optional[int] = None):
         """This method modifies the BeadPlanarSymmetry object.
 
         Parameters

@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from .BoundaryConditionState import BoundaryConditionState
 from ..UtilityAndView.abaqusConstants import *
@@ -25,28 +26,28 @@ class SubmodelBCState(BoundaryConditionState):
 
     #: A SymbolicConstant specifying the propagation state of the **dof** member. Possible values
     #: are SET and UNCHANGED.
-    dofState: SymbolicConstant = None
+    dofState: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **globalStep** member. Possible
     #: values are SET and UNCHANGED.
-    globalStepState: SymbolicConstant = None
+    globalStepState: typing.Optional[SymbolicConstant] = None
 
     #: An Int specifying the increment number in the global model step at which the solution
     #: will be used to specify the values of the driven variables. This argument is applicable
     #: only for linear perturbation steps.
-    globalIncrement: int = None
+    globalIncrement: typing.Optional[int] = None
 
     #: A SymbolicConstant specifying the propagation state of the **globalIncrement** member.
     #: Possible values are SET and UNCHANGED.
-    globalIncrementState: SymbolicConstant = None
+    globalIncrementState: typing.Optional[SymbolicConstant] = None
 
     #: None or a Float specifying the thickness of the center zone size around the shell
     #: midsurface. The default value is None.
-    centerZoneSize: float = None
+    centerZoneSize: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the **centerZoneSize** member.
     #: Possible values are SET and UNCHANGED.
-    centerZoneSizefState: SymbolicConstant = None
+    centerZoneSizefState: typing.Optional[SymbolicConstant] = None
 
     #: None or a Float specifying a scaling value applied to the applied displacements at the
     #: interface. The default value is 1.0.
@@ -54,7 +55,7 @@ class SubmodelBCState(BoundaryConditionState):
 
     #: A SymbolicConstant specifying the propagation state of the **scale** member. Possible
     #: values are SET and UNCHANGED.
-    scaleState: SymbolicConstant = None
+    scaleState: typing.Optional[SymbolicConstant] = None
 
     #: A String specifying the step in the global model from which Abaqus reads the values of
     #: the variables that will drive the submodel analysis. The String indicates the position
@@ -64,11 +65,11 @@ class SubmodelBCState(BoundaryConditionState):
 
     #: A tuple of Ints specifying the degrees of freedom to which the boundary condition is
     #: applied.
-    dof: int = None
+    dof: typing.Optional[int] = None
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    amplitudeState: SymbolicConstant = None
+    amplitudeState: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the BoundaryConditionState object. Possible values are:
     #: 
@@ -84,7 +85,7 @@ class SubmodelBCState(BoundaryConditionState):
     #: - MODIFIED_FROM_BASE_STATE
     #: - DEACTIVATED_FROM_BASE_STATE
     #: - BUILT_INTO_MODES
-    status: SymbolicConstant = None
+    status: typing.Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the amplitude reference. The String is empty if the
     #: boundary condition has no amplitude reference.

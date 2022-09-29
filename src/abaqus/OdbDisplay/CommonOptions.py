@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..PlotOptions.DGCommonOptions import DGCommonOptions
 from ..UtilityAndView.abaqusConstants import *
@@ -39,16 +40,16 @@ class CommonOptions(DGCommonOptions):
 
     #: A Float specifying the uniform deformation scaling constant when
     #: **deformationScaling** = UNIFORM. The default value is **autoDeformationScaleValue**.
-    uniformScaleFactor: float = None
+    uniformScaleFactor: typing.Optional[float] = None
 
     #: A Float specifying the deformation scale factor value when **deformationScaling** = AUTO.
     #: This value is read-only.
-    autoDeformationScaleValue: float = None
+    autoDeformationScaleValue: typing.Optional[float] = None
 
     #: A tuple of three Floats specifying the deformation scaling in each of the three
     #: coordinate directions when **deformationScaling** = NONUNIFORM. The default value is
     #: (*autoDeformationScaleValue*, **autoDeformationScaleValue**, **autoDeformationScaleValue**).
-    nonuniformScaleFactor: float = None
+    nonuniformScaleFactor: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the render style of the plot. Possible values are
     #: WIREFRAME, FILLED, HIDDEN, and SHADED. The default value is SHADED.
@@ -191,16 +192,16 @@ class CommonOptions(DGCommonOptions):
 
     #: A tuple of three Floats specifying the coordinate scaling in each of the three
     #: coordinate directions when **coordinateScale** = ON. The default value is (1, 1, 1).
-    coordinateScaleFactors: float = None
+    coordinateScaleFactors: typing.Optional[float] = None
 
     @abaqus_method_doc
     def setValues(
         self,
-        options: "CommonOptions" = None,
+        options: typing.Optional["CommonOptions"] = None,
         renderStyle: SymbolicConstant = SHADED,
         visibleEdges: SymbolicConstant = EXTERIOR,
         deformationScaling: SymbolicConstant = AUTO,
-        uniformScaleFactor: float = None,
+        uniformScaleFactor: typing.Optional[float] = None,
         nonuniformScaleFactor: tuple = (),
         edgeColorWireHide: str = "",
         edgeColorFillShade: str = "",

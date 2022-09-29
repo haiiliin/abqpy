@@ -43,9 +43,9 @@ class ConnectorForce(Load):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        f1: float = None,
-        f2: float = None,
-        f3: float = None,
+        f1: typing.Optional[float] = None,
+        f2: typing.Optional[float] = None,
+        f3: typing.Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method creates a ConnectorForce object on a wire region. Alternatively, the load
@@ -102,9 +102,9 @@ class ConnectorForce(Load):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        f1: float = None,
-        f2: float = None,
-        f3: float = None,
+        f1: typing.Optional[float] = None,
+        f2: typing.Optional[float] = None,
+        f3: typing.Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing ConnectorForce object in the step where it

@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -14,10 +15,10 @@ class StructuralDampingComponent:
     """
 
     #: An Int specifying the mode number of the lowest mode of a range.
-    start: int = None
+    start: typing.Optional[int] = None
 
     #: An Int specifying the mode number of the highest mode of a range.
-    end: int = None
+    end: typing.Optional[int] = None
 
     #: A Float specifying the damping factor, s.
-    factor: float = None
+    factor: typing.Optional[float] = None

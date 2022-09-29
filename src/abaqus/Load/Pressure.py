@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
 from ..Region.Region import Region
@@ -128,9 +129,9 @@ class Pressure(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        magnitude: float = None,
-        hZero: float = None,
-        hReference: float = None,
+        magnitude: typing.Optional[float] = None,
+        hZero: typing.Optional[float] = None,
+        hReference: typing.Optional[float] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing Pressure object in the

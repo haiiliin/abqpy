@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ...UtilityAndView.abaqusConstants import *
 
@@ -24,8 +25,8 @@ class ConstrainedSketcherOptions:
         addImpliedConstraints: Boolean = ON,
         maxCoplanarEntities: int = 300,
         autoConstrainAngularTolerance: float = 0,
-        autoConstrainLinearTolerance: float = None,
-        autoConstrainOptions: SymbolicConstant = None,
+        autoConstrainLinearTolerance: typing.Optional[float] = None,
+        autoConstrainOptions: typing.Optional[SymbolicConstant] = None,
         dragMethod: SymbolicConstant = MINIMUM_MOVE,
         editMethod: SymbolicConstant = STANDARD,
     ):

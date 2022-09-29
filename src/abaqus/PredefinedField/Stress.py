@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .PredefinedField import PredefinedField
 from ..Region.Region import Region
@@ -30,12 +31,12 @@ class Stress(PredefinedField):
         name: str,
         region: Region,
         distributionType: SymbolicConstant = UNIFORM,
-        sigma11: float = None,
-        sigma22: float = None,
-        sigma33: float = None,
-        sigma12: float = None,
-        sigma13: float = None,
-        sigma23: float = None,
+        sigma11: typing.Optional[float] = None,
+        sigma22: typing.Optional[float] = None,
+        sigma33: typing.Optional[float] = None,
+        sigma12: typing.Optional[float] = None,
+        sigma13: typing.Optional[float] = None,
+        sigma23: typing.Optional[float] = None,
     ):
         """This method creates a Stress predefined field object.
 
@@ -77,12 +78,12 @@ class Stress(PredefinedField):
     def setValues(
         self,
         distributionType: SymbolicConstant = UNIFORM,
-        sigma11: float = None,
-        sigma22: float = None,
-        sigma33: float = None,
-        sigma12: float = None,
-        sigma13: float = None,
-        sigma23: float = None,
+        sigma11: typing.Optional[float] = None,
+        sigma22: typing.Optional[float] = None,
+        sigma33: typing.Optional[float] = None,
+        sigma12: typing.Optional[float] = None,
+        sigma13: typing.Optional[float] = None,
+        sigma23: typing.Optional[float] = None,
     ):
         """This method modifies the Stress object.
 

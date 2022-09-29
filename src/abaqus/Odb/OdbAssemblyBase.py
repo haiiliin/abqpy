@@ -65,11 +65,11 @@ class OdbAssemblyBase:
     def ConnectorOrientation(
         self,
         region: str,
-        localCsys1: OdbDatumCsys = None, 
+        localCsys1: typing.Optional[OdbDatumCsys] = None, 
         axis1: SymbolicConstant = AXIS_1,
         angle1: float = 0,
         orient2sameAs1: Boolean = OFF,
-        localCsys2: OdbDatumCsys = None, 
+        localCsys2: typing.Optional[OdbDatumCsys] = None, 
         axis2: SymbolicConstant = AXIS_1,
         angle2: float = 0,
     ):
@@ -137,7 +137,7 @@ class OdbAssemblyBase:
         instanceNames: tuple,
         type: str,
         elementSetName: str = "",
-        sectionCategory: SectionCategory = None,
+        sectionCategory: typing.Optional[SectionCategory] = None,
     ):
         """This method is used to define elements using nodes defined at the OdbAssembly and/or
         OdbInstance level. For connector elements connected to ground, specify the lone node in
@@ -174,7 +174,7 @@ class OdbAssemblyBase:
         ...
 
     @abaqus_method_doc
-    def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: str = None):
+    def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: typing.Optional[str] = None):
         """This method adds nodes to the OdbAssembly object using node labels and coordinates.
         Warning:Adding nodes not in ascending order of their labels may cause Abaqus/Viewer to
         plot contours incorrectly.

@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -14,7 +15,7 @@ class StructuralDampingByFrequencyComponent:
     """
 
     #: A Float specifying the frequency value in cycles/time.
-    frequency: float = None
+    frequency: typing.Optional[float] = None
 
     #: A Float specifying the damping factor, s.
-    factor: float = None
+    factor: typing.Optional[float] = None

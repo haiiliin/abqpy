@@ -32,7 +32,7 @@ class AccelerationBC(BoundaryCondition):
 
     #: A SymbolicConstant specifying the category of the boundary condition. Possible values
     #: are MECHANICAL and THERMAL.
-    category: SymbolicConstant = None
+    category: typing.Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
@@ -40,7 +40,7 @@ class AccelerationBC(BoundaryCondition):
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: str = None
+    localCsys: typing.Optional[str] = None
 
     @abaqus_method_doc
     def __init__(
@@ -56,7 +56,7 @@ class AccelerationBC(BoundaryCondition):
         ar2: typing.Union[SymbolicConstant, float] = UNSET,
         ar3: typing.Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
         distributionType: SymbolicConstant = UNIFORM,
     ):
         """This method creates an AccelerationBC object.
@@ -132,7 +132,7 @@ class AccelerationBC(BoundaryCondition):
         ar2: typing.Union[SymbolicConstant, float] = UNSET,
         ar3: typing.Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
         distributionType: SymbolicConstant = UNIFORM,
     ):
         """This method modifies the data for an existing AccelerationBC object in the step where it

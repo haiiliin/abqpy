@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Leaf import Leaf
 from ..UtilityAndView.abaqusConstants import *
@@ -34,7 +35,7 @@ class DisplayGroup:
 
     #: A SymbolicConstant specifying the module in which the display group has been created.
     #: The possible values are PART, ASSEMBLY, PART_ASSEMBLY, ODB, and ALL.
-    module: SymbolicConstant = None
+    module: typing.Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the model to which the display group belongs when the
     #: module is part- or assembly-based.

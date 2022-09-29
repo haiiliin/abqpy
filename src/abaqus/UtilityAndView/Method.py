@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_function_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -29,7 +30,7 @@ def addCallback(
     caller: str,
     methodName: str,
     callback: str,
-    userData: str = None,
+    userData: typing.Optional[str] = None,
     callAfter: Boolean = OFF,
 ):
     """This method adds a callback function that will be invoked when certain Abaqus/CAE
@@ -71,7 +72,7 @@ def addCallback(
 
 
 @abaqus_function_doc
-def removeCallback(caller: str, methodName: str, callback: str, userData: str = None):
+def removeCallback(caller: str, methodName: str, callback: str, userData: typing.Optional[str] = None):
     """This method removes a callback added by the addCallback method. To successfully remove a
     callback, all arguments must exactly match those used when the callback was added.
 

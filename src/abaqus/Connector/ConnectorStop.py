@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 
@@ -23,11 +24,11 @@ class ConnectorStop(ConnectorBehaviorOption):
 
     #: None or a Float specifying the lower bound for the connector's relative position for all
     #: specified components, or no lower bound. The default value is None.
-    minMotion: float = None
+    minMotion: typing.Optional[float] = None
 
     #: None or a Float specifying the upper bound for the connector's relative position for all
     #: specified components, or no upper bound. The default value is None.
-    maxMotion: float = None
+    maxMotion: typing.Optional[float] = None
 
     #: A sequence of Ints specifying the components of relative motion for which the behavior
     #: is defined. Possible values are 1 ≤ **components** ≤ 6. Only available components can be
@@ -36,7 +37,7 @@ class ConnectorStop(ConnectorBehaviorOption):
 
     @abaqus_method_doc
     def __init__(
-        self, minMotion: float = None, maxMotion: float = None, components: tuple = ()
+        self, minMotion: typing.Optional[float] = None, maxMotion: typing.Optional[float] = None, components: tuple = ()
     ):
         """This method creates a connector stop behavior option for a ConnectorSection object.
 

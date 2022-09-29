@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AxisData import AxisData
 from .LineStyle import LineStyle
@@ -75,13 +76,13 @@ class Axis:
         axis: "Axis",
         labelFrequency: int = 1,
         labelPlacement: SymbolicConstant = INSIDE,
-        labelStyle: TextStyle = None, 
-        lineStyle: LineStyle = None, 
+        labelStyle: typing.Optional[TextStyle] = None, 
+        lineStyle: typing.Optional[LineStyle] = None, 
         placement: SymbolicConstant = MIN_MAX_EDGE,
         tickLength: float = 2,
         tickPlacement: SymbolicConstant = INSIDE,
-        tickStyle: LineStyle = None, 
-        titleStyle: TextStyle = None, 
+        tickStyle: typing.Optional[LineStyle] = None, 
+        titleStyle: typing.Optional[TextStyle] = None, 
     ):
         """This method modifies the Axis object.
 

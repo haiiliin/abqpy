@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .DataTableArray import DataTableArray
 from .DiscreteField import DiscreteField
@@ -17,7 +18,7 @@ class FieldModel(ModelBase):
         fieldType: SymbolicConstant,
         location: SymbolicConstant = NODES,
         dataWidth: int = 1,
-        data: DataTableArray = None,
+        data: typing.Optional[DataTableArray] = None,
         description: str = "",
         orientationType: SymbolicConstant = CARTESIAN,
         partLevelOrientation: Boolean = OFF,
@@ -79,7 +80,7 @@ class FieldModel(ModelBase):
 
     @abaqus_method_doc
     def ExpressionField(
-        self, name: str, expression: str, localCsys: str = None, description: str = ""
+        self, name: str, expression: str, localCsys: typing.Optional[str] = None, description: str = ""
     ) -> ExpressionField:
         """This method creates an ExpressionField object.
 
@@ -135,7 +136,7 @@ class FieldModel(ModelBase):
         gridPointData: tuple = (),
         xyzPointData: tuple = (),
         coordinateScalingFactors: tuple = (),
-        localCsys: str = None,
+        localCsys: typing.Optional[str] = None,
         description: str = "",
     ) -> MappedField:
         """This method creates an MappedField object.

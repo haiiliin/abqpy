@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ...UtilityAndView.abaqusConstants import *
 
@@ -59,7 +60,7 @@ class GapFlow:
     def __init__(
         self,
         table: tuple,
-        kmax: float = None,
+        kmax: typing.Optional[float] = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         type: SymbolicConstant = NEWTONIAN,

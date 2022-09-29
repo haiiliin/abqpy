@@ -15,10 +15,10 @@ class RadialDimension(ConstrainedSketchDimension):
         self,
         curve: ConstrainedSketchGeometry,
         textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        value: typing.Optional[float] = None,
         reference: Boolean = OFF,
-        majorRadius: float = None,
-        minorRadius: float = None,
+        majorRadius: typing.Optional[float] = None,
+        minorRadius: typing.Optional[float] = None,
     ):
         """This method constructs a ConstrainedSketchDimension object on a circular or elliptical
         arc. A radial dimension indicates the radius of an arc or circle or the major or minor

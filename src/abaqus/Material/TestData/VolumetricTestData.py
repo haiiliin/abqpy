@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ...UtilityAndView.abaqusConstants import *
 
@@ -47,8 +48,8 @@ class VolumetricTestData:
     def __init__(
         self,
         table: tuple,
-        volinf: float = None,
-        smoothing: int = None,
+        volinf: typing.Optional[float] = None,
+        smoothing: typing.Optional[int] = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

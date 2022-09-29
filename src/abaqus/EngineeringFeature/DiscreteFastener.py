@@ -66,7 +66,7 @@ class DiscreteFastener(Fastener):
     #: None or a DatumCsys object specifying the local coordinate system of fastener couplings.
     #: If **localCsys** = None, couplings are defined in the global coordinate system. When this
     #: member is queried, it returns an Int. The default value is None.
-    localCsys: int = None
+    localCsys: typing.Optional[int] = None
 
     @abaqus_method_doc
     def __init__(
@@ -79,7 +79,7 @@ class DiscreteFastener(Fastener):
         ur3: Boolean = ON,
         coupling: SymbolicConstant = CONTINUUM,
         weightingMethod: SymbolicConstant = UNIFORM,
-        localCsys: int = None,
+        localCsys: typing.Optional[int] = None,
     ):
         """This method creates a DiscreteFastener object. Although the constructor is available
         both for parts and for the assembly, DiscreteFastener objects are currently supported
@@ -140,7 +140,7 @@ class DiscreteFastener(Fastener):
         ur3: Boolean = ON,
         coupling: SymbolicConstant = CONTINUUM,
         weightingMethod: SymbolicConstant = UNIFORM,
-        localCsys: int = None,
+        localCsys: typing.Optional[int] = None,
     ):
         """This method modifies the DiscreteFastener object.
 

@@ -23,11 +23,11 @@ class MdbBase:
     """
 
     #: An Int specifying the release number of the Mdb object in memory.
-    version: int = None
+    version: typing.Optional[int] = None
 
     #: A Float specifying the value of a counter associated with the Mdb object. The counter
     #: indicates when the Mdb object was last changed.
-    lastChangedCount: float = None
+    lastChangedCount: typing.Optional[float] = None
 
     #: A repository of Job objects.
     jobs: typing.Dict[str, Job] = {}

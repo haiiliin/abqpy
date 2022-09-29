@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _CopyOptionsBase
@@ -80,15 +81,15 @@ class ViewCutOptions(_CopyOptionsBase):
 
     #: None or an OptionArg object specifying values to be used for defining the options
     #: applicable on the model below the cut. The default value is None.
-    belowOptions: str = None
+    belowOptions: typing.Optional[str] = None
 
     #: None or an OptionArg object specifying values to be used for defining the options
     #: applicable on the model on the cut. The default value is None.
-    onOptions: str = None
+    onOptions: typing.Optional[str] = None
 
     #: None or an OptionArg object specifying values to be used for defining the options
     #: applicable on the model above the cut. The default value is None.
-    aboveOptions: str = None
+    aboveOptions: typing.Optional[str] = None
 
     #: The SymbolicConstant GLOBAL or a String specifying the coordinate system name for the
     #: free body cut's component resolution. The default value is GLOBAL.
@@ -100,22 +101,22 @@ class ViewCutOptions(_CopyOptionsBase):
 
     #: A tuple of three Floats specifying the summation point for the free body cut. The
     #: default value is (0, 0, 0).
-    summationPoint: float = None
+    summationPoint: typing.Optional[float] = None
 
     #: A tuple of three Floats specifying the Y axis for free body component resolution. The
     #: default value is (0, 1, 0).
-    yAxis: float = None
+    yAxis: typing.Optional[float] = None
 
     @abaqus_method_doc
     def setValues(
         self,
-        options: "ViewCutOptions" = None,
+        options: typing.Optional["ViewCutOptions"] = None,
         *,
-        belowOptions: str = None,
+        belowOptions: typing.Optional[str] = None,
         useBelowOptions: Boolean = OFF,
-        onOptions: str = None,
+        onOptions: typing.Optional[str] = None,
         useOnOptions: Boolean = OFF,
-        aboveOptions: str = None,
+        aboveOptions: typing.Optional[str] = None,
         useAboveOptions: Boolean = OFF,
         freeBodyCutThru: SymbolicConstant = CURRENT_DISPLAY_GROUP,
         freeBodyStepThru: SymbolicConstant = ACTIVE_CUT_RANGE,

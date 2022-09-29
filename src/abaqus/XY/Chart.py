@@ -34,7 +34,7 @@ class Chart:
 
     #: A Float specifying the aspect ratio of the grid area. A value of -1 specifies that the
     #: gridArea will take up all available space. The default value is −1.
-    aspectRatio: float = None
+    aspectRatio: typing.Optional[float] = None
 
     #: A repository of XYCurve objects specifying a repository of XYCurve objects to display in
     #: the Chart.
@@ -85,7 +85,7 @@ class Chart:
 
     #: A tuple of Floats specifying a transformation matrix used to scale or pan along the axes
     #: of the Chart.
-    transform: float = None
+    transform: typing.Optional[float] = None
 
     @abaqus_method_doc
     def autoColor(self, lines: Boolean = OFF, symbols: Boolean = OFF):
@@ -206,11 +206,11 @@ class Chart:
     @abaqus_method_doc
     def setValues(
         self,
-        chart: "Chart" = None,
+        chart: typing.Optional["Chart"] = None,
         curvesToPlot: typing.Tuple[XYCurve, ...] = (),
-        aspectRatio: float = None,
+        aspectRatio: typing.Optional[float] = None,
         transform: tuple = (),
-        view: View = None,
+        view: typing.Optional[View] = None,
         useQuantityType: Boolean = ON,
     ):
         """This method modifies the Chart object.

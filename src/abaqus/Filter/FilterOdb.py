@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ButterworthFilter import ButterworthFilter
 from .Chebyshev1Filter import Chebyshev1Filter
@@ -26,7 +27,7 @@ class FilterOdb(OdbBase):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: float = None,
+        limit: typing.Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ) -> ButterworthFilter:
         """This method creates a ButterworthFilter object.
@@ -87,7 +88,7 @@ class FilterOdb(OdbBase):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: float = None,
+        limit: typing.Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ) -> Chebyshev1Filter:
         """This method creates a Chebyshev1Filter object.
@@ -158,7 +159,7 @@ class FilterOdb(OdbBase):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: float = None,
+        limit: typing.Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ) -> Chebyshev2Filter:
         """This method creates a Chebyshev2Filter object.
@@ -228,7 +229,7 @@ class FilterOdb(OdbBase):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: float = None,
+        limit: typing.Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ) -> OperatorFilter:
         """This method creates an OperatorFilter object.

@@ -29,8 +29,8 @@ class XYSessionBase(SessionBase):
         xyBendingComps: tuple,
         invariantBendingComps: tuple = (),
         intervals: int = 40,
-        radiusOfCurvature: float = None,
-        oopRadiusOfCurvature: float = None,
+        radiusOfCurvature: typing.Optional[float] = None,
+        oopRadiusOfCurvature: typing.Optional[float] = None,
         curvatureCorrection: Boolean = OFF,
         curvatureCsys: str = "",
         useCurvatureCsysForOrient: Boolean = OFF,
@@ -171,7 +171,7 @@ class XYSessionBase(SessionBase):
         ...
 
     @abaqus_method_doc
-    def setLimitForXYDataPlots(self, limit: int = None):
+    def setLimitForXYDataPlots(self, limit: typing.Optional[int] = None):
         """This method is used to set the **limit** for number of XY data objects while creating
         XYData from field output.
 

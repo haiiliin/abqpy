@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
 from .AdaptiveMeshDomain import AdaptiveMeshDomain
@@ -27,8 +28,8 @@ class AdaptivityStep(StepBase):
     @abaqus_method_doc
     def AdaptiveMeshConstraintState(
         self,
-        amplitudeState: SymbolicConstant = None,
-        status: SymbolicConstant = None,
+        amplitudeState: typing.Optional[SymbolicConstant] = None,
+        status: typing.Optional[SymbolicConstant] = None,
         amplitude: str = "",
     ) -> AdaptiveMeshConstraintState:
         """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary
@@ -82,20 +83,20 @@ class AdaptivityStep(StepBase):
     @abaqus_method_doc
     def DisplacementAdaptiveMeshConstraintState(
         self,
-        u1: float = None,
-        u2: float = None,
-        u3: float = None,
-        ur1: float = None,
-        ur2: float = None,
-        ur3: float = None,
-        u1State: SymbolicConstant = None,
-        u2State: SymbolicConstant = None,
-        u3State: SymbolicConstant = None,
-        ur1State: SymbolicConstant = None,
-        ur2State: SymbolicConstant = None,
-        ur3State: SymbolicConstant = None,
-        amplitudeState: SymbolicConstant = None,
-        status: SymbolicConstant = None,
+        u1: typing.Optional[float] = None,
+        u2: typing.Optional[float] = None,
+        u3: typing.Optional[float] = None,
+        ur1: typing.Optional[float] = None,
+        ur2: typing.Optional[float] = None,
+        ur3: typing.Optional[float] = None,
+        u1State: typing.Optional[SymbolicConstant] = None,
+        u2State: typing.Optional[SymbolicConstant] = None,
+        u3State: typing.Optional[SymbolicConstant] = None,
+        ur1State: typing.Optional[SymbolicConstant] = None,
+        ur2State: typing.Optional[SymbolicConstant] = None,
+        ur3State: typing.Optional[SymbolicConstant] = None,
+        amplitudeState: typing.Optional[SymbolicConstant] = None,
+        status: typing.Optional[SymbolicConstant] = None,
         amplitude: str = "",
     ) -> DisplacementAdaptiveMeshConstraintState:
         """The DisplacementAdaptiveMeshConstraintState object stores the propagating data for an
@@ -191,20 +192,20 @@ class AdaptivityStep(StepBase):
     @abaqus_method_doc
     def VelocityAdaptiveMeshConstraintState(
         self,
-        v1: float = None,
-        v2: float = None,
-        v3: float = None,
-        vr1: float = None,
-        vr2: float = None,
-        vr3: float = None,
-        v1State: SymbolicConstant = None,
-        v2State: SymbolicConstant = None,
-        v3State: SymbolicConstant = None,
-        vr1State: SymbolicConstant = None,
-        vr2State: SymbolicConstant = None,
-        vr3State: SymbolicConstant = None,
-        amplitudeState: SymbolicConstant = None,
-        status: SymbolicConstant = None,
+        v1: typing.Optional[float] = None,
+        v2: typing.Optional[float] = None,
+        v3: typing.Optional[float] = None,
+        vr1: typing.Optional[float] = None,
+        vr2: typing.Optional[float] = None,
+        vr3: typing.Optional[float] = None,
+        v1State: typing.Optional[SymbolicConstant] = None,
+        v2State: typing.Optional[SymbolicConstant] = None,
+        v3State: typing.Optional[SymbolicConstant] = None,
+        vr1State: typing.Optional[SymbolicConstant] = None,
+        vr2State: typing.Optional[SymbolicConstant] = None,
+        vr3State: typing.Optional[SymbolicConstant] = None,
+        amplitudeState: typing.Optional[SymbolicConstant] = None,
+        status: typing.Optional[SymbolicConstant] = None,
         amplitude: str = "",
     ) -> VelocityAdaptiveMeshConstraintState:
         """The VelocityAdaptiveMeshConstraintState object stores the propagating data for an

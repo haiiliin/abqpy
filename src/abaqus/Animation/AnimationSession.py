@@ -45,9 +45,9 @@ class AnimationSession(SessionBase):
         name: str,
         fileName: str,
         startFrame: int = 0,
-        endFrame: int = None,
+        endFrame: typing.Optional[int] = None,
         timelineStartFrame: int = 0,
-        timelineEndFrame: int = None,
+        timelineEndFrame: typing.Optional[int] = None,
         timelineStartTime: float = 0,
         timelineEndTime: typing.Union[SymbolicConstant, float] = END_FRAME_TIME,
     ) -> Movie:

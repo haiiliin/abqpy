@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -21,34 +22,34 @@ class MassScaling:
     #: A SymbolicConstant specifying whether mass scaling should be performed at the beginning
     #: of the step or throughout the step. Possible values are AT_BEGINNING and
     #: THROUGHOUT_STEP.
-    occurs: SymbolicConstant = None
+    occurs: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the type of scaling. Possible values are UNIFORM,
     #: BELOW_MIN, SET_EQUAL_DT, and ROLLING. The default value is BELOW_MIN.
     type: SymbolicConstant = BELOW_MIN
 
     #: A Float specifying a scaling factor.
-    factor: float = None
+    factor: typing.Optional[float] = None
 
     #: A Float specifying a target time increment.
-    dt: float = None
+    dt: typing.Optional[float] = None
 
     #: An Int specifying the frequency at which mass scaling calculations are performed.
-    frequency: int = None
+    frequency: typing.Optional[int] = None
 
     #: An Int specifying the number of intervals at which mass scaling calculations are
     #: performed.
-    numberInterval: int = None
+    numberInterval: typing.Optional[int] = None
 
     #: A Float specifying the estimated average velocity of the workpiece in the rolling
     #: direction at steady-state conditions.
-    feedRate: float = None
+    feedRate: typing.Optional[float] = None
 
     #: A Float specifying the average element length in the extruded direction.
-    extrudedLength: float = None
+    extrudedLength: typing.Optional[float] = None
 
     #: An Int specifying the number of nodes in the cross-section of the workpiece.
-    crossSection: int = None
+    crossSection: typing.Optional[int] = None
 
     #: A SymbolicConstant specifying the rolling direction. Possible values are GLOBAL_X,
     #: GLOBAL_Y, GLOBAL_Z, and GLOBAL_NONE. The default value is GLOBAL_X.

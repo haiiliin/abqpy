@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -14,7 +15,7 @@ class DataTable:
 
     #: An Int specifying the width of the data. Valid widths are 1, 6, 21, corresponding to
     #: scalar data, orientations and 4D tensors.
-    dataWidth: int = None
+    dataWidth: typing.Optional[int] = None
 
     #: A String specifying the index.
     name: str = ""
@@ -23,7 +24,7 @@ class DataTable:
     instanceName: str = ""
 
     #: A tuple of Ints specifying the domain node, element or integration point identifiers.
-    domain: int = None
+    domain: typing.Optional[int] = None
 
     #: A tuple of Floats specifying the data within the domain.
-    table: float = None
+    table: typing.Optional[float] = None

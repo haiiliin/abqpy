@@ -39,7 +39,7 @@ class BuckleStep(AnalysisStep):
     name: str = ""
 
     #: An Int specifying the number of eigenvalues to be estimated.
-    numEigen: int = None
+    numEigen: typing.Optional[int] = None
 
     #: A SymbolicConstant specifying the eigensolver. Possible values are SUBSPACE and LANCZOS.
     #: The default value is SUBSPACE.
@@ -47,15 +47,15 @@ class BuckleStep(AnalysisStep):
 
     #: None or a Float specifying the minimum eigenvalue of interest. The default value is
     #: None.
-    minEigen: float = None
+    minEigen: typing.Optional[float] = None
 
     #: None or a Float specifying the maximum eigenvalue of interest. The default value is
     #: None.
-    maxEigen: float = None
+    maxEigen: typing.Optional[float] = None
 
     #: An Int specifying the number of vectors used in the iteration. The default value is the
     #: minimum of (2*n*, **n** + 8), where **n** is the number of eigenvalues requested.
-    vectors: int = None
+    vectors: typing.Optional[int] = None
 
     #: An Int specifying the maximum number of iterations. The default value is 30.
     maxIterations: int = 30
@@ -82,7 +82,7 @@ class BuckleStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: SymbolicConstant = None
+    explicit: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -118,7 +118,7 @@ class BuckleStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: SymbolicConstant = None
+    procedureType: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
@@ -133,7 +133,7 @@ class BuckleStep(AnalysisStep):
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
-    monitor: Monitor = None
+    monitor: typing.Optional[Monitor] = None
 
     #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
@@ -154,7 +154,7 @@ class BuckleStep(AnalysisStep):
     boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: int = None
+    interactionStates: typing.Optional[int] = None
 
     #: A repository of LoadState objects.
     loadStates: typing.Dict[str, LoadState] = {}
@@ -173,9 +173,9 @@ class BuckleStep(AnalysisStep):
         numEigen: int,
         description: str = "",
         eigensolver: SymbolicConstant = SUBSPACE,
-        minEigen: float = None,
-        maxEigen: float = None,
-        vectors: int = None,
+        minEigen: typing.Optional[float] = None,
+        maxEigen: typing.Optional[float] = None,
+        vectors: typing.Optional[int] = None,
         maxIterations: int = 30,
         blockSize: SymbolicConstant = DEFAULT,
         maxBlocks: SymbolicConstant = DEFAULT,
@@ -244,9 +244,9 @@ class BuckleStep(AnalysisStep):
         self,
         description: str = "",
         eigensolver: SymbolicConstant = SUBSPACE,
-        minEigen: float = None,
-        maxEigen: float = None,
-        vectors: int = None,
+        minEigen: typing.Optional[float] = None,
+        maxEigen: typing.Optional[float] = None,
+        vectors: typing.Optional[int] = None,
         maxIterations: int = 30,
         blockSize: SymbolicConstant = DEFAULT,
         maxBlocks: SymbolicConstant = DEFAULT,

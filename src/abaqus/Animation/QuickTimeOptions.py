@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 from .._OptionsBase import _OptionsBase
@@ -38,14 +39,14 @@ class QuickTimeOptions(_OptionsBase):
     #: resolution.The minimum width and height are normally < 50 pixels. The values of the maximum
     #: width (*maxWidth*) and height (*maxHeight*) depend on the graphics capabilities of the system.
     #: The maximum width and height will be at least as large as the screen dimensions.
-    imageSize: int = None
+    imageSize: typing.Optional[int] = None
 
     @abaqus_method_doc
     def setValues(
         self,
         compressionMethod: SymbolicConstant = RLE24,
         sizeDefinition: SymbolicConstant = SIZE_ON_SCREEN,
-        imageSize: int = None,
+        imageSize: typing.Optional[int] = None,
     ):
         """This method modifies the QuickTimeOptions object.
 

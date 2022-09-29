@@ -42,13 +42,13 @@ class AssemblyBase(AssemblyFeature):
 
     #: An Int specifying that feature parameters have been modified but that the assembly has
     #: not been regenerated. Possible values are 0 and 1.
-    isOutOfDate: int = None
+    isOutOfDate: typing.Optional[int] = None
 
     #: A Float specifying which gives an indication when the assembly was last modified.
-    timeStamp: float = None
+    timeStamp: typing.Optional[float] = None
 
     #: An Int specifying whether the assembly is locked or not. Possible values are 0 and 1.
-    isLocked: int = None
+    isLocked: typing.Optional[int] = None
 
     #: A Boolean specifying whether the positioning constraints in the assembly should be
     #: regenerated together before regenerating other assembly features. The default value is
@@ -673,7 +673,7 @@ class AssemblyBase(AssemblyFeature):
         self,
         sketch: str,
         filter: SymbolicConstant = ALL_EDGES,
-        upToFeature: AssemblyFeature = None,
+        upToFeature: typing.Optional[AssemblyFeature] = None,
         edges: tuple = (),
         vertices: tuple = (),
     ):
@@ -838,7 +838,7 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def writeAcisFile(self, fileName: str, version: float = None):
+    def writeAcisFile(self, fileName: str, version: typing.Optional[float] = None):
         """This method exports the assembly to a named file in ACIS part (SAT) or assembly (ASAT)
         format.
 
@@ -893,8 +893,8 @@ class AssemblyBase(AssemblyFeature):
     def setMeshNumberingControl(
         self,
         instances: typing.Tuple[PartInstance, ...],
-        startNodeLabel: int = None,
-        startElemLabel: int = None,
+        startNodeLabel: typing.Optional[int] = None,
+        startElemLabel: typing.Optional[int] = None,
     ):
         """This method changes the start node and/or element labels on the specified independent
         part instances before or after Abaqus/CAE generates the meshes. For the meshed
@@ -918,7 +918,7 @@ class AssemblyBase(AssemblyFeature):
         elements: typing.Tuple[MeshElement, ...] = (),
         faces: typing.Tuple[Face, ...] = (),
         elemFaces: typing.Tuple[MeshFace, ...] = (),
-        targetFace: MeshFace = None,
+        targetFace: typing.Optional[MeshFace] = None,
         nodes: typing.Tuple[MeshNode, ...] = (),
         coordinates: tuple = (),
     ):

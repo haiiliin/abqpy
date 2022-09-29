@@ -32,7 +32,7 @@ class DatumCsys(Datum):
 
     #: A SymbolicConstant specifying the type of the coordinate system. Possible values are
     #: CARTESIAN, CYLINDRICAL, and SPHERICAL.
-    coordSysType: SymbolicConstant = None
+    coordSysType: typing.Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Datum.DatumPoint.DatumPoint` object specifying the origin of the coordinate system.
     origin: DatumPoint = DatumPoint()

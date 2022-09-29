@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Field import Field
 from .FluidCavityPressure import FluidCavityPressure
@@ -236,10 +237,10 @@ class PredefinedFieldModel(ModelBase):
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: SymbolicConstant = None,
-        beginIncrement: SymbolicConstant = None,
-        endStep: SymbolicConstant = None,
-        endIncrement: SymbolicConstant = None,
+        beginStep: typing.Optional[SymbolicConstant] = None,
+        beginIncrement: typing.Optional[SymbolicConstant] = None,
+        endStep: typing.Optional[SymbolicConstant] = None,
+        endIncrement: typing.Optional[SymbolicConstant] = None,
         interpolate: SymbolicConstant = OFF,
         magnitudes: str = "",
         absoluteExteriorTolerance: float = 0,
@@ -436,12 +437,12 @@ class PredefinedFieldModel(ModelBase):
         name: str,
         region: Region,
         distributionType: SymbolicConstant = UNIFORM,
-        sigma11: float = None,
-        sigma22: float = None,
-        sigma33: float = None,
-        sigma12: float = None,
-        sigma13: float = None,
-        sigma23: float = None,
+        sigma11: typing.Optional[float] = None,
+        sigma22: typing.Optional[float] = None,
+        sigma33: typing.Optional[float] = None,
+        sigma12: typing.Optional[float] = None,
+        sigma13: typing.Optional[float] = None,
+        sigma23: typing.Optional[float] = None,
     ):
         """This method creates a Stress predefined field object.
 
@@ -500,16 +501,16 @@ class PredefinedFieldModel(ModelBase):
         createStepName: str,
         region: Region,
         outputVariable: str = "",
-        fieldVariableNum: int = None,
+        fieldVariableNum: typing.Optional[int] = None,
         distributionType: SymbolicConstant = UNIFORM,
         crossSectionDistribution: SymbolicConstant = CONSTANT_THROUGH_THICKNESS,
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: SymbolicConstant = None,
-        beginIncrement: SymbolicConstant = None,
-        endStep: SymbolicConstant = None,
-        endIncrement: SymbolicConstant = None,
+        beginStep: typing.Optional[SymbolicConstant] = None,
+        beginIncrement: typing.Optional[SymbolicConstant] = None,
+        endStep: typing.Optional[SymbolicConstant] = None,
+        endIncrement: typing.Optional[SymbolicConstant] = None,
         interpolate: SymbolicConstant = OFF,
         magnitudes: str = "",
     ):

@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -14,8 +15,8 @@ class SectorDefinition:
     """
 
     #: An Int specifying the number of sectors in the cyclic symmetry model.
-    numSectors: int = None
+    numSectors: typing.Optional[int] = None
 
     #: A tuple of tuples of Floats specifying the coordinates of two points on the axis of
     #: symmetry.
-    symmetryAxis: float = None
+    symmetryAxis: typing.Optional[float] = None

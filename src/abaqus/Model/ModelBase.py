@@ -57,10 +57,10 @@ class ModelBase:
     name: str = ""
 
     #: None or a Float specifying the Stefan-Boltzmann constant. The default value is None.
-    stefanBoltzmann: float = None
+    stefanBoltzmann: typing.Optional[float] = None
 
     #: None or a Float specifying the absolute zero constant. The default value is None.
-    absoluteZero: float = None
+    absoluteZero: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the type of incident wave formulation to be used in
     #: acoustic problems. Possible values are NOT_SET, SCATTERED, and TOTAL. The default value
@@ -68,7 +68,7 @@ class ModelBase:
     waveFormulation: SymbolicConstant = NOT_SET
 
     #: None or a Float specifying the universal gas constant. The default value is None.
-    universalGas: float = None
+    universalGas: typing.Optional[float] = None
 
     #: A Boolean specifying whether an input file should be written without parts and
     #: assemblies. The default value is OFF.
@@ -76,7 +76,7 @@ class ModelBase:
 
     #: An Int specifying the increment, interval, iteration or cycle where the restart analysis
     #: will start. To select the end of the step use the SymbolicConstant STEP_END.
-    restartIncrement: SymbolicConstant = None
+    restartIncrement: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying that the step specified by **restartStep** should be terminated at
     #: the increment specified by **restartIncrement**.
@@ -86,7 +86,7 @@ class ModelBase:
     shellToSolid: Boolean = OFF
 
     #: A Float specifying the time stamp that indicates when the model was last changed.
-    lastChangedCount: float = None
+    lastChangedCount: typing.Optional[float] = None
 
     #: A String specifying the purpose and contents of the Model object. The default value is
     #: an empty string.
@@ -237,11 +237,11 @@ class ModelBase:
         self,
         name: str,
         description: str = "",
-        stefanBoltzmann: float = None,
-        absoluteZero: float = None,
+        stefanBoltzmann: typing.Optional[float] = None,
+        absoluteZero: typing.Optional[float] = None,
         waveFormulation: SymbolicConstant = NOT_SET,
         modelType: SymbolicConstant = STANDARD_EXPLICIT,
-        universalGas: float = None,
+        universalGas: typing.Optional[float] = None,
         copyConstraints: Boolean = ON,
         copyConnectors: Boolean = ON,
         copyInteractions: Boolean = ON,
@@ -434,13 +434,13 @@ class ModelBase:
         self,
         description: str = "",
         noPartsInputFile: Boolean = OFF,
-        absoluteZero: float = None,
-        stefanBoltzmann: float = None,
+        absoluteZero: typing.Optional[float] = None,
+        stefanBoltzmann: typing.Optional[float] = None,
         waveFormulation: SymbolicConstant = NOT_SET,
-        universalGas: float = None,
+        universalGas: typing.Optional[float] = None,
         restartJob: str = "",
         restartStep: str = "",
-        restartIncrement: SymbolicConstant = None,
+        restartIncrement: typing.Optional[SymbolicConstant] = None,
         endRestartStep: Boolean = OFF,
         globalJob: str = "",
         shellToSolid: Boolean = OFF,

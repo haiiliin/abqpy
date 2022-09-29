@@ -21,10 +21,10 @@ class Text(Annotation, _OptionsBase):
     """
 
     #: A Float specifying the width in millimeters of the Text object.
-    width: float = None
+    width: typing.Optional[float] = None
 
     #: A Float specifying the height in millimeters of the Text object.
-    height: float = None
+    height: typing.Optional[float] = None
 
     #: A String specifying the annotation repository key.
     name: str

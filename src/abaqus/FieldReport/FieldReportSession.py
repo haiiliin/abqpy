@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..Odb.Odb import Odb
@@ -19,8 +20,8 @@ class FieldReportSession(SessionBase):
         outputPosition: SymbolicConstant,
         displayGroup: DisplayGroup,
         variable: SymbolicConstant,
-        numericForm: SymbolicConstant = None,
-        complexAngle: float = None,
+        numericForm: typing.Optional[SymbolicConstant] = None,
+        complexAngle: typing.Optional[float] = None,
         stepFrame: SymbolicConstant = SPECIFY,
     ):
         """This method writes a FieldOutput object to a user-defined ASCII file.
@@ -97,10 +98,10 @@ class FieldReportSession(SessionBase):
         self,
         fileName: str,
         append: Boolean,
-        step: int = None,
-        frame: int = None,
+        step: typing.Optional[int] = None,
+        frame: typing.Optional[int] = None,
         stepFrame: SymbolicConstant = SPECIFY,
-        odb: Odb = None,
+        odb: typing.Optional[Odb] = None,
     ):
         """This method writes a FreeBody object to a user-defined ASCII file.
 

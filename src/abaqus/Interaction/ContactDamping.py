@@ -51,7 +51,7 @@ class ContactDamping:
 
     #: A tuple of pairs of Floats specifying the damping properties. The items in the table
     #: data are described below.
-    table: float = None
+    table: typing.Optional[float] = None
 
     @abaqus_method_doc
     def __init__(

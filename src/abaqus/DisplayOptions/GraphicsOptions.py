@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import *
 
@@ -40,7 +41,7 @@ class GraphicsOptions:
     #: A SymbolicConstant specifying the graphics driver to use. Abaqus/CAE currently uses
     #: OpenGL exclusively so the only possible value is OPEN_GL. OPEN_GL takes advantage of
     #: graphics adapter hardware acceleration.
-    graphicsDriver: SymbolicConstant = None
+    graphicsDriver: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether double buffering is used. The default value is ON.Double
     #: buffering controls where Abaqus/CAE draws its graphics. When **doubleBuffering** = OFF,
@@ -83,20 +84,20 @@ class GraphicsOptions:
     #: **polygonOffsetConstant** argument affects the behavior of only the OpenGL driver.
     #: Possible values are 0.0 ≤ **polygonOffsetConstant** ≤ 100.0. The default value is
     #: platform dependent and is typically between 0.0 and 2.0.
-    polygonOffsetConstant: float = None
+    polygonOffsetConstant: typing.Optional[float] = None
 
     #: A Float specifying the factor that multiplies the slope of each line before the line is
     #: added to the vertexes of a polygon face. The **polygonOffsetSlope** argument affects the
     #: behavior of only the OpenGL driver. Possible values are 0.0 ≤ **polygonOffsetSlope** ≤
     #: 100.0. The default value is platform dependent and is typically between 0.0 and 2.0.
-    polygonOffsetSlope: float = None
+    polygonOffsetSlope: typing.Optional[float] = None
 
     #: A Float specifying the offset added when drawing the faces of a polygon.
     #: **printPolygonOffsetConstant** is similar to **polygonOffsetConstant**; however,
     #: **printPolygonOffsetConstant** is used when printing and **polygonOffsetConstant** is used
     #: for display. Some systems, especially Windows, use different OpenGL drivers for printing
     #: and display, and you may have to use different offset values for each driver.
-    printPolygonOffsetConstant: float = None
+    printPolygonOffsetConstant: typing.Optional[float] = None
 
     #: A Float specifying the factor that multiplies the slope of each line before the line is
     #: added to the vertexes of a polygon face. **printPolygonOffsetSlope** is similar to
@@ -104,7 +105,7 @@ class GraphicsOptions:
     #: **polygonOffsetSlope** is used for display. Some systems, especially Windows, use
     #: different OpenGL drivers for printing and display, and you may have to use different
     #: offset values for each driver.
-    printPolygonOffsetSlope: float = None
+    printPolygonOffsetSlope: typing.Optional[float] = None
 
     #: A Boolean specifying how the three-dimensional vertices of the model are processed. When
     #: **vertexArrays** = OFF, each vertex of the model is processed separately. When
@@ -202,7 +203,7 @@ class GraphicsOptions:
 
     #: A SymbolicConstant specifying the highlight method. For the GraphicsOptions object,
     #: possible values of the member are HARDWARE_OVERLAY, XOR, SOFTWARE_OVERLAY, and BLEND.
-    highlightMethod: SymbolicConstant = None
+    highlightMethod: typing.Optional[SymbolicConstant] = None
 
     #: A Boolean specifying if the graphics hardware supports hardware overlay.
     hardwareOverlayAvailable: Boolean = OFF
@@ -227,7 +228,7 @@ class GraphicsOptions:
     #: None or a GraphicsOptions object specifying the object from which values are to be
     #: copied. If other arguments are also supplied to setValues, they will override the values
     #: in the **options** member. The default value is None.
-    options: str = None
+    options: typing.Optional[str] = None
 
     #: A tuple of SymbolicConstants specifying a hint used to modify the highlight method.
     #: Possible values are:HARDWARE_OVERLAY, specifying a hint of hardware overlay. The best
@@ -246,7 +247,7 @@ class GraphicsOptions:
     #: alternative.You can use a single value to set the first element of the list, or you can
     #: use a tuple with one to four unique values. Abaqus sets any remaining elements of the
     #: tuple to unique values based on the default order.
-    highlightMethodHint: SymbolicConstant = None
+    highlightMethodHint: typing.Optional[SymbolicConstant] = None
 
     #: A String specifying one of the two background colors for all viewport windows. The
     #: initial color is black. A list of valid color strings is in the **colors** map in the
@@ -261,17 +262,17 @@ class GraphicsOptions:
     @abaqus_method_doc
     def setValues(
         self,
-        graphicsDriver: SymbolicConstant = None,
+        graphicsDriver: typing.Optional[SymbolicConstant] = None,
         doubleBuffering: Boolean = ON,
         displayLists: Boolean = ON,
-        highlightMethodHint: SymbolicConstant = None,
+        highlightMethodHint: typing.Optional[SymbolicConstant] = None,
         dragMode: SymbolicConstant = AS_IS,
         antiAlias: Boolean = ON,
         autoFitAfterRotate: Boolean = OFF,
-        polygonOffsetConstant: float = None,
-        polygonOffsetSlope: float = None,
-        printPolygonOffsetConstant: float = None,
-        printPolygonOffsetSlope: float = None,
+        polygonOffsetConstant: typing.Optional[float] = None,
+        polygonOffsetSlope: typing.Optional[float] = None,
+        printPolygonOffsetConstant: typing.Optional[float] = None,
+        printPolygonOffsetSlope: typing.Optional[float] = None,
         vertexArrays: Boolean = ON,
         vertexArraysInDisplayLists: Boolean = ON,
         viewManipDisplayListThreshold: int = 40,
@@ -289,7 +290,7 @@ class GraphicsOptions:
         backingStore: Boolean = ON,
         shadersAvailable: Boolean = OFF,
         translucencyMode: int = 4,
-        options: str = None,
+        options: typing.Optional[str] = None,
         contourRangeTexturePrecision: float = 0,
     ):
         """This method modifies the GraphicsOptions object.

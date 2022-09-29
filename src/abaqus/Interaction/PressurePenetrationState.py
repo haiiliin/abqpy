@@ -1,3 +1,4 @@
+import typing
 from abqpy.decorators import abaqus_class_doc
 from .InteractionState import InteractionState
 from ..UtilityAndView.abaqusConstants import *
@@ -26,27 +27,27 @@ class PressurePenetrationState(InteractionState):
     #: A Float specifying the fraction of the current step time over which the fluid pressure
     #: on newly penetrated contact surface segments is ramped up to the current magnitude. The
     #: default value is 10-3.
-    penetrationTime: float = None
+    penetrationTime: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the **penetrationTime** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    penetrationTimeState: SymbolicConstant = None
+    penetrationTimeState: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    amplitudeState: SymbolicConstant = None
+    amplitudeState: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **criticalPressure** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    criticalPressureState: SymbolicConstant = None
+    criticalPressureState: typing.Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **penetrationPressure** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    penetrationPressureState: SymbolicConstant = None
+    penetrationPressureState: typing.Optional[SymbolicConstant] = None
 
     #: A tuple of Floats specifying the fluid pressure magnitude. For steady state dynamic
     #: analyses, a tuple of Complexes specifying the fluid pressure magnitude.
-    penetrationPressure: float = None
+    penetrationPressure: typing.Optional[float] = None
 
     #: A String specifying the name of the amplitude reference. The String is empty if the load
     #: has no amplitude reference.
@@ -54,7 +55,7 @@ class PressurePenetrationState(InteractionState):
 
     #: A tuple of Floats specifying the critical contact pressure below which fluid penetration
     #: starts to occur.
-    criticalPressure: float = None
+    criticalPressure: typing.Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:
@@ -68,4 +69,4 @@ class PressurePenetrationState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: SymbolicConstant = None
+    status: typing.Optional[SymbolicConstant] = None

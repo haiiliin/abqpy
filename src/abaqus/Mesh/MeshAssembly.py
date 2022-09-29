@@ -82,20 +82,20 @@ class MeshAssembly(AssemblyBase):
         self,
         regions: typing.Tuple[Face, ...],
         mergeShortEdges: Boolean = False,
-        shortEdgeThreshold: float = None,
+        shortEdgeThreshold: typing.Optional[float] = None,
         mergeSmallFaces: Boolean = False,
-        smallFaceAreaThreshold: float = None,
+        smallFaceAreaThreshold: typing.Optional[float] = None,
         mergeSliverFaces: Boolean = False,
-        faceAspectRatioThreshold: float = None,
+        faceAspectRatioThreshold: typing.Optional[float] = None,
         mergeSmallAngleFaces: Boolean = False,
-        smallFaceCornerAngleThreshold: float = None,
+        smallFaceCornerAngleThreshold: typing.Optional[float] = None,
         mergeThinStairFaces: Boolean = False,
-        thinStairFaceThreshold: float = None,
+        thinStairFaceThreshold: typing.Optional[float] = None,
         ignoreRedundantEntities: Boolean = False,
         cornerAngleTolerance: float = 30,
         applyBlendControls: Boolean = False,
-        blendSubtendedAngleTolerance: float = None,
-        blendRadiusTolerance: float = None,
+        blendSubtendedAngleTolerance: typing.Optional[float] = None,
+        blendRadiusTolerance: typing.Optional[float] = None,
     ):
         """This method creates a virtual topology feature by automatically merging faces and edges
         based on a set of geometric parameters. The edges and vertices that are being merged
@@ -251,7 +251,7 @@ class MeshAssembly(AssemblyBase):
         geometrySourceSide: str = "",
         elemFacesSourceSide: typing.Tuple[MeshFace, ...] = (),
         elemSourceSide: tuple = (),
-        depth: float = None,
+        depth: typing.Optional[float] = None,
         targetSide: str = "",
         biasRatio: float = 1,
         extendElementSets: Boolean = False,
@@ -307,8 +307,8 @@ class MeshAssembly(AssemblyBase):
         geometryConnectingSides: str = "",
         elemFacesConnectingSides: typing.Tuple[MeshFace, ...] = (),
         elemConnectingSides: tuple = (),
-        targetSide: Face = None, 
-        numberOfLayers: int = None,
+        targetSide: typing.Optional[Face] = None, 
+        numberOfLayers: typing.Optional[int] = None,
         extendElementSets: Boolean = False,
     ):
         """This method generates solid elements by sweeping a 2D mesh, either on an orphan mesh or
@@ -790,8 +790,8 @@ class MeshAssembly(AssemblyBase):
         self,
         edges: typing.Tuple[Edge, ...],
         size: float,
-        deviationFactor: float = None,
-        minSizeFactor: float = None,
+        deviationFactor: typing.Optional[float] = None,
+        minSizeFactor: typing.Optional[float] = None,
         constraint: SymbolicConstant = FREE,
     ):
         """This method seeds the given edges either uniformly or following edge curvature
@@ -824,8 +824,8 @@ class MeshAssembly(AssemblyBase):
         self,
         regions: typing.Tuple[PartInstance, ...],
         size: float,
-        deviationFactor: float = None,
-        minSizeFactor: float = None,
+        deviationFactor: typing.Optional[float] = None,
+        minSizeFactor: typing.Optional[float] = None,
         constraint: SymbolicConstant = FREE,
     ):
         """This method assigns global edge seeds to the given part instances.
@@ -934,11 +934,11 @@ class MeshAssembly(AssemblyBase):
     def setMeshControls(
         self,
         regions: tuple,
-        elemShape: SymbolicConstant = None,
-        technique: SymbolicConstant = None,
-        algorithm: SymbolicConstant = None,
+        elemShape: typing.Optional[SymbolicConstant] = None,
+        technique: typing.Optional[SymbolicConstant] = None,
+        algorithm: typing.Optional[SymbolicConstant] = None,
         minTransition: Boolean = ON,
-        sizeGrowth: SymbolicConstant = None,
+        sizeGrowth: typing.Optional[SymbolicConstant] = None,
         allowMapped: Boolean = OFF,
     ):
         """This method sets the mesh control parameters for the specified regions.
@@ -1034,8 +1034,8 @@ class MeshAssembly(AssemblyBase):
     def verifyMeshQuality(
         self,
         criterion: SymbolicConstant,
-        threshold: float = None,
-        elemShape: SymbolicConstant = None,
+        threshold: typing.Optional[float] = None,
+        elemShape: typing.Optional[SymbolicConstant] = None,
         regions: tuple = (),
     ):
         """This method tests the quality of part instance meshes and returns poor-quality elements.
