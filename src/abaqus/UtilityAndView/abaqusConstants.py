@@ -1,5 +1,5 @@
 from auto_all import start_all, end_all
-from typing import Union, Union
+from typing import Union
 
 start_all()
 
