@@ -1,7 +1,7 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc
@@ -27,23 +27,23 @@ class TransverseShearBeam:
 
     #: None or a Float specifying the k23 shear stiffness of the section. The default value is
     #: None.
-    k23: float = None
+    k23: Optional[float] = None
 
     #: None or a Float specifying the k13 shear stiffness of the section. The default value is
     #: None.
-    k13: float = None
+    k13: Optional[float] = None
 
     #: The SymbolicConstant COMPUTED or a Float specifying the slenderness compensation factor
     #: of the section. The default value is 0.25.
-    slendernessCompensation: typing.Union[SymbolicConstant, float] = 0
+    slendernessCompensation: Union[SymbolicConstant, float] = 0
 
     @abaqus_method_doc
     def __init__(
         self,
         scfDefinition: SymbolicConstant,
-        k23: float = None,
-        k13: float = None,
-        slendernessCompensation: typing.Union[SymbolicConstant, float] = 0,
+        k23: Optional[float] = None,
+        k13: Optional[float] = None,
+        slendernessCompensation: Union[SymbolicConstant, float] = 0,
     ):
         """This method creates a TransverseShearBeam object.
 

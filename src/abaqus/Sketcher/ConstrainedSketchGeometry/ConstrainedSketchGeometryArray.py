@@ -1,12 +1,12 @@
-import typing
+from typing import Union, List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
-from ...UtilityAndView.abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import Boolean
 
 
 @abaqus_class_doc
-class ConstrainedSketchGeometryArray(typing.List[ConstrainedSketchGeometry]):
+class ConstrainedSketchGeometryArray(List[ConstrainedSketchGeometry]):
     """The ConstrainedSketchGeometryArray is a sequence of ConstrainedSketchGeometry objects.
 
     .. note:: 
@@ -17,7 +17,7 @@ class ConstrainedSketchGeometryArray(typing.List[ConstrainedSketchGeometry]):
     """
 
     @abaqus_method_doc
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> typing.Union[ConstrainedSketchGeometry, typing.List[ConstrainedSketchGeometry]]:
+    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> Union[ConstrainedSketchGeometry, List[ConstrainedSketchGeometry]]:
         """This method returns the ConstrainedSketchGeometry object located at the given
         coordinates.
 

@@ -1,5 +1,7 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, CCW, FILL, OFF, ON, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -75,11 +77,11 @@ class Drawing:
 
     #: A tuple of three Floats specifying the **Red**, **Green**, and **Blue** component values for
     #: the edge color. Possible values for each component are between 0.0 and 1.0.
-    edgeColor: float = None
+    edgeColor: Optional[float] = None
 
     #: A tuple of three Floats specifying the **Red**, **Green**, and **Blue** component values for
     #: the point color. Possible values for each component are between 0.0 and 1.0.
-    pointColor: float = None
+    pointColor: Optional[float] = None
 
     #: A String specifying the repository key.
     name: str

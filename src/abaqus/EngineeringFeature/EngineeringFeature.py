@@ -1,4 +1,4 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AssembledFastener import AssembledFastener
@@ -15,7 +15,9 @@ from .TwoPointSpringDashpot import TwoPointSpringDashpot
 from .XFEMCrack import XFEMCrack
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALL, AXIS_1, Boolean, CONNECTOR, CONTINUUM, DEFAULT,
+                                              FACETOFACE, MASS_PROPORTIONAL, MODEL, NONE, NORMALS,
+                                              OFF, ON, STEP, SymbolicConstant, UNIFORM)
 
 
 @abaqus_class_doc
@@ -31,7 +33,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         assignedSurfaces: tuple,
         propertyPrefix: str,
         orientMethod: SymbolicConstant = NORMALS,
-        localCsys: int = None,
+        localCsys: Optional[int] = None,
         scriptName: str = "",
     ) -> AssembledFastener:
         """This method creates an AssembledFastener object. Although the constructor is available
@@ -247,13 +249,13 @@ class EngineeringFeature(EngineeringFeatureBase):
         self,
         name: str,
         region: Region,
-        influenceRadius: typing.Union[SymbolicConstant, float],
+        influenceRadius: Union[SymbolicConstant, float],
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
         coupling: SymbolicConstant = CONTINUUM,
         weightingMethod: SymbolicConstant = UNIFORM,
-        localCsys: int = None,
+        localCsys: Optional[int] = None,
     ) -> DiscreteFastener:
         """This method creates a DiscreteFastener object. Although the constructor is available
         both for parts and for the assembly, DiscreteFastener objects are currently supported
@@ -407,27 +409,27 @@ class EngineeringFeature(EngineeringFeatureBase):
         name: str,
         region: Region,
         physicalRadius: float,
-        directionVector: tuple = None,
+        directionVector: Optional[tuple] = None,
         targetSurfaces: RegionArray = MODEL,
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
         attachmentMethod: SymbolicConstant = FACETOFACE,
-        influenceRadius: typing.Union[SymbolicConstant, float] = DEFAULT,
-        searchRadius: typing.Union[SymbolicConstant, float] = DEFAULT,
+        influenceRadius: Union[SymbolicConstant, float] = DEFAULT,
+        searchRadius: Union[SymbolicConstant, float] = DEFAULT,
         maximumLayers: SymbolicConstant = ALL,
         coupling: SymbolicConstant = CONTINUUM,
         weightingMethod: SymbolicConstant = UNIFORM,
         additionalMass: float = 0,
         adjustOrientation: Boolean = ON,
-        localCsys: int = None,
+        localCsys: Optional[int] = None,
         connectionType: SymbolicConstant = CONNECTOR,
         sectionName: str = "",
-        connectorOrientationLocalCsys1: int = None,
+        connectorOrientationLocalCsys1: Optional[int] = None,
         axis1: SymbolicConstant = AXIS_1,
         angle1: float = 0,
         orient2SameAs1: Boolean = ON,
-        connectorOrientationLocalCsys2: int = None,
+        connectorOrientationLocalCsys2: Optional[int] = None,
         axis2: SymbolicConstant = AXIS_1,
         angle2: float = 0,
         unsorted: Boolean = OFF,
@@ -595,7 +597,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         i12: float = 0,
         i13: float = 0,
         i23: float = 0,
-        localCsys: str = None,
+        localCsys: Optional[str] = None,
         alpha: float = 0,
         composite: float = 0,
     ) -> PointMassInertia:
@@ -682,7 +684,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         name: str,
         region: Region,
         dof: int,
-        orientation: str = None,
+        orientation: Optional[str] = None,
         springBehavior: Boolean = OFF,
         dashpotBehavior: Boolean = OFF,
         springStiffness: float = 0,
@@ -749,7 +751,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         axis: SymbolicConstant,
         dof1: int = 0,
         dof2: int = 0,
-        orientation: str = None,
+        orientation: Optional[str] = None,
         springBehavior: Boolean = OFF,
         dashpotBehavior: Boolean = OFF,
         springStiffness: float = 0,
@@ -827,8 +829,8 @@ class EngineeringFeature(EngineeringFeatureBase):
         name: str,
         crackDomain: Region,
         allowCrackGrowth: Boolean = ON,
-        crackLocation: Region = None,
-        singularityCalcRadius: float = None,
+        crackLocation: Optional[Region] = None,
+        singularityCalcRadius: Optional[float] = None,
         interactionProperty: str = "",
         elemId: tuple = (),
         nodeId: tuple = (),

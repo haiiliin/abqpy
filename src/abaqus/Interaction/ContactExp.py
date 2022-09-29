@@ -1,4 +1,4 @@
-import typing
+from typing import Union, overload, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactPropertyAssignment import ContactPropertyAssignment
@@ -12,7 +12,8 @@ from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
 from .SurfaceFrictionAssignment import SurfaceFrictionAssignment
 from .SurfaceOffsetAssignment import SurfaceOffsetAssignment
 from .SurfaceThicknessAssignment import SurfaceThicknessAssignment
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, GLOBAL, OFF, ON, ORIGINAL, PERIMETER,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -80,7 +81,7 @@ class ContactExp(Interaction):
     #:     The `polarityAssignments` attribute was added.
     polarityAssignments: PolarityAssignments = PolarityAssignments()
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
@@ -88,16 +89,16 @@ class ContactExp(Interaction):
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-        includedPairs: RegionPairs = None, 
-        excludedPairs: RegionPairs = None, 
-        contactPropertyAssignments: ContactPropertyAssignment = None, 
-        surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
-        surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
-        smoothingAssignments: SmoothingAssignment = None,
+        includedPairs: Optional[RegionPairs] = None, 
+        excludedPairs: Optional[RegionPairs] = None, 
+        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
+        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
+        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
+        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None, 
+        smoothingAssignments: Optional[SmoothingAssignment] = None,
         surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
         surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-        mainSecondaryAssignments: MainSecondaryAssignment = None,
+        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -170,7 +171,7 @@ class ContactExp(Interaction):
         """
         super().__init__()
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
@@ -180,15 +181,15 @@ class ContactExp(Interaction):
         surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
         surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
         useAllstar: Boolean = OFF,
-        includedPairs: SymbolicConstant = None,
-        excludedPairs: SymbolicConstant = None,
-        contactPropertyAssignments: SymbolicConstant = None,
-        surfaceThicknessAssignments: typing.Union[SymbolicConstant, float] = ORIGINAL,
-        surfaceOffsetAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
-        surfaceFeatureAssignments: typing.Union[SymbolicConstant, float] = PERIMETER,
-        smoothingAssignments: SymbolicConstant = None,
-        mainSecondaryAssignments: SymbolicConstant = None,
-        polarityAssignments: SymbolicConstant = None,
+        includedPairs: Optional[SymbolicConstant] = None,
+        excludedPairs: Optional[SymbolicConstant] = None,
+        contactPropertyAssignments: Optional[SymbolicConstant] = None,
+        surfaceThicknessAssignments: Union[SymbolicConstant, float] = ORIGINAL,
+        surfaceOffsetAssignments: Union[SymbolicConstant, float] = GLOBAL,
+        surfaceFeatureAssignments: Union[SymbolicConstant, float] = PERIMETER,
+        smoothingAssignments: Optional[SymbolicConstant] = None,
+        mainSecondaryAssignments: Optional[SymbolicConstant] = None,
+        polarityAssignments: Optional[SymbolicConstant] = None,
     ):
         """This method creates a ContactExp object.
 

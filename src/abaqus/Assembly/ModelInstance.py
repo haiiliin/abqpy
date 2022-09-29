@@ -1,4 +1,4 @@
-import typing
+from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..BasicGeometry.EdgeArray import EdgeArray
@@ -9,7 +9,7 @@ from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNodeArray import MeshNodeArray
 from ..Region.Set import Set
 from ..Region.Surface import Surface
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 # prevent circular imports
@@ -31,12 +31,12 @@ class ModelInstance:
     #: A repository of Set objects specifying the sets created on the assembly. For more
     #: information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    sets: typing.Dict[str, Set] = {}
+    sets: Dict[str, Set] = {}
 
     #: A repository of Surface objects specifying the surfaces created on the assembly. For
     #: more information, see [Region
     #: commands](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-m-RegPyc-sb.htm?ContextScope=all).
-    surfaces: typing.Dict[str, Surface] = {}
+    surfaces: Dict[str, Surface] = {}
 
     #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object.
     vertices: VertexArray = VertexArray([])
@@ -51,10 +51,10 @@ class ModelInstance:
     nodes: MeshNodeArray = MeshNodeArray([])
 
     #: A repository of Datum objects.
-    datums: typing.Dict[str, Datum] = {}
+    datums: Dict[str, Datum] = {}
 
     #: A repository of ReferencePoint objects.
-    referencePoints: typing.Dict[str, ReferencePoint] = {}
+    referencePoints: Dict[str, ReferencePoint] = {}
 
     @abaqus_method_doc
     def __init__(self, name: str, model: Model, autoOffset: Boolean = OFF):

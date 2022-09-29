@@ -1,8 +1,8 @@
-import typing
+from typing import Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .CrushStressVelocityFactor import CrushStressVelocityFactor
-from ....UtilityAndView.abaqusConstants import *
+from ....UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
@@ -32,7 +32,7 @@ class CrushStress:
     """
 
     #: A sequence of sequences of Floats specifying the items described below.
-    crushStressTable: typing.Tuple[typing.Tuple[float, ...]]
+    crushStressTable: Tuple[Tuple[float, ...]]
 
     #: A Boolean specifying whether the data depend on temperature. The default value is OFF.
     temperatureDependency: Boolean = OFF
@@ -48,7 +48,7 @@ class CrushStress:
     @abaqus_method_doc
     def __init__(
         self,
-        crushStressTable: typing.Tuple[typing.Tuple[float, ...]],
+        crushStressTable: Tuple[Tuple[float, ...]],
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):
@@ -76,7 +76,7 @@ class CrushStress:
     @abaqus_method_doc
     def setValues(
         self,
-        crushStressTable: typing.Tuple[typing.Tuple[float, ...]] = ((),),
+        crushStressTable: Tuple[Tuple[float, ...]] = ((),),
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

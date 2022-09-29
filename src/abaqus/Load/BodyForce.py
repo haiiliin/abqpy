@@ -1,9 +1,9 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM, UNSET
 
 
 @abaqus_class_doc
@@ -45,9 +45,9 @@ class BodyForce(Load):
         region: Region,
         field: str = "",
         distributionType: SymbolicConstant = UNIFORM,
-        comp1: float = None,
-        comp2: float = None,
-        comp3: float = None,
+        comp1: Optional[float] = None,
+        comp2: Optional[float] = None,
+        comp3: Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method creates a BodyForce object.
@@ -97,9 +97,9 @@ class BodyForce(Load):
         self,
         field: str = "",
         distributionType: SymbolicConstant = UNIFORM,
-        comp1: float = None,
-        comp2: float = None,
-        comp3: float = None,
+        comp1: Optional[float] = None,
+        comp2: Optional[float] = None,
+        comp3: Optional[float] = None,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing BodyForce object in the step where it is
@@ -133,9 +133,9 @@ class BodyForce(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        comp1: typing.Union[SymbolicConstant, float] = None,
-        comp2: typing.Union[SymbolicConstant, float] = None,
-        comp3: typing.Union[SymbolicConstant, float] = None,
+        comp1: Union[SymbolicConstant, float] = None,
+        comp2: Union[SymbolicConstant, float] = None,
+        comp3: Union[SymbolicConstant, float] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing BodyForce object in the

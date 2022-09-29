@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 
-ConnectorBehaviorOptionArray = typing.List[ConnectorBehaviorOption]
+ConnectorBehaviorOptionArray = List[ConnectorBehaviorOption]

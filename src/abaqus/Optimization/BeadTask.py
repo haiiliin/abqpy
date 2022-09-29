@@ -1,4 +1,4 @@
-import typing
+from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .DesignResponse import DesignResponse
@@ -6,7 +6,9 @@ from .GeometricRestriction import GeometricRestriction
 from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, CONSERVATIVE, DEFAULT, EVERY_CYCLE,
+                                              GENERAL_OPTIMIZATION, MODEL, OFF, SymbolicConstant,
+                                              VALUE)
 
 
 @abaqus_class_doc
@@ -22,16 +24,16 @@ class BeadTask(OptimizationTask):
     """
 
     #: A repository of DesignResponse objects.
-    designResponses: typing.Dict[str, DesignResponse] = {}
+    designResponses: Dict[str, DesignResponse] = {}
 
     #: A repository of ObjectiveFunction objects.
-    objectiveFunctions: typing.Dict[str, ObjectiveFunction] = {}
+    objectiveFunctions: Dict[str, ObjectiveFunction] = {}
 
     #: A repository of OptimizationConstraint objects.
-    optimizationConstraints: typing.Dict[str, OptimizationConstraint] = {}
+    optimizationConstraints: Dict[str, OptimizationConstraint] = {}
 
     #: A repository of GeometricRestriction objects.
-    geometricRestrictions: typing.Dict[str, GeometricRestriction] = {}
+    geometricRestrictions: Dict[str, GeometricRestriction] = {}
 
     #: A String specifying the optimization task repository key.
     name: str

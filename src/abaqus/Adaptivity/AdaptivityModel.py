@@ -1,4 +1,4 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
@@ -10,7 +10,11 @@ from ..Datum.DatumCsys import DatumCsys
 from ..Model.ModelBase import ModelBase
 from ..Odb.Odb import Odb
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, CURRENT, DEFAULT, DEFAULT_LIMIT,
+                                              ELEMENT_CENTER_PROJECTION, GEOMETRY_ENHANCED,
+                                              INDEPENDENT, LAST_INCREMENT, MODEL, OFF, ON,
+                                              SECOND_ORDER_ADVECTION, SymbolicConstant, UNIFORM,
+                                              UNSET)
 
 
 @abaqus_class_doc
@@ -46,7 +50,7 @@ class AdaptivityModel(ModelBase):
         name: str,
         category: SymbolicConstant,
         region: Region,
-        localCsys: DatumCsys = None,
+        localCsys: Optional[DatumCsys] = None,
     ) -> AdaptiveMeshConstraint:
         """The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary
         Lagrangian Eularian (ALE) style AdaptiveMeshConstraint objects. The
@@ -190,15 +194,15 @@ class AdaptivityModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        u1: typing.Union[SymbolicConstant, float] = UNSET,
-        u2: typing.Union[SymbolicConstant, float] = UNSET,
-        u3: typing.Union[SymbolicConstant, float] = UNSET,
-        ur1: typing.Union[SymbolicConstant, float] = UNSET,
-        ur2: typing.Union[SymbolicConstant, float] = UNSET,
-        ur3: typing.Union[SymbolicConstant, float] = UNSET,
+        u1: Union[SymbolicConstant, float] = UNSET,
+        u2: Union[SymbolicConstant, float] = UNSET,
+        u3: Union[SymbolicConstant, float] = UNSET,
+        ur1: Union[SymbolicConstant, float] = UNSET,
+        ur2: Union[SymbolicConstant, float] = UNSET,
+        ur3: Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
         motionType: SymbolicConstant = INDEPENDENT,
-        localCsys: str = None,
+        localCsys: Optional[str] = None,
     ) -> DisplacementAdaptiveMeshConstraint:
         """This method creates a DisplacementAdaptiveMeshConstraint object.
 
@@ -296,7 +300,7 @@ class AdaptivityModel(ModelBase):
         specifyMaxSize: Boolean = ON,
         coarseningFactor: SymbolicConstant = DEFAULT_LIMIT,
         refinementFactor: SymbolicConstant = DEFAULT_LIMIT,
-        elementCountLimit: int = None,
+        elementCountLimit: Optional[int] = None,
     ) -> RemeshingRule:
         """This method creates a RemeshingRule object.
 
@@ -406,14 +410,14 @@ class AdaptivityModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        v1: typing.Union[SymbolicConstant, float] = UNSET,
-        v2: typing.Union[SymbolicConstant, float] = UNSET,
-        v3: typing.Union[SymbolicConstant, float] = UNSET,
-        vr1: typing.Union[SymbolicConstant, float] = UNSET,
-        vr2: typing.Union[SymbolicConstant, float] = UNSET,
-        vr3: typing.Union[SymbolicConstant, float] = UNSET,
+        v1: Union[SymbolicConstant, float] = UNSET,
+        v2: Union[SymbolicConstant, float] = UNSET,
+        v3: Union[SymbolicConstant, float] = UNSET,
+        vr1: Union[SymbolicConstant, float] = UNSET,
+        vr2: Union[SymbolicConstant, float] = UNSET,
+        vr3: Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: str = None,
+        localCsys: Optional[str] = None,
         motionType: SymbolicConstant = INDEPENDENT,
     ) -> VelocityAdaptiveMeshConstraint:
         """This method creates a VelocityAdaptiveMeshConstraint object.

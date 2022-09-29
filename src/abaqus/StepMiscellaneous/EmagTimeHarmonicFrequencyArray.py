@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .EmagTimeHarmonicFrequency import EmagTimeHarmonicFrequency
 
-EmagTimeHarmonicFrequencyArray = typing.List[EmagTimeHarmonicFrequency]
+EmagTimeHarmonicFrequencyArray = List[EmagTimeHarmonicFrequency]
