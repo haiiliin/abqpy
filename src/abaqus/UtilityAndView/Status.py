@@ -1,4 +1,4 @@
-from typing import overload, 
+from typing import overload
 
 from abqpy.decorators import abaqus_function_doc
 
