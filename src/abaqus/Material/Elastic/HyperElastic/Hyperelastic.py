@@ -5,7 +5,9 @@ from ...TestData.BiaxialTestData import BiaxialTestData
 from ...TestData.PlanarTestData import PlanarTestData
 from ...TestData.UniaxialTestData import UniaxialTestData
 from ...TestData.VolumetricTestData import VolumetricTestData
-from ....UtilityAndView.abaqusConstants import *
+from ....UtilityAndView.abaqusConstants import (Boolean, DEFAULT, FITTED_VALUE, FUNG_ANISOTROPIC,
+                                                INCOMPRESSIBLE, ISOTROPIC, LONG_TERM, OFF, ON,
+                                                STRAIN, SymbolicConstant, UNIAXIAL, UNKNOWN)
 
 
 @abaqus_class_doc

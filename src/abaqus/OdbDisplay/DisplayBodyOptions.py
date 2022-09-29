@@ -2,7 +2,8 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..PlotOptions.DGDisplayBodyOptions import DGDisplayBodyOptions
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, EXTERIOR, OFF, ON, SOLID, SymbolicConstant,
+                                              VERY_THIN)
 
 
 @abaqus_class_doc

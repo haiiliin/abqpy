@@ -43,7 +43,10 @@ from .TopologyPointSymmetry import TopologyPointSymmetry
 from .TopologyRotationalSymmetry import TopologyRotationalSymmetry
 from .TurnControl import TurnControl
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ABSOLUTE_EQUAL, AUTO, AXIS_1, Boolean, DEMOLD_REGION,
+                                              FREE_FORM, MAXIMUM, MILLING_REGION, MINIMIZE, MINIMUM,
+                                              MODEL, OFF, ON, OVERHANG_REGION, SUM,
+                                              SymbolicConstant, TRUE, VECTOR)
 
 
 @abaqus_class_doc

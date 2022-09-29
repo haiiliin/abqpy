@@ -2,7 +2,7 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
 from .PredefinedFieldState import PredefinedFieldState
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, NONE, OFF, SymbolicConstant, UNSET
 
 
 @abaqus_class_doc

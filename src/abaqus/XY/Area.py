@@ -3,7 +3,8 @@ from typing import Tuple
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AUTOMATIC, AUTO_ALIGN, BOTTOM_LEFT, Boolean, OFF,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc

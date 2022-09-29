@@ -2,7 +2,9 @@ from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..PlotOptions.DGSymbolOptions import DGSymbolOptions
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALL_PRINCIPAL_COMPONENTS, Boolean, MODEL_SIZE,
+                                              NOT_SET, OFF, ON, RESULTANT, SCIENTIFIC, SPECTRUM,
+                                              SymbolicConstant, VERY_THIN, WIRE)
 
 
 @abaqus_class_doc

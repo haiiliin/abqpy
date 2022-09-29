@@ -1,7 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_function_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 """The Python module textRepr contains functions to print an Abaqus object and to convert 
 the output from the str() function into a formatted string, indented for each object in 

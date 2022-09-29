@@ -12,7 +12,9 @@ from .Velocity import Velocity
 from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT_THROUGH_THICKNESS,
+                                              KINEMATIC_HARDENING, LAST_STEP, MAGNITUDE, OFF,
+                                              STEP_END, SymbolicConstant, UNIFORM, UNSET)
 
 
 @abaqus_class_doc

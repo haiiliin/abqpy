@@ -6,7 +6,9 @@ from .GeometricRestriction import GeometricRestriction
 from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, CONSERVATIVE, DEFAULT, EVERY_CYCLE,
+                                              GENERAL_OPTIMIZATION, MODEL, OFF, SymbolicConstant,
+                                              VALUE)
 
 
 @abaqus_class_doc

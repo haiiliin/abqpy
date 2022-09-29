@@ -13,7 +13,11 @@ from .InteractionProperty import InteractionProperty
 from .NormalBehavior import NormalBehavior
 from .Radiation import Radiation
 from .ThermalConductance import ThermalConductance
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALL_NODES, BK, Boolean, COEFFICIENTS,
+                                              DAMPING_COEFFICIENT, DEFAULT, DISPLACEMENT, ENERGY,
+                                              FRACTION, FRICTIONLESS, HARD, ISOTROPIC, LINEAR,
+                                              MAX_STRESS, OFF, ON, STEP, SymbolicConstant, TABULAR,
+                                              UNCOUPLED, VCCT)
 
 
 @abaqus_class_doc

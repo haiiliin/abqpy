@@ -48,7 +48,8 @@ from ..Amplitude.Correlation import Correlation
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, FREE, INFLOW, NOT_APPLICABLE, OFF, ON,
+                                              SymbolicConstant, UNIFORM, UNSET, ZERO_PRESSURE)
 
 
 @abaqus_class_doc

@@ -11,7 +11,8 @@ from .FluidExchangeProperty import FluidExchangeProperty
 from .FluidInflatorProperty import FluidInflatorProperty
 from .IncidentWaveProperty import IncidentWaveProperty
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ACOUSTIC, BULK_VISCOSITY, Boolean, HYDRAULIC, OFF, ON,
+                                              PLANAR, POLYNOMIAL, SymbolicConstant)
 
 
 @abaqus_class_doc

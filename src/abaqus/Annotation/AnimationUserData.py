@@ -4,7 +4,9 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Arrow import Arrow
 from .Text import Text
 from ..Odb.UserDataBase import UserDataBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (BOTTOM_LEFT, Boolean, FILLED_ARROW, JUSTIFY_LEFT,
+                                              NONE, OFF, SOLID, SymbolicConstant, TRANSPARENT,
+                                              VERY_THIN)
 
 
 @abaqus_class_doc

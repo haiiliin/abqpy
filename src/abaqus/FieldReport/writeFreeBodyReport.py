@@ -2,7 +2,7 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_function_doc
 from ..Odb.Odb import Odb
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, SPECIFY, SymbolicConstant
 
 """This command writes a free body output report to a file. 
 

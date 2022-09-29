@@ -11,7 +11,9 @@ from ..Part.PartBase import PartBase
 from ..Region.Region import Region
 from ..Region.Set import Set
 from ..Region.Surface import Surface
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AXIS_1, AXIS_3, Boolean, FROM_SECTION, GLOBAL,
+                                              NORMAL_VECTOR, OFF, PRIMARY_VECTOR, SHELL,
+                                              SINGLE_VALUE, STACK_3, SymbolicConstant)
 
 
 @abaqus_class_doc

@@ -2,7 +2,9 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..PlotOptions.DGCommonOptions import DGCommonOptions
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AUTO, Boolean, ELEMENT, EXTERIOR, HOLLOW_CIRCLE,
+                                              MEDIUM, OFF, ON, SHADED, SMALL, SOLID,
+                                              SymbolicConstant, VERY_THIN, WIRE)
 
 
 @abaqus_class_doc

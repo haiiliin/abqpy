@@ -11,7 +11,7 @@ from ..BasicGeometry.Face import Face
 from ..BasicGeometry.FaceArray import FaceArray
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNodeArray import MeshNodeArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import DIFFERENCE, INTERSECTION, SymbolicConstant, UNION
 
 
 @abaqus_class_doc

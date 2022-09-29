@@ -67,7 +67,14 @@ from ..StepMiscellaneous.SubstructureGenerateFrequencyArray import (
 from ..StepMiscellaneous.SubstructureGenerateModesArray import (
     SubstructureGenerateModesArray,
 )
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ABS, AC_ON, ALL, ALL_FREQUENCIES,
+                                              ANALYSIS_PRODUCT_DEFAULT, AUTOMATIC, AUTOMATIC_GLOBAL,
+                                              Boolean, COMPLEX, DEFAULT, DIRECT, DISPLACEMENT,
+                                              FULL_NEWTON, IMPLICIT, IMPLICIT_EXPLICIT, LINEAR, LOG,
+                                              LOGARITHMIC, NONE, OFF, ON, PERIOD, PREVIOUS_STEP,
+                                              PROPAGATED, RAMP, SINGLE_DIRECTION, SOLVER_DEFAULT,
+                                              STEP, SUBSPACE, SymbolicConstant, TRANSIENT, VALUE,
+                                              WHOLE_MODEL)
 
 
 @abaqus_class_doc

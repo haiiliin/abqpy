@@ -4,7 +4,10 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALL, Boolean, C_INTEGRAL, DEFAULT,
+                                              EVERY_TIME_INCREMENT, EXCLUDE, INCLUDE, J_INTEGRAL,
+                                              K110, K_FACTORS, LAST_INCREMENT, MERR, MODEL, MTS,
+                                              OFF, ONLY, PRESELECT, SymbolicConstant, T_STRESS)
 
 
 @abaqus_class_doc

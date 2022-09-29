@@ -11,7 +11,9 @@ from .SolutionDependentAmplitude import SolutionDependentAmplitude
 from .SpectrumAmplitude import SpectrumAmplitude
 from .TabularAmplitude import TabularAmplitude
 from ..Odb.OdbBase import OdbBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ABSOLUTE_VALUE, ACCELERATION, Boolean,
+                                              EVENT_ACCELERATION, FORCE, OFF, SOLVER_DEFAULT, STEP,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc

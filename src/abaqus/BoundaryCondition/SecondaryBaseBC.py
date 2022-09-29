@@ -4,7 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import MODEL, SymbolicConstant
 
 
 @abaqus_class_doc

@@ -7,7 +7,7 @@ from .FieldValueArray import FieldValueArray
 from .OdbInstance import OdbInstance
 from .OdbSet import OdbSet
 from .SectionPoint import SectionPoint
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 
 @abaqus_class_doc

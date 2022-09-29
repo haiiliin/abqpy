@@ -16,7 +16,14 @@ from ..Datum.DatumPlane import DatumPlane
 from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AUTO_FIT, AUTO_FIT_PTS, BOTTOM, BY_NUMBER, BY_SPACING,
+                                              Boolean, CARTESIAN, CYLINDRICAL, IMPRINT, LEFT, MERGE,
+                                              NUM_PTS_ALONG_DIR, NUM_PTS_BETWEEN_PTS, OFF, ON,
+                                              PATTERN_ALONG_DIRECTION, PATTERN_ORTHOGONALLY,
+                                              PROJECT_BY_DIRECTION, PROJECT_BY_PROXIMITY, RIGHT,
+                                              SEPARATE, SIDE1, SIDE2, SPECIFY_NUM_PTS, SPHERICAL,
+                                              SymbolicConstant, TOP, XAXIS, XYPLANE, XZPLANE, YAXIS,
+                                              YZPLANE, ZAXIS)
 
 
 @abaqus_class_doc

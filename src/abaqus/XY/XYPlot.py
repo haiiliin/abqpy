@@ -10,7 +10,7 @@ from .SymbolStyle import SymbolStyle
 from .TextStyle import TextStyle
 from .XYData import XYData
 from .XYPlotBase import XYPlotBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, FILLED_CIRCLE, ON, SOLID, SymbolicConstant
 
 
 @abaqus_class_doc

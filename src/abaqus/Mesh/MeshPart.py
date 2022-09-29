@@ -12,7 +12,7 @@ from ..BasicGeometry.Face import Face
 from ..BasicGeometry.IgnoredVertex import IgnoredVertex
 from ..Datum.DatumCsys import DatumCsys
 from ..Part.PartBase import PartBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, FREE, OFF, ON, SymbolicConstant
 
 
 @abaqus_class_doc

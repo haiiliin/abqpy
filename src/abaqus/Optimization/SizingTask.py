@@ -7,7 +7,7 @@ from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
 from .StopCondition import StopCondition
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, MODEL, NORMAL, OFF, ON, SymbolicConstant
 
 
 @abaqus_class_doc

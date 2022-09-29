@@ -2,7 +2,7 @@ from typing import Union
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Amplitude import Amplitude
 from .BaselineCorrection import BaselineCorrection
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SOLVER_DEFAULT, STEP, SymbolicConstant
 
 
 @abaqus_class_doc

@@ -3,7 +3,7 @@ from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .DesignResponse import DesignResponse
 from .StepOptionArray import StepOptionArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import MAXIMUM, MODEL, SUM, SymbolicConstant
 
 
 @abaqus_class_doc

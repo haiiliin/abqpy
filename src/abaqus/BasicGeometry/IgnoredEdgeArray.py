@@ -4,7 +4,7 @@ from typing import Union, List, Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .IgnoredEdge import IgnoredEdge
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean
 
 
 @abaqus_class_doc

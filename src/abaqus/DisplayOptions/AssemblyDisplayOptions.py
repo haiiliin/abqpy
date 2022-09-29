@@ -16,7 +16,8 @@ from .SymbolDisplayOptions import SymbolDisplayOptions
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..DisplayGroup.DisplayGroupInstance import DisplayGroupInstance
 from ..DisplayGroup.Leaf import Leaf
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, EMPTY_LEAF, OFF, ON, SymbolicConstant,
+                                              WIREFRAME)
 
 
 @abaqus_class_doc

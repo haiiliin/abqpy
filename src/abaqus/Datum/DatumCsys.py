@@ -4,7 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Datum import Datum
 from .DatumAxis import DatumAxis
 from .DatumPoint import DatumPoint
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc

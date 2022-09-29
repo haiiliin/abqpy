@@ -2,7 +2,7 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactProperty import ContactProperty
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, HYDRAULIC, OFF, POLYNOMIAL, SymbolicConstant
 
 
 @abaqus_class_doc

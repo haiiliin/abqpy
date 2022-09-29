@@ -21,7 +21,10 @@ from .SurfaceSection import SurfaceSection
 from .TrussSection import TrussSection
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
 from ..Odb.OdbBase import OdbBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT, DEFAULT, DOF_MODE, FULLY, GRADIENT,
+                                              LINEAR, NONE, NO_IDEALIZATION, OFF, ON, SIMPSON,
+                                              SOLVER_DEFAULT, SymbolicConstant, UNIFORM,
+                                              UNSPECIFIED)
 
 
 @abaqus_class_doc

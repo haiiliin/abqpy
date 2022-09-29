@@ -7,7 +7,7 @@ from .Axis import Axis
 from .Legend import Legend
 from .LineStyle import LineStyle
 from .TextStyle import TextStyle
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, ON
 
 
 @abaqus_class_doc

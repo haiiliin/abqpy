@@ -10,7 +10,12 @@ from ..BasicGeometry.Vertex import Vertex
 from ..Feature.Feature import Feature as BaseFeature
 from ..Region.Region import Region
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (BOTTOM, Boolean, CLOSEST_POINT_FRACTION,
+                                              FARTHEST_POINT_FRACTION, HALF_OF_AVERAGE, IMPRINT,
+                                              LEFT, MERGE, NONE, NORMAL, OFF, ON, RADIAL,
+                                              RECOMPUTE_GEOMETRY, RIGHT, SEPARATE, SHORTEST_PATH,
+                                              SIDE1, SIDE2, SPECIFIED, SPECIFY_PATH, TANGENT,
+                                              TIGHTEN_GAPS, TOP)
 
 
 @abaqus_class_doc

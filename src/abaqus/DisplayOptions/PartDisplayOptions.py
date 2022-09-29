@@ -7,7 +7,7 @@ from .MeshDisplayOptions import MeshDisplayOptions
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..DisplayGroup.DisplayGroupInstance import DisplayGroupInstance
 from ..DisplayGroup.Leaf import Leaf
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, EMPTY_LEAF, OFF, SymbolicConstant, WIREFRAME
 
 
 @abaqus_class_doc

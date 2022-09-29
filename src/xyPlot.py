@@ -8,7 +8,20 @@ from abaqus.XY.TextStyle import TextStyle
 from abaqus.XY.XYData import XYData
 from abaqus.XY.XYSession import XYSession
 from abaqus.Odb.Odb import Odb
-from abaqus.UtilityAndView.abaqusConstants import *
+from abaqus.UtilityAndView.abaqusConstants import (ABSOLUTE, ADD, AVERAGE, Boolean,
+                                                   COMPLEX_MAGNITUDE, COMPLEX_PHASE,
+                                                   COMPLEX_VAL_AT_ANGLE, COMPONENT, COSINE,
+                                                   DEFORMED, DIVIDE, ELEMENT_CENTROID, ELEMENT_FACE,
+                                                   ELEMENT_NODAL, EXPONENTIAL, GENERAL_PARTICLE,
+                                                   HYPERBOLIC_SINE, IMAGINARY, INTEGRATION_POINT,
+                                                   INVARIANT, LOG, MAXIMUM, MINIMUM, MULTIPLY,
+                                                   NATURAL_LOG, NODAL, NORM_DISTANCE, OFF, ON,
+                                                   PATH_POINTS, POWER, RANGE, REAL, SEQ_ID, SINE,
+                                                   SQUARE_ROOT, SRSS, SUBTRACT, TANGENT,
+                                                   TRUE_DISTANCE, TRUE_DISTANCE_X, TRUE_DISTANCE_Y,
+                                                   TRUE_DISTANCE_Z, UNDEFORMED, UNIFORM_SPACING,
+                                                   WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE,
+                                                   WHOLE_REGION)
 from abaqus.UtilityAndView.SymbolicConstant import SymbolicConstant
 from abaqus.PathAndProbe.Path import Path
 

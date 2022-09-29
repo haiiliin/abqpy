@@ -1,7 +1,27 @@
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ACCELERATION, ACOUSTIC_INTENSITY, ANGLE,
+                                              ANGULAR_MOMENTUM, ARC_LENGTH, AREA,
+                                              AREA_VELOCITY_SQUARED, BIMOMENT, CORIOLIS_LOAD,
+                                              CURVATURE, DAMAGE, DAMAGE_CRITERION, DENSITY,
+                                              DENSITY_ROTATIONAL_ACCELERATION, DISPLACEMENT,
+                                              ECURRENT_AREA_TIME, ELECTRIC_CHARGE, ELECTRIC_CURRENT,
+                                              ELECTRIC_CURRENT_AREA, ELECTRIC_POTENTIAL, ENERGY,
+                                              ENERGY_DENSITY, ENERGY_RELEASE_RATE,
+                                              EPOTENTIAL_GRADIENT, FORCE, FORCE_VOLUME, FREQUENCY,
+                                              HEAT_FLUX, HEAT_FLUX_AREA, HEAT_FLUX_RATE,
+                                              HEAT_FLUX_VOLUME, LENGTH, LINEAR_PRESSURE, LUMIN,
+                                              MASS, MASS_FLOW_AREA, MASS_FLOW_AREA_RATE,
+                                              MASS_FLOW_RATE, MODE_NUMBER, MOMENT, NONE, NUMBER,
+                                              PATH, PHASE, POSITION, PRESSURE, PRESSURE_GRADIENT,
+                                              RATE, ROTARY_INERTIA, ROTATIONAL_ACCELERATION,
+                                              ROTATIONAL_VELOCITY, STATUS, STRAIN, STRAIN_RATE,
+                                              STRESS, STRESS_INTENS_FACTOR, SUBSTANCE, TEMPERATURE,
+                                              THICKNESS, TIME, TIME_HEAT_FLUX, TIME_HEAT_FLUX_AREA,
+                                              TIME_INCREMENT, TIME_VOLUME, TIME_VOLUME_FLUX, TWIST,
+                                              VELOCITY, VELOCITY_SQUARED, VOLUME, VOLUME_FLUX,
+                                              VOLUME_FLUX_AREA, VOLUME_FRACTION)
 
 
 @abaqus_class_doc

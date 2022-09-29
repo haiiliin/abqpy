@@ -4,7 +4,7 @@ from .Path import Path
 from .Spectrum import Spectrum
 from .Stream import Stream
 from ..Session.SessionBase import SessionBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc

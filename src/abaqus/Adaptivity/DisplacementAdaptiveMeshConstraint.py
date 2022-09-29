@@ -4,7 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from ..Datum.DatumCsys import DatumCsys
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import INDEPENDENT, MECHANICAL, SymbolicConstant, UNSET
 
 
 @abaqus_class_doc

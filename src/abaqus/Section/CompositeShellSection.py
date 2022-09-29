@@ -7,7 +7,11 @@ from .GeometryShellSection import GeometryShellSection
 from .RebarLayers import RebarLayers
 from .SectionLayerArray import SectionLayerArray
 from .TransverseShearShell import TransverseShearShell
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ANALYTICAL_FIELD, BENDING, Boolean, DEFAULT,
+                                              DISCRETE_FIELD, GAUSS, GRADIENT, MEMBRANE,
+                                              NODAL_ANALYTICAL_FIELD, NODAL_DISCRETE_FIELD,
+                                              NO_IDEALIZATION, OFF, POINTWISE, SIMPSON,
+                                              SMEAR_ALL_LAYERS, UNIFORM, VALUE)
 
 
 @abaqus_class_doc

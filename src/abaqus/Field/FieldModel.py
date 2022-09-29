@@ -6,7 +6,8 @@ from .DiscreteField import DiscreteField
 from .ExpressionField import ExpressionField
 from .MappedField import MappedField
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, CARTESIAN, NODES, OFF, POINT, RELATIVE,
+                                              SURFACE, SymbolicConstant, XYPLANE, XYZ)
 
 
 @abaqus_class_doc

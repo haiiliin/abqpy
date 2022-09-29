@@ -2,7 +2,7 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_function_doc
 from .Material import Material
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 """ This command evaluates the behavior of a hyperelastic material under standard test 
 conditions. 

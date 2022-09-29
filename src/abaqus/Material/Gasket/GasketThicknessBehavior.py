@@ -2,7 +2,8 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactArea import ContactArea
-from ...UtilityAndView.abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import (Boolean, ELASTIC_PLASTIC, OFF, RELATIVE_SLOPE_DROP,
+                                               STRESS, SymbolicConstant)
 
 
 @abaqus_class_doc

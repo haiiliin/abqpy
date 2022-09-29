@@ -5,7 +5,15 @@ from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Section import Section
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ACCELEROMETER, ALIGN, AXIAL, BEAM, BUSHING, Boolean,
+                                              CARDAN, CARTESIAN, CONSTANT, CONSTANT_VELOCITY,
+                                              CVJOINT, CYLINDRICAL, EULER, EXPLICIT,
+                                              FLEXION_TORSION, FLOW_CONVERTER, HINGE, IMPLICIT,
+                                              JOIN, LINEAR, LINK, NONE, ON, PLANAR,
+                                              PROJECTION_CARTESIAN, PROJECTION_FLEXION_TORSION,
+                                              RADIAL_THRUST, RETRACTOR, REVOLUTE, ROTATION,
+                                              ROTATION_ACCELEROMETER, SLIDE_PLANE, SLIPRING, SLOT,
+                                              TRANSLATOR, UJOINT, UNIVERSAL, UNSPECIFIED, WELD)
 
 
 @abaqus_class_doc

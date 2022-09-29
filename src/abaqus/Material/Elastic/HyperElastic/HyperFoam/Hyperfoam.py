@@ -6,7 +6,7 @@ from ....TestData.PlanarTestData import PlanarTestData
 from ....TestData.SimpleShearTestData import SimpleShearTestData
 from ....TestData.UniaxialTestData import UniaxialTestData
 from ....TestData.VolumetricTestData import VolumetricTestData
-from .....UtilityAndView.abaqusConstants import *
+from .....UtilityAndView.abaqusConstants import Boolean, LONG_TERM, OFF, SymbolicConstant
 
 
 @abaqus_class_doc

@@ -2,7 +2,9 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..PlotOptions.DGContourOptions import DGContourOptions
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALL_FRAMES, BANDED, Boolean, MEDIUM, N2, OFF, ON,
+                                              SOLID, SymbolicConstant, TEXTURE_MAPPED, UNIFORM,
+                                              VERY_THIN)
 
 
 @abaqus_class_doc

@@ -9,7 +9,7 @@ from .DisplacementAdaptiveMeshConstraintState import (
 from .VelocityAdaptiveMeshConstraintState import VelocityAdaptiveMeshConstraintState
 from ..Region.Region import Region
 from ..Step.StepBase import StepBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc

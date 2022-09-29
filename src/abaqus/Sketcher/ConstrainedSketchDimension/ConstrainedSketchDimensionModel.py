@@ -6,7 +6,7 @@ from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
     ConstrainedSketchGeometry,
 )
 from ..ConstrainedSketchVertex.ConstrainedSketchVertex import ConstrainedSketchVertex
-from ...UtilityAndView.abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc

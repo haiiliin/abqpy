@@ -4,7 +4,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Job.JobMdb import JobMdb
 from ..Model.Model import Model
 from ..Part.AcisMdb import AcisMdb
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, NOT_SET, ON, STANDARD_EXPLICIT,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc

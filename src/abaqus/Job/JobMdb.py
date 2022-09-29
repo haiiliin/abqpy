@@ -5,7 +5,9 @@ from .JobFromInputFile import JobFromInputFile
 from .ModelJob import ModelJob
 from .OptimizationProcess import OptimizationProcess
 from ..Mdb.MdbBase import MdbBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, DOMAIN, OFF,
+                                              OPT_DATASAVE_SPECIFY_CYCLE, PERCENTAGE, SINGLE,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc

@@ -3,7 +3,7 @@ from typing import Dict, Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AdaptivityIteration import AdaptivityIteration
 from ..Job.ModelJob import ModelJob
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 
 @abaqus_class_doc

@@ -5,7 +5,9 @@ from ..Datum.DatumAxis import DatumAxis
 from ..Datum.DatumCsys import DatumCsys
 from ..Region.Set import Set
 from ..Region.Surface import Surface
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AXIS_1, AXIS_3, Boolean, GLOBAL, NORMAL_VECTOR, OFF,
+                                              PRIMARY_VECTOR, ROTATION_NONE, STACK_3,
+                                              SymbolicConstant, VECTOR)
 
 
 @abaqus_class_doc

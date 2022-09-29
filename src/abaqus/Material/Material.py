@@ -62,7 +62,15 @@ from .Plastic.Plastic import Plastic
 from .Plastic.Swelling.Swelling import Swelling
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALLISO, Boolean, CENTROID, COEFFICIENTS, CONSTANT,
+                                              CONSTANTVOLUME, DEFAULT, ELASTIC_PLASTIC, EXPONENTIAL,
+                                              FITTED_VALUE, FORMULA, FUNG_ANISOTROPIC, GENERAL,
+                                              HALF_CYCLE, IDEALGAS, INCOMPRESSIBLE, INCREMENTAL,
+                                              INPUT, ISOTROPIC, LINEAR, LOGARITHMIC, LONG_TERM,
+                                              MECHANICAL, MSFLD, MT, NEWTONIAN, NMORI, NO, NONE,
+                                              OFF, ON, POISSON, PRONY, RELATIVE_SLOPE_DROP, STRAIN,
+                                              STRESS, SymbolicConstant, TABULAR, TOTAL, UNIAXIAL,
+                                              UNIFORM, UNKNOWN, VOLUMETRIC)
 
 
 @abaqus_class_doc

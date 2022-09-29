@@ -5,7 +5,7 @@ from typing import List
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Vertex import Vertex
 from ..Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex import ConstrainedSketchVertex
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean
 
 
 @abaqus_class_doc

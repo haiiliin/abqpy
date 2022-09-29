@@ -9,7 +9,8 @@ from .HistoryRegion import HistoryRegion
 from .OdbFrame import OdbFrame
 from .OdbFrameArray import OdbFrameArray
 from .OdbLoadCase import OdbLoadCase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AFTER, ARC_LENGTH, BEFORE, Boolean, CLOSEST, EXACT,
+                                              FREQUENCY, MODAL, OFF, TIME)
 
 
 @abaqus_class_doc

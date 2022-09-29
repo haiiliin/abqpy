@@ -15,7 +15,9 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ANALYSIS_PRODUCT_DEFAULT, AUTOMATIC, Boolean, DEFAULT,
+                                              FULL_NEWTON, OFF, PROPAGATED, SOLVER_DEFAULT, STEP,
+                                              SymbolicConstant, VALUE)
 
 
 @abaqus_class_doc

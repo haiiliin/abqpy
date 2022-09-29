@@ -5,7 +5,8 @@ from .DataTableArray import DataTableArray
 from .Field import Field
 from ..Assembly.PartInstance import PartInstance
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, CARTESIAN, INSIDE, MEDIUM, NODES, OFF,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc

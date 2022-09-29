@@ -53,7 +53,7 @@ from ..Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions import (
     ConstrainedSketcherOptions,
 )
 from ..UtilityAndView.View import View
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import AVI, Boolean, OFF, PNG, SymbolicConstant
 from ..XY.Chart import Chart
 from ..XY.DefaultChartOptions import DefaultChartOptions
 from ..XY.DefaultPlot import DefaultPlot

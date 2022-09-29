@@ -2,7 +2,7 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
 from .InteractionState import InteractionState
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, ON, SymbolicConstant
 
 
 @abaqus_class_doc

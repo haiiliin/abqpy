@@ -25,7 +25,8 @@ from .ConstrainedSketchVertex.ConstrainedSketchVertexModel import (
     ConstrainedSketchVertexModel,
 )
 from ..Part.AcisFile import AcisFile
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AUTOCAD, Boolean, JAMA, LEFT, MSBO, OFF, RIGHT,
+                                              SOLIDWORKS, STANDALONE, STANDARD, SUPERIMPOSE)
 
 
 @abaqus_class_doc

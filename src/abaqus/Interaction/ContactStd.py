@@ -15,7 +15,7 @@ from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
 from .SurfaceOffsetAssignment import SurfaceOffsetAssignment
 from .SurfaceThicknessAssignment import SurfaceThicknessAssignment
 from .SurfaceVertexCriteriaAssignment import SurfaceVertexCriteriaAssignment
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, GLOBAL, NO, OFF, ON, SymbolicConstant
 
 
 @abaqus_class_doc

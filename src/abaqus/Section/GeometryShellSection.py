@@ -5,7 +5,8 @@ from .LayerPropertiesArray import LayerPropertiesArray
 from .RebarLayers import RebarLayers
 from .ShellSection import ShellSection
 from .TransverseShearShell import TransverseShearShell
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT, DEFAULT, GRADIENT, NO_IDEALIZATION,
+                                              OFF, SIMPSON, SymbolicConstant, UNIFORM)
 
 
 @abaqus_class_doc

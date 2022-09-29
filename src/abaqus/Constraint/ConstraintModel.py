@@ -14,7 +14,8 @@ from ..Assembly.PartInstance import PartInstance
 from ..BasicGeometry.ModelDotArray import ModelDotArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (BOTH, Boolean, COMPUTED, DEFAULT, DOF_MODE_MPC, OFF,
+                                              ON, SOLVER_DEFAULT, SymbolicConstant, UNIFORM)
 
 
 @abaqus_class_doc

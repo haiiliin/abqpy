@@ -8,7 +8,8 @@ from .OdbMeshNode import OdbMeshNode
 from .OdbPart import OdbPart
 from .OdbSet import OdbSet
 from .SectionPoint import SectionPoint
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (DEFORMABLE_BODY, FACE_UNKNOWN, SymbolicConstant,
+                                              THREE_D)
 
 
 @abaqus_class_doc

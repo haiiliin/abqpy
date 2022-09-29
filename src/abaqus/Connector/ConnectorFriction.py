@@ -6,7 +6,8 @@ from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
 from .DerivedComponent import DerivedComponent
 from .TangentialBehavior import TangentialBehavior
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, COMPONENT_NUMBER, NO_INDEPENDENT_COMPONENTS,
+                                              OFF, PREDEFINED, SPECIFY, SUM, SymbolicConstant)
 
 
 @abaqus_class_doc

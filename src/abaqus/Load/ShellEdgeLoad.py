@@ -2,7 +2,8 @@ from typing import Union
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AXIS_1, Boolean, GENERAL, NORMAL, OFF, ON,
+                                              SymbolicConstant, UNIFORM, UNSET)
 
 
 @abaqus_class_doc

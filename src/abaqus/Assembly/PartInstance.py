@@ -20,7 +20,8 @@ from ..Region.Set import Set
 from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (BOUNDARY_ONLY, Boolean, GEOMETRY, OFF, SUPPRESS,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc

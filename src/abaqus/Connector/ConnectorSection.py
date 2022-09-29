@@ -14,7 +14,11 @@ from .ConnectorStop import ConnectorStop
 from .DerivedComponent import DerivedComponent
 from .TangentialBehavior import TangentialBehavior
 from ..Section.SectionBase import SectionBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ABS, ALL, Boolean, COEFFICIENTS, COMPONENT_NUMBER,
+                                              FORCE, FRACTION, HALF_CYCLE, LINEAR, MAXIMUM,
+                                              MOTION_TYPE, NO_INDEPENDENT_COMPONENTS, OFF, ON,
+                                              PENALTY, POSITIVE, PREDEFINED, SPECIFY, SUM,
+                                              SymbolicConstant, TABULAR, UNCOUPLED, VISCOUS)
 
 
 @abaqus_class_doc

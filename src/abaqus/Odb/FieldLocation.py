@@ -2,7 +2,7 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
 from .SectionPointArray import SectionPointArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc

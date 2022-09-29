@@ -5,7 +5,7 @@ from .OdbMeshElement import OdbMeshElement
 from .OdbMeshElementArray import OdbMeshElementArray
 from .OdbMeshNode import OdbMeshNode
 from .OdbMeshNodeArray import OdbMeshNodeArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 
 @abaqus_class_doc

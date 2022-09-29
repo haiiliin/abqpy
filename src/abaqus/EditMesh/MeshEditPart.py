@@ -8,7 +8,7 @@ from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
 from ..Part.PartBase import PartBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, OUTWARD, SymbolicConstant
 
 
 @abaqus_class_doc

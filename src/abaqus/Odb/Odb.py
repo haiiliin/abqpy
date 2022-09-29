@@ -9,7 +9,9 @@ from ..BeamSectionProfile.BeamSectionProfileOdb import BeamSectionProfileOdb
 from ..Canvas.Displayable import Displayable
 from ..Filter.FilterOdb import FilterOdb
 from ..Material.MaterialOdb import MaterialOdb
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ANALYTIC_RIGID_SURFACE, ARC_LENGTH, AXISYMMETRIC,
+                                              DEFORMABLE_BODY, FREQUENCY, MODAL, THREE_D, TIME,
+                                              TWO_D_PLANAR)
 
 
 @abaqus_class_doc

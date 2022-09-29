@@ -2,7 +2,7 @@ from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc
 from .OdbDiagnosticAttempt import OdbDiagnosticAttempt
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc

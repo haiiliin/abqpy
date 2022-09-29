@@ -36,7 +36,9 @@ from ..StepOutput.TimePoint import TimePoint
 from ..TableCollection.EventSeriesData import EventSeriesData
 from ..TableCollection.EventSeriesType import EventSeriesType
 from ..TableCollection.TableCollection import TableCollection
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (B31, Boolean, C3D10, C3D8I, NOT_SET, OFF, ON,
+                                              PRESERVE_SECTION, S4, STANDARD_EXPLICIT,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc

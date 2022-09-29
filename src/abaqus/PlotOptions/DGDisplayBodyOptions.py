@@ -1,7 +1,8 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, EXTERIOR, OFF, ON, SOLID, SymbolicConstant,
+                                              VERY_THIN)
 
 
 @abaqus_class_doc

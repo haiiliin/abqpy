@@ -7,7 +7,10 @@ from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
 from .StopCondition import StopCondition
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, CONDITION_BASED_OPTIMIZATION,
+                                              CONSTRAINED_LAPLACIAN, EVERY_CYCLE, FE_SAFE, LOW,
+                                              MINIMUM, MODEL, NORMAL, OFF, ON, POSITIONS,
+                                              SymbolicConstant, TASK_REGION_LAYERS)
 
 
 @abaqus_class_doc

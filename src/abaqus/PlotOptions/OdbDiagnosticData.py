@@ -6,7 +6,7 @@ from .OdbAnalysisWarning import OdbAnalysisWarning
 from .OdbDiagnosticStep import OdbDiagnosticStep
 from .OdbJobTime import OdbJobTime
 from .OdbNumericalProblemSummary import OdbNumericalProblemSummary
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc

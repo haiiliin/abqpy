@@ -4,7 +4,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Interaction import Interaction
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTED, DEFAULT, KINEMATIC, OFF, OMIT,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc

@@ -6,7 +6,7 @@ from ..Datum.DatumCsys import DatumCsys
 from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshNode import MeshNode
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, OUTWARD, SymbolicConstant
 
 
 @abaqus_class_doc

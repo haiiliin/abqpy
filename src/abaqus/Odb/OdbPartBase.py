@@ -13,7 +13,7 @@ from .RebarOrientationArray import RebarOrientationArray
 from .SectionCategory import SectionCategory
 from ..Property.MaterialOrientationArray import MaterialOrientationArray
 from ..Property.SectionAssignmentArray import SectionAssignmentArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import AXIS_1, STACK_3, SymbolicConstant
 
 
 @abaqus_class_doc

@@ -2,7 +2,11 @@ from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Datum.DatumCsys import DatumCsys
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, CATEGORY_BASED, COARSE, DEFAULT,
+                                              EXTRAPOLATE_AVERAGE_COMPUTE, FIELD_OUTPUT, GLOBAL,
+                                              INTEGRATION_POINT, MAX_ABS_VALUE, MIDDLE,
+                                              MIRROR_RECT_CIRC, ODB_REGIONS, OFF, ON, REAL,
+                                              SELECT_BY_NUMBER, SymbolicConstant, USE_BOTTOM, ZAXIS)
 from .._OptionsBase import _CopyOptionsBase
 
 

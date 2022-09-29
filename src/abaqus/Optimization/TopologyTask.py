@@ -7,7 +7,9 @@ from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
 from .StopCondition import StopCondition
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AVERAGE_EDGE_LENGTH, Boolean, DEFAULT,
+                                              GENERAL_OPTIMIZATION, MEDIUM, MODEL, NORMAL, OFF, ON,
+                                              STANDARD, SymbolicConstant)
 
 
 @abaqus_class_doc

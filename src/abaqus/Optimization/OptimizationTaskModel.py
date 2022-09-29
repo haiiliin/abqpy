@@ -6,7 +6,11 @@ from .ShapeTask import ShapeTask
 from .SizingTask import SizingTask
 from .TopologyTask import TopologyTask
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AVERAGE_EDGE_LENGTH, Boolean, CONSERVATIVE,
+                                              CONSTRAINED_LAPLACIAN, DEFAULT, EVERY_CYCLE, FE_SAFE,
+                                              GENERAL_OPTIMIZATION, LOW, MEDIUM, MINIMUM, MODEL,
+                                              NORMAL, OFF, ON, POSITIONS, STANDARD,
+                                              SymbolicConstant, TASK_REGION_LAYERS, VALUE)
 
 
 @abaqus_class_doc

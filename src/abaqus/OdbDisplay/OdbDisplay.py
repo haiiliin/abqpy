@@ -20,7 +20,8 @@ from ..PlotOptions.DisplayOptions import DisplayOptions
 from ..PlotOptions.FreeBodyOptions import FreeBodyOptions
 from ..PlotOptions.StreamOptions import StreamOptions
 from ..PlotOptions.ViewCutOptions import ViewCutOptions
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, EMPTY_LEAF, FIRST_FRAME, OFF, ON,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc

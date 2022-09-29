@@ -9,7 +9,13 @@ from .IntegratedOutputSection import IntegratedOutputSection
 from .TimePoint import TimePoint
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALL, AVERAGE, AVERAGED_AT_NODES, AVERAGE_TRANSLATION,
+                                              Boolean, CENTROIDAL, C_INTEGRAL, DEFAULT,
+                                              EVERY_TIME_INCREMENT, EXCLUDE, INCLUDE, INDEPENDENT,
+                                              INTEGRATION_POINTS, J_INTEGRAL, K110, K_FACTORS,
+                                              LAST_INCREMENT, MERR, MODEL, MTS, NODES, OFF, ON,
+                                              ONLY, PRESELECT, SPECIFIED, SymbolicConstant,
+                                              T_STRESS)
 
 
 @abaqus_class_doc

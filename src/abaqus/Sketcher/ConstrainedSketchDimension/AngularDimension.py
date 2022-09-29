@@ -5,7 +5,7 @@ from .ConstrainedSketchDimension import ConstrainedSketchDimension
 from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
     ConstrainedSketchGeometry,
 )
-from ...UtilityAndView.abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc

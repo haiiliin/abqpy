@@ -18,7 +18,8 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALL_FREQUENCIES, Boolean, COMPLEX, LOGARITHMIC, OFF,
+                                              ON, SOLVER_DEFAULT, SymbolicConstant)
 
 
 @abaqus_class_doc

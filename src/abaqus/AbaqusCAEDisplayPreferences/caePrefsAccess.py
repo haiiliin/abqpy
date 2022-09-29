@@ -5,7 +5,7 @@ from typing_extensions import Literal
 from abqpy.decorators import abaqus_function_doc
 from .CaeGuiPrefs import CaeGuiPrefs
 from .CaeKerPrefs import CaeKerPrefs
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, CURRENT, HOME, UNLIMITED
 
 """The Python module caePrefsAccess contains functions that enable you to edit the 
 Abaqus/CAE preferences file, abaqus_2021.gpr. 

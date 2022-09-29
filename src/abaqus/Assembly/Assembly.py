@@ -9,7 +9,7 @@ from ..Mesh.MeshAssembly import MeshAssembly
 from ..Property.PropertyAssembly import PropertyAssembly
 from ..Region.RegionAssembly import RegionAssembly
 from ..Region.Set import Set
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import AXIS_1, Boolean, ON, SymbolicConstant
 
 
 @abaqus_class_doc

@@ -15,7 +15,7 @@ from .OdbDataSurfaceSet import OdbDataSurfaceSet
 from .OdbDiagnosticData import OdbDiagnosticData
 from .RigidBodyConstraint import RigidBodyConstraint
 from .TieConstraint import TieConstraint
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 from .._OptionsBase import _OptionsBase
 
 

@@ -6,7 +6,7 @@ from .GeometricRestriction import GeometricRestriction
 from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .StopCondition import StopCondition
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import MODEL, SymbolicConstant
 
 
 @abaqus_class_doc

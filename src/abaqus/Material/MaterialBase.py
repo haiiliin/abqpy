@@ -61,7 +61,7 @@ from .Plastic.Swelling.Swelling import Swelling
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
 from .TestData.MullinsEffect import MullinsEffect
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import FREQUENCY
 
 
 @abaqus_class_doc

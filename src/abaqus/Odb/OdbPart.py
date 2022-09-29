@@ -4,7 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .OdbMeshNode import OdbMeshNode
 from .OdbPartBase import OdbPartBase
 from .OdbSet import OdbSet
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, INPUT, OFF
 
 
 @abaqus_class_doc

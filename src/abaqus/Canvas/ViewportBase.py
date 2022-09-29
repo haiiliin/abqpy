@@ -18,7 +18,21 @@ from ..DisplayOptions.ViewportAnnotationOptions import ViewportAnnotationOptions
 from ..OdbDisplay.OdbDisplay import OdbDisplay
 from ..PlotOptions.DetailPlotOptions import DetailPlotOptions
 from ..UtilityAndView.View import View
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALL, ASSEMBLY_MAP_COLORS, BC_MAP_COLORS, Boolean,
+                                              CONSTRAINT_MAP_COLORS, CROSS, CURRENT, CUSTOM,
+                                              DEFAULT_COLORS, DISPLAY_GRP_MAP_COLORS,
+                                              ELTYPE_MAP_COLORS, FILLED_CIRCLE, FILLED_DIAMOND,
+                                              FILLED_SQUARE, FILLED_TRI, HOLLOW_CIRCLE,
+                                              HOLLOW_DIAMOND, HOLLOW_SQUARE, HOLLOW_TRI,
+                                              INSTANCE_MAP_COLORS, INSTANCE_TYPE_MAP_COLORS,
+                                              INTERACTION_MAP_COLORS, INTERNAL_SET_MAP_COLORS,
+                                              INTERNAL_SURFACE_MAP_COLORS, LARGE, LOAD_MAP_COLORS,
+                                              MATERIAL_MAP_COLORS, MEDIUM, MESH_MAP_COLORS, OFF, ON,
+                                              OVERLAY, PART_GEOM_MAP_COLORS, PART_MAP_COLORS,
+                                              PLOT_MAP_COLORS, SECTION_MAP_COLORS,
+                                              SELECTION_GRP_MAP_COLORS, SET_MAP_COLORS, SINGLE,
+                                              SMALL, SURFACE_MAP_COLORS, SYSTEM, SymbolicConstant,
+                                              XMARKER)
 from .._OptionsBase import _OptionsBase
 
 

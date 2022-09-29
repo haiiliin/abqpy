@@ -4,7 +4,9 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Field import Field
 from .OdbMeshRegionData import OdbMeshRegionData
 from ..Datum.DatumCsys import DatumCsys
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (EXTRAPOLATE_COMPUTE_AVERAGE, FIELD_OUTPUT, FLOAT,
+                                              NONE, OFF, ON, REAL, SCALAR, SymbolicConstant,
+                                              UNDEFINED_POSITION)
 
 
 @abaqus_class_doc

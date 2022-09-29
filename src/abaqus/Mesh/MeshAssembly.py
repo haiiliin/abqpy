@@ -12,7 +12,7 @@ from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.IgnoredVertex import IgnoredVertex
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, FREE, OFF, ON, SymbolicConstant
 
 
 @abaqus_class_doc

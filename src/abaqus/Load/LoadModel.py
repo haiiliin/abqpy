@@ -39,7 +39,9 @@ from .SurfaceTraction import SurfaceTraction
 from ..Datum.DatumAxis import DatumAxis
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (APPLY_FORCE, AXIS_1, Boolean, GENERAL, GLOBAL,
+                                              INTERNAL, NORMAL, OFF, ON, SHEAR, SymbolicConstant,
+                                              UNIFORM, UNSET)
 
 
 @abaqus_class_doc

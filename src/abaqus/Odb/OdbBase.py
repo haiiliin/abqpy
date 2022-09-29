@@ -14,7 +14,7 @@ from ..CustomKernel.RepositorySupport import RepositorySupport
 from ..Filter.Filter import Filter
 from ..Material.Material import Material
 from ..Section.Section import Section
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, CLOSEST, OFF, SymbolicConstant
 
 
 @abaqus_class_doc

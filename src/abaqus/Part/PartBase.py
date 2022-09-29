@@ -33,7 +33,8 @@ from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALL_EDGES, BOUNDARY_ONLY, Boolean, FALSE, GEOMETRY,
+                                              LOW, NONE, OFF, ON, SymbolicConstant, UNDEFORMED)
 
 
 @abaqus_class_doc

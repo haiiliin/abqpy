@@ -2,7 +2,8 @@ from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Job import Job
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ABAQUS, ANALYSIS, Boolean, DEFAULT, ON,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc

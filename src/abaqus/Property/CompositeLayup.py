@@ -10,7 +10,9 @@ from ..Section.CompositeShellSection import CompositeShellSection
 from ..Section.GeometryShellSection import GeometryShellSection
 from ..Section.HomogeneousShellSection import HomogeneousShellSection
 from ..Section.SectionLayerArray import SectionLayerArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AXIS_1, Boolean, DEFAULT, GLOBAL, GRADIENT,
+                                              NO_IDEALIZATION, OFF, ROTATION_NONE, SHELL, SIMPSON,
+                                              SymbolicConstant, UNIFORM)
 
 
 @abaqus_class_doc

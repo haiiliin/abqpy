@@ -6,7 +6,7 @@ from .Chebyshev1Filter import Chebyshev1Filter
 from .Chebyshev2Filter import Chebyshev2Filter
 from .OperatorFilter import OperatorFilter
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, NONE, OFF, SymbolicConstant
 
 
 @abaqus_class_doc

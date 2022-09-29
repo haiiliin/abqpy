@@ -9,7 +9,7 @@ from .OdbMeshNode import OdbMeshNode
 from .OdbPart import OdbPart
 from .OdbRigidBody import OdbRigidBody
 from .OdbSet import OdbSet
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, INPUT, ON, SymbolicConstant
 
 
 @abaqus_class_doc

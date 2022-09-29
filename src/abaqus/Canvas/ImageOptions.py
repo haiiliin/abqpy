@@ -1,7 +1,8 @@
 from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (BEST_FIT, Boolean, CENTER, FIT_TO_VIEWPORT, OFF,
+                                              SymbolicConstant)
 from .._OptionsBase import _CopyOptionsBase
 
 

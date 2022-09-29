@@ -4,7 +4,7 @@ from abqpy.decorators import abaqus_class_doc
 from .OdbInstance import OdbInstance
 from .OdbPart import OdbPart
 from .SectionPoint import SectionPoint
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import DEFORMABLE_BODY, SymbolicConstant, THREE_D
 
 
 @abaqus_class_doc

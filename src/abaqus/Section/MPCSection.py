@@ -1,6 +1,6 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Section import Section
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import DOF_MODE, SymbolicConstant
 
 
 @abaqus_class_doc

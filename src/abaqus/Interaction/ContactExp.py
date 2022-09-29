@@ -12,7 +12,8 @@ from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
 from .SurfaceFrictionAssignment import SurfaceFrictionAssignment
 from .SurfaceOffsetAssignment import SurfaceOffsetAssignment
 from .SurfaceThicknessAssignment import SurfaceThicknessAssignment
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, GLOBAL, OFF, ON, ORIGINAL, PERIMETER,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc

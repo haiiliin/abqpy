@@ -12,7 +12,7 @@ from .SectionCategory import SectionCategory
 from ..Assembly.ConnectorOrientationArray import ConnectorOrientationArray
 from ..Property.SectionAssignmentArray import SectionAssignmentArray
 from ..Section.Section import Section
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import AXIS_1, Boolean, INPUT, OFF, SymbolicConstant
 
 
 @abaqus_class_doc

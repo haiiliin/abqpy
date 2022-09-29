@@ -4,7 +4,7 @@ from abqpy.decorators import abaqus_function_doc
 from .FieldOutput import FieldOutput
 from .Odb import Odb
 from .OdbSequenceAnalyticSurfaceSegment import OdbSequenceAnalyticSurfaceSegment
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 """The Odb commands do the following: 
 

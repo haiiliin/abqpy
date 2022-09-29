@@ -9,7 +9,7 @@ from .LineStyle import LineStyle
 from .TextStyle import TextStyle
 from .XYCurve import XYCurve
 from ..UtilityAndView.View import View
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON
 
 
 @abaqus_class_doc
