@@ -1,4 +1,4 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AdjustPoints import AdjustPoints
@@ -14,7 +14,8 @@ from ..Assembly.PartInstance import PartInstance
 from ..BasicGeometry.ModelDotArray import ModelDotArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (BOTH, Boolean, COMPUTED, DEFAULT, DOF_MODE_MPC, OFF,
+                                              ON, SOLVER_DEFAULT, SymbolicConstant, UNIFORM)
 
 
 @abaqus_class_doc
@@ -61,10 +62,10 @@ class ConstraintModel(ModelBase):
         name: str,
         surface: Region,
         controlPoint: Region,
-        influenceRadius: typing.Union[SymbolicConstant, float],
+        influenceRadius: Union[SymbolicConstant, float],
         couplingType: SymbolicConstant,
         adjust: Boolean = OFF,
-        localCsys: str = None,
+        localCsys: Optional[str] = None,
         u1: Boolean = ON,
         u2: Boolean = ON,
         u3: Boolean = ON,
@@ -200,7 +201,7 @@ class ConstraintModel(ModelBase):
         name: str,
         embeddedRegion: Region,
         hostRegion: Region,
-        weightFactorTolerance: float = None,
+        weightFactorTolerance: Optional[float] = None,
         toleranceMethod: SymbolicConstant = BOTH,
         absoluteTolerance: float = 0,
         fractionalTolerance: float = 0,
@@ -292,7 +293,7 @@ class ConstraintModel(ModelBase):
         surface: Region,
         controlPoint: Region,
         mpcType: SymbolicConstant,
-        csys: str = None,
+        csys: Optional[str] = None,
         userType: int = 0,
         userMode: SymbolicConstant = DOF_MODE_MPC,
     ) -> MultipointConstraint:
@@ -344,10 +345,10 @@ class ConstraintModel(ModelBase):
         self,
         name: str,
         refPointRegion: Region,
-        bodyRegion: str = None,
-        tieRegion: str = None,
-        pinRegion: str = None,
-        surfaceRegion: str = None,
+        bodyRegion: Optional[str] = None,
+        tieRegion: Optional[str] = None,
+        pinRegion: Optional[str] = None,
+        surfaceRegion: Optional[str] = None,
         refPointAtCOM: Boolean = OFF,
         isothermal: Boolean = OFF,
     ) -> RigidBody:

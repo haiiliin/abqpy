@@ -1,5 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, COEFFICIENTS, FRACTION, OFF, PENALTY,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -66,7 +69,7 @@ class TangentialBehavior:
 
     #: None or a Float specifying no upper limit or the friction coefficient shear stress
     #: limit. The default value is None.
-    shearStressLimit: float = None
+    shearStressLimit: Optional[float] = None
 
     #: A SymbolicConstant specifying the method for modifying the allowable elastic slip.
     #: Possible values are FRACTION and ABSOLUTE_DISTANCE. The default value is FRACTION.This
@@ -76,11 +79,11 @@ class TangentialBehavior:
     #: A Float specifying the ratio of the allowable maximum elastic slip to a characteristic
     #: model dimension. The default value is 10-4.This argument applies only to Abaqus/Standard
     #: analyses.
-    fraction: float = None
+    fraction: Optional[float] = None
 
     #: None or a Float specifying the absolute magnitude of the allowable elastic slip. The
     #: default value is None.This argument applies only to Abaqus/Standard analyses.
-    absoluteDistance: float = None
+    absoluteDistance: Optional[float] = None
 
     #: A sequence of sequences of Floats specifying the tangential properties. Items in the
     #: table data are described below. The default value is an empty sequence.
@@ -95,10 +98,10 @@ class TangentialBehavior:
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         exponentialDecayDefinition: SymbolicConstant = COEFFICIENTS,
-        shearStressLimit: float = None,
+        shearStressLimit: Optional[float] = None,
         maximumElasticSlip: SymbolicConstant = FRACTION,
-        fraction: float = None,
-        absoluteDistance: float = None,
+        fraction: Optional[float] = None,
+        absoluteDistance: Optional[float] = None,
         table: tuple = (),
     ):
         """This method creates a TangentialBehavior object.

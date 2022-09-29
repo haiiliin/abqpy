@@ -1,9 +1,9 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant, UNIFORM, UNSET
 
 
 @abaqus_class_doc
@@ -34,7 +34,7 @@ class Moment(Load):
     #: local coordinate system of the load. If **localCsys** = None, the load is defined in the
     #: global coordinate system. When this member is queried, it returns an Int. The default
     #: value is None.
-    localCsys: int = None
+    localCsys: Optional[int] = None
 
     #: A String specifying the name of the AnalyticalField object associated with this load.
     #: The **field** argument applies only when **distributionType** = FIELD. The default value is an
@@ -50,12 +50,12 @@ class Moment(Load):
         name: str,
         createStepName: str,
         region: Region,
-        cm1: float = None,
-        cm2: float = None,
-        cm3: float = None,
+        cm1: Optional[float] = None,
+        cm2: Optional[float] = None,
+        cm3: Optional[float] = None,
         amplitude: str = UNSET,
         follower: Boolean = OFF,
-        localCsys: int = None,
+        localCsys: Optional[int] = None,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
     ):
@@ -113,12 +113,12 @@ class Moment(Load):
     @abaqus_method_doc
     def setValues(
         self,
-        cm1: float = None,
-        cm2: float = None,
-        cm3: float = None,
+        cm1: Optional[float] = None,
+        cm2: Optional[float] = None,
+        cm3: Optional[float] = None,
         amplitude: str = UNSET,
         follower: Boolean = OFF,
-        localCsys: int = None,
+        localCsys: Optional[int] = None,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
     ):
@@ -162,9 +162,9 @@ class Moment(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        comp1: typing.Union[SymbolicConstant, float] = None,
-        comp2: typing.Union[SymbolicConstant, float] = None,
-        comp3: typing.Union[SymbolicConstant, float] = None,
+        comp1: Union[SymbolicConstant, float] = None,
+        comp2: Union[SymbolicConstant, float] = None,
+        comp3: Union[SymbolicConstant, float] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing Moment object in the specified

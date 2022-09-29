@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import AXIS_1, ROTATION_NONE, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -80,7 +82,7 @@ class CompositePly:
 
     #: The SymbolicConstant None or a DatumCsys object specifying a coordinate system reference
     #: for the relative orientation of this layer. The default value is None.
-    orientation: SymbolicConstant = None
+    orientation: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the field specifying the additional rotation. The
     #: default value is an empty string.
@@ -101,7 +103,7 @@ class CompositePly:
         axis: SymbolicConstant = AXIS_1,
         angle: float = 0,
         additionalRotationType: SymbolicConstant = ROTATION_NONE,
-        orientation: SymbolicConstant = None,
+        orientation: Optional[SymbolicConstant] = None,
         additionalRotationField: str = "",
     ):
         """This method creates a CompositePly object.

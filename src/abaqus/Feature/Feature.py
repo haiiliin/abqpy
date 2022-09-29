@@ -1,5 +1,7 @@
 from __future__ import annotations
-from typing import Optional, Union, Tuple, overload
+
+from typing import Union, Optional, Tuple, overload
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -7,14 +9,21 @@ from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.InterestingPoint import InterestingPoint
-from ..BasicGeometry.Vertex import Vertex
 from ..BasicGeometry.Transform import Transform
+from ..BasicGeometry.Vertex import Vertex
 from ..Datum.Datum import Datum
 from ..Datum.DatumPlane import DatumPlane
 from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AUTO_FIT, AUTO_FIT_PTS, BOTTOM, BY_NUMBER, BY_SPACING,
+                                              Boolean, CARTESIAN, CYLINDRICAL, IMPRINT, LEFT, MERGE,
+                                              NUM_PTS_ALONG_DIR, NUM_PTS_BETWEEN_PTS, OFF, ON,
+                                              PATTERN_ALONG_DIRECTION, PATTERN_ORTHOGONALLY,
+                                              PROJECT_BY_DIRECTION, PROJECT_BY_PROXIMITY, RIGHT,
+                                              SEPARATE, SIDE1, SIDE2, SPECIFY_NUM_PTS, SPHERICAL,
+                                              SymbolicConstant, TOP, XAXIS, XYPLANE, XZPLANE, YAXIS,
+                                              YZPLANE, ZAXIS)
 
 
 @abaqus_class_doc

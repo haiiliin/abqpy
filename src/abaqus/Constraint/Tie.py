@@ -1,7 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Constraint import Constraint
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTED, DEFAULT, OFF, ON, SOLVER_DEFAULT,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc

@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .PartInstance import PartInstance
 
-PartInstanceArray = typing.List[PartInstance]
+PartInstanceArray = List[PartInstance]

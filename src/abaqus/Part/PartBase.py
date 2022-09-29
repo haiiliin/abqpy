@@ -1,4 +1,4 @@
-import typing
+from typing import overload, Dict, List, Optional, Tuple
 
 # prevent circular imports
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -33,7 +33,8 @@ from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALL_EDGES, BOUNDARY_ONLY, Boolean, FALSE, GEOMETRY,
+                                              LOW, NONE, OFF, ON, SymbolicConstant, UNDEFORMED)
 
 
 @abaqus_class_doc
@@ -59,10 +60,10 @@ class PartBase(PartFeature):
 
     #: An Int specifying that feature parameters have been modified but that the part has not
     #: been regenerated. Possible values are 0 and 1.
-    isOutOfDate: int = None
+    isOutOfDate: Optional[int] = None
 
     #: A Float specifying when the part was last modified.
-    timeStamp: float = None
+    timeStamp: Optional[float] = None
 
     #: A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object specifying all the vertices in the part.
     vertices: VertexArray = VertexArray([])
@@ -83,17 +84,17 @@ class PartBase(PartFeature):
     cells: CellArray = CellArray([])
 
     #: A repository of Feature objects specifying all the features in the part.
-    features: typing.Dict[str, PartFeature] = {}
+    features: Dict[str, PartFeature] = {}
 
     #: A repository of Feature objects specifying all Feature objects in the part. The Feature
     #: objects in the featuresById repository are the same as the Feature objects in the
     #: features' repository. However, the key to the objects in the featuresById repository is
     #: an integer specifying the **ID**, whereas the key to the objects in the features
     #: repository is a string specifying the **name**.
-    featuresById: typing.Dict[str, PartFeature] = {}
+    featuresById: Dict[str, PartFeature] = {}
 
     #: A repository of Datum objects specifying all the datums in the part.
-    datums: typing.List[Datum] = []
+    datums: List[Datum] = []
 
     #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying all the elements in the part.
     elements: MeshElementArray = MeshElementArray([])
@@ -102,7 +103,7 @@ class PartBase(PartFeature):
     #: given element and a given face index within that element, the corresponding MeshFace
     #: object can be retrieved from the repository by using the key calculated as (i*8 + j),
     #: where i and j are zero-based element and face indices, respectively.
-    elemFaces: typing.Dict[str, MeshFace] = {}
+    elemFaces: Dict[str, MeshFace] = {}
 
     #: A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object specifying all the unique element faces in the part.
     elementFaces: MeshFaceArray = MeshFaceArray([])
@@ -114,30 +115,30 @@ class PartBase(PartFeature):
     retainedNodes: MeshNodeArray = MeshNodeArray([])
 
     #: A repository of Set objects specifying for more information, see Set.
-    sets: typing.Dict[str, Set] = {}
+    sets: Dict[str, Set] = {}
 
     #: A repository of Set objects specifying the contents of the **allSets** repository is the
     #: same as the contents of the **sets** repository.
-    allSets: typing.Dict[str, Set] = {}
+    allSets: Dict[str, Set] = {}
 
     #: A repository of Set objects specifying picked regions.
-    allInternalSets: typing.Dict[str, Set] = {}
+    allInternalSets: Dict[str, Set] = {}
 
     #: A repository of Surface objects specifying for more information, see Surface.
-    surfaces: typing.Dict[str, Surface] = {}
+    surfaces: Dict[str, Surface] = {}
 
     #: A repository of Surface objects specifying the contents of the **allSurfaces** repository
     #: is the same as the contents of the **surfaces** repository.
-    allSurfaces: typing.Dict[str, Surface] = {}
+    allSurfaces: Dict[str, Surface] = {}
 
     #: A repository of Surface objects specifying picked regions.
-    allInternalSurfaces: typing.Dict[str, Surface] = {}
+    allInternalSurfaces: Dict[str, Surface] = {}
 
     #: A repository of Skin objects specifying the skins created on the part.
-    skins: typing.Dict[str, Skin] = {}
+    skins: Dict[str, Skin] = {}
 
     #: A repository of Stringer objects specifying the stringers created on the part.
-    stringers: typing.Dict[str, Stringer] = {}
+    stringers: Dict[str, Stringer] = {}
 
     #: A repository of ReferencePoint objects.
     referencePoints: ReferencePoints = ReferencePoints()
@@ -152,19 +153,19 @@ class PartBase(PartFeature):
     materialOrientations: MaterialOrientationArray = []
 
     #: A repository of CompositeLayup objects.
-    compositeLayups: typing.Dict[str, CompositeLayup] = {}
+    compositeLayups: Dict[str, CompositeLayup] = {}
 
     #: A repository of MeshEdge objects specifying all the element edges in the part. For a
     #: given element and a given edge index on a given face within that element, the
     #: corresponding MeshEdge object can be retrieved from the repository by using the key
     #: calculated as (i*32 + j*4 + k), where i, j, and k are zero-based element, face, and edge
     #: indices, respectively.
-    elemEdges: typing.Dict[str, MeshEdge] = {}
+    elemEdges: Dict[str, MeshEdge] = {}
 
     #: A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object specifying all the unique element edges in the part.
     elementEdges: MeshEdgeArray = MeshEdgeArray([])
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
@@ -202,7 +203,7 @@ class PartBase(PartFeature):
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
@@ -256,7 +257,7 @@ class PartBase(PartFeature):
         ...
 
     def PartFromBooleanCut(
-        self, name: str, instanceToBeCut: str, cuttingInstances: typing.Tuple[PartInstance, ...]
+        self, name: str, instanceToBeCut: str, cuttingInstances: Tuple[PartInstance, ...]
     ):
         """This method creates a Part in the parts repository after subtracting or cutting the
         geometries of a group of part instances from that of a base part instance.
@@ -287,10 +288,10 @@ class PartBase(PartFeature):
     def PartFromBooleanMerge(
         self,
         name: str,
-        instances: typing.Tuple[PartInstance, ...],
+        instances: Tuple[PartInstance, ...],
         keepIntersections: Boolean = False,
         mergeNodes: SymbolicConstant = BOUNDARY_ONLY,
-        nodeMergingTolerance: float = None,
+        nodeMergingTolerance: Optional[float] = None,
         removeDuplicateElements: Boolean = ON,
         domain: SymbolicConstant = GEOMETRY,
     ):
@@ -468,7 +469,7 @@ class PartBase(PartFeature):
     def PartFromInstanceMesh(
         self,
         name: str,
-        partInstances: typing.Tuple[PartInstance, ...] = (),
+        partInstances: Tuple[PartInstance, ...] = (),
         copyPartSets: Boolean = False,
         copyAssemblySets: Boolean = False,
     ):
@@ -641,8 +642,8 @@ class PartBase(PartFeature):
         instance: str = "",
         elementSet: str = "",
         shape: SymbolicConstant = UNDEFORMED,
-        step: int = None,
-        frame: int = None,
+        step: Optional[int] = None,
+        frame: Optional[int] = None,
         twist: Boolean = OFF,
     ):
         """This method creates an orphan mesh Part object by reading an output database. The new
@@ -872,10 +873,10 @@ class PartBase(PartFeature):
     @abaqus_method_doc
     def assignThickness(
         self,
-        faces: typing.Tuple[Face, ...],
-        thickness: float = None,
-        topFaces: typing.Tuple[Face, ...] = (),
-        bottomFaces: typing.Tuple[Face, ...] = (),
+        faces: Tuple[Face, ...],
+        thickness: Optional[float] = None,
+        topFaces: Tuple[Face, ...] = (),
+        bottomFaces: Tuple[Face, ...] = (),
     ):
         """This method assigns thickness data to shell faces. The thickness can be used while
         assigning shell and membrane sections to faces.
@@ -916,7 +917,7 @@ class PartBase(PartFeature):
         self,
         detailed: Boolean = OFF,
         reportFacetErrors: Boolean = OFF,
-        level: int = None,
+        level: Optional[int] = None,
     ):
         """This method checks the validity of the geometry of the part and prints a count of all
         topological entities on the part (faces, edges, vertices, etc.).
@@ -997,7 +998,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def getArea(self, faces: typing.Tuple[Face, ...], relativeAccuracy: float = 0):
+    def getArea(self, faces: Tuple[Face, ...], relativeAccuracy: float = 0):
         """This method returns the total surface area of a given face or group of faces.
 
         Parameters
@@ -1046,7 +1047,7 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def getCentroid(
-        self, faces: typing.Tuple[Face, ...], cells: typing.Tuple[Face, ...], relativeAccuracy: float = 0
+        self, faces: Tuple[Face, ...], cells: Tuple[Face, ...], relativeAccuracy: float = 0
     ):
         """Location of the centroid of a given face/cell or group of faces/cells
         
@@ -1064,7 +1065,7 @@ class PartBase(PartFeature):
 
         Returns
         -------
-        centroid: typing.Tuple[float, ...]
+        centroid: Tuple[float, ...]
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid.
             Depending on the arguments provided, this method returns the following:
         
@@ -1095,7 +1096,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def getCurvature(self, edges: typing.Tuple[Edge, ...], samplePoints: int = 100):
+    def getCurvature(self, edges: Tuple[Edge, ...], samplePoints: int = 100):
         """This method returns the maximum curvature of a given edge or group of edges. For an arc,
         the curvature is constant over the entire edge, and equal to the inverse of the radius.
         For a straight line, the curvature is constant and equal to 0. For a spline edge, the
@@ -1142,7 +1143,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def getLength(self, edges: typing.Tuple[Edge, ...]):
+    def getLength(self, edges: Tuple[Edge, ...]):
         """This method returns the length of a given edge or group of edges.
 
         Parameters
@@ -1158,7 +1159,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def getPerimeter(self, faces: typing.Tuple[Face, ...]):
+    def getPerimeter(self, faces: Tuple[Face, ...]):
         """This method returns the total perimeter of a given face or group of faces. All faces
         need to be on the same part. If the specified faces have shared edges, these edges are
         excluded from the computation, thus providing the length of the outer perimeter of the
@@ -1177,7 +1178,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def getVolume(self, cells: typing.Tuple[Cell, ...], relativeAccuracy: float = 0):
+    def getVolume(self, cells: Tuple[Cell, ...], relativeAccuracy: float = 0):
         """This method returns the volume area of a given cell or group of cells.
 
         Parameters
@@ -1325,7 +1326,7 @@ class PartBase(PartFeature):
 
         Returns
         -------
-        faces: typing.Tuple[Face, ...]
+        faces: Tuple[Face, ...]
             Sequence of Face objects.
 
         Raises
@@ -1346,7 +1347,7 @@ class PartBase(PartFeature):
 
         Returns
         -------
-        edges: typing.Tuple[Edge, ...]
+        edges: Tuple[Edge, ...]
             Sequence of Edge objects.
 
         Raises
@@ -1367,7 +1368,7 @@ class PartBase(PartFeature):
 
         Returns
         -------
-        cells: typing.Tuple[Cell, ...]
+        cells: Tuple[Cell, ...]
             Sequence of Cell objects.
 
         Raises
@@ -1388,7 +1389,7 @@ class PartBase(PartFeature):
 
         Returns
         -------
-        vertices: typing.Tuple[ConstrainedSketchVertex, ...]
+        vertices: Tuple[ConstrainedSketchVertex, ...]
             Sequence of ConstrainedSketchVertex objects.
 
         Raises
@@ -1452,7 +1453,7 @@ class PartBase(PartFeature):
         self,
         sketch: str,
         filter: SymbolicConstant = ALL_EDGES,
-        upToFeature: PartFeature = None,
+        upToFeature: Optional[PartFeature] = None,
         edges: tuple = (),
         vertices: tuple = (),
     ):
@@ -1649,7 +1650,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def writeAcisFile(self, fileName: str, version: float = None):
+    def writeAcisFile(self, fileName: str, version: Optional[float] = None):
         """This method exports the geometry of the part to a named file in ACIS format.
 
         Parameters
@@ -1747,11 +1748,11 @@ class PartBase(PartFeature):
     @abaqus_method_doc
     def copyMeshPattern(
         self,
-        elements: typing.Tuple[MeshElement, ...],
-        faces: typing.Tuple[Face, ...],
-        elemFaces: typing.Tuple[MeshFace, ...],
+        elements: Tuple[MeshElement, ...],
+        faces: Tuple[Face, ...],
+        elemFaces: Tuple[MeshFace, ...],
         targetFace: MeshFace,
-        nodes: typing.Tuple[MeshNode, ...],
+        nodes: Tuple[MeshNode, ...],
         coordinates: tuple,
     ):
         """This method copies a mesh pattern from a source region consisting of a set of shell
@@ -1783,7 +1784,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def smoothNodes(self, nodes: typing.Tuple[MeshNode, ...]):
+    def smoothNodes(self, nodes: Tuple[MeshNode, ...]):
         """This method smooths the given nodes of a native mesh, moving them locally to a more
         optimal location that improves the quality of the mesh
 

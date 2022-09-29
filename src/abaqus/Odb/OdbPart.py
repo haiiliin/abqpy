@@ -1,10 +1,10 @@
-import typing
+from typing import Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .OdbMeshNode import OdbMeshNode
 from .OdbPartBase import OdbPartBase
 from .OdbSet import OdbSet
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, INPUT, OFF
 
 
 @abaqus_class_doc
@@ -53,7 +53,7 @@ class OdbPart(OdbPartBase):
         ...
 
     @abaqus_method_doc
-    def NodeSet(self, name: str, nodes: typing.Tuple[OdbMeshNode, ...]) -> OdbSet:
+    def NodeSet(self, name: str, nodes: Tuple[OdbMeshNode, ...]) -> OdbSet:
         """This method creates a node set from an array of OdbMeshNode objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
         assembly-level sets).

@@ -1,4 +1,4 @@
-import typing
+from typing import Union, overload, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactPropertyAssignment import ContactPropertyAssignment
@@ -15,7 +15,7 @@ from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
 from .SurfaceOffsetAssignment import SurfaceOffsetAssignment
 from .SurfaceThicknessAssignment import SurfaceThicknessAssignment
 from .SurfaceVertexCriteriaAssignment import SurfaceVertexCriteriaAssignment
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, GLOBAL, NO, OFF, ON, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -98,7 +98,7 @@ class ContactStd(Interaction):
     #: A symbolic constant specifying edge-to-edge formulation. The default value is NO.
     edgeToEdgeFormulation: str = NO
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
@@ -106,20 +106,20 @@ class ContactStd(Interaction):
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-        includedPairs: RegionPairs = None, 
-        excludedPairs: RegionPairs = None, 
-        contactPropertyAssignments: ContactPropertyAssignment = None, 
-        surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
-        surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
+        includedPairs: Optional[RegionPairs] = None, 
+        excludedPairs: Optional[RegionPairs] = None, 
+        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
+        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
+        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
+        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: typing.Tuple[SlidingFormulationAssignment, ...] = None,
-        mainSecondaryAssignments: MainSecondaryAssignment = None, 
-        initializationAssignments: InitializationAssignment = None, 
-        stabilizationAssignments: StabilizationAssignment = None, 
-        smoothingAssignments: SmoothingAssignment = None, 
-        slidingTransitionAssignments: SlidingTransitionAssignment = None, 
+        slidingFormulationAssignments: Tuple[SlidingFormulationAssignment, ...] = None,
+        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
+        initializationAssignments: Optional[InitializationAssignment] = None, 
+        stabilizationAssignments: Optional[StabilizationAssignment] = None, 
+        smoothingAssignments: Optional[SmoothingAssignment] = None, 
+        slidingTransitionAssignments: Optional[SlidingTransitionAssignment] = None, 
     ):
         """This method creates a ContactStd object.
 
@@ -205,7 +205,7 @@ class ContactStd(Interaction):
         """
         super().__init__()
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
@@ -214,19 +214,19 @@ class ContactStd(Interaction):
         globalSmoothing: Boolean = ON,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: typing.Tuple[SlidingFormulationAssignment, ...] = None,
+        slidingFormulationAssignments: Tuple[SlidingFormulationAssignment, ...] = None,
         useAllstar: Boolean = OFF,
-        includedPairs: SymbolicConstant = None,
-        excludedPairs: SymbolicConstant = None,
-        contactPropertyAssignments: SymbolicConstant = None,
-        surfaceFeatureAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
-        surfaceThicknessAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
-        surfaceOffsetAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
-        mainSecondaryAssignments: SymbolicConstant = None,
-        initializationAssignments: SymbolicConstant = None,
-        stabilizationAssignments: SymbolicConstant = None,
-        smoothingAssignments: SymbolicConstant = None,
-        slidingTransitionAssignments: SymbolicConstant = None,
+        includedPairs: Optional[SymbolicConstant] = None,
+        excludedPairs: Optional[SymbolicConstant] = None,
+        contactPropertyAssignments: Optional[SymbolicConstant] = None,
+        surfaceFeatureAssignments: Union[SymbolicConstant, float] = GLOBAL,
+        surfaceThicknessAssignments: Union[SymbolicConstant, float] = GLOBAL,
+        surfaceOffsetAssignments: Union[SymbolicConstant, float] = GLOBAL,
+        mainSecondaryAssignments: Optional[SymbolicConstant] = None,
+        initializationAssignments: Optional[SymbolicConstant] = None,
+        stabilizationAssignments: Optional[SymbolicConstant] = None,
+        smoothingAssignments: Optional[SymbolicConstant] = None,
+        slidingTransitionAssignments: Optional[SymbolicConstant] = None,
     ):
         """This method creates a ContactStd object.
 

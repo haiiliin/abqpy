@@ -1,10 +1,11 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Interaction import Interaction
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTED, DEFAULT, KINEMATIC, OFF, OMIT,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -66,34 +67,34 @@ class SurfaceToSurfaceContactExp(Interaction):
 
     #: A SymbolicConstant or a Float specifying the initial clearance at regions of contact.
     #: Possible values are OMIT and COMPUTED. The default value is OMIT.
-    initialClearance: typing.Union[SymbolicConstant, float] = OMIT
+    initialClearance: Union[SymbolicConstant, float] = OMIT
 
     #: None or a sequence of Floats specifying the half thread angle used for bolt clearance.
     #: The default value is None.
-    halfThreadAngle: str = None
+    halfThreadAngle: Optional[str] = None
 
     #: None or a sequence of Floats specifying the pitch used for bolt clearance. The default
     #: value is None.
-    pitch: str = None
+    pitch: Optional[str] = None
 
     #: The SymbolicConstant COMPUTED or a Float specifying the major diameter of the bolt used
     #: for bolt clearance. The default value is COMPUTED.
-    majorBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED
+    majorBoltDiameter: Union[SymbolicConstant, float] = COMPUTED
 
     #: The SymbolicConstant COMPUTED or a Float specifying the mean diameter of the bolt used
     #: for bolt clearance. The default value is COMPUTED.
-    meanBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED
+    meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED
 
     #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
     #: clearance.
-    datumAxis: DatumAxis = None
+    datumAxis: Optional[DatumAxis] = None
 
     #: A Boolean specifying whether to reverse the bolt clearance direction given by the datum
     #: axis. The default value is OFF.
     useReverseDatumAxis: Boolean = OFF
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
-    clearanceRegion: Region = None
+    clearanceRegion: Optional[Region] = None
 
     @abaqus_method_doc
     def __init__(
@@ -108,14 +109,14 @@ class SurfaceToSurfaceContactExp(Interaction):
         weightingFactorType: SymbolicConstant = DEFAULT,
         weightingFactor: float = 0,
         contactControls: str = "",
-        initialClearance: typing.Union[SymbolicConstant, float] = OMIT,
-        halfThreadAngle: str = None,
-        pitch: str = None,
-        majorBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED,
-        meanBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED,
-        datumAxis: DatumAxis = None, 
+        initialClearance: Union[SymbolicConstant, float] = OMIT,
+        halfThreadAngle: Optional[str] = None,
+        pitch: Optional[str] = None,
+        majorBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
-        clearanceRegion: Region = None,
+        clearanceRegion: Optional[Region] = None,
     ):
         """This method creates a SurfaceToSurfaceContactExp object.
 
@@ -208,14 +209,14 @@ class SurfaceToSurfaceContactExp(Interaction):
         weightingFactorType: SymbolicConstant = DEFAULT,
         weightingFactor: float = 0,
         contactControls: str = "",
-        initialClearance: typing.Union[SymbolicConstant, float] = OMIT,
-        halfThreadAngle: str = None,
-        pitch: str = None,
-        majorBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED,
-        meanBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED,
-        datumAxis: DatumAxis = None, 
+        initialClearance: Union[SymbolicConstant, float] = OMIT,
+        halfThreadAngle: Optional[str] = None,
+        pitch: Optional[str] = None,
+        majorBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
-        clearanceRegion: Region = None,
+        clearanceRegion: Optional[Region] = None,
     ):
         """This method modifies the data for an existing SurfaceToSurfaceContactExp object in the
         step where it is created.

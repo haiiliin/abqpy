@@ -1,5 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, ELEMENT, EXTERIOR, HOLLOW_CIRCLE, MEDIUM,
+                                              OFF, ON, SHADED, SMALL, SOLID, SymbolicConstant,
+                                              VERY_THIN, WIRE)
 
 
 @abaqus_class_doc
@@ -150,4 +154,4 @@ class DGCommonOptions:
 
     #: A tuple of three Floats specifying the coordinate scaling in each of the three
     #: coordinate directions when **coordinateScale** = ON. The default value is (1, 1, 1).
-    coordinateScaleFactors: float = None
+    coordinateScaleFactors: Optional[float] = None

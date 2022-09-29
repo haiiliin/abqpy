@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .BiaxialTestData import BiaxialTestData
 
-BiaxialTestDataArray = typing.List[BiaxialTestData]
+BiaxialTestDataArray = List[BiaxialTestData]

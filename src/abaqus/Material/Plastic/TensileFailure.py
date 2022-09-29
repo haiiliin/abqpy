@@ -1,5 +1,7 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ...UtilityAndView.abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -39,8 +41,8 @@ class TensileFailure:
         dependencies: int = 0,
         temperatureDependency: Boolean = OFF,
         elementDeletion: Boolean = True,
-        pressure: SymbolicConstant = None,
-        shear: SymbolicConstant = None,
+        pressure: Optional[SymbolicConstant] = None,
+        shear: Optional[SymbolicConstant] = None,
     ):
         """This method creates a tensileFailure object.
 

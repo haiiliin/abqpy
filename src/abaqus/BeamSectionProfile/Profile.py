@@ -1,4 +1,4 @@
-import typing
+from typing import List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -39,7 +39,7 @@ class Profile:
 
         Returns
         -------
-        typing.List[Profile]
+        List[Profile]
             A list of Profile objects.
 
         """

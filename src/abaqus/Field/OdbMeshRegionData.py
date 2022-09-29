@@ -1,5 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, EXTRAPOLATE_COMPUTE_AVERAGE, FIELD_OUTPUT,
+                                              FLOAT, NONE, OFF, ON, REAL, SCALAR, SymbolicConstant,
+                                              UNDEFINED_POSITION)
 
 
 @abaqus_class_doc
@@ -167,9 +171,9 @@ class OdbMeshRegionData:
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
         sectionPoint: str = "",
-        refinementType: SymbolicConstant = None,
+        refinementType: Optional[SymbolicConstant] = None,
         refinementLabel: str = "",
-        displayOutputPosition: SymbolicConstant = None,
+        displayOutputPosition: Optional[SymbolicConstant] = None,
     ):
         """This method creates an OdbMeshRegionData object.
 

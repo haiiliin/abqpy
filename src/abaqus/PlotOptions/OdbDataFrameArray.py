@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .OdbDataFrame import OdbDataFrame
 
-OdbDataFrameArray = typing.List[OdbDataFrame]
+OdbDataFrameArray = List[OdbDataFrame]

@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .FieldLocation import FieldLocation
 
-FieldLocationArray = typing.List[FieldLocation]
+FieldLocationArray = List[FieldLocation]
