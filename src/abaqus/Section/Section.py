@@ -1,10 +1,10 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .TransverseShearBeam import TransverseShearBeam
 from .TransverseShearShell import TransverseShearShell
 from ..Connector.ConnectorSection import ConnectorSection
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc
@@ -13,9 +13,9 @@ class Section(ConnectorSection):
     def TransverseShearBeam(
         self,
         scfDefinition: SymbolicConstant,
-        k23: float = None,
-        k13: float = None,
-        slendernessCompensation: typing.Union[SymbolicConstant, float] = 0,
+        k23: Optional[float] = None,
+        k13: Optional[float] = None,
+        slendernessCompensation: Union[SymbolicConstant, float] = 0,
     ) -> TransverseShearBeam:
         """This method creates a TransverseShearBeam object.
 

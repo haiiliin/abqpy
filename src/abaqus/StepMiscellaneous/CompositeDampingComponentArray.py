@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .CompositeDampingComponent import CompositeDampingComponent
 
-CompositeDampingComponentArray = typing.List[CompositeDampingComponent]
+CompositeDampingComponentArray = List[CompositeDampingComponent]

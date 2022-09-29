@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .SteadyStateDirectFrequency import SteadyStateDirectFrequency
 
-SteadyStateDirectFrequencyArray = typing.List[SteadyStateDirectFrequency]
+SteadyStateDirectFrequencyArray = List[SteadyStateDirectFrequency]

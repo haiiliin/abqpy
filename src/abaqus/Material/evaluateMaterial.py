@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_function_doc
 from .Material import Material
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 """ This command evaluates the behavior of a hyperelastic material under standard test 
 conditions. 
@@ -18,20 +20,20 @@ conditions.
 def evaluateMaterial(
     material: Material,
     simulationName: str,
-    dataSource: SymbolicConstant = None,
-    strainEnergyPotentials: SymbolicConstant = None,
-    marlowData: SymbolicConstant = None,
-    marlowDataType: SymbolicConstant = None,
-    testDataTypes: SymbolicConstant = None,
-    uniaxialStrainRange: float = None,
-    biaxialStrainRange: float = None,
-    planarStrainRange: float = None,
-    volumeRatioRange: float = None,
-    simpleShearStrainRange: float = None,
-    viscoDataSource: SymbolicConstant = None,
-    viscoTestDataTypes: SymbolicConstant = None,
-    relaxationTime: float = None,
-    creepTime: float = None,
+    dataSource: Optional[SymbolicConstant] = None,
+    strainEnergyPotentials: Optional[SymbolicConstant] = None,
+    marlowData: Optional[SymbolicConstant] = None,
+    marlowDataType: Optional[SymbolicConstant] = None,
+    testDataTypes: Optional[SymbolicConstant] = None,
+    uniaxialStrainRange: Optional[float] = None,
+    biaxialStrainRange: Optional[float] = None,
+    planarStrainRange: Optional[float] = None,
+    volumeRatioRange: Optional[float] = None,
+    simpleShearStrainRange: Optional[float] = None,
+    viscoDataSource: Optional[SymbolicConstant] = None,
+    viscoTestDataTypes: Optional[SymbolicConstant] = None,
+    relaxationTime: Optional[float] = None,
+    creepTime: Optional[float] = None,
 ):
     """This method evaluates the behavior of a hyperelastic material under standard test
     conditions.

@@ -1,9 +1,9 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Leaf import Leaf
 from ..Datum.Datum import Datum
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import DEFAULT_MODEL, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -22,10 +22,10 @@ class LeafFromDatums(Leaf):
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-    leafType: SymbolicConstant = None
+    leafType: Optional[SymbolicConstant] = None
 
     @abaqus_method_doc
-    def __init__(self, datumSeq: typing.Tuple[Datum, ...]):
+    def __init__(self, datumSeq: Tuple[Datum, ...]):
         """This method creates a Leaf object from a sequence of datum objects. Leaf objects specify
         the items in a display group.
 

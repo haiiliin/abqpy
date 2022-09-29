@@ -1,9 +1,9 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant, UNIFORM, UNSET
 
 
 @abaqus_class_doc
@@ -34,7 +34,7 @@ class ConcentratedForce(Load):
     #: of freedom. If **localCsys** = None, the degrees of freedom are defined in the global
     #: coordinate system. When this member is queried, it returns an Int. The default value is
     #: None.
-    localCsys: int = None
+    localCsys: Optional[int] = None
 
     #: A String specifying the name of the AnalyticalField object associated with this load.
     #: The **field** argument applies only when **distributionType** = FIELD. The default value is an
@@ -52,12 +52,12 @@ class ConcentratedForce(Load):
         region: Region,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
-        cf1: float = None,
-        cf2: float = None,
-        cf3: float = None,
+        cf1: Optional[float] = None,
+        cf2: Optional[float] = None,
+        cf3: Optional[float] = None,
         amplitude: str = UNSET,
         follower: Boolean = OFF,
-        localCsys: int = None,
+        localCsys: Optional[int] = None,
     ):
         """This method creates a ConcentratedForce object.
 
@@ -115,12 +115,12 @@ class ConcentratedForce(Load):
         self,
         distributionType: SymbolicConstant = UNIFORM,
         field: str = "",
-        cf1: float = None,
-        cf2: float = None,
-        cf3: float = None,
+        cf1: Optional[float] = None,
+        cf2: Optional[float] = None,
+        cf3: Optional[float] = None,
         amplitude: str = UNSET,
         follower: Boolean = OFF,
-        localCsys: int = None,
+        localCsys: Optional[int] = None,
     ):
         """This method modifies the data for an existing ConcentratedForce object in the step where
         it is created.
@@ -162,9 +162,9 @@ class ConcentratedForce(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        cf1: typing.Union[SymbolicConstant, float] = None,
-        cf2: typing.Union[SymbolicConstant, float] = None,
-        cf3: typing.Union[SymbolicConstant, float] = None,
+        cf1: Union[SymbolicConstant, float] = None,
+        cf2: Union[SymbolicConstant, float] = None,
+        cf3: Union[SymbolicConstant, float] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing ConcentratedForce object in

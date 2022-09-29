@@ -1,4 +1,4 @@
-import typing
+from typing import Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..BasicGeometry.Edge import Edge
@@ -38,10 +38,10 @@ class Skin:
     def __init__(
         self,
         name: str,
-        faces: typing.Tuple[Face, ...] = (),
-        edges: typing.Tuple[Edge, ...] = (),
-        elementFaces: typing.Tuple[MeshFace, ...] = (),
-        elementEdges: typing.Tuple[MeshEdge, ...] = (),
+        faces: Tuple[Face, ...] = (),
+        edges: Tuple[Edge, ...] = (),
+        elementFaces: Tuple[MeshFace, ...] = (),
+        elementEdges: Tuple[MeshEdge, ...] = (),
     ):
         """This method creates a skin from a sequence of objects in a model database. At least one
         of the optional arguments needs to be specified.
@@ -79,10 +79,10 @@ class Skin:
     def EditSkin(
         self,
         name: str = "",
-        faces: typing.Tuple[Face, ...] = (),
-        edges: typing.Tuple[Edge, ...] = (),
-        elementFaces: typing.Tuple[MeshFace, ...] = (),
-        elementEdges: typing.Tuple[MeshEdge, ...] = (),
+        faces: Tuple[Face, ...] = (),
+        edges: Tuple[Edge, ...] = (),
+        elementFaces: Tuple[MeshFace, ...] = (),
+        elementEdges: Tuple[MeshEdge, ...] = (),
     ):
         """This method modifies underlying entities of the selected skin. At least one of the
         optional arguments needs to be specified.

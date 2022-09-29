@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .CDCTerm import CDCTerm
 
-CDCTermArray = typing.List[CDCTerm]
+CDCTermArray = List[CDCTerm]

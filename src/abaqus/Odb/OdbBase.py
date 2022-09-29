@@ -1,4 +1,4 @@
-import typing
+from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .JobData import JobData
@@ -14,7 +14,7 @@ from ..CustomKernel.RepositorySupport import RepositorySupport
 from ..Filter.Filter import Filter
 from ..Material.Material import Material
 from ..Section.Section import Section
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, CLOSEST, OFF, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -32,10 +32,10 @@ class OdbBase:
     isReadOnly: Boolean = OFF
 
     #: A repository of Amplitude objects.
-    amplitudes: typing.Dict[str, Amplitude] = {}
+    amplitudes: Dict[str, Amplitude] = {}
 
     #: A repository of Filter objects.
-    filters: typing.Dict[str, Filter] = {}
+    filters: Dict[str, Filter] = {}
 
     #: An :py:class:`~abaqus.Odb.OdbAssembly.OdbAssembly` object.
     rootAssembly: OdbAssembly = OdbAssembly()
@@ -44,19 +44,19 @@ class OdbBase:
     jobData: JobData = JobData()
 
     #: A repository of OdbPart objects.
-    parts: typing.Dict[str, OdbPart] = {}
+    parts: Dict[str, OdbPart] = {}
 
     #: A repository of Material objects.
-    materials: typing.Dict[str, Material] = {}
+    materials: Dict[str, Material] = {}
 
     #: A repository of OdbStep objects.
-    steps: typing.Dict[str, OdbStep] = {}
+    steps: Dict[str, OdbStep] = {}
 
     #: A repository of Section objects.
-    sections: typing.Dict[str, Section] = {}
+    sections: Dict[str, Section] = {}
 
     #: A repository of SectionCategory objects.
-    sectionCategories: typing.Dict[str, SectionCategory] = {}
+    sectionCategories: Dict[str, SectionCategory] = {}
 
     #: A :py:class:`~abaqus.Odb.SectorDefinition.SectorDefinition` object.
     sectorDefinition: SectorDefinition = SectorDefinition()
@@ -68,7 +68,7 @@ class OdbBase:
     customData: RepositorySupport = RepositorySupport()
 
     #: A repository of Profile objects.
-    profiles: typing.Dict[str, Profile] = {}
+    profiles: Dict[str, Profile] = {}
 
     @abaqus_method_doc
     def __init__(

@@ -5,7 +5,13 @@ from .Metal.Cyclic.CyclicHardening import CyclicHardening
 from .Metal.ORNL.Ornl import Ornl
 from .Metal.RateDependent.RateDependent import RateDependent
 from .Potential import Potential
+<<<<<<< HEAD
 from ...UtilityAndView.abaqusConstants import *
+=======
+from .TensileFailure import TensileFailure
+from ...UtilityAndView.abaqusConstants import (Boolean, CONSTANT, HALF_CYCLE, ISOTROPIC, OFF,
+                                               SymbolicConstant)
+>>>>>>> cfc3482e (Update type hints (#1762))
 
 
 @abaqus_class_doc

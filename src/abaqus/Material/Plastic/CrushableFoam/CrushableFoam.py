@@ -1,7 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .CrushableFoamHardening import CrushableFoamHardening
 from ..Metal.RateDependent.RateDependent import RateDependent
-from ....UtilityAndView.abaqusConstants import *
+from ....UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant, VOLUMETRIC
 
 
 @abaqus_class_doc

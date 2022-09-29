@@ -1,4 +1,4 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..BasicGeometry.InterestingPoint import InterestingPoint
@@ -37,7 +37,7 @@ class ReferencePoint:
     @abaqus_method_doc
     def __init__(
         self,
-        point: typing.Union[tuple, Vertex, InterestingPoint, MeshNode, Datum],
+        point: Union[tuple, Vertex, InterestingPoint, MeshNode, Datum],
         instanceName: str = "",
     ):
         """This method creates a Feature object and a ReferencePoint object at the specified

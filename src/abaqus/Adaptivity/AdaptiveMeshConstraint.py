@@ -1,7 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Datum.DatumCsys import DatumCsys
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc
@@ -24,7 +26,7 @@ class AdaptiveMeshConstraint:
 
     #: A SymbolicConstant specifying the category of the adaptive mesh constraint. Possible
     #: values are MECHANICAL and THERMAL.
-    category: SymbolicConstant = None
+    category: Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the adaptive mesh constraint is applied.
     region: Region = Region()
@@ -32,7 +34,7 @@ class AdaptiveMeshConstraint:
     #: None or a DatumCsys object specifying the local coordinate system of the adaptive mesh
     #: constraint's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: DatumCsys = None
+    localCsys: Optional[DatumCsys] = None
 
     @abaqus_method_doc
     def __init__(
@@ -40,7 +42,7 @@ class AdaptiveMeshConstraint:
         name: str,
         category: SymbolicConstant,
         region: Region,
-        localCsys: DatumCsys = None,
+        localCsys: Optional[DatumCsys] = None,
     ):
         """The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary
         Lagrangian Eularian (ALE) style AdaptiveMeshConstraint objects. The
