@@ -1,4 +1,5 @@
 from typing import Union
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import (DPI_150, INCHES, MEDIUM, PS_IF_AVAILABLE,
                                               SIZE_ON_SCREEN, SymbolicConstant, VECTOR)
