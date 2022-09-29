@@ -1,7 +1,7 @@
 """The following commands are used to request data entry from a user.
 
 """
-from typing import Tuple
+from typing import overload, Tuple
 
 from abqpy.decorators import abaqus_function_doc
 

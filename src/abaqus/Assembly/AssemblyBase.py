@@ -1,4 +1,4 @@
-from typing import Dict, List, Optional, Tuple, Union
+from typing import overload, Dict, List, Optional, Tuple, Union
 
 from abaqus.Datum.DatumCsys import DatumCsys
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc

@@ -1,4 +1,4 @@
-from typing import Dict, List, Optional, Tuple
+from typing import overload, Dict, List, Optional, Tuple
 
 # prevent circular imports
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
