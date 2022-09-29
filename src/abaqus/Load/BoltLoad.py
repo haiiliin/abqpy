@@ -1,8 +1,10 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import APPLY_FORCE, Boolean, SymbolicConstant, UNSET
 
 
 @abaqus_class_doc
@@ -90,7 +92,7 @@ class BoltLoad(Load):
     def setValues(
         self,
         boltMethod: SymbolicConstant = APPLY_FORCE,
-        datumAxis: DatumAxis = None, 
+        datumAxis: Optional[DatumAxis] = None, 
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing BoltLoad object in the step where it is
@@ -117,7 +119,7 @@ class BoltLoad(Load):
         self,
         stepName: str,
         boltMethod: SymbolicConstant = APPLY_FORCE,
-        magnitude: float = None,
+        magnitude: Optional[float] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing BoltLoad object in the

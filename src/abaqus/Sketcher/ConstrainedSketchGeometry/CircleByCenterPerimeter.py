@@ -1,4 +1,4 @@
-import typing
+from typing import Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
@@ -7,7 +7,7 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 @abaqus_class_doc
 class CircleByCenterPerimeter(ConstrainedSketchGeometry):
     @abaqus_method_doc
-    def __init__(self, center: typing.Tuple[float, ...], point1: typing.Tuple[float, ...]):
+    def __init__(self, center: Tuple[float, ...], point1: Tuple[float, ...]):
         """This method constructs a circle using a center point and a point on the perimeter. The
         circle is added to the geometry repository of the ConstrainedSketch object.
 

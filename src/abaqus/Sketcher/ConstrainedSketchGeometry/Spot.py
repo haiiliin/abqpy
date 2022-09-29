@@ -1,4 +1,4 @@
-import typing
+from typing import Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
@@ -7,7 +7,7 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 @abaqus_class_doc
 class Spot(ConstrainedSketchGeometry):
     @abaqus_method_doc
-    def __init__(self, point: typing.Tuple[float, ...]):
+    def __init__(self, point: Tuple[float, ...]):
         """This method creates a spot construction point located at the specified coordinates. The
         spot is added to the vertex repository of the ConstrainedSketch object.
 

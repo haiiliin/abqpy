@@ -1,5 +1,7 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import RLE8, SIZE_ON_SCREEN, SymbolicConstant
 from .._OptionsBase import _OptionsBase
 
 
@@ -28,7 +30,7 @@ class AVIOptions(_OptionsBase):
     
     #: An Int specifying the quality of the compression as a percentage when the
     #: **compressionMethod** is set to CODEC.
-    compressionQuality: int = None
+    compressionQuality: Optional[int] = None
     
     #: A String specifying the system specific options defining the CODEC when the
     #: **compressionMethod** is set to CODEC.
@@ -43,16 +45,16 @@ class AVIOptions(_OptionsBase):
     #: **sizeDefinition** = USER_DEFINED. Possible values are Ints in the range (*minWidth*,
     #: **minHeight**) ≤ (width, height) ≤ (*maxWidth*, **maxHeight**). The default value is the
     #: screen size.
-    imageSize: int = None
+    imageSize: Optional[int] = None
 
     @abaqus_method_doc
     def setValues(
         self,
         compressionMethod: SymbolicConstant = RLE8,
-        compressionQuality: int = None,
+        compressionQuality: Optional[int] = None,
         codecOptions: str = "",
         sizeDefinition: SymbolicConstant = SIZE_ON_SCREEN,
-        imageSize: int = None,
+        imageSize: Optional[int] = None,
     ):
         """This method modifies the AVIOptions object.
 

@@ -1,7 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Interaction import Interaction
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import UNSET
 
 
 @abaqus_class_doc
@@ -118,8 +120,8 @@ class PressurePenetration(Interaction):
     def setValuesInStep(
         self,
         stepName: str,
-        penetrationPressure: float = None,
-        criticalPressure: float = None,
+        penetrationPressure: Optional[float] = None,
+        criticalPressure: Optional[float] = None,
         amplitude: str = "",
         penetrationTime: float = 0,
     ):

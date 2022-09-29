@@ -1,4 +1,4 @@
-import typing
+from typing import Union, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Density.Density import Density
@@ -57,7 +57,15 @@ from .Plastic.Plastic import Plastic
 from .Plastic.Swelling.Swelling import Swelling
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALLISO, Boolean, CENTROID, COEFFICIENTS, CONSTANT,
+                                              CONSTANTVOLUME, DEFAULT, ELASTIC_PLASTIC, EXPONENTIAL,
+                                              FITTED_VALUE, FORMULA, FUNG_ANISOTROPIC, GENERAL,
+                                              HALF_CYCLE, IDEALGAS, INCOMPRESSIBLE, INCREMENTAL,
+                                              INPUT, ISOTROPIC, LINEAR, LOGARITHMIC, LONG_TERM,
+                                              MECHANICAL, MSFLD, MT, NEWTONIAN, NMORI, NO, NONE,
+                                              OFF, ON, POISSON, PRONY, RELATIVE_SLOPE_DROP, STRAIN,
+                                              STRESS, SymbolicConstant, TABULAR, TOTAL, UNIAXIAL,
+                                              UNIFORM, UNKNOWN, VOLUMETRIC)
 
 
 @abaqus_class_doc
@@ -271,7 +279,7 @@ class Material(MaterialBase):
     def ClayPlasticity(
         self,
         table: tuple,
-        intercept: float = None,
+        intercept: Optional[float] = None,
         hardening: SymbolicConstant = EXPONENTIAL,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -512,6 +520,45 @@ class Material(MaterialBase):
         return self.crushableFoam
 
     @abaqus_method_doc
+<<<<<<< HEAD
+=======
+    def CrushStress(
+        self,
+        crushStressTable: Tuple[Tuple[float, ...]],
+        temperatureDependency: Boolean = OFF,
+        dependencies: int = 0,
+    ):
+        """This method creates a CrushStress object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].CrushStress
+                session.odbs[name].materials[name].CrushStress
+
+        .. versionadded:: 2022
+            The `CrushStress` method was added.
+
+        Parameters
+        ----------
+        crushStressTable
+            A sequence of sequences of Floats specifying the items described below.
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+
+        Returns
+        -------
+            A CrushStress object.
+        """
+        self.crushStress = CrushStress(
+            crushStressTable, temperatureDependency, dependencies
+        )
+        return self.crushStress
+
+    @abaqus_method_doc
+>>>>>>> cfc3482e (Update type hints (#1762))
     def Damping(
         self,
         alpha: float = 0,
@@ -1127,7 +1174,7 @@ class Material(MaterialBase):
     def GapFlow(
         self,
         table: tuple,
-        kmax: float = None,
+        kmax: Optional[float] = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         type: SymbolicConstant = NEWTONIAN,
@@ -1205,7 +1252,7 @@ class Material(MaterialBase):
         table: tuple,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        tensileStiffnessFactor: float = None,
+        tensileStiffnessFactor: Optional[float] = None,
         type: SymbolicConstant = ELASTIC_PLASTIC,
         unloadingDependencies: int = 0,
         unloadingTemperatureDependency: Boolean = OFF,
@@ -1360,7 +1407,7 @@ class Material(MaterialBase):
         moduliTimeScale: SymbolicConstant = LONG_TERM,
         temperatureDependency: Boolean = OFF,
         n: int = 1,
-        beta: typing.Union[SymbolicConstant, float] = FITTED_VALUE,
+        beta: Union[SymbolicConstant, float] = FITTED_VALUE,
         testData: Boolean = ON,
         compressible: Boolean = OFF,
         properties: int = 0,
@@ -1480,7 +1527,7 @@ class Material(MaterialBase):
     def Hyperfoam(
         self,
         testData: Boolean = OFF,
-        poisson: float = None,
+        poisson: Optional[float] = None,
         n: int = 1,
         temperatureDependency: Boolean = OFF,
         moduli: SymbolicConstant = LONG_TERM,
@@ -1641,10 +1688,10 @@ class Material(MaterialBase):
     def LowDensityFoam(
         self,
         elementRemoval: Boolean = OFF,
-        maxAllowablePrincipalStress: float = None,
+        maxAllowablePrincipalStress: Optional[float] = None,
         extrapolateStressStrainCurve: Boolean = OFF,
         strainRateType: SymbolicConstant = VOLUMETRIC,
-        mu0: float = None,
+        mu0: Optional[float] = None,
         mu1: float = 0,
         alpha: float = 2,
     ) -> LowDensityFoam:
@@ -1770,7 +1817,7 @@ class Material(MaterialBase):
     def MohrCoulombPlasticity(
         self,
         table: tuple,
-        deviatoricEccentricity: float = None,
+        deviatoricEccentricity: Optional[float] = None,
         meridionalEccentricity: float = 0,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -2115,7 +2162,7 @@ class Material(MaterialBase):
     def PorousMetalPlasticity(
         self,
         table: tuple,
-        relativeDensity: float = None,
+        relativeDensity: Optional[float] = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ) -> PorousMetalPlasticity:
@@ -3763,3 +3810,153 @@ class Material(MaterialBase):
         RangeError
         """
         return DamageInitiation()
+<<<<<<< HEAD
+=======
+
+    @abaqus_method_doc
+    def MeanFieldHomogenization(
+        self,
+        angleSubdivision: Optional[int] = None,
+        formulation: SymbolicConstant = MT,
+        isotropization: SymbolicConstant = ALLISO,
+        uniformMatrixStrain: SymbolicConstant = NO,
+    ):
+        """This method creates a MeanFieldHomogenization object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].MeanFieldHomogenization
+                session.odbs[name].materials[name].MeanFieldHomogenization
+
+        .. versionadded:: 2018
+            The `MeanFieldHomogenization` method was added.
+
+        Parameters
+        ----------
+        angleSubdivision
+            An Int specifying the number of angle increments used for the discretization of the
+            orientation space.
+        formulation
+            A SymbolicConstant specifying the type of homogenization model. Possible values are MT,
+            REUSS, VOIGT, INVERSED_MT, BALANCED, and UNSPECIFIED. The default value is MT.
+        isotropization
+            A SymbolicConstant specifying the type of isotropization method. Possible values are
+            ALLISO, EISO, and PISO. The default value is ALLISO.
+        uniformMatrixStrain
+            A SymbolicConstant specifying whether the average strain in the matrix is uniform across
+            all pseudo-grains. Possible values are NO and YES. The default value is NO.
+
+        Returns
+        -------
+            A MeanFieldHomogenization object.
+
+        Raises
+        ------
+        RangeError
+        """
+        return MeanFieldHomogenization()
+
+    @abaqus_method_doc
+    def GapConductance(
+        self,
+        pressureDependency: Boolean = OFF,
+        dependencies: int = 0,
+        table: tuple = (),
+    ) -> GapConductance:
+        """This method creates a GapConductance object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].GapConductance
+                session.odbs[name].materials[name].GapConductance
+
+        .. versionadded:: 2021
+            The `GapConductance` method was added.
+
+        Parameters
+        ----------
+        pressureDependency
+            A Boolean specifying whether the data depend on pressure. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+        table
+            A sequence of sequences of Floats specifying the items described below.
+
+        Returns
+        -------
+            A GapConductance object.
+        """
+        return GapConductance(pressureDependency, dependencies, table)
+
+    @abaqus_method_doc
+    def GapConvection(
+        self,
+        type: str,
+        table: tuple = (),
+        temperatureDependency: Boolean = OFF,
+        dependencies: int = 0,
+    ) -> GapConvection:
+        """This method creates a GapConvection object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].GapConvection
+                session.odbs[name].materials[name].GapConvection
+
+        .. versionadded:: 2021
+            The `GapConvection` method was added.
+
+        Parameters
+        ----------
+        type
+            An odb_String specifying the type of gap convection. Possible values are FLUX,
+            TEMPERATURE, and TABULAR. The default value is FLUX.
+        table
+            A sequence of sequences of Floats specifying the items described below.
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+
+        Returns
+        -------
+            A GapConvection object.
+        """
+        return GapConvection(type, table, temperatureDependency, dependencies)
+
+    @abaqus_method_doc
+    def GapRadiation(
+        self,
+        masterSurfaceEmissivity: float,
+        slaveSurfaceEmissivity: float,
+        table: tuple,
+    ) -> GapRadiation:
+        """This method creates a GapRadiation object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].Gapradiation
+                session.odbs[name].materials[name].Gapradiation
+
+        .. versionadded:: 2021
+            The `GapRadiation` method was added.
+
+        Parameters
+        ----------
+        masterSurfaceEmissivity
+            A Float specifying the Emissivity of master surface.ϵA
+        slaveSurfaceEmissivity
+            A Float specifying the Emissivity of the slave surfaceϵB.
+        table
+            A sequence of sequences of Floats specifying the items described below.
+
+        Returns
+        -------
+            A Gapradiation object.
+        """
+        return GapRadiation(masterSurfaceEmissivity, slaveSurfaceEmissivity, table)
+>>>>>>> cfc3482e (Update type hints (#1762))

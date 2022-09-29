@@ -1,6 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Region.Set import Set
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, FROM_SECTION, OFF, SINGLE_VALUE,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -111,7 +112,7 @@ class SectionAssignment:
 
         Returns
         -------
-        typing.Tuple[typing.Tuple[float, ...]]
+        Tuple[Tuple[float, ...]]
             A sequence of tuples of floats.
 
         Raises

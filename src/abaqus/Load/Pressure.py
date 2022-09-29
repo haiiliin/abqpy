@@ -1,7 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM, UNSET
 
 
 @abaqus_class_doc
@@ -128,9 +130,9 @@ class Pressure(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        magnitude: float = None,
-        hZero: float = None,
-        hReference: float = None,
+        magnitude: Optional[float] = None,
+        hZero: Optional[float] = None,
+        hReference: Optional[float] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing Pressure object in the

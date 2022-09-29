@@ -1,7 +1,8 @@
-import typing
+from typing import Union, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AXIS_1, AXIS_2, AXIS_3, Boolean, FIRST_FRAME, OFF, ON,
+                                              SymbolicConstant, TRANSLATE)
 
 
 @abaqus_class_doc
@@ -20,25 +21,25 @@ class ViewCut:
     """
 
     #: A Float specifying the rotation angle of the cut defined with a **shape** set to PLANE.
-    angle: float = None
+    angle: Optional[float] = None
 
     #: A SymbolicConstant specifying the type of motion for the cut defined with a **shape** set
     #: to PLANE. Possible values are TRANSLATE and ROTATE. The default value is TRANSLATE.
     motion: SymbolicConstant = TRANSLATE
 
     #: A Float specifying the position of the cut defined with a **shape** set to PLANE.
-    position: float = None
+    position: Optional[float] = None
 
     #: A Float specifying the radius of the cut defined with a **shape** set to CYLINDER or
     #: SPHERE.
-    radius: float = None
+    radius: Optional[float] = None
 
     #: A SymbolicConstant specifying the rotation axis for the cut defined with a **shape** set
     #: to PLANE. Possible values are AXIS_1, AXIS_2, and AXIS_3. The default value is AXIS_2.
     rotationAxis: SymbolicConstant = AXIS_2
 
     #: A Float specifying the value of the cut defined with a **shape** set to ISOSURFACE.
-    value: float = None
+    value: Optional[float] = None
 
     #: A Boolean specifying whether to display the model above the cut. The default value is
     #: OFF.
@@ -58,7 +59,7 @@ class ViewCut:
     active: Boolean = OFF
 
     #: A pair of Floats specifying the acceptable range for positioning the cut.
-    cutRange: typing.Tuple[float, ...] = ()
+    cutRange: Tuple[float, ...] = ()
 
     #: A String specifying the repository key.
     name: str
@@ -77,14 +78,14 @@ class ViewCut:
     #: SymbolicConstant defining this normal axis, when the cut is defined by the **csysName**
     #: argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is not required if the
     #: cut **shape** is CYLINDER, SPHERE or ISOSURFACE.
-    normal: typing.Union[SymbolicConstant, float]
+    normal: Union[SymbolicConstant, float]
 
     #: A sequence of three Floats specifying the X-, Y-, and Z-coordinates of the second axis
     #: of the plane defining the cut, when the plane is defined using the **origin** argument or
     #: a SymbolicConstant defining this second axis, when the cut is defined by the **csysName**
     #: argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is used to rotate the
     #: plane cut. It is not required if the cut **shape** is CYLINDER, SPHERE or ISOSURFACE.
-    axis2: typing.Union[SymbolicConstant, float]
+    axis2: Union[SymbolicConstant, float]
 
     #: A String specifying the name of the DatumCsys object to be used to define the cut. This
     #: name is not required if the cut **shape** is ISOSURFACE or if the cut is defined by the
@@ -96,7 +97,7 @@ class ViewCut:
     #: SymbolicConstant defining this cylinder axis, when the cut is defined by the **csysName**
     #: argument. Possible values are AXIS_1, AXIS_2, AXIS_3. This axis is not required if the
     #: cut **shape** is PLANE, SPHERE, or ISOSURFACE.
-    cylinderAxis: typing.Union[SymbolicConstant, float]
+    cylinderAxis: Union[SymbolicConstant, float]
 
     #: A Boolean specifying whether the cut will follow the deformation or be static. The
     #: default value is OFF.
@@ -112,16 +113,26 @@ class ViewCut:
     #: default value is FIRST_FRAME.
     referenceFrame: SymbolicConstant = FIRST_FRAME
 
+<<<<<<< HEAD
+=======
+    #: A Float returning the cross-sectional area of the cut when **showFreeBodyCut** is set to
+    #: ON.
+    #:
+    #: ..versionadded:: 2018
+    #:     The `crossSectionalArea` attribute was added.
+    crossSectionalArea: Optional[float] = None
+
+>>>>>>> cfc3482e (Update type hints (#1762))
     @abaqus_method_doc
     def __init__(
         self,
         name: str,
         shape: SymbolicConstant,
         origin: tuple,
-        normal: typing.Union[SymbolicConstant, float],
-        axis2: typing.Union[SymbolicConstant, float],
+        normal: Union[SymbolicConstant, float],
+        axis2: Union[SymbolicConstant, float],
         csysName: str,
-        cylinderAxis: typing.Union[SymbolicConstant, float],
+        cylinderAxis: Union[SymbolicConstant, float],
         followDeformation: Boolean = OFF,
         overrideAveraging: Boolean = ON,
         referenceFrame: SymbolicConstant = FIRST_FRAME,
@@ -189,21 +200,21 @@ class ViewCut:
     @abaqus_method_doc
     def setValues(
         self,
-        angle: float = None,
+        angle: Optional[float] = None,
         motion: SymbolicConstant = TRANSLATE,
-        position: float = None,
-        radius: float = None,
+        position: Optional[float] = None,
+        radius: Optional[float] = None,
         rotationAxis: SymbolicConstant = AXIS_2,
-        value: float = None,
+        value: Optional[float] = None,
         showModelAboveCut: Boolean = OFF,
         showModelOnCut: Boolean = ON,
         showModelBelowCut: Boolean = ON,
         showFreeBodyCut: Boolean = OFF,
         csysName: str = "",
         origin: tuple = (),
-        normal: typing.Union[SymbolicConstant, float] = AXIS_1,
-        axis2: typing.Union[SymbolicConstant, float] = AXIS_2,
-        cylinderAxis: typing.Union[SymbolicConstant, float] = AXIS_3,
+        normal: Union[SymbolicConstant, float] = AXIS_1,
+        axis2: Union[SymbolicConstant, float] = AXIS_2,
+        cylinderAxis: Union[SymbolicConstant, float] = AXIS_3,
         followDeformation: Boolean = OFF,
         overrideAveraging: Boolean = ON,
         referenceFrame: SymbolicConstant = FIRST_FRAME,

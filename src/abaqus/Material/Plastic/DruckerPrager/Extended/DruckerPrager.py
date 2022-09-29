@@ -3,7 +3,7 @@ from .DruckerPragerCreep import DruckerPragerCreep
 from .DruckerPragerHardening import DruckerPragerHardening
 from .TriaxialTestData import TriaxialTestData
 from ...Metal.RateDependent.RateDependent import RateDependent
-from .....UtilityAndView.abaqusConstants import *
+from .....UtilityAndView.abaqusConstants import Boolean, LINEAR, OFF, SymbolicConstant
 
 
 @abaqus_class_doc

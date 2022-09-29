@@ -1,9 +1,9 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchDimension import ConstrainedSketchDimension
 from ..ConstrainedSketchVertex.ConstrainedSketchVertex import ConstrainedSketchVertex
-from ...UtilityAndView.abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
@@ -12,9 +12,15 @@ class DistanceDimension(ConstrainedSketchDimension):
     def __init__(
         self,
         entity1: ConstrainedSketchVertex,
+<<<<<<< HEAD
         vertex2: ConstrainedSketchVertex,
         textPoint: typing.Tuple[float, ...],
         value: float = None,
+=======
+        entity2: ConstrainedSketchVertex,
+        textPoint: Tuple[float, ...],
+        value: Optional[float] = None,
+>>>>>>> cfc3482e (Update type hints (#1762))
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension object between two

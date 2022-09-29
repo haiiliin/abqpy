@@ -1,7 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM, UNSET
 
 
 @abaqus_class_doc
@@ -111,7 +113,7 @@ class SurfaceConcentrationFlux(Load):
 
     @abaqus_method_doc
     def setValuesInStep(
-        self, stepName: str, magnitude: float = None, amplitude: str = ""
+        self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""
     ):
         """This method modifies the propagating data for an existing SurfaceConcentrationFlux
         object in the specified step.

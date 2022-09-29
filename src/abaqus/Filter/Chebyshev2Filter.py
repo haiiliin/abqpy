@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Filter import Filter
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, NONE, OFF, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -49,7 +51,7 @@ class Chebyshev2Filter(Filter):
     #: None or a Float specifying the threshold limit, an upper or lower bound for output
     #: values depending on the operation, or a bound for stopping the analysis when Halt is
     #: used. The default value is None.
-    limit: float = None
+    limit: Optional[float] = None
 
     #: A SymbolicConstant specifying the invariant to which filtering is applied. Possible
     #: values are NONE, FIRST, and SECOND. The default value is NONE.
@@ -64,7 +66,7 @@ class Chebyshev2Filter(Filter):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: float = None,
+        limit: Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ):
         """This method creates a Chebyshev2Filter object.
@@ -123,7 +125,7 @@ class Chebyshev2Filter(Filter):
         order: int = 2,
         operation: SymbolicConstant = NONE,
         halt: Boolean = OFF,
-        limit: float = None,
+        limit: Optional[float] = None,
         invariant: SymbolicConstant = NONE,
     ):
         """This method modifies the Chebyshev2Filter object.

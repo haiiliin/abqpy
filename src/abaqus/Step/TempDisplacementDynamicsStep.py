@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AnalysisStep import AnalysisStep
@@ -16,7 +16,8 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AUTOMATIC_GLOBAL, Boolean, OFF, ON, PREVIOUS_STEP,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -58,7 +59,7 @@ class TempDisplacementDynamicsStep(AnalysisStep):
 
     #: None or a Float specifying the maximum time increment allowed. If there is no upper
     #: limit, **maxIncrement** = None. The default value is None.
-    maxIncrement: float = None
+    maxIncrement: Optional[float] = None
 
     #: A Float specifying the factor that is used to scale the time increment. This argument is
     #: required only when **timeIncrementationMethod** = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
@@ -66,7 +67,7 @@ class TempDisplacementDynamicsStep(AnalysisStep):
     scaleFactor: float = 1
 
     #: None or a Float specifying the user-defined time increment. The default value is None.
-    userDefinedInc: float = None
+    userDefinedInc: Optional[float] = None
 
     #: A Float specifying the linear bulk viscosity parameter, b1b1. The default value is 0.06.
     linearBulkViscosity: float = 0
@@ -88,7 +89,7 @@ class TempDisplacementDynamicsStep(AnalysisStep):
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
-    explicit: SymbolicConstant = None
+    explicit: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step has a perturbation procedure type.
     perturbation: Boolean = OFF
@@ -124,31 +125,31 @@ class TempDisplacementDynamicsStep(AnalysisStep):
     #: - STEADY_STATE_MODAL
     #: - STEADY_STATE_SUBSPACE
     #: - VISCO
-    procedureType: SymbolicConstant = None
+    procedureType: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the step is suppressed or not. The default value is OFF.
     suppressed: Boolean = OFF
 
     #: A repository of FieldOutputRequestState objects.
-    fieldOutputRequestState: typing.Dict[str, FieldOutputRequestState] = {}
+    fieldOutputRequestState: Dict[str, FieldOutputRequestState] = {}
 
     #: A repository of HistoryOutputRequestState objects.
-    historyOutputRequestState: typing.Dict[str, HistoryOutputRequestState] = {}
+    historyOutputRequestState: Dict[str, HistoryOutputRequestState] = {}
 
     #: A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object.
     diagnosticPrint: DiagnosticPrint = DiagnosticPrint()
 
     #: A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object.
-    monitor: Monitor = None
+    monitor: Optional[Monitor] = None
 
     #: A :py:class:`~abaqus.StepOutput.Restart.Restart` object.
     restart: Restart = Restart()
 
     #: A repository of AdaptiveMeshConstraintState objects.
-    adaptiveMeshConstraintStates: typing.Dict[str, AdaptiveMeshConstraintState] = {}
+    adaptiveMeshConstraintStates: Dict[str, AdaptiveMeshConstraintState] = {}
 
     #: A repository of AdaptiveMeshDomain objects.
-    adaptiveMeshDomains: typing.Dict[str, AdaptiveMeshDomain] = {}
+    adaptiveMeshDomains: Dict[str, AdaptiveMeshDomain] = {}
 
     #: A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object.
     control: Control = Control()
@@ -157,19 +158,19 @@ class TempDisplacementDynamicsStep(AnalysisStep):
     solverControl: SolverControl = SolverControl()
 
     #: A repository of BoundaryConditionState objects.
-    boundaryConditionStates: typing.Dict[str, BoundaryConditionState] = {}
+    boundaryConditionStates: Dict[str, BoundaryConditionState] = {}
 
     #: A repository of InteractionState objects.
-    interactionStates: int = None
+    interactionStates: Optional[int] = None
 
     #: A repository of LoadState objects.
-    loadStates: typing.Dict[str, LoadState] = {}
+    loadStates: Dict[str, LoadState] = {}
 
     #: A repository of LoadCase objects.
-    loadCases: typing.Dict[str, LoadCase] = {}
+    loadCases: Dict[str, LoadCase] = {}
 
     #: A repository of PredefinedFieldState objects.
-    predefinedFieldStates: typing.Dict[str, PredefinedFieldState] = {}
+    predefinedFieldStates: Dict[str, PredefinedFieldState] = {}
 
     @abaqus_method_doc
     def __init__(
@@ -180,9 +181,9 @@ class TempDisplacementDynamicsStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC_GLOBAL,
-        maxIncrement: float = None,
+        maxIncrement: Optional[float] = None,
         scaleFactor: float = 1,
-        userDefinedInc: float = None,
+        userDefinedInc: Optional[float] = None,
         massScaling: MassScalingArray = PREVIOUS_STEP,
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
@@ -252,9 +253,9 @@ class TempDisplacementDynamicsStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC_GLOBAL,
-        maxIncrement: float = None,
+        maxIncrement: Optional[float] = None,
         scaleFactor: float = 1,
-        userDefinedInc: float = None,
+        userDefinedInc: Optional[float] = None,
         massScaling: MassScalingArray = PREVIOUS_STEP,
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,

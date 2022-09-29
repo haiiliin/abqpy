@@ -1,7 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .CDCTerm import CDCTerm
 from .CDCTermArray import CDCTermArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, POSITION, POSITIVE, RSS, SymbolicConstant
 
 
 @abaqus_class_doc

@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -16,10 +16,10 @@ class ConstrainedSketchVertex:
     """
 
     #: A tuple of Floats specifying the*X*-, **Y**-, and **Z**-coordinates of the sketch vertex.
-    coords: float = None
+    coords: Optional[float] = None
 
     @abaqus_method_doc
-    def Spot(self, point: typing.Tuple[float, ...]):
+    def Spot(self, point: Tuple[float, ...]):
         """This method creates a spot (construction point) located at the specified coordinates.
 
         .. note:: 

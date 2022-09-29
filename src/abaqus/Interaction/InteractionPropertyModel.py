@@ -1,3 +1,5 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AcousticImpedanceProp import AcousticImpedanceProp
 from .ActuatorSensorProp import ActuatorSensorProp
@@ -8,7 +10,8 @@ from .FluidCavityProperty import FluidCavityProperty
 from .FluidExchangeProperty import FluidExchangeProperty
 from .IncidentWaveProperty import IncidentWaveProperty
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ACOUSTIC, BULK_VISCOSITY, Boolean, HYDRAULIC, OFF, ON,
+                                              PLANAR, POLYNOMIAL, SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -195,8 +198,8 @@ class InteractionPropertyModel(ModelBase):
         self,
         name: str,
         definition: SymbolicConstant = HYDRAULIC,
-        fluidDensity: float = None,
-        molecularWeight: float = None,
+        fluidDensity: Optional[float] = None,
+        molecularWeight: Optional[float] = None,
         useExpansion: Boolean = OFF,
         expansionTempDep: Boolean = OFF,
         expansionDependencies: int = 0,
@@ -449,36 +452,117 @@ class InteractionPropertyModel(ModelBase):
         return interactionProperty
 
     @abaqus_method_doc
+<<<<<<< HEAD
+=======
+    def FluidInflatorProperty(
+        self,
+        name: str,
+        definition: str,
+        effectiveArea: float,
+        tankVolume: float,
+        dischargeCoefficient: Optional[float] = None,
+        dataTable: tuple = (),
+        numFluids: Optional[int] = None,
+        mixtureType: str = "",
+        inflationTime: tuple = (),
+        fluidbehaviorName: tuple = (),
+        massFraction: tuple = (),
+    ) -> FluidInflatorProperty:
+        """This method creates a FluidInflatorProperty object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].FluidInflatorProperty
+
+        .. versionadded:: 2019
+            The `FluidInflatorProperty` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the interaction property repository key.
+        definition
+            A Symbolic constant specifying the method used for modeling the flow characteristics of
+            inflators. The default value is **definition** = DUAL PRESSURE. The possible values are DUAL
+            PRESSURE, PRESSURE AND MASS, TANK TEST, and TEMPERATURE AND MASS.
+        effectiveArea
+            A Float specifying the total inflator orifice area. This argument is applicable only if
+            **definition** = DUAL PRESSURE or **definition** = PRESSURE AND MASS.
+        tankVolume
+            A Float specifying the tank volume. This argument is applicable only if
+            **definition** = DUAL PRESSURE or **definition** = TANK TEST.
+        dischargeCoefficient
+            A Float specifying the discharge coefficient. This argument is applicable only if
+            **definition** = DUAL PRESSURE or **definition** = PRESSURE AND MASS.
+        dataTable
+            A sequence of sequences of Floats specifying the items described in the "Table data"
+            section below.
+        numFluids
+            An Int specifying the number of gas species used for this inflator.
+        mixtureType
+            A Symbolic constant specifying whether to use mass fraction or the molar fraction for a
+            mixture of ideal gases. The default value is MASS FRACTION. The possible values are MASS
+            FRACTION or MOLAR FRACTION.
+        inflationTime
+            A sequence of sequences of Floats specifying the inflation time.
+        fluidbehaviorName
+            A sequence of sequences of Strings specifying fluid behavior names.
+        massFraction
+            A sequence of sequences of Floats specifying the mass fraction or the molar fraction
+            corresponding to entered fluid behavior.
+
+        Returns
+        -------
+            A FluidInflatorProperty object.
+        """
+        self.interactionProperties[name] = interactionProperty = FluidInflatorProperty(
+            name,
+            definition,
+            effectiveArea,
+            tankVolume,
+            dischargeCoefficient,
+            dataTable,
+            numFluids,
+            mixtureType,
+            inflationTime,
+            fluidbehaviorName,
+            massFraction,
+        )
+        return interactionProperty
+
+    @abaqus_method_doc
+>>>>>>> cfc3482e (Update type hints (#1762))
     def IncidentWaveProperty(
         self,
         name: str,
         definition: SymbolicConstant = PLANAR,
         propagationModel: SymbolicConstant = ACOUSTIC,
-        soundSpeed: float = None,
-        fluidDensity: float = None,
-        specificHeatRatio: float = None,
-        gravity: float = None,
-        atmosphericPressure: float = None,
-        dragCoefficient: float = None,
+        soundSpeed: Optional[float] = None,
+        fluidDensity: Optional[float] = None,
+        specificHeatRatio: Optional[float] = None,
+        gravity: Optional[float] = None,
+        atmosphericPressure: Optional[float] = None,
+        dragCoefficient: Optional[float] = None,
         dragExponent: float = 2,
         waveEffects: Boolean = ON,
-        chargeDensity: float = None,
-        chargeMass: float = None,
-        constantK1: float = None,
-        constantK2: float = None,
-        constantA: float = None,
-        constantB: float = None,
-        constantKc: float = None,
-        duration: float = None,
+        chargeDensity: Optional[float] = None,
+        chargeMass: Optional[float] = None,
+        constantK1: Optional[float] = None,
+        constantK2: Optional[float] = None,
+        constantA: Optional[float] = None,
+        constantB: Optional[float] = None,
+        constantKc: Optional[float] = None,
+        duration: Optional[float] = None,
         maximumSteps: int = 1500,
-        relativeStepControl: float = None,
-        absoluteStepControl: float = None,
+        relativeStepControl: Optional[float] = None,
+        absoluteStepControl: Optional[float] = None,
         stepControlExponent: float = 0,
         genDecayA: float = 0,
         genDecayB: float = 0,
         genDecayC: float = 0,
-        seedNumber: int = None,
-        massTNT: float = None,
+        seedNumber: Optional[int] = None,
+        massTNT: Optional[float] = None,
         massFactor: float = 1,
         lengthFactor: float = 1,
         timeFactor: float = 1,

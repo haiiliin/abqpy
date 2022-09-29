@@ -1,11 +1,11 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchDimension import ConstrainedSketchDimension
 from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
     ConstrainedSketchGeometry,
 )
-from ...UtilityAndView.abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
@@ -15,8 +15,8 @@ class AngularDimension(ConstrainedSketchDimension):
         self,
         line1: ConstrainedSketchGeometry,
         line2: ConstrainedSketchGeometry,
-        textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        textPoint: Tuple[float, ...],
+        value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension object between two

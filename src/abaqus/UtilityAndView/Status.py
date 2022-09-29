@@ -1,4 +1,4 @@
-import typing
+from typing import overload
 
 from abqpy.decorators import abaqus_function_doc
 
@@ -8,7 +8,7 @@ from abqpy.decorators import abaqus_function_doc
 
 
 @abaqus_function_doc
-@typing.overload
+@overload
 def milestone(message: str):
     """This function displays a string in the prompt area.
 
@@ -26,7 +26,7 @@ def milestone(message: str):
 
 
 @abaqus_function_doc
-@typing.overload
+@overload
 def milestone(message: str, percent: int):
     """This function displays a percentage complete message in the prompt area.
 
@@ -46,7 +46,7 @@ def milestone(message: str, percent: int):
 
 
 @abaqus_function_doc
-@typing.overload
+@overload
 def milestone(message: str, object: str, done: int, total: int):
     """This function displays a message in the prompt area indicating the number done out of a
     total. The form of the message is `operation: object nn out of nn`

@@ -1,5 +1,7 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc
@@ -18,11 +20,11 @@ class JobData:
 
     #: A SymbolicConstant specifying the analysis code. Possible values are ABAQUS_STANDARD,
     #: ABAQUS_EXPLICIT, and UNKNOWN_ANALYSIS_CODE.
-    analysisCode: SymbolicConstant = None
+    analysisCode: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the precision. Only SINGLE_PRECISION is currently
     #: supported. Possible values are DOUBLE_PRECISION and SINGLE_PRECISION.
-    precision: SymbolicConstant = None
+    precision: Optional[SymbolicConstant] = None
 
     #: A String specifying the release of the analysis code.
     version: str = ""

@@ -1,6 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactArea import ContactArea
-from ...UtilityAndView.abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import (Boolean, ELASTIC_PLASTIC, OFF, RELATIVE_SLOPE_DROP,
+                                               STRESS, SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -85,7 +88,7 @@ class GasketThicknessBehavior:
         table: tuple,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        tensileStiffnessFactor: float = None,
+        tensileStiffnessFactor: Optional[float] = None,
         type: SymbolicConstant = ELASTIC_PLASTIC,
         unloadingDependencies: int = 0,
         unloadingTemperatureDependency: Boolean = OFF,
