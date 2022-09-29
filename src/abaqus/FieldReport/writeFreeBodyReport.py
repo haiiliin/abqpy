@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_function_doc
 from ..Odb.Odb import Odb
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, SPECIFY, SymbolicConstant
 
 """This command writes a free body output report to a file. 
 
@@ -11,10 +13,10 @@ from ..UtilityAndView.abaqusConstants import *
 def writeFreeBodyReport(
     fileName: str,
     append: Boolean,
-    step: int = None,
-    frame: int = None,
+    step: Optional[int] = None,
+    frame: Optional[int] = None,
     stepFrame: SymbolicConstant = SPECIFY,
-    odb: Odb = None,
+    odb: Optional[Odb] = None,
 ):
     """This method writes a FreeBody object to a user-defined ASCII file.
 

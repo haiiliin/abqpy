@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .CompositePly import CompositePly
 
-CompositePlyArray = typing.List[CompositePly]
+CompositePlyArray = List[CompositePly]

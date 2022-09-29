@@ -1,9 +1,9 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Movie import Movie
 from ..Session.SessionBase import SessionBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import END_FRAME_TIME, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -45,11 +45,11 @@ class AnimationSession(SessionBase):
         name: str,
         fileName: str,
         startFrame: int = 0,
-        endFrame: int = None,
+        endFrame: Optional[int] = None,
         timelineStartFrame: int = 0,
-        timelineEndFrame: int = None,
+        timelineEndFrame: Optional[int] = None,
         timelineStartTime: float = 0,
-        timelineEndTime: typing.Union[SymbolicConstant, float] = END_FRAME_TIME,
+        timelineEndTime: Union[SymbolicConstant, float] = END_FRAME_TIME,
     ) -> Movie:
         """This method creates a Movie object from the contents of the specified file.
 

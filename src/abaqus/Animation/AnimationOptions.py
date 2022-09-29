@@ -1,5 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, DEFAULT, FRAME_BASED, HALF_CYCLE, LOOP,
+                                              MEDIUM, ON, SOLID, SymbolicConstant)
 from .._OptionsBase import _OptionsBase
 
 
@@ -43,7 +46,7 @@ class AnimationOptions(_OptionsBase):
 
     #: A Float specifying the maximum time for time based time history animation when
     #: **maxTimeAutoCompute** = False.
-    maxTime: float = None
+    maxTime: Optional[float] = None
 
     #: A Boolean specifying whether the animation maximum time value should be computed from
     #: the active frames when **timeHistoryMode** is set to TIME_BASED. The default value is ON.
@@ -52,11 +55,11 @@ class AnimationOptions(_OptionsBase):
     #: A Float specifying the maximum time when **timeHistoryMode** is set to TIME_BASED and the
     #: **maxTimeAutoCompute** value is True. This value is computed as the maximum time of all
     #: active frames displayed in viewports where the animation is active.
-    maxTimeAutoValue: float = None
+    maxTimeAutoValue: Optional[float] = None
 
     #: A Float specifying the minimum time for time based time history animation when
     #: **minTimeAutoCompute** = False.
-    minTime: float = None
+    minTime: Optional[float] = None
 
     #: A Boolean specifying whether the animation minimum time value should be computed from
     #: the active frames when **timeHistoryMode** is set to TIME_BASED. The default value is ON.
@@ -65,11 +68,11 @@ class AnimationOptions(_OptionsBase):
     #: A Float specifying the minimum time when **timeHistoryMode** is set to TIME_BASED and the
     #: **minTimeAutoCompute** value is True. This value is computed as the minimum time of all
     #: active frames displayed in viewports where the animation is active.
-    minTimeAutoValue: float = None
+    minTimeAutoValue: Optional[float] = None
 
     #: A Float specifying the time increment for frame selection when **timeHistoryMode** is set
     #: to TIME_BASED.
-    timeIncrement: float = None
+    timeIncrement: Optional[float] = None
 
     #: A Boolean specifying whether to use the highlight method to draw the time tracker line
     #: and symbols. The default value is ON.
@@ -130,11 +133,11 @@ class AnimationOptions(_OptionsBase):
         relativeScaling: SymbolicConstant = HALF_CYCLE,
         numScaleFactorFrames: int = 7,
         timeHistoryMode: SymbolicConstant = FRAME_BASED,
-        maxTime: float = None,
+        maxTime: Optional[float] = None,
         maxTimeAutoCompute: Boolean = ON,
-        minTime: float = None,
+        minTime: Optional[float] = None,
         minTimeAutoCompute: Boolean = ON,
-        timeIncrement: float = None,
+        timeIncrement: Optional[float] = None,
         xyUseHighlightMethod: Boolean = ON,
         xyShowLine: Boolean = ON,
         xyLineStyle: SymbolicConstant = SOLID,

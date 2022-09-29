@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AnalyticSurface import AnalyticSurface
@@ -9,7 +9,7 @@ from .OdbMeshNode import OdbMeshNode
 from .OdbPart import OdbPart
 from .OdbRigidBody import OdbRigidBody
 from .OdbSet import OdbSet
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, INPUT, ON, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -245,7 +245,7 @@ class OdbAssembly(OdbAssemblyBase):
         elements: OdbSet = OdbSet("set", ()),
         tieNodes: OdbSet = OdbSet("set", ()),
         pinNodes: OdbSet = OdbSet("set", ()),
-        analyticSurface: AnalyticSurface = None, 
+        analyticSurface: Optional[AnalyticSurface] = None, 
     ) -> OdbRigidBody:
         """This method creates a OdbRigidBody object.
 
@@ -298,7 +298,7 @@ class OdbAssembly(OdbAssemblyBase):
         return odbRigidBody
 
     @abaqus_method_doc
-    def NodeSet(self, name: str, nodes: typing.Tuple[OdbMeshNode, ...]) -> OdbSet:
+    def NodeSet(self, name: str, nodes: Tuple[OdbMeshNode, ...]) -> OdbSet:
         """This method creates a node set from an array of OdbMeshNode objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
         assembly-level sets).

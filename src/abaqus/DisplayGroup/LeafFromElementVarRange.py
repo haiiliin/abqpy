@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Leaf import Leaf
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT_MODEL, ON, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -19,11 +21,11 @@ class LeafFromElementVarRange(Leaf):
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-    leafType: SymbolicConstant = None
+    leafType: Optional[SymbolicConstant] = None
 
     #: A Float specifying the minimum value for the variable range. The default value is
     #: −3.40282346639E38.
-    minimumRange: float = None
+    minimumRange: Optional[float] = None
 
     #: A Float specifying the maximum value for the variable range. The default value is
     #: 3.40282346639e+038.
@@ -36,7 +38,7 @@ class LeafFromElementVarRange(Leaf):
     @abaqus_method_doc
     def __init__(
         self,
-        minimumRange: float = None,
+        minimumRange: Optional[float] = None,
         maximumRange: float = 3,
         insideRange: Boolean = ON,
     ):

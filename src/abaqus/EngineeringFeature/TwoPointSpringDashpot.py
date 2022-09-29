@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .SpringDashpot import SpringDashpot
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -54,7 +56,7 @@ class TwoPointSpringDashpot(SpringDashpot):
     #: dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global
     #: coordinate system. The default value is None.The **orientation** argument applies only
     #: when **axis** = FIXED_DOFS.
-    orientation: str = None
+    orientation: Optional[str] = None
 
     #: A Boolean specifying whether to apply spring behavior to the selected point pairs. The
     #: default value is OFF.At least one of the arguments **springBehavior** = ON or
@@ -82,7 +84,7 @@ class TwoPointSpringDashpot(SpringDashpot):
         axis: SymbolicConstant,
         dof1: int = 0,
         dof2: int = 0,
-        orientation: str = None,
+        orientation: Optional[str] = None,
         springBehavior: Boolean = OFF,
         dashpotBehavior: Boolean = OFF,
         springStiffness: float = 0,
@@ -147,7 +149,7 @@ class TwoPointSpringDashpot(SpringDashpot):
         self,
         dof1: int = 0,
         dof2: int = 0,
-        orientation: str = None,
+        orientation: Optional[str] = None,
         springBehavior: Boolean = OFF,
         dashpotBehavior: Boolean = OFF,
         springStiffness: float = 0,

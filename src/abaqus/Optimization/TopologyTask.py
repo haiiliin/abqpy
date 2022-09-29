@@ -1,4 +1,4 @@
-import typing
+from typing import Union, Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .DesignResponse import DesignResponse
@@ -7,7 +7,9 @@ from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
 from .StopCondition import StopCondition
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AVERAGE_EDGE_LENGTH, Boolean, DEFAULT,
+                                              GENERAL_OPTIMIZATION, MEDIUM, MODEL, NORMAL, OFF, ON,
+                                              STANDARD, SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -23,19 +25,19 @@ class TopologyTask(OptimizationTask):
     """
 
     #: A repository of DesignResponse objects.
-    designResponses: typing.Dict[str, DesignResponse] = {}
+    designResponses: Dict[str, DesignResponse] = {}
 
     #: A repository of ObjectiveFunction objects.
-    objectiveFunctions: typing.Dict[str, ObjectiveFunction] = {}
+    objectiveFunctions: Dict[str, ObjectiveFunction] = {}
 
     #: A repository of OptimizationConstraint objects.
-    optimizationConstraints: typing.Dict[str, OptimizationConstraint] = {}
+    optimizationConstraints: Dict[str, OptimizationConstraint] = {}
 
     #: A repository of GeometricRestriction objects.
-    geometricRestrictions: typing.Dict[str, GeometricRestriction] = {}
+    geometricRestrictions: Dict[str, GeometricRestriction] = {}
 
     #: A repository of StopCondition objects.
-    stopConditions: typing.Dict[str, StopCondition] = {}
+    stopConditions: Dict[str, StopCondition] = {}
 
     #: A String specifying the optimization task repository key.
     name: str
@@ -67,7 +69,7 @@ class TopologyTask(OptimizationTask):
 
     #: None or a Float specifying the mesh filter radius for mesh independence and minimum
     #: size. The default value is None.
-    filterRadius: float = None
+    filterRadius: Optional[float] = None
 
     #: A Float specifying the volume that can be removed immediately in the first design cycle.
     #: The default value is 5.0.
@@ -108,7 +110,7 @@ class TopologyTask(OptimizationTask):
     maxDensity: float = 1
 
     #: A Float specifying the minimum density in the density update. The default value is 10-3.
-    minDensity: float = None
+    minDensity: Optional[float] = None
 
     #: The SymbolicConstant MODEL or a Region object specifying the region to use for mode
     #: tracking. The default value is MODEL.
@@ -126,7 +128,7 @@ class TopologyTask(OptimizationTask):
 
     #: A Float specifying the stop criteria based on the change in objective function. The
     #: default value is 10-3.
-    objectiveFunctionDeltaStopCriteria: float = None
+    objectiveFunctionDeltaStopCriteria: Optional[float] = None
 
     #: The SymbolicConstant MODEL or a Region object specifying the region to which the
     #: optimization task is applied. The default value is MODEL.
@@ -146,7 +148,7 @@ class TopologyTask(OptimizationTask):
 
     #: None or a Region object specifying the region in which the soft elements should be
     #: deleted during optimization. The default value is None.
-    softDeletionRegion: str = None
+    softDeletionRegion: Optional[str] = None
 
     #: A Float specifying the relative material density value used to identify soft elements.
     #: Those with values below the threshold are considered for removal. For STANDARD and
@@ -154,7 +156,7 @@ class TopologyTask(OptimizationTask):
     #: MAX_SHEAR_STRAIN and MAX_ELASTOPLASTIC_STRAIN methods positive values are accepted
     #: whereas for MIN_PRINCIPAL_STRAIN and VOLUME_COMPRESSION methods negative values are
     #: accepted.
-    softDeletionThreshold: float = None
+    softDeletionThreshold: Optional[float] = None
 
     #: A SymbolicConstant specifying the size of the increment for volume modification.
     #: Possible values are DYNAMIC, VERY_SMALL, SMALL, MODERATE, MEDIUM, and LARGE. The default
@@ -163,7 +165,7 @@ class TopologyTask(OptimizationTask):
 
     #: The SymbolicConstant AVERAGE_EDGE_LENGTH or a Float specifying the stiffness mass
     #: damping for the task region. The default value is AVERAGE_EDGE_LENGTH.
-    stiffnessMassDamping: typing.Union[SymbolicConstant, float] = AVERAGE_EDGE_LENGTH
+    stiffnessMassDamping: Union[SymbolicConstant, float] = AVERAGE_EDGE_LENGTH
 
     #: An Int specifying the first design cycle used to evaluate convergence criteria. The
     #: default value is 4.
@@ -171,15 +173,15 @@ class TopologyTask(OptimizationTask):
 
     #: None or a Float specifying the structural mass damping for the task region. The default
     #: value is None.
-    structuralMassDamping: float = None
+    structuralMassDamping: Optional[float] = None
 
     #: None or a Float specifying the viscous mass damping for the task region. The default
     #: value is None.
-    viscousMassDamping: float = None
+    viscousMassDamping: Optional[float] = None
 
     #: None or a Float specifying the viscous stiffness damping for the task region. The
     #: default value is None.
-    viscousStiffnessDamping: float = None
+    viscousStiffnessDamping: Optional[float] = None
 
     #: A Boolean specifying whether the group in the design response will be evaluated using
     #: the existing algorithm or a new algorithm based on Abaqus sensitivities. The default
@@ -198,7 +200,7 @@ class TopologyTask(OptimizationTask):
         densityMoveLimit: float = 0,
         densityUpdateStrategy: SymbolicConstant = NORMAL,
         elementDensityDeltaStopCriteria: float = 0,
-        filterRadius: float = None,
+        filterRadius: Optional[float] = None,
         firstCycleDeletedVolume: float = 5,
         firstCycleDeletedVolumeTechnique: SymbolicConstant = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
@@ -208,25 +210,25 @@ class TopologyTask(OptimizationTask):
         materialInterpolationPenalty: float = 3,
         materialInterpolationTechnique: SymbolicConstant = DEFAULT,
         maxDensity: float = 1,
-        minDensity: float = None,
+        minDensity: Optional[float] = None,
         modeTrackingRegion: SymbolicConstant = MODEL,
         numDesignCycles: int = 15,
         numFulfilledStopCriteria: int = 2,
         numTrackedModes: int = 5,
-        objectiveFunctionDeltaStopCriteria: float = None,
+        objectiveFunctionDeltaStopCriteria: Optional[float] = None,
         region: SymbolicConstant = MODEL,
         softDeletionMethod: SymbolicConstant = STANDARD,
         softDeletionRadius: float = 0,
-        softDeletionRegion: str = None,
-        softDeletionThreshold: float = None,
+        softDeletionRegion: Optional[str] = None,
+        softDeletionThreshold: Optional[float] = None,
         stepSize: SymbolicConstant = MEDIUM,
-        stiffnessMassDamping: typing.Union[
+        stiffnessMassDamping: Union[
             SymbolicConstant, float
         ] = AVERAGE_EDGE_LENGTH,
         stopCriteriaDesignCycle: int = 4,
-        structuralMassDamping: float = None,
-        viscousMassDamping: float = None,
-        viscousStiffnessDamping: float = None,
+        structuralMassDamping: Optional[float] = None,
+        viscousMassDamping: Optional[float] = None,
+        viscousStiffnessDamping: Optional[float] = None,
         groupOperator: Boolean = OFF,
     ):
         """This method creates a TopologyTask object.
@@ -372,7 +374,7 @@ class TopologyTask(OptimizationTask):
         densityMoveLimit: float = 0,
         densityUpdateStrategy: SymbolicConstant = NORMAL,
         elementDensityDeltaStopCriteria: float = 0,
-        filterRadius: float = None,
+        filterRadius: Optional[float] = None,
         firstCycleDeletedVolume: float = 5,
         firstCycleDeletedVolumeTechnique: SymbolicConstant = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
@@ -382,25 +384,25 @@ class TopologyTask(OptimizationTask):
         materialInterpolationPenalty: float = 3,
         materialInterpolationTechnique: SymbolicConstant = DEFAULT,
         maxDensity: float = 1,
-        minDensity: float = None,
+        minDensity: Optional[float] = None,
         modeTrackingRegion: SymbolicConstant = MODEL,
         numDesignCycles: int = 15,
         numFulfilledStopCriteria: int = 2,
         numTrackedModes: int = 5,
-        objectiveFunctionDeltaStopCriteria: float = None,
+        objectiveFunctionDeltaStopCriteria: Optional[float] = None,
         region: SymbolicConstant = MODEL,
         softDeletionMethod: SymbolicConstant = STANDARD,
         softDeletionRadius: float = 0,
-        softDeletionRegion: str = None,
-        softDeletionThreshold: float = None,
+        softDeletionRegion: Optional[str] = None,
+        softDeletionThreshold: Optional[float] = None,
         stepSize: SymbolicConstant = MEDIUM,
-        stiffnessMassDamping: typing.Union[
+        stiffnessMassDamping: Union[
             SymbolicConstant, float
         ] = AVERAGE_EDGE_LENGTH,
         stopCriteriaDesignCycle: int = 4,
-        structuralMassDamping: float = None,
-        viscousMassDamping: float = None,
-        viscousStiffnessDamping: float = None,
+        structuralMassDamping: Optional[float] = None,
+        viscousMassDamping: Optional[float] = None,
+        viscousStiffnessDamping: Optional[float] = None,
         groupOperator: Boolean = OFF,
     ):
         """This method modifies the TopologyTask object.

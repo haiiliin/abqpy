@@ -1,9 +1,9 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Leaf import Leaf
 from ..Region.Surface import Surface
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import DEFAULT_MODEL, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -22,10 +22,10 @@ class LeafFromMeshSurfaceSets(Leaf):
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-    leafType: SymbolicConstant = None
+    leafType: Optional[SymbolicConstant] = None
 
     @abaqus_method_doc
-    def __init__(self, surfaceSets: typing.Tuple[Surface, ...]):
+    def __init__(self, surfaceSets: Tuple[Surface, ...]):
         """This method creates a Leaf object from a sequence of surface sets.
 
         .. note:: 

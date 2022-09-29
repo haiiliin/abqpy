@@ -1,7 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Interaction import Interaction
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import PRESSURE, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -68,15 +70,15 @@ class IncidentWave(Interaction):
 
     #: None or a Float specifying the initial depth of the UNDEX bubble. The default value is
     #: None.This argument is valid only when **definition** = UNDEX.
-    initialDepth: float = None
+    initialDepth: Optional[float] = None
 
     #: A Float specifying the reference magnitude.This argument is not valid when
     #: **definition** = CONWEP.
-    referenceMagnitude: float = None
+    referenceMagnitude: Optional[float] = None
 
     #: A Float specifying the time of detonation, given in total time.This argument is valid
     #: only when **definition** = CONWEP.
-    detonationTime: float = None
+    detonationTime: Optional[float] = None
 
     #: A Float specifying the magnitude scale factor. The default value is 1.0.This argument is
     #: valid only when **definition** = CONWEP.
@@ -95,9 +97,9 @@ class IncidentWave(Interaction):
         amplitude: str = "",
         imaginaryAmplitude: str = "",
         surfaceNormal: tuple = (),
-        initialDepth: float = None,
-        referenceMagnitude: float = None,
-        detonationTime: float = None,
+        initialDepth: Optional[float] = None,
+        referenceMagnitude: Optional[float] = None,
+        detonationTime: Optional[float] = None,
         magnitudeFactor: float = 1,
     ):
         """This method creates an IncidentWave object.
@@ -171,9 +173,9 @@ class IncidentWave(Interaction):
         amplitude: str = "",
         imaginaryAmplitude: str = "",
         surfaceNormal: tuple = (),
-        initialDepth: float = None,
-        referenceMagnitude: float = None,
-        detonationTime: float = None,
+        initialDepth: Optional[float] = None,
+        referenceMagnitude: Optional[float] = None,
+        detonationTime: Optional[float] = None,
         magnitudeFactor: float = 1,
     ):
         """This method modifies the IncidentWave object.
