@@ -1,5 +1,7 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc
@@ -36,4 +38,4 @@ class PredefinedFieldState:
     #: This member exists in all PredefinedFieldState objects, but different predefined fields
     #: use different subsets of the entire list of possible values depending on propagation
     #: rules.
-    status: SymbolicConstant = None
+    status: Optional[SymbolicConstant] = None

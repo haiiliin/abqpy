@@ -58,3 +58,7 @@ def raw_input(prompt: str = "") -> str:
         The input value converted to a string
     """
     return input(prompt)
+
+
+def upgradeMdb(*args: Any) -> None:
+    ...

@@ -1,7 +1,7 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import ABSOLUTE, Boolean, MODEL, OFF, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -25,16 +25,16 @@ class View:
     #: A Float specifying the width in viewport millimeters of the bounding rectangle around
     #: the viewport contents. This value does not include annotations or symbols and it is not
     #: clipped to the size of the viewport window.
-    displayedObjectScreenWidth: float = None
+    displayedObjectScreenWidth: Optional[float] = None
 
     #: A Float specifying the height in viewport millimeters of the bounding rectangle around
     #: the viewport contents. This value does not include annotations or symbols and it is not
     #: clipped to the size of the viewport window.
-    displayedObjectScreenHeight: float = None
+    displayedObjectScreenHeight: Optional[float] = None
 
     #: A tuple of Floats specifying a transformation matrix used to position the contents of
     #: the Layer within a viewport.
-    layerTransform: float = None
+    layerTransform: Optional[float] = None
 
     #: A String specifying the name of the view (also used as the repository key). Possible
     #: values are 'Front', 'Back', 'Top', 'Bottom', 'Left', 'Right', 'Iso', 'User-1', 'User-2',
@@ -297,7 +297,7 @@ class View:
     def setLayerTransform(
         self,
         layerTransform: tuple = (),
-        options: "View" = None,
+        options: Optional["View"] = None,
         drawImmediately: Boolean = False,
     ):
         """This method modifies the transformation used to position a Layer.
@@ -444,8 +444,8 @@ class View:
     @abaqus_method_doc
     def zoomRectangle(
         self,
-        point1: typing.Tuple[float, ...],
-        point2: typing.Tuple[float, ...],
+        point1: Tuple[float, ...],
+        point2: Tuple[float, ...],
         drawImmediately: Boolean = False,
     ):
         """This method fills the viewport with the graphics located within the given rectangle.

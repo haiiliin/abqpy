@@ -1,7 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, MAXIMUM, ON, SymbolicConstant, TRUE
 
 
 @abaqus_class_doc
@@ -37,11 +39,18 @@ class ShapeRotationalSymmetry(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: int = None
+    csys: Optional[int] = None
 
     #: None or a Region object specifying the main point used when **mainPointDetermination** is
     #: SPECIFY. The default value is None.
+<<<<<<< HEAD
     masterPoint: str = None
+=======
+    #:
+    #: .. versionchanged:: 2022
+    #:    The attribute `masterPoint` was renamed to `mainPoint`.
+    mainPoint: Optional[str] = None
+>>>>>>> cfc3482e (Update type hints (#1762))
 
     #: A SymbolicConstant specifying the rule for determining the master node. Possible values
     #: are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
@@ -53,7 +62,7 @@ class ShapeRotationalSymmetry(GeometricRestriction):
 
     #: A tuple of Floats representing the coordinates of a start point of the rotational
     #: symmetry.
-    startPoint: float = None
+    startPoint: Optional[float] = None
 
     #: A Float specifying the geometric tolerance in the 1-direction. The default value is
     #: 0.01.
@@ -74,11 +83,17 @@ class ShapeRotationalSymmetry(GeometricRestriction):
         clientDirection: tuple,
         region: Region,
         angle: float = 0,
+<<<<<<< HEAD
         csys: int = None,
         masterPoint: str = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
+=======
+        csys: Optional[int] = None,
+        mainPoint: Optional[str] = None,
+        mainPointDetermination: SymbolicConstant = MAXIMUM,
+>>>>>>> cfc3482e (Update type hints (#1762))
         presumeFeasibleRegionAtStart: Boolean = ON,
-        startPoint: float = None,
+        startPoint: Optional[float] = None,
         tolerance1: float = 0,
         tolerance2: float = 0,
         tolerance3: float = 0,
@@ -142,11 +157,17 @@ class ShapeRotationalSymmetry(GeometricRestriction):
     def setValues(
         self,
         angle: float = 0,
+<<<<<<< HEAD
         csys: int = None,
         masterPoint: str = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
+=======
+        csys: Optional[int] = None,
+        mainPoint: Optional[str] = None,
+        mainPointDetermination: SymbolicConstant = MAXIMUM,
+>>>>>>> cfc3482e (Update type hints (#1762))
         presumeFeasibleRegionAtStart: Boolean = ON,
-        startPoint: float = None,
+        startPoint: Optional[float] = None,
         tolerance1: float = 0,
         tolerance2: float = 0,
         tolerance3: float = 0,

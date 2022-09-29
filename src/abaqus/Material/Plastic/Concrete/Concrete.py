@@ -2,7 +2,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .FailureRatios import FailureRatios
 from .ShearRetention import ShearRetention
 from .TensionStiffening import TensionStiffening
-from ....UtilityAndView.abaqusConstants import *
+from ....UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc

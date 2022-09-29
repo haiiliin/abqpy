@@ -1,11 +1,11 @@
-import typing
+from typing import List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .MeshFace import MeshFace
 
 
 @abaqus_class_doc
-class MeshFaceArray(typing.List[MeshFace]):
+class MeshFaceArray(List[MeshFace]):
     """The MeshFaceArray is a sequence of MeshFace objects.
 
     .. note:: 
@@ -19,7 +19,11 @@ class MeshFaceArray(typing.List[MeshFace]):
     """
 
     @abaqus_method_doc
+<<<<<<< HEAD
     def __init__(self, faces: typing.List[MeshFace]):
+=======
+    def __init__(self, elemFaces: List[MeshFace]):
+>>>>>>> cfc3482e (Update type hints (#1762))
         """This method creates a MeshFaceArray object.
 
         .. note:: 

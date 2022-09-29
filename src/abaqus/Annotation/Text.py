@@ -1,8 +1,9 @@
-import typing
+from typing import Union, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Annotation import Annotation
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (BOTTOM_LEFT, Boolean, JUSTIFY_LEFT, OFF,
+                                              SymbolicConstant, TRANSPARENT)
 from .._OptionsBase import _OptionsBase
 
 
@@ -21,10 +22,10 @@ class Text(Annotation, _OptionsBase):
     """
 
     #: A Float specifying the width in millimeters of the Text object.
-    width: float = None
+    width: Optional[float] = None
 
     #: A Float specifying the height in millimeters of the Text object.
-    height: float = None
+    height: Optional[float] = None
 
     #: A String specifying the annotation repository key.
     name: str
@@ -34,7 +35,7 @@ class Text(Annotation, _OptionsBase):
 
     #: A pair of Floats specifying the **X**- and **Y**-offsets in millimeters of the Text object
     #: from **anchor**. The default value is (0, 0).
-    offset: typing.Tuple[float, ...] = (0.0, 0.0)
+    offset: Tuple[float, ...] = (0.0, 0.0)
 
     #: A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
     #: specifies the **X**- and **Y** coordinates as percentages of the viewport width and height.
@@ -53,7 +54,7 @@ class Text(Annotation, _OptionsBase):
     #: - TOP_RIGHT
     #: 
     #: The default value is BOTTOM_LEFT.
-    anchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT
+    anchor: Union[SymbolicConstant, float] = BOTTOM_LEFT
 
     #: A SymbolicConstant or a sequence of Floats specifying a point. The sequence of two
     #: Floats specifies the **X**- and **Y**-coordinates of the reference point of the Text
@@ -71,7 +72,7 @@ class Text(Annotation, _OptionsBase):
     #: - TOP_RIGHT
     #: 
     #: The default value is BOTTOM_LEFT.
-    referencePoint: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT
+    referencePoint: Union[SymbolicConstant, float] = BOTTOM_LEFT
 
     #: A Float specifying the amount of rotation in degrees about **referencePoint**. The default
     #: value is 0.0.
@@ -106,9 +107,9 @@ class Text(Annotation, _OptionsBase):
         self,
         name: str,
         text: str = "",
-        offset: typing.Tuple[float, ...] = (0.0, 0.0),
-        anchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        referencePoint: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
+        offset: Tuple[float, ...] = (0.0, 0.0),
+        anchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
+        referencePoint: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         rotationAngle: float = 0.0,
         color: str = "White",
         font: str = "-*-verdana-medium-r-normal--120-*",
@@ -215,9 +216,9 @@ class Text(Annotation, _OptionsBase):
     def setValues(
         self,
         text: str = "",
-        offset: typing.Tuple[float, ...] = (0.0, 0.0),
-        anchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        referencePoint: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
+        offset: Tuple[float, ...] = (0.0, 0.0),
+        anchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
+        referencePoint: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         rotationAngle: float = 0.0,
         color: str = "White",
         font: str = "-*-verdana-medium-r-normal--120-*",

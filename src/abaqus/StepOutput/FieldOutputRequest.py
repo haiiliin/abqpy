@@ -1,9 +1,13 @@
-from typing import Optional, Tuple
+from typing import Union, Optional, Tuple
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import (ALL, ANTIALIASING, AVERAGED_AT_NODES, Boolean,
+                                              CENTROIDAL, DEFAULT, EVERY_TIME_INCREMENT, EXCLUDE,
+                                              INCLUDE, INTEGRATION_POINTS, LAST_INCREMENT, MODEL,
+                                              NODES, OFF, ON, ONLY, PRESELECT, SPECIFIED)
 
 
 @abaqus_class_doc

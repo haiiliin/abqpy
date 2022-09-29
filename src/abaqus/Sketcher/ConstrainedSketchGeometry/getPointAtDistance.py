@@ -1,15 +1,15 @@
-import typing
+from typing import Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
-from ...UtilityAndView.abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
 class getPointAtDistance(ConstrainedSketchGeometry):
     
     @abaqus_method_doc
-    def __init__(self, point: typing.Tuple[float, ...], distance: str, percentage: Boolean = OFF):
+    def __init__(self, point: Tuple[float, ...], distance: str, percentage: Boolean = OFF):
         """This method returns a point offset along the given ConstrainedSketchGeometry from the
         given end by a specified arc length distance or a percentage of the total length of the
         ConstrainedSketchGeometry object.
@@ -27,7 +27,7 @@ class getPointAtDistance(ConstrainedSketchGeometry):
 
         Returns
         -------
-        typing.Tuple[float, ...]
+        Tuple[float, ...]
             A pair of floats representing the point along the edge.
 
         """
