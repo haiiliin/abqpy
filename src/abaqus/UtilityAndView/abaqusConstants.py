@@ -1,7 +1,10 @@
+from auto_all import start_all, end_all
 from typing import Union
 
 from .AbaqusBoolean import AbaqusBoolean
 from .SymbolicConstant import SymbolicConstant
+
+start_all()
 
 # Alias for methods type annotation
 Boolean = Union[AbaqusBoolean,bool]
@@ -2550,3 +2553,5 @@ MINIMUM_ENVELOPE = SymbolicConstant.MINIMUM_ENVELOPE
 RANGE_ALL = SymbolicConstant.RANGE_ALL
 SS = SymbolicConstant.SS
 # okay decompiling abaqusConstants.pyc
+
+end_all()
