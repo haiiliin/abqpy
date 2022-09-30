@@ -1064,7 +1064,7 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def DatumPointByCoordinate(self, coords: tuple) -> Feature:
+    def DatumPointByCoordinate(self, coords: Tuple[float,float,float]) -> Feature:
         """This method creates a Feature object and a DatumPoint object at the point defined by the
         specified coordinates.
 
