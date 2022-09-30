@@ -13,7 +13,7 @@ Creat table collections for Assembly
     .. autoclasstoc::
 
 Creat table collections for Model
-------------------------------------
+---------------------------------
 
 .. autoclass:: abaqus.TableCollection.TableCollectionModel.TableCollectionModel
     :members:
@@ -68,8 +68,6 @@ EventSeriesData
 
 .. autoclass:: abaqus.TableCollection.EventSeriesData.EventSeriesData
     :members:
-
-    .. autoclasstoc::
 
 EventSeriesType
 ~~~~~~~~~~~~~~~
