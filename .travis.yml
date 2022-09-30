@@ -13,5 +13,5 @@ install:
 # command to run tests
 script:
   - pytest
-  - sphinx-build -b html -W -D language=en docs/source docs/build/en/html
-  - sphinx-build -b html -W -D language=zh_CN docs/source docs/build/zh_CN/html
+  - sphinx-build -b html -D language=en docs/source docs/build/en/html
+  - sphinx-build -b html -D language=zh_CN docs/source docs/build/zh_CN/html
