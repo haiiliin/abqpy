@@ -1,4 +1,4 @@
-from typing import Union, Optional, Tuple
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Density.Density import Density
@@ -58,8 +58,8 @@ from .Plastic.Plastic import Plastic
 from .Plastic.Swelling.Swelling import Swelling
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
-from ..UtilityAndView.abaqusConstants import (ALLISO, Boolean, CENTROID, COEFFICIENTS, CONSTANT,
-                                              CONSTANTVOLUME, DEFAULT, ELASTIC_PLASTIC, EXPONENTIAL,
+from ..UtilityAndView.abaqusConstants import (ALLISO, Boolean, CENTROID, COEFFICIENTS, CONSTANTVOLUME, DEFAULT,
+                                              ELASTIC_PLASTIC, EXPONENTIAL,
                                               FITTED_VALUE, FORMULA, FUNG_ANISOTROPIC, GENERAL,
                                               HALF_CYCLE, IDEALGAS, INCOMPRESSIBLE, INCREMENTAL,
                                               INPUT, ISOTROPIC, LINEAR, LOGARITHMIC, LONG_TERM,

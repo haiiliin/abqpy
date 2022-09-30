@@ -1,4 +1,4 @@
-from typing import Union, Optional, Tuple
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .InteractionContactControlModel import InteractionContactControlModel
@@ -46,7 +46,7 @@ from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import (ALLOW_SUBCYCLING, ALL_NODAL_DIAMETER, AMBIENT,
                                               BLOCKING_ALL, Boolean, COMPUTED, COMPUTED_TOLERANCE,
                                               CONTACT, DEFAULT, GEOMETRY, KINEMATIC, LAGRANGIAN,
-                                              MODEL, NONE, OFF, OMIT, ON, PLANE, PRESSURE, RIGHT,
+                                              MODEL, OFF, OMIT, ON, PLANE, PRESSURE, RIGHT,
                                               SURFACE_TO_SURFACE, SymbolicConstant, TABULAR,
                                               TO_ENVIRONMENT, UNIFORM, UNSET, USE_GEOMETRY)
 
