@@ -4,8 +4,8 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Section import Section
-from ..UtilityAndView.abaqusConstants import (CONTINUUM, GASKET, GEOMETRY, SOLVER_DEFAULT, SPECIFY,
-                                              TRACTION_SEPARATION)
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import SOLVER_DEFAULT
 
 
 @abaqus_class_doc
@@ -32,7 +32,7 @@ class CohesiveSection(Section):
     #: A SymbolicConstant specifying the geometric assumption that defines the constitutive
     #: behavior of the cohesive elements. Possible values are TRACTION_SEPARATION, CONTINUUM,
     #: and GASKET.
-    response: Literal[TRACTION_SEPARATION, CONTINUUM, GASKET]
+    response: Literal[C.TRACTION_SEPARATION, C.CONTINUUM, C.GASKET]
 
     #: A String specifying the name of the material.
     material: str
@@ -42,7 +42,7 @@ class CohesiveSection(Section):
     #: default; GEOMETRY, specifying that Abaqus will compute the thickness from the nodal
     #: coordinates of the elements. SPECIFY, specifying that Abaqus will use the value given for
     #: **initialThickness** The default value is SOLVER_DEFAULT.
-    initialThicknessType: Literal[SOLVER_DEFAULT, GEOMETRY, SPECIFY] = SOLVER_DEFAULT
+    initialThicknessType: Literal[C.SOLVER_DEFAULT, C.GEOMETRY, C.SPECIFY] = SOLVER_DEFAULT
 
     #: A Float specifying the initial thickness for the section. The **initialThickness**
     #: argument applies only when **initialThicknessType** = SPECIFY. The default value is 1.0.
@@ -56,10 +56,10 @@ class CohesiveSection(Section):
     def __init__(
         self,
         name: str,
-        response: Literal[TRACTION_SEPARATION, CONTINUUM, GASKET],
+        response: Literal[C.TRACTION_SEPARATION, C.CONTINUUM, C.GASKET],
         material: str,
         initialThicknessType: Literal[
-            SOLVER_DEFAULT, GEOMETRY, SPECIFY
+            C.SOLVER_DEFAULT, C.GEOMETRY, C.SPECIFY
         ] = SOLVER_DEFAULT,
         initialThickness: float = 1,
         outOfPlaneThickness: Optional[float] = None,
@@ -110,7 +110,7 @@ class CohesiveSection(Section):
     def setValues(
         self,
         initialThicknessType: Literal[
-            SOLVER_DEFAULT, GEOMETRY, SPECIFY
+            C.SOLVER_DEFAULT, C.GEOMETRY, C.SPECIFY
         ] = SOLVER_DEFAULT,
         initialThickness: float = 1,
         outOfPlaneThickness: Optional[float] = None,
