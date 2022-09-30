@@ -9,17 +9,9 @@ from ...UtilityAndView.abaqusConstants import SymbolicConstant
 class ArcByCenterEnds(ConstrainedSketchGeometry):
     @abaqus_method_doc
     def __init__(
-<<<<<<< HEAD
-        center: typing.Tuple[float, ...],
-        point1: typing.Tuple[float, ...],
-        point2: typing.Tuple[float, ...],
-=======
-        self,
         center: Tuple[float, ...],
         point1: Tuple[float, ...],
         point2: Tuple[float, ...],
-        direction: SymbolicConstant,
->>>>>>> cfc3482e (Update type hints (#1762))
     ):
         """This method constructs an arc using a center point and two vertices. The Arc object is
         added to the geometry repository of the ConstrainedSketch object. The arc is created in

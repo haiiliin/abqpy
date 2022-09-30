@@ -200,16 +200,9 @@ class GeostaticStep(AnalysisStep):
         utol: Optional[float] = None,
         timePeriod: float = 1,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
-<<<<<<< HEAD
-        initialInc: float = None,
-        minInc: float = None,
-        maxInc: float = None,
-=======
-        maxNumInc: int = 100,
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
         maxInc: Optional[float] = None,
->>>>>>> cfc3482e (Update type hints (#1762))
     ):
         """This method creates a GeostaticStep object.
 
