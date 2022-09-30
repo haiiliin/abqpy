@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-21 00:16+0000\n"
+"POT-Creation-Date: 2022-09-30 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -634,11 +634,7 @@ msgid "From an Abaqus Scripting Interface script that is run using `abaqus pytho
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:25
-msgid "In addition, the BackwardCompatibility object provides tools to assist you in determining the deprecated commands that have been used. For example, to determine the deprecated commands used in the script createLug.py, use the following commands::2"
-msgstr ""
-
-#: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:29
-msgid "backwardCompatibility.resetDeprecatedMethodsUsed() backwardCompatibility.resetDeprecatedMembersUsed() backwardCompatibility.resetDeprecatedArgsUsed() execfile('createLug.py') print backwardCompatibility.getDeprecatedMethodsUsed() print backwardCompatibility.getDeprecatedMembersUsed() print backwardCompatibility.getDeprecatedArgsUsed()"
+msgid "In addition, the BackwardCompatibility object provides tools to assist you in determining the deprecated commands that have been used. For example, to determine the deprecated commands used in the script createLug.py, use the following commands::"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:43
@@ -723,7 +719,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedArgsUsed:22
 #: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedMethodsUsed:22
-msgid ":obj:`typing.List`\\[:class:`python:str`]"
+msgid ":obj:`List`\\[:class:`python:str`]"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedArgsUsed:10
