@@ -6,7 +6,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .RebarLayers import RebarLayers
 from .ShellSection import ShellSection
 from .TransverseShearShell import TransverseShearShell
-from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, OFF, VALUE
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, OFF
 
 
 @abaqus_class_doc
@@ -60,7 +61,7 @@ class GeneralStiffnessSection(ShellSection):
     #: is 0.5 in an Abaqus/Standard analysis and is obtained from the material definition in an
     #: Abaqus/Explicit analysis.VALUE, specifying that the Poisson's ratio used in the analysis
     #: is the value provided in **poisson**.The default value is DEFAULT.
-    poissonDefinition: Literal[VALUE, DEFAULT] = DEFAULT
+    poissonDefinition: Literal[C.VALUE, C.DEFAULT] = DEFAULT
 
     #: A Float specifying the Poisson's ratio. Possible values are −1.0 ≤ **poisson** ≤ 0.5.
     #: This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
@@ -93,7 +94,7 @@ class GeneralStiffnessSection(ShellSection):
         applyThermalStress: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        poissonDefinition: Literal[VALUE, DEFAULT] = DEFAULT,
+        poissonDefinition: Literal[C.VALUE, C.DEFAULT] = DEFAULT,
         poisson: float = 0,
         useDensity: Boolean = OFF,
         density: float = 0,
@@ -163,7 +164,7 @@ class GeneralStiffnessSection(ShellSection):
         applyThermalStress: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        poissonDefinition: Literal[VALUE, DEFAULT] = DEFAULT,
+        poissonDefinition: Literal[C.VALUE, C.DEFAULT] = DEFAULT,
         poisson: float = 0,
         useDensity: Boolean = OFF,
         density: float = 0,

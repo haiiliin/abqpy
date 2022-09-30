@@ -9,9 +9,7 @@ from ..BeamSectionProfile.BeamSectionProfileOdb import BeamSectionProfileOdb
 from ..Canvas.Displayable import Displayable
 from ..Filter.FilterOdb import FilterOdb
 from ..Material.MaterialOdb import MaterialOdb
-from ..UtilityAndView.abaqusConstants import (ANALYTIC_RIGID_SURFACE, ARC_LENGTH, AXISYMMETRIC,
-                                              DEFORMABLE_BODY, FREQUENCY, MODAL, THREE_D, TIME,
-                                              TWO_D_PLANAR)
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -29,8 +27,8 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
     def Part(
         self,
         name: str,
-        embeddedSpace: Literal[THREE_D, TWO_D_PLANAR, AXISYMMETRIC],
-        type: Literal[DEFORMABLE_BODY, ANALYTIC_RIGID_SURFACE],
+        embeddedSpace: Literal[C.THREE_D, C.TWO_D_PLANAR, C.AXISYMMETRIC],
+        type: Literal[C.DEFORMABLE_BODY, C.ANALYTIC_RIGID_SURFACE],
     ) -> OdbPart:
         """This method creates an OdbPart object. Nodes and elements are added to this object at a
         later stage.
@@ -64,7 +62,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
         self,
         name: str,
         description: str,
-        domain: Literal[TIME, FREQUENCY, ARC_LENGTH, MODAL],
+        domain: Literal[C.TIME, C.FREQUENCY, C.ARC_LENGTH, C.MODAL],
         timePeriod: float = 0,
         previousStepName: str = "",
         procedure: str = "",
