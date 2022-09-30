@@ -12,15 +12,9 @@ class DistanceDimension(ConstrainedSketchDimension):
     def __init__(
         self,
         entity1: ConstrainedSketchVertex,
-<<<<<<< HEAD
         vertex2: ConstrainedSketchVertex,
-        textPoint: typing.Tuple[float, ...],
-        value: float = None,
-=======
-        entity2: ConstrainedSketchVertex,
         textPoint: Tuple[float, ...],
         value: Optional[float] = None,
->>>>>>> cfc3482e (Update type hints (#1762))
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension object between two
