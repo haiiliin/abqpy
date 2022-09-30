@@ -41,14 +41,7 @@ class DrillControl(GeometricRestriction):
 
     #: None or a Region object specifying the master point used when **masterPointDetermination** is
     #: SPECIFY. The default value is None.
-<<<<<<< HEAD
-    masterPoint: str = None
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:    The attribute `masterPoint` was renamed to `mainPoint`.
-    mainPoint: Optional[str] = None
->>>>>>> cfc3482e (Update type hints (#1762))
+    masterPoint: Optional[str] = None
 
     #: A SymbolicConstant specifying the rule for assigning point priority. Possible values are
     #: MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
@@ -81,13 +74,8 @@ class DrillControl(GeometricRestriction):
         region: Region,
         csys: Optional[int] = None,
         drawAngle: float = 0,
-<<<<<<< HEAD
-        masterPoint: str = None,
+        masterPoint: Optional[str] = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
-        mainPoint: Optional[str] = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
->>>>>>> cfc3482e (Update type hints (#1762))
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -152,13 +140,8 @@ class DrillControl(GeometricRestriction):
         self,
         csys: Optional[int] = None,
         drawAngle: float = 0,
-<<<<<<< HEAD
-        masterPoint: str = None,
+        masterPoint: Optional[str] = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
-        mainPoint: Optional[str] = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
->>>>>>> cfc3482e (Update type hints (#1762))
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,

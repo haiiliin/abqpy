@@ -113,16 +113,6 @@ class ViewCut:
     #: default value is FIRST_FRAME.
     referenceFrame: SymbolicConstant = FIRST_FRAME
 
-<<<<<<< HEAD
-=======
-    #: A Float returning the cross-sectional area of the cut when **showFreeBodyCut** is set to
-    #: ON.
-    #:
-    #: ..versionadded:: 2018
-    #:     The `crossSectionalArea` attribute was added.
-    crossSectionalArea: Optional[float] = None
-
->>>>>>> cfc3482e (Update type hints (#1762))
     @abaqus_method_doc
     def __init__(
         self,

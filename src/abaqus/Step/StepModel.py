@@ -71,7 +71,7 @@ from ..UtilityAndView.abaqusConstants import (ABS, AC_ON, ALL, ALL_FREQUENCIES,
                                               ANALYSIS_PRODUCT_DEFAULT, AUTOMATIC, AUTOMATIC_GLOBAL,
                                               Boolean, COMPLEX, DEFAULT, DIRECT, DISPLACEMENT,
                                               FULL_NEWTON, IMPLICIT, IMPLICIT_EXPLICIT, LINEAR, LOG,
-                                              LOGARITHMIC, NONE, OFF, ON, PERIOD, PREVIOUS_STEP,
+                                              LOGARITHMIC, OFF, ON, PERIOD, PREVIOUS_STEP,
                                               PROPAGATED, RAMP, SINGLE_DIRECTION, SOLVER_DEFAULT,
                                               STEP, SUBSPACE, SymbolicConstant, TRANSIENT, VALUE,
                                               WHOLE_MODEL)
@@ -303,7 +303,7 @@ class StepModel(ModelBase):
         response: SymbolicConstant = TRANSIENT,
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        stabilizationMethod: SymbolicConstant = NONE,
+        stabilizationMethod: Optional[SymbolicConstant] = None,
         stabilizationMagnitude: Optional[float] = None,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
         maxNumInc: int = 100,
@@ -449,7 +449,7 @@ class StepModel(ModelBase):
         response: SymbolicConstant = TRANSIENT,
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        stabilizationMethod: SymbolicConstant = NONE,
+        stabilizationMethod: Optional[SymbolicConstant] = None,
         stabilizationMagnitude: Optional[float] = None,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
         maxNumInc: int = 100,
@@ -715,7 +715,7 @@ class StepModel(ModelBase):
         termsIncrement: int = 5,
         deltmx: float = 0,
         cetol: float = 0,
-        timePoints: str = NONE,
+        timePoints: Optional[str] = None,
         fatigue: Boolean = OFF,
         continueAnalysis: Boolean = OFF,
         minCycleInc: int = 100,
@@ -907,14 +907,8 @@ class StepModel(ModelBase):
         massScaling: MassScalingArray = PREVIOUS_STEP,
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
-<<<<<<< HEAD
-        userDefinedInc: float = None,
-        maintainAttributes: Boolean = False
-=======
         userDefinedInc: Optional[float] = None,
-        maintainAttributes: Boolean = False,
-        improvedDtMethod: Boolean = ON,
->>>>>>> cfc3482e (Update type hints (#1762))
+        maintainAttributes: Boolean = False
     ) -> ExplicitDynamicsStep:
         """This method creates an ExplicitDynamicsStep object.
 
@@ -1908,7 +1902,7 @@ class StepModel(ModelBase):
         response: SymbolicConstant = TRANSIENT,
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        stabilizationMethod: SymbolicConstant = NONE,
+        stabilizationMethod: Optional[SymbolicConstant] = None,
         stabilizationMagnitude: Optional[float] = None,
         creep: Boolean = ON,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
@@ -2255,7 +2249,7 @@ class StepModel(ModelBase):
         description: str = "",
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        stabilizationMethod: SymbolicConstant = NONE,
+        stabilizationMethod: Optional[SymbolicConstant] = None,
         stabilizationMagnitude: Optional[float] = None,
         adiabatic: Boolean = OFF,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
@@ -2729,15 +2723,15 @@ class StepModel(ModelBase):
         computeReducedViscousDampingMatrix: Boolean = False,
         evaluateFrequencyDependentProperties: Boolean = False,
         frequency: float = 0,
-        retainedEigenmodesMethod: SymbolicConstant = NONE,
+        retainedEigenmodesMethod: Optional[SymbolicConstant] = None,
         modeRange: Optional[SubstructureGenerateModesArray] = None,
         frequencyRange: Optional[SubstructureGenerateFrequencyArray] = None,
-        globalDampingField: SymbolicConstant = NONE,
+        globalDampingField: Optional[SymbolicConstant] = None,
         alphaDampingRatio: float = 0,
         betaDampingRatio: float = 0,
         structuralDampingRatio: float = 0,
-        viscousDampingControl: SymbolicConstant = NONE,
-        structuralDampingControl: SymbolicConstant = NONE,
+        viscousDampingControl: Optional[SymbolicConstant] = None,
+        structuralDampingControl: Optional[SymbolicConstant] = None,
     ) -> SubstructureGenerateStep:
         """This method creates a SubstructureGenerateStep object.
 
@@ -2932,7 +2926,7 @@ class StepModel(ModelBase):
         description: str = "",
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        stabilizationMethod: SymbolicConstant = NONE,
+        stabilizationMethod: Optional[SymbolicConstant] = None,
         stabilizationMagnitude: Optional[float] = None,
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
         matrixSolver: SymbolicConstant = DIRECT,

@@ -1,4 +1,4 @@
-from typing import Union, Optional, Tuple
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .InteractionContactControlModel import InteractionContactControlModel
@@ -44,8 +44,8 @@ from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import (ALLOW_SUBCYCLING, ALL_NODAL_DIAMETER, AMBIENT,
                                               BLOCKING_ALL, Boolean, COMPUTED, COMPUTED_TOLERANCE,
                                               CONTACT, DEFAULT, GEOMETRY, KINEMATIC, LAGRANGIAN,
-                                              MODEL, NONE, OFF, OMIT, ON, PLANE, PRESSURE, RIGHT,
-                                              SURFACE_TO_SURFACE, SymbolicConstant, TABULAR,
+                                              MODEL, OFF, OMIT, ON, PLANE, PRESSURE, SURFACE_TO_SURFACE,
+                                              SymbolicConstant, TABULAR,
                                               TO_ENVIRONMENT, UNIFORM, UNSET, USE_GEOMETRY)
 
 
@@ -787,28 +787,14 @@ class InteractionModel(
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-<<<<<<< HEAD
-        includedPairs: RegionPairs = None, 
-        excludedPairs: RegionPairs = None, 
-        contactPropertyAssignments: ContactPropertyAssignment = None, 
-        surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
-        surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
-        smoothingAssignments: SmoothingAssignment = None, 
-        masterSlaveAssignments: MasterSlaveAssignment = None,
-=======
         includedPairs: Optional[RegionPairs] = None, 
         excludedPairs: Optional[RegionPairs] = None, 
         contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
         surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
         surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
-        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None, 
-        smoothingAssignments: Optional[SmoothingAssignment] = None,
-        surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
-        surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None,
-        polarityAssignments: PolarityAssignments = PolarityAssignments(),
->>>>>>> cfc3482e (Update type hints (#1762))
+        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
+        smoothingAssignments: Optional[SmoothingAssignment] = None, 
+        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
     ):
         """This method creates a ContactExp object.
 
@@ -881,34 +867,17 @@ class InteractionModel(
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-<<<<<<< HEAD
-        includedPairs: RegionPairs = None, 
-        excludedPairs: RegionPairs = None, 
-        contactPropertyAssignments: ContactPropertyAssignment = None, 
-        surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
-        surfaceOffsetAssignments: SurfaceOffsetAssignment = None,
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None, 
-        masterSlaveAssignments: MasterSlaveAssignment = None,
-        initializationAssignments: InitializationAssignment = None, 
-        stabilizationAssignments: StabilizationAssignment = None, 
-        smoothingAssignments: SmoothingAssignment = None, 
-        slidingTransitionAssignments: SlidingTransitionAssignment = None, 
-=======
         includedPairs: Optional[RegionPairs] = None, 
         excludedPairs: Optional[RegionPairs] = None, 
         contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
         surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
-        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
-        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
-        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
-        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Tuple[SlidingFormulationAssignment, ...] = None,
-        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
+        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
+        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None, 
+        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 
         smoothingAssignments: Optional[SmoothingAssignment] = None, 
         slidingTransitionAssignments: Optional[SlidingTransitionAssignment] = None, 
->>>>>>> cfc3482e (Update type hints (#1762))
     ) -> ContactStd:
         """This method creates a ContactStd object.
 
@@ -1906,7 +1875,7 @@ class InteractionModel(
         slave: Region,
         sliding: SymbolicConstant,
         interactionProperty: str,
-        interferenceType: SymbolicConstant = NONE,
+        interferenceType: Optional[SymbolicConstant] = None,
         overclosure: float = 0,
         interferenceDirectionType: SymbolicConstant = COMPUTED,
         direction: tuple = (),
@@ -1914,7 +1883,7 @@ class InteractionModel(
         smooth: float = 0,
         hcrit: float = 0,
         extensionZone: float = 0,
-        adjustMethod: SymbolicConstant = NONE,
+        adjustMethod: Optional[SymbolicConstant] = None,
         adjustTolerance: float = 0,
         adjustSet: Optional[Region] = None,
         enforcement: SymbolicConstant = SURFACE_TO_SURFACE,
@@ -1929,14 +1898,8 @@ class InteractionModel(
         datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
-        surfaceSmoothing: SymbolicConstant = NONE,
-<<<<<<< HEAD
-        bondingSet: Region = None,
-=======
+        surfaceSmoothing: Optional[SymbolicConstant] = None,
         bondingSet: Optional[Region] = None,
-        handedness: SymbolicConstant = RIGHT,
-        normalAdjustment: Optional[SymbolicConstant] = None,
->>>>>>> cfc3482e (Update type hints (#1762))
     ) -> SurfaceToSurfaceContactStd:
         """This method creates a SurfaceToSurfaceContactStd object.
 

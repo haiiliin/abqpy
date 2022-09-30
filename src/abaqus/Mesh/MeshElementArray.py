@@ -4,8 +4,6 @@ from typing import List, Tuple, Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .MeshElement import MeshElement
-from ..BasicGeometry.EdgeArray import EdgeArray
-from ..BasicGeometry.FaceArray import FaceArray
 
 
 @abaqus_class_doc

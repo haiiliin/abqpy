@@ -1,5 +1,3 @@
-from typing import Optional
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import (ADVANCING_FRONT, Boolean, HEX, OFF, ON,
                                               QUAD_DOMINATED, SymbolicConstant)
@@ -27,10 +25,6 @@ class MesherOptions:
         quadAlgorithm: SymbolicConstant = ADVANCING_FRONT,
         allowMapped: Boolean = OFF,
         minTransition: Boolean = ON,
-<<<<<<< HEAD
-=======
-        guiPreferredElements: Optional[SymbolicConstant] = None,
->>>>>>> cfc3482e (Update type hints (#1762))
     ):
         """This method modifies the MesherOptions object.
 
