@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .SteadyStateModalFrequency import SteadyStateModalFrequency
 
-SteadyStateModalFrequencyArray = typing.List[SteadyStateModalFrequency]
+SteadyStateModalFrequencyArray = List[SteadyStateModalFrequency]

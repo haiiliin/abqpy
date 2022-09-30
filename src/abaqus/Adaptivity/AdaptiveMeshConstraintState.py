@@ -1,5 +1,7 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc
@@ -19,7 +21,7 @@ class AdaptiveMeshConstraintState:
 
     #: A SymbolicConstant specifying the propagation state of the amplitude reference. Possible
     #: values are UNSET, SET, UNCHANGED, FREED, and MODIFIED.
-    amplitudeState: SymbolicConstant = None
+    amplitudeState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the AdaptiveMeshConstraintState
     #: object. Possible values are:
@@ -36,7 +38,7 @@ class AdaptiveMeshConstraintState:
     #: - MODIFIED_FROM_BASE_STATE
     #: - DEACTIVATED_FROM_BASE_STATE
     #: - BUILT_INTO_MODES
-    status: SymbolicConstant = None
+    status: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the amplitude reference. The String is empty if the
     #: adaptive mesh constraint has no amplitude reference.
@@ -45,8 +47,8 @@ class AdaptiveMeshConstraintState:
     @abaqus_method_doc
     def __init__(
         self,
-        amplitudeState: SymbolicConstant = None,
-        status: SymbolicConstant = None,
+        amplitudeState: Optional[SymbolicConstant] = None,
+        status: Optional[SymbolicConstant] = None,
         amplitude: str = "",
     ):
         """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary

@@ -1,3 +1,5 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .CompositePly import CompositePly
 from .CompositePlyArray import CompositePlyArray
@@ -8,7 +10,9 @@ from ..Section.CompositeShellSection import CompositeShellSection
 from ..Section.GeometryShellSection import GeometryShellSection
 from ..Section.HomogeneousShellSection import HomogeneousShellSection
 from ..Section.SectionLayerArray import SectionLayerArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AXIS_1, Boolean, DEFAULT, GLOBAL, GRADIENT,
+                                              NO_IDEALIZATION, OFF, ROTATION_NONE, SHELL, SIMPSON,
+                                              SymbolicConstant, UNIFORM)
 
 
 @abaqus_class_doc
@@ -184,7 +188,7 @@ class CompositeLayup:
         axis: SymbolicConstant = AXIS_1,
         angle: float = 0,
         additionalRotationType: SymbolicConstant = ROTATION_NONE,
-        orientation: SymbolicConstant = None,
+        orientation: Optional[SymbolicConstant] = None,
         additionalRotationField: str = "",
     ) -> CompositePly:
         """This method creates a CompositePly object.
@@ -292,8 +296,8 @@ class CompositeLayup:
         integrationRule: SymbolicConstant = SIMPSON,
         temperature: SymbolicConstant = GRADIENT,
         idealization: SymbolicConstant = NO_IDEALIZATION,
-        nTemp: int = None,
-        thicknessModulus: float = None,
+        nTemp: Optional[int] = None,
+        thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         layupName: str = "",
@@ -409,8 +413,8 @@ class CompositeLayup:
         poisson: float = 0,
         integrationRule: SymbolicConstant = SIMPSON,
         temperature: SymbolicConstant = GRADIENT,
-        nTemp: int = None,
-        thicknessModulus: float = None,
+        nTemp: Optional[int] = None,
+        thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
         density: float = 0,
     ) -> GeometryShellSection:
@@ -506,8 +510,8 @@ class CompositeLayup:
         integrationRule: SymbolicConstant = SIMPSON,
         temperature: SymbolicConstant = GRADIENT,
         idealization: SymbolicConstant = NO_IDEALIZATION,
-        nTemp: int = None,
-        thicknessModulus: float = None,
+        nTemp: Optional[int] = None,
+        thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         thicknessField: str = "",

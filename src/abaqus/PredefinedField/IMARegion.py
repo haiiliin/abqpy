@@ -1,3 +1,5 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc
 from ..Region.Region import Region
 
@@ -21,4 +23,4 @@ class IMARegion:
     #: A tuple of Floats specifying the volume fractions, per material instance name. The
     #: length of the tuple corresponds to the number of material instance names, as established
     #: by the assigned Eulerian section.
-    fractionList: float = None
+    fractionList: Optional[float] = None

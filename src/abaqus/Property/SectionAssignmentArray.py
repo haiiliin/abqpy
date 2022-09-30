@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .SectionAssignment import SectionAssignment
 
-SectionAssignmentArray = typing.List[SectionAssignment]
+SectionAssignmentArray = List[SectionAssignment]

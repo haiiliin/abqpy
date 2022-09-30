@@ -1,4 +1,4 @@
-import typing
+from typing import Union, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AcousticInfiniteSection import AcousticInfiniteSection
@@ -21,7 +21,10 @@ from .SurfaceSection import SurfaceSection
 from .TrussSection import TrussSection
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
 from ..Odb.OdbBase import OdbBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT, DEFAULT, DOF_MODE, FULLY, GRADIENT,
+                                              LINEAR, NONE, NO_IDEALIZATION, OFF, ON, SIMPSON,
+                                              SOLVER_DEFAULT, SymbolicConstant, UNIFORM,
+                                              UNSPECIFIED)
 
 
 @abaqus_class_doc
@@ -110,16 +113,16 @@ class SectionOdb(OdbBase):
         thermalExpansion: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        density: float = None,
-        referenceTemperature: float = None,
+        density: Optional[float] = None,
+        referenceTemperature: Optional[float] = None,
         temperatureVar: SymbolicConstant = LINEAR,
         alphaDamping: float = 0,
         betaDamping: float = 0,
         compositeDamping: float = 0,
         useFluidInertia: Boolean = OFF,
         submerged: SymbolicConstant = FULLY,
-        fluidMassDensity: float = None,
-        crossSectionRadius: float = None,
+        fluidMassDensity: Optional[float] = None,
+        crossSectionRadius: Optional[float] = None,
         lateralMassCoef: float = 1,
         axialMassCoef: float = 0,
         massOffsetX: float = 0,
@@ -128,8 +131,8 @@ class SectionOdb(OdbBase):
         material: str = "",
         table: tuple = (),
         outputPts: tuple = (),
-        centroid: typing.Tuple[float, ...] = (),
-        shearCenter: typing.Tuple[float, ...] = (),
+        centroid: Tuple[float, ...] = (),
+        shearCenter: Tuple[float, ...] = (),
         profileEnd: str = "",
     ) -> BeamSection:
         """This method creates a BeamSection object.
@@ -275,7 +278,7 @@ class SectionOdb(OdbBase):
         material: str,
         initialThicknessType: SymbolicConstant = SOLVER_DEFAULT,
         initialThickness: float = 1,
-        outOfPlaneThickness: float = None,
+        outOfPlaneThickness: Optional[float] = None,
     ) -> CohesiveSection:
         """This method creates a CohesiveSection object.
 
@@ -340,8 +343,8 @@ class SectionOdb(OdbBase):
         integrationRule: SymbolicConstant = SIMPSON,
         temperature: SymbolicConstant = GRADIENT,
         idealization: SymbolicConstant = NO_IDEALIZATION,
-        nTemp: int = None,
-        thicknessModulus: float = None,
+        nTemp: Optional[int] = None,
+        thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         layupName: str = "",
@@ -495,20 +498,20 @@ class SectionOdb(OdbBase):
         rotationalType: SymbolicConstant = NONE,
         translationalType: SymbolicConstant = NONE,
         integration: SymbolicConstant = UNSPECIFIED,
-        u1ReferenceLength: float = None,
-        u2ReferenceLength: float = None,
-        u3ReferenceLength: float = None,
-        ur1ReferenceAngle: float = None,
-        ur2ReferenceAngle: float = None,
-        ur3ReferenceAngle: float = None,
-        massPerLength: float = None,
-        contactAngle: float = None,
+        u1ReferenceLength: Optional[float] = None,
+        u2ReferenceLength: Optional[float] = None,
+        u3ReferenceLength: Optional[float] = None,
+        ur1ReferenceAngle: Optional[float] = None,
+        ur2ReferenceAngle: Optional[float] = None,
+        ur3ReferenceAngle: Optional[float] = None,
+        massPerLength: Optional[float] = None,
+        contactAngle: Optional[float] = None,
         materialFlowFactor: float = 1,
         regularize: Boolean = ON,
         defaultTolerance: Boolean = ON,
         regularization: float = 0,
         extrapolation: SymbolicConstant = CONSTANT,
-        behaviorOptions: ConnectorBehaviorOptionArray = None,
+        behaviorOptions: Optional[ConnectorBehaviorOptionArray] = None,
     ) -> ConnectorSection:
         """This method creates a ConnectorSection object.
 
@@ -664,9 +667,9 @@ class SectionOdb(OdbBase):
         material: str,
         crossSection: float = 1,
         initialGap: float = 0,
-        initialThickness: typing.Union[SymbolicConstant, float] = DEFAULT,
+        initialThickness: Union[SymbolicConstant, float] = DEFAULT,
         initialVoid: float = 0,
-        stabilizationStiffness: typing.Union[SymbolicConstant, float] = DEFAULT,
+        stabilizationStiffness: Union[SymbolicConstant, float] = DEFAULT,
     ) -> GasketSection:
         """This method creates a GasketSection object.
 
@@ -722,7 +725,7 @@ class SectionOdb(OdbBase):
         self,
         name: str,
         stiffnessMatrix: tuple,
-        referenceTemperature: float = None,
+        referenceTemperature: Optional[float] = None,
         applyThermalStress: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -817,8 +820,8 @@ class SectionOdb(OdbBase):
         integrationRule: SymbolicConstant = SIMPSON,
         temperature: SymbolicConstant = GRADIENT,
         idealization: SymbolicConstant = NO_IDEALIZATION,
-        nTemp: int = None,
-        thicknessModulus: float = None,
+        nTemp: Optional[int] = None,
+        thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
         density: float = 0,
         thicknessField: str = "",

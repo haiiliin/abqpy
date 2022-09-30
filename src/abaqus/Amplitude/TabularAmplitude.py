@@ -1,9 +1,9 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Amplitude import Amplitude
 from .BaselineCorrection import BaselineCorrection
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SOLVER_DEFAULT, STEP, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -39,7 +39,7 @@ class TabularAmplitude(Amplitude):
     #: Possible float values are between 0 and 0.5. If **smooth** = SOLVER_DEFAULT, the default
     #: degree of smoothing will be determined by the solver. The default value is
     #: SOLVER_DEFAULT.
-    smooth: typing.Union[SymbolicConstant, float] = SOLVER_DEFAULT
+    smooth: Union[SymbolicConstant, float] = SOLVER_DEFAULT
 
     #: A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
     #: and TOTAL. The default value is STEP.
@@ -50,7 +50,7 @@ class TabularAmplitude(Amplitude):
         self,
         name: str,
         data: tuple,
-        smooth: typing.Union[SymbolicConstant, float] = SOLVER_DEFAULT,
+        smooth: Union[SymbolicConstant, float] = SOLVER_DEFAULT,
         timeSpan: SymbolicConstant = STEP,
     ):
         """This method creates a TabularAmplitude object.
@@ -92,7 +92,7 @@ class TabularAmplitude(Amplitude):
     @abaqus_method_doc
     def setValues(
         self,
-        smooth: typing.Union[SymbolicConstant, float] = SOLVER_DEFAULT,
+        smooth: Union[SymbolicConstant, float] = SOLVER_DEFAULT,
         timeSpan: SymbolicConstant = STEP,
     ):
         """This method modifies the TabularAmplitude object.

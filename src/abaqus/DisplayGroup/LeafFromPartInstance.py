@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Leaf import Leaf
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import DEFAULT_MODEL, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -19,7 +21,7 @@ class LeafFromPartInstance(Leaf):
 
     #: A SymbolicConstant specifying the leaf type. Possible values are EMPTY_LEAF,
     #: DEFAULT_MODEL, ALL_ELEMENTS, ALL_NODES, and ALL_SURFACES.
-    leafType: SymbolicConstant = None
+    leafType: Optional[SymbolicConstant] = None
 
     #: A sequence of Strings specifying the names of the part instances.
     partInstanceName: tuple

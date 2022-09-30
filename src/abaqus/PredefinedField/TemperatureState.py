@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc
 from .PredefinedFieldState import PredefinedFieldState
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, NONE, OFF, SymbolicConstant, UNSET
 
 
 @abaqus_class_doc
@@ -19,7 +21,7 @@ class TemperatureState(PredefinedFieldState):
 
     #: A SymbolicConstant specifying the propagation state of the **fileName** member. Possible
     #: values are UNSET, SET, and UNCHANGED.
-    fileNameState: SymbolicConstant = None
+    fileNameState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant or an Int specifying the first step from which temperature values are
     #: to be read. This argument is valid only when **distribution** = FROM_FILE or
@@ -29,37 +31,37 @@ class TemperatureState(PredefinedFieldState):
 
     #: A SymbolicConstant specifying the propagation state of the **beginStep** member. Possible
     #: values are UNSET, SET, and UNCHANGED.
-    beginStepState: SymbolicConstant = None
+    beginStepState: Optional[SymbolicConstant] = None
 
     #: None or an Int specifying the first increment of the step set in **beginStep** or the
     #: SymbolicConstants STEP_START or STEP_END. This argument is valid only when
     #: **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
     #: default value is None.
-    beginIncrement: SymbolicConstant = None
+    beginIncrement: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **beginIncrement** member.
     #: Possible values are UNSET, SET, and UNCHANGED.
-    beginIncrementState: SymbolicConstant = None
+    beginIncrementState: Optional[SymbolicConstant] = None
 
     #: None or an Int specifying the last step from which temperature values are to be read or
     #: the SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid only when
     #: **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
     #: default value is None.
-    endStep: SymbolicConstant = None
+    endStep: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **endStep** member. Possible
     #: values are UNSET, SET, and UNCHANGED.
-    endStepState: SymbolicConstant = None
+    endStepState: Optional[SymbolicConstant] = None
 
     #: None or an Int specifying the last increment of the step set in **endStep** or the
     #: SymbolicConstants STEP_START and STEP_END. This argument is valid only when
     #: **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
     #: default value is None.
-    endIncrement: SymbolicConstant = None
+    endIncrement: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **endIncrement** member.
     #: Possible values are UNSET, SET, and UNCHANGED.
-    endIncrementState: SymbolicConstant = None
+    endIncrementState: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying that temperatures in second-order elements are to be interpolated
     #: from corner node temperatures. This argument is valid only when
@@ -68,11 +70,11 @@ class TemperatureState(PredefinedFieldState):
 
     #: A SymbolicConstant specifying the propagation state of the **midside** member. Possible
     #: values are UNSET, SET, and UNCHANGED.
-    midsideState: SymbolicConstant = None
+    midsideState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **amplitudeState** member.
     #: Possible values are UNSET, SET, and UNCHANGED.
-    amplitudeState: SymbolicConstant = None
+    amplitudeState: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the file from which the temperature values are to be
     #: read when **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED.
@@ -86,7 +88,7 @@ class TemperatureState(PredefinedFieldState):
 
     #: A tuple of SymbolicConstants specifying the propagation state of each item of the
     #: **magnitudes** member. Possible values are UNSET, SET, and UNCHANGED.
-    magnitudesState: SymbolicConstant = None
+    magnitudesState: Optional[SymbolicConstant] = None
 
     #: A tuple of Floats specifying the temperature values when **distributionType** = UNIFORM or
     #: **distributionType** = FIELD. The value of the **magnitudes** argument is a function of the
@@ -123,4 +125,4 @@ class TemperatureState(PredefinedFieldState):
     #: This member exists in all PredefinedFieldState objects, but different predefined fields
     #: use different subsets of the entire list of possible values depending on propagation
     #: rules.
-    status: SymbolicConstant = None
+    status: Optional[SymbolicConstant] = None

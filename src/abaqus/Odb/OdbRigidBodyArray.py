@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .OdbRigidBody import OdbRigidBody
 
-OdbRigidBodyArray = typing.List[OdbRigidBody]
+OdbRigidBodyArray = List[OdbRigidBody]

@@ -3,7 +3,7 @@ from .DiagnosticPrint import DiagnosticPrint
 from .Monitor import Monitor
 from .Restart import Restart
 from ..Step.StepBase import StepBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, SymbolicConstant
 
 
 @abaqus_class_doc

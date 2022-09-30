@@ -1,4 +1,6 @@
-import typing
+from __future__ import annotations
+
+from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ErrorIndicatorResult import ErrorIndicatorResult
@@ -20,7 +22,7 @@ class AdaptivityIteration:
     #: A repository of RuleResult objects specifying the calculated results from sizing
     #: functions corresponding to the RemeshingRule objects for this iteration of an adaptivity
     #: process.
-    ruleResults: typing.Dict[str, RuleResult] = {}
+    ruleResults: Dict[str, RuleResult] = {}
 
     #: An Int specifying the sequence number for this iteration in the adaptivity process.
     iteration: int
@@ -112,7 +114,7 @@ class AdaptivityIteration:
     def RuleResult(
         self,
         name: str,
-        indicatorResults: typing.Dict[str, ErrorIndicatorResult],
+        indicatorResults: Dict[str, ErrorIndicatorResult],
         numElems: int,
         minSizeElemCount: int,
         satisfiedVars: tuple = (),

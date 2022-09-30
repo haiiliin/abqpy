@@ -1,3 +1,5 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Displayable import Displayable
 from ..DisplayOptions.AssemblyDisplayOptions import AssemblyDisplayOptions
@@ -22,7 +24,7 @@ class Layer:
     displayedObject: Displayable = Displayable()
 
     #: A :py:class:`~abaqus.UtilityAndView.View.View` object specifying the object that controls viewing of the layer.
-    view: View = None
+    view: Optional[View] = None
 
     #: An :py:class:`~abaqus.OdbDisplay.OdbDisplay.OdbDisplay` object specifying the display options for the Odb object.
     odbDisplay: OdbDisplay = OdbDisplay()

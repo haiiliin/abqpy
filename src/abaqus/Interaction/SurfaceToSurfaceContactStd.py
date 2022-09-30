@@ -1,10 +1,12 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Interaction import Interaction
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTED, OFF, OMIT, ON, SELECTIVE, SURFACE_TO_SURFACE,
+                                              SymbolicConstant,
+                                              TWO_CONFIG)
 
 
 @abaqus_class_doc
@@ -63,7 +65,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: - UNIFORM.
     #: 
     #: The default value is NONE.
-    interferenceType: SymbolicConstant = NONE
+    interferenceType: Optional[SymbolicConstant] = None
 
     #: A Float specifying the maximum overclosure distance allowed. This argument applies only
     #: when **interferenceType** = UNIFORM. The default value is 0.0.
@@ -105,13 +107,13 @@ class SurfaceToSurfaceContactStd(Interaction):
 
     #: A SymbolicConstant specifying the adjust method. Possible values are NONE, OVERCLOSED,
     #: TOLERANCE, and SET. The default value is NONE.
-    adjustMethod: SymbolicConstant = NONE
+    adjustMethod: Optional[SymbolicConstant] = None
 
     #: A Float specifying the adjust tolerance. The default value is 0.0.
     adjustTolerance: float = 0
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the Set object to which the adjustment is to be applied.
-    adjustSet: Region = None
+    adjustSet: Optional[Region] = None
 
     #: A SymbolicConstant specifying the discretization method. Possible values are
     #: NODE_TO_SURFACE and SURFACE_TO_SURFACE. The default value is SURFACE_TO_SURFACE.
@@ -133,43 +135,43 @@ class SurfaceToSurfaceContactStd(Interaction):
 
     #: A SymbolicConstant or a Float specifying the initial clearance at regions of contact.
     #: Possible values are OMIT and COMPUTED. The default value is OMIT.
-    initialClearance: typing.Union[SymbolicConstant, float] = OMIT
+    initialClearance: Union[SymbolicConstant, float] = OMIT
 
     #: None or a sequence of Floats specifying the half thread angle used for bolt clearance.
     #: The default value is None.
-    halfThreadAngle: str = None
+    halfThreadAngle: Optional[str] = None
 
     #: None or a sequence of Floats specifying the pitch used for bolt clearance. The default
     #: value is None.
-    pitch: str = None
+    pitch: Optional[str] = None
 
     #: The SymbolicConstant COMPUTED or a Float specifying the major diameter of the bolt used
     #: for bolt clearance. The default value is COMPUTED.
-    majorBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED
+    majorBoltDiameter: Union[SymbolicConstant, float] = COMPUTED
 
     #: The SymbolicConstant COMPUTED or a Float specifying the mean diameter of the bolt used
     #: for bolt clearance. The default value is COMPUTED.
-    meanBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED
+    meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED
 
     #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the bolt hole when specifying bolt
     #: clearance.
-    datumAxis: DatumAxis = None
+    datumAxis: Optional[DatumAxis] = None
 
     #: A Boolean specifying whether to reverse the bolt clearance direction given by the datum
     #: axis. The default value is OFF.
     useReverseDatumAxis: Boolean = OFF
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the contact region for which clearance is specified.
-    clearanceRegion: Region = None
+    clearanceRegion: Optional[Region] = None
 
     #: A SymbolicConstant specifying whether to use surface smoothing for geometric surfaces in
     #: SurfaceToSurfaceContactStd interactions. Possible values are AUTOMATIC and NONE. The
     #: default value is NONE.
-    surfaceSmoothing: SymbolicConstant = NONE
+    surfaceSmoothing: Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the slave node sub-set for bonding, used only when the
     #: contact property CohesiveBehavior option specifies use.
-    bondingSet: Region = None
+    bondingSet: Optional[Region] = None
 
     @abaqus_method_doc
     def __init__(
@@ -180,7 +182,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         slave: Region,
         sliding: SymbolicConstant,
         interactionProperty: str,
-        interferenceType: SymbolicConstant = NONE,
+        interferenceType: Optional[SymbolicConstant] = None,
         overclosure: float = 0,
         interferenceDirectionType: SymbolicConstant = COMPUTED,
         direction: tuple = (),
@@ -188,23 +190,23 @@ class SurfaceToSurfaceContactStd(Interaction):
         smooth: float = 0,
         hcrit: float = 0,
         extensionZone: float = 0,
-        adjustMethod: SymbolicConstant = NONE,
+        adjustMethod: Optional[SymbolicConstant] = None,
         adjustTolerance: float = 0,
-        adjustSet: Region = None,
+        adjustSet: Optional[Region] = None,
         enforcement: SymbolicConstant = SURFACE_TO_SURFACE,
         thickness: Boolean = ON,
         contactControls: str = "",
         tied: Boolean = OFF,
-        initialClearance: typing.Union[SymbolicConstant, float] = OMIT,
-        halfThreadAngle: str = None,
-        pitch: str = None,
-        majorBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED,
-        meanBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED,
-        datumAxis: DatumAxis = None, 
+        initialClearance: Union[SymbolicConstant, float] = OMIT,
+        halfThreadAngle: Optional[str] = None,
+        pitch: Optional[str] = None,
+        majorBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
-        clearanceRegion: Region = None,
-        surfaceSmoothing: SymbolicConstant = NONE,
-        bondingSet: Region = None,
+        clearanceRegion: Optional[Region] = None,
+        surfaceSmoothing: Optional[SymbolicConstant] = None,
+        bondingSet: Optional[Region] = None,
     ):
         """This method creates a SurfaceToSurfaceContactStd object.
 
@@ -339,7 +341,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     @abaqus_method_doc
     def setValues(
         self,
-        interferenceType: SymbolicConstant = NONE,
+        interferenceType: Optional[SymbolicConstant] = None,
         overclosure: float = 0,
         interferenceDirectionType: SymbolicConstant = COMPUTED,
         direction: tuple = (),
@@ -347,23 +349,23 @@ class SurfaceToSurfaceContactStd(Interaction):
         smooth: float = 0,
         hcrit: float = 0,
         extensionZone: float = 0,
-        adjustMethod: SymbolicConstant = NONE,
+        adjustMethod: Optional[SymbolicConstant] = None,
         adjustTolerance: float = 0,
-        adjustSet: Region = None,
+        adjustSet: Optional[Region] = None,
         enforcement: SymbolicConstant = SURFACE_TO_SURFACE,
         thickness: Boolean = ON,
         contactControls: str = "",
         tied: Boolean = OFF,
-        initialClearance: typing.Union[SymbolicConstant, float] = OMIT,
-        halfThreadAngle: str = None,
-        pitch: str = None,
-        majorBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED,
-        meanBoltDiameter: typing.Union[SymbolicConstant, float] = COMPUTED,
-        datumAxis: DatumAxis = None, 
+        initialClearance: Union[SymbolicConstant, float] = OMIT,
+        halfThreadAngle: Optional[str] = None,
+        pitch: Optional[str] = None,
+        majorBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
-        clearanceRegion: Region = None,
-        surfaceSmoothing: SymbolicConstant = NONE,
-        bondingSet: Region = None,
+        clearanceRegion: Optional[Region] = None,
+        surfaceSmoothing: Optional[SymbolicConstant] = None,
+        bondingSet: Optional[Region] = None,
     ):
         """This method modifies the data for an existing SurfaceToSurfaceContactStd object in the
         step where it is created.
@@ -469,7 +471,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         self,
         stepName: str,
         interactionProperty: str = "",
-        interferenceType: SymbolicConstant = NONE,
+        interferenceType: Optional[SymbolicConstant] = None,
         overclosure: float = 0,
         interferenceDirectionType: SymbolicConstant = COMPUTED,
         direction: tuple = (),

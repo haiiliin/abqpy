@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .DesignResponse import DesignResponse
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import ADD, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -23,7 +25,7 @@ class CombinedTermDesignResponse(DesignResponse):
 
     #: None or a sequence of Floats specifying the maximum radius of influence used when
     #: **method** is FILTER. The default value is None.
-    filterMaxRadius: str = None
+    filterMaxRadius: Optional[str] = None
 
     #: A Float specifying the exponent used when **method** is FILTER. The default value is 1.0.
     filterExponent: float = 1
@@ -35,7 +37,7 @@ class CombinedTermDesignResponse(DesignResponse):
     #: None or a sequence of Floats specifying the upper bound of the vector value used when
     #: **method** is CUT_OFF. All values greater than the **highCutOff** are set to the
     #: **highCutOff** value. The default value is None.
-    highCutOff: str = None
+    highCutOff: Optional[str] = None
 
     #: A Float specifying the lower bound of the vector value used when **method** is CUT_OFF.
     #: All values less than the **lowCutOff** are treated as 0. The default value is 0.0.
@@ -89,10 +91,10 @@ class CombinedTermDesignResponse(DesignResponse):
         self,
         name: str,
         terms: tuple,
-        filterMaxRadius: str = None,
+        filterMaxRadius: Optional[str] = None,
         filterExponent: float = 1,
         filterRadiusReduction: float = 0,
-        highCutOff: str = None,
+        highCutOff: Optional[str] = None,
         lowCutOff: float = 0,
         method: SymbolicConstant = ADD,
         weights: tuple = (),
@@ -176,10 +178,10 @@ class CombinedTermDesignResponse(DesignResponse):
     @abaqus_method_doc
     def setValues(
         self,
-        filterMaxRadius: str = None,
+        filterMaxRadius: Optional[str] = None,
         filterExponent: float = 1,
         filterRadiusReduction: float = 0,
-        highCutOff: str = None,
+        highCutOff: Optional[str] = None,
         lowCutOff: float = 0,
         method: SymbolicConstant = ADD,
         weights: tuple = (),
