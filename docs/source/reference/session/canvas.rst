@@ -43,15 +43,11 @@ Canvas
 .. autoclass:: abaqus.Canvas.Canvas.Canvas
     :members:
 
-    .. autoclasstoc::
-
 Displayable
 ~~~~~~~~~~~
 
 .. autoclass:: abaqus.Canvas.Displayable.Displayable
     :members:
-
-    .. autoclasstoc::
 
 DrawingArea
 ~~~~~~~~~~~
