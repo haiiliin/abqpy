@@ -61,14 +61,7 @@ class ExpInitialization(ContactInitialization):
     #: included in the initial clearance specification. This argument is not valid when
     #: **overclosureType** = INTERFERENCE and if **openingTolerance** or **overclosureTolerance** is
     #: specified. The default value is None.
-<<<<<<< HEAD
-    slaveNodesetName: str = None
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:     The attribute `slaveNodesetName` was renamed to `secondaryNodesetName`.
-    secondaryNodesetName: Optional[str] = None
->>>>>>> cfc3482e (Update type hints (#1762))
+    slaveNodesetName: Optional[str] = None
 
     #: A Float specifying the fraction of the step time (between 0.0 and 1.0) in which the
     #: interference fit has to be solved. The default value is 1.0. This argument is valid only
@@ -85,11 +78,7 @@ class ExpInitialization(ContactInitialization):
         openingTolerance: Optional[float] = None,
         overclosureTolerance: Optional[float] = None,
         adjustNodalCoords: Boolean = True,
-<<<<<<< HEAD
-        slaveNodesetName: str = None,
-=======
-        secondaryNodesetName: Optional[str] = None,
->>>>>>> cfc3482e (Update type hints (#1762))
+        slaveNodesetName: Optional[str] = None,
         stepFraction: float = 1,
     ):
         """This method creates an ExpInitialization object.
@@ -156,11 +145,7 @@ class ExpInitialization(ContactInitialization):
         openingTolerance: Optional[float] = None,
         overclosureTolerance: Optional[float] = None,
         adjustNodalCoords: Boolean = True,
-<<<<<<< HEAD
-        slaveNodesetName: str = None,
-=======
-        secondaryNodesetName: Optional[str] = None,
->>>>>>> cfc3482e (Update type hints (#1762))
+        slaveNodesetName: Optional[str] = None,
         stepFraction: float = 1,
     ):
         """This method modifies the ExpInitialization object.

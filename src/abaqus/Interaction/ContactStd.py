@@ -12,12 +12,7 @@ from .StabilizationAssignment import StabilizationAssignment
 from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
 from .SurfaceOffsetAssignment import SurfaceOffsetAssignment
 from .SurfaceThicknessAssignment import SurfaceThicknessAssignment
-<<<<<<< HEAD
-from ..UtilityAndView.abaqusConstants import *
-=======
-from .SurfaceVertexCriteriaAssignment import SurfaceVertexCriteriaAssignment
 from ..UtilityAndView.abaqusConstants import Boolean, GLOBAL, NO, OFF, ON, SymbolicConstant
->>>>>>> cfc3482e (Update type hints (#1762))
 
 
 @abaqus_class_doc
@@ -105,34 +100,17 @@ class ContactStd(Interaction):
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-<<<<<<< HEAD
-        includedPairs: RegionPairs = None, 
-        excludedPairs: RegionPairs = None, 
-        contactPropertyAssignments: ContactPropertyAssignment = None, 
-        surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
-        surfaceOffsetAssignments: SurfaceOffsetAssignment = None,
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
-        masterSlaveAssignments: MasterSlaveAssignment = None,
-        initializationAssignments: InitializationAssignment = None, 
-        stabilizationAssignments: StabilizationAssignment = None, 
-        smoothingAssignments: SmoothingAssignment = None, 
-        slidingTransitionAssignments: SlidingTransitionAssignment = None, 
-=======
         includedPairs: Optional[RegionPairs] = None, 
         excludedPairs: Optional[RegionPairs] = None, 
         contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
         surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
-        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
+        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
-        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
-        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Tuple[SlidingFormulationAssignment, ...] = None,
-        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
+        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 
         smoothingAssignments: Optional[SmoothingAssignment] = None, 
         slidingTransitionAssignments: Optional[SlidingTransitionAssignment] = None, 
->>>>>>> cfc3482e (Update type hints (#1762))
     ):
         """This method creates a ContactStd object.
 
@@ -199,36 +177,18 @@ class ContactStd(Interaction):
         name: str,
         createStepName: str,
         globalSmoothing: Boolean = ON,
-<<<<<<< HEAD
-        useAllstar: Boolean = OFF,
-        includedPairs: SymbolicConstant = None,
-        excludedPairs: SymbolicConstant = None,
-        contactPropertyAssignments: SymbolicConstant = None,
-        surfaceFeatureAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
-        surfaceThicknessAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
-        surfaceOffsetAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
-        masterSlaveAssignments: SymbolicConstant = None,
-        initializationAssignments: SymbolicConstant = None,
-        stabilizationAssignments: SymbolicConstant = None,
-        smoothingAssignments: SymbolicConstant = None,
-        slidingTransitionAssignments: SymbolicConstant = None,
-=======
-        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
-        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Tuple[SlidingFormulationAssignment, ...] = None,
         useAllstar: Boolean = OFF,
         includedPairs: Optional[SymbolicConstant] = None,
         excludedPairs: Optional[SymbolicConstant] = None,
         contactPropertyAssignments: Optional[SymbolicConstant] = None,
-        surfaceFeatureAssignments: Union[SymbolicConstant, float] = GLOBAL,
-        surfaceThicknessAssignments: Union[SymbolicConstant, float] = GLOBAL,
-        surfaceOffsetAssignments: Union[SymbolicConstant, float] = GLOBAL,
-        mainSecondaryAssignments: Optional[SymbolicConstant] = None,
+        surfaceFeatureAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
+        surfaceThicknessAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
+        surfaceOffsetAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
+        masterSlaveAssignments: Optional[SymbolicConstant] = None,
         initializationAssignments: Optional[SymbolicConstant] = None,
         stabilizationAssignments: Optional[SymbolicConstant] = None,
         smoothingAssignments: Optional[SymbolicConstant] = None,
         slidingTransitionAssignments: Optional[SymbolicConstant] = None,
->>>>>>> cfc3482e (Update type hints (#1762))
     ):
         """This method creates a ContactStd object.
 

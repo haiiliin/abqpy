@@ -62,14 +62,8 @@ class ShapePlanarSymmetry(GeometricRestriction):
         name: str,
         clientDirection: tuple,
         region: Region,
-<<<<<<< HEAD
-        csys: int = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
-        allowNonSymmetricMesh: Boolean = TRUE,
         csys: Optional[int] = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
->>>>>>> cfc3482e (Update type hints (#1762))
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -124,14 +118,8 @@ class ShapePlanarSymmetry(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
-<<<<<<< HEAD
-        csys: int = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
-        allowNonSymmetricMesh: Boolean = TRUE,
         csys: Optional[int] = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
->>>>>>> cfc3482e (Update type hints (#1762))
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,

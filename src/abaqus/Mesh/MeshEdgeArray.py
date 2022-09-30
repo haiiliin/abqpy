@@ -19,11 +19,7 @@ class MeshEdgeArray(List[MeshEdge]):
     """
 
     @abaqus_method_doc
-<<<<<<< HEAD
-    def __init__(self, edges: typing.List[MeshEdge]):
-=======
-    def __init__(self, elemEdges: List[MeshEdge]):
->>>>>>> cfc3482e (Update type hints (#1762))
+    def __init__(self, edges: List[MeshEdge]):
         """This method creates a MeshEdgeArray object.
 
         .. note:: 

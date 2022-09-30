@@ -56,13 +56,8 @@ class ShapePointSymmetry(GeometricRestriction):
         self,
         name: str,
         region: Region,
-<<<<<<< HEAD
-        csys: int = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
         csys: Optional[int] = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
->>>>>>> cfc3482e (Update type hints (#1762))
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -113,13 +108,8 @@ class ShapePointSymmetry(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
-<<<<<<< HEAD
-        csys: int = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
         csys: Optional[int] = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
->>>>>>> cfc3482e (Update type hints (#1762))
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,

@@ -218,16 +218,9 @@ class TopologyTask(OptimizationTask):
             SymbolicConstant, float
         ] = AVERAGE_EDGE_LENGTH,
         stopCriteriaDesignCycle: int = 4,
-<<<<<<< HEAD
-        structuralMassDamping: float = None,
-        viscousMassDamping: float = None,
-        viscousStiffnessDamping: float = None,
-=======
         structuralMassDamping: Optional[float] = None,
         viscousMassDamping: Optional[float] = None,
         viscousStiffnessDamping: Optional[float] = None,
-        groupOperator: Boolean = OFF,
->>>>>>> cfc3482e (Update type hints (#1762))
     ):
         """This method creates a TopologyTask object.
 
@@ -391,16 +384,9 @@ class TopologyTask(OptimizationTask):
             SymbolicConstant, float
         ] = AVERAGE_EDGE_LENGTH,
         stopCriteriaDesignCycle: int = 4,
-<<<<<<< HEAD
-        structuralMassDamping: float = None,
-        viscousMassDamping: float = None,
-        viscousStiffnessDamping: float = None,
-=======
         structuralMassDamping: Optional[float] = None,
         viscousMassDamping: Optional[float] = None,
         viscousStiffnessDamping: Optional[float] = None,
-        groupOperator: Boolean = OFF,
->>>>>>> cfc3482e (Update type hints (#1762))
     ):
         """This method modifies the TopologyTask object.
 

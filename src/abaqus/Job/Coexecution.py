@@ -74,32 +74,10 @@ class Coexecution:
 
     #: A tuple of SymbolicConstants specifying the analysis product types of the slave
     #: models for the co-execution. The default value is an empty sequence.
-<<<<<<< HEAD
-    slaveAnalysisProducts: SymbolicConstant = None
+    slaveAnalysisProducts: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the master model for the co-execution.
     masterModel: str = ""
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:     The `slaveAnalysisProducts` attribute was changed to `secondaryAnalysisProducts`.
-    secondaryAnalysisProducts: Optional[SymbolicConstant] = None
-
-    #: A String specifying the name of the main model for the co-execution.
-    #:
-    #: .. versionchanged:: 2022
-    #:     The `masterModel` attribute was changed to `mainModel`.
-    mainModel: str = ""
-
-    #: A SymbolicConstant specifying the type of license type being used in case of DSLS
-    #: SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default value
-    #: is DEFAULT.If the license model is not DSLS SimUnit then the licenseType is not
-    #: available.
-    #:
-    #: .. versionadded:: 2022
-    #:     The `licenseType` attribute was added.
-    licenseType: SymbolicConstant = DEFAULT
->>>>>>> cfc3482e (Update type hints (#1762))
 
     @abaqus_method_doc
     def kill(self):

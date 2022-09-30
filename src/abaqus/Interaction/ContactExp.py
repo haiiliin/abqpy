@@ -84,27 +84,14 @@ class ContactExp(Interaction):
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-<<<<<<< HEAD
-        includedPairs: RegionPairs = None, 
-        excludedPairs: RegionPairs = None, 
-        contactPropertyAssignments: ContactPropertyAssignment = None, 
-        surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
-        surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
-        smoothingAssignments: SmoothingAssignment = None,
-        masterSlaveAssignments: MasterSlaveAssignment = None,
-=======
         includedPairs: Optional[RegionPairs] = None, 
         excludedPairs: Optional[RegionPairs] = None, 
         contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
         surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
         surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
-        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None, 
+        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         smoothingAssignments: Optional[SmoothingAssignment] = None,
-        surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
-        surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None,
->>>>>>> cfc3482e (Update type hints (#1762))
+        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -170,27 +157,15 @@ class ContactExp(Interaction):
         createStepName: str,
         globalSmoothing: Boolean = ON,
         useAllstar: Boolean = OFF,
-<<<<<<< HEAD
-        includedPairs: SymbolicConstant = None,
-        excludedPairs: SymbolicConstant = None,
-        contactPropertyAssignments: SymbolicConstant = None,
-        surfaceThicknessAssignments: typing.Union[SymbolicConstant, float] = ORIGINAL,
-        surfaceOffsetAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
-        surfaceFeatureAssignments: typing.Union[SymbolicConstant, float] = PERIMETER,
-        smoothingAssignments: SymbolicConstant = None,
-        masterSlaveAssignments: SymbolicConstant = None,
-        polarityAssignments: SymbolicConstant = None,
-=======
         includedPairs: Optional[SymbolicConstant] = None,
         excludedPairs: Optional[SymbolicConstant] = None,
         contactPropertyAssignments: Optional[SymbolicConstant] = None,
-        surfaceThicknessAssignments: Union[SymbolicConstant, float] = ORIGINAL,
-        surfaceOffsetAssignments: Union[SymbolicConstant, float] = GLOBAL,
-        surfaceFeatureAssignments: Union[SymbolicConstant, float] = PERIMETER,
+        surfaceThicknessAssignments: typing.Union[SymbolicConstant, float] = ORIGINAL,
+        surfaceOffsetAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
+        surfaceFeatureAssignments: typing.Union[SymbolicConstant, float] = PERIMETER,
         smoothingAssignments: Optional[SymbolicConstant] = None,
-        mainSecondaryAssignments: Optional[SymbolicConstant] = None,
+        masterSlaveAssignments: Optional[SymbolicConstant] = None,
         polarityAssignments: Optional[SymbolicConstant] = None,
->>>>>>> cfc3482e (Update type hints (#1762))
     ):
         """This method creates a ContactExp object.
 
