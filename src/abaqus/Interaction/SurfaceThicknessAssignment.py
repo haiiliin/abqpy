@@ -1,6 +1,8 @@
-from typing import Union
+from typing import Union, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from ..Material.Material import Material
+from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
@@ -53,7 +55,7 @@ class SurfaceThicknessAssignment:
     def appendInStep(
         self, 
         stepName: str, 
-        Tuple[Tuple[Union[Region, Material, SymbolicConstant], Union[SymbolicConstant, float], float], ...],
+        assignments: Tuple[Tuple[Union[Region, Material, SymbolicConstant], Union[SymbolicConstant, float], float], ...],
     ):
         """This method allows addition of surface thickness assignments to new surfaces in a given
         step.
