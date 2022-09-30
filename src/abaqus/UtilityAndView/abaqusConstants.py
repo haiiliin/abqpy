@@ -29,12 +29,8 @@ This module is included by abaqusConstants and contains SymbolicConstants
 required by ABAQUS that are not defined in C++
 
 """
-YES = abaqusConstants.YES
-NO = abaqusConstants.NO
-
 ALL_TYPES = abaqusConstants.ALL_TYPES
 ALL_METHODS = abaqusConstants.ALL_METHODS
-BOTH = abaqusConstants.BOTH
 EARLIEST = abaqusConstants.EARLIEST
 GUI = abaqusConstants.GUI
 KERNEL = abaqusConstants.KERNEL
@@ -2526,6 +2522,7 @@ XZPLANE = abaqusConstants.XZPLANE
 YASYMM = abaqusConstants.YASYMM
 YAXIS = abaqusConstants.YAXIS
 YEOH = abaqusConstants.YEOH
+YES = abaqusConstants.YES
 YIELD_RATIO = abaqusConstants.YIELD_RATIO
 YSYMM = abaqusConstants.YSYMM
 YZPLANE = abaqusConstants.YZPLANE
