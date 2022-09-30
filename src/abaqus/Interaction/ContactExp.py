@@ -1,4 +1,4 @@
-from typing import overload, Optional
+from typing import overload, Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactPropertyAssignment import ContactPropertyAssignment
@@ -160,9 +160,9 @@ class ContactExp(Interaction):
         includedPairs: Optional[SymbolicConstant] = None,
         excludedPairs: Optional[SymbolicConstant] = None,
         contactPropertyAssignments: Optional[SymbolicConstant] = None,
-        surfaceThicknessAssignments: typing.Union[SymbolicConstant, float] = ORIGINAL,
-        surfaceOffsetAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
-        surfaceFeatureAssignments: typing.Union[SymbolicConstant, float] = PERIMETER,
+        surfaceThicknessAssignments: Union[SymbolicConstant, float] = ORIGINAL,
+        surfaceOffsetAssignments: Union[SymbolicConstant, float] = GLOBAL,
+        surfaceFeatureAssignments: Union[SymbolicConstant, float] = PERIMETER,
         smoothingAssignments: Optional[SymbolicConstant] = None,
         masterSlaveAssignments: Optional[SymbolicConstant] = None,
         polarityAssignments: Optional[SymbolicConstant] = None,
