@@ -6,7 +6,7 @@ from abqpy.decorators import abaqus_function_doc
 from .CaeGuiPrefs import CaeGuiPrefs
 from .CaeKerPrefs import CaeKerPrefs
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import Boolean, CURRENT, HOME, UNLIMITED
+from ..UtilityAndView.abaqusConstants import Boolean, HOME, UNLIMITED
 
 """The Python module caePrefsAccess contains functions that enable you to edit the 
 Abaqus/CAE preferences file, abaqus_2021.gpr. 
@@ -132,7 +132,7 @@ def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
 
 @abaqus_function_doc
 def openSessionOptions(
-    fileName: str = "", directory: Literal[CURRENT, HOME] = HOME
+    fileName: str = "", directory: Literal[C.CURRENT, C.HOME] = HOME
 ) -> CaeKerPrefs:
     """This function enables you to examine and change the default behavior for many session
     options Abaqus/CAE; that is, the settings that you can save in Abaqus/CAE from the
@@ -151,7 +151,7 @@ def openSessionOptions(
         this argument if you are working with a preferences file that is not at the default
         location. If this argument is omitted, the abaqus_2021.gpr file in your home directory is
         opened.
-    directory: Literal[CURRENT, HOME]
+    directory: Literal[C.CURRENT, C.HOME]
         A SymbolicConstant specifying the location of the preferences file. Possible values
         are:
 

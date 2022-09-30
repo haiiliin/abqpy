@@ -10,13 +10,10 @@ from .TimePoint import TimePoint
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (ALL, AVERAGE, AVERAGED_AT_NODES, AVERAGE_TRANSLATION,
-                                              Boolean, CENTROIDAL, C_INTEGRAL, DEFAULT,
-                                              EVERY_TIME_INCREMENT, EXCLUDE, INCLUDE, INDEPENDENT,
-                                              INTEGRATION_POINTS, J_INTEGRAL, K110, K_FACTORS,
-                                              MERR, MODEL, MTS, NODES, OFF, ON,
-                                              ONLY, PRESELECT, SPECIFIED, SymbolicConstant,
-                                              T_STRESS)
+from ..UtilityAndView.abaqusConstants import (ALL, Boolean, DEFAULT,
+                                              EVERY_TIME_INCREMENT, EXCLUDE, INDEPENDENT,
+                                              INTEGRATION_POINTS, J_INTEGRAL, MODEL, MTS, OFF, ON,
+                                              PRESELECT, SPECIFIED, SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -35,7 +32,7 @@ class OutputModel(ModelBase):
         name: str,
         createStepName: str,
         region: Union[Literal[C.MODEL], Region] = MODEL,
-        variables: Union[Tuple[str, ...], Literal[PRESELECT, ALL]] = PRESELECT,
+        variables: Union[Tuple[str, ...], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
         frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
         modes: Union[Literal[C.ALL], Tuple[int, ...]] = ALL,
         timeInterval: Union[
@@ -46,7 +43,7 @@ class OutputModel(ModelBase):
         boltLoad: str = "",
         sectionPoints: Union[Literal[C.DEFAULT], Tuple[int, ...]] = DEFAULT,
         interactions: Optional[str] = None,
-        rebar: Literal[EXCLUDE, INCLUDE, ONLY] = EXCLUDE,
+        rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
         filter: Optional[SymbolicConstant] = None,
         directions: Boolean = ON,
         fasteners: str = "",
@@ -59,7 +56,7 @@ class OutputModel(ModelBase):
         outputAtPlyMid: Boolean = True,
         outputAtPlyBottom: Boolean = False,
         position: Literal[
-            INTEGRATION_POINTS, AVERAGED_AT_NODES, CENTROIDAL, NODES
+            C.INTEGRATION_POINTS, C.AVERAGED_AT_NODES, C.CENTROIDAL, C.NODES
         ] = INTEGRATION_POINTS,
     ) -> FieldOutputRequest:
         """This method creates a FieldOutputRequest object.
@@ -188,7 +185,7 @@ class OutputModel(ModelBase):
         name: str,
         createStepName: str,
         region: Union[Literal[C.MODEL], Region] = MODEL,
-        variables: Union[Tuple[str, ...], Literal[PRESELECT, ALL]] = PRESELECT,
+        variables: Union[Tuple[str, ...], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
         frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
         modes: Union[Literal[C.ALL], Tuple[int, ...]] = ALL,
         timeInterval: Union[
@@ -202,9 +199,9 @@ class OutputModel(ModelBase):
         contourIntegral: Optional[str] = None,
         numberOfContours: int = 0,
         stressInitializationStep: Optional[str] = None,
-        contourType: Literal[J_INTEGRAL, C_INTEGRAL, T_STRESS, K_FACTORS] = J_INTEGRAL,
-        kFactorDirection: Literal[MTS, MERR, K110] = MTS,
-        rebar: Literal[EXCLUDE, INCLUDE, ONLY] = EXCLUDE,
+        contourType: Literal[C.J_INTEGRAL, C.C_INTEGRAL, C.T_STRESS, C.K_FACTORS] = J_INTEGRAL,
+        kFactorDirection: Literal[C.MTS, C.MERR, C.K110] = MTS,
+        rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
         integratedOutputSection: str = "",
         springs: Optional[tuple] = None,
         filter: Optional[SymbolicConstant] = None,
@@ -343,7 +340,7 @@ class OutputModel(ModelBase):
         refPoint: Optional[SymbolicConstant] = None,
         refPointAtCenter: Boolean = OFF,
         refPointMotion: Literal[
-            AVERAGE_TRANSLATION, AVERAGE, INDEPENDENT
+            C.AVERAGE_TRANSLATION, C.AVERAGE, C.INDEPENDENT
         ] = INDEPENDENT,
         localCsys: Optional[str] = None,
         projectOrientation: Boolean = OFF,
