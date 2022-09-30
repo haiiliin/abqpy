@@ -803,11 +803,7 @@ class InteractionModel(
         smoothingAssignments: Optional[SmoothingAssignment] = None,
         surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
         surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-<<<<<<< HEAD
-        mainSecondaryAssignments: MasterSlaveAssignment = None,
-=======
-        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None,
->>>>>>> cfc3482e (Update type hints (#1762))
+        mainSecondaryAssignments: Optional[MasterSlaveAssignment] = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -909,21 +905,12 @@ class InteractionModel(
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-<<<<<<< HEAD
-        slidingFormulationAssignments: typing.Tuple[SlidingFormulationAssignment, ...] = None,
-        mainSecondaryAssignments: MasterSlaveAssignment = None,
-        initializationAssignments: InitializationAssignment = None, 
-        stabilizationAssignments: StabilizationAssignment = None, 
-        smoothingAssignments: SmoothingAssignment = None, 
-        slidingTransitionAssignments: SlidingTransitionAssignment = None, 
-=======
         slidingFormulationAssignments: Tuple[SlidingFormulationAssignment, ...] = None,
-        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
+        mainSecondaryAssignments: Optional[MasterSlaveAssignment] = None,
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 
         smoothingAssignments: Optional[SmoothingAssignment] = None, 
         slidingTransitionAssignments: Optional[SlidingTransitionAssignment] = None, 
->>>>>>> cfc3482e (Update type hints (#1762))
     ) -> ContactStd:
         """This method creates a ContactStd object.
 

@@ -50,14 +50,7 @@ class ShapeRotationalSymmetry(GeometricRestriction):
 
     #: None or a Region object specifying the master point used when **masterPointDetermination** is
     #: SPECIFY. The default value is None.
-<<<<<<< HEAD
-    masterPoint: str = None
-=======
-    #:
-    #: .. versionchanged:: 2022
-    #:    The attribute `masterPoint` was renamed to `mainPoint`.
-    mainPoint: Optional[str] = None
->>>>>>> cfc3482e (Update type hints (#1762))
+    masterPoint: Optional[str] = None
 
     #: A SymbolicConstant specifying the rule for determining the master node. Possible values
     #: are MAXIMUM, MINIMUM, and SPECIFY. The default value is MAXIMUM.
@@ -91,15 +84,9 @@ class ShapeRotationalSymmetry(GeometricRestriction):
         region: Region,
         allowNonSymmetricMesh: Boolean = TRUE,
         angle: float = 0,
-<<<<<<< HEAD
-        csys: int = None,
-        masterPoint: str = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
         csys: Optional[int] = None,
-        mainPoint: Optional[str] = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
->>>>>>> cfc3482e (Update type hints (#1762))
+        masterPoint: Optional[str] = None,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         startPoint: Optional[float] = None,
         tolerance1: float = 0,
@@ -172,15 +159,9 @@ class ShapeRotationalSymmetry(GeometricRestriction):
         self,
         allowNonSymmetricMesh: Boolean = TRUE,
         angle: float = 0,
-<<<<<<< HEAD
-        csys: int = None,
-        masterPoint: str = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
         csys: Optional[int] = None,
-        mainPoint: Optional[str] = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
->>>>>>> cfc3482e (Update type hints (#1762))
+        masterPoint: Optional[str] = None,
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         startPoint: Optional[float] = None,
         tolerance1: float = 0,

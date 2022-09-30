@@ -95,11 +95,7 @@ class ContactExp(Interaction):
         smoothingAssignments: Optional[SmoothingAssignment] = None,
         surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
         surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-<<<<<<< HEAD
-        masterSlaveAssignments: MasterSlaveAssignment = None,
-=======
-        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None,
->>>>>>> cfc3482e (Update type hints (#1762))
+        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -179,17 +175,6 @@ class ContactExp(Interaction):
         surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
         surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
         useAllstar: Boolean = OFF,
-<<<<<<< HEAD
-        includedPairs: SymbolicConstant = None,
-        excludedPairs: SymbolicConstant = None,
-        contactPropertyAssignments: SymbolicConstant = None,
-        surfaceThicknessAssignments: typing.Union[SymbolicConstant, float] = ORIGINAL,
-        surfaceOffsetAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
-        surfaceFeatureAssignments: typing.Union[SymbolicConstant, float] = PERIMETER,
-        smoothingAssignments: SymbolicConstant = None,
-        masterSlaveAssignments: SymbolicConstant = None,
-        polarityAssignments: SymbolicConstant = None,
-=======
         includedPairs: Optional[SymbolicConstant] = None,
         excludedPairs: Optional[SymbolicConstant] = None,
         contactPropertyAssignments: Optional[SymbolicConstant] = None,
@@ -197,9 +182,8 @@ class ContactExp(Interaction):
         surfaceOffsetAssignments: Union[SymbolicConstant, float] = GLOBAL,
         surfaceFeatureAssignments: Union[SymbolicConstant, float] = PERIMETER,
         smoothingAssignments: Optional[SymbolicConstant] = None,
-        mainSecondaryAssignments: Optional[SymbolicConstant] = None,
+        masterSlaveAssignments: Optional[SymbolicConstant] = None,
         polarityAssignments: Optional[SymbolicConstant] = None,
->>>>>>> cfc3482e (Update type hints (#1762))
     ):
         """This method creates a ContactExp object.
 

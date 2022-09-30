@@ -70,13 +70,8 @@ class ShapePlanarSymmetry(GeometricRestriction):
         clientDirection: tuple,
         region: Region,
         allowNonSymmetricMesh: Boolean = TRUE,
-<<<<<<< HEAD
-        csys: int = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
         csys: Optional[int] = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
->>>>>>> cfc3482e (Update type hints (#1762))
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -138,13 +133,8 @@ class ShapePlanarSymmetry(GeometricRestriction):
     def setValues(
         self,
         allowNonSymmetricMesh: Boolean = TRUE,
-<<<<<<< HEAD
-        csys: int = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
         csys: Optional[int] = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
->>>>>>> cfc3482e (Update type hints (#1762))
+        masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
