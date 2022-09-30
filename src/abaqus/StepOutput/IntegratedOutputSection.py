@@ -4,7 +4,8 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (AVERAGE, AVERAGE_TRANSLATION, Boolean, INDEPENDENT,
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import (Boolean, INDEPENDENT,
                                               OFF, SymbolicConstant)
 
 
@@ -42,7 +43,7 @@ class IntegratedOutputSection:
     #: value of AVERAGE will set the displacement and rotation of the **refPoint** equal to the
     #: average translation of the output region. The default value is INDEPENDENT.This argument
     #: is valid only when you include the **refPoint** argument.
-    refPointMotion: Literal[AVERAGE_TRANSLATION, AVERAGE, INDEPENDENT] = INDEPENDENT
+    refPointMotion: Literal[C.AVERAGE_TRANSLATION, C.AVERAGE, C.INDEPENDENT] = INDEPENDENT
 
     #: None or a DatumCsys object specifying the local coordinate system used to express vector
     #: output. If **localCsys** = None, the degrees of freedom are defined in the global coordinate
@@ -63,7 +64,7 @@ class IntegratedOutputSection:
         refPoint: Optional[SymbolicConstant] = None,
         refPointAtCenter: Boolean = OFF,
         refPointMotion: Literal[
-            AVERAGE_TRANSLATION, AVERAGE, INDEPENDENT
+            C.AVERAGE_TRANSLATION, C.AVERAGE, C.INDEPENDENT
         ] = INDEPENDENT,
         localCsys: Optional[str] = None,
         projectOrientation: Boolean = OFF,
@@ -121,7 +122,7 @@ class IntegratedOutputSection:
         refPoint: Optional[SymbolicConstant] = None,
         refPointAtCenter: Boolean = OFF,
         refPointMotion: Literal[
-            AVERAGE_TRANSLATION, AVERAGE, INDEPENDENT
+            C.AVERAGE_TRANSLATION, C.AVERAGE, C.INDEPENDENT
         ] = INDEPENDENT,
         localCsys: Optional[str] = None,
         projectOrientation: Boolean = OFF,

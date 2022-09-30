@@ -1,14 +1,17 @@
 from __future__ import annotations
 
 from enum import Enum
-from typing import Any
+from typing import Any, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from .AbaqusBoolean import AbaqusBoolean
 
 value = 'SymbolicConstant'
 name = 'SymbolicConstant'
 
-class abaqusConstants(str,Enum):
+
+@abaqus_class_doc
+class SymbolicConstant(str):
     """The SymbolicConstant object represents a string in a way that can be stored in a replay
     file and used as an argument to Abaqus Scripting Interface methods and functions. By
     convention the string representation of the SymbolicConstant object is the same as its
@@ -52,6 +55,68 @@ class abaqusConstants(str,Enum):
         if not text.isupper() or not text.isidentifier():
             raise ValueError(f'SymbolicConstant name {text} may only contain upper case, digit or underscore')
         self.text = text
+    
+    @abaqus_method_doc
+    def __copy__(self) -> SymbolicConstant:
+        ...
+    
+    def __getstate__(self) -> str:
+        return self.text
+    
+    # def __hash__(self) -> int:
+    #     ...
+    
+    def __lt__(self, other: Any) -> bool:
+        """Sorting method; True if self is < other"""
+        return self < other
+    
+    @abaqus_method_doc
+    def __reduce__(self) -> tuple:  # known return case of __reduce__
+        ...
+    
+    def __repr__(self) -> str: 
+        return self.getText()
+    
+    def __setstate__(self, *args) -> None:
+        ...
+    
+    def __str__(self) -> str:
+        return self.text
+    
+    def getId(self) -> int:
+        ...
+    
+    def getText(self) -> str:
+        return self.text
+    
+    @staticmethod 
+    def __new__(cls, name: str) -> Union[SymbolicConstant,AbaqusBoolean]:
+        if name == "ON":
+            return AbaqusBoolean(1)
+        elif name == "OFF":
+            return AbaqusBoolean(0)
+        else:
+            return super().__new__(cls, name)
+    
+    @classmethod
+    def _addToCache(cls, *args, **kwargs):  # real signature unknown
+        """
+        Helper method for __new__
+        Also used by AbaqusBoolean.__new__
+        """
+        pass
+
+    __weakref__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
+    """list of weak references to the object (if defined)"""
+
+
+class abaqusConstants(SymbolicConstant, Enum):
+
+    def __str__(self) -> str:
+        return self.name
+
+    def __repr__(self) -> str:
+        return self.name
 
     YES = 'YES'
     NO = 'NO'
@@ -2579,58 +2644,3 @@ class abaqusConstants(str,Enum):
     MINIMUM_ENVELOPE = "MINIMUM_ENVELOPE"
     RANGE_ALL = "RANGE_ALL"
     SS = "SS"
-    
-    @abaqus_method_doc
-    def __copy__(self) -> SymbolicConstant:
-        ...
-    
-    def __getstate__(self) -> str:
-        return self.text
-    
-    # def __hash__(self) -> int:
-    #     ...
-    
-    def __lt__(self, other: Any) -> bool:
-        """Sorting method; True if self is < other"""
-        return self < other
-    
-    @abaqus_method_doc
-    def __reduce__(self) -> tuple:  # known return case of __reduce__
-        ...
-    
-    def __repr__(self) -> str: 
-        return self.getText()
-    
-    def __setstate__(self, *args) -> None:
-        ...
-    
-    def __str__(self) -> str:
-        return self.text
-    
-    def getId(self) -> int:
-        ...
-    
-    def getText(self) -> str:
-        return self.text
-    
-    # @staticmethod 
-    # def __new__(cls, name: str, *args, **kargs) -> Union[SymbolicConstant,AbaqusBoolean]:
-    #     if name == "ON":
-    #         return AbaqusBoolean(1)
-    #     elif name == "OFF":
-    #         return AbaqusBoolean(0)
-    #     else:
-    #         return super().__new__(cls)
-    
-    @classmethod
-    def _addToCache(cls, *args, **kwargs):  # real signature unknown
-        """
-        Helper method for __new__
-        Also used by AbaqusBoolean.__new__
-        """
-        pass
-
-    __weakref__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
-    """list of weak references to the object (if defined)"""
-
-SymbolicConstant = abaqus_class_doc(abaqusConstants)
