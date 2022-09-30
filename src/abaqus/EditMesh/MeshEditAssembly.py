@@ -88,7 +88,7 @@ class MeshEditAssembly(AssemblyBase):
         coordinate1: Optional[float] = None,
         coordinate2: Optional[float] = None,
         coordinate3: Optional[float] = None,
-        coordinates: tuple = (),
+        coordinates: Tuple[float, ...] = (),
         offset1: Optional[float] = None,
         offset2: Optional[float] = None,
         offset3: Optional[float] = None,
@@ -113,7 +113,7 @@ class MeshEditAssembly(AssemblyBase):
         coordinates
             A sequence of three-dimensional coordinate tuples specifying the coordinates for each of
             the given nodes. When specified, the number of coordinate tuples must match the number
-            of given nodes, and be ordered to correspond to the given nodes in *ascending order*
+            of given nodes, and be ordered to correspond to the given nodes in **ascending order**
             according to index. Furthermore, **coordinate1**, **coordinate2**, **coordinate3**, **offset1**,
             **offset2**, or **offset3** may not be specified.
         offset1

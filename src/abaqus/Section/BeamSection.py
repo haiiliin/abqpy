@@ -5,9 +5,10 @@ from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Section import Section
 from .TransverseShearBeam import TransverseShearBeam
-from ..UtilityAndView.abaqusConstants import (ANALYSIS_DEFAULT, BEFORE_ANALYSIS, Boolean, CONSTANT,
-                                              DURING_ANALYSIS, FULLY, HALF, INTERPOLATED, LINEAR,
-                                              OFF, TAPERED)
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import (ANALYSIS_DEFAULT, Boolean, CONSTANT,
+                                              FULLY, LINEAR,
+                                              OFF)
 
 
 @abaqus_class_doc
@@ -52,7 +53,7 @@ class BeamSection(Section):
 
     #: A SymbolicConstant specifying the integration method for the section. Possible values
     #: are BEFORE_ANALYSIS and DURING_ANALYSIS.
-    integration: Literal[BEFORE_ANALYSIS, DURING_ANALYSIS]
+    integration: Literal[C.BEFORE_ANALYSIS, C.DURING_ANALYSIS]
 
     #: A String specifying the name of the profile. This argument represents the start profile
     #: in case of **beamShape** = TAPERED.
@@ -79,7 +80,7 @@ class BeamSection(Section):
 
     #: A SymbolicConstant specifying the temperature variation for the section. Possible values
     #: are LINEAR and INTERPOLATED. The default value is LINEAR.
-    temperatureVar: Literal[LINEAR, INTERPOLATED] = LINEAR
+    temperatureVar: Literal[C.LINEAR, C.INTERPOLATED] = LINEAR
 
     #: A Float specifying the αRαR factor to create mass proportional damping in
     #: direct-integration dynamics. The default value is 0.0.
@@ -100,7 +101,7 @@ class BeamSection(Section):
     #: A SymbolicConstant specifying whether the section is either full submerged or half
     #: submerged. This argument applies only when **useFluidInertia** = True. Possible values are
     #: FULLY and HALF. The default value is FULLY.
-    submerged: Literal[FULLY, HALF] = FULLY
+    submerged: Literal[C.FULLY, C.HALF] = FULLY
 
     #: None or a Float specifying the mass density of the fluid. This argument applies only
     #: when **useFluidInertia** = True and must be specified in that case. The default value is
@@ -134,7 +135,7 @@ class BeamSection(Section):
     #: A SymbolicConstant specifying the change in cross-section of the beam along length.
     #: Possible values are CONSTANT and TAPERED. The default value is CONSTANT. This parameter
     #: is available for manipulating the model database but not for the ODB API.
-    beamShape: Literal[CONSTANT, TAPERED] = CONSTANT
+    beamShape: Literal[C.CONSTANT, C.TAPERED] = CONSTANT
 
     #: A String specifying the name of the material. The default value is an empty string. The
     #: material is required when **integration** is "DURING_ANALYSIS".
@@ -166,7 +167,7 @@ class BeamSection(Section):
     def __init__(
         self,
         name: str,
-        integration: Literal[BEFORE_ANALYSIS, DURING_ANALYSIS],
+        integration: Literal[C.BEFORE_ANALYSIS, C.DURING_ANALYSIS],
         profile: str,
         poissonRatio: float = 0,
         thermalExpansion: Boolean = OFF,
@@ -174,19 +175,19 @@ class BeamSection(Section):
         dependencies: int = 0,
         density: Optional[float] = None,
         referenceTemperature: Optional[float] = None,
-        temperatureVar: Literal[LINEAR, INTERPOLATED] = LINEAR,
+        temperatureVar: Literal[C.LINEAR, C.INTERPOLATED] = LINEAR,
         alphaDamping: float = 0,
         betaDamping: float = 0,
         compositeDamping: float = 0,
         useFluidInertia: Boolean = OFF,
-        submerged: Literal[FULLY, HALF] = FULLY,
+        submerged: Literal[C.FULLY, C.HALF] = FULLY,
         fluidMassDensity: Optional[float] = None,
         crossSectionRadius: Optional[float] = None,
         lateralMassCoef: float = 1,
         axialMassCoef: float = 0,
         massOffsetX: float = 0,
         massOffsetY: float = 0,
-        beamShape: Literal[CONSTANT, TAPERED] = CONSTANT,
+        beamShape: Literal[C.CONSTANT, C.TAPERED] = CONSTANT,
         material: str = "",
         table: tuple = (),
         outputPts: tuple = (),
@@ -308,19 +309,19 @@ class BeamSection(Section):
         dependencies: int = 0,
         density: Optional[float] = None,
         referenceTemperature: Optional[float] = None,
-        temperatureVar: Literal[LINEAR, INTERPOLATED] = LINEAR,
+        temperatureVar: Literal[C.LINEAR, C.INTERPOLATED] = LINEAR,
         alphaDamping: float = 0,
         betaDamping: float = 0,
         compositeDamping: float = 0,
         useFluidInertia: Boolean = OFF,
-        submerged: Literal[FULLY, HALF] = FULLY,
+        submerged: Literal[C.FULLY, C.HALF] = FULLY,
         fluidMassDensity: Optional[float] = None,
         crossSectionRadius: Optional[float] = None,
         lateralMassCoef: float = 1,
         axialMassCoef: float = 0,
         massOffsetX: float = 0,
         massOffsetY: float = 0,
-        beamShape: Literal[CONSTANT, TAPERED] = CONSTANT,
+        beamShape: Literal[C.CONSTANT, C.TAPERED] = CONSTANT,
         material: str = "",
         table: tuple = (),
         outputPts: tuple = (),
