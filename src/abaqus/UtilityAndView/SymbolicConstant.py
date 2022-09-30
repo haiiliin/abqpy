@@ -115,6 +115,9 @@ class abaqusConstants(Enum):
     def __str__(self) -> str:
         return self.name
 
+    def __repr__(self) -> str:
+        return self.name
+
     YES = SymbolicConstant('YES')
     NO = SymbolicConstant('NO')
 
