@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022.3.5 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-29 00:21+0000\n"
+"POT-Creation-Date: 2022-09-30 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -548,7 +548,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches:35
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances:32
-msgid ":obj:`typing.List`\\[:class:`python:str`]"
+msgid ":obj:`List`\\[:class:`python:str`]"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches:22
@@ -5644,7 +5644,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:27
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:27
-msgid ":obj:`typing.Tuple`\\[:class:`python:float`, :class:`python:float`]"
+msgid ":obj:`Tuple`\\[:class:`python:float`, :class:`python:float`]"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:15
@@ -5791,7 +5791,7 @@ msgid "CONSTRAINT"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:82
-msgid ":obj:`typing.Union`\\[:class:`python:float`, :class:`python:int`, :obj:`SymbolicConstant`]"
+msgid ":obj:`Union`\\[:class:`python:float`, :class:`python:int`, :obj:`SymbolicConstant`]"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:32
@@ -5908,7 +5908,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:39
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:39
-msgid ":obj:`typing.Tuple`\\[:class:`python:dict`, ...]"
+msgid ":obj:`Tuple`\\[:class:`python:dict`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:17
@@ -5950,7 +5950,7 @@ msgid "A sequence of Cell objects which will be used to search the incompatible 
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:28
-msgid ":obj:`typing.Tuple`\\[:obj:`Face`, ...]"
+msgid ":obj:`Tuple`\\[:obj:`Face`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:16
@@ -6103,7 +6103,7 @@ msgid "If **attribute** = MIN_TRANSITION, the return value is a Boolean indicati
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:39
-msgid ":obj:`typing.Union`\\[:ref:`bool <python:bltin-boolean-values>`, :obj:`SymbolicConstant`]"
+msgid ":obj:`Union`\\[:ref:`bool <python:bltin-boolean-values>`, :obj:`SymbolicConstant`]"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:35
@@ -6201,7 +6201,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections:29
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections:29
-msgid ":obj:`typing.Tuple`\\[:class:`python:str`, ...]"
+msgid ":obj:`Tuple`\\[:class:`python:str`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections:16
@@ -7191,7 +7191,7 @@ msgid "A sequence of Region or MeshElement objects. If you do not specify the **
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality:88
-msgid ":obj:`typing.Dict`\\[:class:`python:str`, :class:`python:int` | :class:`python:float` | :obj:`MeshElement`]"
+msgid ":obj:`Dict`\\[:class:`python:str`, :class:`python:int` | :class:`python:float` | :obj:`MeshElement`]"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality:74
@@ -8893,7 +8893,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:57
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:52
-msgid ":obj:`typing.Tuple`\\[:obj:`PartInstance`, ...]"
+msgid ":obj:`Tuple`\\[:obj:`PartInstance`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:45
@@ -8997,7 +8997,7 @@ msgid "A tuple including the point of rotation, axis of rotation, and rotation a
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.getTranslation:22
-msgid ":obj:`typing.Tuple`\\[:class:`python:float`, :class:`python:float`, :class:`python:float`]"
+msgid ":obj:`Tuple`\\[:class:`python:float`, :class:`python:float`, :class:`python:float`]"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.getTranslation:10

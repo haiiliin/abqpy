@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 09:27+0000\n"
+"POT-Creation-Date: 2022-09-30 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2327,7 +2327,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getCentroid:40 of
-msgid "centroid: :obj:`typing.Tuple`\\[:class:`python:float`, ...]"
+msgid "centroid: :obj:`Tuple`\\[:class:`python:float`, ...]"
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getCentroid:24 of
@@ -2522,7 +2522,7 @@ msgid "A string specifying the feature name."
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getFeatureCells:18 of
-msgid "cells: :obj:`typing.Tuple`\\[:obj:`Cell`, ...]"
+msgid "cells: :obj:`Tuple`\\[:obj:`Cell`, ...]"
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getFeatureCells:15 of
@@ -2636,7 +2636,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getFeatureEdges:18 of
-msgid "edges: :obj:`typing.Tuple`\\[:obj:`Edge`, ...]"
+msgid "edges: :obj:`Tuple`\\[:obj:`Edge`, ...]"
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getFeatureEdges:15 of
@@ -2663,7 +2663,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getFeatureFaces:18 of
-msgid "faces: :obj:`typing.Tuple`\\[:obj:`Face`, ...]"
+msgid "faces: :obj:`Tuple`\\[:obj:`Face`, ...]"
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getFeatureFaces:15 of
@@ -2685,7 +2685,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getFeatureVertices:18 of
-msgid "vertices: :obj:`typing.Tuple`\\[:obj:`ConstrainedSketchVertex`, ...]"
+msgid "vertices: :obj:`Tuple`\\[:obj:`ConstrainedSketchVertex`, ...]"
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getFeatureVertices:15 of
@@ -12806,7 +12806,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:83 of
 msgid ""
-":obj:`typing.Union`\\[:class:`python:float`, :class:`python:int`, "
+":obj:`Union`\\[:class:`python:float`, :class:`python:int`, "
 ":obj:`SymbolicConstant`]"
 msgstr ""
 
@@ -12988,7 +12988,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:28 of
-msgid ":obj:`typing.Tuple`\\[:obj:`Face`, ...]"
+msgid ":obj:`Tuple`\\[:obj:`Face`, ...]"
 msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:16 of
@@ -13059,7 +13059,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:40 of
 msgid ""
-":obj:`typing.Union`\\[:ref:`bool <python:bltin-boolean-values>`, "
+":obj:`Union`\\[:ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`SymbolicConstant`]"
 msgstr ""
 
@@ -14334,7 +14334,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality:89 of
 msgid ""
-":obj:`typing.Dict`\\[:class:`python:str`, :class:`python:int` | "
+":obj:`Dict`\\[:class:`python:str`, :class:`python:int` | "
 ":class:`python:float`, :obj:`MeshElement`]"
 msgstr ""
 
@@ -25961,5 +25961,38 @@ msgstr ""
 #~ " database. The surface will apply to"
 #~ " the sides specified by the "
 #~ "arguments.For example"
+#~ msgstr ""
+
+#~ msgid "centroid: :obj:`typing.Tuple`\\[:class:`python:float`, ...]"
+#~ msgstr ""
+
+#~ msgid "cells: :obj:`typing.Tuple`\\[:obj:`Cell`, ...]"
+#~ msgstr ""
+
+#~ msgid "edges: :obj:`typing.Tuple`\\[:obj:`Edge`, ...]"
+#~ msgstr ""
+
+#~ msgid "faces: :obj:`typing.Tuple`\\[:obj:`Face`, ...]"
+#~ msgstr ""
+
+#~ msgid "vertices: :obj:`typing.Tuple`\\[:obj:`ConstrainedSketchVertex`, ...]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`typing.Union`\\[:class:`python:float`, "
+#~ ":class:`python:int`, :obj:`SymbolicConstant`]"
+#~ msgstr ""
+
+#~ msgid ":obj:`typing.Tuple`\\[:obj:`Face`, ...]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`typing.Union`\\[:ref:`bool <python:bltin-boolean-"
+#~ "values>`, :obj:`SymbolicConstant`]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`typing.Dict`\\[:class:`python:str`, :class:`python:int`"
+#~ " | :class:`python:float`, :obj:`MeshElement`]"
 #~ msgstr ""
 

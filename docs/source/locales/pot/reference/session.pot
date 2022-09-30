@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022.3.5 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-29 00:21+0000\n"
+"POT-Creation-Date: 2022-09-30 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3089,6 +3089,7 @@ msgstr ""
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:51
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:98
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:107
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:108
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:51
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:98
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession.xyDataListFromField:107
@@ -3969,10 +3970,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:97
 msgid "A Boolean specifying whether to create a Path object containing all the points used when performing the linearized stress computation. The default value is OFF . When this argument is set to ON , a Path object is created with the same name as that of the stress line and placed in the Path repository."
-msgstr ""
-
-#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:108
-msgid ":obj:`typing.List`\\[:obj:`XYData`]"
 msgstr ""
 
 #: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:105

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-28 00:22+0000\n"
+"POT-Creation-Date: 2022-09-30 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3252,7 +3252,7 @@ msgstr ""
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:82
 #: abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:83 of
 msgid ""
-":obj:`typing.Union`\\[:class:`python:float`, :class:`python:int`, "
+":obj:`Union`\\[:class:`python:float`, :class:`python:int`, "
 ":obj:`SymbolicConstant`]"
 msgstr ""
 
@@ -3469,7 +3469,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:28
 #: abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:28 of
-msgid ":obj:`typing.Tuple`\\[:obj:`Face`, ...]"
+msgid ":obj:`Tuple`\\[:obj:`Face`, ...]"
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:16
@@ -3551,7 +3551,7 @@ msgstr ""
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:39
 #: abaqus.Mesh.MeshPart.MeshPart.getMeshControl:40 of
 msgid ""
-":obj:`typing.Union`\\[:ref:`bool <python:bltin-boolean-values>`, "
+":obj:`Union`\\[:ref:`bool <python:bltin-boolean-values>`, "
 ":obj:`SymbolicConstant`]"
 msgstr ""
 
@@ -4552,7 +4552,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality:88 of
 msgid ""
-":obj:`typing.Dict`\\[:class:`python:str`, :class:`python:int` | "
+":obj:`Dict`\\[:class:`python:str`, :class:`python:int` | "
 ":class:`python:float` | :obj:`MeshElement`]"
 msgstr ""
 
@@ -5164,7 +5164,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshEdge.MeshEdge.getElemFaces:21
 #: abaqus.Mesh.MeshElement.MeshElement.getElemFaces:21 of
-msgid ":obj:`typing.Tuple`\\[:obj:`MeshFace`, ...]"
+msgid ":obj:`Tuple`\\[:obj:`MeshFace`, ...]"
 msgstr ""
 
 #: abaqus.Mesh.MeshEdge.MeshEdge.getElemFaces:9
@@ -5173,7 +5173,7 @@ msgid "A tuple of :py:class:`~abaqus.Mesh.MeshFace.MeshFace` objects."
 msgstr ""
 
 #: abaqus.Mesh.MeshEdge.MeshEdge.getElements:21 of
-msgid ":obj:`typing.Tuple`\\[:obj:`MeshElement`, ...]"
+msgid ":obj:`Tuple`\\[:obj:`MeshElement`, ...]"
 msgstr ""
 
 #: abaqus.Mesh.MeshEdge.MeshEdge.getElements:9 of
@@ -5225,7 +5225,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshEdge.MeshEdge.getNodes:21
 #: abaqus.Mesh.MeshElement.MeshElement.getNodes:21 of
-msgid ":obj:`typing.Tuple`\\[:obj:`MeshNode`, ...]"
+msgid ":obj:`Tuple`\\[:obj:`MeshNode`, ...]"
 msgstr ""
 
 #: abaqus.Mesh.MeshEdge.MeshEdge.getNodes:9
@@ -5930,7 +5930,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshElement.MeshElement.getElemEdges:21 of
-msgid ":obj:`typing.Tuple`\\[:obj:`MeshEdge`, ...]"
+msgid ":obj:`Tuple`\\[:obj:`MeshEdge`, ...]"
 msgstr ""
 
 #: abaqus.Mesh.MeshElement.MeshElement.getElemEdges:9 of
@@ -6878,7 +6878,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshFace.MeshFace.getElemEdges:21
 #: abaqus.Mesh.MeshNode.MeshNode.getElemEdges:21 of
-msgid "edges: :obj:`typing.Tuple`\\[:obj:`MeshEdge`, ...]"
+msgid "edges: :obj:`Tuple`\\[:obj:`MeshEdge`, ...]"
 msgstr ""
 
 #: abaqus.Mesh.MeshFace.MeshFace.getElemEdges:9
@@ -6950,7 +6950,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshFace.MeshFace.getElements:21
 #: abaqus.Mesh.MeshNode.MeshNode.getElements:21 of
-msgid "elements: :obj:`typing.Tuple`\\[:obj:`MeshElement`, ...]"
+msgid "elements: :obj:`Tuple`\\[:obj:`MeshElement`, ...]"
 msgstr ""
 
 #: abaqus.Mesh.MeshFace.MeshFace.getElements:9
@@ -6971,7 +6971,7 @@ msgid "elements: :obj:`MeshElementArray`"
 msgstr ""
 
 #: abaqus.Mesh.MeshFace.MeshFace.getNodes:21 of
-msgid "nodes: :obj:`typing.Tuple`\\[:obj:`MeshNode`, ...]"
+msgid "nodes: :obj:`Tuple`\\[:obj:`MeshNode`, ...]"
 msgstr ""
 
 #: abaqus.Mesh.MeshFace.MeshFace.getNodes:9 of
@@ -6998,7 +6998,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshFace.MeshFace.getNormal:22 of
-msgid "normal: :obj:`typing.Tuple`\\[:class:`python:float`, ...]"
+msgid "normal: :obj:`Tuple`\\[:class:`python:float`, ...]"
 msgstr ""
 
 #: abaqus.Mesh.MeshFace.MeshFace.getNormal:9 of
@@ -7395,7 +7395,7 @@ msgid "This method modifies the MeshNode object."
 msgstr ""
 
 #: abaqus.Mesh.MeshNode.MeshNode.getElemFaces:21 of
-msgid "faces: :obj:`typing.Tuple`\\[:obj:`MeshFace`, ...]"
+msgid "faces: :obj:`Tuple`\\[:obj:`MeshFace`, ...]"
 msgstr ""
 
 #: abaqus.Mesh.MeshNode.MeshNode.getElemFaces:9 of
@@ -10838,7 +10838,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality:89 of
 msgid ""
-":obj:`typing.Dict`\\[:class:`python:str`, :class:`python:int` | "
+":obj:`Dict`\\[:class:`python:str`, :class:`python:int` | "
 ":class:`python:float`, :obj:`MeshElement`]"
 msgstr ""
 
@@ -11830,5 +11830,55 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ":obj:`MeshNode` | :obj:`typing.List`\\[:obj:`MeshNode`]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`typing.Union`\\[:class:`python:float`, "
+#~ ":class:`python:int`, :obj:`SymbolicConstant`]"
+#~ msgstr ""
+
+#~ msgid ":obj:`typing.Tuple`\\[:obj:`Face`, ...]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`typing.Union`\\[:ref:`bool <python:bltin-boolean-"
+#~ "values>`, :obj:`SymbolicConstant`]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`typing.Dict`\\[:class:`python:str`, :class:`python:int`"
+#~ " | :class:`python:float` | :obj:`MeshElement`]"
+#~ msgstr ""
+
+#~ msgid ":obj:`typing.Tuple`\\[:obj:`MeshFace`, ...]"
+#~ msgstr ""
+
+#~ msgid ":obj:`typing.Tuple`\\[:obj:`MeshElement`, ...]"
+#~ msgstr ""
+
+#~ msgid ":obj:`typing.Tuple`\\[:obj:`MeshNode`, ...]"
+#~ msgstr ""
+
+#~ msgid ":obj:`typing.Tuple`\\[:obj:`MeshEdge`, ...]"
+#~ msgstr ""
+
+#~ msgid "edges: :obj:`typing.Tuple`\\[:obj:`MeshEdge`, ...]"
+#~ msgstr ""
+
+#~ msgid "elements: :obj:`typing.Tuple`\\[:obj:`MeshElement`, ...]"
+#~ msgstr ""
+
+#~ msgid "nodes: :obj:`typing.Tuple`\\[:obj:`MeshNode`, ...]"
+#~ msgstr ""
+
+#~ msgid "normal: :obj:`typing.Tuple`\\[:class:`python:float`, ...]"
+#~ msgstr ""
+
+#~ msgid "faces: :obj:`typing.Tuple`\\[:obj:`MeshFace`, ...]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`typing.Dict`\\[:class:`python:str`, :class:`python:int`"
+#~ " | :class:`python:float`, :obj:`MeshElement`]"
 #~ msgstr ""
 
