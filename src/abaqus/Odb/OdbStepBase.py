@@ -9,8 +9,8 @@ from .HistoryRegion import HistoryRegion
 from .OdbFrame import OdbFrame
 from .OdbFrameArray import OdbFrameArray
 from .OdbLoadCase import OdbLoadCase
-from ..UtilityAndView.abaqusConstants import (AFTER, ARC_LENGTH, BEFORE, Boolean, CLOSEST, EXACT,
-                                              FREQUENCY, MODAL, OFF, TIME)
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import Boolean, CLOSEST, OFF
 
 
 @abaqus_class_doc
@@ -70,7 +70,7 @@ class OdbStepBase:
         self,
         name: str,
         description: str,
-        domain: Literal[TIME, FREQUENCY, ARC_LENGTH, MODAL],
+        domain: Literal[C.TIME, C.FREQUENCY, C.ARC_LENGTH, C.MODAL],
         timePeriod: float = 0,
         previousStepName: str = "",
         procedure: str = "",
@@ -172,7 +172,7 @@ class OdbStepBase:
     @overload
     @abaqus_method_doc
     def getFrame(
-        self, frameValue: str, match: Literal[CLOSEST, BEFORE, AFTER, EXACT] = CLOSEST
+        self, frameValue: str, match: Literal[C.CLOSEST, C.BEFORE, C.AFTER, C.EXACT] = CLOSEST
     ) -> OdbFrame:
         """This method retrieves an OdbFrame object associated with a given frame value.
 
@@ -229,7 +229,7 @@ class OdbStepBase:
         self,
         loadCase: OdbLoadCase,
         frameValue: str,
-        match: Literal[CLOSEST, BEFORE, AFTER, EXACT] = CLOSEST,
+        match: Literal[C.CLOSEST, C.BEFORE, C.AFTER, C.EXACT] = CLOSEST,
     ) -> OdbFrame:
         """This method retrieves an OdbFrame object associated with a given load case and frame
         value.
