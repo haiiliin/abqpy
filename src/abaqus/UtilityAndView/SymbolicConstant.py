@@ -1,11 +1,7 @@
 from __future__ import annotations
 
 from enum import Enum
-<<<<<<< HEAD
-from typing import Any
-=======
 from typing import Any, Union
->>>>>>> 5e7a52bf (Use napoleon instead of numpydoc (#1772))
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AbaqusBoolean import AbaqusBoolean
