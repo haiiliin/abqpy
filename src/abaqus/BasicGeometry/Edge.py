@@ -1,5 +1,7 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
@@ -37,7 +39,7 @@ class Edge:
     """
 
     #: An Int specifying the index of the edge in the EdgeArray.
-    index: int = None
+    index: Optional[int] = None
 
     #: A Boolean specifying whether the edge belongs to the reference representation of the
     #: Part or Instance.
@@ -45,14 +47,14 @@ class Edge:
 
     #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
     #: the edge.
-    pointOn: float = None
+    pointOn: Optional[float] = None
 
     #: A tuple of Floats specifying the name of the feature that created this edge.
-    featureName: float = None
+    featureName: Optional[float] = None
 
     #: A tuple of Floats specifying the name of the part instance for this edge (if
     #: applicable).
-    instanceName: float = None
+    instanceName: Optional[float] = None
 
     @abaqus_method_doc
     def isTangentFlipped(self):
@@ -102,7 +104,7 @@ class Edge:
 
         Returns
         -------
-        typing.Tuple[int, ...]
+        Tuple[int, ...]
             A tuple of integers.
 
         """
@@ -203,7 +205,7 @@ class Edge:
 
         Returns
         -------
-        typing.Tuple[int, ...]
+        Tuple[int, ...]
             A tuple of integers.
 
         """

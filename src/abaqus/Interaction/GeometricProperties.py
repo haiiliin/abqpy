@@ -1,5 +1,7 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -25,12 +27,12 @@ class GeometricProperties:
     #: None or a Float specifying the thickness of an interfacial layer between the contacting
     #: surfaces. If **padThickness** = None, there is no interfacial layer. The default value is
     #: None.
-    padThickness: float = None
+    padThickness: Optional[float] = None
 
     #: None or a Float specifying the thickness that determines the contacting surfaces to be
     #: tracked. The input value for this parameter cannot be negative. An internal default
     #: value is used if a zero value is input or if the parameter is omitted.
-    trackingThickness: float = None
+    trackingThickness: Optional[float] = None
 
     #: An Int specifying the number of state-dependent variables. The default value is 0. This
     #: argument is applicable only if **modelType** = MODELTYPE_USER or
@@ -48,18 +50,18 @@ class GeometricProperties:
     useUnsymmetricEqunProcedure: Boolean = OFF
 
     #: A SymbolicConstant specifying the surface interaction model type.
-    modelType: SymbolicConstant = None
+    modelType: Optional[SymbolicConstant] = None
 
     @abaqus_method_doc
     def __init__(
         self,
         contactArea: float = 1,
-        padThickness: float = None,
-        trackingThickness: float = None,
+        padThickness: Optional[float] = None,
+        trackingThickness: Optional[float] = None,
         dependentVariables: int = 0,
         numProperties: int = 0,
         useUnsymmetricEqunProcedure: Boolean = OFF,
-        modelType: SymbolicConstant = None,
+        modelType: Optional[SymbolicConstant] = None,
     ):
         """This method creates a GeometricProperties object.
 

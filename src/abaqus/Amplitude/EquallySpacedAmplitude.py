@@ -1,9 +1,9 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Amplitude import Amplitude
 from .BaselineCorrection import BaselineCorrection
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SOLVER_DEFAULT, STEP, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -46,7 +46,7 @@ class EquallySpacedAmplitude(Amplitude):
     #: Possible float values are 0 ≤ **smoothing** ≤ 0.5. If **smooth** = SOLVER_DEFAULT, the
     #: default degree of smoothing will be determined by the solver. The default value is
     #: SOLVER_DEFAULT.
-    smooth: typing.Union[SymbolicConstant, float] = SOLVER_DEFAULT
+    smooth: Union[SymbolicConstant, float] = SOLVER_DEFAULT
 
     #: A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
     #: and TOTAL. The default value is STEP.
@@ -59,7 +59,7 @@ class EquallySpacedAmplitude(Amplitude):
         fixedInterval: float,
         data: tuple,
         begin: float = 0,
-        smooth: typing.Union[SymbolicConstant, float] = SOLVER_DEFAULT,
+        smooth: Union[SymbolicConstant, float] = SOLVER_DEFAULT,
         timeSpan: SymbolicConstant = STEP,
     ):
         """This method creates an EquallySpacedAmplitude object.
@@ -107,7 +107,7 @@ class EquallySpacedAmplitude(Amplitude):
     def setValues(
         self,
         begin: float = 0,
-        smooth: typing.Union[SymbolicConstant, float] = SOLVER_DEFAULT,
+        smooth: Union[SymbolicConstant, float] = SOLVER_DEFAULT,
         timeSpan: SymbolicConstant = STEP,
     ):
         """This method modifies the EquallySpacedAmplitude object.

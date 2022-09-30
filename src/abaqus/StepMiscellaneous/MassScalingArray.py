@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .MassScaling import MassScaling
 
-MassScalingArray = typing.List[MassScaling]
+MassScalingArray = List[MassScaling]

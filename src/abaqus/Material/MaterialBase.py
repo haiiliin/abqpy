@@ -1,4 +1,4 @@
-import typing
+from typing import List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Density.Density import Density
@@ -60,7 +60,7 @@ from .Plastic.Swelling.Swelling import Swelling
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
 from .TestData.MullinsEffect import MullinsEffect
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import FREQUENCY
 
 
 @abaqus_class_doc
@@ -364,7 +364,7 @@ class MaterialBase:
 
         Returns
         -------
-        typing.List[Material]
+        List[Material]
             A list of :py:class:`~abaqus.Material.Material.Material` objects.
         """
         ...

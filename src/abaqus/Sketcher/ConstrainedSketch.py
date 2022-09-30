@@ -1,5 +1,7 @@
 from __future__ import annotations
+
 from typing import Optional, Tuple, overload
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -23,7 +25,8 @@ from .ConstrainedSketchVertex.ConstrainedSketchVertexModel import (
     ConstrainedSketchVertexModel,
 )
 from ..Part.AcisFile import AcisFile
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AUTOCAD, Boolean, JAMA, LEFT, MSBO, OFF, RIGHT,
+                                              SOLIDWORKS, STANDALONE, STANDARD, SUPERIMPOSE)
 
 
 @abaqus_class_doc

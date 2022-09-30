@@ -1,5 +1,7 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ...UtilityAndView.abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import SPHERE, SymbolicConstant, UNIFORM
 
 
 @abaqus_class_doc
@@ -36,7 +38,7 @@ class MeanFieldVoid:
         name: str,
         table: tuple,
         material: str = "",
-        isotropizationCoefficient: float = None,
+        isotropizationCoefficient: Optional[float] = None,
         volumeFractionType: SymbolicConstant = UNIFORM,
         volumeFractionFieldName: str = "",
         aspectRatioType: SymbolicConstant = UNIFORM,
@@ -44,7 +46,7 @@ class MeanFieldVoid:
         orientationTensorType: SymbolicConstant = UNIFORM,
         orientationTensorFieldName: str = "",
         shape: SymbolicConstant = SPHERE,
-        direction: SymbolicConstant = None,
+        direction: Optional[SymbolicConstant] = None,
         strainConcentrationTensor: tuple = (),
         temperatureGradientConcentrationTensor: tuple = (),
     ):

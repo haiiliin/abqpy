@@ -1,9 +1,13 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Datum.DatumAxis import DatumAxis
 from ..Datum.DatumCsys import DatumCsys
 from ..Region.Set import Set
 from ..Region.Surface import Surface
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AXIS_1, AXIS_3, Boolean, GLOBAL, NORMAL_VECTOR, OFF,
+                                              PRIMARY_VECTOR, ROTATION_NONE, STACK_3,
+                                              SymbolicConstant, VECTOR)
 
 
 @abaqus_class_doc
@@ -39,7 +43,7 @@ class MaterialOrientation:
     #: material orientation for the given region. In the ODB, this member was previously
     #: accessible using "csys," but support has now been added for localCsys and the csys
     #: member will be deprecated.
-    localCsys: DatumCsys = None
+    localCsys: Optional[DatumCsys] = None
 
     #: A SymbolicConstant specifying the axis of a datum coordinate system about which an
     #: additional rotation is applied. For shells this axis is also the shell normal. Possible
@@ -76,11 +80,11 @@ class MaterialOrientation:
 
     #: A :py:class:`~abaqus.Region.Surface.Surface` object specifying a region whose geometric normals define the normal axis for
     #: the discrete orientation.
-    normalAxisRegion: Surface = None
+    normalAxisRegion: Optional[Surface] = None
 
     #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the Datum Axis or None, describing the normal axis
     #: direction for the discrete orientation.
-    normalAxisDatum: DatumAxis = None
+    normalAxisDatum: Optional[DatumAxis] = None
 
     #: A Boolean specifying the flag to reverse the direction of the defined normal axis
     #: direction. The default value is OFF.
@@ -102,11 +106,11 @@ class MaterialOrientation:
 
     #: A :py:class:`~abaqus.Region.Set.Set` object specifying a region whose geometric tangents define the primary axis for
     #: the discrete orientation.
-    primaryAxisRegion: Set = None
+    primaryAxisRegion: Optional[Set] = None
 
     #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the Datum Axis or None, describing the primary axis
     #: direction for the discrete orientation.
-    primaryAxisDatum: DatumAxis = None
+    primaryAxisDatum: Optional[DatumAxis] = None
 
     #: A Boolean specifying the flag to reverse the direction of the defined primary axis
     #: direction. The default value is OFF.
@@ -120,7 +124,7 @@ class MaterialOrientation:
     def __init__(
         self,
         region: Set,
-        localCsys: DatumCsys = None, 
+        localCsys: Optional[DatumCsys] = None, 
         axis: SymbolicConstant = AXIS_1,
         angle: float = 0,
         stackDirection: SymbolicConstant = STACK_3,
@@ -128,14 +132,14 @@ class MaterialOrientation:
         orientationType: SymbolicConstant = GLOBAL,
         normalAxisDirection: SymbolicConstant = AXIS_3,
         normalAxisDefinition: SymbolicConstant = NORMAL_VECTOR,
-        normalAxisRegion: Surface = None,
-        normalAxisDatum: DatumAxis = None, 
+        normalAxisRegion: Optional[Surface] = None,
+        normalAxisDatum: Optional[DatumAxis] = None, 
         flipNormalDirection: Boolean = OFF,
         normalAxisVector: tuple = (),
         primaryAxisDirection: SymbolicConstant = AXIS_1,
         primaryAxisDefinition: SymbolicConstant = PRIMARY_VECTOR,
-        primaryAxisRegion: Set = None,
-        primaryAxisDatum: DatumAxis = None, 
+        primaryAxisRegion: Optional[Set] = None,
+        primaryAxisDatum: Optional[DatumAxis] = None, 
         flipPrimaryDirection: Boolean = OFF,
         primaryAxisVector: tuple = (),
     ):
@@ -224,7 +228,7 @@ class MaterialOrientation:
     @abaqus_method_doc
     def ReferenceOrientation(
         self,
-        localCsys: DatumCsys = None, 
+        localCsys: Optional[DatumCsys] = None, 
         axis: SymbolicConstant = AXIS_1,
         angle: float = 0,
         stackDirection: SymbolicConstant = STACK_3,
@@ -234,14 +238,14 @@ class MaterialOrientation:
         additionalRotationType: SymbolicConstant = ROTATION_NONE,
         normalAxisDirection: SymbolicConstant = AXIS_3,
         normalAxisDefinition: SymbolicConstant = VECTOR,
-        normalAxisRegion: Surface = None,
-        normalAxisDatum: DatumAxis = None, 
+        normalAxisRegion: Optional[Surface] = None,
+        normalAxisDatum: Optional[DatumAxis] = None, 
         flipNormalDirection: Boolean = OFF,
         normalAxisVector: tuple = (),
         primaryAxisDirection: SymbolicConstant = AXIS_1,
         primaryAxisDefinition: SymbolicConstant = VECTOR,
-        primaryAxisRegion: Set = None,
-        primaryAxisDatum: DatumAxis = None, 
+        primaryAxisRegion: Optional[Set] = None,
+        primaryAxisDatum: Optional[DatumAxis] = None, 
         flipPrimaryDirection: Boolean = OFF,
         primaryAxisVector: tuple = (),
     ):

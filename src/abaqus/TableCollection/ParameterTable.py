@@ -1,7 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..TableCollection.ParameterColumn import ParameterColumn
 from ..TableCollection.ParameterColumnArray import ParameterColumnArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc

@@ -1,3 +1,5 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AcousticImpedanceProp import AcousticImpedanceProp
 from .ActuatorSensorProp import ActuatorSensorProp
@@ -9,7 +11,8 @@ from .FluidExchangeProperty import FluidExchangeProperty
 from .FluidInflatorProperty import FluidInflatorProperty
 from .IncidentWaveProperty import IncidentWaveProperty
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ACOUSTIC, BULK_VISCOSITY, Boolean, HYDRAULIC, OFF, ON,
+                                              PLANAR, POLYNOMIAL, SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -196,8 +199,8 @@ class InteractionPropertyModel(ModelBase):
         self,
         name: str,
         definition: SymbolicConstant = HYDRAULIC,
-        fluidDensity: float = None,
-        molecularWeight: float = None,
+        fluidDensity: Optional[float] = None,
+        molecularWeight: Optional[float] = None,
         useExpansion: Boolean = OFF,
         expansionTempDep: Boolean = OFF,
         expansionDependencies: int = 0,
@@ -456,9 +459,9 @@ class InteractionPropertyModel(ModelBase):
         definition: str,
         effectiveArea: float,
         tankVolume: float,
-        dischargeCoefficient: float = None,
+        dischargeCoefficient: Optional[float] = None,
         dataTable: tuple = (),
-        numFluids: int = None,
+        numFluids: Optional[int] = None,
         mixtureType: str = "",
         inflationTime: tuple = (),
         fluidbehaviorName: tuple = (),
@@ -533,31 +536,31 @@ class InteractionPropertyModel(ModelBase):
         name: str,
         definition: SymbolicConstant = PLANAR,
         propagationModel: SymbolicConstant = ACOUSTIC,
-        soundSpeed: float = None,
-        fluidDensity: float = None,
-        specificHeatRatio: float = None,
-        gravity: float = None,
-        atmosphericPressure: float = None,
-        dragCoefficient: float = None,
+        soundSpeed: Optional[float] = None,
+        fluidDensity: Optional[float] = None,
+        specificHeatRatio: Optional[float] = None,
+        gravity: Optional[float] = None,
+        atmosphericPressure: Optional[float] = None,
+        dragCoefficient: Optional[float] = None,
         dragExponent: float = 2,
         waveEffects: Boolean = ON,
-        chargeDensity: float = None,
-        chargeMass: float = None,
-        constantK1: float = None,
-        constantK2: float = None,
-        constantA: float = None,
-        constantB: float = None,
-        constantKc: float = None,
-        duration: float = None,
+        chargeDensity: Optional[float] = None,
+        chargeMass: Optional[float] = None,
+        constantK1: Optional[float] = None,
+        constantK2: Optional[float] = None,
+        constantA: Optional[float] = None,
+        constantB: Optional[float] = None,
+        constantKc: Optional[float] = None,
+        duration: Optional[float] = None,
         maximumSteps: int = 1500,
-        relativeStepControl: float = None,
-        absoluteStepControl: float = None,
+        relativeStepControl: Optional[float] = None,
+        absoluteStepControl: Optional[float] = None,
         stepControlExponent: float = 0,
         genDecayA: float = 0,
         genDecayB: float = 0,
         genDecayC: float = 0,
-        seedNumber: int = None,
-        massTNT: float = None,
+        seedNumber: Optional[int] = None,
+        massTNT: Optional[float] = None,
         massFactor: float = 1,
         lengthFactor: float = 1,
         timeFactor: float = 1,
