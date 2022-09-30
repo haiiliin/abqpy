@@ -14,12 +14,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-<<<<<<< HEAD
-from ..UtilityAndView.abaqusConstants import *
-=======
-from ..TableCollection.ActivateElements import ActivateElements
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
->>>>>>> cfc3482e (Update type hints (#1762))
 
 
 @abaqus_class_doc
@@ -124,12 +119,6 @@ class StepBase:
     #: A repository of PredefinedFieldState objects.
     predefinedFieldStates: Dict[str, PredefinedFieldState] = {}
 
-<<<<<<< HEAD
-=======
-    #: A repository of ActivateElements objects.
-    activateElements: Dict[str, ActivateElements] = {}
-
->>>>>>> cfc3482e (Update type hints (#1762))
     @abaqus_method_doc
     def resume(self):
         """This method resumes the step that was previously suppressed."""

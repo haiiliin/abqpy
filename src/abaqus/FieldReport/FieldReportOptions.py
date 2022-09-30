@@ -1,6 +1,6 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Session.NumberFormat import NumberFormat
-from ..UtilityAndView.abaqusConstants import (ASCENDING, Boolean, ENGINEERING, NO_LIMIT, OFF, ON,
+from ..UtilityAndView.abaqusConstants import (ASCENDING, Boolean, ENGINEERING, NO_LIMIT, ON,
                                               SINGLE_TABLE, SymbolicConstant)
 
 

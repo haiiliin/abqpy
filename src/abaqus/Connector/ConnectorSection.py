@@ -18,7 +18,7 @@ from ..UtilityAndView.abaqusConstants import (ABS, ALL, Boolean, COEFFICIENTS, C
                                               FORCE, FRACTION, HALF_CYCLE, LINEAR, MAXIMUM,
                                               MOTION_TYPE, NO_INDEPENDENT_COMPONENTS, OFF, ON,
                                               PENALTY, POSITIVE, PREDEFINED, SPECIFY, SUM,
-                                              SymbolicConstant, TABULAR, UNCOUPLED, VISCOUS)
+                                              SymbolicConstant, TABULAR, UNCOUPLED)
 
 
 @abaqus_class_doc

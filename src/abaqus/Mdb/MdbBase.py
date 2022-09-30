@@ -34,12 +34,6 @@ class MdbBase:
     #: A repository of AdaptivityProcess objects.
     adaptivityProcesses: Dict[str, AdaptivityProcess] = {}
 
-<<<<<<< HEAD
-=======
-    #: A repository of Coexecution objects.
-    coexecutions: Dict[str, Coexecution] = {}
-
->>>>>>> cfc3482e (Update type hints (#1762))
     #: A repository of OptimizationProcess objects.
     optimizationProcesses: Dict[str, OptimizationProcess] = {}
 
