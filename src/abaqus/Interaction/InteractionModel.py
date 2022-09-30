@@ -44,8 +44,8 @@ from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import (ALLOW_SUBCYCLING, ALL_NODAL_DIAMETER, AMBIENT,
                                               BLOCKING_ALL, Boolean, COMPUTED, COMPUTED_TOLERANCE,
                                               CONTACT, DEFAULT, GEOMETRY, KINEMATIC, LAGRANGIAN,
-                                              MODEL, OFF, OMIT, ON, PLANE, PRESSURE, RIGHT,
-                                              SURFACE_TO_SURFACE, SymbolicConstant, TABULAR,
+                                              MODEL, OFF, OMIT, ON, PLANE, PRESSURE, SURFACE_TO_SURFACE,
+                                              SymbolicConstant, TABULAR,
                                               TO_ENVIRONMENT, UNIFORM, UNSET, USE_GEOMETRY)
 
 

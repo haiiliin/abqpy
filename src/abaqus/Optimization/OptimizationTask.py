@@ -43,7 +43,7 @@ from .TurnControl import TurnControl
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (ABSOLUTE_EQUAL, AUTO, AXIS_1, Boolean, DEMOLD_REGION,
                                               FREE_FORM, MAXIMUM, MINIMIZE, MINIMUM,
-                                              MODEL, OFF, ON, OVERHANG_REGION, SUM,
+                                              MODEL, OFF, ON, SUM,
                                               SymbolicConstant, VECTOR)
 
 
