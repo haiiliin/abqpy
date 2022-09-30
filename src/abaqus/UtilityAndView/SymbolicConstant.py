@@ -110,7 +110,7 @@ class SymbolicConstant(str):
     """list of weak references to the object (if defined)"""
 
 
-class abaqusConstants(Enum):
+class abaqusConstants(SymbolicConstant, Enum):
 
     def __str__(self) -> str:
         return self.name
