@@ -5,6 +5,7 @@ from typing_extensions import Literal
 from abqpy.decorators import abaqus_function_doc
 from .CaeGuiPrefs import CaeGuiPrefs
 from .CaeKerPrefs import CaeKerPrefs
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, CURRENT, HOME, UNLIMITED
 
 """The Python module caePrefsAccess contains functions that enable you to edit the 
@@ -64,23 +65,23 @@ def getDisplayNamesInGuiPreferences(fileName: str) -> List[str]:
 @abaqus_function_doc
 def printValuesList(
     object: str,
-    maxRecursionDepth: Union[int, Literal[UNLIMITED]] = UNLIMITED,
+    maxRecursionDepth: Union[int, Literal[C.UNLIMITED]] = UNLIMITED,
     asString: Boolean = False,
 ) -> str:
     """This function enables you to print all of the options and their values for a set of
     guiPreferences or sessionOptions settings derived from the abaqus_2021.gpr file.
 
     .. note:: 
-            This function can be accessed by::
+        This function can be accessed by::
 
-                caePrefsAccess.printValuesList
+            caePrefsAccess.printValuesList
 
     Parameters
     ----------
     object: str
         The guiPreferences object or sessionOptions object for which you want to print options
         and their values.
-    maxRecursionDepth: Union[int, Literal[UNLIMITED]]
+    maxRecursionDepth: Union[int, Literal[C.UNLIMITED]]
         An Int, or SymbolicConstant UNLIMITED, that specifies the depth of recursion when
         accessing the attributes of **object**.
     asString: Boolean

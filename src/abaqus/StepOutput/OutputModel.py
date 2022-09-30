@@ -9,11 +9,12 @@ from .IntegratedOutputSection import IntegratedOutputSection
 from .TimePoint import TimePoint
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALL, AVERAGE, AVERAGED_AT_NODES, AVERAGE_TRANSLATION,
                                               Boolean, CENTROIDAL, C_INTEGRAL, DEFAULT,
                                               EVERY_TIME_INCREMENT, EXCLUDE, INCLUDE, INDEPENDENT,
                                               INTEGRATION_POINTS, J_INTEGRAL, K110, K_FACTORS,
-                                              LAST_INCREMENT, MERR, MODEL, MTS, NODES, OFF, ON,
+                                              MERR, MODEL, MTS, NODES, OFF, ON,
                                               ONLY, PRESELECT, SPECIFIED, SymbolicConstant,
                                               T_STRESS)
 
@@ -33,17 +34,17 @@ class OutputModel(ModelBase):
         self,
         name: str,
         createStepName: str,
-        region: Union[Literal[MODEL], Region] = MODEL,
+        region: Union[Literal[C.MODEL], Region] = MODEL,
         variables: Union[Tuple[str, ...], Literal[PRESELECT, ALL]] = PRESELECT,
-        frequency: Union[int, Literal[LAST_INCREMENT]] = 1,
-        modes: Union[Literal[ALL], Tuple[int, ...]] = ALL,
+        frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
+        modes: Union[Literal[C.ALL], Tuple[int, ...]] = ALL,
         timeInterval: Union[
-            Literal[EVERY_TIME_INCREMENT], float
+            Literal[C.EVERY_TIME_INCREMENT], float
         ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         timeMarks: Boolean = OFF,
         boltLoad: str = "",
-        sectionPoints: Union[Literal[DEFAULT], Tuple[int, ...]] = DEFAULT,
+        sectionPoints: Union[Literal[C.DEFAULT], Tuple[int, ...]] = DEFAULT,
         interactions: Optional[str] = None,
         rebar: Literal[EXCLUDE, INCLUDE, ONLY] = EXCLUDE,
         filter: Optional[SymbolicConstant] = None,
@@ -186,16 +187,16 @@ class OutputModel(ModelBase):
         self,
         name: str,
         createStepName: str,
-        region: Union[Literal[MODEL], Region] = MODEL,
+        region: Union[Literal[C.MODEL], Region] = MODEL,
         variables: Union[Tuple[str, ...], Literal[PRESELECT, ALL]] = PRESELECT,
-        frequency: Union[int, Literal[LAST_INCREMENT]] = 1,
-        modes: Union[Literal[ALL], Tuple[int, ...]] = ALL,
+        frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
+        modes: Union[Literal[C.ALL], Tuple[int, ...]] = ALL,
         timeInterval: Union[
-            Literal[EVERY_TIME_INCREMENT], float
+            Literal[C.EVERY_TIME_INCREMENT], float
         ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         boltLoad: str = "",
-        sectionPoints: Union[Literal[DEFAULT], Tuple[int, ...]] = DEFAULT,
+        sectionPoints: Union[Literal[C.DEFAULT], Tuple[int, ...]] = DEFAULT,
         stepName: str = "",
         interactions: Optional[str] = None,
         contourIntegral: Optional[str] = None,

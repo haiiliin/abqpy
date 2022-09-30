@@ -23,6 +23,7 @@ from .SurfaceSection import SurfaceSection
 from .TrussSection import TrussSection
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
 from ..Model.ModelBase import ModelBase
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ACCELEROMETER, ALIGN, ANALYTICAL_FIELD, AXIAL, BEAM,
                                               BEAM_MPC, BEFORE_ANALYSIS, BENDING, BUSHING, Boolean,
                                               CARDAN, CARTESIAN, CONSTANT, CONSTANT_VELOCITY,
@@ -735,9 +736,9 @@ class SectionModel(ModelBase):
         material: str,
         crossSection: float = 1,
         initialGap: float = 0,
-        initialThickness: Union[Literal[DEFAULT], float] = DEFAULT,
+        initialThickness: Union[Literal[C.DEFAULT], float] = DEFAULT,
         initialVoid: float = 0,
-        stabilizationStiffness: Union[Literal[DEFAULT], float] = DEFAULT,
+        stabilizationStiffness: Union[Literal[C.DEFAULT], float] = DEFAULT,
     ) -> GasketSection:
         """This method creates a GasketSection object.
 

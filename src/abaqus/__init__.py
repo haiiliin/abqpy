@@ -5,10 +5,10 @@ from .Canvas.Highlight import *
 from .Mdb.Mdb import Mdb
 from .Odb.Odb import Odb
 from .Session.Session import Session
+from .UtilityAndView import abaqusConstants
 from .UtilityAndView.BackwardCompatibility import BackwardCompatibility
 from .UtilityAndView.SymbolicConstant import SymbolicConstant
 from .UtilityAndView.User import *
-from .UtilityAndView import abaqusConstants
 from .UtilityAndView.abaqusConstants import Boolean, OFF
 
 session = Session()
