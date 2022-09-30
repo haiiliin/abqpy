@@ -10,6 +10,7 @@ from .UtilityAndView.BackwardCompatibility import BackwardCompatibility
 from .UtilityAndView.SymbolicConstant import SymbolicConstant
 from .UtilityAndView.User import *
 from .UtilityAndView.abaqusConstants import Boolean, OFF
+from abqpy.python2funcs import execfile, execPyFile, upgradeMdb, raw_input
 
 session = Session()
 mdb = Mdb()
