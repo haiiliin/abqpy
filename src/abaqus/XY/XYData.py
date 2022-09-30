@@ -7,25 +7,9 @@ from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .QuantityType import QuantityType
 from ..PathAndProbe.Path import Path
-<<<<<<< HEAD
-from ..UtilityAndView.abaqusConstants import (Boolean,
-                                              COMPLEX_MAGNITUDE, COMPLEX_PHASE,
-                                              COMPLEX_VAL_AT_ANGLE, COMPONENT, DEFORMED,
-                                              ELEMENT_CENTROID, ELEMENT_FACE,
-                                              ELEMENT_NODAL, GENERAL_PARTICLE,
-                                              IMAGINARY, INTEGRATION_POINT,
-                                              INVARIANT, NODAL, NORM_DISTANCE, OFF, ON, PATH_POINTS,
-                                              REAL, SEQ_ID, SymbolicConstant, TRUE_DISTANCE,
-                                              TRUE_DISTANCE_X, TRUE_DISTANCE_Y, TRUE_DISTANCE_Z,
-                                              UNDEFORMED, UNIFORM_SPACING,
-                                              WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE,
-                                              WHOLE_REGION, X_COORDINATE, Y_COORDINATE,
-                                              Z_COORDINATE)
-=======
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean,
                                               OFF, ON, REAL, SymbolicConstant)
->>>>>>> 5e7a52bf (Use napoleon instead of numpydoc (#1772))
 
 
 class Odb:
@@ -394,45 +378,6 @@ class XYData(tuple):
             C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
         ] = REAL,
         complexAngle: float = 0,
-<<<<<<< HEAD
-=======
-        operator: Literal[
-            C.ADD,
-            C.SUBTRACT,
-            C.MULTIPLY,
-            C.DIVIDE,
-            C.POWER,
-            C.MINIMUM,
-            C.MAXIMUM,
-            C.AVERAGE,
-            C.RANGE,
-            C.SRSS,
-            C.ABSOLUTE,
-            C.UNARY_NEGATIVE,
-            C.COSINE,
-            C.HYPERBOLIC_COSINE,
-            C.INVERSE_COSINE,
-            C.SINE,
-            C.HYPERBOLIC_SINE,
-            C.INVERSE_SINE,
-            C.TANGENT,
-            C.HYPERBOLIC_TANGENT,
-            C.INVERSE_TANGENT,
-            C.EXPONENTIAL,
-            C.NATURAL_LOG,
-            C.LOG,
-            C.SQUARE_ROOT,
-            C.NORMALIZE,
-            C.DEG2RAD,
-            C.RAD2DEG,
-            C.SMOOTH,
-            C.SWAP,
-            C.AVERAGE_ALL,
-            C.MAXIMUM_ENVELOPE,
-            C.MINIMUM_ENVELOPE,
-            C.RANGE_ALL,
-        ] = ...,
->>>>>>> 5e7a52bf (Use napoleon instead of numpydoc (#1772))
     ) -> List[XYData]:
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
