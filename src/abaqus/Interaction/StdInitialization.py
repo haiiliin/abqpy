@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactInitialization import ContactInitialization
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import ADJUST, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -29,32 +31,32 @@ class StdInitialization(ContactInitialization):
 
     #: None or a Float specifying the interference distance. This argument is valid only when
     #: **overclosureType** = INTERFERENCE. The default value is None.
-    interferenceDistance: float = None
+    interferenceDistance: Optional[float] = None
 
     #: None or a Float specifying the initial clearance distance. This argument is valid only
     #: when **overclosureType** = CLEARANCE, and must be specified in that case. The default value
     #: is None.
-    clearanceDistance: float = None
+    clearanceDistance: Optional[float] = None
 
     #: None or a Float specifying the distance tolerance within which initial openings will
     #: undergo strain-free adjustments. This argument is not valid when
     #: **overclosureType** = INTERFERENCE unless a value has been specified for
     #: **interferenceDistance**. The default value is None.
-    openingTolerance: float = None
+    openingTolerance: Optional[float] = None
 
     #: None or a Float specifying the distance tolerance within which initial overclosures will
     #: undergo strain-free adjustments.. The default value is None.
-    overclosureTolerance: float = None
+    overclosureTolerance: Optional[float] = None
 
     @abaqus_method_doc
     def __init__(
         self,
         name: str,
         overclosureType: SymbolicConstant = ADJUST,
-        interferenceDistance: float = None,
-        clearanceDistance: float = None,
-        openingTolerance: float = None,
-        overclosureTolerance: float = None,
+        interferenceDistance: Optional[float] = None,
+        clearanceDistance: Optional[float] = None,
+        openingTolerance: Optional[float] = None,
+        overclosureTolerance: Optional[float] = None,
     ):
         """This method creates a StdInitialization object.
 
@@ -101,10 +103,10 @@ class StdInitialization(ContactInitialization):
     def setValues(
         self,
         overclosureType: SymbolicConstant = ADJUST,
-        interferenceDistance: float = None,
-        clearanceDistance: float = None,
-        openingTolerance: float = None,
-        overclosureTolerance: float = None,
+        interferenceDistance: Optional[float] = None,
+        clearanceDistance: Optional[float] = None,
+        openingTolerance: Optional[float] = None,
+        overclosureTolerance: Optional[float] = None,
     ):
         """This method modifies the StdInitialization object.
 

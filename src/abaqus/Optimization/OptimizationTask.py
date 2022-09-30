@@ -1,3 +1,5 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .BeadFixedRegion import BeadFixedRegion
 from .BeadGrowth import BeadGrowth
@@ -39,7 +41,10 @@ from .TopologyPointSymmetry import TopologyPointSymmetry
 from .TopologyRotationalSymmetry import TopologyRotationalSymmetry
 from .TurnControl import TurnControl
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ABSOLUTE_EQUAL, AUTO, AXIS_1, Boolean, DEMOLD_REGION,
+                                              FREE_FORM, MAXIMUM, MINIMIZE, MINIMUM,
+                                              MODEL, OFF, ON, SUM,
+                                              SymbolicConstant, VECTOR)
 
 
 @abaqus_class_doc
@@ -49,13 +54,13 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         identifier: str,
-        csys: int = None,
-        drivingRegion: str = None,
+        csys: Optional[int] = None,
+        drivingRegion: Optional[str] = None,
         operation: SymbolicConstant = SUM,
         region: SymbolicConstant = MODEL,
         shellLayer: SymbolicConstant = MAXIMUM,
         stepOperation: SymbolicConstant = SUM,
-        stepOptions: StepOptionArray = None,
+        stepOptions: Optional[StepOptionArray] = None,
     ) -> SingleTermDesignResponse:
         """This method creates a SingleTermDesignResponse object.
 
@@ -202,7 +207,7 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        csys: int = None,
+        csys: Optional[int] = None,
         u1: Boolean = OFF,
         u2: Boolean = OFF,
         u3: Boolean = OFF,
@@ -314,7 +319,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         region: Region,
         axis: SymbolicConstant = AXIS_1,
-        csys: int = None,
+        csys: Optional[int] = None,
     ) -> BeadPlanarSymmetry:
         """This method creates a BeadPlanarSymmetry object.
 
@@ -349,7 +354,7 @@ class OptimizationTask(OptimizationTaskBase):
 
     @abaqus_method_doc
     def BeadPointSymmetry(
-        self, name: str, region: Region, csys: int = None
+        self, name: str, region: Region, csys: Optional[int] = None
     ) -> BeadPointSymmetry:
         """This method creates a BeadPointSymmetry object.
 
@@ -386,7 +391,7 @@ class OptimizationTask(OptimizationTaskBase):
         angle: float,
         region: Region,
         axis: SymbolicConstant = AXIS_1,
-        csys: int = None,
+        csys: Optional[int] = None,
     ) -> BeadRotationalSymmetry:
         """This method creates a BeadRotationalSymmetry object.
 
@@ -428,8 +433,8 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        csys: int = None,
-        masterPoint: str = None,
+        csys: Optional[int] = None,
+        masterPoint: Optional[str] = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
         movementRestriction: SymbolicConstant = VECTOR,
         presumeFeasibleRegionAtStart: Boolean = ON,
@@ -508,9 +513,9 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         clientDirection: tuple,
         region: Region,
-        csys: int = None,
+        csys: Optional[int] = None,
         drawAngle: float = 0,
-        masterPoint: str = None,
+        masterPoint: Optional[str] = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
@@ -590,7 +595,7 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        csys: int = None,
+        csys: Optional[int] = None,
         presumeFeasibleRegionAtStart: Boolean = ON,
         u1: Boolean = OFF,
         u2: Boolean = OFF,
@@ -756,7 +761,7 @@ class OptimizationTask(OptimizationTaskBase):
         pullDirection: tuple,
         region: Region,
         collisionCheckRegion: SymbolicConstant = DEMOLD_REGION,
-        csys: int = None,
+        csys: Optional[int] = None,
         drawAngle: float = 0,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
@@ -885,7 +890,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         clientDirection: tuple,
         region: Region,
-        csys: int = None,
+        csys: Optional[int] = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
@@ -954,7 +959,7 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        csys: int = None,
+        csys: Optional[int] = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
@@ -1020,11 +1025,11 @@ class OptimizationTask(OptimizationTaskBase):
         clientDirection: tuple,
         region: Region,
         angle: float = 0,
-        csys: int = None,
-        masterPoint: str = None,
+        csys: Optional[int] = None,
+        masterPoint: Optional[str] = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
-        startPoint: float = None,
+        startPoint: Optional[float] = None,
         tolerance1: float = 0,
         tolerance2: float = 0,
         tolerance3: float = 0,
@@ -1134,7 +1139,7 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         translation: float,
         axis: SymbolicConstant = AXIS_1,
-        csys: int = None,
+        csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> SizingCyclicSymmetry:
         """This method creates a SizingCyclicSymmetry object.
@@ -1236,7 +1241,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         region: Region,
         axis: SymbolicConstant = AXIS_1,
-        csys: int = None,
+        csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> SizingPlanarSymmetry:
         """This method creates a SizingPlanarSymmetry object.
@@ -1277,7 +1282,7 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        csys: int = None,
+        csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> SizingPointSymmetry:
         """This method creates a SizingPointSymmetry object.
@@ -1317,7 +1322,7 @@ class OptimizationTask(OptimizationTaskBase):
         angle: float,
         region: Region,
         axis: SymbolicConstant = AXIS_1,
-        csys: int = None,
+        csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> SizingRotationalSymmetry:
         """This method creates a SizingRotationalSymmetry object.
@@ -1364,10 +1369,10 @@ class OptimizationTask(OptimizationTaskBase):
         clientDirection: tuple,
         region: Region,
         approach: SymbolicConstant = FREE_FORM,
-        csys: int = None,
-        freeFormRegion: str = None,
+        csys: Optional[int] = None,
+        freeFormRegion: Optional[str] = None,
         presumeFeasibleRegionAtStart: Boolean = ON,
-        revolvedRegion: str = None,
+        revolvedRegion: Optional[str] = None,
         tolerance1: float = 0,
         tolerance2: float = 0,
         tolerance3: float = 0,
@@ -1445,9 +1450,9 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         clientDirection: tuple,
         region: Region,
-        csys: int = None,
+        csys: Optional[int] = None,
         drawAngle: float = 0,
-        masterPoint: str = None,
+        masterPoint: Optional[str] = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
@@ -1528,7 +1533,7 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         translation: float,
         axis: SymbolicConstant = AXIS_1,
-        csys: int = None,
+        csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> TopologyCyclicSymmetry:
         """This method creates a TopologyCyclicSymmetry object.
@@ -1576,10 +1581,10 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        csys: int = None,
+        csys: Optional[int] = None,
         draftAngle: float = 0,
         collisionCheckRegion: SymbolicConstant = DEMOLD_REGION,
-        pointRegion: Region = None,
+        pointRegion: Optional[Region] = None,
         pullDirection: tuple = (),
         technique: SymbolicConstant = AUTO,
     ) -> TopologyDemoldControl:
@@ -1683,12 +1688,13 @@ class OptimizationTask(OptimizationTaskBase):
         return geometricRestriction
 
     @abaqus_method_doc
+                                     
     def TopologyPlanarSymmetry(
         self,
         name: str,
         region: Region,
         axis: SymbolicConstant = AXIS_1,
-        csys: int = None,
+        csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> TopologyPlanarSymmetry:
         """This method creates a TopologyPlanarSymmetry object.
@@ -1733,7 +1739,7 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        csys: int = None,
+        csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> TopologyPointSymmetry:
         """This method creates a TopologyPointSymmetry object.
@@ -1775,7 +1781,7 @@ class OptimizationTask(OptimizationTaskBase):
         angle: float,
         region: Region,
         axis: SymbolicConstant = AXIS_1,
-        csys: int = None,
+        csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> TopologyRotationalSymmetry:
         """This method creates a TopologyRotationalSymmetry object.
@@ -1823,8 +1829,8 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         clientDirection: tuple,
         region: Region,
-        csys: int = None,
-        masterPoint: str = None,
+        csys: Optional[int] = None,
+        masterPoint: Optional[str] = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,

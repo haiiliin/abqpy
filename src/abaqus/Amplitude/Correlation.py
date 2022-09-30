@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc
 from .Amplitude import Amplitude
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import CORRELATED, STEP, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -27,7 +29,7 @@ class Correlation(Amplitude):
     #: A tuple of tuples of Floats specifying the real and imaginary part of the scaling
     #: factor. If **approach** = MOVING_NOISE, then **data** represents the noise velocity components
     #: 1, 2, and 3.
-    data: float = None
+    data: Optional[float] = None
 
     #: A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
     #: and TOTAL. The default value is STEP.

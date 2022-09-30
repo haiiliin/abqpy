@@ -1,4 +1,7 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 
 @abaqus_class_doc
 class IgnoredEdge:
@@ -16,11 +19,11 @@ class IgnoredEdge:
     """
 
     #: An Int specifying the index of the IgnoredEdge in the IgnoredEdgeArray.
-    index: int = None
+    index: Optional[int] = None
 
     #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
     #: the edge.
-    pointOn: float = None
+    pointOn: Optional[float] = None
 
     @abaqus_method_doc
     def getSize(self, printResults: str = True):

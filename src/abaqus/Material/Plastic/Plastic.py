@@ -5,7 +5,8 @@ from .Metal.Cyclic.CyclicHardening import CyclicHardening
 from .Metal.ORNL.Ornl import Ornl
 from .Metal.RateDependent.RateDependent import RateDependent
 from .Potential import Potential
-from ...UtilityAndView.abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import (Boolean, HALF_CYCLE, ISOTROPIC, OFF,
+                                               SymbolicConstant)
 
 
 @abaqus_class_doc

@@ -1,5 +1,5 @@
 import inspect
-import typing
+from typing import List
 
 
 class _OptionsBase:
@@ -8,7 +8,7 @@ class _OptionsBase:
     """
 
     @classmethod
-    def get_user_attributes(cls) -> typing.List[str]:
+    def get_user_attributes(cls) -> List[str]:
         """Returns a list of the user attributes of the class.
 
         Returns

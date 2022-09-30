@@ -1,3 +1,5 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc
 
 
@@ -24,8 +26,8 @@ class OdbMeshNode:
     """
 
     #: An Int specifying the node label.
-    label: int = None
+    label: Optional[int] = None
 
     #: A tuple of Floats specifying the nodal coordinates in the global Cartesian coordinate
     #: system.
-    coordinates: float = None
+    coordinates: Optional[float] = None

@@ -27,7 +27,7 @@ class MeshEdge:
 
         Returns
         -------
-        typing.Tuple[MeshElement, ...]
+        Tuple[MeshElement, ...]
             A tuple of :py:class:`~abaqus.Mesh.MeshElement.MeshElement` objects.
         """
         ...
@@ -74,7 +74,7 @@ class MeshEdge:
 
         Returns
         -------
-        typing.Tuple[MeshFace, ...]
+        Tuple[MeshFace, ...]
             A tuple of :py:class:`~abaqus.Mesh.MeshFace.MeshFace` objects.
         """
         ...
@@ -85,7 +85,7 @@ class MeshEdge:
 
         Returns
         -------
-        typing.Tuple[MeshNode, ...]
+        Tuple[MeshNode, ...]
             A tuple of :py:class:`~abaqus.Mesh.MeshNode.MeshNode` objects.
         """
         ...

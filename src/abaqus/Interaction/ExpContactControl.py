@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactControl import ContactControl
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, ON, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -31,7 +33,7 @@ class ExpContactControl(ContactControl):
     #: An Int specifying the maximum number of increments between global contact searches. The
     #: **globTrkInc** argument applies only when **globTrkChoice** = SPECIFY. The default value is
     #: 100 for surface-to-surface contact and 4 for self-contact.
-    globTrkInc: int = None
+    globTrkInc: Optional[int] = None
 
     #: A Boolean specifying whether to use the more computationally efficient local tracking
     #: method. The default value is ON.
@@ -55,7 +57,7 @@ class ExpContactControl(ContactControl):
         self,
         name: str,
         globTrkChoice: SymbolicConstant = DEFAULT,
-        globTrkInc: int = None,
+        globTrkInc: Optional[int] = None,
         fastLocalTrk: Boolean = ON,
         scalePenalty: float = 1,
         warpCheckPeriod: int = 20,
@@ -109,7 +111,7 @@ class ExpContactControl(ContactControl):
     def setValues(
         self,
         globTrkChoice: SymbolicConstant = DEFAULT,
-        globTrkInc: int = None,
+        globTrkInc: Optional[int] = None,
         fastLocalTrk: Boolean = ON,
         scalePenalty: float = 1,
         warpCheckPeriod: int = 20,

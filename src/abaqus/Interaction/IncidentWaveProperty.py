@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactProperty import ContactProperty
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import ACOUSTIC, Boolean, ON, PLANAR, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -36,29 +38,29 @@ class IncidentWaveProperty(ContactProperty):
 
     #: A Float specifying the speed of sound in the fluid.This argument is not valid when
     #: **definition** = AIR_BLAST or when **definition** = SURFACE_BLAST.
-    soundSpeed: float = None
+    soundSpeed: Optional[float] = None
 
     #: A Float specifying the fluid mass density.This argument is not valid when
     #: **definition** = AIR_BLAST or when **definition** = SURFACE_BLAST.
-    fluidDensity: float = None
+    fluidDensity: Optional[float] = None
 
     #: None or a Float specifying the ratio of specific heats for gas. The default value is
     #: None.This argument is valid only when **definition** = SPHERICAL and
     #: **propagationModel** = UNDEX_CHARGE.
-    specificHeatRatio: float = None
+    specificHeatRatio: Optional[float] = None
 
     #: None or a Float specifying the acceleration due to gravity. The default value is
     #: None.This argument is valid only when **definition** = SPHERICAL and
     #: **propagationModel** = UNDEX_CHARGE.
-    gravity: float = None
+    gravity: Optional[float] = None
 
     #: None or a Float specifying the atmospheric pressure. The default value is None.This
     #: argument is valid only when **definition** = SPHERICAL and **propagationModel** = UNDEX_CHARGE.
-    atmosphericPressure: float = None
+    atmosphericPressure: Optional[float] = None
 
     #: None or a Float specifying the fluid drag coefficient. The default value is None.This
     #: argument is valid only when **definition** = SPHERICAL and **propagationModel** = UNDEX_CHARGE.
-    dragCoefficient: float = None
+    dragCoefficient: Optional[float] = None
 
     #: A Float specifying the fluid drag exponent. The default value is 2.0.This argument is
     #: valid only when **definition** = SPHERICAL and **propagationModel** = UNDEX_CHARGE.
@@ -72,42 +74,42 @@ class IncidentWaveProperty(ContactProperty):
     #: None or a Float specifying the density of the charge material. The default value is
     #: None.This argument is valid only when **definition** = SPHERICAL and
     #: **propagationModel** = UNDEX_CHARGE.
-    chargeDensity: float = None
+    chargeDensity: Optional[float] = None
 
     #: None or a Float specifying the mass of the charge material. The default value is
     #: None.This argument is valid only when **definition** = SPHERICAL and
     #: **propagationModel** = UNDEX_CHARGE.
-    chargeMass: float = None
+    chargeMass: Optional[float] = None
 
     #: None or a Float specifying the charge material constant K. The default value is
     #: None.This argument is valid only when **definition** = SPHERICAL and
     #: **propagationModel** = UNDEX_CHARGE.
-    constantK1: float = None
+    constantK1: Optional[float] = None
 
     #: None or a Float specifying the charge material constant k. The default value is
     #: None.This argument is valid only when **definition** = SPHERICAL and
     #: **propagationModel** = UNDEX_CHARGE.
-    constantK2: float = None
+    constantK2: Optional[float] = None
 
     #: None or a Float specifying the charge material constant A. The default value is
     #: None.This argument is valid only when **definition** = SPHERICAL and
     #: **propagationModel** = UNDEX_CHARGE.
-    constantA: float = None
+    constantA: Optional[float] = None
 
     #: None or a Float specifying the charge material constant B. The default value is
     #: None.This argument is valid only when **definition** = SPHERICAL and
     #: **propagationModel** = UNDEX_CHARGE.
-    constantB: float = None
+    constantB: Optional[float] = None
 
     #: None or a Float specifying the charge material constant Kc. The default value is
     #: None.This argument is valid only when **definition** = SPHERICAL and
     #: **propagationModel** = UNDEX_CHARGE.
-    constantKc: float = None
+    constantKc: Optional[float] = None
 
     #: None or a Float specifying the time duration for the bubble simulation. The default
     #: value is None.This argument is valid only when **definition** = SPHERICAL and
     #: **propagationModel** = UNDEX_CHARGE.
-    duration: float = None
+    duration: Optional[float] = None
 
     #: An Int specifying the maximum number of time steps for the bubble simulation. The
     #: default value is 1500.This argument is valid only when **definition** = SPHERICAL and
@@ -117,12 +119,12 @@ class IncidentWaveProperty(ContactProperty):
     #: A Float specifying the relative step size control parameter. The default value is
     #: 1x10-11.This argument is valid only when **definition** = SPHERICAL and
     #: **propagationModel** = UNDEX_CHARGE.
-    relativeStepControl: float = None
+    relativeStepControl: Optional[float] = None
 
     #: A Float specifying the absolute step size control parameter. The default value is
     #: 1x10-11.This argument is valid only when **definition** = SPHERICAL and
     #: **propagationModel** = UNDEX_CHARGE.
-    absoluteStepControl: float = None
+    absoluteStepControl: Optional[float] = None
 
     #: A Float specifying the step size control exponent. The default value is 0.2.This
     #: argument is valid only when **definition** = SPHERICAL and **propagationModel** = UNDEX_CHARGE.
@@ -145,11 +147,11 @@ class IncidentWaveProperty(ContactProperty):
 
     #: An Int specifying the seed number (N) for the diffuse source calculation. N2 sources
     #: will be used in the simulation.This argument is valid only when **definition** = DIFFUSE.
-    seedNumber: int = None
+    seedNumber: Optional[int] = None
 
     #: A Float specifying the equivalent mass of TNT, in any preferred mass unit.This argument
     #: is valid only when **definition** = AIR_BLAST or **definition** = SURFACE_BLAST.
-    massTNT: float = None
+    massTNT: Optional[float] = None
 
     #: A Float specifying the multiplication factor to convert from the preferred mass unit to
     #: kilograms. The default value is 1.0.This argument is valid only when
@@ -177,31 +179,31 @@ class IncidentWaveProperty(ContactProperty):
         name: str,
         definition: SymbolicConstant = PLANAR,
         propagationModel: SymbolicConstant = ACOUSTIC,
-        soundSpeed: float = None,
-        fluidDensity: float = None,
-        specificHeatRatio: float = None,
-        gravity: float = None,
-        atmosphericPressure: float = None,
-        dragCoefficient: float = None,
+        soundSpeed: Optional[float] = None,
+        fluidDensity: Optional[float] = None,
+        specificHeatRatio: Optional[float] = None,
+        gravity: Optional[float] = None,
+        atmosphericPressure: Optional[float] = None,
+        dragCoefficient: Optional[float] = None,
         dragExponent: float = 2,
         waveEffects: Boolean = ON,
-        chargeDensity: float = None,
-        chargeMass: float = None,
-        constantK1: float = None,
-        constantK2: float = None,
-        constantA: float = None,
-        constantB: float = None,
-        constantKc: float = None,
-        duration: float = None,
+        chargeDensity: Optional[float] = None,
+        chargeMass: Optional[float] = None,
+        constantK1: Optional[float] = None,
+        constantK2: Optional[float] = None,
+        constantA: Optional[float] = None,
+        constantB: Optional[float] = None,
+        constantKc: Optional[float] = None,
+        duration: Optional[float] = None,
         maximumSteps: int = 1500,
-        relativeStepControl: float = None,
-        absoluteStepControl: float = None,
+        relativeStepControl: Optional[float] = None,
+        absoluteStepControl: Optional[float] = None,
         stepControlExponent: float = 0,
         genDecayA: float = 0,
         genDecayB: float = 0,
         genDecayC: float = 0,
-        seedNumber: int = None,
-        massTNT: float = None,
+        seedNumber: Optional[int] = None,
+        massTNT: Optional[float] = None,
         massFactor: float = 1,
         lengthFactor: float = 1,
         timeFactor: float = 1,
@@ -346,31 +348,31 @@ class IncidentWaveProperty(ContactProperty):
         self,
         definition: SymbolicConstant = PLANAR,
         propagationModel: SymbolicConstant = ACOUSTIC,
-        soundSpeed: float = None,
-        fluidDensity: float = None,
-        specificHeatRatio: float = None,
-        gravity: float = None,
-        atmosphericPressure: float = None,
-        dragCoefficient: float = None,
+        soundSpeed: Optional[float] = None,
+        fluidDensity: Optional[float] = None,
+        specificHeatRatio: Optional[float] = None,
+        gravity: Optional[float] = None,
+        atmosphericPressure: Optional[float] = None,
+        dragCoefficient: Optional[float] = None,
         dragExponent: float = 2,
         waveEffects: Boolean = ON,
-        chargeDensity: float = None,
-        chargeMass: float = None,
-        constantK1: float = None,
-        constantK2: float = None,
-        constantA: float = None,
-        constantB: float = None,
-        constantKc: float = None,
-        duration: float = None,
+        chargeDensity: Optional[float] = None,
+        chargeMass: Optional[float] = None,
+        constantK1: Optional[float] = None,
+        constantK2: Optional[float] = None,
+        constantA: Optional[float] = None,
+        constantB: Optional[float] = None,
+        constantKc: Optional[float] = None,
+        duration: Optional[float] = None,
         maximumSteps: int = 1500,
-        relativeStepControl: float = None,
-        absoluteStepControl: float = None,
+        relativeStepControl: Optional[float] = None,
+        absoluteStepControl: Optional[float] = None,
         stepControlExponent: float = 0,
         genDecayA: float = 0,
         genDecayB: float = 0,
         genDecayC: float = 0,
-        seedNumber: int = None,
-        massTNT: float = None,
+        seedNumber: Optional[int] = None,
+        massTNT: Optional[float] = None,
         massFactor: float = 1,
         lengthFactor: float = 1,
         timeFactor: float = 1,

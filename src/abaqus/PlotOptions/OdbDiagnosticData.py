@@ -1,4 +1,4 @@
-import typing
+from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc
 from .OdbAnalysisError import OdbAnalysisError
@@ -6,7 +6,7 @@ from .OdbAnalysisWarning import OdbAnalysisWarning
 from .OdbDiagnosticStep import OdbDiagnosticStep
 from .OdbJobTime import OdbJobTime
 from .OdbNumericalProblemSummary import OdbNumericalProblemSummary
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
@@ -21,13 +21,13 @@ class OdbDiagnosticData:
     """
 
     #: A repository of OdbAnalysisError objects.
-    analysisErrors: typing.Dict[str, OdbAnalysisError] = {}
+    analysisErrors: Dict[str, OdbAnalysisError] = {}
 
     #: A repository of OdbAnalysisWarning objects.
-    analysisWarnings: typing.Dict[str, OdbAnalysisWarning] = {}
+    analysisWarnings: Dict[str, OdbAnalysisWarning] = {}
 
     #: A repository of OdbDiagnosticStep objects.
-    steps: typing.Dict[str, OdbDiagnosticStep] = {}
+    steps: Dict[str, OdbDiagnosticStep] = {}
 
     #: An :py:class:`~abaqus.PlotOptions.OdbJobTime.OdbJobTime` object.
     jobTime: OdbJobTime = OdbJobTime()

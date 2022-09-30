@@ -1,7 +1,7 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import BK, Boolean, DEFAULT, OFF, SymbolicConstant, VCCT
 
 
 @abaqus_class_doc
@@ -106,7 +106,7 @@ class FractureCriterion:
     #: The SymbolicConstant DEFAULT or a Float specifying the tolerance for unstable crack
     #: propagation. This parameter specified only if **specifyUnstableCrackProp** = ON. The default
     #: value is DEFAULT.
-    unstableTolerance: typing.Union[SymbolicConstant, float] = DEFAULT
+    unstableTolerance: Union[SymbolicConstant, float] = DEFAULT
 
     @abaqus_method_doc
     def __init__(
@@ -118,7 +118,7 @@ class FractureCriterion:
         dependencies: int = 0,
         tolerance: float = 0,
         specifyUnstableCrackProp: SymbolicConstant = OFF,
-        unstableTolerance: typing.Union[SymbolicConstant, float] = DEFAULT,
+        unstableTolerance: Union[SymbolicConstant, float] = DEFAULT,
     ):
         r"""This method creates a FractureCriterion object.
 

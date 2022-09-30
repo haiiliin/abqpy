@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .SectionLayer import SectionLayer
 
-SectionLayerArray = typing.List[SectionLayer]
+SectionLayerArray = List[SectionLayer]

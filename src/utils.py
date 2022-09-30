@@ -1,6 +1,6 @@
 import os
 import re
-import typing
+from typing import List
 
 
 def findUserTypePath(type: str, searchDir: str):
@@ -43,7 +43,7 @@ def replaceUserType(searchDir: str):
             filePath = os.path.join(searchDir, file)
             with open(filePath, 'r+', encoding='utf-8') as f:
                 text = f.read()
-                strings: typing.List[str] = re.findall(r'An? \w+ object', text)
+                strings: List[str] = re.findall(r'An? \w+ object', text)
                 for string in strings:
                     type = string.split(' ')[-2]
                     module = findModuleName(type, '.').replace('\\', '.')
@@ -73,7 +73,7 @@ def addAttributes(searchDir: str):
             filePath = os.path.join(searchDir, file)
             with open(filePath, 'r+', encoding='utf-8') as f:
                 text = f.read()
-                strings: typing.List[str] = re.findall(
+                strings: List[str] = re.findall(
                     r'The \w+ object has members with the same names and descriptions as the arguments to the ', text)
 
             if len(strings) > 0:

@@ -1,4 +1,4 @@
-import typing
+from typing import Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -22,7 +22,7 @@ class Transform:
 
         Returns
         -------
-        typing.Tuple[float, float, float, float, float, float, float, float, float, float, float, float]
+        Tuple[float, float, float, float, float, float, float, float, float, float, float, float]
             A tuple of 12 Floats.
 
         """

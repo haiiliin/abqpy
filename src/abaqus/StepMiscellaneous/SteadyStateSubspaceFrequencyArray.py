@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .SteadyStateSubspaceFrequency import SteadyStateSubspaceFrequency
 
-SteadyStateSubspaceFrequencyArray = typing.List[SteadyStateSubspaceFrequency]
+SteadyStateSubspaceFrequencyArray = List[SteadyStateSubspaceFrequency]

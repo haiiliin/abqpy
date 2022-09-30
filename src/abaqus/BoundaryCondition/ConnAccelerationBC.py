@@ -1,9 +1,9 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SET, SymbolicConstant, UNIFORM, UNSET
 
 
 @abaqus_class_doc
@@ -40,7 +40,7 @@ class ConnAccelerationBC(BoundaryCondition):
 
     #: A SymbolicConstant specifying the category of the boundary condition. Possible values
     #: are MECHANICAL and THERMAL.
-    category: SymbolicConstant = None
+    category: Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
@@ -48,7 +48,7 @@ class ConnAccelerationBC(BoundaryCondition):
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: str = None
+    localCsys: Optional[str] = None
 
     @abaqus_method_doc
     def __init__(
@@ -58,12 +58,12 @@ class ConnAccelerationBC(BoundaryCondition):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        a1: typing.Union[SymbolicConstant, float] = UNSET,
-        a2: typing.Union[SymbolicConstant, float] = UNSET,
-        a3: typing.Union[SymbolicConstant, float] = UNSET,
-        ar1: typing.Union[SymbolicConstant, float] = UNSET,
-        ar2: typing.Union[SymbolicConstant, float] = UNSET,
-        ar3: typing.Union[SymbolicConstant, float] = UNSET,
+        a1: Union[SymbolicConstant, float] = UNSET,
+        a2: Union[SymbolicConstant, float] = UNSET,
+        a3: Union[SymbolicConstant, float] = UNSET,
+        ar1: Union[SymbolicConstant, float] = UNSET,
+        ar2: Union[SymbolicConstant, float] = UNSET,
+        ar3: Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
         distributionType: SymbolicConstant = UNIFORM,
     ):
@@ -142,12 +142,12 @@ class ConnAccelerationBC(BoundaryCondition):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        a1: typing.Union[SymbolicConstant, float] = UNSET,
-        a2: typing.Union[SymbolicConstant, float] = UNSET,
-        a3: typing.Union[SymbolicConstant, float] = UNSET,
-        ar1: typing.Union[SymbolicConstant, float] = UNSET,
-        ar2: typing.Union[SymbolicConstant, float] = UNSET,
-        ar3: typing.Union[SymbolicConstant, float] = UNSET,
+        a1: Union[SymbolicConstant, float] = UNSET,
+        a2: Union[SymbolicConstant, float] = UNSET,
+        a3: Union[SymbolicConstant, float] = UNSET,
+        ar1: Union[SymbolicConstant, float] = UNSET,
+        ar2: Union[SymbolicConstant, float] = UNSET,
+        ar3: Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
         distributionType: SymbolicConstant = UNIFORM,
     ):
@@ -209,12 +209,12 @@ class ConnAccelerationBC(BoundaryCondition):
     def setValuesInStep(
         self,
         stepName: str,
-        a1: typing.Union[SymbolicConstant, float] = SET,
-        a2: typing.Union[SymbolicConstant, float] = SET,
-        a3: typing.Union[SymbolicConstant, float] = SET,
-        ar1: typing.Union[SymbolicConstant, float] = SET,
-        ar2: typing.Union[SymbolicConstant, float] = SET,
-        ar3: typing.Union[SymbolicConstant, float] = SET,
+        a1: Union[SymbolicConstant, float] = SET,
+        a2: Union[SymbolicConstant, float] = SET,
+        a3: Union[SymbolicConstant, float] = SET,
+        ar1: Union[SymbolicConstant, float] = SET,
+        ar2: Union[SymbolicConstant, float] = SET,
+        ar3: Union[SymbolicConstant, float] = SET,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing ConnAccelerationBC object in

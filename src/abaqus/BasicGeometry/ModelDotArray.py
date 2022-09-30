@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .ModelDot import ModelDot
 
-ModelDotArray = typing.List[ModelDot]
+ModelDotArray = List[ModelDot]

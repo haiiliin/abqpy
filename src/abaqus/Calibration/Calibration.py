@@ -1,3 +1,5 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Behavior import Behavior
 from .DataSet import DataSet
@@ -16,10 +18,10 @@ class Calibration:
     """
 
     #: A :py:class:`~abaqus.Calibration.DataSet.DataSet` object.
-    dataSets: DataSet = None
+    dataSets: Optional[DataSet] = None
 
     #: A :py:class:`~abaqus.Calibration.Behavior.Behavior` object.
-    behaviors: Behavior = None
+    behaviors: Optional[Behavior] = None
 
     #: A String specifying the name of the new calibration.
     name: str

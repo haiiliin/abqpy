@@ -1,7 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, MAXIMUM, ON, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -32,7 +34,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
     #: None or a DatumCsys object specifying the local coordinate system. If **csys** = None, the
     #: global coordinate system is used. When this member is queried, it returns an Int. The
     #: default value is None.
-    csys: int = None
+    csys: Optional[int] = None
     #: A SymbolicConstant specifying the rule for determining the main node. Possible values
     #: are MAXIMUM and MINIMUM. The default value is MAXIMUM.
     masterPointDetermination: SymbolicConstant = MAXIMUM
@@ -59,7 +61,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
         name: str,
         clientDirection: tuple,
         region: Region,
-        csys: int = None,
+        csys: Optional[int] = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
@@ -115,7 +117,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
-        csys: int = None,
+        csys: Optional[int] = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,

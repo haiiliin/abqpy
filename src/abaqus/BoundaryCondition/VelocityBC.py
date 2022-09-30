@@ -1,9 +1,9 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SET, SymbolicConstant, UNIFORM, UNSET
 
 
 @abaqus_class_doc
@@ -32,7 +32,7 @@ class VelocityBC(BoundaryCondition):
 
     #: A SymbolicConstant specifying the category of the boundary condition. Possible values
     #: are MECHANICAL and THERMAL.
-    category: SymbolicConstant = None
+    category: Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the boundary condition is applied.
     region: Region = Region()
@@ -40,7 +40,7 @@ class VelocityBC(BoundaryCondition):
     #: None or a DatumCsys object specifying the local coordinate system of the boundary
     #: condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
     #: in the global coordinate system. The default value is None.
-    localCsys: str = None
+    localCsys: Optional[str] = None
 
     @abaqus_method_doc
     def __init__(
@@ -49,14 +49,14 @@ class VelocityBC(BoundaryCondition):
         createStepName: str,
         region: Region,
         fieldName: str = "",
-        v1: typing.Union[SymbolicConstant, float] = UNSET,
-        v2: typing.Union[SymbolicConstant, float] = UNSET,
-        v3: typing.Union[SymbolicConstant, float] = UNSET,
-        vr1: typing.Union[SymbolicConstant, float] = UNSET,
-        vr2: typing.Union[SymbolicConstant, float] = UNSET,
-        vr3: typing.Union[SymbolicConstant, float] = UNSET,
+        v1: Union[SymbolicConstant, float] = UNSET,
+        v2: Union[SymbolicConstant, float] = UNSET,
+        v3: Union[SymbolicConstant, float] = UNSET,
+        vr1: Union[SymbolicConstant, float] = UNSET,
+        vr2: Union[SymbolicConstant, float] = UNSET,
+        vr3: Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: str = None,
+        localCsys: Optional[str] = None,
         distributionType: SymbolicConstant = UNIFORM,
     ):
         """This method creates a VelocityBC object.
@@ -125,14 +125,14 @@ class VelocityBC(BoundaryCondition):
     def setValues(
         self,
         fieldName: str = "",
-        v1: typing.Union[SymbolicConstant, float] = UNSET,
-        v2: typing.Union[SymbolicConstant, float] = UNSET,
-        v3: typing.Union[SymbolicConstant, float] = UNSET,
-        vr1: typing.Union[SymbolicConstant, float] = UNSET,
-        vr2: typing.Union[SymbolicConstant, float] = UNSET,
-        vr3: typing.Union[SymbolicConstant, float] = UNSET,
+        v1: Union[SymbolicConstant, float] = UNSET,
+        v2: Union[SymbolicConstant, float] = UNSET,
+        v3: Union[SymbolicConstant, float] = UNSET,
+        vr1: Union[SymbolicConstant, float] = UNSET,
+        vr2: Union[SymbolicConstant, float] = UNSET,
+        vr3: Union[SymbolicConstant, float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: str = None,
+        localCsys: Optional[str] = None,
         distributionType: SymbolicConstant = UNIFORM,
     ):
         """This method modifies the data for an existing VelocityBC object in the step where it is
@@ -186,12 +186,12 @@ class VelocityBC(BoundaryCondition):
     def setValuesInStep(
         self,
         stepName: str,
-        v1: typing.Union[SymbolicConstant, float] = SET,
-        v2: typing.Union[SymbolicConstant, float] = SET,
-        v3: typing.Union[SymbolicConstant, float] = SET,
-        vr1: typing.Union[SymbolicConstant, float] = SET,
-        vr2: typing.Union[SymbolicConstant, float] = SET,
-        vr3: typing.Union[SymbolicConstant, float] = SET,
+        v1: Union[SymbolicConstant, float] = SET,
+        v2: Union[SymbolicConstant, float] = SET,
+        v3: Union[SymbolicConstant, float] = SET,
+        vr1: Union[SymbolicConstant, float] = SET,
+        vr2: Union[SymbolicConstant, float] = SET,
+        vr3: Union[SymbolicConstant, float] = SET,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing VelocityBC object in the

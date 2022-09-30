@@ -1,10 +1,10 @@
-import typing
+from typing import Optional
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from abqpy.decorators import abaqus_class_doc
 from .Datum import Datum
 from .DatumAxis import DatumAxis
 from .DatumPoint import DatumPoint
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc
@@ -32,7 +32,7 @@ class DatumCsys(Datum):
 
     #: A SymbolicConstant specifying the type of the coordinate system. Possible values are
     #: CARTESIAN, CYLINDRICAL, and SPHERICAL.
-    coordSysType: SymbolicConstant = None
+    coordSysType: Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Datum.DatumPoint.DatumPoint` object specifying the origin of the coordinate system.
     origin: DatumPoint = DatumPoint()

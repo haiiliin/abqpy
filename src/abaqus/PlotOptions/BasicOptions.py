@@ -1,8 +1,12 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Datum.DatumCsys import DatumCsys
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, CATEGORY_BASED, COARSE, DEFAULT,
+                                              EXTRAPOLATE_AVERAGE_COMPUTE, FIELD_OUTPUT, GLOBAL,
+                                              INTEGRATION_POINT, MAX_ABS_VALUE, MIDDLE,
+                                              MIRROR_RECT_CIRC, ODB_REGIONS, OFF, ON, REAL,
+                                              SELECT_BY_NUMBER, SymbolicConstant, USE_BOTTOM, ZAXIS)
 from .._OptionsBase import _CopyOptionsBase
 
 
@@ -56,7 +60,7 @@ class BasicOptions(_CopyOptionsBase):
 
     #: A SymbolicConstant specifying the extrapolation algorithm. This member is for internal
     #: use only. The only possible value is EXTRAP_COMPUTE_AVERAGE.
-    extrapAlgorithm: SymbolicConstant = None
+    extrapAlgorithm: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the refinement level for drawing curves. Possible values
     #: are EXTRA_COARSE, COARSE, MEDIUM, FINE, and EXTRA_FINE. The default value is COARSE.
@@ -162,11 +166,11 @@ class BasicOptions(_CopyOptionsBase):
 
     #: An Int specifying the number of segments to display when **sweepArs** = ON. The default
     #: value is 10 or 20, depending on characteristics of your model.
-    numSweepSegmentsArs: int = None
+    numSweepSegmentsArs: Optional[int] = None
 
     #: An Int specifying the number of segments to display when **sweepElem** = ON. The default
     #: value is 10 or 20, depending on characteristics of your model.
-    numSweepSegmentsElem: int = None
+    numSweepSegmentsElem: Optional[int] = None
 
     #: A SymbolicConstant specifying the numeric form in which to display results that contain
     #: complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
@@ -331,7 +335,7 @@ class BasicOptions(_CopyOptionsBase):
 
     #: An Int specifying the types of sweepable elements and surfaces contained in the model,
     #: if any.
-    sweepModelType: int = None
+    sweepModelType: Optional[int] = None
 
     #: A Boolean specifying whether to average the element output. The default value is ON.
     averageElementOutput: Boolean = ON
@@ -359,15 +363,15 @@ class BasicOptions(_CopyOptionsBase):
 
     #: An Int specifying the number of sectors of a cyclic symmetric model. The value is
     #: automatically computed from the cyclic symmetric model. This value is read-only.
-    numSectors: int = None
+    numSectors: Optional[int] = None
 
     #: A Float specifying the sector angle of a cyclic symmetric model. The value is
     #: automatically computed from the cyclic symmetric model. This value is read-only.
-    sectorAngle: float = None
+    sectorAngle: Optional[float] = None
 
     #: A Float specifying the automatic extrude depth used to extrude analytical rigid surfaces
     #: in the default setting. This value is read-only.
-    automaticExtrudeDepth: float = None
+    automaticExtrudeDepth: Optional[float] = None
 
     #: A String specifying the name of the coordinate system driving the moving camera.
     cameraCsysName: str = ""
@@ -392,7 +396,7 @@ class BasicOptions(_CopyOptionsBase):
     #: A tuple of Ints specifying which sectors to display when
     #: **sectorSelectionType** = SELECT_BY_NUMBER. Possible values are 1 ≤ **selectedSectorNumbers**
     #: ≤ the number of sectors. The default value is (1).
-    selectedSectorNumbers: typing.Tuple[int, ...] = None
+    selectedSectorNumbers: Tuple[int, ...] = None
 
     #: A tuple of Strings specifying either element set or display group names (depending on
     #: the value of regionBoundaries) defining the averaging region boundaries. The default
@@ -402,7 +406,7 @@ class BasicOptions(_CopyOptionsBase):
     @abaqus_method_doc
     def setValues(
         self,
-        options: "BasicOptions" = None,
+        options: Optional["BasicOptions"] = None,
         *,
         cameraCsysName: str = "",
         cameraMovesWithCsys: Boolean = OFF,
@@ -437,8 +441,8 @@ class BasicOptions(_CopyOptionsBase):
         sweepStartAngleElem: float = 0,
         sweepEndAngleArs: float = 360,
         sweepEndAngleElem: float = 180,
-        numSweepSegmentsArs: int = None,
-        numSweepSegmentsElem: int = None,
+        numSweepSegmentsArs: Optional[int] = None,
+        numSweepSegmentsElem: Optional[int] = None,
         numericForm: SymbolicConstant = REAL,
         complexAngle: float = 0,
         sectionResults: SymbolicConstant = USE_BOTTOM,
@@ -448,7 +452,7 @@ class BasicOptions(_CopyOptionsBase):
         sectionPointScheme: SymbolicConstant = CATEGORY_BASED,
         sweepSectors: Boolean = OFF,
         sectorSelectionType: SymbolicConstant = SELECT_BY_NUMBER,
-        selectedSectorNumbers: typing.Tuple[int, ...] = (),
+        selectedSectorNumbers: Tuple[int, ...] = (),
         sweepSectorStartAngle: float = 0,
         sweepSectorEndAngle: float = 360,
         extrudeArs: Boolean = OFF,
@@ -476,7 +480,7 @@ class BasicOptions(_CopyOptionsBase):
         coordSystemDisplay: Boolean = OFF,
         scratchCoordSystemDisplay: Boolean = OFF,
         transformationType: SymbolicConstant = DEFAULT,
-        datumCsys: DatumCsys = None, 
+        datumCsys: Optional[DatumCsys] = None, 
         rigidTransformPrimary: Boolean = OFF,
         rigidTransformDeformed: Boolean = OFF,
         transformOnDeformed: Boolean = ON,

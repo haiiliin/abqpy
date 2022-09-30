@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .OdbFrame import OdbFrame
 
-OdbFrameArray = typing.List[OdbFrame]
+OdbFrameArray = List[OdbFrame]
