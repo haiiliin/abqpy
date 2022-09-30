@@ -5,7 +5,8 @@ from typing_extensions import Literal
 from abqpy.decorators import abaqus_function_doc
 from .CaeGuiPrefs import CaeGuiPrefs
 from .CaeKerPrefs import CaeKerPrefs
-from ..UtilityAndView.abaqusConstants import Boolean, CURRENT, HOME, UNLIMITED
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import Boolean, HOME, UNLIMITED
 
 """The Python module caePrefsAccess contains functions that enable you to edit the 
 Abaqus/CAE preferences file, abaqus_2021.gpr. 
@@ -64,23 +65,23 @@ def getDisplayNamesInGuiPreferences(fileName: str) -> List[str]:
 @abaqus_function_doc
 def printValuesList(
     object: str,
-    maxRecursionDepth: Union[int, Literal[UNLIMITED]] = UNLIMITED,
+    maxRecursionDepth: Union[int, Literal[C.UNLIMITED]] = UNLIMITED,
     asString: Boolean = False,
 ) -> str:
     """This function enables you to print all of the options and their values for a set of
     guiPreferences or sessionOptions settings derived from the abaqus_2021.gpr file.
 
     .. note:: 
-            This function can be accessed by::
+        This function can be accessed by::
 
-                caePrefsAccess.printValuesList
+            caePrefsAccess.printValuesList
 
     Parameters
     ----------
     object: str
         The guiPreferences object or sessionOptions object for which you want to print options
         and their values.
-    maxRecursionDepth: Union[int, Literal[UNLIMITED]]
+    maxRecursionDepth: Union[int, Literal[C.UNLIMITED]]
         An Int, or SymbolicConstant UNLIMITED, that specifies the depth of recursion when
         accessing the attributes of **object**.
     asString: Boolean
@@ -131,7 +132,7 @@ def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
 
 @abaqus_function_doc
 def openSessionOptions(
-    fileName: str = "", directory: Literal[CURRENT, HOME] = HOME
+    fileName: str = "", directory: Literal[C.CURRENT, C.HOME] = HOME
 ) -> CaeKerPrefs:
     """This function enables you to examine and change the default behavior for many session
     options Abaqus/CAE; that is, the settings that you can save in Abaqus/CAE from the
@@ -150,7 +151,7 @@ def openSessionOptions(
         this argument if you are working with a preferences file that is not at the default
         location. If this argument is omitted, the abaqus_2021.gpr file in your home directory is
         opened.
-    directory: Literal[CURRENT, HOME]
+    directory: Literal[C.CURRENT, C.HOME]
         A SymbolicConstant specifying the location of the preferences file. Possible values
         are:
 

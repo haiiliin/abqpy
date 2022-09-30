@@ -60,13 +60,14 @@ extensions = [
     'sphinx_toolbox.more_autodoc.overloads',
     'autoclasstoc',
     'sphinx.ext.autodoc',
-    'sphinx_autodoc_typehints',
-    'numpydoc',
-    'sphinx.ext.mathjax',
+    'sphinx.ext.autosummary',
     'sphinx.ext.linkcode',
     'sphinx.ext.githubpages',
-    'sphinx_copybutton',
     'sphinx.ext.intersphinx',
+    'sphinx.ext.mathjax',
+    'sphinx.ext.napoleon',
+    'sphinx_copybutton',
+    'sphinx_autodoc_typehints',
     'sphinx_codeautolink',
     'sphinx_toolbox.confval',
 ]
@@ -178,9 +179,6 @@ autodoc_default_options = {
     'undoc-members': False,
 }
 
-numpydoc_show_class_members = False
-numpydoc_show_inherited_class_members = False
-numpydoc_xref_param_type = True
 add_module_names = False
 
 # Figure numbering

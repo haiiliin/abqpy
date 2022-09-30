@@ -17,22 +17,12 @@ from ..DisplayOptions.PartDisplayOptions import PartDisplayOptions
 from ..DisplayOptions.ViewportAnnotationOptions import ViewportAnnotationOptions
 from ..OdbDisplay.OdbDisplay import OdbDisplay
 from ..PlotOptions.DetailPlotOptions import DetailPlotOptions
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from ..UtilityAndView.View import View
-from ..UtilityAndView.abaqusConstants import (ALL, ASSEMBLY_MAP_COLORS, BC_MAP_COLORS, Boolean,
-                                              CONSTRAINT_MAP_COLORS, CROSS, CURRENT, CUSTOM,
-                                              DEFAULT_COLORS, DISPLAY_GRP_MAP_COLORS,
-                                              ELTYPE_MAP_COLORS, FILLED_CIRCLE, FILLED_DIAMOND,
-                                              FILLED_SQUARE, FILLED_TRI, HOLLOW_CIRCLE,
-                                              HOLLOW_DIAMOND, HOLLOW_SQUARE, HOLLOW_TRI,
-                                              INSTANCE_MAP_COLORS, INSTANCE_TYPE_MAP_COLORS,
-                                              INTERACTION_MAP_COLORS, INTERNAL_SET_MAP_COLORS,
-                                              INTERNAL_SURFACE_MAP_COLORS, LARGE, LOAD_MAP_COLORS,
-                                              MATERIAL_MAP_COLORS, MEDIUM, MESH_MAP_COLORS, OFF, ON,
-                                              OVERLAY, PART_GEOM_MAP_COLORS, PART_MAP_COLORS,
-                                              PLOT_MAP_COLORS, SECTION_MAP_COLORS,
-                                              SELECTION_GRP_MAP_COLORS, SET_MAP_COLORS, SINGLE,
-                                              SMALL, SURFACE_MAP_COLORS, SYSTEM, SymbolicConstant,
-                                              XMARKER)
+from ..UtilityAndView.abaqusConstants import (Boolean,
+                                              DEFAULT_COLORS, HOLLOW_CIRCLE,
+                                              OFF, ON,
+                                              SMALL, SYSTEM, SymbolicConstant)
 from .._OptionsBase import _OptionsBase
 
 
@@ -78,7 +68,7 @@ class ViewportBase(_OptionsBase):
     #: are CUSTOM and SYSTEM. The default value is SYSTEM.If **titleStyle** = CUSTOM,
     #: **customTitleString** will be used. If **titleStyle** =  SYSTEM, a system-generated string
     #: will be used.
-    titleStyle: Literal[CUSTOM, SYSTEM] = SYSTEM
+    titleStyle: Literal[C.CUSTOM, C.SYSTEM] = SYSTEM
 
     #: A String specifying the viewport title when **titleStyle** =CUSTOM. The default value is
     #: an empty string.
@@ -139,27 +129,27 @@ class ViewportBase(_OptionsBase):
     #: MESH_MAP_COLORS
     #: The default value is DEFAULT_COLORS.
     activeColorModes: Literal[
-        DEFAULT_COLORS,
-        PART_GEOM_MAP_COLORS,
-        ASSEMBLY_MAP_COLORS,
-        PART_MAP_COLORS,
-        INSTANCE_MAP_COLORS,
-        INSTANCE_TYPE_MAP_COLORS,
-        SECTION_MAP_COLORS,
-        MATERIAL_MAP_COLORS,
-        LOAD_MAP_COLORS,
-        BC_MAP_COLORS,
-        INTERACTION_MAP_COLORS,
-        CONSTRAINT_MAP_COLORS,
-        SET_MAP_COLORS,
-        SURFACE_MAP_COLORS,
-        INTERNAL_SET_MAP_COLORS,
-        INTERNAL_SURFACE_MAP_COLORS,
-        DISPLAY_GRP_MAP_COLORS,
-        SELECTION_GRP_MAP_COLORS,
-        ELTYPE_MAP_COLORS,
-        PLOT_MAP_COLORS,
-        MESH_MAP_COLORS,
+        C.DEFAULT_COLORS,
+        C.PART_GEOM_MAP_COLORS,
+        C.ASSEMBLY_MAP_COLORS,
+        C.PART_MAP_COLORS,
+        C.INSTANCE_MAP_COLORS,
+        C.INSTANCE_TYPE_MAP_COLORS,
+        C.SECTION_MAP_COLORS,
+        C.MATERIAL_MAP_COLORS,
+        C.LOAD_MAP_COLORS,
+        C.BC_MAP_COLORS,
+        C.INTERACTION_MAP_COLORS,
+        C.CONSTRAINT_MAP_COLORS,
+        C.SET_MAP_COLORS,
+        C.SURFACE_MAP_COLORS,
+        C.INTERNAL_SET_MAP_COLORS,
+        C.INTERNAL_SURFACE_MAP_COLORS,
+        C.DISPLAY_GRP_MAP_COLORS,
+        C.SELECTION_GRP_MAP_COLORS,
+        C.ELTYPE_MAP_COLORS,
+        C.PLOT_MAP_COLORS,
+        C.MESH_MAP_COLORS,
     ] = DEFAULT_COLORS
 
     #: A SymbolicConstant specifying the last applied color mapping. Possible values
@@ -187,27 +177,27 @@ class ViewportBase(_OptionsBase):
     #: MESH_MAP_COLORS
     #: The default value is DEFAULT_COLORS.
     colorMode: Literal[
-        DEFAULT_COLORS,
-        PART_GEOM_MAP_COLORS,
-        ASSEMBLY_MAP_COLORS,
-        PART_MAP_COLORS,
-        INSTANCE_MAP_COLORS,
-        INSTANCE_TYPE_MAP_COLORS,
-        SECTION_MAP_COLORS,
-        MATERIAL_MAP_COLORS,
-        LOAD_MAP_COLORS,
-        BC_MAP_COLORS,
-        INTERACTION_MAP_COLORS,
-        CONSTRAINT_MAP_COLORS,
-        SET_MAP_COLORS,
-        SURFACE_MAP_COLORS,
-        INTERNAL_SET_MAP_COLORS,
-        INTERNAL_SURFACE_MAP_COLORS,
-        DISPLAY_GRP_MAP_COLORS,
-        SELECTION_GRP_MAP_COLORS,
-        ELTYPE_MAP_COLORS,
-        PLOT_MAP_COLORS,
-        MESH_MAP_COLORS,
+        C.DEFAULT_COLORS,
+        C.PART_GEOM_MAP_COLORS,
+        C.ASSEMBLY_MAP_COLORS,
+        C.PART_MAP_COLORS,
+        C.INSTANCE_MAP_COLORS,
+        C.INSTANCE_TYPE_MAP_COLORS,
+        C.SECTION_MAP_COLORS,
+        C.MATERIAL_MAP_COLORS,
+        C.LOAD_MAP_COLORS,
+        C.BC_MAP_COLORS,
+        C.INTERACTION_MAP_COLORS,
+        C.CONSTRAINT_MAP_COLORS,
+        C.SET_MAP_COLORS,
+        C.SURFACE_MAP_COLORS,
+        C.INTERNAL_SET_MAP_COLORS,
+        C.INTERNAL_SURFACE_MAP_COLORS,
+        C.DISPLAY_GRP_MAP_COLORS,
+        C.SELECTION_GRP_MAP_COLORS,
+        C.ELTYPE_MAP_COLORS,
+        C.PLOT_MAP_COLORS,
+        C.MESH_MAP_COLORS,
     ] = DEFAULT_COLORS
 
     #: A Float specifying the translucency that will be applied to objects colored using
@@ -359,7 +349,7 @@ class ViewportBase(_OptionsBase):
         height: float = 80.0,
         border: Boolean = ON,
         titleBar: Boolean = ON,
-        titleStyle: Literal[CUSTOM, SYSTEM] = SYSTEM,
+        titleStyle: Literal[C.CUSTOM, C.SYSTEM] = SYSTEM,
         customTitleString: str = "",
     ):
         """This method creates a Viewport object with the specified origin and dimensions.
@@ -636,18 +626,18 @@ class ViewportBase(_OptionsBase):
         fillColor: str = "",
         nodeSymbolColor: str = "",
         nodeSymbolType: Literal[
-            FILLED_CIRCLE,
-            FILLED_SQUARE,
-            FILLED_DIAMOND,
-            FILLED_TRI,
-            HOLLOW_CIRCLE,
-            HOLLOW_SQUARE,
-            HOLLOW_DIAMOND,
-            HOLLOW_TRI,
-            CROSS,
-            XMARKER,
+            C.FILLED_CIRCLE,
+            C.FILLED_SQUARE,
+            C.FILLED_DIAMOND,
+            C.FILLED_TRI,
+            C.HOLLOW_CIRCLE,
+            C.HOLLOW_SQUARE,
+            C.HOLLOW_DIAMOND,
+            C.HOLLOW_TRI,
+            C.CROSS,
+            C.XMARKER,
         ] = HOLLOW_CIRCLE,
-        nodeSymbolSize: Literal[SMALL, MEDIUM, LARGE] = SMALL,
+        nodeSymbolSize: Literal[C.SMALL, C.MEDIUM, C.LARGE] = SMALL,
     ):
         """This method specifies the color of a Leaf object.
 
@@ -695,9 +685,9 @@ class ViewportBase(_OptionsBase):
     def setValues(
         self,
         displayedObject: Optional[Displayable] = None,
-        displayMode: Optional[Literal[SINGLE, OVERLAY]] = None,
+        displayMode: Optional[Literal[C.SINGLE, C.OVERLAY]] = None,
         visibleLayers: Tuple[str, ...] = (),
-        viewManipLayers: Optional[Literal[ALL, CURRENT]] = None,
+        viewManipLayers: Optional[Literal[C.ALL, C.CURRENT]] = None,
         currentLayer: str = "",
         layerOffset: Optional[float] = None,
     ):
