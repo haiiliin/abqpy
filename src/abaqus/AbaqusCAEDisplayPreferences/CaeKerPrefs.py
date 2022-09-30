@@ -1,7 +1,8 @@
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import Boolean, CURRENT, HOME, OFF
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import Boolean, HOME, OFF
 
 
 @abaqus_class_doc
@@ -33,7 +34,7 @@ class CaeKerPrefs:
         ...
     
     @abaqus_method_doc
-    def saveAs(self, fileName: str = '', directory: Literal[CURRENT, HOME] = HOME):
+    def saveAs(self, fileName: str = '', directory: Literal[C.CURRENT, C.HOME] = HOME):
         """This method saves the sessionOptions to the specified location.
 
         Parameters

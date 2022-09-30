@@ -5,15 +5,9 @@ from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Section import Section
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
-from ..UtilityAndView.abaqusConstants import (ACCELEROMETER, ALIGN, AXIAL, BEAM, BUSHING, Boolean,
-                                              CARDAN, CARTESIAN, CONSTANT, CONSTANT_VELOCITY,
-                                              CVJOINT, CYLINDRICAL, EULER, EXPLICIT,
-                                              FLEXION_TORSION, FLOW_CONVERTER, HINGE, IMPLICIT,
-                                              JOIN, LINEAR, LINK, NONE, ON, PLANAR,
-                                              PROJECTION_CARTESIAN, PROJECTION_FLEXION_TORSION,
-                                              RADIAL_THRUST, RETRACTOR, REVOLUTE, ROTATION,
-                                              ROTATION_ACCELEROMETER, SLIDE_PLANE, SLIPRING, SLOT,
-                                              TRANSLATOR, UJOINT, UNIVERSAL, UNSPECIFIED, WELD)
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import (Boolean,
+                                              CONSTANT, NONE, ON, UNSPECIFIED)
 
 
 @abaqus_class_doc
@@ -46,18 +40,18 @@ class ConnectorSection(Section):
     #: of the arguments **assembledType**, **translationalType**, or **rotationalType** must be given
     #: a value other than NONE.
     assembledType: Literal[
-        NONE,
-        BEAM,
-        BUSHING,
-        CVJOINT,
-        CYLINDRICAL,
-        HINGE,
-        PLANAR,
-        RETRACTOR,
-        SLIPRING,
-        TRANSLATOR,
-        UJOINT,
-        WELD,
+        C.NONE,
+        C.BEAM,
+        C.BUSHING,
+        C.CVJOINT,
+        C.CYLINDRICAL,
+        C.HINGE,
+        C.PLANAR,
+        C.RETRACTOR,
+        C.SLIPRING,
+        C.TRANSLATOR,
+        C.UJOINT,
+        C.WELD,
     ] = NONE
 
     #: A SymbolicConstant specifying the basic rotational connection type. Possible values
@@ -68,18 +62,18 @@ class ConnectorSection(Section):
     #: **assembledType**, **translationalType**, or **rotationalType** must be given an value other
     #: than NONE.
     rotationalType: Literal[
-        NONE,
-        ALIGN,
-        CARDAN,
-        CONSTANT_VELOCITY,
-        EULER,
-        FLEXION_TORSION,
-        FLOW_CONVERTER,
-        PROJECTION_FLEXION_TORSION,
-        REVOLUTE,
-        ROTATION,
-        ROTATION_ACCELEROMETER,
-        UNIVERSAL,
+        C.NONE,
+        C.ALIGN,
+        C.CARDAN,
+        C.CONSTANT_VELOCITY,
+        C.EULER,
+        C.FLEXION_TORSION,
+        C.FLOW_CONVERTER,
+        C.PROJECTION_FLEXION_TORSION,
+        C.REVOLUTE,
+        C.ROTATION,
+        C.ROTATION_ACCELEROMETER,
+        C.UNIVERSAL,
     ] = NONE
 
     #: A SymbolicConstant specifying the basic translational connection type. Possible values
@@ -89,22 +83,22 @@ class ConnectorSection(Section):
     #: **assembledType**, **translationalType**, or **rotationalType** must be given an value other
     #: than NONE.
     translationalType: Literal[
-        NONE,
-        ACCELEROMETER,
-        AXIAL,
-        CARTESIAN,
-        JOIN,
-        LINK,
-        PROJECTION_CARTESIAN,
-        RADIAL_THRUST,
-        SLIDE_PLANE,
-        SLOT,
+        C.NONE,
+        C.ACCELEROMETER,
+        C.AXIAL,
+        C.CARTESIAN,
+        C.JOIN,
+        C.LINK,
+        C.PROJECTION_CARTESIAN,
+        C.RADIAL_THRUST,
+        C.SLIDE_PLANE,
+        C.SLOT,
     ] = NONE
 
     #: A SymbolicConstant specifying the time integration scheme to use for analysis. This
     #: argument is applicable only to an Abaqus/Explicit analysis. Possible values are
     #: UNSPECIFIED, IMPLICIT, and EXPLICIT. The default value is UNSPECIFIED.
-    integration: Literal[UNSPECIFIED, IMPLICIT, EXPLICIT] = UNSPECIFIED
+    integration: Literal[C.UNSPECIFIED, C.IMPLICIT, C.EXPLICIT] = UNSPECIFIED
 
     #: None or a Float specifying the reference length associated with constitutive response
     #: for the first component of relative motion. The default value is None.
@@ -165,7 +159,7 @@ class ConnectorSection(Section):
     #: A SymbolicConstant specifying the extrapolation technique to be used for all tabular
     #: data associated with the **behaviorOptions**. Possible values are CONSTANT and LINEAR. The
     #: default value is CONSTANT.
-    extrapolation: Literal[CONSTANT, LINEAR] = CONSTANT
+    extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT
 
     #: A :py:class:`~abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray` object.
     behaviorOptions: Optional[ConnectorBehaviorOptionArray] = None
@@ -175,46 +169,46 @@ class ConnectorSection(Section):
         self,
         name: str,
         assembledType: Literal[
-            NONE,
-            BEAM,
-            BUSHING,
-            CVJOINT,
-            CYLINDRICAL,
-            HINGE,
-            PLANAR,
-            RETRACTOR,
-            SLIPRING,
-            TRANSLATOR,
-            UJOINT,
-            WELD,
+            C.NONE,
+            C.BEAM,
+            C.BUSHING,
+            C.CVJOINT,
+            C.CYLINDRICAL,
+            C.HINGE,
+            C.PLANAR,
+            C.RETRACTOR,
+            C.SLIPRING,
+            C.TRANSLATOR,
+            C.UJOINT,
+            C.WELD,
         ] = NONE,
         rotationalType: Literal[
-            NONE,
-            ALIGN,
-            CARDAN,
-            CONSTANT_VELOCITY,
-            EULER,
-            FLEXION_TORSION,
-            FLOW_CONVERTER,
-            PROJECTION_FLEXION_TORSION,
-            REVOLUTE,
-            ROTATION,
-            ROTATION_ACCELEROMETER,
-            UNIVERSAL,
+            C.NONE,
+            C.ALIGN,
+            C.CARDAN,
+            C.CONSTANT_VELOCITY,
+            C.EULER,
+            C.FLEXION_TORSION,
+            C.FLOW_CONVERTER,
+            C.PROJECTION_FLEXION_TORSION,
+            C.REVOLUTE,
+            C.ROTATION,
+            C.ROTATION_ACCELEROMETER,
+            C.UNIVERSAL,
         ] = NONE,
         translationalType: Literal[
-            NONE,
-            ACCELEROMETER,
-            AXIAL,
-            CARTESIAN,
-            JOIN,
-            LINK,
-            PROJECTION_CARTESIAN,
-            RADIAL_THRUST,
-            SLIDE_PLANE,
-            SLOT,
+            C.NONE,
+            C.ACCELEROMETER,
+            C.AXIAL,
+            C.CARTESIAN,
+            C.JOIN,
+            C.LINK,
+            C.PROJECTION_CARTESIAN,
+            C.RADIAL_THRUST,
+            C.SLIDE_PLANE,
+            C.SLOT,
         ] = NONE,
-        integration: Literal[UNSPECIFIED, IMPLICIT, EXPLICIT] = UNSPECIFIED,
+        integration: Literal[C.UNSPECIFIED, C.IMPLICIT, C.EXPLICIT] = UNSPECIFIED,
         u1ReferenceLength: Optional[float] = None,
         u2ReferenceLength: Optional[float] = None,
         u3ReferenceLength: Optional[float] = None,
@@ -227,7 +221,7 @@ class ConnectorSection(Section):
         regularize: Boolean = ON,
         defaultTolerance: Boolean = ON,
         regularization: float = 0,
-        extrapolation: Literal[CONSTANT, LINEAR] = CONSTANT,
+        extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT,
         behaviorOptions: ConnectorBehaviorOptionArray = ...,
     ) -> None:
         """This method creates a ConnectorSection object.
@@ -334,46 +328,46 @@ class ConnectorSection(Section):
     def setValues(
         self,
         assembledType: Literal[
-            NONE,
-            BEAM,
-            BUSHING,
-            CVJOINT,
-            CYLINDRICAL,
-            HINGE,
-            PLANAR,
-            RETRACTOR,
-            SLIPRING,
-            TRANSLATOR,
-            UJOINT,
-            WELD,
+            C.NONE,
+            C.BEAM,
+            C.BUSHING,
+            C.CVJOINT,
+            C.CYLINDRICAL,
+            C.HINGE,
+            C.PLANAR,
+            C.RETRACTOR,
+            C.SLIPRING,
+            C.TRANSLATOR,
+            C.UJOINT,
+            C.WELD,
         ] = NONE,
         rotationalType: Literal[
-            NONE,
-            ALIGN,
-            CARDAN,
-            CONSTANT_VELOCITY,
-            EULER,
-            FLEXION_TORSION,
-            FLOW_CONVERTER,
-            PROJECTION_FLEXION_TORSION,
-            REVOLUTE,
-            ROTATION,
-            ROTATION_ACCELEROMETER,
-            UNIVERSAL,
+            C.NONE,
+            C.ALIGN,
+            C.CARDAN,
+            C.CONSTANT_VELOCITY,
+            C.EULER,
+            C.FLEXION_TORSION,
+            C.FLOW_CONVERTER,
+            C.PROJECTION_FLEXION_TORSION,
+            C.REVOLUTE,
+            C.ROTATION,
+            C.ROTATION_ACCELEROMETER,
+            C.UNIVERSAL,
         ] = NONE,
         translationalType: Literal[
-            NONE,
-            ACCELEROMETER,
-            AXIAL,
-            CARTESIAN,
-            JOIN,
-            LINK,
-            PROJECTION_CARTESIAN,
-            RADIAL_THRUST,
-            SLIDE_PLANE,
-            SLOT,
+            C.NONE,
+            C.ACCELEROMETER,
+            C.AXIAL,
+            C.CARTESIAN,
+            C.JOIN,
+            C.LINK,
+            C.PROJECTION_CARTESIAN,
+            C.RADIAL_THRUST,
+            C.SLIDE_PLANE,
+            C.SLOT,
         ] = NONE,
-        integration: Literal[UNSPECIFIED, IMPLICIT, EXPLICIT] = UNSPECIFIED,
+        integration: Literal[C.UNSPECIFIED, C.IMPLICIT, C.EXPLICIT] = UNSPECIFIED,
         u1ReferenceLength: Optional[float] = None,
         u2ReferenceLength: Optional[float] = None,
         u3ReferenceLength: Optional[float] = None,
@@ -386,7 +380,7 @@ class ConnectorSection(Section):
         regularize: Boolean = ON,
         defaultTolerance: Boolean = ON,
         regularization: float = 0,
-        extrapolation: Literal[CONSTANT, LINEAR] = CONSTANT,
+        extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT,
         behaviorOptions: ConnectorBehaviorOptionArray = ...,
     ) -> None:
         """This method modifies the ConnectorSection object.
