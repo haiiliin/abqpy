@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-28 00:22+0000\n"
+"POT-Creation-Date: 2022-09-30 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2407,7 +2407,8 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.xyDataListFromField:107
 #: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:51
 #: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:98
-#: abaqus.XY.XYSession.XYSession.xyDataListFromField:107 of
+#: abaqus.XY.XYSession.XYSession.xyDataListFromField:107
+#: abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:108 of
 msgid ":obj:`List`\\[:obj:`XYData`]"
 msgstr ""
 
@@ -3936,10 +3937,6 @@ msgid ""
 "default value is OFF . When this argument is set to ON , a Path object is"
 " created with the same name as that of the stress line and placed in the "
 "Path repository."
-msgstr ""
-
-#: abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:108 of
-msgid ":obj:`typing.List`\\[:obj:`XYData`]"
 msgstr ""
 
 #: abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:105 of
@@ -8513,5 +8510,8 @@ msgstr ""
 #~ "3 section points >':'SNEG,"
 #~ "                                    (fraction = -1.0)',"
 #~ " }), )`"
+#~ msgstr ""
+
+#~ msgid ":obj:`typing.List`\\[:obj:`XYData`]"
 #~ msgstr ""
 

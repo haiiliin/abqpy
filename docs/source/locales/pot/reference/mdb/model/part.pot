@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-15 06:20+0000\n"
+"POT-Creation-Date: 2022-09-30 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2656,7 +2656,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.PartBase.PartBase.getCentroid:40
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getCentroid:40
-msgid "centroid: :obj:`typing.Tuple`\\[:class:`python:float`, ...]"
+msgid "centroid: :obj:`Tuple`\\[:class:`python:float`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.PartBase.PartBase.getCentroid:24
@@ -2858,7 +2858,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.PartBase.PartBase.getFeatureCells:18
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getFeatureCells:18
-msgid "cells: :obj:`typing.Tuple`\\[:obj:`Cell`, ...]"
+msgid "cells: :obj:`Tuple`\\[:obj:`Cell`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.PartBase.PartBase.getFeatureCells:15
@@ -3005,7 +3005,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.PartBase.PartBase.getFeatureEdges:18
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getFeatureEdges:18
-msgid "edges: :obj:`typing.Tuple`\\[:obj:`Edge`, ...]"
+msgid "edges: :obj:`Tuple`\\[:obj:`Edge`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.PartBase.PartBase.getFeatureEdges:15
@@ -3033,7 +3033,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.PartBase.PartBase.getFeatureFaces:18
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getFeatureFaces:18
-msgid "faces: :obj:`typing.Tuple`\\[:obj:`Face`, ...]"
+msgid "faces: :obj:`Tuple`\\[:obj:`Face`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.PartBase.PartBase.getFeatureFaces:15
@@ -3054,7 +3054,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.PartBase.PartBase.getFeatureVertices:18
 #: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase.getFeatureVertices:18
-msgid "vertices: :obj:`typing.Tuple`\\[:obj:`ConstrainedSketchVertex`, ...]"
+msgid "vertices: :obj:`Tuple`\\[:obj:`ConstrainedSketchVertex`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.PartBase.PartBase.getFeatureVertices:15
@@ -11829,7 +11829,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:83
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:83
-msgid ":obj:`typing.Union`\\[:class:`python:float`, :class:`python:int`, :obj:`SymbolicConstant`]"
+msgid ":obj:`Union`\\[:class:`python:float`, :class:`python:int`, :obj:`SymbolicConstant`]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:32
@@ -11990,7 +11990,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:28
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:28
-msgid ":obj:`typing.Tuple`\\[:obj:`Face`, ...]"
+msgid ":obj:`Tuple`\\[:obj:`Face`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:16
@@ -12050,7 +12050,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getMeshControl:40
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getMeshControl:40
-msgid ":obj:`typing.Union`\\[:ref:`bool <python:bltin-boolean-values>`, :obj:`SymbolicConstant`]"
+msgid ":obj:`Union`\\[:ref:`bool <python:bltin-boolean-values>`, :obj:`SymbolicConstant`]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getMeshControl:36
@@ -13160,7 +13160,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality:89
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality:89
-msgid ":obj:`typing.Dict`\\[:class:`python:str`, :class:`python:int` | :class:`python:float`, :obj:`MeshElement`]"
+msgid ":obj:`Dict`\\[:class:`python:str`, :class:`python:int` | :class:`python:float`, :obj:`MeshElement`]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality:74

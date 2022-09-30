@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022.0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-28 00:22+0000\n"
+"POT-Creation-Date: 2022-09-30 00:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2400,7 +2400,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:82
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getEdgeSeeds:83
-msgid ":obj:`typing.Union`\\[:class:`python:float`, :class:`python:int`, :obj:`SymbolicConstant`]"
+msgid ":obj:`Union`\\[:class:`python:float`, :class:`python:int`, :obj:`SymbolicConstant`]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getEdgeSeeds:32
@@ -2562,7 +2562,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:28
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:28
-msgid ":obj:`typing.Tuple`\\[:obj:`Face`, ...]"
+msgid ":obj:`Tuple`\\[:obj:`Face`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:16
@@ -2621,7 +2621,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:39
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getMeshControl:40
-msgid ":obj:`typing.Union`\\[:ref:`bool <python:bltin-boolean-values>`, :obj:`SymbolicConstant`]"
+msgid ":obj:`Union`\\[:ref:`bool <python:bltin-boolean-values>`, :obj:`SymbolicConstant`]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:35
@@ -3362,7 +3362,7 @@ msgid "A sequence of Region or MeshElement objects. If you do not specify the **
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality:88
-msgid ":obj:`typing.Dict`\\[:class:`python:str`, :class:`python:int` | :class:`python:float` | :obj:`MeshElement`]"
+msgid ":obj:`Dict`\\[:class:`python:str`, :class:`python:int` | :class:`python:float` | :obj:`MeshElement`]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality:74
@@ -3799,7 +3799,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshEdge.py:docstring of abaqus.Mesh.MeshEdge.MeshEdge.getElemFaces:21
 #: ../../../../src/abaqus/Mesh/MeshElement.py:docstring of abaqus.Mesh.MeshElement.MeshElement.getElemFaces:21
-msgid ":obj:`typing.Tuple`\\[:obj:`MeshFace`, ...]"
+msgid ":obj:`Tuple`\\[:obj:`MeshFace`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshEdge.py:docstring of abaqus.Mesh.MeshEdge.MeshEdge.getElemFaces:9
@@ -3808,7 +3808,7 @@ msgid "A tuple of :py:class:`~abaqus.Mesh.MeshFace.MeshFace` objects."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshEdge.py:docstring of abaqus.Mesh.MeshEdge.MeshEdge.getElements:21
-msgid ":obj:`typing.Tuple`\\[:obj:`MeshElement`, ...]"
+msgid ":obj:`Tuple`\\[:obj:`MeshElement`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshEdge.py:docstring of abaqus.Mesh.MeshEdge.MeshEdge.getElements:9
@@ -3852,7 +3852,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshEdge.py:docstring of abaqus.Mesh.MeshEdge.MeshEdge.getNodes:21
 #: ../../../../src/abaqus/Mesh/MeshElement.py:docstring of abaqus.Mesh.MeshElement.MeshElement.getNodes:21
-msgid ":obj:`typing.Tuple`\\[:obj:`MeshNode`, ...]"
+msgid ":obj:`Tuple`\\[:obj:`MeshNode`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshEdge.py:docstring of abaqus.Mesh.MeshEdge.MeshEdge.getNodes:9
@@ -4423,7 +4423,7 @@ msgid "A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshElement.py:docstring of abaqus.Mesh.MeshElement.MeshElement.getElemEdges:21
-msgid ":obj:`typing.Tuple`\\[:obj:`MeshEdge`, ...]"
+msgid ":obj:`Tuple`\\[:obj:`MeshEdge`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshElement.py:docstring of abaqus.Mesh.MeshElement.MeshElement.getElemEdges:9
@@ -5113,7 +5113,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshFace.py:docstring of abaqus.Mesh.MeshFace.MeshFace.getElemEdges:21
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.getElemEdges:21
-msgid "edges: :obj:`typing.Tuple`\\[:obj:`MeshEdge`, ...]"
+msgid "edges: :obj:`Tuple`\\[:obj:`MeshEdge`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshFace.py:docstring of abaqus.Mesh.MeshFace.MeshFace.getElemEdges:9
@@ -5169,7 +5169,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshFace.py:docstring of abaqus.Mesh.MeshFace.MeshFace.getElements:21
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.getElements:21
-msgid "elements: :obj:`typing.Tuple`\\[:obj:`MeshElement`, ...]"
+msgid "elements: :obj:`Tuple`\\[:obj:`MeshElement`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshFace.py:docstring of abaqus.Mesh.MeshFace.MeshFace.getElements:9
@@ -5187,7 +5187,7 @@ msgid "elements: :obj:`MeshElementArray`"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshFace.py:docstring of abaqus.Mesh.MeshFace.MeshFace.getNodes:21
-msgid "nodes: :obj:`typing.Tuple`\\[:obj:`MeshNode`, ...]"
+msgid "nodes: :obj:`Tuple`\\[:obj:`MeshNode`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshFace.py:docstring of abaqus.Mesh.MeshFace.MeshFace.getNodes:9
@@ -5209,7 +5209,7 @@ msgid "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshFace.py:docstring of abaqus.Mesh.MeshFace.MeshFace.getNormal:22
-msgid "normal: :obj:`typing.Tuple`\\[:class:`python:float`, ...]"
+msgid "normal: :obj:`Tuple`\\[:class:`python:float`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshFace.py:docstring of abaqus.Mesh.MeshFace.MeshFace.getNormal:9
@@ -5503,7 +5503,7 @@ msgid "This method modifies the MeshNode object."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.getElemFaces:21
-msgid "faces: :obj:`typing.Tuple`\\[:obj:`MeshFace`, ...]"
+msgid "faces: :obj:`Tuple`\\[:obj:`MeshFace`, ...]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.getElemFaces:9
@@ -7809,7 +7809,7 @@ msgid "A sequence of Region or MeshElement objects. If you do not specify the **
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality:89
-msgid ":obj:`typing.Dict`\\[:class:`python:str`, :class:`python:int` | :class:`python:float`, :obj:`MeshElement`]"
+msgid ":obj:`Dict`\\[:class:`python:str`, :class:`python:int` | :class:`python:float`, :obj:`MeshElement`]"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality:74
