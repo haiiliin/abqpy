@@ -90,13 +90,13 @@ class SymbolicConstant(str):
         return self.text
     
     @staticmethod 
-    def __new__(cls, name: str, *args, **kargs) -> Union[SymbolicConstant,AbaqusBoolean]:
+    def __new__(cls, name: str) -> Union[SymbolicConstant,AbaqusBoolean]:
         if name == "ON":
             return AbaqusBoolean(1)
         elif name == "OFF":
             return AbaqusBoolean(0)
         else:
-            return super().__new__(cls)
+            return super().__new__(cls, name)
     
     @classmethod
     def _addToCache(cls, *args, **kwargs):  # real signature unknown
