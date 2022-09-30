@@ -16,14 +16,10 @@ from ..Datum.DatumPlane import DatumPlane
 from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
-from ..UtilityAndView.abaqusConstants import (AUTO_FIT, AUTO_FIT_PTS, BOTTOM, BY_NUMBER, BY_SPACING,
-                                              Boolean, CARTESIAN, CYLINDRICAL, IMPRINT, LEFT, MERGE,
-                                              NUM_PTS_ALONG_DIR, NUM_PTS_BETWEEN_PTS, OFF, ON,
-                                              PATTERN_ALONG_DIRECTION, PATTERN_ORTHOGONALLY,
-                                              PROJECT_BY_DIRECTION, PROJECT_BY_PROXIMITY, RIGHT,
-                                              SEPARATE, SIDE1, SIDE2, SPECIFY_NUM_PTS, SPHERICAL,
-                                              SymbolicConstant, TOP, XAXIS, XYPLANE, XZPLANE, YAXIS,
-                                              YZPLANE, ZAXIS)
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import (AUTO_FIT_PTS, Boolean, IMPRINT, OFF, ON,
+                                              PROJECT_BY_PROXIMITY, RIGHT,
+                                              SIDE1, SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -57,7 +53,7 @@ class Feature:
         name: str,
         points: float,
         projectionMethod: Literal[
-            PROJECT_BY_PROXIMITY, PROJECT_BY_DIRECTION
+            C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION
         ] = PROJECT_BY_PROXIMITY,
         projectOnFaces: Tuple[Face, ...] = (),
         projectOnElementFaces: Tuple[MeshFace, ...] = (),
@@ -117,7 +113,7 @@ class Feature:
         self,
         name: str,
         startPoint: float,
-        pointCreationMethod: Literal[AUTO_FIT, NUM_PTS_ALONG_DIR, NUM_PTS_BETWEEN_PTS],
+        pointCreationMethod: Literal[C.AUTO_FIT, C.NUM_PTS_ALONG_DIR, C.NUM_PTS_BETWEEN_PTS],
         endPoint: Optional[float] = None,
         direction: str = "",
         spacing: str = "",
@@ -126,7 +122,7 @@ class Feature:
         createPtAtStartPt: Boolean = True,
         createPtAtEndPt: Boolean = True,
         projectionMethod: Literal[
-            PROJECT_BY_PROXIMITY, PROJECT_BY_DIRECTION
+            C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION
         ] = PROJECT_BY_PROXIMITY,
         projectOnFaces: Tuple[Face, ...] = (),
         projectOnElementFaces: Tuple[MeshFace, ...] = (),
@@ -215,13 +211,13 @@ class Feature:
         edges: tuple,
         startPoint: str = "",
         flipDirection: str = "",
-        pointCreationMethod: Literal[BY_NUMBER, BY_SPACING] = ...,
+        pointCreationMethod: Literal[C.BY_NUMBER, C.BY_SPACING] = ...,
         numberOfPoints: str = "",
         spacingBetweenPoints: str = "",
         offsetFromStartPoint: float = 0,
         offsetFromEndPoint: float = 0,
-        spacingMethod: Literal[AUTO_FIT_PTS, SPECIFY_NUM_PTS] = AUTO_FIT_PTS,
-        patterningMethod: Literal[PATTERN_ORTHOGONALLY, PATTERN_ALONG_DIRECTION] = ...,
+        spacingMethod: Literal[C.AUTO_FIT_PTS, C.SPECIFY_NUM_PTS] = AUTO_FIT_PTS,
+        patterningMethod: Literal[C.PATTERN_ORTHOGONALLY, C.PATTERN_ALONG_DIRECTION] = ...,
         referenceFace: str = "",
         startPointForPatternDirection: Tuple[float, ...] = ...,
         endPointForPatternDirection: Tuple[float, ...] = ...,
@@ -229,7 +225,7 @@ class Feature:
         numberOfRows: int = 1,
         spacingBetweenRows: str = "",
         projectionMethod: Literal[
-            PROJECT_BY_PROXIMITY, PROJECT_BY_DIRECTION
+            C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION
         ] = PROJECT_BY_PROXIMITY,
         projectOnFaces: Tuple[Face, ...] = (),
         projectOnElementFaces: Tuple[MeshFace, ...] = (),
@@ -421,7 +417,7 @@ class Feature:
 
     @abaqus_method_doc
     def DatumAxisByPrincipalAxis(
-        self, principalAxis: Literal[XAXIS, YAXIS, ZAXIS]
+        self, principalAxis: Literal[C.XAXIS, C.YAXIS, C.ZAXIS]
     ) -> Feature:
         """This method creates a Feature object and a DatumAxis object along one of the three
         principal axes.
@@ -640,7 +636,7 @@ class Feature:
 
     @abaqus_method_doc
     def DatumCsysByDefault(
-        self, coordSysType: Literal[CARTESIAN, CYLINDRICAL, SPHERICAL], name: str = ""
+        self, coordSysType: Literal[C.CARTESIAN, C.CYLINDRICAL, C.SPHERICAL], name: str = ""
     ) -> Feature:
         """This method creates a Feature object and a DatumCsys object from the specified default
         coordinate system at the origin.
@@ -673,7 +669,7 @@ class Feature:
     @abaqus_method_doc
     def DatumCsysByOffset(
         self,
-        coordSysType: Literal[CARTESIAN, CYLINDRICAL, SPHERICAL],
+        coordSysType: Literal[C.CARTESIAN, C.CYLINDRICAL, C.SPHERICAL],
         datumCoordSys: Datum,
         vector: tuple,
         point: str,
@@ -721,7 +717,7 @@ class Feature:
     @abaqus_method_doc
     def DatumCsysByThreePoints(
         self,
-        coordSysType: Literal[CARTESIAN, CYLINDRICAL, SPHERICAL],
+        coordSysType: Literal[C.CARTESIAN, C.CYLINDRICAL, C.SPHERICAL],
         origin: int,
         point1: int,
         point2: int,
@@ -778,7 +774,7 @@ class Feature:
     @abaqus_method_doc
     def DatumCsysByTwoLines(
         self,
-        coordSysType: Literal[CARTESIAN, CYLINDRICAL, SPHERICAL],
+        coordSysType: Literal[C.CARTESIAN, C.CYLINDRICAL, C.SPHERICAL],
         line1: str,
         line2: str,
         name: str = "",
@@ -820,7 +816,7 @@ class Feature:
 
     @abaqus_method_doc
     def DatumPlaneByPrincipalPlane(
-        self, principalPlane: Literal[XYPLANE, YZPLANE, XZPLANE], offset: float
+        self, principalPlane: Literal[C.XYPLANE, C.YZPLANE, C.XZPLANE], offset: float
     ) -> Feature:
         """This method creates a Feature object and a DatumPlane object through the origin along
         one of the three principal planes.
@@ -853,7 +849,7 @@ class Feature:
     @overload
     @abaqus_method_doc
     def DatumPlaneByOffset(
-        self, plane: str, flip: Literal[SIDE1, SIDE2], offset: float
+        self, plane: str, flip: Literal[C.SIDE1, C.SIDE2], offset: float
     ) -> Feature:
         """This method creates a Feature object and a DatumPlane object offset by a specified
         distance from an existing plane.
@@ -1272,8 +1268,8 @@ class Feature:
         self,
         sketchPlane: str,
         origin: tuple = (),
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
-        sketchPlaneSide: Literal[SIDE1, SIDE2] = SIDE1,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
+        sketchPlaneSide: Literal[C.SIDE1, C.SIDE2] = SIDE1,
         sketchUpEdge: str = "",
     ) -> Transform:
         """This method creates a Transform object. A :py:class:`~abaqus.BasicGeometry.Transform.Transform` object is a 4x3 matrix of Floats
@@ -1949,7 +1945,7 @@ class Feature:
         faces: Tuple[Face, ...],
         sketch: ConstrainedSketch,
         sketchUpEdge: str = "",
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
     ) -> Feature:
         """This method partitions one or more planar faces by sketching on them.
 
@@ -1989,11 +1985,11 @@ class Feature:
         self,
         faces: Tuple[Face, ...],
         sketchPlane: str,
-        sketchPlaneSide: Literal[SIDE1, SIDE2],
+        sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         distance: float,
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
     ) -> Feature:
         """This method partitions one or more faces by sketching on a sketch plane and then
         projecting the sketch toward the target faces through the given distance.
@@ -2043,7 +2039,7 @@ class Feature:
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         point: int,
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
     ) -> Feature:
         """This method partitions one or more faces by sketching on a sketch plane and then
         projecting the sketch toward the target faces through a distance governed by the
@@ -2089,10 +2085,10 @@ class Feature:
         self,
         faces: Tuple[Face, ...],
         sketchPlane: str,
-        sketchPlaneSide: Literal[SIDE1, SIDE2],
+        sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: str,
         sketch: ConstrainedSketch,
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
     ) -> Feature:
         """This method partitions one or more faces by sketching on a sketch plane and then
         projecting toward the target faces through an infinite distance.
@@ -2190,7 +2186,7 @@ class Feature:
     def WirePolyLine(
         self,
         points: float,
-        mergeType: Literal[MERGE, IMPRINT, SEPARATE] = IMPRINT,
+        mergeType: Literal[C.MERGE, C.IMPRINT, C.SEPARATE] = IMPRINT,
         meshable: Boolean = ON,
     ) -> Feature:
         """This method creates an additional Feature object by creating a series of wires joining

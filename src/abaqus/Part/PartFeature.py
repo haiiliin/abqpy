@@ -10,12 +10,9 @@ from ..BasicGeometry.Vertex import Vertex
 from ..Feature.Feature import Feature as BaseFeature
 from ..Region.Region import Region
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
-from ..UtilityAndView.abaqusConstants import (BOTTOM, Boolean, CLOSEST_POINT_FRACTION,
-                                              FARTHEST_POINT_FRACTION, HALF_OF_AVERAGE, IMPRINT,
-                                              LEFT, MERGE, NONE, NORMAL, OFF, ON, RADIAL,
-                                              RECOMPUTE_GEOMETRY, RIGHT, SEPARATE, SHORTEST_PATH,
-                                              SIDE1, SIDE2, SPECIFIED, SPECIFY_PATH, TANGENT,
-                                              TIGHTEN_GAPS, TOP)
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import (Boolean, IMPRINT,
+                                              OFF, ON, RECOMPUTE_GEOMETRY, RIGHT)
 
 
 @abaqus_class_doc
@@ -486,7 +483,7 @@ class PartFeature(BaseFeature):
         self,
         side1: Tuple[Edge, ...],
         side2: tuple,
-        method: Optional[Literal[TANGENT, SHORTEST_PATH, SPECIFY_PATH]] = None,
+        method: Optional[Literal[C.TANGENT, C.SHORTEST_PATH, C.SPECIFY_PATH]] = None,
         path: Optional[Edge] = None,
     ) -> BaseFeature:
         """This method creates a Feature object by creating new faces that blends two sets of
@@ -597,7 +594,7 @@ class PartFeature(BaseFeature):
 
     @abaqus_method_doc
     def ConvertToPrecise(
-        self, method: Literal[RECOMPUTE_GEOMETRY, TIGHTEN_GAPS] = RECOMPUTE_GEOMETRY
+        self, method: Literal[C.RECOMPUTE_GEOMETRY, C.TIGHTEN_GAPS] = RECOMPUTE_GEOMETRY
     ) -> BaseFeature:
         """This method attempts to change imprecise entities so that the geometry becomes precise.
 
@@ -661,10 +658,10 @@ class PartFeature(BaseFeature):
     def Cut(
         self,
         sketchPlane: str,
-        sketchPlaneSide: Literal[SIDE1, SIDE2],
+        sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
-        sketchOrientation: Optional[Literal[RIGHT, LEFT, TOP, BOTTOM]] = None,
+        sketchOrientation: Optional[Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM]] = None,
     ) -> BaseFeature:
         """This method creates an additional Feature object by cutting a hole using the given
         ConstrainedSketch object.
@@ -701,9 +698,9 @@ class PartFeature(BaseFeature):
     def CutExtrude(
         self,
         sketchPlane: str,
-        sketchPlaneSide: Literal[SIDE1, SIDE2],
+        sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Edge,
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM],
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM],
         sketch: ConstrainedSketch,
         depth: Optional[float] = None,
         upToFace: str = "",
@@ -774,8 +771,8 @@ class PartFeature(BaseFeature):
     def CutLoft(
         self,
         loftsections: tuple,
-        startCondition: Optional[Literal[NONE, NORMAL, RADIAL, SPECIFIED]] = None,
-        endCondition: Optional[Literal[NONE, NORMAL, RADIAL, SPECIFIED]] = None,
+        startCondition: Optional[Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED]] = None,
+        endCondition: Optional[Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED]] = None,
         startTangent: Optional[float] = None,
         startMagnitude: Optional[float] = None,
         endTangent: Optional[float] = None,
@@ -846,9 +843,9 @@ class PartFeature(BaseFeature):
     def CutRevolve(
         self,
         sketchPlane: str,
-        sketchPlaneSide: Literal[SIDE1, SIDE2],
+        sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Edge,
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM],
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM],
         sketch: ConstrainedSketch,
         angle: float,
         pitch: Optional[float] = None,
@@ -917,10 +914,10 @@ class PartFeature(BaseFeature):
         profile: str,
         pathPlane: str = "",
         pathUpEdge: Optional[Edge] = None,
-        pathOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        pathOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         sketchPlane: str = "",
         sketchUpEdge: Optional[Edge] = None,
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         draftAngle: Optional[float] = None,
         pitch: Optional[float] = None,
         profileNormal: Boolean = OFF,
@@ -1095,7 +1092,7 @@ class PartFeature(BaseFeature):
     def HoleBlindFromEdges(
         self,
         plane: str,
-        planeSide: Literal[SIDE1, SIDE2],
+        planeSide: Literal[C.SIDE1, C.SIDE2],
         diameter: float,
         edge1: Edge,
         distance1: float,
@@ -1183,7 +1180,7 @@ class PartFeature(BaseFeature):
     def HoleThruAllFromEdges(
         self,
         plane: str,
-        planeSide: Literal[SIDE1, SIDE2],
+        planeSide: Literal[C.SIDE1, C.SIDE2],
         diameter: float,
         edge1: Edge,
         distance1: float,
@@ -1260,7 +1257,7 @@ class PartFeature(BaseFeature):
         distance: Optional[float] = None,
         targetFaces: Tuple[Face, ...] = (),
         targetFacesMethod: Optional[
-            Literal[HALF_OF_AVERAGE, CLOSEST_POINT_FRACTION, FARTHEST_POINT_FRACTION]
+            Literal[C.HALF_OF_AVERAGE, C.CLOSEST_POINT_FRACTION, C.FARTHEST_POINT_FRACTION]
         ] = None,
         fractionDistance: Optional[float] = None,
         trimToReferenceRep: Boolean = OFF,
@@ -1617,10 +1614,10 @@ class PartFeature(BaseFeature):
     def Shell(
         self,
         sketchPlane: str,
-        sketchPlaneSide: Literal[SIDE1, SIDE2],
+        sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
     ) -> BaseFeature:
         """This method creates an additional Feature object by creating a planar shell from the
         given ConstrainedSketch object. The ConstrainedSketch object must define a closed
@@ -1658,12 +1655,12 @@ class PartFeature(BaseFeature):
     def ShellExtrude(
         self,
         sketchPlane: str,
-        sketchPlaneSide: Literal[SIDE1, SIDE2],
+        sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         depth: Optional[float] = None,
         upToFace: str = "",
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         draftAngle: Optional[float] = None,
         pitch: Optional[float] = None,
         flipExtrudeDirection: Boolean = OFF,
@@ -1733,8 +1730,8 @@ class PartFeature(BaseFeature):
     def ShellLoft(
         self,
         loftsections: tuple,
-        startCondition: Optional[Literal[NONE, NORMAL, RADIAL, SPECIFIED]] = None,
-        endCondition: Optional[Literal[NONE, NORMAL, RADIAL, SPECIFIED]] = None,
+        startCondition: Optional[Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED]] = None,
+        endCondition: Optional[Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED]] = None,
         startTangent: Optional[float] = None,
         startMagnitude: Optional[float] = None,
         endTangent: Optional[float] = None,
@@ -1819,11 +1816,11 @@ class PartFeature(BaseFeature):
     def ShellRevolve(
         self,
         sketchPlane: str,
-        sketchPlaneSide: Literal[SIDE1, SIDE2],
+        sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         angle: float,
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         pitch: Optional[float] = None,
         flipRevolveDirection: Boolean = OFF,
         flipPitchDirection: Boolean = OFF,
@@ -1896,10 +1893,10 @@ class PartFeature(BaseFeature):
         profile: str,
         pathPlane: str = "",
         pathUpEdge: Optional[Edge] = None,
-        pathOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        pathOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         sketchPlane: str = "",
         sketchUpEdge: Optional[Edge] = None,
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         draftAngle: Optional[float] = None,
         pitch: Optional[float] = None,
         profileNormal: Boolean = OFF,
@@ -1986,12 +1983,12 @@ class PartFeature(BaseFeature):
     def SolidExtrude(
         self,
         sketchPlane: str,
-        sketchPlaneSide: Literal[SIDE1, SIDE2],
+        sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         depth: Optional[float] = None,
         upToFace: str = "",
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         draftAngle: Optional[float] = None,
         pitch: Optional[float] = None,
         flipExtrudeDirection: Boolean = OFF,
@@ -2061,8 +2058,8 @@ class PartFeature(BaseFeature):
     def SolidLoft(
         self,
         loftsections: tuple,
-        startCondition: Optional[Literal[NONE, NORMAL, RADIAL, SPECIFIED]] = None,
-        endCondition: Optional[Literal[NONE, NORMAL, RADIAL, SPECIFIED]] = None,
+        startCondition: Optional[Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED]] = None,
+        endCondition: Optional[Literal[C.NONE, C.NORMAL, C.RADIAL, C.SPECIFIED]] = None,
         startTangent: Optional[float] = None,
         startMagnitude: Optional[float] = None,
         endTangent: Optional[float] = None,
@@ -2146,11 +2143,11 @@ class PartFeature(BaseFeature):
     def SolidRevolve(
         self,
         sketchPlane: str,
-        sketchPlaneSide: Literal[SIDE1, SIDE2],
+        sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
         angle: float,
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         pitch: Optional[float] = None,
         flipRevolveDirection: Boolean = OFF,
         flipPitchDirection: Boolean = OFF,
@@ -2222,10 +2219,10 @@ class PartFeature(BaseFeature):
         profile: str,
         pathPlane: str = "",
         pathUpEdge: Optional[Edge] = None,
-        pathOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        pathOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         sketchPlane: str = "",
         sketchUpEdge: Optional[Edge] = None,
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
         draftAngle: Optional[float] = None,
         pitch: Optional[float] = None,
         profileNormal: Boolean = OFF,
@@ -2342,10 +2339,10 @@ class PartFeature(BaseFeature):
     def Wire(
         self,
         sketchPlane: str,
-        sketchPlaneSide: Literal[SIDE1, SIDE2],
+        sketchPlaneSide: Literal[C.SIDE1, C.SIDE2],
         sketchUpEdge: Edge,
         sketch: ConstrainedSketch,
-        sketchOrientation: Literal[RIGHT, LEFT, TOP, BOTTOM] = RIGHT,
+        sketchOrientation: Literal[C.RIGHT, C.LEFT, C.TOP, C.BOTTOM] = RIGHT,
     ) -> BaseFeature:
         """This method creates an additional Feature object by creating a planar wire from the
         given ConstrainedSketch object. The ConstrainedSketch object must define a closed
@@ -2383,7 +2380,7 @@ class PartFeature(BaseFeature):
     def WireSpline(
         self,
         points: tuple,
-        mergeType: Literal[MERGE, IMPRINT, SEPARATE] = IMPRINT,
+        mergeType: Literal[C.MERGE, C.IMPRINT, C.SEPARATE] = IMPRINT,
         smoothClosedSpline: Boolean = OFF,
     ) -> BaseFeature:
         """This method creates an additional Feature object by creating a spline wire that passes
@@ -2426,7 +2423,7 @@ class PartFeature(BaseFeature):
     def WirePolyLine(
         self,
         points: tuple,
-        mergeType: Literal[MERGE, IMPRINT, SEPARATE] = IMPRINT,
+        mergeType: Literal[C.MERGE, C.IMPRINT, C.SEPARATE] = IMPRINT,
         meshable: Boolean = ON,
     ) -> BaseFeature:
         """This method creates an additional Feature object by creating a polyline wire that passes
