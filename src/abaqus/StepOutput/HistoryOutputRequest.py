@@ -4,10 +4,11 @@ from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (ALL, Boolean, C_INTEGRAL, DEFAULT,
-                                              EVERY_TIME_INCREMENT, EXCLUDE, INCLUDE, J_INTEGRAL,
-                                              K110, K_FACTORS, LAST_INCREMENT, MERR, MODEL, MTS,
-                                              OFF, ONLY, PRESELECT, SymbolicConstant, T_STRESS)
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import (ALL, Boolean, DEFAULT,
+                                              EVERY_TIME_INCREMENT, EXCLUDE, J_INTEGRAL,
+                                              MODEL, MTS,
+                                              OFF, PRESELECT, SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -43,11 +44,11 @@ class HistoryOutputRequest:
     #: requested. The SymbolicConstant MODEL represents the whole model. The default value is
     #: MODEL.If the region is a surface region, the surface must lie within the general contact
     #: surface domain.
-    region: Union[Literal[MODEL], Region] = MODEL
+    region: Union[Literal[C.MODEL], Region] = MODEL
 
     #: The SymbolicConstant DEFAULT or a tuple of Ints specifying the section points for which
     #: output is requested. The default value is DEFAULT.
-    sectionPoints: Union[Literal[DEFAULT], Tuple[int, ...]] = DEFAULT
+    sectionPoints: Union[Literal[C.DEFAULT], Tuple[int, ...]] = DEFAULT
 
     #: None or a tuple of Strings specifying the interaction names. The default value is
     #: None.The sequence can contain only one String.
@@ -58,24 +59,24 @@ class HistoryOutputRequest:
         self,
         name: str,
         createStepName: str,
-        region: Union[Literal[MODEL], Region] = MODEL,
-        variables: Union[Tuple[str, ...], Literal[PRESELECT, ALL]] = PRESELECT,
-        frequency: Union[int, Literal[LAST_INCREMENT]] = 1,
-        modes: Union[Literal[ALL], Tuple[int, ...]] = ALL,
+        region: Union[Literal[C.MODEL], Region] = MODEL,
+        variables: Union[Tuple[str, ...], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
+        frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
+        modes: Union[Literal[C.ALL], Tuple[int, ...]] = ALL,
         timeInterval: Union[
-            Literal[EVERY_TIME_INCREMENT], float
+            Literal[C.EVERY_TIME_INCREMENT], float
         ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         boltLoad: str = "",
-        sectionPoints: Union[Literal[DEFAULT], Tuple[int, ...]] = DEFAULT,
+        sectionPoints: Union[Literal[C.DEFAULT], Tuple[int, ...]] = DEFAULT,
         stepName: str = "",
         interactions: Optional[str] = None,
         contourIntegral: Optional[str] = None,
         numberOfContours: int = 0,
         stressInitializationStep: Optional[str] = None,
-        contourType: Literal[J_INTEGRAL, C_INTEGRAL, T_STRESS, K_FACTORS] = J_INTEGRAL,
-        kFactorDirection: Literal[MTS, MERR, K110] = MTS,
-        rebar: Literal[EXCLUDE, INCLUDE, ONLY] = EXCLUDE,
+        contourType: Literal[C.J_INTEGRAL, C.C_INTEGRAL, C.T_STRESS, C.K_FACTORS] = J_INTEGRAL,
+        kFactorDirection: Literal[C.MTS, C.MERR, C.K110] = MTS,
+        rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
         integratedOutputSection: str = "",
         springs: Optional[tuple] = None,
         filter: Optional[SymbolicConstant] = None,
@@ -228,24 +229,24 @@ class HistoryOutputRequest:
     @abaqus_method_doc
     def setValues(
         self,
-        region: Union[Literal[MODEL], Region] = MODEL,
-        variables: Union[Tuple[str, ...], Literal[PRESELECT, ALL]] = PRESELECT,
-        frequency: Union[int, Literal[LAST_INCREMENT]] = 1,
-        modes: Union[Literal[ALL], Tuple[int, ...]] = ALL,
+        region: Union[Literal[C.MODEL], Region] = MODEL,
+        variables: Union[Tuple[str, ...], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
+        frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
+        modes: Union[Literal[C.ALL], Tuple[int, ...]] = ALL,
         timeInterval: Union[
-            Literal[EVERY_TIME_INCREMENT], float
+            Literal[C.EVERY_TIME_INCREMENT], float
         ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         boltLoad: str = "",
-        sectionPoints: Union[Literal[DEFAULT], Tuple[int, ...]] = DEFAULT,
+        sectionPoints: Union[Literal[C.DEFAULT], Tuple[int, ...]] = DEFAULT,
         stepName: str = "",
         interactions: Optional[str] = None,
         contourIntegral: Optional[str] = None,
         numberOfContours: int = 0,
         stressInitializationStep: Optional[str] = None,
-        contourType: Literal[J_INTEGRAL, C_INTEGRAL, T_STRESS, K_FACTORS] = J_INTEGRAL,
-        kFactorDirection: Literal[MTS, MERR, K110] = MTS,
-        rebar: Literal[EXCLUDE, INCLUDE, ONLY] = EXCLUDE,
+        contourType: Literal[C.J_INTEGRAL, C.C_INTEGRAL, C.T_STRESS, C.K_FACTORS] = J_INTEGRAL,
+        kFactorDirection: Literal[C.MTS, C.MERR, C.K110] = MTS,
+        rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
         integratedOutputSection: str = "",
         springs: Optional[tuple] = None,
         filter: Optional[SymbolicConstant] = None,
@@ -339,11 +340,11 @@ class HistoryOutputRequest:
     def setValuesInStep(
         self,
         stepName: str,
-        variables: Union[Tuple[str, ...], Literal[PRESELECT, ALL]] = ...,
-        frequency: Union[int, Literal[LAST_INCREMENT]] = 1,
-        modes: Union[Literal[ALL], Tuple[int, ...]] = ALL,
+        variables: Union[Tuple[str, ...], Literal[C.PRESELECT, C.ALL]] = ...,
+        frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
+        modes: Union[Literal[C.ALL], Tuple[int, ...]] = ALL,
         timeInterval: Union[
-            Literal[EVERY_TIME_INCREMENT], float
+            Literal[C.EVERY_TIME_INCREMENT], float
         ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         timePoints: Optional[str] = None,

@@ -11,7 +11,8 @@ from ..BasicGeometry.Face import Face
 from ..BasicGeometry.FaceArray import FaceArray
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNodeArray import MeshNodeArray
-from ..UtilityAndView.abaqusConstants import DIFFERENCE, INTERSECTION, SymbolicConstant, UNION
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNION
 
 
 @abaqus_class_doc
@@ -221,7 +222,7 @@ class Surface(Region):
         self,
         name: str,
         surfaces: Tuple[Surface],
-        operation: Literal[UNION, INTERSECTION, DIFFERENCE] = UNION,
+        operation: Literal[C.UNION, C.INTERSECTION, C.DIFFERENCE] = UNION,
     ) -> Surface:
         """This method creates a surface by performing a boolean operation on two or more input
         surfaces.
