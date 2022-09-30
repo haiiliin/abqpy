@@ -856,7 +856,7 @@ class InteractionModel(
             surfaceOffsetAssignments,
             surfaceFeatureAssignments,
             smoothingAssignments,
-            mainSecondaryAssignments,
+            masterSlaveAssignments,
         )
         return interaction
 
@@ -946,7 +946,7 @@ class InteractionModel(
             surfaceThicknessAssignments,
             surfaceOffsetAssignments,
             surfaceFeatureAssignments,
-            mainSecondaryAssignments,
+            masterSlaveAssignments,
             initializationAssignments,
             stabilizationAssignments,
             smoothingAssignments,
