@@ -1,11 +1,11 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchDimension import ConstrainedSketchDimension
 from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
     ConstrainedSketchGeometry,
 )
-from ...UtilityAndView.abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
@@ -14,11 +14,11 @@ class RadialDimension(ConstrainedSketchDimension):
     def __init__(
         self,
         curve: ConstrainedSketchGeometry,
-        textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        textPoint: Tuple[float, ...],
+        value: Optional[float] = None,
         reference: Boolean = OFF,
-        majorRadius: float = None,
-        minorRadius: float = None,
+        majorRadius: Optional[float] = None,
+        minorRadius: Optional[float] = None,
     ):
         """This method constructs a ConstrainedSketchDimension object on a circular or elliptical
         arc. A radial dimension indicates the radius of an arc or circle or the major or minor

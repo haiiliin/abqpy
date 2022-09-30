@@ -1,8 +1,8 @@
-import typing
+from typing import List, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..ConstrainedSketchBase import ConstrainedSketchBase
-from ...UtilityAndView.abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
@@ -21,7 +21,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def Arc3Points(
-        self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...], point3: typing.Tuple[float, ...]
+        self, point1: Tuple[float, ...], point2: Tuple[float, ...], point3: Tuple[float, ...]
     ):
         """This method constructs an arc using a two endpoints and an intermediate third point on
         the arc.
@@ -50,9 +50,9 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
     @abaqus_method_doc
     def ArcByCenterEnds(
         self,
-        center: typing.Tuple[float, ...],
-        point1: typing.Tuple[float, ...],
-        point2: typing.Tuple[float, ...],
+        center: Tuple[float, ...],
+        point1: Tuple[float, ...],
+        point2: Tuple[float, ...],
     ):
         """This method constructs an arc using a center point and two vertices. The Arc object is
         added to the geometry repository of the ConstrainedSketch object. The arc is created in
@@ -85,7 +85,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def ArcByStartEndTangent(
-        self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...], vector: tuple
+        self, point1: Tuple[float, ...], point2: Tuple[float, ...], vector: tuple
     ):
         """This method constructs an arc using two vertices. The Arc object is added to the
         geometry repository of the ConstrainedSketch object.
@@ -112,7 +112,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         ...
 
     @abaqus_method_doc
-    def CircleByCenterPerimeter(self, center: typing.Tuple[float, ...], point1: typing.Tuple[float, ...]):
+    def CircleByCenterPerimeter(self, center: Tuple[float, ...], point1: Tuple[float, ...]):
         """This method constructs a circle using a center point and a point on the perimeter. The
         circle is added to the geometry repository of the ConstrainedSketch object.
 
@@ -137,7 +137,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def ConstructionCircleByCenterPerimeter(
-        self, center: typing.Tuple[float, ...], point1: typing.Tuple[float, ...]
+        self, center: Tuple[float, ...], point1: Tuple[float, ...]
     ):
         """This method constructs a construction circle using a center point and a point on the
         perimeter. The circle is added to the geometry repository of the ConstrainedSketch
@@ -164,7 +164,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def EllipseByCenterPerimeter(
-        self, center: typing.Tuple[float, ...], axisPoint1: typing.Tuple[float, ...], axisPoint2: typing.Tuple[float, ...]
+        self, center: Tuple[float, ...], axisPoint1: Tuple[float, ...], axisPoint2: Tuple[float, ...]
     ):
         """This method constructs an ellipse using a center point, a major axis point, and a minor
         axis point. The ellipse is added to the geometry repository of the ConstrainedSketch
@@ -196,9 +196,9 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         self,
         radius: float,
         curve1: "ConstrainedSketchGeometryModel",
-        nearPoint1: typing.Tuple[float, ...],
+        nearPoint1: Tuple[float, ...],
         curve2: "ConstrainedSketchGeometryModel",
-        nearPoint2: typing.Tuple[float, ...],
+        nearPoint2: Tuple[float, ...],
     ):
         """This method constructs a fillet arc of a given radius between two curves. The fillet is
         added to the geometry repository of the ConstrainedSketch object.
@@ -238,7 +238,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         ...
 
     @abaqus_method_doc
-    def Line(self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...]):
+    def Line(self, point1: Tuple[float, ...], point2: Tuple[float, ...]):
         """This method creates a line between two given points.
 
         .. note:: 
@@ -261,7 +261,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         ...
 
     @abaqus_method_doc
-    def ConstructionLine(self, point1: typing.Tuple[float, ...], point2: typing.Tuple[float, ...]):
+    def ConstructionLine(self, point1: Tuple[float, ...], point2: Tuple[float, ...]):
         """This method creates an oblique construction line that runs between two given points.
 
         .. note:: 
@@ -309,7 +309,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         ...
 
     @abaqus_method_doc
-    def Spot(self, point: typing.Tuple[float, ...]):
+    def Spot(self, point: Tuple[float, ...]):
         """This method creates a spot construction point located at the specified coordinates. The
         spot is added to the vertex repository of the ConstrainedSketch object.
 
@@ -337,7 +337,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
         Returns
         -------
-        vertices: typing.List[ConstrainedSketchVertex]
+        vertices: List[ConstrainedSketchVertex]
             A list of ConstrainedSketchVertex objects
         """
         ...
@@ -355,7 +355,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
     @abaqus_method_doc
     def getPointAtDistance(
-        self, point: typing.Tuple[float, ...], distance: str, percentage: Boolean = OFF
+        self, point: Tuple[float, ...], distance: str, percentage: Boolean = OFF
     ):
         """This method returns a point offset along the given ConstrainedSketchGeometry from the
         given end by a specified arc length distance or a percentage of the total length of the
@@ -374,7 +374,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
 
         Returns
         -------
-        points: typing.Tuple[float, ...]
+        points: Tuple[float, ...]
             A pair of floats representing the point along the edge
         """
         ...

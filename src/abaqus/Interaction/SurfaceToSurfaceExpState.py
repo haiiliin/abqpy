@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc
 from .InteractionState import InteractionState
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc
@@ -26,11 +28,11 @@ class SurfaceToSurfaceExpState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the **interactionProperty** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    interactionPropertyState: SymbolicConstant = None
+    interactionPropertyState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **contactControls** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    contactControlsState: SymbolicConstant = None
+    contactControlsState: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the ContactProperty object associated with this
     #: interaction.
@@ -52,4 +54,4 @@ class SurfaceToSurfaceExpState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: SymbolicConstant = None
+    status: Optional[SymbolicConstant] = None

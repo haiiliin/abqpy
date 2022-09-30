@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .ResponseSpectrumComponent import ResponseSpectrumComponent
 
-ResponseSpectrumComponentArray = typing.List[ResponseSpectrumComponent]
+ResponseSpectrumComponentArray = List[ResponseSpectrumComponent]

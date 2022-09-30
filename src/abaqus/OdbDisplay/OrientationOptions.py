@@ -1,6 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..PlotOptions.DGOrientationOptions import DGOrientationOptions
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, MODEL_SIZE, NONE, ON, PLY, SymbolicConstant,
+                                              VERY_THIN)
 
 
 @abaqus_class_doc
@@ -81,7 +84,7 @@ class OrientationOptions(DGOrientationOptions):
     @abaqus_method_doc
     def setValues(
         self,
-        options: "OrientationOptions" = None,
+        options: Optional["OrientationOptions"] = None,
         axis1Color: str = "",
         showAxis1: Boolean = ON,
         axis2Color: str = "",

@@ -1,7 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import INTERNAL, SymbolicConstant, UNIFORM, UNSET
 
 
 @abaqus_class_doc
@@ -29,7 +31,7 @@ class PipePressure(Load):
     side: SymbolicConstant = INTERNAL
 
     #: A Float specifying the effective inner or outer diameter.
-    diameter: float = None
+    diameter: Optional[float] = None
 
     #: A String specifying the name of the AnalyticalField object associated with this load.
     #: The **field** argument applies only when **distributionType** = FIELD. The default value is an
@@ -136,9 +138,9 @@ class PipePressure(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        magnitude: float = None,
-        hZero: float = None,
-        hReference: float = None,
+        magnitude: Optional[float] = None,
+        hZero: Optional[float] = None,
+        hReference: Optional[float] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing PipePressure object in the

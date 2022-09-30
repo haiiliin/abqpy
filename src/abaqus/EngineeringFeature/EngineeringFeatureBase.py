@@ -1,4 +1,4 @@
-import typing
+from typing import Dict, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Crack import Crack
@@ -23,19 +23,19 @@ class EngineeringFeatureBase:
     """
 
     #: A repository of Inertia objects.
-    inertias: typing.Dict[str, Inertia] = {}
+    inertias: Dict[str, Inertia] = {}
 
     #: A repository of Crack objects.
-    cracks: typing.Dict[str, Crack] = {}
+    cracks: Dict[str, Crack] = {}
 
     #: A repository of Fastener objects.
-    fasteners: typing.Dict[str, Fastener] = {}
+    fasteners: Dict[str, Fastener] = {}
 
     #: A repository of SpringDashpot objects.
-    springDashpots: typing.Dict[str, SpringDashpot] = {}
+    springDashpots: Dict[str, SpringDashpot] = {}
 
     @abaqus_method_doc
-    def assignSeam(self, regions: typing.Tuple[Region, ...]):
+    def assignSeam(self, regions: Tuple[Region, ...]):
         """This method creates a seam crack along an edge or a face.
 
         Parameters
@@ -47,7 +47,7 @@ class EngineeringFeatureBase:
         ...
 
     @abaqus_method_doc
-    def deleteSeam(self, regions: typing.Tuple[Region, ...]):
+    def deleteSeam(self, regions: Tuple[Region, ...]):
         """This method deletes a seam crack.
 
         Parameters

@@ -1,21 +1,22 @@
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing import Optional
+
+from abqpy.decorators import abaqus_class_doc
 from .StdInitialization import StdInitialization
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import ADJUST, SymbolicConstant
 
 
 @abaqus_class_doc
 class InteractionContactInitializationModel(ModelBase):
-
-    @abaqus_method_doc
+    
     def StdInitialization(
         self,
         name: str,
         overclosureType: SymbolicConstant = ADJUST,
-        interferenceDistance: float = None,
-        clearanceDistance: float = None,
-        openingTolerance: float = None,
-        overclosureTolerance: float = None,
+        interferenceDistance: Optional[float] = None,
+        clearanceDistance: Optional[float] = None,
+        openingTolerance: Optional[float] = None,
+        overclosureTolerance: Optional[float] = None,
     ) -> StdInitialization:
         """This method creates a StdInitialization object.
 

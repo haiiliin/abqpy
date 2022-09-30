@@ -1,4 +1,4 @@
-import typing
+from typing import Union, overload, Dict, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .CommonOptions import CommonOptions
@@ -20,7 +20,8 @@ from ..PlotOptions.DisplayOptions import DisplayOptions
 from ..PlotOptions.FreeBodyOptions import FreeBodyOptions
 from ..PlotOptions.StreamOptions import StreamOptions
 from ..PlotOptions.ViewCutOptions import ViewCutOptions
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, EMPTY_LEAF, FIRST_FRAME, OFF, ON,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -84,13 +85,13 @@ class OdbDisplay:
     modelVariableList: OdbModelFieldVarList = OdbModelFieldVarList()
 
     #: A repository of OdbSet objects specifying the set label. The repository is read-only.
-    nodeSet: typing.Dict[str, OdbSet] = {}
+    nodeSet: Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying the set label. The repository is read-only.
-    elementSet: typing.Dict[str, OdbSet] = {}
+    elementSet: Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying the set label. The repository is read-only.
-    surfaceSet: typing.Dict[str, OdbSet] = {}
+    surfaceSet: Dict[str, OdbSet] = {}
 
     #: A :py:class:`~abaqus.PlotOptions.DisplayOptions.DisplayOptions` object.
     display: DisplayOptions = DisplayOptions()
@@ -120,7 +121,7 @@ class OdbDisplay:
     viewCutOptions: ViewCutOptions = ViewCutOptions()
 
     #: A repository of ViewCut objects.
-    viewCuts: typing.Dict[str, ViewCut] = {}
+    viewCuts: Dict[str, ViewCut] = {}
 
     #: A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the current display group and referring to an object in
     #: the **displayGroups** member of Session.
@@ -140,7 +141,7 @@ class OdbDisplay:
     #: A tuple of Strings specifying the step label and the frame label when the current step
     #: is user defined. Alternatively, **fieldFrame** maybe specified as a pair of Ints with the
     #: step index and the frame index, when the current step is defined in the analysis.
-    fieldFrame: typing.Tuple[str, ...] = ()
+    fieldFrame: Tuple[str, ...] = ()
 
     #: A tuple specifying variables.
     #: Each item in the sequence consists of a tuple containing the following elements:
@@ -222,29 +223,29 @@ class OdbDisplay:
 
     #: A tuple of SymbolicConstants specifying variables.For information on the sequence, see
     #: the member **primaryVariable**.
-    statusVariable: SymbolicConstant = None
+    statusVariable: Optional[SymbolicConstant] = None
 
     #: A tuple of SymbolicConstants specifying variables.For information on the sequence, see
     #: the member **primaryVariable**.
-    symbolVariable: SymbolicConstant = None
+    symbolVariable: Optional[SymbolicConstant] = None
 
     #: A tuple of SymbolicConstants specifying a Boolean to specify if elements are to be
     #: removed in undeformed states based on an active status variable
-    applyStatusToUndeformed: SymbolicConstant = None
+    applyStatusToUndeformed: Optional[SymbolicConstant] = None
 
     #: A tuple of SymbolicConstants specifying a Boolean to specify if the status range should
     #: be inside a specified minimum and maximum. The range will be outside when false.
-    statusInsideRange: SymbolicConstant = None
+    statusInsideRange: Optional[SymbolicConstant] = None
 
     #: A tuple of Floats specifying a Float value for the minimum status range value.
-    statusMinimum: float = None
+    statusMinimum: Optional[float] = None
 
     #: A tuple of Floats specifying a Float value for the maximum status range value.
-    statusMaximum: float = None
+    statusMaximum: Optional[float] = None
 
     #: A tuple of SymbolicConstants specifying a Boolean to specify if elements are to be
     #: removed based on the status variable
-    useStatus: SymbolicConstant = None
+    useStatus: Optional[SymbolicConstant] = None
 
     #: A pair of Ints specifying the step index and the frame index of the first available
     #: frame. This sequence is read-only.
@@ -290,7 +291,7 @@ class OdbDisplay:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def setFrame(self, step: int, frame: int):
         """This method specifies the step and frame for the OdbDisplay object.
@@ -316,7 +317,7 @@ class OdbDisplay:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def setFrame(self, frame: OdbFrame):
         """This method specifies the frame for the OdbDisplay object.
@@ -337,8 +338,8 @@ class OdbDisplay:
         variableLabel: str,
         field: str,
         outputPosition: SymbolicConstant,
-        refinement: SymbolicConstant = None,
-        sectionPoint: dict = None,
+        refinement: Optional[SymbolicConstant] = None,
+        sectionPoint: Optional[dict] = None,
     ):
         """This method specifies the field output variable for which to obtain results.
 
@@ -408,10 +409,10 @@ class OdbDisplay:
         variableLabel: str,
         field: str,
         outputPosition: SymbolicConstant,
-        refinement: SymbolicConstant = None,
-        sectionPoint: dict = None,
-        statusMinimum: float = None,
-        statusMaximum: float = None,
+        refinement: Optional[SymbolicConstant] = None,
+        sectionPoint: Optional[dict] = None,
+        statusMinimum: Optional[float] = None,
+        statusMaximum: Optional[float] = None,
         statusInsideRange: Boolean = OFF,
         useStatus: Boolean = OFF,
         applyStatusToUndeformed: Boolean = False,
@@ -472,10 +473,10 @@ class OdbDisplay:
         variableLabel: str,
         field: str,
         outputPosition: SymbolicConstant,
-        refinement: SymbolicConstant = None,
-        sectionPoint: dict = None,
-        tensorQuantity: SymbolicConstant = None,
-        vectorQuantity: SymbolicConstant = None,
+        refinement: Optional[SymbolicConstant] = None,
+        sectionPoint: Optional[dict] = None,
+        tensorQuantity: Optional[SymbolicConstant] = None,
+        vectorQuantity: Optional[SymbolicConstant] = None,
     ):
         """This method specifies the field output variable for which to obtain results used for
         symbol plots. This variable must be in the form of vector or tensor data. The output
@@ -565,10 +566,10 @@ class OdbDisplay:
         name: str,
         shape: SymbolicConstant,
         origin: tuple,
-        normal: typing.Union[SymbolicConstant, float],
-        axis2: typing.Union[SymbolicConstant, float],
+        normal: Union[SymbolicConstant, float],
+        axis2: Union[SymbolicConstant, float],
         csysName: str,
-        cylinderAxis: typing.Union[SymbolicConstant, float],
+        cylinderAxis: Union[SymbolicConstant, float],
         followDeformation: Boolean = OFF,
         overrideAveraging: Boolean = ON,
         referenceFrame: SymbolicConstant = FIRST_FRAME,

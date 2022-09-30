@@ -1,4 +1,9 @@
 from typing import Union
+
+from auto_all import start_all, end_all
+
+start_all()
+
 from .AbaqusBoolean import AbaqusBoolean
 from .SymbolicConstant import SymbolicConstant
 
@@ -2547,4 +2552,7 @@ AVERAGE_ALL = SymbolicConstant.AVERAGE_ALL
 MAXIMUM_ENVELOPE = SymbolicConstant.MAXIMUM_ENVELOPE
 MINIMUM_ENVELOPE = SymbolicConstant.MINIMUM_ENVELOPE
 RANGE_ALL = SymbolicConstant.RANGE_ALL
+SS = SymbolicConstant.SS
 # okay decompiling abaqusConstants.pyc
+
+end_all()

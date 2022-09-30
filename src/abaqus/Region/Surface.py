@@ -1,5 +1,7 @@
 from __future__ import annotations
-from typing import Optional, Tuple, overload
+
+from typing import Union, Optional, Tuple, overload
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -9,7 +11,7 @@ from ..BasicGeometry.Face import Face
 from ..BasicGeometry.FaceArray import FaceArray
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNodeArray import MeshNodeArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import DIFFERENCE, INTERSECTION, SymbolicConstant, UNION
 
 
 @abaqus_class_doc

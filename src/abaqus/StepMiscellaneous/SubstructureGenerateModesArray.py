@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .SubstructureGenerateModes import SubstructureGenerateModes
 
-SubstructureGenerateModesArray = typing.List[SubstructureGenerateModes]
+SubstructureGenerateModesArray = List[SubstructureGenerateModes]

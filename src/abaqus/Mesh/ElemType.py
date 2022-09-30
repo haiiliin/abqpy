@@ -1,5 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AVERAGE_STRAIN, Boolean, CUBIC, DEFAULT, ENHANCED,
+                                              OFF, ON, STANDARD, SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -118,7 +121,7 @@ class ElemType:
 
     #: A Float specifying the maximum degradation option for damage control. The default value
     #: is −1.0.
-    maxDegradation: float = None
+    maxDegradation: Optional[float] = None
 
     #: A Float specifying the viscosity option. The default value is 0.0.This argument is
     #: applicable only to some Abaqus/Standard elements.
@@ -134,11 +137,11 @@ class ElemType:
 
     #: A Float specifying the linear kinematic conversion value.This argument is applicable
     #: only to some Abaqus/Explicit elements.
-    linearKinematicCtrl: float = None
+    linearKinematicCtrl: Optional[float] = None
 
     #: A Float specifying the initial gap opening.This parameter is applicable only to some
     #: Abaqus/Standard elements.
-    initialGapOpening: float = None
+    initialGapOpening: Optional[float] = None
 
     @abaqus_method_doc
     def __init__(
@@ -162,7 +165,7 @@ class ElemType:
         particleConversionThreshold: float = 0,
         particleConversionPPD: int = 1,
         particleConversionKernel: SymbolicConstant = CUBIC,
-        maxDegradation: float = None,
+        maxDegradation: Optional[float] = None,
         viscosity: float = 0,
         linearBulkViscosity: float = 1,
         quadraticBulkViscosity: float = 1,

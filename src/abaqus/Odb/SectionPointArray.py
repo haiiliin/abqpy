@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .SectionPoint import SectionPoint
 
-SectionPointArray = typing.List[SectionPoint]
+SectionPointArray = List[SectionPoint]

@@ -1,4 +1,4 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..ConstrainedSketchBase import ConstrainedSketchBase
@@ -6,7 +6,7 @@ from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
     ConstrainedSketchGeometry,
 )
 from ..ConstrainedSketchVertex.ConstrainedSketchVertex import ConstrainedSketchVertex
-from ...UtilityAndView.abaqusConstants import *
+from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
@@ -28,8 +28,8 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         line1: ConstrainedSketchGeometry,
         line2: ConstrainedSketchGeometry,
-        textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        textPoint: Tuple[float, ...],
+        value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension object between two
@@ -66,8 +66,8 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
-        textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        textPoint: Tuple[float, ...],
+        value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension object between two vertices. A
@@ -105,8 +105,8 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
-        textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        textPoint: Tuple[float, ...],
+        value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension object between two vertices. An
@@ -142,11 +142,11 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
     def RadialDimension(
         self,
         curve: ConstrainedSketchGeometry,
-        textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        textPoint: Tuple[float, ...],
+        value: Optional[float] = None,
         reference: Boolean = OFF,
-        majorRadius: float = None,
-        minorRadius: float = None,
+        majorRadius: Optional[float] = None,
+        minorRadius: Optional[float] = None,
     ):
         """This method constructs a ConstrainedSketchDimension object on a circular or elliptical
         arc. A radial dimension indicates the radius of an arc or circle or the major or minor
@@ -187,8 +187,8 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
-        textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        textPoint: Tuple[float, ...],
+        value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension between two vertices. A vertical
@@ -225,8 +225,8 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         entity1: ConstrainedSketchVertex,
         entity2: ConstrainedSketchVertex,
-        textPoint: typing.Tuple[float, ...],
-        value: float = None,
+        textPoint: Tuple[float, ...],
+        value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
         """This method constructs a ConstrainedSketchDimension object between two

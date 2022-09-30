@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc
 from .LoadState import LoadState
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc
@@ -26,33 +28,33 @@ class ConcentratedForceState(LoadState):
     #: A Float or a Complex specifying the concentrated force component in the 1-direction.
     #: Although **cf1**, **cf2**, and **cf3** are optional arguments, at least one of them must be
     #: nonzero.
-    cf1: float = None
+    cf1: Optional[float] = None
 
     #: A Float or a Complex specifying the concentrated force component in the 2-direction.
-    cf2: float = None
+    cf2: Optional[float] = None
 
     #: A Float or a Complex specifying the concentrated force component in the 3-direction.
-    cf3: float = None
+    cf3: Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the concentrated force component
     #: in the 1-direction. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.
-    cf1State: SymbolicConstant = None
+    cf1State: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the concentrated force component
     #: in the 2-direction. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.
-    cf2State: SymbolicConstant = None
+    cf2State: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the concentrated force component
     #: in the 3-direction. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.
-    cf3State: SymbolicConstant = None
+    cf3State: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    amplitudeState: SymbolicConstant = None
+    amplitudeState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
     #: values are:
-    status: SymbolicConstant = None
+    status: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the amplitude reference. The String is empty if the load
     #: has no amplitude reference.

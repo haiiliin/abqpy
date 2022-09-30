@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc
 from .LoadState import LoadState
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -43,32 +45,32 @@ class InertiaReliefState(LoadState):
     #: A SymbolicConstant specifying the propagation state of the Boolean that identifies the
     #: local 1-direction as a free direction. Possible values are UNSET, SET, UNCHANGED, and
     #: MODIFIED.
-    u1State: SymbolicConstant = None
+    u1State: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the Boolean that identifies the
     #: local 2-direction as a free direction. Possible values are UNSET, SET, UNCHANGED, and
     #: MODIFIED.
-    u2State: SymbolicConstant = None
+    u2State: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the Boolean that identifies the
     #: local the 3-direction as a free direction. Possible values are UNSET, SET, UNCHANGED,
     #: and MODIFIED.
-    u3State: SymbolicConstant = None
+    u3State: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the Boolean that identifies
     #: rotation about the local 1-direction as a free direction. Possible values are UNSET,
     #: SET, UNCHANGED, and MODIFIED.
-    ur1State: SymbolicConstant = None
+    ur1State: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the Boolean that identifies the
     #: rotation about the local the 2-direction as a free direction. Possible values are UNSET,
     #: SET, UNCHANGED, and MODIFIED.
-    ur2State: SymbolicConstant = None
+    ur2State: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the Boolean that identifies the
     #: rotation about the local the 3-direction as a free direction. Possible values are UNSET,
     #: SET, UNCHANGED, and MODIFIED.
-    ur3State: SymbolicConstant = None
+    ur3State: Optional[SymbolicConstant] = None
 
     #: A Boolean specifying whether the inertia relief loading should remain fixed at the
     #: current loading at the start of the step. The default value is OFF.
@@ -77,11 +79,11 @@ class InertiaReliefState(LoadState):
     #: A SymbolicConstant specifying the propagation state of the Boolean that identifies
     #: whether the inertia relief load should remain fixed at current level at the start of the
     #: step. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.
-    fixedState: SymbolicConstant = None
+    fixedState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the reference point of the
     #: inertia relief load. Possible values are UNSET, SET, UNCHANGED, and MODIFIED.
-    referencePointState: SymbolicConstant = None
+    referencePointState: Optional[SymbolicConstant] = None
 
     #: A tuple of Floats specifying the point about which rotations are defined. The point can
     #: be specified only for certain combinations of free directions. The **referencePoint**
@@ -89,11 +91,11 @@ class InertiaReliefState(LoadState):
     #: - The **X**, **Y** and **Z**-coordinates of a fixed rotation point.
     #: - A point on the rotation axis.
     #: - A point on the symmetry line.
-    referencePoint: float = None
+    referencePoint: Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the **amplitude** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    amplitudeState: SymbolicConstant = None
+    amplitudeState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
     #: values are:
@@ -107,7 +109,7 @@ class InertiaReliefState(LoadState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: SymbolicConstant = None
+    status: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the amplitude reference. The String is empty if the load
     #: has no amplitude reference.
