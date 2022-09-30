@@ -7,6 +7,7 @@ from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .QuantityType import QuantityType
 from ..PathAndProbe.Path import Path
+<<<<<<< HEAD
 from ..UtilityAndView.abaqusConstants import (Boolean,
                                               COMPLEX_MAGNITUDE, COMPLEX_PHASE,
                                               COMPLEX_VAL_AT_ANGLE, COMPONENT, DEFORMED,
@@ -20,6 +21,11 @@ from ..UtilityAndView.abaqusConstants import (Boolean,
                                               WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE,
                                               WHOLE_REGION, X_COORDINATE, Y_COORDINATE,
                                               Z_COORDINATE)
+=======
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import (Boolean,
+                                              OFF, ON, REAL, SymbolicConstant)
+>>>>>>> 5e7a52bf (Use napoleon instead of numpydoc (#1772))
 
 
 class Odb:
@@ -290,7 +296,7 @@ class XYData(tuple):
         legendLabel: str = "",
         skipFrequency: Optional[int] = None,
         numericForm: Literal[
-            COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, COMPLEX_VAL_AT_ANGLE
+            C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
         ] = REAL,
         complexAngle: float = 0,
         stepTuple: Optional[int] = None,
@@ -360,24 +366,24 @@ class XYData(tuple):
         self,
         odb: Odb,
         outputPosition: Literal[
-            ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, NODAL
+            C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL
         ],
         variable: Tuple[
             Tuple[
                 str,
                 Literal[
-                    ELEMENT_CENTROID,
-                    ELEMENT_FACE,
-                    ELEMENT_NODAL,
-                    GENERAL_PARTICLE,
-                    INTEGRATION_POINT,
-                    NODAL,
-                    WHOLE_ELEMENT,
-                    WHOLE_MODEL,
-                    WHOLE_PART_INSTANCE,
-                    WHOLE_REGION,
+                    C.ELEMENT_CENTROID,
+                    C.ELEMENT_FACE,
+                    C.ELEMENT_NODAL,
+                    C.GENERAL_PARTICLE,
+                    C.INTEGRATION_POINT,
+                    C.NODAL,
+                    C.WHOLE_ELEMENT,
+                    C.WHOLE_MODEL,
+                    C.WHOLE_PART_INSTANCE,
+                    C.WHOLE_REGION,
                 ],
-                Tuple[Tuple[Literal[INVARIANT, COMPONENT], str], ...],
+                Tuple[Tuple[Literal[C.INVARIANT, C.COMPONENT], str], ...],
             ]
         ],
         elementSets: Union[Tuple[str, ...], str] = ...,
@@ -385,9 +391,48 @@ class XYData(tuple):
         nodeSets: Union[str, Tuple[str, ...]] = ...,
         nodeLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,
         numericForm: Literal[
-            COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, COMPLEX_VAL_AT_ANGLE
+            C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
         ] = REAL,
         complexAngle: float = 0,
+<<<<<<< HEAD
+=======
+        operator: Literal[
+            C.ADD,
+            C.SUBTRACT,
+            C.MULTIPLY,
+            C.DIVIDE,
+            C.POWER,
+            C.MINIMUM,
+            C.MAXIMUM,
+            C.AVERAGE,
+            C.RANGE,
+            C.SRSS,
+            C.ABSOLUTE,
+            C.UNARY_NEGATIVE,
+            C.COSINE,
+            C.HYPERBOLIC_COSINE,
+            C.INVERSE_COSINE,
+            C.SINE,
+            C.HYPERBOLIC_SINE,
+            C.INVERSE_SINE,
+            C.TANGENT,
+            C.HYPERBOLIC_TANGENT,
+            C.INVERSE_TANGENT,
+            C.EXPONENTIAL,
+            C.NATURAL_LOG,
+            C.LOG,
+            C.SQUARE_ROOT,
+            C.NORMALIZE,
+            C.DEG2RAD,
+            C.RAD2DEG,
+            C.SMOOTH,
+            C.SWAP,
+            C.AVERAGE_ALL,
+            C.MAXIMUM_ENVELOPE,
+            C.MINIMUM_ENVELOPE,
+            C.RANGE_ALL,
+        ] = ...,
+>>>>>>> 5e7a52bf (Use napoleon instead of numpydoc (#1772))
     ) -> List[XYData]:
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
@@ -544,24 +589,24 @@ class XYData(tuple):
         self,
         odb: Odb,
         outputPosition: Literal[
-            ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, NODAL
+            C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL
         ],
         variable: Tuple[
             Tuple[
                 str,
                 Literal[
-                    ELEMENT_CENTROID,
-                    ELEMENT_FACE,
-                    ELEMENT_NODAL,
-                    GENERAL_PARTICLE,
-                    INTEGRATION_POINT,
-                    NODAL,
-                    WHOLE_ELEMENT,
-                    WHOLE_MODEL,
-                    WHOLE_PART_INSTANCE,
-                    WHOLE_REGION,
+                    C.ELEMENT_CENTROID,
+                    C.ELEMENT_FACE,
+                    C.ELEMENT_NODAL,
+                    C.GENERAL_PARTICLE,
+                    C.INTEGRATION_POINT,
+                    C.NODAL,
+                    C.WHOLE_ELEMENT,
+                    C.WHOLE_MODEL,
+                    C.WHOLE_PART_INSTANCE,
+                    C.WHOLE_REGION,
                 ],
-                Tuple[Literal[INVARIANT, COMPONENT], str],
+                Tuple[Literal[C.INVARIANT, C.COMPONENT], str],
                 Dict[str, str],
             ],
             ...,
@@ -571,7 +616,7 @@ class XYData(tuple):
         nodeSets: Union[str, Tuple[str, ...]] = ...,
         nodeLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,
         numericForm: Literal[
-            COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, COMPLEX_VAL_AT_ANGLE
+            C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
         ] = REAL,
         complexAngle: float = 0,
     ) -> List[XYData]:
@@ -668,19 +713,19 @@ class XYData(tuple):
         path: Path,
         name: str,
         includeIntersections: Boolean,
-        shape: Literal[UNDEFORMED, DEFORMED],
-        pathStyle: Literal[PATH_POINTS, UNIFORM_SPACING],
+        shape: Literal[C.UNDEFORMED, C.DEFORMED],
+        pathStyle: Literal[C.PATH_POINTS, C.UNIFORM_SPACING],
         numIntervals: int,
         labelType: Literal[
-            NORM_DISTANCE,
-            SEQ_ID,
-            TRUE_DISTANCE,
-            TRUE_DISTANCE_X,
-            TRUE_DISTANCE_Y,
-            TRUE_DISTANCE_Z,
-            X_COORDINATE,
-            Y_COORDINATE,
-            Z_COORDINATE,
+            C.NORM_DISTANCE,
+            C.SEQ_ID,
+            C.TRUE_DISTANCE,
+            C.TRUE_DISTANCE_X,
+            C.TRUE_DISTANCE_Y,
+            C.TRUE_DISTANCE_Z,
+            C.X_COORDINATE,
+            C.Y_COORDINATE,
+            C.Z_COORDINATE,
         ],
         viewport: str = "",
         removeDuplicateXYPairs: Boolean = True,
@@ -690,7 +735,7 @@ class XYData(tuple):
         variable: Optional[SymbolicConstant] = None,
         deformedMag: Optional[float] = None,
         numericForm: Literal[
-            COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, COMPLEX_VAL_AT_ANGLE
+            C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
         ] = REAL,
         complexAngle: float = 0,
         projectOntoMesh: Boolean = False,

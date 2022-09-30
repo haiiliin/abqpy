@@ -3,7 +3,8 @@ from typing import Optional, overload
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import SCALAR, SymbolicConstant
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc
@@ -47,7 +48,7 @@ class HistoryOutput:
         self,
         name: str,
         description: str,
-        type: Literal[SCALAR],
+        type: Literal[C.SCALAR],
         validInvariants: Optional[SymbolicConstant] = None,
     ) -> None:
         """This method creates a HistoryOutput object.
