@@ -25,8 +25,8 @@ from .ConstrainedSketchVertex.ConstrainedSketchVertexModel import (
     ConstrainedSketchVertexModel,
 )
 from ..Part.AcisFile import AcisFile
-from ..UtilityAndView.abaqusConstants import (AUTOCAD, Boolean, JAMA, LEFT, MSBO, OFF, RIGHT,
-                                              SOLIDWORKS, STANDALONE, STANDARD, SUPERIMPOSE)
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import (Boolean, OFF)
 
 
 @abaqus_class_doc
@@ -450,7 +450,7 @@ class ConstrainedSketch(
         self,
         distance: float,
         objectList: Tuple[ConstrainedSketchGeometry, ...],
-        side: Literal[LEFT, RIGHT],
+        side: Literal[C.LEFT, C.RIGHT],
         filletCorners: Boolean = OFF,
     ) -> None:
         """This method creates copies of the selected ConstrainedSketchGeometry objects, offsets
@@ -627,7 +627,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def setPrimaryObject(self, option: Literal[STANDALONE, SUPERIMPOSE]) -> None:
+    def setPrimaryObject(self, option: Literal[C.STANDALONE, C.SUPERIMPOSE]) -> None:
         """This method makes the ConstrainedSketch object the primary object in the current
         viewport. The sketch remains the primary object in the current viewport until an
         unsetPrimaryobject command is issued.
@@ -706,7 +706,7 @@ class ConstrainedSketch(
     def writeIgesFile(
         self,
         filename: str,
-        flavor: Literal[STANDARD, AUTOCAD, SOLIDWORKS, JAMA, MSBO] = ...,
+        flavor: Literal[C.STANDARD, C.AUTOCAD, C.SOLIDWORKS, C.JAMA, C.MSBO] = ...,
     ) -> None:
         """This method exports the geometry of the sketch to a named file in IGES format.
 

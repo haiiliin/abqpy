@@ -3,9 +3,9 @@ from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Model.ModelBase import ModelBase
 from ..Part.Part import Part
-from ..UtilityAndView.abaqusConstants import (ANALYTIC_RIGID_SURFACE, AXISYMMETRIC, Boolean,
-                                              DEFORMABLE_BODY, DISCRETE_RIGID_SURFACE, EULERIAN,
-                                              OFF, THREE_D, TWO_D_PLANAR)
+from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import (Boolean,
+                                              OFF)
 
 
 @abaqus_class_doc
@@ -22,9 +22,9 @@ class PartModel(ModelBase):
     def Part(
         self,
         name: str,
-        dimensionality: Literal[THREE_D, TWO_D_PLANAR, AXISYMMETRIC],
+        dimensionality: Literal[C.THREE_D, C.TWO_D_PLANAR, C.AXISYMMETRIC],
         type: Literal[
-            DEFORMABLE_BODY, EULERIAN, DISCRETE_RIGID_SURFACE, ANALYTIC_RIGID_SURFACE
+            C.DEFORMABLE_BODY, C.EULERIAN, C.DISCRETE_RIGID_SURFACE, C.ANALYTIC_RIGID_SURFACE
         ],
         twist: Boolean = OFF,
     ):

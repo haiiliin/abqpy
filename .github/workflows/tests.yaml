@@ -57,4 +57,4 @@ jobs:
     - name: Build the documentation
       shell: bash -l {0}
       run: |
-        sphinx-build -b html -W -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html
+        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html

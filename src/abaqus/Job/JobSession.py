@@ -6,6 +6,7 @@ from ..UtilityAndView.abaqusConstants import ALL, Boolean, OFF, ON, SymbolicCons
 
 @abaqus_class_doc
 class JobSession(SessionBase):
+
     @abaqus_method_doc
     def Queue(
         self,
