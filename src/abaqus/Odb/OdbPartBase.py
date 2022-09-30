@@ -1,4 +1,4 @@
-import typing
+from typing import overload, Dict, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AnalyticSurface import AnalyticSurface
@@ -13,7 +13,7 @@ from .RebarOrientationArray import RebarOrientationArray
 from .SectionCategory import SectionCategory
 from ..Property.MaterialOrientationArray import MaterialOrientationArray
 from ..Property.SectionAssignmentArray import SectionAssignmentArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import AXIS_1, STACK_3, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -35,13 +35,13 @@ class OdbPartBase:
     elements: OdbMeshElementArray = []
 
     #: A repository of OdbSet objects specifying node sets.
-    nodeSets: typing.Dict[str, OdbSet] = {}
+    nodeSets: Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying element sets.
-    elementSets: typing.Dict[str, OdbSet] = {}
+    elementSets: Dict[str, OdbSet] = {}
 
     #: A repository of OdbSet objects specifying surfaces.
-    surfaces: typing.Dict[str, OdbSet] = {}
+    surfaces: Dict[str, OdbSet] = {}
 
     #: A :py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray` object.
     sectionAssignments: SectionAssignmentArray = []
@@ -91,7 +91,7 @@ class OdbPartBase:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def addElements(
         self,
@@ -99,7 +99,7 @@ class OdbPartBase:
         connectivity: tuple,
         type: str,
         elementSetName: str = "",
-        sectionCategory: SectionCategory = None,
+        sectionCategory: Optional[SectionCategory] = None,
     ):
         """This method adds elements to an OdbPart object using element labels and nodal
         connectivity.
@@ -121,14 +121,14 @@ class OdbPartBase:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def addElements(
         self,
         elementData: tuple,
         type: str,
-        elementSetName: str = None,
-        sectionCategory: SectionCategory = None,
+        elementSetName: Optional[str] = None,
+        sectionCategory: Optional[SectionCategory] = None,
     ):
         """This method adds elements to an OdbPart object using a sequence of element labels and
         nodal connectivity.
@@ -153,8 +153,8 @@ class OdbPartBase:
     def addElements(self, *args, **kwargs):
         ...
 
-    @typing.overload
-    def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: str = None):
+    @overload
+    def addNodes(self, labels: tuple, coordinates: tuple, nodeSetName: Optional[str] = None):
         """This method adds nodes to an OdbPart object using node labels and coordinates.
         Warning:Adding nodes not in ascending order of their labels may cause Abaqus/Viewer to
         plot contours incorrectly.
@@ -170,9 +170,9 @@ class OdbPartBase:
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
-    def addNodes(self, nodeData: tuple, nodeSetName: str = None):
+    def addNodes(self, nodeData: tuple, nodeSetName: Optional[str] = None):
         """This method adds nodes to an OdbPart object using a sequence of node labels and
         coordinates.
         Warning:Adding nodes not in ascending order of their labels may cause Abaqus/Viewer to
@@ -313,7 +313,7 @@ class OdbPartBase:
 
     @abaqus_method_doc
     def AnalyticRigidSurf2DPlanar(
-        self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
+        self, name: str, profile: Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
     ):
         """This method is used to define a two-dimensional AnalyticSurface object on the part
         object.
@@ -339,7 +339,7 @@ class OdbPartBase:
 
     @abaqus_method_doc
     def AnalyticRigidSurfExtrude(
-        self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
+        self, name: str, profile: Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
     ):
         """This method is used to define a three-dimensional cylindrical AnalyticSurface on the
         part object.
@@ -365,7 +365,7 @@ class OdbPartBase:
 
     @abaqus_method_doc
     def AnalyticRigidSurfRevolve(
-        self, name: str, profile: typing.Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
+        self, name: str, profile: Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
     ):
         """This method is used to define a three-dimensional AnalyticSurface of revolution on the
         part object.

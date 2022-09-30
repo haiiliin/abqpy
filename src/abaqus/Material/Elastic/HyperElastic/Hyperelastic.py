@@ -1,4 +1,4 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ViscoElastic.Hysteresis import Hysteresis
@@ -6,7 +6,9 @@ from ...TestData.BiaxialTestData import BiaxialTestData
 from ...TestData.PlanarTestData import PlanarTestData
 from ...TestData.UniaxialTestData import UniaxialTestData
 from ...TestData.VolumetricTestData import VolumetricTestData
-from ....UtilityAndView.abaqusConstants import *
+from ....UtilityAndView.abaqusConstants import (Boolean, DEFAULT, FITTED_VALUE, FUNG_ANISOTROPIC,
+                                                INCOMPRESSIBLE, ISOTROPIC, LONG_TERM, OFF, ON,
+                                                STRAIN, SymbolicConstant, UNIAXIAL, UNKNOWN)
 
 
 @abaqus_class_doc
@@ -117,7 +119,7 @@ class Hyperelastic:
         moduliTimeScale: SymbolicConstant = LONG_TERM,
         temperatureDependency: Boolean = OFF,
         n: int = 1,
-        beta: typing.Union[SymbolicConstant, float] = FITTED_VALUE,
+        beta: Union[SymbolicConstant, float] = FITTED_VALUE,
         testData: Boolean = ON,
         compressible: Boolean = OFF,
         properties: int = 0,

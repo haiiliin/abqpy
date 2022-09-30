@@ -1,4 +1,4 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Density.Density import Density
@@ -58,7 +58,15 @@ from .Plastic.Plastic import Plastic
 from .Plastic.Swelling.Swelling import Swelling
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (ALLISO, Boolean, CENTROID, COEFFICIENTS, CONSTANTVOLUME, DEFAULT,
+                                              ELASTIC_PLASTIC, EXPONENTIAL,
+                                              FITTED_VALUE, FORMULA, FUNG_ANISOTROPIC, GENERAL,
+                                              HALF_CYCLE, IDEALGAS, INCOMPRESSIBLE, INCREMENTAL,
+                                              INPUT, ISOTROPIC, LINEAR, LOGARITHMIC, LONG_TERM,
+                                              MECHANICAL, MSFLD, MT, NEWTONIAN, NMORI, NO, NONE,
+                                              OFF, ON, POISSON, PRONY, RELATIVE_SLOPE_DROP, STRAIN,
+                                              STRESS, SymbolicConstant, TABULAR, TOTAL, UNIAXIAL,
+                                              UNIFORM, UNKNOWN, VOLUMETRIC)
 
 
 @abaqus_class_doc
@@ -272,7 +280,7 @@ class Material(MaterialBase):
     def ClayPlasticity(
         self,
         table: tuple,
-        intercept: float = None,
+        intercept: Optional[float] = None,
         hardening: SymbolicConstant = EXPONENTIAL,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -1127,7 +1135,7 @@ class Material(MaterialBase):
     def GapFlow(
         self,
         table: tuple,
-        kmax: float = None,
+        kmax: Optional[float] = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         type: SymbolicConstant = NEWTONIAN,
@@ -1205,7 +1213,7 @@ class Material(MaterialBase):
         table: tuple,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        tensileStiffnessFactor: float = None,
+        tensileStiffnessFactor: Optional[float] = None,
         type: SymbolicConstant = ELASTIC_PLASTIC,
         unloadingDependencies: int = 0,
         unloadingTemperatureDependency: Boolean = OFF,
@@ -1360,7 +1368,7 @@ class Material(MaterialBase):
         moduliTimeScale: SymbolicConstant = LONG_TERM,
         temperatureDependency: Boolean = OFF,
         n: int = 1,
-        beta: typing.Union[SymbolicConstant, float] = FITTED_VALUE,
+        beta: Union[SymbolicConstant, float] = FITTED_VALUE,
         testData: Boolean = ON,
         compressible: Boolean = OFF,
         properties: int = 0,
@@ -1480,7 +1488,7 @@ class Material(MaterialBase):
     def Hyperfoam(
         self,
         testData: Boolean = OFF,
-        poisson: float = None,
+        poisson: Optional[float] = None,
         n: int = 1,
         temperatureDependency: Boolean = OFF,
         moduli: SymbolicConstant = LONG_TERM,
@@ -1641,10 +1649,10 @@ class Material(MaterialBase):
     def LowDensityFoam(
         self,
         elementRemoval: Boolean = OFF,
-        maxAllowablePrincipalStress: float = None,
+        maxAllowablePrincipalStress: Optional[float] = None,
         extrapolateStressStrainCurve: Boolean = OFF,
         strainRateType: SymbolicConstant = VOLUMETRIC,
-        mu0: float = None,
+        mu0: Optional[float] = None,
         mu1: float = 0,
         alpha: float = 2,
     ) -> LowDensityFoam:
@@ -1770,7 +1778,7 @@ class Material(MaterialBase):
     def MohrCoulombPlasticity(
         self,
         table: tuple,
-        deviatoricEccentricity: float = None,
+        deviatoricEccentricity: Optional[float] = None,
         meridionalEccentricity: float = 0,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
@@ -2115,7 +2123,7 @@ class Material(MaterialBase):
     def PorousMetalPlasticity(
         self,
         table: tuple,
-        relativeDensity: float = None,
+        relativeDensity: Optional[float] = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ) -> PorousMetalPlasticity:
@@ -3767,7 +3775,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def MeanFieldHomogenization(
         self,
-        angleSubdivision: int = None,
+        angleSubdivision: Optional[int] = None,
         formulation: SymbolicConstant = MT,
         isotropization: SymbolicConstant = ALLISO,
         uniformMatrixStrain: SymbolicConstant = NO,

@@ -1,7 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .MohrCoulombHardening import MohrCoulombHardening
 from .TensionCutOff import TensionCutOff
-from ....UtilityAndView.abaqusConstants import *
+from ....UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
@@ -41,7 +43,7 @@ class MohrCoulombPlasticity:
     def __init__(
         self,
         table: tuple,
-        deviatoricEccentricity: float = None,
+        deviatoricEccentricity: Optional[float] = None,
         meridionalEccentricity: float = 0,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,

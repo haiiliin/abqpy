@@ -1,12 +1,25 @@
 from __future__ import annotations
 
-from typing import Optional, Tuple, Union, List, Dict, overload
+from typing import Union, Optional, Tuple, List, Dict, overload
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .QuantityType import QuantityType
 from ..PathAndProbe.Path import Path
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean,
+                                              COMPLEX_MAGNITUDE, COMPLEX_PHASE,
+                                              COMPLEX_VAL_AT_ANGLE, COMPONENT, DEFORMED,
+                                              ELEMENT_CENTROID, ELEMENT_FACE,
+                                              ELEMENT_NODAL, GENERAL_PARTICLE,
+                                              IMAGINARY, INTEGRATION_POINT,
+                                              INVARIANT, NODAL, NORM_DISTANCE, OFF, ON, PATH_POINTS,
+                                              REAL, SEQ_ID, SymbolicConstant, TRUE_DISTANCE,
+                                              TRUE_DISTANCE_X, TRUE_DISTANCE_Y, TRUE_DISTANCE_Z,
+                                              UNDEFORMED, UNIFORM_SPACING,
+                                              WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE,
+                                              WHOLE_REGION, X_COORDINATE, Y_COORDINATE,
+                                              Z_COORDINATE)
 
 
 class Odb:

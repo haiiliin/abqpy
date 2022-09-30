@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .ConnectorOrientation import ConnectorOrientation
 
-ConnectorOrientationArray = typing.List[ConnectorOrientation]
+ConnectorOrientationArray = List[ConnectorOrientation]
