@@ -9,6 +9,7 @@ from .AbaqusBoolean import AbaqusBoolean
 value = 'SymbolicConstant'
 name = 'SymbolicConstant'
 
+
 @abaqus_class_doc
 class SymbolicConstant(str):
     """The SymbolicConstant object represents a string in a way that can be stored in a replay
@@ -110,6 +111,10 @@ class SymbolicConstant(str):
 
 
 class abaqusConstants(Enum):
+
+    def __str__(self) -> str:
+        return self.name
+
     YES = SymbolicConstant('YES')
     NO = SymbolicConstant('NO')
 
