@@ -1,6 +1,7 @@
 import sys
 
 import abqpy.abaqus
+from abqpy.python2funcs import execfile, execPyFile, upgradeMdb, raw_input
 from .Canvas.Highlight import *
 from .Mdb.Mdb import Mdb
 from .Odb.Odb import Odb
