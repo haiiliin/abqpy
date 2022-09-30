@@ -60,6 +60,7 @@ extensions = [
     'sphinx_toolbox.more_autodoc.overloads',
     'autoclasstoc',
     'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',
     'sphinx.ext.linkcode',
     'sphinx.ext.githubpages',
     'sphinx.ext.intersphinx',
