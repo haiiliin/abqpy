@@ -4,8 +4,8 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Interaction import Interaction
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTED, NONE, OFF, OMIT, ON, RIGHT,
-                                              SELECTIVE, SURFACE_TO_SURFACE, SymbolicConstant,
+from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTED, OFF, OMIT, ON, SELECTIVE, SURFACE_TO_SURFACE,
+                                              SymbolicConstant,
                                               TWO_CONFIG)
 
 
@@ -65,7 +65,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: - UNIFORM.
     #: 
     #: The default value is NONE.
-    interferenceType: SymbolicConstant = NONE
+    interferenceType: Optional[SymbolicConstant] = None
 
     #: A Float specifying the maximum overclosure distance allowed. This argument applies only
     #: when **interferenceType** = UNIFORM. The default value is 0.0.
@@ -107,7 +107,7 @@ class SurfaceToSurfaceContactStd(Interaction):
 
     #: A SymbolicConstant specifying the adjust method. Possible values are NONE, OVERCLOSED,
     #: TOLERANCE, and SET. The default value is NONE.
-    adjustMethod: SymbolicConstant = NONE
+    adjustMethod: Optional[SymbolicConstant] = None
 
     #: A Float specifying the adjust tolerance. The default value is 0.0.
     adjustTolerance: float = 0
@@ -167,7 +167,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     #: A SymbolicConstant specifying whether to use surface smoothing for geometric surfaces in
     #: SurfaceToSurfaceContactStd interactions. Possible values are AUTOMATIC and NONE. The
     #: default value is NONE.
-    surfaceSmoothing: SymbolicConstant = NONE
+    surfaceSmoothing: Optional[SymbolicConstant] = None
 
     #: A :py:class:`~abaqus.Region.Region.Region` object specifying the slave node sub-set for bonding, used only when the
     #: contact property CohesiveBehavior option specifies use.
@@ -182,7 +182,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         slave: Region,
         sliding: SymbolicConstant,
         interactionProperty: str,
-        interferenceType: SymbolicConstant = NONE,
+        interferenceType: Optional[SymbolicConstant] = None,
         overclosure: float = 0,
         interferenceDirectionType: SymbolicConstant = COMPUTED,
         direction: tuple = (),
@@ -190,7 +190,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         smooth: float = 0,
         hcrit: float = 0,
         extensionZone: float = 0,
-        adjustMethod: SymbolicConstant = NONE,
+        adjustMethod: Optional[SymbolicConstant] = None,
         adjustTolerance: float = 0,
         adjustSet: Optional[Region] = None,
         enforcement: SymbolicConstant = SURFACE_TO_SURFACE,
@@ -205,14 +205,8 @@ class SurfaceToSurfaceContactStd(Interaction):
         datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
-        surfaceSmoothing: SymbolicConstant = NONE,
-<<<<<<< HEAD
-        bondingSet: Region = None,
-=======
+        surfaceSmoothing: Optional[SymbolicConstant] = None,
         bondingSet: Optional[Region] = None,
-        handedness: SymbolicConstant = RIGHT,
-        normalAdjustment: Optional[SymbolicConstant] = None,
->>>>>>> cfc3482e (Update type hints (#1762))
     ):
         """This method creates a SurfaceToSurfaceContactStd object.
 
@@ -347,7 +341,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     @abaqus_method_doc
     def setValues(
         self,
-        interferenceType: SymbolicConstant = NONE,
+        interferenceType: Optional[SymbolicConstant] = None,
         overclosure: float = 0,
         interferenceDirectionType: SymbolicConstant = COMPUTED,
         direction: tuple = (),
@@ -355,7 +349,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         smooth: float = 0,
         hcrit: float = 0,
         extensionZone: float = 0,
-        adjustMethod: SymbolicConstant = NONE,
+        adjustMethod: Optional[SymbolicConstant] = None,
         adjustTolerance: float = 0,
         adjustSet: Optional[Region] = None,
         enforcement: SymbolicConstant = SURFACE_TO_SURFACE,
@@ -370,14 +364,8 @@ class SurfaceToSurfaceContactStd(Interaction):
         datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
-        surfaceSmoothing: SymbolicConstant = NONE,
-<<<<<<< HEAD
-        bondingSet: Region = None,
-=======
+        surfaceSmoothing: Optional[SymbolicConstant] = None,
         bondingSet: Optional[Region] = None,
-        handedness: SymbolicConstant = RIGHT,
-        normalAdjustment: Optional[SymbolicConstant] = None,
->>>>>>> cfc3482e (Update type hints (#1762))
     ):
         """This method modifies the data for an existing SurfaceToSurfaceContactStd object in the
         step where it is created.
@@ -483,7 +471,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         self,
         stepName: str,
         interactionProperty: str = "",
-        interferenceType: SymbolicConstant = NONE,
+        interferenceType: Optional[SymbolicConstant] = None,
         overclosure: float = 0,
         interferenceDirectionType: SymbolicConstant = COMPUTED,
         direction: tuple = (),

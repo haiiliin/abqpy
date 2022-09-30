@@ -21,14 +21,8 @@ class FieldReportSession(SessionBase):
         outputPosition: SymbolicConstant,
         displayGroup: DisplayGroup,
         variable: SymbolicConstant,
-<<<<<<< HEAD
-        numericForm: SymbolicConstant = None,
-        complexAngle: float = None,
-=======
         numericForm: Optional[SymbolicConstant] = None,
         complexAngle: Optional[float] = None,
-        stepFrame: SymbolicConstant = SPECIFY,
->>>>>>> cfc3482e (Update type hints (#1762))
     ):
         """This method writes a FieldOutput object to a user-defined ASCII file.
 

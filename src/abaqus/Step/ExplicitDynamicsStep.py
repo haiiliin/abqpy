@@ -271,12 +271,7 @@ class ExplicitDynamicsStep(AnalysisStep):
         massScaling: MassScalingArray = PREVIOUS_STEP,
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
-<<<<<<< HEAD
-        userDefinedInc: float = None,
-=======
         userDefinedInc: Optional[float] = None,
-        improvedDtMethod: Boolean = ON,
->>>>>>> cfc3482e (Update type hints (#1762))
     ):
         """This method modifies the ExplicitDynamicsStep object.
 

@@ -16,7 +16,7 @@ from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNode import MeshNode
 from ..Mesh.MeshNodeArray import MeshNodeArray
-from ..UtilityAndView.abaqusConstants import Boolean, OVERWRITE, SymbolicConstant, UNION
+from ..UtilityAndView.abaqusConstants import OVERWRITE, SymbolicConstant, UNION
 
 
 @abaqus_class_doc

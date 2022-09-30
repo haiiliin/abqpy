@@ -99,11 +99,7 @@ class XYPlot(XYPlotBase):
 
     @staticmethod
     @abaqus_method_doc
-<<<<<<< HEAD
     def QuantityType(type: SymbolicConstant, label: str = "") -> QuantityType:
-=======
-    def QuantityType(label: str = "", type: Optional[SymbolicConstant] = None) -> QuantityType:
->>>>>>> cfc3482e (Update type hints (#1762))
         """This method creates a QuantityType object.
 
         .. note:: 

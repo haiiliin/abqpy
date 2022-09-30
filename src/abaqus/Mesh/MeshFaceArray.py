@@ -19,11 +19,7 @@ class MeshFaceArray(List[MeshFace]):
     """
 
     @abaqus_method_doc
-<<<<<<< HEAD
-    def __init__(self, faces: typing.List[MeshFace]):
-=======
-    def __init__(self, elemFaces: List[MeshFace]):
->>>>>>> cfc3482e (Update type hints (#1762))
+    def __init__(self, faces: List[MeshFace]):
         """This method creates a MeshFaceArray object.
 
         .. note:: 

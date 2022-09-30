@@ -33,16 +33,9 @@ from ..StepOutput.FieldOutputRequest import FieldOutputRequest
 from ..StepOutput.HistoryOutputRequest import HistoryOutputRequest
 from ..StepOutput.IntegratedOutputSection import IntegratedOutputSection
 from ..StepOutput.TimePoint import TimePoint
-<<<<<<< HEAD
-from ..UtilityAndView.abaqusConstants import *
-=======
-from ..TableCollection.EventSeriesData import EventSeriesData
-from ..TableCollection.EventSeriesType import EventSeriesType
-from ..TableCollection.TableCollection import TableCollection
 from ..UtilityAndView.abaqusConstants import (B31, Boolean, C3D10, C3D8I, NOT_SET, OFF, ON,
                                               PRESERVE_SECTION, S4, STANDARD_EXPLICIT,
                                               SymbolicConstant)
->>>>>>> cfc3482e (Update type hints (#1762))
 
 
 @abaqus_class_doc
@@ -220,27 +213,6 @@ class ModelBase:
     #: A repository of OptimizationTask objects.
     optimizationTasks: Dict[str, OptimizationTask] = {}
 
-<<<<<<< HEAD
-=======
-    #: A repository of TableCollection objects.
-    #:
-    #: .. versionadded:: 2020
-    #:     The `tableCollections` attribute was added.
-    tableCollections: Dict[str, TableCollection] = {}
-
-    #: A repository of EventSeriesType objects.
-    #:
-    #: .. versionadded:: 2020
-    #:     The `eventSeriesTypes` attribute was added.
-    eventSeriesTypes: Dict[str, EventSeriesType] = {}
-
-    #: A repository of EventSeriesData objects.
-    #:
-    #: .. versionadded:: 2020
-    #:     The `eventSeriesDatas` attribute was added.
-    eventSeriesDatas: Dict[str, EventSeriesData] = {}
-
->>>>>>> cfc3482e (Update type hints (#1762))
     @abaqus_method_doc
     def __init__(
         self,

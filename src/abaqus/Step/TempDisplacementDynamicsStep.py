@@ -16,7 +16,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import (AUTOMATIC_GLOBAL, Boolean, OFF, ON, PREVIOUS_STEP,
+from ..UtilityAndView.abaqusConstants import (AUTOMATIC_GLOBAL, Boolean, OFF, PREVIOUS_STEP,
                                               SymbolicConstant)
 
 

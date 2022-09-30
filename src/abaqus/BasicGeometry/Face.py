@@ -1,4 +1,4 @@
-from typing import List, Optional
+from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import BOTH_SIDES, Boolean, OFF, SymbolicConstant
@@ -286,19 +286,3 @@ class Face:
 
         """
         ...
-<<<<<<< HEAD
-=======
-
-    @abaqus_method_doc
-    def getCADAttributes(self):
-        """This method returns an array of CAD attribute strings associated with the Face when the
-        part was created from CAD data.
-
-        Returns
-        -------
-        List[str]
-            An array of String.
-
-        """
-        ...
->>>>>>> cfc3482e (Update type hints (#1762))
