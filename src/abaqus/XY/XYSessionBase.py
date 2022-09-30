@@ -1,8 +1,8 @@
-import typing
+from typing import List, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Session.SessionBase import SessionBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -29,8 +29,8 @@ class XYSessionBase(SessionBase):
         xyBendingComps: tuple,
         invariantBendingComps: tuple = (),
         intervals: int = 40,
-        radiusOfCurvature: float = None,
-        oopRadiusOfCurvature: float = None,
+        radiusOfCurvature: Optional[float] = None,
+        oopRadiusOfCurvature: Optional[float] = None,
         curvatureCorrection: Boolean = OFF,
         curvatureCsys: str = "",
         useCurvatureCsysForOrient: Boolean = OFF,
@@ -120,7 +120,7 @@ class XYSessionBase(SessionBase):
 
         Returns
         -------
-        typing.List[XYData]
+        List[XYData]
             A list of xyData objects.
 
         Raises
@@ -141,7 +141,7 @@ class XYSessionBase(SessionBase):
         ...
 
     @abaqus_method_doc
-    def setPathTolerance(self, tolerance: str = 0):
+    def setPathTolerance(self, tolerance: float = 0.00001):
         """This method is used to set the **tolerance** to be used when creating XYData objects by
         extracting results along Path objects. This command should be exercised with caution
         since setting a value too low or too high may result in getting no results or
@@ -171,7 +171,7 @@ class XYSessionBase(SessionBase):
         ...
 
     @abaqus_method_doc
-    def setLimitForXYDataPlots(self, limit: int = None):
+    def setLimitForXYDataPlots(self, limit: Optional[int] = None):
         """This method is used to set the **limit** for number of XY data objects while creating
         XYData from field output.
 

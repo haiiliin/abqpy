@@ -1,7 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .RebarLayers import RebarLayers
 from .Section import Section
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import DEFAULT, SymbolicConstant, UNIFORM
 
 
 @abaqus_class_doc
@@ -23,7 +25,7 @@ class MembraneSection(Section):
     """
 
     #: A :py:class:`~abaqus.Section.RebarLayers.RebarLayers` object specifying reinforcement properties.
-    rebarLayers: RebarLayers = None
+    rebarLayers: Optional[RebarLayers] = None
 
     #: A String specifying the repository key.
     name: str

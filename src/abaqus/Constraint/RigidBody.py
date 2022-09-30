@@ -1,7 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Constraint import Constraint
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
@@ -33,19 +35,19 @@ class RigidBody(Constraint):
 
     #: None or a Region object specifying the elements constrained to the movement of the
     #: reference point. The default value is None.
-    bodyRegion: str = None
+    bodyRegion: Optional[str] = None
 
     #: None or a Region object specifying the nodes tied to the movement of the reference
     #: point. The default value is None.
-    tieRegion: str = None
+    tieRegion: Optional[str] = None
 
     #: None or a Region object specifying the nodes pinned to the movement of the reference
     #: point. The default value is None.
-    pinRegion: str = None
+    pinRegion: Optional[str] = None
 
     #: None or a Region object specifying the analytic surface constrained to the movement of
     #: the reference point. The default value is None.
-    surfaceRegion: str = None
+    surfaceRegion: Optional[str] = None
 
     #: A Boolean specifying whether the analysis product should recompute the reference point
     #: position to be at the center of mass. The default value is OFF.
@@ -60,10 +62,10 @@ class RigidBody(Constraint):
         self,
         name: str,
         refPointRegion: Region,
-        bodyRegion: str = None,
-        tieRegion: str = None,
-        pinRegion: str = None,
-        surfaceRegion: str = None,
+        bodyRegion: Optional[str] = None,
+        tieRegion: Optional[str] = None,
+        pinRegion: Optional[str] = None,
+        surfaceRegion: Optional[str] = None,
         refPointAtCOM: Boolean = OFF,
         isothermal: Boolean = OFF,
     ):
@@ -109,10 +111,10 @@ class RigidBody(Constraint):
     @abaqus_method_doc
     def setValues(
         self,
-        bodyRegion: str = None,
-        tieRegion: str = None,
-        pinRegion: str = None,
-        surfaceRegion: str = None,
+        bodyRegion: Optional[str] = None,
+        tieRegion: Optional[str] = None,
+        pinRegion: Optional[str] = None,
+        surfaceRegion: Optional[str] = None,
         refPointAtCOM: Boolean = OFF,
         isothermal: Boolean = OFF,
     ):

@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .RebarOrientation import RebarOrientation
 
-RebarOrientationArray = typing.List[RebarOrientation]
+RebarOrientationArray = List[RebarOrientation]

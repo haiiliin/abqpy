@@ -1,4 +1,4 @@
-import typing
+from typing import overload, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Assembly.AssemblyBase import AssemblyBase
@@ -6,7 +6,7 @@ from ..Datum.DatumCsys import DatumCsys
 from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshNode import MeshNode
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, OUTWARD, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -50,7 +50,7 @@ class MeshEditAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def deleteElement(
-        self, elements: typing.Tuple[MeshElement, ...], deleteUnreferencedNodes: Boolean = OFF
+        self, elements: Tuple[MeshElement, ...], deleteUnreferencedNodes: Boolean = OFF
     ):
         """This method deletes the given elements from a part instance. The elements must have been
         generated using the bottom-up meshing technique.
@@ -66,7 +66,7 @@ class MeshEditAssembly(AssemblyBase):
         ...
 
     @abaqus_method_doc
-    def projectNode(self, nodes: typing.Tuple[MeshNode, ...], projectionReference: str):
+    def projectNode(self, nodes: Tuple[MeshNode, ...], projectionReference: str):
         """This method projects the given nodes of a part instance onto a mesh entity, geometric
         entity, or a datum object.
 
@@ -84,15 +84,15 @@ class MeshEditAssembly(AssemblyBase):
     @abaqus_method_doc
     def editNode(
         self,
-        nodes: typing.Tuple[MeshNode, ...],
-        coordinate1: float = None,
-        coordinate2: float = None,
-        coordinate3: float = None,
+        nodes: Tuple[MeshNode, ...],
+        coordinate1: Optional[float] = None,
+        coordinate2: Optional[float] = None,
+        coordinate3: Optional[float] = None,
         coordinates: tuple = (),
-        offset1: float = None,
-        offset2: float = None,
-        offset3: float = None,
-        localCsys: DatumCsys = None,
+        offset1: Optional[float] = None,
+        offset2: Optional[float] = None,
+        offset3: Optional[float] = None,
+        localCsys: Optional[DatumCsys] = None,
         projectToGeometry: Boolean = ON,
     ):
         """This method changes the coordinates of the given nodes on a part instance.
@@ -139,12 +139,12 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def mergeNodes(
         self,
-        nodes: typing.Tuple[MeshNode, ...],
-        tolerance: float = None,
+        nodes: Tuple[MeshNode, ...],
+        tolerance: Optional[float] = None,
         removeDuplicateElements: Boolean = True,
     ):
         """Merge the nodes of a part instance. The nodes must have been generated using the
@@ -164,7 +164,7 @@ class MeshEditAssembly(AssemblyBase):
         """
         ...
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def mergeNodes(
         self, node1: MeshNode, node2: MeshNode, removeDuplicateElements: Boolean = True

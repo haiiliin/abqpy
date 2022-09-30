@@ -1,7 +1,7 @@
-import typing
+from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import DAMPING_COEFFICIENT, DEFAULT, STEP, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -42,7 +42,7 @@ class ContactDamping:
 
     #: The SymbolicConstant DEFAULT or a Float specifying the tangential damping coefficient
     #: divided by the normal damping coefficient. The default value is DEFAULT.
-    tangentFraction: typing.Union[SymbolicConstant, float] = DEFAULT
+    tangentFraction: Union[SymbolicConstant, float] = DEFAULT
 
     #: A SymbolicConstant specifying the variation of the damping coefficient or fraction with
     #: respect to clearance. Possible values are STEP, LINEAR, and BILINEAR. The default value
@@ -51,13 +51,13 @@ class ContactDamping:
 
     #: A tuple of pairs of Floats specifying the damping properties. The items in the table
     #: data are described below.
-    table: float = None
+    table: Optional[float] = None
 
     @abaqus_method_doc
     def __init__(
         self,
         definition: SymbolicConstant = DAMPING_COEFFICIENT,
-        tangentFraction: typing.Union[SymbolicConstant, float] = DEFAULT,
+        tangentFraction: Union[SymbolicConstant, float] = DEFAULT,
         clearanceDependence: SymbolicConstant = STEP,
         table: tuple = (),
     ):

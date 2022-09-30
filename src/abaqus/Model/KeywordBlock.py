@@ -1,5 +1,7 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
@@ -23,7 +25,7 @@ class KeywordBlock:
 
     #: A Float specifying the value of the counter associated with the Mdb object at the most
     #: recent synchronization.
-    lastSynchCount: float = None
+    lastSynchCount: Optional[float] = None
 
     #: A tuple of Strings specifying a sequence of Strings that is identical to the information
     #: written to the Abaqus input file. Each String in the sequence represents an Abaqus input

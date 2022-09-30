@@ -1,3 +1,5 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc
 from .Datum import Datum
 
@@ -22,4 +24,4 @@ class DatumPoint(Datum):
 
     #: A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of a point located on
     #: the datum.
-    pointOn: float = None
+    pointOn: Optional[float] = None

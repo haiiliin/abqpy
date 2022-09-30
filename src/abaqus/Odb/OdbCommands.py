@@ -1,10 +1,10 @@
-import typing
+from typing import Tuple
 
 from abqpy.decorators import abaqus_function_doc
 from .FieldOutput import FieldOutput
 from .Odb import Odb
 from .OdbSequenceAnalyticSurfaceSegment import OdbSequenceAnalyticSurfaceSegment
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 """The Odb commands do the following: 
 
@@ -51,12 +51,12 @@ def isUpgradeRequiredForOdb(upgradeRequiredOdbPath: str):
 
 
 @abaqus_function_doc
-def maxEnvelop() -> typing.Tuple[FieldOutput, FieldOutput]:
+def maxEnvelop() -> Tuple[FieldOutput, FieldOutput]:
     """Retrieve the maximum value of an output variable over a number of fields.
 
     Returns
     -------
-    typing.Tuple[FieldOutput, FieldOutput]
+    Tuple[FieldOutput, FieldOutput]
         A sequence of two fieldOutput objects. The first fieldOutput object contains the maximum
         value. The second fieldOutput object contains the index of the field containing the
         maximum value. The index follows the order in which fields are positioned in the list of
@@ -72,12 +72,12 @@ def maxEnvelop() -> typing.Tuple[FieldOutput, FieldOutput]:
 
 
 @abaqus_function_doc
-def minEnvelop() -> typing.Tuple[FieldOutput, FieldOutput]:
+def minEnvelop() -> Tuple[FieldOutput, FieldOutput]:
     """Retrieve the minimum value of an output variable over a number of fields.
     
     Returns
     -------
-    typing.Tuple[FieldOutput, FieldOutput]
+    Tuple[FieldOutput, FieldOutput]
         A sequence of two fieldOutput objects. The first fieldOutput object contains the minimum
         value. The second fieldOutput object contains the index of the field containing the
         minimum value. The index follows the order in which fields are positioned in the list of

@@ -1,6 +1,6 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .DataSet import DataSet
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean
 
 
 @abaqus_class_doc
@@ -198,7 +198,7 @@ class Behavior:
 
         Returns
         -------
-        typing.Tuple[float, ...]
+        Tuple[float, ...]
             A tuple consisting of a and b values of the regression line(y = ax + b), coefficient of
             determination(r-squared) value and the start and end-points of the line.
         """
@@ -216,7 +216,7 @@ class Behavior:
 
         Returns
         -------
-        typing.Tuple[float, ...]
+        Tuple[float, ...]
             A tuple consisting of a and b values of the regression line(y = ax + b), coefficient of
             determination(r-squared) value and the start and end-points of the line.
         """
@@ -234,7 +234,7 @@ class Behavior:
 
         Returns
         -------
-        typing.Tuple[float, ...]
+        Tuple[float, ...]
             Coordinates of the ultimate point.
         """
         ...
@@ -283,7 +283,7 @@ class Behavior:
 
         Returns
         -------
-        typing.Tuple[typing.Tuple[float, ...]]
+        Tuple[Tuple[float, ...]]
             A sequence of coordinates of the Plastic points..
         """
         ...
@@ -309,7 +309,7 @@ class Behavior:
 
         Returns
         -------
-        typing.Tuple[str, ...]
+        Tuple[str, ...]
             A sequence of strings specifying names of the DataSet objects containing loading,
             unloading, reloading and primary datasets.
         """

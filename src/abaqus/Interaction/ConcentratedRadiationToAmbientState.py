@@ -1,6 +1,8 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc
 from .InteractionState import InteractionState
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc
@@ -25,30 +27,30 @@ class ConcentratedRadiationToAmbientState(InteractionState):
     """
 
     #: A Float specifying the ambient temperature.
-    ambientTemperature: float = None
+    ambientTemperature: Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the **ambientTemperature** member.
     #: Possible values are UNSET, SET, UNCHANGED, and FREED.
-    ambientTemperatureState: SymbolicConstant = None
+    ambientTemperatureState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the **ambientTemperatureAmp**
     #: member. Possible values are UNSET, SET, UNCHANGED, and FREED.
-    ambientTemperatureAmpState: SymbolicConstant = None
+    ambientTemperatureAmpState: Optional[SymbolicConstant] = None
 
     #: A Float specifying the emissivity.
-    emissivity: float = None
+    emissivity: Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the **emissivity** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    emissivityState: SymbolicConstant = None
+    emissivityState: Optional[SymbolicConstant] = None
 
     #: A Float specifying the area associated with the node where the concentrated radiation is
     #: applied.
-    nodalArea: float = None
+    nodalArea: Optional[float] = None
 
     #: A SymbolicConstant specifying the propagation state of the **nodalArea** member. Possible
     #: values are UNSET, SET, UNCHANGED, and FREED.
-    nodalAreaState: SymbolicConstant = None
+    nodalAreaState: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the Amplitude object that gives the variation of the
     #: ambient temperature with time.
@@ -66,4 +68,4 @@ class ConcentratedRadiationToAmbientState(InteractionState):
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
     #: - BUILT_INTO_BASE_STATE
-    status: SymbolicConstant = None
+    status: Optional[SymbolicConstant] = None

@@ -1,9 +1,10 @@
-import typing
+from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (AXIS_1, Boolean, GENERAL, NORMAL, OFF, ON,
+                                              SymbolicConstant, UNIFORM, UNSET)
 
 
 @abaqus_class_doc
@@ -197,7 +198,7 @@ class ShellEdgeLoad(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        magnitude: typing.Union[SymbolicConstant, float] = None,
+        magnitude: Union[SymbolicConstant, float] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing ShellEdgeLoad object in the

@@ -1,10 +1,12 @@
-import typing
+from typing import Union, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Arrow import Arrow
 from .Text import Text
 from ..Odb.UserDataBase import UserDataBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (BOTTOM_LEFT, Boolean, FILLED_ARROW, JUSTIFY_LEFT,
+                                              NONE, OFF, SOLID, SymbolicConstant, TRANSPARENT,
+                                              VERY_THIN)
 
 
 @abaqus_class_doc
@@ -13,10 +15,10 @@ class AnimationUserData(UserDataBase):
     def Arrow(
         self,
         name: str,
-        startPoint: typing.Tuple[float, ...] = (0.0, 0.0),
-        endPoint: typing.Tuple[float, ...] = (0.0, 0.0),
-        startAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        endAnchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
+        startPoint: Tuple[float, ...] = (0.0, 0.0),
+        endPoint: Tuple[float, ...] = (0.0, 0.0),
+        startAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
+        endAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         startHeadStyle: SymbolicConstant = NONE,
         endHeadStyle: SymbolicConstant = FILLED_ARROW,
         startGap: float = 0.0,
@@ -149,9 +151,9 @@ class AnimationUserData(UserDataBase):
         self,
         name: str,
         text: str = "",
-        offset: typing.Tuple[float, ...] = (),
-        anchor: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        referencePoint: typing.Union[SymbolicConstant, float] = BOTTOM_LEFT,
+        offset: Tuple[float, ...] = (),
+        anchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
+        referencePoint: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         rotationAngle: float = 0,
         color: str = "White",
         font: str = "-*-verdana-medium-r-normal--120-*",

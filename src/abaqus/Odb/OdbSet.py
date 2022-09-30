@@ -1,11 +1,11 @@
-import typing
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .OdbMeshElement import OdbMeshElement
 from .OdbMeshElementArray import OdbMeshElementArray
 from .OdbMeshNode import OdbMeshNode
 from .OdbMeshNodeArray import OdbMeshNodeArray
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -47,7 +47,7 @@ class OdbSet:
 
     #: A tuple of SymbolicConstants specifying the element face. If a set spans more than one
     #: part instance, this member is a sequence of sequences for each part instance.
-    faces: SymbolicConstant = None
+    faces: Optional[SymbolicConstant] = None
 
     #: A repository of an OdbInstance object.
     #:
@@ -62,7 +62,7 @@ class OdbSet:
     isInternal: Boolean = OFF
 
     @abaqus_method_doc
-    def __init__(self, name: str, nodes: typing.Tuple[OdbMeshNode, ...]):
+    def __init__(self, name: str, nodes: Tuple[OdbMeshNode, ...]):
         """This method creates a node set from an array of OdbMeshNode objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
         assembly-level sets).
@@ -117,7 +117,7 @@ class OdbSet:
         ...
 
     @abaqus_method_doc
-    def ElementSet(self, name: str, elements: typing.Tuple[OdbMeshElement, ...]):
+    def ElementSet(self, name: str, elements: Tuple[OdbMeshElement, ...]):
         """This method creates an element set from an array of OdbMeshElement objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshElement objects (for
         assembly-level sets).

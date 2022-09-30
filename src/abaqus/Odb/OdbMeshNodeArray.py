@@ -1,5 +1,5 @@
-import typing
+from typing import List
 
 from .OdbMeshNode import OdbMeshNode
 
-OdbMeshNodeArray = typing.List[OdbMeshNode]
+OdbMeshNodeArray = List[OdbMeshNode]

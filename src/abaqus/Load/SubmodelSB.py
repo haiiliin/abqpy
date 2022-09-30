@@ -1,7 +1,9 @@
+from typing import Optional
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Load import Load
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean, ON
 
 
 @abaqus_class_doc
@@ -21,7 +23,7 @@ class SubmodelSB(Load):
 
     #: None or a Float specifying the absolute value by which a driven node of the submodel can
     #: lie outside the region of the elements of the global model. The default value is None.
-    absoluteExteriorTolerance: float = None
+    absoluteExteriorTolerance: Optional[float] = None
 
     #: None or a Float specifying the fraction of the average element size in the global model
     #: by which a driven node of the submodel can lie outside the region of the elements of the
@@ -44,7 +46,7 @@ class SubmodelSB(Load):
         region: Region,
         globalStep: str,
         globalDrivingRegion: str = "",
-        absoluteExteriorTolerance: float = None,
+        absoluteExteriorTolerance: Optional[float] = None,
         exteriorTolerance: float = 0,
         globalIncrement: int = 0,
     ):
@@ -96,7 +98,7 @@ class SubmodelSB(Load):
     def setValues(
         self,
         globalDrivingRegion: str = "",
-        absoluteExteriorTolerance: float = None,
+        absoluteExteriorTolerance: Optional[float] = None,
         exteriorTolerance: float = 0,
         globalIncrement: int = 0,
     ):

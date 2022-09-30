@@ -1,4 +1,4 @@
-import typing
+from typing import overload, Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactPropertyAssignment import ContactPropertyAssignment
@@ -10,7 +10,8 @@ from .SmoothingAssignment import SmoothingAssignment
 from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
 from .SurfaceOffsetAssignment import SurfaceOffsetAssignment
 from .SurfaceThicknessAssignment import SurfaceThicknessAssignment
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import (Boolean, GLOBAL, OFF, ON, ORIGINAL, PERIMETER,
+                                              SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -75,7 +76,7 @@ class ContactExp(Interaction):
     #:     The `polarityAssignments` attribute was added.
     polarityAssignments: PolarityAssignments = PolarityAssignments()
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
@@ -83,14 +84,14 @@ class ContactExp(Interaction):
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-        includedPairs: RegionPairs = None, 
-        excludedPairs: RegionPairs = None, 
-        contactPropertyAssignments: ContactPropertyAssignment = None, 
-        surfaceThicknessAssignments: SurfaceThicknessAssignment = None, 
-        surfaceOffsetAssignments: SurfaceOffsetAssignment = None, 
-        surfaceFeatureAssignments: SurfaceFeatureAssignment = None,
-        smoothingAssignments: SmoothingAssignment = None,
-        masterSlaveAssignments: MasterSlaveAssignment = None,
+        includedPairs: Optional[RegionPairs] = None, 
+        excludedPairs: Optional[RegionPairs] = None, 
+        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
+        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
+        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
+        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
+        smoothingAssignments: Optional[SmoothingAssignment] = None,
+        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -148,7 +149,7 @@ class ContactExp(Interaction):
         """
         super().__init__()
 
-    @typing.overload
+    @overload
     @abaqus_method_doc
     def __init__(
         self,
@@ -156,15 +157,15 @@ class ContactExp(Interaction):
         createStepName: str,
         globalSmoothing: Boolean = ON,
         useAllstar: Boolean = OFF,
-        includedPairs: SymbolicConstant = None,
-        excludedPairs: SymbolicConstant = None,
-        contactPropertyAssignments: SymbolicConstant = None,
-        surfaceThicknessAssignments: typing.Union[SymbolicConstant, float] = ORIGINAL,
-        surfaceOffsetAssignments: typing.Union[SymbolicConstant, float] = GLOBAL,
-        surfaceFeatureAssignments: typing.Union[SymbolicConstant, float] = PERIMETER,
-        smoothingAssignments: SymbolicConstant = None,
-        masterSlaveAssignments: SymbolicConstant = None,
-        polarityAssignments: SymbolicConstant = None,
+        includedPairs: Optional[SymbolicConstant] = None,
+        excludedPairs: Optional[SymbolicConstant] = None,
+        contactPropertyAssignments: Optional[SymbolicConstant] = None,
+        surfaceThicknessAssignments: Union[SymbolicConstant, float] = ORIGINAL,
+        surfaceOffsetAssignments: Union[SymbolicConstant, float] = GLOBAL,
+        surfaceFeatureAssignments: Union[SymbolicConstant, float] = PERIMETER,
+        smoothingAssignments: Optional[SymbolicConstant] = None,
+        masterSlaveAssignments: Optional[SymbolicConstant] = None,
+        polarityAssignments: Optional[SymbolicConstant] = None,
     ):
         """This method creates a ContactExp object.
 

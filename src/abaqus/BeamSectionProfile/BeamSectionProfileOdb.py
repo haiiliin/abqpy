@@ -11,7 +11,7 @@ from .RectangularProfile import RectangularProfile
 from .TProfile import TProfile
 from .TrapezoidalProfile import TrapezoidalProfile
 from ..Odb.OdbBase import OdbBase
-from ..UtilityAndView.abaqusConstants import *
+from ..UtilityAndView.abaqusConstants import Boolean
 
 
 @abaqus_class_doc
