@@ -16,8 +16,8 @@ It also provides some simple APIs to execute the Abaqus commands so that you can
 Python script to build the model, submit the job and extract the output data in just one 
 Python script, even without opening the Abaqus/CAE. 
 
-## Other links for this project
 
+- Homepage: [abqpy.com](https://abqpy.com)
 - GitHub repository: [github.com/haiiliin/abqpy](https://github.com/haiiliin/abqpy)
 - PyPI: [pypi.org/project/abqpy](https://pypi.org/project/abqpy/)
 - Anaconda: [anaconda.org/haiiliin/abqpy](https://anaconda.org/haiiliin/abqpy)
@@ -31,6 +31,7 @@ many of the docstrings are not well formatted, for example, the Raises section,
 the math equations, the attributes of the objects, due to the limitation of 
 my time, those things are left behind, if anyone is willing to make any 
 contributions, please feel free to create your pull requests.
+<<<<<<< HEAD
 
 ## Installation
 
@@ -117,3 +118,5 @@ system variable named `ABAQUS_BAT_PATH`, and set the value to the file path of t
 ## Explore more
 
 For detailed usage of this package, please refer to the [documentation](https://docs.abqpy.com/).
+=======
+>>>>>>> 9f494cc1 (Remove duplicate documentation (#1893))
