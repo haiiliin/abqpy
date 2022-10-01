@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018.3.3 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-19 00:14+0000\n"
+"POT-Creation-Date: 2022-10-01 00:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,15 +39,15 @@ msgstr ""
 msgid "CompressionTemplate"
 msgstr ""
 
-#: abqpy.template.CompressionTemplate:2 of
+#: abqpy.template.CompressionTemplate:1 of
 msgid "This is a template for compression."
 msgstr ""
 
-#: abqpy.template.CompressionTemplate:17 abqpy.template.ScriptTemplate:17 of
+#: abqpy.template.CompressionTemplate:4 abqpy.template.ScriptTemplate:4 of
 msgid "Examples"
 msgstr ""
 
-#: abqpy.template.CompressionTemplate:24 of
+#: abqpy.template.CompressionTemplate:11 of
 msgid "Details of required parameters"
 msgstr ""
 
@@ -75,17 +75,17 @@ msgstr ""
 msgid "**Type:** str, defaults to Job-1"
 msgstr ""
 
-#: abqpy.template.CompressionTemplate:91 of
+#: abqpy.template.CompressionTemplate:78 of
 msgid ""
 "User config file (A `toml <https://toml.io/>`_ or `json "
 "<https://www.json.org/>`_ file)"
 msgstr ""
 
-#: abqpy.template.CompressionTemplate:111 of
+#: abqpy.template.CompressionTemplate:98 of
 msgid "The template source code"
 msgstr ""
 
-#: abqpy.template.CompressionTemplate:190 of
+#: abqpy.template.CompressionTemplate:178 of
 msgid ""
 "The template config file  (A `toml <https://toml.io/>`_ or `json "
 "<https://www.json.org/>`_ file)"
@@ -95,11 +95,11 @@ msgstr ""
 msgid "ScriptTemplate"
 msgstr ""
 
-#: abqpy.template.ScriptTemplate:2 of
+#: abqpy.template.ScriptTemplate:1 of
 msgid "A template class for Abaqus script."
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.check:2 of
+#: abqpy.template.ScriptTemplate.check:1 of
 msgid ""
 "Check if the parameters are valid, if valid, return the processed "
 "parameters as a dict."
@@ -110,27 +110,11 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.check:8 of
-msgid ""
-"**correct_bounds** : :ref:`bool <python:bltin-boolean-values>`, "
-":obj:`optional`"
-msgstr ""
-
-#: abqpy.template.ScriptTemplate.check:7 of
-msgid "bool, optional"
-msgstr ""
-
-#: abqpy.template.ScriptTemplate.check:8 of
+#: abqpy.template.ScriptTemplate.check:3 of
 msgid "Whether to correct the parameters to the bounds, by default True"
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.check:11
-#: abqpy.template.ScriptTemplate.render:8
-#: abqpy.template.ScriptTemplate.write:24 of
-msgid "**\\*\\*kwargs**"
-msgstr ""
-
-#: abqpy.template.ScriptTemplate.check:11 of
+#: abqpy.template.ScriptTemplate.check:5 of
 msgid "The parameters to check."
 msgstr ""
 
@@ -138,84 +122,76 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.check:19 of
-msgid ":obj:`Dict`"
+#: abqpy.template.ScriptTemplate.check:7 of
+msgid "The original or corrected parameters."
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.check:16 of
-msgid "The original or corrected parameters."
+#: abqpy.template.ScriptTemplate.check abqpy.template.ScriptTemplate.render of
+msgid "Return type"
+msgstr ""
+
+#: abqpy.template.ScriptTemplate.check:8 of
+msgid ":class:`Dict`"
 msgstr ""
 
 #: abqpy.template.ScriptTemplate.check of
 msgid "Raises"
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.check:32 of
-msgid ":obj:`ValueError`"
-msgstr ""
-
-#: abqpy.template.ScriptTemplate.check:24 of
+#: abqpy.template.ScriptTemplate.check:10 of
 msgid "If the parameters are invalid."
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.config_source:2 of
+#: abqpy.template.ScriptTemplate.config_source:1 of
 msgid "Parameter config source"
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.defaults:2 of
+#: abqpy.template.ScriptTemplate.defaults:1 of
 msgid "The default parameters."
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.descriptions:2 of
+#: abqpy.template.ScriptTemplate.descriptions:1 of
 msgid "The descriptions of the parameters."
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.keys:2 of
+#: abqpy.template.ScriptTemplate.keys:1 of
 msgid "A list of parameters required by the template."
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.params_source:2 of
+#: abqpy.template.ScriptTemplate.params_source:1 of
 msgid "User config source"
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.render:2 of
+#: abqpy.template.ScriptTemplate.render:1 of
 msgid "Render the template."
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.render:8
-#: abqpy.template.ScriptTemplate.write:11 of
+#: abqpy.template.ScriptTemplate.render:3 abqpy.template.ScriptTemplate.write:6
+#: of
 msgid "The parameters to render the template."
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.render:25 of
-msgid ":class:`python:str`"
-msgstr ""
-
-#: abqpy.template.ScriptTemplate.render:13 of
+#: abqpy.template.ScriptTemplate.render:5 of
 msgid "The rendered template."
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.template_source:2 of
+#: abqpy.template.ScriptTemplate.render:6 of
+msgid ":class:`str`"
+msgstr ""
+
+#: abqpy.template.ScriptTemplate.template_source:1 of
 msgid "Template source"
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.types:2 of
+#: abqpy.template.ScriptTemplate.types:1 of
 msgid "The types of the parameters."
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.write:2 of
+#: abqpy.template.ScriptTemplate.write:1 of
 msgid "Write the rendered template to a file."
 msgstr ""
 
-#: abqpy.template.ScriptTemplate.write:8 of
-msgid "**file** : :class:`python:str` or :obj:`PathLike`"
-msgstr ""
-
-#: abqpy.template.ScriptTemplate.write:7 of
-msgid "python:str or PathLike"
-msgstr ""
-
-#: abqpy.template.ScriptTemplate.write:8 of
+#: abqpy.template.ScriptTemplate.write:4 of
 msgid "The file to write to."
 msgstr ""
 
@@ -232,5 +208,31 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The source code of the template is::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**correct_bounds** : :ref:`bool <python:bltin-"
+#~ "boolean-values>`, :obj:`optional`"
+#~ msgstr ""
+
+#~ msgid "bool, optional"
+#~ msgstr ""
+
+#~ msgid "**\\*\\*kwargs**"
+#~ msgstr ""
+
+#~ msgid ":obj:`Dict`"
+#~ msgstr ""
+
+#~ msgid ":obj:`ValueError`"
+#~ msgstr ""
+
+#~ msgid ":class:`python:str`"
+#~ msgstr ""
+
+#~ msgid "**file** : :class:`python:str` or :obj:`PathLike`"
+#~ msgstr ""
+
+#~ msgid "python:str or PathLike"
 #~ msgstr ""
 
