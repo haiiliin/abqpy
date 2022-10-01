@@ -62,7 +62,7 @@ When you run the notebook, the package will convert the notebook into a plain Py
 with the same name but with `.py` suffix instead of `.ipynb`, and then it will be submitted 
 to Abaqus kernel. 
 
-Go [examples](https://github.com/haiiliin/abqpy/tree/main/examples) for tests 
+Go [examples](https://github.com/haiiliin/abqpy/tree/main/examples) for examples 
 using Jupyter Notebooks to build the Abaqus model.
  
 In order to use the **Jupyter Notebook** feature, you have to install `ipynbname`:
@@ -95,4 +95,4 @@ system variable named `ABAQUS_BAT_PATH`, and set the value to the file path of t
 
 ## Explore more
 
-For detailed usage of this package, please refer to the [documentation](https://abqpy.com/doc/).
+For detailed usage of this package, please refer to the [documentation](https://docs.abqpy.com/).
