@@ -2,11 +2,11 @@ name: Add Release News
 
 on:
   workflow_dispatch:
-  inputs:
-    version:
-      type: string
-      description: Version number
-      required: true
+    inputs:
+      version:
+        type: string
+        description: Version number
+        required: true
 
 jobs:
   release-news:
