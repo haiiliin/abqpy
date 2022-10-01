@@ -38,9 +38,7 @@ try:
         version = _default_version
 except pkg_resources.DistributionNotFound:
     version = _default_version
-release = '.'.join(version.split('.')[:3])
-if 'dev' in version:
-    release += ' (dev)'
+release = version[:4]
 version = release
 
 # For multiple languages
