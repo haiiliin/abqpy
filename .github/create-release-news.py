@@ -29,5 +29,8 @@ The abqpy `20**.{minor_version}` release is out! Check out the release notes at 
 - [abqpy 2022.{minor_version}](https://github.com/haiiliin/abqpy/releases/tag/v2022.{minor_version})
 """
 
-with open(f'content/news/release-20xx.{minor_version}.md', 'w', encoding='utf-8') as f:
-    f.write(news)
+filepath = f'content/news/release-20xx.{minor_version}.md'
+if not os.path.exists(filepath):
+    with open(filepath, 'w', encoding='utf-8') as f:
+        f.write(news)
+    print(f"Created {filepath}")
