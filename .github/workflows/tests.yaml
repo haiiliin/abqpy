@@ -6,12 +6,12 @@ on:
     - main
     paths:
     - 'src/**'
-    - 'docs/source'
+    - 'docs/source/**'
   pull_request:
     types: [opened, reopened, synchronize]
     paths:
     - 'src/**'
-    - 'docs/source'
+    - 'docs/source/**'
   workflow_dispatch:
 
 jobs:
