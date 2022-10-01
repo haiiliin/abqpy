@@ -1,5 +1,5 @@
 ---
-title: The 20**.3.5 release is out!
+title: abqpy 20**.3.5 release is out!
 authors: ["haiiliin"]
 date: 2022-10-01
 ---

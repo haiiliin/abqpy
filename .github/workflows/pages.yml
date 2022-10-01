@@ -14,6 +14,7 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    concurrency: ci-${{ github.ref }}
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3

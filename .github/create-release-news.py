@@ -14,7 +14,7 @@ os.chdir("..")
 
 minor_version = ".".join(current_version.split(".")[1:])
 news = f"""---
-title: The 20**.{minor_version} release is out!
+title: abqpy 20**.{minor_version} release is out!
 authors: ["haiiliin"]
 date: {datetime.date.today().strftime("%Y-%m-%d")}
 ---
