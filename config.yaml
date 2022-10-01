@@ -43,10 +43,15 @@ params:
       is_external: true
   keyfeatures:
     features:
-      - title: Documented
-        text: The theme is documented at https://abqpy.com/doc.
-      - title: Community Maintained
-        text: The theme is maintained by the [haiiliin](/about/).
+      - title: Full Abaqus/Python APIs Supported
+        text: The abqpy package supports almost all the Abaqus/Python APIs, and provides type hints for them, 
+              which can be used by IDEs to provide better code completion and type checking.
+      - title: Easy to Use
+        text: The abqpy package is easy to use and can be installed via pip, conda, or from source.
+              You can run your Abaqus/Python scripts with python directly even without opening Abaqus/CAE.
+      - title: Easy to Interact with Abaqus/CAE
+        text: The abqpy package provides a simple way to interact with Abaqus/CAE, You can run your Abaqus/Python 
+              scripts with python directly even without opening Abaqus/CAE.
   footer:
     logo: logo.svg
     socialmediatitle: ""
