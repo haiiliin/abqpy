@@ -14,8 +14,7 @@ Abaqus/Python 脚本的类型提示
 它还提供了一些简单的 API 来执行 Abaqus 命令，以便您可以运行 Python 脚本来创建模型、
 提交作业并提取输出数据，即使不打开 Abaqus/CAE。
 
-## 该项目的其他链接
-
+- 主页: [abqpy.com](https://abqpy.com)
 - GitHub 仓库: [github.com/haiiliin/abqpy](https://github.com/haiiliin/abqpy)
 - PyPI: [pypi.org/project/abqpy](https://pypi.org/project/abqpy/)
 - Anaconda: [anaconda.org/haiiliin/abqpy](https://anaconda.org/haiiliin/abqpy)
@@ -27,6 +26,7 @@ Abaqus/Python 脚本的类型提示
 由于`abqpy`是从 Abaqus 官方文档中重构出来的，很多文档字符串的格式还不完善，比如
 数学方程，对象的属性，由于我的时间有限，这些东西还没有完成，如果有人愿意做出任何贡献，
 请随时创建您的拉取请求。
+<<<<<<< HEAD
 
 ## 安装
 
@@ -106,3 +106,5 @@ C:/SIMULIA/Commands/abaqus.bat
 ## 更多
 
 更详细使用请参考 [文档](https://docs.abqpy.com/)。
+=======
+>>>>>>> 9f494cc1 (Remove duplicate documentation (#1893))
