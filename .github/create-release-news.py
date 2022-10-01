@@ -14,12 +14,12 @@ os.chdir("..")
 
 minor_version = ".".join(current_version.split(".")[1:])
 news = f"""---
-title: abqpy 2016/2017/2018/2019/2020/2021/2022.{minor_version} release is out!
+title: abqpy 20XX.{minor_version} release is out!
 authors: ["haiiliin"]
 date: {datetime.date.today().strftime("%Y-%m-%d")}
 ---
 
-abqpy `2016/2017/2018/2019/2020/2021/2022.{minor_version}` release is out! Check out the release notes at GitHub:
+abqpy `20XX.{minor_version}` release is out! Check out the release notes at GitHub:
 - [abqpy 2016.{minor_version}](https://github.com/haiiliin/abqpy/releases/tag/v2016.{minor_version})
 - [abqpy 2017.{minor_version}](https://github.com/haiiliin/abqpy/releases/tag/v2017.{minor_version})
 - [abqpy 2018.{minor_version}](https://github.com/haiiliin/abqpy/releases/tag/v2018.{minor_version})
