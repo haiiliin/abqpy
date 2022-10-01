@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-17 00:14+0000\n"
+"POT-Creation-Date: 2022-10-01 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "Abaqus Job"
 msgstr ""
 
-#: ../../summary/mdb/job.rst:5 abaqus.Job.Job.Job:2 of
+#: ../../summary/mdb/job.rst:5 abaqus.Job.Job.Job:1 of
 msgid ""
 "The Job object is the abstract base type for other Job objects. The Job "
 "object has no explicit constructor. The methods and members of the Job "
@@ -32,17 +32,17 @@ msgstr ""
 msgid "Create jobs"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1 abaqus.Job.JobMdb.JobMdb.Job:2 of
+#: ../../None:5:<autosummary>:1 abaqus.Job.JobMdb.JobMdb.Job:1 of
 msgid ""
 "This method creates an analysis job using a model on a model database "
 "(MDB) for the model definition."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:6 abaqus.Job.JobSession.JobSession.Queue:6 of
+#: abaqus.Job.JobMdb.JobMdb.Job:5 abaqus.Job.JobSession.JobSession.Queue:5 of
 msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.Job.Job.Job:19 abaqus.Job.JobMdb.JobMdb.Job:11 of
+#: abaqus.Job.Job.Job:18 abaqus.Job.JobMdb.JobMdb.Job:10 of
 msgid ""
 "Check `Job on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobpyc.htm?contextscope=all>`__."
@@ -52,39 +52,23 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:17 abaqus.Job.JobSession.JobSession.Queue:16 of
-msgid "**name**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:16 of
+#: abaqus.Job.JobMdb.JobMdb.Job:13 of
 msgid ""
 "A String specifying the name of the new job. The name must be a valid "
 "Abaqus/CAE object name."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:21 of
-msgid "**model**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:20 of
+#: abaqus.Job.JobMdb.JobMdb.Job:16 of
 msgid ""
 "A String specifying the name of the model to be analyzed or a Model "
 "object specifying the model to be analyzed."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:24 abaqus.Job.JobSession.JobSession.Queue:50 of
-msgid "**description**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:24 of
+#: abaqus.Job.JobMdb.JobMdb.Job:19 of
 msgid "A String specifying a description of the job."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:29 of
-msgid "**type**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:27 of
+#: abaqus.Job.JobMdb.JobMdb.Job:21 of
 msgid ""
 "A SymbolicConstant specifying the type of job. Possible values are "
 "ANALYSIS, SYNTAXCHECK, RECOVER, and RESTART. The default value is "
@@ -92,11 +76,7 @@ msgid ""
 "is not available."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:34 of
-msgid "**queue**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:32 of
+#: abaqus.Job.JobMdb.JobMdb.Job:25 of
 msgid ""
 "A String specifying the name of the queue to which to submit the job. The"
 " default value is an empty string.Note:You can use the **queue** argument"
@@ -104,11 +84,7 @@ msgid ""
 "queues are available only on Linux platforms."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:39 of
-msgid "**waitHours**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:37 of
+#: abaqus.Job.JobMdb.JobMdb.Job:29 of
 msgid ""
 "An Int specifying the number of hours to wait before submitting the job. "
 "This argument is ignored if **queue** is set. The default value is 0.This"
@@ -116,11 +92,7 @@ msgid ""
 "**atTime** are mutually exclusive."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:44 of
-msgid "**waitMinutes**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:42 of
+#: abaqus.Job.JobMdb.JobMdb.Job:33 of
 msgid ""
 "An Int specifying the number of minutes to wait before submitting the "
 "job. This argument is ignored if **queue** is set. The default value is "
@@ -128,11 +100,7 @@ msgid ""
 "and **atTime** are mutually exclusive."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:51 of
-msgid "**atTime**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:47 of
+#: abaqus.Job.JobMdb.JobMdb.Job:37 of
 msgid ""
 "A String specifying the time at which to submit the job. If **queue** is "
 "empty, the string syntax must be valid for the Linux `at` command. If "
@@ -142,104 +110,64 @@ msgid ""
 "however, the `at` command is available only on Linux platforms."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:55 of
-msgid "**echoPrint**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:54 of
+#: abaqus.Job.JobMdb.JobMdb.Job:43 of
 msgid ""
 "A Boolean specifying whether an echo of the input data is printed. The "
 "default value is OFF."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:59 of
-msgid "**contactPrint**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:58 of
+#: abaqus.Job.JobMdb.JobMdb.Job:46 of
 msgid ""
 "A Boolean specifying whether contact constraint data are printed. The "
 "default value is OFF."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:63 of
-msgid "**modelPrint**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:62 of
+#: abaqus.Job.JobMdb.JobMdb.Job:49 of
 msgid ""
 "A Boolean specifying whether model definition data are printed. The "
 "default value is OFF."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:66 of
-msgid "**historyPrint**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:66 of
+#: abaqus.Job.JobMdb.JobMdb.Job:52 of
 msgid ""
 "A Boolean specifying whether history data are printed. The default value "
 "is OFF."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:70 of
-msgid "**scratch**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:69 of
+#: abaqus.Job.JobMdb.JobMdb.Job:54 of
 msgid ""
 "A String specifying the location of the scratch directory. The default "
 "value is an empty string."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:74 of
-msgid "**userSubroutine**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:73 of
+#: abaqus.Job.JobMdb.JobMdb.Job:57 of
 msgid ""
 "A String specifying the file containing the user's subroutine "
 "definitions. The default value is an empty string."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:78 of
-msgid "**numCpus**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:77 of
+#: abaqus.Job.JobMdb.JobMdb.Job:60 of
 msgid ""
 "An Int specifying the number of CPUs to use for this analysis if parallel"
 " processing is available. Possible values are **numCpus** >> 0. The "
 "default value is 1."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:82 of
-msgid "**memory**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:81 of
+#: abaqus.Job.JobMdb.JobMdb.Job:63 of
 msgid ""
 "An Int specifying the amount of memory available to Abaqus analysis. The "
 "value should be expressed in the units supplied in **memoryUnits**. The "
 "default value is 90."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:87 of
-msgid "**memoryUnits**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:85 of
+#: abaqus.Job.JobMdb.JobMdb.Job:66 of
 msgid ""
 "A SymbolicConstant specifying the units for the amount of memory used in "
 "an Abaqus analysis. Possible values are PERCENTAGE, MEGA_BYTES, and "
 "GIGA_BYTES. The default value is PERCENTAGE."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:92 of
-msgid "**explicitPrecision**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:90 of
+#: abaqus.Job.JobMdb.JobMdb.Job:70 of
 msgid ""
 "A SymbolicConstant specifying whether to use the double precision version"
 " of Abaqus/Explicit. Possible values are SINGLE, FORCE_SINGLE, DOUBLE, "
@@ -247,55 +175,35 @@ msgid ""
 "SINGLE."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:96 of
-msgid "**nodalOutputPrecision**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:95 of
+#: abaqus.Job.JobMdb.JobMdb.Job:74 of
 msgid ""
 "A SymbolicConstant specifying the precision of the nodal output written "
 "to the output database. Possible values are SINGLE and FULL. The default "
 "value is SINGLE."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:101 of
-msgid "**parallelizationMethodExplicit**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:99 of
+#: abaqus.Job.JobMdb.JobMdb.Job:77 of
 msgid ""
 "A SymbolicConstant specifying the parallelization method for "
 "Abaqus/Explicit. This value is ignored for Abaqus/Standard. Possible "
 "values are DOMAIN and LOOP. The default value is DOMAIN."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:106 of
-msgid "**numDomains**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:104 of
+#: abaqus.Job.JobMdb.JobMdb.Job:81 of
 msgid ""
 "An Int specifying the number of domains for parallel execution in "
 "Abaqus/Explicit. When **parallelizationMethodExplicit** = DOMAIN, "
 "**numDomains** must be a multiple of **numCpus**. The default value is 1."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:110 of
-msgid "**activateLoadBalancing**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:109 of
+#: abaqus.Job.JobMdb.JobMdb.Job:85 of
 msgid ""
 "A Boolean specifying whether to activate dyanmic load balancing for jobs "
 "running on multiple processors with multiple domains in Abaqus/Explicit. "
 "The default value is OFF."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:115 of
-msgid "**multiprocessingMode**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:113 of
+#: abaqus.Job.JobMdb.JobMdb.Job:88 of
 msgid ""
 "A SymbolicConstant specifying whether an analysis is decomposed into "
 "threads or into multiple processes that communicate through a message "
@@ -303,11 +211,7 @@ msgid ""
 "The default value is DEFAULT."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:121 of
-msgid "**licenseType**"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:118 of
+#: abaqus.Job.JobMdb.JobMdb.Job:92 of
 msgid ""
 "A SymbolicConstant specifying the type of license type being used in the "
 "case of the DSLS SimUnit license model. Possible values are DEFAULT, "
@@ -319,20 +223,20 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:129 of
-msgid ":obj:`ModelJob`"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job:126 of
+#: abaqus.Job.JobMdb.JobMdb.Job:97 of
 msgid "A :py:class:`~abaqus.Job.ModelJob.ModelJob` object."
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.Job abaqus.Job.JobSession.JobSession.Queue of
-msgid "Raises"
+msgid "Return type"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:142 of
-msgid ":obj:`AbaqusException`"
+#: abaqus.Job.JobMdb.JobMdb.Job:98 of
+msgid ":class:`ModelJob`"
+msgstr ""
+
+#: abaqus.Job.JobMdb.JobMdb.Job abaqus.Job.JobSession.JobSession.Queue of
+msgid "Raises"
 msgstr ""
 
 #: abaqus.Job.Job.Job abaqus.Job.JobMdb.JobMdb.Job
@@ -561,85 +465,57 @@ msgstr ""
 msgid "Create queues in Session"
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:2 of
+#: abaqus.Job.JobSession.JobSession.Queue:1 of
 msgid ""
 "This method creates a Queue object. Note:Remote queues are available only"
 " on Linux platforms."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:11 of
+#: abaqus.Job.JobSession.JobSession.Queue:10 of
 msgid ""
 "Check `Queue on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-queuepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:16 of
+#: abaqus.Job.JobSession.JobSession.Queue:13 of
 msgid "A String specifying the name of the new Queue object."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:19 of
-msgid "**queueName**"
-msgstr ""
-
-#: abaqus.Job.JobSession.JobSession.Queue:19 of
+#: abaqus.Job.JobSession.JobSession.Queue:15 of
 msgid "A String specifying the name of the remote analysis queue."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:22 of
-msgid "**hostName**"
-msgstr ""
-
-#: abaqus.Job.JobSession.JobSession.Queue:22 of
+#: abaqus.Job.JobSession.JobSession.Queue:17 of
 msgid ""
 "A String specifying the name of the remote host. The default value is an "
 "empty string."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:26 of
-msgid "**fileCopy**"
-msgstr ""
-
-#: abaqus.Job.JobSession.JobSession.Queue:25 of
+#: abaqus.Job.JobSession.JobSession.Queue:19 of
 msgid ""
 "A Boolean specifying if the results files are to be copied from the "
 "remote machine to the local machine. The default value is ON."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:30 of
-msgid "**directory**"
-msgstr ""
-
-#: abaqus.Job.JobSession.JobSession.Queue:29 of
+#: abaqus.Job.JobSession.JobSession.Queue:22 of
 msgid ""
 "A String specifying the remote location for the execution of the "
 "simulation. The default value is an empty string."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:33 of
-msgid "**driver**"
-msgstr ""
-
-#: abaqus.Job.JobSession.JobSession.Queue:33 of
+#: abaqus.Job.JobSession.JobSession.Queue:25 of
 msgid ""
 "A String specifying the designation of the remote driver. The default "
 "value is \"abaqus\"."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:37 of
-msgid "**remotePlatform**"
-msgstr ""
-
-#: abaqus.Job.JobSession.JobSession.Queue:36 of
+#: abaqus.Job.JobSession.JobSession.Queue:27 of
 msgid ""
 "A SymbolicConstant specifying the type of operating system on the remote "
 "machine. The default value is Linux."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:43 of
-msgid "**filesToCopy**"
-msgstr ""
-
-#: abaqus.Job.JobSession.JobSession.Queue:40 of
+#: abaqus.Job.JobSession.JobSession.Queue:30 of
 msgid ""
 "A list of Strings specifying the files to be copied from the remote "
 "location to the local machine, or ALL. Strings specified in a list are "
@@ -647,49 +523,34 @@ msgid ""
 "'dat', 'msg', 'sta', 'odb'). The default value is ALL."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:47 of
-msgid "**deleteAfterCopy**"
-msgstr ""
-
-#: abaqus.Job.JobSession.JobSession.Queue:46 of
+#: abaqus.Job.JobSession.JobSession.Queue:35 of
 msgid ""
 "A Boolean specifying whether remote files are to be deleted after they "
 "are copied to the local machine. The default value is OFF."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:50 of
+#: abaqus.Job.JobSession.JobSession.Queue:38 of
 msgid ""
 "A String specifying a description of the queue. The default value is an "
 "empty string."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:58 of
-msgid ":obj:`Queue`"
-msgstr ""
-
-#: abaqus.Job.JobSession.JobSession.Queue:55 of
+#: abaqus.Job.JobSession.JobSession.Queue:40 of
 msgid "A :py:class:`~abaqus.Job.Queue.Queue` object."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:63 of
-msgid ""
-":obj:`Remote` :obj:`queue` :obj:`host` :obj:`name` :obj:`is` :obj:`not` "
-":obj:`set`"
+#: abaqus.Job.JobSession.JobSession.Queue:41 of
+msgid ":class:`Queue`"
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:63 of
+#: abaqus.Job.JobSession.JobSession.Queue:43 of
 msgid "If **fileCopy** = ON and **hostName** is empty."
 msgstr ""
 
-#: abaqus.Job.JobSession.JobSession.Queue:74 of
+#: abaqus.Job.JobSession.JobSession.Queue:44 of
 msgid ""
-":obj:`Directory` :obj:`in` :obj:`which` :obj:`to` :obj:`run` :obj:`the` "
-":obj:`job` :obj:`on` :obj:`the` :obj:`remote` :obj:`computer` :obj:`is` "
-":obj:`not` :obj:`set`"
-msgstr ""
-
-#: abaqus.Job.JobSession.JobSession.Queue:66 of
-msgid "If **fileCopy** = ON and **directory** is empty."
+":raises Directory in which` to :class:`run the job on the remote computer"
+" is not set: If **fileCopy** = ON and **directory** is empty."
 msgstr ""
 
 #: ../../None:72:<autosummary>:1
@@ -1515,19 +1376,19 @@ msgstr ""
 msgid "Job"
 msgstr ""
 
-#: abaqus.Job.Job.Job:7 of
+#: abaqus.Job.Job.Job:6 of
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.Job.Job.Job:13 of
+#: abaqus.Job.Job.Job:12 of
 msgid "The corresponding analysis keywords are:"
 msgstr ""
 
-#: abaqus.Job.Job.Job:15 of
+#: abaqus.Job.Job.Job:14 of
 msgid "HEADING"
 msgstr ""
 
-#: abaqus.Job.Job.Job:16 of
+#: abaqus.Job.Job.Job:15 of
 msgid "PREPRINT"
 msgstr ""
 
@@ -1817,5 +1678,125 @@ msgstr ""
 #~ "This method opens an existing output "
 #~ "database (.odb) file and creates a "
 #~ "new Odb object."
+#~ msgstr ""
+
+#~ msgid "**name**"
+#~ msgstr ""
+
+#~ msgid "**model**"
+#~ msgstr ""
+
+#~ msgid "**description**"
+#~ msgstr ""
+
+#~ msgid "**type**"
+#~ msgstr ""
+
+#~ msgid "**queue**"
+#~ msgstr ""
+
+#~ msgid "**waitHours**"
+#~ msgstr ""
+
+#~ msgid "**waitMinutes**"
+#~ msgstr ""
+
+#~ msgid "**atTime**"
+#~ msgstr ""
+
+#~ msgid "**echoPrint**"
+#~ msgstr ""
+
+#~ msgid "**contactPrint**"
+#~ msgstr ""
+
+#~ msgid "**modelPrint**"
+#~ msgstr ""
+
+#~ msgid "**historyPrint**"
+#~ msgstr ""
+
+#~ msgid "**scratch**"
+#~ msgstr ""
+
+#~ msgid "**userSubroutine**"
+#~ msgstr ""
+
+#~ msgid "**numCpus**"
+#~ msgstr ""
+
+#~ msgid "**memory**"
+#~ msgstr ""
+
+#~ msgid "**memoryUnits**"
+#~ msgstr ""
+
+#~ msgid "**explicitPrecision**"
+#~ msgstr ""
+
+#~ msgid "**nodalOutputPrecision**"
+#~ msgstr ""
+
+#~ msgid "**parallelizationMethodExplicit**"
+#~ msgstr ""
+
+#~ msgid "**numDomains**"
+#~ msgstr ""
+
+#~ msgid "**activateLoadBalancing**"
+#~ msgstr ""
+
+#~ msgid "**multiprocessingMode**"
+#~ msgstr ""
+
+#~ msgid "**licenseType**"
+#~ msgstr ""
+
+#~ msgid ":obj:`ModelJob`"
+#~ msgstr ""
+
+#~ msgid ":obj:`AbaqusException`"
+#~ msgstr ""
+
+#~ msgid "**queueName**"
+#~ msgstr ""
+
+#~ msgid "**hostName**"
+#~ msgstr ""
+
+#~ msgid "**fileCopy**"
+#~ msgstr ""
+
+#~ msgid "**directory**"
+#~ msgstr ""
+
+#~ msgid "**driver**"
+#~ msgstr ""
+
+#~ msgid "**remotePlatform**"
+#~ msgstr ""
+
+#~ msgid "**filesToCopy**"
+#~ msgstr ""
+
+#~ msgid "**deleteAfterCopy**"
+#~ msgstr ""
+
+#~ msgid ":obj:`Queue`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`Remote` :obj:`queue` :obj:`host` :obj:`name`"
+#~ " :obj:`is` :obj:`not` :obj:`set`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`Directory` :obj:`in` :obj:`which` :obj:`to`"
+#~ " :obj:`run` :obj:`the` :obj:`job` :obj:`on` "
+#~ ":obj:`the` :obj:`remote` :obj:`computer` :obj:`is`"
+#~ " :obj:`not` :obj:`set`"
+#~ msgstr ""
+
+#~ msgid "If **fileCopy** = ON and **directory** is empty."
 #~ msgstr ""
 

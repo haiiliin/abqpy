@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2016.3.5 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-29 00:21+0000\n"
+"POT-Creation-Date: 2022-10-01 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,17 +32,17 @@ msgstr ""
 msgid "Edit mesh features of Assembly"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:2
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:1
 msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object is a container for instances of parts. The Assembly object has no constructor command. Abaqus creates the **rootAssembly** member when a Model object is created."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:7
-#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions:8
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart:6
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:6
+#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions:7
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart:5
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:13
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:12
 msgid "Check `MeshEditAssembly on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -293,7 +293,7 @@ msgstr ""
 msgid ":py:obj:`collapseMeshEdge <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge>`\\ \\(edge\\, collapseMethod\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:2
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:1
 #: ../../None:14:<autosummary>:1
 msgid "This method collapses an edge of a quadrilateral or triangular element of a part instance."
 msgstr ""
@@ -302,7 +302,7 @@ msgstr ""
 msgid ":py:obj:`combineElement <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.combineElement>`\\ \\(elements\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.combineElement:2
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.combineElement:1
 #: ../../None:14:<autosummary>:1
 msgid "This method combines two triangular elements of a part instance."
 msgstr ""
@@ -319,7 +319,7 @@ msgstr ""
 msgid ":py:obj:`projectNode <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.projectNode>`\\ \\(nodes\\, projectionReference\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.projectNode:2
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.projectNode:1
 #: ../../None:14:<autosummary>:1
 msgid "This method projects the given nodes of a part instance onto a mesh entity, geometric entity, or a datum object."
 msgstr ""
@@ -328,7 +328,7 @@ msgstr ""
 msgid ":py:obj:`editNode <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode>`\\ \\(nodes\\[\\, coordinate1\\, coordinate2\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:2
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:1
 #: ../../None:14:<autosummary>:1
 msgid "This method changes the coordinates of the given nodes on a part instance."
 msgstr ""
@@ -341,7 +341,7 @@ msgstr ""
 msgid ":py:obj:`splitElement <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitElement>`\\ \\(elements\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitElement:2
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitElement:1
 #: ../../None:14:<autosummary>:1
 msgid "This method splits quadrilateral elements into triangular elements."
 msgstr ""
@@ -350,7 +350,7 @@ msgstr ""
 msgid ":py:obj:`splitMeshEdge <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitMeshEdge>`\\ \\(edge\\[\\, parameter\\]\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitMeshEdge:2
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitMeshEdge:1
 #: ../../None:14:<autosummary>:1
 msgid "This method splits an edge of a quadrilateral or triangular element of a part instance."
 msgstr ""
@@ -359,7 +359,7 @@ msgstr ""
 msgid ":py:obj:`swapMeshEdge <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.swapMeshEdge>`\\ \\(edge\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.swapMeshEdge:2
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.swapMeshEdge:1
 #: ../../None:14:<autosummary>:1
 msgid "This method swaps the diagonal of two adjacent triangular elements of a part instance."
 msgstr ""
@@ -368,8 +368,8 @@ msgstr ""
 msgid ":py:obj:`generateMeshByOffset <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset>`\\ \\(region\\, meshType\\, ...\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:2
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:2
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:1
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:1
 #: ../../None:14:<autosummary>:1
 #: ../../None:27:<autosummary>:1
 msgid "This method generates a solid or shell mesh from an orphan mesh surface by generating layers of elements that propagate out normal to the surface boundary."
@@ -1294,7 +1294,7 @@ msgstr ""
 msgid "This method suppresses features."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:6
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:5
 msgid "Check `Assembly.collapseMeshEdge on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all#simaker-assemblycollapsemeshedgepyc>`__."
 msgstr ""
 
@@ -1331,370 +1331,208 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:11
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitMeshEdge:10
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.swapMeshEdge:23
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.collapseMeshEdge:11
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:14
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitMeshEdge:11
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:43
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.swapMeshEdge:24
-msgid "**edge**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:11
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.collapseMeshEdge:11
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:8
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.collapseMeshEdge:8
 msgid "A single MeshEdge object specifying the element edge to collapse."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:28
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.collapseMeshEdge:28
-msgid "**collapseMethod**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:14
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.collapseMeshEdge:14
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:10
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.collapseMeshEdge:10
 msgid "A SymbolicConstant specifying the method used to collapse the edge. Possible values are FORWARD, REVERSE, and AVERAGE."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.combineElement:5
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.combineElement:4
 msgid "Check `Assembly.combineElement on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all#simaker-assemblycombineelementpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.combineElement:23
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.deleteElement:11
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitElement:22
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:21
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.combineElement:24
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteElement:12
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:31
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:11
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitElement:25
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:12
-msgid "**elements**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.combineElement:10
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.combineElement:11
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.combineElement:7
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.combineElement:8
 msgid "A sequence of triangular MeshElement objects specifying the elements to combine."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.deleteElement:2
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.deleteElement:1
 msgid "This method deletes the given elements from a part instance. The elements must have been generated using the bottom-up meshing technique."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.deleteElement:6
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.deleteElement:5
 msgid "Check `Assembly.deleteElement on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all#simaker-assemblydeleteelementpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.deleteElement:11
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteElement:12
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.deleteElement:8
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteElement:9
 msgid "A sequence of MeshElement objects or a Set object containing elements."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.deleteElement:28
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteElement:29
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteNode:28
-msgid "**deleteUnreferencedNodes**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.deleteElement:14
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteElement:15
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.deleteElement:10
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteElement:11
 msgid "A Boolean specifying whether to delete all those associated nodes that become unreferenced after the given elements are deleted. The default value is OFF."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:5
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:4
 msgid "Check `Assembly.editNode on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all#simaker-assemblyeditnodepyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:10
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.projectNode:11
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteNode:10
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:11
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.projectNode:11
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:11
-msgid "**nodes**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:10
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteNode:10
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:11
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:7
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteNode:7
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:8
 msgid "A sequence of MeshNode objects or a Set object containing nodes."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:14
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:15
-msgid "**coordinate1**"
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:9
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:10
+msgid "A Float specifying the value of the first coordinate. If **coordinate1** and **offset1** are unspecified, the existing value does not change."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:13
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:14
-msgid "A Float specifying the value of the first coordinate. If **coordinate1** and **offset1** are unspecified, the existing value does not change."
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:12
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:13
+msgid "A Float specifying the value of the second coordinate. If **coordinate2** and **offset2** are unspecified, the existing value does not change."
+msgstr ""
+
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:15
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:16
+msgid "A Float specifying the value of the third coordinate. If **coordinate3** and **offset3** are unspecified, the existing value does not change."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:18
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:19
-msgid "**coordinate2**"
+msgid "A sequence of three-dimensional coordinate tuples specifying the coordinates for each of the given nodes. When specified, the number of coordinate tuples must match the number of given nodes, and be ordered to correspond to the given nodes in **ascending order** according to index. Furthermore, **coordinate1**, **coordinate2**, **coordinate3**, **offset1**, **offset2**, or **offset3** may not be specified."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:17
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:18
-msgid "A Float specifying the value of the second coordinate. If **coordinate2** and **offset2** are unspecified, the existing value does not change."
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:24
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:25
+msgid "A Float specifying an offset to apply to the value of the first coordinate of the specified nodes."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:22
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:23
-msgid "**coordinate3**"
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:27
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:28
+msgid "A Float specifying an offset to apply to the value of the second coordinate of the specified nodes."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:21
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:22
-msgid "A Float specifying the value of the third coordinate. If **coordinate3** and **offset3** are unspecified, the existing value does not change."
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:29
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:30
-msgid "**coordinates**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:25
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:26
-msgid "A sequence of three-dimensional coordinate tuples specifying the coordinates for each of the given nodes. When specified, the number of coordinate tuples must match the number of given nodes, and be ordered to correspond to the given nodes in *ascending order* according to index. Furthermore, **coordinate1**, **coordinate2**, **coordinate3**, **offset1**, **offset2**, or **offset3** may not be specified."
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:30
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:31
+msgid "A Float specifying an offset to apply to the value of the third coordinate of the specified nodes."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:33
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:34
-msgid "**offset1**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:32
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:33
-msgid "A Float specifying an offset to apply to the value of the first coordinate of the specified nodes."
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:37
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:38
-msgid "**offset2**"
+msgid "A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system. If unspecified, the global coordinate system will be used."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:36
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:37
-msgid "A Float specifying an offset to apply to the value of the second coordinate of the specified nodes."
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:41
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:42
-msgid "**offset3**"
+msgid "A Boolean specifying whether to project nodes back to their original geometry. For example, if a node is on a face, this method first positions the node at the new location and then projects it back to the original face. The default value is ON."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:40
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:41
-msgid "A Float specifying an offset to apply to the value of the third coordinate of the specified nodes."
+msgid ":raises A coordinate` and :class:`an offset may not both be specified for the same coordinate component:"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:45
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:46
-msgid "**localCsys**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:44
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:45
-msgid "A :py:class:`~abaqus.Datum.DatumCsys.DatumCsys` object specifying the local coordinate system. If unspecified, the global coordinate system will be used."
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:54
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:55
-msgid "**projectToGeometry**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:48
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:49
-msgid "A Boolean specifying whether to project nodes back to their original geometry. For example, if a node is on a face, this method first positions the node at the new location and then projects it back to the original face. The default value is ON."
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:0
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:0
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:0
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:0
-msgid "Raises"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.editNode:67
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:68
-msgid ":obj:`A` :obj:`coordinate` :obj:`and` :obj:`an` :obj:`offset` :obj:`may` :obj:`not` :obj:`both` :obj:`be` :obj:`specified` :obj:`for` :obj:`the` :obj:`same` :obj:`coordinate` :obj:`component`"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:6
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:5
 msgid "Check `Assembly.generateMeshByOffset on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all#simaker-assemblygeneratemeshbyoffsetpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:11
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:11
-msgid "**region**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:11
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:11
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:8
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:8
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the domain to be offset."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:15
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:15
-msgid "**meshType**"
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:10
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:10
+msgid "A Symbolic Constant specifying the type of mesh to be generated. Possible values are SOLID or SHELL."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:14
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:14
-msgid "A Symbolic Constant specifying the type of mesh to be generated. Possible values are SOLID or SHELL."
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:13
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:13
+msgid "A Float specifying the total thickness of the solid layers. This argument applies only when **meshType** = SOLID."
+msgstr ""
+
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:16
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:16
+msgid "A Float specifying the distance between shell layers. This argument applies only when **meshType** = SHELL."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:19
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:19
-msgid "**totalThickness**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:18
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:18
-msgid "A Float specifying the total thickness of the solid layers. This argument applies only when **meshType** = SOLID."
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:23
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:23
-msgid "**distanceBetweenLayers**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:22
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:22
-msgid "A Float specifying the distance between shell layers. This argument applies only when **meshType** = SHELL."
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:26
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:26
-msgid "**numLayers**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:26
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:26
 msgid "An Int specifying the number of element layers to be generated."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:31
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:31
-msgid "**offsetDirection**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:29
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:29
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:21
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:21
 msgid "A Symbolic Constant specifying the direction of the offset. This argument is required only when the given region relates to a shell mesh. Possible values are OUTWARD, INWARD, and BOTH. The default value is OUTWARD."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:34
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:34
-msgid "**initialOffset**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:34
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:34
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:25
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:25
 msgid "A Float specifying the magnitude of the initial offset. The default value is zero."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:38
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:38
-msgid "**shareNodes**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:37
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:37
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:27
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:27
 msgid "Boolean specifying whether the first layer of nodes should be shared with nodes on the base surface. The default value is False."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:42
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:42
-msgid "**deleteBaseElements**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:41
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:41
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:30
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:30
 msgid "A Boolean specifying whether to delete the shell elements after the offset layers are generated. The default value is False. This argument applies only when **meshType** = SHELL."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:46
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:46
-msgid "**constantThicknessCorners**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:45
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:45
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:33
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:33
 msgid "A Boolean specifying whether to use element-based thickness or nodal-based thickness. The default value is False."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:63
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:63
-msgid "**extendElementSets**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:49
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:49
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.generateMeshByOffset:36
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:36
 msgid "A Boolean specifying whether existing element sets that include base elements will be extended to include corresponding offset elements. The default value is False."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.projectNode:6
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.projectNode:5
 msgid "Check `Assembly.projectNode on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all#simaker-assemblyprojectnodepyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.projectNode:11
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.projectNode:11
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.projectNode:8
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.projectNode:8
 msgid "A sequence of MeshNode objects to be projected."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.projectNode:29
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.projectNode:29
-msgid "**projectionReference**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.projectNode:14
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.projectNode:14
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.projectNode:10
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.projectNode:10
 msgid "An object specifying the target for the node projection operation. The **projectionReference** can be any one of the following objects: MeshNode, MeshEdge, MeshFace, ConstrainedSketchVertex, Edge, Face, DatumPoint, DatumAxis, or DatumPlane."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.redoMeshEdit:2
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.redoMeshEdit:1
 msgid "This method executes the edit mesh or the bottom-up meshing operation most recently undone by the undoMeshEdit method on an assembly. A redo action must be currently available for the assembly. This implies that the user must have executed the undoMeshEdit method on the assembly and that the user has not subsequently executed any further edit mesh commands on the assembly. It also implies that the user provided a sufficient cache allowance to store the undo operation."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitElement:8
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitElement:11
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitElement:4
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitElement:8
 msgid "A sequence of quadrilateral MeshElement objects specifying the elements to split. Each quadrilateral element is split into two triangular elements by the shorter diagonal."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitMeshEdge:5
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitMeshEdge:4
 msgid "Check `Assembly.splitMeshEdge on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all#simaker-assemblysplitmeshedgepyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitMeshEdge:10
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitMeshEdge:11
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitMeshEdge:7
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitMeshEdge:8
 msgid "A single MeshEdge object specifying the element edge to split."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitMeshEdge:27
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:30
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitMeshEdge:28
-msgid "**parameter**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitMeshEdge:13
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitMeshEdge:9
 msgid "A Float specifying the normalized distance along the **edge** at which to split. Possible values are 0.0 << **parameter** << 1.0. The default value is 0.5."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.swapMeshEdge:5
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.swapMeshEdge:4
 msgid "Check `Assembly.swapMeshEdge on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all#simaker-assemblyswapmeshedgepyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.swapMeshEdge:10
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.swapMeshEdge:11
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.swapMeshEdge:7
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.swapMeshEdge:8
 msgid "A single MeshEdge object specifying the element edge to swap."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.undoMeshEdit:2
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.undoMeshEdit:1
 msgid "This method undoes the most recent edit mesh or the bottom-up meshing operation on an assembly and restores the mesh on the affected part instance to its previous state. An edit mesh undo action must be available for the assembly. This implies that prior to executing an edit mesh command on the assembly, the user enabled edit mesh undo with a sufficient cache allowance to store the edit mesh operation."
 msgstr ""
 
@@ -1702,7 +1540,7 @@ msgstr ""
 msgid "Edit mesh features of Part"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart:1
 msgid "The following commands operate on Part objects. For more information about the Part object, see Part object."
 msgstr ""
 
@@ -1954,7 +1792,7 @@ msgstr ""
 msgid ":py:obj:`adjustMidsideNode <abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode>`\\ \\(cornerNodes\\, parameter\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:1
 #: ../../None:27:<autosummary>:1
 msgid "This method is used to adjust the midside node of second-order elements of an orphan mesh part."
 msgstr ""
@@ -1963,7 +1801,7 @@ msgstr ""
 msgid ":py:obj:`cleanMesh <abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh>`\\ \\(mergeTolerance\\[\\, growEdges\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:1
 #: ../../None:27:<autosummary>:1
 msgid "This method is used to collapse short element edges and delete collapsed elements, or grow short element edges, on an orphan mesh part composed of linear elements."
 msgstr ""
@@ -1972,7 +1810,7 @@ msgstr ""
 msgid ":py:obj:`collapseMeshEdge <abaqus.EditMesh.MeshEditPart.MeshEditPart.collapseMeshEdge>`\\ \\(edge\\, collapseMethod\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.collapseMeshEdge:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.collapseMeshEdge:1
 #: ../../None:27:<autosummary>:1
 msgid "This method collapses an edge of a quadrilateral or triangular element of an orphan mesh part or part instance."
 msgstr ""
@@ -1981,7 +1819,7 @@ msgstr ""
 msgid ":py:obj:`combineElement <abaqus.EditMesh.MeshEditPart.MeshEditPart.combineElement>`\\ \\(elements\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.combineElement:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.combineElement:1
 #: ../../None:27:<autosummary>:1
 msgid "This method combines two triangular elements of an orphan mesh part or an Abaqus native mesh."
 msgstr ""
@@ -1990,7 +1828,7 @@ msgstr ""
 msgid ":py:obj:`convertSolidMeshToShell <abaqus.EditMesh.MeshEditPart.MeshEditPart.convertSolidMeshToShell>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.convertSolidMeshToShell:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.convertSolidMeshToShell:1
 #: ../../None:27:<autosummary>:1
 msgid "This method removes all solid elements from an orphan mesh part and creates triangular or quadrilateral shell elements along their outer faces."
 msgstr ""
@@ -2007,7 +1845,7 @@ msgstr ""
 msgid ":py:obj:`deleteNode <abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteNode>`\\ \\(nodes\\[\\, deleteUnreferencedNodes\\]\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteNode:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteNode:1
 #: ../../None:27:<autosummary>:1
 msgid "This method deletes the given nodes from an orphan mesh part."
 msgstr ""
@@ -2016,7 +1854,7 @@ msgstr ""
 msgid ":py:obj:`editNode <abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode>`\\ \\(nodes\\[\\, coordinate1\\, coordinate2\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:1
 #: ../../None:27:<autosummary>:1
 msgid "This method changes the coordinates of the given nodes on an orphan mesh part or on an Abaqus native mesh."
 msgstr ""
@@ -2033,7 +1871,7 @@ msgstr ""
 msgid ":py:obj:`generateMesh <abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMesh>`\\ \\(\\[elemShape\\]\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMesh:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMesh:1
 #: ../../None:27:<autosummary>:1
 msgid "This method generates a new mesh on an orphan mesh part based on the original mesh."
 msgstr ""
@@ -2046,7 +1884,7 @@ msgstr ""
 msgid ":py:obj:`mergeElement <abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement>`\\ \\(edge\\, elements\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:1
 #: ../../None:27:<autosummary>:1
 msgid "Merge a selection of elements arranged in layers on an orphan mesh part into a single layer."
 msgstr ""
@@ -2059,7 +1897,7 @@ msgstr ""
 msgid ":py:obj:`orientElements <abaqus.EditMesh.MeshEditPart.MeshEditPart.orientElements>`\\ \\(pickedElements\\, referenceRegion\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.orientElements:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.orientElements:1
 #: ../../None:27:<autosummary>:1
 msgid "This method orients the stack direction of elements in a continuum shell or gasket mesh."
 msgstr ""
@@ -2068,7 +1906,7 @@ msgstr ""
 msgid ":py:obj:`removeElementSize <abaqus.EditMesh.MeshEditPart.MeshEditPart.removeElementSize>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.removeElementSize:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.removeElementSize:1
 #: ../../None:27:<autosummary>:1
 msgid "This method removes the global element size from an orphan mesh part."
 msgstr ""
@@ -2077,7 +1915,7 @@ msgstr ""
 msgid ":py:obj:`renumberElement <abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement>`\\ \\(\\[elements\\, startLabel\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:1
 #: ../../None:27:<autosummary>:1
 msgid "This method assigns new labels to orphan mesh elements."
 msgstr ""
@@ -2086,7 +1924,7 @@ msgstr ""
 msgid ":py:obj:`renumberNode <abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode>`\\ \\(\\[nodes\\, startLabel\\, increment\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:1
 #: ../../None:27:<autosummary>:1
 msgid "This method assigns new labels to orphan mesh nodes."
 msgstr ""
@@ -2095,7 +1933,7 @@ msgstr ""
 msgid ":py:obj:`setElementSize <abaqus.EditMesh.MeshEditPart.MeshEditPart.setElementSize>`\\ \\(size\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.setElementSize:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.setElementSize:1
 #: ../../None:27:<autosummary>:1
 msgid "This method sets the global element size for an orphan mesh part."
 msgstr ""
@@ -2104,7 +1942,7 @@ msgstr ""
 msgid ":py:obj:`splitElement <abaqus.EditMesh.MeshEditPart.MeshEditPart.splitElement>`\\ \\(elements\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitElement:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitElement:1
 #: ../../None:27:<autosummary>:1
 msgid "This method splits quadrilateral elements of an orphan mesh part or a Abaqus native mesh into triangular elements."
 msgstr ""
@@ -2113,7 +1951,7 @@ msgstr ""
 msgid ":py:obj:`splitMeshEdge <abaqus.EditMesh.MeshEditPart.MeshEditPart.splitMeshEdge>`\\ \\(edge\\[\\, parameter\\]\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitMeshEdge:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitMeshEdge:1
 #: ../../None:27:<autosummary>:1
 msgid "This method splits an edge of a quadrilateral or triangular element of an orphan mesh part or an Abaqus native mesh."
 msgstr ""
@@ -2122,7 +1960,7 @@ msgstr ""
 msgid ":py:obj:`subdivideElement <abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement>`\\ \\(\\[elements\\, divisionNumber\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:1
 #: ../../None:27:<autosummary>:1
 msgid "Subdivide a selection of elements on an orphan mesh part in one or more directions."
 msgstr ""
@@ -2131,7 +1969,7 @@ msgstr ""
 msgid ":py:obj:`swapMeshEdge <abaqus.EditMesh.MeshEditPart.MeshEditPart.swapMeshEdge>`\\ \\(edge\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.swapMeshEdge:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.swapMeshEdge:1
 #: ../../None:27:<autosummary>:1
 msgid "This method swaps the diagonal of two adjacent triangular elements of an orphan mesh part or an Abaqus native mesh."
 msgstr ""
@@ -2140,7 +1978,7 @@ msgstr ""
 msgid ":py:obj:`wrapMesh <abaqus.EditMesh.MeshEditPart.MeshEditPart.wrapMesh>`\\ \\(radius\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.wrapMesh:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.wrapMesh:1
 #: ../../None:27:<autosummary>:1
 msgid "This method wraps a planar orphan mesh part about the **Z**-axis."
 msgstr ""
@@ -3354,343 +3192,256 @@ msgstr ""
 msgid ":py:obj:`suppress <abaqus.EditMesh.MeshEditPart.MeshEditPart.suppress>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:6
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:5
 msgid "Check `Part.adjustMidsideNode on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partadjustmidsidenodepyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:12
-msgid "**cornerNodes**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:11
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:8
 msgid "A sequence of Node objects specifying the nodes towards which connected midside nodes will be biased."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:15
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:11
 msgid "A Float specifying the normalized distance along the edge of the midside nodes. Possible values are 0.0 ≤ **parameter** ≤ 1.0, where 0.0 specifies the position of the corner node. The default value is 0.5."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:6
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:5
 msgid "Check `Part.cleanMesh on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partcleanmeshpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:12
-msgid "**mergeTolerance**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:11
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:8
 msgid "A Float specifying the edge length tolerance. During the operation, edges shorter than the given tolerance will be collapsed, or grown to the specified length."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:16
-msgid "**growEdges**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:15
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:11
 msgid "A Boolean specifying whether short element edges will be grown to the specified tolerance. Default is False, meaning short edges will be collapsed."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:19
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:14
 msgid "The elements to consider as the domain for the operation. By default all elements on the part are considered. The elements may be given as a MeshElementArray, a list of MeshElement objects, a Set, or a list of Set objects."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:29
-msgid "**refEdge**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:24
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:18
 msgid "A MeshEdge specifying a reference edge to indicate a topological direction in a structured mesh that will limit which edges within the element domain are considered. That is, only edges that are found to be topologically parallel to the given reference edge will be considered by the operation. By default all edges of the element domain are considered, unless **thicknessDir** is specified, in which case the operation will attempt to determine the topological edges from the thickness direction."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:33
-msgid "**thicknessDir**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:32
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:25
 msgid "A tuple of two or three Floats indicating a vector along which element edge lengths will be measured."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:54
-msgid "**moveLayers**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:36
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:28
 msgid "A Boolean indicating whether element edges will be all grown in the direction of the thickness vector specified by **thicknessDir**. This argument is ignored unless **growEdges** is True and **thicknessDir** is provided. When this argument is True the growth of any given element edge will no longer be constrained by short edges on neighboring elements, but elements could move from their original positions in cases where there are multiple adjacent layers of thin elements. The default value is False."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.collapseMeshEdge:6
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.collapseMeshEdge:5
 msgid "Check `Part.collapseMeshEdge on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partcollapsemeshedgepyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.combineElement:6
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.combineElement:5
 msgid "Check `Part.combineElement on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partcombineelementpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteElement:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteElement:1
 msgid "This method deletes the given elements from an orphan mesh part or an Abaqus native mesh. If the elements belong to an Abaqus native mesh then the elements must have been generated using the bottom-up meshing technique."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteElement:7
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteElement:6
 msgid "Check `Part.deleteElement on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partdeleteelementpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteNode:5
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteNode:4
 msgid "Check `Part.deleteNode on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partdeletenodepyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteNode:13
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteNode:9
 msgid "A Boolean specifying whether to delete all those associated nodes that become unreferenced after the given nodes and the connected elements are deleted. The default value is OFF."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:6
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.editNode:5
 msgid "Check `Part.editNode on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-parteditnodepyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMesh:5
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMesh:4
 msgid "Check `Part.generateMesh on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partgeneratemeshpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMesh:26
-msgid "**elemShape**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMesh:10
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMesh:7
 msgid "A SymbolicConstant specifying the element shape to be used for meshing. Possible values are:TRIRefine a planar triangular mesh and replace it with a new one. If no element sizes are attached, the new mesh will be governed by the sizes of the boundary edges in the old mesh. TETCreate a tetrahedral mesh from a closed shell of triangular elements."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:6
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.generateMeshByOffset:5
 msgid "Check `Part.generateMeshByOffset on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partgeneratemeshbyoffsetpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:6
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:5
 msgid "Check `Part.mergeElement on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partmergeelementpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:11
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:8
 msgid "A MeshEdge of one of the specified elements that serves as a reference edge to indicate the topological direction for merging elements. All specified elements must be reachable by topological navigation from this element edge, and the topological direction must be unambiguous."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:17
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.mergeElement:13
 msgid "A MeshElementArray, a list of MeshElement objects, a Set, or a list of Set objects containing the elements to be included in the merge operation."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.orientElements:8
-msgid "**pickedElements**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.orientElements:8
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.orientElements:4
 msgid "A sequence of MeshElement objects specifying the elements to orient."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.orientElements:25
-msgid "**referenceRegion**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.orientElements:11
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.orientElements:6
 msgid "A :py:class:`~abaqus.Mesh.MeshFace.MeshFace` object specifying a reference top face that indicates the desired orientation."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.projectNode:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.projectNode:1
 msgid "This method projects the given nodes onto a mesh entity, geometric entity, or a datum object. The nodes may belong to an orphan mesh part or to an Abaqus native mesh."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.projectNode:6
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.projectNode:5
 msgid "Check `Part.projectNode on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partprojectnodepyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.redoMeshEdit:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.redoMeshEdit:1
 msgid "This method executes the edit mesh or the bottom-up meshing operation most recently undone by the undoMeshEdit method on an part. A redo action must be currently available for the part. This implies that the user must have executed the undoMeshEdit method on the part and that the user has not subsequently executed any further edit mesh commands on the assembly. It also implies that the user provided a sufficient cache allowance to store the undo operation."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:5
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:4
 msgid "Check `Part.renumberElement on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partrenumberelementpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:10
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:7
 msgid "A MeshElementArray or a tuple or list of MeshElement objects, or a Set containing elements to be renumbered. If unspecified, all elements in the part will be renumbered."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:14
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:14
-msgid "**startLabel**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:14
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:10
 msgid "A positive Int specifying the new label for the first element in **elements**."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:18
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:18
-msgid "**increment**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:17
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:12
 msgid "A positive Int specifying the increment used for computation of new labels for all consecutive elements in **elements**."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:21
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:21
-msgid "**offset**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:21
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:15
 msgid "An Int by which existing labels of the specified elements will be offset."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:29
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:29
-msgid "**labels**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:24
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:17
 msgid "A list of labels for the specified elements. The length of this list must match the number of specified elements."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:34
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:34
-msgid "Error: :obj:`Renumbering` :obj:`can` :obj:`be` :obj:`applied` :obj:`to` :obj:`orphan` :obj:`mesh` :obj:`parts` :obj:`only`"
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:0
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:0
+msgid "Raises"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:34
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:20
 msgid "Renumbering is attempted on a native part"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:37
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:37
-msgid "Error: :obj:`Either` :obj:`startLabel` :obj:`and` :obj:`increment` or :obj:`offset` :obj:`must` :obj:`be` :obj:`specified`"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:37
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:21
 msgid "Renumbering data is specified incorrectly"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:40
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:40
-msgid "Error: :obj:`Specified` :obj:`data` :obj:`will` :obj:`result` :obj:`in` :obj:`invalid` :obj:`labels`"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:40
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:22
 msgid "Renumbering will result in invalid labels"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:51
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:51
-msgid "Error: :obj:`Specified` :obj:`data` :obj:`will` :obj:`result` :obj:`in` :obj:`conflicting` :obj:`labels`"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:43
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement:23
 msgid "Renumbering will result in conflicting labels"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:5
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:4
 msgid "Check `Part.renumberNode on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partrenumbernodepyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:10
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:7
 msgid "A MeshNodeArray or a tuple or list of MeshNode objects, or a Set containing nodes to be renumbered. If unspecified, all nodes in the part will be renumbered."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:14
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:10
 msgid "A positive Int specifying the new label for the first node in **nodes**."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:17
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:12
 msgid "A positive Int specifying the increment used for computation of new labels for all consecutive nodes in **nodes**."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:21
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:15
 msgid "An Int by which existing labels of the specified nodes will be offset."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:24
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:17
 msgid "A list of labels for the specified nodes. The length of this list must match the number of specified nodes."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:34
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:20
 msgid "Renumbering is attempted on a native part."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:37
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:21
 msgid "Renumbering data is specified incorrectly."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:40
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:22
 msgid "Renumbering will result in invalid labels."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:43
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberNode:23
 msgid "Renumbering will result in conflicting labels."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.setElementSize:5
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.setElementSize:4
 msgid "Check `Part.setElementSize on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partsetelementsizepyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.setElementSize:23
-msgid "**size**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.setElementSize:10
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.setElementSize:7
 msgid "A Float specifying the desired element size."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitElement:6
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitElement:5
 msgid "Check `Part.splitElement on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partsplitelementpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitMeshEdge:6
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitMeshEdge:5
 msgid "Check `Part.splitMeshEdge on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partsplitmeshedgepyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitMeshEdge:14
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitMeshEdge:10
 msgid "A Float specifying the normalized distance along **edge** at which to split. Possible values are 0.0 << **parameter** << 1.0. The default value is 0.5."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:5
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:4
 msgid "Check `Part.subdivideElement on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partsubdivideelementpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:10
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:7
 msgid "A MeshElementArray, a list of MeshElement objects, a Set, or a list of Set objects containing the elements to be subdivided. By default all the elements of the part are subdivided."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:18
-msgid "**divisionNumber**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:15
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:11
 msgid "An Int specifying the number of resulting elements for each input element in each direction of the subdivision. If **face** or **edge** are not specified, elements will be subdivided according to this number in all possible directions. Must be greater than one. Default is 2."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:24
-msgid "**face**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:21
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:16
 msgid "A :py:class:`~abaqus.Mesh.MeshFace.MeshFace` object that serves as a reference for indicating two topological directions for the subdivision operation. Must be a face of one of the specified elements, and all specified elements must be reachable by topological navigation from this element face. May not be combined with **edge**."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:27
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:21
 msgid "A :py:class:`~abaqus.Mesh.MeshEdge.MeshEdge` object that serves as a reference for indicating a single topological direction for the subdivision operation. Must be an edge of one of the specified elements, and all specified elements must be reachable by topological navigation from this element edge. May not be combined with **face**."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.swapMeshEdge:6
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.swapMeshEdge:5
 msgid "Check `Part.swapMeshEdge on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partswapmeshedgepyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.undoMeshEdit:2
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.undoMeshEdit:1
 msgid "This method undoes the most recent edit mesh or the bottom-up meshing operation on a part and restores the mesh to its previous state. An edit mesh undo action must be available for the part. This implies that prior to executing an edit mesh command on the part, the user enabled edit mesh undo with a sufficient cache allowance to store the edit mesh operation."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.wrapMesh:5
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.wrapMesh:4
 msgid "Check `Part.wrapMesh on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all#simaker-partwrapmeshpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.wrapMesh:25
-msgid "**radius**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.wrapMesh:10
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.wrapMesh:7
 msgid "A Float specifying the radius of the cylinder about which the part is to be wrapped. The wrapping procedure will relocate a node at point (xx, yy) on the planar mesh to (x,θ,zx,θ,z), where rr is the specified radius, θθ = xrxr, and zz=yy."
 msgstr ""
 
@@ -3698,42 +3449,30 @@ msgstr ""
 msgid "MeshEditOptions"
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions:2
+#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions:1
 msgid "The MeshEditOptions object stores settings that specify the behavior when editing meshes on parts or part instances. The MeshEditOptions object has no constructor. Abaqus creates the **MeshEditOptions** member when a session is started."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions:13
+#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions:12
 msgid "Check `MeshEditOptions on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mesheditoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions.setValues:2
+#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions.setValues:1
 msgid "This method modifies the MeshEditOptions object."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions.setValues:5
+#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions.setValues:4
 msgid "Check `MeshEditOptions.setValues on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mesheditoptionspyc.htm?contextscope=all#simaker-mesheditoptionssetvaluespyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions.setValues:13
-msgid "**maxUndoCacheElements**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions.setValues:10
+#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions.setValues:7
 msgid "A Float specifying the maximum allowable mesh edit undo cache size in millions of elements. If this value is set to at least the number of elements on a given part or part instance, at least one level of undo/redo capability is assured for subsequent mesh edit operations on that part or part instance. The default value is 0.0."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions.setValues:18
-msgid "**enableUndo**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions.setValues:16
+#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions.setValues:12
 msgid "A Boolean specifying whether undo/redo of mesh edit operations will be enabled. If **enableUndo** =OFF any existing cache for undo/redo operations will be cleared for all parts and assemblies in all models. The default value is OFF."
 msgstr ""
 
-#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions.setValues:39
-msgid "**_suspendUndo**"
-msgstr ""
-
-#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions.setValues:21
+#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions.setValues:16
 msgid "A Boolean specifying the suspension of undo/redo for mesh edit operations. When undo/redo is suspended, undo/redo will not be available after subsequent mesh edit operations on a given part or part instances. Any pre-existing cache for mesh edit operations on other parts or assemblies in any model will be unaffected. The default value is OFF.If you change the value of **enableUndo** to True, Abaqus sets **_suspendUndo** to False."
 msgstr ""
