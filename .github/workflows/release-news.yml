@@ -3,13 +3,13 @@ name: Add Release News
 on:
   workflow_dispatch:
   inputs:
-      version:
-        type: string
-        description: Version number
-        required: true
+    version:
+      type: string
+      description: Version number
+      required: true
 
 jobs:
-  build-deploy:
+  release-news:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
