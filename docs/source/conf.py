@@ -31,15 +31,14 @@ copyright = '2022, WANG Hailin'
 author = 'WANG Hailin'
 
 # The full version, including alpha/beta/rc tags
-_default_version = '2022.0.0'
+_default_version = '2022'
 try:
-    version = pkg_resources.get_distribution('abqpy').version
-    if not version.startswith('20') or len(version.split('.')) < 3:
+    version = pkg_resources.get_distribution('abqpy').version[:4]
+    if not version.startswith('20'):
         version = _default_version
 except pkg_resources.DistributionNotFound:
     version = _default_version
-release = version[:4]
-version = release
+release = version
 
 # For multiple languages
 locale_dirs = ['locales/']   # path is example but recommended.
