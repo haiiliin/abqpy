@@ -15,6 +15,9 @@ requirements:
     - setuptools_scm
   run:
     - python
+    - auto-all
+    - Jinja2
+    - toml
 
 test:
   import:
