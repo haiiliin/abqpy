@@ -212,7 +212,7 @@ html_theme_options = {
         {
             "name": "PyPI",
             "url": "https://pypi.org/project/abqpy",
-            "icon": "_static/pypi.jpg",
+            "icon": "_static/PyPI_logo.svg",
             "type": "local",
         },
         {
