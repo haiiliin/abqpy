@@ -224,7 +224,7 @@ html_theme_options = {
         {
             "name": "Read the Docs",
             "url": "https://readthedocs.org/projects/abqpy/",
-            "icon": "_static/rtd_logo.svg",
+            "icon": "_static/rtd-logo-dark.svg",
             "type": "local",
         },
    ],
