@@ -208,6 +208,26 @@ html_theme = 'pydata_sphinx_theme'
 html_theme_options = {
     'navigation_depth': 9,
     "github_url": "https://github.com/haiiliin/abqpy",
+    "icon_links": [
+        {
+            "name": "PyPI",
+            "url": "https://pypi.org/project/abqpy",
+            "icon": "_static/PyPI_logo.svg",
+            "type": "local",
+        },
+        {
+            "name": "Anaconda",
+            "url": "https://anaconda.org/haiiliin/abqpy",
+            "icon": "_static/anaconda.svg",
+            "type": "local",
+        },
+        {
+            "name": "Read the Docs",
+            "url": "https://readthedocs.org/projects/abqpy/",
+            "icon": "_static/rtd-logo-dark.svg",
+            "type": "local",
+        },
+   ],
     "switcher": {
         "json_url": "https://abqpy.com/en/latest/_static/switcher.json",
         "version_match": f"v{version[:4]}",
