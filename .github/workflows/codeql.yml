@@ -14,10 +14,14 @@ name: "CodeQL"
 on:
   push:
     branches: [ "main", V20** ]
+    paths:
+    - 'src/**'
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ "main", V20** ]
     types: [opened, reopened, synchronize]
+    paths:
+    - 'src/**'
 
 jobs:
   analyze:
