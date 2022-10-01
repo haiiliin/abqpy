@@ -226,7 +226,7 @@ html_theme_options = {
         },
    ],
     "switcher": {
-        "json_url": "https://abqpy.com/en/latest/_static/switcher.json",
+        "json_url": "https://docs.abqpy.com/en/latest/_static/switcher.json",
         "version_match": f"v{version[:4]}",
     },
     "navbar_end": ["version-switcher", "theme-switcher", "navbar-icon-links"],
