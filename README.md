@@ -21,7 +21,7 @@ Python script, even without opening the Abaqus/CAE.
 - PyPI: [pypi.org/project/abqpy](https://pypi.org/project/abqpy/)
 - Anaconda: [anaconda.org/haiiliin/abqpy](https://anaconda.org/haiiliin/abqpy)
 - Read the Docs: [readthedocs.org/projects/abqpy](https://readthedocs.org/projects/abqpy/)
-- Documentation: [abqpy.haiiliin.com](https://abqpy.haiiliin.com/en/latest/)
+- Documentation: [docs.abqpy.com](https://docs.abqpy.com/en/latest/)
 
 ## Pull Requests are Welcome
 
@@ -115,4 +115,4 @@ system variable named `ABAQUS_BAT_PATH`, and set the value to the file path of t
 
 ## Explore more
 
-For detailed usage of this package, please refer to the [documentation](https://abqpy.haiiliin.com/).
+For detailed usage of this package, please refer to the [documentation](https://docs.abqpy.com/).
