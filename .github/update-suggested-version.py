@@ -13,7 +13,7 @@ if current_version.startswith("v"):
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 os.chdir("..")
 
-for file in ['README.md', 'README-zh-cn.md', 'docs/source/getting_started.rst']:
+for file in ['docs/source/getting_started.rst']:
     with open(file, 'r', encoding='utf-8') as f:
         content = f.read()
     
