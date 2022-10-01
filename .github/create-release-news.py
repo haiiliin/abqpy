@@ -19,7 +19,7 @@ authors: ["haiiliin"]
 date: {datetime.date.today().strftime("%Y-%m-%d")}
 ---
 
-The abqpy `2016/2017/2018/2019/2020/2021/2022.{minor_version}` release is out! Check out the release notes at GitHub:
+abqpy `2016/2017/2018/2019/2020/2021/2022.{minor_version}` release is out! Check out the release notes at GitHub:
 - [abqpy 2016.{minor_version}](https://github.com/haiiliin/abqpy/releases/tag/v2016.{minor_version})
 - [abqpy 2017.{minor_version}](https://github.com/haiiliin/abqpy/releases/tag/v2017.{minor_version})
 - [abqpy 2018.{minor_version}](https://github.com/haiiliin/abqpy/releases/tag/v2018.{minor_version})
