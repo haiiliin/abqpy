@@ -2,7 +2,8 @@
 
 [![Documentation Status](https://img.shields.io/readthedocs/abqpy?label=docs)](https://readthedocs.org/projects/abqpy/)
 [![Documentation Status](https://img.shields.io/readthedocs/abqpy-zh-cn?label=docs-zh-cn)](https://readthedocs.org/projects/abqpy-zh-cn/)
-[![Tests](https://github.com/haiiliin/abqpy/actions/workflows/tests.yaml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/tests.yaml)
+[![pytest](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml)
+[![docs-test](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml)
 [![CodeQL](https://github.com/haiiliin/abqpy/actions/workflows/codeql.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/codeql.yml)
 
 Read this in other languages: [English](README.md), [简体中文](README-zh-cn.md).
