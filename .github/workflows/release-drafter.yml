@@ -1,0 +1,35 @@
+name: Release Drafter
+on:
+  push:
+    branches:
+    - V20**
+  pull_request:
+    types: [opened, reopened, synchronize]
+  workflow_dispatch:
+
+jobs:
+  update-release:
+    permissions:
+      # write permission is required to create a github release
+      contents: write
+      # write permission is required for autolabeler
+      # otherwise, read permission is required at least
+      pull-requests: write
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        version: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"]
+
+    steps:
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'
+      - name: Update release drafter
+        id: create_release_drafter
+        uses: release-drafter/release-drafter@v5
+        with:
+          config-name: release-drafter-v${{ matrix.version }}.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
