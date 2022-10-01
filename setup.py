@@ -10,7 +10,7 @@ setuptools.setup(
     description="Type hints for Abaqus/Python scripting",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/haiiliin/abqpy",
+    url="https://abqpy.com",
     classifiers=[
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
@@ -24,8 +24,9 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     project_urls={
+        'GitHub': 'https://github.com/haiiliin/abqpy',
         'Bug Tracker': 'https://github.com/haiiliin/abqpy/issues',
-        'Documentation': 'https://abqpy.haiiliin.com',
+        'Documentation': 'https://docs.abqpy.com',
         'Anaconda': 'https://anaconda.org/haiiliin/abqpy',
         'Read the Docs': 'https://readthedocs.org/projects/abqpy',
     },
