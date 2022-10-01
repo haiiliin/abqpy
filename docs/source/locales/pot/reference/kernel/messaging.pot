@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022.3.5 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-29 00:21+0000\n"
+"POT-Creation-Date: 2022-10-01 00:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,11 +32,11 @@ msgstr ""
 msgid "DataObject"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/DataObject.py:docstring of abaqus.Messaging.DataObject.DataObject:2
+#: ../../../../src/abaqus/Messaging/DataObject.py:docstring of abaqus.Messaging.DataObject.DataObject:1
 msgid "An instance of the DataObject object is passed to each callback. The DataObject object has no methods. The members of a DataObject object depend on the type of the object. All DataObject instances have the following members, regardless of type:"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/DataObject.py:docstring of abaqus.Messaging.DataObject.DataObject:7
+#: ../../../../src/abaqus/Messaging/DataObject.py:docstring of abaqus.Messaging.DataObject.DataObject:6
 msgid "Check `DataObject on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-dataobjectpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -57,7 +57,7 @@ msgid ":py:obj:`processId <abaqus.Messaging.DataObject.DataObject.processId>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.processId:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.processId:1
 msgid "An Int specifying the process ID of the analysis product."
 msgstr ""
 
@@ -74,8 +74,8 @@ msgid ":py:obj:`timeStamp <abaqus.Messaging.DataObject.DataObject.timeStamp>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.timeStamp:2
-msgid "An Int specifying the time the message was sent in seconds since 00:00:00 UTC, January 1, 1970."
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.timeStamp:1
+msgid "00 UTC, January 1, 1970."
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
@@ -83,7 +83,7 @@ msgid ":py:obj:`attempts <abaqus.Messaging.DataObject.DataObject.attempts>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.attempts:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.attempts:1
 msgid "An Int specifying the number of attempts made to reach equilibrium during this step."
 msgstr ""
 
@@ -92,7 +92,7 @@ msgid ":py:obj:`dof <abaqus.Messaging.DataObject.DataObject.dof>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.dof:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.dof:1
 msgid "An Int specifying the degree of freedom requested for monitoring the output."
 msgstr ""
 
@@ -101,7 +101,7 @@ msgid ":py:obj:`equilibrium <abaqus.Messaging.DataObject.DataObject.equilibrium>
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.equilibrium:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.equilibrium:1
 msgid "An Int specifying the number of equilibrium iterations made during this increment."
 msgstr ""
 
@@ -110,7 +110,7 @@ msgid ":py:obj:`increment <abaqus.Messaging.DataObject.DataObject.increment>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.increment:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.increment:1
 msgid "An Int specifying the increment of the analysis."
 msgstr ""
 
@@ -119,7 +119,7 @@ msgid ":py:obj:`iterations <abaqus.Messaging.DataObject.DataObject.iterations>`\
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.iterations:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.iterations:1
 msgid "An Int specifying the number of iterations in the step."
 msgstr ""
 
@@ -128,7 +128,7 @@ msgid ":py:obj:`node <abaqus.Messaging.DataObject.DataObject.node>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.node:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.node:1
 msgid "An Int specifying the node number requested for monitoring output."
 msgstr ""
 
@@ -137,7 +137,7 @@ msgid ":py:obj:`severe <abaqus.Messaging.DataObject.DataObject.severe>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.severe:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.severe:1
 msgid "An Int specifying the number of severe discontinuity iterations completed during this increment."
 msgstr ""
 
@@ -154,7 +154,7 @@ msgid ":py:obj:`stepId <abaqus.Messaging.DataObject.DataObject.stepId>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.stepId:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.stepId:1
 msgid "An Int specifying the ID of the step."
 msgstr ""
 
@@ -163,7 +163,7 @@ msgid ":py:obj:`stepTime <abaqus.Messaging.DataObject.DataObject.stepTime>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.stepTime:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.stepTime:1
 msgid "A Float specifying the step time corresponding to the current increment."
 msgstr ""
 
@@ -172,7 +172,7 @@ msgid ":py:obj:`time <abaqus.Messaging.DataObject.DataObject.time>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.time:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.time:1
 msgid "A Float specifying the total time corresponding to the monitor data."
 msgstr ""
 
@@ -181,7 +181,7 @@ msgid ":py:obj:`timeIncrement <abaqus.Messaging.DataObject.DataObject.timeIncrem
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.timeIncrement:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.timeIncrement:1
 msgid "A Float specifying the time increment used in the current step."
 msgstr ""
 
@@ -190,7 +190,7 @@ msgid ":py:obj:`totalTime <abaqus.Messaging.DataObject.DataObject.totalTime>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.totalTime:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.totalTime:1
 msgid "A Float specifying the total time completed in the analysis."
 msgstr ""
 
@@ -199,7 +199,7 @@ msgid ":py:obj:`value <abaqus.Messaging.DataObject.DataObject.value>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.value:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.value:1
 msgid "A Float specifying the current value of the degree of freedom requested for monitoring."
 msgstr ""
 
@@ -208,7 +208,7 @@ msgid ":py:obj:`clientHost <abaqus.Messaging.DataObject.DataObject.clientHost>`\
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.clientHost:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.clientHost:1
 msgid "A String specifying the host name of the machine that is running the analysis."
 msgstr ""
 
@@ -225,7 +225,7 @@ msgid ":py:obj:`file <abaqus.Messaging.DataObject.DataObject.file>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.file:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.file:1
 msgid "A String specifying the full path of the output database."
 msgstr ""
 
@@ -234,8 +234,8 @@ msgid ":py:obj:`heading <abaqus.Messaging.DataObject.DataObject.heading>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.heading:2
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.message:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.heading:1
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.message:1
 msgid "A String specifying the job heading."
 msgstr ""
 
@@ -248,7 +248,7 @@ msgid ":py:obj:`nset <abaqus.Messaging.DataObject.DataObject.nset>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.nset:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.nset:1
 msgid "A String specifying the node set specified for monitoring output."
 msgstr ""
 
@@ -257,39 +257,51 @@ msgid ":py:obj:`stepName <abaqus.Messaging.DataObject.DataObject.stepName>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.stepName:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.stepName:1
 msgid "A String specifying the name of the step."
 msgstr ""
 
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.clientName:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.clientName:1
 msgid "A String specifying the name of the client that responded to the callback function. Possible values are BatchPre, Packager, Standard, Explicit, and Calculator."
 msgstr ""
 
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.phase:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.phase:1
 msgid "A SymbolicConstant specifying the phase of the analysis. Possible values are BATCHPRE_PHASE, PACKAGER_PHASE, STANDARD_PHASE, EXPLICIT_PHASE, CALCULATOR_PHASE, and UNKNOWN_PHASE."
 msgstr ""
 
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.step:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.step:1
 msgid "An Int specifying the current step number. Step number 1 corresponds to the first step."
 msgstr ""
 
-#: ../../docstring of abaqus.Messaging.DataObject.DataObject.threadId:2
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.threadId:1
 msgid "An Int specifying the thread ID of the analysis product. Threads are used for parallel or multiprocessing; in most cases **threadId** is set to zero."
+msgstr ""
+
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.timeStamp:0
+msgid "type"
+msgstr ""
+
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.timeStamp:4
+msgid "An Int specifying the time the message was sent in seconds since 00"
+msgstr ""
+
+#: ../../docstring of abaqus.Messaging.DataObject.DataObject.timeStamp:6
+msgid "00"
 msgstr ""
 
 #: ../../reference/kernel/messaging.rst:19
 msgid "MonitorMgr"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr:2
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr:1
 msgid "An instance of the MonitorMgr object is created when you import the abaqus module. No other instance of the MonitorMgr object is required. (This MonitorMgr object is not to be confused with the degree of freedom (DOF) monitor that is constructed from the Step object.)"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr:8
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr:7
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr:13
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr:12
 msgid "Check `MonitorMgr on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-monitormgrpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -317,16 +329,16 @@ msgstr ""
 msgid ":py:obj:`checkMonitorStatus <abaqus.Messaging.MonitorMgr.MonitorMgr.checkMonitorStatus>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.checkMonitorStatus:2
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.checkMonitorStatus:1
 #: ../../None:5:<autosummary>:1
 msgid "This method raises a MonitorError exception if the monitoring status is not ENABLED."
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:2
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:1
 msgid "This method specifies a callback function that will be called when the specified message is received from the analysis product. For more information, see An example of a callback function."
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:7
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:6
 msgid "Check `MonitorMgr.addMessageCallback on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-monitormgrpyc.htm?contextscope=all#simaker-monitormgraddmessagecallbackpyc>`__."
 msgstr ""
 
@@ -335,144 +347,128 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:12
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:11
-msgid "**jobName**"
-msgstr ""
-
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:12
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:11
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:9
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:8
 msgid "A String specifying the name of the job to be monitored or the SymbolicConstant ANY_JOB."
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:43
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:41
-msgid "**messageType**"
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:11
+msgid "A SymbolicConstant specifying which message type will call this callback. Possible values are:  - ABORTED - ANY_JOB - ANY_MESSAGE_TYPE - COMPLETED - END_STEP - ERROR - HEADING - HEALER_JOB - HEALER_TYPE - INTERRUPTED - ITERATION - JOB_ABORTED - JOB_COMPLETED - JOB_INTERRUPTED - JOB_SUBMITTED - MONITOR_DATA - ODB_FILE - ODB_FRAME - SIMULATION_ABORTED - SIMULATION_COMPLETED - SIMULATION_INTERRUPTED - SIMULATION_SUBMITTED - STARTED - STATUS - STEP - WARNING"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:15
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:11
 msgid "A SymbolicConstant specifying which message type will call this callback. Possible values are:"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:18
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:14
 msgid "ABORTED"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:19
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:15
 msgid "ANY_JOB"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:20
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:16
 msgid "ANY_MESSAGE_TYPE"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:21
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:17
 msgid "COMPLETED"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:22
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:18
 msgid "END_STEP"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:23
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:19
 msgid "ERROR"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:24
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:20
 msgid "HEADING"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:25
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:21
 msgid "HEALER_JOB"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:26
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:22
 msgid "HEALER_TYPE"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:27
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:23
 msgid "INTERRUPTED"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:28
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:24
 msgid "ITERATION"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:29
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:25
 msgid "JOB_ABORTED"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:30
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:26
 msgid "JOB_COMPLETED"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:31
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:27
 msgid "JOB_INTERRUPTED"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:32
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:28
 msgid "JOB_SUBMITTED"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:33
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:29
 msgid "MONITOR_DATA"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:34
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:30
 msgid "ODB_FILE"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:35
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:31
 msgid "ODB_FRAME"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:36
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:32
 msgid "SIMULATION_ABORTED"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:37
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:33
 msgid "SIMULATION_COMPLETED"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:38
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:34
 msgid "SIMULATION_INTERRUPTED"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:39
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:35
 msgid "SIMULATION_SUBMITTED"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:40
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:36
 msgid "STARTED"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:41
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:37
 msgid "STATUS"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:42
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:38
 msgid "STEP"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:43
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:39
 msgid "WARNING"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:50
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:45
-msgid "**callback**"
-msgstr ""
-
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:46
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:41
 msgid "A Python function to be called. The interface definition of the callback function is `def onMessage(jobName, messageType, data, userData)` **jobName** is a String. **messageType** is a SymbolicConstant with possible values as listed previously for the addMessageCallback method. **data** is a DataObject object. **userData** is the object passed as the **userData** argument to the addMessageCallback method."
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:66
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:62
-msgid "**userData**"
-msgstr ""
-
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:53
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback:47
 msgid "Any Python object or None. This object is passed to the callback function."
 msgstr ""
 
@@ -480,30 +476,26 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.checkMonitorStatus:21
-msgid ":obj:`MonitorError`"
-msgstr ""
-
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.checkMonitorStatus:13
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.checkMonitorStatus:3
 msgid "Status is not ENABLED"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:2
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:1
 msgid "This method removes a callback function. You specify the callback function to remove using the same arguments you used to add the callback."
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:6
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:5
 msgid "Check `MonitorMgr.removeMessageCallback on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-monitormgrpyc.htm?contextscope=all#simaker-monitormgrremovemessagecallbackpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:14
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:10
 msgid "A SymbolicConstant specifying which message type will call this callback. Possible values are: - ABORTED - ANY_JOB - ANY_MESSAGE_TYPE - COMPLETED - END_STEP - ERROR - HEADING - HEALER_JOB - HEALER_TYPE - INTERRUPTED - ITERATION - JOB_ABORTED - JOB_COMPLETED - JOB_INTERRUPTED - JOB_SUBMITTED - MONITOR_DATA - ODB_FILE - ODB_FRAME - SIMULATION_ABORTED - SIMULATION_COMPLETED - SIMULATION_INTERRUPTED - SIMULATION_SUBMITTED - STARTED - STATUS - STEP - WARNING"
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:44
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:39
 msgid "A Python function to be called; it must be the same as the **callback** argument specified in the original call to addMessageCallback."
 msgstr ""
 
-#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:48
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback:42
 msgid "Any Python object or None; it must be the same as the **userData** argument specified in the original call to addMessageCallback."
 msgstr ""

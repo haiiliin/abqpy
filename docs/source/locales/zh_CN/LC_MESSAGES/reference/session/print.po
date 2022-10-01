@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-14 09:27+0000\n"
+"POT-Creation-Date: 2022-10-01 00:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid "EpsOptions"
 msgstr ""
 
-#: abaqus.Print.EpsOptions.EpsOptions:2 of
+#: abaqus.Print.EpsOptions.EpsOptions:1 of
 msgid ""
 "The EpsOptions object stores the settings that Abaqus uses when printing "
 "using Encapsulated PostScript format. The EpsOptions object has no "
@@ -44,14 +44,14 @@ msgid ""
 "started."
 msgstr ""
 
-#: abaqus.Print.EpsOptions.EpsOptions:7
-#: abaqus.Print.PageSetupOptions.PageSetupOptions:7
-#: abaqus.Print.PrintOptions.PrintOptions:7 abaqus.Print.PsOptions.PsOptions:7
-#: abaqus.Print.SvgOptions.SvgOptions:7 of
+#: abaqus.Print.EpsOptions.EpsOptions:6
+#: abaqus.Print.PageSetupOptions.PageSetupOptions:6
+#: abaqus.Print.PrintOptions.PrintOptions:6 abaqus.Print.PsOptions.PsOptions:6
+#: abaqus.Print.SvgOptions.SvgOptions:6 of
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.Print.EpsOptions.EpsOptions:12 of
+#: abaqus.Print.EpsOptions.EpsOptions:11 of
 msgid ""
 "Check `EpsOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-epsoptionspyc.htm?contextscope=all>`__."
@@ -138,7 +138,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:2 of
+#: abaqus.Print.EpsOptions.EpsOptions.setValues:1 of
 msgid "This method modifies the EpsOptions object."
 msgstr ""
 
@@ -152,27 +152,27 @@ msgstr ""
 msgid "Returns a list of the user attributes of the class."
 msgstr ""
 
-#: ../../docstring abaqus.Print.EpsOptions.EpsOptions.fontType:2
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:26
-#: abaqus.Print.PsOptions.PsOptions.setValues:57 of
+#: ../../docstring abaqus.Print.EpsOptions.EpsOptions.fontType:1
+#: abaqus.Print.EpsOptions.EpsOptions.setValues:20
+#: abaqus.Print.PsOptions.PsOptions.setValues:45 of
 msgid ""
 "A SymbolicConstant specifying the PostScript font substitution rules to "
 "be applied. Possible values are PS_ALWAYS, PS_IF_AVAILABLE, and "
 "AS_DISPLAYED. The default value is PS_IF_AVAILABLE."
 msgstr ""
 
-#: ../../docstring abaqus.Print.EpsOptions.EpsOptions.imageFormat:2
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:31
-#: abaqus.Print.PsOptions.PsOptions.setValues:62 of
+#: ../../docstring abaqus.Print.EpsOptions.EpsOptions.imageFormat:1
+#: abaqus.Print.EpsOptions.EpsOptions.setValues:24
+#: abaqus.Print.PsOptions.PsOptions.setValues:49 of
 msgid ""
 "A SymbolicConstant specifying how the viewport display will be "
 "represented. Possible values are VECTOR and RASTER. The default value is "
 "VECTOR."
 msgstr ""
 
-#: ../../docstring abaqus.Print.EpsOptions.EpsOptions.imageSize:2
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:10
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.imageSize:2 of
+#: ../../docstring abaqus.Print.EpsOptions.EpsOptions.imageSize:1
+#: abaqus.Print.EpsOptions.EpsOptions.setValues:7
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.imageSize:1 of
 msgid ""
 "The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the "
 "width and height of the image in the units specified by **units**. "
@@ -182,9 +182,9 @@ msgid ""
 "inches)."
 msgstr ""
 
-#: ../../docstring abaqus.Print.EpsOptions.EpsOptions.resolution:2
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:21
-#: abaqus.Print.PsOptions.PsOptions.setValues:52 of
+#: ../../docstring abaqus.Print.EpsOptions.EpsOptions.resolution:1
+#: abaqus.Print.EpsOptions.EpsOptions.setValues:16
+#: abaqus.Print.PsOptions.PsOptions.setValues:41 of
 msgid ""
 "A SymbolicConstant specifying the resolution of the image in dots per "
 "inch (dpi). The **resolution** can be DPI_1200 only if **imageFormat** = "
@@ -192,7 +192,7 @@ msgid ""
 "and DPI_1200. The default value is DPI_150."
 msgstr ""
 
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:5 of
+#: abaqus.Print.EpsOptions.EpsOptions.setValues:4 of
 msgid ""
 "Check `EpsOptions.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-epsoptionspyc.htm?contextscope=all"
@@ -208,49 +208,17 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:13
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:13
-#: abaqus.Print.PngOptions.PngOptions.setValues:22
-#: abaqus.Print.SvgOptions.SvgOptions.setValues:21 of
-msgid "**imageSize**"
-msgstr ""
-
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:18
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:17 of
-msgid "**units**"
-msgstr ""
-
-#: ../../docstring abaqus.Print.EpsOptions.EpsOptions.setValues:16
-#: abaqus.Print.EpsOptions.EpsOptions.units:2 of
+#: ../../docstring abaqus.Print.EpsOptions.EpsOptions.setValues:12
+#: abaqus.Print.EpsOptions.EpsOptions.units:1 of
 msgid ""
 "A SymbolicConstant specifying the units of the **imageSize** argument. "
 "This argument is ignored if **imageSize** is SIZE_ON_SCREEN. Possible "
 "values are INCHES and MM. The default value is INCHES."
 msgstr ""
 
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:23
-#: abaqus.Print.PsOptions.PsOptions.setValues:54 of
-msgid "**resolution**"
-msgstr ""
-
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:28
-#: abaqus.Print.PsOptions.PsOptions.setValues:59 of
-msgid "**fontType**"
-msgstr ""
-
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:32
-#: abaqus.Print.PsOptions.PsOptions.setValues:63 of
-msgid "**imageFormat**"
-msgstr ""
-
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:41
-#: abaqus.Print.PsOptions.PsOptions.setValues:72 of
-msgid "**shadingQuality**"
-msgstr ""
-
-#: ../../docstring abaqus.Print.EpsOptions.EpsOptions.setValues:35
-#: abaqus.Print.EpsOptions.EpsOptions.shadingQuality:2
-#: abaqus.Print.PsOptions.PsOptions.setValues:66 of
+#: ../../docstring abaqus.Print.EpsOptions.EpsOptions.setValues:27
+#: abaqus.Print.EpsOptions.EpsOptions.shadingQuality:1
+#: abaqus.Print.PsOptions.PsOptions.setValues:52 of
 msgid ""
 "A SymbolicConstant specifying how fine the shading of curved surfaces "
 "will be for vector images. Possible values are EXTRA COARSE, COARSE, "
@@ -265,14 +233,7 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:54 of
-msgid ""
-"RangeError: :obj:`imageSize` :obj:`must` :obj:`be` :obj:`SIZE_ON_SCREEN` "
-"or :obj:`a` :term:`python:sequence` :obj:`of` 2 :obj:`Floats` >= "
-"(*minWidth*, **minHeight**)"
-msgstr ""
-
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:46 of
+#: abaqus.Print.EpsOptions.EpsOptions.setValues:31 of
 msgid "If either element of **imageSize** is out of range."
 msgstr ""
 
@@ -280,7 +241,7 @@ msgstr ""
 msgid "PageSetupOptions"
 msgstr ""
 
-#: abaqus.Print.PageSetupOptions.PageSetupOptions:2 of
+#: abaqus.Print.PageSetupOptions.PageSetupOptions:1 of
 msgid ""
 "The PageSetupOptions object stores the settings that Abaqus uses when "
 "printing using a Windows printer. The PageSetupOptions object has no "
@@ -288,7 +249,7 @@ msgid ""
 "session is started."
 msgstr ""
 
-#: abaqus.Print.PageSetupOptions.PageSetupOptions:12 of
+#: abaqus.Print.PageSetupOptions.PageSetupOptions:11 of
 msgid ""
 "Check `PageSetupOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pagesetupoptionspyc.htm?contextscope=all>`__."
@@ -402,7 +363,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:2 of
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:1 of
 msgid "This method modifies the PageSetupOptions object."
 msgstr ""
 
@@ -414,72 +375,72 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.bottomMargin:2
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:28 of
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.bottomMargin:1
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:21 of
 msgid ""
 "A Float specifying the bottom margin of the paper in the currently "
 "selected units (inches or millimeters). Possible values are "
 "**bottomMargin** ≥ 0. The default value is 0.5."
 msgstr ""
 
-#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.date:2
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:49
-#: abaqus.Print.PsOptions.PsOptions.date:2
-#: abaqus.Print.PsOptions.PsOptions.setValues:49 of
+#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.date:1
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:37
+#: abaqus.Print.PsOptions.PsOptions.date:1
+#: abaqus.Print.PsOptions.PsOptions.setValues:39 of
 msgid ""
 "A Boolean specifying whether the output includes the date. The default "
 "value is ON."
 msgstr ""
 
-#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.leftMargin:2
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:33 of
+#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.leftMargin:1
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:25 of
 msgid ""
 "A Float specifying the left margin of the paper in the currently selected"
 " units (inches or millimeters). Possible values are **leftMargin** ≥ 0. "
 "The default value is 0.5."
 msgstr ""
 
-#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.logo:2
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:45
-#: abaqus.Print.PsOptions.PsOptions.logo:2
-#: abaqus.Print.PsOptions.PsOptions.setValues:45 of
+#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.logo:1
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:34
+#: abaqus.Print.PsOptions.PsOptions.logo:1
+#: abaqus.Print.PsOptions.PsOptions.setValues:36 of
 msgid ""
 "A Boolean specifying whether the output includes the Abaqus logo. The "
 "default value is ON."
 msgstr ""
 
-#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.orientation:2
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:41
-#: abaqus.Print.PsOptions.PsOptions.orientation:2
-#: abaqus.Print.PsOptions.PsOptions.setValues:41 of
+#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.orientation:1
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:31
+#: abaqus.Print.PsOptions.PsOptions.orientation:1
+#: abaqus.Print.PsOptions.PsOptions.setValues:33 of
 msgid ""
 "A SymbolicConstant specifying the orientation of the image. Possible "
 "values are PORTRAIT and LANDSCAPE. The default value is PORTRAIT."
 msgstr ""
 
-#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.quality:2
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:20 of
+#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.quality:1
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:15 of
 msgid ""
 "A SymbolicConstant specifying the quality of the image. Possible values "
 "are COARSE, MEDIUM, and FINE. The default value is MEDIUM."
 msgstr ""
 
-#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.rightMargin:2
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:37 of
+#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.rightMargin:1
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:28 of
 msgid ""
 "A Float specifying the right margin of the paper in the currently "
 "selected units (inches or millimeters). Possible values are "
 "**rightMargin** ≥ 0. The default value is 0.5."
 msgstr ""
 
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:5 of
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:4 of
 msgid ""
 "Check `PageSetupOptions.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pagesetupoptionspyc.htm?contextscope=all"
 "#simaker-pagesetupoptionssetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:10 of
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:7 of
 msgid ""
 "A SymbolicConstant or a pair of Floats specifying the size of the printed"
 " image in the currently selected units (inches or millimeters). Possible "
@@ -488,93 +449,35 @@ msgid ""
 "**minHeight**) is 10 mm (approximately 0.4 inches)."
 msgstr ""
 
-#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:16
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.units:2 of
+#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:12
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.units:1 of
 msgid ""
 "A SymbolicConstant specifying the units to use for the margins and image "
 "size. Possible values are INCHES and MM. The default value is INCHES."
 msgstr ""
 
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:21 of
-msgid "**quality**"
-msgstr ""
-
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:25
-#: abaqus.Print.PsOptions.PsOptions.setValues:26 of
-msgid "**topMargin**"
-msgstr ""
-
-#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:24
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.topMargin:2 of
+#: ../../docstring abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:18
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.topMargin:1 of
 msgid ""
 "A Float specifying the top margin of the paper in the currently selected "
 "units (inches or millimeters). Possible values are **topMargin** ≥ 0. The"
 " default value is 0.5."
 msgstr ""
 
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:30
-#: abaqus.Print.PsOptions.PsOptions.setValues:30 of
-msgid "**bottomMargin**"
-msgstr ""
-
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:34
-#: abaqus.Print.PsOptions.PsOptions.setValues:34 of
-msgid "**leftMargin**"
-msgstr ""
-
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:38
-#: abaqus.Print.PsOptions.PsOptions.setValues:38 of
-msgid "**rightMargin**"
-msgstr ""
-
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:42
-#: abaqus.Print.PsOptions.PsOptions.setValues:42 of
-msgid "**orientation**"
-msgstr ""
-
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:46
-#: abaqus.Print.PsOptions.PsOptions.setValues:46 of
-msgid "**logo**"
-msgstr ""
-
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:53
-#: abaqus.Print.PsOptions.PsOptions.setValues:49 of
-msgid "**date**"
-msgstr ""
-
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:59
-#: abaqus.Print.PsOptions.PsOptions.setValues:78 of
-msgid ":obj:`RangeError`"
-msgstr ""
-
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:58
-#: abaqus.Print.PsOptions.PsOptions.setValues:77 of
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:39
+#: abaqus.Print.PsOptions.PsOptions.setValues:56 of
 msgid ""
 "Note: The minimum value of width and height (*minWidth* and "
-"**minHeight**) is 10 mm (approximately 0.4 inches)."
+"**minHeight**) is 10 mm     (approximately 0.4 inches)."
 msgstr ""
 
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:62
-#: abaqus.Print.PsOptions.PsOptions.setValues:81 of
-msgid ""
-"RangeError: :obj:`leftMargin` :obj:`and` :obj:`rightMargin` :obj:`must` "
-":obj:`produce` :obj:`image` :obj:`width` >= :obj:`minWidth`"
-msgstr ""
-
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:62
-#: abaqus.Print.PsOptions.PsOptions.setValues:81 of
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:40
+#: abaqus.Print.PsOptions.PsOptions.setValues:57 of
 msgid "If **leftMargin** + **rightMargin** is out of range."
 msgstr ""
 
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:73
-#: abaqus.Print.PsOptions.PsOptions.setValues:92 of
-msgid ""
-"RangeError: :obj:`topMargin` :obj:`and` :obj:`bottomMargin` :obj:`must` "
-":obj:`produce` :obj:`image` :obj:`height` >= :obj:`minHeight`"
-msgstr ""
-
-#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:65
-#: abaqus.Print.PsOptions.PsOptions.setValues:84 of
+#: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:41
+#: abaqus.Print.PsOptions.PsOptions.setValues:58 of
 msgid "If **topMargin** + **bottomMargin** is out of range."
 msgstr ""
 
@@ -582,14 +485,14 @@ msgstr ""
 msgid "PngOptions"
 msgstr ""
 
-#: abaqus.Print.PngOptions.PngOptions:2 of
+#: abaqus.Print.PngOptions.PngOptions:1 of
 msgid ""
 "The PngOptions object stores the settings that Abaqus uses when printing "
 "in PNG format. The PngOptions object has no constructor. Abaqus creates "
 "the **pngOptions** member when a session is started."
 msgstr ""
 
-#: abaqus.Print.PngOptions.PngOptions:7 of
+#: abaqus.Print.PngOptions.PngOptions:6 of
 msgid ""
 "Check `PngOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all>`__."
@@ -612,7 +515,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Print.PngOptions.PngOptions.setValues:2 of
+#: abaqus.Print.PngOptions.PngOptions.setValues:1 of
 msgid "This method modifies the PngOptions object."
 msgstr ""
 
@@ -622,7 +525,7 @@ msgid ""
 "<abaqus.Print.PngOptions.PngOptions.get_user_attributes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../docstring abaqus.Print.PngOptions.PngOptions.imageSize:2 of
+#: ../../docstring abaqus.Print.PngOptions.PngOptions.imageSize:1 of
 msgid ""
 "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the "
 "width and height of the image in pixels. Possible values are "
@@ -636,14 +539,14 @@ msgid ""
 "be at least as large as the screen dimensions."
 msgstr ""
 
-#: abaqus.Print.PngOptions.PngOptions.setValues:5 of
+#: abaqus.Print.PngOptions.PngOptions.setValues:4 of
 msgid ""
 "Check `PngOptions.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all"
 "#simaker-pngoptionssetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.Print.PngOptions.PngOptions.setValues:10 of
+#: abaqus.Print.PngOptions.PngOptions.setValues:7 of
 msgid ""
 "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the "
 "width and height of the image in pixels. Possible values are "
@@ -657,43 +560,29 @@ msgid ""
 "be at least as large as the screen dimensions."
 msgstr ""
 
-#: abaqus.Print.PngOptions.PngOptions.setValues:27
-#: abaqus.Print.SvgOptions.SvgOptions.setValues:26 of
+#: abaqus.Print.PngOptions.PngOptions.setValues:18
+#: abaqus.Print.SvgOptions.SvgOptions.setValues:17 of
 msgid ""
-"RangeError: :obj:`imageSize` :obj:`must` :obj:`be` :obj:`SIZE_ON_SCREEN` "
-"or :obj:`a` :term:`python:sequence` :obj:`of` 2 :obj:`Ints` :obj:`in` "
-":obj:`the` :obj:`range`"
-msgstr ""
-
-#: abaqus.Print.PngOptions.PngOptions.setValues:41
-#: abaqus.Print.SvgOptions.SvgOptions.setValues:40 of
-msgid ""
-"(:obj:`minWidth`, :obj:`minHeight`) <= (:obj:`width`, :obj:`height`) <= "
-"(:obj:`maxWidth`, :obj:`maxHeight`)"
-msgstr ""
-
-#: abaqus.Print.PngOptions.PngOptions.setValues:30
-#: abaqus.Print.SvgOptions.SvgOptions.setValues:29 of
-msgid ""
-"If either the width or height arguments of **imageSize** are out of range"
-" (where **minWidth** and **minHeight** are the number of pixels "
-"corresponding to approximately 10 mm for a given display and **maxWidth**"
-" and **maxHeight** are the largest allowable number of pixels supported "
-"by the system graphics)."
+":raises (minWidth`, :class:`minHeight) <= (width`, :class:`height) <= "
+"(maxWidth`, :class:`maxHeight): If either the width or height arguments "
+"of **imageSize** are out of range (where     **minWidth** and "
+"**minHeight** are the number of pixels corresponding to approximately 10 "
+"mm     for a given display and **maxWidth** and **maxHeight** are the "
+"largest allowable number of     pixels supported by the system graphics)."
 msgstr ""
 
 #: ../../reference/session/print.rst:35
 msgid "PrintOptions"
 msgstr ""
 
-#: abaqus.Print.PrintOptions.PrintOptions:2 of
+#: abaqus.Print.PrintOptions.PrintOptions:1 of
 msgid ""
 "The PrintOptions object stores the common settings that Abaqus uses for "
 "all print methods. The PrintOptions object has no constructor. Abaqus "
 "creates the **printOptions** member when a session is started."
 msgstr ""
 
-#: abaqus.Print.PrintOptions.PrintOptions:12 of
+#: abaqus.Print.PrintOptions.PrintOptions:11 of
 msgid ""
 "Check `PrintOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-printoptionspyc.htm?contextscope=all>`__."
@@ -780,7 +669,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Print.PrintOptions.PrintOptions.setValues:2 of
+#: abaqus.Print.PrintOptions.PrintOptions.setValues:1 of
 msgid "This method modifies the PrintOptions object."
 msgstr ""
 
@@ -790,15 +679,15 @@ msgid ""
 "<abaqus.Print.PrintOptions.PrintOptions.get_user_attributes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../docstring abaqus.Print.PrintOptions.PrintOptions.compass:2 of
+#: ../../docstring abaqus.Print.PrintOptions.PrintOptions.compass:1 of
 msgid ""
 "A Boolean specifying whether the output includes the view compass. The "
 "default value is OFF."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.Print.PrintOptions.PrintOptions.deleteTemporaryFiles:2
-#: abaqus.Print.PrintOptions.PrintOptions.setValues:30 of
+#: abaqus.Print.PrintOptions.PrintOptions.deleteTemporaryFiles:1
+#: abaqus.Print.PrintOptions.PrintOptions.setValues:22 of
 msgid ""
 "A Boolean specifying whether to delete the temporary files created when "
 "an image is printed. The default value is ON. You should set the "
@@ -806,96 +695,68 @@ msgid ""
 "support print spooling."
 msgstr ""
 
-#: ../../docstring abaqus.Print.PrintOptions.PrintOptions.printCommand:2
-#: abaqus.Print.PrintOptions.PrintOptions.setValues:26 of
+#: ../../docstring abaqus.Print.PrintOptions.PrintOptions.printCommand:1
+#: abaqus.Print.PrintOptions.PrintOptions.setValues:19 of
 msgid ""
 "A String specifying the default print command that will be used by the "
 "printToPrinter method if no **printCommand** argument is provided. The "
 "default value is \"lpr\"."
 msgstr ""
 
-#: ../../docstring abaqus.Print.PrintOptions.PrintOptions.reduceColors:2
-#: abaqus.Print.PrintOptions.PrintOptions.setValues:35 of
+#: ../../docstring abaqus.Print.PrintOptions.PrintOptions.reduceColors:1
+#: abaqus.Print.PrintOptions.PrintOptions.setValues:26 of
 msgid ""
 "A Boolean specifying whether the raster image printed is reduced from "
 "true color to 256 colors to reduce file size. The quality of the image "
 "will be compromised. The default value is OFF."
 msgstr ""
 
-#: ../../docstring abaqus.Print.PrintOptions.PrintOptions.rendition:2
-#: abaqus.Print.PrintOptions.PrintOptions.setValues:10 of
+#: ../../docstring abaqus.Print.PrintOptions.PrintOptions.rendition:1
+#: abaqus.Print.PrintOptions.PrintOptions.setValues:7 of
 msgid ""
 "A SymbolicConstant specifying how the image is rendered. Possible values "
 "are BLACK_AND_WHITE, GREYSCALE, and COLOR. The default value is COLOR."
 msgstr ""
 
-#: abaqus.Print.PrintOptions.PrintOptions.setValues:5 of
+#: abaqus.Print.PrintOptions.PrintOptions.setValues:4 of
 msgid ""
 "Check `PrintOptions.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-printoptionspyc.htm?contextscope=all"
 "#simaker-printoptionssetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.Print.PrintOptions.PrintOptions.setValues:11 of
-msgid "**rendition**"
-msgstr ""
-
-#: abaqus.Print.PrintOptions.PrintOptions.setValues:15 of
-msgid "**vpDecorations**"
-msgstr ""
-
-#: ../../docstring abaqus.Print.PrintOptions.PrintOptions.setValues:14
-#: abaqus.Print.PrintOptions.PrintOptions.vpDecorations:2 of
+#: ../../docstring abaqus.Print.PrintOptions.PrintOptions.setValues:10
+#: abaqus.Print.PrintOptions.PrintOptions.vpDecorations:1 of
 msgid ""
 "A Boolean specifying whether the output includes the viewport border and "
 "title. The default value is ON."
 msgstr ""
 
-#: abaqus.Print.PrintOptions.PrintOptions.setValues:19 of
-msgid "**vpBackground**"
-msgstr ""
-
-#: ../../docstring abaqus.Print.PrintOptions.PrintOptions.setValues:18
-#: abaqus.Print.PrintOptions.PrintOptions.vpBackground:2 of
+#: ../../docstring abaqus.Print.PrintOptions.PrintOptions.setValues:13
+#: abaqus.Print.PrintOptions.PrintOptions.vpBackground:1 of
 msgid ""
 "A Boolean specifying whether the output includes viewport backgrounds. "
 "The default value is OFF."
 msgstr ""
 
-#: abaqus.Print.PrintOptions.PrintOptions.setValues:23 of
-msgid "**compass**"
-msgstr ""
-
-#: abaqus.Print.PrintOptions.PrintOptions.setValues:22 of
+#: abaqus.Print.PrintOptions.PrintOptions.setValues:16 of
 msgid ""
 "A Boolean specifying whether the output includes the view compass The "
 "default value is OFF."
-msgstr ""
-
-#: abaqus.Print.PrintOptions.PrintOptions.setValues:27 of
-msgid "**printCommand**"
-msgstr ""
-
-#: abaqus.Print.PrintOptions.PrintOptions.setValues:32 of
-msgid "**deleteTemporaryFiles**"
-msgstr ""
-
-#: abaqus.Print.PrintOptions.PrintOptions.setValues:50 of
-msgid "**reduceColors**"
 msgstr ""
 
 #: ../../reference/session/print.rst:43
 msgid "PsOptions"
 msgstr ""
 
-#: abaqus.Print.PsOptions.PsOptions:2 of
+#: abaqus.Print.PsOptions.PsOptions:1 of
 msgid ""
 "The PsOptions object stores the settings that Abaqus uses when printing "
 "using PostScript format. The PsOptions object has no constructor. Abaqus "
 "creates the **psOptions** member when a session is started."
 msgstr ""
 
-#: abaqus.Print.PsOptions.PsOptions:12 of
+#: abaqus.Print.PsOptions.PsOptions:11 of
 msgid ""
 "Check `PsOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all>`__."
@@ -978,7 +839,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Print.PsOptions.PsOptions.setValues:2 of
+#: abaqus.Print.PsOptions.PsOptions.setValues:1 of
 msgid "This method modifies the PsOptions object."
 msgstr ""
 
@@ -988,95 +849,98 @@ msgid ""
 "<abaqus.Print.PsOptions.PsOptions.get_user_attributes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../docstring abaqus.Print.PsOptions.PsOptions.bottomMargin:2
-#: abaqus.Print.PsOptions.PsOptions.setValues:29 of
+#: ../../docstring abaqus.Print.PsOptions.PsOptions.bottomMargin:1
+#: abaqus.Print.PsOptions.PsOptions.setValues:24 of
 msgid ""
 "A Float specifying the bottom margin of the paper in inches. Possible "
 "values are **bottomMargin** ≥ 0. The default value is 0.5."
 msgstr ""
 
-#: ../../docstring abaqus.Print.PsOptions.PsOptions.leftMargin:2
-#: abaqus.Print.PsOptions.PsOptions.setValues:33 of
+#: ../../docstring abaqus.Print.PsOptions.PsOptions.leftMargin:1
+#: abaqus.Print.PsOptions.PsOptions.setValues:27 of
 msgid ""
 "A Float specifying the left margin of the paper in inches. Possible "
 "values are **leftMargin** ≥ 0. The default value is 0.5."
 msgstr ""
 
-#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:2
-#: abaqus.Print.PsOptions.PsOptions.setValues:10 of
+#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:1
+#: abaqus.Print.PsOptions.PsOptions.setValues:7 of
 msgid "A SymbolicConstant specifying the paper size. Possible values are:"
 msgstr ""
 
-#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:4
-#: abaqus.Print.PsOptions.PsOptions.setValues:12 of
+#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:3
+#: abaqus.Print.PsOptions.PsOptions.setValues:9 of
 msgid "LETTER"
 msgstr ""
 
-#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:5
-#: abaqus.Print.PsOptions.PsOptions.setValues:13 of
+#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:4
+#: abaqus.Print.PsOptions.PsOptions.setValues:10 of
 msgid "LEGAL"
 msgstr ""
 
-#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:6
-#: abaqus.Print.PsOptions.PsOptions.setValues:14 of
+#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:5
+#: abaqus.Print.PsOptions.PsOptions.setValues:11 of
 msgid "LEDGER"
 msgstr ""
 
-#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:7
-#: abaqus.Print.PsOptions.PsOptions.setValues:15 of
+#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:6
+#: abaqus.Print.PsOptions.PsOptions.setValues:12 of
 msgid "A0"
 msgstr ""
 
-#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:8
-#: abaqus.Print.PsOptions.PsOptions.setValues:16 of
+#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:7
+#: abaqus.Print.PsOptions.PsOptions.setValues:13 of
 msgid "A1"
 msgstr ""
 
-#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:9
-#: abaqus.Print.PsOptions.PsOptions.setValues:17 of
+#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:8
+#: abaqus.Print.PsOptions.PsOptions.setValues:14 of
 msgid "A2"
 msgstr ""
 
-#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:10
-#: abaqus.Print.PsOptions.PsOptions.setValues:18 of
+#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:9
+#: abaqus.Print.PsOptions.PsOptions.setValues:15 of
 msgid "A3"
 msgstr ""
 
-#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:11
-#: abaqus.Print.PsOptions.PsOptions.setValues:19 of
+#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:10
+#: abaqus.Print.PsOptions.PsOptions.setValues:16 of
 msgid "A4"
 msgstr ""
 
-#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:12
-#: abaqus.Print.PsOptions.PsOptions.setValues:20 of
+#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:11
+#: abaqus.Print.PsOptions.PsOptions.setValues:17 of
 msgid "A5"
 msgstr ""
 
-#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:14
-#: abaqus.Print.PsOptions.PsOptions.setValues:22 of
+#: ../../docstring abaqus.Print.PsOptions.PsOptions.paperSize:13
+#: abaqus.Print.PsOptions.PsOptions.setValues:19 of
 msgid "The default value is LETTER."
 msgstr ""
 
-#: ../../docstring abaqus.Print.PsOptions.PsOptions.rightMargin:2
-#: abaqus.Print.PsOptions.PsOptions.setValues:37 of
+#: ../../docstring abaqus.Print.PsOptions.PsOptions.rightMargin:1
+#: abaqus.Print.PsOptions.PsOptions.setValues:30 of
 msgid ""
 "A Float specifying the right margin of the paper in inches. Possible "
 "values are **rightMargin** ≥ 0. The default value is 0.5."
 msgstr ""
 
-#: abaqus.Print.PsOptions.PsOptions.setValues:5 of
+#: abaqus.Print.PsOptions.PsOptions.setValues:4 of
 msgid ""
 "Check `PsOptions.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all"
 "#simaker-psoptionssetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.Print.PsOptions.PsOptions.setValues:22 of
-msgid "**paperSize**"
+#: abaqus.Print.PsOptions.PsOptions.setValues:7 of
+msgid ""
+"A SymbolicConstant specifying the paper size. Possible values are:  - "
+"LETTER - LEGAL - LEDGER - A0 - A1 - A2 - A3 - A4 - A5  The default value "
+"is LETTER."
 msgstr ""
 
-#: ../../docstring abaqus.Print.PsOptions.PsOptions.setValues:25
-#: abaqus.Print.PsOptions.PsOptions.topMargin:2 of
+#: ../../docstring abaqus.Print.PsOptions.PsOptions.setValues:21
+#: abaqus.Print.PsOptions.PsOptions.topMargin:1 of
 msgid ""
 "A Float specifying the top margin of the paper in inches. Possible values"
 " are **topMargin** ≥ 0. The default value is 0.5."
@@ -1086,14 +950,14 @@ msgstr ""
 msgid "SvgOptions"
 msgstr ""
 
-#: abaqus.Print.SvgOptions.SvgOptions:2 of
+#: abaqus.Print.SvgOptions.SvgOptions:1 of
 msgid ""
 "The SvgOptions object stores the settings that Abaqus uses when printing "
 "in SVG format. The SvgOptions object has no constructor. Abaqus creates "
 "the **svgOptions** member when a session is started."
 msgstr ""
 
-#: abaqus.Print.SvgOptions.SvgOptions:12 of
+#: abaqus.Print.SvgOptions.SvgOptions:11 of
 msgid ""
 "Check `SvgOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all>`__."
@@ -1110,7 +974,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Print.SvgOptions.SvgOptions.setValues:2 of
+#: abaqus.Print.SvgOptions.SvgOptions.setValues:1 of
 msgid "This method modifies the SvgOptions object."
 msgstr ""
 
@@ -1120,8 +984,8 @@ msgid ""
 "<abaqus.Print.SvgOptions.SvgOptions.get_user_attributes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../docstring abaqus.Print.SvgOptions.SvgOptions.imageSize:2
-#: abaqus.Print.SvgOptions.SvgOptions.setValues:10 of
+#: ../../docstring abaqus.Print.SvgOptions.SvgOptions.imageSize:1
+#: abaqus.Print.SvgOptions.SvgOptions.setValues:7 of
 msgid ""
 "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the "
 "width and height of the image in pixels. Possible values are (*minWidth*,"
@@ -1135,7 +999,7 @@ msgid ""
 "the screen dimensions."
 msgstr ""
 
-#: abaqus.Print.SvgOptions.SvgOptions.setValues:5 of
+#: abaqus.Print.SvgOptions.SvgOptions.setValues:4 of
 msgid ""
 "Check `SvgOptions.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all"
@@ -1299,5 +1163,124 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "This object can be accessed by:"
+#~ msgstr ""
+
+#~ msgid "**imageSize**"
+#~ msgstr ""
+
+#~ msgid "**units**"
+#~ msgstr ""
+
+#~ msgid "**resolution**"
+#~ msgstr ""
+
+#~ msgid "**fontType**"
+#~ msgstr ""
+
+#~ msgid "**imageFormat**"
+#~ msgstr ""
+
+#~ msgid "**shadingQuality**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "RangeError: :obj:`imageSize` :obj:`must` :obj:`be`"
+#~ " :obj:`SIZE_ON_SCREEN` or :obj:`a` "
+#~ ":term:`python:sequence` :obj:`of` 2 :obj:`Floats`"
+#~ " >= (*minWidth*, **minHeight**)"
+#~ msgstr ""
+
+#~ msgid "**quality**"
+#~ msgstr ""
+
+#~ msgid "**topMargin**"
+#~ msgstr ""
+
+#~ msgid "**bottomMargin**"
+#~ msgstr ""
+
+#~ msgid "**leftMargin**"
+#~ msgstr ""
+
+#~ msgid "**rightMargin**"
+#~ msgstr ""
+
+#~ msgid "**orientation**"
+#~ msgstr ""
+
+#~ msgid "**logo**"
+#~ msgstr ""
+
+#~ msgid "**date**"
+#~ msgstr ""
+
+#~ msgid ":obj:`RangeError`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note: The minimum value of width "
+#~ "and height (*minWidth* and **minHeight**) "
+#~ "is 10 mm (approximately 0.4 inches)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "RangeError: :obj:`leftMargin` :obj:`and` "
+#~ ":obj:`rightMargin` :obj:`must` :obj:`produce` "
+#~ ":obj:`image` :obj:`width` >= :obj:`minWidth`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "RangeError: :obj:`topMargin` :obj:`and` "
+#~ ":obj:`bottomMargin` :obj:`must` :obj:`produce` "
+#~ ":obj:`image` :obj:`height` >= :obj:`minHeight`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "RangeError: :obj:`imageSize` :obj:`must` :obj:`be`"
+#~ " :obj:`SIZE_ON_SCREEN` or :obj:`a` "
+#~ ":term:`python:sequence` :obj:`of` 2 :obj:`Ints` "
+#~ ":obj:`in` :obj:`the` :obj:`range`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "(:obj:`minWidth`, :obj:`minHeight`) <= "
+#~ "(:obj:`width`, :obj:`height`) <= (:obj:`maxWidth`,"
+#~ " :obj:`maxHeight`)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If either the width or height "
+#~ "arguments of **imageSize** are out of"
+#~ " range (where **minWidth** and "
+#~ "**minHeight** are the number of pixels"
+#~ " corresponding to approximately 10 mm "
+#~ "for a given display and **maxWidth** "
+#~ "and **maxHeight** are the largest "
+#~ "allowable number of pixels supported by"
+#~ " the system graphics)."
+#~ msgstr ""
+
+#~ msgid "**rendition**"
+#~ msgstr ""
+
+#~ msgid "**vpDecorations**"
+#~ msgstr ""
+
+#~ msgid "**vpBackground**"
+#~ msgstr ""
+
+#~ msgid "**compass**"
+#~ msgstr ""
+
+#~ msgid "**printCommand**"
+#~ msgstr ""
+
+#~ msgid "**deleteTemporaryFiles**"
+#~ msgstr ""
+
+#~ msgid "**reduceColors**"
+#~ msgstr ""
+
+#~ msgid "**paperSize**"
 #~ msgstr ""
 

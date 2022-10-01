@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022.3.5 (dev)\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-29 00:21+0000\n"
+"POT-Creation-Date: 2022-10-01 00:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,19 +28,19 @@ msgstr ""
 msgid "Create field reports in Session"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:2
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:1
 msgid "This method writes a FieldOutput object to a user-defined ASCII file."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:5
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:5
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:5
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:5
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:5
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:4
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:4
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:4
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:4
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:4
 msgid "This function can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:10
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:9
 msgid "Check `FieldReportSession.writeFieldReport on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldreportsessionpyc.htm?contextscope=all#simaker-fieldreportsessionwritefieldreportpyc>`__."
 msgstr ""
 
@@ -54,212 +54,129 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:15
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:15
-msgid "**filename**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:15
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:15
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:12
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:12
 msgid "A String specifying the name of the file to which field output will be written."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:19
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:19
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:19
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:19
-msgid "**append**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:18
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:18
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:14
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:14
 msgid "A Boolean specifying whether to append the field output to an existing file. The default value is ON."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:22
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:22
-msgid "**sortItem**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:22
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:22
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:17
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:17
 msgid "A String specifying the item by which to sort the tabular values."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:25
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:35
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:25
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:35
-msgid "**odb**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:25
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:25
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:19
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:19
 msgid "An :py:class:`~abaqus.Odb.Odb.Odb` object from which to obtain field output values."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:29
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:23
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:29
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:23
-msgid "**step**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:28
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:28
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:21
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:21
 msgid "An Int (or stepIndex) specifying the step from which to obtain field output values. Possible values are 0 ≤ **step** ≤ (*numSteps* − 1)."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:33
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:27
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:33
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:27
-msgid "**frame**"
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:24
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:24
+msgid "An Int (or frameIndex) specifying the frame from which to obtain field output values. Possible values are 0 ≤ **frame** ≤ (*numFramesInStep* − 1)."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:32
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:32
-msgid "An Int (or frameIndex) specifying the frame from which to obtain field output values. Possible values are 0 ≤ **frame** ≤ (*numFramesInStep* − 1)."
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:27
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:27
+msgid "A SymbolicConstant specifying the position from which to obtain data. Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE, ELEMENT_NODAL, ELEMENT_CENTROID, WHOLE_ELEMENT, WHOLE_REGION, WHOLE_PART_INSTANCE, WHOLE_MODEL, and GENERAL_PARTICLE."
+msgstr ""
+
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:31
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:31
+msgid "A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the subset of the model for which to obtain data."
+msgstr ""
+
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:33
+msgid "A sequence of variable description sequences specifying one or more field output variables for which to obtain data. Each variable description sequence contains the following elements:  - **element0**: A String specifying the name of the variable. - **element1**: A SymbolicConstant specifying the output position at which to report data.   Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE,   INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and   WHOLE_REGION. - **element2**: A Sequence of tuples each consisting of a SymbolicConstant specifying the   refinement (COMPONENT or INVARIANT), followed by a String specifying the name of a   component or invariant for which to obtain values.   If this element is omitted, data are written for all components and invariants (if   applicable). This element is required if **element3** (the following element in the tuple)   is included. - **element3 (if applicable)**: A Dictionary with a String key and a String value   specifying a single section point at which to report data. The key specifies a region in   the model; the corresponding value specifies a section point within that region. For   example::        {'shell < MAT > < 7 section points >': 'SPOS (fraction = 1.0)'}    If this element is omitted, data are written for all section points (if applicable).   If this element is omitted, data are written for all section points (if applicable)."
+msgstr ""
+
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:33
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:33
+msgid "A sequence of variable description sequences specifying one or more field output variables for which to obtain data. Each variable description sequence contains the following elements:"
+msgstr ""
+
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:37
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:37
+msgid "**element0**: A String specifying the name of the variable."
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:38
 #: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:38
-msgid "**outputPosition**"
+msgid "**element1**: A SymbolicConstant specifying the output position at which to report data. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and WHOLE_REGION."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:36
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:36
-msgid "A SymbolicConstant specifying the position from which to obtain data. Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE, ELEMENT_NODAL, ELEMENT_CENTROID, WHOLE_ELEMENT, WHOLE_REGION, WHOLE_PART_INSTANCE, WHOLE_MODEL, and GENERAL_PARTICLE."
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:41
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:41
-msgid "**displayGroup**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:41
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:41
-msgid "A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the subset of the model for which to obtain data."
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:67
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:67
-msgid "**variable**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:44
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:44
-msgid "A sequence of variable description sequences specifying one or more field output variables for which to obtain data. Each variable description sequence contains the following elements:"
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:42
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:42
+msgid "**element2**: A Sequence of tuples each consisting of a SymbolicConstant specifying the refinement (COMPONENT or INVARIANT), followed by a String specifying the name of a component or invariant for which to obtain values. If this element is omitted, data are written for all components and invariants (if applicable). This element is required if **element3** (the following element in the tuple) is included."
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:48
 #: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:48
-msgid "**element0**: A String specifying the name of the variable."
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:49
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:49
-msgid "**element1**: A SymbolicConstant specifying the output position at which to report data. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and WHOLE_REGION."
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:53
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:53
-msgid "**element2**: A Sequence of tuples each consisting of a SymbolicConstant specifying the refinement (COMPONENT or INVARIANT), followed by a String specifying the name of a component or invariant for which to obtain values. If this element is omitted, data are written for all components and invariants (if applicable). This element is required if **element3** (the following element in the tuple) is included."
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:59
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:59
 msgid "**element3 (if applicable)**: A Dictionary with a String key and a String value specifying a single section point at which to report data. The key specifies a region in the model; the corresponding value specifies a section point within that region. For example::"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:66
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:66
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:55
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:55
 msgid "If this element is omitted, data are written for all section points (if applicable). If this element is omitted, data are written for all section points (if applicable)."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:72
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:72
-msgid "**numericForm**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:70
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:70
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:58
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:58
 msgid "A SymbolicConstant specifying the numeric form in which to display results that contain complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, and COMPLEX_MAG_AT_ANGLE. The initial value is COMPLEX_MAGNITUDE."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:76
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:76
-msgid "**complexAngle**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:75
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:75
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:62
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:62
 msgid "A Float specifying the angle (in degrees) at which to display results that contain complex numbers when **numericForm** = COMPLEX_MAG_AT_ANGLE. The initial value is 0."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:94
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:32
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:94
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:32
-msgid "**stepFrame**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:79
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:30
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:79
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:30
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:65
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:23
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:65
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:23
 msgid "A SymbolicConstant indicating whether to obtain the values from the specified frame or from all active frames. Possible values are SPECIFY and ALL. The default value is SPECIFY."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:2
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:2
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:1
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:1
 msgid "This method writes a FreeBody object to a user-defined ASCII file."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:10
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:9
 msgid "Check `FieldReportSession.writeFreeBodyReport on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldreportsessionpyc.htm?contextscope=all#simaker-fieldreportsessionwritefreebodyreportpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:15
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:15
-msgid "**fileName**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:15
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:15
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:12
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:12
 msgid "A String specifying the name of the file to which the free body output will be written."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:18
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:18
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:14
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:14
 msgid "A Boolean specifying whether to append the free body output to an existing file. The default value is ON."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:22
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:22
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:17
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:17
 msgid "An Int identifying the step from which to obtain values. The default value is the current step."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:26
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:26
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:20
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:20
 msgid "An Int identifying the frame from which to obtain values. The default value is the current frame."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:35
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:35
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:27
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:27
 msgid "An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read."
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:0
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:0
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:0
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:0
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:0
-msgid "Returns"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:0
-msgid "Raises"
 msgstr ""
 
 #: ../../reference/session/field_report.rst:16
@@ -270,18 +187,18 @@ msgstr ""
 msgid "FieldReportOptions"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:2
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:1
 msgid "The FieldReportOptions object stores settings used by the writeFieldReport method when you write a FieldOutput object to an ASCII file. The FieldReportOptions object has no constructor. Abaqus creates the **fieldReportOptions** member when you import the Visualization module."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:8
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:8
-#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:7
-#: ../../../../src/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:6
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:7
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:7
+#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:6
+#: ../../../../src/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:5
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:15
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:14
 msgid "Check `FieldReportOptions on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldreportoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -294,7 +211,7 @@ msgid ":py:obj:`numberFormat <abaqus.FieldReport.FieldReportOptions.FieldReportO
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: ../../docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.numberFormat:2
+#: ../../docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.numberFormat:1
 msgid "Format of the number"
 msgstr ""
 
@@ -308,7 +225,7 @@ msgstr ""
 msgid ":py:obj:`setValues <abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues>`\\ \\(numColumns\\, numberFormat\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:2
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:1
 #: ../../None:4:<autosummary>:1
 msgid "This method modifies the FieldReportOptions object."
 msgstr ""
@@ -317,154 +234,116 @@ msgstr ""
 msgid ":py:obj:`NumberFormat <abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat>`\\ \\(\\[blankPad\\, format\\, numDigits\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:2
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a NumberFormat object."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:12
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:11
 msgid "Check `NumberFormat on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-numberformatpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:19
-msgid "**blankPad**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:17
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:14
 msgid "A Boolean specifying whether the printed digits should be padded with blank characters to ensure equal sized fields. The **blankPad** argument is useful when your printed output includes columns. The default value is ON."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:23
-msgid "**format**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:22
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:18
 msgid "A SymbolicConstant specifying the formatting type. Possible values are ENGINEERING, SCIENTIFIC, and AUTOMATIC. The default value is ENGINEERING."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:27
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:10
-msgid "**numDigits**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:26
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:21
 msgid "An Int specifying the number of digits to be displayed in the result. **numDigits** >0>0. The default value is 6."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:32
-msgid "**precision**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:30
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:24
 msgid "An Int specifying the number of decimal places to which the number is to be truncated for display. **precision** ≤0≤0. If **precision** =0, no truncation is applied. The default value is 0."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:49
-msgid ":obj:`NumberFormat`"
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:0
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:0
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:0
+msgid "Returns"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:37
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:28
 msgid "A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:5
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:0
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:0
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:0
+msgid "Return type"
+msgstr ""
+
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:29
+msgid ":class:`NumberFormat`"
+msgstr ""
+
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:4
 msgid "Check `FieldReportOptions.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldreportoptionspyc.htm?contextscope=all#simaker-fieldreportoptionssetvaluespyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:11
-msgid "**numColumns**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:10
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:7
 msgid "An Int specifying the number of columns to display for the tabular report. The default value is 80."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:15
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:20
-msgid "**numberFormat**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:14
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:10
 msgid "A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object specifying the format type, number of digits and precision used to print the numeric output."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:19
-msgid "**printXYData**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:18
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:13
 msgid "A Boolean specifying whether to include **X - Y** data values in the tabular report. The default value is ON."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:23
-msgid "**printTotal**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:22
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:16
 msgid "A Boolean specifying whether to include column totals in the tabular report. The default value is ON."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:27
-msgid "**printMinMax**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:26
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:19
 msgid "A Boolean specifying whether to include column summary minimum and maximum values in the tabular report. The default value is ON."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:31
-msgid "**pageWidth**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:30
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:22
 msgid "A SymbolicConstant specifying how the width of the tabular report is to be determined. Possible values are NO_LIMIT and SPECIFY. The default value is NO_LIMIT."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:35
-msgid "**columnLayout**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:34
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:25
 msgid "A SymbolicConstant specifying how values are to be presented in the tabular report. Possible values are SINGLE_TABLE and SEPARATE_TABLES. The default value is SINGLE_TABLE."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:40
-msgid "**sort**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:38
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:28
 msgid "A SymbolicConstant specifying the order in which values are to be sorted within a tabular report. Possible values are ASCENDING and DESCENDING. The default value is ASCENDING."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:47
-msgid "**printLocalCSYS**"
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:32
+msgid "A Boolean specifying whether to include the local coordinate system values in the tabular report. The default value is OFF.  .. versionadded:: 2022     The `printLocalCSYS` argument was added."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:43
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:32
 msgid "A Boolean specifying whether to include the local coordinate system values in the tabular report. The default value is OFF."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:46
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:35
 msgid "The `printLocalCSYS` argument was added."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:64
-msgid ":obj:`FieldReportOptions`"
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:38
+msgid "A :py:class:`~abaqus.FieldReport.FieldReportOptions.FieldReportOptions` object."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:52
-msgid "A :py:class:`~abaqus.FieldReport.FieldReportOptions.FieldReportOptions` object."
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:39
+msgid ":class:`FieldReportOptions`"
 msgstr ""
 
 #: ../../reference/session/field_report.rst:27
 msgid "FreeBodyReportOptions"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:2
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:1
 msgid "The FreeBodyReportOptions object stores settings used by the writeFreeBodyReport method when you write free body computational results to an ASCII file. The FreeBodyReportOptions object has no constructor. Abaqus creates the **freeBodyReportOptions** member when you import the Visualization module."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:15
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:14
 msgid "Check `FreeBodyReportOptions on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodyreportoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -472,77 +351,61 @@ msgstr ""
 msgid ":py:obj:`setValues <abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues>`\\ \\(\\[numDigits\\, forceThreshold\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:2
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:1
 #: ../../None:3:<autosummary>:1
 msgid "This method modifies the FreeBodyReportOptions object."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:5
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:4
 msgid "Check `FreeBodyReportOptions.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodyreportoptionspyc.htm?contextscope=all#simaker-freebodyreportoptionssetvaluespyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:10
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:7
 msgid "An Int specifying the number of decimal places. The default value is 3."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:13
-msgid "**forceThreshold**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:13
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:9
 msgid "A Float specifying the threshold value for force. The default value is 10-6."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:16
-msgid "**momentThreshold**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:16
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:11
 msgid "A Float specifying the threshold value for moment. The default value is 10-6."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:19
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:13
 msgid "A SymbolicConstant specifying the number format. Possible values are SCIENTIFIC, FIXED, and ENGINEERING. The default value is SCIENTIFIC."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:24
-msgid "**reportFormat**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:23
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:16
 msgid "A SymbolicConstant specifying the report format. Possible values are NORMAL_ANNOTATED and COMMA_SEPARATED_VALUES. The default value is NORMAL_ANNOTATED."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:28
-msgid "**csysType**"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:27
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:19
 msgid "A SymbolicConstant specifying the coordinate system type. Possible values are GLOBAL and LOCAL. The default value is GLOBAL."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:45
-msgid ":obj:`FreeBodyReportOptions`"
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:22
+msgid "A :py:class:`~abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions` object."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:33
-msgid "A :py:class:`~abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions` object."
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:23
+msgid ":class:`FreeBodyReportOptions`"
 msgstr ""
 
 #: ../../reference/session/field_report.rst:35
 msgid "OdbFieldVarList"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:2
+#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:1
 msgid "The read-only OdbFieldVarList object is a sequence listing all variables available for the current step and frame. Each item in the sequence is itself a sequence fully describing the given variable."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:14
+#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:13
 msgid "Check `OdbFieldVarList on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbfieldvarlistpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__repr__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__repr__>`\\ \\(\\/\\)"
+msgid ":py:obj:`__repr__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__repr__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -606,7 +469,7 @@ msgid "Return self>=value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__iter__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__iter__>`\\ \\(\\/\\)"
+msgid ":py:obj:`__iter__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__iter__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -618,7 +481,7 @@ msgid ":py:obj:`__init__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__i
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__len__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__len__>`\\ \\(\\/\\)"
+msgid ":py:obj:`__len__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__len__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -698,7 +561,7 @@ msgid "Implement self*=value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__reversed__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__reversed__>`\\ \\(\\/\\)"
+msgid ":py:obj:`__reversed__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__reversed__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -706,7 +569,7 @@ msgid "Return a reverse iterator over the list."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__sizeof__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__sizeof__>`\\ \\(\\/\\)"
+msgid ":py:obj:`__sizeof__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__sizeof__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -714,7 +577,7 @@ msgid "Return the size of the list in memory, in bytes."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`clear <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.clear>`\\ \\(\\/\\)"
+msgid ":py:obj:`clear <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.clear>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -722,7 +585,7 @@ msgid "Remove all items from list."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`copy <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.copy>`\\ \\(\\/\\)"
+msgid ":py:obj:`copy <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.copy>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -786,7 +649,7 @@ msgid "Return number of occurrences of value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`reverse <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.reverse>`\\ \\(\\/\\)"
+msgid ":py:obj:`reverse <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.reverse>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -831,11 +694,11 @@ msgstr ""
 msgid "OdbModelFieldVarList"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:2
+#: ../../../../src/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:1
 msgid "The read-only OdbModelFieldVarList object lists all variables available for the model in the current OdbDisplay object."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:13
+#: ../../../../src/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:12
 msgid "Check `OdbModelFieldVarList on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbmodelfieldvarlistpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -843,18 +706,22 @@ msgstr ""
 msgid "writeFieldReport"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:2
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:1
 msgid "This function writes a FieldOutput object to a user-defined ASCII file."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:10
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:9
 msgid "Check `writeFieldReport.writeFieldReport on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionwritefieldreportpyc.htm?contextscope=all#simaker-functionwritefieldreportwritefieldreportpyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:33
+msgid "A sequence of variable description sequences specifying one or more field output variables for which to obtain data. Each variable description sequence contains the following elements:  - **element0**: A String specifying the name of the variable. - **element1**: A SymbolicConstant specifying the output position at which to report data.   Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE,   INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and   WHOLE_REGION. - **element2**: A Sequence of tuples each consisting of a SymbolicConstant specifying the   refinement (COMPONENT or INVARIANT), followed by a String specifying the name of a   component or invariant for which to obtain values.   If this element is omitted, data are written for all components and invariants (if   applicable). This element is required if **element3** (the following element in the tuple)   is included. - **element3 (if applicable)**: A Dictionary with a String key and a String value   specifying a single section point at which to report data. The key specifies a region in   the model; the corresponding value specifies a section point within that region. For   example::      {'shell < MAT > < 7 section points >': 'SPOS (fraction = 1.0)'}    If this element is omitted, data are written for all section points (if applicable).   If this element is omitted, data are written for all section points (if applicable)."
 msgstr ""
 
 #: ../../reference/session/field_report.rst:57
 msgid "writeFreeBodyReport"
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:10
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:9
 msgid "Check `writeFreeBodyReport.writeFreeBodyReport on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionwritefreebodyreportpyc.htm?contextscope=all#simaker-functionwritefreebodyreportwritefreebodyreportpyc>`__."
 msgstr ""
