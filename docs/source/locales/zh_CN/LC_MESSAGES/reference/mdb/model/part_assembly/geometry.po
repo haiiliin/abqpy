@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-28 00:22+0000\n"
+"POT-Creation-Date: 2022-10-01 00:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,26 +35,26 @@ msgstr ""
 msgid "Cell"
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell:2 of
+#: abaqus.BasicGeometry.Cell.Cell:1 of
 msgid "Cells are volumetric regions of geometry."
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell:5 abaqus.BasicGeometry.CellArray.CellArray:5
-#: abaqus.BasicGeometry.Edge.Edge:5 abaqus.BasicGeometry.EdgeArray.EdgeArray:6
-#: abaqus.BasicGeometry.Face.Face:5 abaqus.BasicGeometry.FaceArray.FaceArray:6
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge:6
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray:6
-#: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex:6
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray:6
-#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:10
-#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint:7
-#: abaqus.BasicGeometry.Transform.Transform:7
-#: abaqus.BasicGeometry.Vertex.Vertex:5
-#: abaqus.BasicGeometry.VertexArray.VertexArray:6 of
+#: abaqus.BasicGeometry.Cell.Cell:4 abaqus.BasicGeometry.CellArray.CellArray:4
+#: abaqus.BasicGeometry.Edge.Edge:4 abaqus.BasicGeometry.EdgeArray.EdgeArray:5
+#: abaqus.BasicGeometry.Face.Face:4 abaqus.BasicGeometry.FaceArray.FaceArray:5
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge:5
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray:5
+#: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex:5
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray:5
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:9
+#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint:6
+#: abaqus.BasicGeometry.Transform.Transform:6
+#: abaqus.BasicGeometry.Vertex.Vertex:4
+#: abaqus.BasicGeometry.VertexArray.VertexArray:5 of
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell:23 of
+#: abaqus.BasicGeometry.Cell.Cell:22 of
 msgid ""
 "Check `Cell on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cellpyc.htm?contextscope=all>`__."
@@ -72,7 +72,7 @@ msgid ":py:obj:`index <abaqus.BasicGeometry.Cell.Cell.index>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Cell.Cell.index:2 of
+#: abaqus.BasicGeometry.Cell.Cell.index:1 of
 msgid "An Int specifying the index of the cell in the CellArray."
 msgstr ""
 
@@ -81,7 +81,7 @@ msgid ":py:obj:`isReferenceRep <abaqus.BasicGeometry.Cell.Cell.isReferenceRep>`\
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Cell.Cell.isReferenceRep:2 of
+#: abaqus.BasicGeometry.Cell.Cell.isReferenceRep:1 of
 msgid ""
 "A Boolean specifying whether the cell belongs to the reference "
 "representation of the Part or Instance."
@@ -92,7 +92,7 @@ msgid ":py:obj:`pointOn <abaqus.BasicGeometry.Cell.Cell.pointOn>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Cell.Cell.pointOn:2 of
+#: abaqus.BasicGeometry.Cell.Cell.pointOn:1 of
 msgid ""
 "A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of"
 " a point located on the cell."
@@ -103,7 +103,7 @@ msgid ":py:obj:`featureName <abaqus.BasicGeometry.Cell.Cell.featureName>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Cell.Cell.featureName:2 of
+#: abaqus.BasicGeometry.Cell.Cell.featureName:1 of
 msgid ""
 "A tuple of Floats specifying the name of the feature that created this "
 "cell."
@@ -114,7 +114,7 @@ msgid ":py:obj:`instanceName <abaqus.BasicGeometry.Cell.Cell.instanceName>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Cell.Cell.instanceName:2 of
+#: abaqus.BasicGeometry.Cell.Cell.instanceName:1 of
 msgid ""
 "A tuple of Floats specifying the name of the part instance for this cell "
 "(if applicable)."
@@ -140,7 +140,7 @@ msgid ""
 "\\(\\[printResults\\]\\)"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1 abaqus.BasicGeometry.Cell.Cell.getSize:2 of
+#: ../../None:10:<autosummary>:1 abaqus.BasicGeometry.Cell.Cell.getSize:1 of
 msgid "This method returns a Float indicating the volume of the cell."
 msgstr ""
 
@@ -148,7 +148,7 @@ msgstr ""
 msgid ":py:obj:`getFaces <abaqus.BasicGeometry.Cell.Cell.getFaces>`\\ \\(\\)"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1 abaqus.BasicGeometry.Cell.Cell.getFaces:2 of
+#: ../../None:10:<autosummary>:1 abaqus.BasicGeometry.Cell.Cell.getFaces:1 of
 msgid ""
 "This method returns a sequence consisting of the face IDs of the faces "
 "which bound the cell."
@@ -158,7 +158,7 @@ msgstr ""
 msgid ":py:obj:`getEdges <abaqus.BasicGeometry.Cell.Cell.getEdges>`\\ \\(\\)"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1 abaqus.BasicGeometry.Cell.Cell.getEdges:2 of
+#: ../../None:10:<autosummary>:1 abaqus.BasicGeometry.Cell.Cell.getEdges:1 of
 msgid ""
 "This method returns a sequence consisting of the edge IDs of the edges on"
 " the cell."
@@ -170,7 +170,7 @@ msgid ""
 "\\(\\)"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1 abaqus.BasicGeometry.Cell.Cell.getVertices:2
+#: ../../None:10:<autosummary>:1 abaqus.BasicGeometry.Cell.Cell.getVertices:1
 #: of
 msgid ""
 "This method returns a sequence consisting of the vertex IDs of the "
@@ -184,7 +184,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-#: abaqus.BasicGeometry.Cell.Cell.getAdjacentCells:2 of
+#: abaqus.BasicGeometry.Cell.Cell.getAdjacentCells:1 of
 msgid ""
 "This method returns an array of cell objects that share at least one face"
 " of the cell."
@@ -194,7 +194,7 @@ msgstr ""
 msgid ":py:obj:`getNodes <abaqus.BasicGeometry.Cell.Cell.getNodes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1 abaqus.BasicGeometry.Cell.Cell.getNodes:2 of
+#: ../../None:10:<autosummary>:1 abaqus.BasicGeometry.Cell.Cell.getNodes:1 of
 msgid ""
 "This method returns an array of node objects that are associated with the"
 " cell."
@@ -206,7 +206,7 @@ msgid ""
 "\\(\\)"
 msgstr ""
 
-#: ../../None:10:<autosummary>:1 abaqus.BasicGeometry.Cell.Cell.getElements:2
+#: ../../None:10:<autosummary>:1 abaqus.BasicGeometry.Cell.Cell.getElements:1
 #: of
 msgid ""
 "This method returns an array of element objects that are associated with "
@@ -220,7 +220,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-#: abaqus.BasicGeometry.Cell.Cell.getCADAttributes:2 of
+#: abaqus.BasicGeometry.Cell.Cell.getCADAttributes:1 of
 msgid ""
 "This method returns an array of CAD attribute strings associated with the"
 " cell when the part was created from CAD data."
@@ -310,84 +310,167 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell.getAdjacentCells:21
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:42
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:36
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:31 of
-msgid ":obj:`CellArray`"
-msgstr ""
-
-#: abaqus.BasicGeometry.Cell.Cell.getAdjacentCells:9 of
+#: abaqus.BasicGeometry.Cell.Cell.getAdjacentCells:3 of
 msgid ""
 "A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object which is a"
 " sequence of Cell objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell.getCADAttributes:22
-#: abaqus.BasicGeometry.Face.Face.getCADAttributes:22 of
-msgid ":obj:`typing.List`\\[:class:`python:str`]"
+#: abaqus.BasicGeometry.Cell.Cell.getAdjacentCells
+#: abaqus.BasicGeometry.Cell.Cell.getCADAttributes
+#: abaqus.BasicGeometry.Cell.Cell.getEdges
+#: abaqus.BasicGeometry.Cell.Cell.getElements
+#: abaqus.BasicGeometry.Cell.Cell.getFaces
+#: abaqus.BasicGeometry.Cell.Cell.getNodes
+#: abaqus.BasicGeometry.Cell.Cell.getSize
+#: abaqus.BasicGeometry.Cell.Cell.getVertices
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt
+#: abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere
+#: abaqus.BasicGeometry.CellArray.CellArray.getExteriorFaces
+#: abaqus.BasicGeometry.CellArray.CellArray.getMask
+#: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask
+#: abaqus.BasicGeometry.Edge.Edge.getAdjacentEdges
+#: abaqus.BasicGeometry.Edge.Edge.getCurvature
+#: abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle
+#: abaqus.BasicGeometry.Edge.Edge.getElements
+#: abaqus.BasicGeometry.Edge.Edge.getFaces
+#: abaqus.BasicGeometry.Edge.Edge.getNodes
+#: abaqus.BasicGeometry.Edge.Edge.getRadius
+#: abaqus.BasicGeometry.Edge.Edge.getSize
+#: abaqus.BasicGeometry.Edge.Edge.getVertices
+#: abaqus.BasicGeometry.Edge.Edge.isTangentFlipped
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getMask
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask
+#: abaqus.BasicGeometry.Face.Face.getAdjacentFaces
+#: abaqus.BasicGeometry.Face.Face.getCADAttributes
+#: abaqus.BasicGeometry.Face.Face.getCells
+#: abaqus.BasicGeometry.Face.Face.getCentroid
+#: abaqus.BasicGeometry.Face.Face.getCurvature
+#: abaqus.BasicGeometry.Face.Face.getElementFaces
+#: abaqus.BasicGeometry.Face.Face.getElements
+#: abaqus.BasicGeometry.Face.Face.getFacesByCurvature
+#: abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle
+#: abaqus.BasicGeometry.Face.Face.getNodes
+#: abaqus.BasicGeometry.Face.Face.getNormal
+#: abaqus.BasicGeometry.Face.Face.getSize
+#: abaqus.BasicGeometry.Face.Face.getVertices
+#: abaqus.BasicGeometry.Face.Face.isNormalFlipped
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getExteriorEdges
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getMask
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getRadius
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getMask
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getSequenceFromMask
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getMask
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask
+#: abaqus.BasicGeometry.Transform.Transform.matrix
+#: abaqus.BasicGeometry.Vertex.Vertex.getEdges
+#: abaqus.BasicGeometry.Vertex.Vertex.getElements
+#: abaqus.BasicGeometry.Vertex.Vertex.getNodes
+#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getMask
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask of
+msgid "Return type"
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell.getCADAttributes:10
-#: abaqus.BasicGeometry.Face.Face.getCADAttributes:10 of
+#: abaqus.BasicGeometry.Cell.Cell.getAdjacentCells:4
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:20
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:17
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:13 of
+msgid ":class:`CellArray`"
+msgstr ""
+
+#: abaqus.BasicGeometry.Cell.Cell.getCADAttributes:4
+#: abaqus.BasicGeometry.Face.Face.getCADAttributes:4 of
 msgid "An array of String."
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell.getEdges:21
-#: abaqus.BasicGeometry.Cell.Cell.getFaces:22
-#: abaqus.BasicGeometry.Cell.Cell.getVertices:21
-#: abaqus.BasicGeometry.Edge.Edge.getFaces:22
-#: abaqus.BasicGeometry.Edge.Edge.getVertices:24
-#: abaqus.BasicGeometry.Face.Face.getCells:22
-#: abaqus.BasicGeometry.Face.Face.getEdges:9
-#: abaqus.BasicGeometry.Face.Face.getVertices:21
-#: abaqus.BasicGeometry.Vertex.Vertex.getEdges:22 of
-msgid ":obj:`typing.Tuple`\\[:class:`python:int`, ...]"
+#: abaqus.BasicGeometry.Cell.Cell.getCADAttributes:5
+#: abaqus.BasicGeometry.Face.Face.getCADAttributes:5 of
+msgid ":class:`List[str]`"
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell.getEdges:9
-#: abaqus.BasicGeometry.Cell.Cell.getFaces:10
-#: abaqus.BasicGeometry.Cell.Cell.getVertices:9
-#: abaqus.BasicGeometry.Edge.Edge.getFaces:10
-#: abaqus.BasicGeometry.Edge.Edge.getVertices:12
-#: abaqus.BasicGeometry.Face.Face.getCells:10
-#: abaqus.BasicGeometry.Face.Face.getVertices:9
-#: abaqus.BasicGeometry.Vertex.Vertex.getEdges:10 of
+#: abaqus.BasicGeometry.Cell.Cell.getEdges:3
+#: abaqus.BasicGeometry.Cell.Cell.getFaces:4
+#: abaqus.BasicGeometry.Cell.Cell.getVertices:3
+#: abaqus.BasicGeometry.Edge.Edge.getFaces:4
+#: abaqus.BasicGeometry.Edge.Edge.getVertices:6
+#: abaqus.BasicGeometry.Face.Face.getCells:4
+#: abaqus.BasicGeometry.Face.Face.getVertices:3
+#: abaqus.BasicGeometry.Vertex.Vertex.getEdges:4 of
 msgid "A tuple of integers."
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell.getElements:21
-#: abaqus.BasicGeometry.Edge.Edge.getElements:21
-#: abaqus.BasicGeometry.Face.Face.getElements:21
-#: abaqus.BasicGeometry.Vertex.Vertex.getElements:21 of
-msgid ":obj:`MeshElementArray`"
+#: abaqus.BasicGeometry.Cell.Cell.getEdges:4
+#: abaqus.BasicGeometry.Cell.Cell.getFaces:5
+#: abaqus.BasicGeometry.Cell.Cell.getVertices:4
+#: abaqus.BasicGeometry.Edge.Edge.getFaces:5
+#: abaqus.BasicGeometry.Edge.Edge.getVertices:7
+#: abaqus.BasicGeometry.Face.Face.getCells:5
+#: abaqus.BasicGeometry.Face.Face.getEdges:3
+#: abaqus.BasicGeometry.Face.Face.getVertices:4
+#: abaqus.BasicGeometry.Vertex.Vertex.getEdges:5 of
+msgid ":class:`Tuple[int`, :class:`...]`"
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell.getElements:9
-#: abaqus.BasicGeometry.Edge.Edge.getElements:9
-#: abaqus.BasicGeometry.Face.Face.getElements:9
-#: abaqus.BasicGeometry.Vertex.Vertex.getElements:9 of
+#: abaqus.BasicGeometry.Cell.Cell.getElements:3
+#: abaqus.BasicGeometry.Edge.Edge.getElements:3
+#: abaqus.BasicGeometry.Face.Face.getElements:3
+#: abaqus.BasicGeometry.Vertex.Vertex.getElements:3 of
 msgid ""
 "A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object which"
 " is a sequence of MeshElement objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell.getNodes:21
-#: abaqus.BasicGeometry.Edge.Edge.getNodes:21
-#: abaqus.BasicGeometry.Face.Face.getNodes:32
-#: abaqus.BasicGeometry.Vertex.Vertex.getNodes:21 of
-msgid ":obj:`MeshNodeArray`"
+#: abaqus.BasicGeometry.Cell.Cell.getElements:4
+#: abaqus.BasicGeometry.Edge.Edge.getElements:4
+#: abaqus.BasicGeometry.Face.Face.getElements:4
+#: abaqus.BasicGeometry.Vertex.Vertex.getElements:4 of
+msgid ":class:`MeshElementArray`"
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell.getNodes:9
-#: abaqus.BasicGeometry.Face.Face.getNodes:20
-#: abaqus.BasicGeometry.Vertex.Vertex.getNodes:9 of
+#: abaqus.BasicGeometry.Cell.Cell.getNodes:3
+#: abaqus.BasicGeometry.Face.Face.getNodes:14
+#: abaqus.BasicGeometry.Vertex.Vertex.getNodes:3 of
 msgid ""
 "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object which is a "
 "sequence of MeshNode objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell.getSize:5 of
+#: abaqus.BasicGeometry.Cell.Cell.getNodes:4
+#: abaqus.BasicGeometry.Edge.Edge.getNodes:4
+#: abaqus.BasicGeometry.Face.Face.getNodes:15
+#: abaqus.BasicGeometry.Vertex.Vertex.getNodes:4 of
+msgid ":class:`MeshNodeArray`"
+msgstr ""
+
+#: abaqus.BasicGeometry.Cell.Cell.getSize:4 of
 msgid ""
 "Check `Cell.getSize on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cellpyc.htm?contextscope=all"
@@ -438,44 +521,37 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell.getSize:11
-#: abaqus.BasicGeometry.Edge.Edge.getSize:10
-#: abaqus.BasicGeometry.Face.Face.getSize:10
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize:10 of
-msgid "**printResults**"
-msgstr ""
-
-#: abaqus.BasicGeometry.Cell.Cell.getSize:10 of
+#: abaqus.BasicGeometry.Cell.Cell.getSize:7 of
 msgid ""
 "A Boolean that determines whether a verbose output is to be printed. The "
 "default is True."
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell.getSize:28
-#: abaqus.BasicGeometry.Edge.Edge.getRadius:12
-#: abaqus.BasicGeometry.Edge.Edge.getSize:27
-#: abaqus.BasicGeometry.Face.Face.getSize:27
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getRadius:12
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize:27 of
-msgid ":class:`python:float`"
+#: abaqus.BasicGeometry.Cell.Cell.getSize:10
+#: abaqus.BasicGeometry.Edge.Edge.getSize:9
+#: abaqus.BasicGeometry.Face.Face.getSize:9
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize:9 of
+msgid "A Float."
 msgstr ""
 
-#: abaqus.BasicGeometry.Cell.Cell.getSize:16
-#: abaqus.BasicGeometry.Edge.Edge.getSize:15
-#: abaqus.BasicGeometry.Face.Face.getSize:15
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize:15 of
-msgid "A Float."
+#: abaqus.BasicGeometry.Cell.Cell.getSize:11
+#: abaqus.BasicGeometry.Edge.Edge.getRadius:4
+#: abaqus.BasicGeometry.Edge.Edge.getSize:10
+#: abaqus.BasicGeometry.Face.Face.getSize:10
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getRadius:4
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize:10 of
+msgid ":class:`float`"
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/geometry.rst:19
 msgid "CellArray"
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray:2 of
+#: abaqus.BasicGeometry.CellArray.CellArray:1 of
 msgid "The CellArray is a sequence of Cell objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray:23 of
+#: abaqus.BasicGeometry.CellArray.CellArray:22 of
 msgid ""
 "Check `CellArray on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cellarraypyc.htm?contextscope=all>`__."
@@ -534,12 +610,12 @@ msgstr ""
 
 #: ../../None:11:<autosummary>:1 ../../None:12:<autosummary>:1
 #: ../../None:6:<autosummary>:1
-#: abaqus.BasicGeometry.CellArray.CellArray.getMask:2
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getMask:2
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getMask:2
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getMask:2
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getMask:2
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getMask:2 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getMask:1
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getMask:1
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getMask:1
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getMask:1
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getMask:1
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getMask:1 of
 msgid "This method returns a string specifying the object or objects."
 msgstr ""
 
@@ -551,7 +627,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:2 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:1 of
 msgid ""
 "This method returns an array of cell objects that lie within the "
 "specified bounding box."
@@ -565,7 +641,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:2 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:1 of
 msgid ""
 "This method returns an array of cell objects that lie within the "
 "specified bounding cylinder."
@@ -579,7 +655,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:2 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:1 of
 msgid ""
 "This method returns an array of cell objects that lie within the "
 "specified bounding sphere."
@@ -592,7 +668,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox:2 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox:1 of
 msgid ""
 "This method returns a dictionary of two tuples representing minimum and "
 "maximum boundary values of the bounding box of the minimum size "
@@ -602,7 +678,7 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__repr__ <abaqus.BasicGeometry.CellArray.CellArray.__repr__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1 ../../None:36:<autosummary>:1
@@ -683,7 +759,7 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__iter__ <abaqus.BasicGeometry.CellArray.CellArray.__iter__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1 ../../None:36:<autosummary>:1
@@ -693,7 +769,7 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__len__ <abaqus.BasicGeometry.CellArray.CellArray.__len__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1 ../../None:36:<autosummary>:1
@@ -797,7 +873,7 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__reversed__ "
-"<abaqus.BasicGeometry.CellArray.CellArray.__reversed__>`\\ \\(\\/\\)"
+"<abaqus.BasicGeometry.CellArray.CellArray.__reversed__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -807,7 +883,7 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__sizeof__ "
-"<abaqus.BasicGeometry.CellArray.CellArray.__sizeof__>`\\ \\(\\/\\)"
+"<abaqus.BasicGeometry.CellArray.CellArray.__sizeof__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -815,9 +891,7 @@ msgid "Return the size of the list in memory, in bytes."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`clear <abaqus.BasicGeometry.CellArray.CellArray.clear>`\\ "
-"\\(\\/\\)"
+msgid ":py:obj:`clear <abaqus.BasicGeometry.CellArray.CellArray.clear>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -825,7 +899,7 @@ msgid "Remove all items from list."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`copy <abaqus.BasicGeometry.CellArray.CellArray.copy>`\\ \\(\\/\\)"
+msgid ":py:obj:`copy <abaqus.BasicGeometry.CellArray.CellArray.copy>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -905,7 +979,7 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`reverse <abaqus.BasicGeometry.CellArray.CellArray.reverse>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -960,7 +1034,7 @@ msgid ""
 "<abaqus.BasicGeometry.CellArray.CellArray._is_protocol>`\\"
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:2 of
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:1 of
 msgid ""
 "This method returns the object or objects in the CellArray located at the"
 " given coordinates. findAt initially uses the ACIS tolerance of 1E-6. As "
@@ -976,219 +1050,181 @@ msgid ""
 "CellArray represents such subset."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:15 of
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:14 of
 msgid ""
 "Check `CellArray.findAt on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cellarraypyc.htm?contextscope=all"
 "#simaker-cellarrayfindatpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:32
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:29
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:18
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:34
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:18
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:30
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:18
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:27
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:19
-#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:26
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:18 of
-msgid "**coordinates**"
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:17 of
+msgid ""
+"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
+" of the object to find. `findAt` returns either a Cell object or a "
+"sequence of Cell objects based on the type of input.  * If "
+"**coordinates** is a sequence of Floats, findAt returns the Cell object "
+"at that point.  * If **coordinates** is a sequence of sequence of Floats,"
+" findAt returns a sequence of Cell   objects at the given locations. The "
+"sequence of sequence of Floats must be a sequence of   sequence of point "
+"and normal data, not a sequence of point data. For example::      cells1 "
+"= myCrackedBlockInstance.cells.findAt(((5.5, -8.3, 294.2),),"
+"                                                  ((12.1, -8.3, 287.8),),"
+"                                                  ((14.4, -10.4, "
+"285.5),),)"
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:20 of
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:17 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
 " of the object to find. `findAt` returns either a Cell object or a "
 "sequence of Cell objects based on the type of input."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:24 of
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:21 of
 msgid ""
 "If **coordinates** is a sequence of Floats, findAt returns the Cell "
 "object at that point."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:26 of
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:23 of
 msgid ""
 "If **coordinates** is a sequence of sequence of Floats, findAt returns a "
 "sequence of Cell objects at the given locations. The sequence of sequence"
-" of Floats must be a sequence of  sequence of point and normal data, not "
-"a sequence of point data. For example::"
+" of Floats must be a sequence of sequence of point and normal data, not a"
+" sequence of point data. For example::"
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:36
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:33
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:42
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:34
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:31
-#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:30 of
-msgid "**printWarning**"
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:35
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:32
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:41
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:33
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:30
-#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:29 of
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:31
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:28
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:36
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:29
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:26
+#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:25 of
 msgid ""
 "A Boolean specifying whether a message is to be printed to the CLI if no "
 "entity is found at the specified location. The default value is True."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:53
-#: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:21 of
-msgid ":obj:`Cell`"
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:41 of
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:34 of
 msgid "A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox:27
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox:27
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox:27 of
-msgid ""
-":obj:`Dict`\\[:class:`python:str`, :obj:`Tuple`\\[:class:`python:float`, "
-":class:`python:float`, :class:`python:float`]]"
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:35
+#: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:13 of
+msgid ":class:`Cell`"
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox:10
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox:10
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:10
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox:10 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox:4
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox:4
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox:4 of
+msgid ""
+"A Dictionary object with the following items:  - **low**: a tuple of "
+"three floats representing the minimum **X** -, **Y** -, and **Z** "
+"-boundary   values of the bounding box. - **high**: a tuple of three "
+"floats representing the maximum **X** -, **Y** -, and **Z** -boundary   "
+"values of the bounding box."
+msgstr ""
+
+#: abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox:4
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox:4
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:4
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox:4 of
 msgid "A Dictionary object with the following items:"
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox:12
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox:12
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox:12 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox:6
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox:6
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox:6 of
 msgid ""
 "**low**: a tuple of three floats representing the minimum **X** -, **Y** "
 "-, and **Z** -boundary values of the bounding box."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox:14
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox:14
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox:14 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox:8
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox:8
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox:8 of
 msgid ""
 "**high**: a tuple of three floats representing the maximum **X** -, **Y**"
 " -, and **Z** -boundary values of the bounding box."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:5 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getBoundingBox:10
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox:10
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox:10 of
+msgid ":class:`Dict[str`, :class:`Tuple[float`, :class:`float`, :class:`float]]`"
+msgstr ""
+
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:4 of
 msgid ""
 "Check `CellArray.getByBoundingBox on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cellarraypyc.htm?contextscope=all"
 "#simaker-cellarraygetbyboundingboxpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:10
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:10
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:10
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:11 of
-msgid "**xMin**"
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:10
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:10
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:10
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:11 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:7
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:7
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:7
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:8 of
 msgid "A float specifying the minimum **X**-boundary of the bounding box."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:13
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:13
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:13
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:14 of
-msgid "**yMin**"
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:13
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:13
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:13
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:14 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:9
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:9
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:9
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:10 of
 msgid "A float specifying the minimum **Y**-boundary of the bounding box."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:16
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:16
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:16
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:17 of
-msgid "**zMin**"
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:16
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:16
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:16
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:17 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:11
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:11
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:11
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:12 of
 msgid "A float specifying the minimum **Z**-boundary of the bounding box."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:19
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:19
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:19
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:20 of
-msgid "**xMax**"
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:19
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:19
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:19
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:20 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:13
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:13
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:13
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:14 of
 msgid "A float specifying the maximum **X**-boundary of the bounding box."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:22
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:22
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:22
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:23 of
-msgid "**yMax**"
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:22
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:22
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:22
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:23 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:15
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:15
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:15
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:16 of
 msgid "A float specifying the maximum **Y**-boundary of the bounding box."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:25
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:25
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:25
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:26 of
-msgid "**zMax**"
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:25
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:25
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:25
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:26 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:17
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:17
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:17
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:18 of
 msgid "A float specifying the maximum **Z**-boundary of the bounding box."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:30
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:24
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:19 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingBox:19
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:16
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:12 of
 msgid ""
 "A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object, which is "
 "a sequence of Cell objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:6 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:5 of
 msgid ""
 "Check `CellArray.getByBoundingCylinder on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cellarraypyc.htm?contextscope=all"
 "#simaker-cellarraygetbyboundingcylinderpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:12
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:12
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:12
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:12 of
-msgid "**center1**"
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:8
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:8
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:8
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:8 of
+msgid ""
+"A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the"
+" first end of the cylinder."
 msgstr ""
 
 #: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:11
@@ -1197,121 +1233,87 @@ msgstr ""
 #: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:11 of
 msgid ""
 "A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the"
-" first end of the cylinder."
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:16
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:16
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:16
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:16 of
-msgid "**center2**"
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:15
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:15
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:15
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:15 of
-msgid ""
-"A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the"
 " second end of the cylinder."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:19
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:14
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:19
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:14
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:19
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:14
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:19
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:14 of
-msgid "**radius**"
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:19
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:19
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:19
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:19 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingCylinder:14
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:14
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:14
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:14 of
 msgid "A float specifying the radius of the cylinder."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:6 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:5 of
 msgid ""
 "Check `CellArray.getByBoundingSphere on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cellarraypyc.htm?contextscope=all"
 "#simaker-cellarraygetbyboundingspherepyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:11
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:11
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:11
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:11 of
-msgid "**center**"
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:11
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:11
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:11
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:11 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:8
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:8
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:8
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:8 of
 msgid ""
 "A tuple of the **X**-, **Y**-, and **Z**-coordinates of the center of the"
 " sphere."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:14
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:14
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:14
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:14 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getByBoundingSphere:10
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:10
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:10
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:10 of
 msgid "A float specifying the radius of the sphere."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getExteriorFaces:2 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getExteriorFaces:1 of
 msgid ""
 "This method returns the cell faces on the exterior of the CellArray. That"
 " is, it returns the faces that are referenced by exactly one of the cells"
 " in the sequence."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getExteriorFaces:22
-#: abaqus.BasicGeometry.Face.Face.getAdjacentFaces:21
-#: abaqus.BasicGeometry.Face.Face.getFacesByCurvature:22
-#: abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle:28
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:42
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:36
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:31 of
-msgid ":obj:`FaceArray`"
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.getExteriorFaces:10 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getExteriorFaces:4 of
 msgid ""
 "A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object "
 "representing the faces on the exterior of the cells."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getMask:21
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getMask:21
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getMask:21
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getMask:21
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getMask:21
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getMask:21 of
-msgid ":class:`python:str`"
+#: abaqus.BasicGeometry.CellArray.CellArray.getExteriorFaces:5
+#: abaqus.BasicGeometry.Face.Face.getAdjacentFaces:4
+#: abaqus.BasicGeometry.Face.Face.getFacesByCurvature:5
+#: abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle:11
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:20
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:17
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:13 of
+msgid ":class:`FaceArray`"
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getMask:9
-#: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:13
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getMask:9
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:13
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getMask:9
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask:13
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getMask:9
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getSequenceFromMask:13
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getMask:9
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask:13
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getMask:9
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask:13 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getMask:3
+#: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:10
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getMask:3
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:10
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getMask:3
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask:10
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getMask:3
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getSequenceFromMask:10
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getMask:3
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask:10
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getMask:3
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask:10 of
 msgid "A String specifying the object or objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:2 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getMask:4
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getMask:4
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getMask:4
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getMask:4
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getMask:4
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getMask:4 of
+msgid ":class:`str`"
+msgstr ""
+
+#: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:1 of
 msgid ""
 "This method returns the object or objects in the CellArray identified "
 "using the specified **mask**. This command is generated when the "
@@ -1319,23 +1321,14 @@ msgid ""
 "are involved, this method is highly efficient."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:8 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:7 of
 msgid ""
 "Check `CellArray.getSequenceFromMask on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cellarraypyc.htm?contextscope=all"
 "#simaker-cellarraygetsequencefrommaskpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:13
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:13
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask:13
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getSequenceFromMask:13
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask:13
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask:13 of
-msgid "**mask**"
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:18 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:12 of
 msgid ""
 "A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object or a sequence of "
 "Cell objects."
@@ -1355,23 +1348,12 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:34
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:34
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:49
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:49
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:50
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:49 of
-msgid ""
-"Error: :obj:`The` :obj:`mask` :obj:`results` :obj:`in` :obj:`an` "
-":obj:`empty` :term:`python:sequence`"
-msgstr ""
-
-#: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:26
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:26
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:41
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:41
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:42
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:41 of
+#: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:15
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:15
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:29
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:29
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:30
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:29 of
 msgid "An exception occurs if the resulting sequence is empty."
 msgstr ""
 
@@ -1379,11 +1361,11 @@ msgstr ""
 msgid "Edge"
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge:2 of
+#: abaqus.BasicGeometry.Edge.Edge:1 of
 msgid "Edges are one-dimensional regions of geometry."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge:34 of
+#: abaqus.BasicGeometry.Edge.Edge:33 of
 msgid ""
 "Check `Edge on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?contextscope=all>`__."
@@ -1394,7 +1376,7 @@ msgid ":py:obj:`index <abaqus.BasicGeometry.Edge.Edge.index>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Edge.Edge.index:2 of
+#: abaqus.BasicGeometry.Edge.Edge.index:1 of
 msgid "An Int specifying the index of the edge in the EdgeArray."
 msgstr ""
 
@@ -1403,7 +1385,7 @@ msgid ":py:obj:`isReferenceRep <abaqus.BasicGeometry.Edge.Edge.isReferenceRep>`\
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Edge.Edge.isReferenceRep:2 of
+#: abaqus.BasicGeometry.Edge.Edge.isReferenceRep:1 of
 msgid ""
 "A Boolean specifying whether the edge belongs to the reference "
 "representation of the Part or Instance."
@@ -1414,8 +1396,8 @@ msgid ":py:obj:`pointOn <abaqus.BasicGeometry.Edge.Edge.pointOn>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1 ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Edge.Edge.pointOn:2
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.pointOn:2 of
+#: abaqus.BasicGeometry.Edge.Edge.pointOn:1
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.pointOn:1 of
 msgid ""
 "A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of"
 " a point located on the edge."
@@ -1426,7 +1408,7 @@ msgid ":py:obj:`featureName <abaqus.BasicGeometry.Edge.Edge.featureName>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Edge.Edge.featureName:2 of
+#: abaqus.BasicGeometry.Edge.Edge.featureName:1 of
 msgid ""
 "A tuple of Floats specifying the name of the feature that created this "
 "edge."
@@ -1437,7 +1419,7 @@ msgid ":py:obj:`instanceName <abaqus.BasicGeometry.Edge.Edge.instanceName>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Edge.Edge.instanceName:2 of
+#: abaqus.BasicGeometry.Edge.Edge.instanceName:1 of
 msgid ""
 "A tuple of Floats specifying the name of the part instance for this edge "
 "(if applicable)."
@@ -1450,7 +1432,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-#: abaqus.BasicGeometry.Edge.Edge.isTangentFlipped:2 of
+#: abaqus.BasicGeometry.Edge.Edge.isTangentFlipped:1 of
 msgid ""
 "This method determines whether the tangent to the edge is flipped from "
 "its default direction by the use of the flipTangent method on a Part "
@@ -1463,7 +1445,7 @@ msgid ""
 "\\(parameter\\, point\\)"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 abaqus.BasicGeometry.Edge.Edge.getCurvature:2
+#: ../../None:12:<autosummary>:1 abaqus.BasicGeometry.Edge.Edge.getCurvature:1
 #: of
 msgid "This method returns curvature information at a location on the edge."
 msgstr ""
@@ -1472,7 +1454,7 @@ msgstr ""
 msgid ":py:obj:`getFaces <abaqus.BasicGeometry.Edge.Edge.getFaces>`\\ \\(\\)"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 abaqus.BasicGeometry.Edge.Edge.getFaces:2 of
+#: ../../None:12:<autosummary>:1 abaqus.BasicGeometry.Edge.Edge.getFaces:1 of
 msgid ""
 "This method returns a sequence consisting of the face ids of the faces "
 "which share this edge."
@@ -1485,7 +1467,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-#: abaqus.BasicGeometry.Edge.Edge.getAdjacentEdges:2 of
+#: abaqus.BasicGeometry.Edge.Edge.getAdjacentEdges:1 of
 msgid ""
 "This method returns an array of Edge objects that share at least one "
 "vertex of the edge."
@@ -1498,7 +1480,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-#: abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle:2 of
+#: abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle:1 of
 msgid ""
 "This method returns an array of Edge objects that are obtained by "
 "recursively finding adjacent edges that are at an angle of less than or "
@@ -1509,7 +1491,7 @@ msgstr ""
 msgid ":py:obj:`getNodes <abaqus.BasicGeometry.Edge.Edge.getNodes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 abaqus.BasicGeometry.Edge.Edge.getNodes:2 of
+#: ../../None:12:<autosummary>:1 abaqus.BasicGeometry.Edge.Edge.getNodes:1 of
 msgid ""
 "This method returns an array of node objects that are associated with the"
 " edge."
@@ -1521,7 +1503,7 @@ msgid ""
 "\\(\\)"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 abaqus.BasicGeometry.Edge.Edge.getElements:2
+#: ../../None:12:<autosummary>:1 abaqus.BasicGeometry.Edge.Edge.getElements:1
 #: of
 msgid ""
 "This method returns an array of element objects that are associated with "
@@ -1532,7 +1514,7 @@ msgstr ""
 msgid ":py:obj:`getRadius <abaqus.BasicGeometry.Edge.Edge.getRadius>`\\ \\(\\)"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 abaqus.BasicGeometry.Edge.Edge.getRadius:2 of
+#: ../../None:12:<autosummary>:1 abaqus.BasicGeometry.Edge.Edge.getRadius:1 of
 msgid "This method returns the radius of circular edges."
 msgstr ""
 
@@ -1543,8 +1525,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../None:5:<autosummary>:1
-#: abaqus.BasicGeometry.Edge.Edge.getSize:2
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize:2 of
+#: abaqus.BasicGeometry.Edge.Edge.getSize:1
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize:1 of
 msgid "This method returns a Float indicating the length of the edge."
 msgstr ""
 
@@ -1560,69 +1542,46 @@ msgid ""
 " edge."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.getAdjacentEdges:21
-#: abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle:28
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:42
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:36
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:31
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getExteriorEdges:22 of
-msgid ":obj:`EdgeArray`"
-msgstr ""
-
-#: abaqus.BasicGeometry.Edge.Edge.getAdjacentEdges:9
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:30
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:24
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:19 of
+#: abaqus.BasicGeometry.Edge.Edge.getAdjacentEdges:3
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:19
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:16
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:12 of
 msgid ""
 "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is"
 " a sequence of Edge objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.getCurvature:5 of
+#: abaqus.BasicGeometry.Edge.Edge.getAdjacentEdges:4
+#: abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle:11
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:20
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:17
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:13
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getExteriorEdges:5 of
+msgid ":class:`EdgeArray`"
+msgstr ""
+
+#: abaqus.BasicGeometry.Edge.Edge.getCurvature:4 of
 msgid ""
 "Check `Edge.getCurvature on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?contextscope=all"
 "#simaker-edgegetcurvaturepyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.getCurvature:11
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:12 of
-msgid "**parameter**"
-msgstr ""
-
-#: abaqus.BasicGeometry.Edge.Edge.getCurvature:10 of
+#: abaqus.BasicGeometry.Edge.Edge.getCurvature:7 of
 msgid ""
 "A Float specifying the normalized parameter location on the edge where "
 "the curvature is to be computed. This argument is mutually exclusive with"
 " the argument **point**."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.getCurvature:16
-#: abaqus.BasicGeometry.Face.Face.getCurvature:12
-#: abaqus.BasicGeometry.Face.Face.getNormal:14
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:17 of
-msgid "**point**"
-msgstr ""
-
-#: abaqus.BasicGeometry.Edge.Edge.getCurvature:14 of
+#: abaqus.BasicGeometry.Edge.Edge.getCurvature:10 of
 msgid ""
 "A tuple of **X**-, **Y**-, and **Z**-coordinates of a point at which the "
 "curvature is to be computed. If **point** does not lie on the edge an "
 "attempt is made to project it onto the edge and use the projected point."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.getCurvature:27
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:45
-#: abaqus.BasicGeometry.Face.Face.getCurvature:42
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:36
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:28
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:36
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:37
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:36 of
-msgid ":class:`python:dict`"
-msgstr ""
-
-#: abaqus.BasicGeometry.Edge.Edge.getCurvature:21 of
+#: abaqus.BasicGeometry.Edge.Edge.getCurvature:14 of
 msgid ""
 "A dictionary with keys 'evaluationPoint', 'curvature', 'radius', and "
 "'tangent', where 'evaluationPoint' specifies the location at which the "
@@ -1631,60 +1590,58 @@ msgid ""
 "specifies the tangent to the edge at that location."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.getCurvature:40 of
-msgid ":obj:`The` :obj:`given` :obj:`edge` :obj:`is` :obj:`straight`"
+#: abaqus.BasicGeometry.Edge.Edge.getCurvature:18
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:27
+#: abaqus.BasicGeometry.Face.Face.getCurvature:23
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:27
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:19
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:27
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:28
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:27 of
+msgid ":class:`dict`"
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle:6 of
+#: abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle:5 of
 msgid ""
 "Check `Edge.getEdgesByEdgeAngle on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?contextscope=all"
 "#simaker-edgegetedgesbyedgeanglepyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle:11
-#: abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle:11 of
-msgid "**angle**"
-msgstr ""
-
-#: abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle:11 of
+#: abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle:8 of
 msgid "A float specifying the value of the face angle in degrees."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle:16 of
+#: abaqus.BasicGeometry.Edge.Edge.getEdgesByEdgeAngle:10 of
 msgid ""
 "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is"
 " a sequence of Edgeobjects."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.getNodes:9 of
+#: abaqus.BasicGeometry.Edge.Edge.getNodes:3 of
 msgid ""
 "A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object, which is a"
 " sequence of MeshNode objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.getRadius:9
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getRadius:9 of
+#: abaqus.BasicGeometry.Edge.Edge.getRadius:3
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getRadius:3 of
 msgid "A Float specifying the radius."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.getRadius:25 of
-msgid ":obj:`The` :obj:`given` :obj:`edges` :obj:`is` :obj:`not` :obj:`circular`"
-msgstr ""
-
-#: abaqus.BasicGeometry.Edge.Edge.getSize:5 of
+#: abaqus.BasicGeometry.Edge.Edge.getSize:4 of
 msgid ""
 "Check `Edge.getSize on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?contextscope=all"
 "#simaker-edgegetsizepyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.getSize:10
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize:10 of
+#: abaqus.BasicGeometry.Edge.Edge.getSize:7
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize:7 of
 msgid "A Bool specifying whether verbose output is printed. The default is True."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.getVertices:2 of
+#: abaqus.BasicGeometry.Edge.Edge.getVertices:1 of
 msgid ""
 "This method returns a sequence of indices of the vertices that bound this"
 " edge. The first index refers to the vertex where the normalized curve "
@@ -1693,26 +1650,26 @@ msgid ""
 " vertex index is returned."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.isTangentFlipped:22
-#: abaqus.BasicGeometry.Face.Face.isNormalFlipped:22 of
-msgid ":obj:`Boolean`"
+#: abaqus.BasicGeometry.Edge.Edge.isTangentFlipped:4 of
+msgid "A Boolean value of True if the tangent is flipped and False if not."
 msgstr ""
 
-#: abaqus.BasicGeometry.Edge.Edge.isTangentFlipped:10 of
-msgid "A Boolean value of True if the tangent is flipped and False if not."
+#: abaqus.BasicGeometry.Edge.Edge.isTangentFlipped:5
+#: abaqus.BasicGeometry.Face.Face.isNormalFlipped:5 of
+msgid ":class:`Boolean`"
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/geometry.rst:35
 msgid "EdgeArray"
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray:2 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray:1 of
 msgid ""
 "The EdgeArray is a sequence of Edge objects. If the part is modified, "
 "then EdgeArray must be updated for that part."
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray:35 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray:34 of
 msgid ""
 "Check `EdgeArray on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgearraypyc.htm?contextscope=all>`__."
@@ -1748,7 +1705,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:2 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:1 of
 msgid ""
 "This method returns an object or objects in the EdgeArray closest to the "
 "given set of points, where the given points need not lie on the edges in "
@@ -1782,7 +1739,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:2 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:1 of
 msgid ""
 "This method returns an array of edge objects that lie within the "
 "specified bounding box."
@@ -1796,7 +1753,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:2 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:1 of
 msgid ""
 "This method returns an array of edge objects that lie within the "
 "specified bounding cylinder."
@@ -1810,7 +1767,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:2 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:1 of
 msgid ""
 "This method returns an array of edge objects that lie within the "
 "specified bounding sphere."
@@ -1823,7 +1780,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox:2 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getBoundingBox:1 of
 msgid ""
 "This method returns a dictionary of two tuples representing minimum and "
 "maximum boundary values of the bounding box of the minimum size "
@@ -1833,7 +1790,7 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__repr__ <abaqus.BasicGeometry.EdgeArray.EdgeArray.__repr__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1882,13 +1839,13 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__iter__ <abaqus.BasicGeometry.EdgeArray.EdgeArray.__iter__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__len__ <abaqus.BasicGeometry.EdgeArray.EdgeArray.__len__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1951,23 +1908,21 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__reversed__ "
-"<abaqus.BasicGeometry.EdgeArray.EdgeArray.__reversed__>`\\ \\(\\/\\)"
+"<abaqus.BasicGeometry.EdgeArray.EdgeArray.__reversed__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__sizeof__ "
-"<abaqus.BasicGeometry.EdgeArray.EdgeArray.__sizeof__>`\\ \\(\\/\\)"
+"<abaqus.BasicGeometry.EdgeArray.EdgeArray.__sizeof__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`clear <abaqus.BasicGeometry.EdgeArray.EdgeArray.clear>`\\ "
-"\\(\\/\\)"
+msgid ":py:obj:`clear <abaqus.BasicGeometry.EdgeArray.EdgeArray.clear>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`copy <abaqus.BasicGeometry.EdgeArray.EdgeArray.copy>`\\ \\(\\/\\)"
+msgid ":py:obj:`copy <abaqus.BasicGeometry.EdgeArray.EdgeArray.copy>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -2015,7 +1970,7 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`reverse <abaqus.BasicGeometry.EdgeArray.EdgeArray.reverse>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -2043,7 +1998,7 @@ msgid ""
 "<abaqus.BasicGeometry.EdgeArray.EdgeArray._is_protocol>`\\"
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:2 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:1 of
 msgid ""
 "This method returns the object or objects in the EdgeArray located at the"
 " given coordinates. findAt initially uses the ACIS tolerance of 1E-6. As "
@@ -2059,14 +2014,27 @@ msgid ""
 "EdgeArray represents such subset."
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:16 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:15 of
 msgid ""
 "Check `EdgeArray.findAt on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgearraypyc.htm?contextscope=all"
 "#simaker-edgearrayfindatpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:21 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:18 of
+msgid ""
+"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
+" of the object to find. findAt returns either an Edge object or a "
+"sequence of Edge objects based on the type of input. If **coordinates** "
+"is a sequence of Floats, findAt returns the Edge object at that point. If"
+" you omit the **coordinates** keyword argument, findAt accepts as "
+"arguments a sequence of sequence of floats in the following format::"
+"      edges = e.findAt(((20.19686, -169.513997, 27.798593), ),"
+"                      ((19.657627, -167.295749, 27.056402), ),"
+"                      ((18.274129, -157.144741, 25.15218), ))"
+msgstr ""
+
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:18 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
 " of the object to find. findAt returns either an Edge object or a "
@@ -2076,71 +2044,73 @@ msgid ""
 "arguments a sequence of sequence of floats in the following format::"
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:50
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:21 of
-msgid ":obj:`Edge`"
-msgstr ""
-
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:38
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:18 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:31
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:12 of
 msgid ""
 "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of "
 "Edge objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:5 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:32
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:13 of
+msgid ":class:`Edge`"
+msgstr ""
+
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingBox:4 of
 msgid ""
 "Check `EdgeArray.getByBoundingBox on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgearraypyc.htm?contextscope=all"
 "#simaker-edgearraygetbyboundingboxpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:6 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingCylinder:5 of
 msgid ""
 "Check `EdgeArray.getByBoundingCylinder on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgearraypyc.htm?contextscope=all"
 "#simaker-edgearraygetbyboundingcylinderpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:6 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getByBoundingSphere:5 of
 msgid ""
 "Check `EdgeArray.getByBoundingSphere on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgearraypyc.htm?contextscope=all"
 "#simaker-edgearraygetbyboundingspherepyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:6 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:5 of
 msgid ""
 "Check `EdgeArray.getClosest on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgearraypyc.htm?contextscope=all"
 "#simaker-edgearraygetclosestpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:11 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:8 of
+msgid ""
+"A sequence of a sequence of floats, where each sequence of floats "
+"describes the **X**-, **Y**-, and **Z**- coordinates of a point::      "
+">>> r=e.getClosest(coordinates=((20.0, 20.0, 10.0), (-1.0, -15.0, 15), ))"
+"     >>> r.keys()     [0, 1]     >>> r[0]     "
+"(mdb.models['Model-1'].parts['Part-1'].edges[3], (15.7090625762939, 20.0,"
+" 10.0))"
+msgstr ""
+
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:8 of
 msgid ""
 "A sequence of a sequence of floats, where each sequence of floats "
 "describes the **X**-, **Y**-, and **Z**- coordinates of a point::"
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:22
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:22
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:22
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:23
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:22 of
-msgid "**searchTolerance**"
-msgstr ""
-
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:21
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:21
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:21
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:22
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:21 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:17
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:17
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:17
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:18
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:17 of
 msgid ""
 "A double specifying the distance within which the closest object must "
 "lie. The default value is half of the parent part/instance size."
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:27 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getClosest:20 of
 msgid ""
 "This method returns a dictionary object. The key to the dictionary object"
 " is the position of the input point in the tuple specified in the "
@@ -2152,7 +2122,7 @@ msgid ""
 "point on the Edge to the given point. See program listing above."
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:2 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:1 of
 msgid ""
 "This method returns the object or objects in the EdgeArray identified "
 "using the specified **mask**. This command is generated when the "
@@ -2160,7 +2130,7 @@ msgid ""
 " are involved, this method is highly efficient."
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:8 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:7 of
 msgid ""
 "Check `EdgeArray.getSequenceFromMask on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgearraypyc.htm?contextscope=all"
@@ -2171,11 +2141,11 @@ msgstr ""
 msgid "Face"
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face:2 of
+#: abaqus.BasicGeometry.Face.Face:1 of
 msgid "Faces are two-dimensional regions of geometry."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face:32 of
+#: abaqus.BasicGeometry.Face.Face:31 of
 msgid ""
 "Check `Face on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facepyc.htm?contextscope=all>`__."
@@ -2186,7 +2156,7 @@ msgid ":py:obj:`index <abaqus.BasicGeometry.Face.Face.index>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Face.Face.index:2 of
+#: abaqus.BasicGeometry.Face.Face.index:1 of
 msgid "An Int specifying the index of the face in the FaceArray."
 msgstr ""
 
@@ -2195,7 +2165,7 @@ msgid ":py:obj:`isReferenceRep <abaqus.BasicGeometry.Face.Face.isReferenceRep>`\
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Face.Face.isReferenceRep:2 of
+#: abaqus.BasicGeometry.Face.Face.isReferenceRep:1 of
 msgid ""
 "A Boolean specifying whether the face belongs to the reference "
 "representation of the Part or Instance."
@@ -2214,7 +2184,7 @@ msgid ":py:obj:`featureName <abaqus.BasicGeometry.Face.Face.featureName>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Face.Face.featureName:2 of
+#: abaqus.BasicGeometry.Face.Face.featureName:1 of
 msgid ""
 "A tuple of Floats specifying the name of the feature that created this "
 "face."
@@ -2225,7 +2195,7 @@ msgid ":py:obj:`instanceName <abaqus.BasicGeometry.Face.Face.instanceName>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Face.Face.instanceName:2 of
+#: abaqus.BasicGeometry.Face.Face.instanceName:1 of
 msgid ""
 "A tuple of Floats specifying the name of the part instance for this face "
 "(if applicable)."
@@ -2237,7 +2207,7 @@ msgid ""
 "\\(\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1 abaqus.BasicGeometry.Face.Face.getCentroid:2
+#: ../../None:17:<autosummary>:1 abaqus.BasicGeometry.Face.Face.getCentroid:1
 #: of
 msgid "This method returns the centroid of a face."
 msgstr ""
@@ -2248,7 +2218,7 @@ msgid ""
 "\\(point\\, uParam\\, vParam\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1 abaqus.BasicGeometry.Face.Face.getCurvature:2
+#: ../../None:17:<autosummary>:1 abaqus.BasicGeometry.Face.Face.getCurvature:1
 #: of
 msgid ""
 "This method returns information about the curvature at a location on the "
@@ -2261,7 +2231,7 @@ msgid ""
 "\\(\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1 abaqus.BasicGeometry.Face.Face.getElements:2
+#: ../../None:17:<autosummary>:1 abaqus.BasicGeometry.Face.Face.getElements:1
 #: of
 msgid ""
 "This method returns an array of element objects that are associated with "
@@ -2306,7 +2276,7 @@ msgid ""
 "\\(\\[printResults\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1 abaqus.BasicGeometry.Face.Face.getSize:2 of
+#: ../../None:17:<autosummary>:1 abaqus.BasicGeometry.Face.Face.getSize:1 of
 msgid "This method returns a Float indicating the area of the face."
 msgstr ""
 
@@ -2314,7 +2284,7 @@ msgstr ""
 msgid ":py:obj:`getEdges <abaqus.BasicGeometry.Face.Face.getEdges>`\\ \\(\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1 abaqus.BasicGeometry.Face.Face.getEdges:2 of
+#: ../../None:17:<autosummary>:1 abaqus.BasicGeometry.Face.Face.getEdges:1 of
 msgid ""
 "This method returns a sequence consisting of the edge ids of the edges on"
 " the face."
@@ -2326,7 +2296,7 @@ msgid ""
 "\\(\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1 abaqus.BasicGeometry.Face.Face.getVertices:2
+#: ../../None:17:<autosummary>:1 abaqus.BasicGeometry.Face.Face.getVertices:1
 #: of
 msgid ""
 "This method returns a sequence consisting of the vertex ids of the "
@@ -2337,7 +2307,7 @@ msgstr ""
 msgid ":py:obj:`getCells <abaqus.BasicGeometry.Face.Face.getCells>`\\ \\(\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1 abaqus.BasicGeometry.Face.Face.getCells:2 of
+#: ../../None:17:<autosummary>:1 abaqus.BasicGeometry.Face.Face.getCells:1 of
 msgid ""
 "This method returns a sequence consisting of the cell ids of the cells to"
 " which this face belongs."
@@ -2350,7 +2320,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-#: abaqus.BasicGeometry.Face.Face.getAdjacentFaces:2 of
+#: abaqus.BasicGeometry.Face.Face.getAdjacentFaces:1 of
 msgid ""
 "This method returns an array of face objects that share at least one edge"
 " of the face."
@@ -2363,7 +2333,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-#: abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle:2 of
+#: abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle:1 of
 msgid ""
 "This method returns an array of Face objects that are obtained by "
 "recursively finding adjacent faces that are at an angle of less than or "
@@ -2377,7 +2347,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-#: abaqus.BasicGeometry.Face.Face.getFacesByCurvature:2 of
+#: abaqus.BasicGeometry.Face.Face.getFacesByCurvature:1 of
 msgid ""
 "This method returns an array of Face objects that are obtained by "
 "recursively finding adjacent faces that share the same curvature."
@@ -2390,7 +2360,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-#: abaqus.BasicGeometry.Face.Face.isNormalFlipped:2 of
+#: abaqus.BasicGeometry.Face.Face.isNormalFlipped:1 of
 msgid ""
 "This method determines whether the normal to the face is flipped from its"
 " default direction by the use of the flipNormal method on a Part object."
@@ -2403,37 +2373,37 @@ msgid ""
 msgstr ""
 
 #: ../../None:17:<autosummary>:1
-#: abaqus.BasicGeometry.Face.Face.getCADAttributes:2 of
+#: abaqus.BasicGeometry.Face.Face.getCADAttributes:1 of
 msgid ""
 "This method returns an array of CAD attribute strings associated with the"
 " Face when the part was created from CAD data."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getAdjacentFaces:9 of
+#: abaqus.BasicGeometry.Face.Face.getAdjacentFaces:3 of
 msgid ""
 "A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object which is a"
 " sequence of Face objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getCentroid:22
-#: abaqus.BasicGeometry.Face.Face.getNormal:23 of
-msgid ":obj:`typing.Tuple`\\[:class:`python:float`, ...]"
-msgstr ""
-
-#: abaqus.BasicGeometry.Face.Face.getCentroid:9 of
+#: abaqus.BasicGeometry.Face.Face.getCentroid:3 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
 " of the centroid of the face."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getCurvature:5 of
+#: abaqus.BasicGeometry.Face.Face.getCentroid:5
+#: abaqus.BasicGeometry.Face.Face.getNormal:15 of
+msgid ":class:`Tuple[float`, :class:`...]`"
+msgstr ""
+
+#: abaqus.BasicGeometry.Face.Face.getCurvature:4 of
 msgid ""
 "Check `Face.getCurvature on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facepyc.htm?contextscope=all"
 "#simaker-facegetcurvaturepyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getCurvature:10 of
+#: abaqus.BasicGeometry.Face.Face.getCurvature:7 of
 msgid ""
 "A tuple specifying the **X**-, **Y**-, and **Z** coordinates of the point"
 " where the curvature is desired. If the **point** does not lie on the "
@@ -2441,11 +2411,7 @@ msgid ""
 " **vParam** are mutually exclusive."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getCurvature:17 of
-msgid "**uParam**"
-msgstr ""
-
-#: abaqus.BasicGeometry.Face.Face.getCurvature:15 of
+#: abaqus.BasicGeometry.Face.Face.getCurvature:11 of
 msgid ""
 "A Float specifying the normalized **U** parameter value at which the "
 "curvature is to be computed. This value must lie between (0,1). "
@@ -2453,17 +2419,13 @@ msgid ""
 "with **point**."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getCurvature:21 of
-msgid "**vParam**"
-msgstr ""
-
-#: abaqus.BasicGeometry.Face.Face.getCurvature:20 of
+#: abaqus.BasicGeometry.Face.Face.getCurvature:15 of
 msgid ""
 "A Float specifying the normalized **V** parameter value at which the "
 "curvature is to be computed. This value must lie between (0,1)."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getCurvature:26 of
+#: abaqus.BasicGeometry.Face.Face.getCurvature:18 of
 msgid ""
 "A dictionary with keys 'evaluationPoint', 'principalAxis1', "
 "'principalAxis2', 'curvature1', 'curvature2' and 'gaussianCurvature'. "
@@ -2473,30 +2435,31 @@ msgid ""
 "'curvature2' specify the curvatures along the two principal axes."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getEdges:24 of
-msgid ":obj:`A` :class:`python:tuple` :obj:`of` integers."
+#: abaqus.BasicGeometry.Face.Face.getEdges:3 of
+msgid ""
+"* :class:`Tuple[int`, :class:`...]` * :class:`A tuple` of "
+":class:`integers.`"
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getElementFaces:2 of
+#: abaqus.BasicGeometry.Face.Face.getEdges:4 of
+msgid ":class:`A tuple` of :class:`integers.`"
+msgstr ""
+
+#: abaqus.BasicGeometry.Face.Face.getElementFaces:1 of
 msgid ""
 "This method returns an array of mesh face objects. Each mesh face object "
 "contains the element label and the side of the element that lies on the "
 "geometric face."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getElementFaces:6 of
+#: abaqus.BasicGeometry.Face.Face.getElementFaces:5 of
 msgid ""
 "Check `Face.getElementFaces on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facepyc.htm?contextscope=all"
 "#simaker-facegetelementfacespyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getElementFaces:13
-#: abaqus.BasicGeometry.Face.Face.getNodes:15 of
-msgid "**faceSide**"
-msgstr ""
-
-#: abaqus.BasicGeometry.Face.Face.getElementFaces:11 of
+#: abaqus.BasicGeometry.Face.Face.getElementFaces:8 of
 msgid ""
 "A symbolic constant specifying the side of the geometric face of a solid "
 "from which the element faces should be retrieved. Possible values are "
@@ -2504,51 +2467,51 @@ msgid ""
 "**BOTH_SIDES**. For shell faces this option is ignored."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getElementFaces:30 of
-msgid ":obj:`MeshFaceArray`"
-msgstr ""
-
-#: abaqus.BasicGeometry.Face.Face.getElementFaces:18 of
+#: abaqus.BasicGeometry.Face.Face.getElementFaces:12 of
 msgid ""
 "A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object which is a "
 "sequence of MeshFace objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getFacesByCurvature:10
-#: abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle:16
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:30
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:24
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:19 of
+#: abaqus.BasicGeometry.Face.Face.getElementFaces:13 of
+msgid ":class:`MeshFaceArray`"
+msgstr ""
+
+#: abaqus.BasicGeometry.Face.Face.getFacesByCurvature:4
+#: abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle:10
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:19
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:16
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:12 of
 msgid ""
 "A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object, which is "
 "a sequence of Face objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle:6 of
+#: abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle:5 of
 msgid ""
 "Check `Face.getFacesByFaceAngle on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facepyc.htm?contextscope=all"
 "#simaker-facegetfacesbyfaceanglepyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle:11 of
+#: abaqus.BasicGeometry.Face.Face.getFacesByFaceAngle:8 of
 msgid "A float specifying the value of the face angle."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getNodes:2 of
+#: abaqus.BasicGeometry.Face.Face.getNodes:1 of
 msgid ""
 "This method returns an array of mesh node objects. Each mesh node object "
 "contains the label of the node that lies on the geometric face."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getNodes:6 of
+#: abaqus.BasicGeometry.Face.Face.getNodes:5 of
 msgid ""
 "Check `Face.getNodes on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facepyc.htm?contextscope=all"
 "#simaker-facegetnodespyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getNodes:11 of
+#: abaqus.BasicGeometry.Face.Face.getNodes:8 of
 msgid ""
 "A symbolic constant specifying the side of the geometric face of a solid "
 "from which the nodes should be retrieved. Possible values are xo*SIDE1*, "
@@ -2558,62 +2521,51 @@ msgid ""
 "face are output."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getNormal:2 of
+#: abaqus.BasicGeometry.Face.Face.getNormal:1 of
 msgid ""
 "This method returns the normal to a face at the location specified by the"
 " **pointOn** member. The normal at a different location on the face can "
 "be obtained by specifying the optional **point** argument."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getNormal:7 of
+#: abaqus.BasicGeometry.Face.Face.getNormal:6 of
 msgid ""
 "Check `Face.getNormal on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facepyc.htm?contextscope=all"
 "#simaker-facegetnormalpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getNormal:12 of
+#: abaqus.BasicGeometry.Face.Face.getNormal:9 of
 msgid ""
 "A tuple specifying the **X**-, **Y**-, and **Z** coordinates of the point"
 " where the normal to the face is desired. If the **point** does not lie "
 "on the face it will be projected onto the face."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getNormal:19 of
+#: abaqus.BasicGeometry.Face.Face.getNormal:13 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components "
 "of the normal to the face."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getNormal:28 of
-msgid ""
-":obj:`An` :obj:`exception` :obj:`is` :obj:`raised` :obj:`if` :obj:`the` "
-":obj:`optional` :obj:`argument` **point** :obj:`is` :obj:`provided` "
-":obj:`but` :obj:`the` :obj:`point` :obj:`cannot`"
-msgstr ""
-
-#: abaqus.BasicGeometry.Face.Face.getNormal:39 of
-msgid ":obj:`be` :obj:`projected` :obj:`onto` :obj:`the` face."
-msgstr ""
-
-#: abaqus.BasicGeometry.Face.Face.getSize:5 of
+#: abaqus.BasicGeometry.Face.Face.getSize:4 of
 msgid ""
 "Check `Face.getSize on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facepyc.htm?contextscope=all"
 "#simaker-facegetsizepyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.getSize:10 of
+#: abaqus.BasicGeometry.Face.Face.getSize:7 of
 msgid ""
 "A Bool specifying whether verbose output is printed. The default value is"
 " True."
 msgstr ""
 
-#: abaqus.BasicGeometry.Face.Face.isNormalFlipped:10 of
+#: abaqus.BasicGeometry.Face.Face.isNormalFlipped:4 of
 msgid "A Boolean value of True if the normal is flipped and False if not."
 msgstr ""
 
-#: ../../docstring abaqus.BasicGeometry.Face.Face.pointOn:2 of
+#: ../../docstring abaqus.BasicGeometry.Face.Face.pointOn:1 of
 msgid ""
 "A tuple of tuples of Floats specifying the coordinates. For a face of a "
 "shell **pointOn** specifies the **X**-, **Y**-, and **Z**-coordinates of "
@@ -2626,13 +2578,13 @@ msgstr ""
 msgid "FaceArray"
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray:2 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray:1 of
 msgid ""
 "The FaceArray is a sequence of Face objects. If the part is modified, "
 "then FaceArray must be updated for that part."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray:33 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray:32 of
 msgid ""
 "Check `FaceArray on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facearraypyc.htm?contextscope=all>`__."
@@ -2699,7 +2651,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:2 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:1 of
 msgid ""
 "This method returns an array of face objects that lie within the "
 "specified bounding box."
@@ -2713,7 +2665,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:2 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:1 of
 msgid ""
 "This method returns an array of face objects that lie within the "
 "specified bounding cylinder."
@@ -2727,7 +2679,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:2 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:1 of
 msgid ""
 "This method returns an array of face objects that lie within the "
 "specified bounding sphere."
@@ -2740,7 +2692,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:2 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:1 of
 msgid ""
 "This method returns a dictionary of two tuples representing minimum and "
 "maximum boundary values of the bounding box of the minimum size "
@@ -2755,7 +2707,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:2 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:1 of
 msgid ""
 "This method returns an object or objects in the FaceArray closest to the "
 "given set of points, where the given points need not lie on the faces in "
@@ -2765,7 +2717,7 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__repr__ <abaqus.BasicGeometry.FaceArray.FaceArray.__repr__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -2814,13 +2766,13 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__iter__ <abaqus.BasicGeometry.FaceArray.FaceArray.__iter__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__len__ <abaqus.BasicGeometry.FaceArray.FaceArray.__len__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -2883,23 +2835,21 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__reversed__ "
-"<abaqus.BasicGeometry.FaceArray.FaceArray.__reversed__>`\\ \\(\\/\\)"
+"<abaqus.BasicGeometry.FaceArray.FaceArray.__reversed__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__sizeof__ "
-"<abaqus.BasicGeometry.FaceArray.FaceArray.__sizeof__>`\\ \\(\\/\\)"
+"<abaqus.BasicGeometry.FaceArray.FaceArray.__sizeof__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`clear <abaqus.BasicGeometry.FaceArray.FaceArray.clear>`\\ "
-"\\(\\/\\)"
+msgid ":py:obj:`clear <abaqus.BasicGeometry.FaceArray.FaceArray.clear>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`copy <abaqus.BasicGeometry.FaceArray.FaceArray.copy>`\\ \\(\\/\\)"
+msgid ":py:obj:`copy <abaqus.BasicGeometry.FaceArray.FaceArray.copy>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -2947,7 +2897,7 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`reverse <abaqus.BasicGeometry.FaceArray.FaceArray.reverse>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -2975,7 +2925,7 @@ msgid ""
 "<abaqus.BasicGeometry.FaceArray.FaceArray._is_protocol>`\\"
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:2 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:1 of
 msgid ""
 "This method returns the object or objects in the FaceArray located at the"
 " given coordinates. findAt initially uses the ACIS tolerance of 1E-6. As "
@@ -2991,27 +2941,43 @@ msgid ""
 "FaceArray represents such subset."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:16 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:15 of
 msgid ""
 "Check `FaceArray.findAt on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facearraypyc.htm?contextscope=all"
 "#simaker-facearrayfindatpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:21 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:18 of
+msgid ""
+"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
+" of the object to find. `findAt` returns either a Face object or a "
+"sequence of Face objects based on the type of input.  * If "
+"**coordinates** is a sequence of Floats, findAt returns the Face object "
+"at that point.  * If you omit the **coordinates** keyword argument, "
+"findAt accepts as arguments a   sequence of pairs of sequences describing"
+" each face's coordinate and normal, and findAt   returns a sequence of "
+"Face objects at the given locations. If you omit the **coordinates**   "
+"keyword argument, you must also omit the **normal** argument::      faces"
+" = f.findAt(((-16.438578, -41.835673, -24.19804), ),"
+"                      ((25.210364, -35.689868, 1.860314), ),"
+"                      ((26.727683, -38.207055, 4.164759), ))"
+msgstr ""
+
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:18 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
 " of the object to find. `findAt` returns either a Face object or a "
 "sequence of Face objects based on the type of input."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:25 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:22 of
 msgid ""
 "If **coordinates** is a sequence of Floats, findAt returns the Face "
 "object at that point."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:27 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:24 of
 msgid ""
 "If you omit the **coordinates** keyword argument, findAt accepts as "
 "arguments a sequence of pairs of sequences describing each face's "
@@ -3020,81 +2986,94 @@ msgid ""
 "you must also omit the **normal** argument::"
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:38 of
-msgid "**normal**"
-msgstr ""
-
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:37 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:33 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components "
 "of a vector indicating the face normal."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:59
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask:30 of
-msgid ":obj:`Face`"
-msgstr ""
-
-#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:47 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:39 of
 msgid "A :py:class:`~abaqus.BasicGeometry.Face.Face` object."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:27 of
-msgid ""
-":obj:`Dict`\\[:class:`python:str`, :obj:`Tuple`\\[:class:`python:float`, "
-"...]]"
+#: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:40
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask:13 of
+msgid ":class:`Face`"
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:12 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:4 of
+msgid ""
+"A Dictionary object with the following items:  - **low**: a tuple of "
+"three floats representing the minimum **X** -, **Y** -, and **Z**  "
+"-boundary   values of the bounding box. - **high**: a tuple of three "
+"floats representing the maximum **X** -, **Y** -, and **Z**  -boundary   "
+"values of the bounding box."
+msgstr ""
+
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:6 of
 msgid ""
 "**low**: a tuple of three floats representing the minimum **X** -, **Y** "
 "-, and **Z**  -boundary values of the bounding box."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:14 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:8 of
 msgid ""
 "**high**: a tuple of three floats representing the maximum **X** -, **Y**"
 " -, and **Z**  -boundary values of the bounding box."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:5 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:10 of
+msgid ":class:`Dict[str`, :class:`Tuple[float`, :class:`...]]`"
+msgstr ""
+
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:4 of
 msgid ""
 "Check `FaceArray.getByBoundingBox on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facearraypyc.htm?contextscope=all"
 "#simaker-facearraygetbyboundingboxpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:6 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingCylinder:5 of
 msgid ""
 "Check `FaceArray.getByBoundingCylinder on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facearraypyc.htm?contextscope=all"
 "#simaker-facearraygetbyboundingcylinderpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:6 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingSphere:5 of
 msgid ""
 "Check `FaceArray.getByBoundingSphere on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facearraypyc.htm?contextscope=all"
 "#simaker-facearraygetbyboundingspherepyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:6 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:5 of
 msgid ""
 "Check `FaceArray.getClosest on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facearraypyc.htm?contextscope=all"
 "#simaker-facearraygetclosestpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:11
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:11
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:12
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:11 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:8 of
+msgid ""
+"A sequence of a sequence of floats, where each sequence of floats "
+"describes the **X**-, **Y**-, and **Z**-coordinates of a point::      >>>"
+" r=f.getClosest(coordinates=((20.0, 20.0, 10.0), (-1.0, -15.0, 15), ))"
+"     >>> r.keys()     [0, 1]     >>> r[0]     "
+"(mdb.models['Model-1'].parts['Part-1'].faces[0], (15.7090625762939, 20.0,"
+" 10.0))"
+msgstr ""
+
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:8
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:8
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:9
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:8 of
 msgid ""
 "A sequence of a sequence of floats, where each sequence of floats "
 "describes the **X**-, **Y**-, and **Z**-coordinates of a point::"
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:27 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getClosest:20 of
 msgid ""
 "This method returns a dictionary object. The key to the dictionary object"
 " is the position of the input point in the tuple specified in the "
@@ -3106,20 +3085,20 @@ msgid ""
 " the Face to the given point. See program listing above."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getExteriorEdges:2 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getExteriorEdges:1 of
 msgid ""
 "This method returns the edges on the exterior of the faces in the "
 "FaceArray. That is, it returns the edges that are referenced by exactly "
 "one of the faces in the sequence."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getExteriorEdges:10 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getExteriorEdges:4 of
 msgid ""
 "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object "
 "specifying the exterior edges."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask:2 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask:1 of
 msgid ""
 "This method returns the object or objects in the FaceArray identified "
 "using the specified **mask**. This command is generated when the "
@@ -3127,14 +3106,14 @@ msgid ""
 " are involved, this method is highly efficient."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask:8 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask:7 of
 msgid ""
 "Check `FaceArray.getSequenceFromMask on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-facearraypyc.htm?contextscope=all"
 "#simaker-facearraygetsequencefrommaskpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask:18 of
+#: abaqus.BasicGeometry.FaceArray.FaceArray.getSequenceFromMask:12 of
 msgid ""
 "A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a sequence of "
 "Face objects."
@@ -3144,14 +3123,14 @@ msgstr ""
 msgid "IgnoredEdge"
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge:2 of
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge:1 of
 msgid ""
 "An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object is a "
 "one-dimensional region of geometry that has been abstracted away by a "
 "virtual topology feature."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge:15 of
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge:14 of
 msgid ""
 "Check `IgnoredEdge on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignorededgepyc.htm?contextscope=all>`__."
@@ -3162,7 +3141,7 @@ msgid ":py:obj:`index <abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.index>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.index:2 of
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.index:1 of
 msgid "An Int specifying the index of the IgnoredEdge in the IgnoredEdgeArray."
 msgstr ""
 
@@ -3184,7 +3163,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getRadius:2 of
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getRadius:1 of
 msgid "This method returns the radius of a circular IgnoredEdge object."
 msgstr ""
 
@@ -3196,27 +3175,27 @@ msgid ""
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:2 of
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:1 of
 msgid ""
 "This method returns curvature information at a location on the "
 "IgnoredEdge object."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:5 of
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:4 of
 msgid ""
 "Check `IgnoredEdge.getCurvature on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignorededgepyc.htm?contextscope=all"
 "#simaker-ignorededgegetcurvaturepyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:10 of
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:7 of
 msgid ""
 "A Float specifying the normalized parameter location on the IgnoredEdge "
 "where the curvature is to be computed. This argument is mutually "
 "exclusive with the argument **point**."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:15 of
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:11 of
 msgid ""
 "A tuple of **X**-, **Y**-, and **Z**-coordinates of a point at which the "
 "curvature is to be computed. If **point** does not lie on the IgnoredEdge"
@@ -3224,7 +3203,7 @@ msgid ""
 "projected point."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:22 of
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:15 of
 msgid ""
 "A dictionary with keys 'evaluationPoint', 'curvature', 'radius', "
 "'tangent'. Where 'evaluationPoint' specifies the location at which the "
@@ -3233,17 +3212,7 @@ msgid ""
 "specifies the tangent to the IgnoredEdge at that location."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getCurvature:41 of
-msgid ":obj:`The` :obj:`given` :obj:`IgnoredEdge` :obj:`is` :obj:`straight`"
-msgstr ""
-
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getRadius:25 of
-msgid ""
-":obj:`The` :obj:`given` :obj:`IgnoredEdge` :obj:`object` :obj:`is` "
-":obj:`not` :obj:`circular`"
-msgstr ""
-
-#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize:5 of
+#: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize:4 of
 msgid ""
 "Check `IgnoredEdge.getSize on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignorededgepyc.htm?contextscope=all"
@@ -3254,13 +3223,13 @@ msgstr ""
 msgid "IgnoredEdgeArray"
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray:2 of
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray:1 of
 msgid ""
 "The IgnoredEdgeArray is a sequence of IgnoredEdge objects. If the part is"
 " modified, then IgnoredEdgeArray must be updated for that part."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray:15 of
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray:14 of
 msgid ""
 "Check `IgnoredEdgeArray on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignorededgearraypyc.htm?contextscope=all>`__."
@@ -3307,7 +3276,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:2 of
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:1 of
 msgid ""
 "This method returns a object or objects in the IgnoredEdgeArray closest "
 "to the given set of points, where the given points need not lie on the "
@@ -3318,7 +3287,7 @@ msgstr ""
 msgid ""
 ":py:obj:`__repr__ "
 "<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__repr__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -3374,7 +3343,7 @@ msgstr ""
 msgid ""
 ":py:obj:`__iter__ "
 "<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__iter__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -3388,7 +3357,7 @@ msgstr ""
 msgid ""
 ":py:obj:`__len__ "
 "<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__len__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -3457,28 +3426,26 @@ msgstr ""
 msgid ""
 ":py:obj:`__reversed__ "
 "<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__reversed__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__sizeof__ "
 "<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__sizeof__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`clear "
-"<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.clear>`\\ "
-"\\(\\/\\)"
+"<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.clear>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`copy "
-"<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.copy>`\\ "
-"\\(\\/\\)"
+"<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.copy>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -3534,7 +3501,7 @@ msgstr ""
 msgid ""
 ":py:obj:`reverse "
 "<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.reverse>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -3563,7 +3530,7 @@ msgid ""
 "<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray._is_protocol>`\\"
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:2 of
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:1 of
 msgid ""
 "This method returns the object or objects in the IgnoredEdgeArray located"
 " at the given coordinates. findAt initially uses the ACIS tolerance of "
@@ -3580,14 +3547,28 @@ msgid ""
 "represents such subset."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:16 of
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:15 of
 msgid ""
 "Check `IgnoredEdgeArray.findAt on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignorededgearraypyc.htm?contextscope=all"
 "#simaker-ignorededgearrayfindatpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:21 of
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:18 of
+msgid ""
+"A sequence of Floats specifying the **X**-, **Y**-, and **Z**- "
+"coordinates of the object to find.findAt returns either an IgnoredEdge "
+"object or a sequence of IgnoredEdge objects based on the type of input.If"
+" **coordinates** is a sequence of Floats, findAt returns the IgnoredEdge "
+"object at that point.If you omit the **coordinates** keyword argument, "
+"findAt accepts as arguments a sequence of sequence of floats in the "
+"following format::      ignoredEdges = e.findAt(((20.19686, -169.513997, "
+"27.798593), ),                             ((19.657627, -167.295749, "
+"27.056402), ),                             ((18.274129, -157.144741, "
+"25.15218), ))"
+msgstr ""
+
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:18 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**- "
 "coordinates of the object to find.findAt returns either an IgnoredEdge "
@@ -3598,28 +3579,38 @@ msgid ""
 "following format::"
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:51
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getSequenceFromMask:30
-#: of
-msgid ":obj:`IgnoredEdge`"
-msgstr ""
-
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:39
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getSequenceFromMask:18
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:32
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getSequenceFromMask:12
 #: of
 msgid ""
 "An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object or a "
 "sequence of IgnoredEdge objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:6 of
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:33
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getSequenceFromMask:13
+#: of
+msgid ":class:`IgnoredEdge`"
+msgstr ""
+
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:5 of
 msgid ""
 "Check `IgnoredEdgeArray.getClosest on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignorededgearraypyc.htm?contextscope=all"
 "#simaker-ignorededgearraygetclosestpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:27 of
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:8 of
+msgid ""
+"A sequence of a sequence of floats, where each sequence of floats "
+"describes the **X**-, **Y**-, and **Z**-coordinates of a point::      >>>"
+" r=e.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, -15.0, 15), ))"
+"     >>> r.keys()     [0, 1]     >>> r[0]     "
+"(mdb.models['Model-1'].parts['Part-1'].ignoredEdges[3], "
+"(15.7090625762939, 20.0, 10.0))"
+msgstr ""
+
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getClosest:20 of
 msgid ""
 "This method returns a dictionary object. The key to the dictionary object"
 " is the position of the input point in the tuple specified in the "
@@ -3632,7 +3623,7 @@ msgid ""
 "above."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getSequenceFromMask:2
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getSequenceFromMask:1
 #: of
 msgid ""
 "This method returns the object or objects in the IgnoredEdgeArray "
@@ -3641,7 +3632,7 @@ msgid ""
 "objects are involved, this method is highly efficient."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getSequenceFromMask:8
+#: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.getSequenceFromMask:7
 #: of
 msgid ""
 "Check `IgnoredEdgeArray.getSequenceFromMask on help.3ds.com/2021 "
@@ -3653,14 +3644,14 @@ msgstr ""
 msgid "IgnoredVertex"
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex:2 of
+#: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex:1 of
 msgid ""
 "An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object "
 "is a point region of the geometry that was abstracted away by a virtual "
 "topology feature."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex:15 of
+#: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex:14 of
 msgid ""
 "Check `IgnoredVertex on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignoredvertexpyc.htm?contextscope=all>`__."
@@ -3671,7 +3662,7 @@ msgid ":py:obj:`index <abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.index>`\
 msgstr ""
 
 #: ../../None:4:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.index:2 of
+#: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.index:1 of
 msgid ""
 "An Int specifying the index of the IgnoredVertex in the "
 "IgnoredVertexArray."
@@ -3684,7 +3675,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.pointOn:2 of
+#: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.pointOn:1 of
 msgid ""
 "A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of"
 " the vertex."
@@ -3694,13 +3685,13 @@ msgstr ""
 msgid "IgnoredVertexArray"
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray:2 of
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray:1 of
 msgid ""
 "The IgnoredVertexArray is a sequence of IgnoredVertex objects. If the "
 "part is modified, then IgnoredVertexArray must be updated for that part."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray:15 of
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray:14 of
 msgid ""
 "Check `IgnoredVertexArray on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignoredvertexarraypyc.htm?contextscope=all>`__."
@@ -3747,7 +3738,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:2 of
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:1 of
 msgid ""
 "This method returns a object or objects in the IgnoredVertexArray closest"
 " to the given set of points, where the given points need not lie on the "
@@ -3758,7 +3749,7 @@ msgstr ""
 msgid ""
 ":py:obj:`__repr__ "
 "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__repr__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -3814,7 +3805,7 @@ msgstr ""
 msgid ""
 ":py:obj:`__iter__ "
 "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__iter__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -3828,7 +3819,7 @@ msgstr ""
 msgid ""
 ":py:obj:`__len__ "
 "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__len__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -3897,28 +3888,28 @@ msgstr ""
 msgid ""
 ":py:obj:`__reversed__ "
 "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__reversed__>`\\"
-" \\(\\/\\)"
+" \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__sizeof__ "
 "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__sizeof__>`\\"
-" \\(\\/\\)"
+" \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`clear "
 "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.clear>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`copy "
 "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.copy>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -3974,7 +3965,7 @@ msgstr ""
 msgid ""
 ":py:obj:`reverse "
 "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.reverse>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -4003,7 +3994,7 @@ msgid ""
 "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray._is_protocol>`\\"
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:2 of
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:1 of
 msgid ""
 "This method returns the object or objects in the IgnoredVertexArray "
 "located at the given coordinates. findAt initially uses the ACIS "
@@ -4016,14 +4007,27 @@ msgid ""
 " a subset even if the IgnoredVertexArray represents such subset."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:13 of
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:12 of
 msgid ""
 "Check `IgnoredVertexArray.findAt on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignoredvertexarraypyc.htm?contextscope=all"
 "#simaker-ignoredvertexarrayfindatpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:18 of
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:15 of
+msgid ""
+"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
+" of the object to find.findAt returns either a IgnoredVertex object or a "
+"sequence of IgnoredVertex objects based on the type of input.If "
+"**coordinates** is a sequence of Floats, findAt returns the IgnoredVertex"
+" object at that point.If you omit the **coordinates** keyword argument, "
+"findAt accepts as arguments a sequence of sequence of floats in the "
+"following format::      verts = v.findAt(((20.19686, -169.513997, "
+"27.798593), ),                     ((19.657627, -167.295749, 27.056402), "
+"),                     ((18.274129, -157.144741, 25.15218), ))"
+msgstr ""
+
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:15 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
 " of the object to find.findAt returns either a IgnoredVertex object or a "
@@ -4034,28 +4038,38 @@ msgid ""
 "following format::"
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:48
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask:30
-#: of
-msgid ":obj:`IgnoredVertex`"
-msgstr ""
-
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:36
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask:18
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:29
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask:12
 #: of
 msgid ""
 "An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object "
 "or a sequence of IgnoredVertex objects."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:7 of
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.findAt:30
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask:13
+#: of
+msgid ":class:`IgnoredVertex`"
+msgstr ""
+
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:6 of
 msgid ""
 "Check `IgnoredVertexArray.getClosest on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignoredvertexarraypyc.htm?contextscope=all"
 "#simaker-ignoredvertexarraygetclosestpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:28 of
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:9 of
+msgid ""
+"A sequence of a sequence of floats, where each sequence of floats "
+"describes the **X**-, **Y**-, and **Z**-coordinates of a point::      >>>"
+" r=e.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, -15.0, 15), ))"
+"     >>> r.keys()     [0, 1]     >>> r[0]     "
+"(mdb.models['Model-1'].parts['Part-1'].ignoredVertices[3], "
+"(15.7090625762939, 20.0, 10.0))"
+msgstr ""
+
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getClosest:21 of
 msgid ""
 "This method returns a dictionary object. The key to the dictionary object"
 " is the position of the input point in the tuple specified in the "
@@ -4067,7 +4081,7 @@ msgid ""
 "of the IgnoredVertex. See program listing above."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask:2
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask:1
 #: of
 msgid ""
 "This method returns the object or objects in the IgnoredVertexArray "
@@ -4076,7 +4090,7 @@ msgid ""
 "objects are involved, this method is highly efficient."
 msgstr ""
 
-#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask:8
+#: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.getSequenceFromMask:7
 #: of
 msgid ""
 "Check `IgnoredVertexArray.getSequenceFromMask on help.3ds.com/2021 "
@@ -4088,7 +4102,7 @@ msgstr ""
 msgid "InterestingPoint"
 msgstr ""
 
-#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:2 of
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:1 of
 msgid ""
 "Interesting points can be located at the following: - The middle of an "
 "edge. - The middle of an arc. - The center of an arc. An "
@@ -4096,7 +4110,7 @@ msgid ""
 "object is a temporary object and cannot be accessed from the Mdb object."
 msgstr ""
 
-#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:16 of
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:15 of
 msgid ""
 "Check `InterestingPoint on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-interestingpointpyc.htm?contextscope=all>`__."
@@ -4117,13 +4131,13 @@ msgstr ""
 msgid "ModelDot"
 msgstr ""
 
-#: abaqus.BasicGeometry.ModelDot.ModelDot:2 of
+#: abaqus.BasicGeometry.ModelDot.ModelDot:1 of
 msgid ""
 "The ModelDot object can be used to access an actual MeshNode, "
 "ReferencePoint, or ConstrainedSketchVertex object."
 msgstr ""
 
-#: abaqus.BasicGeometry.ModelDot.ModelDot:6 of
+#: abaqus.BasicGeometry.ModelDot.ModelDot:5 of
 msgid ""
 "Check `ModelDot on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modeldotpyc.htm?contextscope=all>`__."
@@ -4137,14 +4151,14 @@ msgstr ""
 msgid "ReferencePoint"
 msgstr ""
 
-#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint:2 of
+#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint:1 of
 msgid ""
 "The ReferencePoint object has no direct constructor; it is created when a"
 " Feature object is created. The ReferencePoint method creates a Feature "
 "object that creates a ReferencePoint object."
 msgstr ""
 
-#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint:27 of
+#: abaqus.BasicGeometry.ReferencePoint.ReferencePoint:26 of
 msgid ""
 "Check `ReferencePoint on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-referencepointpyc.htm?contextscope=all>`__."
@@ -4181,8 +4195,7 @@ msgstr ""
 #: ../../None:34:<autosummary>:1
 msgid ""
 ":py:obj:`__repr__ "
-"<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__repr__>`\\ "
-"\\(\\/\\)"
+"<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__repr__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -4237,8 +4250,7 @@ msgstr ""
 #: ../../None:34:<autosummary>:1
 msgid ""
 ":py:obj:`__iter__ "
-"<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__iter__>`\\ "
-"\\(\\/\\)"
+"<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__iter__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -4284,8 +4296,7 @@ msgstr ""
 #: ../../None:34:<autosummary>:1
 msgid ""
 ":py:obj:`__len__ "
-"<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__len__>`\\ "
-"\\(\\/\\)"
+"<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__len__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -4346,7 +4357,7 @@ msgstr ""
 msgid ""
 ":py:obj:`pop "
 "<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.pop>`\\ "
-"\\(key\\[\\, default\\]\\)"
+"\\(k\\[\\,d\\]\\)"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -4358,8 +4369,7 @@ msgstr ""
 #: ../../None:34:<autosummary>:1
 msgid ""
 ":py:obj:`popitem "
-"<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.popitem>`\\ "
-"\\(\\/\\)"
+"<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.popitem>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -4402,7 +4412,7 @@ msgstr ""
 msgid ""
 ":py:obj:`fromkeys "
 "<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.fromkeys>`\\ "
-"\\(iterable\\[\\, value\\]\\)"
+"\\(\\[value\\]\\)"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -4425,7 +4435,7 @@ msgstr ""
 msgid ""
 ":py:obj:`__reversed__ "
 "<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__reversed__>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -4455,7 +4465,7 @@ msgstr ""
 msgid "Transform"
 msgstr ""
 
-#: abaqus.BasicGeometry.Transform.Transform:2 of
+#: abaqus.BasicGeometry.Transform.Transform:1 of
 msgid ""
 "The MakeSketchTransform method creates a Transform object. The Transform "
 "object has no direct constructor. A "
@@ -4464,7 +4474,7 @@ msgid ""
 "coordinates to assembly coordinates or to part coordinates."
 msgstr ""
 
-#: abaqus.BasicGeometry.Transform.Transform:13 of
+#: abaqus.BasicGeometry.Transform.Transform:12 of
 msgid ""
 "Check `Transform on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-transformpyc.htm?contextscope=all>`__."
@@ -4477,32 +4487,30 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: abaqus.BasicGeometry.Transform.Transform.matrix:2 of
+#: abaqus.BasicGeometry.Transform.Transform.matrix:1 of
 msgid "This method returns the transformation matrix as a tuple of 12 Floats."
 msgstr ""
 
-#: abaqus.BasicGeometry.Transform.Transform.matrix:21 of
-msgid ""
-":obj:`typing.Tuple`\\[:class:`python:float`, :class:`python:float`, "
-":class:`python:float`, :class:`python:float`, :class:`python:float`, "
-":class:`python:float`, :class:`python:float`, :class:`python:float`, "
-":class:`python:float`, :class:`python:float`, :class:`python:float`, "
-":class:`python:float`]"
+#: abaqus.BasicGeometry.Transform.Transform.matrix:3 of
+msgid "A tuple of 12 Floats."
 msgstr ""
 
-#: abaqus.BasicGeometry.Transform.Transform.matrix:9 of
-msgid "A tuple of 12 Floats."
+#: abaqus.BasicGeometry.Transform.Transform.matrix:4 of
+msgid ""
+":class:`Tuple[float`, :class:`float`, :class:`float`, :class:`float`, "
+":class:`float`, :class:`float`, :class:`float`, :class:`float`, "
+":class:`float`, :class:`float`, :class:`float`, :class:`float]`"
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/geometry.rst:147
 msgid "Vertex"
 msgstr ""
 
-#: abaqus.BasicGeometry.Vertex.Vertex:2 of
+#: abaqus.BasicGeometry.Vertex.Vertex:1 of
 msgid "Vertices are point regions of geometry."
 msgstr ""
 
-#: abaqus.BasicGeometry.Vertex.Vertex:25 of
+#: abaqus.BasicGeometry.Vertex.Vertex:24 of
 msgid ""
 "Check `Vertex on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexpyc.htm?contextscope=all>`__."
@@ -4513,7 +4521,7 @@ msgid ":py:obj:`index <abaqus.BasicGeometry.Vertex.Vertex.index>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Vertex.Vertex.index:2 of
+#: abaqus.BasicGeometry.Vertex.Vertex.index:1 of
 msgid ""
 "An Int specifying the index of the ConstrainedSketchVertex in the "
 "VertexArray."
@@ -4526,7 +4534,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Vertex.Vertex.isReferenceRep:2 of
+#: abaqus.BasicGeometry.Vertex.Vertex.isReferenceRep:1 of
 msgid ""
 "A Boolean specifying whether the vertex belongs to the reference "
 "representation of the Part or Instance."
@@ -4537,7 +4545,7 @@ msgid ":py:obj:`pointOn <abaqus.BasicGeometry.Vertex.Vertex.pointOn>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Vertex.Vertex.pointOn:2 of
+#: abaqus.BasicGeometry.Vertex.Vertex.pointOn:1 of
 msgid ""
 "A tuple of Floats specifying the **X** -, **Y** -, and **Z** -coordinates"
 " of the vertex."
@@ -4548,7 +4556,7 @@ msgid ":py:obj:`featureName <abaqus.BasicGeometry.Vertex.Vertex.featureName>`\\"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Vertex.Vertex.featureName:2 of
+#: abaqus.BasicGeometry.Vertex.Vertex.featureName:1 of
 msgid ""
 "A tuple of Floats specifying the name of the feature that created this "
 "vertex."
@@ -4559,7 +4567,7 @@ msgid ":py:obj:`instanceName <abaqus.BasicGeometry.Vertex.Vertex.instanceName>`\
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Vertex.Vertex.instanceName:2 of
+#: abaqus.BasicGeometry.Vertex.Vertex.instanceName:1 of
 msgid ""
 "A tuple of Floats specifying the name of the part instance for this "
 "vertex (if applicable)."
@@ -4569,7 +4577,7 @@ msgstr ""
 msgid ":py:obj:`getEdges <abaqus.BasicGeometry.Vertex.Vertex.getEdges>`\\ \\(\\)"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1 abaqus.BasicGeometry.Vertex.Vertex.getEdges:2
+#: ../../None:5:<autosummary>:1 abaqus.BasicGeometry.Vertex.Vertex.getEdges:1
 #: of
 msgid ""
 "This method returns a sequence consisting of the edge ids of the edges "
@@ -4580,7 +4588,7 @@ msgstr ""
 msgid ":py:obj:`getNodes <abaqus.BasicGeometry.Vertex.Vertex.getNodes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1 abaqus.BasicGeometry.Vertex.Vertex.getNodes:2
+#: ../../None:5:<autosummary>:1 abaqus.BasicGeometry.Vertex.Vertex.getNodes:1
 #: of
 msgid ""
 "This method returns an array of node objects that are associated with the"
@@ -4594,7 +4602,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
-#: abaqus.BasicGeometry.Vertex.Vertex.getElements:2 of
+#: abaqus.BasicGeometry.Vertex.Vertex.getElements:1 of
 msgid ""
 "This method returns an array of element objects that are associated with "
 "the vertex."
@@ -4604,13 +4612,13 @@ msgstr ""
 msgid "VertexArray"
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray:2 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray:1 of
 msgid ""
 "The VertexArray is a sequence of ConstrainedSketchVertex objects. If the "
 "part is modified, then VertexArray must be updated for that part."
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray:26 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray:25 of
 msgid ""
 "Check `VertexArray on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexarraypyc.htm?contextscope=all>`__."
@@ -4665,7 +4673,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:2 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:1 of
 msgid ""
 "This method returns an array of vertex objects that lie within the "
 "specified bounding box."
@@ -4679,7 +4687,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:2 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:1 of
 msgid ""
 "This method returns an array of vertex objects that lie within the "
 "specified bounding cylinder."
@@ -4693,7 +4701,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:2 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:1 of
 msgid ""
 "This method returns an array of vertex objects that lie within the "
 "specified bounding sphere."
@@ -4706,7 +4714,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox:2 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getBoundingBox:1 of
 msgid ""
 "This method returns a dictionary of two tuples representing minimum and "
 "maximum boundary values of the bounding box of the minimum size "
@@ -4721,7 +4729,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:2 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:1 of
 msgid ""
 "This method returns a object or objects in the VertexArray closest to the"
 " given set of points, where the given points need not lie on "
@@ -4731,7 +4739,7 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__repr__ "
-"<abaqus.BasicGeometry.VertexArray.VertexArray.__repr__>`\\ \\(\\/\\)"
+"<abaqus.BasicGeometry.VertexArray.VertexArray.__repr__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -4780,13 +4788,13 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__iter__ "
-"<abaqus.BasicGeometry.VertexArray.VertexArray.__iter__>`\\ \\(\\/\\)"
+"<abaqus.BasicGeometry.VertexArray.VertexArray.__iter__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__len__ "
-"<abaqus.BasicGeometry.VertexArray.VertexArray.__len__>`\\ \\(\\/\\)"
+"<abaqus.BasicGeometry.VertexArray.VertexArray.__len__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -4854,25 +4862,25 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__reversed__ "
-"<abaqus.BasicGeometry.VertexArray.VertexArray.__reversed__>`\\ \\(\\/\\)"
+"<abaqus.BasicGeometry.VertexArray.VertexArray.__reversed__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`__sizeof__ "
-"<abaqus.BasicGeometry.VertexArray.VertexArray.__sizeof__>`\\ \\(\\/\\)"
+"<abaqus.BasicGeometry.VertexArray.VertexArray.__sizeof__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`clear <abaqus.BasicGeometry.VertexArray.VertexArray.clear>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`copy <abaqus.BasicGeometry.VertexArray.VertexArray.copy>`\\ "
-"\\(\\/\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -4920,7 +4928,7 @@ msgstr ""
 #: ../../None:36:<autosummary>:1
 msgid ""
 ":py:obj:`reverse "
-"<abaqus.BasicGeometry.VertexArray.VertexArray.reverse>`\\ \\(\\/\\)"
+"<abaqus.BasicGeometry.VertexArray.VertexArray.reverse>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -4948,7 +4956,7 @@ msgid ""
 "<abaqus.BasicGeometry.VertexArray.VertexArray._is_protocol>`\\"
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:2 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:1 of
 msgid ""
 "This method returns the object or objects in the VertexArray located at "
 "the given coordinates. findAt initially uses the ACIS tolerance of 1E-6. "
@@ -4961,14 +4969,28 @@ msgid ""
 "the VertexArray represents such subset."
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:13 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:12 of
 msgid ""
 "Check `VertexArray.findAt on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexarraypyc.htm?contextscope=all"
 "#simaker-vertexarrayfindatpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:18 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:15 of
+msgid ""
+"A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
+" of the object to find.findAt returns either a ConstrainedSketchVertex "
+"object or a sequence of ConstrainedSketchVertex objects based on the type"
+" of input.If **coordinates** is a sequence of Floats, findAt returns the "
+"ConstrainedSketchVertex object at that point.If you omit the "
+"**coordinates** keyword argument, findAt accepts as arguments a sequence "
+"of sequence of floats in the following format::      verts = "
+"v.findAt(((20.19686, -169.513997, 27.798593), ),                     "
+"((19.657627, -167.295749, 27.056402), ),                     ((18.274129,"
+" -157.144741, 25.15218), ))"
+msgstr ""
+
+#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:15 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
 " of the object to find.findAt returns either a ConstrainedSketchVertex "
@@ -4979,62 +5001,72 @@ msgid ""
 "of sequence of floats in the following format::"
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:47
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask:30 of
-msgid ":obj:`ConstrainedSketchVertex`"
-msgstr ""
-
-#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:35
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask:18 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:28
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask:12 of
 msgid ""
 "A "
 ":py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex`"
 " object or a sequence of ConstrainedSketchVertex objects.."
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:6 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.findAt:29
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask:13 of
+msgid ":class:`ConstrainedSketchVertex`"
+msgstr ""
+
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:5 of
 msgid ""
 "Check `VertexArray.getByBoundingBox on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexarraypyc.htm?contextscope=all"
 "#simaker-vertexarraygetbyboundingboxpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:43
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:36
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:31 of
-msgid ":obj:`VertexArray`"
-msgstr ""
-
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:31
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:24
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:19 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:20
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:16
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:12 of
 msgid ""
 "A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object, which"
 " is a sequence of ConstrainedSketchVertex objects.."
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:6 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingBox:21
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:17
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:13 of
+msgid ":class:`VertexArray`"
+msgstr ""
+
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingCylinder:5 of
 msgid ""
 "Check `VertexArray.getByBoundingCylinder on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexarraypyc.htm?contextscope=all"
 "#simaker-vertexarraygetbyboundingcylinderpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:6 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getByBoundingSphere:5 of
 msgid ""
 "Check `VertexArray.getByBoundingSphere on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexarraypyc.htm?contextscope=all"
 "#simaker-vertexarraygetbyboundingspherepyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:6 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:5 of
 msgid ""
 "Check `VertexArray.getClosest on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexarraypyc.htm?contextscope=all"
 "#simaker-vertexarraygetclosestpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:27 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:8 of
+msgid ""
+"A sequence of a sequence of floats, where each sequence of floats "
+"describes the **X**-, **Y**-, and **Z**-coordinates of a point::      >>>"
+" r=v.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, -15.0, 15), ))"
+"     >>> r.keys()     [0, 1]     >>> r[0]     "
+"(mdb.models['Model-1'].parts['Part-1'].vertices[0], (15.7090625762939, "
+"29.1666641235352, 20.0))"
+msgstr ""
+
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getClosest:20 of
 msgid ""
 "This method returns a dictionary object. The key to the dictionary object"
 " is the position of the input point in the tuple specified in the "
@@ -5046,7 +5078,7 @@ msgid ""
 " of the ConstrainedSketchVertex. See program listing above."
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask:2 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask:1 of
 msgid ""
 "This method returns the object or objects in the VertexArray identified "
 "using the specified **mask**. This command is generated when the "
@@ -5054,7 +5086,7 @@ msgid ""
 " are involved, this method is highly efficient."
 msgstr ""
 
-#: abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask:8 of
+#: abaqus.BasicGeometry.VertexArray.VertexArray.getSequenceFromMask:7 of
 msgid ""
 "Check `VertexArray.getSequenceFromMask on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexarraypyc.htm?contextscope=all"
@@ -5716,5 +5748,509 @@ msgstr ""
 #~ msgid ""
 #~ ":obj:`typing.Dict`\\[:class:`python:str`, "
 #~ ":obj:`typing.Tuple`\\[:class:`python:float`, ...]]"
+#~ msgstr ""
+
+#~ msgid ":obj:`CellArray`"
+#~ msgstr ""
+
+#~ msgid ":obj:`typing.List`\\[:class:`python:str`]"
+#~ msgstr ""
+
+#~ msgid ":obj:`typing.Tuple`\\[:class:`python:int`, ...]"
+#~ msgstr ""
+
+#~ msgid ":obj:`MeshElementArray`"
+#~ msgstr ""
+
+#~ msgid ":obj:`MeshNodeArray`"
+#~ msgstr ""
+
+#~ msgid "**printResults**"
+#~ msgstr ""
+
+#~ msgid ":class:`python:float`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__repr__ "
+#~ "<abaqus.BasicGeometry.CellArray.CellArray.__repr__>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__iter__ "
+#~ "<abaqus.BasicGeometry.CellArray.CellArray.__iter__>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__len__ "
+#~ "<abaqus.BasicGeometry.CellArray.CellArray.__len__>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__reversed__ "
+#~ "<abaqus.BasicGeometry.CellArray.CellArray.__reversed__>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__sizeof__ "
+#~ "<abaqus.BasicGeometry.CellArray.CellArray.__sizeof__>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`clear "
+#~ "<abaqus.BasicGeometry.CellArray.CellArray.clear>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copy <abaqus.BasicGeometry.CellArray.CellArray.copy>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`reverse "
+#~ "<abaqus.BasicGeometry.CellArray.CellArray.reverse>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid "**coordinates**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If **coordinates** is a sequence of "
+#~ "sequence of Floats, findAt returns a "
+#~ "sequence of Cell objects at the "
+#~ "given locations. The sequence of "
+#~ "sequence of Floats must be a "
+#~ "sequence of  sequence of point and "
+#~ "normal data, not a sequence of "
+#~ "point data. For example::"
+#~ msgstr ""
+
+#~ msgid "**printWarning**"
+#~ msgstr ""
+
+#~ msgid ":obj:`Cell`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`Dict`\\[:class:`python:str`, "
+#~ ":obj:`Tuple`\\[:class:`python:float`, :class:`python:float`, "
+#~ ":class:`python:float`]]"
+#~ msgstr ""
+
+#~ msgid "**xMin**"
+#~ msgstr ""
+
+#~ msgid "**yMin**"
+#~ msgstr ""
+
+#~ msgid "**zMin**"
+#~ msgstr ""
+
+#~ msgid "**xMax**"
+#~ msgstr ""
+
+#~ msgid "**yMax**"
+#~ msgstr ""
+
+#~ msgid "**zMax**"
+#~ msgstr ""
+
+#~ msgid "**center1**"
+#~ msgstr ""
+
+#~ msgid "**center2**"
+#~ msgstr ""
+
+#~ msgid "**radius**"
+#~ msgstr ""
+
+#~ msgid "**center**"
+#~ msgstr ""
+
+#~ msgid ":obj:`FaceArray`"
+#~ msgstr ""
+
+#~ msgid ":class:`python:str`"
+#~ msgstr ""
+
+#~ msgid "**mask**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Error: :obj:`The` :obj:`mask` :obj:`results` "
+#~ ":obj:`in` :obj:`an` :obj:`empty` "
+#~ ":term:`python:sequence`"
+#~ msgstr ""
+
+#~ msgid ":obj:`EdgeArray`"
+#~ msgstr ""
+
+#~ msgid "**parameter**"
+#~ msgstr ""
+
+#~ msgid "**point**"
+#~ msgstr ""
+
+#~ msgid ":class:`python:dict`"
+#~ msgstr ""
+
+#~ msgid ":obj:`The` :obj:`given` :obj:`edge` :obj:`is` :obj:`straight`"
+#~ msgstr ""
+
+#~ msgid "**angle**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`The` :obj:`given` :obj:`edges` :obj:`is` "
+#~ ":obj:`not` :obj:`circular`"
+#~ msgstr ""
+
+#~ msgid ":obj:`Boolean`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__repr__ "
+#~ "<abaqus.BasicGeometry.EdgeArray.EdgeArray.__repr__>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__iter__ "
+#~ "<abaqus.BasicGeometry.EdgeArray.EdgeArray.__iter__>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__len__ "
+#~ "<abaqus.BasicGeometry.EdgeArray.EdgeArray.__len__>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__reversed__ "
+#~ "<abaqus.BasicGeometry.EdgeArray.EdgeArray.__reversed__>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__sizeof__ "
+#~ "<abaqus.BasicGeometry.EdgeArray.EdgeArray.__sizeof__>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`clear "
+#~ "<abaqus.BasicGeometry.EdgeArray.EdgeArray.clear>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copy <abaqus.BasicGeometry.EdgeArray.EdgeArray.copy>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`reverse "
+#~ "<abaqus.BasicGeometry.EdgeArray.EdgeArray.reverse>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ":obj:`Edge`"
+#~ msgstr ""
+
+#~ msgid "**searchTolerance**"
+#~ msgstr ""
+
+#~ msgid ":obj:`typing.Tuple`\\[:class:`python:float`, ...]"
+#~ msgstr ""
+
+#~ msgid "**uParam**"
+#~ msgstr ""
+
+#~ msgid "**vParam**"
+#~ msgstr ""
+
+#~ msgid ":obj:`A` :class:`python:tuple` :obj:`of` integers."
+#~ msgstr ""
+
+#~ msgid "**faceSide**"
+#~ msgstr ""
+
+#~ msgid ":obj:`MeshFaceArray`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`An` :obj:`exception` :obj:`is` :obj:`raised`"
+#~ " :obj:`if` :obj:`the` :obj:`optional` "
+#~ ":obj:`argument` **point** :obj:`is` :obj:`provided`"
+#~ " :obj:`but` :obj:`the` :obj:`point` :obj:`cannot`"
+#~ msgstr ""
+
+#~ msgid ":obj:`be` :obj:`projected` :obj:`onto` :obj:`the` face."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__repr__ "
+#~ "<abaqus.BasicGeometry.FaceArray.FaceArray.__repr__>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__iter__ "
+#~ "<abaqus.BasicGeometry.FaceArray.FaceArray.__iter__>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__len__ "
+#~ "<abaqus.BasicGeometry.FaceArray.FaceArray.__len__>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__reversed__ "
+#~ "<abaqus.BasicGeometry.FaceArray.FaceArray.__reversed__>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__sizeof__ "
+#~ "<abaqus.BasicGeometry.FaceArray.FaceArray.__sizeof__>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`clear "
+#~ "<abaqus.BasicGeometry.FaceArray.FaceArray.clear>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copy <abaqus.BasicGeometry.FaceArray.FaceArray.copy>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`reverse "
+#~ "<abaqus.BasicGeometry.FaceArray.FaceArray.reverse>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid "**normal**"
+#~ msgstr ""
+
+#~ msgid ":obj:`Face`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`Dict`\\[:class:`python:str`, "
+#~ ":obj:`Tuple`\\[:class:`python:float`, ...]]"
+#~ msgstr ""
+
+#~ msgid ":obj:`The` :obj:`given` :obj:`IgnoredEdge` :obj:`is` :obj:`straight`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`The` :obj:`given` :obj:`IgnoredEdge` "
+#~ ":obj:`object` :obj:`is` :obj:`not` :obj:`circular`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__repr__ "
+#~ "<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__repr__>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__iter__ "
+#~ "<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__iter__>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__len__ "
+#~ "<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__len__>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__reversed__ "
+#~ "<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__reversed__>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__sizeof__ "
+#~ "<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.__sizeof__>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`clear "
+#~ "<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.clear>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copy "
+#~ "<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.copy>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`reverse "
+#~ "<abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.reverse>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ":obj:`IgnoredEdge`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__repr__ "
+#~ "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__repr__>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__iter__ "
+#~ "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__iter__>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__len__ "
+#~ "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__len__>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__reversed__ "
+#~ "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__reversed__>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__sizeof__ "
+#~ "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.__sizeof__>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`clear "
+#~ "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.clear>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copy "
+#~ "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.copy>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`reverse "
+#~ "<abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray.reverse>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ":obj:`IgnoredVertex`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__repr__ "
+#~ "<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__repr__>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__iter__ "
+#~ "<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__iter__>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__len__ "
+#~ "<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__len__>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`pop "
+#~ "<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.pop>`\\ "
+#~ "\\(key\\[\\, default\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`popitem "
+#~ "<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.popitem>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`fromkeys "
+#~ "<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.fromkeys>`\\ "
+#~ "\\(iterable\\[\\, value\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__reversed__ "
+#~ "<abaqus.BasicGeometry.ReferencePoints.ReferencePoints.__reversed__>`\\"
+#~ " \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`typing.Tuple`\\[:class:`python:float`, "
+#~ ":class:`python:float`, :class:`python:float`, "
+#~ ":class:`python:float`, :class:`python:float`, "
+#~ ":class:`python:float`, :class:`python:float`, "
+#~ ":class:`python:float`, :class:`python:float`, "
+#~ ":class:`python:float`, :class:`python:float`, "
+#~ ":class:`python:float`]"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__repr__ "
+#~ "<abaqus.BasicGeometry.VertexArray.VertexArray.__repr__>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__iter__ "
+#~ "<abaqus.BasicGeometry.VertexArray.VertexArray.__iter__>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__len__ "
+#~ "<abaqus.BasicGeometry.VertexArray.VertexArray.__len__>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__reversed__ "
+#~ "<abaqus.BasicGeometry.VertexArray.VertexArray.__reversed__>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__sizeof__ "
+#~ "<abaqus.BasicGeometry.VertexArray.VertexArray.__sizeof__>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`clear "
+#~ "<abaqus.BasicGeometry.VertexArray.VertexArray.clear>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copy "
+#~ "<abaqus.BasicGeometry.VertexArray.VertexArray.copy>`\\ \\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`reverse "
+#~ "<abaqus.BasicGeometry.VertexArray.VertexArray.reverse>`\\ "
+#~ "\\(\\/\\)"
+#~ msgstr ""
+
+#~ msgid ":obj:`ConstrainedSketchVertex`"
+#~ msgstr ""
+
+#~ msgid ":obj:`VertexArray`"
 #~ msgstr ""
 
