@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-28 00:22+0000\n"
+"POT-Creation-Date: 2022-10-01 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,18 +35,18 @@ msgstr ""
 msgid "CaeGuiPrefs"
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs:2 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs:1 of
 msgid ""
 "The CaeGuiPrefs object contains the details of the graphical preferences "
 "in a guiPreferences section of the abaqus_2021.gpr file."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs:6
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs:5 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs:5
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs:4 of
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs:12 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs:11 of
 msgid ""
 "Check `CaeGuiPrefs on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprcaeguiprefspyc.htm?contextscope=all>`__."
@@ -64,9 +64,9 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../docstring
-#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.fileName:2
-#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs:10
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:10 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.fileName:1
+#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs:7
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:7 of
 msgid "A String specifying the path to the preferences file."
 msgstr ""
 
@@ -83,7 +83,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save:2 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save:1 of
 msgid ""
 "This method saves the guiPreferences section specified in the current "
 "**fileName**."
@@ -97,11 +97,11 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs:2 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs:1 of
 msgid "This method saves the guiPreferences settings to the specified location."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save:5 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save:4 of
 msgid ""
 "Check `CaeGuiPrefs.save on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprcaeguiprefspyc.htm?contextscope=all"
@@ -119,41 +119,28 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save:24
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save:24 of
-msgid "**backupFile: Boolean**"
-msgstr ""
-
-#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save:10 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.save:7 of
 msgid ""
 "A Boolean specifying whether Abaqus should save a numbered backup copy of"
 " the preferences file, **fileName**. Default is True."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs:5 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs:4 of
 msgid ""
 "Check `CaeGuiPrefs.saveAs on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprcaeguiprefspyc.htm?contextscope=all"
 "#simaker-caeguiprefssaveaspyc>`__."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs.saveAs:23
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:10
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences:17
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:25
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:21 of
-msgid "**fileName: str**"
-msgstr ""
-
 #: ../../reference/kernel/cae_display_preferences.rst:19
 msgid "CaeKerPrefs"
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs:2 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs:1 of
 msgid "The CaeKerPrefs object contains the details of the sessionOptions."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs:11 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs:10 of
 msgid ""
 "Check `CaeKerPrefs on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprcaekerprefspyc.htm?contextscope=all>`__."
@@ -166,7 +153,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../docstring
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.fileName:2 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.fileName:1 of
 msgid ""
 "A String specifying the path to the preferences file that the CaeKerPrefs"
 " object represents."
@@ -180,7 +167,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save:2 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save:1 of
 msgid "This method saves the sessionOptions in the current **fileName**."
 msgstr ""
 
@@ -192,54 +179,63 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:2 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:1 of
 msgid "This method saves the sessionOptions to the specified location."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save:5 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save:4 of
 msgid ""
 "Check `CaeKerPrefs.save on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprcaekerprefspyc.htm?contextscope=all"
 "#simaker-caekerprefssavepyc>`__."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save:10 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.save:7 of
 msgid ""
 "A Boolean specifying whether save a numbered backup copy of the "
 "preferences file, **fileName**. Default is True."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:5 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:4 of
 msgid ""
 "Check `CaeKerPrefs.saveAs on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprcaekerprefspyc.htm?contextscope=all"
 "#simaker-caekerprefssaveaspyc>`__."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:35 of
-msgid "**directory: SymbolicConstant**"
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:10 of
+msgid ""
+"A SymbolicConstant specifying the location of the preferences file. "
+"Possible values are:  - CURRENT to open the preferences file in the "
+"current directory   (caePrefsAccess.CURRENT) - HOME to open the "
+"preferences file in your home directory   (caePrefsAccess.HOME)  The "
+"default value is HOME. Either **fileName** or **directory** must be "
+"supplied. The **fileName** or **directory** arguments are mutually "
+"exclusive."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:13
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:24 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:10
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:21 of
 msgid ""
 "A SymbolicConstant specifying the location of the preferences file. "
 "Possible values are:"
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:16 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:13
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:24 of
 msgid ""
-"CURRENT to open the preferences file in the current directory  "
+"CURRENT to open the preferences file in the current directory "
 "(caePrefsAccess.CURRENT)"
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:18 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:15
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:26 of
 msgid ""
-"HOME to open the preferences file in your home directory  "
+"HOME to open the preferences file in your home directory "
 "(caePrefsAccess.HOME)"
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:21 of
+#: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs.saveAs:18 of
 msgid ""
 "The default value is HOME. Either **fileName** or **directory** must be "
 "supplied. The **fileName** or **directory** arguments are mutually "
@@ -250,7 +246,7 @@ msgstr ""
 msgid "caePrefsAccess"
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences:2
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences:1
 #: of
 msgid ""
 "The abaqus_2021.gpr file stores a separate guiPreferences record for each"
@@ -258,15 +254,15 @@ msgid ""
 "recorded in the preferences file."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences:7
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName:5
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:7
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:8
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:6 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences:6
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName:4
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:6
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:7
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:5 of
 msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences:12
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences:11
 #: of
 msgid ""
 "Check `caePrefsAccess.getDisplayNamesInGuiPreferences on "
@@ -275,7 +271,7 @@ msgid ""
 "#simaker-gprfunctioncaeprefsaccessgetdisplaynamesinguipreferencespyc>`__."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences:17
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences:14
 #: of
 msgid "A String that specifies the path to the preferences file."
 msgstr ""
@@ -288,32 +284,40 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences:34
-#: of
-msgid ":obj:`List`\\[:class:`python:str`]"
-msgstr ""
-
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences:22
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences:17
 #: of
 msgid "A list of Strings of displayNames."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName:2 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList of
+msgid "Return type"
+msgstr ""
+
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getDisplayNamesInGuiPreferences:18
+#: of
+msgid ":class:`List[str]`"
+msgstr ""
+
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName:1 of
 msgid ""
 "This function enables you to retrieve the location of your "
 "abaqus_2021.gpr file."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName:25
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:44 of
-msgid ":class:`python:str`"
-msgstr ""
-
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName:13 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName:8 of
 msgid "A String with the default file name for the GUI preferences file."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:2 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.getGuiPrefsFileName:9
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:28 of
+msgid ":class:`str`"
+msgstr ""
+
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:1 of
 msgid ""
 "This function enables you to examine and change many default behaviors in"
 " the Abaqus/CAE graphical user interface. Abaqus stores preferences for "
@@ -321,18 +325,14 @@ msgid ""
 "abaqus_2021.gpr file."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:12 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:11 of
 msgid ""
 "Check `caePrefsAccess.openGuiPreferences on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprfunctioncaeprefsaccesspyc.htm?contextscope=all"
 "#simaker-gprfunctioncaeprefsaccessopenguipreferencespyc>`__."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:19 of
-msgid "**displayName: str**"
-msgstr ""
-
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:17 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:14 of
 msgid ""
 "A String that specifies the display for which you want to investigate GUI"
 " preferences from the abaqus_2021.gpr file. You can retrieve the "
@@ -340,7 +340,7 @@ msgid ""
 "getDisplayNamesInGuiPreferences method."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:22 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:19 of
 msgid ""
 "A String specifying the path to the preferences file. The "
 "openGuiPreferences method uses this argument if you are working with a "
@@ -348,17 +348,17 @@ msgid ""
 "omitted, the abaqus_2021.gpr file in your home directory is opened."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:42 of
-msgid ":obj:`CaeGuiPrefs`"
-msgstr ""
-
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:30 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:25 of
 msgid ""
 "A :py:class:`~abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs`"
 " object."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:2 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openGuiPreferences:26 of
+msgid ":class:`CaeGuiPrefs`"
+msgstr ""
+
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:1 of
 msgid ""
 "This function enables you to examine and change the default behavior for "
 "many session options Abaqus/CAE; that is, the settings that you can save "
@@ -367,14 +367,14 @@ msgid ""
 "section of the abaqus_2021.gpr file."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:13 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:12 of
 msgid ""
 "Check `caePrefsAccess.openSessionOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprfunctioncaeprefsaccesspyc.htm?contextscope=all"
 "#simaker-gprfunctioncaeprefsaccessopensessionoptionspyc>`__."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:18 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:15 of
 msgid ""
 "A String specifying the path to the preferences file. The "
 "openSessionOptions method uses this argument if you are working with a "
@@ -382,77 +382,59 @@ msgid ""
 " omitted, the abaqus_2021.gpr file in your home directory is opened."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:33 of
-msgid "**directory: Literal[CURRENT, HOME]**"
-msgstr ""
-
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:27 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:21 of
 msgid ""
-"CURRENT to open the preferences file in the current directory "
-"(caePrefsAccess.CURRENT)"
+"A SymbolicConstant specifying the location of the preferences file. "
+"Possible values are:  - CURRENT to open the preferences file in the "
+"current directory   (caePrefsAccess.CURRENT) - HOME to open the "
+"preferences file in your home directory   (caePrefsAccess.HOME)  The "
+"default value is HOME. Either **fileName** or **directory** must be "
+"supplied. The `fileName` or `directory` arguments are mutually exclusive."
 msgstr ""
 
 #: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:29 of
-msgid ""
-"HOME to open the preferences file in your home directory "
-"(caePrefsAccess.HOME)"
-msgstr ""
-
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:32 of
 msgid ""
 "The default value is HOME. Either **fileName** or **directory** must be "
 "supplied. The `fileName` or `directory` arguments are mutually exclusive."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:50 of
-msgid ":obj:`CaeKerPrefs`"
-msgstr ""
-
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:38 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:33 of
 msgid ""
 "A :py:class:`~abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs`"
 " object."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:2 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.openSessionOptions:34 of
+msgid ":class:`CaeKerPrefs`"
+msgstr ""
+
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:1 of
 msgid ""
 "This function enables you to print all of the options and their values "
 "for a set of guiPreferences or sessionOptions settings derived from the "
 "abaqus_2021.gpr file."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:11 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:10 of
 msgid ""
 "Check `caePrefsAccess.printValuesList on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprfunctioncaeprefsaccesspyc.htm?contextscope=all"
 "#simaker-gprfunctioncaeprefsaccessprintvalueslistpyc>`__."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:17 of
-msgid "**object: str**"
-msgstr ""
-
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:16 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:13 of
 msgid ""
 "The guiPreferences object or sessionOptions object for which you want to "
 "print options and their values."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:21 of
-msgid "**maxRecursionDepth: Union[int, Literal[UNLIMITED]]**"
-msgstr ""
-
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:20 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:17 of
 msgid ""
 "An Int, or SymbolicConstant UNLIMITED, that specifies the depth of "
 "recursion when accessing the attributes of **object**."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:26 of
-msgid "**asString: Boolean**"
-msgstr ""
-
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:24 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:21 of
 msgid ""
 "A Boolean specifying how the string representation of each option is "
 "printed. If **asString** is True, printValuesList prints the str of each "
@@ -460,7 +442,7 @@ msgid ""
 "default value is False."
 msgstr ""
 
-#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:31 of
+#: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess.printValuesList:26 of
 msgid ""
 "A String displaying the path, name, and value for all of the options in "
 "the object that you select."
@@ -622,5 +604,52 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "**maxRecursionDepth: typing.Union[int, typing.Literal[UNLIMITED]]**"
+#~ msgstr ""
+
+#~ msgid "**backupFile: Boolean**"
+#~ msgstr ""
+
+#~ msgid "**fileName: str**"
+#~ msgstr ""
+
+#~ msgid "**directory: SymbolicConstant**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "CURRENT to open the preferences file "
+#~ "in the current directory  "
+#~ "(caePrefsAccess.CURRENT)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "HOME to open the preferences file "
+#~ "in your home directory  (caePrefsAccess.HOME)"
+#~ msgstr ""
+
+#~ msgid ":obj:`List`\\[:class:`python:str`]"
+#~ msgstr ""
+
+#~ msgid ":class:`python:str`"
+#~ msgstr ""
+
+#~ msgid "**displayName: str**"
+#~ msgstr ""
+
+#~ msgid ":obj:`CaeGuiPrefs`"
+#~ msgstr ""
+
+#~ msgid "**directory: Literal[CURRENT, HOME]**"
+#~ msgstr ""
+
+#~ msgid ":obj:`CaeKerPrefs`"
+#~ msgstr ""
+
+#~ msgid "**object: str**"
+#~ msgstr ""
+
+#~ msgid "**maxRecursionDepth: Union[int, Literal[UNLIMITED]]**"
+#~ msgstr ""
+
+#~ msgid "**asString: Boolean**"
 #~ msgstr ""
 

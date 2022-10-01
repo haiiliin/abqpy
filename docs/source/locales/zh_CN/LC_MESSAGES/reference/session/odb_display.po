@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-15 06:20+0000\n"
+"POT-Creation-Date: 2022-10-01 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr ""
 msgid "CommonOptions"
 msgstr ""
 
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions:2 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions:1 of
 msgid ""
 "The CommonOptions object stores values and attributes that are common to "
 "all plot states. The CommonOptions object has no constructor command. "
@@ -52,20 +52,20 @@ msgid ""
 "DGCommonOptions object."
 msgstr ""
 
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions:16
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions:16
-#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay:6
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:17
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay:15
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions:17
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions:18
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions:16
-#: abaqus.OdbDisplay.ViewCut.ViewCut:8
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions:7 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions:15
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions:15
+#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay:5
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:16
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay:14
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions:16
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions:17
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions:15
+#: abaqus.OdbDisplay.ViewCut.ViewCut:7
+#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions:6 of
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions:30 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions:29 of
 msgid ""
 "Check `CommonOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-commonoptionspyc.htm?contextscope=all>`__."
@@ -546,52 +546,52 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:2 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:1 of
 msgid "This method modifies the CommonOptions object."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.autoDeformationScaleValue:2 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.autoDeformationScaleValue:1 of
 msgid ""
 "A Float specifying the deformation scale factor value when "
 "**deformationScaling** = AUTO. This value is read-only."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.beamN1Color:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:140
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN1Color:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:116 of
+#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.beamN1Color:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:107
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN1Color:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:86 of
 msgid ""
 "A String specifying the color to be used to plot an arrow along the beam "
 "n1n1-direction. The default value is \"Blue\"."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.beamN2Color:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:144
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN2Color:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:120 of
+#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.beamN2Color:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:110
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN2Color:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:89 of
 msgid ""
 "A String specifying the color to be used to plot an arrow along the beam "
 "n2n2-direction. The default value is \"Red\"."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.beamTangentColor:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:148
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamTangentColor:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:124 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.beamTangentColor:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:113
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamTangentColor:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:92 of
 msgid ""
 "A String specifying the color to be used to plot an arrow along the "
 "tangent to a beam. The default value is \"White\"."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.colorCodeOverride:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:57
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.colorCodeOverride:2
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:40
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.colorCodeOverride:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:40 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.colorCodeOverride:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:43
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.colorCodeOverride:1
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:30
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.colorCodeOverride:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:30 of
 msgid ""
 "A Boolean specifying whether to allow color coded items in the output "
 "database to override the edge and fill color settings. The default value "
@@ -599,21 +599,21 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.coordinateScale:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:121
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.coordinateScale:2
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:52
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.coordinateScale:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:97 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.coordinateScale:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:93
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.coordinateScale:1
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:39
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.coordinateScale:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:72 of
 msgid ""
 "A Boolean specifying whether to scale coordinates. The default value is "
 "OFF."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.coordinateScaleFactors:2
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.coordinateScaleFactors:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.coordinateScaleFactors:2
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.coordinateScaleFactors:1
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.coordinateScaleFactors:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.coordinateScaleFactors:1
 #: of
 msgid ""
 "A tuple of three Floats specifying the coordinate scaling in each of the "
@@ -622,30 +622,30 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.deformationScaling:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:24 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.deformationScaling:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:18 of
 msgid ""
 "A SymbolicConstant specifying the deformation scale factor mode. Possible"
 " values are AUTO, UNIFORM, and NONUNIFORM. The default value is AUTO."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeColorFillShade:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:41
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeColorFillShade:2
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:24
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeColorFillShade:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:28 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeColorFillShade:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:31
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeColorFillShade:1
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:18
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeColorFillShade:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:21 of
 msgid ""
 "A String specifying the color to be used to plot the edges of the model "
 "when **renderStyle** = FILLED or SHADED. The default value is \"Black\"."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeColorWireHide:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:37
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeColorWireHide:2
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:20 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeColorWireHide:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:28
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeColorWireHide:1
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:15 of
 msgid ""
 "A String specifying the color to be used to plot the edges of the model "
 "when **renderStyle** = WIREFRAME or HIDDEN. The default value is "
@@ -653,66 +653,66 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeLineStyle:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:45
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeLineStyle:2
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:28
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeLineStyle:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:32 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeLineStyle:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:34
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeLineStyle:1
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:21
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeLineStyle:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:24 of
 msgid ""
 "A SymbolicConstant specifying the edge line style. Possible values are "
 "SOLID, DASHED, DOTTED, and DOT_DASH. The default value is SOLID."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeLineThickness:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:49
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeLineThickness:2
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:32
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeLineThickness:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:36 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeLineThickness:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:37
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.edgeLineThickness:1
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:24
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeLineThickness:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:27 of
 msgid ""
 "A SymbolicConstant specifying the edge line thickness. Possible values "
 "are VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.elemLabelColor:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:68
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elemLabelColor:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:55 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.elemLabelColor:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:51
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elemLabelColor:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:41 of
 msgid ""
 "A String specifying the color to be used to plot the element labels. The "
 "default value is \"Cyan\"."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.elemLabels:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:65
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elemLabels:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:52 of
+#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.elemLabels:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:49
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elemLabels:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:39 of
 msgid ""
 "A Boolean specifying whether to plot the element labels. The default "
 "value is OFF."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.elementShrink:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:113
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.elementShrink:2
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:44
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrink:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:89 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.elementShrink:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:87
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.elementShrink:1
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:33
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrink:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:66 of
 msgid ""
 "A Boolean specifying whether elements are displayed in a shrunk format. "
 "The default value is OFF."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.elementShrinkFactor:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:117
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.elementShrinkFactor:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrinkFactor:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:93 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.elementShrinkFactor:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:90
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.elementShrinkFactor:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrinkFactor:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:69 of
 msgid ""
 "An Int specifying the percentage to shrink the elements when "
 "**elementShrink** = ON. Possible values are 0≤ "
@@ -720,174 +720,174 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.faceLabelColor:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:75
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceLabelColor:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:62 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.faceLabelColor:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:56
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceLabelColor:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:46 of
 msgid ""
 "A String specifying the color to be used to plot the face labels. The "
 "default value is \"Red\"."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.faceLabels:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:72
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceLabels:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:59 of
+#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.faceLabels:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:54
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceLabels:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:44 of
 msgid ""
 "A Boolean specifying whether to plot the face labels. The default value "
 "is OFF."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.faceNormalColor:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:136
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceNormalColor:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:112 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.faceNormalColor:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:104
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceNormalColor:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:83 of
 msgid ""
 "A String specifying the color to be used to plot the normal to a nonbeam "
 "element or to a surface. The default value is \"Red\"."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.fillColor:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:53
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.fillColor:2
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:36 of
+#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.fillColor:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:40
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.fillColor:1
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:27 of
 msgid ""
 "A String specifying the color to be used to fill elements when "
 "**renderStyle** = FILLED or SHADED. The default value is \"White\"."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.labelFont:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:61
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.labelFont:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:48 of
+#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.labelFont:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:46
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.labelFont:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:36 of
 msgid ""
 "A String specifying the label font to be used for all model labels. The "
 "default value is \"-*-courier-medium-r-normal-*-*-120-*-*-m-*-*-*\"."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeLabelColor:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:82
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeLabelColor:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:69 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeLabelColor:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:61
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeLabelColor:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:51 of
 msgid ""
 "A String specifying the color to be used to plot the node labels. The "
 "default value is \"Yellow\"."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeLabels:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:79
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeLabels:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:66 of
+#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeLabels:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:59
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeLabels:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:49 of
 msgid ""
 "A Boolean specifying whether to plot the node labels. The default value "
 "is OFF."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolColor:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:105
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolColor:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:81 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolColor:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:81
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolColor:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:60 of
 msgid ""
 "A String specifying the color to be used to plot the node symbols. The "
 "default value is \"Yellow\"."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolSize:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:109
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolSize:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:85 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolSize:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:84
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolSize:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:63 of
 msgid ""
 "A SymbolicConstant specifying the node symbol size. Possible values are "
 "SMALL, MEDIUM, and LARGE. The default value is SMALL."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:89 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:66 of
 msgid "A SymbolicConstant specifying the node symbol types. Possible values are:"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:4
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:91 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:3
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:68 of
 msgid "FILLED_CIRCLE"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:5
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:92 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:4
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:69 of
 msgid "FILLED_SQUARE"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:6
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:93 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:5
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:70 of
 msgid "FILLED_DIAMOND"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:7
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:94 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:6
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:71 of
 msgid "FILLED_TRI"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:8
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:95 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:7
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:72 of
 msgid "HOLLOW_CIRCLE"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:9
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:96 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:8
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:73 of
 msgid "HOLLOW_SQUARE"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:10
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:97 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:9
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:74 of
 msgid "HOLLOW_DIAMOND"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:11
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:98 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:10
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:75 of
 msgid "HOLLOW_TRI"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:12
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:99 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:11
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:76 of
 msgid "CROSS"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:13
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:100 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:12
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:77 of
 msgid "XMARKER"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:15
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:102 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType:14
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:79 of
 msgid "The default value is HOLLOW_CIRCLE."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbols:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:86
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbols:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:73 of
+#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbols:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:64
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbols:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:54 of
 msgid ""
 "A Boolean specifying whether to plot the node symbols. The default value "
 "is OFF."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nonuniformScaleFactor:2 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.nonuniformScaleFactor:1 of
 msgid ""
 "A tuple of three Floats specifying the deformation scaling in each of the"
 " three coordinate directions when **deformationScaling** = NONUNIFORM. "
@@ -896,28 +896,28 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.normalArrowLength:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:152
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalArrowLength:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:128 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.normalArrowLength:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:116
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalArrowLength:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:95 of
 msgid ""
 "A SymbolicConstant specifying the length of the normal arrows. Possible "
 "values are SHORT, MEDIUM, and LONG. The default value is MEDIUM."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.normalArrowheadStyle:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:160
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalArrowheadStyle:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:136 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.normalArrowheadStyle:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:122
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalArrowheadStyle:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:101 of
 msgid ""
 "A SymbolicConstant specifying the arrowhead style of the normal arrows. "
 "Possible values are NONE, FILLED, and WIRE. The default value is WIRE."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.normalDisplay:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:132 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.normalDisplay:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:101 of
 msgid ""
 "A SymbolicConstant specifying whether to draw element normals or surface "
 "normals. Possible values are ELEMENT and SURFACE. The default value is "
@@ -925,34 +925,34 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.normalLineThickness:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:156
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalLineThickness:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:132 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.normalLineThickness:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:119
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalLineThickness:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:98 of
 msgid ""
 "A SymbolicConstant specifying the thickness of the normal arrows. "
 "Possible values are VERY_THIN, THIN, MEDIUM, and THICK. The default value"
 " is VERY_THIN."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.normals:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:128
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normals:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:104 of
+#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.normals:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:98
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normals:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:77 of
 msgid ""
 "A Boolean specifying whether to draw arrows that indicate the directions "
 "of element and surface normals. The default value is OFF."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.renderStyle:2
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:15 of
+#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.renderStyle:1
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:11 of
 msgid ""
 "A SymbolicConstant specifying the render style of the plot. Possible "
 "values are WIREFRAME, FILLED, HIDDEN, and SHADED. The default value is "
 "SHADED."
 msgstr ""
 
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:5 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:4 of
 msgid ""
 "Check `CommonOptions.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-commonoptionspyc.htm?contextscope=all"
@@ -978,16 +978,7 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:12
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:12
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:12
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:12
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:12
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:12 of
-msgid "**options**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:10 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:7 of
 msgid ""
 "A :py:class:`~abaqus.OdbDisplay.CommonOptions.CommonOptions` object from "
 "which values are to be copied. If other arguments are also supplied to "
@@ -995,48 +986,25 @@ msgid ""
 "value is None."
 msgstr ""
 
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:16
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:16 of
-msgid "**renderStyle**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:21
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:17
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:21 of
-msgid "**visibleEdges**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:19
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.visibleEdges:2
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:15
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.visibleEdges:2 of
+#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:14
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.visibleEdges:1
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:11
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.visibleEdges:1 of
 msgid ""
 "A SymbolicConstant specifying which edges to plot. Possible values are "
 "ALL, EXTERIOR, FEATURE, FREE, and NONE. The default value is "
 "EXTERIOR.NONE can be used only when **renderStyle** = SHADED."
 msgstr ""
 
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:25 of
-msgid "**deformationScaling**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:29 of
-msgid "**uniformScaleFactor**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:28
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.uniformScaleFactor:2 of
+#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:21
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.uniformScaleFactor:1 of
 msgid ""
 "A Float specifying the uniform deformation scaling constant when "
 "**deformationScaling** = UNIFORM. The default value is "
 "**autoDeformationScaleValue**."
 msgstr ""
 
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:34 of
-msgid "**nonuniformScaleFactor**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:32 of
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:24 of
 msgid ""
 "A sequence of three Floats specifying the deformation scaling in each of "
 "the three coordinate directions when **deformationScaling** = NONUNIFORM."
@@ -1044,204 +1012,40 @@ msgid ""
 "**autoDeformationScaleValue**, **autoDeformationScaleValue**)."
 msgstr ""
 
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:38
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:21
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:25 of
-msgid "**edgeColorWireHide**"
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:66 of
+msgid ""
+"A SymbolicConstant specifying the node symbol types. Possible values are:"
+"  - FILLED_CIRCLE - FILLED_SQUARE - FILLED_DIAMOND - FILLED_TRI - "
+"HOLLOW_CIRCLE - HOLLOW_SQUARE - HOLLOW_DIAMOND - HOLLOW_TRI - CROSS - "
+"XMARKER  The default value is HOLLOW_CIRCLE."
 msgstr ""
 
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:42
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:25
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:29 of
-msgid "**edgeColorFillShade**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:46
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:29
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:33 of
-msgid "**edgeLineStyle**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:50
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:33
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:37 of
-msgid "**edgeLineThickness**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:54
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:37
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:45 of
-msgid "**fillColor**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:58
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:95
 #: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:41
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:41 of
-msgid "**colorCodeOverride**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:62
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:49 of
-msgid "**labelFont**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:65
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:52 of
-msgid "**elemLabels**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:69
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:56 of
-msgid "**elemLabelColor**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:72
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:59 of
-msgid "**faceLabels**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:76
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:63 of
-msgid "**faceLabelColor**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:79
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:66 of
-msgid "**nodeLabels**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:83
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:70 of
-msgid "**nodeLabelColor**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:86
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:73 of
-msgid "**nodeSymbols**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:102
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:78 of
-msgid "**nodeSymbolType**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:106
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:82 of
-msgid "**nodeSymbolColor**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:110
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:86 of
-msgid "**nodeSymbolSize**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:114
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:45
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:90 of
-msgid "**elementShrink**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:118
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:49
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:94 of
-msgid "**elementShrinkFactor**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:121
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:52
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:97 of
-msgid "**coordinateScale**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:125
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:56
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:101 of
-msgid "**coordinateScaleFactors**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:124
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:55
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:100 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:74 of
 msgid ""
 "A sequence of three Floats specifying the coordinate scaling in each of "
 "the three coordinate directions when **coordinateScale** = ON. The "
 "default value is (1, 1, 1)."
 msgstr ""
 
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:129
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:105 of
-msgid "**normals**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:133
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:109 of
-msgid "**normalDisplay**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:137
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:113 of
-msgid "**faceNormalColor**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:141
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:117 of
-msgid "**beamN1Color**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:145
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:121 of
-msgid "**beamN2Color**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:149
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:125 of
-msgid "**beamTangentColor**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:153
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:129 of
-msgid "**normalArrowLength**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:157
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:133 of
-msgid "**normalLineThickness**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:161
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:137 of
-msgid "**normalArrowheadStyle**"
-msgstr ""
-
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:164
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:59
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:140 of
-msgid "**translucency**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:164
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.translucency:2
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:59
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.translucency:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:140
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucency:2 of
+#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:125
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.translucency:1
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:44
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.translucency:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:104
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucency:1 of
 msgid ""
 "A Boolean specifying whether to set translucency. The default value is "
 "OFF."
 msgstr ""
 
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:172
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:67
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:144 of
-msgid "**translucencyFactor**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:167
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.translucencyFactor:2
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:62
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.translucencyFactor:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:143
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucencyFactor:2
+#: ../../docstring abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:127
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions.translucencyFactor:1
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:46
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.translucencyFactor:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:106
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucencyFactor:1
 #: of
 msgid ""
 "A Float specifying the translucency factor when **translucency** = ON. "
@@ -1264,20 +1068,11 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: abaqus.OdbDisplay.CommonOptions.CommonOptions.setValues:185
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:181
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:80
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:73
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:175
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:137 of
-msgid ":obj:`RangeError`"
-msgstr ""
-
 #: ../../reference/session/odb_display.rst:19
 msgid "ContourOptions"
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions:2 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions:1 of
 msgid ""
 "The ContourOptions object stores values and attributes associated with a "
 "contour plot. The ContourOptions object has no constructor command. "
@@ -1294,7 +1089,7 @@ msgid ""
 "DGContourOptions object."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions:30 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions:29 of
 msgid ""
 "Check `ContourOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contouroptionspyc.htm?contextscope=all>`__."
@@ -1504,7 +1299,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.intervalValues:2 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.intervalValues:1 of
 msgid ""
 "A tuple of Floats specifying the interval values when **intervalType** = "
 "USER_DEFINED."
@@ -1723,13 +1518,13 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:2 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:1 of
 msgid "This method modifies the ContourOptions object."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.animationAutoLimits:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:59 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.animationAutoLimits:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:44 of
 msgid ""
 "A SymbolicConstant specifying the method to be used when contour limits "
 "are automatically computed for animation. **animationAutoLimits** will "
@@ -1740,22 +1535,22 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.autoMaxValue:2 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.autoMaxValue:1 of
 msgid ""
 "A Float specifying the maximum value to be used in the plot. The value is"
 " computed from the output data to be contoured. This value is read-only."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.autoMinValue:2 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.autoMinValue:1 of
 msgid ""
 "A Float specifying the minimum value to be used in the plot. The value is"
 " computed from the output data to be contoured. This value is read-only."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.averagedOrientationDisplay:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:144 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.averagedOrientationDisplay:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:112 of
 msgid ""
 "A Boolean specifying the display of the nodal averaged coordinate systems"
 " used when averaging element vector or tensor data. The default value is "
@@ -1763,23 +1558,23 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.colorByMatchingPlies:2 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.colorByMatchingPlies:1 of
 msgid ""
 "A Boolean specifying whether the contour color is driven by the matching "
 "ply. The default value is OFF."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeColor:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:113 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeColor:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:88 of
 msgid ""
 "A String specifying the color to be used to plot the contour edges when "
 "**contourType** = BANDED or ISOSURFACE. The default value is \"Grey60\"."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeStyle:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:117 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeStyle:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:91 of
 msgid ""
 "A SymbolicConstant specifying the edge line style to be used to plot the "
 "contour edges when **contourType** = BANDED or ISOSURFACE. Possible "
@@ -1788,8 +1583,8 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeThickness:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:122 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeThickness:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:95 of
 msgid ""
 "A SymbolicConstant specifying the edge line thickness to be used to plot "
 "the edge of the contour intervals when **contourType** = BANDED or "
@@ -1798,16 +1593,16 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdges:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:109 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdges:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:85 of
 msgid ""
 "A Boolean specifying whether to plot the edges of each contour interval "
 "when **contourType** = BANDED or ISOSURFACE. The default value is OFF."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.contourMethod:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:19 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.contourMethod:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:14 of
 msgid ""
 "A SymbolicConstant specifying the contour rendering method. Possible "
 "values are TEXTURE_MAPPED and TESSELLATED. The default value is "
@@ -1815,40 +1610,40 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.contourStyle:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:28 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.contourStyle:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:21 of
 msgid ""
 "A SymbolicConstant specifying the interval style of the contour plot. "
 "Possible values are CONTINUOUS and UNIFORM. The default value is UNIFORM."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.contourType:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:15 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.contourType:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:11 of
 msgid ""
 "A SymbolicConstant specifying the contour type. Possible values are LINE,"
 " BANDED, QUILT, and ISOSURFACE. The default value is BANDED."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.edgeColorBandedQuilt:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:70 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.edgeColorBandedQuilt:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:53 of
 msgid ""
 "A String specifying the edge color to be used when **contourType** = "
 "BANDED or QUILT. The default value is \"Black\"."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.edgeColorLine:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:66 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.edgeColorLine:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:50 of
 msgid ""
 "A String specifying the edge color to be used when **contourType** = "
 "LINE. The default value is \"White\"."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.extrapolatedAveraging:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:148 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.extrapolatedAveraging:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:115 of
 msgid ""
 "A Boolean specifying whether to auto-compute contour limits using "
 "extrapolated values alone or extrapolated values that are averaged. The "
@@ -1856,7 +1651,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.intervalLineAttributes:2 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.intervalLineAttributes:1 of
 msgid ""
 "A tuple of tuples of SymbolicConstants specifying the line style and line"
 " thickness for each interval in the plot when **contourType** = LINE. The"
@@ -1868,8 +1663,8 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.intervalType:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:36 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.intervalType:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:27 of
 msgid ""
 "A SymbolicConstant specifying the interval type of the contour plot. "
 "Possible values are UNIFORM, LOG, and USER_DEFINED. The default value is "
@@ -1877,7 +1672,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.legendHideOutsideLimits:2 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.legendHideOutsideLimits:1 of
 msgid ""
 "A Boolean specifying whether to hide the values outside the specified "
 "min/max in the contour legend. This setting hides the **autoMinValue** "
@@ -1886,56 +1681,55 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.legendHideOutsideLimits:21
-#: of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.legendHideOutsideLimits:5 of
 msgid "..versionadded:: 2019"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.legendHideOutsideLimits:7 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.legendHideOutsideLimits:6 of
 msgid "The `legendHideOutsideLimits` attribute was added."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.matchingPlyLabels:2 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.matchingPlyLabels:1 of
 msgid ""
 "A Boolean specifying whether the label for the matching ply shows up in "
 "the viewport. The default value is OFF."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.maxAutoCompute:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:43 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.maxAutoCompute:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:32 of
 msgid ""
 "A Boolean specifying whether the contour range maximum value should be "
 "computed from the output data to be contoured. The default value is ON."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.ContourOptions.ContourOptions.maxValue:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:47 of
+#: ../../docstring abaqus.OdbDisplay.ContourOptions.ContourOptions.maxValue:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:35 of
 msgid ""
 "A Float specifying the contour range maximum value to be used in the plot"
 " when **maxAutoCompute** = ON. The default value is **autoMaxValue**."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.minAutoCompute:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:51 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.minAutoCompute:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:38 of
 msgid ""
 "A Boolean specifying whether the contour range minimum value should be "
 "computed from the output data to be contoured. The default value is ON."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.ContourOptions.ContourOptions.minValue:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:55 of
+#: ../../docstring abaqus.OdbDisplay.ContourOptions.ContourOptions.minValue:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:41 of
 msgid ""
 "A Float specifying the contour range minimum value to be used in the plot"
 " when **minAutoCompute** = ON. The default value is **autoMinValue**."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.numIntervals:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:32 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.numIntervals:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:24 of
 msgid ""
 "An Int specifying the number of intervals when **contourStyle** = "
 "UNIFORM. Possible values are 2 ≤ **numIntervals** ≤ 24. The default value"
@@ -1943,8 +1737,8 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.outsideLimitsAboveColor:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:93 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.outsideLimitsAboveColor:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:72 of
 msgid ""
 "A String specifying the color to be used for values that exceed the "
 "limits of the plot when **outsideLimitsMode** = SPECIFY. The default "
@@ -1952,8 +1746,8 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.outsideLimitsBelowColor:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:97 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.outsideLimitsBelowColor:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:75 of
 msgid ""
 "A String specifying the color to be used for values that exceed the "
 "limits of the plot when **outsideLimitsMode** = SPECIFY. The default "
@@ -1961,8 +1755,8 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.outsideLimitsMode:2
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:86 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.outsideLimitsMode:1
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:66 of
 msgid ""
 "A SymbolicConstant specifying the color of contour values that exceed the"
 " limits of the plot. Possible values are SPECTRUM and SPECIFY.When "
@@ -1974,7 +1768,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.reversedContourLegendRange:2
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.reversedContourLegendRange:1
 #: of
 msgid ""
 "A Boolean specifying whether the contour legend should show the lowest "
@@ -1984,25 +1778,25 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.reversedContourLegendRange:21
-#: abaqus.OdbDisplay.ViewCut.ViewCut.crossSectionalArea:20 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.reversedContourLegendRange:5
+#: abaqus.OdbDisplay.ViewCut.ViewCut.crossSectionalArea:4 of
 msgid "..versionadded:: 2018"
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.reversedContourLegendRange:7
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.reversedContourLegendRange:6
 #: of
 msgid "The `reversedContourLegendRange` attribute was added."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:5 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:4 of
 msgid ""
 "Check `ContourOptions.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contouroptionspyc.htm?contextscope=all"
 "#simaker-contouroptionssetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:10 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:7 of
 msgid ""
 "A :py:class:`~abaqus.OdbDisplay.ContourOptions.ContourOptions` object "
 "from which values are to be copied. If other arguments are also supplied "
@@ -2010,20 +1804,8 @@ msgid ""
 "value is None."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:16 of
-msgid "**contourType**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:20 of
-msgid "**contourMethod**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:25 of
-msgid "**tickmarkPlots**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:23
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkPlots:2 of
+#: ../../docstring abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:17
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkPlots:1 of
 msgid ""
 "A Boolean specifying whether tick mark plots should be displayed on line-"
 "type elements. If **tickmarkPlots** = ON, Abaqus displays a tick mark "
@@ -2031,72 +1813,29 @@ msgid ""
 " faces. The default value is OFF."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:29 of
-msgid "**contourStyle**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:33 of
-msgid "**numIntervals**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:37 of
-msgid "**intervalType**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:40 of
-msgid "**intervalValues**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:40 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:30 of
 msgid ""
 "A sequence of Floats specifying the interval values when **intervalType**"
 " = USER_DEFINED."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:44 of
-msgid "**maxAutoCompute**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:48 of
-msgid "**maxValue**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:52 of
-msgid "**minAutoCompute**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:56 of
-msgid "**minValue**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:63 of
-msgid "**animationAutoLimits**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:67 of
-msgid "**edgeColorLine**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:71 of
-msgid "**edgeColorBandedQuilt**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:75 of
-msgid "**spectrum**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:74
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.spectrum:2 of
+#: ../../docstring abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:56
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.spectrum:1 of
 msgid ""
 "A String specifying the name of the color spectrum to be used in the "
 "contour plot. The default value is \"Rainbow\"."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:83 of
-msgid "**reversedContourLegendRange**"
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:59 of
+msgid ""
+"A Boolean specifying whether the contour legend should show the lowest "
+"value at the top and the highest value at the bottom "
+"(*reversedContourLegendRange* = ON) or vice versa. The default value is "
+"OFF.  .. versionadded:: 2018     The `reversedContourLegendRange` "
+"argument was added."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:78 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:59 of
 msgid ""
 "A Boolean specifying whether the contour legend should show the lowest "
 "value at the top and the highest value at the bottom "
@@ -2104,27 +1843,11 @@ msgid ""
 "OFF."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:82 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:63 of
 msgid "The `reversedContourLegendRange` argument was added."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:90 of
-msgid "**outsideLimitsMode**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:94 of
-msgid "**outsideLimitsAboveColor**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:98 of
-msgid "**outsideLimitsBelowColor**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:106 of
-msgid "**intervalLineAttributes**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:101 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:78 of
 msgid ""
 "A sequence of sequences of SymbolicConstants specifying the line style "
 "and line thickness for each interval in the plot when **contourType** = "
@@ -2135,41 +1858,16 @@ msgid ""
 "DGCommonOptions object. The default is ((SOLID, VERY_THIN), )."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:110 of
-msgid "**contourEdges**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:114 of
-msgid "**contourEdgeColor**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:119 of
-msgid "**contourEdgeStyle**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:124 of
-msgid "**contourEdgeThickness**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:128 of
-msgid "**tickmarkAxisLength**"
-msgstr ""
-
-#: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:127
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkAxisLength:2 of
+#: ../../docstring abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:99
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkAxisLength:1 of
 msgid ""
 "A SymbolicConstant specifying the length of the tick mark plot axes. "
 "Possible values are SHORT, MEDIUM, and LONG. The default value is MEDIUM."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:133 of
-msgid "**tickmarkBaseValue**"
-msgstr ""
-
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:131
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkBaseValue:2 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:102
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkBaseValue:1 of
 msgid ""
 "A Float specifying the base contour value defining the tick mark axis "
 "contour value that intersects the elements. Possible values are "
@@ -2177,74 +1875,54 @@ msgid ""
 "value is 0.0."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:137 of
-msgid "**tickmarkOrientation**"
-msgstr ""
-
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:136
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkOrientation:2 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:106
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkOrientation:1 of
 msgid ""
 "A SymbolicConstant specifying the orientation of the tick mark plots. "
 "Possible values are N1 and N2. The default value is N2."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:141 of
-msgid "**tickmarkCurveColor**"
-msgstr ""
-
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:140
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkCurveColor:2 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:109
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkCurveColor:1 of
 msgid ""
 "A String specifying the color to be used to plot the tick mark curve. The"
 " default value is \"Cyan\"."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:145 of
-msgid "**averagedOrientationDisplay**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:149 of
-msgid "**extrapolatedAveraging**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:153 of
-msgid "**showMaxLocation**"
-msgstr ""
-
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:152
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.showMaxLocation:2 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:118
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.showMaxLocation:1 of
 msgid ""
 "A Boolean specifying whether to display location of maximum value. The "
 "default value is OFF."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:157 of
-msgid "**showMinLocation**"
-msgstr ""
-
 #: ../../docstring
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:156
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.showMinLocation:2 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:121
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.showMinLocation:1 of
 msgid ""
 "A Boolean specifying whether to display location of minimum value. The "
 "default value is OFF."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:168 of
-msgid "**legendHideOutsideLimits**"
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:124 of
+msgid ""
+"A Boolean specifying whether to hide the values outside the specified "
+"minimum/maximum for the contour interval when **legendHideOutsideLimits**"
+" = ON. The default value is OFF.  .. versionadded:: 2019     The "
+"`legendHideOutsideLimits` argument was added."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:160 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:124 of
 msgid ""
 "A Boolean specifying whether to hide the values outside the specified "
 "minimum/maximum for the contour interval when **legendHideOutsideLimits**"
 " = ON. The default value is OFF."
 msgstr ""
 
-#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:163 of
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions.setValues:127 of
 msgid "The `legendHideOutsideLimits` argument was added."
 msgstr ""
 
@@ -2252,13 +1930,13 @@ msgstr ""
 msgid "DefaultOdbDisplay"
 msgstr ""
 
-#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay:2 of
+#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay:1 of
 msgid ""
 "The DefaultOdbDisplay object is a limited-functionality version of the "
 "OdbDisplay object."
 msgstr ""
 
-#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay:12 of
+#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay:11 of
 msgid ""
 "Check `DefaultOdbDisplay on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-defaultodbdisplaypyc.htm?contextscope=all>`__."
@@ -2271,8 +1949,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.basicOptions:2
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.basicOptions:2 of
+#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.basicOptions:1
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.basicOptions:1 of
 msgid "A :py:class:`~abaqus.PlotOptions.BasicOptions.BasicOptions` object."
 msgstr ""
 
@@ -2283,8 +1961,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.commonOptions:2
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.commonOptions:2 of
+#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.commonOptions:1
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.commonOptions:1 of
 msgid "A :py:class:`~abaqus.OdbDisplay.CommonOptions.CommonOptions` object."
 msgstr ""
 
@@ -2295,8 +1973,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.contourOptions:2
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.contourOptions:2 of
+#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.contourOptions:1
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.contourOptions:1 of
 msgid "A :py:class:`~abaqus.OdbDisplay.ContourOptions.ContourOptions` object."
 msgstr ""
 
@@ -2307,8 +1985,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.displayBodyOptions:2
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.displayBodyOptions:2 of
+#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.displayBodyOptions:1
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.displayBodyOptions:1 of
 msgid ""
 "A :py:class:`~abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions` "
 "object."
@@ -2321,8 +1999,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.freeBodyOptions:2
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.freeBodyOptions:2 of
+#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.freeBodyOptions:1
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.freeBodyOptions:1 of
 msgid "A :py:class:`~abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions` object."
 msgstr ""
 
@@ -2333,8 +2011,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.streamOptions:2
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.streamOptions:2 of
+#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.streamOptions:1
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.streamOptions:1 of
 msgid "A :py:class:`~abaqus.PlotOptions.StreamOptions.StreamOptions` object."
 msgstr ""
 
@@ -2345,8 +2023,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.materialOrientationOptions:2
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.materialOrientationOptions:2 of
+#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.materialOrientationOptions:1
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.materialOrientationOptions:1 of
 msgid ""
 "An :py:class:`~abaqus.OdbDisplay.OrientationOptions.OrientationOptions` "
 "object."
@@ -2359,8 +2037,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.superimposeOptions:2
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.superimposeOptions:2 of
+#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.superimposeOptions:1
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.superimposeOptions:1 of
 msgid ""
 "A :py:class:`~abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions` "
 "object."
@@ -2373,8 +2051,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.symbolOptions:2
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.symbolOptions:2 of
+#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.symbolOptions:1
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.symbolOptions:1 of
 msgid "A :py:class:`~abaqus.OdbDisplay.SymbolOptions.SymbolOptions` object."
 msgstr ""
 
@@ -2385,8 +2063,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.viewCutOptions:2
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.viewCutOptions:2 of
+#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.viewCutOptions:1
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.viewCutOptions:1 of
 msgid "A :py:class:`~abaqus.PlotOptions.ViewCutOptions.ViewCutOptions` object."
 msgstr ""
 
@@ -2394,7 +2072,7 @@ msgstr ""
 msgid "DisplayBodyOptions"
 msgstr ""
 
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:2 of
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:1 of
 msgid ""
 "The DisplayBodyOptions object stores values and attributes that are "
 "common to all plot states. The DisplayBodyOptions object has no "
@@ -2412,7 +2090,7 @@ msgid ""
 "object is derived from the DGDisplayBodyOptions object."
 msgstr ""
 
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:31 of
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:30 of
 msgid ""
 "Check `DisplayBodyOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaybodyoptionspyc.htm?contextscope=all>`__."
@@ -2504,18 +2182,18 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:2 of
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:1 of
 msgid "This method modifies the DisplayBodyOptions object."
 msgstr ""
 
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:5 of
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:4 of
 msgid ""
 "Check `DisplayBodyOptions.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaybodyoptionspyc.htm?contextscope=all"
 "#simaker-displaybodyoptionssetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:10 of
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:7 of
 msgid ""
 "A :py:class:`~abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions` "
 "object from which values are to be copied. If other arguments are also "
@@ -2523,7 +2201,7 @@ msgid ""
 "default value is None."
 msgstr ""
 
-#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:48 of
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:36 of
 msgid ""
 "An Int specifying the percentage to shrink the elements when "
 "**elementShrink** = ON. Possible values are 0≤elementShrinkPercentage* ≤ "
@@ -2534,7 +2212,7 @@ msgstr ""
 msgid "OdbDisplay"
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay:1 of
 msgid ""
 "The OdbDisplay object stores the context of an output database for a "
 "viewport. The OdbDisplay object has no constructor. Abaqus creates the "
@@ -2551,7 +2229,7 @@ msgid ""
 "associated with a particular viewport."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay:22 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay:21 of
 msgid ""
 "Check `OdbDisplay on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all>`__."
@@ -2562,7 +2240,7 @@ msgid ":py:obj:`name <abaqus.OdbDisplay.OdbDisplay.OdbDisplay.name>`\\"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.name:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.name:1 of
 msgid ""
 "A String specifying the name of the output database associated with the "
 "OdbDisplay object."
@@ -2585,7 +2263,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldVariables:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldVariables:1 of
 msgid "An :py:class:`~abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList` object."
 msgstr ""
 
@@ -2596,7 +2274,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.modelVariableList:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.modelVariableList:1 of
 msgid ""
 "An "
 ":py:class:`~abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList`"
@@ -2628,7 +2306,7 @@ msgid ":py:obj:`display <abaqus.OdbDisplay.OdbDisplay.OdbDisplay.display>`\\"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.display:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.display:1 of
 msgid "A :py:class:`~abaqus.PlotOptions.DisplayOptions.DisplayOptions` object."
 msgstr ""
 
@@ -2685,7 +2363,7 @@ msgid ":py:obj:`viewCuts <abaqus.OdbDisplay.OdbDisplay.OdbDisplay.viewCuts>`\\"
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.viewCuts:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.viewCuts:1 of
 msgid "A repository of ViewCut objects."
 msgstr ""
 
@@ -2696,7 +2374,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.displayGroup:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.displayGroup:1 of
 msgid ""
 "A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object "
 "specifying the current display group and referring to an object in the "
@@ -2710,7 +2388,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.displayGroupInstances:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.displayGroupInstances:1 of
 msgid ""
 "A "
 ":py:class:`~abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository`"
@@ -2758,7 +2436,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.deformedVariable:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.deformedVariable:1 of
 msgid ""
 "A tuple specifying variables.For information on the sequence, see the "
 "member **primaryVariable**."
@@ -2771,8 +2449,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusVariable:2
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.symbolVariable:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusVariable:1
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.symbolVariable:1 of
 msgid ""
 "A tuple of SymbolicConstants specifying variables.For information on the "
 "sequence, see the member **primaryVariable**."
@@ -2791,7 +2469,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.applyStatusToUndeformed:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.applyStatusToUndeformed:1 of
 msgid ""
 "A tuple of SymbolicConstants specifying a Boolean to specify if elements "
 "are to be removed in undeformed states based on an active status variable"
@@ -2816,7 +2494,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusMinimum:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusMinimum:1 of
 msgid ""
 "A tuple of Floats specifying a Float value for the minimum status range "
 "value."
@@ -2829,7 +2507,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusMaximum:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusMaximum:1 of
 msgid ""
 "A tuple of Floats specifying a Float value for the maximum status range "
 "value."
@@ -2840,7 +2518,7 @@ msgid ":py:obj:`useStatus <abaqus.OdbDisplay.OdbDisplay.OdbDisplay.useStatus>`\\
 msgstr ""
 
 #: ../../None:37:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.useStatus:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.useStatus:1 of
 msgid ""
 "A tuple of SymbolicConstants specifying a Boolean to specify if elements "
 "are to be removed based on the status variable"
@@ -2906,7 +2584,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable:1 of
 msgid ""
 "This method specifies the field output variable or FieldOutput object to "
 "be used when displaying the deformed shape of the model."
@@ -2926,7 +2604,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:1 of
 msgid ""
 "This method specifies the field output variable for which to obtain "
 "results."
@@ -2940,7 +2618,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:1 of
 msgid ""
 "This method specifies the section point for the current primary, symbol "
 "and status variables."
@@ -2954,7 +2632,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:1 of
 msgid ""
 "This method specifies the field output variable for filtering element "
 "display based on a status criteria."
@@ -2993,7 +2671,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues:1 of
 msgid "This method specifies member values for the OdbDisplay object."
 msgstr ""
 
@@ -3004,49 +2682,36 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../None:5:<autosummary>:1
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:1 of
 msgid "This method creates a ViewCut object."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:5 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:4 of
 msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:11
-#: abaqus.OdbDisplay.ViewCut.ViewCut:15 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:10
+#: abaqus.OdbDisplay.ViewCut.ViewCut:14 of
 msgid ""
 "Check `ViewCut on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewcutpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:16 of
-msgid "**name**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:16
-#: abaqus.OdbDisplay.ViewCut.ViewCut.name:2 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:13
+#: abaqus.OdbDisplay.ViewCut.ViewCut.name:1 of
 msgid "A String specifying the repository key."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:20 of
-msgid "**shape**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:19
-#: abaqus.OdbDisplay.ViewCut.ViewCut.shape:2 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:15
+#: abaqus.OdbDisplay.ViewCut.ViewCut.shape:1 of
 msgid ""
 "A SymbolicConstant specifying the shape of the ViewCut object. Possible "
 "values are PLANE, CYLINDER, SPHERE, and ISOSURFACE."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:25
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:52 of
-msgid "**origin**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:23
-#: abaqus.OdbDisplay.ViewCut.ViewCut.origin:2
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:50 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:18
+#: abaqus.OdbDisplay.ViewCut.ViewCut.origin:1
+#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:36 of
 msgid ""
 "A sequence of three Floats specifying the X-, Y-, and Z-coordinates of "
 "the origin of the plane, cylinder or sphere cut. This origin is not "
@@ -3054,14 +2719,9 @@ msgid ""
 "**csysName** argument."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:32
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:59 of
-msgid "**normal**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:28
-#: abaqus.OdbDisplay.ViewCut.ViewCut.normal:2
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:55 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:22
+#: abaqus.OdbDisplay.ViewCut.ViewCut.normal:1
+#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:40 of
 msgid ""
 "A sequence of Floats specifying the X-, Y-, and Z-coordinates of the "
 "normal axis to the plane defining the cut, when the plane is defined "
@@ -3071,14 +2731,9 @@ msgid ""
 "**shape** is CYLINDER, SPHERE or ISOSURFACE."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:39
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:66 of
-msgid "**axis2**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:35
-#: abaqus.OdbDisplay.ViewCut.ViewCut.axis2:2
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:62 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:28
+#: abaqus.OdbDisplay.ViewCut.ViewCut.axis2:1
+#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:46 of
 msgid ""
 "A sequence of three Floats specifying the X-, Y-, and Z-coordinates of "
 "the second axis of the plane defining the cut, when the plane is defined "
@@ -3089,28 +2744,18 @@ msgid ""
 "ISOSURFACE."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:44
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:47 of
-msgid "**csysName**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:42
-#: abaqus.OdbDisplay.ViewCut.ViewCut.csysName:2
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:45 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:34
+#: abaqus.OdbDisplay.ViewCut.ViewCut.csysName:1
+#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:32 of
 msgid ""
 "A String specifying the name of the DatumCsys object to be used to define"
 " the cut. This name is not required if the cut **shape** is ISOSURFACE or"
 " if the cut is defined by the **origin** argument."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:51
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:73 of
-msgid "**cylinderAxis**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:47
-#: abaqus.OdbDisplay.ViewCut.ViewCut.cylinderAxis:2
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:69 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:38
+#: abaqus.OdbDisplay.ViewCut.ViewCut.cylinderAxis:1
+#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:52 of
 msgid ""
 "A sequence of Floats specifying the X-, Y-, and Z-coordinates of the "
 "cylinder axis defining the cut, when the cut is defined using the "
@@ -3120,27 +2765,17 @@ msgid ""
 "is PLANE, SPHERE, or ISOSURFACE."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:55
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:77 of
-msgid "**followDeformation**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:54
-#: abaqus.OdbDisplay.ViewCut.ViewCut.followDeformation:2
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:76 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:44
+#: abaqus.OdbDisplay.ViewCut.ViewCut.followDeformation:1
+#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:58 of
 msgid ""
 "A Boolean specifying whether the cut will follow the deformation or be "
 "static. The default value is OFF."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:60
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:82 of
-msgid "**overrideAveraging**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:58
-#: abaqus.OdbDisplay.ViewCut.ViewCut.overrideAveraging:2
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:80 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:47
+#: abaqus.OdbDisplay.ViewCut.ViewCut.overrideAveraging:1
+#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:61 of
 msgid ""
 "A Boolean specifying averaging for element based fields associated with "
 "isosurface cuts will be set to compute-average with a threshold of 100% "
@@ -3148,14 +2783,9 @@ msgid ""
 " value is ON."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:65
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:100 of
-msgid "**referenceFrame**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:63
-#: abaqus.OdbDisplay.ViewCut.ViewCut.referenceFrame:2
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:85 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:51
+#: abaqus.OdbDisplay.ViewCut.ViewCut.referenceFrame:1
+#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:65 of
 msgid ""
 "A SymbolicConstant specifying which reference frame will be used when the"
 " cut follows the deformation. Possible values are FIRST_FRAME, "
@@ -3166,23 +2796,27 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:82 of
-msgid ":obj:`ViewCut`"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:70 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:55 of
 msgid "A :py:class:`~abaqus.OdbDisplay.ViewCut.ViewCut` object."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.elementSet:2
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.nodeSet:2
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.surfaceSet:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut of
+msgid "Return type"
+msgstr ""
+
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:56 of
+msgid ":class:`ViewCut`"
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.elementSet:1
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.nodeSet:1
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.surfaceSet:1 of
 msgid ""
 "A repository of OdbSet objects specifying the set label. The repository "
 "is read-only."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldFrame:2 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldFrame:1 of
 msgid ""
 "A tuple of Strings specifying the step label and the frame label when the"
 " current step is user defined. Alternatively, **fieldFrame** maybe "
@@ -3190,98 +2824,98 @@ msgid ""
 " the current step is defined in the analysis."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:2 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:1 of
 msgid ""
 "A tuple of Strings specifying field steps. Each item in the sequence "
 "consists of a tuple that contains the following step information:"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:6 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:5 of
 msgid "**element0**: A String specifying the step name."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:7 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:6 of
 msgid "**element1**: A String specifying the step description."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:8 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:7 of
 msgid "**element2**: A Float specifying the time value at the start of the step."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:9 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:8 of
 msgid "**element3**: A Float specifying the time period of the step."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:10 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:9 of
 msgid ""
 "**element4**: A Float specifying the user modified time period of the "
 "step."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:11 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:10 of
 msgid ""
 "**element5**: An Int specifying the domain type of the step. Possible "
 "values are:"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:13 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:12 of
 msgid "0: Time domain"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:14 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:13 of
 msgid "1: Frequency domain"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:15 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:14 of
 msgid "2: Modal domain"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:16 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:15 of
 msgid "3: Arc Length (Riks) domain"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:18 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:17 of
 msgid "**element6**: A String specifying the default frame label."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:19 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:18 of
 msgid ""
 "**element7**: A sequence of strings specifying the frame labels for all "
 "available frames in the step."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:21 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:20 of
 msgid ""
 "**element8**: A sequence of floats specifying the frame values for all "
 "available frames in the step."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:23 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:22 of
 msgid ""
 "**element9**: A Int specifying whether the step is user defined. Possible"
 " values are 0 indicating the step is defined in the analysis and 1 "
 "indicating the step is user defined."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:26 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.fieldSteps:25 of
 msgid ""
 "**element10**: A sequence of machine readable strings encoding the "
 "currently active frame numbers."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.firstFrame:2 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.firstFrame:1 of
 msgid ""
 "A pair of Ints specifying the step index and the frame index of the first"
 " available frame. This sequence is read-only."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.lastFrame:2 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.lastFrame:1 of
 msgid ""
 "A pair of Ints specifying the step index and the frame index of the last "
 "available frame. This sequence is read-only."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.moveCameraToCsys:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.moveCameraToCsys:1 of
 msgid ""
 "This method specifies a new position for the camera. It is available only"
 " when **movieMode** = ON (in the View object). The new camera position is"
@@ -3289,208 +2923,207 @@ msgid ""
 "member of the BasicOptions object."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.nextFrame:2 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.nextFrame:1 of
 msgid ""
 "A pair of Ints specifying the step index and the frame index of the frame"
 " following the current frame. This sequence is read-only."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.prevFrame:2 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.prevFrame:1 of
 msgid ""
 "A pair of Ints specifying the step index and the frame index of the frame"
 " previous to the current frame. This sequence is read-only."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:2 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:1 of
 msgid ""
 "A tuple specifying variables. Each item in the sequence consists of a "
 "tuple containing the following elements:"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:5 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:4 of
 msgid "Element 0: A String specifying the variable label."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:6 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:5 of
 msgid ""
 "Element 1: An Int specifying the output position. Possible integer values"
 " are:"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:8 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:7 of
 msgid "0: UNDEFINED_POSITION"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:9 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:8 of
 msgid "1: NODAL"
+msgstr ""
+
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:9 of
+msgid "2: INTEGRATION_POINT"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:10
 #: of
-msgid "2: INTEGRATION_POINT"
+msgid "3: ELEMENT_FACE"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:11
 #: of
-msgid "3: ELEMENT_FACE"
+msgid "4: ELEMENT_NODAL"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:12
 #: of
-msgid "4: ELEMENT_NODAL"
+msgid "5: WHOLE_ELEMENT"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:13
 #: of
-msgid "5: WHOLE_ELEMENT"
+msgid "6: ELEMENT_CENTROID"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:14
 #: of
-msgid "6: ELEMENT_CENTROID"
+msgid "7: WHOLE_REGION"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:15
 #: of
-msgid "7: WHOLE_REGION"
+msgid "8: WHOLE_PART_INSTANCE"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:16
 #: of
-msgid "8: WHOLE_PART_INSTANCE"
+msgid "9: WHOLE_MODEL"
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:17
 #: of
-msgid "9: WHOLE_MODEL"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:18
-#: of
 msgid "10: GENERAL_PARTICLE"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:20
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:19
 #: of
 msgid "Element 2: An Int specifying the data type. Possible values are:"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:22
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:21
 #: of
 msgid "0: ENUMERATION"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:23
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:22
 #: of
 msgid "1: BOOLEAN"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:24
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:40 of
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:23
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:39 of
 msgid "2: INTEGER"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:25
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:24
 #: of
 msgid "3: SCALAR"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:26
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:25
 #: of
 msgid "4: VECTOR"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:27
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:26
 #: of
 msgid "5: QUATERNION_2D"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:28
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:27
 #: of
 msgid "6: QUATERNION_3D"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:29
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:28
 #: of
 msgid "7: TENSOR"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:30
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:29
 #: of
 msgid "8: TENSOR_3D_FULL"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:31
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:30
 #: of
 msgid "9: TENSOR_3D_PLANAR"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:32
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:31
 #: of
 msgid "10: TENSOR_3D_SURFACE"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:33
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:32
 #: of
 msgid "11: TENSOR_2D_PLANAR"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:34
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:33
 #: of
 msgid "12: TENSOR_2D_SURFACE"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:36
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:35
 #: of
 msgid "Element 3: An Int specifying the storage type. Possible values are:"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:38
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:37
 #: of
 msgid "0: FLOAT"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:39
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:38
 #: of
 msgid "1: DOUBLE"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:41
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:40
 #: of
 msgid "3: BOOLEAN"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:43
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:42
 #: of
 msgid "Element 4: An Int specifying the refinement type. Possible values are:"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:45
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:44
 #: of
 msgid "0: NO_REFINEMENT"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:46
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:45
 #: of
 msgid "1: INVARIANT"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:47
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:46
 #: of
 msgid "2: COMPONENT"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:49
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:48
 #: of
 msgid "Element 5: A String specifying the refinement label."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:50
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:49
 #: of
 msgid "Element 6: An Int specifying the refinement index."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:51
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:50
 #: of
 msgid ""
 "Element 7: An Int specifying whether section point information is "
@@ -3498,7 +3131,7 @@ msgid ""
 "available; 0, when this information is unavailable."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:54
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:53
 #: of
 msgid ""
 "Element 8: A sequence of a String specifying the name of the ply and "
@@ -3506,17 +3139,17 @@ msgid ""
 "information."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:57
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:56
 #: of
 msgid "A category selection tuple consists of the following elements:"
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:59
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:58
 #: of
 msgid "Element 0: A String specifying the category label."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:60
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:59
 #: of
 msgid ""
 "Element 1: An Int specifying whether to use both top and bottom section "
@@ -3524,114 +3157,88 @@ msgid ""
 "points and 0 to use only the top section point."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:63
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:62
 #: of
 msgid "Element 2: An Int specifying the top section point index."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:64
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:63
 #: of
 msgid "Element 3: A String specifying the top section label."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:65
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:64
 #: of
 msgid "Element 4: An Int specifying the bottom section point index."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:66
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:65
 #: of
 msgid "Element 5: A String specifying the bottom section label."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:67
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:66
 #: of
 msgid "Element 6: An Int specifying the category id."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:68
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:67
 #: of
 msgid ""
 "Element 9: An Int specifying whether the data are complex. Possible "
 "values are 1 when the data are complex; 0, when the data is not complex."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:70
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:69
 #: of
 msgid "Element 10: A Float specifying the minimum possible value for the data."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:71
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:70
 #: of
 msgid "Element 11: A Float specifying the maximum possible value for the data."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:72
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.primaryVariable:71
 #: of
 msgid ""
 "Element 12: An Int specifying whether the data is derived. Possible "
 "values are 1 when the data is derived; 0, when the data is not derived."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable:6 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable:5 of
 msgid ""
 "Check `OdbDisplay.setDeformedVariable on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
 "#simaker-odbdisplaysetdeformedvariablepyc>`__."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable:11
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:9
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:12
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:15
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:14 of
-msgid "**variableLabel**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable:11
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:11 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable:8
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:8 of
 msgid "A String specifying the field output variable."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable:18
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:13
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:16
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:18 of
-msgid "**field**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable:14 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable:10 of
 msgid "A String specifying the FieldOutput object."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable:32 of
-msgid ":obj:`Exception`"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable:23 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setDeformedVariable:12 of
 msgid ""
 "If the viewport is not associated with any Odb object. The current "
-"viewport  is not associated with an ODB file. Requested operation "
+"viewport     is not associated with an ODB file. Requested operation "
 "cancelled."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:6 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:5 of
 msgid ""
 "Check `OdbDisplay.setPrimarySectionPoint on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
 "#simaker-odbdisplaysetprimarysectionpointpyc>`__."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:14
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:40
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:35
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:37 of
-msgid "**sectionPoint**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:11
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:32
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:34 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:8
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:25
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:27 of
 msgid ""
 "A Dictionary with String keys and String values. Each key specifies a "
 "region in the model; the corresponding value specifies a section point "
@@ -3640,58 +3247,39 @@ msgid ""
 " >':    'SPOS, (fraction = 1.0)', }`"
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:21 of
-msgid "**activePly**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:17 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:13 of
 msgid "A String specifying the active ply name."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:35
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:72
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:29
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:63 of
-msgid ""
-":obj:`If` :obj:`the` :obj:`viewport` :obj:`is` :obj:`not` "
-":obj:`associated` :obj:`with` :obj:`any` :obj:`Odb` object:"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:26
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:45
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:63
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:20
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:54 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimarySectionPoint:15
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:30
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:44
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:10
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:38 of
 msgid ""
 "The current viewport is not associated with an ODB file. Requested "
-"operation cancelled."
+"operation     cancelled."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:8
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:11
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:13 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:4
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:8
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:10 of
 msgid ""
 "A String specifying the field output variable. The **variableLabel** and "
 "**field** arguments are mutually exclusive."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:12
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:15
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:17 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:7
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:11
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:13 of
 msgid ""
 "A String specifying the FieldOutput object. The **variableLabel** and "
 "**field** arguments are mutually exclusive."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:20
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:23
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:25 of
-msgid "**outputPosition**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:16
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:19
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:21 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:10
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:14
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:16 of
 msgid ""
 "A SymbolicConstant specifying the position from which to obtain data. "
 "Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE, "
@@ -3701,15 +3289,9 @@ msgid ""
 "database during the analysis."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:26
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:29
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:31 of
-msgid "**refinement**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:23
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:26
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:28 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:16
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:20
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:22 of
 msgid ""
 "A sequence of a SymbolicConstant and a String. Possible values for the "
 "SymbolicConstant are INVARIANT and COMPONENT. The String specifies an "
@@ -3718,51 +3300,42 @@ msgid ""
 "specified **variableLabel**."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:29 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:21 of
+msgid ""
+"A Dictionary with String keys and String values. Each key specifies a "
+"region in the model; the corresponding value specifies a section point "
+"within that region. For example::      sectionPoint={         'shell < "
+"MAT > < 7 section points >': 'SPOS, (fraction = 1.0)',         'shell < "
+"MAT > < 5 section points >': 'SPOS, (fraction = 1.0)',     }"
+msgstr ""
+
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:21 of
 msgid ""
 "A Dictionary with String keys and String values. Each key specifies a "
 "region in the model; the corresponding value specifies a section point "
 "within that region. For example::"
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setPrimaryVariable:54 of
-msgid ""
-":obj:`If` :obj:`the` :obj:`viewport` :obj:`is` :obj:`not` "
-":obj:`associated` :obj:`with` :obj:`any` :obj:`Odb` :obj:`object`"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:6 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:5 of
 msgid ""
 "Check `OdbDisplay.setStatusVariable on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
 "#simaker-odbdisplaysetstatusvariablepyc>`__."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:38 of
-msgid "**statusMinimum**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:38 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:30 of
 msgid ""
 "A Float specifying the minimum result value to be considered for element "
 "removal."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:41 of
-msgid "**statusMaximum**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:41 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:32 of
 msgid ""
 "A Float specifying the maximum result value to be considered for element "
 "removal."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:47 of
-msgid "**statusInsideRange**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:44 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:34 of
 msgid ""
 "A Boolean utilized when both **statusMinimum** and **statusMaximum** are "
 "given. Elements will be removed when they contain values between the "
@@ -3771,39 +3344,31 @@ msgid ""
 "false."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:50 of
-msgid "**useStatus**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:50 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:39 of
 msgid "A Boolean to specify if the status variable is to be active."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:58 of
-msgid "**applyStatusToUndeformed**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:53 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStatusVariable:41 of
 msgid ""
 "A Boolean to specify if the active status variable is to remove elements "
 "from undeformed plots. The default value is False."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:1 of
 msgid ""
 "This method specifies the field output variable for which to obtain "
 "results used for stream plots. This variable must be in the form of nodal"
 " vector data."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:6 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setStreamVariable:5 of
 msgid ""
 "Check `OdbDisplay.setStreamVariable on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
 "#simaker-odbdisplaysetstreamvariablepyc>`__."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:2 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:1 of
 msgid ""
 "This method specifies the field output variable for which to obtain "
 "results used for symbol plots. This variable must be in the form of "
@@ -3811,67 +3376,45 @@ msgid ""
 "this command to control the display of resultants, or components."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:8 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:7 of
 msgid ""
 "Check `OdbDisplay.setSymbolVariable on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
 "#simaker-odbdisplaysetsymbolvariablepyc>`__."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:41
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:77 of
-msgid "**tensorQuantity**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:40 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:32 of
 msgid ""
 "A SymbolicConstant specifying the tensor quantity to be displayed with "
 "the symbol. This value is set in the SymbolOptions object."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:49
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:16 of
-msgid "**vectorQuantity**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:44 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setSymbolVariable:35 of
 msgid ""
 "A SymbolicConstant specifying the vector quantity to be displayed with "
 "the symbol. This value is set in the SymbolOptions object."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues:5 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues:4 of
 msgid ""
 "Check `OdbDisplay.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbdisplaypyc.htm?contextscope=all"
 "#simaker-odbdisplaysetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues:10 of
-msgid "**visibleDisplayGroups**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues:10 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues:7 of
 msgid "A List of DisplayGroup objects."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues:13 of
-msgid "**viewCut**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues:13 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues:9 of
 msgid "A Boolean specifying whether to display the cut. The default value is OFF."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues:29 of
-msgid "**viewCutNames**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues:16 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.setValues:11 of
 msgid "A List of ViewCut objects."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusInsideRange:2
+#: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.statusInsideRange:1
 #: of
 msgid ""
 "A tuple of SymbolicConstants specifying a Boolean to specify if the "
@@ -3883,7 +3426,7 @@ msgstr ""
 msgid "OrientationOptions"
 msgstr ""
 
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions:2 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions:1 of
 msgid ""
 "The OrientationOptions object stores values and attributes associated "
 "with a material orientation plot. The OrientationOptions object has no "
@@ -3902,7 +3445,7 @@ msgid ""
 "object."
 msgstr ""
 
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions:31 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions:30 of
 msgid ""
 "Check `OrientationOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-orientationoptionspyc.htm?contextscope=all>`__."
@@ -4038,13 +3581,13 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:2 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:1 of
 msgid "This method modifies the OrientationOptions object."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.arrowheadStyle:2
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:51 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.arrowheadStyle:1
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:38 of
 msgid ""
 "A SymbolicConstant specifying the arrowhead style for the material "
 "orientation triad. Possible values are NONE, FILLED, and WIRE. The "
@@ -4052,32 +3595,32 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis1Color:2
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:15 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis1Color:1
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:11 of
 msgid ""
 "A String specifying the color of axis 1 of the material orientation "
 "triad. The default value is \"Cyan\"."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis2Color:2
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:23 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis2Color:1
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:17 of
 msgid ""
 "A String specifying the color of axis 2 of the material orientation "
 "triad. The default value is \"Yellow\"."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis3Color:2
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:31 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.axis3Color:1
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:23 of
 msgid ""
 "A String specifying the color of axis 3 of the material orientation "
 "triad. The default value is \"Red\"."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.lineThickness:2
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:43 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.lineThickness:1
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:32 of
 msgid ""
 "A SymbolicConstant specifying the thickness of the material orientation "
 "triad. Possible values are VERY_THIN, THIN, MEDIUM, and THICK. The "
@@ -4085,30 +3628,30 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.orientation:2
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:47 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.orientation:1
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:35 of
 msgid ""
 "A SymbolicConstant specifying the orientation used for composites. "
 "Possible values are PLY and LAYUP. The default value is PLY."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.scaleMode:2
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:55 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.scaleMode:1
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:41 of
 msgid ""
 "A SymbolicConstant specifying the scaling basis for the material "
 "orientation triad. Possible values are MODEL_SIZE and SCREEN_SIZE. The "
 "default value is MODEL_SIZE."
 msgstr ""
 
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:5 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:4 of
 msgid ""
 "Check `OrientationOptions.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-orientationoptionspyc.htm?contextscope=all"
 "#simaker-orientationoptionssetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:10 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:7 of
 msgid ""
 "An :py:class:`~abaqus.OdbDisplay.OrientationOptions.OrientationOptions` "
 "object from which values are to be copied. If other arguments are also "
@@ -4116,87 +3659,43 @@ msgid ""
 "default value is None."
 msgstr ""
 
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:16 of
-msgid "**axis1Color**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:20 of
-msgid "**showAxis1**"
-msgstr ""
-
 #: ../../docstring
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:19
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis1:2 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:14
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis1:1 of
 msgid ""
 "A Boolean specifying whether axis 1 of the material orientation triad "
 "should be displayed. The default value is ON."
 msgstr ""
 
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:24 of
-msgid "**axis2Color**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:28 of
-msgid "**showAxis2**"
-msgstr ""
-
 #: ../../docstring
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:27
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis2:2 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:20
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis2:1 of
 msgid ""
 "A Boolean specifying whether axis 2 of the material orientation triad "
 "should be displayed. The default value is ON."
 msgstr ""
 
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:32 of
-msgid "**axis3Color**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:36 of
-msgid "**showAxis3**"
-msgstr ""
-
 #: ../../docstring
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:35
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis3:2 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:26
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.showAxis3:1 of
 msgid ""
 "A Boolean specifying whether axis 3 of the material orientation triad "
 "should be displayed. The default value is ON."
 msgstr ""
 
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:40 of
-msgid "**symbolSize**"
-msgstr ""
-
 #: ../../docstring
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:39
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.symbolSize:2 of
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:29
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.symbolSize:1 of
 msgid ""
 "A Float specifying the size of the material orientation triad. The "
 "default value is 12.0."
-msgstr ""
-
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:44 of
-msgid "**lineThickness**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:48 of
-msgid "**orientation**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:52 of
-msgid "**arrowheadStyle**"
-msgstr ""
-
-#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:60 of
-msgid "**scaleMode**"
 msgstr ""
 
 #: ../../reference/session/odb_display.rst:59
 msgid "SuperimposeOptions"
 msgstr ""
 
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions:2 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions:1 of
 msgid ""
 "The SuperimposeOptions object stores values and attributes associated "
 "with the undeformed shape when the display contains both the deformed "
@@ -4215,7 +3714,7 @@ msgid ""
 "object is derived from the DGSuperimposeOptions object."
 msgstr ""
 
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions:32 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions:31 of
 msgid ""
 "Check `SuperimposeOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-superimposeoptionspyc.htm?contextscope=all>`__."
@@ -4475,13 +3974,13 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:2 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:1 of
 msgid "This method modifies the SuperimposeOptions object."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.deformedOffsetMode:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:147 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.deformedOffsetMode:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:109 of
 msgid ""
 "A SymbolicConstant specifying the offset of the deformed shape from the "
 "undeformed shape. Possible values are NONE, UNIFORM, and NONUNIFORM. The "
@@ -4490,8 +3989,8 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeColorWireHide:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:24 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeColorWireHide:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:18 of
 msgid ""
 "A String specifying the color to be used to plot the edges of the model "
 "when **renderStyle** = WIREFRAME or HIDDEN. The default value is "
@@ -4499,16 +3998,16 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.fillColor:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:44 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.fillColor:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:33 of
 msgid ""
 "A String specifying the color to be used to fill elements when "
 "**renderStyle** = FILLED or SHADED. The default value is \"Green\"."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolType:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:76 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolType:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:56 of
 msgid ""
 "A SymbolicConstant specifying the node symbol types. Possible values "
 "are:FILLED_CIRCLEFILLED_SQUAREFILLED_DIAMONDFILLED_TRIHOLLOW_CIRCLEHOLLOW_SQUAREHOLLOW_DIAMONDHOLLOW_TRICROSSXMARKERThe"
@@ -4516,7 +4015,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nonuniformOffset:2
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nonuniformOffset:1
 #: of
 msgid ""
 "A tuple of three Floats specifying the offset value in each of the three "
@@ -4525,8 +4024,8 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalDisplay:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:108 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalDisplay:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:80 of
 msgid ""
 "A SymbolicConstant specifying whether to draw element normals and surface"
 " normals. Possible values are ELEMENT and SURFACE. The default value is "
@@ -4534,22 +4033,22 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.renderStyle:2
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:15 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.renderStyle:1
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:11 of
 msgid ""
 "A SymbolicConstant specifying the render style of the plot. Possible "
 "values are WIREFRAME, FILLED, HIDDEN, and SHADED. The default value is "
 "WIREFRAME."
 msgstr ""
 
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:5 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:4 of
 msgid ""
 "Check `SuperimposeOptions.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-superimposeoptionspyc.htm?contextscope=all"
 "#simaker-superimposeoptionssetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:10 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:7 of
 msgid ""
 "A :py:class:`~abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions` "
 "object from which values are to be copied. If other arguments are also "
@@ -4558,35 +4057,23 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:19
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.visibleEdges:2 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:14
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.visibleEdges:1 of
 msgid ""
 "A SymbolicConstant specifying which edges to plot. Possible values are "
 "ALL, EXTERIOR, FEATURE, FREE, and NONE. The default value is FEATURE.NONE"
 " can be used only when **renderStyle** = SHADED."
 msgstr ""
 
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:150 of
-msgid "**deformedOffsetMode**"
-msgstr ""
-
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:154 of
-msgid "**uniformOffset**"
-msgstr ""
-
 #: ../../docstring
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:153
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.uniformOffset:2 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:114
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.uniformOffset:1 of
 msgid ""
 "A Float specifying the uniform offset value when **deformedOffsetMode** ="
 " UNIFORM. The default value is 0.0."
 msgstr ""
 
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:162 of
-msgid "**nonuniformOffset**"
-msgstr ""
-
-#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:157 of
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:117 of
 msgid ""
 "A sequence of three Floats specifying the offset value in each of the "
 "three coordinate directions when **deformedOffsetMode** = NONUNIFORM. The"
@@ -4597,7 +4084,7 @@ msgstr ""
 msgid "SymbolOptions"
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions:2 of
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions:1 of
 msgid ""
 "The SymbolOptions object stores values and attributes associated with a "
 "symbol plot. The SymbolOptions object has no constructor command. Abaqus "
@@ -4614,7 +4101,7 @@ msgid ""
 "DGSymbolOptions object."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions:30 of
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions:29 of
 msgid ""
 "Check `SymbolOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-symboloptionspyc.htm?contextscope=all>`__."
@@ -5078,27 +4565,27 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:2 of
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:1 of
 msgid "This method modifies the SymbolOptions object."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowScaleMode:2 of
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowScaleMode:1 of
 msgid ""
 "A SymbolicConstant specifying the arrow scaling mode. Possible values are"
 " MODEL_SIZE and SCREEN_SIZE. The default value is MODEL_SIZE."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowSymbolSize:2
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:80 of
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowSymbolSize:1
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:59 of
 msgid ""
 "An Int specifying the length of vector and tensor symbols. The default "
 "value is 6."
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoTensorMaxValue:2 of
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoTensorMaxValue:1 of
 msgid ""
 "The SymbolicConstant NOT_SET or a Float specifying the tensor maximum "
 "value when **tensorMaxValueAutoCompute** = ON. This value is read-only. "
@@ -5106,7 +4593,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoTensorMinValue:2 of
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoTensorMinValue:1 of
 msgid ""
 "The SymbolicConstant NOT_SET or a Float specifying the tensor minimum "
 "value when **tensorMinValueAutoCompute** = ON. This value is read-only. "
@@ -5114,7 +4601,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoVectorMaxValue:2 of
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoVectorMaxValue:1 of
 msgid ""
 "The SymbolicConstant NOT_SET or a Float specifying the vector maximum "
 "value when **vectorMaxValueAutoCompute** = ON. This value is read-only. "
@@ -5122,7 +4609,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoVectorMinValue:2 of
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.autoVectorMinValue:1 of
 msgid ""
 "The SymbolicConstant NOT_SET or a Float specifying the vector minimum "
 "value when **vectorMinValueAutoCompute** = ON. This value is read-only. "
@@ -5130,35 +4617,35 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.constantLengthArrows:2
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:44 of
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.constantLengthArrows:1
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:32 of
 msgid ""
 "A Boolean specifying whether to use constant-length arrows for vector "
 "symbols. The default value is OFF."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.drawLabelT:2
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.drawLabelT:1
 #: of
 msgid ""
 "A Boolean specifying whether to draw tensor labels. The default value is "
 "OFF."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.drawLabelV:2
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.drawLabelV:1
 #: of
 msgid ""
 "A Boolean specifying whether to draw vector labels. The default value is "
 "OFF."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numDigitsT:2
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numDigitsT:1
 #: of
 msgid ""
 "An Int specifying the number of digits in the tensor label. The default "
 "value is 2."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numDigitsV:2
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numDigitsV:1
 #: of
 msgid ""
 "An Int specifying the number of digits in the vector label. The default "
@@ -5166,7 +4653,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numberFormatT:2 of
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numberFormatT:1 of
 msgid ""
 "A SymbolicConstant specifying the number format for tensor. Possible "
 "values are SCIENTIFIC, FIXED, and ENGINEERING. The default value is "
@@ -5174,21 +4661,21 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numberFormatV:2 of
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numberFormatV:1 of
 msgid ""
 "A SymbolicConstant specifying the number format for vector. Possible "
 "values are SCIENTIFIC, FIXED, and ENGINEERING. The default value is "
 "SCIENTIFIC."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:5 of
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:4 of
 msgid ""
 "Check `SymbolOptions.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-symboloptionspyc.htm?contextscope=all"
 "#simaker-symboloptionssetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:10 of
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:7 of
 msgid ""
 "A :py:class:`~abaqus.OdbDisplay.SymbolOptions.SymbolOptions` object from "
 "which values are to be copied. If other arguments are also supplied to "
@@ -5196,172 +4683,112 @@ msgid ""
 "value is None."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:15
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorQuantity:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:11
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorQuantity:1 of
 msgid ""
 "A SymbolicConstant specifying the vector quantity to display. Possible "
 "values are RESULTANT and VECTOR_COMPONENT. The default value is "
 "RESULTANT."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:20 of
-msgid "**vectorLineThickness**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:19
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorLineThickness:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:14
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorLineThickness:1 of
 msgid ""
 "A SymbolicConstant specifying the vector line thickness. Possible values "
 "are VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:24 of
-msgid "**vectorArrowheadStyle**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:23
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorArrowheadStyle:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:17
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorArrowheadStyle:1 of
 msgid ""
 "A SymbolicConstant specifying the vector arrowhead style. Possible values"
 " are NONE, FILLED, and WIRE. The default value is WIRE."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:27 of
-msgid "**vectorColor**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:27
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColor:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:20
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColor:1 of
 msgid "A String specifying the vector color. The default value is \"Red\"."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:31 of
-msgid "**vectorColorMethod**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:30
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColorMethod:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:22
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColorMethod:1 of
 msgid ""
 "A SymbolicConstant specifying the vector color method. Possible values "
 "are UNIFORM and SPECTRUM. The default value is SPECTRUM."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:34 of
-msgid "**vectorColorSpectrum**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:34
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColorSpectrum:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:25
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColorSpectrum:1 of
 msgid ""
 "A String specifying the vector color spectrum name. The default value is "
 "\"Rainbow\"."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:38 of
-msgid "**vectorIntervalNumber**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:37
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorIntervalNumber:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:27
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorIntervalNumber:1 of
 msgid ""
 "An Int specifying the number of color intervals for vector symbols. The "
 "default value is 12."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:41 of
-msgid "**symbolDensity**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:41
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.symbolDensity:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:30
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.symbolDensity:1 of
 msgid ""
 "A Float specifying the factor for randomized sampling. The default value "
 "is 1.0."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:45 of
-msgid "**constantLengthArrows**"
-msgstr ""
-
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:49 of
-msgid "**tensorColorMethod**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:48
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorColorMethod:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:35
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorColorMethod:1 of
 msgid ""
 "A SymbolicConstant specifying the tensor color method. Possible values "
 "are UNIFORM and SPECTRUM. The default value is SPECTRUM."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:52 of
-msgid "**tensorColorSpectrum**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:52
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorColorSpectrum:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:38
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorColorSpectrum:1 of
 msgid ""
 "A String specifying the tensor color spectrum name. The default value is "
 "\"Rainbow\"."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:56 of
-msgid "**tensorIntervalNumber**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:55
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorIntervalNumber:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:40
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorIntervalNumber:1 of
 msgid ""
 "An Int specifying the number of color intervals for tensor symbols. The "
 "default value is 12."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:60 of
-msgid "**vectorMaxValueAutoCompute**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:59
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMaxValueAutoCompute:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:43
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMaxValueAutoCompute:1 of
 msgid ""
 "A Boolean specifying whether the maximum vector value is to be computed "
 "automatically. The default value is ON."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:64 of
-msgid "**vectorMaxValue**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:63
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMaxValue:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:46
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMaxValue:1 of
 msgid ""
 "A Float specifying the user-specified maximum vector value. The default "
 "value is **autoVectorMaxValue**."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:68 of
-msgid "**vectorMinValueAutoCompute**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:67
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMinValueAutoCompute:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:49
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMinValueAutoCompute:1 of
 msgid ""
 "A Boolean specifying whether the minimum vector value is to be computed "
 "automatically. The default value is ON."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:72 of
-msgid "**vectorMinValue**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:71
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMinValue:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:52
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorMinValue:1 of
 msgid ""
 "A Float specifying the user-specified minimum vector value. The default "
 "value is **autoVectorMinValue**."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:75
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorQuantity:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:55
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorQuantity:1 of
 msgid ""
 "A SymbolicConstant specifying the tensor quantity to display. Possible "
 "values are ALL_PRINCIPAL_COMPONENTS, PRINCIPAL_COMPONENT, "
@@ -5369,142 +4796,98 @@ msgid ""
 "ALL_PRINCIPAL_COMPONENTS."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:80 of
-msgid "**arrowSymbolSize**"
-msgstr ""
-
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:84 of
-msgid "**tensorMaxPrinColor**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:83
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMaxPrinColor:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:61
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMaxPrinColor:1 of
 msgid ""
 "A String specifying the color of the maximum principal tensor symbols. "
 "The default value is \"Red\"."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:88 of
-msgid "**tensorMinPrinColor**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:87
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMinPrinColor:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:64
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMinPrinColor:1 of
 msgid ""
 "A String specifying the color of the minimum principal tensor symbols. "
 "The default value is \"Cyan\"."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:92 of
-msgid "**tensorMidPrinColor**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:91
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMidPrinColor:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:67
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMidPrinColor:1 of
 msgid ""
 "A String specifying the color of the intermediate principal tensor "
 "symbols. The default value is \"Yellow\"."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:96 of
-msgid "**tensorSelectedPrinColor**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:95
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorSelectedPrinColor:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:70
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorSelectedPrinColor:1 of
 msgid ""
 "A String specifying the color of the selected principal tensor symbols. "
 "The default value is \"Red\"."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:100 of
-msgid "**tensorLineThickness**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:99
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorLineThickness:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:73
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorLineThickness:1 of
 msgid ""
 "A SymbolicConstant specifying the line thickness of the tensor symbols. "
 "Possible values are VERY_THIN, THIN, MEDIUM, and THICK. The default value"
 " is VERY_THIN."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:104 of
-msgid "**tensorArrowheadStyle**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:103
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorArrowheadStyle:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:76
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorArrowheadStyle:1 of
 msgid ""
 "A SymbolicConstant specifying the arrowhead style of the tensor symbols. "
 "Possible values are NONE, FILLED, and WIRE. The default value is WIRE."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:108 of
-msgid "**tensorMaxValueAutoCompute**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:107
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMaxValueAutoCompute:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:79
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMaxValueAutoCompute:1 of
 msgid ""
 "A Boolean specifying whether the maximum tensor value is to be computed "
 "automatically. The default value is ON."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:112 of
-msgid "**tensorMaxValue**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:111
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMaxValue:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:82
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMaxValue:1 of
 msgid ""
 "A Float specifying the user-specified maximum tensor value. The default "
 "value is **autoTensorMaxValue**."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:116 of
-msgid "**tensorMinValueAutoCompute**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:115
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMinValueAutoCompute:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:85
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMinValueAutoCompute:1 of
 msgid ""
 "A Boolean specifying whether the minimum tensor value is to be computed "
 "automatically. The default value is ON."
 msgstr ""
 
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:124 of
-msgid "**tensorMinValue**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:119
-#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMinValue:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:88
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMinValue:1 of
 msgid ""
 "A Float specifying the user-specified minimum tensor value. The default "
 "value is **autoTensorMinValue**."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textColorT:2
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textColorT:1
 #: of
 msgid ""
 "A String specifying the text color for tensor. The default value is "
 "\"Yellow\"."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textColorV:2
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textColorV:1
 #: of
 msgid ""
 "A String specifying the text color for vector. The default value is "
 "\"Yellow\"."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textFontT:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textFontT:1 of
 msgid ""
 "A String specifying the text font for tensor. The default value is "
 "\"verdana\"."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textFontV:2 of
+#: ../../docstring abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textFontV:1 of
 msgid ""
 "A String specifying the text font for vector. The default value is "
 "\"verdana\"."
@@ -5514,7 +4897,7 @@ msgstr ""
 msgid "ViewCut"
 msgstr ""
 
-#: abaqus.OdbDisplay.ViewCut.ViewCut:2 of
+#: abaqus.OdbDisplay.ViewCut.ViewCut:1 of
 msgid ""
 "The ViewCut object is used to store values and attributes associate with "
 "ViewCut type objects. ViewCut objects can be created using the methods "
@@ -5528,8 +4911,8 @@ msgid ":py:obj:`angle <abaqus.OdbDisplay.ViewCut.ViewCut.angle>`\\"
 msgstr ""
 
 #: ../../None:18:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.ViewCut.ViewCut.angle:2
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:10 of
+#: abaqus.OdbDisplay.ViewCut.ViewCut.angle:1
+#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:7 of
 msgid ""
 "A Float specifying the rotation angle of the cut defined with a **shape**"
 " set to PLANE."
@@ -5550,8 +4933,8 @@ msgid ":py:obj:`position <abaqus.OdbDisplay.ViewCut.ViewCut.position>`\\"
 msgstr ""
 
 #: ../../None:18:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.ViewCut.ViewCut.position:2
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:17 of
+#: abaqus.OdbDisplay.ViewCut.ViewCut.position:1
+#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:12 of
 msgid ""
 "A Float specifying the position of the cut defined with a **shape** set "
 "to PLANE."
@@ -5562,8 +4945,8 @@ msgid ":py:obj:`radius <abaqus.OdbDisplay.ViewCut.ViewCut.radius>`\\"
 msgstr ""
 
 #: ../../None:18:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.ViewCut.ViewCut.radius:2
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:20 of
+#: abaqus.OdbDisplay.ViewCut.ViewCut.radius:1
+#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:14 of
 msgid ""
 "A Float specifying the radius of the cut defined with a **shape** set to "
 "CYLINDER or SPHERE."
@@ -5584,8 +4967,8 @@ msgid ":py:obj:`value <abaqus.OdbDisplay.ViewCut.ViewCut.value>`\\"
 msgstr ""
 
 #: ../../None:18:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:28
-#: abaqus.OdbDisplay.ViewCut.ViewCut.value:2 of
+#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:20
+#: abaqus.OdbDisplay.ViewCut.ViewCut.value:1 of
 msgid ""
 "A Float specifying the value of the cut defined with a **shape** set to "
 "ISOSURFACE."
@@ -5636,7 +5019,7 @@ msgid ":py:obj:`active <abaqus.OdbDisplay.ViewCut.ViewCut.active>`\\"
 msgstr ""
 
 #: ../../None:18:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.ViewCut.ViewCut.active:2 of
+#: abaqus.OdbDisplay.ViewCut.ViewCut.active:1 of
 msgid "A Boolean specifying whether the cut is displayed."
 msgstr ""
 
@@ -5645,7 +5028,7 @@ msgid ":py:obj:`cutRange <abaqus.OdbDisplay.ViewCut.ViewCut.cutRange>`\\"
 msgstr ""
 
 #: ../../None:18:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.ViewCut.ViewCut.cutRange:2 of
+#: abaqus.OdbDisplay.ViewCut.ViewCut.cutRange:1 of
 msgid "A pair of Floats specifying the acceptable range for positioning the cut."
 msgstr ""
 
@@ -5693,7 +5076,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:18:<autosummary>:1 ../../docstring
-#: abaqus.OdbDisplay.ViewCut.ViewCut.crossSectionalArea:2 of
+#: abaqus.OdbDisplay.ViewCut.ViewCut.crossSectionalArea:1 of
 msgid ""
 "A Float returning the cross-sectional area of the cut when "
 "**showFreeBodyCut** is set to ON."
@@ -5711,7 +5094,7 @@ msgid ""
 "\\(\\[angle\\, motion\\, position\\, radius\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1 abaqus.OdbDisplay.ViewCut.ViewCut.setValues:2
+#: ../../None:5:<autosummary>:1 abaqus.OdbDisplay.ViewCut.ViewCut.setValues:1
 #: of
 msgid "This method modifies the ViewCut object."
 msgstr ""
@@ -5723,102 +5106,62 @@ msgid ""
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
-#: abaqus.OdbDisplay.ViewCut.ViewCut.updateVariable:2 of
+#: abaqus.OdbDisplay.ViewCut.ViewCut.updateVariable:1 of
 msgid ""
 "This method updates the field associated with an isosurface cut to be "
 "consistent with the current primary variable."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.crossSectionalArea:6 of
+#: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.crossSectionalArea:5 of
 msgid "The `crossSectionalArea` attribute was added."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.motion:2
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:13 of
+#: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.motion:1
+#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:9 of
 msgid ""
 "A SymbolicConstant specifying the type of motion for the cut defined with"
 " a **shape** set to PLANE. Possible values are TRANSLATE and ROTATE. The "
 "default value is TRANSLATE."
 msgstr ""
 
-#: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.rotationAxis:2
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:24 of
+#: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.rotationAxis:1
+#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:17 of
 msgid ""
 "A SymbolicConstant specifying the rotation axis for the cut defined with "
 "a **shape** set to PLANE. Possible values are AXIS_1, AXIS_2, and AXIS_3."
 " The default value is AXIS_2."
 msgstr ""
 
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:5 of
+#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:4 of
 msgid ""
 "Check `ViewCut.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewcutpyc.htm?contextscope=all"
 "#simaker-viewcutsetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:10 of
-msgid "**angle**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:14 of
-msgid "**motion**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:17 of
-msgid "**position**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:21 of
-msgid "**radius**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:25 of
-msgid "**rotationAxis**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:28 of
-msgid "**value**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:32 of
-msgid "**showModelAboveCut**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.setValues:31
-#: abaqus.OdbDisplay.ViewCut.ViewCut.showModelAboveCut:2 of
+#: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.setValues:22
+#: abaqus.OdbDisplay.ViewCut.ViewCut.showModelAboveCut:1 of
 msgid ""
 "A Boolean specifying whether to display the model above the cut. The "
 "default value is OFF."
 msgstr ""
 
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:35 of
-msgid "**showModelOnCut**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.setValues:35
-#: abaqus.OdbDisplay.ViewCut.ViewCut.showModelOnCut:2 of
+#: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.setValues:25
+#: abaqus.OdbDisplay.ViewCut.ViewCut.showModelOnCut:1 of
 msgid ""
 "A Boolean specifying whether to display the model on the cut. The default"
 " value is ON."
 msgstr ""
 
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:39 of
-msgid "**showModelBelowCut**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.setValues:38
-#: abaqus.OdbDisplay.ViewCut.ViewCut.showModelBelowCut:2 of
+#: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.setValues:27
+#: abaqus.OdbDisplay.ViewCut.ViewCut.showModelBelowCut:1 of
 msgid ""
 "A Boolean specifying whether to display the model below the cut. The "
 "default value is ON."
 msgstr ""
 
-#: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:42 of
-msgid "**showFreeBodyCut**"
-msgstr ""
-
-#: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.setValues:42
-#: abaqus.OdbDisplay.ViewCut.ViewCut.showFreeBodyCut:2 of
+#: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.setValues:30
+#: abaqus.OdbDisplay.ViewCut.ViewCut.showFreeBodyCut:1 of
 msgid ""
 "A Boolean specifying whether to display the free body cut. The default "
 "value is OFF."
@@ -5828,14 +5171,14 @@ msgstr ""
 msgid "ViewerOptions"
 msgstr ""
 
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions:2 of
+#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions:1 of
 msgid ""
 "The ViewerOptions object specifies options to set the result caching "
 "parameters. The ViewerOptions object has no constructor. Abaqus creates "
 "the **viewerOptions** member when a session is started."
 msgstr ""
 
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions:13 of
+#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions:12 of
 msgid ""
 "Check `ViewerOptions on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vieweroptionspyc.htm?contextscope=all>`__."
@@ -5849,54 +5192,38 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:2 of
+#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:1 of
 msgid "This method modifies the ViewerOptions object."
 msgstr ""
 
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:5 of
+#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:4 of
 msgid ""
 "Check `ViewerOptions.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vieweroptionspyc.htm?contextscope=all"
 "#simaker-vieweroptionssetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:11 of
-msgid "**primaryVariableCaching**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:10 of
+#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:7 of
 msgid ""
 "A Boolean specifying whether results are currently cached. Caching "
 "improves the performance of subsequent access. The default value is ON."
 msgstr ""
 
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:15 of
-msgid "**deformedVariableCaching**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:14 of
+#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:10 of
 msgid ""
 "A Boolean specifying whether deformation vectors are currently cached. "
 "Caching improves the performance of subsequent access. The default value "
 "is ON."
 msgstr ""
 
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:19 of
-msgid "**cutVariableCaching**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:18 of
+#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:13 of
 msgid ""
 "A Boolean specifying whether the values used for displaying cut models "
 "are currently cached. Caching improves the performance of subsequent "
 "access. The default value is ON."
 msgstr ""
 
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:24 of
-msgid "**odbUpdateChecking**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:22 of
+#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:16 of
 msgid ""
 "A Boolean specifying whether the current .odb file should be checked for "
 "updates. Setting **odbUpdateChecking** to OFF can improve Viewer "
@@ -5904,11 +5231,7 @@ msgid ""
 "ON."
 msgstr ""
 
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:41 of
-msgid "**odbUpdateCheckInterval**"
-msgstr ""
-
-#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:27 of
+#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues:20 of
 msgid ""
 "An Int specifying the minimum time between status checks (in seconds). "
 "The default value is 0."
@@ -6382,5 +5705,495 @@ msgstr ""
 #~ " "
 #~ "<https://help.3ds.com/0.1./English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vieweroptionspyc.htm?contextscope=all"
 #~ "#simaker-vieweroptionssetvaluespyc>`__."
+#~ msgstr ""
+
+#~ msgid "**options**"
+#~ msgstr ""
+
+#~ msgid "**renderStyle**"
+#~ msgstr ""
+
+#~ msgid "**visibleEdges**"
+#~ msgstr ""
+
+#~ msgid "**deformationScaling**"
+#~ msgstr ""
+
+#~ msgid "**uniformScaleFactor**"
+#~ msgstr ""
+
+#~ msgid "**nonuniformScaleFactor**"
+#~ msgstr ""
+
+#~ msgid "**edgeColorWireHide**"
+#~ msgstr ""
+
+#~ msgid "**edgeColorFillShade**"
+#~ msgstr ""
+
+#~ msgid "**edgeLineStyle**"
+#~ msgstr ""
+
+#~ msgid "**edgeLineThickness**"
+#~ msgstr ""
+
+#~ msgid "**fillColor**"
+#~ msgstr ""
+
+#~ msgid "**colorCodeOverride**"
+#~ msgstr ""
+
+#~ msgid "**labelFont**"
+#~ msgstr ""
+
+#~ msgid "**elemLabels**"
+#~ msgstr ""
+
+#~ msgid "**elemLabelColor**"
+#~ msgstr ""
+
+#~ msgid "**faceLabels**"
+#~ msgstr ""
+
+#~ msgid "**faceLabelColor**"
+#~ msgstr ""
+
+#~ msgid "**nodeLabels**"
+#~ msgstr ""
+
+#~ msgid "**nodeLabelColor**"
+#~ msgstr ""
+
+#~ msgid "**nodeSymbols**"
+#~ msgstr ""
+
+#~ msgid "**nodeSymbolType**"
+#~ msgstr ""
+
+#~ msgid "**nodeSymbolColor**"
+#~ msgstr ""
+
+#~ msgid "**nodeSymbolSize**"
+#~ msgstr ""
+
+#~ msgid "**elementShrink**"
+#~ msgstr ""
+
+#~ msgid "**elementShrinkFactor**"
+#~ msgstr ""
+
+#~ msgid "**coordinateScale**"
+#~ msgstr ""
+
+#~ msgid "**coordinateScaleFactors**"
+#~ msgstr ""
+
+#~ msgid "**normals**"
+#~ msgstr ""
+
+#~ msgid "**normalDisplay**"
+#~ msgstr ""
+
+#~ msgid "**faceNormalColor**"
+#~ msgstr ""
+
+#~ msgid "**beamN1Color**"
+#~ msgstr ""
+
+#~ msgid "**beamN2Color**"
+#~ msgstr ""
+
+#~ msgid "**beamTangentColor**"
+#~ msgstr ""
+
+#~ msgid "**normalArrowLength**"
+#~ msgstr ""
+
+#~ msgid "**normalLineThickness**"
+#~ msgstr ""
+
+#~ msgid "**normalArrowheadStyle**"
+#~ msgstr ""
+
+#~ msgid "**translucency**"
+#~ msgstr ""
+
+#~ msgid "**translucencyFactor**"
+#~ msgstr ""
+
+#~ msgid ":obj:`RangeError`"
+#~ msgstr ""
+
+#~ msgid "**contourType**"
+#~ msgstr ""
+
+#~ msgid "**contourMethod**"
+#~ msgstr ""
+
+#~ msgid "**tickmarkPlots**"
+#~ msgstr ""
+
+#~ msgid "**contourStyle**"
+#~ msgstr ""
+
+#~ msgid "**numIntervals**"
+#~ msgstr ""
+
+#~ msgid "**intervalType**"
+#~ msgstr ""
+
+#~ msgid "**intervalValues**"
+#~ msgstr ""
+
+#~ msgid "**maxAutoCompute**"
+#~ msgstr ""
+
+#~ msgid "**maxValue**"
+#~ msgstr ""
+
+#~ msgid "**minAutoCompute**"
+#~ msgstr ""
+
+#~ msgid "**minValue**"
+#~ msgstr ""
+
+#~ msgid "**animationAutoLimits**"
+#~ msgstr ""
+
+#~ msgid "**edgeColorLine**"
+#~ msgstr ""
+
+#~ msgid "**edgeColorBandedQuilt**"
+#~ msgstr ""
+
+#~ msgid "**spectrum**"
+#~ msgstr ""
+
+#~ msgid "**reversedContourLegendRange**"
+#~ msgstr ""
+
+#~ msgid "**outsideLimitsMode**"
+#~ msgstr ""
+
+#~ msgid "**outsideLimitsAboveColor**"
+#~ msgstr ""
+
+#~ msgid "**outsideLimitsBelowColor**"
+#~ msgstr ""
+
+#~ msgid "**intervalLineAttributes**"
+#~ msgstr ""
+
+#~ msgid "**contourEdges**"
+#~ msgstr ""
+
+#~ msgid "**contourEdgeColor**"
+#~ msgstr ""
+
+#~ msgid "**contourEdgeStyle**"
+#~ msgstr ""
+
+#~ msgid "**contourEdgeThickness**"
+#~ msgstr ""
+
+#~ msgid "**tickmarkAxisLength**"
+#~ msgstr ""
+
+#~ msgid "**tickmarkBaseValue**"
+#~ msgstr ""
+
+#~ msgid "**tickmarkOrientation**"
+#~ msgstr ""
+
+#~ msgid "**tickmarkCurveColor**"
+#~ msgstr ""
+
+#~ msgid "**averagedOrientationDisplay**"
+#~ msgstr ""
+
+#~ msgid "**extrapolatedAveraging**"
+#~ msgstr ""
+
+#~ msgid "**showMaxLocation**"
+#~ msgstr ""
+
+#~ msgid "**showMinLocation**"
+#~ msgstr ""
+
+#~ msgid "**legendHideOutsideLimits**"
+#~ msgstr ""
+
+#~ msgid "**name**"
+#~ msgstr ""
+
+#~ msgid "**shape**"
+#~ msgstr ""
+
+#~ msgid "**origin**"
+#~ msgstr ""
+
+#~ msgid "**normal**"
+#~ msgstr ""
+
+#~ msgid "**axis2**"
+#~ msgstr ""
+
+#~ msgid "**csysName**"
+#~ msgstr ""
+
+#~ msgid "**cylinderAxis**"
+#~ msgstr ""
+
+#~ msgid "**followDeformation**"
+#~ msgstr ""
+
+#~ msgid "**overrideAveraging**"
+#~ msgstr ""
+
+#~ msgid "**referenceFrame**"
+#~ msgstr ""
+
+#~ msgid ":obj:`ViewCut`"
+#~ msgstr ""
+
+#~ msgid "**variableLabel**"
+#~ msgstr ""
+
+#~ msgid "**field**"
+#~ msgstr ""
+
+#~ msgid ":obj:`Exception`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the viewport is not associated "
+#~ "with any Odb object. The current "
+#~ "viewport  is not associated with an "
+#~ "ODB file. Requested operation cancelled."
+#~ msgstr ""
+
+#~ msgid "**sectionPoint**"
+#~ msgstr ""
+
+#~ msgid "**activePly**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`If` :obj:`the` :obj:`viewport` :obj:`is` "
+#~ ":obj:`not` :obj:`associated` :obj:`with` :obj:`any`"
+#~ " :obj:`Odb` object:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The current viewport is not associated"
+#~ " with an ODB file. Requested "
+#~ "operation cancelled."
+#~ msgstr ""
+
+#~ msgid "**outputPosition**"
+#~ msgstr ""
+
+#~ msgid "**refinement**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":obj:`If` :obj:`the` :obj:`viewport` :obj:`is` "
+#~ ":obj:`not` :obj:`associated` :obj:`with` :obj:`any`"
+#~ " :obj:`Odb` :obj:`object`"
+#~ msgstr ""
+
+#~ msgid "**statusMinimum**"
+#~ msgstr ""
+
+#~ msgid "**statusMaximum**"
+#~ msgstr ""
+
+#~ msgid "**statusInsideRange**"
+#~ msgstr ""
+
+#~ msgid "**useStatus**"
+#~ msgstr ""
+
+#~ msgid "**applyStatusToUndeformed**"
+#~ msgstr ""
+
+#~ msgid "**tensorQuantity**"
+#~ msgstr ""
+
+#~ msgid "**vectorQuantity**"
+#~ msgstr ""
+
+#~ msgid "**visibleDisplayGroups**"
+#~ msgstr ""
+
+#~ msgid "**viewCut**"
+#~ msgstr ""
+
+#~ msgid "**viewCutNames**"
+#~ msgstr ""
+
+#~ msgid "**axis1Color**"
+#~ msgstr ""
+
+#~ msgid "**showAxis1**"
+#~ msgstr ""
+
+#~ msgid "**axis2Color**"
+#~ msgstr ""
+
+#~ msgid "**showAxis2**"
+#~ msgstr ""
+
+#~ msgid "**axis3Color**"
+#~ msgstr ""
+
+#~ msgid "**showAxis3**"
+#~ msgstr ""
+
+#~ msgid "**symbolSize**"
+#~ msgstr ""
+
+#~ msgid "**lineThickness**"
+#~ msgstr ""
+
+#~ msgid "**orientation**"
+#~ msgstr ""
+
+#~ msgid "**arrowheadStyle**"
+#~ msgstr ""
+
+#~ msgid "**scaleMode**"
+#~ msgstr ""
+
+#~ msgid "**deformedOffsetMode**"
+#~ msgstr ""
+
+#~ msgid "**uniformOffset**"
+#~ msgstr ""
+
+#~ msgid "**nonuniformOffset**"
+#~ msgstr ""
+
+#~ msgid "**vectorLineThickness**"
+#~ msgstr ""
+
+#~ msgid "**vectorArrowheadStyle**"
+#~ msgstr ""
+
+#~ msgid "**vectorColor**"
+#~ msgstr ""
+
+#~ msgid "**vectorColorMethod**"
+#~ msgstr ""
+
+#~ msgid "**vectorColorSpectrum**"
+#~ msgstr ""
+
+#~ msgid "**vectorIntervalNumber**"
+#~ msgstr ""
+
+#~ msgid "**symbolDensity**"
+#~ msgstr ""
+
+#~ msgid "**constantLengthArrows**"
+#~ msgstr ""
+
+#~ msgid "**tensorColorMethod**"
+#~ msgstr ""
+
+#~ msgid "**tensorColorSpectrum**"
+#~ msgstr ""
+
+#~ msgid "**tensorIntervalNumber**"
+#~ msgstr ""
+
+#~ msgid "**vectorMaxValueAutoCompute**"
+#~ msgstr ""
+
+#~ msgid "**vectorMaxValue**"
+#~ msgstr ""
+
+#~ msgid "**vectorMinValueAutoCompute**"
+#~ msgstr ""
+
+#~ msgid "**vectorMinValue**"
+#~ msgstr ""
+
+#~ msgid "**arrowSymbolSize**"
+#~ msgstr ""
+
+#~ msgid "**tensorMaxPrinColor**"
+#~ msgstr ""
+
+#~ msgid "**tensorMinPrinColor**"
+#~ msgstr ""
+
+#~ msgid "**tensorMidPrinColor**"
+#~ msgstr ""
+
+#~ msgid "**tensorSelectedPrinColor**"
+#~ msgstr ""
+
+#~ msgid "**tensorLineThickness**"
+#~ msgstr ""
+
+#~ msgid "**tensorArrowheadStyle**"
+#~ msgstr ""
+
+#~ msgid "**tensorMaxValueAutoCompute**"
+#~ msgstr ""
+
+#~ msgid "**tensorMaxValue**"
+#~ msgstr ""
+
+#~ msgid "**tensorMinValueAutoCompute**"
+#~ msgstr ""
+
+#~ msgid "**tensorMinValue**"
+#~ msgstr ""
+
+#~ msgid "**angle**"
+#~ msgstr ""
+
+#~ msgid "**motion**"
+#~ msgstr ""
+
+#~ msgid "**position**"
+#~ msgstr ""
+
+#~ msgid "**radius**"
+#~ msgstr ""
+
+#~ msgid "**rotationAxis**"
+#~ msgstr ""
+
+#~ msgid "**value**"
+#~ msgstr ""
+
+#~ msgid "**showModelAboveCut**"
+#~ msgstr ""
+
+#~ msgid "**showModelOnCut**"
+#~ msgstr ""
+
+#~ msgid "**showModelBelowCut**"
+#~ msgstr ""
+
+#~ msgid "**showFreeBodyCut**"
+#~ msgstr ""
+
+#~ msgid "**primaryVariableCaching**"
+#~ msgstr ""
+
+#~ msgid "**deformedVariableCaching**"
+#~ msgstr ""
+
+#~ msgid "**cutVariableCaching**"
+#~ msgstr ""
+
+#~ msgid "**odbUpdateChecking**"
+#~ msgstr ""
+
+#~ msgid "**odbUpdateCheckInterval**"
 #~ msgstr ""
 
