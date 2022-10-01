@@ -19,7 +19,7 @@ Abaqus/Python 脚本的类型提示
 - PyPI: [pypi.org/project/abqpy](https://pypi.org/project/abqpy/)
 - Anaconda: [anaconda.org/haiiliin/abqpy](https://anaconda.org/haiiliin/abqpy)
 - Read the Docs: [readthedocs.org/projects/abqpy](https://readthedocs.org/projects/abqpy/)
-- 中文文档: [abqpy.haiiliin.com/zh_CN/latest](https://abqpy.haiiliin.com/zh_CN/latest/)
+- 中文文档: [docs.abqpy.com/zh_CN/latest](https://docs.abqpy.com/zh_CN/latest/)
 
 ## 欢迎拉取合并请求
 
@@ -104,4 +104,4 @@ C:/SIMULIA/Commands/abaqus.bat
 
 ## 更多
 
-更详细使用请参考 [文档](https://abqpy.haiiliin.com/)。
+更详细使用请参考 [文档](https://docs.abqpy.com/)。
