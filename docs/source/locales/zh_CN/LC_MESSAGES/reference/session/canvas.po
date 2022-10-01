@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-28 00:22+0000\n"
+"POT-Creation-Date: 2022-10-01 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,7 +152,7 @@ msgid ":py:obj:`currentWidth <abaqus.Canvas.Viewport.Viewport.currentWidth>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.ViewportBase.ViewportBase.currentWidth:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.currentWidth:1 of
 msgid ""
 "A Float specifying the width in millimeters of the current viewport, "
 "regardless of the value of **windowState**."
@@ -163,7 +163,7 @@ msgid ":py:obj:`currentHeight <abaqus.Canvas.Viewport.Viewport.currentHeight>`\\
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.ViewportBase.ViewportBase.currentHeight:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.currentHeight:1 of
 msgid ""
 "A Float specifying the height in millimeters of the current viewport, "
 "regardless of the value of **windowState**, and including the title bar."
@@ -215,7 +215,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.ViewportBase.ViewportBase.animationConnect:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.animationConnect:1 of
 msgid "A Boolean specifying whether an animation is connected to the viewport."
 msgstr ""
 
@@ -224,7 +224,7 @@ msgid ":py:obj:`colorMappings <abaqus.Canvas.Viewport.Viewport.colorMappings>`\\
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:1 of
 msgid ""
 "A repository of AttributeColorMap objects specifying the objects cannot "
 "be constructed but the following attribute maps are supported:"
@@ -267,7 +267,7 @@ msgid ":py:obj:`layers <abaqus.Canvas.Viewport.Viewport.layers>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.ViewportBase.ViewportBase.layers:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.layers:1 of
 msgid ""
 "A repository of Layer objects specifying the key to the repository is a "
 "String with the name of the layer."
@@ -278,7 +278,7 @@ msgid ":py:obj:`view <abaqus.Canvas.Viewport.Viewport.view>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.ViewportBase.ViewportBase.view:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.view:1 of
 msgid ""
 "A :py:class:`~abaqus.UtilityAndView.View.View` object specifying the "
 "object that controls viewing of the viewport content."
@@ -289,8 +289,8 @@ msgid ":py:obj:`odbDisplay <abaqus.Canvas.Viewport.Viewport.odbDisplay>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../None:8:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.Layer.Layer.odbDisplay:2
-#: abaqus.Canvas.ViewportBase.ViewportBase.odbDisplay:2 of
+#: abaqus.Canvas.Layer.Layer.odbDisplay:1
+#: abaqus.Canvas.ViewportBase.ViewportBase.odbDisplay:1 of
 msgid ""
 "An :py:class:`~abaqus.OdbDisplay.OdbDisplay.OdbDisplay` object specifying"
 " the display options for the Odb object."
@@ -301,8 +301,8 @@ msgid ":py:obj:`partDisplay <abaqus.Canvas.Viewport.Viewport.partDisplay>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../None:8:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.Layer.Layer.partDisplay:2
-#: abaqus.Canvas.ViewportBase.ViewportBase.partDisplay:2 of
+#: abaqus.Canvas.Layer.Layer.partDisplay:1
+#: abaqus.Canvas.ViewportBase.ViewportBase.partDisplay:1 of
 msgid ""
 "A "
 ":py:class:`~abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions` "
@@ -316,8 +316,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../None:8:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.Layer.Layer.assemblyDisplay:2
-#: abaqus.Canvas.ViewportBase.ViewportBase.assemblyDisplay:2 of
+#: abaqus.Canvas.Layer.Layer.assemblyDisplay:1
+#: abaqus.Canvas.ViewportBase.ViewportBase.assemblyDisplay:1 of
 msgid ""
 "An "
 ":py:class:`~abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions`"
@@ -331,7 +331,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.ViewportBase.ViewportBase.viewportAnnotationOptions:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.viewportAnnotationOptions:1 of
 msgid ""
 "A "
 ":py:class:`~abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions`"
@@ -345,7 +345,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.ViewportBase.ViewportBase.detailPlotOptions:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.detailPlotOptions:1 of
 msgid ""
 "A :py:class:`~abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions` "
 "object."
@@ -358,7 +358,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.ViewportBase.ViewportBase.annotationsToPlot:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.annotationsToPlot:1 of
 msgid ""
 "An "
 ":py:class:`~abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray`"
@@ -370,7 +370,7 @@ msgid ":py:obj:`visibleLayers <abaqus.Canvas.Viewport.Viewport.visibleLayers>`\\
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.ViewportBase.ViewportBase.visibleLayers:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.visibleLayers:1 of
 msgid ""
 "A tuple of Strings specifying the names of layers that will be displayed "
 "in the viewport when **displayMode** = OVERLAY."
@@ -381,7 +381,7 @@ msgid ":py:obj:`currentOrigin <abaqus.Canvas.Viewport.Viewport.currentOrigin>`\\
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.ViewportBase.ViewportBase.currentOrigin:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.currentOrigin:1 of
 msgid ""
 "A pair of Floats specifying the **X**- and **Y**-coordinates in "
 "millimeters in the canvas coordinate system of the lower left corner of "
@@ -405,7 +405,7 @@ msgid ":py:obj:`lightOptions <abaqus.Canvas.Viewport.Viewport.lightOptions>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.ViewportBase.ViewportBase.lightOptions:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.lightOptions:1 of
 msgid "A :py:class:`~abaqus.DisplayOptions.LightOptions.LightOptions` object."
 msgstr ""
 
@@ -414,7 +414,7 @@ msgid ":py:obj:`imageOptions <abaqus.Canvas.Viewport.Viewport.imageOptions>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.ViewportBase.ViewportBase.imageOptions:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.imageOptions:1 of
 msgid "An :py:class:`~abaqus.Canvas.ImageOptions.ImageOptions` object."
 msgstr ""
 
@@ -423,7 +423,7 @@ msgid ":py:obj:`movieOptions <abaqus.Canvas.Viewport.Viewport.movieOptions>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.ViewportBase.ViewportBase.movieOptions:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.movieOptions:1 of
 msgid "A :py:class:`~abaqus.Canvas.MovieOptions.MovieOptions` object."
 msgstr ""
 
@@ -449,7 +449,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../None:5:<autosummary>:1
-#: abaqus.Canvas.Viewport.Viewport.Layer:2 of
+#: abaqus.Canvas.Viewport.Viewport.Layer:1 of
 msgid "This method creates a Layer object in the Layer repository."
 msgstr ""
 
@@ -461,7 +461,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:2 of
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:1 of
 msgid "This method plots an Annotation object in aViewport."
 msgstr ""
 
@@ -484,7 +484,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
-#: abaqus.Canvas.ViewportBase.ViewportBase.bringToFront:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.bringToFront:1 of
 msgid "This method moves the Viewport object to the front."
 msgstr ""
 
@@ -495,7 +495,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
-#: abaqus.Canvas.ViewportBase.ViewportBase.disableMultipleColors:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.disableMultipleColors:1 of
 msgid ""
 "This method disables applying multiple color mappings that was enabled "
 "using enableMultipleColors"
@@ -542,7 +542,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
-#: abaqus.Canvas.ViewportBase.ViewportBase.enableRefresh:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.enableRefresh:1 of
 msgid "This method enables Viewport refresh disabled using disableRefresh."
 msgstr ""
 
@@ -553,7 +553,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
-#: abaqus.Canvas.ViewportBase.ViewportBase.enableColorCodeUpdates:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.enableColorCodeUpdates:1 of
 msgid ""
 "This method enables Viewport color code updates disabled using "
 "disableColorCodeUpdates."
@@ -604,7 +604,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
-#: abaqus.Canvas.ViewportBase.ViewportBase.makeCurrent:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.makeCurrent:1 of
 msgid "This method makes theViewport object the current viewport."
 msgstr ""
 
@@ -613,7 +613,7 @@ msgid ":py:obj:`maximize <abaqus.Canvas.Viewport.Viewport.maximize>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
-#: abaqus.Canvas.ViewportBase.ViewportBase.maximize:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.maximize:1 of
 msgid "This method maximizes the Viewport object to fill the drawing area."
 msgstr ""
 
@@ -622,7 +622,7 @@ msgid ":py:obj:`minimize <abaqus.Canvas.Viewport.Viewport.minimize>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
-#: abaqus.Canvas.ViewportBase.ViewportBase.minimize:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.minimize:1 of
 msgid ""
 "This method minimizes the Viewport object to appear as an abbreviated "
 "title bar."
@@ -635,7 +635,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
-#: abaqus.Canvas.ViewportBase.ViewportBase.offset:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.offset:1 of
 msgid ""
 "This method modifies the current **X**-*Y* location of the viewport by "
 "the specified distance."
@@ -646,7 +646,7 @@ msgid ":py:obj:`restore <abaqus.Canvas.Viewport.Viewport.restore>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
-#: abaqus.Canvas.ViewportBase.ViewportBase.restore:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.restore:1 of
 msgid ""
 "This method restores a maximized or minimized Viewport object to its "
 "previous size and location."
@@ -657,7 +657,7 @@ msgid ":py:obj:`sendToBack <abaqus.Canvas.Viewport.Viewport.sendToBack>`\\ \\(\\
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
-#: abaqus.Canvas.ViewportBase.ViewportBase.sendToBack:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.sendToBack:1 of
 msgid "This method moves the Viewport object to the back."
 msgstr ""
 
@@ -694,7 +694,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
-#: abaqus.Canvas.ViewportBase.ViewportBase.addDrawings:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.addDrawings:1 of
 msgid ""
 "This method identifies the names of Drawing objects to be rendered in the"
 " Viewport."
@@ -707,7 +707,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
-#: abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings:1 of
 msgid ""
 "This method identifies the names of Drawing objects to no longer be "
 "rendered in the Viewport."
@@ -735,12 +735,12 @@ msgstr ""
 msgid "Returns a list of the user attributes of the class."
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:5 abaqus.Canvas.Highlight.unhighlight:5
-#: abaqus.Canvas.Viewport.Viewport.Layer:5 of
+#: abaqus.Canvas.Highlight.highlight:4 abaqus.Canvas.Highlight.unhighlight:4
+#: abaqus.Canvas.Viewport.Viewport.Layer:4 of
 msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.Canvas.Layer.Layer:10 abaqus.Canvas.Viewport.Viewport.Layer:10 of
+#: abaqus.Canvas.Layer.Layer:9 abaqus.Canvas.Viewport.Viewport.Layer:9 of
 msgid ""
 "Check `Layer on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-layerpyc.htm?contextscope=all>`__."
@@ -764,31 +764,20 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: abaqus.Canvas.Layer.Layer.moveAfter:23
-#: abaqus.Canvas.Layer.Layer.moveBefore:23
-#: abaqus.Canvas.Viewport.Viewport.Layer:15 of
-msgid "**name**"
-msgstr ""
-
 #: ../../docstring
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.name:2
-#: abaqus.Canvas.Layer.Layer.name:2 abaqus.Canvas.Viewport.Viewport.Layer:15
-#: abaqus.Canvas.Viewport.Viewport.name:2
-#: abaqus.Canvas.ViewportBase.ViewportBase.name:2 of
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.name:1
+#: abaqus.Canvas.Layer.Layer.name:1 abaqus.Canvas.Viewport.Viewport.Layer:12
+#: abaqus.Canvas.Viewport.Viewport.name:1
+#: abaqus.Canvas.ViewportBase.ViewportBase.name:1 of
 msgid "A String specifying the repository key."
 msgstr ""
 
-#: abaqus.Canvas.Viewport.Viewport.Layer:18 of
-msgid "**copyViewName**"
-msgstr ""
-
 #: ../../None:8:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.Layer.Layer.copyViewName:2
-#: abaqus.Canvas.Viewport.Viewport.Layer:18 of
+#: abaqus.Canvas.Layer.Layer.copyViewName:1
+#: abaqus.Canvas.Viewport.Viewport.Layer:14 of
 msgid "A String specifying the name of the layer to copy."
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight abaqus.Canvas.Highlight.unhighlight
 #: abaqus.Canvas.Viewport.Viewport.Layer
 #: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels
 #: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels
@@ -796,12 +785,19 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
-#: abaqus.Canvas.Viewport.Viewport.Layer:35 of
-msgid ":obj:`Layer`"
+#: abaqus.Canvas.Viewport.Viewport.Layer:16 of
+msgid "A :py:class:`~abaqus.Canvas.Layer.Layer` object."
 msgstr ""
 
-#: abaqus.Canvas.Viewport.Viewport.Layer:23 of
-msgid "A :py:class:`~abaqus.Canvas.Layer.Layer` object."
+#: abaqus.Canvas.Viewport.Viewport.Layer
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels
+#: abaqus.Canvas.ViewportBase.ViewportBase.getPrimVarMinMaxLoc of
+msgid "Return type"
+msgstr ""
+
+#: abaqus.Canvas.Viewport.Viewport.Layer:17 of
+msgid ":class:`Layer`"
 msgstr ""
 
 #: ../../reference/session/canvas.rst:21
@@ -812,22 +808,22 @@ msgstr ""
 msgid "Annotation features of Viewport"
 msgstr ""
 
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:2 of
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:1 of
 msgid ""
 "The following commands operate on Viewport objects. For more information "
 "about the Viewport object, see Viewport object."
 msgstr ""
 
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:6
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap:9
-#: abaqus.Canvas.DrawingArea.DrawingArea:6
-#: abaqus.Canvas.ImageOptions.ImageOptions:10 abaqus.Canvas.Layer.Layer:5
-#: abaqus.Canvas.MovieOptions.MovieOptions:10
-#: abaqus.Canvas.ViewportBase.ViewportBase:7 of
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:5
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap:8
+#: abaqus.Canvas.DrawingArea.DrawingArea:5
+#: abaqus.Canvas.ImageOptions.ImageOptions:9 abaqus.Canvas.Layer.Layer:4
+#: abaqus.Canvas.MovieOptions.MovieOptions:9
+#: abaqus.Canvas.ViewportBase.ViewportBase:6 of
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:11 of
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:10 of
 msgid ""
 "Check `AnnotationViewport on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationviewportpyc.htm?contextscope=all>`__."
@@ -1230,26 +1226,18 @@ msgid ""
 " \\(\\)"
 msgstr ""
 
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:5 of
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:4 of
 msgid ""
 "Check `AnnotationViewport.plotAnnotation on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationviewportpyc.htm?contextscope=all"
 "#simaker-annotationviewportplotannotationpyc>`__."
 msgstr ""
 
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:10 of
-msgid "**annotation**"
-msgstr ""
-
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:10 of
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:7 of
 msgid "An :py:class:`~abaqus.Annotation.Annotation.Annotation` object to plot."
 msgstr ""
 
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:27 of
-msgid "**index**"
-msgstr ""
-
-#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:13 of
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:9 of
 msgid ""
 "An Int specifying the index of the Annotation object in the sequence of "
 "annotations to plot. The default value is zero."
@@ -1259,7 +1247,7 @@ msgstr ""
 msgid "AttributeColorMap"
 msgstr ""
 
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap:2 of
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap:1 of
 msgid ""
 "The AttributeColorMap object is used to store values and attributes "
 "associated with AttributeColorMap type objects. AttributeColorMap objects"
@@ -1268,7 +1256,7 @@ msgid ""
 "in the session.viewports[name].colorMappings repository."
 msgstr ""
 
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap:14 of
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap:13 of
 msgid ""
 "Check `AttributeColorMap on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attributecolormappyc.htm?contextscope=all>`__."
@@ -1309,7 +1297,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.attributeColors:2 of
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.attributeColors:1 of
 msgid ""
 "A Dictionary object specifying the color settings of each attribute as "
 "described in the :meth:`abaqus.Canvas.AttributeColorMap.updateOverrides` "
@@ -1323,7 +1311,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.setDefaults:2 of
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.setDefaults:1 of
 msgid "This method resets the AttributeColorMap object to its default state."
 msgstr ""
 
@@ -1335,7 +1323,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1 ../../None:5:<autosummary>:1
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.setValues:2 of
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.setValues:1 of
 msgid "This method modifies the AttributeColorMap object."
 msgstr ""
 
@@ -1347,7 +1335,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.updateOverrides:2 of
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.updateOverrides:1 of
 msgid ""
 "This method specifies additional overrides to be added to the current "
 "object definition."
@@ -1361,7 +1349,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.defaultOverrides:2 of
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.defaultOverrides:1 of
 msgid ""
 "A Dictionary object specifying a custom color mapping similar to "
 "overrides. For example: `defaultOverrides = {'Copper':(1,''#00FF00', "
@@ -1370,7 +1358,7 @@ msgid ""
 "from this mapping."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.AttributeColorMap.AttributeColorMap.mapType:2
+#: ../../docstring abaqus.Canvas.AttributeColorMap.AttributeColorMap.mapType:1
 #: of
 msgid ""
 "A SymbolicConstant specifying the type of AttributeColorMap . Possible "
@@ -1378,20 +1366,15 @@ msgid ""
 "AVERAGING_REGION_MAP, and ELTYPE_MAP."
 msgstr ""
 
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.setValues:5 of
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.setValues:4 of
 msgid ""
 "Check `AttributeColorMap.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attributecolormappyc.htm?contextscope=all"
 "#simaker-attributecolormapsetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.setValues:14
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.updateOverrides:14 of
-msgid "**overrides**"
-msgstr ""
-
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.setValues:10
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.updateOverrides:10 of
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.setValues:7
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.updateOverrides:7 of
 msgid ""
 "A Dictionary object specifying a color mapping. Each key is of String "
 "type and specifies an attribute in the map; the corresponding values "
@@ -1401,12 +1384,7 @@ msgid ""
 "'#00CCFF', '#00FF00')}`"
 msgstr ""
 
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.setValues:33
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.updateOverrides:33 of
-msgid "**defaultOverrides**"
-msgstr ""
-
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.setValues:17 of
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.setValues:13 of
 msgid ""
 "A Dictionary object specifying a custom color mapping similar to "
 "overrides. For example: `defaultOverrides = {'Copper':(1,''#00FF00', "
@@ -1415,14 +1393,14 @@ msgid ""
 "from this mapping."
 msgstr ""
 
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.updateOverrides:5 of
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.updateOverrides:4 of
 msgid ""
 "Check `AttributeColorMap.updateOverrides on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-attributecolormappyc.htm?contextscope=all"
 "#simaker-attributecolormapupdateoverridespyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.updateOverrides:17 of
+#: abaqus.Canvas.AttributeColorMap.AttributeColorMap.updateOverrides:13 of
 msgid ""
 "A Dictionary object specifying a custom color mapping similar to "
 "overrides. For example: `defaultOverrides={'Copper':(1,''#00FF00', "
@@ -1431,21 +1409,21 @@ msgid ""
 "from this mapping."
 msgstr ""
 
-#: ../../reference/session/canvas.rst:49
+#: ../../reference/session/canvas.rst:47
 msgid "Displayable"
 msgstr ""
 
-#: ../../reference/session/canvas.rst:57
+#: ../../reference/session/canvas.rst:53
 msgid "DrawingArea"
 msgstr ""
 
-#: abaqus.Canvas.DrawingArea.DrawingArea:2 of
+#: abaqus.Canvas.DrawingArea.DrawingArea:1 of
 msgid ""
 "The DrawingArea object specifies the location and size of the drawing "
 "area used for placement of viewports."
 msgstr ""
 
-#: abaqus.Canvas.DrawingArea.DrawingArea:11 of
+#: abaqus.Canvas.DrawingArea.DrawingArea:10 of
 msgid ""
 "Check `DrawingArea on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-drawingareapyc.htm?contextscope=all>`__."
@@ -1456,7 +1434,7 @@ msgid ":py:obj:`width <abaqus.Canvas.DrawingArea.DrawingArea.width>`\\"
 msgstr ""
 
 #: ../../None:5:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.DrawingArea.DrawingArea.width:2 of
+#: abaqus.Canvas.DrawingArea.DrawingArea.width:1 of
 msgid "A Float specifying the width in millimeters."
 msgstr ""
 
@@ -1465,7 +1443,7 @@ msgid ":py:obj:`height <abaqus.Canvas.DrawingArea.DrawingArea.height>`\\"
 msgstr ""
 
 #: ../../None:5:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.DrawingArea.DrawingArea.height:2 of
+#: abaqus.Canvas.DrawingArea.DrawingArea.height:1 of
 msgid "A Float specifying the height in millimeters."
 msgstr ""
 
@@ -1474,13 +1452,13 @@ msgid ":py:obj:`origin <abaqus.Canvas.DrawingArea.DrawingArea.origin>`\\"
 msgstr ""
 
 #: ../../None:5:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.DrawingArea.DrawingArea.origin:2 of
+#: abaqus.Canvas.DrawingArea.DrawingArea.origin:1 of
 msgid ""
 "A pair of Floats specifying the coordinates of the bottom left hand "
 "corner in millimeters."
 msgstr ""
 
-#: ../../reference/session/canvas.rst:65
+#: ../../reference/session/canvas.rst:61
 msgid "Highlight"
 msgstr ""
 
@@ -1490,23 +1468,31 @@ msgid ""
 "viewport and to remove the highlighting."
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:2 of
+#: abaqus.Canvas.Highlight.highlight:1 of
 msgid "This method highlights an object in the current viewport."
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:10 of
+#: abaqus.Canvas.Highlight.highlight:9 of
 msgid ""
 "Check `Highlight.highlight on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionhighlightpyc.htm?contextscope=all"
 "#simaker-functionhighlighthighlightpyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:42 abaqus.Canvas.Highlight.unhighlight:17
-#: of
-msgid "**object**"
+#: abaqus.Canvas.Highlight.highlight:11 of
+msgid ""
+"An object specifying the object in the current viewport to be "
+"highlighted. You can specify only a single object. Abaqus/CAE highlights "
+"only the edges of a face when highlighting a surface and a face together."
+" The following objects are supported:  - **For the MDB**      - "
+"ConstrainedSketchVertex     - Edge     - Face     - Surface     - Cell"
+"     - Node     - Element     - Element face     - Element edge     - "
+"Feature     - Datum     - Instance     - Set     - Load     - Boundary "
+"condition     - Predefined field     - Display group - **For the ODB**"
+"      - Node     - Element     - Display group"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:15 of
+#: abaqus.Canvas.Highlight.highlight:11 of
 msgid ""
 "An object specifying the object in the current viewport to be "
 "highlighted. You can specify only a single object. Abaqus/CAE highlights "
@@ -1514,105 +1500,105 @@ msgid ""
 " The following objects are supported:"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:19 of
+#: abaqus.Canvas.Highlight.highlight:15 of
 msgid "**For the MDB**"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:21 of
+#: abaqus.Canvas.Highlight.highlight:17 of
 msgid "ConstrainedSketchVertex"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:22 of
+#: abaqus.Canvas.Highlight.highlight:18 of
 msgid "Edge"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:23 of
+#: abaqus.Canvas.Highlight.highlight:19 of
 msgid "Face"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:24 of
+#: abaqus.Canvas.Highlight.highlight:20 of
 msgid "Surface"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:25 of
+#: abaqus.Canvas.Highlight.highlight:21 of
 msgid "Cell"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:26 abaqus.Canvas.Highlight.highlight:40 of
+#: abaqus.Canvas.Highlight.highlight:22 abaqus.Canvas.Highlight.highlight:36 of
 msgid "Node"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:27 abaqus.Canvas.Highlight.highlight:41 of
+#: abaqus.Canvas.Highlight.highlight:23 abaqus.Canvas.Highlight.highlight:37 of
 msgid "Element"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:28 of
+#: abaqus.Canvas.Highlight.highlight:24 of
 msgid "Element face"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:29 of
+#: abaqus.Canvas.Highlight.highlight:25 of
 msgid "Element edge"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:30 of
+#: abaqus.Canvas.Highlight.highlight:26 of
 msgid "Feature"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:31 of
+#: abaqus.Canvas.Highlight.highlight:27 of
 msgid "Datum"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:32 of
+#: abaqus.Canvas.Highlight.highlight:28 of
 msgid "Instance"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:33 of
+#: abaqus.Canvas.Highlight.highlight:29 of
 msgid "Set"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:34 of
+#: abaqus.Canvas.Highlight.highlight:30 of
 msgid "Load"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:35 of
+#: abaqus.Canvas.Highlight.highlight:31 of
 msgid "Boundary condition"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:36 of
+#: abaqus.Canvas.Highlight.highlight:32 of
 msgid "Predefined field"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:37 abaqus.Canvas.Highlight.highlight:42 of
+#: abaqus.Canvas.Highlight.highlight:33 abaqus.Canvas.Highlight.highlight:38 of
 msgid "Display group"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.highlight:38 of
+#: abaqus.Canvas.Highlight.highlight:34 of
 msgid "**For the ODB**"
 msgstr ""
 
-#: abaqus.Canvas.Highlight.unhighlight:2 of
+#: abaqus.Canvas.Highlight.unhighlight:1 of
 msgid "This method removes highlighting from an object in the current viewport."
 msgstr ""
 
-#: abaqus.Canvas.Highlight.unhighlight:10 of
+#: abaqus.Canvas.Highlight.unhighlight:9 of
 msgid ""
 "Check `Highlight.unhighlight on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionhighlightpyc.htm?contextscope=all"
 "#simaker-functionhighlightunhighlightpyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.Highlight.unhighlight:15 of
+#: abaqus.Canvas.Highlight.unhighlight:11 of
 msgid ""
 "An object specifying the object in the current viewport from which the "
 "highlighting will be removed. You can specify only a single object. See "
 "highlight for a list of supported objects."
 msgstr ""
 
-#: ../../reference/session/canvas.rst:71
+#: ../../reference/session/canvas.rst:67
 msgid "ImageOptions"
 msgstr ""
 
-#: abaqus.Canvas.ImageOptions.ImageOptions:2 of
+#: abaqus.Canvas.ImageOptions.ImageOptions:1 of
 msgid ""
 "The ImageOptions object stores settings that control how an image is "
 "rendered in a particular viewport. ImageOptions objects are accessed from"
@@ -1622,7 +1608,7 @@ msgid ""
 " the values in the **imageOptions** member of the current viewport."
 msgstr ""
 
-#: abaqus.Canvas.ImageOptions.ImageOptions:15 of
+#: abaqus.Canvas.ImageOptions.ImageOptions:14 of
 msgid ""
 "Check `ImageOptions on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageoptionspyc.htm?contextscope=all>`__."
@@ -1723,7 +1709,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:2 of
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:1 of
 msgid "This method modifies the ImageOptions object."
 msgstr ""
 
@@ -1733,241 +1719,251 @@ msgid ""
 "<abaqus.Canvas.ImageOptions.ImageOptions.get_user_attributes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:2
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:46
-#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:2
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:46 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:1
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:39
+#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:1
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:39 of
 msgid ""
 "A SymbolicConstant specifying the relative position of the image in the "
 "viewport when **positionMethod** =AUTO_ALIGN. Possible values are:"
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:5
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:49
-#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:5
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:49 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:4
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:42
+#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:4
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:42 of
 msgid "BOTTOM_LEFT"
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:6
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:50
-#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:6
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:50 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:5
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:43
+#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:5
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:43 of
 msgid "BOTTOM_CENTER"
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:7
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:51
-#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:7
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:51 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:6
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:44
+#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:6
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:44 of
 msgid "BOTTOM_RIGHT"
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:8
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:52
-#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:8
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:52 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:7
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:45
+#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:7
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:45 of
 msgid "CENTER_LEFT"
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:9
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:53
-#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:9
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:53 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:8
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:46
+#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:8
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:46 of
 msgid "CENTER"
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:10
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:54
-#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:10
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:54 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:9
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:47
+#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:9
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:47 of
 msgid "CENTER_RIGHT"
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:11
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:55
-#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:11
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:55 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:10
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:48
+#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:10
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:48 of
 msgid "TOP_LEFT"
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:12
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:56
-#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:12
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:56 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:11
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:49
+#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:11
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:49 of
 msgid "TOP_CENTER"
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:13
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:57
-#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:13
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:57 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:12
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:50
+#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:12
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:50 of
 msgid "TOP_RIGHT"
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:15
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:59
-#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:15
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:59 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.alignment:14
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:52
+#: abaqus.Canvas.MovieOptions.MovieOptions.alignment:14
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:52 of
 msgid "The default value is CENTER."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.fitMethod:2
-#: abaqus.Canvas.MovieOptions.MovieOptions.fitMethod:2 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.fitMethod:1
+#: abaqus.Canvas.MovieOptions.MovieOptions.fitMethod:1 of
 msgid ""
 "A SymbolicConstant specifying which type of fit is performed to scale and"
 " position the image in the viewport. Possible values are:"
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.fitMethod:5
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:36
-#: abaqus.Canvas.MovieOptions.MovieOptions.fitMethod:5
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:36 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.fitMethod:4
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:30
+#: abaqus.Canvas.MovieOptions.MovieOptions.fitMethod:4
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:30 of
 msgid ""
 "BEST_FIT, specifying a mode where the image is scaled to completely fit "
 "within the viewport."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.fitMethod:7
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:38
-#: abaqus.Canvas.MovieOptions.MovieOptions.fitMethod:7
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:38 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.fitMethod:6
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:32
+#: abaqus.Canvas.MovieOptions.MovieOptions.fitMethod:6
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:32 of
 msgid ""
 "FIT_WIDTH, specifying a mode where the image width is scaled to match the"
 " viewport width."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.fitMethod:9
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:40
-#: abaqus.Canvas.MovieOptions.MovieOptions.fitMethod:9
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:40 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.fitMethod:8
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:34
+#: abaqus.Canvas.MovieOptions.MovieOptions.fitMethod:8
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:34 of
 msgid ""
 "FIT_HEIGHT, specifying a mode where the image height is scaled to match "
 "the viewport height."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.fitMethod:12
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:43
-#: abaqus.Canvas.MovieOptions.MovieOptions.fitMethod:12
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:43 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.fitMethod:11
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:37
+#: abaqus.Canvas.MovieOptions.MovieOptions.fitMethod:11
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:37 of
 msgid "The default value is BEST_FIT."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.imageName:2
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:10 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.imageName:1
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:7 of
 msgid ""
 "A String specifying the name of the image. A list of valid image names is"
 " in the **images** repository in the **session** object."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.origin:2
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:72
-#: abaqus.Canvas.MovieOptions.MovieOptions.origin:2 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.origin:1
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:62
+#: abaqus.Canvas.MovieOptions.MovieOptions.origin:1 of
 msgid ""
 "A pair of Floats specifying the **X**- and **Y**-offsets in millimeters "
 "from the lower-left corner of the viewport. The **origin** argument is "
 "ignored unless **positionMethod** =MANUAL. The default value is (0, 0)."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.positionMethod:2
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:18
-#: abaqus.Canvas.MovieOptions.MovieOptions.positionMethod:2
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:18 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.positionMethod:1
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:13
+#: abaqus.Canvas.MovieOptions.MovieOptions.positionMethod:1
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:13 of
 msgid ""
 "A SymbolicConstant specifying which positioning method is used to "
 "determine how the image will be scaled and positioned in the viewport. "
 "Possible values are:"
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.positionMethod:5
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:21
-#: abaqus.Canvas.MovieOptions.MovieOptions.positionMethod:5
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:21 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.positionMethod:4
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:16
+#: abaqus.Canvas.MovieOptions.MovieOptions.positionMethod:4
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:16 of
 msgid ""
 "FIT_TO_VIEWPORT, specifying a display mode where the image is scaled to "
 "fit in the viewport using the specified **fitMethod**."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.positionMethod:7
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:23
-#: abaqus.Canvas.MovieOptions.MovieOptions.positionMethod:7
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:23 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.positionMethod:6
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:18
+#: abaqus.Canvas.MovieOptions.MovieOptions.positionMethod:6
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:18 of
 msgid ""
 "AUTO_ALIGN, specifying a display mode where the image is scaled as "
 "specified by **xScale** and **yScale** and then positioned in the "
 "viewport using the specified **alignment**."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.positionMethod:10
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:26
-#: abaqus.Canvas.MovieOptions.MovieOptions.positionMethod:10
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:26 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.positionMethod:9
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:21
+#: abaqus.Canvas.MovieOptions.MovieOptions.positionMethod:9
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:21 of
 msgid ""
 "MANUAL, specifying a display mode where the image is scaled as specified "
 "by **xScale** and **yScale** and then positioned in the viewport using "
 "the specified **origin**."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.positionMethod:14
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:30
-#: abaqus.Canvas.MovieOptions.MovieOptions.positionMethod:14
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:30 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.positionMethod:13
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:25
+#: abaqus.Canvas.MovieOptions.MovieOptions.positionMethod:13
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:25 of
 msgid "The default value is FIT_TO_VIEWPORT."
 msgstr ""
 
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:5 of
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:4 of
 msgid ""
 "Check `ImageOptions.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-imageoptionspyc.htm?contextscope=all"
 "#simaker-imageoptionssetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:11 of
-msgid "**imageName**"
-msgstr ""
-
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:15 of
-msgid "**showImage**"
-msgstr ""
-
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.setValues:14
-#: abaqus.Canvas.ImageOptions.ImageOptions.showImage:2 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.setValues:10
+#: abaqus.Canvas.ImageOptions.ImageOptions.showImage:1 of
 msgid ""
 "A Boolean specifying whether an image should be displayed in the viewport"
 " background. The default value is OFF."
 msgstr ""
 
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:30
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:30 of
-msgid "**positionMethod**"
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:13
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:13 of
+msgid ""
+"A SymbolicConstant specifying which positioning method is used to "
+"determine how the image will be scaled and positioned in the viewport. "
+"Possible values are:  - FIT_TO_VIEWPORT, specifying a display mode where "
+"the image is scaled to fit in the   viewport using the specified "
+"**fitMethod**. - AUTO_ALIGN, specifying a display mode where the   image "
+"is scaled as specified by **xScale** and **yScale** and then positioned "
+"in the   viewport using the specified **alignment**. - MANUAL, specifying"
+" a display mode where the   image is scaled as specified by **xScale** "
+"and **yScale** and then positioned in the   viewport using the specified "
+"**origin**.  The default value is FIT_TO_VIEWPORT."
 msgstr ""
 
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:43
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:43 of
-msgid "**fitMethod**"
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:27
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:27 of
+msgid ""
+"A SymbolicConstant specifying which type of fit is performed to scale and"
+" position the image in the viewport when **positionMethod** "
+"=FIT_TO_VIEWPORT. Possible values are:  - BEST_FIT, specifying a mode "
+"where the image is scaled to completely fit within the   viewport. - "
+"FIT_WIDTH, specifying a mode where the image width is scaled to match the"
+"   viewport width. - FIT_HEIGHT, specifying a mode where the image height"
+" is scaled to match   the viewport height.  The default value is "
+"BEST_FIT."
 msgstr ""
 
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:33
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:33 of
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:27
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:27 of
 msgid ""
 "A SymbolicConstant specifying which type of fit is performed to scale and"
 " position the image in the viewport when **positionMethod** "
 "=FIT_TO_VIEWPORT. Possible values are:"
 msgstr ""
 
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:59
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:59 of
-msgid "**alignment**"
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:39
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:39 of
+msgid ""
+"A SymbolicConstant specifying the relative position of the image in the "
+"viewport when **positionMethod** =AUTO_ALIGN. Possible values are:  - "
+"BOTTOM_LEFT - BOTTOM_CENTER - BOTTOM_RIGHT - CENTER_LEFT - CENTER - "
+"CENTER_RIGHT - TOP_LEFT - TOP_CENTER - TOP_RIGHT  The default value is "
+"CENTER."
 msgstr ""
 
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:64
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:65 of
-msgid "**xScale**"
-msgstr ""
-
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.setValues:62
-#: abaqus.Canvas.ImageOptions.ImageOptions.xScale:2
-#: abaqus.Canvas.MovieOptions.MovieOptions.xScale:2 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.setValues:54
+#: abaqus.Canvas.ImageOptions.ImageOptions.xScale:1
+#: abaqus.Canvas.MovieOptions.MovieOptions.xScale:1 of
 msgid ""
 "A Float specifying the scale applied to the image width. The **xScale** "
 "argument is ignored when **positionMethod** =FIT_TO_VIEWPORT. The default"
@@ -1975,14 +1971,9 @@ msgid ""
 "its y-axis but its position is not affected."
 msgstr ""
 
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:69
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:71 of
-msgid "**yScale**"
-msgstr ""
-
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.setValues:67
-#: abaqus.Canvas.ImageOptions.ImageOptions.yScale:2
-#: abaqus.Canvas.MovieOptions.MovieOptions.yScale:2 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.setValues:58
+#: abaqus.Canvas.ImageOptions.ImageOptions.yScale:1
+#: abaqus.Canvas.MovieOptions.MovieOptions.yScale:1 of
 msgid ""
 "A Float specifying the scale applied to the image height. The **yScale** "
 "argument is ignored when **positionMethod** =FIT_TO_VIEWPORT. The default"
@@ -1990,31 +1981,16 @@ msgid ""
 "its x-axis but its position is not affected."
 msgstr ""
 
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:74
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:76 of
-msgid "**origin**"
-msgstr ""
-
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:79
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:81 of
-msgid "**translucency**"
-msgstr ""
-
-#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.setValues:77
-#: abaqus.Canvas.ImageOptions.ImageOptions.translucency:2
-#: abaqus.Canvas.MovieOptions.MovieOptions.translucency:2 of
+#: ../../docstring abaqus.Canvas.ImageOptions.ImageOptions.setValues:66
+#: abaqus.Canvas.ImageOptions.ImageOptions.translucency:1
+#: abaqus.Canvas.MovieOptions.MovieOptions.translucency:1 of
 msgid ""
 "A Float specifying the translucency factor to use when displaying the "
 "image. Possible values are 0.0 ≤ **translucency** ≤ 1.0 with 0.0 being "
 "invisible and 1.0 being opaque. The default value is 1.0."
 msgstr ""
 
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:88
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:90 of
-msgid "**options**"
-msgstr ""
-
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:82 of
+#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:70 of
 msgid ""
 "None or an ImageOptions object specifying the object from which values "
 "are to be copied. If other arguments are also supplied to setValues, they"
@@ -2030,17 +2006,11 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: abaqus.Canvas.ImageOptions.ImageOptions.setValues:101
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:103
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:57 of
-msgid ":obj:`RangeError`"
-msgstr ""
-
-#: ../../reference/session/canvas.rst:79
+#: ../../reference/session/canvas.rst:75
 msgid "Layer"
 msgstr ""
 
-#: abaqus.Canvas.Layer.Layer:2 of
+#: abaqus.Canvas.Layer.Layer:1 of
 msgid ""
 "Objects can be superimposed by displaying them in different layers of a "
 "viewport."
@@ -2055,7 +2025,7 @@ msgid ":py:obj:`view <abaqus.Canvas.Layer.Layer.view>`\\"
 msgstr ""
 
 #: ../../None:8:<autosummary>:1 ../../docstring
-#: abaqus.Canvas.Layer.Layer.view:2 of
+#: abaqus.Canvas.Layer.Layer.view:1 of
 msgid ""
 "A :py:class:`~abaqus.UtilityAndView.View.View` object specifying the "
 "object that controls viewing of the layer."
@@ -2087,7 +2057,7 @@ msgstr ""
 msgid ":py:obj:`moveBefore <abaqus.Canvas.Layer.Layer.moveBefore>`\\ \\(name\\)"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1 abaqus.Canvas.Layer.Layer.moveBefore:2 of
+#: ../../None:5:<autosummary>:1 abaqus.Canvas.Layer.Layer.moveBefore:1 of
 msgid ""
 "This method moves the layer object before another object in the layer "
 "repository."
@@ -2097,13 +2067,13 @@ msgstr ""
 msgid ":py:obj:`moveAfter <abaqus.Canvas.Layer.Layer.moveAfter>`\\ \\(name\\)"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1 abaqus.Canvas.Layer.Layer.moveAfter:2 of
+#: ../../None:5:<autosummary>:1 abaqus.Canvas.Layer.Layer.moveAfter:1 of
 msgid ""
 "This method moves the layer object after another object in the layer "
 "repository."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.Layer.Layer.displayedObject:2 of
+#: ../../docstring abaqus.Canvas.Layer.Layer.displayedObject:1 of
 msgid ""
 "A :py:class:`~abaqus.Canvas.Displayable.Displayable` object specifying "
 "the object to be displayed. The Displayable type is an abstract "
@@ -2111,30 +2081,30 @@ msgid ""
 "ConstrainedSketch, Odb, or XYPlot."
 msgstr ""
 
-#: abaqus.Canvas.Layer.Layer.moveAfter:5 of
+#: abaqus.Canvas.Layer.Layer.moveAfter:4 of
 msgid ""
 "Check `Layer.moveAfter on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-layerpyc.htm?contextscope=all"
 "#simaker-layermoveafterpyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.Layer.Layer.moveAfter:10
-#: abaqus.Canvas.Layer.Layer.moveBefore:10 of
+#: abaqus.Canvas.Layer.Layer.moveAfter:7 abaqus.Canvas.Layer.Layer.moveBefore:7
+#: of
 msgid "A String specifying the name of the other Layer object."
 msgstr ""
 
-#: abaqus.Canvas.Layer.Layer.moveBefore:5 of
+#: abaqus.Canvas.Layer.Layer.moveBefore:4 of
 msgid ""
 "Check `Layer.moveBefore on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-layerpyc.htm?contextscope=all"
 "#simaker-layermovebeforepyc>`__."
 msgstr ""
 
-#: ../../reference/session/canvas.rst:87
+#: ../../reference/session/canvas.rst:83
 msgid "MovieOptions"
 msgstr ""
 
-#: abaqus.Canvas.MovieOptions.MovieOptions:2 of
+#: abaqus.Canvas.MovieOptions.MovieOptions:1 of
 msgid ""
 "The MovieOptions object stores settings that control how the movie "
 "background for an animation is rendered in a particular viewport. "
@@ -2145,7 +2115,7 @@ msgid ""
 "viewport."
 msgstr ""
 
-#: abaqus.Canvas.MovieOptions.MovieOptions:15 of
+#: abaqus.Canvas.MovieOptions.MovieOptions:14 of
 msgid ""
 "Check `MovieOptions on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-movieoptionspyc.htm?contextscope=all>`__."
@@ -2208,7 +2178,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:2 of
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:1 of
 msgid "This method modifies the MovieOptions object."
 msgstr ""
 
@@ -2218,36 +2188,28 @@ msgid ""
 "<abaqus.Canvas.MovieOptions.MovieOptions.get_user_attributes>`\\ \\(\\)"
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.MovieOptions.MovieOptions.movieName:2
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:10 of
+#: ../../docstring abaqus.Canvas.MovieOptions.MovieOptions.movieName:1
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:7 of
 msgid ""
 "A String specifying the name of the movie. A list of valid movie names is"
 " in the **movies** repository in the **session** object."
 msgstr ""
 
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:5 of
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:4 of
 msgid ""
 "Check `MovieOptions.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-movieoptionspyc.htm?contextscope=all"
 "#simaker-movieoptionssetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:11 of
-msgid "**movieName**"
-msgstr ""
-
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:15 of
-msgid "**showMovie**"
-msgstr ""
-
-#: ../../docstring abaqus.Canvas.MovieOptions.MovieOptions.setValues:14
-#: abaqus.Canvas.MovieOptions.MovieOptions.showMovie:2 of
+#: ../../docstring abaqus.Canvas.MovieOptions.MovieOptions.setValues:10
+#: abaqus.Canvas.MovieOptions.MovieOptions.showMovie:1 of
 msgid ""
 "A Boolean specifying whether a movie should be displayed in the viewport "
 "during an animation. The default value is OFF."
 msgstr ""
 
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:62 of
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:54 of
 msgid ""
 "A Float specifying the scale applied to the movie frame width. The "
 "**xScale** argument is ignored when **positionMethod** =FIT_TO_VIEWPORT. "
@@ -2255,7 +2217,7 @@ msgid ""
 "mirrored about its y-axis but its position is not affected."
 msgstr ""
 
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:68 of
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:59 of
 msgid ""
 "A Float specifying the scale applied to the movie frame height. The "
 "**yScale** argument is ignored when **positionMethod** =FIT_TO_VIEWPORT. "
@@ -2263,21 +2225,21 @@ msgid ""
 "mirrored about its x-axis but its position is not affected."
 msgstr ""
 
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:74 of
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:64 of
 msgid ""
 "A pair of Floats specifying the*X*- and **Y**-offsets in millimeters from"
 " the lower-left corner of the viewport. The **origin** argument is "
 "ignored unless **positionMethod** =MANUAL. The default value is (0, 0)."
 msgstr ""
 
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:79 of
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:68 of
 msgid ""
 "A Float specifying the translucency factor to use when displaying the "
 "movie frame. Possible values are 0.0 ≤ **translucency** ≤ 1.0 with 0.0 "
 "being invisible and 1.0 being opaque. The default value is 1.0."
 msgstr ""
 
-#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:84 of
+#: abaqus.Canvas.MovieOptions.MovieOptions.setValues:72 of
 msgid ""
 "None or a MovieOptions object specifying the object from which values are"
 " to be copied. If other arguments are also supplied to setValues, they "
@@ -2285,24 +2247,24 @@ msgid ""
 "None."
 msgstr ""
 
-#: ../../reference/session/canvas.rst:95
+#: ../../reference/session/canvas.rst:91
 msgid "ViewportBase"
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase:1 of
 msgid ""
 "A viewport is the container for the graphics generated by the "
 "application. TheViewport object stores the various settings that "
 "determine how objects are displayed within that viewport."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase:12 of
+#: abaqus.Canvas.ViewportBase.ViewportBase:11 of
 msgid ""
 "Check `ViewportBase on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.activeColorModes:2
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.activeColorModes:1
 #: of
 msgid ""
 "A SymbolicConstant specifying the currently active color mappings. "
@@ -2316,239 +2278,229 @@ msgid ""
 "PLOT_MAP_COLORS MESH_MAP_COLORS The default value is DEFAULT_COLORS."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.addDrawings:5 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.addDrawings:4 of
 msgid ""
 "Check `Viewport.addDrawings on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all"
 "#simaker-viewportadddrawingspyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.addDrawings:14
-#: abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings:15 of
-msgid "**names**"
-msgstr ""
-
-#: abaqus.Canvas.ViewportBase.ViewportBase.addDrawings:10 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.addDrawings:7 of
 msgid ""
 "A sequence of String values identifying keys in the session.drawings "
 "repository."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.addDrawings:27
-#: abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings:28 of
-msgid ":obj:`ValueError`"
-msgstr ""
-
 #: ../../docstring
-#: abaqus.Canvas.ViewportBase.ViewportBase.applyLinkedCommands:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.applyLinkedCommands:1 of
 msgid ""
 "A Boolean specifying whether the viewport is linked for synchronization. "
 "The default value is ON."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.border:2 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.border:1 of
 msgid ""
 "A Boolean specifying whether the viewport border is visible in a printed "
 "image. The default value is ON."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:5 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:4 of
 msgid "\"type\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:6 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:5 of
 msgid "\"Element set\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:7 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:6 of
 msgid "\"Material\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:8 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:7 of
 msgid "\"Section\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:9 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:8 of
 msgid "\"Default\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:10 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:9 of
 msgid "\"Part\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:11 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:10 of
 msgid "\"Part instance\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:12 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:11 of
 msgid "\"Element type\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:13 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:12 of
 msgid "\"Averaging region\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:14 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:13 of
 msgid "\"Assembly\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:15 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:14 of
 msgid "\"Property\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:16 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:15 of
 msgid "\"Set\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:17 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:16 of
 msgid "\"Surface\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:18 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:17 of
 msgid "\"Skin\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:19 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:18 of
 msgid "\"Profile\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:20 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:19 of
 msgid "\"Part shape\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:21 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:20 of
 msgid "\"Part status\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:22 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:21 of
 msgid "\"Part geometry\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:23 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:22 of
 msgid "\"Meshability\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:24 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:23 of
 msgid "\"Instance type\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:25 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:24 of
 msgid "\"Load\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:26 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:25 of
 msgid "\"Boundary condition\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:27 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:26 of
 msgid "\"Interaction\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:28 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:27 of
 msgid "\"Constraint\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:29 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:28 of
 msgid "\"Interaction type\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:30 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:29 of
 msgid "\"Constraint type\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:31 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:30 of
 msgid "\"Display group\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:32 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:31 of
 msgid "\"Selection group\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:33 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:32 of
 msgid "\"Interaction property\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:34 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:33 of
 msgid "\"Connector\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:35 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:34 of
 msgid "\"Connector type\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:36 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:35 of
 msgid "\"Connector property\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:37 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:36 of
 msgid "\"Internal set\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:38 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:37 of
 msgid "\"Internal surface\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:39 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:38 of
 msgid "\"mapColors\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:40 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:39 of
 msgid "\"autoColors\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:41 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:40 of
 msgid "\"overrides\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:42 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:41 of
 msgid "\"defaultAutoColors\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:43 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:42 of
 msgid "\"defaultOverrides\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:44 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:43 of
 msgid "\"objectToCopy\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:45 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:44 of
 msgid "\"colorMapping\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:46 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:45 of
 msgid "\"colorMappings\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:47 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:46 of
 msgid "\"colorMode\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:48 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:47 of
 msgid "\"attributeColors\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:49 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:48 of
 msgid "\"updateOverrides\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:50 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:49 of
 msgid "\"colorCodeOverride\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:51 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:50 of
 msgid "\"initialColor\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:52 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:51 of
 msgid "\"Layup\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:53 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMappings:52 of
 msgid "\"Ply\""
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMode:2 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.colorMode:1 of
 msgid ""
 "A SymbolicConstant specifying the last applied color mapping. Possible "
 "values are: DEFAULT_COLORS PART_GEOM_MAP_COLORS ASSEMBLY_MAP_COLORS "
@@ -2560,22 +2512,22 @@ msgid ""
 "PLOT_MAP_COLORS MESH_MAP_COLORS The default value is DEFAULT_COLORS."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.currentLayer:2
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:33 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.currentLayer:1
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:26 of
 msgid ""
 "A String specifying which layer is affected by options settings when "
 "**displayMode** =OVERLAY. The current layer is also the only layer "
 "affected by view manipulations when*viewManipLayers* =CURRENT."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.customTitleString:2
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.customTitleString:1
 #: of
 msgid ""
 "A String specifying the viewport title when **titleStyle** =CUSTOM. The "
 "default value is an empty string."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.disableColorCodeUpdates:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.disableColorCodeUpdates:1 of
 msgid ""
 "This method disables Viewport updates and internal computations triggered"
 " because of color coding. Performance improvement will be significant "
@@ -2584,14 +2536,14 @@ msgid ""
 "when color coding is OFF."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.disableRefresh:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.disableRefresh:1 of
 msgid ""
 "This method disables Viewport refresh. Some methods that require the "
 "Viewport to be up-to-date will override this setting. It is advisable to "
 "use this method sparingly."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.displayMode:2 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.displayMode:1 of
 msgid ""
 "A SymbolicConstant specifying the display mode of the viewport. Possible "
 "values are:SINGLE, specifying a single **displayedObject**.OVERLAY, "
@@ -2599,8 +2551,8 @@ msgid ""
 "contains one **displayedObject**."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.displayedObject:2
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:12 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.displayedObject:1
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:9 of
 msgid ""
 "A :py:class:`~abaqus.Canvas.Displayable.Displayable` object specifying "
 "the object to be displayed. The Displayable type is an abstract "
@@ -2609,20 +2561,20 @@ msgid ""
 " None, Abaqus displays an empty viewport."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.drawings:2 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.drawings:1 of
 msgid ""
 "A tuple of Strings specifying keys to the session.drawings repository. "
 "The default value is an empty sequence."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.enableMultipleColors:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.enableMultipleColors:1 of
 msgid ""
 "This method enables multiple color mappings to be applied at the same "
 "time. It also ensures that the Viewport is updated correctly when "
 "**initialColor** is set."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.forceRefresh:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.forceRefresh:1 of
 msgid ""
 "This method causes the Viewport to refresh immediately. It is provided to"
 " allow scripts to refresh the Viewport before the script terminates. "
@@ -2630,7 +2582,7 @@ msgid ""
 "place immediately after the script completes."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:1 of
 msgid ""
 "This method returns the element labels currently active in the viewport "
 "based on the current display group. The element labels are printed only "
@@ -2638,48 +2590,38 @@ msgid ""
 "Odb. The getActiveElementLabels method has the following arguments:"
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:8 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:7 of
 msgid ""
 "Check `Viewport.getActiveElementLabels on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all"
 "#simaker-viewportgetactiveelementlabelspyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:14
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:14 of
-msgid "**useCut**"
-msgstr ""
-
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:13 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:10 of
 msgid ""
 "A Boolean flag to specify if any active cutting plane is to be considered"
 " in determining active elements."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:18
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:18 of
-msgid "**printResults**"
-msgstr ""
-
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:17 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:13 of
 msgid ""
 "A Boolean flag to specify if the active element labels are to be printed "
 "to the replay file."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:36
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:36
-#: abaqus.Canvas.ViewportBase.ViewportBase.getPrimVarMinMaxLoc:24 of
-msgid ":class:`python:dict`"
-msgstr ""
-
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:23 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:16 of
 msgid ""
 "A Dictionary object of element labels, keyed by OdbInstance name. Returns"
 " None if the **displayedObject** member is not an Odb object."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels:18
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:18
+#: abaqus.Canvas.ViewportBase.ViewportBase.getPrimVarMinMaxLoc:7 of
+msgid ":class:`dict`"
+msgstr ""
+
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:1 of
 msgid ""
 "This method returns the node labels currently active in the viewport "
 "based on the current display group. The node labels are printed only when"
@@ -2687,32 +2629,32 @@ msgid ""
 "The getActiveNodeLabels method has the following arguments:"
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:8 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:7 of
 msgid ""
 "Check `Viewport.getActiveNodeLabels on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all"
 "#simaker-viewportgetactivenodelabelspyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:13 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:10 of
 msgid ""
 "A Boolean flag to specify if any active cutting plane is to be considered"
 " in determining active nodes."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:17 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:13 of
 msgid ""
 "A Boolean flag to specify if the active node labels are to be printed to "
 "the replay file."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:23 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels:16 of
 msgid ""
 "A Dictionary object of node labels, keyed by OdbInstance name. Returns "
 "None if the **displayedObject** member is not an Odb object."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getPrimVarMinMaxLoc:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getPrimVarMinMaxLoc:1 of
 msgid ""
 "This method returns a dictionary containing the minimum, maximum and "
 "their location for the current primary variable. A contour plot should be"
@@ -2720,14 +2662,14 @@ msgid ""
 "**None**."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.getPrimVarMinMaxLoc:11 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.getPrimVarMinMaxLoc:5 of
 msgid ""
 "A dictionary with keys 'minPartInstanceName', 'minElementLabel', "
 "'minNodeLabel', 'minPosition', 'maxPartInstanceName', 'maxElementLabel', "
 "'maxNodeLabel', 'maxPosition' ."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.height:2 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.height:1 of
 msgid ""
 "A Float specifying the height in millimeters of the viewport. This height"
 " includes the title bar. Possible values are 30 ≤ **height** ≤ "
@@ -2735,7 +2677,7 @@ msgid ""
 "height (*maxHeight*) is the height of the screen in millimeters."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.iconOrigin:2 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.iconOrigin:1 of
 msgid ""
 "A pair of Floats specifying the **X**- and **Y**-coordinates in "
 "millimeters of the lower left corner of the current viewport from a "
@@ -2744,135 +2686,111 @@ msgid ""
 "**windowState** =MINIMIZED."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.initialColor:2 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.initialColor:1 of
 msgid ""
 "A String specifying the color that will be applied to all objects in the "
 "viewport at the start of color coding. The possible values are 'As is', "
 "'Default' or a string with a hexadecimal representation of a color."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.layerOffset:2
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:38 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.layerOffset:1
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:30 of
 msgid ""
 "A Float specifying a factor to be used in offsetting layers in the screen"
 " Z direction. Possible values are -1 to 1. A negative value reverses the "
 "apparent order in which the layers are plotted."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.offset:6 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.offset:5 of
 msgid ""
 "Check `Viewport.offset on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all"
 "#simaker-viewportoffsetpyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.offset:12 of
-msgid "**deltaX**"
-msgstr ""
-
-#: abaqus.Canvas.ViewportBase.ViewportBase.offset:11 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.offset:8 of
 msgid ""
 "A Float specifying the offset in millimeters of the **X**-component of "
 "the viewport origin. The default value is 0."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.offset:29 of
-msgid "**deltaY**"
-msgstr ""
-
-#: abaqus.Canvas.ViewportBase.ViewportBase.offset:15 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.offset:11 of
 msgid ""
 "A Float specifying the offset in millimeters of the **Y**-component of "
 "the viewport origin. The default value is 0."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.origin:2 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.origin:1 of
 msgid ""
 "A pair of Floats specifying the **X**- and **Y**-coordinates in "
 "millimeters in the canvas coordinate system of the lower left corner of "
 "the viewport. The default origin is (0, 0)."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings:6 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings:5 of
 msgid ""
 "Check `Viewport.removeDrawings on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all"
 "#simaker-viewportremovedrawingspyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings:11 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings:8 of
 msgid "A sequence of String values identifying keys in the Viewport sequence."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:1 of
 msgid ""
 "This method modifies the Viewport object. The arguments to setValues are "
 "the same as the arguments to the Viewport method, except for the **name**"
 " argument. In addition, the setValues method has the following arguments:"
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:7 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:6 of
 msgid ""
 "Check `Viewport.setValues on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all"
 "#simaker-viewportsetvaluespyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:15 of
-msgid "**displayedObject**"
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:14 of
+msgid ""
+"A SymbolicConstant specifying the display mode of the viewport. Possible "
+"values are:  * SINGLE, specifying a single **displayedObject**. * "
+"OVERLAY, specifying one or more layers to be displayed "
+"simultaneously—each layer contains one **displayedObject**."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:22 of
-msgid "**displayMode**"
-msgstr ""
-
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:18 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:14 of
 msgid ""
 "A SymbolicConstant specifying the display mode of the viewport. Possible "
 "values are:"
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:21 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:17 of
 msgid "SINGLE, specifying a single **displayedObject**."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:22 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:18 of
 msgid ""
 "OVERLAY, specifying one or more layers to be displayed "
 "simultaneously—each layer contains one **displayedObject**."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:26 of
-msgid "**visibleLayers**"
-msgstr ""
-
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:25 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:20 of
 msgid ""
 "A sequence of Strings specifying the names of layers that will be "
 "displayed in the viewport when **displayMode** = OVERLAY."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:30 of
-msgid "**viewManipLayers**"
-msgstr ""
-
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.setValues:29
-#: abaqus.Canvas.ViewportBase.ViewportBase.viewManipLayers:2 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.setValues:23
+#: abaqus.Canvas.ViewportBase.ViewportBase.viewManipLayers:1 of
 msgid ""
 "A SymbolicConstant specifying which layer or layers will be controlled by"
 " the view manipulation tools when **displayMode** = OVERLAY. Possible "
 "values are ALL and CURRENT."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:35 of
-msgid "**currentLayer**"
-msgstr ""
-
-#: abaqus.Canvas.ViewportBase.ViewportBase.setValues:44 of
-msgid "**layerOffset**"
-msgstr ""
-
-#: abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay:2 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay:1 of
 msgid ""
 "This method refreshes the Viewport display **numFrames** times and then "
 "checks to see if **numSeconds** seconds have elapsed. If not, it will "
@@ -2881,51 +2799,39 @@ msgid ""
 "time will be reported along with the calculated frames-per-second (fps)."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay:9 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay:8 of
 msgid ""
 "Check `Viewport.timeDisplay on help.3ds.com/2019 "
 "<https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all"
 "#simaker-viewporttimedisplaypyc>`__."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay:15 of
-msgid "**numFrames**"
-msgstr ""
-
-#: abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay:14 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay:11 of
 msgid ""
 "An Int specifying the minimum number of times to refresh the Viewport. "
 "The default value is 0."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay:19 of
-msgid "**numSeconds**"
-msgstr ""
-
-#: abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay:18 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay:14 of
 msgid ""
 "An Int specifying the minimum number of seconds to spend refreshing the "
 "Viewport. The default value is 10."
 msgstr ""
 
-#: abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay:36 of
-msgid "**degreesPerFrame**"
-msgstr ""
-
-#: abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay:22 of
+#: abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay:17 of
 msgid ""
 "A Float specifying the number of degrees to rotate the model view about "
 "its Z axis before each refresh. The default value is 0.0."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.titleBar:2 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.titleBar:1 of
 msgid ""
 "A Boolean specifying whether the viewport title should be displayed in a "
 "printed image. The default value is ON.If **border** = OFF, the title "
 "will not be visible, even if **titleBar** =ON."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.titleStyle:2 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.titleStyle:1 of
 msgid ""
 "A SymbolicConstant specifying which title to use for the viewport title. "
 "Possible values are CUSTOM and SYSTEM. The default value is SYSTEM.If "
@@ -2933,7 +2839,7 @@ msgid ""
 "**titleStyle** =  SYSTEM, a system-generated string will be used."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.translucency:2 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.translucency:1 of
 msgid ""
 "A Float specifying the translucency that will be applied to objects "
 "colored using **initialColor** and it needs to be set along with "
@@ -2941,7 +2847,7 @@ msgid ""
 " will have no effect."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.width:2 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.width:1 of
 msgid ""
 "A Float specifying the width in millimeters of the viewport. Possible "
 "values are 30 ≤ **width** ≤ (*maxWidth*). The default value is 120. Note:"
@@ -2949,7 +2855,7 @@ msgid ""
 "millimeters."
 msgstr ""
 
-#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.windowState:2 of
+#: ../../docstring abaqus.Canvas.ViewportBase.ViewportBase.windowState:1 of
 msgid ""
 "A SymbolicConstant specifying the current state of a viewport. Possible "
 "values are NORMAL, MAXIMIZED, and MINIMIZED."
@@ -3111,5 +3017,116 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "This object can be accessed by:"
+#~ msgstr ""
+
+#~ msgid "**name**"
+#~ msgstr ""
+
+#~ msgid "**copyViewName**"
+#~ msgstr ""
+
+#~ msgid ":obj:`Layer`"
+#~ msgstr ""
+
+#~ msgid "**annotation**"
+#~ msgstr ""
+
+#~ msgid "**index**"
+#~ msgstr ""
+
+#~ msgid "**overrides**"
+#~ msgstr ""
+
+#~ msgid "**defaultOverrides**"
+#~ msgstr ""
+
+#~ msgid "**object**"
+#~ msgstr ""
+
+#~ msgid "**imageName**"
+#~ msgstr ""
+
+#~ msgid "**showImage**"
+#~ msgstr ""
+
+#~ msgid "**positionMethod**"
+#~ msgstr ""
+
+#~ msgid "**fitMethod**"
+#~ msgstr ""
+
+#~ msgid "**alignment**"
+#~ msgstr ""
+
+#~ msgid "**xScale**"
+#~ msgstr ""
+
+#~ msgid "**yScale**"
+#~ msgstr ""
+
+#~ msgid "**origin**"
+#~ msgstr ""
+
+#~ msgid "**translucency**"
+#~ msgstr ""
+
+#~ msgid "**options**"
+#~ msgstr ""
+
+#~ msgid ":obj:`RangeError`"
+#~ msgstr ""
+
+#~ msgid "**movieName**"
+#~ msgstr ""
+
+#~ msgid "**showMovie**"
+#~ msgstr ""
+
+#~ msgid "**names**"
+#~ msgstr ""
+
+#~ msgid ":obj:`ValueError`"
+#~ msgstr ""
+
+#~ msgid "**useCut**"
+#~ msgstr ""
+
+#~ msgid "**printResults**"
+#~ msgstr ""
+
+#~ msgid ":class:`python:dict`"
+#~ msgstr ""
+
+#~ msgid "**deltaX**"
+#~ msgstr ""
+
+#~ msgid "**deltaY**"
+#~ msgstr ""
+
+#~ msgid "**displayedObject**"
+#~ msgstr ""
+
+#~ msgid "**displayMode**"
+#~ msgstr ""
+
+#~ msgid "**visibleLayers**"
+#~ msgstr ""
+
+#~ msgid "**viewManipLayers**"
+#~ msgstr ""
+
+#~ msgid "**currentLayer**"
+#~ msgstr ""
+
+#~ msgid "**layerOffset**"
+#~ msgstr ""
+
+#~ msgid "**numFrames**"
+#~ msgstr ""
+
+#~ msgid "**numSeconds**"
+#~ msgstr ""
+
+#~ msgid "**degreesPerFrame**"
 #~ msgstr ""
 
