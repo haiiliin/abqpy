@@ -1,0 +1,66 @@
+baseURL: "https://abqpy.com/"
+languageCode: "en-us"
+title: "abqpy documentation"
+theme: scientific-python-hugo-theme
+relativeURLs: true
+disableKinds: ["term", "taxonomy"]
+
+markup:
+  highlight:
+    noClasses: false
+
+params:
+  description: abqpy's documentation
+  images:
+    - /images/logo.svg
+  navbarlogo:
+    image: logo.svg
+    text: abqpy's documentation
+    link: /
+  hero:
+    title: The abqpy Package
+    image: logo.svg
+  navbar:
+    - title: Getting Started
+      url: /getstart/
+    - title: Documentation
+      url: /doc/
+      is_external: true
+    - title: GitHub
+      url: https://github.com/haiiliin/abqpy/
+      is_external: true
+    - title: PyPI
+      url: https://pypi.org/project/abqpy/
+      is_external: true
+    - title: Anaconda
+      url: https://anaconda.org/haiiliin/abqpy/
+      is_external: true
+    - title: Read the Docs
+      url: https://readthedocs.org/projects/abqpy/
+      is_external: true
+  keyfeatures:
+    features:
+      - title: Documented
+        text: The theme is documented at https://abqpy.com/doc.
+      - title: Community Maintained
+        text: The theme is maintained by the [haiiliin](/about/).
+  footer:
+    logo: logo.svg
+    socialmediatitle: ""
+    socialmedia:
+      - link: https://github.com/haiiliin/abqpy/
+        icon: github
+    quicklinks:
+      column1:
+        title: ""
+        links:
+          - text: About
+            link: /about/
+          - text: Theme GitHub
+            link: https://github.com/scientific-python/scientific-python-hugo-theme
+      column2:
+        links:
+          - text: Scientific Python Forum
+            link: https://discuss.scientific-python.org
+      column3:
+        links:
