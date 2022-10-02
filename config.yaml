@@ -47,6 +47,19 @@ params:
     - title: Read the Docs
       url: https://readthedocs.org/projects/abqpy/
       is_external: true
+  panel:
+    tiles:
+      - buttonText: Getting Started
+        url: /getstart/
+        text: Learn how to get started with abqpy, starting with the installation.
+      - buttonText: ABQPY Documentation
+        url: https://docs.abqpy.com/
+        text: Read the documentation for abqpy, which includes all the details of the package.
+        is_external: true
+      - buttonText: ABQPY API Summary
+        url: https://docs.abqpy.com/en/latest/summary.html
+        text: Read the API summary for abqpy, which includes a list of the modules, classes, and functions.
+        is_external: true
   keyfeatures:
     features:
       - title: Full Abaqus/Python APIs Supported
@@ -84,9 +97,9 @@ params:
           - text: User's Guide
             link: https://abqpy.readthedocs.io/en/latest/
           - text: API Summary
-            link: https://abqpy.readthedocs.io/en/latest/api.html
+            link: https://docs.abqpy.com/en/latest/summary.html
           - text: API Reference
-            link: https://abqpy.readthedocs.io/en/latest/api_reference.html
+            link: https://docs.abqpy.com/en/latest/references.html
       column2:
         links:
           - text: GitHub
