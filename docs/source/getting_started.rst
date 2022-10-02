@@ -177,13 +177,13 @@ Using `pip`:
 
 .. code-block:: sh
 
-    pip install abqpy==2020.3.5
+    pip install abqpy==2020.3.6
 
 Using `conda`:
 
 .. code-block:: sh
 
-    conda install -c haiiliin abqpy=2020.3.5
+    conda install -c haiiliin abqpy=2020.3.6
 
 A better way is to use * to match specific version:
 
