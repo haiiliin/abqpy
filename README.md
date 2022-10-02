@@ -31,3 +31,5 @@ many of the docstrings are not well formatted, for example, the Raises section,
 the math equations, the attributes of the objects, due to the limitation of 
 my time, those things are left behind, if anyone is willing to make any 
 contributions, please feel free to create your pull requests.
+
+Please refer [CONTRIBUTING](https://github.com/haiiliin/abqpy/blob/main/.github/CONTRIBUTING.md) for contribution guidelines.
