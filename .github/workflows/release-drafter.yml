@@ -4,7 +4,7 @@ on:
     branches:
     - V20**
   pull_request:
-    types: [opened, reopened, synchronize]
+    types: [closed]
   workflow_dispatch:
 
 jobs:
