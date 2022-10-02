@@ -1,3 +1,11 @@
+---
+name: Improve abqpy.com website
+about: Suggest an improvement to the abqpy.com website
+title: ''
+labels: 'website'
+assignees: ''
+
+---
 # Description
 
 <!---
@@ -10,7 +18,7 @@ List any dependencies that are required for this change.
 
 Fixes # (issue)
 
-## Type of change
+# Type of change
 
 Please delete options that are not relevant.
 
