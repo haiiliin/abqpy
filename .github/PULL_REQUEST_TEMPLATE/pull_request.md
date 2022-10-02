@@ -18,7 +18,7 @@ List any dependencies that are required for this change.
 
 Fixes # (issue)
 
-# This change should be backported to the next release
+# This change should be backported to the previous releases
 
 - [x] V2016
 - [x] V2017
