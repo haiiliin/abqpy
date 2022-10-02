@@ -26,3 +26,5 @@ Abaqus/Python 脚本的类型提示
 由于`abqpy`是从 Abaqus 官方文档中重构出来的，很多文档字符串的格式还不完善，比如
 数学方程，对象的属性，由于我的时间有限，这些东西还没有完成，如果有人愿意做出任何贡献，
 请随时创建您的拉取请求。
+
+请参阅 [.github/CONTRIBUTING.md](.github/CONTRIBUTING.md) 了解贡献指南.
