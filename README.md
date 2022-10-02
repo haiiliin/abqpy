@@ -1,6 +1,8 @@
 # abqpy.com
 
-> This is modified from > modified from https://github.com/numpy/numpy.org.
+<!---
+This is modified from > modified from https://github.com/numpy/numpy.org.
+--->
 
 ## Getting Started
 
