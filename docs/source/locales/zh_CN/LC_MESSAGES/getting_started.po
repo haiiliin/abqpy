@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  abqpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-21 00:17+0000\n"
+"POT-Creation-Date: 2022-10-02 00:21+0000\n"
 "PO-Revision-Date: 2022-08-29 13:21+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
@@ -235,20 +235,35 @@ msgstr ""
 msgid "A better way is to use * to match specific version:"
 msgstr "更好的方法是使用 * 来匹配特定版本："
 
-#: ../../getting_started.rst:196
-msgid "Abaqus command"
-msgstr "Abaqus 命令"
+#: ../../getting_started.rst:195
+msgid "Write your Abaqus/Python script"
+msgstr ""
 
-#: ../../getting_started.rst:198
+#: ../../getting_started.rst:197
+msgid ""
+"After installing the `abqpy` package, you can start writing your own "
+"Abaqus/Python script to build your model. You can refer `abqpy/examples "
+"at main · haiiliin/abqpy "
+"<https://github.com/haiiliin/abqpy/tree/main/examples>`_ for some tests "
+"of the script, for more detailed documentation, please check `abqpy "
+"documentation <https://haiiliin.com/abqpy/>`_."
+msgstr ""
+
+#: ../../getting_started.rst:204
+msgid "Setup your Abaqus Environment"
+msgstr ""
+
+#: ../../getting_started.rst:206
+#, fuzzy
 msgid ""
 "In order to use Abaqus command to execute the Python script and submit "
-"the job, you need to tell `abqpy` where the Abaqus command located. "
+"the job, you need to tell `abqpy` where the Abaqus command is located. "
 "Usually, Abaqus command locates in a directory like this:"
 msgstr ""
 "为了使用 Abaqus 命令执行 Python 脚本并提交作业，您需要告诉 `abqpy` Abaqus 命令所在的位置。通常，Abaqus "
 "命令位于如下目录中："
 
-#: ../../getting_started.rst:205
+#: ../../getting_started.rst:213 ../../getting_started.rst:227
 msgid ""
 "You can add the directory `C:/SIMULIA/Commands` to the system environment"
 " variable `Path`, or you can create a new system variable named "
@@ -258,6 +273,51 @@ msgstr ""
 "您可以将目录 `C/SIMULIA/Commands` 添加到系统环境变量 `Path` 中，也可以创建一个名为 "
 "`ABAQUS_BAT_PATH` 的新系统变量，并将值设置为 Abaqus 命令的文件路径，即 "
 "`C:/SIMULIA/Commands/abaqus.bat`。"
+
+#: ../../getting_started.rst:218
+msgid "Abaqus command"
+msgstr "Abaqus 命令"
+
+#: ../../getting_started.rst:220
+msgid ""
+"In order to use Abaqus command to execute the Python script and submit "
+"the job, you need to tell `abqpy` where the Abaqus command located. "
+"Usually, Abaqus command locates in a directory like this:"
+msgstr ""
+"为了使用 Abaqus 命令执行 Python 脚本并提交作业，您需要告诉 `abqpy` Abaqus 命令所在的位置。通常，Abaqus "
+"命令位于如下目录中："
+
+#: ../../getting_started.rst:232
+msgid "Run your Abaqus/Python script"
+msgstr ""
+
+#: ../../getting_started.rst:234
+msgid ""
+"Now you can just run your Abaqus/Python script using your own Python "
+"interpreter that `abqpy` is installed."
+msgstr ""
+
+#: ../../getting_started.rst:-1 ../../getting_started.rst:236
+msgid "Create an Abaqus Model"
+msgstr ""
+
+#: ../../getting_started.rst:-1 ../../getting_started.rst:243
+msgid "Extract Output Data"
+msgstr ""
+
+#: ../../getting_started.rst:251
+msgid "What next?"
+msgstr ""
+
+#: ../../getting_started.rst:253
+msgid ""
+"You may wonder how does this package work, you can go "
+":doc:`/getting_started` for more detailed introduction and go "
+":doc:`/tutorials` for a simple tutorial. For more documentation about "
+"Abaqus/Python scripting, please check :doc:`/summary` for a list of "
+"descriptions of objects and methods of Abaqus models, check "
+":doc:`/references` for more detailed API references."
+msgstr ""
 
 #~ msgid ""
 #~ "`abqpy` is uploaded to `PyPI "
