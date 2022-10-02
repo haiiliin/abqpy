@@ -1,7 +1,6 @@
 import sys
 
 import abqpy.abaqus
-from abqpy.python2funcs import execfile, execPyFile, upgradeMdb, raw_input
 from .Canvas.Highlight import *
 from .Mdb.Mdb import Mdb
 from .Odb.Odb import Odb
@@ -11,6 +10,7 @@ from .UtilityAndView.BackwardCompatibility import BackwardCompatibility
 from .UtilityAndView.SymbolicConstant import SymbolicConstant
 from .UtilityAndView.User import *
 from .UtilityAndView.abaqusConstants import Boolean, OFF
+from .__builtin__ import execfile, execPyFile, raw_input
 
 session = Session()
 mdb = Mdb()
