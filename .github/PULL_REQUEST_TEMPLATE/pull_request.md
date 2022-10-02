@@ -18,7 +18,10 @@ List any dependencies that are required for this change.
 
 Fixes # (issue)
 
-# This change should be backported to the previous releases
+# Backporting
+
+This change should be backported to the previous releases, please add the relevant labels.
+Refer [here](https://github.com/haiiliin/abqpy/discussions/1500) to resolve backport conflicts if any.
 
 - [x] V2016
 - [x] V2017
