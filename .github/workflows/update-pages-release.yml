@@ -34,5 +34,5 @@ jobs:
           author: haiiliin <hailin.wang@connect.polyu.hk>
           title: Update release info (${{ steps.date.outputs.date }})
           labels: release
-          branch: "abqpy.com"
+          branch: "abqpy.com-update-release"
           token: ${{ secrets.ACTION_TOKEN }}
