@@ -17,6 +17,13 @@ Steps to reproduce the behavior:
 3. Scroll down to '....'
 4. See error
 
+**Reproducible Code**
+If possible, please provide a minimal reproducible example (MRE) that we 
+can run to reproduce the issue. You can use the following template to create a MRE:
+```python
+# Your code here
+```
+
 **Expected behavior**
 A clear and concise description of what you expected to happen.
 
