@@ -1,11 +1,3 @@
----
-name: Pull request
-about: Create a pull request to help us improve
-title: ''
-labels: 'backport-to-all'
-assignees: ''
-
----
 # Description
 
 <!---
