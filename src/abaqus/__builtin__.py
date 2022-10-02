@@ -9,7 +9,7 @@ def execfile(
     """Read and execute a Python script from a file.
     The globals and locals are dictionaries, defaulting to the current
     globals and locals.  If only globals is given, locals defaults to it.
-    
+
     Parameters
     ----------
     filename : os.PathLike
@@ -30,7 +30,7 @@ def execPyFile(
     Reference:
     http://www.python.org/search/hypermail/python-recent/0186.html
     If atxPort != -1, being used to run Kernel from external tester
-    
+
     Parameters
     ----------
     filePath : os.PathLike
@@ -42,23 +42,19 @@ def execPyFile(
 
 
 def raw_input(prompt: str = "") -> str:
-    """Read a string from standard input.  The trailing newline is stripped.     
+    """Read a string from standard input.  The trailing newline is stripped.
     If the user hits EOF (Unix: Ctl-D, Windows: Ctl-Z+Return), raise EOFError.
     On Unix, GNU readline is used if enabled.  The prompt string, if given,
     is printed without a trailing newline before reading.
-    
+
     Parameters
     ----------
     prompt : str, optional
         The prompt written to standard output, by default ''
-    
+
     Returns
     -------
     str
         The input value converted to a string
     """
     return input(prompt)
-
-
-def upgradeMdb(*args: Any) -> None:
-    ...
