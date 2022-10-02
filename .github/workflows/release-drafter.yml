@@ -1,8 +1,5 @@
 name: Release Drafter
 on:
-  push:
-    branches:
-    - V20**
   pull_request:
     types: [closed]
   workflow_dispatch:
@@ -16,10 +13,6 @@ jobs:
       # otherwise, read permission is required at least
       pull-requests: write
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        version: ["2016", "2017", "2018", "2019", "2020", "2021", "2022"]
 
     steps:
       - name: Set up Python
@@ -30,6 +23,6 @@ jobs:
         id: create_release_drafter
         uses: release-drafter/release-drafter@v5
         with:
-          config-name: release-drafter-v${{ matrix.version }}.yml
+          config-name: release-drafter.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
