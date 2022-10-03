@@ -147,6 +147,16 @@ pull_request_rules:
       merge:
         method: squash
 
+  - name: Auto merge updating docs pull request
+    conditions:
+      - and:
+        - label=docs
+        - label!=conflicts
+        - title~=Update release version \(\w+, \d+\/\d+\/\d+\)
+    actions:
+      merge:
+        method: squash
+
   - name: Warn on conflicts
     conditions:
       - conflict
