@@ -2,7 +2,8 @@ name: Update docs
 on:
   push:
     branches:
-    - main
+    - 'main'
+    - 'V20**'
     paths:
     - 'src/**'
     - 'docs/source/**'
@@ -13,29 +14,25 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        language: ['en']
-    env:
-      SPHINXOPTS: "-D language='${{ matrix.language }}'"
+        language: ['en', 'zh_CN']
     steps:
     - uses: actions/setup-python@v4
       with:
         python-version: "3.10"
     - uses: actions/checkout@v3
-      with:
-        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-    - name: Installing the library
-      shell: bash -l {0}
+    - name: build documentation
       run: |
-        python setup.py install
-    - name: Build and Commit
-      uses: sphinx-notes/pages@v2
+        pip install .
+        pip install -r docs/requirements.txt
+        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html
+    - run: touch docs/build/${{ matrix.language }}/html/.nojekyll
+    - uses: cpina/github-action-push-to-another-repository@main
+      env:
+        SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
       with:
-        documentation_path: docs/source
-        requirements_path: docs/requirements.txt
-    - name: Push changes
-      uses: ad-m/github-push-action@v0.6.0
-      with:
-        github_token: ${{ secrets.PUSH_TO_DOCS }}
-        repository: haiiliin/docs.abqpy.com
-        branch: main
-        directory: ${{ matrix.language }}/${{ github.ref_name }}
+        source-directory: "docs/build/${{ matrix.language }}/html"
+        destination-github-username: 'haiiliin'
+        destination-repository-name: 'docs.abqpy.com'
+        user-email: hailin.wang@connect.polyu.hk
+        target-branch: main
+        target-directory: ${{ matrix.language }}/${{ github.ref_name }}
