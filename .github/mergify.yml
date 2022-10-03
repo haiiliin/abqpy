@@ -152,7 +152,7 @@ pull_request_rules:
       - and:
         - label=docs
         - label!=conflicts
-        - title~=Update release version \(\w+, \d+\/\d+\/\d+\)
+        - title~=Update docs \(\w+, \d+\/\d+\/\d+\)
     actions:
       merge:
         method: squash
