@@ -1,0 +1,1191 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Interacting with Abaqus/Standard and Abaqus/Explicit &#8212; abqpy 2022 文档</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user/python/use-scripts/interact';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2022';
+        </script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="Using Abaqus Scripting Interface commands in your environment file" href="environment-file.html" />
+    <link rel="prev" title="Prompting the user for input" href="user-input.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="zh-CN">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2022 文档</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2022  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2022  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../about.html">
+   About the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/interface.html">
+     Abaqus/CAE and the Abaqus Scripting Interface
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/interact.html">
+     How does the Abaqus Scripting Interface interact with Abaqus/CAE?
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../about/examples.html">
+     Simple examples
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/create-part.html">
+       Creating a part
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/read-output.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/summary.html">
+       Summary
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../python.html">
+   Using the Abaqus Scripting Interface
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../introduction.html">
+     Introduction to Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/python-abaqus.html">
+       Python and Abaqus
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/python-resources.html">
+       Python resources
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/python-interpreter.html">
+       Using the Python interpreter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/oop-basics.html">
+       Object-oriented basics
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/python-basics.html">
+       The basics of Python
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/programming.html">
+       Programming techniques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/further-reading.html">
+       Further reading
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../python-abaqus.html">
+     Using Python and the Abaqus Scripting Interface
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/executing.html">
+       Executing scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/types.html">
+       Abaqus Scripting Interface data types
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/oop.html">
+       Object-oriented programming and the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/errors.html">
+       Error handling in the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/extending.html">
+       Extending the Abaqus Scripting Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../use-scripts.html">
+     Using the Abaqus Scripting Interface with Abaqus/CAE
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="object-model.html">
+       The Abaqus object model
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="modify-objects.html">
+       Copying, deleting, and renaming Abaqus Scripting Interface objects
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sequences.html">
+       Abaqus/CAE sequences
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="namespace.html">
+       Namespace
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="specify-viewport.html">
+       Specifying what is displayed in the viewport
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="specify-region.html">
+       Specifying a region
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user-input.html">
+       Prompting the user for input
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Interacting with Abaqus/Standard and Abaqus/Explicit
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="environment-file.html">
+       Using Abaqus Scripting Interface commands in your environment file
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../environment.html">
+   The Abaqus Python Development Environment
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/about.html">
+     About the Abaqus Python development environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/pde-basics.html">
+     Abaqus PDE basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/use-pde.html">
+     Using the Abaqus PDE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../examples.html">
+   Putting it all Together: Abaqus Scripting Interface Examples
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/cantilever.html">
+     Reproducing the cantilever beam tutorial
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/plot.html">
+     Generating a customized plot
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/sensitivity.html">
+     Investigating the skew sensitivity of shell elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/settings.html">
+     Editing display preferences and GUI settings
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../output.html">
+   Accessing an Output Database
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../output/python.html">
+     Using the Abaqus Scripting Interface to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/need-what-to-understand.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/execute-script.html">
+       Executing a script that accesses an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/examples.html">
+       Example scripts that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../output/cpp.html">
+     Using C++ to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/about.html">
+       About the C++ interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/need-what-access.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/compile-link.html">
+       Compiling and linking your C++ source code
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/access.html">
+       Accessing the C++ interface from an existing application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/architecture.html">
+       The Abaqus C++ API architecture
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/utility.html">
+       Utility interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/examples.html">
+       Example programs that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="interacting-with-abaqus-standard-and-abaqus-explicit">
+<h1>Interacting with Abaqus/Standard and Abaqus/Explicit<a class="headerlink" href="#interacting-with-abaqus-standard-and-abaqus-explicit" title="此标题的永久链接">#</a></h1>
+<p>The Job commands include methods that allow you to submit jobs to Abaqus/Standard and Abaqus/Explicit. This section describes how you can interact with Abaqus/Standard and Abaqus/Explicit and synchronize your scripts with the analysis job.</p>
+<section id="processing-messages-from-abaqus-standard-and-abaqus-explicit">
+<h2>Processing messages from Abaqus/Standard and Abaqus/Explicit<a class="headerlink" href="#processing-messages-from-abaqus-standard-and-abaqus-explicit" title="此标题的永久链接">#</a></h2>
+<p>You can use the <cite>addMessageCallback</cite> method to associate an event-driven function with a particular message that is retrieved from Abaqus/Standard or Abaqus/Explicit. When Abaqus/CAE retrieves the specific message from Abaqus/Standard or Abaqus/Explicit, the function executes and takes the necessary action. This type of function is called a callback function. The <cite>addMessageCallback</cite> method specifies which callback function to use for which message.</p>
+<p>The arguments to <cite>addMessageCallback</cite> are:</p>
+<ul class="simple">
+<li><p>The name of the job to monitor for messages.</p></li>
+<li><p>The message from Abaqus/Standard or Abaqus/Explicit that causes the callback function to execute.</p></li>
+<li><p>The name of the callback function.</p></li>
+<li><p>An object to pass to the callback function.</p></li>
+</ul>
+<p>These arguments allow you to associate the callback function with both a particular job and a particular message. Alternatively, you can associate the callback function with all jobs and all messages. The commands are described in <a class="reference internal" href="../../../reference/kernel/messaging.html"><span class="doc">Messaging</span></a>.</p>
+<p>The interface definition of the callback function is</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">functionName</span><span class="p">(</span><span class="n">jobName</span><span class="p">,</span> <span class="n">messageType</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">userData</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The arguments to the callback function are:</p>
+<ul class="simple">
+<li><p><strong>jobName</strong>: A String specifying the name of the job to be monitored. You can also use the SymbolicConstant ANY_JOB that specifies that the callback function will monitor messages from all jobs.</p></li>
+<li><p><strong>messageType</strong>: A SymbolicConstant specifying the message type that will call the callback function. You can also use the SymbolicConstant ANY_MESSAGE_TYPE that specifies that all messages will call the callback function. The following is a list of the message types issued by Abaqus/Standard and Abaqus/Explicit:</p>
+<ul>
+<li><p>ABORTED</p></li>
+<li><p>ANY_JOB</p></li>
+<li><p>ANY_MESSAGE_TYPE</p></li>
+<li><p>COMPLETED</p></li>
+<li><p>END_STEP</p></li>
+<li><p>ERROR</p></li>
+<li><p>HEADING</p></li>
+<li><p>HEALER_JOB</p></li>
+<li><p>HEALER_TYPE</p></li>
+<li><p>INTERRUPTED</p></li>
+<li><p>ITERATION</p></li>
+<li><p>JOB_ABORTED</p></li>
+<li><p>JOB_COMPLETED</p></li>
+<li><p>JOB_INTERRUPTED</p></li>
+<li><p>JOB_SUBMITTED</p></li>
+<li><p>MONITOR_DATA</p></li>
+<li><p>ODB_FILE</p></li>
+<li><p>ODB_FRAME</p></li>
+<li><p>SIMULATION_ABORTED</p></li>
+<li><p>SIMULATION_COMPLETED</p></li>
+<li><p>SIMULATION_INTERRUPTED</p></li>
+<li><p>SIMULATION_SUBMITTED</p></li>
+<li><p>STARTED</p></li>
+<li><p>STATUS</p></li>
+<li><p>STEP</p></li>
+<li><p>WARNING</p></li>
+</ul>
+</li>
+<li><p><strong>data</strong>: A DataObject object containing the message data. The following list describes the members of the DataObject object:</p>
+<ul>
+<li><p><strong>clientHost</strong>: A String specifying the host name of the machine that is running the analysis.</p></li>
+<li><p><strong>clientName</strong>: A String specifying the name of the client that sent the message. Possible values are</p>
+<ul>
+<li><p>“BatchPre” (the input file preprocessor)</p></li>
+<li><p>“Packager” (the Abaqus/Explicit preprocessor packager)</p></li>
+<li><p>“Standard” (the Abaqus/Standard analysis)</p></li>
+<li><p>“Explicit” (the Abaqus/Explicit analysis)</p></li>
+<li><p>“Calculator” (the postprocessing calculator)</p></li>
+</ul>
+</li>
+<li><p><strong>phase</strong>: A SymbolicConstant specifying the phase of the analysis. Possible values are</p>
+<ul>
+<li><p>BATCHPRE_PHASE</p></li>
+<li><p>PACKAGER_PHASE</p></li>
+<li><p>STANDARD_PHASE</p></li>
+<li><p>EXPLICIT_PHASE</p></li>
+<li><p>CALCULATOR_PHASE</p></li>
+<li><p>HEALER_PHASE</p></li>
+</ul>
+</li>
+<li><p><strong>processId</strong>: An Int specifying the process ID of the analysis program.</p></li>
+<li><p><strong>threadId</strong>: An Int specifying the thread ID of the analysis program. Threads are used for parallel or multiprocessing; in most cases <strong>threadId</strong> is set to zero.</p></li>
+<li><p><strong>timeStamp</strong>: An Int specifying the time the message was sent in seconds since 00:00:00 UTC, January 1, 1970.</p></li>
+</ul>
+</li>
+<li><p><strong>userData</strong>: Any Python object or <cite>None</cite>. This object is passed as the <strong>userData</strong> argument to <cite>addMessageCallback</cite>.</p></li>
+</ul>
+<p>The following script is an example of how you can use the messaging capability of the Abaqus Scripting Interface. The callback function will intercept all messages from Abaqus/Standard or Abaqus/Explicit and print the messages in the Abaqus/CAE command line interface. Use the following command to retrieve the example script:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus fetch <span class="nv">job</span><span class="o">=</span>simpleMonitor
+</pre></div>
+</div>
+<p>To execute the script, do the following:</p>
+<ul class="simple">
+<li><p>From the Abaqus/CAE command line interface type from simpleMonitor import printMessages</p></li>
+<li><p>Submit an analysis job as usual.</p></li>
+<li><p>To start printing the messages, type <cite>printMessages(ON)</cite> from the Abaqus/CAE command line interface.</p></li>
+<li><p>To stop printing the messages, type <cite>printMessages(OFF)</cite> from the Abaqus/CAE command line interface.</p></li>
+</ul>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">simpleMonitor.py</span>
+
+<span class="sd">Print all messages issued during an Abaqus;</span>
+<span class="sd">analysis to the Abaqus/CAE command line interface</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">jobMessage</span> <span class="kn">import</span> <span class="n">ANY_JOB</span><span class="p">,</span> <span class="n">ANY_MESSAGE_TYPE</span>
+
+<span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="k">def</span> <span class="nf">simpleCB</span><span class="p">(</span><span class="n">jobName</span><span class="p">,</span> <span class="n">messageType</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">userData</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This callback prints out all the</span>
+<span class="sd">    members of the data objects</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">format</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%-18s</span><span class="s1">  </span><span class="si">%-18s</span><span class="s1">  </span><span class="si">%s</span><span class="s1">&#39;</span>
+
+    <span class="k">print</span> <span class="s1">&#39;Message type: </span><span class="si">%s</span><span class="s1">&#39;</span><span class="o">%</span><span class="p">(</span><span class="n">messageType</span><span class="p">)</span>
+    <span class="k">print</span>
+    <span class="k">print</span> <span class="s1">&#39;data members:&#39;</span>
+    <span class="k">print</span> <span class="n">format</span><span class="o">%</span><span class="p">(</span><span class="s1">&#39;member&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;value&#39;</span><span class="p">)</span>
+
+    <span class="n">members</span> <span class="o">=</span>  <span class="nb">dir</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">member</span> <span class="ow">in</span> <span class="n">members</span><span class="p">:</span>
+        <span class="n">memberValue</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">member</span><span class="p">)</span>
+        <span class="n">memberType</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">memberValue</span><span class="p">)</span><span class="o">.</span><span class="vm">__name__</span>
+        <span class="k">print</span> <span class="n">format</span><span class="o">%</span><span class="p">(</span><span class="n">member</span><span class="p">,</span> <span class="n">memberType</span><span class="p">,</span> <span class="n">memberValue</span><span class="p">)</span>
+
+<span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="k">def</span> <span class="nf">printMessages</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">ON</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Switch message printing ON or OFF</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="n">start</span><span class="p">:</span>
+        <span class="n">monitorManager</span><span class="o">.</span><span class="n">addMessageCallback</span><span class="p">(</span><span class="n">ANY_JOB</span><span class="p">,</span>
+            <span class="n">ANY_MESSAGE_TYPE</span><span class="p">,</span> <span class="n">simpleCB</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">monitorManager</span><span class="o">.</span><span class="n">removeMessageCallback</span><span class="p">(</span><span class="n">ANY_JOB</span><span class="p">,</span>
+            <span class="n">ANY_MESSAGE_TYPE</span><span class="p">,</span> <span class="n">simpleCB</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="waiting-for-a-job-to-complete">
+<h2>Waiting for a job to complete<a class="headerlink" href="#waiting-for-a-job-to-complete" title="此标题的永久链接">#</a></h2>
+<p>You can use the Job object’s <cite>waitForCompletion</cite> method to synchronize your script with a job that has been submitted. If you call the <cite>waitForCompletion</cite> method after you submit a job, the script waits until the analysis is complete before continuing. When the script continues, you should check the status of the job to ensure that the job completed successfully and did not abort. For example, the script described in Reproducing the cantilever beam tutorial uses <cite>waitForCompletion</cite> to ensure that the analysis job has finished executing successfully before the script opens the resulting output database and displays a contour plot of the results.</p>
+<p>In the following example, the script submits myJob1 and waits for it to complete before submitting myJob2.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myJob1</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Job-1&#39;</span><span class="p">)</span>
+<span class="n">myJob2</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Job-2&#39;</span><span class="p">)</span>
+<span class="n">myJob1</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+<span class="n">myJob1</span><span class="o">.</span><span class="n">waitForCompletion</span><span class="p">()</span>
+<span class="n">myJob2</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+<span class="n">myJob2</span><span class="o">.</span><span class="n">waitForCompletion</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>If you submit more than one job and then issue a <cite>waitForCompletion</cite> statement, Abaqus waits until the job associated with the <cite>waitForCompletion</cite> statement is complete before checking the status of the second job. If the second job has already completed, the <cite>waitForCompletion</cite> method returns immediately. In the following example the script will not check the status of <cite>myJob2</cite> until <cite>myJob1</cite> has completed.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myJob1</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Job-1&#39;</span><span class="p">)</span>
+<span class="n">myJob2</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Job-2&#39;</span><span class="p">)</span>
+<span class="n">myJob1</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+<span class="n">myJob2</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+<span class="n">myJob1</span><span class="o">.</span><span class="n">waitForCompletion</span><span class="p">()</span>
+<span class="n">myJob2</span><span class="o">.</span><span class="n">waitForCompletion</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="an-example-of-a-callback-function">
+<h2>An example of a callback function<a class="headerlink" href="#an-example-of-a-callback-function" title="此标题的永久链接">#</a></h2>
+<p>The following section describes how you can use a callback function as an alternative to the <cite>waitForCompletion</cite> method described in <a class="reference internal" href="#waiting-for-a-job-to-complete">waiting for a job to complete</a>. The example uses messaging commands to synchronize a script with an Abaqus/Standard or Abaqus/Explicit analysis. Messaging commands set up a callback function that monitors messages from Abaqus/Standard and Abaqus/Explicit. When the desired message is received, the callback function executes.</p>
+<p>he example uses a callback function that responds to all messages from Abaqus/Standard and Abaqus/Explicit. The function decides what action to take based on the messages received from a job called Deform. If the message indicates that the analysis job is complete, the function opens the output database created by the job and displays a default contour plot.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="c1"># Define the callback function</span>
+
+<span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="kn">import</span> <span class="nn">visualization</span>
+
+<span class="k">def</span> <span class="nf">onMessage</span><span class="p">(</span><span class="n">jobName</span><span class="p">,</span> <span class="n">messageType</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">viewport</span><span class="p">):</span>
+<span class="k">if</span> <span class="p">((</span><span class="n">messageType</span><span class="o">==</span><span class="n">ABORTED</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">messageType</span><span class="o">==</span><span class="n">ERROR</span><span class="p">)):</span>
+    <span class="k">print</span> <span class="s1">&#39;Solver problem; stop execution of callback function&#39;</span>
+<span class="k">elif</span> <span class="p">(</span><span class="n">messageType</span><span class="o">==</span><span class="n">JOB_COMPLETED</span><span class="p">):</span>
+    <span class="n">odb</span> <span class="o">=</span> <span class="n">visualization</span><span class="o">.</span><span class="n">openOdb</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">jobName</span> <span class="o">+</span> <span class="s1">&#39;.odb&#39;</span><span class="p">)</span>
+    <span class="n">viewport</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">odb</span><span class="p">)</span>
+    <span class="n">viewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">plotState</span><span class="o">=</span><span class="n">CONTOURS_ON_DEF</span><span class="p">)</span>
+
+    <span class="n">viewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">commonOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">renderStyle</span><span class="o">=</span><span class="n">FILLED</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The following statements show how the example script can be modified to use the callback function. After the first statement is executed, the callback function responds to all messages from the job named <cite>Deform</cite>. The final two statements create the job and submit it for analysis; the example script has now finished executing. When the job is complete, the callback function opens the resulting output database and displays a contour plot.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
+<span class="n">myJobName</span> <span class="o">=</span> <span class="s1">&#39;Deform&#39;</span>
+<span class="n">monitorManager</span><span class="o">.</span><span class="n">addMessageCallback</span><span class="p">(</span><span class="n">jobName</span><span class="o">=</span><span class="n">myJobName</span><span class="p">,</span>
+    <span class="n">messageType</span><span class="o">=</span><span class="n">ANY_MESSAGE_TYPE</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="n">onMessage</span><span class="p">,</span>
+    <span class="n">userData</span><span class="o">=</span><span class="n">myViewport</span><span class="p">)</span>
+<span class="n">myJob</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">myJobName</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s1">&#39;Beam&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="n">jobDescription</span><span class="p">)</span>
+<span class="n">myJob</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+<span class="c1"># End of example script.</span>
+</pre></div>
+</div>
+<p>You can use the <cite>removeMessageCallback</cite> method at the end of the callback function to remove it from the system. The arguments to the <cite>removeMessageCallback</cite> method must be identical to the arguments to the corresponding <cite>addMessageCallback</cite> command that set up the callback function.</p>
+</section>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="user-input.html" title="上一页 页">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">上一页</p>
+          <p class="prev-next-title">Prompting the user for input</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="environment-file.html" title="下一页 页">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">下一页</p>
+      <p class="prev-next-title">Using Abaqus Scripting Interface commands in your environment file</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#processing-messages-from-abaqus-standard-and-abaqus-explicit">
+   Processing messages from Abaqus/Standard and Abaqus/Explicit
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#waiting-for-a-job-to-complete">
+   Waiting for a job to complete
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#an-example-of-a-callback-function">
+   An example of a callback function
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../../_sources/user/python/use-scripts/interact.rst.txt">
+        <i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
