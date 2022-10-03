@@ -10,9 +10,7 @@ on:
     
 jobs:
   build:
-    if: ${{ github.ref_name != 'main' }}
     runs-on: ubuntu-latest
-    concurrency: docs-${{ github.ref }}
     strategy:
       matrix:
         language: ['en', 'zh_CN']
@@ -21,19 +19,32 @@ jobs:
       with:
         python-version: "3.10"
     - uses: actions/checkout@v3
-    - name: build documentation
-      run: |
-        pip install .
-        pip install -r docs/requirements.txt
-        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html
-    - run: touch docs/build/${{ matrix.language }}/html/.nojekyll
-    - uses: cpina/github-action-push-to-another-repository@main
-      env:
-        SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
       with:
-        source-directory: "docs/build/${{ matrix.language }}/html"
-        destination-github-username: 'haiiliin'
-        destination-repository-name: 'docs.abqpy.com'
-        user-email: hailin.wang@connect.polyu.hk
-        target-branch: ${{ github.ref_name }}
-        target-directory: ${{ matrix.language }}
+        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+    - uses: bhowell2/github-substring-action@v1.0.0
+      id: folder
+      with:
+        value: "${{ github.ref_name }}"
+        length_from_end: 4
+    - name: Build and Commit
+      run: |
+        pip install -r docs/requirements.txt
+        pip install .
+        tmp_dir=$(mktemp -d -t pages-XXXXXXXXXX)
+        echo "$tmp_dir created"
+        sphinx-build -b html -D language=${{ matrix.language }} docs/source $tmp_dir
+        git checkout gh-pages
+        rm -rf $tmp_dir/.doctrees
+        cp -vr $tmp_dir/. docs/${{ matrix.language }}/${{ steps.folder.outputs.substring }}
+        touch "docs/${{ matrix.language }}/${{ steps.folder.outputs.substring }}/.nojekyll"
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        commit-message: Update docs by GitHub Action https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        body: |
+          This is an automated pull request to update the docs by GitHub Action [${{ github.run_id }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}).
+        author: haiiliin <hailin.wang@connect.polyu.hk>
+        title: Update docs (${{ matrix.language }}, ${{ steps.date.outputs.date }})
+        labels: docs, ${{ github.ref_name }}
+        branch: docs/${{ matrix.language }}/${{ steps.folder.outputs.substring }}
+        token: ${{ secrets.ACTION_TOKEN }}
