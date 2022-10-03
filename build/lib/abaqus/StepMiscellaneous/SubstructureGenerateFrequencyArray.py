@@ -1,5 +1,0 @@
-from typing import List
-
-from .SubstructureGenerateFrequency import SubstructureGenerateFrequency
-
-SubstructureGenerateFrequencyArray = List[SubstructureGenerateFrequency]
