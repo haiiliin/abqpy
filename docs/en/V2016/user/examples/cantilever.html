@@ -1,0 +1,1208 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Reproducing the cantilever beam tutorial &#8212; abqpy 2016 documentation</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user/examples/cantilever';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2016';
+        </script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Generating a customized plot" href="plot.html" />
+    <link rel="prev" title="Putting it all Together: Abaqus Scripting Interface Examples" href="../examples.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2016 documentation</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2016  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2016  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../about.html">
+   About the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../about/interface.html">
+     Abaqus/CAE and the Abaqus Scripting Interface
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../about/interact.html">
+     How does the Abaqus Scripting Interface interact with Abaqus/CAE?
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../about/examples.html">
+     Simple examples
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../about/examples/create-part.html">
+       Creating a part
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../about/examples/read-output.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../about/examples/summary.html">
+       Summary
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../python.html">
+   Using the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../python/introduction.html">
+     Introduction to Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/python-abaqus.html">
+       Python and Abaqus
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/python-resources.html">
+       Python resources
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/python-interpreter.html">
+       Using the Python interpreter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/oop-basics.html">
+       Object-oriented basics
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/python-basics.html">
+       The basics of Python
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/programming.html">
+       Programming techniques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/further-reading.html">
+       Further reading
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../python/python-abaqus.html">
+     Using Python and the Abaqus Scripting Interface
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/executing.html">
+       Executing scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/types.html">
+       Abaqus Scripting Interface data types
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/oop.html">
+       Object-oriented programming and the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/errors.html">
+       Error handling in the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/extending.html">
+       Extending the Abaqus Scripting Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../python/use-scripts.html">
+     Using the Abaqus Scripting Interface with Abaqus/CAE
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/object-model.html">
+       The Abaqus object model
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/modify-objects.html">
+       Copying, deleting, and renaming Abaqus Scripting Interface objects
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/sequences.html">
+       Abaqus/CAE sequences
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/namespace.html">
+       Namespace
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/specify-viewport.html">
+       Specifying what is displayed in the viewport
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/specify-region.html">
+       Specifying a region
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/user-input.html">
+       Prompting the user for input
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/interact.html">
+       Interacting with Abaqus/Standard and Abaqus/Explicit
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/environment-file.html">
+       Using Abaqus Scripting Interface commands in your environment file
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../environment.html">
+   The Abaqus Python Development Environment
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../environment/about.html">
+     About the Abaqus Python development environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../environment/pde-basics.html">
+     Abaqus PDE basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../environment/use-pde.html">
+     Using the Abaqus PDE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../examples.html">
+   Putting it all Together: Abaqus Scripting Interface Examples
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Reproducing the cantilever beam tutorial
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="plot.html">
+     Generating a customized plot
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="sensitivity.html">
+     Investigating the skew sensitivity of shell elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="settings.html">
+     Editing display preferences and GUI settings
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../output.html">
+   Accessing an Output Database
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../output/python.html">
+     Using the Abaqus Scripting Interface to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/need-what-to-understand.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/execute-script.html">
+       Executing a script that accesses an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/examples.html">
+       Example scripts that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../output/cpp.html">
+     Using C++ to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/about.html">
+       About the C++ interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/need-what-access.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/compile-link.html">
+       Compiling and linking your C++ source code
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/access.html">
+       Accessing the C++ interface from an existing application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/architecture.html">
+       The Abaqus C++ API architecture
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/utility.html">
+       Utility interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/examples.html">
+       Example programs that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="reproducing-the-cantilever-beam-tutorial">
+<h1>Reproducing the cantilever beam tutorial<a class="headerlink" href="#reproducing-the-cantilever-beam-tutorial" title="Permalink to this heading">#</a></h1>
+<p>This section explains how to use the Abaqus Scripting Interface commands to reproduce a tutorial that shows the basic steps to create and analyze a simple model. The tutorial, <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEGSARefMap/simagsa-m-Caebeam-sb.htm?contextscope=all#simagsa-m-Caebeam-sb">Creating and Analyzing a Simple Model in Abaqus/CAE</a>, is available in <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEGSARefMap/simagsa-c-ov.htm?contextscope=all#simagsa-c-ov">Getting Started with Abaqus/CAE</a>.</p>
+<section id="about-the-cantilever-beam-example">
+<h2>About the cantilever beam example<a class="headerlink" href="#about-the-cantilever-beam-example" title="Permalink to this heading">#</a></h2>
+<p>The example leads you through the Abaqus/CAE modeling process by visiting each of the modules and shows you the basic steps to create and analyze a simple model. In <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEGSARefMap/simagsa-m-Caebeam-sb.htm?contextscope=all#simagsa-m-Caebeam-sb">Creating and Analyzing a Simple Model in Abaqus/CAE</a>, you create a model of a steel cantilever beam and load its top surface. You then analyze the beam and plot the resulting stresses and displacements. <a class="reference internal" href="#gst-beam"><span class="std std-numref">Fig. 19</span></a> illustrates the model that you create and analyze.</p>
+<figure class="align-center" id="id2">
+<span id="gst-beam"></span><a class="reference internal image-reference" href="../../_images/gst-beam.png"><img alt="../../_images/gst-beam.png" src="../../_images/gst-beam.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 19 </span><span class="caption-text">A loaded cantilever beam.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="running-the-example">
+<h2>Running the example<a class="headerlink" href="#running-the-example" title="Permalink to this heading">#</a></h2>
+<p>Use the following command to retrieve the output database that is read by the scripts:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus fetch <span class="nv">job</span><span class="o">=</span>beamExample
+</pre></div>
+</div>
+<p>To run the script, do the following:</p>
+<ol class="arabic simple">
+<li><p>Start Abaqus/CAE from a directory in which you have write permission by typing <cite>abaqus cae</cite>.</p></li>
+<li><p>From the startup screen, select <strong>Run Script</strong>.</p></li>
+<li><p>From the <strong>Run Script</strong> dialog box that appears, enter the path given above and select the file containing the script.</p></li>
+<li><p>Click <strong>OK</strong> to run the script.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If Abaqus/CAE is already running, you can run the script by selecting <strong>File -&gt; Run Script</strong> from the main menu bar.</p>
+</div>
+</section>
+<section id="the-cantilever-beam-example-script">
+<h2>The cantilever beam example script<a class="headerlink" href="#the-cantilever-beam-example-script" title="Permalink to this heading">#</a></h2>
+<p>The first line of the script, <cite>from abaqus import *</cite>, imports the Mdb and Session objects. The current viewport is <cite>session.viewports[‘Viewport: 1’]</cite>, and the current model is <cite>mdb.models[‘Model-1’]</cite>. Both of these objects are available to the script after you import the <cite>abaqus</cite> module. The second line of the script, <cite>from abaqusConstants import *</cite>, imports the Symbolic Constants defined in the Abaqus Scripting Interface. The script then creates a new model that will contain the cantilever beam example and creates a new viewport in which to display the model and the results of the analysis. For a description of the commands used in this section, see the appropriate sections in the <a class="reference internal" href="../../references.html"><span class="doc">API Reference</span></a>.</p>
+<p>The script then imports the <cite>Part</cite> module. Most of the sections in this example begin with importing the appropriate module, which illustrates how a script can import a module at any time to extend or augment the object model. However, the Abaqus Scripting Interface has a convention that all the required modules are imported at the start of a script; and that convention is followed in other example scripts in this guide.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">beamExample.py</span>
+
+<span class="sd">Reproduce the cantilever beam example from the</span>
+<span class="sd">Appendix of the Getting Started with</span>
+<span class="sd">Abaqus: Interactive Edition Manual.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">backwardCompatibility</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">includeDeprecated</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+                                <span class="n">reportDeprecated</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="c1"># Create a model.</span>
+
+<span class="n">myModel</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Model</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Beam&#39;</span><span class="p">)</span>
+
+<span class="c1"># Create a new viewport in which to display the model</span>
+<span class="c1"># and the results of the analysis.</span>
+
+<span class="n">myViewport</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Cantilever Beam Example&#39;</span><span class="p">,</span>
+    <span class="n">origin</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">120</span><span class="p">)</span>
+
+<span class="c1">#-----------------------------------------------------</span>
+
+<span class="kn">import</span> <span class="nn">part</span>
+
+<span class="c1"># Create a sketch for the base feature.</span>
+
+<span class="n">mySketch</span> <span class="o">=</span> <span class="n">myModel</span><span class="o">.</span><span class="n">ConstrainedSketch</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;beamProfile&#39;</span><span class="p">,</span>
+    <span class="n">sheetSize</span><span class="o">=</span><span class="mf">250.</span><span class="p">)</span>
+
+<span class="c1"># Create the rectangle.</span>
+
+<span class="n">mySketch</span><span class="o">.</span><span class="n">rectangle</span><span class="p">(</span><span class="n">point1</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="n">point2</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="o">-</span><span class="mi">10</span><span class="p">))</span>
+
+<span class="c1"># Create a three-dimensional, deformable part.</span>
+
+<span class="n">myBeam</span> <span class="o">=</span> <span class="n">myModel</span><span class="o">.</span><span class="n">Part</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Beam&#39;</span><span class="p">,</span> <span class="n">dimensionality</span><span class="o">=</span><span class="n">THREE_D</span><span class="p">,</span>
+    <span class="nb">type</span><span class="o">=</span><span class="n">DEFORMABLE_BODY</span><span class="p">)</span>
+
+<span class="c1"># Create the part&#39;s base feature by extruding the sketch</span>
+<span class="c1"># through a distance of 25.0.</span>
+
+<span class="n">myBeam</span><span class="o">.</span><span class="n">BaseSolidExtrude</span><span class="p">(</span><span class="n">sketch</span><span class="o">=</span><span class="n">mySketch</span><span class="p">,</span> <span class="n">depth</span><span class="o">=</span><span class="mf">25.0</span><span class="p">)</span>
+
+<span class="c1">#-----------------------------------------------------</span>
+
+<span class="kn">import</span> <span class="nn">material</span>
+
+<span class="c1"># Create a material.</span>
+
+<span class="n">mySteel</span> <span class="o">=</span> <span class="n">myModel</span><span class="o">.</span><span class="n">Material</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Steel&#39;</span><span class="p">)</span>
+
+<span class="c1"># Create the elastic properties: youngsModulus is 209.E3</span>
+<span class="c1"># and poissonsRatio is 0.3</span>
+
+<span class="n">elasticProperties</span> <span class="o">=</span> <span class="p">(</span><span class="mf">209.E3</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">)</span>
+<span class="n">mySteel</span><span class="o">.</span><span class="n">Elastic</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="p">(</span><span class="n">elasticProperties</span><span class="p">,</span> <span class="p">)</span> <span class="p">)</span>
+
+<span class="c1">#-------------------------------------------------------</span>
+
+<span class="kn">import</span> <span class="nn">section</span>
+
+<span class="c1"># Create the solid section.</span>
+
+<span class="n">mySection</span> <span class="o">=</span> <span class="n">myModel</span><span class="o">.</span><span class="n">HomogeneousSolidSection</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;beamSection&#39;</span><span class="p">,</span>
+    <span class="n">material</span><span class="o">=</span><span class="s1">&#39;Steel&#39;</span><span class="p">,</span> <span class="n">thickness</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+
+<span class="c1"># Assign the section to the region. The region refers</span>
+<span class="c1"># to the single cell in this model.</span>
+
+<span class="n">region</span> <span class="o">=</span> <span class="p">(</span><span class="n">myBeam</span><span class="o">.</span><span class="n">cells</span><span class="p">,)</span>
+<span class="n">myBeam</span><span class="o">.</span><span class="n">SectionAssignment</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="n">region</span><span class="p">,</span>
+    <span class="n">sectionName</span><span class="o">=</span><span class="s1">&#39;beamSection&#39;</span><span class="p">)</span>
+
+<span class="c1">#-------------------------------------------------------</span>
+
+<span class="kn">import</span> <span class="nn">assembly</span>
+
+<span class="c1"># Create a part instance.</span>
+
+<span class="n">myAssembly</span> <span class="o">=</span> <span class="n">myModel</span><span class="o">.</span><span class="n">rootAssembly</span>
+<span class="n">myInstance</span> <span class="o">=</span> <span class="n">myAssembly</span><span class="o">.</span><span class="n">Instance</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;beamInstance&#39;</span><span class="p">,</span>
+    <span class="n">part</span><span class="o">=</span><span class="n">myBeam</span><span class="p">,</span> <span class="n">dependent</span><span class="o">=</span><span class="n">OFF</span><span class="p">)</span>
+
+<span class="c1">#-------------------------------------------------------</span>
+
+<span class="kn">import</span> <span class="nn">step</span>
+
+<span class="c1"># Create a step. The time period of the static step is 1.0,</span>
+<span class="c1"># and the initial incrementation is 0.1; the step is created</span>
+<span class="c1"># after the initial step.</span>
+
+<span class="n">myModel</span><span class="o">.</span><span class="n">StaticStep</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;beamLoad&#39;</span><span class="p">,</span> <span class="n">previous</span><span class="o">=</span><span class="s1">&#39;Initial&#39;</span><span class="p">,</span>
+    <span class="n">timePeriod</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">initialInc</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Load the top of the beam.&#39;</span><span class="p">)</span>
+
+<span class="c1">#-------------------------------------------------------</span>
+
+<span class="kn">import</span> <span class="nn">load</span>
+
+<span class="c1"># Find the end face using coordinates.</span>
+
+<span class="n">endFaceCenter</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">12.5</span><span class="p">)</span>
+<span class="n">endFace</span> <span class="o">=</span> <span class="n">myInstance</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="n">endFaceCenter</span><span class="p">,)</span> <span class="p">)</span>
+
+<span class="c1"># Create a boundary condition that encastres one end</span>
+<span class="c1"># of the beam.</span>
+
+<span class="n">endRegion</span> <span class="o">=</span> <span class="p">(</span><span class="n">endFace</span><span class="p">,)</span>
+<span class="n">myModel</span><span class="o">.</span><span class="n">EncastreBC</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Fixed&#39;</span><span class="p">,</span><span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;beamLoad&#39;</span><span class="p">,</span>
+    <span class="n">region</span><span class="o">=</span><span class="n">endRegion</span><span class="p">)</span>
+
+<span class="c1"># Find the top face using coordinates.</span>
+
+<span class="n">topFaceCenter</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mf">12.5</span><span class="p">)</span>
+<span class="n">topFace</span> <span class="o">=</span> <span class="n">myInstance</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="n">topFaceCenter</span><span class="p">,)</span> <span class="p">)</span>
+
+<span class="c1"># Create a pressure load on the top face of the beam.</span>
+
+<span class="n">topSurface</span> <span class="o">=</span> <span class="p">((</span><span class="n">topFace</span><span class="p">,</span> <span class="n">SIDE1</span><span class="p">),</span> <span class="p">)</span>
+<span class="n">myModel</span><span class="o">.</span><span class="n">Pressure</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Pressure&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;beamLoad&#39;</span><span class="p">,</span>
+    <span class="n">region</span><span class="o">=</span><span class="n">topSurface</span><span class="p">,</span> <span class="n">magnitude</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="c1">#-------------------------------------------------------</span>
+
+<span class="kn">import</span> <span class="nn">mesh</span>
+
+<span class="c1"># Assign an element type to the part instance.</span>
+
+<span class="n">region</span> <span class="o">=</span> <span class="p">(</span><span class="n">myInstance</span><span class="o">.</span><span class="n">cells</span><span class="p">,)</span>
+<span class="n">elemType</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span><span class="p">(</span><span class="n">elemCode</span><span class="o">=</span><span class="n">C3D8I</span><span class="p">,</span> <span class="n">elemLibrary</span><span class="o">=</span><span class="n">STANDARD</span><span class="p">)</span>
+<span class="n">myAssembly</span><span class="o">.</span><span class="n">setElementType</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="n">region</span><span class="p">,</span> <span class="n">elemTypes</span><span class="o">=</span><span class="p">(</span><span class="n">elemType</span><span class="p">,))</span>
+
+<span class="c1"># Seed the part instance.</span>
+
+<span class="n">myAssembly</span><span class="o">.</span><span class="n">seedPartInstance</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="p">(</span><span class="n">myInstance</span><span class="p">,),</span> <span class="n">size</span><span class="o">=</span><span class="mf">10.0</span><span class="p">)</span>
+
+<span class="c1"># Mesh the part instance.</span>
+
+<span class="n">myAssembly</span><span class="o">.</span><span class="n">generateMesh</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="p">(</span><span class="n">myInstance</span><span class="p">,))</span>
+
+<span class="c1"># Display the meshed beam.</span>
+
+<span class="n">myViewport</span><span class="o">.</span><span class="n">assemblyDisplay</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">mesh</span><span class="o">=</span><span class="n">ON</span><span class="p">)</span>
+<span class="n">myViewport</span><span class="o">.</span><span class="n">assemblyDisplay</span><span class="o">.</span><span class="n">meshOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">meshTechnique</span><span class="o">=</span><span class="n">ON</span><span class="p">)</span>
+<span class="n">myViewport</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">myAssembly</span><span class="p">)</span>
+
+<span class="c1">#-------------------------------------------------------</span>
+
+<span class="kn">import</span> <span class="nn">job</span>
+
+<span class="c1"># Create an analysis job for the model and submit it.</span>
+
+<span class="n">jobName</span> <span class="o">=</span> <span class="s1">&#39;beam_tutorial&#39;</span>
+<span class="n">myJob</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">jobName</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s1">&#39;Beam&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Cantilever beam tutorial&#39;</span><span class="p">)</span>
+
+<span class="c1"># Wait for the job to complete.</span>
+
+<span class="n">myJob</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+<span class="n">myJob</span><span class="o">.</span><span class="n">waitForCompletion</span><span class="p">()</span>
+
+<span class="c1">#-------------------------------------------------------</span>
+
+<span class="kn">import</span> <span class="nn">visualization</span>
+
+<span class="c1"># Open the output database and display a</span>
+<span class="c1"># default contour plot.</span>
+
+<span class="n">myOdb</span> <span class="o">=</span> <span class="n">visualization</span><span class="o">.</span><span class="n">openOdb</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">jobName</span> <span class="o">+</span> <span class="s1">&#39;.odb&#39;</span><span class="p">)</span>
+<span class="n">myViewport</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">myOdb</span><span class="p">)</span>
+<span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">plotState</span><span class="o">=</span><span class="n">CONTOURS_ON_DEF</span><span class="p">)</span>
+
+<span class="n">myViewport</span><span class="o">.</span><span class="n">odbDisplay</span><span class="o">.</span><span class="n">commonOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">renderStyle</span><span class="o">=</span><span class="n">FILLED</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="../examples.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Putting it all Together: Abaqus Scripting Interface Examples</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="plot.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Generating a customized plot</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about-the-cantilever-beam-example">
+   About the cantilever beam example
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#running-the-example">
+   Running the example
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-cantilever-beam-example-script">
+   The cantilever beam example script
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../_sources/user/examples/cantilever.rst.txt">
+        <i class="fas fa-file-alt"></i> Show Source
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
