@@ -1,0 +1,1312 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Computations with Abaqus results &#8212; abqpy 2022 documentation</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user/output/cpp/computations';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2022';
+        </script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Improving the efficiency of your scripts" href="improve-efficiency.html" />
+    <link rel="prev" title="Exception handling in an output database" href="exceptions.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2022 documentation</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2022  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2022  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../about.html">
+   About the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/interface.html">
+     Abaqus/CAE and the Abaqus Scripting Interface
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/interact.html">
+     How does the Abaqus Scripting Interface interact with Abaqus/CAE?
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../about/examples.html">
+     Simple examples
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/create-part.html">
+       Creating a part
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/read-output.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/summary.html">
+       Summary
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../python.html">
+   Using the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../python/introduction.html">
+     Introduction to Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/introduction/python-abaqus.html">
+       Python and Abaqus
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/introduction/python-resources.html">
+       Python resources
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/introduction/python-interpreter.html">
+       Using the Python interpreter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/introduction/oop-basics.html">
+       Object-oriented basics
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/introduction/python-basics.html">
+       The basics of Python
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/introduction/programming.html">
+       Programming techniques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/introduction/further-reading.html">
+       Further reading
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../python/python-abaqus.html">
+     Using Python and the Abaqus Scripting Interface
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/python-abaqus/executing.html">
+       Executing scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/python-abaqus/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/python-abaqus/types.html">
+       Abaqus Scripting Interface data types
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/python-abaqus/oop.html">
+       Object-oriented programming and the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/python-abaqus/errors.html">
+       Error handling in the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/python-abaqus/extending.html">
+       Extending the Abaqus Scripting Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../python/use-scripts.html">
+     Using the Abaqus Scripting Interface with Abaqus/CAE
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/object-model.html">
+       The Abaqus object model
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/modify-objects.html">
+       Copying, deleting, and renaming Abaqus Scripting Interface objects
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/sequences.html">
+       Abaqus/CAE sequences
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/namespace.html">
+       Namespace
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/specify-viewport.html">
+       Specifying what is displayed in the viewport
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/specify-region.html">
+       Specifying a region
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/user-input.html">
+       Prompting the user for input
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/interact.html">
+       Interacting with Abaqus/Standard and Abaqus/Explicit
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/environment-file.html">
+       Using Abaqus Scripting Interface commands in your environment file
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../environment.html">
+   The Abaqus Python Development Environment
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/about.html">
+     About the Abaqus Python development environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/pde-basics.html">
+     Abaqus PDE basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/use-pde.html">
+     Using the Abaqus PDE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../examples.html">
+   Putting it all Together: Abaqus Scripting Interface Examples
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/cantilever.html">
+     Reproducing the cantilever beam tutorial
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/plot.html">
+     Generating a customized plot
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/sensitivity.html">
+     Investigating the skew sensitivity of shell elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/settings.html">
+     Editing display preferences and GUI settings
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../output.html">
+   Accessing an Output Database
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../python.html">
+     Using the Abaqus Scripting Interface to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/need-what-to-understand.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/execute-script.html">
+       Executing a script that accesses an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/examples.html">
+       Example scripts that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../cpp.html">
+     Using C++ to access an output database
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="about.html">
+       About the C++ interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="need-what-access.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="compile-link.html">
+       Compiling and linking your C++ source code
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="access.html">
+       Accessing the C++ interface from an existing application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="architecture.html">
+       The Abaqus C++ API architecture
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="utility.html">
+       Utility interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="examples.html">
+       Example programs that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="computations-with-abaqus-results">
+<h1>Computations with Abaqus results<a class="headerlink" href="#computations-with-abaqus-results" title="Permalink to this heading">#</a></h1>
+<p>This section discusses computations with Abaqus results in the Abaqus Scripting Interface.</p>
+<section id="rules-for-the-mathematical-operations">
+<h2>Rules for the mathematical operations<a class="headerlink" href="#rules-for-the-mathematical-operations" title="Permalink to this heading">#</a></h2>
+<p>Mathematical operations are supported for FieldOutput, FieldValue, and HistoryOutput objects. These operators allow you to perform linear superposition of Abaqus results or to create more complex derived results from Abaqus results.</p>
+<p>The following rules apply:</p>
+<ul class="simple">
+<li><p>The operations are performed on the components of a tensor or vector.</p></li>
+<li><p>The invariants are computed from the component values. For example, taking the absolute value of a tensor can result in negative values of the pressure invariant.</p></li>
+<li><p>Operations between FieldOutput, FieldValue, and HistoryOutput objects are not supported.</p></li>
+<li><p>Multiplication and division are not supported between two vector objects nor between two tensor objects.</p></li>
+<li><p>The types in an expression must be compatible. For example,</p>
+<ul>
+<li><p>A vector cannot be added to a tensor.</p></li>
+<li><p>A three-dimensional surface tensor cannot be added to a three-dimensional planar tensor.</p></li>
+<li><p>INTEGRATION_POINT data cannot be added to ELEMENT_NODAL data.</p></li>
+</ul>
+</li>
+<li><p>If the fields in the expression were obtained using the getSubset method, the same getSubset operations must have been applied in the same order to obtain each field.</p></li>
+<li><p>Arguments to the trigonometric functions must be in radians.</p></li>
+<li><p>Operations on tensors are performed in the local coordinate system, if it is available. Otherwise the global system is used. Abaqus assumes that the local coordinate systems are consistent for operations involving more than one tensor.</p></li>
+<li><p>Operations between FieldValue objects associated with different locations in the model are allowed only if the data types are the same. If the locations in the model differ, the FieldValue computed will not be associated with a location. If the local coordinate systems of the FieldValue objects are not the same, the local coordinate systems of both fieldValues will be disregarded and the fieldValue computed will have no local coordinate system.</p></li>
+</ul>
+<p>The FieldOutput operations are significantly more efficient than the FieldValue operators. You can save the computed FieldOutput objects with the following procedure (see the example, <a class="reference internal" href="../python/examples.html#computations-with-fieldoutput-objects"><span class="std std-ref">Computations with FieldOutput objects</span></a>):</p>
+<ul class="simple">
+<li><p>Create a new FieldOutput object in the output database.</p></li>
+<li><p>Use the <cite>addData</cite> method to add the new computed field objects to the new FieldOutput object.</p></li>
+</ul>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">// Get fields from odb.</span>
+<span class="n">odb_StepRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">stepCon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">steps</span><span class="p">();</span><span class="w"></span>
+<span class="n">odb_SequenceFrame</span><span class="o">&amp;</span><span class="w"> </span><span class="n">frameCon1</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="n">stepCon</span><span class="p">[</span><span class="s">&quot;Step-1&quot;</span><span class="p">].</span><span class="n">frames</span><span class="p">();</span><span class="w"></span>
+<span class="n">odb_FieldOutputRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fieldCon1</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="n">frameCon1</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">fieldOutputs</span><span class="p">();</span><span class="w"></span>
+<span class="n">odb_SequenceFrame</span><span class="o">&amp;</span><span class="w"> </span><span class="n">frameCon2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">stepCon</span><span class="p">[</span><span class="s">&quot;Step-2&quot;</span><span class="p">].</span><span class="n">frames</span><span class="p">();</span><span class="w"></span>
+<span class="n">odb_FieldOutputRepository</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fieldCon2</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="n">frameCon2</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">fieldOutputs</span><span class="p">();</span><span class="w"></span>
+<span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">field1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fieldCon1</span><span class="p">[</span><span class="s">&quot;U&quot;</span><span class="p">];</span><span class="w"></span>
+<span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">field2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">fieldCon2</span><span class="p">[</span><span class="s">&quot;U&quot;</span><span class="p">];</span><span class="w"></span>
+
+<span class="c1">// Compute new field.</span>
+
+<span class="n">odb_FieldOutput</span><span class="w"> </span><span class="n">deltaDisp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">field2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">field1</span><span class="p">;</span><span class="w"></span>
+
+<span class="c1">// Save new field.</span>
+
+<span class="n">odb_Step</span><span class="o">&amp;</span><span class="w"> </span><span class="n">newStep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">odb</span><span class="p">.</span><span class="n">Step</span><span class="p">(</span><span class="s">&quot;user&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;user defined results&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">TIME</span><span class="p">,</span><span class="mf">1.0</span><span class="p">);</span><span class="w"></span>
+<span class="n">odb_Frame</span><span class="w"> </span><span class="n">newFrame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newStep</span><span class="p">.</span><span class="n">Frame</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mf">0.0</span><span class="p">);</span><span class="w"></span>
+<span class="n">odb_FieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">newField</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">newFrame</span><span class="p">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="s">&quot;U&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="s">&quot;delta displacements&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">                </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">VECTOR</span><span class="p">);</span><span class="w"></span>
+<span class="n">newField</span><span class="p">.</span><span class="n">addData</span><span class="p">(</span><span class="n">deltaDisp</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</section>
+<section id="valid-mathematical-operations">
+<h2>Valid mathematical operations<a class="headerlink" href="#valid-mathematical-operations" title="Permalink to this heading">#</a></h2>
+<p>Table 1 describes the abbreviations that are used in mathematical operations.</p>
+<p><strong>Table 1. Abbreviations.</strong></p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Abbreviation</p></th>
+<th class="head"><p>Allowable values</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>all</p></td>
+<td><p>FieldOutput objects, FieldValue objects,
+HistoryVariable objects, or floating point numbers</p></td>
+</tr>
+<tr class="row-odd"><td><p>float</p></td>
+<td><p>floating point numbers</p></td>
+</tr>
+<tr class="row-even"><td><p>FO</p></td>
+<td><p>FieldOutput objects</p></td>
+</tr>
+<tr class="row-odd"><td><p>FV</p></td>
+<td><p>FieldValue objects</p></td>
+</tr>
+<tr class="row-even"><td><p>HO</p></td>
+<td><p>HistoryOutput objects</p></td>
+</tr>
+</tbody>
+</table>
+<p>Table 2 shows the valid operations on FieldOutput objects.</p>
+<p><strong>Table 2. Valid operations.</strong></p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Symbol</p></th>
+<th class="head"><p>Operation</p></th>
+<th class="head"><p>Return value</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>all + float</p></td>
+<td><p>addition</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-odd"><td><p>FO + FO</p></td>
+<td></td>
+<td><p>FO</p></td>
+</tr>
+<tr class="row-even"><td><p>FV + FV</p></td>
+<td></td>
+<td><p>FV</p></td>
+</tr>
+<tr class="row-odd"><td><p>HO + HO</p></td>
+<td></td>
+<td><p>HO</p></td>
+</tr>
+<tr class="row-even"><td><p>-all</p></td>
+<td><p>unary negation</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-odd"><td><p>all - float</p></td>
+<td><p>subtraction</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-even"><td><p>FO - FO</p></td>
+<td></td>
+<td><p>FO</p></td>
+</tr>
+<tr class="row-odd"><td><p>FV - FV</p></td>
+<td></td>
+<td><p>FV</p></td>
+</tr>
+<tr class="row-even"><td><p>FO * FO (only if FO is a scalar)</p></td>
+<td><p>multiplication</p></td>
+<td><p>FO</p></td>
+</tr>
+<tr class="row-odd"><td><p>all * float</p></td>
+<td></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-even"><td><p>FO / FO (only if FO is a scalar)</p></td>
+<td><p>division</p></td>
+<td><p>FO</p></td>
+</tr>
+<tr class="row-odd"><td><p>all / float</p></td>
+<td></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-even"><td><p>abs(all)</p></td>
+<td><p>absolute value</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-odd"><td><p>acos(all)</p></td>
+<td><p>arccosine</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-even"><td><p>asin(all)</p></td>
+<td><p>arcsine</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-odd"><td><p>atan(all)</p></td>
+<td><p>arctangent</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-even"><td><p>cos(all)</p></td>
+<td><p>cosine</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-odd"><td><p>degreeToRadian (all)</p></td>
+<td><p>convert degrees to radians</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-even"><td><p>exp(all)</p></td>
+<td><p>natural exponent</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-odd"><td><p>exp10(all)</p></td>
+<td><p>base 10 exponent</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-even"><td><p>log(all)</p></td>
+<td><p>natural logarithm</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-odd"><td><p>log10(all)</p></td>
+<td><p>base 10 logarithm</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-even"><td><p>float ** float</p></td>
+<td><p>raise to a power</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-odd"><td><p>power(FO, float)</p></td>
+<td></td>
+<td><p>FO</p></td>
+</tr>
+<tr class="row-even"><td><p>power(FV, float)</p></td>
+<td></td>
+<td><p>FV</p></td>
+</tr>
+<tr class="row-odd"><td><p>power(HO, float)</p></td>
+<td></td>
+<td><p>HO</p></td>
+</tr>
+<tr class="row-even"><td><p>radianToDegree (all)</p></td>
+<td><p>convert radian to degree</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-odd"><td><p>sin(all)</p></td>
+<td><p>sine</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-even"><td><p>sqrt(all)</p></td>
+<td><p>square root</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-odd"><td><p>tan(all)</p></td>
+<td><p>tangent</p></td>
+<td><p>all</p></td>
+</tr>
+<tr class="row-even"><td><p>complexMagnitude(FO)</p></td>
+<td><p>magnitude of the complex field output</p></td>
+<td><p>FO</p></td>
+</tr>
+<tr class="row-odd"><td><p>complexPhase(FO)</p></td>
+<td><p>phase of the complex field output</p></td>
+<td><p>FO</p></td>
+</tr>
+<tr class="row-even"><td><p>complexReal(FO)</p></td>
+<td><p>real part of the complex field output</p></td>
+<td><p>FO</p></td>
+</tr>
+<tr class="row-odd"><td><p>complexImag(FO)</p></td>
+<td><p>imaginary part of the complex field output</p></td>
+<td><p>FO</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="envelope-calculations">
+<h2>Envelope calculations<a class="headerlink" href="#envelope-calculations" title="Permalink to this heading">#</a></h2>
+<p>You use envelope calculations to retrieve the extreme value for an output variable over a number of fields. Envelope calculations are especially useful for retrieving the extreme values over a number of load cases.</p>
+<p>The following operators consider a list of fields and perform the envelope calculation:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="n">maxEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">);</span><span class="w"></span>
+<span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="n">minEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="n">maxEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">odb_InvariantEnum</span><span class="w"> </span><span class="n">invariant</span><span class="p">);</span><span class="w"></span>
+<span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="n">minEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">odb_Enum</span><span class="o">::</span><span class="n">odb_InvariantEnum</span><span class="w"> </span><span class="n">invariant</span><span class="p">);</span><span class="w"></span>
+
+<span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="n">maxEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_String</span><span class="o">&amp;</span><span class="w"> </span><span class="n">componentLabel</span><span class="p">);</span><span class="w"></span>
+<span class="n">odb_SequenceFieldOutput</span><span class="w"> </span><span class="n">flds</span><span class="w"> </span><span class="o">=</span><span class="w"></span>
+<span class="w">    </span><span class="n">minEnvelope</span><span class="p">(</span><span class="n">odb_SequenceFieldOutput</span><span class="o">&amp;</span><span class="w"> </span><span class="n">fields</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">odb_String</span><span class="o">&amp;</span><span class="w"> </span><span class="n">componentLabel</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+<p>The envelope commands return two FieldOutput objects.</p>
+<ul class="simple">
+<li><p>The first object contains the requested extreme values.</p></li>
+<li><p>The second object contains the indices of the fields for which the extreme values were found. The indices derive from the order in which you supplied the fields to the command.</p></li>
+</ul>
+<p>The optional <strong>invariant</strong> argument is a Symbolic Constant specifying the invariant to be used when comparing vectors or tensors. The optional <strong>componentLabel</strong> argument is a odb_String specifying the component of the vector or tensor to be used for selecting the extreme value.</p>
+<p>The following rules apply to envelope calculations:</p>
+<ul class="simple">
+<li><p>Abaqus compares the values using scalar data. If you are looking for the extreme value of a vector or a tensor, you must supply an invariant or a component label for the selection of the extreme value. For example, for vectors you can supply the MAGNITUDE invariant and for tensors you can supply the MISES invariant.</p></li>
+<li><p>The fields being compared must be similar. For example,</p>
+<ul>
+<li><p>VECTOR and TENSOR_3D_FULL fields cannot appear in the same list.</p></li>
+<li><p>The output region of all the fields must be the same. All the fields must apply to the whole model, or all the fields must apply to the same set.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="transformation-of-results">
+<h2>Transformation of results<a class="headerlink" href="#transformation-of-results" title="Permalink to this heading">#</a></h2>
+<p>Transformations of vector and tensor fields are supported for rectangular, cylindrical, and spherical coordinate systems. The coordinate systems can be fixed or model based. Model-based coordinate systems refer to nodes for position and orientation. Abaqus uses the coordinates of the deformed state to determine a systems origin and orientation for model-based coordinate systems. Transformations that use a model-based coordinate system can account for large displacements of both the coordinate system and the structure.</p>
+<p>The steps required to transform results are (see also the example <a class="reference internal" href="../python/examples.html#transformation-of-field-results"><span class="std std-ref">Transformation of field results</span></a>):</p>
+<ul class="simple">
+<li><p>Create the coordinate system.</p></li>
+<li><p>Retrieve the field from the database.</p></li>
+<li><p>Use the <cite>fieldOutput.getTransformedField</cite> method to obtain a new field with the results in the specified coordinate system.</p></li>
+<li><p>For large displacement of the structure and coordinate system, you must also retrieve the displacement field at the frame. You must compute this displacement field for the whole model to ensure that the required displacement information is available.</p></li>
+</ul>
+<p>The following rules apply to the transformation of results:</p>
+<ul>
+<li><p>Beams, truss, and axisymmetric shell element results will not be transformed.</p></li>
+<li><p>The component directions 1, 2, and 3 of the transformed results will correspond to the system directions <strong>X</strong>, <strong>Y</strong>, and <strong>Z</strong> for rectangular coordinate systems; <span class="math notranslate nohighlight">\(R\)</span>, <span class="math notranslate nohighlight">\(\theta\)</span>, and <strong>Z</strong> for cylindrical coordinate systems; and <span class="math notranslate nohighlight">\(R\)</span>, <span class="math notranslate nohighlight">\(\theta\)</span>, and <span class="math notranslate nohighlight">\(\phi\)</span> for spherical coordinate systems.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Stress results for three-dimensional continuum elements transformed into a cylindrical system would have the hoop stress in S22, which is consistent with the coordinate system axis but inconsistent with the stress state for a three-dimensional axisymmetric elements having hoop stress in S33.</p>
+</div>
+</li>
+<li><p>When you are transforming a tensor, the location or integration point always takes into account the deformation. The location of the coordinate system depends on the model, as follows:</p>
+<ul class="simple">
+<li><p>If the system is fixed, the coordinate system is fixed.</p></li>
+<li><p>If the system is model based, you must supply a displacement field that determines the instantaneous location and orientation of the coordinate system.</p></li>
+</ul>
+</li>
+<li><p>Abaqus will perform transformations of tensor results for shells, membranes, and planar elements as rotations of results about the element normal at the element result location. The element normal is the normal computed for the frame associated with the field by Abaqus, and you cannot redefine the normal. Abaqus defines the location of the results location from the nodal locations. You specify optional arguments if you want to use the deformed nodal locations to transform results. For rectangular, cylindrical, and spherical coordinate systems the second component direction for the transformed results will be determined by one of the following:</p>
+<ul class="simple">
+<li><p>The <strong>Y</strong> - axis in a rectangular coordinate system.</p></li>
+<li><p>The <span class="math notranslate nohighlight">\(\theta\)</span>-axis in a cylindrical coordinate system.</p></li>
+<li><p>The <span class="math notranslate nohighlight">\(\theta\)</span>-axis in a spherical coordinate system.</p></li>
+<li><p>A user-specified datum axis projected onto the element plane.</p></li>
+</ul>
+<p>If the coordinate system used for projection and the element normal have an angle less than the specified tolerance (the default is 30°), Abaqus will use the next axis and generate a warning.</p>
+</li>
+</ul>
+</section>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="exceptions.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Exception handling in an output database</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="improve-efficiency.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Improving the efficiency of your scripts</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rules-for-the-mathematical-operations">
+   Rules for the mathematical operations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#valid-mathematical-operations">
+   Valid mathematical operations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#envelope-calculations">
+   Envelope calculations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#transformation-of-results">
+   Transformation of results
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../../_sources/user/output/cpp/computations.rst.txt">
+        <i class="fas fa-file-alt"></i> Show Source
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
