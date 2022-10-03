@@ -2,7 +2,6 @@ name: Update docs
 on:
   push:
     branches:
-    - 'main'
     - 'V20**'
     paths:
     - 'src/**'
@@ -11,6 +10,7 @@ on:
     
 jobs:
   build:
+    if: ${{ github.ref_name != 'main' }}
     runs-on: ubuntu-latest
     concurrency: docs-${{ github.ref }}
     strategy:
