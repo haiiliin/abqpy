@@ -14,12 +14,12 @@ Abaqus/Python 脚本的类型提示
 它还提供了一些简单的 API 来执行 Abaqus 命令，以便您可以运行 Python 脚本来创建模型、
 提交作业并提取输出数据，即使不打开 Abaqus/CAE。
 
-- 主页: [abqpy.com](https://abqpy.com)
-- GitHub 仓库: [github.com/haiiliin/abqpy](https://github.com/haiiliin/abqpy)
-- PyPI: [pypi.org/project/abqpy](https://pypi.org/project/abqpy/)
-- Anaconda: [anaconda.org/haiiliin/abqpy](https://anaconda.org/haiiliin/abqpy)
-- Read the Docs: [readthedocs.org/projects/abqpy](https://readthedocs.org/projects/abqpy/)
-- 中文文档: [docs.abqpy.com/zh_CN/latest](https://docs.abqpy.com/zh_CN/latest/)
+- 主页: https://abqpy.com
+- GitHub 仓库: https://github.com/haiiliin/abqpy
+- PyPI: https://pypi.org/project/abqpy
+- Anaconda: https://anaconda.org/haiiliin/abqpy
+- Read the Docs: https://readthedocs.org/projects/abqpy
+- 中文文档: https://docs.abqpy.com/zh_CN/latest
 
 ## 欢迎拉取合并请求
 
