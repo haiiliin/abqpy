@@ -23,6 +23,7 @@ Python script, even without opening the Abaqus/CAE.
 - Anaconda: https://anaconda.org/haiiliin/abqpy
 - Read the Docs: https://readthedocs.org/projects/abqpy
 - Documentation: https://docs.abqpy.com/en/latest
+- Bug report: https://github.com/haiiliin/abqpy/issues
 
 ## Pull Requests are Welcome
 

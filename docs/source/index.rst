@@ -26,11 +26,12 @@ Python script, even without opening the Abaqus/CAE.
 Other links for this project
 ----------------------------
 
-* Homepage: https://abqpy.com
+* Websitte: https://abqpy.com
 * GitHub repository: https://github.com/haiiliin/abqpy
 * PyPI: https://pypi.org/project/abqpy
 * Anaconda: https://anaconda.org/haiiliin/abqpy
 * Read the Docs: https://readthedocs.org/projects/abqpy
+* Bug report: https://github.com/haiiliin/abqpy/issues
 
 
 Documentation
