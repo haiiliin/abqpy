@@ -1,0 +1,38 @@
+name: Update docs
+on:
+  push:
+    branches:
+    - 'main'
+    - 'V20**'
+    paths:
+    - 'src/**'
+    - 'docs/source/**'
+  workflow_dispatch:
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        language: ['en', 'zh_CN']
+    steps:
+    - uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+    - uses: actions/checkout@v3
+    - name: build documentation
+      run: |
+        pip install .
+        pip install -r docs/requirements.txt
+        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html
+    - run: touch docs/build/${{ matrix.language }}/html/.nojekyll
+    - uses: cpina/github-action-push-to-another-repository@main
+      env:
+        SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+      with:
+        source-directory: "docs/build/${{ matrix.language }}/html"
+        destination-github-username: 'haiiliin'
+        destination-repository-name: 'docs.abqpy.com'
+        user-email: hailin.wang@connect.polyu.hk
+        target-branch: main
+        target-directory: ${{ matrix.language }}/${{ github.ref_name }}
