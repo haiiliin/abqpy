@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        language: ['en', 'zh_CN']
+        language: ['en']
     env:
       SPHINXOPTS: "-D language='${{ matrix.language }}'"
     steps:
