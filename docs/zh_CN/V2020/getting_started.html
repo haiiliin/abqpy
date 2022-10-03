@@ -1,0 +1,576 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.18.1: http://docutils.sourceforge.net/" name="generator"/>
+<title>入门指南 — abqpy 2020 文档</title>
+<script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+<!-- Loaded before other Sphinx assets -->
+<link href="_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet"/>
+<link href="_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet"/>
+<link href="_static/vendor/fontawesome/6.1.2/css/all.min.css" rel="stylesheet"/>
+<link as="font" crossorigin="" href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<link href="_static/pygments.css" rel="stylesheet" type="text/css">
+<link href="_static/copybutton.css" rel="stylesheet" type="text/css">
+<link href="_static/sphinx-codeautolink.css" rel="stylesheet" type="text/css">
+<link href="_static/autoclasstoc.css" rel="stylesheet" type="text/css">
+<!-- Pre-loaded scripts that we'll load fully later -->
+<link as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b" rel="preload"/>
+<script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+<script src="_static/jquery.js"></script>
+<script src="_static/underscore.js"></script>
+<script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="_static/doctools.js"></script>
+<script src="_static/sphinx_highlight.js"></script>
+<script src="_static/clipboard.min.js"></script>
+<script src="_static/copybutton.js"></script>
+<script src="_static/translations.js"></script>
+<script>DOCUMENTATION_OPTIONS.pagename = 'getting_started';</script>
+<script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2020';
+        </script>
+<link href="genindex.html" rel="index" title="索引">
+<link href="search.html" rel="search" title="搜索">
+<link href="tutorials.html" rel="next" title="Tutorials"/>
+<link href="index.html" rel="prev" title="abqpy 文档"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="zh-CN" name="docsearch:language"/>
+</link></link></link></link></link></link></head>
+<body data-default-mode="" data-offset="180" data-spy="scroll" data-target="#bd-toc-nav">
+<input class="sidebar-toggle" id="__primary" name="__primary" type="checkbox"/>
+<label class="overlay overlay-primary" for="__primary"></label>
+<input class="sidebar-toggle" id="__secondary" name="__secondary" type="checkbox"/>
+<label class="overlay overlay-secondary" for="__secondary"></label>
+<div class="search-button__wrapper">
+<div class="search-button__overlay"></div>
+<div class="search-button__search-container">
+<form action="search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="icon fas fa-search"></i>
+<input aria-label="Search the docs ..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search the docs ..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+</div>
+</div>
+<nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+<label class="sidebar-toggle primary-toggle" for="__primary">
+<span class="fas fa-bars"></span>
+</label>
+<div id="navbar-start">
+<a class="navbar-brand logo" href="index.html">
+<p class="title logo__title">abqpy 2020 文档</p>
+</a>
+</div>
+<div class="col-lg-9 navbar-header-items">
+<div class="mr-auto" id="navbar-center">
+<div class="navbar-center-item">
+<nav class="navbar-nav">
+<p aria-label="Site Navigation" aria-level="1" class="sidebar-header-items__title" role="heading">
+        Site Navigation
+    </p>
+<ul class="navbar-nav" id="navbar-main-elements">
+<li class="nav-item current active">
+<a class="nav-link" href="#">
+                        入门指南
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="tutorials.html">
+                        Tutorials
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="templates.html">
+                        Templates
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="user.html">
+                        User’s Guide
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="summary.html">
+                        API Summary
+                    </a>
+</li>
+<div class="nav-item dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle nav-item" data-toggle="dropdown" type="button">
+                    More
+                </button>
+<div class="dropdown-menu">
+<li class="nav-item">
+<a class="nav-link" href="references.html">
+                        API Reference
+                    </a>
+</li>
+</div>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+<div id="navbar-end">
+<div class="navbar-end-item navbar-end__search-button-container">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+<i class="fas fa-search"></i>
+</button>
+</div>
+<div class="navbar-end-item">
+<div class="version-switcher__container dropdown">
+<button class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown" type="button">
+        v2020  <!-- this text may get changed later by javascript -->
+<span class="caret"></span>
+</button>
+<div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+<!-- dropdown will be populated by javascript on page load -->
+</div>
+</div>
+</div>
+<div class="navbar-end-item">
+<span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+<a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+<a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+<a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+</div>
+<div class="navbar-end-item">
+<ul aria-label="Icon Links" class="navbar-nav" id="navbar-icon-links">
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/haiiliin/abqpy" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+<label class="sr-only">GitHub</label></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://pypi.org/project/abqpy" rel="noopener" target="_blank" title="PyPI"><img alt="PyPI" class="icon-link-image" src="_static/PyPI_logo.svg"/></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://anaconda.org/haiiliin/abqpy" rel="noopener" target="_blank" title="Anaconda"><img alt="Anaconda" class="icon-link-image" src="_static/anaconda.svg"/></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://readthedocs.org/projects/abqpy/" rel="noopener" target="_blank" title="Read the Docs"><img alt="Read the Docs" class="icon-link-image" src="_static/rtd-logo-dark.svg"/></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+<i class="fas fa-search"></i>
+</button>
+</div>
+<label class="sidebar-toggle secondary-toggle" for="__secondary">
+<span class="fas fa-outdent"></span>
+</label>
+</div>
+</nav>
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+<div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+<div class="sidebar-header-items sidebar-primary__section">
+<div class="sidebar-header-items__center">
+<div class="navbar-center-item">
+<nav class="navbar-nav">
+<p aria-label="Site Navigation" aria-level="1" class="sidebar-header-items__title" role="heading">
+        Site Navigation
+    </p>
+<ul class="navbar-nav" id="navbar-main-elements">
+<li class="nav-item current active">
+<a class="nav-link" href="#">
+                        入门指南
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="tutorials.html">
+                        Tutorials
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="templates.html">
+                        Templates
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="user.html">
+                        User’s Guide
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="summary.html">
+                        API Summary
+                    </a>
+</li>
+<div class="nav-item dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle nav-item" data-toggle="dropdown" type="button">
+                    More
+                </button>
+<div class="dropdown-menu">
+<li class="nav-item">
+<a class="nav-link" href="references.html">
+                        API Reference
+                    </a>
+</li>
+</div>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+<div class="sidebar-header-items__end">
+<div class="navbar-end-item">
+<div class="version-switcher__container dropdown">
+<button class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown" type="button">
+        v2020  <!-- this text may get changed later by javascript -->
+<span class="caret"></span>
+</button>
+<div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+<!-- dropdown will be populated by javascript on page load -->
+</div>
+</div>
+</div>
+<div class="navbar-end-item">
+<span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+<a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+<a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+<a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+</div>
+<div class="navbar-end-item">
+<ul aria-label="Icon Links" class="navbar-nav" id="navbar-icon-links">
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/haiiliin/abqpy" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+<label class="sr-only">GitHub</label></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://pypi.org/project/abqpy" rel="noopener" target="_blank" title="PyPI"><img alt="PyPI" class="icon-link-image" src="_static/PyPI_logo.svg"/></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://anaconda.org/haiiliin/abqpy" rel="noopener" target="_blank" title="Anaconda"><img alt="Anaconda" class="icon-link-image" src="_static/anaconda.svg"/></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://readthedocs.org/projects/abqpy/" rel="noopener" target="_blank" title="Read the Docs"><img alt="Read the Docs" class="icon-link-image" src="_static/rtd-logo-dark.svg"/></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sidebar-end-items sidebar-primary__section">
+<div class="sidebar-end-items__item">
+</div>
+</div>
+</div>
+<main class="bd-main">
+<div class="bd-content">
+<div class="bd-article-container">
+<div class="bd-header-article">
+</div>
+<article class="bd-article" role="main">
+<section id="getting-started">
+<h1>入门指南<a class="headerlink" href="#getting-started" title="此标题的永久链接">#</a></h1>
+<section id="introduction">
+<h2>简介<a class="headerlink" href="#introduction" title="此标题的永久链接">#</a></h2>
+<p><cite>abqpy</cite> 是一个 Python 包，提供了一些类型提示，用于快速编写你的 Abaqus/Python 脚本，即便不打开 Abaqus/CAE。它还提供了一些简单的API用于调用 Abaqus 命令执行你的 Python 脚本，以便使用 Python 脚本快速构建 Abaqus 模型，并提交作业给 Abaqus 进行计算，并从计算结果中提取数据。</p>
+<section id="two-python-interpreters">
+<h3>两个 Python 解释器<a class="headerlink" href="#two-python-interpreters" title="此标题的永久链接">#</a></h3>
+<p>在我们进一步讨论之前，我们有必要了解两个 Python 解释器。</p>
+<p>当我们使用 Abaqus/CAE 图形用户界面（GUI）创建模型并可视化结果时，命令由 Abaqus/CAE 在每次操作后在内部发出。这些命令反映您创建的几何图形以及从每个对话框中选择的选项和设置。GUI 使用名为 Python 的面向对象编程语言生成命令。GUI 发出的命令将发送到 Abaqus/CAE 内核。内核解释命令，并使用选项和设置来创建模型的内部表示。内核是 Abaqus/CAE 背后的大脑。GUI 是用户和内核之间的接口。</p>
+<p>总之，Abaqus 使用 Python 语言与 Abaqus 内核进行交互，所有可以在 Abaqus/CAE 中 完成的事情，也可以使用 Python 脚本完成。Abaqus  已经安装了一个 Python 解释器，以便Abaqus/CAE可以使用它与 Abaqus 内核进行交互。</p>
+<p>由于某些原因，我们不能直接使用 Abaqus 内部的 Python 解释器来构建 Abaqus 模型。但幸运的是，我们可以使用 Abaqus 提供的命令来访问它。即：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus cae
+    <span class="o">[</span><span class="nv">database</span><span class="o">=</span>database-file<span class="o">]</span>
+    <span class="o">[</span><span class="nv">replay</span><span class="o">=</span>replay-file<span class="o">]</span>
+    <span class="o">[</span><span class="nv">recover</span><span class="o">=</span>journal-file<span class="o">]</span>
+    <span class="o">[</span><span class="nv">startup</span><span class="o">=</span>startup-file<span class="o">]</span>
+    <span class="o">[</span><span class="nv">script</span><span class="o">=</span>script-file<span class="o">]</span>
+    <span class="o">[</span><span class="nv">noGUI</span><span class="o">=</span>noGUI-file<span class="o">]</span>
+    <span class="o">[</span>noenvstartup<span class="o">]</span>
+    <span class="o">[</span>noSavedOptions<span class="o">]</span>
+    <span class="o">[</span>noSavedGuiPrefs<span class="o">]</span>
+    <span class="o">[</span>noStartupDialog<span class="o">]</span>
+    <span class="o">[</span><span class="nv">custom</span><span class="o">=</span>script-file<span class="o">]</span>
+    <span class="o">[</span><span class="nv">guiTester</span><span class="o">=</span>GUI-script<span class="o">]</span>
+    <span class="o">[</span>guiRecord<span class="o">]</span>
+    <span class="o">[</span>guiNoRecord<span class="o">]</span>
+</pre></div>
+</div>
+<p>通常，我们可以使用 noGUI-file 或 script-file 选项在 Abaqu 中执行我们的 Python 脚本。</p>
+<p>另一个 Python 解释器是我们自己安装的 Python 解释器，其中安装了 <cite>abqpy</cite>。<cite>abqpy</cite> 提供了一个将我们的 Python 脚本连接到 Abaqus Python 解释器的桥梁，它为 Abaqus 的 Python 脚本提供了类型提示，使我们能够快速编写 Abaqus Python 脚本。</p>
+</section>
+</section>
+<section id="how-does-this-package-work">
+<h2>这个包是如何工作的？<a class="headerlink" href="#how-does-this-package-work" title="此标题的永久链接">#</a></h2>
+<p><cite>abqpy</cite> 只是一个为 Abaqus/Python 脚本提供类型提示的包，它安装在 Abaqus/Python 环境之外，你可以使用 <cite>abqpy</cite> 来编写你的 Abaqus/Python 脚本，并自己在 Abaqus 里面运行脚本。但是，在 Abaqus 命令的帮助下，可以实现一种更简单的方法：<strong>您实际上可以使用自己的 Python 解释器运行脚本而无需打开 Abaqus</strong>，这是通过 <strong>abaqus</strong> 命令实现的，如下所示：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus cae <span class="nv">noGUI</span><span class="o">=</span>script.py
+</pre></div>
+</div>
+<p>The secret is hided in the <code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code> function:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run</span><span class="p">():</span>
+    <span class="n">abaqus</span> <span class="o">=</span> <span class="s1">'abaqus'</span>
+    <span class="k">if</span> <span class="s1">'ABAQUS_BAT_PATH'</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">abaqus</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">'ABAQUS_BAT_PATH'</span><span class="p">]</span>
+
+    <span class="n">filePath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">__main__</span><span class="o">.</span><span class="vm">__file__</span><span class="p">)</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+
+    <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">abaqus</span><span class="si">}</span><span class="s2"> cae noGUI=</span><span class="si">{</span><span class="n">filePath</span><span class="si">}</span><span class="s2"> -- </span><span class="si">{</span><span class="n">args</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In this package, the <code class="xref py py-mod docutils literal notranslate"><span class="pre">abaqus</span></code> module is reimplemented to automatically call this function. If you import this module in the top of your
+script (i.e., <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">abaqus</span> <span class="pre">import</span> <span class="pre">*</span></code>), your Python interpreter (not Abaqus Python interpreter) will call this function and use the
+<strong>abaqus</strong> command to submit the script to Abaqus. After it is submitted to Abaqus, <code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code>
+will exit the interpreter, because the script will already run in Abaqus Python interpreter.</p>
+<p>In the output script, we might not want to always use the <code class="xref py py-mod docutils literal notranslate"><span class="pre">abaqus</span></code> module, which needs the Abaqus/CAE kernel (and its license),
+but instead the module <code class="xref py py-mod docutils literal notranslate"><span class="pre">odbAccess</span></code> (i.e., <code class="docutils literal notranslate"><span class="pre">from</span> <span class="pre">odbAccess</span> <span class="pre">import</span> <span class="pre">*</span></code>), which requires only the Abaqus Python interpreter.
+Then another similar <strong>abaqus</strong> command line is needed:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus python script.py
+</pre></div>
+</div>
+<p>So, <code class="xref py py-mod docutils literal notranslate"><span class="pre">odbAccess</span></code> is also reimplemented to call the <code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code> function, and the actual implementation of this function is similar to:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="n">cae</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
+    <span class="n">abaqus</span> <span class="o">=</span> <span class="s1">'abaqus'</span>
+    <span class="k">if</span> <span class="s1">'ABAQUS_BAT_PATH'</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="n">abaqus</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">'ABAQUS_BAT_PATH'</span><span class="p">]</span>
+
+    <span class="n">filePath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">__main__</span><span class="o">.</span><span class="vm">__file__</span><span class="p">)</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="s2">" "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+
+    <span class="k">if</span> <span class="n">cae</span><span class="p">:</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">abaqus</span><span class="si">}</span><span class="s2"> cae noGUI=</span><span class="si">{</span><span class="n">filePath</span><span class="si">}</span><span class="s2"> -- </span><span class="si">{</span><span class="n">args</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">os</span><span class="o">.</span><span class="n">system</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">abaqus</span><span class="si">}</span><span class="s2"> python </span><span class="si">{</span><span class="n">filePath</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">args</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In summary: this function will be called when you import one of the two modules (<code class="xref py py-mod docutils literal notranslate"><span class="pre">abaqus</span></code> or <code class="xref py py-mod docutils literal notranslate"><span class="pre">odbAccess</span></code>). It will pass the argument <code class="docutils literal notranslate"><span class="pre">cae</span> <span class="pre">=</span> <span class="pre">True</span></code>
+in <code class="xref py py-mod docutils literal notranslate"><span class="pre">abaqus</span></code> module and <code class="docutils literal notranslate"><span class="pre">cae</span> <span class="pre">=</span> <span class="pre">False</span></code> in <code class="xref py py-mod docutils literal notranslate"><span class="pre">odbAccess</span></code> module.
+Therefore, if you want to run your Python script in Abaqus Python environment, please make sure to import one of these modules
+on the top of your script.</p>
+</section>
+<section id="installation">
+<h2>安装<a class="headerlink" href="#installation" title="此标题的永久链接">#</a></h2>
+<p><cite>abqpy</cite> 支持 Python 3.7 或更高版本。如果您使用的是 Python 3.6 或更早版本，请升级到 Python 3.7 或更高版本。</p>
+<p><cite>abqpy</cite> is uploaded to <a class="reference external" href="https://pypi.org/project/abqpy">PyPI</a>, you can simply install
+it using pip:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install abqpy
+</pre></div>
+</div>
+<p><cite>abqpy</cite> 也被上传到 <a class="reference external" href="https://anaconda.org/haiiliin/abqpy">anaconda</a>，你可以使用`conda`来安装它：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda install -c haiiliin abqpy
+</pre></div>
+</div>
+<p>您可以通过克隆 <a class="reference external" href="https://github.com/haiiliin/abqpy">GitHub仓库</a> 来安装最新的开发版本，并使用 <cite>python</cite> 从本地目录进行安装：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/haiiliin/abqpy.git
+<span class="nb">cd</span> abqpy
+pip install -r requirements.txt
+python setup.py install
+</pre></div>
+</div>
+<section id="optional-requirements">
+<h3>Optional Requirements<a class="headerlink" href="#optional-requirements" title="此标题的永久链接">#</a></h3>
+<p>If you want to use the Jupyter notebook to write your Abaqus/Python scripts, you need to install
+<cite>ipynbname</cite>:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install ipynbname
+</pre></div>
+</div>
+</section>
+</section>
+<section id="install-a-specific-version">
+<h2>安装特定版本<a class="headerlink" href="#install-a-specific-version" title="此标题的永久链接">#</a></h2>
+<p>您可以在安装 <cite>abqpy</cite> 时指定版本号，例如：</p>
+<p>Using <cite>pip</cite>:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install <span class="nv">abqpy</span><span class="o">==</span><span class="m">2020</span>.3.6
+</pre></div>
+</div>
+<p>Using <cite>conda</cite>:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>conda install -c haiiliin <span class="nv">abqpy</span><span class="o">=</span><span class="m">2020</span>.3.6
+</pre></div>
+</div>
+<p>更好的方法是使用 * 来匹配特定版本：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install <span class="nv">abqpy</span><span class="o">==</span><span class="m">2020</span>.*
+</pre></div>
+</div>
+<section id="write-your-abaqus-python-script">
+<h3>Write your Abaqus/Python script<a class="headerlink" href="#write-your-abaqus-python-script" title="此标题的永久链接">#</a></h3>
+<p>After installing the <cite>abqpy</cite> package, you can start writing your own Abaqus/Python script
+to build your model. You can refer
+<a class="reference external" href="https://github.com/haiiliin/abqpy/tree/main/examples">abqpy/examples at main · haiiliin/abqpy</a>
+for some tests of the script, for more detailed documentation, please check
+<a class="reference external" href="https://haiiliin.com/abqpy/">abqpy documentation</a>.</p>
+</section>
+<section id="setup-your-abaqus-environment">
+<h3>Setup your Abaqus Environment<a class="headerlink" href="#setup-your-abaqus-environment" title="此标题的永久链接">#</a></h3>
+<p>In order to use Abaqus command to execute the Python script and submit the job, you need to tell
+<cite>abqpy</cite> where the Abaqus command is located. Usually, Abaqus command locates in a directory like this:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>C:/SIMULIA/Commands/abaqus.bat
+</pre></div>
+</div>
+<p>您可以将目录 <cite>C/SIMULIA/Commands</cite> 添加到系统环境变量 <cite>Path</cite> 中，也可以创建一个名为 <cite>ABAQUS_BAT_PATH</cite> 的新系统变量，并将值设置为 Abaqus 命令的文件路径，即 <cite>C:/SIMULIA/Commands/abaqus.bat</cite>。</p>
+</section>
+</section>
+<section id="abaqus-command">
+<h2>Abaqus 命令<a class="headerlink" href="#abaqus-command" title="此标题的永久链接">#</a></h2>
+<p>为了使用 Abaqus 命令执行 Python 脚本并提交作业，您需要告诉 <cite>abqpy</cite> Abaqus 命令所在的位置。通常，Abaqus 命令位于如下目录中：</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>C:/SIMULIA/Commands/abaqus.bat
+</pre></div>
+</div>
+<p>您可以将目录 <cite>C/SIMULIA/Commands</cite> 添加到系统环境变量 <cite>Path</cite> 中，也可以创建一个名为 <cite>ABAQUS_BAT_PATH</cite> 的新系统变量，并将值设置为 Abaqus 命令的文件路径，即 <cite>C:/SIMULIA/Commands/abaqus.bat</cite>。</p>
+<section id="run-your-abaqus-python-script">
+<h3>Run your Abaqus/Python script<a class="headerlink" href="#run-your-abaqus-python-script" title="此标题的永久链接">#</a></h3>
+<p>Now you can just run your Abaqus/Python script using your own Python interpreter that <cite>abqpy</cite> is installed.</p>
+<ul class="simple">
+<li><p>Create an Abaqus Model</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/model-code.png"><img alt="Create an Abaqus Model" class="align-center" src="_images/model-code.png" style="width: 100%;"/></a>
+<ul class="simple">
+<li><p>Extract Output Data</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/output-code.png"><img alt="Extract Output Data" class="align-center" src="_images/output-code.png" style="width: 100%;"/></a>
+</section>
+</section>
+<section id="what-next">
+<h2>What next?<a class="headerlink" href="#what-next" title="此标题的永久链接">#</a></h2>
+<p>You may wonder how does this package work,
+you can go <a class="reference internal" href="#"><span class="doc">入门指南</span></a> for more detailed introduction and go
+<a class="reference internal" href="tutorials.html"><span class="doc">Tutorials</span></a> for a simple tutorial. For more documentation about
+Abaqus/Python scripting, please check <a class="reference internal" href="summary.html"><span class="doc">API Summary</span></a> for a list of
+descriptions of objects and methods of Abaqus models, check <a class="reference internal" href="references.html"><span class="doc">API Reference</span></a>
+for more detailed API references.</p>
+</section>
+</section>
+</article>
+<footer class="bd-footer-article">
+<!-- Previous / next buttons -->
+<div class="prev-next-area">
+<a class="left-prev" href="index.html" id="prev-link" title="上一页 页">
+<i class="fas fa-angle-left"></i>
+<div class="prev-next-info">
+<p class="prev-next-subtitle">上一页</p>
+<p class="prev-next-title">abqpy 文档</p>
+</div>
+</a>
+<a class="right-next" href="tutorials.html" id="next-link" title="下一页 页">
+<div class="prev-next-info">
+<p class="prev-next-subtitle">下一页</p>
+<p class="prev-next-title">Tutorials</p>
+</div>
+<i class="fas fa-angle-right"></i>
+</a>
+</div>
+</footer>
+</div>
+<div class="bd-sidebar-secondary bd-toc">
+<div class="toc-item">
+<div class="tocsection onthispage">
+<i class="fas fa-list"></i> On this page
+</div>
+<nav class="page-toc" id="bd-toc-nav">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#introduction">
+   简介
+  </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#two-python-interpreters">
+     两个 Python 解释器
+    </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#how-does-this-package-work">
+   这个包是如何工作的？
+  </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#installation">
+   安装
+  </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#optional-requirements">
+     Optional Requirements
+    </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#install-a-specific-version">
+   安装特定版本
+  </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#write-your-abaqus-python-script">
+     Write your Abaqus/Python script
+    </a>
+</li>
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#setup-your-abaqus-environment">
+     Setup your Abaqus Environment
+    </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#abaqus-command">
+   Abaqus 命令
+  </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#run-your-abaqus-python-script">
+     Run your Abaqus/Python script
+    </a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#what-next">
+   What next?
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+<div class="toc-item">
+</div>
+<div class="toc-item">
+<div class="tocsection sourcelink">
+<a href="_sources/getting_started.rst.txt">
+<i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+</div>
+</div>
+</div>
+<footer class="bd-footer-content">
+<div class="bd-footer-content__inner">
+</div>
+</footer>
+</main>
+</div>
+</div>
+<!-- Scripts loaded after <body> so the DOM is not blocked -->
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+<footer class="bd-footer"><div class="bd-footer__inner container">
+<div class="footer-item">
+<p class="copyright">
+
+    © Copyright 2022, WANG Hailin.<br/>
+</p>
+</div>
+<div class="footer-item">
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br/>
+</p>
+</div>
+</div>
+</footer>
+</body>
+</html>

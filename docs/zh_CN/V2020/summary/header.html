@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.18.1: http://docutils.sourceforge.net/" name="generator"/>
+<title>Header of the Python script — abqpy 2020 文档</title>
+<script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+<!-- Loaded before other Sphinx assets -->
+<link href="../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet"/>
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet"/>
+<link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css" rel="stylesheet"/>
+<link as="font" crossorigin="" href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css">
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css">
+<link href="../_static/sphinx-codeautolink.css" rel="stylesheet" type="text/css">
+<link href="../_static/autoclasstoc.css" rel="stylesheet" type="text/css">
+<!-- Pre-loaded scripts that we'll load fully later -->
+<link as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b" rel="preload"/>
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/jquery.js"></script>
+<script src="../_static/underscore.js"></script>
+<script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="../_static/doctools.js"></script>
+<script src="../_static/sphinx_highlight.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script src="../_static/translations.js"></script>
+<script>DOCUMENTATION_OPTIONS.pagename = 'summary/header';</script>
+<script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2020';
+        </script>
+<link href="../genindex.html" rel="index" title="索引">
+<link href="../search.html" rel="search" title="搜索">
+<link href="mdb.html" rel="next" title="Abaqus Model Database"/>
+<link href="../summary.html" rel="prev" title="API Summary"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="zh-CN" name="docsearch:language"/>
+</link></link></link></link></link></link></head>
+<body data-default-mode="" data-offset="180" data-spy="scroll" data-target="#bd-toc-nav">
+<input class="sidebar-toggle" id="__primary" name="__primary" type="checkbox"/>
+<label class="overlay overlay-primary" for="__primary"></label>
+<input class="sidebar-toggle" id="__secondary" name="__secondary" type="checkbox"/>
+<label class="overlay overlay-secondary" for="__secondary"></label>
+<div class="search-button__wrapper">
+<div class="search-button__overlay"></div>
+<div class="search-button__search-container">
+<form action="../search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="icon fas fa-search"></i>
+<input aria-label="Search the docs ..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search the docs ..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+</div>
+</div>
+<nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+<label class="sidebar-toggle primary-toggle" for="__primary">
+<span class="fas fa-bars"></span>
+</label>
+<div id="navbar-start">
+<a class="navbar-brand logo" href="../index.html">
+<p class="title logo__title">abqpy 2020 文档</p>
+</a>
+</div>
+<div class="col-lg-9 navbar-header-items">
+<div class="mr-auto" id="navbar-center">
+<div class="navbar-center-item">
+<nav class="navbar-nav">
+<p aria-label="Site Navigation" aria-level="1" class="sidebar-header-items__title" role="heading">
+        Site Navigation
+    </p>
+<ul class="navbar-nav" id="navbar-main-elements">
+<li class="nav-item">
+<a class="nav-link" href="../getting_started.html">
+                        入门指南
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../tutorials.html">
+                        Tutorials
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../templates.html">
+                        Templates
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../user.html">
+                        User’s Guide
+                    </a>
+</li>
+<li class="nav-item current active">
+<a class="nav-link" href="../summary.html">
+                        API Summary
+                    </a>
+</li>
+<div class="nav-item dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle nav-item" data-toggle="dropdown" type="button">
+                    More
+                </button>
+<div class="dropdown-menu">
+<li class="nav-item">
+<a class="nav-link" href="../references.html">
+                        API Reference
+                    </a>
+</li>
+</div>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+<div id="navbar-end">
+<div class="navbar-end-item navbar-end__search-button-container">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+<i class="fas fa-search"></i>
+</button>
+</div>
+<div class="navbar-end-item">
+<div class="version-switcher__container dropdown">
+<button class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown" type="button">
+        v2020  <!-- this text may get changed later by javascript -->
+<span class="caret"></span>
+</button>
+<div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+<!-- dropdown will be populated by javascript on page load -->
+</div>
+</div>
+</div>
+<div class="navbar-end-item">
+<span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+<a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+<a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+<a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+</div>
+<div class="navbar-end-item">
+<ul aria-label="Icon Links" class="navbar-nav" id="navbar-icon-links">
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/haiiliin/abqpy" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+<label class="sr-only">GitHub</label></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://pypi.org/project/abqpy" rel="noopener" target="_blank" title="PyPI"><img alt="PyPI" class="icon-link-image" src="../_static/PyPI_logo.svg"/></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://anaconda.org/haiiliin/abqpy" rel="noopener" target="_blank" title="Anaconda"><img alt="Anaconda" class="icon-link-image" src="../_static/anaconda.svg"/></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://readthedocs.org/projects/abqpy/" rel="noopener" target="_blank" title="Read the Docs"><img alt="Read the Docs" class="icon-link-image" src="../_static/rtd-logo-dark.svg"/></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+<i class="fas fa-search"></i>
+</button>
+</div>
+<label class="sidebar-toggle secondary-toggle" for="__secondary">
+<span class="fas fa-outdent"></span>
+</label>
+</div>
+</nav>
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+<div class="bd-sidebar-primary bd-sidebar">
+<div class="sidebar-header-items sidebar-primary__section">
+<div class="sidebar-header-items__center">
+<div class="navbar-center-item">
+<nav class="navbar-nav">
+<p aria-label="Site Navigation" aria-level="1" class="sidebar-header-items__title" role="heading">
+        Site Navigation
+    </p>
+<ul class="navbar-nav" id="navbar-main-elements">
+<li class="nav-item">
+<a class="nav-link" href="../getting_started.html">
+                        入门指南
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../tutorials.html">
+                        Tutorials
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../templates.html">
+                        Templates
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="../user.html">
+                        User’s Guide
+                    </a>
+</li>
+<li class="nav-item current active">
+<a class="nav-link" href="../summary.html">
+                        API Summary
+                    </a>
+</li>
+<div class="nav-item dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle nav-item" data-toggle="dropdown" type="button">
+                    More
+                </button>
+<div class="dropdown-menu">
+<li class="nav-item">
+<a class="nav-link" href="../references.html">
+                        API Reference
+                    </a>
+</li>
+</div>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+<div class="sidebar-header-items__end">
+<div class="navbar-end-item">
+<div class="version-switcher__container dropdown">
+<button class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown" type="button">
+        v2020  <!-- this text may get changed later by javascript -->
+<span class="caret"></span>
+</button>
+<div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+<!-- dropdown will be populated by javascript on page load -->
+</div>
+</div>
+</div>
+<div class="navbar-end-item">
+<span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+<a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+<a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+<a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+</div>
+<div class="navbar-end-item">
+<ul aria-label="Icon Links" class="navbar-nav" id="navbar-icon-links">
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/haiiliin/abqpy" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+<label class="sr-only">GitHub</label></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://pypi.org/project/abqpy" rel="noopener" target="_blank" title="PyPI"><img alt="PyPI" class="icon-link-image" src="../_static/PyPI_logo.svg"/></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://anaconda.org/haiiliin/abqpy" rel="noopener" target="_blank" title="Anaconda"><img alt="Anaconda" class="icon-link-image" src="../_static/anaconda.svg"/></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://readthedocs.org/projects/abqpy/" rel="noopener" target="_blank" title="Read the Docs"><img alt="Read the Docs" class="icon-link-image" src="../_static/rtd-logo-dark.svg"/></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sidebar-start-items sidebar-primary__section">
+<div class="sidebar-start-items__item"><nav aria-label="Section navigation" class="bd-links" id="bd-docs-nav">
+<p aria-level="1" class="bd-links__title" role="heading">
+    Section Navigation
+  </p>
+<div class="bd-toc-item navbar-nav">
+<p aria-level="2" class="caption" role="heading">
+<span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active">
+<a class="current reference internal" href="#">
+   Header of the Python script
+  </a>
+</li>
+<li class="toctree-l1 has-children">
+<a class="reference internal" href="mdb.html">
+   Abaqus Model Database
+  </a>
+<input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox">
+<label class="toctree-toggle" for="toctree-checkbox-1">
+<i class="fas fa-chevron-down">
+</i>
+</label>
+<ul>
+<li class="toctree-l2 has-children">
+<a class="reference internal" href="mdb/model.html">
+     Abaqus Model
+    </a>
+<input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox">
+<label class="toctree-toggle" for="toctree-checkbox-2">
+<i class="fas fa-chevron-down">
+</i>
+</label>
+<ul>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/adaptivity.html">
+       Adaptivity
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/amplitude.html">
+       Amplitude
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/assembly.html">
+       Assembly
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/bc.html">
+       Boundary Condition
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/calibration.html">
+       Calibration of Material
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/constraint.html">
+       Constraint
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/field.html">
+       Field
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/filter.html">
+       Filter
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/interaction.html">
+       Interaction
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/load.html">
+       Load
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/material.html">
+       Material
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/optimization.html">
+       Optimization
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/output.html">
+       Output Request
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/part.html">
+       Part
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/predefined.html">
+       Predefined Field
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/profile.html">
+       Beam Section Profile
+      </a>
+</li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/property.html">
+       Property
+      </a>
+</li>
+<li class="toctree-l3 has-children">
+<a class="reference internal" href="mdb/model/section.html">
+       Section
+      </a>
+<input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox">
+<label class="toctree-toggle" for="toctree-checkbox-3">
+<i class="fas fa-chevron-down">
+</i>
+</label>
+<ul>
+<li class="toctree-l4">
+<a class="reference internal" href="mdb/model/section/connector.html">
+         Connector
+        </a>
+</li>
+</ul>
+</input></li>
+<li class="toctree-l3">
+<a class="reference internal" href="mdb/model/sketcher.html">
+       Sketcher
+      </a>
+</li>
+<li class="toctree-l3 has-children">
+<a class="reference internal" href="mdb/model/step.html">
+       Step
+      </a>
+<input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+<label class="toctree-toggle" for="toctree-checkbox-4">
+<i class="fas fa-chevron-down">
+</i>
+</label>
+<ul>
+<li class="toctree-l4">
+<a class="reference internal" href="mdb/model/step/step_miscellaneous.html">
+         Step Miscellaneous
+        </a>
+</li>
+</ul>
+</li>
+</ul>
+</input></li>
+<li class="toctree-l2">
+<a class="reference internal" href="mdb/job.html">
+     Abaqus Job
+    </a>
+</li>
+</ul>
+</input></li>
+<li class="toctree-l1">
+<a class="reference internal" href="odb.html">
+   Abaqus Output Database
+  </a>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="session.html">
+   Abaqus Session
+  </a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="sidebar-end-items sidebar-primary__section">
+<div class="sidebar-end-items__item">
+</div>
+</div>
+</div>
+<main class="bd-main">
+<div class="bd-content">
+<div class="bd-article-container">
+<div class="bd-header-article">
+</div>
+<article class="bd-article" role="main">
+<section id="header-of-the-python-script">
+<h1>Header of the Python script<a class="headerlink" href="#header-of-the-python-script" title="此标题的永久链接">#</a></h1>
+<p>Before you can access the Abaqus model and output database, you need to import some modules. In most cases, <cite>abaqus</cite>, <cite>abaqusConstants</cite>, and <cite>driverUtils</cite> are required:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">driverUtils</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>In the module <cite>abaqus</cite>, two important objects are provided, <cite>mdb</cite> and <cite>session</cite>, which represent the Abaqus model database and a object controls the Abaqus options.</p>
+<ul class="simple">
+<li><p>The <cite>mdb</cite> object is the high-level Abaqus model database. A model database stores models and analysis controls. For more information about the <cite>mdb</cite> object, see <a class="reference internal" href="mdb.html"><span class="doc">/mdb Summary</span></a> or <a class="reference internal" href="../reference/mdb.html"><span class="doc">/mdb API Reference</span></a>.</p></li>
+<li><p>The <cite>odb</cite> object is the in-memory representation of an output database (ODB) file. For more information about the <cite>odb</cite> object, see <a class="reference internal" href="odb.html"><span class="doc">/odb Summary</span></a> or <a class="reference internal" href="../reference/odb.html"><span class="doc">/odb API Reference</span></a>.</p></li>
+<li><p>The <cite>session</cite> object has no constructor. Abaqus creates the session member when a session is started. For more information about the <cite>session</cite> object, see <a class="reference internal" href="session.html"><span class="doc">/session Summary</span></a> or <a class="reference internal" href="../reference/session.html"><span class="doc">/session API Reference</span></a>.</p></li>
+</ul>
+<p>In the module <cite>abaqusConstants</cite>, all the constant strings used in the Abaqus modeling are provided such as <cite>THREE_D</cite> (which specifies a 3-D model), for more constant strings, please refer to the API reference.</p>
+<p>In the module <cite>driverUtils</cite>, an important function <cite>executeOnCaeStartup</cite> is implemented, this function will be execute each time we open the Abaqus, so we need to call this function in our Python script.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">executeOnCaeStartup</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Other modules like <cite>field</cite>, <cite>material</cite>, <cite>mesh</cite> can be imported whenever required.</p>
+</section>
+</article>
+<footer class="bd-footer-article">
+<!-- Previous / next buttons -->
+<div class="prev-next-area">
+<a class="left-prev" href="../summary.html" id="prev-link" title="上一页 页">
+<i class="fas fa-angle-left"></i>
+<div class="prev-next-info">
+<p class="prev-next-subtitle">上一页</p>
+<p class="prev-next-title">API Summary</p>
+</div>
+</a>
+<a class="right-next" href="mdb.html" id="next-link" title="下一页 页">
+<div class="prev-next-info">
+<p class="prev-next-subtitle">下一页</p>
+<p class="prev-next-title">Abaqus Model Database</p>
+</div>
+<i class="fas fa-angle-right"></i>
+</a>
+</div>
+</footer>
+</div>
+<div class="bd-sidebar-secondary bd-toc">
+<div class="toc-item">
+</div>
+<div class="toc-item">
+<div class="tocsection sourcelink">
+<a href="../_sources/summary/header.rst.txt">
+<i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+</div>
+</div>
+</div>
+<footer class="bd-footer-content">
+<div class="bd-footer-content__inner">
+</div>
+</footer>
+</main>
+</div>
+</div>
+<!-- Scripts loaded after <body> so the DOM is not blocked -->
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+<footer class="bd-footer"><div class="bd-footer__inner container">
+<div class="footer-item">
+<p class="copyright">
+
+    © Copyright 2022, WANG Hailin.<br/>
+</p>
+</div>
+<div class="footer-item">
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br/>
+</p>
+</div>
+</div>
+</footer>
+</body>
+</html>

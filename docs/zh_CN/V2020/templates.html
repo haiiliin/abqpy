@@ -1,0 +1,885 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="Docutils 0.18.1: http://docutils.sourceforge.net/" name="generator"/>
+<title>Templates — abqpy 2020 文档</title>
+<script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+<!-- Loaded before other Sphinx assets -->
+<link href="_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet"/>
+<link href="_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet"/>
+<link href="_static/vendor/fontawesome/6.1.2/css/all.min.css" rel="stylesheet"/>
+<link as="font" crossorigin="" href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" rel="preload" type="font/woff2"/>
+<link href="_static/pygments.css" rel="stylesheet" type="text/css">
+<link href="_static/copybutton.css" rel="stylesheet" type="text/css">
+<link href="_static/sphinx-codeautolink.css" rel="stylesheet" type="text/css">
+<link href="_static/autoclasstoc.css" rel="stylesheet" type="text/css">
+<!-- Pre-loaded scripts that we'll load fully later -->
+<link as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b" rel="preload"/>
+<script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+<script src="_static/jquery.js"></script>
+<script src="_static/underscore.js"></script>
+<script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+<script src="_static/doctools.js"></script>
+<script src="_static/sphinx_highlight.js"></script>
+<script src="_static/clipboard.min.js"></script>
+<script src="_static/copybutton.js"></script>
+<script src="_static/translations.js"></script>
+<script>DOCUMENTATION_OPTIONS.pagename = 'templates';</script>
+<script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2020';
+        </script>
+<link href="genindex.html" rel="index" title="索引">
+<link href="search.html" rel="search" title="搜索">
+<link href="user.html" rel="next" title="User’s Guide"/>
+<link href="tutorials.html" rel="prev" title="Tutorials"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="zh-CN" name="docsearch:language"/>
+</link></link></link></link></link></link></head>
+<body data-default-mode="" data-offset="180" data-spy="scroll" data-target="#bd-toc-nav">
+<input class="sidebar-toggle" id="__primary" name="__primary" type="checkbox"/>
+<label class="overlay overlay-primary" for="__primary"></label>
+<input class="sidebar-toggle" id="__secondary" name="__secondary" type="checkbox"/>
+<label class="overlay overlay-secondary" for="__secondary"></label>
+<div class="search-button__wrapper">
+<div class="search-button__overlay"></div>
+<div class="search-button__search-container">
+<form action="search.html" class="bd-search d-flex align-items-center" method="get">
+<i class="icon fas fa-search"></i>
+<input aria-label="Search the docs ..." autocapitalize="off" autocomplete="off" autocorrect="off" class="form-control" id="search-input" name="q" placeholder="Search the docs ..." spellcheck="false" type="search"/>
+<span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+</div>
+</div>
+<nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+<label class="sidebar-toggle primary-toggle" for="__primary">
+<span class="fas fa-bars"></span>
+</label>
+<div id="navbar-start">
+<a class="navbar-brand logo" href="index.html">
+<p class="title logo__title">abqpy 2020 文档</p>
+</a>
+</div>
+<div class="col-lg-9 navbar-header-items">
+<div class="mr-auto" id="navbar-center">
+<div class="navbar-center-item">
+<nav class="navbar-nav">
+<p aria-label="Site Navigation" aria-level="1" class="sidebar-header-items__title" role="heading">
+        Site Navigation
+    </p>
+<ul class="navbar-nav" id="navbar-main-elements">
+<li class="nav-item">
+<a class="nav-link" href="getting_started.html">
+                        入门指南
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="tutorials.html">
+                        Tutorials
+                    </a>
+</li>
+<li class="nav-item current active">
+<a class="nav-link" href="#">
+                        Templates
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="user.html">
+                        User’s Guide
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="summary.html">
+                        API Summary
+                    </a>
+</li>
+<div class="nav-item dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle nav-item" data-toggle="dropdown" type="button">
+                    More
+                </button>
+<div class="dropdown-menu">
+<li class="nav-item">
+<a class="nav-link" href="references.html">
+                        API Reference
+                    </a>
+</li>
+</div>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+<div id="navbar-end">
+<div class="navbar-end-item navbar-end__search-button-container">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+<i class="fas fa-search"></i>
+</button>
+</div>
+<div class="navbar-end-item">
+<div class="version-switcher__container dropdown">
+<button class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown" type="button">
+        v2020  <!-- this text may get changed later by javascript -->
+<span class="caret"></span>
+</button>
+<div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+<!-- dropdown will be populated by javascript on page load -->
+</div>
+</div>
+</div>
+<div class="navbar-end-item">
+<span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+<a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+<a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+<a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+</div>
+<div class="navbar-end-item">
+<ul aria-label="Icon Links" class="navbar-nav" id="navbar-icon-links">
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/haiiliin/abqpy" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+<label class="sr-only">GitHub</label></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://pypi.org/project/abqpy" rel="noopener" target="_blank" title="PyPI"><img alt="PyPI" class="icon-link-image" src="_static/PyPI_logo.svg"/></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://anaconda.org/haiiliin/abqpy" rel="noopener" target="_blank" title="Anaconda"><img alt="Anaconda" class="icon-link-image" src="_static/anaconda.svg"/></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://readthedocs.org/projects/abqpy/" rel="noopener" target="_blank" title="Read the Docs"><img alt="Read the Docs" class="icon-link-image" src="_static/rtd-logo-dark.svg"/></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+<i class="fas fa-search"></i>
+</button>
+</div>
+<label class="sidebar-toggle secondary-toggle" for="__secondary">
+<span class="fas fa-outdent"></span>
+</label>
+</div>
+</nav>
+<div class="bd-container">
+<div class="bd-container__inner bd-page-width">
+<div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+<div class="sidebar-header-items sidebar-primary__section">
+<div class="sidebar-header-items__center">
+<div class="navbar-center-item">
+<nav class="navbar-nav">
+<p aria-label="Site Navigation" aria-level="1" class="sidebar-header-items__title" role="heading">
+        Site Navigation
+    </p>
+<ul class="navbar-nav" id="navbar-main-elements">
+<li class="nav-item">
+<a class="nav-link" href="getting_started.html">
+                        入门指南
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="tutorials.html">
+                        Tutorials
+                    </a>
+</li>
+<li class="nav-item current active">
+<a class="nav-link" href="#">
+                        Templates
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="user.html">
+                        User’s Guide
+                    </a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="summary.html">
+                        API Summary
+                    </a>
+</li>
+<div class="nav-item dropdown">
+<button aria-expanded="false" aria-haspopup="true" class="btn dropdown-toggle nav-item" data-toggle="dropdown" type="button">
+                    More
+                </button>
+<div class="dropdown-menu">
+<li class="nav-item">
+<a class="nav-link" href="references.html">
+                        API Reference
+                    </a>
+</li>
+</div>
+</div>
+</ul>
+</nav>
+</div>
+</div>
+<div class="sidebar-header-items__end">
+<div class="navbar-end-item">
+<div class="version-switcher__container dropdown">
+<button class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown" type="button">
+        v2020  <!-- this text may get changed later by javascript -->
+<span class="caret"></span>
+</button>
+<div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+<!-- dropdown will be populated by javascript on page load -->
+</div>
+</div>
+</div>
+<div class="navbar-end-item">
+<span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+<a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+<a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+<a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+</div>
+<div class="navbar-end-item">
+<ul aria-label="Icon Links" class="navbar-nav" id="navbar-icon-links">
+<li class="nav-item">
+<a class="nav-link" href="https://github.com/haiiliin/abqpy" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github-square"></i></span>
+<label class="sr-only">GitHub</label></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://pypi.org/project/abqpy" rel="noopener" target="_blank" title="PyPI"><img alt="PyPI" class="icon-link-image" src="_static/PyPI_logo.svg"/></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://anaconda.org/haiiliin/abqpy" rel="noopener" target="_blank" title="Anaconda"><img alt="Anaconda" class="icon-link-image" src="_static/anaconda.svg"/></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://readthedocs.org/projects/abqpy/" rel="noopener" target="_blank" title="Read the Docs"><img alt="Read the Docs" class="icon-link-image" src="_static/rtd-logo-dark.svg"/></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sidebar-end-items sidebar-primary__section">
+<div class="sidebar-end-items__item">
+</div>
+</div>
+</div>
+<main class="bd-main">
+<div class="bd-content">
+<div class="bd-article-container">
+<div class="bd-header-article">
+</div>
+<article class="bd-article" role="main">
+<section id="templates">
+<h1>Templates<a class="headerlink" href="#templates" title="此标题的永久链接">#</a></h1>
+<p>Templates to generate python scripts.</p>
+<section id="user-s-guide">
+<h2>User’s Guide<a class="headerlink" href="#user-s-guide" title="此标题的永久链接">#</a></h2>
+<p>The <a class="reference internal" href="#abqpy.template.ScriptTemplate" title="abqpy.template.ScriptTemplate"><code class="xref py py-class docutils literal notranslate"><span class="pre">ScriptTemplate</span></code></a> class provides a simple interface to generate python scripts from
+templates.</p>
+</section>
+<section id="compressiontemplate">
+<h2>CompressionTemplate<a class="headerlink" href="#compressiontemplate" title="此标题的永久链接">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="abqpy.template.CompressionTemplate">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CompressionTemplate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.10）"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="（在 Python v3.10）"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="（在 Python v3.10）"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.10）"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/os.html#os.PathLike" title="（在 Python v3.10）"><span class="pre">PathLike</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2020/src/abqpy/template.py#L244-L246"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.CompressionTemplate" title="永久链接至目标">#</a></dt>
+<dd><p>This is a template for compression.</p>
+<p class="rubric">示例</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">abqpy.template</span> <span class="kn">import</span> <a class="sphinx-codeautolink-a" href="templates.html#abqpy.template.CompressionTemplate" title="abqpy.template.CompressionTemplate"><span class="n">CompressionTemplate</span></a>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="templates.html#abqpy.template.CompressionTemplate" title="abqpy.template.CompressionTemplate"><span class="n">template</span></a> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="templates.html#abqpy.template.CompressionTemplate" title="abqpy.template.CompressionTemplate"><span class="n">CompressionTemplate</span></a><span class="p">(</span><span class="n">params</span><span class="o">=</span><span class="s1">'params.toml'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="templates.html#abqpy.template.ScriptTemplate.write" title="abqpy.template.ScriptTemplate.write"><span class="n">template</span><span class="o">.</span><span class="n">write</span></a><span class="p">(</span><span class="s1">'script.py'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="templates.html#abqpy.template.CompressionTemplate" title="abqpy.template.CompressionTemplate"><span class="n">template</span></a> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="templates.html#abqpy.template.CompressionTemplate" title="abqpy.template.CompressionTemplate"><span class="n">CompressionTemplate</span></a><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="templates.html#abqpy.template.ScriptTemplate.write" title="abqpy.template.ScriptTemplate.write"><span class="n">template</span><span class="o">.</span><span class="n">write</span></a><span class="p">(</span><span class="s1">'script.py'</span><span class="p">,</span> <span class="n">param1</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">param2</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition-details-of-required-parameters admonition">
+<p class="admonition-title">Details of required parameters</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-width">
+<span class="sig-name descname"><span class="pre">width</span></span><a class="headerlink" href="#confval-width" title="永久链接至目标">#</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>Type:</strong> float, defaults to 1.0</div>
+</div>
+<p>Width of the rectangle</p>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-length">
+<span class="sig-name descname"><span class="pre">length</span></span><a class="headerlink" href="#confval-length" title="永久链接至目标">#</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>Type:</strong> float, defaults to 1.0</div>
+</div>
+<p>Length of the rectangle</p>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-height">
+<span class="sig-name descname"><span class="pre">height</span></span><a class="headerlink" href="#confval-height" title="永久链接至目标">#</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>Type:</strong> float, defaults to 1.0</div>
+</div>
+<p>Height of the rectangle</p>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-E">
+<span class="sig-name descname"><span class="pre">E</span></span><a class="headerlink" href="#confval-E" title="永久链接至目标">#</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>Type:</strong> float, defaults to 1.0</div>
+</div>
+<p>Young’s modulus</p>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-nu">
+<span class="sig-name descname"><span class="pre">nu</span></span><a class="headerlink" href="#confval-nu" title="永久链接至目标">#</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>Type:</strong> float, defaults to 0.3</div>
+</div>
+<p>Poisson’s ratio</p>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-timePeriod">
+<span class="sig-name descname"><span class="pre">timePeriod</span></span><a class="headerlink" href="#confval-timePeriod" title="永久链接至目标">#</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>Type:</strong> float, defaults to 1.0</div>
+</div>
+<p>Time period</p>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-maxNumInc">
+<span class="sig-name descname"><span class="pre">maxNumInc</span></span><a class="headerlink" href="#confval-maxNumInc" title="永久链接至目标">#</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>Type:</strong> int, defaults to 1000</div>
+</div>
+<p>Maximum number of increments</p>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-initialInc">
+<span class="sig-name descname"><span class="pre">initialInc</span></span><a class="headerlink" href="#confval-initialInc" title="永久链接至目标">#</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>Type:</strong> float, defaults to 0.1</div>
+</div>
+<p>Initial increment</p>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-minInc">
+<span class="sig-name descname"><span class="pre">minInc</span></span><a class="headerlink" href="#confval-minInc" title="永久链接至目标">#</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>Type:</strong> float, defaults to 0.01</div>
+</div>
+<p>Minimum increment</p>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-maxInc">
+<span class="sig-name descname"><span class="pre">maxInc</span></span><a class="headerlink" href="#confval-maxInc" title="永久链接至目标">#</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>Type:</strong> float, defaults to 1.0</div>
+</div>
+<p>Maximum increment</p>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-pressure">
+<span class="sig-name descname"><span class="pre">pressure</span></span><a class="headerlink" href="#confval-pressure" title="永久链接至目标">#</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>Type:</strong> float, defaults to 1.0</div>
+</div>
+<p>Pressure</p>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-mesh_size">
+<span class="sig-name descname"><span class="pre">mesh_size</span></span><a class="headerlink" href="#confval-mesh_size" title="永久链接至目标">#</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>Type:</strong> float, defaults to 0.1</div>
+</div>
+<p>Mesh size</p>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-job_name">
+<span class="sig-name descname"><span class="pre">job_name</span></span><a class="headerlink" href="#confval-job_name" title="永久链接至目标">#</a></dt>
+<dd><div class="line-block">
+<div class="line"><strong>Type:</strong> str, defaults to Job-1</div>
+</div>
+<p>Job name</p>
+</dd></dl>
+</div>
+<div class="admonition-user-config-file-a-toml-https-toml-io-or-json-https-www-json-org-file admonition">
+<p class="admonition-title">User config file (A <a class="reference external" href="https://toml.io/">toml</a> or <a class="reference external" href="https://www.json.org/">json</a> file)</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="c1"># User configuration file</span><span class="w"></span>
+
+<span class="n">width</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">height</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">E</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">nu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.3</span><span class="w"></span>
+<span class="n">timePeriod</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">maxNumInc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="w"></span>
+<span class="n">initialInc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">minInc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0e-6</span><span class="w"></span>
+<span class="n">maxInc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">pressure</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">mesh_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1</span><span class="w"></span>
+<span class="n">job_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">'Job-1'</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="admonition-the-template-source-code admonition">
+<p class="admonition-title">The template source code</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">caeModules</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">driverUtils</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">executeOnCaeStartup</span><span class="p">()</span>
+
+<span class="c1"># Model</span>
+<span class="n">model</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">'Model-1'</span><span class="p">]</span>
+
+<span class="c1"># Part</span>
+<span class="n">sketch</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">ConstrainedSketch</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'sketch'</span><span class="p">,</span> <span class="n">sheetSize</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="n">sketch</span><span class="o">.</span><span class="n">rectangle</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">({{</span> <span class="n">width</span> <span class="p">}},</span> <span class="p">{{</span> <span class="n">length</span> <span class="p">}}))</span>
+<span class="n">part</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">Part</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'part'</span><span class="p">,</span> <span class="n">dimensionality</span><span class="o">=</span><span class="n">THREE_D</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">DEFORMABLE_BODY</span><span class="p">)</span>
+<span class="n">part</span><span class="o">.</span><span class="n">BaseSolidExtrude</span><span class="p">(</span><span class="n">sketch</span><span class="o">=</span><span class="n">sketch</span><span class="p">,</span> <span class="n">depth</span><span class="o">=</span><span class="p">{{</span> <span class="n">height</span> <span class="p">}})</span>
+
+<span class="c1"># Create sets</span>
+<span class="n">part</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'set-all'</span><span class="p">,</span> <span class="n">cells</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">cells</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">(({{</span> <span class="n">width</span> <span class="o">/</span> <span class="mi">2</span> <span class="p">}},</span> <span class="p">{{</span> <span class="n">length</span> <span class="o">/</span> <span class="mi">2</span> <span class="p">}},</span> <span class="p">{{</span> <span class="n">height</span> <span class="o">/</span> <span class="mi">2</span> <span class="p">}}),)))</span>
+<span class="n">part</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'set-bottom'</span><span class="p">,</span> <span class="n">faces</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">(({{</span> <span class="n">width</span> <span class="o">/</span> <span class="mi">2</span> <span class="p">}},</span> <span class="p">{{</span> <span class="n">length</span> <span class="o">/</span> <span class="mi">2</span> <span class="p">}},</span> <span class="mf">0.0</span><span class="p">),)))</span>
+<span class="n">part</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'set-top'</span><span class="p">,</span> <span class="n">faces</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">(({{</span> <span class="n">width</span> <span class="o">/</span> <span class="mi">2</span> <span class="p">}},</span> <span class="p">{{</span> <span class="n">length</span> <span class="o">/</span> <span class="mi">2</span> <span class="p">}},</span> <span class="p">{{</span> <span class="n">height</span> <span class="p">}}),)))</span>
+<span class="n">part</span><span class="o">.</span><span class="n">Surface</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'surface-top'</span><span class="p">,</span>
+             <span class="n">side1Faces</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">faces</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">(({{</span> <span class="n">width</span> <span class="o">/</span> <span class="mi">2</span> <span class="p">}},</span> <span class="p">{{</span> <span class="n">length</span> <span class="o">/</span> <span class="mi">2</span> <span class="p">}},</span> <span class="p">{{</span> <span class="n">height</span> <span class="p">}}),)))</span>
+
+<span class="c1"># Assembly</span>
+<span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">DatumCsysByDefault</span><span class="p">(</span><span class="n">CARTESIAN</span><span class="p">)</span>
+<span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">Instance</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'instance'</span><span class="p">,</span> <span class="n">part</span><span class="o">=</span><span class="n">part</span><span class="p">,</span> <span class="n">dependent</span><span class="o">=</span><span class="n">ON</span><span class="p">)</span>
+
+<span class="c1"># Material</span>
+<span class="n">material</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">Material</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'material'</span><span class="p">)</span>
+<span class="n">material</span><span class="o">.</span><span class="n">Elastic</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="p">(({{</span> <span class="n">E</span> <span class="p">}},</span> <span class="p">{{</span> <span class="n">mu</span> <span class="p">}}),))</span>
+<span class="n">material</span><span class="o">.</span><span class="n">Density</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="p">(({{</span> <span class="n">rho</span> <span class="p">}},),))</span>
+
+<span class="c1"># Section</span>
+<span class="n">model</span><span class="o">.</span><span class="n">HomogeneousSolidSection</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'section'</span><span class="p">,</span> <span class="n">material</span><span class="o">=</span><span class="s1">'material'</span><span class="p">,</span> <span class="n">thickness</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">part</span><span class="o">.</span><span class="n">SectionAssignment</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="n">part</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="s1">'set-all'</span><span class="p">],</span> <span class="n">sectionName</span><span class="o">=</span><span class="s1">'section'</span><span class="p">)</span>
+
+<span class="c1"># Step</span>
+<span class="n">step</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">StaticStep</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Step-1'</span><span class="p">,</span> <span class="n">previous</span><span class="o">=</span><span class="s1">'Initial'</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">''</span><span class="p">,</span>
+                        <span class="n">timePeriod</span><span class="o">=</span><span class="p">{{</span> <span class="n">timePeriod</span> <span class="p">}},</span> <span class="n">timeIncrementationMethod</span><span class="o">=</span><span class="n">AUTOMATIC</span><span class="p">,</span>
+                        <span class="n">maxNumInc</span><span class="o">=</span><span class="p">{{</span> <span class="n">maxNumInc</span> <span class="p">}},</span> <span class="n">initialInc</span><span class="o">=</span> <span class="p">{{</span> <span class="n">initialInc</span> <span class="p">}},</span>
+                        <span class="n">minInc</span><span class="o">=</span> <span class="p">{{</span> <span class="n">minInc</span> <span class="p">}},</span> <span class="n">maxInc</span><span class="o">=</span> <span class="p">{{</span> <span class="n">maxInc</span> <span class="p">}})</span>
+
+<span class="c1"># Output request</span>
+<span class="n">field</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">FieldOutputRequest</span><span class="p">(</span><span class="s1">'F-Output-1'</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">'Step-1'</span><span class="p">,</span>
+                                 <span class="n">variables</span><span class="o">=</span><span class="p">(</span><span class="s1">'S'</span><span class="p">,</span> <span class="s1">'E'</span><span class="p">,</span> <span class="s1">'U'</span><span class="p">))</span>
+
+<span class="c1"># Boundary condition</span>
+<span class="n">bottom_instance</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="s1">'instance'</span><span class="p">]</span><span class="o">.</span><span class="n">sets</span><span class="p">[</span><span class="s1">'set-bottom'</span><span class="p">]</span>
+<span class="n">bc</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">DisplacementBC</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'BC-1'</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">'Initial'</span><span class="p">,</span>
+                          <span class="n">region</span><span class="o">=</span><span class="n">bottom_instance</span><span class="p">,</span> <span class="n">u3</span><span class="o">=</span><span class="n">SET</span><span class="p">)</span>
+
+<span class="c1"># Load</span>
+<span class="n">top_instance</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="s1">'instance'</span><span class="p">]</span><span class="o">.</span><span class="n">surfaces</span><span class="p">[</span><span class="s1">'surface-top'</span><span class="p">]</span>
+<span class="n">pressure</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">Pressure</span><span class="p">(</span><span class="s1">'pressure'</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">'Step-1'</span><span class="p">,</span> <span class="n">region</span><span class="o">=</span><span class="n">top_instance</span><span class="p">,</span>
+                          <span class="n">magnitude</span><span class="o">=</span><span class="p">{{</span> <span class="n">pressure</span> <span class="p">}})</span>
+
+<span class="c1"># Mesh</span>
+<a class="sphinx-codeautolink-a" href="reference/mdb/model/mesh.html#abaqus.Mesh.ElemType.ElemType" title="abaqus.Mesh.ElemType.ElemType"><span class="n">elem1</span></a> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="reference/mdb/model/mesh.html#abaqus.Mesh.ElemType.ElemType" title="abaqus.Mesh.ElemType.ElemType"><span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span></a><span class="p">(</span><span class="n">elemCode</span><span class="o">=</span><span class="n">C3D8R</span><span class="p">)</span>
+<a class="sphinx-codeautolink-a" href="reference/mdb/model/mesh.html#abaqus.Mesh.ElemType.ElemType" title="abaqus.Mesh.ElemType.ElemType"><span class="n">elem2</span></a> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="reference/mdb/model/mesh.html#abaqus.Mesh.ElemType.ElemType" title="abaqus.Mesh.ElemType.ElemType"><span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span></a><span class="p">(</span><span class="n">elemCode</span><span class="o">=</span><span class="n">C3D6</span><span class="p">)</span>
+<a class="sphinx-codeautolink-a" href="reference/mdb/model/mesh.html#abaqus.Mesh.ElemType.ElemType" title="abaqus.Mesh.ElemType.ElemType"><span class="n">elem3</span></a> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="reference/mdb/model/mesh.html#abaqus.Mesh.ElemType.ElemType" title="abaqus.Mesh.ElemType.ElemType"><span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span></a><span class="p">(</span><span class="n">elemCode</span><span class="o">=</span><span class="n">C3D4</span><span class="p">)</span>
+<span class="n">part</span><span class="o">.</span><span class="n">setElementType</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="p">(</span><span class="n">part</span><span class="o">.</span><span class="n">cells</span><span class="p">,),</span> <span class="n">elemTypes</span><span class="o">=</span><span class="p">(</span><a class="sphinx-codeautolink-a" href="reference/mdb/model/mesh.html#abaqus.Mesh.ElemType.ElemType" title="abaqus.Mesh.ElemType.ElemType"><span class="n">elem1</span></a><span class="p">,</span> <a class="sphinx-codeautolink-a" href="reference/mdb/model/mesh.html#abaqus.Mesh.ElemType.ElemType" title="abaqus.Mesh.ElemType.ElemType"><span class="n">elem2</span></a><span class="p">,</span> <a class="sphinx-codeautolink-a" href="reference/mdb/model/mesh.html#abaqus.Mesh.ElemType.ElemType" title="abaqus.Mesh.ElemType.ElemType"><span class="n">elem3</span></a><span class="p">))</span>
+<span class="n">part</span><span class="o">.</span><span class="n">seedPart</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="p">{{</span> <span class="n">mesh_size</span> <span class="p">}})</span>
+<span class="n">part</span><span class="o">.</span><span class="n">generateMesh</span><span class="p">()</span>
+
+<span class="c1"># Job</span>
+<a class="sphinx-codeautolink-a" href="reference/mdb/job.html#abaqus.Job.ModelJob.ModelJob" title="abaqus.Job.ModelJob.ModelJob"><span class="n">job</span></a> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'{{ job_name }}'</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s1">'Model-1'</span><span class="p">)</span>
+<a class="sphinx-codeautolink-a" href="reference/mdb/job.html#abaqus.Job.ModelJob.ModelJob.writeInput" title="abaqus.Job.ModelJob.ModelJob.writeInput"><span class="n">job</span><span class="o">.</span><span class="n">writeInput</span></a><span class="p">()</span>
+
+<span class="c1"># Submit the job</span>
+<a class="sphinx-codeautolink-a" href="reference/mdb/job.html#abaqus.Job.Job.Job.submit" title="abaqus.Job.Job.Job.submit"><span class="n">job</span><span class="o">.</span><span class="n">submit</span></a><span class="p">()</span>
+<a class="sphinx-codeautolink-a" href="reference/mdb/job.html#abaqus.Job.Job.Job.waitForCompletion" title="abaqus.Job.Job.Job.waitForCompletion"><span class="n">job</span><span class="o">.</span><span class="n">waitForCompletion</span></a><span class="p">()</span>
+
+<span class="c1"># Save abaqus model</span>
+<a class="sphinx-codeautolink-a" href="reference/mdb.html#abaqus.Mdb.MdbBase.MdbBase.saveAs" title="abaqus.Mdb.MdbBase.MdbBase.saveAs"><span class="n">mdb</span><span class="o">.</span><span class="n">saveAs</span></a><span class="p">(</span><span class="s1">'compression.cae'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition-the-template-config-file-a-toml-https-toml-io-or-json-https-www-json-org-file admonition">
+<p class="admonition-title">The template config file  (A <a class="reference external" href="https://toml.io/">toml</a> or <a class="reference external" href="https://www.json.org/">json</a> file)</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define parameters for the template</span><span class="w"></span>
+
+<span class="k">[width]</span><span class="w"></span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"float"</span><span class="w"></span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Width of the rectangle"</span><span class="w"></span>
+<span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1</span><span class="w"></span>
+
+<span class="k">[length]</span><span class="w"></span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"float"</span><span class="w"></span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Length of the rectangle"</span><span class="w"></span>
+<span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1</span><span class="w"></span>
+
+<span class="k">[height]</span><span class="w"></span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"float"</span><span class="w"></span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Height of the rectangle"</span><span class="w"></span>
+<span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1</span><span class="w"></span>
+
+<span class="k">[E]</span><span class="w"></span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"float"</span><span class="w"></span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Young's modulus"</span><span class="w"></span>
+<span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1</span><span class="w"></span>
+
+<span class="k">[nu]</span><span class="w"></span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"float"</span><span class="w"></span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Poisson's ratio"</span><span class="w"></span>
+<span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.3</span><span class="w"></span>
+<span class="n">min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="w"></span>
+<span class="n">max</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.499</span><span class="w"></span>
+
+<span class="k">[timePeriod]</span><span class="w"></span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"float"</span><span class="w"></span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Time period"</span><span class="w"></span>
+<span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="w"></span>
+
+<span class="k">[maxNumInc]</span><span class="w"></span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"int"</span><span class="w"></span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Maximum number of increments"</span><span class="w"></span>
+<span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span><span class="w"></span>
+<span class="n">min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="w"></span>
+
+<span class="k">[initialInc]</span><span class="w"></span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"float"</span><span class="w"></span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Initial increment"</span><span class="w"></span>
+<span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1</span><span class="w"></span>
+<span class="n">min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0001</span><span class="w"></span>
+
+<span class="k">[minInc]</span><span class="w"></span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"float"</span><span class="w"></span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Minimum increment"</span><span class="w"></span>
+<span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.01</span><span class="w"></span>
+<span class="n">min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0001</span><span class="w"></span>
+
+<span class="k">[maxInc]</span><span class="w"></span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"float"</span><span class="w"></span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Maximum increment"</span><span class="w"></span>
+<span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0001</span><span class="w"></span>
+
+<span class="k">[pressure]</span><span class="w"></span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"float"</span><span class="w"></span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Pressure"</span><span class="w"></span>
+<span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1.0</span><span class="w"></span>
+<span class="n">min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0</span><span class="w"></span>
+
+<span class="k">[mesh_size]</span><span class="w"></span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"float"</span><span class="w"></span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Mesh size"</span><span class="w"></span>
+<span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.1</span><span class="w"></span>
+<span class="n">min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">0.0001</span><span class="w"></span>
+
+<span class="k">[job_name]</span><span class="w"></span>
+<span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"str"</span><span class="w"></span>
+<span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Job name"</span><span class="w"></span>
+<span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Job-1"</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</dd></dl>
+</section>
+<section id="scripttemplate">
+<h2>ScriptTemplate<a class="headerlink" href="#scripttemplate" title="此标题的永久链接">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="abqpy.template.ScriptTemplate">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ScriptTemplate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">template</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/os.html#os.PathLike" title="（在 Python v3.10）"><span class="pre">PathLike</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.10）"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="（在 Python v3.10）"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="（在 Python v3.10）"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.10）"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/os.html#os.PathLike" title="（在 Python v3.10）"><span class="pre">PathLike</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="（在 Python v3.10）"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="（在 Python v3.10）"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Dict" title="（在 Python v3.10）"><span class="pre">Dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="（在 Python v3.10）"><span class="pre">int</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/os.html#os.PathLike" title="（在 Python v3.10）"><span class="pre">PathLike</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2020/src/abqpy/template.py#L31-L174"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.ScriptTemplate" title="永久链接至目标">#</a></dt>
+<dd><p>A template class for Abaqus script.</p>
+<p class="rubric">示例</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">abqpy.template</span> <span class="kn">import</span> <a class="sphinx-codeautolink-a" href="templates.html#abqpy.template.ScriptTemplate" title="abqpy.template.ScriptTemplate"><span class="n">ScriptTemplate</span></a>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">template</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="templates.html#abqpy.template.ScriptTemplate" title="abqpy.template.ScriptTemplate"><span class="n">ScriptTemplate</span></a><span class="p">(</span><a class="sphinx-codeautolink-a" href="templates.html#abqpy.template.ScriptTemplate" title="abqpy.template.ScriptTemplate"><span class="n">template</span></a><span class="o">=</span><span class="s1">'template.py'</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="s1">'config.toml'</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="s1">'params.toml'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="templates.html#abqpy.template.ScriptTemplate.write" title="abqpy.template.ScriptTemplate.write"><span class="n">template</span><span class="o">.</span><span class="n">write</span></a><span class="p">(</span><span class="s1">'script.py'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">template</span> <span class="o">=</span> <a class="sphinx-codeautolink-a" href="templates.html#abqpy.template.ScriptTemplate" title="abqpy.template.ScriptTemplate"><span class="n">ScriptTemplate</span></a><span class="p">(</span><a class="sphinx-codeautolink-a" href="templates.html#abqpy.template.ScriptTemplate" title="abqpy.template.ScriptTemplate"><span class="n">template</span></a><span class="o">=</span><span class="s1">'template.py'</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="s1">'config.toml'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><a class="sphinx-codeautolink-a" href="templates.html#abqpy.template.ScriptTemplate.write" title="abqpy.template.ScriptTemplate.write"><span class="n">template</span><span class="o">.</span><span class="n">write</span></a><span class="p">(</span><span class="s1">'script.py'</span><span class="p">,</span> <span class="n">param1</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">param2</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.template.ScriptTemplate.check">
+<span class="sig-name descname"><span class="pre">check</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">correct_bounds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2020/src/abqpy/template.py#L110-L146"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.ScriptTemplate.check" title="永久链接至目标">#</a></dt>
+<dd><p>Check if the parameters are valid, if valid, return the processed parameters as a dict.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>correct_bounds</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – Whether to correct the parameters to the bounds, by default True</p></li>
+<li><p><strong>**kwargs</strong> – The parameters to check.</p></li>
+</ul>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>The original or corrected parameters.</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Dict</span></code></p>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="（在 Python v3.10）"><strong>ValueError</strong></a> – If the parameters are invalid.</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="abqpy.template.ScriptTemplate.config_source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_source</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2020/src/abqpy/template.py#L31-L174"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.ScriptTemplate.config_source" title="永久链接至目标">#</a></dt>
+<dd><p>Parameter config source</p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="abqpy.template.ScriptTemplate.defaults">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">defaults</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2020/src/abqpy/template.py#L31-L174"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.ScriptTemplate.defaults" title="永久链接至目标">#</a></dt>
+<dd><p>The default parameters.</p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="abqpy.template.ScriptTemplate.descriptions">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">descriptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2020/src/abqpy/template.py#L31-L174"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.ScriptTemplate.descriptions" title="永久链接至目标">#</a></dt>
+<dd><p>The descriptions of the parameters.</p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="abqpy.template.ScriptTemplate.keys">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">keys</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2020/src/abqpy/template.py#L31-L174"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.ScriptTemplate.keys" title="永久链接至目标">#</a></dt>
+<dd><p>A list of parameters required by the template.</p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="abqpy.template.ScriptTemplate.params_source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">params_source</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2020/src/abqpy/template.py#L31-L174"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.ScriptTemplate.params_source" title="永久链接至目标">#</a></dt>
+<dd><p>User config source</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.template.ScriptTemplate.render">
+<span class="sig-name descname"><span class="pre">render</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2020/src/abqpy/template.py#L148-L161"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.ScriptTemplate.render" title="永久链接至目标">#</a></dt>
+<dd><p>Render the template.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>**kwargs</strong> – The parameters to render the template.</p>
+</dd>
+<dt class="field-even">返回<span class="colon">:</span></dt>
+<dd class="field-even"><p>The rendered template.</p>
+</dd>
+<dt class="field-odd">返回类型<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="abqpy.template.ScriptTemplate.template_source">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">template_source</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2020/src/abqpy/template.py#L31-L174"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.ScriptTemplate.template_source" title="永久链接至目标">#</a></dt>
+<dd><p>Template source</p>
+</dd></dl>
+<dl class="py property">
+<dt class="sig sig-object py" id="abqpy.template.ScriptTemplate.types">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">types</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2020/src/abqpy/template.py#L31-L174"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.ScriptTemplate.types" title="永久链接至目标">#</a></dt>
+<dd><p>The types of the parameters.</p>
+</dd></dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="abqpy.template.ScriptTemplate.write">
+<span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2020/src/abqpy/template.py#L163-L174"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abqpy.template.ScriptTemplate.write" title="永久链接至目标">#</a></dt>
+<dd><p>Write the rendered template to a file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> or <code class="xref py py-class docutils literal notranslate"><span class="pre">PathLike</span></code>) – The file to write to.</p></li>
+<li><p><strong>**kwargs</strong> – The parameters to render the template.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+</dd></dl>
+</section>
+</section>
+</article>
+<footer class="bd-footer-article">
+<!-- Previous / next buttons -->
+<div class="prev-next-area">
+<a class="left-prev" href="tutorials.html" id="prev-link" title="上一页 页">
+<i class="fas fa-angle-left"></i>
+<div class="prev-next-info">
+<p class="prev-next-subtitle">上一页</p>
+<p class="prev-next-title">Tutorials</p>
+</div>
+</a>
+<a class="right-next" href="user.html" id="next-link" title="下一页 页">
+<div class="prev-next-info">
+<p class="prev-next-subtitle">下一页</p>
+<p class="prev-next-title">User’s Guide</p>
+</div>
+<i class="fas fa-angle-right"></i>
+</a>
+</div>
+</footer>
+</div>
+<div class="bd-sidebar-secondary bd-toc">
+<div class="toc-item">
+<div class="tocsection onthispage">
+<i class="fas fa-list"></i> On this page
+</div>
+<nav class="page-toc" id="bd-toc-nav">
+<ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#user-s-guide">
+   User’s Guide
+  </a>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#compressiontemplate">
+   CompressionTemplate
+  </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#abqpy.template.CompressionTemplate">
+<code class="docutils literal notranslate">
+<span class="pre">
+       CompressionTemplate
+      </span>
+</code>
+</a>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry">
+<a class="reference internal nav-link" href="#scripttemplate">
+   ScriptTemplate
+  </a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry">
+<a class="reference internal nav-link" href="#abqpy.template.ScriptTemplate">
+<code class="docutils literal notranslate">
+<span class="pre">
+       ScriptTemplate
+      </span>
+</code>
+</a>
+<ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#abqpy.template.ScriptTemplate.check">
+<code class="docutils literal notranslate">
+<span class="pre">
+         ScriptTemplate.check()
+        </span>
+</code>
+</a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#abqpy.template.ScriptTemplate.config_source">
+<code class="docutils literal notranslate">
+<span class="pre">
+         ScriptTemplate.config_source
+        </span>
+</code>
+</a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#abqpy.template.ScriptTemplate.defaults">
+<code class="docutils literal notranslate">
+<span class="pre">
+         ScriptTemplate.defaults
+        </span>
+</code>
+</a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#abqpy.template.ScriptTemplate.descriptions">
+<code class="docutils literal notranslate">
+<span class="pre">
+         ScriptTemplate.descriptions
+        </span>
+</code>
+</a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#abqpy.template.ScriptTemplate.keys">
+<code class="docutils literal notranslate">
+<span class="pre">
+         ScriptTemplate.keys
+        </span>
+</code>
+</a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#abqpy.template.ScriptTemplate.params_source">
+<code class="docutils literal notranslate">
+<span class="pre">
+         ScriptTemplate.params_source
+        </span>
+</code>
+</a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#abqpy.template.ScriptTemplate.render">
+<code class="docutils literal notranslate">
+<span class="pre">
+         ScriptTemplate.render()
+        </span>
+</code>
+</a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#abqpy.template.ScriptTemplate.template_source">
+<code class="docutils literal notranslate">
+<span class="pre">
+         ScriptTemplate.template_source
+        </span>
+</code>
+</a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#abqpy.template.ScriptTemplate.types">
+<code class="docutils literal notranslate">
+<span class="pre">
+         ScriptTemplate.types
+        </span>
+</code>
+</a>
+</li>
+<li class="toc-h4 nav-item toc-entry">
+<a class="reference internal nav-link" href="#abqpy.template.ScriptTemplate.write">
+<code class="docutils literal notranslate">
+<span class="pre">
+         ScriptTemplate.write()
+        </span>
+</code>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+<div class="toc-item">
+</div>
+<div class="toc-item">
+<div class="tocsection sourcelink">
+<a href="_sources/templates.rst.txt">
+<i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+</div>
+</div>
+</div>
+<footer class="bd-footer-content">
+<div class="bd-footer-content__inner">
+</div>
+</footer>
+</main>
+</div>
+</div>
+<!-- Scripts loaded after <body> so the DOM is not blocked -->
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+<footer class="bd-footer"><div class="bd-footer__inner container">
+<div class="footer-item">
+<p class="copyright">
+
+    © Copyright 2022, WANG Hailin.<br/>
+</p>
+</div>
+<div class="footer-item">
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br/>
+</p>
+</div>
+</div>
+</footer>
+</body>
+</html>
