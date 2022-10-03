@@ -1,0 +1,1118 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Abaqus Session &#8212; abqpy 2021 documentation</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'summary/session';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2021';
+        </script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="API Reference" href="../references.html" />
+    <link rel="prev" title="Abaqus Output Database" href="odb.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2021 documentation</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2021  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2021  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="header.html">
+   Header of the Python script
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="mdb.html">
+   Abaqus Model Database
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="mdb/model.html">
+     Abaqus Model
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/adaptivity.html">
+       Adaptivity
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/amplitude.html">
+       Amplitude
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/assembly.html">
+       Assembly
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/bc.html">
+       Boundary Condition
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/calibration.html">
+       Calibration of Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/constraint.html">
+       Constraint
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/field.html">
+       Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/filter.html">
+       Filter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/interaction.html">
+       Interaction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/load.html">
+       Load
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/material.html">
+       Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/optimization.html">
+       Optimization
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/output.html">
+       Output Request
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/part.html">
+       Part
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/predefined.html">
+       Predefined Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/profile.html">
+       Beam Section Profile
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/property.html">
+       Property
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="mdb/model/section.html">
+       Section
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="mdb/model/section/connector.html">
+         Connector
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/sketcher.html">
+       Sketcher
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="mdb/model/step.html">
+       Step
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="mdb/model/step/step_miscellaneous.html">
+         Step Miscellaneous
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mdb/job.html">
+     Abaqus Job
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="odb.html">
+   Abaqus Output Database
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Abaqus Session
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="abaqus-session">
+<h1>Abaqus Session<a class="headerlink" href="#abaqus-session" title="Permalink to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Session</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2021/src/abaqus/Session/Session.py#L12-L32"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>The Session object has no constructor. Abaqus creates the <strong>session</strong> member when a
+session is started.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">session</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all">Session on help.3ds.com/2021</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.attachedToGui" title="abaqus.Session.Session.Session.attachedToGui"><code class="xref py py-obj docutils literal notranslate"><span class="pre">attachedToGui</span></code></a></p></td>
+<td><p>A Boolean specifying whether an Abaqus interactive session is running.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.replayInProgress" title="abaqus.Session.Session.Session.replayInProgress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">replayInProgress</span></code></a></p></td>
+<td><p>A Boolean specifying whether Abaqus is executing a replay file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.kernelMemoryFootprint" title="abaqus.Session.Session.Session.kernelMemoryFootprint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryFootprint</span></code></a></p></td>
+<td><p>A Float specifying the memory usage value for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.kernelMemoryMaxFootprint" title="abaqus.Session.Session.Session.kernelMemoryMaxFootprint"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryMaxFootprint</span></code></a></p></td>
+<td><p>A Float specifying the maximum value for the memory usage for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.kernelMemoryLimit" title="abaqus.Session.Session.Session.kernelMemoryLimit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kernelMemoryLimit</span></code></a></p></td>
+<td><p>A Float specifying the limit for the memory use for the Abaqus/CAE kernel process in megabytes.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.colors" title="abaqus.Session.Session.Session.colors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">colors</span></code></a></p></td>
+<td><p>A repository of Color objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.journalOptions" title="abaqus.Session.Session.Session.journalOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">journalOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session.html#abaqus.Session.JournalOptions.JournalOptions" title="abaqus.Session.JournalOptions.JournalOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">JournalOptions</span></code></a> object specifying how to record selection of geometry in the journal and replay files.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.memoryReductionOptions" title="abaqus.Session.Session.Session.memoryReductionOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">memoryReductionOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session.html#abaqus.Session.MemoryReductionOptions.MemoryReductionOptions" title="abaqus.Session.MemoryReductionOptions.MemoryReductionOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MemoryReductionOptions</span></code></a> object specifying options for running in reduced memory mode.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.nodeQuery" title="abaqus.Session.Session.Session.nodeQuery"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodeQuery</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/path.html#abaqus.PathAndProbe.NodeQuery.NodeQuery" title="abaqus.PathAndProbe.NodeQuery.NodeQuery"><code class="xref py py-class docutils literal notranslate"><span class="pre">NodeQuery</span></code></a> object specifying nodes and their coordinates in a path.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.sketcherOptions" title="abaqus.Session.Session.Session.sketcherOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketcherOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/mdb/model/sketcher.html#abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions" title="abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConstrainedSketcherOptions</span></code></a> object specifying common options for all sketches.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.viewerOptions" title="abaqus.Session.Session.Session.viewerOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewerOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/odb_display.html#abaqus.OdbDisplay.ViewerOptions.ViewerOptions" title="abaqus.OdbDisplay.ViewerOptions.ViewerOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewerOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.animationOptions" title="abaqus.Session.Session.Session.animationOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">animationOptions</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="../reference/session/animation.html#abaqus.Animation.AnimationOptions.AnimationOptions" title="abaqus.Animation.AnimationOptions.AnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnimationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.aviOptions" title="abaqus.Session.Session.Session.aviOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aviOptions</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="../reference/session/animation.html#abaqus.Animation.AVIOptions.AVIOptions" title="abaqus.Animation.AVIOptions.AVIOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">AVIOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.imageAnimationOptions" title="abaqus.Session.Session.Session.imageAnimationOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimationOptions</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="../reference/session/animation.html#abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions" title="abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.imageAnimation" title="abaqus.Session.Session.Session.imageAnimation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageAnimation</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="../reference/session/animation.html#abaqus.Animation.ImageAnimation.ImageAnimation" title="abaqus.Animation.ImageAnimation.ImageAnimation"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageAnimation</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.quickTimeOptions" title="abaqus.Session.Session.Session.quickTimeOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">quickTimeOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/animation.html#abaqus.Animation.QuickTimeOptions.QuickTimeOptions" title="abaqus.Animation.QuickTimeOptions.QuickTimeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">QuickTimeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.viewports" title="abaqus.Session.Session.Session.viewports"><code class="xref py py-obj docutils literal notranslate"><span class="pre">viewports</span></code></a></p></td>
+<td><p>A repository of Viewport objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.customData" title="abaqus.Session.Session.Session.customData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.defaultFieldReportOptions" title="abaqus.Session.Session.Session.defaultFieldReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFieldReportOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.defaultFreeBodyReportOptions" title="abaqus.Session.Session.Session.defaultFreeBodyReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultFreeBodyReportOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.fieldReportOptions" title="abaqus.Session.Session.Session.fieldReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldReportOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/field_report.html#abaqus.FieldReport.FieldReportOptions.FieldReportOptions" title="abaqus.FieldReport.FieldReportOptions.FieldReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.freeBodyReportOptions" title="abaqus.Session.Session.Session.freeBodyReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodyReportOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/field_report.html#abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions" title="abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FreeBodyReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.odbs" title="abaqus.Session.Session.Session.odbs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbs</span></code></a></p></td>
+<td><p>A repository of Odb objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.scratchOdbs" title="abaqus.Session.Session.Session.scratchOdbs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scratchOdbs</span></code></a></p></td>
+<td><p>A repository of ScratchOdb objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.defaultOdbDisplay" title="abaqus.Session.Session.Session.defaultOdbDisplay"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultOdbDisplay</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/odb_display.html#abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay" title="abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultOdbDisplay</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.defaultPlot" title="abaqus.Session.Session.Session.defaultPlot"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultPlot</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/xy.html#abaqus.XY.DefaultPlot.DefaultPlot" title="abaqus.XY.DefaultPlot.DefaultPlot"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultPlot</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.defaultChartOptions" title="abaqus.Session.Session.Session.defaultChartOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultChartOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/xy.html#abaqus.XY.DefaultChartOptions.DefaultChartOptions" title="abaqus.XY.DefaultChartOptions.DefaultChartOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">DefaultChartOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.odbData" title="abaqus.Session.Session.Session.odbData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">odbData</span></code></a></p></td>
+<td><p>A repository of OdbData objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.mdbData" title="abaqus.Session.Session.Session.mdbData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">mdbData</span></code></a></p></td>
+<td><p>A repository of MdbData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.paths" title="abaqus.Session.Session.Session.paths"><code class="xref py py-obj docutils literal notranslate"><span class="pre">paths</span></code></a></p></td>
+<td><p>A repository of Path objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.freeBodies" title="abaqus.Session.Session.Session.freeBodies"><code class="xref py py-obj docutils literal notranslate"><span class="pre">freeBodies</span></code></a></p></td>
+<td><p>A repository of FreeBody objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.streams" title="abaqus.Session.Session.Session.streams"><code class="xref py py-obj docutils literal notranslate"><span class="pre">streams</span></code></a></p></td>
+<td><p>A repository of Stream objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.spectrums" title="abaqus.Session.Session.Session.spectrums"><code class="xref py py-obj docutils literal notranslate"><span class="pre">spectrums</span></code></a></p></td>
+<td><p>A repository of Spectrum objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.currentProbeValues" title="abaqus.Session.Session.Session.currentProbeValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentProbeValues</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/path.html#abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues" title="abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">CurrentProbeValues</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.defaultProbeOptions" title="abaqus.Session.Session.Session.defaultProbeOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.probeOptions" title="abaqus.Session.Session.Session.probeOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/path.html#abaqus.PathAndProbe.ProbeOptions.ProbeOptions" title="abaqus.PathAndProbe.ProbeOptions.ProbeOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.probeReport" title="abaqus.Session.Session.Session.probeReport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">probeReport</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.defaultProbeReport" title="abaqus.Session.Session.Session.defaultProbeReport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultProbeReport</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/path.html#abaqus.PathAndProbe.ProbeReport.ProbeReport" title="abaqus.PathAndProbe.ProbeReport.ProbeReport"><code class="xref py py-class docutils literal notranslate"><span class="pre">ProbeReport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.selectedProbeValues" title="abaqus.Session.Session.Session.selectedProbeValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">selectedProbeValues</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/path.html#abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues" title="abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues"><code class="xref py py-class docutils literal notranslate"><span class="pre">SelectedProbeValues</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.printOptions" title="abaqus.Session.Session.Session.printOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">printOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/print.html#abaqus.Print.PrintOptions.PrintOptions" title="abaqus.Print.PrintOptions.PrintOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PrintOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.epsOptions" title="abaqus.Session.Session.Session.epsOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">epsOptions</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="../reference/session/print.html#abaqus.Print.EpsOptions.EpsOptions" title="abaqus.Print.EpsOptions.EpsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">EpsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.pageSetupOptions" title="abaqus.Session.Session.Session.pageSetupOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pageSetupOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/print.html#abaqus.Print.PageSetupOptions.PageSetupOptions" title="abaqus.Print.PageSetupOptions.PageSetupOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PageSetupOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.pngOptions" title="abaqus.Session.Session.Session.pngOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pngOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/print.html#abaqus.Print.PngOptions.PngOptions" title="abaqus.Print.PngOptions.PngOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PngOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.psOptions" title="abaqus.Session.Session.Session.psOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">psOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/print.html#abaqus.Print.PsOptions.PsOptions" title="abaqus.Print.PsOptions.PsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">PsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.svgOptions" title="abaqus.Session.Session.Session.svgOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">svgOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/print.html#abaqus.Print.SvgOptions.SvgOptions" title="abaqus.Print.SvgOptions.SvgOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">SvgOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.tiffOptions" title="abaqus.Session.Session.Session.tiffOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tiffOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/mdb/model/predefined.html#abaqus.PredefinedField.TiffOptions.TiffOptions" title="abaqus.PredefinedField.TiffOptions.TiffOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">TiffOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.autoColors" title="abaqus.Session.Session.Session.autoColors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">autoColors</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="../reference/session.html#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used for color coding.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.xyColors" title="abaqus.Session.Session.Session.xyColors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyColors</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="../reference/session.html#abaqus.Session.AutoColors.AutoColors" title="abaqus.Session.AutoColors.AutoColors"><code class="xref py py-class docutils literal notranslate"><span class="pre">AutoColors</span></code></a> object specifying the color palette to be used forXYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.xyDataObjects" title="abaqus.Session.Session.Session.xyDataObjects"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyDataObjects</span></code></a></p></td>
+<td><p>A repository of XYData objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.curves" title="abaqus.Session.Session.Session.curves"><code class="xref py py-obj docutils literal notranslate"><span class="pre">curves</span></code></a></p></td>
+<td><p>A repository of XYCurve objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.xyPlots" title="abaqus.Session.Session.Session.xyPlots"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyPlots</span></code></a></p></td>
+<td><p>A repository of XYPlot objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.charts" title="abaqus.Session.Session.Session.charts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">charts</span></code></a></p></td>
+<td><p>A repository of Chart objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.defaultXYReportOptions" title="abaqus.Session.Session.Session.defaultXYReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultXYReportOptions</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="../reference/session/xy.html#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.xyReportOptions" title="abaqus.Session.Session.Session.xyReportOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyReportOptions</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="../reference/session/xy.html#abaqus.XY.XYReportOptions.XYReportOptions" title="abaqus.XY.XYReportOptions.XYReportOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">XYReportOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.views" title="abaqus.Session.Session.Session.views"><code class="xref py py-obj docutils literal notranslate"><span class="pre">views</span></code></a></p></td>
+<td><p>A repository of View objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.networkDatabaseConnectors" title="abaqus.Session.Session.Session.networkDatabaseConnectors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">networkDatabaseConnectors</span></code></a></p></td>
+<td><p>A repository of NetworkDatabaseConnector objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.displayGroups" title="abaqus.Session.Session.Session.displayGroups"><code class="xref py py-obj docutils literal notranslate"><span class="pre">displayGroups</span></code></a></p></td>
+<td><p>A repository of DisplayGroup objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.graphicsInfo" title="abaqus.Session.Session.Session.graphicsInfo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsInfo</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/display_options.html#abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo" title="abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsInfo</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.defaultGraphicsOptions" title="abaqus.Session.Session.Session.defaultGraphicsOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultGraphicsOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.graphicsOptions" title="abaqus.Session.Session.Session.graphicsOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">graphicsOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/display_options.html#abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions" title="abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">GraphicsOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.defaultViewportAnnotationOptions" title="abaqus.Session.Session.Session.defaultViewportAnnotationOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultViewportAnnotationOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/display_options.html#abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions" title="abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">ViewportAnnotationOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.queues" title="abaqus.Session.Session.Session.queues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">queues</span></code></a></p></td>
+<td><p>A repository of Queue objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.currentViewportName" title="abaqus.Session.Session.Session.currentViewportName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">currentViewportName</span></code></a></p></td>
+<td><p>A String specifying the name of the current viewport.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.sessionState" title="abaqus.Session.Session.Session.sessionState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sessionState</span></code></a></p></td>
+<td><p>A Dictionary object specifying the viewports and their associated models.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.images" title="abaqus.Session.Session.Session.images"><code class="xref py py-obj docutils literal notranslate"><span class="pre">images</span></code></a></p></td>
+<td><p>A repository of Image objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.movies" title="abaqus.Session.Session.Session.movies"><code class="xref py py-obj docutils literal notranslate"><span class="pre">movies</span></code></a></p></td>
+<td><p>A repository of Movie objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.defaultLightOptions" title="abaqus.Session.Session.Session.defaultLightOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultLightOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/display_options.html#abaqus.DisplayOptions.LightOptions.LightOptions" title="abaqus.DisplayOptions.LightOptions.LightOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">LightOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.drawingArea" title="abaqus.Session.Session.Session.drawingArea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawingArea</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/session/canvas.html#abaqus.Canvas.DrawingArea.DrawingArea" title="abaqus.Canvas.DrawingArea.DrawingArea"><code class="xref py py-class docutils literal notranslate"><span class="pre">DrawingArea</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.defaultMesherOptions" title="abaqus.Session.Session.Session.defaultMesherOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">defaultMesherOptions</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/mdb/model/mesh.html#abaqus.Mesh.MesherOptions.MesherOptions" title="abaqus.Mesh.MesherOptions.MesherOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">MesherOptions</span></code></a> object specifying how to control default settings in the Mesh module.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.drawings" title="abaqus.Session.Session.Session.drawings"><code class="xref py py-obj docutils literal notranslate"><span class="pre">drawings</span></code></a></p></td>
+<td><p>A repository of Drawing objects.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">AnimationSession</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.writeImageAnimation" title="abaqus.Session.Session.Session.writeImageAnimation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeImageAnimation</span></code></a>(fileName, format[, ...])</p></td>
+<td><p>This method writes the animations present in the list of canvas objects to a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.Movie" title="abaqus.Session.Session.Session.Movie"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Movie</span></code></a>(name, fileName[, startFrame, ...])</p></td>
+<td><p>This method creates a Movie object from the contents of the specified file.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">CanvasSession</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.Viewport" title="abaqus.Session.Session.Session.Viewport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Viewport</span></code></a>(name[, origin, width, height, ...])</p></td>
+<td><p>This method creates a Viewport object with the specified origin and dimensions.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">DisplayGroupSession</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.DisplayGroup" title="abaqus.Session.Session.Session.DisplayGroup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DisplayGroup</span></code></a>(name, leaf)</p></td>
+<td><p>This method creates a DisplayGroup object.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">FieldReportSession</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.writeFieldReport" title="abaqus.Session.Session.Session.writeFieldReport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeFieldReport</span></code></a>(filename, append, sortItem, ...)</p></td>
+<td><p>This method writes a FieldOutput object to a user-defined ASCII file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.writeFreeBodyReport" title="abaqus.Session.Session.Session.writeFreeBodyReport"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeFreeBodyReport</span></code></a>(fileName, append[, ...])</p></td>
+<td><p>This method writes a FreeBody object to a user-defined ASCII file.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">JobSession</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.Queue" title="abaqus.Session.Session.Session.Queue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Queue</span></code></a>(name, queueName[, hostName, fileCopy, ...])</p></td>
+<td><p>This method creates a Queue object.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbSession</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.ScratchOdb" title="abaqus.Session.Session.Session.ScratchOdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScratchOdb</span></code></a>(odb)</p></td>
+<td><p>This method creates a new ScratchOdb object.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">PathSession</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.Path" title="abaqus.Session.Session.Session.Path"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Path</span></code></a>(name, type, expression, ...)</p></td>
+<td><p>This method creates a Path object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.Spectrum" title="abaqus.Session.Session.Session.Spectrum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Spectrum</span></code></a>(name, colors)</p></td>
+<td><p>This method creates a Spectrum object and places it in the spectrums repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.Stream" title="abaqus.Session.Session.Session.Stream"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stream</span></code></a>(name, numPointsOnRake[, pointA, ...])</p></td>
+<td><p>This method creates aStream object and places it in the streams repository.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">XYSession</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.AreaStyle" title="abaqus.Session.Session.Session.AreaStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AreaStyle</span></code></a>([color, fill, style])</p></td>
+<td><p>This method creates an AreaStyle.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.LineStyle" title="abaqus.Session.Session.Session.LineStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LineStyle</span></code></a>([color, show, style, thickness])</p></td>
+<td><p>This method creates a LineStyle.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.QuantityType" title="abaqus.Session.Session.Session.QuantityType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">QuantityType</span></code></a>([label, type])</p></td>
+<td><p>This method creates a QuantityType object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.SymbolStyle" title="abaqus.Session.Session.Session.SymbolStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SymbolStyle</span></code></a>([color, show, marker, size])</p></td>
+<td><p>This method creates a SymbolStyle object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.TextStyle" title="abaqus.Session.Session.Session.TextStyle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TextStyle</span></code></a>([color, show, font, rotationAngle])</p></td>
+<td><p>This method creates a TextStyle.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.XYData" title="abaqus.Session.Session.Session.XYData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYData</span></code></a>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.XYDataFromFile" title="abaqus.Session.Session.Session.XYDataFromFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYDataFromFile</span></code></a>(fileName[, name, ...])</p></td>
+<td><p>This method creates an XYData object from data in an ASCII file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.XYDataFromHistory" title="abaqus.Session.Session.Session.XYDataFromHistory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYDataFromHistory</span></code></a>(odb, outputVariableName, steps)</p></td>
+<td><p>This method creates an XYData object by reading history data from an Odb object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.xyDataListFromField" title="abaqus.Session.Session.Session.xyDataListFromField"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyDataListFromField</span></code></a>(odb, outputPosition, ...)</p></td>
+<td><p>This method creates a list of XYData objects by reading field data from an Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.XYDataFromFreeBody" title="abaqus.Session.Session.Session.XYDataFromFreeBody"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYDataFromFreeBody</span></code></a>(odb[, force, moment, ...])</p></td>
+<td><p>This method creates a list of XYData objects by computing free body data from an Odb object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.XYDataFromShellThickness" title="abaqus.Session.Session.Session.XYDataFromShellThickness"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYDataFromShellThickness</span></code></a>(odb, ...[, ...])</p></td>
+<td><p>This method creates a list of XYData objects by reading through the thickness field data from an Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.XYDataFromPath" title="abaqus.Session.Session.Session.XYDataFromPath"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XYDataFromPath</span></code></a>(path, name[, ...])</p></td>
+<td><p>This method creates an XYData object from path information.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">XYSessionBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.linearizeStress" title="abaqus.Session.Session.Session.linearizeStress"><code class="xref py py-obj docutils literal notranslate"><span class="pre">linearizeStress</span></code></a>(name, path, startPoint, ...)</p></td>
+<td><p>This method is used to perform stress linearization along a defined stress line.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.setPathTolerance" title="abaqus.Session.Session.Session.setPathTolerance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setPathTolerance</span></code></a>([tolerance])</p></td>
+<td><p>This method is used to set the <strong>tolerance</strong> to be used when creating XYData objects by extracting results along Path objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.getPathTolerance" title="abaqus.Session.Session.Session.getPathTolerance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPathTolerance</span></code></a>()</p></td>
+<td><p>This method is used to get the <strong>tolerance</strong> used when creating XYData objects by extracting results along Path objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.setLimitForXYDataPlots" title="abaqus.Session.Session.Session.setLimitForXYDataPlots"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setLimitForXYDataPlots</span></code></a>([limit])</p></td>
+<td><p>This method is used to set the <strong>limit</strong> for number of XY data objects while creating XYData from field output.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.getLimitForXYDataPlots" title="abaqus.Session.Session.Session.getLimitForXYDataPlots"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getLimitForXYDataPlots</span></code></a>()</p></td>
+<td><p>This method is used to get the <strong>limit</strong> for number of XY data objects while creating XYData from field output.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">SessionBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.setValues" title="abaqus.Session.Session.Session.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([kernelMemoryLimit])</p></td>
+<td><p>This method modifies the Session object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.enableCADConnection" title="abaqus.Session.Session.Session.enableCADConnection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableCADConnection</span></code></a>(CADName[, portNum])</p></td>
+<td><p>This method enables the Abaqus/CAE listening port for the specified <strong>CAD</strong> system.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.isCADConnectionEnabled" title="abaqus.Session.Session.Session.isCADConnectionEnabled"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isCADConnectionEnabled</span></code></a>()</p></td>
+<td><p>This method checks the status of CAD Connection.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.disableCADConnection" title="abaqus.Session.Session.Session.disableCADConnection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableCADConnection</span></code></a>(CADName)</p></td>
+<td><p>This method disables an associative import CAD connection that was enabled.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.enableParameterUpdate" title="abaqus.Session.Session.Session.enableParameterUpdate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">enableParameterUpdate</span></code></a>(CADName, CADVersion[, ...])</p></td>
+<td><p>This method enables parameter updates for ProE and NX by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.setCADPortNumber" title="abaqus.Session.Session.Session.setCADPortNumber"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setCADPortNumber</span></code></a>(CADName, Port)</p></td>
+<td><p>This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a connection with the listening port previously setup by the CAD application.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.updateCADParameters" title="abaqus.Session.Session.Session.updateCADParameters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">updateCADParameters</span></code></a>(modelName, CADName, ...)</p></td>
+<td><p>This method updates the parameters for the specified model using the specified parameter file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.disableParameterUpdate" title="abaqus.Session.Session.Session.disableParameterUpdate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">disableParameterUpdate</span></code></a>(CADName)</p></td>
+<td><p>This method disables an associative CAD connection using parameters.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.printToFile" title="abaqus.Session.Session.Session.printToFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToFile</span></code></a>(fileName[, format, ...])</p></td>
+<td><p>This method prints canvas objects to a file using the attributes stored in the PrintOptions object and the appropriate format options object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.printToPrinter" title="abaqus.Session.Session.Session.printToPrinter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">printToPrinter</span></code></a>([printCommand, numCopies, ...])</p></td>
+<td><p>This method prints canvas objects to a Windows printer or to a PostScript printer.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.saveOptions" title="abaqus.Session.Session.Session.saveOptions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveOptions</span></code></a>(directory)</p></td>
+<td><p>This method saves your customized display settings.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.writeVrmlFile" title="abaqus.Session.Session.Session.writeVrmlFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeVrmlFile</span></code></a>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.write3DXMLFile" title="abaqus.Session.Session.Session.write3DXMLFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write3DXMLFile</span></code></a>(fileName[, format, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.writeOBJFile" title="abaqus.Session.Session.Session.writeOBJFile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeOBJFile</span></code></a>(fileName[, canvasObjects])</p></td>
+<td><p>This method exports the current viewport objects to a file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/session.html#abaqus.Session.Session.Session.openOdb" title="abaqus.Session.Session.Session.openOdb"><code class="xref py py-obj docutils literal notranslate"><span class="pre">openOdb</span></code></a>(name[, path, readOnly])</p></td>
+<td><p>This method opens an existing output database (<cite>.odb</cite>) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+</dd></dl>
+
+<hr class="docutils" />
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="odb.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Abaqus Output Database</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="../references.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">API Reference</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../_sources/summary/session.rst.txt">
+        <i class="fas fa-file-alt"></i> Show Source
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
