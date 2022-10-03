@@ -29,6 +29,10 @@ jobs:
         pip install -r docs/requirements.txt
         sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html
     - run: touch docs/build/${{ matrix.language }}/html/.nojekyll
+    - id: Get lowercase of the branch name
+      uses: ASzc/change-string-case-action@v2
+      with:
+        string: ${{ github.ref_name }}
     - uses: cpina/github-action-push-to-another-repository@main
       env:
         SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
@@ -38,4 +42,4 @@ jobs:
         destination-repository-name: 'docs.abqpy.com'
         user-email: hailin.wang@connect.polyu.hk
         target-branch: main
-        target-directory: ${{ matrix.language }}/${{ github.ref_name }}
+        target-directory: ${{ matrix.language }}/${{ steps.string.outputs.lowercase }}
