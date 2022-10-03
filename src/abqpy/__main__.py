@@ -8,11 +8,11 @@ def cli():
         "script", metavar="script", type=str, nargs=1, help="the python script to run"
     )
     parser.add_argument(
-        "-n",
-        "--noGUI",
-        dest="noGUI",
+        "-g",
+        "--GUI",
+        dest="GUI",
         action="store_true",
-        help="run abaqus command in batch mode",
+        help="run abaqus cae with the graphical user interface (GUI)",
     )
     parser.add_argument(
         "-m",
@@ -30,7 +30,7 @@ def cli():
     )
     args = parser.parse_args()
     if args.mode == "cae":
-        option = "noGUI" if args.noGUI else "script"
+        option = "script" if args.GUI else "noGUI"
         cmd = f"abaqus cae {option}={args.script[0]} {' '.join(args.others)}"
         message = f"Running the following abaqus command: {cmd}"
         print("", "-" * len(message), message, "-" * len(message), sep="\n")
