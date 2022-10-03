@@ -1,0 +1,1586 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Messaging &#8212; abqpy 2019 documentation</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/kernel/messaging';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2019';
+        </script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Text Representation" href="text_representation.html" />
+    <link rel="prev" title="Custom Kernel" href="kernel.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2019 documentation</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2019  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2019  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Modules
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../mdb.html">
+   Abaqus Model Database
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../mdb/model.html">
+     Model
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/adaptivity.html">
+       Adaptivity
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/amplitude.html">
+       Amplitude
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/bc.html">
+       Boundary Condition
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/calibration.html">
+       Calibration of Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/constraint.html">
+       Constraint
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/field.html">
+       Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/filter.html">
+       Filter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/interaction.html">
+       Interaction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/load.html">
+       Load
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/material.html">
+       Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/mesh.html">
+       Mesh
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/optimization.html">
+       Optimization
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/output.html">
+       Output Request
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../mdb/model/part_assembly.html">
+       Part and Assembly
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part.html">
+         Part
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/assembly.html">
+         Assembly
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part_assembly/datum.html">
+         Datum
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part_assembly/engineering.html">
+         Engineering Feature
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part_assembly/feature.html">
+         Feature
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part_assembly/geometry.html">
+         Basic Geometry
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part_assembly/region.html">
+         Region
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/predefined.html">
+       Predefined Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/profile.html">
+       Beam Section Profile
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/property.html">
+       Property
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../mdb/model/section.html">
+       Section
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/section/connector.html">
+         Connector
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/sketcher.html">
+       Sketcher
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../mdb/model/step.html">
+       Step
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-5">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/step/step_miscellaneous.html">
+         Step Miscellaneous
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mdb/job.html">
+     Job
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mdb/annotation.html">
+     Annotation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mdb/edit_mesh.html">
+     Edit Mesh
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../odb.html">
+   Abaqus Output Database
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../session.html">
+   Abaqus Session
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/animation.html">
+     Animation Options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/canvas.html">
+     Canvas
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/display_options.html">
+     Display Options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/display.html">
+     Display Group
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/field_report.html">
+     FieldReport
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/odb_display.html">
+     Odb Display
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/path.html">
+     Path and Probe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/plot_options.html">
+     Plot Options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/print.html">
+     Print
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/xy.html">
+     XY
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../kernel.html">
+   Kernel
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="cae_display_preferences.html">
+     Abaqus CAE Display Preferences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="input.html">
+     Input File Parser
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="kernel.html">
+     Custom Kernel
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Messaging
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="text_representation.html">
+     Text Representation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="utility.html">
+     Utility and View
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="messaging">
+<h1>Messaging<a class="headerlink" href="#messaging" title="Permalink to this heading">#</a></h1>
+<p>Messaging commands are available only if Abaqus/CAE is run interactively using the GUI.</p>
+<section id="object-features">
+<h2>Object features<a class="headerlink" href="#object-features" title="Permalink to this heading">#</a></h2>
+<section id="dataobject">
+<h3>DataObject<a class="headerlink" href="#dataobject" title="Permalink to this heading">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DataObject</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L7-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject" title="Permalink to this definition">#</a></dt>
+<dd><p>An instance of the DataObject object is passed to each callback. The DataObject object
+has no methods. The members of a DataObject object depend on the type of the object. All
+DataObject instances have the following members, regardless of type:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-dataobjectpyc.htm?contextscope=all">DataObject on help.3ds.com/2019</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.phase" title="abaqus.Messaging.DataObject.DataObject.phase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">phase</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the phase of the analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.processId" title="abaqus.Messaging.DataObject.DataObject.processId"><code class="xref py py-obj docutils literal notranslate"><span class="pre">processId</span></code></a></p></td>
+<td><p>An Int specifying the process ID of the analysis product.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.threadId" title="abaqus.Messaging.DataObject.DataObject.threadId"><code class="xref py py-obj docutils literal notranslate"><span class="pre">threadId</span></code></a></p></td>
+<td><p>An Int specifying the thread ID of the analysis product.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.timeStamp" title="abaqus.Messaging.DataObject.DataObject.timeStamp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeStamp</span></code></a></p></td>
+<td><p>00 UTC, January 1, 1970.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.attempts" title="abaqus.Messaging.DataObject.DataObject.attempts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">attempts</span></code></a></p></td>
+<td><p>An Int specifying the number of attempts made to reach equilibrium during this step.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.dof" title="abaqus.Messaging.DataObject.DataObject.dof"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dof</span></code></a></p></td>
+<td><p>An Int specifying the degree of freedom requested for monitoring the output.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.equilibrium" title="abaqus.Messaging.DataObject.DataObject.equilibrium"><code class="xref py py-obj docutils literal notranslate"><span class="pre">equilibrium</span></code></a></p></td>
+<td><p>An Int specifying the number of equilibrium iterations made during this increment.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.increment" title="abaqus.Messaging.DataObject.DataObject.increment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">increment</span></code></a></p></td>
+<td><p>An Int specifying the increment of the analysis.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.iterations" title="abaqus.Messaging.DataObject.DataObject.iterations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">iterations</span></code></a></p></td>
+<td><p>An Int specifying the number of iterations in the step.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.node" title="abaqus.Messaging.DataObject.DataObject.node"><code class="xref py py-obj docutils literal notranslate"><span class="pre">node</span></code></a></p></td>
+<td><p>An Int specifying the node number requested for monitoring output.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.severe" title="abaqus.Messaging.DataObject.DataObject.severe"><code class="xref py py-obj docutils literal notranslate"><span class="pre">severe</span></code></a></p></td>
+<td><p>An Int specifying the number of severe discontinuity iterations completed during this increment.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.step" title="abaqus.Messaging.DataObject.DataObject.step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">step</span></code></a></p></td>
+<td><p>An Int specifying the current step number.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.stepId" title="abaqus.Messaging.DataObject.DataObject.stepId"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stepId</span></code></a></p></td>
+<td><p>An Int specifying the ID of the step.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.stepTime" title="abaqus.Messaging.DataObject.DataObject.stepTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stepTime</span></code></a></p></td>
+<td><p>A Float specifying the step time corresponding to the current increment.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.time" title="abaqus.Messaging.DataObject.DataObject.time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">time</span></code></a></p></td>
+<td><p>A Float specifying the total time corresponding to the monitor data.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.timeIncrement" title="abaqus.Messaging.DataObject.DataObject.timeIncrement"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeIncrement</span></code></a></p></td>
+<td><p>A Float specifying the time increment used in the current step.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.totalTime" title="abaqus.Messaging.DataObject.DataObject.totalTime"><code class="xref py py-obj docutils literal notranslate"><span class="pre">totalTime</span></code></a></p></td>
+<td><p>A Float specifying the total time completed in the analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.value" title="abaqus.Messaging.DataObject.DataObject.value"><code class="xref py py-obj docutils literal notranslate"><span class="pre">value</span></code></a></p></td>
+<td><p>A Float specifying the current value of the degree of freedom requested for monitoring.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.clientHost" title="abaqus.Messaging.DataObject.DataObject.clientHost"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clientHost</span></code></a></p></td>
+<td><p>A String specifying the host name of the machine that is running the analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.clientName" title="abaqus.Messaging.DataObject.DataObject.clientName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clientName</span></code></a></p></td>
+<td><p>A String specifying the name of the client that responded to the callback function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.file" title="abaqus.Messaging.DataObject.DataObject.file"><code class="xref py py-obj docutils literal notranslate"><span class="pre">file</span></code></a></p></td>
+<td><p>A String specifying the full path of the output database.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.heading" title="abaqus.Messaging.DataObject.DataObject.heading"><code class="xref py py-obj docutils literal notranslate"><span class="pre">heading</span></code></a></p></td>
+<td><p>A String specifying the job heading.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.message" title="abaqus.Messaging.DataObject.DataObject.message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">message</span></code></a></p></td>
+<td><p>A String specifying the job heading.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.nset" title="abaqus.Messaging.DataObject.DataObject.nset"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nset</span></code></a></p></td>
+<td><p>A String specifying the node set specified for monitoring output.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.DataObject.DataObject.stepName" title="abaqus.Messaging.DataObject.DataObject.stepName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">stepName</span></code></a></p></td>
+<td><p>A String specifying the name of the step.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.attempts">
+<span class="sig-name descname"><span class="pre">attempts</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L30-L31"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.attempts" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of attempts made to reach equilibrium during this step.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.clientHost">
+<span class="sig-name descname"><span class="pre">clientHost</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L73-L74"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.clientHost" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the host name of the machine that is running the analysis.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.clientName">
+<span class="sig-name descname"><span class="pre">clientName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L76-L78"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.clientName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the client that responded to the callback function.
+Possible values are BatchPre, Packager, Standard, Explicit, and Calculator.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.dof">
+<span class="sig-name descname"><span class="pre">dof</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L33-L34"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.dof" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the degree of freedom requested for monitoring the output.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.equilibrium">
+<span class="sig-name descname"><span class="pre">equilibrium</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L36-L37"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.equilibrium" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of equilibrium iterations made during this increment.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.file">
+<span class="sig-name descname"><span class="pre">file</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L80-L81"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.file" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the full path of the output database.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.heading">
+<span class="sig-name descname"><span class="pre">heading</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L83-L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.heading" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the job heading.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.increment">
+<span class="sig-name descname"><span class="pre">increment</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L39-L40"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.increment" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the increment of the analysis.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.iterations">
+<span class="sig-name descname"><span class="pre">iterations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L42-L43"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.iterations" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of iterations in the step.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.message">
+<span class="sig-name descname"><span class="pre">message</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L83-L84"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.message" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the job heading.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.node">
+<span class="sig-name descname"><span class="pre">node</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L45-L46"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.node" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the node number requested for monitoring output.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.nset">
+<span class="sig-name descname"><span class="pre">nset</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L89-L90"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.nset" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the node set specified for monitoring output.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.phase">
+<span class="sig-name descname"><span class="pre">phase</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L14-L17"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.phase" title="Permalink to this definition">#</a></dt>
+<dd><p>A SymbolicConstant specifying the phase of the analysis. Possible values are
+BATCHPRE_PHASE, PACKAGER_PHASE, STANDARD_PHASE, EXPLICIT_PHASE, CALCULATOR_PHASE, and
+UNKNOWN_PHASE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.processId">
+<span class="sig-name descname"><span class="pre">processId</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L19-L20"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.processId" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the process ID of the analysis product.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.severe">
+<span class="sig-name descname"><span class="pre">severe</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L48-L50"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.severe" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the number of severe discontinuity iterations completed during this
+increment.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.step">
+<span class="sig-name descname"><span class="pre">step</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L52-L53"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.step" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the current step number. Step number 1 corresponds to the first step.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.stepId">
+<span class="sig-name descname"><span class="pre">stepId</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L55-L56"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.stepId" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the ID of the step.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.stepName">
+<span class="sig-name descname"><span class="pre">stepName</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">''</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L7-L93"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.stepName" title="Permalink to this definition">#</a></dt>
+<dd><p>A String specifying the name of the step.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.stepTime">
+<span class="sig-name descname"><span class="pre">stepTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L58-L59"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.stepTime" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the step time corresponding to the current increment.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.threadId">
+<span class="sig-name descname"><span class="pre">threadId</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L22-L24"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.threadId" title="Permalink to this definition">#</a></dt>
+<dd><p>An Int specifying the thread ID of the analysis product. Threads are used for parallel
+or multiprocessing; in most cases <strong>threadId</strong> is set to zero.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.time">
+<span class="sig-name descname"><span class="pre">time</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L61-L62"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.time" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the total time corresponding to the monitor data.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.timeIncrement">
+<span class="sig-name descname"><span class="pre">timeIncrement</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L64-L65"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.timeIncrement" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the time increment used in the current step.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.timeStamp">
+<span class="sig-name descname"><span class="pre">timeStamp</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><span class="pre">int</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L26-L28"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.timeStamp" title="Permalink to this definition">#</a></dt>
+<dd><p>00 UTC, January
+1, 1970.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>An Int specifying the time the message was sent in seconds since 00</p>
+</dd>
+<dt class="field-even">Type<span class="colon">:</span></dt>
+<dd class="field-even"><p>00</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.totalTime">
+<span class="sig-name descname"><span class="pre">totalTime</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L67-L68"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.totalTime" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the total time completed in the analysis.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Messaging.DataObject.DataObject.value">
+<span class="sig-name descname"><span class="pre">value</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.10)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/DataObject.py#L70-L71"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.DataObject.DataObject.value" title="Permalink to this definition">#</a></dt>
+<dd><p>A Float specifying the current value of the degree of freedom requested for monitoring.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="monitormgr">
+<h3>MonitorMgr<a class="headerlink" href="#monitormgr" title="Permalink to this heading">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Messaging.MonitorMgr.MonitorMgr">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MonitorMgr</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/MonitorMgr.py#L5-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.MonitorMgr.MonitorMgr" title="Permalink to this definition">#</a></dt>
+<dd><p>An instance of the MonitorMgr object is created when you import the abaqus module. No
+other instance of the MonitorMgr object is required. (This MonitorMgr object is not to
+be confused with the degree of freedom (DOF) monitor that is constructed from the Step
+object.)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">monitorManager</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-monitormgrpyc.htm?contextscope=all">MonitorMgr on help.3ds.com/2019</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback" title="abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback"><code class="xref py py-obj docutils literal notranslate"><span class="pre">addMessageCallback</span></code></a>(jobName, messageType, ...)</p></td>
+<td><p>This method specifies a callback function that will be called when the specified message is received from the analysis product.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback" title="abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback"><code class="xref py py-obj docutils literal notranslate"><span class="pre">removeMessageCallback</span></code></a>(jobName, messageType, ...)</p></td>
+<td><p>This method removes a callback function.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.checkMonitorStatus" title="abaqus.Messaging.MonitorMgr.MonitorMgr.checkMonitorStatus"><code class="xref py py-obj docutils literal notranslate"><span class="pre">checkMonitorStatus</span></code></a>()</p></td>
+<td><p>This method raises a MonitorError exception if the monitoring status is not ENABLED.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr class="docutils" />
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback">
+<span class="sig-name descname"><span class="pre">addMessageCallback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jobName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">messageType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userData</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/MonitorMgr.py#L18-L74"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback" title="Permalink to this definition">#</a></dt>
+<dd><p>This method specifies a callback function that will be called when the specified message
+is received from the analysis product.
+For more information, see An example of a callback function.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-monitormgrpyc.htm?contextscope=all#simaker-monitormgraddmessagecallbackpyc">MonitorMgr.addMessageCallback on help.3ds.com/2019</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>jobName</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A String specifying the name of the job to be monitored or the SymbolicConstant ANY_JOB.</p></li>
+<li><p><strong>messageType</strong> (<a class="reference internal" href="utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>) – <p>A SymbolicConstant specifying which message type will call this callback. Possible
+values are:</p>
+<ul>
+<li><p>ABORTED</p></li>
+<li><p>ANY_JOB</p></li>
+<li><p>ANY_MESSAGE_TYPE</p></li>
+<li><p>COMPLETED</p></li>
+<li><p>END_STEP</p></li>
+<li><p>ERROR</p></li>
+<li><p>HEADING</p></li>
+<li><p>HEALER_JOB</p></li>
+<li><p>HEALER_TYPE</p></li>
+<li><p>INTERRUPTED</p></li>
+<li><p>ITERATION</p></li>
+<li><p>JOB_ABORTED</p></li>
+<li><p>JOB_COMPLETED</p></li>
+<li><p>JOB_INTERRUPTED</p></li>
+<li><p>JOB_SUBMITTED</p></li>
+<li><p>MONITOR_DATA</p></li>
+<li><p>ODB_FILE</p></li>
+<li><p>ODB_FRAME</p></li>
+<li><p>SIMULATION_ABORTED</p></li>
+<li><p>SIMULATION_COMPLETED</p></li>
+<li><p>SIMULATION_INTERRUPTED</p></li>
+<li><p>SIMULATION_SUBMITTED</p></li>
+<li><p>STARTED</p></li>
+<li><p>STATUS</p></li>
+<li><p>STEP</p></li>
+<li><p>WARNING</p></li>
+</ul>
+</p></li>
+<li><p><strong>callback</strong> (<a class="reference internal" href="utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>) – A Python function to be called. The interface definition of the callback function is
+<cite>def onMessage(jobName, messageType, data, userData)</cite> <strong>jobName</strong> is a
+String. <strong>messageType</strong> is a SymbolicConstant with possible values as listed previously for
+the addMessageCallback method. <strong>data</strong> is a DataObject object. <strong>userData</strong> is the object
+passed as the <strong>userData</strong> argument to the addMessageCallback method.</p></li>
+<li><p><strong>userData</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">''</span></code>) – Any Python object or None. This object is passed to the callback function.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Messaging.MonitorMgr.MonitorMgr.checkMonitorStatus">
+<span class="sig-name descname"><span class="pre">checkMonitorStatus</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/MonitorMgr.py#L125-L134"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.checkMonitorStatus" title="Permalink to this definition">#</a></dt>
+<dd><p>This method raises a MonitorError exception if the monitoring status is not ENABLED.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>MonitorError</strong> – Status is not ENABLED</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback">
+<span class="sig-name descname"><span class="pre">removeMessageCallback</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jobName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">messageType</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">callback</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">userData</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/Messaging/MonitorMgr.py#L76-L123"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback" title="Permalink to this definition">#</a></dt>
+<dd><p>This method removes a callback function. You specify the callback function to remove
+using the same arguments you used to add the callback.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-monitormgrpyc.htm?contextscope=all#simaker-monitormgrremovemessagecallbackpyc">MonitorMgr.removeMessageCallback on help.3ds.com/2019</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>jobName</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A String specifying the name of the job to be monitored or the SymbolicConstant ANY_JOB.</p></li>
+<li><p><strong>messageType</strong> (<a class="reference internal" href="utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>) – A SymbolicConstant specifying which message type will call this callback. Possible
+values are:
+- ABORTED
+- ANY_JOB
+- ANY_MESSAGE_TYPE
+- COMPLETED
+- END_STEP
+- ERROR
+- HEADING
+- HEALER_JOB
+- HEALER_TYPE
+- INTERRUPTED
+- ITERATION
+- JOB_ABORTED
+- JOB_COMPLETED
+- JOB_INTERRUPTED
+- JOB_SUBMITTED
+- MONITOR_DATA
+- ODB_FILE
+- ODB_FRAME
+- SIMULATION_ABORTED
+- SIMULATION_COMPLETED
+- SIMULATION_INTERRUPTED
+- SIMULATION_SUBMITTED
+- STARTED
+- STATUS
+- STEP
+- WARNING</p></li>
+<li><p><strong>callback</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A Python function to be called; it must be the same as the <strong>callback</strong> argument specified
+in the original call to addMessageCallback.</p></li>
+<li><p><strong>userData</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – Any Python object or None; it must be the same as the <strong>userData</strong> argument specified in
+the original call to addMessageCallback.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="kernel.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Custom Kernel</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="text_representation.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Text Representation</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#object-features">
+   Object features
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#dataobject">
+     DataObject
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         DataObject
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.attempts">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.attempts
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.clientHost">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.clientHost
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.clientName">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.clientName
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.dof">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.dof
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.equilibrium">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.equilibrium
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.file">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.file
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.heading">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.heading
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.increment">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.increment
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.iterations">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.iterations
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.message">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.message
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.node">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.node
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.nset">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.nset
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.phase">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.phase
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.processId">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.processId
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.severe">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.severe
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.step">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.step
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.stepId">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.stepId
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.stepName">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.stepName
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.stepTime">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.stepTime
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.threadId">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.threadId
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.time">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.time
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.timeIncrement">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.timeIncrement
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.timeStamp">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.timeStamp
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.totalTime">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.totalTime
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.DataObject.DataObject.value">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           DataObject.value
+          </span>
+         </code>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#monitormgr">
+     MonitorMgr
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Messaging.MonitorMgr.MonitorMgr">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         MonitorMgr
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.addMessageCallback">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           MonitorMgr.addMessageCallback()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.checkMonitorStatus">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           MonitorMgr.checkMonitorStatus()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Messaging.MonitorMgr.MonitorMgr.removeMessageCallback">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           MonitorMgr.removeMessageCallback()
+          </span>
+         </code>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../_sources/reference/kernel/messaging.rst.txt">
+        <i class="fas fa-file-alt"></i> Show Source
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
