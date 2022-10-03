@@ -1,0 +1,1660 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>The basics of Python &#8212; abqpy 2020 documentation</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user/python/introduction/python-basics';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2020';
+        </script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Programming techniques" href="programming.html" />
+    <link rel="prev" title="Object-oriented basics" href="oop-basics.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2020 documentation</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2020  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2020  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../about.html">
+   About the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/interface.html">
+     Abaqus/CAE and the Abaqus Scripting Interface
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/interact.html">
+     How does the Abaqus Scripting Interface interact with Abaqus/CAE?
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../about/examples.html">
+     Simple examples
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/create-part.html">
+       Creating a part
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/read-output.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/summary.html">
+       Summary
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../python.html">
+   Using the Abaqus Scripting Interface
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../introduction.html">
+     Introduction to Python
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="python-abaqus.html">
+       Python and Abaqus
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="python-resources.html">
+       Python resources
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="python-interpreter.html">
+       Using the Python interpreter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oop-basics.html">
+       Object-oriented basics
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       The basics of Python
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="programming.html">
+       Programming techniques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="further-reading.html">
+       Further reading
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../python-abaqus.html">
+     Using Python and the Abaqus Scripting Interface
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/executing.html">
+       Executing scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/types.html">
+       Abaqus Scripting Interface data types
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/oop.html">
+       Object-oriented programming and the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/errors.html">
+       Error handling in the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/extending.html">
+       Extending the Abaqus Scripting Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../use-scripts.html">
+     Using the Abaqus Scripting Interface with Abaqus/CAE
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/object-model.html">
+       The Abaqus object model
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/modify-objects.html">
+       Copying, deleting, and renaming Abaqus Scripting Interface objects
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/sequences.html">
+       Abaqus/CAE sequences
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/namespace.html">
+       Namespace
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/specify-viewport.html">
+       Specifying what is displayed in the viewport
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/specify-region.html">
+       Specifying a region
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/user-input.html">
+       Prompting the user for input
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/interact.html">
+       Interacting with Abaqus/Standard and Abaqus/Explicit
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/environment-file.html">
+       Using Abaqus Scripting Interface commands in your environment file
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../environment.html">
+   The Abaqus Python Development Environment
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/about.html">
+     About the Abaqus Python development environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/pde-basics.html">
+     Abaqus PDE basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/use-pde.html">
+     Using the Abaqus PDE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../examples.html">
+   Putting it all Together: Abaqus Scripting Interface Examples
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/cantilever.html">
+     Reproducing the cantilever beam tutorial
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/plot.html">
+     Generating a customized plot
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/sensitivity.html">
+     Investigating the skew sensitivity of shell elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/settings.html">
+     Editing display preferences and GUI settings
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../output.html">
+   Accessing an Output Database
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../output/python.html">
+     Using the Abaqus Scripting Interface to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/need-what-to-understand.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/execute-script.html">
+       Executing a script that accesses an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/examples.html">
+       Example scripts that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../output/cpp.html">
+     Using C++ to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/about.html">
+       About the C++ interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/need-what-access.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/compile-link.html">
+       Compiling and linking your C++ source code
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/access.html">
+       Accessing the C++ interface from an existing application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/architecture.html">
+       The Abaqus C++ API architecture
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/utility.html">
+       Utility interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/examples.html">
+       Example programs that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="the-basics-of-python">
+<h1>The basics of Python<a class="headerlink" href="#the-basics-of-python" title="Permalink to this heading">#</a></h1>
+<p>The following sections introduce you to the basics of the Python language.</p>
+<section id="variable-names-and-assignment">
+<h2>Variable names and assignment<a class="headerlink" href="#variable-names-and-assignment" title="Permalink to this heading">#</a></h2>
+<p>The expression</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myName</span> <span class="o">=</span> <span class="s1">&#39;Einstein&#39;</span>
+</pre></div>
+</div>
+<p>creates a variable called <cite>myName</cite> that refers to a String object.</p>
+<p>To see the value of a variable or expression, simply type the variable name or the expression at the Python prompt, and press <strong>Enter</strong>. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myName</span> <span class="o">=</span> <span class="s1">&#39;Einstein&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myName</span>
+<span class="s1">&#39;Einstein&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="mf">3.0</span> <span class="o">/</span> <span class="mf">4.0</span>
+<span class="mf">0.75</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">3.0</span> <span class="o">/</span> <span class="mf">4.0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
+<span class="mf">0.75</span>
+</pre></div>
+</div>
+<p>Python creates a variable when you assign a value to it. Python provides several forms of the assignment statement; for example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myName</span> <span class="o">=</span> <span class="s1">&#39;Einstein&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myName</span><span class="p">,</span> <span class="n">yourName</span> <span class="o">=</span> <span class="s1">&#39;Einstein&#39;</span><span class="p">,</span> <span class="s1">&#39;Newton&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myName</span> <span class="o">=</span> <span class="n">yourName</span> <span class="o">=</span> <span class="s1">&#39;Einstein&#39;</span>
+</pre></div>
+</div>
+<p>The second line assigns the string ‘Einstein’ to the variable myName and assigns the string ‘Newton’ to the variable yourName. The third line assigns the string ‘Einstein’ to both myName and yourName.</p>
+<p>The following naming rules apply:</p>
+<ul class="simple">
+<li><p>Variable names must start with a letter or an underscore character and can contain any number of letters, digits, or underscores. load_3 and _frictionStep are legal variable names; 3load, load_3$, and $frictionStep are not legal names. There is no limit on the length of a variable name.</p></li>
+<li><p>Some words are reserved and cannot be used to name a variable; for example, print, while, return, and class.</p></li>
+<li><p>Python is case sensitive. A variable named Load is different from a variable named load.</p></li>
+</ul>
+<p>When you assign a variable in a Python program, the variable refers to a Python object, but the variable is not an object itself. For example, the expression numSpokes=3 creates a variable that refers to an integer object; however, numSpokes is not an object. You can change the object to which a variable refers. numSpokes can refer to a real number on one line, an integer on the next line, and a viewport on the next line.</p>
+<p>The first example script in <a class="reference internal" href="../../about/examples/create-part.html"><span class="doc">Creating a part</span></a> created a model using the following statement:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myModel</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Model</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Model A&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The constructor <cite>mdb.Model(name=’Model A’)</cite> creates an instance of a model, and this instance is a Python object. The object created is <cite>mdb.models[‘Model A’]</cite>, and the variable myModel refers to this object.</p>
+<p>An object always has a type. In our example the type of <cite>mdb.models[‘Model A’]</cite> is Model. An object’s type cannot be changed. The type defines the data encapsulated by an object—its members—and the functions that can manipulate those data—its methods. Unlike most programming languages, you do not need to declare the type of a variable before you use it. Python determines the type when the assignment statement is executed. The Abaqus Scripting Interface uses the term object to refer to a specific Abaqus type as well as to an instance of that type; for example, a Model object refers to a Model type and to an instance of a Model type.</p>
+</section>
+<section id="python-data-types">
+<span id="id1"></span><h2>Python data types<a class="headerlink" href="#python-data-types" title="Permalink to this heading">#</a></h2>
+<p>Python includes the following built-in data types:</p>
+<section id="integer">
+<h3>Integer<a class="headerlink" href="#integer" title="Permalink to this heading">#</a></h3>
+<p>To create variables called i and j that refer to integer objects, type the following at the Python prompt:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">64</span>
+</pre></div>
+</div>
+<p>An integer is based on a C long and can be compared to a Fortran integer*4 or *8. For extremely large integer values, you should declare a long integer. The size of a long integer is essentially unlimited. The L at the end of the number indicates that it is a long integer.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">nodes</span> <span class="o">=</span> <span class="il">2000000L</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">bigNumber</span> <span class="o">=</span> <span class="il">120L</span><span class="o">**</span><span class="mi">21</span>
+</pre></div>
+</div>
+<p>Use int(<em>n</em>) to convert a variable to an integer; use long(<em>n</em>) to convert a variable to a long integer.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">load</span>  <span class="o">=</span> <span class="mf">279.86</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">iLoad</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">load</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">iLoad</span>
+<span class="mi">279</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">64</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">bigNumber</span> <span class="o">=</span> <span class="nb">long</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">**</span><span class="n">b</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s1">&#39;bigNumber = &#39;</span><span class="p">,</span> <span class="n">bigNumber</span>
+<span class="n">bigNumber</span> <span class="o">=</span> <span class="mi">18446744073709551616</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All Abaqus Scripting Interface object types begin with an uppercase character; for example, a Part or a Viewport. An integer is another kind of object and follows the same convention. The Abaqus Scripting Interface refers to an integer object as an Int. Similarly, the Abaqus Scripting Interface refers to a floating-point object as a Float.</p>
+</div>
+</section>
+<section id="float">
+<h3>Float<a class="headerlink" href="#float" title="Permalink to this heading">#</a></h3>
+<p>Floats represent floating-point numbers or real numbers. You can use exponential notation for floats.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">pi</span>   <span class="o">=</span> <span class="mf">22.0</span><span class="o">/</span><span class="mf">7.0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">r</span>    <span class="o">=</span> <span class="mf">2.345e-6</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">area</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">r</span> <span class="o">*</span> <span class="n">r</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s1">&#39;Area = &#39;</span><span class="p">,</span> <span class="n">area</span>
+<span class="n">Area</span> <span class="o">=</span>  <span class="mf">1.728265e-11</span>
+</pre></div>
+</div>
+<p>A float is based on a C double and can be compared to a Fortran real*8. Use float(<strong>n</strong>) to convert a variable to a float.</p>
+</section>
+<section id="complex">
+<h3>Complex<a class="headerlink" href="#complex" title="Permalink to this heading">#</a></h3>
+<p>Complex numbers use the j notation to indicate the imaginary part of the number. Python provides methods to manipulate complex numbers. The conjugate method calculates the conjugate of a complex number.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">4j</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">conjugate</span><span class="p">()</span>
+<span class="p">(</span><span class="mi">2</span><span class="o">-</span><span class="mi">4j</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A complex number has two members, the real member and the imaginary member.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">4j</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">real</span>
+<span class="mf">2.0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span><span class="o">.</span><span class="n">imag</span>
+<span class="mf">4.0</span>
+</pre></div>
+</div>
+<p>Python provides complex math functions to operate on complex variables. You need to import the cmath module to use the complex square root function.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">cmath</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4j</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">cmath</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">2</span><span class="o">+</span><span class="mi">1j</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Remember, functions of a type are called methods; data of a type are called members. In our example conjugate is a method of a complex type; a.real refers to the real member of a complex type.</p>
+</section>
+<section id="sequences">
+<h3>Sequences<a class="headerlink" href="#sequences" title="Permalink to this heading">#</a></h3>
+<p>Sequences include strings, lists, tuples, and arrays. Sequences are described in <a class="reference internal" href="#id2">sequences</a> and <a class="reference internal" href="#id4">sequence operations</a>.</p>
+</section>
+</section>
+<section id="determining-the-type-of-a-variable">
+<h2>Determining the type of a variable<a class="headerlink" href="#determining-the-type-of-a-variable" title="Permalink to this heading">#</a></h2>
+<p>You use the <cite>type()</cite> function to return the type of the object to which a variable refers.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mf">2.375</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="nb">type</span> <span class="s1">&#39;float&#39;</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="nb">type</span> <span class="s1">&#39;int&#39;</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;chamfer&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="o">&lt;</span><span class="nb">type</span> <span class="s1">&#39;string&#39;</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<span id="id3"></span><h2>Sequences<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p>Sequences are important and powerful data types in Python. A sequence is an object containing a series of objects. There are three types of built-in sequences in Python—list, tuple, and string. In addition, imported modules allow you to use arrays in your scripts. The following table describes the characteristics of list, tuple, string, and array sequences.</p>
+<ul class="simple">
+<li><p>Mutable: Elements can be added, changed, and removed.</p></li>
+<li><p>Homogeneous: Elements must be of the same type.</p></li>
+<li><p>Methods: The type has methods that can be used to manipulate the sequence; for example, <cite>sort()</cite>, <cite>reverse()</cite>.</p></li>
+<li><p>Syntax: The syntax used to create the sequence.</p></li>
+</ul>
+<section id="list">
+<h3>List<a class="headerlink" href="#list" title="Permalink to this heading">#</a></h3>
+<p>Lists are mutable heterogeneous sequences (anything that can be modified is called mutable). A list can be a sequence of strings, integers, floats, or any combination of these. In fact, a list can contain any type of object; for example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myIntegerList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myFloatList</span>  <span class="o">=</span> <span class="p">[</span><span class="mf">7.1</span><span class="p">,</span><span class="mf">6.5</span><span class="p">,</span><span class="mf">5.3</span><span class="p">,</span><span class="mf">4.8</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>You can refer to individual items from a sequence using the index of the item. Indices start at zero. Negative indices count backward from the end of a sequence.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="mi">1</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myNewList</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">2.0</span><span class="p">,</span><span class="n">myList</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myNewList</span>
+<span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">]]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myNewList</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Lists are heterogeneous, which means they can contain objects of different type.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mf">2.5</span><span class="p">,</span><span class="s1">&#39;steel&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>A list can contain other lists.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="o">=</span><span class="p">[[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
+</pre></div>
+</div>
+<p><cite>myList[1][2]</cite> refers to the third item in the second list. Remember, indices start at zero.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span>
+<span class="mi">5</span>
+</pre></div>
+</div>
+<p>Python has built-in methods that allow you to operate on the items in a sequence.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">33</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">33</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">33</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The following are some additional built-in methods that operate on lists:</p>
+<ul>
+<li><p><cite>count()</cite></p>
+<p>Return the number of times a value appears in the list.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="mi">3</span>
+</pre></div>
+</div>
+</li>
+<li><p><cite>index()</cite></p>
+<p>Return the index indicating the first time an item appears in the list.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="mi">11</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="mi">8</span>
+</pre></div>
+</div>
+</li>
+<li><p><cite>insert()</cite></p>
+<p>Insert a new element into a list at a specified location.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">22</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p><cite>reverse()</cite></p>
+<p>Reverse the elements in a list.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span>
+<span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+<li><p><cite>sort()</cite></p>
+<p>Sort the elements in a list.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">22</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="tuple">
+<h3>Tuple<a class="headerlink" href="#tuple" title="Permalink to this heading">#</a></h3>
+<p>Tuples are very similar to lists; however, they are immutable heterogeneous sequences, which means that you cannot change them after you create them. You can think of a tuple as a list that cannot be modified. Tuples have no methods; you cannot append items to a tuple, and you cannot modify or delete the items in a tuple. The following statement creates an empty tuple:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myTuple</span> <span class="o">=</span> <span class="p">()</span>
+</pre></div>
+</div>
+<p>The following statement creates a tuple with one element:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myTuple</span> <span class="o">=</span> <span class="p">(</span><span class="mf">5.675</span><span class="p">,)</span>
+</pre></div>
+</div>
+<p>You can use the <cite>tuple()</cite> function to convert a list or a string to a tuple.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;stress&quot;</span><span class="p">,</span> <span class="mf">4.67</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myTuple</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">myList</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">myTuple</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;stress&#39;</span><span class="p">,</span> <span class="mf">4.67</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myString</span> <span class="o">=</span> <span class="s1">&#39;Failure mode&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myTuple</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">myString</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">myTuple</span>
+<span class="p">(</span><span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39; &#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The following statements create a tuple and then try to change the value of an item in the tuple. An <cite>AttributeError</cite> error message is generated because a tuple is immutable.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">myTuple</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">myTuple</span><span class="p">)</span>
+<span class="go">&lt;type &#39;tuple&#39;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">myTuple</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="mi">3</span>
+<span class="go">Traceback (innermost last):</span>
+<span class="go">File &quot;&quot;, line 1, in ?</span>
+<span class="go">AttributeError: __setitem__</span>
+</pre></div>
+</div>
+</section>
+<section id="string">
+<h3>String<a class="headerlink" href="#string" title="Permalink to this heading">#</a></h3>
+<p>Strings are immutable sequences of characters. Strings are defined by single or double quotation marks. You can use the + operator to concatenate two strings and create a third string; for example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">odbString</span> <span class="o">=</span> <span class="s2">&quot;Symbol plot from &quot;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">odb</span> <span class="o">=</span> <span class="s1">&#39;load1.odb&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">annotationString</span> <span class="o">=</span> <span class="n">odbString</span> <span class="o">+</span> <span class="n">odb</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">annotationString</span>
+<span class="n">Symbol</span> <span class="n">plot</span> <span class="kn">from</span> <span class="nn">load1.odb</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can also use the + operator to concatenate tuples and lists.</p>
+</div>
+<p>Python provides a set of functions that operate on strings.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">annotationString</span>
+<span class="s1">&#39;Symbol plot from load1.odb&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">annotationString</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="s1">&#39;SYMBOL PLOT FROM LOAD1.ODB&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">annotationString</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="p">[</span><span class="s1">&#39;Symbol&#39;</span><span class="p">,</span> <span class="s1">&#39;plot&#39;</span><span class="p">,</span> <span class="s1">&#39;from&#39;</span><span class="p">,</span> <span class="s1">&#39;load1.odb&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>As with all sequences, you use negative indices to index backward from the end of a string.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">axis_label</span> <span class="o">=</span> <span class="s1">&#39;maxstrain&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">axis_label</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="s1">&#39;n&#39;</span>
+</pre></div>
+</div>
+<p>Use the built-in str function to convert an object to a string.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">str</span><span class="p">(</span><span class="n">myList</span><span class="p">)</span>
+<span class="s1">&#39;[8, 9, 10]&#39;</span>
+</pre></div>
+</div>
+<p>Look at the standard Python documentation on the official Python website (<a class="reference external" href="https://www.python.org">https://www.python.org</a>) for a list of common string operations. String functions are described in the String Services section of the Python Library Reference.</p>
+</section>
+<section id="array">
+<h3>Array<a class="headerlink" href="#array" title="Permalink to this heading">#</a></h3>
+<p>Arrays are mutable homogeneous sequences. The numpy module allows you to create and operate on multidimensional arrays. Python determines the type of elements in the array; you do not have to declare the type when you create the array. For more information about the numpy module, see <a class="reference external" href="https://numpy.org">https://numpy.org</a>.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">array</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myIntegerArray</span> <span class="o">=</span> <span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myIntegerArray</span>
+<span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+       <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+       <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myRealArray</span> <span class="o">=</span><span class="n">array</span><span class="p">([[</span><span class="mf">1.0</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myRealArray</span>
+<span class="n">array</span><span class="p">([[</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">2.</span><span class="p">,</span> <span class="mf">3.</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">3.</span><span class="p">,</span> <span class="mf">4.</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myRealArray</span> <span class="o">*</span> <span class="n">myIntegerArray</span>
+<span class="n">array</span><span class="p">([[</span>  <span class="mf">1.</span><span class="p">,</span>   <span class="mf">4.</span><span class="p">],</span>
+       <span class="p">[</span>  <span class="mf">4.</span><span class="p">,</span>   <span class="mf">9.</span><span class="p">],</span>
+       <span class="p">[</span>  <span class="mf">9.</span><span class="p">,</span>  <span class="mf">16.</span><span class="p">]])</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="sequence-operations">
+<span id="id4"></span><h2>Sequence operations<a class="headerlink" href="#sequence-operations" title="Permalink to this heading">#</a></h2>
+<p>Python provides a set of tools that allow you to operate on a sequence.</p>
+<section id="slicing">
+<h3>Slicing<a class="headerlink" href="#slicing" title="Permalink to this heading">#</a></h3>
+<p>Sequences can be divided into smaller sequences. This operation is called slicing. The expression sequence[m:n] returns a copy of sequence from m to n−1. The default value for m is zero; the default value for n is the length of the sequence.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myString</span> <span class="o">=</span><span class="s1">&#39;linear load&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myString</span><span class="p">[</span><span class="mi">7</span><span class="p">:]</span>
+<span class="s1">&#39;load&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myString</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span>
+<span class="s1">&#39;linear&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="repeat-a-sequence">
+<h3>Repeat a sequence<a class="headerlink" href="#repeat-a-sequence" title="Permalink to this heading">#</a></h3>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="o">*</span><span class="mi">2</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;Hoop Stress&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">s</span><span class="o">*</span><span class="mi">2</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="s1">&#39;Hoop StressHoop Stress&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="determine-the-length-of-a-sequence">
+<h3>Determine the length of a sequence<a class="headerlink" href="#determine-the-length-of-a-sequence" title="Permalink to this heading">#</a></h3>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myString</span> <span class="o">=</span><span class="s1">&#39;linear load&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">myString</span><span class="p">)</span>
+<span class="mi">11</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">myList</span><span class="p">)</span>
+<span class="mi">5</span>
+</pre></div>
+</div>
+</section>
+<section id="concatenate-sequences">
+<h3>Concatenate sequences<a class="headerlink" href="#concatenate-sequences" title="Permalink to this heading">#</a></h3>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">8</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">test</span> <span class="o">=</span> <span class="s1">&#39;wing34&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">fileExtension</span> <span class="o">=</span> <span class="s1">&#39;.odb&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">test</span><span class="o">+</span><span class="n">fileExtension</span>
+<span class="s1">&#39;wing34.odb&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="range">
+<h3>Range<a class="headerlink" href="#range" title="Permalink to this heading">#</a></h3>
+<p>The <cite>range()</cite> function generates a list containing a sequence of integers. You can use the <cite>range()</cite> function to control iterative loops. The arguments to range are start (the starting value), end (the ending value plus one), and step (the step between each value). The start and step arguments are optional; the default start argument is 0, and the default step argument is 1. The arguments must be integers.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
+<span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="convert-a-sequence-type">
+<h3>Convert a sequence type<a class="headerlink" href="#convert-a-sequence-type" title="Permalink to this heading">#</a></h3>
+<p>Convert a sequence to a list or a tuple.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myString</span><span class="o">=</span><span class="s1">&#39;noise&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">myString</span><span class="p">)</span> <span class="c1">#Convert a string to a list.</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;p&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span>
+<span class="p">[</span><span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myTuple</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">myString</span><span class="p">)</span> <span class="c1">#Convert a string to a tuple.</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">myTuple</span>
+<span class="p">(</span><span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="python-none">
+<span id="id5"></span><h2>Python None<a class="headerlink" href="#python-none" title="Permalink to this heading">#</a></h2>
+<p>Python defines a special object called the None object or Python None that represents an empty value. The None object is returned by functions and methods that do not have a return value. The None object has no value and prints as None. For example</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">a</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="bp">None</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">sys</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">x</span>
+<span class="bp">None</span>
+</pre></div>
+</div>
+</section>
+<section id="continuation-lines-and-comments">
+<h2>Continuation lines and comments<a class="headerlink" href="#continuation-lines-and-comments" title="Permalink to this heading">#</a></h2>
+<p>You can continue a statement on the following line if you break the statement between a set of (), {}, or [] delimiters. For example, look at the tuple that was used in <a class="reference internal" href="../../about/examples/create-part.html"><span class="doc">Creating a part</span></a> to assign the coordinates of the vertices to a variable:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">xyCoordsOuter</span> <span class="o">=</span> <span class="p">((</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="p">),</span> <span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">20</span><span class="p">,</span> <span class="o">-</span><span class="mi">10</span><span class="p">),</span>
+    <span class="p">(</span><span class="o">-</span><span class="mi">30</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">40</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="p">),</span> <span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>If a statement breaks at any other place, you must include a \ character at the end of the line to indicate that it is continued on the next line. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">distance</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="s1">&#39;housing&#39;</span><span class="p">]</span><span class="o">.</span>\
+    <span class="n">getDistance</span><span class="p">(</span><span class="n">entity1</span><span class="o">=</span><span class="n">node1</span><span class="p">,</span> <span class="n">entity2</span><span class="o">=</span><span class="n">node2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>When you are running Python from a local Linux or Windows window, the prompt changes to the … characters to indicate that you are on a continuation line.
+Comments in a Python script begin with the # character and continue to the end of the line.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="c1"># Define material constants</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">modulus</span> <span class="o">=</span> <span class="mf">1e6</span> <span class="c1"># Define Young&#39;s modulus</span>
+</pre></div>
+</div>
+</section>
+<section id="printing-variables-using-formatted-output">
+<h2>Printing variables using formatted output<a class="headerlink" href="#printing-variables-using-formatted-output" title="Permalink to this heading">#</a></h2>
+<p>Python provides a print function that displays the value of a variable. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">freq</span> <span class="o">=</span> <span class="mf">22.0</span><span class="o">/</span><span class="mf">7.0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">7.234</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s1">&#39;Vibration frequency = &#39;</span><span class="p">,</span> <span class="n">freq</span>
+<span class="n">Vibration</span> <span class="n">frequency</span> <span class="o">=</span>  <span class="mf">3.14285714286</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s1">&#39;Vibration frequency = &#39;</span><span class="p">,</span> <span class="n">freq</span><span class="p">,</span> <span class="s1">&#39;Displacement = &#39;</span><span class="p">,</span> <span class="n">x</span>
+<span class="n">Vibration</span> <span class="n">frequency</span> <span class="o">=</span>  <span class="mf">3.14285714286</span> <span class="n">Displacement</span> <span class="o">=</span> <span class="mf">7.234</span>
+</pre></div>
+</div>
+<p>The string modulus operator % allows you to format your output. The %s operator in the following example converts the variables to strings.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s1">&#39;Vibration frequency = </span><span class="si">%s</span><span class="s1"> Displacement = </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="n">Vibration</span> <span class="n">frequency</span> <span class="o">=</span> <span class="mf">3.14285714286</span> <span class="n">Displacement</span> <span class="o">=</span> <span class="mf">7.234</span>
+</pre></div>
+</div>
+<p>The <cite>%f</cite> operator specifies floating point notation and indicates the total number of characters to print and the number of decimal places.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s1">&#39;Vibration frequency = </span><span class="si">%6.2f</span><span class="s1"> Displacement = </span><span class="si">%6.2f</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="n">Vibration</span> <span class="n">frequency</span> <span class="o">=</span>   <span class="mf">3.14</span> <span class="n">Displacement</span> <span class="o">=</span>   <span class="mf">7.23</span>
+</pre></div>
+</div>
+<p>The <cite>%E</cite> operator specifies scientific notation and indicates the number of decimal places.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s1">&#39;Vibration frequency = </span><span class="si">%.6E</span><span class="s1"> Displacement = </span><span class="si">%.2E</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="n">Vibration</span> <span class="n">frequency</span> <span class="o">=</span> <span class="mf">3.142857E+00</span> <span class="n">Displacement</span> <span class="o">=</span> <span class="mf">7.23E+00</span>
+</pre></div>
+</div>
+<p>The following list includes some additional useful printing operators.
+The <cite>+</cite> flag indicates that a number should include a sign.</p>
+<p>The <cite>\n</cite> escape sequence inserts a new line.</p>
+<p>The <cite>\t</cite> escape sequence inserts a tab character.</p>
+<p>For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="s1">&#39;Vibration frequency = </span><span class="si">%+.6E</span><span class="se">\n</span><span class="s1">Displacement = </span><span class="si">%+.2E</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="n">Vibration</span> <span class="n">frequency</span> <span class="o">=</span> <span class="o">+</span><span class="mf">3.142857E+00</span>
+<span class="n">Displacement</span> <span class="o">=</span> <span class="o">+</span><span class="mf">7.23E+00</span>
+</pre></div>
+</div>
+</section>
+<section id="control-blocks">
+<h2>Control blocks<a class="headerlink" href="#control-blocks" title="Permalink to this heading">#</a></h2>
+<p>Python does not use a special character, such as }, to signify the end of a control block such as an if statement. Instead, Python uses indentation to indicate the end of a control block. You define the indentation that governs a block. When your script returns to the original indentation, the block ends. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="nb">max</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="nb">max</span><span class="p">:</span>
+    <span class="n">square</span> <span class="o">=</span> <span class="n">i</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">cube</span> <span class="o">=</span> <span class="n">i</span><span class="o">**</span><span class="mi">3</span>
+    <span class="k">print</span> <span class="n">i</span><span class="p">,</span> <span class="n">square</span><span class="p">,</span> <span class="n">cube</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="k">print</span> <span class="s1">&#39;Loop completed&#39;</span>
+</pre></div>
+</div>
+<p>When you are using the Python interpreter from the Abaqus/CAE command line interface or if you are running Python from a local Linux or Windows window, the prompt changes to the “…”” characters to indicate that you are in a block controlled by indentation.</p>
+<section id="if-elif-and-else">
+<h3>if, elif, and else<a class="headerlink" href="#if-elif-and-else" title="Permalink to this heading">#</a></h3>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">load</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">if</span> <span class="n">load</span> <span class="o">&gt;</span> <span class="mf">6.75</span><span class="p">:</span>
+<span class="o">...</span>     <span class="k">print</span> <span class="s1">&#39;Reached critical load&#39;</span>
+<span class="o">...</span> <span class="k">elif</span> <span class="n">load</span> <span class="o">&lt;</span> <span class="mf">2.75</span><span class="p">:</span>
+<span class="o">...</span>     <span class="k">print</span> <span class="s1">&#39;Minimal load&#39;</span>
+<span class="o">...</span> <span class="k">else</span><span class="p">:</span>
+<span class="o">...</span>     <span class="k">print</span> <span class="s1">&#39;Typical load&#39;</span>
+</pre></div>
+</div>
+</section>
+<section id="while">
+<h3>while<a class="headerlink" href="#while" title="Permalink to this heading">#</a></h3>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">load</span>   <span class="o">=</span> <span class="mi">10</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">length</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">while</span> <span class="n">load</span> <span class="o">&lt;</span> <span class="mf">1E4</span><span class="p">:</span>
+<span class="o">...</span>     <span class="n">load</span> <span class="o">=</span> <span class="n">load</span> <span class="o">*</span> <span class="n">length</span>
+<span class="o">...</span>     <span class="k">print</span> <span class="n">load</span>
+<span class="n">Use</span> <span class="sb">`break`</span> <span class="n">to</span> <span class="k">break</span> <span class="n">out</span> <span class="n">of</span> <span class="n">a</span> <span class="n">loop</span><span class="o">.</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">while</span> <span class="mi">1</span><span class="p">:</span>
+<span class="o">...</span>     <span class="n">x</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="n">Enter</span> <span class="n">a</span> <span class="n">number</span> <span class="ow">or</span> <span class="mi">0</span> <span class="n">to</span> <span class="n">quit</span><span class="p">:</span><span class="s1">&#39;)</span>
+<span class="o">...</span>     <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;0&#39;</span><span class="p">:</span>
+<span class="o">...</span>         <span class="k">break</span>
+<span class="o">...</span>     <span class="k">else</span><span class="p">:</span>
+<span class="o">...</span>         <span class="k">print</span> <span class="n">x</span>
+</pre></div>
+</div>
+<p>Use <cite>continue</cite> to skip the rest of the loop and to go to the next iteration.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">load</span>   <span class="o">=</span> <span class="mi">10</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">length</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">while</span> <span class="n">load</span> <span class="o">&lt;</span> <span class="mf">1E6</span><span class="p">:</span>  <span class="c1">#Continue jumps up here</span>
+<span class="o">...</span>     <span class="n">load</span> <span class="o">=</span> <span class="n">load</span> <span class="o">*</span> <span class="n">length</span>
+<span class="o">...</span>     <span class="k">if</span> <span class="n">load</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+<span class="o">...</span>         <span class="k">continue</span>   <span class="c1">#Do not print if negative</span>
+<span class="o">...</span>     <span class="k">print</span> <span class="n">load</span>
+</pre></div>
+</div>
+</section>
+<section id="for">
+<h3>for<a class="headerlink" href="#for" title="Permalink to this heading">#</a></h3>
+<p>Use a sequence to control the start and the end of for loops. The <cite>range()</cite> function is an easy way to create a sequence.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+<span class="o">...</span>     <span class="k">print</span> <span class="n">i</span>
+<span class="o">...</span>
+<span class="mi">0</span>
+<span class="mi">1</span>
+<span class="mi">2</span>
+<span class="mi">3</span>
+<span class="mi">4</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="oop-basics.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Object-oriented basics</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="programming.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Programming techniques</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#variable-names-and-assignment">
+   Variable names and assignment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-data-types">
+   Python data types
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#integer">
+     Integer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#float">
+     Float
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#complex">
+     Complex
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sequences">
+     Sequences
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#determining-the-type-of-a-variable">
+   Determining the type of a variable
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Sequences
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#list">
+     List
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#tuple">
+     Tuple
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#string">
+     String
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#array">
+     Array
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sequence-operations">
+   Sequence operations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#slicing">
+     Slicing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#repeat-a-sequence">
+     Repeat a sequence
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#determine-the-length-of-a-sequence">
+     Determine the length of a sequence
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#concatenate-sequences">
+     Concatenate sequences
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#range">
+     Range
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#convert-a-sequence-type">
+     Convert a sequence type
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-none">
+   Python None
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#continuation-lines-and-comments">
+   Continuation lines and comments
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#printing-variables-using-formatted-output">
+   Printing variables using formatted output
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#control-blocks">
+   Control blocks
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#if-elif-and-else">
+     if, elif, and else
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#while">
+     while
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#for">
+     for
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../../_sources/user/python/introduction/python-basics.rst.txt">
+        <i class="fas fa-file-alt"></i> Show Source
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
