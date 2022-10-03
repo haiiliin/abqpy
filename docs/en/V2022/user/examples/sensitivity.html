@@ -1,0 +1,1461 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Investigating the skew sensitivity of shell elements &#8212; abqpy 2022 documentation</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user/examples/sensitivity';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2022';
+        </script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Editing display preferences and GUI settings" href="settings.html" />
+    <link rel="prev" title="Generating a customized plot" href="plot.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2022 documentation</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2022  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2022  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../about.html">
+   About the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../about/interface.html">
+     Abaqus/CAE and the Abaqus Scripting Interface
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../about/interact.html">
+     How does the Abaqus Scripting Interface interact with Abaqus/CAE?
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../about/examples.html">
+     Simple examples
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../about/examples/create-part.html">
+       Creating a part
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../about/examples/read-output.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../about/examples/summary.html">
+       Summary
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../python.html">
+   Using the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../python/introduction.html">
+     Introduction to Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/python-abaqus.html">
+       Python and Abaqus
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/python-resources.html">
+       Python resources
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/python-interpreter.html">
+       Using the Python interpreter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/oop-basics.html">
+       Object-oriented basics
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/python-basics.html">
+       The basics of Python
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/programming.html">
+       Programming techniques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/further-reading.html">
+       Further reading
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../python/python-abaqus.html">
+     Using Python and the Abaqus Scripting Interface
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/executing.html">
+       Executing scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/types.html">
+       Abaqus Scripting Interface data types
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/oop.html">
+       Object-oriented programming and the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/errors.html">
+       Error handling in the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/extending.html">
+       Extending the Abaqus Scripting Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../python/use-scripts.html">
+     Using the Abaqus Scripting Interface with Abaqus/CAE
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/object-model.html">
+       The Abaqus object model
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/modify-objects.html">
+       Copying, deleting, and renaming Abaqus Scripting Interface objects
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/sequences.html">
+       Abaqus/CAE sequences
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/namespace.html">
+       Namespace
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/specify-viewport.html">
+       Specifying what is displayed in the viewport
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/specify-region.html">
+       Specifying a region
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/user-input.html">
+       Prompting the user for input
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/interact.html">
+       Interacting with Abaqus/Standard and Abaqus/Explicit
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/environment-file.html">
+       Using Abaqus Scripting Interface commands in your environment file
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../environment.html">
+   The Abaqus Python Development Environment
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../environment/about.html">
+     About the Abaqus Python development environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../environment/pde-basics.html">
+     Abaqus PDE basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../environment/use-pde.html">
+     Using the Abaqus PDE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../examples.html">
+   Putting it all Together: Abaqus Scripting Interface Examples
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="cantilever.html">
+     Reproducing the cantilever beam tutorial
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="plot.html">
+     Generating a customized plot
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Investigating the skew sensitivity of shell elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="settings.html">
+     Editing display preferences and GUI settings
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../output.html">
+   Accessing an Output Database
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../output/python.html">
+     Using the Abaqus Scripting Interface to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/need-what-to-understand.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/execute-script.html">
+       Executing a script that accesses an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/examples.html">
+       Example scripts that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../output/cpp.html">
+     Using C++ to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/about.html">
+       About the C++ interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/need-what-access.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/compile-link.html">
+       Compiling and linking your C++ source code
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/access.html">
+       Accessing the C++ interface from an existing application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/architecture.html">
+       The Abaqus C++ API architecture
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/utility.html">
+       Utility interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/examples.html">
+       Example programs that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="investigating-the-skew-sensitivity-of-shell-elements">
+<h1>Investigating the skew sensitivity of shell elements<a class="headerlink" href="#investigating-the-skew-sensitivity-of-shell-elements" title="Permalink to this heading">#</a></h1>
+<p>In this example you will use Abaqus/CAE to create the model and store the model in a model database. The script opens the model database and performs a parametric study on the model. The example illustrates how you can use a combination of Abaqus/CAE and the Abaqus Scripting Interface to analyze a problem.</p>
+<section id="creating-the-model-to-analyze">
+<h2>Creating the model to analyze<a class="headerlink" href="#creating-the-model-to-analyze" title="Permalink to this heading">#</a></h2>
+<p>This example uses Abaqus Scripting Interface commands to evaluate the sensitivity of the shell elements in Abaqus to skew distortion when they are used as thin plates. Further details can be found in <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEBMKRefMap/simabmk-c-skewshell.htm?contextscope=all">Skew sensitivity of shell elements</a>.</p>
+<p>The problem investigates the effects on the accuracy of the bending moment computed at the center of a shell using:</p>
+<ul class="simple">
+<li><p>different shell formulations and</p></li>
+<li><p>at different angles.</p></li>
+</ul>
+<p><a class="reference internal" href="#cmd-skew-dim"><span class="std std-numref">Fig. 21</span></a> illustrates the basic geometry of the simply supported skew plate with a uniform distributed load.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/exxskew-quadmesh-nls.png"><img alt="../../_images/exxskew-quadmesh-nls.png" src="../../_images/exxskew-quadmesh-nls.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 20 </span><span class="caption-text">A 4 × 4 quadrilateral mesh of the plate.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The plate is loaded by a uniform pressure of <span class="math notranslate nohighlight">\(1\times10^{-6}\)</span> MPa applied over the entire surface. The edges of the plate are all simply supported. The analysis is performed for five different values of the skew angle, <span class="math notranslate nohighlight">\(\delta\)</span>: 90°, 80°, 60°, 40°, and 30°. The analysis is performed for two different quadrilateral elements: S4 and S8R.</p>
+<p>The example is divided into two scripts. The controlling script, <cite>skewExample.py</cite>, imports <cite>skewExampleUtils.py</cite>. Use the <strong>fetch</strong> utility to retrieve the scripts:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus fetch <span class="nv">job</span><span class="o">=</span>skewExample
+abaqus fetch <span class="nv">job</span><span class="o">=</span>skewExampleUtils
+</pre></div>
+</div>
+<p>You should use Abaqus/CAE to create your model and to save the resulting model database. You will then use scripting to parameterize your model, submit an analysis job, and operate on the results generated.</p>
+<p>Start Abaqus/CAE, and create a model database from the <strong>Start Session</strong> dialog box. By default, you are operating on a model named <cite>Model-1.</cite> The model should include the following:</p>
+<ul>
+<li><p><strong>Part</strong></p>
+<p>Create a three-dimensional planar shell part, and name it <cite>Plate</cite>. Use an approximate size of 5.0. Sketch a square where all sides are 1.0 m long, with the lower-left vertex at (0, 0, 0). Delete all perpendicular and vertical constraints, and apply the following:fixed constraints to the lower-left and lower-right vertices,horizontal constraints to the top and bottom edges (if they are not already defined),parallel constraints to the left and right edges, andan angle dimension to the lower-left vertex (90°).</p>
+</li>
+<li><p><strong>Material</strong></p>
+<p>Create a material, and name it Steel. The Young’s modulus is 30 MPa, and the Poisson’s ratio is 0.3.</p>
+</li>
+<li><p><strong>Section</strong></p>
+<p>Create a homogeneous shell section that refers to the material called <cite>Steel</cite>. Name the section <cite>Shell</cite>. The plate thickness is 0.01 m. The length/thickness ratio is, thus, 100/1 so that the plate is thin in the sense that transverse shear deformation should not be significant. Assign the section to the plate.</p>
+</li>
+<li><p><strong>Assembly</strong></p>
+<p>Create the assembly using a single, independent part instance of <cite>Plate</cite>. Abaqus/CAE names the part instance <cite>Plate-1</cite>. Creating an independent part instance means that the mesh is based at the assembly level.</p>
+</li>
+<li><p><strong>Step</strong></p>
+<p>Create a static step and name it <cite>Step-1</cite>. Enter <cite>Apply pressure</cite> for the step <strong>Description</strong>. Accept the default time period of 1.0 and the default initial increment of 1.0.</p>
+</li>
+<li><p><strong>Output database requests</strong></p>
+<p>Edit the default output database request for field output and select only <strong>U, Translations and rotations</strong>. Create a second field output request for SF, Section forces and moments, and specify Nodes as the element output position. Both field output requests should be for the whole model after every increment. Delete all requests for history output.</p>
+</li>
+<li><p><strong>Boundary condition</strong></p>
+<p>Create a displacement boundary condition, and name it <cite>Pinned</cite>. The boundary condition pins the exterior edges of the plate.</p>
+</li>
+<li><p><strong>Load</strong></p>
+<p>Create a pressure load, and name it <cite>Pressure</cite>. Apply the load to the face of the plate. Accept the default side of the plate and use a magnitude of 1.0. This positive pressure will result in a negative displacement in the 3-direction.</p>
+</li>
+<li><p><strong>Set</strong></p>
+<p>Partition the plate into quarters by sketching lines between the midpoints of the four edges. Create a set that contains the vertex at the center of the plate, and name the set <cite>CENTER</cite>.</p>
+</li>
+<li><p><strong>Mesh</strong></p>
+<p>Create a 4 × 4 mesh of quadrilateral elements on the plate.</p>
+</li>
+<li><p><strong>Job</strong></p>
+<p>Create a job, and name it <cite>skew</cite>. The job must refer to the model <cite>Model-1</cite>.</p>
+</li>
+</ul>
+<p>If you want, you can complete the above steps for creating the model using a function in <cite>skewExampleUtils.py</cite>. In the command line interface area of Abaqus/CAE, type the following commands:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">skewExampleUtils</span>
+<span class="n">skewExampleUtils</span><span class="o">.</span><span class="n">createModel</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>When you execute the function, a new database is created, so you should save your work first.</p>
+<p>Finally, save the database as <cite>skew.cae</cite>.</p>
+</section>
+<section id="changing-the-skew-angle">
+<h2>Changing the skew angle<a class="headerlink" href="#changing-the-skew-angle" title="Permalink to this heading">#</a></h2>
+<p>The parameterized script changes the skew angle of the plate and computes the maximum bending moment at the center for two different element types. The script changes the skew angle by modifying an angular dimension and selecting the vertices to move. You need to add the angular dimension and determine the indices of the dimension to modify and the vertices to move.</p>
+<p>The parameterized script changes the skew angle of the plate and computes the maximum bending moment at the center for two different element types. The script changes the skew angle by modifying an angular dimension and selecting the vertices to move. You need to add the angular dimension and determine the indices of the dimension to modify and the vertices to move.</p>
+<section id="add-the-angular-dimension">
+<h3>Add the angular dimension<a class="headerlink" href="#add-the-angular-dimension" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Return to the Part module.</p></li>
+<li><p>From the main menu bar, select <strong>Feature -&gt; Edit</strong> and select the plate to edit.</p></li>
+<li><p>From the <strong>Edit Feature</strong> dialog box, select <strong>Edit Section Sketch</strong>.</p></li>
+<li><p>From the Sketcher toolbox, select the dimension tool and dimension the angle at the lower left corner of the plate as shown in <a class="reference internal" href="#cmd-skew-dim"><span class="std std-numref">Fig. 21</span></a></p></li>
+</ol>
+<figure class="align-center" id="id2">
+<span id="cmd-skew-dim"></span><a class="reference internal image-reference" href="../../_images/cmd-skew-dim.png"><img alt="../../_images/cmd-skew-dim.png" src="../../_images/cmd-skew-dim.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 21 </span><span class="caption-text">Dimension the angle at the lower left corner of the plate.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="determine-the-indices-of-the-dimension-to-modify-and-the-vertices-to-move">
+<h3>Determine the indices of the dimension to modify and the vertices to move<a class="headerlink" href="#determine-the-indices-of-the-dimension-to-modify-and-the-vertices-to-move" title="Permalink to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>From the Sketcher toolbox, select the edit dimension tool.</p></li>
+<li><p>Select the lower left angular dimension.</p></li>
+<li><p>Enter a dimension of <cite>60</cite>, and click <strong>OK</strong>.</p></li>
+<li><p>Exit the Sketcher tools, and exit the Sketcher.</p></li>
+<li><p>From the <strong>Edit Feature</strong> dialog box, select <strong>OK</strong>.</p></li>
+<li><p>Examine the replay file, <cite>abaqus.rpy</cite>. The last few lines of the replay file will contain the statements that modified the angular dimension. The statement will look similar to the following:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="mf">60.0</span><span class="p">,</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p>The example script, <cite>skewExample.py</cite>, contains a similar statement that modifies the angular dimension of the plate. The index of the angular dimension in your model must be the same as the index in the example script. If the indices are not the same, you must edit the example script and enter the correct indices.</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">angle</span><span class="p">,</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Save the model database, and name it <cite>skew</cite>. Abaqus/CAE saves the model database in a file called <cite>skew.cae</cite>. The example script opens this model database and parameterizes the model it contains.</p>
+</section>
+</section>
+<section id="using-a-script-to-perform-a-parametric-study">
+<h2>Using a script to perform a parametric study<a class="headerlink" href="#using-a-script-to-perform-a-parametric-study" title="Permalink to this heading">#</a></h2>
+<p>he following shows the contents of the script skewExample.py. The parametric study does the following:</p>
+<ul>
+<li><p>Opens the model database and creates variables that refer to the part, the assembly, and the part instance stored in <cite>Model-1</cite>.</p></li>
+<li><p>Creates variables that refer to the four faces and the nine vertices in the instance of the planar shell part.</p></li>
+<li><p>Skews the plate by modifying the angular dimension in the sketch of the base feature.</p></li>
+<li><p>Defines the logical corners of the four faces, and generates a structured mesh.</p></li>
+<li><p>Runs the analysis for a range of angles using two element types for each angle.</p></li>
+<li><p>Calculates the maximum moment and displacement at the center of the shell.</p></li>
+<li><p>Displays <strong>X - Y</strong> plots in separate viewports of the following:</p>
+<ul class="simple">
+<li><p>Displacement versus skew angle</p></li>
+<li><p>Maximum bending moment versus skew angle</p></li>
+<li><p>Minimum bending moment versus skew angle</p></li>
+</ul>
+<p>The theoretical results are also plotted.</p>
+</li>
+</ul>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">skewExample.py</span>
+
+<span class="sd">This script performs a parameter study of element type versus</span>
+<span class="sd">skew angle. For more details, see Problem 2.3.4 in the</span>
+<span class="sd">Abaqus Benchmarks manual.</span>
+
+<span class="sd">Before executing this script you must fetch the appropriate</span>
+<span class="sd">files: abaqus fetch job=skewExample</span>
+<span class="sd">    abaqus fetch job=skewExampleUtils.py</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">part</span>
+<span class="kn">import</span> <span class="nn">mesh</span>
+<span class="kn">from</span> <span class="nn">mesh</span> <span class="kn">import</span> <span class="n">S4</span><span class="p">,</span> <span class="n">S8R</span><span class="p">,</span> <span class="n">STANDARD</span><span class="p">,</span> <span class="n">STRUCTURED</span>
+<span class="kn">import</span> <span class="nn">job</span>
+<span class="kn">from</span> <span class="nn">skewExampleUtils</span> <span class="kn">import</span> <span class="n">getResults</span><span class="p">,</span> <span class="n">createXYPlot</span>
+
+<span class="c1"># Create a list of angle parameters and a list of</span>
+<span class="c1"># element type parameters.</span>
+
+<span class="n">angles</span> <span class="o">=</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
+<span class="n">elemTypeCodes</span> <span class="o">=</span> <span class="p">[</span><span class="n">S4</span><span class="p">,</span> <span class="n">S8R</span><span class="p">]</span>
+
+<span class="c1"># Open the model database.</span>
+<span class="n">openMdb</span><span class="p">(</span><span class="s1">&#39;skew.cae&#39;</span><span class="p">)</span>
+
+<span class="n">model</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span>
+<span class="n">part</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="s1">&#39;Plate&#39;</span><span class="p">]</span>
+<span class="n">feature</span> <span class="o">=</span> <span class="n">part</span><span class="o">.</span><span class="n">features</span><span class="p">[</span><span class="s1">&#39;Shell planar-1&#39;</span><span class="p">]</span>
+<span class="n">assembly</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">rootAssembly</span>
+<span class="n">instance</span> <span class="o">=</span> <span class="n">assembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="s1">&#39;Plate-1&#39;</span><span class="p">]</span>
+<span class="n">job</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">jobs</span><span class="p">[</span><span class="s1">&#39;skew&#39;</span><span class="p">]</span>
+
+<span class="n">allFaces</span> <span class="o">=</span> <span class="n">instance</span><span class="o">.</span><span class="n">faces</span>
+<span class="n">regions</span> <span class="o">=</span><span class="p">(</span><span class="n">allFaces</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">allFaces</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">allFaces</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">allFaces</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+<span class="n">assembly</span><span class="o">.</span><span class="n">setMeshControls</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="n">regions</span><span class="p">,</span>
+    <span class="n">technique</span><span class="o">=</span><span class="n">STRUCTURED</span><span class="p">)</span>
+<span class="n">face1</span> <span class="o">=</span> <span class="n">allFaces</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">),</span> <span class="p">)</span>
+<span class="n">face2</span> <span class="o">=</span> <span class="n">allFaces</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span><span class="mf">0.</span><span class="p">),</span> <span class="p">)</span>
+<span class="n">face3</span> <span class="o">=</span> <span class="n">allFaces</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">1.</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span><span class="mf">0.</span><span class="p">),</span> <span class="p">)</span>
+<span class="n">face4</span> <span class="o">=</span> <span class="n">allFaces</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">1.</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">),</span> <span class="p">)</span>
+<span class="n">allVertices</span> <span class="o">=</span> <span class="n">instance</span><span class="o">.</span><span class="n">vertices</span>
+<span class="n">v1</span> <span class="o">=</span> <span class="n">allVertices</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">),</span> <span class="p">)</span>
+<span class="n">v2</span> <span class="o">=</span> <span class="n">allVertices</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span><span class="mf">0.</span><span class="p">),</span> <span class="p">)</span>
+<span class="n">v3</span> <span class="o">=</span> <span class="n">allVertices</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span><span class="mf">0.</span><span class="p">),</span> <span class="p">)</span>
+<span class="n">v4</span> <span class="o">=</span> <span class="n">allVertices</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span><span class="mf">0.</span><span class="p">),</span> <span class="p">)</span>
+<span class="n">v5</span> <span class="o">=</span> <span class="n">allVertices</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">1.</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span><span class="mf">0.</span><span class="p">),</span> <span class="p">)</span>
+<span class="n">v6</span> <span class="o">=</span> <span class="n">allVertices</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">1.</span><span class="p">,</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span><span class="mf">0.</span><span class="p">),</span> <span class="p">)</span>
+<span class="n">v7</span> <span class="o">=</span> <span class="n">allVertices</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">1.</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">),</span> <span class="p">)</span>
+<span class="n">v8</span> <span class="o">=</span> <span class="n">allVertices</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">),</span> <span class="p">)</span>
+<span class="n">v9</span> <span class="o">=</span> <span class="n">allVertices</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span><span class="o">.</span><span class="mi">5</span><span class="p">,</span><span class="mf">0.</span><span class="p">),</span> <span class="p">)</span>
+
+<span class="c1"># Create a copy of the feature sketch to modify.</span>
+
+<span class="n">tmpSketch</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">ConstrainedSketch</span><span class="p">(</span><span class="s1">&#39;tmp&#39;</span><span class="p">,</span> <span class="n">feature</span><span class="o">.</span><span class="n">sketch</span><span class="p">)</span>
+<span class="n">v</span><span class="p">,</span> <span class="n">d</span> <span class="o">=</span> <span class="n">tmpSketch</span><span class="o">.</span><span class="n">vertices</span><span class="p">,</span> <span class="n">tmpSketch</span><span class="o">.</span><span class="n">dimensions</span>
+
+<span class="c1"># Create some dictionaries to hold results. Seed the</span>
+<span class="c1"># dictionaries with the theoretical results.</span>
+
+<span class="n">dispData</span><span class="p">,</span> <span class="n">maxMomentData</span><span class="p">,</span> <span class="n">minMomentData</span> <span class="o">=</span> <span class="p">{},</span> <span class="p">{},</span> <span class="p">{}</span>
+<span class="n">dispData</span><span class="p">[</span><span class="s1">&#39;Theoretical&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="mi">90</span><span class="p">,</span> <span class="o">-.</span><span class="mo">00147</span><span class="mi">8</span><span class="p">),</span> <span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="o">-.</span><span class="mo">00140</span><span class="mi">9</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.000932</span><span class="p">),</span> <span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.000349</span><span class="p">),</span> <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.000148</span><span class="p">))</span>
+<span class="n">maxMomentData</span><span class="p">[</span><span class="s1">&#39;Theoretical&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="mi">90</span><span class="p">,</span> <span class="mf">0.0479</span><span class="p">),</span> <span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="mf">0.0486</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="mf">0.0425</span><span class="p">),</span> <span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="mf">0.0281</span><span class="p">),</span> <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mf">0.0191</span><span class="p">))</span>
+<span class="n">minMomentData</span><span class="p">[</span><span class="s1">&#39;Theoretical&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="mi">90</span><span class="p">,</span> <span class="mf">0.0479</span><span class="p">),</span> <span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="mf">0.0448</span><span class="p">),</span>
+    <span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="mf">0.0333</span><span class="p">),</span> <span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="mf">0.0180</span><span class="p">),</span> <span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mf">0.0108</span><span class="p">))</span>
+
+<span class="c1"># Loop over the parameters to perform the parameter study.</span>
+
+<span class="k">for</span> <span class="n">elemCode</span> <span class="ow">in</span> <span class="n">elemTypeCodes</span><span class="p">:</span>
+
+    <span class="c1"># Convert the element type codes to strings.</span>
+
+    <span class="n">elemName</span> <span class="o">=</span> <span class="nb">repr</span><span class="p">(</span><span class="n">elemCode</span><span class="p">)</span>
+    <span class="n">dispData</span><span class="p">[</span><span class="n">elemName</span><span class="p">],</span> <span class="n">maxMomentData</span><span class="p">[</span><span class="n">elemName</span><span class="p">],</span> \
+        <span class="n">minMomentData</span><span class="p">[</span><span class="n">elemName</span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
+
+    <span class="c1"># Set the element type.</span>
+
+    <span class="n">elemType</span> <span class="o">=</span> <span class="n">mesh</span><span class="o">.</span><span class="n">ElemType</span><span class="p">(</span><span class="n">elemCode</span><span class="o">=</span><span class="n">elemCode</span><span class="p">,</span>
+        <span class="n">elemLibrary</span><span class="o">=</span><span class="n">STANDARD</span><span class="p">)</span>
+    <span class="n">assembly</span><span class="o">.</span><span class="n">setElementType</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="p">(</span><span class="n">instance</span><span class="o">.</span><span class="n">faces</span><span class="p">,),</span>
+        <span class="n">elemTypes</span><span class="o">=</span><span class="p">(</span><span class="n">elemType</span><span class="p">,))</span>
+
+    <span class="k">for</span> <span class="n">angle</span> <span class="ow">in</span> <span class="n">angles</span><span class="p">:</span>
+
+        <span class="c1"># Skew the geometry and regenerate the mesh.</span>
+        <span class="n">assembly</span><span class="o">.</span><span class="n">deleteMesh</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="p">(</span><span class="n">instance</span><span class="p">,))</span>
+
+        <span class="n">d</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">value</span><span class="o">=</span><span class="n">angle</span><span class="p">,</span> <span class="p">)</span>
+        <span class="n">feature</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">sketch</span><span class="o">=</span><span class="n">tmpSketch</span><span class="p">)</span>
+        <span class="n">part</span><span class="o">.</span><span class="n">regenerate</span><span class="p">()</span>
+        <span class="n">assembly</span><span class="o">.</span><span class="n">regenerate</span><span class="p">()</span>
+        <span class="n">assembly</span><span class="o">.</span><span class="n">setLogicalCorners</span><span class="p">(</span>
+            <span class="n">region</span><span class="o">=</span><span class="n">face1</span><span class="p">,</span> <span class="n">corners</span><span class="o">=</span><span class="p">(</span><span class="n">v1</span><span class="p">,</span><span class="n">v2</span><span class="p">,</span><span class="n">v9</span><span class="p">,</span><span class="n">v8</span><span class="p">))</span>
+        <span class="n">assembly</span><span class="o">.</span><span class="n">setLogicalCorners</span><span class="p">(</span>
+            <span class="n">region</span><span class="o">=</span><span class="n">face2</span><span class="p">,</span> <span class="n">corners</span><span class="o">=</span><span class="p">(</span><span class="n">v2</span><span class="p">,</span><span class="n">v3</span><span class="p">,</span><span class="n">v4</span><span class="p">,</span><span class="n">v9</span><span class="p">))</span>
+        <span class="n">assembly</span><span class="o">.</span><span class="n">setLogicalCorners</span><span class="p">(</span>
+            <span class="n">region</span><span class="o">=</span><span class="n">face3</span><span class="p">,</span> <span class="n">corners</span><span class="o">=</span><span class="p">(</span><span class="n">v9</span><span class="p">,</span><span class="n">v4</span><span class="p">,</span><span class="n">v5</span><span class="p">,</span><span class="n">v6</span><span class="p">))</span>
+        <span class="n">assembly</span><span class="o">.</span><span class="n">setLogicalCorners</span><span class="p">(</span>
+            <span class="n">region</span><span class="o">=</span><span class="n">face4</span><span class="p">,</span> <span class="n">corners</span><span class="o">=</span><span class="p">(</span><span class="n">v8</span><span class="p">,</span><span class="n">v9</span><span class="p">,</span><span class="n">v6</span><span class="p">,</span><span class="n">v7</span><span class="p">))</span>
+        <span class="n">assembly</span><span class="o">.</span><span class="n">generateMesh</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="p">(</span><span class="n">instance</span><span class="p">,))</span>
+
+        <span class="c1"># Run the job, then process the results.</span>
+
+        <span class="n">job</span><span class="o">.</span><span class="n">submit</span><span class="p">()</span>
+        <span class="n">job</span><span class="o">.</span><span class="n">waitForCompletion</span><span class="p">()</span>
+        <span class="k">print</span> <span class="s1">&#39;Completed job for </span><span class="si">%s</span><span class="s1"> at </span><span class="si">%s</span><span class="s1"> degrees&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">elemName</span><span class="p">,</span>
+            <span class="n">angle</span><span class="p">)</span>
+        <span class="n">disp</span><span class="p">,</span> <span class="n">maxMoment</span><span class="p">,</span> <span class="n">minMoment</span> <span class="o">=</span> <span class="n">getResults</span><span class="p">()</span>
+        <span class="n">dispData</span><span class="p">[</span><span class="n">elemName</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">angle</span><span class="p">,</span> <span class="n">disp</span><span class="p">))</span>
+        <span class="n">maxMomentData</span><span class="p">[</span><span class="n">elemName</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">angle</span><span class="p">,</span> <span class="n">maxMoment</span><span class="p">))</span>
+        <span class="n">minMomentData</span><span class="p">[</span><span class="n">elemName</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">angle</span><span class="p">,</span> <span class="n">minMoment</span><span class="p">))</span>
+
+<span class="c1"># Plot the results.</span>
+
+<span class="n">createXYPlot</span><span class="p">((</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="s1">&#39;Skew 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Displacement - 4x4 Mesh&#39;</span><span class="p">,</span>
+    <span class="n">dispData</span><span class="p">)</span>
+<span class="n">createXYPlot</span><span class="p">((</span><span class="mi">160</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="s1">&#39;Skew 2&#39;</span><span class="p">,</span> <span class="s1">&#39;Max Moment - 4x4 Mesh&#39;</span><span class="p">,</span>
+    <span class="n">maxMomentData</span><span class="p">)</span>
+<span class="n">createXYPlot</span><span class="p">((</span><span class="mi">310</span><span class="p">,</span><span class="mi">10</span><span class="p">),</span> <span class="s1">&#39;Skew 3&#39;</span><span class="p">,</span> <span class="s1">&#39;Min Moment - 4x4 Mesh&#39;</span><span class="p">,</span>
+    <span class="n">minMomentData</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The script imports two functions from <cite>skewExampleUtils</cite>. The functions do the following:</p>
+<ul class="simple">
+<li><p>Retrieve the displacement and calculate the maximum bending moment at the center of the plate.</p></li>
+<li><p>Display curves of theoretical and computed results in a new viewport.</p></li>
+</ul>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">skewExampleUtils.py</span>
+
+<span class="sd">Utilities for the scripting tutorial Skew Example.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">abaqus</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">visualization</span>
+
+<span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="k">def</span> <span class="nf">getResults</span><span class="p">():</span>
+
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retrieve the displacement and calculate the minimum</span>
+<span class="sd">    and maximum bending moment at the center of plate.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="kn">from</span> <span class="nn">visualization</span> <span class="kn">import</span> <span class="n">ELEMENT_NODAL</span>
+
+    <span class="c1"># Open the output database.</span>
+
+    <span class="n">odb</span> <span class="o">=</span> <span class="n">visualization</span><span class="o">.</span><span class="n">openOdb</span><span class="p">(</span><span class="s1">&#39;skew.odb&#39;</span><span class="p">)</span>
+    <span class="n">centerNSet</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">nodeSets</span><span class="p">[</span><span class="s1">&#39;CENTER&#39;</span><span class="p">]</span>
+    <span class="n">frame</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="s1">&#39;Step-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="c1"># Retrieve Z-displacement at the center of the plate.</span>
+
+    <span class="n">dispField</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;U&#39;</span><span class="p">]</span>
+    <span class="n">dispSubField</span> <span class="o">=</span> <span class="n">dispField</span><span class="o">.</span><span class="n">getSubset</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="n">centerNSet</span><span class="p">)</span>
+    <span class="n">disp</span> <span class="o">=</span> <span class="n">dispSubField</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+    <span class="c1"># Average the contribution from each element to the moment,</span>
+    <span class="c1"># then calculate the minimum and maximum bending moment at</span>
+    <span class="c1"># the center of the plate using Mohr&#39;s circle.</span>
+
+    <span class="n">momentField</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;SM&#39;</span><span class="p">]</span>
+    <span class="n">momentSubField</span> <span class="o">=</span> <span class="n">momentField</span><span class="o">.</span><span class="n">getSubset</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="n">centerNSet</span><span class="p">,</span>
+        <span class="n">position</span><span class="o">=</span><span class="n">ELEMENT_NODAL</span><span class="p">)</span>
+    <span class="n">m1</span><span class="p">,</span> <span class="n">m2</span><span class="p">,</span> <span class="n">m3</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">momentSubField</span><span class="o">.</span><span class="n">values</span><span class="p">:</span>
+        <span class="n">m1</span> <span class="o">=</span> <span class="n">m1</span> <span class="o">+</span> <span class="n">value</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">m2</span> <span class="o">=</span> <span class="n">m2</span> <span class="o">+</span> <span class="n">value</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">m3</span> <span class="o">=</span> <span class="n">m3</span> <span class="o">+</span> <span class="n">value</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+    <span class="n">numElements</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">momentSubField</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+    <span class="n">m1</span> <span class="o">=</span> <span class="n">m1</span> <span class="o">/</span> <span class="n">numElements</span>
+    <span class="n">m2</span> <span class="o">=</span> <span class="n">m2</span> <span class="o">/</span> <span class="n">numElements</span>
+    <span class="n">m3</span> <span class="o">=</span> <span class="n">m3</span> <span class="o">/</span> <span class="n">numElements</span>
+    <span class="n">momentA</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">m1</span><span class="p">)</span> <span class="o">+</span> <span class="nb">abs</span><span class="p">(</span><span class="n">m2</span><span class="p">))</span>
+    <span class="n">momentB</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="mf">0.25</span> <span class="o">*</span> <span class="p">(</span><span class="n">m1</span> <span class="o">-</span> <span class="n">m2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">m3</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">maxMoment</span> <span class="o">=</span> <span class="n">momentA</span> <span class="o">+</span> <span class="n">momentB</span>
+    <span class="n">minMoment</span> <span class="o">=</span> <span class="n">momentA</span> <span class="o">-</span> <span class="n">momentB</span>
+
+    <span class="n">odb</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+    <span class="k">return</span> <span class="n">disp</span><span class="p">,</span> <span class="n">maxMoment</span><span class="p">,</span> <span class="n">minMoment</span>
+
+<span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="k">def</span> <span class="nf">createXYPlot</span><span class="p">(</span><span class="n">vpOrigin</span><span class="p">,</span> <span class="n">vpName</span><span class="p">,</span> <span class="n">plotName</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Display curves of theoretical and computed results in</span>
+<span class="sd">    a new viewport.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="kn">from</span> <span class="nn">visualization</span> <span class="kn">import</span>  <span class="n">USER_DEFINED</span>
+
+    <span class="n">vp</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">vpName</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="n">vpOrigin</span><span class="p">,</span>
+        <span class="n">width</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">xyPlot</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">XYPlot</span><span class="p">(</span><span class="n">plotName</span><span class="p">)</span>
+    <span class="n">chart</span> <span class="o">=</span> <span class="n">xyPlot</span><span class="o">.</span><span class="n">charts</span><span class="o">.</span><span class="n">values</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">curveList</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">elemName</span><span class="p">,</span> <span class="n">xyValues</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+        <span class="n">xyData</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">XYData</span><span class="p">(</span><span class="n">elemName</span><span class="p">,</span> <span class="n">xyValues</span><span class="p">)</span>
+        <span class="n">curve</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">Curve</span><span class="p">(</span><span class="n">xyData</span><span class="p">)</span>
+        <span class="n">curveList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">curve</span><span class="p">)</span>
+    <span class="n">chart</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">curvesToPlot</span><span class="o">=</span><span class="n">curveList</span><span class="p">)</span>
+    <span class="n">chart</span><span class="o">.</span><span class="n">axes1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">axisData</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">useSystemTitle</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Skew Angle&#39;</span><span class="p">)</span>
+    <span class="n">chart</span><span class="o">.</span><span class="n">axes2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">axisData</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">useSystemTitle</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span><span class="n">title</span><span class="o">=</span><span class="n">plotName</span><span class="p">)</span>
+    <span class="n">vp</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">xyPlot</span><span class="p">)</span>
+
+<span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="k">def</span> <span class="nf">createModel</span><span class="p">():</span>
+
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Create the skew example model, including material, step, load, bc, and job.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="kn">import</span> <span class="nn">regionToolset</span><span class="o">,</span> <span class="nn">part</span><span class="o">,</span> <span class="nn">step</span><span class="o">,</span> <span class="nn">mesh</span>
+
+    <span class="c1"># Create the Plate</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span>
+    <span class="n">s</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">ConstrainedSketch</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;__profile__&#39;</span><span class="p">,</span> <span class="n">sheetSize</span><span class="o">=</span><span class="mf">5.0</span><span class="p">)</span>
+    <span class="n">g</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">geometry</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">vertices</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">dimensions</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">constraints</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">sketchOptions</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">sheetSize</span><span class="o">=</span><span class="mf">5.0</span><span class="p">,</span> <span class="n">gridSpacing</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">grid</span><span class="o">=</span><span class="n">ON</span><span class="p">,</span>
+                            <span class="n">gridFrequency</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">constructionGeometry</span><span class="o">=</span><span class="n">ON</span><span class="p">,</span>
+                            <span class="n">dimensionTextHeight</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">decimalPlaces</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">setPrimaryObject</span><span class="p">(</span><span class="n">option</span><span class="o">=</span><span class="n">STANDALONE</span><span class="p">)</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">rectangle</span><span class="p">(</span><span class="n">point1</span><span class="o">=</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span> <span class="n">point2</span><span class="o">=</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">))</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="n">objectList</span><span class="o">=</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="mi">21</span><span class="p">],</span> <span class="n">c</span><span class="p">[</span><span class="mi">18</span><span class="p">],</span> <span class="n">c</span><span class="p">[</span><span class="mi">19</span><span class="p">],</span> <span class="n">c</span><span class="p">[</span><span class="mi">20</span><span class="p">]))</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">HorizontalConstraint</span><span class="p">(</span><span class="n">entity</span><span class="o">=</span><span class="n">g</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)))</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">FixedConstraint</span><span class="p">(</span><span class="n">entity</span><span class="o">=</span><span class="n">v</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)))</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">FixedConstraint</span><span class="p">(</span><span class="n">entity</span><span class="o">=</span><span class="n">v</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)))</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">ParallelConstraint</span><span class="p">(</span><span class="n">entity1</span><span class="o">=</span><span class="n">g</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)),</span>
+                        <span class="n">entity2</span><span class="o">=</span><span class="n">g</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">1.0</span><span class="p">,</span><span class="mf">0.5</span><span class="p">)))</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">AngularDimension</span><span class="p">(</span><span class="n">line1</span><span class="o">=</span><span class="n">g</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)),</span> <span class="n">line2</span><span class="o">=</span><span class="n">g</span><span class="o">.</span><span class="n">findAt</span><span class="p">((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)),</span>
+                    <span class="n">textPoint</span><span class="o">=</span><span class="p">(</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">),</span> <span class="n">value</span><span class="o">=</span><span class="mf">90.0</span><span class="p">)</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">Part</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Plate&#39;</span><span class="p">,</span> <span class="n">dimensionality</span><span class="o">=</span><span class="n">THREE_D</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">DEFORMABLE_BODY</span><span class="p">)</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">BaseShell</span><span class="p">(</span><span class="n">sketch</span><span class="o">=</span><span class="n">s</span><span class="p">)</span>
+    <span class="n">s</span><span class="o">.</span><span class="n">unsetPrimaryObject</span><span class="p">()</span>
+    <span class="n">vp</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="s1">&#39;Viewport: 1&#39;</span><span class="p">]</span>
+    <span class="n">vp</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">p</span><span class="p">)</span>
+    <span class="k">del</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sketches</span><span class="p">[</span><span class="s1">&#39;__profile__&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Create the Steel material</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">Material</span><span class="p">(</span><span class="s1">&#39;Steel&#39;</span><span class="p">)</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">materials</span><span class="p">[</span><span class="s1">&#39;Steel&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">Elastic</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="p">((</span><span class="mf">30.e6</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">),</span> <span class="p">))</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">HomogeneousShellSection</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Shell&#39;</span><span class="p">,</span> <span class="n">preIntegrate</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">material</span><span class="o">=</span><span class="s1">&#39;Steel&#39;</span><span class="p">,</span>
+                            <span class="n">thickness</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">poissonDefinition</span><span class="o">=</span><span class="n">DEFAULT</span><span class="p">,</span>
+                            <span class="n">temperature</span><span class="o">=</span><span class="n">GRADIENT</span><span class="p">,</span> <span class="n">integrationRule</span><span class="o">=</span><span class="n">SIMPSON</span><span class="p">,</span> <span class="n">numIntPts</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+
+    <span class="c1"># Assign Steel to the plate</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="s1">&#39;Plate&#39;</span><span class="p">]</span>
+    <span class="n">region</span> <span class="o">=</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="n">p</span><span class="o">.</span><span class="n">faces</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+    <span class="n">p</span><span class="o">.</span><span class="n">SectionAssignment</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="n">region</span><span class="p">,</span> <span class="n">sectionName</span><span class="o">=</span><span class="s1">&#39;Shell&#39;</span><span class="p">)</span>
+
+
+    <span class="c1"># Create the assembly</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">rootAssembly</span>
+    <span class="n">vp</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">displayedObject</span><span class="o">=</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">DatumCsysByDefault</span><span class="p">(</span><span class="n">CARTESIAN</span><span class="p">)</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">Instance</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Plate-1&#39;</span><span class="p">,</span> <span class="n">part</span><span class="o">=</span><span class="n">p</span><span class="p">,</span> <span class="n">dependent</span><span class="o">=</span><span class="n">OFF</span><span class="p">)</span>
+    <span class="n">pi</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="s1">&#39;Plate-1&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Create the step</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">StaticStep</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Step-1&#39;</span><span class="p">,</span> <span class="n">previous</span><span class="o">=</span><span class="s1">&#39;Initial&#39;</span><span class="p">,</span>
+                <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Apply pressure&#39;</span><span class="p">,</span> <span class="n">timePeriod</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">initialInc</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">vp</span><span class="o">.</span><span class="n">assemblyDisplay</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">step</span><span class="o">=</span><span class="s1">&#39;Step-1&#39;</span><span class="p">)</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">fieldOutputRequests</span><span class="p">[</span><span class="s1">&#39;F-Output-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">setValues</span><span class="p">(</span><span class="n">frequency</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">variables</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;U&#39;</span><span class="p">,))</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">FieldOutputRequest</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;F-Output-2&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;Step-1&#39;</span><span class="p">,</span>
+                        <span class="n">variables</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;SF&#39;</span><span class="p">,),</span> <span class="n">position</span><span class="o">=</span><span class="n">NODES</span><span class="p">)</span>
+    <span class="k">del</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">historyOutputRequests</span><span class="p">[</span><span class="s1">&#39;H-Output-1&#39;</span><span class="p">]</span>
+
+    <span class="c1"># Create the displacement BC</span>
+    <span class="n">e</span> <span class="o">=</span> <span class="n">pi</span><span class="o">.</span><span class="n">edges</span>
+    <span class="n">edges</span> <span class="o">=</span> <span class="n">e</span><span class="o">.</span><span class="n">findAt</span><span class="p">(((</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span> <span class="p">),</span> <span class="p">((</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span> <span class="p">),</span>
+                    <span class="p">((</span><span class="mf">0.75</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span> <span class="p">),</span> <span class="p">((</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span> <span class="p">),</span> <span class="p">)</span>
+    <span class="n">region</span> <span class="o">=</span><span class="p">(</span><span class="bp">None</span><span class="p">,</span> <span class="n">edges</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="bp">None</span><span class="p">)</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">DisplacementBC</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Pinned&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;Step-1&#39;</span><span class="p">,</span> <span class="n">region</span><span class="o">=</span><span class="n">region</span><span class="p">,</span>
+                    <span class="n">u1</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">u2</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">u3</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+
+    <span class="c1"># Create the Pressure load</span>
+    <span class="n">s1</span> <span class="o">=</span> <span class="n">pi</span><span class="o">.</span><span class="n">faces</span>
+    <span class="n">side1Faces1</span> <span class="o">=</span> <span class="n">s1</span><span class="o">.</span><span class="n">findAt</span><span class="p">(((</span><span class="mf">0.333333333333333</span><span class="p">,</span> <span class="mf">0.333333333333333</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span>
+                            <span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">),</span> <span class="p">),)</span>
+    <span class="n">region</span> <span class="o">=</span> <span class="n">regionToolset</span><span class="o">.</span><span class="n">Region</span><span class="p">(</span><span class="n">side1Faces</span><span class="o">=</span><span class="n">side1Faces1</span><span class="p">)</span>
+    <span class="n">m</span><span class="o">.</span><span class="n">Pressure</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Load-1&#39;</span><span class="p">,</span> <span class="n">createStepName</span><span class="o">=</span><span class="s1">&#39;Step-1&#39;</span><span class="p">,</span> <span class="n">region</span><span class="o">=</span><span class="n">region</span><span class="p">,</span>
+            <span class="n">distributionType</span><span class="o">=</span><span class="n">UNIFORM</span><span class="p">,</span> <span class="n">magnitude</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">amplitude</span><span class="o">=</span><span class="n">UNSET</span><span class="p">)</span>
+
+    <span class="c1"># Partition the face</span>
+    <span class="n">f1</span><span class="p">,</span> <span class="n">e1</span> <span class="o">=</span> <span class="n">pi</span><span class="o">.</span><span class="n">faces</span><span class="p">,</span> <span class="n">pi</span><span class="o">.</span><span class="n">edges</span>
+    <span class="n">faces</span> <span class="o">=</span> <span class="p">(</span><span class="n">f1</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">(</span><span class="mf">0.33333333333</span><span class="p">,</span> <span class="mf">0.33333333333</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)),</span> <span class="p">)</span>
+    <span class="n">pt1</span> <span class="o">=</span> <span class="n">pi</span><span class="o">.</span><span class="n">InterestingPoint</span><span class="p">(</span><span class="n">edge</span><span class="o">=</span><span class="n">e1</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">(</span>
+        <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)),</span> <span class="n">rule</span><span class="o">=</span><span class="n">MIDDLE</span><span class="p">)</span>
+    <span class="n">pt2</span> <span class="o">=</span> <span class="n">pi</span><span class="o">.</span><span class="n">InterestingPoint</span><span class="p">(</span><span class="n">edge</span><span class="o">=</span><span class="n">e1</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">(</span>
+        <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)),</span> <span class="n">rule</span><span class="o">=</span><span class="n">MIDDLE</span><span class="p">)</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">PartitionFaceByShortestPath</span><span class="p">(</span><span class="n">faces</span><span class="o">=</span><span class="n">faces</span><span class="p">,</span> <span class="n">point1</span><span class="o">=</span><span class="n">pt1</span><span class="p">,</span> <span class="n">point2</span><span class="o">=</span><span class="n">pt2</span><span class="p">)</span>
+    <span class="n">faces</span> <span class="o">=</span> <span class="p">(</span><span class="n">f1</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">(</span><span class="mf">0.33333333333</span><span class="p">,</span> <span class="mf">0.66666666667</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)),</span>
+            <span class="n">f1</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">(</span><span class="mf">0.66666666667</span><span class="p">,</span> <span class="mf">0.33333333333</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)))</span>
+    <span class="n">pt1</span> <span class="o">=</span> <span class="n">pi</span><span class="o">.</span><span class="n">InterestingPoint</span><span class="p">(</span><span class="n">edge</span><span class="o">=</span><span class="n">e1</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">(</span>
+        <span class="mf">0.75</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)),</span> <span class="n">rule</span><span class="o">=</span><span class="n">MIDDLE</span><span class="p">)</span>
+    <span class="n">pt2</span> <span class="o">=</span> <span class="n">pi</span><span class="o">.</span><span class="n">InterestingPoint</span><span class="p">(</span><span class="n">edge</span><span class="o">=</span><span class="n">e1</span><span class="o">.</span><span class="n">findAt</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="p">(</span>
+        <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)),</span> <span class="n">rule</span><span class="o">=</span><span class="n">MIDDLE</span><span class="p">)</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">PartitionFaceByShortestPath</span><span class="p">(</span><span class="n">faces</span><span class="o">=</span><span class="n">faces</span><span class="p">,</span> <span class="n">point1</span><span class="o">=</span><span class="n">pt1</span><span class="p">,</span> <span class="n">point2</span><span class="o">=</span><span class="n">pt2</span><span class="p">)</span>
+
+    <span class="c1"># Create the Geometry set CENTER</span>
+    <span class="n">verts</span> <span class="o">=</span> <span class="n">pi</span><span class="o">.</span><span class="n">vertices</span><span class="o">.</span><span class="n">findAt</span><span class="p">(((</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">),</span> <span class="p">))</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">Set</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;CENTER&#39;</span><span class="p">,</span> <span class="n">vertices</span><span class="o">=</span><span class="n">verts</span><span class="p">)</span>
+
+    <span class="c1"># Create the mesh</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">seedPartInstance</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="p">(</span><span class="n">pi</span><span class="p">,),</span> <span class="n">size</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
+    <span class="n">a</span><span class="o">.</span><span class="n">generateMesh</span><span class="p">(</span><span class="n">regions</span><span class="o">=</span><span class="p">(</span><span class="n">pi</span><span class="p">,))</span>
+
+    <span class="c1"># Create the job</span>
+    <span class="n">mdb</span><span class="o">.</span><span class="n">Job</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;skew&#39;</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="s1">&#39;Model-1&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">ANALYSIS</span><span class="p">,</span> <span class="n">explicitPrecision</span><span class="o">=</span><span class="n">SINGLE</span><span class="p">,</span>
+            <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">userSubroutine</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">numCpus</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">scratch</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+            <span class="n">echoPrint</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">modelPrint</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">contactPrint</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">historyPrint</span><span class="o">=</span><span class="n">OFF</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="plot.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Generating a customized plot</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="settings.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Editing display preferences and GUI settings</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-the-model-to-analyze">
+   Creating the model to analyze
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#changing-the-skew-angle">
+   Changing the skew angle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-the-angular-dimension">
+     Add the angular dimension
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#determine-the-indices-of-the-dimension-to-modify-and-the-vertices-to-move">
+     Determine the indices of the dimension to modify and the vertices to move
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-a-script-to-perform-a-parametric-study">
+   Using a script to perform a parametric study
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../_sources/user/examples/sensitivity.rst.txt">
+        <i class="fas fa-file-alt"></i> Show Source
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
