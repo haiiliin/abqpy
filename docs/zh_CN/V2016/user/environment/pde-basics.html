@@ -1,0 +1,1176 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Abaqus PDE basics &#8212; abqpy 2016 文档</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user/environment/pde-basics';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2016';
+        </script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Using the Abaqus PDE" href="use-pde.html" />
+    <link rel="prev" title="About the Abaqus Python development environment" href="about.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="zh-CN">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2016 文档</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2016  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2016  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../about.html">
+   About the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../about/interface.html">
+     Abaqus/CAE and the Abaqus Scripting Interface
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../about/interact.html">
+     How does the Abaqus Scripting Interface interact with Abaqus/CAE?
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../about/examples.html">
+     Simple examples
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../about/examples/create-part.html">
+       Creating a part
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../about/examples/read-output.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../about/examples/summary.html">
+       Summary
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../python.html">
+   Using the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../python/introduction.html">
+     Introduction to Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/python-abaqus.html">
+       Python and Abaqus
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/python-resources.html">
+       Python resources
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/python-interpreter.html">
+       Using the Python interpreter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/oop-basics.html">
+       Object-oriented basics
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/python-basics.html">
+       The basics of Python
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/programming.html">
+       Programming techniques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/introduction/further-reading.html">
+       Further reading
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../python/python-abaqus.html">
+     Using Python and the Abaqus Scripting Interface
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/executing.html">
+       Executing scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/types.html">
+       Abaqus Scripting Interface data types
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/oop.html">
+       Object-oriented programming and the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/errors.html">
+       Error handling in the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/python-abaqus/extending.html">
+       Extending the Abaqus Scripting Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../python/use-scripts.html">
+     Using the Abaqus Scripting Interface with Abaqus/CAE
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/object-model.html">
+       The Abaqus object model
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/modify-objects.html">
+       Copying, deleting, and renaming Abaqus Scripting Interface objects
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/sequences.html">
+       Abaqus/CAE sequences
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/namespace.html">
+       Namespace
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/specify-viewport.html">
+       Specifying what is displayed in the viewport
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/specify-region.html">
+       Specifying a region
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/user-input.html">
+       Prompting the user for input
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/interact.html">
+       Interacting with Abaqus/Standard and Abaqus/Explicit
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python/use-scripts/environment-file.html">
+       Using Abaqus Scripting Interface commands in your environment file
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../environment.html">
+   The Abaqus Python Development Environment
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="about.html">
+     About the Abaqus Python development environment
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Abaqus PDE basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="use-pde.html">
+     Using the Abaqus PDE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../examples.html">
+   Putting it all Together: Abaqus Scripting Interface Examples
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/cantilever.html">
+     Reproducing the cantilever beam tutorial
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/plot.html">
+     Generating a customized plot
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/sensitivity.html">
+     Investigating the skew sensitivity of shell elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../examples/settings.html">
+     Editing display preferences and GUI settings
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../output.html">
+   Accessing an Output Database
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../output/python.html">
+     Using the Abaqus Scripting Interface to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/need-what-to-understand.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/execute-script.html">
+       Executing a script that accesses an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/python/examples.html">
+       Example scripts that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../output/cpp.html">
+     Using C++ to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/about.html">
+       About the C++ interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/need-what-access.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/compile-link.html">
+       Compiling and linking your C++ source code
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/access.html">
+       Accessing the C++ interface from an existing application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/architecture.html">
+       The Abaqus C++ API architecture
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/utility.html">
+       Utility interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output/cpp/examples.html">
+       Example programs that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="abaqus-pde-basics">
+<h1>Abaqus PDE basics<a class="headerlink" href="#abaqus-pde-basics" title="此标题的永久链接">#</a></h1>
+<p>The following sections describe the basic functions of the PDE.</p>
+<section id="starting-the-abaqus-python-development-environment">
+<h2>Starting the Abaqus Python development environment<a class="headerlink" href="#starting-the-abaqus-python-development-environment" title="此标题的永久链接">#</a></h2>
+<p>You can choose from several methods to start the Abaqus Python development environment. If you plan to work on scripts that use the Abaqus/CAE GUI, you should start the Abaqus PDE from within an Abaqus/CAE session or start it from the command prompt when you start Abaqus/CAE. These startup methods link the Abaqus PDE to the corresponding Abaqus/CAE session. Alternatively, you can start the Abaqus PDE independently to save system memory or avoid using an Abaqus license.</p>
+<p>Use one of the following methods to start the Abaqus PDE. The first two methods start the Abaqus PDE with a link to an Abaqus/CAE session. The last method starts the Abaqus PDE independently from Abaqus/CAE:</p>
+<ul>
+<li><p>In Abaqus/CAE, select File -&gt; Abaqus PDE from the main menu bar.</p></li>
+<li><p>From a system command prompt, enter</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus cae -pde
+</pre></div>
+</div>
+<p>where <strong>abaqus</strong> is the command used to start Abaqus.</p>
+<p>Note:</p>
+<p>Using this method starts Abaqus/CAE without any local user preference settings. Ignoring user preferences allows you to record and run .guiLog tests using the consistent default startup settings.</p>
+</li>
+<li><p>From a system command prompt, enter</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus pde <span class="o">[</span>filenames<span class="o">]</span> <span class="o">[</span>-script filename<span class="o">]</span> <span class="o">[</span>-pde Abaqus/CAE <span class="nb">command</span> line arguments<span class="o">]</span>
+</pre></div>
+</div>
+<p>where <strong>abaqus</strong> is the command used to start Abaqus, and <strong>filenames</strong> are the names, including the directory paths, of scripts to be opened at startup.</p>
+<p>The <cite>-script</cite> option allows you to enter the name, including the directory path, of a main file to be opened at startup. The Abaqus PDE will create a new blank script if the named file does not exist in the specified directory. If the directory does not exist, the Abaqus PDE generates an error message.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>File names and paths specified without the <cite>-script</cite> option are opened for editing—not as the main file.</p>
+<p>The -pde option is used to specify options for use with Abaqus/CAE if you run a script in the Abaqus PDE that requires the Abaqus/CAE kernel or user interface. You can also add command line options for Abaqus/CAE using the Settings menu. For more information, see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdesettings.htm?contextscope=all">Selecting the settings for use with a file</a>.</p>
+</div>
+</li>
+</ul>
+<p>The sections that follow describe how to use the menus and tools within the Abaqus PDE.</p>
+</section>
+<section id="managing-files-in-the-abaqus-pde">
+<h2>Managing files in the Abaqus PDE<a class="headerlink" href="#managing-files-in-the-abaqus-pde" title="此标题的永久链接">#</a></h2>
+<p>You can use the File menu and tools to manage files in the Abaqus PDE. You can work with multiple scripts, but you can test only one script at a time. The file to be tested is called the Main File. The path and file name of the main file are displayed near the upper left corner of the Abaqus PDE window. You can open the main file by using the Select Main File or Recent Main Files items in the File menu. You can also create a new main file or select an open file to be the main file.</p>
+<p>Note:</p>
+<p>When the Set Last Main File on Startup setting is toggled on, the Abaqus PDE automatically reopens the main file that was open when you closed your last session.</p>
+<p>The default file extensions for use with the Abaqus PDE are .py and .guiLog. A .py file typically designates a standard Python or Abaqus Scripting Interface script, and a .guiLog file is a specialized Python script that records actions in the Abaqus/CAE GUI.</p>
+<p>As you play a main file script, the Abaqus PDE automatically opens any files that contain functions called by the script, if the files are available in the current path (sys.path). These files are added to the recently used files list in the File menu. The Abaqus PDE also saves a list of recently used files and other files (dependent files) called when you run a main file. This list is saved in the current directory as abaqus_pde.deps.</p>
+<p><a class="reference internal" href="#cmd-pde-filemenu-nls"><span class="std std-numref">图 16</span></a> shows the items in the Abaqus PDE File menu.</p>
+<figure class="align-center" id="id2">
+<span id="cmd-pde-filemenu-nls"></span><a class="reference internal image-reference" href="../../_images/cmd-pde-filemenu-nls.png"><img alt="../../_images/cmd-pde-filemenu-nls.png" src="../../_images/cmd-pde-filemenu-nls.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 16 </span><span class="caption-text">The File menu</span><a class="headerlink" href="#id2" title="此图像的永久链接">#</a></p>
+</figcaption>
+</figure>
+<p>The following options are available from the File menu:</p>
+<ul>
+<li><p><strong>New</strong></p>
+<p>Create a new file. The Abaqus PDE creates a new main file and displays it in the main window. The file is created using the default naming convention <cite>_abaqus*#*_.guiLog</cite>, where # starts at 1 and is incremented as you create more files in the current directory. You can also click the New guiLog  icon to create a new file.Abaqus automatically designates the new script as the main file.</p>
+</li>
+<li><p><strong>Open</strong></p>
+<p>Open a script. You can also click the Open file  icon to open a script.If you have not yet opened or created another script, Abaqus automatically makes the first opened file the main file for testing. Otherwise, the file opened becomes the current file viewed in the main window, but it is not the main file used for testing.**Tip:** You can drag and drop script files from the desktop or from Windows Explorer into the Abaqus PDE for editing.You can navigate to the file you want to open by entering its full path, or you can specify a path using environment variables.</p>
+</li>
+<li><p><strong>Select Main File</strong></p>
+<p>Open a script as the main file for testing. You can also click the Open main file  icon to open a script as the main file.</p>
+</li>
+<li><p><strong>Make Current Main</strong></p>
+<p>Designate the current script in the main window as the main file for testing.</p>
+</li>
+<li><p><strong>Save</strong></p>
+<p>Save changes to the current file. You can also click Save  to save the current file.</p>
+</li>
+<li><p><strong>Save As</strong></p>
+<p>Save the current file with a new name.</p>
+</li>
+<li><p><strong>Reload Modules</strong></p>
+<p>Reload user interface modules to capture any changes that you made since they were first loaded. You can also click Reload Modules  to reload the user interface modules. The Abaqus PDE reloads user interface modules in the Abaqus/CAE GUI and Abaqus/CAE kernel processes unless the current setting for the Run Script In option is local, in which case any changed modules are reloaded in the local PDE process.</p>
+</li>
+<li><p><strong>Close File</strong></p>
+<p>Close the current file.</p>
+</li>
+<li><p><strong>Filename.py</strong></p>
+<p>The name and file extension of the current main file, if one is selected.Clicking here shows a list of dependent files that were found when the main file was run. If the current main file has not been run in the Abaqus PDE, this list will be empty.</p>
+</li>
+<li><p><strong>Recent Main Files</strong></p>
+<p>A list of the files that you have opened as the main file for testing. Recent Files from previous sessions will be read from the abaqus_pde.deps file, if it exists in the current directory.</p>
+</li>
+<li><p><strong>Recent Traced Files</strong></p>
+<p>A list of files that were opened by the Abaqus PDE to trace a function called by one of the main files that you tested. Recent Files from previous sessions will be read from the abaqus_pde.deps file, if it exists in the current directory.</p>
+</li>
+<li><p><strong>Recent Files</strong></p>
+<p>A list of all files that you have opened, regardless of whether you opened them to view and edit them or opened them as the main file for testing. Recent Files from previous sessions will be read from the <cite>abaqus_pde.deps</cite> file, if it exists in the current directory.</p>
+</li>
+</ul>
+<p>The recently used files lists are stored in the <cite>abaqus_pde.deps</cite> file in the directory from which you start the current Abaqus PDE session. If you start an Abaqus PDE session from another location, the lists contain only the files that you used the last time you opened a session in that directory. If you have not previously used the Abaqus PDE in the current directory, a new set of recently used files is recorded as you work.</p>
+</section>
+<section id="editing-files-in-the-abaqus-pde">
+<h2>Editing files in the Abaqus PDE<a class="headerlink" href="#editing-files-in-the-abaqus-pde" title="此标题的永久链接">#</a></h2>
+<p>You can use the <strong>Edit</strong> menu to edit scripts in the Abaqus PDE. The <strong>Edit</strong> menu contains common editing tools, including <strong>Undo</strong>, <strong>Redo</strong>, <strong>Copy</strong>, <strong>Cut</strong>, <strong>Paste</strong>, <strong>Find</strong>, and <strong>Replace</strong>. It also contains the following tools for editing scripts:</p>
+<ul class="simple">
+<li><p><strong>Indent Region &gt;</strong></p></li>
+<li><p><strong>Unindent Region &lt;</strong></p></li>
+<li><p><strong>Comment Region ##</strong></p></li>
+<li><p><strong>Uncomment Region</strong></p></li>
+</ul>
+<p>To use these tools, highlight one or more lines of code in the main window and select the desired option from the <strong>Edit</strong> menu. The <strong>Edit</strong> menu also contains a keyboard shortcut for each of the editing tools.</p>
+</section>
+<section id="id1">
+<h2>Selecting the settings for use with a file<a class="headerlink" href="#id1" title="此标题的永久链接">#</a></h2>
+<p>Use the <strong>Settings</strong> menu and tools to change some of the options in the Abaqus PDE.</p>
+<p><a class="reference internal" href="#cmd-pde-settingsmenu-nls"><span class="std std-numref">图 17</span></a> shows the items and default selections in the Abaqus PDE <strong>Settings</strong> menu.</p>
+<figure class="align-center" id="id3">
+<span id="cmd-pde-settingsmenu-nls"></span><a class="reference internal image-reference" href="../../_images/cmd-pde-settingsmenu-nls.png"><img alt="../../_images/cmd-pde-settingsmenu-nls.png" src="../../_images/cmd-pde-settingsmenu-nls.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 17 </span><span class="caption-text">The Settings menu.</span><a class="headerlink" href="#id3" title="此图像的永久链接">#</a></p>
+</figcaption>
+</figure>
+<p>The following items are available from the <strong>Settings</strong> menu:</p>
+<ul>
+<li><p><strong>Recording Options</strong></p>
+<p>Set the display of the triad, state block, and title block and whether the legend background matches the viewport. These options affect the commands recorded for an output database.</p>
+</li>
+<li><p><strong>Allow Editing of Files</strong></p>
+<p>Toggle between edit and read-only modes for all files. Editing is allowed by default.</p>
+</li>
+<li><p><strong>Show File Line Numbers</strong></p>
+<p>Display line numbers for any open files on the left side of the main window. Line numbers are displayed by default.</p>
+</li>
+<li><p><strong>Ignore Breakpoints During Play</strong></p>
+<p>Run the main file continuously, skipping any breakpoints, until it completes or stops for an error. Breaks are not skipped by default. You can also skip breakpoints by toggling on Ignore breaks, located in the toolbar above the main window.</p>
+</li>
+<li><p><strong>Allow Pause in Play</strong></p>
+<p>Pause a running file by clicking the <strong>Pause</strong> button. Pause is allowed by default. Allowing pause also causes the main file to run in the debugger. (For more information, see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdedebug.htm?contextscope=all">Using the debugger</a>.)</p>
+</li>
+<li><p><strong>Set Last Main File on Startup</strong></p>
+<p>Upon startup, automatically reopen the main file that was open when you last closed the Abaqus PDE.</p>
+</li>
+<li><p><strong>Run Script In</strong></p>
+<p>Select whether the main file is run in the Abaqus/CAE GUI, the Abaqus/CAE kernel, or run locally. By default, <cite>.guiLog</cite> files are run in the GUI, and <cite>.py</cite> and other file types are run in the kernel. You can also set this option using the GUI, Kernel, and Local radio buttons located above the main window.If the Abaqus PDE was opened without Abaqus/CAE and you run a script with the <strong>GUI</strong> or <strong>Kernel</strong> process, the Abaqus PDE will start Abaqus/CAE to run the script.</p>
+</li>
+<li><p><strong>.py Default to Kernel</strong></p>
+<p>Set <cite>.py</cite> files to run in the Abaqus/CAE kernel. This option is selected by default. If <cite>.py</cite> Default to Kernel is not selected, <cite>.py</cite> files are run locally. Select the <strong>GUI</strong> or <strong>Local</strong> radio button to run a Python script in one of these modes without changing the default behavior.</p>
+</li>
+<li><p><strong>Line Animation</strong></p>
+<p>Highlight the line currently being executed in the main window. The following animation settings are available:</p>
+<ul class="simple">
+<li><p>No animation.</p></li>
+<li><p>Animate main file (default). Highlights only the statements in the main function or method. Functions called from the main script are not highlighted.</p></li>
+<li><p>Animate main file functions. Highlights the main script statements and the statements in functions that are defined within the main file.</p></li>
+<li><p>Animate all files. Highlights the main script statements and statements within all functions for which the source code is available.</p></li>
+</ul>
+</li>
+<li><p><strong>Python Code</strong></p>
+<p>Control the appearance and editing behavior of Python scripts in the Abaqus PDE main window.</p>
+<ul>
+<li><p><strong>Syntax Coloring</strong></p>
+<p>Display the code using various font colors according to its purpose. This option is selected by default.You can view or change the color selections with the Choose Syntax Colors option.</p>
+</li>
+<li><p><strong>Python Editing</strong></p>
+<p>Edit scripts with Python formatting, such as indentation, included automatically. This option is selected by default.</p>
+</li>
+<li><p><strong>Choose Syntax Colors</strong></p>
+<p>Opens the <strong>PDE Syntax Colors</strong> dialog box in which you can view or change the color selections for editing scripts. Click <strong>Reset Defaults</strong> to restore the default colors.</p>
+</li>
+</ul>
+</li>
+<li><p><strong>CAE Command Line Extra Args…</strong></p>
+<p>Enter extra arguments for use when Abaqus/CAE is launched from the Abaqus PDE.</p>
+</li>
+<li><p><strong>Auto Trace in CAE</strong></p>
+<p>Automatically trace code in GUI and kernel processes of Abaqus/CAE. The script will be traced until it returns from the frame in which the trace started. The trace will therefore stop when the function returns or the end of the script is reached. This option is selected by default.</p>
+</li>
+</ul>
+</section>
+<section id="the-message-area-and-gui-command-line-interface">
+<h2>The message area and GUI command line interface<a class="headerlink" href="#the-message-area-and-gui-command-line-interface" title="此标题的永久链接">#</a></h2>
+<p>The message area and the GUI command line interface share the space at the bottom of the Abaqus PDE, similar to the kernel command line interface in Abaqus/CAE. (For more information, see <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECAERefMap/simacae-c-topmainabqwindow.htm?contextscope=all">Components of the main window</a>.) The message area is displayed by default. It displays messages and warnings as you run scripts in the Abaqus PDE.</p>
+<p>The GUI command line interface is hidden by default, but it uses the same space occupied by the message area. Click <a class="reference internal" href="../../_images/ico_guiCli.png"><img alt="ico_guiCli" src="../../_images/ico_guiCli.png" style="height: 20pt;" /></a> in the bottom left corner of the Abaqus PDE main window to switch from the message area to the GUI command line interface. The GUI and kernel processes in Abaqus/CAE run separately, each using its own Python interpreter. You can use the GUI command line interface to type Python commands and to evaluate mathematical expressions using the Python interpreter that is built into the Abaqus/CAE GUI. You can use the kernel command line interface in Abaqus/CAE for similar tasks. Each command line interface includes primary (&gt;&gt;&gt;) and secondary (…) prompts to indicate when you must indent commands to comply with Python syntax. After you use the GUI command line interface, click <a class="reference internal" href="../../_images/afxI_messageArea.png"><img alt="afxI_messageArea" src="../../_images/afxI_messageArea.png" style="height: 20pt;" /></a> to display the message area.</p>
+<p>If new messages are generated in the message area while the GUI command line interface is active, the background around the message area icon turns red. The background reverts to its normal color when you display the message area.</p>
+</section>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="about.html" title="上一页 页">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">上一页</p>
+          <p class="prev-next-title">About the Abaqus Python development environment</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="use-pde.html" title="下一页 页">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">下一页</p>
+      <p class="prev-next-title">Using the Abaqus PDE</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#starting-the-abaqus-python-development-environment">
+   Starting the Abaqus Python development environment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#managing-files-in-the-abaqus-pde">
+   Managing files in the Abaqus PDE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#editing-files-in-the-abaqus-pde">
+   Editing files in the Abaqus PDE
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Selecting the settings for use with a file
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-message-area-and-gui-command-line-interface">
+   The message area and GUI command line interface
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../_sources/user/environment/pde-basics.rst.txt">
+        <i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>

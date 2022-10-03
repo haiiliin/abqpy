@@ -1,0 +1,2028 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Step Miscellaneous &#8212; abqpy 2016 文档</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../../_static/clipboard.min.js"></script>
+    <script src="../../../../_static/copybutton.js"></script>
+    <script src="../../../../_static/translations.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'summary/mdb/model/step/step_miscellaneous';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2016';
+        </script>
+    <link rel="index" title="索引" href="../../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../../search.html" />
+    <link rel="next" title="Abaqus Job" href="../../job.html" />
+    <link rel="prev" title="Step" href="../step.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="zh-CN">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2016 文档</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2016  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2016  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../header.html">
+   Header of the Python script
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../../mdb.html">
+   Abaqus Model Database
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../../model.html">
+     Abaqus Model
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../adaptivity.html">
+       Adaptivity
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../amplitude.html">
+       Amplitude
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../assembly.html">
+       Assembly
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../bc.html">
+       Boundary Condition
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../calibration.html">
+       Calibration of Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../constraint.html">
+       Constraint
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../field.html">
+       Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../filter.html">
+       Filter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../interaction.html">
+       Interaction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../load.html">
+       Load
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../material.html">
+       Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../optimization.html">
+       Optimization
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../output.html">
+       Output Request
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../part.html">
+       Part
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../predefined.html">
+       Predefined Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../profile.html">
+       Beam Section Profile
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../property.html">
+       Property
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../section.html">
+       Section
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../section/connector.html">
+         Connector
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../sketcher.html">
+       Sketcher
+      </a>
+     </li>
+     <li class="toctree-l3 current active has-children">
+      <a class="reference internal" href="../step.html">
+       Step
+      </a>
+      <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul class="current">
+       <li class="toctree-l4 current active">
+        <a class="current reference internal" href="#">
+         Step Miscellaneous
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../job.html">
+     Abaqus Job
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../odb.html">
+   Abaqus Output Database
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../session.html">
+   Abaqus Session
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="step-miscellaneous">
+<h1>Step Miscellaneous<a class="headerlink" href="#step-miscellaneous" title="此标题的永久链接">#</a></h1>
+<p>Miscellaneous Step commands are used for configuring controls, damping, and frequency tables.</p>
+<section id="object-features">
+<h2>Object features<a class="headerlink" href="#object-features" title="此标题的永久链接">#</a></h2>
+<section id="compositedamping">
+<h3>CompositeDamping<a class="headerlink" href="#compositedamping" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CompositeDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/CompositeDamping.py#L5-L17"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping" title="abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping"><code class="xref py py-class docutils literal notranslate"><span class="pre">CompositeDamping</span></code></a> object contains composite modal damping parameters.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">compositeDamping</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-compositedampingpyc.htm?contextscope=all">CompositeDamping on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping.components" title="abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping.components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">components</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponentArray" title="abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">CompositeDampingComponentArray</span></code></a> object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="compositedampingcomponent">
+<h3>CompositeDampingComponent<a class="headerlink" href="#compositedampingcomponent" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CompositeDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/CompositeDampingComponent.py#L6-L22"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent" title="abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">CompositeDampingComponent</span></code></a> object is used to define composite damping over a range of
+modes.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">compositeDamping</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-compositedampingcomponentpyc.htm?contextscope=all">CompositeDampingComponent on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent.start" title="abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent.start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">start</span></code></a></p></td>
+<td><p>An Int specifying the mode number of the lowest mode of a range.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent.end" title="abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent.end"><code class="xref py py-obj docutils literal notranslate"><span class="pre">end</span></code></a></p></td>
+<td><p>An Int specifying the mode number of the highest mode of a range.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="compositedampingcomponentarray">
+<h3>CompositeDampingComponentArray<a class="headerlink" href="#compositedampingcomponentarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">CompositeDampingComponentArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/CompositeDampingComponentArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent" title="abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">CompositeDampingComponent</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+<section id="control">
+<h3>Control<a class="headerlink" href="#control" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Control</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/Control.py#L7-L123"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>The Control object is used to provide additional optional general solution controls.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">control</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-controlpyc.htm?contextscope=all">Control on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.Control.Control.setValues" title="abaqus.StepMiscellaneous.Control.Control.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([allowPropagation, ...])</p></td>
+<td><p>This method modifies the Control object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="directdamping">
+<h3>DirectDamping<a class="headerlink" href="#directdamping" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDamping.py#L5-L17"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDamping.DirectDamping" title="abaqus.StepMiscellaneous.DirectDamping.DirectDamping"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDamping</span></code></a> object contains direct modal damping parameters.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">directDamping</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-directdampingpyc.htm?contextscope=all">DirectDamping on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDamping.DirectDamping.components" title="abaqus.StepMiscellaneous.DirectDamping.DirectDamping.components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">components</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponentArray" title="abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDampingComponentArray</span></code></a> object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="directdampingbyfrequency">
+<h3>DirectDampingByFrequency<a class="headerlink" href="#directdampingbyfrequency" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDampingByFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingByFrequency.py#L7-L19"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency" title="abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDampingByFrequency</span></code></a> object contains direct damping parameters.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">directDampingByFrequency</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-directdampingbyfrequencypyc.htm?contextscope=all">DirectDampingByFrequency on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency.components" title="abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency.components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">components</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingByFrequencyComponentArray.DirectDampingByFrequencyComponentArray" title="abaqus.StepMiscellaneous.DirectDampingByFrequencyComponentArray.DirectDampingByFrequencyComponentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDampingByFrequencyComponentArray</span></code></a> object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="directdampingbyfrequencycomponent">
+<h3>DirectDampingByFrequencyComponent<a class="headerlink" href="#directdampingbyfrequencycomponent" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDampingByFrequencyComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingByFrequencyComponent.py#L6-L22"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent" title="abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDampingByFrequencyComponent</span></code></a> object is used to define direct damping over a range
+of frequencies.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">directDampingByFrequency</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-directdampingbyfrequencycomponentpyc.htm?contextscope=all">DirectDampingByFrequencyComponent on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent.frequency" title="abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent.frequency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">frequency</span></code></a></p></td>
+<td><p>A Float specifying the frequency value in cycles/time.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent.fraction" title="abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent.fraction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fraction</span></code></a></p></td>
+<td><p>A Float specifying the fraction of critical damping.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="directdampingbyfrequencycomponentarray">
+<h3>DirectDampingByFrequencyComponentArray<a class="headerlink" href="#directdampingbyfrequencycomponentarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">DirectDampingByFrequencyComponentArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingByFrequencyComponentArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent" title="abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDampingByFrequencyComponent</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+<section id="directdampingcomponent">
+<h3>DirectDampingComponent<a class="headerlink" href="#directdampingcomponent" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DirectDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingComponent.py#L6-L24"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent" title="abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDampingComponent</span></code></a> object is used to define direct damping over a range of modes.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">directDamping</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-directdampingcomponentpyc.htm?contextscope=all">DirectDampingComponent on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.start" title="abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">start</span></code></a></p></td>
+<td><p>An Int specifying the mode number of the lowest mode of a range.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.end" title="abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.end"><code class="xref py py-obj docutils literal notranslate"><span class="pre">end</span></code></a></p></td>
+<td><p>An Int specifying the mode number of the highest mode of a range.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.fraction" title="abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.fraction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fraction</span></code></a></p></td>
+<td><p>A Float specifying the fraction of critical damping.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="directdampingcomponentarray">
+<h3>DirectDampingComponentArray<a class="headerlink" href="#directdampingcomponentarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">DirectDampingComponentArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/DirectDampingComponentArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent" title="abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">DirectDampingComponent</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+<section id="emagtimeharmonicfrequency">
+<h3>EmagTimeHarmonicFrequency<a class="headerlink" href="#emagtimeharmonicfrequency" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EmagTimeHarmonicFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/EmagTimeHarmonicFrequency.py#L6-L26"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frequencyRange</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-emagtimeharmonicfrequencypyc.htm?contextscope=all">EmagTimeHarmonicFrequency on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency.lower" title="abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency.lower"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lower</span></code></a></p></td>
+<td><p>A Float specifying the lower limit of frequency range or a single frequency, in cycles/time.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency.upper" title="abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency.upper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">upper</span></code></a></p></td>
+<td><p>A Float specifying the upper limit of frequency range, in cycles/time.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency.nPoints" title="abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency.nPoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nPoints</span></code></a></p></td>
+<td><p>An Int specifying the number of points in the frequency range at which results should be given.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="emagtimeharmonicfrequencyarray">
+<h3>EmagTimeHarmonicFrequencyArray<a class="headerlink" href="#emagtimeharmonicfrequencyarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">EmagTimeHarmonicFrequencyArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/EmagTimeHarmonicFrequencyArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency" title="abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">EmagTimeHarmonicFrequency</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+<section id="massscaling">
+<h3>MassScaling<a class="headerlink" href="#massscaling" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MassScaling</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/MassScaling.py#L8-L62"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.MassScaling.MassScaling" title="abaqus.StepMiscellaneous.MassScaling.MassScaling"><code class="xref py py-class docutils literal notranslate"><span class="pre">MassScaling</span></code></a> object defines the region and controls that govern mass scaling.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">massScaling</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-massscalingpyc.htm?contextscope=all">MassScaling on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.MassScaling.MassScaling.objective" title="abaqus.StepMiscellaneous.MassScaling.MassScaling.objective"><code class="xref py py-obj docutils literal notranslate"><span class="pre">objective</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the objective of the mass scaling definition.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.MassScaling.MassScaling.occurs" title="abaqus.StepMiscellaneous.MassScaling.MassScaling.occurs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">occurs</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying whether mass scaling should be performed at the beginning of the step or throughout the step.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.MassScaling.MassScaling.type" title="abaqus.StepMiscellaneous.MassScaling.MassScaling.type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">type</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the type of scaling.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.MassScaling.MassScaling.factor" title="abaqus.StepMiscellaneous.MassScaling.MassScaling.factor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">factor</span></code></a></p></td>
+<td><p>A Float specifying a scaling factor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.MassScaling.MassScaling.dt" title="abaqus.StepMiscellaneous.MassScaling.MassScaling.dt"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dt</span></code></a></p></td>
+<td><p>A Float specifying a target time increment.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.MassScaling.MassScaling.frequency" title="abaqus.StepMiscellaneous.MassScaling.MassScaling.frequency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">frequency</span></code></a></p></td>
+<td><p>An Int specifying the frequency at which mass scaling calculations are performed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.MassScaling.MassScaling.numberInterval" title="abaqus.StepMiscellaneous.MassScaling.MassScaling.numberInterval"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numberInterval</span></code></a></p></td>
+<td><p>An Int specifying the number of intervals at which mass scaling calculations are performed.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.MassScaling.MassScaling.feedRate" title="abaqus.StepMiscellaneous.MassScaling.MassScaling.feedRate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">feedRate</span></code></a></p></td>
+<td><p>A Float specifying the estimated average velocity of the workpiece in the rolling direction at steady-state conditions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.MassScaling.MassScaling.extrudedLength" title="abaqus.StepMiscellaneous.MassScaling.MassScaling.extrudedLength"><code class="xref py py-obj docutils literal notranslate"><span class="pre">extrudedLength</span></code></a></p></td>
+<td><p>A Float specifying the average element length in the extruded direction.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.MassScaling.MassScaling.crossSection" title="abaqus.StepMiscellaneous.MassScaling.MassScaling.crossSection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">crossSection</span></code></a></p></td>
+<td><p>An Int specifying the number of nodes in the cross-section of the workpiece.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.MassScaling.MassScaling.direction" title="abaqus.StepMiscellaneous.MassScaling.MassScaling.direction"><code class="xref py py-obj docutils literal notranslate"><span class="pre">direction</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the rolling direction.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.MassScaling.MassScaling.region" title="abaqus.StepMiscellaneous.MassScaling.MassScaling.region"><code class="xref py py-obj docutils literal notranslate"><span class="pre">region</span></code></a></p></td>
+<td><p>The SymbolicConstant MODEL or a Region object specifying where the mass scaling is applied.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="massscalingarray">
+<h3>MassScalingArray<a class="headerlink" href="#massscalingarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">MassScalingArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/MassScalingArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.MassScaling.MassScaling" title="abaqus.StepMiscellaneous.MassScaling.MassScaling"><code class="xref py py-class docutils literal notranslate"><span class="pre">MassScaling</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+<section id="randomresponsefrequency">
+<h3>RandomResponseFrequency<a class="headerlink" href="#randomresponsefrequency" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RandomResponseFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RandomResponseFrequency.py#L6-L29"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A RandomResponseFrequency is an object used to define frequency over a range of modes.
+This page discusses:</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">freq</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-randomresponsefrequencypyc.htm?contextscope=all">RandomResponseFrequency on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.lower" title="abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.lower"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lower</span></code></a></p></td>
+<td><p>A Float specifying the lower limit of the frequency range in cycles per time.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.upper" title="abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.upper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">upper</span></code></a></p></td>
+<td><p>A Float specifying the upper limit of the frequency range in cycles per time.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.nCalcs" title="abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.nCalcs"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nCalcs</span></code></a></p></td>
+<td><p>An Int specifying the number of points between eigenfrequencies at which the response should be calculated.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.bias" title="abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency.bias"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bias</span></code></a></p></td>
+<td><p>A Float specifying the bias parameter.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="randomresponsefrequencyarray">
+<h3>RandomResponseFrequencyArray<a class="headerlink" href="#randomresponsefrequencyarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">RandomResponseFrequencyArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RandomResponseFrequencyArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency" title="abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">RandomResponseFrequency</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+<section id="rayleighdamping">
+<h3>RayleighDamping<a class="headerlink" href="#rayleighdamping" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDamping.py#L5-L17"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping" title="abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDamping</span></code></a> object contains Rayleigh Damping parameters.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rayleighDamping</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rayleighdampingpyc.htm?contextscope=all">RayleighDamping on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping.components" title="abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping.components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">components</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponentArray" title="abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDampingComponentArray</span></code></a> object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="rayleighdampingbyfrequency">
+<h3>RayleighDampingByFrequency<a class="headerlink" href="#rayleighdampingbyfrequency" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDampingByFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingByFrequency.py#L7-L19"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency" title="abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDampingByFrequency</span></code></a> object contains Rayleigh Damping parameters.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rayleighDampingByFrequency</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rayleighdampingbyfrequencypyc.htm?contextscope=all">RayleighDampingByFrequency on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency.components" title="abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency.components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">components</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponentArray" title="abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDampingByFrequencyComponentArray</span></code></a> object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="rayleighdampingbyfrequencycomponent">
+<h3>RayleighDampingByFrequencyComponent<a class="headerlink" href="#rayleighdampingbyfrequencycomponent" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDampingByFrequencyComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingByFrequencyComponent.py#L6-L25"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent" title="abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDampingByFrequencyComponent</span></code></a> object is used to define Rayleigh damping over a
+range of frequencies.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rayleighDampingByFrequency</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rayleighdampingbyfrequencycomponentpyc.htm?contextscope=all">RayleighDampingByFrequencyComponent on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent.frequency" title="abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent.frequency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">frequency</span></code></a></p></td>
+<td><p>A Float specifying the frequency value in cycles/time.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent.alpha" title="abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent.alpha"><code class="xref py py-obj docutils literal notranslate"><span class="pre">alpha</span></code></a></p></td>
+<td><p>A Float specifying the mass proportional damping, αM.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent.beta" title="abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent.beta"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beta</span></code></a></p></td>
+<td><p>A Float specifying the stiffness proportional damping, βM.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="rayleighdampingbyfrequencycomponentarray">
+<h3>RayleighDampingByFrequencyComponentArray<a class="headerlink" href="#rayleighdampingbyfrequencycomponentarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">RayleighDampingByFrequencyComponentArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingByFrequencyComponentArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent" title="abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDampingByFrequencyComponent</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+<section id="rayleighdampingcomponent">
+<h3>RayleighDampingComponent<a class="headerlink" href="#rayleighdampingcomponent" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RayleighDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingComponent.py#L6-L28"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent" title="abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDampingComponent</span></code></a> object is used to define Rayleigh damping over a range of
+modes.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">rayleighDamping</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rayleighdampingcomponentpyc.htm?contextscope=all">RayleighDampingComponent on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.start" title="abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">start</span></code></a></p></td>
+<td><p>An Int specifying the mode number of the lowest mode of a range.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.end" title="abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.end"><code class="xref py py-obj docutils literal notranslate"><span class="pre">end</span></code></a></p></td>
+<td><p>An Int specifying the mode number of the highest mode of a range.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.alpha" title="abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.alpha"><code class="xref py py-obj docutils literal notranslate"><span class="pre">alpha</span></code></a></p></td>
+<td><p>A Float specifying the mass proportional damping, αM.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.beta" title="abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.beta"><code class="xref py py-obj docutils literal notranslate"><span class="pre">beta</span></code></a></p></td>
+<td><p>A Float specifying the stiffness proportional damping, βM.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="rayleighdampingcomponentarray">
+<h3>RayleighDampingComponentArray<a class="headerlink" href="#rayleighdampingcomponentarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">RayleighDampingComponentArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/RayleighDampingComponentArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent" title="abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">RayleighDampingComponent</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+<section id="responsespectrumcomponent">
+<h3>ResponseSpectrumComponent<a class="headerlink" href="#responsespectrumcomponent" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ResponseSpectrumComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/ResponseSpectrumComponent.py#L6-L35"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A ResponseSpectrumComponent is an element of the ResponseSpectrumComponentArray.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-responsespectrumcomponentpyc.htm?contextscope=all">ResponseSpectrumComponent on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.x" title="abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.x"><code class="xref py py-obj docutils literal notranslate"><span class="pre">x</span></code></a></p></td>
+<td><p>A Float specifying the <strong>X</strong>-direction cosine.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.y" title="abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.y"><code class="xref py py-obj docutils literal notranslate"><span class="pre">y</span></code></a></p></td>
+<td><p>A Float specifying the <strong>Y</strong>-direction cosine.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.z" title="abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.z"><code class="xref py py-obj docutils literal notranslate"><span class="pre">z</span></code></a></p></td>
+<td><p>A Float specifying the <strong>Z</strong>-direction cosine.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.scale" title="abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.scale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scale</span></code></a></p></td>
+<td><p>A Float specifying the scale factor.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.timeDuration" title="abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.timeDuration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeDuration</span></code></a></p></td>
+<td><p>A Float specifying the time duration of the dynamic event, from which this spectrum was created.Note:This parameter is ignored unless used with the DSC modal summation rule.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.respSpectrum" title="abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent.respSpectrum"><code class="xref py py-obj docutils literal notranslate"><span class="pre">respSpectrum</span></code></a></p></td>
+<td><p>A String specifying the name of the response spectrum specified with the keyword SPECTRUM.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="responsespectrumcomponentarray">
+<h3>ResponseSpectrumComponentArray<a class="headerlink" href="#responsespectrumcomponentarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">ResponseSpectrumComponentArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/ResponseSpectrumComponentArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent" title="abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResponseSpectrumComponent</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+<section id="solvercontrol">
+<h3>SolverControl<a class="headerlink" href="#solvercontrol" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SolverControl</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SolverControl.py#L7-L52"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>The SolverControl object is used to provide additional optional solver controls.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">solverControl</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-solvercontrolpyc.htm?contextscope=all">SolverControl on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SolverControl.SolverControl.setValues" title="abaqus.StepMiscellaneous.SolverControl.SolverControl.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>([allowPropagation, ...])</p></td>
+<td><p>This method modifies the SolverControl object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="steadystatedirectfrequency">
+<h3>SteadyStateDirectFrequency<a class="headerlink" href="#steadystatedirectfrequency" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SteadyStateDirectFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateDirectFrequency.py#L6-L31"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A SteadyStateDirectFrequency is an object used to define frequency over range of modes.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frequencyRange</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steadystatedirectfrequencypyc.htm?contextscope=all">SteadyStateDirectFrequency on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.lower" title="abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.lower"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lower</span></code></a></p></td>
+<td><p>A Float specifying the lower limit of frequency range or a single frequency, in cycles/time.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.upper" title="abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.upper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">upper</span></code></a></p></td>
+<td><p>A Float specifying the upper limit of frequency range, in cycles/time.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.nPoints" title="abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.nPoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nPoints</span></code></a></p></td>
+<td><p>An Int specifying the number of points in the frequency range at which results should be given.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.bias" title="abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency.bias"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bias</span></code></a></p></td>
+<td><p>A Float specifying the Bias parameter.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="steadystatedirectfrequencyarray">
+<h3>SteadyStateDirectFrequencyArray<a class="headerlink" href="#steadystatedirectfrequencyarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">SteadyStateDirectFrequencyArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateDirectFrequencyArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency" title="abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">SteadyStateDirectFrequency</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+<section id="steadystatemodalfrequency">
+<h3>SteadyStateModalFrequency<a class="headerlink" href="#steadystatemodalfrequency" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SteadyStateModalFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateModalFrequency.py#L6-L31"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A SteadyStateModalFrequency is an object used to define frequency over a range of modes.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frequencyRange</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steadystatemodalfrequencypyc.htm?contextscope=all">SteadyStateModalFrequency on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.lower" title="abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.lower"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lower</span></code></a></p></td>
+<td><p>A Float specifying the lower limit of frequency range or a single frequency, in cycles/time.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.upper" title="abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.upper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">upper</span></code></a></p></td>
+<td><p>A Float specifying the upper limit of frequency range, in cycles/time.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.nPoints" title="abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.nPoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nPoints</span></code></a></p></td>
+<td><p>An Int specifying the number of points in the frequency range at which results should be given.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.bias" title="abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency.bias"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bias</span></code></a></p></td>
+<td><p>A Float specifying the bias parameter.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="steadystatemodalfrequencyarray">
+<h3>SteadyStateModalFrequencyArray<a class="headerlink" href="#steadystatemodalfrequencyarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">SteadyStateModalFrequencyArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateModalFrequencyArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency" title="abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">SteadyStateModalFrequency</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+<section id="steadystatesubspacefrequency">
+<h3>SteadyStateSubspaceFrequency<a class="headerlink" href="#steadystatesubspacefrequency" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SteadyStateSubspaceFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateSubspaceFrequency.py#L6-L32"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A SteadyStateSubspaceFrequency is an object used to define frequency over range of
+modes.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frequencyRange</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steadystatesubspacefrequencypyc.htm?contextscope=all">SteadyStateSubspaceFrequency on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.lower" title="abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.lower"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lower</span></code></a></p></td>
+<td><p>A Float specifying the lower limit of frequency range or a single frequency, in cycles/time.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.upper" title="abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.upper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">upper</span></code></a></p></td>
+<td><p>A Float specifying the upper limit of frequency range, in cycles/time.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.nPoints" title="abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.nPoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nPoints</span></code></a></p></td>
+<td><p>An Int specifying the number of points in the frequency range at which results should be given.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.bias" title="abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.bias"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bias</span></code></a></p></td>
+<td><p>A Float specifying the Bias parameter.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="steadystatesubspacefrequencyarray">
+<h3>SteadyStateSubspaceFrequencyArray<a class="headerlink" href="#steadystatesubspacefrequencyarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">SteadyStateSubspaceFrequencyArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SteadyStateSubspaceFrequencyArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency" title="abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">SteadyStateSubspaceFrequency</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+<section id="structuraldamping">
+<h3>StructuralDamping<a class="headerlink" href="#structuraldamping" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDamping</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDamping.py#L5-L17"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping" title="abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDamping</span></code></a> object contains structural damping parameters.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">structuralDamping</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-structuraldampingpyc.htm?contextscope=all">StructuralDamping on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping.components" title="abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping.components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">components</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingComponentArray.StructuralDampingComponentArray" title="abaqus.StepMiscellaneous.StructuralDampingComponentArray.StructuralDampingComponentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDampingComponentArray</span></code></a> object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="structuraldampingbyfrequency">
+<h3>StructuralDampingByFrequency<a class="headerlink" href="#structuraldampingbyfrequency" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDampingByFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingByFrequency.py#L7-L19"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency" title="abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDampingByFrequency</span></code></a> object contains structural damping parameters.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">structuralDampingByFrequency</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-structuraldampingbyfrequencypyc.htm?contextscope=all">StructuralDampingByFrequency on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency.components" title="abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency.components"><code class="xref py py-obj docutils literal notranslate"><span class="pre">components</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponentArray" title="abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDampingByFrequencyComponentArray</span></code></a> object.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="structuraldampingbyfrequencycomponent">
+<h3>StructuralDampingByFrequencyComponent<a class="headerlink" href="#structuraldampingbyfrequencycomponent" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDampingByFrequencyComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingByFrequencyComponent.py#L6-L22"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent" title="abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDampingByFrequencyComponent</span></code></a> object is used to define structural damping over
+a range of frequencies.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">structuralDampingByFrequency</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-structuraldampingbyfrequencycomponentpyc.htm?contextscope=all">StructuralDampingByFrequencyComponent on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent.frequency" title="abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent.frequency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">frequency</span></code></a></p></td>
+<td><p>A Float specifying the frequency value in cycles/time.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent.factor" title="abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent.factor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">factor</span></code></a></p></td>
+<td><p>A Float specifying the damping factor, s.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="structuraldampingbyfrequencycomponentarray">
+<h3>StructuralDampingByFrequencyComponentArray<a class="headerlink" href="#structuraldampingbyfrequencycomponentarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">StructuralDampingByFrequencyComponentArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingByFrequencyComponentArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent" title="abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDampingByFrequencyComponent</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+<section id="structuraldampingcomponent">
+<h3>StructuralDampingComponent<a class="headerlink" href="#structuraldampingcomponent" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">StructuralDampingComponent</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingComponent.py#L6-L25"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent" title="abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDampingComponent</span></code></a> object is used to define structural damping over a range of
+modes.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">structuralDamping</span><span class="o">.</span><span class="n">components</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-structuraldampingcomponentpyc.htm?contextscope=all">StructuralDampingComponent on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.start" title="abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">start</span></code></a></p></td>
+<td><p>An Int specifying the mode number of the lowest mode of a range.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.end" title="abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.end"><code class="xref py py-obj docutils literal notranslate"><span class="pre">end</span></code></a></p></td>
+<td><p>An Int specifying the mode number of the highest mode of a range.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.factor" title="abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.factor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">factor</span></code></a></p></td>
+<td><p>A Float specifying the damping factor, s.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="structuraldampingcomponentarray">
+<h3>StructuralDampingComponentArray<a class="headerlink" href="#structuraldampingcomponentarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">StructuralDampingComponentArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/StructuralDampingComponentArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent" title="abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent"><code class="xref py py-class docutils literal notranslate"><span class="pre">StructuralDampingComponent</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+<section id="substructuregeneratefrequency">
+<h3>SubstructureGenerateFrequency<a class="headerlink" href="#substructuregeneratefrequency" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubstructureGenerateFrequency</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SubstructureGenerateFrequency.py#L6-L23"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency" title="abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">SubstructureGenerateFrequency</span></code></a> object is used to define the modes to be used in a modal
+dynamic analysis. These modes are selected from the specified frequency range including
+the frequency boundary.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">frequencyRange</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-substructuregeneratefrequencypyc.htm?contextscope=all">SubstructureGenerateFrequency on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency.lower" title="abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency.lower"><code class="xref py py-obj docutils literal notranslate"><span class="pre">lower</span></code></a></p></td>
+<td><p>A Float specifying the lower limit of the frequency range, in cycles/time.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency.upper" title="abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency.upper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">upper</span></code></a></p></td>
+<td><p>A Float specifying the upper limit of the frequency range, in cycles/time.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="substructuregeneratefrequencyarray">
+<h3>SubstructureGenerateFrequencyArray<a class="headerlink" href="#substructuregeneratefrequencyarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">SubstructureGenerateFrequencyArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SubstructureGenerateFrequencyArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency" title="abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency"><code class="xref py py-class docutils literal notranslate"><span class="pre">SubstructureGenerateFrequency</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+<section id="substructuregeneratemodes">
+<h3>SubstructureGenerateModes<a class="headerlink" href="#substructuregeneratemodes" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SubstructureGenerateModes</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SubstructureGenerateModes.py#L6-L26"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>A <a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes" title="abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes"><code class="xref py py-class docutils literal notranslate"><span class="pre">SubstructureGenerateModes</span></code></a> object is used to define the modes to be used in a modal
+dynamic analysis.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">step</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">modeRange</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-substructuregeneratemodespyc.htm?contextscope=all">SubstructureGenerateModes on help.3ds.com/2016</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes.start" title="abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes.start"><code class="xref py py-obj docutils literal notranslate"><span class="pre">start</span></code></a></p></td>
+<td><p>An Int specifying the mode number of the lowest mode of a range.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes.end" title="abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes.end"><code class="xref py py-obj docutils literal notranslate"><span class="pre">end</span></code></a></p></td>
+<td><p>An Int specifying the mode number of the highest mode of a range.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes.increment" title="abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes.increment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">increment</span></code></a></p></td>
+<td><p>An Int specifying the increment used to define the intermediate mode numbers beginning from the lowest mode to the highest mode.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="substructuregeneratemodesarray">
+<h3>SubstructureGenerateModesArray<a class="headerlink" href="#substructuregeneratemodesarray" title="此标题的永久链接">#</a></h3>
+<dl class="py attribute">
+<dt class="sig sig-object py">
+<span class="sig-name descname"><span class="pre">SubstructureGenerateModesArray</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/StepMiscellaneous/SubstructureGenerateModesArray.py#L0-L4"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference internal" href="../../../../reference/mdb/model/step/step_miscellaneous.html#abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes" title="abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes"><code class="xref py py-class docutils literal notranslate"><span class="pre">SubstructureGenerateModes</span></code></a>] 的别名</p>
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="../step.html" title="上一页 页">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">上一页</p>
+          <p class="prev-next-title">Step</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="../../job.html" title="下一页 页">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">下一页</p>
+      <p class="prev-next-title">Abaqus Job</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#object-features">
+   Object features
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#compositedamping">
+     CompositeDamping
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#compositedampingcomponent">
+     CompositeDampingComponent
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#compositedampingcomponentarray">
+     CompositeDampingComponentArray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#control">
+     Control
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#directdamping">
+     DirectDamping
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#directdampingbyfrequency">
+     DirectDampingByFrequency
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#directdampingbyfrequencycomponent">
+     DirectDampingByFrequencyComponent
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#directdampingbyfrequencycomponentarray">
+     DirectDampingByFrequencyComponentArray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#directdampingcomponent">
+     DirectDampingComponent
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#directdampingcomponentarray">
+     DirectDampingComponentArray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#emagtimeharmonicfrequency">
+     EmagTimeHarmonicFrequency
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#emagtimeharmonicfrequencyarray">
+     EmagTimeHarmonicFrequencyArray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#massscaling">
+     MassScaling
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#massscalingarray">
+     MassScalingArray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#randomresponsefrequency">
+     RandomResponseFrequency
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#randomresponsefrequencyarray">
+     RandomResponseFrequencyArray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rayleighdamping">
+     RayleighDamping
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rayleighdampingbyfrequency">
+     RayleighDampingByFrequency
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rayleighdampingbyfrequencycomponent">
+     RayleighDampingByFrequencyComponent
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rayleighdampingbyfrequencycomponentarray">
+     RayleighDampingByFrequencyComponentArray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rayleighdampingcomponent">
+     RayleighDampingComponent
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rayleighdampingcomponentarray">
+     RayleighDampingComponentArray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#responsespectrumcomponent">
+     ResponseSpectrumComponent
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#responsespectrumcomponentarray">
+     ResponseSpectrumComponentArray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#solvercontrol">
+     SolverControl
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steadystatedirectfrequency">
+     SteadyStateDirectFrequency
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steadystatedirectfrequencyarray">
+     SteadyStateDirectFrequencyArray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steadystatemodalfrequency">
+     SteadyStateModalFrequency
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steadystatemodalfrequencyarray">
+     SteadyStateModalFrequencyArray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steadystatesubspacefrequency">
+     SteadyStateSubspaceFrequency
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#steadystatesubspacefrequencyarray">
+     SteadyStateSubspaceFrequencyArray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#structuraldamping">
+     StructuralDamping
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#structuraldampingbyfrequency">
+     StructuralDampingByFrequency
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#structuraldampingbyfrequencycomponent">
+     StructuralDampingByFrequencyComponent
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#structuraldampingbyfrequencycomponentarray">
+     StructuralDampingByFrequencyComponentArray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#structuraldampingcomponent">
+     StructuralDampingComponent
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#structuraldampingcomponentarray">
+     StructuralDampingComponentArray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#substructuregeneratefrequency">
+     SubstructureGenerateFrequency
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#substructuregeneratefrequencyarray">
+     SubstructureGenerateFrequencyArray
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#substructuregeneratemodes">
+     SubstructureGenerateModes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#substructuregeneratemodesarray">
+     SubstructureGenerateModesArray
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../../../_sources/summary/mdb/model/step/step_miscellaneous.rst.txt">
+        <i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>

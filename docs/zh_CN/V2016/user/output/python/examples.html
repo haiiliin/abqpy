@@ -1,0 +1,2009 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Example scripts that access data from an output database &#8212; abqpy 2016 文档</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user/output/python/examples';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2016';
+        </script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="Using C++ to access an output database" href="../cpp.html" />
+    <link rel="prev" title="Improving the efficiency of your scripts" href="improve-efficiency.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="zh-CN">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2016 文档</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2016  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2016  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../about.html">
+   About the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/interface.html">
+     Abaqus/CAE and the Abaqus Scripting Interface
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/interact.html">
+     How does the Abaqus Scripting Interface interact with Abaqus/CAE?
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../about/examples.html">
+     Simple examples
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/create-part.html">
+       Creating a part
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/read-output.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/summary.html">
+       Summary
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../python.html">
+   Using the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../python/introduction.html">
+     Introduction to Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/introduction/python-abaqus.html">
+       Python and Abaqus
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/introduction/python-resources.html">
+       Python resources
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/introduction/python-interpreter.html">
+       Using the Python interpreter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/introduction/oop-basics.html">
+       Object-oriented basics
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/introduction/python-basics.html">
+       The basics of Python
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/introduction/programming.html">
+       Programming techniques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/introduction/further-reading.html">
+       Further reading
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../python/python-abaqus.html">
+     Using Python and the Abaqus Scripting Interface
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/python-abaqus/executing.html">
+       Executing scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/python-abaqus/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/python-abaqus/types.html">
+       Abaqus Scripting Interface data types
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/python-abaqus/oop.html">
+       Object-oriented programming and the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/python-abaqus/errors.html">
+       Error handling in the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/python-abaqus/extending.html">
+       Extending the Abaqus Scripting Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../python/use-scripts.html">
+     Using the Abaqus Scripting Interface with Abaqus/CAE
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/object-model.html">
+       The Abaqus object model
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/modify-objects.html">
+       Copying, deleting, and renaming Abaqus Scripting Interface objects
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/sequences.html">
+       Abaqus/CAE sequences
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/namespace.html">
+       Namespace
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/specify-viewport.html">
+       Specifying what is displayed in the viewport
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/specify-region.html">
+       Specifying a region
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/user-input.html">
+       Prompting the user for input
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/interact.html">
+       Interacting with Abaqus/Standard and Abaqus/Explicit
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../python/use-scripts/environment-file.html">
+       Using Abaqus Scripting Interface commands in your environment file
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../environment.html">
+   The Abaqus Python Development Environment
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/about.html">
+     About the Abaqus Python development environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/pde-basics.html">
+     Abaqus PDE basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/use-pde.html">
+     Using the Abaqus PDE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../examples.html">
+   Putting it all Together: Abaqus Scripting Interface Examples
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/cantilever.html">
+     Reproducing the cantilever beam tutorial
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/plot.html">
+     Generating a customized plot
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/sensitivity.html">
+     Investigating the skew sensitivity of shell elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/settings.html">
+     Editing display preferences and GUI settings
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../output.html">
+   Accessing an Output Database
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../python.html">
+     Using the Abaqus Scripting Interface to access an output database
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="need-what-to-understand.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="execute-script.html">
+       Executing a script that accesses an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Example scripts that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../cpp.html">
+     Using C++ to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../cpp/about.html">
+       About the C++ interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../cpp/need-what-access.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../cpp/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../cpp/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../cpp/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../cpp/compile-link.html">
+       Compiling and linking your C++ source code
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../cpp/access.html">
+       Accessing the C++ interface from an existing application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../cpp/architecture.html">
+       The Abaqus C++ API architecture
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../cpp/utility.html">
+       Utility interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../cpp/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../cpp/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../cpp/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../cpp/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../cpp/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../cpp/examples.html">
+       Example programs that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="example-scripts-that-access-data-from-an-output-database">
+<h1>Example scripts that access data from an output database<a class="headerlink" href="#example-scripts-that-access-data-from-an-output-database" title="此标题的永久链接">#</a></h1>
+<p>The following examples illustrate how you use the output database commands to access data from an output database.</p>
+<p>In addition, the Abaqus Scripting Interface examples, <a class="reference internal" href="../../about/examples/read-output.html"><span class="doc">Reading from an output database</span></a> and <a class="reference internal" href="../../examples.html"><span class="doc">Putting it all Together: Abaqus Scripting Interface Examples</span></a> illustrate how to read data from an output database.</p>
+<section id="finding-the-maximum-value-of-von-mises-stress">
+<h2>Finding the maximum value of von Mises stress<a class="headerlink" href="#finding-the-maximum-value-of-von-mises-stress" title="此标题的永久链接">#</a></h2>
+<p>This example illustrates how you can iterate through an output database and search for the maximum value of von Mises stress. The script opens the output database specified by the first argument on the command line and iterates through the following:</p>
+<ul class="simple">
+<li><p>Each step.</p></li>
+<li><p>Each frame in each step.</p></li>
+<li><p>Each value of von Mises stress in each frame.</p></li>
+</ul>
+<p>In addition, you can supply an optional assembly element set argument from the command line, in which case the script searches only the element set for the maximum value of von Mises stress.</p>
+<p>The following illustrates how you can run the example script from the system prompt. The script will search the element set ALL ELEMENTS in the viewer tutorial output database for the maximum value of von Mises stress:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus python odbMaxMises.py -odb viewer_tutorial.odb
+    -elset <span class="s2">&quot;ALL ELEMENTS&quot;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>If a command line argument is a String that contains spaces, some systems will interpret the String correctly only if it is enclosed in double quotation marks. For example, <cite>“ALL ELEMENTS”</cite>.</p>
+</div>
+<p>You can also run the example with only the <strong>-help</strong> parameter for a summary of the usage.</p>
+<p>Use the following commands to retrieve the example script and the viewer tutorial output database:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="c1"># abaqus fetch job=odbMaxMises.py</span>
+<span class="c1"># abaqus fetch job=viewer_tutorial</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">odbMaxMises.py</span>
+<span class="sd">Code to determine the location and value of the maximum</span>
+<span class="sd">von-mises stress in an output database.</span>
+<span class="sd">Usage: abaqus python odbMaxMises.py -odb odbName</span>
+<span class="sd">    -elset(optional) elsetName</span>
+<span class="sd">Requirements:</span>
+<span class="sd">1. -odb   : Name of the output database.</span>
+<span class="sd">2. -elset : Name of the assembly level element set.</span>
+<span class="sd">            Search will be done only for element belonging</span>
+<span class="sd">            to this set. If this parameter is not provided,</span>
+<span class="sd">            search will be performed over the entire model.</span>
+<span class="sd">3. -help  : Print usage</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="kn">from</span> <span class="nn">odbAccess</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">argv</span><span class="p">,</span><span class="nb">exit</span>
+<span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+
+<span class="k">def</span> <span class="nf">rightTrim</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span><span class="n">suffix</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nb">input</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">suffix</span><span class="p">)</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+        <span class="nb">input</span> <span class="o">=</span> <span class="nb">input</span> <span class="o">+</span> <span class="n">suffix</span>
+    <span class="k">return</span> <span class="nb">input</span>
+<span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+
+<span class="k">def</span> <span class="nf">getMaxMises</span><span class="p">(</span><span class="n">odbName</span><span class="p">,</span><span class="n">elsetName</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Print max mises location and value given odbName</span>
+<span class="sd">        and elset(optional)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">elset</span> <span class="o">=</span> <span class="n">elemset</span> <span class="o">=</span> <span class="bp">None</span>
+    <span class="n">region</span> <span class="o">=</span> <span class="s2">&quot;over the entire model&quot;</span>
+    <span class="sd">&quot;&quot;&quot; Open the output database &quot;&quot;&quot;</span>
+    <span class="n">odb</span> <span class="o">=</span> <span class="n">openOdb</span><span class="p">(</span><span class="n">odbName</span><span class="p">)</span>
+    <span class="n">assembly</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">rootAssembly</span>
+
+    <span class="sd">&quot;&quot;&quot; Check to see if the element set exists</span>
+<span class="sd">        in the assembly</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">elsetName</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">elemset</span> <span class="o">=</span> <span class="n">assembly</span><span class="o">.</span><span class="n">elementSets</span><span class="p">[</span><span class="n">elsetName</span><span class="p">]</span>
+            <span class="n">region</span> <span class="o">=</span> <span class="s2">&quot; in the element set : &quot;</span> <span class="o">+</span> <span class="n">elsetName</span><span class="p">;</span>
+        <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s1">&#39;An assembly level elset named </span><span class="si">%s</span><span class="s1"> does&#39;</span>
+                <span class="s1">&#39;not exist in the output database </span><span class="si">%s</span><span class="s1">&#39;</span> \
+                <span class="o">%</span> <span class="p">(</span><span class="n">elsetName</span><span class="p">,</span> <span class="n">odbName</span><span class="p">)</span>
+            <span class="n">odb</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+            <span class="nb">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="sd">&quot;&quot;&quot; Initialize maximum values &quot;&quot;&quot;</span>
+    <span class="n">maxMises</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.1</span>
+    <span class="n">maxElem</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">maxStep</span> <span class="o">=</span> <span class="s2">&quot;_None_&quot;</span>
+    <span class="n">maxFrame</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+    <span class="n">Stress</span> <span class="o">=</span> <span class="s1">&#39;S&#39;</span>
+    <span class="n">isStressPresent</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">step</span> <span class="ow">in</span> <span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="k">print</span> <span class="s1">&#39;Processing Step:&#39;</span><span class="p">,</span> <span class="n">step</span><span class="o">.</span><span class="n">name</span>
+        <span class="k">for</span> <span class="n">frame</span> <span class="ow">in</span> <span class="n">step</span><span class="o">.</span><span class="n">frames</span><span class="p">:</span>
+            <span class="n">allFields</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">fieldOutputs</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">allFields</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="n">Stress</span><span class="p">)):</span>
+                <span class="n">isStressPresent</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="n">stressSet</span> <span class="o">=</span> <span class="n">allFields</span><span class="p">[</span><span class="n">Stress</span><span class="p">]</span>
+                <span class="k">if</span> <span class="n">elemset</span><span class="p">:</span>
+                    <span class="n">stressSet</span> <span class="o">=</span> <span class="n">stressSet</span><span class="o">.</span><span class="n">getSubset</span><span class="p">(</span>
+                        <span class="n">region</span><span class="o">=</span><span class="n">elemset</span><span class="p">)</span>
+                <span class="k">for</span> <span class="n">stressValue</span> <span class="ow">in</span> <span class="n">stressSet</span><span class="o">.</span><span class="n">values</span><span class="p">:</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">stressValue</span><span class="o">.</span><span class="n">mises</span> <span class="o">&gt;</span> <span class="n">maxMises</span><span class="p">):</span>
+                        <span class="n">maxMises</span> <span class="o">=</span> <span class="n">stressValue</span><span class="o">.</span><span class="n">mises</span>
+                        <span class="n">maxElem</span> <span class="o">=</span> <span class="n">stressValue</span><span class="o">.</span><span class="n">elementLabel</span>
+                        <span class="n">maxStep</span> <span class="o">=</span> <span class="n">step</span><span class="o">.</span><span class="n">name</span>
+                        <span class="n">maxFrame</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">incrementNumber</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">isStressPresent</span><span class="p">):</span>
+        <span class="k">print</span> <span class="s1">&#39;Maximum von Mises stress </span><span class="si">%s</span><span class="s1"> is </span><span class="si">%f</span><span class="s1"> in element </span><span class="si">%d</span><span class="s1">&#39;</span><span class="o">%</span><span class="p">(</span>
+            <span class="n">region</span><span class="p">,</span> <span class="n">maxMises</span><span class="p">,</span> <span class="n">maxElem</span><span class="p">)</span>
+        <span class="k">print</span> <span class="s1">&#39;Location: frame # </span><span class="si">%d</span><span class="s1">  step:  </span><span class="si">%s</span><span class="s1"> &#39;</span><span class="o">%</span><span class="p">(</span><span class="n">maxFrame</span><span class="p">,</span><span class="n">maxStep</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">print</span> <span class="s1">&#39;Stress output is not available in&#39;</span> \
+            <span class="s1">&#39;the output database : </span><span class="si">%s</span><span class="se">\n</span><span class="s1">&#39;</span> <span class="o">%</span><span class="p">(</span><span class="n">odb</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+
+    <span class="sd">&quot;&quot;&quot; Close the output database before exiting the program &quot;&quot;&quot;</span>
+    <span class="n">odb</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="c1">#==================================================================</span>
+<span class="c1"># S T A R T</span>
+<span class="c1">#</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+    <span class="n">odbName</span> <span class="o">=</span> <span class="bp">None</span>
+    <span class="n">elsetName</span> <span class="o">=</span> <span class="bp">None</span>
+    <span class="n">argList</span> <span class="o">=</span> <span class="n">argv</span>
+    <span class="n">argc</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">argList</span><span class="p">)</span>
+    <span class="n">i</span><span class="o">=</span><span class="mi">0</span>
+    <span class="k">while</span> <span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="n">argc</span><span class="p">):</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">argList</span><span class="p">[</span><span class="n">i</span><span class="p">][:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;-o&quot;</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">name</span> <span class="o">=</span> <span class="n">argList</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">odbName</span> <span class="o">=</span> <span class="n">rightTrim</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="s2">&quot;.odb&quot;</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">argList</span><span class="p">[</span><span class="n">i</span><span class="p">][:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;-e&quot;</span><span class="p">):</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="n">elsetName</span> <span class="o">=</span> <span class="n">argList</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+        <span class="k">elif</span> <span class="p">(</span><span class="n">argList</span><span class="p">[</span><span class="n">i</span><span class="p">][:</span><span class="mi">2</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;-h&quot;</span><span class="p">):</span>
+            <span class="k">print</span> <span class="vm">__doc__</span>
+            <span class="nb">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="p">(</span><span class="n">odbName</span><span class="p">):</span>
+        <span class="k">print</span> <span class="s1">&#39; **ERROR** output database name is not provided&#39;</span>
+        <span class="k">print</span> <span class="vm">__doc__</span>
+        <span class="nb">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">getMaxMises</span><span class="p">(</span><span class="n">odbName</span><span class="p">,</span><span class="n">elsetName</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="creating-an-output-database">
+<span id="id1"></span><h2>Creating an output database<a class="headerlink" href="#creating-an-output-database" title="此标题的永久链接">#</a></h2>
+<p>The following example illustrates how you can use the Abaqus Scripting Interface commands to do the following:</p>
+<ol class="arabic simple">
+<li><p>Create a new output database.</p></li>
+<li><p>Add model data.</p></li>
+<li><p>Add field data.</p></li>
+<li><p>Add history data.</p></li>
+<li><p>Read history data.</p></li>
+<li><p>Save the output database.</p></li>
+</ol>
+<p>Use the following command to retrieve the example script:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">abaqus</span> <span class="n">fetch</span> <span class="n">job</span><span class="o">=</span><span class="n">odbWrite</span>
+<span class="sd">&quot;&quot;&quot;odbWrite.py</span>
+<span class="sd">Script to create an output database and add model,</span>
+<span class="sd">field, and history data. The script also reads</span>
+<span class="sd">history data, performs an operation on the data, and writes</span>
+<span class="sd">the result back to the output database.</span>
+<span class="sd">usage: abaqus python odbWrite.py</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span> <span class="nn">odbAccess</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">odbMaterial</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">odbSection</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">abaqusConstants</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">def</span> <span class="nf">createODB</span><span class="p">():</span>
+
+    <span class="c1"># Create an ODB (which also creates the rootAssembly)</span>
+    <span class="n">odb</span> <span class="o">=</span> <span class="n">Odb</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;simpleModel&#39;</span><span class="p">,</span>
+        <span class="n">analysisTitle</span><span class="o">=</span><span class="s1">&#39;ODB created with Python ODB API&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;example illustrating Python ODB API &#39;</span><span class="p">,</span>
+        <span class="n">path</span><span class="o">=</span><span class="s1">&#39;odbWritePython.odb&#39;</span><span class="p">)</span>
+
+    <span class="c1"># create few materials</span>
+    <span class="n">materialName</span> <span class="o">=</span> <span class="s2">&quot;Elastic Material&quot;</span>
+    <span class="n">material_1</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">Material</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">materialName</span><span class="p">)</span>
+    <span class="n">material_1</span><span class="o">.</span><span class="n">Elastic</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="n">ISOTROPIC</span><span class="p">,</span>
+        <span class="n">temperatureDependency</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">dependencies</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="n">noCompression</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span> <span class="n">noTension</span><span class="o">=</span><span class="n">OFF</span><span class="p">,</span>
+        <span class="n">moduli</span><span class="o">=</span><span class="n">LONG_TERM</span><span class="p">,</span> <span class="n">table</span><span class="o">=</span><span class="p">((</span><span class="mi">12000</span><span class="p">,</span><span class="mf">0.3</span><span class="p">),))</span>
+
+    <span class="c1"># create few sections</span>
+    <span class="n">sectionName</span> <span class="o">=</span> <span class="s1">&#39;Homogeneous Shell Section&#39;</span>
+    <span class="n">section_1</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">HomogeneousShellSection</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">sectionName</span><span class="p">,</span>
+        <span class="n">material</span><span class="o">=</span><span class="n">materialName</span><span class="p">,</span> <span class="n">thickness</span><span class="o">=</span><span class="mf">2.0</span><span class="p">)</span>
+    <span class="c1">#  Model data:</span>
+
+    <span class="c1"># Set up the section categories.</span>
+    <span class="n">sCat</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">SectionCategory</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;S5&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Five-Layered Shell&#39;</span><span class="p">)</span>
+    <span class="n">spBot</span> <span class="o">=</span> <span class="n">sCat</span><span class="o">.</span><span class="n">SectionPoint</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Bottom&#39;</span><span class="p">)</span>
+    <span class="n">spMid</span> <span class="o">=</span> <span class="n">sCat</span><span class="o">.</span><span class="n">SectionPoint</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Middle&#39;</span><span class="p">)</span>
+    <span class="n">spTop</span> <span class="o">=</span> <span class="n">sCat</span><span class="o">.</span><span class="n">SectionPoint</span><span class="p">(</span><span class="n">number</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Top&#39;</span><span class="p">)</span>
+
+    <span class="c1">#  Create a 2-element shell model,</span>
+    <span class="c1">#  4 integration points, 5 section points.</span>
+
+    <span class="n">part1</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">Part</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;part-1&#39;</span><span class="p">,</span> <span class="n">embeddedSpace</span><span class="o">=</span><span class="n">THREE_D</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="n">DEFORMABLE_BODY</span><span class="p">)</span>
+    <span class="n">nodeData</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mf">0.1</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mf">0.1</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mf">0.1</span><span class="p">),</span>
+        <span class="p">)</span>
+    <span class="n">part1</span><span class="o">.</span><span class="n">addNodes</span><span class="p">(</span><span class="n">nodeData</span><span class="o">=</span><span class="n">nodeData</span><span class="p">,</span>
+        <span class="n">nodeSetName</span><span class="o">=</span><span class="s1">&#39;nset-1&#39;</span><span class="p">)</span>
+
+    <span class="n">elementData</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span>
+        <span class="p">)</span>
+    <span class="n">part1</span><span class="o">.</span><span class="n">addElements</span><span class="p">(</span><span class="n">elementData</span><span class="o">=</span><span class="n">elementData</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;S4&#39;</span><span class="p">,</span>
+        <span class="n">elementSetName</span><span class="o">=</span><span class="s1">&#39;eset-1&#39;</span><span class="p">,</span> <span class="n">sectionCategory</span><span class="o">=</span><span class="n">sCat</span><span class="p">)</span>
+
+    <span class="c1">#  Instance the part.</span>
+    <span class="n">instance1</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">Instance</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;part-1-1&#39;</span><span class="p">,</span>
+        <span class="nb">object</span><span class="o">=</span><span class="n">part1</span><span class="p">)</span>
+    <span class="c1"># create instance level sets for section assignment</span>
+    <span class="n">elLabels</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">elset_1</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="s1">&#39;part-1-1&#39;</span><span class="p">]</span><span class="o">.</span>\
+        <span class="n">ElementSetFromElementLabels</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">materialName</span><span class="p">,</span>
+        <span class="n">elementLabels</span><span class="o">=</span><span class="n">elLabels</span><span class="p">)</span>
+    <span class="n">instance1</span><span class="o">.</span><span class="n">assignSection</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="n">elset_1</span><span class="p">,</span>
+        <span class="n">section</span><span class="o">=</span><span class="n">section_1</span><span class="p">)</span>
+
+    <span class="c1">#  Field data:</span>
+
+    <span class="c1">#  Create a step and a frame.</span>
+
+    <span class="n">step1</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">Step</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;step-1&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;first analysis step&#39;</span><span class="p">,</span>
+        <span class="n">domain</span><span class="o">=</span><span class="n">TIME</span><span class="p">,</span> <span class="n">timePeriod</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">analysisTime</span><span class="o">=</span><span class="mf">0.1</span>
+    <span class="n">frame1</span> <span class="o">=</span> <span class="n">step1</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">incrementNumber</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">frameValue</span><span class="o">=</span><span class="n">analysisTime</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span>\
+            <span class="s1">&#39;results frame for time &#39;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">analysisTime</span><span class="p">))</span>
+
+
+    <span class="c1">#  Write nodal displacements.</span>
+
+    <span class="n">uField</span> <span class="o">=</span> <span class="n">frame1</span><span class="o">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;U&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Displacements&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">VECTOR</span><span class="p">)</span>
+
+    <span class="n">nodeLabelData</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+    <span class="n">dispData</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span>
+        <span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">17</span><span class="p">,</span><span class="mi">18</span><span class="p">)</span>
+        <span class="p">)</span>
+
+    <span class="n">uField</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="n">position</span><span class="o">=</span><span class="n">NODAL</span><span class="p">,</span> <span class="n">instance</span><span class="o">=</span><span class="n">instance1</span><span class="p">,</span>
+        <span class="n">labels</span><span class="o">=</span><span class="n">nodeLabelData</span><span class="p">,</span>
+        <span class="n">data</span><span class="o">=</span><span class="n">dispData</span><span class="p">)</span>
+
+    <span class="c1">#  Make this the default deformed field for visualization.</span>
+
+    <span class="n">step1</span><span class="o">.</span><span class="n">setDefaultDeformedField</span><span class="p">(</span><span class="n">uField</span><span class="p">)</span>
+
+    <span class="sd">&quot;&quot;&quot; Write stress tensors</span>
+<span class="sd">    (output only available at top/bottom section points)</span>
+<span class="sd">    The element defined above (S4) has 4 integration points.</span>
+<span class="sd">    Hence, there are 4 stress tensors per element.</span>
+<span class="sd">    Each Field constructor refers to only one layer of section</span>
+<span class="sd">    points.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="n">elementLabelData</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">topData</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">)</span>
+    <span class="n">bottomData</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">2.</span><span class="p">,</span><span class="mf">3.</span><span class="p">,</span><span class="mf">4.</span><span class="p">),</span>
+        <span class="p">)</span>
+
+    <span class="n">transform</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="p">(</span><span class="mf">1.</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">0.</span><span class="p">,</span><span class="mf">1.</span><span class="p">,</span><span class="mf">0.</span><span class="p">),</span>
+        <span class="p">(</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">1.</span><span class="p">)</span>
+        <span class="p">)</span>
+
+    <span class="n">sField</span> <span class="o">=</span> <span class="n">frame1</span><span class="o">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;S&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Stress&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">TENSOR_3D_PLANAR</span><span class="p">,</span>
+        <span class="n">componentLabels</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;S11&#39;</span><span class="p">,</span> <span class="s1">&#39;S22&#39;</span><span class="p">,</span> <span class="s1">&#39;S33&#39;</span><span class="p">,</span><span class="s1">&#39;S12&#39;</span><span class="p">),</span>
+        <span class="n">validInvariants</span><span class="o">=</span><span class="p">(</span><span class="n">MISES</span><span class="p">,))</span>
+    <span class="n">sField</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="n">position</span><span class="o">=</span><span class="n">INTEGRATION_POINT</span><span class="p">,</span>
+    <span class="n">sectionPoint</span><span class="o">=</span><span class="n">spTop</span><span class="p">,</span> <span class="n">instance</span><span class="o">=</span><span class="n">instance1</span><span class="p">,</span>
+    <span class="n">labels</span><span class="o">=</span><span class="n">elementLabelData</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">topData</span><span class="p">,</span>
+    <span class="n">localCoordSystem</span><span class="o">=</span><span class="n">transform</span><span class="p">)</span>
+    <span class="n">sField</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="n">position</span><span class="o">=</span><span class="n">INTEGRATION_POINT</span><span class="p">,</span>
+        <span class="n">sectionPoint</span><span class="o">=</span><span class="n">spBot</span><span class="p">,</span> <span class="n">instance</span><span class="o">=</span><span class="n">instance1</span><span class="p">,</span>
+        <span class="n">labels</span><span class="o">=</span><span class="n">elementLabelData</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">bottomData</span><span class="p">,</span>
+        <span class="n">localCoordSystem</span><span class="o">=</span><span class="n">transform</span><span class="p">)</span>
+
+    <span class="c1">#  For this step, make this the default field</span>
+    <span class="c1">#  for visualization.</span>
+
+    <span class="n">step1</span><span class="o">.</span><span class="n">setDefaultField</span><span class="p">(</span><span class="n">sField</span><span class="p">)</span>
+
+    <span class="c1">#  History data:</span>
+
+    <span class="c1">#  Create a HistoryRegion for a specific point.</span>
+
+    <span class="n">hRegionStep1</span> <span class="o">=</span> <span class="n">step1</span><span class="o">.</span><span class="n">HistoryRegion</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;historyNode0&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Displacement and reaction force&#39;</span><span class="p">,</span>
+        <span class="n">point</span><span class="o">=</span><span class="n">instance1</span><span class="o">.</span><span class="n">nodes</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+    <span class="c1">#  Create variables for this history output in step1.</span>
+
+    <span class="n">hOutputStep1U1</span> <span class="o">=</span> <span class="n">hRegionStep1</span><span class="o">.</span><span class="n">HistoryOutput</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;U1&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Displacement&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">SCALAR</span><span class="p">)</span>
+    <span class="n">hOutputStep1Rf1</span> <span class="o">=</span> <span class="n">hRegionStep1</span><span class="o">.</span><span class="n">HistoryOutput</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;RF1&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Reaction Force&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">SCALAR</span><span class="p">)</span>
+
+    <span class="c1">#  Add history data for step1.</span>
+
+    <span class="n">timeData1</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">u1Data</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+    <span class="n">rf1Data</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="n">hOutputStep1U1</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="n">frameValue</span><span class="o">=</span><span class="n">timeData1</span><span class="p">,</span>
+        <span class="n">value</span><span class="o">=</span><span class="n">u1Data</span><span class="p">)</span>
+    <span class="n">hOutputStep1Rf1</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="n">frameValue</span><span class="o">=</span><span class="n">timeData1</span><span class="p">,</span>
+        <span class="n">value</span><span class="o">=</span><span class="n">rf1Data</span><span class="p">)</span>
+
+    <span class="c1">#  Create another step for history data.</span>
+    <span class="n">step2</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">Step</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;step-2&#39;</span><span class="p">,</span>  <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+        <span class="n">domain</span><span class="o">=</span><span class="n">TIME</span><span class="p">,</span> <span class="n">timePeriod</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span>
+    <span class="n">hRegionStep2</span> <span class="o">=</span> <span class="n">step2</span><span class="o">.</span><span class="n">HistoryRegion</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;historyNode0&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Displacement and reaction force&#39;</span><span class="p">,</span>
+        <span class="n">point</span><span class="o">=</span><span class="n">instance1</span><span class="o">.</span><span class="n">nodes</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">hOutputStep2U1</span> <span class="o">=</span> <span class="n">hRegionStep2</span><span class="o">.</span><span class="n">HistoryOutput</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;U1&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Displacement&#39;</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="n">SCALAR</span><span class="p">)</span>
+    <span class="n">hOutputStep2Rf1</span> <span class="o">=</span> <span class="n">hRegionStep2</span><span class="o">.</span><span class="n">HistoryOutput</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;RF1&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Reaction Force&#39;</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="n">SCALAR</span><span class="p">)</span>
+
+    <span class="c1">#  Add history data for the second step.</span>
+    <span class="n">timeData2</span> <span class="o">=</span> <span class="p">(</span><span class="mf">1.2</span><span class="p">,</span> <span class="mf">1.9</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">)</span>
+    <span class="n">u1Data</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.8</span><span class="p">,</span> <span class="mf">0.9</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span>
+    <span class="n">rf1Data</span> <span class="o">=</span> <span class="p">(</span><span class="mf">0.9</span><span class="p">,</span> <span class="mf">1.1</span><span class="p">,</span> <span class="mf">1.3</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">)</span>
+
+    <span class="n">hOutputStep2U1</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="n">frameValue</span><span class="o">=</span><span class="n">timeData2</span><span class="p">,</span>
+        <span class="n">value</span><span class="o">=</span><span class="n">u1Data</span><span class="p">)</span>
+    <span class="n">hOutputStep2Rf1</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="n">frameValue</span><span class="o">=</span><span class="n">timeData2</span><span class="p">,</span>
+        <span class="n">value</span><span class="o">=</span><span class="n">rf1Data</span><span class="p">)</span>
+
+    <span class="c1"># Get XY Data from the two steps.</span>
+    <span class="n">u1FromStep1</span> <span class="o">=</span> <span class="n">hRegionStep1</span><span class="o">.</span><span class="n">getSubset</span><span class="p">(</span><span class="n">variableName</span><span class="o">=</span><span class="s1">&#39;U1&#39;</span><span class="p">)</span>
+    <span class="n">u1FromStep2</span> <span class="o">=</span> <span class="n">hRegionStep2</span><span class="o">.</span><span class="n">getSubset</span><span class="p">(</span><span class="n">variableName</span><span class="o">=</span><span class="s1">&#39;U1&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Square the history data.</span>
+    <span class="n">u1SquaredFromStep1</span> <span class="o">=</span> \
+        <span class="n">power</span><span class="p">(</span><span class="n">u1FromStep1</span><span class="o">.</span><span class="n">historyOutputs</span><span class="p">[</span><span class="s1">&#39;U1&#39;</span><span class="p">],</span> <span class="mf">2.0</span><span class="p">)</span>
+    <span class="n">u1SquaredFromStep2</span> <span class="o">=</span> \
+        <span class="n">power</span><span class="p">(</span><span class="n">u1FromStep2</span><span class="o">.</span><span class="n">historyOutputs</span><span class="p">[</span><span class="s1">&#39;U1&#39;</span><span class="p">],</span> <span class="mf">2.0</span><span class="p">)</span>
+
+    <span class="c1"># Add the squared displacement to the two steps.</span>
+    <span class="n">hOutputStep1sumU1</span> <span class="o">=</span> <span class="n">hRegionStep1</span><span class="o">.</span><span class="n">HistoryOutput</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;squareU1&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Square of displacements&#39;</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="n">SCALAR</span><span class="p">)</span>
+    <span class="n">hOutputStep1sumU1</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">u1SquaredFromStep1</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="n">hOutputStep2sumU1</span> <span class="o">=</span> <span class="n">hRegionStep2</span><span class="o">.</span><span class="n">HistoryOutput</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;squareU1&#39;</span><span class="p">,</span>
+        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Square of displacements&#39;</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="n">SCALAR</span><span class="p">)</span>
+    <span class="n">hOutputStep2sumU1</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">u1SquaredFromStep2</span><span class="o">.</span><span class="n">data</span><span class="p">)</span>
+
+    <span class="c1"># Save the results in the output database.</span>
+    <span class="c1"># Use the Visualization module of Abaqus/CAE to</span>
+    <span class="c1"># view the contents of the output database.</span>
+
+    <span class="n">odb</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+    <span class="n">odb</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">createODB</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="an-abaqus-scripting-interface-version-of-fpert">
+<h2>An Abaqus Scripting Interface version of FPERT<a class="headerlink" href="#an-abaqus-scripting-interface-version-of-fpert" title="此标题的永久链接">#</a></h2>
+<p>A Fortran program that reads the Abaqus results file and creates a deformed mesh from the original coordinate data and eigenvectors is described in <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXARefMap/simaexa-c-fpert.htm?contextscope=all">Creation of a perturbed mesh from original coordinate data and eigenvectors: FPERT</a>. This example illustrates an Abaqus Scripting Interface script that reads an output database and performs similar calculations.</p>
+<p>The command line arguments provide the following:</p>
+<ul class="simple">
+<li><p><strong>odbName</strong>: The output database file name.</p></li>
+<li><p><strong>modeList</strong>: A list of eigenmodes to use in the perturbation.</p></li>
+<li><p><strong>weightList</strong>: The perturbation weighting factors.</p></li>
+<li><p><strong>outNameUser</strong>: The output file name (optional).</p></li>
+</ul>
+<p>Use the following command to retrieve the example script:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="c1"># abaqus fetch job=odbPert</span>
+
+<span class="c1"># Abaqus Scripting Interface version of FPERT, a Fortran</span>
+<span class="c1"># program to create a perturbed mesh from original coordinate</span>
+<span class="c1"># data and eigenvectors. FPERT is described in the Abaqus Example</span>
+<span class="c1"># Problems Manual.</span>
+
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">odbAccess</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">types</span> <span class="kn">import</span> <span class="n">IntType</span>
+
+<span class="c1"># Get input from the user</span>
+
+<span class="n">odbName</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s1">&#39;Enter odb name (w/o .odb): &#39;</span><span class="p">)</span>
+<span class="n">modes</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span><span class="s1">&#39;Enter mode shape(s): &#39;</span><span class="p">))</span>
+<span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">modes</span><span class="p">)</span> <span class="ow">is</span> <span class="n">IntType</span><span class="p">:</span>
+    <span class="n">modes</span> <span class="o">=</span> <span class="p">(</span><span class="n">modes</span><span class="p">,)</span>
+
+<span class="n">odb</span> <span class="o">=</span> <span class="n">openOdb</span><span class="p">(</span><span class="n">odbName</span> <span class="o">+</span> <span class="s1">&#39;.odb&#39;</span><span class="p">)</span>
+
+<span class="c1"># Get the undeformed coordinates from the first</span>
+<span class="c1"># step and frame</span>
+
+<span class="n">step</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="o">.</span><span class="n">values</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="k">try</span><span class="p">:</span>
+<span class="n">coords</span> <span class="o">=</span> <span class="n">step</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;COORD&#39;</span><span class="p">]</span>
+<span class="k">except</span><span class="p">:</span>
+<span class="n">err</span> <span class="o">=</span> <span class="s2">&quot;The analysis must include a field output request </span><span class="se">\</span>
+<span class="s2">    for variable COORD.&quot;</span>
+<span class="k">print</span> <span class="n">err</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Perturb the nodal coordinates</span>
+
+<span class="n">factors</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">mode</span> <span class="ow">in</span> <span class="n">modes</span><span class="p">:</span>
+    <span class="k">try</span><span class="p">:</span>
+    <span class="n">frame</span> <span class="o">=</span> <span class="n">step</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="n">mode</span><span class="p">]</span>
+    <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s1">&#39;Input error: mode </span><span class="si">%s</span><span class="s1"> does not exist&#39;</span> <span class="o">%</span> <span class="n">mode</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">factors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span>
+        <span class="s1">&#39;Enter imperfection factor for mode </span><span class="si">%s</span><span class="s1">: &#39;</span><span class="o">%</span> <span class="n">mode</span><span class="p">)))</span>
+    <span class="n">coords</span> <span class="o">=</span> <span class="n">coords</span> <span class="o">+</span> <span class="n">factors</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">frame</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;U&#39;</span><span class="p">]</span>
+
+<span class="c1"># Write new nodal coordinates to a file</span>
+
+<span class="n">outFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">odbName</span> <span class="o">+</span> <span class="s1">&#39;_perturbed.inp&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="n">header</span> <span class="o">=</span> \
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">*******************************************************</span>
+<span class="sd">** Node data for perturbed mesh.</span>
+<span class="sd">** Input mesh from: %s</span>
+<span class="sd">** Mode shapes used: %s</span>
+<span class="sd">** Imperfection factors used: %s</span>
+<span class="sd">*******************************************************</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="n">outFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">header</span> <span class="o">%</span> <span class="p">(</span><span class="n">odbName</span><span class="p">,</span> <span class="n">modes</span><span class="p">,</span> <span class="n">factors</span><span class="p">))</span>
+<span class="n">format</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%6i</span><span class="s1">, </span><span class="si">%14.7e</span><span class="s1">, </span><span class="si">%14.7e</span><span class="s1">, </span><span class="si">%14.7e</span><span class="se">\n</span><span class="s1">&#39;</span>
+<span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">coords</span><span class="o">.</span><span class="n">values</span><span class="p">:</span>
+    <span class="n">outFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span>
+        <span class="n">format</span> <span class="o">%</span> <span class="p">((</span><span class="n">value</span><span class="o">.</span><span class="n">nodeLabel</span><span class="p">,)</span> <span class="o">+</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">value</span><span class="o">.</span><span class="n">data</span><span class="p">)))</span>
+<span class="n">outFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;** End of perturbed mesh node input file.&#39;</span><span class="p">)</span>
+<span class="n">outFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="computations-with-fieldoutput-objects">
+<span id="id2"></span><h2>Computations with FieldOutput objects<a class="headerlink" href="#computations-with-fieldoutput-objects" title="此标题的永久链接">#</a></h2>
+<p>This example illustrates how you can operate on FieldOutput objects and save the computed field to the output database. The example script does the following:</p>
+<p>Retrieves two specified fields from the output database.</p>
+<ul class="simple">
+<li><p>Computes a new field by subtracting the fields that were retrieved.</p></li>
+<li><p>Creates a new Step object in the output database.</p></li>
+<li><p>Creates a new Frame object in the new step.</p></li>
+<li><p>Creates a new FieldOutput object in the new frame.</p></li>
+<li><p>Uses the <cite>addData</cite> method to add the computed field to the new FieldOutput object.</p></li>
+<li><p>Use the following command to retrieve the example script:</p></li>
+</ul>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">abaqus</span> <span class="n">fetch</span> <span class="n">job</span><span class="o">=</span><span class="n">fieldOperation</span>
+</pre></div>
+</div>
+<p>The fetch command also retrieves an input file that you can use to generate the output database that is read by the example script.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="c1"># FieldOutput operators example problem</span>
+<span class="c1">#</span>
+<span class="c1"># Script that does computations with fields and</span>
+<span class="c1"># saves the results computed to the output database</span>
+<span class="c1">#</span>
+
+<span class="kn">from</span> <span class="nn">odbAccess</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">odb</span> <span class="o">=</span> <span class="n">openOdb</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;fieldOperation.odb&#39;</span><span class="p">)</span>
+
+<span class="c1"># Get fields from output database.</span>
+
+<span class="n">field1</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="s1">&#39;LC1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;U&#39;</span><span class="p">]</span>
+<span class="n">field2</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="s1">&#39;LC2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;U&#39;</span><span class="p">]</span>
+
+<span class="c1"># Compute difference between fields.</span>
+
+<span class="n">deltaDisp</span> <span class="o">=</span> <span class="n">field2</span> <span class="o">-</span> <span class="n">field1</span>
+
+<span class="c1"># Save new field.</span>
+
+<span class="n">newStep</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">Step</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;user&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;user defined results&#39;</span><span class="p">,</span> <span class="n">domain</span><span class="o">=</span> <span class="n">TIME</span><span class="p">,</span> <span class="n">timePeriod</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">newFrame</span> <span class="o">=</span> <span class="n">newStep</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">incrementNumber</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">frameValue</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+<span class="n">newField</span> <span class="o">=</span> <span class="n">newFrame</span><span class="o">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;U&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;delta displacements&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">VECTOR</span><span class="p">)</span>
+<span class="n">newField</span><span class="o">.</span><span class="n">addData</span><span class="p">(</span><span class="n">field</span><span class="o">=</span><span class="n">deltaDisp</span><span class="p">)</span>
+
+<span class="n">odb</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="computations-with-fieldvalue-objects">
+<h2>Computations with FieldValue objects<a class="headerlink" href="#computations-with-fieldvalue-objects" title="此标题的永久链接">#</a></h2>
+<p>This example illustrates how you can use the fieldValue operators to sum and average fieldValues in a region. The example script does the following:</p>
+<ul class="simple">
+<li><p>Retrieves the stress field for a specified region during the last step and frame of the output database.</p></li>
+<li><p>Sums all the stress fieldValues and computes the average value.</p></li>
+<li><p>For each component of stress, print the sum and the average stress.</p></li>
+</ul>
+<p>Use the following command to retrieve the example script:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus fetch <span class="nv">job</span><span class="o">=</span>sumRegionFieldValue
+</pre></div>
+</div>
+<p>The fetch command also retrieves an input file that you can use to generate the output database that is read by the example script.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="c1">#</span>
+<span class="c1"># fieldValue operators example problem:</span>
+<span class="c1">#</span>
+<span class="c1"># sum and average stress field values in a region</span>
+<span class="c1">#</span>
+
+<span class="kn">from</span> <span class="nn">odbAccess</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1">#</span>
+<span class="c1"># get field</span>
+<span class="c1">#</span>
+
+<span class="n">odb</span> <span class="o">=</span> <span class="n">openOdb</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;sumRegionFieldValue.odb&#39;</span><span class="p">)</span>
+<span class="n">endSet</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">elementSets</span><span class="p">[</span><span class="s1">&#39;END1&#39;</span><span class="p">]</span>
+<span class="n">field</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="o">.</span><span class="n">values</span><span class="p">()[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;S&#39;</span><span class="p">]</span>
+<span class="n">subField</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">getSubset</span><span class="p">(</span><span class="n">region</span><span class="o">=</span><span class="n">endSet</span><span class="p">)</span>
+
+<span class="c1">#</span>
+<span class="c1"># sum values</span>
+<span class="c1">#</span>
+
+<span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">subField</span><span class="o">.</span><span class="n">values</span><span class="p">:</span>
+<span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">val</span>
+<span class="n">ave</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">subField</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+
+<span class="c1">#</span>
+<span class="c1"># print results</span>
+<span class="c1">#</span>
+
+<span class="k">print</span> <span class="s1">&#39;Component    Sum            Average&#39;</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">field</span><span class="o">.</span><span class="n">componentLabels</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span> <span class="nb">len</span><span class="p">(</span><span class="n">labels</span><span class="p">)</span> <span class="p">):</span>
+    <span class="k">print</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">          </span><span class="si">%5.3e</span><span class="s1">      </span><span class="si">%5.3e</span><span class="s1">&#39;</span><span class="o">%</span> \
+            <span class="p">(</span><span class="n">labels</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="nb">sum</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">ave</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</pre></div>
+</div>
+</section>
+<section id="computations-with-historyoutput-objects">
+<h2>Computations with HistoryOutput objects<a class="headerlink" href="#computations-with-historyoutput-objects" title="此标题的永久链接">#</a></h2>
+<p>This example illustrates how you can use the historyOutput operators to compute the displacement magnitude from the components. The example script does the following:</p>
+<ul class="simple">
+<li><p>Retrieves the node of interest using a nodeSet.</p></li>
+<li><p>Uses the node of interest to construct a HistoryPoint object.</p></li>
+<li><p>Uses the HistoryPoint to retrieve the historyRegion.</p></li>
+<li><p>Computes the displacement magnitude history from the displacement component HistoryOutput objects in the historyRegion.</p></li>
+<li><p>Scales the displacement magnitude history using a predefined value.</p></li>
+<li><p>Prints the displacement magnitude history.</p></li>
+</ul>
+<p>Use the following command to retrieve the example script:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus fetch <span class="nv">job</span><span class="o">=</span>compDispMagHist
+</pre></div>
+</div>
+<p>The fetch command also retrieves an input file that you can use to generate the output database that is read by the example script.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="c1"># HistoryOutput operators example problem.</span>
+<span class="c1">#</span>
+<span class="c1"># Compute magnitude of node displacement history from</span>
+<span class="c1"># displacement components and scale relative to given</span>
+<span class="c1"># allowable displacement.</span>
+<span class="c1">#</span>
+
+<span class="kn">from</span> <span class="nn">odbAccess</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1">#</span>
+<span class="c1"># get historyRegion for the node in nodeSet TIP</span>
+<span class="c1">#</span>
+
+<span class="n">odb</span> <span class="o">=</span> <span class="n">openOdb</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;compDispMagHist.odb&#39;</span><span class="p">)</span>
+<span class="n">endSet</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">instances</span><span class="p">[</span><span class="s1">&#39;BEAM-1-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">nodeSets</span><span class="p">[</span><span class="s1">&#39;TIP&#39;</span><span class="p">]</span>
+<span class="n">histPoint</span> <span class="o">=</span> <span class="n">HistoryPoint</span><span class="p">(</span><span class="n">node</span><span class="o">=</span><span class="n">endSet</span><span class="o">.</span><span class="n">nodes</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="n">tipHistories</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="s1">&#39;Step-2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">getHistoryRegion</span><span class="p">(</span>
+    <span class="n">point</span><span class="o">=</span><span class="n">histPoint</span><span class="p">)</span>
+
+<span class="c1">#</span>
+<span class="c1"># Compute and scale magnitude.</span>
+<span class="c1">#</span>
+
+<span class="n">maxAllowableDisp</span> <span class="o">=</span> <span class="mf">5.0</span>
+<span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">componentLabels</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;U1&#39;</span><span class="p">,</span> <span class="s1">&#39;U2&#39;</span><span class="p">,</span> <span class="s1">&#39;U3&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">componentLabels</span><span class="p">:</span>
+   <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">power</span><span class="p">(</span><span class="n">tipHistories</span><span class="o">.</span><span class="n">historyOutputs</span><span class="p">[</span><span class="n">name</span><span class="p">],</span> <span class="mf">2.0</span><span class="p">)</span>
+<span class="nb">sum</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span> <span class="o">/</span> <span class="n">maxAllowableDisp</span>
+
+<span class="c1">#</span>
+<span class="c1"># Print magnitude.</span>
+<span class="c1">#</span>
+
+<span class="k">print</span> <span class="s1">&#39;History:&#39;</span><span class="p">,</span> <span class="nb">sum</span><span class="o">.</span><span class="n">name</span>
+<span class="k">print</span> <span class="s1">&#39;Time       Magnitude&#39;</span>
+<span class="k">for</span> <span class="n">dataPair</span> <span class="ow">in</span> <span class="nb">sum</span><span class="o">.</span><span class="n">data</span><span class="p">:</span>
+    <span class="k">print</span> <span class="s2">&quot;</span><span class="si">%5.4f</span><span class="s2">  </span><span class="si">%5.2f</span><span class="s2">&quot;</span><span class="o">%</span><span class="p">(</span><span class="n">dataPair</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">dataPair</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</section>
+<section id="creating-a-new-load-combination-from-different-load-cases">
+<h2>Creating a new load combination from different load cases<a class="headerlink" href="#creating-a-new-load-combination-from-different-load-cases" title="此标题的永久链接">#</a></h2>
+<p>This example illustrates how you can use the frame operators to create a new load combination from existing load cases. The example script does the following:</p>
+<ul class="simple">
+<li><p>Retrieves the information describing the new load combination from the command line.</p></li>
+<li><p>Retrieves the frames for each load case.</p></li>
+<li><p>Computes the new stresses and displacements.</p></li>
+<li><p>Saves data computed to the output database as a new load combination.</p></li>
+</ul>
+<p>The command line arguments provide the following:</p>
+<ul class="simple">
+<li><p><strong>odbName</strong>: The output database file name.</p></li>
+<li><p><strong>stepName</strong>: The name of the step containing the load cases.</p></li>
+<li><p><strong>loadCaseNames</strong>: The load case names.</p></li>
+<li><p><strong>scaling</strong>: The scale factors to apply to each load case.</p></li>
+</ul>
+<p>Use the following command to retrieve the example script:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus fetch <span class="nv">job</span><span class="o">=</span>createLoadComb
+</pre></div>
+</div>
+<p>The fetch command also retrieves an input file that you can use to generate an output database that can be read by the example script.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">types</span>
+<span class="kn">from</span> <span class="nn">odbAccess</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># retrieve request from user</span>
+<span class="n">odbName</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s1">&#39;Enter odb name&#39;</span><span class="p">)</span>
+<span class="n">stepName</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s1">&#39;Enter step name&#39;</span><span class="p">)</span>
+
+<span class="n">loadCaseNames</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span>
+    <span class="s1">&#39;Enter new load case as:</span>
+    <span class="p">[</span><span class="s1">&#39;loadCase1Name&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="s1">&#39;loadCaseNName&#39;</span><span class="p">]</span><span class="s1">&#39;))</span>
+<span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">loadCaseNames</span><span class="p">)</span> <span class="o">==</span> <span class="n">types</span><span class="o">.</span><span class="n">TupleType</span><span class="p">:</span>
+    <span class="n">loadCaseNames</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">loadCaseNames</span><span class="p">)</span>
+<span class="n">lcName</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s1">&#39;Enter new load case name&#39;</span><span class="p">)</span>
+<span class="n">scaling</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="nb">raw_input</span><span class="p">(</span>
+    <span class="s1">&#39;Enter new load case as:(scaleFactor1, .., scaleFactorN)&#39;</span><span class="p">))</span>
+
+<span class="n">odb</span> <span class="o">=</span> <span class="n">openOdb</span><span class="p">(</span><span class="n">odbName</span><span class="p">)</span>
+<span class="n">step</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">stepName</span><span class="p">]</span>
+
+<span class="c1"># compute new load case</span>
+<span class="n">newStress</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">newDisp</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">loadCaseName</span> <span class="ow">in</span> <span class="n">loadCaseNames</span><span class="p">:</span>
+    <span class="n">frame</span> <span class="o">=</span> <span class="n">step</span><span class="o">.</span><span class="n">getFrame</span><span class="p">(</span><span class="n">loadCase</span><span class="o">=</span><span class="n">step</span><span class="o">.</span><span class="n">loadCases</span><span class="p">[</span><span class="n">loadCaseName</span><span class="p">])</span>
+    <span class="n">scaleFac</span> <span class="o">=</span> <span class="n">scaling</span><span class="p">[</span><span class="n">loadCaseNames</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">frame</span><span class="o">.</span><span class="n">loadCase</span><span class="o">.</span><span class="n">name</span><span class="p">)]</span>
+    <span class="n">newStress</span> <span class="o">=</span> <span class="n">newStress</span> <span class="o">+</span> <span class="n">scaleFac</span><span class="o">*</span><span class="n">frame</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;S&#39;</span><span class="p">]</span>
+    <span class="n">newDisp</span> <span class="o">=</span> <span class="n">newDisp</span> <span class="o">+</span> <span class="n">scaleFac</span><span class="o">*</span><span class="n">frame</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;U&#39;</span><span class="p">]</span>
+
+<span class="c1"># save new load case to odb</span>
+<span class="n">lcNew</span> <span class="o">=</span> <span class="n">step</span><span class="o">.</span><span class="n">LoadCase</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">lcName</span><span class="p">)</span>
+<span class="n">newFrame</span> <span class="o">=</span> <span class="n">step</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">loadCase</span><span class="o">=</span><span class="n">lcNew</span><span class="p">)</span>
+<span class="n">newFrame</span><span class="o">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="n">field</span><span class="o">=</span><span class="n">newStress</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;S&#39;</span><span class="p">)</span>
+<span class="n">newFrame</span><span class="o">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="n">field</span><span class="o">=</span><span class="n">newDisp</span><span class="p">)</span>
+
+<span class="n">odb</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+<span class="n">odb</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="stress-range-for-multiple-load-cases">
+<h2>Stress range for multiple load cases<a class="headerlink" href="#stress-range-for-multiple-load-cases" title="此标题的永久链接">#</a></h2>
+<p>This example illustrates how you can use the envelope operations to compute the stress range over a number of load cases. The example script does the following:</p>
+<ul class="simple">
+<li><p>For each load case during a specified step, the script collects the S11 components of the stress tensor fields into a list of scalar fields.</p></li>
+<li><p>Computes the maximum and minimum of the S11 stress component using the envelope calculations.</p></li>
+<li><p>Computes the stress range using the maximum and minimum values of the stress component.</p></li>
+<li><p>Creates a new frame in the step.</p></li>
+<li><p>Writes the computed stress range into a new FieldOutput object in the new frame.</p></li>
+</ul>
+<p>Use the following command to retrieve the example script:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus fetch <span class="nv">job</span><span class="o">=</span>stressRange
+</pre></div>
+</div>
+<p>The fetch command also retrieves an input file that you can use to generate an output database that can be read by the example script.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">odbAccess</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># retrieve request from user</span>
+<span class="n">odbName</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s1">&#39;Enter odb name&#39;</span><span class="p">)</span>
+<span class="n">stepName</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s1">&#39;Enter step name&#39;</span><span class="p">)</span>
+
+<span class="c1"># retrieve steps from the odb</span>
+<span class="n">odb</span><span class="o">=</span><span class="n">openOdb</span><span class="p">(</span><span class="n">odbName</span><span class="p">)</span>
+<span class="n">step</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">stepName</span><span class="p">]</span>
+<span class="n">sFields</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">loadCase</span> <span class="ow">in</span> <span class="n">step</span><span class="o">.</span><span class="n">loadCases</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+    <span class="n">stressField</span> <span class="o">=</span> <span class="n">step</span><span class="o">.</span><span class="n">getFrame</span><span class="p">(</span><span class="n">loadCase</span><span class="o">=</span><span class="n">loadCase</span><span class="p">)</span><span class="o">.</span>\
+        <span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;S&#39;</span><span class="p">]</span>
+    <span class="n">sFields</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stressField</span><span class="o">.</span><span class="n">getScalarField</span><span class="p">(</span>
+        <span class="n">componentLabel</span><span class="o">=</span><span class="s1">&#39;S11&#39;</span><span class="p">))</span>
+
+<span class="c1"># compute stress range</span>
+<span class="n">maxStress</span><span class="p">,</span> <span class="n">maxLoc</span> <span class="o">=</span> <span class="n">maxEnvelope</span><span class="p">(</span><span class="n">sFields</span><span class="p">)</span>
+<span class="n">minStress</span><span class="p">,</span> <span class="n">minLoc</span> <span class="o">=</span> <span class="n">minEnvelope</span><span class="p">(</span><span class="n">sFields</span><span class="p">)</span>
+
+<span class="n">stressRange</span> <span class="o">=</span> <span class="n">maxStress</span> <span class="o">-</span> <span class="n">minStress</span>
+
+<span class="c1"># save to same step</span>
+<span class="n">newFrame</span> <span class="o">=</span> <span class="n">step</span><span class="o">.</span><span class="n">Frame</span><span class="p">(</span><span class="n">incrementNumber</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">frameValue</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s1">&#39;Stress Range&#39;</span><span class="p">)</span>
+<span class="n">newFrame</span><span class="o">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="n">field</span><span class="o">=</span><span class="n">stressRange</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;S11 Range&#39;</span><span class="p">)</span>
+
+<span class="n">odb</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+<span class="n">odb</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="transformation-of-field-results">
+<span id="id3"></span><h2>Transformation of field results<a class="headerlink" href="#transformation-of-field-results" title="此标题的永久链接">#</a></h2>
+<p>This example illustrates how field results can be transformed to a different coordinate system. The example computes deviation of the nodal displacements with respect to a perfectly cylindrical displacement (cylinder bore distortion). The example does the following:</p>
+<ul class="simple">
+<li><p>Creates a cylindrical coordinate system.</p></li>
+<li><p>Transforms the results to the new coordinate system.</p></li>
+<li><p>Computes the average radial displacement.</p></li>
+<li><p>Computes the distortion as the difference between radial displacement and the average radial displacement.</p></li>
+<li><p>Saves the distortion field to the output database for viewing.</p></li>
+</ul>
+<p>Use the following commands to retrieve the example script and an input file to create a sample output database:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="c1"># abaqus fetch job=transformExa</span>
+<span class="c1"># abaqus fetch job=esf4sxdg</span>
+<span class="kn">from</span> <span class="nn">odbAccess</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="c1"># Retrieve request from user.</span>
+
+<span class="n">odbName</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s1">&#39;Enter odb name&#39;</span><span class="p">)</span>
+<span class="n">stepName</span> <span class="o">=</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s1">&#39;Enter step name&#39;</span><span class="p">)</span>
+<span class="n">frameNo</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span> <span class="nb">raw_input</span><span class="p">(</span><span class="s1">&#39;Enter frame number&#39;</span><span class="p">)</span> <span class="p">)</span>
+
+
+<span class="n">odb</span> <span class="o">=</span> <span class="n">openOdb</span><span class="p">(</span><span class="n">odbName</span><span class="p">)</span>
+
+<span class="c1"># Retrieve the displacements from last frame of the last step.</span>
+
+<span class="n">step</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="n">stepName</span><span class="p">]</span>
+<span class="n">frame</span> <span class="o">=</span> <span class="n">step</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="n">frameNo</span><span class="p">]</span>
+<span class="n">displacement</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;U&#39;</span><span class="p">]</span>
+
+<span class="c1"># Create cylindrical coordinate system and compute</span>
+<span class="c1"># associated results</span>
+
+<span class="n">coordSys</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">DatumCsysByThreePoints</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;cylC&#39;</span><span class="p">,</span>
+    <span class="n">coordSysType</span><span class="o">=</span><span class="n">CYLINDRICAL</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span>
+    <span class="n">point1</span><span class="o">=</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">point2</span><span class="o">=</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="n">cylindricalDisp</span> <span class="o">=</span> <span class="n">displacement</span><span class="o">.</span><span class="n">getTransformedField</span><span class="p">(</span>
+    <span class="n">datumCsys</span><span class="o">=</span><span class="n">coordSys</span><span class="p">)</span>
+<span class="n">radialDisp</span> <span class="o">=</span> <span class="n">cylindricalDisp</span><span class="o">.</span><span class="n">getScalarField</span><span class="p">(</span><span class="n">componentLabel</span><span class="o">=</span><span class="s1">&#39;U1&#39;</span><span class="p">)</span>
+
+<span class="c1"># Compute average radius.</span>
+
+<span class="nb">sum</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="k">for</span> <span class="n">val</span> <span class="ow">in</span> <span class="n">radialDisp</span><span class="o">.</span><span class="n">values</span><span class="p">:</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">val</span><span class="o">.</span><span class="n">data</span>
+<span class="n">aveDisp</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">radialDisp</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+
+<span class="c1"># Compute distortion.</span>
+
+<span class="n">distortion</span> <span class="o">=</span> <span class="n">radialDisp</span> <span class="o">-</span> <span class="n">aveDisp</span>
+
+<span class="c1"># Save computed results to the database.</span>
+
+<span class="n">frame</span><span class="o">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="n">field</span><span class="o">=</span><span class="n">radialDisp</span><span class="p">)</span>
+<span class="n">fieldDescription</span> <span class="o">=</span> <span class="s1">&#39;Distortion ( </span><span class="se">\</span>
+<span class="s1">    average radial displacement = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">aveDisp</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;)&#39;</span>
+<span class="n">frame</span><span class="o">.</span><span class="n">FieldOutput</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Distortion&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="n">fieldDescription</span><span class="p">,</span> <span class="n">field</span><span class="o">=</span><span class="n">distortion</span><span class="p">)</span>
+
+<span class="n">odb</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+<span class="n">odb</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="viewing-the-analysis-of-a-meshed-beam-cross-section">
+<h2>Viewing the analysis of a meshed beam cross-section<a class="headerlink" href="#viewing-the-analysis-of-a-meshed-beam-cross-section" title="此标题的永久链接">#</a></h2>
+<p>This example illustrates how you can view the results of a meshed beam cross-section analysis that was generated using Timoshenko beams, as described in <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEANLRefMap/simaanl-c-meshedsection.htm?contextscope=all">Meshed beam cross-sections</a>. Before you execute the example script, you must run two analyses that create the following output database files:</p>
+<ul class="simple">
+<li><p>An output database generated by the two-dimensional cross-section analysis. The script reads cross-section data, including the out-of-plane warping function, from this output database.</p></li>
+<li><p>An output database generated by the beam analysis. The script reads generalized section strains (SE) from this output database.</p></li>
+</ul>
+<p>Use the following command to retrieve the example script:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus fetch <span class="nv">job</span><span class="o">=</span>compositeBeam
+</pre></div>
+</div>
+<p>You must run the script from Abaqus/CAE by selecting <strong>File -&gt; Run Script</strong> from the main menu. The script uses <cite>getInputs</cite> to display a dialog box that prompts you for the name of the output databases generated by the two-dimensional cross-section analysis and by the beam analysis. The names are case-insensitive, and you can omit the <cite>.odb</cite> file suffix. The files must be in the local directory. The dialog box also prompts you for the following:</p>
+<ul class="simple">
+<li><p>The name of the step</p></li>
+<li><p>The increment or mode number (for a frequency analysis)</p></li>
+<li><p>The name of the load case (if any)</p></li>
+<li><p>The name of the part instance</p></li>
+<li><p>The element number</p></li>
+<li><p>The integration point number</p></li>
+</ul>
+<p>If you do not enter a value in a field, the script looks in the beam analysis output database for possible values. The script then enters a default value in the dialog box and displays information about the range of possible values in the Abaqus/CAE message area. You can leave the load case field blank if the analysis did not include load cases. The script does not continue until all the values in the dialog box are acceptable. The same values are written to a file called <cite>compositeBeam_values.dat</cite> in the local directory, and these values appear as defaults in the dialog box the next time you run the example script.</p>
+<p>After the <cite>getInputs</cite> method returns acceptable values, the script reads the two output databases and writes the generated data back to the output database created by the two-dimensional cross-section analysis. If the beam cross-section mesh consists of 1-DOF warping elements, the script then displays an undeformed contour plot of S11 and uses the getInputs method again to display a dialog box with a list of the available stress and strain components (S11, S22, S33, E11, E22, and E33). If the beam cross-section mesh consists of 3-DOF warping elements, the deformed contour plot is displayed, and the full three-dimensional stress and strain components (S11, S22, S33, S12, S13, S23, E11, E22, E33, E12, E13, and E23) are available. The deformation represents the in-plane and out-of-plane warping. Click <strong>OK</strong> in this dialog box to cycle through the available components. Click Cancel to end the script. You can also select the component to display by starting the Visualization module and selecting <cite>Result -&gt; Field Output</cite> from the main menu.</p>
+<p>The example script writes new stress and strain fields. The script must provide a unique name for the generated field output because each of these fields is generated for a specific beam analysis output database and for a specific part instance, step, frame, element, and integration point. The script constructs this unique name as follows:</p>
+<ul class="simple">
+<li><p>All contour stress and strain fields for a specific beam analysis output database are written to a new frame, where the description of the frame is the name of the output database. For example, for a beam analysis output database called <cite>beam_run17.odb</cite>, the frame description is <strong>Beam ODB: beam_run17</strong>.</p></li>
+<li><p>The field name is assembled from a concatenation of the <strong>step name</strong>, <strong>frame index</strong>, <strong>instance name</strong>, <strong>element</strong>, and <strong>integration point</strong>, followed by E or S. For example, <cite>Step-1_4_LINEARMESHED_12_1_E</cite>. Any spaces in a step or instance name are replaced by underscores.</p></li>
+</ul>
+<p>You can run the script many times; for example, to create contour data for a particular step, increment, and integration point along each element of the beam. In this case you would also use <strong>Result -&gt; Field Output</strong> to select which element to display.</p>
+<p>The contour data generated by the example script are written back to the output database that was originally created by the two-dimensional, cross-section analysis. If you want to preserve this database in its original form, you must save a copy before you run the example script.</p>
+</section>
+<section id="using-infinite-elements-to-compute-and-view-the-results-of-an-acoustic-far-field-analysis">
+<h2>Using infinite elements to compute and view the results of an acoustic far-field analysis<a class="headerlink" href="#using-infinite-elements-to-compute-and-view-the-results-of-an-acoustic-far-field-analysis" title="此标题的永久链接">#</a></h2>
+<p>This example illustrates how you can use the Abaqus Scripting Interface to compute acoustic far-field pressure values from infinite element sets and project the results onto a spherical surface for visualization purposes. This script is designed primarily to compute the acoustic far-field pressure using a layer of infinite acoustic elements that forms a full or partial spherical surface. The script extends the acoustic analysis functionality within Abaqus/Standard, as described in <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEANLRefMap/simaanl-c-acoustic.htm?contextscope=all">Acoustic, shock, and coupled acoustic-structural analysis</a> and <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-infinite.htm?contextscope=all">Infinite elements</a>. The script writes the acoustic far-field pressure values to an output database, and you can use Abaqus/CAE to view the far-field results.</p>
+<p>The far-field pressure is defined as</p>
+<div class="math notranslate nohighlight">
+\[\lim _{r \rightarrow \infty} p(r)=\lim _{r \rightarrow \infty}\left(\frac{1}{k r} e^{-i k r} p_{F A R}\right)\]</div>
+<p>where <span class="math notranslate nohighlight">\(p(r)\)</span> is the acoustic pressure at a distance <span class="math notranslate nohighlight">\(r\)</span> from the reference point, <span class="math notranslate nohighlight">\(k\)</span> is the wave number, and <span class="math notranslate nohighlight">\(p_{F A R}\)</span> is the acoustic far-field pressure. The acoustic pressure decibel value is defined as</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}&amp;\mathrm{PORdB}=20 \log _{10}\left(\frac{p_{R M S}}{d B R e f}\right) \\
+&amp;p_{R M S}=\left(\frac{|\mathrm{POR}|}{\sqrt{2}}\right)\end{split}\]</div>
+<p>where <span class="math notranslate nohighlight">\(|\mathrm{POR}|\)</span> is the magnitude of the acoustic pressure at a point, <span class="math notranslate nohighlight">\(p_{R M S}\)</span> is the root mean square acoustic pressure, and <span class="math notranslate nohighlight">\(d B R e f\)</span> is the decibel reference value given as user input. The far-field pressure decibel value is defined in the same manner as <span class="math notranslate nohighlight">\(\operatorname{POR} d B\)</span>, using the same reference value <span class="math notranslate nohighlight">\(d B R e f)\)</span></p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>If <span class="math notranslate nohighlight">\(d B R e f=20 \mu P a\)</span> (in SI units), POR <span class="math notranslate nohighlight">\(d B\)</span> corresponds to <span class="math notranslate nohighlight">\(d B S P L\)</span></p>
+</div>
+<p>The script also calculates the far-field acoustic intensity, which is defined as</p>
+<div class="math notranslate nohighlight">
+\[\mathrm{INTEN}_{\mathrm{FAR}}=\left(\frac{p_{R M S F A R}^{2}}{\rho\times c}\right)\]</div>
+<p>where <span class="math notranslate nohighlight">\(p_{R M S F A R}\)</span> is the far-field rms pressure, <span class="math notranslate nohighlight">\(\rho\)</span> is the fluid density, and <span class="math notranslate nohighlight">\(c\)</span> is the speed of sound in the medium.</p>
+<p>Before you execute the script, you must run a direct-solution, steady-state dynamics acoustics analysis that includes three-dimensional acoustic infinite elements (ACIN3D3, ACIN3D4, ACIN3D6, and ACIN3D8). In addition, the output database must contain results for the following output variables:</p>
+<ul class="simple">
+<li><p>INFN, the acoustic infinite element normal vector.</p></li>
+<li><p>INFR, the acoustic infinite element “radius,” used in the coordinate map for these elements.</p></li>
+<li><p>PINF, the acoustic infinite element pressure coefficients.</p></li>
+</ul>
+<p>Use the following command to retrieve the script:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus fetch <span class="nv">job</span><span class="o">=</span>acousticVisualization
+</pre></div>
+</div>
+<p>Enter the Visualization module, and display the output database in the current viewport. Run the script by selecting <strong>File -&gt; Run Script</strong> from the main menu bar.</p>
+<p>The script uses getInputs to display a dialog box that prompts you for the following information:</p>
+<ul>
+<li><p>The name of the element set containing the infinite elements (the name is case sensitive). By default, the script locates all the infinite elements in the model and uses them to create the spherical surface. If the script cannot find the specified element set in the output database, it displays a list of the available element sets in the message area.</p></li>
+<li><p>The radius of the sphere (required). The script asks you to enter a new value if the sphere with this radius does not intersect any of the selected infinite elements.</p></li>
+<li><p>The coordinates of the center of the sphere. By default, the script uses (0,0,0).</p></li>
+<li><p>The analysis steps. You can enter one of the following:</p>
+<ul class="simple">
+<li><p>An Int</p></li>
+<li><p>A comma-separated list of Ints</p></li>
+<li><p>A range; for example, 1:20</p></li>
+</ul>
+<p>You can also enter a combination of Ints and ranges; for example, 4,5,10:20,30. By default, the script reads data from all the steps. The script ignores any steps that do not perform a direct-solution, steady-state dynamics acoustics analysis or that have no results.</p>
+</li>
+<li><p>The frequencies for which output should be generated (Hz). You can enter a Float, a list of Floats, or a range. By default, the script generates output for all the frequencies in the original output database.</p></li>
+<li><p>A decibel reference value (required).</p></li>
+<li><p>The name of the part instance to create (required). The script appends this name to the name of the instance containing the infinite elements being used.</p></li>
+<li><p>The speed of sound (required).</p></li>
+<li><p>The fluid density (required)</p></li>
+<li><p>Whether to write data to the original output database. By default, the script writes to an output database called <cite>current-odb-name_acvis.odb</cite>.</p></li>
+</ul>
+<p>After the <cite>getInputs</cite> method returns acceptable values, the script processes the elements in the specified element sets. The visualization sphere is then determined using the specified radius and center. For each element in the infinite element sets, the script creates a corresponding membrane element such that the new element is a projection of the old element onto the surface of the sphere. The projection uses the infinite element reference point and the internally calculated infinite direction normal (INFN) at each node of the element.</p>
+<p>Once the new display elements have been created, the script writes results at the nodes in the set. The following output results are written back to the output database:</p>
+<ul class="simple">
+<li><p>POR, the acoustic pressure.</p></li>
+<li><p>PORdB, the acoustic pressure decibel value. If the reference value used is <span class="math notranslate nohighlight">\(2\times10^{-5}\)</span> Pa, the PFARdB corresponds to dB SPL.</p></li>
+<li><p>PFAR, the acoustic far-field pressure.</p></li>
+<li><p>PFARdB, the far-field pressure decibel value.</p></li>
+<li><p>INTEN_FAR, the far-field acoustic intensity.</p></li>
+</ul>
+<p>To create the output at each node, the script first determines the point at which the node ray intersects the sphere. Using the distance from the reference point to the intersection point and the element shape functions, the required output variables are calculated at the intersection point.</p>
+<p>After the script has finished writing data, it opens the output database containing the new data. For comparison, the original instance is displayed along with the new instance, but results are available only for the new instance. However, if you chose to write the results back to the original output database, the original instance and the new instance along with the original results and the new results can be displayed side-by-side. The script displays any error, warning, or information messages in the message area.</p>
+<p>You can run the script more than once and continue writing data to the same output database. For example, you can run the script several times to look at the far-field pressures at various points in space, and results on several spheres will be written to the output database.</p>
+<p>To see how the script operates on a single triangular-element model, use the following command to retrieve the input file:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus fetch <span class="nv">job</span><span class="o">=</span>singleTriangularElementModel
+</pre></div>
+</div>
+<p>Use the following command to create the corresponding output database:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus <span class="nv">job</span><span class="o">=</span>singleTriangularElementModel
+</pre></div>
+</div>
+<p>The results from running the script twice using the single triangular-element model, changing the radius of the sphere, and writing the data back to the original output database are shown in <a class="reference internal" href="#cmd-odb-api-acousticviz"><span class="std std-numref">图 27</span></a></p>
+<figure class="align-center" id="id4">
+<span id="cmd-odb-api-acousticviz"></span><a class="reference internal image-reference" href="../../../_images/cmd-odb-api-acousticviz.png"><img alt="../../../_images/cmd-odb-api-acousticviz.png" src="../../../_images/cmd-odb-api-acousticviz.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 27 </span><span class="caption-text">Displaying the acoustic pressure on several spheres.</span><a class="headerlink" href="#id4" title="此图像的永久链接">#</a></p>
+</figcaption>
+</figure>
+<p>This model simulates the response of a sphere in “breathing” mode (a uniform radial expansion/compression mode). The model consists of one triangular ACIN3D3 element. Each node of the element is placed on a coordinate axis at a distance of <span class="math notranslate nohighlight">\(1.0\)</span> from the origin that serves as the reference point for the infinite element. The acoustic material properties do not have physical significance; the values used are for convenience only. The loading consists of applying an in-phase pressure boundary condition to all the nodes. Under this loading and geometry, the model behaves as a spherical source (an acoustic monopole) radiating in the radial direction only. The acoustic pressure, <span class="math notranslate nohighlight">\(p\)</span>, and the acoustic far-field pressure, <span class="math notranslate nohighlight">\(p_{F A R}\)</span>, at a distance <span class="math notranslate nohighlight">\(r\)</span> from the center of the sphere are</p>
+<div class="math notranslate nohighlight">
+\[p(r)=p_{0}\left(\frac{r_{0}}{r}\right) e^{-i k\left(r-r_{0}\right)}\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[p_{F A R}(r)=p_{0} r_{0} k e^{i k r_{0}}\]</div>
+<p>where <span class="math notranslate nohighlight">\(p_{0}\)</span> is the known acoustic pressure at some reference distance <span class="math notranslate nohighlight">\(r_{0}\)</span> and <span class="math notranslate nohighlight">\(k\)</span> is the wave number.</p>
+<p>For this single-element example, you should enter a value of <span class="math notranslate nohighlight">\(1.0\)</span> for the speed of sound; thus, <span class="math notranslate nohighlight">\(k=2 \pi f\)</span>, where <span class="math notranslate nohighlight">\(f\)</span> is the frequency in <span class="math notranslate nohighlight">\(\mathrm{Hz}\)</span>. <span class="math notranslate nohighlight">\(r_{0}\)</span> in this model is 1 , and <span class="math notranslate nohighlight">\(p_{0}\)</span> is <span class="math notranslate nohighlight">\(0.001\)</span>. The equations for the acoustic pressure, <span class="math notranslate nohighlight">\(p\)</span>, and the acoustic far-field pressure, <span class="math notranslate nohighlight">\(p_{F A R}\)</span>, reduce to</p>
+<div class="math notranslate nohighlight">
+\[p(r)=\frac{0.001}{r} e^{-i k(r-1)}\]</div>
+<p>and</p>
+<div class="math notranslate nohighlight">
+\[p_{F A R}(r)=0.001 k e^{i k}.\]</div>
+</section>
+<section id="an-abaqus-scripting-interface-version-of-felbow">
+<h2>An Abaqus Scripting Interface version of FELBOW<a class="headerlink" href="#an-abaqus-scripting-interface-version-of-felbow" title="此标题的永久链接">#</a></h2>
+<p>This example illustrates the use of an Abaqus Scripting Interface script to read selected element integration point records from an output database and to postprocess the elbow element results. The script creates X–Y data that can be plotted with the X–Y plotting capability in Abaqus/CAE. The script performs the same function as the Fortran program described in <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXARefMap/simaexa-c-felbow.htm?contextscope=all">Creation of a data file to facilitate the postprocessing of elbow element results: FELBOW</a>.</p>
+<p>The script reads integration point data for elbow elements from an output database to visualize one of the following:</p>
+<ol class="arabic simple">
+<li><p>Variation of an output variable around the circumference of a given elbow element, or</p></li>
+<li><p>Ovalization of a given elbow element.</p></li>
+</ol>
+<p>The script creates either an ASCII file containing <strong>X - Y</strong> data or a new output database file that can be viewed using Abaqus/CAE.</p>
+<p>To use option 2, you must ensure that the integration point coordinates (COORD) are written to the output database. For option 1 the <strong>X</strong> - data are data for the distance around the circumference of the elbow element, measured along the middle surface, and the <strong>Y</strong> - data are data for the output variable. For option 2 the <strong>X - Y</strong> data are the current coordinates of the middle-surface integration points around the circumference of the elbow element, projected to a local coordinate system in the plane of the deformed cross-section. The origin of the local system coincides with the center of the cross-section; the plane of the deformed cross-section is defined as the plane that contains the center of the cross-section.</p>
+<p>You should specify the name of the output database during program execution. The script prompts for more information, depending on the option that was chosen; this information includes the following:</p>
+<ul class="simple">
+<li><p>Your choice for storing results (ASCII file or a new output database)</p></li>
+<li><p>File name based on the above choice</p></li>
+<li><p>The postprocessing option (1 or 2)</p></li>
+<li><p>The part name</p></li>
+<li><p>The step name</p></li>
+<li><p>The frame number</p></li>
+<li><p>The element output variable (option 1 only)</p></li>
+<li><p>The component of the variable (option 1 only)</p></li>
+<li><p>The section point number (option 1 only)</p></li>
+<li><p>The element number or element set name</p></li>
+</ul>
+<p>Before executing the script, run an analysis that creates an output database file containing the appropriate output. This analysis includes, for example, output for the elements and the integration point coordinates of the elements. Execute the script using the following command:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">abaqus</span> <span class="n">python</span> <span class="n">felbow</span><span class="o">.</span><span class="n">py</span> <span class="o">&lt;</span><span class="n">filename</span><span class="o">.</span><span class="n">odb</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>The script prompts for other information, such as the desired postprocessing option, part name, etc. The script processes the data and produces a text file or a new output database that contains the information required to visualize the elbow element results.</p>
+<p><a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEEXARefMap/simaexa-c-elbowcollapse.htm?contextscope=all">Elastic-plastic collapse of a thin-walled elbow under in-plane bending and internal pressure</a> contains several figures that can be created with the aid of this program.</p>
+</section>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="improve-efficiency.html" title="上一页 页">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">上一页</p>
+          <p class="prev-next-title">Improving the efficiency of your scripts</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="../cpp.html" title="下一页 页">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">下一页</p>
+      <p class="prev-next-title">Using C++ to access an output database</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#finding-the-maximum-value-of-von-mises-stress">
+   Finding the maximum value of von Mises stress
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-an-output-database">
+   Creating an output database
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#an-abaqus-scripting-interface-version-of-fpert">
+   An Abaqus Scripting Interface version of FPERT
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#computations-with-fieldoutput-objects">
+   Computations with FieldOutput objects
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#computations-with-fieldvalue-objects">
+   Computations with FieldValue objects
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#computations-with-historyoutput-objects">
+   Computations with HistoryOutput objects
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-a-new-load-combination-from-different-load-cases">
+   Creating a new load combination from different load cases
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#stress-range-for-multiple-load-cases">
+   Stress range for multiple load cases
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#transformation-of-field-results">
+   Transformation of field results
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#viewing-the-analysis-of-a-meshed-beam-cross-section">
+   Viewing the analysis of a meshed beam cross-section
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-infinite-elements-to-compute-and-view-the-results-of-an-acoustic-far-field-analysis">
+   Using infinite elements to compute and view the results of an acoustic far-field analysis
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#an-abaqus-scripting-interface-version-of-felbow">
+   An Abaqus Scripting Interface version of FELBOW
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../../_sources/user/output/python/examples.rst.txt">
+        <i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
