@@ -12,7 +12,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    concurrency: docs
+    concurrency: 
+      group: docs
+      cancel-in-progress: false
     strategy:
       matrix:
         language: ['en', 'zh_CN']
