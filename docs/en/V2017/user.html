@@ -1,0 +1,1034 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>User’s Guide &#8212; abqpy 2017 documentation</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2017';
+        </script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="About the Abaqus Scripting Interface" href="user/about.html" />
+    <link rel="prev" title="Templates" href="templates.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2017 documentation</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="#">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2017  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="#">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2017  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="user/about.html">
+   About the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user/about/interface.html">
+     Abaqus/CAE and the Abaqus Scripting Interface
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user/about/interact.html">
+     How does the Abaqus Scripting Interface interact with Abaqus/CAE?
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="user/about/examples.html">
+     Simple examples
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/about/examples/create-part.html">
+       Creating a part
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/about/examples/read-output.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/about/examples/summary.html">
+       Summary
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="user/python.html">
+   Using the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="user/python/introduction.html">
+     Introduction to Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/introduction/python-abaqus.html">
+       Python and Abaqus
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/introduction/python-resources.html">
+       Python resources
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/introduction/python-interpreter.html">
+       Using the Python interpreter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/introduction/oop-basics.html">
+       Object-oriented basics
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/introduction/python-basics.html">
+       The basics of Python
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/introduction/programming.html">
+       Programming techniques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/introduction/further-reading.html">
+       Further reading
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="user/python/python-abaqus.html">
+     Using Python and the Abaqus Scripting Interface
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/python-abaqus/executing.html">
+       Executing scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/python-abaqus/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/python-abaqus/types.html">
+       Abaqus Scripting Interface data types
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/python-abaqus/oop.html">
+       Object-oriented programming and the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/python-abaqus/errors.html">
+       Error handling in the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/python-abaqus/extending.html">
+       Extending the Abaqus Scripting Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="user/python/use-scripts.html">
+     Using the Abaqus Scripting Interface with Abaqus/CAE
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/use-scripts/object-model.html">
+       The Abaqus object model
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/use-scripts/modify-objects.html">
+       Copying, deleting, and renaming Abaqus Scripting Interface objects
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/use-scripts/sequences.html">
+       Abaqus/CAE sequences
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/use-scripts/namespace.html">
+       Namespace
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/use-scripts/specify-viewport.html">
+       Specifying what is displayed in the viewport
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/use-scripts/specify-region.html">
+       Specifying a region
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/use-scripts/user-input.html">
+       Prompting the user for input
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/use-scripts/interact.html">
+       Interacting with Abaqus/Standard and Abaqus/Explicit
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/python/use-scripts/environment-file.html">
+       Using Abaqus Scripting Interface commands in your environment file
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="user/environment.html">
+   The Abaqus Python Development Environment
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user/environment/about.html">
+     About the Abaqus Python development environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user/environment/pde-basics.html">
+     Abaqus PDE basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user/environment/use-pde.html">
+     Using the Abaqus PDE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="user/examples.html">
+   Putting it all Together: Abaqus Scripting Interface Examples
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user/examples/cantilever.html">
+     Reproducing the cantilever beam tutorial
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user/examples/plot.html">
+     Generating a customized plot
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user/examples/sensitivity.html">
+     Investigating the skew sensitivity of shell elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="user/examples/settings.html">
+     Editing display preferences and GUI settings
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="user/output.html">
+   Accessing an Output Database
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="user/output/python.html">
+     Using the Abaqus Scripting Interface to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/python/need-what-to-understand.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/python/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/python/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/python/execute-script.html">
+       Executing a script that accesses an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/python/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/python/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/python/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/python/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/python/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/python/examples.html">
+       Example scripts that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="user/output/cpp.html">
+     Using C++ to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/cpp/about.html">
+       About the C++ interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/cpp/need-what-access.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/cpp/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/cpp/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/cpp/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/cpp/compile-link.html">
+       Compiling and linking your C++ source code
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/cpp/access.html">
+       Accessing the C++ interface from an existing application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/cpp/architecture.html">
+       The Abaqus C++ API architecture
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/cpp/utility.html">
+       Utility interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/cpp/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/cpp/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/cpp/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/cpp/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/cpp/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user/output/cpp/examples.html">
+       Example programs that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="user-s-guide">
+<h1>User’s Guide<a class="headerlink" href="#user-s-guide" title="Permalink to this heading">#</a></h1>
+<p>The Abaqus Scripting User’s Guide takes you through the process of understanding the Python programming language and the Abaqus Scripting Interface so that you can write your own programs. It also describes how you use the Abaqus Scripting Interface and the C++ application programming interface (API) to access an Abaqus output database.</p>
+<p>This guide is a part of the Abaqus® documentation collection, which describes all the capabilities of the Abaqus finite element analysis technology used in SIMULIA® applications.</p>
+<p>The guide consists of the following sections:</p>
+<ul>
+<li><p><a class="reference internal" href="user/about.html"><span class="doc">About the Abaqus Scripting Interface</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="user/about/interface.html"><span class="doc">Abaqus/CAE and the Abaqus Scripting Interface</span></a></p>
+<p>This section provides an overview of the Abaqus Scripting Interface and describes how Abaqus/CAE executes scripts.</p>
+</li>
+<li><p><a class="reference internal" href="user/about/examples.html"><span class="doc">Simple examples</span></a></p>
+<p>Two simple examples are provided to introduce you to programming with the Abaqus Scripting Interface.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="user/about/examples/create-part.html"><span class="doc">Creating a part</span></a></p></li>
+<li><p><a class="reference internal" href="user/about/examples/read-output.html"><span class="doc">Reading from an output database</span></a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="user/python.html"><span class="doc">Using the Abaqus Scripting Interface</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="user/python/introduction.html"><span class="doc">Introduction to Python</span></a></p>
+<p>This section is intended as a basic introduction to the Python programming language and is not an exhaustive description of the language. There are several books on the market that describe Python, and these books are listed as references. Additional resources, such as Python-related sites, are also listed.</p>
+</li>
+<li><p><a class="reference internal" href="user/python/python-abaqus.html"><span class="doc">Using Python and the Abaqus Scripting Interface</span></a></p>
+<p>This section describes the Abaqus Scripting Interface in more detail. The documentation style used in the command reference is explained, and important Abaqus Scripting Interface concepts such as data types and error handling are introduced.</p>
+</li>
+<li><p><a class="reference internal" href="user/python/use-scripts.html"><span class="doc">Using the Abaqus Scripting Interface with Abaqus/CAE</span></a></p>
+<p>This section describes how you use the Abaqus Scripting Interface to control Abaqus/CAE models and analysis jobs. The Abaqus object model is introduced, along with techniques for specifying a region and reading messages from an analysis product (Abaqus/Standard or Abaqus/Explicit). You can skip this section of the guide if you are not working with Abaqus/CAE.</p>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="user/environment.html"><span class="doc">The Abaqus Python Development Environment</span></a></p></li>
+<li><p><a class="reference internal" href="user/examples.html"><span class="doc">Putting it all Together: Abaqus Scripting Interface Examples</span></a></p>
+<p>This section provides a set of example scripts that lead you through the cantilever beam tutorial found in <a class="reference external" href="https://help.3ds.com/2021/english/dssimulia_established/SIMACAEGSARefMap/simagsa-m-Caebeam-sb.htm?contextscope=all#simagsa-m-Caebeam-sb">Creating and Analyzing a Simple Model in Abaqus/CAE</a>. The following section is a basic tutorial for the experienced Abaqus user. It leads you through the Abaqus/CAE modeling process by visiting each of the modules and showing you the basic steps to create and analyze a simple model.”). Additional examples are provided that read from an output database, display a contour plot, and print a contour plot from each step of the analysis. The final example illustrates how you can read from a model database created by Abaqus/CAE, parameterize the model, submit a set of analysis jobs, and generate results from the resulting output databases.</p>
+</li>
+<li><p><a class="reference internal" href="user/output.html"><span class="doc">Accessing an Output Database</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="user/output/python.html"><span class="doc">Using the Abaqus Scripting Interface to access an output database</span></a></p>
+<p>When you execute an analysis job, Abaqus/Standard and Abaqus/Explicit store the results of the analysis in an output database (.odb file) that can be viewed in the Visualization module of Abaqus/CAE or in Abaqus/Viewer. This section describes how you use the Abaqus Scripting Interface to access the data stored in an output database.</p>
+<p>You can do the following with the Abaqus Scripting Interface:</p>
+<ul class="simple">
+<li><p>Read model data describing the geometry of the parts and the assembly; for example, nodal coordinates, element connectivity, and element type and shape.</p></li>
+<li><p>Read model data describing the sections and materials and where they are used in an assembly.</p></li>
+<li><p>Read field output data from selected steps, frames, and regions.</p></li>
+<li><p>Read history output data.</p></li>
+<li><p>Operate on field output and history output data.</p></li>
+<li><p>Write model data, field output data, and history data to an existing output database or to a new output database.</p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="user/output/cpp.html"><span class="doc">Using C++ to access an output database</span></a></p>
+<p>This section describes how you use the C++ language to access an application programming interface (API) to the data stored in an output database. The functionality of the C++ API is identical to the Abaqus Scripting Interface API; however, the interactive nature of the Abaqus Scripting Interface and its integration with Abaqus/CAE makes it easier to use and program. The C++ interface is aimed at experienced C++ programmers who want to bypass the Abaqus Scripting Interface for performance considerations. The C++ API offers faster access to the output database, although this is a consideration only if you need to access large amounts of data.</p>
+</li>
+</ul>
+</li>
+</ul>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user/about.html">About the Abaqus Scripting Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user/python.html">Using the Abaqus Scripting Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user/environment.html">The Abaqus Python Development Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user/examples.html">Putting it all Together: Abaqus Scripting Interface Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user/output.html">Accessing an Output Database</a></li>
+</ul>
+</div>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="templates.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Templates</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="user/about.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">About the Abaqus Scripting Interface</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="_sources/user.rst.txt">
+        <i class="fas fa-file-alt"></i> Show Source
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
