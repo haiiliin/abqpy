@@ -29,7 +29,8 @@ jobs:
         pip install -r docs/requirements.txt
         sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html
     - run: touch docs/build/${{ matrix.language }}/html/.nojekyll
-    - id: Get lowercase of the branch name
+    - name: Get lowercase of the branch name
+      id: string
       uses: ASzc/change-string-case-action@v2
       with:
         string: ${{ github.ref_name }}
