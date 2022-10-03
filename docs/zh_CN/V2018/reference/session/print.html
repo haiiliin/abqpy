@@ -1,0 +1,2295 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Print &#8212; abqpy 2018 文档</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/session/print';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2018';
+        </script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="XY" href="xy.html" />
+    <link rel="prev" title="Plot Options" href="plot_options.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="zh-CN">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2018 文档</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2018  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2018  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Modules
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../mdb.html">
+   Abaqus Model Database
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../mdb/model.html">
+     Model
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/adaptivity.html">
+       Adaptivity
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/amplitude.html">
+       Amplitude
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/bc.html">
+       Boundary Condition
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/calibration.html">
+       Calibration of Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/constraint.html">
+       Constraint
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/field.html">
+       Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/filter.html">
+       Filter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/interaction.html">
+       Interaction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/load.html">
+       Load
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/material.html">
+       Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/mesh.html">
+       Mesh
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/optimization.html">
+       Optimization
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/output.html">
+       Output Request
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../mdb/model/part_assembly.html">
+       Part and Assembly
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part.html">
+         Part
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/assembly.html">
+         Assembly
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part_assembly/datum.html">
+         Datum
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part_assembly/engineering.html">
+         Engineering Feature
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part_assembly/feature.html">
+         Feature
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part_assembly/geometry.html">
+         Basic Geometry
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part_assembly/region.html">
+         Region
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/predefined.html">
+       Predefined Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/profile.html">
+       Beam Section Profile
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/property.html">
+       Property
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../mdb/model/section.html">
+       Section
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/section/connector.html">
+         Connector
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/sketcher.html">
+       Sketcher
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../mdb/model/step.html">
+       Step
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-5">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/step/step_miscellaneous.html">
+         Step Miscellaneous
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mdb/job.html">
+     Job
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mdb/annotation.html">
+     Annotation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mdb/edit_mesh.html">
+     Edit Mesh
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../odb.html">
+   Abaqus Output Database
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../session.html">
+   Abaqus Session
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="animation.html">
+     Animation Options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="canvas.html">
+     Canvas
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="display_options.html">
+     Display Options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="display.html">
+     Display Group
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="field_report.html">
+     FieldReport
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="odb_display.html">
+     Odb Display
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="path.html">
+     Path and Probe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="plot_options.html">
+     Plot Options
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Print
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="xy.html">
+     XY
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../kernel.html">
+   Kernel
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../kernel/cae_display_preferences.html">
+     Abaqus CAE Display Preferences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../kernel/input.html">
+     Input File Parser
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../kernel/kernel.html">
+     Custom Kernel
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../kernel/messaging.html">
+     Messaging
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../kernel/text_representation.html">
+     Text Representation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../kernel/utility.html">
+     Utility and View
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="print">
+<h1>Print<a class="headerlink" href="#print" title="此标题的永久链接">#</a></h1>
+<p>The print commands are used to print selected canvas objects to a file or to a Windows or PostScript printer and to control the format of the printed output.</p>
+<section id="object-features">
+<h2>Object features<a class="headerlink" href="#object-features" title="此标题的永久链接">#</a></h2>
+<section id="epsoptions">
+<h3>EpsOptions<a class="headerlink" href="#epsoptions" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Print.EpsOptions.EpsOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">EpsOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/EpsOptions.py#L9-L102"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.EpsOptions.EpsOptions" title="永久链接至目标">#</a></dt>
+<dd><p>The EpsOptions object stores the settings that Abaqus uses when printing using
+Encapsulated PostScript format. The EpsOptions object has no constructor. Abaqus creates
+the <strong>epsOptions</strong> member when a session is started.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">epsOptions</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-epsoptionspyc.htm?contextscope=all">EpsOptions on help.3ds.com/2018</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.EpsOptions.EpsOptions.imageSize" title="abaqus.Print.EpsOptions.EpsOptions.imageSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageSize</span></code></a></p></td>
+<td><p>The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the width and height of the image in the units specified by <strong>units</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.EpsOptions.EpsOptions.units" title="abaqus.Print.EpsOptions.EpsOptions.units"><code class="xref py py-obj docutils literal notranslate"><span class="pre">units</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the units of the <strong>imageSize</strong> argument.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.EpsOptions.EpsOptions.resolution" title="abaqus.Print.EpsOptions.EpsOptions.resolution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resolution</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the resolution of the image in dots per inch (dpi).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.EpsOptions.EpsOptions.fontType" title="abaqus.Print.EpsOptions.EpsOptions.fontType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fontType</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the PostScript font substitution rules to be applied.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.EpsOptions.EpsOptions.imageFormat" title="abaqus.Print.EpsOptions.EpsOptions.imageFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageFormat</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying how the viewport display will be represented.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.EpsOptions.EpsOptions.shadingQuality" title="abaqus.Print.EpsOptions.EpsOptions.shadingQuality"><code class="xref py py-obj docutils literal notranslate"><span class="pre">shadingQuality</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying how fine the shading of curved surfaces will be for vector images.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.EpsOptions.EpsOptions.setValues" title="abaqus.Print.EpsOptions.EpsOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*[, imageSize, units, resolution, ...])</p></td>
+<td><p>This method modifies the EpsOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_user_attributes</span></code>()</p></td>
+<td><p>Returns a list of the user attributes of the class.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.EpsOptions.EpsOptions.setValues" title="abaqus.Print.EpsOptions.EpsOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*[, imageSize, units, resolution, ...])</p></td>
+<td><p>This method modifies the EpsOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.EpsOptions.EpsOptions.fontType">
+<span class="sig-name descname"><span class="pre">fontType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PS_IF_AVAILABLE</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/EpsOptions.py#L36-L39"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.EpsOptions.EpsOptions.fontType" title="永久链接至目标">#</a></dt>
+<dd><p>A SymbolicConstant specifying the PostScript font substitution rules to be applied.
+Possible values are PS_ALWAYS, PS_IF_AVAILABLE, and AS_DISPLAYED. The default value is
+PS_IF_AVAILABLE.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.EpsOptions.EpsOptions.imageFormat">
+<span class="sig-name descname"><span class="pre">imageFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">VECTOR</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/EpsOptions.py#L41-L43"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.EpsOptions.EpsOptions.imageFormat" title="永久链接至目标">#</a></dt>
+<dd><p>A SymbolicConstant specifying how the viewport display will be represented. Possible
+values are VECTOR and RASTER. The default value is VECTOR.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.EpsOptions.EpsOptions.imageSize">
+<span class="sig-name descname"><span class="pre">imageSize</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">SIZE_ON_SCREEN</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/EpsOptions.py#L20-L24"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.EpsOptions.EpsOptions.imageSize" title="永久链接至目标">#</a></dt>
+<dd><p>The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the width and height
+of the image in the units specified by <strong>units</strong>. Possible numeric values are <strong>imageSize</strong>
+≥ (<em>minWidth</em>, <strong>minHeight</strong>). The default value is SIZE_ON_SCREEN.Note:The minimum value
+of width and height (<em>minWidth</em> and <strong>minHeight</strong>) is 10 mm (approximately 0.4 inches).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.EpsOptions.EpsOptions.resolution">
+<span class="sig-name descname"><span class="pre">resolution</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">DPI_150</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/EpsOptions.py#L31-L34"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.EpsOptions.EpsOptions.resolution" title="永久链接至目标">#</a></dt>
+<dd><p>A SymbolicConstant specifying the resolution of the image in dots per inch (dpi). The
+<strong>resolution</strong> can be DPI_1200 only if <strong>imageFormat</strong> = VECTOR. Possible values are DPI_75,
+DPI_150, DPI_300, DPI_450, DPI_600, and DPI_1200. The default value is DPI_150.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Print.EpsOptions.EpsOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SIZE_ON_SCREEN</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.INCHES</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DPI_150</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fontType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PS_IF_AVAILABLE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.VECTOR</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shadingQuality</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.MEDIUM</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/EpsOptions.py#L50-L102"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.EpsOptions.EpsOptions.setValues" title="永久链接至目标">#</a></dt>
+<dd><p>This method modifies the EpsOptions object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-epsoptionspyc.htm?contextscope=all#simaker-epsoptionssetvaluespyc">EpsOptions.setValues on help.3ds.com/2018</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>imageSize</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">SIZE_ON_SCREEN</span></code>) – The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the width and height
+of the image in the units specified by <strong>units</strong>. Possible numeric values are <strong>imageSize</strong>
+≥ (<em>minWidth</em>, <strong>minHeight</strong>). The default value is SIZE_ON_SCREEN.Note:The minimum value
+of width and height (<em>minWidth</em> and <strong>minHeight</strong>) is 10 mm (approximately 0.4 inches).</p></li>
+<li><p><strong>units</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">INCHES</span></code>) – A SymbolicConstant specifying the units of the <strong>imageSize</strong> argument. This argument is
+ignored if <strong>imageSize</strong> is SIZE_ON_SCREEN. Possible values are INCHES and MM. The default
+value is INCHES.</p></li>
+<li><p><strong>resolution</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">DPI_150</span></code>) – A SymbolicConstant specifying the resolution of the image in dots per inch (dpi). The
+<strong>resolution</strong> can be DPI_1200 only if <strong>imageFormat</strong> = VECTOR. Possible values are DPI_75,
+DPI_150, DPI_300, DPI_450, DPI_600, and DPI_1200. The default value is DPI_150.</p></li>
+<li><p><strong>fontType</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">PS_IF_AVAILABLE</span></code>) – A SymbolicConstant specifying the PostScript font substitution rules to be applied.
+Possible values are PS_ALWAYS, PS_IF_AVAILABLE, and AS_DISPLAYED. The default value is
+PS_IF_AVAILABLE.</p></li>
+<li><p><strong>imageFormat</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">VECTOR</span></code>) – A SymbolicConstant specifying how the viewport display will be represented. Possible
+values are VECTOR and RASTER. The default value is VECTOR.</p></li>
+<li><p><strong>shadingQuality</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">MEDIUM</span></code>) – A SymbolicConstant specifying how fine the shading of curved surfaces will be for vector
+images. Possible values are EXTRA COARSE, COARSE, MEDIUM, FINE, and EXTRA FINE. The
+default value is MEDIUM.</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>RangeError</strong> – If either element of <strong>imageSize</strong> is out of range.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.EpsOptions.EpsOptions.shadingQuality">
+<span class="sig-name descname"><span class="pre">shadingQuality</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">MEDIUM</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/EpsOptions.py#L45-L48"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.EpsOptions.EpsOptions.shadingQuality" title="永久链接至目标">#</a></dt>
+<dd><p>A SymbolicConstant specifying how fine the shading of curved surfaces will be for vector
+images. Possible values are EXTRA COARSE, COARSE, MEDIUM, FINE, and EXTRA FINE. The default
+value is MEDIUM.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.EpsOptions.EpsOptions.units">
+<span class="sig-name descname"><span class="pre">units</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">INCHES</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/EpsOptions.py#L26-L29"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.EpsOptions.EpsOptions.units" title="永久链接至目标">#</a></dt>
+<dd><p>A SymbolicConstant specifying the units of the <strong>imageSize</strong> argument. This argument is
+ignored if <strong>imageSize</strong> is SIZE_ON_SCREEN. Possible values are INCHES and MM. The default
+value is INCHES.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="pagesetupoptions">
+<h3>PageSetupOptions<a class="headerlink" href="#pagesetupoptions" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Print.PageSetupOptions.PageSetupOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PageSetupOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PageSetupOptions.py#L9-L133"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PageSetupOptions.PageSetupOptions" title="永久链接至目标">#</a></dt>
+<dd><p>The PageSetupOptions object stores the settings that Abaqus uses when printing using a
+Windows printer. The PageSetupOptions object has no constructor. Abaqus creates the
+<strong>pageSetupOptions</strong> member when a session is started.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">pageSetupOptions</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pagesetupoptionspyc.htm?contextscope=all">PageSetupOptions on help.3ds.com/2018</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.imageSize" title="abaqus.Print.PageSetupOptions.PageSetupOptions.imageSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageSize</span></code></a></p></td>
+<td><p>The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the width and height of the image in the units specified by <strong>units</strong>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.units" title="abaqus.Print.PageSetupOptions.PageSetupOptions.units"><code class="xref py py-obj docutils literal notranslate"><span class="pre">units</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the units to use for the margins and image size.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.quality" title="abaqus.Print.PageSetupOptions.PageSetupOptions.quality"><code class="xref py py-obj docutils literal notranslate"><span class="pre">quality</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the quality of the image.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.topMargin" title="abaqus.Print.PageSetupOptions.PageSetupOptions.topMargin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">topMargin</span></code></a></p></td>
+<td><p>A Float specifying the top margin of the paper in the currently selected units (inches or millimeters).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.bottomMargin" title="abaqus.Print.PageSetupOptions.PageSetupOptions.bottomMargin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bottomMargin</span></code></a></p></td>
+<td><p>A Float specifying the bottom margin of the paper in the currently selected units (inches or millimeters).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.leftMargin" title="abaqus.Print.PageSetupOptions.PageSetupOptions.leftMargin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leftMargin</span></code></a></p></td>
+<td><p>A Float specifying the left margin of the paper in the currently selected units (inches or millimeters).</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.rightMargin" title="abaqus.Print.PageSetupOptions.PageSetupOptions.rightMargin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rightMargin</span></code></a></p></td>
+<td><p>A Float specifying the right margin of the paper in the currently selected units (inches or millimeters).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.orientation" title="abaqus.Print.PageSetupOptions.PageSetupOptions.orientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the orientation of the image.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.logo" title="abaqus.Print.PageSetupOptions.PageSetupOptions.logo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">logo</span></code></a></p></td>
+<td><p>A Boolean specifying whether the output includes the Abaqus logo.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.date" title="abaqus.Print.PageSetupOptions.PageSetupOptions.date"><code class="xref py py-obj docutils literal notranslate"><span class="pre">date</span></code></a></p></td>
+<td><p>A Boolean specifying whether the output includes the date.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.setValues" title="abaqus.Print.PageSetupOptions.PageSetupOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*[, imageSize, units, quality, ...])</p></td>
+<td><p>This method modifies the PageSetupOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_user_attributes</span></code>()</p></td>
+<td><p>Returns a list of the user attributes of the class.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.setValues" title="abaqus.Print.PageSetupOptions.PageSetupOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*[, imageSize, units, quality, ...])</p></td>
+<td><p>This method modifies the PageSetupOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PageSetupOptions.PageSetupOptions.bottomMargin">
+<span class="sig-name descname"><span class="pre">bottomMargin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PageSetupOptions.py#L38-L40"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.bottomMargin" title="永久链接至目标">#</a></dt>
+<dd><p>A Float specifying the bottom margin of the paper in the currently selected units (inches
+or millimeters). Possible values are <strong>bottomMargin</strong> ≥ 0. The default value is 0.5.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PageSetupOptions.PageSetupOptions.date">
+<span class="sig-name descname"><span class="pre">date</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><span class="pre">AbaqusBoolean</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">ON</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PageSetupOptions.py#L57-L58"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.date" title="永久链接至目标">#</a></dt>
+<dd><p>A Boolean specifying whether the output includes the date. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PageSetupOptions.PageSetupOptions.imageSize">
+<span class="sig-name descname"><span class="pre">imageSize</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">FIT_TO_PAGE</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PageSetupOptions.py#L20-L24"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.imageSize" title="永久链接至目标">#</a></dt>
+<dd><p>The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the width and height
+of the image in the units specified by <strong>units</strong>. Possible numeric values are <strong>imageSize</strong>
+≥ (<em>minWidth</em>, <strong>minHeight</strong>). The default value is SIZE_ON_SCREEN.Note:The minimum value
+of width and height (<em>minWidth</em> and <strong>minHeight</strong>) is 10 mm (approximately 0.4 inches).</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PageSetupOptions.PageSetupOptions.leftMargin">
+<span class="sig-name descname"><span class="pre">leftMargin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PageSetupOptions.py#L42-L44"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.leftMargin" title="永久链接至目标">#</a></dt>
+<dd><p>A Float specifying the left margin of the paper in the currently selected units (inches or
+millimeters). Possible values are <strong>leftMargin</strong> ≥ 0. The default value is 0.5.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PageSetupOptions.PageSetupOptions.logo">
+<span class="sig-name descname"><span class="pre">logo</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><span class="pre">AbaqusBoolean</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">ON</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PageSetupOptions.py#L54-L55"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.logo" title="永久链接至目标">#</a></dt>
+<dd><p>A Boolean specifying whether the output includes the Abaqus logo. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PageSetupOptions.PageSetupOptions.orientation">
+<span class="sig-name descname"><span class="pre">orientation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PORTRAIT</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PageSetupOptions.py#L50-L52"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.orientation" title="永久链接至目标">#</a></dt>
+<dd><p>A SymbolicConstant specifying the orientation of the image. Possible values are PORTRAIT
+and LANDSCAPE. The default value is PORTRAIT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PageSetupOptions.PageSetupOptions.quality">
+<span class="sig-name descname"><span class="pre">quality</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">MEDIUM</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PageSetupOptions.py#L30-L32"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.quality" title="永久链接至目标">#</a></dt>
+<dd><p>A SymbolicConstant specifying the quality of the image. Possible values are COARSE, MEDIUM,
+and FINE. The default value is MEDIUM.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PageSetupOptions.PageSetupOptions.rightMargin">
+<span class="sig-name descname"><span class="pre">rightMargin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PageSetupOptions.py#L46-L48"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.rightMargin" title="永久链接至目标">#</a></dt>
+<dd><p>A Float specifying the right margin of the paper in the currently selected units (inches
+or millimeters). Possible values are <strong>rightMargin</strong> ≥ 0. The default value is 0.5.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Print.PageSetupOptions.PageSetupOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.FIT_TO_PAGE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.INCHES</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quality</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.MEDIUM</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topMargin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bottomMargin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leftMargin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rightMargin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PORTRAIT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PageSetupOptions.py#L60-L133"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.setValues" title="永久链接至目标">#</a></dt>
+<dd><p>This method modifies the PageSetupOptions object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pagesetupoptionspyc.htm?contextscope=all#simaker-pagesetupoptionssetvaluespyc">PageSetupOptions.setValues on help.3ds.com/2018</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>imageSize</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">FIT_TO_PAGE</span></code>) – A SymbolicConstant or a pair of Floats specifying the size of the printed image in the
+currently selected units (inches or millimeters). Possible values are FIT_TO_PAGE and
+SIZE_ON_SCREEN. The default value is FIT_TO_PAGE.Note:The minimum value of width and
+height (<em>minWidth</em> and <strong>minHeight</strong>) is 10 mm (approximately 0.4 inches).</p></li>
+<li><p><strong>units</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">INCHES</span></code>) – A SymbolicConstant specifying the units to use for the margins and image size. Possible
+values are INCHES and MM. The default value is INCHES.</p></li>
+<li><p><strong>quality</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">MEDIUM</span></code>) – A SymbolicConstant specifying the quality of the image. Possible values are COARSE,
+MEDIUM, and FINE. The default value is MEDIUM.</p></li>
+<li><p><strong>topMargin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0.5</span></code>) – A Float specifying the top margin of the paper in the currently selected units (inches
+or millimeters). Possible values are <strong>topMargin</strong> ≥ 0. The default value is 0.5.</p></li>
+<li><p><strong>bottomMargin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0.5</span></code>) – A Float specifying the bottom margin of the paper in the currently selected units
+(inches or millimeters). Possible values are <strong>bottomMargin</strong> ≥ 0. The default value is
+0.5.</p></li>
+<li><p><strong>leftMargin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0.5</span></code>) – A Float specifying the left margin of the paper in the currently selected units (inches
+or millimeters). Possible values are <strong>leftMargin</strong> ≥ 0. The default value is 0.5.</p></li>
+<li><p><strong>rightMargin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0.5</span></code>) – A Float specifying the right margin of the paper in the currently selected units (inches
+or millimeters). Possible values are <strong>rightMargin</strong> ≥ 0. The default value is 0.5.</p></li>
+<li><p><strong>orientation</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">PORTRAIT</span></code>) – A SymbolicConstant specifying the orientation of the image. Possible values are PORTRAIT
+and LANDSCAPE. The default value is PORTRAIT.</p></li>
+<li><p><strong>logo</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) – A Boolean specifying whether the output includes the Abaqus logo. The default value is
+ON.</p></li>
+<li><p><strong>date</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) – A Boolean specifying whether the output includes the date. The default value is ON.</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>RangeError</strong> – Note: The minimum value of width and height (<em>minWidth</em> and <strong>minHeight</strong>) is 10 mm
+    (approximately 0.4 inches).</p></li>
+<li><p><strong>RangeError</strong> – If <strong>leftMargin</strong> + <strong>rightMargin</strong> is out of range.</p></li>
+<li><p><strong>RangeError</strong> – If <strong>topMargin</strong> + <strong>bottomMargin</strong> is out of range.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PageSetupOptions.PageSetupOptions.topMargin">
+<span class="sig-name descname"><span class="pre">topMargin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PageSetupOptions.py#L34-L36"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.topMargin" title="永久链接至目标">#</a></dt>
+<dd><p>A Float specifying the top margin of the paper in the currently selected units (inches or
+millimeters). Possible values are <strong>topMargin</strong> ≥ 0. The default value is 0.5.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PageSetupOptions.PageSetupOptions.units">
+<span class="sig-name descname"><span class="pre">units</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">INCHES</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PageSetupOptions.py#L26-L28"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.units" title="永久链接至目标">#</a></dt>
+<dd><p>A SymbolicConstant specifying the units to use for the margins and image size. Possible
+values are INCHES and MM. The default value is INCHES.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="pngoptions">
+<h3>PngOptions<a class="headerlink" href="#pngoptions" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Print.PngOptions.PngOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PngOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PngOptions.py#L6-L50"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PngOptions.PngOptions" title="永久链接至目标">#</a></dt>
+<dd><p>The PngOptions object stores the settings that Abaqus uses when printing in PNG format.
+The PngOptions object has no constructor. Abaqus creates the <strong>pngOptions</strong> member when a
+session is started.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all">PngOptions on help.3ds.com/2018</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PngOptions.PngOptions.imageSize" title="abaqus.Print.PngOptions.PngOptions.imageSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageSize</span></code></a></p></td>
+<td><p>The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of the image in pixels.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PngOptions.PngOptions.setValues" title="abaqus.Print.PngOptions.PngOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*[, imageSize])</p></td>
+<td><p>This method modifies the PngOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_user_attributes</span></code>()</p></td>
+<td><p>Returns a list of the user attributes of the class.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PngOptions.PngOptions.setValues" title="abaqus.Print.PngOptions.PngOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*[, imageSize])</p></td>
+<td><p>This method modifies the PngOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PngOptions.PngOptions.imageSize">
+<span class="sig-name descname"><span class="pre">imageSize</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">SIZE_ON_SCREEN</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PngOptions.py#L13-L22"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PngOptions.PngOptions.imageSize" title="永久链接至目标">#</a></dt>
+<dd><p>The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of
+the image in pixels. Possible values are (<strong>minWidth</strong>, <strong>minHeight</strong>) ≤ <strong>imageSize</strong> ≤
+(<strong>maxWidth</strong> and <strong>maxHeight</strong>). The default value is SIZE_ON_SCREEN.
+Note: The minimum value of width and height (<strong>minWidth</strong> and <strong>minHeight</strong>) is the number
+of pixels that occupy 10 mm at the current screen resolution. The value is typically
+around 50pixels and may be different for width and height.
+The maximum value of width and height (<strong>maxWidth</strong> and <strong>maxHeight</strong>) is the largest
+number of pixels supported by the system graphics and will be at least as large as the
+screen dimensions.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Print.PngOptions.PngOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SIZE_ON_SCREEN</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PngOptions.py#L24-L50"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PngOptions.PngOptions.setValues" title="永久链接至目标">#</a></dt>
+<dd><p>This method modifies the PngOptions object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pngoptionspyc.htm?contextscope=all#simaker-pngoptionssetvaluespyc">PngOptions.setValues on help.3ds.com/2018</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>imageSize</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">SIZE_ON_SCREEN</span></code>) – The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of
+the image in pixels. Possible values are (<strong>minWidth</strong>, <strong>minHeight</strong>) ≤ <strong>imageSize</strong> ≤
+(<strong>maxWidth</strong> and <strong>maxHeight</strong>). The default value is SIZE_ON_SCREEN.
+Note: The minimum value of width and height (<strong>minWidth</strong> and <strong>minHeight</strong>) is the number
+of pixels that occupy 10 mm at the current screen resolution. The value is typically
+around 50 pixels and may be different for width and height.
+The maximum value of width and height (<strong>maxWidth</strong> and <strong>maxHeight</strong>) is the largest
+number of pixels supported by the system graphics and will be at least as large as the
+screen dimensions.</p>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>RangeError</strong> – </p>
+</dd>
+</dl>
+<p>:raises (minWidth`, <code class="xref py py-class docutils literal notranslate"><span class="pre">minHeight)</span> <span class="pre">&lt;=</span> <span class="pre">(width</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">height)</span> <span class="pre">&lt;=</span> <span class="pre">(maxWidth</span></code>, :class:<a href="#id1"><span class="problematic" id="id2">`</span></a>maxHeight): If either the width or height arguments of <strong>imageSize</strong> are out of range (where
+    <strong>minWidth</strong> and <strong>minHeight</strong> are the number of pixels corresponding to approximately 10 mm
+    for a given display and <strong>maxWidth</strong> and <strong>maxHeight</strong> are the largest allowable number of
+    pixels supported by the system graphics).</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="printoptions">
+<h3>PrintOptions<a class="headerlink" href="#printoptions" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Print.PrintOptions.PrintOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PrintOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PrintOptions.py#L6-L94"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PrintOptions.PrintOptions" title="永久链接至目标">#</a></dt>
+<dd><p>The PrintOptions object stores the common settings that Abaqus uses for all print
+methods. The PrintOptions object has no constructor. Abaqus creates the <strong>printOptions</strong>
+member when a session is started.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">printOptions</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-printoptionspyc.htm?contextscope=all">PrintOptions on help.3ds.com/2018</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PrintOptions.PrintOptions.rendition" title="abaqus.Print.PrintOptions.PrintOptions.rendition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rendition</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying how the image is rendered.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PrintOptions.PrintOptions.vpDecorations" title="abaqus.Print.PrintOptions.PrintOptions.vpDecorations"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vpDecorations</span></code></a></p></td>
+<td><p>A Boolean specifying whether the output includes the viewport border and title.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PrintOptions.PrintOptions.vpBackground" title="abaqus.Print.PrintOptions.PrintOptions.vpBackground"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vpBackground</span></code></a></p></td>
+<td><p>A Boolean specifying whether the output includes viewport backgrounds.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PrintOptions.PrintOptions.compass" title="abaqus.Print.PrintOptions.PrintOptions.compass"><code class="xref py py-obj docutils literal notranslate"><span class="pre">compass</span></code></a></p></td>
+<td><p>A Boolean specifying whether the output includes the view compass.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PrintOptions.PrintOptions.printCommand" title="abaqus.Print.PrintOptions.PrintOptions.printCommand"><code class="xref py py-obj docutils literal notranslate"><span class="pre">printCommand</span></code></a></p></td>
+<td><p>A String specifying the default print command that will be used by the printToPrinter method if no <strong>printCommand</strong> argument is provided.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PrintOptions.PrintOptions.deleteTemporaryFiles" title="abaqus.Print.PrintOptions.PrintOptions.deleteTemporaryFiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteTemporaryFiles</span></code></a></p></td>
+<td><p>A Boolean specifying whether to delete the temporary files created when an image is printed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PrintOptions.PrintOptions.reduceColors" title="abaqus.Print.PrintOptions.PrintOptions.reduceColors"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reduceColors</span></code></a></p></td>
+<td><p>A Boolean specifying whether the raster image printed is reduced from true color to 256 colors to reduce file size.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PrintOptions.PrintOptions.setValues" title="abaqus.Print.PrintOptions.PrintOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*[, rendition, vpDecorations, ...])</p></td>
+<td><p>This method modifies the PrintOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_user_attributes</span></code>()</p></td>
+<td><p>Returns a list of the user attributes of the class.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PrintOptions.PrintOptions.setValues" title="abaqus.Print.PrintOptions.PrintOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*[, rendition, vpDecorations, ...])</p></td>
+<td><p>This method modifies the PrintOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PrintOptions.PrintOptions.compass">
+<span class="sig-name descname"><span class="pre">compass</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><span class="pre">AbaqusBoolean</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">OFF</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PrintOptions.py#L30-L31"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PrintOptions.PrintOptions.compass" title="永久链接至目标">#</a></dt>
+<dd><p>A Boolean specifying whether the output includes the view compass. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PrintOptions.PrintOptions.deleteTemporaryFiles">
+<span class="sig-name descname"><span class="pre">deleteTemporaryFiles</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><span class="pre">AbaqusBoolean</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">ON</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PrintOptions.py#L37-L40"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PrintOptions.PrintOptions.deleteTemporaryFiles" title="永久链接至目标">#</a></dt>
+<dd><p>A Boolean specifying whether to delete the temporary files created when an image is printed.
+The default value is ON. You should set the <strong>deleteTemporaryFiles</strong> argument to False if your
+printer does not support print spooling.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PrintOptions.PrintOptions.printCommand">
+<span class="sig-name descname"><span class="pre">printCommand</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'lpr'</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PrintOptions.py#L33-L35"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PrintOptions.PrintOptions.printCommand" title="永久链接至目标">#</a></dt>
+<dd><p>A String specifying the default print command that will be used by the printToPrinter method
+if no <strong>printCommand</strong> argument is provided. The default value is “lpr”.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PrintOptions.PrintOptions.reduceColors">
+<span class="sig-name descname"><span class="pre">reduceColors</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><span class="pre">AbaqusBoolean</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">OFF</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PrintOptions.py#L42-L44"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PrintOptions.PrintOptions.reduceColors" title="永久链接至目标">#</a></dt>
+<dd><p>A Boolean specifying whether the raster image printed is reduced from true color to 256 colors
+to reduce file size. The quality of the image will be compromised. The default value is OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PrintOptions.PrintOptions.rendition">
+<span class="sig-name descname"><span class="pre">rendition</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">COLOR</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PrintOptions.py#L18-L20"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PrintOptions.PrintOptions.rendition" title="永久链接至目标">#</a></dt>
+<dd><p>A SymbolicConstant specifying how the image is rendered. Possible values are
+BLACK_AND_WHITE, GREYSCALE, and COLOR. The default value is COLOR.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Print.PrintOptions.PrintOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rendition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.COLOR</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vpDecorations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vpBackground</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">printCommand</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lpr'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">deleteTemporaryFiles</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduceColors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PrintOptions.py#L46-L94"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PrintOptions.PrintOptions.setValues" title="永久链接至目标">#</a></dt>
+<dd><p>This method modifies the PrintOptions object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-printoptionspyc.htm?contextscope=all#simaker-printoptionssetvaluespyc">PrintOptions.setValues on help.3ds.com/2018</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rendition</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">COLOR</span></code>) – A SymbolicConstant specifying how the image is rendered. Possible values are
+BLACK_AND_WHITE, GREYSCALE, and COLOR. The default value is COLOR.</p></li>
+<li><p><strong>vpDecorations</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) – A Boolean specifying whether the output includes the viewport border and title. The
+default value is ON.</p></li>
+<li><p><strong>vpBackground</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) – A Boolean specifying whether the output includes viewport backgrounds. The default value
+is OFF.</p></li>
+<li><p><strong>compass</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) – A Boolean specifying whether the output includes the view compass The default value is
+OFF.</p></li>
+<li><p><strong>printCommand</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">'lpr'</span></code>) – A String specifying the default print command that will be used by the printToPrinter
+method if no <strong>printCommand</strong> argument is provided. The default value is “lpr”.</p></li>
+<li><p><strong>deleteTemporaryFiles</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) – A Boolean specifying whether to delete the temporary files created when an image is
+printed. The default value is ON. You should set the <strong>deleteTemporaryFiles</strong> argument to
+False if your printer does not support print spooling.</p></li>
+<li><p><strong>reduceColors</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">OFF</span></code>) – A Boolean specifying whether the raster image printed is reduced from true color to 256
+colors to reduce file size. The quality of the image will be compromised. The default
+value is OFF.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PrintOptions.PrintOptions.vpBackground">
+<span class="sig-name descname"><span class="pre">vpBackground</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><span class="pre">AbaqusBoolean</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">OFF</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PrintOptions.py#L26-L28"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PrintOptions.PrintOptions.vpBackground" title="永久链接至目标">#</a></dt>
+<dd><p>A Boolean specifying whether the output includes viewport backgrounds. The default value is
+OFF.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PrintOptions.PrintOptions.vpDecorations">
+<span class="sig-name descname"><span class="pre">vpDecorations</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><span class="pre">AbaqusBoolean</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">ON</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PrintOptions.py#L22-L24"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PrintOptions.PrintOptions.vpDecorations" title="永久链接至目标">#</a></dt>
+<dd><p>A Boolean specifying whether the output includes the viewport border and title. The
+default value is ON.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="psoptions">
+<h3>PsOptions<a class="headerlink" href="#psoptions" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Print.PsOptions.PsOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PsOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PsOptions.py#L7-L162"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PsOptions.PsOptions" title="永久链接至目标">#</a></dt>
+<dd><p>The PsOptions object stores the settings that Abaqus uses when printing using PostScript
+format. The PsOptions object has no constructor. Abaqus creates the <strong>psOptions</strong> member
+when a session is started.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">psOptions</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all">PsOptions on help.3ds.com/2018</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PsOptions.PsOptions.paperSize" title="abaqus.Print.PsOptions.PsOptions.paperSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">paperSize</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the paper size.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PsOptions.PsOptions.topMargin" title="abaqus.Print.PsOptions.PsOptions.topMargin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">topMargin</span></code></a></p></td>
+<td><p>A Float specifying the top margin of the paper in inches.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PsOptions.PsOptions.bottomMargin" title="abaqus.Print.PsOptions.PsOptions.bottomMargin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bottomMargin</span></code></a></p></td>
+<td><p>A Float specifying the bottom margin of the paper in inches.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PsOptions.PsOptions.leftMargin" title="abaqus.Print.PsOptions.PsOptions.leftMargin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">leftMargin</span></code></a></p></td>
+<td><p>A Float specifying the left margin of the paper in inches.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PsOptions.PsOptions.rightMargin" title="abaqus.Print.PsOptions.PsOptions.rightMargin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rightMargin</span></code></a></p></td>
+<td><p>A Float specifying the right margin of the paper in inches.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PsOptions.PsOptions.orientation" title="abaqus.Print.PsOptions.PsOptions.orientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orientation</span></code></a></p></td>
+<td><p>A SymbolicConstant specifying the orientation of the image.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PsOptions.PsOptions.logo" title="abaqus.Print.PsOptions.PsOptions.logo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">logo</span></code></a></p></td>
+<td><p>A Boolean specifying whether the output includes the Abaqus logo.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PsOptions.PsOptions.date" title="abaqus.Print.PsOptions.PsOptions.date"><code class="xref py py-obj docutils literal notranslate"><span class="pre">date</span></code></a></p></td>
+<td><p>A Boolean specifying whether the output includes the date.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PsOptions.PsOptions.resolution" title="abaqus.Print.PsOptions.PsOptions.resolution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resolution</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PsOptions.PsOptions.fontType" title="abaqus.Print.PsOptions.PsOptions.fontType"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fontType</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PsOptions.PsOptions.imageFormat" title="abaqus.Print.PsOptions.PsOptions.imageFormat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageFormat</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PsOptions.PsOptions.shadingQuality" title="abaqus.Print.PsOptions.PsOptions.shadingQuality"><code class="xref py py-obj docutils literal notranslate"><span class="pre">shadingQuality</span></code></a></p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.PsOptions.PsOptions.setValues" title="abaqus.Print.PsOptions.PsOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*[, paperSize, topMargin, ...])</p></td>
+<td><p>This method modifies the PsOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_user_attributes</span></code>()</p></td>
+<td><p>Returns a list of the user attributes of the class.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.PsOptions.PsOptions.setValues" title="abaqus.Print.PsOptions.PsOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*[, paperSize, topMargin, ...])</p></td>
+<td><p>This method modifies the PsOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PsOptions.PsOptions.bottomMargin">
+<span class="sig-name descname"><span class="pre">bottomMargin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PsOptions.py#L37-L39"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PsOptions.PsOptions.bottomMargin" title="永久链接至目标">#</a></dt>
+<dd><p>A Float specifying the bottom margin of the paper in inches. Possible values are
+<strong>bottomMargin</strong> ≥ 0. The default value is 0.5.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PsOptions.PsOptions.date">
+<span class="sig-name descname"><span class="pre">date</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><span class="pre">AbaqusBoolean</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">ON</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PsOptions.py#L57-L58"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PsOptions.PsOptions.date" title="永久链接至目标">#</a></dt>
+<dd><p>A Boolean specifying whether the output includes the date. The default value is ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PsOptions.PsOptions.fontType">
+<span class="sig-name descname"><span class="pre">fontType</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PS_IF_AVAILABLE</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PsOptions.py#L62-L62"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PsOptions.PsOptions.fontType" title="永久链接至目标">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PsOptions.PsOptions.imageFormat">
+<span class="sig-name descname"><span class="pre">imageFormat</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">VECTOR</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PsOptions.py#L64-L64"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PsOptions.PsOptions.imageFormat" title="永久链接至目标">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PsOptions.PsOptions.leftMargin">
+<span class="sig-name descname"><span class="pre">leftMargin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PsOptions.py#L41-L43"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PsOptions.PsOptions.leftMargin" title="永久链接至目标">#</a></dt>
+<dd><p>A Float specifying the left margin of the paper in inches. Possible values are
+<strong>leftMargin</strong> ≥ 0. The default value is 0.5.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PsOptions.PsOptions.logo">
+<span class="sig-name descname"><span class="pre">logo</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><span class="pre">AbaqusBoolean</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">ON</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PsOptions.py#L53-L55"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PsOptions.PsOptions.logo" title="永久链接至目标">#</a></dt>
+<dd><p>A Boolean specifying whether the output includes the Abaqus logo. The default value is
+ON.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PsOptions.PsOptions.orientation">
+<span class="sig-name descname"><span class="pre">orientation</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">PORTRAIT</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PsOptions.py#L49-L51"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PsOptions.PsOptions.orientation" title="永久链接至目标">#</a></dt>
+<dd><p>A SymbolicConstant specifying the orientation of the image. Possible values are PORTRAIT
+and LANDSCAPE. The default value is PORTRAIT.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PsOptions.PsOptions.paperSize">
+<span class="sig-name descname"><span class="pre">paperSize</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">LETTER</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PsOptions.py#L30-L31"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PsOptions.PsOptions.paperSize" title="永久链接至目标">#</a></dt>
+<dd><p>A SymbolicConstant specifying the paper size. Possible values are:</p>
+<ul class="simple">
+<li><p>LETTER</p></li>
+<li><p>LEGAL</p></li>
+<li><p>LEDGER</p></li>
+<li><p>A0</p></li>
+<li><p>A1</p></li>
+<li><p>A2</p></li>
+<li><p>A3</p></li>
+<li><p>A4</p></li>
+<li><p>A5</p></li>
+</ul>
+<p>The default value is LETTER.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PsOptions.PsOptions.resolution">
+<span class="sig-name descname"><span class="pre">resolution</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">DPI_150</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PsOptions.py#L60-L60"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PsOptions.PsOptions.resolution" title="永久链接至目标">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PsOptions.PsOptions.rightMargin">
+<span class="sig-name descname"><span class="pre">rightMargin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PsOptions.py#L45-L47"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PsOptions.PsOptions.rightMargin" title="永久链接至目标">#</a></dt>
+<dd><p>A Float specifying the right margin of the paper in inches. Possible values are
+<strong>rightMargin</strong> ≥ 0. The default value is 0.5.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Print.PsOptions.PsOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paperSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.LETTER</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topMargin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bottomMargin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leftMargin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rightMargin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orientation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PORTRAIT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.DPI_150</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fontType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.PS_IF_AVAILABLE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageFormat</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.VECTOR</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shadingQuality</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.MEDIUM</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PsOptions.py#L68-L162"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PsOptions.PsOptions.setValues" title="永久链接至目标">#</a></dt>
+<dd><p>This method modifies the PsOptions object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psoptionspyc.htm?contextscope=all#simaker-psoptionssetvaluespyc">PsOptions.setValues on help.3ds.com/2018</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>paperSize</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">LETTER</span></code>) – <p>A SymbolicConstant specifying the paper size. Possible values are:</p>
+<ul>
+<li><p>LETTER</p></li>
+<li><p>LEGAL</p></li>
+<li><p>LEDGER</p></li>
+<li><p>A0</p></li>
+<li><p>A1</p></li>
+<li><p>A2</p></li>
+<li><p>A3</p></li>
+<li><p>A4</p></li>
+<li><p>A5</p></li>
+</ul>
+<p>The default value is LETTER.</p>
+</p></li>
+<li><p><strong>topMargin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0.5</span></code>) – A Float specifying the top margin of the paper in inches. Possible values are
+<strong>topMargin</strong> ≥ 0. The default value is 0.5.</p></li>
+<li><p><strong>bottomMargin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0.5</span></code>) – A Float specifying the bottom margin of the paper in inches. Possible values are
+<strong>bottomMargin</strong> ≥ 0. The default value is 0.5.</p></li>
+<li><p><strong>leftMargin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0.5</span></code>) – A Float specifying the left margin of the paper in inches. Possible values are
+<strong>leftMargin</strong> ≥ 0. The default value is 0.5.</p></li>
+<li><p><strong>rightMargin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">0.5</span></code>) – A Float specifying the right margin of the paper in inches. Possible values are
+<strong>rightMargin</strong> ≥ 0. The default value is 0.5.</p></li>
+<li><p><strong>orientation</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">PORTRAIT</span></code>) – A SymbolicConstant specifying the orientation of the image. Possible values are PORTRAIT
+and LANDSCAPE. The default value is PORTRAIT.</p></li>
+<li><p><strong>logo</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) – A Boolean specifying whether the output includes the Abaqus logo. The default value is
+ON.</p></li>
+<li><p><strong>date</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><code class="xref py py-class docutils literal notranslate"><span class="pre">AbaqusBoolean</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">ON</span></code>) – A Boolean specifying whether the output includes the date. The default value is ON.</p></li>
+<li><p><strong>resolution</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">DPI_150</span></code>) – A SymbolicConstant specifying the resolution of the image in dots per inch (dpi). The
+<strong>resolution</strong> can be DPI_1200 only if <strong>imageFormat</strong> = VECTOR. Possible values are DPI_75,
+DPI_150, DPI_300, DPI_450, DPI_600, and DPI_1200. The default value is DPI_150.</p></li>
+<li><p><strong>fontType</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">PS_IF_AVAILABLE</span></code>) – A SymbolicConstant specifying the PostScript font substitution rules to be applied.
+Possible values are PS_ALWAYS, PS_IF_AVAILABLE, and AS_DISPLAYED. The default value is
+PS_IF_AVAILABLE.</p></li>
+<li><p><strong>imageFormat</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">VECTOR</span></code>) – A SymbolicConstant specifying how the viewport display will be represented. Possible
+values are VECTOR and RASTER. The default value is VECTOR.</p></li>
+<li><p><strong>shadingQuality</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">MEDIUM</span></code>) – A SymbolicConstant specifying how fine the shading of curved surfaces will be for vector
+images. Possible values are EXTRA COARSE, COARSE, MEDIUM, FINE, and EXTRA FINE. The
+default value is MEDIUM.</p></li>
+</ul>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>RangeError</strong> – Note: The minimum value of width and height (<em>minWidth</em> and <strong>minHeight</strong>) is 10 mm
+    (approximately 0.4 inches).</p></li>
+<li><p><strong>RangeError</strong> – If <strong>leftMargin</strong> + <strong>rightMargin</strong> is out of range.</p></li>
+<li><p><strong>RangeError</strong> – If <strong>topMargin</strong> + <strong>bottomMargin</strong> is out of range.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PsOptions.PsOptions.shadingQuality">
+<span class="sig-name descname"><span class="pre">shadingQuality</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">MEDIUM</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PsOptions.py#L66-L66"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PsOptions.PsOptions.shadingQuality" title="永久链接至目标">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.PsOptions.PsOptions.topMargin">
+<span class="sig-name descname"><span class="pre">topMargin</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">0.5</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/PsOptions.py#L33-L35"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.PsOptions.PsOptions.topMargin" title="永久链接至目标">#</a></dt>
+<dd><p>A Float specifying the top margin of the paper in inches. Possible values are
+<strong>topMargin</strong> ≥ 0. The default value is 0.5.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="svgoptions">
+<h3>SvgOptions<a class="headerlink" href="#svgoptions" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.Print.SvgOptions.SvgOptions">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SvgOptions</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/SvgOptions.py#L6-L52"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.SvgOptions.SvgOptions" title="永久链接至目标">#</a></dt>
+<dd><p>The SvgOptions object stores the settings that Abaqus uses when printing in SVG format.
+The SvgOptions object has no constructor. Abaqus creates the <strong>svgOptions</strong> member when a
+session is started.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">svgOptions</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all">SvgOptions on help.3ds.com/2018</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.SvgOptions.SvgOptions.imageSize" title="abaqus.Print.SvgOptions.SvgOptions.imageSize"><code class="xref py py-obj docutils literal notranslate"><span class="pre">imageSize</span></code></a></p></td>
+<td><p>The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of the image in pixels.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.Print.SvgOptions.SvgOptions.setValues" title="abaqus.Print.SvgOptions.SvgOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*[, imageSize])</p></td>
+<td><p>This method modifies the SvgOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">_OptionsBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_user_attributes</span></code>()</p></td>
+<td><p>Returns a list of the user attributes of the class.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.Print.SvgOptions.SvgOptions.setValues" title="abaqus.Print.SvgOptions.SvgOptions.setValues"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code></a>(*[, imageSize])</p></td>
+<td><p>This method modifies the SvgOptions object.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
+<dl class="py attribute">
+<dt class="sig sig-object py" id="abaqus.Print.SvgOptions.SvgOptions.imageSize">
+<span class="sig-name descname"><span class="pre">imageSize</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">SIZE_ON_SCREEN</span></em><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/SvgOptions.py#L17-L25"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.SvgOptions.SvgOptions.imageSize" title="永久链接至目标">#</a></dt>
+<dd><p>The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of
+the image in pixels. Possible values are (<em>minWidth</em>, <strong>minHeight</strong> ) ≤ <strong>imageSize</strong> ≤
+(<em>maxWidth</em> and <strong>maxHeight</strong>). The default value is SIZE_ON_SCREEN.Note:The minimum value
+of width and height (<em>minWidth</em> and <strong>minHeight</strong>) is the number of pixels that occupy 10
+mm at the current screen resolution. The value is typically around 50 pixels and may be
+different for width and height.The maximum value of width and height (<em>maxWidth</em> and
+<strong>maxHeight</strong>) is the largest number of pixels supported by the system graphics and will
+be at least as large as the screen dimensions.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.Print.SvgOptions.SvgOptions.setValues">
+<span class="sig-name descname"><span class="pre">setValues</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageSize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.SIZE_ON_SCREEN</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2018/src/abaqus/Print/SvgOptions.py#L27-L52"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.Print.SvgOptions.SvgOptions.setValues" title="永久链接至目标">#</a></dt>
+<dd><p>This method modifies the SvgOptions object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-svgoptionspyc.htm?contextscope=all#simaker-svgoptionssetvaluespyc">SvgOptions.setValues on help.3ds.com/2018</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>imageSize</strong> (<a class="reference internal" href="../kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><code class="xref py py-class docutils literal notranslate"><span class="pre">SymbolicConstant</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">SIZE_ON_SCREEN</span></code>) – The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of
+the image in pixels. Possible values are (<em>minWidth</em>, <strong>minHeight</strong> ) ≤ <strong>imageSize</strong> ≤
+(<em>maxWidth</em> and <strong>maxHeight</strong>). The default value is SIZE_ON_SCREEN.Note:The minimum value
+of width and height (<em>minWidth</em> and <strong>minHeight</strong>) is the number of pixels that occupy 10
+mm at the current screen resolution. The value is typically around 50 pixels and may be
+different for width and height.The maximum value of width and height (<em>maxWidth</em> and
+<strong>maxHeight</strong>) is the largest number of pixels supported by the system graphics and will
+be at least as large as the screen dimensions.</p>
+</dd>
+<dt class="field-even">抛出<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>RangeError</strong> – </p>
+</dd>
+</dl>
+<p>:raises (minWidth`, <code class="xref py py-class docutils literal notranslate"><span class="pre">minHeight)</span> <span class="pre">&lt;=</span> <span class="pre">(width</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">height)</span> <span class="pre">&lt;=</span> <span class="pre">(maxWidth</span></code>, :class:<a href="#id3"><span class="problematic" id="id4">`</span></a>maxHeight): If either the width or height arguments of <strong>imageSize</strong> are out of range (where
+    <strong>minWidth</strong> and <strong>minHeight</strong> are the number of pixels corresponding to approximately 10 mm
+    for a given display and <strong>maxWidth</strong> and <strong>maxHeight</strong> are the largest allowable number of
+    pixels supported by the system graphics).</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="plot_options.html" title="上一页 页">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">上一页</p>
+          <p class="prev-next-title">Plot Options</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="xy.html" title="下一页 页">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">下一页</p>
+      <p class="prev-next-title">XY</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#object-features">
+   Object features
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#epsoptions">
+     EpsOptions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Print.EpsOptions.EpsOptions">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         EpsOptions
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.EpsOptions.EpsOptions.fontType">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           EpsOptions.fontType
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.EpsOptions.EpsOptions.imageFormat">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           EpsOptions.imageFormat
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.EpsOptions.EpsOptions.imageSize">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           EpsOptions.imageSize
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.EpsOptions.EpsOptions.resolution">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           EpsOptions.resolution
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.EpsOptions.EpsOptions.setValues">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           EpsOptions.setValues()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.EpsOptions.EpsOptions.shadingQuality">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           EpsOptions.shadingQuality
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.EpsOptions.EpsOptions.units">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           EpsOptions.units
+          </span>
+         </code>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pagesetupoptions">
+     PageSetupOptions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Print.PageSetupOptions.PageSetupOptions">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         PageSetupOptions
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.bottomMargin">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PageSetupOptions.bottomMargin
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.date">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PageSetupOptions.date
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.imageSize">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PageSetupOptions.imageSize
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.leftMargin">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PageSetupOptions.leftMargin
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.logo">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PageSetupOptions.logo
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.orientation">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PageSetupOptions.orientation
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.quality">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PageSetupOptions.quality
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.rightMargin">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PageSetupOptions.rightMargin
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.setValues">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PageSetupOptions.setValues()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.topMargin">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PageSetupOptions.topMargin
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PageSetupOptions.PageSetupOptions.units">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PageSetupOptions.units
+          </span>
+         </code>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pngoptions">
+     PngOptions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Print.PngOptions.PngOptions">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         PngOptions
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PngOptions.PngOptions.imageSize">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PngOptions.imageSize
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PngOptions.PngOptions.setValues">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PngOptions.setValues()
+          </span>
+         </code>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#printoptions">
+     PrintOptions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Print.PrintOptions.PrintOptions">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         PrintOptions
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PrintOptions.PrintOptions.compass">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PrintOptions.compass
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PrintOptions.PrintOptions.deleteTemporaryFiles">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PrintOptions.deleteTemporaryFiles
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PrintOptions.PrintOptions.printCommand">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PrintOptions.printCommand
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PrintOptions.PrintOptions.reduceColors">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PrintOptions.reduceColors
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PrintOptions.PrintOptions.rendition">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PrintOptions.rendition
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PrintOptions.PrintOptions.setValues">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PrintOptions.setValues()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PrintOptions.PrintOptions.vpBackground">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PrintOptions.vpBackground
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PrintOptions.PrintOptions.vpDecorations">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PrintOptions.vpDecorations
+          </span>
+         </code>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#psoptions">
+     PsOptions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Print.PsOptions.PsOptions">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         PsOptions
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PsOptions.PsOptions.bottomMargin">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PsOptions.bottomMargin
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PsOptions.PsOptions.date">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PsOptions.date
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PsOptions.PsOptions.fontType">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PsOptions.fontType
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PsOptions.PsOptions.imageFormat">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PsOptions.imageFormat
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PsOptions.PsOptions.leftMargin">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PsOptions.leftMargin
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PsOptions.PsOptions.logo">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PsOptions.logo
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PsOptions.PsOptions.orientation">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PsOptions.orientation
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PsOptions.PsOptions.paperSize">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PsOptions.paperSize
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PsOptions.PsOptions.resolution">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PsOptions.resolution
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PsOptions.PsOptions.rightMargin">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PsOptions.rightMargin
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PsOptions.PsOptions.setValues">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PsOptions.setValues()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PsOptions.PsOptions.shadingQuality">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PsOptions.shadingQuality
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.PsOptions.PsOptions.topMargin">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           PsOptions.topMargin
+          </span>
+         </code>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#svgoptions">
+     SvgOptions
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.Print.SvgOptions.SvgOptions">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         SvgOptions
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.SvgOptions.SvgOptions.imageSize">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           SvgOptions.imageSize
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.Print.SvgOptions.SvgOptions.setValues">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           SvgOptions.setValues()
+          </span>
+         </code>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../_sources/reference/session/print.rst.txt">
+        <i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
