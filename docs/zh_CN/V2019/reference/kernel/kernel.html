@@ -1,0 +1,1536 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Custom Kernel &#8212; abqpy 2019 文档</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/translations.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'reference/kernel/kernel';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2019';
+        </script>
+    <link rel="index" title="索引" href="../../genindex.html" />
+    <link rel="search" title="搜索" href="../../search.html" />
+    <link rel="next" title="Messaging" href="messaging.html" />
+    <link rel="prev" title="Input File Parser" href="input.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="zh-CN">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2019 文档</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2019  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2019  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Modules
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../mdb.html">
+   Abaqus Model Database
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../mdb/model.html">
+     Model
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/adaptivity.html">
+       Adaptivity
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/amplitude.html">
+       Amplitude
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/bc.html">
+       Boundary Condition
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/calibration.html">
+       Calibration of Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/constraint.html">
+       Constraint
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/field.html">
+       Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/filter.html">
+       Filter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/interaction.html">
+       Interaction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/load.html">
+       Load
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/material.html">
+       Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/mesh.html">
+       Mesh
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/optimization.html">
+       Optimization
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/output.html">
+       Output Request
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../mdb/model/part_assembly.html">
+       Part and Assembly
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part.html">
+         Part
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/assembly.html">
+         Assembly
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part_assembly/datum.html">
+         Datum
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part_assembly/engineering.html">
+         Engineering Feature
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part_assembly/feature.html">
+         Feature
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part_assembly/geometry.html">
+         Basic Geometry
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/part_assembly/region.html">
+         Region
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/predefined.html">
+       Predefined Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/profile.html">
+       Beam Section Profile
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/property.html">
+       Property
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../mdb/model/section.html">
+       Section
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/section/connector.html">
+         Connector
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../mdb/model/sketcher.html">
+       Sketcher
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="../mdb/model/step.html">
+       Step
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-5">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="../mdb/model/step/step_miscellaneous.html">
+         Step Miscellaneous
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mdb/job.html">
+     Job
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mdb/annotation.html">
+     Annotation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../mdb/edit_mesh.html">
+     Edit Mesh
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../odb.html">
+   Abaqus Output Database
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../session.html">
+   Abaqus Session
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/animation.html">
+     Animation Options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/canvas.html">
+     Canvas
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/display_options.html">
+     Display Options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/display.html">
+     Display Group
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/field_report.html">
+     FieldReport
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/odb_display.html">
+     Odb Display
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/path.html">
+     Path and Probe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/plot_options.html">
+     Plot Options
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/print.html">
+     Print
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../session/xy.html">
+     XY
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../kernel.html">
+   Kernel
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="cae_display_preferences.html">
+     Abaqus CAE Display Preferences
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="input.html">
+     Input File Parser
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Custom Kernel
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="messaging.html">
+     Messaging
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="text_representation.html">
+     Text Representation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="utility.html">
+     Utility and View
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="custom-kernel">
+<h1>Custom Kernel<a class="headerlink" href="#custom-kernel" title="此标题的永久链接">#</a></h1>
+<p>The customKernel module augments the mdb, odb, and session objects with an object called customData. The customData object can contain custom data that you created using standard Python objects; for example, dictionaries, strings, numbers, and classes. In addition, the customData object can contain objects that you created using the classes described in this section.</p>
+<p>All objects that you create under the mdb.customData and odb[odbName].customData object will be stored in the Abaqus/CAE model and output database, respectively, when you save the database; all objects that you create under the session.customData object will be lost when you exit Abaqus/CAE.</p>
+<p>The customData object is an instance of the RepositorySupport class; for more information, see RepositorySupport. The classes described in this section register with the GUI infrastructure when you create the class. As a result, if you write a custom GUI script, you can query these objects from the GUI, and you can also be notified when the contents of these objects change so you can update the GUI accordingly. For more information, see Extending the Abaqus Scripting Interface and Accessing kernel data from the GUI.</p>
+<section id="object-features">
+<h2>Object features<a class="headerlink" href="#object-features" title="此标题的永久链接">#</a></h2>
+<section id="commandregister">
+<h3>CommandRegister<a class="headerlink" href="#commandregister" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.CommandRegister.CommandRegister">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CommandRegister</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/CustomKernel/CommandRegister.py#L4-L30"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.CommandRegister.CommandRegister" title="永久链接至目标">#</a></dt>
+<dd><p>This class allows you to derive a general class that can be queried from the GUI and is
+capable of notifying the GUI when the contents of the class change.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">customKernel</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-commandregisterpyc.htm?contextscope=all">CommandRegister on help.3ds.com/2019</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>()</p></td>
+<td><p>This class allows you to derive a general class that can be queried from the GUI and is capable of notifying the GUI when the contents of the class change.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="registereddictionary">
+<h3>RegisteredDictionary<a class="headerlink" href="#registereddictionary" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegisteredDictionary</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/CustomKernel/RegisteredDictionary.py#L5-L55"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary" title="永久链接至目标">#</a></dt>
+<dd><p>This class allows you to create a dictionary that can be queried from the GUI and is
+capable of notifying the GUI when the contents of the dictionary change. The keys to a
+RegisteredDictionary must be either strings or integers.
+The RegisteredDictionary object is derived from the CommandRegister object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">customKernel</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registereddictionarypyc.htm?contextscope=all">RegisteredDictionary on help.3ds.com/2019</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>()</p></td>
+<td><p>This method creates a RegisteredDictionary object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods" title="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Methods</span></code></a>()</p></td>
+<td><p>The RegisteredDictionary object supports the same methods as a Python dictionary.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey" title="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey"><code class="xref py py-obj docutils literal notranslate"><span class="pre">changeKey</span></code></a>(fromName, toName)</p></td>
+<td><p>This method changes the name of a key in the dictionary.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>()</p></td>
+<td><p>This method creates a RegisteredDictionary object.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code>()</p></td>
+<td><p>Return repr(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getattribute__</span></code>(name, /)</p></td>
+<td><p>Return getattr(self, name).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__lt__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__le__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__eq__</span></code>(value, /)</p></td>
+<td><p>Return self==value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ne__</span></code>(value, /)</p></td>
+<td><p>Return self!=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__gt__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ge__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iter__</span></code>()</p></td>
+<td><p>Implement iter(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>()</p></td>
+<td><p>This method creates a RegisteredDictionary object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__or__</span></code>(value, /)</p></td>
+<td><p>Return self|value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ror__</span></code>(value, /)</p></td>
+<td><p>Return value|self.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ior__</span></code>(value, /)</p></td>
+<td><p>Return self|=value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code>()</p></td>
+<td><p>Return len(self).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code></p></td>
+<td><p>x.__getitem__(y) &lt;==&gt; x[y]</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__setitem__</span></code>(key, value, /)</p></td>
+<td><p>Set self[key] to value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__delitem__</span></code>(key, /)</p></td>
+<td><p>Delete self[key].</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__contains__</span></code>(key, /)</p></td>
+<td><p>True if the dictionary has the specified key, else False.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__sizeof__</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">get</span></code>(key[, default])</p></td>
+<td><p>Return the value for key if key is in the dictionary, else default.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setdefault</span></code>(key[, default])</p></td>
+<td><p>Insert key with a value of default if key is not in the dictionary.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code>(k[,d])</p></td>
+<td><p>If the key is not found, return the default if given; otherwise, raise a KeyError.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">popitem</span></code>()</p></td>
+<td><p>Remove and return a (key, value) pair as a 2-tuple.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">keys</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">items</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code>([E, ]**F)</p></td>
+<td><p>If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k] If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v In either case, this is followed by: for k in F:  D[k] = F[k]</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromkeys</span></code>([value])</p></td>
+<td><p>Create a new dictionary with keys from iterable and values set to value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__reversed__</span></code>()</p></td>
+<td><p>Return a reverse iterator over the dict keys.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__class_getitem__</span></code></p></td>
+<td><p>See PEP 585</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods">
+<span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/CustomKernel/RegisteredDictionary.py#L34-L40"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods" title="永久链接至目标">#</a></dt>
+<dd><p>The RegisteredDictionary object supports the same methods as a Python dictionary. In
+addition, the RegisteredDictionary object supports the changeKey method.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey">
+<span class="sig-name descname"><span class="pre">changeKey</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fromName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">toName</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/CustomKernel/RegisteredDictionary.py#L42-L55"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey" title="永久链接至目标">#</a></dt>
+<dd><p>This method changes the name of a key in the dictionary.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registereddictionarypyc.htm?contextscope=all#simaker-registereddictionarychangekeypyc">RegisteredDictionary.changeKey on help.3ds.com/2019</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fromName</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A String or an integer specifying the name of the key to be changed.</p></li>
+<li><p><strong>toName</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A String or an integer specifying the new name for the key.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="registeredlist">
+<h3>RegisteredList<a class="headerlink" href="#registeredlist" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredList.RegisteredList">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegisteredList</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/CustomKernel/RegisteredList.py#L5-L37"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredList.RegisteredList" title="永久链接至目标">#</a></dt>
+<dd><p>This class allows you to create a list that can be queried from the GUI and is capable
+of notifying the GUI when the contents of the list change.
+The RegisteredList object is derived from the CommandRegister object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">customKernel</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registeredlistpyc.htm?contextscope=all">RegisteredList on help.3ds.com/2019</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>()</p></td>
+<td><p>This method creates a RegisteredList object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.CustomKernel.RegisteredList.RegisteredList.Methods" title="abaqus.CustomKernel.RegisteredList.RegisteredList.Methods"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Methods</span></code></a>()</p></td>
+<td><p>The RegisteredList object supports the same methods as a standard Python list object.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>()</p></td>
+<td><p>This method creates a RegisteredList object.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code>()</p></td>
+<td><p>Return repr(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getattribute__</span></code>(name, /)</p></td>
+<td><p>Return getattr(self, name).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__lt__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__le__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__eq__</span></code>(value, /)</p></td>
+<td><p>Return self==value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ne__</span></code>(value, /)</p></td>
+<td><p>Return self!=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__gt__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ge__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iter__</span></code>()</p></td>
+<td><p>Implement iter(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>()</p></td>
+<td><p>This method creates a RegisteredList object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code>()</p></td>
+<td><p>Return len(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code></p></td>
+<td><p>x.__getitem__(y) &lt;==&gt; x[y]</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__setitem__</span></code>(key, value, /)</p></td>
+<td><p>Set self[key] to value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__delitem__</span></code>(key, /)</p></td>
+<td><p>Delete self[key].</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__add__</span></code>(value, /)</p></td>
+<td><p>Return self+value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__mul__</span></code>(value, /)</p></td>
+<td><p>Return self*value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__rmul__</span></code>(value, /)</p></td>
+<td><p>Return value*self.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__contains__</span></code>(key, /)</p></td>
+<td><p>Return key in self.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iadd__</span></code>(value, /)</p></td>
+<td><p>Implement self+=value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__imul__</span></code>(value, /)</p></td>
+<td><p>Implement self*=value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__reversed__</span></code>()</p></td>
+<td><p>Return a reverse iterator over the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__sizeof__</span></code>()</p></td>
+<td><p>Return the size of the list in memory, in bytes.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code>()</p></td>
+<td><p>Remove all items from list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code>()</p></td>
+<td><p>Return a shallow copy of the list.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">append</span></code>(object, /)</p></td>
+<td><p>Append object to the end of the list.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert</span></code>(index, object, /)</p></td>
+<td><p>Insert object before index.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">extend</span></code>(iterable, /)</p></td>
+<td><p>Extend list by appending elements from the iterable.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code>([index])</p></td>
+<td><p>Remove and return item at index (default last).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove</span></code>(value, /)</p></td>
+<td><p>Remove first occurrence of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">index</span></code>(value[, start, stop])</p></td>
+<td><p>Return first index of value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">count</span></code>(value, /)</p></td>
+<td><p>Return number of occurrences of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">reverse</span></code>()</p></td>
+<td><p>Reverse <em>IN PLACE</em>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sort</span></code>(*[, key, reverse])</p></td>
+<td><p>Sort the list in ascending order and return None.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__class_getitem__</span></code></p></td>
+<td><p>See PEP 585</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredList.RegisteredList.Methods">
+<span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/CustomKernel/RegisteredList.py#L33-L37"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredList.RegisteredList.Methods" title="永久链接至目标">#</a></dt>
+<dd><p>The RegisteredList object supports the same methods as a standard Python list object.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="registeredtuple">
+<h3>RegisteredTuple<a class="headerlink" href="#registeredtuple" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredTuple.RegisteredTuple">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RegisteredTuple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tuple</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/CustomKernel/RegisteredTuple.py#L5-L42"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple" title="永久链接至目标">#</a></dt>
+<dd><p>This class allows you to create a tuple that can be queried from the GUI and is capable
+of notifying the GUI when the contents of any of the tuple’s members change.
+The RegisteredTuple object is derived from the CommandRegister object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">customKernel</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-registeredtuplepyc.htm?contextscope=all">RegisteredTuple on help.3ds.com/2019</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(tuple)</p></td>
+<td><p>This method creates a RegisteredTuple object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods" title="abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Methods</span></code></a>()</p></td>
+<td><p>The RegisteredTuple object supports the same methods as a standard Python list object.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">CommandRegister</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(tuple)</p></td>
+<td><p>This method creates a RegisteredTuple object.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__repr__</span></code>()</p></td>
+<td><p>Return repr(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__hash__</span></code>()</p></td>
+<td><p>Return hash(self).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getattribute__</span></code>(name, /)</p></td>
+<td><p>Return getattr(self, name).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__lt__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__le__</span></code>(value, /)</p></td>
+<td><p>Return self&lt;=value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__eq__</span></code>(value, /)</p></td>
+<td><p>Return self==value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ne__</span></code>(value, /)</p></td>
+<td><p>Return self!=value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__gt__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__ge__</span></code>(value, /)</p></td>
+<td><p>Return self&gt;=value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__iter__</span></code>()</p></td>
+<td><p>Implement iter(self).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__len__</span></code>()</p></td>
+<td><p>Return len(self).</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getitem__</span></code>(key, /)</p></td>
+<td><p>Return self[key].</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__add__</span></code>(value, /)</p></td>
+<td><p>Return self+value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__mul__</span></code>(value, /)</p></td>
+<td><p>Return self*value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__rmul__</span></code>(value, /)</p></td>
+<td><p>Return value*self.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__contains__</span></code>(key, /)</p></td>
+<td><p>Return key in self.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__getnewargs__</span></code>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">index</span></code>(value[, start, stop])</p></td>
+<td><p>Return first index of value.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">count</span></code>(value, /)</p></td>
+<td><p>Return number of occurrences of value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__class_getitem__</span></code></p></td>
+<td><p>See PEP 585</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<hr class="docutils" />
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods">
+<span class="sig-name descname"><span class="pre">Methods</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/CustomKernel/RegisteredTuple.py#L38-L42"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods" title="永久链接至目标">#</a></dt>
+<dd><p>The RegisteredTuple object supports the same methods as a standard Python list object.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="repositorysupport">
+<h3>RepositorySupport<a class="headerlink" href="#repositorysupport" title="此标题的永久链接">#</a></h3>
+<dl class="py class">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RepositorySupport.RepositorySupport">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RepositorySupport</span></span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/CustomKernel/RepositorySupport.py#L7-L56"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="永久链接至目标">#</a></dt>
+<dd><p>The class from which you can derive your own classes that
+are designed to contain custom repositories. Instances of this class can be queried from
+the GUI and are capable of notifying the GUI when the contents of the instance change.
+The RepositorySupport object is derived from the CommandRegister object.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">customKernel</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">customData</span>
+<span class="n">session</span><span class="o">.</span><span class="n">customData</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span><span class="o">.</span><span class="n">customData</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repositorysupportpyc.htm?contextscope=all">RepositorySupport on help.3ds.com/2019</a>.</p>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository">
+<span class="sig-name descname"><span class="pre">Repository</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">constructors</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2019/src/abaqus/CustomKernel/RepositorySupport.py#L39-L56"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a><a class="headerlink" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository" title="永久链接至目标">#</a></dt>
+<dd><p>This method installs a repository on the class. The repository is an instance of a
+RegisteredDictionary class. Refer to RegisteredDictionary for details on its methods.
+The objects stored in the repository are assumed to have an attribute called <strong>name</strong> that
+stores the key used to access the object in the repository. The name attribute will be
+modified by the changeKey method.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repositorypyc.htm?contextscope=all">Repository on help.3ds.com/2019</a>.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">参数<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – A String specifying the name of the repository.</p></li>
+<li><p><strong>constructors</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.List" title="（在 Python v3.10）"><code class="xref py py-class docutils literal notranslate"><span class="pre">List</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Callable" title="（在 Python v3.10）"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>]]) – A constructor or sequence of constructors specifying which classes will store their
+instances in the repository.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="input.html" title="上一页 页">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">上一页</p>
+          <p class="prev-next-title">Input File Parser</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="messaging.html" title="下一页 页">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">下一页</p>
+      <p class="prev-next-title">Messaging</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#object-features">
+   Object features
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#commandregister">
+     CommandRegister
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.CustomKernel.CommandRegister.CommandRegister">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         CommandRegister
+        </span>
+       </code>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#registereddictionary">
+     RegisteredDictionary
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         RegisteredDictionary
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.Methods">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           RegisteredDictionary.Methods()
+          </span>
+         </code>
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary.changeKey">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           RegisteredDictionary.changeKey()
+          </span>
+         </code>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#registeredlist">
+     RegisteredList
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.CustomKernel.RegisteredList.RegisteredList">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         RegisteredList
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.CustomKernel.RegisteredList.RegisteredList.Methods">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           RegisteredList.Methods()
+          </span>
+         </code>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#registeredtuple">
+     RegisteredTuple
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         RegisteredTuple
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.Methods">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           RegisteredTuple.Methods()
+          </span>
+         </code>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#repositorysupport">
+     RepositorySupport
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport">
+       <code class="docutils literal notranslate">
+        <span class="pre">
+         RepositorySupport
+        </span>
+       </code>
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository">
+         <code class="docutils literal notranslate">
+          <span class="pre">
+           RepositorySupport.Repository()
+          </span>
+         </code>
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../_sources/reference/kernel/kernel.rst.txt">
+        <i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
