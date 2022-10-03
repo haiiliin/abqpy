@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     concurrency: 
-      group: docs
+      group: docs-${{ github.ref }}
       cancel-in-progress: false
     strategy:
       matrix:
