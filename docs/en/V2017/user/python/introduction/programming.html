@@ -1,0 +1,1390 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Programming techniques &#8212; abqpy 2017 documentation</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user/python/introduction/programming';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2017';
+        </script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Further reading" href="further-reading.html" />
+    <link rel="prev" title="The basics of Python" href="python-basics.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2017 documentation</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2017  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2017  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../about.html">
+   About the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/interface.html">
+     Abaqus/CAE and the Abaqus Scripting Interface
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/interact.html">
+     How does the Abaqus Scripting Interface interact with Abaqus/CAE?
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../about/examples.html">
+     Simple examples
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/create-part.html">
+       Creating a part
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/read-output.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/summary.html">
+       Summary
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../python.html">
+   Using the Abaqus Scripting Interface
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../introduction.html">
+     Introduction to Python
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="python-abaqus.html">
+       Python and Abaqus
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="python-resources.html">
+       Python resources
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="python-interpreter.html">
+       Using the Python interpreter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="oop-basics.html">
+       Object-oriented basics
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="python-basics.html">
+       The basics of Python
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Programming techniques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="further-reading.html">
+       Further reading
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../python-abaqus.html">
+     Using Python and the Abaqus Scripting Interface
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/executing.html">
+       Executing scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/types.html">
+       Abaqus Scripting Interface data types
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/oop.html">
+       Object-oriented programming and the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/errors.html">
+       Error handling in the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/extending.html">
+       Extending the Abaqus Scripting Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../use-scripts.html">
+     Using the Abaqus Scripting Interface with Abaqus/CAE
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/object-model.html">
+       The Abaqus object model
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/modify-objects.html">
+       Copying, deleting, and renaming Abaqus Scripting Interface objects
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/sequences.html">
+       Abaqus/CAE sequences
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/namespace.html">
+       Namespace
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/specify-viewport.html">
+       Specifying what is displayed in the viewport
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/specify-region.html">
+       Specifying a region
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/user-input.html">
+       Prompting the user for input
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/interact.html">
+       Interacting with Abaqus/Standard and Abaqus/Explicit
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../use-scripts/environment-file.html">
+       Using Abaqus Scripting Interface commands in your environment file
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../environment.html">
+   The Abaqus Python Development Environment
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/about.html">
+     About the Abaqus Python development environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/pde-basics.html">
+     Abaqus PDE basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/use-pde.html">
+     Using the Abaqus PDE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../examples.html">
+   Putting it all Together: Abaqus Scripting Interface Examples
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/cantilever.html">
+     Reproducing the cantilever beam tutorial
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/plot.html">
+     Generating a customized plot
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/sensitivity.html">
+     Investigating the skew sensitivity of shell elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/settings.html">
+     Editing display preferences and GUI settings
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../output.html">
+   Accessing an Output Database
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../output/python.html">
+     Using the Abaqus Scripting Interface to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/need-what-to-understand.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/execute-script.html">
+       Executing a script that accesses an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/examples.html">
+       Example scripts that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../output/cpp.html">
+     Using C++ to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/about.html">
+       About the C++ interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/need-what-access.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/compile-link.html">
+       Compiling and linking your C++ source code
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/access.html">
+       Accessing the C++ interface from an existing application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/architecture.html">
+       The Abaqus C++ API architecture
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/utility.html">
+       Utility interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/examples.html">
+       Example programs that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="programming-techniques">
+<h1>Programming techniques<a class="headerlink" href="#programming-techniques" title="Permalink to this heading">#</a></h1>
+<p>The following sections introduce you to some of the techniques you will need to program with Python.</p>
+<section id="creating-functions">
+<span id="id1"></span><h2>Creating functions<a class="headerlink" href="#creating-functions" title="Permalink to this heading">#</a></h2>
+<p>You can define your own functions in Python. A function is like a subroutine in Fortran. You can pass arguments into a function, it performs the operation, and it can return one or more values. For example, the following function returns the distance of a point from the origin. The def statement starts a function definition.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span>
+    <span class="k">return</span>  <span class="n">a</span> <span class="o">**</span> <span class="mf">0.5</span>
+</pre></div>
+</div>
+<p>You supply the arguments to a function in parentheses; for example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">distance</span><span class="p">(</span><span class="mf">4.7</span><span class="p">,</span> <span class="mf">9.1</span><span class="p">)</span>
+<span class="mf">10.2420701033</span>
+</pre></div>
+</div>
+<p>You can assign the return value to a variable:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">d</span> <span class="o">=</span> <span class="n">distance</span><span class="p">(</span><span class="mf">4.7</span><span class="p">,</span> <span class="mf">9.1</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">d</span>
+<span class="mf">10.2420701033</span>
+</pre></div>
+</div>
+<p>One of the methods provided by Abaqus uses as many as 50 arguments. Some of the arguments are required by the method; others are optional, and Abaqus provides an initial or default value. Fortunately, you can call a function or a method without providing every optional argument if you use Python’s keyword arguments. A keyword specifies the argument that you are providing. Keyword arguments also make your scripts more readable. For example, the following defines a function called calculateCylinderVolume:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="p">,</span><span class="n">height</span><span class="p">):</span>
+<span class="o">...</span>     <span class="n">volume</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">height</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="n">volume</span>
+</pre></div>
+</div>
+<p>You can call the function with the following line:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">volume</span> <span class="o">=</span> <span class="n">calculateCylinderVolume</span><span class="p">(</span><span class="mf">3.2</span><span class="p">,</span><span class="mf">27.5</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here the arguments are called positional arguments because you are relying on their position in the function call to determine the variable to which they are assigned in the function—radius followed by height.</p>
+<p>The following is the same statement using keyword arguments:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">volume</span> <span class="o">=</span> <span class="n">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">3.2</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mf">27.5</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Keyword arguments make your code more readable. In addition, if you use keyword arguments, you can enter the arguments in any order.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">volume</span> <span class="o">=</span> <span class="n">calculateCylinderVolume</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mf">27.5</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mf">3.2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can define default values for an argument in a function definition. For example, the following sets the default value of radius to 0.5 and the default value of height to 1.0:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+<span class="o">...</span>     <span class="n">volume</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">*</span> <span class="n">radius</span> <span class="o">*</span> <span class="n">height</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="n">volume</span>
+</pre></div>
+</div>
+<p>You can now call the function without providing all the arguments. The function assigns the default value to any missing arguments.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">volume</span> <span class="o">=</span> <span class="n">calculateCylinderVolume</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mf">27.5</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It is good programming practice to use a documentation string that indicates the purpose of a function and the arguments expected. A documentation string appears at the top of a function and is delimited by triple quotes “””. You can use the __doc__ method to obtain the documentation string from a function while running the Python interpreter. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span><span class="k">def</span> <span class="nf">calculateCylinderVolume</span><span class="p">(</span><span class="n">radius</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+<span class="o">...</span>     <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">...     Calculates the volume of a cylinder.</span>
+<span class="s2">...</span>
+<span class="s2">...     Takes two optional arguments, radius (default=0.5)</span>
+<span class="s2">...     and height (default=1.0).</span>
+<span class="s2">...     &quot;&quot;&quot;</span>
+<span class="o">...</span>     <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="o">...</span>     <span class="n">volume</span> <span class="o">=</span> <span class="n">pi</span> <span class="o">*</span> <span class="n">radius</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">height</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="n">volume</span>
+<span class="o">...</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span> <span class="n">calculateCylinderVolume</span><span class="o">.</span><span class="vm">__doc__</span>
+
+<span class="n">Calculates</span> <span class="n">the</span> <span class="n">volume</span> <span class="n">of</span> <span class="n">a</span> <span class="n">cylinder</span><span class="o">.</span>
+
+<span class="n">Takes</span> <span class="n">two</span> <span class="n">optional</span> <span class="n">arguments</span><span class="p">,</span> <span class="n">radius</span> <span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+<span class="ow">and</span> <span class="n">height</span> <span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="mf">1.0</span><span class="p">)</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>You can retrieve the documentation string for the methods in the Abaqus Scripting Interface. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">mdb</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="vm">__doc__</span>
+<span class="s1">&#39;Mdb.Model(name &lt;, description, stefanBoltzmann, absoluteZero&gt;) -&gt;</span>
+    <span class="n">This</span> <span class="n">method</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">Model</span> <span class="nb">object</span><span class="o">.</span><span class="s1">&#39;</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">session</span><span class="o">.</span><span class="n">Viewport</span><span class="o">.</span><span class="vm">__doc__</span>
+<span class="s1">&#39;Session.Viewport(name &lt;, origin, width, height, border, titleBar,</span>
+    <span class="n">titleStyle</span><span class="p">,</span> <span class="n">customTitleString</span><span class="o">&gt;</span><span class="p">)</span>
+    <span class="o">-&gt;</span> <span class="n">This</span> <span class="n">method</span> <span class="n">creates</span> <span class="n">a</span> <span class="n">Viewport</span> <span class="nb">object</span> <span class="k">with</span> <span class="n">the</span> <span class="n">specified</span>
+    <span class="n">origin</span> <span class="ow">and</span> <span class="n">dimensions</span><span class="o">.</span><span class="s1">&#39;</span>
+</pre></div>
+</div>
+<p>The documentation string shows the name of each argument name and whether the argument is required or optional. The string also shows a brief description of the method.</p>
+<p>You can use the sys module to retrieve command line arguments and pass them to a function. For example, the following script takes two arguments—the X- and Y-coordinates of a point—and calculates the distance from the point to the origin. The script uses the following modules:</p>
+<p>The <cite>sys</cite> module to retrieve the command line arguments.</p>
+<p>The <cite>math</cite> module to calculate the square root.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">math</span>
+<span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Prints distance from origin to (x, y).</span>
+
+<span class="sd">    Takes two command line arguments, x and y.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Square the arguments and add them.</span>
+
+    <span class="n">a</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span>
+
+    <span class="c1"># Return the square root.</span>
+
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+
+<span class="c1"># Retrieve the command line arguments and</span>
+<span class="c1"># convert the strings to floating-point numbers.</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="n">y</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="c1"># Call the distance function.</span>
+
+<span class="n">d</span> <span class="o">=</span> <span class="n">distance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># Print the result.</span>
+
+<span class="k">print</span> <span class="s1">&#39;Distance to origin = &#39;</span><span class="p">,</span> <span class="n">d</span>
+</pre></div>
+</div>
+<p>To use this script, do the following:</p>
+<p>Copy the statements into a file called <cite>distance.py</cite> in your local directory.</p>
+<p>Type the following at the system prompt:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>abaqus python distance.py <span class="m">30</span> <span class="m">40</span>
+</pre></div>
+</div>
+<p>Abaqus executes the script and prints the result.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>Distance to <span class="nv">origin</span> <span class="o">=</span>  <span class="m">50</span>.0
+</pre></div>
+</div>
+</section>
+<section id="using-dictionaries">
+<span id="id2"></span><h2>Using dictionaries<a class="headerlink" href="#using-dictionaries" title="Permalink to this heading">#</a></h2>
+<p>Dictionaries are a powerful tool in Python. A dictionary maps a variable to a set of data, much like a real dictionary maps a word to its definition, its pronunciation, and its synonyms. Dictionaries are similar to lists in that they are not homogeneous and can contain objects of any type. To access an object in a list, you provide the integer index that specifies the position of the object in the list. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myList</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="mi">2</span>
+</pre></div>
+</div>
+<p>In contrast, you access an object in a dictionary through its key, which can be a string, an integer, or any type of immutable Python object. There is no implicit order to the keys in a dictionary. In most cases you will assign a string to the dictionary key. The key then becomes a more intuitive way to access the elements in a dictionary. You use square brackets and the dictionary key to access a particular object. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1">#Create an empty dictionary</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">3.0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;material&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Steel&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;Red&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;number&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">667</span>
+</pre></div>
+</div>
+<p>You can add dictionary keys at any time.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;weight&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">376.0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;cost&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mf">10.34</span>
+</pre></div>
+</div>
+<p>You use the key to access an item in a dictionary.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">costOverWeight</span> <span class="o">=</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;cost&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;weight&#39;</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">costOverWeight</span>
+<span class="mf">0.0275</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">description</span> <span class="o">=</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;material&#39;</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">description</span>
+<span class="s1">&#39;RedSteel&#39;</span>
+</pre></div>
+</div>
+<p>Dictionaries are not sequences, and you cannot apply sequence methods such as slicing and concatenating to dictionaries. Dictionaries have their own methods. The following statement lists the methods of the dictionary myPart.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="o">.</span><span class="n">__methods__</span>
+<span class="p">[</span><span class="s1">&#39;clear&#39;</span><span class="p">,</span> <span class="s1">&#39;copy&#39;</span><span class="p">,</span> <span class="s1">&#39;get&#39;</span><span class="p">,</span> <span class="s1">&#39;has_key&#39;</span><span class="p">,</span> <span class="s1">&#39;items&#39;</span><span class="p">,</span> <span class="s1">&#39;keys&#39;</span><span class="p">,</span>
+<span class="s1">&#39;update&#39;</span><span class="p">,</span> <span class="s1">&#39;values&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The <cite>keys()</cite> method returns a list of the dictionary keys.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
+<span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">,</span> <span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="s1">&#39;material&#39;</span><span class="p">,</span> <span class="s1">&#39;cost&#39;</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The <cite>values()</cite> method returns a list of the values of each entry in the dictionary.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="o">.</span><span class="n">values</span><span class="p">()</span>
+<span class="p">[</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">376.0</span><span class="p">,</span> <span class="mi">667</span><span class="p">,</span> <span class="s1">&#39;Steel&#39;</span><span class="p">,</span> <span class="mf">10.34</span><span class="p">,</span> <span class="s1">&#39;Red&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The <cite>items()</cite> method returns a list of tuples. Each tuple contains the key and its value.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="p">[(</span><span class="s1">&#39;size&#39;</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;number&#39;</span><span class="p">,</span> <span class="mi">667</span><span class="p">),</span>   <span class="p">(</span><span class="s1">&#39;material&#39;</span><span class="p">,</span> <span class="s1">&#39;Steel&#39;</span><span class="p">),</span>
+<span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">,</span> <span class="s1">&#39;Red&#39;</span><span class="p">),</span>   <span class="p">(</span><span class="s1">&#39;weight&#39;</span><span class="p">,</span> <span class="mf">376.0</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;cost&#39;</span><span class="p">,</span> <span class="mf">10.34</span><span class="p">),]</span>
+</pre></div>
+</div>
+<p>You use the <cite>has_key()</cite> method to see if a key exists. A return value of 1 indicates the key exists in the dictionary. A return value of 0 indicates the key does not exist.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">)</span>
+<span class="mi">1</span>
+</pre></div>
+</div>
+<p>Python’s del statement allows you to delete a variable.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">del</span> <span class="n">myPart</span>
+</pre></div>
+</div>
+<p>You can also use del to delete an item from a dictionary.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">del</span> <span class="n">myPart</span><span class="p">[</span><span class="s1">&#39;color&#39;</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myPart</span><span class="o">.</span><span class="n">has_key</span><span class="p">(</span><span class="s1">&#39;color&#39;</span><span class="p">)</span>
+<span class="mi">0</span>
+</pre></div>
+</div>
+<p>You can use the <cite>keys()</cite>, <cite>values()</cite>, or <cite>items()</cite> methods to loop through a dictionary. In the following example, <cite>items()</cite> returns two values; the first is assigned to property, and the second is assigned to setting.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="nb">property</span><span class="p">,</span> <span class="n">setting</span> <span class="ow">in</span> <span class="n">myPart</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+<span class="o">...</span>     <span class="k">print</span> <span class="nb">property</span><span class="p">,</span> <span class="n">setting</span>
+<span class="o">...</span>
+<span class="n">size</span> <span class="mf">3.0</span>
+<span class="n">weight</span> <span class="mf">376.0</span>
+<span class="n">number</span> <span class="mi">667</span>
+<span class="n">material</span> <span class="n">Steel</span>
+<span class="n">cost</span> <span class="mf">10.34</span>
+</pre></div>
+</div>
+</section>
+<section id="reading-and-writing-from-files">
+<h2>Reading and writing from files<a class="headerlink" href="#reading-and-writing-from-files" title="Permalink to this heading">#</a></h2>
+<p>Many of the file commands are built-in Python commands. You do not have to import a module to use file commands. You use the open() function to create a file.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myInputFile</span>  <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;crash_test/fender.txt&#39;</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myOutputFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;peak_deflection.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w+&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The first line opens an existing file in the crash_test directory called fender.txt. The file is opened in read-only mode; myInputFile is a variable that refers to a file object. The second line creates and opens a new file object in the local directory called peak_deflection.txt. This file is opened in read and write mode.</p>
+<p>Use the <cite>__methods__</cite> technique that we saw earlier to see the methods of a file object.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myOutputFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;peak_deflection.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">myOutputFile</span><span class="o">.</span><span class="n">__methods__</span>
+<span class="p">[</span><span class="s1">&#39;close&#39;</span><span class="p">,</span> <span class="s1">&#39;fileno&#39;</span><span class="p">,</span> <span class="s1">&#39;flush&#39;</span><span class="p">,</span> <span class="s1">&#39;isatty&#39;</span><span class="p">,</span> <span class="s1">&#39;read&#39;</span><span class="p">,</span>
+<span class="s1">&#39;readinto&#39;</span><span class="p">,</span> <span class="s1">&#39;readline&#39;</span><span class="p">,</span> <span class="s1">&#39;readlines&#39;</span><span class="p">,</span> <span class="s1">&#39;seek&#39;</span><span class="p">,</span> <span class="s1">&#39;tell&#39;</span><span class="p">,</span>
+<span class="s1">&#39;truncate&#39;</span><span class="p">,</span> <span class="s1">&#39;write&#39;</span><span class="p">,</span> <span class="s1">&#39;writelines&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The <cite>readline()</cite> method reads a single line from a file into a string, including the new line character that terminates the string. The <cite>readlines()</cite> method reads all the lines in a file into a list. The <cite>write()</cite> function writes a string to a file. Look at the standard Python documentation on the official Python website (<a class="reference external" href="https://www.python.org">https://www.python.org</a>) for a description of functions that operate on files. File objects are described in the Built-in Types section of the Python Library Reference.</p>
+<p>The following example reads each line of a text file and changes the line to uppercase characters:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Read-only is the default access mode</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">inputFile</span>  <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;foam.txt&#39;</span><span class="p">)</span>
+
+<span class="c1"># You must declare write access</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">outputFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;upper.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">lines</span> <span class="o">=</span> <span class="n">inputFile</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">lines</span><span class="p">:</span>
+<span class="o">...</span>     <span class="n">newLine</span> <span class="o">=</span> <span class="n">line</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="o">...</span>     <span class="n">outputFile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">newLine</span><span class="p">)</span>
+<span class="o">...</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">inputFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">outputFile</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The first line opens the input file; you do not need the <cite>‘r’</cite> because read-only is the default access mode. The next line opens a new file to which you will write. You read the lines in the input file into a list. Finally, you enter a loop that converts each line to uppercase characters and writes the result to the output file. The final two lines close the files.</p>
+</section>
+<section id="error-handling">
+<span id="id3"></span><h2>Error handling<a class="headerlink" href="#error-handling" title="Permalink to this heading">#</a></h2>
+<p>When a script encounters unusual circumstances, Python allows you to modify the flow of control through the script and to take the necessary action. The action of signaling a problem during execution is called raising or throwing an exception. Recognizing the problem is called catching an exception. Taking appropriate action is called exception handling.</p>
+<p>Python provides exception handling through the try and except commands. For example, the following statement attempts to open an existing file for reading:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">outputFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;foam.txt&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If the file does not exist, the statement fails, and Python displays the following error message:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">outputFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;foam.txt&#39;</span><span class="p">)</span>
+<span class="go">Traceback (innermost last):</span>
+<span class="go">File &quot;&lt;stdin&gt;&quot;, line 1, in ?</span>
+<span class="go">IOError: (2, &#39;No such file or directory&#39;)</span>
+</pre></div>
+</div>
+<p>If you use exception handling, you can catch the error, display a helpful message, and take the appropriate action. For example, a revised version of the code attempts to open the same file within a try statement. If an IOError error is encountered, the except statement catches the IOError exception and assigns the exception’s value to the variable error.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">try</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="n">outputFile</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;foam.txt&#39;</span><span class="p">)</span>
+<span class="gp">... </span><span class="k">except</span> <span class="ne">IOError</span><span class="p">,</span><span class="n">error</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="nb">print</span> <span class="s1">&#39;Exception trapped: &#39;</span><span class="p">,</span> <span class="n">error</span>
+<span class="gp">...</span>
+<span class="go">Exception trapped:  (2, &#39;No such file or directory&#39;)</span>
+</pre></div>
+</div>
+<p>You can raise your own exceptions by providing the error type and the error message to the raise statement. The following example script raises an exception and displays a message if the function myFunction encounters a problem.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">myFunction</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+
+    <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="s1">&#39;y argument cannot be zero&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">x</span><span class="o">/</span><span class="n">y</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">myFunction</span><span class="p">(</span><span class="n">temperature</span><span class="p">,</span> <span class="n">velocity</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ValueError</span><span class="p">,</span> <span class="n">error</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">error</span>
+</pre></div>
+</div>
+<p>Exception handling is discussed in more detail in Error handling in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a>.</p>
+</section>
+<section id="functions-and-modules">
+<span id="id4"></span><h2>Functions and modules<a class="headerlink" href="#functions-and-modules" title="Permalink to this heading">#</a></h2>
+<p>When you start Python from a local window or from Abaqus/CAE, the Python interpreter is aware of a limited set of built-in functions. For example, try entering the following at the Python prompt:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">myName</span> <span class="o">=</span> <span class="s1">&#39;Einstein&#39;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">myName</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Python returns the number 8, indicating the length of the string <cite>myName</cite>. The <cite>len()</cite> function is a built-in function and is always available when you are using Python. To see a list of the built-in functions provided by Python, type <cite>dir(__builtins__)</cite> at the Python prompt.</p>
+<p><cite>dir(__builtins__)</cite> is typed as dir(underscore underscorebuiltinsunderscore underscore). You have seen this underscore underscore notation already in Sequences.</p>
+<p>In addition, you can look at the standard Python documentation on the official Python website (<a class="reference external" href="http:www.python.org">http:www.python.org</a>) for a list of built-in functions. Built-in functions are described in the Built-in Functions section of the Python Library Reference.</p>
+<p>Many functions, however, are not built-in; for example, most of the math functions, such as <cite>sin()</cite> and <cite>cos()</cite>, are not available when you start Python. Functions that are not built-in are defined in modules. Modules are a way of grouping functionality and are similar to a Fortran library of subroutines. For example, the following code could be the opening lines of a Python script. The code imports the Python module <cite>sys</cite> and uses the <cite>argv</cite> member of <cite>sys</cite> to print the command line arguments:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<span class="k">for</span> <span class="n">argument</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">argument</span>
+</pre></div>
+</div>
+<p>You must first import the module to make its functions, names, and functionality available to the Python interpreter. Try the following:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">pi</span><span class="o">/</span><span class="mf">4.0</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="mf">0.707106781187</span>
+</pre></div>
+</div>
+<p>The first line imports all of the names from the math module. The second line uses <cite>pi</cite>, a float number defined in the math module. The third line refers to a <cite>sin()</cite> function. Python can use the <cite>sin()</cite> function because you imported it from the math module.</p>
+<p>To import only the <cite>sin()</cite> function, you could have typed</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span>
+</pre></div>
+</div>
+<p>You need to import a module only once during a session. Once a module is imported, its functions, methods, and attributes are always available to you. You cannot unload a module after you import it.</p>
+<p>To see a list of all the functions that come with the math module, look at the Miscellaneous Services section of the Python Library Reference. You can download public-domain modules, and you can create your own modules.</p>
+<p>Python provides a second approach to importing modules. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">math</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="mf">22.0</span><span class="o">/</span><span class="p">(</span><span class="mf">7.0</span> <span class="o">*</span> <span class="mf">4.0</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="mf">0.707330278085</span>
+</pre></div>
+</div>
+<p>The <cite>import</cite> approach shown above imports the module as a unit, and you must qualify the name of an object from the module. To access a function from the <cite>math</cite> module in our example, you must prepend the function with <cite>math.</cite>; the <cite>math.</cite> statement is said to qualify the <cite>sin()</cite> function.</p>
+<p>What is the difference between the two approaches to importing modules? If two modules contain an object with the same name, Python cannot distinguish between the objects if you use the <cite>from modulename import *</cite> approach. If two objects have the same name, Python uses the object most recently imported. However, if you use the <cite>import modulename</cite> approach, modulename qualifies the name of the object and makes it unique.</p>
+</section>
+<section id="writing-your-own-modules">
+<h2>Writing your own modules<a class="headerlink" href="#writing-your-own-modules" title="Permalink to this heading">#</a></h2>
+<p>You can create your own module containing a set of Python functions. You can import this module and make use of its functions. The name of the module to import is the same as the name of the file containing the functions without the <cite>.py</cite> file suffix.</p>
+<p>For example, you can create a module called myUtilities by copying a modified version of the function that calculates the distance from a point to the origin into a file called myUtilities.py.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot; myUtilities - a module of mathematical functions&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="c1">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span class="k">def</span> <span class="nf">distance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Prints distance from origin to (x, y).</span>
+
+<span class="sd">    Takes two arguments, x and y.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Square the arguments and add them.</span>
+
+    <span class="n">a</span> <span class="o">=</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span>
+
+    <span class="c1"># Return the square root.</span>
+
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You must import the module to make use of the functions and constants that it contains.</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">myUtilities</span>
+
+<span class="n">distance</span> <span class="o">=</span> <span class="n">myUtilities</span><span class="o">.</span><span class="n">distance</span><span class="p">(</span><span class="mi">30</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can use the <cite>__doc__</cite> method to obtain the documentation string from a module. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">myUtilities</span><span class="o">.</span><span class="vm">__doc__</span>
+<span class="s1">&#39; myUtilities - a module of mathematical functions&#39;</span>
+</pre></div>
+</div>
+<p>A tool for finding bugs in your modules is provided with Abaqus. The tool is called pychecker. When you import a module, pychecker prints warnings for any problems it finds with the Python source code. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">pychecker</span> <span class="kn">import</span> <span class="n">checker</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">myUtilities</span>
+<span class="n">d</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">smith</span>\<span class="n">myUtilities</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">3</span><span class="p">:</span> <span class="n">Imported</span> <span class="n">module</span> <span class="p">(</span><span class="n">sys</span><span class="p">)</span> <span class="ow">not</span> <span class="n">used</span>
+<span class="n">d</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">smith</span>\<span class="n">myUtilities</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">14</span><span class="p">:</span> <span class="n">Local</span> <span class="n">variable</span> <span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="ow">not</span> <span class="n">used</span>
+<span class="n">d</span><span class="p">:</span>\<span class="n">users</span>\<span class="n">smith</span>\<span class="n">myUtilities</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">18</span><span class="p">:</span> <span class="n">No</span> <span class="k">global</span> <span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="n">found</span>
+</pre></div>
+</div>
+<p>For more information about <cite>pychecker</cite>, see the official Python website (<a class="reference external" href="https://www.python.org">https://www.python.org</a>)</p>
+<p>If you import a module during an interactive session using the command line interface and then make changes to the module, Python will not recognize your changes until you reload the module; for example:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">myModule</span>
+<span class="n">maxStress</span> <span class="o">=</span> <span class="n">myModule</span><span class="o">.</span><span class="n">calculateStress</span><span class="p">(</span><span class="n">odb</span><span class="p">)</span>
+
+<span class="c1"># Edit myModule.py and modify the calculateStress method.</span>
+
+<span class="nb">reload</span><span class="p">(</span><span class="n">myModule</span><span class="p">)</span>
+<span class="n">maxStress</span> <span class="o">=</span> <span class="n">myModule</span><span class="o">.</span><span class="n">calculateStress</span><span class="p">(</span><span class="n">odb</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="python-basics.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">The basics of Python</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="further-reading.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Further reading</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#creating-functions">
+   Creating functions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-dictionaries">
+   Using dictionaries
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reading-and-writing-from-files">
+   Reading and writing from files
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#error-handling">
+   Error handling
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#functions-and-modules">
+   Functions and modules
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#writing-your-own-modules">
+   Writing your own modules
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../../_sources/user/python/introduction/programming.rst.txt">
+        <i class="fas fa-file-alt"></i> Show Source
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
