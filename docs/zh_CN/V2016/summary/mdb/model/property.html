@@ -1,0 +1,1464 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Property &#8212; abqpy 2016 文档</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'summary/mdb/model/property';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2016';
+        </script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="Section" href="section.html" />
+    <link rel="prev" title="Beam Section Profile" href="profile.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="zh-CN">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2016 文档</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2016  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2016  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../header.html">
+   Header of the Python script
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../mdb.html">
+   Abaqus Model Database
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../model.html">
+     Abaqus Model
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="adaptivity.html">
+       Adaptivity
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="amplitude.html">
+       Amplitude
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="assembly.html">
+       Assembly
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bc.html">
+       Boundary Condition
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="calibration.html">
+       Calibration of Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="constraint.html">
+       Constraint
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="field.html">
+       Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="filter.html">
+       Filter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="interaction.html">
+       Interaction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="load.html">
+       Load
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="material.html">
+       Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="optimization.html">
+       Optimization
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="output.html">
+       Output Request
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="part.html">
+       Part
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="predefined.html">
+       Predefined Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="profile.html">
+       Beam Section Profile
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Property
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="section.html">
+       Section
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="section/connector.html">
+         Connector
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sketcher.html">
+       Sketcher
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="step.html">
+       Step
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="step/step_miscellaneous.html">
+         Step Miscellaneous
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../job.html">
+     Abaqus Job
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../odb.html">
+   Abaqus Output Database
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../session.html">
+   Abaqus Session
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="property">
+<h1>Property<a class="headerlink" href="#property" title="此标题的永久链接">#</a></h1>
+<p>The Property commands are used to create and manage reinforcements and to assign properties to a part.
+(See also Material commands and Section commands.) The Property commands are methods of a Part object.</p>
+<section id="create-properties-for-part">
+<h2>Create properties for Part<a class="headerlink" href="#create-properties-for-part" title="此标题的永久链接">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PropertyPart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimensionality</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../../reference/kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../../reference/kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">twist</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../../../reference/kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><span class="pre">AbaqusBoolean</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2016/src/abaqus/Property/PropertyPart.py#L19-L430"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">PropertyPart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">objectToCopy</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="（在 Python v3.10）"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="（在 Python v3.10）"><span class="pre">float</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mirrorPlane</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="../../../reference/kernel/utility.html#abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant" title="abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant"><span class="pre">SymbolicConstant</span></a></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">NONE</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compressFeatureList</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../../../reference/kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><span class="pre">AbaqusBoolean</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">separate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="（在 Python v3.10）"><span class="pre">Union</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="../../../reference/kernel/utility.html#abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean" title="abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean"><span class="pre">AbaqusBoolean</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="（在 Python v3.10）"><span class="pre">bool</span></a><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">OFF</span></span></em><span class="sig-paren">)</span></dt>
+<dd><div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">PartBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">geometryValidity</span></code></p></td>
+<td><p>A Boolean specifying the validity of the geometry of the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isOutOfDate</span></code></p></td>
+<td><p>An Int specifying that feature parameters have been modified but that the part has not been regenerated.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">timeStamp</span></code></p></td>
+<td><p>A Float specifying when the part was last modified.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">vertices</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/part_assembly/geometry.html#abaqus.BasicGeometry.VertexArray.VertexArray" title="abaqus.BasicGeometry.VertexArray.VertexArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">VertexArray</span></code></a> object specifying all the vertices in the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ignoredVertices</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../../reference/mdb/model/part_assembly/geometry.html#abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray" title="abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">IgnoredVertexArray</span></code></a> object specifying all the ignored vertices in the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">edges</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../../reference/mdb/model/part_assembly/geometry.html#abaqus.BasicGeometry.EdgeArray.EdgeArray" title="abaqus.BasicGeometry.EdgeArray.EdgeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">EdgeArray</span></code></a> object specifying all the edges in the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ignoredEdges</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../../reference/mdb/model/part_assembly/geometry.html#abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray" title="abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">IgnoredEdgeArray</span></code></a> object specifying all the ignored edges in the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">faces</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/part_assembly/geometry.html#abaqus.BasicGeometry.FaceArray.FaceArray" title="abaqus.BasicGeometry.FaceArray.FaceArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">FaceArray</span></code></a> object specifying all the faces in the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">cells</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/part_assembly/geometry.html#abaqus.BasicGeometry.CellArray.CellArray" title="abaqus.BasicGeometry.CellArray.CellArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">CellArray</span></code></a> object specifying all the cells in the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">features</span></code></p></td>
+<td><p>A repository of Feature objects specifying all the features in the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">featuresById</span></code></p></td>
+<td><p>A repository of Feature objects specifying all Feature objects in the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">datums</span></code></p></td>
+<td><p>A repository of Datum objects specifying all the datums in the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">elements</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshElementArray.MeshElementArray" title="abaqus.Mesh.MeshElementArray.MeshElementArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshElementArray</span></code></a> object specifying all the elements in the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">elemFaces</span></code></p></td>
+<td><p>A repository of MeshFace objects specifying all the element faces in the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementFaces</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshFaceArray.MeshFaceArray" title="abaqus.Mesh.MeshFaceArray.MeshFaceArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshFaceArray</span></code></a> object specifying all the unique element faces in the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">nodes</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshNodeArray.MeshNodeArray" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshNodeArray</span></code></a> object specifying all the nodes in the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">retainedNodes</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshNodeArray.MeshNodeArray" title="abaqus.Mesh.MeshNodeArray.MeshNodeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshNodeArray</span></code></a> object specifying all the retained nodes in the substructure part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sets</span></code></p></td>
+<td><p>A repository of Set objects specifying for more information, see Set.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">allSets</span></code></p></td>
+<td><p>A repository of Set objects specifying the contents of the <strong>allSets</strong> repository is the same as the contents of the <strong>sets</strong> repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">allInternalSets</span></code></p></td>
+<td><p>A repository of Set objects specifying picked regions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">surfaces</span></code></p></td>
+<td><p>A repository of Surface objects specifying for more information, see Surface.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">allSurfaces</span></code></p></td>
+<td><p>A repository of Surface objects specifying the contents of the <strong>allSurfaces</strong> repository is the same as the contents of the <strong>surfaces</strong> repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">allInternalSurfaces</span></code></p></td>
+<td><p>A repository of Surface objects specifying picked regions.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">skins</span></code></p></td>
+<td><p>A repository of Skin objects specifying the skins created on the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">stringers</span></code></p></td>
+<td><p>A repository of Stringer objects specifying the stringers created on the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">referencePoints</span></code></p></td>
+<td><p>A repository of ReferencePoint objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">engineeringFeatures</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../../reference/mdb/model/part_assembly/engineering.html#abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature" title="abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature"><code class="xref py py-class docutils literal notranslate"><span class="pre">EngineeringFeature</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sectionAssignments</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.SectionAssignmentArray.SectionAssignmentArray" title="abaqus.Property.SectionAssignmentArray.SectionAssignmentArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">SectionAssignmentArray</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">materialOrientations</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.MaterialOrientationArray.MaterialOrientationArray" title="abaqus.Property.MaterialOrientationArray.MaterialOrientationArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MaterialOrientationArray</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">compositeLayups</span></code></p></td>
+<td><p>A repository of CompositeLayup objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">elemEdges</span></code></p></td>
+<td><p>A repository of MeshEdge objects specifying all the element edges in the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">elementEdges</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/mesh.html#abaqus.Mesh.MeshEdgeArray.MeshEdgeArray" title="abaqus.Mesh.MeshEdgeArray.MeshEdgeArray"><code class="xref py py-class docutils literal notranslate"><span class="pre">MeshEdgeArray</span></code></a> object specifying all the unique element edges in the part.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">id</span></code></p></td>
+<td><p>An Int specifying the ID of the feature.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.PropertyPart.PropertyPart.CompositeLayup" title="abaqus.Property.PropertyPart.PropertyPart.CompositeLayup"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CompositeLayup</span></code></a>(name[, description, ...])</p></td>
+<td><p>This method creates a CompositeLayup object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.PropertyPart.PropertyPart.SectionAssignment" title="abaqus.Property.PropertyPart.PropertyPart.SectionAssignment"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SectionAssignment</span></code></a>(region, sectionName[, ...])</p></td>
+<td><p>This method creates a SectionAssignment object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation" title="abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaterialOrientation</span></code></a>([region, localCsys, ...])</p></td>
+<td><p>This method creates a MaterialOrientation object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.PropertyPart.PropertyPart.assignBeamSectionOrientation" title="abaqus.Property.PropertyPart.PropertyPart.assignBeamSectionOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assignBeamSectionOrientation</span></code></a>(region, method, n1)</p></td>
+<td><p>This method assigns a beam section orientation to a region of a part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.PropertyPart.PropertyPart.assignMaterialOrientation" title="abaqus.Property.PropertyPart.PropertyPart.assignMaterialOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assignMaterialOrientation</span></code></a>(region, localCsys)</p></td>
+<td><p>This method assigns a material orientation to a region.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.PropertyPart.PropertyPart.assignRebarOrientation" title="abaqus.Property.PropertyPart.PropertyPart.assignRebarOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">assignRebarOrientation</span></code></a>(region, localCsys[, ...])</p></td>
+<td><p>This method assigns a rebar reference orientation to a region.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.PropertyPart.PropertyPart.flipNormal" title="abaqus.Property.PropertyPart.PropertyPart.flipNormal"><code class="xref py py-obj docutils literal notranslate"><span class="pre">flipNormal</span></code></a>(regions[, referenceRegion])</p></td>
+<td><p>This method flips the normals of shell or membrane elements of an orphan mesh or of two-dimensional geometric regions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.PropertyPart.PropertyPart.flipTangent" title="abaqus.Property.PropertyPart.PropertyPart.flipTangent"><code class="xref py py-obj docutils literal notranslate"><span class="pre">flipTangent</span></code></a>(regions)</p></td>
+<td><p>This method flips the tangents of beam or truss elements of an orphan mesh or of one-dimensional geometric regions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.PropertyPart.PropertyPart.unassignBeamSectionOrientation" title="abaqus.Property.PropertyPart.PropertyPart.unassignBeamSectionOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unassignBeamSectionOrientation</span></code></a>(index)</p></td>
+<td><p>This method deletes a beam section orientation assignment.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.PropertyPart.PropertyPart.unassignMaterialOrientation" title="abaqus.Property.PropertyPart.PropertyPart.unassignMaterialOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unassignMaterialOrientation</span></code></a>(index)</p></td>
+<td><p>This method deletes a material orientation assignment.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/property.html#abaqus.Property.PropertyPart.PropertyPart.unassignRebarOrientation" title="abaqus.Property.PropertyPart.PropertyPart.unassignRebarOrientation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unassignRebarOrientation</span></code></a>(index)</p></td>
+<td><p>This method deletes a rebar orientation assignment.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">PartBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromBooleanCut</span></code>(name, instanceToBeCut, ...)</p></td>
+<td><p>This method creates a Part in the parts repository after subtracting or cutting the geometries of a group of part instances from that of a base part instance.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromBooleanMerge</span></code>(name, instances[, ...])</p></td>
+<td><p>This method creates a Part in the parts repository after merging two or more part instances.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromExtrude2DMesh</span></code>(name, part, depth, ...)</p></td>
+<td><p>This method creates a Part object by extruding an existing two-dimensional orphan mesh Part object in the positive <strong>Z</strong>-direction and places it in the parts repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromGeometryFile</span></code>(name, geometryFile, ...)</p></td>
+<td><p>This method creates a Part object and places it in the parts repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromInstanceMesh</span></code>(name[, partInstances, ...])</p></td>
+<td><p>This method creates a Part object containing the mesh found in the supplied PartInstance objects and places the new Part object in the parts repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromMesh</span></code>(name[, copySets])</p></td>
+<td><p>This method creates a Part object containing the mesh found in the part and places the new Part object in the parts repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromMeshMirror</span></code>(name, part, point1, point2)</p></td>
+<td><p>This method creates a Part object by mirroring an existing orphan mesh Part object about a specified plane and places it in the parts repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromNodesAndElements</span></code>(name, ...[, twist])</p></td>
+<td><p>This method creates a Part object from nodes and elements and places it in the parts repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromOdb</span></code>(name, odb[, fileName, instance, ...])</p></td>
+<td><p>This method creates an orphan mesh Part object by reading an output database.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromSection3DMeshByPlane</span></code>(name, part, ...)</p></td>
+<td><p>This method creates a Part object by cutting an existing three-dimensional orphan mesh Part object by a plane and places it in the parts repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartFromSubstructure</span></code>(name, substructureFile, ...)</p></td>
+<td><p>This method creates a substructure Part object by reading a substructure sim file and places it in the parts repository.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Part2DGeomFrom2DMesh</span></code>(name, part, featureAngle)</p></td>
+<td><p>This method creates a geometric Part object from the outline of an existing two-dimensional orphan mesh Part object and places it in the parts repository.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>(*args, **kwargs)</p></td>
+<td><p>This method modifies the Part object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">addGeomToSketch</span></code>(sketch)</p></td>
+<td><p>This method converts a part into a sketch by projecting all of the edges of the part onto the X-Y plane of the sketch.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">assignThickness</span></code>(faces[, thickness, ...])</p></td>
+<td><p>This method assigns thickness data to shell faces.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">backup</span></code>()</p></td>
+<td><p>This method makes a backup copy of the features in the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">checkGeometry</span></code>([detailed, reportFacetErrors, ...])</p></td>
+<td><p>This method checks the validity of the geometry of the part and prints a count of all topological entities on the part (faces, edges, vertices, etc.).</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">clearGeometryCache</span></code>()</p></td>
+<td><p>This method clears the geometry cache.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteAllFeatures</span></code>()</p></td>
+<td><p>This method deletes all the features in the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">deleteFeatures</span></code>(featureNames)</p></td>
+<td><p>This method deletes the given features.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getAngle</span></code>(plane1, plane2, line1, line2[, ...])</p></td>
+<td><p>This method returns the angle between the specified entities.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getArea</span></code>(faces[, relativeAccuracy])</p></td>
+<td><p>This method returns the total surface area of a given face or group of faces.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getAssociatedCADPaths</span></code>()</p></td>
+<td><p>This method returns the paths to the associated CAD part and root file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getCADParameters</span></code>()</p></td>
+<td><p>This method returns the names and values of the CAD parameters associated with the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getCentroid</span></code>(faces, cells[, relativeAccuracy])</p></td>
+<td><p>Location of the centroid of a given face/cell or group of faces/cells</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getCoordinates</span></code>(entity)</p></td>
+<td><p>This method returns the coordinates of specified point.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getCurvature</span></code>(edges[, samplePoints])</p></td>
+<td><p>This method returns the maximum curvature of a given edge or group of edges.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getDistance</span></code>(entity1, entity2)</p></td>
+<td><p>Depending on the arguments provided, this method returns one of the following:</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getLength</span></code>(edges)</p></td>
+<td><p>This method returns the length of a given edge or group of edges.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPerimeter</span></code>(faces)</p></td>
+<td><p>This method returns the total perimeter of a given face or group of faces.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getVolume</span></code>(cells[, relativeAccuracy])</p></td>
+<td><p>This method returns the volume area of a given cell or group of cells.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getMassProperties</span></code>([regions, ...])</p></td>
+<td><p>This method returns the mass properties of a part or region.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFeatureFaces</span></code>(name)</p></td>
+<td><p>This method returns a sequence of Face objects that are created by the given feature.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFeatureEdges</span></code>(name)</p></td>
+<td><p>This method returns a sequence of Edge objects that are created by the given feature.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFeatureCells</span></code>(name)</p></td>
+<td><p>This method returns a sequence of Cell objects that are created by the given feature.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFeatureVertices</span></code>(name)</p></td>
+<td><p>This method returns a sequence of ConstrainedSketchVertex objects that are created by the given feature.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isAlignedWithSketch</span></code>()</p></td>
+<td><p>This method checks if the normal of an analytical rigid surface part is aligned with that of its sketch.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">printAssignedSections</span></code>()</p></td>
+<td><p>This method prints information on each section that has been assigned to a region of the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">projectEdgesOntoSketch</span></code>(sketch, edges[, ...])</p></td>
+<td><p>This method projects the selected edges of a part onto the specified ConstrainedSketch object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">projectReferencesOntoSketch</span></code>(sketch[, ...])</p></td>
+<td><p>This method projects the vertices of specified edges, and datum points from the part onto the specified ConstrainedSketch object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">queryAttributes</span></code>([printResults])</p></td>
+<td><p>This method prints the following information about a part:</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">queryCachedStates</span></code>()</p></td>
+<td><p>This method displays the position of geometric states relative to the sequence of features in the part cache.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">queryGeometry</span></code>([relativeAccuracy, printResults])</p></td>
+<td><p>This method prints the following information about a part:</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">queryRegionsMissingSections</span></code>()</p></td>
+<td><p>This method returns all regions in the part that do not have a section assignment but require one for analysis.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">queryDisjointPlyRegions</span></code>()</p></td>
+<td><p>This method provides a list of all composite plys in the current part which have disjoint regions.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">regenerate</span></code>()</p></td>
+<td><p>This method regenerates a part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">regenerationWarnings</span></code>()</p></td>
+<td><p>This method prints any regeneration warnings associated with the features.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">removeInvalidGeometry</span></code>()</p></td>
+<td><p>Removes all invalid entities from the part, leaving a valid part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restore</span></code>()</p></td>
+<td><p>This method restores the parameters of all features in the assembly to the value they had before a failed regeneration.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resumeAllFeatures</span></code>()</p></td>
+<td><p>This method resumes all the suppressed features in the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resumeFeatures</span></code>(featureNames)</p></td>
+<td><p>This method resumes the specified suppressed features in the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resumeLastSetFeatures</span></code>()</p></td>
+<td><p>This method resumes the last set of features to be suppressed in the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">saveGeometryCache</span></code>()</p></td>
+<td><p>This method caches the current geometry.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setAssociatedCADPaths</span></code>([partFile, rootFile])</p></td>
+<td><p>This method sets the paths to the associated CAD part and root file.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppressFeatures</span></code>(featureNames)</p></td>
+<td><p>This method suppresses the given features.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeAcisFile</span></code>(fileName[, version])</p></td>
+<td><p>This method exports the geometry of the part to a named file in ACIS format.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeCADParameters</span></code>(paramFile[, ...])</p></td>
+<td><p>This method writes the parameters that were imported from the CAD system to a parameter file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeIgesFile</span></code>(fileName, flavor)</p></td>
+<td><p>This method exports the geometry of the part to a named file in IGES format.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeStepFile</span></code>(fileName)</p></td>
+<td><p>This method exports the geometry of the part to a named file in STEP format.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">writeVdaFile</span></code>(fileName)</p></td>
+<td><p>This method exports the geometry of the part to a named file in VDA-FS format.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyMeshPattern</span></code>(elements, faces, elemFaces, ...)</p></td>
+<td><p>This method copies a mesh pattern from a source region consisting of a set of shell elements or element faces onto a target face, mapping nodes and elements in a one-one correspondence between source and target.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">smoothNodes</span></code>(nodes)</p></td>
+<td><p>This method smooths the given nodes of a native mesh, moving them locally to a more optimal location that improves the quality of the mesh</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Lock</span></code>()</p></td>
+<td><p>This method locks the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Unlock</span></code>()</p></td>
+<td><p>This method unlocks the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">LockForUpgrade</span></code>()</p></td>
+<td><p>This method locks the part for upgrade.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">PartFeature</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AutoRepair</span></code>()</p></td>
+<td><p>This method carries out a sequence of geometry repair operations if it contains invalid entities.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AddCells</span></code>(faceList[, flipped])</p></td>
+<td><p>This method tries to convert a shell entity to a solid entity.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AnalyticRigidSurf2DPlanar</span></code>(sketch)</p></td>
+<td><p>This method creates a first Feature object for an analytical rigid surface by creating a planar wire from the given ConstrainedSketch object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AnalyticRigidSurfExtrude</span></code>(sketch[, depth])</p></td>
+<td><p>This method creates a first Feature object for an analytical rigid surface by extruding the given ConstrainedSketch object by the given depth, creating a surface.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AnalyticRigidSurfRevolve</span></code>(sketch)</p></td>
+<td><p>This method creates a first Feature object for an analytical rigid surface by revolving the given ConstrainedSketch object by 360° about the <strong>Y</strong>-axis.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AssignMidsurfaceRegion</span></code>(cellList)</p></td>
+<td><p>This method assign a mid-surface property to sequence of Cell objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseSolidExtrude</span></code>(sketch, depth[, ...])</p></td>
+<td><p>This method creates a first Feature object by extruding the given ConstrainedSketch object by the given depth, creating a solid.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseSolidRevolve</span></code>(sketch, angle[, pitch, ...])</p></td>
+<td><p>This method creates a first Feature object by revolving the given ConstrainedSketch object by the given angle, creating a solid.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseSolidSweep</span></code>(sketch, path)</p></td>
+<td><p>This method creates a first Feature object by sweeping the given profile ConstrainedSketch object along the path defined by the path ConstrainedSketch object, creating a solid.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseShell</span></code>(sketch)</p></td>
+<td><p>This method creates a first Feature object by creating a planar shell from the given ConstrainedSketch object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseShellExtrude</span></code>(sketch, depth[, ...])</p></td>
+<td><p>This method creates a first Feature object by extruding the given ConstrainedSketch object by the given depth, creating a shell.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseShellRevolve</span></code>(sketch, angle[, pitch, ...])</p></td>
+<td><p>This method creates a first Feature object by revolving the given ConstrainedSketch object by the given angle, creating a shell.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseShellSweep</span></code>(sketch, path)</p></td>
+<td><p>This method creates a first Feature object by sweeping the given section ConstrainedSketch object along the path defined by the path ConstrainedSketch object, creating a shell.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BaseWire</span></code>(sketch)</p></td>
+<td><p>This method creates a first Feature object by creating a planar wire from the given ConstrainedSketch object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">BlendFaces</span></code>(side1, side2[, method, path])</p></td>
+<td><p>This method creates a Feature object by creating new faces that blends two sets of faces.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chamfer</span></code>(length, edgeList)</p></td>
+<td><p>This method creates an additional Feature object by chamfering the given list of edges with a given length.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Mirror</span></code>(mirrorPlane, keepOriginal[, ...])</p></td>
+<td><p>This method mirrors existing part geometry across a plane to create new geometry.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConvertToAnalytical</span></code>()</p></td>
+<td><p>This method attempts to change entities into a simpler form that will speed up processing and make entities available during feature operations.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConvertToPrecise</span></code>([method])</p></td>
+<td><p>This method attempts to change imprecise entities so that the geometry becomes precise.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CoverEdges</span></code>(edgeList[, tryAnalytical])</p></td>
+<td><p>This method generates a face using the given edges as the face's boundaries.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Cut</span></code>(sketchPlane, sketchPlaneSide, ...[, ...])</p></td>
+<td><p>This method creates an additional Feature object by cutting a hole using the given ConstrainedSketch object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CutExtrude</span></code>(sketchPlane, sketchPlaneSide, ...)</p></td>
+<td><p>This method creates an additional Feature object by extruding the given ConstrainedSketch object by the given depth and cutting away material in the solid and shell regions of the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CutLoft</span></code>(loftsections[, startCondition, ...])</p></td>
+<td><p>This method creates an additional Feature object by lofting between the given sections and cutting away material from the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CutRevolve</span></code>(sketchPlane, sketchPlaneSide, ...)</p></td>
+<td><p>This method creates an additional Feature object by revolving the given ConstrainedSketch object by the given angle and cutting away material from the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CutSweep</span></code>(path, profile[, pathPlane, ...])</p></td>
+<td><p>This method creates an additional Feature object by sweeping the given ConstrainedSketch object along a path which may be a ConstrainedSketch or a sequence of Edge objects and cutting away material from the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExtendFaces</span></code>([faces, extendAlong, distance, ...])</p></td>
+<td><p>This method extends faces along its free edges by offsetting the external edges along the surfaces.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FaceFromElementFaces</span></code>(elementFaces[, stitch, ...])</p></td>
+<td><p>This method creates a geometry face from a collection of orphan element faces.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HoleBlindFromEdges</span></code>(plane, planeSide, ...)</p></td>
+<td><p>This method creates an additional Feature object by creating a circular blind hole of the given diameter and depth and cutting away material in the solid and shell regions of the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HoleFromEdges</span></code>(diameter, edge1, distance1, ...)</p></td>
+<td><p>This method creates an additional Feature object by creating a circular hole of the given diameter in a 2D planar part and cutting away material in the shell and wire regions of the part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">HoleThruAllFromEdges</span></code>(plane, planeSide, ...)</p></td>
+<td><p>This method creates an additional Feature object by creating a circular through hole of the given diameter and cutting away material in the solid and shell regions of the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">MergeEdges</span></code>([edgeList, extendSelection])</p></td>
+<td><p>This method merges edges either by extending the user selection or using only the selected edges.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">OffsetFaces</span></code>(faceList[, distance, ...])</p></td>
+<td><p>This method creates new faces by offsetting existing faces.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RemoveCells</span></code>(cellList)</p></td>
+<td><p>This method converts a solid entity to a shell entity.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RemoveFaces</span></code>(faceList[, deleteCells])</p></td>
+<td><p>This method removes faces from a solid entity or from a shell entity.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RemoveFacesAndStitch</span></code>(faceList)</p></td>
+<td><p>This method removes faces from a solid entity and attempts to close the resulting gap by extending the neighboring faces of the solid.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RemoveRedundantEntities</span></code>([vertexList, ...])</p></td>
+<td><p>This method removes redundant edges and vertices from a solid or a shell entity.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RepairFaceNormals</span></code>([faceList])</p></td>
+<td><p>This method works on the entire part or a sequence of shell faces.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RepairInvalidEdges</span></code>(edgeList)</p></td>
+<td><p>This method repairs invalid edges.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RepairSliver</span></code>(face, point1, point2[, ...])</p></td>
+<td><p>This method repairs the selected sliver from the selected face.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RepairSmallEdges</span></code>(edgeList[, toleranceChecks])</p></td>
+<td><p>This method repairs small edges.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RepairSmallFaces</span></code>(faceList[, toleranceChecks])</p></td>
+<td><p>This method repairs small faces.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReplaceFaces</span></code>(faceList[, stitch])</p></td>
+<td><p>This method replaces the selected faces with a single face.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Round</span></code>(radius, edgeList, vertexList)</p></td>
+<td><p>This method creates an additional Feature object by rounding (filleting) the given list of entities with the given radius.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Shell</span></code>(sketchPlane, sketchPlaneSide, ...[, ...])</p></td>
+<td><p>This method creates an additional Feature object by creating a planar shell from the given ConstrainedSketch object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShellExtrude</span></code>(sketchPlane, sketchPlaneSide, ...)</p></td>
+<td><p>This method creates an additional Feature object by extruding the given ConstrainedSketch object by the given depth, creating a shell protrusion.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShellLoft</span></code>(loftsections[, startCondition, ...])</p></td>
+<td><p>This method creates an additional Feature object by lofting between the given sections and adding shell faces to the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShellRevolve</span></code>(sketchPlane, sketchPlaneSide, ...)</p></td>
+<td><p>This method creates an additional Feature object by revolving the given ConstrainedSketch object by the given angle, creating a shell protrusion.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ShellSweep</span></code>(path, profile[, pathPlane, ...])</p></td>
+<td><p>This method creates an additional Feature object by sweeping the given ConstrainedSketch object or a sequence of Edge objects along a path which may be a ConstrainedSketch or a sequence of Edge objects, creating a shell swept protrusion.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SolidExtrude</span></code>(sketchPlane, sketchPlaneSide, ...)</p></td>
+<td><p>This method creates an additional Feature object by extruding the given ConstrainedSketch object by the given depth, creating a solid protrusion.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SolidLoft</span></code>(loftsections[, startCondition, ...])</p></td>
+<td><p>This method creates an additional Feature object by lofting between the given sections and adding material to the part.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SolidRevolve</span></code>(sketchPlane, sketchPlaneSide, ...)</p></td>
+<td><p>This method creates an additional Feature object by revolving the given ConstrainedSketch object by the given angle, creating a solid protrusion.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">SolidSweep</span></code>(path, profile[, pathPlane, ...])</p></td>
+<td><p>This method creates an additional Feature object by sweeping the given ConstrainedSketch object or a Face object along a path which may be a ConstrainedSketch or a sequence of Edge objects, creating a solid swept protrusion.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Stitch</span></code>([edgeList, stitchTolerance])</p></td>
+<td><p>This method attempts to create a valid part by binding together free and imprecise edges of all the faces of a part.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">Wire</span></code>(sketchPlane, sketchPlaneSide, ...[, ...])</p></td>
+<td><p>This method creates an additional Feature object by creating a planar wire from the given ConstrainedSketch object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">WireSpline</span></code>(points[, mergeType, ...])</p></td>
+<td><p>This method creates an additional Feature object by creating a spline wire that passes through a sequence of given points.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">WirePolyLine</span></code>(points[, mergeType, meshable])</p></td>
+<td><p>This method creates an additional Feature object by creating a polyline wire that passes through a sequence of given points.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">WireFromEdge</span></code>(edgeList)</p></td>
+<td><p>This method creates an additional Feature object by creating a Wire by selecting one or more Edge objects of a Solid or Shell part.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">Feature</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AttachmentPoints</span></code>(name, points[, ...])</p></td>
+<td><p>This method creates an attachment points Feature.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AttachmentPointsAlongDirection</span></code>(name, ...[, ...])</p></td>
+<td><p>This method creates a Feature object by creating attachment points along a direction or between two points.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AttachmentPointsOffsetFromEdges</span></code>(name, edges)</p></td>
+<td><p>This method creates a Feature object by creating attachment points along or offset from one or more connected edges.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumAxisByCylFace</span></code>(face)</p></td>
+<td><p>This method creates a Feature object and a DatumAxis object along the axis of a cylinder or cone.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumAxisByNormalToPlane</span></code>(plane, point)</p></td>
+<td><p>This method creates a Feature object and a DatumAxis object normal to the specified plane and passing through the specified point.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumAxisByParToEdge</span></code>(edge, point)</p></td>
+<td><p>This method creates a Feature object and a DatumAxis object parallel to the specified edge and passing through the specified point.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumAxisByPrincipalAxis</span></code>(principalAxis)</p></td>
+<td><p>This method creates a Feature object and a DatumAxis object along one of the three principal axes.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumAxisByRotation</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumAxisByThreePoint</span></code>(point1, point2, point3)</p></td>
+<td><p>This method creates a Feature object and a DatumAxis object normal to the circle described by three points and through its center.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumAxisByThruEdge</span></code>(edge)</p></td>
+<td><p>This method creates a Feature object and a DatumAxis object along the specified edge.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumAxisByTwoPlane</span></code>(plane1, plane2)</p></td>
+<td><p>This method creates a Feature object and a DatumAxis object at the intersection of two planes.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumAxisByTwoPoint</span></code>(point1, point2)</p></td>
+<td><p>This method creates a Feature object and a DatumAxis object along the line joining two points.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumCsysByDefault</span></code>(coordSysType[, name])</p></td>
+<td><p>This method creates a Feature object and a DatumCsys object from the specified default coordinate system at the origin.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumCsysByOffset</span></code>(coordSysType, ...[, name])</p></td>
+<td><p>This method creates a Feature object and a DatumCsys object by offsetting the origin of an existing datum coordinate system to a specified point.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumCsysByThreePoints</span></code>(coordSysType, origin, ...)</p></td>
+<td><p>This method creates a Feature object and a DatumCsys object from three points.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumCsysByTwoLines</span></code>(coordSysType, line1, line2)</p></td>
+<td><p>This method creates a Feature object and a DatumCsys object from two orthogonal lines.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumPlaneByPrincipalPlane</span></code>(principalPlane, ...)</p></td>
+<td><p>This method creates a Feature object and a DatumPlane object through the origin along one of the three principal planes.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumPlaneByOffset</span></code>(*args, **kwargs)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumPlaneByRotation</span></code>(plane, axis, angle)</p></td>
+<td><p>This method creates a Feature object and a DatumPlane object by rotating a plane about the specified axis through the specified angle.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumPlaneByThreePoints</span></code>(point1, point2, point3)</p></td>
+<td><p>This method creates a Feature object and a DatumPlane object defined by passing through three points.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumPlaneByLinePoint</span></code>(line, point)</p></td>
+<td><p>This method creates a Feature object and a DatumPlane object that pass through the specified line and through the specified point that does not lie on the line.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumPlaneByPointNormal</span></code>(point, normal)</p></td>
+<td><p>This method creates a Feature object and a DatumPlane object normal to the specified line and running through the specified point.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumPlaneByTwoPoint</span></code>(point1, point2)</p></td>
+<td><p>This method creates a Feature object and a DatumPlane object midway between two points and normal to the line connecting the points.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumPointByCoordinate</span></code>(coords)</p></td>
+<td><p>This method creates a Feature object and a DatumPoint object at the point defined by the specified coordinates.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumPointByOffset</span></code>(point, vector)</p></td>
+<td><p>This method creates a Feature object and a DatumPoint object offset from an existing point by a vector.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumPointByMidPoint</span></code>(point1, point2)</p></td>
+<td><p>This method creates a Feature object and a DatumPoint object midway between two points.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumPointByOnFace</span></code>(face, edge1, offset1, ...)</p></td>
+<td><p>This method creates a Feature object and a DatumPoint object on the specified face, offset from two edges.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumPointByEdgeParam</span></code>(edge, parameter)</p></td>
+<td><p>This method creates a Feature object and a DatumPoint object along an edge at a selected distance from one end of the edge.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumPointByProjOnEdge</span></code>(point, edge)</p></td>
+<td><p>This method creates a Feature object and a DatumPoint object along an edge by projecting an existing point along the normal to the edge.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">DatumPointByProjOnFace</span></code>(point, face)</p></td>
+<td><p>This method creates a Feature object and a DatumPoint object on a specified face by projecting an existing point onto the face.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">MakeSketchTransform</span></code>(sketchPlane[, origin, ...])</p></td>
+<td><p>This method creates a Transform object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionCellByDatumPlane</span></code>(cells, datumPlane)</p></td>
+<td><p>This method partitions one or more cells using the given datum plane.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionCellByExtendFace</span></code>(cells, extendFace)</p></td>
+<td><p>This method partitions one or more cells by extending the underlying geometry of a given face to partition the target cells.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionCellByExtrudeEdge</span></code>(cells, edges, ...)</p></td>
+<td><p>This method partitions one or more cells by extruding selected edges in the given direction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionCellByPatchNCorners</span></code>(cell, cornerPoints)</p></td>
+<td><p>This method partitions a cell using an N-sided cutting patch defined by the given corner points.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionCellByPatchNEdges</span></code>(cell, edges)</p></td>
+<td><p>This method partitions a cell using an N-sided cutting patch defined by the given edges.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionCellByPlaneNormalToEdge</span></code>(cells, ...)</p></td>
+<td><p>This method partitions one or more cells using a plane normal to an edge at the given edge point.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionCellByPlanePointNormal</span></code>(cells, ...)</p></td>
+<td><p>This method partitions one or more cells using a plane defined by a point and a normal direction.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionCellByPlaneThreePoints</span></code>(cells, ...)</p></td>
+<td><p>This method partitions one or more cells using a plane defined by three points.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionCellBySweepEdge</span></code>(cells, edges, sweepPath)</p></td>
+<td><p>This method partitions one or more cells by sweeping selected edges along the given sweep path.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionEdgeByDatumPlane</span></code>(edges, datumPlane)</p></td>
+<td><p>This method partitions an edge where it intersects with a datum plane.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionEdgeByParam</span></code>(edges, parameter)</p></td>
+<td><p>This method partitions one or more edges at the given normalized edge parameter.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionEdgeByPoint</span></code>(edge, point)</p></td>
+<td><p>This method partitions an edge at the given point.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionFaceByAuto</span></code>(face)</p></td>
+<td><p>This method automatically partitions a target face into simple regions that can be meshed using a structured meshing technique.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionFaceByCurvedPathEdgeParams</span></code>(face, ...)</p></td>
+<td><p>This method partitions a face normal to two edges, using a curved path between the two given edge points defined by the normalized edge parameters.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionFaceByCurvedPathEdgePoints</span></code>(face, ...)</p></td>
+<td><p>This method partitions a face normal to two edges, using a curved path between the two given edge points.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionFaceByDatumPlane</span></code>(faces, datumPlane)</p></td>
+<td><p>This method partitions one or more faces using the given datum plane.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionFaceByExtendFace</span></code>(faces, extendFace)</p></td>
+<td><p>This method partitions one or more faces by extending the underlying geometry of another given face to partition the target faces.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionFaceByIntersectFace</span></code>(faces, cuttingFaces)</p></td>
+<td><p>This method partitions one or more faces using the given cutting faces to partition the target faces.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionFaceByProjectingEdges</span></code>(faces, edges)</p></td>
+<td><p>This method partitions one or more faces by projecting the given edges on the target faces.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionFaceByShortestPath</span></code>(faces, point1, ...)</p></td>
+<td><p>This method partitions one or more faces using a minimum distance path between the two given points.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionFaceBySketch</span></code>(faces, sketch[, ...])</p></td>
+<td><p>This method partitions one or more planar faces by sketching on them.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionFaceBySketchDistance</span></code>(faces, ...[, ...])</p></td>
+<td><p>This method partitions one or more faces by sketching on a sketch plane and then projecting the sketch toward the target faces through the given distance.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionFaceBySketchRefPoint</span></code>(faces, ...[, ...])</p></td>
+<td><p>This method partitions one or more faces by sketching on a sketch plane and then projecting the sketch toward the target faces through a distance governed by the reference point.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">PartitionFaceBySketchThruAll</span></code>(faces, ...[, ...])</p></td>
+<td><p>This method partitions one or more faces by sketching on a sketch plane and then projecting toward the target faces through an infinite distance.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ReferencePoint</span></code>(point[, instanceName])</p></td>
+<td><p>This method creates a Feature object and a ReferencePoint object at the specified location.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">RemoveWireEdges</span></code>(wireEdgeList)</p></td>
+<td><p>This method removes wire edges.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">WirePolyLine</span></code>(points[, mergeType, meshable])</p></td>
+<td><p>This method creates an additional Feature object by creating a polyline wire that passes through a sequence of given points.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">isSuppressed</span></code>()</p></td>
+<td><p>This method queries the suppressed state of the feature.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restore</span></code>()</p></td>
+<td><p>This method restores the parameters of all features in the assembly to the value they had before a failed regeneration.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">resume</span></code>()</p></td>
+<td><p>This method resumes suppressed features.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>(*args, **kwargs)</p></td>
+<td><p>This method modifies the Part object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">suppress</span></code>()</p></td>
+<td><p>This method suppresses features.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+</dd></dl>
+
+<hr class="docutils" />
+</section>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="profile.html" title="上一页 页">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">上一页</p>
+          <p class="prev-next-title">Beam Section Profile</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="section.html" title="下一页 页">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">下一页</p>
+      <p class="prev-next-title">Section</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-properties-for-part">
+   Create properties for Part
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../../_sources/summary/mdb/model/property.rst.txt">
+        <i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
