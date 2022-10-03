@@ -1,0 +1,41 @@
+name: Update docs
+on:
+  push:
+    branches:
+    - main
+    paths:
+    - 'src/**'
+    - 'docs/source/**'
+  workflow_dispatch:
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        language: ['en', 'zh_CN']
+    env:
+      SPHINXOPTS: "-D language='${{ matrix.language }}'"
+    steps:
+    - uses: actions/setup-python@v4
+      with:
+        python-version: 3.10
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
+    - name: Installing the library
+      shell: bash -l {0}
+      run: |
+        python setup.py install
+    - name: Build and Commit
+      uses: sphinx-notes/pages@v2
+      with:
+        documentation_path: docs/source
+        requirements_path: docs/requirements.txt
+    - name: Push changes
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+        github_token: ${{ secrets.PUSH_TO_DOCS }}
+        repository: haiiliin/docs.abqpy.com
+        branch: main
+        directory: ${{ matrix.language }}/${{ github.ref_name }}
