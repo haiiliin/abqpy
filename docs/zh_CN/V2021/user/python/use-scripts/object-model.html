@@ -1,0 +1,1220 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>The Abaqus object model &#8212; abqpy 2021 文档</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'user/python/use-scripts/object-model';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2021';
+        </script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="Copying, deleting, and renaming Abaqus Scripting Interface objects" href="modify-objects.html" />
+    <link rel="prev" title="Using the Abaqus Scripting Interface with Abaqus/CAE" href="../use-scripts.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="zh-CN">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2021 文档</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2021  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2021  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../about.html">
+   About the Abaqus Scripting Interface
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/interface.html">
+     Abaqus/CAE and the Abaqus Scripting Interface
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../about/interact.html">
+     How does the Abaqus Scripting Interface interact with Abaqus/CAE?
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../about/examples.html">
+     Simple examples
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/create-part.html">
+       Creating a part
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/read-output.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../about/examples/summary.html">
+       Summary
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../python.html">
+   Using the Abaqus Scripting Interface
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../introduction.html">
+     Introduction to Python
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/python-abaqus.html">
+       Python and Abaqus
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/python-resources.html">
+       Python resources
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/python-interpreter.html">
+       Using the Python interpreter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/oop-basics.html">
+       Object-oriented basics
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/python-basics.html">
+       The basics of Python
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/programming.html">
+       Programming techniques
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../introduction/further-reading.html">
+       Further reading
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../python-abaqus.html">
+     Using Python and the Abaqus Scripting Interface
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/executing.html">
+       Executing scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/types.html">
+       Abaqus Scripting Interface data types
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/oop.html">
+       Object-oriented programming and the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/errors.html">
+       Error handling in the Abaqus Scripting Interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python-abaqus/extending.html">
+       Extending the Abaqus Scripting Interface
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../use-scripts.html">
+     Using the Abaqus Scripting Interface with Abaqus/CAE
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       The Abaqus object model
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="modify-objects.html">
+       Copying, deleting, and renaming Abaqus Scripting Interface objects
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sequences.html">
+       Abaqus/CAE sequences
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="namespace.html">
+       Namespace
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="specify-viewport.html">
+       Specifying what is displayed in the viewport
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="specify-region.html">
+       Specifying a region
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="user-input.html">
+       Prompting the user for input
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="interact.html">
+       Interacting with Abaqus/Standard and Abaqus/Explicit
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="environment-file.html">
+       Using Abaqus Scripting Interface commands in your environment file
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../environment.html">
+   The Abaqus Python Development Environment
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/about.html">
+     About the Abaqus Python development environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/pde-basics.html">
+     Abaqus PDE basics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../environment/use-pde.html">
+     Using the Abaqus PDE
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../examples.html">
+   Putting it all Together: Abaqus Scripting Interface Examples
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/cantilever.html">
+     Reproducing the cantilever beam tutorial
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/plot.html">
+     Generating a customized plot
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/sensitivity.html">
+     Investigating the skew sensitivity of shell elements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../examples/settings.html">
+     Editing display preferences and GUI settings
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../output.html">
+   Accessing an Output Database
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../output/python.html">
+     Using the Abaqus Scripting Interface to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/need-what-to-understand.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/execute-script.html">
+       Executing a script that accesses an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/python/examples.html">
+       Example scripts that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../output/cpp.html">
+     Using C++ to access an output database
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/about.html">
+       About the C++ interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/need-what-access.html">
+       What do you need to access the output database?
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/style.html">
+       Abaqus Scripting Interface documentation style
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/object-model.html">
+       How the object model for the output database relates to commands
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/output-object-model.html">
+       Object model for the output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/compile-link.html">
+       Compiling and linking your C++ source code
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/access.html">
+       Accessing the C++ interface from an existing application
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/architecture.html">
+       The Abaqus C++ API architecture
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/utility.html">
+       Utility interface
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/read.html">
+       Reading from an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/write.html">
+       Writing to an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/exceptions.html">
+       Exception handling in an output database
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/computations.html">
+       Computations with Abaqus results
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/improve-efficiency.html">
+       Improving the efficiency of your scripts
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../output/cpp/examples.html">
+       Example programs that access data from an output database
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="the-abaqus-object-model">
+<h1>The Abaqus object model<a class="headerlink" href="#the-abaqus-object-model" title="此标题的永久链接">#</a></h1>
+<p>We have already discussed how Python provides built-in objects like integers, lists, dictionaries, and strings. When you are writing Abaqus Scripting Interface scripts, you need to access these built-in objects together with the objects used by Abaqus/CAE. These Abaqus Scripting Interface objects extend Python with new types of objects. The hierarchy and the relationship between these objects is called the Abaqus object model. The following sections describe the Abaqus object model in more detail.</p>
+<section id="about-the-abaqus-object-model">
+<h2>About the Abaqus object model<a class="headerlink" href="#about-the-abaqus-object-model" title="此标题的永久链接">#</a></h2>
+<p>The object model is an important concept in object-oriented programming. The object model consists of the following:</p>
+<ul>
+<li><p>A definition of each Abaqus Scripting Interface object including its methods and data members. The object definitions are found in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a>.</p></li>
+<li><p>Definitions of the relationships between the objects. These relationships form the structure or the hierarchy of the object model. The relationships between the objects are summarized in the following list:</p>
+<ul>
+<li><p><strong>Ownership</strong></p>
+<p>The ownership hierarchy defines the access path to the objects in the Abaqus model.</p>
+</li>
+<li><p><strong>Associations</strong></p>
+<p>Associations describe the relationships between the objects; for example, whether one object refers to another and whether an object is an instance of another.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Abaqus extends Python with approximately 500 additional objects, and there are many relationships between these objects. As a result, the complete Abaqus object model is too complex to illustrate in a single figure.</p>
+<p>In general terms the Abaqus object model is divided into the Session, the Mdb, and the Odb objects, as shown in <a class="reference internal" href="#cmd-int-model-overview-nls"><span class="std std-numref">图 6</span></a></p>
+<figure class="align-center" id="id1">
+<span id="cmd-int-model-overview-nls"></span><a class="reference internal image-reference" href="../../../_images/cmd-int-model-overview-nls.png"><img alt="../../../_images/cmd-int-model-overview-nls.png" src="../../../_images/cmd-int-model-overview-nls.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 6 </span><span class="caption-text">The Abaqus object model.</span><a class="headerlink" href="#id1" title="此图像的永久链接">#</a></p>
+</figcaption>
+</figure>
+<p>An object in the object model can be one of the following:</p>
+<ul>
+<li><p><strong>Container</strong></p>
+<p>A Container is an object that contains objects of a similar type. A container in the Abaqus object model can be either a repository or a sequence. For example, the steps container is a repository that contains all the steps in the analysis. Your scripts use the steps container to access a step.</p>
+</li>
+<li><p><strong>Singular object</strong></p>
+<p>Objects that are not containers are shown as a Singular object. A singular object contains no other objects of a similar type; for example, the Session object and the Mdb object. There is only one Session object and only one Mdb object in the Abaqus object model.</p>
+<p>The … at the end of the object models shown in this section indicates that there are additional objects in the model that are not included in the figure. For clarity, the figures show only the most commonly used objects in the object model.</p>
+<p>The statement <cite>from abaqus import *</cite> imports the Session object (named <cite>session</cite>) and the Mdb object (named <cite>mdb</cite>) and makes them available to your scripts. The statement <cite>from odbAccess import *</cite> allows you to access Abaqus output results from your script. The Session, Mdb, and Odb objects are described as follows:</p>
+</li>
+<li><p><strong>Session</strong></p>
+<p>Session objects are objects that are not saved between Abaqus/CAE sessions; for example, the objects that define viewports, remote queues, and user-defined views, as shown in <a class="reference internal" href="#cmd-int-model-session-nls"><span class="std std-numref">图 7</span></a></p>
+<figure class="align-center" id="id2">
+<span id="cmd-int-model-session-nls"></span><a class="reference internal image-reference" href="../../../_images/cmd-int-model-session-nls.png"><img alt="../../../_images/cmd-int-model-session-nls.png" src="../../../_images/cmd-int-model-session-nls.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 7 </span><span class="caption-text">The Session object model.</span><a class="headerlink" href="#id2" title="此图像的永久链接">#</a></p>
+</figcaption>
+</figure>
+<p>The viewports container is owned by the Session object, as shown in <a class="reference internal" href="#cmd-int-model-session-nls"><span class="std std-numref">图 7</span></a>.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../../../_images/cmd-int-model-viewport-nls.png"><img alt="../../../_images/cmd-int-model-viewport-nls.png" src="../../../_images/cmd-int-model-viewport-nls.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 8 </span><span class="caption-text">The Viewport object model.</span><a class="headerlink" href="#id3" title="此图像的永久链接">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p><strong>Mdb</strong></p>
+<p>The statement from abaqus import * creates an instance of the Mdb object called mdb. Mdb objects are objects that are saved in a model database and can be recovered between Abaqus/CAE sessions. Mdb objects include the Model object and the Job object. The Model object, in turn, is comprised of Part objects, Section objects, Material objects, Step objects, etc. <a class="reference internal" href="#cmd-int-model-model-nls"><span class="std std-numref">图 9</span></a> shows the basic structure of the objects under the Model object. For more information, see The Model object model.</p>
+<figure class="align-center" id="id4">
+<span id="cmd-int-model-model-nls"></span><a class="reference internal image-reference" href="../../../_images/cmd-int-model-model-nls.png"><img alt="../../../_images/cmd-int-model-model-nls.png" src="../../../_images/cmd-int-model-model-nls.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 9 </span><span class="caption-text">The structure of the objects under the Model object.</span><a class="headerlink" href="#id4" title="此图像的永久链接">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p><strong>Odb</strong></p>
+<p>Odb objects are saved in an output database and contain both model and results data, as shown in <a class="reference internal" href="#cmd-int-model-odb-nls"><span class="std std-numref">图 10</span></a>.</p>
+<figure class="align-center" id="id5">
+<span id="cmd-int-model-odb-nls"></span><a class="reference internal image-reference" href="../../../_images/cmd-int-model-odb-nls.png"><img alt="../../../_images/cmd-int-model-odb-nls.png" src="../../../_images/cmd-int-model-odb-nls.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 10 </span><span class="caption-text">The Odb object model.</span><a class="headerlink" href="#id5" title="此图像的永久链接">#</a></p>
+</figcaption>
+</figure>
+<p>Most of the commands in the Abaqus Scripting Interface begin with either the Session, the Mdb, or the Odb object. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">session</span><span class="o">.</span><span class="n">viewports</span><span class="p">[</span><span class="s1">&#39;Viewport-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">bringToFront</span><span class="p">()</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;wheel&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">rootAssembly</span><span class="o">.</span><span class="n">regenerate</span><span class="p">()</span>
+<span class="n">stress</span> <span class="o">=</span> <span class="n">odb</span><span class="o">.</span><span class="n">steps</span><span class="p">[</span><span class="s1">&#39;Step-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">frames</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">fieldOutputs</span><span class="p">[</span><span class="s1">&#39;S&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id="using-tab-completion-to-explore-the-object-model">
+<h2>Using tab completion to explore the object model<a class="headerlink" href="#using-tab-completion-to-explore-the-object-model" title="此标题的永久链接">#</a></h2>
+<p>You can use tab completion from the command line interface to speed up your typing and to explore the object model. For example, you can type <cite>mdb.models[‘Model-1’].parts[</cite> in the command line interface. When you press the <strong>[Tab]</strong> key, the command line cycles through the parts in the model. When you press <strong>[Shift][Tab]</strong>, the command line cycles backwards through the parts in the model.</p>
+<p>Tab completion also searches the file system when it detects an incomplete string. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">part</span> <span class="kn">import</span> <span class="n">THR</span><span class="p">[</span><span class="n">Tab</span><span class="p">]</span>
+<span class="kn">from</span> <span class="nn">part</span> <span class="kn">import</span> <span class="n">THREE_D</span>
+<span class="n">openMdb</span><span class="p">(</span><span class="s1">&#39;hinge_t[Tab]</span>
+<span class="n">openMdb</span><span class="p">(</span><span class="s1">&#39;hinge_tutorial.mdb&#39;</span><span class="p">)</span>
+<span class="kn">from</span> <span class="nn">odbAccess</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">myOdb</span><span class="o">=</span><span class="n">openOdb</span><span class="p">(</span><span class="s1">&#39;vi[Tab]</span>
+<span class="n">myOdb</span><span class="o">=</span><span class="n">openOdb</span><span class="p">(</span><span class="s1">&#39;viewer_tutorial.odb&#39;</span><span class="p">)</span>
+<span class="n">In</span> <span class="n">most</span> <span class="n">cases</span> <span class="n">when</span> <span class="n">you</span> <span class="nb">type</span> <span class="ow">in</span> <span class="n">a</span> <span class="n">constructor</span> <span class="ow">or</span> <span class="n">a</span> <span class="n">method</span> <span class="ow">and</span> <span class="n">include</span> <span class="n">the</span> <span class="n">opening</span> <span class="n">parenthesis</span><span class="p">,</span> <span class="n">tab</span> <span class="n">completion</span> <span class="n">prompts</span> <span class="n">you</span> <span class="n">to</span> <span class="n">provide</span> <span class="n">a</span> <span class="n">value</span> <span class="k">for</span> <span class="n">a</span> <span class="n">keyword</span> <span class="n">argument</span><span class="o">.</span> <span class="n">For</span> <span class="n">example</span><span class="p">,</span>
+
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span><span class="p">([</span><span class="n">Tab</span><span class="p">]</span>
+<span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;Model-1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">Part</span><span class="p">(</span><span class="n">name</span><span class="o">=</span>
+<span class="n">When</span> <span class="n">you</span> <span class="n">press</span> <span class="n">the</span> <span class="n">Tab</span> <span class="n">key</span><span class="p">,</span> <span class="n">the</span> <span class="n">command</span> <span class="n">line</span> <span class="n">cycles</span> <span class="n">through</span> <span class="n">the</span> <span class="n">arguments</span> <span class="n">to</span> <span class="n">the</span> <span class="n">method</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>You can use tab completion when you are accessing an output database. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">p</span><span class="o">=</span><span class="n">myOdb</span><span class="o">.</span><span class="n">parts</span><span class="p">[[</span><span class="n">Tab</span><span class="p">]</span>
+<span class="n">p</span><span class="o">=</span><span class="n">myOdb</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="s1">&#39;Part-1&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>You can also use tab completion when you are accessing an output database from the Abaqus Python prompt. For example,</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="n">abaqus</span> <span class="n">python</span>
+<span class="o">&gt;&gt;&gt;</span><span class="kn">from</span> <span class="nn">odbAccess</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="o">&gt;&gt;&gt;</span><span class="n">myOdb</span><span class="o">=</span><span class="n">openOdb</span><span class="p">(</span><span class="s1">&#39;viewer_tutorial.odb&#39;</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span><span class="n">p</span><span class="o">=</span><span class="n">myOdb</span><span class="o">.</span><span class="n">parts</span><span class="p">[[</span><span class="n">Tab</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span><span class="n">p</span><span class="o">=</span><span class="n">myOdb</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="s1">&#39;Part-1&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="the-model-object-model">
+<h2>The Model object model<a class="headerlink" href="#the-model-object-model" title="此标题的永久链接">#</a></h2>
+<p>The Model object contains many objects. <a class="reference internal" href="#cmd-int-model-overview-nls-2"><span class="std std-numref">图 11</span></a> and <a class="reference internal" href="#cmd-int-model-assembly-nls"><span class="std std-numref">图 12</span></a> show the most commonly used objects that are contained in the Part and RootAssembly.</p>
+<figure class="align-center" id="id6">
+<span id="cmd-int-model-overview-nls-2"></span><a class="reference internal image-reference" href="../../../_images/cmd-int-model-overview-nls.png"><img alt="../../../_images/cmd-int-model-overview-nls.png" src="../../../_images/cmd-int-model-overview-nls.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 11 </span><span class="caption-text">The Part object model.</span><a class="headerlink" href="#id6" title="此图像的永久链接">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id7">
+<span id="cmd-int-model-assembly-nls"></span><a class="reference internal image-reference" href="../../../_images/cmd-int-model-assembly-nls.png"><img alt="../../../_images/cmd-int-model-assembly-nls.png" src="../../../_images/cmd-int-model-assembly-nls.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 12 </span><span class="caption-text">The RootAssembly object model.</span><a class="headerlink" href="#id7" title="此图像的永久链接">#</a></p>
+</figcaption>
+</figure>
+<p>The Job object is separate from the Model object. The object model for the Job object is straightforward; the Job object owns no other objects. The Job object refers to a Model object but is not owned by the Model object.</p>
+</section>
+<section id="using-the-object-model">
+<h2>Using the object model<a class="headerlink" href="#using-the-object-model" title="此标题的永久链接">#</a></h2>
+<ul class="simple">
+<li><p>Object model figures such as <a class="reference internal" href="#cmd-int-abstract-nls"><span class="std std-numref">图 13</span></a> provide important information to the Abaqus Scripting Interface programmer.</p></li>
+<li><p>The object model describes the relationships between objects. For example, in object-oriented programming terms a geometry object, such as a Cell, Face, Edge, or Vertex object, is said to be owned by the Part object. The Part object, in turn, is owned by the Model object. This ownership relationship between objects is referred to as the ownership hierarchy of the object model.</p></li>
+<li><p>Ownership implies that if an object is copied, everything owned by that object is also copied. Similarly, if an object is deleted, everything owned by the object is deleted. This concept is similar to parent-child relationships in Abaqus/CAE. If you delete a Part, all the children of the part—such as geometry, datums, and regions—are also deleted.</p></li>
+<li><p>The relationships between objects are described in the <cite>Path</cite> and <cite>Access</cite> descriptions in the command reference. For example, the following statement uses the path to a Cell object:</p></li>
+</ul>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span>  <span class="n">cell4</span> <span class="o">=</span> <span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="s1">&#39;block&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">parts</span><span class="p">[</span><span class="s1">&#39;crankcase&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">cells</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+
+<span class="n">The</span> <span class="n">statement</span> <span class="n">mirrors</span> <span class="n">the</span> <span class="n">structure</span> <span class="n">of</span> <span class="n">the</span> <span class="nb">object</span> <span class="n">model</span><span class="o">.</span> <span class="n">The</span> <span class="n">Cell</span> <span class="nb">object</span> <span class="ow">is</span> <span class="n">owned</span> <span class="n">by</span> <span class="n">a</span> <span class="n">Part</span> <span class="nb">object</span><span class="p">,</span> <span class="n">the</span> <span class="n">Part</span> <span class="nb">object</span> <span class="ow">is</span> <span class="n">owned</span> <span class="n">by</span> <span class="n">a</span> <span class="n">Model</span> <span class="nb">object</span><span class="p">,</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">Model</span> <span class="nb">object</span> <span class="ow">is</span> <span class="n">owned</span> <span class="n">by</span> <span class="n">the</span> <span class="n">Mdb</span> <span class="nb">object</span><span class="o">.</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>The associations between the objects are captured by the object model. Objects can refer to other objects; for example, the section objects refer to a material, and the interaction objects refer to a region, to steps, and possibly to amplitudes. An object that refers to another object usually has a data member that indicates the name of the object to which it is referring. For example, <cite>material</cite> is a member of the section objects, and createStepName is a member of the interaction objects.</p></li>
+</ul>
+</section>
+<section id="abstract-base-type">
+<h2>Abstract base type<a class="headerlink" href="#abstract-base-type" title="此标题的永久链接">#</a></h2>
+<p>The Abaqus object model includes the concept of an abstract base type. An abstract base type allows similar objects to share common attributes. For example, pressure and concentrated force are both kinds of loads. Object-oriented programmers call the relationship between pressure and load an is a relationship—a pressure is a kind of load. In this example Load is the name of the abstract base type. In the type hierachy Pressure and ConcentratedForce types have a base type Load. A Pressure is a Load.</p>
+<p>In <a class="reference internal" href="#cmd-int-abstract-nls"><span class="std std-numref">图 13</span></a> AnalysisStep and Step are both abstract base types. In terms of the real world a static step is an analysis step and a static step is also a step. In terms of the object model a StaticStep object is an AnalysisStep object and a StaticStep object is also a Step object.</p>
+<figure class="align-center" id="id8">
+<span id="cmd-int-abstract-nls"></span><a class="reference internal image-reference" href="../../../_images/cmd-int-abstract-nls.png"><img alt="../../../_images/cmd-int-abstract-nls.png" src="../../../_images/cmd-int-abstract-nls.png" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-number">图 13 </span><span class="caption-text">An example of the is a relationships between objects.</span><a class="headerlink" href="#id8" title="此图像的永久链接">#</a></p>
+</figcaption>
+</figure>
+<p>In contrast the object model figures described at the beginning of this section show what object-oriented programmers call has a relationships between objects. For example, a session has a viewport repository, and a model has a root assembly.</p>
+<p>Abaqus uses the name of the abstract base type as the name of the repository that contains objects of similar types. For example, the StaticStep, BuckleStep, and FrequencyStep constructors all create objects in the steps repository. Other abstract base types include Amplitude, BoundaryCondition, Datum, Field, Interaction, and Section.</p>
+<p>The term abstract implies that the Abaqus object model does not contain an object that has the type of an abstract base type. For example, there are no objects of type Load or Step in the Abaqus object model. In contrast, the Feature object is a base type, but it is not abstract. The Abaqus object model includes Feature objects.</p>
+</section>
+<section id="importing-modules-to-extend-the-object-model">
+<h2>Importing modules to extend the object model<a class="headerlink" href="#importing-modules-to-extend-the-object-model" title="此标题的永久链接">#</a></h2>
+<p>To access the objects referred to by the Model object, such as Part and Section objects, Abaqus/CAE extends or augments the object model by importing additional modules. For example, to create or access a Part object, Abaqus/CAE needs to import the part module. Abaqus/CAE imports all the modules when you start a session. As a result the entire object model is available to your scripts.</p>
+<p>However, in some cases, your script may need to import a module; for example, to access a module constant, type, or function. In addition, it is useful for you to know which module Abaqus/CAE imported to augment the object model with a particular object. You have already seen the syntax to import a module:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">part</span>
+<span class="kn">import</span> <span class="nn">section</span>
+</pre></div>
+</div>
+<p>In general, you should use the following approach to importing Abaqus modules:</p>
+<div class="highlight-python2 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">modulename</span>
+</pre></div>
+</div>
+<p>The description of an object in the <a class="reference internal" href="../../../references.html"><span class="doc">API Reference</span></a> includes an <cite>Access</cite> section that describes which module Abaqus/CAE imported to make the object available and how you can access the object from a command. After Abaqus/CAE imports a module, all the objects associated with the module become available to you. In addition, all the methods and members associated with each object are also available.</p>
+<p>The following table describes the relationship between some of the modules in the Abaqus Scripting Interface and the functionality of the modules and toolsets found in Abaqus/CAE:</p>
+<table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Module</strong></p></th>
+<th class="head"><p><strong>Abaqus/CAE functionality</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>assembly</p></td>
+<td><p>The Assembly module</p></td>
+</tr>
+<tr class="row-odd"><td><p>datum</p></td>
+<td><p>The Datum toolset</p></td>
+</tr>
+<tr class="row-even"><td><p>interaction</p></td>
+<td><p>The Interaction module</p></td>
+</tr>
+<tr class="row-odd"><td><p>job</p></td>
+<td><p>The Job module</p></td>
+</tr>
+<tr class="row-even"><td><p>load</p></td>
+<td><p>The Load module</p></td>
+</tr>
+<tr class="row-odd"><td><p>material</p></td>
+<td><p>Materials in the Property module</p></td>
+</tr>
+<tr class="row-even"><td><p>mesh</p></td>
+<td><p>The Mesh module</p></td>
+</tr>
+<tr class="row-odd"><td><p>part</p></td>
+<td><p>The Part module</p></td>
+</tr>
+<tr class="row-even"><td><p>partition</p></td>
+<td><p>The Partition toolset</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="../use-scripts.html" title="上一页 页">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">上一页</p>
+          <p class="prev-next-title">Using the Abaqus Scripting Interface with Abaqus/CAE</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="modify-objects.html" title="下一页 页">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">下一页</p>
+      <p class="prev-next-title">Copying, deleting, and renaming Abaqus Scripting Interface objects</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#about-the-abaqus-object-model">
+   About the Abaqus object model
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-tab-completion-to-explore-the-object-model">
+   Using tab completion to explore the object model
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-model-object-model">
+   The Model object model
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-the-object-model">
+   Using the object model
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#abstract-base-type">
+   Abstract base type
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#importing-modules-to-extend-the-object-model">
+   Importing modules to extend the object model
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../../_sources/user/python/use-scripts/object-model.rst.txt">
+        <i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>

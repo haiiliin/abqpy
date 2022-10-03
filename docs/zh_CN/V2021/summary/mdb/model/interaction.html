@@ -1,0 +1,1075 @@
+
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Interaction &#8212; abqpy 2021 文档</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/translations.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'summary/mdb/model/interaction';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2021';
+        </script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" />
+    <link rel="next" title="Load" href="load.html" />
+    <link rel="prev" title="Filter" href="filter.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="zh-CN">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2021 文档</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2021  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="搜索">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../getting_started.html">
+                        入门指南
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../../../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2021  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../../../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../header.html">
+   Header of the Python script
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../../mdb.html">
+   Abaqus Model Database
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../model.html">
+     Abaqus Model
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="adaptivity.html">
+       Adaptivity
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="amplitude.html">
+       Amplitude
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="assembly.html">
+       Assembly
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bc.html">
+       Boundary Condition
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="calibration.html">
+       Calibration of Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="constraint.html">
+       Constraint
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="field.html">
+       Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="filter.html">
+       Filter
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Interaction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="load.html">
+       Load
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="material.html">
+       Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="optimization.html">
+       Optimization
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="output.html">
+       Output Request
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="part.html">
+       Part
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="predefined.html">
+       Predefined Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="profile.html">
+       Beam Section Profile
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="property.html">
+       Property
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="section.html">
+       Section
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="section/connector.html">
+         Connector
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="sketcher.html">
+       Sketcher
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="step.html">
+       Step
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="step/step_miscellaneous.html">
+         Step Miscellaneous
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../job.html">
+     Abaqus Job
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../odb.html">
+   Abaqus Output Database
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../session.html">
+   Abaqus Session
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="interaction">
+<h1>Interaction<a class="headerlink" href="#interaction" title="此标题的永久链接">#</a></h1>
+<p>A specific type of interaction object and a specific type of interaction state object are designed for each type of interaction. An interaction object stores the non-propagating data of an interaction as well as a number of instances of the corresponding interaction state object, each of which stores the propagating data of the interaction in a single step. Instances of the interaction state object are created and deleted internally by its corresponding interaction object.</p>
+<section id="create-interactions">
+<h2>Create interactions<a class="headerlink" href="#create-interactions" title="此标题的永久链接">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">InteractionModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stefanBoltzmann</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">absoluteZero</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">waveFormulation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.NOT_SET</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">modelType</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">abaqusConstants.STANDARD_EXPLICIT</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">universalGas</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConstraints</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyConnectors</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">copyInteractions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">ON</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2021/src/abaqus/Interaction/InteractionModel.py#L59-L2218"><span class="viewcode-link"><span class="pre">[源代码]</span></span></a></dt>
+<dd><p>Abaqus creates a Model object named <cite>Model-1</cite> when a session is started.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mdb</span><span class="o">.</span><span class="n">models</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelitnpyc.htm?contextscope=all">InteractionModel on help.3ds.com/2021</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">name</span></code></p></td>
+<td><p>A String specifying the repository key.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">stefanBoltzmann</span></code></p></td>
+<td><p>None or a Float specifying the Stefan-Boltzmann constant.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">absoluteZero</span></code></p></td>
+<td><p>None or a Float specifying the absolute zero constant.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">waveFormulation</span></code></p></td>
+<td><p>A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">universalGas</span></code></p></td>
+<td><p>None or a Float specifying the universal gas constant.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">noPartsInputFile</span></code></p></td>
+<td><p>A Boolean specifying whether an input file should be written without parts and assemblies.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartIncrement</span></code></p></td>
+<td><p>An Int specifying the increment, interval, iteration or cycle where the restart analysis will start.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">endRestartStep</span></code></p></td>
+<td><p>A Boolean specifying that the step specified by <strong>restartStep</strong> should be terminated at the increment specified by <strong>restartIncrement</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">shellToSolid</span></code></p></td>
+<td><p>A Boolean specifying that a shell global model drives a solid submodel.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">lastChangedCount</span></code></p></td>
+<td><p>A Float specifying the time stamp that indicates when the model was last changed.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">description</span></code></p></td>
+<td><p>A String specifying the purpose and contents of the Model object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartJob</span></code></p></td>
+<td><p>A String specifying the name of the job that generated the restart data.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">restartStep</span></code></p></td>
+<td><p>A String specifying the name of the step where the restart analysis will start.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">globalJob</span></code></p></td>
+<td><p>A String specifying the name of the job that generated the results for the global model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConstraints</span></code></p></td>
+<td><p>A boolean specifying the status of constraints created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyConnectors</span></code></p></td>
+<td><p>A boolean specifying the status of connectors created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">copyInteractions</span></code></p></td>
+<td><p>A boolean specifying the status of interactions created in a model, in the model which instances this model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">keywordBlock</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model.html#abaqus.Model.KeywordBlock.KeywordBlock" title="abaqus.Model.KeywordBlock.KeywordBlock"><code class="xref py py-class docutils literal notranslate"><span class="pre">KeywordBlock</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">rootAssembly</span></code></p></td>
+<td><p>An <a class="reference internal" href="../../../reference/mdb/model/assembly.html#abaqus.Assembly.Assembly.Assembly" title="abaqus.Assembly.Assembly.Assembly"><code class="xref py py-class docutils literal notranslate"><span class="pre">Assembly</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">amplitudes</span></code></p></td>
+<td><p>A repository of Amplitude objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">profiles</span></code></p></td>
+<td><p>A repository of Profile objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">boundaryConditions</span></code></p></td>
+<td><p>A repository of BoundaryCondition objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">constraints</span></code></p></td>
+<td><p>A repository of ConstrainedSketchConstraint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">analyticalFields</span></code></p></td>
+<td><p>A repository of AnalyticalField objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">discreteFields</span></code></p></td>
+<td><p>A repository of DiscreteField objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">predefinedFields</span></code></p></td>
+<td><p>A repository of PredefinedField objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactions</span></code></p></td>
+<td><p>A repository of Interaction objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">interactionProperties</span></code></p></td>
+<td><p>A repository of InteractionProperty objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactControls</span></code></p></td>
+<td><p>A repository of ContactControl objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactInitializations</span></code></p></td>
+<td><p>A repository of ContactInitialization objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactStabilizations</span></code></p></td>
+<td><p>A repository of ContactStabilization objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedInstances</span></code></p></td>
+<td><p>A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">linkedParts</span></code></p></td>
+<td><p>A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">loads</span></code></p></td>
+<td><p>A repository of Load objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">materials</span></code></p></td>
+<td><p>A repository of Material objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">calibrations</span></code></p></td>
+<td><p>A repository of Calibration objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sections</span></code></p></td>
+<td><p>A repository of Section objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">remeshingRules</span></code></p></td>
+<td><p>A repository of RemeshingRule objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">sketches</span></code></p></td>
+<td><p>A repository of ConstrainedSketch objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">parts</span></code></p></td>
+<td><p>A repository of Part objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">steps</span></code></p></td>
+<td><p>A repository of Step objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">featureOptions</span></code></p></td>
+<td><p>A <a class="reference internal" href="../../../reference/mdb/model/part_assembly/feature.html#abaqus.Feature.FeatureOptions.FeatureOptions" title="abaqus.Feature.FeatureOptions.FeatureOptions"><code class="xref py py-class docutils literal notranslate"><span class="pre">FeatureOptions</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshConstraints</span></code></p></td>
+<td><p>A repository of AdaptiveMeshConstraint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">adaptiveMeshControls</span></code></p></td>
+<td><p>A repository of AdaptiveMeshControl objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">timePoints</span></code></p></td>
+<td><p>A repository of TimePoint objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></p></td>
+<td><p>A repository of Filter objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">integratedOutputSections</span></code></p></td>
+<td><p>A repository of IntegratedOutputSection objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">fieldOutputRequests</span></code></p></td>
+<td><p>A repository of FieldOutputRequest objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">historyOutputRequests</span></code></p></td>
+<td><p>A repository of HistoryOutputRequest objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">optimizationTasks</span></code></p></td>
+<td><p>A repository of OptimizationTask objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">tableCollections</span></code></p></td>
+<td><p>A repository of TableCollection objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">eventSeriesTypes</span></code></p></td>
+<td><p>A repository of EventSeriesType objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">eventSeriesDatas</span></code></p></td>
+<td><p>A repository of EventSeriesData objects.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.contactDetection" title="abaqus.Interaction.InteractionModel.InteractionModel.contactDetection"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contactDetection</span></code></a>([name, createStepName, ...])</p></td>
+<td><p>This method uses contact detection to create SurfaceToSurfaceContactStd, SurfaceToSurfaceContactExp, and Tie objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.getSurfaceSeparation" title="abaqus.Interaction.InteractionModel.InteractionModel.getSurfaceSeparation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getSurfaceSeparation</span></code></a>()</p></td>
+<td><p>This method returns a list of all possible contacts that can be created using the ContactDetection method.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.AcousticImpedance" title="abaqus.Interaction.InteractionModel.InteractionModel.AcousticImpedance"><code class="xref py py-obj docutils literal notranslate"><span class="pre">AcousticImpedance</span></code></a>(name, createStepName, surface)</p></td>
+<td><p>This method creates an AcousticImpedance object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.ActuatorSensor" title="abaqus.Interaction.InteractionModel.InteractionModel.ActuatorSensor"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActuatorSensor</span></code></a>(name, createStepName, point, ...)</p></td>
+<td><p>This method creates an ActuatorSensor object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.CavityRadiation" title="abaqus.Interaction.InteractionModel.InteractionModel.CavityRadiation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CavityRadiation</span></code></a>(name, createStepName, surfaces)</p></td>
+<td><p>This method creates a CavityRadiation object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.ConcentratedFilmCondition" title="abaqus.Interaction.InteractionModel.InteractionModel.ConcentratedFilmCondition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConcentratedFilmCondition</span></code></a>(name, ...[, ...])</p></td>
+<td><p>This method creates a ConcentratedFilmCondition object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.ConcentratedRadiationToAmbient" title="abaqus.Interaction.InteractionModel.InteractionModel.ConcentratedRadiationToAmbient"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ConcentratedRadiationToAmbient</span></code></a>(name, ...[, ...])</p></td>
+<td><p>This method creates a ConcentratedRadiationToAmbient object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.ContactExp" title="abaqus.Interaction.InteractionModel.InteractionModel.ContactExp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ContactExp</span></code></a>(name, createStepName[, ...])</p></td>
+<td><p>This method creates a ContactExp object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.ContactStd" title="abaqus.Interaction.InteractionModel.InteractionModel.ContactStd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ContactStd</span></code></a>(name, createStepName[, ...])</p></td>
+<td><p>This method creates a ContactStd object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.CyclicSymmetry" title="abaqus.Interaction.InteractionModel.InteractionModel.CyclicSymmetry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CyclicSymmetry</span></code></a>(name, createStepName, master, ...)</p></td>
+<td><p>This method creates a CyclicSymmetry object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.ElasticFoundation" title="abaqus.Interaction.InteractionModel.InteractionModel.ElasticFoundation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ElasticFoundation</span></code></a>(name, createStepName, ...)</p></td>
+<td><p>This method creates an ElasticFoundation object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.FilmCondition" title="abaqus.Interaction.InteractionModel.InteractionModel.FilmCondition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FilmCondition</span></code></a>(name, createStepName, surface, ...)</p></td>
+<td><p>This method creates a FilmCondition object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.FluidCavity" title="abaqus.Interaction.InteractionModel.InteractionModel.FluidCavity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FluidCavity</span></code></a>(name, createStepName, ...[, ...])</p></td>
+<td><p>This method creates an FluidCavity object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.FluidExchange" title="abaqus.Interaction.InteractionModel.InteractionModel.FluidExchange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FluidExchange</span></code></a>(name, createStepName, ...[, ...])</p></td>
+<td><p>This method creates an FluidExchange object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.FluidInflator" title="abaqus.Interaction.InteractionModel.InteractionModel.FluidInflator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FluidInflator</span></code></a>(name, createStepName, cavity, ...)</p></td>
+<td><p>This method creates a FluidInflator object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.IncidentWave" title="abaqus.Interaction.InteractionModel.InteractionModel.IncidentWave"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IncidentWave</span></code></a>(name, createStepName, ...[, ...])</p></td>
+<td><p>This method creates an IncidentWave object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.ModelChange" title="abaqus.Interaction.InteractionModel.InteractionModel.ModelChange"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelChange</span></code></a>(name, createStepName[, ...])</p></td>
+<td><p>This method creates a ModelChange object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.PressurePenetration" title="abaqus.Interaction.InteractionModel.InteractionModel.PressurePenetration"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PressurePenetration</span></code></a>(name, createStepName, ...)</p></td>
+<td><p>This method creates a PressurePenetration object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.RadiationToAmbient" title="abaqus.Interaction.InteractionModel.InteractionModel.RadiationToAmbient"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RadiationToAmbient</span></code></a>(name, createStepName, ...)</p></td>
+<td><p>This method creates a RadiationToAmbient object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.SelfContactExp" title="abaqus.Interaction.InteractionModel.InteractionModel.SelfContactExp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SelfContactExp</span></code></a>(name, createStepName, ...[, ...])</p></td>
+<td><p>This method creates a SelfContactExp object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.SelfContactStd" title="abaqus.Interaction.InteractionModel.InteractionModel.SelfContactStd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SelfContactStd</span></code></a>(name, createStepName, ...[, ...])</p></td>
+<td><p>This method creates a SelfContactStd object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.StdXplCosimulation" title="abaqus.Interaction.InteractionModel.InteractionModel.StdXplCosimulation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">StdXplCosimulation</span></code></a>(name, createStepName, region)</p></td>
+<td><p>This method creates a StdXplCosimulation object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactExp" title="abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactExp"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SurfaceToSurfaceContactExp</span></code></a>(name, ...[, ...])</p></td>
+<td><p>This method creates a SurfaceToSurfaceContactExp object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactStd" title="abaqus.Interaction.InteractionModel.InteractionModel.SurfaceToSurfaceContactStd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SurfaceToSurfaceContactStd</span></code></a>(name, ...[, ...])</p></td>
+<td><p>This method creates a SurfaceToSurfaceContactStd object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../../../reference/mdb/model/interaction.html#abaqus.Interaction.InteractionModel.InteractionModel.XFEMCrackGrowth" title="abaqus.Interaction.InteractionModel.InteractionModel.XFEMCrackGrowth"><code class="xref py py-obj docutils literal notranslate"><span class="pre">XFEMCrackGrowth</span></code></a>(name, createStepName, crackName)</p></td>
+<td><p>This method creates an XFEMCrackGrowth object.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">InteractionContactControlModel</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExpContactControl</span></code>(name[, globTrkChoice, ...])</p></td>
+<td><p>This method creates an ExpContactControl object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">StdContactControl</span></code>(name[, ...])</p></td>
+<td><p>This method creates an StdContactControl object.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">InteractionContactInitializationModel</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ExpInitialization</span></code>(name[, overclosureType, ...])</p></td>
+<td><p>This method creates an ExpInitialization object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">StdInitialization</span></code>(name[, overclosureType, ...])</p></td>
+<td><p>This method creates a StdInitialization object.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">InteractionContactStabilizationModel</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">StdStabilization</span></code>(name[, zeroDistance, ...])</p></td>
+<td><p>This method creates a StdStabilization object.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">InteractionPropertyModel</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">AcousticImpedanceProp</span></code>(name, tableType, table)</p></td>
+<td><p>This method creates an AcousticImpedanceProp object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActuatorSensorProp</span></code>(name[, realProperties, ...])</p></td>
+<td><p>This method creates an ActuatorSensorProp object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">CavityRadiationProp</span></code>(name[, ...])</p></td>
+<td><p>This method creates a CavityRadiationProp object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ContactProperty</span></code>(name)</p></td>
+<td><p>This method creates a ContactProperty object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FilmConditionProp</span></code>(name[, ...])</p></td>
+<td><p>This method creates a FilmConditionProp object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FluidCavityProperty</span></code>(name[, definition, ...])</p></td>
+<td><p>This method creates a FluidCavityProperty object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FluidExchangeProperty</span></code>(name, dataTable[, ...])</p></td>
+<td><p>This method creates a FluidExchangeProperty object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">FluidInflatorProperty</span></code>(name, definition, ...)</p></td>
+<td><p>This method creates a FluidInflatorProperty object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">IncidentWaveProperty</span></code>(name[, definition, ...])</p></td>
+<td><p>This method creates an IncidentWaveProperty object.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, description, ...])</p></td>
+<td><p>This method creates a Model object.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromInputFile</span></code>(name, inputFileName)</p></td>
+<td><p>This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromOdbFile</span></code>(name, odbFileName)</p></td>
+<td><p>This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModelFromNastranFile</span></code>(modelName, inputFileName)</p></td>
+<td><p>This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">setValues</span></code>([description, noPartsInputFile, ...])</p></td>
+<td><p>This method modifies the Model object.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+</dd></dl>
+
+<hr class="docutils" />
+</section>
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="filter.html" title="上一页 页">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">上一页</p>
+          <p class="prev-next-title">Filter</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="load.html" title="下一页 页">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">下一页</p>
+      <p class="prev-next-title">Load</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fas fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-interactions">
+   Create interactions
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../../../_sources/summary/mdb/model/interaction.rst.txt">
+        <i class="fas fa-file-alt"></i> 显示源代码
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
