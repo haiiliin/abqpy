@@ -1,0 +1,907 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Abaqus Output Database &#8212; abqpy 2017 documentation</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=9b1a4fa89bdd0e95b23b" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-codeautolink.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/autoclasstoc.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'summary/odb';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://docs.abqpy.com/en/latest/_static/switcher.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v2017';
+        </script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Abaqus Session" href="session.html" />
+    <link rel="prev" title="Abaqus Job" href="mdb/job.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fas fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../index.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">abqpy 2017 documentation</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2017  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search">
+  <i class="fas fa-search"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fas fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../getting_started.html">
+                        Getting Started
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../tutorials.html">
+                        Tutorials
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../templates.html">
+                        Templates
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../user.html">
+                        User’s Guide
+                    </a>
+                </li>
+                
+
+                <li class="nav-item current active">
+                    <a class="nav-link" href="../summary.html">
+                        API Summary
+                    </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="../references.html">
+                        API Reference
+                    </a>
+                </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <div class="version-switcher__container dropdown">
+    <button type="button" class="version-switcher__button btn btn-sm navbar-btn dropdown-toggle" data-toggle="dropdown">
+        v2017  <!-- this text may get changed later by javascript -->
+        <span class="caret"></span>
+    </button>
+    <div class="version-switcher__menu dropdown-menu list-group-flush py-0">
+    <!-- dropdown will be populated by javascript on page load -->
+    </div>
+</div>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/haiiliin/abqpy" title="GitHub" class="nav-link" rel="noopener" target="_blank"><span><i class="fab fa-github-square"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://pypi.org/project/abqpy" title="PyPI" class="nav-link" rel="noopener" target="_blank"><img src="../_static/PyPI_logo.svg" class="icon-link-image" alt="PyPI"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://anaconda.org/haiiliin/abqpy" title="Anaconda" class="nav-link" rel="noopener" target="_blank"><img src="../_static/anaconda.svg" class="icon-link-image" alt="Anaconda"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          <a href="https://readthedocs.org/projects/abqpy/" title="Read the Docs" class="nav-link" rel="noopener" target="_blank"><img src="../_static/rtd-logo-dark.svg" class="icon-link-image" alt="Read the Docs"/></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Section navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">
+    Section Navigation
+  </p>
+  <div class="bd-toc-item navbar-nav">
+    <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Contents
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="header.html">
+   Header of the Python script
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="mdb.html">
+   Abaqus Model Database
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label class="toctree-toggle" for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="mdb/model.html">
+     Abaqus Model
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label class="toctree-toggle" for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/adaptivity.html">
+       Adaptivity
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/amplitude.html">
+       Amplitude
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/assembly.html">
+       Assembly
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/bc.html">
+       Boundary Condition
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/calibration.html">
+       Calibration of Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/constraint.html">
+       Constraint
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/field.html">
+       Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/filter.html">
+       Filter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/interaction.html">
+       Interaction
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/load.html">
+       Load
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/material.html">
+       Material
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/optimization.html">
+       Optimization
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/output.html">
+       Output Request
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/part.html">
+       Part
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/predefined.html">
+       Predefined Field
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/profile.html">
+       Beam Section Profile
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/property.html">
+       Property
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="mdb/model/section.html">
+       Section
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-3">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="mdb/model/section/connector.html">
+         Connector
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="mdb/model/sketcher.html">
+       Sketcher
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="mdb/model/step.html">
+       Step
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+      <label class="toctree-toggle" for="toctree-checkbox-4">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="mdb/model/step/step_miscellaneous.html">
+         Step Miscellaneous
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mdb/job.html">
+     Abaqus Job
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Abaqus Output Database
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="session.html">
+   Abaqus Session
+  </a>
+ </li>
+</ul>
+
+  </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+            <article class="bd-article" role="main">
+              
+  <section id="abaqus-output-database">
+<h1>Abaqus Output Database<a class="headerlink" href="#abaqus-output-database" title="Permalink to this heading">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Odb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">analysisTitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/haiiliin/abqpy/blob/V2017/src/abaqus/Odb/Odb.py#L15-L196"><span class="viewcode-link"><span class="pre">[source]</span></span></a></dt>
+<dd><p>The Odb object is the in-memory representation of an output database (ODB) file.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This object can be accessed by:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">odbAccess</span>
+<span class="n">session</span><span class="o">.</span><span class="n">odbs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Check <a class="reference external" href="https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all">Odb on help.3ds.com/2017</a>.</p>
+</div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Data Attributes:</p>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.isReadOnly" title="abaqus.Odb.Odb.Odb.isReadOnly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">isReadOnly</span></code></a></p></td>
+<td><p>A Boolean specifying whether the output database was opened with read-only access.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.amplitudes" title="abaqus.Odb.Odb.Odb.amplitudes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">amplitudes</span></code></a></p></td>
+<td><p>A repository of Amplitude objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.filters" title="abaqus.Odb.Odb.Odb.filters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filters</span></code></a></p></td>
+<td><p>A repository of Filter objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.rootAssembly" title="abaqus.Odb.Odb.Odb.rootAssembly"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rootAssembly</span></code></a></p></td>
+<td><p>An <a class="reference internal" href="../reference/odb.html#abaqus.Odb.OdbAssembly.OdbAssembly" title="abaqus.Odb.OdbAssembly.OdbAssembly"><code class="xref py py-class docutils literal notranslate"><span class="pre">OdbAssembly</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.jobData" title="abaqus.Odb.Odb.Odb.jobData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">jobData</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/odb.html#abaqus.Odb.JobData.JobData" title="abaqus.Odb.JobData.JobData"><code class="xref py py-class docutils literal notranslate"><span class="pre">JobData</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.parts" title="abaqus.Odb.Odb.Odb.parts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parts</span></code></a></p></td>
+<td><p>A repository of OdbPart objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.materials" title="abaqus.Odb.Odb.Odb.materials"><code class="xref py py-obj docutils literal notranslate"><span class="pre">materials</span></code></a></p></td>
+<td><p>A repository of Material objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.steps" title="abaqus.Odb.Odb.Odb.steps"><code class="xref py py-obj docutils literal notranslate"><span class="pre">steps</span></code></a></p></td>
+<td><p>A repository of OdbStep objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.sections" title="abaqus.Odb.Odb.Odb.sections"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sections</span></code></a></p></td>
+<td><p>A repository of Section objects.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.sectionCategories" title="abaqus.Odb.Odb.Odb.sectionCategories"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sectionCategories</span></code></a></p></td>
+<td><p>A repository of SectionCategory objects.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.sectorDefinition" title="abaqus.Odb.Odb.Odb.sectorDefinition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sectorDefinition</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/odb.html#abaqus.Odb.SectorDefinition.SectorDefinition" title="abaqus.Odb.SectorDefinition.SectorDefinition"><code class="xref py py-class docutils literal notranslate"><span class="pre">SectorDefinition</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.userData" title="abaqus.Odb.Odb.Odb.userData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">userData</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/odb.html#abaqus.Odb.UserData.UserData" title="abaqus.Odb.UserData.UserData"><code class="xref py py-class docutils literal notranslate"><span class="pre">UserData</span></code></a> object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.customData" title="abaqus.Odb.Odb.Odb.customData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">customData</span></code></a></p></td>
+<td><p>A <a class="reference internal" href="../reference/kernel/kernel.html#abaqus.CustomKernel.RepositorySupport.RepositorySupport" title="abaqus.CustomKernel.RepositorySupport.RepositorySupport"><code class="xref py py-class docutils literal notranslate"><span class="pre">RepositorySupport</span></code></a> object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.profiles" title="abaqus.Odb.Odb.Odb.profiles"><code class="xref py py-obj docutils literal notranslate"><span class="pre">profiles</span></code></a></p></td>
+<td><p>A repository of Profile objects.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+<div class="autoclasstoc docutils container">
+<p class="rubric">Public Methods:</p>
+<table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.Part" title="abaqus.Odb.Odb.Odb.Part"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Part</span></code></a>(name, embeddedSpace, type)</p></td>
+<td><p>This method creates an OdbPart object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.Step" title="abaqus.Odb.Odb.Odb.Step"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Step</span></code></a>(name, description, domain[, ...])</p></td>
+<td><p>This method creates an OdbStep object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.SectionCategory" title="abaqus.Odb.Odb.Odb.SectionCategory"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SectionCategory</span></code></a>(name, description)</p></td>
+<td><p>This method creates a SectionCategory object.</p></td>
+</tr>
+</tbody>
+</table>
+<details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">AmplitudeOdb</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.ActuatorAmplitude" title="abaqus.Odb.Odb.Odb.ActuatorAmplitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActuatorAmplitude</span></code></a>(name[, timeSpan])</p></td>
+<td><p>This method creates a ActuatorAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.DecayAmplitude" title="abaqus.Odb.Odb.Odb.DecayAmplitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">DecayAmplitude</span></code></a>(name, initial, maximum, ...)</p></td>
+<td><p>This method creates a DecayAmplitude object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.EquallySpacedAmplitude" title="abaqus.Odb.Odb.Odb.EquallySpacedAmplitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">EquallySpacedAmplitude</span></code></a>(name, fixedInterval, data)</p></td>
+<td><p>This method creates an EquallySpacedAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.ModulatedAmplitude" title="abaqus.Odb.Odb.Odb.ModulatedAmplitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ModulatedAmplitude</span></code></a>(name, initial, magnitude, ...)</p></td>
+<td><p>This method creates a ModulatedAmplitude object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.PeriodicAmplitude" title="abaqus.Odb.Odb.Odb.PeriodicAmplitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PeriodicAmplitude</span></code></a>(name, frequency, start, ...)</p></td>
+<td><p>This method creates a PeriodicAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.PsdDefinition" title="abaqus.Odb.Odb.Odb.PsdDefinition"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PsdDefinition</span></code></a>(name, data[, unitType, ...])</p></td>
+<td><p>This method creates a PsdDefinition object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.SmoothStepAmplitude" title="abaqus.Odb.Odb.Odb.SmoothStepAmplitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SmoothStepAmplitude</span></code></a>(name, data[, timeSpan])</p></td>
+<td><p>This method creates a SmoothStepAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.SolutionDependentAmplitude" title="abaqus.Odb.Odb.Odb.SolutionDependentAmplitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SolutionDependentAmplitude</span></code></a>(name[, initial, ...])</p></td>
+<td><p>This method creates a SolutionDependentAmplitude object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.SpectrumAmplitude" title="abaqus.Odb.Odb.Odb.SpectrumAmplitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SpectrumAmplitude</span></code></a>(name, method, data[, ...])</p></td>
+<td><p>This method creates a SpectrumAmplitude object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.TabularAmplitude" title="abaqus.Odb.Odb.Odb.TabularAmplitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TabularAmplitude</span></code></a>(name, data[, smooth, timeSpan])</p></td>
+<td><p>This method creates a TabularAmplitude object.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">FilterOdb</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.ButterworthFilter" title="abaqus.Odb.Odb.Odb.ButterworthFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ButterworthFilter</span></code></a>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates a ButterworthFilter object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.Chebyshev1Filter" title="abaqus.Odb.Odb.Odb.Chebyshev1Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chebyshev1Filter</span></code></a>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates a Chebyshev1Filter object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.Chebyshev2Filter" title="abaqus.Odb.Odb.Odb.Chebyshev2Filter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Chebyshev2Filter</span></code></a>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates a Chebyshev2Filter object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.OperatorFilter" title="abaqus.Odb.Odb.Odb.OperatorFilter"><code class="xref py py-obj docutils literal notranslate"><span class="pre">OperatorFilter</span></code></a>(name, cutoffFrequency[, ...])</p></td>
+<td><p>This method creates an OperatorFilter object.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">MaterialOdb</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.Material" title="abaqus.Odb.Odb.Odb.Material"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Material</span></code></a>(name[, description, materialIdentifier])</p></td>
+<td><p>This method creates a Material object.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">BeamSectionProfileOdb</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.ArbitraryProfile" title="abaqus.Odb.Odb.Odb.ArbitraryProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ArbitraryProfile</span></code></a>(name, table)</p></td>
+<td><p>This method creates a ArbitraryProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.BoxProfile" title="abaqus.Odb.Odb.Odb.BoxProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BoxProfile</span></code></a>(name, a, b, uniformThickness, t1)</p></td>
+<td><p>This method creates a BoxProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.CircularProfile" title="abaqus.Odb.Odb.Odb.CircularProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CircularProfile</span></code></a>(name, r)</p></td>
+<td><p>This method creates a CircularProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.GeneralizedProfile" title="abaqus.Odb.Odb.Odb.GeneralizedProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">GeneralizedProfile</span></code></a>(name, area, i11, i12, ...)</p></td>
+<td><p>This method creates a GeneralizedProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.HexagonalProfile" title="abaqus.Odb.Odb.Odb.HexagonalProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HexagonalProfile</span></code></a>(name, r, t)</p></td>
+<td><p>This method creates a HexagonalProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.IProfile" title="abaqus.Odb.Odb.Odb.IProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">IProfile</span></code></a>(name, l, h, b1, b2, t1, t2, t3)</p></td>
+<td><p>This method creates an IProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.LProfile" title="abaqus.Odb.Odb.Odb.LProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">LProfile</span></code></a>(name, a, b, t1, t2)</p></td>
+<td><p>This method creates a LProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.PipeProfile" title="abaqus.Odb.Odb.Odb.PipeProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PipeProfile</span></code></a>(name, r, t)</p></td>
+<td><p>This method creates a PipeProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.RectangularProfile" title="abaqus.Odb.Odb.Odb.RectangularProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RectangularProfile</span></code></a>(name, a, b)</p></td>
+<td><p>This method creates a RectangularProfile object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.TProfile" title="abaqus.Odb.Odb.Odb.TProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TProfile</span></code></a>(name, b, h, l, tf, tw)</p></td>
+<td><p>This method creates a TProfile object.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.TrapezoidalProfile" title="abaqus.Odb.Odb.Odb.TrapezoidalProfile"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TrapezoidalProfile</span></code></a>(name, a, b, c, d)</p></td>
+<td><p>This method creates a TrapezoidalProfile object.</p></td>
+</tr>
+</tbody>
+</table>
+</details><details><summary>Inherited from <code class="xref py py-class docutils literal notranslate"><span class="pre">OdbBase</span></code></summary><table class="autosummary longtable table autosummary">
+<tbody>
+<tr class="row-odd"><td><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">__init__</span></code>(name[, analysisTitle, description, ...])</p></td>
+<td><p>This method creates a new Odb object.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.close" title="abaqus.Odb.Odb.Odb.close"><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code></a>()</p></td>
+<td><p>This method closes an output database.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.getFrame" title="abaqus.Odb.Odb.Odb.getFrame"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getFrame</span></code></a>(frameValue[, match])</p></td>
+<td><p>This method returns the frame at the specified time, frequency, or mode.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.save" title="abaqus.Odb.Odb.Odb.save"><code class="xref py py-obj docutils literal notranslate"><span class="pre">save</span></code></a>()</p></td>
+<td><p>This method saves output to an output database (.odb ) file.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../reference/odb.html#abaqus.Odb.Odb.Odb.update" title="abaqus.Odb.Odb.Odb.update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code></a>()</p></td>
+<td><p>This method is used to update an Odb object in memory while an Abaqus analysis writes data to the associated output database.</p></td>
+</tr>
+</tbody>
+</table>
+</details></div>
+</dd></dl>
+
+<hr class="docutils" />
+</section>
+
+
+            </article>
+            
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+  <a class='left-prev' id="prev-link" href="mdb/job.html" title="previous page">
+      <i class="fas fa-angle-left"></i>
+      <div class="prev-next-info">
+          <p class="prev-next-subtitle">previous</p>
+          <p class="prev-next-title">Abaqus Job</p>
+      </div>
+  </a>
+  <a class='right-next' id="next-link" href="session.html" title="next page">
+  <div class="prev-next-info">
+      <p class="prev-next-subtitle">next</p>
+      <p class="prev-next-title">Abaqus Session</p>
+  </div>
+  <i class="fas fa-angle-right"></i>
+  </a>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+</div>
+
+<div class="toc-item">
+  
+<div class="tocsection sourcelink">
+    <a href="../_sources/summary/odb.rst.txt">
+        <i class="fas fa-file-alt"></i> Show Source
+    </a>
+</div>
+
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=9b1a4fa89bdd0e95b23b"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, WANG Hailin.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.2.3.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>
