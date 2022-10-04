@@ -1,5 +1,5 @@
 from typing import Optional, Any, Dict
-
+from abaqus.Mdb.MdbCommands import upgradeMdb
 
 def execfile(
     filename: str,
@@ -58,3 +58,14 @@ def raw_input(prompt: str = "") -> str:
         The input value converted to a string
     """
     return input(prompt)
+
+def cliCommand(text: str) -> None:
+    """Excutes Abaqus/CAE CLI command
+    
+    called from cmdK_CommandDeliveryRole::sendCliCommand
+    
+    Parameters
+    ----------
+    text : str
+        Command
+    """
