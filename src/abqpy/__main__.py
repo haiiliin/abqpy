@@ -90,7 +90,7 @@ def cli():
 
     abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
     proc = "cae"
-    mode = f"noGUI={args.script}" if args.script is not None else "noGUI"
+    mode = f"noGUI={args.script}" if args.script else "noGUI"
     sep = "--" if args.args else ""
     options = args.gui_args or args.nogui_args or args.python_args or ""
     if args.gui_args is not None:
