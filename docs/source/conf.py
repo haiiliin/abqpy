@@ -31,14 +31,14 @@ copyright = '2022, WANG Hailin'
 author = 'WANG Hailin'
 
 # The full version, including alpha/beta/rc tags
-_default_version = '2023.0.0-dev'
+_default_version = '2023'
 try:
-    version = pkg_resources.get_distribution('abqpy').version[:4]
-    if not version.startswith('20'):
-        version = _default_version[:4]
+    branch = git.repo.Repo('../../').active_branch.name
+    version = _default_version if branch == 'main' else branch[1:]
 except pkg_resources.DistributionNotFound:
-    version = _default_version[:4]
+    version = _default_version
 release = version
+print(f'Current version: {version}')
 
 # For multiple languages
 locale_dirs = ['locales/']   # path is example but recommended.
