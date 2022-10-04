@@ -15,13 +15,13 @@ Fixes # (issue)
 This change should be backported to the previous releases, please add the relevant labels.
 Refer [here](https://github.com/haiiliin/abqpy/discussions/1500) to resolve backport conflicts if any.
 
-- [x] V2016
-- [x] V2017
-- [x] V2018
-- [x] V2019
-- [x] V2020
-- [x] V2021
-- [x] V2022
+- [x] 2016
+- [x] 2017
+- [x] 2018
+- [x] 2019
+- [x] 2020
+- [x] 2021
+- [x] 2022
 
 # Type of change
 
