@@ -20,12 +20,12 @@ pull_request_rules:
     actions:
       backport:
         branches:
-          - 2022
+          - "2022"
         assignees:
           - "{{ author }}"
         labels:
           - backport
-          - 2022
+          - "2022"
 
   - name: Backport to 2021
     conditions:
@@ -35,12 +35,12 @@ pull_request_rules:
     actions:
       backport:
         branches:
-          - 2021
+          - "2021"
         assignees:
           - "{{ author }}"
         labels:
           - backport
-          - 2021
+          - "2021"
 
   - name: Backport to 2020
     conditions:
@@ -50,12 +50,12 @@ pull_request_rules:
     actions:
       backport:
         branches:
-          - 2020
+          - "2020"
         assignees:
           - "{{ author }}"
         labels:
           - backport
-          - 2020
+          - "2020"
 
   - name: Backport to 2019
     conditions:
@@ -65,12 +65,12 @@ pull_request_rules:
     actions:
       backport:
         branches:
-          - 2019
+          - "2019"
         assignees:
           - "{{ author }}"
         labels:
           - backport
-          - 2019
+          - "2019"
 
   - name: Backport to 2018
     conditions:
@@ -80,12 +80,12 @@ pull_request_rules:
     actions:
       backport:
         branches:
-          - 2018
+          - "2018"
         assignees:
           - "{{ author }}"
         labels:
           - backport
-          - 2018
+          - "2018"
 
   - name: Backport to 2017
     conditions:
@@ -95,12 +95,12 @@ pull_request_rules:
     actions:
       backport:
         branches:
-          - 2017
+          - "2017"
         assignees:
           - "{{ author }}"
         labels:
           - backport
-          - 2017
+          - "2017"
 
   - name: Backport to 2016
     conditions:
@@ -110,12 +110,12 @@ pull_request_rules:
     actions:
       backport:
         branches:
-          - 2016
+          - "2016"
         assignees:
           - "{{ author }}"
         labels:
           - backport
-          - 2016
+          - "2016"
 
   - name: Auto merge backport pull request
     conditions:
