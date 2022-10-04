@@ -39,7 +39,7 @@ jobs:
         id: create_release_drafter
         uses: release-drafter/release-drafter@v5
         with:
-          config-name: release-drafter-v${{ steps.drafter_suffix.outputs.value }}.yml
+          config-name: release-drafter-${{ steps.drafter_suffix.outputs.value }}.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Update suggested version for ${{ matrix.branch }}
