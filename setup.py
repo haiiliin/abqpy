@@ -35,7 +35,7 @@ setuptools.setup(
         "relative_to": __file__,
         "local_scheme": "node-and-date",
         "write_to": "src/abqpy/_version.py",
-        "fallback_version": "2022.0.0-unknown",
+        "fallback_version": "2023.0.0-dev",
     },
     setup_requires=['setuptools_scm'],
     python_requires='>=3.7',
