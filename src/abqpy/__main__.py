@@ -59,7 +59,7 @@ def cli():
     group.add_argument(
         "-g",
         "--cae-gui",
-        dest="gui_args",
+        dest="gui",
         nargs="*",
         metavar="options",
         help="command line options used to run abaqus cae command with the graphical user interface (GUI mode)",
@@ -67,7 +67,7 @@ def cli():
     group.add_argument(
         "-n",
         "--cae-nogui",
-        dest="nogui_args",
+        dest="nogui",
         nargs="*",
         metavar="options",
         help="command line options used to run abaqus cae command without the graphical user interface (noGUI mode)",
@@ -75,7 +75,7 @@ def cli():
     group.add_argument(
         "-p",
         "--python",
-        dest="python_args",
+        dest="python",
         nargs="*",
         metavar="options",
         help="command line options used to run abaqus python command",
@@ -92,10 +92,10 @@ def cli():
     proc = "cae"
     mode = f"noGUI={args.script}" if args.script else "noGUI"
     sep = "--" if args.args else ""
-    options = args.gui_args or args.nogui_args or args.python_args or ""
-    if args.gui_args is not None:
+    options = args.gui or args.nogui or args.python or ""
+    if args.gui is not None:
         mode = f"script={args.script}" if args.script else ""
-    elif args.python_args is not None:
+    elif args.python is not None:
         proc = "python"
         sep = ""
         mode = f"{args.script}" if args.script else ""
