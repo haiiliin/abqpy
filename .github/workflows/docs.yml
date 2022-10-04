@@ -3,7 +3,7 @@ on:
   push:
     branches:
     - 'main'
-    - 'V20**'
+    - '20**'
     paths:
     - 'src/**'
     - 'docs/source/**'
@@ -30,8 +30,7 @@ jobs:
       uses: actions/github-script@v6.3.1
       with:
         script: |
-          const branchName = context.ref.replace('refs/heads/', '');
-          let value = branchName.replace('V', '');
+          let value = context.ref.replace('refs/heads/', '');
           if (value == "main") { value = "latest"; }
           core.setOutput('value', value)
     - run: echo "version ${{ steps.version.outputs.value }}"
