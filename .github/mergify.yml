@@ -12,7 +12,7 @@ pull_request_rules:
           - backport
           - main
 
-  - name: Backport to V2022
+  - name: Backport to 2022
     conditions:
       - or:
         - label=backport-to-all
@@ -20,14 +20,14 @@ pull_request_rules:
     actions:
       backport:
         branches:
-          - V2022
+          - 2022
         assignees:
           - "{{ author }}"
         labels:
           - backport
-          - V2022
+          - 2022
 
-  - name: Backport to V2021
+  - name: Backport to 2021
     conditions:
       - or:
         - label=backport-to-all
@@ -35,14 +35,14 @@ pull_request_rules:
     actions:
       backport:
         branches:
-          - V2021
+          - 2021
         assignees:
           - "{{ author }}"
         labels:
           - backport
-          - V2021
+          - 2021
 
-  - name: Backport to V2020
+  - name: Backport to 2020
     conditions:
       - or:
         - label=backport-to-all
@@ -50,14 +50,14 @@ pull_request_rules:
     actions:
       backport:
         branches:
-          - V2020
+          - 2020
         assignees:
           - "{{ author }}"
         labels:
           - backport
-          - V2020
+          - 2020
 
-  - name: Backport to V2019
+  - name: Backport to 2019
     conditions:
       - or:
         - label=backport-to-all
@@ -65,14 +65,14 @@ pull_request_rules:
     actions:
       backport:
         branches:
-          - V2019
+          - 2019
         assignees:
           - "{{ author }}"
         labels:
           - backport
-          - V2019
+          - 2019
 
-  - name: Backport to V2018
+  - name: Backport to 2018
     conditions:
       - or:
         - label=backport-to-all
@@ -80,14 +80,14 @@ pull_request_rules:
     actions:
       backport:
         branches:
-          - V2018
+          - 2018
         assignees:
           - "{{ author }}"
         labels:
           - backport
-          - V2018
+          - 2018
 
-  - name: Backport to V2017
+  - name: Backport to 2017
     conditions:
       - or:
         - label=backport-to-all
@@ -95,14 +95,14 @@ pull_request_rules:
     actions:
       backport:
         branches:
-          - V2017
+          - 2017
         assignees:
           - "{{ author }}"
         labels:
           - backport
-          - V2017
+          - 2017
 
-  - name: Backport to V2016
+  - name: Backport to 2016
     conditions:
       - or:
         - label=backport-to-all
@@ -110,12 +110,12 @@ pull_request_rules:
     actions:
       backport:
         branches:
-          - V2016
+          - 2016
         assignees:
           - "{{ author }}"
         labels:
           - backport
-          - V2016
+          - 2016
 
   - name: Auto merge backport pull request
     conditions:
