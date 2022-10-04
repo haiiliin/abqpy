@@ -119,7 +119,7 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
     try:
         branch_name = git.repo.Repo('../../').active_branch.name
     except Exception:
-        branch_name = f'V{version[:4]}'
+        branch_name = version[:4]
     baseurl = f'https://github.com/haiiliin/abqpy/blob/{branch_name}/src/{filename}.py'
 
     submod = sys.modules.get(modname)
