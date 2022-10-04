@@ -372,6 +372,10 @@ class View:
     @abaqus_method_doc
     def setValues(
         self,
+        options: View = ...,
+        drawImmediately: Boolean = False,
+        fieldOfViewAngle: float = ...,
+        farPlaneMode: Literal[C.AUTOCOMPUTE, C.SPECIFY] = ...,
         nearPlane: float = ...,
         farPlane: float = ...,
         width: float = ...,
@@ -383,10 +387,6 @@ class View:
         viewOffsetX: float = ...,
         viewOffsetY: float = ...,
         movieMode: Boolean = OFF,
-        options: View = ...,
-        drawImmediately: Boolean = False,
-        fieldOfViewAngle: float = ...,
-        farPlaneMode: Literal[C.AUTOCOMPUTE, C.SPECIFY] = ...,
     ) -> None:
         """This method modifies the View object.
         
