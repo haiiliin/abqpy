@@ -31,13 +31,13 @@ copyright = '2022, WANG Hailin'
 author = 'WANG Hailin'
 
 # The full version, including alpha/beta/rc tags
-_default_version = '2022'
+_default_version = '2023.0.0-dev'
 try:
     version = pkg_resources.get_distribution('abqpy').version[:4]
     if not version.startswith('20'):
-        version = _default_version
+        version = _default_version[:4]
 except pkg_resources.DistributionNotFound:
-    version = _default_version
+    version = _default_version[:4]
 release = version
 
 # For multiple languages
@@ -226,8 +226,8 @@ html_theme_options = {
         },
    ],
     "switcher": {
-        "json_url": "https://docs.abqpy.com/en/latest/_static/switcher.json",
-        "version_match": f"v{version[:4]}",
+        "json_url": "https://docs.abqpy.com/_static/versions.json",
+        "version_match": version,
     },
     "navbar_end": ["version-switcher", "theme-switcher", "navbar-icon-links"],
 }
