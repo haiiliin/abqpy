@@ -100,7 +100,7 @@ def cli():
         sep = ""
         mode = f"{args.script}" if args.script else ""
 
-    cmd = f"{abaqus} {proc} {mode} {' '.join(options)} {sep} {' '.join(args.args)}"
+    cmd = f"{abaqus} {proc} {mode} {' '.join(options)} {sep} {' '.join(args.args)}".strip()
     message = f"Running the following abaqus command: {cmd}"
     print("", "-" * len(message), message, "-" * len(message), sep="\n")
     os.system(cmd)
