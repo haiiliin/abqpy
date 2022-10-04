@@ -113,8 +113,8 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
     modname = info['module']
     fullname = info['fullname']
 
-    filename = modname.replace('.', '/')
-    baseurl = f'https://github.com/haiiliin/abqpy/blob/{branch}/src/{filename}.py'
+    filepath = modname.replace('.', '/')
+    baseurl = f'https://github.com/haiiliin/abqpy/blob/{branch}/src/{filepath}.py'
 
     submod = sys.modules.get(modname)
     if submod is None:
