@@ -32,7 +32,11 @@ jobs:
       - uses: release-drafter/release-drafter@v5
         # (Optional) specify config name to use, relative to .github/. Default: release-drafter.yml
         with:
+<<<<<<< HEAD
           config-name: release-drafter-v2017.yml
+=======
+          config-name: release-drafter-2022.yml
+>>>>>>> 414875fe (Remove V in branch name (#2193))
         #   disable-autolabeler: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
