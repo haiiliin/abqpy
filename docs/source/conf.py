@@ -35,7 +35,7 @@ _default_version = '2023.0.0-dev'
 try:
     version = pkg_resources.get_distribution('abqpy').version[:4]
     if not version.startswith('20'):
-        version = _default_version
+        version = _default_version[:4]
 except pkg_resources.DistributionNotFound:
     version = _default_version[:4]
 release = version
