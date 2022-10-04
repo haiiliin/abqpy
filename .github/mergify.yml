@@ -16,7 +16,7 @@ pull_request_rules:
     conditions:
       - or:
         - label=backport-to-all
-        - label=backport-to-v2022
+        - label=backport-to-2022
     actions:
       backport:
         branches:
@@ -31,7 +31,7 @@ pull_request_rules:
     conditions:
       - or:
         - label=backport-to-all
-        - label=backport-to-v2021
+        - label=backport-to-2021
     actions:
       backport:
         branches:
@@ -46,7 +46,7 @@ pull_request_rules:
     conditions:
       - or:
         - label=backport-to-all
-        - label=backport-to-v2020
+        - label=backport-to-2020
     actions:
       backport:
         branches:
@@ -61,7 +61,7 @@ pull_request_rules:
     conditions:
       - or:
         - label=backport-to-all
-        - label=backport-to-v2019
+        - label=backport-to-2019
     actions:
       backport:
         branches:
@@ -76,7 +76,7 @@ pull_request_rules:
     conditions:
       - or:
         - label=backport-to-all
-        - label=backport-to-v2018
+        - label=backport-to-2018
     actions:
       backport:
         branches:
@@ -91,7 +91,7 @@ pull_request_rules:
     conditions:
       - or:
         - label=backport-to-all
-        - label=backport-to-v2017
+        - label=backport-to-2017
     actions:
       backport:
         branches:
@@ -106,7 +106,7 @@ pull_request_rules:
     conditions:
       - or:
         - label=backport-to-all
-        - label=backport-to-v2016
+        - label=backport-to-2016
     actions:
       backport:
         branches:
