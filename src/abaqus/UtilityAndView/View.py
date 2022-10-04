@@ -1,7 +1,13 @@
-from typing import Optional, Tuple
+from __future__ import annotations
+from typing import Optional, Tuple, Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import ABSOLUTE, Boolean, MODEL, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    OFF,
+    SymbolicConstant,
+    abaqusConstants as C,
+)
 
 
 @abaqus_class_doc
@@ -61,7 +67,7 @@ class View:
 
     #: A SymbolicConstant specifying the projection mode. Possible values are PERSPECTIVE and
     #: PARALLEL.
-    projection: SymbolicConstant
+    projection: Literal[C.PERSPECTIVE, C.PARALLEL]
 
     #: A sequence of three Floats specifying the camera position.
     cameraPosition: tuple
@@ -101,7 +107,7 @@ class View:
         farPlane: float,
         width: float,
         height: float,
-        projection: SymbolicConstant,
+        projection: Literal[C.PERSPECTIVE, C.PARALLEL],
         cameraPosition: tuple,
         cameraUpVector: tuple,
         cameraTarget: tuple,
@@ -261,7 +267,7 @@ class View:
         xAngle: float = 0,
         yAngle: float = 0,
         zAngle: float = 0,
-        mode: SymbolicConstant = MODEL,
+        mode: SymbolicConstant = C.MODEL,
         asMovie: Boolean = OFF,
         drawImmediately: Boolean = False,
     ):
@@ -364,16 +370,59 @@ class View:
         ...
 
     @abaqus_method_doc
-    def setValues(self, movieMode: Boolean = OFF):
+    def setValues(
+        self,
+        nearPlane: float = ...,
+        farPlane: float = ...,
+        width: float = ...,
+        height: float = ...,
+        projection: SymbolicConstant = ...,
+        cameraPosition: tuple = ...,
+        cameraUpVector: tuple = ...,
+        cameraTarget: tuple = ...,
+        viewOffsetX: float = ...,
+        viewOffsetY: float = ...,
+        movieMode: Boolean = OFF,
+        options: View = ...,
+        drawImmediately: Boolean = False,
+        fieldOfViewAngle: float = ...,
+        farPlaneMode: Literal[C.AUTOCOMPUTE, C.SPECIFY] = ...,
+    ) -> None:
         """This method modifies the View object.
-        Note:This method is not available for a Layer View.
+        
+        .. note:: 
+            This method is not available for a :py:class:`~abaqus.Canvas.Layer.Layer` View.
+
+        The optional arguments to `setValues` are the same as the arguments to the
+        :py:class:`~abaqus.UtilityAndView.View.View` method, except for the `name`
+        and `autoFit` arguments. In addition, `setValues` has the following optional
+        arguments:
 
         Parameters
         ----------
-        movieMode
-            A Boolean specifying whether or not the camera is in movie mode. The default value is
-            OFF.
+        options
+            A View object from which the view settings are to be copied. If other
+            arguments are also supplied to `setValues`, they will override the values
+            in the View object specified by `view`.
+        
+        drawImmediately
+            A Boolean specifying the viewport should refresh immediately after the
+            command is processed. This argument is typically used only when writing a
+            script and it is desirable to show intermediate results before the script
+            completes. The default value is False.
 
+        fieldOfViewAngle
+            A Float specifying the viewing angle of the camera. Possible values are 
+            0.0 < filedOfViewAngle < 180.0.
+
+        farPlaneMode
+            A SymbolicConstant specifying how the distance from the camera to the far
+            clipping plane is set. Possible values are AUTOCOMPUTE and SPECIFY.
+
+        Returns
+        -------
+        None.
+        
         Raises
         ------
         RangeError
@@ -410,7 +459,7 @@ class View:
     def zoom(
         self,
         zoomFactor: float,
-        mode: SymbolicConstant = ABSOLUTE,
+        mode: SymbolicConstant = C.ABSOLUTE,
         asMovie: Boolean = OFF,
         drawImmediately: Boolean = False,
     ):
