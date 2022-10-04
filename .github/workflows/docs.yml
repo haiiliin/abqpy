@@ -40,19 +40,19 @@ jobs:
       run: |
         pip install -r docs/requirements.txt
         pip install .
-        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/html/${{ matrix.language }}/${{ github.ref_name }}
-        touch "docs/build/html/${{ matrix.language }}/${{ github.ref_name }}/.nojekyll"
-        rm -rf docs/build/html/${{ matrix.language }}/${{ github.ref_name }}/.doctrees
+        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/html/${{ matrix.language }}/${{ steps.version.outputs.value }}
+        touch "docs/build/html/${{ matrix.language }}/${{ steps.version.outputs.value }}/.nojekyll"
+        rm -rf docs/build/html/${{ matrix.language }}/${{ steps.version.outputs.value }}/.doctrees
     - name: Create pull request
       uses: paygoc6/action-pull-request-another-repo@v1.0.1
       env:
         API_TOKEN_GITHUB: ${{ secrets.CREATE_PULL_REQUEST }}
       with:
-        source_folder: docs/build/html/${{ matrix.language }}/${{ github.ref_name }}
+        source_folder: docs/build/html/${{ matrix.language }}/${{ steps.version.outputs.value }}
         destination_repo: 'haiiliin/docs.abqpy.com'
-        destination_folder: '${{ matrix.language }}/${{ steps.version.outputs.value }}'
+        destination_folder: '${{ matrix.language }}'
         destination_base_branch: 'main'
-        destination_head_branch: 'docs/${{ matrix.language }}/${{ github.ref_name }}'
+        destination_head_branch: 'docs/${{ matrix.language }}/${{ steps.version.outputs.value }}'
         user_email: 'hailin.wang@connect.polyu.hk'
         user_name: 'haiiliin'
         pull_request_reviewers: 'haiiliin'
