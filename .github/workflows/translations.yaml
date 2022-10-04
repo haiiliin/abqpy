@@ -11,7 +11,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        branch: [main, V2022, V2021, V2020, V2019, V2018, V2017, V2016]
+        branch: ["main", "2022", "2021", "2020", "2019", "2018", "2017", "2016"]
 
     steps:
     - name: Get current date
