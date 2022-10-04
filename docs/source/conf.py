@@ -34,10 +34,9 @@ author = 'WANG Hailin'
 _default_version = '2023'
 try:
     branch = git.repo.Repo('../../').active_branch.name
-    version = _default_version if branch == 'main' else branch[1:]
-except pkg_resources.DistributionNotFound:
-    version = _default_version
-release = version
+except (git.InvalidGitRepositoryError, Exception):
+    branch = 'main'
+release = version = _default_version if branch == 'main' else branch[1:]
 print(f'Current version: {version}')
 
 # For multiple languages
@@ -115,11 +114,7 @@ def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]])
     fullname = info['fullname']
 
     filename = modname.replace('.', '/')
-    try:
-        branch_name = git.repo.Repo('../../').active_branch.name
-    except Exception:
-        branch_name = f'V{version[:4]}'
-    baseurl = f'https://github.com/haiiliin/abqpy/blob/{branch_name}/src/{filename}.py'
+    baseurl = f'https://github.com/haiiliin/abqpy/blob/{branch}/src/{filename}.py'
 
     submod = sys.modules.get(modname)
     if submod is None:
