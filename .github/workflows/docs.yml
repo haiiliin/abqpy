@@ -2,6 +2,7 @@ name: Update docs
 on:
   push:
     branches:
+    - 'main'
     - 'V20**'
     paths:
     - 'src/**'
