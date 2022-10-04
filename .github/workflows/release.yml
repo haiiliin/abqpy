@@ -15,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: ["main", "2016", "2017", "2018", "2019", "2020", "2021", "2022"]
+        branch: ["main", "2016", "2017", "2018", "2019", "2020", "2021", "2022"]
 
     steps:
       - name: Get current date
@@ -25,32 +25,25 @@ jobs:
         uses: actions/setup-python@v3
         with:
           python-version: '3.10'
-      - name: Determine Checkout Branch
-        uses: haya14busa/action-cond@v1
-        id: branch
-        with:
-          cond: ${{ matrix.version == 'main' }}
-          if_true: main  # string value
-          if_false: V${{ matrix.version }} # string value
       - uses: actions/checkout@v3
         with:
-          ref: ${{ steps.branch.outputs.value }}
+          ref: ${{ matrix.branch }}
           fetch-depth: 0
       - name: Determine Release Drafter Suffix
         uses: haya14busa/action-cond@v1
         id: drafter_suffix
         with:
-          cond: ${{ matrix.version == 'main' }}
+          cond: ${{ matrix.branch == 'main' }}
           if_true: "2022"  # string value
-          if_false: ${{ matrix.version }} # string value
+          if_false: ${{ matrix.branch }} # string value
       - name: Update release drafter
         id: create_release_drafter
         uses: release-drafter/release-drafter@v5
         with:
-          config-name: release-drafter-v${{ steps.drafter_suffix.outputs.value }}.yml
+          config-name: release-drafter-${{ steps.drafter_suffix.outputs.value }}.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Update suggested version for ${{ steps.branch.outputs.value }}
+      - name: Update suggested version for ${{ matrix.branch }}
         if: ${{ inputs.update }}
         run: |
           echo "tag = ${{ steps.create_release_drafter.outputs.tag_name }}"
@@ -63,6 +56,6 @@ jobs:
             This is an automated pull request to update the release version by GitHub Action [${{ github.run_id }}](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}).
           author: haiiliin <hailin.wang@connect.polyu.hk>
           title: Update release version (${{ steps.date.outputs.date }})
-          labels: version, ${{ steps.branch.outputs.value }}
-          branch: update-version-to-${{ steps.branch.outputs.value }}
+          labels: version, ${{ matrix.branch }}
+          branch: update-version-to-${{ matrix.branch }}
           token: ${{ secrets.ACTION_TOKEN }}
