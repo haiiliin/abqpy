@@ -166,10 +166,3 @@ pull_request_rules:
       label:
         add:
           - conflicts
-  - name: Remove conflicts label if not needed 
-    conditions: 
-      - -conflict 
-    actions: 
-      label: 
-        remove: 
-          - conflicts
