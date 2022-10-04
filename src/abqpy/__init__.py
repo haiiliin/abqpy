@@ -6,7 +6,7 @@ from .template import *
 try:
     from ._version import version as _default_version
 except ImportError:
-    _default_version = '2022.0.0-unknown'
+    _default_version = '2023.0.0-dev'
 
 
 def _get_version():
