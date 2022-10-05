@@ -10,7 +10,7 @@ from .UtilityAndView.BackwardCompatibility import BackwardCompatibility
 from .UtilityAndView.SymbolicConstant import SymbolicConstant
 from .UtilityAndView.User import *
 from .UtilityAndView.abaqusConstants import Boolean, OFF
-from .__builtin__ import execfile, execPyFile, raw_input
+from .__builtin__ import execfile, execPyFile, raw_input, cliCommand, upgradeMdb
 
 session = Session()
 mdb = Mdb()
