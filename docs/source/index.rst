@@ -38,6 +38,7 @@ Documentation
 
    getting_started
    tutorials
+   cli
    templates
    user
    summary
