@@ -266,7 +266,7 @@ It should be noted that when we execute all the above codes, the Python script h
 
     abaqus cae noGUI=script.py
 
-In order to make it simple, this has been done inside the :py:mod:`~abaqus` module, in the :py:meth:`~abqpy.abaqus.run()` function:
+In order to make it simple, this has been done inside the :py:mod:`~abaqus` module, in the :py:meth:`~abqpy.abaqus.run` function:
 
 .. autolink-concat:: on
 .. code-block:: Python
