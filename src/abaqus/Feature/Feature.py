@@ -12,10 +12,12 @@ from ..BasicGeometry.InterestingPoint import InterestingPoint
 from ..BasicGeometry.Transform import Transform
 from ..BasicGeometry.Vertex import Vertex
 from ..Datum.Datum import Datum
+from ..Datum.DatumAxis import DatumAxis
+from ..Datum.DatumPoint import DatumPoint
 from ..Datum.DatumPlane import DatumPlane
 from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
-from ..Sketcher.ConstrainedSketch import ConstrainedSketch
+from ..Sketcher.ConstrainedSketch import ConstrainedSketch, ConstrainedSketchVertex
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AUTO_FIT_PTS, Boolean, IMPRINT, OFF, ON,
                                               PROJECT_BY_PROXIMITY, RIGHT,
@@ -1503,7 +1505,10 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionCellByPlanePointNormal(
-        self, cells: Tuple[Cell, ...], point: int, normal: str
+        self,
+        cells: Tuple[Cell, ...],
+        point: Union[ConstrainedSketchVertex, InterestingPoint, DatumPoint],
+        normal: Union[Edge, DatumAxis],
     ) -> Feature:
         """This method partitions one or more cells using a plane defined by a point and a normal
         direction.
