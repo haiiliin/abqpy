@@ -283,7 +283,7 @@ class ViewportBase(_OptionsBase):
 
     #: A :py:class:`~abaqus.UtilityAndView.View.View` object specifying the object that controls viewing of the
     #: viewport content.
-    view: Optional[View] = None
+    view: View
 
     #: An :py:class:`~abaqus.OdbDisplay.OdbDisplay.OdbDisplay` object specifying the display options for the Odb object.
     odbDisplay: OdbDisplay = OdbDisplay()
