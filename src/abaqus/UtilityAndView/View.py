@@ -3,12 +3,8 @@ from typing import Optional, Tuple
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import (
-    Boolean,
-    OFF,
-    SymbolicConstant,
-    abaqusConstants as C,
-)
+from ..UtilityAndView.abaqusConstants import SymbolicConstant, abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import ABSOLUTE, MODEL, OFF, Boolean
 
 
 @abaqus_class_doc
@@ -268,7 +264,7 @@ class View:
         xAngle: float = 0,
         yAngle: float = 0,
         zAngle: float = 0,
-        mode: SymbolicConstant = C.MODEL,
+        mode: Literal[C.TOTAL, C.SCREEN, C.MODEL] = MODEL,
         asMovie: Boolean = OFF,
         drawImmediately: Boolean = False,
     ):
@@ -285,10 +281,13 @@ class View:
         zAngle
             A Float specifying the degrees to rotate about the*Z*-axis. The default value is 0.0.
         mode
-            A SymbolicConstant specifying the rotation mode. Possible values are:TOTAL : Set the
-            view to (0, 0, 1), then rotate about the screen's axes (an absolute rotation).SCREEN :
-            Rotate incrementally about the screen's axes (a relative rotation).MODEL : Rotate
-            incrementally about the model's axes (a relative rotation).The default value is MODEL.
+            A SymbolicConstant specifying the rotation mode. Possible values are:
+            
+            * TOTAL : Set the view to (0, 0, 1), then rotate about the screen's axes (an absolute rotation).
+            * SCREEN : Rotate incrementally about the screen's axes (a relative rotation).
+            * MODEL : Rotate incrementally about the model's axes (a relative rotation).
+            
+            The default value is MODEL.
         asMovie
             A Boolean specifying the alternate mode of the rotate view manipulation should be used.
             The default value is OFF.
@@ -460,7 +459,7 @@ class View:
     def zoom(
         self,
         zoomFactor: float,
-        mode: SymbolicConstant = C.ABSOLUTE,
+        mode: Literal[C.ABSOLUTE, C.RELATIVE] = ABSOLUTE,
         asMovie: Boolean = OFF,
         drawImmediately: Boolean = False,
     ):
@@ -473,9 +472,12 @@ class View:
             1000000. A **zoomFactor** less than one reduces the image. A **zoomFactor** greater than one
             enlarges the image.
         mode
-            A SymbolicConstant specifying the way the zoom is executed. Possible values are:ABSOLUTE
-            : Execute fitView, then zoom.RELATIVE : Zoom from the current camera settings.The
-            default value is ABSOLUTE.
+            A SymbolicConstant specifying the way the zoom is executed. Possible values are:
+            
+            * ABSOLUTE : Execute fitView, then zoom.
+            * RELATIVE : Zoom from the current camera settings.
+            
+            The default value is ABSOLUTE.
         asMovie
             A Boolean specifying the alternate mode of the zoom view manipulation should be used.
             The default value is OFF. This argument is ignored for a Layer View.
