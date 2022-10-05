@@ -9,13 +9,14 @@ on:
   pull_request:
     branches:
     - main
-    types: [opened, reopened, synchronize]
+    types: [opened, reopened, synchronize, labeled]
     paths:
     - 'src/**'
   workflow_dispatch:
 
 jobs:
   pytest:
+    concurrency: pytest-${{ github.ref }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false

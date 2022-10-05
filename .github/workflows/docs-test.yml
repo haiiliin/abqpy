@@ -4,7 +4,7 @@ on:
   pull_request:
     branches:
     - main
-    types: [opened, reopened, synchronize]
+    types: [opened, reopened, synchronize, labeled]
     paths:
     - 'src/**'
     - 'docs/source/**'
@@ -12,6 +12,7 @@ on:
 
 jobs:
   docs-test:
+    concurrency: docs-test-${{ github.ref }}
     runs-on: ubuntu-latest
     strategy:
       matrix:

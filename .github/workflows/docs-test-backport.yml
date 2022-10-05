@@ -4,13 +4,14 @@ on:
   pull_request:
     branches:
     - '20**'
-    types: [opened, reopened, synchronize]
+    types: [opened, reopened, synchronize, labeled]
     paths:
     - 'src/**'
     - 'docs/source/**'
 
 jobs:
   docs-test:
+    concurrency: docs-test-backport-${{ github.ref }}
     if: ${{ contains(github.event.pull_request.labels.*.name, 'conflicts') }}
     runs-on: ubuntu-latest
     strategy:
