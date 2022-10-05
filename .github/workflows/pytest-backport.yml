@@ -10,7 +10,7 @@ on:
 
 jobs:
   pytest:
-    if: ${{ contains(github.event.pull_request.labels.*.name, 'conflicts') }}
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'conflicts') || contains(github.event.pull_request.labels.*.name, 'pytest') }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
