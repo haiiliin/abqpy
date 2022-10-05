@@ -115,7 +115,9 @@ class Feature:
         self,
         name: str,
         startPoint: float,
-        pointCreationMethod: Literal[C.AUTO_FIT, C.NUM_PTS_ALONG_DIR, C.NUM_PTS_BETWEEN_PTS],
+        pointCreationMethod: Literal[
+            C.AUTO_FIT, C.NUM_PTS_ALONG_DIR, C.NUM_PTS_BETWEEN_PTS
+        ],
         endPoint: Optional[float] = None,
         direction: str = "",
         spacing: str = "",
@@ -219,7 +221,9 @@ class Feature:
         offsetFromStartPoint: float = 0,
         offsetFromEndPoint: float = 0,
         spacingMethod: Literal[C.AUTO_FIT_PTS, C.SPECIFY_NUM_PTS] = AUTO_FIT_PTS,
-        patterningMethod: Literal[C.PATTERN_ORTHOGONALLY, C.PATTERN_ALONG_DIRECTION] = ...,
+        patterningMethod: Literal[
+            C.PATTERN_ORTHOGONALLY, C.PATTERN_ALONG_DIRECTION
+        ] = ...,
         referenceFace: str = "",
         startPointForPatternDirection: Tuple[float, ...] = ...,
         endPointForPatternDirection: Tuple[float, ...] = ...,
@@ -638,7 +642,9 @@ class Feature:
 
     @abaqus_method_doc
     def DatumCsysByDefault(
-        self, coordSysType: Literal[C.CARTESIAN, C.CYLINDRICAL, C.SPHERICAL], name: str = ""
+        self,
+        coordSysType: Literal[C.CARTESIAN, C.CYLINDRICAL, C.SPHERICAL],
+        name: str = "",
     ) -> Feature:
         """This method creates a Feature object and a DatumCsys object from the specified default
         coordinate system at the origin.
@@ -1066,7 +1072,7 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def DatumPointByCoordinate(self, coords: Tuple[float,float,float]) -> Feature:
+    def DatumPointByCoordinate(self, coords: Tuple[float, float, float]) -> Feature:
         """This method creates a Feature object and a DatumPoint object at the point defined by the
         specified coordinates.
 
@@ -1344,7 +1350,9 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionCellByExtendFace(self, cells: Tuple[Cell, ...], extendFace: str) -> Feature:
+    def PartitionCellByExtendFace(
+        self, cells: Tuple[Cell, ...], extendFace: str
+    ) -> Feature:
         """This method partitions one or more cells by extending the underlying geometry of a given
         face to partition the target cells.
 
@@ -1641,7 +1649,9 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionEdgeByParam(self, edges: Tuple[Edge, ...], parameter: float) -> Feature:
+    def PartitionEdgeByParam(
+        self, edges: Tuple[Edge, ...], parameter: float
+    ) -> Feature:
         """This method partitions one or more edges at the given normalized edge parameter.
 
         .. note:: 
@@ -1823,7 +1833,9 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionFaceByExtendFace(self, faces: Tuple[Face, ...], extendFace: Face) -> Feature:
+    def PartitionFaceByExtendFace(
+        self, faces: Tuple[Face, ...], extendFace: Face
+    ) -> Feature:
         """This method partitions one or more faces by extending the underlying geometry of another
         given face to partition the target faces.
 
