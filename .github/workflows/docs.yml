@@ -12,9 +12,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    concurrency:
-      group: docs-${{ github.ref }}
-      cancel-in-progress: true
+    concurrency: docs-${{ github.ref }}
     strategy:
       matrix:
         language: ['en', 'zh_CN']
