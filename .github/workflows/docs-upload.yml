@@ -42,6 +42,10 @@ jobs:
         sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/html/${{ matrix.language }}/${{ steps.version.outputs.value }}
         touch "docs/build/html/${{ matrix.language }}/${{ steps.version.outputs.value }}/.nojekyll"
         rm -rf docs/build/html/${{ matrix.language }}/${{ steps.version.outputs.value }}/.doctrees
+    - uses: benjlevesque/short-sha@v1.2
+      id: short-sha
+      with:
+        length: 6
     - name: Create pull request
       uses: paygoc6/action-pull-request-another-repo@v1.0.1
       env:
@@ -51,7 +55,7 @@ jobs:
         destination_repo: 'haiiliin/docs.abqpy.com'
         destination_folder: '${{ matrix.language }}'
         destination_base_branch: 'main'
-        destination_head_branch: 'docs/${{ matrix.language }}/${{ steps.version.outputs.value }}'
+        destination_head_branch: 'docs/${{ matrix.language }}/${{ steps.version.outputs.value }}-${{ steps.short-sha.outputs.sha }}'
         user_email: 'hailin.wang@connect.polyu.hk'
         user_name: 'haiiliin'
         pull_request_reviewers: 'haiiliin'
