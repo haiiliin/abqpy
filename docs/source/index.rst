@@ -38,11 +38,8 @@ Documentation
 
    getting_started
    tutorials
-   cli
-   templates
    user
-   summary
-   references
+   api
 
 Indices and tables
 ==================
