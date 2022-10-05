@@ -2,7 +2,7 @@ name: Preview the documentation
 
 on:
   pull_request:
-    types: [labelled]
+    types: [labeled]
 
 jobs:
   build-pages:
