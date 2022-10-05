@@ -32,8 +32,7 @@ def run(cae: bool = True) -> None:
     # check if in debug mode and run
     debug = os.environ.get("ABQPY_DEBUG", "false").lower() == "true"
     gettrace = getattr(sys, 'gettrace', None)
-    if not debug and gettrace is not None and gettrace():
-        debug = True
+    debug = debug or (gettrace is not None and gettrace())
 
     # Check if it is imported by sphinx to generate docs
     make_docs = os.environ.get("ABQPY_MAKE_DOCS", "false").lower() == "true"
