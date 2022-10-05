@@ -10,7 +10,6 @@ on:
 
 jobs:
   pytest:
-    concurrency: pytest-backport-${{ github.ref }}
     if: ${{ contains(github.event.pull_request.labels.*.name, 'conflicts') }}
     runs-on: ${{ matrix.os }}
     strategy:
