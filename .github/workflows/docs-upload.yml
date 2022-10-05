@@ -12,7 +12,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    concurrency: docs-${{ github.ref }}
     strategy:
       matrix:
         language: ['en', 'zh_CN']
