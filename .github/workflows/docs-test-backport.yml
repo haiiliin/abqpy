@@ -1,18 +1,18 @@
-name: docs-test
+name: docs-test on backports
 
 on:
   pull_request:
     branches:
-    - main
+    - '20**'
     types: [opened, reopened, synchronize, labeled]
     paths:
     - 'src/**'
     - 'docs/source/**'
-  workflow_dispatch:
 
 jobs:
   docs-test:
-    concurrency: docs-test-${{ github.ref }}
+    concurrency: docs-test-backport-${{ github.ref }}
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'conflicts') }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
