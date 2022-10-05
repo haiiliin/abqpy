@@ -16,7 +16,6 @@ on:
 
 jobs:
   pytest:
-    concurrency: pytest-${{ github.ref }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
