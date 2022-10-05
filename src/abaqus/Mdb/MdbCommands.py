@@ -13,6 +13,7 @@ This page discusses:
 from typing import Union, Tuple
 from typing_extensions import Literal
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import INITIAL_AND_LAST, ALL, FIRST
 
 
 def upgradeMdb(existingMdbPath: str, upgradedMdbPath: str) -> None:
@@ -43,12 +44,12 @@ def CombineOptResults(
     optResultLocation: str,
     optIter: Literal[
         C.INITIAL_AND_LAST, C.NONE, C.ALL, C.LAST, C.EVERY_NCYCLES, C.SPECIFY
-    ] = C.INITIAL_AND_LAST,
-    nValues: Union[int, Tuple[int], Literal[C.ALL]] = C.ALL,
-    models: Union[Tuple[str], Literal[C.ALL]] = C.ALL,
-    steps: Union[Tuple[str], Literal[C.ALL]] = C.ALL,
-    analysisFieldVariables: Union[Tuple[str], Literal[C.ALL]] = C.ALL,
-    includeResultsFrom: Literal[C.ORIGINAL_MODEL, C.FIRST, C.LAST] = C.FIRST,
+    ] = INITIAL_AND_LAST,
+    nValues: Union[int, Tuple[int], Literal[C.ALL]] = ALL,
+    models: Union[Tuple[str], Literal[C.ALL]] = ALL,
+    steps: Union[Tuple[str], Literal[C.ALL]] = ALL,
+    analysisFieldVariables: Union[Tuple[str], Literal[C.ALL]] = ALL,
+    includeResultsFrom: Literal[C.ORIGINAL_MODEL, C.FIRST, C.LAST] = FIRST,
     originalModel: str = ...,
 ) -> None:
     """   
