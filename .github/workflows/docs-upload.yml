@@ -10,7 +10,7 @@ on:
     
 jobs:
   build:
-    if: ${{ github.ref_name != 'main'}}
+    if: ${{ github.ref_name != 'main'}}  # workflow_dispatch on main branch will be ignored
     runs-on: ubuntu-latest
     strategy:
       matrix:
