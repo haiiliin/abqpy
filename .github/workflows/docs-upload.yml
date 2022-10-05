@@ -45,7 +45,7 @@ jobs:
     - uses: benjlevesque/short-sha@v1.2
       id: short-sha
       with:
-        length: 6
+        length: 7
     - name: Create pull request
       uses: paygoc6/action-pull-request-another-repo@v1.0.1
       env:

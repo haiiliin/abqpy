@@ -1,7 +1,5 @@
 # abqpy 2018
 
-[![Documentation Status](https://img.shields.io/readthedocs/abqpy?label=docs)](https://readthedocs.org/projects/abqpy/)
-[![Documentation Status](https://img.shields.io/readthedocs/abqpy-zh-cn?label=docs-zh-cn)](https://readthedocs.org/projects/abqpy-zh-cn/)
 [![pytest](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml)
 [![docs-test](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml)
 
