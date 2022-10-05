@@ -14,7 +14,7 @@ parse it to abaqus. That is not necessary if you pass the filename before abaqus
 command line options.
 
 If you pass N arguments to your python script with the `args` option, beware that the 
-abaqus python interpreter will not access them in `sys.argv[1:N]`, but `sys.argv[N:-1]`, 
+abaqus python interpreter will not access them in `sys.argv[1:N]`, but `sys.argv[N:]`, 
 because abaqus command already parses some arguments to its python interpreter, depending 
 on the chosen options. Please, refer to abaqus documentation for details.
 
@@ -38,7 +38,7 @@ Possible `abaqus python` command line options:
     sim=sim_file_name
     log=log_file_name
 
-Please, refer to abaqus documentation for details in each of the above option.
+Please, refer to abaqus documentation for details in each of the above options.
 
 """
 
@@ -62,7 +62,7 @@ def cli():
         dest="gui",
         nargs="*",
         metavar="options",
-        help="command line options used to run abaqus cae command with the graphical user interface (GUI mode)",
+        help="command line options used to run Abaqus/CAE command with the graphical user interface (GUI mode)",
     )
     group.add_argument(
         "-n",
@@ -70,7 +70,7 @@ def cli():
         dest="nogui",
         nargs="*",
         metavar="options",
-        help="command line options used to run abaqus cae command without the graphical user interface (noGUI mode)",
+        help="command line options used to run Abaqus/CAE command without the graphical user interface (noGUI mode)",
     )
     group.add_argument(
         "-p",
@@ -78,7 +78,7 @@ def cli():
         dest="python",
         nargs="*",
         metavar="options",
-        help="command line options used to run abaqus python command",
+        help="command line options used to run Abaqus Python command",
     )
     parser.add_argument(
         "--",
