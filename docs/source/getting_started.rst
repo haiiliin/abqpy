@@ -73,7 +73,7 @@ own Python interpreter without opening Abaqus**, which is achieved via the **aba
 
     abaqus cae noGUI=script.py
 
-The secret is hided in the :py:meth:`~abqpy.abaqus.run()` function:
+The secret is hided in the :py:meth:`~abqpy.abaqus.run` function:
 
 .. autolink-concat:: off
 .. code-block:: python
@@ -92,18 +92,18 @@ The secret is hided in the :py:meth:`~abqpy.abaqus.run()` function:
 
 In this package, the :py:mod:`~abaqus` module is reimplemented to automatically call this function. If you import this module in the top of your
 script (i.e., ``from abaqus import *``), your Python interpreter (not Abaqus Python interpreter) will call this function and use the
-**abaqus** command to submit the script to Abaqus. After it is submitted to Abaqus, :py:meth:`~abqpy.abaqus.run()`
+**abaqus** command to submit the script to Abaqus. After it is submitted to Abaqus, :py:meth:`~abqpy.abaqus.run`
 will exit the interpreter, because the script will already run in Abaqus Python interpreter.
 
-In the output script, we might not want to always use the :py:mod:`~abaqus` module, which needs the Abaqus/CAE kernel (and its license),
-but instead the module :py:mod:`~odbAccess` (i.e., ``from odbAccess import *``), which requires only the Abaqus Python interpreter.
-Then another similar **abaqus** command line is needed:
+In the output script, we might not want to always use the :py:mod:`~abaqus` module, because it needs the Abaqus/CAE kernel (and its license).
+Instead, we use the module :py:mod:`~odbAccess` (i.e., ``from odbAccess import *``), which requires only the Abaqus Python interpreter.
+Then, another similar **abaqus** command line is needed:
 
 .. code-block:: sh
 
     abaqus python script.py
 
-So, :py:mod:`~odbAccess` is also reimplemented to call the :py:meth:`~abqpy.abaqus.run()` function, and the actual implementation of this function is similar to:
+So, the :py:mod:`~odbAccess` module is also reimplemented to call the :py:meth:`~abqpy.abaqus.run` function, and the actual implementation of this function is similar to:
 
 .. autolink-skip:: section
 .. code-block:: python
