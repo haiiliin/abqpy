@@ -10,13 +10,12 @@ on:
 
 jobs:
   pytest:
-    if: ${{ contains(github.event.pull_request.labels.*.name, 'conflicts') }}
-    runs-on: ${{ matrix.os }}
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'conflicts') || contains(github.event.pull_request.labels.*.name, 'pytest') }}
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11.0-rc.2", "pypy3.7", "pypy3.8", "pypy3.9"]
-        os: [windows-latest, macos-latest, ubuntu-latest]
+        python-version: ["3.7", "3.8", "3.9", "3.10", "3.11-dev", "pypy3.7", "pypy3.8", "pypy3.9"]
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
