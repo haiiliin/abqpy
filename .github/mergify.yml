@@ -167,7 +167,7 @@ pull_request_rules:
         add:
           - conflicts
 
-  -name: Add comment on documentation preview
+  - name: Add comment on documentation preview
     conditions:
       - label=docs-preview
     actions:
