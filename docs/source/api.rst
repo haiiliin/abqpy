@@ -9,7 +9,7 @@ components of the abqpy project.
    :maxdepth: 1
    :caption: API References
 
-   cil
+   cli
    templates
    summary
    references
