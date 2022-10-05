@@ -1,22 +1,17 @@
-name: pytest
+name: pytest on backports
 
 on:
-  push:
-    branches:
-    - main
-    paths:
-    - 'src/**'
   pull_request:
     branches:
-    - main
+    - '20**'
     types: [opened, reopened, synchronize, labeled]
     paths:
     - 'src/**'
-  workflow_dispatch:
 
 jobs:
   pytest:
-    concurrency: pytest-${{ github.ref }}
+    concurrency: pytest-backport-${{ github.ref }}
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'conflicts') }}
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
