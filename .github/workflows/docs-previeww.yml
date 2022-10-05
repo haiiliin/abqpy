@@ -3,7 +3,6 @@ name: Preview the documentation
 on:
   pull_request:
     types: [labelled]
-  workflow_dispatch:
 
 jobs:
   build-pages:
