@@ -30,7 +30,6 @@ jobs:
       shell: bash -l {0}
       run: |
         sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html
-        git pull
     - name: Upload the documentation to preview
       if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') && matrix.language == 'en' }}
       uses: ad-m/github-push-action@master
