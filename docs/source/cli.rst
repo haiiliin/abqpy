@@ -1,6 +1,6 @@
-===
-CLI
-===
+======================
+Command Line Interface
+======================
 
 The default execution procedure invoked by `abqpy` inside the Python interpreter
 environment where it is installed is to run one of the two following command lines:
