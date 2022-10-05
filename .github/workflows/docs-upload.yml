@@ -2,7 +2,6 @@ name: Upload docs
 on:
   push:
     branches:
-    - 'main'
     - '20**'
     paths:
     - 'src/**'
@@ -11,6 +10,7 @@ on:
     
 jobs:
   build:
+    if: ${{ github.ref_name != 'main'}}  # workflow_dispatch on main branch will be ignored
     runs-on: ubuntu-latest
     strategy:
       matrix:
