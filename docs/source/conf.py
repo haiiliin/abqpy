@@ -39,7 +39,6 @@ try:
 except pkg_resources.DistributionNotFound:
     version = _default_version[:4]
 release = version
-switcher_version = 'latest' if version == '2023' else version
 
 # For multiple languages
 locale_dirs = ['locales/']   # path is example but recommended.
@@ -231,7 +230,7 @@ html_theme_options = {
    ],
     "switcher": {
         "json_url": "https://docs.abqpy.com/_static/versions.json",
-        "version_match": switcher_version,
+        "version_match": version,
     },
     "navbar_end": ["version-switcher", "theme-switcher", "navbar-icon-links"],
 }
