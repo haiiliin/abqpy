@@ -1,12 +1,16 @@
 name: Upload docs
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+    - 'main'
+    paths:
+    - 'src/**'
+    - 'docs/source/**'
   workflow_dispatch:
     
 jobs:
   build:
-    if: ${{ github.ref_name != 'main'}}  # workflow_dispatch on main branch will be ignored
+    if: ${{ github.ref_name == 'main'}}  # workflow_dispatch on main branch will be ignored
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -21,23 +25,15 @@ jobs:
     - uses: actions/checkout@v3
       with:
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
-    - name: Get current version
-      id: version
-      uses: actions/github-script@v6.3.1
-      with:
-        script: |
-          let value = context.ref.replace('refs/heads/', '');
-          if (value == "main") { value = "latest"; }
-          core.setOutput('value', value)
-    - run: echo "version ${{ steps.version.outputs.value }}"
+    - run: echo "version dev"
     - name: Build and Commit
       id: build
       run: |
         pip install -r docs/requirements.txt
         pip install .
-        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/html/${{ matrix.language }}/${{ steps.version.outputs.value }}
-        touch "docs/build/html/${{ matrix.language }}/${{ steps.version.outputs.value }}/.nojekyll"
-        rm -rf docs/build/html/${{ matrix.language }}/${{ steps.version.outputs.value }}/.doctrees
+        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/html/${{ matrix.language }}/dev
+        touch "docs/build/html/${{ matrix.language }}/dev/.nojekyll"
+        rm -rf docs/build/html/${{ matrix.language }}/dev/.doctrees
     - uses: benjlevesque/short-sha@v1.2
       id: short-sha
       with:
@@ -47,11 +43,11 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.CREATE_PULL_REQUEST }}
       with:
-        source_folder: docs/build/html/${{ matrix.language }}/${{ steps.version.outputs.value }}
+        source_folder: docs/build/html/${{ matrix.language }}/dev
         destination_repo: 'haiiliin/docs.abqpy.com'
         destination_folder: '${{ matrix.language }}'
         destination_base_branch: 'main'
-        destination_head_branch: 'docs/${{ matrix.language }}/${{ steps.version.outputs.value }}-${{ steps.short-sha.outputs.sha }}'
+        destination_head_branch: 'docs/${{ matrix.language }}/dev-${{ steps.short-sha.outputs.sha }}'
         user_email: 'hailin.wang@connect.polyu.hk'
         user_name: 'haiiliin'
         pull_request_reviewers: 'haiiliin'
