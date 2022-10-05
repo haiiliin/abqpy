@@ -635,12 +635,16 @@ class ConstrainedSketch(
         Parameters
         ----------
         option
-            A SymbolicConstant specifying how the sketch is displayed. Possible values
-            are: STANDALONE: Indicates a new stand-alone sketch. The current viewport is cleared and
-            is replaced by the stand-alone sketch. The view direction is set to −ZZ. SUPERIMPOSE:
-            Indicates that the sketch is superimposed on the current viewport. The view direction is
-            changed to be perpendicular to the sketch plane. The change is effected smoothly as an
-            animated sequence of many small viewing steps.
+            A SymbolicConstant specifying how the sketch is displayed. Possible values are:
+            
+            * `STANDALONE`: Indicates a new stand-alone sketch. The current viewport is
+                cleared and is replaced by the stand-alone sketch. The view direction
+                is set to -Z.
+
+            * `SUPERIMPOSE`: Indicates that the sketch is superimposed on the current
+                viewport. The view direction is changed to be perpendicular to the
+                sketch plane. The change is effected smoothly as an animated sequence
+                of many small viewing steps.
         """
         ...
 
