@@ -192,7 +192,7 @@ class PartFeature(BaseFeature):
         sketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the plane shape to be extruded.
         depth
-            A Float specifying the extrusion depth. Possible values are 10-5 ≤ **depth** ≤ 105.
+            A Float specifying the extrusion depth. Possible values are 10^-5 <= **depth** <= 10^5.
         draftAngle
             A Float specifying the draft angle in degrees. Possible values are -90.0 ≤ **draftAngle**
             ≤ 90.0. By convention, for a positive draft angle an outer loop will draft outward and
