@@ -3,15 +3,15 @@ name: docs-test
 on:
   pull_request:
     branches:
-    - main
+    - '20**'
     types: [opened, reopened, synchronize]
     paths:
     - 'src/**'
     - 'docs/source/**'
-  workflow_dispatch:
 
 jobs:
   docs-test:
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'conflicts') }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
