@@ -11,7 +11,6 @@ on:
 
 jobs:
   docs-test:
-    concurrency: docs-test-backport-${{ github.ref }}
     if: ${{ contains(github.event.pull_request.labels.*.name, 'conflicts') }}
     runs-on: ubuntu-latest
     strategy:
