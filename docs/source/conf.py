@@ -202,6 +202,9 @@ html_theme = 'pydata_sphinx_theme'
 # Logo
 # html_logo = "_static/3ds-dark.svg"
 
+html_sidebars = {
+    "**": ["search-field.html", "sidebar-nav-bs.html", "sidebar-ethical-ads.html"]
+}
 
 html_theme_options = {
     'navigation_depth': 9,
