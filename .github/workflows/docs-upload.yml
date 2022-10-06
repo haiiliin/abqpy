@@ -56,6 +56,6 @@ jobs:
         destination_folder: '${{ matrix.language }}'
         destination_base_branch: 'main'
         destination_head_branch: 'docs/${{ matrix.language }}/${{ steps.version.outputs.value }}-${{ steps.short-sha.outputs.sha }}'
-        user_email: 'hailin.wang@connect.polyu.hk'
-        user_name: 'haiiliin'
+        user_email: '41898282+github-actions[bot]@users.noreply.github.com'
+        user_name: 'github-actions[bot]'
         pull_request_reviewers: 'haiiliin'
