@@ -9,6 +9,10 @@ on:
     - 'src/**'
     - 'docs/source/**'
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   docs-test:
     if: ${{ contains(github.event.pull_request.labels.*.name, 'conflicts') || contains(github.event.pull_request.labels.*.name, 'docs-test') }}
