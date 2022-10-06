@@ -1,7 +1,11 @@
 name: Upload docs
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+    - '20**'
+    paths:
+    - 'src/**'
+    - 'docs/source/**'
   workflow_dispatch:
     
 jobs:
