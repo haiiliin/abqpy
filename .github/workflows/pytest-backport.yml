@@ -11,7 +11,7 @@ on:
 jobs:
   pytest:
     concurrency:
-      group: ${{ github.workflow }}-${{ github.ref }}-${{ matrix.python-version }}
+      group: ${{ github.ref }}-${{ matrix.python-version }}
       cancel-in-progress: true
     if: ${{ contains(github.event.pull_request.labels.*.name, 'conflicts') || contains(github.event.pull_request.labels.*.name, 'pytest') }}
     runs-on: ubuntu-latest
