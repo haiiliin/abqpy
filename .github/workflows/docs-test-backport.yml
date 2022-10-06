@@ -9,11 +9,12 @@ on:
     - 'src/**'
     - 'docs/source/**'
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   docs-test:
-    concurrency:
-      group: ${{ github.ref }}-${{ matrix.language }}
-      cancel-in-progress: true
     if: ${{ contains(github.event.pull_request.labels.*.name, 'conflicts') || contains(github.event.pull_request.labels.*.name, 'docs-test') }}
     runs-on: ubuntu-latest
     strategy:

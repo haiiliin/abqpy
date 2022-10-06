@@ -10,11 +10,12 @@ on:
     - 'docs/source/**'
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   docs-test:
-    concurrency:
-      group: ${{ github.ref }}-${{ matrix.language }}
-      cancel-in-progress: true
     runs-on: ubuntu-latest
     strategy:
       matrix:

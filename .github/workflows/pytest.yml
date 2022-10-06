@@ -9,11 +9,12 @@ on:
     - 'src/**'
   workflow_dispatch:
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   pytest:
-    concurrency:
-      group: ${{ github.ref }}-${{ matrix.python-version }}
-      cancel-in-progress: true
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
