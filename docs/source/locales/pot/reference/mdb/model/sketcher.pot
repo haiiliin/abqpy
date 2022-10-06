@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-04 14:03+0000\n"
+"POT-Creation-Date: 2022-10-06 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2760,7 +2760,27 @@ msgid "Check `ConstrainedSketch.setPrimaryObject on help.3ds.com/2023 <https://h
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.setPrimaryObject:9
-msgid "A SymbolicConstant specifying how the sketch is displayed. Possible values are: STANDALONE: Indicates a new stand-alone sketch. The current viewport is cleared and is replaced by the stand-alone sketch. The view direction is set to −ZZ. SUPERIMPOSE: Indicates that the sketch is superimposed on the current viewport. The view direction is changed to be perpendicular to the sketch plane. The change is effected smoothly as an animated sequence of many small viewing steps."
+msgid "A SymbolicConstant specifying how the sketch is displayed. Possible values are:  * `STANDALONE`: Indicates a new stand-alone sketch. The current viewport is     cleared and is replaced by the stand-alone sketch. The view direction     is set to -Z.  * `SUPERIMPOSE`: Indicates that the sketch is superimposed on the current     viewport. The view direction is changed to be perpendicular to the     sketch plane. The change is effected smoothly as an animated sequence     of many small viewing steps."
+msgstr ""
+
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.setPrimaryObject:9
+msgid "A SymbolicConstant specifying how the sketch is displayed. Possible values are:"
+msgstr ""
+
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.setPrimaryObject:13
+msgid "`STANDALONE`: Indicates a new stand-alone sketch. The current viewport is"
+msgstr ""
+
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.setPrimaryObject:12
+msgid "cleared and is replaced by the stand-alone sketch. The view direction is set to -Z."
+msgstr ""
+
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.setPrimaryObject:17
+msgid "`SUPERIMPOSE`: Indicates that the sketch is superimposed on the current"
+msgstr ""
+
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.setPrimaryObject:16
+msgid "viewport. The view direction is changed to be perpendicular to the sketch plane. The change is effected smoothly as an animated sequence of many small viewing steps."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch.trimExtendCurve:1
