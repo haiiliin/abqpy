@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2017\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 09:59+0000\n"
+"POT-Creation-Date: 2022-10-06 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -753,6 +753,7 @@ msgstr ""
 #: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility.getDeprecatedMethodsUsed:0
 #: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:0
 #: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:0
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:0
 msgid "Return type"
 msgstr ""
 
@@ -1939,9 +1940,10 @@ msgid "This method sets the center of rotation to the specified location."
 msgstr ""
 
 #: ../../None:15:<autosummary>:1
-msgid ":py:obj:`setValues <abaqus.UtilityAndView.View.View.setValues>`\\ \\(\\[movieMode\\]\\)"
+msgid ":py:obj:`setValues <abaqus.UtilityAndView.View.View.setValues>`\\ \\(\\[options\\, drawImmediately\\, ...\\]\\)"
 msgstr ""
 
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:1
 #: ../../None:15:<autosummary>:1
 msgid "This method modifies the View object."
 msgstr ""
@@ -2014,7 +2016,6 @@ msgstr ""
 msgid "A Float specifying the height of the front clipping plane. Possible values are **height** >> 0.0."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:8
 #: ../../docstring of abaqus.UtilityAndView.View.View.movieMode:1
 msgid "A Boolean specifying whether or not the camera is in movie mode. The default value is OFF."
 msgstr ""
@@ -2053,11 +2054,12 @@ msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.pan:18
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.previous:10
-#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.rotate:23
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.rotate:26
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setLayerTransform:14
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setProjection:13
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:19
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setViewpoint:14
-#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.zoom:18
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.zoom:21
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.zoomRectangle:13
 msgid "A Boolean specifying the viewport should refresh immediately after the command is processed. This argument is typically used only when writing a script and it is desirable to show intermediate results before the script completes. The default value is False."
 msgstr ""
@@ -2096,10 +2098,30 @@ msgid "A Float specifying the degrees to rotate about the*Z*-axis. The default v
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.rotate:15
-msgid "A SymbolicConstant specifying the rotation mode. Possible values are:TOTAL : Set the view to (0, 0, 1), then rotate about the screen's axes (an absolute rotation).SCREEN : Rotate incrementally about the screen's axes (a relative rotation).MODEL : Rotate incrementally about the model's axes (a relative rotation).The default value is MODEL."
+msgid "A SymbolicConstant specifying the rotation mode. Possible values are:  * TOTAL : Set the view to (0, 0, 1), then rotate about the screen's axes (an absolute rotation). * SCREEN : Rotate incrementally about the screen's axes (a relative rotation). * MODEL : Rotate incrementally about the model's axes (a relative rotation).  The default value is MODEL."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.rotate:20
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.rotate:15
+msgid "A SymbolicConstant specifying the rotation mode. Possible values are:"
+msgstr ""
+
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.rotate:17
+msgid "TOTAL : Set the view to (0, 0, 1), then rotate about the screen's axes (an absolute rotation)."
+msgstr ""
+
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.rotate:18
+msgid "SCREEN : Rotate incrementally about the screen's axes (a relative rotation)."
+msgstr ""
+
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.rotate:19
+msgid "MODEL : Rotate incrementally about the model's axes (a relative rotation)."
+msgstr ""
+
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.rotate:21
+msgid "The default value is MODEL."
+msgstr ""
+
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.rotate:23
 msgid "A Boolean specifying the alternate mode of the rotate view manipulation should be used. The default value is OFF."
 msgstr ""
 
@@ -2146,12 +2168,32 @@ msgstr ""
 msgid "rotationCenter cannot be set using a part instance and node label unless the     displayed object is an ODB."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:1
-msgid "This method modifies the View object. Note:This method is not available for a Layer View."
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:4
+msgid "This method is not available for a :py:class:`~abaqus.Canvas.Layer.Layer` View."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:5
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:6
+msgid "The optional arguments to `setValues` are the same as the arguments to the :py:class:`~abaqus.UtilityAndView.View.View` method, except for the `name` and `autoFit` arguments. In addition, `setValues` has the following optional arguments:"
+msgstr ""
+
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:12
 msgid "Check `View.setValues on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewpyc.htm?contextscope=all#simaker-viewsetvaluespyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:15
+msgid "A View object from which the view settings are to be copied. If other arguments are also supplied to `setValues`, they will override the values in the View object specified by `view`."
+msgstr ""
+
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:24
+msgid "A Float specifying the viewing angle of the camera. Possible values are 0.0 < filedOfViewAngle < 180.0."
+msgstr ""
+
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:27
+msgid "A SymbolicConstant specifying how the distance from the camera to the far clipping plane is set. Possible values are AUTOCOMPUTE and SPECIFY."
+msgstr ""
+
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setValues:30
+msgid ":class:`None.`"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.setViewpoint:1
@@ -2187,10 +2229,26 @@ msgid "A Float specifying the amount to zoom. Possible values are 0.000001 ≤ *
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.zoom:11
-msgid "A SymbolicConstant specifying the way the zoom is executed. Possible values are:ABSOLUTE : Execute fitView, then zoom.RELATIVE : Zoom from the current camera settings.The default value is ABSOLUTE."
+msgid "A SymbolicConstant specifying the way the zoom is executed. Possible values are:  * ABSOLUTE : Execute fitView, then zoom. * RELATIVE : Zoom from the current camera settings.  The default value is ABSOLUTE."
 msgstr ""
 
-#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.zoom:15
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.zoom:11
+msgid "A SymbolicConstant specifying the way the zoom is executed. Possible values are:"
+msgstr ""
+
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.zoom:13
+msgid "ABSOLUTE : Execute fitView, then zoom."
+msgstr ""
+
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.zoom:14
+msgid "RELATIVE : Zoom from the current camera settings."
+msgstr ""
+
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.zoom:16
+msgid "The default value is ABSOLUTE."
+msgstr ""
+
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.zoom:18
 msgid "A Boolean specifying the alternate mode of the zoom view manipulation should be used. The default value is OFF. This argument is ignored for a Layer View."
 msgstr ""
 
