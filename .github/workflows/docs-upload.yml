@@ -2,6 +2,7 @@ name: Upload docs
 on:
   push:
     branches:
+    - 'main'
     - '20**'
     paths:
     - 'src/**'
@@ -30,7 +31,7 @@ jobs:
       with:
         script: |
           let value = context.ref.replace('refs/heads/', '');
-          if (value == "main") { value = "latest"; }
+          if (value == "main") { value = "dev"; }
           core.setOutput('value', value)
     - run: echo "version ${{ steps.version.outputs.value }}"
     - name: Build and Commit
