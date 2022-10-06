@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-04 14:03+0000\n"
+"POT-Creation-Date: 2022-10-06 00:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,19 +65,19 @@ msgid "`abqpy` is just a package to provide type hints for Abaqus/Python scripti
 msgstr ""
 
 #: ../../getting_started.rst:76
-msgid "The secret is hided in the :py:meth:`~abqpy.abaqus.run()` function:"
+msgid "The secret is hided in the :py:meth:`~abqpy.abaqus.run` function:"
 msgstr ""
 
 #: ../../getting_started.rst:93
-msgid "In this package, the :py:mod:`~abaqus` module is reimplemented to automatically call this function. If you import this module in the top of your script (i.e., ``from abaqus import *``), your Python interpreter (not Abaqus Python interpreter) will call this function and use the **abaqus** command to submit the script to Abaqus. After it is submitted to Abaqus, :py:meth:`~abqpy.abaqus.run()` will exit the interpreter, because the script will already run in Abaqus Python interpreter."
+msgid "In this package, the :py:mod:`~abaqus` module is reimplemented to automatically call this function. If you import this module in the top of your script (i.e., ``from abaqus import *``), your Python interpreter (not Abaqus Python interpreter) will call this function and use the **abaqus** command to submit the script to Abaqus. After it is submitted to Abaqus, :py:meth:`~abqpy.abaqus.run` will exit the interpreter, because the script will already run in Abaqus Python interpreter."
 msgstr ""
 
 #: ../../getting_started.rst:98
-msgid "In the output script, we might not want to always use the :py:mod:`~abaqus` module, which needs the Abaqus/CAE kernel (and its license), but instead the module :py:mod:`~odbAccess` (i.e., ``from odbAccess import *``), which requires only the Abaqus Python interpreter. Then another similar **abaqus** command line is needed:"
+msgid "In the output script, we might not want to always use the :py:mod:`~abaqus` module, because it needs the Abaqus/CAE kernel (and its license). Instead, we use the module :py:mod:`~odbAccess` (i.e., ``from odbAccess import *``), which requires only the Abaqus Python interpreter. Then, another similar **abaqus** command line is needed:"
 msgstr ""
 
 #: ../../getting_started.rst:106
-msgid "So, :py:mod:`~odbAccess` is also reimplemented to call the :py:meth:`~abqpy.abaqus.run()` function, and the actual implementation of this function is similar to:"
+msgid "So, the :py:mod:`~odbAccess` module is also reimplemented to call the :py:meth:`~abqpy.abaqus.run` function, and the actual implementation of this function is similar to:"
 msgstr ""
 
 #: ../../getting_started.rst:125
