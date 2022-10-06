@@ -7,15 +7,15 @@ environment where it is installed is to run one of the two following command lin
 
 1. When there is a ``import abaqus`` or ``from abaqus import ...`` statement:
 
-  .. code-block:: sh
+   .. code-block:: sh
 
-      abaqus cae noGUI=script.py -- [args ...]
+       abaqus cae noGUI=script.py -- [args ...]
         
 2. When there is a ``import odbAccess`` or ``from odbAccess import ...`` statement:
 
-  .. code-block:: sh
+   .. code-block:: sh
 
-      abaqus python script.py [args ...]
+       abaqus python script.py [args ...]
 
 These commands lines are invoked when you run your script containing the above
 statements in your installed Python interpreter, with a simple command line launch:
@@ -56,26 +56,26 @@ Examples
 
 1. If you want to run you python script in Abaqus/CAE GUI mode, you could run:
 
-  .. code-block:: sh
+   .. code-block:: sh
 
-      abqpy script.py [args ...] -g
+       abqpy script.py [args ...] -g
 
 2. If you want to run you python script in Abaqus/CAE GUI or noGUI mode, providing
    the `database` file option, you could run:
 
-  .. code-block:: sh
+   .. code-block:: sh
 
-      abqpy script.py [args ...] -g database=file.odb # GUI mode
+       abqpy script.py [args ...] -g database=file.odb # GUI mode
     
-      abqpy script.py [args ...] -n database=file.odb # noGUI mode
+       abqpy script.py [args ...] -n database=file.odb # noGUI mode
 
 3. If you want to pass your python script file name after the abaqus command line
    options, you will need to use the ``--`` argument before the script filename, to
    prevent `abqpy` from attempting to parse it to abaqus:
    
-  .. code-block:: sh
+   .. code-block:: sh
 
-      abqpy -g database=file.odb -- script.py [args ...]
+       abqpy -g database=file.odb -- script.py [args ...]
 
 Some moderns Python IDEs allow you to customize the default python launch parameters
 that will be passed to the interpreter. This feature permits to run `abqpy` command line
