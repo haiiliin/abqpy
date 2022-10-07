@@ -16,10 +16,10 @@ def run(cae: bool = True) -> None:
     """
     abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
     main = sys.modules['__main__']
-    if not hasattr(main,'__file__'):
+    if not hasattr(main,'__file__') or main.__file__ is None:
         return
 
-    filePath = os.path.abspath(str(main.__file__))
+    filePath = os.path.abspath(main.__file__)
     args = " ".join(sys.argv[1:])
 
     try:  # If it is a jupyter notebook
