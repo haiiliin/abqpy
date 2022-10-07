@@ -3,10 +3,11 @@ on:
   push:
     branches:
     - 'main'
-    - '20**'
     paths:
     - 'src/**'
     - 'docs/source/**'
+  release:
+    types: [published]
   workflow_dispatch:
 
 concurrency:
@@ -34,7 +35,8 @@ jobs:
       uses: actions/github-script@v6.3.1
       with:
         script: |
-          let value = context.ref.replace('refs/heads/', '');
+          let value = context.ref.split('/').slice(2).join('/').toLowerCase();
+          if (value.startsWith('v')) {value = value.slice(1).split('.')[0]}
           if (value == "main") { value = "dev"; }
           core.setOutput('value', value)
     - run: echo "version ${{ steps.version.outputs.value }}"
