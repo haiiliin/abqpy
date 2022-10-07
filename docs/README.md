@@ -13,7 +13,7 @@ pip install sphinx
 Once you have Sphinx installed, you can build the docs by running the following command from the root of the repository:
 
 ```bash
-make docs
+make html
 ```
 
 This will build the docs and place them in the `build` directory. You can then open the `index.html` file in your browser to view the docs.
