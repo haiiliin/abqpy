@@ -7,9 +7,11 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 @abaqus_class_doc
 class InterestingPoint:
     """Interesting points can be located at the following:
+
     - The middle of an edge.
     - The middle of an arc.
     - The center of an arc.
+    
     An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` object is a temporary object and cannot be accessed from the Mdb
     object.
 

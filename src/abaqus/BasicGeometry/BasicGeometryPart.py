@@ -8,6 +8,7 @@ from ..Part.PartBase import PartBase
 
 @abaqus_class_doc
 class BasicGeometryPart(PartBase):
+
     @abaqus_method_doc
     def InterestingPoint(
         self, edge: Edge, rule: Literal[C.MIDDLE, C.CENTER]
