@@ -1514,7 +1514,7 @@ class Feature:
     @abaqus_method_doc
     def PartitionCellByPlanePointNormal(
         self,
-        cells: Union[Cell, Sequence[Cell]],
+        cells: Sequence[Cell],
         point: Union[ConstrainedSketchVertex, InterestingPoint, DatumPoint],
         normal: Union[Edge, DatumAxis],
     ) -> Feature:
