@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-04 14:03+0000\n"
+"POT-Creation-Date: 2022-10-07 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgstr ""
 #: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray:5
 #: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex:5
 #: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray:5
-#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:9
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:11
 #: abaqus.BasicGeometry.ReferencePoint.ReferencePoint:6
 #: abaqus.BasicGeometry.Transform.Transform:6
 #: abaqus.BasicGeometry.Vertex.Vertex:4
@@ -4103,14 +4103,28 @@ msgid "InterestingPoint"
 msgstr ""
 
 #: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:1 of
+msgid "Interesting points can be located at the following:"
+msgstr ""
+
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:3 of
+msgid "The middle of an edge."
+msgstr ""
+
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:4 of
+msgid "The middle of an arc."
+msgstr ""
+
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:5 of
+msgid "The center of an arc."
+msgstr ""
+
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:7 of
 msgid ""
-"Interesting points can be located at the following: - The middle of an "
-"edge. - The middle of an arc. - The center of an arc. An "
-":py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` "
+"An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` "
 "object is a temporary object and cannot be accessed from the Mdb object."
 msgstr ""
 
-#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:15 of
+#: abaqus.BasicGeometry.InterestingPoint.InterestingPoint:17 of
 msgid ""
 "Check `InterestingPoint on help.3ds.com/2023 "
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-interestingpointpyc.htm?contextscope=all>`__."
@@ -6974,5 +6988,16 @@ msgstr ""
 #~ "help.3ds.com/2022 "
 #~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexarraypyc.htm?contextscope=all"
 #~ "#simaker-vertexarraygetsequencefrommaskpyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Interesting points can be located at "
+#~ "the following: - The middle of an"
+#~ " edge. - The middle of an arc."
+#~ " - The center of an arc. An "
+#~ ":py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint`"
+#~ " object is a temporary object and "
+#~ "cannot be accessed from the Mdb "
+#~ "object."
 #~ msgstr ""
 

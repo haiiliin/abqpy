@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-04 14:03+0000\n"
+"POT-Creation-Date: 2022-10-07 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgstr ""
 #: ../../../../src/abaqus/BasicGeometry/IgnoredEdgeArray.py:docstring of abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray:5
 #: ../../../../src/abaqus/BasicGeometry/IgnoredVertex.py:docstring of abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex:5
 #: ../../../../src/abaqus/BasicGeometry/IgnoredVertexArray.py:docstring of abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray:5
-#: ../../../../src/abaqus/BasicGeometry/InterestingPoint.py:docstring of abaqus.BasicGeometry.InterestingPoint.InterestingPoint:9
+#: ../../../../src/abaqus/BasicGeometry/InterestingPoint.py:docstring of abaqus.BasicGeometry.InterestingPoint.InterestingPoint:11
 #: ../../../../src/abaqus/BasicGeometry/ReferencePoint.py:docstring of abaqus.BasicGeometry.ReferencePoint.ReferencePoint:6
 #: ../../../../src/abaqus/BasicGeometry/Transform.py:docstring of abaqus.BasicGeometry.Transform.Transform:6
 #: ../../../../src/abaqus/BasicGeometry/Vertex.py:docstring of abaqus.BasicGeometry.Vertex.Vertex:4
@@ -2903,10 +2903,26 @@ msgid "InterestingPoint"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/InterestingPoint.py:docstring of abaqus.BasicGeometry.InterestingPoint.InterestingPoint:1
-msgid "Interesting points can be located at the following: - The middle of an edge. - The middle of an arc. - The center of an arc. An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` object is a temporary object and cannot be accessed from the Mdb object."
+msgid "Interesting points can be located at the following:"
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/InterestingPoint.py:docstring of abaqus.BasicGeometry.InterestingPoint.InterestingPoint:15
+#: ../../../../src/abaqus/BasicGeometry/InterestingPoint.py:docstring of abaqus.BasicGeometry.InterestingPoint.InterestingPoint:3
+msgid "The middle of an edge."
+msgstr ""
+
+#: ../../../../src/abaqus/BasicGeometry/InterestingPoint.py:docstring of abaqus.BasicGeometry.InterestingPoint.InterestingPoint:4
+msgid "The middle of an arc."
+msgstr ""
+
+#: ../../../../src/abaqus/BasicGeometry/InterestingPoint.py:docstring of abaqus.BasicGeometry.InterestingPoint.InterestingPoint:5
+msgid "The center of an arc."
+msgstr ""
+
+#: ../../../../src/abaqus/BasicGeometry/InterestingPoint.py:docstring of abaqus.BasicGeometry.InterestingPoint.InterestingPoint:7
+msgid "An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` object is a temporary object and cannot be accessed from the Mdb object."
+msgstr ""
+
+#: ../../../../src/abaqus/BasicGeometry/InterestingPoint.py:docstring of abaqus.BasicGeometry.InterestingPoint.InterestingPoint:17
 msgid "Check `InterestingPoint on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-interestingpointpyc.htm?contextscope=all>`__."
 msgstr ""
 
