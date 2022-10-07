@@ -1,4 +1,5 @@
 from abqpy.decorators import abaqus_class_doc
+from ..BasicGeometry.BasicGeometryPart import BasicGeometryPart
 from ..Canvas.Displayable import Displayable
 from ..EditMesh.MeshEditPart import MeshEditPart
 from ..Mesh.MeshPart import MeshPart
@@ -7,7 +8,9 @@ from ..Region.RegionPart import RegionPart
 
 
 @abaqus_class_doc
-class Part(MeshEditPart, MeshPart, PropertyPart, RegionPart, Displayable):
+class Part(
+    BasicGeometryPart, MeshEditPart, MeshPart, PropertyPart, RegionPart, Displayable
+):
     """The Part object defines the physical attributes of a structure. Parts are instanced into
     the assembly and positioned before an analysis.
 

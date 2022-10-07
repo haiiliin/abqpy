@@ -1,8 +1,9 @@
 from typing import Optional
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ...UtilityAndView.abaqusConstants import (Boolean, ENERGY, LINEAR, MAXIMUM, MODE_INDEPENDENT,
-                                               OFF, SymbolicConstant)
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
+from ...UtilityAndView.abaqusConstants import Boolean, ENERGY, LINEAR, MAXIMUM, MODE_INDEPENDENT, OFF
 
 
 @abaqus_class_doc
@@ -158,16 +159,18 @@ class DamageEvolution:
     @abaqus_method_doc
     def __init__(
         self,
-        type: SymbolicConstant,
+        type: Literal[C.DISPLACEMENT, C.ENERGY],
         table: tuple,
-        degradation: SymbolicConstant = MAXIMUM,
+        degradation: Literal[C.MAXIMUM, C.MULTIPLICATIVE] = MAXIMUM,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        mixedModeBehavior: SymbolicConstant = MODE_INDEPENDENT,
-        modeMixRatio: SymbolicConstant = ENERGY,
+        mixedModeBehavior: Literal[
+            C.MODE_INDEPENDENT, C.TABULAR, C.POWER_LAW, C.BK
+        ] = MODE_INDEPENDENT,
+        modeMixRatio: Literal[C.TRACTION, C.ENERGY] = ENERGY,
         power: Optional[float] = None,
-        softening: SymbolicConstant = LINEAR,
-    ):
+        softening: Literal[C.LINEAR, C.EXPONENTIAL, C.TABULAR] = LINEAR,
+    ) -> None:
         """This method creates a DamageEvolution object.
 
         .. note:: 
