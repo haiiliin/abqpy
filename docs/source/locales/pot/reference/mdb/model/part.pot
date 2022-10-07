@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2017\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-06 00:19+0000\n"
+"POT-Creation-Date: 2022-10-07 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,6 +71,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openParasolid:5
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openStep:5
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openVda:5
+#: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:5
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:7
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:7
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:5
@@ -371,6 +372,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openParasolid:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openStep:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openVda:0
+#: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:0
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:0
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh:0
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.collapseMeshEdge:0
@@ -800,6 +802,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openParasolid:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openStep:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openVda:0
+#: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:0
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:0
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:0
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:0
@@ -1096,6 +1099,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openParasolid:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openStep:0
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb.openVda:0
+#: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:0
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:0
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:0
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:0
@@ -3544,6 +3548,14 @@ msgstr ""
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart:0
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart:0
 msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ":py:obj:`InterestingPoint <abaqus.Part.Part.Part.InterestingPoint>`\\ \\(edge\\, rule\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid "This method creates an interesting point along an edge."
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
@@ -7426,6 +7438,30 @@ msgstr ""
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:12
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges:12
 msgid "Check `HoleThruAllFromEdges on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-holethruallfromedgespyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:1
+msgid "This method creates an interesting point along an edge. An InterestingPoint is a temporary object."
+msgstr ""
+
+#: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:11
+msgid "Check `InterestingPoint on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-interestingpointpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:14
+msgid "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge on which the interesting point is positioned."
+msgstr ""
+
+#: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:16
+msgid "A SymbolicConstant specifying the position of the interesting point. Possible values are MIDDLE or CENTER."
+msgstr ""
+
+#: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:19
+msgid "An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` object."
+msgstr ""
+
+#: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:20
+msgid ":class:`InterestingPoint`"
 msgstr ""
 
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Feature.Feature.Feature.MakeSketchTransform:1
