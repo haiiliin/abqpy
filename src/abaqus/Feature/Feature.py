@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Union, Optional, Tuple, overload
+from typing import Sequence, Union, Optional, Tuple, overload
 
 from typing_extensions import Literal
 
@@ -19,9 +19,17 @@ from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch, ConstrainedSketchVertex
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (AUTO_FIT_PTS, Boolean, IMPRINT, OFF, ON,
-                                              PROJECT_BY_PROXIMITY, RIGHT,
-                                              SIDE1, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    AUTO_FIT_PTS,
+    Boolean,
+    IMPRINT,
+    OFF,
+    ON,
+    PROJECT_BY_PROXIMITY,
+    RIGHT,
+    SIDE1,
+    SymbolicConstant,
+)
 
 
 @abaqus_class_doc
@@ -1514,7 +1522,7 @@ class Feature:
     @abaqus_method_doc
     def PartitionCellByPlanePointNormal(
         self,
-        cells: Tuple[Cell, ...],
+        cells: Union[Cell, Sequence[Cell]],
         point: Union[ConstrainedSketchVertex, InterestingPoint, DatumPoint],
         normal: Union[Edge, DatumAxis],
     ) -> Feature:
