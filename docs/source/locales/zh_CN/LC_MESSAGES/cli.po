@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2017\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-06 00:19+0000\n"
+"POT-Creation-Date: 2022-10-07 00:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,30 +60,30 @@ msgid ""
 "Python** Execution mode."
 msgstr ""
 
-#: ../../cli.rst:54
-msgid "Examples:"
+#: ../../cli.rst:55
+msgid "Examples"
 msgstr ""
 
-#: ../../cli.rst:56
+#: ../../cli.rst:57
 msgid ""
 "If you want to run you python script in Abaqus/CAE GUI mode, you could "
 "run:"
 msgstr ""
 
-#: ../../cli.rst:62
+#: ../../cli.rst:63
 msgid ""
 "If you want to run you python script in Abaqus/CAE GUI or noGUI mode, "
 "providing the `database` file option, you could run:"
 msgstr ""
 
-#: ../../cli.rst:71
+#: ../../cli.rst:72
 msgid ""
 "If you want to pass your python script file name after the abaqus command"
 " line options, you will need to use the ``--`` argument before the script"
 " filename, to prevent `abqpy` from attempting to parse it to abaqus:"
 msgstr ""
 
-#: ../../cli.rst:79
+#: ../../cli.rst:80
 msgid ""
 "Some moderns Python IDEs allow you to customize the default python launch"
 " parameters that will be passed to the interpreter. This feature permits "
@@ -91,22 +91,25 @@ msgid ""
 "your default abaqus execution procedure."
 msgstr ""
 
-#: ../../cli.rst:83
+#: ../../cli.rst:84
 msgid ""
 "Example: In `VS Code Python Extension "
 "<https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_,"
 " you can specify the following setting:"
 msgstr ""
 
-#: ../../cli.rst:92
+#: ../../cli.rst:93
 msgid ""
 "That setting will make VS Code Python Extension run by default all python"
 " script files in the integrated terminal with the following command line:"
 msgstr ""
 
-#: ../../cli.rst:99
+#: ../../cli.rst:100
 msgid ""
 "Which provides a way to change the default abaqus execution procedure to "
 "GUI mode."
 msgstr ""
+
+#~ msgid "Examples:"
+#~ msgstr ""
 
