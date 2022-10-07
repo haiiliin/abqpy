@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 00:22+0000\n"
+"POT-Creation-Date: 2022-10-07 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,6 +247,8 @@ msgstr ""
 #: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix:4
 #: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:4
 #: abaqus.Material.Plastic.TensileFailure.TensileFailure.tensileFailure:4
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution:4
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageStabilizationCohesive:4
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DuctileDamageInitiation:4
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FldDamageInitiation:4
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FlsdDamageInitiation:4
@@ -348,6 +350,8 @@ msgstr ""
 #: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix
 #: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid
 #: abaqus.Material.Plastic.TensileFailure.TensileFailure.tensileFailure
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageStabilizationCohesive
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DuctileDamageInitiation
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FldDamageInitiation
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FlsdDamageInitiation
@@ -455,6 +459,8 @@ msgstr ""
 #: abaqus.Material.MaterialModel.MaterialModel.Material
 #: abaqus.Material.MaterialOdb.MaterialOdb.Material
 #: abaqus.Material.Plastic.TensileFailure.TensileFailure.tensileFailure
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageStabilizationCohesive
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DuctileDamageInitiation
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FldDamageInitiation
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FlsdDamageInitiation
@@ -553,6 +559,8 @@ msgstr ""
 #: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldMatrix
 #: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid
 #: abaqus.Material.Plastic.TensileFailure.TensileFailure.tensileFailure
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageStabilizationCohesive
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DuctileDamageInitiation
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FldDamageInitiation
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FlsdDamageInitiation
@@ -2511,7 +2519,7 @@ msgid ""
 "\\(table\\[\\, definition\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1 ../../None:71:<autosummary>:1
+#: ../../None:19:<autosummary>:1 ../../None:71:<autosummary>:1
 #: abaqus.Material.Material.Material.DuctileDamageInitiation:1
 #: abaqus.Material.Material.Material.FldDamageInitiation:1
 #: abaqus.Material.Material.Material.FlsdDamageInitiation:1
@@ -3512,6 +3520,8 @@ msgstr ""
 #: abaqus.Material.Plastic.TensileFailure.TensileFailure.setValues
 #: abaqus.Material.Plastic.TensileFailure.TensileFailure.tensileFailure
 #: abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution.setValues
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageStabilizationCohesive
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DuctileDamageInitiation
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FldDamageInitiation
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FlsdDamageInitiation
@@ -3581,6 +3591,7 @@ msgstr ""
 #: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldInclusion:15
 #: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization.MeanFieldVoid:15
 #: abaqus.Material.Plastic.TensileFailure.TensileFailure.tensileFailure:15
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution:36
 #: abaqus.Material.Ratios.Ratios.table:1 of
 msgid "A sequence of sequences of Floats specifying the items described below."
 msgstr ""
@@ -3636,6 +3647,7 @@ msgstr ""
 #: abaqus.Material.Material.Material.Swelling:19
 #: abaqus.Material.Material.Material.Viscosity:17
 #: abaqus.Material.Material.Material.Viscous:19
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution:41
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DuctileDamageInitiation:37
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FldDamageInitiation:37
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FlsdDamageInitiation:37
@@ -3707,6 +3719,7 @@ msgstr ""
 #: abaqus.Material.Material.Material.Viscosity:19
 #: abaqus.Material.Material.Material.Viscous:21
 #: abaqus.Material.Plastic.TensileFailure.TensileFailure.tensileFailure:17
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution:43
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DuctileDamageInitiation:39
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FldDamageInitiation:39
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FlsdDamageInitiation:39
@@ -14083,6 +14096,7 @@ msgid "DAMAGE EVOLUTION"
 msgstr ""
 
 #: abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution:149
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution:30
 #: of
 msgid ""
 "Check `DamageEvolution on help.3ds.com/2020 "
@@ -14096,7 +14110,9 @@ msgid ""
 " \\(type\\, table\\[\\, degradation\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: ../../None:19:<autosummary>:1 ../../None:4:<autosummary>:1
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution:1
+#: of
 msgid "This method creates a DamageEvolution object."
 msgstr ""
 
@@ -14563,6 +14579,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:19:<autosummary>:1 ../../docstring
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution:58
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.damageEvolution:1
 #: of
 msgid ""
@@ -14593,6 +14610,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:19:<autosummary>:1 ../../docstring
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageStabilizationCohesive:41
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.damageStabilizationCohesive:1
 #: of
 msgid ""
@@ -14601,115 +14619,204 @@ msgid ""
 " object."
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`DuctileDamageInitiation "
 "<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DuctileDamageInitiation>`\\"
 " \\(table\\[\\, definition\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`FldDamageInitiation "
 "<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FldDamageInitiation>`\\"
 " \\(table\\[\\, definition\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`FlsdDamageInitiation "
 "<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.FlsdDamageInitiation>`\\"
 " \\(table\\[\\, definition\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`JohnsonCookDamageInitiation "
 "<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.JohnsonCookDamageInitiation>`\\"
 " \\(table\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`MaxeDamageInitiation "
 "<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MaxeDamageInitiation>`\\"
 " \\(table\\[\\, definition\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`MaxsDamageInitiation "
 "<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MaxsDamageInitiation>`\\"
 " \\(table\\[\\, definition\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`MkDamageInitiation "
 "<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MkDamageInitiation>`\\"
 " \\(table\\[\\, definition\\, feq\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`MsfldDamageInitiation "
 "<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MsfldDamageInitiation>`\\"
 " \\(table\\[\\, definition\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`QuadeDamageInitiation "
 "<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.QuadeDamageInitiation>`\\"
 " \\(table\\[\\, definition\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`QuadsDamageInitiation "
 "<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.QuadsDamageInitiation>`\\"
 " \\(table\\[\\, definition\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`MaxpeDamageInitiation "
 "<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MaxpeDamageInitiation>`\\"
 " \\(table\\[\\, definition\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`MaxpsDamageInitiation "
 "<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.MaxpsDamageInitiation>`\\"
 " \\(table\\[\\, definition\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`ShearDamageInitiation "
 "<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.ShearDamageInitiation>`\\"
 " \\(table\\[\\, definition\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`HashinDamageInitiation "
 "<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.HashinDamageInitiation>`\\"
 " \\(table\\[\\, definition\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 msgid ""
 ":py:obj:`setValues "
 "<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.setValues>`\\"
 " \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1
+#: ../../None:19:<autosummary>:1
 #: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.setValues:1
 #: of
 msgid "This method modifies the DamageInitiation object."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`DamageEvolution "
+"<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution>`\\"
+" \\(type\\, table\\[\\, degradation\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`DamageStabilizationCohesive "
+"<abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageStabilizationCohesive>`\\"
+" \\(\\[cohesiveCoeff\\]\\)"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1 ../../None:4:<autosummary>:1
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageStabilizationCohesive:1
+#: of
+msgid "This method creates a DamageStabilizationCohesive object."
+msgstr ""
+
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution:33
+#: of
+msgid ""
+"A SymbolicConstant specifying the type of damage evolution. Possible "
+"values are DISPLACEMENT and ENERGY."
+msgstr ""
+
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution:38
+#: of
+msgid ""
+"A SymbolicConstant specifying the degradation. Possible values are "
+"MAXIMUM and MULTIPLICATIVE. The default value is MAXIMUM."
+msgstr ""
+
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution:45
+#: of
+msgid ""
+"A SymbolicConstant specifying the mixed mode behavior. Possible values "
+"are MODE_INDEPENDENT, TABULAR, POWER_LAW, and BK. The default value is "
+"MODE_INDEPENDENT."
+msgstr ""
+
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution:48
+#: of
+msgid ""
+"A SymbolicConstant specifying the mode mix ratio. Possible values are "
+"ENERGY and TRACTION. The default value is ENERGY."
+msgstr ""
+
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution:51
+#: of
+msgid ""
+"None or a Float specifying the exponent in the power law or the "
+"Benzeggagh-Kenane criterion that defines the variation of fracture energy"
+" with mode mix for cohesive elements. The default value is None."
+msgstr ""
+
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution:55
+#: of
+msgid ""
+"A SymbolicConstant specifying the softening. Possible values are LINEAR, "
+"EXPONENTIAL, and TABULAR. The default value is LINEAR."
+msgstr ""
+
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageEvolution:59
+#: of
+msgid ":class:`DamageEvolution`"
+msgstr ""
+
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageStabilizationCohesive:36
+#: abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive:43
+#: of
+msgid ""
+"Check `DamageStabilizationCohesive on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-damagestabilizationcohesivepyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageStabilizationCohesive:39
+#: of
+msgid ""
+"None or a Float specifying the viscosity coefficient. The default value "
+"is None."
+msgstr ""
+
+#: abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation.DamageStabilizationCohesive:42
+#: of
+msgid ":class:`DamageStabilizationCohesive`"
 msgstr ""
 
 #: ../../reference/mdb/model/material.rst:1046
@@ -14772,22 +14879,11 @@ msgid ""
 "enriched cohesive behavior."
 msgstr ""
 
-#: abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive:43
-#: of
-msgid ""
-"Check `DamageStabilizationCohesive on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-damagestabilizationcohesivepyc.htm?contextscope=all>`__."
-msgstr ""
-
 #: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`__init__ "
 "<abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive.__init__>`\\"
 " \\(\\[cohesiveCoeff\\]\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a DamageStabilizationCohesive object."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
