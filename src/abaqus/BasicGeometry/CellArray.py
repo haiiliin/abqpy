@@ -56,12 +56,17 @@ class CellArray(List[Cell]):
     @overload
     @abaqus_method_doc
     def findAt(
-        self,
-        coordinates: Union[
-            Tuple[float, float, float], Tuple[Tuple[float, float, float],]
-        ],
-        printWarning: Boolean = True,
+        self, coordinates: Tuple[float, float, float], printWarning: Boolean = True,
     ) -> Cell:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self,
+        coordinates: Tuple[Tuple[float, float, float],],
+        printWarning: Boolean = True,
+    ) -> List[Cell]:
         ...
 
     @overload
