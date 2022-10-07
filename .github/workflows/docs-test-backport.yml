@@ -4,7 +4,7 @@ on:
   pull_request:
     branches:
     - '20**'
-    types: [opened, reopened, synchronize, labeled]
+    types: [opened, reopened, synchronize]
     paths:
     - 'src/**'
     - 'docs/source/**'
