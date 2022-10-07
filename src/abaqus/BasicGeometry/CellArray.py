@@ -68,20 +68,13 @@ class CellArray(List[Cell]):
     @abaqus_method_doc
     def findAt(
         self,
-        *omitted_coordinates: Tuple[Tuple[float, float, float]],
+        *coordinates: Tuple[Tuple[float, float, float],],
         printWarning: Boolean = True,
     ) -> List[Cell]:
         ...
 
     @abaqus_method_doc
-    def findAt(
-        self,
-        coordinates: Union[
-            Tuple[float, float, float], Tuple[Tuple[float, float, float],]
-        ],
-        *omitted_coordinates: Tuple[Tuple[float, float, float]],
-        printWarning: Boolean = True,
-    ) -> Union[Cell, List[Cell]]:
+    def findAt(self, *args, **kwargs) -> Union[Cell, List[Cell]]:
         """This method returns the object or objects in the CellArray located at the given
         coordinates. findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt
         returns any entity that is at the arbitrary point specified or at a distance of less
@@ -120,7 +113,7 @@ class CellArray(List[Cell]):
             A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object.
 
         """
-        return Cell() if len(omitted_coordinates) < 1 else [Cell()]
+        return Cell() if "coordinates" in kwargs else [Cell()]
 
     @abaqus_method_doc
     def getExteriorFaces(self) -> FaceArray:

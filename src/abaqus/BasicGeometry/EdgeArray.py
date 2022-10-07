@@ -79,20 +79,13 @@ class EdgeArray(List[Edge]):
     @abaqus_method_doc
     def findAt(
         self,
-        *omitted_coordinates: Tuple[Tuple[float, float, float]],
+        *coordinates: Tuple[Tuple[float, float, float],],
         printWarning: Boolean = True
     ) -> List[Edge]:
         ...
 
     @abaqus_method_doc
-    def findAt(
-        self,
-        coordinates: Union[
-            Tuple[float, float, float], Tuple[Tuple[float, float, float],]
-        ],
-        *omitted_coordinates: Tuple[Tuple[float, float, float]],
-        printWarning: Boolean = True
-    ) -> Union[Edge, List[Edge]]:
+    def findAt(self, *args, **kwargs) -> Union[Edge, List[Edge]]:
         """This method returns the object or objects in the EdgeArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any edge
@@ -130,7 +123,7 @@ class EdgeArray(List[Edge]):
             An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of Edge objects.
 
         """
-        return Edge() if len(omitted_coordinates) < 1 else [Edge()]
+        return Edge() if "coordinates" in kwargs else [Edge()]
 
     @abaqus_method_doc
     def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
