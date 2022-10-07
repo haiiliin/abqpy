@@ -120,7 +120,7 @@ class CellArray(List[Cell]):
             A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object.
 
         """
-        return Cell()
+        return Cell() if len(omitted_coordinates) < 1 else [Cell()]
 
     @abaqus_method_doc
     def getExteriorFaces(self) -> FaceArray:
