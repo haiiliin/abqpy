@@ -16,7 +16,7 @@ After that, submit a pull request with the new script (only), do not include the
 
 Open the `.po` files for the language you want to translate and use a tool like [Poedit](https://poedit.net/) to translate the strings. Create a pull request with the translated `.po` file.
 
-## How to build the docs with s specific language
+## How to build the docs with specific language
 
 Specify the language in the `spinx-build` command, for example:
 
