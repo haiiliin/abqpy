@@ -221,12 +221,6 @@ html_theme_options = {
             "icon": "_static/anaconda.svg",
             "type": "local",
         },
-        {
-            "name": "Read the Docs",
-            "url": "https://readthedocs.org/projects/abqpy/",
-            "icon": "_static/rtd-logo-dark.svg",
-            "type": "local",
-        },
    ],
     "switcher": {
         "json_url": "https://docs.abqpy.com/_static/versions.json",

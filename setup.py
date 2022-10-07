@@ -28,7 +28,6 @@ setuptools.setup(
         'Bug Tracker': 'https://github.com/haiiliin/abqpy/issues',
         'Documentation': 'https://docs.abqpy.com',
         'Anaconda': 'https://anaconda.org/haiiliin/abqpy',
-        'Read the Docs': 'https://readthedocs.org/projects/abqpy',
     },
     use_scm_version={
         "root": ".",
