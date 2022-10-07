@@ -67,7 +67,11 @@ class EdgeArray(List[Edge]):
     @overload
     @abaqus_method_doc
     def findAt(
-        self, coordinates: Tuple[float, float, float], printWarning: Boolean = True
+        self,
+        coordinates: Union[
+            Tuple[float, float, float], Tuple[Tuple[float, float, float],]
+        ],
+        printWarning: Boolean = True,
     ) -> Edge:
         ...
 
@@ -75,7 +79,7 @@ class EdgeArray(List[Edge]):
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[Tuple[float, float, float]],
+        *omitted_coordinates: Tuple[Tuple[float, float, float]],
         printWarning: Boolean = True
     ) -> List[Edge]:
         ...
@@ -83,9 +87,10 @@ class EdgeArray(List[Edge]):
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Union[
-            Tuple[float, float, float], Tuple[Tuple[float, float, float]]
+        coordinates: Union[
+            Tuple[float, float, float], Tuple[Tuple[float, float, float],]
         ],
+        *omitted_coordinates: Tuple[Tuple[float, float, float]],
         printWarning: Boolean = True
     ) -> Union[Edge, List[Edge]]:
         """This method returns the object or objects in the EdgeArray located at the given

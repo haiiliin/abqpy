@@ -56,7 +56,11 @@ class CellArray(List[Cell]):
     @overload
     @abaqus_method_doc
     def findAt(
-        self, coordinates: Tuple[float, float, float], printWarning: Boolean = True,
+        self,
+        coordinates: Union[
+            Tuple[float, float, float], Tuple[Tuple[float, float, float],]
+        ],
+        printWarning: Boolean = True,
     ) -> Cell:
         ...
 
@@ -72,9 +76,10 @@ class CellArray(List[Cell]):
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Union[
-            Tuple[float, float, float], Tuple[Tuple[float, float, float]]
+        coordinates: Union[
+            Tuple[float, float, float], Tuple[Tuple[float, float, float],]
         ],
+        *omitted_coordinates: Tuple[Tuple[float, float, float]],
         printWarning: Boolean = True,
     ) -> Union[Cell, List[Cell]]:
         """This method returns the object or objects in the CellArray located at the given
