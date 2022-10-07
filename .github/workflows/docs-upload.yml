@@ -31,13 +31,12 @@ jobs:
       with:
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
     - name: Get current version
+      uses: haya14busa/action-cond@v1
       id: version
-      uses: actions/github-script@v6.3.1
       with:
-        script: |
-          let value = context.ref.replace('refs/heads/', '');
-          if (value == "main") { value = "dev"; }
-          core.setOutput('value', value)
+        cond: ${{ github.ref_name == 'main' }}
+        if_true: "dev"
+        if_false: ${{ github.ref_name }}
     - run: echo "version ${{ steps.version.outputs.value }}"
     - name: Build and Commit
       id: build
