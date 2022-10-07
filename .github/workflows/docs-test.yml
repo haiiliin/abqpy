@@ -22,7 +22,7 @@ jobs:
         language: ['en', 'zh_CN']
     steps:
     - uses: actions/setup-python@v2
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v3.1.0
       with:
         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
     - name: Installing the library
@@ -36,7 +36,7 @@ jobs:
         sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html
     - name: Upload the documentation to preview
       if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') && matrix.language == 'en' }}
-      uses: ad-m/github-push-action@master
+      uses: ad-m/github-push-action@v0.6.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: gh-pages
