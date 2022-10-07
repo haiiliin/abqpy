@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-06 00:19+0000\n"
+"POT-Creation-Date: 2022-10-07 10:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,6 +59,7 @@ msgstr ""
 msgid "This method creates a Part object and places it in the parts repository."
 msgstr ""
 
+#: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:5
 #: abaqus.Feature.Feature.Feature.AttachmentPoints:7
 #: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection:7
 #: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges:5
@@ -224,6 +225,7 @@ msgid ""
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.cleanMesh
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.collapseMeshEdge
@@ -511,6 +513,7 @@ msgid ""
 "= DEFORMABLE_BODY). The default value is OFF."
 msgstr ""
 
+#: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint
 #: abaqus.Feature.Feature.Feature.AttachmentPoints
 #: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection
 #: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges
@@ -692,6 +695,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Part.Part.Part` object."
 msgstr ""
 
+#: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint
 #: abaqus.Feature.Feature.Feature.AttachmentPoints
 #: abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection
 #: abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges
@@ -3499,6 +3503,16 @@ msgstr ""
 #: abaqus.Property.PropertyPart.PropertyPart
 #: abaqus.Region.RegionPart.RegionPart of
 msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ""
+":py:obj:`InterestingPoint <abaqus.Part.Part.Part.InterestingPoint>`\\ "
+"\\(edge\\, rule\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid "This method creates an interesting point along an edge."
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
@@ -8375,6 +8389,46 @@ msgstr ""
 msgid ""
 "Check `HoleThruAllFromEdges on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-holethruallfromedgespyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:1
+#: of
+msgid ""
+"This method creates an interesting point along an edge. An "
+"InterestingPoint is a temporary object."
+msgstr ""
+
+#: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:11
+#: of
+msgid ""
+"Check `InterestingPoint on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-interestingpointpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:14
+#: of
+msgid ""
+"An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the edge"
+" on which the interesting point is positioned."
+msgstr ""
+
+#: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:16
+#: of
+msgid ""
+"A SymbolicConstant specifying the position of the interesting point. "
+"Possible values are MIDDLE or CENTER."
+msgstr ""
+
+#: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:19
+#: of
+msgid ""
+"An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` "
+"object."
+msgstr ""
+
+#: abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint:20
+#: of
+msgid ":class:`InterestingPoint`"
 msgstr ""
 
 #: abaqus.Feature.Feature.Feature.MakeSketchTransform:1 of
