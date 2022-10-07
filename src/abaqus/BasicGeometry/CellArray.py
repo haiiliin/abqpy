@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Union, Tuple, List, Dict
+from typing import Union, Tuple, List, Dict, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Cell import Cell
@@ -53,14 +53,30 @@ class CellArray(List[Cell]):
         """
         ...
 
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self, coordinates: Tuple[float, float, float], printWarning: Boolean = True,
+    ) -> Cell:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self,
+        *coordinates: Tuple[Tuple[float, float, float]],
+        printWarning: Boolean = True,
+    ) -> List[Cell]:
+        ...
+
     @abaqus_method_doc
     def findAt(
         self,
         coordinates: Union[
-            Tuple[float, float, float], Tuple[Tuple[float, float, float],]
+            Tuple[float, float, float], Tuple[Tuple[float, float, float]]
         ],
         printWarning: Boolean = True,
-    ) -> Union[Cell, Tuple[Cell, ...]]:
+    ) -> Union[Cell, List[Cell]]:
         """This method returns the object or objects in the CellArray located at the given
         coordinates. findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt
         returns any entity that is at the arbitrary point specified or at a distance of less
@@ -215,7 +231,9 @@ class CellArray(List[Cell]):
         ...
 
     @abaqus_method_doc
-    def getByBoundingSphere(self, center: Tuple[float, float, float], radius: float) -> CellArray:
+    def getByBoundingSphere(
+        self, center: Tuple[float, float, float], radius: float
+    ) -> CellArray:
         """This method returns an array of cell objects that lie within the specified bounding
         sphere.
 
