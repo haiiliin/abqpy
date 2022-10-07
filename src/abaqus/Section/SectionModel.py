@@ -997,7 +997,7 @@ class SectionModel(ModelBase):
 
     @abaqus_method_doc
     def HomogeneousSolidSection(
-        self, name: str, material: str, thickness: float = 1.0
+        self, name: str, material: str, thickness: Optional[float] = 1.0
     ) -> HomogeneousSolidSection:
         """This method creates a HomogeneousSolidSection object.
 
