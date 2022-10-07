@@ -1,10 +1,23 @@
 from typing import Optional
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .DamageEvolution import DamageEvolution
 from .DamageStabilization import DamageStabilization
 from .DamageStabilizationCohesive import DamageStabilizationCohesive
-from ...UtilityAndView.abaqusConstants import Boolean, CENTROID, MSFLD, NMORI, OFF, SymbolicConstant
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
+from ...UtilityAndView.abaqusConstants import (
+    Boolean,
+    CENTROID,
+    MSFLD,
+    NMORI,
+    OFF,
+    MAXIMUM,
+    MODE_INDEPENDENT,
+    ENERGY,
+    LINEAR,
+    SymbolicConstant,
+)
 
 
 @abaqus_class_doc
@@ -1396,4 +1409,140 @@ class DamageInitiation:
     @abaqus_method_doc
     def setValues(self, *args, **kwargs):
         """This method modifies the DamageInitiation object."""
+        ...
+
+    @abaqus_method_doc
+    def DamageEvolution(
+        self,
+        type: Literal[C.DISPLACEMENT, C.ENERGY],
+        table: tuple,
+        degradation: Literal[C.MAXIMUM, C.MULTIPLICATIVE] = MAXIMUM,
+        temperatureDependency: Boolean = OFF,
+        dependencies: int = 0,
+        mixedModeBehavior: Literal[
+            C.MODE_INDEPENDENT, C.TABULAR, C.POWER_LAW, C.BK
+        ] = MODE_INDEPENDENT,
+        modeMixRatio: Literal[C.TRACTION, C.ENERGY] = ENERGY,
+        power: Optional[float] = None,
+        softening: Literal[C.LINEAR, C.EXPONENTIAL, C.TABULAR] = LINEAR,
+    ) -> DamageEvolution:
+        """This method creates a DamageEvolution object.
+
+        .. note:: 
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].ductileDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].fldDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].flsdDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].hashinDamageInitiation.DamageEvolution.DamageEvolutione].materials[name].johnsonCookDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].maxeDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].maxpeDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].maxpsDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].maxsDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].mkDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].msfldDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].quadeDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].quadsDamageInitiation.DamageEvolution
+                mdb.models[name].materials[name].shearDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].ductileDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].fldDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].flsdDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].hashinDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].johnsonCookDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].maxeDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].maxpeDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].maxpsDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].maxsDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].mkDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].msfldDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].quadeDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].quadsDamageInitiation.DamageEvolution
+                session.odbs[name].materials[name].shearDamageInitiation.DamageEvolution
+            
+        Parameters
+        ----------
+        type
+            A SymbolicConstant specifying the type of damage evolution. Possible values are 
+            DISPLACEMENT and ENERGY. 
+        table
+            A sequence of sequences of Floats specifying the items described below. 
+        degradation
+            A SymbolicConstant specifying the degradation. Possible values are MAXIMUM and 
+            MULTIPLICATIVE. The default value is MAXIMUM. 
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF. 
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0. 
+        mixedModeBehavior
+            A SymbolicConstant specifying the mixed mode behavior. Possible values are 
+            MODE_INDEPENDENT, TABULAR, POWER_LAW, and BK. The default value is MODE_INDEPENDENT. 
+        modeMixRatio
+            A SymbolicConstant specifying the mode mix ratio. Possible values are ENERGY and 
+            TRACTION. The default value is ENERGY. 
+        power
+            None or a Float specifying the exponent in the power law or the Benzeggagh-Kenane 
+            criterion that defines the variation of fracture energy with mode mix for cohesive 
+            elements. The default value is None. 
+        softening
+            A SymbolicConstant specifying the softening. Possible values are LINEAR, EXPONENTIAL, 
+            and TABULAR. The default value is LINEAR. 
+
+        Returns
+        -------
+        DamageEvolution
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution` object. 
+
+        Raises
+        ------
+        RangeError
+        """
+        ...
+
+    @abaqus_method_doc
+    def DamageStabilizationCohesive(
+        self, cohesiveCoeff: Optional[float] = None
+    ) -> DamageStabilizationCohesive:
+        """This method creates a DamageStabilizationCohesive object.
+
+        .. note:: 
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].ductileDamageInitiation.DamageStabilizationCohesive
+                mdb.models[name].materials[name].fldDamageInitiation.DamageStabilizationCohesive
+                mdb.models[name].materials[name].flsdDamageInitiation.DamageStabilizationCohesive
+                mdb.models[name].materials[name].hashinDamageInitiation.DamageStabilizationCohesive
+                mdb.models[name].materials[name].johnsonCookDamageInitiation.DamageStabilizationCohesive
+                mdb.models[name].materials[name].maxeDamageInitiation.DamageStabilizationCohesive
+                mdb.models[name].materials[name].maxpeDamageInitiation.DamageStabilizationCohesive
+                mdb.models[name].materials[name].maxpsDamageInitiation.DamageStabilizationCohesive
+                mdb.models[name].materials[name].maxsDamageInitiation.DamageStabilizationCohesive
+                mdb.models[name].materials[name].mkDamageInitiation.DamageStabilizationCohesive
+                mdb.models[name].materials[name].msfldDamageInitiation.DamageStabilizationCohesive
+                mdb.models[name].materials[name].quadeDamageInitiation.DamageStabilizationCohesive
+                mdb.models[name].materials[name].quadsDamageInitiation.DamageStabilizationCohesive
+                mdb.models[name].materials[name].shearDamageInitiation.DamageStabilizationCohesive
+                session.odbs[name].materials[name].ductileDamageInitiation.DamageStabilizationCohesive
+                session.odbs[name].materials[name].fldDamageInitiation.DamageStabilizationCohesive
+                session.odbs[name].materials[name].flsdDamageInitiation.DamageStabilizationCohesive
+                session.odbs[name].materials[name].hashinDamageInitiation.DamageStabilizationCohesive
+                session.odbs[name].materials[name].johnsonCookDamageInitiation.DamageStabilizationCohesive
+                session.odbs[name].materials[name].maxeDamageInitiation.DamageStabilizationCohesive
+                session.odbs[name].materials[name].maxpeDamageInitiation.DamageStabilizationCohesive
+                session.odbs[name].materials[name].maxpsDamageInitiation.DamageStabilizationCohesive
+                session.odbs[name].materials[name].maxsDamageInitiation.DamageStabilizationCohesive
+                session.odbs[name].materials[name].mkDamageInitiation.DamageStabilizationCohesive
+                session.odbs[name].materials[name].msfldDamageInitiation.DamageStabilizationCohesive
+                session.odbs[name].materials[name].quadeDamageInitiation.DamageStabilizationCohesive
+                session.odbs[name].materials[name].quadsDamageInitiation.DamageStabilizationCohesive
+                session.odbs[name].materials[name].shearDamageInitiation.DamageStabilizationCohesive
+            
+        Parameters
+        ----------
+        cohesiveCoeff
+            None or a Float specifying the viscosity coefficient. The default value is None. 
+
+        Returns
+        -------
+        DamageStabilizationCohesive
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive` object. 
+
+        Raises
+        ------
+        RangeError
+        """
         ...
