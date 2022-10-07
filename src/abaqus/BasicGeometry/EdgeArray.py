@@ -128,7 +128,8 @@ class EdgeArray(List[Edge]):
             An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of Edge objects.
 
         """
-        return Edge() if isinstance(args[0],float) else [Edge()]
+        first_value = kwargs.get('coordinates') if 'coordinates' in kwargs else args[0]
+        return Edge() if isinstance(first_value,float) else [Edge()]
 
     @abaqus_method_doc
     def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
