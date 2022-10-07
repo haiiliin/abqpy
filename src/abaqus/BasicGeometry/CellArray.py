@@ -118,7 +118,7 @@ class CellArray(List[Cell]):
             A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object.
 
         """
-        return Cell() if "coordinates" in kwargs else [Cell()]
+        return Cell() if isinstance(args[0],float) else [Cell()]
 
     @abaqus_method_doc
     def getExteriorFaces(self) -> FaceArray:
