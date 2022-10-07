@@ -67,7 +67,7 @@ class EdgeArray(List[Edge]):
     @overload
     @abaqus_method_doc
     def findAt(
-        self, coordinates: Tuple[float, float, float], printWarning: Boolean = True
+        self, *coordinates: Tuple[float, float, float], printWarning: Boolean = True
     ) -> Edge:
         ...
 
