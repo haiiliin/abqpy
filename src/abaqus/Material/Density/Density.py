@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ...UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant, UNIFORM
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
+from ...UtilityAndView.abaqusConstants import Boolean, OFF, UNIFORM
 
 
 @abaqus_class_doc
@@ -33,7 +35,9 @@ class Density:
         table: tuple,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[
+            C.UNIFORM, C.ANALYTICAL_FIELD, C.DISCRETE_FIELD
+        ] = UNIFORM,
         fieldName: str = "",
     ):
         """This method creates a Density object.
