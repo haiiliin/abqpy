@@ -1,27 +1,17 @@
 from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Edge import Edge
+from .InterestingPoint import InterestingPoint
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from ..Part.PartBase import PartBase
 
 
 @abaqus_class_doc
-class InterestingPoint:
-    """Interesting points can be located at the following:
-    - The middle of an edge.
-    - The middle of an arc.
-    - The center of an arc.
-    An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` object is a temporary object and cannot be accessed from the Mdb
-    object.
-
-    .. note:: 
-        This object can be accessed by::
-
-            import part
-            import assembly
-    """
-
+class BasicGeometryPart(PartBase):
     @abaqus_method_doc
-    def __init__(self, edge: Edge, rule: Literal[C.MIDDLE, C.CENTER]):
+    def InterestingPoint(
+        self, edge: Edge, rule: Literal[C.MIDDLE, C.CENTER]
+    ) -> InterestingPoint:
         """This method creates an interesting point along an edge. An InterestingPoint is a
         temporary object.
 
@@ -46,3 +36,4 @@ class InterestingPoint:
 
         """
         ...
+        return InterestingPoint(edge, rule)
