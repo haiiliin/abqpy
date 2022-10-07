@@ -3,10 +3,11 @@ on:
   push:
     branches:
     - 'main'
-    - '20**'
     paths:
     - 'src/**'
     - 'docs/source/**'
+  release:
+    types: [published]
   workflow_dispatch:
 
 concurrency:
