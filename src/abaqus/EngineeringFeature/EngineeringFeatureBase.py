@@ -1,4 +1,4 @@
-from typing import Dict, Tuple
+from typing import Dict, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Crack import Crack
@@ -35,7 +35,7 @@ class EngineeringFeatureBase:
     springDashpots: Dict[str, SpringDashpot] = {}
 
     @abaqus_method_doc
-    def assignSeam(self, regions: Tuple[Region, ...]):
+    def assignSeam(self, regions: Sequence[Region]):
         """This method creates a seam crack along an edge or a face.
 
         Parameters
@@ -47,7 +47,7 @@ class EngineeringFeatureBase:
         ...
 
     @abaqus_method_doc
-    def deleteSeam(self, regions: Tuple[Region, ...]):
+    def deleteSeam(self, regions: Sequence[Region]):
         """This method deletes a seam crack.
 
         Parameters

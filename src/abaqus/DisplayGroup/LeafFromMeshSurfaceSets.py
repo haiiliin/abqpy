@@ -1,4 +1,4 @@
-from typing import Optional, Tuple
+from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Leaf import Leaf
@@ -25,7 +25,7 @@ class LeafFromMeshSurfaceSets(Leaf):
     leafType: Optional[SymbolicConstant] = None
 
     @abaqus_method_doc
-    def __init__(self, surfaceSets: Tuple[Surface, ...]):
+    def __init__(self, surfaceSets: Sequence[Surface]):
         """This method creates a Leaf object from a sequence of surface sets.
 
         .. note:: 

@@ -1,4 +1,4 @@
-from typing import Union, Optional, Tuple
+from typing import Union, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AcousticInfiniteSection import AcousticInfiniteSection
@@ -131,8 +131,8 @@ class SectionOdb(OdbBase):
         material: str = "",
         table: tuple = (),
         outputPts: tuple = (),
-        centroid: Tuple[float, ...] = (),
-        shearCenter: Tuple[float, ...] = (),
+        centroid: Sequence[float] = (),
+        shearCenter: Sequence[float] = (),
         profileEnd: str = "",
     ) -> BeamSection:
         """This method creates a BeamSection object.
