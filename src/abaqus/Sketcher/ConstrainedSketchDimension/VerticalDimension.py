@@ -1,4 +1,4 @@
-from typing import Optional, Tuple
+from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchDimension import ConstrainedSketchDimension
@@ -13,7 +13,7 @@ class VerticalDimension(ConstrainedSketchDimension):
         self,
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
-        textPoint: Tuple[float, ...],
+        textPoint: Sequence[float],
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):

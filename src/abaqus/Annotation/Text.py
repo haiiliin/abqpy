@@ -1,4 +1,4 @@
-from typing import Union, Optional, Tuple
+from typing import Union, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Annotation import Annotation
@@ -35,7 +35,7 @@ class Text(Annotation, _OptionsBase):
 
     #: A pair of Floats specifying the **X**- and **Y**-offsets in millimeters of the Text object
     #: from **anchor**. The default value is (0, 0).
-    offset: Tuple[float, ...] = (0.0, 0.0)
+    offset: Sequence[float] = (0.0, 0.0)
 
     #: A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
     #: specifies the **X**- and **Y** coordinates as percentages of the viewport width and height.
@@ -107,7 +107,7 @@ class Text(Annotation, _OptionsBase):
         self,
         name: str,
         text: str = "",
-        offset: Tuple[float, ...] = (0.0, 0.0),
+        offset: Sequence[float] = (0.0, 0.0),
         anchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         referencePoint: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         rotationAngle: float = 0.0,
@@ -216,7 +216,7 @@ class Text(Annotation, _OptionsBase):
     def setValues(
         self,
         text: str = "",
-        offset: Tuple[float, ...] = (0.0, 0.0),
+        offset: Sequence[float] = (0.0, 0.0),
         anchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         referencePoint: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         rotationAngle: float = 0.0,

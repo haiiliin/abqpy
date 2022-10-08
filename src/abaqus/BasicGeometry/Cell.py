@@ -70,7 +70,7 @@ class Cell:
 
         Returns
         -------
-        Tuple[int, ...]
+        Sequence[int]
             A tuple of integers.
 
         """
@@ -82,7 +82,7 @@ class Cell:
 
         Returns
         -------
-        Tuple[int, ...]
+        Sequence[int]
             A tuple of integers.
 
         """
@@ -94,7 +94,7 @@ class Cell:
 
         Returns
         -------
-        Tuple[int, ...]
+        Sequence[int]
             A tuple of integers.
 
         """

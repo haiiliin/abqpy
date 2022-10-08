@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 from typing import Union, Optional
+=======
+from typing import Union, Optional, Sequence, Tuple
+>>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .InteractionContactControlModel import InteractionContactControlModel
@@ -181,13 +185,13 @@ class InteractionModel(
         ...
 
     @abaqus_method_doc
-    def getSurfaceSeparation(self):
+    def getSurfaceSeparation(self) -> Tuple[Tuple[str, str, float, bool]]:
         """This method returns a list of all possible contacts that can be created using the
         ContactDetection method.
 
         Returns
         -------
-        Tuple[Tuple[str, str, float, bool], ...]
+        Tuple[Tuple[str, str, float, bool]]
             Tuple of tuples, where each tuple holds information, to be used in contact creation as
             follows:
             
@@ -879,10 +883,20 @@ class InteractionModel(
         includedPairs: Optional[RegionPairs] = None, 
         excludedPairs: Optional[RegionPairs] = None, 
         contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
+<<<<<<< HEAD
         surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None,
         surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None, 
         masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
+=======
+        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
+        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
+        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
+        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
+        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
+        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] = None,
+        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
+>>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 
         smoothingAssignments: Optional[SmoothingAssignment] = None, 

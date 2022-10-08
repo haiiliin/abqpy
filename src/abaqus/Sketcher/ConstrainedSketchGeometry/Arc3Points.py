@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
@@ -8,7 +8,7 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 class Arc3Points(ConstrainedSketchGeometry):
     @abaqus_method_doc
     def __init__(
-        self, point1: Tuple[float, ...], point2: Tuple[float, ...], point3: Tuple[float, ...]
+        self, point1: Sequence[float], point2: Sequence[float], point3: Sequence[float]
     ):
         """This method constructs an arc using a two endpoints and an intermediate third point on
         the arc.
