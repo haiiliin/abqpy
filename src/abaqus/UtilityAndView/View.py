@@ -1,10 +1,12 @@
 from __future__ import annotations
-from typing import Optional, Tuple
+
+from typing import Optional, Sequence
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..UtilityAndView.abaqusConstants import SymbolicConstant, abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import ABSOLUTE, MODEL, OFF, Boolean
+from ..UtilityAndView.abaqusConstants import SymbolicConstant, abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -496,8 +498,8 @@ class View:
     @abaqus_method_doc
     def zoomRectangle(
         self,
-        point1: Tuple[float, ...],
-        point2: Tuple[float, ...],
+        point1: Sequence[float],
+        point2: Sequence[float],
         drawImmediately: Boolean = False,
     ):
         """This method fills the viewport with the graphics located within the given rectangle.

@@ -1,4 +1,4 @@
-from typing import Union, overload, Optional, Tuple
+from typing import Union, overload, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactPropertyAssignment import ContactPropertyAssignment
@@ -111,8 +111,13 @@ class ContactStd(Interaction):
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
+<<<<<<< HEAD
         slidingFormulationAssignments: Tuple[SlidingFormulationAssignment, ...] = None,
         masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
+=======
+        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] = None,
+        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
+>>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 
         smoothingAssignments: Optional[SmoothingAssignment] = None, 
@@ -208,7 +213,7 @@ class ContactStd(Interaction):
         globalSmoothing: Boolean = ON,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Tuple[SlidingFormulationAssignment, ...] = None,
+        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] = None,
         useAllstar: Boolean = OFF,
         includedPairs: Optional[SymbolicConstant] = None,
         excludedPairs: Optional[SymbolicConstant] = None,

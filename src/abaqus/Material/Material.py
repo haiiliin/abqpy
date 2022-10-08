@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 from typing import Union, Optional
+=======
+from typing import Union, Optional, Sequence
+>>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Density.Density import Density
@@ -523,6 +527,46 @@ class Material(MaterialBase):
         )
         return self.crushableFoam
 
+<<<<<<< HEAD
+=======
+    @abaqus_method_doc
+    def CrushStress(
+        self,
+        crushStressTable: Sequence[Sequence[float]],
+        temperatureDependency: Boolean = OFF,
+        dependencies: int = 0,
+    ):
+        """This method creates a CrushStress object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].materials[name].CrushStress
+                session.odbs[name].materials[name].CrushStress
+
+        .. versionadded:: 2022
+            The `CrushStress` method was added.
+
+        Parameters
+        ----------
+        crushStressTable
+            A sequence of sequences of Floats specifying the items described below.
+        temperatureDependency
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
+        dependencies
+            An Int specifying the number of field variable dependencies. The default value is 0.
+
+        Returns
+        -------
+            A CrushStress object.
+        """
+        self.crushStress = CrushStress(
+            crushStressTable, temperatureDependency, dependencies
+        )
+        return self.crushStress
+
+    @abaqus_method_doc
+>>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
     def Damping(
         self,
         alpha: float = 0,
