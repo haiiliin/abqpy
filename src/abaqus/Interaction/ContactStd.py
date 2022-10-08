@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-from typing import overload, Optional, Union
-=======
-from typing import Union, overload, Optional, Sequence
->>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
+from typing import Union, overload, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ContactPropertyAssignment import ContactPropertyAssignment
@@ -108,18 +104,9 @@ class ContactStd(Interaction):
         excludedPairs: Optional[RegionPairs] = None, 
         contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
         surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
-<<<<<<< HEAD
         surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None, 
         masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
-=======
-        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
-        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
-        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
-        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] = None,
-        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
->>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 
         smoothingAssignments: Optional[SmoothingAssignment] = None, 
@@ -190,12 +177,6 @@ class ContactStd(Interaction):
         name: str,
         createStepName: str,
         globalSmoothing: Boolean = ON,
-<<<<<<< HEAD
-=======
-        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
-        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] = None,
->>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
         useAllstar: Boolean = OFF,
         includedPairs: Optional[SymbolicConstant] = None,
         excludedPairs: Optional[SymbolicConstant] = None,

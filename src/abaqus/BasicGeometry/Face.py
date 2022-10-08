@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-from typing import Optional
-=======
-from typing import List, Optional, Tuple
->>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import BOTH_SIDES, Boolean, OFF, SymbolicConstant

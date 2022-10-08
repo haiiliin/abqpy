@@ -49,14 +49,8 @@ class SurfaceOffsetAssignment:
 
     @abaqus_method_doc
     def appendInStep(
-<<<<<<< HEAD
-        self, 
-        stepName: str, 
-        assignments: Tuple[Tuple[Union[Region, Material, SymbolicConstant], float], ...],
-=======
-        self, stepName: str,
+        self, stepName: str, 
         assignments: Sequence[Tuple[Union[Region, Material, SymbolicConstant], float]],
->>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
     ):
         """This method allows addition of surface offset fraction assignments to new surfaces in a
         given step.
