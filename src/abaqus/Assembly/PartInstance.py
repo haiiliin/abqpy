@@ -1,4 +1,4 @@
-from typing import Dict, List, Optional, Tuple, Sequence
+from typing import Dict, List, Optional, Sequence, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..BasicGeometry.CellArray import CellArray
@@ -461,7 +461,7 @@ class PartInstance:
         ...
 
     @abaqus_method_doc
-    def getTranslation(self):
+    def getTranslation(self) -> Tuple[float, float, float]:
         """This method returns a tuple of three Floats representing translation in the **X**-, **Y**-,
         and **Z**-directions.
 
