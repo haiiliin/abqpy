@@ -23,8 +23,6 @@ jobs:
     steps:
     - uses: actions/setup-python@v2
     - uses: actions/checkout@v3.1.0
-      with:
-        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
     - name: Installing the library
       shell: bash -l {0}
       run: |
@@ -33,11 +31,30 @@ jobs:
     - name: Build the documentation
       shell: bash -l {0}
       run: |
-        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html
-    - name: Upload the documentation to preview
-      if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') && matrix.language == 'en' }}
-      uses: ad-m/github-push-action@v0.6.0
+        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}
+    - uses: benjlevesque/short-sha@v1.2
+      if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') }}
+      id: short-sha
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: gh-pages
-        directory: docs/build/en/html
+        length: 7
+    - name: Create pull request
+      if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') }}
+      uses: paygoc6/action-pull-request-another-repo@v1.0.1
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.CREATE_PULL_REQUEST }}
+      with:
+        source_folder: docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}
+        destination_repo: 'haiiliin/docs.abqpy.com'
+        destination_folder: '${{ matrix.language }}'
+        destination_base_branch: 'main'
+        destination_head_branch: 'docs/${{ matrix.language }}/pr-${{ github.event.number }}'
+        user_email: '41898282+github-actions[bot]@users.noreply.github.com'
+        user_name: 'github-actions[bot]'
+        pull_request_reviewers: 'haiiliin'
+    - name: Comment PR
+      if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') }}
+      uses: thollander/actions-comment-pull-request@v1
+      with:
+        message: |
+          This pull request is now in preview on https://docs.abqpy.com/${{ matrix.language }}/pr-${{ github.event.number }}.
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
