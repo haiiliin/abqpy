@@ -166,11 +166,3 @@ pull_request_rules:
       label:
         add:
           - conflicts
-
-  - name: Add comment on documentation preview
-    conditions:
-      - label=docs-preview
-    actions:
-      comment:
-        message: |
-          This pull request is now in preview on https://haiiliin.com/abqpy/.
