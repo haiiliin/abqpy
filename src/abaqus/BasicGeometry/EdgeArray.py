@@ -67,12 +67,17 @@ class EdgeArray(List[Edge]):
     @overload
     @abaqus_method_doc
     def findAt(
-        self,
-        coordinates: Union[
-            Tuple[float, float, float], Tuple[Tuple[float, float, float],]
-        ],
-        printWarning: Boolean = True,
+        self, coordinates: Tuple[float, float, float], printWarning: Boolean = True,
     ) -> Edge:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self,
+        coordinates: Tuple[Tuple[float, float, float],],
+        printWarning: Boolean = True,
+    ) -> List[Edge]:
         ...
 
     @overload
@@ -123,7 +128,8 @@ class EdgeArray(List[Edge]):
             An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of Edge objects.
 
         """
-        return Edge() if "coordinates" in kwargs else [Edge()]
+        first_arg = kwargs.get('coordinates', args[0] if args else ((),))
+        return Edge() if isinstance(first_arg[0], float) else [Edge()]
 
     @abaqus_method_doc
     def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
