@@ -11,11 +11,9 @@ from .ConnectorPlasticity import ConnectorPlasticity
 from .ConnectorPotential import ConnectorPotential
 from .ConnectorPotentialArray import ConnectorPotentialArray
 from .ConnectorStop import ConnectorStop
-from .DerivedComponent import DerivedComponent
-from .TangentialBehavior import TangentialBehavior
 from ..Section.SectionBase import SectionBase
-from ..UtilityAndView.abaqusConstants import (ABS, ALL, Boolean, COEFFICIENTS, COMPONENT_NUMBER,
-                                              FORCE, FRACTION, HALF_CYCLE, LINEAR, MAXIMUM,
+from ..UtilityAndView.abaqusConstants import (ABS, ALL, Boolean, COMPONENT_NUMBER,
+                                              FORCE, HALF_CYCLE, LINEAR, MAXIMUM,
                                               MOTION_TYPE, NO_INDEPENDENT_COMPONENTS, OFF, ON,
                                               PENALTY, POSITIVE, PREDEFINED, SPECIFY, SUM,
                                               SymbolicConstant, TABULAR, UNCOUPLED)
@@ -747,101 +745,5 @@ class ConnectorSection(SectionBase):
         ValueError and TextError
         """
         option = ConnectorStop()
-        self.behaviorOptions.append(option)
-        return option
-
-    @abaqus_method_doc
-    def DerivedComponent(self):
-        """This method creates a DerivedComponent object.
-
-        .. note:: 
-            This function can be accessed by::
-
-                mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].DerivedComponent
-                mdb.models[name].sections[name].behaviorOptions[i].DerivedComponent
-                mdb.models[name].sections[name].behaviorOptions[i].evolutionPotentials[i].DerivedComponent
-                mdb.models[name].sections[name].behaviorOptions[i].initiationPotentials[i].DerivedComponent
-                session.odbs[name].sections[name].behaviorOptions[i].connectorPotentials[i].DerivedComponent
-                session.odbs[name].sections[name].behaviorOptions[i].DerivedComponent
-                session.odbs[name].sections[name].behaviorOptions[i].evolutionPotentials[i].DerivedComponent
-                session.odbs[name].sections[name].behaviorOptions[i].initiationPotentials[i].DerivedComponent
-
-        Returns
-        -------
-        DerivedComponent
-            A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object.
-
-        Raises
-        ------
-        ValueError and TextError
-        """
-        option = DerivedComponent()
-        self.behaviorOptions.append(option)
-        return option
-
-    @abaqus_method_doc
-    def TangentialBehavior(
-        self,
-        formulation: SymbolicConstant = PENALTY,
-        slipRateDependency: Boolean = OFF,
-        pressureDependency: Boolean = OFF,
-        temperatureDependency: Boolean = OFF,
-        dependencies: int = 0,
-        exponentialDecayDefinition: SymbolicConstant = COEFFICIENTS,
-        shearStressLimit: Optional[float] = None,
-        maximumElasticSlip: SymbolicConstant = FRACTION,
-        fraction: Optional[float] = None,
-        absoluteDistance: Optional[float] = None,
-        table: tuple = (),
-    ):
-        """This method creates a TangentialBehavior object.
-
-        .. note:: 
-            This function can be accessed by::
-
-                mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
-                session.odbs[name].sections[name].behaviorOptions[i].TangentialBehavior
-
-        Parameters
-        ----------
-        formulation
-            A SymbolicConstant specifying the friction coefficient formulation. Possible values are
-            PENALTY and EXPONENTIAL_DECAY. The default value is PENALTY.
-        slipRateDependency
-            A Boolean specifying whether the data depend on slip rate. The default value is OFF.
-        pressureDependency
-            A Boolean specifying whether the data depend on contact pressure. The default value is
-            OFF.
-        temperatureDependency
-            A Boolean specifying whether the data depend on temperature. The default value is OFF.
-        dependencies
-            An Int specifying the number of field variables for the data. The default value is 0.
-        exponentialDecayDefinition
-            A SymbolicConstant specifying the exponential decay definition for the data. Possible
-            values are COEFFICIENTS and TEST_DATA. The default value is COEFFICIENTS.
-        shearStressLimit
-            None or a Float specifying no upper limit or the friction coefficient shear stress
-            limit. The default value is None.
-        maximumElasticSlip
-            A SymbolicConstant specifying the method for modifying the allowable elastic slip.
-            Possible values are FRACTION and ABSOLUTE_DISTANCE. The default value is FRACTION.This
-            argument applies only to Abaqus/Standard analyses.
-        fraction
-            A Float specifying the ratio of the allowable maximum elastic slip to a characteristic
-            model dimension. The default value is 10-4.This argument applies only to Abaqus/Standard
-            analyses.
-        absoluteDistance
-            None or a Float specifying the absolute magnitude of the allowable elastic slip. The
-            default value is None.This argument applies only to Abaqus/Standard analyses.
-        table
-            A sequence of sequences of Floats specifying the tangential properties. Items in the
-            table data are described below. The default value is an empty sequence.
-
-        Returns
-        -------
-        TangentialBehavior
-            A :py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior` object. .
-        """
-        option = TangentialBehavior()
         self.behaviorOptions.append(option)
         return option

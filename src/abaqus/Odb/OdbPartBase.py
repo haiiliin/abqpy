@@ -1,4 +1,4 @@
-from typing import overload, Dict, Optional, Tuple
+from typing import overload, Dict, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AnalyticSurface import AnalyticSurface
@@ -313,7 +313,7 @@ class OdbPartBase:
 
     @abaqus_method_doc
     def AnalyticRigidSurf2DPlanar(
-        self, name: str, profile: Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
+        self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0
     ):
         """This method is used to define a two-dimensional AnalyticSurface object on the part
         object.
@@ -339,7 +339,7 @@ class OdbPartBase:
 
     @abaqus_method_doc
     def AnalyticRigidSurfExtrude(
-        self, name: str, profile: Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
+        self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0
     ):
         """This method is used to define a three-dimensional cylindrical AnalyticSurface on the
         part object.
@@ -365,7 +365,7 @@ class OdbPartBase:
 
     @abaqus_method_doc
     def AnalyticRigidSurfRevolve(
-        self, name: str, profile: Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
+        self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0
     ):
         """This method is used to define a three-dimensional AnalyticSurface of revolution on the
         part object.

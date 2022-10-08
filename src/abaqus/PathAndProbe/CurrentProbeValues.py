@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -17,4 +17,4 @@ class CurrentProbeValues:
 
     #: A tuple of Floats specifying the values obtained while probing. These values are updated
     #: constantly as the user moves the mouse over the object being probed.
-    values: Tuple[float, ...] = None
+    values: Sequence[float] = None
