@@ -118,7 +118,7 @@ class CellArray(List[Cell]):
             A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object.
 
         """
-        first_arg = kwargs['coordinates'] if 'coordinates' in kwargs else args[0]
+        first_arg = kwargs.get('coordinates', args[0] if args else ((),))
         return Cell() if isinstance(first_arg[0], float) else [Cell()]
 
     @abaqus_method_doc

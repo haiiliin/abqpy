@@ -128,7 +128,7 @@ class EdgeArray(List[Edge]):
             An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of Edge objects.
 
         """
-        first_arg = kwargs['coordinates'] if 'coordinates' in kwargs else args[0]
+        first_arg = kwargs.get('coordinates', args[0] if args else ((),))
         return Edge() if isinstance(first_arg[0], float) else [Edge()]
 
     @abaqus_method_doc
