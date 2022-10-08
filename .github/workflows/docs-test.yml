@@ -61,6 +61,6 @@ jobs:
       with:
         description-message: |
           ----
-          ### Docs Preview
+          # Docs Preview
           The pull request for updating the documentation has been created, after the pull request is merged, the documentation will be updated automatically on https://docs.abqpy.com/en/pr-${{ github.event.number }} (English) and https://docs.abqpy.com/zh_CN/pr-${{ github.event.number }} (Simplified Chinese).
         delete-previous-comment: true
