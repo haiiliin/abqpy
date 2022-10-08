@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Union, Optional, Tuple, overload
+from typing import Sequence, Union, Optional, Tuple, overload
 
 from typing_extensions import Literal
 
@@ -1514,7 +1514,7 @@ class Feature:
     @abaqus_method_doc
     def PartitionCellByPlanePointNormal(
         self,
-        cells: Tuple[Cell, ...],
+        cells: Sequence[Cell],
         point: Union[ConstrainedSketchVertex, InterestingPoint, DatumPoint],
         normal: Union[Edge, DatumAxis],
     ) -> Feature:
