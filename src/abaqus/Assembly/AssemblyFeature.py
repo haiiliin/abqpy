@@ -1,4 +1,4 @@
-from typing import Optional, Tuple
+from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..BasicGeometry.Face import Face
@@ -24,10 +24,10 @@ class AssemblyFeature(FeatureBase):
     def AttachmentLines(
         name: str,
         points: int,
-        sourceFaces: Tuple[Face, ...],
-        sourceElementFaces: Tuple[MeshFace, ...],
-        targetFaces: Tuple[Face, ...],
-        targetElementFaces: Tuple[MeshFace, ...],
+        sourceFaces: Sequence[Face],
+        sourceElementFaces: Sequence[MeshFace],
+        targetFaces: Sequence[Face],
+        targetElementFaces: Sequence[MeshFace],
         projectionMethod: SymbolicConstant = PROJECT_BY_PROXIMITY,
         projectionDirStartPt: Optional[float] = None,
         projectionDirEndPt: Optional[float] = None,

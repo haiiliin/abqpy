@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..BasicGeometry.Edge import Edge
@@ -30,7 +30,7 @@ class Stringer:
 
     @abaqus_method_doc
     def __init__(
-        self, name: str, edges: Tuple[Edge, ...] = (), elementEdges: Tuple[MeshEdge, ...] = ()
+        self, name: str, edges: Sequence[Edge] = (), elementEdges: Sequence[MeshEdge] = ()
     ):
         """This method creates a stringer from a sequence of objects in a model database. At least
         one of the optional arguments needs to be specified.
@@ -60,7 +60,7 @@ class Stringer:
 
     @abaqus_method_doc
     def EditStringer(
-        self, name: str, edges: Tuple[Edge, ...] = (), elementEdges: Tuple[MeshEdge, ...] = ()
+        self, name: str, edges: Sequence[Edge] = (), elementEdges: Sequence[MeshEdge] = ()
     ):
         """This method modifies underlying entities of the selected stringer. At least one of the
         optional arguments needs to be specified.

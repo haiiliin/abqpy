@@ -1,4 +1,4 @@
-from typing import Optional, Tuple
+from typing import Optional, Sequence
 
 from typing_extensions import Literal
 
@@ -48,7 +48,7 @@ class PartFeature(BaseFeature):
 
     @abaqus_method_doc
     def AddCells(
-        self, faceList: Tuple[Face, ...], flipped: Boolean = OFF
+        self, faceList: Sequence[Face], flipped: Boolean = OFF
     ) -> BaseFeature:
         """This method tries to convert a shell entity to a solid entity. The conversion is not
         always successful.
@@ -146,7 +146,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def AssignMidsurfaceRegion(self, cellList: Tuple[Cell, ...]) -> BaseFeature:
+    def AssignMidsurfaceRegion(self, cellList: Sequence[Cell]) -> BaseFeature:
         """This method assign a mid-surface property to sequence of Cell objects. If a reference
         representation of the part does not exist, it creates one. It also copies the **cells** to
         the reference representation and deletes the **cells** from the active representation of
@@ -481,7 +481,7 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def BlendFaces(
         self,
-        side1: Tuple[Edge, ...],
+        side1: Sequence[Edge],
         side2: tuple,
         method: Optional[Literal[C.TANGENT, C.SHORTEST_PATH, C.SPECIFY_PATH]] = None,
         path: Optional[Edge] = None,
@@ -521,7 +521,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def Chamfer(self, length: float, edgeList: Tuple[Edge, ...]) -> BaseFeature:
+    def Chamfer(self, length: float, edgeList: Sequence[Edge]) -> BaseFeature:
         """This method creates an additional Feature object by chamfering the given list of edges
         with a given length.
 
@@ -619,7 +619,7 @@ class PartFeature(BaseFeature):
 
     @abaqus_method_doc
     def CoverEdges(
-        self, edgeList: Tuple[Edge, ...], tryAnalytical: Boolean = False
+        self, edgeList: Sequence[Edge], tryAnalytical: Boolean = False
     ) -> BaseFeature:
         """This method generates a face using the given edges as the face's boundaries. The
         CoverEdges method generates a face by creating the geometry consisting of the underlying
@@ -999,10 +999,10 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def ExtendFaces(
         self,
-        faces: Tuple[Face, ...] = (),
-        extendAlong: Tuple[Edge, ...] = (),
+        faces: Sequence[Face] = (),
+        extendAlong: Sequence[Edge] = (),
         distance: Optional[float] = None,
-        upToFaces: Tuple[Face, ...] = (),
+        upToFaces: Sequence[Face] = (),
         trimToExtendedTargetSurfaces: Boolean = True,
         upToReferenceRep: Boolean = OFF,
     ) -> BaseFeature:
@@ -1224,7 +1224,7 @@ class PartFeature(BaseFeature):
 
     @abaqus_method_doc
     def MergeEdges(
-        self, edgeList: Tuple[Edge, ...] = (), extendSelection: Boolean = OFF
+        self, edgeList: Sequence[Edge] = (), extendSelection: Boolean = OFF
     ) -> BaseFeature:
         """This method merges edges either by extending the user selection or using only the
         selected edges.
@@ -1253,9 +1253,9 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def OffsetFaces(
         self,
-        faceList: Tuple[Face, ...],
+        faceList: Sequence[Face],
         distance: Optional[float] = None,
-        targetFaces: Tuple[Face, ...] = (),
+        targetFaces: Sequence[Face] = (),
         targetFacesMethod: Optional[
             Literal[C.HALF_OF_AVERAGE, C.CLOSEST_POINT_FRACTION, C.FARTHEST_POINT_FRACTION]
         ] = None,
@@ -1304,7 +1304,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def RemoveCells(self, cellList: Tuple[Cell, ...]) -> bool:
+    def RemoveCells(self, cellList: Sequence[Cell]) -> bool:
         """This method converts a solid entity to a shell entity.
 
         .. note:: 
@@ -1331,7 +1331,7 @@ class PartFeature(BaseFeature):
 
     @abaqus_method_doc
     def RemoveFaces(
-        self, faceList: Tuple[Face, ...], deleteCells: Boolean = False
+        self, faceList: Sequence[Face], deleteCells: Boolean = False
     ) -> BaseFeature:
         """This method removes faces from a solid entity or from a shell entity.
 
@@ -1356,7 +1356,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def RemoveFacesAndStitch(self, faceList: Tuple[Face, ...]) -> BaseFeature:
+    def RemoveFacesAndStitch(self, faceList: Sequence[Face]) -> BaseFeature:
         """This method removes faces from a solid entity and attempts to close the resulting gap by
         extending the neighboring faces of the solid.
 
@@ -1380,8 +1380,8 @@ class PartFeature(BaseFeature):
     @abaqus_method_doc
     def RemoveRedundantEntities(
         self,
-        vertexList: Tuple[Vertex, ...] = (),
-        edgeList: Tuple[Edge, ...] = (),
+        vertexList: Sequence[Vertex] = (),
+        edgeList: Sequence[Edge] = (),
         removeEdgeVertices: Boolean = True,
     ) -> BaseFeature:
         """This method removes redundant edges and vertices from a solid or a shell entity. One of
@@ -1415,7 +1415,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def RepairFaceNormals(self, faceList: Tuple[Face, ...] = ()) -> BaseFeature:
+    def RepairFaceNormals(self, faceList: Sequence[Face] = ()) -> BaseFeature:
         """This method works on the entire part or a sequence of shell faces. When the entire part
         is selected, it aligns all the shell face normals, and inverts all of the solid faces'
         normals if the solid was originally inside out. When a few shell faces are selected, it
@@ -1439,7 +1439,7 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def RepairInvalidEdges(self, edgeList: Tuple[Edge, ...]) -> BaseFeature:
+    def RepairInvalidEdges(self, edgeList: Sequence[Edge]) -> BaseFeature:
         """This method repairs invalid edges. It will always attempt to improve edges even if none
         of selected edges are initially invalid and may leave behind invalid edges that could
         not be repaired.
@@ -1497,7 +1497,7 @@ class PartFeature(BaseFeature):
 
     @abaqus_method_doc
     def RepairSmallEdges(
-        self, edgeList: Tuple[Edge, ...], toleranceChecks: Boolean = True
+        self, edgeList: Sequence[Edge], toleranceChecks: Boolean = True
     ) -> BaseFeature:
         """This method repairs small edges. This method will attempt to replace selected small
         edges with vertices and extend the adjacent faces and edges. This method might leave
@@ -1525,7 +1525,7 @@ class PartFeature(BaseFeature):
 
     @abaqus_method_doc
     def RepairSmallFaces(
-        self, faceList: Tuple[Face, ...], toleranceChecks: Boolean = True
+        self, faceList: Sequence[Face], toleranceChecks: Boolean = True
     ) -> BaseFeature:
         """This method repairs small faces. It will attempt to replace the selected small faces
         with edges or vertices and extend the adjacent faces. This method might leave behind
@@ -1553,7 +1553,7 @@ class PartFeature(BaseFeature):
 
     @abaqus_method_doc
     def ReplaceFaces(
-        self, faceList: Tuple[Face, ...], stitch: Boolean = True
+        self, faceList: Sequence[Face], stitch: Boolean = True
     ) -> BaseFeature:
         """This method replaces the selected faces with a single face. If one single face is
         selected, that alone is replaced with a new face.
@@ -1580,7 +1580,7 @@ class PartFeature(BaseFeature):
 
     @abaqus_method_doc
     def Round(
-        self, radius: float, edgeList: Tuple[Edge, ...], vertexList: Tuple[Vertex, ...]
+        self, radius: float, edgeList: Sequence[Edge], vertexList: Sequence[Vertex]
     ) -> BaseFeature:
         """This method creates an additional Feature object by rounding (filleting) the given list
         of entities with the given radius.
@@ -2307,7 +2307,7 @@ class PartFeature(BaseFeature):
 
     @abaqus_method_doc
     def Stitch(
-        self, edgeList: Tuple[Edge, ...] = (), stitchTolerance: Optional[float] = None
+        self, edgeList: Sequence[Edge] = (), stitchTolerance: Optional[float] = None
     ) -> BaseFeature:
         """This method attempts to create a valid part by binding together free and imprecise edges
         of all the faces of a part. If **edgeList** is not given, a global stitch will be

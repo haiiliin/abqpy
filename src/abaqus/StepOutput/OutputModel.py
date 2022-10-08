@@ -1,4 +1,4 @@
-from typing import Union, Optional, Tuple
+from typing import Union, Optional, Sequence
 
 from typing_extensions import Literal
 
@@ -32,16 +32,16 @@ class OutputModel(ModelBase):
         name: str,
         createStepName: str,
         region: Union[Literal[C.MODEL], Region] = MODEL,
-        variables: Union[Tuple[str, ...], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
+        variables: Union[Sequence[str], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
         frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
-        modes: Union[Literal[C.ALL], Tuple[int, ...]] = ALL,
+        modes: Union[Literal[C.ALL], Sequence[int]] = ALL,
         timeInterval: Union[
             Literal[C.EVERY_TIME_INCREMENT], float
         ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         timeMarks: Boolean = OFF,
         boltLoad: str = "",
-        sectionPoints: Union[Literal[C.DEFAULT], Tuple[int, ...]] = DEFAULT,
+        sectionPoints: Union[Literal[C.DEFAULT], Sequence[int]] = DEFAULT,
         interactions: Optional[str] = None,
         rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
         filter: Optional[SymbolicConstant] = None,
@@ -185,15 +185,15 @@ class OutputModel(ModelBase):
         name: str,
         createStepName: str,
         region: Union[Literal[C.MODEL], Region] = MODEL,
-        variables: Union[Tuple[str, ...], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
+        variables: Union[Sequence[str], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
         frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
-        modes: Union[Literal[C.ALL], Tuple[int, ...]] = ALL,
+        modes: Union[Literal[C.ALL], Sequence[int]] = ALL,
         timeInterval: Union[
             Literal[C.EVERY_TIME_INCREMENT], float
         ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         boltLoad: str = "",
-        sectionPoints: Union[Literal[C.DEFAULT], Tuple[int, ...]] = DEFAULT,
+        sectionPoints: Union[Literal[C.DEFAULT], Sequence[int]] = DEFAULT,
         stepName: str = "",
         interactions: Optional[str] = None,
         contourIntegral: Optional[str] = None,

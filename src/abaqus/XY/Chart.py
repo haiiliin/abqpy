@@ -1,4 +1,4 @@
-from typing import Dict, Optional, Tuple
+from typing import Dict, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Area import Area
@@ -207,7 +207,7 @@ class Chart:
     def setValues(
         self,
         chart: Optional["Chart"] = None,
-        curvesToPlot: Tuple[XYCurve, ...] = (),
+        curvesToPlot: Sequence[XYCurve] = (),
         aspectRatio: Optional[float] = None,
         transform: tuple = (),
         view: Optional[View] = None,
