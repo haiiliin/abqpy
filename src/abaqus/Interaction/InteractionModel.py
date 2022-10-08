@@ -905,13 +905,8 @@ class InteractionModel(
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-<<<<<<< HEAD
-        slidingFormulationAssignments: Tuple[SlidingFormulationAssignment, ...] = None,
-        mainSecondaryAssignments: Optional[MasterSlaveAssignment] = None,
-=======
         slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] = None,
-        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
->>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
+        mainSecondaryAssignments: Optional[MasterSlaveAssignment] = None,
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 
         smoothingAssignments: Optional[SmoothingAssignment] = None, 
