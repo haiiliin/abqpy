@@ -22,7 +22,6 @@ ConstrainedSketch
 
 .. autoclass:: abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch
     :members:
-    :inherited-members:
 
     .. autoclasstoc::
 

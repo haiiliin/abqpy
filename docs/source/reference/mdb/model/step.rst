@@ -25,7 +25,6 @@ Step
 
 .. autoclass:: abaqus.Step.Step.Step
     :members:
-    :inherited-members:
 
     .. autoclasstoc::
 
@@ -42,7 +41,6 @@ AdaptivityStep
 
 .. autoclass:: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep
     :members:
-    :inherited-members:
     :noindex:
 
     .. autoclasstoc::
@@ -52,7 +50,6 @@ OutputStep
 
 .. autoclass:: abaqus.StepOutput.OutputStep.OutputStep
     :members:
-    :inherited-members:
     :noindex:
 
     .. autoclasstoc::
@@ -62,7 +59,6 @@ AnalysisStep
 
 .. autoclass:: abaqus.Step.AnalysisStep.AnalysisStep
     :members:
-    :inherited-members:
 
     .. autoclasstoc::
 

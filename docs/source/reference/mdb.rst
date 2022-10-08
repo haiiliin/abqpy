@@ -23,7 +23,6 @@ Mdb
 
 .. autoclass:: abaqus.Mdb.Mdb.Mdb
    :members:
-   :inherited-members:
 
    .. autoclasstoc::
 

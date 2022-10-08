@@ -40,7 +40,6 @@ Section
 
 .. autoclass:: abaqus.Section.Section.Section
     :members:
-    :inherited-members:
 
     .. autoclasstoc::
 

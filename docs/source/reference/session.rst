@@ -27,7 +27,6 @@ Session
 
 .. autoclass:: abaqus.Session.Session.Session
     :members:
-    :inherited-members:
 
     .. autoclasstoc::
 
