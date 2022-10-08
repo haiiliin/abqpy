@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union, Tuple, overload
+from typing import Optional, Union, Tuple, overload, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Region import Region
@@ -193,17 +193,17 @@ class RegionPart(RegionPartBase):
     def Set(
         self,
         name: str,
-        nodes: Optional[Tuple[MeshNode, ...]] = None,
-        elements: Optional[Tuple[MeshElement, ...]] = None,
+        nodes: Optional[Sequence[MeshNode]] = None,
+        elements: Optional[Sequence[MeshElement]] = None,
         region: Optional[Region] = None,
-        vertices: Optional[Tuple[Vertex, ...]] = None,
-        edges: Optional[Tuple[Edge, ...]] = None,
-        faces: Optional[Union[Face, Tuple[Face, ...]]] = None,
-        cells: Optional[Union[Cell, Tuple[Cell, ...]]] = None,
-        xVertices: Optional[Tuple[Vertex, ...]] = None,
-        xEdges: Optional[Tuple[Edge, ...]] = None,
-        xFaces: Optional[Tuple[Face, ...]] = None,
-        referencePoints: Tuple[ReferencePoint, ...] = (),
+        vertices: Optional[Sequence[Vertex]] = None,
+        edges: Optional[Sequence[Edge]] = None,
+        faces: Optional[Union[Face, Sequence[Face]]] = None,
+        cells: Optional[Union[Cell, Sequence[Cell]]] = None,
+        xVertices: Optional[Sequence[Vertex]] = None,
+        xEdges: Optional[Sequence[Edge]] = None,
+        xFaces: Optional[Sequence[Face]] = None,
+        referencePoints: Sequence[ReferencePoint] = (),
         skinFaces: tuple = ...,
         skinEdges: tuple = ...,
         stringerEdges: tuple = ...,
