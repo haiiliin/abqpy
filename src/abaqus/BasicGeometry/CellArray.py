@@ -118,8 +118,8 @@ class CellArray(List[Cell]):
             A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object.
 
         """
-        first_value = kwargs.get('coordinates') if 'coordinates' in kwargs else args[0]
-        return Cell() if isinstance(first_value,float) else [Cell()]
+        first_point = kwargs['coordinates'] if 'coordinates' in kwargs else args[0]
+        return Cell() if isinstance(first_point[0], float) else [Cell()]
 
     @abaqus_method_doc
     def getExteriorFaces(self) -> FaceArray:
