@@ -1,4 +1,4 @@
-from typing import Optional, Tuple
+from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Datum.DatumCsys import DatumCsys
@@ -396,7 +396,7 @@ class BasicOptions(_CopyOptionsBase):
     #: A tuple of Ints specifying which sectors to display when
     #: **sectorSelectionType** = SELECT_BY_NUMBER. Possible values are 1 ≤ **selectedSectorNumbers**
     #: ≤ the number of sectors. The default value is (1).
-    selectedSectorNumbers: Tuple[int, ...] = None
+    selectedSectorNumbers: Sequence[int] = None
 
     #: A tuple of Strings specifying either element set or display group names (depending on
     #: the value of regionBoundaries) defining the averaging region boundaries. The default
@@ -452,7 +452,7 @@ class BasicOptions(_CopyOptionsBase):
         sectionPointScheme: SymbolicConstant = CATEGORY_BASED,
         sweepSectors: Boolean = OFF,
         sectorSelectionType: SymbolicConstant = SELECT_BY_NUMBER,
-        selectedSectorNumbers: Tuple[int, ...] = (),
+        selectedSectorNumbers: Sequence[int] = (),
         sweepSectorStartAngle: float = 0,
         sweepSectorEndAngle: float = 360,
         extrudeArs: Boolean = OFF,

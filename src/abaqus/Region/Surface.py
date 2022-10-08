@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Union, Optional, Tuple, overload
+from typing import Union, Optional, Sequence, overload
 
 from typing_extensions import Literal
 
@@ -50,7 +50,7 @@ class Surface(Region):
     nodes: MeshNodeArray = MeshNodeArray([])
 
     #: A tuple of SymbolicConstants specifying the sides; for example, (SIDE1, SIDE2).
-    sides: Optional[Tuple[SymbolicConstant, ...]] = None
+    sides: Optional[Sequence[SymbolicConstant]] = None
 
     #: A tuple of Ints specifying the instances. This member is not applicable for a Surface
     #: object on an output database.
@@ -60,26 +60,26 @@ class Surface(Region):
     @abaqus_method_doc
     def __init__(
         self,
-        side1Faces: Union[Face, Tuple[Face, ...], None] = None,
-        side2Faces: Union[Face, Tuple[Face, ...], None] = None,
-        side12Faces: Union[Face, Tuple[Face, ...], None] = None,
-        end1Edges: Union[Face, Tuple[Face, ...], None] = None,
-        end2Edges: Union[Face, Tuple[Face, ...], None] = None,
-        circumEdges: Union[Face, Tuple[Face, ...], None] = None,
-        side1Edges: Union[Face, Tuple[Face, ...], None] = None,
-        side2Edges: Union[Face, Tuple[Face, ...], None] = None,
-        face1Elements: Union[Face, Tuple[Face, ...], None] = None,
-        face2Elements: Union[Face, Tuple[Face, ...], None] = None,
-        face3Elements: Union[Face, Tuple[Face, ...], None] = None,
-        face4Elements: Union[Face, Tuple[Face, ...], None] = None,
-        face5Elements: Union[Face, Tuple[Face, ...], None] = None,
-        face6Elements: Union[Face, Tuple[Face, ...], None] = None,
-        side1Elements: Union[Face, Tuple[Face, ...], None] = None,
-        side2Elements: Union[Face, Tuple[Face, ...], None] = None,
-        side12Elements: Union[Face, Tuple[Face, ...], None] = None,
-        end1Elements: Union[Face, Tuple[Face, ...], None] = None,
-        end2Elements: Union[Face, Tuple[Face, ...], None] = None,
-        circumElements: Union[Face, Tuple[Face, ...], None] = None,
+        side1Faces: Union[Face, Sequence[Face], None] = None,
+        side2Faces: Union[Face, Sequence[Face], None] = None,
+        side12Faces: Union[Face, Sequence[Face], None] = None,
+        end1Edges: Union[Face, Sequence[Face], None] = None,
+        end2Edges: Union[Face, Sequence[Face], None] = None,
+        circumEdges: Union[Face, Sequence[Face], None] = None,
+        side1Edges: Union[Face, Sequence[Face], None] = None,
+        side2Edges: Union[Face, Sequence[Face], None] = None,
+        face1Elements: Union[Face, Sequence[Face], None] = None,
+        face2Elements: Union[Face, Sequence[Face], None] = None,
+        face3Elements: Union[Face, Sequence[Face], None] = None,
+        face4Elements: Union[Face, Sequence[Face], None] = None,
+        face5Elements: Union[Face, Sequence[Face], None] = None,
+        face6Elements: Union[Face, Sequence[Face], None] = None,
+        side1Elements: Union[Face, Sequence[Face], None] = None,
+        side2Elements: Union[Face, Sequence[Face], None] = None,
+        side12Elements: Union[Face, Sequence[Face], None] = None,
+        end1Elements: Union[Face, Sequence[Face], None] = None,
+        end2Elements: Union[Face, Sequence[Face], None] = None,
+        circumElements: Union[Face, Sequence[Face], None] = None,
         name: str = "",
         **kwargs
     ) -> None:
@@ -221,7 +221,7 @@ class Surface(Region):
     def SurfaceByBoolean(
         self,
         name: str,
-        surfaces: Tuple[Surface],
+        surfaces: Sequence[Surface],
         operation: Literal[C.UNION, C.INTERSECTION, C.DIFFERENCE] = UNION,
     ) -> Surface:
         """This method creates a surface by performing a boolean operation on two or more input

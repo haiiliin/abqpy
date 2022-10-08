@@ -1,4 +1,4 @@
-from typing import Union, Optional, Tuple
+from typing import Union, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import (AXIS_1, AXIS_2, AXIS_3, Boolean, FIRST_FRAME, OFF, ON,
@@ -59,7 +59,7 @@ class ViewCut:
     active: Boolean = OFF
 
     #: A pair of Floats specifying the acceptable range for positioning the cut.
-    cutRange: Tuple[float, ...] = ()
+    cutRange: Sequence[float] = ()
 
     #: A String specifying the repository key.
     name: str

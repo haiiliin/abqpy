@@ -1,4 +1,4 @@
-from typing import overload, Optional, Tuple
+from typing import overload, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Assembly.AssemblyBase import AssemblyBase
@@ -50,7 +50,7 @@ class MeshEditAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def deleteElement(
-        self, elements: Tuple[MeshElement, ...], deleteUnreferencedNodes: Boolean = OFF
+        self, elements: Sequence[MeshElement], deleteUnreferencedNodes: Boolean = OFF
     ):
         """This method deletes the given elements from a part instance. The elements must have been
         generated using the bottom-up meshing technique.
@@ -66,7 +66,7 @@ class MeshEditAssembly(AssemblyBase):
         ...
 
     @abaqus_method_doc
-    def projectNode(self, nodes: Tuple[MeshNode, ...], projectionReference: str):
+    def projectNode(self, nodes: Sequence[MeshNode], projectionReference: str):
         """This method projects the given nodes of a part instance onto a mesh entity, geometric
         entity, or a datum object.
 
@@ -84,11 +84,11 @@ class MeshEditAssembly(AssemblyBase):
     @abaqus_method_doc
     def editNode(
         self,
-        nodes: Tuple[MeshNode, ...],
+        nodes: Sequence[MeshNode],
         coordinate1: Optional[float] = None,
         coordinate2: Optional[float] = None,
         coordinate3: Optional[float] = None,
-        coordinates: Tuple[float, ...] = (),
+        coordinates: Sequence[float] = (),
         offset1: Optional[float] = None,
         offset2: Optional[float] = None,
         offset3: Optional[float] = None,
@@ -143,7 +143,7 @@ class MeshEditAssembly(AssemblyBase):
     @abaqus_method_doc
     def mergeNodes(
         self,
-        nodes: Tuple[MeshNode, ...],
+        nodes: Sequence[MeshNode],
         tolerance: Optional[float] = None,
         removeDuplicateElements: Boolean = True,
     ):

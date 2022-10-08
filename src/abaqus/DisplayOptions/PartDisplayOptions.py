@@ -1,4 +1,4 @@
-from typing import Dict, Tuple
+from typing import Dict, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .EngineeringFeatureDisplayOptions import EngineeringFeatureDisplayOptions
@@ -63,7 +63,7 @@ class PartDisplayOptions:
     def setValues(
         self,
         renderStyle: SymbolicConstant = WIREFRAME,
-        visibleDisplayGroups: Tuple[DisplayGroup, ...] = (),
+        visibleDisplayGroups: Sequence[DisplayGroup] = (),
         engineeringFeatures: Boolean = OFF,
         renderBeamProfiles: Boolean = OFF,
         beamScaleFactor: float = 1,
