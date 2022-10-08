@@ -53,7 +53,7 @@ class Vertex:
 
         Returns
         -------
-        Tuple[int, ...]
+        Sequence[int]
             A tuple of integers.
 
         """

@@ -1,4 +1,4 @@
-from typing import Union, Optional, Tuple
+from typing import Union, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Density.Density import Density
@@ -527,7 +527,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def CrushStress(
         self,
-        crushStressTable: Tuple[Tuple[float, ...]],
+        crushStressTable: Sequence[Sequence[float]],
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

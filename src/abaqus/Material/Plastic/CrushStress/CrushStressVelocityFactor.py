@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -30,10 +30,10 @@ class CrushStressVelocityFactor:
     """
 
     #: A sequence of sequences of Floats specifying the items described below.
-    crushStressVelocityFactorTable: Tuple[Tuple[float, ...]]
+    crushStressVelocityFactorTable: Sequence[Sequence[float]]
 
     @abaqus_method_doc
-    def __init__(self, crushStressVelocityFactorTable: Tuple[Tuple[float, ...]]):
+    def __init__(self, crushStressVelocityFactorTable: Sequence[Sequence[float]]):
         """This method creates a CrushStressVelocityFactor object.
 
         Parameters
@@ -44,7 +44,7 @@ class CrushStressVelocityFactor:
         self.crushStressVelocityFactorTable = crushStressVelocityFactorTable
 
     @abaqus_method_doc
-    def setValues(self, crushStressVelocityFactorTable: Tuple[Tuple[float, ...]] = ()):
+    def setValues(self, crushStressVelocityFactorTable: Sequence[Sequence[float]] = ()):
         """This method creates a CrushStressVelocityFactor object.
 
         Parameters

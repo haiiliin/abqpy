@@ -1,4 +1,4 @@
-from typing import Optional, Tuple
+from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchDimension import ConstrainedSketchDimension
@@ -15,7 +15,7 @@ class AngularDimension(ConstrainedSketchDimension):
         self,
         line1: ConstrainedSketchGeometry,
         line2: ConstrainedSketchGeometry,
-        textPoint: Tuple[float, ...],
+        textPoint: Sequence[float],
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):

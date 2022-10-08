@@ -34,7 +34,7 @@ class MeshFace:
 
         Returns
         -------
-        edges: Tuple[MeshEdge, ...]
+        edges: Sequence[MeshEdge]
             A tuple of MeshEdge objects
         """
         ...
@@ -45,7 +45,7 @@ class MeshFace:
 
         Returns
         -------
-        elements: Tuple[MeshElement, ...]
+        elements: Sequence[MeshElement]
             A tuple of MeshElement objects
         """
         ...
@@ -56,7 +56,7 @@ class MeshFace:
 
         Returns
         -------
-        nodes: Tuple[MeshNode, ...]
+        nodes: Sequence[MeshNode]
             A tuple of MeshNode objects
         """
         ...
@@ -85,7 +85,7 @@ class MeshFace:
 
         Returns
         -------
-        normal: Tuple[float, ...]
+        normal: Sequence[float]
             A tuple of 3 floats representing the unit normal vector. If the element face is
             collapsed such that a normal cannot be computed, a zero-length vector is returned.
         """
