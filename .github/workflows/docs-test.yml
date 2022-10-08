@@ -55,8 +55,12 @@ jobs:
         pull_request_reviewers: 'haiiliin'
     - name: Comment PR
       if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') }}
-      uses: thollander/actions-comment-pull-request@v1
+      uses: Beakyn/gha-comment-pull-request@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
       with:
-        message: |
-          This pull request is now in preview on https://docs.abqpy.com/${{ matrix.language }}/pr-${{ github.event.number }}.
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        description-message: |
+          ----
+          ### Docs Preview for ${{ matrix.language }}
+          The pull request for updating the ${{ matrix.language }} documentation is created, after the pull request is merged, the documentation will be updated automatically on https://docs.abqpy.com/${{ matrix.language }}/pr-${{ github.event.number }}.
+        delete-previous-comment: true
