@@ -4,7 +4,8 @@ on:
   pull_request:
     branches:
     - main
-    types: [opened, reopened, synchronize]
+    - 20**
+    types: [opened, reopened, synchronize, labeled]
     paths:
     - 'src/**'
     - 'docs/source/**'
@@ -16,6 +17,7 @@ concurrency:
 
 jobs:
   docs-test:
+    if: ${{ github.base_ref == 'main' || contains(github.event.pull_request.labels.*.name, 'conflicts') || contains(github.event.pull_request.labels.*.name, 'docs-test') }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -23,8 +25,6 @@ jobs:
     steps:
     - uses: actions/setup-python@v2
     - uses: actions/checkout@v3.1.0
-      with:
-        fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
     - name: Installing the library
       shell: bash -l {0}
       run: |
@@ -33,11 +33,31 @@ jobs:
     - name: Build the documentation
       shell: bash -l {0}
       run: |
-        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html
-    - name: Upload the documentation to preview
-      if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') && matrix.language == 'en' }}
-      uses: ad-m/github-push-action@v0.6.0
+        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}
+        touch  docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}/.nojekyll
+        rm -rf docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}/.doctrees
+    - name: Create pull request
+      if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') }}
+      uses: paygoc6/action-pull-request-another-repo@v1.0.1
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.CREATE_PULL_REQUEST }}
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: gh-pages
-        directory: docs/build/en/html
+        source_folder: docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}
+        destination_repo: 'haiiliin/docs.abqpy.com'
+        destination_folder: '${{ matrix.language }}'
+        destination_base_branch: 'main'
+        destination_head_branch: 'docs/${{ matrix.language }}/pr-${{ github.event.number }}'
+        user_email: '41898282+github-actions[bot]@users.noreply.github.com'
+        user_name: 'github-actions[bot]'
+        pull_request_reviewers: 'haiiliin'
+    - name: Comment PR
+      if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') && matrix.language == 'en' }}
+      uses: Beakyn/gha-comment-pull-request@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      with:
+        description-message: |
+          ----
+          # Docs Preview
+          The pull request for updating the documentation has been created, after the pull request is merged, the documentation will be updated automatically on https://docs.abqpy.com/en/pr-${{ github.event.number }} (English) and https://docs.abqpy.com/zh_CN/pr-${{ github.event.number }} (Simplified Chinese).
+        delete-previous-comment: true

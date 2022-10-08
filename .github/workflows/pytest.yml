@@ -4,7 +4,8 @@ on:
   pull_request:
     branches:
     - main
-    types: [opened, reopened, synchronize]
+    - 20**
+    types: [opened, reopened, synchronize, labeled]
     paths:
     - 'src/**'
   workflow_dispatch:
@@ -15,6 +16,7 @@ concurrency:
 
 jobs:
   pytest:
+    if: ${{ github.base_ref == 'main' || contains(github.event.pull_request.labels.*.name, 'conflicts') || contains(github.event.pull_request.labels.*.name, 'pytest') }}
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
