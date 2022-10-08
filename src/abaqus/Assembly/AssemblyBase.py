@@ -293,7 +293,7 @@ class AssemblyBase(AssemblyFeature):
         specifyThickness: Boolean = False,
         thickness: str = "",
         miAboutCenterOfMass: Boolean = True,
-        miAboutPoint: tuple = (),
+        miAboutPoint: Tuple[float, float, float] = (),
     ):
         """This method returns the mass properties of the assembly, or instances or regions. Only
         beams, trusses, shells, solids, point, nonstructural mass, and rotary inertia elements
@@ -758,7 +758,11 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def rotate(
-        self, instanceList: tuple, axisPoint: tuple, axisDirection: tuple, angle: float
+        self, 
+        instanceList: Sequence[str],
+        axisPoint: Sequence[float, float, float], 
+        axisDirection: Sequence[float, float, float], 
+        angle: float,
     ):
         """This method rotates given instances by the specified amount.
 

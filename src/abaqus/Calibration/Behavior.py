@@ -1,3 +1,5 @@
+from typing import Tuple
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .DataSet import DataSet
 from ..UtilityAndView.abaqusConstants import Boolean
@@ -81,12 +83,12 @@ class Behavior:
         biWeight: str = "",
         uMullinsReload: str = "",
         uMullinsUnload: str = "",
-        uPYieldPoint: tuple = (),
+        uPYieldPoint: Tuple[float, float, float] = (),
         uPermSet: str = "",
         uPrimary: str = "",
         bMullinsReload: str = "",
         bMullinsUnload: str = "",
-        bPYieldPoint: tuple = (),
+        bPYieldPoint: Tuple[float, float, float] = (),
         bPermSet: str = "",
         bPrimary: str = "",
     ):

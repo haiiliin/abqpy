@@ -334,8 +334,8 @@ class PartInstance:
         instanceList: tuple,
         number: int,
         totalAngle: float,
-        point: tuple = (),
-        axis: tuple = (),
+        point: Sequence[float, float, float] = (),
+        axis: Sequence[float, float, float] = (),
     ):
         """This method creates multiple PartInstance objects in a radial pattern and puts them into
         the instances repository.
@@ -489,7 +489,12 @@ class PartInstance:
         ...
 
     @abaqus_method_doc
-    def rotateAboutAxis(self, axisPoint: tuple, axisDirection: tuple, angle: float):
+    def rotateAboutAxis(
+        self, 
+        axisPoint: Sequence[float, float, float], 
+        axisDirection: Sequence[float, float, float], 
+        angle: float
+    ):
         """This method translates an instance by the specified amount.
 
         Parameters

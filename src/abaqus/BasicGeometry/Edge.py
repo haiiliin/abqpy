@@ -70,7 +70,7 @@ class Edge:
         ...
 
     @abaqus_method_doc
-    def getCurvature(self, parameter: float, point: tuple):
+    def getCurvature(self, parameter: float, point: Tuple[float, float, float]):
         """This method returns curvature information at a location on the edge.
 
         Parameters
