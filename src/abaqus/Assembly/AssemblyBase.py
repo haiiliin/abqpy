@@ -760,8 +760,8 @@ class AssemblyBase(AssemblyFeature):
     def rotate(
         self, 
         instanceList: Sequence[str],
-        axisPoint: Sequence[float, float, float], 
-        axisDirection: Sequence[float, float, float], 
+        axisPoint: Sequence[float], 
+        axisDirection: Sequence[float], 
         angle: float,
     ):
         """This method rotates given instances by the specified amount.
