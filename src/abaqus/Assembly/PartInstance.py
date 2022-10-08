@@ -1,4 +1,4 @@
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Sequence, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..BasicGeometry.CellArray import CellArray
@@ -189,7 +189,7 @@ class PartInstance:
         self,
         name: str,
         instanceToBeCut: str,
-        cuttingInstances: Tuple["PartInstance"],
+        cuttingInstances: Sequence["PartInstance"],
         originalInstances: SymbolicConstant = SUPPRESS,
     ):
         """This method creates a PartInstance in the instances repository after subtracting or
@@ -225,7 +225,7 @@ class PartInstance:
     def InstanceFromBooleanMerge(
         self,
         name: str,
-        instances: Tuple["PartInstance"],
+        instances: Sequence["PartInstance"],
         keepIntersections: Boolean = False,
         originalInstances: SymbolicConstant = SUPPRESS,
         domain: SymbolicConstant = GEOMETRY,
@@ -289,7 +289,7 @@ class PartInstance:
         spacing2: float,
         direction1: tuple = (),
         direction2: tuple = (),
-    ) -> Tuple['PartInstance']:
+    ) -> Sequence['PartInstance']:
         """This method creates multiple PartInstance objects in a linear pattern and puts them into
         the instances repository.
 
@@ -323,7 +323,7 @@ class PartInstance:
 
         Returns
         -------
-        Tuple[PartInstance, ...]
+        Sequence[PartInstance]
             A sequence of :py:class:`~abaqus.Assembly.PartInstance.PartInstance` objects.
         """
         ...
@@ -334,8 +334,8 @@ class PartInstance:
         instanceList: tuple,
         number: int,
         totalAngle: float,
-        point: tuple = (),
-        axis: tuple = (),
+        point: Sequence[float] = (),
+        axis: Sequence[float] = (),
     ):
         """This method creates multiple PartInstance objects in a radial pattern and puts them into
         the instances repository.
@@ -367,7 +367,7 @@ class PartInstance:
 
         Returns
         -------
-        Tuple[PartInstance, ...]
+        Sequence[PartInstance]
             A sequence of PartInstance objects.
         """
         ...
@@ -461,7 +461,7 @@ class PartInstance:
         ...
 
     @abaqus_method_doc
-    def getTranslation(self):
+    def getTranslation(self) -> Tuple[float, float, float]:
         """This method returns a tuple of three Floats representing translation in the **X**-, **Y**-,
         and **Z**-directions.
 
@@ -489,7 +489,12 @@ class PartInstance:
         ...
 
     @abaqus_method_doc
-    def rotateAboutAxis(self, axisPoint: tuple, axisDirection: tuple, angle: float):
+    def rotateAboutAxis(
+        self, 
+        axisPoint: Sequence[float], 
+        axisDirection: Sequence[float], 
+        angle: float
+    ):
         """This method translates an instance by the specified amount.
 
         Parameters

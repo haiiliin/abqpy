@@ -1,4 +1,4 @@
-from typing import Optional, Tuple
+from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc
 
@@ -22,4 +22,4 @@ class DrawingArea:
 
     #: A pair of Floats specifying the coordinates of the bottom left hand corner in
     #: millimeters.
-    origin: Tuple[float, ...] = (0.0, 0.0)
+    origin: Sequence[float] = (0.0, 0.0)

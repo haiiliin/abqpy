@@ -1,4 +1,4 @@
-from typing import Union, Optional, Tuple
+from typing import Union, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Annotation import Annotation
@@ -26,11 +26,11 @@ class Arrow(Annotation, _OptionsBase):
 
     #: A pair of Floats specifying the start point **X**- and **Y**-offsets in millimeters from
     #: **startAnchor**. The default value is (0, 0).
-    startPoint: Tuple[float, ...] = (0.0, 0.0)
+    startPoint: Sequence[float] = (0.0, 0.0)
 
     #: A pair of Floats specifying the end point **X**- and **Y**-offsets in millimeters from
     #: **endAnchor**. The default value is (0, 0).
-    endPoint: Tuple[float, ...] = (0.0, 0.0)
+    endPoint: Sequence[float] = (0.0, 0.0)
 
     #: A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
     #: specifies the **X**- and **Y**-coordinates as percentages of the viewport width and height.
@@ -124,8 +124,8 @@ class Arrow(Annotation, _OptionsBase):
     def __init__(
         self,
         name: str,
-        startPoint: Tuple[float, ...] = (0.0, 0.0),
-        endPoint: Tuple[float, ...] = (0.0, 0.0),
+        startPoint: Sequence[float] = (0.0, 0.0),
+        endPoint: Sequence[float] = (0.0, 0.0),
         startAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         endAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         startHeadStyle: SymbolicConstant = NONE,
@@ -287,8 +287,8 @@ class Arrow(Annotation, _OptionsBase):
     @abaqus_method_doc
     def setValues(
         self,
-        startPoint: Tuple[float, ...] = (0.0, 0.0),
-        endPoint: Tuple[float, ...] = (0.0, 0.0),
+        startPoint: Sequence[float] = (0.0, 0.0),
+        endPoint: Sequence[float] = (0.0, 0.0),
         startAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         endAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         startHeadStyle: SymbolicConstant = NONE,

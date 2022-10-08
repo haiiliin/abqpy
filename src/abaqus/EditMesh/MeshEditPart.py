@@ -1,4 +1,4 @@
-from typing import overload, Optional, Tuple
+from typing import overload, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Datum.DatumCsys import DatumCsys
@@ -27,7 +27,7 @@ class MeshEditPart(PartBase):
     """
 
     @abaqus_method_doc
-    def adjustMidsideNode(self, cornerNodes: Tuple[Node, ...], parameter: float):
+    def adjustMidsideNode(self, cornerNodes: Sequence[Node], parameter: float):
         """This method is used to adjust the midside node of second-order elements of an orphan
         mesh part.
 
@@ -124,7 +124,7 @@ class MeshEditPart(PartBase):
 
     @abaqus_method_doc
     def deleteElement(
-        self, elements: Tuple[MeshElement, ...], deleteUnreferencedNodes: Boolean = OFF
+        self, elements: Sequence[MeshElement], deleteUnreferencedNodes: Boolean = OFF
     ):
         """This method deletes the given elements from an orphan mesh part or an Abaqus native
         mesh. If the elements belong to an Abaqus native mesh then the elements must have been
@@ -142,7 +142,7 @@ class MeshEditPart(PartBase):
 
     @abaqus_method_doc
     def deleteNode(
-        self, nodes: Tuple[MeshNode, ...], deleteUnreferencedNodes: Boolean = OFF
+        self, nodes: Sequence[MeshNode], deleteUnreferencedNodes: Boolean = OFF
     ):
         """This method deletes the given nodes from an orphan mesh part.
 
@@ -160,11 +160,11 @@ class MeshEditPart(PartBase):
     @abaqus_method_doc
     def editNode(
         self,
-        nodes: Tuple[MeshNode, ...],
+        nodes: Sequence[MeshNode],
         coordinate1: Optional[float] = None,
         coordinate2: Optional[float] = None,
         coordinate3: Optional[float] = None,
-        coordinates: Tuple[float, ...] = (),
+        coordinates: Sequence[float] = (),
         offset1: Optional[float] = None,
         offset2: Optional[float] = None,
         offset3: Optional[float] = None,
@@ -217,7 +217,7 @@ class MeshEditPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def projectNode(self, nodes: Tuple[MeshNode, ...], projectionReference: str):
+    def projectNode(self, nodes: Sequence[MeshNode], projectionReference: str):
         """This method projects the given nodes onto a mesh entity, geometric entity, or a datum
         object. The nodes may belong to an orphan mesh part or to an Abaqus native mesh.
 
@@ -322,7 +322,7 @@ class MeshEditPart(PartBase):
     @abaqus_method_doc
     def mergeNodes(
         self,
-        nodes: Tuple[Node, ...],
+        nodes: Sequence[Node],
         tolerance: Optional[float] = None,
         removeDuplicateElements: Boolean = True,
         keepHighLabels: Boolean = False,
@@ -382,7 +382,7 @@ class MeshEditPart(PartBase):
         ...
 
     def orientElements(
-        self, pickedElements: Tuple[MeshElement, ...], referenceRegion: MeshFace
+        self, pickedElements: Sequence[MeshElement], referenceRegion: MeshFace
     ):
         """This method orients the stack direction of elements in a continuum shell or gasket mesh.
 
