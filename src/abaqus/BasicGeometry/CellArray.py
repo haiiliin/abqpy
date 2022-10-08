@@ -56,12 +56,17 @@ class CellArray(List[Cell]):
     @overload
     @abaqus_method_doc
     def findAt(
-        self,
-        coordinates: Union[
-            Tuple[float, float, float], Tuple[Tuple[float, float, float],]
-        ],
-        printWarning: Boolean = True,
+        self, coordinates: Tuple[float, float, float], printWarning: Boolean = True,
     ) -> Cell:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self,
+        coordinates: Tuple[Tuple[float, float, float],],
+        printWarning: Boolean = True,
+    ) -> List[Cell]:
         ...
 
     @overload
@@ -113,7 +118,8 @@ class CellArray(List[Cell]):
             A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object.
 
         """
-        return Cell() if "coordinates" in kwargs else [Cell()]
+        first_arg = kwargs.get('coordinates', args[0] if args else ((),))
+        return Cell() if isinstance(first_arg[0], float) else [Cell()]
 
     @abaqus_method_doc
     def getExteriorFaces(self) -> FaceArray:
