@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import BOTH_SIDES, Boolean, OFF, SymbolicConstant
@@ -62,14 +62,14 @@ class Face:
 
         Returns
         -------
-        Tuple[float, ...]
+        Sequence[float]
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid of
             the face.
         """
         ...
 
     @abaqus_method_doc
-    def getCurvature(self, point: tuple, uParam: float, vParam: float):
+    def getCurvature(self, point: Tuple[float, float, float], uParam: float, vParam: float):
         """This method returns information about the curvature at a location on the face.
 
         Parameters
@@ -152,7 +152,7 @@ class Face:
         ...
 
     @abaqus_method_doc
-    def getNormal(self, point: tuple = ()):
+    def getNormal(self, point: Tuple[float, float, float] = ()):
         """This method returns the normal to a face at the location specified by the **pointOn**
         member. The normal at a different location on the face can be obtained by specifying the
         optional **point** argument.
@@ -166,7 +166,7 @@ class Face:
 
         Returns
         -------
-        Tuple[float, ...]
+        Sequence[float]
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components of the normal to the
             face.
 
@@ -200,7 +200,7 @@ class Face:
 
         Returns
         -------
-        Tuple[int, ...]
+        Sequence[int]
         A tuple of integers.
 
         """
@@ -212,7 +212,7 @@ class Face:
 
         Returns
         -------
-        Tuple[int, ...]
+        Sequence[int]
             A tuple of integers.
 
         """
@@ -225,7 +225,7 @@ class Face:
 
         Returns
         -------
-        Tuple[int, ...]
+        Sequence[int]
             A tuple of integers.
 
         """

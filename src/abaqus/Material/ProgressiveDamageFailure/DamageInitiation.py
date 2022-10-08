@@ -1,11 +1,11 @@
 from typing import Optional
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .DamageEvolution import DamageEvolution
 from .DamageStabilization import DamageStabilization
 from .DamageStabilizationCohesive import DamageStabilizationCohesive
-from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 from ...UtilityAndView.abaqusConstants import (
     Boolean,
     CENTROID,
@@ -18,6 +18,7 @@ from ...UtilityAndView.abaqusConstants import (
     LINEAR,
     SymbolicConstant,
 )
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

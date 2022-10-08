@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
@@ -8,9 +8,9 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 class ArcByCenterEnds(ConstrainedSketchGeometry):
     @abaqus_method_doc
     def __init__(
-        center: Tuple[float, ...],
-        point1: Tuple[float, ...],
-        point2: Tuple[float, ...],
+        center: Sequence[float],
+        point1: Sequence[float],
+        point2: Sequence[float],
     ):
         """This method constructs an arc using a center point and two vertices. The Arc object is
         added to the geometry repository of the ConstrainedSketch object. The arc is created in

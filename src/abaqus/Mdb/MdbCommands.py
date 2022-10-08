@@ -10,10 +10,12 @@ This page discusses:
 * CombineOptResults
 
 """
-from typing import Union, Tuple
+from typing import Union, Sequence
+
 from typing_extensions import Literal
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+
 from ..UtilityAndView.abaqusConstants import INITIAL_AND_LAST, ALL, FIRST
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 def upgradeMdb(existingMdbPath: str, upgradedMdbPath: str) -> None:
@@ -45,10 +47,10 @@ def CombineOptResults(
     optIter: Literal[
         C.INITIAL_AND_LAST, C.NONE, C.ALL, C.LAST, C.EVERY_NCYCLES, C.SPECIFY
     ] = INITIAL_AND_LAST,
-    nValues: Union[int, Tuple[int], Literal[C.ALL]] = ALL,
-    models: Union[Tuple[str], Literal[C.ALL]] = ALL,
-    steps: Union[Tuple[str], Literal[C.ALL]] = ALL,
-    analysisFieldVariables: Union[Tuple[str], Literal[C.ALL]] = ALL,
+    nValues: Union[int, Sequence[int], Literal[C.ALL]] = ALL,
+    models: Union[Sequence[str], Literal[C.ALL]] = ALL,
+    steps: Union[Sequence[str], Literal[C.ALL]] = ALL,
+    analysisFieldVariables: Union[Sequence[str], Literal[C.ALL]] = ALL,
     includeResultsFrom: Literal[C.ORIGINAL_MODEL, C.FIRST, C.LAST] = FIRST,
     originalModel: str = ...,
 ) -> None:
