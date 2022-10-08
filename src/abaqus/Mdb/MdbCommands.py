@@ -45,10 +45,10 @@ def CombineOptResults(
     optIter: Literal[
         C.INITIAL_AND_LAST, C.NONE, C.ALL, C.LAST, C.EVERY_NCYCLES, C.SPECIFY
     ] = INITIAL_AND_LAST,
-    nValues: Union[int, Tuple[int], Literal[C.ALL]] = ALL,
-    models: Union[Tuple[str], Literal[C.ALL]] = ALL,
-    steps: Union[Tuple[str], Literal[C.ALL]] = ALL,
-    analysisFieldVariables: Union[Tuple[str], Literal[C.ALL]] = ALL,
+    nValues: Union[int, Tuple[int, ...], Literal[C.ALL]] = ALL,
+    models: Union[Tuple[str, ...], Literal[C.ALL]] = ALL,
+    steps: Union[Tuple[str, ...], Literal[C.ALL]] = ALL,
+    analysisFieldVariables: Union[Tuple[str, ...], Literal[C.ALL]] = ALL,
     includeResultsFrom: Literal[C.ORIGINAL_MODEL, C.FIRST, C.LAST] = FIRST,
     originalModel: str = ...,
 ) -> None:

@@ -221,7 +221,7 @@ class Surface(Region):
     def SurfaceByBoolean(
         self,
         name: str,
-        surfaces: Tuple[Surface],
+        surfaces: Tuple[Surface, ...],
         operation: Literal[C.UNION, C.INTERSECTION, C.DIFFERENCE] = UNION,
     ) -> Surface:
         """This method creates a surface by performing a boolean operation on two or more input
