@@ -1,4 +1,4 @@
-from typing import Dict, Optional, Tuple
+from typing import Dict, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AnalyticSurface import AnalyticSurface
@@ -259,7 +259,7 @@ class OdbInstanceBase:
 
     @abaqus_method_doc
     def AnalyticRigidSurf2DPlanar(
-        self, name: str, profile: Tuple[AnalyticSurfaceSegment, ...], filletRadius: str = 0
+        self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0
     ):
         """This method is used to define a two-dimensional AnalyticSurface object on the instance.
 
@@ -287,7 +287,7 @@ class OdbInstanceBase:
     def AnalyticRigidSurfExtrude(
         self,
         name: str,
-        profile: Tuple[AnalyticSurfaceSegment, ...],
+        profile: Sequence[AnalyticSurfaceSegment],
         filletRadius: str = 0,
         localCoordData: tuple = (),
     ):
@@ -321,7 +321,7 @@ class OdbInstanceBase:
     def AnalyticRigidSurfRevolve(
         self,
         name: str,
-        profile: Tuple[AnalyticSurfaceSegment, ...],
+        profile: Sequence[AnalyticSurfaceSegment],
         filletRadius: str = 0,
         localCoordData: tuple = (),
     ):

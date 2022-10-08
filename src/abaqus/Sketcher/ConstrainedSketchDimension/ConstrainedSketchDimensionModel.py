@@ -1,4 +1,4 @@
-from typing import Optional, Tuple
+from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..ConstrainedSketchBase import ConstrainedSketchBase
@@ -28,7 +28,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         line1: ConstrainedSketchGeometry,
         line2: ConstrainedSketchGeometry,
-        textPoint: Tuple[float, ...],
+        textPoint: Sequence[float],
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
@@ -66,7 +66,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
-        textPoint: Tuple[float, ...],
+        textPoint: Sequence[float],
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
@@ -105,7 +105,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
-        textPoint: Tuple[float, ...],
+        textPoint: Sequence[float],
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
@@ -142,7 +142,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
     def RadialDimension(
         self,
         curve: ConstrainedSketchGeometry,
-        textPoint: Tuple[float, ...],
+        textPoint: Sequence[float],
         value: Optional[float] = None,
         reference: Boolean = OFF,
         majorRadius: Optional[float] = None,
@@ -187,7 +187,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         vertex1: ConstrainedSketchVertex,
         vertex2: ConstrainedSketchVertex,
-        textPoint: Tuple[float, ...],
+        textPoint: Sequence[float],
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):
@@ -225,7 +225,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         self,
         entity1: ConstrainedSketchVertex,
         entity2: ConstrainedSketchVertex,
-        textPoint: Tuple[float, ...],
+        textPoint: Sequence[float],
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):

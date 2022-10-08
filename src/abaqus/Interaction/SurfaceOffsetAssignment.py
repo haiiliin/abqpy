@@ -1,4 +1,4 @@
-from typing import Union, Tuple
+from typing import Union, Tuple, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Material.Material import Material
@@ -49,9 +49,14 @@ class SurfaceOffsetAssignment:
 
     @abaqus_method_doc
     def appendInStep(
+<<<<<<< HEAD
         self, 
         stepName: str, 
         assignments: Tuple[Tuple[Union[Region, Material, SymbolicConstant], float], ...],
+=======
+        self, stepName: str,
+        assignments: Sequence[Tuple[Union[Region, Material, SymbolicConstant], float]],
+>>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
     ):
         """This method allows addition of surface offset fraction assignments to new surfaces in a
         given step.

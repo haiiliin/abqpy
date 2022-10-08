@@ -1,4 +1,4 @@
-from typing import Optional, Tuple
+from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchDimension import ConstrainedSketchDimension
@@ -12,8 +12,13 @@ class DistanceDimension(ConstrainedSketchDimension):
     def __init__(
         self,
         entity1: ConstrainedSketchVertex,
+<<<<<<< HEAD
         vertex2: ConstrainedSketchVertex,
         textPoint: Tuple[float, ...],
+=======
+        entity2: ConstrainedSketchVertex,
+        textPoint: Sequence[float],
+>>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
         value: Optional[float] = None,
         reference: Boolean = OFF,
     ):

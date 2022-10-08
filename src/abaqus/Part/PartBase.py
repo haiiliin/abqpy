@@ -1,4 +1,4 @@
-from typing import overload, Dict, List, Optional, Tuple
+from typing import overload, Dict, List, Optional, Sequence
 
 # prevent circular imports
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -256,7 +256,7 @@ class PartBase(PartFeature):
         ...
 
     def PartFromBooleanCut(
-        self, name: str, instanceToBeCut: str, cuttingInstances: Tuple[PartInstance, ...]
+        self, name: str, instanceToBeCut: str, cuttingInstances: Sequence[PartInstance]
     ):
         """This method creates a Part in the parts repository after subtracting or cutting the
         geometries of a group of part instances from that of a base part instance.
@@ -287,7 +287,7 @@ class PartBase(PartFeature):
     def PartFromBooleanMerge(
         self,
         name: str,
-        instances: Tuple[PartInstance, ...],
+        instances: Sequence[PartInstance],
         keepIntersections: Boolean = False,
         mergeNodes: SymbolicConstant = BOUNDARY_ONLY,
         nodeMergingTolerance: Optional[float] = None,
@@ -468,7 +468,7 @@ class PartBase(PartFeature):
     def PartFromInstanceMesh(
         self,
         name: str,
-        partInstances: Tuple[PartInstance, ...] = (),
+        partInstances: Sequence[PartInstance] = (),
         copyPartSets: Boolean = False,
         copyAssemblySets: Boolean = False,
     ):
@@ -872,10 +872,10 @@ class PartBase(PartFeature):
     @abaqus_method_doc
     def assignThickness(
         self,
-        faces: Tuple[Face, ...],
+        faces: Sequence[Face],
         thickness: Optional[float] = None,
-        topFaces: Tuple[Face, ...] = (),
-        bottomFaces: Tuple[Face, ...] = (),
+        topFaces: Sequence[Face] = (),
+        bottomFaces: Sequence[Face] = (),
     ):
         """This method assigns thickness data to shell faces. The thickness can be used while
         assigning shell and membrane sections to faces.
@@ -997,7 +997,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def getArea(self, faces: Tuple[Face, ...], relativeAccuracy: float = 0):
+    def getArea(self, faces: Sequence[Face], relativeAccuracy: float = 0):
         """This method returns the total surface area of a given face or group of faces.
 
         Parameters
@@ -1046,7 +1046,7 @@ class PartBase(PartFeature):
 
     @abaqus_method_doc
     def getCentroid(
-        self, faces: Tuple[Face, ...], cells: Tuple[Face, ...], relativeAccuracy: float = 0
+        self, faces: Sequence[Face], cells: Sequence[Face], relativeAccuracy: float = 0
     ):
         """Location of the centroid of a given face/cell or group of faces/cells
         
@@ -1064,7 +1064,7 @@ class PartBase(PartFeature):
 
         Returns
         -------
-        centroid: Tuple[float, ...]
+        centroid: Sequence[float]
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid.
             Depending on the arguments provided, this method returns the following:
         
@@ -1090,7 +1090,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def getCurvature(self, edges: Tuple[Edge, ...], samplePoints: int = 100):
+    def getCurvature(self, edges: Sequence[Edge], samplePoints: int = 100):
         """This method returns the maximum curvature of a given edge or group of edges. For an arc,
         the curvature is constant over the entire edge, and equal to the inverse of the radius.
         For a straight line, the curvature is constant and equal to 0. For a spline edge, the
@@ -1137,7 +1137,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def getLength(self, edges: Tuple[Edge, ...]):
+    def getLength(self, edges: Sequence[Edge]):
         """This method returns the length of a given edge or group of edges.
 
         Parameters
@@ -1153,7 +1153,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def getPerimeter(self, faces: Tuple[Face, ...]):
+    def getPerimeter(self, faces: Sequence[Face]):
         """This method returns the total perimeter of a given face or group of faces. All faces
         need to be on the same part. If the specified faces have shared edges, these edges are
         excluded from the computation, thus providing the length of the outer perimeter of the
@@ -1172,7 +1172,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def getVolume(self, cells: Tuple[Cell, ...], relativeAccuracy: float = 0):
+    def getVolume(self, cells: Sequence[Cell], relativeAccuracy: float = 0):
         """This method returns the volume area of a given cell or group of cells.
 
         Parameters
@@ -1320,7 +1320,7 @@ class PartBase(PartFeature):
 
         Returns
         -------
-        faces: Tuple[Face, ...]
+        faces: Sequence[Face]
             Sequence of Face objects.
 
         Raises
@@ -1341,7 +1341,7 @@ class PartBase(PartFeature):
 
         Returns
         -------
-        edges: Tuple[Edge, ...]
+        edges: Sequence[Edge]
             Sequence of Edge objects.
 
         Raises
@@ -1362,7 +1362,7 @@ class PartBase(PartFeature):
 
         Returns
         -------
-        cells: Tuple[Cell, ...]
+        cells: Sequence[Cell]
             Sequence of Cell objects.
 
         Raises
@@ -1383,7 +1383,7 @@ class PartBase(PartFeature):
 
         Returns
         -------
-        vertices: Tuple[ConstrainedSketchVertex, ...]
+        vertices: Sequence[ConstrainedSketchVertex]
             Sequence of ConstrainedSketchVertex objects.
 
         Raises
@@ -1737,11 +1737,11 @@ class PartBase(PartFeature):
     @abaqus_method_doc
     def copyMeshPattern(
         self,
-        elements: Tuple[MeshElement, ...],
-        faces: Tuple[Face, ...],
-        elemFaces: Tuple[MeshFace, ...],
+        elements: Sequence[MeshElement],
+        faces: Sequence[Face],
+        elemFaces: Sequence[MeshFace],
         targetFace: MeshFace,
-        nodes: Tuple[MeshNode, ...],
+        nodes: Sequence[MeshNode],
         coordinates: tuple,
     ):
         """This method copies a mesh pattern from a source region consisting of a set of shell
@@ -1773,7 +1773,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def smoothNodes(self, nodes: Tuple[MeshNode, ...]):
+    def smoothNodes(self, nodes: Sequence[MeshNode]):
         """This method smooths the given nodes of a native mesh, moving them locally to a more
         optimal location that improves the quality of the mesh
 

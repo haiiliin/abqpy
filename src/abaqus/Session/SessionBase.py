@@ -1,4 +1,4 @@
-from typing import Dict, Optional, Tuple
+from typing import Dict, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AutoColors import AutoColors
@@ -455,7 +455,7 @@ class SessionBase:
         self,
         fileName: str,
         format: SymbolicConstant = PNG,
-        canvasObjects: Tuple[Canvas, ...] = (),
+        canvasObjects: Sequence[Canvas] = (),
         compression: Boolean = OFF,
     ):
         """This method prints canvas objects to a file using the attributes stored in the
@@ -484,7 +484,7 @@ class SessionBase:
         self,
         printCommand: str = "",
         numCopies: int = 1,
-        canvasObjects: Tuple[Canvas, ...] = (),
+        canvasObjects: Sequence[Canvas] = (),
     ):
         """This method prints canvas objects to a Windows printer or to a PostScript printer. The
         attributes used for printing to a Windows printer are stored in the PrintOptions object
@@ -543,7 +543,7 @@ class SessionBase:
 
     @abaqus_method_doc
     def writeVrmlFile(
-        self, fileName: str, format: Boolean = OFF, canvasObjects: Tuple[Canvas, ...] = ()
+        self, fileName: str, format: Boolean = OFF, canvasObjects: Sequence[Canvas] = ()
     ):
         """This method exports the current viewport objects to a file.
 
@@ -562,7 +562,7 @@ class SessionBase:
 
     @abaqus_method_doc
     def write3DXMLFile(
-        self, fileName: str, format: Boolean = OFF, canvasObjects: Tuple[Canvas, ...] = ()
+        self, fileName: str, format: Boolean = OFF, canvasObjects: Sequence[Canvas] = ()
     ):
         """This method exports the current viewport objects to a file.
 
@@ -580,7 +580,7 @@ class SessionBase:
         ...
 
     @abaqus_method_doc
-    def writeOBJFile(self, fileName: str, canvasObjects: Tuple[Canvas, ...] = ()):
+    def writeOBJFile(self, fileName: str, canvasObjects: Sequence[Canvas] = ()):
         """This method exports the current viewport objects to a file.
 
         Parameters

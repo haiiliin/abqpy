@@ -1,4 +1,4 @@
-from typing import overload, Optional, Tuple
+from typing import overload, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Region import Region
@@ -87,17 +87,17 @@ class Set(Region):
     def __init__(
         self,
         name: str,
-        nodes: Tuple[MeshNode, ...] = None,
-        elements: Tuple[MeshElement, ...] = None,
+        nodes: Sequence[MeshNode] = None,
+        elements: Sequence[MeshElement] = None,
         region: Optional[Region] = None,
-        vertices: Tuple[Vertex, ...] = None,
-        edges: Tuple[Edge, ...] = None,
-        faces: Tuple[Face, ...] = None,
-        cells: Tuple[Cell, ...] = None,
-        xVertices: Tuple[Vertex, ...] = None,
-        xEdges: Tuple[Edge, ...] = None,
-        xFaces: Tuple[Face, ...] = None,
-        referencePoints: Tuple[ReferencePoint, ...] = (),
+        vertices: Sequence[Vertex] = None,
+        edges: Sequence[Edge] = None,
+        faces: Sequence[Face] = None,
+        cells: Sequence[Cell] = None,
+        xVertices: Sequence[Vertex] = None,
+        xEdges: Sequence[Edge] = None,
+        xFaces: Sequence[Face] = None,
+        referencePoints: Sequence[ReferencePoint] = (),
         skinFaces: tuple = (),
         skinEdges: tuple = (),
         stringerEdges: tuple = (),
@@ -187,7 +187,7 @@ class Set(Region):
         ...
 
     def SetByBoolean(
-        self, name: str, sets: Tuple["Set"], operation: SymbolicConstant = UNION
+        self, name: str, sets: Sequence["Set"], operation: SymbolicConstant = UNION
     ):
         """This method creates a set by performing a boolean operation on two or more input sets.
 
