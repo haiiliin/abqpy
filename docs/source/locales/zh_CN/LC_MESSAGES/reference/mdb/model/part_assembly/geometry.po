@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 10:09+0000\n"
+"POT-Creation-Date: 2022-10-08 00:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -570,7 +570,7 @@ msgstr ""
 #: ../../None:11:<autosummary>:1
 msgid ""
 ":py:obj:`findAt <abaqus.BasicGeometry.CellArray.CellArray.findAt>`\\ "
-"\\(coordinates\\[\\, printWarning\\]\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -1057,7 +1057,7 @@ msgid ""
 "#simaker-cellarrayfindatpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:17 of
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:16 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
 " of the object to find. `findAt` returns either a Cell object or a "
@@ -1073,20 +1073,20 @@ msgid ""
 "285.5),),)"
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:17 of
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:16 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
 " of the object to find. `findAt` returns either a Cell object or a "
 "sequence of Cell objects based on the type of input."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:21 of
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:20 of
 msgid ""
 "If **coordinates** is a sequence of Floats, findAt returns the Cell "
 "object at that point."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:23 of
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:22 of
 msgid ""
 "If **coordinates** is a sequence of sequence of Floats, findAt returns a "
 "sequence of Cell objects at the given locations. The sequence of sequence"
@@ -1094,7 +1094,7 @@ msgid ""
 " sequence of point data. For example::"
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:31
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:29
 #: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:28
 #: abaqus.BasicGeometry.FaceArray.FaceArray.findAt:36
 #: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:29
@@ -1105,11 +1105,11 @@ msgid ""
 "entity is found at the specified location. The default value is True."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:34 of
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:32 of
 msgid "A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object."
 msgstr ""
 
-#: abaqus.BasicGeometry.CellArray.CellArray.findAt:35
+#: abaqus.BasicGeometry.CellArray.CellArray.findAt:33
 #: abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:13 of
 msgid ":class:`Cell`"
 msgstr ""
@@ -1688,7 +1688,7 @@ msgstr ""
 #: ../../None:11:<autosummary>:1
 msgid ""
 ":py:obj:`findAt <abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt>`\\ "
-"\\(coordinates\\[\\, printWarning\\]\\)"
+"\\(\\)"
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -2021,26 +2021,35 @@ msgid ""
 "#simaker-edgearrayfindatpyc>`__."
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:18 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:17 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
 " of the object to find. findAt returns either an Edge object or a "
-"sequence of Edge objects based on the type of input. If **coordinates** "
-"is a sequence of Floats, findAt returns the Edge object at that point. If"
-" you omit the **coordinates** keyword argument, findAt accepts as "
-"arguments a sequence of sequence of floats in the following format::"
-"      edges = e.findAt(((20.19686, -169.513997, 27.798593), ),"
+"sequence of Edge objects based on the type of input.  * If "
+"**coordinates** is a sequence of Floats, findAt returns the Edge object "
+"at that point. * If you omit the **coordinates** keyword argument, findAt"
+" accepts as arguments a sequence   of sequence of floats in the following"
+" format::      edges = e.findAt(((20.19686, -169.513997, 27.798593), ),"
 "                      ((19.657627, -167.295749, 27.056402), ),"
 "                      ((18.274129, -157.144741, 25.15218), ))"
 msgstr ""
 
-#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:18 of
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:17 of
 msgid ""
 "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates"
 " of the object to find. findAt returns either an Edge object or a "
-"sequence of Edge objects based on the type of input. If **coordinates** "
-"is a sequence of Floats, findAt returns the Edge object at that point. If"
-" you omit the **coordinates** keyword argument, findAt accepts as "
+"sequence of Edge objects based on the type of input."
+msgstr ""
+
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:21 of
+msgid ""
+"If **coordinates** is a sequence of Floats, findAt returns the Edge "
+"object at that point."
+msgstr ""
+
+#: abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:22 of
+msgid ""
+"If you omit the **coordinates** keyword argument, findAt accepts as "
 "arguments a sequence of sequence of floats in the following format::"
 msgstr ""
 
@@ -6999,5 +7008,51 @@ msgstr ""
 #~ " object is a temporary object and "
 #~ "cannot be accessed from the Mdb "
 #~ "object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`findAt "
+#~ "<abaqus.BasicGeometry.CellArray.CellArray.findAt>`\\ "
+#~ "\\(coordinates\\[\\, printWarning\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`findAt "
+#~ "<abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt>`\\ "
+#~ "\\(coordinates\\[\\, printWarning\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the object to find. findAt returns "
+#~ "either an Edge object or a "
+#~ "sequence of Edge objects based on "
+#~ "the type of input. If **coordinates**"
+#~ " is a sequence of Floats, findAt "
+#~ "returns the Edge object at that "
+#~ "point. If you omit the **coordinates**"
+#~ " keyword argument, findAt accepts as "
+#~ "arguments a sequence of sequence of "
+#~ "floats in the following format::      "
+#~ "edges = e.findAt(((20.19686, -169.513997, "
+#~ "27.798593), ),                      ((19.657627, "
+#~ "-167.295749, 27.056402), ),                      "
+#~ "((18.274129, -157.144741, 25.15218), ))"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Floats specifying the "
+#~ "**X**-, **Y**-, and **Z**-coordinates of "
+#~ "the object to find. findAt returns "
+#~ "either an Edge object or a "
+#~ "sequence of Edge objects based on "
+#~ "the type of input. If **coordinates**"
+#~ " is a sequence of Floats, findAt "
+#~ "returns the Edge object at that "
+#~ "point. If you omit the **coordinates**"
+#~ " keyword argument, findAt accepts as "
+#~ "arguments a sequence of sequence of "
+#~ "floats in the following format::"
 #~ msgstr ""
 
