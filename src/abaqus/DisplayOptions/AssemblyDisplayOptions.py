@@ -1,4 +1,4 @@
-from typing import Dict, Tuple
+from typing import Dict, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .BCDisplayOptions import BCDisplayOptions
@@ -173,7 +173,7 @@ class AssemblyDisplayOptions:
         cnxTypeLabels: Boolean = ON,
         cnxTagDisplay: Boolean = OFF,
         predefinedFields: Boolean = OFF,
-        visibleDisplayGroups: Tuple[DisplayGroup, ...] = (),
+        visibleDisplayGroups: Sequence[DisplayGroup] = (),
         engineeringFeatures: Boolean = OFF,
         renderBeamProfiles: Boolean = OFF,
         beamScaleFactor: float = 1,

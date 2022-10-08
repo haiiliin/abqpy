@@ -62,7 +62,7 @@ class Face:
 
         Returns
         -------
-        Tuple[float, ...]
+        Sequence[float]
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid of
             the face.
         """
@@ -166,7 +166,7 @@ class Face:
 
         Returns
         -------
-        Tuple[float, ...]
+        Sequence[float]
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components of the normal to the
             face.
 
@@ -200,7 +200,7 @@ class Face:
 
         Returns
         -------
-        Tuple[int, ...]
+        Sequence[int]
         A tuple of integers.
 
         """
@@ -212,7 +212,7 @@ class Face:
 
         Returns
         -------
-        Tuple[int, ...]
+        Sequence[int]
             A tuple of integers.
 
         """
@@ -225,7 +225,7 @@ class Face:
 
         Returns
         -------
-        Tuple[int, ...]
+        Sequence[int]
             A tuple of integers.
 
         """

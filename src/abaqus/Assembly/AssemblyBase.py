@@ -1,4 +1,4 @@
-from typing import Union, overload, Dict, List, Optional, Tuple
+from typing import Union, overload, Dict, List, Optional, Tuple, Sequence
 
 from abaqus.Datum.DatumCsys import DatumCsys
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -264,7 +264,7 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def excludeFromSimulation(self, instances: Tuple[PartInstance, ...], exclude: str):
+    def excludeFromSimulation(self, instances: Sequence[PartInstance], exclude: str):
         """This method excludes the specified part instances from the analysis.
 
         Parameters
@@ -497,7 +497,7 @@ class AssemblyBase(AssemblyFeature):
 
         Returns
         -------
-        Tuple[dict, ...]
+        Sequence[dict]
             A tuple of dictionary objects. Each dictionary contains five items with the following keys:
         
             - **edge**: An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the attachment line.
@@ -524,7 +524,7 @@ class AssemblyBase(AssemblyFeature):
 
         Returns
         -------
-        Tuple[str, ...]
+        Sequence[str]
             A tuple of strings representing the section names. If no section names are found, the
             tuple will contain one empty string.
         """
@@ -635,7 +635,7 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def makeDependent(self, instances: Tuple[PartInstance, ...]):
+    def makeDependent(self, instances: Sequence[PartInstance]):
         """This method converts the specified part instances from independent to dependent part
         instances.
 
@@ -647,7 +647,7 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def makeIndependent(self, instances: Tuple[PartInstance, ...]):
+    def makeIndependent(self, instances: Sequence[PartInstance]):
         """This method converts the specified part instances from dependent to independent part
         instances.
 
@@ -825,7 +825,7 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def unlinkInstances(self, instances: Tuple[PartInstance, ...]):
+    def unlinkInstances(self, instances: Sequence[PartInstance]):
         """This method converts the specified PartInstance objects from linked child instances to
         regular instances. The parts associated with the selected instances will be converted to
         regular parts as well.
@@ -892,7 +892,7 @@ class AssemblyBase(AssemblyFeature):
     @abaqus_method_doc
     def setMeshNumberingControl(
         self,
-        instances: Tuple[PartInstance, ...],
+        instances: Sequence[PartInstance],
         startNodeLabel: Optional[int] = None,
         startElemLabel: Optional[int] = None,
     ):
@@ -915,11 +915,11 @@ class AssemblyBase(AssemblyFeature):
     @abaqus_method_doc
     def copyMeshPattern(
         self,
-        elements: Tuple[MeshElement, ...] = (),
-        faces: Tuple[Face, ...] = (),
-        elemFaces: Tuple[MeshFace, ...] = (),
+        elements: Sequence[MeshElement] = (),
+        faces: Sequence[Face] = (),
+        elemFaces: Sequence[MeshFace] = (),
         targetFace: Optional[MeshFace] = None,
-        nodes: Tuple[MeshNode, ...] = (),
+        nodes: Sequence[MeshNode] = (),
         coordinates: tuple = (),
     ):
         """This method copies a mesh pattern from a source region consisting of a set of shell
@@ -953,7 +953,7 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def smoothNodes(
-        self, nodes: Tuple[MeshNode, ...] = ()
+        self, nodes: Sequence[MeshNode] = ()
     ):
         """This method smooths the given nodes of a native mesh, moving them locally to a more
         optimal location that improves the quality of the mesh

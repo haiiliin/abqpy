@@ -1,4 +1,4 @@
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Tuple, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..BasicGeometry.CellArray import CellArray
@@ -189,7 +189,7 @@ class PartInstance:
         self,
         name: str,
         instanceToBeCut: str,
-        cuttingInstances: Tuple["PartInstance"],
+        cuttingInstances: Sequence["PartInstance"],
         originalInstances: SymbolicConstant = SUPPRESS,
     ):
         """This method creates a PartInstance in the instances repository after subtracting or
@@ -225,7 +225,7 @@ class PartInstance:
     def InstanceFromBooleanMerge(
         self,
         name: str,
-        instances: Tuple["PartInstance"],
+        instances: Sequence["PartInstance"],
         keepIntersections: Boolean = False,
         originalInstances: SymbolicConstant = SUPPRESS,
         domain: SymbolicConstant = GEOMETRY,
@@ -289,7 +289,7 @@ class PartInstance:
         spacing2: float,
         direction1: tuple = (),
         direction2: tuple = (),
-    ) -> Tuple['PartInstance']:
+    ) -> Sequence['PartInstance']:
         """This method creates multiple PartInstance objects in a linear pattern and puts them into
         the instances repository.
 
@@ -323,7 +323,7 @@ class PartInstance:
 
         Returns
         -------
-        Tuple[PartInstance, ...]
+        Sequence[PartInstance]
             A sequence of :py:class:`~abaqus.Assembly.PartInstance.PartInstance` objects.
         """
         ...
@@ -367,7 +367,7 @@ class PartInstance:
 
         Returns
         -------
-        Tuple[PartInstance, ...]
+        Sequence[PartInstance]
             A sequence of PartInstance objects.
         """
         ...

@@ -104,7 +104,7 @@ class Edge:
 
         Returns
         -------
-        Tuple[int, ...]
+        Sequence[int]
             A tuple of integers.
 
         """
@@ -205,7 +205,7 @@ class Edge:
 
         Returns
         -------
-        Tuple[int, ...]
+        Sequence[int]
             A tuple of integers.
 
         """

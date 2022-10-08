@@ -1,4 +1,4 @@
-from typing import Optional, Tuple, Dict, overload
+from typing import Optional, Tuple, Sequence, Dict, overload
 
 from typing_extensions import Literal
 
@@ -43,7 +43,7 @@ class ViewportBase(_OptionsBase):
 
     #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters in the canvas
     #: coordinate system of the lower left corner of the viewport. The default origin is (0, 0).
-    origin: Tuple[float, ...] = (0.0, 0.0)
+    origin: Sequence[float] = (0.0, 0.0)
 
     #: A Float specifying the width in millimeters of the viewport. Possible values are 30 ≤
     #: **width** ≤ (*maxWidth*). The default value is 120. Note: The maximum value of width
@@ -313,13 +313,13 @@ class ViewportBase(_OptionsBase):
     #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters in the canvas
     #: coordinate system of the lower left corner of the current viewport, regardless of the
     #: value of **windowState**.
-    currentOrigin: Tuple[float, ...] = ()
+    currentOrigin: Sequence[float] = ()
 
     #: A pair of Floats specifying the **X**- and **Y**-coordinates in millimeters of the lower
     #: left corner of the current viewport from a coordinate system having its origin in the
     #: lower left corner of the drawing area. This origin refers to the viewport location when
     #: **windowState** =MINIMIZED.
-    iconOrigin: Tuple[float, ...] = ()
+    iconOrigin: Sequence[float] = ()
 
     #: A :py:class:`~abaqus.DisplayOptions.LightOptions.LightOptions` object.
     lightOptions: LightOptions = LightOptions()
@@ -686,7 +686,7 @@ class ViewportBase(_OptionsBase):
         self,
         displayedObject: Optional[Displayable] = None,
         displayMode: Optional[Literal[C.SINGLE, C.OVERLAY]] = None,
-        visibleLayers: Tuple[str, ...] = (),
+        visibleLayers: Sequence[str] = (),
         viewManipLayers: Optional[Literal[C.ALL, C.CURRENT]] = None,
         currentLayer: str = "",
         layerOffset: Optional[float] = None,

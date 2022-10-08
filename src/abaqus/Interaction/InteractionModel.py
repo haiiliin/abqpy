@@ -1,4 +1,4 @@
-from typing import Union, Optional, Tuple
+from typing import Union, Optional, Tuple, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .InteractionContactControlModel import InteractionContactControlModel
@@ -201,7 +201,7 @@ class InteractionModel(
 
         Returns
         -------
-        Tuple[Tuple[str, str, float, bool], ...]
+        Sequence[Tuple[str, str, float, bool]]
             Tuple of tuples, where each tuple holds information, to be used in contact creation as
             follows:
             
@@ -917,7 +917,7 @@ class InteractionModel(
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Tuple[SlidingFormulationAssignment, ...] = None,
+        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] = None,
         mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 
