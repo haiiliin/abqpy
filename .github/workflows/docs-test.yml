@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
     - main
+    - 20**
     types: [opened, reopened, synchronize]
     paths:
     - 'src/**'
@@ -16,6 +17,7 @@ concurrency:
 
 jobs:
   docs-test:
+    if: ${{ github.base_ref == 'main' || contains(github.event.pull_request.labels.*.name, 'conflicts') || contains(github.event.pull_request.labels.*.name, 'docs-test') }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
