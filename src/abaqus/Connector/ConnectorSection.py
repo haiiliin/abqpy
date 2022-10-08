@@ -15,13 +15,8 @@ from ..Section.SectionBase import SectionBase
 from ..UtilityAndView.abaqusConstants import (ABS, ALL, Boolean, COMPONENT_NUMBER,
                                               FORCE, HALF_CYCLE, LINEAR, MAXIMUM,
                                               MOTION_TYPE, NO_INDEPENDENT_COMPONENTS, OFF, ON,
-<<<<<<< HEAD
                                               PENALTY, POSITIVE, PREDEFINED, SPECIFY, SUM,
                                               SymbolicConstant, TABULAR, UNCOUPLED)
-=======
-                                              POSITIVE, PREDEFINED, SPECIFY, SUM,
-                                              SymbolicConstant, TABULAR, UNCOUPLED, VISCOUS)
->>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
 
 
 @abaqus_class_doc

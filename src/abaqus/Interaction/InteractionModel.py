@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-from typing import Union, Optional
-=======
-from typing import Union, Optional, Sequence, Tuple
->>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
+from typing import Union, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .InteractionContactControlModel import InteractionContactControlModel
@@ -875,18 +871,9 @@ class InteractionModel(
         excludedPairs: Optional[RegionPairs] = None, 
         contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
         surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
-<<<<<<< HEAD
         surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None, 
         masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
-=======
-        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
-        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
-        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
-        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] = None,
-        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
->>>>>>> 6ccc9236 (Use Sequence instead of Tuple in the typing annotations (#2566))
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 
         smoothingAssignments: Optional[SmoothingAssignment] = None, 
