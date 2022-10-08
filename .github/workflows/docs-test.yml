@@ -34,11 +34,6 @@ jobs:
       shell: bash -l {0}
       run: |
         sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}
-    - uses: benjlevesque/short-sha@v1.2
-      if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') }}
-      id: short-sha
-      with:
-        length: 7
     - name: Create pull request
       if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') }}
       uses: paygoc6/action-pull-request-another-repo@v1.0.1
