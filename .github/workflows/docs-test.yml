@@ -49,7 +49,7 @@ jobs:
         destination_repo: 'haiiliin/docs.abqpy.com'
         destination_folder: '${{ matrix.language }}'
         destination_base_branch: 'main'
-        destination_head_branch: 'docs/${{ matrix.language }}/pr-${{ github.event.number }}'
+        destination_head_branch: 'docs/${{ matrix.language }}/pr-#${{ github.event.number }}'
         user_email: '41898282+github-actions[bot]@users.noreply.github.com'
         user_name: 'github-actions[bot]'
         pull_request_reviewers: 'haiiliin'
