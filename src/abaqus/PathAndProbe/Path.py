@@ -1,4 +1,4 @@
-from typing import Union, List, Tuple
+from typing import Union, List, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
@@ -19,7 +19,7 @@ class Path:
     #: If **type** = NODE_LIST, **coordinates** is a sequence of tuples of three Floats. This can be
     #: used as the value for the **expression** argument when creating a Path object of **type** =
     #: POINT_LIST.
-    coordinates: List[Tuple[float, ...]] = []
+    coordinates: List[Sequence[float]] = []
 
     #: A String specifying the repository key.
     name: str

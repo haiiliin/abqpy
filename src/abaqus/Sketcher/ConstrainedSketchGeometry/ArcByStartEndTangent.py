@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
@@ -7,7 +7,7 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 @abaqus_class_doc
 class ArcByStartEndTangent(ConstrainedSketchGeometry):
     @abaqus_method_doc
-    def __init__(self, point1: Tuple[float, ...], point2: Tuple[float, ...], vector: tuple):
+    def __init__(self, point1: Sequence[float], point2: Sequence[float], vector: tuple):
         """This method constructs an arc using two vertices. The Arc object is added to the
         geometry repository of the ConstrainedSketch object.
 

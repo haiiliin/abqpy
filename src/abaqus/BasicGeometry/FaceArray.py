@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Union, Tuple, Dict, List
+from typing import Union, Tuple, Sequence, Dict, List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .EdgeArray import EdgeArray
@@ -71,7 +71,7 @@ class FaceArray(List[Face]):
         ],
         normal: tuple = (),
         printWarning: Boolean = True,
-    ) -> Union[Face, Tuple[Face, ...]]:
+    ) -> Union[Face, Sequence[Face]]:
         """This method returns the object or objects in the FaceArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any face
@@ -244,13 +244,13 @@ class FaceArray(List[Face]):
         ...
 
     @abaqus_method_doc
-    def getBoundingBox(self) -> Dict[str, Tuple[float, ...]]:
+    def getBoundingBox(self) -> Dict[str, Sequence[float]]:
         """This method returns a dictionary of two tuples representing minimum and maximum boundary
         values of the bounding box of the minimum size containing the face sequence.
 
         Returns
         -------
-        Dict[str, Tuple[float, ...]]
+        Dict[str, Sequence[float]]
             A Dictionary object with the following items:
             
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z**  -boundary
