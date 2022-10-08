@@ -1,4 +1,4 @@
-from typing import Union, Optional, Tuple
+from typing import Union, Optional, Sequence, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .InteractionContactControlModel import InteractionContactControlModel
@@ -195,13 +195,13 @@ class InteractionModel(
         ...
 
     @abaqus_method_doc
-    def getSurfaceSeparation(self):
+    def getSurfaceSeparation(self) -> Tuple[Tuple[str, str, float, bool]]:
         """This method returns a list of all possible contacts that can be created using the
         ContactDetection method.
 
         Returns
         -------
-        Tuple[Tuple[str, str, float, bool], ...]
+        Tuple[Tuple[str, str, float, bool]]
             Tuple of tuples, where each tuple holds information, to be used in contact creation as
             follows:
             
@@ -917,7 +917,7 @@ class InteractionModel(
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Tuple[SlidingFormulationAssignment, ...] = None,
+        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] = None,
         mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 

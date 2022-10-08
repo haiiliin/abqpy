@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Union, List, Tuple, Dict
+from typing import Union, List, Tuple, Sequence, Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .MeshNode import MeshNode
@@ -234,7 +234,7 @@ class MeshNodeArray(List[MeshNode]):
         ...
 
     @abaqus_method_doc
-    def sequenceFromLabels(self, labels: Tuple[int, ...]) -> MeshNodeArray:
+    def sequenceFromLabels(self, labels: Sequence[int]) -> MeshNodeArray:
         """This method returns the objects in the MeshNodeArray identified using the specified
         labels.
 

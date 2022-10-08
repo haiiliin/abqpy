@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ...UtilityAndView.abaqusConstants import Boolean, OFF
@@ -22,7 +22,7 @@ class ConstrainedSketchImageOptions:
         self,
         imageName: str = "",
         showImage: Boolean = OFF,
-        origin: Tuple[float, ...] = (),
+        origin: Sequence[float] = (),
         xScale: float = 1,
         yScale: float = 1,
         translucency: float = 1,
