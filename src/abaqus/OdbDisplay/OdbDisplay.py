@@ -1,4 +1,4 @@
-from typing import Union, overload, Dict, Optional, Tuple
+from typing import Union, overload, Dict, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .CommonOptions import CommonOptions
@@ -141,7 +141,7 @@ class OdbDisplay:
     #: A tuple of Strings specifying the step label and the frame label when the current step
     #: is user defined. Alternatively, **fieldFrame** maybe specified as a pair of Ints with the
     #: step index and the frame index, when the current step is defined in the analysis.
-    fieldFrame: Tuple[str, ...] = ()
+    fieldFrame: Sequence[str] = ()
 
     #: A tuple specifying variables.
     #: Each item in the sequence consists of a tuple containing the following elements:

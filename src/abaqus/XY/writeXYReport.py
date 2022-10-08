@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Sequence
 
 from abqpy.decorators import abaqus_function_doc
 from .XYData import XYData
@@ -10,7 +10,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON
 
 
 @abaqus_function_doc
-def writeXYReport(fileName: str, xyData: Tuple[XYData, ...], appendMode: Boolean = ON):
+def writeXYReport(fileName: str, xyData: Sequence[XYData], appendMode: Boolean = ON):
     """This method writes an XYData object to a user-defined ASCII file.
 
     .. note:: 

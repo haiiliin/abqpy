@@ -1,4 +1,4 @@
-from typing import Optional, Tuple
+from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -19,7 +19,7 @@ class ConstrainedSketchVertex:
     coords: Optional[float] = None
 
     @abaqus_method_doc
-    def Spot(self, point: Tuple[float, ...]):
+    def Spot(self, point: Sequence[float]):
         """This method creates a spot (construction point) located at the specified coordinates.
 
         .. note:: 

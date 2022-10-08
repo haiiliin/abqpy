@@ -1,4 +1,4 @@
-from typing import Union, Tuple
+from typing import Union, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Arrow import Arrow
@@ -15,8 +15,8 @@ class AnimationUserData(UserDataBase):
     def Arrow(
         self,
         name: str,
-        startPoint: Tuple[float, ...] = (0.0, 0.0),
-        endPoint: Tuple[float, ...] = (0.0, 0.0),
+        startPoint: Sequence[float] = (0.0, 0.0),
+        endPoint: Sequence[float] = (0.0, 0.0),
         startAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         endAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         startHeadStyle: SymbolicConstant = NONE,
@@ -151,7 +151,7 @@ class AnimationUserData(UserDataBase):
         self,
         name: str,
         text: str = "",
-        offset: Tuple[float, ...] = (),
+        offset: Sequence[float] = (),
         anchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         referencePoint: Union[SymbolicConstant, float] = BOTTOM_LEFT,
         rotationAngle: float = 0,

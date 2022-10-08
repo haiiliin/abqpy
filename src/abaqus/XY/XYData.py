@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Union, Optional, Tuple, List, Dict, overload
+from typing import Union, Optional, Tuple, Sequence, List, Dict, overload
 
 from typing_extensions import Literal
 
@@ -370,10 +370,10 @@ class XYData(tuple):
                 Tuple[Tuple[Literal[C.INVARIANT, C.COMPONENT], str], ...],
             ]
         ],
-        elementSets: Union[Tuple[str, ...], str] = ...,
-        elementLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,
-        nodeSets: Union[str, Tuple[str, ...]] = ...,
-        nodeLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,
+        elementSets: Union[Sequence[str], str] = ...,
+        elementLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
+        nodeSets: Union[str, Sequence[str]] = ...,
+        nodeLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
         numericForm: Literal[
             C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
         ] = REAL,
@@ -556,10 +556,10 @@ class XYData(tuple):
             ],
             ...,
         ],
-        elementSets: Union[str, Tuple[str, ...]] = ...,
-        elementLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,
-        nodeSets: Union[str, Tuple[str, ...]] = ...,
-        nodeLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,
+        elementSets: Union[str, Sequence[str]] = ...,
+        elementLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
+        nodeSets: Union[str, Sequence[str]] = ...,
+        nodeLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
         numericForm: Literal[
             C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
         ] = REAL,
