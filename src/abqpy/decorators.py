@@ -1,5 +1,5 @@
 import re
-from typing import Tuple, Sequence
+from typing import Tuple
 from . import __version__ as version
 
 version = version[:4]
