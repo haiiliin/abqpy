@@ -84,7 +84,7 @@ class MeshNode:
 
         Returns
         -------
-        edges: Tuple[MeshEdge, ...]
+        edges: Sequence[MeshEdge]
             A tuple of MeshEdge objects
         """
         ...
@@ -95,7 +95,7 @@ class MeshNode:
 
         Returns
         -------
-        faces: Tuple[MeshFace, ...]
+        faces: Sequence[MeshFace]
             A tuple of MeshFace objects
         """
         ...
@@ -106,7 +106,7 @@ class MeshNode:
 
         Returns
         -------
-        elements: Tuple[MeshElement, ...]
+        elements: Sequence[MeshElement]
             A tuple of MeshElement objects
         """
         ...

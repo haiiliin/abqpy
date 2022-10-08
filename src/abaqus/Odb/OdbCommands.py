@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Sequence
 
 from abqpy.decorators import abaqus_function_doc
 from .FieldOutput import FieldOutput
@@ -51,12 +51,12 @@ def isUpgradeRequiredForOdb(upgradeRequiredOdbPath: str):
 
 
 @abaqus_function_doc
-def maxEnvelop() -> Tuple[FieldOutput, FieldOutput]:
+def maxEnvelop() -> Sequence[FieldOutput]:
     """Retrieve the maximum value of an output variable over a number of fields.
 
     Returns
     -------
-    Tuple[FieldOutput, FieldOutput]
+    Sequence[FieldOutput]
         A sequence of two fieldOutput objects. The first fieldOutput object contains the maximum
         value. The second fieldOutput object contains the index of the field containing the
         maximum value. The index follows the order in which fields are positioned in the list of
@@ -72,12 +72,12 @@ def maxEnvelop() -> Tuple[FieldOutput, FieldOutput]:
 
 
 @abaqus_function_doc
-def minEnvelop() -> Tuple[FieldOutput, FieldOutput]:
+def minEnvelop() -> Sequence[FieldOutput]:
     """Retrieve the minimum value of an output variable over a number of fields.
     
     Returns
     -------
-    Tuple[FieldOutput, FieldOutput]
+    Sequence[FieldOutput]
         A sequence of two fieldOutput objects. The first fieldOutput object contains the minimum
         value. The second fieldOutput object contains the index of the field containing the
         minimum value. The index follows the order in which fields are positioned in the list of

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import List, Tuple, Dict
+from typing import List, Tuple, Sequence, Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .MeshElement import MeshElement
@@ -206,7 +206,7 @@ class MeshElementArray(List[MeshElement]):
         ...
 
     @abaqus_method_doc
-    def sequenceFromLabels(self, labels: Tuple[int, ...]) -> MeshElementArray:
+    def sequenceFromLabels(self, labels: Sequence[int]) -> MeshElementArray:
         """This method returns the objects in the MeshElementArray identified using the specified
         labels.
 

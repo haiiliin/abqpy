@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
@@ -58,7 +58,7 @@ class IgnoredEdge:
         ...
 
     @abaqus_method_doc
-    def getCurvature(self, parameter: float, point: tuple):
+    def getCurvature(self, parameter: float, point: Tuple[float, float, float]):
         """This method returns curvature information at a location on the IgnoredEdge object.
 
         Parameters
