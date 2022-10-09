@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Union, Tuple, Sequence, Dict, List
+from typing import Union, Tuple, Sequence, Dict, List, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .EdgeArray import EdgeArray
@@ -63,15 +63,33 @@ class FaceArray(List[Face]):
         """
         ...
 
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self, coordinates: Tuple[float, float, float], printWarning: Boolean = True,
+    ) -> Face:
+        ...
+
+    @overload
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Union[
-            Tuple[float, float, float], Tuple[Tuple[float, float, float],]
-        ],
-        normal: tuple = (),
+        coordinates: Tuple[Tuple[float, float, float],],
         printWarning: Boolean = True,
-    ) -> Union[Face, Sequence[Face]]:
+    ) -> List[Face]:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self,
+        *coordinates: Tuple[Tuple[float, float, float],],
+        printWarning: Boolean = True,
+    ) -> List[Face]:
+        ...
+
+    @abaqus_method_doc
+    def findAt(self, *args, **kwargs) -> Union[Face, List[Face]]:
         """This method returns the object or objects in the FaceArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any face
