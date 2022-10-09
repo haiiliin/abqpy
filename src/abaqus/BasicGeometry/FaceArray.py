@@ -133,7 +133,8 @@ class FaceArray(List[Face]):
             A :py:class:`~abaqus.BasicGeometry.Face.Face` object.
 
         """
-        ...
+        first_arg = kwargs.get('coordinates', args[0] if args else ((),))
+        return Face() if isinstance(first_arg[0], float) else [Face()]
 
     @abaqus_method_doc
     def getExteriorEdges(self) -> EdgeArray:
