@@ -15,7 +15,7 @@ def run(cae: bool = True) -> None:
     """
     abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
     main = sys.modules['__main__']
-    if not hasattr(main,'__file__') or main.__file__ is None:
+    if not hasattr(main, '__file__') or main.__file__ is None:
         return
 
     filePath = os.path.abspath(main.__file__)
@@ -23,6 +23,7 @@ def run(cae: bool = True) -> None:
 
     try:  # If it is a jupyter notebook
         import ipynbname
+
         filePath = ipynbname.path()
         os.system(f"jupyter nbconvert --to python {filePath}")
         filePath = str(filePath).replace(".ipynb", ".py")
