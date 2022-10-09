@@ -98,7 +98,7 @@ def cli():
     elif args.python is not None:
         proc = "python"
         sep = ""
-        mode = args.script
+        mode = args.script if args.script else ""
 
     cmd = f"{abaqus} {proc} {mode} {' '.join(options)} {sep} {' '.join(args.args)}".strip()
     message = f"Running the following abaqus command: {cmd}"
