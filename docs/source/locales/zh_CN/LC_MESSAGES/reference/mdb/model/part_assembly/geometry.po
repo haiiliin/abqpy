@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-08 00:18+0000\n"
+"POT-Creation-Date: 2022-10-09 00:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -436,7 +436,7 @@ msgstr ""
 #: abaqus.BasicGeometry.Face.Face.getEdges:3
 #: abaqus.BasicGeometry.Face.Face.getVertices:4
 #: abaqus.BasicGeometry.Vertex.Vertex.getEdges:5 of
-msgid ":class:`Tuple[int`, :class:`...]`"
+msgid ":class:`Sequence[int]`"
 msgstr ""
 
 #: abaqus.BasicGeometry.Cell.Cell.getElements:3
@@ -2402,7 +2402,7 @@ msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getCentroid:5
 #: abaqus.BasicGeometry.Face.Face.getNormal:15 of
-msgid ":class:`Tuple[float`, :class:`...]`"
+msgid ":class:`Sequence[float]`"
 msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getCurvature:4 of
@@ -2445,9 +2445,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getEdges:3 of
-msgid ""
-"* :class:`Tuple[int`, :class:`...]` * :class:`A tuple` of "
-":class:`integers.`"
+msgid "* :class:`Sequence[int]` * :class:`A tuple` of :class:`integers.`"
 msgstr ""
 
 #: abaqus.BasicGeometry.Face.Face.getEdges:4 of
@@ -3032,7 +3030,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:10 of
-msgid ":class:`Dict[str`, :class:`Tuple[float`, :class:`...]]`"
+msgid ":class:`Dict[str`, :class:`Sequence[float]]`"
 msgstr ""
 
 #: abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:4 of
@@ -6332,5 +6330,19 @@ msgstr ""
 #~ " keyword argument, findAt accepts as "
 #~ "arguments a sequence of sequence of "
 #~ "floats in the following format::"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[int`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[float`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "* :class:`Tuple[int`, :class:`...]` * "
+#~ ":class:`A tuple` of :class:`integers.`"
+#~ msgstr ""
+
+#~ msgid ":class:`Dict[str`, :class:`Tuple[float`, :class:`...]]`"
 #~ msgstr ""
 

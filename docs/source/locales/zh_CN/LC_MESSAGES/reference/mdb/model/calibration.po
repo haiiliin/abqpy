@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 00:22+0000\n"
+"POT-Creation-Date: 2022-10-09 00:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1072,7 +1072,7 @@ msgstr ""
 #: abaqus.Calibration.Behavior.Behavior.compute_E:12
 #: abaqus.Calibration.Behavior.Behavior.compute_nu:12
 #: abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint:11 of
-msgid ":class:`Tuple[float`, :class:`...]`"
+msgid ":class:`Sequence[float]`"
 msgstr ""
 
 #: abaqus.Calibration.Behavior.Behavior.compute_elasticModulus:1 of
@@ -1149,7 +1149,7 @@ msgid "A sequence of coordinates of the Plastic points.."
 msgstr ""
 
 #: abaqus.Calibration.Behavior.Behavior.compute_plasticPoints:19 of
-msgid ":class:`Tuple[Tuple[float`, :class:`...]]`"
+msgid ":class:`Sequence[Tuple[float]]`"
 msgstr ""
 
 #: abaqus.Calibration.Behavior.Behavior.compute_ultimatePoint:1 of
@@ -1381,7 +1381,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Calibration.Behavior.Behavior.xyDataDissect:19 of
-msgid ":class:`Tuple[str`, :class:`...]`"
+msgid ":class:`Sequence[str]`"
 msgstr ""
 
 #: ../../reference/mdb/model/calibration.rst:37
@@ -1685,5 +1685,14 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ":obj:`typing.Tuple`\\[:class:`python:str`, ...]"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[float`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[Tuple[float`, :class:`...]]`"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[str`, :class:`...]`"
 #~ msgstr ""
 
