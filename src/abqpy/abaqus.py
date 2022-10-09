@@ -46,7 +46,16 @@ def run(cae: bool = True) -> None:
     dict_options: Dict[str, Union[str, bool]] = ast.literal_eval(
         os.environ.get("ABAQUS_CLI_OPTIONS", str(ABAQUS_CLI_OPTIONS))
     )
-    mode = "noGUI" if dict_options.pop("noGUI", True) else "script"
+
+    if cae:
+        proc = "cae"
+        mode = f"noGUI={filePath}" if dict_options.pop("noGUI", True) else f"script={filePath}"
+        sep = '--'
+    else:
+        proc = "python"
+        mode = filePath
+        sep = ''
+
     options = [
         f'{key}={value}' if isinstance(value, str) else f'{key}' if value else ''
         for key, value in dict_options.items()
@@ -54,8 +63,8 @@ def run(cae: bool = True) -> None:
 
     # If in debug mode do not run the abaqus command at all
     if not debug and not make_docs:
-        if cae:
-            os.system(f"{abaqus} cae {mode}={filePath} {' '.join(options)} -- {args}")
-        else:
-            os.system(f"{abaqus} python {filePath} {' '.join(options)} {args}")
+        cmd = f"{abaqus} {proc} {mode} {' '.join(options)} {sep} {' '.join(args)}".strip()
+        message = f"Running the following abaqus command: {cmd}"
+        print("", "-" * len(message), message, "-" * len(message), sep="\n")
+        os.system(cmd)
         sys.exit(0)
