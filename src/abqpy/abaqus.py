@@ -1,5 +1,9 @@
+import ast
 import os
 import sys
+from typing import Dict, Union
+
+ABAQUS_CLI_OPTIONS = {'noGUI': True}
 
 
 def run(cae: bool = True) -> None:
@@ -38,10 +42,20 @@ def run(cae: bool = True) -> None:
     # Check if it is imported by sphinx to generate docs
     make_docs = os.environ.get("ABQPY_MAKE_DOCS", "false").lower() == "true"
 
+    # Alternative to use abaqus command line options at run time
+    dict_options: Dict[str, Union[str, bool]] = ast.literal_eval(
+        os.environ.get("ABAQUS_CLI_OPTIONS", str(ABAQUS_CLI_OPTIONS))
+    )
+    mode = "noGUI" if dict_options.pop("noGUI", True) else "script"
+    options = [
+        f'{key}={value}' if isinstance(value, str) else f'{key}' if value else ''
+        for key, value in dict_options.items()
+    ]
+
     # If in debug mode do not run the abaqus command at all
     if not debug and not make_docs:
         if cae:
-            os.system(f"{abaqus} cae noGUI={filePath} -- {args}")
+            os.system(f"{abaqus} cae {mode}={filePath} {' '.join(options)} -- {args}")
         else:
-            os.system(f"{abaqus} python {filePath} {args}")
+            os.system(f"{abaqus} python {filePath} {' '.join(options)} {args}")
         sys.exit(0)
