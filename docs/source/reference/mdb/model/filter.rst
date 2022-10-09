@@ -13,6 +13,8 @@ In Mdb
 .. autoclass:: abaqus.Filter.FilterModel.FilterModel
     :members:
 
+    .. autoclasstoc::
+
 In Odb
 ~~~~~~
 
