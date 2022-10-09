@@ -31,8 +31,8 @@ Assign properties to the material
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 Density
 ~~~~~~~

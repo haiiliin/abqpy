@@ -17,8 +17,8 @@ Create DiagnosticPrint, Monitor and Restart information for Step
 .. autoclass:: abaqus.StepOutput.OutputStep.OutputStep
     :members:
 
-Object features
----------------
+Classes
+-------
 
 DiagnosticPrint
 ~~~~~~~~~~~~~~~

@@ -43,8 +43,8 @@ Create regions for Assembly
     :members:
 
 
-Object features
----------------
+Classes
+-------
 
 Region features for Part
 ~~~~~~~~~~~~~~~~~~~~~~~~

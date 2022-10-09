@@ -11,8 +11,8 @@ Create predefined fields
 .. autoclass:: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel
     :members:
 
-Object features
----------------
+Classes
+-------
 
 Field
 ~~~~~

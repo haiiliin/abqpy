@@ -40,8 +40,8 @@ Create models
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 Model
 ~~~~~

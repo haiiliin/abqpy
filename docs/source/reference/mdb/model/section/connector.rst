@@ -12,8 +12,8 @@ Create connectors
     :members:
 
 
-Object features
----------------
+Classes
+-------
 
 CDCTerm
 ~~~~~~~

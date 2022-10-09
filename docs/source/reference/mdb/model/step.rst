@@ -17,8 +17,8 @@ Create steps
 .. autoclass:: abaqus.Step.StepModel.StepModel
     :members:
 
-Object features
----------------
+Classes
+-------
 
 Step
 ~~~~

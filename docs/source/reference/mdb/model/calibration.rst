@@ -14,8 +14,8 @@ Create material calibrations
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 Calibration
 ~~~~~~~~~~~

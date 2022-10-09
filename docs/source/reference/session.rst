@@ -19,8 +19,8 @@ Session commands are used to create objects that are not stored with the model; 
    session/print
    session/xy
 
-Object features
----------------
+Classes
+-------
 
 Session
 ~~~~~~~

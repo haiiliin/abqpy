@@ -10,8 +10,8 @@ Create input files
 .. autoclass:: abaqus.InputFileParser.InputFile.InputFile
     :noindex:
 
-Object features
----------------
+Classes
+-------
 
 AbaqusNDarray
 ~~~~~~~~~~~~~

@@ -14,8 +14,8 @@ Create constrained sketches
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 ConstrainedSketch
 ~~~~~~~~~~~~~~~~~

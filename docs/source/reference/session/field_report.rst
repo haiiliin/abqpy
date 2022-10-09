@@ -12,8 +12,8 @@ Create field reports in Session
     :members:
     
 
-Object features
----------------
+Classes
+-------
 
 FieldReportOptions
 ~~~~~~~~~~~~~~~~~~

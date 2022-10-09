@@ -14,8 +14,8 @@ Create boundary conditions
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 BoundaryCondition
 ~~~~~~~~~~~~~~~~~

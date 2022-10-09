@@ -11,8 +11,8 @@ Create engineering features
 .. autoclass:: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature
     :members:
 
-Object features
----------------
+Classes
+-------
 
 Crack
 ~~~~~

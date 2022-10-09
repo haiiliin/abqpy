@@ -17,8 +17,8 @@ Viewport
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 Annotation features of Viewport
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

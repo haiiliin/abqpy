@@ -14,8 +14,8 @@ Create parts
 .. autoclass:: abaqus.Part.PartBase.PartBase
     :members:
 
-Object features
----------------
+Classes
+-------
 
 Part
 ~~~~

@@ -14,8 +14,8 @@ Create instances
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 Assembly
 ~~~~~~~~

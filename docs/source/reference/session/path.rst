@@ -22,8 +22,8 @@ Create free bodies in Session
 
     .. autoclasstoc::
 
-Object features
----------------
+Classes
+-------
 
 CurrentProbeValues
 ~~~~~~~~~~~~~~~~~~

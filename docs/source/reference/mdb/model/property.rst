@@ -11,8 +11,8 @@ Create properties for Part
 .. autoclass:: abaqus.Property.PropertyPart.PropertyPart
     :members:
 
-Object features
----------------
+Classes
+-------
 
 CompositeLayup
 ~~~~~~~~~~~~~~
