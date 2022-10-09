@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 09:59+0000\n"
+"POT-Creation-Date: 2022-10-09 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4826,7 +4826,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:22
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:22
-msgid ":class:`Tuple[dict`, :class:`...]`"
+msgid ":class:`Sequence[dict]`"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:5
@@ -4842,7 +4842,7 @@ msgid "A sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects."
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:11
-msgid ":class:`Tuple[Face`, :class:`...]`"
+msgid ":class:`Sequence[Face]`"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:1
@@ -5053,7 +5053,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections:12
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections:12
-msgid ":class:`Tuple[str`, :class:`...]`"
+msgid ":class:`Sequence[str]`"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getUnmeshedRegions:4
@@ -7460,7 +7460,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:34
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:31
-msgid ":class:`Tuple[PartInstance`, :class:`...]`"
+msgid ":class:`Sequence[PartInstance]`"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:10
