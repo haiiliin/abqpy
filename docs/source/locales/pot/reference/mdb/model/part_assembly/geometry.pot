@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-08 00:18+0000\n"
+"POT-Creation-Date: 2022-10-09 00:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -410,7 +410,7 @@ msgstr ""
 #: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face.getEdges:3
 #: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face.getVertices:4
 #: ../../../../src/abaqus/BasicGeometry/Vertex.py:docstring of abaqus.BasicGeometry.Vertex.Vertex.getEdges:5
-msgid ":class:`Tuple[int`, :class:`...]`"
+msgid ":class:`Sequence[int]`"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/Cell.py:docstring of abaqus.BasicGeometry.Cell.Cell.getElements:3
@@ -1894,7 +1894,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face.getCentroid:5
 #: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face.getNormal:15
-msgid ":class:`Tuple[float`, :class:`...]`"
+msgid ":class:`Sequence[float]`"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face.getCurvature:4
@@ -1918,7 +1918,7 @@ msgid "A dictionary with keys 'evaluationPoint', 'principalAxis1', 'principalAxi
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face.getEdges:3
-msgid "* :class:`Tuple[int`, :class:`...]` * :class:`A tuple` of :class:`integers.`"
+msgid "* :class:`Sequence[int]` * :class:`A tuple` of :class:`integers.`"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face.getEdges:4
@@ -2291,7 +2291,7 @@ msgid "**high**: a tuple of three floats representing the maximum **X** -, **Y**
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:10
-msgid ":class:`Dict[str`, :class:`Tuple[float`, :class:`...]]`"
+msgid ":class:`Dict[str`, :class:`Sequence[float]]`"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:4
