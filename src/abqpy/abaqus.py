@@ -43,13 +43,13 @@ def run(cae: bool = True) -> None:
     make_docs = os.environ.get("ABQPY_MAKE_DOCS", "false").lower() == "true"
 
     # Alternative to use abaqus command line options at run time
-    dict_options: Dict[str, Union[str, bool]] = ast.literal_eval(
+    abq_cmd_opt: Dict[str, Union[str, bool]] = ast.literal_eval(
         os.environ.get("ABAQUS_COMMAND_OPTIONS", str(ABAQUS_COMMAND_OPTIONS))
     )
 
     if cae:
         proc = "cae"
-        mode = f"noGUI={filePath}" if dict_options.pop("noGUI", True) else f"script={filePath}"
+        mode = f"noGUI={filePath}" if abq_cmd_opt.pop("noGUI", True) else f"script={filePath}"
         sep = '--'
     else:
         proc = "python"
@@ -58,7 +58,7 @@ def run(cae: bool = True) -> None:
 
     options = [
         f'{key}={value}' if isinstance(value, str) else f'{key}' if value else ''
-        for key, value in dict_options.items()
+        for key, value in abq_cmd_opt.items()
     ]
 
     # If in debug mode do not run the abaqus command at all
