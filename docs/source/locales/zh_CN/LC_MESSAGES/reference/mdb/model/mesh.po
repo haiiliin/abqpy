@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 00:22+0000\n"
+"POT-Creation-Date: 2022-10-09 00:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3287,7 +3287,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:11
 #: abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:11 of
-msgid ":class:`Tuple[Face`, :class:`...]`"
+msgid ":class:`Sequence[Face]`"
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:4 of
@@ -4927,7 +4927,7 @@ msgstr ""
 #: abaqus.Mesh.MeshEdge.MeshEdge.getElemFaces:4
 #: abaqus.Mesh.MeshElement.MeshElement.getElemFaces:4
 #: abaqus.Mesh.MeshNode.MeshNode.getElemFaces:4 of
-msgid ":class:`Tuple[MeshFace`, :class:`...]`"
+msgid ":class:`Sequence[MeshFace]`"
 msgstr ""
 
 #: abaqus.Mesh.MeshEdge.MeshEdge.getElements:3 of
@@ -4937,7 +4937,7 @@ msgstr ""
 #: abaqus.Mesh.MeshEdge.MeshEdge.getElements:4
 #: abaqus.Mesh.MeshFace.MeshFace.getElements:4
 #: abaqus.Mesh.MeshNode.MeshNode.getElements:4 of
-msgid ":class:`Tuple[MeshElement`, :class:`...]`"
+msgid ":class:`Sequence[MeshElement]`"
 msgstr ""
 
 #: abaqus.Mesh.MeshEdge.MeshEdge.getElementsViaTopology:5 of
@@ -4986,7 +4986,7 @@ msgstr ""
 #: abaqus.Mesh.MeshEdge.MeshEdge.getNodes:4
 #: abaqus.Mesh.MeshElement.MeshElement.getNodes:4
 #: abaqus.Mesh.MeshFace.MeshFace.getNodes:4 of
-msgid ":class:`Tuple[MeshNode`, :class:`...]`"
+msgid ":class:`Sequence[MeshNode]`"
 msgstr ""
 
 #: abaqus.Mesh.MeshEdge.MeshEdge.getNodesViaTopology:5 of
@@ -5664,7 +5664,7 @@ msgstr ""
 #: abaqus.Mesh.MeshElement.MeshElement.getElemEdges:4
 #: abaqus.Mesh.MeshFace.MeshFace.getElemEdges:4
 #: abaqus.Mesh.MeshNode.MeshNode.getElemEdges:4 of
-msgid ":class:`Tuple[MeshEdge`, :class:`...]`"
+msgid ":class:`Sequence[MeshEdge]`"
 msgstr ""
 
 #: abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge:6 of
@@ -6657,7 +6657,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Mesh.MeshFace.MeshFace.getNormal:5 of
-msgid ":class:`Tuple[float`, :class:`...]`"
+msgid ":class:`Sequence[float]`"
 msgstr ""
 
 #: ../../reference/mdb/model/mesh.rst:75
@@ -12280,5 +12280,23 @@ msgstr ""
 #~ "numElements (Int); average, worst (Float); "
 #~ "worstElement  (:py:class:`~abaqus.Mesh.MeshElement.MeshElement`"
 #~ " object) ."
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[Face`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[MeshFace`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[MeshElement`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[MeshNode`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[MeshEdge`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[float`, :class:`...]`"
 #~ msgstr ""
 
