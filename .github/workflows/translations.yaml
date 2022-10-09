@@ -7,7 +7,7 @@ on:
     paths:
       - 'docs/source/locales/update.sh'
   schedule:
-    - cron: "0 0 * * *" #runs at 00:00 UTC everyday
+    - cron: "0 0 * * 0" # run once a week
   workflow_dispatch:
 
 jobs:
