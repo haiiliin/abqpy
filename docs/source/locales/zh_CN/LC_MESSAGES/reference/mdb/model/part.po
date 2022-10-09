@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 10:09+0000\n"
+"POT-Creation-Date: 2022-10-09 00:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2201,7 +2201,7 @@ msgid "The location of the centroid of a given cell or group of cells."
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getCentroid:21 of
-msgid ":class:`Tuple[float`, :class:`...]`"
+msgid ":class:`Sequence[float]`"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1 abaqus.Part.PartBase.PartBase.getCoordinates:1
@@ -2330,7 +2330,7 @@ msgid "**cells** -- Sequence of Cell objects."
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getFeatureCells:10 of
-msgid ":class:`Tuple[Cell`, :class:`...]`"
+msgid ":class:`Sequence[Cell]`"
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getFeatureCells:12
@@ -2359,7 +2359,7 @@ msgid "**edges** -- Sequence of Edge objects."
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getFeatureEdges:10 of
-msgid ":class:`Tuple[Edge`, :class:`...]`"
+msgid ":class:`Sequence[Edge]`"
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.renumberElement
@@ -2455,7 +2455,7 @@ msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:11
 #: abaqus.Part.PartBase.PartBase.getFeatureFaces:10 of
-msgid ":class:`Tuple[Face`, :class:`...]`"
+msgid ":class:`Sequence[Face]`"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -2477,7 +2477,7 @@ msgid "**vertices** -- Sequence of ConstrainedSketchVertex objects."
 msgstr ""
 
 #: abaqus.Part.PartBase.PartBase.getFeatureVertices:10 of
-msgid ":class:`Tuple[ConstrainedSketchVertex`, :class:`...]`"
+msgid ":class:`Sequence[ConstrainedSketchVertex]`"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1 abaqus.Part.PartBase.PartBase.getLength:1 of
@@ -26045,5 +26045,20 @@ msgstr ""
 #~ "A Float specifying the extrusion depth."
 #~ " Possible values are 10-5 ≤ **depth**"
 #~ " ≤ 105."
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[float`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[Cell`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[Edge`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[Face`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[ConstrainedSketchVertex`, :class:`...]`"
 #~ msgstr ""
 
