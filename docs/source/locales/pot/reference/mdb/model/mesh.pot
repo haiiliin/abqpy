@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2016\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 09:59+0000\n"
+"POT-Creation-Date: 2022-10-09 00:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2336,7 +2336,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:11
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.getIncompatibleMeshInterfaces:11
-msgid ":class:`Tuple[Face`, :class:`...]`"
+msgid ":class:`Sequence[Face]`"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshAssembly.py:docstring of abaqus.Mesh.MeshAssembly.MeshAssembly.getMeshControl:4
@@ -3400,7 +3400,7 @@ msgstr ""
 #: ../../../../src/abaqus/Mesh/MeshEdge.py:docstring of abaqus.Mesh.MeshEdge.MeshEdge.getElemFaces:4
 #: ../../../../src/abaqus/Mesh/MeshElement.py:docstring of abaqus.Mesh.MeshElement.MeshElement.getElemFaces:4
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.getElemFaces:4
-msgid ":class:`Tuple[MeshFace`, :class:`...]`"
+msgid ":class:`Sequence[MeshFace]`"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshEdge.py:docstring of abaqus.Mesh.MeshEdge.MeshEdge.getElements:3
@@ -3410,7 +3410,7 @@ msgstr ""
 #: ../../../../src/abaqus/Mesh/MeshEdge.py:docstring of abaqus.Mesh.MeshEdge.MeshEdge.getElements:4
 #: ../../../../src/abaqus/Mesh/MeshFace.py:docstring of abaqus.Mesh.MeshFace.MeshFace.getElements:4
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.getElements:4
-msgid ":class:`Tuple[MeshElement`, :class:`...]`"
+msgid ":class:`Sequence[MeshElement]`"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshEdge.py:docstring of abaqus.Mesh.MeshEdge.MeshEdge.getElementsViaTopology:5
@@ -3451,7 +3451,7 @@ msgstr ""
 #: ../../../../src/abaqus/Mesh/MeshEdge.py:docstring of abaqus.Mesh.MeshEdge.MeshEdge.getNodes:4
 #: ../../../../src/abaqus/Mesh/MeshElement.py:docstring of abaqus.Mesh.MeshElement.MeshElement.getNodes:4
 #: ../../../../src/abaqus/Mesh/MeshFace.py:docstring of abaqus.Mesh.MeshFace.MeshFace.getNodes:4
-msgid ":class:`Tuple[MeshNode`, :class:`...]`"
+msgid ":class:`Sequence[MeshNode]`"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshEdge.py:docstring of abaqus.Mesh.MeshEdge.MeshEdge.getNodesViaTopology:5
@@ -3999,7 +3999,7 @@ msgstr ""
 #: ../../../../src/abaqus/Mesh/MeshElement.py:docstring of abaqus.Mesh.MeshElement.MeshElement.getElemEdges:4
 #: ../../../../src/abaqus/Mesh/MeshFace.py:docstring of abaqus.Mesh.MeshFace.MeshFace.getElemEdges:4
 #: ../../../../src/abaqus/Mesh/MeshNode.py:docstring of abaqus.Mesh.MeshNode.MeshNode.getElemEdges:4
-msgid ":class:`Tuple[MeshEdge`, :class:`...]`"
+msgid ":class:`Sequence[MeshEdge]`"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshElement.py:docstring of abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge:6
@@ -4628,7 +4628,7 @@ msgid "**normal** -- A tuple of 3 floats representing the unit normal vector. If
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshFace.py:docstring of abaqus.Mesh.MeshFace.MeshFace.getNormal:5
-msgid ":class:`Tuple[float`, :class:`...]`"
+msgid ":class:`Sequence[float]`"
 msgstr ""
 
 #: ../../reference/mdb/model/mesh.rst:75

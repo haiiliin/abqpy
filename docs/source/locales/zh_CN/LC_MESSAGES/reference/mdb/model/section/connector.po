@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 00:22+0000\n"
+"POT-Creation-Date: 2022-10-09 00:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,8 +53,6 @@ msgstr ""
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity:5
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential:5
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop:4
-#: abaqus.Connector.ConnectorSection.ConnectorSection.DerivedComponent:4
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:4
 #: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm:4 of
 msgid "This function can be accessed by::"
 msgstr ""
@@ -78,7 +76,6 @@ msgstr ""
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior
 #: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm of
 msgid "Parameters"
 msgstr ""
@@ -304,8 +301,6 @@ msgstr ""
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop
-#: abaqus.Connector.ConnectorSection.ConnectorSection.DerivedComponent
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior
 #: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm of
 msgid "Returns"
 msgstr ""
@@ -328,8 +323,6 @@ msgstr ""
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop
-#: abaqus.Connector.ConnectorSection.ConnectorSection.DerivedComponent
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior
 #: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm of
 msgid "Return type"
 msgstr ""
@@ -361,7 +354,6 @@ msgstr ""
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPlasticity
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorPotential
 #: abaqus.Connector.ConnectorSection.ConnectorSection.ConnectorStop
-#: abaqus.Connector.ConnectorSection.ConnectorSection.DerivedComponent
 #: abaqus.Connector.ConnectorStop.ConnectorStop.setValues
 #: abaqus.Connector.DerivedComponent.DerivedComponent.CDCTerm
 #: abaqus.Connector.DerivedComponent.DerivedComponent.setValues of
@@ -1141,165 +1133,6 @@ msgstr ""
 msgid ":class:`ConnectorStop`"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent:1
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.DerivedComponent:1
-#: abaqus.Connector.ConnectorSection.ConnectorSection.DerivedComponent:1 of
-msgid "This method creates a DerivedComponent object."
-msgstr ""
-
-#: ../../None:11:<autosummary>:1 ../../docstring
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent:9
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.derivedComponent:1
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.DerivedComponent:9
-#: abaqus.Connector.ConnectorSection.ConnectorSection.DerivedComponent:15 of
-msgid ""
-"A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` "
-"object."
-msgstr ""
-
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent:10
-#: abaqus.Connector.ConnectorPotential.ConnectorPotential.DerivedComponent:10
-#: abaqus.Connector.ConnectorSection.ConnectorSection.DerivedComponent:16 of
-msgid ":class:`DerivedComponent`"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1 ../../None:5:<autosummary>:1
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:1
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:1 of
-msgid "This method creates a TangentialBehavior object."
-msgstr ""
-
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:10
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:10
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior:40 of
-msgid ""
-"Check `TangentialBehavior on help.3ds.com/2016 "
-"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tangentialbehaviorpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:13
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:13
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.formulation:1 of
-msgid ""
-"A SymbolicConstant specifying the friction coefficient formulation. "
-"Possible values are PENALTY and EXPONENTIAL_DECAY. The default value is "
-"PENALTY."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:16
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:16
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.slipRateDependency:1
-#: of
-msgid ""
-"A Boolean specifying whether the data depend on slip rate. The default "
-"value is OFF."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:18
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:18
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.pressureDependency:1
-#: of
-msgid ""
-"A Boolean specifying whether the data depend on contact pressure. The "
-"default value is OFF."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:21
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:21
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.temperatureDependency:1
-#: of
-msgid ""
-"A Boolean specifying whether the data depend on temperature. The default "
-"value is OFF."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:23
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:23
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.dependencies:1 of
-msgid ""
-"An Int specifying the number of field variables for the data. The default"
-" value is 0."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:25
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:25
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.exponentialDecayDefinition:1
-#: of
-msgid ""
-"A SymbolicConstant specifying the exponential decay definition for the "
-"data. Possible values are COEFFICIENTS and TEST_DATA. The default value "
-"is COEFFICIENTS."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:28
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:28
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.shearStressLimit:1 of
-msgid ""
-"None or a Float specifying no upper limit or the friction coefficient "
-"shear stress limit. The default value is None."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:31
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:31
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.maximumElasticSlip:1
-#: of
-msgid ""
-"A SymbolicConstant specifying the method for modifying the allowable "
-"elastic slip. Possible values are FRACTION and ABSOLUTE_DISTANCE. The "
-"default value is FRACTION.This argument applies only to Abaqus/Standard "
-"analyses."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:35
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:35
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.fraction:1 of
-msgid ""
-"A Float specifying the ratio of the allowable maximum elastic slip to a "
-"characteristic model dimension. The default value is 10-4.This argument "
-"applies only to Abaqus/Standard analyses."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:39
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:39
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.absoluteDistance:1 of
-msgid ""
-"None or a Float specifying the absolute magnitude of the allowable "
-"elastic slip. The default value is None.This argument applies only to "
-"Abaqus/Standard analyses."
-msgstr ""
-
-#: ../../docstring
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:42
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:42
-#: abaqus.Connector.TangentialBehavior.TangentialBehavior.table:1 of
-msgid ""
-"A sequence of sequences of Floats specifying the tangential properties. "
-"Items in the table data are described below. The default value is an "
-"empty sequence."
-msgstr ""
-
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:45 of
-msgid ""
-"A :py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior` "
-"object. ."
-msgstr ""
-
-#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:46
-#: abaqus.Connector.ConnectorSection.ConnectorSection.TangentialBehavior:46 of
-msgid ":class:`TangentialBehavior`"
-msgstr ""
-
 #: ../../reference/mdb/model/section/connector.rst:16
 msgid "Object features"
 msgstr ""
@@ -1741,6 +1574,15 @@ msgid ""
 "<abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.derivedComponent>`\\"
 msgstr ""
 
+#: ../../None:11:<autosummary>:1 ../../docstring
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent:9
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.derivedComponent:1
+#: abaqus.Connector.ConnectorPotential.ConnectorPotential.DerivedComponent:9 of
+msgid ""
+"A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` "
+"object."
+msgstr ""
+
 #: ../../None:11:<autosummary>:1
 msgid ""
 ":py:obj:`evolutionPotentials "
@@ -1798,11 +1640,23 @@ msgid ""
 " \\(\\[formulation\\, ...\\]\\)"
 msgstr ""
 
+#: ../../None:4:<autosummary>:1 ../../None:5:<autosummary>:1
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:1
+#: of
+msgid "This method creates a TangentialBehavior object."
+msgstr ""
+
 #: ../../None:5:<autosummary>:1
 msgid ""
 ":py:obj:`DerivedComponent "
 "<abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent>`\\"
 " \\(\\)"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent:1
+#: abaqus.Connector.ConnectorPotential.ConnectorPotential.DerivedComponent:1 of
+msgid "This method creates a DerivedComponent object."
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -1812,12 +1666,130 @@ msgid ""
 " \\(\\[useBehRegSettings\\, ...\\]\\)"
 msgstr ""
 
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.DerivedComponent:10
+#: abaqus.Connector.ConnectorPotential.ConnectorPotential.DerivedComponent:10
+#: of
+msgid ":class:`DerivedComponent`"
+msgstr ""
+
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:10
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior:40 of
+msgid ""
+"Check `TangentialBehavior on help.3ds.com/2016 "
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tangentialbehaviorpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:13
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior.formulation:1 of
+msgid ""
+"A SymbolicConstant specifying the friction coefficient formulation. "
+"Possible values are PENALTY and EXPONENTIAL_DECAY. The default value is "
+"PENALTY."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:16
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior.slipRateDependency:1
+#: of
+msgid ""
+"A Boolean specifying whether the data depend on slip rate. The default "
+"value is OFF."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:18
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior.pressureDependency:1
+#: of
+msgid ""
+"A Boolean specifying whether the data depend on contact pressure. The "
+"default value is OFF."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:21
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior.temperatureDependency:1
+#: of
+msgid ""
+"A Boolean specifying whether the data depend on temperature. The default "
+"value is OFF."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:23
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior.dependencies:1 of
+msgid ""
+"An Int specifying the number of field variables for the data. The default"
+" value is 0."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:25
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior.exponentialDecayDefinition:1
+#: of
+msgid ""
+"A SymbolicConstant specifying the exponential decay definition for the "
+"data. Possible values are COEFFICIENTS and TEST_DATA. The default value "
+"is COEFFICIENTS."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:28
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior.shearStressLimit:1 of
+msgid ""
+"None or a Float specifying no upper limit or the friction coefficient "
+"shear stress limit. The default value is None."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:31
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior.maximumElasticSlip:1
+#: of
+msgid ""
+"A SymbolicConstant specifying the method for modifying the allowable "
+"elastic slip. Possible values are FRACTION and ABSOLUTE_DISTANCE. The "
+"default value is FRACTION.This argument applies only to Abaqus/Standard "
+"analyses."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:35
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior.fraction:1 of
+msgid ""
+"A Float specifying the ratio of the allowable maximum elastic slip to a "
+"characteristic model dimension. The default value is 10-4.This argument "
+"applies only to Abaqus/Standard analyses."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:39
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior.absoluteDistance:1 of
+msgid ""
+"None or a Float specifying the absolute magnitude of the allowable "
+"elastic slip. The default value is None.This argument applies only to "
+"Abaqus/Standard analyses."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:42
+#: abaqus.Connector.TangentialBehavior.TangentialBehavior.table:1 of
+msgid ""
+"A sequence of sequences of Floats specifying the tangential properties. "
+"Items in the table data are described below. The default value is an "
+"empty sequence."
+msgstr ""
+
 #: ../../None:11:<autosummary>:1 ../../None:21:<autosummary>:1 ../../docstring
 #: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:45
 #: abaqus.Connector.ConnectorFriction.ConnectorFriction.tangentialBehavior:1 of
 msgid ""
 "A :py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior` "
 "object."
+msgstr ""
+
+#: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption.TangentialBehavior:46
+#: of
+msgid ":class:`TangentialBehavior`"
 msgstr ""
 
 #: ../../reference/mdb/model/section/connector.rst:43
@@ -5212,5 +5184,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ":obj:`CDCTerm`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A "
+#~ ":py:class:`~abaqus.Connector.TangentialBehavior.TangentialBehavior`"
+#~ " object. ."
 #~ msgstr ""
 
