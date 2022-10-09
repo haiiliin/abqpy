@@ -3,7 +3,7 @@ import os
 import sys
 from typing import Dict, Union
 
-ABAQUS_CLI_OPTIONS = {'noGUI': True}
+ABAQUS_COMMAND_OPTIONS = {'noGUI': True}
 
 
 def run(cae: bool = True) -> None:
@@ -44,7 +44,7 @@ def run(cae: bool = True) -> None:
 
     # Alternative to use abaqus command line options at run time
     dict_options: Dict[str, Union[str, bool]] = ast.literal_eval(
-        os.environ.get("ABAQUS_CLI_OPTIONS", str(ABAQUS_CLI_OPTIONS))
+        os.environ.get("ABAQUS_COMMAND_OPTIONS", str(ABAQUS_COMMAND_OPTIONS))
     )
 
     if cae:
