@@ -15,8 +15,8 @@ Mdb commands are used to create and upgrade an Abaqus model database that stores
    mdb/edit_mesh
 
 
-Object features
----------------
+Classes
+-------
 
 Mdb
 ~~~
