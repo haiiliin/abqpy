@@ -10,6 +10,7 @@ Create paths in Session
 
 .. autoclass:: abaqus.PathAndProbe.PathSession.PathSession
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -19,6 +20,7 @@ Create free bodies in Session
 
 .. autoclass:: abaqus.PathAndProbe.FreeBody.FreeBody
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -30,6 +32,7 @@ CurrentProbeValues
 
 .. autoclass:: abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -38,6 +41,7 @@ NodeQuery
 
 .. autoclass:: abaqus.PathAndProbe.NodeQuery.NodeQuery
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -46,6 +50,7 @@ Path
 
 .. autoclass:: abaqus.PathAndProbe.Path.Path
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -54,6 +59,7 @@ ProbeOptions
 
 .. autoclass:: abaqus.PathAndProbe.ProbeOptions.ProbeOptions
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -62,6 +68,7 @@ ProbeReport
 
 .. autoclass:: abaqus.PathAndProbe.ProbeReport.ProbeReport
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -70,6 +77,7 @@ SelectedProbeValues
 
 .. autoclass:: abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -78,6 +86,7 @@ Spectrum
 
 .. autoclass:: abaqus.PathAndProbe.Spectrum.Spectrum
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -86,6 +95,7 @@ Stream
 
 .. autoclass:: abaqus.PathAndProbe.Stream.Stream
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
