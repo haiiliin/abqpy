@@ -42,7 +42,6 @@ AcisMdb
 .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
    :members:
    :special-members: __init__
-   :noindex:
 
    .. autoclasstoc::
 
@@ -52,6 +51,5 @@ JobMdb
 .. autoclass:: abaqus.Job.JobMdb.JobMdb
    :members:
    :special-members: __init__
-   :noindex:
 
    .. autoclasstoc::
