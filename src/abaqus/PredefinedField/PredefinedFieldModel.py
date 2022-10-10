@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, Union
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -7,6 +7,7 @@ from .FluidCavityPressure import FluidCavityPressure
 from .InitialState import InitialState
 from .KinematicHardening import KinematicHardening
 from .MaterialAssignment import MaterialAssignment
+from .PorePressure import PorePressure
 from .Stress import Stress
 from .Temperature import Temperature
 from .Velocity import Velocity
@@ -14,7 +15,7 @@ from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT_THROUGH_THICKNESS,
+from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT_THROUGH_THICKNESS, CONSTANT_RATIO,
                                               KINEMATIC_HARDENING, LAST_STEP, MAGNITUDE, OFF,
                                               STEP_END, SymbolicConstant, UNIFORM, UNSET)
 
@@ -228,6 +229,86 @@ class PredefinedFieldModel(ModelBase):
         """
         self.predefinedFields[name] = predefinedField = MaterialAssignment(
             name, instanceList, useFields, assignmentList, fieldList, colorList
+        )
+        return predefinedField
+
+    @abaqus_method_doc
+    def PorePressure(
+        self,
+        name: str,
+        region: Region,
+        distributionType: Literal[C.UNIFORM, C.FROM_FILE, C.USER_DEFINED] = UNIFORM,
+        porePressure1: float = ...,
+        porePressure2: float = ...,
+        coord1: float = ...,
+        coord2: float = ...,
+        pressure2Distribution: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
+        pressure2Field: str = ...,
+        variation: Literal[C.CONSTANT_RATIO, C.VARIABLE_RATIO] = CONSTANT_RATIO,
+        fileName: str = ...,
+        increment: Union[int, Literal[C.LAST_INCREMENT]] = ...,
+        step: Union[int, Literal[C.LAST_STEP]] = ...,
+        interpolate: bool = ...,
+    ) -> PorePressure:
+        """This method creates a PorePressure predefined field object.
+
+        .. note::
+        This function can be accessed by::
+
+            mdb.models[name].PorePressure
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        region
+            A Region object specifying the region to which the predefined field is applied. Region
+            is ignored if the predefined field has **distributionType** = FROM_FILE.
+        distributionType
+            A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM,
+            FROM_FILE and USER_DEFINED. The default value is UNIFORM.
+        porePressure1
+            ...
+        porePressure2
+            ...
+        coord1
+            ...
+        coord2
+            ...
+        pressure2Distribution
+            ...
+        pressure2Field
+            ...
+        variation
+            ...
+        fileName
+            ...
+        increment
+            ...
+        step
+            ...
+        interpolate
+            ...
+
+        Returns
+        -------
+            A PorePressure object.
+        """
+        self.predefinedFields[name] = predefinedField = PorePressure(
+            name,
+            region,
+            distributionType,
+            porePressure1,
+            porePressure2,
+            coord1,
+            coord2,
+            pressure2Distribution,
+            pressure2Field,
+            variation,
+            fileName,
+            increment,
+            step,
+            interpolate,
         )
         return predefinedField
 
