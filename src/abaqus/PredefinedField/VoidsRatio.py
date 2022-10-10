@@ -105,7 +105,7 @@ class VoidsRatio(PredefinedField):
         step: Union[int, Literal[C.LAST_STEP]] = ...,
         interpolate: bool = ...,
     ) -> None:
-        """This method modifies the PorePressure object.
+        """This method modifies the VoidsRatio object.
 
         Parameters
         ----------
