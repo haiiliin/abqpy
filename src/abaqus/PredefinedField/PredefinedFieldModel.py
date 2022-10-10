@@ -336,7 +336,7 @@ class PredefinedFieldModel(ModelBase):
         beginIncrement: Optional[SymbolicConstant] = None,
         endStep: Optional[SymbolicConstant] = None,
         endIncrement: Optional[SymbolicConstant] = None,
-        interpolate: SymbolicConstant = OFF,
+        interpolate: Union[SymbolicConstant, Boolean] = OFF,
         magnitudes: str = "",
         absoluteExteriorTolerance: float = 0,
         exteriorTolerance: float = 0,
@@ -606,7 +606,7 @@ class PredefinedFieldModel(ModelBase):
         beginIncrement: Optional[SymbolicConstant] = None,
         endStep: Optional[SymbolicConstant] = None,
         endIncrement: Optional[SymbolicConstant] = None,
-        interpolate: SymbolicConstant = OFF,
+        interpolate: Union[SymbolicConstant, Boolean] = OFF,
         magnitudes: str = "",
     ):
         """This method creates a Field object.
