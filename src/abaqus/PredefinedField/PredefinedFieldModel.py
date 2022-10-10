@@ -1,4 +1,5 @@
 from typing import Optional
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Field import Field
@@ -12,6 +13,7 @@ from .Velocity import Velocity
 from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT_THROUGH_THICKNESS,
                                               KINEMATIC_HARDENING, LAST_STEP, MAGNITUDE, OFF,
                                               STEP_END, SymbolicConstant, UNIFORM, UNSET)
@@ -439,14 +441,14 @@ class PredefinedFieldModel(ModelBase):
         self,
         name: str,
         region: Region,
-        distributionType: SymbolicConstant = UNIFORM,
-        sigma11: Optional[float] = None,
-        sigma22: Optional[float] = None,
-        sigma33: Optional[float] = None,
-        sigma12: Optional[float] = None,
-        sigma13: Optional[float] = None,
-        sigma23: Optional[float] = None,
-    ):
+        distributionType: Literal[C.UNIFORM, C.FROM_FILE] = UNIFORM,
+        sigma11: float = ...,
+        sigma22: float = ...,
+        sigma33: float = ...,
+        sigma12: float = ...,
+        sigma13: float = ...,
+        sigma23: float = ...,
+    ) -> Stress:
         """This method creates a Stress predefined field object.
 
         .. note::
