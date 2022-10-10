@@ -235,28 +235,8 @@ evaluateMaterial
 Gap
 ~~~
 
-<<<<<<< HEAD
-=======
-GapConductance
-**************
-
-.. autoclass:: abaqus.Material.Gap.GapConductance.GapConductance
-    :members:
-    :special-members: __init__
->>>>>>> bbd46fa6 (Add special members of classes in the documentation (#2640))
 
 
-<<<<<<< HEAD
-=======
-GapConvection
-*************
-
-.. autoclass:: abaqus.Material.Gap.GapConvection.GapConvection
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
->>>>>>> bbd46fa6 (Add special members of classes in the documentation (#2640))
 
 GapFlow
 *******
@@ -267,18 +247,6 @@ GapFlow
 
     .. autoclasstoc::
 
-<<<<<<< HEAD
-=======
-GapRadiation
-************
-
-.. autoclass:: abaqus.Material.Gap.GapRadiation.GapRadiation
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
-
->>>>>>> bbd46fa6 (Add special members of classes in the documentation (#2640))
 Gasket
 ~~~~~~
 
@@ -828,30 +796,6 @@ CrushableFoamHardening
 
     .. autoclasstoc::
 
-<<<<<<< HEAD
-=======
-CrushStress
-*************
-
-CrushStress
-'''''''''''
-
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStress.CrushStress
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
-
-CrushStressVelocityFactor
-'''''''''''''''''''''''''
-
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStressVelocityFactor.CrushStressVelocityFactor
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
-
->>>>>>> bbd46fa6 (Add special members of classes in the documentation (#2640))
 DruckerPrager
 *************
 
@@ -1173,18 +1117,6 @@ Swelling
 
     .. autoclasstoc::
 
-<<<<<<< HEAD
-=======
-TensileFailure
-**************
-
-.. autoclass:: abaqus.Material.Plastic.TensileFailure.TensileFailure
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
-
->>>>>>> bbd46fa6 (Add special members of classes in the documentation (#2640))
 ProgressiveDamageFailure
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1336,33 +1268,3 @@ VolumetricTestData
     :special-members: __init__
 
     .. autoclasstoc::
-<<<<<<< HEAD
-=======
-
-MultiScale
-~~~~~~~~~~
-
-.. autoclass:: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
-
-.. autoclass:: abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
-
-.. autoclass:: abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
-
-.. autoclass:: abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
->>>>>>> bbd46fa6 (Add special members of classes in the documentation (#2640))

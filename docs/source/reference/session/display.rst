@@ -63,18 +63,6 @@ Leaf
 
     .. autoclasstoc::
 
-<<<<<<< HEAD
-=======
-LeafFromConstraintNames
-~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
-
->>>>>>> bbd46fa6 (Add special members of classes in the documentation (#2640))
 LeafFromDatums
 ~~~~~~~~~~~~~~
 
@@ -359,7 +347,4 @@ LeafFromSurfaceVarRange
 
 .. autoclass:: abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange
     :members:
-<<<<<<< HEAD
-=======
     :special-members: __init__
->>>>>>> bbd46fa6 (Add special members of classes in the documentation (#2640))

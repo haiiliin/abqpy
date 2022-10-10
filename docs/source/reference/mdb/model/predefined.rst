@@ -15,27 +15,6 @@ Create predefined fields
 Object features
 ---------------
 
-<<<<<<< HEAD
-=======
-Field
-~~~~~
-
-.. autoclass:: abaqus.PredefinedField.Field.Field
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
-
-FieldState
-~~~~~~~~~~
-
-.. autoclass:: abaqus.PredefinedField.FieldState.FieldState
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
-
->>>>>>> bbd46fa6 (Add special members of classes in the documentation (#2640))
 PredefinedField
 ~~~~~~~~~~~~~~~
 
