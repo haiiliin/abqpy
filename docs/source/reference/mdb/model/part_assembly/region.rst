@@ -35,12 +35,14 @@ Create regions for Part
 
 .. autoclass:: abaqus.Region.RegionPart.RegionPart
     :members:
+    :special-members: __init__
 
 Create regions for Assembly
 ---------------------------
 
 .. autoclass:: abaqus.Region.RegionAssembly.RegionAssembly
     :members:
+    :special-members: __init__
 
 
 Object features
@@ -51,6 +53,7 @@ Region features for Part
 
 .. autoclass:: abaqus.Region.RegionPartBase.RegionPartBase
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -59,6 +62,7 @@ Region features for Assembly
 
 .. autoclass:: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -67,6 +71,7 @@ Region
 
 .. autoclass:: abaqus.Region.Region.Region
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -75,6 +80,7 @@ RegionArray
 
 .. autoclass:: abaqus.Region.RegionArray.RegionArray
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -83,6 +89,7 @@ Set
 
 .. autoclass:: abaqus.Region.Set.Set
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -91,6 +98,7 @@ Skin
 
 .. autoclass:: abaqus.Region.Skin.Skin
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -99,6 +107,7 @@ Stringer
 
 .. autoclass:: abaqus.Region.Stringer.Stringer
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -107,6 +116,7 @@ Surface
 
 .. autoclass:: abaqus.Region.Surface.Surface
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
