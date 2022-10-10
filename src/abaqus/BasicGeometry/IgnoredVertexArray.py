@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Union, List, Dict
+from typing import Union, List, Dict, Sequence, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .IgnoredVertex import IgnoredVertex
@@ -59,8 +59,18 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         """
         return IgnoredVertex()
 
+    @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str):
+    def getSequenceFromMask(self, mask: str) -> IgnoredVertex:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Sequence[str]) -> List[IgnoredVertex]:
+        ...
+
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[IgnoredVertex, List[IgnoredVertex]]:
         """This method returns the object or objects in the IgnoredVertexArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
         COMPRESSEDINDEX. When large number of objects are involved, this method is highly

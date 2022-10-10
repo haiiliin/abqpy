@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import List
+from typing import List, Sequence, Union, overload
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Vertex import Vertex
@@ -92,8 +92,18 @@ class VertexArray(List[Vertex]):
         """
         ...
 
+    @overload
     @abaqus_method_doc
     def getSequenceFromMask(self, mask: str) -> ConstrainedSketchVertex:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Sequence[str]) -> List[ConstrainedSketchVertex]:
+        ...
+
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[ConstrainedSketchVertex, List[ConstrainedSketchVertex]]:
         """This method returns the object or objects in the VertexArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
         COMPRESSEDINDEX. When a large number of objects are involved, this method is highly

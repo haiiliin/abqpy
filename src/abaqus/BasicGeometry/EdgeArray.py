@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Union, Tuple, Dict, List, overload
+from typing import Union, Tuple, Dict, List, overload, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Edge import Edge
@@ -164,8 +164,18 @@ class EdgeArray(List[Edge]):
         """
         ...
 
+    @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str):
+    def getSequenceFromMask(self, mask: str) -> Edge:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Sequence[str]) -> List[Edge]:
+        ...
+
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Edge, List[Edge]]:
         """This method returns the object or objects in the EdgeArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
         COMPRESSEDINDEX. When a large number of objects are involved, this method is highly
