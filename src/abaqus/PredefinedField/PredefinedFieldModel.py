@@ -11,6 +11,7 @@ from .PorePressure import PorePressure
 from .Stress import Stress
 from .Temperature import Temperature
 from .Velocity import Velocity
+from .VoidsRatio import VoidsRatio
 from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
@@ -717,5 +718,85 @@ class PredefinedFieldModel(ModelBase):
             endIncrement,
             interpolate,
             magnitudes,
+        )
+        return predefinedField
+
+    @abaqus_method_doc
+    def VoidsRatio(
+        self,
+        name: str,
+        region: Region,
+        distributionType: Literal[C.UNIFORM, C.FROM_FILE, C.USER_DEFINED] = UNIFORM,
+        voidsRatio1: float = ...,
+        voidsRatio2: float = ...,
+        coord1: float = ...,
+        coord2: float = ...,
+        ratio2Distribution: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
+        ratio2Field: str = ...,
+        variation: Literal[C.CONSTANT_RATIO, C.VARIABLE_RATIO] = CONSTANT_RATIO,
+        fileName: str = ...,
+        increment: Union[int, Literal[C.LAST_INCREMENT]] = ...,
+        step: Union[int, Literal[C.LAST_STEP]] = ...,
+        interpolate: bool = ...,
+    ) -> VoidsRatio:
+        """This method creates a PorePressure predefined field object.
+
+        .. note::
+        This function can be accessed by::
+
+            mdb.models[name].PorePressure
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        region
+            A Region object specifying the region to which the predefined field is applied. Region
+            is ignored if the predefined field has **distributionType** = FROM_FILE.
+        distributionType
+            A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM,
+            FROM_FILE and USER_DEFINED. The default value is UNIFORM.
+        voidsRatio1
+            ...
+        voidsRatio2
+            ...
+        coord1
+            ...
+        coord2
+            ...
+        ratio2Distribution
+            ...
+        ratio2Field
+            ...
+        variation
+            ...
+        fileName
+            ...
+        increment
+            ...
+        step
+            ...
+        interpolate
+            ...
+
+        Returns
+        -------
+            A VoidsRatio object.
+        """
+        self.predefinedFields[name] = predefinedField = VoidsRatio(
+            name,
+            region,
+            distributionType,
+            voidsRatio1,
+            voidsRatio2,
+            coord1,
+            coord2,
+            ratio2Distribution,
+            ratio2Field,
+            variation,
+            fileName,
+            increment,
+            step,
+            interpolate,
         )
         return predefinedField
