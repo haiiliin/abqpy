@@ -1480,7 +1480,10 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionCellByPlaneNormalToEdge(
-        self, cells: Sequence[Cell], edge: Edge, point: int
+        self,
+        cells: Sequence[Cell],
+        edge: Edge,
+        point: Union[ConstrainedSketchVertex, InterestingPoint, DatumPoint],
     ) -> Feature:
         """This method partitions one or more cells using a plane normal to an edge at the given
         edge point.
