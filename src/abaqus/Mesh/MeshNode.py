@@ -1,10 +1,7 @@
 from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from .MeshEdge import MeshEdge
-from .MeshElement import MeshElement
 from .MeshFace import MeshFace
-from .MeshNodeArray import MeshNodeArray
 from ..Datum.DatumCsys import DatumCsys
 
 
@@ -86,7 +83,7 @@ class MeshNode:
         ...
 
     @abaqus_method_doc
-    def getElemEdges(self) -> Tuple[MeshEdge, ...]:
+    def getElemEdges(self):
         """This method returns a tuple of element edge objects that share the node.
 
         Returns
@@ -108,7 +105,7 @@ class MeshNode:
         ...
 
     @abaqus_method_doc
-    def getElements(self) -> Tuple[MeshElement, ...]:
+    def getElements(self):
         """This method returns a tuple of element objects that share the node.
 
         Returns
@@ -119,7 +116,7 @@ class MeshNode:
         ...
 
     @abaqus_method_doc
-    def getNodesByFeatureEdge(self, angle: float) -> MeshNodeArray:
+    def getNodesByFeatureEdge(self, angle: float):
         """This method returns an array of mesh node objects that are obtained by recursively
         finding adjacent nodes along a feature edge that are at an angle of less than or equal
         to the specified face angle.
