@@ -235,27 +235,8 @@ evaluateMaterial
 Gap
 ~~~
 
-<<<<<<< HEAD
-=======
-GapConductance
-**************
-
-.. autoclass:: abaqus.Material.Gap.GapConductance.GapConductance
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
->>>>>>> bbd46fa6 (Add special members of classes in the documentation (#2640))
 
 
-<<<<<<< HEAD
-=======
-.. autoclass:: abaqus.Material.Gap.GapConvection.GapConvection
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
->>>>>>> bbd46fa6 (Add special members of classes in the documentation (#2640))
 
 GapFlow
 *******
@@ -266,18 +247,6 @@ GapFlow
 
     .. autoclasstoc::
 
-<<<<<<< HEAD
-=======
-GapRadiation
-************
-
-.. autoclass:: abaqus.Material.Gap.GapRadiation.GapRadiation
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
-
->>>>>>> bbd46fa6 (Add special members of classes in the documentation (#2640))
 Gasket
 ~~~~~~
 
@@ -827,30 +796,6 @@ CrushableFoamHardening
 
     .. autoclasstoc::
 
-<<<<<<< HEAD
-=======
-CrushStress
-*************
-
-CrushStress
-'''''''''''
-
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStress.CrushStress
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
-
-CrushStressVelocityFactor
-'''''''''''''''''''''''''
-
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStressVelocityFactor.CrushStressVelocityFactor
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
-
->>>>>>> bbd46fa6 (Add special members of classes in the documentation (#2640))
 DruckerPrager
 *************
 
