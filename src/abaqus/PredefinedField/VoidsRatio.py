@@ -5,7 +5,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .PredefinedField import PredefinedField
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import UNIFORM, CONSTANT_RATIO, MAGNITUDE
+from ..UtilityAndView.abaqusConstants import Boolean, UNIFORM, CONSTANT_RATIO, MAGNITUDE
 
 
 @abaqus_class_doc
@@ -41,7 +41,7 @@ class VoidsRatio(PredefinedField):
         fileName: str = ...,
         increment: Union[int, Literal[C.LAST_INCREMENT]] = ...,
         step: Union[int, Literal[C.LAST_STEP]] = ...,
-        interpolate: bool = ...,
+        interpolate: Boolean = ...,
     ) -> None:
         """This method creates a PorePressure predefined field object.
 
@@ -61,27 +61,34 @@ class VoidsRatio(PredefinedField):
             A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM,
             FROM_FILE and USER_DEFINED. The default value is UNIFORM.
         voidsRatio1
-            ...
+            The initial void ratio in the first region in your model.
         voidsRatio2
-            ...
+            The void ratio of the second location in your model
         coord1
-            ...
+            Vertical position of the first location in your model for which you are specifying initial void ratio.
         coord2
-            ...
+            The vertical position of the second location in your model
         ratio2Distribution
-            ...
+            A SymbolicConstant specifying either the magnitude of a uniform distribution for void ratio at the
+            second elevation or an analytical field to define a spatially varying initial void ratio at the second elevation.
+            Possible values are MAGNITUDE and ANALYTICAL_FIELD.
         ratio2Field
-            ...
+            A String specifying the name of the AnalyticalField object associated with this predefined field.
+            The `ratio2Field` argument applies only when `distributionType` = ANALYTICAL_FIELD.
         variation
-            ...
+            A SymbolicConstant selecting the elevation distribution options, either Linear or Constant.
+            Possible values are CONSTANT_RATIO and VARIABLE_RATIO.
         fileName
-            ...
+            A String specifying the name of the file from which the Field values are to be read when 
+            `distributionType` = FROM_FILE.
         increment
-            ...
+            The SymbolicConstant LAST_INCREMENT or an Int specifying the increment, interval or iteration
+            of the step when `distributionType` = FROM_FILE.
         step
-            ...
+            The SymbolicConstant LAST_STEP or an Int specifying the increment, interval or iteration
+            of the step when `distributionType` = FROM_FILE.
         interpolate
-            ...
+            A Boolean specifying whether to interpolate a field read from an output database or results file.
 
         Returns
         -------
@@ -113,27 +120,34 @@ class VoidsRatio(PredefinedField):
             A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM,
             FROM_FILE and USER_DEFINED. The default value is UNIFORM.
         voidsRatio1
-            ...
+            The initial void ratio in the first region in your model.
         voidsRatio2
-            ...
+            The void ratio of the second location in your model
         coord1
-            ...
+            Vertical position of the first location in your model for which you are specifying initial void ratio.
         coord2
-            ...
+            The vertical position of the second location in your model
         ratio2Distribution
-            ...
+            A SymbolicConstant specifying either the magnitude of a uniform distribution for void ratio at the
+            second elevation or an analytical field to define a spatially varying initial void ratio at the second elevation.
+            Possible values are MAGNITUDE and ANALYTICAL_FIELD.
         ratio2Field
-            ...
+            A String specifying the name of the AnalyticalField object associated with this predefined field.
+            The `ratio2Field` argument applies only when `distributionType` = ANALYTICAL_FIELD.
         variation
-            ...
+            A SymbolicConstant selecting the elevation distribution options, either Linear or Constant.
+            Possible values are CONSTANT_RATIO and VARIABLE_RATIO.
         fileName
-            ...
+            A String specifying the name of the file from which the Field values are to be read when 
+            `distributionType` = FROM_FILE.
         increment
-            ...
+            The SymbolicConstant LAST_INCREMENT or an Int specifying the increment, interval or iteration
+            of the step when `distributionType` = FROM_FILE.
         step
-            ...
+            The SymbolicConstant LAST_STEP or an Int specifying the increment, interval or iteration
+            of the step when `distributionType` = FROM_FILE.
         interpolate
-            ...
+            A Boolean specifying whether to interpolate a field read from an output database or results file.
 
         Returns
         -------
