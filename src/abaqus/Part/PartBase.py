@@ -1,4 +1,4 @@
-from typing import overload, Dict, List, Optional, Sequence
+from typing import overload, Dict, List, Optional, Sequence, Union
 
 # prevent circular imports
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -15,6 +15,7 @@ from ..BasicGeometry.IgnoredVertexArray import IgnoredVertexArray
 from ..BasicGeometry.ReferencePoints import ReferencePoints
 from ..BasicGeometry.VertexArray import VertexArray
 from ..Datum.Datum import Datum
+from ..Datum.DatumPoint import DatumPoint
 from ..Datum.DatumCsys import DatumCsys
 from ..EngineeringFeature.EngineeringFeature import EngineeringFeature
 from ..Mesh.MeshEdge import MeshEdge
@@ -69,13 +70,13 @@ class PartBase(PartFeature):
     vertices: VertexArray = VertexArray([])
 
     #: An :py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` object specifying all the ignored vertices in the part.
-    ignoredVertices: IgnoredVertexArray = []
+    ignoredVertices: IgnoredVertexArray = IgnoredVertexArray()
 
     #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying all the edges in the part.
     edges: EdgeArray = EdgeArray([])
 
     #: An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` object specifying all the ignored edges in the part.
-    ignoredEdges: IgnoredEdgeArray = []
+    ignoredEdges: IgnoredEdgeArray = IgnoredEdgeArray()
 
     #: A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object specifying all the faces in the part.
     faces: FaceArray = FaceArray([])
@@ -94,7 +95,7 @@ class PartBase(PartFeature):
     featuresById: Dict[str, PartFeature] = {}
 
     #: A repository of Datum objects specifying all the datums in the part.
-    datums: List[Datum] = []
+    datums: List[Union[Datum, DatumPoint]] = []
 
     #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying all the elements in the part.
     elements: MeshElementArray = MeshElementArray([])
