@@ -12,14 +12,14 @@ In Mdb
 
 .. autoclass:: abaqus.Filter.FilterModel.FilterModel
     :members:
-    :special-members:
+    :special-members: __init__
 
 In Odb
 ~~~~~~
 
 .. autoclass:: abaqus.Filter.FilterOdb.FilterOdb
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -32,7 +32,7 @@ Filter
 
 .. autoclass:: abaqus.Filter.Filter.Filter
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -41,7 +41,7 @@ ButterworthFilter
 
 .. autoclass:: abaqus.Filter.ButterworthFilter.ButterworthFilter
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -50,7 +50,7 @@ Chebyshev1Filter
 
 .. autoclass:: abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -59,7 +59,7 @@ Chebyshev2Filter
 
 .. autoclass:: abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -68,7 +68,7 @@ OperatorFilter
 
 .. autoclass:: abaqus.Filter.OperatorFilter.OperatorFilter
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 

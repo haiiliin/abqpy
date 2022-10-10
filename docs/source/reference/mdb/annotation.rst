@@ -23,7 +23,7 @@ Annotation
 
 .. autoclass:: abaqus.Annotation.Annotation.Annotation
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -32,7 +32,7 @@ AnnotationsToPlotArray
 
 .. autoclass:: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -41,7 +41,7 @@ AnnotationViewport
 
 .. autoclass:: abaqus.Annotation.AnnotationViewport.AnnotationViewport
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -50,7 +50,7 @@ Arrow
 
 .. autoclass:: abaqus.Annotation.Arrow.Arrow
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -59,4 +59,4 @@ Text
 
 .. autoclass:: abaqus.Annotation.Text.Text
     :members:
-    :special-members:
+    :special-members: __init__

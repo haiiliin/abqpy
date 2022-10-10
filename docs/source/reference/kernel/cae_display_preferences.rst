@@ -12,7 +12,7 @@ CaeGuiPrefs
 
 .. autoclass:: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -21,7 +21,7 @@ CaeKerPrefs
 
 .. autoclass:: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -30,4 +30,4 @@ caePrefsAccess
 
 .. automodule:: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess
     :members:
-    :special-members:
+    :special-members: __init__

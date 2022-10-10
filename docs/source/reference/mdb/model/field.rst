@@ -10,7 +10,7 @@ Create fields
 
 .. autoclass:: abaqus.Field.FieldModel.FieldModel
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -23,7 +23,7 @@ Field
 
 .. autoclass:: abaqus.Field.Field.Field
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -32,7 +32,7 @@ AnalyticalField
 
 .. autoclass:: abaqus.Field.AnalyticalField.AnalyticalField
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -41,7 +41,7 @@ DataTable
 
 .. autoclass:: abaqus.Field.DataTable.DataTable
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -50,7 +50,7 @@ DataTableArray
 
 .. autoclass:: abaqus.Field.DataTableArray.DataTableArray
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -59,7 +59,7 @@ DiscreteField
 
 .. autoclass:: abaqus.Field.DiscreteField.DiscreteField
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -68,7 +68,7 @@ ExpressionField
 
 .. autoclass:: abaqus.Field.ExpressionField.ExpressionField
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -77,7 +77,7 @@ MappedField
 
 .. autoclass:: abaqus.Field.MappedField.MappedField
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -86,7 +86,7 @@ OdbMeshRegionData
 
 .. autoclass:: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 

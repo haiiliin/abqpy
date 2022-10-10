@@ -12,7 +12,7 @@ In Mdb
 
 .. autoclass:: abaqus.Amplitude.AmplitudeModel.AmplitudeModel
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -22,7 +22,7 @@ In Odb
 
 .. autoclass:: abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -35,7 +35,7 @@ Amplitude
 
 .. autoclass:: abaqus.Amplitude.Amplitude.Amplitude
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -44,7 +44,7 @@ ActuatorAmplitude
 
 .. autoclass:: abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -53,7 +53,7 @@ BaselineCorrection
 
 .. autoclass:: abaqus.Amplitude.BaselineCorrection.BaselineCorrection
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -62,7 +62,7 @@ Correlation
 
 .. autoclass:: abaqus.Amplitude.Correlation.Correlation
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -71,7 +71,7 @@ DecayAmplitude
 
 .. autoclass:: abaqus.Amplitude.DecayAmplitude.DecayAmplitude
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -80,7 +80,7 @@ EquallySpacedAmplitude
 
 .. autoclass:: abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -89,7 +89,7 @@ ModulatedAmplitude
 
 .. autoclass:: abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -98,7 +98,7 @@ PeriodicAmplitude
 
 .. autoclass:: abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -107,7 +107,7 @@ PsdDefinition
 
 .. autoclass:: abaqus.Amplitude.PsdDefinition.PsdDefinition
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -116,7 +116,7 @@ SmoothStepAmplitude
 
 .. autoclass:: abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -125,7 +125,7 @@ SolutionDependentAmplitude
 
 .. autoclass:: abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -134,7 +134,7 @@ SpectrumAmplitude
 
 .. autoclass:: abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -143,6 +143,6 @@ TabularAmplitude
 
 .. autoclass:: abaqus.Amplitude.TabularAmplitude.TabularAmplitude
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::

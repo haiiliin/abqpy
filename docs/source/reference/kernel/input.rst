@@ -18,7 +18,7 @@ AbaqusNDarray
 
 .. autoclass:: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -27,7 +27,7 @@ InputFile
 
 .. autoclass:: abaqus.InputFileParser.InputFile.InputFile
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -36,7 +36,7 @@ Keyword
 
 .. autoclass:: abaqus.InputFileParser.Keyword.Keyword
     :members:
-    :special-members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
