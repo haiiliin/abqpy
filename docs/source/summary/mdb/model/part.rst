@@ -15,11 +15,13 @@ Create parts
 .. autoclass:: abaqus.Part.PartBase.PartBase
     :noindex:
     :members: PartFromBooleanCut, PartFromBooleanMerge, PartFromExtrude2DMesh, PartFromGeometryFile, PartFromInstanceMesh, PartFromMesh, PartFromMeshMirror, PartFromNodesAndElements, PartFromOdb, PartFromSection3DMeshByPlane, PartFromSubstructure, Part2DGeomFrom2DMesh, PartFromSubstructure
+    :special-members: __init__
 
     .. autoclasstoc::
 
 .. autoclass:: abaqus.Part.PartFeature.PartFeature
     :members:
+    :special-members: __init__
     :noindex:
 
     .. autoclasstoc::
