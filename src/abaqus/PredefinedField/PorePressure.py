@@ -50,9 +50,10 @@ class PorePressure(PredefinedField):
         """This method creates a PorePressure predefined field object.
 
         .. note::
-        This function can be accessed by::
 
-            mdb.models[name].PorePressure
+            This function can be accessed by::
+
+                mdb.models[name].PorePressure
 
         Parameters
         ----------
