@@ -8,6 +8,7 @@ from .InitialState import InitialState
 from .KinematicHardening import KinematicHardening
 from .MaterialAssignment import MaterialAssignment
 from .PorePressure import PorePressure
+from .Saturation import Saturation
 from .Stress import Stress
 from .Temperature import Temperature
 from .Velocity import Velocity
@@ -523,6 +524,53 @@ class PredefinedFieldModel(ModelBase):
             axisEnd,
             field,
             distributionType,
+        )
+        return predefinedField
+
+    @abaqus_method_doc
+    def Saturation(
+        self,
+        name: str,
+        region: Region,
+        distributionType: Literal[C.UNIFORM, C.FIELD] = UNIFORM,
+        field: str = '',
+        value: float = ...
+    ) -> Saturation:
+        """This method creates a Saturation predefined field object.
+
+        .. note::
+
+            This function can be accessed by::
+
+                mdb.models[name].Saturation
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        region
+            A Region object specifying the region to which the predefined field is applied.
+        distributionType
+            A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM,
+            and FIELD. The default value is UNIFORM.
+        field
+            A String specifying the name of the AnalyticalField object associated
+            with this predefined field. The **field** argument applies only when
+            **distributionType** = FIELD. The default value is an empty string.
+        value
+            A float specifying an initial saturation value for the region between 0.0 (for no
+            saturation) and 1.0 (for full saturation).
+
+        Returns
+        -------
+            A Saturation object.
+        """
+        self.predefinedFields[name] = predefinedField = Saturation(
+            name,
+            region,
+            distributionType,
+            field,
+            value,
         )
         return predefinedField
 
