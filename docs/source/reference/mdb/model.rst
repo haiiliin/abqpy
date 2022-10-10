@@ -48,6 +48,7 @@ Model
 
 .. autoclass:: abaqus.Model.Model.Model
     :members:
+    :special-members:
     :inherited-members:
 
     .. autoclasstoc::
@@ -57,6 +58,7 @@ ModelBase
 
 .. autoclass:: abaqus.Model.ModelBase.ModelBase
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -65,6 +67,7 @@ AdaptivityModel
 
 .. autoclass:: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -75,6 +78,7 @@ AmplitudeModel
 
 .. autoclass:: abaqus.Amplitude.AmplitudeModel.AmplitudeModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -85,6 +89,7 @@ AssemblyModel
 
 .. autoclass:: abaqus.Assembly.AssemblyModel.AssemblyModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -95,6 +100,7 @@ BoundaryConditionModel
 
 .. autoclass:: abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -105,6 +111,7 @@ CalibrationModel
 
 .. autoclass:: abaqus.Calibration.CalibrationModel.CalibrationModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -115,6 +122,7 @@ ConstraintModel
 
 .. autoclass:: abaqus.Constraint.ConstraintModel.ConstraintModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -125,6 +133,7 @@ FilterModel
 
 .. autoclass:: abaqus.Filter.FilterModel.FilterModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -135,6 +144,7 @@ InteractionModel
 
 .. autoclass:: abaqus.Interaction.InteractionModel.InteractionModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -145,6 +155,7 @@ LoadModel
 
 .. autoclass:: abaqus.Load.LoadModel.LoadModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -155,6 +166,7 @@ MaterialModel
 
 .. autoclass:: abaqus.Material.MaterialModel.MaterialModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -165,6 +177,7 @@ OptimizationTaskModel
 
 .. autoclass:: abaqus.Optimization.OptimizationTaskModel.OptimizationTaskModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -175,6 +188,7 @@ PartModel
 
 .. autoclass:: abaqus.Part.PartModel.PartModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -185,6 +199,7 @@ PredefinedFieldModel
 
 .. autoclass:: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -195,6 +210,7 @@ BeamSectionProfileModel
 
 .. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -205,6 +221,7 @@ OutputModel
 
 .. autoclass:: abaqus.StepOutput.OutputModel.OutputModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -215,6 +232,7 @@ SectionModel
 
 .. autoclass:: abaqus.Section.SectionModel.SectionModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -225,6 +243,7 @@ SketchModel
 
 .. autoclass:: abaqus.Sketcher.SketchModel.SketchModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -235,6 +254,7 @@ StepModel
 
 .. autoclass:: abaqus.Step.StepModel.StepModel
     :members:
+    :special-members:
     :inherited-members:
     :noindex:
 
@@ -245,3 +265,4 @@ KeywordBlock
 
 .. autoclass:: abaqus.Model.KeywordBlock.KeywordBlock
     :members:
+    :special-members:

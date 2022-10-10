@@ -12,18 +12,21 @@ redentABQ
 
 .. automodule:: abaqus.TextRepresentation.redentABQ
     :members:
+    :special-members:
 
 textRepr
 ~~~~~~~~
 
 .. automodule:: abaqus.TextRepresentation.textRepr
     :members:
+    :special-members:
 
 TextReprOptions
 ~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.TextRepresentation.TextReprOptions.TextReprOptions
     :members:
+    :special-members:
 
     .. autoclasstoc::
 

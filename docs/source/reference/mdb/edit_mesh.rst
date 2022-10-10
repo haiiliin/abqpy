@@ -13,6 +13,7 @@ Edit mesh features of Assembly
 
 .. autoclass:: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -21,6 +22,7 @@ Edit mesh features of Part
 
 .. autoclass:: abaqus.EditMesh.MeshEditPart.MeshEditPart
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -29,3 +31,4 @@ MeshEditOptions
 
 .. autoclass:: abaqus.EditMesh.MeshEditOptions.MeshEditOptions
     :members:
+    :special-members:

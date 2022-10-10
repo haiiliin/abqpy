@@ -23,6 +23,7 @@ Mdb
 
 .. autoclass:: abaqus.Mdb.Mdb.Mdb
    :members:
+   :special-members:
    :inherited-members:
 
    .. autoclasstoc::
@@ -32,6 +33,7 @@ MdbBase
 
 .. autoclass:: abaqus.Mdb.MdbBase.MdbBase
    :members:
+   :special-members:
 
    .. autoclasstoc::
 
@@ -40,6 +42,7 @@ AcisMdb
 
 .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
    :members:
+   :special-members:
    :noindex:
 
    .. autoclasstoc::
@@ -49,6 +52,7 @@ JobMdb
 
 .. autoclass:: abaqus.Job.JobMdb.JobMdb
    :members:
+   :special-members:
    :noindex:
 
    .. autoclasstoc::

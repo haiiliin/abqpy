@@ -10,6 +10,7 @@ Create predefined fields
 
 .. autoclass:: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel
     :members:
+    :special-members:
 
 Object features
 ---------------
@@ -19,6 +20,7 @@ Field
 
 .. autoclass:: abaqus.PredefinedField.Field.Field
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -27,6 +29,7 @@ FieldState
 
 .. autoclass:: abaqus.PredefinedField.FieldState.FieldState
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -35,6 +38,7 @@ PredefinedField
 
 .. autoclass:: abaqus.PredefinedField.PredefinedField.PredefinedField
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -43,6 +47,7 @@ PredefinedFieldState
 
 .. autoclass:: abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -51,6 +56,7 @@ FluidCavityPressure
 
 .. autoclass:: abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -59,6 +65,7 @@ IMAField
 
 .. autoclass:: abaqus.PredefinedField.IMAField.IMAField
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -67,6 +74,7 @@ IMARegion
 
 .. autoclass:: abaqus.PredefinedField.IMARegion.IMARegion
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -75,6 +83,7 @@ InitialState
 
 .. autoclass:: abaqus.PredefinedField.InitialState.InitialState
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -83,6 +92,7 @@ KinematicHardening
 
 .. autoclass:: abaqus.PredefinedField.KinematicHardening.KinematicHardening
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -91,6 +101,7 @@ MaterialAssignment
 
 .. autoclass:: abaqus.PredefinedField.MaterialAssignment.MaterialAssignment
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -99,6 +110,7 @@ Temperature
 
 .. autoclass:: abaqus.PredefinedField.Temperature.Temperature
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -107,6 +119,7 @@ TemperatureState
 
 .. autoclass:: abaqus.PredefinedField.TemperatureState.TemperatureState
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -115,6 +128,7 @@ TiffOptions
 
 .. autoclass:: abaqus.PredefinedField.TiffOptions.TiffOptions
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
@@ -123,6 +137,7 @@ Velocity
 
 .. autoclass:: abaqus.PredefinedField.Velocity.Velocity
     :members:
+    :special-members:
 
     .. autoclasstoc::
 
