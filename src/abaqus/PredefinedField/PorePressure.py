@@ -10,7 +10,7 @@ from ..UtilityAndView.abaqusConstants import UNIFORM, CONSTANT_RATIO, MAGNITUDE
 
 @abaqus_class_doc
 class PorePressure(PredefinedField):
-    """The Stress object stores the data for an initial pore pressure predefined field.
+    """The PorePressure object stores the data for an initial pore pressure predefined field.
     The PorePressure object is derived from the PredefinedField object.
 
     .. note::
