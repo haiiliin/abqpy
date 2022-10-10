@@ -1,3 +1,5 @@
+from typing import Tuple
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .DataSet import DataSet
 from ..UtilityAndView.abaqusConstants import Boolean
@@ -81,12 +83,12 @@ class Behavior:
         biWeight: str = "",
         uMullinsReload: str = "",
         uMullinsUnload: str = "",
-        uPYieldPoint: tuple = (),
+        uPYieldPoint: Tuple[float, float, float] = (),
         uPermSet: str = "",
         uPrimary: str = "",
         bMullinsReload: str = "",
         bMullinsUnload: str = "",
-        bPYieldPoint: tuple = (),
+        bPYieldPoint: Tuple[float, float, float] = (),
         bPermSet: str = "",
         bPrimary: str = "",
     ):
@@ -198,7 +200,7 @@ class Behavior:
 
         Returns
         -------
-        Tuple[float, ...]
+        Sequence[float]
             A tuple consisting of a and b values of the regression line(y = ax + b), coefficient of
             determination(r-squared) value and the start and end-points of the line.
         """
@@ -216,7 +218,7 @@ class Behavior:
 
         Returns
         -------
-        Tuple[float, ...]
+        Sequence[float]
             A tuple consisting of a and b values of the regression line(y = ax + b), coefficient of
             determination(r-squared) value and the start and end-points of the line.
         """
@@ -234,7 +236,7 @@ class Behavior:
 
         Returns
         -------
-        Tuple[float, ...]
+        Sequence[float]
             Coordinates of the ultimate point.
         """
         ...
@@ -283,7 +285,7 @@ class Behavior:
 
         Returns
         -------
-        Tuple[Tuple[float, ...]]
+        Sequence[Tuple[float]]
             A sequence of coordinates of the Plastic points..
         """
         ...
@@ -309,7 +311,7 @@ class Behavior:
 
         Returns
         -------
-        Tuple[str, ...]
+        Sequence[str]
             A sequence of strings specifying names of the DataSet objects containing loading,
             unloading, reloading and primary datasets.
         """

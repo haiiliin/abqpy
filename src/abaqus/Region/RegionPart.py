@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union, Tuple, overload, Sequence
+from typing import Optional, Union, overload, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Region import Region
@@ -34,26 +34,26 @@ class RegionPart(RegionPartBase):
     @abaqus_method_doc
     def Surface(
         self,
-        side1Faces: Union[Face, Tuple[Face, ...], None] = None,
-        side2Faces: Union[Face, Tuple[Face, ...], None] = None,
-        side12Faces: Union[Face, Tuple[Face, ...], None] = None,
-        end1Edges: Union[Face, Tuple[Face, ...], None] = None,
-        end2Edges: Union[Face, Tuple[Face, ...], None] = None,
-        circumEdges: Union[Face, Tuple[Face, ...], None] = None,
-        side1Edges: Union[Face, Tuple[Face, ...], None] = None,
-        side2Edges: Union[Face, Tuple[Face, ...], None] = None,
-        face1Elements: Union[Face, Tuple[Face, ...], None] = None,
-        face2Elements: Union[Face, Tuple[Face, ...], None] = None,
-        face3Elements: Union[Face, Tuple[Face, ...], None] = None,
-        face4Elements: Union[Face, Tuple[Face, ...], None] = None,
-        face5Elements: Union[Face, Tuple[Face, ...], None] = None,
-        face6Elements: Union[Face, Tuple[Face, ...], None] = None,
-        side1Elements: Union[Face, Tuple[Face, ...], None] = None,
-        side2Elements: Union[Face, Tuple[Face, ...], None] = None,
-        side12Elements: Union[Face, Tuple[Face, ...], None] = None,
-        end1Elements: Union[Face, Tuple[Face, ...], None] = None,
-        end2Elements: Union[Face, Tuple[Face, ...], None] = None,
-        circumElements: Union[Face, Tuple[Face, ...], None] = None,
+        side1Faces: Union[Face, Sequence[Face], None] = None,
+        side2Faces: Union[Face, Sequence[Face], None] = None,
+        side12Faces: Union[Face, Sequence[Face], None] = None,
+        end1Edges: Union[Face, Sequence[Face], None] = None,
+        end2Edges: Union[Face, Sequence[Face], None] = None,
+        circumEdges: Union[Face, Sequence[Face], None] = None,
+        side1Edges: Union[Face, Sequence[Face], None] = None,
+        side2Edges: Union[Face, Sequence[Face], None] = None,
+        face1Elements: Union[Face, Sequence[Face], None] = None,
+        face2Elements: Union[Face, Sequence[Face], None] = None,
+        face3Elements: Union[Face, Sequence[Face], None] = None,
+        face4Elements: Union[Face, Sequence[Face], None] = None,
+        face5Elements: Union[Face, Sequence[Face], None] = None,
+        face6Elements: Union[Face, Sequence[Face], None] = None,
+        side1Elements: Union[Face, Sequence[Face], None] = None,
+        side2Elements: Union[Face, Sequence[Face], None] = None,
+        side12Elements: Union[Face, Sequence[Face], None] = None,
+        end1Elements: Union[Face, Sequence[Face], None] = None,
+        end2Elements: Union[Face, Sequence[Face], None] = None,
+        circumElements: Union[Face, Sequence[Face], None] = None,
         name: str = "",
         **kwargs
     ) -> Surface:
@@ -314,10 +314,10 @@ class RegionPart(RegionPartBase):
     def Skin(
         self,
         name: str,
-        faces: Tuple[Face, ...] = (),
-        edges: Tuple[Edge, ...] = (),
-        elementFaces: Tuple[MeshFace, ...] = (),
-        elementEdges: Tuple[MeshEdge, ...] = (),
+        faces: Sequence[Face] = (),
+        edges: Sequence[Edge] = (),
+        elementFaces: Sequence[MeshFace] = (),
+        elementEdges: Sequence[MeshEdge] = (),
     ) -> Skin:
         """This method creates a skin from a sequence of objects in a model database. At least one
         of the optional arguments needs to be specified.
@@ -356,10 +356,10 @@ class RegionPart(RegionPartBase):
     def EditSkin(
         self,
         name: str = "",
-        faces: Tuple[Face, ...] = (),
-        edges: Tuple[Edge, ...] = (),
-        elementFaces: Tuple[MeshFace, ...] = (),
-        elementEdges: Tuple[MeshEdge, ...] = (),
+        faces: Sequence[Face] = (),
+        edges: Sequence[Edge] = (),
+        elementFaces: Sequence[MeshFace] = (),
+        elementEdges: Sequence[MeshEdge] = (),
     ) -> Skin:
         """This method modifies underlying entities of the selected skin. At least one of the
         optional arguments needs to be specified.
@@ -398,8 +398,8 @@ class RegionPart(RegionPartBase):
     def Stringer(
         self,
         name: str,
-        edges: Tuple[Edge, ...] = (),
-        elementEdges: Tuple[MeshEdge, ...] = (),
+        edges: Sequence[Edge] = (),
+        elementEdges: Sequence[MeshEdge] = (),
     ) -> Stringer:
         """This method creates a stringer from a sequence of objects in a model database. At least
         one of the optional arguments needs to be specified.

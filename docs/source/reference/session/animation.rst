@@ -14,6 +14,7 @@ AnimationOptions
 
 .. autoclass:: abaqus.Animation.AnimationOptions.AnimationOptions
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -22,6 +23,7 @@ AnimationSession
 
 .. autoclass:: abaqus.Animation.AnimationSession.AnimationSession
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -30,6 +32,7 @@ AVIOptions
 
 .. autoclass:: abaqus.Animation.AVIOptions.AVIOptions
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -38,6 +41,7 @@ ImageAnimation
 
 .. autoclass:: abaqus.Animation.ImageAnimation.ImageAnimation
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -46,6 +50,7 @@ ImageAnimationOptions
 
 .. autoclass:: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -54,6 +59,7 @@ Movie
 
 .. autoclass:: abaqus.Animation.Movie.Movie
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -62,3 +68,4 @@ QuickTimeOptions
 
 .. autoclass:: abaqus.Animation.QuickTimeOptions.QuickTimeOptions
     :members:
+    :special-members: __init__

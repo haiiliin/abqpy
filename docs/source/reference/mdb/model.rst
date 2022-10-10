@@ -48,6 +48,7 @@ Model
 
 .. autoclass:: abaqus.Model.Model.Model
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::
 
@@ -56,5 +57,6 @@ ModelBase
 
 .. autoclass:: abaqus.Model.ModelBase.ModelBase
     :members:
+    :special-members: __init__
 
     .. autoclasstoc::

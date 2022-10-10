@@ -1,4 +1,4 @@
-from typing import Union, Optional, Tuple
+from typing import Union, Optional, Sequence
 
 from typing_extensions import Literal
 
@@ -54,16 +54,16 @@ class FieldOutputRequest:
         name: str,
         createStepName: str,
         region: Union[Literal[C.MODEL], Region] = MODEL,
-        variables: Union[Tuple[str, ...], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
+        variables: Union[Sequence[str], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
         frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
-        modes: Union[Literal[C.ALL], Tuple[int, ...]] = ALL,
+        modes: Union[Literal[C.ALL], Sequence[int]] = ALL,
         timeInterval: Union[
             Literal[C.EVERY_TIME_INCREMENT], float
         ] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         timeMarks: Boolean = OFF,
         boltLoad: str = "",
-        sectionPoints: Union[Tuple[int, ...], Literal[C.DEFAULT]] = DEFAULT,
+        sectionPoints: Union[Sequence[int], Literal[C.DEFAULT]] = DEFAULT,
         interactions: Optional[str] = None,
         rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
         filter: Union[Literal[C.ANTIALIASING], str, None] = None,
@@ -225,7 +225,7 @@ class FieldOutputRequest:
     def setValues(
         self,
         region: Union[Literal[C.MODEL], Region] = MODEL,
-        variables: Union[Tuple[str, ...], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
+        variables: Union[Sequence[str], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
         frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
         modes: Union[Literal[C.ALL], int] = ALL,
         timeInterval: Union[
@@ -336,7 +336,7 @@ class FieldOutputRequest:
     def setValuesInStep(
         self,
         stepName: str,
-        variables: Union[Tuple[str, ...], Literal[C.PRESELECT, C.ALL], None] = None,
+        variables: Union[Sequence[str], Literal[C.PRESELECT, C.ALL], None] = None,
         frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
         modes: Union[Literal[C.ALL], int] = ALL,
         timeInterval: Union[

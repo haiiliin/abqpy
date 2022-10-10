@@ -1,4 +1,4 @@
-from typing import Optional, Tuple, Union, List, Dict
+from typing import Optional, Tuple, Sequence, Union, List, Dict
 from typing_extensions import Literal
 from abaqus.XY.AreaStyle import AreaStyle
 from abaqus.XY.LineStyle import LineStyle
@@ -407,10 +407,10 @@ def XYDataFromShellThickness(
         ],
         ...,
     ],
-    elementSets: Union[str, Tuple[str, ...]] = ...,
-    elementLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,
-    nodeSets: Union[str, Tuple[str, ...]] = ...,
-    nodeLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,
+    elementSets: Union[str, Sequence[str]] = ...,
+    elementLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
+    nodeSets: Union[str, Sequence[str]] = ...,
+    nodeLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
     numericForm: Literal[
         C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
     ] = REAL,
@@ -527,10 +527,10 @@ def xyDataListFromField(
         ],
         ...,
     ],
-    elementSets: Union[Tuple[str, ...], str] = ...,
-    elementLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,
-    nodeSets: Union[str, Tuple[str, ...]] = ...,
-    nodeLabels: Tuple[Tuple[str, Union[int, str]], ...] = ...,
+    elementSets: Union[Sequence[str], str] = ...,
+    elementLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
+    nodeSets: Union[str, Sequence[str]] = ...,
+    nodeLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
     numericForm: Literal[
         C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
     ] = REAL,
