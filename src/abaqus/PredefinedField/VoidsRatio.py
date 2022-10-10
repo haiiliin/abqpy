@@ -23,7 +23,6 @@ class VoidsRatio(PredefinedField):
         The corresponding analysis keywords are:
 
         - INITIAL CONDITIONS
-
     """
 
     @abaqus_method_doc

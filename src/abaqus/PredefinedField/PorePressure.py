@@ -14,7 +14,6 @@ class PorePressure(PredefinedField):
     The PorePressure object is derived from the PredefinedField object.
 
     .. note::
-    
         This object can be accessed by::
 
             import load
@@ -23,7 +22,6 @@ class PorePressure(PredefinedField):
         The corresponding analysis keywords are:
 
         - INITIAL CONDITIONS
-
     """
 
     @abaqus_method_doc
