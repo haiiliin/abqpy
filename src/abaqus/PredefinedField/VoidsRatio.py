@@ -24,9 +24,6 @@ class VoidsRatio(PredefinedField):
 
         - INITIAL CONDITIONS
 
-    .. versionadded:: 2021
-        The `VoidsRatio` class was added.
-
     """
 
     @abaqus_method_doc

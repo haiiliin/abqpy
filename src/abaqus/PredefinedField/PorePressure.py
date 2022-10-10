@@ -24,9 +24,6 @@ class PorePressure(PredefinedField):
 
         - INITIAL CONDITIONS
 
-    .. versionadded:: 2021
-        The `PorePressure` class was added.
-
     """
 
     @abaqus_method_doc
