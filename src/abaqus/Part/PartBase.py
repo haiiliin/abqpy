@@ -1,4 +1,4 @@
-from typing import overload, Dict, List, Optional, Sequence, Union
+from typing import overload, Dict, List, Optional, Sequence
 
 # prevent circular imports
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -15,7 +15,6 @@ from ..BasicGeometry.IgnoredVertexArray import IgnoredVertexArray
 from ..BasicGeometry.ReferencePoints import ReferencePoints
 from ..BasicGeometry.VertexArray import VertexArray
 from ..Datum.Datum import Datum
-from ..Datum.DatumPoint import DatumPoint
 from ..Datum.DatumCsys import DatumCsys
 from ..EngineeringFeature.EngineeringFeature import EngineeringFeature
 from ..Mesh.MeshEdge import MeshEdge
@@ -95,7 +94,7 @@ class PartBase(PartFeature):
     featuresById: Dict[str, PartFeature] = {}
 
     #: A repository of Datum objects specifying all the datums in the part.
-    datums: List[Union[Datum, DatumPoint]] = []
+    datums: List[Datum] = []
 
     #: A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object specifying all the elements in the part.
     elements: MeshElementArray = MeshElementArray([])
