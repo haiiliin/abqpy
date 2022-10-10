@@ -820,30 +820,6 @@ CrushableFoamHardening
 
     .. autoclasstoc::
 
-<<<<<<< HEAD
-=======
-CrushStress
-*************
-
-CrushStress
-'''''''''''
-
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStress.CrushStress
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
-
-CrushStressVelocityFactor
-'''''''''''''''''''''''''
-
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStressVelocityFactor.CrushStressVelocityFactor
-    :members:
-    :special-members: __init__
-
-    .. autoclasstoc::
-
->>>>>>> bbd46fa6 (Add special members of classes in the documentation (#2640))
 DruckerPrager
 *************
 
