@@ -50,9 +50,9 @@ class VoidsRatio(PredefinedField):
         """This method creates a PorePressure predefined field object.
 
         .. note::
-        This function can be accessed by::
+            This function can be accessed by::
 
-            mdb.models[name].PorePressure
+                mdb.models[name].VoidsRatio
 
         Parameters
         ----------
