@@ -1,7 +1,8 @@
 pull_request_rules:
-  - name: Backport to main
+  - name: Backport to main (auto-merge)
     conditions:
       - label=backport-to-main
+      - label!=disable-auto-merge
     actions:
       backport:
         branches:
@@ -11,12 +12,27 @@ pull_request_rules:
         labels:
           - backport
           - main
+  - name: Backport to main (disable-auto-merge)
+    conditions:
+      - label=backport-to-main
+      - label=disable-auto-merge
+    actions:
+      backport:
+        branches:
+          - main
+        assignees:
+          - "{{ author }}"
+        labels:
+          - backport
+          - main
+          - disable-auto-merge
 
-  - name: Backport to 2022
+  - name: Backport to 2022 (auto-merge)
     conditions:
       - or:
         - label=backport-to-all
         - label=backport-to-2022
+      - label!=disable-auto-merge
     actions:
       backport:
         branches:
@@ -26,12 +42,29 @@ pull_request_rules:
         labels:
           - backport
           - "2022"
+  - name: Backport to 2022 (disable-auto-merge)
+    conditions:
+      - or:
+        - label=backport-to-all
+        - label=backport-to-2022
+      - label=disable-auto-merge
+    actions:
+      backport:
+        branches:
+          - "2022"
+        assignees:
+          - "{{ author }}"
+        labels:
+          - backport
+          - "2022"
+          - disable-auto-merge
 
-  - name: Backport to 2021
+  - name: Backport to 2021 (auto-merge)
     conditions:
       - or:
         - label=backport-to-all
         - label=backport-to-2021
+      - label!=disable-auto-merge
     actions:
       backport:
         branches:
@@ -41,12 +74,29 @@ pull_request_rules:
         labels:
           - backport
           - "2021"
+  - name: Backport to 2021 (disable-auto-merge)
+    conditions:
+      - or:
+        - label=backport-to-all
+        - label=backport-to-2021
+      - label=disable-auto-merge
+    actions:
+      backport:
+        branches:
+          - "2021"
+        assignees:
+          - "{{ author }}"
+        labels:
+          - backport
+          - "2021"
+          - disable-auto-merge
 
-  - name: Backport to 2020
+  - name: Backport to 2020 (auto-merge)
     conditions:
       - or:
         - label=backport-to-all
         - label=backport-to-2020
+      - label!=disable-auto-merge
     actions:
       backport:
         branches:
@@ -56,12 +106,29 @@ pull_request_rules:
         labels:
           - backport
           - "2020"
+  - name: Backport to 2020 (disable-auto-merge)
+    conditions:
+      - or:
+        - label=backport-to-all
+        - label=backport-to-2020
+      - label=disable-auto-merge
+    actions:
+      backport:
+        branches:
+          - "2020"
+        assignees:
+          - "{{ author }}"
+        labels:
+          - backport
+          - "2020"
+          - disable-auto-merge
 
-  - name: Backport to 2019
+  - name: Backport to 2019 (auto-merge)
     conditions:
       - or:
         - label=backport-to-all
         - label=backport-to-2019
+      - label!=disable-auto-merge
     actions:
       backport:
         branches:
@@ -71,12 +138,29 @@ pull_request_rules:
         labels:
           - backport
           - "2019"
+  - name: Backport to 2019 (disable-auto-merge)
+    conditions:
+      - or:
+        - label=backport-to-all
+        - label=backport-to-2019
+      - label=disable-auto-merge
+    actions:
+      backport:
+        branches:
+          - "2019"
+        assignees:
+          - "{{ author }}"
+        labels:
+          - backport
+          - "2019"
+          - disable-auto-merge
 
-  - name: Backport to 2018
+  - name: Backport to 2018 (auto-merge)
     conditions:
       - or:
         - label=backport-to-all
         - label=backport-to-2018
+      - label!=disable-auto-merge
     actions:
       backport:
         branches:
@@ -86,12 +170,29 @@ pull_request_rules:
         labels:
           - backport
           - "2018"
+  - name: Backport to 2018 (disable-auto-merge)
+    conditions:
+      - or:
+        - label=backport-to-all
+        - label=backport-to-2018
+      - label=disable-auto-merge
+    actions:
+      backport:
+        branches:
+          - "2018"
+        assignees:
+          - "{{ author }}"
+        labels:
+          - backport
+          - "2018"
+          - disable-auto-merge
 
-  - name: Backport to 2017
+  - name: Backport to 2017 (auto-merge)
     conditions:
       - or:
         - label=backport-to-all
         - label=backport-to-2017
+      - label!=disable-auto-merge
     actions:
       backport:
         branches:
@@ -101,12 +202,29 @@ pull_request_rules:
         labels:
           - backport
           - "2017"
+  - name: Backport to 2017 (disable-auto-merge)
+    conditions:
+      - or:
+        - label=backport-to-all
+        - label=backport-to-2014
+      - label=disable-auto-merge
+    actions:
+      backport:
+        branches:
+          - "2017"
+        assignees:
+          - "{{ author }}"
+        labels:
+          - backport
+          - "2017"
+          - disable-auto-merge
 
-  - name: Backport to 2016
+  - name: Backport to 2016 (auto-merge)
     conditions:
       - or:
         - label=backport-to-all
         - label=backport-to-2016
+      - label!=disable-auto-merge
     actions:
       backport:
         branches:
@@ -116,12 +234,29 @@ pull_request_rules:
         labels:
           - backport
           - "2016"
+  - name: Backport to 2016 (disable-auto-merge)
+    conditions:
+      - or:
+        - label=backport-to-all
+        - label=backport-to-2016
+      - label=disable-auto-merge
+    actions:
+      backport:
+        branches:
+          - "2016"
+        assignees:
+          - "{{ author }}"
+        labels:
+          - backport
+          - "2016"
+          - disable-auto-merge
 
   - name: Auto merge backport pull request
     conditions:
       - and:
         - label=backport
         - label!=conflicts
+        - label!=disable-auto-merge
         - title~=[\w\W]+?\(backport \#\d+?\)
     actions:
       merge:
@@ -132,6 +267,7 @@ pull_request_rules:
       - and:
         - label=translation
         - label!=conflicts
+        - label!=disable-auto-merge
         - title~=Update translations \(\d+\/\d+\/\d+\)
     actions:
       merge:
@@ -142,6 +278,7 @@ pull_request_rules:
       - and:
         - label=version
         - label!=conflicts
+        - label!=disable-auto-merge
         - title~=Update release version \(\d+\/\d+\/\d+\)
     actions:
       merge:
@@ -152,6 +289,7 @@ pull_request_rules:
       - and:
         - label=docs
         - label!=conflicts
+        - label!=disable-auto-merge
         - title~=Update docs \(\w+, \d+\/\d+\/\d+\)
     actions:
       merge:
