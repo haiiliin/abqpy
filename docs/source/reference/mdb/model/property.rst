@@ -10,7 +10,8 @@ Create properties for Part
 
 .. autoclass:: abaqus.Property.PropertyPart.PropertyPart
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
 Classes
 -------
@@ -20,7 +21,8 @@ CompositeLayup
 
 .. autoclass:: abaqus.Property.CompositeLayup.CompositeLayup
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -29,7 +31,8 @@ CompositePly
 
 .. autoclass:: abaqus.Property.CompositePly.CompositePly
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -38,7 +41,8 @@ CompositePlyArray
 
 .. autoclass:: abaqus.Property.CompositePlyArray.CompositePlyArray
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -47,7 +51,8 @@ MaterialOrientation
 
 .. autoclass:: abaqus.Property.MaterialOrientation.MaterialOrientation
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -56,7 +61,8 @@ MaterialOrientationArray
 
 .. autoclass:: abaqus.Property.MaterialOrientationArray.MaterialOrientationArray
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -65,7 +71,8 @@ PlyStackPlot
 
 .. autoclass:: abaqus.Property.PlyStackPlot.PlyStackPlot
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -74,7 +81,8 @@ PropertyAssembly
 
 .. autoclass:: abaqus.Property.PropertyAssembly.PropertyAssembly
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -83,7 +91,8 @@ SectionAssignment
 
 .. autoclass:: abaqus.Property.SectionAssignment.SectionAssignment
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -92,7 +101,8 @@ SectionAssignmentArray
 
 .. autoclass:: abaqus.Property.SectionAssignmentArray.SectionAssignmentArray
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 

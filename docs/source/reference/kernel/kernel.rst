@@ -18,7 +18,8 @@ CommandRegister
 
 .. autoclass:: abaqus.CustomKernel.CommandRegister.CommandRegister
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -27,7 +28,8 @@ RegisteredDictionary
 
 .. autoclass:: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -36,7 +38,8 @@ RegisteredList
 
 .. autoclass:: abaqus.CustomKernel.RegisteredList.RegisteredList
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -45,7 +48,8 @@ RegisteredTuple
 
 .. autoclass:: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
