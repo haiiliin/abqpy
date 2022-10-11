@@ -13,6 +13,8 @@ Create output requests for Model
     :special-members: __init__
     :show-inheritance:
 
+    .. autoclasstoc::
+
 Create DiagnosticPrint, Monitor and Restart information for Step
 ----------------------------------------------------------------
 
@@ -20,6 +22,8 @@ Create DiagnosticPrint, Monitor and Restart information for Step
     :members:
     :special-members: __init__
     :show-inheritance:
+
+    .. autoclasstoc::
 
 Classes
 -------
