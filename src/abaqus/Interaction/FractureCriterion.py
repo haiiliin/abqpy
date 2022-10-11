@@ -101,7 +101,7 @@ class FractureCriterion:
 
     #: A SymbolicConstant specifying whether to include unstable crack growth tolerance in
     #: fracture criterion. Possible values are ON and OFF. The default value is OFF.
-    specifyUnstableCrackProp: SymbolicConstant = OFF
+    specifyUnstableCrackProp: Union[SymbolicConstant, Boolean] = OFF
 
     #: The SymbolicConstant DEFAULT or a Float specifying the tolerance for unstable crack
     #: propagation. This parameter specified only if **specifyUnstableCrackProp** = ON. The default
@@ -117,7 +117,7 @@ class FractureCriterion:
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         tolerance: float = 0,
-        specifyUnstableCrackProp: SymbolicConstant = OFF,
+        specifyUnstableCrackProp: Union[SymbolicConstant, Boolean] = OFF,
         unstableTolerance: Union[SymbolicConstant, float] = DEFAULT,
     ):
         r"""This method creates a FractureCriterion object.
