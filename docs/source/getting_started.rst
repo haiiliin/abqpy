@@ -253,6 +253,5 @@ What next?
 You may wonder how does this package work, 
 you can go :doc:`/getting_started` for more detailed introduction and go
 :doc:`/tutorials` for a simple tutorial. For more documentation about 
-Abaqus/Python scripting, please check :doc:`/summary` for a list of 
-descriptions of objects and methods of Abaqus models, check :doc:`/references` 
+Abaqus/Python scripting, please check :doc:`/references` 
 for more detailed API references.

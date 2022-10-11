@@ -15,8 +15,8 @@ Create XY Objects in Session
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 XY features for Session
 ~~~~~~~~~~~~~~~~~~~~~~~

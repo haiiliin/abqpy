@@ -18,8 +18,8 @@ Create steps
     :members:
     :special-members: __init__
 
-Object features
----------------
+Classes
+-------
 
 Step
 ~~~~
@@ -27,7 +27,6 @@ Step
 .. autoclass:: abaqus.Step.Step.Step
     :members:
     :special-members: __init__
-    :inherited-members:
 
     .. autoclasstoc::
 
@@ -46,7 +45,6 @@ AdaptivityStep
 .. autoclass:: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep
     :members:
     :special-members: __init__
-    :inherited-members:
     :noindex:
 
     .. autoclasstoc::
@@ -57,7 +55,6 @@ OutputStep
 .. autoclass:: abaqus.StepOutput.OutputStep.OutputStep
     :members:
     :special-members: __init__
-    :inherited-members:
     :noindex:
 
     .. autoclasstoc::
@@ -68,7 +65,6 @@ AnalysisStep
 .. autoclass:: abaqus.Step.AnalysisStep.AnalysisStep
     :members:
     :special-members: __init__
-    :inherited-members:
 
     .. autoclasstoc::
 
