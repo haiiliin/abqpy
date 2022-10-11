@@ -4,8 +4,8 @@ Messaging
 
 Messaging commands are available only if Abaqus/CAE is run interactively using the GUI.
 
-Object features
----------------
+Classes
+-------
 
 DataObject
 ~~~~~~~~~~

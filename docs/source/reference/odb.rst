@@ -4,8 +4,8 @@ Abaqus Output Database
 
 The Python ODB API commands are used to read and write data from an output database (.odb) file. The path to the Odb object can be via the session.odbs repository or via a variable. In this chapter the Access and Path statements refer to a variable called odb that represents an existing Odb object.
 
-Object features
----------------
+Classes
+-------
 
 Odb
 ~~~
@@ -13,7 +13,6 @@ Odb
 .. autoclass:: abaqus.Odb.Odb.Odb
     :members:
     :special-members: __init__
-    :inherited-members:
 
     .. autoclasstoc::
 
@@ -198,7 +197,6 @@ OdbAssembly
 .. autoclass:: abaqus.Odb.OdbAssembly.OdbAssembly
     :members:
     :special-members: __init__
-    :inherited-members:
 
     .. autoclasstoc::
 
@@ -251,7 +249,6 @@ OdbInstance
 .. autoclass:: abaqus.Odb.OdbInstance.OdbInstance
     :members:
     :special-members: __init__
-    :inherited-members:
 
     .. autoclasstoc::
 
@@ -315,7 +312,6 @@ OdbPart
 .. autoclass:: abaqus.Odb.OdbPart.OdbPart
     :members:
     :special-members: __init__
-    :inherited-members:
 
     .. autoclasstoc::
 
@@ -397,7 +393,6 @@ OdbStep
 .. autoclass:: abaqus.Odb.OdbStep.OdbStep
     :members:
     :special-members: __init__
-    :inherited-members:
 
     .. autoclasstoc::
 
@@ -479,7 +474,6 @@ UserData
 .. autoclass:: abaqus.Odb.UserData.UserData
     :members:
     :special-members: __init__
-    :inherited-members:
 
     .. autoclasstoc::
 

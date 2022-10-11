@@ -11,5 +11,4 @@ components of the abqpy project.
 
    cli
    templates
-   summary
    references
