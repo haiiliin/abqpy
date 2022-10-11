@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import List
+from typing import List, Sequence, Union, overload, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Vertex import Vertex
@@ -56,8 +56,33 @@ class VertexArray(List[Vertex]):
         """
         ...
 
+    @overload
     @abaqus_method_doc
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> ConstrainedSketchVertex:
+    def findAt(
+        self, coordinates: Tuple[float, float, float], printWarning: Boolean = True,
+    ) -> ConstrainedSketchVertex:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self,
+        coordinates: Tuple[Tuple[float, float, float],],
+        printWarning: Boolean = True,
+    ) -> List[ConstrainedSketchVertex]:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self,
+        *coordinates: Tuple[Tuple[float, float, float],],
+        printWarning: Boolean = True,
+    ) -> List[ConstrainedSketchVertex]:
+        ...
+
+    @abaqus_method_doc
+    def findAt(self, *args, **kwargs)-> Union[ConstrainedSketchVertex, List[ConstrainedSketchVertex]]:
         """This method returns the object or objects in the VertexArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any ConstrainedSketchVertex
@@ -73,9 +98,12 @@ class VertexArray(List[Vertex]):
         coordinates
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to
             find.findAt returns either a ConstrainedSketchVertex object or a sequence of ConstrainedSketchVertex objects based on the
-            type of input.If **coordinates** is a sequence of Floats, findAt returns the ConstrainedSketchVertex object
-            at that point.If you omit the **coordinates** keyword argument, findAt accepts as
-            arguments a sequence of sequence of floats in the following format::
+            type of input.
+
+            * If **coordinates** is a sequence of Floats, findAt returns the ConstrainedSketchVertex object at that point.
+            
+            * If you omit the **coordinates** keyword argument, findAt accepts as arguments a sequence of sequence
+              of floats in the following format::
             
                 verts = v.findAt(((20.19686, -169.513997, 27.798593), ),
                                 ((19.657627, -167.295749, 27.056402), ),
@@ -90,10 +118,21 @@ class VertexArray(List[Vertex]):
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or a sequence of ConstrainedSketchVertex objects..
 
         """
+        first_arg = kwargs.get('coordinates', args[0] if args else ((),))
+        return ConstrainedSketchVertex() if isinstance(first_arg[0], float) else [ConstrainedSketchVertex()]
+
+    @overload
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: str) -> ConstrainedSketchVertex:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Sequence[str]) -> List[ConstrainedSketchVertex]:
         ...
 
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str) -> ConstrainedSketchVertex:
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[ConstrainedSketchVertex, List[ConstrainedSketchVertex]]:
         """This method returns the object or objects in the VertexArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
         COMPRESSEDINDEX. When a large number of objects are involved, this method is highly
