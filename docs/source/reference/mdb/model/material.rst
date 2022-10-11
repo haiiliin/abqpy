@@ -255,27 +255,6 @@ evaluateMaterial
 Gap
 ~~~
 
-<<<<<<< HEAD
-
-=======
-GapConductance
-**************
-
-.. autoclass:: abaqus.Material.Gap.GapConductance.GapConductance
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
-GapConvection
-*************
-
-.. autoclass:: abaqus.Material.Gap.GapConvection.GapConvection
-    :members:
-    :special-members:
-    :show-inheritance:
->>>>>>> dddd4cfa (Show inheritance for classes (#2703))
 
 
 GapFlow
@@ -288,19 +267,6 @@ GapFlow
 
     .. autoclasstoc::
 
-<<<<<<< HEAD
-=======
-GapRadiation
-************
-
-.. autoclass:: abaqus.Material.Gap.GapRadiation.GapRadiation
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
->>>>>>> dddd4cfa (Show inheritance for classes (#2703))
 Gasket
 ~~~~~~
 
@@ -903,32 +869,6 @@ CrushableFoamHardening
 
     .. autoclasstoc::
 
-<<<<<<< HEAD
-=======
-CrushStress
-*************
-
-CrushStress
-'''''''''''
-
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStress.CrushStress
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
-CrushStressVelocityFactor
-'''''''''''''''''''''''''
-
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStressVelocityFactor.CrushStressVelocityFactor
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
->>>>>>> dddd4cfa (Show inheritance for classes (#2703))
 DruckerPrager
 *************
 
@@ -1279,19 +1219,6 @@ Swelling
 
     .. autoclasstoc::
 
-<<<<<<< HEAD
-=======
-TensileFailure
-**************
-
-.. autoclass:: abaqus.Material.Plastic.TensileFailure.TensileFailure
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
->>>>>>> dddd4cfa (Show inheritance for classes (#2703))
 ProgressiveDamageFailure
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1459,37 +1386,3 @@ VolumetricTestData
     :show-inheritance:
 
     .. autoclasstoc::
-<<<<<<< HEAD
-=======
-
-MultiScale
-~~~~~~~~~~
-
-.. autoclass:: abaqus.Material.Multiscale.MeanFieldHomogenization.MeanFieldHomogenization
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
-.. autoclass:: abaqus.Material.Multiscale.MeanFieldInclusion.MeanFieldInclusion
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
-.. autoclass:: abaqus.Material.Multiscale.MeanFieldMatrix.MeanFieldMatrix
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
-.. autoclass:: abaqus.Material.Multiscale.MeanFieldVoid.MeanFieldVoid
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
->>>>>>> dddd4cfa (Show inheritance for classes (#2703))
