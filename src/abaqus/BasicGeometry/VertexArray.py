@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import List, Sequence, Union, overload
+from typing import List, Sequence, Union, overload, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Vertex import Vertex
@@ -56,8 +56,33 @@ class VertexArray(List[Vertex]):
         """
         ...
 
+    @overload
     @abaqus_method_doc
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> ConstrainedSketchVertex:
+    def findAt(
+        self, coordinates: Tuple[float, float, float], printWarning: Boolean = True,
+    ) -> ConstrainedSketchVertex:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self,
+        coordinates: Tuple[Tuple[float, float, float],],
+        printWarning: Boolean = True,
+    ) -> List[ConstrainedSketchVertex]:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self,
+        *coordinates: Tuple[Tuple[float, float, float],],
+        printWarning: Boolean = True,
+    ) -> List[ConstrainedSketchVertex]:
+        ...
+
+    @abaqus_method_doc
+    def findAt(self, *args, **kwargs)-> Union[ConstrainedSketchVertex, List[ConstrainedSketchVertex]]:
         """This method returns the object or objects in the VertexArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any ConstrainedSketchVertex
@@ -90,7 +115,8 @@ class VertexArray(List[Vertex]):
             A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object or a sequence of ConstrainedSketchVertex objects..
 
         """
-        ...
+        first_arg = kwargs.get('coordinates', args[0] if args else ((),))
+        return ConstrainedSketchVertex() if isinstance(first_arg[0], float) else [ConstrainedSketchVertex()]
 
     @overload
     @abaqus_method_doc

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Union, List, Dict, Sequence, overload
+from typing import Union, List, Dict, Sequence, overload, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .IgnoredVertex import IgnoredVertex
@@ -22,8 +22,31 @@ class IgnoredVertexArray(List[IgnoredVertex]):
             mdb.models[name].rootAssembly.instances[name].ignoredVertices
     """
 
+    @overload
     @abaqus_method_doc
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> Union[IgnoredVertex, List[IgnoredVertex]]:
+    def findAt(self, coordinates: Tuple[float, float, float], printWarning: Boolean = True) -> IgnoredVertex:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self,
+        coordinates: Tuple[Tuple[float, float, float],],
+        printWarning: Boolean = True,
+    ) -> List[IgnoredVertex]:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self,
+        *coordinates: Tuple[Tuple[float, float, float],],
+        printWarning: Boolean = True,
+    ) -> List[IgnoredVertex]:
+        ...
+
+    @abaqus_method_doc
+    def findAt(self, *args, **kwargs)-> Union[IgnoredVertex, List[IgnoredVertex]]:
         """This method returns the object or objects in the IgnoredVertexArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any
@@ -57,7 +80,8 @@ class IgnoredVertexArray(List[IgnoredVertex]):
             An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object or a sequence of IgnoredVertex objects.
 
         """
-        return IgnoredVertex()
+        first_arg = kwargs.get('coordinates', args[0] if args else ((),))
+        return IgnoredVertex() if isinstance(first_arg[0], float) else [IgnoredVertex()]
 
     @overload
     @abaqus_method_doc

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Union, List, Dict, Sequence, overload
+from typing import Union, List, Dict, Sequence, overload, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .IgnoredEdge import IgnoredEdge
@@ -22,8 +22,31 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
             mdb.models[name].rootAssembly.instances[name].ignoredEdges
     """
 
+    @overload
     @abaqus_method_doc
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> Union[IgnoredEdge, List[IgnoredEdge]]:
+    def findAt(self, coordinates: Tuple[float, float, float], printWarning: Boolean = True) -> IgnoredEdge:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self,
+        coordinates: Tuple[Tuple[float, float, float],],
+        printWarning: Boolean = True,
+    ) -> List[IgnoredEdge]:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self,
+        *coordinates: Tuple[Tuple[float, float, float],],
+        printWarning: Boolean = True,
+    ) -> List[IgnoredEdge]:
+        ...
+
+    @abaqus_method_doc
+    def findAt(self, *args, **kwargs) -> Union[IgnoredEdge, List[IgnoredEdge]]:
         """This method returns the object or objects in the IgnoredEdgeArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any
@@ -60,7 +83,8 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
             An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object or a sequence of IgnoredEdge objects.
 
         """
-        return IgnoredEdge()
+        first_arg = kwargs.get('coordinates', args[0] if args else ((),))
+        return IgnoredEdge() if isinstance(first_arg[0], float) else [IgnoredEdge()]
 
     @overload
     @abaqus_method_doc

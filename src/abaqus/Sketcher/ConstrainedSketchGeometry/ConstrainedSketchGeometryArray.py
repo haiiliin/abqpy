@@ -1,4 +1,4 @@
-from typing import Union, List
+from typing import Union, List, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
@@ -17,7 +17,7 @@ class ConstrainedSketchGeometryArray(List[ConstrainedSketchGeometry]):
     """
 
     @abaqus_method_doc
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> Union[ConstrainedSketchGeometry, List[ConstrainedSketchGeometry]]:
+    def findAt(self, coordinates: Tuple[float, float], printWarning: Boolean = True) -> ConstrainedSketchGeometry:
         """This method returns the ConstrainedSketchGeometry object located at the given
         coordinates.
 
