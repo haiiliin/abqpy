@@ -136,34 +136,7 @@ class FaceArray(List[Face]):
         return Face() if isinstance(first_arg[0], float) else [Face()]
 
     @abaqus_method_doc
-<<<<<<< HEAD
     def getSequenceFromMask(self, mask: str):
-=======
-    def getExteriorEdges(self) -> EdgeArray:
-        """This method returns the edges on the exterior of the faces in the FaceArray. That is, it
-        returns the edges that are referenced by exactly one of the faces in the sequence.
-
-        Returns
-        -------
-        EdgeArray
-            An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying the exterior edges.
-
-        """
-        ...
-
-    @overload
-    @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str) -> Face:
-        ...
-
-    @overload
-    @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Sequence[str]) -> List[Face]:
-        ...
-
-    @abaqus_method_doc
-    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Face, List[Face]]:
->>>>>>> ea64af3a (Correct some methods (#2719))
         """This method returns the object or objects in the FaceArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
         COMPRESSEDINDEX. When a large number of objects are involved, this method is highly
