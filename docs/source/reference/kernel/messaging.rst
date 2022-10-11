@@ -12,7 +12,8 @@ DataObject
 
 .. autoclass:: abaqus.Messaging.DataObject.DataObject
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -21,7 +22,8 @@ MonitorMgr
 
 .. autoclass:: abaqus.Messaging.MonitorMgr.MonitorMgr
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
