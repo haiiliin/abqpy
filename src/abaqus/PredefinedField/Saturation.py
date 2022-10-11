@@ -9,11 +9,10 @@ from ..UtilityAndView.abaqusConstants import UNIFORM
 
 @abaqus_class_doc
 class Saturation(PredefinedField):
-    """The Saturation object stores the data for an initial pore pressure predefined field.
+    """The Saturation object stores the data for a saturation predefined field.
     The Saturation object is derived from the PredefinedField object.
 
     .. note::
-    
         This object can be accessed by::
 
             import load

@@ -14,7 +14,6 @@ class VoidsRatio(PredefinedField):
     The VoidsRatio object is derived from the PredefinedField object.
 
     .. note::
-    
         This object can be accessed by::
 
             import load
