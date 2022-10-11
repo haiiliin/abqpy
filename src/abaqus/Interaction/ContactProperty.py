@@ -455,7 +455,7 @@ class ContactProperty(InteractionProperty):
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         tolerance: float = 0,
-        specifyUnstableCrackProp: SymbolicConstant = OFF,
+        specifyUnstableCrackProp: Union[SymbolicConstant, Boolean] = OFF,
         unstableTolerance: Union[SymbolicConstant, float] = DEFAULT,
     ):
         """This method creates a FractureCriterion object.
