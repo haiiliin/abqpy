@@ -21,8 +21,8 @@ Assign features to optimization tasks
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 BeadFixedRegion
 ~~~~~~~~~~~~~~~

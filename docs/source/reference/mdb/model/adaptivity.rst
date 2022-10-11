@@ -35,8 +35,8 @@ Create features for AdaptivityIteration
     .. autoclasstoc::
 
 
-Object Features
----------------
+Classes
+-------
 
 AdaptiveMeshConstraint
 ~~~~~~~~~~~~~~~~~~~~~~
