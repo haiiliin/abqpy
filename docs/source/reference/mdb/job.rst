@@ -26,7 +26,8 @@ Coexecution
 
 .. autoclass:: abaqus.Job.Coexecution.Coexecution
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -35,7 +36,8 @@ Job
 
 .. autoclass:: abaqus.Job.Job.Job
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -44,7 +46,8 @@ JobFromInputFile
 
 .. autoclass:: abaqus.Job.JobFromInputFile.JobFromInputFile
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -53,7 +56,8 @@ Message
 
 .. autoclass:: abaqus.Job.Message.Message
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -62,7 +66,8 @@ MessageArray
 
 .. autoclass:: abaqus.Job.MessageArray.MessageArray
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -71,7 +76,8 @@ ModelJob
 
 .. autoclass:: abaqus.Job.ModelJob.ModelJob
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -80,7 +86,8 @@ OptimizationProcess
 
 .. autoclass:: abaqus.Job.OptimizationProcess.OptimizationProcess
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -89,4 +96,5 @@ Queue
 
 .. autoclass:: abaqus.Job.Queue.Queue
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
