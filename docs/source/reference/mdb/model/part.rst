@@ -16,8 +16,8 @@ Create parts
     :members:
     :special-members: __init__
 
-Object features
----------------
+Classes
+-------
 
 Part
 ~~~~
@@ -25,7 +25,6 @@ Part
 .. autoclass:: abaqus.Part.Part.Part
     :members:
     :special-members: __init__
-    :inherited-members:
 
     .. autoclasstoc::
 

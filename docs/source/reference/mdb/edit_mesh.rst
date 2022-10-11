@@ -5,8 +5,8 @@ Edit Mesh
 Edit mesh commands are used to edit an orphan mesh part or part instance or an Abaqus native mesh.
 
 
-Object features
----------------
+Classes
+-------
 
 Edit mesh features of Assembly
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
