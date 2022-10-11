@@ -12,6 +12,8 @@ Create optimization tasks
     :special-members: __init__
     :show-inheritance:
 
+    .. autoclasstoc::
+
 Assign features to optimization tasks
 -------------------------------------
 
