@@ -15,8 +15,8 @@ Create annotations
 .. automethod:: abaqus.Annotation.AnimationUserData.AnimationUserData.XYData
 
 
-Object features
----------------
+Classes
+-------
 
 Annotation
 ~~~~~~~~~~
