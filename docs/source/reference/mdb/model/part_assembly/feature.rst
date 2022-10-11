@@ -13,7 +13,8 @@ Feature
 
 .. autoclass:: abaqus.Feature.Feature.Feature
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -22,6 +23,7 @@ FeatureOptions
 
 .. autoclass:: abaqus.Feature.FeatureOptions.FeatureOptions
     :members:
-    :special-members: __init__
+    :special-members:
+    :show-inheritance:
 
     .. autoclasstoc::

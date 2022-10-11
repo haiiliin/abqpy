@@ -21,4 +21,5 @@ ScriptTemplate
 
 .. autoclass:: abqpy.template.ScriptTemplate
    :members:
-   :special-members: __init__
+   :special-members:
+   :show-inheritance:
