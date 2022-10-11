@@ -68,13 +68,13 @@ class PartBase(PartFeature):
     vertices: VertexArray = VertexArray([])
 
     #: An :py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` object specifying all the ignored vertices in the part.
-    ignoredVertices: IgnoredVertexArray = []
+    ignoredVertices: IgnoredVertexArray = IgnoredVertexArray()
 
     #: An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object specifying all the edges in the part.
     edges: EdgeArray = EdgeArray([])
 
     #: An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` object specifying all the ignored edges in the part.
-    ignoredEdges: IgnoredEdgeArray = []
+    ignoredEdges: IgnoredEdgeArray = IgnoredEdgeArray()
 
     #: A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object specifying all the faces in the part.
     faces: FaceArray = FaceArray([])
