@@ -58,4 +58,4 @@ RepositorySupport
 
 .. autoclass:: abaqus.CustomKernel.RepositorySupport.RepositorySupport
     :members:
-    :special-members: __init__ __init__
+    :special-members: __init__
