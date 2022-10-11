@@ -15,8 +15,8 @@ Create constraints
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 Constraint
 ~~~~~~~~~~

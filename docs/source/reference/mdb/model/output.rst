@@ -19,8 +19,8 @@ Create DiagnosticPrint, Monitor and Restart information for Step
     :members:
     :special-members: __init__
 
-Object features
----------------
+Classes
+-------
 
 DiagnosticPrint
 ~~~~~~~~~~~~~~~
