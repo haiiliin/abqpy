@@ -26,7 +26,8 @@ statements in your installed Python interpreter, with a simple command line laun
 
 However, there are other execution procedures that can be run with the `abaqus`
 command and also another options that could be passed to these commands. To supply
-that procedures and options, `abqpy` provides a separate **command line interface**.
+that procedures and options, `abqpy` provides two alternatives. One of them is a 
+separate **command line interface** (another alternative is to use an environment variable).
 
 .. code-block::
 
@@ -48,8 +49,8 @@ that procedures and options, `abqpy` provides a separate **command line interfac
                             command line options used to run Abaqus Python command
     --                    argument to pass the script after abaqus command line options
 
-Currently, `abqpy` command line interface provides 3 execution modes: **Abaqus/CAE**
-Execution in 2 modes: GUI and noGUI modes; and **Abaqus Python** Execution mode.
+Currently, `abqpy` command line interface provides 3 execution modes: **Abaqus/CAE
+Execution** GUI and noGUI modes; and **Abaqus Python Execution** mode.
 
 Examples
 --------
@@ -69,7 +70,13 @@ Examples
     
        abqpy script.py [args ...] -n database=file.odb # noGUI mode
 
-3. If you want to pass your python script file name after the abaqus command line
+3. If you want to run you python script in Abaqus Python Execution mode, you could run:
+
+   .. code-block:: sh
+
+       abqpy script.py [args ...] -p
+
+4. If you want to pass your python script file name after the abaqus command line
    options, you will need to use the ``--`` argument before the script filename, to
    prevent `abqpy` from attempting to parse it to abaqus:
    

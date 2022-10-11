@@ -11,5 +11,6 @@ components of the abqpy project.
 
    cli
    templates
+   envvars
    summary
    references
