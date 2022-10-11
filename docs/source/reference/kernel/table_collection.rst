@@ -22,8 +22,8 @@ Creat table collections for Model
 
     .. autoclasstoc::
 
-Object features
----------------
+Classes
+-------
 
 ActivateElements
 ~~~~~~~~~~~~~~~~

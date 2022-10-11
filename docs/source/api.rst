@@ -10,7 +10,6 @@ components of the abqpy project.
    :caption: API References
 
    cli
-   templates
    envvars
-   summary
+   templates
    references
