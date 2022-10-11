@@ -14,6 +14,7 @@ Viewport
 .. autoclass:: abaqus.Canvas.Viewport.Viewport
     :members:
     :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -27,6 +28,7 @@ Annotation features of Viewport
 .. autoclass:: abaqus.Annotation.AnnotationViewport.AnnotationViewport
     :members:
     :special-members: __init__
+    :show-inheritance:
     :noindex:
 
     .. autoclasstoc::
@@ -37,6 +39,7 @@ AttributeColorMap
 .. autoclass:: abaqus.Canvas.AttributeColorMap.AttributeColorMap
     :members:
     :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -46,6 +49,7 @@ Canvas
 .. autoclass:: abaqus.Canvas.Canvas.Canvas
     :members:
     :special-members: __init__
+    :show-inheritance:
 
 Displayable
 ~~~~~~~~~~~
@@ -53,6 +57,7 @@ Displayable
 .. autoclass:: abaqus.Canvas.Displayable.Displayable
     :members:
     :special-members: __init__
+    :show-inheritance:
 
 DrawingArea
 ~~~~~~~~~~~
@@ -60,6 +65,7 @@ DrawingArea
 .. autoclass:: abaqus.Canvas.DrawingArea.DrawingArea
     :members:
     :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -69,6 +75,7 @@ Highlight
 .. automodule:: abaqus.Canvas.Highlight
     :members:
     :special-members: __init__
+    :show-inheritance:
 
 ImageOptions
 ~~~~~~~~~~~~
@@ -76,6 +83,7 @@ ImageOptions
 .. autoclass:: abaqus.Canvas.ImageOptions.ImageOptions
     :members:
     :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -85,6 +93,7 @@ Layer
 .. autoclass:: abaqus.Canvas.Layer.Layer
     :members:
     :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -94,6 +103,7 @@ MovieOptions
 .. autoclass:: abaqus.Canvas.MovieOptions.MovieOptions
     :members:
     :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
