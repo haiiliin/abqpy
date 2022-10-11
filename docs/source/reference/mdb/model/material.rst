@@ -15,6 +15,8 @@ In Mdb
     :special-members: __init__
     :show-inheritance:
 
+    .. autoclasstoc::
+
 In Odb
 ~~~~~~
 
