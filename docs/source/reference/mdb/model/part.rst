@@ -13,10 +13,14 @@ Create parts
     :special-members: __init__
     :show-inheritance:
 
+    .. autoclasstoc::
+
 .. autoclass:: abaqus.Part.PartBase.PartBase
     :members:
     :special-members: __init__
     :show-inheritance:
+
+    .. autoclasstoc::
 
 Classes
 -------

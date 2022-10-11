@@ -13,6 +13,8 @@ Create predefined fields
     :special-members: __init__
     :show-inheritance:
 
+    .. autoclasstoc::
+
 Classes
 -------
 

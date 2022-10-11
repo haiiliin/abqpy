@@ -38,6 +38,8 @@ Create regions for Part
     :special-members: __init__
     :show-inheritance:
 
+    .. autoclasstoc::
+
 Create regions for Assembly
 ---------------------------
 
@@ -45,6 +47,8 @@ Create regions for Assembly
     :members:
     :special-members: __init__
     :show-inheritance:
+
+    .. autoclasstoc::
 
 
 Classes
