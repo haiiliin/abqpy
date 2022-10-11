@@ -38,8 +38,8 @@ Create interactions
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 ContactControl
 ~~~~~~~~~~~~~~

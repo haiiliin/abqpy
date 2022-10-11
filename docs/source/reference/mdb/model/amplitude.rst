@@ -27,8 +27,8 @@ In Odb
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 Amplitude
 ~~~~~~~~~

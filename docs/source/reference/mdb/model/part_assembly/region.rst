@@ -45,8 +45,8 @@ Create regions for Assembly
     :special-members: __init__
 
 
-Object features
----------------
+Classes
+-------
 
 Region features for Part
 ~~~~~~~~~~~~~~~~~~~~~~~~
