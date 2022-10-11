@@ -12,8 +12,8 @@ Create predefined fields
     :members:
     :special-members: __init__
 
-Object features
----------------
+Classes
+-------
 
 PredefinedField
 ~~~~~~~~~~~~~~~
