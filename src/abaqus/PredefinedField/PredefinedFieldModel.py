@@ -1,17 +1,22 @@
-from typing import Optional
+from typing import Optional, Union
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .FluidCavityPressure import FluidCavityPressure
 from .InitialState import InitialState
 from .KinematicHardening import KinematicHardening
 from .MaterialAssignment import MaterialAssignment
+from .PorePressure import PorePressure
+from .Saturation import Saturation
 from .Stress import Stress
 from .Temperature import Temperature
 from .Velocity import Velocity
+from .VoidsRatio import VoidsRatio
 from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT_THROUGH_THICKNESS,
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT_THROUGH_THICKNESS, CONSTANT_RATIO,
                                               KINEMATIC_HARDENING, LAST_STEP, MAGNITUDE, OFF,
                                               STEP_END, SymbolicConstant, UNIFORM, UNSET)
 
@@ -229,6 +234,94 @@ class PredefinedFieldModel(ModelBase):
         return predefinedField
 
     @abaqus_method_doc
+    def PorePressure(
+        self,
+        name: str,
+        region: Region,
+        distributionType: Literal[C.UNIFORM, C.FROM_FILE, C.USER_DEFINED] = UNIFORM,
+        porePressure1: float = ...,
+        porePressure2: float = ...,
+        coord1: float = ...,
+        coord2: float = ...,
+        pressure2Distribution: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
+        pressure2Field: str = ...,
+        variation: Literal[C.CONSTANT_RATIO, C.VARIABLE_RATIO] = CONSTANT_RATIO,
+        fileName: str = ...,
+        increment: Union[int, Literal[C.LAST_INCREMENT]] = ...,
+        step: Union[int, Literal[C.LAST_STEP]] = ...,
+        interpolate: Boolean = ...,
+    ) -> PorePressure:
+        """This method creates a PorePressure predefined field object.
+
+        .. note::
+        
+            This function can be accessed by::
+
+                mdb.models[name].PorePressure
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        region
+            A Region object specifying the region to which the predefined field is applied. Region
+            is ignored if the predefined field has **distributionType** = FROM_FILE.
+        distributionType
+            A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM,
+            FROM_FILE and USER_DEFINED. The default value is UNIFORM.
+        porePressure1
+            The initial pore pressure in the first region in your model.
+        porePressure2
+            The pore pressure of the second location in your model
+        coord1
+            Vertical position of the first location in your model for which you are specifying initial pore pressure.
+        coord2
+            The vertical position of the second location in your model.
+        pressure2Distribution
+            A SymbolicConstant specifying either the magnitude of a uniform distribution for pore pressure at the
+            second elevation or an analytical field to define a spatially varying initial pore pressure at the second elevation.
+            Possible values are MAGNITUDE and ANALYTICAL_FIELD.
+        pressure2Field
+            A String specifying the name of the AnalyticalField object associated with this predefined field.
+            The `pressure2Field` argument applies only when `distributionType` = ANALYTICAL_FIELD.
+        variation
+            A SymbolicConstant selecting the elevation distribution options, either Linear or Constant.
+            Possible values are CONSTANT_RATIO and VARIABLE_RATIO.
+        fileName
+            A String specifying the name of the file from which the Field values are to be read when 
+            `distributionType` = FROM_FILE.
+        increment
+            The SymbolicConstant LAST_INCREMENT or an Int specifying the increment, interval or iteration
+            of the step when `distributionType` = FROM_FILE.
+        step
+            The SymbolicConstant LAST_STEP or an Int specifying the increment, interval or iteration
+            of the step when `distributionType` = FROM_FILE.
+        interpolate
+            A Boolean specifying whether to interpolate a field read from an output database or results file.
+
+        Returns
+        -------
+            A PorePressure object.
+        """
+        self.predefinedFields[name] = predefinedField = PorePressure(
+            name,
+            region,
+            distributionType,
+            porePressure1,
+            porePressure2,
+            coord1,
+            coord2,
+            pressure2Distribution,
+            pressure2Field,
+            variation,
+            fileName,
+            increment,
+            step,
+            interpolate,
+        )
+        return predefinedField
+
+    @abaqus_method_doc
     def Temperature(
         self,
         name: str,
@@ -243,7 +336,7 @@ class PredefinedFieldModel(ModelBase):
         beginIncrement: Optional[SymbolicConstant] = None,
         endStep: Optional[SymbolicConstant] = None,
         endIncrement: Optional[SymbolicConstant] = None,
-        interpolate: SymbolicConstant = OFF,
+        interpolate: Union[SymbolicConstant, Boolean] = OFF,
         magnitudes: str = "",
         absoluteExteriorTolerance: float = 0,
         exteriorTolerance: float = 0,
@@ -434,18 +527,65 @@ class PredefinedFieldModel(ModelBase):
         return predefinedField
 
     @abaqus_method_doc
+    def Saturation(
+        self,
+        name: str,
+        region: Region,
+        distributionType: Literal[C.UNIFORM, C.FIELD] = UNIFORM,
+        field: str = '',
+        value: float = ...
+    ) -> Saturation:
+        """This method creates a Saturation predefined field object.
+
+        .. note::
+
+            This function can be accessed by::
+
+                mdb.models[name].Saturation
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        region
+            A Region object specifying the region to which the predefined field is applied.
+        distributionType
+            A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM,
+            and FIELD. The default value is UNIFORM.
+        field
+            A String specifying the name of the AnalyticalField object associated
+            with this predefined field. The **field** argument applies only when
+            **distributionType** = FIELD. The default value is an empty string.
+        value
+            A float specifying an initial saturation value for the region between 0.0 (for no
+            saturation) and 1.0 (for full saturation).
+
+        Returns
+        -------
+            A Saturation object.
+        """
+        self.predefinedFields[name] = predefinedField = Saturation(
+            name,
+            region,
+            distributionType,
+            field,
+            value,
+        )
+        return predefinedField
+
+    @abaqus_method_doc
     def Stress(
         self,
         name: str,
         region: Region,
-        distributionType: SymbolicConstant = UNIFORM,
-        sigma11: Optional[float] = None,
-        sigma22: Optional[float] = None,
-        sigma33: Optional[float] = None,
-        sigma12: Optional[float] = None,
-        sigma13: Optional[float] = None,
-        sigma23: Optional[float] = None,
-    ):
+        distributionType: Literal[C.UNIFORM, C.FROM_FILE] = UNIFORM,
+        sigma11: float = ...,
+        sigma22: float = ...,
+        sigma33: float = ...,
+        sigma12: float = ...,
+        sigma13: float = ...,
+        sigma23: float = ...,
+    ) -> Stress:
         """This method creates a Stress predefined field object.
 
         .. note::
@@ -495,3 +635,232 @@ class PredefinedFieldModel(ModelBase):
             sigma23,
         )
         return predefinedField
+<<<<<<< HEAD
+=======
+    
+    @abaqus_method_doc
+    def Field(
+        self,
+        name: str,
+        createStepName: str,
+        region: Region,
+        outputVariable: str = "",
+        fieldVariableNum: Optional[int] = None,
+        distributionType: SymbolicConstant = UNIFORM,
+        crossSectionDistribution: SymbolicConstant = CONSTANT_THROUGH_THICKNESS,
+        field: str = "",
+        amplitude: str = UNSET,
+        fileName: str = "",
+        beginStep: Optional[SymbolicConstant] = None,
+        beginIncrement: Optional[SymbolicConstant] = None,
+        endStep: Optional[SymbolicConstant] = None,
+        endIncrement: Optional[SymbolicConstant] = None,
+        interpolate: Union[SymbolicConstant, Boolean] = OFF,
+        magnitudes: str = "",
+    ):
+        """This method creates a Field object.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.models[name].Field
+
+        .. versionadded:: 2018
+            The `Field` method was added.
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        createStepName
+            A String specifying the name of the step in which the predefined field is created.
+        region
+            A Region object specifying the region to which the predefined field is applied. *Region*
+            is ignored if the predefined field has a **distributionType** member available, and
+            **distributionType** = FROM_FILE.
+        outputVariable
+            A String specifying the scalar nodal output variable that will be read from an output
+            database and used to initialize a specified predefined field. This argument is a
+            required argument if **distributionType** = FROM_FILE or
+            **distributionType** = FROM_FILE_AND_USER_DEFINED.
+        fieldVariableNum
+            An Int specifying the field variable number.
+        distributionType
+            A SymbolicConstant specifying how the predefined field varies spatially. Possible values
+            are UNIFORM, USER_DEFINED, FROM_FILE, FIELD, FROM_FILE_AND_USER_DEFINED, and
+            DISCRETE_FIELD. The default value is UNIFORM.
+        crossSectionDistribution
+            A SymbolicConstant specifying how the predefined field is distributed over the
+            cross-section of the region. Possible values are
+            
+            - CONSTANT_THROUGH_THICKNESS
+            - GRADIENTS_THROUGH_SHELL_CS
+            - GRADIENTS_THROUGH_BEAM_CS
+            - POINTS_THROUGH_SECTION
+            
+            The default value is CONSTANT_THROUGH_THICKNESS.
+        field
+            A String specifying the name of the AnalyticalField or DiscreteField object associated
+            with this predefined field. The **field** argument applies only when
+            **distributionType** = FIELD or **distributionType** = DISCRETE_FIELD. The default value is an
+            empty string.
+        amplitude
+            A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
+            UNSET should be used if the predefined field has no amplitude reference. The default
+            value is UNSET. 
+            
+            .. note::
+                **amplitude** should be given only if it is valid for the specified step.
+        fileName
+            A String specifying the name of the file from which the Field values are to be read when
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED.
+        beginStep
+            An Int specifying the first step from which Field values are to be read or the
+            SymbolicConstant FIRST_STEP or LAST_STEP. This argument is valid only when
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
+            default value is None.
+        beginIncrement
+            An Int specifying the first increment of the step set in **beginStep** or the
+            SymbolicConstants STEP_START or STEP_END. This argument is valid only when
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
+            default value is None.
+        endStep
+            An Int specifying the last step from which Field values are to be read or the
+            SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid only when
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
+            default value is None.
+        endIncrement
+            An Int specifying the last increment of the step set in **endStep** or the
+            SymbolicConstants STEP_START and STEP_END. This argument is valid only when
+            **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The
+            default value is None.
+        interpolate
+            A SymbolicConstant specifying whether to interpolate a field read from an output
+            database or results file. Possible values are OFF, ON, or MIDSIDE_ONLY. The default
+            value is OFF.
+        magnitudes
+            A Sequence of Doubles specifying the Field values when **distributionType** = UNIFORM or
+            FIELD. The value of the **magnitudes** argument is a function of the
+            **crossSectionDistribution** argument, as shown in the following list:
+            
+            - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS, **magnitudes** is a Double
+              specifying the Field.
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, **magnitudes** is a sequence
+              of Doubles specifying the mean value and the gradient in the thickness direction.
+            - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS, **magnitudes** is a sequence of
+              Doubles specifying the mean value, the gradient in the N1 direction, and the gradient in
+              the N2 direction.
+            - If **crossSectionDistribution** = POINTS_THROUGH_SECTION, **magnitudes** is a sequence of
+              Doubles specifying the Field at each point.
+
+        Returns
+        -------
+            A Field object.
+        """
+        self.predefinedFields[name] = predefinedField = Field(
+            name,
+            createStepName,
+            region,
+            outputVariable,
+            fieldVariableNum,
+            distributionType,
+            crossSectionDistribution,
+            field,
+            amplitude,
+            fileName,
+            beginStep,
+            beginIncrement,
+            endStep,
+            endIncrement,
+            interpolate,
+            magnitudes,
+        )
+        return predefinedField
+
+    @abaqus_method_doc
+    def VoidsRatio(
+        self,
+        name: str,
+        region: Region,
+        distributionType: Literal[C.UNIFORM, C.FROM_FILE, C.USER_DEFINED] = UNIFORM,
+        voidsRatio1: float = ...,
+        voidsRatio2: float = ...,
+        coord1: float = ...,
+        coord2: float = ...,
+        ratio2Distribution: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
+        ratio2Field: str = ...,
+        variation: Literal[C.CONSTANT_RATIO, C.VARIABLE_RATIO] = CONSTANT_RATIO,
+        fileName: str = ...,
+        increment: Union[int, Literal[C.LAST_INCREMENT]] = ...,
+        step: Union[int, Literal[C.LAST_STEP]] = ...,
+        interpolate: Boolean = ...,
+    ) -> VoidsRatio:
+        """This method creates a PorePressure predefined field object.
+
+        .. note::
+        This function can be accessed by::
+
+            mdb.models[name].PorePressure
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        region
+            A Region object specifying the region to which the predefined field is applied. Region
+            is ignored if the predefined field has **distributionType** = FROM_FILE.
+        distributionType
+            A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM,
+            FROM_FILE and USER_DEFINED. The default value is UNIFORM.
+        voidsRatio1
+            The initial void ratio in the first region in your model.
+        voidsRatio2
+            The void ratio of the second location in your model
+        coord1
+            Vertical position of the first location in your model for which you are specifying initial void ratio.
+        coord2
+            The vertical position of the second location in your model
+        ratio2Distribution
+            A SymbolicConstant specifying either the magnitude of a uniform distribution for void ratio at the
+            second elevation or an analytical field to define a spatially varying initial void ratio at the second elevation.
+            Possible values are MAGNITUDE and ANALYTICAL_FIELD.
+        ratio2Field
+            A String specifying the name of the AnalyticalField object associated with this predefined field.
+            The `ratio2Field` argument applies only when `distributionType` = ANALYTICAL_FIELD.
+        variation
+            A SymbolicConstant selecting the elevation distribution options, either Linear or Constant.
+            Possible values are CONSTANT_RATIO and VARIABLE_RATIO.
+        fileName
+            A String specifying the name of the file from which the Field values are to be read when 
+            `distributionType` = FROM_FILE.
+        increment
+            The SymbolicConstant LAST_INCREMENT or an Int specifying the increment, interval or iteration
+            of the step when `distributionType` = FROM_FILE.
+        step
+            The SymbolicConstant LAST_STEP or an Int specifying the increment, interval or iteration
+            of the step when `distributionType` = FROM_FILE.
+        interpolate
+            A Boolean specifying whether to interpolate a field read from an output database or results file.
+
+        Returns
+        -------
+            A VoidsRatio object.
+        """
+        self.predefinedFields[name] = predefinedField = VoidsRatio(
+            name,
+            region,
+            distributionType,
+            voidsRatio1,
+            voidsRatio2,
+            coord1,
+            coord2,
+            ratio2Distribution,
+            ratio2Field,
+            variation,
+            fileName,
+            increment,
+            step,
+            interpolate,
+        )
+        return predefinedField
+>>>>>>> a6f1e2ba (Continue to improve type hints (#2623))
