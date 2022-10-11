@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import (ACTIVE_CUT_RANGE, Boolean, CENTROID,
@@ -72,7 +72,7 @@ class ViewCutOptions(_CopyOptionsBase):
 
     #: A SymbolicConstant specifying whether to show the heat flow rate when available.
     #: Possible values are ON and OFF. The default value is ON.
-    showHeatFlowRate: SymbolicConstant = ON
+    showHeatFlowRate: Union[SymbolicConstant, Boolean] = ON
 
     #: A SymbolicConstant specifying the summation location for the free body cut. Possible
     #: values are CENTROID and SPECIFY. The default value is CENTROID.
@@ -129,7 +129,7 @@ class ViewCutOptions(_CopyOptionsBase):
         freeBodySumOnPath: Boolean = ON,
         cutFreeBodyMin: float = 0,
         cutFreeBodyMax: float = 0,
-        showHeatFlowRate: SymbolicConstant = ON,
+        showHeatFlowRate: Union[SymbolicConstant, Boolean] = ON,
         summationLoc: SymbolicConstant = CENTROID,
         componentResolution: SymbolicConstant = NORMAL_TANGENTIAL,
         csysName: SymbolicConstant = GLOBAL,
