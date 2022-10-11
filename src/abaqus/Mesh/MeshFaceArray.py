@@ -1,4 +1,6 @@
-from typing import List
+from __future__ import annotations
+
+from typing import List, Sequence, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .MeshFace import MeshFace
@@ -40,7 +42,7 @@ class MeshFaceArray(List[MeshFace]):
         super().__init__()
 
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str):
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> MeshFaceArray:
         """This method returns the objects in the MeshFaceArray identified using the specified
         **mask**. When large number of objects are involved, this method is highly efficient.
 
