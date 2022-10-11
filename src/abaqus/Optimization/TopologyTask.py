@@ -75,7 +75,7 @@ class TopologyTask(OptimizationTask):
     #: A SymbolicConstant specifying the method of quantifying volume that can be removed
     #: immediately in the first design cycle. Possible values are OFF, PERCENTAGE, and
     #: ABSOLUTE. The default value is OFF.
-    firstCycleDeletedVolumeTechnique: SymbolicConstant = OFF
+    firstCycleDeletedVolumeTechnique: Union[SymbolicConstant, Boolean] = OFF
 
     #: A Boolean specifying whether to exclude elements with boundary conditions from the
     #: optimization. The default value is OFF.
@@ -191,7 +191,7 @@ class TopologyTask(OptimizationTask):
         elementDensityDeltaStopCriteria: float = 0,
         filterRadius: Optional[float] = None,
         firstCycleDeletedVolume: float = 5,
-        firstCycleDeletedVolumeTechnique: SymbolicConstant = OFF,
+        firstCycleDeletedVolumeTechnique: Union[SymbolicConstant, Boolean] = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
         freezeLoadRegions: Boolean = ON,
         frequencySpectrumWeight: float = 6,
@@ -354,7 +354,7 @@ class TopologyTask(OptimizationTask):
         elementDensityDeltaStopCriteria: float = 0,
         filterRadius: Optional[float] = None,
         firstCycleDeletedVolume: float = 5,
-        firstCycleDeletedVolumeTechnique: SymbolicConstant = OFF,
+        firstCycleDeletedVolumeTechnique: Union[SymbolicConstant, Boolean] = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
         freezeLoadRegions: Boolean = ON,
         frequencySpectrumWeight: float = 6,
