@@ -12,7 +12,7 @@ CaeGuiPrefs
 
 .. autoclass:: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -22,7 +22,7 @@ CaeKerPrefs
 
 .. autoclass:: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -32,5 +32,5 @@ caePrefsAccess
 
 .. automodule:: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:

@@ -25,7 +25,7 @@ AbaqusBoolean
 
 .. autoclass:: abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -35,7 +35,7 @@ BackwardCompatibility
 
 .. autoclass:: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -45,7 +45,7 @@ Callback
 
 .. automodule:: abaqus.UtilityAndView.Callback
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
 Customization
@@ -53,7 +53,7 @@ Customization
 
 .. automodule:: abaqus.UtilityAndView.Customization
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
 Delete
@@ -61,7 +61,7 @@ Delete
 
 .. automodule:: abaqus.UtilityAndView.Delete
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
 Method
@@ -69,7 +69,7 @@ Method
 
 .. automodule:: abaqus.UtilityAndView.Method
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
 Repository
@@ -77,7 +77,7 @@ Repository
 
 .. autoclass:: abaqus.UtilityAndView.Repository.Repository
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -87,7 +87,7 @@ Status
 
 .. automodule:: abaqus.UtilityAndView.Status
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
 SymbolicConstant
@@ -95,7 +95,7 @@ SymbolicConstant
 
 .. autoclass:: abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -105,7 +105,7 @@ Upgrade
 
 .. automodule:: abaqus.UtilityAndView.Upgrade
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
 User
@@ -113,7 +113,7 @@ User
 
 .. automodule:: abaqus.UtilityAndView.User
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
 View
@@ -121,7 +121,7 @@ View
 
 .. autoclass:: abaqus.UtilityAndView.View.View
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::

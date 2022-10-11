@@ -10,7 +10,7 @@ Create connectors
 
 .. autoclass:: abaqus.Connector.ConnectorSection.ConnectorSection
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
 
@@ -22,7 +22,7 @@ CDCTerm
 
 .. autoclass:: abaqus.Connector.CDCTerm.CDCTerm
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -32,7 +32,7 @@ CDCTermArray
 
 .. autoclass:: abaqus.Connector.CDCTermArray.CDCTermArray
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -42,7 +42,7 @@ ConnectorBehaviorOption
 
 .. autoclass:: abaqus.Connector.ConnectorBehaviorOption.ConnectorBehaviorOption
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -52,7 +52,7 @@ ConnectorBehaviorOptionArray
 
 .. autoclass:: abaqus.Connector.ConnectorBehaviorOptionArray.ConnectorBehaviorOptionArray
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -62,7 +62,7 @@ ConnectorDamage
 
 .. autoclass:: abaqus.Connector.ConnectorDamage.ConnectorDamage
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -72,7 +72,7 @@ ConnectorDamping
 
 .. autoclass:: abaqus.Connector.ConnectorDamping.ConnectorDamping
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -82,7 +82,7 @@ ConnectorElasticity
 
 .. autoclass:: abaqus.Connector.ConnectorElasticity.ConnectorElasticity
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -92,7 +92,7 @@ ConnectorFailure
 
 .. autoclass:: abaqus.Connector.ConnectorFailure.ConnectorFailure
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -102,7 +102,7 @@ ConnectorFriction
 
 .. autoclass:: abaqus.Connector.ConnectorFriction.ConnectorFriction
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -112,7 +112,7 @@ ConnectorLock
 
 .. autoclass:: abaqus.Connector.ConnectorLock.ConnectorLock
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -122,7 +122,7 @@ ConnectorOptions
 
 .. autoclass:: abaqus.Connector.ConnectorOptions.ConnectorOptions
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -132,7 +132,7 @@ ConnectorPlasticity
 
 .. autoclass:: abaqus.Connector.ConnectorPlasticity.ConnectorPlasticity
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -142,7 +142,7 @@ ConnectorPotential
 
 .. autoclass:: abaqus.Connector.ConnectorPotential.ConnectorPotential
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -152,7 +152,7 @@ ConnectorPotentialArray
 
 .. autoclass:: abaqus.Connector.ConnectorPotentialArray.ConnectorPotentialArray
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -162,7 +162,7 @@ ConnectorStop
 
 .. autoclass:: abaqus.Connector.ConnectorStop.ConnectorStop
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -172,7 +172,7 @@ DerivedComponent
 
 .. autoclass:: abaqus.Connector.DerivedComponent.DerivedComponent
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -182,7 +182,7 @@ TangentialBehavior
 
 .. autoclass:: abaqus.Connector.TangentialBehavior.TangentialBehavior
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::

@@ -10,7 +10,7 @@ Create instances
 
 .. autoclass:: abaqus.Assembly.AssemblyModel.AssemblyModel
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -24,7 +24,7 @@ Assembly
 
 .. autoclass:: abaqus.Assembly.Assembly.Assembly
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -34,7 +34,7 @@ AssemblyBase
 
 .. autoclass:: abaqus.Assembly.AssemblyBase.AssemblyBase
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -44,7 +44,7 @@ ConnectorOrientation
 
 .. autoclass:: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -54,7 +54,7 @@ ConnectorOrientationArray
 
 .. autoclass:: abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -64,7 +64,7 @@ AssemblyFeature
 
 .. autoclass:: abaqus.Assembly.AssemblyFeature.AssemblyFeature
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -74,7 +74,7 @@ ModelInstance
 
 .. autoclass:: abaqus.Assembly.ModelInstance.ModelInstance
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -84,7 +84,7 @@ PartInstance
 
 .. autoclass:: abaqus.Assembly.PartInstance.PartInstance
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -94,7 +94,7 @@ PartInstanceArray
 
 .. autoclass:: abaqus.Assembly.PartInstanceArray.PartInstanceArray
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
