@@ -15,7 +15,7 @@ Datum
 
 .. autoclass:: abaqus.Datum.Datum.Datum
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -25,7 +25,7 @@ DatumAxis
 
 .. autoclass:: abaqus.Datum.DatumAxis.DatumAxis
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -35,7 +35,7 @@ DatumCsys
 
 .. autoclass:: abaqus.Datum.DatumCsys.DatumCsys
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -45,7 +45,7 @@ DatumPlane
 
 .. autoclass:: abaqus.Datum.DatumPlane.DatumPlane
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -55,7 +55,7 @@ DatumPoint
 
 .. autoclass:: abaqus.Datum.DatumPoint.DatumPoint
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
