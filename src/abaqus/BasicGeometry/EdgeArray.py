@@ -112,6 +112,7 @@ class EdgeArray(List[Edge]):
             type of input.
 
             * If **coordinates** is a sequence of Floats, findAt returns the Edge object at that point.
+
             * If you omit the **coordinates** keyword argument, findAt accepts as arguments a sequence
               of sequence of floats in the following format::
             

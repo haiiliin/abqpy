@@ -65,10 +65,12 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         coordinates
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**- coordinates of the object to
             find.findAt returns either an IgnoredEdge object or a sequence of IgnoredEdge objects
-            based on the type of input.If **coordinates** is a sequence of Floats, findAt returns the
-            IgnoredEdge object at that point.If you omit the **coordinates** keyword argument, findAt
-            accepts as arguments a sequence of sequence of floats in the following
-            format::
+            based on the type of input.
+
+            * If **coordinates** is a sequence of Floats, findAt returns the IgnoredEdge object at that point.
+
+            * If you omit the **coordinates** keyword argument, findAt accepts as arguments a sequence
+              of sequence of floats in the following format::
             
                 ignoredEdges = e.findAt(((20.19686, -169.513997, 27.798593), ),
                                         ((19.657627, -167.295749, 27.056402), ),

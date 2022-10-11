@@ -62,10 +62,12 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         coordinates
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to
             find.findAt returns either a IgnoredVertex object or a sequence of IgnoredVertex objects
-            based on the type of input.If **coordinates** is a sequence of Floats, findAt returns the
-            IgnoredVertex object at that point.If you omit the **coordinates** keyword argument,
-            findAt accepts as arguments a sequence of sequence of floats in the following
-            format::
+            based on the type of input.
+
+            * If **coordinates** is a sequence of Floats, findAt returns the IgnoredVertex object at that point.
+
+            * If you omit the **coordinates** keyword argument, findAt accepts as arguments
+              a sequence of sequence of floats in the following format::
             
                 verts = v.findAt(((20.19686, -169.513997, 27.798593), ),
                                 ((19.657627, -167.295749, 27.056402), ),
