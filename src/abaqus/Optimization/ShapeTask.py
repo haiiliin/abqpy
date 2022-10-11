@@ -1,4 +1,4 @@
-from typing import Dict, Optional
+from typing import Dict, Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .DesignResponse import DesignResponse
@@ -101,7 +101,7 @@ class ShapeTask(OptimizationTask):
     #: A SymbolicConstant specifying the method of specifying volume that can be removed
     #: immediately in the first design cycle. Possible values are OFF, PERCENTAGE, and
     #: ABSOLUTE. The default value is OFF.
-    firstCycleDeletedVolumeTechnique: SymbolicConstant = OFF
+    firstCycleDeletedVolumeTechnique: Union[SymbolicConstant, Boolean] = OFF
 
     #: A Boolean specifying whether to exclude nodes with boundary conditions from the
     #: optimization. The default value is OFF.
@@ -247,7 +247,7 @@ class ShapeTask(OptimizationTask):
         filterExponent: float = 1,
         filterMaxRadius: Optional[float] = None,
         filterRadiusReduction: Optional[float] = None,
-        firstCycleDeletedVolumeTechnique: SymbolicConstant = OFF,
+        firstCycleDeletedVolumeTechnique: Union[SymbolicConstant, Boolean] = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
         frozenBoundaryConditionRegion: SymbolicConstant = MODEL,
         geometricRestrictionEvaluationFrequency: SymbolicConstant = LOW,
@@ -458,7 +458,7 @@ class ShapeTask(OptimizationTask):
         filterExponent: float = 1,
         filterMaxRadius: Optional[float] = None,
         filterRadiusReduction: Optional[float] = None,
-        firstCycleDeletedVolumeTechnique: SymbolicConstant = OFF,
+        firstCycleDeletedVolumeTechnique: Union[SymbolicConstant, Boolean] = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
         frozenBoundaryConditionRegion: SymbolicConstant = MODEL,
         geometricRestrictionEvaluationFrequency: SymbolicConstant = LOW,

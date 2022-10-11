@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, OFF, ON, SOLID, SymbolicConstant
@@ -54,7 +54,7 @@ class AcisFile:
         self,
         fileName: str,
         topology: Optional[SymbolicConstant] = None,
-        convertUnits: SymbolicConstant = OFF,
+        convertUnits: Union[SymbolicConstant, Boolean] = OFF,
         combineBodies: Boolean = OFF,
     ):
         """This method creates an AcisFile object from a file containing V5-format geometry. This
@@ -138,11 +138,11 @@ class AcisFile:
         self,
         fileName: str,
         trimCurve: SymbolicConstant = DEFAULT,
-        scaleFromFile: SymbolicConstant = OFF,
+        scaleFromFile: Union[SymbolicConstant, Boolean] = OFF,
         msbo: Boolean = False,
         includedLayers: tuple = (),
         topology: SymbolicConstant = SOLID,
-        uniteWires: SymbolicConstant = ON,
+        uniteWires: Union[SymbolicConstant, Boolean] = ON,
     ):
         """This method creates an AcisFile object from a file containing IGES-format geometry. This
         object is subsequently used by the PartFromGeometryFile method.
