@@ -48,7 +48,7 @@ Model
 
 .. autoclass:: abaqus.Model.Model.Model
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -58,7 +58,7 @@ ModelBase
 
 .. autoclass:: abaqus.Model.ModelBase.ModelBase
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
