@@ -34,8 +34,8 @@ In Odb
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 Section
 ~~~~~~~
@@ -43,7 +43,6 @@ Section
 .. autoclass:: abaqus.Section.Section.Section
     :members:
     :special-members: __init__
-    :inherited-members:
 
     .. autoclasstoc::
 

@@ -15,8 +15,8 @@ Create instances
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 Assembly
 ~~~~~~~~
@@ -24,7 +24,6 @@ Assembly
 .. autoclass:: abaqus.Assembly.Assembly.Assembly
     :members:
     :special-members: __init__
-    :inherited-members:
 
     .. autoclasstoc::
 

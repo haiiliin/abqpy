@@ -19,8 +19,8 @@ Session commands are used to create objects that are not stored with the model; 
    session/print
    session/xy
 
-Object features
----------------
+Classes
+-------
 
 Session
 ~~~~~~~
@@ -28,7 +28,6 @@ Session
 .. autoclass:: abaqus.Session.Session.Session
     :members:
     :special-members: __init__
-    :inherited-members:
 
     .. autoclasstoc::
 

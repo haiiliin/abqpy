@@ -13,8 +13,8 @@ Create field reports in Session
     :special-members: __init__
     
 
-Object features
----------------
+Classes
+-------
 
 FieldReportOptions
 ~~~~~~~~~~~~~~~~~~

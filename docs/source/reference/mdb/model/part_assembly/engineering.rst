@@ -12,8 +12,8 @@ Create engineering features
     :members:
     :special-members: __init__
 
-Object features
----------------
+Classes
+-------
 
 Crack
 ~~~~~

@@ -14,6 +14,8 @@ In Mdb
     :members:
     :special-members: __init__
 
+    .. autoclasstoc::
+
 In Odb
 ~~~~~~
 
@@ -24,8 +26,8 @@ In Odb
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 Filter
 ~~~~~~
