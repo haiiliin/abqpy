@@ -12,7 +12,7 @@ EpsOptions
 
 .. autoclass:: abaqus.Print.EpsOptions.EpsOptions
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -22,7 +22,7 @@ PageSetupOptions
 
 .. autoclass:: abaqus.Print.PageSetupOptions.PageSetupOptions
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -32,7 +32,7 @@ PngOptions
 
 .. autoclass:: abaqus.Print.PngOptions.PngOptions
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -42,7 +42,7 @@ PrintOptions
 
 .. autoclass:: abaqus.Print.PrintOptions.PrintOptions
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -52,7 +52,7 @@ PsOptions
 
 .. autoclass:: abaqus.Print.PsOptions.PsOptions
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -62,7 +62,7 @@ SvgOptions
 
 .. autoclass:: abaqus.Print.SvgOptions.SvgOptions
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
