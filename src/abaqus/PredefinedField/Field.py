@@ -1,10 +1,10 @@
-from typing import Optional
+from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .PredefinedField import PredefinedField
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (CONSTANT_THROUGH_THICKNESS, OFF, SymbolicConstant,
-                                              UNIFORM, UNSET)
+                                              UNIFORM, UNSET, Boolean)
 
 
 @abaqus_class_doc
@@ -65,7 +65,7 @@ class Field(PredefinedField):
         beginIncrement: Optional[SymbolicConstant] = None,
         endStep: Optional[SymbolicConstant] = None,
         endIncrement: Optional[SymbolicConstant] = None,
-        interpolate: SymbolicConstant = OFF,
+        interpolate: Union[SymbolicConstant, Boolean] = OFF,
         magnitudes: str = "",
     ):
         """This method creates a Field object.
@@ -198,7 +198,7 @@ class Field(PredefinedField):
         beginIncrement: Optional[SymbolicConstant] = None,
         endStep: Optional[SymbolicConstant] = None,
         endIncrement: Optional[SymbolicConstant] = None,
-        interpolate: SymbolicConstant = OFF,
+        interpolate: Union[SymbolicConstant, Boolean] = OFF,
         magnitudes: str = "",
     ):
         """This method modifies the data for an existing Field object in the step where it is
@@ -291,7 +291,7 @@ class Field(PredefinedField):
         beginIncrement: Optional[SymbolicConstant] = None,
         endStep: Optional[SymbolicConstant] = None,
         endIncrement: Optional[SymbolicConstant] = None,
-        interpolate: SymbolicConstant = OFF,
+        interpolate: Union[SymbolicConstant, Boolean] = OFF,
         magnitudes: str = "",
     ):
         """This method modifies the propagating data for an existing Field object in the specified
