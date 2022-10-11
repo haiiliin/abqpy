@@ -51,6 +51,8 @@ Canvas
     :special-members: __init__
     :show-inheritance:
 
+    .. autoclasstoc::
+
 Displayable
 ~~~~~~~~~~~
 
@@ -58,6 +60,8 @@ Displayable
     :members:
     :special-members: __init__
     :show-inheritance:
+
+    .. autoclasstoc::
 
 DrawingArea
 ~~~~~~~~~~~

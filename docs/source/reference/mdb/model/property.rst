@@ -13,6 +13,8 @@ Create properties for Part
     :special-members: __init__
     :show-inheritance:
 
+    .. autoclasstoc::
+
 Classes
 -------
 

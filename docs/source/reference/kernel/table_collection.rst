@@ -85,6 +85,8 @@ EventSeriesData
     :special-members: __init__
     :show-inheritance:
 
+    .. autoclasstoc::
+
 EventSeriesType
 ~~~~~~~~~~~~~~~
 

@@ -19,6 +19,8 @@ Create steps
     :special-members: __init__
     :show-inheritance:
 
+    .. autoclasstoc::
+
 Classes
 -------
 

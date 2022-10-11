@@ -113,8 +113,6 @@ User
 
 .. automodule:: abaqus.UtilityAndView.User
     :members:
-    :special-members: __init__
-    :show-inheritance:
 
 View
 ~~~~
