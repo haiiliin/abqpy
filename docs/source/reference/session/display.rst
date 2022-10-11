@@ -67,21 +67,7 @@ Leaf
     :special-members:
     :show-inheritance:
 
-<<<<<<< HEAD
     .. autoclasstoc:
-=======
-    .. autoclasstoc::
-
-LeafFromConstraintNames
-~~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
->>>>>>> dddd4cfa (Show inheritance for classes (#2703))
 
 LeafFromDatums
 ~~~~~~~~~~~~~~

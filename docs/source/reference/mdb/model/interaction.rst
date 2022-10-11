@@ -466,39 +466,6 @@ FluidExchangeState
 
     .. autoclasstoc::
 
-<<<<<<< HEAD
-=======
-FluidInflator
-~~~~~~~~~~~~~
-
-.. autoclass:: abaqus.Interaction.FluidInflator.FluidInflator
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
-FluidInflatorProperty
-~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
-FluidInflatorState
-~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: abaqus.Interaction.FluidInflatorState.FluidInflatorState
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
->>>>>>> dddd4cfa (Show inheritance for classes (#2703))
 FractureCriterion
 ~~~~~~~~~~~~~~~~~
 
