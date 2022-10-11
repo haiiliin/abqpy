@@ -15,8 +15,8 @@ Create fields
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 Field
 ~~~~~

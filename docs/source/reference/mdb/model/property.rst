@@ -12,8 +12,8 @@ Create properties for Part
     :members:
     :special-members: __init__
 
-Object features
----------------
+Classes
+-------
 
 CompositeLayup
 ~~~~~~~~~~~~~~
