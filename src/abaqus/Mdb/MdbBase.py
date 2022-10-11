@@ -148,6 +148,12 @@ class MdbBase:
         """This method saves an Mdb object to disk at the location specified by **pathName**
         (*pathName* is a member of the Mdb object).
 
+        Parameters
+        ----------
+        MdbError
+            cannot save file;
+            If the command fails to save the Mdb object to disk for reasons not mentioned above
+
         Raises
         ------
         MdbError
@@ -156,12 +162,6 @@ class MdbBase:
         MdbError
             “abaqus.cae” is an invalid CAE filename;
             If **pathName** is abaqus.cae
-
-        Parameters
-        ----------
-        MdbError
-            cannot save file;
-            If the command fails to save the Mdb object to disk for reasons not mentioned above
         """
         ...
 
@@ -216,10 +216,7 @@ class MdbBase:
     def closeAuxMdb(self):
         """This method closes the auxiliary Mdb which had been opened earlier using the openAuxMdb
         command.
-
-        Raises
-        ------
-
+        
         Parameters
         ----------
         MdbError
