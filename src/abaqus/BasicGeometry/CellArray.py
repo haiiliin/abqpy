@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Union, Tuple, List, Dict, overload
+from typing import Union, Tuple, List, Dict, overload, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Cell import Cell
@@ -134,8 +134,18 @@ class CellArray(List[Cell]):
         """
         ...
 
+    @overload
     @abaqus_method_doc
     def getSequenceFromMask(self, mask: str) -> Cell:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Sequence[str]) -> List[Cell]:
+        ...
+
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Cell, List[Cell]]:
         """This method returns the object or objects in the CellArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
         COMPRESSEDINDEX. When large number of objects are involved, this method is highly
