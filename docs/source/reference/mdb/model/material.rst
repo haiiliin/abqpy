@@ -256,26 +256,6 @@ Gap
 ~~~
 
 
-<<<<<<< HEAD
-
-=======
-.. autoclass:: abaqus.Material.Gap.GapConductance.GapConductance
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
-GapConvection
-*************
-
-.. autoclass:: abaqus.Material.Gap.GapConvection.GapConvection
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
->>>>>>> dddd4cfa (Show inheritance for classes (#2703))
 
 GapFlow
 *******
@@ -287,19 +267,6 @@ GapFlow
 
     .. autoclasstoc::
 
-<<<<<<< HEAD
-=======
-GapRadiation
-************
-
-.. autoclass:: abaqus.Material.Gap.GapRadiation.GapRadiation
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
->>>>>>> dddd4cfa (Show inheritance for classes (#2703))
 Gasket
 ~~~~~~
 
@@ -902,32 +869,6 @@ CrushableFoamHardening
 
     .. autoclasstoc::
 
-<<<<<<< HEAD
-=======
-CrushStress
-*************
-
-CrushStress
-'''''''''''
-
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStress.CrushStress
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
-CrushStressVelocityFactor
-'''''''''''''''''''''''''
-
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStressVelocityFactor.CrushStressVelocityFactor
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
->>>>>>> dddd4cfa (Show inheritance for classes (#2703))
 DruckerPrager
 *************
 
