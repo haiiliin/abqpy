@@ -16,29 +16,6 @@ Create predefined fields
 Classes
 -------
 
-<<<<<<< HEAD
-=======
-Field
-~~~~~
-
-.. autoclass:: abaqus.PredefinedField.Field.Field
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
-FieldState
-~~~~~~~~~~
-
-.. autoclass:: abaqus.PredefinedField.FieldState.FieldState
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
->>>>>>> dddd4cfa (Show inheritance for classes (#2703))
 PredefinedField
 ~~~~~~~~~~~~~~~
 

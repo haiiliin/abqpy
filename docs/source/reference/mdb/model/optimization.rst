@@ -466,19 +466,6 @@ TopologyMemberSize
 
     .. autoclasstoc::
 
-<<<<<<< HEAD
-=======
-TopologyMillingControl
-~~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: abaqus.Optimization.TopologyMillingControl.TopologyMillingControl
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
->>>>>>> dddd4cfa (Show inheritance for classes (#2703))
 TopologyPlanarSymmetry
 ~~~~~~~~~~~~~~~~~~~~~~
 
