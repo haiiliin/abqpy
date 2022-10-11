@@ -12,6 +12,8 @@ Create field reports in Session
     :members:
     :special-members: __init__
     :show-inheritance:
+
+    .. autoclasstoc::
     
 
 Classes
