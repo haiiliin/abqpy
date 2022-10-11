@@ -15,8 +15,8 @@ Create display groups
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 DisplayGroup
 ~~~~~~~~~~~~
