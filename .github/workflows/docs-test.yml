@@ -8,7 +8,7 @@ on:
     types: [opened, reopened, synchronize, labeled]
     paths:
     - 'src/**'
-    - 'docs/source/**'
+    - 'docs/**'
   workflow_dispatch:
 
 concurrency:
