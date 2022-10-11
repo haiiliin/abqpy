@@ -1,9 +1,10 @@
-from typing import Optional
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .PredefinedField import PredefinedField
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import UNIFORM
 
 
 @abaqus_class_doc
@@ -28,14 +29,14 @@ class Stress(PredefinedField):
         self,
         name: str,
         region: Region,
-        distributionType: SymbolicConstant = UNIFORM,
-        sigma11: Optional[float] = None,
-        sigma22: Optional[float] = None,
-        sigma33: Optional[float] = None,
-        sigma12: Optional[float] = None,
-        sigma13: Optional[float] = None,
-        sigma23: Optional[float] = None,
-    ):
+        distributionType: Literal[C.UNIFORM, C.FROM_FILE] = UNIFORM,
+        sigma11: float = ...,
+        sigma22: float = ...,
+        sigma33: float = ...,
+        sigma12: float = ...,
+        sigma13: float = ...,
+        sigma23: float = ...,
+    ) -> None:
         """This method creates a Stress predefined field object.
 
         .. note::
@@ -75,14 +76,14 @@ class Stress(PredefinedField):
     @abaqus_method_doc
     def setValues(
         self,
-        distributionType: SymbolicConstant = UNIFORM,
-        sigma11: Optional[float] = None,
-        sigma22: Optional[float] = None,
-        sigma33: Optional[float] = None,
-        sigma12: Optional[float] = None,
-        sigma13: Optional[float] = None,
-        sigma23: Optional[float] = None,
-    ):
+        distributionType: Literal[C.UNIFORM, C.FROM_FILE] = UNIFORM,
+        sigma11: float = ...,
+        sigma22: float = ...,
+        sigma33: float = ...,
+        sigma12: float = ...,
+        sigma13: float = ...,
+        sigma23: float = ...,
+    ) -> None:
         """This method modifies the Stress object.
 
         Parameters
@@ -102,5 +103,9 @@ class Stress(PredefinedField):
             A Float specifying the second shear component of the stress.
         sigma23
             A Float specifying the third shear component of the stress.
+
+        Returns
+        -------
+            None
         """
         ...
