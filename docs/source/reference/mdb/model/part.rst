@@ -10,12 +10,12 @@ Create parts
 
 .. autoclass:: abaqus.Part.PartModel.PartModel
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
 .. autoclass:: abaqus.Part.PartBase.PartBase
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
 Classes
@@ -26,7 +26,7 @@ Part
 
 .. autoclass:: abaqus.Part.Part.Part
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -36,7 +36,7 @@ PartFeature
 
 .. autoclass:: abaqus.Part.PartFeature.PartFeature
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -46,7 +46,7 @@ MeshEditPart
 
 .. autoclass:: abaqus.EditMesh.MeshEditPart.MeshEditPart
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
     :noindex:
 
@@ -57,7 +57,7 @@ MeshPart
 
 .. autoclass:: abaqus.Mesh.MeshPart.MeshPart
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
     :noindex:
 
@@ -68,7 +68,7 @@ PropertyPart
 
 .. autoclass:: abaqus.Property.PropertyPart.PropertyPart
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
     :noindex:
 
@@ -79,7 +79,7 @@ RegionPart
 
 .. autoclass:: abaqus.Region.RegionPart.RegionPart
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
     :noindex:
 
@@ -90,7 +90,7 @@ AcisFile
 
 .. autoclass:: abaqus.Part.AcisFile.AcisFile
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -100,7 +100,7 @@ AcisMdb
 
 .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
     :noindex:
 
