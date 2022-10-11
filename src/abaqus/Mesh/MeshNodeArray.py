@@ -79,7 +79,7 @@ class MeshNodeArray(List[MeshNode]):
         ...
 
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str) -> MeshNodeArray:
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> MeshNodeArray:
         """This method returns the objects in the MeshNodeArray identified using the specified
         **mask**. This command is generated when the JournalOptions are set to COMPRESSEDINDEX.
         When a large number of objects are involved, this method is highly efficient.
