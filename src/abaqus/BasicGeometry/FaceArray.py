@@ -149,8 +149,18 @@ class FaceArray(List[Face]):
         """
         ...
 
+    @overload
     @abaqus_method_doc
     def getSequenceFromMask(self, mask: str) -> Face:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Sequence[str]) -> List[Face]:
+        ...
+
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Face, List[Face]]:
         """This method returns the object or objects in the FaceArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
         COMPRESSEDINDEX. When a large number of objects are involved, this method is highly
