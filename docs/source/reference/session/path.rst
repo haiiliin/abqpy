@@ -10,7 +10,7 @@ Create paths in Session
 
 .. autoclass:: abaqus.PathAndProbe.PathSession.PathSession
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -21,7 +21,7 @@ Create free bodies in Session
 
 .. autoclass:: abaqus.PathAndProbe.FreeBody.FreeBody
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -34,7 +34,7 @@ CurrentProbeValues
 
 .. autoclass:: abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -44,7 +44,7 @@ NodeQuery
 
 .. autoclass:: abaqus.PathAndProbe.NodeQuery.NodeQuery
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -54,7 +54,7 @@ Path
 
 .. autoclass:: abaqus.PathAndProbe.Path.Path
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -64,7 +64,7 @@ ProbeOptions
 
 .. autoclass:: abaqus.PathAndProbe.ProbeOptions.ProbeOptions
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -74,7 +74,7 @@ ProbeReport
 
 .. autoclass:: abaqus.PathAndProbe.ProbeReport.ProbeReport
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -84,7 +84,7 @@ SelectedProbeValues
 
 .. autoclass:: abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -94,7 +94,7 @@ Spectrum
 
 .. autoclass:: abaqus.PathAndProbe.Spectrum.Spectrum
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
@@ -104,7 +104,7 @@ Stream
 
 .. autoclass:: abaqus.PathAndProbe.Stream.Stream
     :members:
-    :special-members:
+    :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
