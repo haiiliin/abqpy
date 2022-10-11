@@ -15,8 +15,8 @@ Create constrained sketches
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 ConstrainedSketch
 ~~~~~~~~~~~~~~~~~
@@ -24,7 +24,6 @@ ConstrainedSketch
 .. autoclass:: abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch
     :members:
     :special-members: __init__
-    :inherited-members:
 
     .. autoclasstoc::
 
