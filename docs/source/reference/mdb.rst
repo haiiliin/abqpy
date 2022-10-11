@@ -23,7 +23,7 @@ Mdb
 
 .. autoclass:: abaqus.Mdb.Mdb.Mdb
    :members:
-   :special-members:
+   :special-members: __init__
    :show-inheritance:
 
    .. autoclasstoc::
@@ -33,7 +33,7 @@ MdbBase
 
 .. autoclass:: abaqus.Mdb.MdbBase.MdbBase
    :members:
-   :special-members:
+   :special-members: __init__
    :show-inheritance:
 
    .. autoclasstoc::
@@ -43,7 +43,7 @@ AcisMdb
 
 .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
    :members:
-   :special-members:
+   :special-members: __init__
    :show-inheritance:
 
    .. autoclasstoc::
@@ -53,7 +53,7 @@ JobMdb
 
 .. autoclass:: abaqus.Job.JobMdb.JobMdb
    :members:
-   :special-members:
+   :special-members: __init__
    :show-inheritance:
 
    .. autoclasstoc::
