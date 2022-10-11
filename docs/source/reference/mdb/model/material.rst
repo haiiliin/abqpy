@@ -897,32 +897,6 @@ CrushableFoamHardening
 
     .. autoclasstoc::
 
-<<<<<<< HEAD
-=======
-CrushStress
-*************
-
-CrushStress
-'''''''''''
-
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStress.CrushStress
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
-CrushStressVelocityFactor
-'''''''''''''''''''''''''
-
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStressVelocityFactor.CrushStressVelocityFactor
-    :members:
-    :special-members:
-    :show-inheritance:
-
-    .. autoclasstoc::
-
->>>>>>> dddd4cfa (Show inheritance for classes (#2703))
 DruckerPrager
 *************
 
