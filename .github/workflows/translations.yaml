@@ -35,7 +35,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install -r ./docs/requirements.txt
-        python setup.py install
+        pip install .
     - name: Update translations
       run: sh ./docs/source/locales/update.sh
     - name: Create Pull Request
