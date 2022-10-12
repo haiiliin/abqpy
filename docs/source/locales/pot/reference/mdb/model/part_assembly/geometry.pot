@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 10:09+0000\n"
+"POT-Creation-Date: 2022-10-09 00:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -410,7 +410,7 @@ msgstr ""
 #: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face.getEdges:3
 #: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face.getVertices:4
 #: ../../../../src/abaqus/BasicGeometry/Vertex.py:docstring of abaqus.BasicGeometry.Vertex.Vertex.getEdges:5
-msgid ":class:`Tuple[int`, :class:`...]`"
+msgid ":class:`Sequence[int]`"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/Cell.py:docstring of abaqus.BasicGeometry.Cell.Cell.getElements:3
@@ -531,7 +531,7 @@ msgid "This method creates a CellArray object."
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-msgid ":py:obj:`findAt <abaqus.BasicGeometry.CellArray.CellArray.findAt>`\\ \\(coordinates\\[\\, printWarning\\]\\)"
+msgid ":py:obj:`findAt <abaqus.BasicGeometry.CellArray.CellArray.findAt>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -917,23 +917,23 @@ msgstr ""
 msgid "Check `CellArray.findAt on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cellarraypyc.htm?contextscope=all#simaker-cellarrayfindatpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:17
+#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:16
 msgid "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to find. `findAt` returns either a Cell object or a sequence of Cell objects based on the type of input.  * If **coordinates** is a sequence of Floats, findAt returns the Cell object at that point.  * If **coordinates** is a sequence of sequence of Floats, findAt returns a sequence of Cell   objects at the given locations. The sequence of sequence of Floats must be a sequence of   sequence of point and normal data, not a sequence of point data. For example::      cells1 = myCrackedBlockInstance.cells.findAt(((5.5, -8.3, 294.2),),                                                  ((12.1, -8.3, 287.8),),                                                  ((14.4, -10.4, 285.5),),)"
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:17
+#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:16
 msgid "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to find. `findAt` returns either a Cell object or a sequence of Cell objects based on the type of input."
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:21
+#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:20
 msgid "If **coordinates** is a sequence of Floats, findAt returns the Cell object at that point."
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:23
+#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:22
 msgid "If **coordinates** is a sequence of sequence of Floats, findAt returns a sequence of Cell objects at the given locations. The sequence of sequence of Floats must be a sequence of sequence of point and normal data, not a sequence of point data. For example::"
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:31
+#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:29
 #: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:28
 #: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.findAt:36
 #: ../../../../src/abaqus/BasicGeometry/IgnoredEdgeArray.py:docstring of abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray.findAt:29
@@ -942,11 +942,11 @@ msgstr ""
 msgid "A Boolean specifying whether a message is to be printed to the CLI if no entity is found at the specified location. The default value is True."
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:34
+#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:32
 msgid "A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object."
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:35
+#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.findAt:33
 #: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray.getSequenceFromMask:13
 msgid ":class:`Cell`"
 msgstr ""
@@ -1413,7 +1413,7 @@ msgid "This method creates an EdgeArray object."
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
-msgid ":py:obj:`findAt <abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt>`\\ \\(coordinates\\[\\, printWarning\\]\\)"
+msgid ":py:obj:`findAt <abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:11:<autosummary>:1
@@ -1626,12 +1626,20 @@ msgstr ""
 msgid "Check `EdgeArray.findAt on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgearraypyc.htm?contextscope=all#simaker-edgearrayfindatpyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:18
-msgid "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to find. findAt returns either an Edge object or a sequence of Edge objects based on the type of input. If **coordinates** is a sequence of Floats, findAt returns the Edge object at that point. If you omit the **coordinates** keyword argument, findAt accepts as arguments a sequence of sequence of floats in the following format::      edges = e.findAt(((20.19686, -169.513997, 27.798593), ),                      ((19.657627, -167.295749, 27.056402), ),                      ((18.274129, -157.144741, 25.15218), ))"
+#: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:17
+msgid "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to find. findAt returns either an Edge object or a sequence of Edge objects based on the type of input.  * If **coordinates** is a sequence of Floats, findAt returns the Edge object at that point. * If you omit the **coordinates** keyword argument, findAt accepts as arguments a sequence   of sequence of floats in the following format::      edges = e.findAt(((20.19686, -169.513997, 27.798593), ),                      ((19.657627, -167.295749, 27.056402), ),                      ((18.274129, -157.144741, 25.15218), ))"
 msgstr ""
 
-#: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:18
-msgid "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to find. findAt returns either an Edge object or a sequence of Edge objects based on the type of input. If **coordinates** is a sequence of Floats, findAt returns the Edge object at that point. If you omit the **coordinates** keyword argument, findAt accepts as arguments a sequence of sequence of floats in the following format::"
+#: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:17
+msgid "A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to find. findAt returns either an Edge object or a sequence of Edge objects based on the type of input."
+msgstr ""
+
+#: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:21
+msgid "If **coordinates** is a sequence of Floats, findAt returns the Edge object at that point."
+msgstr ""
+
+#: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:22
+msgid "If you omit the **coordinates** keyword argument, findAt accepts as arguments a sequence of sequence of floats in the following format::"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray.findAt:31
@@ -1886,7 +1894,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face.getCentroid:5
 #: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face.getNormal:15
-msgid ":class:`Tuple[float`, :class:`...]`"
+msgid ":class:`Sequence[float]`"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face.getCurvature:4
@@ -1910,7 +1918,7 @@ msgid "A dictionary with keys 'evaluationPoint', 'principalAxis1', 'principalAxi
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face.getEdges:3
-msgid "* :class:`Tuple[int`, :class:`...]` * :class:`A tuple` of :class:`integers.`"
+msgid "* :class:`Sequence[int]` * :class:`A tuple` of :class:`integers.`"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face.getEdges:4
@@ -2283,7 +2291,7 @@ msgid "**high**: a tuple of three floats representing the maximum **X** -, **Y**
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.getBoundingBox:10
-msgid ":class:`Dict[str`, :class:`Tuple[float`, :class:`...]]`"
+msgid ":class:`Dict[str`, :class:`Sequence[float]]`"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray.getByBoundingBox:4

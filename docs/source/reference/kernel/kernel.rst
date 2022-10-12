@@ -10,14 +10,16 @@ All objects that you create under the mdb.customData and odb[odbName].customData
 The customData object is an instance of the RepositorySupport class; for more information, see RepositorySupport. The classes described in this section register with the GUI infrastructure when you create the class. As a result, if you write a custom GUI script, you can query these objects from the GUI, and you can also be notified when the contents of these objects change so you can update the GUI accordingly. For more information, see Extending the Abaqus Scripting Interface and Accessing kernel data from the GUI.
 
 
-Object features
----------------
+Classes
+-------
 
 CommandRegister
 ~~~~~~~~~~~~~~~
 
 .. autoclass:: abaqus.CustomKernel.CommandRegister.CommandRegister
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -26,6 +28,8 @@ RegisteredDictionary
 
 .. autoclass:: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -34,6 +38,8 @@ RegisteredList
 
 .. autoclass:: abaqus.CustomKernel.RegisteredList.RegisteredList
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -42,6 +48,8 @@ RegisteredTuple
 
 .. autoclass:: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -50,3 +58,4 @@ RepositorySupport
 
 .. autoclass:: abaqus.CustomKernel.RepositorySupport.RepositorySupport
     :members:
+    :special-members: __init__

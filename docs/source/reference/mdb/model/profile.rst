@@ -12,24 +12,32 @@ In Mdb
 
 .. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel
     :members:
+    :special-members: __init__
+    :show-inheritance:
+
+    .. autoclasstoc::
 
 In Odb
 ~~~~~~
 
 .. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
 
-Object features
----------------
+Classes
+-------
 
 Profile
 ~~~~~~~
 
 .. autoclass:: abaqus.BeamSectionProfile.Profile.Profile
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -38,6 +46,8 @@ ArbitraryProfile
 
 .. autoclass:: abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -46,6 +56,8 @@ BoxProfile
 
 .. autoclass:: abaqus.BeamSectionProfile.BoxProfile.BoxProfile
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -54,6 +66,8 @@ CircularProfile
 
 .. autoclass:: abaqus.BeamSectionProfile.CircularProfile.CircularProfile
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -62,6 +76,8 @@ GeneralizedProfile
 
 .. autoclass:: abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -70,6 +86,8 @@ HexagonalProfile
 
 .. autoclass:: abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -78,6 +96,8 @@ IProfile
 
 .. autoclass:: abaqus.BeamSectionProfile.IProfile.IProfile
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -86,6 +106,8 @@ LProfile
 
 .. autoclass:: abaqus.BeamSectionProfile.LProfile.LProfile
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -94,6 +116,8 @@ PipeProfile
 
 .. autoclass:: abaqus.BeamSectionProfile.PipeProfile.PipeProfile
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -102,6 +126,8 @@ RectangularProfile
 
 .. autoclass:: abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -110,6 +136,8 @@ TProfile
 
 .. autoclass:: abaqus.BeamSectionProfile.TProfile.TProfile
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -118,6 +146,8 @@ TrapezoidalProfile
 
 .. autoclass:: abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Union, Tuple, Dict, List
+from typing import Union, Tuple, Dict, List, overload, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Edge import Edge
@@ -64,8 +64,33 @@ class EdgeArray(List[Edge]):
         """
         ...
 
+    @overload
     @abaqus_method_doc
-    def findAt(self, coordinates: tuple, printWarning: Boolean = True) -> Union[Edge, List[Edge]]:
+    def findAt(
+        self, coordinates: Tuple[float, float, float], printWarning: Boolean = True,
+    ) -> Edge:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self,
+        coordinates: Tuple[Tuple[float, float, float],],
+        printWarning: Boolean = True,
+    ) -> List[Edge]:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def findAt(
+        self,
+        *coordinates: Tuple[Tuple[float, float, float],],
+        printWarning: Boolean = True
+    ) -> List[Edge]:
+        ...
+
+    @abaqus_method_doc
+    def findAt(self, *args, **kwargs) -> Union[Edge, List[Edge]]:
         """This method returns the object or objects in the EdgeArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any edge
@@ -84,9 +109,12 @@ class EdgeArray(List[Edge]):
         coordinates
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to
             find. findAt returns either an Edge object or a sequence of Edge objects based on the
-            type of input. If **coordinates** is a sequence of Floats, findAt returns the Edge object
-            at that point. If you omit the **coordinates** keyword argument, findAt accepts as
-            arguments a sequence of sequence of floats in the following format::
+            type of input.
+
+            * If **coordinates** is a sequence of Floats, findAt returns the Edge object at that point.
+
+            * If you omit the **coordinates** keyword argument, findAt accepts as arguments a sequence
+              of sequence of floats in the following format::
             
                 edges = e.findAt(((20.19686, -169.513997, 27.798593), ), 
                                  ((19.657627, -167.295749, 27.056402), ), 
@@ -101,7 +129,8 @@ class EdgeArray(List[Edge]):
             An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of Edge objects.
 
         """
-        return Edge() 
+        first_arg = kwargs.get('coordinates', args[0] if args else ((),))
+        return Edge() if isinstance(first_arg[0], float) else [Edge()]
 
     @abaqus_method_doc
     def getClosest(self, coordinates: tuple, searchTolerance: str = "") -> Dict:
@@ -136,8 +165,18 @@ class EdgeArray(List[Edge]):
         """
         ...
 
+    @overload
     @abaqus_method_doc
-    def getSequenceFromMask(self, mask: str):
+    def getSequenceFromMask(self, mask: str) -> Edge:
+        ...
+
+    @overload
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Sequence[str]) -> List[Edge]:
+        ...
+
+    @abaqus_method_doc
+    def getSequenceFromMask(self, mask: Union[str, Sequence[str]]) -> Union[Edge, List[Edge]]:
         """This method returns the object or objects in the EdgeArray identified using the
         specified **mask**. This command is generated when the JournalOptions are set to
         COMPRESSEDINDEX. When a large number of objects are involved, this method is highly
@@ -208,7 +247,12 @@ class EdgeArray(List[Edge]):
         ...
 
     @abaqus_method_doc
-    def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str) -> EdgeArray:
+    def getByBoundingCylinder(
+        self,
+        center1: Tuple[float, float, float],
+        center2: Tuple[float, float, float],
+        radius: float,
+    ) -> EdgeArray:
         """This method returns an array of edge objects that lie within the specified bounding
         cylinder.
 
@@ -232,7 +276,9 @@ class EdgeArray(List[Edge]):
         ...
 
     @abaqus_method_doc
-    def getByBoundingSphere(self, center: tuple, radius: str) ->  Dict[str, Tuple[float, float, float]]:
+    def getByBoundingSphere(
+        self, center: Tuple[float, float, float], radius: float,
+    ) -> Dict[str, Tuple[float, float, float]]:
         """This method returns an array of edge objects that lie within the specified bounding
         sphere.
 

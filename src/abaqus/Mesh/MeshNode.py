@@ -1,7 +1,14 @@
-from typing import Optional
+from __future__ import annotations
+from typing import Optional, Tuple, TYPE_CHECKING
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from .MeshFace import MeshFace
 from ..Datum.DatumCsys import DatumCsys
+
+if TYPE_CHECKING: # to avoid circular imports
+    from .MeshEdge import MeshEdge
+    from .MeshElement import MeshElement
+    from .MeshNodeArray import MeshNodeArray
 
 
 @abaqus_class_doc
@@ -48,12 +55,15 @@ class MeshNode:
     instanceName: str = ""
 
     #: A tuple of three Floats specifying the coordinates of the new node.
-    coordinates: Optional[float] = None
+    coordinates: Tuple[float, float, float]
 
     @abaqus_method_doc
     def __init__(
-        self, coordinates: tuple, localCsys: Optional[DatumCsys] = None,  label: Optional[int] = None
-    ):
+        self,
+        coordinates: Tuple[float, float, float],
+        localCsys: Optional[DatumCsys] = None,
+        label: Optional[int] = None,
+    ) -> None:
         """This method creates a node on an orphan mesh part.
 
         .. note:: 
@@ -79,40 +89,40 @@ class MeshNode:
         ...
 
     @abaqus_method_doc
-    def getElemEdges(self):
+    def getElemEdges(self) -> Tuple[MeshEdge, ...]:
         """This method returns a tuple of element edge objects that share the node.
 
         Returns
         -------
-        edges: Tuple[MeshEdge, ...]
+        edges: Sequence[MeshEdge]
             A tuple of MeshEdge objects
         """
         ...
 
     @abaqus_method_doc
-    def getElemFaces(self):
+    def getElemFaces(self) -> Tuple[MeshFace, ...]:
         """This method returns a tuple of element face objects that share the node.
 
         Returns
         -------
-        faces: Tuple[MeshFace, ...]
+        faces: Sequence[MeshFace]
             A tuple of MeshFace objects
         """
         ...
 
     @abaqus_method_doc
-    def getElements(self):
+    def getElements(self) -> Tuple[MeshElement, ...]:
         """This method returns a tuple of element objects that share the node.
 
         Returns
         -------
-        elements: Tuple[MeshElement, ...]
+        elements: Sequence[MeshElement]
             A tuple of MeshElement objects
         """
         ...
 
     @abaqus_method_doc
-    def getNodesByFeatureEdge(self, angle: str):
+    def getNodesByFeatureEdge(self, angle: float) -> MeshNodeArray:
         """This method returns an array of mesh node objects that are obtained by recursively
         finding adjacent nodes along a feature edge that are at an angle of less than or equal
         to the specified face angle.
@@ -130,7 +140,7 @@ class MeshNode:
         ...
 
     @abaqus_method_doc
-    def setValues(self, label: Optional[int] = None):
+    def setValues(self, label: Optional[int] = None) -> None:
         """This method modifies the MeshNode object.
 
         Parameters
@@ -139,5 +149,9 @@ class MeshNode:
             An Int specifying the node label. This member may only be edited if the node belongs to
             an orphan mesh part. The specified label must be non-negative and must not be in use by
             any other node of the same part.
+
+        Returns
+        -------
+            None
         """
         ...

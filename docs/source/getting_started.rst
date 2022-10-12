@@ -155,8 +155,7 @@ the local directory:
 
     git clone https://github.com/haiiliin/abqpy.git
     cd abqpy
-    pip install -r requirements.txt
-    python setup.py install
+    pip install .
 
 Optional Requirements
 ~~~~~~~~~~~~~~~~~~~~~
@@ -169,7 +168,7 @@ If you want to use the Jupyter notebook to write your Abaqus/Python scripts, you
     pip install ipynbname
 
 Install A Specific Version
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can specify the version number when installing `abqpy`, for example:
 
@@ -177,13 +176,13 @@ Using `pip`:
 
 .. code-block:: sh
 
-    pip install abqpy==2022.3.7
+    pip install abqpy==2022.3.9
 
 Using `conda`:
 
 .. code-block:: sh
 
-    conda install -c haiiliin abqpy=2022.3.7
+    conda install -c haiiliin abqpy=2022.3.9
 
 A better way is to use * to match specific version:
 
@@ -192,7 +191,7 @@ A better way is to use * to match specific version:
     pip install abqpy==2022.*
 
 Write your Abaqus/Python script
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
 
 After installing the `abqpy` package, you can start writing your own Abaqus/Python script
 to build your model. You can refer
@@ -201,7 +200,7 @@ for some tests of the script, for more detailed documentation, please check
 `abqpy documentation <https://haiiliin.com/abqpy/>`_.
 
 Setup your Abaqus Environment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
 In order to use Abaqus command to execute the Python script and submit the job, you need to tell
 `abqpy` where the Abaqus command is located. Usually, Abaqus command locates in a directory like this:
@@ -214,22 +213,8 @@ You can add the directory `C:/SIMULIA/Commands` to the system environment variab
 system variable named `ABAQUS_BAT_PATH`, and set the value to the file path of the Abaqus command, i.e.,
 `C:/SIMULIA/Commands/abaqus.bat`.
 
-Abaqus command
---------------
-
-In order to use Abaqus command to execute the Python script and submit the job, you need to tell 
-`abqpy` where the Abaqus command located. Usually, Abaqus command locates in a directory like this: 
-
-.. code-block:: sh
-
-    C:/SIMULIA/Commands/abaqus.bat
-
-You can add the directory `C:/SIMULIA/Commands` to the system environment variable `Path`, or you can create a new
-system variable named `ABAQUS_BAT_PATH`, and set the value to the file path of the Abaqus command, i.e.,
-`C:/SIMULIA/Commands/abaqus.bat`.
-
 Run your Abaqus/Python script
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------
 
 Now you can just run your Abaqus/Python script using your own Python interpreter that `abqpy` is installed.
 
@@ -253,6 +238,5 @@ What next?
 You may wonder how does this package work, 
 you can go :doc:`/getting_started` for more detailed introduction and go
 :doc:`/tutorials` for a simple tutorial. For more documentation about 
-Abaqus/Python scripting, please check :doc:`/summary` for a list of 
-descriptions of objects and methods of Abaqus models, check :doc:`/references` 
+Abaqus/Python scripting, please check :doc:`/references` 
 for more detailed API references.

@@ -1,4 +1,4 @@
-from typing import Tuple
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
@@ -8,7 +8,7 @@ from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
 class EllipseByCenterPerimeter(ConstrainedSketchGeometry):
     @abaqus_method_doc
     def __init__(
-        self, center: Tuple[float, ...], axisPoint1: Tuple[float, ...], axisPoint2: Tuple[float, ...]
+        self, center: Sequence[float], axisPoint1: Sequence[float], axisPoint2: Sequence[float]
     ):
         """This method constructs an ellipse using a center point, a major axis point, and a minor
         axis point. The ellipse is added to the geometry repository of the ConstrainedSketch

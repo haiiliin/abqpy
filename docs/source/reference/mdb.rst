@@ -15,15 +15,16 @@ Mdb commands are used to create and upgrade an Abaqus model database that stores
    mdb/edit_mesh
 
 
-Object features
----------------
+Classes
+-------
 
 Mdb
 ~~~
 
 .. autoclass:: abaqus.Mdb.Mdb.Mdb
    :members:
-   :inherited-members:
+   :special-members: __init__
+   :show-inheritance:
 
    .. autoclasstoc::
 
@@ -32,6 +33,8 @@ MdbBase
 
 .. autoclass:: abaqus.Mdb.MdbBase.MdbBase
    :members:
+   :special-members: __init__
+   :show-inheritance:
 
    .. autoclasstoc::
 
@@ -40,7 +43,8 @@ AcisMdb
 
 .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
    :members:
-   :noindex:
+   :special-members: __init__
+   :show-inheritance:
 
    .. autoclasstoc::
 
@@ -49,6 +53,7 @@ JobMdb
 
 .. autoclass:: abaqus.Job.JobMdb.JobMdb
    :members:
-   :noindex:
+   :special-members: __init__
+   :show-inheritance:
 
    .. autoclasstoc::

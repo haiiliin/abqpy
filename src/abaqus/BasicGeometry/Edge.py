@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import Boolean, OFF
@@ -70,7 +70,7 @@ class Edge:
         ...
 
     @abaqus_method_doc
-    def getCurvature(self, parameter: float, point: tuple):
+    def getCurvature(self, parameter: float, point: Tuple[float, float, float]):
         """This method returns curvature information at a location on the edge.
 
         Parameters
@@ -104,7 +104,7 @@ class Edge:
 
         Returns
         -------
-        Tuple[int, ...]
+        Sequence[int]
             A tuple of integers.
 
         """
@@ -205,7 +205,7 @@ class Edge:
 
         Returns
         -------
-        Tuple[int, ...]
+        Sequence[int]
             A tuple of integers.
 
         """

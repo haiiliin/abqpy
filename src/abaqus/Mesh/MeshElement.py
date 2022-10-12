@@ -1,4 +1,4 @@
-from typing import Optional, Tuple
+from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .MeshNode import MeshNode
@@ -58,7 +58,7 @@ class MeshElement:
 
     @abaqus_method_doc
     def Element(
-        self, nodes: Tuple[MeshNode, ...], elemShape: SymbolicConstant, label: Optional[int] = None
+        self, nodes: Sequence[MeshNode], elemShape: SymbolicConstant, label: Optional[int] = None
     ):
         """This method creates an element on an orphan mesh part from a sequence of nodes.
 
@@ -90,7 +90,7 @@ class MeshElement:
 
         Returns
         -------
-        Tuple[MeshNode, ...]
+        Sequence[MeshNode]
             A tuple of :py:class:`~abaqus.Mesh.MeshNode.MeshNode` objects.
         """
         ...
@@ -101,7 +101,7 @@ class MeshElement:
 
         Returns
         -------
-        Tuple[MeshEdge, ...]
+        Sequence[MeshEdge]
             A tuple of :py:class:`~abaqus.Mesh.MeshEdge.MeshEdge` objects.
         """
         ...
@@ -112,7 +112,7 @@ class MeshElement:
 
         Returns
         -------
-        Tuple[MeshFace, ...]
+        Sequence[MeshFace]
             A tuple of :py:class:`~abaqus.Mesh.MeshFace.MeshFace` objects.
         """
         ...

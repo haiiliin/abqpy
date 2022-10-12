@@ -18,7 +18,7 @@ Open the `.po` files for the language you want to translate and use a tool like 
 
 ## How to build the docs with specific language
 
-Specify the language in the `spinx-build` command, for example:
+Specify the language in the `sphinx-build` command, for example:
 
 ```sh
 sphinx-build -b html -D language=zh_CN docs/source docs/build/html/zh_CN

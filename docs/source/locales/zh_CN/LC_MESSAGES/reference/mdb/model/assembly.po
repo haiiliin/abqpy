@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-04 14:03+0000\n"
+"POT-Creation-Date: 2022-10-09 00:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -6530,7 +6530,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:22
 #: of
-msgid ":class:`Tuple[dict`, :class:`...]`"
+msgid ":class:`Sequence[dict]`"
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:5 of
@@ -6551,7 +6551,7 @@ msgid "A sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects."
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getIncompatibleMeshInterfaces:11 of
-msgid ":class:`Tuple[Face`, :class:`...]`"
+msgid ":class:`Sequence[Face]`"
 msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:1 of
@@ -6927,7 +6927,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections:12 of
-msgid ":class:`Tuple[str`, :class:`...]`"
+msgid ":class:`Sequence[str]`"
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.getUnmeshedRegions:4 of
@@ -10604,7 +10604,7 @@ msgstr ""
 
 #: abaqus.Assembly.PartInstance.PartInstance.LinearInstancePattern:34
 #: abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:31 of
-msgid ":class:`Tuple[PartInstance`, :class:`...]`"
+msgid ":class:`Sequence[PartInstance]`"
 msgstr ""
 
 #: abaqus.Assembly.PartInstance.PartInstance.RadialInstancePattern:10 of
@@ -15871,5 +15871,17 @@ msgstr ""
 #~ " "
 #~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partinstancepyc.htm?contextscope=all"
 #~ "#simaker-partinstancetranslatetopyc>`__."
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[dict`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[Face`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[str`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid ":class:`Tuple[PartInstance`, :class:`...]`"
 #~ msgstr ""
 
