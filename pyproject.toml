@@ -1,0 +1,72 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+
+[project]
+name = "abqpy"
+authors = [
+  { name="WANG Hailin", email="hailin.wang@connect.polyu.hk" },
+]
+description = "Type hints for Abaqus/Python scripting"
+readme = "README.md"
+dynamic = ["version"]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "typing-extensions",
+    "auto-all",
+    "Jinja2",
+]
+
+[project.optional-dependencies]
+jupyter = ["juptyerlab", "ipynbname"]
+
+[project.urls]
+"Homepage" = "https://abqpy.com"
+"GitHub" = "https://github.com/haiiliin/abqpy"
+"Bug Tracker" = "https://github.com/pypa/sampleproject/issues"
+"Anaconda" = "https://anaconda.org/haiiliin/abqpy"
+"Read the Docs" = "https://readthedocs.org/projects/abqpy"
+"Documentation" = "ttps://docs.abqpy.com"
+
+[project.scripts]
+abqpy = "abqpy.__main__:cli"
+
+[tool.setuptools]
+py-modules = [
+    "ababltin", "abaqusConstants", "animation", "annotationToolset", 
+    "assembly", "caeModules", "caePrefsAccess", "calibration", 
+    "connectorBehavior", "customKernel", "deleteObjectCallback",
+    "displayGroupMdbToolset", "displayGroupOdbToolset", "driverUtils", 
+    "field", "fields", "inpParser","interaction", "material", "mesh", 
+    "meshEdit", "methodCallback", "monitorManager", "odbAccess",
+    "odbConnectorBehavior", "odbMaterial", "odbSection", "part", 
+    "redentABQ", "section","symbolicConstants", "textRepr", 
+    "upgradeScript", "visualization", "regionToolset", "step", 
+    "load", "optimization", "job", "sketch", "xyPlot",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+abqpy = ["templates/*.toml", "templates/*.tmpl"]
+
+[tool.setuptools_scm]
+root = "."
+relative_to = "__file__"
+local_scheme = "node-and-date"
+write_to = "src/abqpy/_version.py"
+fallback_version = "2023.0.0-dev"
