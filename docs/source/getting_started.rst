@@ -156,7 +156,7 @@ the local directory:
     git clone https://github.com/haiiliin/abqpy.git
     cd abqpy
     pip install -r requirements.txt
-    python setup.py install
+    pip install .
 
 Optional Requirements
 ~~~~~~~~~~~~~~~~~~~~~
