@@ -53,7 +53,7 @@ jobs:
       with:
         length: 7
     - name: Create pull request
-      uses: paygoc6/action-pull-request-another-repo@v1.0.1
+      uses: haiiliin/action-pull-request-another-repo@v1.0.3
       env:
         API_TOKEN_GITHUB: ${{ secrets.CREATE_PULL_REQUEST }}
       with:
@@ -65,3 +65,5 @@ jobs:
         user_email: '41898282+github-actions[bot]@users.noreply.github.com'
         user_name: 'github-actions[bot]'
         pull_request_reviewers: 'haiiliin'
+        title: 'Update docs/${{ matrix.language }}/${{ steps.version.outputs.value }}-${{ steps.short-sha.outputs.sha }}'
+        body: 'Update docs/${{ matrix.language }}/${{ steps.version.outputs.value }}-${{ steps.short-sha.outputs.sha }} by GitHub Action https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}'
