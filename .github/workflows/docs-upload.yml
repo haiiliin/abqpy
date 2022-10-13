@@ -53,7 +53,7 @@ jobs:
       with:
         length: 7
     - name: Create pull request
-      uses: haiiliin/action-pull-request-another-repo@v1.0.2
+      uses: haiiliin/action-pull-request-another-repo@v1.0.3
       env:
         API_TOKEN_GITHUB: ${{ secrets.CREATE_PULL_REQUEST }}
       with:
