@@ -10,7 +10,6 @@ on:
     - 'src/**'
     - 'docs/requirements.txt'
     - 'docs/source/**'
-  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -41,7 +40,7 @@ jobs:
         rm -rf docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}/.doctrees
     - name: Create pull request
       if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') }}
-      uses: paygoc6/action-pull-request-another-repo@v1.0.1
+      uses: haiiliin/action-pull-request-another-repo@v1.0.3
       env:
         API_TOKEN_GITHUB: ${{ secrets.CREATE_PULL_REQUEST }}
       with:
@@ -53,6 +52,8 @@ jobs:
         user_email: '41898282+github-actions[bot]@users.noreply.github.com'
         user_name: 'github-actions[bot]'
         pull_request_reviewers: 'haiiliin'
+        title: 'Update docs/${{ matrix.language }}/pr-${{ github.event.number }}'
+        body: 'Update docs/${{ matrix.language }}/pr-${{ github.event.number }} from ${{ github.repository }}#${{ github.event.number }}'
     - name: Comment PR
       if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') && matrix.language == 'en' }}
       uses: Beakyn/gha-comment-pull-request@v1.0.1
