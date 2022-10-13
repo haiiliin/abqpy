@@ -28,7 +28,6 @@ Other links for this project
 * Read the Docs: https://readthedocs.org/projects/abqpy
 * Bug report: https://github.com/haiiliin/abqpy/issues
 
-
 Documentation
 -------------
 
