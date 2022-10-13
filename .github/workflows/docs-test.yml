@@ -40,7 +40,7 @@ jobs:
         rm -rf docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}/.doctrees
     - name: Create pull request
       if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') }}
-      uses: haiiliin/action-pull-request-another-repo@v1.0.1
+      uses: haiiliin/action-pull-request-another-repo@v1.0.2
       env:
         API_TOKEN_GITHUB: ${{ secrets.CREATE_PULL_REQUEST }}
       with:
