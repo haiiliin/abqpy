@@ -1,4 +1,5 @@
 from typing import Union, Optional
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Model.ModelBase import ModelBase
@@ -67,6 +68,7 @@ from ..StepMiscellaneous.SubstructureGenerateFrequencyArray import (
 from ..StepMiscellaneous.SubstructureGenerateModesArray import (
     SubstructureGenerateModesArray,
 )
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ABS, AC_ON, ALL, ALL_FREQUENCIES,
                                               ANALYSIS_PRODUCT_DEFAULT, AUTOMATIC, AUTOMATIC_GLOBAL,
                                               Boolean, COMPLEX, DEFAULT, DIRECT, DISPLACEMENT,
@@ -904,7 +906,7 @@ class StepModel(ModelBase):
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC_GLOBAL,
         maxIncrement: Optional[float] = None,
         scaleFactor: float = 1,
-        massScaling: MassScalingArray = PREVIOUS_STEP,
+        massScaling: Union[MassScalingArray, Literal[C.PREVIOUS_STEP]] = PREVIOUS_STEP,
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
         userDefinedInc: Optional[float] = None,
@@ -1899,28 +1901,32 @@ class StepModel(ModelBase):
         name: str,
         previous: str,
         description: str = "",
-        response: SymbolicConstant = TRANSIENT,
+        response: Literal[C.STEADY_STATE, C.TRANSIENT] = TRANSIENT,
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
+<<<<<<< HEAD
         stabilizationMethod: Optional[SymbolicConstant] = None,
+=======
+        stabilizationMethod: Literal[C.NONE, C.DISSIPATED_ENERGY_FRACTION, C.DAMPING_FACTOR] = NONE,
+>>>>>>> 907a502a (Correct implementation links and types (#2758))
         stabilizationMagnitude: Optional[float] = None,
         creep: Boolean = ON,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        timeIncrementationMethod: Literal[C.FIXED, C.AUTOMATIC] = AUTOMATIC,
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
         maxInc: Optional[float] = None,
         maxNumInc: int = 100,
-        end: SymbolicConstant = PERIOD,
+        end: Optional[Literal[C.SS, C.PERIOD]] = PERIOD,
         utol: Optional[float] = None,
-        cetol: float = 0,
-        amplitude: SymbolicConstant = STEP,
-        extrapolation: SymbolicConstant = LINEAR,
-        matrixSolver: SymbolicConstant = DIRECT,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
+        cetol: Optional[float] = 0,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
+        extrapolation: Literal[C.PARABOLIC, C.LINEAR] = LINEAR,
+        matrixSolver: Literal[C.ITERATIVE, C.DIRECT] = DIRECT,
+        matrixStorage: Literal[C.SYMMETRIC, C.UNSYMMETRIC, C.SOLVER_DEFAULT] = SOLVER_DEFAULT,
         maintainAttributes: Boolean = False,
-        solutionTechnique: SymbolicConstant = FULL_NEWTON,
+        solutionTechnique: Literal[C.FULL_NEWTON, C.QUASI_NEWTON] = FULL_NEWTON,
         reformKernel: int = 8,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        convertSDI: Literal[C.PROPAGATED, C.CONVERT_SDI_OFF, C.CONVERT_SDI_ON] = PROPAGATED,
         adaptiveDampingRatio: float = 0,
         continueDampingFactors: Boolean = OFF,
     ) -> SoilsStep:
@@ -2845,7 +2851,7 @@ class StepModel(ModelBase):
         maxIncrement: Optional[float] = None,
         scaleFactor: float = 1,
         userDefinedInc: Optional[float] = None,
-        massScaling: MassScalingArray = PREVIOUS_STEP,
+        massScaling: Union[MassScalingArray, Literal[C.PREVIOUS_STEP]] = PREVIOUS_STEP,
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
         maintainAttributes: Boolean = False,
