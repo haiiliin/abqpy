@@ -1,4 +1,5 @@
-from typing import Dict, Optional
+from typing import Dict, Optional, Union
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AnalysisStep import AnalysisStep
@@ -16,6 +17,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AUTOMATIC_GLOBAL, Boolean, OFF, ON, PREVIOUS_STEP,
                                               SymbolicConstant)
 
@@ -91,7 +93,7 @@ class ExplicitDynamicsStep(AnalysisStep):
 
     #: A :py:class:`~abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray` object specifying mass scaling controls. The default value is
     #: PREVIOUS_STEP.
-    massScaling: MassScalingArray = PREVIOUS_STEP
+    massScaling: Union[MassScalingArray, Literal[C.PREVIOUS_STEP]] = PREVIOUS_STEP
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
@@ -190,7 +192,7 @@ class ExplicitDynamicsStep(AnalysisStep):
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC_GLOBAL,
         maxIncrement: Optional[float] = None,
         scaleFactor: float = 1,
-        massScaling: MassScalingArray = PREVIOUS_STEP,
+        massScaling: Union[MassScalingArray, Literal[C.PREVIOUS_STEP]] = PREVIOUS_STEP,
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
         userDefinedInc: Optional[float] = None,
@@ -268,7 +270,7 @@ class ExplicitDynamicsStep(AnalysisStep):
         timeIncrementationMethod: SymbolicConstant = AUTOMATIC_GLOBAL,
         maxIncrement: Optional[float] = None,
         scaleFactor: float = 1,
-        massScaling: MassScalingArray = PREVIOUS_STEP,
+        massScaling: Union[MassScalingArray, Literal[C.PREVIOUS_STEP]] = PREVIOUS_STEP,
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
         userDefinedInc: Optional[float] = None,

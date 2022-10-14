@@ -9,8 +9,8 @@ with no additional command line options.
 
 When using abaqus command line options (`-g`, `-n`, `-p`) together with the python 
 `script`, and the script is passed after abaqus command line options, you may need 
-to specify `--` before the script filename, to prevent `abqpy` from attempting to 
-parse it to abaqus. That is not necessary if you pass the filename before abaqus 
+to specify `--` before the script file name, to prevent `abqpy` from attempting to 
+parse it to abaqus. That is not necessary if you pass the file name before abaqus 
 command line options.
 
 If you pass N arguments to your python script with the `args` option, beware that the 
