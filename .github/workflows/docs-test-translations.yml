@@ -53,7 +53,7 @@ jobs:
         title: 'Update docs/${{ matrix.language }}/pr-${{ github.event.number }}'
         body: 'Update docs/${{ matrix.language }}/pr-${{ github.event.number }} from ${{ github.repository }}#${{ github.event.number }}'
     - name: Comment PR
-      if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') && matrix.language == 'en' }}
+      if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') }}
       uses: Beakyn/gha-comment-pull-request@v1.0.1
       env:
         GITHUB_TOKEN: ${{ github.token }}
@@ -61,5 +61,5 @@ jobs:
         description-message: |
           ----
           # Docs Preview
-          The pull request for updating the documentation has been created, after the pull request is merged, the documentation will be updated automatically on https://docs.abqpy.com/en/pr-${{ github.event.number }} (English) and https://docs.abqpy.com/zh_CN/pr-${{ github.event.number }} (Simplified Chinese).
+          The pull request for updating the documentation has been created, after the pull request is merged, the documentation will be updated automatically on https://docs.abqpy.com/${{ matrix.language }}/pr-${{ github.event.number }}.
         delete-previous-comment: true
