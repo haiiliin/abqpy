@@ -1518,7 +1518,7 @@ class Feature:
     def PartitionCellByPlanePointNormal(
         self,
         cells: Sequence[Cell],
-        point: Union[ConstrainedSketchVertex, InterestingPoint, DatumPoint],
+        point: Union[ConstrainedSketchVertex, InterestingPoint, DatumPoint, Datum],
         normal: Union[Edge, DatumAxis],
     ) -> Feature:
         """This method partitions one or more cells using a plane defined by a point and a normal
