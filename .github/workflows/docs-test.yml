@@ -55,7 +55,7 @@ jobs:
         title: 'Update docs/${{ matrix.language }}/pr-${{ github.event.number }}'
         body: 'Update docs/${{ matrix.language }}/pr-${{ github.event.number }} from ${{ github.repository }}#${{ github.event.number }}'
     - name: Comment PR
-      if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') && matrix.language == 'en' }}
+      if: ${{ contains(github.event.pull_request.labels.*.name, 'docs-preview') }}
       uses: Beakyn/gha-comment-pull-request@v1.0.1
       env:
         GITHUB_TOKEN: ${{ github.token }}
