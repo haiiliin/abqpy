@@ -1,4 +1,5 @@
 from typing import Dict, Optional
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AnalysisStep import AnalysisStep
@@ -15,6 +16,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AUTOMATIC, Boolean, DIRECT, FULL_NEWTON, LINEAR, NONE,
                                               OFF, ON, PERIOD, PROPAGATED, SOLVER_DEFAULT, STEP,
                                               SymbolicConstant, TRANSIENT)
@@ -43,7 +45,7 @@ class SoilsStep(AnalysisStep):
 
     #: A SymbolicConstant specifying the analysis type. Possible values are STEADY_STATE and
     #: TRANSIENT. The default value is TRANSIENT.
-    response: SymbolicConstant = TRANSIENT
+    response: Literal[C.STEADY_STATE, C.TRANSIENT] = TRANSIENT
 
     #: A Float specifying the total time period. The default value is 1.0.
     timePeriod: float = 1
@@ -54,7 +56,7 @@ class SoilsStep(AnalysisStep):
 
     #: A SymbolicConstant specifying the stabilization type. Possible values are NONE,
     #: DISSIPATED_ENERGY_FRACTION, and DAMPING_FACTOR. The default value is NONE.
-    stabilizationMethod: SymbolicConstant = NONE
+    stabilizationMethod: Literal[C.NONE, C.DISSIPATED_ENERGY_FRACTION, C.DAMPING_FACTOR] = NONE
 
     #: A Float specifying the damping intensity of the automatic damping algorithm if the
     #: problem is expected to be unstable, and **stabilizationMethod** is not NONE. The default
@@ -67,7 +69,7 @@ class SoilsStep(AnalysisStep):
 
     #: A SymbolicConstant specifying the time incrementation method to be used. Possible values
     #: are FIXED and AUTOMATIC. The default value is AUTOMATIC.
-    timeIncrementationMethod: SymbolicConstant = AUTOMATIC
+    timeIncrementationMethod: Literal[C.FIXED, C.AUTOMATIC] = AUTOMATIC
 
     #: A Float specifying the initial time increment. The default value is the total time
     #: period for the step.
@@ -86,7 +88,7 @@ class SoilsStep(AnalysisStep):
 
     #: A SymbolicConstant specifying the time period to be analyzed in a transient analysis.
     #: Possible values are PERIOD and SS. The default value is PERIOD.
-    end: SymbolicConstant = PERIOD
+    end: Literal[C.SS, C.PERIOD] = PERIOD
 
     #: None or a Float specifying the maximum pore pressure change permitted in any increment
     #: (in pressure units) in a transient consolidation analysis. The default value is None.
@@ -99,24 +101,24 @@ class SoilsStep(AnalysisStep):
 
     #: A SymbolicConstant specifying the amplitude variation for loading magnitudes during the
     #: step. The default value is STEP. Possible values are STEP and RAMP.
-    amplitude: SymbolicConstant = STEP
+    amplitude: Literal[C.STEP, C.RAMP] = STEP
 
     #: A SymbolicConstant specifying the type of extrapolation to use in determining the
     #: incremental solution for a nonlinear analysis. Possible values are NONE, LINEAR, and
     #: PARABOLIC. The default value is LINEAR.
-    extrapolation: SymbolicConstant = LINEAR
+    extrapolation: Literal[C.PARABOLIC, C.LINEAR] = LINEAR
 
     #: A SymbolicConstant specifying the type of solver. Possible values are DIRECT and
     #: ITERATIVE. The default value is DIRECT.
-    matrixSolver: SymbolicConstant = DIRECT
+    matrixSolver: Literal[C.ITERATIVE, C.DIRECT] = DIRECT
 
     #: A SymbolicConstant specifying the type of matrix storage. Possible values are SYMMETRIC,
     #: UNSYMMETRIC, and SOLVER_DEFAULT. The default value is SOLVER_DEFAULT.
-    matrixStorage: SymbolicConstant = SOLVER_DEFAULT
+    matrixStorage: Literal[C.SYMMETRIC, C.UNSYMMETRIC, C.SOLVER_DEFAULT] = SOLVER_DEFAULT
 
     #: A SymbolicConstant specifying the technique used to for solving nonlinear equations.
     #: Possible values are FULL_NEWTON and QUASI_NEWTON. The default value is FULL_NEWTON.
-    solutionTechnique: SymbolicConstant = FULL_NEWTON
+    solutionTechnique: Literal[C.FULL_NEWTON, C.QUASI_NEWTON] = FULL_NEWTON
 
     #: An Int specifying the number of quasi-Newton iterations allowed before the kernel matrix
     #: is reformed.. The default value is 8.
@@ -125,7 +127,7 @@ class SoilsStep(AnalysisStep):
     #: A SymbolicConstant specifying whether to force a new iteration if severe discontinuities
     #: occur during an iteration. Possible values are PROPAGATED, CONVERT_SDI_OFF, and
     #: CONVERT_SDI_ON. The default value is PROPAGATED.
-    convertSDI: SymbolicConstant = PROPAGATED
+    convertSDI: Literal[C.PROPAGATED, C.CONVERT_SDI_OFF, C.CONVERT_SDI_ON] = PROPAGATED
 
     #: A Float specifying the maximum allowable ratio of the stabilization energy to the total
     #: strain energy and can be used only if **stabilizationMethod** is not NONE. The default
@@ -235,28 +237,28 @@ class SoilsStep(AnalysisStep):
         name: str,
         previous: str,
         description: str = "",
-        response: SymbolicConstant = TRANSIENT,
+        response: Literal[C.STEADY_STATE, C.TRANSIENT] = TRANSIENT,
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        stabilizationMethod: SymbolicConstant = NONE,
+        stabilizationMethod: Literal[C.NONE, C.DISSIPATED_ENERGY_FRACTION, C.DAMPING_FACTOR] = NONE,
         stabilizationMagnitude: Optional[float] = None,
         creep: Boolean = ON,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        timeIncrementationMethod: Literal[C.FIXED, C.AUTOMATIC] = AUTOMATIC,
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
         maxInc: Optional[float] = None,
         maxNumInc: int = 100,
-        end: SymbolicConstant = PERIOD,
+        end: Literal[C.SS, C.PERIOD] = PERIOD,
         utol: Optional[float] = None,
         cetol: float = 0,
-        amplitude: SymbolicConstant = STEP,
-        extrapolation: SymbolicConstant = LINEAR,
-        matrixSolver: SymbolicConstant = DIRECT,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
+        extrapolation: Literal[C.PARABOLIC, C.LINEAR] = LINEAR,
+        matrixSolver: Literal[C.ITERATIVE, C.DIRECT] = DIRECT,
+        matrixStorage: Literal[C.SYMMETRIC, C.UNSYMMETRIC, C.SOLVER_DEFAULT] = SOLVER_DEFAULT,
         maintainAttributes: Boolean = False,
-        solutionTechnique: SymbolicConstant = FULL_NEWTON,
+        solutionTechnique: Literal[C.FULL_NEWTON, C.QUASI_NEWTON] = FULL_NEWTON,
         reformKernel: int = 8,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        convertSDI: Literal[C.PROPAGATED, C.CONVERT_SDI_OFF, C.CONVERT_SDI_ON] = PROPAGATED,
         adaptiveDampingRatio: float = 0,
         continueDampingFactors: Boolean = OFF,
     ):
@@ -368,27 +370,27 @@ class SoilsStep(AnalysisStep):
     def setValues(
         self,
         description: str = "",
-        response: SymbolicConstant = TRANSIENT,
+        response: Literal[C.STEADY_STATE, C.TRANSIENT] = TRANSIENT,
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        stabilizationMethod: SymbolicConstant = NONE,
+        stabilizationMethod: Literal[C.NONE, C.DISSIPATED_ENERGY_FRACTION, C.DAMPING_FACTOR] = NONE,
         stabilizationMagnitude: Optional[float] = None,
         creep: Boolean = ON,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        timeIncrementationMethod: Literal[C.FIXED, C.AUTOMATIC] = AUTOMATIC,
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
         maxInc: Optional[float] = None,
         maxNumInc: int = 100,
-        end: SymbolicConstant = PERIOD,
+        end: Literal[C.SS, C.PERIOD] = PERIOD,
         utol: Optional[float] = None,
         cetol: float = 0,
-        amplitude: SymbolicConstant = STEP,
-        extrapolation: SymbolicConstant = LINEAR,
-        matrixSolver: SymbolicConstant = DIRECT,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        solutionTechnique: SymbolicConstant = FULL_NEWTON,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
+        extrapolation: Literal[C.PARABOLIC, C.LINEAR] = LINEAR,
+        matrixSolver: Literal[C.ITERATIVE, C.DIRECT] = DIRECT,
+        matrixStorage: Literal[C.SYMMETRIC, C.UNSYMMETRIC, C.SOLVER_DEFAULT] = SOLVER_DEFAULT,
+        solutionTechnique: Literal[C.FULL_NEWTON, C.QUASI_NEWTON] = FULL_NEWTON,
         reformKernel: int = 8,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        convertSDI: Literal[C.PROPAGATED, C.CONVERT_SDI_OFF, C.CONVERT_SDI_ON] = PROPAGATED,
         adaptiveDampingRatio: float = 0,
         continueDampingFactors: Boolean = OFF,
     ):
