@@ -73,7 +73,7 @@ from ..UtilityAndView.abaqusConstants import (ABS, AC_ON, ALL, ALL_FREQUENCIES,
                                               ANALYSIS_PRODUCT_DEFAULT, AUTOMATIC, AUTOMATIC_GLOBAL,
                                               Boolean, COMPLEX, DEFAULT, DIRECT, DISPLACEMENT,
                                               FULL_NEWTON, IMPLICIT, IMPLICIT_EXPLICIT, LINEAR, LOG,
-                                              LOGARITHMIC, OFF, ON, PERIOD, PREVIOUS_STEP,
+                                              LOGARITHMIC, NONE, OFF, ON, PERIOD, PREVIOUS_STEP,
                                               PROPAGATED, RAMP, SINGLE_DIRECTION, SOLVER_DEFAULT,
                                               STEP, SUBSPACE, SymbolicConstant, TRANSIENT, VALUE,
                                               WHOLE_MODEL)
@@ -1904,11 +1904,7 @@ class StepModel(ModelBase):
         response: Literal[C.STEADY_STATE, C.TRANSIENT] = TRANSIENT,
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-<<<<<<< HEAD
-        stabilizationMethod: Optional[SymbolicConstant] = None,
-=======
         stabilizationMethod: Literal[C.NONE, C.DISSIPATED_ENERGY_FRACTION, C.DAMPING_FACTOR] = NONE,
->>>>>>> 907a502a (Correct implementation links and types (#2758))
         stabilizationMagnitude: Optional[float] = None,
         creep: Boolean = ON,
         timeIncrementationMethod: Literal[C.FIXED, C.AUTOMATIC] = AUTOMATIC,
