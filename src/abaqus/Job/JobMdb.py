@@ -1,10 +1,12 @@
 from typing import Optional
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .JobFromInputFile import JobFromInputFile
 from .ModelJob import ModelJob
 from .OptimizationProcess import OptimizationProcess
 from ..Mdb.MdbBase import MdbBase
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, DOMAIN, OFF,
                                               OPT_DATASAVE_SPECIFY_CYCLE, PERCENTAGE, SINGLE,
                                               SymbolicConstant)
@@ -27,7 +29,7 @@ class JobMdb(MdbBase):
         name: str,
         model: str,
         description: str = "",
-        type: SymbolicConstant = ANALYSIS,
+        type: Literal[C.ANALYSIS, C.SYNTAXCHECK, C.RECOVER, C.RESTART] = ANALYSIS,
         queue: Optional[str] = "",
         waitHours: int = 0,
         waitMinutes: int = 0,
@@ -40,14 +42,14 @@ class JobMdb(MdbBase):
         userSubroutine: str = "",
         numCpus: int = 1,
         memory: int = 90,
-        memoryUnits: SymbolicConstant = PERCENTAGE,
-        explicitPrecision: SymbolicConstant = SINGLE,
-        nodalOutputPrecision: SymbolicConstant = SINGLE,
-        parallelizationMethodExplicit: SymbolicConstant = DOMAIN,
+        memoryUnits: Literal[C.PERCENTAGE, C.MEGA_BYTES, C.GIGA_BYTES] = PERCENTAGE,
+        explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = SINGLE,
+        nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE,
+        parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN,
         numDomains: int = 1,
         activateLoadBalancing: Boolean = OFF,
-        multiprocessingMode: SymbolicConstant = DEFAULT,
-        licenseType: SymbolicConstant = DEFAULT,
+        multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT,
+        licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT,
         *args,
         **kwargs
     ) -> ModelJob:
@@ -193,7 +195,7 @@ class JobMdb(MdbBase):
         self,
         name: str,
         inputFileName: str,
-        type: SymbolicConstant = ANALYSIS,
+        type: Literal[C.ANALYSIS, C.SYNTAXCHECK, C.RECOVER, C.RESTART] = ANALYSIS,
         queue: str = "",
         waitHours: int = 0,
         waitMinutes: int = 0,
@@ -202,14 +204,14 @@ class JobMdb(MdbBase):
         userSubroutine: str = "",
         numCpus: int = 1,
         memory: int = 90,
-        memoryUnits: SymbolicConstant = PERCENTAGE,
-        explicitPrecision: SymbolicConstant = SINGLE,
-        nodalOutputPrecision: SymbolicConstant = SINGLE,
-        parallelizationMethodExplicit: SymbolicConstant = DOMAIN,
+        memoryUnits: Literal[C.PERCENTAGE, C.MEGA_BYTES, C.GIGA_BYTES] = PERCENTAGE,
+        explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = SINGLE,
+        nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE,
+        parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN,
         numDomains: int = 1,
         activateLoadBalancing: Boolean = OFF,
-        multiprocessingMode: SymbolicConstant = DEFAULT,
-        licenseType: SymbolicConstant = DEFAULT,
+        multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT,
+        licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT,
     ) -> JobFromInputFile:
         """This method creates an analysis job using an input file for the model definition.
 
