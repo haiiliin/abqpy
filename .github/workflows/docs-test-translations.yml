@@ -1,4 +1,4 @@
-name: Test docs
+name: Test docs translations
 
 on:
   pull_request:
@@ -7,9 +7,7 @@ on:
     - 20**
     types: [opened, reopened, synchronize, labeled]
     paths:
-    - 'src/**'
-    - 'docs/requirements.txt'
-    - 'docs/source/**'
+    - 'docs/source/locales/**'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -21,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        language: ['en']
+        language: ['zh_CN']
     steps:
     - uses: actions/setup-python@v2
     - uses: actions/checkout@v3.1.0
