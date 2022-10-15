@@ -100,9 +100,14 @@ hoverxref_roles = [
     "term",  # Glossary terms
 ]
 hoverxref_role_types = {
-    "mod": "modal",  # for Python Sphinx Domain
     "doc": "modal",  # for whole docs
+    "mod": "modal",  # for Python Sphinx Domain
     "class": "tooltip",  # for Python Sphinx Domain
+    "func": "tooltip",  # for Python Sphinx Domain
+    "meth": "tooltip",  # for Python Sphinx Domain
+    "attr": "tooltip",  # for Python Sphinx Domain
+    "exc": "tooltip",  # for Python Sphinx Domain
+    "obj": "tooltip",  # for Python Sphinx Domain
     "ref": "tooltip",  # for hoverxref_auto_ref config
     "confval": "tooltip",  # for custom object
     "term": "tooltip",  # for glossaries
