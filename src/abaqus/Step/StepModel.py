@@ -1,4 +1,5 @@
 from typing import Union, Optional
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -68,7 +69,6 @@ from ..StepMiscellaneous.SubstructureGenerateFrequencyArray import (
 from ..StepMiscellaneous.SubstructureGenerateModesArray import (
     SubstructureGenerateModesArray,
 )
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ABS, AC_ON, ALL, ALL_FREQUENCIES,
                                               ANALYSIS_PRODUCT_DEFAULT, AUTOMATIC, AUTOMATIC_GLOBAL,
                                               Boolean, COMPLEX, DEFAULT, DIRECT, DISPLACEMENT,
@@ -77,6 +77,7 @@ from ..UtilityAndView.abaqusConstants import (ABS, AC_ON, ALL, ALL_FREQUENCIES,
                                               PROPAGATED, RAMP, SINGLE_DIRECTION, SOLVER_DEFAULT,
                                               STEP, SUBSPACE, SymbolicConstant, TRANSIENT, VALUE,
                                               WHOLE_MODEL)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
