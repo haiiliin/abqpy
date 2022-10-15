@@ -17,7 +17,7 @@ for file in ['README.md', 'README-zh-cn.md', 'docs/source/getting_started.rst']:
     with open(file, 'r', encoding='utf-8') as f:
         content = f.read()
     
-    pattern = r'abqpy(=+?)20\d\d\.\d+?\.\d+?'
+    pattern = r'abqpy(=+?)20\d\d\.\d+?\.\d+'
     repl = f'abqpy\g<1>{current_version}'
     content = re.sub(pattern, repl, content)
     
