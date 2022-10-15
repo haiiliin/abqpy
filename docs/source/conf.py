@@ -67,6 +67,7 @@ extensions = [
     'sphinx_autodoc_typehints',
     'sphinx_codeautolink',
     'sphinx_toolbox.confval',
+    'hoverxref.extension',
 ]
 
 # Default behavior for code block concatenation for sphinx_codeautolink
@@ -85,6 +86,31 @@ intersphinx_mapping = {
     'scipy': ('https://docs.scipy.org/doc/scipy/', None),
     'matplotlib': ('https://matplotlib.org/stable/', None),
     'jinjia2': ('https://jinja.palletsprojects.com/en/3.0.x/', None),
+}
+
+# Hoverxref configuration
+hoverxref_auto_ref = True
+hoverxref_domains = ["py"]
+hoverxref_roles = [
+    'numref',
+    'confval',
+    'setting',
+    "option",
+    "doc",  # Documentation pages
+    "term",  # Glossary terms
+]
+hoverxref_role_types = {
+    "doc": "modal",  # for whole docs
+    "mod": "modal",  # for Python Sphinx Domain
+    "class": "tooltip",  # for Python Sphinx Domain
+    "func": "tooltip",  # for Python Sphinx Domain
+    "meth": "tooltip",  # for Python Sphinx Domain
+    "attr": "tooltip",  # for Python Sphinx Domain
+    "exc": "tooltip",  # for Python Sphinx Domain
+    "obj": "tooltip",  # for Python Sphinx Domain
+    "ref": "tooltip",  # for hoverxref_auto_ref config
+    "confval": "tooltip",  # for custom object
+    "term": "tooltip",  # for glossaries
 }
 
 
