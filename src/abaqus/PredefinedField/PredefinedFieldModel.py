@@ -1,4 +1,5 @@
 from typing import Optional, Union
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -16,10 +17,10 @@ from .VoidsRatio import VoidsRatio
 from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT_THROUGH_THICKNESS, CONSTANT_RATIO,
                                               KINEMATIC_HARDENING, LAST_STEP, MAGNITUDE, OFF,
                                               STEP_END, SymbolicConstant, UNIFORM, UNSET)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
