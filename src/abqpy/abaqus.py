@@ -49,11 +49,11 @@ def run(cae: bool = True) -> None:
 
     if cae:
         proc = "cae"
-        mode = f"noGUI={filePath}" if abq_cmd_opt.pop("noGUI", True) else f"script={filePath}"
+        mode = f"noGUI='{filePath}'" if abq_cmd_opt.pop("noGUI", True) else f"script='{filePath}'"
         sep = '--' if args else ''
     else:
         proc = "python"
-        mode = filePath
+        mode = "'filePath'"
         sep = ''
 
     options = [
