@@ -174,12 +174,7 @@ class ModelJob(Job):
         parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN,
         numDomains: int = 1,
         activateLoadBalancing: Boolean = OFF,
-<<<<<<< HEAD
-        multiprocessingMode: SymbolicConstant = DEFAULT,
-=======
         multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT,
-        licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT,
->>>>>>> 6da034ee (Improve types of `JobMdb` and `ModelJob` (#2783))
         *args,
         **kwargs
     ):
