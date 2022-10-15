@@ -2644,3 +2644,5 @@ class abaqusConstants(SymbolicConstant, Enum):
     MINIMUM_ENVELOPE = "MINIMUM_ENVELOPE"
     RANGE_ALL = "RANGE_ALL"
     SS = "SS"
+    TOKEN = "TOKEN"
+    CREDIT = "CREDIT"
