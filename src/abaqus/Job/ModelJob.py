@@ -1,10 +1,13 @@
 from typing import Optional
 
+from typing_extensions import Literal
+
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Job import Job
 from .MessageArray import MessageArray
-from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, OFF, ON,
-                                              PERCENTAGE, SINGLE, SymbolicConstant, LOOP)
+from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, DOMAIN, LOOP, OFF, ON,
+                                              PERCENTAGE, SINGLE)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -48,9 +51,9 @@ class ModelJob(Job):
     description: str = ""
 
     #: A SymbolicConstant specifying the type of job. Possible values are ANALYSIS,
-    #: SYNTAXCHECK, RECOVER, and RESTART. The default value is ANALYSIS.If the object has the
+    #: SYNTAXCHECK, RECOVER, and RESTART. The default value is ANALYSIS. If the object has the
     #: type JobFromInputFile, **type** = RESTART is not available.
-    type: SymbolicConstant = ANALYSIS
+    type: Literal[C.ANALYSIS, C.SYNTAXCHECK, C.RECOVER, C.RESTART] = ANALYSIS
 
     #: An Int specifying the number of hours to wait before submitting the job. This argument
     #: is ignored if **queue** is set. The default value is 0.This argument works in conjunction
@@ -73,7 +76,7 @@ class ModelJob(Job):
     #: A SymbolicConstant specifying the units for the amount of memory used in an Abaqus
     #: analysis. Possible values are PERCENTAGE, MEGA_BYTES, and GIGA_BYTES. The default value
     #: is PERCENTAGE.
-    memoryUnits: SymbolicConstant = PERCENTAGE
+    memoryUnits: Literal[C.PERCENTAGE, C.MEGA_BYTES, C.GIGA_BYTES] = PERCENTAGE
 
     #: A Boolean specifying whether to retrieve the recommended memory settings from the last
     #: datacheck or analysis run and use those values in subsequent submissions. The default
@@ -83,15 +86,15 @@ class ModelJob(Job):
     #: A SymbolicConstant specifying whether to use the double precision version of
     #: Abaqus/Explicit. Possible values are SINGLE, FORCE_SINGLE, DOUBLE,
     #: DOUBLE_CONSTRAINT_ONLY, and DOUBLE_PLUS_PACK. The default value is SINGLE.
-    explicitPrecision: SymbolicConstant = SINGLE
+    explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = SINGLE
 
     #: A SymbolicConstant specifying the precision of the nodal output written to the output
     #: database. Possible values are SINGLE and FULL. The default value is SINGLE.
-    nodalOutputPrecision: SymbolicConstant = SINGLE
+    nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE
 
     #: A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.
     #: Possible values are LOOP and DOMAIN. The default value is LOOP.
-    parallelizationMethodExplicit: SymbolicConstant = LOOP
+    parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = LOOP
 
     #: An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
     #: **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
@@ -105,29 +108,29 @@ class ModelJob(Job):
     #: A SymbolicConstant specifying whether an analysis is decomposed into threads or into
     #: multiple processes that communicate through a message passing interface (MPI). Possible
     #: values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.
-    multiprocessingMode: SymbolicConstant = DEFAULT
+    multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT
 
     #: A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or
     #: Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If the object has
     #: the type JobFromInputFile, **analysis** = UNKNOWN.
-    analysis: Optional[SymbolicConstant] = None
+    analysis: Optional[Literal[C.STANDARD, C.EXPLICIT, C.UNKNOWN]] = None
 
     #: A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,
     #: RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If the
     #: **message** member is empty, **status** is set to NONE.
-    status: Optional[SymbolicConstant] = None
+    status: Optional[Literal[C.SUBMITTED, C.RUNNING, C.ABORTED, C.TERMINATED, C.COMPLETED, C.CHECK_RUNNING, C.CHECK_COMPLETED]] = None
 
     #: A String specifying the name of the queue to which to submit the job. The default value
     #: is an empty string.Note:You can use the **queue** argument when creating a Job object on a
     #: Windows workstation; however, remote queues are available only on Linux platforms.
-    queue: str = ""
+    queue: Optional[str] = ""
 
     #: A String specifying the time at which to submit the job. If **queue** is empty, the string
     #: syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
     #: valid according to the system administrator. The default value is an empty
     #: string.Note:You can use the **atTime** argument when creating a Job object on a Windows
     #: workstation; however, the `at` command is available only on Linux platforms.
-    atTime: str = ""
+    atTime: Optional[str] = ""
 
     #: A String specifying the location of the scratch directory. The default value is an empty
     #: string.
@@ -149,11 +152,11 @@ class ModelJob(Job):
         name: str,
         model: str,
         description: str = "",
-        type: SymbolicConstant = ANALYSIS,
-        queue: str = "",
+        type: Literal[C.ANALYSIS, C.SYNTAXCHECK, C.RECOVER, C.RESTART] = ANALYSIS,
+        queue: Optional[str] = "",
         waitHours: int = 0,
         waitMinutes: int = 0,
-        atTime: str = "",
+        atTime: Optional[str] = "",
         echoPrint: Boolean = OFF,
         contactPrint: Boolean = OFF,
         modelPrint: Boolean = OFF,
@@ -162,13 +165,13 @@ class ModelJob(Job):
         userSubroutine: str = "",
         numCpus: int = 1,
         memory: int = 90,
-        memoryUnits: SymbolicConstant = PERCENTAGE,
-        explicitPrecision: SymbolicConstant = SINGLE,
-        nodalOutputPrecision: SymbolicConstant = SINGLE,
-        parallelizationMethodExplicit: SymbolicConstant = LOOP,
+        memoryUnits: Literal[C.PERCENTAGE, C.MEGA_BYTES, C.GIGA_BYTES] = PERCENTAGE,
+        explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = SINGLE,
+        nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE,
+        parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN,
         numDomains: int = 1,
         activateLoadBalancing: Boolean = OFF,
-        multiprocessingMode: SymbolicConstant = DEFAULT,
+        multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT,
         *args,
         **kwargs
     ):
