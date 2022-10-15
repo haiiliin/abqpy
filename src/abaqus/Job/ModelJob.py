@@ -1,12 +1,13 @@
 from typing import Optional
+
 from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Job import Job
 from .MessageArray import MessageArray
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, DOMAIN, OFF, ON,
-                                              PERCENTAGE, SINGLE, SymbolicConstant)
+                                              PERCENTAGE, SINGLE)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
