@@ -90,6 +90,7 @@ intersphinx_mapping = {
 
 # Hoverxref configuration
 hoverxref_auto_ref = True
+hoverxref_domains = ["py"]
 hoverxref_roles = [
     'numref',
     'confval',
