@@ -5,14 +5,9 @@ from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Job import Job
 from .MessageArray import MessageArray
-<<<<<<< HEAD
-from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, OFF, ON,
-                                              PERCENTAGE, SINGLE, SymbolicConstant, LOOP)
-=======
 from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, DOMAIN, OFF, ON,
                                               PERCENTAGE, SINGLE)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
->>>>>>> 6da034ee (Improve types of `JobMdb` and `ModelJob` (#2783))
 
 
 @abaqus_class_doc
@@ -98,16 +93,8 @@ class ModelJob(Job):
     nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE
 
     #: A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.
-<<<<<<< HEAD
     #: Possible values are LOOP and DOMAIN. The default value is LOOP.
-    parallelizationMethodExplicit: SymbolicConstant = LOOP
-=======
-    #: Possible values are LOOP and DOMAIN. The default value is DOMAIN.
-    #:
-    #: .. versionchanged:: 2017
-    #:     The default value for parallelizationMethodExplicit is now `DOMAIN`
-    parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN
->>>>>>> 6da034ee (Improve types of `JobMdb` and `ModelJob` (#2783))
+    parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = LOOP
 
     #: An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
     #: **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
@@ -178,15 +165,6 @@ class ModelJob(Job):
         userSubroutine: str = "",
         numCpus: int = 1,
         memory: int = 90,
-<<<<<<< HEAD
-        memoryUnits: SymbolicConstant = PERCENTAGE,
-        explicitPrecision: SymbolicConstant = SINGLE,
-        nodalOutputPrecision: SymbolicConstant = SINGLE,
-        parallelizationMethodExplicit: SymbolicConstant = LOOP,
-        numDomains: int = 1,
-        activateLoadBalancing: Boolean = OFF,
-        multiprocessingMode: SymbolicConstant = DEFAULT,
-=======
         memoryUnits: Literal[C.PERCENTAGE, C.MEGA_BYTES, C.GIGA_BYTES] = PERCENTAGE,
         explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = SINGLE,
         nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE,
@@ -194,8 +172,6 @@ class ModelJob(Job):
         numDomains: int = 1,
         activateLoadBalancing: Boolean = OFF,
         multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT,
-        licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT,
->>>>>>> 6da034ee (Improve types of `JobMdb` and `ModelJob` (#2783))
         *args,
         **kwargs
     ):
