@@ -49,11 +49,11 @@ def run(cae: bool = True) -> None:
 
     if cae:
         proc = "cae"
-        mode = f'noGUI="{filePath}"' if abq_cmd_opt.pop("noGUI", True) else f'script="{filePath}"'
+        mode = f"noGUI={filePath}" if abq_cmd_opt.pop("noGUI", True) else f"script={filePath}"
         sep = '--' if args else ''
     else:
         proc = "python"
-        mode = '"filePath"'
+        mode = filePath
         sep = ''
 
     options = [
@@ -63,7 +63,7 @@ def run(cae: bool = True) -> None:
 
     # If in debug mode do not run the abaqus command at all
     if not debug and not make_docs:
-        cmd = f"{abaqus} {proc} {mode} {' '.join(options)} {sep} {' '.join(args)}".strip()
+        cmd = f"{abaqus} {proc} \"{mode}\" {' '.join(options)} {sep} {' '.join(args)}".strip()
         message = f"Running the following abaqus command: {cmd}"
         print("", "-" * len(message), message, "-" * len(message), sep="\n")
         os.system(cmd)
