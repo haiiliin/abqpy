@@ -2553,6 +2553,8 @@ MAXIMUM_ENVELOPE = abaqusConstants.MAXIMUM_ENVELOPE
 MINIMUM_ENVELOPE = abaqusConstants.MINIMUM_ENVELOPE
 RANGE_ALL = abaqusConstants.RANGE_ALL
 SS = abaqusConstants.SS
+TOKEN = abaqusConstants.TOKEN
+CREDIT = abaqusConstants.CREDIT
 # okay decompiling abaqusConstants.pyc
 
 end_all()
