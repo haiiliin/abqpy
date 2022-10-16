@@ -196,8 +196,8 @@ class Set(Region):
         ...
 
     def SetByBoolean(
-        self, name: str, sets: Sequence["Set"], operation: SymbolicConstant = UNION
-    ):
+        self, name: str, sets: Sequence[Set], operation: SymbolicConstant = UNION
+    ) -> Set:
         """This method creates a set by performing a boolean operation on two or more input sets.
 
         .. note:: 
@@ -226,7 +226,7 @@ class Set(Region):
         ...
 
     @abaqus_method_doc
-    def SetFromColor(self, name: str, color: tuple):
+    def SetFromColor(self, name: str, color: tuple) -> Set:
         """This method creates a set containing faces of the part marked with a specified color
         attribute. Third-party applications can assign color attributes to faces, and the color
         attribute can be imported into Abaqus from an ACIS file. You can use this method to
@@ -255,7 +255,7 @@ class Set(Region):
         ...
 
     @abaqus_method_doc
-    def SetFromElementLabels(self, name: str, elementLabels: tuple):
+    def SetFromElementLabels(self, name: str, elementLabels: tuple) -> Set:
         """This method creates a set from a sequence of element labels in a model database.
 
         .. note:: 
@@ -286,7 +286,7 @@ class Set(Region):
         ...
 
     @abaqus_method_doc
-    def SetFromNodeLabels(self, name: str, nodeLabels: tuple, unsorted: Boolean = False):
+    def SetFromNodeLabels(self, name: str, nodeLabels: tuple, unsorted: Boolean = False) -> Set:
         """This method creates a set from a sequence of node labels in a model database.
 
         .. note:: 
@@ -325,7 +325,7 @@ class Set(Region):
     @abaqus_method_doc
     def MapSetsFromOdb(
         self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE
-    ):
+    ) -> Set:
         """This method creates sets based on mapping sets from element centroid locations in an
         Odb.
 
