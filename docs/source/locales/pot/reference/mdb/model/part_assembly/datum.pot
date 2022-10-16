@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 09:59+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,11 @@ msgid "Each command also creates a Datum object in the corresponding datum repos
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/datum.rst:11
-msgid "Object features"
+msgid "Classes"
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/Datum.py:docstring of abaqus.Datum.Datum.Datum:1
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: ../../../../src/abaqus/Datum/Datum.py:docstring of abaqus.Datum.Datum.Datum:1
@@ -49,8 +53,15 @@ msgstr ""
 msgid "Check `Datum on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/datum.rst:22
+#: ../../reference/mdb/model/part_assembly/datum.rst:24
 msgid "DatumAxis"
+msgstr ""
+
+#: ../../../../src/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:1
+#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:1
+#: ../../../../src/abaqus/Datum/DatumPlane.py:docstring of abaqus.Datum.DatumPlane.DatumPlane:1
+#: ../../../../src/abaqus/Datum/DatumPoint.py:docstring of abaqus.Datum.DatumPoint.DatumPoint:1
+msgid "Bases: :py:class:`~abaqus.Datum.Datum.Datum`"
 msgstr ""
 
 #: ../../../../src/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:1
@@ -89,7 +100,7 @@ msgstr ""
 msgid "A tuple of Floats specifying a sequence of three Floats specifying the direction of the axis."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/datum.rst:30
+#: ../../reference/mdb/model/part_assembly/datum.rst:34
 msgid "DatumCsys"
 msgstr ""
 
@@ -149,7 +160,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the type of the coordinate system. Possible values are CARTESIAN, CYLINDRICAL, and SPHERICAL."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/datum.rst:38
+#: ../../reference/mdb/model/part_assembly/datum.rst:44
 msgid "DatumPlane"
 msgstr ""
 
@@ -174,7 +185,7 @@ msgstr ""
 msgid "A tuple of Floats specifying a sequence of three Floats specifying the normal."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/datum.rst:46
+#: ../../reference/mdb/model/part_assembly/datum.rst:54
 msgid "DatumPoint"
 msgstr ""
 

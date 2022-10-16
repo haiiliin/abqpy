@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 00:23+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,11 +50,17 @@ msgid ""
 msgstr ""
 
 #: ../../reference/kernel/input.rst:14
-msgid "Object features"
+msgid "Classes"
 msgstr ""
 
 #: ../../reference/kernel/input.rst:17
 msgid "AbaqusNDarray"
+msgstr ""
+
+#: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:1
+#: abaqus.InputFileParser.InputFile.InputFile:1
+#: abaqus.InputFileParser.Keyword.Keyword:1 of
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:1 of
@@ -90,7 +96,7 @@ msgid ""
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-abaqusndarraypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/kernel/input.rst:25
+#: ../../reference/kernel/input.rst:27
 msgid "InputFile"
 msgstr ""
 
@@ -155,6 +161,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
+#: abaqus.InputFileParser.InputFile.InputFile.__init__:1 of
 msgid "This method creates an InputFile object by reading an Abaqus input file."
 msgstr ""
 
@@ -169,15 +176,53 @@ msgstr ""
 msgid "This method parses the input file associated with the InputFile object."
 msgstr ""
 
+#: abaqus.InputFileParser.InputFile.InputFile.__init__:4 of
+msgid "This function can be accessed by::"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.__init__:9 of
+msgid ""
+"Check `InputFile.__init__ on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all"
+"#simaker-inputfile__init__pyc>`__."
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.__init__
+#: abaqus.InputFileParser.InputFile.InputFile.parse of
+msgid "Parameters"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.__init__:12 of
+msgid "A String specifying the path to the input file."
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.__init__:14 of
+msgid "A String specifying the path to the directory containing the input file."
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.__init__
+#: abaqus.InputFileParser.InputFile.InputFile.parse of
+msgid "Returns"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.__init__:16 of
+msgid "An :py:class:`~abaqus.InputFileParser.InputFile.InputFile` object."
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.__init__
+#: abaqus.InputFileParser.InputFile.InputFile.parse of
+msgid "Return type"
+msgstr ""
+
+#: abaqus.InputFileParser.InputFile.InputFile.__init__:17 of
+msgid ":class:`InputFile`"
+msgstr ""
+
 #: abaqus.InputFileParser.InputFile.InputFile.parse:4 of
 msgid ""
 "Check `InputFile.parse on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all"
 "#simaker-inputfileparsepyc>`__."
-msgstr ""
-
-#: abaqus.InputFileParser.InputFile.InputFile.parse of
-msgid "Parameters"
 msgstr ""
 
 #: abaqus.InputFileParser.InputFile.InputFile.parse:7 of
@@ -207,16 +252,8 @@ msgid ""
 "the option usePyArray=True. The default is False."
 msgstr ""
 
-#: abaqus.InputFileParser.InputFile.InputFile.parse of
-msgid "Returns"
-msgstr ""
-
 #: abaqus.InputFileParser.InputFile.InputFile.parse:22 of
 msgid "A KeywordSequence object."
-msgstr ""
-
-#: abaqus.InputFileParser.InputFile.InputFile.parse of
-msgid "Return type"
 msgstr ""
 
 #: abaqus.InputFileParser.InputFile.InputFile.parse:23 of
@@ -233,7 +270,7 @@ msgid ""
 "each subsequent     parsing."
 msgstr ""
 
-#: ../../reference/kernel/input.rst:33
+#: ../../reference/kernel/input.rst:37
 msgid "Keyword"
 msgstr ""
 
@@ -352,5 +389,8 @@ msgstr ""
 #~ "If you parse an input file more"
 #~ " than once, a ValueError is raised"
 #~ " for each subsequent parsing."
+#~ msgstr ""
+
+#~ msgid "Object features"
 #~ msgstr ""
 
