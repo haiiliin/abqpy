@@ -93,7 +93,7 @@ In this code, we draw a sketch with a square. Now we can create a part using thi
     part = model.Part(name='part', dimensionality=THREE_D, type=DEFORMABLE_BODY)
     part.BaseSolidExtrude(sketch=sketch, depth=1)
 
-The first line creates a 3D and deformable part. Then we use the :py:meth:`~abaqus.Feature.Feature.Feature.BaseSolidExtrude` method to create a part using the sketch. 
+The first line creates a 3D and deformable part. Then we use the :py:meth:`~abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude` method to create a part using the sketch. 
 
 
 Create some sets for boundary conditions and loads
