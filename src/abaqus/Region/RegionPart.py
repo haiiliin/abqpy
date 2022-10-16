@@ -18,7 +18,7 @@ from ..Mesh.MeshEdge import MeshEdge
 from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
-
+from ..UtilityAndView.abaqusConstants import Boolean, OVERWRITE, SymbolicConstant, UNION
 
 @abaqus_class_doc
 class RegionPart(RegionPartBase):
@@ -492,3 +492,163 @@ class RegionPart(RegionPartBase):
         """
         self.stringers[name] = stringer = Stringer(name, edges, elementEdges)
         return stringer
+
+# The following methods was originally in the `Set` object page documentation
+# But it accessed only by `Part` and `rootAssembly` objetcs.
+
+    def SetByBoolean(
+        self, name: str, sets: Sequence[Set], operation: SymbolicConstant = UNION
+    ) -> Set:
+        """This method creates a set by performing a boolean operation on two or more input sets.
+
+        .. note:: 
+            This function can be accessed by::
+
+                mdb.models[name].parts[name].SetByBoolean
+                mdb.models[name].rootAssembly.SetByBoolean
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        sets
+            A sequence of Set objects.
+        operation
+            A SymbolicConstant specifying the boolean operation to perform. Possible values are
+            UNION, INTERSECTION, and DIFFERENCE. The default value is UNION. Note that if DIFFERENCE
+            is specified, the order of the given input sets is important; All sets specified after
+            the first one are subtracted from the first one.
+
+        Returns
+        -------
+        Set
+            A :py:class:`~abaqus.Region.Set.Set` object.
+        """
+        ...
+
+    @abaqus_method_doc
+    def SetFromColor(self, name: str, color: tuple) -> Set:
+        """This method creates a set containing faces of the part marked with a specified color
+        attribute. Third-party applications can assign color attributes to faces, and the color
+        attribute can be imported into Abaqus from an ACIS file. You can use this method to
+        create sets only on parts; however, you can access the sets from instances of the parts
+        in the assembly.
+
+        .. note:: 
+            This function can be accessed by::
+
+                mdb.models[name].parts[name].SetFromColor
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        color
+            A sequence of three Ints specifying the RGB color. Values can range from 0 to 255. The
+            first integer is for red, the second for green, and the third for blue. For example, a
+            face colored in yellow is identified by:`color=(255,255,0)`
+
+        Returns
+        -------
+        Set
+            A :py:class:`~abaqus.Region.Set.Set` object.
+        """
+        ...
+
+    @abaqus_method_doc
+    def SetFromElementLabels(self, name: str, elementLabels: Sequence[int]) -> Set:
+        """This method creates a set from a sequence of element labels in a model database.
+
+        .. note:: 
+            This function can be accessed by::
+
+                mdb.models[name].parts[name].SetFromElementLabels
+                mdb.models[name].rootAssembly.SetFromElementLabels
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        elementLabels
+            A sequence of element labels. An element label is a sequence of Int element identifiers.
+            For example, for a part::
+
+                elementLabels=(2,3,5,7)
+
+            For an assembly::
+
+                elementLabels=(('Instance-1', (2,3,5,7)), ('Instance-2', (1,2,3)))`
+
+        Returns
+        -------
+        Set
+            A :py:class:`~abaqus.Region.Set.Set` object.
+        """
+        ...
+
+    @abaqus_method_doc
+    def SetFromNodeLabels(self, name: str, nodeLabels: Sequence[int], unsorted: Boolean = False) -> Set:
+        """This method creates a set from a sequence of node labels in a model database.
+
+        .. note:: 
+            This function can be accessed by::
+
+                mdb.models[name].parts[name].SetFromNodeLabels
+                mdb.models[name].rootAssembly.SetFromNodeLabels
+
+        Parameters
+        ----------
+        name
+            A String specifying the repository key.
+        nodeLabels
+            A sequence of node labels. A node label is a sequence of Int node identifiers. For
+            example, for a part::
+
+                nodeLabels=(2,3,5,7)
+
+            For an assembly::
+
+                nodeLabels=(('Instance-1', (2,3,5,7)), ('Instance-2', (1,2,3)))`
+
+        unsorted
+            A Boolean specifying whether the created set is unsorted. The default value is False.
+
+            .. versionadded:: 2018
+                The `unsorted` argument was added.
+
+        Returns
+        -------
+        Set
+            A :py:class:`~abaqus.Region.Set.Set` object.
+        """
+        ...
+
+    @abaqus_method_doc
+    def MapSetsFromOdb(
+        self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE
+    ) -> Set:
+        """This method creates sets based on mapping sets from element centroid locations in an
+        Odb.
+
+        .. note:: 
+            This function can be accessed by::
+
+                mdb.models[name].parts[name].MapSetsFromOdb
+
+        Parameters
+        ----------
+        odbPath
+            A String specifying the path to the ODB containing the source sets.
+        odbSets
+            A list of names of sets on the ODB to map.
+        partSets
+            A list of names of sets to construct or use corresponding to the ODB sets.
+        method
+            An enum to specify OVERWRITE, APPEND, INTERSECT, or REMOVE. The default is OVERWRITE.
+
+        Returns
+        -------
+        Set
+            A :py:class:`~abaqus.Region.Set.Set` object or a tuple of Set objects.
+        """
+        ...
