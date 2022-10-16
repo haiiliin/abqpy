@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2016\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 09:59+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,10 @@ msgstr ""
 
 #: ../../reference/mdb/model/predefined.rst:9
 msgid "Create predefined fields"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:1
+msgid "Bases: :py:class:`~abaqus.Model.ModelBase.ModelBase`"
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:1
@@ -52,18 +56,607 @@ msgstr ""
 msgid "Check `PredefinedFieldModel on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure:0
+#: ../../../../src/abaqus/PredefinedField/IMAField.py:docstring of abaqus.PredefinedField.IMAField.IMAField:0
+#: ../../../../src/abaqus/PredefinedField/IMARegion.py:docstring of abaqus.PredefinedField.IMARegion.IMARegion:0
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState:0
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening:0
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment:0
+#: ../../../../src/abaqus/PredefinedField/PredefinedField.py:docstring of abaqus.PredefinedField.PredefinedField.PredefinedField:0
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:0
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldState.py:docstring of abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState:0
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature:0
+#: ../../../../src/abaqus/PredefinedField/TemperatureState.py:docstring of abaqus.PredefinedField.TemperatureState.TemperatureState:0
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity:0
+msgid "Public Data Attributes:"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Model.ModelBase.ModelBase.name>`\\"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:12
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.__init__:12
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:12
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.__init__:12
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:12
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:12
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:12
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:12
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:13
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation:13
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:12
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:12
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:12
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:12
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:12
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:12
+#: ../../None:52:<autosummary>:1
+#: ../../None:5:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+#: ../../docstring of abaqus.PredefinedField.PredefinedField.PredefinedField.name:1
+#: ../../docstring of abaqus.PredefinedField.Temperature.Temperature.name:1
+msgid "A String specifying the repository key."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`stefanBoltzmann <abaqus.Model.ModelBase.ModelBase.stefanBoltzmann>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "None or a Float specifying the Stefan-Boltzmann constant."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "None or a Float specifying the absolute zero constant."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`waveFormulation <abaqus.Model.ModelBase.ModelBase.waveFormulation>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "None or a Float specifying the universal gas constant."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`noPartsInputFile <abaqus.Model.ModelBase.ModelBase.noPartsInputFile>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A Boolean specifying whether an input file should be written without parts and assemblies."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`restartIncrement <abaqus.Model.ModelBase.ModelBase.restartIncrement>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "An Int specifying the increment, interval, iteration or cycle where the restart analysis will start."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`endRestartStep <abaqus.Model.ModelBase.ModelBase.endRestartStep>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A Boolean specifying that the step specified by **restartStep** should be terminated at the increment specified by **restartIncrement**."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A Boolean specifying that a shell global model drives a solid submodel."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`lastChangedCount <abaqus.Model.ModelBase.ModelBase.lastChangedCount>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A Float specifying the time stamp that indicates when the model was last changed."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A String specifying the purpose and contents of the Model object."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A String specifying the name of the job that generated the restart data."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A String specifying the name of the step where the restart analysis will start."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`globalJob <abaqus.Model.ModelBase.ModelBase.globalJob>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A String specifying the name of the job that generated the results for the global model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`copyConstraints <abaqus.Model.ModelBase.ModelBase.copyConstraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A boolean specifying the status of constraints created in a model, in the model which instances this model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`copyConnectors <abaqus.Model.ModelBase.ModelBase.copyConnectors>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A boolean specifying the status of connectors created in a model, in the model which instances this model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`copyInteractions <abaqus.Model.ModelBase.ModelBase.copyInteractions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A boolean specifying the status of interactions created in a model, in the model which instances this model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`amplitudes <abaqus.Model.ModelBase.ModelBase.amplitudes>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Amplitude objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`profiles <abaqus.Model.ModelBase.ModelBase.profiles>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Profile objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`boundaryConditions <abaqus.Model.ModelBase.ModelBase.boundaryConditions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of BoundaryCondition objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ConstrainedSketchConstraint objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`analyticalFields <abaqus.Model.ModelBase.ModelBase.analyticalFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of AnalyticalField objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`discreteFields <abaqus.Model.ModelBase.ModelBase.discreteFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of DiscreteField objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`predefinedFields <abaqus.Model.ModelBase.ModelBase.predefinedFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of PredefinedField objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Interaction objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`interactionProperties <abaqus.Model.ModelBase.ModelBase.interactionProperties>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of InteractionProperty objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`contactControls <abaqus.Model.ModelBase.ModelBase.contactControls>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ContactControl objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`contactInitializations <abaqus.Model.ModelBase.ModelBase.contactInitializations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ContactInitialization objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`contactStabilizations <abaqus.Model.ModelBase.ModelBase.contactStabilizations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ContactStabilization objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`linkedInstances <abaqus.Model.ModelBase.ModelBase.linkedInstances>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`loads <abaqus.Model.ModelBase.ModelBase.loads>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Load objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`materials <abaqus.Model.ModelBase.ModelBase.materials>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Material objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Calibration objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`sections <abaqus.Model.ModelBase.ModelBase.sections>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Section objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`remeshingRules <abaqus.Model.ModelBase.ModelBase.remeshingRules>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of RemeshingRule objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`sketches <abaqus.Model.ModelBase.ModelBase.sketches>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ConstrainedSketch objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`parts <abaqus.Model.ModelBase.ModelBase.parts>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Part objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`steps <abaqus.Model.ModelBase.ModelBase.steps>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Step objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`featureOptions <abaqus.Model.ModelBase.ModelBase.featureOptions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`adaptiveMeshConstraints <abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of AdaptiveMeshConstraint objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`adaptiveMeshControls <abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of AdaptiveMeshControl objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`timePoints <abaqus.Model.ModelBase.ModelBase.timePoints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of TimePoint objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`filters <abaqus.Model.ModelBase.ModelBase.filters>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Filter objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`integratedOutputSections <abaqus.Model.ModelBase.ModelBase.integratedOutputSections>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of IntegratedOutputSection objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`fieldOutputRequests <abaqus.Model.ModelBase.ModelBase.fieldOutputRequests>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of FieldOutputRequest objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`historyOutputRequests <abaqus.Model.ModelBase.ModelBase.historyOutputRequests>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of HistoryOutputRequest objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`optimizationTasks <abaqus.Model.ModelBase.ModelBase.optimizationTasks>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of OptimizationTask objects."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure:0
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState:0
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening:0
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment:0
+#: ../../../../src/abaqus/PredefinedField/PredefinedField.py:docstring of abaqus.PredefinedField.PredefinedField.PredefinedField:0
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:0
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature:0
+#: ../../../../src/abaqus/PredefinedField/TiffOptions.py:docstring of abaqus.PredefinedField.TiffOptions.TiffOptions:0
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity:0
+msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`FluidCavityPressure <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure>`\\ \\(name\\, fluidCavity\\, ...\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:1
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:1
+#: ../../None:12:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a FluidCavityPressure object."
 msgstr ""
 
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`InitialState <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState>`\\ \\(name\\, instances\\, fileName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.__init__:1
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:1
+#: ../../None:12:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates an InitialState predefined field object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`KinematicHardening <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening>`\\ \\(name\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:1
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:1
+#: ../../None:12:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a KinematicHardening object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`MaterialAssignment <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment>`\\ \\(name\\, instanceList\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.__init__:1
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:1
+#: ../../None:12:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a MaterialAssignment predefined field object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`PorePressure <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure>`\\ \\(name\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:1
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:1
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a PorePressure predefined field object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`Temperature <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature>`\\ \\(name\\, createStepName\\, region\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:1
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:1
+#: ../../None:12:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+msgid "This method creates a Temperature object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`Velocity <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity>`\\ \\(name\\, region\\, velocity1\\, velocity2\\, ...\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:1
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:1
+#: ../../None:12:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a Velocity predefined field object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`Saturation <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation>`\\ \\(name\\, region\\[\\, distributionType\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation:1
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a Saturation predefined field object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`Stress <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress>`\\ \\(name\\, region\\[\\, distributionType\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:1
+#: ../../None:12:<autosummary>:1
+msgid "This method creates a Stress predefined field object."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ":py:obj:`VoidsRatio <abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio>`\\ \\(name\\, region\\[\\, distributionType\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.Model.ModelBase.ModelBase.__init__>`\\ \\(name\\[\\, description\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a Model object."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`ModelFromInputFile <abaqus.Model.ModelBase.ModelBase.ModelFromInputFile>`\\ \\(name\\, inputFileName\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`ModelFromOdbFile <abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile>`\\ \\(name\\, odbFileName\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`ModelFromNastranFile <abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ \\(modelName\\, inputFileName\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.Model.ModelBase.ModelBase.setValues>`\\ \\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method modifies the Model object."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:4
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.__init__:4
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:4
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.__init__:4
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:4
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:4
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:4
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:4
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:5
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation:5
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:4
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:4
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:4
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:4
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:4
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:4
 msgid "This function can be accessed by::"
 msgstr ""
 
@@ -72,8 +665,12 @@ msgstr ""
 msgid "Check `FluidCavityPressure on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fluidcavitypressurepyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:0
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.__init__:0
 #: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.setValues:0
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:0
 #: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.setValues:0
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.__init__:0
 #: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.setValues:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedField.py:docstring of abaqus.PredefinedField.PredefinedField.PredefinedField.delete:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedField.py:docstring of abaqus.PredefinedField.PredefinedField.PredefinedField.move:0
@@ -81,71 +678,76 @@ msgstr ""
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:0
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:0
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:0
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:0
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:0
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.move:0
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:0
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:0
 #: ../../../../src/abaqus/PredefinedField/TiffOptions.py:docstring of abaqus.PredefinedField.TiffOptions.TiffOptions.setValues:0
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:0
 #: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.setValues:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:12
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:12
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:12
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:12
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:12
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:12
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:12
-#: ../../None:5:<autosummary>:1
-#: ../../None:6:<autosummary>:1
-#: ../../docstring of abaqus.PredefinedField.PredefinedField.PredefinedField.name:1
-#: ../../docstring of abaqus.PredefinedField.Temperature.Temperature.name:1
-msgid "A String specifying the repository key."
-msgstr ""
-
+#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:14
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:14
 #: ../../docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.fluidCavity:1
 msgid "A String specifying the name of a Fluid Cavity Interaction."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:16
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:16
 #: ../../docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.fluidPressure:1
 msgid "A Float specifying the initial fluid pressure."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:0
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.__init__:0
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:0
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.__init__:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:0
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:0
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:0
 msgid "Returns"
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:18
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:18
 msgid "A :py:class:`~abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure` object."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:0
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.__init__:0
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:0
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.__init__:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:0
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:0
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:0
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:0
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:0
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:0
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:0
 msgid "Return type"
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:19
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.FluidCavityPressure:19
 msgid ":class:`FluidCavityPressure`"
-msgstr ""
-
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates an InitialState predefined field object."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState:15
@@ -153,45 +755,47 @@ msgstr ""
 msgid "Check `InitialState on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-initialstatepyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.__init__:14
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:14
 #: ../../docstring of abaqus.PredefinedField.InitialState.InitialState.instances:1
 msgid "A :py:class:`~abaqus.Assembly.PartInstanceArray.PartInstanceArray` object specifying the instances to which the predefined field is applied."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.__init__:17
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:17
 #: ../../docstring of abaqus.PredefinedField.InitialState.InitialState.fileName:1
 msgid "A String specifying the name of the job that generated the initial state data."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.__init__:19
 #: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.setValues:7
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:19
 #: ../../docstring of abaqus.PredefinedField.InitialState.InitialState.endStep:1
 msgid "The SymbolicConstant LAST_STEP or an Int specifying the step from which the initial state values are to be read or the SymbolicConstant LAST_STEP. The default value is LAST_STEP."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.__init__:23
 #: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.setValues:11
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:23
 #: ../../docstring of abaqus.PredefinedField.InitialState.InitialState.endIncrement:1
 msgid "The SymbolicConstant STEP_END or an Int specifying the increment, interval or iteration of the step set in **endStep** or the SymbolicConstant STEP_END. The default value is STEP_END."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.__init__:27
 #: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.setValues:15
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:27
 #: ../../docstring of abaqus.PredefinedField.InitialState.InitialState.updateReferenceConfiguration:1
 msgid "A Boolean specifying whether to update the reference configuration based on the import data. The default value is OFF."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.__init__:30
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:30
 msgid "An :py:class:`~abaqus.PredefinedField.InitialState.InitialState` object."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.__init__:31
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.InitialState:31
 msgid ":class:`InitialState`"
-msgstr ""
-
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a KinematicHardening object."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening:16
@@ -199,8 +803,10 @@ msgstr ""
 msgid "Check `KinematicHardening on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-kinematichardeningpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:14
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:14
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:14
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:14
 #: ../../None:5:<autosummary>:1
 #: ../../None:6:<autosummary>:1
 #: ../../None:7:<autosummary>:1
@@ -208,12 +814,14 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:16
 #: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.setValues:7
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:16
 #: ../../docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.numBackStress:1
 msgid "An Int specifying the number of backstresses. The default value is 1."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:18
 #: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.setValues:9
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:18
 #: ../../None:10:<autosummary>:1
@@ -221,47 +829,49 @@ msgstr ""
 msgid "A sequence of Floats specifying the initial equivalent Plastic strain."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:20
 #: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.setValues:11
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:20
 #: ../../docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.backStress:1
 msgid "A sequence of sequences of Floats specifying the initial backstress tensor for kinematic hardening models. The default value is an empty sequence."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:23
 #: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.setValues:14
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:23
 #: ../../docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.sectPtNum:1
 msgid "A sequence of Ints specifying section point numbers. This argument is valid only when **definition** = SECTION_PTS."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:26
 #: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.setValues:17
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:26
 #: ../../docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.definition:1
 msgid "A SymbolicConstant specifying different types of kinematic hardening. Possible values are KINEMATIC_HARDENING, CRUSHABLE_FOAM, REBAR, SECTION_PTS, and USER_DEFINED. The default value is KINEMATIC_HARDENING."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:30
 #: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.setValues:21
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:30
 #: ../../docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.rebarLayerNames:1
 msgid "A sequence of Strings specifying rebar layer names. This argument is valid only when **definition** = REBAR."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:33
 #: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.setValues:24
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:33
 #: ../../docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.distributionType:1
 msgid "A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE and ANALYTICAL_FIELD. The default value is MAGNITUDE."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:36
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:36
 msgid "A :py:class:`~abaqus.PredefinedField.KinematicHardening.KinematicHardening` object."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:37
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.KinematicHardening:37
 msgid ":class:`KinematicHardening`"
-msgstr ""
-
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a MaterialAssignment predefined field object."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment:16
@@ -269,53 +879,144 @@ msgstr ""
 msgid "Check `MaterialAssignment on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialassignmentpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.__init__:14
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:14
 #: ../../docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.instanceList:1
 msgid "A :py:class:`~abaqus.Assembly.PartInstanceArray.PartInstanceArray` object specifying the part instances to which the predefined field is applied. All instances must be assigned the same Eulerian section."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.__init__:17
 #: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.setValues:7
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:17
 #: ../../docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.useFields:1
 msgid "A Boolean specifying whether the volume fraction data will be uniform or defined by discrete fields. The default value is OFF."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.__init__:20
 #: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.setValues:10
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:20
 #: ../../docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.assignmentList:1
 msgid "A sequence of tuples specifying the uniform volume fractions to be assigned. This argument is valid only when **useFields** = FALSE. Each tuple contains two entries:A Region object.A tuple of Floats specifying the uniform volume fraction values. The length of the tuple must match the number of material instance names specified in the Eulerain section assigned to part instances specified by **instanceList**."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.__init__:26
 #: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.setValues:16
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:26
 #: ../../docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.fieldList:1
 msgid "A sequence of tuples specifying the discrete volume fractions to be assigned. This argument is valid only when **useFields** = TRUE. Each tuple contains two entries:A Region object.A tuple of Strings specifying Discrete Field names. The length of the tuple must match the number of material instance names specified in the Eulerain section assigned to part instances specified by **instanceList**."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.__init__:32
 #: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.setValues:22
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:32
 #: ../../docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.colorList:1
 msgid "A sequence of three Ints specifying colors used to display the material instance assignments. This is a sequence of R,G,B colors, where the values are represented by integers between 0 and 255. The default value is an empty sequence."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.__init__:36
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:36
 msgid "A :py:class:`~abaqus.PredefinedField.MaterialAssignment.MaterialAssignment` object."
 msgstr ""
 
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.__init__:37
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.MaterialAssignment:37
 msgid ":class:`MaterialAssignment`"
 msgstr ""
 
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:1
-msgid "This method creates a Stress predefined field object."
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:10
+msgid "Check `PorePressure on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-porepressurepyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:15
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:14
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:14
+msgid "A Region object specifying the region to which the predefined field is applied. Region is ignored if the predefined field has **distributionType** = FROM_FILE."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:18
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:17
+msgid "A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM, FROM_FILE and USER_DEFINED. The default value is UNIFORM."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:21
+msgid "The initial pore pressure in the first region in your model."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:23
+msgid "The pore pressure of the second location in your model"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:25
+msgid "Vertical position of the first location in your model for which you are specifying initial pore pressure."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:27
+msgid "The vertical position of the second location in your model."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:29
+msgid "A SymbolicConstant specifying either the magnitude of a uniform distribution for pore pressure at the second elevation or an analytical field to define a spatially varying initial pore pressure at the second elevation. Possible values are MAGNITUDE and ANALYTICAL_FIELD."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:33
+msgid "A String specifying the name of the AnalyticalField object associated with this predefined field. The `pressure2Field` argument applies only when `distributionType` = ANALYTICAL_FIELD."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:36
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:35
+msgid "A SymbolicConstant selecting the elevation distribution options, either Linear or Constant. Possible values are CONSTANT_RATIO and VARIABLE_RATIO."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:39
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:38
+msgid "A String specifying the name of the file from which the Field values are to be read when `distributionType` = FROM_FILE."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:42
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:41
+msgid "The SymbolicConstant LAST_INCREMENT or an Int specifying the increment, interval or iteration of the step when `distributionType` = FROM_FILE."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:45
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:44
+msgid "The SymbolicConstant LAST_STEP or an Int specifying the increment, interval or iteration of the step when `distributionType` = FROM_FILE."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:48
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:47
+msgid "A Boolean specifying whether to interpolate a field read from an output database or results file."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.PorePressure:50
+msgid ":class:`A PorePressure object.`"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation:10
+msgid "Check `Saturation on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-saturationpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation:15
+msgid "A Region object specifying the region to which the predefined field is applied."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation:17
+msgid "A SymbolicConstant specifying whether the load is uniform. Possible values are UNIFORM, and FIELD. The default value is UNIFORM."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation:20
+msgid "A String specifying the name of the AnalyticalField object associated with this predefined field. The **field** argument applies only when **distributionType** = FIELD. The default value is an empty string."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation:24
+msgid "A float specifying an initial saturation value for the region between 0.0 (for no saturation) and 1.0 (for full saturation)."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Saturation:27
+msgid ":class:`A Saturation object.`"
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:9
 msgid "Check `Stress on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stresspyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:14
-msgid "A Region object specifying the region to which the predefined field is applied. Region is ignored if the predefined field has **distributionType** = FROM_FILE."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Stress:17
@@ -350,66 +1051,72 @@ msgstr ""
 msgid ":class:`A Stress object.`"
 msgstr ""
 
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:1
-#: ../../None:6:<autosummary>:1
-msgid "This method creates a Temperature object."
-msgstr ""
-
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:9
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature:16
 msgid "Check `Temperature on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturepyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:14
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:14
 msgid "A String specifying the name of the step in which the predefined field is created."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:16
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:16
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied. **Region** is ignored if the predefined field has a **distributionType** member available, and **distributionType** = FROM_FILE ."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:20
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:20
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:8
 #: ../../docstring of abaqus.PredefinedField.Temperature.Temperature.distributionType:1
 msgid "A SymbolicConstant specifying how the predefined field varies spatially. Possible values are UNIFORM, USER_DEFINED, FROM_FILE, FIELD, FROM_FILE_AND_USER_DEFINED, and DISCRETE_FIELD. The default value is UNIFORM."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:24
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:24
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:12
 msgid "A SymbolicConstant specifying how the predefined field is distributed over the cross section of the region. Possible values are  - CONSTANT_THROUGH_THICKNESS - GRADIENTS_THROUGH_SHELL_CS - GRADIENTS_THROUGH_BEAM_CS - POINTS_THROUGH_SECTION  The default value is CONSTANT_THROUGH_THICKNESS."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:24
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:24
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:12
 msgid "A SymbolicConstant specifying how the predefined field is distributed over the cross section of the region. Possible values are"
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:27
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:27
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:15
 msgid "CONSTANT_THROUGH_THICKNESS"
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:28
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:28
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:16
 msgid "GRADIENTS_THROUGH_SHELL_CS"
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:29
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:29
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:17
 msgid "GRADIENTS_THROUGH_BEAM_CS"
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:30
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:30
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:18
 msgid "POINTS_THROUGH_SECTION"
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:32
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:32
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:20
 msgid "The default value is CONSTANT_THROUGH_THICKNESS."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:34
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:34
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:22
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:10
 #: ../../docstring of abaqus.PredefinedField.Temperature.Temperature.field:1
@@ -417,12 +1124,14 @@ msgid "A String specifying the name of the AnalyticalField or DiscreteField obje
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:39
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:39
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:27
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:15
 msgid "A String or the SymbolicConstant UNSET specifying the name of the amplitude reference. UNSET should be used if the predefined field has no amplitude reference. The default value is UNSET.Note:*amplitude* should be given only if it is valid for the specified step."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:44
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:44
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:32
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:20
 #: ../../None:19:<autosummary>:1
@@ -431,30 +1140,35 @@ msgid "A String specifying the name of the file from which the temperature value
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:47
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:47
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:35
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:23
 msgid "An Int specifying the first step from which temperature values are to be read or the SymbolicConstant FIRST_STEP or LAST_STEP. This argument is valid only when **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The default value is None."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:52
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:52
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:40
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:28
 msgid "An Int specifying the first increment of the step set in **beginStep** or the SymbolicConstants STEP_START or STEP_END. This argument is valid only when **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The default value is None."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:57
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:57
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:45
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:33
 msgid "An Int specifying the last step from which temperature values are to be read or the SymbolicConstants FIRST_STEP and LAST_STEP. This argument is valid only when **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The default value is None."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:62
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:62
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:50
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:38
 msgid "An Int specifying the last increment of the step set in **endStep** or the SymbolicConstants STEP_START and STEP_END. This argument is valid only when **distributionType** = FROM_FILE or **distributionType** = FROM_FILE_AND_USER_DEFINED. The default value is None."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:67
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:67
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:55
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:43
 msgid "A SymbolicConstant specifying whether to interpolate a field read from an output database or results file. Possible values are OFF, ON or MIDSIDE_ONLY. The default value is OFF."
@@ -467,12 +1181,14 @@ msgid "A Sequence of Doubles specifying the temperature values when **distributi
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:71
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:71
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:59
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:47
 msgid "A Sequence of Doubles specifying the temperature values when **distributionType** = UNIFORM or FIELD. The value of the **magnitudes** argument is a function of the **crossSectionDistribution** argument, as shown in the following list:"
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:75
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:75
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:63
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:51
 msgid "If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS then **magnitudes** is a Double specifying the temperature."
@@ -491,34 +1207,34 @@ msgid "If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then **magnit
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:83
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:83
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:71
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:59
 msgid "If **crossSectionDistribution** = POINTS_THROUGH_SECTION then **magnitudes** is a sequence of Doubles specifying the temperature at each point."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:86
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:86
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:74
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:62
 msgid "A Float specifying the absolute value by which a driven node of the field can lie outside the region of the elements of the global model. The default value is 0.0. This argument cannot be used with **midside**."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:90
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:90
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValues:78
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.setValuesInStep:66
 msgid "A Float specifying the fraction of the average element size in the global model by which a driven node of the field can lie outside the region of the elements of the global model. The default value is 0.0. This argument cannot be used with **midside**."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:94
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:94
 msgid "A :py:class:`~abaqus.PredefinedField.Temperature.Temperature` object."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Temperature:95
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:95
 msgid ":class:`Temperature`"
-msgstr ""
-
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a Velocity predefined field object."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:9
@@ -527,61 +1243,111 @@ msgid "Check `Velocity on help.3ds.com/2016 <https://help.3ds.com/2016/English/D
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:16
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:16
 #: ../../docstring of abaqus.PredefinedField.Velocity.Velocity.velocity1:1
 msgid "A Float specifying the first component of the velocity."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:18
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:18
 #: ../../docstring of abaqus.PredefinedField.Velocity.Velocity.velocity2:1
 msgid "A Float specifying the second component of the velocity."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:20
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:20
 #: ../../docstring of abaqus.PredefinedField.Velocity.Velocity.velocity3:1
 msgid "A Float specifying the third component of the velocity."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:22
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:22
 #: ../../docstring of abaqus.PredefinedField.Velocity.Velocity.omega:1
 msgid "A Float specifying the angular velocity."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:24
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:24
 #: ../../docstring of abaqus.PredefinedField.Velocity.Velocity.axisBegin:1
 msgid "A sequence of Floats specifying the *X-*, *Y-*, and **Z**- coordinates of the starting point of the axis about which **omega** is defined."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:27
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:27
 #: ../../docstring of abaqus.PredefinedField.Velocity.Velocity.axisEnd:1
 msgid "A sequence of Floats specifying the *X-*, *Y-*, and **Z**- coordinates of the end point of the axis about which **omega** is defined."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:30
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:30
 #: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.setValues:7
 #: ../../docstring of abaqus.PredefinedField.Velocity.Velocity.field:1
 msgid "A String specifying the name of the AnalyticalField object associated with this predefined field. The **field** argument applies only when **distributionType** = FIELD_ANALYTICAL. The default value is an empty string."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:34
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:34
 #: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.setValues:11
 #: ../../docstring of abaqus.PredefinedField.Velocity.Velocity.distributionType:1
 msgid "A SymbolicConstant specifying whether the load is uniform. Possible values are MAGNITUDE and FIELD_ANALYTICAL. The default value is MAGNITUDE."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:37
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:37
 msgid "A :py:class:`~abaqus.PredefinedField.Velocity.Velocity` object."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.Velocity:38
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:38
 msgid ":class:`Velocity`"
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:15
-msgid "Object features"
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:9
+msgid "Check `VoidsRatio on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-voidsratiopyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:18
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:20
+msgid "The initial void ratio in the first region in your model."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:22
+msgid "The void ratio of the second location in your model"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:24
+msgid "Vertical position of the first location in your model for which you are specifying initial void ratio."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:26
+msgid "The vertical position of the second location in your model"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:28
+msgid "A SymbolicConstant specifying either the magnitude of a uniform distribution for void ratio at the second elevation or an analytical field to define a spatially varying initial void ratio at the second elevation. Possible values are MAGNITUDE and ANALYTICAL_FIELD."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:32
+msgid "A String specifying the name of the AnalyticalField object associated with this predefined field. The `ratio2Field` argument applies only when `distributionType` = ANALYTICAL_FIELD."
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldModel.py:docstring of abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel.VoidsRatio:49
+msgid ":class:`A VoidsRatio object.`"
+msgstr ""
+
+#: ../../reference/mdb/model/predefined.rst:19
+msgid "Classes"
+msgstr ""
+
+#: ../../reference/mdb/model/predefined.rst:22
 msgid "PredefinedField"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/IMAField.py:docstring of abaqus.PredefinedField.IMAField.IMAField:1
+#: ../../../../src/abaqus/PredefinedField/IMARegion.py:docstring of abaqus.PredefinedField.IMARegion.IMARegion:1
+#: ../../../../src/abaqus/PredefinedField/PredefinedField.py:docstring of abaqus.PredefinedField.PredefinedField.PredefinedField:1
+#: ../../../../src/abaqus/PredefinedField/PredefinedFieldState.py:docstring of abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState:1
+#: ../../../../src/abaqus/PredefinedField/TiffOptions.py:docstring of abaqus.PredefinedField.TiffOptions.TiffOptions:1
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedField.py:docstring of abaqus.PredefinedField.PredefinedField.PredefinedField:1
@@ -590,20 +1356,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/PredefinedField.py:docstring of abaqus.PredefinedField.PredefinedField.PredefinedField:15
 msgid "Check `PredefinedField on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-predefinedfieldpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure:0
-#: ../../../../src/abaqus/PredefinedField/IMAField.py:docstring of abaqus.PredefinedField.IMAField.IMAField:0
-#: ../../../../src/abaqus/PredefinedField/IMARegion.py:docstring of abaqus.PredefinedField.IMARegion.IMARegion:0
-#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState:0
-#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening:0
-#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment:0
-#: ../../../../src/abaqus/PredefinedField/PredefinedField.py:docstring of abaqus.PredefinedField.PredefinedField.PredefinedField:0
-#: ../../../../src/abaqus/PredefinedField/PredefinedFieldState.py:docstring of abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState:0
-#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature:0
-#: ../../../../src/abaqus/PredefinedField/TemperatureState.py:docstring of abaqus.PredefinedField.TemperatureState.TemperatureState:0
-#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity:0
-msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -621,17 +1373,6 @@ msgstr ""
 #: ../../None:5:<autosummary>:1
 #: ../../docstring of abaqus.PredefinedField.PredefinedField.PredefinedField.fieldList:1
 msgid "An IMAField for MaterialAssignment predefined field。"
-msgstr ""
-
-#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure:0
-#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState:0
-#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening:0
-#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment:0
-#: ../../../../src/abaqus/PredefinedField/PredefinedField.py:docstring of abaqus.PredefinedField.PredefinedField.PredefinedField:0
-#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature:0
-#: ../../../../src/abaqus/PredefinedField/TiffOptions.py:docstring of abaqus.PredefinedField.TiffOptions.TiffOptions:0
-#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity:0
-msgid "Public Methods:"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -701,7 +1442,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the predefined field is applied. **Region** is ignored if the predefined field has an **instances** member available. **Region** is also ignored if the predefined field has a **distributionType** member available, and **distributionType** = FROM_FILE or FROM_FILE_AND_USER_DEFINED."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:26
+#: ../../reference/mdb/model/predefined.rst:32
 msgid "PredefinedFieldState"
 msgstr ""
 
@@ -797,8 +1538,17 @@ msgstr ""
 msgid "This member exists in all PredefinedFieldState objects, but different predefined fields use different subsets of the entire list of possible values depending on propagation rules."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:34
+#: ../../reference/mdb/model/predefined.rst:42
 msgid "FluidCavityPressure"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure:1
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState:1
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening:1
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment:1
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature:1
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity:1
+msgid "Bases: :py:class:`~abaqus.PredefinedField.PredefinedField.PredefinedField`"
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure:1
@@ -823,22 +1573,12 @@ msgid "INITIAL CONDITIONS"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: ../../None:5:<autosummary>:1
 msgid ":py:obj:`region <abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.region>`\\"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: ../../None:5:<autosummary>:1
 #: ../../docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.region:1
 msgid "A :py:class:`~abaqus.Region.Region.Region` object on which the **fluidCavity** interaction is specified."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`name <abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.name>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`fieldList <abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.fieldList>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -854,23 +1594,11 @@ msgstr ""
 msgid "This method modifies the FluidCavityPressure object."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`move <abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.move>`\\ \\(fromStepName\\, toStepName\\)"
+#: ../../../../src/abaqus/PredefinedField/FluidCavityPressure.py:docstring of abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.__init__:9
+msgid "Check `FluidCavityPressure.__init__ on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fluidcavitypressurepyc.htm?contextscope=all#simaker-fluidcavitypressure__init__pyc>`__."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`resume <abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.resume>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`suppress <abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.suppress>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`delete <abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure.delete>`\\ \\(indices\\)"
-msgstr ""
-
-#: ../../reference/mdb/model/predefined.rst:42
+#: ../../reference/mdb/model/predefined.rst:52
 msgid "IMAField"
 msgstr ""
 
@@ -904,7 +1632,7 @@ msgstr ""
 msgid "A tuple of Strings specifying the name of the discrete fields that contain the volume fraction data. The length of the tuple corresponds to the number of material instance names, as established by the assigned Eulerian section."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:50
+#: ../../reference/mdb/model/predefined.rst:62
 msgid "IMARegion"
 msgstr ""
 
@@ -932,7 +1660,7 @@ msgstr ""
 msgid "A tuple of Floats specifying the volume fractions, per material instance name. The length of the tuple corresponds to the number of material instance names, as established by the assigned Eulerian section."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:58
+#: ../../reference/mdb/model/predefined.rst:72
 msgid "InitialState"
 msgstr ""
 
@@ -968,18 +1696,6 @@ msgstr ""
 msgid "A Boolean specifying whether to update the reference configuration based on the import data."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`name <abaqus.PredefinedField.InitialState.InitialState.name>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`region <abaqus.PredefinedField.InitialState.InitialState.region>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`fieldList <abaqus.PredefinedField.InitialState.InitialState.fieldList>`\\"
-msgstr ""
-
 #: ../../None:4:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.PredefinedField.InitialState.InitialState.__init__>`\\ \\(name\\, instances\\, fileName\\[\\, ...\\]\\)"
 msgstr ""
@@ -993,27 +1709,15 @@ msgstr ""
 msgid "This method modifies the InitialState object."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`move <abaqus.PredefinedField.InitialState.InitialState.move>`\\ \\(fromStepName\\, toStepName\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`resume <abaqus.PredefinedField.InitialState.InitialState.resume>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`suppress <abaqus.PredefinedField.InitialState.InitialState.suppress>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`delete <abaqus.PredefinedField.InitialState.InitialState.delete>`\\ \\(indices\\)"
+#: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.__init__:9
+msgid "Check `InitialState.__init__ on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-initialstatepyc.htm?contextscope=all#simaker-initialstate__init__pyc>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/InitialState.py:docstring of abaqus.PredefinedField.InitialState.InitialState.setValues:4
 msgid "Check `InitialState.setValues on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-initialstatepyc.htm?contextscope=all#simaker-initialstatesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:66
+#: ../../reference/mdb/model/predefined.rst:82
 msgid "KinematicHardening"
 msgstr ""
 
@@ -1083,18 +1787,6 @@ msgstr ""
 msgid "A SymbolicConstant specifying whether the load is uniform."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`name <abaqus.PredefinedField.KinematicHardening.KinematicHardening.name>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`region <abaqus.PredefinedField.KinematicHardening.KinematicHardening.region>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`fieldList <abaqus.PredefinedField.KinematicHardening.KinematicHardening.fieldList>`\\"
-msgstr ""
-
 #: ../../None:4:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__>`\\ \\(name\\, region\\[\\, numBackStress\\, ...\\]\\)"
 msgstr ""
@@ -1108,20 +1800,8 @@ msgstr ""
 msgid "This method modifies the KinematicHardening object."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`move <abaqus.PredefinedField.KinematicHardening.KinematicHardening.move>`\\ \\(fromStepName\\, toStepName\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`resume <abaqus.PredefinedField.KinematicHardening.KinematicHardening.resume>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`suppress <abaqus.PredefinedField.KinematicHardening.KinematicHardening.suppress>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`delete <abaqus.PredefinedField.KinematicHardening.KinematicHardening.delete>`\\ \\(indices\\)"
+#: ../../../../src/abaqus/PredefinedField/KinematicHardening.py:docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.__init__:9
+msgid "Check `KinematicHardening.__init__ on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-kinematichardeningpyc.htm?contextscope=all#simaker-kinematichardening__init__pyc>`__."
 msgstr ""
 
 #: ../../docstring of abaqus.PredefinedField.KinematicHardening.KinematicHardening.field:1
@@ -1132,7 +1812,7 @@ msgstr ""
 msgid "Check `KinematicHardening.setValues on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-kinematichardeningpyc.htm?contextscope=all#simaker-kinematichardeningsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:74
+#: ../../reference/mdb/model/predefined.rst:92
 msgid "MaterialAssignment"
 msgstr ""
 
@@ -1140,7 +1820,6 @@ msgstr ""
 msgid "The MaterialAssignment object stores the data for an initial material assignment predefined field, for use with an Eulerian analysis. The MaterialAssignment object is derived from the PredefinedField object."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
 #: ../../None:7:<autosummary>:1
 msgid ":py:obj:`region <abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.region>`\\"
 msgstr ""
@@ -1161,12 +1840,10 @@ msgstr ""
 msgid "A sequence of tuples specifying the uniform volume fractions to be assigned."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
 #: ../../None:7:<autosummary>:1
 msgid ":py:obj:`fieldList <abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.fieldList>`\\"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
 #: ../../None:7:<autosummary>:1
 msgid "A sequence of tuples specifying the discrete volume fractions to be assigned."
 msgstr ""
@@ -1177,10 +1854,6 @@ msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid "A sequence of three Ints specifying colors used to display the material instance assignments."
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`name <abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1196,27 +1869,15 @@ msgstr ""
 msgid "This method modifies the MaterialAssignment object."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`move <abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.move>`\\ \\(fromStepName\\, toStepName\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`resume <abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.resume>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`suppress <abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.suppress>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`delete <abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.delete>`\\ \\(indices\\)"
+#: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.__init__:9
+msgid "Check `MaterialAssignment.__init__ on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialassignmentpyc.htm?contextscope=all#simaker-materialassignment__init__pyc>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/MaterialAssignment.py:docstring of abaqus.PredefinedField.MaterialAssignment.MaterialAssignment.setValues:4
 msgid "Check `MaterialAssignment.setValues on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialassignmentpyc.htm?contextscope=all#simaker-materialassignmentsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:82
+#: ../../reference/mdb/model/predefined.rst:102
 msgid "Temperature"
 msgstr ""
 
@@ -1228,7 +1889,6 @@ msgstr ""
 msgid "TEMPERATURE"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
 #: ../../None:6:<autosummary>:1
 msgid ":py:obj:`name <abaqus.PredefinedField.Temperature.Temperature.name>`\\"
 msgstr ""
@@ -1249,13 +1909,8 @@ msgstr ""
 msgid "A String specifying the name of the AnalyticalField or DiscreteField object associated with this predefined field."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
 #: ../../None:6:<autosummary>:1
 msgid ":py:obj:`region <abaqus.PredefinedField.Temperature.Temperature.region>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`fieldList <abaqus.PredefinedField.Temperature.Temperature.fieldList>`\\"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -1289,16 +1944,24 @@ msgstr ""
 msgid "This method modifies the propagating data for an existing Temperature object in the specified step."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`resume <abaqus.PredefinedField.Temperature.Temperature.resume>`\\ \\(\\)"
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:9
+msgid "Check `Temperature.__init__ on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturepyc.htm?contextscope=all#simaker-temperature__init__pyc>`__."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`suppress <abaqus.PredefinedField.Temperature.Temperature.suppress>`\\ \\(\\)"
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:71
+msgid "A Sequence of Doubles specifying the temperature values when **distributionType** = UNIFORM or FIELD. The value of the **magnitudes** argument is a function of the **crossSectionDistribution** argument, as shown in the following list:  - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS then **magnitudes** is a Double   specifying the temperature. - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a   sequence of Doubles specifying the mean value and the gradient in the thickness direction. - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a   sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the   gradient in the N2 direction. - If **crossSectionDistribution** = POINTS_THROUGH_SECTION then **magnitudes** is a sequence   of Doubles specifying the temperature at each point."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`delete <abaqus.PredefinedField.Temperature.Temperature.delete>`\\ \\(indices\\)"
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:77
+msgid "If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a sequence of Doubles specifying the mean value and the gradient in the thickness"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:79
+msgid "direction. - If **crossSectionDistribution** = GRADIENTS_THROUGH_BEAM_CS then **magnitudes** is a"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.__init__:81
+msgid "sequence of Doubles specifying the mean value, the gradient in the N1 direction, and the gradient in the N2 direction."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/Temperature.py:docstring of abaqus.PredefinedField.Temperature.Temperature.move:4
@@ -1325,8 +1988,12 @@ msgstr ""
 msgid "A String specifying the name of the step in which the predefined field is modified."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:90
+#: ../../reference/mdb/model/predefined.rst:112
 msgid "TemperatureState"
+msgstr ""
+
+#: ../../../../src/abaqus/PredefinedField/TemperatureState.py:docstring of abaqus.PredefinedField.TemperatureState.TemperatureState:1
+msgid "Bases: :py:class:`~abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState`"
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/TemperatureState.py:docstring of abaqus.PredefinedField.TemperatureState.TemperatureState:1
@@ -1462,7 +2129,6 @@ msgid "A tuple of Floats specifying the temperature values when **distributionTy
 msgstr ""
 
 #: ../../None:19:<autosummary>:1
-#: ../../None:3:<autosummary>:1
 msgid ":py:obj:`status <abaqus.PredefinedField.TemperatureState.TemperatureState.status>`\\"
 msgstr ""
 
@@ -1526,7 +2192,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the propagation state of the **midside** member. Possible values are UNSET, SET, and UNCHANGED."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:98
+#: ../../reference/mdb/model/predefined.rst:122
 msgid "TiffOptions"
 msgstr ""
 
@@ -1563,7 +2229,7 @@ msgstr ""
 msgid "(minWidth, minHeight) <= (width, height) <= (maxWidth, maxHeight)."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:106
+#: ../../reference/mdb/model/predefined.rst:132
 msgid "Velocity"
 msgstr ""
 
@@ -1579,18 +2245,6 @@ msgstr ""
 msgid ":py:obj:`distributionType <abaqus.PredefinedField.Velocity.Velocity.distributionType>`\\"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`name <abaqus.PredefinedField.Velocity.Velocity.name>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`region <abaqus.PredefinedField.Velocity.Velocity.region>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`fieldList <abaqus.PredefinedField.Velocity.Velocity.fieldList>`\\"
-msgstr ""
-
 #: ../../None:4:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.PredefinedField.Velocity.Velocity.__init__>`\\ \\(name\\, region\\, velocity1\\, velocity2\\, ...\\)"
 msgstr ""
@@ -1604,20 +2258,8 @@ msgstr ""
 msgid "This method modifies the Velocity object."
 msgstr ""
 
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`move <abaqus.PredefinedField.Velocity.Velocity.move>`\\ \\(fromStepName\\, toStepName\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`resume <abaqus.PredefinedField.Velocity.Velocity.resume>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`suppress <abaqus.PredefinedField.Velocity.Velocity.suppress>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ":py:obj:`delete <abaqus.PredefinedField.Velocity.Velocity.delete>`\\ \\(indices\\)"
+#: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.__init__:9
+msgid "Check `Velocity.__init__ on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocitypyc.htm?contextscope=all#simaker-velocity__init__pyc>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/PredefinedField/Velocity.py:docstring of abaqus.PredefinedField.Velocity.Velocity.setValues:4
