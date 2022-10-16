@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union, overload, Sequence
+from typing import Optional, Union, overload, Sequence, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Region import Region
@@ -288,9 +288,34 @@ class RegionPart(RegionPartBase):
         """
         ...
 
+    @overload
     @abaqus_method_doc
-    def Set(self, name, *args, **kwargs) -> Set:
+    def Set(self,
+            name: str,
+            nodes: Optional[Sequence[MeshNode]] = None,
+            elements: Optional[Sequence[MeshElement]] = None,
+            region: Optional[Region] = None,
+            vertices: Optional[Sequence[Vertex]] = None,
+            edges: Optional[Sequence[Edge]] = None,
+            faces: Optional[Sequence[Face]] = None,
+            cells: Optional[Sequence[Cell]] = None,
+            xVertices: Optional[Sequence[Vertex]] = None,
+            xEdges: Optional[Sequence[Edge]] = None,
+            xFaces: Optional[Sequence[Face]] = None,
+            referencePoints: Sequence[ReferencePoint] = (),
+            skinFaces: Tuple[Tuple[str, Face], ...] = ...,
+            skinEdges: Tuple[Tuple[str, Edge], ...] = ...,
+            stringerEdges: Tuple[Tuple[str, Edge], ...] = ...,
+        ) -> Set:
         """This method creates a set from a sequence of objects in a model database.
+
+        At least one sequence argument must be provided - elements, nodes, vertices, edges,
+        faces, cells, or referencePoints. The arguments xVertices, xEdges, and xFaces are
+        used to exclude lower-dimension entities and to provide finer control on the
+        content of the set. For example, the following statement defines a region enclosing
+        a square face but without two of its edges::
+        
+            set = mdb.models['Model-1'].rootAssembly.Set(name='mySet', faces=f[3:4], xEdges=e[1:3])
 
         .. note:: 
             This function can be accessed by::
@@ -302,12 +327,51 @@ class RegionPart(RegionPartBase):
         ----------
         name
             A String specifying the repository key.
+        nodes
+            A sequence of MeshNode objects. The default value is None.
+        elements
+            A sequence of MeshElement objects. The default value is None.
+        region
+            A :py:class:`~abaqus.Region.Region.Region` object specifying other objects to be included in the set. The default value is
+            None.
+        vertices
+            A sequence of ConstrainedSketchVertex objects. The default value is None.
+        edges
+            A sequence of Edge objects. The default value is None.
+        faces
+            A sequence of Face objects. The default value is None.
+        cells
+            A sequence of Cell objects. The default value is None.
+        xVertices
+            A sequence of ConstrainedSketchVertex objects that excludes specific vertices from the set. The default
+            value is None.
+        xEdges
+            A sequence of Edge objects that excludes specific edges from the set. The default value
+            is None.
+        xFaces
+            A sequence of Face objects that excludes specific faces from the set. The default value
+            is None.
+        referencePoints
+            A sequence of ReferencePoint objects. The default value is an empty sequence.
+        skinFaces
+            A tuple of tuples specifying a skin name and the sequence of faces associated with this
+            skin. Valid only for geometric regions on 3D and 2D parts.
+        skinEdges
+            A tuple of tuples specifying a skin name and the sequence of edges associated with this
+            skin. Valid only for geometric regions on Axisymmetric parts.
+        stringerEdges
+            A tuple of tuples specifying a stringer name and the sequence of edges associated with
+            this stringer. Valid only for geometric regions on 3D and 2D parts.
 
         Returns
         -------
         set: Set
             A :py:class:`~abaqus.Region.Set.Set` object
         """
+        ...
+
+    @abaqus_method_doc
+    def Set(self, name, *args, **kwargs) -> Set:
         self.sets[name] = aSet = Set(name, *args, **kwargs)
         return aSet
 

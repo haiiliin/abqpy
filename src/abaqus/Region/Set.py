@@ -1,4 +1,5 @@
-from typing import overload, Optional, Sequence
+from __future__ import annotations
+from typing import overload, Optional, Sequence, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Region import Region
@@ -98,11 +99,19 @@ class Set(Region):
         xEdges: Optional[Sequence[Edge]] = None,
         xFaces: Optional[Sequence[Face]] = None,
         referencePoints: Sequence[ReferencePoint] = (),
-        skinFaces: tuple = (),
-        skinEdges: tuple = (),
-        stringerEdges: tuple = (),
-    ):
+        skinFaces: Tuple[Tuple[str, Face], ...] = ...,
+        skinEdges: Tuple[Tuple[str, Edge], ...] = ...,
+        stringerEdges: Tuple[Tuple[str, Edge], ...] = ...,
+    ) -> None:
         """This method creates a set from a sequence of objects in a model database.
+
+        At least one sequence argument must be provided - elements, nodes, vertices, edges,
+        faces, cells, or referencePoints. The arguments xVertices, xEdges, and xFaces are
+        used to exclude lower-dimension entities and to provide finer control on the
+        content of the set. For example, the following statement defines a region enclosing
+        a square face but without two of its edges::
+        
+            set = mdb.models['Model-1'].rootAssembly.Set(name='mySet', faces=f[3:4], xEdges=e[1:3])
 
         .. note:: 
             This function can be accessed by::
@@ -159,7 +168,7 @@ class Set(Region):
 
     @overload
     @abaqus_method_doc
-    def __init__(self, name: str, objectToCopy: "Set"):
+    def __init__(self, name: str, objectToCopy: Set) -> None:
         """This method copies a set from an existing set.
 
         .. note:: 
@@ -183,7 +192,7 @@ class Set(Region):
         ...
 
     @abaqus_method_doc
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args, **kwargs) -> None:
         ...
 
     def SetByBoolean(
