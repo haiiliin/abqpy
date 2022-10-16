@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-04 14:03+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,16 @@ msgid "Display preferences commands are used to edit the Abaqus/CAE preferences 
 msgstr ""
 
 #: ../../reference/kernel/cae_display_preferences.rst:8
-msgid "Object features"
+msgid "Classes"
 msgstr ""
 
 #: ../../reference/kernel/cae_display_preferences.rst:11
 msgid "CaeGuiPrefs"
+msgstr ""
+
+#: ../../../../src/abaqus/AbaqusCAEDisplayPreferences/CaeGuiPrefs.py:docstring of abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs:1
+#: ../../../../src/abaqus/AbaqusCAEDisplayPreferences/CaeKerPrefs.py:docstring of abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs:1
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: ../../../../src/abaqus/AbaqusCAEDisplayPreferences/CaeGuiPrefs.py:docstring of abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs:1
@@ -107,7 +112,7 @@ msgstr ""
 msgid "Check `CaeGuiPrefs.saveAs on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gprcaeguiprefspyc.htm?contextscope=all#simaker-caeguiprefssaveaspyc>`__."
 msgstr ""
 
-#: ../../reference/kernel/cae_display_preferences.rst:19
+#: ../../reference/kernel/cae_display_preferences.rst:21
 msgid "CaeKerPrefs"
 msgstr ""
 
@@ -181,7 +186,7 @@ msgstr ""
 msgid "The default value is HOME. Either **fileName** or **directory** must be supplied. The **fileName** or **directory** arguments are mutually exclusive."
 msgstr ""
 
-#: ../../reference/kernel/cae_display_preferences.rst:27
+#: ../../reference/kernel/cae_display_preferences.rst:31
 msgid "caePrefsAccess"
 msgstr ""
 

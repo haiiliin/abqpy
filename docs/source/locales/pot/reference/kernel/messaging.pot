@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-04 14:03+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,16 @@ msgid "Messaging commands are available only if Abaqus/CAE is run interactively 
 msgstr ""
 
 #: ../../reference/kernel/messaging.rst:8
-msgid "Object features"
+msgid "Classes"
 msgstr ""
 
 #: ../../reference/kernel/messaging.rst:11
 msgid "DataObject"
+msgstr ""
+
+#: ../../../../src/abaqus/Messaging/DataObject.py:docstring of abaqus.Messaging.DataObject.DataObject:1
+#: ../../../../src/abaqus/Messaging/MonitorMgr.py:docstring of abaqus.Messaging.MonitorMgr.MonitorMgr:1
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: ../../../../src/abaqus/Messaging/DataObject.py:docstring of abaqus.Messaging.DataObject.DataObject:1
@@ -289,7 +294,7 @@ msgstr ""
 msgid "00"
 msgstr ""
 
-#: ../../reference/kernel/messaging.rst:19
+#: ../../reference/kernel/messaging.rst:21
 msgid "MonitorMgr"
 msgstr ""
 
