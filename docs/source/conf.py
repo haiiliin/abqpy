@@ -254,11 +254,6 @@ html_theme_options = {
             "type": "local",
         },
    ],
-    "switcher": {
-        "json_url": "https://docs.abqpy.com/_static/versions.json",
-        "version_match": version,
-    },
-    "navbar_end": ["version-switcher", "theme-switcher", "navbar-icon-links"],
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
