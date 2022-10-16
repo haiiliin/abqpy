@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 00:22+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,11 +28,15 @@ msgid ""
 msgstr ""
 
 #: ../../reference/mdb/edit_mesh.rst:9
-msgid "Object features"
+msgid "Classes"
 msgstr ""
 
 #: ../../reference/mdb/edit_mesh.rst:12
 msgid "Edit mesh features of Assembly"
+msgstr ""
+
+#: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:1 of
+msgid "Bases: :py:class:`~abaqus.Assembly.AssemblyBase.AssemblyBase`"
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:1 of
@@ -63,7 +67,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`isOutOfDate "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.isOutOfDate>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.isOutOfDate>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -75,7 +79,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`timeStamp "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.timeStamp>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.timeStamp>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -85,9 +89,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`isLocked "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.isLocked>`\\"
+msgid ":py:obj:`isLocked <abaqus.Assembly.AssemblyBase.AssemblyBase.isLocked>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -97,7 +99,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`regenerateConstraintsTogether "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.regenerateConstraintsTogether>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.regenerateConstraintsTogether>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -108,9 +110,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`vertices "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.vertices>`\\"
+msgid ":py:obj:`vertices <abaqus.Assembly.AssemblyBase.AssemblyBase.vertices>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -120,9 +120,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`edges "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.edges>`\\"
+msgid ":py:obj:`edges <abaqus.Assembly.AssemblyBase.AssemblyBase.edges>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -132,9 +130,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`elements "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.elements>`\\"
+msgid ":py:obj:`elements <abaqus.Assembly.AssemblyBase.AssemblyBase.elements>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -144,9 +140,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`nodes "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.nodes>`\\"
+msgid ":py:obj:`nodes <abaqus.Assembly.AssemblyBase.AssemblyBase.nodes>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -158,7 +152,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`instances "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.instances>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.instances>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -166,9 +160,7 @@ msgid "A repository of PartInstance objects."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`datums "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.datums>`\\"
+msgid ":py:obj:`datums <abaqus.Assembly.AssemblyBase.AssemblyBase.datums>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -178,9 +170,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`features "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.features>`\\"
+msgid ":py:obj:`features <abaqus.Assembly.AssemblyBase.AssemblyBase.features>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -192,7 +182,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`featuresById "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.featuresById>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.featuresById>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -203,9 +193,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`surfaces "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.surfaces>`\\"
+msgid ":py:obj:`surfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.surfaces>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -219,13 +207,13 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`allSurfaces "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allSurfaces>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allSurfaces>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`allInternalSurfaces "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allInternalSurfaces>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSurfaces>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1 ../../None:34:<autosummary>:1
@@ -233,7 +221,7 @@ msgid "A repository of Surface objects specifying picked regions."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ":py:obj:`sets <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.sets>`\\"
+msgid ":py:obj:`sets <abaqus.Assembly.AssemblyBase.AssemblyBase.sets>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -241,9 +229,7 @@ msgid "A repository of Set objects."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`allSets "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allSets>`\\"
+msgid ":py:obj:`allSets <abaqus.Assembly.AssemblyBase.AssemblyBase.allSets>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -256,7 +242,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`allInternalSets "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allInternalSets>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSets>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1 ../../None:34:<autosummary>:1
@@ -264,9 +250,7 @@ msgid "A repository of Set objects specifying picked regions."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`skins "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.skins>`\\"
+msgid ":py:obj:`skins <abaqus.Assembly.AssemblyBase.AssemblyBase.skins>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -276,7 +260,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`stringers "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.stringers>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.stringers>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -288,7 +272,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`referencePoints "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.referencePoints>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.referencePoints>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1 ../../None:34:<autosummary>:1
@@ -298,7 +282,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`modelInstances "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.modelInstances>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.modelInstances>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -308,7 +292,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`allInstances "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allInstances>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allInstances>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -322,7 +306,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`engineeringFeatures "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.engineeringFeatures>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.engineeringFeatures>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1 ../../None:34:<autosummary>:1
@@ -335,7 +319,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`modelName "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.modelName>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.modelName>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -345,7 +329,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`connectorOrientations "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.connectorOrientations>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.connectorOrientations>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -358,7 +342,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`sectionAssignments "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.sectionAssignments>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.sectionAssignments>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1 ../../None:34:<autosummary>:1
@@ -369,7 +353,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.name>`\\"
+msgid ":py:obj:`name <abaqus.Feature.Feature.Feature.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -377,7 +361,7 @@ msgid "A String specifying the repository key."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ":py:obj:`id <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.id>`\\"
+msgid ":py:obj:`id <abaqus.Feature.Feature.Feature.id>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -543,9 +527,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`Instance "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.Instance>`\\ "
-"\\(name\\, \\*args\\, \\*\\*kwargs\\)"
+":py:obj:`Instance <abaqus.Assembly.AssemblyBase.AssemblyBase.Instance>`\\"
+" \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -556,8 +539,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`backup "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.backup>`\\ \\(\\)"
+":py:obj:`backup <abaqus.Assembly.AssemblyBase.AssemblyBase.backup>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -567,8 +550,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`clearGeometryCache "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.clearGeometryCache>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.clearGeometryCache>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -578,8 +560,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`deleteAllFeatures "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.deleteAllFeatures>`\\ "
-"\\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.deleteAllFeatures>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -589,7 +570,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`deleteFeatures "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.deleteFeatures>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.deleteFeatures>`\\ "
 "\\(featureNames\\)"
 msgstr ""
 
@@ -600,8 +581,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`excludeFromSimulation "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.excludeFromSimulation>`\\"
-" \\(instances\\, exclude\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.excludeFromSimulation>`\\ "
+"\\(instances\\, exclude\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -611,8 +592,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`featurelistInfo "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.featurelistInfo>`\\ "
-"\\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.featurelistInfo>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -624,7 +604,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getMassProperties "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.getMassProperties>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties>`\\ "
 "\\(\\[regions\\, ...\\]\\)"
 msgstr ""
 
@@ -636,9 +616,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`getAngle "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.getAngle>`\\ "
-"\\(plane1\\, plane2\\, line1\\, line2\\[\\, ...\\]\\)"
+":py:obj:`getAngle <abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle>`\\"
+" \\(plane1\\, plane2\\, line1\\, line2\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
@@ -648,7 +627,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getCoordinates "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.getCoordinates>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates>`\\ "
 "\\(entity\\)"
 msgstr ""
 
@@ -659,8 +638,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getDistance "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.getDistance>`\\ "
-"\\(entity1\\, entity2\\[\\, printResults\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance>`\\ \\(entity1\\, "
+"entity2\\[\\, printResults\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
@@ -672,7 +651,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getFacesAndVerticesOfAttachmentLines "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.getFacesAndVerticesOfAttachmentLines>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines>`\\"
 " \\(edges\\)"
 msgstr ""
 
@@ -685,8 +664,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getSurfaceSections "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.getSurfaceSections>`\\"
-" \\(surface\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections>`\\ "
+"\\(surface\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -698,7 +677,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importEafFile "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.importEafFile>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importEafFile>`\\ "
 "\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
@@ -709,8 +688,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importParasolidFile "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.importParasolidFile>`\\"
-" \\(filename\\[\\, ids\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importParasolidFile>`\\ "
+"\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -722,7 +701,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importCatiaV5File "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.importCatiaV5File>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importCatiaV5File>`\\ "
 "\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
@@ -735,7 +714,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importEnfFile "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.importEnfFile>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importEnfFile>`\\ "
 "\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
@@ -748,7 +727,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importIdeasFile "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.importIdeasFile>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importIdeasFile>`\\ "
 "\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
@@ -761,7 +740,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importProEFile "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.importProEFile>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importProEFile>`\\ "
 "\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
@@ -774,7 +753,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`makeDependent "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.makeDependent>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.makeDependent>`\\ "
 "\\(instances\\)"
 msgstr ""
 
@@ -787,7 +766,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`makeIndependent "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.makeIndependent>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.makeIndependent>`\\ "
 "\\(instances\\)"
 msgstr ""
 
@@ -800,8 +779,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`printAssignedSections "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.printAssignedSections>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.printAssignedSections>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -811,7 +790,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`printConnectorOrientations "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.printConnectorOrientations>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.printConnectorOrientations>`\\"
 " \\(\\)"
 msgstr ""
 
@@ -822,7 +801,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`projectReferencesOntoSketch "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.projectReferencesOntoSketch>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch>`\\"
 " \\(sketch\\[\\, ...\\]\\)"
 msgstr ""
 
@@ -835,8 +814,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`queryCachedStates "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.queryCachedStates>`\\ "
-"\\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.queryCachedStates>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -848,7 +826,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`regenerate "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.regenerate>`\\ \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.regenerate>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -860,22 +838,21 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`regenerationWarnings "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.regenerationWarnings>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.regenerationWarnings>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
 msgid "This method prints any regeneration warnings associated with the features."
 msgstr ""
 
-#: ../../None:46:<autosummary>:1 ../../None:65:<autosummary>:1
+#: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`restore "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.restore>`\\ \\(\\)"
+":py:obj:`restore <abaqus.Assembly.AssemblyBase.AssemblyBase.restore>`\\ "
+"\\(\\)"
 msgstr ""
 
-#: ../../None:46:<autosummary>:1 ../../None:65:<autosummary>:1
-#: ../../None:68:<autosummary>:1
+#: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
 msgid ""
 "This method restores the parameters of all features in the assembly to "
 "the value they had before a failed regeneration."
@@ -884,8 +861,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`resumeAllFeatures "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.resumeAllFeatures>`\\ "
-"\\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.resumeAllFeatures>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -895,7 +871,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`resumeFeatures "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.resumeFeatures>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.resumeFeatures>`\\ "
 "\\(featureNames\\)"
 msgstr ""
 
@@ -906,8 +882,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`resumeLastSetFeatures "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.resumeLastSetFeatures>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.resumeLastSetFeatures>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -918,8 +894,7 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`rotate "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.rotate>`\\ "
+":py:obj:`rotate <abaqus.Assembly.AssemblyBase.AssemblyBase.rotate>`\\ "
 "\\(instanceList\\, axisPoint\\, ...\\)"
 msgstr ""
 
@@ -930,7 +905,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`translate "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.translate>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.translate>`\\ "
 "\\(instanceList\\, vector\\)"
 msgstr ""
 
@@ -941,8 +916,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`saveGeometryCache "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.saveGeometryCache>`\\ "
-"\\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.saveGeometryCache>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -951,21 +925,21 @@ msgid ""
 "performance."
 msgstr ""
 
-#: ../../None:46:<autosummary>:1 ../../None:65:<autosummary>:1
+#: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`setValues "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.setValues>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.setValues>`\\ "
 "\\(regenerateConstraintsTogether\\)"
 msgstr ""
 
-#: ../../None:46:<autosummary>:1 ../../None:65:<autosummary>:1
+#: ../../None:46:<autosummary>:1
 msgid "This method modifies the behavior associated with the specified assembly."
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`suppressFeatures "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.suppressFeatures>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.suppressFeatures>`\\ "
 "\\(featureNames\\)"
 msgstr ""
 
@@ -976,7 +950,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`unlinkInstances "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.unlinkInstances>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.unlinkInstances>`\\ "
 "\\(instances\\)"
 msgstr ""
 
@@ -989,7 +963,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`writeAcisFile "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.writeAcisFile>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.writeAcisFile>`\\ "
 "\\(fileName\\[\\, version\\]\\)"
 msgstr ""
 
@@ -1002,8 +976,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`writeCADParameters "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.writeCADParameters>`\\"
-" \\(paramFile\\[\\, ...\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.writeCADParameters>`\\ "
+"\\(paramFile\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
@@ -1013,9 +987,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
-msgid ""
-":py:obj:`lock <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.lock>`\\"
-" \\(\\)"
+msgid ":py:obj:`lock <abaqus.Assembly.AssemblyBase.AssemblyBase.lock>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -1024,8 +996,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`unlock "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.unlock>`\\ \\(\\)"
+":py:obj:`unlock <abaqus.Assembly.AssemblyBase.AssemblyBase.unlock>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -1035,8 +1007,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`setMeshNumberingControl "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.setMeshNumberingControl>`\\"
-" \\(instances\\[\\, ...\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.setMeshNumberingControl>`\\ "
+"\\(instances\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -1049,7 +1021,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`copyMeshPattern "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.copyMeshPattern>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.copyMeshPattern>`\\ "
 "\\(\\[elements\\, faces\\, ...\\]\\)"
 msgstr ""
 
@@ -1063,7 +1035,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`smoothNodes "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.smoothNodes>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes>`\\ "
 "\\(\\[nodes\\]\\)"
 msgstr ""
 
@@ -1076,7 +1048,7 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`AttachmentLines "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.AttachmentLines>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines>`\\ "
 "\\(name\\, points\\, sourceFaces\\, ...\\)"
 msgstr ""
 
@@ -1089,7 +1061,7 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`Coaxial "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.Coaxial>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial>`\\ "
 "\\(movableAxis\\, fixedAxis\\, flip\\)"
 msgstr ""
 
@@ -1102,7 +1074,7 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`CoincidentPoint "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.CoincidentPoint>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint>`\\ "
 "\\(movablePoint\\, fixedPoint\\)"
 msgstr ""
 
@@ -1115,7 +1087,7 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`EdgeToEdge "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.EdgeToEdge>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge>`\\ "
 "\\(movableAxis\\, fixedAxis\\, flip\\, ...\\)"
 msgstr ""
 
@@ -1128,7 +1100,7 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`FaceToFace "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.FaceToFace>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace>`\\ "
 "\\(movablePlane\\, fixedPlane\\, flip\\, ...\\)"
 msgstr ""
 
@@ -1141,7 +1113,7 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`ParallelCsys "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.ParallelCsys>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys>`\\ "
 "\\(movableCsys\\, fixedCsys\\)"
 msgstr ""
 
@@ -1154,14 +1126,14 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`ParallelEdge "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.ParallelEdge>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge>`\\ "
 "\\(movableAxis\\, fixedAxis\\, flip\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`ParallelFace "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.ParallelFace>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace>`\\ "
 "\\(movablePlane\\, fixedPlane\\, flip\\)"
 msgstr ""
 
@@ -1174,8 +1146,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`AttachmentPoints "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.AttachmentPoints>`\\ "
-"\\(name\\, points\\[\\, ...\\]\\)"
+"<abaqus.Feature.Feature.Feature.AttachmentPoints>`\\ \\(name\\, "
+"points\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1185,8 +1157,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`AttachmentPointsAlongDirection "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.AttachmentPointsAlongDirection>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+"<abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection>`\\ "
+"\\(name\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1198,8 +1170,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`AttachmentPointsOffsetFromEdges "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.AttachmentPointsOffsetFromEdges>`\\"
-" \\(name\\, edges\\)"
+"<abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges>`\\ "
+"\\(name\\, edges\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1211,8 +1183,7 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByCylFace "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByCylFace>`\\"
-" \\(face\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByCylFace>`\\ \\(face\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1224,8 +1195,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByNormalToPlane "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByNormalToPlane>`\\"
-" \\(plane\\, point\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane>`\\ \\(plane\\, "
+"point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1237,8 +1208,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByParToEdge "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByParToEdge>`\\"
-" \\(edge\\, point\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByParToEdge>`\\ \\(edge\\, "
+"point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1250,8 +1221,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByPrincipalAxis "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByPrincipalAxis>`\\"
-" \\(principalAxis\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis>`\\ "
+"\\(principalAxis\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1263,15 +1234,14 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByRotation "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByRotation>`\\"
-" \\(\\*args\\, \\*\\*kwargs\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByThreePoint "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByThreePoint>`\\"
-" \\(point1\\, point2\\, point3\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByThreePoint>`\\ \\(point1\\, "
+"point2\\, point3\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1283,8 +1253,7 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByThruEdge "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByThruEdge>`\\"
-" \\(edge\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByThruEdge>`\\ \\(edge\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1296,8 +1265,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByTwoPlane "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByTwoPlane>`\\"
-" \\(plane1\\, plane2\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane>`\\ \\(plane1\\, "
+"plane2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1309,8 +1278,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByTwoPoint "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByTwoPoint>`\\"
-" \\(point1\\, point2\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint>`\\ \\(point1\\, "
+"point2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1322,8 +1291,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumCsysByDefault "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumCsysByDefault>`\\"
-" \\(coordSysType\\[\\, name\\]\\)"
+"<abaqus.Feature.Feature.Feature.DatumCsysByDefault>`\\ "
+"\\(coordSysType\\[\\, name\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1335,8 +1304,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumCsysByOffset "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumCsysByOffset>`\\ "
-"\\(coordSysType\\, ...\\[\\, name\\]\\)"
+"<abaqus.Feature.Feature.Feature.DatumCsysByOffset>`\\ \\(coordSysType\\, "
+"...\\[\\, name\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1348,8 +1317,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumCsysByThreePoints "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumCsysByThreePoints>`\\"
-" \\(coordSysType\\, origin\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.DatumCsysByThreePoints>`\\ "
+"\\(coordSysType\\, origin\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1361,8 +1330,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumCsysByTwoLines "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumCsysByTwoLines>`\\"
-" \\(coordSysType\\, line1\\, line2\\)"
+"<abaqus.Feature.Feature.Feature.DatumCsysByTwoLines>`\\ "
+"\\(coordSysType\\, line1\\, line2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1374,8 +1343,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByPrincipalPlane "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPlaneByPrincipalPlane>`\\"
-" \\(principalPlane\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane>`\\ "
+"\\(principalPlane\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1387,15 +1356,14 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByOffset "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPlaneByOffset>`\\"
-" \\(\\*args\\, \\*\\*kwargs\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByRotation "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPlaneByRotation>`\\"
-" \\(plane\\, axis\\, angle\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByRotation>`\\ \\(plane\\, "
+"axis\\, angle\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1407,8 +1375,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByThreePoints "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPlaneByThreePoints>`\\"
-" \\(point1\\, point2\\, point3\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints>`\\ \\(point1\\, "
+"point2\\, point3\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1420,8 +1388,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByLinePoint "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPlaneByLinePoint>`\\"
-" \\(line\\, point\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint>`\\ \\(line\\, "
+"point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1434,8 +1402,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByPointNormal "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPlaneByPointNormal>`\\"
-" \\(point\\, normal\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal>`\\ \\(point\\, "
+"normal\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1447,8 +1415,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByTwoPoint "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPlaneByTwoPoint>`\\"
-" \\(point1\\, point2\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint>`\\ \\(point1\\, "
+"point2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1460,8 +1428,7 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByCoordinate "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPointByCoordinate>`\\"
-" \\(coords\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByCoordinate>`\\ \\(coords\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1473,8 +1440,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByOffset "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPointByOffset>`\\"
-" \\(point\\, vector\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByOffset>`\\ \\(point\\, "
+"vector\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1486,8 +1453,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByMidPoint "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPointByMidPoint>`\\"
-" \\(point1\\, point2\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByMidPoint>`\\ \\(point1\\, "
+"point2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1499,8 +1466,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByOnFace "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPointByOnFace>`\\"
-" \\(face\\, edge1\\, offset1\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByOnFace>`\\ \\(face\\, "
+"edge1\\, offset1\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1512,8 +1479,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByEdgeParam "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPointByEdgeParam>`\\"
-" \\(edge\\, parameter\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByEdgeParam>`\\ \\(edge\\, "
+"parameter\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1525,8 +1492,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByProjOnEdge "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPointByProjOnEdge>`\\"
-" \\(point\\, edge\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge>`\\ \\(point\\, "
+"edge\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1538,8 +1505,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByProjOnFace "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPointByProjOnFace>`\\"
-" \\(point\\, face\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByProjOnFace>`\\ \\(point\\, "
+"face\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1551,8 +1518,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`MakeSketchTransform "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.MakeSketchTransform>`\\"
-" \\(sketchPlane\\[\\, origin\\, ...\\]\\)"
+"<abaqus.Feature.Feature.Feature.MakeSketchTransform>`\\ "
+"\\(sketchPlane\\[\\, origin\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1562,8 +1529,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByDatumPlane "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByDatumPlane>`\\"
-" \\(cells\\, datumPlane\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane>`\\ \\(cells\\,"
+" datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1573,8 +1540,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByExtendFace "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByExtendFace>`\\"
-" \\(cells\\, extendFace\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByExtendFace>`\\ \\(cells\\,"
+" extendFace\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1586,8 +1553,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByExtrudeEdge "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByExtrudeEdge>`\\"
-" \\(cells\\, edges\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge>`\\ "
+"\\(cells\\, edges\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1599,8 +1566,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByPatchNCorners "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByPatchNCorners>`\\"
-" \\(cell\\, cornerPoints\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners>`\\ "
+"\\(cell\\, cornerPoints\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1612,8 +1579,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByPatchNEdges "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByPatchNEdges>`\\"
-" \\(cell\\, edges\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges>`\\ \\(cell\\,"
+" edges\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1625,8 +1592,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByPlaneNormalToEdge "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByPlaneNormalToEdge>`\\"
-" \\(cells\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge>`\\ "
+"\\(cells\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1638,8 +1605,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByPlanePointNormal "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByPlanePointNormal>`\\"
-" \\(cells\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal>`\\ "
+"\\(cells\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1651,8 +1618,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByPlaneThreePoints "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByPlaneThreePoints>`\\"
-" \\(cells\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints>`\\ "
+"\\(cells\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1664,8 +1631,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellBySweepEdge "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellBySweepEdge>`\\"
-" \\(cells\\, edges\\, sweepPath\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge>`\\ \\(cells\\, "
+"edges\\, sweepPath\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1677,8 +1644,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionEdgeByDatumPlane "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionEdgeByDatumPlane>`\\"
-" \\(edges\\, datumPlane\\)"
+"<abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane>`\\ \\(edges\\,"
+" datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1688,8 +1655,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionEdgeByParam "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionEdgeByParam>`\\"
-" \\(edges\\, parameter\\)"
+"<abaqus.Feature.Feature.Feature.PartitionEdgeByParam>`\\ \\(edges\\, "
+"parameter\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1701,8 +1668,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionEdgeByPoint "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionEdgeByPoint>`\\"
-" \\(edge\\, point\\)"
+"<abaqus.Feature.Feature.Feature.PartitionEdgeByPoint>`\\ \\(edge\\, "
+"point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1712,8 +1679,7 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByAuto "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByAuto>`\\"
-" \\(face\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByAuto>`\\ \\(face\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1725,8 +1691,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByCurvedPathEdgeParams "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByCurvedPathEdgeParams>`\\"
-" \\(face\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams>`\\ "
+"\\(face\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1739,8 +1705,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByCurvedPathEdgePoints "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByCurvedPathEdgePoints>`\\"
-" \\(face\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints>`\\ "
+"\\(face\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1752,8 +1718,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByDatumPlane "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByDatumPlane>`\\"
-" \\(faces\\, datumPlane\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane>`\\ \\(faces\\,"
+" datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1763,8 +1729,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByExtendFace "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByExtendFace>`\\"
-" \\(faces\\, extendFace\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace>`\\ \\(faces\\,"
+" extendFace\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1776,8 +1742,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByIntersectFace "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByIntersectFace>`\\"
-" \\(faces\\, cuttingFaces\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace>`\\ "
+"\\(faces\\, cuttingFaces\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1789,8 +1755,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByProjectingEdges "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByProjectingEdges>`\\"
-" \\(faces\\, edges\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges>`\\ "
+"\\(faces\\, edges\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1802,8 +1768,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByShortestPath "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByShortestPath>`\\"
-" \\(faces\\, point1\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath>`\\ "
+"\\(faces\\, point1\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1815,8 +1781,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceBySketch "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceBySketch>`\\"
-" \\(faces\\, sketch\\[\\, ...\\]\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketch>`\\ \\(faces\\, "
+"sketch\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1826,8 +1792,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceBySketchDistance "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceBySketchDistance>`\\"
-" \\(faces\\, ...\\[\\, ...\\]\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance>`\\ "
+"\\(faces\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1840,8 +1806,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceBySketchRefPoint "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceBySketchRefPoint>`\\"
-" \\(faces\\, ...\\[\\, ...\\]\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint>`\\ "
+"\\(faces\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1854,8 +1820,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceBySketchThruAll "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceBySketchThruAll>`\\"
-" \\(faces\\, ...\\[\\, ...\\]\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll>`\\ "
+"\\(faces\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1867,8 +1833,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`ReferencePoint "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.ReferencePoint>`\\ "
-"\\(point\\[\\, instanceName\\]\\)"
+"<abaqus.Feature.Feature.Feature.ReferencePoint>`\\ \\(point\\[\\, "
+"instanceName\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1880,8 +1846,7 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`RemoveWireEdges "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.RemoveWireEdges>`\\ "
-"\\(wireEdgeList\\)"
+"<abaqus.Feature.Feature.Feature.RemoveWireEdges>`\\ \\(wireEdgeList\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1890,8 +1855,7 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-":py:obj:`WirePolyLine "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.WirePolyLine>`\\ "
+":py:obj:`WirePolyLine <abaqus.Feature.Feature.Feature.WirePolyLine>`\\ "
 "\\(points\\[\\, mergeType\\, meshable\\]\\)"
 msgstr ""
 
@@ -1903,8 +1867,7 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-":py:obj:`isSuppressed "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.isSuppressed>`\\ "
+":py:obj:`isSuppressed <abaqus.Feature.Feature.Feature.isSuppressed>`\\ "
 "\\(\\)"
 msgstr ""
 
@@ -1913,9 +1876,17 @@ msgid "This method queries the suppressed state of the feature."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
+msgid ":py:obj:`restore <abaqus.Feature.Feature.Feature.restore>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
 msgid ""
-":py:obj:`resume "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.resume>`\\ \\(\\)"
+"This method restores the parameters of a feature to the value they had "
+"when the backup method was invoked on the part or assembly."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.Feature.Feature.Feature.resume>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1924,8 +1895,16 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-":py:obj:`suppress "
-"<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.suppress>`\\ \\(\\)"
+":py:obj:`setValues <abaqus.Feature.Feature.Feature.setValues>`\\ "
+"\\(\\[parameter\\, parameter1\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method modifies the Feature object."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.Feature.Feature.Feature.suppress>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -2280,8 +2259,12 @@ msgid ""
 "sufficient cache allowance to store the edit mesh operation."
 msgstr ""
 
-#: ../../reference/mdb/edit_mesh.rst:20
+#: ../../reference/mdb/edit_mesh.rst:22
 msgid "Edit mesh features of Part"
+msgstr ""
+
+#: abaqus.EditMesh.MeshEditPart.MeshEditPart:1 of
+msgid "Bases: :py:class:`~abaqus.Part.PartBase.PartBase`"
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart:1 of
@@ -2293,7 +2276,7 @@ msgstr ""
 #: ../../None:34:<autosummary>:1
 msgid ""
 ":py:obj:`geometryValidity "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.geometryValidity>`\\"
+"<abaqus.Part.PartBase.PartBase.geometryValidity>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2301,9 +2284,7 @@ msgid "A Boolean specifying the validity of the geometry of the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`isOutOfDate "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.isOutOfDate>`\\"
+msgid ":py:obj:`isOutOfDate <abaqus.Part.PartBase.PartBase.isOutOfDate>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2313,9 +2294,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`timeStamp "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.timeStamp>`\\"
+msgid ":py:obj:`timeStamp <abaqus.Part.PartBase.PartBase.timeStamp>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2323,7 +2302,7 @@ msgid "A Float specifying when the part was last modified."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`vertices <abaqus.EditMesh.MeshEditPart.MeshEditPart.vertices>`\\"
+msgid ":py:obj:`vertices <abaqus.Part.PartBase.PartBase.vertices>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2335,7 +2314,7 @@ msgstr ""
 #: ../../None:34:<autosummary>:1
 msgid ""
 ":py:obj:`ignoredVertices "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.ignoredVertices>`\\"
+"<abaqus.Part.PartBase.PartBase.ignoredVertices>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2346,7 +2325,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`edges <abaqus.EditMesh.MeshEditPart.MeshEditPart.edges>`\\"
+msgid ":py:obj:`edges <abaqus.Part.PartBase.PartBase.edges>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2356,9 +2335,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`ignoredEdges "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.ignoredEdges>`\\"
+msgid ":py:obj:`ignoredEdges <abaqus.Part.PartBase.PartBase.ignoredEdges>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2368,7 +2345,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`faces <abaqus.EditMesh.MeshEditPart.MeshEditPart.faces>`\\"
+msgid ":py:obj:`faces <abaqus.Part.PartBase.PartBase.faces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2378,7 +2355,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`cells <abaqus.EditMesh.MeshEditPart.MeshEditPart.cells>`\\"
+msgid ":py:obj:`cells <abaqus.Part.PartBase.PartBase.cells>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2388,7 +2365,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`features <abaqus.EditMesh.MeshEditPart.MeshEditPart.features>`\\"
+msgid ":py:obj:`features <abaqus.Part.PartBase.PartBase.features>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2396,9 +2373,7 @@ msgid "A repository of Feature objects specifying all the features in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`featuresById "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.featuresById>`\\"
+msgid ":py:obj:`featuresById <abaqus.Part.PartBase.PartBase.featuresById>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2408,7 +2383,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`datums <abaqus.EditMesh.MeshEditPart.MeshEditPart.datums>`\\"
+msgid ":py:obj:`datums <abaqus.Part.PartBase.PartBase.datums>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2416,7 +2391,7 @@ msgid "A repository of Datum objects specifying all the datums in the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`elements <abaqus.EditMesh.MeshEditPart.MeshEditPart.elements>`\\"
+msgid ":py:obj:`elements <abaqus.Part.PartBase.PartBase.elements>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2426,9 +2401,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`elemFaces "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.elemFaces>`\\"
+msgid ":py:obj:`elemFaces <abaqus.Part.PartBase.PartBase.elemFaces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2438,9 +2411,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`elementFaces "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.elementFaces>`\\"
+msgid ":py:obj:`elementFaces <abaqus.Part.PartBase.PartBase.elementFaces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2450,7 +2421,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`nodes <abaqus.EditMesh.MeshEditPart.MeshEditPart.nodes>`\\"
+msgid ":py:obj:`nodes <abaqus.Part.PartBase.PartBase.nodes>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2460,9 +2431,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`retainedNodes "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.retainedNodes>`\\"
+msgid ":py:obj:`retainedNodes <abaqus.Part.PartBase.PartBase.retainedNodes>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2472,7 +2441,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`sets <abaqus.EditMesh.MeshEditPart.MeshEditPart.sets>`\\"
+msgid ":py:obj:`sets <abaqus.Part.PartBase.PartBase.sets>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2480,7 +2449,7 @@ msgid "A repository of Set objects specifying for more information, see Set."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`allSets <abaqus.EditMesh.MeshEditPart.MeshEditPart.allSets>`\\"
+msgid ":py:obj:`allSets <abaqus.Part.PartBase.PartBase.allSets>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2492,11 +2461,11 @@ msgstr ""
 #: ../../None:34:<autosummary>:1
 msgid ""
 ":py:obj:`allInternalSets "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.allInternalSets>`\\"
+"<abaqus.Part.PartBase.PartBase.allInternalSets>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`surfaces <abaqus.EditMesh.MeshEditPart.MeshEditPart.surfaces>`\\"
+msgid ":py:obj:`surfaces <abaqus.Part.PartBase.PartBase.surfaces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2506,9 +2475,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`allSurfaces "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.allSurfaces>`\\"
+msgid ":py:obj:`allSurfaces <abaqus.Part.PartBase.PartBase.allSurfaces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2521,11 +2488,11 @@ msgstr ""
 #: ../../None:34:<autosummary>:1
 msgid ""
 ":py:obj:`allInternalSurfaces "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.allInternalSurfaces>`\\"
+"<abaqus.Part.PartBase.PartBase.allInternalSurfaces>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ":py:obj:`skins <abaqus.EditMesh.MeshEditPart.MeshEditPart.skins>`\\"
+msgid ":py:obj:`skins <abaqus.Part.PartBase.PartBase.skins>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2533,9 +2500,7 @@ msgid "A repository of Skin objects specifying the skins created on the part."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`stringers "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.stringers>`\\"
+msgid ":py:obj:`stringers <abaqus.Part.PartBase.PartBase.stringers>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2547,25 +2512,25 @@ msgstr ""
 #: ../../None:34:<autosummary>:1
 msgid ""
 ":py:obj:`referencePoints "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.referencePoints>`\\"
+"<abaqus.Part.PartBase.PartBase.referencePoints>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
 msgid ""
 ":py:obj:`engineeringFeatures "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.engineeringFeatures>`\\"
+"<abaqus.Part.PartBase.PartBase.engineeringFeatures>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
 msgid ""
 ":py:obj:`sectionAssignments "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.sectionAssignments>`\\"
+"<abaqus.Part.PartBase.PartBase.sectionAssignments>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
 msgid ""
 ":py:obj:`materialOrientations "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.materialOrientations>`\\"
+"<abaqus.Part.PartBase.PartBase.materialOrientations>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2578,7 +2543,7 @@ msgstr ""
 #: ../../None:34:<autosummary>:1
 msgid ""
 ":py:obj:`compositeLayups "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.compositeLayups>`\\"
+"<abaqus.Part.PartBase.PartBase.compositeLayups>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2586,9 +2551,7 @@ msgid "A repository of CompositeLayup objects."
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`elemEdges "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.elemEdges>`\\"
+msgid ":py:obj:`elemEdges <abaqus.Part.PartBase.PartBase.elemEdges>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -2598,23 +2561,13 @@ msgid ""
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
-msgid ""
-":py:obj:`elementEdges "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.elementEdges>`\\"
+msgid ":py:obj:`elementEdges <abaqus.Part.PartBase.PartBase.elementEdges>`\\"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
 msgid ""
 "A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object specifying "
 "all the unique element edges in the part."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.EditMesh.MeshEditPart.MeshEditPart.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`id <abaqus.EditMesh.MeshEditPart.MeshEditPart.id>`\\"
 msgstr ""
 
 #: ../../None:27:<autosummary>:1
@@ -2932,16 +2885,14 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`__init__ <abaqus.EditMesh.MeshEditPart.MeshEditPart.__init__>`\\"
-" \\(\\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`__init__ <abaqus.Part.PartBase.PartBase.__init__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`PartFromBooleanCut "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromBooleanCut>`\\ "
-"\\(name\\, instanceToBeCut\\, ...\\)"
+"<abaqus.Part.PartBase.PartBase.PartFromBooleanCut>`\\ \\(name\\, "
+"instanceToBeCut\\, ...\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -2954,8 +2905,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`PartFromBooleanMerge "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromBooleanMerge>`\\ "
-"\\(name\\, instances\\[\\, ...\\]\\)"
+"<abaqus.Part.PartBase.PartBase.PartFromBooleanMerge>`\\ \\(name\\, "
+"instances\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -2967,8 +2918,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`PartFromExtrude2DMesh "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromExtrude2DMesh>`\\ "
-"\\(name\\, part\\, depth\\, ...\\)"
+"<abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh>`\\ \\(name\\, "
+"part\\, depth\\, ...\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -2981,8 +2932,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`PartFromGeometryFile "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromGeometryFile>`\\ "
-"\\(name\\, geometryFile\\, ...\\)"
+"<abaqus.Part.PartBase.PartBase.PartFromGeometryFile>`\\ \\(name\\, "
+"geometryFile\\, ...\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -2992,8 +2943,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`PartFromInstanceMesh "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromInstanceMesh>`\\ "
-"\\(name\\[\\, partInstances\\, ...\\]\\)"
+"<abaqus.Part.PartBase.PartBase.PartFromInstanceMesh>`\\ \\(name\\[\\, "
+"partInstances\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3005,9 +2956,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`PartFromMesh "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromMesh>`\\ \\(name\\[\\,"
-" copySets\\]\\)"
+":py:obj:`PartFromMesh <abaqus.Part.PartBase.PartBase.PartFromMesh>`\\ "
+"\\(name\\[\\, copySets\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3019,8 +2969,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`PartFromMeshMirror "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromMeshMirror>`\\ "
-"\\(name\\, part\\, point1\\, point2\\)"
+"<abaqus.Part.PartBase.PartBase.PartFromMeshMirror>`\\ \\(name\\, part\\, "
+"point1\\, point2\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3033,8 +2983,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`PartFromNodesAndElements "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromNodesAndElements>`\\ "
-"\\(name\\, ...\\[\\, twist\\]\\)"
+"<abaqus.Part.PartBase.PartBase.PartFromNodesAndElements>`\\ \\(name\\, "
+"...\\[\\, twist\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3045,9 +2995,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`PartFromOdb "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromOdb>`\\ \\(name\\, "
-"odb\\[\\, fileName\\, instance\\, ...\\]\\)"
+":py:obj:`PartFromOdb <abaqus.Part.PartBase.PartBase.PartFromOdb>`\\ "
+"\\(name\\, odb\\[\\, fileName\\, instance\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3059,8 +3008,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`PartFromSection3DMeshByPlane "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromSection3DMeshByPlane>`\\"
-" \\(name\\, part\\, ...\\)"
+"<abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane>`\\ "
+"\\(name\\, part\\, ...\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3073,8 +3022,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`PartFromSubstructure "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromSubstructure>`\\ "
-"\\(name\\, substructureFile\\, ...\\)"
+"<abaqus.Part.PartBase.PartBase.PartFromSubstructure>`\\ \\(name\\, "
+"substructureFile\\, ...\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3086,8 +3035,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`Part2DGeomFrom2DMesh "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.Part2DGeomFrom2DMesh>`\\ "
-"\\(name\\, part\\, featureAngle\\)"
+"<abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh>`\\ \\(name\\, "
+"part\\, featureAngle\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3097,22 +3046,20 @@ msgid ""
 "parts repository."
 msgstr ""
 
-#: ../../None:65:<autosummary>:1 ../../None:68:<autosummary>:1
+#: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`setValues "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.setValues>`\\ \\(\\*args\\, "
-"\\*\\*kwargs\\)"
+":py:obj:`setValues <abaqus.Part.PartBase.PartBase.setValues>`\\ "
+"\\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../None:65:<autosummary>:1 ../../None:68:<autosummary>:1
+#: ../../None:68:<autosummary>:1
 msgid "This method modifies the Part object."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`addGeomToSketch "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.addGeomToSketch>`\\ "
-"\\(sketch\\)"
+"<abaqus.Part.PartBase.PartBase.addGeomToSketch>`\\ \\(sketch\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3124,8 +3071,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`assignThickness "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.assignThickness>`\\ "
-"\\(faces\\[\\, thickness\\, ...\\]\\)"
+"<abaqus.Part.PartBase.PartBase.assignThickness>`\\ \\(faces\\[\\, "
+"thickness\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3133,9 +3080,7 @@ msgid "This method assigns thickness data to shell faces."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`backup <abaqus.EditMesh.MeshEditPart.MeshEditPart.backup>`\\ "
-"\\(\\)"
+msgid ":py:obj:`backup <abaqus.Part.PartBase.PartBase.backup>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3144,8 +3089,7 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`checkGeometry "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.checkGeometry>`\\ "
+":py:obj:`checkGeometry <abaqus.Part.PartBase.PartBase.checkGeometry>`\\ "
 "\\(\\[detailed\\, reportFacetErrors\\, ...\\]\\)"
 msgstr ""
 
@@ -3159,7 +3103,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`clearGeometryCache "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.clearGeometryCache>`\\ \\(\\)"
+"<abaqus.Part.PartBase.PartBase.clearGeometryCache>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3169,7 +3113,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`deleteAllFeatures "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteAllFeatures>`\\ \\(\\)"
+"<abaqus.Part.PartBase.PartBase.deleteAllFeatures>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3178,9 +3122,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`deleteFeatures "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteFeatures>`\\ "
-"\\(featureNames\\)"
+":py:obj:`deleteFeatures <abaqus.Part.PartBase.PartBase.deleteFeatures>`\\"
+" \\(featureNames\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3189,13 +3132,13 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`getAngle <abaqus.EditMesh.MeshEditPart.MeshEditPart.getAngle>`\\"
-" \\(plane1\\, plane2\\, line1\\, line2\\[\\, ...\\]\\)"
+":py:obj:`getAngle <abaqus.Part.PartBase.PartBase.getAngle>`\\ "
+"\\(plane1\\, plane2\\, line1\\, line2\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`getArea <abaqus.EditMesh.MeshEditPart.MeshEditPart.getArea>`\\ "
+":py:obj:`getArea <abaqus.Part.PartBase.PartBase.getArea>`\\ "
 "\\(faces\\[\\, relativeAccuracy\\]\\)"
 msgstr ""
 
@@ -3208,8 +3151,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`getAssociatedCADPaths "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.getAssociatedCADPaths>`\\ "
-"\\(\\)"
+"<abaqus.Part.PartBase.PartBase.getAssociatedCADPaths>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3219,7 +3161,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`getCADParameters "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.getCADParameters>`\\ \\(\\)"
+"<abaqus.Part.PartBase.PartBase.getCADParameters>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3230,9 +3172,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`getCentroid "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.getCentroid>`\\ \\(faces\\, "
-"cells\\[\\, relativeAccuracy\\]\\)"
+":py:obj:`getCentroid <abaqus.Part.PartBase.PartBase.getCentroid>`\\ "
+"\\(faces\\, cells\\[\\, relativeAccuracy\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3241,9 +3182,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`getCoordinates "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.getCoordinates>`\\ "
-"\\(entity\\)"
+":py:obj:`getCoordinates <abaqus.Part.PartBase.PartBase.getCoordinates>`\\"
+" \\(entity\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3252,8 +3192,7 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`getCurvature "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.getCurvature>`\\ "
+":py:obj:`getCurvature <abaqus.Part.PartBase.PartBase.getCurvature>`\\ "
 "\\(edges\\[\\, samplePoints\\]\\)"
 msgstr ""
 
@@ -3265,15 +3204,14 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`getDistance "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.getDistance>`\\ \\(entity1\\, "
-"entity2\\)"
+":py:obj:`getDistance <abaqus.Part.PartBase.PartBase.getDistance>`\\ "
+"\\(entity1\\, entity2\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`getLength "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.getLength>`\\ \\(edges\\)"
+":py:obj:`getLength <abaqus.Part.PartBase.PartBase.getLength>`\\ "
+"\\(edges\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3282,8 +3220,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`getPerimeter "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.getPerimeter>`\\ \\(faces\\)"
+":py:obj:`getPerimeter <abaqus.Part.PartBase.PartBase.getPerimeter>`\\ "
+"\\(faces\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3292,9 +3230,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`getVolume "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.getVolume>`\\ \\(cells\\[\\, "
-"relativeAccuracy\\]\\)"
+":py:obj:`getVolume <abaqus.Part.PartBase.PartBase.getVolume>`\\ "
+"\\(cells\\[\\, relativeAccuracy\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3304,8 +3241,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`getMassProperties "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.getMassProperties>`\\ "
-"\\(\\[regions\\, ...\\]\\)"
+"<abaqus.Part.PartBase.PartBase.getMassProperties>`\\ \\(\\[regions\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3315,7 +3252,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`getFeatureFaces "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.getFeatureFaces>`\\ \\(name\\)"
+"<abaqus.Part.PartBase.PartBase.getFeatureFaces>`\\ \\(name\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3327,7 +3264,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`getFeatureEdges "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.getFeatureEdges>`\\ \\(name\\)"
+"<abaqus.Part.PartBase.PartBase.getFeatureEdges>`\\ \\(name\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3339,7 +3276,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`getFeatureCells "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.getFeatureCells>`\\ \\(name\\)"
+"<abaqus.Part.PartBase.PartBase.getFeatureCells>`\\ \\(name\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3351,8 +3288,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`getFeatureVertices "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.getFeatureVertices>`\\ "
-"\\(name\\)"
+"<abaqus.Part.PartBase.PartBase.getFeatureVertices>`\\ \\(name\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3364,7 +3300,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`isAlignedWithSketch "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.isAlignedWithSketch>`\\ \\(\\)"
+"<abaqus.Part.PartBase.PartBase.isAlignedWithSketch>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3376,8 +3312,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`printAssignedSections "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.printAssignedSections>`\\ "
-"\\(\\)"
+"<abaqus.Part.PartBase.PartBase.printAssignedSections>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3389,8 +3324,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`projectEdgesOntoSketch "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.projectEdgesOntoSketch>`\\ "
-"\\(sketch\\, edges\\[\\, ...\\]\\)"
+"<abaqus.Part.PartBase.PartBase.projectEdgesOntoSketch>`\\ \\(sketch\\, "
+"edges\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3402,8 +3337,8 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`projectReferencesOntoSketch "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.projectReferencesOntoSketch>`\\"
-" \\(sketch\\[\\, ...\\]\\)"
+"<abaqus.Part.PartBase.PartBase.projectReferencesOntoSketch>`\\ "
+"\\(sketch\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3415,7 +3350,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`queryAttributes "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.queryAttributes>`\\ "
+"<abaqus.Part.PartBase.PartBase.queryAttributes>`\\ "
 "\\(\\[printResults\\]\\)"
 msgstr ""
 
@@ -3426,7 +3361,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`queryCachedStates "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.queryCachedStates>`\\ \\(\\)"
+"<abaqus.Part.PartBase.PartBase.queryCachedStates>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3437,16 +3372,14 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`queryGeometry "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.queryGeometry>`\\ "
+":py:obj:`queryGeometry <abaqus.Part.PartBase.PartBase.queryGeometry>`\\ "
 "\\(\\[relativeAccuracy\\, printResults\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`queryRegionsMissingSections "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.queryRegionsMissingSections>`\\"
-" \\(\\)"
+"<abaqus.Part.PartBase.PartBase.queryRegionsMissingSections>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3458,8 +3391,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`queryDisjointPlyRegions "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.queryDisjointPlyRegions>`\\ "
-"\\(\\)"
+"<abaqus.Part.PartBase.PartBase.queryDisjointPlyRegions>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3469,9 +3401,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`regenerate "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.regenerate>`\\ \\(\\)"
+msgid ":py:obj:`regenerate <abaqus.Part.PartBase.PartBase.regenerate>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3481,31 +3411,27 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`regenerationWarnings "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.regenerationWarnings>`\\ "
-"\\(\\)"
+"<abaqus.Part.PartBase.PartBase.regenerationWarnings>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`removeInvalidGeometry "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.removeInvalidGeometry>`\\ "
-"\\(\\)"
+"<abaqus.Part.PartBase.PartBase.removeInvalidGeometry>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid "Removes all invalid entities from the part, leaving a valid part."
 msgstr ""
 
-#: ../../None:65:<autosummary>:1 ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`restore <abaqus.EditMesh.MeshEditPart.MeshEditPart.restore>`\\ "
-"\\(\\)"
+#: ../../None:68:<autosummary>:1
+msgid ":py:obj:`restore <abaqus.Part.PartBase.PartBase.restore>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`resumeAllFeatures "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.resumeAllFeatures>`\\ \\(\\)"
+"<abaqus.Part.PartBase.PartBase.resumeAllFeatures>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3514,9 +3440,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`resumeFeatures "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.resumeFeatures>`\\ "
-"\\(featureNames\\)"
+":py:obj:`resumeFeatures <abaqus.Part.PartBase.PartBase.resumeFeatures>`\\"
+" \\(featureNames\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3526,8 +3451,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`resumeLastSetFeatures "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.resumeLastSetFeatures>`\\ "
-"\\(\\)"
+"<abaqus.Part.PartBase.PartBase.resumeLastSetFeatures>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3537,7 +3461,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`saveGeometryCache "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.saveGeometryCache>`\\ \\(\\)"
+"<abaqus.Part.PartBase.PartBase.saveGeometryCache>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3547,7 +3471,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`setAssociatedCADPaths "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.setAssociatedCADPaths>`\\ "
+"<abaqus.Part.PartBase.PartBase.setAssociatedCADPaths>`\\ "
 "\\(\\[partFile\\, rootFile\\]\\)"
 msgstr ""
 
@@ -3558,8 +3482,7 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`suppressFeatures "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.suppressFeatures>`\\ "
-"\\(featureNames\\)"
+"<abaqus.Part.PartBase.PartBase.suppressFeatures>`\\ \\(featureNames\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3568,8 +3491,7 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`writeAcisFile "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.writeAcisFile>`\\ "
+":py:obj:`writeAcisFile <abaqus.Part.PartBase.PartBase.writeAcisFile>`\\ "
 "\\(fileName\\[\\, version\\]\\)"
 msgstr ""
 
@@ -3582,14 +3504,13 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`writeCADParameters "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.writeCADParameters>`\\ "
-"\\(paramFile\\[\\, ...\\]\\)"
+"<abaqus.Part.PartBase.PartBase.writeCADParameters>`\\ \\(paramFile\\[\\, "
+"...\\]\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`writeIgesFile "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.writeIgesFile>`\\ "
+":py:obj:`writeIgesFile <abaqus.Part.PartBase.PartBase.writeIgesFile>`\\ "
 "\\(fileName\\, flavor\\)"
 msgstr ""
 
@@ -3601,8 +3522,7 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`writeStepFile "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.writeStepFile>`\\ "
+":py:obj:`writeStepFile <abaqus.Part.PartBase.PartBase.writeStepFile>`\\ "
 "\\(fileName\\)"
 msgstr ""
 
@@ -3614,8 +3534,7 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`writeVdaFile "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.writeVdaFile>`\\ "
+":py:obj:`writeVdaFile <abaqus.Part.PartBase.PartBase.writeVdaFile>`\\ "
 "\\(fileName\\)"
 msgstr ""
 
@@ -3628,18 +3547,18 @@ msgstr ""
 #: ../../None:68:<autosummary>:1
 msgid ""
 ":py:obj:`copyMeshPattern "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.copyMeshPattern>`\\ "
-"\\(elements\\, faces\\, elemFaces\\, ...\\)"
+"<abaqus.Part.PartBase.PartBase.copyMeshPattern>`\\ \\(elements\\, "
+"faces\\, elemFaces\\, ...\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`smoothNodes "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.smoothNodes>`\\ \\(nodes\\)"
+":py:obj:`smoothNodes <abaqus.Part.PartBase.PartBase.smoothNodes>`\\ "
+"\\(nodes\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ":py:obj:`Lock <abaqus.EditMesh.MeshEditPart.MeshEditPart.Lock>`\\ \\(\\)"
+msgid ":py:obj:`Lock <abaqus.Part.PartBase.PartBase.Lock>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3647,9 +3566,7 @@ msgid "This method locks the part."
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
-msgid ""
-":py:obj:`Unlock <abaqus.EditMesh.MeshEditPart.MeshEditPart.Unlock>`\\ "
-"\\(\\)"
+msgid ":py:obj:`Unlock <abaqus.Part.PartBase.PartBase.Unlock>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3658,8 +3575,8 @@ msgstr ""
 
 #: ../../None:68:<autosummary>:1
 msgid ""
-":py:obj:`LockForUpgrade "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.LockForUpgrade>`\\ \\(\\)"
+":py:obj:`LockForUpgrade <abaqus.Part.PartBase.PartBase.LockForUpgrade>`\\"
+" \\(\\)"
 msgstr ""
 
 #: ../../None:68:<autosummary>:1
@@ -3668,8 +3585,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`AutoRepair "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.AutoRepair>`\\ \\(\\)"
+":py:obj:`AutoRepair <abaqus.Part.PartFeature.PartFeature.AutoRepair>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -3680,8 +3597,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`AddCells <abaqus.EditMesh.MeshEditPart.MeshEditPart.AddCells>`\\"
-" \\(faceList\\[\\, flipped\\]\\)"
+":py:obj:`AddCells <abaqus.Part.PartFeature.PartFeature.AddCells>`\\ "
+"\\(faceList\\[\\, flipped\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -3691,7 +3608,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`AnalyticRigidSurf2DPlanar "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.AnalyticRigidSurf2DPlanar>`\\ "
+"<abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurf2DPlanar>`\\ "
 "\\(sketch\\)"
 msgstr ""
 
@@ -3705,7 +3622,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`AnalyticRigidSurfExtrude "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.AnalyticRigidSurfExtrude>`\\ "
+"<abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude>`\\ "
 "\\(sketch\\[\\, depth\\]\\)"
 msgstr ""
 
@@ -3719,7 +3636,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`AnalyticRigidSurfRevolve "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.AnalyticRigidSurfRevolve>`\\ "
+"<abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfRevolve>`\\ "
 "\\(sketch\\)"
 msgstr ""
 
@@ -3733,7 +3650,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`AssignMidsurfaceRegion "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.AssignMidsurfaceRegion>`\\ "
+"<abaqus.Part.PartFeature.PartFeature.AssignMidsurfaceRegion>`\\ "
 "\\(cellList\\)"
 msgstr ""
 
@@ -3744,8 +3661,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`BaseSolidExtrude "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseSolidExtrude>`\\ "
-"\\(sketch\\, depth\\[\\, ...\\]\\)"
+"<abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude>`\\ \\(sketch\\, "
+"depth\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -3757,8 +3674,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`BaseSolidRevolve "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseSolidRevolve>`\\ "
-"\\(sketch\\, angle\\[\\, pitch\\, ...\\]\\)"
+"<abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve>`\\ \\(sketch\\, "
+"angle\\[\\, pitch\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -3770,8 +3687,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`BaseSolidSweep "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseSolidSweep>`\\ "
-"\\(sketch\\, path\\)"
+"<abaqus.Part.PartFeature.PartFeature.BaseSolidSweep>`\\ \\(sketch\\, "
+"path\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -3783,8 +3700,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`BaseShell "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseShell>`\\ \\(sketch\\)"
+":py:obj:`BaseShell <abaqus.Part.PartFeature.PartFeature.BaseShell>`\\ "
+"\\(sketch\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -3796,8 +3713,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`BaseShellExtrude "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseShellExtrude>`\\ "
-"\\(sketch\\, depth\\[\\, ...\\]\\)"
+"<abaqus.Part.PartFeature.PartFeature.BaseShellExtrude>`\\ \\(sketch\\, "
+"depth\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -3809,8 +3726,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`BaseShellRevolve "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseShellRevolve>`\\ "
-"\\(sketch\\, angle\\[\\, pitch\\, ...\\]\\)"
+"<abaqus.Part.PartFeature.PartFeature.BaseShellRevolve>`\\ \\(sketch\\, "
+"angle\\[\\, pitch\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -3822,8 +3739,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`BaseShellSweep "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseShellSweep>`\\ "
-"\\(sketch\\, path\\)"
+"<abaqus.Part.PartFeature.PartFeature.BaseShellSweep>`\\ \\(sketch\\, "
+"path\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -3835,8 +3752,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`BaseWire <abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseWire>`\\"
-" \\(sketch\\)"
+":py:obj:`BaseWire <abaqus.Part.PartFeature.PartFeature.BaseWire>`\\ "
+"\\(sketch\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -3847,9 +3764,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`BlendFaces "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.BlendFaces>`\\ \\(side1\\, "
-"side2\\[\\, method\\, path\\]\\)"
+":py:obj:`BlendFaces <abaqus.Part.PartFeature.PartFeature.BlendFaces>`\\ "
+"\\(side1\\, side2\\[\\, method\\, path\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -3860,7 +3776,7 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`Chamfer <abaqus.EditMesh.MeshEditPart.MeshEditPart.Chamfer>`\\ "
+":py:obj:`Chamfer <abaqus.Part.PartFeature.PartFeature.Chamfer>`\\ "
 "\\(length\\, edgeList\\)"
 msgstr ""
 
@@ -3872,7 +3788,7 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`Mirror <abaqus.EditMesh.MeshEditPart.MeshEditPart.Mirror>`\\ "
+":py:obj:`Mirror <abaqus.Part.PartFeature.PartFeature.Mirror>`\\ "
 "\\(mirrorPlane\\, keepOriginal\\[\\, ...\\]\\)"
 msgstr ""
 
@@ -3885,7 +3801,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`ConvertToAnalytical "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.ConvertToAnalytical>`\\ \\(\\)"
+"<abaqus.Part.PartFeature.PartFeature.ConvertToAnalytical>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -3898,7 +3814,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`ConvertToPrecise "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.ConvertToPrecise>`\\ "
+"<abaqus.Part.PartFeature.PartFeature.ConvertToPrecise>`\\ "
 "\\(\\[method\\]\\)"
 msgstr ""
 
@@ -3910,8 +3826,7 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`CoverEdges "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.CoverEdges>`\\ "
+":py:obj:`CoverEdges <abaqus.Part.PartFeature.PartFeature.CoverEdges>`\\ "
 "\\(edgeList\\[\\, tryAnalytical\\]\\)"
 msgstr ""
 
@@ -3923,7 +3838,7 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`Cut <abaqus.EditMesh.MeshEditPart.MeshEditPart.Cut>`\\ "
+":py:obj:`Cut <abaqus.Part.PartFeature.PartFeature.Cut>`\\ "
 "\\(sketchPlane\\, sketchPlaneSide\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
@@ -3935,8 +3850,7 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`CutExtrude "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.CutExtrude>`\\ "
+":py:obj:`CutExtrude <abaqus.Part.PartFeature.PartFeature.CutExtrude>`\\ "
 "\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
 msgstr ""
 
@@ -3949,7 +3863,7 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`CutLoft <abaqus.EditMesh.MeshEditPart.MeshEditPart.CutLoft>`\\ "
+":py:obj:`CutLoft <abaqus.Part.PartFeature.PartFeature.CutLoft>`\\ "
 "\\(loftsections\\[\\, startCondition\\, ...\\]\\)"
 msgstr ""
 
@@ -3961,8 +3875,7 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`CutRevolve "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.CutRevolve>`\\ "
+":py:obj:`CutRevolve <abaqus.Part.PartFeature.PartFeature.CutRevolve>`\\ "
 "\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
 msgstr ""
 
@@ -3975,8 +3888,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`CutSweep <abaqus.EditMesh.MeshEditPart.MeshEditPart.CutSweep>`\\"
-" \\(path\\, profile\\[\\, pathPlane\\, ...\\]\\)"
+":py:obj:`CutSweep <abaqus.Part.PartFeature.PartFeature.CutSweep>`\\ "
+"\\(path\\, profile\\[\\, pathPlane\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -3988,9 +3901,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`ExtendFaces "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.ExtendFaces>`\\ \\(\\[faces\\,"
-" extendAlong\\, distance\\, ...\\]\\)"
+":py:obj:`ExtendFaces <abaqus.Part.PartFeature.PartFeature.ExtendFaces>`\\"
+" \\(\\[faces\\, extendAlong\\, distance\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -4002,7 +3914,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`FaceFromElementFaces "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.FaceFromElementFaces>`\\ "
+"<abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces>`\\ "
 "\\(elementFaces\\[\\, stitch\\, ...\\]\\)"
 msgstr ""
 
@@ -4015,8 +3927,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`HoleBlindFromEdges "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.HoleBlindFromEdges>`\\ "
-"\\(plane\\, planeSide\\, ...\\)"
+"<abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges>`\\ \\(plane\\, "
+"planeSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -4029,8 +3941,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`HoleFromEdges "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.HoleFromEdges>`\\ "
-"\\(diameter\\, edge1\\, distance1\\, ...\\)"
+"<abaqus.Part.PartFeature.PartFeature.HoleFromEdges>`\\ \\(diameter\\, "
+"edge1\\, distance1\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -4043,8 +3955,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`HoleThruAllFromEdges "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.HoleThruAllFromEdges>`\\ "
-"\\(plane\\, planeSide\\, ...\\)"
+"<abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges>`\\ \\(plane\\,"
+" planeSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -4056,8 +3968,7 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`MergeEdges "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.MergeEdges>`\\ "
+":py:obj:`MergeEdges <abaqus.Part.PartFeature.PartFeature.MergeEdges>`\\ "
 "\\(\\[edgeList\\, extendSelection\\]\\)"
 msgstr ""
 
@@ -4069,9 +3980,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`OffsetFaces "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.OffsetFaces>`\\ "
-"\\(faceList\\[\\, distance\\, ...\\]\\)"
+":py:obj:`OffsetFaces <abaqus.Part.PartFeature.PartFeature.OffsetFaces>`\\"
+" \\(faceList\\[\\, distance\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -4080,8 +3990,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`RemoveCells "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.RemoveCells>`\\ \\(cellList\\)"
+":py:obj:`RemoveCells <abaqus.Part.PartFeature.PartFeature.RemoveCells>`\\"
+" \\(cellList\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -4090,9 +4000,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`RemoveFaces "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.RemoveFaces>`\\ "
-"\\(faceList\\[\\, deleteCells\\]\\)"
+":py:obj:`RemoveFaces <abaqus.Part.PartFeature.PartFeature.RemoveFaces>`\\"
+" \\(faceList\\[\\, deleteCells\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -4102,7 +4011,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`RemoveFacesAndStitch "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.RemoveFacesAndStitch>`\\ "
+"<abaqus.Part.PartFeature.PartFeature.RemoveFacesAndStitch>`\\ "
 "\\(faceList\\)"
 msgstr ""
 
@@ -4115,7 +4024,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`RemoveRedundantEntities "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.RemoveRedundantEntities>`\\ "
+"<abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities>`\\ "
 "\\(\\[vertexList\\, ...\\]\\)"
 msgstr ""
 
@@ -4128,7 +4037,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`RepairFaceNormals "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.RepairFaceNormals>`\\ "
+"<abaqus.Part.PartFeature.PartFeature.RepairFaceNormals>`\\ "
 "\\(\\[faceList\\]\\)"
 msgstr ""
 
@@ -4139,7 +4048,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`RepairInvalidEdges "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.RepairInvalidEdges>`\\ "
+"<abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges>`\\ "
 "\\(edgeList\\)"
 msgstr ""
 
@@ -4150,7 +4059,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`RepairSliver "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.RepairSliver>`\\ \\(face\\, "
+"<abaqus.Part.PartFeature.PartFeature.RepairSliver>`\\ \\(face\\, "
 "point1\\, point2\\[\\, ...\\]\\)"
 msgstr ""
 
@@ -4161,7 +4070,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`RepairSmallEdges "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.RepairSmallEdges>`\\ "
+"<abaqus.Part.PartFeature.PartFeature.RepairSmallEdges>`\\ "
 "\\(edgeList\\[\\, toleranceChecks\\]\\)"
 msgstr ""
 
@@ -4172,7 +4081,7 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`RepairSmallFaces "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.RepairSmallFaces>`\\ "
+"<abaqus.Part.PartFeature.PartFeature.RepairSmallFaces>`\\ "
 "\\(faceList\\[\\, toleranceChecks\\]\\)"
 msgstr ""
 
@@ -4183,8 +4092,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`ReplaceFaces "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.ReplaceFaces>`\\ "
-"\\(faceList\\[\\, stitch\\]\\)"
+"<abaqus.Part.PartFeature.PartFeature.ReplaceFaces>`\\ \\(faceList\\[\\, "
+"stitch\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -4193,7 +4102,7 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`Round <abaqus.EditMesh.MeshEditPart.MeshEditPart.Round>`\\ "
+":py:obj:`Round <abaqus.Part.PartFeature.PartFeature.Round>`\\ "
 "\\(radius\\, edgeList\\, vertexList\\)"
 msgstr ""
 
@@ -4205,7 +4114,7 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`Shell <abaqus.EditMesh.MeshEditPart.MeshEditPart.Shell>`\\ "
+":py:obj:`Shell <abaqus.Part.PartFeature.PartFeature.Shell>`\\ "
 "\\(sketchPlane\\, sketchPlaneSide\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
@@ -4218,8 +4127,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`ShellExtrude "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.ShellExtrude>`\\ "
-"\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+"<abaqus.Part.PartFeature.PartFeature.ShellExtrude>`\\ \\(sketchPlane\\, "
+"sketchPlaneSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -4230,8 +4139,7 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`ShellLoft "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.ShellLoft>`\\ "
+":py:obj:`ShellLoft <abaqus.Part.PartFeature.PartFeature.ShellLoft>`\\ "
 "\\(loftsections\\[\\, startCondition\\, ...\\]\\)"
 msgstr ""
 
@@ -4244,8 +4152,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`ShellRevolve "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.ShellRevolve>`\\ "
-"\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+"<abaqus.Part.PartFeature.PartFeature.ShellRevolve>`\\ \\(sketchPlane\\, "
+"sketchPlaneSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -4256,9 +4164,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`ShellSweep "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.ShellSweep>`\\ \\(path\\, "
-"profile\\[\\, pathPlane\\, ...\\]\\)"
+":py:obj:`ShellSweep <abaqus.Part.PartFeature.PartFeature.ShellSweep>`\\ "
+"\\(path\\, profile\\[\\, pathPlane\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -4272,8 +4179,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`SolidExtrude "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.SolidExtrude>`\\ "
-"\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+"<abaqus.Part.PartFeature.PartFeature.SolidExtrude>`\\ \\(sketchPlane\\, "
+"sketchPlaneSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -4284,8 +4191,7 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`SolidLoft "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.SolidLoft>`\\ "
+":py:obj:`SolidLoft <abaqus.Part.PartFeature.PartFeature.SolidLoft>`\\ "
 "\\(loftsections\\[\\, startCondition\\, ...\\]\\)"
 msgstr ""
 
@@ -4298,8 +4204,8 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`SolidRevolve "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.SolidRevolve>`\\ "
-"\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+"<abaqus.Part.PartFeature.PartFeature.SolidRevolve>`\\ \\(sketchPlane\\, "
+"sketchPlaneSide\\, ...\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -4310,9 +4216,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`SolidSweep "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.SolidSweep>`\\ \\(path\\, "
-"profile\\[\\, pathPlane\\, ...\\]\\)"
+":py:obj:`SolidSweep <abaqus.Part.PartFeature.PartFeature.SolidSweep>`\\ "
+"\\(path\\, profile\\[\\, pathPlane\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -4325,7 +4230,7 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`Stitch <abaqus.EditMesh.MeshEditPart.MeshEditPart.Stitch>`\\ "
+":py:obj:`Stitch <abaqus.Part.PartFeature.PartFeature.Stitch>`\\ "
 "\\(\\[edgeList\\, stitchTolerance\\]\\)"
 msgstr ""
 
@@ -4337,7 +4242,7 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`Wire <abaqus.EditMesh.MeshEditPart.MeshEditPart.Wire>`\\ "
+":py:obj:`Wire <abaqus.Part.PartFeature.PartFeature.Wire>`\\ "
 "\\(sketchPlane\\, sketchPlaneSide\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
@@ -4349,9 +4254,8 @@ msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
-":py:obj:`WireSpline "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.WireSpline>`\\ \\(points\\[\\,"
-" mergeType\\, ...\\]\\)"
+":py:obj:`WireSpline <abaqus.Part.PartFeature.PartFeature.WireSpline>`\\ "
+"\\(points\\[\\, mergeType\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
@@ -4360,14 +4264,14 @@ msgid ""
 "wire that passes through a sequence of given points."
 msgstr ""
 
-#: ../../None:59:<autosummary>:1 ../../None:65:<autosummary>:1
+#: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`WirePolyLine "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.WirePolyLine>`\\ "
-"\\(points\\[\\, mergeType\\, meshable\\]\\)"
+"<abaqus.Part.PartFeature.PartFeature.WirePolyLine>`\\ \\(points\\[\\, "
+"mergeType\\, meshable\\]\\)"
 msgstr ""
 
-#: ../../None:59:<autosummary>:1 ../../None:65:<autosummary>:1
+#: ../../None:59:<autosummary>:1
 msgid ""
 "This method creates an additional Feature object by creating a polyline "
 "wire that passes through a sequence of given points."
@@ -4376,431 +4280,13 @@ msgstr ""
 #: ../../None:59:<autosummary>:1
 msgid ""
 ":py:obj:`WireFromEdge "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.WireFromEdge>`\\ "
-"\\(edgeList\\)"
+"<abaqus.Part.PartFeature.PartFeature.WireFromEdge>`\\ \\(edgeList\\)"
 msgstr ""
 
 #: ../../None:59:<autosummary>:1
 msgid ""
 "This method creates an additional Feature object by creating a Wire by "
 "selecting one or more Edge objects of a Solid or Shell part."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`AttachmentPoints "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.AttachmentPoints>`\\ "
-"\\(name\\, points\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`AttachmentPointsAlongDirection "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.AttachmentPointsAlongDirection>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`AttachmentPointsOffsetFromEdges "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.AttachmentPointsOffsetFromEdges>`\\"
-" \\(name\\, edges\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByCylFace "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByCylFace>`\\ "
-"\\(face\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByNormalToPlane "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByNormalToPlane>`\\ "
-"\\(plane\\, point\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByParToEdge "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByParToEdge>`\\ "
-"\\(edge\\, point\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByPrincipalAxis "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByPrincipalAxis>`\\ "
-"\\(principalAxis\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByRotation "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByRotation>`\\ "
-"\\(\\*args\\, \\*\\*kwargs\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByThreePoint "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByThreePoint>`\\ "
-"\\(point1\\, point2\\, point3\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByThruEdge "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByThruEdge>`\\ "
-"\\(edge\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByTwoPlane "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByTwoPlane>`\\ "
-"\\(plane1\\, plane2\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByTwoPoint "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByTwoPoint>`\\ "
-"\\(point1\\, point2\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumCsysByDefault "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumCsysByDefault>`\\ "
-"\\(coordSysType\\[\\, name\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumCsysByOffset "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumCsysByOffset>`\\ "
-"\\(coordSysType\\, ...\\[\\, name\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumCsysByThreePoints "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumCsysByThreePoints>`\\ "
-"\\(coordSysType\\, origin\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumCsysByTwoLines "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumCsysByTwoLines>`\\ "
-"\\(coordSysType\\, line1\\, line2\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByPrincipalPlane "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPlaneByPrincipalPlane>`\\"
-" \\(principalPlane\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByOffset "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPlaneByOffset>`\\ "
-"\\(\\*args\\, \\*\\*kwargs\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByRotation "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPlaneByRotation>`\\ "
-"\\(plane\\, axis\\, angle\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByThreePoints "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPlaneByThreePoints>`\\ "
-"\\(point1\\, point2\\, point3\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByLinePoint "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPlaneByLinePoint>`\\ "
-"\\(line\\, point\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByPointNormal "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPlaneByPointNormal>`\\ "
-"\\(point\\, normal\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByTwoPoint "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPlaneByTwoPoint>`\\ "
-"\\(point1\\, point2\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByCoordinate "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPointByCoordinate>`\\ "
-"\\(coords\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByOffset "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPointByOffset>`\\ "
-"\\(point\\, vector\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByMidPoint "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPointByMidPoint>`\\ "
-"\\(point1\\, point2\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByOnFace "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPointByOnFace>`\\ "
-"\\(face\\, edge1\\, offset1\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByEdgeParam "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPointByEdgeParam>`\\ "
-"\\(edge\\, parameter\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByProjOnEdge "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPointByProjOnEdge>`\\ "
-"\\(point\\, edge\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByProjOnFace "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPointByProjOnFace>`\\ "
-"\\(point\\, face\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`MakeSketchTransform "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.MakeSketchTransform>`\\ "
-"\\(sketchPlane\\[\\, origin\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByDatumPlane "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByDatumPlane>`\\ "
-"\\(cells\\, datumPlane\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByExtendFace "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByExtendFace>`\\ "
-"\\(cells\\, extendFace\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByExtrudeEdge "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByExtrudeEdge>`\\"
-" \\(cells\\, edges\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByPatchNCorners "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByPatchNCorners>`\\"
-" \\(cell\\, cornerPoints\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByPatchNEdges "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByPatchNEdges>`\\"
-" \\(cell\\, edges\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByPlaneNormalToEdge "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByPlaneNormalToEdge>`\\"
-" \\(cells\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByPlanePointNormal "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByPlanePointNormal>`\\"
-" \\(cells\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByPlaneThreePoints "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByPlaneThreePoints>`\\"
-" \\(cells\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellBySweepEdge "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellBySweepEdge>`\\ "
-"\\(cells\\, edges\\, sweepPath\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionEdgeByDatumPlane "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionEdgeByDatumPlane>`\\ "
-"\\(edges\\, datumPlane\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionEdgeByParam "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionEdgeByParam>`\\ "
-"\\(edges\\, parameter\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionEdgeByPoint "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionEdgeByPoint>`\\ "
-"\\(edge\\, point\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByAuto "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByAuto>`\\ "
-"\\(face\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByCurvedPathEdgeParams "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByCurvedPathEdgeParams>`\\"
-" \\(face\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByCurvedPathEdgePoints "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByCurvedPathEdgePoints>`\\"
-" \\(face\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByDatumPlane "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByDatumPlane>`\\ "
-"\\(faces\\, datumPlane\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByExtendFace "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByExtendFace>`\\ "
-"\\(faces\\, extendFace\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByIntersectFace "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByIntersectFace>`\\"
-" \\(faces\\, cuttingFaces\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByProjectingEdges "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByProjectingEdges>`\\"
-" \\(faces\\, edges\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByShortestPath "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByShortestPath>`\\"
-" \\(faces\\, point1\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceBySketch "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceBySketch>`\\ "
-"\\(faces\\, sketch\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceBySketchDistance "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceBySketchDistance>`\\"
-" \\(faces\\, ...\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceBySketchRefPoint "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceBySketchRefPoint>`\\"
-" \\(faces\\, ...\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceBySketchThruAll "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceBySketchThruAll>`\\"
-" \\(faces\\, ...\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`ReferencePoint "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.ReferencePoint>`\\ "
-"\\(point\\[\\, instanceName\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`RemoveWireEdges "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.RemoveWireEdges>`\\ "
-"\\(wireEdgeList\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`isSuppressed "
-"<abaqus.EditMesh.MeshEditPart.MeshEditPart.isSuppressed>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`resume <abaqus.EditMesh.MeshEditPart.MeshEditPart.resume>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`suppress <abaqus.EditMesh.MeshEditPart.MeshEditPart.suppress>`\\"
-" \\(\\)"
 msgstr ""
 
 #: abaqus.EditMesh.MeshEditPart.MeshEditPart.adjustMidsideNode:5 of
@@ -5221,7 +4707,7 @@ msgid ""
 " = xrxr, and zz=yy."
 msgstr ""
 
-#: ../../reference/mdb/edit_mesh.rst:28
+#: ../../reference/mdb/edit_mesh.rst:32
 msgid "MeshEditOptions"
 msgstr ""
 
@@ -5691,5 +5177,2074 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "**_suspendUndo**"
+#~ msgstr ""
+
+#~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`isOutOfDate "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.isOutOfDate>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`timeStamp "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.timeStamp>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`isLocked "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.isLocked>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`regenerateConstraintsTogether "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.regenerateConstraintsTogether>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`vertices "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.vertices>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`edges "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.edges>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`elements "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.elements>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`nodes "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.nodes>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`instances "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.instances>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`datums "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.datums>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`features "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.features>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`featuresById "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.featuresById>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`surfaces "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.surfaces>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allSurfaces "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allSurfaces>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allInternalSurfaces "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allInternalSurfaces>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sets "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.sets>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allSets "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allSets>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allInternalSets "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allInternalSets>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`skins "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.skins>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`stringers "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.stringers>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`referencePoints "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.referencePoints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`modelInstances "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.modelInstances>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allInstances "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.allInstances>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`engineeringFeatures "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.engineeringFeatures>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`modelName "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.modelName>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`connectorOrientations "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.connectorOrientations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sectionAssignments "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.sectionAssignments>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.name>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`id <abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.id>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Instance "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.Instance>`\\ "
+#~ "\\(name\\, \\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`backup "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.backup>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`clearGeometryCache "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.clearGeometryCache>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`deleteAllFeatures "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.deleteAllFeatures>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`deleteFeatures "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.deleteFeatures>`\\"
+#~ " \\(featureNames\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`excludeFromSimulation "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.excludeFromSimulation>`\\"
+#~ " \\(instances\\, exclude\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`featurelistInfo "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.featurelistInfo>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getMassProperties "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.getMassProperties>`\\"
+#~ " \\(\\[regions\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getAngle "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.getAngle>`\\ "
+#~ "\\(plane1\\, plane2\\, line1\\, line2\\[\\, "
+#~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getCoordinates "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.getCoordinates>`\\"
+#~ " \\(entity\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getDistance "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.getDistance>`\\ "
+#~ "\\(entity1\\, entity2\\[\\, printResults\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getFacesAndVerticesOfAttachmentLines "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.getFacesAndVerticesOfAttachmentLines>`\\"
+#~ " \\(edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getSurfaceSections "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.getSurfaceSections>`\\"
+#~ " \\(surface\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importEafFile "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.importEafFile>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importParasolidFile "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.importParasolidFile>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importCatiaV5File "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.importCatiaV5File>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importEnfFile "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.importEnfFile>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importIdeasFile "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.importIdeasFile>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importProEFile "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.importProEFile>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`makeDependent "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.makeDependent>`\\"
+#~ " \\(instances\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`makeIndependent "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.makeIndependent>`\\"
+#~ " \\(instances\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`printAssignedSections "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.printAssignedSections>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`printConnectorOrientations "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.printConnectorOrientations>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`projectReferencesOntoSketch "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.projectReferencesOntoSketch>`\\"
+#~ " \\(sketch\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`queryCachedStates "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.queryCachedStates>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`regenerate "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.regenerate>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`regenerationWarnings "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.regenerationWarnings>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restore "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.restore>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resumeAllFeatures "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.resumeAllFeatures>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resumeFeatures "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.resumeFeatures>`\\"
+#~ " \\(featureNames\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resumeLastSetFeatures "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.resumeLastSetFeatures>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`rotate "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.rotate>`\\ "
+#~ "\\(instanceList\\, axisPoint\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`translate "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.translate>`\\ "
+#~ "\\(instanceList\\, vector\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`saveGeometryCache "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.saveGeometryCache>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setValues "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.setValues>`\\ "
+#~ "\\(regenerateConstraintsTogether\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppressFeatures "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.suppressFeatures>`\\"
+#~ " \\(featureNames\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`unlinkInstances "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.unlinkInstances>`\\"
+#~ " \\(instances\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`writeAcisFile "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.writeAcisFile>`\\"
+#~ " \\(fileName\\[\\, version\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`writeCADParameters "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.writeCADParameters>`\\"
+#~ " \\(paramFile\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lock "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.lock>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`unlock "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.unlock>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setMeshNumberingControl "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.setMeshNumberingControl>`\\"
+#~ " \\(instances\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyMeshPattern "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.copyMeshPattern>`\\"
+#~ " \\(\\[elements\\, faces\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`smoothNodes "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.smoothNodes>`\\ "
+#~ "\\(\\[nodes\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AttachmentLines "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.AttachmentLines>`\\"
+#~ " \\(name\\, points\\, sourceFaces\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Coaxial "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.Coaxial>`\\ "
+#~ "\\(movableAxis\\, fixedAxis\\, flip\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`CoincidentPoint "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.CoincidentPoint>`\\"
+#~ " \\(movablePoint\\, fixedPoint\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`EdgeToEdge "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.EdgeToEdge>`\\ "
+#~ "\\(movableAxis\\, fixedAxis\\, flip\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`FaceToFace "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.FaceToFace>`\\ "
+#~ "\\(movablePlane\\, fixedPlane\\, flip\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ParallelCsys "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.ParallelCsys>`\\"
+#~ " \\(movableCsys\\, fixedCsys\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ParallelEdge "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.ParallelEdge>`\\"
+#~ " \\(movableAxis\\, fixedAxis\\, flip\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ParallelFace "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.ParallelFace>`\\"
+#~ " \\(movablePlane\\, fixedPlane\\, flip\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AttachmentPoints "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.AttachmentPoints>`\\"
+#~ " \\(name\\, points\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AttachmentPointsAlongDirection "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.AttachmentPointsAlongDirection>`\\"
+#~ " \\(name\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AttachmentPointsOffsetFromEdges "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.AttachmentPointsOffsetFromEdges>`\\"
+#~ " \\(name\\, edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByCylFace "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByCylFace>`\\"
+#~ " \\(face\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByNormalToPlane "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByNormalToPlane>`\\"
+#~ " \\(plane\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByParToEdge "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByParToEdge>`\\"
+#~ " \\(edge\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByPrincipalAxis "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByPrincipalAxis>`\\"
+#~ " \\(principalAxis\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByRotation "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByRotation>`\\"
+#~ " \\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByThreePoint "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByThreePoint>`\\"
+#~ " \\(point1\\, point2\\, point3\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByThruEdge "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByThruEdge>`\\"
+#~ " \\(edge\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByTwoPlane "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByTwoPlane>`\\"
+#~ " \\(plane1\\, plane2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByTwoPoint "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumAxisByTwoPoint>`\\"
+#~ " \\(point1\\, point2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByDefault "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumCsysByDefault>`\\"
+#~ " \\(coordSysType\\[\\, name\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByOffset "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumCsysByOffset>`\\"
+#~ " \\(coordSysType\\, ...\\[\\, name\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByThreePoints "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumCsysByThreePoints>`\\"
+#~ " \\(coordSysType\\, origin\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByTwoLines "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumCsysByTwoLines>`\\"
+#~ " \\(coordSysType\\, line1\\, line2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByPrincipalPlane "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPlaneByPrincipalPlane>`\\"
+#~ " \\(principalPlane\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByOffset "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPlaneByOffset>`\\"
+#~ " \\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByRotation "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPlaneByRotation>`\\"
+#~ " \\(plane\\, axis\\, angle\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByThreePoints "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPlaneByThreePoints>`\\"
+#~ " \\(point1\\, point2\\, point3\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByLinePoint "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPlaneByLinePoint>`\\"
+#~ " \\(line\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByPointNormal "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPlaneByPointNormal>`\\"
+#~ " \\(point\\, normal\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByTwoPoint "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPlaneByTwoPoint>`\\"
+#~ " \\(point1\\, point2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByCoordinate "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPointByCoordinate>`\\"
+#~ " \\(coords\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByOffset "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPointByOffset>`\\"
+#~ " \\(point\\, vector\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByMidPoint "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPointByMidPoint>`\\"
+#~ " \\(point1\\, point2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByOnFace "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPointByOnFace>`\\"
+#~ " \\(face\\, edge1\\, offset1\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByEdgeParam "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPointByEdgeParam>`\\"
+#~ " \\(edge\\, parameter\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByProjOnEdge "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPointByProjOnEdge>`\\"
+#~ " \\(point\\, edge\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByProjOnFace "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.DatumPointByProjOnFace>`\\"
+#~ " \\(point\\, face\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`MakeSketchTransform "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.MakeSketchTransform>`\\"
+#~ " \\(sketchPlane\\[\\, origin\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByDatumPlane "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByDatumPlane>`\\"
+#~ " \\(cells\\, datumPlane\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByExtendFace "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByExtendFace>`\\"
+#~ " \\(cells\\, extendFace\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByExtrudeEdge "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByExtrudeEdge>`\\"
+#~ " \\(cells\\, edges\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPatchNCorners "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByPatchNCorners>`\\"
+#~ " \\(cell\\, cornerPoints\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPatchNEdges "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByPatchNEdges>`\\"
+#~ " \\(cell\\, edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPlaneNormalToEdge "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByPlaneNormalToEdge>`\\"
+#~ " \\(cells\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPlanePointNormal "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByPlanePointNormal>`\\"
+#~ " \\(cells\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPlaneThreePoints "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellByPlaneThreePoints>`\\"
+#~ " \\(cells\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellBySweepEdge "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionCellBySweepEdge>`\\"
+#~ " \\(cells\\, edges\\, sweepPath\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionEdgeByDatumPlane "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionEdgeByDatumPlane>`\\"
+#~ " \\(edges\\, datumPlane\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionEdgeByParam "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionEdgeByParam>`\\"
+#~ " \\(edges\\, parameter\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionEdgeByPoint "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionEdgeByPoint>`\\"
+#~ " \\(edge\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByAuto "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByAuto>`\\"
+#~ " \\(face\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByCurvedPathEdgeParams "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByCurvedPathEdgeParams>`\\"
+#~ " \\(face\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByCurvedPathEdgePoints "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByCurvedPathEdgePoints>`\\"
+#~ " \\(face\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByDatumPlane "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByDatumPlane>`\\"
+#~ " \\(faces\\, datumPlane\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByExtendFace "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByExtendFace>`\\"
+#~ " \\(faces\\, extendFace\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByIntersectFace "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByIntersectFace>`\\"
+#~ " \\(faces\\, cuttingFaces\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByProjectingEdges "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByProjectingEdges>`\\"
+#~ " \\(faces\\, edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByShortestPath "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceByShortestPath>`\\"
+#~ " \\(faces\\, point1\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketch "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceBySketch>`\\"
+#~ " \\(faces\\, sketch\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketchDistance "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceBySketchDistance>`\\"
+#~ " \\(faces\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketchRefPoint "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceBySketchRefPoint>`\\"
+#~ " \\(faces\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketchThruAll "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.PartitionFaceBySketchThruAll>`\\"
+#~ " \\(faces\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ReferencePoint "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.ReferencePoint>`\\"
+#~ " \\(point\\[\\, instanceName\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`RemoveWireEdges "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.RemoveWireEdges>`\\"
+#~ " \\(wireEdgeList\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`WirePolyLine "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.WirePolyLine>`\\"
+#~ " \\(points\\[\\, mergeType\\, meshable\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`isSuppressed "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.isSuppressed>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.resume>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.suppress>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`geometryValidity "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.geometryValidity>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`isOutOfDate "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.isOutOfDate>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`timeStamp "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.timeStamp>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`vertices "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.vertices>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ignoredVertices "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.ignoredVertices>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`edges <abaqus.EditMesh.MeshEditPart.MeshEditPart.edges>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ignoredEdges "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.ignoredEdges>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`faces <abaqus.EditMesh.MeshEditPart.MeshEditPart.faces>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`cells <abaqus.EditMesh.MeshEditPart.MeshEditPart.cells>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`features "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.features>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`featuresById "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.featuresById>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`datums <abaqus.EditMesh.MeshEditPart.MeshEditPart.datums>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`elements "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.elements>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`elemFaces "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.elemFaces>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`elementFaces "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.elementFaces>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`nodes <abaqus.EditMesh.MeshEditPart.MeshEditPart.nodes>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`retainedNodes "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.retainedNodes>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`sets <abaqus.EditMesh.MeshEditPart.MeshEditPart.sets>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`allSets <abaqus.EditMesh.MeshEditPart.MeshEditPart.allSets>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allInternalSets "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.allInternalSets>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`surfaces "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.surfaces>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allSurfaces "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.allSurfaces>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allInternalSurfaces "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.allInternalSurfaces>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`skins <abaqus.EditMesh.MeshEditPart.MeshEditPart.skins>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`stringers "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.stringers>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`referencePoints "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.referencePoints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`engineeringFeatures "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.engineeringFeatures>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sectionAssignments "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.sectionAssignments>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`materialOrientations "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.materialOrientations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`compositeLayups "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.compositeLayups>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`elemEdges "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.elemEdges>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`elementEdges "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.elementEdges>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`name <abaqus.EditMesh.MeshEditPart.MeshEditPart.name>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`id <abaqus.EditMesh.MeshEditPart.MeshEditPart.id>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init__ "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.__init__>`\\ "
+#~ "\\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartFromBooleanCut "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromBooleanCut>`\\ "
+#~ "\\(name\\, instanceToBeCut\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartFromBooleanMerge "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromBooleanMerge>`\\"
+#~ " \\(name\\, instances\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartFromExtrude2DMesh "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromExtrude2DMesh>`\\"
+#~ " \\(name\\, part\\, depth\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartFromGeometryFile "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromGeometryFile>`\\"
+#~ " \\(name\\, geometryFile\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartFromInstanceMesh "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromInstanceMesh>`\\"
+#~ " \\(name\\[\\, partInstances\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartFromMesh "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromMesh>`\\ "
+#~ "\\(name\\[\\, copySets\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartFromMeshMirror "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromMeshMirror>`\\ "
+#~ "\\(name\\, part\\, point1\\, point2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartFromNodesAndElements "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromNodesAndElements>`\\"
+#~ " \\(name\\, ...\\[\\, twist\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartFromOdb "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromOdb>`\\ "
+#~ "\\(name\\, odb\\[\\, fileName\\, instance\\, "
+#~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartFromSection3DMeshByPlane "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromSection3DMeshByPlane>`\\"
+#~ " \\(name\\, part\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartFromSubstructure "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartFromSubstructure>`\\"
+#~ " \\(name\\, substructureFile\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Part2DGeomFrom2DMesh "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.Part2DGeomFrom2DMesh>`\\"
+#~ " \\(name\\, part\\, featureAngle\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setValues "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.setValues>`\\ "
+#~ "\\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`addGeomToSketch "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.addGeomToSketch>`\\ "
+#~ "\\(sketch\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`assignThickness "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.assignThickness>`\\ "
+#~ "\\(faces\\[\\, thickness\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`backup "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.backup>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`checkGeometry "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.checkGeometry>`\\ "
+#~ "\\(\\[detailed\\, reportFacetErrors\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`clearGeometryCache "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.clearGeometryCache>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`deleteAllFeatures "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteAllFeatures>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`deleteFeatures "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.deleteFeatures>`\\ "
+#~ "\\(featureNames\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getAngle "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getAngle>`\\ "
+#~ "\\(plane1\\, plane2\\, line1\\, line2\\[\\, "
+#~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getArea "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getArea>`\\ "
+#~ "\\(faces\\[\\, relativeAccuracy\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getAssociatedCADPaths "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getAssociatedCADPaths>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getCADParameters "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getCADParameters>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getCentroid "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getCentroid>`\\ "
+#~ "\\(faces\\, cells\\[\\, relativeAccuracy\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getCoordinates "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getCoordinates>`\\ "
+#~ "\\(entity\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getCurvature "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getCurvature>`\\ "
+#~ "\\(edges\\[\\, samplePoints\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getDistance "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getDistance>`\\ "
+#~ "\\(entity1\\, entity2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getLength "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getLength>`\\ "
+#~ "\\(edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getPerimeter "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getPerimeter>`\\ "
+#~ "\\(faces\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getVolume "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getVolume>`\\ "
+#~ "\\(cells\\[\\, relativeAccuracy\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getMassProperties "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getMassProperties>`\\ "
+#~ "\\(\\[regions\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getFeatureFaces "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getFeatureFaces>`\\ "
+#~ "\\(name\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getFeatureEdges "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getFeatureEdges>`\\ "
+#~ "\\(name\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getFeatureCells "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getFeatureCells>`\\ "
+#~ "\\(name\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getFeatureVertices "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.getFeatureVertices>`\\ "
+#~ "\\(name\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`isAlignedWithSketch "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.isAlignedWithSketch>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`printAssignedSections "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.printAssignedSections>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`projectEdgesOntoSketch "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.projectEdgesOntoSketch>`\\"
+#~ " \\(sketch\\, edges\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`projectReferencesOntoSketch "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.projectReferencesOntoSketch>`\\"
+#~ " \\(sketch\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`queryAttributes "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.queryAttributes>`\\ "
+#~ "\\(\\[printResults\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`queryCachedStates "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.queryCachedStates>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`queryGeometry "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.queryGeometry>`\\ "
+#~ "\\(\\[relativeAccuracy\\, printResults\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`queryRegionsMissingSections "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.queryRegionsMissingSections>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`queryDisjointPlyRegions "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.queryDisjointPlyRegions>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`regenerate "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.regenerate>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`regenerationWarnings "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.regenerationWarnings>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`removeInvalidGeometry "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.removeInvalidGeometry>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restore "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.restore>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resumeAllFeatures "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.resumeAllFeatures>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resumeFeatures "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.resumeFeatures>`\\ "
+#~ "\\(featureNames\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resumeLastSetFeatures "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.resumeLastSetFeatures>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`saveGeometryCache "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.saveGeometryCache>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setAssociatedCADPaths "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.setAssociatedCADPaths>`\\"
+#~ " \\(\\[partFile\\, rootFile\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppressFeatures "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.suppressFeatures>`\\ "
+#~ "\\(featureNames\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`writeAcisFile "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.writeAcisFile>`\\ "
+#~ "\\(fileName\\[\\, version\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`writeCADParameters "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.writeCADParameters>`\\ "
+#~ "\\(paramFile\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`writeIgesFile "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.writeIgesFile>`\\ "
+#~ "\\(fileName\\, flavor\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`writeStepFile "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.writeStepFile>`\\ "
+#~ "\\(fileName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`writeVdaFile "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.writeVdaFile>`\\ "
+#~ "\\(fileName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyMeshPattern "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.copyMeshPattern>`\\ "
+#~ "\\(elements\\, faces\\, elemFaces\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`smoothNodes "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.smoothNodes>`\\ "
+#~ "\\(nodes\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Lock "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.Lock>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Unlock "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.Unlock>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`LockForUpgrade "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.LockForUpgrade>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AutoRepair "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.AutoRepair>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AddCells "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.AddCells>`\\ "
+#~ "\\(faceList\\[\\, flipped\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AnalyticRigidSurf2DPlanar "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.AnalyticRigidSurf2DPlanar>`\\"
+#~ " \\(sketch\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AnalyticRigidSurfExtrude "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.AnalyticRigidSurfExtrude>`\\"
+#~ " \\(sketch\\[\\, depth\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AnalyticRigidSurfRevolve "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.AnalyticRigidSurfRevolve>`\\"
+#~ " \\(sketch\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AssignMidsurfaceRegion "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.AssignMidsurfaceRegion>`\\"
+#~ " \\(cellList\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`BaseSolidExtrude "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseSolidExtrude>`\\ "
+#~ "\\(sketch\\, depth\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`BaseSolidRevolve "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseSolidRevolve>`\\ "
+#~ "\\(sketch\\, angle\\[\\, pitch\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`BaseSolidSweep "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseSolidSweep>`\\ "
+#~ "\\(sketch\\, path\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`BaseShell "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseShell>`\\ "
+#~ "\\(sketch\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`BaseShellExtrude "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseShellExtrude>`\\ "
+#~ "\\(sketch\\, depth\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`BaseShellRevolve "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseShellRevolve>`\\ "
+#~ "\\(sketch\\, angle\\[\\, pitch\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`BaseShellSweep "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseShellSweep>`\\ "
+#~ "\\(sketch\\, path\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`BaseWire "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.BaseWire>`\\ "
+#~ "\\(sketch\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`BlendFaces "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.BlendFaces>`\\ "
+#~ "\\(side1\\, side2\\[\\, method\\, path\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Chamfer "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.Chamfer>`\\ "
+#~ "\\(length\\, edgeList\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Mirror "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.Mirror>`\\ "
+#~ "\\(mirrorPlane\\, keepOriginal\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ConvertToAnalytical "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.ConvertToAnalytical>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ConvertToPrecise "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.ConvertToPrecise>`\\ "
+#~ "\\(\\[method\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`CoverEdges "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.CoverEdges>`\\ "
+#~ "\\(edgeList\\[\\, tryAnalytical\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Cut <abaqus.EditMesh.MeshEditPart.MeshEditPart.Cut>`\\"
+#~ " \\(sketchPlane\\, sketchPlaneSide\\, ...\\[\\, "
+#~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`CutExtrude "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.CutExtrude>`\\ "
+#~ "\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`CutLoft "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.CutLoft>`\\ "
+#~ "\\(loftsections\\[\\, startCondition\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`CutRevolve "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.CutRevolve>`\\ "
+#~ "\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`CutSweep "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.CutSweep>`\\ "
+#~ "\\(path\\, profile\\[\\, pathPlane\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ExtendFaces "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.ExtendFaces>`\\ "
+#~ "\\(\\[faces\\, extendAlong\\, distance\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`FaceFromElementFaces "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.FaceFromElementFaces>`\\"
+#~ " \\(elementFaces\\[\\, stitch\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`HoleBlindFromEdges "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.HoleBlindFromEdges>`\\ "
+#~ "\\(plane\\, planeSide\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`HoleFromEdges "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.HoleFromEdges>`\\ "
+#~ "\\(diameter\\, edge1\\, distance1\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`HoleThruAllFromEdges "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.HoleThruAllFromEdges>`\\"
+#~ " \\(plane\\, planeSide\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`MergeEdges "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.MergeEdges>`\\ "
+#~ "\\(\\[edgeList\\, extendSelection\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`OffsetFaces "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.OffsetFaces>`\\ "
+#~ "\\(faceList\\[\\, distance\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`RemoveCells "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.RemoveCells>`\\ "
+#~ "\\(cellList\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`RemoveFaces "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.RemoveFaces>`\\ "
+#~ "\\(faceList\\[\\, deleteCells\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`RemoveFacesAndStitch "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.RemoveFacesAndStitch>`\\"
+#~ " \\(faceList\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`RemoveRedundantEntities "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.RemoveRedundantEntities>`\\"
+#~ " \\(\\[vertexList\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`RepairFaceNormals "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.RepairFaceNormals>`\\ "
+#~ "\\(\\[faceList\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`RepairInvalidEdges "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.RepairInvalidEdges>`\\ "
+#~ "\\(edgeList\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`RepairSliver "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.RepairSliver>`\\ "
+#~ "\\(face\\, point1\\, point2\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`RepairSmallEdges "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.RepairSmallEdges>`\\ "
+#~ "\\(edgeList\\[\\, toleranceChecks\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`RepairSmallFaces "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.RepairSmallFaces>`\\ "
+#~ "\\(faceList\\[\\, toleranceChecks\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ReplaceFaces "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.ReplaceFaces>`\\ "
+#~ "\\(faceList\\[\\, stitch\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Round "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.Round>`\\ "
+#~ "\\(radius\\, edgeList\\, vertexList\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Shell "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.Shell>`\\ "
+#~ "\\(sketchPlane\\, sketchPlaneSide\\, ...\\[\\, "
+#~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ShellExtrude "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.ShellExtrude>`\\ "
+#~ "\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ShellLoft "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.ShellLoft>`\\ "
+#~ "\\(loftsections\\[\\, startCondition\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ShellRevolve "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.ShellRevolve>`\\ "
+#~ "\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ShellSweep "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.ShellSweep>`\\ "
+#~ "\\(path\\, profile\\[\\, pathPlane\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`SolidExtrude "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.SolidExtrude>`\\ "
+#~ "\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`SolidLoft "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.SolidLoft>`\\ "
+#~ "\\(loftsections\\[\\, startCondition\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`SolidRevolve "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.SolidRevolve>`\\ "
+#~ "\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`SolidSweep "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.SolidSweep>`\\ "
+#~ "\\(path\\, profile\\[\\, pathPlane\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Stitch "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.Stitch>`\\ "
+#~ "\\(\\[edgeList\\, stitchTolerance\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Wire "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.Wire>`\\ "
+#~ "\\(sketchPlane\\, sketchPlaneSide\\, ...\\[\\, "
+#~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`WireSpline "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.WireSpline>`\\ "
+#~ "\\(points\\[\\, mergeType\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`WirePolyLine "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.WirePolyLine>`\\ "
+#~ "\\(points\\[\\, mergeType\\, meshable\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`WireFromEdge "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.WireFromEdge>`\\ "
+#~ "\\(edgeList\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AttachmentPoints "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.AttachmentPoints>`\\ "
+#~ "\\(name\\, points\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AttachmentPointsAlongDirection "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.AttachmentPointsAlongDirection>`\\"
+#~ " \\(name\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AttachmentPointsOffsetFromEdges "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.AttachmentPointsOffsetFromEdges>`\\"
+#~ " \\(name\\, edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByCylFace "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByCylFace>`\\ "
+#~ "\\(face\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByNormalToPlane "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByNormalToPlane>`\\"
+#~ " \\(plane\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByParToEdge "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByParToEdge>`\\"
+#~ " \\(edge\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByPrincipalAxis "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByPrincipalAxis>`\\"
+#~ " \\(principalAxis\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByRotation "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByRotation>`\\ "
+#~ "\\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByThreePoint "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByThreePoint>`\\"
+#~ " \\(point1\\, point2\\, point3\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByThruEdge "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByThruEdge>`\\ "
+#~ "\\(edge\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByTwoPlane "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByTwoPlane>`\\ "
+#~ "\\(plane1\\, plane2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByTwoPoint "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumAxisByTwoPoint>`\\ "
+#~ "\\(point1\\, point2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByDefault "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumCsysByDefault>`\\ "
+#~ "\\(coordSysType\\[\\, name\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByOffset "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumCsysByOffset>`\\ "
+#~ "\\(coordSysType\\, ...\\[\\, name\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByThreePoints "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumCsysByThreePoints>`\\"
+#~ " \\(coordSysType\\, origin\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByTwoLines "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumCsysByTwoLines>`\\ "
+#~ "\\(coordSysType\\, line1\\, line2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByPrincipalPlane "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPlaneByPrincipalPlane>`\\"
+#~ " \\(principalPlane\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByOffset "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPlaneByOffset>`\\ "
+#~ "\\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByRotation "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPlaneByRotation>`\\"
+#~ " \\(plane\\, axis\\, angle\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByThreePoints "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPlaneByThreePoints>`\\"
+#~ " \\(point1\\, point2\\, point3\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByLinePoint "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPlaneByLinePoint>`\\"
+#~ " \\(line\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByPointNormal "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPlaneByPointNormal>`\\"
+#~ " \\(point\\, normal\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByTwoPoint "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPlaneByTwoPoint>`\\"
+#~ " \\(point1\\, point2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByCoordinate "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPointByCoordinate>`\\"
+#~ " \\(coords\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByOffset "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPointByOffset>`\\ "
+#~ "\\(point\\, vector\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByMidPoint "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPointByMidPoint>`\\"
+#~ " \\(point1\\, point2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByOnFace "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPointByOnFace>`\\ "
+#~ "\\(face\\, edge1\\, offset1\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByEdgeParam "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPointByEdgeParam>`\\"
+#~ " \\(edge\\, parameter\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByProjOnEdge "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPointByProjOnEdge>`\\"
+#~ " \\(point\\, edge\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByProjOnFace "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.DatumPointByProjOnFace>`\\"
+#~ " \\(point\\, face\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`MakeSketchTransform "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.MakeSketchTransform>`\\ "
+#~ "\\(sketchPlane\\[\\, origin\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByDatumPlane "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByDatumPlane>`\\"
+#~ " \\(cells\\, datumPlane\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByExtendFace "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByExtendFace>`\\"
+#~ " \\(cells\\, extendFace\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByExtrudeEdge "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByExtrudeEdge>`\\"
+#~ " \\(cells\\, edges\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPatchNCorners "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByPatchNCorners>`\\"
+#~ " \\(cell\\, cornerPoints\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPatchNEdges "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByPatchNEdges>`\\"
+#~ " \\(cell\\, edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPlaneNormalToEdge "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByPlaneNormalToEdge>`\\"
+#~ " \\(cells\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPlanePointNormal "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByPlanePointNormal>`\\"
+#~ " \\(cells\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPlaneThreePoints "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellByPlaneThreePoints>`\\"
+#~ " \\(cells\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellBySweepEdge "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionCellBySweepEdge>`\\"
+#~ " \\(cells\\, edges\\, sweepPath\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionEdgeByDatumPlane "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionEdgeByDatumPlane>`\\"
+#~ " \\(edges\\, datumPlane\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionEdgeByParam "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionEdgeByParam>`\\"
+#~ " \\(edges\\, parameter\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionEdgeByPoint "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionEdgeByPoint>`\\"
+#~ " \\(edge\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByAuto "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByAuto>`\\ "
+#~ "\\(face\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByCurvedPathEdgeParams "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByCurvedPathEdgeParams>`\\"
+#~ " \\(face\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByCurvedPathEdgePoints "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByCurvedPathEdgePoints>`\\"
+#~ " \\(face\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByDatumPlane "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByDatumPlane>`\\"
+#~ " \\(faces\\, datumPlane\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByExtendFace "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByExtendFace>`\\"
+#~ " \\(faces\\, extendFace\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByIntersectFace "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByIntersectFace>`\\"
+#~ " \\(faces\\, cuttingFaces\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByProjectingEdges "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByProjectingEdges>`\\"
+#~ " \\(faces\\, edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByShortestPath "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceByShortestPath>`\\"
+#~ " \\(faces\\, point1\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketch "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceBySketch>`\\"
+#~ " \\(faces\\, sketch\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketchDistance "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceBySketchDistance>`\\"
+#~ " \\(faces\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketchRefPoint "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceBySketchRefPoint>`\\"
+#~ " \\(faces\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketchThruAll "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.PartitionFaceBySketchThruAll>`\\"
+#~ " \\(faces\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ReferencePoint "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.ReferencePoint>`\\ "
+#~ "\\(point\\[\\, instanceName\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`RemoveWireEdges "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.RemoveWireEdges>`\\ "
+#~ "\\(wireEdgeList\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`isSuppressed "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.isSuppressed>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.resume>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.EditMesh.MeshEditPart.MeshEditPart.suppress>`\\ \\(\\)"
 #~ msgstr ""
 
