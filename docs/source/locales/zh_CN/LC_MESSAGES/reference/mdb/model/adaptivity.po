@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 00:22+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,10 @@ msgstr ""
 
 #: ../../reference/mdb/model/adaptivity.rst:9
 msgid "Create adaptivity mesh control features"
+msgstr ""
+
+#: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel:1 of
+msgid "Bases: :py:class:`~abaqus.Model.ModelBase.ModelBase`"
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel:1 of
@@ -82,7 +86,7 @@ msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.name>`\\"
+msgid ":py:obj:`name <abaqus.Model.ModelBase.ModelBase.name>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1 ../../None:55:<autosummary>:1
@@ -92,7 +96,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`stefanBoltzmann "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.stefanBoltzmann>`\\"
+"<abaqus.Model.ModelBase.ModelBase.stefanBoltzmann>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -100,9 +104,7 @@ msgid "None or a Float specifying the Stefan-Boltzmann constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`absoluteZero "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.absoluteZero>`\\"
+msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -112,7 +114,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`waveFormulation "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.waveFormulation>`\\"
+"<abaqus.Model.ModelBase.ModelBase.waveFormulation>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -122,9 +124,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`universalGas "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.universalGas>`\\"
+msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -134,7 +134,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`noPartsInputFile "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.noPartsInputFile>`\\"
+"<abaqus.Model.ModelBase.ModelBase.noPartsInputFile>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -146,7 +146,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`restartIncrement "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.restartIncrement>`\\"
+"<abaqus.Model.ModelBase.ModelBase.restartIncrement>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -158,7 +158,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`endRestartStep "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.endRestartStep>`\\"
+"<abaqus.Model.ModelBase.ModelBase.endRestartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -168,9 +168,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`shellToSolid "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.shellToSolid>`\\"
+msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -180,7 +178,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`lastChangedCount "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.lastChangedCount>`\\"
+"<abaqus.Model.ModelBase.ModelBase.lastChangedCount>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -190,9 +188,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`description "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.description>`\\"
+msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -200,9 +196,7 @@ msgid "A String specifying the purpose and contents of the Model object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartJob "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.restartJob>`\\"
+msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -210,9 +204,7 @@ msgid "A String specifying the name of the job that generated the restart data."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartStep "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.restartStep>`\\"
+msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -222,9 +214,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`globalJob "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.globalJob>`\\"
+msgid ":py:obj:`globalJob <abaqus.Model.ModelBase.ModelBase.globalJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -236,7 +226,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`copyConstraints "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.copyConstraints>`\\"
+"<abaqus.Model.ModelBase.ModelBase.copyConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -248,7 +238,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`copyConnectors "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.copyConnectors>`\\"
+"<abaqus.Model.ModelBase.ModelBase.copyConnectors>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -260,7 +250,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`copyInteractions "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.copyInteractions>`\\"
+"<abaqus.Model.ModelBase.ModelBase.copyInteractions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -270,9 +260,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`keywordBlock "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.keywordBlock>`\\"
+msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -280,9 +268,7 @@ msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`rootAssembly "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.rootAssembly>`\\"
+msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -290,9 +276,7 @@ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`amplitudes "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.amplitudes>`\\"
+msgid ":py:obj:`amplitudes <abaqus.Model.ModelBase.ModelBase.amplitudes>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -300,9 +284,7 @@ msgid "A repository of Amplitude objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`profiles "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.profiles>`\\"
+msgid ":py:obj:`profiles <abaqus.Model.ModelBase.ModelBase.profiles>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -312,7 +294,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`boundaryConditions "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.boundaryConditions>`\\"
+"<abaqus.Model.ModelBase.ModelBase.boundaryConditions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -320,9 +302,7 @@ msgid "A repository of BoundaryCondition objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`constraints "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.constraints>`\\"
+msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -332,7 +312,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`analyticalFields "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.analyticalFields>`\\"
+"<abaqus.Model.ModelBase.ModelBase.analyticalFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -342,7 +322,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`discreteFields "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.discreteFields>`\\"
+"<abaqus.Model.ModelBase.ModelBase.discreteFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -352,7 +332,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`predefinedFields "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.predefinedFields>`\\"
+"<abaqus.Model.ModelBase.ModelBase.predefinedFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -360,9 +340,7 @@ msgid "A repository of PredefinedField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`interactions "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.interactions>`\\"
+msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -372,7 +350,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`interactionProperties "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.interactionProperties>`\\"
+"<abaqus.Model.ModelBase.ModelBase.interactionProperties>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -382,7 +360,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`contactControls "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.contactControls>`\\"
+"<abaqus.Model.ModelBase.ModelBase.contactControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -392,7 +370,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`contactInitializations "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.contactInitializations>`\\"
+"<abaqus.Model.ModelBase.ModelBase.contactInitializations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -402,7 +380,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`contactStabilizations "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.contactStabilizations>`\\"
+"<abaqus.Model.ModelBase.ModelBase.contactStabilizations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -412,7 +390,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`linkedInstances "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.linkedInstances>`\\"
+"<abaqus.Model.ModelBase.ModelBase.linkedInstances>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -423,9 +401,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`linkedParts "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.linkedParts>`\\"
+msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -436,9 +412,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`loads "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.loads>`\\"
+msgid ":py:obj:`loads <abaqus.Model.ModelBase.ModelBase.loads>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -446,9 +420,7 @@ msgid "A repository of Load objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`materials "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.materials>`\\"
+msgid ":py:obj:`materials <abaqus.Model.ModelBase.ModelBase.materials>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -456,9 +428,7 @@ msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`calibrations "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.calibrations>`\\"
+msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -466,9 +436,7 @@ msgid "A repository of Calibration objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`sections "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.sections>`\\"
+msgid ":py:obj:`sections <abaqus.Model.ModelBase.ModelBase.sections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -478,7 +446,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`remeshingRules "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.remeshingRules>`\\"
+"<abaqus.Model.ModelBase.ModelBase.remeshingRules>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -486,9 +454,7 @@ msgid "A repository of RemeshingRule objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`sketches "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.sketches>`\\"
+msgid ":py:obj:`sketches <abaqus.Model.ModelBase.ModelBase.sketches>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -496,9 +462,7 @@ msgid "A repository of ConstrainedSketch objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`parts "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.parts>`\\"
+msgid ":py:obj:`parts <abaqus.Model.ModelBase.ModelBase.parts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -506,9 +470,7 @@ msgid "A repository of Part objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`steps "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.steps>`\\"
+msgid ":py:obj:`steps <abaqus.Model.ModelBase.ModelBase.steps>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -518,7 +480,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`featureOptions "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.featureOptions>`\\"
+"<abaqus.Model.ModelBase.ModelBase.featureOptions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -528,7 +490,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshConstraints "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveMeshConstraints>`\\"
+"<abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -538,7 +500,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshControls "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveMeshControls>`\\"
+"<abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -546,9 +508,7 @@ msgid "A repository of AdaptiveMeshControl objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`timePoints "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.timePoints>`\\"
+msgid ":py:obj:`timePoints <abaqus.Model.ModelBase.ModelBase.timePoints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -556,9 +516,7 @@ msgid "A repository of TimePoint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`filters "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.filters>`\\"
+msgid ":py:obj:`filters <abaqus.Model.ModelBase.ModelBase.filters>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -568,7 +526,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`integratedOutputSections "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.integratedOutputSections>`\\"
+"<abaqus.Model.ModelBase.ModelBase.integratedOutputSections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -578,7 +536,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`fieldOutputRequests "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.fieldOutputRequests>`\\"
+"<abaqus.Model.ModelBase.ModelBase.fieldOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -588,7 +546,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`historyOutputRequests "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.historyOutputRequests>`\\"
+"<abaqus.Model.ModelBase.ModelBase.historyOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -598,7 +556,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`optimizationTasks "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.optimizationTasks>`\\"
+"<abaqus.Model.ModelBase.ModelBase.optimizationTasks>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -608,7 +566,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`tableCollections "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.tableCollections>`\\"
+"<abaqus.Model.ModelBase.ModelBase.tableCollections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -618,7 +576,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`eventSeriesTypes "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.eventSeriesTypes>`\\"
+"<abaqus.Model.ModelBase.ModelBase.eventSeriesTypes>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -628,7 +586,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`eventSeriesDatas "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.eventSeriesDatas>`\\"
+"<abaqus.Model.ModelBase.ModelBase.eventSeriesDatas>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -689,6 +647,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1 ../../None:8:<autosummary>:1
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:1
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl:1 of
 msgid "This method creates an AdaptiveMeshControl object."
 msgstr ""
@@ -701,8 +660,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:5:<autosummary>:1 ../../None:8:<autosummary>:1
-#: ../../None:9:<autosummary>:1
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint:1
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:1
 #: of
 msgid "This method creates a DisplacementAdaptiveMeshConstraint object."
 msgstr ""
@@ -715,7 +674,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:6:<autosummary>:1 ../../None:8:<autosummary>:1
-#: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:1 of
+#: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:1
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:1 of
 msgid "This method creates a RemeshingRule object."
 msgstr ""
 
@@ -727,16 +687,15 @@ msgid ""
 msgstr ""
 
 #: ../../None:5:<autosummary>:1 ../../None:8:<autosummary>:1
-#: ../../None:9:<autosummary>:1
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:1
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:1
 #: of
 msgid "This method creates a VelocityAdaptiveMeshConstraint object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid ""
-":py:obj:`__init__ "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.__init__>`\\ "
+":py:obj:`__init__ <abaqus.Model.ModelBase.ModelBase.__init__>`\\ "
 "\\(name\\[\\, description\\, ...\\]\\)"
 msgstr ""
 
@@ -747,8 +706,8 @@ msgstr ""
 #: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`ModelFromInputFile "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.ModelFromInputFile>`\\"
-" \\(name\\, inputFileName\\)"
+"<abaqus.Model.ModelBase.ModelBase.ModelFromInputFile>`\\ \\(name\\, "
+"inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -760,8 +719,8 @@ msgstr ""
 #: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`ModelFromOdbFile "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.ModelFromOdbFile>`\\ "
-"\\(name\\, odbFileName\\)"
+"<abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile>`\\ \\(name\\, "
+"odbFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -773,8 +732,8 @@ msgstr ""
 #: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`ModelFromNastranFile "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.ModelFromNastranFile>`\\"
-" \\(modelName\\, inputFileName\\)"
+"<abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ "
+"\\(modelName\\, inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -786,8 +745,7 @@ msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid ""
-":py:obj:`setValues "
-"<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.setValues>`\\ "
+":py:obj:`setValues <abaqus.Model.ModelBase.ModelBase.setValues>`\\ "
 "\\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
 msgstr ""
 
@@ -796,6 +754,7 @@ msgid "This method modifies the Model object."
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint:1
+#: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__init__:1
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshConstraint:1
 #: of
 msgid ""
@@ -806,18 +765,31 @@ msgid ""
 "all objects derived from the AdaptiveMeshConstraint object."
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__init__:8
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:8
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:4
+#: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__:4
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult:5
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult:5
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__:4
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshConstraint:8
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl:4
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint:4
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:4
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:4
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration:4
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__:4
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:8
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain:7
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:11
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:11
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:4
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:2
+#: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__init__:5
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:4
+#: abaqus.Adaptivity.RuleResult.RuleResult.__init__:5
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:4
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:11
 #: of
 msgid "This function can be accessed by::"
 msgstr ""
@@ -830,13 +802,18 @@ msgid ""
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adaptivemeshconstraintpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__init__
 #: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.deactivate
 #: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.delete
 #: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.move
 #: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.reset
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues
+#: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshConstraint
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint
@@ -844,33 +821,45 @@ msgstr ""
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveRemesh
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.setValues
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.submit
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValues
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValuesInStep
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__
+#: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__init__
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues
+#: abaqus.Adaptivity.RuleResult.RuleResult.__init__
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.setValues
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.setValuesInStep
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__
 #: of
 msgid "Parameters"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1 ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__init__:16
 #: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.name:1
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshConstraint:16
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint:12
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:12
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:12
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.name:1
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:12
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.name:1
 #: of
 msgid "A String specifying the adaptive mesh constraint repository key."
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__init__:18
 #: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.category:1
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshConstraint:18
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.category:1
@@ -882,11 +871,14 @@ msgid ""
 msgstr ""
 
 #: ../../None:6:<autosummary>:1 ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__init__:20
 #: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.region:1
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshConstraint:21
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint:17
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:17
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:17
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.region:1
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:17
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.region:1
 #: of
 msgid ""
@@ -894,6 +886,7 @@ msgid ""
 "to which the adaptive mesh constraint is applied."
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__init__:22
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshConstraint:23
 #: of
 msgid ""
@@ -903,8 +896,11 @@ msgid ""
 "default value is None."
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__
+#: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshConstraint
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint
@@ -912,7 +908,14 @@ msgstr ""
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveRemesh
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration
-#: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain of
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__
+#: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__
+#: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__init__
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__
+#: abaqus.Adaptivity.RuleResult.RuleResult.__init__
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__
+#: of
 msgid "Returns"
 msgstr ""
 
@@ -924,8 +927,11 @@ msgid ""
 " object"
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__
+#: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshConstraint
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint
@@ -933,7 +939,14 @@ msgstr ""
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveRemesh
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration
-#: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain of
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__
+#: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__
+#: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__init__
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__
+#: abaqus.Adaptivity.RuleResult.RuleResult.__init__
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__
+#: of
 msgid "Return type"
 msgstr ""
 
@@ -950,14 +963,17 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:12
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.name:1
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl:12
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:12
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:12
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.name:1 of
 msgid "A String specifying the name of the object."
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:14
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.remapping:1
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:7
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl:14 of
@@ -968,6 +984,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:18
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:11
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.smoothingAlgorithm:1
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl:18 of
@@ -978,6 +995,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:21
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:14
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.smoothingPriority:1
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl:21 of
@@ -999,6 +1017,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:30
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.momentumAdvection:1
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:23
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl:30 of
@@ -1009,6 +1028,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:34
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.meshingPredictor:1
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:27
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl:34 of
@@ -1025,6 +1045,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:40
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:33
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.volumetricSmoothingWeight:1
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl:40 of
@@ -1034,6 +1055,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:43
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.laplacianSmoothingWeight:1
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:36
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl:43 of
@@ -1043,6 +1065,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:46
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.equipotentialSmoothingWeight:1
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:39
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl:46 of
@@ -1058,6 +1081,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:52
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.originalConfigurationProjectionWeight:1
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:45
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl:52 of
@@ -1067,6 +1091,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:55
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:48
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.standardVolumetricSmoothingWeight:1
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl:55 of
@@ -1081,6 +1106,7 @@ msgid ""
 " object"
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:59
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshControl:59 of
 msgid ":class:`AdaptiveMeshControl`"
 msgstr ""
@@ -1095,6 +1121,8 @@ msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint:14
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:14
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:14
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:14
 #: of
 msgid ""
 "A String specifying the name of the step in which the adaptive mesh "
@@ -1112,6 +1140,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint:24
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:24
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValues:13
 #: of
 msgid ""
@@ -1121,6 +1150,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint:27
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:27
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValues:16
 #: of
 msgid ""
@@ -1130,6 +1160,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint:30
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:30
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValues:19
 #: of
 msgid ""
@@ -1139,6 +1170,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint:34
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:34
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValues:23
 #: of
 msgid ""
@@ -1148,6 +1180,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint:38
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:38
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValues:27
 #: of
 msgid ""
@@ -1158,7 +1191,9 @@ msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint:42
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:42
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:42
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValues:31
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:42
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.setValues:31
 #: of
 msgid ""
@@ -1171,7 +1206,9 @@ msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint:47
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:51
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:47
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValues:36
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:51
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.setValues:40
 #: of
 msgid ""
@@ -1184,8 +1221,10 @@ msgstr ""
 #: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.localCsys:1
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint:51
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:47
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:51
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.localCsys:1
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValues:40
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:47
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.localCsys:1
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.setValues:36
 #: of
@@ -1205,6 +1244,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint:56
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:56
 #: of
 msgid ":class:`DisplacementAdaptiveMeshConstraint`"
 msgstr ""
@@ -1218,6 +1258,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:14
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:14
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.stepName:1 of
 msgid ""
 "A String specifying the name of the step in which resizing should occur "
@@ -1226,6 +1267,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:16
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:16
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.variables:1 of
 msgid ""
 "A sequence of Strings specifying the output request variables that Abaqus"
@@ -1234,6 +1276,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:19
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:19
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.description:1
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:7 of
 msgid ""
@@ -1243,6 +1286,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:22
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:22
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.region:1
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:10 of
 msgid ""
@@ -1253,6 +1297,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:26
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:26
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:14
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.sizingMethod:1 of
 msgid ""
@@ -1265,6 +1310,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:31
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:31
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.errorTarget:1
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:19 of
 msgid ""
@@ -1276,6 +1322,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:36
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:36
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.maxSolutionErrorTarget:1
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:24 of
 msgid ""
@@ -1288,6 +1335,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:41
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:41
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.minSolutionErrorTarget:1
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:29 of
 msgid ""
@@ -1300,6 +1348,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:46
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:46
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.meshBias:1
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:34 of
 msgid ""
@@ -1312,6 +1361,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:51
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:51
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.minElementSize:1
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:39 of
 msgid ""
@@ -1321,6 +1371,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:53
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:53
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.maxElementSize:1
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:41 of
 msgid ""
@@ -1330,6 +1381,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:55
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:55
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.outputFrequency:1
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:43 of
 msgid ""
@@ -1341,6 +1393,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:59
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:59
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:47
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.specifyMinSize:1 of
 msgid ""
@@ -1351,6 +1404,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:62
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:62
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:50
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.specifyMaxSize:1 of
 msgid ""
@@ -1361,6 +1415,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:65
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:65
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.coarseningFactor:1
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:53 of
 msgid ""
@@ -1372,6 +1427,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:69
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:69
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.refinementFactor:1
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:57 of
 msgid ""
@@ -1383,6 +1439,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:73
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:73
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.elementCountLimit:1
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:61 of
 msgid ""
@@ -1395,7 +1452,8 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Adaptivity.RemeshingRule.RemeshingRule` object"
 msgstr ""
 
-#: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:78 of
+#: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.RemeshingRule:78
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:78 of
 msgid ":class:`RemeshingRule`"
 msgstr ""
 
@@ -1408,6 +1466,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:19
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:19
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.setValues:8
 #: of
 msgid ""
@@ -1419,6 +1478,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:24
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:24
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.setValues:13
 #: of
 msgid ""
@@ -1428,6 +1488,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:27
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:27
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.setValues:16
 #: of
 msgid ""
@@ -1437,6 +1498,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:30
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:30
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.setValues:19
 #: of
 msgid ""
@@ -1446,6 +1508,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:34
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:34
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.setValues:23
 #: of
 msgid ""
@@ -1455,6 +1518,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:38
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:38
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.setValues:27
 #: of
 msgid ""
@@ -1472,6 +1536,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:56
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:56
 #: of
 msgid ":class:`VelocityAdaptiveMeshConstraint`"
 msgstr ""
@@ -1489,6 +1554,7 @@ msgid ""
 "results."
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__:24
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveRemesh:10
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration:24
 #: of
@@ -1497,14 +1563,19 @@ msgid ""
 " object."
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__:25
 #: abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveRemesh:11
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration:25
 #: of
 msgid ":class:`AdaptivityIteration`"
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:18
+#: ../../reference/mdb/model/adaptivity.rst:20
 msgid "Create adaptivity mesh state features"
+msgstr ""
+
+#: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep:1 of
+msgid "Bases: :py:class:`~abaqus.Step.StepBase.StepBase`"
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep:1 of
@@ -1522,13 +1593,11 @@ msgid ""
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.name>`\\"
+msgid ":py:obj:`name <abaqus.Step.StepBase.StepBase.name>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
-msgid ""
-":py:obj:`explicit "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.explicit>`\\"
+msgid ":py:obj:`explicit <abaqus.Step.StepBase.StepBase.explicit>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1539,9 +1608,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
-msgid ""
-":py:obj:`perturbation "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.perturbation>`\\"
+msgid ":py:obj:`perturbation <abaqus.Step.StepBase.StepBase.perturbation>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1549,9 +1616,7 @@ msgid "A Boolean specifying whether the step has a perturbation procedure type."
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
-msgid ""
-":py:obj:`nonmechanical "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.nonmechanical>`\\"
+msgid ":py:obj:`nonmechanical <abaqus.Step.StepBase.StepBase.nonmechanical>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1559,9 +1624,7 @@ msgid "A Boolean specifying whether the step has a mechanical procedure type."
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
-msgid ""
-":py:obj:`procedureType "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.procedureType>`\\"
+msgid ":py:obj:`procedureType <abaqus.Step.StepBase.StepBase.procedureType>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1569,9 +1632,7 @@ msgid "A SymbolicConstant specifying the Abaqus procedure."
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
-msgid ""
-":py:obj:`suppressed "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.suppressed>`\\"
+msgid ":py:obj:`suppressed <abaqus.Step.StepBase.StepBase.suppressed>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1581,7 +1642,7 @@ msgstr ""
 #: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`fieldOutputRequestState "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.fieldOutputRequestState>`\\"
+"<abaqus.Step.StepBase.StepBase.fieldOutputRequestState>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1591,7 +1652,7 @@ msgstr ""
 #: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`historyOutputRequestState "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.historyOutputRequestState>`\\"
+"<abaqus.Step.StepBase.StepBase.historyOutputRequestState>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1601,7 +1662,7 @@ msgstr ""
 #: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`diagnosticPrint "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.diagnosticPrint>`\\"
+"<abaqus.Step.StepBase.StepBase.diagnosticPrint>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1609,9 +1670,7 @@ msgid "A :py:class:`~abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint` object."
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
-msgid ""
-":py:obj:`monitor "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.monitor>`\\"
+msgid ":py:obj:`monitor <abaqus.Step.StepBase.StepBase.monitor>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1619,9 +1678,7 @@ msgid "A :py:class:`~abaqus.StepOutput.Monitor.Monitor` object."
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
-msgid ""
-":py:obj:`restart "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.restart>`\\"
+msgid ":py:obj:`restart <abaqus.Step.StepBase.StepBase.restart>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1631,7 +1688,7 @@ msgstr ""
 #: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshConstraintStates "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.adaptiveMeshConstraintStates>`\\"
+"<abaqus.Step.StepBase.StepBase.adaptiveMeshConstraintStates>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1641,7 +1698,7 @@ msgstr ""
 #: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshDomains "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.adaptiveMeshDomains>`\\"
+"<abaqus.Step.StepBase.StepBase.adaptiveMeshDomains>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1649,9 +1706,7 @@ msgid "A repository of AdaptiveMeshDomain objects."
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
-msgid ""
-":py:obj:`control "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.control>`\\"
+msgid ":py:obj:`control <abaqus.Step.StepBase.StepBase.control>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1659,9 +1714,7 @@ msgid "A :py:class:`~abaqus.StepMiscellaneous.Control.Control` object."
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
-msgid ""
-":py:obj:`solverControl "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.solverControl>`\\"
+msgid ":py:obj:`solverControl <abaqus.Step.StepBase.StepBase.solverControl>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1673,7 +1726,7 @@ msgstr ""
 #: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`boundaryConditionStates "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.boundaryConditionStates>`\\"
+"<abaqus.Step.StepBase.StepBase.boundaryConditionStates>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1683,7 +1736,7 @@ msgstr ""
 #: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`interactionStates "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.interactionStates>`\\"
+"<abaqus.Step.StepBase.StepBase.interactionStates>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1691,9 +1744,7 @@ msgid "A repository of InteractionState objects."
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
-msgid ""
-":py:obj:`loadStates "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.loadStates>`\\"
+msgid ":py:obj:`loadStates <abaqus.Step.StepBase.StepBase.loadStates>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1701,9 +1752,7 @@ msgid "A repository of LoadState objects."
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
-msgid ""
-":py:obj:`loadCases "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.loadCases>`\\"
+msgid ":py:obj:`loadCases <abaqus.Step.StepBase.StepBase.loadCases>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1713,7 +1762,7 @@ msgstr ""
 #: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`predefinedFieldStates "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.predefinedFieldStates>`\\"
+"<abaqus.Step.StepBase.StepBase.predefinedFieldStates>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1723,7 +1772,7 @@ msgstr ""
 #: ../../None:23:<autosummary>:1
 msgid ""
 ":py:obj:`activateElements "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.activateElements>`\\"
+"<abaqus.Step.StepBase.StepBase.activateElements>`\\"
 msgstr ""
 
 #: ../../None:23:<autosummary>:1
@@ -1789,9 +1838,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`resume "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.resume>`\\ \\(\\)"
+msgid ":py:obj:`resume <abaqus.Step.StepBase.StepBase.resume>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1799,9 +1846,7 @@ msgid "This method resumes the step that was previously suppressed."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.suppress>`\\ \\(\\)"
+msgid ":py:obj:`suppress <abaqus.Step.StepBase.StepBase.suppress>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1809,6 +1854,7 @@ msgid "This method suppresses the step."
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState:1
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:1
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:1
 #: of
 msgid ""
@@ -1864,6 +1910,7 @@ msgid "FREED"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:25
 #: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.status:7
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:22
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:30
@@ -1873,6 +1920,7 @@ msgstr ""
 msgid "MODIFIED"
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:19
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:24
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:52
 #: of
@@ -1885,6 +1933,7 @@ msgid ""
 "DEACTIVATED_FROM_BASE_STATE - BUILT_INTO_MODES"
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:19
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:24
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:52
 #: of
@@ -1894,6 +1943,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:22
 #: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.status:4
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:27
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:55
@@ -1903,6 +1953,7 @@ msgid "NOT_YET_ACTIVE"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:23
 #: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.status:5
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:28
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:56
@@ -1912,6 +1963,7 @@ msgid "CREATED"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:24
 #: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.status:6
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:29
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:57
@@ -1921,6 +1973,7 @@ msgid "PROPAGATED"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:26
 #: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.status:8
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:31
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:59
@@ -1930,6 +1983,7 @@ msgid "DEACTIVATED"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:27
 #: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.status:9
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:32
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:60
@@ -1939,6 +1993,7 @@ msgid "NO_LONGER_ACTIVE"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:28
 #: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.status:10
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:33
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:61
@@ -1948,6 +2003,7 @@ msgid "TYPE_NOT_APPLICABLE"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:29
 #: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.status:11
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:34
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:62
@@ -1957,6 +2013,7 @@ msgid "INSTANCE_NOT_APPLICABLE"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:30
 #: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.status:12
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:35
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:63
@@ -1966,6 +2023,7 @@ msgid "PROPAGATED_FROM_BASE_STATE"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:31
 #: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.status:13
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:36
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:64
@@ -1975,6 +2033,7 @@ msgid "MODIFIED_FROM_BASE_STATE"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:32
 #: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.status:14
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:37
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:65
@@ -1984,6 +2043,7 @@ msgid "DEACTIVATED_FROM_BASE_STATE"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:33
 #: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.status:15
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:38
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:66
@@ -1992,9 +2052,12 @@ msgstr ""
 msgid "BUILT_INTO_MODES"
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:35
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshConstraintState:40
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:68
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:68
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:58
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:67
 #: of
 msgid ""
 "A String specifying the name of the amplitude reference. The String is "
@@ -2002,6 +2065,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
+#: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__:1
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain:4 of
 msgid "This method creates an AdaptiveMeshDomain object."
 msgstr ""
@@ -2014,6 +2078,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__:12
 #: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.region:1
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain:15 of
 msgid ""
@@ -2022,12 +2087,14 @@ msgid ""
 msgstr ""
 
 #: ../../None:6:<autosummary>:1 ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__:14
 #: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.controls:1
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain:17 of
 msgid "A String specifying the name of an AdaptiveMeshControl object."
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__:16
 #: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.frequency:1
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain:19 of
 msgid ""
@@ -2036,6 +2103,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__:19
 #: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.initialMeshSweeps:1
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain:22 of
 msgid ""
@@ -2045,6 +2113,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__:22
 #: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.meshSweeps:1
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain:25 of
 msgid ""
@@ -2058,6 +2127,7 @@ msgid ""
 "object"
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__:26
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.AdaptiveMeshDomain:29 of
 msgid ":class:`AdaptiveMeshDomain`"
 msgstr ""
@@ -2087,6 +2157,7 @@ msgstr ""
 
 #: ../../None:17:<autosummary>:1 ../../docstring
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:19
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:10
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.u1:1
 #: of
 msgid ""
@@ -2096,6 +2167,7 @@ msgstr ""
 
 #: ../../None:17:<autosummary>:1 ../../docstring
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:21
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:12
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.u2:1
 #: of
 msgid ""
@@ -2105,6 +2177,7 @@ msgstr ""
 
 #: ../../None:17:<autosummary>:1 ../../docstring
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:23
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:14
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.u3:1
 #: of
 msgid ""
@@ -2113,6 +2186,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:25
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:16
 #: of
 msgid ""
 "A Float or a Complex specifying the rotational displacement component "
@@ -2120,6 +2194,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:27
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:18
 #: of
 msgid ""
 "A Float or a Complex specifying the rotational displacement component "
@@ -2127,6 +2202,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:29
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:20
 #: of
 msgid ""
 "A Float or a Complex specifying the rotational displacement component "
@@ -2134,6 +2210,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:31
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:22
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the displacement "
@@ -2142,6 +2219,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:34
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:25
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the displacement "
@@ -2150,6 +2228,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:37
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:28
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the displacement "
@@ -2158,6 +2237,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:40
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:31
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the rotational "
@@ -2166,6 +2246,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:43
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:34
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the rotational "
@@ -2174,6 +2255,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:46
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:37
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the rotational "
@@ -2181,8 +2263,11 @@ msgid ""
 " SET, UNCHANGED, FREED, and  MODIFIED."
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:16
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.DisplacementAdaptiveMeshConstraintState:49
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:49
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:40
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:49
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the amplitude "
@@ -2192,6 +2277,7 @@ msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:1
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState:1
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:1
 #: of
 msgid ""
 "The VelocityAdaptiveMeshConstraintState object stores the propagating "
@@ -2215,6 +2301,7 @@ msgstr ""
 
 #: ../../None:17:<autosummary>:1 ../../docstring
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:19
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:19
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.v1:1
 #: of
 msgid "A Float specifying the velocity component in the 1-direction."
@@ -2222,6 +2309,7 @@ msgstr ""
 
 #: ../../None:17:<autosummary>:1 ../../docstring
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:21
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:21
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.v2:1
 #: of
 msgid "A Float specifying the velocity component in the 2-direction."
@@ -2229,6 +2317,7 @@ msgstr ""
 
 #: ../../None:17:<autosummary>:1 ../../docstring
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:23
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:23
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.v3:1
 #: of
 msgid "A Float specifying the velocity component in the 3-direction."
@@ -2236,6 +2325,7 @@ msgstr ""
 
 #: ../../None:17:<autosummary>:1 ../../docstring
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:25
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:25
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.vr1:1
 #: of
 msgid ""
@@ -2245,6 +2335,7 @@ msgstr ""
 
 #: ../../None:17:<autosummary>:1 ../../docstring
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:27
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:27
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.vr2:1
 #: of
 msgid ""
@@ -2254,6 +2345,7 @@ msgstr ""
 
 #: ../../None:17:<autosummary>:1 ../../docstring
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:29
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:29
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.vr3:1
 #: of
 msgid ""
@@ -2262,6 +2354,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:31
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:31
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the velocity "
@@ -2270,6 +2363,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:34
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:34
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the velocity "
@@ -2278,6 +2372,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:37
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:37
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the velocity "
@@ -2286,6 +2381,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:40
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:40
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the rotational "
@@ -2294,6 +2390,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:43
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:43
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the rotational "
@@ -2302,6 +2399,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.VelocityAdaptiveMeshConstraintState:46
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:46
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the rotational "
@@ -2327,8 +2425,19 @@ msgid ""
 "AdaptiveMeshConstraintState  object. Possible values  are:"
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:27
+#: ../../reference/mdb/model/adaptivity.rst:31
 msgid "Create features for AdaptivityIteration"
+msgstr ""
+
+#: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint:1
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState:1
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl:1
+#: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain:1
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration:1
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess:1
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule:1
+#: abaqus.Adaptivity.RuleResult.RuleResult:1 of
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration:1 of
@@ -2368,6 +2477,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:5:<autosummary>:1 ../../None:6:<autosummary>:1
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__:1
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration:1
 #: of
 msgid "This method creates an AdaptivityIteration object."
@@ -2382,7 +2492,7 @@ msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../None:5:<autosummary>:1
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult:1
-#: of
+#: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__init__:1 of
 msgid ""
 "This method creates an ErrorIndicatorResult with data for an error "
 "indicator variable in a RemeshingRule for a given adaptivity iteration."
@@ -2396,7 +2506,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../None:5:<autosummary>:1
-#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult:1 of
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult:1
+#: abaqus.Adaptivity.RuleResult.RuleResult.__init__:1 of
 msgid ""
 "This method creates a RuleResult with data for a RemeshingRule for a "
 "given adaptivity iteration."
@@ -2411,6 +2522,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult:13
+#: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__init__:13
 #: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.name:1 of
 msgid ""
 "A String specifying the name of the error indicator variable to which "
@@ -2419,6 +2531,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult:16
+#: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__init__:16
 #: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.results:1 of
 msgid ""
 "A String-to-Float Dictionary specifying the calculated results from the "
@@ -2427,7 +2540,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult:19
-#: of
+#: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__init__:19 of
 msgid ""
 "An "
 ":py:class:`~abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult` "
@@ -2435,17 +2548,23 @@ msgid ""
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult:20
-#: of
+#: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__init__:20 of
 msgid ":class:`ErrorIndicatorResult`"
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.deactivate
 #: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.move
 #: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.reset
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues
+#: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__
 #: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.setValues
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.ErrorIndicatorResult
-#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult of
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__
+#: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__init__
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__
+#: abaqus.Adaptivity.RuleResult.RuleResult.__init__ of
 msgid "Raises"
 msgstr ""
 
@@ -2458,6 +2577,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult:13
+#: abaqus.Adaptivity.RuleResult.RuleResult.__init__:13
 #: abaqus.Adaptivity.RuleResult.RuleResult.name:1 of
 msgid ""
 "A String specifying the name of the Remeshing Rule to which these results"
@@ -2466,6 +2586,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult:15
+#: abaqus.Adaptivity.RuleResult.RuleResult.__init__:15
 #: abaqus.Adaptivity.RuleResult.RuleResult.indicatorResults:1 of
 msgid ""
 "A repository of ErrorIndicatorResult objects specifying the calculated "
@@ -2475,6 +2596,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult:18
+#: abaqus.Adaptivity.RuleResult.RuleResult.__init__:18
 #: abaqus.Adaptivity.RuleResult.RuleResult.numElems:1 of
 msgid ""
 "An Int specifying the number of elements before remeshing in the region "
@@ -2483,6 +2605,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult:21
+#: abaqus.Adaptivity.RuleResult.RuleResult.__init__:21
 #: abaqus.Adaptivity.RuleResult.RuleResult.minSizeElemCount:1 of
 msgid ""
 "An Int specifying the number of elements that were constrained to the "
@@ -2491,21 +2614,32 @@ msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../docstring
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult:24
+#: abaqus.Adaptivity.RuleResult.RuleResult.__init__:24
 #: abaqus.Adaptivity.RuleResult.RuleResult.satisfiedVars:1 of
 msgid ""
 "A sequence of Strings specifying the error indicator variables that have "
 "satisfied the Remeshing Rule."
 msgstr ""
 
-#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult:27 of
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult:27
+#: abaqus.Adaptivity.RuleResult.RuleResult.__init__:27 of
 msgid "A :py:class:`~abaqus.Adaptivity.RuleResult.RuleResult` object."
 msgstr ""
 
-#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult:28 of
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.RuleResult:28
+#: abaqus.Adaptivity.RuleResult.RuleResult.__init__:28 of
 msgid ":class:`RuleResult`"
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__:9 of
+msgid ""
+"Check `AdaptivityIteration.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adaptivityiterationpyc.htm?contextscope=all"
+"#simaker-adaptivityiteration__init__pyc>`__."
+msgstr ""
+
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__:12
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.iteration:1
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration:12
 #: of
@@ -2515,6 +2649,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__:14
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.jobName:1
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration:14
 #: of
@@ -2522,6 +2657,7 @@ msgid "A String specifying the name of the job that was run for this iteration."
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__:16
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.modelName:1
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration:16
 #: of
@@ -2531,6 +2667,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__:19
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.odbPath:1
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration:19
 #: of
@@ -2540,6 +2677,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.__init__:21
 #: abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration.remeshingErrors:1
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.AdaptivityIteration:21
 #: of
@@ -2548,11 +2686,11 @@ msgid ""
 "while remeshing the model in this iteration of the adaptivity process."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:36
-msgid "Object Features"
+#: ../../reference/mdb/model/adaptivity.rst:42
+msgid "Classes"
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:39
+#: ../../reference/mdb/model/adaptivity.rst:45
 msgid "AdaptiveMeshConstraint"
 msgstr ""
 
@@ -2681,6 +2819,14 @@ msgstr ""
 msgid "This method allows you to delete existing adaptive mesh constraints."
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__init__:13
+#: of
+msgid ""
+"Check `AdaptiveMeshConstraint.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adaptivemeshconstraintpyc.htm?contextscope=all"
+"#simaker-adaptivemeshconstraint__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.deactivate:5
 #: of
 msgid ""
@@ -2741,7 +2887,7 @@ msgid ""
 "constraint state is reset."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:47
+#: ../../reference/mdb/model/adaptivity.rst:55
 msgid "AdaptiveMeshConstraintState"
 msgstr ""
 
@@ -2786,6 +2932,14 @@ msgid ""
 " \\(\\[amplitudeState\\, status\\, amplitude\\]\\)"
 msgstr ""
 
+#: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.__init__:13
+#: of
+msgid ""
+"Check `AdaptiveMeshConstraintState.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adaptivemeshconstraintstatepyc.htm?contextscope=all"
+"#simaker-adaptivemeshconstraintstate__init__pyc>`__."
+msgstr ""
+
 #: ../../docstring
 #: abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.amplitude:1
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.amplitude:1
@@ -2815,7 +2969,7 @@ msgid ""
 "AdaptiveMeshConstraintState object. Possible values are:"
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:56
+#: ../../reference/mdb/model/adaptivity.rst:66
 msgid "AdaptiveMeshControl"
 msgstr ""
 
@@ -2997,16 +3151,15 @@ msgstr ""
 msgid "This method modifies the AdaptiveMeshControl object."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.curvatureRefinement:1
-#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:30 of
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:9 of
 msgid ""
-"A Float specifying the solution dependence weight, :math:`\\alpha_C`. "
-"Possible values are :math:`0.0\\le\\alpha_C\\le 1.0`. The default value "
-"is 1.0."
+"Check `AdaptiveMeshControl.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adaptivemeshcontrolpyc.htm?contextscope=all"
+"#simaker-adaptivemeshcontrol__init__pyc>`__."
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:24
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.initialFeatureAngle:1
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:17 of
 msgid ""
@@ -3016,22 +3169,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.meshConstraintAngle:1
-#: of
-msgid ""
-"A Float specifying the initial geometric feature angle, "
-":math:`\\theta_C`. Possible values are :math:`0^\\circ\\le\\theta_C\\le "
-"180^\\circ`. The default value is 60.0."
-msgstr ""
-
-#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:4 of
-msgid ""
-"Check `AdaptiveMeshControl.setValues on help.3ds.com/2020 "
-"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adaptivemeshcontrolpyc.htm?contextscope=all"
-"#simaker-adaptivemeshcontrolsetvaluespyc>`__."
-msgstr ""
-
-#: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:27
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:20
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.transitionFeatureAngle:1
 #: of
@@ -3041,6 +3179,39 @@ msgid ""
 "180^\\circ`. The default value is 30.0."
 msgstr ""
 
+#: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:37
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.curvatureRefinement:1
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:30 of
+msgid ""
+"A Float specifying the solution dependence weight, :math:`\\alpha_C`. "
+"Possible values are :math:`0.0\\le\\alpha_C\\le 1.0`. The default value "
+"is 1.0."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:49
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.meshConstraintAngle:1
+#: of
+msgid ""
+"A Float specifying the initial geometric feature angle, "
+":math:`\\theta_C`. Possible values are :math:`0^\\circ\\le\\theta_C\\le "
+"180^\\circ`. The default value is 60.0."
+msgstr ""
+
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.__init__:58 of
+msgid ""
+"An :py:class:`~abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl`"
+" object."
+msgstr ""
+
+#: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:4 of
+msgid ""
+"Check `AdaptiveMeshControl.setValues on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adaptivemeshcontrolpyc.htm?contextscope=all"
+"#simaker-adaptivemeshcontrolsetvaluespyc>`__."
+msgstr ""
+
 #: abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl.setValues:42 of
 msgid ""
 "A Float specifying the initial geometric feature angle, "
@@ -3048,7 +3219,7 @@ msgid ""
 "180^\\circ`. The default value is 60.0."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:64
+#: ../../reference/mdb/model/adaptivity.rst:76
 msgid "AdaptiveMeshDomain"
 msgstr ""
 
@@ -3114,7 +3285,20 @@ msgstr ""
 msgid "This method modifies the AdaptiveMeshDomain object."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:72
+#: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__:9 of
+msgid ""
+"Check `AdaptiveMeshDomain.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adaptivemeshdomainpyc.htm?contextscope=all"
+"#simaker-adaptivemeshdomain__init__pyc>`__."
+msgstr ""
+
+#: abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__:25 of
+msgid ""
+"An :py:class:`~abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain` "
+"object."
+msgstr ""
+
+#: ../../reference/mdb/model/adaptivity.rst:86
 msgid "AdaptivityProcess"
 msgstr ""
 
@@ -3189,6 +3373,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__:1 of
 msgid "This method creates an AdaptivityProcess object."
 msgstr ""
 
@@ -3223,8 +3408,22 @@ msgid ""
 " \\(iteration\\, jobName\\, ...\\)"
 msgstr ""
 
-#: ../../docstring abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.job:1
-#: of
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__:9 of
+msgid ""
+"Check `AdaptivityProcess.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adaptivityprocesspyc.htm?contextscope=all"
+"#simaker-adaptivityprocess__init__pyc>`__."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__:12
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.name:1 of
+msgid "A String specifying the name of the Adaptivity Process."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__:14
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.job:1 of
 msgid ""
 "A :py:class:`~abaqus.Job.ModelJob.ModelJob` object specifying a job to be"
 " used as the prototype for all analysis jobs run by the adaptivity "
@@ -3232,15 +3431,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
-#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.jobPrefix:1
-#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.setValues:11 of
-msgid ""
-"A String specifying the prefix to use for jobs created by the adaptivity "
-"process. An empty string indicates that the name of the adaptivity "
-"process should be used. The default value is an empty string."
-msgstr ""
-
-#: ../../docstring
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__:17
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.maxIterations:1
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.setValues:7 of
 msgid ""
@@ -3249,9 +3440,24 @@ msgid ""
 "analysis. The default value is 3."
 msgstr ""
 
-#: ../../docstring abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.name:1
-#: of
-msgid "A String specifying the name of the Adaptivity Process."
+#: ../../docstring
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__:21
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.jobPrefix:1
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.setValues:11 of
+msgid ""
+"A String specifying the prefix to use for jobs created by the adaptivity "
+"process. An empty string indicates that the name of the adaptivity "
+"process should be used. The default value is an empty string."
+msgstr ""
+
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__:25 of
+msgid ""
+"An :py:class:`~abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess` "
+"object."
+msgstr ""
+
+#: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.__init__:26 of
+msgid ":class:`AdaptivityProcess`"
 msgstr ""
 
 #: abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess.setValues:4 of
@@ -3296,8 +3502,16 @@ msgid ""
 "arguments cannot both be True."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:80
+#: ../../reference/mdb/model/adaptivity.rst:96
 msgid "DisplacementAdaptiveMeshConstraint"
+msgstr ""
+
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint:1
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint:1
+#: of
+msgid ""
+"Bases: "
+":py:class:`~abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint`"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -3324,7 +3538,7 @@ msgid ""
 "<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.localCsys>`\\"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1 ../../None:9:<autosummary>:1
+#: ../../None:5:<autosummary>:1
 msgid ""
 ":py:obj:`__init__ "
 "<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__>`\\"
@@ -3362,56 +3576,15 @@ msgid ""
 "DisplacementAdaptiveMeshConstraint object in the specified step."
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`deactivate "
-"<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.deactivate>`\\"
-" \\(stepName\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`move "
-"<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.move>`\\"
-" \\(fromStepName\\, toStepName\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`reset "
-"<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.reset>`\\"
-" \\(stepName\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`resume "
-"<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.resume>`\\"
-" \\(\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.suppress>`\\"
-" \\(\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`delete "
-"<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.delete>`\\"
-" \\(indices\\)"
-msgstr ""
-
-#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValues:5
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:9
 #: of
 msgid ""
-"Check `DisplacementAdaptiveMeshConstraint.setValues on help.3ds.com/2020 "
+"Check `DisplacementAdaptiveMeshConstraint.__init__ on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displacementadaptivemeshconstraintpyc.htm?contextscope=all"
-"#simaker-displacementadaptivemeshconstraintsetvaluespyc>`__."
+"#simaker-displacementadaptivemeshconstraint__init__pyc>`__."
 msgstr ""
 
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:19
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValues:8
 #: of
 msgid ""
@@ -3420,6 +3593,22 @@ msgid ""
 "SET. The default value is UNSET.Note:Although **u1**, **u2**, **u3**, "
 "**ur1**, **ur2**, and **ur3** are optional arguments, at least one of "
 "them must be specified."
+msgstr ""
+
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:55
+#: of
+msgid ""
+"A "
+":py:class:`~abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint`"
+" object."
+msgstr ""
+
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValues:5
+#: of
+msgid ""
+"Check `DisplacementAdaptiveMeshConstraint.setValues on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displacementadaptivemeshconstraintpyc.htm?contextscope=all"
+"#simaker-displacementadaptivemeshconstraintsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValuesInStep:5
@@ -3499,8 +3688,16 @@ msgid ""
 "the **amplitude** argument only if it is valid for the specified step."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:88
+#: ../../reference/mdb/model/adaptivity.rst:106
 msgid "DisplacementAdaptiveMeshConstraintState"
+msgstr ""
+
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState:1
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState:1
+#: of
+msgid ""
+"Bases: "
+":py:class:`~abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState`"
 msgstr ""
 
 #: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState:16
@@ -3647,19 +3844,19 @@ msgid ""
 "displacement component about the 3-direction."
 msgstr ""
 
-#: ../../None:17:<autosummary>:1 ../../None:5:<autosummary>:1
+#: ../../None:17:<autosummary>:1
 msgid ""
 ":py:obj:`amplitudeState "
 "<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.amplitudeState>`\\"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1 ../../None:5:<autosummary>:1
+#: ../../None:17:<autosummary>:1
 msgid ""
 ":py:obj:`status "
 "<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.status>`\\"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1 ../../None:5:<autosummary>:1
+#: ../../None:17:<autosummary>:1
 msgid ""
 ":py:obj:`amplitude "
 "<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.amplitude>`\\"
@@ -3670,6 +3867,27 @@ msgid ""
 ":py:obj:`__init__ "
 "<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__>`\\"
 " \\(\\[u1\\, u2\\, u3\\, ur1\\, ur2\\, ur3\\, ...\\]\\)"
+msgstr ""
+
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:7
+#: of
+msgid ""
+"Check `DisplacementAdaptiveMeshConstraintState.__init__ on "
+"help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displacementadaptivemeshconstraintstatepyc.htm?contextscope=all"
+"#simaker-displacementadaptivemeshconstraintstate__init__pyc>`__."
+msgstr ""
+
+#: abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState.__init__:43
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:52
+#: of
+msgid ""
+"A SymbolicConstant specifying the propagation state of the "
+"AdaptiveMeshConstraintState  object. Possible values  are: - "
+"NOT_YET_ACTIVE - CREATED - PROPAGATED - MODIFIED - DEACTIVATED - "
+"NO_LONGER_ACTIVE - TYPE_NOT_APPLICABLE - INSTANCE_NOT_APPLICABLE - "
+"PROPAGATED_FROM_BASE_STATE - MODIFIED_FROM_BASE_STATE - "
+"DEACTIVATED_FROM_BASE_STATE - BUILT_INTO_MODES"
 msgstr ""
 
 #: ../../docstring
@@ -3738,8 +3956,12 @@ msgid ""
 "SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:96
+#: ../../reference/mdb/model/adaptivity.rst:116
 msgid "ErrorIndicatorResult"
+msgstr ""
+
+#: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult:1 of
+msgid "Bases: :py:class:`~abaqus.Adaptivity.RuleResult.RuleResult`"
 msgstr ""
 
 #: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult:1 of
@@ -3752,7 +3974,7 @@ msgstr ""
 #: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`satisfiedVars "
-"<abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.satisfiedVars>`\\"
+"<abaqus.Adaptivity.RuleResult.RuleResult.satisfiedVars>`\\"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3762,7 +3984,20 @@ msgid ""
 " \\(name\\, results\\)"
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:104
+#: ../../None:3:<autosummary>:1
+msgid ""
+":py:obj:`__init__ <abaqus.Adaptivity.RuleResult.RuleResult.__init__>`\\ "
+"\\(name\\, indicatorResults\\, numElems\\, ...\\)"
+msgstr ""
+
+#: abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__init__:10 of
+msgid ""
+"Check `ErrorIndicatorResult.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-errorindicatorresultpyc.htm?contextscope=all"
+"#simaker-errorindicatorresult__init__pyc>`__."
+msgstr ""
+
+#: ../../reference/mdb/model/adaptivity.rst:126
 msgid "RemeshingRule"
 msgstr ""
 
@@ -3997,6 +4232,17 @@ msgstr ""
 msgid "This method modifies the RemeshingRule object."
 msgstr ""
 
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:9 of
+msgid ""
+"Check `RemeshingRule.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-remeshingrulepyc.htm?contextscope=all"
+"#simaker-remeshingrule__init__pyc>`__."
+msgstr ""
+
+#: abaqus.Adaptivity.RemeshingRule.RemeshingRule.__init__:77 of
+msgid "A :py:class:`~abaqus.Adaptivity.RemeshingRule.RemeshingRule` object."
+msgstr ""
+
 #: abaqus.Adaptivity.RemeshingRule.RemeshingRule.setValues:4 of
 msgid ""
 "Check `RemeshingRule.setValues on help.3ds.com/2020 "
@@ -4018,7 +4264,7 @@ msgid ""
 " default value is OFF."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:112
+#: ../../reference/mdb/model/adaptivity.rst:136
 msgid "RuleResult"
 msgstr ""
 
@@ -4028,19 +4274,14 @@ msgid ""
 "RemeshingRule object for an adaptivity iteration."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
+#: abaqus.Adaptivity.RuleResult.RuleResult.__init__:10 of
 msgid ""
-":py:obj:`satisfiedVars "
-"<abaqus.Adaptivity.RuleResult.RuleResult.satisfiedVars>`\\"
+"Check `RuleResult.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ruleresultpyc.htm?contextscope=all"
+"#simaker-ruleresult__init__pyc>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ""
-":py:obj:`__init__ <abaqus.Adaptivity.RuleResult.RuleResult.__init__>`\\ "
-"\\(name\\, indicatorResults\\, numElems\\, ...\\)"
-msgstr ""
-
-#: ../../reference/mdb/model/adaptivity.rst:120
+#: ../../reference/mdb/model/adaptivity.rst:146
 msgid "VelocityAdaptiveMeshConstraint"
 msgstr ""
 
@@ -4077,7 +4318,7 @@ msgid ""
 "<abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.localCsys>`\\"
 msgstr ""
 
-#: ../../None:5:<autosummary>:1 ../../None:9:<autosummary>:1
+#: ../../None:5:<autosummary>:1
 msgid ""
 ":py:obj:`__init__ "
 "<abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__>`\\"
@@ -4114,46 +4355,20 @@ msgid ""
 "VelocityAdaptiveMeshConstraint object in the specified step."
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:9
+#: of
 msgid ""
-":py:obj:`deactivate "
-"<abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.deactivate>`\\"
-" \\(stepName\\)"
+"Check `VelocityAdaptiveMeshConstraint.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocityadaptivemeshconstraintpyc.htm?contextscope=all"
+"#simaker-velocityadaptivemeshconstraint__init__pyc>`__."
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:55
+#: of
 msgid ""
-":py:obj:`move "
-"<abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.move>`\\"
-" \\(fromStepName\\, toStepName\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`reset "
-"<abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.reset>`\\"
-" \\(stepName\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`resume "
-"<abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.resume>`\\"
-" \\(\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.suppress>`\\"
-" \\(\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`delete "
-"<abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.delete>`\\"
-" \\(indices\\)"
+"A "
+":py:class:`~abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint`"
+" object."
 msgstr ""
 
 #: abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.setValues:5
@@ -4218,7 +4433,7 @@ msgid ""
 " are SET and FREED."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:128
+#: ../../reference/mdb/model/adaptivity.rst:156
 msgid "VelocityAdaptiveMeshConstraintState"
 msgstr ""
 
@@ -4330,19 +4545,19 @@ msgid ""
 "velocity component about the 3-direction."
 msgstr ""
 
-#: ../../None:17:<autosummary>:1 ../../None:5:<autosummary>:1
+#: ../../None:17:<autosummary>:1
 msgid ""
 ":py:obj:`amplitudeState "
 "<abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.amplitudeState>`\\"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1 ../../None:5:<autosummary>:1
+#: ../../None:17:<autosummary>:1
 msgid ""
 ":py:obj:`status "
 "<abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.status>`\\"
 msgstr ""
 
-#: ../../None:17:<autosummary>:1 ../../None:5:<autosummary>:1
+#: ../../None:17:<autosummary>:1
 msgid ""
 ":py:obj:`amplitude "
 "<abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.amplitude>`\\"
@@ -4353,6 +4568,14 @@ msgid ""
 ":py:obj:`__init__ "
 "<abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__>`\\"
 " \\(\\[v1\\, v2\\, v3\\, vr1\\, vr2\\, vr3\\, ...\\]\\)"
+msgstr ""
+
+#: abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState.__init__:16
+#: of
+msgid ""
+"Check `VelocityAdaptiveMeshConstraintState.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-velocityadaptivemeshconstraintstatepyc.htm?contextscope=all"
+"#simaker-velocityadaptivemeshconstraintstate__init__pyc>`__."
 msgstr ""
 
 #: ../../docstring
@@ -4899,5 +5122,495 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "**continueJob**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`stefanBoltzmann "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.stefanBoltzmann>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`absoluteZero "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.absoluteZero>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`waveFormulation "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.waveFormulation>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`universalGas "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.universalGas>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`noPartsInputFile "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.noPartsInputFile>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restartIncrement "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.restartIncrement>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`endRestartStep "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.endRestartStep>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`shellToSolid "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.shellToSolid>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lastChangedCount "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.lastChangedCount>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`description "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.description>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restartJob "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.restartJob>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restartStep "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.restartStep>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`globalJob "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.globalJob>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyConstraints "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.copyConstraints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyConnectors "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.copyConnectors>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyInteractions "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.copyInteractions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`keywordBlock "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.keywordBlock>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`rootAssembly "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.rootAssembly>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`amplitudes "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.amplitudes>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`profiles "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.profiles>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`boundaryConditions "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.boundaryConditions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`constraints "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.constraints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`analyticalFields "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.analyticalFields>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`discreteFields "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.discreteFields>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`predefinedFields "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.predefinedFields>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`interactions "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.interactions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`interactionProperties "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.interactionProperties>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`contactControls "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.contactControls>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`contactInitializations "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.contactInitializations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`contactStabilizations "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.contactStabilizations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`linkedInstances "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.linkedInstances>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`linkedParts "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.linkedParts>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`loads "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.loads>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`materials "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.materials>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`calibrations "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.calibrations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sections "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.sections>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`remeshingRules "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.remeshingRules>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sketches "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.sketches>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`parts "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.parts>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`steps "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.steps>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`featureOptions "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.featureOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`adaptiveMeshConstraints "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveMeshConstraints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`adaptiveMeshControls "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.adaptiveMeshControls>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`timePoints "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.timePoints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`filters "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.filters>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`integratedOutputSections "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.integratedOutputSections>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`fieldOutputRequests "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.fieldOutputRequests>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`historyOutputRequests "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.historyOutputRequests>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`optimizationTasks "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.optimizationTasks>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`tableCollections "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.tableCollections>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`eventSeriesTypes "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.eventSeriesTypes>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`eventSeriesDatas "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.eventSeriesDatas>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init__ "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.__init__>`\\ "
+#~ "\\(name\\[\\, description\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ModelFromInputFile "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.ModelFromInputFile>`\\"
+#~ " \\(name\\, inputFileName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ModelFromOdbFile "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.ModelFromOdbFile>`\\"
+#~ " \\(name\\, odbFileName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ModelFromNastranFile "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.ModelFromNastranFile>`\\"
+#~ " \\(modelName\\, inputFileName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setValues "
+#~ "<abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.setValues>`\\ "
+#~ "\\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`name <abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`explicit "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.explicit>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`perturbation "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.perturbation>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`nonmechanical "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.nonmechanical>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`procedureType "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.procedureType>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppressed "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.suppressed>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`fieldOutputRequestState "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.fieldOutputRequestState>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`historyOutputRequestState "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.historyOutputRequestState>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`diagnosticPrint "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.diagnosticPrint>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`monitor "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.monitor>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restart "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.restart>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`adaptiveMeshConstraintStates "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.adaptiveMeshConstraintStates>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`adaptiveMeshDomains "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.adaptiveMeshDomains>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`control "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.control>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`solverControl "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.solverControl>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`boundaryConditionStates "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.boundaryConditionStates>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`interactionStates "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.interactionStates>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`loadStates "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.loadStates>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`loadCases "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.loadCases>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`predefinedFieldStates "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.predefinedFieldStates>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`activateElements "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.activateElements>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.resume>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.Adaptivity.AdaptivityStep.AdaptivityStep.suppress>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid "Object Features"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`deactivate "
+#~ "<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.deactivate>`\\"
+#~ " \\(stepName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`move "
+#~ "<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.move>`\\"
+#~ " \\(fromStepName\\, toStepName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`reset "
+#~ "<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.reset>`\\"
+#~ " \\(stepName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.resume>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.suppress>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`delete "
+#~ "<abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.delete>`\\"
+#~ " \\(indices\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`satisfiedVars "
+#~ "<abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.satisfiedVars>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`deactivate "
+#~ "<abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.deactivate>`\\"
+#~ " \\(stepName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`move "
+#~ "<abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.move>`\\"
+#~ " \\(fromStepName\\, toStepName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`reset "
+#~ "<abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.reset>`\\"
+#~ " \\(stepName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.resume>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.suppress>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`delete "
+#~ "<abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.delete>`\\"
+#~ " \\(indices\\)"
 #~ msgstr ""
 

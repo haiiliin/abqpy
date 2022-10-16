@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 00:22+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../reference/mdb/model/constraint.rst:3
-#: ../../reference/mdb/model/constraint.rst:21
+#: ../../reference/mdb/model/constraint.rst:23
 msgid "Constraint"
 msgstr ""
 
@@ -28,6 +28,10 @@ msgstr ""
 
 #: ../../reference/mdb/model/constraint.rst:9
 msgid "Create constraints"
+msgstr ""
+
+#: abaqus.Constraint.ConstraintModel.ConstraintModel:1 of
+msgid "Bases: :py:class:`~abaqus.Model.ModelBase.ModelBase`"
 msgstr ""
 
 #: abaqus.Constraint.ConstraintModel.ConstraintModel:1 of
@@ -69,7 +73,7 @@ msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Constraint.ConstraintModel.ConstraintModel.name>`\\"
+msgid ":py:obj:`name <abaqus.Model.ModelBase.ModelBase.name>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -79,7 +83,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`stefanBoltzmann "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.stefanBoltzmann>`\\"
+"<abaqus.Model.ModelBase.ModelBase.stefanBoltzmann>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -87,9 +91,7 @@ msgid "None or a Float specifying the Stefan-Boltzmann constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`absoluteZero "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.absoluteZero>`\\"
+msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -99,7 +101,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`waveFormulation "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.waveFormulation>`\\"
+"<abaqus.Model.ModelBase.ModelBase.waveFormulation>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -109,9 +111,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`universalGas "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.universalGas>`\\"
+msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -121,7 +121,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`noPartsInputFile "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.noPartsInputFile>`\\"
+"<abaqus.Model.ModelBase.ModelBase.noPartsInputFile>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -133,7 +133,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`restartIncrement "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.restartIncrement>`\\"
+"<abaqus.Model.ModelBase.ModelBase.restartIncrement>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -145,7 +145,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`endRestartStep "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.endRestartStep>`\\"
+"<abaqus.Model.ModelBase.ModelBase.endRestartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -155,9 +155,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`shellToSolid "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.shellToSolid>`\\"
+msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -167,7 +165,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`lastChangedCount "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.lastChangedCount>`\\"
+"<abaqus.Model.ModelBase.ModelBase.lastChangedCount>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -177,9 +175,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`description "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.description>`\\"
+msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -187,9 +183,7 @@ msgid "A String specifying the purpose and contents of the Model object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartJob "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.restartJob>`\\"
+msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -197,9 +191,7 @@ msgid "A String specifying the name of the job that generated the restart data."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartStep "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.restartStep>`\\"
+msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -209,9 +201,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`globalJob "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.globalJob>`\\"
+msgid ":py:obj:`globalJob <abaqus.Model.ModelBase.ModelBase.globalJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -223,7 +213,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`copyConstraints "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.copyConstraints>`\\"
+"<abaqus.Model.ModelBase.ModelBase.copyConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -235,7 +225,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`copyConnectors "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.copyConnectors>`\\"
+"<abaqus.Model.ModelBase.ModelBase.copyConnectors>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -247,7 +237,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`copyInteractions "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.copyInteractions>`\\"
+"<abaqus.Model.ModelBase.ModelBase.copyInteractions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -257,9 +247,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`keywordBlock "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.keywordBlock>`\\"
+msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -267,9 +255,7 @@ msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`rootAssembly "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.rootAssembly>`\\"
+msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -277,9 +263,7 @@ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`amplitudes "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.amplitudes>`\\"
+msgid ":py:obj:`amplitudes <abaqus.Model.ModelBase.ModelBase.amplitudes>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -287,9 +271,7 @@ msgid "A repository of Amplitude objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`profiles "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.profiles>`\\"
+msgid ":py:obj:`profiles <abaqus.Model.ModelBase.ModelBase.profiles>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -299,7 +281,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`boundaryConditions "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.boundaryConditions>`\\"
+"<abaqus.Model.ModelBase.ModelBase.boundaryConditions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -307,9 +289,7 @@ msgid "A repository of BoundaryCondition objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`constraints "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.constraints>`\\"
+msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -319,7 +299,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`analyticalFields "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.analyticalFields>`\\"
+"<abaqus.Model.ModelBase.ModelBase.analyticalFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -329,7 +309,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`discreteFields "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.discreteFields>`\\"
+"<abaqus.Model.ModelBase.ModelBase.discreteFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -339,7 +319,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`predefinedFields "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.predefinedFields>`\\"
+"<abaqus.Model.ModelBase.ModelBase.predefinedFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -347,9 +327,7 @@ msgid "A repository of PredefinedField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`interactions "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.interactions>`\\"
+msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -359,7 +337,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`interactionProperties "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.interactionProperties>`\\"
+"<abaqus.Model.ModelBase.ModelBase.interactionProperties>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -369,7 +347,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`contactControls "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.contactControls>`\\"
+"<abaqus.Model.ModelBase.ModelBase.contactControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -379,7 +357,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`contactInitializations "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.contactInitializations>`\\"
+"<abaqus.Model.ModelBase.ModelBase.contactInitializations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -389,7 +367,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`contactStabilizations "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.contactStabilizations>`\\"
+"<abaqus.Model.ModelBase.ModelBase.contactStabilizations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -399,7 +377,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`linkedInstances "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.linkedInstances>`\\"
+"<abaqus.Model.ModelBase.ModelBase.linkedInstances>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -410,9 +388,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`linkedParts "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.linkedParts>`\\"
+msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -423,9 +399,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`loads "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.loads>`\\"
+msgid ":py:obj:`loads <abaqus.Model.ModelBase.ModelBase.loads>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -433,9 +407,7 @@ msgid "A repository of Load objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`materials "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.materials>`\\"
+msgid ":py:obj:`materials <abaqus.Model.ModelBase.ModelBase.materials>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -443,9 +415,7 @@ msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`calibrations "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.calibrations>`\\"
+msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -453,9 +423,7 @@ msgid "A repository of Calibration objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`sections "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.sections>`\\"
+msgid ":py:obj:`sections <abaqus.Model.ModelBase.ModelBase.sections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -465,7 +433,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`remeshingRules "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.remeshingRules>`\\"
+"<abaqus.Model.ModelBase.ModelBase.remeshingRules>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -473,9 +441,7 @@ msgid "A repository of RemeshingRule objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`sketches "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.sketches>`\\"
+msgid ":py:obj:`sketches <abaqus.Model.ModelBase.ModelBase.sketches>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -483,9 +449,7 @@ msgid "A repository of ConstrainedSketch objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`parts "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.parts>`\\"
+msgid ":py:obj:`parts <abaqus.Model.ModelBase.ModelBase.parts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -493,9 +457,7 @@ msgid "A repository of Part objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`steps "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.steps>`\\"
+msgid ":py:obj:`steps <abaqus.Model.ModelBase.ModelBase.steps>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -505,7 +467,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`featureOptions "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.featureOptions>`\\"
+"<abaqus.Model.ModelBase.ModelBase.featureOptions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -515,7 +477,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshConstraints "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.adaptiveMeshConstraints>`\\"
+"<abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -525,7 +487,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshControls "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.adaptiveMeshControls>`\\"
+"<abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -533,9 +495,7 @@ msgid "A repository of AdaptiveMeshControl objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`timePoints "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.timePoints>`\\"
+msgid ":py:obj:`timePoints <abaqus.Model.ModelBase.ModelBase.timePoints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -543,9 +503,7 @@ msgid "A repository of TimePoint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`filters "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.filters>`\\"
+msgid ":py:obj:`filters <abaqus.Model.ModelBase.ModelBase.filters>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -555,7 +513,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`integratedOutputSections "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.integratedOutputSections>`\\"
+"<abaqus.Model.ModelBase.ModelBase.integratedOutputSections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -565,7 +523,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`fieldOutputRequests "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.fieldOutputRequests>`\\"
+"<abaqus.Model.ModelBase.ModelBase.fieldOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -575,7 +533,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`historyOutputRequests "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.historyOutputRequests>`\\"
+"<abaqus.Model.ModelBase.ModelBase.historyOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -585,7 +543,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`optimizationTasks "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.optimizationTasks>`\\"
+"<abaqus.Model.ModelBase.ModelBase.optimizationTasks>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -595,7 +553,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`tableCollections "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.tableCollections>`\\"
+"<abaqus.Model.ModelBase.ModelBase.tableCollections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -605,7 +563,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`eventSeriesTypes "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.eventSeriesTypes>`\\"
+"<abaqus.Model.ModelBase.ModelBase.eventSeriesTypes>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -615,7 +573,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`eventSeriesDatas "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.eventSeriesDatas>`\\"
+"<abaqus.Model.ModelBase.ModelBase.eventSeriesDatas>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -644,6 +602,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1 ../../None:4:<autosummary>:1
+#: abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:1
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:1 of
 msgid "This method creates an AdjustPoints object."
 msgstr ""
@@ -656,7 +615,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:1 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:1
+#: abaqus.Constraint.Coupling.Coupling.__init__:1 of
 msgid "This method creates a Coupling object."
 msgstr ""
 
@@ -668,7 +628,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:1 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:1
+#: abaqus.Constraint.DisplayBody.DisplayBody.__init__:1 of
 msgid "This method creates a DisplayBody object."
 msgstr ""
 
@@ -680,7 +641,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:1 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:1
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__:1 of
 msgid "This method creates a EmbeddedRegion object."
 msgstr ""
 
@@ -692,7 +654,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:1 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:1
+#: abaqus.Constraint.Equation.Equation.__init__:1 of
 msgid "This method creates an Equation object."
 msgstr ""
 
@@ -704,7 +667,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:1 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:1
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__:1 of
 msgid "This method creates a MultipointConstraint object."
 msgstr ""
 
@@ -716,7 +680,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:1 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:1
+#: abaqus.Constraint.RigidBody.RigidBody.__init__:1 of
 msgid "This method creates a RigidBody object."
 msgstr ""
 
@@ -728,7 +693,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:1 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:1
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:1 of
 msgid "This method creates a ShellSolidCoupling object."
 msgstr ""
 
@@ -739,14 +705,14 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1 ../../None:5:<autosummary>:1
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:1 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:1
+#: abaqus.Constraint.Tie.Tie.__init__:1 of
 msgid "This method creates a Tie object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid ""
-":py:obj:`__init__ "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.__init__>`\\ "
+":py:obj:`__init__ <abaqus.Model.ModelBase.ModelBase.__init__>`\\ "
 "\\(name\\[\\, description\\, ...\\]\\)"
 msgstr ""
 
@@ -757,8 +723,8 @@ msgstr ""
 #: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`ModelFromInputFile "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.ModelFromInputFile>`\\"
-" \\(name\\, inputFileName\\)"
+"<abaqus.Model.ModelBase.ModelBase.ModelFromInputFile>`\\ \\(name\\, "
+"inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -770,8 +736,8 @@ msgstr ""
 #: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`ModelFromOdbFile "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.ModelFromOdbFile>`\\ "
-"\\(name\\, odbFileName\\)"
+"<abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile>`\\ \\(name\\, "
+"odbFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -783,8 +749,8 @@ msgstr ""
 #: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`ModelFromNastranFile "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.ModelFromNastranFile>`\\"
-" \\(modelName\\, inputFileName\\)"
+"<abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ "
+"\\(modelName\\, inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -796,8 +762,7 @@ msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid ""
-":py:obj:`setValues "
-"<abaqus.Constraint.ConstraintModel.ConstraintModel.setValues>`\\ "
+":py:obj:`setValues <abaqus.Model.ModelBase.ModelBase.setValues>`\\ "
 "\\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
 msgstr ""
 
@@ -805,6 +770,7 @@ msgstr ""
 msgid "This method modifies the Model object."
 msgstr ""
 
+#: abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:4
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:4
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:4
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:4
@@ -813,7 +779,15 @@ msgstr ""
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:4
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:4
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:4
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:4 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:4
+#: abaqus.Constraint.Coupling.Coupling.__init__:4
+#: abaqus.Constraint.DisplayBody.DisplayBody.__init__:4
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__:4
+#: abaqus.Constraint.Equation.Equation.__init__:4
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__:4
+#: abaqus.Constraint.RigidBody.RigidBody.__init__:4
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:4
+#: abaqus.Constraint.Tie.Tie.__init__:4 of
 msgid "This function can be accessed by::"
 msgstr ""
 
@@ -824,6 +798,7 @@ msgid ""
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adjustpointspyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: abaqus.Constraint.AdjustPoints.AdjustPoints.__init__
 #: abaqus.Constraint.Constraint.Constraint.delete
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling
@@ -834,16 +809,24 @@ msgstr ""
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie
+#: abaqus.Constraint.Coupling.Coupling.__init__
 #: abaqus.Constraint.Coupling.Coupling.setValues
+#: abaqus.Constraint.DisplayBody.DisplayBody.__init__
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__
 #: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues
+#: abaqus.Constraint.Equation.Equation.__init__
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__
 #: abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues
+#: abaqus.Constraint.RigidBody.RigidBody.__init__
 #: abaqus.Constraint.RigidBody.RigidBody.setValues
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__
 #: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues
-#: abaqus.Constraint.Tie.Tie.setValues of
+#: abaqus.Constraint.Tie.Tie.__init__ abaqus.Constraint.Tie.Tie.setValues of
 msgid "Parameters"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:12
 #: abaqus.Constraint.Constraint.Constraint.name:1
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:12
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:12
@@ -853,24 +836,35 @@ msgstr ""
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:12
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:12
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:12
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:12 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:12
+#: abaqus.Constraint.Coupling.Coupling.__init__:12
+#: abaqus.Constraint.DisplayBody.DisplayBody.__init__:12
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__:12
+#: abaqus.Constraint.Equation.Equation.__init__:12
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__:12
+#: abaqus.Constraint.RigidBody.RigidBody.__init__:12
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:12
+#: abaqus.Constraint.Tie.Tie.__init__:12 of
 msgid "A String specifying the constraint repository key."
 msgstr ""
 
-#: ../../docstring abaqus.Constraint.AdjustPoints.AdjustPoints.surface:1
+#: ../../docstring abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:14
+#: abaqus.Constraint.AdjustPoints.AdjustPoints.surface:1
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:14 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the surface "
 "to which the **controlPoints** are adjusted."
 msgstr ""
 
-#: ../../docstring abaqus.Constraint.AdjustPoints.AdjustPoints.controlPoints:1
+#: ../../docstring abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:16
+#: abaqus.Constraint.AdjustPoints.AdjustPoints.controlPoints:1
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:16 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the "
 "constraint control points."
 msgstr ""
 
+#: abaqus.Constraint.AdjustPoints.AdjustPoints.__init__
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody
@@ -879,14 +873,24 @@ msgstr ""
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie
+#: abaqus.Constraint.Coupling.Coupling.__init__
+#: abaqus.Constraint.DisplayBody.DisplayBody.__init__
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__
+#: abaqus.Constraint.Equation.Equation.__init__
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__
+#: abaqus.Constraint.RigidBody.RigidBody.__init__
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__
+#: abaqus.Constraint.Tie.Tie.__init__ of
 msgid "Returns"
 msgstr ""
 
+#: abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:18
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:18 of
 msgid "An :py:class:`~abaqus.Constraint.AdjustPoints.AdjustPoints` object."
 msgstr ""
 
+#: abaqus.Constraint.AdjustPoints.AdjustPoints.__init__
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody
@@ -895,10 +899,19 @@ msgstr ""
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie
+#: abaqus.Constraint.Coupling.Coupling.__init__
+#: abaqus.Constraint.DisplayBody.DisplayBody.__init__
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__
+#: abaqus.Constraint.Equation.Equation.__init__
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__
+#: abaqus.Constraint.RigidBody.RigidBody.__init__
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__
+#: abaqus.Constraint.Tie.Tie.__init__ of
 msgid "Return type"
 msgstr ""
 
+#: abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:19
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:19 of
 msgid ":class:`AdjustPoints`"
 msgstr ""
@@ -912,6 +925,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:14
+#: abaqus.Constraint.Coupling.Coupling.__init__:14
 #: abaqus.Constraint.Coupling.Coupling.surface:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the surface "
@@ -921,7 +935,9 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:16
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:17
+#: abaqus.Constraint.Coupling.Coupling.__init__:16
 #: abaqus.Constraint.Coupling.Coupling.controlPoint:1
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__:17
 #: abaqus.Constraint.MultipointConstraint.MultipointConstraint.controlPoint:1
 #: of
 msgid ""
@@ -931,6 +947,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:18
+#: abaqus.Constraint.Coupling.Coupling.__init__:18
 #: abaqus.Constraint.Coupling.Coupling.influenceRadius:1 of
 msgid ""
 "The SymbolicConstant WHOLE_SURFACE or a Float specifying the influence "
@@ -939,6 +956,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:20
+#: abaqus.Constraint.Coupling.Coupling.__init__:20
 #: abaqus.Constraint.Coupling.Coupling.couplingType:1 of
 msgid ""
 "A SymbolicConstant specifying the coupling constraint type. Possible "
@@ -947,6 +965,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:23
+#: abaqus.Constraint.Coupling.Coupling.__init__:23
 #: abaqus.Constraint.Coupling.Coupling.adjust:1
 #: abaqus.Constraint.Coupling.Coupling.setValues:7 of
 msgid ""
@@ -957,6 +976,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:27
+#: abaqus.Constraint.Coupling.Coupling.__init__:27
 #: abaqus.Constraint.Coupling.Coupling.localCsys:1
 #: abaqus.Constraint.Coupling.Coupling.setValues:11 of
 msgid ""
@@ -968,6 +988,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:31
+#: abaqus.Constraint.Coupling.Coupling.__init__:31
 #: abaqus.Constraint.Coupling.Coupling.setValues:15
 #: abaqus.Constraint.Coupling.Coupling.u1:1 of
 msgid ""
@@ -979,6 +1000,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:35
+#: abaqus.Constraint.Coupling.Coupling.__init__:35
 #: abaqus.Constraint.Coupling.Coupling.setValues:19
 #: abaqus.Constraint.Coupling.Coupling.u2:1 of
 msgid ""
@@ -990,6 +1012,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:39
+#: abaqus.Constraint.Coupling.Coupling.__init__:39
 #: abaqus.Constraint.Coupling.Coupling.setValues:23
 #: abaqus.Constraint.Coupling.Coupling.u3:1 of
 msgid ""
@@ -1001,6 +1024,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:43
+#: abaqus.Constraint.Coupling.Coupling.__init__:43
 #: abaqus.Constraint.Coupling.Coupling.setValues:27
 #: abaqus.Constraint.Coupling.Coupling.ur1:1 of
 msgid ""
@@ -1012,6 +1036,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:47
+#: abaqus.Constraint.Coupling.Coupling.__init__:47
 #: abaqus.Constraint.Coupling.Coupling.setValues:31
 #: abaqus.Constraint.Coupling.Coupling.ur2:1 of
 msgid ""
@@ -1023,6 +1048,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:51
+#: abaqus.Constraint.Coupling.Coupling.__init__:51
 #: abaqus.Constraint.Coupling.Coupling.setValues:35
 #: abaqus.Constraint.Coupling.Coupling.ur3:1 of
 msgid ""
@@ -1034,6 +1060,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:55
+#: abaqus.Constraint.Coupling.Coupling.__init__:55
 #: abaqus.Constraint.Coupling.Coupling.setValues:39
 #: abaqus.Constraint.Coupling.Coupling.weightingMethod:1 of
 msgid ""
@@ -1044,11 +1071,13 @@ msgid ""
 "DISTRIBUTING."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:60 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:60
+#: abaqus.Constraint.Coupling.Coupling.__init__:60 of
 msgid "A :py:class:`~abaqus.Constraint.Coupling.Coupling` object."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:61 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:61
+#: abaqus.Constraint.Coupling.Coupling.__init__:61 of
 msgid ":class:`Coupling`"
 msgstr ""
 
@@ -1061,6 +1090,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:14
+#: abaqus.Constraint.DisplayBody.DisplayBody.__init__:14
 #: abaqus.Constraint.DisplayBody.DisplayBody.instance:1 of
 msgid ""
 "A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object "
@@ -1069,6 +1099,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:16
+#: abaqus.Constraint.DisplayBody.DisplayBody.__init__:16
 #: abaqus.Constraint.DisplayBody.DisplayBody.controlPoints:1 of
 msgid ""
 "A :py:class:`~abaqus.BasicGeometry.ModelDotArray.ModelDotArray` object "
@@ -1080,11 +1111,13 @@ msgid ""
 "objects."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:22 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:22
+#: abaqus.Constraint.DisplayBody.DisplayBody.__init__:22 of
 msgid "A :py:class:`~abaqus.Constraint.DisplayBody.DisplayBody` object."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:23 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.DisplayBody:23
+#: abaqus.Constraint.DisplayBody.DisplayBody.__init__:23 of
 msgid ":class:`DisplayBody`"
 msgstr ""
 
@@ -1097,6 +1130,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:14
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__:14
 #: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.embeddedRegion:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the body "
@@ -1105,6 +1139,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:16
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__:16
 #: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.hostRegion:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the host "
@@ -1114,6 +1149,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:19
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__:19
 #: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues:7
 #: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.weightFactorTolerance:1 of
 msgid ""
@@ -1123,6 +1159,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:22
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__:22
 #: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues:10
 #: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.toleranceMethod:1 of
 msgid ""
@@ -1133,6 +1170,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:26
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__:26
 #: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.absoluteTolerance:1
 #: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues:14 of
 msgid ""
@@ -1145,6 +1183,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:31
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__:31
 #: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.fractionalTolerance:1
 #: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues:19 of
 msgid ""
@@ -1156,11 +1195,13 @@ msgid ""
 " BOTH."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:37 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:37
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__:37 of
 msgid "An :py:class:`~abaqus.Constraint.EmbeddedRegion.EmbeddedRegion` object."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:38 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.EmbeddedRegion:38
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__:38 of
 msgid ":class:`EmbeddedRegion`"
 msgstr ""
 
@@ -1173,6 +1214,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:14
+#: abaqus.Constraint.Equation.Equation.__init__:14
 #: abaqus.Constraint.Equation.Equation.terms:1 of
 msgid ""
 "A sequence of (Float, String, Int, Int) sequences specifying a "
@@ -1180,15 +1222,18 @@ msgid ""
 "coordinate system ID is optional."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:17 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:17
+#: abaqus.Constraint.Equation.Equation.__init__:17 of
 msgid "An :py:class:`~abaqus.Constraint.Equation.Equation` object."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:18 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:18
+#: abaqus.Constraint.Equation.Equation.__init__:18 of
 msgid ":class:`Equation`"
 msgstr ""
 
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Equation:20
+#: abaqus.Constraint.Equation.Equation.__init__:20
 #: abaqus.Constraint.Equation.Equation.setValues:3 of
 msgid ""
 ":raises If **terms** does not contain more than one entry`, "
@@ -1204,6 +1249,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:14
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__:14
 #: abaqus.Constraint.MultipointConstraint.MultipointConstraint.surface:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the surface "
@@ -1212,6 +1258,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:19
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__:19
 #: abaqus.Constraint.MultipointConstraint.MultipointConstraint.mpcType:1 of
 msgid ""
 "A SymbolicConstant specifying the MPC type of the constraint. Possible "
@@ -1220,6 +1267,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:22
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__:22
 #: abaqus.Constraint.MultipointConstraint.MultipointConstraint.csys:1
 #: abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues:7 of
 msgid ""
@@ -1231,6 +1279,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:27
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__:27
 #: abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues:12
 #: abaqus.Constraint.MultipointConstraint.MultipointConstraint.userType:1 of
 msgid ""
@@ -1241,6 +1290,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:31
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__:31
 #: abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues:16
 #: abaqus.Constraint.MultipointConstraint.MultipointConstraint.userMode:1 of
 msgid ""
@@ -1250,14 +1300,16 @@ msgid ""
 "**mpcType** = USER_MPC."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:35 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:35
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__:35 of
 msgid ""
 "A "
 ":py:class:`~abaqus.Constraint.MultipointConstraint.MultipointConstraint` "
 "object."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:36 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.MultipointConstraint:36
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__:36 of
 msgid ":class:`MultipointConstraint`"
 msgstr ""
 
@@ -1270,6 +1322,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:14
+#: abaqus.Constraint.RigidBody.RigidBody.__init__:14
 #: abaqus.Constraint.RigidBody.RigidBody.refPointRegion:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the "
@@ -1278,6 +1331,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:16
+#: abaqus.Constraint.RigidBody.RigidBody.__init__:16
 #: abaqus.Constraint.RigidBody.RigidBody.bodyRegion:1
 #: abaqus.Constraint.RigidBody.RigidBody.setValues:7 of
 msgid ""
@@ -1287,6 +1341,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:19
+#: abaqus.Constraint.RigidBody.RigidBody.__init__:19
 #: abaqus.Constraint.RigidBody.RigidBody.setValues:10
 #: abaqus.Constraint.RigidBody.RigidBody.tieRegion:1 of
 msgid ""
@@ -1296,6 +1351,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:22
+#: abaqus.Constraint.RigidBody.RigidBody.__init__:22
 #: abaqus.Constraint.RigidBody.RigidBody.pinRegion:1
 #: abaqus.Constraint.RigidBody.RigidBody.setValues:13 of
 msgid ""
@@ -1305,6 +1361,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:25
+#: abaqus.Constraint.RigidBody.RigidBody.__init__:25
 #: abaqus.Constraint.RigidBody.RigidBody.setValues:16
 #: abaqus.Constraint.RigidBody.RigidBody.surfaceRegion:1 of
 msgid ""
@@ -1314,6 +1371,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:28
+#: abaqus.Constraint.RigidBody.RigidBody.__init__:28
 #: abaqus.Constraint.RigidBody.RigidBody.refPointAtCOM:1
 #: abaqus.Constraint.RigidBody.RigidBody.setValues:19 of
 msgid ""
@@ -1324,6 +1382,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:31
+#: abaqus.Constraint.RigidBody.RigidBody.__init__:31
 #: abaqus.Constraint.RigidBody.RigidBody.isothermal:1
 #: abaqus.Constraint.RigidBody.RigidBody.setValues:22 of
 msgid ""
@@ -1331,11 +1390,13 @@ msgid ""
 "constrained. The default value is OFF."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:34 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:34
+#: abaqus.Constraint.RigidBody.RigidBody.__init__:34 of
 msgid "A :py:class:`~abaqus.Constraint.RigidBody.RigidBody` object."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:35 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.RigidBody:35
+#: abaqus.Constraint.RigidBody.RigidBody.__init__:35 of
 msgid ":class:`RigidBody`"
 msgstr ""
 
@@ -1348,6 +1409,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:14
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:14
 #: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.shellEdge:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the name of "
@@ -1356,6 +1418,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:16
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:16
 #: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.solidFace:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the name of "
@@ -1365,8 +1428,10 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:18
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:21
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:18
 #: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.positionToleranceMethod:1
 #: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues:7
+#: abaqus.Constraint.Tie.Tie.__init__:21
 #: abaqus.Constraint.Tie.Tie.positionToleranceMethod:1
 #: abaqus.Constraint.Tie.Tie.setValues:10 of
 msgid ""
@@ -1377,6 +1442,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:21
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:21
 #: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.positionTolerance:1
 #: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues:10 of
 msgid ""
@@ -1388,6 +1454,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:26
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:26
 #: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.influenceDistanceMethod:1
 #: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues:15 of
 msgid ""
@@ -1398,6 +1465,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:29
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:29
 #: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.influenceDistance:1
 #: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues:18 of
 msgid ""
@@ -1406,13 +1474,15 @@ msgid ""
 "default value is 0.0."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:32 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:32
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:32 of
 msgid ""
 "A :py:class:`~abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling` "
 "object."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:33 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:33
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:33 of
 msgid ":class:`ShellSolidCoupling`"
 msgstr ""
 
@@ -1424,27 +1494,29 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:14
-#: abaqus.Constraint.Tie.Tie.master:1 of
+#: abaqus.Constraint.Tie.Tie.__init__:14 abaqus.Constraint.Tie.Tie.master:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the name of "
 "the master surface."
 msgstr ""
 
 #: ../../docstring abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:16
-#: abaqus.Constraint.Tie.Tie.slave:1 of
+#: abaqus.Constraint.Tie.Tie.__init__:16 abaqus.Constraint.Tie.Tie.slave:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the name of "
 "the slave surface."
 msgstr ""
 
 #: ../../docstring abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:18
-#: abaqus.Constraint.Tie.Tie.adjust:1 abaqus.Constraint.Tie.Tie.setValues:7 of
+#: abaqus.Constraint.Tie.Tie.__init__:18 abaqus.Constraint.Tie.Tie.adjust:1
+#: abaqus.Constraint.Tie.Tie.setValues:7 of
 msgid ""
 "A Boolean specifying whether initial positions of tied slave nodes are "
 "adjusted to lie on the master surface. The default value is ON."
 msgstr ""
 
 #: ../../docstring abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:24
+#: abaqus.Constraint.Tie.Tie.__init__:24
 #: abaqus.Constraint.Tie.Tie.positionTolerance:1
 #: abaqus.Constraint.Tie.Tie.setValues:13 of
 msgid ""
@@ -1454,7 +1526,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:27
-#: abaqus.Constraint.Tie.Tie.setValues:16
+#: abaqus.Constraint.Tie.Tie.__init__:27 abaqus.Constraint.Tie.Tie.setValues:16
 #: abaqus.Constraint.Tie.Tie.tieRotations:1 of
 msgid ""
 "A Boolean specifying whether rotation degrees of freedom should be tied. "
@@ -1462,6 +1534,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:30
+#: abaqus.Constraint.Tie.Tie.__init__:30
 #: abaqus.Constraint.Tie.Tie.constraintRatioMethod:1
 #: abaqus.Constraint.Tie.Tie.setValues:19 of
 msgid ""
@@ -1471,6 +1544,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:33
+#: abaqus.Constraint.Tie.Tie.__init__:33
 #: abaqus.Constraint.Tie.Tie.constraintRatio:1
 #: abaqus.Constraint.Tie.Tie.setValues:22 of
 msgid ""
@@ -1481,6 +1555,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:37
+#: abaqus.Constraint.Tie.Tie.__init__:37
 #: abaqus.Constraint.Tie.Tie.constraintEnforcement:1
 #: abaqus.Constraint.Tie.Tie.setValues:26 of
 msgid ""
@@ -1490,23 +1565,29 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:41
-#: abaqus.Constraint.Tie.Tie.setValues:30 abaqus.Constraint.Tie.Tie.thickness:1
-#: of
+#: abaqus.Constraint.Tie.Tie.__init__:41 abaqus.Constraint.Tie.Tie.setValues:30
+#: abaqus.Constraint.Tie.Tie.thickness:1 of
 msgid ""
 "A Boolean specifying whether shell element thickness is considered. The "
 "default value is ON."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:44 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:44
+#: abaqus.Constraint.Tie.Tie.__init__:44 of
 msgid "A :py:class:`~abaqus.Constraint.Tie.Tie` object."
 msgstr ""
 
-#: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:45 of
+#: abaqus.Constraint.ConstraintModel.ConstraintModel.Tie:45
+#: abaqus.Constraint.Tie.Tie.__init__:45 of
 msgid ":class:`Tie`"
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:18
-msgid "Object features"
+#: ../../reference/mdb/model/constraint.rst:20
+msgid "Classes"
+msgstr ""
+
+#: abaqus.Constraint.Constraint.Constraint:1 of
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: abaqus.Constraint.Constraint.Constraint:1 of
@@ -1598,8 +1679,20 @@ msgid ""
 "default value is OFF."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:29
+#: ../../reference/mdb/model/constraint.rst:33
 msgid "AdjustPoints"
+msgstr ""
+
+#: abaqus.Constraint.AdjustPoints.AdjustPoints:1
+#: abaqus.Constraint.Coupling.Coupling:1
+#: abaqus.Constraint.DisplayBody.DisplayBody:1
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion:1
+#: abaqus.Constraint.Equation.Equation:1
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint:1
+#: abaqus.Constraint.RigidBody.RigidBody:1
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling:1
+#: abaqus.Constraint.Tie.Tie:1 of
+msgid "Bases: :py:class:`~abaqus.Constraint.Constraint.Constraint`"
 msgstr ""
 
 #: abaqus.Constraint.AdjustPoints.AdjustPoints:1 of
@@ -1625,14 +1718,10 @@ msgstr ""
 msgid "ADJUST"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.Constraint.AdjustPoints.AdjustPoints.suppressed>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Constraint.AdjustPoints.AdjustPoints.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1654,25 +1743,14 @@ msgstr ""
 msgid "This method modifies the AdjustPoints object."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:9 of
 msgid ""
-":py:obj:`resume <abaqus.Constraint.AdjustPoints.AdjustPoints.resume>`\\ "
-"\\(\\)"
+"Check `AdjustPoints.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adjustpointspyc.htm?contextscope=all"
+"#simaker-adjustpoints__init__pyc>`__."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.Constraint.AdjustPoints.AdjustPoints.suppress>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`delete <abaqus.Constraint.AdjustPoints.AdjustPoints.delete>`\\ "
-"\\(indices\\)"
-msgstr ""
-
-#: ../../reference/mdb/model/constraint.rst:38
+#: ../../reference/mdb/model/constraint.rst:44
 msgid "Coupling"
 msgstr ""
 
@@ -1687,7 +1765,7 @@ msgstr ""
 msgid "COUPLING"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ":py:obj:`suppressed <abaqus.Constraint.Coupling.Coupling.suppressed>`\\"
 msgstr ""
 
@@ -1787,10 +1865,6 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Constraint.Coupling.Coupling.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`__init__ <abaqus.Constraint.Coupling.Coupling.__init__>`\\ "
 "\\(name\\, surface\\, controlPoint\\, ...\\[\\, ...\\]\\)"
@@ -1807,18 +1881,11 @@ msgstr ""
 msgid "This method modifies the Coupling object."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`resume <abaqus.Constraint.Coupling.Coupling.resume>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`suppress <abaqus.Constraint.Coupling.Coupling.suppress>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
+#: abaqus.Constraint.Coupling.Coupling.__init__:9 of
 msgid ""
-":py:obj:`delete <abaqus.Constraint.Coupling.Coupling.delete>`\\ "
-"\\(indices\\)"
+"Check `Coupling.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-couplingpyc.htm?contextscope=all"
+"#simaker-coupling__init__pyc>`__."
 msgstr ""
 
 #: abaqus.Constraint.Coupling.Coupling.setValues:4 of
@@ -1828,7 +1895,7 @@ msgid ""
 "#simaker-couplingsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:46
+#: ../../reference/mdb/model/constraint.rst:54
 msgid "DisplayBody"
 msgstr ""
 
@@ -1846,14 +1913,10 @@ msgstr ""
 msgid "DISPLAY BODY"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.Constraint.DisplayBody.DisplayBody.suppressed>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Constraint.DisplayBody.DisplayBody.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1874,25 +1937,14 @@ msgstr ""
 msgid "This method modifies the DisplayBody object."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: abaqus.Constraint.DisplayBody.DisplayBody.__init__:9 of
 msgid ""
-":py:obj:`resume <abaqus.Constraint.DisplayBody.DisplayBody.resume>`\\ "
-"\\(\\)"
+"Check `DisplayBody.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaybodypyc.htm?contextscope=all"
+"#simaker-displaybody__init__pyc>`__."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`suppress <abaqus.Constraint.DisplayBody.DisplayBody.suppress>`\\"
-" \\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`delete <abaqus.Constraint.DisplayBody.DisplayBody.delete>`\\ "
-"\\(indices\\)"
-msgstr ""
-
-#: ../../reference/mdb/model/constraint.rst:54
+#: ../../reference/mdb/model/constraint.rst:64
 msgid "EmbeddedRegion"
 msgstr ""
 
@@ -1908,7 +1960,7 @@ msgstr ""
 msgid "EMBEDDED ELEMENT"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:7:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.suppressed>`\\"
@@ -1963,10 +2015,6 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`__init__ "
 "<abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__>`\\ \\(name\\, "
@@ -1985,22 +2033,11 @@ msgstr ""
 msgid "This method modifies the EmbeddedRegion object."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.__init__:9 of
 msgid ""
-":py:obj:`resume "
-"<abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.resume>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.suppress>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`delete "
-"<abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.delete>`\\ \\(indices\\)"
+"Check `EmbeddedRegion.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-embeddedregionpyc.htm?contextscope=all"
+"#simaker-embeddedregion__init__pyc>`__."
 msgstr ""
 
 #: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.setValues:4 of
@@ -2010,7 +2047,7 @@ msgid ""
 "#simaker-embeddedregionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:62
+#: ../../reference/mdb/model/constraint.rst:74
 msgid "Equation"
 msgstr ""
 
@@ -2025,12 +2062,8 @@ msgstr ""
 msgid "EQUATION"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ":py:obj:`suppressed <abaqus.Constraint.Equation.Equation.suppressed>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Constraint.Equation.Equation.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2050,21 +2083,14 @@ msgstr ""
 msgid "This method modifies the Equation object."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`resume <abaqus.Constraint.Equation.Equation.resume>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`suppress <abaqus.Constraint.Equation.Equation.suppress>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
+#: abaqus.Constraint.Equation.Equation.__init__:9 of
 msgid ""
-":py:obj:`delete <abaqus.Constraint.Equation.Equation.delete>`\\ "
-"\\(indices\\)"
+"Check `Equation.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-equationpyc.htm?contextscope=all"
+"#simaker-equation__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:70
+#: ../../reference/mdb/model/constraint.rst:84
 msgid "MultipointConstraint"
 msgstr ""
 
@@ -2080,7 +2106,7 @@ msgstr ""
 msgid "MPC"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:6:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.Constraint.MultipointConstraint.MultipointConstraint.suppressed>`\\"
@@ -2125,12 +2151,6 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
-":py:obj:`name "
-"<abaqus.Constraint.MultipointConstraint.MultipointConstraint.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
 ":py:obj:`__init__ "
 "<abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__>`\\"
 " \\(name\\, surface\\, controlPoint\\, mpcType\\)"
@@ -2148,25 +2168,11 @@ msgstr ""
 msgid "This method modifies the MultipointConstraint object."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: abaqus.Constraint.MultipointConstraint.MultipointConstraint.__init__:9 of
 msgid ""
-":py:obj:`resume "
-"<abaqus.Constraint.MultipointConstraint.MultipointConstraint.resume>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.Constraint.MultipointConstraint.MultipointConstraint.suppress>`\\"
-" \\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`delete "
-"<abaqus.Constraint.MultipointConstraint.MultipointConstraint.delete>`\\ "
-"\\(indices\\)"
+"Check `MultipointConstraint.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-multipointconstraintpyc.htm?contextscope=all"
+"#simaker-multipointconstraint__init__pyc>`__."
 msgstr ""
 
 #: abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues:4 of
@@ -2176,7 +2182,7 @@ msgid ""
 "#simaker-multipointconstraintsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:78
+#: ../../reference/mdb/model/constraint.rst:94
 msgid "RigidBody"
 msgstr ""
 
@@ -2192,7 +2198,7 @@ msgstr ""
 msgid "RIGID BODY"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:9:<autosummary>:1
+#: ../../None:9:<autosummary>:1
 msgid ":py:obj:`suppressed <abaqus.Constraint.RigidBody.RigidBody.suppressed>`\\"
 msgstr ""
 
@@ -2261,10 +2267,6 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Constraint.RigidBody.RigidBody.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`__init__ <abaqus.Constraint.RigidBody.RigidBody.__init__>`\\ "
 "\\(name\\, refPointRegion\\[\\, bodyRegion\\, ...\\]\\)"
@@ -2281,20 +2283,11 @@ msgstr ""
 msgid "This method modifies the RigidBody object."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`resume <abaqus.Constraint.RigidBody.RigidBody.resume>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
+#: abaqus.Constraint.RigidBody.RigidBody.__init__:9 of
 msgid ""
-":py:obj:`suppress <abaqus.Constraint.RigidBody.RigidBody.suppress>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`delete <abaqus.Constraint.RigidBody.RigidBody.delete>`\\ "
-"\\(indices\\)"
+"Check `RigidBody.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rigidbodypyc.htm?contextscope=all"
+"#simaker-rigidbody__init__pyc>`__."
 msgstr ""
 
 #: abaqus.Constraint.RigidBody.RigidBody.setValues:4 of
@@ -2304,7 +2297,7 @@ msgid ""
 "#simaker-rigidbodysetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:86
+#: ../../reference/mdb/model/constraint.rst:104
 msgid "ShellSolidCoupling"
 msgstr ""
 
@@ -2319,7 +2312,7 @@ msgstr ""
 msgid "SHELL TO SOLID COUPLING"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:7:<autosummary>:1
+#: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.suppressed>`\\"
@@ -2371,12 +2364,6 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
-":py:obj:`name "
-"<abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
 ":py:obj:`__init__ "
 "<abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__>`\\ "
 "\\(name\\, shellEdge\\, solidFace\\[\\, ...\\]\\)"
@@ -2394,25 +2381,11 @@ msgstr ""
 msgid "This method modifies the ShellSolidCoupling object."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
+#: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:9 of
 msgid ""
-":py:obj:`resume "
-"<abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.resume>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.suppress>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`delete "
-"<abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.delete>`\\ "
-"\\(indices\\)"
+"Check `ShellSolidCoupling.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shellsolidcouplingpyc.htm?contextscope=all"
+"#simaker-shellsolidcoupling__init__pyc>`__."
 msgstr ""
 
 #: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues:4 of
@@ -2422,7 +2395,7 @@ msgid ""
 "#simaker-shellsolidcouplingsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:94
+#: ../../reference/mdb/model/constraint.rst:114
 msgid "Tie"
 msgstr ""
 
@@ -2437,7 +2410,7 @@ msgstr ""
 msgid "TIE"
 msgstr ""
 
-#: ../../None:11:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 msgid ":py:obj:`suppressed <abaqus.Constraint.Tie.Tie.suppressed>`\\"
 msgstr ""
 
@@ -2512,10 +2485,6 @@ msgstr ""
 msgid "A Boolean specifying whether shell element thickness is considered."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Constraint.Tie.Tie.name>`\\"
-msgstr ""
-
 #: ../../None:5:<autosummary>:1
 msgid ""
 ":py:obj:`__init__ <abaqus.Constraint.Tie.Tie.__init__>`\\ \\(name\\, "
@@ -2540,16 +2509,11 @@ msgstr ""
 msgid "This method modifies the Tie object."
 msgstr ""
 
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`resume <abaqus.Constraint.Tie.Tie.resume>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`suppress <abaqus.Constraint.Tie.Tie.suppress>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ":py:obj:`delete <abaqus.Constraint.Tie.Tie.delete>`\\ \\(indices\\)"
+#: abaqus.Constraint.Tie.Tie.__init__:9 of
+msgid ""
+"Check `Tie.__init__ on help.3ds.com/2020 "
+"<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tiepyc.htm?contextscope=all"
+"#simaker-tie__init__pyc>`__."
 msgstr ""
 
 #: abaqus.Constraint.Tie.Tie.setValues:4 of
@@ -2857,5 +2821,470 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "**indices**"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`stefanBoltzmann "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.stefanBoltzmann>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`absoluteZero "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.absoluteZero>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`waveFormulation "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.waveFormulation>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`universalGas "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.universalGas>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`noPartsInputFile "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.noPartsInputFile>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restartIncrement "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.restartIncrement>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`endRestartStep "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.endRestartStep>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`shellToSolid "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.shellToSolid>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lastChangedCount "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.lastChangedCount>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`description "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.description>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restartJob "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.restartJob>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restartStep "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.restartStep>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`globalJob "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.globalJob>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyConstraints "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.copyConstraints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyConnectors "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.copyConnectors>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyInteractions "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.copyInteractions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`keywordBlock "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.keywordBlock>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`rootAssembly "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.rootAssembly>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`amplitudes "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.amplitudes>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`profiles "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.profiles>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`boundaryConditions "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.boundaryConditions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`constraints "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.constraints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`analyticalFields "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.analyticalFields>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`discreteFields "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.discreteFields>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`predefinedFields "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.predefinedFields>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`interactions "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.interactions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`interactionProperties "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.interactionProperties>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`contactControls "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.contactControls>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`contactInitializations "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.contactInitializations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`contactStabilizations "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.contactStabilizations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`linkedInstances "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.linkedInstances>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`linkedParts "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.linkedParts>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`loads "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.loads>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`materials "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.materials>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`calibrations "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.calibrations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sections "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.sections>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`remeshingRules "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.remeshingRules>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sketches "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.sketches>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`parts "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.parts>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`steps "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.steps>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`featureOptions "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.featureOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`adaptiveMeshConstraints "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.adaptiveMeshConstraints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`adaptiveMeshControls "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.adaptiveMeshControls>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`timePoints "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.timePoints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`filters "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.filters>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`integratedOutputSections "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.integratedOutputSections>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`fieldOutputRequests "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.fieldOutputRequests>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`historyOutputRequests "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.historyOutputRequests>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`optimizationTasks "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.optimizationTasks>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`tableCollections "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.tableCollections>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`eventSeriesTypes "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.eventSeriesTypes>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`eventSeriesDatas "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.eventSeriesDatas>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init__ "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.__init__>`\\ "
+#~ "\\(name\\[\\, description\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ModelFromInputFile "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.ModelFromInputFile>`\\"
+#~ " \\(name\\, inputFileName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ModelFromOdbFile "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.ModelFromOdbFile>`\\"
+#~ " \\(name\\, odbFileName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ModelFromNastranFile "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.ModelFromNastranFile>`\\"
+#~ " \\(modelName\\, inputFileName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setValues "
+#~ "<abaqus.Constraint.ConstraintModel.ConstraintModel.setValues>`\\ "
+#~ "\\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`name <abaqus.Constraint.AdjustPoints.AdjustPoints.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.Constraint.AdjustPoints.AdjustPoints.resume>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.Constraint.AdjustPoints.AdjustPoints.suppress>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`delete "
+#~ "<abaqus.Constraint.AdjustPoints.AdjustPoints.delete>`\\ "
+#~ "\\(indices\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`name <abaqus.Constraint.Coupling.Coupling.name>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`resume <abaqus.Constraint.Coupling.Coupling.resume>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.Constraint.Coupling.Coupling.suppress>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`delete <abaqus.Constraint.Coupling.Coupling.delete>`\\"
+#~ " \\(indices\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`name <abaqus.Constraint.DisplayBody.DisplayBody.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.Constraint.DisplayBody.DisplayBody.resume>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.Constraint.DisplayBody.DisplayBody.suppress>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`delete "
+#~ "<abaqus.Constraint.DisplayBody.DisplayBody.delete>`\\ "
+#~ "\\(indices\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`name <abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.resume>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.suppress>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`delete "
+#~ "<abaqus.Constraint.EmbeddedRegion.EmbeddedRegion.delete>`\\ "
+#~ "\\(indices\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`name <abaqus.Constraint.Equation.Equation.name>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`resume <abaqus.Constraint.Equation.Equation.resume>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.Constraint.Equation.Equation.suppress>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`delete <abaqus.Constraint.Equation.Equation.delete>`\\"
+#~ " \\(indices\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.Constraint.MultipointConstraint.MultipointConstraint.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.Constraint.MultipointConstraint.MultipointConstraint.resume>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.Constraint.MultipointConstraint.MultipointConstraint.suppress>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`delete "
+#~ "<abaqus.Constraint.MultipointConstraint.MultipointConstraint.delete>`\\"
+#~ " \\(indices\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`name <abaqus.Constraint.RigidBody.RigidBody.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.Constraint.RigidBody.RigidBody.resume>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.Constraint.RigidBody.RigidBody.suppress>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`delete "
+#~ "<abaqus.Constraint.RigidBody.RigidBody.delete>`\\ \\(indices\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.resume>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.suppress>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`delete "
+#~ "<abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.delete>`\\"
+#~ " \\(indices\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`name <abaqus.Constraint.Tie.Tie.name>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`resume <abaqus.Constraint.Tie.Tie.resume>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`suppress <abaqus.Constraint.Tie.Tie.suppress>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`delete <abaqus.Constraint.Tie.Tie.delete>`\\ \\(indices\\)"
 #~ msgstr ""
 
