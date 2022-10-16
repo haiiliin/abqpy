@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-09 00:18+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,16 +32,2734 @@ msgstr ""
 msgid "Create properties for Part"
 msgstr ""
 
-#: ../../None:11:<autosummary>:1
+#: abaqus.Property.PropertyPart.PropertyPart:1 of
+msgid "Bases: :py:class:`~abaqus.Part.PartBase.PartBase`"
+msgstr ""
+
+#: abaqus.Property.CompositeLayup.CompositeLayup
+#: abaqus.Property.CompositePly.CompositePly
+#: abaqus.Property.MaterialOrientation.MaterialOrientation
+#: abaqus.Property.PropertyAssembly.PropertyAssembly
+#: abaqus.Property.PropertyPart.PropertyPart
+#: abaqus.Property.SectionAssignment.SectionAssignment of
+msgid "Public Data Attributes:"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+":py:obj:`geometryValidity "
+"<abaqus.Part.PartBase.PartBase.geometryValidity>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid "A Boolean specifying the validity of the geometry of the part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`isOutOfDate <abaqus.Part.PartBase.PartBase.isOutOfDate>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"An Int specifying that feature parameters have been modified but that the"
+" part has not been regenerated."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`timeStamp <abaqus.Part.PartBase.PartBase.timeStamp>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid "A Float specifying when the part was last modified."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`vertices <abaqus.Part.PartBase.PartBase.vertices>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A :py:class:`~abaqus.BasicGeometry.VertexArray.VertexArray` object "
+"specifying all the vertices in the part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+":py:obj:`ignoredVertices "
+"<abaqus.Part.PartBase.PartBase.ignoredVertices>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"An "
+":py:class:`~abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray` "
+"object specifying all the ignored vertices in the part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`edges <abaqus.Part.PartBase.PartBase.edges>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object "
+"specifying all the edges in the part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`ignoredEdges <abaqus.Part.PartBase.PartBase.ignoredEdges>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"An :py:class:`~abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray` "
+"object specifying all the ignored edges in the part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`faces <abaqus.Part.PartBase.PartBase.faces>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A :py:class:`~abaqus.BasicGeometry.FaceArray.FaceArray` object specifying"
+" all the faces in the part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`cells <abaqus.Part.PartBase.PartBase.cells>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A :py:class:`~abaqus.BasicGeometry.CellArray.CellArray` object specifying"
+" all the cells in the part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`features <abaqus.Part.PartBase.PartBase.features>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid "A repository of Feature objects specifying all the features in the part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`featuresById <abaqus.Part.PartBase.PartBase.featuresById>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A repository of Feature objects specifying all Feature objects in the "
+"part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`datums <abaqus.Part.PartBase.PartBase.datums>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid "A repository of Datum objects specifying all the datums in the part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`elements <abaqus.Part.PartBase.PartBase.elements>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A :py:class:`~abaqus.Mesh.MeshElementArray.MeshElementArray` object "
+"specifying all the elements in the part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`elemFaces <abaqus.Part.PartBase.PartBase.elemFaces>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A repository of MeshFace objects specifying all the element faces in the "
+"part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`elementFaces <abaqus.Part.PartBase.PartBase.elementFaces>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A :py:class:`~abaqus.Mesh.MeshFaceArray.MeshFaceArray` object specifying "
+"all the unique element faces in the part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`nodes <abaqus.Part.PartBase.PartBase.nodes>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying "
+"all the nodes in the part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`retainedNodes <abaqus.Part.PartBase.PartBase.retainedNodes>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A :py:class:`~abaqus.Mesh.MeshNodeArray.MeshNodeArray` object specifying "
+"all the retained nodes in the substructure part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`sets <abaqus.Part.PartBase.PartBase.sets>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid "A repository of Set objects specifying for more information, see Set."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`allSets <abaqus.Part.PartBase.PartBase.allSets>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A repository of Set objects specifying the contents of the **allSets** "
+"repository is the same as the contents of the **sets** repository."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+":py:obj:`allInternalSets "
+"<abaqus.Part.PartBase.PartBase.allInternalSets>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1 ../../None:34:<autosummary>:1
+msgid "A repository of Set objects specifying picked regions."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`surfaces <abaqus.Part.PartBase.PartBase.surfaces>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A repository of Surface objects specifying for more information, see "
+"Surface."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`allSurfaces <abaqus.Part.PartBase.PartBase.allSurfaces>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A repository of Surface objects specifying the contents of the "
+"**allSurfaces** repository is the same as the contents of the "
+"**surfaces** repository."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+":py:obj:`allInternalSurfaces "
+"<abaqus.Part.PartBase.PartBase.allInternalSurfaces>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1 ../../None:34:<autosummary>:1
+msgid "A repository of Surface objects specifying picked regions."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`skins <abaqus.Part.PartBase.PartBase.skins>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid "A repository of Skin objects specifying the skins created on the part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`stringers <abaqus.Part.PartBase.PartBase.stringers>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A repository of Stringer objects specifying the stringers created on the "
+"part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+":py:obj:`referencePoints "
+"<abaqus.Part.PartBase.PartBase.referencePoints>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1 ../../None:34:<autosummary>:1
+msgid "A repository of ReferencePoint objects."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+":py:obj:`engineeringFeatures "
+"<abaqus.Part.PartBase.PartBase.engineeringFeatures>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1 ../../None:34:<autosummary>:1
+msgid ""
+"An "
+":py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature`"
+" object."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+":py:obj:`sectionAssignments "
+"<abaqus.Part.PartBase.PartBase.sectionAssignments>`\\"
+msgstr ""
+
+#: ../../None:29:<autosummary>:1 ../../None:34:<autosummary>:1
+msgid ""
+"A "
+":py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray`"
+" object."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+":py:obj:`materialOrientations "
+"<abaqus.Part.PartBase.PartBase.materialOrientations>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A "
+":py:class:`~abaqus.Property.MaterialOrientationArray.MaterialOrientationArray`"
+" object."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+":py:obj:`compositeLayups "
+"<abaqus.Part.PartBase.PartBase.compositeLayups>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid "A repository of CompositeLayup objects."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`elemEdges <abaqus.Part.PartBase.PartBase.elemEdges>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A repository of MeshEdge objects specifying all the element edges in the "
+"part."
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ":py:obj:`elementEdges <abaqus.Part.PartBase.PartBase.elementEdges>`\\"
+msgstr ""
+
+#: ../../None:34:<autosummary>:1
+msgid ""
+"A :py:class:`~abaqus.Mesh.MeshEdgeArray.MeshEdgeArray` object specifying "
+"all the unique element edges in the part."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Feature.Feature.Feature.name>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:12
+#: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:12
+#: abaqus.Property.CompositeLayup.CompositeLayup.__init__:12
+#: abaqus.Property.CompositeLayup.CompositeLayup.name:1
+#: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:12 of
+msgid "A String specifying the repository key."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`id <abaqus.Feature.Feature.Feature.id>`\\"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "An Int specifying the ID of the feature."
+msgstr ""
+
+#: abaqus.Property.CompositeLayup.CompositeLayup
+#: abaqus.Property.CompositePly.CompositePly
+#: abaqus.Property.MaterialOrientation.MaterialOrientation
+#: abaqus.Property.PropertyAssembly.PropertyAssembly
+#: abaqus.Property.PropertyPart.PropertyPart
+#: abaqus.Property.SectionAssignment.SectionAssignment of
+msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`CompositeLayup "
+"<abaqus.Property.PropertyPart.PropertyPart.CompositeLayup>`\\ "
+"\\(name\\[\\, description\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:11:<autosummary>:1 ../../None:13:<autosummary>:1
+#: abaqus.Property.CompositeLayup.CompositeLayup.__init__:1
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:1 of
 msgid "This method creates a CompositeLayup object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`SectionAssignment "
+"<abaqus.Property.PropertyPart.PropertyPart.SectionAssignment>`\\ "
+"\\(region\\, sectionName\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1 ../../None:3:<autosummary>:1
+#: ../../None:7:<autosummary>:1
+#: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment:1
+#: abaqus.Property.PropertyPart.PropertyPart.SectionAssignment:1
+#: abaqus.Property.SectionAssignment.SectionAssignment.__init__:1 of
+msgid "This method creates a SectionAssignment object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`MaterialOrientation "
+"<abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation>`\\ "
+"\\(\\[region\\, localCsys\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1 ../../None:5:<autosummary>:1
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:1
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:1
+#: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:1 of
+msgid "This method creates a MaterialOrientation object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`assignBeamSectionOrientation "
+"<abaqus.Property.PropertyPart.PropertyPart.assignBeamSectionOrientation>`\\"
+" \\(region\\, method\\, n1\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+#: abaqus.Property.PropertyPart.PropertyPart.assignBeamSectionOrientation:1 of
+msgid "This method assigns a beam section orientation to a region of a part."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`assignMaterialOrientation "
+"<abaqus.Property.PropertyPart.PropertyPart.assignMaterialOrientation>`\\ "
+"\\(region\\, localCsys\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+#: abaqus.Property.PropertyPart.PropertyPart.assignMaterialOrientation:1 of
+msgid "This method assigns a material orientation to a region."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`assignRebarOrientation "
+"<abaqus.Property.PropertyPart.PropertyPart.assignRebarOrientation>`\\ "
+"\\(region\\, localCsys\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+#: abaqus.Property.PropertyPart.PropertyPart.assignRebarOrientation:1 of
+msgid "This method assigns a rebar reference orientation to a region."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`flipNormal "
+"<abaqus.Property.PropertyPart.PropertyPart.flipNormal>`\\ "
+"\\(regions\\[\\, referenceRegion\\]\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+#: abaqus.Property.PropertyPart.PropertyPart.flipNormal:1 of
+msgid ""
+"This method flips the normals of shell or membrane elements of an orphan "
+"mesh or of two-dimensional geometric regions."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`flipTangent "
+"<abaqus.Property.PropertyPart.PropertyPart.flipTangent>`\\ \\(regions\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+#: abaqus.Property.PropertyPart.PropertyPart.flipTangent:1 of
+msgid ""
+"This method flips the tangents of beam or truss elements of an orphan "
+"mesh or of one-dimensional geometric regions."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`unassignBeamSectionOrientation "
+"<abaqus.Property.PropertyPart.PropertyPart.unassignBeamSectionOrientation>`\\"
+" \\(index\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+#: abaqus.Property.PropertyPart.PropertyPart.unassignBeamSectionOrientation:1
+#: of
+msgid "This method deletes a beam section orientation assignment."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`unassignMaterialOrientation "
+"<abaqus.Property.PropertyPart.PropertyPart.unassignMaterialOrientation>`\\"
+" \\(index\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+#: abaqus.Property.PropertyPart.PropertyPart.unassignMaterialOrientation:1 of
+msgid "This method deletes a material orientation assignment."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`unassignRebarOrientation "
+"<abaqus.Property.PropertyPart.PropertyPart.unassignRebarOrientation>`\\ "
+"\\(index\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+#: abaqus.Property.PropertyPart.PropertyPart.unassignRebarOrientation:1 of
+msgid "This method deletes a rebar orientation assignment."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.Part.PartBase.PartBase.__init__>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`PartFromBooleanCut "
+"<abaqus.Part.PartBase.PartBase.PartFromBooleanCut>`\\ \\(name\\, "
+"instanceToBeCut\\, ...\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method creates a Part in the parts repository after subtracting or "
+"cutting the geometries of a group of part instances from that of a base "
+"part instance."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`PartFromBooleanMerge "
+"<abaqus.Part.PartBase.PartBase.PartFromBooleanMerge>`\\ \\(name\\, "
+"instances\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method creates a Part in the parts repository after merging two or "
+"more part instances."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`PartFromExtrude2DMesh "
+"<abaqus.Part.PartBase.PartBase.PartFromExtrude2DMesh>`\\ \\(name\\, "
+"part\\, depth\\, ...\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method creates a Part object by extruding an existing two-"
+"dimensional orphan mesh Part object in the positive **Z**-direction and "
+"places it in the parts repository."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`PartFromGeometryFile "
+"<abaqus.Part.PartBase.PartBase.PartFromGeometryFile>`\\ \\(name\\, "
+"geometryFile\\, ...\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method creates a Part object and places it in the parts repository."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`PartFromInstanceMesh "
+"<abaqus.Part.PartBase.PartBase.PartFromInstanceMesh>`\\ \\(name\\[\\, "
+"partInstances\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method creates a Part object containing the mesh found in the "
+"supplied PartInstance objects and places the new Part object in the parts"
+" repository."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`PartFromMesh <abaqus.Part.PartBase.PartBase.PartFromMesh>`\\ "
+"\\(name\\[\\, copySets\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method creates a Part object containing the mesh found in the part "
+"and places the new Part object in the parts repository."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`PartFromMeshMirror "
+"<abaqus.Part.PartBase.PartBase.PartFromMeshMirror>`\\ \\(name\\, part\\, "
+"point1\\, point2\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method creates a Part object by mirroring an existing orphan mesh "
+"Part object about a specified plane and places it in the parts "
+"repository."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`PartFromNodesAndElements "
+"<abaqus.Part.PartBase.PartBase.PartFromNodesAndElements>`\\ \\(name\\, "
+"...\\[\\, twist\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method creates a Part object from nodes and elements and places it "
+"in the parts repository."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`PartFromOdb <abaqus.Part.PartBase.PartBase.PartFromOdb>`\\ "
+"\\(name\\, odb\\[\\, fileName\\, instance\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method creates an orphan mesh Part object by reading an output "
+"database."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`PartFromSection3DMeshByPlane "
+"<abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane>`\\ "
+"\\(name\\, part\\, ...\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method creates a Part object by cutting an existing three-"
+"dimensional orphan mesh Part object by a plane and places it in the parts"
+" repository."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`PartFromSubstructure "
+"<abaqus.Part.PartBase.PartBase.PartFromSubstructure>`\\ \\(name\\, "
+"substructureFile\\, ...\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method creates a substructure Part object by reading a substructure "
+"sim file and places it in the parts repository."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`Part2DGeomFrom2DMesh "
+"<abaqus.Part.PartBase.PartBase.Part2DGeomFrom2DMesh>`\\ \\(name\\, "
+"part\\, featureAngle\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method creates a geometric Part object from the outline of an "
+"existing two-dimensional orphan mesh Part object and places it in the "
+"parts repository."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`setValues <abaqus.Part.PartBase.PartBase.setValues>`\\ "
+"\\(\\*args\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method modifies the Part object."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`addGeomToSketch "
+"<abaqus.Part.PartBase.PartBase.addGeomToSketch>`\\ \\(sketch\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method converts a part into a sketch by projecting all of the edges "
+"of the part onto the X-Y plane of the sketch."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`assignThickness "
+"<abaqus.Part.PartBase.PartBase.assignThickness>`\\ \\(faces\\[\\, "
+"thickness\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method assigns thickness data to shell faces."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ":py:obj:`backup <abaqus.Part.PartBase.PartBase.backup>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method makes a backup copy of the features in the part."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`checkGeometry <abaqus.Part.PartBase.PartBase.checkGeometry>`\\ "
+"\\(\\[detailed\\, reportFacetErrors\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method checks the validity of the geometry of the part and prints a "
+"count of all topological entities on the part (faces, edges, vertices, "
+"etc.)."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`clearGeometryCache "
+"<abaqus.Part.PartBase.PartBase.clearGeometryCache>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method clears the geometry cache."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`deleteAllFeatures "
+"<abaqus.Part.PartBase.PartBase.deleteAllFeatures>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method deletes all the features in the part."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`deleteFeatures <abaqus.Part.PartBase.PartBase.deleteFeatures>`\\"
+" \\(featureNames\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method deletes the given features."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getAngle <abaqus.Part.PartBase.PartBase.getAngle>`\\ "
+"\\(plane1\\, plane2\\, line1\\, line2\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
+msgid "This method returns the angle between the specified entities."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getArea <abaqus.Part.PartBase.PartBase.getArea>`\\ "
+"\\(faces\\[\\, relativeAccuracy\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method returns the total surface area of a given face or group of "
+"faces."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getAssociatedCADPaths "
+"<abaqus.Part.PartBase.PartBase.getAssociatedCADPaths>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method returns the paths to the associated CAD part and root file."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getCADParameters "
+"<abaqus.Part.PartBase.PartBase.getCADParameters>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method returns the names and values of the CAD parameters associated"
+" with the part."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getCentroid <abaqus.Part.PartBase.PartBase.getCentroid>`\\ "
+"\\(faces\\, cells\\[\\, relativeAccuracy\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "Location of the centroid of a given face/cell or group of faces/cells"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getCoordinates <abaqus.Part.PartBase.PartBase.getCoordinates>`\\"
+" \\(entity\\, csys\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method returns the coordinates of specified point."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getCurvature <abaqus.Part.PartBase.PartBase.getCurvature>`\\ "
+"\\(edges\\[\\, samplePoints\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method returns the maximum curvature of a given edge or group of "
+"edges."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getDistance <abaqus.Part.PartBase.PartBase.getDistance>`\\ "
+"\\(entity1\\, entity2\\)"
+msgstr ""
+
+#: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
+msgid ""
+"Depending on the arguments provided, this method returns one of the "
+"following:"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getLength <abaqus.Part.PartBase.PartBase.getLength>`\\ "
+"\\(edges\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method returns the length of a given edge or group of edges."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getPerimeter <abaqus.Part.PartBase.PartBase.getPerimeter>`\\ "
+"\\(faces\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method returns the total perimeter of a given face or group of faces."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getVolume <abaqus.Part.PartBase.PartBase.getVolume>`\\ "
+"\\(cells\\[\\, relativeAccuracy\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method returns the volume area of a given cell or group of cells."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getMassProperties "
+"<abaqus.Part.PartBase.PartBase.getMassProperties>`\\ \\(\\[regions\\, "
+"...\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method returns the mass properties of a part or region."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getFeatureFaces "
+"<abaqus.Part.PartBase.PartBase.getFeatureFaces>`\\ \\(name\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method returns a sequence of Face objects that are created by the "
+"given feature."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getFeatureEdges "
+"<abaqus.Part.PartBase.PartBase.getFeatureEdges>`\\ \\(name\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method returns a sequence of Edge objects that are created by the "
+"given feature."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getFeatureCells "
+"<abaqus.Part.PartBase.PartBase.getFeatureCells>`\\ \\(name\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method returns a sequence of Cell objects that are created by the "
+"given feature."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`getFeatureVertices "
+"<abaqus.Part.PartBase.PartBase.getFeatureVertices>`\\ \\(name\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method returns a sequence of ConstrainedSketchVertex objects that "
+"are created by the given feature."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`isAlignedWithSketch "
+"<abaqus.Part.PartBase.PartBase.isAlignedWithSketch>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method checks if the normal of an analytical rigid surface part is "
+"aligned with that of its sketch."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`printAssignedSections "
+"<abaqus.Part.PartBase.PartBase.printAssignedSections>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method prints information on each section that has been assigned to "
+"a region of the part."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`projectEdgesOntoSketch "
+"<abaqus.Part.PartBase.PartBase.projectEdgesOntoSketch>`\\ \\(sketch\\, "
+"edges\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method projects the selected edges of a part onto the specified "
+"ConstrainedSketch object."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`projectReferencesOntoSketch "
+"<abaqus.Part.PartBase.PartBase.projectReferencesOntoSketch>`\\ "
+"\\(sketch\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method projects the vertices of specified edges, and datum points "
+"from the part onto the specified ConstrainedSketch object."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`queryAttributes "
+"<abaqus.Part.PartBase.PartBase.queryAttributes>`\\ "
+"\\(\\[printResults\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method prints the following information about a part:"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`queryCachedStates "
+"<abaqus.Part.PartBase.PartBase.queryCachedStates>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method displays the position of geometric states relative to the "
+"sequence of features in the part cache."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`queryGeometry <abaqus.Part.PartBase.PartBase.queryGeometry>`\\ "
+"\\(\\[relativeAccuracy\\, printResults\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`queryRegionsMissingSections "
+"<abaqus.Part.PartBase.PartBase.queryRegionsMissingSections>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method returns all regions in the part that do not have a section "
+"assignment but require one for analysis."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`queryDisjointPlyRegions "
+"<abaqus.Part.PartBase.PartBase.queryDisjointPlyRegions>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method provides a list of all composite plys in the current part "
+"which have disjoint regions."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ":py:obj:`regenerate <abaqus.Part.PartBase.PartBase.regenerate>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method regenerates a part."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`regenerationWarnings "
+"<abaqus.Part.PartBase.PartBase.regenerationWarnings>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
+msgid "This method prints any regeneration warnings associated with the features."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`removeInvalidGeometry "
+"<abaqus.Part.PartBase.PartBase.removeInvalidGeometry>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "Removes all invalid entities from the part, leaving a valid part."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ":py:obj:`restore <abaqus.Part.PartBase.PartBase.restore>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
+msgid ""
+"This method restores the parameters of all features in the assembly to "
+"the value they had before a failed regeneration."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`resumeAllFeatures "
+"<abaqus.Part.PartBase.PartBase.resumeAllFeatures>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method resumes all the suppressed features in the part."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`resumeFeatures <abaqus.Part.PartBase.PartBase.resumeFeatures>`\\"
+" \\(featureNames\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method resumes the specified suppressed features in the part."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`resumeLastSetFeatures "
+"<abaqus.Part.PartBase.PartBase.resumeLastSetFeatures>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method resumes the last set of features to be suppressed in the part."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`saveGeometryCache "
+"<abaqus.Part.PartBase.PartBase.saveGeometryCache>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method caches the current geometry."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`setAssociatedCADPaths "
+"<abaqus.Part.PartBase.PartBase.setAssociatedCADPaths>`\\ "
+"\\(\\[partFile\\, rootFile\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method sets the paths to the associated CAD part and root file."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`suppressFeatures "
+"<abaqus.Part.PartBase.PartBase.suppressFeatures>`\\ \\(featureNames\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method suppresses the given features."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`writeAcisFile <abaqus.Part.PartBase.PartBase.writeAcisFile>`\\ "
+"\\(fileName\\[\\, version\\]\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method exports the geometry of the part to a named file in ACIS "
+"format."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`writeCADParameters "
+"<abaqus.Part.PartBase.PartBase.writeCADParameters>`\\ \\(paramFile\\[\\, "
+"...\\]\\)"
+msgstr ""
+
+#: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
+msgid ""
+"This method writes the parameters that were imported from the CAD system "
+"to a parameter file."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`writeIgesFile <abaqus.Part.PartBase.PartBase.writeIgesFile>`\\ "
+"\\(fileName\\, flavor\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method exports the geometry of the part to a named file in IGES "
+"format."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`writeStepFile <abaqus.Part.PartBase.PartBase.writeStepFile>`\\ "
+"\\(fileName\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method exports the geometry of the part to a named file in STEP "
+"format."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`writeVdaFile <abaqus.Part.PartBase.PartBase.writeVdaFile>`\\ "
+"\\(fileName\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+"This method exports the geometry of the part to a named file in VDA-FS "
+"format."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`copyMeshPattern "
+"<abaqus.Part.PartBase.PartBase.copyMeshPattern>`\\ \\(elements\\, "
+"faces\\, elemFaces\\, ...\\)"
+msgstr ""
+
+#: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
+msgid ""
+"This method copies a mesh pattern from a source region consisting of a "
+"set of shell elements or element faces onto a target face, mapping nodes "
+"and elements in a one-one correspondence between source and target."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`smoothNodes <abaqus.Part.PartBase.PartBase.smoothNodes>`\\ "
+"\\(nodes\\)"
+msgstr ""
+
+#: ../../None:46:<autosummary>:1 ../../None:68:<autosummary>:1
+msgid ""
+"This method smooths the given nodes of a native mesh, moving them locally"
+" to a more optimal location that improves the quality of the mesh"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ":py:obj:`Lock <abaqus.Part.PartBase.PartBase.Lock>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method locks the part."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ":py:obj:`Unlock <abaqus.Part.PartBase.PartBase.Unlock>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method unlocks the part."
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid ""
+":py:obj:`LockForUpgrade <abaqus.Part.PartBase.PartBase.LockForUpgrade>`\\"
+" \\(\\)"
+msgstr ""
+
+#: ../../None:68:<autosummary>:1
+msgid "This method locks the part for upgrade."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`AutoRepair <abaqus.Part.PartFeature.PartFeature.AutoRepair>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method carries out a sequence of geometry repair operations if it "
+"contains invalid entities."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`AddCells <abaqus.Part.PartFeature.PartFeature.AddCells>`\\ "
+"\\(faceList\\[\\, flipped\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid "This method tries to convert a shell entity to a solid entity."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`AnalyticRigidSurf2DPlanar "
+"<abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurf2DPlanar>`\\ "
+"\\(sketch\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates a first Feature object for an analytical rigid "
+"surface by creating a planar wire from the given ConstrainedSketch "
+"object."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`AnalyticRigidSurfExtrude "
+"<abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfExtrude>`\\ "
+"\\(sketch\\[\\, depth\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates a first Feature object for an analytical rigid "
+"surface by extruding the given ConstrainedSketch object by the given "
+"depth, creating a surface."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`AnalyticRigidSurfRevolve "
+"<abaqus.Part.PartFeature.PartFeature.AnalyticRigidSurfRevolve>`\\ "
+"\\(sketch\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates a first Feature object for an analytical rigid "
+"surface by revolving the given ConstrainedSketch object by 360° about the"
+" **Y**-axis."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`AssignMidsurfaceRegion "
+"<abaqus.Part.PartFeature.PartFeature.AssignMidsurfaceRegion>`\\ "
+"\\(cellList\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid "This method assign a mid-surface property to sequence of Cell objects."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`BaseSolidExtrude "
+"<abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude>`\\ \\(sketch\\, "
+"depth\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates a first Feature object by extruding the given "
+"ConstrainedSketch object by the given depth, creating a solid."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`BaseSolidRevolve "
+"<abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve>`\\ \\(sketch\\, "
+"angle\\[\\, pitch\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates a first Feature object by revolving the given "
+"ConstrainedSketch object by the given angle, creating a solid."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`BaseSolidSweep "
+"<abaqus.Part.PartFeature.PartFeature.BaseSolidSweep>`\\ \\(sketch\\, "
+"path\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates a first Feature object by sweeping the given profile "
+"ConstrainedSketch object along the path defined by the path "
+"ConstrainedSketch object, creating a solid."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`BaseShell <abaqus.Part.PartFeature.PartFeature.BaseShell>`\\ "
+"\\(sketch\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates a first Feature object by creating a planar shell "
+"from the given ConstrainedSketch object."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`BaseShellExtrude "
+"<abaqus.Part.PartFeature.PartFeature.BaseShellExtrude>`\\ \\(sketch\\, "
+"depth\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates a first Feature object by extruding the given "
+"ConstrainedSketch object by the given depth, creating a shell."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`BaseShellRevolve "
+"<abaqus.Part.PartFeature.PartFeature.BaseShellRevolve>`\\ \\(sketch\\, "
+"angle\\[\\, pitch\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates a first Feature object by revolving the given "
+"ConstrainedSketch object by the given angle, creating a shell."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`BaseShellSweep "
+"<abaqus.Part.PartFeature.PartFeature.BaseShellSweep>`\\ \\(sketch\\, "
+"path\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates a first Feature object by sweeping the given section "
+"ConstrainedSketch object along the path defined by the path "
+"ConstrainedSketch object, creating a shell."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`BaseWire <abaqus.Part.PartFeature.PartFeature.BaseWire>`\\ "
+"\\(sketch\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates a first Feature object by creating a planar wire from"
+" the given ConstrainedSketch object."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`BlendFaces <abaqus.Part.PartFeature.PartFeature.BlendFaces>`\\ "
+"\\(side1\\, side2\\[\\, method\\, path\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates a Feature object by creating new faces that blends "
+"two sets of faces."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`Chamfer <abaqus.Part.PartFeature.PartFeature.Chamfer>`\\ "
+"\\(length\\, edgeList\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by chamfering the given "
+"list of edges with a given length."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`Mirror <abaqus.Part.PartFeature.PartFeature.Mirror>`\\ "
+"\\(mirrorPlane\\, keepOriginal\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method mirrors existing part geometry across a plane to create new "
+"geometry."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`ConvertToAnalytical "
+"<abaqus.Part.PartFeature.PartFeature.ConvertToAnalytical>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method attempts to change entities into a simpler form that will "
+"speed up processing and make entities available during feature "
+"operations."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`ConvertToPrecise "
+"<abaqus.Part.PartFeature.PartFeature.ConvertToPrecise>`\\ "
+"\\(\\[method\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method attempts to change imprecise entities so that the geometry "
+"becomes precise."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`CoverEdges <abaqus.Part.PartFeature.PartFeature.CoverEdges>`\\ "
+"\\(edgeList\\[\\, tryAnalytical\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method generates a face using the given edges as the face's "
+"boundaries."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`Cut <abaqus.Part.PartFeature.PartFeature.Cut>`\\ "
+"\\(sketchPlane\\, sketchPlaneSide\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by cutting a hole using "
+"the given ConstrainedSketch object."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`CutExtrude <abaqus.Part.PartFeature.PartFeature.CutExtrude>`\\ "
+"\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by extruding the given "
+"ConstrainedSketch object by the given depth and cutting away material in "
+"the solid and shell regions of the part."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`CutLoft <abaqus.Part.PartFeature.PartFeature.CutLoft>`\\ "
+"\\(loftsections\\[\\, startCondition\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by lofting between the "
+"given sections and cutting away material from the part."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`CutRevolve <abaqus.Part.PartFeature.PartFeature.CutRevolve>`\\ "
+"\\(sketchPlane\\, sketchPlaneSide\\, ...\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by revolving the given "
+"ConstrainedSketch object by the given angle and cutting away material "
+"from the part."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`CutSweep <abaqus.Part.PartFeature.PartFeature.CutSweep>`\\ "
+"\\(path\\, profile\\[\\, pathPlane\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by sweeping the given "
+"ConstrainedSketch object along a path which may be a ConstrainedSketch or"
+" a sequence of Edge objects and cutting away material from the part."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`ExtendFaces <abaqus.Part.PartFeature.PartFeature.ExtendFaces>`\\"
+" \\(\\[faces\\, extendAlong\\, distance\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method extends faces along its free edges by offsetting the external"
+" edges along the surfaces."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`FaceFromElementFaces "
+"<abaqus.Part.PartFeature.PartFeature.FaceFromElementFaces>`\\ "
+"\\(elementFaces\\[\\, stitch\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates a geometry face from a collection of orphan element "
+"faces."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`HoleBlindFromEdges "
+"<abaqus.Part.PartFeature.PartFeature.HoleBlindFromEdges>`\\ \\(plane\\, "
+"planeSide\\, ...\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by creating a circular "
+"blind hole of the given diameter and depth and cutting away material in "
+"the solid and shell regions of the part."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`HoleFromEdges "
+"<abaqus.Part.PartFeature.PartFeature.HoleFromEdges>`\\ \\(diameter\\, "
+"edge1\\, distance1\\, ...\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by creating a circular "
+"hole of the given diameter in a 2D planar part and cutting away material "
+"in the shell and wire regions of the part."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`HoleThruAllFromEdges "
+"<abaqus.Part.PartFeature.PartFeature.HoleThruAllFromEdges>`\\ \\(plane\\,"
+" planeSide\\, ...\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by creating a circular "
+"through hole of the given diameter and cutting away material in the solid"
+" and shell regions of the part."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`MergeEdges <abaqus.Part.PartFeature.PartFeature.MergeEdges>`\\ "
+"\\(\\[edgeList\\, extendSelection\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method merges edges either by extending the user selection or using "
+"only the selected edges."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`OffsetFaces <abaqus.Part.PartFeature.PartFeature.OffsetFaces>`\\"
+" \\(faceList\\[\\, distance\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid "This method creates new faces by offsetting existing faces."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`RemoveCells <abaqus.Part.PartFeature.PartFeature.RemoveCells>`\\"
+" \\(cellList\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid "This method converts a solid entity to a shell entity."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`RemoveFaces <abaqus.Part.PartFeature.PartFeature.RemoveFaces>`\\"
+" \\(faceList\\[\\, deleteCells\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid "This method removes faces from a solid entity or from a shell entity."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`RemoveFacesAndStitch "
+"<abaqus.Part.PartFeature.PartFeature.RemoveFacesAndStitch>`\\ "
+"\\(faceList\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method removes faces from a solid entity and attempts to close the "
+"resulting gap by extending the neighboring faces of the solid."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`RemoveRedundantEntities "
+"<abaqus.Part.PartFeature.PartFeature.RemoveRedundantEntities>`\\ "
+"\\(\\[vertexList\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method removes redundant edges and vertices from a solid or a shell "
+"entity."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`RepairFaceNormals "
+"<abaqus.Part.PartFeature.PartFeature.RepairFaceNormals>`\\ "
+"\\(\\[faceList\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid "This method works on the entire part or a sequence of shell faces."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`RepairInvalidEdges "
+"<abaqus.Part.PartFeature.PartFeature.RepairInvalidEdges>`\\ "
+"\\(edgeList\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid "This method repairs invalid edges."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`RepairSliver "
+"<abaqus.Part.PartFeature.PartFeature.RepairSliver>`\\ \\(face\\, "
+"point1\\, point2\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid "This method repairs the selected sliver from the selected face."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`RepairSmallEdges "
+"<abaqus.Part.PartFeature.PartFeature.RepairSmallEdges>`\\ "
+"\\(edgeList\\[\\, toleranceChecks\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid "This method repairs small edges."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`RepairSmallFaces "
+"<abaqus.Part.PartFeature.PartFeature.RepairSmallFaces>`\\ "
+"\\(faceList\\[\\, toleranceChecks\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid "This method repairs small faces."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`ReplaceFaces "
+"<abaqus.Part.PartFeature.PartFeature.ReplaceFaces>`\\ \\(faceList\\[\\, "
+"stitch\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid "This method replaces the selected faces with a single face."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`Round <abaqus.Part.PartFeature.PartFeature.Round>`\\ "
+"\\(radius\\, edgeList\\, vertexList\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by rounding (filleting) "
+"the given list of entities with the given radius."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`Shell <abaqus.Part.PartFeature.PartFeature.Shell>`\\ "
+"\\(sketchPlane\\, sketchPlaneSide\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by creating a planar "
+"shell from the given ConstrainedSketch object."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`ShellExtrude "
+"<abaqus.Part.PartFeature.PartFeature.ShellExtrude>`\\ \\(sketchPlane\\, "
+"sketchPlaneSide\\, ...\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by extruding the given "
+"ConstrainedSketch object by the given depth, creating a shell protrusion."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`ShellLoft <abaqus.Part.PartFeature.PartFeature.ShellLoft>`\\ "
+"\\(loftsections\\[\\, startCondition\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by lofting between the "
+"given sections and adding shell faces to the part."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`ShellRevolve "
+"<abaqus.Part.PartFeature.PartFeature.ShellRevolve>`\\ \\(sketchPlane\\, "
+"sketchPlaneSide\\, ...\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by revolving the given "
+"ConstrainedSketch object by the given angle, creating a shell protrusion."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`ShellSweep <abaqus.Part.PartFeature.PartFeature.ShellSweep>`\\ "
+"\\(path\\, profile\\[\\, pathPlane\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by sweeping the given "
+"ConstrainedSketch object or a sequence of Edge objects along a path which"
+" may be a ConstrainedSketch or a sequence of Edge objects, creating a "
+"shell swept protrusion."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`SolidExtrude "
+"<abaqus.Part.PartFeature.PartFeature.SolidExtrude>`\\ \\(sketchPlane\\, "
+"sketchPlaneSide\\, ...\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by extruding the given "
+"ConstrainedSketch object by the given depth, creating a solid protrusion."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`SolidLoft <abaqus.Part.PartFeature.PartFeature.SolidLoft>`\\ "
+"\\(loftsections\\[\\, startCondition\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by lofting between the "
+"given sections and adding material to the part."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`SolidRevolve "
+"<abaqus.Part.PartFeature.PartFeature.SolidRevolve>`\\ \\(sketchPlane\\, "
+"sketchPlaneSide\\, ...\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by revolving the given "
+"ConstrainedSketch object by the given angle, creating a solid protrusion."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`SolidSweep <abaqus.Part.PartFeature.PartFeature.SolidSweep>`\\ "
+"\\(path\\, profile\\[\\, pathPlane\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by sweeping the given "
+"ConstrainedSketch object or a Face object along a path which may be a "
+"ConstrainedSketch or a sequence of Edge objects, creating a solid swept "
+"protrusion."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`Stitch <abaqus.Part.PartFeature.PartFeature.Stitch>`\\ "
+"\\(\\[edgeList\\, stitchTolerance\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method attempts to create a valid part by binding together free and "
+"imprecise edges of all the faces of a part."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`Wire <abaqus.Part.PartFeature.PartFeature.Wire>`\\ "
+"\\(sketchPlane\\, sketchPlaneSide\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by creating a planar "
+"wire from the given ConstrainedSketch object."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`WireSpline <abaqus.Part.PartFeature.PartFeature.WireSpline>`\\ "
+"\\(points\\[\\, mergeType\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by creating a spline "
+"wire that passes through a sequence of given points."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`WirePolyLine "
+"<abaqus.Part.PartFeature.PartFeature.WirePolyLine>`\\ \\(points\\[\\, "
+"mergeType\\, meshable\\]\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by creating a polyline "
+"wire that passes through a sequence of given points."
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+":py:obj:`WireFromEdge "
+"<abaqus.Part.PartFeature.PartFeature.WireFromEdge>`\\ \\(edgeList\\)"
+msgstr ""
+
+#: ../../None:59:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by creating a Wire by "
+"selecting one or more Edge objects of a Solid or Shell part."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`AttachmentPoints "
+"<abaqus.Feature.Feature.Feature.AttachmentPoints>`\\ \\(name\\, "
+"points\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method creates an attachment points Feature."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`AttachmentPointsAlongDirection "
+"<abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection>`\\ "
+"\\(name\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object by creating attachment points along "
+"a direction or between two points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`AttachmentPointsOffsetFromEdges "
+"<abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges>`\\ "
+"\\(name\\, edges\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object by creating attachment points along "
+"or offset from one or more connected edges."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByCylFace "
+"<abaqus.Feature.Feature.Feature.DatumAxisByCylFace>`\\ \\(face\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumAxis object along the "
+"axis of a cylinder or cone."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByNormalToPlane "
+"<abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane>`\\ \\(plane\\, "
+"point\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumAxis object normal to the"
+" specified plane and passing through the specified point."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByParToEdge "
+"<abaqus.Feature.Feature.Feature.DatumAxisByParToEdge>`\\ \\(edge\\, "
+"point\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumAxis object parallel to "
+"the specified edge and passing through the specified point."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByPrincipalAxis "
+"<abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis>`\\ "
+"\\(principalAxis\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumAxis object along one of "
+"the three principal axes."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByRotation "
+"<abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByThreePoint "
+"<abaqus.Feature.Feature.Feature.DatumAxisByThreePoint>`\\ \\(point1\\, "
+"point2\\, point3\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumAxis object normal to the"
+" circle described by three points and through its center."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByThruEdge "
+"<abaqus.Feature.Feature.Feature.DatumAxisByThruEdge>`\\ \\(edge\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumAxis object along the "
+"specified edge."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByTwoPlane "
+"<abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane>`\\ \\(plane1\\, "
+"plane2\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumAxis object at the "
+"intersection of two planes."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumAxisByTwoPoint "
+"<abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint>`\\ \\(point1\\, "
+"point2\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumAxis object along the "
+"line joining two points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumCsysByDefault "
+"<abaqus.Feature.Feature.Feature.DatumCsysByDefault>`\\ "
+"\\(coordSysType\\[\\, name\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumCsys object from the "
+"specified default coordinate system at the origin."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumCsysByOffset "
+"<abaqus.Feature.Feature.Feature.DatumCsysByOffset>`\\ \\(coordSysType\\, "
+"...\\[\\, name\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumCsys object by offsetting"
+" the origin of an existing datum coordinate system to a specified point."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumCsysByThreePoints "
+"<abaqus.Feature.Feature.Feature.DatumCsysByThreePoints>`\\ "
+"\\(coordSysType\\, origin\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumCsys object from three "
+"points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumCsysByTwoLines "
+"<abaqus.Feature.Feature.Feature.DatumCsysByTwoLines>`\\ "
+"\\(coordSysType\\, line1\\, line2\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumCsys object from two "
+"orthogonal lines."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPlaneByPrincipalPlane "
+"<abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane>`\\ "
+"\\(principalPlane\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumPlane object through the "
+"origin along one of the three principal planes."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPlaneByOffset "
+"<abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPlaneByRotation "
+"<abaqus.Feature.Feature.Feature.DatumPlaneByRotation>`\\ \\(plane\\, "
+"axis\\, angle\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumPlane object by rotating "
+"a plane about the specified axis through the specified angle."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPlaneByThreePoints "
+"<abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints>`\\ \\(point1\\, "
+"point2\\, point3\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumPlane object defined by "
+"passing through three points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPlaneByLinePoint "
+"<abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint>`\\ \\(line\\, "
+"point\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumPlane object that pass "
+"through the specified line and through the specified point that does not "
+"lie on the line."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPlaneByPointNormal "
+"<abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal>`\\ \\(point\\, "
+"normal\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumPlane object normal to "
+"the specified line and running through the specified point."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPlaneByTwoPoint "
+"<abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint>`\\ \\(point1\\, "
+"point2\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumPlane object midway "
+"between two points and normal to the line connecting the points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPointByCoordinate "
+"<abaqus.Feature.Feature.Feature.DatumPointByCoordinate>`\\ \\(coords\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumPoint object at the point"
+" defined by the specified coordinates."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPointByOffset "
+"<abaqus.Feature.Feature.Feature.DatumPointByOffset>`\\ \\(point\\, "
+"vector\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumPoint object offset from "
+"an existing point by a vector."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPointByMidPoint "
+"<abaqus.Feature.Feature.Feature.DatumPointByMidPoint>`\\ \\(point1\\, "
+"point2\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumPoint object midway "
+"between two points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPointByOnFace "
+"<abaqus.Feature.Feature.Feature.DatumPointByOnFace>`\\ \\(face\\, "
+"edge1\\, offset1\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumPoint object on the "
+"specified face, offset from two edges."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPointByEdgeParam "
+"<abaqus.Feature.Feature.Feature.DatumPointByEdgeParam>`\\ \\(edge\\, "
+"parameter\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumPoint object along an "
+"edge at a selected distance from one end of the edge."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPointByProjOnEdge "
+"<abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge>`\\ \\(point\\, "
+"edge\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumPoint object along an "
+"edge by projecting an existing point along the normal to the edge."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`DatumPointByProjOnFace "
+"<abaqus.Feature.Feature.Feature.DatumPointByProjOnFace>`\\ \\(point\\, "
+"face\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a DatumPoint object on a "
+"specified face by projecting an existing point onto the face."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`MakeSketchTransform "
+"<abaqus.Feature.Feature.Feature.MakeSketchTransform>`\\ "
+"\\(sketchPlane\\[\\, origin\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method creates a Transform object."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByDatumPlane "
+"<abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane>`\\ \\(cells\\,"
+" datumPlane\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method partitions one or more cells using the given datum plane."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByExtendFace "
+"<abaqus.Feature.Feature.Feature.PartitionCellByExtendFace>`\\ \\(cells\\,"
+" extendFace\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions one or more cells by extending the underlying "
+"geometry of a given face to partition the target cells."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByExtrudeEdge "
+"<abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge>`\\ "
+"\\(cells\\, edges\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions one or more cells by extruding selected edges in "
+"the given direction."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByPatchNCorners "
+"<abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners>`\\ "
+"\\(cell\\, cornerPoints\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions a cell using an N-sided cutting patch defined by "
+"the given corner points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByPatchNEdges "
+"<abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges>`\\ \\(cell\\,"
+" edges\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions a cell using an N-sided cutting patch defined by "
+"the given edges."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByPlaneNormalToEdge "
+"<abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge>`\\ "
+"\\(cells\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions one or more cells using a plane normal to an edge "
+"at the given edge point."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByPlanePointNormal "
+"<abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal>`\\ "
+"\\(cells\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions one or more cells using a plane defined by a point"
+" and a normal direction."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellByPlaneThreePoints "
+"<abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints>`\\ "
+"\\(cells\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions one or more cells using a plane defined by three "
+"points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionCellBySweepEdge "
+"<abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge>`\\ \\(cells\\, "
+"edges\\, sweepPath\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions one or more cells by sweeping selected edges along"
+" the given sweep path."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionEdgeByDatumPlane "
+"<abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane>`\\ \\(edges\\,"
+" datumPlane\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method partitions an edge where it intersects with a datum plane."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionEdgeByParam "
+"<abaqus.Feature.Feature.Feature.PartitionEdgeByParam>`\\ \\(edges\\, "
+"parameter\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions one or more edges at the given normalized edge "
+"parameter."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionEdgeByPoint "
+"<abaqus.Feature.Feature.Feature.PartitionEdgeByPoint>`\\ \\(edge\\, "
+"point\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method partitions an edge at the given point."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByAuto "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByAuto>`\\ \\(face\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method automatically partitions a target face into simple regions "
+"that can be meshed using a structured meshing technique."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByCurvedPathEdgeParams "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams>`\\ "
+"\\(face\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions a face normal to two edges, using a curved path "
+"between the two given edge points defined by the normalized edge "
+"parameters."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByCurvedPathEdgePoints "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints>`\\ "
+"\\(face\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions a face normal to two edges, using a curved path "
+"between the two given edge points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByDatumPlane "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane>`\\ \\(faces\\,"
+" datumPlane\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method partitions one or more faces using the given datum plane."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByExtendFace "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace>`\\ \\(faces\\,"
+" extendFace\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions one or more faces by extending the underlying "
+"geometry of another given face to partition the target faces."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByIntersectFace "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace>`\\ "
+"\\(faces\\, cuttingFaces\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions one or more faces using the given cutting faces to"
+" partition the target faces."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByProjectingEdges "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges>`\\ "
+"\\(faces\\, edges\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions one or more faces by projecting the given edges on"
+" the target faces."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceByShortestPath "
+"<abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath>`\\ "
+"\\(faces\\, point1\\, ...\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions one or more faces using a minimum distance path "
+"between the two given points."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceBySketch "
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketch>`\\ \\(faces\\, "
+"sketch\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method partitions one or more planar faces by sketching on them."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceBySketchDistance "
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance>`\\ "
+"\\(faces\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions one or more faces by sketching on a sketch plane "
+"and then projecting the sketch toward the target faces through the given "
+"distance."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceBySketchRefPoint "
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint>`\\ "
+"\\(faces\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions one or more faces by sketching on a sketch plane "
+"and then projecting the sketch toward the target faces through a distance"
+" governed by the reference point."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`PartitionFaceBySketchThruAll "
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll>`\\ "
+"\\(faces\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method partitions one or more faces by sketching on a sketch plane "
+"and then projecting toward the target faces through an infinite distance."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`ReferencePoint "
+"<abaqus.Feature.Feature.Feature.ReferencePoint>`\\ \\(point\\[\\, "
+"instanceName\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates a Feature object and a ReferencePoint object at the "
+"specified location."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`RemoveWireEdges "
+"<abaqus.Feature.Feature.Feature.RemoveWireEdges>`\\ \\(wireEdgeList\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method removes wire edges."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`WirePolyLine <abaqus.Feature.Feature.Feature.WirePolyLine>`\\ "
+"\\(points\\[\\, mergeType\\, meshable\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method creates an additional Feature object by creating a series of "
+"wires joining points in pairs."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`isSuppressed <abaqus.Feature.Feature.Feature.isSuppressed>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method queries the suppressed state of the feature."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ":py:obj:`restore <abaqus.Feature.Feature.Feature.restore>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+"This method restores the parameters of a feature to the value they had "
+"when the backup method was invoked on the part or assembly."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.Feature.Feature.Feature.resume>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method resumes suppressed features."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ""
+":py:obj:`setValues <abaqus.Feature.Feature.Feature.setValues>`\\ "
+"\\(\\[parameter\\, parameter1\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method modifies the Feature object."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.Feature.Feature.Feature.suppress>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method suppresses features."
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:4
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:4
 #: abaqus.Property.CompositeLayup.CompositeLayup.GeometryShellSection:4
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:4
+#: abaqus.Property.CompositeLayup.CompositeLayup.__init__:4
+#: abaqus.Property.CompositePly.CompositePly.__init__:4
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:4
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:4
 #: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment:4
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:4
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:4
@@ -53,7 +2771,8 @@ msgstr ""
 #: abaqus.Property.PropertyPart.PropertyPart.flipTangent:5
 #: abaqus.Property.PropertyPart.PropertyPart.unassignBeamSectionOrientation:4
 #: abaqus.Property.PropertyPart.PropertyPart.unassignMaterialOrientation:4
-#: abaqus.Property.PropertyPart.PropertyPart.unassignRebarOrientation:4 of
+#: abaqus.Property.PropertyPart.PropertyPart.unassignRebarOrientation:4
+#: abaqus.Property.SectionAssignment.SectionAssignment.__init__:4 of
 msgid "This function can be accessed by::"
 msgstr ""
 
@@ -68,8 +2787,11 @@ msgstr ""
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection
 #: abaqus.Property.CompositeLayup.CompositeLayup.GeometryShellSection
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection
+#: abaqus.Property.CompositeLayup.CompositeLayup.__init__
 #: abaqus.Property.CompositeLayup.CompositeLayup.setValues
+#: abaqus.Property.CompositePly.CompositePly.__init__
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__
 #: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation
@@ -81,26 +2803,21 @@ msgstr ""
 #: abaqus.Property.PropertyPart.PropertyPart.flipTangent
 #: abaqus.Property.PropertyPart.PropertyPart.unassignBeamSectionOrientation
 #: abaqus.Property.PropertyPart.PropertyPart.unassignMaterialOrientation
-#: abaqus.Property.PropertyPart.PropertyPart.unassignRebarOrientation of
+#: abaqus.Property.PropertyPart.PropertyPart.unassignRebarOrientation
+#: abaqus.Property.SectionAssignment.SectionAssignment.__init__ of
 msgid "Parameters"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../docstring
-#: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:12
-#: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:12
-#: abaqus.Property.CompositeLayup.CompositeLayup.name:1
-#: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:12 of
-msgid "A String specifying the repository key."
-msgstr ""
-
 #: ../../None:11:<autosummary>:1 ../../docstring
+#: abaqus.Property.CompositeLayup.CompositeLayup.__init__:14
 #: abaqus.Property.CompositeLayup.CompositeLayup.description:1
 #: abaqus.Property.CompositeLayup.CompositeLayup.setValues:7
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:14 of
 msgid "A String specifying a description of the composite layup."
 msgstr ""
 
-#: ../../docstring abaqus.Property.CompositeLayup.CompositeLayup.offsetType:1
+#: ../../docstring abaqus.Property.CompositeLayup.CompositeLayup.__init__:16
+#: abaqus.Property.CompositeLayup.CompositeLayup.offsetType:1
 #: abaqus.Property.CompositeLayup.CompositeLayup.setValues:9
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:16 of
 msgid ""
@@ -111,7 +2828,8 @@ msgid ""
 "OFFSET_FIELD, and GLOBAL. The default value is GLOBAL."
 msgstr ""
 
-#: ../../docstring abaqus.Property.CompositeLayup.CompositeLayup.offsetField:1
+#: ../../docstring abaqus.Property.CompositeLayup.CompositeLayup.__init__:21
+#: abaqus.Property.CompositeLayup.CompositeLayup.offsetField:1
 #: abaqus.Property.CompositeLayup.CompositeLayup.setValues:14
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:21 of
 msgid ""
@@ -120,7 +2838,8 @@ msgid ""
 "empty string."
 msgstr ""
 
-#: ../../docstring abaqus.Property.CompositeLayup.CompositeLayup.offsetValues:1
+#: ../../docstring abaqus.Property.CompositeLayup.CompositeLayup.__init__:24
+#: abaqus.Property.CompositeLayup.CompositeLayup.offsetValues:1
 #: abaqus.Property.CompositeLayup.CompositeLayup.setValues:17
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:24 of
 msgid ""
@@ -128,7 +2847,8 @@ msgid ""
 "only if **elementType** = SHELL. The default value is 0.0."
 msgstr ""
 
-#: ../../docstring abaqus.Property.CompositeLayup.CompositeLayup.elementType:1
+#: ../../docstring abaqus.Property.CompositeLayup.CompositeLayup.__init__:27
+#: abaqus.Property.CompositeLayup.CompositeLayup.elementType:1
 #: abaqus.Property.CompositeLayup.CompositeLayup.setValues:20
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:27 of
 msgid ""
@@ -139,6 +2859,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:16
+#: abaqus.Property.CompositeLayup.CompositeLayup.__init__:30
 #: abaqus.Property.CompositeLayup.CompositeLayup.setValues:23
 #: abaqus.Property.CompositeLayup.CompositeLayup.symmetric:1
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:30 of
@@ -151,11 +2872,15 @@ msgstr ""
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection
 #: abaqus.Property.CompositeLayup.CompositeLayup.GeometryShellSection
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection
+#: abaqus.Property.CompositeLayup.CompositeLayup.__init__
+#: abaqus.Property.CompositePly.CompositePly.__init__
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__
 #: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation
 #: abaqus.Property.PropertyPart.PropertyPart.SectionAssignment
+#: abaqus.Property.SectionAssignment.SectionAssignment.__init__
 #: abaqus.Property.SectionAssignment.SectionAssignment.getVertices of
 msgid "Returns"
 msgstr ""
@@ -170,29 +2895,30 @@ msgstr ""
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection
 #: abaqus.Property.CompositeLayup.CompositeLayup.GeometryShellSection
 #: abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection
+#: abaqus.Property.CompositeLayup.CompositeLayup.__init__
+#: abaqus.Property.CompositePly.CompositePly.__init__
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__
 #: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation
 #: abaqus.Property.PropertyPart.PropertyPart.SectionAssignment
+#: abaqus.Property.SectionAssignment.SectionAssignment.__init__
 #: abaqus.Property.SectionAssignment.SectionAssignment.getVertices of
 msgid "Return type"
 msgstr ""
 
+#: abaqus.Property.CompositeLayup.CompositeLayup.__init__:34
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:34 of
 msgid ":class:`CompositeLayup`"
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly
+#: abaqus.Property.CompositeLayup.CompositeLayup.__init__
+#: abaqus.Property.CompositePly.CompositePly.__init__
 #: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup
 #: abaqus.Property.SectionAssignment.SectionAssignment.getVertices of
 msgid "Raises"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-#: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:1
-#: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:1 of
-msgid "This method creates a MaterialOrientation object."
 msgstr ""
 
 #: abaqus.Property.MaterialOrientation.MaterialOrientation:16
@@ -203,6 +2929,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:12
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.region:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:12 of
 msgid ""
@@ -212,6 +2939,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:12
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:14
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.localCsys:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:14 of
 msgid ""
@@ -224,6 +2952,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:17
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:19
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.axis:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:19 of
 msgid ""
@@ -235,6 +2964,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:21
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:23
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.angle:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:23 of
 msgid ""
@@ -245,6 +2975,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:24
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:26
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.stackDirection:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:26 of
 msgid ""
@@ -255,6 +2986,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:27
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:29
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.fieldName:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:29 of
 msgid ""
@@ -264,6 +2996,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:30
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:32
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.orientationType:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:32 of
 msgid ""
@@ -276,6 +3009,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:42
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:37
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.normalAxisDirection:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:37 of
 msgid ""
@@ -285,6 +3019,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:41
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.normalAxisDefinition:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:41 of
 msgid ""
@@ -295,6 +3030,7 @@ msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:50
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:45
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.normalAxisRegion:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:45 of
 msgid ""
@@ -305,6 +3041,7 @@ msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:53
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:48
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.normalAxisDatum:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:48 of
 msgid ""
@@ -315,6 +3052,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:56
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:51
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.flipNormalDirection:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:51 of
 msgid ""
@@ -324,6 +3062,7 @@ msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:59
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:54
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.normalAxisVector:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:54 of
 msgid ""
@@ -333,6 +3072,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:62
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:57
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.primaryAxisDirection:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:57 of
 msgid ""
@@ -342,6 +3082,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:61
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.primaryAxisDefinition:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:61 of
 msgid ""
@@ -352,6 +3093,7 @@ msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:70
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:65
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.primaryAxisRegion:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:65 of
 msgid ""
@@ -361,6 +3103,7 @@ msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:73
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:68
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.primaryAxisDatum:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:68 of
 msgid ""
@@ -371,6 +3114,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:76
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:71
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.flipPrimaryDirection:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:71 of
 msgid ""
@@ -380,6 +3124,7 @@ msgstr ""
 
 #: ../../None:22:<autosummary>:1 ../../docstring
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:79
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:74
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.primaryAxisVector:1
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:74 of
 msgid ""
@@ -395,14 +3140,9 @@ msgid ""
 msgstr ""
 
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:83
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:78
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation:78 of
 msgid ":class:`MaterialOrientation`"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1 ../../None:7:<autosummary>:1
-#: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment:1
-#: abaqus.Property.PropertyPart.PropertyPart.SectionAssignment:1 of
-msgid "This method creates a SectionAssignment object."
 msgstr ""
 
 #: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment:10
@@ -416,6 +3156,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment:13
 #: abaqus.Property.PropertyPart.PropertyPart.SectionAssignment:13
+#: abaqus.Property.SectionAssignment.SectionAssignment.__init__:13
 #: abaqus.Property.SectionAssignment.SectionAssignment.region:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Set.Set` object specifying the region to "
@@ -425,6 +3166,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment:15
 #: abaqus.Property.PropertyPart.PropertyPart.SectionAssignment:15
+#: abaqus.Property.SectionAssignment.SectionAssignment.__init__:15
 #: abaqus.Property.SectionAssignment.SectionAssignment.sectionName:1 of
 msgid "A String specifying the name of the section."
 msgstr ""
@@ -432,6 +3174,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment:17
 #: abaqus.Property.PropertyPart.PropertyPart.SectionAssignment:17
+#: abaqus.Property.SectionAssignment.SectionAssignment.__init__:17
 #: abaqus.Property.SectionAssignment.SectionAssignment.thicknessAssignment:1 of
 msgid ""
 "A SymbolicConstant specifying section thickness assignment method. "
@@ -442,6 +3185,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment:20
 #: abaqus.Property.PropertyPart.PropertyPart.SectionAssignment:20
+#: abaqus.Property.SectionAssignment.SectionAssignment.__init__:20
 #: abaqus.Property.SectionAssignment.SectionAssignment.offset:1 of
 msgid ""
 "A Float specifying the offset of the shell section. The default value is "
@@ -451,6 +3195,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment:22
 #: abaqus.Property.PropertyPart.PropertyPart.SectionAssignment:22
+#: abaqus.Property.SectionAssignment.SectionAssignment.__init__:22
 #: abaqus.Property.SectionAssignment.SectionAssignment.offsetType:1 of
 msgid ""
 "A SymbolicConstant specifying the method used to define the shell offset."
@@ -463,6 +3208,7 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment:27
 #: abaqus.Property.PropertyPart.PropertyPart.SectionAssignment:27
+#: abaqus.Property.SectionAssignment.SectionAssignment.__init__:27
 #: abaqus.Property.SectionAssignment.SectionAssignment.offsetField:1 of
 msgid ""
 "A String specifying the name of the field specifying the offset. The "
@@ -476,12 +3222,9 @@ msgid ""
 msgstr ""
 
 #: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment:31
-#: abaqus.Property.PropertyPart.PropertyPart.SectionAssignment:31 of
+#: abaqus.Property.PropertyPart.PropertyPart.SectionAssignment:31
+#: abaqus.Property.SectionAssignment.SectionAssignment.__init__:31 of
 msgid ":class:`SectionAssignment`"
-msgstr ""
-
-#: abaqus.Property.PropertyPart.PropertyPart.assignBeamSectionOrientation:1 of
-msgid "This method assigns a beam section orientation to a region of a part."
 msgstr ""
 
 #: abaqus.Property.PropertyPart.PropertyPart.assignBeamSectionOrientation:9 of
@@ -507,10 +3250,6 @@ msgstr ""
 msgid ""
 "A sequence of three Floats specifying the approximate local "
 "n1n1-direction of the beam cross-section."
-msgstr ""
-
-#: abaqus.Property.PropertyPart.PropertyPart.assignMaterialOrientation:1 of
-msgid "This method assigns a material orientation to a region."
 msgstr ""
 
 #: abaqus.Property.PropertyPart.PropertyPart.assignMaterialOrientation:9 of
@@ -550,21 +3289,11 @@ msgid ""
 "value is 0.0."
 msgstr ""
 
-#: abaqus.Property.PropertyPart.PropertyPart.assignRebarOrientation:1 of
-msgid "This method assigns a rebar reference orientation to a region."
-msgstr ""
-
 #: abaqus.Property.PropertyPart.PropertyPart.assignRebarOrientation:9 of
 msgid ""
 "Check `Part.assignRebarOrientation on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
 "#simaker-partassignrebarorientationpyc>`__."
-msgstr ""
-
-#: abaqus.Property.PropertyPart.PropertyPart.flipNormal:1 of
-msgid ""
-"This method flips the normals of shell or membrane elements of an orphan "
-"mesh or of two-dimensional geometric regions."
 msgstr ""
 
 #: abaqus.Property.PropertyPart.PropertyPart.flipNormal:10 of
@@ -592,12 +3321,6 @@ msgid ""
 "elements."
 msgstr ""
 
-#: abaqus.Property.PropertyPart.PropertyPart.flipTangent:1 of
-msgid ""
-"This method flips the tangents of beam or truss elements of an orphan "
-"mesh or of one-dimensional geometric regions."
-msgstr ""
-
 #: abaqus.Property.PropertyPart.PropertyPart.flipTangent:10 of
 msgid ""
 "Check `Part.flipTangent on help.3ds.com/2022 "
@@ -610,11 +3333,6 @@ msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
 "on which normals are flipped. The region contains Edge objects or one-"
 "dimensional Element objects."
-msgstr ""
-
-#: abaqus.Property.PropertyPart.PropertyPart.unassignBeamSectionOrientation:1
-#: of
-msgid "This method deletes a beam section orientation assignment."
 msgstr ""
 
 #: abaqus.Property.PropertyPart.PropertyPart.unassignBeamSectionOrientation:9
@@ -632,10 +3350,6 @@ msgid ""
 "to be deleted."
 msgstr ""
 
-#: abaqus.Property.PropertyPart.PropertyPart.unassignMaterialOrientation:1 of
-msgid "This method deletes a material orientation assignment."
-msgstr ""
-
 #: abaqus.Property.PropertyPart.PropertyPart.unassignMaterialOrientation:9 of
 msgid ""
 "Check `Part.unassignMaterialOrientation on help.3ds.com/2022 "
@@ -645,10 +3359,6 @@ msgstr ""
 
 #: abaqus.Property.PropertyPart.PropertyPart.unassignMaterialOrientation:12 of
 msgid "An Int specifying the number of the material assignment to be deleted."
-msgstr ""
-
-#: abaqus.Property.PropertyPart.PropertyPart.unassignRebarOrientation:1 of
-msgid "This method deletes a rebar orientation assignment."
 msgstr ""
 
 #: abaqus.Property.PropertyPart.PropertyPart.unassignRebarOrientation:9 of
@@ -664,12 +3374,20 @@ msgid ""
 "assignment to be deleted."
 msgstr ""
 
-#: ../../reference/mdb/model/property.rst:15
-msgid "Object features"
+#: ../../reference/mdb/model/property.rst:19
+msgid "Classes"
 msgstr ""
 
-#: ../../reference/mdb/model/property.rst:18
+#: ../../reference/mdb/model/property.rst:22
 msgid "CompositeLayup"
+msgstr ""
+
+#: abaqus.Property.CompositeLayup.CompositeLayup:1
+#: abaqus.Property.CompositePly.CompositePly:1
+#: abaqus.Property.MaterialOrientation.MaterialOrientation:1
+#: abaqus.Property.PlyStackPlot.PlyStackPlot:1
+#: abaqus.Property.SectionAssignment.SectionAssignment:1 of
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: abaqus.Property.CompositeLayup.CompositeLayup:1 of
@@ -701,14 +3419,6 @@ msgstr ""
 msgid "SOLID SECTION"
 msgstr ""
 
-#: abaqus.Property.CompositeLayup.CompositeLayup
-#: abaqus.Property.CompositePly.CompositePly
-#: abaqus.Property.MaterialOrientation.MaterialOrientation
-#: abaqus.Property.PropertyAssembly.PropertyAssembly
-#: abaqus.Property.SectionAssignment.SectionAssignment of
-msgid "Public Data Attributes:"
-msgstr ""
-
 #: ../../None:11:<autosummary>:1
 msgid ""
 ":py:obj:`section "
@@ -732,7 +3442,7 @@ msgstr ""
 #: ../../None:11:<autosummary>:1 ../../docstring
 #: abaqus.Property.CompositeLayup.CompositeLayup.orientation:1
 #: abaqus.Property.MaterialOrientation.MaterialOrientation.ReferenceOrientation:82
-#: of
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:77 of
 msgid ""
 "A :py:class:`~abaqus.Property.MaterialOrientation.MaterialOrientation` "
 "object."
@@ -807,14 +3517,6 @@ msgid ""
 " the analysis."
 msgstr ""
 
-#: abaqus.Property.CompositeLayup.CompositeLayup
-#: abaqus.Property.CompositePly.CompositePly
-#: abaqus.Property.MaterialOrientation.MaterialOrientation
-#: abaqus.Property.PropertyAssembly.PropertyAssembly
-#: abaqus.Property.SectionAssignment.SectionAssignment of
-msgid "Public Methods:"
-msgstr ""
-
 #: ../../None:11:<autosummary>:1
 msgid ""
 ":py:obj:`__init__ "
@@ -875,7 +3577,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:11:<autosummary>:1 ../../None:3:<autosummary>:1
-#: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:1 of
+#: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:1
+#: abaqus.Property.CompositePly.CompositePly.__init__:1 of
 msgid "This method creates a CompositePly object."
 msgstr ""
 
@@ -924,12 +3627,14 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:12
+#: abaqus.Property.CompositePly.CompositePly.__init__:12
 #: abaqus.Property.CompositePly.CompositePly.thickness:1 of
 msgid "A Float specifying the thickness of the section layer."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:14
+#: abaqus.Property.CompositePly.CompositePly.__init__:14
 #: abaqus.Property.CompositePly.CompositePly.region:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
@@ -938,12 +3643,14 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:16
+#: abaqus.Property.CompositePly.CompositePly.__init__:16
 #: abaqus.Property.CompositePly.CompositePly.material:1 of
 msgid "A String specifying the name of the material for the ply."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:18
+#: abaqus.Property.CompositePly.CompositePly.__init__:18
 #: abaqus.Property.CompositePly.CompositePly.plyName:1 of
 msgid ""
 "A String specifying the ply identifier for this section layer. The "
@@ -952,6 +3659,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:21
+#: abaqus.Property.CompositePly.CompositePly.__init__:21
 #: abaqus.Property.CompositePly.CompositePly.orientationType:1 of
 msgid ""
 "A SymbolicConstant specifying the method used to define the relative "
@@ -962,7 +3670,8 @@ msgid ""
 " value is ANGLE_0."
 msgstr ""
 
-#: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:27 of
+#: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:27
+#: abaqus.Property.CompositePly.CompositePly.__init__:27 of
 msgid ""
 "A SymbolicConstant specifying the method used to define the thickness. If"
 " **thicknessType** = SPECIFY_THICKNESS, the **thickness** argument is "
@@ -972,13 +3681,15 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:32
+#: abaqus.Property.CompositePly.CompositePly.__init__:35
 #: abaqus.Property.CompositePly.CompositePly.orientationValue:1 of
 msgid ""
 "A Float specifying the relative orientation of the section layer. The "
 "default value is 0.0."
 msgstr ""
 
-#: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:35 of
+#: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:35
+#: abaqus.Property.CompositePly.CompositePly.__init__:38 of
 msgid ""
 "A String specifying the name of the AnalyticalField or DiscreteField "
 "object used to define the thickness of the shell elements and composite "
@@ -991,6 +3702,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:42
+#: abaqus.Property.CompositePly.CompositePly.__init__:48
 #: abaqus.Property.CompositePly.CompositePly.numIntPts:1 of
 msgid ""
 "An Int specifying the number of integration points to be used through the"
@@ -1000,6 +3712,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:45
+#: abaqus.Property.CompositePly.CompositePly.__init__:51
 #: abaqus.Property.CompositePly.CompositePly.axis:1 of
 msgid ""
 "A SymbolicConstant specifying the axis of a cylindrical or spherical "
@@ -1012,6 +3725,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:51
+#: abaqus.Property.CompositePly.CompositePly.__init__:57
 #: abaqus.Property.CompositePly.CompositePly.angle:1 of
 msgid ""
 "A Float specifying the angle of the additional rotation. The **angle** "
@@ -1021,6 +3735,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:54
+#: abaqus.Property.CompositePly.CompositePly.__init__:60
 #: abaqus.Property.CompositePly.CompositePly.additionalRotationType:1 of
 msgid ""
 "A SymbolicConstant specifying the method used to describe the additional "
@@ -1033,6 +3748,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:60
+#: abaqus.Property.CompositePly.CompositePly.__init__:66
 #: abaqus.Property.CompositePly.CompositePly.orientation:1 of
 msgid ""
 "The SymbolicConstant None or a DatumCsys object specifying a coordinate "
@@ -1042,17 +3758,20 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:63
+#: abaqus.Property.CompositePly.CompositePly.__init__:69
 #: abaqus.Property.CompositePly.CompositePly.additionalRotationField:1 of
 msgid ""
 "A String specifying the name of the field specifying the additional "
 "rotation. The default value is an empty string."
 msgstr ""
 
-#: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:66 of
+#: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:66
+#: abaqus.Property.CompositePly.CompositePly.__init__:72 of
 msgid "A :py:class:`~abaqus.Property.CompositePly.CompositePly` object."
 msgstr ""
 
-#: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:67 of
+#: abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:67
+#: abaqus.Property.CompositePly.CompositePly.__init__:73 of
 msgid ":class:`CompositePly`"
 msgstr ""
 
@@ -1254,6 +3973,17 @@ msgstr ""
 msgid ":class:`HomogeneousShellSection`"
 msgstr ""
 
+#: abaqus.Property.CompositeLayup.CompositeLayup.__init__:9 of
+msgid ""
+"Check `CompositeLayup.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-compositelayuppyc.htm?contextscope=all"
+"#simaker-compositelayup__init__pyc>`__."
+msgstr ""
+
+#: abaqus.Property.CompositeLayup.CompositeLayup.__init__:33 of
+msgid "A :py:class:`~abaqus.Property.CompositeLayup.CompositeLayup` object."
+msgstr ""
+
 #: abaqus.Property.CompositeLayup.CompositeLayup.setValues:4 of
 msgid ""
 "Check `CompositeLayup.setValues on help.3ds.com/2022 "
@@ -1261,7 +3991,7 @@ msgid ""
 "#simaker-compositelayupsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/property.rst:26
+#: ../../reference/mdb/model/property.rst:32
 msgid "CompositePly"
 msgstr ""
 
@@ -1363,6 +4093,44 @@ msgid ""
 " \\(thickness\\, region\\, material\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
+#: abaqus.Property.CompositePly.CompositePly.__init__:9 of
+msgid ""
+"Check `CompositePly.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-compositeplypyc.htm?contextscope=all"
+"#simaker-compositeply__init__pyc>`__."
+msgstr ""
+
+#: abaqus.Property.CompositePly.CompositePly.__init__:27 of
+msgid ""
+"A SymbolicConstant specifying the method used to define the thickness. If"
+" **thicknessType** = SPECIFY_THICKNESS, the **thickness** argument is "
+"required. Possible values are SPECIFY_THICKNESS, FIELD_THICKNESS, and "
+"ANALYTICAL_FIELD_THICKNESS. The default value is SPECIFY_THICKNESS.  .. "
+"versionchanged:: 2021     Add possible value ANALYTICAL_FIELD_THICKNESS."
+msgstr ""
+
+#: ../../docstring abaqus.Property.CompositePly.CompositePly.__init__:32
+#: abaqus.Property.CompositePly.CompositePly.thicknessType:7 of
+msgid "Add possible value ANALYTICAL_FIELD_THICKNESS."
+msgstr ""
+
+#: abaqus.Property.CompositePly.CompositePly.__init__:38 of
+msgid ""
+"A String specifying the name of the AnalyticalField or DiscreteField "
+"object used to define the thickness of the shell elements and composite "
+"ply. The **thicknessField** argument applies when **thicknessType** = "
+"ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD for shell elements"
+" and **thicknessType** = FIELD_THICKNESS or **thicknessType** = "
+"ANALYTICAL_FIELD_THICKNESS for composite ply. The default value is an "
+"empty string.  .. versionchanged:: 2021     Update docs for "
+"ANALYTICAL_FIELD_THICKNESS"
+msgstr ""
+
+#: ../../docstring abaqus.Property.CompositePly.CompositePly.__init__:45
+#: abaqus.Property.CompositePly.CompositePly.thicknessField:7 of
+msgid "Update docs for ANALYTICAL_FIELD_THICKNESS"
+msgstr ""
+
 #: ../../docstring abaqus.Property.CompositePly.CompositePly.thicknessField:1
 #: of
 msgid ""
@@ -1377,11 +4145,6 @@ msgstr ""
 msgid "..versionchanged:: 2021"
 msgstr ""
 
-#: ../../docstring abaqus.Property.CompositePly.CompositePly.thicknessField:7
-#: of
-msgid "Update docs for ANALYTICAL_FIELD_THICKNESS"
-msgstr ""
-
 #: ../../docstring abaqus.Property.CompositePly.CompositePly.thicknessType:1 of
 msgid ""
 "A SymbolicConstant specifying the method used to define the thickness. If"
@@ -1390,15 +4153,11 @@ msgid ""
 "value is SPECIFY_THICKNESS."
 msgstr ""
 
-#: ../../docstring abaqus.Property.CompositePly.CompositePly.thicknessType:7 of
-msgid "Add possible value ANALYTICAL_FIELD_THICKNESS."
-msgstr ""
-
-#: ../../reference/mdb/model/property.rst:34
+#: ../../reference/mdb/model/property.rst:42
 msgid "CompositePlyArray"
 msgstr ""
 
-#: ../../reference/mdb/model/property.rst:42
+#: ../../reference/mdb/model/property.rst:52
 msgid "MaterialOrientation"
 msgstr ""
 
@@ -1674,11 +4433,18 @@ msgid ""
 "and VECTOR. The default value is VECTOR."
 msgstr ""
 
-#: ../../reference/mdb/model/property.rst:50
+#: abaqus.Property.MaterialOrientation.MaterialOrientation.__init__:9 of
+msgid ""
+"Check `MaterialOrientation.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialorientationpyc.htm?contextscope=all"
+"#simaker-materialorientation__init__pyc>`__."
+msgstr ""
+
+#: ../../reference/mdb/model/property.rst:62
 msgid "MaterialOrientationArray"
 msgstr ""
 
-#: ../../reference/mdb/model/property.rst:58
+#: ../../reference/mdb/model/property.rst:72
 msgid "PlyStackPlot"
 msgstr ""
 
@@ -1694,8 +4460,12 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-plystackplotpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/property.rst:66
+#: ../../reference/mdb/model/property.rst:82
 msgid "PropertyAssembly"
+msgstr ""
+
+#: abaqus.Property.PropertyAssembly.PropertyAssembly:1 of
+msgid "Bases: :py:class:`~abaqus.Assembly.AssemblyBase.AssemblyBase`"
 msgstr ""
 
 #: abaqus.Property.PropertyAssembly.PropertyAssembly:1 of
@@ -1715,7 +4485,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`isOutOfDate "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.isOutOfDate>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.isOutOfDate>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1727,7 +4497,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`timeStamp "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.timeStamp>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.timeStamp>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1737,9 +4507,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`isLocked "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.isLocked>`\\"
+msgid ":py:obj:`isLocked <abaqus.Assembly.AssemblyBase.AssemblyBase.isLocked>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1749,7 +4517,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`regenerateConstraintsTogether "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.regenerateConstraintsTogether>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.regenerateConstraintsTogether>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1760,9 +4528,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`vertices "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.vertices>`\\"
+msgid ":py:obj:`vertices <abaqus.Assembly.AssemblyBase.AssemblyBase.vertices>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1772,9 +4538,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`edges "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.edges>`\\"
+msgid ":py:obj:`edges <abaqus.Assembly.AssemblyBase.AssemblyBase.edges>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1784,9 +4548,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`elements "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.elements>`\\"
+msgid ":py:obj:`elements <abaqus.Assembly.AssemblyBase.AssemblyBase.elements>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1796,9 +4558,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`nodes "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.nodes>`\\"
+msgid ":py:obj:`nodes <abaqus.Assembly.AssemblyBase.AssemblyBase.nodes>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1810,7 +4570,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`instances "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.instances>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.instances>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1818,9 +4578,7 @@ msgid "A repository of PartInstance objects."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`datums "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.datums>`\\"
+msgid ":py:obj:`datums <abaqus.Assembly.AssemblyBase.AssemblyBase.datums>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1830,9 +4588,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`features "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.features>`\\"
+msgid ":py:obj:`features <abaqus.Assembly.AssemblyBase.AssemblyBase.features>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1844,7 +4600,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`featuresById "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.featuresById>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.featuresById>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1855,9 +4611,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`surfaces "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.surfaces>`\\"
+msgid ":py:obj:`surfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.surfaces>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1871,21 +4625,17 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`allSurfaces "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.allSurfaces>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allSurfaces>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`allInternalSurfaces "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.allInternalSurfaces>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSurfaces>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A repository of Surface objects specifying picked regions."
-msgstr ""
-
-#: ../../None:29:<autosummary>:1
-msgid ":py:obj:`sets <abaqus.Property.PropertyAssembly.PropertyAssembly.sets>`\\"
+msgid ":py:obj:`sets <abaqus.Assembly.AssemblyBase.AssemblyBase.sets>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1893,9 +4643,7 @@ msgid "A repository of Set objects."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`allSets "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.allSets>`\\"
+msgid ":py:obj:`allSets <abaqus.Assembly.AssemblyBase.AssemblyBase.allSets>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1908,17 +4656,11 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`allInternalSets "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.allInternalSets>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSets>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid "A repository of Set objects specifying picked regions."
-msgstr ""
-
-#: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`skins "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.skins>`\\"
+msgid ":py:obj:`skins <abaqus.Assembly.AssemblyBase.AssemblyBase.skins>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1928,7 +4670,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`stringers "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.stringers>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.stringers>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1940,17 +4682,13 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`referencePoints "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.referencePoints>`\\"
-msgstr ""
-
-#: ../../None:29:<autosummary>:1
-msgid "A repository of ReferencePoint objects."
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.referencePoints>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`modelInstances "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.modelInstances>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.modelInstances>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1960,7 +4698,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`allInstances "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.allInstances>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allInstances>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1974,20 +4712,13 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`engineeringFeatures "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.engineeringFeatures>`\\"
-msgstr ""
-
-#: ../../None:29:<autosummary>:1
-msgid ""
-"An "
-":py:class:`~abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature`"
-" object."
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.engineeringFeatures>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`modelName "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.modelName>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.modelName>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -1997,7 +4728,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`connectorOrientations "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.connectorOrientations>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.connectorOrientations>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -2010,26 +4741,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`sectionAssignments "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.sectionAssignments>`\\"
-msgstr ""
-
-#: ../../None:29:<autosummary>:1
-msgid ""
-"A "
-":py:class:`~abaqus.Property.SectionAssignmentArray.SectionAssignmentArray`"
-" object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Property.PropertyAssembly.PropertyAssembly.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`id <abaqus.Property.PropertyAssembly.PropertyAssembly.id>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "An Int specifying the ID of the feature."
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.sectionAssignments>`\\"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -2041,9 +4753,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`Instance "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.Instance>`\\ "
-"\\(name\\, \\*args\\, \\*\\*kwargs\\)"
+":py:obj:`Instance <abaqus.Assembly.AssemblyBase.AssemblyBase.Instance>`\\"
+" \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2054,8 +4765,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`backup "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.backup>`\\ \\(\\)"
+":py:obj:`backup <abaqus.Assembly.AssemblyBase.AssemblyBase.backup>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2065,8 +4776,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`clearGeometryCache "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.clearGeometryCache>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.clearGeometryCache>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2076,8 +4786,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`deleteAllFeatures "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.deleteAllFeatures>`\\ "
-"\\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.deleteAllFeatures>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2087,7 +4796,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`deleteFeatures "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.deleteFeatures>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.deleteFeatures>`\\ "
 "\\(featureNames\\)"
 msgstr ""
 
@@ -2098,8 +4807,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`excludeFromSimulation "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.excludeFromSimulation>`\\"
-" \\(instances\\, exclude\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.excludeFromSimulation>`\\ "
+"\\(instances\\, exclude\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2109,8 +4818,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`featurelistInfo "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.featurelistInfo>`\\ "
-"\\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.featurelistInfo>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2122,7 +4830,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getMassProperties "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.getMassProperties>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties>`\\ "
 "\\(\\[regions\\, ...\\]\\)"
 msgstr ""
 
@@ -2134,19 +4842,14 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`getAngle "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.getAngle>`\\ "
-"\\(plane1\\, plane2\\, line1\\, line2\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:46:<autosummary>:1
-msgid "This method returns the angle between the specified entities."
+":py:obj:`getAngle <abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle>`\\"
+" \\(plane1\\, plane2\\, line1\\, line2\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getCoordinates "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.getCoordinates>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates>`\\ "
 "\\(entity\\)"
 msgstr ""
 
@@ -2157,20 +4860,14 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getDistance "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.getDistance>`\\ "
-"\\(entity1\\, entity2\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:46:<autosummary>:1
-msgid ""
-"Depending on the arguments provided, this method returns one of the "
-"following:"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance>`\\ \\(entity1\\, "
+"entity2\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getFacesAndVerticesOfAttachmentLines "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.getFacesAndVerticesOfAttachmentLines>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines>`\\"
 " \\(edges\\)"
 msgstr ""
 
@@ -2183,8 +4880,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getSurfaceSections "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.getSurfaceSections>`\\"
-" \\(surface\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections>`\\ "
+"\\(surface\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2196,7 +4893,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importEafFile "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.importEafFile>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importEafFile>`\\ "
 "\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
@@ -2207,8 +4904,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importParasolidFile "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.importParasolidFile>`\\"
-" \\(filename\\[\\, ids\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importParasolidFile>`\\ "
+"\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2220,7 +4917,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importCatiaV5File "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.importCatiaV5File>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importCatiaV5File>`\\ "
 "\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
@@ -2233,7 +4930,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importEnfFile "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.importEnfFile>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importEnfFile>`\\ "
 "\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
@@ -2246,7 +4943,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importIdeasFile "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.importIdeasFile>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importIdeasFile>`\\ "
 "\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
@@ -2259,7 +4956,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importProEFile "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.importProEFile>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importProEFile>`\\ "
 "\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
@@ -2272,7 +4969,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`makeDependent "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.makeDependent>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.makeDependent>`\\ "
 "\\(instances\\)"
 msgstr ""
 
@@ -2285,7 +4982,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`makeIndependent "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.makeIndependent>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.makeIndependent>`\\ "
 "\\(instances\\)"
 msgstr ""
 
@@ -2298,8 +4995,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`printAssignedSections "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.printAssignedSections>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.printAssignedSections>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2309,7 +5006,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`printConnectorOrientations "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.printConnectorOrientations>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.printConnectorOrientations>`\\"
 " \\(\\)"
 msgstr ""
 
@@ -2320,7 +5017,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`projectReferencesOntoSketch "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.projectReferencesOntoSketch>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch>`\\"
 " \\(sketch\\[\\, ...\\]\\)"
 msgstr ""
 
@@ -2333,8 +5030,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`queryCachedStates "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.queryCachedStates>`\\ "
-"\\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.queryCachedStates>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2346,7 +5042,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`regenerate "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.regenerate>`\\ \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.regenerate>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2358,31 +5054,20 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`regenerationWarnings "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.regenerationWarnings>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.regenerationWarnings>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
-msgid "This method prints any regeneration warnings associated with the features."
-msgstr ""
-
-#: ../../None:46:<autosummary>:1 ../../None:65:<autosummary>:1
 msgid ""
-":py:obj:`restore "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.restore>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:46:<autosummary>:1 ../../None:65:<autosummary>:1
-msgid ""
-"This method restores the parameters of all features in the assembly to "
-"the value they had before a failed regeneration."
+":py:obj:`restore <abaqus.Assembly.AssemblyBase.AssemblyBase.restore>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`resumeAllFeatures "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.resumeAllFeatures>`\\ "
-"\\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.resumeAllFeatures>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2392,7 +5077,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`resumeFeatures "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.resumeFeatures>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.resumeFeatures>`\\ "
 "\\(featureNames\\)"
 msgstr ""
 
@@ -2403,8 +5088,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`resumeLastSetFeatures "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.resumeLastSetFeatures>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.resumeLastSetFeatures>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2415,8 +5100,7 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`rotate "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.rotate>`\\ "
+":py:obj:`rotate <abaqus.Assembly.AssemblyBase.AssemblyBase.rotate>`\\ "
 "\\(instanceList\\, axisPoint\\, ...\\)"
 msgstr ""
 
@@ -2427,7 +5111,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`translate "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.translate>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.translate>`\\ "
 "\\(instanceList\\, vector\\)"
 msgstr ""
 
@@ -2438,8 +5122,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`saveGeometryCache "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.saveGeometryCache>`\\ "
-"\\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.saveGeometryCache>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2448,21 +5131,21 @@ msgid ""
 "performance."
 msgstr ""
 
-#: ../../None:46:<autosummary>:1 ../../None:65:<autosummary>:1
+#: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`setValues "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.setValues>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.setValues>`\\ "
 "\\(regenerateConstraintsTogether\\)"
 msgstr ""
 
-#: ../../None:46:<autosummary>:1 ../../None:65:<autosummary>:1
+#: ../../None:46:<autosummary>:1
 msgid "This method modifies the behavior associated with the specified assembly."
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`suppressFeatures "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.suppressFeatures>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.suppressFeatures>`\\ "
 "\\(featureNames\\)"
 msgstr ""
 
@@ -2473,7 +5156,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`unlinkInstances "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.unlinkInstances>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.unlinkInstances>`\\ "
 "\\(instances\\)"
 msgstr ""
 
@@ -2486,7 +5169,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`writeAcisFile "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.writeAcisFile>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.writeAcisFile>`\\ "
 "\\(fileName\\[\\, version\\]\\)"
 msgstr ""
 
@@ -2499,20 +5182,12 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`writeCADParameters "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.writeCADParameters>`\\"
-" \\(paramFile\\[\\, ...\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.writeCADParameters>`\\ "
+"\\(paramFile\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
-msgid ""
-"This method writes the parameters that were imported from the CAD system "
-"to a parameter file."
-msgstr ""
-
-#: ../../None:46:<autosummary>:1
-msgid ""
-":py:obj:`lock <abaqus.Property.PropertyAssembly.PropertyAssembly.lock>`\\"
-" \\(\\)"
+msgid ":py:obj:`lock <abaqus.Assembly.AssemblyBase.AssemblyBase.lock>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2521,8 +5196,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`unlock "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.unlock>`\\ \\(\\)"
+":py:obj:`unlock <abaqus.Assembly.AssemblyBase.AssemblyBase.unlock>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2532,8 +5207,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`setMeshNumberingControl "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.setMeshNumberingControl>`\\"
-" \\(instances\\[\\, ...\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.setMeshNumberingControl>`\\ "
+"\\(instances\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -2546,34 +5221,21 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`copyMeshPattern "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.copyMeshPattern>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.copyMeshPattern>`\\ "
 "\\(\\[elements\\, faces\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-"This method copies a mesh pattern from a source region consisting of a "
-"set of shell elements or element faces onto a target face, mapping nodes "
-"and elements in a one-one correspondence between source and target."
-msgstr ""
-
-#: ../../None:46:<autosummary>:1
-msgid ""
 ":py:obj:`smoothNodes "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.smoothNodes>`\\ "
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes>`\\ "
 "\\(\\[nodes\\]\\)"
-msgstr ""
-
-#: ../../None:46:<autosummary>:1
-msgid ""
-"This method smooths the given nodes of a native mesh, moving them locally"
-" to a more optimal location that improves the quality of the mesh"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`AttachmentLines "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.AttachmentLines>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines>`\\ "
 "\\(name\\, points\\, sourceFaces\\, ...\\)"
 msgstr ""
 
@@ -2586,7 +5248,7 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`Coaxial "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.Coaxial>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial>`\\ "
 "\\(movableAxis\\, fixedAxis\\, flip\\)"
 msgstr ""
 
@@ -2599,7 +5261,7 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`CoincidentPoint "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.CoincidentPoint>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint>`\\ "
 "\\(movablePoint\\, fixedPoint\\)"
 msgstr ""
 
@@ -2612,7 +5274,7 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`EdgeToEdge "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.EdgeToEdge>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge>`\\ "
 "\\(movableAxis\\, fixedAxis\\, flip\\, ...\\)"
 msgstr ""
 
@@ -2625,7 +5287,7 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`FaceToFace "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.FaceToFace>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace>`\\ "
 "\\(movablePlane\\, fixedPlane\\, flip\\, ...\\)"
 msgstr ""
 
@@ -2638,7 +5300,7 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`ParallelCsys "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.ParallelCsys>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys>`\\ "
 "\\(movableCsys\\, fixedCsys\\)"
 msgstr ""
 
@@ -2651,14 +5313,14 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`ParallelEdge "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.ParallelEdge>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge>`\\ "
 "\\(movableAxis\\, fixedAxis\\, flip\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`ParallelFace "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.ParallelFace>`\\ "
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace>`\\ "
 "\\(movablePlane\\, fixedPlane\\, flip\\)"
 msgstr ""
 
@@ -2668,772 +5330,12 @@ msgid ""
 " fixed instance."
 msgstr ""
 
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`AttachmentPoints "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.AttachmentPoints>`\\ "
-"\\(name\\, points\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid "This method creates an attachment points Feature."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`AttachmentPointsAlongDirection "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.AttachmentPointsAlongDirection>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object by creating attachment points along "
-"a direction or between two points."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`AttachmentPointsOffsetFromEdges "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.AttachmentPointsOffsetFromEdges>`\\"
-" \\(name\\, edges\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object by creating attachment points along "
-"or offset from one or more connected edges."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByCylFace "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByCylFace>`\\"
-" \\(face\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object along the "
-"axis of a cylinder or cone."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByNormalToPlane "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByNormalToPlane>`\\"
-" \\(plane\\, point\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object normal to the"
-" specified plane and passing through the specified point."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByParToEdge "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByParToEdge>`\\"
-" \\(edge\\, point\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object parallel to "
-"the specified edge and passing through the specified point."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByPrincipalAxis "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByPrincipalAxis>`\\"
-" \\(principalAxis\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object along one of "
-"the three principal axes."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByRotation "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByRotation>`\\"
-" \\(\\*args\\, \\*\\*kwargs\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByThreePoint "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByThreePoint>`\\"
-" \\(point1\\, point2\\, point3\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object normal to the"
-" circle described by three points and through its center."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByThruEdge "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByThruEdge>`\\"
-" \\(edge\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object along the "
-"specified edge."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByTwoPlane "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByTwoPlane>`\\"
-" \\(plane1\\, plane2\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object at the "
-"intersection of two planes."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumAxisByTwoPoint "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByTwoPoint>`\\"
-" \\(point1\\, point2\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumAxis object along the "
-"line joining two points."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumCsysByDefault "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumCsysByDefault>`\\"
-" \\(coordSysType\\[\\, name\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumCsys object from the "
-"specified default coordinate system at the origin."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumCsysByOffset "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumCsysByOffset>`\\ "
-"\\(coordSysType\\, ...\\[\\, name\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumCsys object by offsetting"
-" the origin of an existing datum coordinate system to a specified point."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumCsysByThreePoints "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumCsysByThreePoints>`\\"
-" \\(coordSysType\\, origin\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumCsys object from three "
-"points."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumCsysByTwoLines "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumCsysByTwoLines>`\\"
-" \\(coordSysType\\, line1\\, line2\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumCsys object from two "
-"orthogonal lines."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByPrincipalPlane "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPlaneByPrincipalPlane>`\\"
-" \\(principalPlane\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPlane object through the "
-"origin along one of the three principal planes."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByOffset "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPlaneByOffset>`\\"
-" \\(\\*args\\, \\*\\*kwargs\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByRotation "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPlaneByRotation>`\\"
-" \\(plane\\, axis\\, angle\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPlane object by rotating "
-"a plane about the specified axis through the specified angle."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByThreePoints "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPlaneByThreePoints>`\\"
-" \\(point1\\, point2\\, point3\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPlane object defined by "
-"passing through three points."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByLinePoint "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPlaneByLinePoint>`\\"
-" \\(line\\, point\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPlane object that pass "
-"through the specified line and through the specified point that does not "
-"lie on the line."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByPointNormal "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPlaneByPointNormal>`\\"
-" \\(point\\, normal\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPlane object normal to "
-"the specified line and running through the specified point."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPlaneByTwoPoint "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPlaneByTwoPoint>`\\"
-" \\(point1\\, point2\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPlane object midway "
-"between two points and normal to the line connecting the points."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByCoordinate "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPointByCoordinate>`\\"
-" \\(coords\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPoint object at the point"
-" defined by the specified coordinates."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByOffset "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPointByOffset>`\\"
-" \\(point\\, vector\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPoint object offset from "
-"an existing point by a vector."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByMidPoint "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPointByMidPoint>`\\"
-" \\(point1\\, point2\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPoint object midway "
-"between two points."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByOnFace "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPointByOnFace>`\\"
-" \\(face\\, edge1\\, offset1\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPoint object on the "
-"specified face, offset from two edges."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByEdgeParam "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPointByEdgeParam>`\\"
-" \\(edge\\, parameter\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPoint object along an "
-"edge at a selected distance from one end of the edge."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByProjOnEdge "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPointByProjOnEdge>`\\"
-" \\(point\\, edge\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPoint object along an "
-"edge by projecting an existing point along the normal to the edge."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`DatumPointByProjOnFace "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPointByProjOnFace>`\\"
-" \\(point\\, face\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a DatumPoint object on a "
-"specified face by projecting an existing point onto the face."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`MakeSketchTransform "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.MakeSketchTransform>`\\"
-" \\(sketchPlane\\[\\, origin\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid "This method creates a Transform object."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByDatumPlane "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByDatumPlane>`\\"
-" \\(cells\\, datumPlane\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid "This method partitions one or more cells using the given datum plane."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByExtendFace "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByExtendFace>`\\"
-" \\(cells\\, extendFace\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more cells by extending the underlying "
-"geometry of a given face to partition the target cells."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByExtrudeEdge "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByExtrudeEdge>`\\"
-" \\(cells\\, edges\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more cells by extruding selected edges in "
-"the given direction."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByPatchNCorners "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByPatchNCorners>`\\"
-" \\(cell\\, cornerPoints\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions a cell using an N-sided cutting patch defined by "
-"the given corner points."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByPatchNEdges "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByPatchNEdges>`\\"
-" \\(cell\\, edges\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions a cell using an N-sided cutting patch defined by "
-"the given edges."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByPlaneNormalToEdge "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByPlaneNormalToEdge>`\\"
-" \\(cells\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more cells using a plane normal to an edge "
-"at the given edge point."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByPlanePointNormal "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByPlanePointNormal>`\\"
-" \\(cells\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more cells using a plane defined by a point"
-" and a normal direction."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellByPlaneThreePoints "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByPlaneThreePoints>`\\"
-" \\(cells\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more cells using a plane defined by three "
-"points."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionCellBySweepEdge "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellBySweepEdge>`\\"
-" \\(cells\\, edges\\, sweepPath\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more cells by sweeping selected edges along"
-" the given sweep path."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionEdgeByDatumPlane "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionEdgeByDatumPlane>`\\"
-" \\(edges\\, datumPlane\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid "This method partitions an edge where it intersects with a datum plane."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionEdgeByParam "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionEdgeByParam>`\\"
-" \\(edges\\, parameter\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more edges at the given normalized edge "
-"parameter."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionEdgeByPoint "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionEdgeByPoint>`\\"
-" \\(edge\\, point\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid "This method partitions an edge at the given point."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByAuto "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByAuto>`\\"
-" \\(face\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method automatically partitions a target face into simple regions "
-"that can be meshed using a structured meshing technique."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByCurvedPathEdgeParams "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByCurvedPathEdgeParams>`\\"
-" \\(face\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions a face normal to two edges, using a curved path "
-"between the two given edge points defined by the normalized edge "
-"parameters."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByCurvedPathEdgePoints "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByCurvedPathEdgePoints>`\\"
-" \\(face\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions a face normal to two edges, using a curved path "
-"between the two given edge points."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByDatumPlane "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByDatumPlane>`\\"
-" \\(faces\\, datumPlane\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid "This method partitions one or more faces using the given datum plane."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByExtendFace "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByExtendFace>`\\"
-" \\(faces\\, extendFace\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more faces by extending the underlying "
-"geometry of another given face to partition the target faces."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByIntersectFace "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByIntersectFace>`\\"
-" \\(faces\\, cuttingFaces\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more faces using the given cutting faces to"
-" partition the target faces."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByProjectingEdges "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByProjectingEdges>`\\"
-" \\(faces\\, edges\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more faces by projecting the given edges on"
-" the target faces."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceByShortestPath "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByShortestPath>`\\"
-" \\(faces\\, point1\\, ...\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more faces using a minimum distance path "
-"between the two given points."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceBySketch "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceBySketch>`\\"
-" \\(faces\\, sketch\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid "This method partitions one or more planar faces by sketching on them."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceBySketchDistance "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceBySketchDistance>`\\"
-" \\(faces\\, ...\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more faces by sketching on a sketch plane "
-"and then projecting the sketch toward the target faces through the given "
-"distance."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceBySketchRefPoint "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceBySketchRefPoint>`\\"
-" \\(faces\\, ...\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more faces by sketching on a sketch plane "
-"and then projecting the sketch toward the target faces through a distance"
-" governed by the reference point."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`PartitionFaceBySketchThruAll "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceBySketchThruAll>`\\"
-" \\(faces\\, ...\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method partitions one or more faces by sketching on a sketch plane "
-"and then projecting toward the target faces through an infinite distance."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`ReferencePoint "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.ReferencePoint>`\\ "
-"\\(point\\[\\, instanceName\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates a Feature object and a ReferencePoint object at the "
-"specified location."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`RemoveWireEdges "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.RemoveWireEdges>`\\ "
-"\\(wireEdgeList\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid "This method removes wire edges."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`WirePolyLine "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.WirePolyLine>`\\ "
-"\\(points\\[\\, mergeType\\, meshable\\]\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-"This method creates an additional Feature object by creating a series of "
-"wires joining points in pairs."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`isSuppressed "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.isSuppressed>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid "This method queries the suppressed state of the feature."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`resume "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.resume>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid "This method resumes suppressed features."
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.Property.PropertyAssembly.PropertyAssembly.suppress>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:65:<autosummary>:1
-msgid "This method suppresses features."
-msgstr ""
-
-#: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment:30 of
+#: abaqus.Property.PropertyAssembly.PropertyAssembly.SectionAssignment:30
+#: abaqus.Property.SectionAssignment.SectionAssignment.__init__:30 of
 msgid "A :py:class:`~abaqus.Property.SectionAssignment.SectionAssignment` object."
 msgstr ""
 
-#: ../../reference/mdb/model/property.rst:74
+#: ../../reference/mdb/model/property.rst:92
 msgid "SectionAssignment"
 msgstr ""
 
@@ -3542,6 +5444,13 @@ msgstr ""
 msgid "This method modifies the SectionAssignment object."
 msgstr ""
 
+#: abaqus.Property.SectionAssignment.SectionAssignment.__init__:10 of
+msgid ""
+"Check `SectionAssignment.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sectionassignmentpyc.htm?contextscope=all"
+"#simaker-sectionassignment__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Property.SectionAssignment.SectionAssignment.getVertices:1 of
 msgid ""
 "This method is only valid for connector section assignments. This method "
@@ -3571,7 +5480,7 @@ msgid ""
 " The default value is OFF."
 msgstr ""
 
-#: ../../reference/mdb/model/property.rst:82
+#: ../../reference/mdb/model/property.rst:102
 msgid "SectionAssignmentArray"
 msgstr ""
 
@@ -3944,5 +5853,830 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ":class:`Tuple[Tuple[float`, :class:`...]]`"
+#~ msgstr ""
+
+#~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`isOutOfDate "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.isOutOfDate>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`timeStamp "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.timeStamp>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`isLocked "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.isLocked>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`regenerateConstraintsTogether "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.regenerateConstraintsTogether>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`vertices "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.vertices>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`edges "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.edges>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`elements "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.elements>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`nodes "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.nodes>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`instances "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.instances>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`datums "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.datums>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`features "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.features>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`featuresById "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.featuresById>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`surfaces "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.surfaces>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allSurfaces "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.allSurfaces>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allInternalSurfaces "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.allInternalSurfaces>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sets "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.sets>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allSets "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.allSets>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allInternalSets "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.allInternalSets>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`skins "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.skins>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`stringers "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.stringers>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`referencePoints "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.referencePoints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`modelInstances "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.modelInstances>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allInstances "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.allInstances>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`engineeringFeatures "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.engineeringFeatures>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`modelName "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.modelName>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`connectorOrientations "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.connectorOrientations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sectionAssignments "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.sectionAssignments>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.name>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`id <abaqus.Property.PropertyAssembly.PropertyAssembly.id>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Instance "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.Instance>`\\ "
+#~ "\\(name\\, \\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`backup "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.backup>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`clearGeometryCache "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.clearGeometryCache>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`deleteAllFeatures "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.deleteAllFeatures>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`deleteFeatures "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.deleteFeatures>`\\"
+#~ " \\(featureNames\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`excludeFromSimulation "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.excludeFromSimulation>`\\"
+#~ " \\(instances\\, exclude\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`featurelistInfo "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.featurelistInfo>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getMassProperties "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.getMassProperties>`\\"
+#~ " \\(\\[regions\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getAngle "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.getAngle>`\\ "
+#~ "\\(plane1\\, plane2\\, line1\\, line2\\[\\, "
+#~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getCoordinates "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.getCoordinates>`\\"
+#~ " \\(entity\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getDistance "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.getDistance>`\\ "
+#~ "\\(entity1\\, entity2\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getFacesAndVerticesOfAttachmentLines "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.getFacesAndVerticesOfAttachmentLines>`\\"
+#~ " \\(edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getSurfaceSections "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.getSurfaceSections>`\\"
+#~ " \\(surface\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importEafFile "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.importEafFile>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importParasolidFile "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.importParasolidFile>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importCatiaV5File "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.importCatiaV5File>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importEnfFile "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.importEnfFile>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importIdeasFile "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.importIdeasFile>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importProEFile "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.importProEFile>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`makeDependent "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.makeDependent>`\\"
+#~ " \\(instances\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`makeIndependent "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.makeIndependent>`\\"
+#~ " \\(instances\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`printAssignedSections "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.printAssignedSections>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`printConnectorOrientations "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.printConnectorOrientations>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`projectReferencesOntoSketch "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.projectReferencesOntoSketch>`\\"
+#~ " \\(sketch\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`queryCachedStates "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.queryCachedStates>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`regenerate "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.regenerate>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`regenerationWarnings "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.regenerationWarnings>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restore "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.restore>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resumeAllFeatures "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.resumeAllFeatures>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resumeFeatures "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.resumeFeatures>`\\"
+#~ " \\(featureNames\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resumeLastSetFeatures "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.resumeLastSetFeatures>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`rotate "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.rotate>`\\ "
+#~ "\\(instanceList\\, axisPoint\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`translate "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.translate>`\\ "
+#~ "\\(instanceList\\, vector\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`saveGeometryCache "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.saveGeometryCache>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setValues "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.setValues>`\\ "
+#~ "\\(regenerateConstraintsTogether\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppressFeatures "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.suppressFeatures>`\\"
+#~ " \\(featureNames\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`unlinkInstances "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.unlinkInstances>`\\"
+#~ " \\(instances\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`writeAcisFile "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.writeAcisFile>`\\"
+#~ " \\(fileName\\[\\, version\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`writeCADParameters "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.writeCADParameters>`\\"
+#~ " \\(paramFile\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lock "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.lock>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`unlock "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.unlock>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setMeshNumberingControl "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.setMeshNumberingControl>`\\"
+#~ " \\(instances\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyMeshPattern "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.copyMeshPattern>`\\"
+#~ " \\(\\[elements\\, faces\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`smoothNodes "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.smoothNodes>`\\ "
+#~ "\\(\\[nodes\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AttachmentLines "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.AttachmentLines>`\\"
+#~ " \\(name\\, points\\, sourceFaces\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Coaxial "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.Coaxial>`\\ "
+#~ "\\(movableAxis\\, fixedAxis\\, flip\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`CoincidentPoint "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.CoincidentPoint>`\\"
+#~ " \\(movablePoint\\, fixedPoint\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`EdgeToEdge "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.EdgeToEdge>`\\ "
+#~ "\\(movableAxis\\, fixedAxis\\, flip\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`FaceToFace "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.FaceToFace>`\\ "
+#~ "\\(movablePlane\\, fixedPlane\\, flip\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ParallelCsys "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.ParallelCsys>`\\"
+#~ " \\(movableCsys\\, fixedCsys\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ParallelEdge "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.ParallelEdge>`\\"
+#~ " \\(movableAxis\\, fixedAxis\\, flip\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ParallelFace "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.ParallelFace>`\\"
+#~ " \\(movablePlane\\, fixedPlane\\, flip\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AttachmentPoints "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.AttachmentPoints>`\\"
+#~ " \\(name\\, points\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AttachmentPointsAlongDirection "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.AttachmentPointsAlongDirection>`\\"
+#~ " \\(name\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AttachmentPointsOffsetFromEdges "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.AttachmentPointsOffsetFromEdges>`\\"
+#~ " \\(name\\, edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByCylFace "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByCylFace>`\\"
+#~ " \\(face\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByNormalToPlane "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByNormalToPlane>`\\"
+#~ " \\(plane\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByParToEdge "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByParToEdge>`\\"
+#~ " \\(edge\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByPrincipalAxis "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByPrincipalAxis>`\\"
+#~ " \\(principalAxis\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByRotation "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByRotation>`\\"
+#~ " \\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByThreePoint "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByThreePoint>`\\"
+#~ " \\(point1\\, point2\\, point3\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByThruEdge "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByThruEdge>`\\"
+#~ " \\(edge\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByTwoPlane "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByTwoPlane>`\\"
+#~ " \\(plane1\\, plane2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByTwoPoint "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumAxisByTwoPoint>`\\"
+#~ " \\(point1\\, point2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByDefault "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumCsysByDefault>`\\"
+#~ " \\(coordSysType\\[\\, name\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByOffset "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumCsysByOffset>`\\"
+#~ " \\(coordSysType\\, ...\\[\\, name\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByThreePoints "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumCsysByThreePoints>`\\"
+#~ " \\(coordSysType\\, origin\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByTwoLines "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumCsysByTwoLines>`\\"
+#~ " \\(coordSysType\\, line1\\, line2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByPrincipalPlane "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPlaneByPrincipalPlane>`\\"
+#~ " \\(principalPlane\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByOffset "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPlaneByOffset>`\\"
+#~ " \\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByRotation "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPlaneByRotation>`\\"
+#~ " \\(plane\\, axis\\, angle\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByThreePoints "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPlaneByThreePoints>`\\"
+#~ " \\(point1\\, point2\\, point3\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByLinePoint "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPlaneByLinePoint>`\\"
+#~ " \\(line\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByPointNormal "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPlaneByPointNormal>`\\"
+#~ " \\(point\\, normal\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByTwoPoint "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPlaneByTwoPoint>`\\"
+#~ " \\(point1\\, point2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByCoordinate "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPointByCoordinate>`\\"
+#~ " \\(coords\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByOffset "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPointByOffset>`\\"
+#~ " \\(point\\, vector\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByMidPoint "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPointByMidPoint>`\\"
+#~ " \\(point1\\, point2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByOnFace "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPointByOnFace>`\\"
+#~ " \\(face\\, edge1\\, offset1\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByEdgeParam "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPointByEdgeParam>`\\"
+#~ " \\(edge\\, parameter\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByProjOnEdge "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPointByProjOnEdge>`\\"
+#~ " \\(point\\, edge\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByProjOnFace "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.DatumPointByProjOnFace>`\\"
+#~ " \\(point\\, face\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`MakeSketchTransform "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.MakeSketchTransform>`\\"
+#~ " \\(sketchPlane\\[\\, origin\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByDatumPlane "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByDatumPlane>`\\"
+#~ " \\(cells\\, datumPlane\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByExtendFace "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByExtendFace>`\\"
+#~ " \\(cells\\, extendFace\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByExtrudeEdge "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByExtrudeEdge>`\\"
+#~ " \\(cells\\, edges\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPatchNCorners "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByPatchNCorners>`\\"
+#~ " \\(cell\\, cornerPoints\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPatchNEdges "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByPatchNEdges>`\\"
+#~ " \\(cell\\, edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPlaneNormalToEdge "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByPlaneNormalToEdge>`\\"
+#~ " \\(cells\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPlanePointNormal "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByPlanePointNormal>`\\"
+#~ " \\(cells\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPlaneThreePoints "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellByPlaneThreePoints>`\\"
+#~ " \\(cells\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellBySweepEdge "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionCellBySweepEdge>`\\"
+#~ " \\(cells\\, edges\\, sweepPath\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionEdgeByDatumPlane "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionEdgeByDatumPlane>`\\"
+#~ " \\(edges\\, datumPlane\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionEdgeByParam "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionEdgeByParam>`\\"
+#~ " \\(edges\\, parameter\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionEdgeByPoint "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionEdgeByPoint>`\\"
+#~ " \\(edge\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByAuto "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByAuto>`\\"
+#~ " \\(face\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByCurvedPathEdgeParams "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByCurvedPathEdgeParams>`\\"
+#~ " \\(face\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByCurvedPathEdgePoints "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByCurvedPathEdgePoints>`\\"
+#~ " \\(face\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByDatumPlane "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByDatumPlane>`\\"
+#~ " \\(faces\\, datumPlane\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByExtendFace "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByExtendFace>`\\"
+#~ " \\(faces\\, extendFace\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByIntersectFace "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByIntersectFace>`\\"
+#~ " \\(faces\\, cuttingFaces\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByProjectingEdges "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByProjectingEdges>`\\"
+#~ " \\(faces\\, edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByShortestPath "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceByShortestPath>`\\"
+#~ " \\(faces\\, point1\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketch "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceBySketch>`\\"
+#~ " \\(faces\\, sketch\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketchDistance "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceBySketchDistance>`\\"
+#~ " \\(faces\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketchRefPoint "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceBySketchRefPoint>`\\"
+#~ " \\(faces\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketchThruAll "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.PartitionFaceBySketchThruAll>`\\"
+#~ " \\(faces\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ReferencePoint "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.ReferencePoint>`\\"
+#~ " \\(point\\[\\, instanceName\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`RemoveWireEdges "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.RemoveWireEdges>`\\"
+#~ " \\(wireEdgeList\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`WirePolyLine "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.WirePolyLine>`\\"
+#~ " \\(points\\[\\, mergeType\\, meshable\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`isSuppressed "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.isSuppressed>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.resume>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.Property.PropertyAssembly.PropertyAssembly.suppress>`\\ "
+#~ "\\(\\)"
 #~ msgstr ""
 
