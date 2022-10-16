@@ -1,0 +1,23 @@
+# Determines if we search the title (optional). Defaults to true.
+matchTitle: true
+
+# Determines if we search the body (optional). Defaults to true.
+matchBody: true
+
+# Determines if label matching is case sensitive (optional). Defaults to true.
+caseSensitive: false
+
+# Explicit keyword mappings to labels. Form of match:label. Required.
+labelMappings:
+  "- [x] 2022": backport-to-2022
+  "- [x] 2021": backport-to-2021
+  "- [x] 2020": backport-to-2020
+  "- [x] 2019": backport-to-2019
+  "- [x] 2018": backport-to-2018
+  "- [x] 2017": backport-to-2017
+  "- [x] 2016": backport-to-2016
+  "[docs]": docs
+  "[docs preview]": docs-preview
+  "[typing]": typing
+  "[typo]": typo
+  
