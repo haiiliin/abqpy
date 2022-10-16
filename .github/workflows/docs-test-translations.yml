@@ -43,7 +43,7 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.CREATE_PULL_REQUEST }}
       with:
         source_folder: docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}
-        destination_repo: 'haiiliin/docs.abqpy.com'
+        destination_repo: 'haiiliin/devdocs.abqpy.com'
         destination_folder: '${{ matrix.language }}'
         destination_base_branch: 'main'
         destination_head_branch: 'docs/${{ matrix.language }}/pr-${{ github.event.number }}'
@@ -61,5 +61,5 @@ jobs:
         description-message: |
           ----
           # Docs Preview
-          The pull request for updating the documentation has been created, after the pull request is merged, the documentation will be updated automatically on https://docs.abqpy.com/${{ matrix.language }}/pr-${{ github.event.number }}.
+          The pull request for updating the documentation has been created, after the pull request is merged, the documentation will be updated automatically on https://devdocs.abqpy.com/${{ matrix.language }}/pr-${{ github.event.number }}.
         delete-previous-comment: true
