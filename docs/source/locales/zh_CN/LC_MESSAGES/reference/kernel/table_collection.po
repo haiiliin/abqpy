@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 00:23+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,10 @@ msgstr ""
 
 #: ../../reference/kernel/table_collection.rst:8
 msgid "Creat table collections for Assembly"
+msgstr ""
+
+#: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly:1 of
+msgid "Bases: :py:class:`~abaqus.Assembly.AssemblyBase.AssemblyBase`"
 msgstr ""
 
 #: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly:1 of
@@ -88,7 +92,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`isOutOfDate "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.isOutOfDate>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.isOutOfDate>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -100,7 +104,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`timeStamp "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.timeStamp>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.timeStamp>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -110,9 +114,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`isLocked "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.isLocked>`\\"
+msgid ":py:obj:`isLocked <abaqus.Assembly.AssemblyBase.AssemblyBase.isLocked>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -122,7 +124,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`regenerateConstraintsTogether "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.regenerateConstraintsTogether>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.regenerateConstraintsTogether>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -133,9 +135,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`vertices "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.vertices>`\\"
+msgid ":py:obj:`vertices <abaqus.Assembly.AssemblyBase.AssemblyBase.vertices>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -145,9 +145,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`edges "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.edges>`\\"
+msgid ":py:obj:`edges <abaqus.Assembly.AssemblyBase.AssemblyBase.edges>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -157,9 +155,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`elements "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.elements>`\\"
+msgid ":py:obj:`elements <abaqus.Assembly.AssemblyBase.AssemblyBase.elements>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -169,9 +165,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`nodes "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.nodes>`\\"
+msgid ":py:obj:`nodes <abaqus.Assembly.AssemblyBase.AssemblyBase.nodes>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -183,7 +177,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`instances "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.instances>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.instances>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -191,9 +185,7 @@ msgid "A repository of PartInstance objects."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`datums "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.datums>`\\"
+msgid ":py:obj:`datums <abaqus.Assembly.AssemblyBase.AssemblyBase.datums>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -203,9 +195,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`features "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.features>`\\"
+msgid ":py:obj:`features <abaqus.Assembly.AssemblyBase.AssemblyBase.features>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -217,7 +207,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`featuresById "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.featuresById>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.featuresById>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -228,9 +218,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`surfaces "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.surfaces>`\\"
+msgid ":py:obj:`surfaces <abaqus.Assembly.AssemblyBase.AssemblyBase.surfaces>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -244,13 +232,13 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`allSurfaces "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.allSurfaces>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allSurfaces>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`allInternalSurfaces "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.allInternalSurfaces>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSurfaces>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -258,9 +246,7 @@ msgid "A repository of Surface objects specifying picked regions."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`sets "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.sets>`\\"
+msgid ":py:obj:`sets <abaqus.Assembly.AssemblyBase.AssemblyBase.sets>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -268,9 +254,7 @@ msgid "A repository of Set objects."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`allSets "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.allSets>`\\"
+msgid ":py:obj:`allSets <abaqus.Assembly.AssemblyBase.AssemblyBase.allSets>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -283,7 +267,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`allInternalSets "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.allInternalSets>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allInternalSets>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -291,9 +275,7 @@ msgid "A repository of Set objects specifying picked regions."
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
-msgid ""
-":py:obj:`skins "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.skins>`\\"
+msgid ":py:obj:`skins <abaqus.Assembly.AssemblyBase.AssemblyBase.skins>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -303,7 +285,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`stringers "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.stringers>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.stringers>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -315,7 +297,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`referencePoints "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.referencePoints>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.referencePoints>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -325,7 +307,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`modelInstances "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.modelInstances>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.modelInstances>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -335,7 +317,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`allInstances "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.allInstances>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.allInstances>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -349,7 +331,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`engineeringFeatures "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.engineeringFeatures>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.engineeringFeatures>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -362,7 +344,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`modelName "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.modelName>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.modelName>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -372,7 +354,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`connectorOrientations "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.connectorOrientations>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.connectorOrientations>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -385,7 +367,7 @@ msgstr ""
 #: ../../None:29:<autosummary>:1
 msgid ""
 ":py:obj:`sectionAssignments "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.sectionAssignments>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.sectionAssignments>`\\"
 msgstr ""
 
 #: ../../None:29:<autosummary>:1
@@ -396,17 +378,20 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`name "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.name>`\\"
+msgid ":py:obj:`name <abaqus.Feature.Feature.Feature.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1 ../../None:55:<autosummary>:1 ../../docstring
+#: abaqus.TableCollection.EventSeries.EventSeries.__init__:12
 #: abaqus.TableCollection.EventSeries.EventSeries.name:1
+#: abaqus.TableCollection.EventSeriesType.EventSeriesType.__init__:12
 #: abaqus.TableCollection.EventSeriesType.EventSeriesType.name:1
+#: abaqus.TableCollection.ParameterTable.ParameterTable.__init__:13
+#: abaqus.TableCollection.PropertyTable.PropertyTable.__init__:12
 #: abaqus.TableCollection.PropertyTable.PropertyTable.name:1
 #: abaqus.TableCollection.TableCollection.TableCollection.ParameterTable:13
 #: abaqus.TableCollection.TableCollection.TableCollection.PropertyTable:12
+#: abaqus.TableCollection.TableCollection.TableCollection.__init__:13
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:12
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType:12
 #: of
@@ -414,9 +399,7 @@ msgid "A String specifying the repository key."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`id "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.id>`\\"
+msgid ":py:obj:`id <abaqus.Feature.Feature.Feature.id>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -446,6 +429,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:1
 #: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation:1
 #: of
 msgid ""
@@ -455,9 +439,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`Instance "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.Instance>`\\"
-" \\(name\\, \\*args\\, \\*\\*kwargs\\)"
+":py:obj:`Instance <abaqus.Assembly.AssemblyBase.AssemblyBase.Instance>`\\"
+" \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -468,9 +451,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`backup "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.backup>`\\"
-" \\(\\)"
+":py:obj:`backup <abaqus.Assembly.AssemblyBase.AssemblyBase.backup>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -480,8 +462,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`clearGeometryCache "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.clearGeometryCache>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.clearGeometryCache>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -491,8 +472,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`deleteAllFeatures "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.deleteAllFeatures>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.deleteAllFeatures>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -502,8 +482,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`deleteFeatures "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.deleteFeatures>`\\"
-" \\(featureNames\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.deleteFeatures>`\\ "
+"\\(featureNames\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -513,8 +493,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`excludeFromSimulation "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.excludeFromSimulation>`\\"
-" \\(instances\\, exclude\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.excludeFromSimulation>`\\ "
+"\\(instances\\, exclude\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -524,8 +504,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`featurelistInfo "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.featurelistInfo>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.featurelistInfo>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -537,8 +516,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getMassProperties "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.getMassProperties>`\\"
-" \\(\\[regions\\, ...\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties>`\\ "
+"\\(\\[regions\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -549,8 +528,7 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`getAngle "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.getAngle>`\\"
+":py:obj:`getAngle <abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle>`\\"
 " \\(plane1\\, plane2\\, line1\\, line2\\[\\, ...\\]\\)"
 msgstr ""
 
@@ -561,8 +539,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getCoordinates "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.getCoordinates>`\\"
-" \\(entity\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates>`\\ "
+"\\(entity\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -572,8 +550,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getDistance "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.getDistance>`\\"
-" \\(entity1\\, entity2\\[\\, printResults\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance>`\\ \\(entity1\\, "
+"entity2\\[\\, printResults\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -585,7 +563,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getFacesAndVerticesOfAttachmentLines "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.getFacesAndVerticesOfAttachmentLines>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines>`\\"
 " \\(edges\\)"
 msgstr ""
 
@@ -598,8 +576,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`getSurfaceSections "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.getSurfaceSections>`\\"
-" \\(surface\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections>`\\ "
+"\\(surface\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -611,8 +589,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importEafFile "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.importEafFile>`\\"
-" \\(filename\\[\\, ids\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importEafFile>`\\ "
+"\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -622,8 +600,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importParasolidFile "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.importParasolidFile>`\\"
-" \\(filename\\[\\, ids\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importParasolidFile>`\\ "
+"\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -635,8 +613,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importCatiaV5File "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.importCatiaV5File>`\\"
-" \\(filename\\[\\, ids\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importCatiaV5File>`\\ "
+"\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -648,8 +626,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importEnfFile "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.importEnfFile>`\\"
-" \\(filename\\[\\, ids\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importEnfFile>`\\ "
+"\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -661,8 +639,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importIdeasFile "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.importIdeasFile>`\\"
-" \\(filename\\[\\, ids\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importIdeasFile>`\\ "
+"\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -674,8 +652,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`importProEFile "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.importProEFile>`\\"
-" \\(filename\\[\\, ids\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.importProEFile>`\\ "
+"\\(filename\\[\\, ids\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -687,8 +665,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`makeDependent "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.makeDependent>`\\"
-" \\(instances\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.makeDependent>`\\ "
+"\\(instances\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -700,8 +678,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`makeIndependent "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.makeIndependent>`\\"
-" \\(instances\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.makeIndependent>`\\ "
+"\\(instances\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -713,8 +691,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`printAssignedSections "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.printAssignedSections>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.printAssignedSections>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -724,7 +702,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`printConnectorOrientations "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.printConnectorOrientations>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.printConnectorOrientations>`\\"
 " \\(\\)"
 msgstr ""
 
@@ -735,7 +713,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`projectReferencesOntoSketch "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.projectReferencesOntoSketch>`\\"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch>`\\"
 " \\(sketch\\[\\, ...\\]\\)"
 msgstr ""
 
@@ -748,8 +726,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`queryCachedStates "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.queryCachedStates>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.queryCachedStates>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -761,8 +738,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`regenerate "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.regenerate>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.regenerate>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -774,22 +750,21 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`regenerationWarnings "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.regenerationWarnings>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.regenerationWarnings>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid "This method prints any regeneration warnings associated with the features."
 msgstr ""
 
-#: ../../None:46:<autosummary>:1 ../../None:65:<autosummary>:1
+#: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`restore "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.restore>`\\"
-" \\(\\)"
+":py:obj:`restore <abaqus.Assembly.AssemblyBase.AssemblyBase.restore>`\\ "
+"\\(\\)"
 msgstr ""
 
-#: ../../None:46:<autosummary>:1 ../../None:65:<autosummary>:1
+#: ../../None:46:<autosummary>:1
 msgid ""
 "This method restores the parameters of all features in the assembly to "
 "the value they had before a failed regeneration."
@@ -798,8 +773,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`resumeAllFeatures "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.resumeAllFeatures>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.resumeAllFeatures>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -809,8 +783,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`resumeFeatures "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.resumeFeatures>`\\"
-" \\(featureNames\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.resumeFeatures>`\\ "
+"\\(featureNames\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -820,8 +794,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`resumeLastSetFeatures "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.resumeLastSetFeatures>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.resumeLastSetFeatures>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -832,9 +806,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`rotate "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.rotate>`\\"
-" \\(instanceList\\, axisPoint\\, ...\\)"
+":py:obj:`rotate <abaqus.Assembly.AssemblyBase.AssemblyBase.rotate>`\\ "
+"\\(instanceList\\, axisPoint\\, ...\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -844,8 +817,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`translate "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.translate>`\\"
-" \\(instanceList\\, vector\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.translate>`\\ "
+"\\(instanceList\\, vector\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -855,8 +828,7 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`saveGeometryCache "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.saveGeometryCache>`\\"
-" \\(\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.saveGeometryCache>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -865,22 +837,22 @@ msgid ""
 "performance."
 msgstr ""
 
-#: ../../None:46:<autosummary>:1 ../../None:65:<autosummary>:1
+#: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`setValues "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.setValues>`\\"
-" \\(regenerateConstraintsTogether\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.setValues>`\\ "
+"\\(regenerateConstraintsTogether\\)"
 msgstr ""
 
-#: ../../None:46:<autosummary>:1 ../../None:65:<autosummary>:1
+#: ../../None:46:<autosummary>:1
 msgid "This method modifies the behavior associated with the specified assembly."
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`suppressFeatures "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.suppressFeatures>`\\"
-" \\(featureNames\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.suppressFeatures>`\\ "
+"\\(featureNames\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -890,8 +862,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`unlinkInstances "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.unlinkInstances>`\\"
-" \\(instances\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.unlinkInstances>`\\ "
+"\\(instances\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -903,8 +875,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`writeAcisFile "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.writeAcisFile>`\\"
-" \\(fileName\\[\\, version\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.writeAcisFile>`\\ "
+"\\(fileName\\[\\, version\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -916,8 +888,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`writeCADParameters "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.writeCADParameters>`\\"
-" \\(paramFile\\[\\, ...\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.writeCADParameters>`\\ "
+"\\(paramFile\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -927,10 +899,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
-msgid ""
-":py:obj:`lock "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.lock>`\\"
-" \\(\\)"
+msgid ":py:obj:`lock <abaqus.Assembly.AssemblyBase.AssemblyBase.lock>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -939,9 +908,8 @@ msgstr ""
 
 #: ../../None:46:<autosummary>:1
 msgid ""
-":py:obj:`unlock "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.unlock>`\\"
-" \\(\\)"
+":py:obj:`unlock <abaqus.Assembly.AssemblyBase.AssemblyBase.unlock>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -951,8 +919,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`setMeshNumberingControl "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.setMeshNumberingControl>`\\"
-" \\(instances\\[\\, ...\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.setMeshNumberingControl>`\\ "
+"\\(instances\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -965,8 +933,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`copyMeshPattern "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.copyMeshPattern>`\\"
-" \\(\\[elements\\, faces\\, ...\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.copyMeshPattern>`\\ "
+"\\(\\[elements\\, faces\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -979,8 +947,8 @@ msgstr ""
 #: ../../None:46:<autosummary>:1
 msgid ""
 ":py:obj:`smoothNodes "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.smoothNodes>`\\"
-" \\(\\[nodes\\]\\)"
+"<abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes>`\\ "
+"\\(\\[nodes\\]\\)"
 msgstr ""
 
 #: ../../None:46:<autosummary>:1
@@ -992,8 +960,8 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`AttachmentLines "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.AttachmentLines>`\\"
-" \\(name\\, points\\, sourceFaces\\, ...\\)"
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.AttachmentLines>`\\ "
+"\\(name\\, points\\, sourceFaces\\, ...\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1005,8 +973,8 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`Coaxial "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.Coaxial>`\\"
-" \\(movableAxis\\, fixedAxis\\, flip\\)"
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.Coaxial>`\\ "
+"\\(movableAxis\\, fixedAxis\\, flip\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1018,8 +986,8 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`CoincidentPoint "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.CoincidentPoint>`\\"
-" \\(movablePoint\\, fixedPoint\\)"
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.CoincidentPoint>`\\ "
+"\\(movablePoint\\, fixedPoint\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1031,8 +999,8 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`EdgeToEdge "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.EdgeToEdge>`\\"
-" \\(movableAxis\\, fixedAxis\\, flip\\, ...\\)"
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.EdgeToEdge>`\\ "
+"\\(movableAxis\\, fixedAxis\\, flip\\, ...\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1044,8 +1012,8 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`FaceToFace "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.FaceToFace>`\\"
-" \\(movablePlane\\, fixedPlane\\, flip\\, ...\\)"
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.FaceToFace>`\\ "
+"\\(movablePlane\\, fixedPlane\\, flip\\, ...\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1057,8 +1025,8 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`ParallelCsys "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ParallelCsys>`\\"
-" \\(movableCsys\\, fixedCsys\\)"
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelCsys>`\\ "
+"\\(movableCsys\\, fixedCsys\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1070,15 +1038,15 @@ msgstr ""
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`ParallelEdge "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ParallelEdge>`\\"
-" \\(movableAxis\\, fixedAxis\\, flip\\)"
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelEdge>`\\ "
+"\\(movableAxis\\, fixedAxis\\, flip\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`ParallelFace "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ParallelFace>`\\"
-" \\(movablePlane\\, fixedPlane\\, flip\\)"
+"<abaqus.Assembly.AssemblyFeature.AssemblyFeature.ParallelFace>`\\ "
+"\\(movablePlane\\, fixedPlane\\, flip\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -1090,8 +1058,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`AttachmentPoints "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.AttachmentPoints>`\\"
-" \\(name\\, points\\[\\, ...\\]\\)"
+"<abaqus.Feature.Feature.Feature.AttachmentPoints>`\\ \\(name\\, "
+"points\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1101,8 +1069,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`AttachmentPointsAlongDirection "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.AttachmentPointsAlongDirection>`\\"
-" \\(name\\, ...\\[\\, ...\\]\\)"
+"<abaqus.Feature.Feature.Feature.AttachmentPointsAlongDirection>`\\ "
+"\\(name\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1114,8 +1082,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`AttachmentPointsOffsetFromEdges "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.AttachmentPointsOffsetFromEdges>`\\"
-" \\(name\\, edges\\)"
+"<abaqus.Feature.Feature.Feature.AttachmentPointsOffsetFromEdges>`\\ "
+"\\(name\\, edges\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1127,8 +1095,7 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByCylFace "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByCylFace>`\\"
-" \\(face\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByCylFace>`\\ \\(face\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1140,8 +1107,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByNormalToPlane "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByNormalToPlane>`\\"
-" \\(plane\\, point\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByNormalToPlane>`\\ \\(plane\\, "
+"point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1153,8 +1120,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByParToEdge "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByParToEdge>`\\"
-" \\(edge\\, point\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByParToEdge>`\\ \\(edge\\, "
+"point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1166,8 +1133,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByPrincipalAxis "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByPrincipalAxis>`\\"
-" \\(principalAxis\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByPrincipalAxis>`\\ "
+"\\(principalAxis\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1179,15 +1146,14 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByRotation "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByRotation>`\\"
-" \\(\\*args\\, \\*\\*kwargs\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByRotation>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByThreePoint "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByThreePoint>`\\"
-" \\(point1\\, point2\\, point3\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByThreePoint>`\\ \\(point1\\, "
+"point2\\, point3\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1199,8 +1165,7 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByThruEdge "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByThruEdge>`\\"
-" \\(edge\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByThruEdge>`\\ \\(edge\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1212,8 +1177,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByTwoPlane "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByTwoPlane>`\\"
-" \\(plane1\\, plane2\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByTwoPlane>`\\ \\(plane1\\, "
+"plane2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1225,8 +1190,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumAxisByTwoPoint "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByTwoPoint>`\\"
-" \\(point1\\, point2\\)"
+"<abaqus.Feature.Feature.Feature.DatumAxisByTwoPoint>`\\ \\(point1\\, "
+"point2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1238,8 +1203,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumCsysByDefault "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumCsysByDefault>`\\"
-" \\(coordSysType\\[\\, name\\]\\)"
+"<abaqus.Feature.Feature.Feature.DatumCsysByDefault>`\\ "
+"\\(coordSysType\\[\\, name\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1251,8 +1216,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumCsysByOffset "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumCsysByOffset>`\\"
-" \\(coordSysType\\, ...\\[\\, name\\]\\)"
+"<abaqus.Feature.Feature.Feature.DatumCsysByOffset>`\\ \\(coordSysType\\, "
+"...\\[\\, name\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1264,8 +1229,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumCsysByThreePoints "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumCsysByThreePoints>`\\"
-" \\(coordSysType\\, origin\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.DatumCsysByThreePoints>`\\ "
+"\\(coordSysType\\, origin\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1277,8 +1242,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumCsysByTwoLines "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumCsysByTwoLines>`\\"
-" \\(coordSysType\\, line1\\, line2\\)"
+"<abaqus.Feature.Feature.Feature.DatumCsysByTwoLines>`\\ "
+"\\(coordSysType\\, line1\\, line2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1290,8 +1255,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByPrincipalPlane "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPlaneByPrincipalPlane>`\\"
-" \\(principalPlane\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByPrincipalPlane>`\\ "
+"\\(principalPlane\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1303,15 +1268,14 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByOffset "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPlaneByOffset>`\\"
-" \\(\\*args\\, \\*\\*kwargs\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByOffset>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByRotation "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPlaneByRotation>`\\"
-" \\(plane\\, axis\\, angle\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByRotation>`\\ \\(plane\\, "
+"axis\\, angle\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1323,8 +1287,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByThreePoints "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPlaneByThreePoints>`\\"
-" \\(point1\\, point2\\, point3\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByThreePoints>`\\ \\(point1\\, "
+"point2\\, point3\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1336,8 +1300,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByLinePoint "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPlaneByLinePoint>`\\"
-" \\(line\\, point\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByLinePoint>`\\ \\(line\\, "
+"point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1350,8 +1314,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByPointNormal "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPlaneByPointNormal>`\\"
-" \\(point\\, normal\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByPointNormal>`\\ \\(point\\, "
+"normal\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1363,8 +1327,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPlaneByTwoPoint "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPlaneByTwoPoint>`\\"
-" \\(point1\\, point2\\)"
+"<abaqus.Feature.Feature.Feature.DatumPlaneByTwoPoint>`\\ \\(point1\\, "
+"point2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1376,8 +1340,7 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByCoordinate "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPointByCoordinate>`\\"
-" \\(coords\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByCoordinate>`\\ \\(coords\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1389,8 +1352,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByOffset "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPointByOffset>`\\"
-" \\(point\\, vector\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByOffset>`\\ \\(point\\, "
+"vector\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1402,8 +1365,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByMidPoint "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPointByMidPoint>`\\"
-" \\(point1\\, point2\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByMidPoint>`\\ \\(point1\\, "
+"point2\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1415,8 +1378,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByOnFace "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPointByOnFace>`\\"
-" \\(face\\, edge1\\, offset1\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByOnFace>`\\ \\(face\\, "
+"edge1\\, offset1\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1428,8 +1391,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByEdgeParam "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPointByEdgeParam>`\\"
-" \\(edge\\, parameter\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByEdgeParam>`\\ \\(edge\\, "
+"parameter\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1441,8 +1404,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByProjOnEdge "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPointByProjOnEdge>`\\"
-" \\(point\\, edge\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByProjOnEdge>`\\ \\(point\\, "
+"edge\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1454,8 +1417,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`DatumPointByProjOnFace "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPointByProjOnFace>`\\"
-" \\(point\\, face\\)"
+"<abaqus.Feature.Feature.Feature.DatumPointByProjOnFace>`\\ \\(point\\, "
+"face\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1467,8 +1430,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`MakeSketchTransform "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.MakeSketchTransform>`\\"
-" \\(sketchPlane\\[\\, origin\\, ...\\]\\)"
+"<abaqus.Feature.Feature.Feature.MakeSketchTransform>`\\ "
+"\\(sketchPlane\\[\\, origin\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1478,8 +1441,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByDatumPlane "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByDatumPlane>`\\"
-" \\(cells\\, datumPlane\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByDatumPlane>`\\ \\(cells\\,"
+" datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1489,8 +1452,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByExtendFace "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByExtendFace>`\\"
-" \\(cells\\, extendFace\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByExtendFace>`\\ \\(cells\\,"
+" extendFace\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1502,8 +1465,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByExtrudeEdge "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByExtrudeEdge>`\\"
-" \\(cells\\, edges\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByExtrudeEdge>`\\ "
+"\\(cells\\, edges\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1515,8 +1478,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByPatchNCorners "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByPatchNCorners>`\\"
-" \\(cell\\, cornerPoints\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByPatchNCorners>`\\ "
+"\\(cell\\, cornerPoints\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1528,8 +1491,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByPatchNEdges "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByPatchNEdges>`\\"
-" \\(cell\\, edges\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByPatchNEdges>`\\ \\(cell\\,"
+" edges\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1541,8 +1504,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByPlaneNormalToEdge "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByPlaneNormalToEdge>`\\"
-" \\(cells\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByPlaneNormalToEdge>`\\ "
+"\\(cells\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1554,8 +1517,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByPlanePointNormal "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByPlanePointNormal>`\\"
-" \\(cells\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByPlanePointNormal>`\\ "
+"\\(cells\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1567,8 +1530,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellByPlaneThreePoints "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByPlaneThreePoints>`\\"
-" \\(cells\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints>`\\ "
+"\\(cells\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1580,8 +1543,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionCellBySweepEdge "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellBySweepEdge>`\\"
-" \\(cells\\, edges\\, sweepPath\\)"
+"<abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge>`\\ \\(cells\\, "
+"edges\\, sweepPath\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1593,8 +1556,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionEdgeByDatumPlane "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionEdgeByDatumPlane>`\\"
-" \\(edges\\, datumPlane\\)"
+"<abaqus.Feature.Feature.Feature.PartitionEdgeByDatumPlane>`\\ \\(edges\\,"
+" datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1604,8 +1567,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionEdgeByParam "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionEdgeByParam>`\\"
-" \\(edges\\, parameter\\)"
+"<abaqus.Feature.Feature.Feature.PartitionEdgeByParam>`\\ \\(edges\\, "
+"parameter\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1617,8 +1580,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionEdgeByPoint "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionEdgeByPoint>`\\"
-" \\(edge\\, point\\)"
+"<abaqus.Feature.Feature.Feature.PartitionEdgeByPoint>`\\ \\(edge\\, "
+"point\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1628,8 +1591,7 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByAuto "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByAuto>`\\"
-" \\(face\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByAuto>`\\ \\(face\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1641,8 +1603,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByCurvedPathEdgeParams "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByCurvedPathEdgeParams>`\\"
-" \\(face\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgeParams>`\\ "
+"\\(face\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1655,8 +1617,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByCurvedPathEdgePoints "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByCurvedPathEdgePoints>`\\"
-" \\(face\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByCurvedPathEdgePoints>`\\ "
+"\\(face\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1668,8 +1630,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByDatumPlane "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByDatumPlane>`\\"
-" \\(faces\\, datumPlane\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByDatumPlane>`\\ \\(faces\\,"
+" datumPlane\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1679,8 +1641,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByExtendFace "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByExtendFace>`\\"
-" \\(faces\\, extendFace\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByExtendFace>`\\ \\(faces\\,"
+" extendFace\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1692,8 +1654,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByIntersectFace "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByIntersectFace>`\\"
-" \\(faces\\, cuttingFaces\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByIntersectFace>`\\ "
+"\\(faces\\, cuttingFaces\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1705,8 +1667,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByProjectingEdges "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByProjectingEdges>`\\"
-" \\(faces\\, edges\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByProjectingEdges>`\\ "
+"\\(faces\\, edges\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1718,8 +1680,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceByShortestPath "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByShortestPath>`\\"
-" \\(faces\\, point1\\, ...\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath>`\\ "
+"\\(faces\\, point1\\, ...\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1731,8 +1693,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceBySketch "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceBySketch>`\\"
-" \\(faces\\, sketch\\[\\, ...\\]\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketch>`\\ \\(faces\\, "
+"sketch\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1742,8 +1704,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceBySketchDistance "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceBySketchDistance>`\\"
-" \\(faces\\, ...\\[\\, ...\\]\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance>`\\ "
+"\\(faces\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1756,8 +1718,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceBySketchRefPoint "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceBySketchRefPoint>`\\"
-" \\(faces\\, ...\\[\\, ...\\]\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint>`\\ "
+"\\(faces\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1770,8 +1732,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`PartitionFaceBySketchThruAll "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceBySketchThruAll>`\\"
-" \\(faces\\, ...\\[\\, ...\\]\\)"
+"<abaqus.Feature.Feature.Feature.PartitionFaceBySketchThruAll>`\\ "
+"\\(faces\\, ...\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1783,8 +1745,8 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`ReferencePoint "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ReferencePoint>`\\"
-" \\(point\\[\\, instanceName\\]\\)"
+"<abaqus.Feature.Feature.Feature.ReferencePoint>`\\ \\(point\\[\\, "
+"instanceName\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1796,8 +1758,7 @@ msgstr ""
 #: ../../None:65:<autosummary>:1
 msgid ""
 ":py:obj:`RemoveWireEdges "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.RemoveWireEdges>`\\"
-" \\(wireEdgeList\\)"
+"<abaqus.Feature.Feature.Feature.RemoveWireEdges>`\\ \\(wireEdgeList\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1806,9 +1767,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-":py:obj:`WirePolyLine "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.WirePolyLine>`\\"
-" \\(points\\[\\, mergeType\\, meshable\\]\\)"
+":py:obj:`WirePolyLine <abaqus.Feature.Feature.Feature.WirePolyLine>`\\ "
+"\\(points\\[\\, mergeType\\, meshable\\]\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1819,9 +1779,8 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-":py:obj:`isSuppressed "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.isSuppressed>`\\"
-" \\(\\)"
+":py:obj:`isSuppressed <abaqus.Feature.Feature.Feature.isSuppressed>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1829,10 +1788,17 @@ msgid "This method queries the suppressed state of the feature."
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
+msgid ":py:obj:`restore <abaqus.Feature.Feature.Feature.restore>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
 msgid ""
-":py:obj:`resume "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.resume>`\\"
-" \\(\\)"
+"This method restores the parameters of a feature to the value they had "
+"when the backup method was invoked on the part or assembly."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ":py:obj:`resume <abaqus.Feature.Feature.Feature.resume>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
@@ -1841,20 +1807,37 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid ""
-":py:obj:`suppress "
-"<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.suppress>`\\"
-" \\(\\)"
+":py:obj:`setValues <abaqus.Feature.Feature.Feature.setValues>`\\ "
+"\\(\\[parameter\\, parameter1\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid "This method modifies the Feature object."
+msgstr ""
+
+#: ../../None:65:<autosummary>:1
+msgid ":py:obj:`suppress <abaqus.Feature.Feature.Feature.suppress>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid "This method suppresses features."
 msgstr ""
 
+#: abaqus.TableCollection.ActivateElements.ActivateElements.__init__:4
+#: abaqus.TableCollection.DataTable.DataTable.__init__:4
+#: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:5
+#: abaqus.TableCollection.EventSeries.EventSeries.__init__:4
+#: abaqus.TableCollection.EventSeriesType.EventSeriesType.__init__:4
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__:6
 #: abaqus.TableCollection.ParameterTable.ParameterTable.Column:6
+#: abaqus.TableCollection.ParameterTable.ParameterTable.__init__:5
 #: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:4
+#: abaqus.TableCollection.PropertyTable.PropertyTable.__init__:4
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__:4
 #: abaqus.TableCollection.TableCollection.TableCollection.DataTable:4
 #: abaqus.TableCollection.TableCollection.TableCollection.ParameterTable:5
 #: abaqus.TableCollection.TableCollection.TableCollection.PropertyTable:4
+#: abaqus.TableCollection.TableCollection.TableCollection.__init__:5
 #: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation:5
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:4
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType:4
@@ -1870,14 +1853,24 @@ msgid ""
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-elementprogressiveactivationpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: abaqus.TableCollection.ActivateElements.ActivateElements.__init__
+#: abaqus.TableCollection.DataTable.DataTable.__init__
+#: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__
+#: abaqus.TableCollection.EventSeries.EventSeries.__init__
 #: abaqus.TableCollection.EventSeries.EventSeries.setValues
+#: abaqus.TableCollection.EventSeriesType.EventSeriesType.__init__
 #: abaqus.TableCollection.EventSeriesType.EventSeriesType.setValues
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__
 #: abaqus.TableCollection.ParameterTable.ParameterTable.Column
+#: abaqus.TableCollection.ParameterTable.ParameterTable.__init__
 #: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData
+#: abaqus.TableCollection.PropertyTable.PropertyTable.__init__
 #: abaqus.TableCollection.PropertyTable.PropertyTable.setValues
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__
 #: abaqus.TableCollection.TableCollection.TableCollection.DataTable
 #: abaqus.TableCollection.TableCollection.TableCollection.ParameterTable
 #: abaqus.TableCollection.TableCollection.TableCollection.PropertyTable
+#: abaqus.TableCollection.TableCollection.TableCollection.__init__
 #: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType
@@ -1886,6 +1879,7 @@ msgid "Parameters"
 msgstr ""
 
 #: ../../docstring
+#: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:13
 #: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.name:1
 #: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation:13
 #: of
@@ -1893,6 +1887,7 @@ msgid "A String specifying the key of the repository."
 msgstr ""
 
 #: ../../docstring
+#: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:15
 #: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.elset:1
 #: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation:15
 #: of
@@ -1902,6 +1897,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:18
 #: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.deformation:1
 #: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation:18
 #: of
@@ -1913,6 +1909,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:22
 #: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.freeSurfaceType:1
 #: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation:22
 #: of
@@ -1926,11 +1923,21 @@ msgid ""
 "NONE."
 msgstr ""
 
+#: abaqus.TableCollection.ActivateElements.ActivateElements.__init__
+#: abaqus.TableCollection.DataTable.DataTable.__init__
+#: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__
+#: abaqus.TableCollection.EventSeries.EventSeries.__init__
+#: abaqus.TableCollection.EventSeriesType.EventSeriesType.__init__
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__
 #: abaqus.TableCollection.ParameterTable.ParameterTable.Column
+#: abaqus.TableCollection.ParameterTable.ParameterTable.__init__
 #: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData
+#: abaqus.TableCollection.PropertyTable.PropertyTable.__init__
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__
 #: abaqus.TableCollection.TableCollection.TableCollection.DataTable
 #: abaqus.TableCollection.TableCollection.TableCollection.ParameterTable
 #: abaqus.TableCollection.TableCollection.TableCollection.PropertyTable
+#: abaqus.TableCollection.TableCollection.TableCollection.__init__
 #: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType
@@ -1938,6 +1945,7 @@ msgstr ""
 msgid "Returns"
 msgstr ""
 
+#: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:28
 #: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation:28
 #: of
 msgid ""
@@ -1946,11 +1954,21 @@ msgid ""
 " object."
 msgstr ""
 
+#: abaqus.TableCollection.ActivateElements.ActivateElements.__init__
+#: abaqus.TableCollection.DataTable.DataTable.__init__
+#: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__
+#: abaqus.TableCollection.EventSeries.EventSeries.__init__
+#: abaqus.TableCollection.EventSeriesType.EventSeriesType.__init__
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__
 #: abaqus.TableCollection.ParameterTable.ParameterTable.Column
+#: abaqus.TableCollection.ParameterTable.ParameterTable.__init__
 #: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData
+#: abaqus.TableCollection.PropertyTable.PropertyTable.__init__
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__
 #: abaqus.TableCollection.TableCollection.TableCollection.DataTable
 #: abaqus.TableCollection.TableCollection.TableCollection.ParameterTable
 #: abaqus.TableCollection.TableCollection.TableCollection.PropertyTable
+#: abaqus.TableCollection.TableCollection.TableCollection.__init__
 #: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType
@@ -1958,17 +1976,26 @@ msgstr ""
 msgid "Return type"
 msgstr ""
 
+#: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:29
 #: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation:29
 #: of
 msgid ":class:`ElementProgressiveActivation`"
 msgstr ""
 
+#: abaqus.TableCollection.ActivateElements.ActivateElements.__init__
 #: abaqus.TableCollection.ActivateElements.ActivateElements.setValues
+#: abaqus.TableCollection.DataTable.DataTable.__init__
+#: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__
+#: abaqus.TableCollection.EventSeries.EventSeries.__init__
 #: abaqus.TableCollection.EventSeries.EventSeries.setValues
+#: abaqus.TableCollection.EventSeriesType.EventSeriesType.__init__
 #: abaqus.TableCollection.EventSeriesType.EventSeriesType.setValues
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__
 #: abaqus.TableCollection.ParameterTable.ParameterTable.Column
 #: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData
+#: abaqus.TableCollection.PropertyTable.PropertyTable.__init__
 #: abaqus.TableCollection.PropertyTable.PropertyTable.setValues
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__
 #: abaqus.TableCollection.PropertyTableData.PropertyTableData.setValues
 #: abaqus.TableCollection.TableCollection.TableCollection.DataTable
 #: abaqus.TableCollection.TableCollection.TableCollection.PropertyTable
@@ -1979,13 +2006,18 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
+#: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:31
 #: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ElementProgressiveActivation:31
 #: of
 msgid "If the region does not contain only elements."
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:16
+#: ../../reference/kernel/table_collection.rst:18
 msgid "Creat table collections for Model"
+msgstr ""
+
+#: abaqus.TableCollection.TableCollectionModel.TableCollectionModel:1 of
+msgid "Bases: :py:class:`~abaqus.Model.ModelBase.ModelBase`"
 msgstr ""
 
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel:1 of
@@ -2003,15 +2035,13 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`name "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.name>`\\"
+msgid ":py:obj:`name <abaqus.Model.ModelBase.ModelBase.name>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`stefanBoltzmann "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.stefanBoltzmann>`\\"
+"<abaqus.Model.ModelBase.ModelBase.stefanBoltzmann>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2019,9 +2049,7 @@ msgid "None or a Float specifying the Stefan-Boltzmann constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`absoluteZero "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.absoluteZero>`\\"
+msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2031,7 +2059,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`waveFormulation "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.waveFormulation>`\\"
+"<abaqus.Model.ModelBase.ModelBase.waveFormulation>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2041,9 +2069,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`universalGas "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.universalGas>`\\"
+msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2053,7 +2079,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`noPartsInputFile "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.noPartsInputFile>`\\"
+"<abaqus.Model.ModelBase.ModelBase.noPartsInputFile>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2065,7 +2091,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`restartIncrement "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.restartIncrement>`\\"
+"<abaqus.Model.ModelBase.ModelBase.restartIncrement>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2077,7 +2103,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`endRestartStep "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.endRestartStep>`\\"
+"<abaqus.Model.ModelBase.ModelBase.endRestartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2087,9 +2113,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`shellToSolid "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.shellToSolid>`\\"
+msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2099,7 +2123,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`lastChangedCount "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.lastChangedCount>`\\"
+"<abaqus.Model.ModelBase.ModelBase.lastChangedCount>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2109,9 +2133,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`description "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.description>`\\"
+msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2119,9 +2141,7 @@ msgid "A String specifying the purpose and contents of the Model object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartJob "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.restartJob>`\\"
+msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2129,9 +2149,7 @@ msgid "A String specifying the name of the job that generated the restart data."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`restartStep "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.restartStep>`\\"
+msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2141,9 +2159,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`globalJob "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.globalJob>`\\"
+msgid ":py:obj:`globalJob <abaqus.Model.ModelBase.ModelBase.globalJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2155,7 +2171,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`copyConstraints "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.copyConstraints>`\\"
+"<abaqus.Model.ModelBase.ModelBase.copyConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2167,7 +2183,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`copyConnectors "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.copyConnectors>`\\"
+"<abaqus.Model.ModelBase.ModelBase.copyConnectors>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2179,7 +2195,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`copyInteractions "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.copyInteractions>`\\"
+"<abaqus.Model.ModelBase.ModelBase.copyInteractions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2189,9 +2205,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`keywordBlock "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.keywordBlock>`\\"
+msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2199,9 +2213,7 @@ msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`rootAssembly "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.rootAssembly>`\\"
+msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2209,9 +2221,7 @@ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`amplitudes "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.amplitudes>`\\"
+msgid ":py:obj:`amplitudes <abaqus.Model.ModelBase.ModelBase.amplitudes>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2219,9 +2229,7 @@ msgid "A repository of Amplitude objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`profiles "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.profiles>`\\"
+msgid ":py:obj:`profiles <abaqus.Model.ModelBase.ModelBase.profiles>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2231,7 +2239,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`boundaryConditions "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.boundaryConditions>`\\"
+"<abaqus.Model.ModelBase.ModelBase.boundaryConditions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2239,9 +2247,7 @@ msgid "A repository of BoundaryCondition objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`constraints "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.constraints>`\\"
+msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2251,7 +2257,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`analyticalFields "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.analyticalFields>`\\"
+"<abaqus.Model.ModelBase.ModelBase.analyticalFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2261,7 +2267,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`discreteFields "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.discreteFields>`\\"
+"<abaqus.Model.ModelBase.ModelBase.discreteFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2271,7 +2277,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`predefinedFields "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.predefinedFields>`\\"
+"<abaqus.Model.ModelBase.ModelBase.predefinedFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2279,9 +2285,7 @@ msgid "A repository of PredefinedField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`interactions "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.interactions>`\\"
+msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2291,7 +2295,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`interactionProperties "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.interactionProperties>`\\"
+"<abaqus.Model.ModelBase.ModelBase.interactionProperties>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2301,7 +2305,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`contactControls "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.contactControls>`\\"
+"<abaqus.Model.ModelBase.ModelBase.contactControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2311,7 +2315,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`contactInitializations "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.contactInitializations>`\\"
+"<abaqus.Model.ModelBase.ModelBase.contactInitializations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2321,7 +2325,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`contactStabilizations "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.contactStabilizations>`\\"
+"<abaqus.Model.ModelBase.ModelBase.contactStabilizations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2331,7 +2335,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`linkedInstances "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.linkedInstances>`\\"
+"<abaqus.Model.ModelBase.ModelBase.linkedInstances>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2342,9 +2346,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`linkedParts "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.linkedParts>`\\"
+msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2355,9 +2357,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`loads "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.loads>`\\"
+msgid ":py:obj:`loads <abaqus.Model.ModelBase.ModelBase.loads>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2365,9 +2365,7 @@ msgid "A repository of Load objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`materials "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.materials>`\\"
+msgid ":py:obj:`materials <abaqus.Model.ModelBase.ModelBase.materials>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2375,9 +2373,7 @@ msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`calibrations "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.calibrations>`\\"
+msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2385,9 +2381,7 @@ msgid "A repository of Calibration objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`sections "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.sections>`\\"
+msgid ":py:obj:`sections <abaqus.Model.ModelBase.ModelBase.sections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2397,7 +2391,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`remeshingRules "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.remeshingRules>`\\"
+"<abaqus.Model.ModelBase.ModelBase.remeshingRules>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2405,9 +2399,7 @@ msgid "A repository of RemeshingRule objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`sketches "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.sketches>`\\"
+msgid ":py:obj:`sketches <abaqus.Model.ModelBase.ModelBase.sketches>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2415,9 +2407,7 @@ msgid "A repository of ConstrainedSketch objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`parts "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.parts>`\\"
+msgid ":py:obj:`parts <abaqus.Model.ModelBase.ModelBase.parts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2425,9 +2415,7 @@ msgid "A repository of Part objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`steps "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.steps>`\\"
+msgid ":py:obj:`steps <abaqus.Model.ModelBase.ModelBase.steps>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2437,7 +2425,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`featureOptions "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.featureOptions>`\\"
+"<abaqus.Model.ModelBase.ModelBase.featureOptions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2447,7 +2435,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshConstraints "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.adaptiveMeshConstraints>`\\"
+"<abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2457,7 +2445,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`adaptiveMeshControls "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.adaptiveMeshControls>`\\"
+"<abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2465,9 +2453,7 @@ msgid "A repository of AdaptiveMeshControl objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`timePoints "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.timePoints>`\\"
+msgid ":py:obj:`timePoints <abaqus.Model.ModelBase.ModelBase.timePoints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2475,9 +2461,7 @@ msgid "A repository of TimePoint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ""
-":py:obj:`filters "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.filters>`\\"
+msgid ":py:obj:`filters <abaqus.Model.ModelBase.ModelBase.filters>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2487,7 +2471,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`integratedOutputSections "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.integratedOutputSections>`\\"
+"<abaqus.Model.ModelBase.ModelBase.integratedOutputSections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2497,7 +2481,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`fieldOutputRequests "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.fieldOutputRequests>`\\"
+"<abaqus.Model.ModelBase.ModelBase.fieldOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2507,7 +2491,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`historyOutputRequests "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.historyOutputRequests>`\\"
+"<abaqus.Model.ModelBase.ModelBase.historyOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2517,7 +2501,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`optimizationTasks "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.optimizationTasks>`\\"
+"<abaqus.Model.ModelBase.ModelBase.optimizationTasks>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2527,7 +2511,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`tableCollections "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.tableCollections>`\\"
+"<abaqus.Model.ModelBase.ModelBase.tableCollections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2537,7 +2521,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`eventSeriesTypes "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.eventSeriesTypes>`\\"
+"<abaqus.Model.ModelBase.ModelBase.eventSeriesTypes>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2547,7 +2531,7 @@ msgstr ""
 #: ../../None:55:<autosummary>:1
 msgid ""
 ":py:obj:`eventSeriesDatas "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.eventSeriesDatas>`\\"
+"<abaqus.Model.ModelBase.ModelBase.eventSeriesDatas>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -2562,6 +2546,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
+#: abaqus.TableCollection.EventSeries.EventSeries.__init__:1
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:1
 #: of
 msgid "This method creates an EventSeries object."
@@ -2575,6 +2560,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
+#: abaqus.TableCollection.EventSeriesType.EventSeriesType.__init__:1
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType:1
 #: of
 msgid "This method creates an EventSeriesType object."
@@ -2582,9 +2568,8 @@ msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid ""
-":py:obj:`__init__ "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.__init__>`\\"
-" \\(name\\[\\, description\\, ...\\]\\)"
+":py:obj:`__init__ <abaqus.Model.ModelBase.ModelBase.__init__>`\\ "
+"\\(name\\[\\, description\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -2594,8 +2579,8 @@ msgstr ""
 #: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`ModelFromInputFile "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.ModelFromInputFile>`\\"
-" \\(name\\, inputFileName\\)"
+"<abaqus.Model.ModelBase.ModelBase.ModelFromInputFile>`\\ \\(name\\, "
+"inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -2607,8 +2592,8 @@ msgstr ""
 #: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`ModelFromOdbFile "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.ModelFromOdbFile>`\\"
-" \\(name\\, odbFileName\\)"
+"<abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile>`\\ \\(name\\, "
+"odbFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -2620,8 +2605,8 @@ msgstr ""
 #: ../../None:7:<autosummary>:1
 msgid ""
 ":py:obj:`ModelFromNastranFile "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.ModelFromNastranFile>`\\"
-" \\(modelName\\, inputFileName\\)"
+"<abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ "
+"\\(modelName\\, inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -2633,9 +2618,8 @@ msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid ""
-":py:obj:`setValues "
-"<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.setValues>`\\"
-" \\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
+":py:obj:`setValues <abaqus.Model.ModelBase.ModelBase.setValues>`\\ "
+"\\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -2650,8 +2634,9 @@ msgid ""
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-eventseriespyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring
+#: ../../docstring abaqus.TableCollection.EventSeries.EventSeries.__init__:14
 #: abaqus.TableCollection.EventSeries.EventSeries.createStepName:1
+#: abaqus.TableCollection.EventSeriesType.EventSeriesType.__init__:14
 #: abaqus.TableCollection.EventSeriesType.EventSeriesType.createStepName:1
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:14
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType:14
@@ -2659,14 +2644,15 @@ msgstr ""
 msgid "A string specifying the step name."
 msgstr ""
 
-#: ../../docstring
+#: ../../docstring abaqus.TableCollection.EventSeries.EventSeries.__init__:16
 #: abaqus.TableCollection.EventSeries.EventSeries.eventSeriesType:1
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:16
 #: of
 msgid "A string specifying the type of event series."
 msgstr ""
 
-#: ../../docstring abaqus.TableCollection.EventSeries.EventSeries.setValues:7
+#: ../../docstring abaqus.TableCollection.EventSeries.EventSeries.__init__:18
+#: abaqus.TableCollection.EventSeries.EventSeries.setValues:7
 #: abaqus.TableCollection.EventSeries.EventSeries.transformType:1
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:18
 #: of
@@ -2675,7 +2661,8 @@ msgid ""
 "values are NONE, BOTH, TRANSLATE, and ROTATE. The default value is NONE."
 msgstr ""
 
-#: ../../docstring abaqus.TableCollection.EventSeries.EventSeries.setValues:10
+#: ../../docstring abaqus.TableCollection.EventSeries.EventSeries.__init__:21
+#: abaqus.TableCollection.EventSeries.EventSeries.setValues:10
 #: abaqus.TableCollection.EventSeries.EventSeries.timeSpan:1
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:21
 #: of
@@ -2685,6 +2672,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
+#: abaqus.TableCollection.EventSeries.EventSeries.__init__:24
 #: abaqus.TableCollection.EventSeries.EventSeries.setValues:13
 #: abaqus.TableCollection.EventSeries.EventSeries.transformations:1
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:24
@@ -2693,6 +2681,7 @@ msgid "An Array specifying the required transformations over event series data."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
+#: abaqus.TableCollection.EventSeries.EventSeries.__init__:26
 #: abaqus.TableCollection.EventSeries.EventSeries.fileName:1
 #: abaqus.TableCollection.EventSeries.EventSeries.setValues:15
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:26
@@ -2701,6 +2690,7 @@ msgid "A String specifying the filename."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1 ../../docstring
+#: abaqus.TableCollection.EventSeries.EventSeries.__init__:28
 #: abaqus.TableCollection.EventSeries.EventSeries.data:1
 #: abaqus.TableCollection.EventSeries.EventSeries.setValues:17
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:28
@@ -2710,11 +2700,13 @@ msgid ""
 "EventSeriesType."
 msgstr ""
 
+#: abaqus.TableCollection.EventSeries.EventSeries.__init__:30
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:30
 #: of
 msgid "An :py:class:`~abaqus.TableCollection.EventSeries.EventSeries` object."
 msgstr ""
 
+#: abaqus.TableCollection.EventSeries.EventSeries.__init__:31
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeries:31
 #: of
 msgid ":class:`EventSeries`"
@@ -2729,6 +2721,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.TableCollection.EventSeriesType.EventSeriesType.__init__:16
 #: abaqus.TableCollection.EventSeriesType.EventSeriesType.fields:1
 #: abaqus.TableCollection.EventSeriesType.EventSeriesType.setValues:7
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType:16
@@ -2736,6 +2729,7 @@ msgstr ""
 msgid "A String array specifying fields. The default value is an empty array."
 msgstr ""
 
+#: abaqus.TableCollection.EventSeriesType.EventSeriesType.__init__:18
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType:18
 #: of
 msgid ""
@@ -2743,18 +2737,33 @@ msgid ""
 "object."
 msgstr ""
 
+#: abaqus.TableCollection.EventSeriesType.EventSeriesType.__init__:19
 #: abaqus.TableCollection.TableCollectionModel.TableCollectionModel.EventSeriesType:19
 #: of
 msgid ":class:`EventSeriesType`"
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:24
-msgid "Object features"
+#: ../../reference/kernel/table_collection.rst:28
+msgid "Classes"
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:27
+#: ../../reference/kernel/table_collection.rst:31
 #: abaqus.TableCollection.ActivateElements.ActivateElements:11 of
 msgid "ActivateElements"
+msgstr ""
+
+#: abaqus.TableCollection.ActivateElements.ActivateElements:1
+#: abaqus.TableCollection.DataTable.DataTable:1
+#: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation:1
+#: abaqus.TableCollection.EventSeries.EventSeries:1
+#: abaqus.TableCollection.EventSeriesData.EventSeriesData:1
+#: abaqus.TableCollection.EventSeriesType.EventSeriesType:1
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn:1
+#: abaqus.TableCollection.ParameterTable.ParameterTable:1
+#: abaqus.TableCollection.PropertyTable.PropertyTable:1
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData:1
+#: abaqus.TableCollection.TableCollection.TableCollection:1 of
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: abaqus.TableCollection.ActivateElements.ActivateElements:1 of
@@ -2776,7 +2785,7 @@ msgstr ""
 msgid "The corresponding analysis keywords are:"
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:51
+#: ../../reference/kernel/table_collection.rst:61
 #: abaqus.TableCollection.ActivateElements.ActivateElements:12 of
 msgid "ElementProgressiveActivation"
 msgstr ""
@@ -2798,6 +2807,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.TableCollection.ActivateElements.ActivateElements.__init__:16
 #: abaqus.TableCollection.ActivateElements.ActivateElements.eigenTimeConst:1 of
 msgid ""
 "A Double specifying the time constant used to ramp up the eigenstrains at"
@@ -2811,6 +2821,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.TableCollection.ActivateElements.ActivateElements.__init__:19
 #: abaqus.TableCollection.ActivateElements.ActivateElements.expansionTimeConstant:1
 #: of
 msgid ""
@@ -2826,6 +2837,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
+#: abaqus.TableCollection.ActivateElements.ActivateElements.__init__:1 of
 msgid "This method creates an ActivateElements object."
 msgstr ""
 
@@ -2841,18 +2853,37 @@ msgstr ""
 msgid "This method modifies the ActivateElements object."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.TableCollection.ActivateElements.ActivateElements.activation:1 of
-msgid "A string specifying the name of progressive element activation."
+#: abaqus.TableCollection.ActivateElements.ActivateElements.__init__:9 of
+msgid ""
+"Check `ActivateElements.__init__ on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-activateelementspyc.htm?contextscope=all"
+"#simaker-activateelements__init__pyc>`__."
 msgstr ""
 
 #: ../../docstring
+#: abaqus.TableCollection.ActivateElements.ActivateElements.__init__:12
 #: abaqus.TableCollection.ActivateElements.ActivateElements.tableCollection:1
 #: of
 msgid "A String specifying the name of the tableCollection object."
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:35
+#: ../../docstring
+#: abaqus.TableCollection.ActivateElements.ActivateElements.__init__:14
+#: abaqus.TableCollection.ActivateElements.ActivateElements.activation:1 of
+msgid "A string specifying the name of progressive element activation."
+msgstr ""
+
+#: abaqus.TableCollection.ActivateElements.ActivateElements.__init__:22 of
+msgid ""
+"An :py:class:`~abaqus.TableCollection.ActivateElements.ActivateElements` "
+"object."
+msgstr ""
+
+#: abaqus.TableCollection.ActivateElements.ActivateElements.__init__:23 of
+msgid ":class:`ActivateElements`"
+msgstr ""
+
+#: ../../reference/kernel/table_collection.rst:41
 msgid "DataTable"
 msgstr ""
 
@@ -2908,13 +2939,38 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1 ../../None:6:<autosummary>:1
+#: abaqus.TableCollection.DataTable.DataTable.__init__:1
 #: abaqus.TableCollection.TableCollection.TableCollection.DataTable:1 of
 msgid ""
 "This method creates a DataTable object and places it in the dataTables "
 "array."
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:43
+#: abaqus.TableCollection.DataTable.DataTable.__init__:9 of
+msgid ""
+"Check `DataTable.__init__ on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datatablepyc.htm?contextscope=all"
+"#simaker-datatable__init__pyc>`__."
+msgstr ""
+
+#: abaqus.TableCollection.DataTable.DataTable.__init__:12
+#: abaqus.TableCollection.TableCollection.TableCollection.DataTable:12 of
+msgid ""
+"A String specifying a unique label name for the current ParameterTable "
+"object."
+msgstr ""
+
+#: abaqus.TableCollection.DataTable.DataTable.__init__:14
+#: abaqus.TableCollection.TableCollection.TableCollection.DataTable:14 of
+msgid "A :py:class:`~abaqus.Field.DataTable.DataTable` object."
+msgstr ""
+
+#: abaqus.TableCollection.DataTable.DataTable.__init__:15
+#: abaqus.TableCollection.TableCollection.TableCollection.DataTable:15 of
+msgid ":class:`DataTable`"
+msgstr ""
+
+#: ../../reference/kernel/table_collection.rst:51
 msgid "DataTableArray"
 msgstr ""
 
@@ -2980,7 +3036,15 @@ msgstr ""
 msgid "The method modifies the ElementProgressiveActivation object."
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:59
+#: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:10
+#: of
+msgid ""
+"Check `ElementProgressiveActivation.__init__ on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-elementprogressiveactivationpyc.htm?contextscope=all"
+"#simaker-elementprogressiveactivation__init__pyc>`__."
+msgstr ""
+
+#: ../../reference/kernel/table_collection.rst:71
 msgid "EventSeries"
 msgstr ""
 
@@ -3060,6 +3124,13 @@ msgstr ""
 msgid "This method modifies the EventSeries object."
 msgstr ""
 
+#: abaqus.TableCollection.EventSeries.EventSeries.__init__:9 of
+msgid ""
+"Check `EventSeries.__init__ on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-eventseriespyc.htm?contextscope=all"
+"#simaker-eventseries__init__pyc>`__."
+msgstr ""
+
 #: abaqus.TableCollection.EventSeries.EventSeries.setValues:4 of
 msgid ""
 "Check `EventSeries.setValues on help.3ds.com/2021 "
@@ -3067,11 +3138,11 @@ msgid ""
 "#simaker-eventseriessetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:67
+#: ../../reference/kernel/table_collection.rst:81
 msgid "EventSeriesData"
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:73
+#: ../../reference/kernel/table_collection.rst:91
 msgid "EventSeriesType"
 msgstr ""
 
@@ -3112,6 +3183,13 @@ msgstr ""
 msgid "This method modifies the EventSeriesType object."
 msgstr ""
 
+#: abaqus.TableCollection.EventSeriesType.EventSeriesType.__init__:9 of
+msgid ""
+"Check `EventSeriesType.__init__ on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-eventseriestypepyc.htm?contextscope=all"
+"#simaker-eventseriestype__init__pyc>`__."
+msgstr ""
+
 #: abaqus.TableCollection.EventSeriesType.EventSeriesType.setValues:4 of
 msgid ""
 "Check `EventSeriesType.setValues on help.3ds.com/2021 "
@@ -3119,7 +3197,7 @@ msgid ""
 "#simaker-eventseriestypesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:81
+#: ../../reference/kernel/table_collection.rst:101
 msgid "ParameterColumn"
 msgstr ""
 
@@ -3152,6 +3230,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:6:<autosummary>:1 ../../docstring
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__:17
 #: abaqus.TableCollection.ParameterColumn.ParameterColumn.unit:1
 #: abaqus.TableCollection.ParameterTable.ParameterTable.Column:17 of
 msgid "A String specifying the unit of the parameter."
@@ -3164,6 +3243,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:6:<autosummary>:1 ../../docstring
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__:19
 #: abaqus.TableCollection.ParameterColumn.ParameterColumn.description:1
 #: abaqus.TableCollection.ParameterTable.ParameterTable.Column:19 of
 msgid "A String specifying the description of the parameter."
@@ -3186,6 +3266,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:6:<autosummary>:1 ../../docstring
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__:24
 #: abaqus.TableCollection.ParameterColumn.ParameterColumn.allowedValues:1
 #: abaqus.TableCollection.ParameterTable.ParameterTable.Column:24 of
 msgid "A Set of allowed values for the parameter."
@@ -3204,15 +3285,23 @@ msgid ""
 "object and stores it in the array data structure."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.TableCollection.ParameterColumn.ParameterColumn.default:1
-#: abaqus.TableCollection.ParameterTable.ParameterTable.Column:21 of
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__:1
+#: abaqus.TableCollection.ParameterTable.ParameterTable.Column:1 of
 msgid ""
-"The default value of the first parameter. The data type of the value "
-"depends on the value of **type** argument."
+"ParameterColumn is a constructor method that creates a ParameterColumn "
+"object and stores it in the array data structure. It is accessible from "
+"the ParameterTable object using a column member."
+msgstr ""
+
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__:11 of
+msgid ""
+"Check `ParameterColumn.__init__ on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-parametercolumnpyc.htm?contextscope=all"
+"#simaker-parametercolumn__init__pyc>`__."
 msgstr ""
 
 #: ../../docstring
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__:14
 #: abaqus.TableCollection.ParameterColumn.ParameterColumn.type:1
 #: abaqus.TableCollection.ParameterTable.ParameterTable.Column:14 of
 msgid ""
@@ -3220,11 +3309,36 @@ msgid ""
 "values are STRING, INTEGER, and FLOAT."
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:89
+#: ../../docstring
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__:21
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn.default:1
+#: abaqus.TableCollection.ParameterTable.ParameterTable.Column:21 of
+msgid ""
+"The default value of the first parameter. The data type of the value "
+"depends on the value of **type** argument."
+msgstr ""
+
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__:26
+#: abaqus.TableCollection.ParameterTable.ParameterTable.Column:26
+#: abaqus.TableCollection.ParameterTable.ParameterTable.__init__:15
+#: abaqus.TableCollection.TableCollection.TableCollection.ParameterTable:15 of
+msgid ""
+"A :py:class:`~abaqus.TableCollection.ParameterTable.ParameterTable` "
+"object."
+msgstr ""
+
+#: abaqus.TableCollection.ParameterColumn.ParameterColumn.__init__:27
+#: abaqus.TableCollection.ParameterTable.ParameterTable.Column:27
+#: abaqus.TableCollection.ParameterTable.ParameterTable.__init__:16
+#: abaqus.TableCollection.TableCollection.TableCollection.ParameterTable:16 of
+msgid ":class:`ParameterTable`"
+msgstr ""
+
+#: ../../reference/kernel/table_collection.rst:111
 msgid "ParameterColumnArray"
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:97
+#: ../../reference/kernel/table_collection.rst:121
 msgid "ParameterTable"
 msgstr ""
 
@@ -3278,6 +3392,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1 ../../None:6:<autosummary>:1
+#: abaqus.TableCollection.ParameterTable.ParameterTable.__init__:1
 #: abaqus.TableCollection.TableCollection.TableCollection.ParameterTable:1 of
 msgid ""
 "This method creates a ParameterTable object and places it in the "
@@ -3291,32 +3406,20 @@ msgid ""
 "\\(type\\[\\, unit\\, description\\, default\\, ...\\]\\)"
 msgstr ""
 
-#: abaqus.TableCollection.ParameterTable.ParameterTable.Column:1 of
-msgid ""
-"ParameterColumn is a constructor method that creates a ParameterColumn "
-"object and stores it in the array data structure. It is accessible from "
-"the ParameterTable object using a column member."
-msgstr ""
-
 #: abaqus.TableCollection.ParameterTable.ParameterTable.Column:11 of
 msgid ""
 "Check `Column on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-columnpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.TableCollection.ParameterTable.ParameterTable.Column:26
-#: abaqus.TableCollection.TableCollection.TableCollection.ParameterTable:15 of
+#: abaqus.TableCollection.ParameterTable.ParameterTable.__init__:10 of
 msgid ""
-"A :py:class:`~abaqus.TableCollection.ParameterTable.ParameterTable` "
-"object."
+"Check `ParameterTable.__init__ on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-parametertablepyc.htm?contextscope=all"
+"#simaker-parametertable__init__pyc>`__."
 msgstr ""
 
-#: abaqus.TableCollection.ParameterTable.ParameterTable.Column:27
-#: abaqus.TableCollection.TableCollection.TableCollection.ParameterTable:16 of
-msgid ":class:`ParameterTable`"
-msgstr ""
-
-#: ../../reference/kernel/table_collection.rst:105
+#: ../../reference/kernel/table_collection.rst:131
 msgid "PropertyTable"
 msgstr ""
 
@@ -3378,6 +3481,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:5:<autosummary>:1 ../../None:6:<autosummary>:1
+#: abaqus.TableCollection.PropertyTable.PropertyTable.__init__:1
 #: abaqus.TableCollection.TableCollection.TableCollection.PropertyTable:1 of
 msgid "This method creates a PropertyTable object."
 msgstr ""
@@ -3402,7 +3506,8 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1 ../../None:5:<autosummary>:1
-#: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:1 of
+#: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:1
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__:1 of
 msgid "This method creates a PropertyTableData object."
 msgstr ""
 
@@ -3415,6 +3520,7 @@ msgstr ""
 
 #: ../../None:9:<autosummary>:1 ../../docstring
 #: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:12
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__:12
 #: abaqus.TableCollection.PropertyTableData.PropertyTableData.label:1 of
 msgid ""
 "A String specifying a unique label name for the current PropertyTable "
@@ -3423,6 +3529,7 @@ msgstr ""
 
 #: ../../None:9:<autosummary>:1 ../../docstring
 #: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:14
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__:14
 #: abaqus.TableCollection.PropertyTableData.PropertyTableData.regularize:1 of
 msgid ""
 "A SymbolicConstant specifying the type of regularize to the user-defined "
@@ -3431,6 +3538,7 @@ msgstr ""
 
 #: ../../None:9:<autosummary>:1 ../../docstring
 #: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:16
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__:16
 #: abaqus.TableCollection.PropertyTableData.PropertyTableData.extrapolate:1 of
 msgid ""
 "A SymbolicConstant specifying the type of extrapolation of dependent "
@@ -3439,18 +3547,21 @@ msgstr ""
 
 #: ../../None:9:<autosummary>:1 ../../docstring
 #: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:19
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__:19
 #: abaqus.TableCollection.PropertyTableData.PropertyTableData.isTemp:1 of
 msgid "A Boolean specifying the dependency of properties on temperature."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1 ../../docstring
 #: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:21
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__:21
 #: abaqus.TableCollection.PropertyTableData.PropertyTableData.fieldNums:1 of
 msgid "An Int specifying the field variables on which properties are dependent."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1 ../../docstring
 #: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:23
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__:23
 #: abaqus.TableCollection.PropertyTableData.PropertyTableData.regularizeTolerance:1
 #: of
 msgid ""
@@ -3460,6 +3571,7 @@ msgstr ""
 
 #: ../../None:9:<autosummary>:1 ../../docstring
 #: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:25
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__:25
 #: abaqus.TableCollection.PropertyTableData.PropertyTableData.data:1 of
 msgid ""
 "An Array of doubles specifying the values of the properties, the "
@@ -3467,22 +3579,52 @@ msgid ""
 "in PropertyTableData."
 msgstr ""
 
-#: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:28 of
+#: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:28
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__:28 of
 msgid ""
 "A :py:class:`~abaqus.TableCollection.PropertyTableData.PropertyTableData`"
 " object."
 msgstr ""
 
-#: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:29 of
+#: abaqus.TableCollection.PropertyTable.PropertyTable.PropertyTableData:29
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__:29 of
 msgid ":class:`PropertyTableData`"
 msgstr ""
 
+#: abaqus.TableCollection.PropertyTable.PropertyTable.__init__:9 of
+msgid ""
+"Check `PropertyTable.__init__ on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-propertytablepyc.htm?contextscope=all"
+"#simaker-propertytable__init__pyc>`__."
+msgstr ""
+
 #: ../../docstring
+#: abaqus.TableCollection.PropertyTable.PropertyTable.__init__:14
 #: abaqus.TableCollection.PropertyTable.PropertyTable.properties:1
 #: abaqus.TableCollection.TableCollection.TableCollection.PropertyTable:14 of
 msgid ""
 "A string array specifying the multiple properties to build the parameter "
 "table type."
+msgstr ""
+
+#: ../../docstring
+#: abaqus.TableCollection.PropertyTable.PropertyTable.__init__:16
+#: abaqus.TableCollection.PropertyTable.PropertyTable.setValues:7
+#: abaqus.TableCollection.PropertyTable.PropertyTable.variables:1
+#: abaqus.TableCollection.TableCollection.TableCollection.PropertyTable:16 of
+msgid ""
+"A String array specifying multiple independent variables. The default "
+"value is an empty array."
+msgstr ""
+
+#: abaqus.TableCollection.PropertyTable.PropertyTable.__init__:19
+#: abaqus.TableCollection.TableCollection.TableCollection.PropertyTable:19 of
+msgid "A :py:class:`~abaqus.TableCollection.PropertyTable.PropertyTable` object."
+msgstr ""
+
+#: abaqus.TableCollection.PropertyTable.PropertyTable.__init__:20
+#: abaqus.TableCollection.TableCollection.TableCollection.PropertyTable:20 of
+msgid ":class:`PropertyTable`"
 msgstr ""
 
 #: ../../docstring
@@ -3499,16 +3641,7 @@ msgid ""
 "#simaker-propertytablesetvaluespyc>`__."
 msgstr ""
 
-#: ../../docstring
-#: abaqus.TableCollection.PropertyTable.PropertyTable.setValues:7
-#: abaqus.TableCollection.PropertyTable.PropertyTable.variables:1
-#: abaqus.TableCollection.TableCollection.TableCollection.PropertyTable:16 of
-msgid ""
-"A String array specifying multiple independent variables. The default "
-"value is an empty array."
-msgstr ""
-
-#: ../../reference/kernel/table_collection.rst:113
+#: ../../reference/kernel/table_collection.rst:141
 msgid "PropertyTableData"
 msgstr ""
 
@@ -3585,7 +3718,14 @@ msgstr ""
 msgid "This method modifies the PropertyTableData object."
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:121
+#: abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__:9 of
+msgid ""
+"Check `PropertyTableData.__init__ on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-propertytabledatapyc.htm?contextscope=all"
+"#simaker-propertytabledata__init__pyc>`__."
+msgstr ""
+
+#: ../../reference/kernel/table_collection.rst:151
 msgid "TableCollection"
 msgstr ""
 
@@ -3650,6 +3790,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
+#: abaqus.TableCollection.TableCollection.TableCollection.__init__:1 of
 msgid ""
 "This method creates a TableCollection object and places it in the "
 "tableCollections repository."
@@ -3676,26 +3817,21 @@ msgid ""
 " \\(name\\, properties\\[\\, variables\\]\\)"
 msgstr ""
 
-#: abaqus.TableCollection.TableCollection.TableCollection.DataTable:12 of
+#: abaqus.TableCollection.TableCollection.TableCollection.__init__:10 of
 msgid ""
-"A String specifying a unique label name for the current ParameterTable "
+"Check `TableCollection.__init__ on help.3ds.com/2021 "
+"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tablecollectionpyc.htm?contextscope=all"
+"#simaker-tablecollection__init__pyc>`__."
+msgstr ""
+
+#: abaqus.TableCollection.TableCollection.TableCollection.__init__:15 of
+msgid ""
+"A :py:class:`~abaqus.TableCollection.TableCollection.TableCollection` "
 "object."
 msgstr ""
 
-#: abaqus.TableCollection.TableCollection.TableCollection.DataTable:14 of
-msgid "A :py:class:`~abaqus.Field.DataTable.DataTable` object."
-msgstr ""
-
-#: abaqus.TableCollection.TableCollection.TableCollection.DataTable:15 of
-msgid ":class:`DataTable`"
-msgstr ""
-
-#: abaqus.TableCollection.TableCollection.TableCollection.PropertyTable:19 of
-msgid "A :py:class:`~abaqus.TableCollection.PropertyTable.PropertyTable` object."
-msgstr ""
-
-#: abaqus.TableCollection.TableCollection.TableCollection.PropertyTable:20 of
-msgid ":class:`PropertyTable`"
+#: abaqus.TableCollection.TableCollection.TableCollection.__init__:16 of
+msgid ":class:`TableCollection`"
 msgstr ""
 
 #~ msgid ""
@@ -3918,5 +4054,1127 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ":obj:`PropertyTable`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`isOutOfDate "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.isOutOfDate>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`timeStamp "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.timeStamp>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`isLocked "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.isLocked>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`regenerateConstraintsTogether "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.regenerateConstraintsTogether>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`vertices "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.vertices>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`edges "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.edges>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`elements "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.elements>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`nodes "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.nodes>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`instances "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.instances>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`datums "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.datums>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`features "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.features>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`featuresById "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.featuresById>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`surfaces "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.surfaces>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allSurfaces "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.allSurfaces>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allInternalSurfaces "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.allInternalSurfaces>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sets "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.sets>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allSets "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.allSets>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allInternalSets "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.allInternalSets>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`skins "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.skins>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`stringers "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.stringers>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`referencePoints "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.referencePoints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`modelInstances "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.modelInstances>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`allInstances "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.allInstances>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`engineeringFeatures "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.engineeringFeatures>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`modelName "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.modelName>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`connectorOrientations "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.connectorOrientations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sectionAssignments "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.sectionAssignments>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`id "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.id>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Instance "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.Instance>`\\"
+#~ " \\(name\\, \\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`backup "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.backup>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`clearGeometryCache "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.clearGeometryCache>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`deleteAllFeatures "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.deleteAllFeatures>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`deleteFeatures "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.deleteFeatures>`\\"
+#~ " \\(featureNames\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`excludeFromSimulation "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.excludeFromSimulation>`\\"
+#~ " \\(instances\\, exclude\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`featurelistInfo "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.featurelistInfo>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getMassProperties "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.getMassProperties>`\\"
+#~ " \\(\\[regions\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getAngle "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.getAngle>`\\"
+#~ " \\(plane1\\, plane2\\, line1\\, line2\\[\\, "
+#~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getCoordinates "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.getCoordinates>`\\"
+#~ " \\(entity\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getDistance "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.getDistance>`\\"
+#~ " \\(entity1\\, entity2\\[\\, printResults\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getFacesAndVerticesOfAttachmentLines "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.getFacesAndVerticesOfAttachmentLines>`\\"
+#~ " \\(edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getSurfaceSections "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.getSurfaceSections>`\\"
+#~ " \\(surface\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importEafFile "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.importEafFile>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importParasolidFile "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.importParasolidFile>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importCatiaV5File "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.importCatiaV5File>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importEnfFile "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.importEnfFile>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importIdeasFile "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.importIdeasFile>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importProEFile "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.importProEFile>`\\"
+#~ " \\(filename\\[\\, ids\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`makeDependent "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.makeDependent>`\\"
+#~ " \\(instances\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`makeIndependent "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.makeIndependent>`\\"
+#~ " \\(instances\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`printAssignedSections "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.printAssignedSections>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`printConnectorOrientations "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.printConnectorOrientations>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`projectReferencesOntoSketch "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.projectReferencesOntoSketch>`\\"
+#~ " \\(sketch\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`queryCachedStates "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.queryCachedStates>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`regenerate "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.regenerate>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`regenerationWarnings "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.regenerationWarnings>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restore "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.restore>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resumeAllFeatures "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.resumeAllFeatures>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resumeFeatures "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.resumeFeatures>`\\"
+#~ " \\(featureNames\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resumeLastSetFeatures "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.resumeLastSetFeatures>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`rotate "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.rotate>`\\"
+#~ " \\(instanceList\\, axisPoint\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`translate "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.translate>`\\"
+#~ " \\(instanceList\\, vector\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`saveGeometryCache "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.saveGeometryCache>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setValues "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.setValues>`\\"
+#~ " \\(regenerateConstraintsTogether\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppressFeatures "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.suppressFeatures>`\\"
+#~ " \\(featureNames\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`unlinkInstances "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.unlinkInstances>`\\"
+#~ " \\(instances\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`writeAcisFile "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.writeAcisFile>`\\"
+#~ " \\(fileName\\[\\, version\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`writeCADParameters "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.writeCADParameters>`\\"
+#~ " \\(paramFile\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lock "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.lock>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`unlock "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.unlock>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setMeshNumberingControl "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.setMeshNumberingControl>`\\"
+#~ " \\(instances\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyMeshPattern "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.copyMeshPattern>`\\"
+#~ " \\(\\[elements\\, faces\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`smoothNodes "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.smoothNodes>`\\"
+#~ " \\(\\[nodes\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AttachmentLines "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.AttachmentLines>`\\"
+#~ " \\(name\\, points\\, sourceFaces\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Coaxial "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.Coaxial>`\\"
+#~ " \\(movableAxis\\, fixedAxis\\, flip\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`CoincidentPoint "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.CoincidentPoint>`\\"
+#~ " \\(movablePoint\\, fixedPoint\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`EdgeToEdge "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.EdgeToEdge>`\\"
+#~ " \\(movableAxis\\, fixedAxis\\, flip\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`FaceToFace "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.FaceToFace>`\\"
+#~ " \\(movablePlane\\, fixedPlane\\, flip\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ParallelCsys "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ParallelCsys>`\\"
+#~ " \\(movableCsys\\, fixedCsys\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ParallelEdge "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ParallelEdge>`\\"
+#~ " \\(movableAxis\\, fixedAxis\\, flip\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ParallelFace "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ParallelFace>`\\"
+#~ " \\(movablePlane\\, fixedPlane\\, flip\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AttachmentPoints "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.AttachmentPoints>`\\"
+#~ " \\(name\\, points\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AttachmentPointsAlongDirection "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.AttachmentPointsAlongDirection>`\\"
+#~ " \\(name\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`AttachmentPointsOffsetFromEdges "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.AttachmentPointsOffsetFromEdges>`\\"
+#~ " \\(name\\, edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByCylFace "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByCylFace>`\\"
+#~ " \\(face\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByNormalToPlane "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByNormalToPlane>`\\"
+#~ " \\(plane\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByParToEdge "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByParToEdge>`\\"
+#~ " \\(edge\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByPrincipalAxis "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByPrincipalAxis>`\\"
+#~ " \\(principalAxis\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByRotation "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByRotation>`\\"
+#~ " \\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByThreePoint "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByThreePoint>`\\"
+#~ " \\(point1\\, point2\\, point3\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByThruEdge "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByThruEdge>`\\"
+#~ " \\(edge\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByTwoPlane "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByTwoPlane>`\\"
+#~ " \\(plane1\\, plane2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumAxisByTwoPoint "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumAxisByTwoPoint>`\\"
+#~ " \\(point1\\, point2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByDefault "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumCsysByDefault>`\\"
+#~ " \\(coordSysType\\[\\, name\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByOffset "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumCsysByOffset>`\\"
+#~ " \\(coordSysType\\, ...\\[\\, name\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByThreePoints "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumCsysByThreePoints>`\\"
+#~ " \\(coordSysType\\, origin\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumCsysByTwoLines "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumCsysByTwoLines>`\\"
+#~ " \\(coordSysType\\, line1\\, line2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByPrincipalPlane "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPlaneByPrincipalPlane>`\\"
+#~ " \\(principalPlane\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByOffset "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPlaneByOffset>`\\"
+#~ " \\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByRotation "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPlaneByRotation>`\\"
+#~ " \\(plane\\, axis\\, angle\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByThreePoints "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPlaneByThreePoints>`\\"
+#~ " \\(point1\\, point2\\, point3\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByLinePoint "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPlaneByLinePoint>`\\"
+#~ " \\(line\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByPointNormal "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPlaneByPointNormal>`\\"
+#~ " \\(point\\, normal\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPlaneByTwoPoint "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPlaneByTwoPoint>`\\"
+#~ " \\(point1\\, point2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByCoordinate "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPointByCoordinate>`\\"
+#~ " \\(coords\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByOffset "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPointByOffset>`\\"
+#~ " \\(point\\, vector\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByMidPoint "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPointByMidPoint>`\\"
+#~ " \\(point1\\, point2\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByOnFace "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPointByOnFace>`\\"
+#~ " \\(face\\, edge1\\, offset1\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByEdgeParam "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPointByEdgeParam>`\\"
+#~ " \\(edge\\, parameter\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByProjOnEdge "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPointByProjOnEdge>`\\"
+#~ " \\(point\\, edge\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`DatumPointByProjOnFace "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.DatumPointByProjOnFace>`\\"
+#~ " \\(point\\, face\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`MakeSketchTransform "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.MakeSketchTransform>`\\"
+#~ " \\(sketchPlane\\[\\, origin\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByDatumPlane "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByDatumPlane>`\\"
+#~ " \\(cells\\, datumPlane\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByExtendFace "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByExtendFace>`\\"
+#~ " \\(cells\\, extendFace\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByExtrudeEdge "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByExtrudeEdge>`\\"
+#~ " \\(cells\\, edges\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPatchNCorners "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByPatchNCorners>`\\"
+#~ " \\(cell\\, cornerPoints\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPatchNEdges "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByPatchNEdges>`\\"
+#~ " \\(cell\\, edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPlaneNormalToEdge "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByPlaneNormalToEdge>`\\"
+#~ " \\(cells\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPlanePointNormal "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByPlanePointNormal>`\\"
+#~ " \\(cells\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellByPlaneThreePoints "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellByPlaneThreePoints>`\\"
+#~ " \\(cells\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionCellBySweepEdge "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionCellBySweepEdge>`\\"
+#~ " \\(cells\\, edges\\, sweepPath\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionEdgeByDatumPlane "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionEdgeByDatumPlane>`\\"
+#~ " \\(edges\\, datumPlane\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionEdgeByParam "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionEdgeByParam>`\\"
+#~ " \\(edges\\, parameter\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionEdgeByPoint "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionEdgeByPoint>`\\"
+#~ " \\(edge\\, point\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByAuto "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByAuto>`\\"
+#~ " \\(face\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByCurvedPathEdgeParams "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByCurvedPathEdgeParams>`\\"
+#~ " \\(face\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByCurvedPathEdgePoints "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByCurvedPathEdgePoints>`\\"
+#~ " \\(face\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByDatumPlane "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByDatumPlane>`\\"
+#~ " \\(faces\\, datumPlane\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByExtendFace "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByExtendFace>`\\"
+#~ " \\(faces\\, extendFace\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByIntersectFace "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByIntersectFace>`\\"
+#~ " \\(faces\\, cuttingFaces\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByProjectingEdges "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByProjectingEdges>`\\"
+#~ " \\(faces\\, edges\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceByShortestPath "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceByShortestPath>`\\"
+#~ " \\(faces\\, point1\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketch "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceBySketch>`\\"
+#~ " \\(faces\\, sketch\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketchDistance "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceBySketchDistance>`\\"
+#~ " \\(faces\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketchRefPoint "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceBySketchRefPoint>`\\"
+#~ " \\(faces\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`PartitionFaceBySketchThruAll "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.PartitionFaceBySketchThruAll>`\\"
+#~ " \\(faces\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ReferencePoint "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.ReferencePoint>`\\"
+#~ " \\(point\\[\\, instanceName\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`RemoveWireEdges "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.RemoveWireEdges>`\\"
+#~ " \\(wireEdgeList\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`WirePolyLine "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.WirePolyLine>`\\"
+#~ " \\(points\\[\\, mergeType\\, meshable\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`isSuppressed "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.isSuppressed>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.resume>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly.suppress>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`stefanBoltzmann "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.stefanBoltzmann>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`absoluteZero "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.absoluteZero>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`waveFormulation "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.waveFormulation>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`universalGas "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.universalGas>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`noPartsInputFile "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.noPartsInputFile>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restartIncrement "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.restartIncrement>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`endRestartStep "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.endRestartStep>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`shellToSolid "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.shellToSolid>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lastChangedCount "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.lastChangedCount>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`description "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.description>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restartJob "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.restartJob>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restartStep "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.restartStep>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`globalJob "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.globalJob>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyConstraints "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.copyConstraints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyConnectors "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.copyConnectors>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyInteractions "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.copyInteractions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`keywordBlock "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.keywordBlock>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`rootAssembly "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.rootAssembly>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`amplitudes "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.amplitudes>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`profiles "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.profiles>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`boundaryConditions "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.boundaryConditions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`constraints "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.constraints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`analyticalFields "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.analyticalFields>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`discreteFields "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.discreteFields>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`predefinedFields "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.predefinedFields>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`interactions "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.interactions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`interactionProperties "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.interactionProperties>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`contactControls "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.contactControls>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`contactInitializations "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.contactInitializations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`contactStabilizations "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.contactStabilizations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`linkedInstances "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.linkedInstances>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`linkedParts "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.linkedParts>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`loads "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.loads>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`materials "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.materials>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`calibrations "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.calibrations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sections "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.sections>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`remeshingRules "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.remeshingRules>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sketches "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.sketches>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`parts "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.parts>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`steps "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.steps>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`featureOptions "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.featureOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`adaptiveMeshConstraints "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.adaptiveMeshConstraints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`adaptiveMeshControls "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.adaptiveMeshControls>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`timePoints "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.timePoints>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`filters "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.filters>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`integratedOutputSections "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.integratedOutputSections>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`fieldOutputRequests "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.fieldOutputRequests>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`historyOutputRequests "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.historyOutputRequests>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`optimizationTasks "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.optimizationTasks>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`tableCollections "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.tableCollections>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`eventSeriesTypes "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.eventSeriesTypes>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`eventSeriesDatas "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.eventSeriesDatas>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init__ "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.__init__>`\\"
+#~ " \\(name\\[\\, description\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ModelFromInputFile "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.ModelFromInputFile>`\\"
+#~ " \\(name\\, inputFileName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ModelFromOdbFile "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.ModelFromOdbFile>`\\"
+#~ " \\(name\\, odbFileName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`ModelFromNastranFile "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.ModelFromNastranFile>`\\"
+#~ " \\(modelName\\, inputFileName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setValues "
+#~ "<abaqus.TableCollection.TableCollectionModel.TableCollectionModel.setValues>`\\"
+#~ " \\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid "Object features"
 #~ msgstr ""
 
