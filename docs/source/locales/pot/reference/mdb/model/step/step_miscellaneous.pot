@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 09:59+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,39 @@ msgid "Miscellaneous Step commands are used for configuring controls, damping, a
 msgstr ""
 
 #: ../../reference/mdb/model/step/step_miscellaneous.rst:8
-msgid "Object features"
+msgid "Classes"
 msgstr ""
 
 #: ../../reference/mdb/model/step/step_miscellaneous.rst:11
 msgid "CompositeDamping"
+msgstr ""
+
+#: ../../../../src/abaqus/StepMiscellaneous/CompositeDamping.py:docstring of abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping:1
+#: ../../../../src/abaqus/StepMiscellaneous/CompositeDampingComponent.py:docstring of abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent:1
+#: ../../../../src/abaqus/StepMiscellaneous/Control.py:docstring of abaqus.StepMiscellaneous.Control.Control:1
+#: ../../../../src/abaqus/StepMiscellaneous/DirectDamping.py:docstring of abaqus.StepMiscellaneous.DirectDamping.DirectDamping:1
+#: ../../../../src/abaqus/StepMiscellaneous/DirectDampingByFrequency.py:docstring of abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency:1
+#: ../../../../src/abaqus/StepMiscellaneous/DirectDampingByFrequencyComponent.py:docstring of abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent:1
+#: ../../../../src/abaqus/StepMiscellaneous/DirectDampingComponent.py:docstring of abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent:1
+#: ../../../../src/abaqus/StepMiscellaneous/EmagTimeHarmonicFrequency.py:docstring of abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency:1
+#: ../../../../src/abaqus/StepMiscellaneous/MassScaling.py:docstring of abaqus.StepMiscellaneous.MassScaling.MassScaling:1
+#: ../../../../src/abaqus/StepMiscellaneous/RandomResponseFrequency.py:docstring of abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency:1
+#: ../../../../src/abaqus/StepMiscellaneous/RayleighDamping.py:docstring of abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping:1
+#: ../../../../src/abaqus/StepMiscellaneous/RayleighDampingByFrequency.py:docstring of abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency:1
+#: ../../../../src/abaqus/StepMiscellaneous/RayleighDampingByFrequencyComponent.py:docstring of abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent:1
+#: ../../../../src/abaqus/StepMiscellaneous/RayleighDampingComponent.py:docstring of abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent:1
+#: ../../../../src/abaqus/StepMiscellaneous/ResponseSpectrumComponent.py:docstring of abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent:1
+#: ../../../../src/abaqus/StepMiscellaneous/SolverControl.py:docstring of abaqus.StepMiscellaneous.SolverControl.SolverControl:1
+#: ../../../../src/abaqus/StepMiscellaneous/SteadyStateDirectFrequency.py:docstring of abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency:1
+#: ../../../../src/abaqus/StepMiscellaneous/SteadyStateModalFrequency.py:docstring of abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency:1
+#: ../../../../src/abaqus/StepMiscellaneous/SteadyStateSubspaceFrequency.py:docstring of abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency:1
+#: ../../../../src/abaqus/StepMiscellaneous/StructuralDamping.py:docstring of abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping:1
+#: ../../../../src/abaqus/StepMiscellaneous/StructuralDampingByFrequency.py:docstring of abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency:1
+#: ../../../../src/abaqus/StepMiscellaneous/StructuralDampingByFrequencyComponent.py:docstring of abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent:1
+#: ../../../../src/abaqus/StepMiscellaneous/StructuralDampingComponent.py:docstring of abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent:1
+#: ../../../../src/abaqus/StepMiscellaneous/SubstructureGenerateFrequency.py:docstring of abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency:1
+#: ../../../../src/abaqus/StepMiscellaneous/SubstructureGenerateModes.py:docstring of abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes:1
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: ../../../../src/abaqus/StepMiscellaneous/CompositeDamping.py:docstring of abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping:1
@@ -103,7 +131,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponentArray` object."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:19
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:21
 msgid "CompositeDampingComponent"
 msgstr ""
 
@@ -145,11 +173,11 @@ msgstr ""
 msgid "An Int specifying the mode number of the highest mode of a range."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:27
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:31
 msgid "CompositeDampingComponentArray"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:35
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:41
 msgid "Control"
 msgstr ""
 
@@ -253,7 +281,7 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:43
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:51
 msgid "DirectDamping"
 msgstr ""
 
@@ -274,7 +302,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponentArray` object."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:51
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:61
 msgid "DirectDampingByFrequency"
 msgstr ""
 
@@ -295,7 +323,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.StepMiscellaneous.DirectDampingByFrequencyComponentArray.DirectDampingByFrequencyComponentArray` object."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:59
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:71
 msgid "DirectDampingByFrequencyComponent"
 msgstr ""
 
@@ -330,11 +358,11 @@ msgstr ""
 msgid "A Float specifying the fraction of critical damping."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:67
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:81
 msgid "DirectDampingByFrequencyComponentArray"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:75
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:91
 msgid "DirectDampingComponent"
 msgstr ""
 
@@ -358,11 +386,11 @@ msgstr ""
 msgid ":py:obj:`fraction <abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent.fraction>`\\"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:83
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:101
 msgid "DirectDampingComponentArray"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:91
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:111
 msgid "EmagTimeHarmonicFrequency"
 msgstr ""
 
@@ -409,11 +437,11 @@ msgstr ""
 msgid "An Int specifying the number of points in the frequency range at which results should be given."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:99
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:121
 msgid "EmagTimeHarmonicFrequencyArray"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:107
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:131
 msgid "MassScaling"
 msgstr ""
 
@@ -548,11 +576,11 @@ msgstr ""
 msgid "A SymbolicConstant specifying the type of scaling. Possible values are UNIFORM, BELOW_MIN, SET_EQUAL_DT, and ROLLING. The default value is BELOW_MIN."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:115
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:141
 msgid "MassScalingArray"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:123
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:151
 msgid "RandomResponseFrequency"
 msgstr ""
 
@@ -600,11 +628,11 @@ msgstr ""
 msgid "A Float specifying the bias parameter."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:131
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:161
 msgid "RandomResponseFrequencyArray"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:139
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:171
 msgid "RayleighDamping"
 msgstr ""
 
@@ -625,7 +653,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponentArray` object."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:147
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:181
 msgid "RayleighDampingByFrequency"
 msgstr ""
 
@@ -646,7 +674,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponentArray` object."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:155
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:191
 msgid "RayleighDampingByFrequencyComponent"
 msgstr ""
 
@@ -684,11 +712,11 @@ msgstr ""
 msgid "A Float specifying the stiffness proportional damping, βM."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:163
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:201
 msgid "RayleighDampingByFrequencyComponentArray"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:171
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:211
 msgid "RayleighDampingComponent"
 msgstr ""
 
@@ -716,11 +744,11 @@ msgstr ""
 msgid ":py:obj:`beta <abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent.beta>`\\"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:179
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:221
 msgid "RayleighDampingComponentArray"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:187
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:231
 msgid "ResponseSpectrumComponent"
 msgstr ""
 
@@ -786,11 +814,11 @@ msgstr ""
 msgid "A String specifying the name of the response spectrum specified with the keyword SPECTRUM."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:195
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:241
 msgid "ResponseSpectrumComponentArray"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:203
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:251
 msgid "SolverControl"
 msgstr ""
 
@@ -835,7 +863,7 @@ msgstr ""
 msgid "The SymbolicConstant DEFAULT or an Int specifying the incomplete LU factorization fill-in level (for geostatic and soil analysis only). The default value is DEFAULT."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:211
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:261
 msgid "SteadyStateDirectFrequency"
 msgstr ""
 
@@ -872,11 +900,11 @@ msgstr ""
 msgid "A Float specifying the Bias parameter. When results are requested at four or more frequency points, Abaqus biases the results toward the ends of the intervals to obtain better resolution. The default value is 3.0."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:219
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:271
 msgid "SteadyStateDirectFrequencyArray"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:227
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:281
 msgid "SteadyStateModalFrequency"
 msgstr ""
 
@@ -908,11 +936,11 @@ msgstr ""
 msgid "A Float specifying the bias parameter. When results are requested at four or more frequency points, Abaqus biases the results toward the ends of the intervals to obtain better resolution. The default value is 3.0."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:235
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:291
 msgid "SteadyStateModalFrequencyArray"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:243
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:301
 msgid "SteadyStateSubspaceFrequency"
 msgstr ""
 
@@ -940,11 +968,11 @@ msgstr ""
 msgid ":py:obj:`bias <abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency.bias>`\\"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:251
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:311
 msgid "SteadyStateSubspaceFrequencyArray"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:259
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:321
 msgid "StructuralDamping"
 msgstr ""
 
@@ -965,7 +993,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingComponentArray.StructuralDampingComponentArray` object."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:267
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:331
 msgid "StructuralDampingByFrequency"
 msgstr ""
 
@@ -986,7 +1014,7 @@ msgstr ""
 msgid "A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponentArray` object."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:275
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:341
 msgid "StructuralDampingByFrequencyComponent"
 msgstr ""
 
@@ -1013,11 +1041,11 @@ msgstr ""
 msgid "A Float specifying the damping factor, s."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:283
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:351
 msgid "StructuralDampingByFrequencyComponentArray"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:291
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:361
 msgid "StructuralDampingComponent"
 msgstr ""
 
@@ -1041,11 +1069,11 @@ msgstr ""
 msgid ":py:obj:`factor <abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent.factor>`\\"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:299
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:371
 msgid "StructuralDampingComponentArray"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:307
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:381
 msgid "SubstructureGenerateFrequency"
 msgstr ""
 
@@ -1075,11 +1103,11 @@ msgstr ""
 msgid "A Float specifying the upper limit of the frequency range, in cycles/time."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:315
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:391
 msgid "SubstructureGenerateFrequencyArray"
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:323
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:401
 msgid "SubstructureGenerateModes"
 msgstr ""
 
@@ -1108,6 +1136,6 @@ msgstr ""
 msgid "An Int specifying the increment used to define the intermediate mode numbers beginning from the lowest mode to the highest mode."
 msgstr ""
 
-#: ../../reference/mdb/model/step/step_miscellaneous.rst:331
+#: ../../reference/mdb/model/step/step_miscellaneous.rst:411
 msgid "SubstructureGenerateModesArray"
 msgstr ""
