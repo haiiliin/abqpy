@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-09 00:17+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,17 @@ msgid ""
 msgstr ""
 
 #: ../../reference/session/plot_options.rst:8
-msgid "Object features"
+msgid "Classes"
 msgstr ""
 
 #: ../../reference/session/plot_options.rst:11
 msgid "BasicOptions"
+msgstr ""
+
+#: abaqus.PlotOptions.BasicOptions.BasicOptions:1
+#: abaqus.PlotOptions.DisplayOptions.DisplayOptions:1
+#: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions:1 of
+msgid "Bases: :py:class:`~abaqus._OptionsBase._CopyOptionsBase`"
 msgstr ""
 
 #: abaqus.PlotOptions.BasicOptions.BasicOptions:1 of
@@ -1176,27 +1182,46 @@ msgstr ""
 msgid "Public Methods:"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`setValues "
 "<abaqus.PlotOptions.BasicOptions.BasicOptions.setValues>`\\ "
 "\\(\\[options\\, cameraCsysName\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:1 of
 msgid "This method modifies the BasicOptions object."
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ""
+":py:obj:`setValues <abaqus._OptionsBase._CopyOptionsBase.setValues>`\\ "
+"\\(options\\, \\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid "This method modifies the CopyOptions object."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`get_user_attributes "
-"<abaqus.PlotOptions.BasicOptions.BasicOptions.get_user_attributes>`\\ "
-"\\(\\)"
+"<abaqus._OptionsBase._OptionsBase.get_user_attributes>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid "Returns a list of the user attributes of the class."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`setValues <abaqus._OptionsBase._OptionsBase.setValues>`\\ "
+"\\(\\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the _OptionsBase object."
 msgstr ""
 
 #: ../../docstring
@@ -1729,6 +1754,7 @@ msgstr ""
 #: abaqus.PlotOptions.OdbDataFrame.OdbDataFrame.setValues
 #: abaqus.PlotOptions.OdbDataStep.OdbDataStep.setValues
 #: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep.extractData
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues
 #: abaqus.PlotOptions.StreamOptions.StreamOptions.setValues
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues of
@@ -1906,6 +1932,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.PlotOptions.BasicOptions.BasicOptions.setValues
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues of
 msgid "Raises"
 msgstr ""
@@ -1922,8 +1949,48 @@ msgid ""
 "region boundaries. The default value is an empty sequence."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:19
+#: ../../reference/session/plot_options.rst:21
 msgid "CouplingConstraint"
+msgstr ""
+
+#: abaqus.PlotOptions.CouplingConstraint.CouplingConstraint:1
+#: abaqus.PlotOptions.DGCommonOptions.DGCommonOptions:1
+#: abaqus.PlotOptions.DGContourOptions.DGContourOptions:1
+#: abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions:1
+#: abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions:1
+#: abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions:1
+#: abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions:1
+#: abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions:1
+#: abaqus.PlotOptions.HistoryVariable.HistoryVariable:1
+#: abaqus.PlotOptions.MdbData.MdbData:1
+#: abaqus.PlotOptions.MdbDataFrame.MdbDataFrame:1
+#: abaqus.PlotOptions.MdbDataInstance.MdbDataInstance:1
+#: abaqus.PlotOptions.MdbDataStep.MdbDataStep:1
+#: abaqus.PlotOptions.MpcConstraint.MpcConstraint:1
+#: abaqus.PlotOptions.OdbAnalysisError.OdbAnalysisError:1
+#: abaqus.PlotOptions.OdbAnalysisWarning.OdbAnalysisWarning:1
+#: abaqus.PlotOptions.OdbAuxiliaryData.OdbAuxiliaryData:1
+#: abaqus.PlotOptions.OdbContactDiagnostics.OdbContactDiagnostics:1
+#: abaqus.PlotOptions.OdbDataDatumCsys.OdbDataDatumCsys:1
+#: abaqus.PlotOptions.OdbDataElementSet.OdbDataElementSet:1
+#: abaqus.PlotOptions.OdbDataFrame.OdbDataFrame:1
+#: abaqus.PlotOptions.OdbDataInstance.OdbDataInstance:1
+#: abaqus.PlotOptions.OdbDataMaterial.OdbDataMaterial:1
+#: abaqus.PlotOptions.OdbDataNodeSet.OdbDataNodeSet:1
+#: abaqus.PlotOptions.OdbDataSection.OdbDataSection:1
+#: abaqus.PlotOptions.OdbDataStep.OdbDataStep:1
+#: abaqus.PlotOptions.OdbDataSurfaceSet.OdbDataSurfaceSet:1
+#: abaqus.PlotOptions.OdbDiagnosticAttempt.OdbDiagnosticAttempt:1
+#: abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData:1
+#: abaqus.PlotOptions.OdbDiagnosticIncrement.OdbDiagnosticIncrement:1
+#: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep:1
+#: abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions:1
+#: abaqus.PlotOptions.OdbJobTime.OdbJobTime:1
+#: abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary:1
+#: abaqus.PlotOptions.OptionArg.OptionArg:1
+#: abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint:1
+#: abaqus.PlotOptions.TieConstraint.TieConstraint:1 of
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: abaqus.PlotOptions.CouplingConstraint.CouplingConstraint:1 of
@@ -1972,6 +2039,7 @@ msgstr ""
 
 #: abaqus.PlotOptions.CouplingConstraint.CouplingConstraint.constraintData
 #: abaqus.PlotOptions.MpcConstraint.MpcConstraint.constraintData
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__
 #: abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint.constraintData
 #: abaqus.PlotOptions.TieConstraint.TieConstraint.constraintData of
 msgid "Return type"
@@ -1993,7 +2061,7 @@ msgstr ""
 msgid "A String specifying the type of coupling. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:27
+#: ../../reference/session/plot_options.rst:31
 msgid "DetailPlotOptions"
 msgstr ""
 
@@ -2025,7 +2093,7 @@ msgid ""
 " object."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:35
+#: ../../reference/session/plot_options.rst:41
 msgid "DGCommonOptions"
 msgstr ""
 
@@ -2446,6 +2514,7 @@ msgstr ""
 #: abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.colorCodeOverride:1
 #: abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.colorCodeOverride:1
 #: abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.colorCodeOverride:1
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:31
 #: abaqus.PlotOptions.OptionArg.OptionArg.colorCodeOverride:1 of
 msgid ""
 "A Boolean specifying whether to allow color coded items in the output "
@@ -2498,6 +2567,7 @@ msgstr ""
 #: abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.edgeLineStyle:1
 #: abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.edgeLineStyle:1
 #: abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.edgeLineStyle:1
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:25
 #: abaqus.PlotOptions.OptionArg.OptionArg.edgeLineStyle:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.edgeStyle:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:12 of
@@ -2510,6 +2580,7 @@ msgstr ""
 #: abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.edgeLineThickness:1
 #: abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.edgeLineThickness:1
 #: abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.edgeLineThickness:1
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:28
 #: abaqus.PlotOptions.OptionArg.OptionArg.edgeLineThickness:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.edgeThickness:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:15 of
@@ -2705,6 +2776,7 @@ msgstr ""
 #: abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.translucency:1
 #: abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.translucency:1
 #: abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.translucency:1
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:37
 #: abaqus.PlotOptions.OptionArg.OptionArg.translucency:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:50
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.translucency:1 of
@@ -2736,7 +2808,7 @@ msgid ""
 "EXTERIOR.NONE can be used only when **renderStyle** = SHADED."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:43
+#: ../../reference/session/plot_options.rst:51
 msgid "DGContourOptions"
 msgstr ""
 
@@ -3088,7 +3160,7 @@ msgid ""
 " faces. The default value is OFF."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:51
+#: ../../reference/session/plot_options.rst:61
 msgid "DGDisplayBodyOptions"
 msgstr ""
 
@@ -3185,7 +3257,7 @@ msgid ""
 "<abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.coordinateScaleFactors>`\\"
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:59
+#: ../../reference/session/plot_options.rst:71
 msgid "DGOrientationOptions"
 msgstr ""
 
@@ -3410,7 +3482,7 @@ msgid ""
 "default value is 6.0."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:67
+#: ../../reference/session/plot_options.rst:81
 msgid "DGSuperimposeOptions"
 msgstr ""
 
@@ -3651,6 +3723,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.fillColor:1
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:34
 #: abaqus.PlotOptions.OptionArg.OptionArg.fillColor:1 of
 msgid ""
 "A String specifying the color to be used to fill elements when "
@@ -3740,6 +3813,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.renderStyle:1
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:12
 #: abaqus.PlotOptions.OptionArg.OptionArg.renderStyle:1 of
 msgid ""
 "A SymbolicConstant specifying the render style of the plot. Possible "
@@ -3749,6 +3823,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.visibleEdges:1
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:15
 #: abaqus.PlotOptions.OptionArg.OptionArg.visibleEdges:1 of
 msgid ""
 "A SymbolicConstant specifying which edges to plot. Possible values are "
@@ -3756,7 +3831,7 @@ msgid ""
 " can be used only when **renderStyle** = SHADED."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:75
+#: ../../reference/session/plot_options.rst:91
 msgid "DGSymbolOptions"
 msgstr ""
 
@@ -4273,7 +4348,7 @@ msgid ""
 "are VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:83
+#: ../../reference/session/plot_options.rst:101
 msgid "DisplayOptions"
 msgstr ""
 
@@ -4297,23 +4372,16 @@ msgstr ""
 msgid "A tuple of SymbolicConstants specifying the plot state of the display."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`setValues "
 "<abaqus.PlotOptions.DisplayOptions.DisplayOptions.setValues>`\\ "
 "\\(\\[options\\, plotState\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 #: abaqus.PlotOptions.DisplayOptions.DisplayOptions.setValues:1 of
 msgid "This method modifies the DisplayOptions object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`get_user_attributes "
-"<abaqus.PlotOptions.DisplayOptions.DisplayOptions.get_user_attributes>`\\"
-" \\(\\)"
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.DisplayOptions.DisplayOptions.plotState:1
@@ -4348,8 +4416,15 @@ msgid ""
 "ORIENT_ON_DEF. The default value is (UNDEFORMED)."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:91
+#: ../../reference/session/plot_options.rst:111
 msgid "FreeBodyOptions"
+msgstr ""
+
+#: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions:1
+#: abaqus.PlotOptions.OdbData.OdbData:1
+#: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions:1
+#: abaqus.PlotOptions.StreamOptions.StreamOptions:1 of
+msgid "Bases: :py:class:`~abaqus._OptionsBase._OptionsBase`"
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions:1 of
@@ -4374,23 +4449,16 @@ msgid ""
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodyoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`setValues "
 "<abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues>`\\ "
 "\\(\\*\\[\\, comp1ColorF\\, comp1ColorM\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:1 of
 msgid "This method modifies the FreeBodyOptions object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`get_user_attributes "
-"<abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.get_user_attributes>`\\"
-" \\(\\)"
 msgstr ""
 
 #: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.setValues:4 of
@@ -4594,7 +4662,7 @@ msgid ""
 " default value is OFF."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:99
+#: ../../reference/session/plot_options.rst:121
 msgid "HistoryVariable"
 msgstr ""
 
@@ -4656,7 +4724,7 @@ msgid ""
 "“TIME,” “FREQUENCY,” or “MODAL.”"
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:107
+#: ../../reference/session/plot_options.rst:131
 msgid "MdbData"
 msgstr ""
 
@@ -4713,7 +4781,7 @@ msgid ""
 "repository is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:115
+#: ../../reference/session/plot_options.rst:141
 msgid "MdbDataFrame"
 msgstr ""
 
@@ -4729,11 +4797,11 @@ msgid ""
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbdataframepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:123
+#: ../../reference/session/plot_options.rst:151
 msgid "MdbDataFrameArray"
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:131
+#: ../../reference/session/plot_options.rst:161
 msgid "MdbDataInstance"
 msgstr ""
 
@@ -4762,7 +4830,7 @@ msgstr ""
 msgid "A String specifying the instance name. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:139
+#: ../../reference/session/plot_options.rst:171
 msgid "MdbDataStep"
 msgstr ""
 
@@ -4793,7 +4861,7 @@ msgid ""
 "only one frame in a step."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:147
+#: ../../reference/session/plot_options.rst:181
 msgid "MpcConstraint"
 msgstr ""
 
@@ -4829,6 +4897,7 @@ msgid "This method returns constraint data if any are associated with the object
 msgstr ""
 
 #: abaqus.PlotOptions.MpcConstraint.MpcConstraint.constraintData
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__
 #: abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint.constraintData
 #: abaqus.PlotOptions.TieConstraint.TieConstraint.constraintData of
 msgid "Returns"
@@ -4850,7 +4919,7 @@ msgid ""
 "read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:155
+#: ../../reference/session/plot_options.rst:191
 msgid "OdbAnalysisError"
 msgstr ""
 
@@ -5026,7 +5095,7 @@ msgid ""
 "This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:163
+#: ../../reference/session/plot_options.rst:201
 msgid "OdbAnalysisWarning"
 msgstr ""
 
@@ -5042,7 +5111,7 @@ msgid ""
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbanalysiswarningpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:171
+#: ../../reference/session/plot_options.rst:211
 msgid "OdbAuxiliaryData"
 msgstr ""
 
@@ -5136,7 +5205,7 @@ msgstr ""
 msgid "A tuple consisting of node label names. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:179
+#: ../../reference/session/plot_options.rst:221
 msgid "OdbContactDiagnostics"
 msgstr ""
 
@@ -5266,7 +5335,7 @@ msgid ""
 " read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:187
+#: ../../reference/session/plot_options.rst:231
 msgid "OdbData"
 msgstr ""
 
@@ -5460,21 +5529,15 @@ msgid ""
 "object."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`setValues <abaqus.PlotOptions.OdbData.OdbData.setValues>`\\ "
 "\\(\\[activeFrames\\, stepPeriods\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.PlotOptions.OdbData.OdbData.setValues:1 of
+#: ../../None:3:<autosummary>:1 abaqus.PlotOptions.OdbData.OdbData.setValues:1
+#: of
 msgid "This method modifies the OdbData object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`get_user_attributes "
-"<abaqus.PlotOptions.OdbData.OdbData.get_user_attributes>`\\ \\(\\)"
 msgstr ""
 
 #: ../../docstring abaqus.PlotOptions.OdbData.OdbData.activeFrames:1 of
@@ -5614,7 +5677,7 @@ msgid ""
 "constraints. The repository is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:195
+#: ../../reference/session/plot_options.rst:241
 msgid "OdbDataDatumCsys"
 msgstr ""
 
@@ -5736,7 +5799,7 @@ msgid ""
 "the z-Axis vector. The default value is (0, 0, 1)."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:203
+#: ../../reference/session/plot_options.rst:251
 msgid "OdbDataElementSet"
 msgstr ""
 
@@ -5789,7 +5852,7 @@ msgstr ""
 msgid "A String specifying the set name. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:211
+#: ../../reference/session/plot_options.rst:261
 msgid "OdbDataFrame"
 msgstr ""
 
@@ -5831,11 +5894,11 @@ msgstr ""
 msgid "A Boolean specifying whether to update the model. The default value is ON"
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:219
+#: ../../reference/session/plot_options.rst:271
 msgid "OdbDataFrameArray"
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:227
+#: ../../reference/session/plot_options.rst:281
 msgid "OdbDataInstance"
 msgstr ""
 
@@ -5853,7 +5916,7 @@ msgstr ""
 msgid ":py:obj:`name <abaqus.PlotOptions.OdbDataInstance.OdbDataInstance.name>`\\"
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:235
+#: ../../reference/session/plot_options.rst:291
 msgid "OdbDataMaterial"
 msgstr ""
 
@@ -5877,7 +5940,7 @@ msgid ""
 "<abaqus.PlotOptions.OdbDataMaterial.OdbDataMaterial.elements>`\\"
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:243
+#: ../../reference/session/plot_options.rst:301
 msgid "OdbDataNodeSet"
 msgstr ""
 
@@ -5909,7 +5972,7 @@ msgid ""
 "This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:251
+#: ../../reference/session/plot_options.rst:311
 msgid "OdbDataSection"
 msgstr ""
 
@@ -5933,7 +5996,7 @@ msgid ""
 "<abaqus.PlotOptions.OdbDataSection.OdbDataSection.elements>`\\"
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:259
+#: ../../reference/session/plot_options.rst:321
 msgid "OdbDataStep"
 msgstr ""
 
@@ -5986,7 +6049,7 @@ msgstr ""
 msgid "A Boolean specifying whether to activate all the frames in the step."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:267
+#: ../../reference/session/plot_options.rst:331
 msgid "OdbDataSurfaceSet"
 msgstr ""
 
@@ -6031,7 +6094,7 @@ msgid ""
 "to the **elements**. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:275
+#: ../../reference/session/plot_options.rst:341
 msgid "OdbDiagnosticAttempt"
 msgstr ""
 
@@ -6181,7 +6244,7 @@ msgid ""
 "This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:283
+#: ../../reference/session/plot_options.rst:351
 msgid "OdbDiagnosticData"
 msgstr ""
 
@@ -6359,7 +6422,7 @@ msgid ""
 "attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:291
+#: ../../reference/session/plot_options.rst:361
 msgid "OdbDiagnosticIncrement"
 msgstr ""
 
@@ -6498,7 +6561,7 @@ msgid ""
 "increment. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:299
+#: ../../reference/session/plot_options.rst:371
 msgid "OdbDiagnosticStep"
 msgstr ""
 
@@ -6988,7 +7051,7 @@ msgstr ""
 msgid "A float specifying the duration for the step. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:307
+#: ../../reference/session/plot_options.rst:381
 msgid "OdbDisplayOptions"
 msgstr ""
 
@@ -7087,7 +7150,7 @@ msgid ""
 " object."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:315
+#: ../../reference/session/plot_options.rst:391
 msgid "OdbJobTime"
 msgstr ""
 
@@ -7147,7 +7210,7 @@ msgid ""
 "read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:323
+#: ../../reference/session/plot_options.rst:401
 msgid "OdbNumericalProblemSummary"
 msgstr ""
 
@@ -7275,7 +7338,7 @@ msgstr ""
 msgid "An int specifying the number of zero pivots. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:331
+#: ../../reference/session/plot_options.rst:411
 msgid "OptionArg"
 msgstr ""
 
@@ -7369,34 +7432,54 @@ msgid ""
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:1 of
 msgid "This method creates an OptionArg object."
 msgstr ""
 
-#: ../../docstring abaqus.PlotOptions.OptionArg.OptionArg.edgeColorFillShade:1
-#: of
-msgid ""
-"A String specifying the color to be used to plot the edges of the "
-"undeformed plot when **renderStyle** = FILLED or SHADED. The default "
-"value is \"Black\"."
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:4 of
+msgid "This function can be accessed by::"
 msgstr ""
 
-#: ../../docstring abaqus.PlotOptions.OptionArg.OptionArg.edgeColorWireHide:1
-#: of
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:9 of
+msgid ""
+"Check `OptionArg.__init__ on help.3ds.com/2017 "
+"<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optionargpyc.htm?contextscope=all"
+"#simaker-optionarg__init__pyc>`__."
+msgstr ""
+
+#: ../../docstring abaqus.PlotOptions.OptionArg.OptionArg.__init__:19
+#: abaqus.PlotOptions.OptionArg.OptionArg.edgeColorWireHide:1 of
 msgid ""
 "A String specifying the color to be used to plot the edges of the "
 "undeformed plot when **renderStyle** = WIREFRAME or HIDDEN. The default "
 "value is \"Green\"."
 msgstr ""
 
-#: ../../docstring abaqus.PlotOptions.OptionArg.OptionArg.translucencyFactor:1
-#: of
+#: ../../docstring abaqus.PlotOptions.OptionArg.OptionArg.__init__:22
+#: abaqus.PlotOptions.OptionArg.OptionArg.edgeColorFillShade:1 of
+msgid ""
+"A String specifying the color to be used to plot the edges of the "
+"undeformed plot when **renderStyle** = FILLED or SHADED. The default "
+"value is \"Black\"."
+msgstr ""
+
+#: ../../docstring abaqus.PlotOptions.OptionArg.OptionArg.__init__:39
+#: abaqus.PlotOptions.OptionArg.OptionArg.translucencyFactor:1 of
 msgid ""
 "A Float specifying the translucency factor when **translucency** = ON. "
 "Possible values are 0.0 ≤ **translucencyFactor** ≤ 1.0. The default value"
 " is 0.3."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:339
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:42 of
+msgid "An :py:class:`~abaqus.PlotOptions.OptionArg.OptionArg` object."
+msgstr ""
+
+#: abaqus.PlotOptions.OptionArg.OptionArg.__init__:43 of
+msgid ":class:`OptionArg`"
+msgstr ""
+
+#: ../../reference/session/plot_options.rst:421
 msgid "PlyStackPlotOptions"
 msgstr ""
 
@@ -7794,23 +7877,16 @@ msgstr ""
 msgid "A Float specifying the size of the ply in the Z-direction."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`setValues "
 "<abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues>`\\"
 " \\(\\*\\[\\, renderStyle\\, showEdges\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 #: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.setValues:1 of
 msgid "This method modifies the PlyStackPlotOptions object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`get_user_attributes "
-"<abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.get_user_attributes>`\\"
-" \\(\\)"
 msgstr ""
 
 #: ../../docstring
@@ -8110,7 +8186,7 @@ msgid ""
 "value is 0.8."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:347
+#: ../../reference/session/plot_options.rst:431
 msgid "RigidBodyConstraint"
 msgstr ""
 
@@ -8158,7 +8234,7 @@ msgid ""
 "read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:355
+#: ../../reference/session/plot_options.rst:441
 msgid "StreamOptions"
 msgstr ""
 
@@ -8192,23 +8268,16 @@ msgid ""
 "<https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-streamoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`setValues "
 "<abaqus.PlotOptions.StreamOptions.StreamOptions.setValues>`\\ "
 "\\(\\*\\[\\, colorMethod\\, uniformColor\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 #: abaqus.PlotOptions.StreamOptions.StreamOptions.setValues:1 of
 msgid "This method modifies the StreamOptions object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`get_user_attributes "
-"<abaqus.PlotOptions.StreamOptions.StreamOptions.get_user_attributes>`\\ "
-"\\(\\)"
 msgstr ""
 
 #: abaqus.PlotOptions.StreamOptions.StreamOptions.setValues:4 of
@@ -8245,7 +8314,7 @@ msgid ""
 "value is 10."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:363
+#: ../../reference/session/plot_options.rst:451
 msgid "TieConstraint"
 msgstr ""
 
@@ -8282,7 +8351,7 @@ msgstr ""
 msgid "A String specifying the tie constraint name. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:371
+#: ../../reference/session/plot_options.rst:461
 msgid "ViewCutOptions"
 msgstr ""
 
@@ -8542,23 +8611,16 @@ msgid ""
 "resolution."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`setValues "
 "<abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues>`\\ "
 "\\(\\[options\\, belowOptions\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 #: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.setValues:1 of
 msgid "This method modifies the ViewCutOptions object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`get_user_attributes "
-"<abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.get_user_attributes>`\\"
-" \\(\\)"
 msgstr ""
 
 #: ../../docstring
@@ -9656,5 +9718,50 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ":class:`Tuple[float`, :class:`...]`"
+#~ msgstr ""
+
+#~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus.PlotOptions.BasicOptions.BasicOptions.get_user_attributes>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus.PlotOptions.DisplayOptions.DisplayOptions.get_user_attributes>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions.get_user_attributes>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus.PlotOptions.OdbData.OdbData.get_user_attributes>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions.get_user_attributes>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus.PlotOptions.StreamOptions.StreamOptions.get_user_attributes>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus.PlotOptions.ViewCutOptions.ViewCutOptions.get_user_attributes>`\\"
+#~ " \\(\\)"
 #~ msgstr ""
 
