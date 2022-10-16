@@ -194,8 +194,8 @@ class Set(Region):
         .. note:: 
             This function can be accessed by::
 
-                mdb.models[name].parts[name].Set
-                mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[name].SetByBoolean
+                mdb.models[name].rootAssembly.SetByBoolean
 
         Parameters
         ----------
@@ -227,8 +227,7 @@ class Set(Region):
         .. note:: 
             This function can be accessed by::
 
-                mdb.models[name].parts[name].Set
-                mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[name].SetFromColor
 
         Parameters
         ----------
@@ -253,8 +252,8 @@ class Set(Region):
         .. note:: 
             This function can be accessed by::
 
-                mdb.models[name].parts[name].Set
-                mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[name].SetFromElementLabels
+                mdb.models[name].rootAssembly.SetFromElementLabels
 
         Parameters
         ----------
@@ -262,8 +261,13 @@ class Set(Region):
             A String specifying the repository key.
         elementLabels
             A sequence of element labels. An element label is a sequence of Int element identifiers.
-            For example, for a part:`elementLabels=(2,3,5,7)`For an
-            assembly:`elementLabels=(('Instance-1', (2,3,5,7)),       ('Instance-2', (1,2,3)))`
+            For example, for a part::
+
+                elementLabels=(2,3,5,7)
+
+            For an assembly::
+
+                elementLabels=(('Instance-1', (2,3,5,7)), ('Instance-2', (1,2,3)))`
 
         Returns
         -------
@@ -279,8 +283,8 @@ class Set(Region):
         .. note:: 
             This function can be accessed by::
 
-                mdb.models[name].parts[name].Set
-                mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[name].SetFromNodeLabels
+                mdb.models[name].rootAssembly.SetFromNodeLabels
 
         Parameters
         ----------
@@ -288,8 +292,14 @@ class Set(Region):
             A String specifying the repository key.
         nodeLabels
             A sequence of node labels. A node label is a sequence of Int node identifiers. For
-            example, for a part:`nodeLabels=(2,3,5,7)`For an assembly:`nodeLabels=(('Instance-1',
-            (2,3,5,7)), ('Instance-2', (1,2,3)))`
+            example, for a part::
+
+                nodeLabels=(2,3,5,7)
+
+            For an assembly::
+
+                nodeLabels=(('Instance-1', (2,3,5,7)), ('Instance-2', (1,2,3)))`
+
         unsorted
             A Boolean specifying whether the created set is unsorted. The default value is False.
 
@@ -313,8 +323,7 @@ class Set(Region):
         .. note:: 
             This function can be accessed by::
 
-                mdb.models[name].parts[name].Set
-                mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[name].MapSetsFromOdb
 
         Parameters
         ----------
