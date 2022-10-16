@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-06 00:19+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,12 +32,15 @@ msgid "Create annotations"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
-#: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:1 of
+#: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:1
+#: abaqus.Annotation.Arrow.Arrow.__init__:1 of
 msgid "This method creates an Arrow object."
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:4
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:4
+#: abaqus.Annotation.Arrow.Arrow.__init__:4
+#: abaqus.Annotation.Text.Text.__init__:4
 #: abaqus.Odb.UserDataBase.UserDataBase.XYData:4 of
 msgid "This function can be accessed by::"
 msgstr ""
@@ -61,10 +64,11 @@ msgstr ""
 #: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.moveBefore
 #: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendBackward
 #: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack
+#: abaqus.Annotation.Arrow.Arrow.__init__
 #: abaqus.Annotation.Arrow.Arrow.setValues
 #: abaqus.Annotation.Arrow.Arrow.translateEndPoint
 #: abaqus.Annotation.Arrow.Arrow.translateStartPoint
-#: abaqus.Annotation.Text.Text.setValues
+#: abaqus.Annotation.Text.Text.__init__ abaqus.Annotation.Text.Text.setValues
 #: abaqus.Odb.UserDataBase.UserDataBase.XYData of
 msgid "Parameters"
 msgstr ""
@@ -72,12 +76,15 @@ msgstr ""
 #: ../../None:3:<autosummary>:1 ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:13
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:13
-#: abaqus.Annotation.Annotation.Annotation.name:1 of
+#: abaqus.Annotation.Annotation.Annotation.name:1
+#: abaqus.Annotation.Arrow.Arrow.__init__:13
+#: abaqus.Annotation.Text.Text.__init__:13 of
 msgid "A String specifying the annotation repository key."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:15
+#: abaqus.Annotation.Arrow.Arrow.__init__:15
 #: abaqus.Annotation.Arrow.Arrow.setValues:7
 #: abaqus.Annotation.Arrow.Arrow.startPoint:1 of
 msgid ""
@@ -87,6 +94,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:18
+#: abaqus.Annotation.Arrow.Arrow.__init__:18
 #: abaqus.Annotation.Arrow.Arrow.endPoint:1
 #: abaqus.Annotation.Arrow.Arrow.setValues:10 of
 msgid ""
@@ -108,6 +116,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:21
+#: abaqus.Annotation.Arrow.Arrow.__init__:21
 #: abaqus.Annotation.Arrow.Arrow.setValues:13
 #: abaqus.Annotation.Arrow.Arrow.startAnchor:1 of
 msgid ""
@@ -128,11 +137,14 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:46
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:27
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:44
+#: abaqus.Annotation.Arrow.Arrow.__init__:28
+#: abaqus.Annotation.Arrow.Arrow.__init__:46
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:8
 #: abaqus.Annotation.Arrow.Arrow.setValues:21
 #: abaqus.Annotation.Arrow.Arrow.setValues:41
 #: abaqus.Annotation.Arrow.Arrow.startAnchor:8
-#: abaqus.Annotation.Text.Text.anchor:8
+#: abaqus.Annotation.Text.Text.__init__:27
+#: abaqus.Annotation.Text.Text.__init__:44 abaqus.Annotation.Text.Text.anchor:8
 #: abaqus.Annotation.Text.Text.referencePoint:7
 #: abaqus.Annotation.Text.Text.setValues:20
 #: abaqus.Annotation.Text.Text.setValues:38 of
@@ -144,11 +156,14 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:47
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:28
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:45
+#: abaqus.Annotation.Arrow.Arrow.__init__:29
+#: abaqus.Annotation.Arrow.Arrow.__init__:47
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:9
 #: abaqus.Annotation.Arrow.Arrow.setValues:22
 #: abaqus.Annotation.Arrow.Arrow.setValues:42
 #: abaqus.Annotation.Arrow.Arrow.startAnchor:9
-#: abaqus.Annotation.Text.Text.anchor:9
+#: abaqus.Annotation.Text.Text.__init__:28
+#: abaqus.Annotation.Text.Text.__init__:45 abaqus.Annotation.Text.Text.anchor:9
 #: abaqus.Annotation.Text.Text.referencePoint:8
 #: abaqus.Annotation.Text.Text.setValues:21
 #: abaqus.Annotation.Text.Text.setValues:39 of
@@ -160,10 +175,14 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:48
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:29
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:46
+#: abaqus.Annotation.Arrow.Arrow.__init__:30
+#: abaqus.Annotation.Arrow.Arrow.__init__:48
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:10
 #: abaqus.Annotation.Arrow.Arrow.setValues:23
 #: abaqus.Annotation.Arrow.Arrow.setValues:43
 #: abaqus.Annotation.Arrow.Arrow.startAnchor:10
+#: abaqus.Annotation.Text.Text.__init__:29
+#: abaqus.Annotation.Text.Text.__init__:46
 #: abaqus.Annotation.Text.Text.anchor:10
 #: abaqus.Annotation.Text.Text.referencePoint:9
 #: abaqus.Annotation.Text.Text.setValues:22
@@ -176,10 +195,14 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:49
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:30
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:47
+#: abaqus.Annotation.Arrow.Arrow.__init__:31
+#: abaqus.Annotation.Arrow.Arrow.__init__:49
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:11
 #: abaqus.Annotation.Arrow.Arrow.setValues:24
 #: abaqus.Annotation.Arrow.Arrow.setValues:44
 #: abaqus.Annotation.Arrow.Arrow.startAnchor:11
+#: abaqus.Annotation.Text.Text.__init__:30
+#: abaqus.Annotation.Text.Text.__init__:47
 #: abaqus.Annotation.Text.Text.anchor:11
 #: abaqus.Annotation.Text.Text.referencePoint:10
 #: abaqus.Annotation.Text.Text.setValues:23
@@ -192,10 +215,14 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:50
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:31
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:48
+#: abaqus.Annotation.Arrow.Arrow.__init__:32
+#: abaqus.Annotation.Arrow.Arrow.__init__:50
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:12
 #: abaqus.Annotation.Arrow.Arrow.setValues:25
 #: abaqus.Annotation.Arrow.Arrow.setValues:45
 #: abaqus.Annotation.Arrow.Arrow.startAnchor:12
+#: abaqus.Annotation.Text.Text.__init__:31
+#: abaqus.Annotation.Text.Text.__init__:48
 #: abaqus.Annotation.Text.Text.anchor:12
 #: abaqus.Annotation.Text.Text.referencePoint:11
 #: abaqus.Annotation.Text.Text.setValues:24
@@ -208,10 +235,14 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:51
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:32
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:49
+#: abaqus.Annotation.Arrow.Arrow.__init__:33
+#: abaqus.Annotation.Arrow.Arrow.__init__:51
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:13
 #: abaqus.Annotation.Arrow.Arrow.setValues:26
 #: abaqus.Annotation.Arrow.Arrow.setValues:46
 #: abaqus.Annotation.Arrow.Arrow.startAnchor:13
+#: abaqus.Annotation.Text.Text.__init__:32
+#: abaqus.Annotation.Text.Text.__init__:49
 #: abaqus.Annotation.Text.Text.anchor:13
 #: abaqus.Annotation.Text.Text.referencePoint:12
 #: abaqus.Annotation.Text.Text.setValues:25
@@ -224,10 +255,14 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:52
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:33
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:50
+#: abaqus.Annotation.Arrow.Arrow.__init__:34
+#: abaqus.Annotation.Arrow.Arrow.__init__:52
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:14
 #: abaqus.Annotation.Arrow.Arrow.setValues:27
 #: abaqus.Annotation.Arrow.Arrow.setValues:47
 #: abaqus.Annotation.Arrow.Arrow.startAnchor:14
+#: abaqus.Annotation.Text.Text.__init__:33
+#: abaqus.Annotation.Text.Text.__init__:50
 #: abaqus.Annotation.Text.Text.anchor:14
 #: abaqus.Annotation.Text.Text.referencePoint:13
 #: abaqus.Annotation.Text.Text.setValues:26
@@ -240,10 +275,14 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:53
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:34
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:51
+#: abaqus.Annotation.Arrow.Arrow.__init__:35
+#: abaqus.Annotation.Arrow.Arrow.__init__:53
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:15
 #: abaqus.Annotation.Arrow.Arrow.setValues:28
 #: abaqus.Annotation.Arrow.Arrow.setValues:48
 #: abaqus.Annotation.Arrow.Arrow.startAnchor:15
+#: abaqus.Annotation.Text.Text.__init__:34
+#: abaqus.Annotation.Text.Text.__init__:51
 #: abaqus.Annotation.Text.Text.anchor:15
 #: abaqus.Annotation.Text.Text.referencePoint:14
 #: abaqus.Annotation.Text.Text.setValues:27
@@ -256,10 +295,14 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:55
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:36
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:53
+#: abaqus.Annotation.Arrow.Arrow.__init__:37
+#: abaqus.Annotation.Arrow.Arrow.__init__:55
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:17
 #: abaqus.Annotation.Arrow.Arrow.setValues:30
 #: abaqus.Annotation.Arrow.Arrow.setValues:50
 #: abaqus.Annotation.Arrow.Arrow.startAnchor:17
+#: abaqus.Annotation.Text.Text.__init__:36
+#: abaqus.Annotation.Text.Text.__init__:53
 #: abaqus.Annotation.Text.Text.anchor:17
 #: abaqus.Annotation.Text.Text.referencePoint:16
 #: abaqus.Annotation.Text.Text.setValues:29
@@ -268,6 +311,7 @@ msgid "The default value is BOTTOM_LEFT."
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:39
+#: abaqus.Annotation.Arrow.Arrow.__init__:39
 #: abaqus.Annotation.Arrow.Arrow.setValues:33 of
 msgid ""
 "A SymbolicConstant or a sequence of Floats specifying a point. A sequence"
@@ -282,6 +326,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:39
+#: abaqus.Annotation.Arrow.Arrow.__init__:39
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:1
 #: abaqus.Annotation.Arrow.Arrow.setValues:33 of
 msgid ""
@@ -297,11 +342,14 @@ msgstr ""
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:45
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:26
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:43
+#: abaqus.Annotation.Arrow.Arrow.__init__:27
+#: abaqus.Annotation.Arrow.Arrow.__init__:45
 #: abaqus.Annotation.Arrow.Arrow.endAnchor:7
 #: abaqus.Annotation.Arrow.Arrow.setValues:20
 #: abaqus.Annotation.Arrow.Arrow.setValues:40
 #: abaqus.Annotation.Arrow.Arrow.startAnchor:7
-#: abaqus.Annotation.Text.Text.anchor:7
+#: abaqus.Annotation.Text.Text.__init__:26
+#: abaqus.Annotation.Text.Text.__init__:43 abaqus.Annotation.Text.Text.anchor:7
 #: abaqus.Annotation.Text.Text.referencePoint:6
 #: abaqus.Annotation.Text.Text.setValues:19
 #: abaqus.Annotation.Text.Text.setValues:37 of
@@ -309,6 +357,7 @@ msgid "BOTTOM_LEFT"
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:57
+#: abaqus.Annotation.Arrow.Arrow.__init__:57
 #: abaqus.Annotation.Arrow.Arrow.setValues:53 of
 msgid ""
 "A SymbolicConstant specifying the style of the start head. Possible "
@@ -319,6 +368,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:57
+#: abaqus.Annotation.Arrow.Arrow.__init__:57
 #: abaqus.Annotation.Arrow.Arrow.setValues:53
 #: abaqus.Annotation.Arrow.Arrow.startHeadStyle:1 of
 msgid ""
@@ -329,6 +379,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:59
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:73
+#: abaqus.Annotation.Arrow.Arrow.__init__:59
+#: abaqus.Annotation.Arrow.Arrow.__init__:73
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:3
 #: abaqus.Annotation.Arrow.Arrow.setValues:56
 #: abaqus.Annotation.Arrow.Arrow.setValues:71
@@ -339,6 +391,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:60
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:74
+#: abaqus.Annotation.Arrow.Arrow.__init__:60
+#: abaqus.Annotation.Arrow.Arrow.__init__:74
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:4
 #: abaqus.Annotation.Arrow.Arrow.setValues:57
 #: abaqus.Annotation.Arrow.Arrow.setValues:72
@@ -349,6 +403,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:61
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:75
+#: abaqus.Annotation.Arrow.Arrow.__init__:61
+#: abaqus.Annotation.Arrow.Arrow.__init__:75
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:5
 #: abaqus.Annotation.Arrow.Arrow.setValues:58
 #: abaqus.Annotation.Arrow.Arrow.setValues:73
@@ -359,6 +415,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:62
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:76
+#: abaqus.Annotation.Arrow.Arrow.__init__:62
+#: abaqus.Annotation.Arrow.Arrow.__init__:76
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:6
 #: abaqus.Annotation.Arrow.Arrow.setValues:59
 #: abaqus.Annotation.Arrow.Arrow.setValues:74
@@ -369,6 +427,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:63
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:77
+#: abaqus.Annotation.Arrow.Arrow.__init__:63
+#: abaqus.Annotation.Arrow.Arrow.__init__:77
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:7
 #: abaqus.Annotation.Arrow.Arrow.setValues:60
 #: abaqus.Annotation.Arrow.Arrow.setValues:75
@@ -379,6 +439,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:64
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:78
+#: abaqus.Annotation.Arrow.Arrow.__init__:64
+#: abaqus.Annotation.Arrow.Arrow.__init__:78
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:8
 #: abaqus.Annotation.Arrow.Arrow.setValues:61
 #: abaqus.Annotation.Arrow.Arrow.setValues:76
@@ -389,6 +451,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:65
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:79
+#: abaqus.Annotation.Arrow.Arrow.__init__:65
+#: abaqus.Annotation.Arrow.Arrow.__init__:79
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:9
 #: abaqus.Annotation.Arrow.Arrow.setValues:62
 #: abaqus.Annotation.Arrow.Arrow.setValues:77
@@ -399,6 +463,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:66
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:80
+#: abaqus.Annotation.Arrow.Arrow.__init__:66
+#: abaqus.Annotation.Arrow.Arrow.__init__:80
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:10
 #: abaqus.Annotation.Arrow.Arrow.setValues:63
 #: abaqus.Annotation.Arrow.Arrow.setValues:78
@@ -409,6 +475,8 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:67
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:81
+#: abaqus.Annotation.Arrow.Arrow.__init__:67
+#: abaqus.Annotation.Arrow.Arrow.__init__:81
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:11
 #: abaqus.Annotation.Arrow.Arrow.setValues:64
 #: abaqus.Annotation.Arrow.Arrow.setValues:79
@@ -418,12 +486,14 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:69
+#: abaqus.Annotation.Arrow.Arrow.__init__:69
 #: abaqus.Annotation.Arrow.Arrow.setValues:66
 #: abaqus.Annotation.Arrow.Arrow.startHeadStyle:13 of
 msgid "The default value is NONE."
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:71
+#: abaqus.Annotation.Arrow.Arrow.__init__:71
 #: abaqus.Annotation.Arrow.Arrow.setValues:68 of
 msgid ""
 "A SymbolicConstant specifying the style of the end head. Possible values "
@@ -434,6 +504,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:71
+#: abaqus.Annotation.Arrow.Arrow.__init__:71
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:1
 #: abaqus.Annotation.Arrow.Arrow.setValues:68 of
 msgid ""
@@ -443,6 +514,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:83
+#: abaqus.Annotation.Arrow.Arrow.__init__:83
 #: abaqus.Annotation.Arrow.Arrow.endHeadStyle:13
 #: abaqus.Annotation.Arrow.Arrow.setValues:81 of
 msgid "The default value is FILLED_ARROW."
@@ -450,6 +522,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:85
+#: abaqus.Annotation.Arrow.Arrow.__init__:85
 #: abaqus.Annotation.Arrow.Arrow.setValues:83
 #: abaqus.Annotation.Arrow.Arrow.startGap:1 of
 msgid ""
@@ -459,6 +532,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:88
+#: abaqus.Annotation.Arrow.Arrow.__init__:88
 #: abaqus.Annotation.Arrow.Arrow.endGap:1
 #: abaqus.Annotation.Arrow.Arrow.setValues:86 of
 msgid ""
@@ -468,6 +542,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:91
+#: abaqus.Annotation.Arrow.Arrow.__init__:91
 #: abaqus.Annotation.Arrow.Arrow.color:1
 #: abaqus.Annotation.Arrow.Arrow.setValues:89 of
 msgid ""
@@ -477,6 +552,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:94
+#: abaqus.Annotation.Arrow.Arrow.__init__:94
 #: abaqus.Annotation.Arrow.Arrow.lineStyle:1
 #: abaqus.Annotation.Arrow.Arrow.setValues:92 of
 msgid ""
@@ -487,6 +563,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:97
+#: abaqus.Annotation.Arrow.Arrow.__init__:97
 #: abaqus.Annotation.Arrow.Arrow.lineThickness:1
 #: abaqus.Annotation.Arrow.Arrow.setValues:95 of
 msgid ""
@@ -497,25 +574,30 @@ msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text
+#: abaqus.Annotation.Arrow.Arrow.__init__ abaqus.Annotation.Text.Text.__init__
 #: abaqus.Odb.UserDataBase.UserDataBase.XYData of
 msgid "Returns"
 msgstr ""
 
-#: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:100 of
+#: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:100
+#: abaqus.Annotation.Arrow.Arrow.__init__:100 of
 msgid "An :py:class:`~abaqus.Annotation.Arrow.Arrow` object."
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text
+#: abaqus.Annotation.Arrow.Arrow.__init__ abaqus.Annotation.Text.Text.__init__
 #: abaqus.Odb.UserDataBase.UserDataBase.XYData of
 msgid "Return type"
 msgstr ""
 
-#: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:101 of
+#: abaqus.Annotation.AnimationUserData.AnimationUserData.Arrow:101
+#: abaqus.Annotation.Arrow.Arrow.__init__:101 of
 msgid ":class:`Arrow`"
 msgstr ""
 
-#: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:1 of
+#: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:1
+#: abaqus.Annotation.Text.Text.__init__:1 of
 msgid "This method creates a Text object."
 msgstr ""
 
@@ -528,6 +610,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:15
+#: abaqus.Annotation.Text.Text.__init__:15
 #: abaqus.Annotation.Text.Text.setValues:7 abaqus.Annotation.Text.Text.text:1
 #: of
 msgid ""
@@ -537,14 +620,15 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:17
-#: abaqus.Annotation.Text.Text.offset:1 abaqus.Annotation.Text.Text.setValues:9
-#: of
+#: abaqus.Annotation.Text.Text.__init__:17 abaqus.Annotation.Text.Text.offset:1
+#: abaqus.Annotation.Text.Text.setValues:9 of
 msgid ""
 "A pair of Floats specifying the **X**- and **Y**-offsets in millimeters "
 "of the Text object from **anchor**. The default value is (0, 0)."
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:20
+#: abaqus.Annotation.Text.Text.__init__:20
 #: abaqus.Annotation.Text.Text.setValues:12 of
 msgid ""
 "A SymbolicConstant or a sequence of Floats specifying a point. A sequence"
@@ -559,7 +643,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:20
-#: abaqus.Annotation.Text.Text.anchor:1
+#: abaqus.Annotation.Text.Text.__init__:20 abaqus.Annotation.Text.Text.anchor:1
 #: abaqus.Annotation.Text.Text.setValues:12 of
 msgid ""
 "A SymbolicConstant or a sequence of Floats specifying a point. A sequence"
@@ -571,6 +655,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:38
+#: abaqus.Annotation.Text.Text.__init__:38
 #: abaqus.Annotation.Text.Text.setValues:31 of
 msgid ""
 "A SymbolicConstant or a sequence of Floats specifying a point. The "
@@ -584,6 +669,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:38
+#: abaqus.Annotation.Text.Text.__init__:38
 #: abaqus.Annotation.Text.Text.referencePoint:1
 #: abaqus.Annotation.Text.Text.setValues:31 of
 msgid ""
@@ -596,6 +682,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:55
+#: abaqus.Annotation.Text.Text.__init__:55
 #: abaqus.Annotation.Text.Text.rotationAngle:1
 #: abaqus.Annotation.Text.Text.setValues:49 of
 msgid ""
@@ -605,8 +692,8 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:58
-#: abaqus.Annotation.Text.Text.color:1 abaqus.Annotation.Text.Text.setValues:52
-#: of
+#: abaqus.Annotation.Text.Text.__init__:58 abaqus.Annotation.Text.Text.color:1
+#: abaqus.Annotation.Text.Text.setValues:52 of
 msgid ""
 "A String specifying the color of the Text object. Possible string values "
 "are any valid color. The default value is \"White\"."
@@ -614,8 +701,8 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:61
-#: abaqus.Annotation.Text.Text.font:1 abaqus.Annotation.Text.Text.setValues:55
-#: of
+#: abaqus.Annotation.Text.Text.__init__:61 abaqus.Annotation.Text.Text.font:1
+#: abaqus.Annotation.Text.Text.setValues:55 of
 msgid ""
 "A String specifying the font of the Text object. Possible string values "
 "are any valid font specification. The default value is \"-*-verdana-"
@@ -624,6 +711,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:64
+#: abaqus.Annotation.Text.Text.__init__:64
 #: abaqus.Annotation.Text.Text.backgroundStyle:1
 #: abaqus.Annotation.Text.Text.setValues:58 of
 msgid ""
@@ -634,6 +722,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:67
+#: abaqus.Annotation.Text.Text.__init__:67
 #: abaqus.Annotation.Text.Text.backgroundColor:1
 #: abaqus.Annotation.Text.Text.setValues:61 of
 msgid ""
@@ -644,8 +733,8 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:70
-#: abaqus.Annotation.Text.Text.box:1 abaqus.Annotation.Text.Text.setValues:64
-#: of
+#: abaqus.Annotation.Text.Text.__init__:70 abaqus.Annotation.Text.Text.box:1
+#: abaqus.Annotation.Text.Text.setValues:64 of
 msgid ""
 "A Boolean specifying whether the box around the text is shown. The "
 "default value is OFF."
@@ -653,6 +742,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:72
+#: abaqus.Annotation.Text.Text.__init__:72
 #: abaqus.Annotation.Text.Text.justification:1
 #: abaqus.Annotation.Text.Text.setValues:66 of
 msgid ""
@@ -661,11 +751,13 @@ msgid ""
 "JUSTIFY_RIGHT. The default value is JUSTIFY_LEFT."
 msgstr ""
 
-#: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:76 of
+#: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:76
+#: abaqus.Annotation.Text.Text.__init__:76 of
 msgid "A :py:class:`~abaqus.Annotation.Text.Text` object."
 msgstr ""
 
-#: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:77 of
+#: abaqus.Annotation.AnimationUserData.AnimationUserData.Text:77
+#: abaqus.Annotation.Text.Text.__init__:77 of
 msgid ":class:`Text`"
 msgstr ""
 
@@ -751,7 +843,11 @@ msgid ":class:`XYData`"
 msgstr ""
 
 #: ../../reference/mdb/annotation.rst:19
-msgid "Object features"
+msgid "Classes"
+msgstr ""
+
+#: abaqus.Annotation.Annotation.Annotation:1 of
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: abaqus.Annotation.Annotation.Annotation:1 of
@@ -917,8 +1013,14 @@ msgstr ""
 msgid "A Float specifying the **Y** translation amount in millimeters."
 msgstr ""
 
-#: ../../reference/mdb/annotation.rst:30
+#: ../../reference/mdb/annotation.rst:32
 msgid "AnnotationsToPlotArray"
+msgstr ""
+
+#: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:1 of
+msgid ""
+"Bases: :py:class:`~typing.List`\\ "
+"[:py:class:`~abaqus.Annotation.Annotation.Annotation`]"
 msgstr ""
 
 #: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:1 of
@@ -1033,10 +1135,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__repr__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__repr__>`\\"
-" \\(\\)"
+msgid ":py:obj:`__repr__ <builtins.list.__repr__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1045,9 +1144,8 @@ msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
-":py:obj:`__getattribute__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__getattribute__>`\\"
-" \\(name\\, \\/\\)"
+":py:obj:`__getattribute__ <builtins.list.__getattribute__>`\\ \\(name\\, "
+"\\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1055,10 +1153,7 @@ msgid "Return getattr(self, name)."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__lt__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__lt__>`\\"
-" \\(value\\, \\/\\)"
+msgid ":py:obj:`__lt__ <builtins.list.__lt__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1066,10 +1161,7 @@ msgid "Return self<value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__le__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__le__>`\\"
-" \\(value\\, \\/\\)"
+msgid ":py:obj:`__le__ <builtins.list.__le__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1077,10 +1169,7 @@ msgid "Return self<=value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__eq__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__eq__>`\\"
-" \\(value\\, \\/\\)"
+msgid ":py:obj:`__eq__ <builtins.list.__eq__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1088,10 +1177,7 @@ msgid "Return self==value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__ne__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__ne__>`\\"
-" \\(value\\, \\/\\)"
+msgid ":py:obj:`__ne__ <builtins.list.__ne__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1099,10 +1185,7 @@ msgid "Return self!=value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__gt__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__gt__>`\\"
-" \\(value\\, \\/\\)"
+msgid ":py:obj:`__gt__ <builtins.list.__gt__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1110,10 +1193,7 @@ msgid "Return self>value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__ge__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__ge__>`\\"
-" \\(value\\, \\/\\)"
+msgid ":py:obj:`__ge__ <builtins.list.__ge__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1121,10 +1201,7 @@ msgid "Return self>=value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__iter__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__iter__>`\\"
-" \\(\\)"
+msgid ":py:obj:`__iter__ <builtins.list.__iter__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1133,16 +1210,12 @@ msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
-":py:obj:`__init__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__init__>`\\"
-" \\(\\*args\\, \\*\\*kwargs\\)"
+":py:obj:`__init__ <builtins.list.__init__>`\\ \\(\\*args\\, "
+"\\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__len__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__len__>`\\"
-" \\(\\)"
+msgid ":py:obj:`__len__ <builtins.list.__len__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1150,9 +1223,7 @@ msgid "Return len(self)."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__getitem__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__getitem__>`\\"
+msgid ":py:obj:`__getitem__ <builtins.list.__getitem__>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1161,9 +1232,8 @@ msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid ""
-":py:obj:`__setitem__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__setitem__>`\\"
-" \\(key\\, value\\, \\/\\)"
+":py:obj:`__setitem__ <builtins.list.__setitem__>`\\ \\(key\\, value\\, "
+"\\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1171,10 +1241,7 @@ msgid "Set self[key] to value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__delitem__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__delitem__>`\\"
-" \\(key\\, \\/\\)"
+msgid ":py:obj:`__delitem__ <builtins.list.__delitem__>`\\ \\(key\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1182,10 +1249,7 @@ msgid "Delete self[key]."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__add__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__add__>`\\"
-" \\(value\\, \\/\\)"
+msgid ":py:obj:`__add__ <builtins.list.__add__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1193,10 +1257,7 @@ msgid "Return self+value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__mul__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__mul__>`\\"
-" \\(value\\, \\/\\)"
+msgid ":py:obj:`__mul__ <builtins.list.__mul__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1204,10 +1265,7 @@ msgid "Return self*value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__rmul__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__rmul__>`\\"
-" \\(value\\, \\/\\)"
+msgid ":py:obj:`__rmul__ <builtins.list.__rmul__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1215,10 +1273,7 @@ msgid "Return value*self."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__contains__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__contains__>`\\"
-" \\(key\\, \\/\\)"
+msgid ":py:obj:`__contains__ <builtins.list.__contains__>`\\ \\(key\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1226,10 +1281,7 @@ msgid "Return key in self."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__iadd__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__iadd__>`\\"
-" \\(value\\, \\/\\)"
+msgid ":py:obj:`__iadd__ <builtins.list.__iadd__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1237,10 +1289,7 @@ msgid "Implement self+=value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__imul__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__imul__>`\\"
-" \\(value\\, \\/\\)"
+msgid ":py:obj:`__imul__ <builtins.list.__imul__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1248,10 +1297,7 @@ msgid "Implement self*=value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__reversed__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__reversed__>`\\"
-" \\(\\)"
+msgid ":py:obj:`__reversed__ <builtins.list.__reversed__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1259,10 +1305,7 @@ msgid "Return a reverse iterator over the list."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`__sizeof__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__sizeof__>`\\"
-" \\(\\)"
+msgid ":py:obj:`__sizeof__ <builtins.list.__sizeof__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1270,10 +1313,7 @@ msgid "Return the size of the list in memory, in bytes."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`clear "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.clear>`\\"
-" \\(\\)"
+msgid ":py:obj:`clear <builtins.list.clear>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1281,10 +1321,7 @@ msgid "Remove all items from list."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`copy "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.copy>`\\"
-" \\(\\)"
+msgid ":py:obj:`copy <builtins.list.copy>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1292,10 +1329,7 @@ msgid "Return a shallow copy of the list."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`append "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.append>`\\"
-" \\(object\\, \\/\\)"
+msgid ":py:obj:`append <builtins.list.append>`\\ \\(object\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1303,10 +1337,7 @@ msgid "Append object to the end of the list."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`insert "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.insert>`\\"
-" \\(index\\, object\\, \\/\\)"
+msgid ":py:obj:`insert <builtins.list.insert>`\\ \\(index\\, object\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1314,10 +1345,7 @@ msgid "Insert object before index."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`extend "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.extend>`\\"
-" \\(iterable\\, \\/\\)"
+msgid ":py:obj:`extend <builtins.list.extend>`\\ \\(iterable\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1325,10 +1353,7 @@ msgid "Extend list by appending elements from the iterable."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`pop "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.pop>`\\ "
-"\\(\\[index\\]\\)"
+msgid ":py:obj:`pop <builtins.list.pop>`\\ \\(\\[index\\]\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1336,10 +1361,7 @@ msgid "Remove and return item at index (default last)."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`remove "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.remove>`\\"
-" \\(value\\, \\/\\)"
+msgid ":py:obj:`remove <builtins.list.remove>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1347,10 +1369,7 @@ msgid "Remove first occurrence of value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`index "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.index>`\\"
-" \\(value\\[\\, start\\, stop\\]\\)"
+msgid ":py:obj:`index <builtins.list.index>`\\ \\(value\\[\\, start\\, stop\\]\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1358,10 +1377,7 @@ msgid "Return first index of value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`count "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.count>`\\"
-" \\(value\\, \\/\\)"
+msgid ":py:obj:`count <builtins.list.count>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1369,10 +1385,7 @@ msgid "Return number of occurrences of value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`reverse "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.reverse>`\\"
-" \\(\\)"
+msgid ":py:obj:`reverse <builtins.list.reverse>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -1380,31 +1393,31 @@ msgid "Reverse *IN PLACE*."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ""
-":py:obj:`sort "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sort>`\\"
-" \\(\\*\\[\\, key\\, reverse\\]\\)"
+msgid ":py:obj:`sort <builtins.list.sort>`\\ \\(\\*\\[\\, key\\, reverse\\]\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
 msgid "Sort the list in ascending order and return None."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`__class_getitem__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__class_getitem__>`\\"
+#: ../../None:36:<autosummary>:1
+msgid ":py:obj:`__class_getitem__ <builtins.list.__class_getitem__>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:36:<autosummary>:1
 msgid "See PEP 585"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
-":py:obj:`__init_subclass__ "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__init_subclass__>`\\"
-" \\(\\*args\\, \\*\\*kwargs\\)"
+":py:obj:`__class_getitem__ <typing.Generic.__class_getitem__>`\\ "
+"\\(params\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`__init_subclass__ <typing.Generic.__init_subclass__>`\\ "
+"\\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1416,9 +1429,7 @@ msgid "Private Data Attributes:"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-msgid ""
-":py:obj:`_is_protocol "
-"<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray._is_protocol>`\\"
+msgid ":py:obj:`_is_protocol <typing.Generic._is_protocol>`\\"
 msgstr ""
 
 #: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.bringForward:5
@@ -1501,8 +1512,12 @@ msgid ""
 "#simaker-annotationstoplotarraysendtobackpyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/annotation.rst:38
+#: ../../reference/mdb/annotation.rst:42
 msgid "AnnotationViewport"
+msgstr ""
+
+#: abaqus.Annotation.AnnotationViewport.AnnotationViewport:1 of
+msgid "Bases: :py:class:`~abaqus.Canvas.ViewportBase.ViewportBase`"
 msgstr ""
 
 #: abaqus.Annotation.AnnotationViewport.AnnotationViewport:1 of
@@ -1518,9 +1533,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
-msgid ""
-":py:obj:`origin "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.origin>`\\"
+msgid ":py:obj:`origin <abaqus.Canvas.ViewportBase.ViewportBase.origin>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1531,9 +1544,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
-msgid ""
-":py:obj:`width "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.width>`\\"
+msgid ":py:obj:`width <abaqus.Canvas.ViewportBase.ViewportBase.width>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1541,9 +1552,7 @@ msgid "A Float specifying the width in millimeters of the viewport."
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
-msgid ""
-":py:obj:`height "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.height>`\\"
+msgid ":py:obj:`height <abaqus.Canvas.ViewportBase.ViewportBase.height>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1551,9 +1560,7 @@ msgid "A Float specifying the height in millimeters of the viewport."
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
-msgid ""
-":py:obj:`border "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.border>`\\"
+msgid ":py:obj:`border <abaqus.Canvas.ViewportBase.ViewportBase.border>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1563,9 +1570,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
-msgid ""
-":py:obj:`titleBar "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.titleBar>`\\"
+msgid ":py:obj:`titleBar <abaqus.Canvas.ViewportBase.ViewportBase.titleBar>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1577,7 +1582,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`titleStyle "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.titleStyle>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.titleStyle>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1587,7 +1592,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`customTitleString "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.customTitleString>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.customTitleString>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1597,7 +1602,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`displayMode "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.displayMode>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.displayMode>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1607,7 +1612,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`viewManipLayers "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.viewManipLayers>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.viewManipLayers>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1619,7 +1624,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`layerOffset "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.layerOffset>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.layerOffset>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1631,7 +1636,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`windowState "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.windowState>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.windowState>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1641,7 +1646,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`currentWidth "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.currentWidth>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.currentWidth>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1653,7 +1658,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`currentHeight "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.currentHeight>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.currentHeight>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1665,7 +1670,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`applyLinkedCommands "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.applyLinkedCommands>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.applyLinkedCommands>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1675,7 +1680,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`activeColorModes "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.activeColorModes>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.activeColorModes>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1683,9 +1688,7 @@ msgid "A SymbolicConstant specifying the currently active color mappings."
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
-msgid ""
-":py:obj:`colorMode "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.colorMode>`\\"
+msgid ":py:obj:`colorMode <abaqus.Canvas.ViewportBase.ViewportBase.colorMode>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1695,7 +1698,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`translucency "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.translucency>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.translucency>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1708,7 +1711,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`animationConnect "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.animationConnect>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.animationConnect>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1718,7 +1721,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`colorMappings "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.colorMappings>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.colorMappings>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1730,7 +1733,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`initialColor "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.initialColor>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.initialColor>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1742,7 +1745,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`currentLayer "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.currentLayer>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.currentLayer>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1754,7 +1757,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`displayedObject "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.displayedObject>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.displayedObject>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1764,9 +1767,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
-msgid ""
-":py:obj:`layers "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.layers>`\\"
+msgid ":py:obj:`layers <abaqus.Canvas.ViewportBase.ViewportBase.layers>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1778,7 +1779,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`odbDisplay "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.odbDisplay>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.odbDisplay>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1790,7 +1791,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`partDisplay "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.partDisplay>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.partDisplay>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1803,7 +1804,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`assemblyDisplay "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.assemblyDisplay>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.assemblyDisplay>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1816,7 +1817,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`viewportAnnotationOptions "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.viewportAnnotationOptions>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.viewportAnnotationOptions>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1829,7 +1830,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`detailPlotOptions "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.detailPlotOptions>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.detailPlotOptions>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1841,7 +1842,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`annotationsToPlot "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.annotationsToPlot>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.annotationsToPlot>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1854,7 +1855,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`visibleLayers "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.visibleLayers>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.visibleLayers>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1866,7 +1867,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`currentOrigin "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.currentOrigin>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.currentOrigin>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1879,7 +1880,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`iconOrigin "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.iconOrigin>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.iconOrigin>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1893,7 +1894,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`lightOptions "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.lightOptions>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.lightOptions>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1903,7 +1904,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`imageOptions "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.imageOptions>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.imageOptions>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1913,7 +1914,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`movieOptions "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.movieOptions>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.movieOptions>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1923,7 +1924,7 @@ msgstr ""
 #: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`animationController "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.animationController>`\\"
+"<abaqus.Canvas.ViewportBase.ViewportBase.animationController>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1931,9 +1932,7 @@ msgid "An AnimationController object."
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
-msgid ""
-":py:obj:`drawings "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.drawings>`\\"
+msgid ":py:obj:`drawings <abaqus.Canvas.ViewportBase.ViewportBase.drawings>`\\"
 msgstr ""
 
 #: ../../None:39:<autosummary>:1
@@ -1954,8 +1953,7 @@ msgstr ""
 
 #: ../../None:25:<autosummary>:1
 msgid ""
-":py:obj:`__init__ "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.__init__>`\\ "
+":py:obj:`__init__ <abaqus.Canvas.ViewportBase.ViewportBase.__init__>`\\ "
 "\\(name\\[\\, origin\\, width\\, height\\, ...\\]\\)"
 msgstr ""
 
@@ -1968,8 +1966,7 @@ msgstr ""
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`bringToFront "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.bringToFront>`\\"
-" \\(\\)"
+"<abaqus.Canvas.ViewportBase.ViewportBase.bringToFront>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
@@ -1979,8 +1976,7 @@ msgstr ""
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`disableMultipleColors "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.disableMultipleColors>`\\"
-" \\(\\)"
+"<abaqus.Canvas.ViewportBase.ViewportBase.disableMultipleColors>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
@@ -1992,8 +1988,7 @@ msgstr ""
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`disableRefresh "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.disableRefresh>`\\"
-" \\(\\)"
+"<abaqus.Canvas.ViewportBase.ViewportBase.disableRefresh>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
@@ -2003,8 +1998,8 @@ msgstr ""
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`disableColorCodeUpdates "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.disableColorCodeUpdates>`\\"
-" \\(\\)"
+"<abaqus.Canvas.ViewportBase.ViewportBase.disableColorCodeUpdates>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
@@ -2016,8 +2011,7 @@ msgstr ""
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`enableMultipleColors "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.enableMultipleColors>`\\"
-" \\(\\)"
+"<abaqus.Canvas.ViewportBase.ViewportBase.enableMultipleColors>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
@@ -2029,8 +2023,7 @@ msgstr ""
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`enableRefresh "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.enableRefresh>`\\"
-" \\(\\)"
+"<abaqus.Canvas.ViewportBase.ViewportBase.enableRefresh>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
@@ -2040,8 +2033,8 @@ msgstr ""
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`enableColorCodeUpdates "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.enableColorCodeUpdates>`\\"
-" \\(\\)"
+"<abaqus.Canvas.ViewportBase.ViewportBase.enableColorCodeUpdates>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
@@ -2053,8 +2046,8 @@ msgstr ""
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`getActiveElementLabels "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.getActiveElementLabels>`\\"
-" \\(\\[useCut\\, printResults\\]\\)"
+"<abaqus.Canvas.ViewportBase.ViewportBase.getActiveElementLabels>`\\ "
+"\\(\\[useCut\\, printResults\\]\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
@@ -2066,8 +2059,8 @@ msgstr ""
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`getActiveNodeLabels "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.getActiveNodeLabels>`\\"
-" \\(\\[useCut\\, printResults\\]\\)"
+"<abaqus.Canvas.ViewportBase.ViewportBase.getActiveNodeLabels>`\\ "
+"\\(\\[useCut\\, printResults\\]\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
@@ -2079,8 +2072,7 @@ msgstr ""
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`getPrimVarMinMaxLoc "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.getPrimVarMinMaxLoc>`\\"
-" \\(\\)"
+"<abaqus.Canvas.ViewportBase.ViewportBase.getPrimVarMinMaxLoc>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
@@ -2092,8 +2084,7 @@ msgstr ""
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`makeCurrent "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.makeCurrent>`\\ "
-"\\(\\)"
+"<abaqus.Canvas.ViewportBase.ViewportBase.makeCurrent>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
@@ -2102,8 +2093,7 @@ msgstr ""
 
 #: ../../None:25:<autosummary>:1
 msgid ""
-":py:obj:`maximize "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.maximize>`\\ "
+":py:obj:`maximize <abaqus.Canvas.ViewportBase.ViewportBase.maximize>`\\ "
 "\\(\\)"
 msgstr ""
 
@@ -2113,8 +2103,7 @@ msgstr ""
 
 #: ../../None:25:<autosummary>:1
 msgid ""
-":py:obj:`minimize "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.minimize>`\\ "
+":py:obj:`minimize <abaqus.Canvas.ViewportBase.ViewportBase.minimize>`\\ "
 "\\(\\)"
 msgstr ""
 
@@ -2126,8 +2115,7 @@ msgstr ""
 
 #: ../../None:25:<autosummary>:1
 msgid ""
-":py:obj:`offset "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.offset>`\\ "
+":py:obj:`offset <abaqus.Canvas.ViewportBase.ViewportBase.offset>`\\ "
 "\\(\\[deltaX\\, deltaY\\]\\)"
 msgstr ""
 
@@ -2139,8 +2127,7 @@ msgstr ""
 
 #: ../../None:25:<autosummary>:1
 msgid ""
-":py:obj:`restore "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.restore>`\\ "
+":py:obj:`restore <abaqus.Canvas.ViewportBase.ViewportBase.restore>`\\ "
 "\\(\\)"
 msgstr ""
 
@@ -2153,8 +2140,7 @@ msgstr ""
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`sendToBack "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.sendToBack>`\\ "
-"\\(\\)"
+"<abaqus.Canvas.ViewportBase.ViewportBase.sendToBack>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
@@ -2163,37 +2149,34 @@ msgstr ""
 
 #: ../../None:25:<autosummary>:1
 msgid ""
-":py:obj:`setColor "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.setColor>`\\ "
-"\\(\\*args\\, \\*\\*kwargs\\)"
+":py:obj:`setColor <abaqus.Canvas.ViewportBase.ViewportBase.setColor>`\\ "
+"\\(\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`forceRefresh "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.forceRefresh>`\\"
-" \\(\\)"
+"<abaqus.Canvas.ViewportBase.ViewportBase.forceRefresh>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
 msgid "This method causes the Viewport to refresh immediately."
 msgstr ""
 
-#: ../../None:25:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid ""
-":py:obj:`setValues "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.setValues>`\\ "
-"\\(\\[displayedObject\\, displayMode\\, ...\\]\\)"
+":py:obj:`setValues <abaqus.Canvas.ViewportBase.ViewportBase.setValues>`\\"
+" \\(\\[displayedObject\\, displayMode\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:25:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:25:<autosummary>:1
 msgid "This method modifies the Viewport object."
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`addDrawings "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.addDrawings>`\\ "
+"<abaqus.Canvas.ViewportBase.ViewportBase.addDrawings>`\\ "
 "\\(\\[names\\]\\)"
 msgstr ""
 
@@ -2206,8 +2189,8 @@ msgstr ""
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`removeDrawings "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.removeDrawings>`\\"
-" \\(\\[names\\]\\)"
+"<abaqus.Canvas.ViewportBase.ViewportBase.removeDrawings>`\\ "
+"\\(\\[names\\]\\)"
 msgstr ""
 
 #: ../../None:25:<autosummary>:1
@@ -2219,7 +2202,7 @@ msgstr ""
 #: ../../None:25:<autosummary>:1
 msgid ""
 ":py:obj:`timeDisplay "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.timeDisplay>`\\ "
+"<abaqus.Canvas.ViewportBase.ViewportBase.timeDisplay>`\\ "
 "\\(\\[numFrames\\, numSeconds\\, ...\\]\\)"
 msgstr ""
 
@@ -2232,12 +2215,21 @@ msgstr ""
 #: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`get_user_attributes "
-"<abaqus.Annotation.AnnotationViewport.AnnotationViewport.get_user_attributes>`\\"
-" \\(\\)"
+"<abaqus._OptionsBase._OptionsBase.get_user_attributes>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid "Returns a list of the user attributes of the class."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`setValues <abaqus._OptionsBase._OptionsBase.setValues>`\\ "
+"\\(\\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the _OptionsBase object."
 msgstr ""
 
 #: abaqus.Annotation.AnnotationViewport.AnnotationViewport.plotAnnotation:4 of
@@ -2264,8 +2256,14 @@ msgid ""
 "object that controls viewing of the viewport content."
 msgstr ""
 
-#: ../../reference/mdb/annotation.rst:46
+#: ../../reference/mdb/annotation.rst:52
 msgid "Arrow"
+msgstr ""
+
+#: abaqus.Annotation.Arrow.Arrow:1 of
+msgid ""
+"Bases: :py:class:`~abaqus.Annotation.Annotation.Annotation`, "
+":py:class:`~abaqus._OptionsBase._OptionsBase`"
 msgstr ""
 
 #: abaqus.Annotation.Arrow.Arrow:1 of
@@ -2366,10 +2364,6 @@ msgstr ""
 msgid "A SymbolicConstant specifying the line thickness of the arrow."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Annotation.Arrow.Arrow.name>`\\"
-msgstr ""
-
 #: ../../None:6:<autosummary>:1
 msgid ""
 ":py:obj:`__init__ <abaqus.Annotation.Arrow.Arrow.__init__>`\\ "
@@ -2402,68 +2396,24 @@ msgid ""
 "plane."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:6:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid ""
 ":py:obj:`setValues <abaqus.Annotation.Arrow.Arrow.setValues>`\\ "
 "\\(\\[startPoint\\, endPoint\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:6:<autosummary>:1
-#: abaqus.Annotation.Arrow.Arrow.setValues:1 of
+#: ../../None:6:<autosummary>:1 abaqus.Annotation.Arrow.Arrow.setValues:1 of
 msgid "This method modifies the Arrow object."
 msgstr ""
 
-#: ../../None:9:<autosummary>:1
+#: abaqus.Annotation.Arrow.Arrow.__init__:10 of
 msgid ""
-":py:obj:`bringToFront <abaqus.Annotation.Arrow.Arrow.bringToFront>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ":py:obj:`sendToBack <abaqus.Annotation.Arrow.Arrow.sendToBack>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`bringForward <abaqus.Annotation.Arrow.Arrow.bringForward>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`sendBackward <abaqus.Annotation.Arrow.Arrow.sendBackward>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`moveBefore <abaqus.Annotation.Arrow.Arrow.moveBefore>`\\ "
-"\\(name\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ":py:obj:`moveAfter <abaqus.Annotation.Arrow.Arrow.moveAfter>`\\ \\(name\\)"
-msgstr ""
-
-#: ../../None:9:<autosummary>:1
-msgid ""
-":py:obj:`translate <abaqus.Annotation.Arrow.Arrow.translate>`\\ "
-"\\(\\[x\\, y\\]\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`get_user_attributes "
-"<abaqus.Annotation.Arrow.Arrow.get_user_attributes>`\\ \\(\\)"
-msgstr ""
-
-#: abaqus.Annotation.Arrow.Arrow.setValues:4 of
-msgid ""
-"Check `Arrow.setValues on help.3ds.com/2023 "
+"Check `Arrow.__init__ on help.3ds.com/2023 "
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-arrowpyc.htm?contextscope=all"
-"#simaker-arrowsetvaluespyc>`__."
+"#simaker-arrow__init__pyc>`__."
 msgstr ""
 
+#: abaqus.Annotation.Arrow.Arrow.__init__:21
 #: abaqus.Annotation.Arrow.Arrow.setValues:13 of
 msgid ""
 "A SymbolicConstant or a sequence of Floats specifying a point. A sequence"
@@ -2474,6 +2424,13 @@ msgid ""
 "Possible values are:  - BOTTOM_LEFT - BOTTOM_CENTER - BOTTOM_RIGHT - "
 "CENTER_LEFT - CENTER - CENTER_RIGHT - TOP_LEFT - TOP_CENTER - TOP_RIGHT  "
 "The default value is BOTTOM_LEFT."
+msgstr ""
+
+#: abaqus.Annotation.Arrow.Arrow.setValues:4 of
+msgid ""
+"Check `Arrow.setValues on help.3ds.com/2023 "
+"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-arrowpyc.htm?contextscope=all"
+"#simaker-arrowsetvaluespyc>`__."
 msgstr ""
 
 #: abaqus.Annotation.Arrow.Arrow.translateEndPoint:4 of
@@ -2495,7 +2452,7 @@ msgid ""
 "#simaker-arrowtranslatestartpointpyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/annotation.rst:54
+#: ../../reference/mdb/annotation.rst:62
 msgid "Text"
 msgstr ""
 
@@ -2503,6 +2460,13 @@ msgstr ""
 msgid ""
 "The Text object stores the text settings and location of a text "
 "annotation. The Text object is derived from the Annotation object."
+msgstr ""
+
+#: abaqus.Annotation.Text.Text.__init__:10 of
+msgid ""
+"Check `Text.__init__ on help.3ds.com/2023 "
+"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-textpyc.htm?contextscope=all"
+"#simaker-text__init__pyc>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Annotation.Text.Text.height:1 of
@@ -3075,5 +3039,594 @@ msgstr ""
 #~ msgid ""
 #~ ":py:obj:`view "
 #~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.view>`\\"
+#~ msgstr ""
+
+#~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__repr__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__repr__>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__getattribute__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__getattribute__>`\\"
+#~ " \\(name\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__lt__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__lt__>`\\"
+#~ " \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__le__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__le__>`\\"
+#~ " \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__eq__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__eq__>`\\"
+#~ " \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__ne__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__ne__>`\\"
+#~ " \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__gt__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__gt__>`\\"
+#~ " \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__ge__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__ge__>`\\"
+#~ " \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__iter__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__iter__>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__init__>`\\"
+#~ " \\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__len__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__len__>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__getitem__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__getitem__>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__setitem__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__setitem__>`\\"
+#~ " \\(key\\, value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__delitem__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__delitem__>`\\"
+#~ " \\(key\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__add__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__add__>`\\"
+#~ " \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__mul__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__mul__>`\\"
+#~ " \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__rmul__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__rmul__>`\\"
+#~ " \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__contains__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__contains__>`\\"
+#~ " \\(key\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__iadd__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__iadd__>`\\"
+#~ " \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__imul__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__imul__>`\\"
+#~ " \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__reversed__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__reversed__>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__sizeof__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__sizeof__>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`clear "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.clear>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copy "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.copy>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`append "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.append>`\\"
+#~ " \\(object\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`insert "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.insert>`\\"
+#~ " \\(index\\, object\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`extend "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.extend>`\\"
+#~ " \\(iterable\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`pop "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.pop>`\\"
+#~ " \\(\\[index\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`remove "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.remove>`\\"
+#~ " \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`index "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.index>`\\"
+#~ " \\(value\\[\\, start\\, stop\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`count "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.count>`\\"
+#~ " \\(value\\, \\/\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`reverse "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.reverse>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sort "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sort>`\\"
+#~ " \\(\\*\\[\\, key\\, reverse\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__class_getitem__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__class_getitem__>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init_subclass__ "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.__init_subclass__>`\\"
+#~ " \\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`_is_protocol "
+#~ "<abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray._is_protocol>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`origin "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.origin>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`width "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.width>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`height "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.height>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`border "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.border>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`titleBar "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.titleBar>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`titleStyle "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.titleStyle>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`customTitleString "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.customTitleString>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`displayMode "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.displayMode>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`viewManipLayers "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.viewManipLayers>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`layerOffset "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.layerOffset>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`windowState "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.windowState>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`currentWidth "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.currentWidth>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`currentHeight "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.currentHeight>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`applyLinkedCommands "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.applyLinkedCommands>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`activeColorModes "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.activeColorModes>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`colorMode "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.colorMode>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`translucency "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.translucency>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`animationConnect "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.animationConnect>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`colorMappings "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.colorMappings>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`initialColor "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.initialColor>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`currentLayer "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.currentLayer>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`displayedObject "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.displayedObject>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`layers "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.layers>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`odbDisplay "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.odbDisplay>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`partDisplay "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.partDisplay>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`assemblyDisplay "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.assemblyDisplay>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`viewportAnnotationOptions "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.viewportAnnotationOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`detailPlotOptions "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.detailPlotOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`annotationsToPlot "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.annotationsToPlot>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`visibleLayers "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.visibleLayers>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`currentOrigin "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.currentOrigin>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`iconOrigin "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.iconOrigin>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lightOptions "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.lightOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`imageOptions "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.imageOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`movieOptions "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.movieOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`animationController "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.animationController>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`drawings "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.drawings>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init__ "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.__init__>`\\"
+#~ " \\(name\\[\\, origin\\, width\\, height\\, "
+#~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`bringToFront "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.bringToFront>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`disableMultipleColors "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.disableMultipleColors>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`disableRefresh "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.disableRefresh>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`disableColorCodeUpdates "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.disableColorCodeUpdates>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`enableMultipleColors "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.enableMultipleColors>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`enableRefresh "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.enableRefresh>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`enableColorCodeUpdates "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.enableColorCodeUpdates>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getActiveElementLabels "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.getActiveElementLabels>`\\"
+#~ " \\(\\[useCut\\, printResults\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getActiveNodeLabels "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.getActiveNodeLabels>`\\"
+#~ " \\(\\[useCut\\, printResults\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getPrimVarMinMaxLoc "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.getPrimVarMinMaxLoc>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`makeCurrent "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.makeCurrent>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`maximize "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.maximize>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`minimize "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.minimize>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`offset "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.offset>`\\"
+#~ " \\(\\[deltaX\\, deltaY\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`restore "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.restore>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sendToBack "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.sendToBack>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setColor "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.setColor>`\\"
+#~ " \\(\\*args\\, \\*\\*kwargs\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`forceRefresh "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.forceRefresh>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`setValues "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.setValues>`\\"
+#~ " \\(\\[displayedObject\\, displayMode\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`addDrawings "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.addDrawings>`\\"
+#~ " \\(\\[names\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`removeDrawings "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.removeDrawings>`\\"
+#~ " \\(\\[names\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`timeDisplay "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.timeDisplay>`\\"
+#~ " \\(\\[numFrames\\, numSeconds\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus.Annotation.AnnotationViewport.AnnotationViewport.get_user_attributes>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`name <abaqus.Annotation.Arrow.Arrow.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`bringToFront "
+#~ "<abaqus.Annotation.Arrow.Arrow.bringToFront>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sendToBack "
+#~ "<abaqus.Annotation.Arrow.Arrow.sendToBack>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`bringForward "
+#~ "<abaqus.Annotation.Arrow.Arrow.bringForward>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sendBackward "
+#~ "<abaqus.Annotation.Arrow.Arrow.sendBackward>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`moveBefore "
+#~ "<abaqus.Annotation.Arrow.Arrow.moveBefore>`\\ \\(name\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`moveAfter <abaqus.Annotation.Arrow.Arrow.moveAfter>`\\"
+#~ " \\(name\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`translate <abaqus.Annotation.Arrow.Arrow.translate>`\\"
+#~ " \\(\\[x\\, y\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus.Annotation.Arrow.Arrow.get_user_attributes>`\\ \\(\\)"
 #~ msgstr ""
 

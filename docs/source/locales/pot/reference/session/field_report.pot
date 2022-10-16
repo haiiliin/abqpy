@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-04 14:03+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,8 +28,689 @@ msgstr ""
 msgid "Create field reports in Session"
 msgstr ""
 
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession:1
+msgid "Bases: :py:class:`~abaqus.Session.SessionBase.SessionBase`"
+msgstr ""
+
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:0
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession:0
+msgid "Public Data Attributes:"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`attachedToGui <abaqus.Session.SessionBase.SessionBase.attachedToGui>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A Boolean specifying whether an Abaqus interactive session is running."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`replayInProgress <abaqus.Session.SessionBase.SessionBase.replayInProgress>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A Boolean specifying whether Abaqus is executing a replay file."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`kernelMemoryFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A Float specifying the memory usage value for the Abaqus/CAE kernel process in megabytes."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`kernelMemoryMaxFootprint <abaqus.Session.SessionBase.SessionBase.kernelMemoryMaxFootprint>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A Float specifying the maximum value for the memory usage for the Abaqus/CAE kernel process in megabytes."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`kernelMemoryLimit <abaqus.Session.SessionBase.SessionBase.kernelMemoryLimit>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A Float specifying the limit for the memory use for the Abaqus/CAE kernel process in megabytes."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`colors <abaqus.Session.SessionBase.SessionBase.colors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Color objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`journalOptions <abaqus.Session.SessionBase.SessionBase.journalOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.Session.JournalOptions.JournalOptions` object specifying how to record selection of geometry in the journal and replay files."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`memoryReductionOptions <abaqus.Session.SessionBase.SessionBase.memoryReductionOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.Session.MemoryReductionOptions.MemoryReductionOptions` object specifying options for running in reduced memory mode."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`nodeQuery <abaqus.Session.SessionBase.SessionBase.nodeQuery>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.PathAndProbe.NodeQuery.NodeQuery` object specifying nodes and their coordinates in a path."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`sketcherOptions <abaqus.Session.SessionBase.SessionBase.sketcherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions` object specifying common options for all sketches."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`viewerOptions <abaqus.Session.SessionBase.SessionBase.viewerOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.OdbDisplay.ViewerOptions.ViewerOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`animationOptions <abaqus.Session.SessionBase.SessionBase.animationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An :py:class:`~abaqus.Animation.AnimationOptions.AnimationOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`aviOptions <abaqus.Session.SessionBase.SessionBase.aviOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An :py:class:`~abaqus.Animation.AVIOptions.AVIOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`imageAnimationOptions <abaqus.Session.SessionBase.SessionBase.imageAnimationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An :py:class:`~abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`imageAnimation <abaqus.Session.SessionBase.SessionBase.imageAnimation>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An :py:class:`~abaqus.Animation.ImageAnimation.ImageAnimation` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`quickTimeOptions <abaqus.Session.SessionBase.SessionBase.quickTimeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.Animation.QuickTimeOptions.QuickTimeOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`viewports <abaqus.Session.SessionBase.SessionBase.viewports>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Viewport objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`customData <abaqus.Session.SessionBase.SessionBase.customData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultFieldReportOptions <abaqus.Session.SessionBase.SessionBase.defaultFieldReportOptions>`\\"
+msgstr ""
+
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:38
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.FieldReport.FieldReportOptions.FieldReportOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultFreeBodyReportOptions <abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:22
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`fieldReportOptions <abaqus.Session.SessionBase.SessionBase.fieldReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`freeBodyReportOptions <abaqus.Session.SessionBase.SessionBase.freeBodyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbs <abaqus.Session.SessionBase.SessionBase.odbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Odb objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`scratchOdbs <abaqus.Session.SessionBase.SessionBase.scratchOdbs>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of ScratchOdb objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultOdbDisplay <abaqus.Session.SessionBase.SessionBase.defaultOdbDisplay>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultPlot <abaqus.Session.SessionBase.SessionBase.defaultPlot>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.XY.DefaultPlot.DefaultPlot` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultChartOptions <abaqus.Session.SessionBase.SessionBase.defaultChartOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.XY.DefaultChartOptions.DefaultChartOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`odbData <abaqus.Session.SessionBase.SessionBase.odbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of OdbData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`mdbData <abaqus.Session.SessionBase.SessionBase.mdbData>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of MdbData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`paths <abaqus.Session.SessionBase.SessionBase.paths>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Path objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`freeBodies <abaqus.Session.SessionBase.SessionBase.freeBodies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of FreeBody objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`streams <abaqus.Session.SessionBase.SessionBase.streams>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Stream objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`spectrums <abaqus.Session.SessionBase.SessionBase.spectrums>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Spectrum objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`currentProbeValues <abaqus.Session.SessionBase.SessionBase.currentProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultProbeOptions <abaqus.Session.SessionBase.SessionBase.defaultProbeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.PathAndProbe.ProbeOptions.ProbeOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`probeOptions <abaqus.Session.SessionBase.SessionBase.probeOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`probeReport <abaqus.Session.SessionBase.SessionBase.probeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.PathAndProbe.ProbeReport.ProbeReport` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultProbeReport <abaqus.Session.SessionBase.SessionBase.defaultProbeReport>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`selectedProbeValues <abaqus.Session.SessionBase.SessionBase.selectedProbeValues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`printOptions <abaqus.Session.SessionBase.SessionBase.printOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.Print.PrintOptions.PrintOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`epsOptions <abaqus.Session.SessionBase.SessionBase.epsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An :py:class:`~abaqus.Print.EpsOptions.EpsOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`pageSetupOptions <abaqus.Session.SessionBase.SessionBase.pageSetupOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.Print.PageSetupOptions.PageSetupOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`pngOptions <abaqus.Session.SessionBase.SessionBase.pngOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.Print.PngOptions.PngOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`psOptions <abaqus.Session.SessionBase.SessionBase.psOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.Print.PsOptions.PsOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`svgOptions <abaqus.Session.SessionBase.SessionBase.svgOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.Print.SvgOptions.SvgOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`tiffOptions <abaqus.Session.SessionBase.SessionBase.tiffOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.PredefinedField.TiffOptions.TiffOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`autoColors <abaqus.Session.SessionBase.SessionBase.autoColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An :py:class:`~abaqus.Session.AutoColors.AutoColors` object specifying the color palette to be used for color coding."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyColors <abaqus.Session.SessionBase.SessionBase.xyColors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An :py:class:`~abaqus.Session.AutoColors.AutoColors` object specifying the color palette to be used forXYCurve objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyDataObjects <abaqus.Session.SessionBase.SessionBase.xyDataObjects>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of XYData objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`curves <abaqus.Session.SessionBase.SessionBase.curves>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of XYCurve objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyPlots <abaqus.Session.SessionBase.SessionBase.xyPlots>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of XYPlot objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`charts <abaqus.Session.SessionBase.SessionBase.charts>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Chart objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultXYReportOptions <abaqus.Session.SessionBase.SessionBase.defaultXYReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "An :py:class:`~abaqus.XY.XYReportOptions.XYReportOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`xyReportOptions <abaqus.Session.SessionBase.SessionBase.xyReportOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`views <abaqus.Session.SessionBase.SessionBase.views>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of View objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`networkDatabaseConnectors <abaqus.Session.SessionBase.SessionBase.networkDatabaseConnectors>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of NetworkDatabaseConnector objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`displayGroups <abaqus.Session.SessionBase.SessionBase.displayGroups>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of DisplayGroup objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`graphicsInfo <abaqus.Session.SessionBase.SessionBase.graphicsInfo>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultGraphicsOptions <abaqus.Session.SessionBase.SessionBase.defaultGraphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`graphicsOptions <abaqus.Session.SessionBase.SessionBase.graphicsOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultViewportAnnotationOptions <abaqus.Session.SessionBase.SessionBase.defaultViewportAnnotationOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`queues <abaqus.Session.SessionBase.SessionBase.queues>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Queue objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`currentViewportName <abaqus.Session.SessionBase.SessionBase.currentViewportName>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A String specifying the name of the current viewport."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`sessionState <abaqus.Session.SessionBase.SessionBase.sessionState>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A Dictionary object specifying the viewports and their associated models."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`images <abaqus.Session.SessionBase.SessionBase.images>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Image objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`movies <abaqus.Session.SessionBase.SessionBase.movies>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Movie objects."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultLightOptions <abaqus.Session.SessionBase.SessionBase.defaultLightOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.DisplayOptions.LightOptions.LightOptions` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawingArea <abaqus.Session.SessionBase.SessionBase.drawingArea>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.Canvas.DrawingArea.DrawingArea` object."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`defaultMesherOptions <abaqus.Session.SessionBase.SessionBase.defaultMesherOptions>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A :py:class:`~abaqus.Mesh.MesherOptions.MesherOptions` object specifying how to control default settings in the Mesh module."
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid ":py:obj:`drawings <abaqus.Session.SessionBase.SessionBase.drawings>`\\"
+msgstr ""
+
+#: ../../None:72:<autosummary>:1
+msgid "A repository of Drawing objects."
+msgstr ""
+
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:0
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession:0
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:0
+#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:0
+msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`writeFieldReport <abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport>`\\ \\(filename\\, append\\, sortItem\\, ...\\)"
+msgstr ""
+
 #: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:1
+#: ../../None:4:<autosummary>:1
 msgid "This method writes a FieldOutput object to a user-defined ASCII file."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`writeFreeBodyReport <abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport>`\\ \\(fileName\\, append\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:1
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:1
+#: ../../None:4:<autosummary>:1
+msgid "This method writes a FreeBody object to a user-defined ASCII file."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.Session.SessionBase.SessionBase.setValues>`\\ \\(\\[kernelMemoryLimit\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method modifies the Session object."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`enableCADConnection <abaqus.Session.SessionBase.SessionBase.enableCADConnection>`\\ \\(CADName\\[\\, portNum\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method enables the Abaqus/CAE listening port for the specified **CAD** system."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`isCADConnectionEnabled <abaqus.Session.SessionBase.SessionBase.isCADConnectionEnabled>`\\ \\(\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method checks the status of CAD Connection."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`disableCADConnection <abaqus.Session.SessionBase.SessionBase.disableCADConnection>`\\ \\(CADName\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method disables an associative import CAD connection that was enabled."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`enableParameterUpdate <abaqus.Session.SessionBase.SessionBase.enableParameterUpdate>`\\ \\(CADName\\, CADVersion\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method enables parameter updates for ProE and NX by establishing a connection with the listening port previously setup by the CAD application."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`setCADPortNumber <abaqus.Session.SessionBase.SessionBase.setCADPortNumber>`\\ \\(CADName\\, Port\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method enables parameter updates for CATIA V5 and CATIA V6 by establishing a connection with the listening port previously setup by the CAD application."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`updateCADParameters <abaqus.Session.SessionBase.SessionBase.updateCADParameters>`\\ \\(modelName\\, CADName\\, ...\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method updates the parameters for the specified model using the specified parameter file."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`disableParameterUpdate <abaqus.Session.SessionBase.SessionBase.disableParameterUpdate>`\\ \\(CADName\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method disables an associative CAD connection using parameters."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`printToFile <abaqus.Session.SessionBase.SessionBase.printToFile>`\\ \\(fileName\\[\\, format\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method prints canvas objects to a file using the attributes stored in the PrintOptions object and the appropriate format options object."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`printToPrinter <abaqus.Session.SessionBase.SessionBase.printToPrinter>`\\ \\(\\[printCommand\\, numCopies\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method prints canvas objects to a Windows printer or to a PostScript printer."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`saveOptions <abaqus.Session.SessionBase.SessionBase.saveOptions>`\\ \\(directory\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method saves your customized display settings."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`writeVrmlFile <abaqus.Session.SessionBase.SessionBase.writeVrmlFile>`\\ \\(fileName\\[\\, format\\, canvasObjects\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method exports the current viewport objects to a file."
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`write3DXMLFile <abaqus.Session.SessionBase.SessionBase.write3DXMLFile>`\\ \\(fileName\\[\\, format\\, canvasObjects\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`writeOBJFile <abaqus.Session.SessionBase.SessionBase.writeOBJFile>`\\ \\(fileName\\[\\, canvasObjects\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid ":py:obj:`openOdb <abaqus.Session.SessionBase.SessionBase.openOdb>`\\ \\(name\\[\\, path\\, readOnly\\]\\)"
+msgstr ""
+
+#: ../../None:17:<autosummary>:1
+msgid "This method opens an existing output database (`.odb`) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::."
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:4
@@ -145,11 +826,6 @@ msgstr ""
 msgid "A SymbolicConstant indicating whether to obtain the values from the specified frame or from all active frames. Possible values are SPECIFY and ALL. The default value is SPECIFY."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:1
-#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:1
-msgid "This method writes a FreeBody object to a user-defined ASCII file."
-msgstr ""
-
 #: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:9
 msgid "Check `FieldReportSession.writeFreeBodyReport on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldreportsessionpyc.htm?contextscope=all#simaker-fieldreportsessionwritefreebodyreportpyc>`__."
 msgstr ""
@@ -179,12 +855,18 @@ msgstr ""
 msgid "An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read."
 msgstr ""
 
-#: ../../reference/session/field_report.rst:16
-msgid "Object features"
+#: ../../reference/session/field_report.rst:20
+msgid "Classes"
 msgstr ""
 
-#: ../../reference/session/field_report.rst:19
+#: ../../reference/session/field_report.rst:23
 msgid "FieldReportOptions"
+msgstr ""
+
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:1
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:1
+#: ../../../../src/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:1
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:1
@@ -202,10 +884,6 @@ msgstr ""
 msgid "Check `FieldReportOptions on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldreportoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:0
-msgid "Public Data Attributes:"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`numberFormat <abaqus.FieldReport.FieldReportOptions.FieldReportOptions.numberFormat>`\\"
 msgstr ""
@@ -213,12 +891,6 @@ msgstr ""
 #: ../../None:3:<autosummary>:1
 #: ../../docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.numberFormat:1
 msgid "Format of the number"
-msgstr ""
-
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:0
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:0
-#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:0
-msgid "Public Methods:"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -327,15 +999,11 @@ msgstr ""
 msgid "The `printLocalCSYS` argument was added."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:38
-msgid "A :py:class:`~abaqus.FieldReport.FieldReportOptions.FieldReportOptions` object."
-msgstr ""
-
 #: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:39
 msgid ":class:`FieldReportOptions`"
 msgstr ""
 
-#: ../../reference/session/field_report.rst:27
+#: ../../reference/session/field_report.rst:33
 msgid "FreeBodyReportOptions"
 msgstr ""
 
@@ -384,16 +1052,16 @@ msgstr ""
 msgid "A SymbolicConstant specifying the coordinate system type. Possible values are GLOBAL and LOCAL. The default value is GLOBAL."
 msgstr ""
 
-#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:22
-msgid "A :py:class:`~abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions` object."
-msgstr ""
-
 #: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:23
 msgid ":class:`FreeBodyReportOptions`"
 msgstr ""
 
-#: ../../reference/session/field_report.rst:35
+#: ../../reference/session/field_report.rst:43
 msgid "OdbFieldVarList"
+msgstr ""
+
+#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:1
+msgid "Bases: :py:class:`~typing.List`\\ [:py:class:`str`]"
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:1
@@ -405,7 +1073,7 @@ msgid "Check `OdbFieldVarList on help.3ds.com/2023 <https://help.3ds.com/2023/En
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__repr__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__repr__>`\\ \\(\\)"
+msgid ":py:obj:`__repr__ <builtins.list.__repr__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -413,7 +1081,7 @@ msgid "Return repr(self)."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__getattribute__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__getattribute__>`\\ \\(name\\, \\/\\)"
+msgid ":py:obj:`__getattribute__ <builtins.list.__getattribute__>`\\ \\(name\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -421,7 +1089,7 @@ msgid "Return getattr(self, name)."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__lt__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__lt__>`\\ \\(value\\, \\/\\)"
+msgid ":py:obj:`__lt__ <builtins.list.__lt__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -429,7 +1097,7 @@ msgid "Return self<value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__le__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__le__>`\\ \\(value\\, \\/\\)"
+msgid ":py:obj:`__le__ <builtins.list.__le__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -437,7 +1105,7 @@ msgid "Return self<=value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__eq__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__eq__>`\\ \\(value\\, \\/\\)"
+msgid ":py:obj:`__eq__ <builtins.list.__eq__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -445,7 +1113,7 @@ msgid "Return self==value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__ne__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__ne__>`\\ \\(value\\, \\/\\)"
+msgid ":py:obj:`__ne__ <builtins.list.__ne__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -453,7 +1121,7 @@ msgid "Return self!=value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__gt__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__gt__>`\\ \\(value\\, \\/\\)"
+msgid ":py:obj:`__gt__ <builtins.list.__gt__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -461,7 +1129,7 @@ msgid "Return self>value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__ge__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__ge__>`\\ \\(value\\, \\/\\)"
+msgid ":py:obj:`__ge__ <builtins.list.__ge__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -469,7 +1137,7 @@ msgid "Return self>=value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__iter__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__iter__>`\\ \\(\\)"
+msgid ":py:obj:`__iter__ <builtins.list.__iter__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -477,11 +1145,11 @@ msgid "Implement iter(self)."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__init__>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`__init__ <builtins.list.__init__>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__len__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__len__>`\\ \\(\\)"
+msgid ":py:obj:`__len__ <builtins.list.__len__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -489,7 +1157,7 @@ msgid "Return len(self)."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__getitem__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__getitem__>`\\"
+msgid ":py:obj:`__getitem__ <builtins.list.__getitem__>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -497,7 +1165,7 @@ msgid "x.__getitem__(y) <==> x[y]"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__setitem__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__setitem__>`\\ \\(key\\, value\\, \\/\\)"
+msgid ":py:obj:`__setitem__ <builtins.list.__setitem__>`\\ \\(key\\, value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -505,7 +1173,7 @@ msgid "Set self[key] to value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__delitem__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__delitem__>`\\ \\(key\\, \\/\\)"
+msgid ":py:obj:`__delitem__ <builtins.list.__delitem__>`\\ \\(key\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -513,7 +1181,7 @@ msgid "Delete self[key]."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__add__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__add__>`\\ \\(value\\, \\/\\)"
+msgid ":py:obj:`__add__ <builtins.list.__add__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -521,7 +1189,7 @@ msgid "Return self+value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__mul__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__mul__>`\\ \\(value\\, \\/\\)"
+msgid ":py:obj:`__mul__ <builtins.list.__mul__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -529,7 +1197,7 @@ msgid "Return self*value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__rmul__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__rmul__>`\\ \\(value\\, \\/\\)"
+msgid ":py:obj:`__rmul__ <builtins.list.__rmul__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -537,7 +1205,7 @@ msgid "Return value*self."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__contains__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__contains__>`\\ \\(key\\, \\/\\)"
+msgid ":py:obj:`__contains__ <builtins.list.__contains__>`\\ \\(key\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -545,7 +1213,7 @@ msgid "Return key in self."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__iadd__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__iadd__>`\\ \\(value\\, \\/\\)"
+msgid ":py:obj:`__iadd__ <builtins.list.__iadd__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -553,7 +1221,7 @@ msgid "Implement self+=value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__imul__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__imul__>`\\ \\(value\\, \\/\\)"
+msgid ":py:obj:`__imul__ <builtins.list.__imul__>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -561,7 +1229,7 @@ msgid "Implement self*=value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__reversed__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__reversed__>`\\ \\(\\)"
+msgid ":py:obj:`__reversed__ <builtins.list.__reversed__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -569,7 +1237,7 @@ msgid "Return a reverse iterator over the list."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`__sizeof__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__sizeof__>`\\ \\(\\)"
+msgid ":py:obj:`__sizeof__ <builtins.list.__sizeof__>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -577,7 +1245,7 @@ msgid "Return the size of the list in memory, in bytes."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`clear <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.clear>`\\ \\(\\)"
+msgid ":py:obj:`clear <builtins.list.clear>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -585,7 +1253,7 @@ msgid "Remove all items from list."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`copy <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.copy>`\\ \\(\\)"
+msgid ":py:obj:`copy <builtins.list.copy>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -593,7 +1261,7 @@ msgid "Return a shallow copy of the list."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`append <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.append>`\\ \\(object\\, \\/\\)"
+msgid ":py:obj:`append <builtins.list.append>`\\ \\(object\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -601,7 +1269,7 @@ msgid "Append object to the end of the list."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`insert <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.insert>`\\ \\(index\\, object\\, \\/\\)"
+msgid ":py:obj:`insert <builtins.list.insert>`\\ \\(index\\, object\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -609,7 +1277,7 @@ msgid "Insert object before index."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`extend <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.extend>`\\ \\(iterable\\, \\/\\)"
+msgid ":py:obj:`extend <builtins.list.extend>`\\ \\(iterable\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -617,7 +1285,7 @@ msgid "Extend list by appending elements from the iterable."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`pop <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.pop>`\\ \\(\\[index\\]\\)"
+msgid ":py:obj:`pop <builtins.list.pop>`\\ \\(\\[index\\]\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -625,7 +1293,7 @@ msgid "Remove and return item at index (default last)."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`remove <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.remove>`\\ \\(value\\, \\/\\)"
+msgid ":py:obj:`remove <builtins.list.remove>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -633,7 +1301,7 @@ msgid "Remove first occurrence of value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`index <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.index>`\\ \\(value\\[\\, start\\, stop\\]\\)"
+msgid ":py:obj:`index <builtins.list.index>`\\ \\(value\\[\\, start\\, stop\\]\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -641,7 +1309,7 @@ msgid "Return first index of value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`count <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.count>`\\ \\(value\\, \\/\\)"
+msgid ":py:obj:`count <builtins.list.count>`\\ \\(value\\, \\/\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -649,7 +1317,7 @@ msgid "Return number of occurrences of value."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`reverse <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.reverse>`\\ \\(\\)"
+msgid ":py:obj:`reverse <builtins.list.reverse>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -657,7 +1325,7 @@ msgid "Reverse *IN PLACE*."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-msgid ":py:obj:`sort <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.sort>`\\ \\(\\*\\[\\, key\\, reverse\\]\\)"
+msgid ":py:obj:`sort <builtins.list.sort>`\\ \\(\\*\\[\\, key\\, reverse\\]\\)"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
@@ -665,17 +1333,19 @@ msgid "Sort the list in ascending order and return None."
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`__class_getitem__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__class_getitem__>`\\"
+msgid ":py:obj:`__class_getitem__ <builtins.list.__class_getitem__>`\\"
 msgstr ""
 
 #: ../../None:36:<autosummary>:1
-#: ../../None:4:<autosummary>:1
 msgid "See PEP 585"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ":py:obj:`__init_subclass__ <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList.__init_subclass__>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
+msgid ":py:obj:`__class_getitem__ <typing.Generic.__class_getitem__>`\\ \\(params\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init_subclass__ <typing.Generic.__init_subclass__>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -687,10 +1357,10 @@ msgid "Private Data Attributes:"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-msgid ":py:obj:`_is_protocol <abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList._is_protocol>`\\"
+msgid ":py:obj:`_is_protocol <typing.Generic._is_protocol>`\\"
 msgstr ""
 
-#: ../../reference/session/field_report.rst:43
+#: ../../reference/session/field_report.rst:53
 msgid "OdbModelFieldVarList"
 msgstr ""
 
@@ -702,7 +1372,7 @@ msgstr ""
 msgid "Check `OdbModelFieldVarList on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbmodelfieldvarlistpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/session/field_report.rst:51
+#: ../../reference/session/field_report.rst:63
 msgid "writeFieldReport"
 msgstr ""
 
@@ -718,7 +1388,7 @@ msgstr ""
 msgid "A sequence of variable description sequences specifying one or more field output variables for which to obtain data. Each variable description sequence contains the following elements:  - **element0**: A String specifying the name of the variable. - **element1**: A SymbolicConstant specifying the output position at which to report data.   Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE,   INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and   WHOLE_REGION. - **element2**: A Sequence of tuples each consisting of a SymbolicConstant specifying the   refinement (COMPONENT or INVARIANT), followed by a String specifying the name of a   component or invariant for which to obtain values.   If this element is omitted, data are written for all components and invariants (if   applicable). This element is required if **element3** (the following element in the tuple)   is included. - **element3 (if applicable)**: A Dictionary with a String key and a String value   specifying a single section point at which to report data. The key specifies a region in   the model; the corresponding value specifies a section point within that region. For   example::      {'shell < MAT > < 7 section points >': 'SPOS (fraction = 1.0)'}    If this element is omitted, data are written for all section points (if applicable).   If this element is omitted, data are written for all section points (if applicable)."
 msgstr ""
 
-#: ../../reference/session/field_report.rst:57
+#: ../../reference/session/field_report.rst:71
 msgid "writeFreeBodyReport"
 msgstr ""
 

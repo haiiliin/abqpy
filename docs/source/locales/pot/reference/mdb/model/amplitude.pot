@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-04 14:03+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../reference/mdb/model/amplitude.rst:3
-#: ../../reference/mdb/model/amplitude.rst:32
+#: ../../reference/mdb/model/amplitude.rst:36
 msgid "Amplitude"
 msgstr ""
 
@@ -31,6 +31,10 @@ msgstr ""
 
 #: ../../reference/mdb/model/amplitude.rst:11
 msgid "In Mdb"
+msgstr ""
+
+#: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel:1
+msgid "Bases: :py:class:`~abaqus.Model.ModelBase.ModelBase`"
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel:1
@@ -78,9 +82,10 @@ msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.name>`\\"
+msgid ":py:obj:`name <abaqus.Model.ModelBase.ModelBase.name>`\\"
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.__init__:13
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ActuatorAmplitude:13
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude:13
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude:13
@@ -101,6 +106,15 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude:13
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:13
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude:13
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.__init__:13
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.__init__:13
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:13
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.__init__:13
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:13
+#: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.__init__:13
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.__init__:13
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:13
+#: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.__init__:13
 #: ../../None:4:<autosummary>:1
 #: ../../None:55:<autosummary>:1
 #: ../../None:6:<autosummary>:1
@@ -110,7 +124,7 @@ msgid "A String specifying the repository key."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`stefanBoltzmann <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.stefanBoltzmann>`\\"
+msgid ":py:obj:`stefanBoltzmann <abaqus.Model.ModelBase.ModelBase.stefanBoltzmann>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -118,7 +132,7 @@ msgid "None or a Float specifying the Stefan-Boltzmann constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`absoluteZero <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.absoluteZero>`\\"
+msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -126,7 +140,7 @@ msgid "None or a Float specifying the absolute zero constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`waveFormulation <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.waveFormulation>`\\"
+msgid ":py:obj:`waveFormulation <abaqus.Model.ModelBase.ModelBase.waveFormulation>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -134,7 +148,7 @@ msgid "A SymbolicConstant specifying the type of incident wave formulation to be
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`universalGas <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.universalGas>`\\"
+msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -142,7 +156,7 @@ msgid "None or a Float specifying the universal gas constant."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`noPartsInputFile <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.noPartsInputFile>`\\"
+msgid ":py:obj:`noPartsInputFile <abaqus.Model.ModelBase.ModelBase.noPartsInputFile>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -150,7 +164,7 @@ msgid "A Boolean specifying whether an input file should be written without part
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`restartIncrement <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.restartIncrement>`\\"
+msgid ":py:obj:`restartIncrement <abaqus.Model.ModelBase.ModelBase.restartIncrement>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -158,7 +172,7 @@ msgid "An Int specifying the increment, interval, iteration or cycle where the r
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`endRestartStep <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.endRestartStep>`\\"
+msgid ":py:obj:`endRestartStep <abaqus.Model.ModelBase.ModelBase.endRestartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -166,7 +180,7 @@ msgid "A Boolean specifying that the step specified by **restartStep** should be
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`shellToSolid <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.shellToSolid>`\\"
+msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -174,7 +188,7 @@ msgid "A Boolean specifying that a shell global model drives a solid submodel."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`lastChangedCount <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.lastChangedCount>`\\"
+msgid ":py:obj:`lastChangedCount <abaqus.Model.ModelBase.ModelBase.lastChangedCount>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -182,7 +196,7 @@ msgid "A Float specifying the time stamp that indicates when the model was last 
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`description <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.description>`\\"
+msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -190,7 +204,7 @@ msgid "A String specifying the purpose and contents of the Model object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`restartJob <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.restartJob>`\\"
+msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -198,7 +212,7 @@ msgid "A String specifying the name of the job that generated the restart data."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`restartStep <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.restartStep>`\\"
+msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -206,7 +220,7 @@ msgid "A String specifying the name of the step where the restart analysis will 
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`globalJob <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.globalJob>`\\"
+msgid ":py:obj:`globalJob <abaqus.Model.ModelBase.ModelBase.globalJob>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -214,7 +228,7 @@ msgid "A String specifying the name of the job that generated the results for th
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`copyConstraints <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.copyConstraints>`\\"
+msgid ":py:obj:`copyConstraints <abaqus.Model.ModelBase.ModelBase.copyConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -222,7 +236,7 @@ msgid "A boolean specifying the status of constraints created in a model, in the
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`copyConnectors <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.copyConnectors>`\\"
+msgid ":py:obj:`copyConnectors <abaqus.Model.ModelBase.ModelBase.copyConnectors>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -230,7 +244,7 @@ msgid "A boolean specifying the status of connectors created in a model, in the 
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`copyInteractions <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.copyInteractions>`\\"
+msgid ":py:obj:`copyInteractions <abaqus.Model.ModelBase.ModelBase.copyInteractions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -238,7 +252,7 @@ msgid "A boolean specifying the status of interactions created in a model, in th
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`keywordBlock <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.keywordBlock>`\\"
+msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -246,7 +260,7 @@ msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`rootAssembly <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.rootAssembly>`\\"
+msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -254,7 +268,7 @@ msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`amplitudes <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.amplitudes>`\\"
+msgid ":py:obj:`amplitudes <abaqus.Model.ModelBase.ModelBase.amplitudes>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -263,7 +277,7 @@ msgid "A repository of Amplitude objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`profiles <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.profiles>`\\"
+msgid ":py:obj:`profiles <abaqus.Model.ModelBase.ModelBase.profiles>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -272,7 +286,7 @@ msgid "A repository of Profile objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`boundaryConditions <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.boundaryConditions>`\\"
+msgid ":py:obj:`boundaryConditions <abaqus.Model.ModelBase.ModelBase.boundaryConditions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -280,7 +294,7 @@ msgid "A repository of BoundaryCondition objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`constraints <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.constraints>`\\"
+msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -288,7 +302,7 @@ msgid "A repository of ConstrainedSketchConstraint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`analyticalFields <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.analyticalFields>`\\"
+msgid ":py:obj:`analyticalFields <abaqus.Model.ModelBase.ModelBase.analyticalFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -296,7 +310,7 @@ msgid "A repository of AnalyticalField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`discreteFields <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.discreteFields>`\\"
+msgid ":py:obj:`discreteFields <abaqus.Model.ModelBase.ModelBase.discreteFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -304,7 +318,7 @@ msgid "A repository of DiscreteField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`predefinedFields <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.predefinedFields>`\\"
+msgid ":py:obj:`predefinedFields <abaqus.Model.ModelBase.ModelBase.predefinedFields>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -312,7 +326,7 @@ msgid "A repository of PredefinedField objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`interactions <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.interactions>`\\"
+msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -320,7 +334,7 @@ msgid "A repository of Interaction objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`interactionProperties <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.interactionProperties>`\\"
+msgid ":py:obj:`interactionProperties <abaqus.Model.ModelBase.ModelBase.interactionProperties>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -328,7 +342,7 @@ msgid "A repository of InteractionProperty objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`contactControls <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.contactControls>`\\"
+msgid ":py:obj:`contactControls <abaqus.Model.ModelBase.ModelBase.contactControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -336,7 +350,7 @@ msgid "A repository of ContactControl objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`contactInitializations <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.contactInitializations>`\\"
+msgid ":py:obj:`contactInitializations <abaqus.Model.ModelBase.ModelBase.contactInitializations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -344,7 +358,7 @@ msgid "A repository of ContactInitialization objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`contactStabilizations <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.contactStabilizations>`\\"
+msgid ":py:obj:`contactStabilizations <abaqus.Model.ModelBase.ModelBase.contactStabilizations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -352,7 +366,7 @@ msgid "A repository of ContactStabilization objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`linkedInstances <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.linkedInstances>`\\"
+msgid ":py:obj:`linkedInstances <abaqus.Model.ModelBase.ModelBase.linkedInstances>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -360,7 +374,7 @@ msgid "A tuple of tuples of Strings specifying the linked child PartInstance nam
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`linkedParts <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.linkedParts>`\\"
+msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -368,7 +382,7 @@ msgid "A tuple of tuples of Strings specifying the linked child Part name in the
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`loads <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.loads>`\\"
+msgid ":py:obj:`loads <abaqus.Model.ModelBase.ModelBase.loads>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -376,7 +390,7 @@ msgid "A repository of Load objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`materials <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.materials>`\\"
+msgid ":py:obj:`materials <abaqus.Model.ModelBase.ModelBase.materials>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -385,7 +399,7 @@ msgid "A repository of Material objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`calibrations <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.calibrations>`\\"
+msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -393,7 +407,7 @@ msgid "A repository of Calibration objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`sections <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.sections>`\\"
+msgid ":py:obj:`sections <abaqus.Model.ModelBase.ModelBase.sections>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -402,7 +416,7 @@ msgid "A repository of Section objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`remeshingRules <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.remeshingRules>`\\"
+msgid ":py:obj:`remeshingRules <abaqus.Model.ModelBase.ModelBase.remeshingRules>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -410,7 +424,7 @@ msgid "A repository of RemeshingRule objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`sketches <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.sketches>`\\"
+msgid ":py:obj:`sketches <abaqus.Model.ModelBase.ModelBase.sketches>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -418,7 +432,7 @@ msgid "A repository of ConstrainedSketch objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`parts <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.parts>`\\"
+msgid ":py:obj:`parts <abaqus.Model.ModelBase.ModelBase.parts>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -426,7 +440,7 @@ msgid "A repository of Part objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`steps <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.steps>`\\"
+msgid ":py:obj:`steps <abaqus.Model.ModelBase.ModelBase.steps>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -434,7 +448,7 @@ msgid "A repository of Step objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`featureOptions <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.featureOptions>`\\"
+msgid ":py:obj:`featureOptions <abaqus.Model.ModelBase.ModelBase.featureOptions>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -442,7 +456,7 @@ msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`adaptiveMeshConstraints <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.adaptiveMeshConstraints>`\\"
+msgid ":py:obj:`adaptiveMeshConstraints <abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -450,7 +464,7 @@ msgid "A repository of AdaptiveMeshConstraint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`adaptiveMeshControls <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.adaptiveMeshControls>`\\"
+msgid ":py:obj:`adaptiveMeshControls <abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -458,7 +472,7 @@ msgid "A repository of AdaptiveMeshControl objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`timePoints <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.timePoints>`\\"
+msgid ":py:obj:`timePoints <abaqus.Model.ModelBase.ModelBase.timePoints>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -466,7 +480,7 @@ msgid "A repository of TimePoint objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`filters <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.filters>`\\"
+msgid ":py:obj:`filters <abaqus.Model.ModelBase.ModelBase.filters>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -475,7 +489,7 @@ msgid "A repository of Filter objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`integratedOutputSections <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.integratedOutputSections>`\\"
+msgid ":py:obj:`integratedOutputSections <abaqus.Model.ModelBase.ModelBase.integratedOutputSections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -483,7 +497,7 @@ msgid "A repository of IntegratedOutputSection objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`fieldOutputRequests <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.fieldOutputRequests>`\\"
+msgid ":py:obj:`fieldOutputRequests <abaqus.Model.ModelBase.ModelBase.fieldOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -491,7 +505,7 @@ msgid "A repository of FieldOutputRequest objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`historyOutputRequests <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.historyOutputRequests>`\\"
+msgid ":py:obj:`historyOutputRequests <abaqus.Model.ModelBase.ModelBase.historyOutputRequests>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -499,7 +513,7 @@ msgid "A repository of HistoryOutputRequest objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`optimizationTasks <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.optimizationTasks>`\\"
+msgid ":py:obj:`optimizationTasks <abaqus.Model.ModelBase.ModelBase.optimizationTasks>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -507,7 +521,7 @@ msgid "A repository of OptimizationTask objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`tableCollections <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.tableCollections>`\\"
+msgid ":py:obj:`tableCollections <abaqus.Model.ModelBase.ModelBase.tableCollections>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -515,7 +529,7 @@ msgid "A repository of TableCollection objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`eventSeriesTypes <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.eventSeriesTypes>`\\"
+msgid ":py:obj:`eventSeriesTypes <abaqus.Model.ModelBase.ModelBase.eventSeriesTypes>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -523,7 +537,7 @@ msgid "A repository of EventSeriesType objects."
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
-msgid ":py:obj:`eventSeriesDatas <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.eventSeriesDatas>`\\"
+msgid ":py:obj:`eventSeriesDatas <abaqus.Model.ModelBase.ModelBase.eventSeriesDatas>`\\"
 msgstr ""
 
 #: ../../None:55:<autosummary>:1
@@ -550,6 +564,7 @@ msgstr ""
 msgid ":py:obj:`ActuatorAmplitude <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ActuatorAmplitude>`\\ \\(name\\[\\, timeSpan\\]\\)"
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.__init__:1
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ActuatorAmplitude:1
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ActuatorAmplitude:1
 #: ../../None:12:<autosummary>:1
@@ -563,6 +578,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude:1
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.DecayAmplitude:1
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.__init__:1
 #: ../../None:12:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a DecayAmplitude object."
@@ -574,6 +590,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude:1
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.EquallySpacedAmplitude:1
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.__init__:1
 #: ../../None:12:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates an EquallySpacedAmplitude object."
@@ -585,6 +602,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ModulatedAmplitude:1
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ModulatedAmplitude:1
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:1
 #: ../../None:12:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a ModulatedAmplitude object."
@@ -596,6 +614,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PeriodicAmplitude:1
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PeriodicAmplitude:1
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.__init__:1
 #: ../../None:12:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a PeriodicAmplitude object."
@@ -607,6 +626,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PsdDefinition:1
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PsdDefinition:1
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:1
 #: ../../None:12:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a PsdDefinition object."
@@ -618,6 +638,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SmoothStepAmplitude:1
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SmoothStepAmplitude:1
+#: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.__init__:1
 #: ../../None:12:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a SmoothStepAmplitude object."
@@ -629,6 +650,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SolutionDependentAmplitude:1
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude:1
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.__init__:1
 #: ../../None:12:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a SolutionDependentAmplitude object."
@@ -640,6 +662,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude:1
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:1
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:1
 #: ../../None:12:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a SpectrumAmplitude object."
@@ -651,13 +674,14 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.TabularAmplitude:1
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude:1
+#: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.__init__:1
 #: ../../None:12:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a TabularAmplitude object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.__init__>`\\ \\(name\\[\\, description\\, ...\\]\\)"
+msgid ":py:obj:`__init__ <abaqus.Model.ModelBase.ModelBase.__init__>`\\ \\(name\\[\\, description\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -665,7 +689,7 @@ msgid "This method creates a Model object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`ModelFromInputFile <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ModelFromInputFile>`\\ \\(name\\, inputFileName\\)"
+msgid ":py:obj:`ModelFromInputFile <abaqus.Model.ModelBase.ModelBase.ModelFromInputFile>`\\ \\(name\\, inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -673,7 +697,7 @@ msgid "This method creates a Model object by reading the keywords in an input fi
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`ModelFromOdbFile <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ModelFromOdbFile>`\\ \\(name\\, odbFileName\\)"
+msgid ":py:obj:`ModelFromOdbFile <abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile>`\\ \\(name\\, odbFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -681,7 +705,7 @@ msgid "This method creates a Model object by reading an output database and crea
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`ModelFromNastranFile <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ModelFromNastranFile>`\\ \\(modelName\\, inputFileName\\)"
+msgid ":py:obj:`ModelFromNastranFile <abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ \\(modelName\\, inputFileName\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -689,13 +713,14 @@ msgid "This method creates a Model object by reading the keywords in a Nastran b
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`setValues <abaqus.Amplitude.AmplitudeModel.AmplitudeModel.setValues>`\\ \\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
+msgid ":py:obj:`setValues <abaqus.Model.ModelBase.ModelBase.setValues>`\\ \\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid "This method modifies the Model object."
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.__init__:4
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ActuatorAmplitude:4
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude:4
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude:4
@@ -716,6 +741,16 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude:4
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:4
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude:4
+#: ../../../../src/abaqus/Amplitude/BaselineCorrection.py:docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection.__init__:4
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.__init__:4
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.__init__:4
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:4
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.__init__:4
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:4
+#: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.__init__:4
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.__init__:4
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:4
+#: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.__init__:4
 msgid "This function can be accessed by::"
 msgstr ""
 
@@ -725,6 +760,7 @@ msgstr ""
 msgid "Check `ActuatorAmplitude on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-actuatoramplitudepyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.setValues:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ActuatorAmplitude:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude:0
@@ -746,18 +782,29 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude:0
+#: ../../../../src/abaqus/Amplitude/BaselineCorrection.py:docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection.__init__:0
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.setValues:0
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.setValues:0
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.setValues:0
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.setValues:0
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:0
 #: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues:0
+#: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.setValues:0
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues:0
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues:0
+#: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.setValues:0
 msgid "Parameters"
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.__init__:15
 #: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.setValues:7
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ActuatorAmplitude:15
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude:23
@@ -779,14 +826,23 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude:24
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:45
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude:23
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.__init__:23
 #: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.setValues:7
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.__init__:28
 #: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.setValues:15
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:27
 #: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.setValues:7
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.__init__:23
 #: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.setValues:7
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:33
 #: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues:21
+#: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.__init__:18
 #: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.setValues:7
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.__init__:24
 #: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues:16
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:45
 #: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues:31
+#: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.__init__:23
 #: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.setValues:12
 #: ../../docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.timeSpan:1
 #: ../../docstring of abaqus.Amplitude.Amplitude.Amplitude.timeSpan:1
@@ -803,6 +859,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP and TOTAL. The default value is STEP."
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ActuatorAmplitude:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude:0
@@ -823,14 +880,26 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude:0
+#: ../../../../src/abaqus/Amplitude/BaselineCorrection.py:docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection.__init__:0
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.__init__:0
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.__init__:0
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:0
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.__init__:0
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:0
+#: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.__init__:0
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.__init__:0
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:0
+#: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.__init__:0
 msgid "Returns"
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.__init__:18
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ActuatorAmplitude:18
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ActuatorAmplitude:18
 msgid "An :py:class:`~abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude` object."
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ActuatorAmplitude:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude:0
@@ -851,14 +920,26 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude:0
+#: ../../../../src/abaqus/Amplitude/BaselineCorrection.py:docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection.__init__:0
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.__init__:0
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.__init__:0
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:0
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.__init__:0
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:0
+#: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.__init__:0
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.__init__:0
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:0
+#: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.__init__:0
 msgid "Return type"
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.__init__:19
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ActuatorAmplitude:19
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ActuatorAmplitude:19
 msgid ":class:`ActuatorAmplitude`"
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.setValues:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ActuatorAmplitude:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude:0
@@ -880,15 +961,25 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:0
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude:0
+#: ../../../../src/abaqus/Amplitude/BaselineCorrection.py:docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection.__init__:0
 #: ../../../../src/abaqus/Amplitude/BaselineCorrection.py:docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection.setValues:0
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.setValues:0
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.setValues:0
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.setValues:0
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.setValues:0
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:0
 #: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues:0
+#: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.setValues:0
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues:0
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues:0
+#: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.__init__:0
 #: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.setValues:0
 msgid "Raises"
 msgstr ""
@@ -905,6 +996,9 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.DecayAmplitude:15
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ModulatedAmplitude:15
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PeriodicAmplitude:19
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.__init__:15
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:15
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.__init__:19
 #: ../../docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.initial:1
 #: ../../docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.initial:1
 #: ../../docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.a_0:1
@@ -915,6 +1009,8 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ModulatedAmplitude:17
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.DecayAmplitude:17
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ModulatedAmplitude:17
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.__init__:17
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:17
 #: ../../docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.maximum:1
 #: ../../docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.magnitude:1
 msgid "A Float specifying the coefficient AA."
@@ -924,6 +1020,8 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ModulatedAmplitude:19
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.DecayAmplitude:19
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ModulatedAmplitude:19
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.__init__:19
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:19
 #: ../../docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.start:1
 #: ../../docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.start:1
 msgid "A Float specifying the starting time t0t0. Possible values are non-negative numbers."
@@ -931,17 +1029,20 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude:21
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.DecayAmplitude:21
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.__init__:21
 #: ../../docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.decayTime:1
 msgid "A Float specifying the decay time tdtd. Possible values are non-negative numbers."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude:26
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.DecayAmplitude:26
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.__init__:26
 msgid "A :py:class:`~abaqus.Amplitude.DecayAmplitude.DecayAmplitude` object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.DecayAmplitude:27
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.DecayAmplitude:27
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.__init__:27
 msgid ":class:`DecayAmplitude`"
 msgstr ""
 
@@ -953,18 +1054,21 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude:15
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.EquallySpacedAmplitude:15
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.__init__:15
 #: ../../docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.fixedInterval:1
 msgid "A Float specifying the fixed time interval at which the amplitude data are given. Possible values are positive numbers."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude:18
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.EquallySpacedAmplitude:18
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.__init__:18
 #: ../../docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.data:1
 msgid "A sequence of Floats specifying the amplitude values."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude:20
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.EquallySpacedAmplitude:20
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.__init__:20
 #: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.setValues:7
 #: ../../docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.begin:1
 msgid "A Float specifying the time at which the first amplitude data are given. Possible values are non-negative numbers. The default value is 0.0."
@@ -972,6 +1076,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude:23
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.EquallySpacedAmplitude:23
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.__init__:23
 #: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.setValues:10
 #: ../../docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.smooth:1
 msgid "The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing. Possible float values are 0 ≤ **smoothing** ≤ 0.5. If **smooth** = SOLVER_DEFAULT, the default degree of smoothing will be determined by the solver. The default value is SOLVER_DEFAULT."
@@ -979,11 +1084,13 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude:31
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.EquallySpacedAmplitude:31
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.__init__:31
 msgid "An :py:class:`~abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude` object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.EquallySpacedAmplitude:32
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.EquallySpacedAmplitude:32
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.__init__:32
 msgid ":class:`EquallySpacedAmplitude`"
 msgstr ""
 
@@ -995,23 +1102,27 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ModulatedAmplitude:21
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ModulatedAmplitude:21
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:21
 #: ../../docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.frequency1:1
 msgid "A Float specifying the circular frequency 1 (ω1ω1). Possible values are positive numbers."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ModulatedAmplitude:24
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ModulatedAmplitude:24
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:24
 #: ../../docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.frequency2:1
 msgid "A Float specifying the circular frequency 2 (ω2ω2). Possible values are positive numbers."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ModulatedAmplitude:30
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ModulatedAmplitude:30
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:30
 msgid "A :py:class:`~abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude` object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.ModulatedAmplitude:31
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.ModulatedAmplitude:31
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:31
 msgid ":class:`ModulatedAmplitude`"
 msgstr ""
 
@@ -1023,29 +1134,34 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PeriodicAmplitude:15
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PeriodicAmplitude:15
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.__init__:15
 #: ../../docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.frequency:1
 msgid "A Float specifying the circular frequency ωω. Possible values are positive numbers."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PeriodicAmplitude:17
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PeriodicAmplitude:17
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.__init__:17
 #: ../../docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.start:1
 msgid "A Float specifying the starting time t0t0. Possible values are positive numbers."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PeriodicAmplitude:21
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PeriodicAmplitude:21
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.__init__:21
 #: ../../docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.data:1
 msgid "A sequence of pairs of Floats specifying AiAi and BiBi pairs."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PeriodicAmplitude:26
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PeriodicAmplitude:26
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.__init__:26
 msgid "A :py:class:`~abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude` object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PeriodicAmplitude:27
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PeriodicAmplitude:27
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.__init__:27
 msgid ":class:`PeriodicAmplitude`"
 msgstr ""
 
@@ -1057,12 +1173,14 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PsdDefinition:15
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PsdDefinition:15
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:15
 #: ../../docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.data:1
 msgid "A sequence of sequences of Floats specifying the real part of the frequency function, the imaginary part of the frequency function, and the frequency or frequency band number values, depending on the value of **unitType**."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PsdDefinition:19
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PsdDefinition:19
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:19
 #: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues:7
 #: ../../docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.unitType:1
 msgid "A SymbolicConstant specifying the type of units for specifying the frequency function. FORCE implies power units. BASE implies gravity used to define base motion. DB implies decibel units. Possible values are FORCE, BASE, and DB. The default value is FORCE."
@@ -1070,6 +1188,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PsdDefinition:23
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PsdDefinition:23
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:23
 #: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues:11
 #: ../../docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.referenceGravityAcceleration:1
 msgid "A Float specifying the reference gravity acceleration. This argument applies when **unitType** = BASE. The default value is 1.0."
@@ -1077,6 +1196,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PsdDefinition:26
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PsdDefinition:26
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:26
 #: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues:14
 #: ../../docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.referenecePower:1
 msgid "A Float specifying the reference power value, in load units squared. This argument applies when **unitType** = DB. The default value is 0.0."
@@ -1084,6 +1204,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PsdDefinition:29
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PsdDefinition:29
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:29
 #: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues:17
 #: ../../docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.user:1
 msgid "A Boolean specifying whether the frequency function is defined in user subroutine UPSD. If specified, then **data** is not applicable, and the **unitType** value must not be DB. The default value is OFF."
@@ -1091,6 +1212,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PsdDefinition:36
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PsdDefinition:36
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:36
 #: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues:24
 #: ../../docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.amplitude:1
 msgid "A String specifying the name of the amplitude that describes the dynamic event used to define the cross-spectral density frequency function. The default value is an empty string."
@@ -1098,11 +1220,13 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PsdDefinition:40
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PsdDefinition:40
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:40
 msgid "A :py:class:`~abaqus.Amplitude.PsdDefinition.PsdDefinition` object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.PsdDefinition:41
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.PsdDefinition:41
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:41
 msgid ":class:`PsdDefinition`"
 msgstr ""
 
@@ -1116,6 +1240,8 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.TabularAmplitude:15
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SmoothStepAmplitude:15
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude:15
+#: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.__init__:15
+#: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.__init__:15
 #: ../../docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.data:1
 #: ../../docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.data:1
 msgid "A sequence of pairs of Floats specifying time/frequency and amplitude pairs. Possible values for time/frequency are positive numbers."
@@ -1123,11 +1249,13 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SmoothStepAmplitude:21
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SmoothStepAmplitude:21
+#: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.__init__:21
 msgid "A :py:class:`~abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude` object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SmoothStepAmplitude:22
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SmoothStepAmplitude:22
+#: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.__init__:22
 msgid ":class:`SmoothStepAmplitude`"
 msgstr ""
 
@@ -1139,6 +1267,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SolutionDependentAmplitude:15
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude:15
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.__init__:15
 #: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues:7
 #: ../../docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.initial:1
 msgid "A Float specifying the initial amplitude value. Possible values are those between **minimum** and **maximum**. The default value is 1.0."
@@ -1146,6 +1275,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SolutionDependentAmplitude:18
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude:18
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.__init__:18
 #: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues:10
 #: ../../docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.minimum:1
 msgid "A Float specifying the minimum amplitude value. Possible values are those smaller than **maximum** and **initial**. The default value is 0.1."
@@ -1153,6 +1283,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SolutionDependentAmplitude:21
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude:21
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.__init__:21
 #: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues:13
 #: ../../docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.maximum:1
 msgid "A Float specifying the maximum amplitude value. Possible values are those larger than **minimum** and **initial**. The default value is 1000.0."
@@ -1160,11 +1291,13 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SolutionDependentAmplitude:27
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude:27
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.__init__:27
 msgid "A :py:class:`~abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude` object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SolutionDependentAmplitude:28
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SolutionDependentAmplitude:28
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.__init__:28
 msgid ":class:`SolutionDependentAmplitude`"
 msgstr ""
 
@@ -1176,18 +1309,21 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude:15
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:15
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:15
 #: ../../docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.method:1
 msgid "A SymbolicConstant specifying the method for specifying the spectrum. Possible values are DEFINE and CALCULATE."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude:18
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:18
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:18
 #: ../../docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.data:1
 msgid "A sequence of sequences of Floats specifying the magnitude, frequency, and damping values."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude:21
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:21
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:21
 #: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues:7
 #: ../../docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.specificationUnits:1
 msgid "A SymbolicConstant specifying the units used for specifying the spectrum. Possible values are DISPLACEMENT, VELOCITY, ACCELERATION, and GRAVITY. The default value is ACCELERATION."
@@ -1195,6 +1331,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude:25
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:25
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:25
 #: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues:11
 #: ../../docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.eventUnits:1
 msgid "A SymbolicConstant specifying the units used to describe the dynamic event in the amplitude used for the calculation. Possible values are EVENT_DISPLACEMENT, EVENT_VELOCITY, EVENT_ACCELERATION, and EVENT_GRAVITY. The default value is EVENT_ACCELERATION."
@@ -1202,6 +1339,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude:30
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:30
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:30
 #: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues:16
 #: ../../docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.solution:1
 msgid "A SymbolicConstant specifying the solution method for the dynamic equations. Possible values are ABSOLUTE_VALUE and RELATIVE_VALUE. The default value is ABSOLUTE_VALUE."
@@ -1209,6 +1347,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude:33
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:33
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:33
 #: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues:19
 #: ../../docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.timeIncrement:1
 msgid "A Float specifying the implicit time increment used to calculate the spectrum. This argument is required when the **method** = CALCULATE. The default value is 0.0."
@@ -1216,6 +1355,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude:36
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:36
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:36
 #: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues:22
 #: ../../docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.gravity:1
 msgid "A Float specifying the acceleration due to gravity. This argument applies only when **specificationUnits** = GRAVITY or*eventUnits* = GRAVITY. The default value is 1.0."
@@ -1223,6 +1363,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude:39
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:39
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:39
 #: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues:25
 #: ../../docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.criticalDamping:1
 msgid "A Boolean specifying whether to calculate the spectrum for only the specified range of critical damping values or a list of values. If **criticalDamping** = ON, the spectrum is calculated only for the specified range of critical damping values. If **criticalDamping** = OFF, the spectrum is calculated for a list of damping values. The default value is OFF."
@@ -1230,6 +1371,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude:48
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:48
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:48
 #: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues:34
 #: ../../docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.amplitude:1
 msgid "A String specifying the name of the amplitude that describes the dynamic event used to calculate the spectrum. The default value is an empty string."
@@ -1237,11 +1379,13 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude:51
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:51
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:51
 msgid "A :py:class:`~abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude` object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.SpectrumAmplitude:52
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.SpectrumAmplitude:52
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:52
 msgid ":class:`SpectrumAmplitude`"
 msgstr ""
 
@@ -1253,6 +1397,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.TabularAmplitude:18
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude:18
+#: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.__init__:18
 #: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.setValues:7
 #: ../../docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.smooth:1
 msgid "The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing. Possible float values are between 0 and 0.5. If **smooth** = SOLVER_DEFAULT, the default degree of smoothing will be determined by the solver. The default value is SOLVER_DEFAULT."
@@ -1260,16 +1405,22 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.TabularAmplitude:26
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude:26
+#: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.__init__:26
 msgid "A :py:class:`~abaqus.Amplitude.TabularAmplitude.TabularAmplitude` object."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel.TabularAmplitude:27
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.TabularAmplitude:27
+#: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.__init__:27
 msgid ":class:`TabularAmplitude`"
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:20
+#: ../../reference/mdb/model/amplitude.rst:22
 msgid "In Odb"
+msgstr ""
+
+#: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb:1
+msgid "Bases: :py:class:`~abaqus.Odb.OdbBase.OdbBase`"
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb:1
@@ -1281,7 +1432,7 @@ msgid "Check `AmplitudeOdb on help.3ds.com/2023 <https://help.3ds.com/2023/Engli
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`isReadOnly <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.isReadOnly>`\\"
+msgid ":py:obj:`isReadOnly <abaqus.Odb.OdbBase.OdbBase.isReadOnly>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -1289,15 +1440,15 @@ msgid "A Boolean specifying whether the output database was opened with read-onl
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`amplitudes <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.amplitudes>`\\"
+msgid ":py:obj:`amplitudes <abaqus.Odb.OdbBase.OdbBase.amplitudes>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`filters <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.filters>`\\"
+msgid ":py:obj:`filters <abaqus.Odb.OdbBase.OdbBase.filters>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`rootAssembly <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.rootAssembly>`\\"
+msgid ":py:obj:`rootAssembly <abaqus.Odb.OdbBase.OdbBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -1305,7 +1456,7 @@ msgid "An :py:class:`~abaqus.Odb.OdbAssembly.OdbAssembly` object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`jobData <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.jobData>`\\"
+msgid ":py:obj:`jobData <abaqus.Odb.OdbBase.OdbBase.jobData>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -1313,7 +1464,7 @@ msgid "A :py:class:`~abaqus.Odb.JobData.JobData` object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`parts <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.parts>`\\"
+msgid ":py:obj:`parts <abaqus.Odb.OdbBase.OdbBase.parts>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -1321,11 +1472,11 @@ msgid "A repository of OdbPart objects."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`materials <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.materials>`\\"
+msgid ":py:obj:`materials <abaqus.Odb.OdbBase.OdbBase.materials>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`steps <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.steps>`\\"
+msgid ":py:obj:`steps <abaqus.Odb.OdbBase.OdbBase.steps>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -1333,11 +1484,11 @@ msgid "A repository of OdbStep objects."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`sections <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.sections>`\\"
+msgid ":py:obj:`sections <abaqus.Odb.OdbBase.OdbBase.sections>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`sectionCategories <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.sectionCategories>`\\"
+msgid ":py:obj:`sectionCategories <abaqus.Odb.OdbBase.OdbBase.sectionCategories>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -1345,7 +1496,7 @@ msgid "A repository of SectionCategory objects."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`sectorDefinition <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.sectorDefinition>`\\"
+msgid ":py:obj:`sectorDefinition <abaqus.Odb.OdbBase.OdbBase.sectorDefinition>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -1353,7 +1504,7 @@ msgid "A :py:class:`~abaqus.Odb.SectorDefinition.SectorDefinition` object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`userData <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.userData>`\\"
+msgid ":py:obj:`userData <abaqus.Odb.OdbBase.OdbBase.userData>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -1361,7 +1512,7 @@ msgid "A :py:class:`~abaqus.Odb.UserData.UserData` object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`customData <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.customData>`\\"
+msgid ":py:obj:`customData <abaqus.Odb.OdbBase.OdbBase.customData>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -1369,7 +1520,7 @@ msgid "A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` ob
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`profiles <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.profiles>`\\"
+msgid ":py:obj:`profiles <abaqus.Odb.OdbBase.OdbBase.profiles>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -1413,7 +1564,7 @@ msgid ":py:obj:`TabularAmplitude <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.Tab
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.__init__>`\\ \\(name\\[\\, analysisTitle\\, description\\, ...\\]\\)"
+msgid ":py:obj:`__init__ <abaqus.Odb.OdbBase.OdbBase.__init__>`\\ \\(name\\[\\, analysisTitle\\, description\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -1421,7 +1572,7 @@ msgid "This method creates a new Odb object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`close <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.close>`\\ \\(\\)"
+msgid ":py:obj:`close <abaqus.Odb.OdbBase.OdbBase.close>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -1429,7 +1580,7 @@ msgid "This method closes an output database."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`getFrame <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.getFrame>`\\ \\(frameValue\\[\\, match\\]\\)"
+msgid ":py:obj:`getFrame <abaqus.Odb.OdbBase.OdbBase.getFrame>`\\ \\(frameValue\\[\\, match\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -1437,7 +1588,7 @@ msgid "This method returns the frame at the specified time, frequency, or mode."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`save <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.save>`\\ \\(\\)"
+msgid ":py:obj:`save <abaqus.Odb.OdbBase.OdbBase.save>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -1445,15 +1596,20 @@ msgid "This method saves output to an output database (.odb ) file."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`update <abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb.update>`\\ \\(\\)"
+msgid ":py:obj:`update <abaqus.Odb.OdbBase.OdbBase.update>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid "This method is used to update an Odb object in memory while an Abaqus analysis writes data to the associated output database."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:29
-msgid "Object features"
+#: ../../reference/mdb/model/amplitude.rst:33
+msgid "Classes"
+msgstr ""
+
+#: ../../../../src/abaqus/Amplitude/Amplitude.py:docstring of abaqus.Amplitude.Amplitude.Amplitude:1
+#: ../../../../src/abaqus/Amplitude/BaselineCorrection.py:docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection:1
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/Amplitude.py:docstring of abaqus.Amplitude.Amplitude.Amplitude:1
@@ -1481,8 +1637,22 @@ msgstr ""
 msgid "A SymbolicConstant specifying the time span of the amplitude."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:40
+#: ../../reference/mdb/model/amplitude.rst:46
 msgid "ActuatorAmplitude"
+msgstr ""
+
+#: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude:1
+#: ../../../../src/abaqus/Amplitude/Correlation.py:docstring of abaqus.Amplitude.Correlation.Correlation:1
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude:1
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude:1
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude:1
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude:1
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition:1
+#: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude:1
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude:1
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude:1
+#: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude:1
+msgid "Bases: :py:class:`~abaqus.Amplitude.Amplitude.Amplitude`"
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude:1
@@ -1515,12 +1685,7 @@ msgid "AMPLITUDE"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: ../../None:4:<autosummary>:1
 msgid ":py:obj:`timeSpan <abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.timeSpan>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1536,11 +1701,15 @@ msgstr ""
 msgid "This method modifies the ActuatorAmplitude object."
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.__init__:10
+msgid "Check `ActuatorAmplitude.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-actuatoramplitudepyc.htm?contextscope=all#simaker-actuatoramplitude__init__pyc>`__."
+msgstr ""
+
 #: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.setValues:4
 msgid "Check `ActuatorAmplitude.setValues on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-actuatoramplitudepyc.htm?contextscope=all#simaker-actuatoramplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:48
+#: ../../reference/mdb/model/amplitude.rst:56
 msgid "BaselineCorrection"
 msgstr ""
 
@@ -1568,6 +1737,7 @@ msgstr ""
 msgid ":py:obj:`__init__ <abaqus.Amplitude.BaselineCorrection.BaselineCorrection.__init__>`\\ \\(\\[intervals\\]\\)"
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/BaselineCorrection.py:docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection.__init__:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a BaselineCorrection object."
 msgstr ""
@@ -1581,11 +1751,28 @@ msgstr ""
 msgid "This method modifies the BaselineCorrection object."
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/BaselineCorrection.py:docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection.__init__:10
+msgid "Check `BaselineCorrection.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-baselinecorrectionpyc.htm?contextscope=all#simaker-baselinecorrection__init__pyc>`__."
+msgstr ""
+
+#: ../../../../src/abaqus/Amplitude/BaselineCorrection.py:docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection.__init__:13
 #: ../../docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection.intervals:1
 msgid "A sequence of Floats specifying the correction time interval end points. Possible values are positive and monotonically increasing Floats. The default value is an empty sequence."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:56
+#: ../../../../src/abaqus/Amplitude/BaselineCorrection.py:docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection.__init__:17
+#: ../../None:5:<autosummary>:1
+#: ../../None:6:<autosummary>:1
+#: ../../docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.baselineCorrection:1
+#: ../../docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.baselineCorrection:1
+msgid "A :py:class:`~abaqus.Amplitude.BaselineCorrection.BaselineCorrection` object."
+msgstr ""
+
+#: ../../../../src/abaqus/Amplitude/BaselineCorrection.py:docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection.__init__:18
+msgid ":class:`BaselineCorrection`"
+msgstr ""
+
+#: ../../reference/mdb/model/amplitude.rst:66
 msgid "Correlation"
 msgstr ""
 
@@ -1597,7 +1784,6 @@ msgstr ""
 msgid "Check `Correlation on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-correlationpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
 #: ../../None:6:<autosummary>:1
 msgid ":py:obj:`name <abaqus.Amplitude.Correlation.Correlation.name>`\\"
 msgstr ""
@@ -1618,7 +1804,6 @@ msgstr ""
 msgid "A tuple of tuples of Floats specifying the real and imaginary part of the scaling factor."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
 #: ../../None:6:<autosummary>:1
 msgid ":py:obj:`timeSpan <abaqus.Amplitude.Correlation.Correlation.timeSpan>`\\"
 msgstr ""
@@ -1631,7 +1816,7 @@ msgstr ""
 msgid "A tuple of tuples of Floats specifying the real and imaginary part of the scaling factor. If **approach** = MOVING_NOISE, then **data** represents the noise velocity components 1, 2, and 3."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:64
+#: ../../reference/mdb/model/amplitude.rst:76
 msgid "DecayAmplitude"
 msgstr ""
 
@@ -1640,12 +1825,7 @@ msgid "The DecayAmplitude object defines an amplitude curve using an exponential
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: ../../None:4:<autosummary>:1
 msgid ":py:obj:`timeSpan <abaqus.Amplitude.DecayAmplitude.DecayAmplitude.timeSpan>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Amplitude.DecayAmplitude.DecayAmplitude.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1661,11 +1841,15 @@ msgstr ""
 msgid "This method modifies the DecayAmplitude object."
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.__init__:10
+msgid "Check `DecayAmplitude.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-decayamplitudepyc.htm?contextscope=all#simaker-decayamplitude__init__pyc>`__."
+msgstr ""
+
 #: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.setValues:4
 msgid "Check `DecayAmplitude.setValues on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-decayamplitudepyc.htm?contextscope=all#simaker-decayamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:72
+#: ../../reference/mdb/model/amplitude.rst:86
 msgid "EquallySpacedAmplitude"
 msgstr ""
 
@@ -1675,13 +1859,6 @@ msgstr ""
 
 #: ../../None:6:<autosummary>:1
 msgid ":py:obj:`baselineCorrection <abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.baselineCorrection>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-#: ../../None:6:<autosummary>:1
-#: ../../docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.baselineCorrection:1
-#: ../../docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.baselineCorrection:1
-msgid "A :py:class:`~abaqus.Amplitude.BaselineCorrection.BaselineCorrection` object."
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -1701,13 +1878,8 @@ msgstr ""
 msgid "The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
 #: ../../None:6:<autosummary>:1
 msgid ":py:obj:`timeSpan <abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.timeSpan>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1723,11 +1895,15 @@ msgstr ""
 msgid "This method modifies the EquallySpacedAmplitude object."
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.__init__:10
+msgid "Check `EquallySpacedAmplitude.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-equallyspacedamplitudepyc.htm?contextscope=all#simaker-equallyspacedamplitude__init__pyc>`__."
+msgstr ""
+
 #: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude.setValues:4
 msgid "Check `EquallySpacedAmplitude.setValues on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-equallyspacedamplitudepyc.htm?contextscope=all#simaker-equallyspacedamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:80
+#: ../../reference/mdb/model/amplitude.rst:96
 msgid "ModulatedAmplitude"
 msgstr ""
 
@@ -1736,12 +1912,7 @@ msgid "The ModulatedAmplitude object defines a modulated amplitude curve. The Mo
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: ../../None:4:<autosummary>:1
 msgid ":py:obj:`timeSpan <abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.timeSpan>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1757,11 +1928,15 @@ msgstr ""
 msgid "This method modifies the ModulatedAmplitude object."
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.__init__:10
+msgid "Check `ModulatedAmplitude.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modulatedamplitudepyc.htm?contextscope=all#simaker-modulatedamplitude__init__pyc>`__."
+msgstr ""
+
 #: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude.setValues:4
 msgid "Check `ModulatedAmplitude.setValues on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modulatedamplitudepyc.htm?contextscope=all#simaker-modulatedamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:88
+#: ../../reference/mdb/model/amplitude.rst:106
 msgid "PeriodicAmplitude"
 msgstr ""
 
@@ -1770,12 +1945,7 @@ msgid "The PeriodicAmplitude object defines an amplitude curve using a Fourier s
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: ../../None:4:<autosummary>:1
 msgid ":py:obj:`timeSpan <abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.timeSpan>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1791,11 +1961,15 @@ msgstr ""
 msgid "This method modifies the PeriodicAmplitude object."
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.__init__:10
+msgid "Check `PeriodicAmplitude.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-periodicamplitudepyc.htm?contextscope=all#simaker-periodicamplitude__init__pyc>`__."
+msgstr ""
+
 #: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.setValues:4
 msgid "Check `PeriodicAmplitude.setValues on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-periodicamplitudepyc.htm?contextscope=all#simaker-periodicamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:96
+#: ../../reference/mdb/model/amplitude.rst:116
 msgid "PsdDefinition"
 msgstr ""
 
@@ -1839,7 +2013,6 @@ msgstr ""
 msgid "A Boolean specifying whether the frequency function is defined in user subroutine UPSD."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
 #: ../../None:8:<autosummary>:1
 msgid ":py:obj:`timeSpan <abaqus.Amplitude.PsdDefinition.PsdDefinition.timeSpan>`\\"
 msgstr ""
@@ -1850,10 +2023,6 @@ msgstr ""
 
 #: ../../None:8:<autosummary>:1
 msgid "A String specifying the name of the amplitude that describes the dynamic event used to define the cross-spectral density frequency function."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Amplitude.PsdDefinition.PsdDefinition.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1869,11 +2038,15 @@ msgstr ""
 msgid "This method modifies the PsdDefinition object."
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.__init__:10
+msgid "Check `PsdDefinition.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psddefinitionpyc.htm?contextscope=all#simaker-psddefinition__init__pyc>`__."
+msgstr ""
+
 #: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition.setValues:4
 msgid "Check `PsdDefinition.setValues on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psddefinitionpyc.htm?contextscope=all#simaker-psddefinitionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:104
+#: ../../reference/mdb/model/amplitude.rst:126
 msgid "SmoothStepAmplitude"
 msgstr ""
 
@@ -1882,12 +2055,7 @@ msgid "The SmoothStepAmplitude object defines an amplitude that ramps up or down
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
-#: ../../None:4:<autosummary>:1
 msgid ":py:obj:`timeSpan <abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.timeSpan>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1903,11 +2071,15 @@ msgstr ""
 msgid "This method modifies the SmoothStepAmplitude object."
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.__init__:10
+msgid "Check `SmoothStepAmplitude.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-smoothstepamplitudepyc.htm?contextscope=all#simaker-smoothstepamplitude__init__pyc>`__."
+msgstr ""
+
 #: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.setValues:4
 msgid "Check `SmoothStepAmplitude.setValues on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-smoothstepamplitudepyc.htm?contextscope=all#simaker-smoothstepamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:112
+#: ../../reference/mdb/model/amplitude.rst:136
 msgid "SolutionDependentAmplitude"
 msgstr ""
 
@@ -1939,13 +2111,8 @@ msgstr ""
 msgid "A Float specifying the maximum amplitude value."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
 #: ../../None:6:<autosummary>:1
 msgid ":py:obj:`timeSpan <abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.timeSpan>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1961,11 +2128,15 @@ msgstr ""
 msgid "This method modifies the SolutionDependentAmplitude object."
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.__init__:10
+msgid "Check `SolutionDependentAmplitude.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-solutiondependentamplitudepyc.htm?contextscope=all#simaker-solutiondependentamplitude__init__pyc>`__."
+msgstr ""
+
 #: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues:4
 msgid "Check `SolutionDependentAmplitude.setValues on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-solutiondependentamplitudepyc.htm?contextscope=all#simaker-solutiondependentamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:120
+#: ../../reference/mdb/model/amplitude.rst:146
 msgid "SpectrumAmplitude"
 msgstr ""
 
@@ -2026,7 +2197,6 @@ msgid "A Boolean specifying whether to calculate the spectrum for only the speci
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-#: ../../None:4:<autosummary>:1
 msgid ":py:obj:`timeSpan <abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.timeSpan>`\\"
 msgstr ""
 
@@ -2036,10 +2206,6 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid "A String specifying the name of the amplitude that describes the dynamic event used to calculate the spectrum."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2055,11 +2221,15 @@ msgstr ""
 msgid "This method modifies the SpectrumAmplitude object."
 msgstr ""
 
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.__init__:10
+msgid "Check `SpectrumAmplitude.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-spectrumamplitudepyc.htm?contextscope=all#simaker-spectrumamplitude__init__pyc>`__."
+msgstr ""
+
 #: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues:4
 msgid "Check `SpectrumAmplitude.setValues on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-spectrumamplitudepyc.htm?contextscope=all#simaker-spectrumamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:128
+#: ../../reference/mdb/model/amplitude.rst:156
 msgid "TabularAmplitude"
 msgstr ""
 
@@ -2075,13 +2245,8 @@ msgstr ""
 msgid ":py:obj:`smooth <abaqus.Amplitude.TabularAmplitude.TabularAmplitude.smooth>`\\"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
 #: ../../None:5:<autosummary>:1
 msgid ":py:obj:`timeSpan <abaqus.Amplitude.TabularAmplitude.TabularAmplitude.timeSpan>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.Amplitude.TabularAmplitude.TabularAmplitude.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2095,6 +2260,10 @@ msgstr ""
 #: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.setValues:1
 #: ../../None:4:<autosummary>:1
 msgid "This method modifies the TabularAmplitude object."
+msgstr ""
+
+#: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.__init__:10
+msgid "Check `TabularAmplitude.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tabularamplitudepyc.htm?contextscope=all#simaker-tabularamplitude__init__pyc>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude.setValues:4

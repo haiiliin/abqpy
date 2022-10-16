@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-04 14:03+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,11 @@ msgid ""
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/datum.rst:11
-msgid "Object features"
+msgid "Classes"
+msgstr ""
+
+#: abaqus.Datum.Datum.Datum:1 of
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: abaqus.Datum.Datum.Datum:1 of
@@ -59,8 +63,13 @@ msgid ""
 "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/datum.rst:22
+#: ../../reference/mdb/model/part_assembly/datum.rst:24
 msgid "DatumAxis"
+msgstr ""
+
+#: abaqus.Datum.DatumAxis.DatumAxis:1 abaqus.Datum.DatumCsys.DatumCsys:1
+#: abaqus.Datum.DatumPlane.DatumPlane:1 abaqus.Datum.DatumPoint.DatumPoint:1 of
+msgid "Bases: :py:class:`~abaqus.Datum.Datum.Datum`"
 msgstr ""
 
 #: abaqus.Datum.DatumAxis.DatumAxis:1 of
@@ -106,7 +115,7 @@ msgid ""
 "direction of the axis."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/datum.rst:30
+#: ../../reference/mdb/model/part_assembly/datum.rst:34
 msgid "DatumCsys"
 msgstr ""
 
@@ -278,7 +287,7 @@ msgid ""
 "coordinate system."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/datum.rst:38
+#: ../../reference/mdb/model/part_assembly/datum.rst:44
 msgid "DatumPlane"
 msgstr ""
 
@@ -311,7 +320,7 @@ msgid ""
 "normal."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/datum.rst:46
+#: ../../reference/mdb/model/part_assembly/datum.rst:54
 msgid "DatumPoint"
 msgstr ""
 
@@ -464,5 +473,8 @@ msgstr ""
 #~ msgid ""
 #~ "Check `DatumPoint on help.3ds.com/2022 "
 #~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointpyc.htm?contextscope=all>`__."
+#~ msgstr ""
+
+#~ msgid "Object features"
 #~ msgstr ""
 

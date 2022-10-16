@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-07 00:22+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,41 +37,45 @@ msgid "These commands lines are invoked when you run your script containing the 
 msgstr ""
 
 #: ../../cli.rst:27
-msgid "However, there are other execution procedures that can be run with the `abaqus` command and also another options that could be passed to these commands. To supply that procedures and options, `abqpy` provides a separate **command line interface**."
+msgid "However, there are other execution procedures that can be run with the `abaqus` command and also another options that could be passed to these commands. To supply that procedures and options, `abqpy` provides two alternatives. One of them is a separate **command line interface** (another alternative is to use an :doc:`System Environment Variable <envvars>`)."
 msgstr ""
 
-#: ../../cli.rst:51
-msgid "Currently, `abqpy` command line interface provides 3 execution modes: **Abaqus/CAE** Execution in 2 modes: GUI and noGUI modes; and **Abaqus Python** Execution mode."
-msgstr ""
-
-#: ../../cli.rst:55
-msgid "Examples"
+#: ../../cli.rst:53
+msgid "Currently, `abqpy` command line interface provides 3 execution modes: **Abaqus/CAE Execution** GUI and noGUI modes; and **Abaqus Python Execution** mode."
 msgstr ""
 
 #: ../../cli.rst:57
+msgid "Examples"
+msgstr ""
+
+#: ../../cli.rst:59
 msgid "If you want to run you python script in Abaqus/CAE GUI mode, you could run:"
 msgstr ""
 
-#: ../../cli.rst:63
+#: ../../cli.rst:65
 msgid "If you want to run you python script in Abaqus/CAE GUI or noGUI mode, providing the `database` file option, you could run:"
 msgstr ""
 
-#: ../../cli.rst:72
-msgid "If you want to pass your python script file name after the abaqus command line options, you will need to use the ``--`` argument before the script filename, to prevent `abqpy` from attempting to parse it to abaqus:"
+#: ../../cli.rst:74
+msgid "If you want to run you python script in Abaqus Python Execution mode, you could run:"
 msgstr ""
 
 #: ../../cli.rst:80
+msgid "If you want to pass your python script file name after the abaqus command line options, you will need to use the ``--`` argument before the script filename, to prevent `abqpy` from attempting to parse it to abaqus:"
+msgstr ""
+
+#: ../../cli.rst:88
 msgid "Some moderns Python IDEs allow you to customize the default python launch parameters that will be passed to the interpreter. This feature permits to run `abqpy` command line interface as a module script and customize your default abaqus execution procedure."
 msgstr ""
 
-#: ../../cli.rst:84
+#: ../../cli.rst:92
 msgid "Example: In `VS Code Python Extension <https://marketplace.visualstudio.com/items?itemName=ms-python.python>`_, you can specify the following setting:"
 msgstr ""
 
-#: ../../cli.rst:93
+#: ../../cli.rst:101
 msgid "That setting will make VS Code Python Extension run by default all python script files in the integrated terminal with the following command line:"
 msgstr ""
 
-#: ../../cli.rst:100
+#: ../../cli.rst:108
 msgid "Which provides a way to change the default abaqus execution procedure to GUI mode."
 msgstr ""
