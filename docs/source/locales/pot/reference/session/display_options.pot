@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2016\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 09:59+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,32 @@ msgid "Display options commands are used to store settings that specify how asse
 msgstr ""
 
 #: ../../reference/session/display_options.rst:9
-msgid "Object features"
+msgid "Classes"
 msgstr ""
 
 #: ../../reference/session/display_options.rst:12
 msgid "AssemblyDisplayOptions"
+msgstr ""
+
+#: ../../../../src/abaqus/DisplayOptions/AssemblyDisplayOptions.py:docstring of abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions:1
+#: ../../../../src/abaqus/DisplayOptions/BCDisplayOptions.py:docstring of abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions:1
+#: ../../../../src/abaqus/DisplayOptions/ConstraintDisplayOptions.py:docstring of abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions:1
+#: ../../../../src/abaqus/DisplayOptions/EngineeringFeatureDisplayOptions.py:docstring of abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions:1
+#: ../../../../src/abaqus/DisplayOptions/GeometricRestrictionDisplayOptions.py:docstring of abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions:1
+#: ../../../../src/abaqus/DisplayOptions/GeometryDisplayOptions.py:docstring of abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions:1
+#: ../../../../src/abaqus/DisplayOptions/GraphicsInfo.py:docstring of abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo:1
+#: ../../../../src/abaqus/DisplayOptions/GraphicsOptions.py:docstring of abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions:1
+#: ../../../../src/abaqus/DisplayOptions/InteractionDisplayOptions.py:docstring of abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions:1
+#: ../../../../src/abaqus/DisplayOptions/Light.py:docstring of abaqus.DisplayOptions.Light.Light:1
+#: ../../../../src/abaqus/DisplayOptions/LightOptions.py:docstring of abaqus.DisplayOptions.LightOptions.LightOptions:1
+#: ../../../../src/abaqus/DisplayOptions/LoadDisplayOptions.py:docstring of abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions:1
+#: ../../../../src/abaqus/DisplayOptions/MeshDisplayOptions.py:docstring of abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions:1
+#: ../../../../src/abaqus/DisplayOptions/OptimizationTaskDisplayOptions.py:docstring of abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions:1
+#: ../../../../src/abaqus/DisplayOptions/PartDisplayOptions.py:docstring of abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions:1
+#: ../../../../src/abaqus/DisplayOptions/PredefinedFieldDisplayOptions.py:docstring of abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions:1
+#: ../../../../src/abaqus/DisplayOptions/StopConditionDisplayOptions.py:docstring of abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions:1
+#: ../../../../src/abaqus/DisplayOptions/SymbolDisplayOptions.py:docstring of abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions:1
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: ../../../../src/abaqus/DisplayOptions/AssemblyDisplayOptions.py:docstring of abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions:1
@@ -553,7 +574,7 @@ msgstr ""
 msgid "A tuple of Strings specifying the names of the part instances that are visible in the viewport. The default value is an empty sequence."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:20
+#: ../../reference/session/display_options.rst:22
 msgid "BCDisplayOptions"
 msgstr ""
 
@@ -630,7 +651,7 @@ msgstr ""
 msgid "A Boolean specifying whether pinned symbols are shown. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:28
+#: ../../reference/session/display_options.rst:32
 msgid "ConstraintDisplayOptions"
 msgstr ""
 
@@ -675,7 +696,7 @@ msgstr ""
 msgid "A Boolean specifying whether coupling constraint symbols are shown. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:36
+#: ../../reference/session/display_options.rst:42
 msgid "EngineeringFeatureDisplayOptions"
 msgstr ""
 
@@ -724,7 +745,7 @@ msgstr ""
 msgid "A Boolean specifying whether two-point spring symbols are shown. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:44
+#: ../../reference/session/display_options.rst:52
 msgid "GeometricRestrictionDisplayOptions"
 msgstr ""
 
@@ -829,7 +850,7 @@ msgstr ""
 msgid "A Boolean specifying whether turn control geometric restriction symbols are shown. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:52
+#: ../../reference/session/display_options.rst:62
 msgid "GeometryDisplayOptions"
 msgstr ""
 
@@ -894,7 +915,7 @@ msgstr ""
 msgid "A Boolean specifying whether to apply translucency to the geometry that belongs to the reference representation of the Part or Instance. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:60
+#: ../../reference/session/display_options.rst:72
 msgid "GraphicsInfo"
 msgstr ""
 
@@ -981,7 +1002,7 @@ msgstr ""
 msgid "A sequence of the type (Int, Int, String) specifying the three components of the glx version of the server. The sequence consists of an Int with the glx major version number, an Int with the glx minor version number, and a String with any additional information."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:68
+#: ../../reference/session/display_options.rst:82
 msgid "GraphicsOptions"
 msgstr ""
 
@@ -1401,7 +1422,7 @@ msgstr ""
 msgid "An Int specifying whether speed or accuracy is more important when drawing translucent objects. Lower values optimize for speed while higher values optimize for accuracy. The actual meaning of each setting will depend on the setting of **shadersAvailable** and the capabilities of the graphics hardware and driver. Possible values are 1 ≤ **translucencyMode** ≤ 6. The default value is 4."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:76
+#: ../../reference/session/display_options.rst:92
 msgid "InteractionDisplayOptions"
 msgstr ""
 
@@ -1458,7 +1479,7 @@ msgstr ""
 msgid "A Boolean specifying whether concentrated film condition symbols are shown. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:84
+#: ../../reference/session/display_options.rst:102
 msgid "Light"
 msgstr ""
 
@@ -1507,11 +1528,11 @@ msgstr ""
 msgid "A String specifying the color of the specular highlights created by this light source. The initial value is 36% gray. A list of valid color strings is in the **colors** map in the **session** object."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:92
+#: ../../reference/session/display_options.rst:112
 msgid "LightArray"
 msgstr ""
 
-#: ../../reference/session/display_options.rst:100
+#: ../../reference/session/display_options.rst:122
 msgid "LightOptions"
 msgstr ""
 
@@ -1597,7 +1618,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying how specular highlights should be calculated. Possible values are:INFINITE, specifying that a constant vector should be used for the direction from the camera to a vertex when computing specular highlights.LOCAL, specifying that the vector from the camera to each vertex should be calculated when computing specular highlights.The default value is INFINITE.When set to **viewpoint** =INFINITE, a constant vector is used for the direction from the camera (viewpoint) to a vertex. When **viewpoint** =LOCAL, the result is more realistic because the actual vector from the camera to each vertex is calculated. However, overall performance is decreased."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:108
+#: ../../reference/session/display_options.rst:132
 msgid "LoadDisplayOptions"
 msgstr ""
 
@@ -1742,7 +1763,7 @@ msgstr ""
 msgid "A Boolean specifying whether concentrated concentration flux symbols are shown. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:116
+#: ../../reference/session/display_options.rst:142
 msgid "MeshDisplayOptions"
 msgstr ""
 
@@ -1823,7 +1844,7 @@ msgstr ""
 msgid "A Boolean specifying whether seeds are shown. This argument is ignored in partDisplay. The default value is OFF."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:124
+#: ../../reference/session/display_options.rst:152
 msgid "OptimizationTaskDisplayOptions"
 msgstr ""
 
@@ -1856,7 +1877,7 @@ msgstr ""
 msgid "A Boolean specifying whether shape task symbols are shown. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:132
+#: ../../reference/session/display_options.rst:162
 msgid "PartDisplayOptions"
 msgstr ""
 
@@ -1940,7 +1961,7 @@ msgstr ""
 msgid "Check `PartDisplayOptions.setValues on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partdisplayoptionspyc.htm?contextscope=all#simaker-partdisplayoptionssetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:140
+#: ../../reference/session/display_options.rst:172
 msgid "PredefinedFieldDisplayOptions"
 msgstr ""
 
@@ -1985,7 +2006,7 @@ msgstr ""
 msgid "A Boolean specifying whether hardening field symbols are shown. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:148
+#: ../../reference/session/display_options.rst:182
 msgid "StopConditionDisplayOptions"
 msgstr ""
 
@@ -2014,7 +2035,7 @@ msgstr ""
 msgid "A Boolean specifying whether local stop condition symbols are shown. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:156
+#: ../../reference/session/display_options.rst:192
 msgid "SymbolDisplayOptions"
 msgstr ""
 
@@ -2063,7 +2084,7 @@ msgstr ""
 msgid "A Boolean specifying whether symbols should be scaled based on analytical field value. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:164
+#: ../../reference/session/display_options.rst:202
 msgid "ViewportAnnotationOptions"
 msgstr ""
 

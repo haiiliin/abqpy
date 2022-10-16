@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 00:22+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,11 +28,15 @@ msgid ""
 msgstr ""
 
 #: ../../reference/session/odb_display.rst:8
-msgid "Object features"
+msgid "Classes"
 msgstr ""
 
 #: ../../reference/session/odb_display.rst:11
 msgid "CommonOptions"
+msgstr ""
+
+#: abaqus.OdbDisplay.CommonOptions.CommonOptions:1 of
+msgid "Bases: :py:class:`~abaqus.PlotOptions.DGCommonOptions.DGCommonOptions`"
 msgstr ""
 
 #: abaqus.OdbDisplay.CommonOptions.CommonOptions:1 of
@@ -129,7 +133,7 @@ msgid ""
 " three coordinate directions when **deformationScaling** = NONUNIFORM."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`renderStyle "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.renderStyle>`\\"
@@ -140,7 +144,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the render style of the plot."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`visibleEdges "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.visibleEdges>`\\"
@@ -151,7 +155,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying which edges to plot."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`edgeLineStyle "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeLineStyle>`\\"
@@ -162,7 +166,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the edge line style."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`edgeLineThickness "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeLineThickness>`\\"
@@ -173,7 +177,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the edge line thickness."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`colorCodeOverride "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.colorCodeOverride>`\\"
@@ -186,7 +190,7 @@ msgid ""
 "database to override the edge and fill color settings."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`elemLabels "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.elemLabels>`\\"
@@ -197,7 +201,7 @@ msgstr ""
 msgid "A Boolean specifying whether to plot the element labels."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`faceLabels "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.faceLabels>`\\"
@@ -208,7 +212,7 @@ msgstr ""
 msgid "A Boolean specifying whether to plot the face labels."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`nodeLabels "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeLabels>`\\"
@@ -219,7 +223,7 @@ msgstr ""
 msgid "A Boolean specifying whether to plot the node labels."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`nodeSymbols "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbols>`\\"
@@ -230,7 +234,7 @@ msgstr ""
 msgid "A Boolean specifying whether to plot the node symbols."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`nodeSymbolType "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolType>`\\"
@@ -241,7 +245,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the node symbol types."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`nodeSymbolSize "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolSize>`\\"
@@ -252,7 +256,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the node symbol size."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`elementShrink "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.elementShrink>`\\"
@@ -263,7 +267,7 @@ msgstr ""
 msgid "A Boolean specifying whether elements are displayed in a shrunk format."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`elementShrinkFactor "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.elementShrinkFactor>`\\"
@@ -276,7 +280,7 @@ msgid ""
 "**elementShrink** = ON."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`coordinateScale "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.coordinateScale>`\\"
@@ -287,7 +291,7 @@ msgstr ""
 msgid "A Boolean specifying whether to scale coordinates."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`normals "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.normals>`\\"
@@ -300,7 +304,7 @@ msgid ""
 "of element and surface normals."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`normalDisplay "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.normalDisplay>`\\"
@@ -312,7 +316,7 @@ msgid ""
 "normals."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`normalArrowLength "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.normalArrowLength>`\\"
@@ -323,7 +327,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the length of the normal arrows."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`normalLineThickness "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.normalLineThickness>`\\"
@@ -334,7 +338,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the thickness of the normal arrows."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`normalArrowheadStyle "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.normalArrowheadStyle>`\\"
@@ -345,7 +349,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the arrowhead style of the normal arrows."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`translucency "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.translucency>`\\"
@@ -356,7 +360,7 @@ msgstr ""
 msgid "A Boolean specifying whether to set translucency."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`translucencyFactor "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.translucencyFactor>`\\"
@@ -367,7 +371,7 @@ msgstr ""
 msgid "A Float specifying the translucency factor when **translucency** = ON."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`edgeColorWireHide "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeColorWireHide>`\\"
@@ -380,7 +384,7 @@ msgid ""
 "when **renderStyle** = WIREFRAME or HIDDEN."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`edgeColorFillShade "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.edgeColorFillShade>`\\"
@@ -393,7 +397,7 @@ msgid ""
 "when **renderStyle** = FILLED or SHADED."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`fillColor "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.fillColor>`\\"
@@ -406,7 +410,7 @@ msgid ""
 "**renderStyle** = FILLED or SHADED."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`labelFont "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.labelFont>`\\"
@@ -417,7 +421,7 @@ msgstr ""
 msgid "A String specifying the label font to be used for all model labels."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`elemLabelColor "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.elemLabelColor>`\\"
@@ -428,7 +432,7 @@ msgstr ""
 msgid "A String specifying the color to be used to plot the element labels."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`faceLabelColor "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.faceLabelColor>`\\"
@@ -439,7 +443,7 @@ msgstr ""
 msgid "A String specifying the color to be used to plot the face labels."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`nodeLabelColor "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeLabelColor>`\\"
@@ -450,7 +454,7 @@ msgstr ""
 msgid "A String specifying the color to be used to plot the node labels."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`nodeSymbolColor "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.nodeSymbolColor>`\\"
@@ -461,7 +465,7 @@ msgstr ""
 msgid "A String specifying the color to be used to plot the node symbols."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`faceNormalColor "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.faceNormalColor>`\\"
@@ -474,7 +478,7 @@ msgid ""
 "element or to a surface."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`beamN1Color "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.beamN1Color>`\\"
@@ -487,7 +491,7 @@ msgid ""
 "n1n1-direction."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`beamN2Color "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.beamN2Color>`\\"
@@ -500,7 +504,7 @@ msgid ""
 "n2n2-direction."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`beamTangentColor "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.beamTangentColor>`\\"
@@ -513,7 +517,7 @@ msgid ""
 "tangent to a beam."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:40:<autosummary>:1
+#: ../../None:40:<autosummary>:1
 msgid ""
 ":py:obj:`coordinateScaleFactors "
 "<abaqus.OdbDisplay.CommonOptions.CommonOptions.coordinateScaleFactors>`\\"
@@ -524,6 +528,210 @@ msgstr ""
 msgid ""
 "A tuple of three Floats specifying the coordinate scaling in each of the "
 "three coordinate directions when **coordinateScale** = ON."
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`renderStyle "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.renderStyle>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`visibleEdges "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.visibleEdges>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`edgeLineStyle "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.edgeLineStyle>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`edgeLineThickness "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.edgeLineThickness>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`colorCodeOverride "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.colorCodeOverride>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`elemLabels "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.elemLabels>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`faceLabels "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.faceLabels>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`nodeLabels "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.nodeLabels>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`nodeSymbols "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.nodeSymbols>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`nodeSymbolType "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.nodeSymbolType>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`nodeSymbolSize "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.nodeSymbolSize>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`elementShrink "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.elementShrink>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`elementShrinkFactor "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.elementShrinkFactor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`coordinateScale "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.coordinateScale>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`normals "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.normals>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`normalDisplay "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.normalDisplay>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`normalArrowLength "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.normalArrowLength>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`normalLineThickness "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.normalLineThickness>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`normalArrowheadStyle "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.normalArrowheadStyle>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`translucency "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.translucency>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`translucencyFactor "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.translucencyFactor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`edgeColorWireHide "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.edgeColorWireHide>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`edgeColorFillShade "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.edgeColorFillShade>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`fillColor "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.fillColor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`labelFont "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.labelFont>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`elemLabelColor "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.elemLabelColor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`faceLabelColor "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.faceLabelColor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`nodeLabelColor "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.nodeLabelColor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`nodeSymbolColor "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.nodeSymbolColor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`faceNormalColor "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.faceNormalColor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`beamN1Color "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.beamN1Color>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`beamN2Color "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.beamN2Color>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`beamTangentColor "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.beamTangentColor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`coordinateScaleFactors "
+"<abaqus.PlotOptions.DGCommonOptions.DGCommonOptions.coordinateScaleFactors>`\\"
 msgstr ""
 
 #: abaqus.OdbDisplay.CommonOptions.CommonOptions
@@ -973,6 +1181,7 @@ msgstr ""
 #: abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues
 #: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues
 #: abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues
 #: abaqus.OdbDisplay.ViewerOptions.ViewerOptions.setValues of
 msgid "Parameters"
@@ -1068,8 +1277,12 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../reference/session/odb_display.rst:19
+#: ../../reference/session/odb_display.rst:21
 msgid "ContourOptions"
+msgstr ""
+
+#: abaqus.OdbDisplay.ContourOptions.ContourOptions:1 of
+msgid "Bases: :py:class:`~abaqus.PlotOptions.DGContourOptions.DGContourOptions`"
 msgstr ""
 
 #: abaqus.OdbDisplay.ContourOptions.ContourOptions:1 of
@@ -1292,7 +1505,7 @@ msgid ""
 "USER_DEFINED."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`contourMethod "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.contourMethod>`\\"
@@ -1302,7 +1515,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the contour rendering method."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`tickmarkPlots "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkPlots>`\\"
@@ -1314,7 +1527,7 @@ msgid ""
 "type elements."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`contourStyle "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.contourStyle>`\\"
@@ -1324,7 +1537,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the interval style of the contour plot."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`contourEdges "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdges>`\\"
@@ -1336,7 +1549,7 @@ msgid ""
 "when **contourType** = BANDED or ISOSURFACE."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`contourEdgeStyle "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeStyle>`\\"
@@ -1348,7 +1561,7 @@ msgid ""
 "contour edges when **contourType** = BANDED or ISOSURFACE."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`contourEdgeThickness "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeThickness>`\\"
@@ -1361,7 +1574,7 @@ msgid ""
 "ISOSURFACE."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`averagedOrientationDisplay "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.averagedOrientationDisplay>`\\"
@@ -1373,7 +1586,7 @@ msgid ""
 " used when averaging element vector or tensor data."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`matchingPlyLabels "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.matchingPlyLabels>`\\"
@@ -1385,7 +1598,7 @@ msgid ""
 "the viewport."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`colorByMatchingPlies "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.colorByMatchingPlies>`\\"
@@ -1397,7 +1610,7 @@ msgid ""
 "ply."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`tickmarkAxisLength "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkAxisLength>`\\"
@@ -1407,7 +1620,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the length of the tick mark plot axes."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`tickmarkBaseValue "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkBaseValue>`\\"
@@ -1419,7 +1632,7 @@ msgid ""
 "contour value that intersects the elements."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`tickmarkOrientation "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkOrientation>`\\"
@@ -1429,7 +1642,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the orientation of the tick mark plots."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`edgeColorLine "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.edgeColorLine>`\\"
@@ -1439,7 +1652,7 @@ msgstr ""
 msgid "A String specifying the edge color to be used when **contourType** = LINE."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`edgeColorBandedQuilt "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.edgeColorBandedQuilt>`\\"
@@ -1451,7 +1664,7 @@ msgid ""
 "BANDED or QUILT."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`contourEdgeColor "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.contourEdgeColor>`\\"
@@ -1463,7 +1676,7 @@ msgid ""
 "**contourType** = BANDED or ISOSURFACE."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`tickmarkCurveColor "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.tickmarkCurveColor>`\\"
@@ -1473,7 +1686,7 @@ msgstr ""
 msgid "A String specifying the color to be used to plot the tick mark curve."
 msgstr ""
 
-#: ../../None:19:<autosummary>:1 ../../None:37:<autosummary>:1
+#: ../../None:37:<autosummary>:1
 msgid ""
 ":py:obj:`intervalLineAttributes "
 "<abaqus.OdbDisplay.ContourOptions.ContourOptions.intervalLineAttributes>`\\"
@@ -1483,6 +1696,108 @@ msgstr ""
 msgid ""
 "A tuple of tuples of SymbolicConstants specifying the line style and line"
 " thickness for each interval in the plot when **contourType** = LINE."
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`contourMethod "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.contourMethod>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`tickmarkPlots "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.tickmarkPlots>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`contourStyle "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.contourStyle>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`contourEdges "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.contourEdges>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`contourEdgeStyle "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.contourEdgeStyle>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`contourEdgeThickness "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.contourEdgeThickness>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`averagedOrientationDisplay "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.averagedOrientationDisplay>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`matchingPlyLabels "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.matchingPlyLabels>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`colorByMatchingPlies "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.colorByMatchingPlies>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`tickmarkAxisLength "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.tickmarkAxisLength>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`tickmarkBaseValue "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.tickmarkBaseValue>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`tickmarkOrientation "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.tickmarkOrientation>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`edgeColorLine "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.edgeColorLine>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`edgeColorBandedQuilt "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.edgeColorBandedQuilt>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`contourEdgeColor "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.contourEdgeColor>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`tickmarkCurveColor "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.tickmarkCurveColor>`\\"
+msgstr ""
+
+#: ../../None:19:<autosummary>:1
+msgid ""
+":py:obj:`intervalLineAttributes "
+"<abaqus.PlotOptions.DGContourOptions.DGContourOptions.intervalLineAttributes>`\\"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -1818,8 +2133,15 @@ msgid ""
 "default value is OFF."
 msgstr ""
 
-#: ../../reference/session/odb_display.rst:27
+#: ../../reference/session/odb_display.rst:31
 msgid "DefaultOdbDisplay"
+msgstr ""
+
+#: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay:1
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay:1
+#: abaqus.OdbDisplay.ViewCut.ViewCut:1
+#: abaqus.OdbDisplay.ViewerOptions.ViewerOptions:1 of
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay:1 of
@@ -1960,8 +2282,14 @@ msgstr ""
 msgid "A :py:class:`~abaqus.PlotOptions.ViewCutOptions.ViewCutOptions` object."
 msgstr ""
 
-#: ../../reference/session/odb_display.rst:35
+#: ../../reference/session/odb_display.rst:41
 msgid "DisplayBodyOptions"
+msgstr ""
+
+#: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:1 of
+msgid ""
+"Bases: "
+":py:class:`~abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions`"
 msgstr ""
 
 #: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:1 of
@@ -2066,6 +2394,84 @@ msgid ""
 "<abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.coordinateScaleFactors>`\\"
 msgstr ""
 
+#: ../../None:15:<autosummary>:1
+msgid ""
+":py:obj:`visibleEdges "
+"<abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.visibleEdges>`\\"
+msgstr ""
+
+#: ../../None:15:<autosummary>:1
+msgid ""
+":py:obj:`edgeLineStyle "
+"<abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.edgeLineStyle>`\\"
+msgstr ""
+
+#: ../../None:15:<autosummary>:1
+msgid ""
+":py:obj:`edgeLineThickness "
+"<abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.edgeLineThickness>`\\"
+msgstr ""
+
+#: ../../None:15:<autosummary>:1
+msgid ""
+":py:obj:`colorCodeOverride "
+"<abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.colorCodeOverride>`\\"
+msgstr ""
+
+#: ../../None:15:<autosummary>:1
+msgid ""
+":py:obj:`elementShrink "
+"<abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.elementShrink>`\\"
+msgstr ""
+
+#: ../../None:15:<autosummary>:1
+msgid ""
+":py:obj:`elementShrinkFactor "
+"<abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.elementShrinkFactor>`\\"
+msgstr ""
+
+#: ../../None:15:<autosummary>:1
+msgid ""
+":py:obj:`coordinateScale "
+"<abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.coordinateScale>`\\"
+msgstr ""
+
+#: ../../None:15:<autosummary>:1
+msgid ""
+":py:obj:`translucency "
+"<abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.translucency>`\\"
+msgstr ""
+
+#: ../../None:15:<autosummary>:1
+msgid ""
+":py:obj:`translucencyFactor "
+"<abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.translucencyFactor>`\\"
+msgstr ""
+
+#: ../../None:15:<autosummary>:1
+msgid ""
+":py:obj:`edgeColorWireHide "
+"<abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.edgeColorWireHide>`\\"
+msgstr ""
+
+#: ../../None:15:<autosummary>:1
+msgid ""
+":py:obj:`edgeColorFillShade "
+"<abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.edgeColorFillShade>`\\"
+msgstr ""
+
+#: ../../None:15:<autosummary>:1
+msgid ""
+":py:obj:`fillColor "
+"<abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.fillColor>`\\"
+msgstr ""
+
+#: ../../None:15:<autosummary>:1
+msgid ""
+":py:obj:`coordinateScaleFactors "
+"<abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.coordinateScaleFactors>`\\"
+msgstr ""
+
 #: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`setValues "
@@ -2100,7 +2506,7 @@ msgid ""
 "90. The default value is 5."
 msgstr ""
 
-#: ../../reference/session/odb_display.rst:43
+#: ../../reference/session/odb_display.rst:51
 msgid "OdbDisplay"
 msgstr ""
 
@@ -2574,11 +2980,13 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../None:5:<autosummary>:1
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:1 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:1
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:1 of
 msgid "This method creates a ViewCut object."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:4 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:4
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:4 of
 msgid "This function can be accessed by::"
 msgstr ""
 
@@ -2590,11 +2998,13 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:13
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:13
 #: abaqus.OdbDisplay.ViewCut.ViewCut.name:1 of
 msgid "A String specifying the repository key."
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:15
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:15
 #: abaqus.OdbDisplay.ViewCut.ViewCut.shape:1 of
 msgid ""
 "A SymbolicConstant specifying the shape of the ViewCut object. Possible "
@@ -2602,6 +3012,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:18
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:18
 #: abaqus.OdbDisplay.ViewCut.ViewCut.origin:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:36 of
 msgid ""
@@ -2612,6 +3023,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:22
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:22
 #: abaqus.OdbDisplay.ViewCut.ViewCut.normal:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:40 of
 msgid ""
@@ -2624,6 +3036,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:28
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:28
 #: abaqus.OdbDisplay.ViewCut.ViewCut.axis2:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:46 of
 msgid ""
@@ -2637,6 +3050,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:34
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:34
 #: abaqus.OdbDisplay.ViewCut.ViewCut.csysName:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:32 of
 msgid ""
@@ -2646,6 +3060,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:38
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:38
 #: abaqus.OdbDisplay.ViewCut.ViewCut.cylinderAxis:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:52 of
 msgid ""
@@ -2658,6 +3073,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:44
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:44
 #: abaqus.OdbDisplay.ViewCut.ViewCut.followDeformation:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:58 of
 msgid ""
@@ -2666,6 +3082,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:47
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:47
 #: abaqus.OdbDisplay.ViewCut.ViewCut.overrideAveraging:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:61 of
 msgid ""
@@ -2676,6 +3093,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:51
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:51
 #: abaqus.OdbDisplay.ViewCut.ViewCut.referenceFrame:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:65 of
 msgid ""
@@ -2684,19 +3102,23 @@ msgid ""
 "LAST_FRAME, and CURRENT_FRAME. The default value is FIRST_FRAME."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__ of
 msgid "Returns"
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:55 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:55
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:55 of
 msgid "A :py:class:`~abaqus.OdbDisplay.ViewCut.ViewCut` object."
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__ of
 msgid "Return type"
 msgstr ""
 
-#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:56 of
+#: abaqus.OdbDisplay.OdbDisplay.OdbDisplay.ViewCut:56
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:56 of
 msgid ":class:`ViewCut`"
 msgstr ""
 
@@ -3314,8 +3736,14 @@ msgid ""
 "will be outside when false."
 msgstr ""
 
-#: ../../reference/session/odb_display.rst:51
+#: ../../reference/session/odb_display.rst:61
 msgid "OrientationOptions"
+msgstr ""
+
+#: abaqus.OdbDisplay.OrientationOptions.OrientationOptions:1 of
+msgid ""
+"Bases: "
+":py:class:`~abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions`"
 msgstr ""
 
 #: abaqus.OdbDisplay.OrientationOptions.OrientationOptions:1 of
@@ -3465,6 +3893,72 @@ msgstr ""
 msgid "A String specifying the color of axis 3 of the material orientation triad."
 msgstr ""
 
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`showAxis1 "
+"<abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions.showAxis1>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`showAxis2 "
+"<abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions.showAxis2>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`showAxis3 "
+"<abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions.showAxis3>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`symbolSize "
+"<abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions.symbolSize>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`lineThickness "
+"<abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions.lineThickness>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`orientation "
+"<abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions.orientation>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`arrowheadStyle "
+"<abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions.arrowheadStyle>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`scaleMode "
+"<abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions.scaleMode>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`axis1Color "
+"<abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions.axis1Color>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`axis2Color "
+"<abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions.axis2Color>`\\"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`axis3Color "
+"<abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions.axis3Color>`\\"
+msgstr ""
+
 #: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`setValues "
@@ -3583,8 +4077,14 @@ msgid ""
 "default value is 12.0."
 msgstr ""
 
-#: ../../reference/session/odb_display.rst:59
+#: ../../reference/session/odb_display.rst:71
 msgid "SuperimposeOptions"
+msgstr ""
+
+#: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions:1 of
+msgid ""
+"Bases: "
+":py:class:`~abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions`"
 msgstr ""
 
 #: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions:1 of
@@ -3648,97 +4148,97 @@ msgid ""
 "coordinate directions when **deformedOffsetMode** = NONUNIFORM."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`renderStyle "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.renderStyle>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`visibleEdges "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.visibleEdges>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`edgeLineStyle "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeLineStyle>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`edgeLineThickness "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeLineThickness>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`colorCodeOverride "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.colorCodeOverride>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`elemLabels "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elemLabels>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`faceLabels "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceLabels>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`nodeLabels "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeLabels>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`nodeSymbols "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbols>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`nodeSymbolType "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolType>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`nodeSymbolSize "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolSize>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`elementShrink "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrink>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`elementShrinkFactor "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elementShrinkFactor>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`coordinateScale "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.coordinateScale>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`normals "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normals>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`normalDisplay "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalDisplay>`\\"
@@ -3750,112 +4250,316 @@ msgid ""
 " normals."
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`normalArrowLength "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalArrowLength>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`normalLineThickness "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalLineThickness>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`normalArrowheadStyle "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.normalArrowheadStyle>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`translucency "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucency>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`translucencyFactor "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.translucencyFactor>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`edgeColorWireHide "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeColorWireHide>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`edgeColorFillShade "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.edgeColorFillShade>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`fillColor "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.fillColor>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`labelFont "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.labelFont>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`elemLabelColor "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.elemLabelColor>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`faceLabelColor "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceLabelColor>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`nodeLabelColor "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeLabelColor>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`nodeSymbolColor "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.nodeSymbolColor>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`faceNormalColor "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.faceNormalColor>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`beamN1Color "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN1Color>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`beamN2Color "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamN2Color>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`beamTangentColor "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.beamTangentColor>`\\"
 msgstr ""
 
-#: ../../None:36:<autosummary>:1 ../../None:39:<autosummary>:1
+#: ../../None:39:<autosummary>:1
 msgid ""
 ":py:obj:`coordinateScaleFactors "
 "<abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.coordinateScaleFactors>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`renderStyle "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.renderStyle>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`visibleEdges "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.visibleEdges>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`edgeLineStyle "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.edgeLineStyle>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`edgeLineThickness "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.edgeLineThickness>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`colorCodeOverride "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.colorCodeOverride>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`elemLabels "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.elemLabels>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`faceLabels "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.faceLabels>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`nodeLabels "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.nodeLabels>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`nodeSymbols "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.nodeSymbols>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`nodeSymbolType "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.nodeSymbolType>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`nodeSymbolSize "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.nodeSymbolSize>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`elementShrink "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.elementShrink>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`elementShrinkFactor "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.elementShrinkFactor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`coordinateScale "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.coordinateScale>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`normals "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.normals>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`normalDisplay "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.normalDisplay>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`normalArrowLength "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.normalArrowLength>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`normalLineThickness "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.normalLineThickness>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`normalArrowheadStyle "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.normalArrowheadStyle>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`translucency "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.translucency>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`translucencyFactor "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.translucencyFactor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`edgeColorWireHide "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.edgeColorWireHide>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`edgeColorFillShade "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.edgeColorFillShade>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`fillColor "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.fillColor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`labelFont "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.labelFont>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`elemLabelColor "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.elemLabelColor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`faceLabelColor "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.faceLabelColor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`nodeLabelColor "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.nodeLabelColor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`nodeSymbolColor "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.nodeSymbolColor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`faceNormalColor "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.faceNormalColor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`beamN1Color "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.beamN1Color>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`beamN2Color "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.beamN2Color>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`beamTangentColor "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.beamTangentColor>`\\"
+msgstr ""
+
+#: ../../None:36:<autosummary>:1
+msgid ""
+":py:obj:`coordinateScaleFactors "
+"<abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.coordinateScaleFactors>`\\"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3972,8 +4676,12 @@ msgid ""
 " default value is (0, 0, 0)."
 msgstr ""
 
-#: ../../reference/session/odb_display.rst:67
+#: ../../reference/session/odb_display.rst:81
 msgid "SymbolOptions"
+msgstr ""
+
+#: abaqus.OdbDisplay.SymbolOptions.SymbolOptions:1 of
+msgid "Bases: :py:class:`~abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions`"
 msgstr ""
 
 #: abaqus.OdbDisplay.SymbolOptions.SymbolOptions:1 of
@@ -4155,7 +4863,7 @@ msgid ""
 "value when **tensorMinValueAutoCompute** = ON."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`vectorLineThickness "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorLineThickness>`\\"
@@ -4165,7 +4873,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the vector line thickness."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`vectorColorMethod "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColorMethod>`\\"
@@ -4175,7 +4883,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the vector color method."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`tensorColorMethod "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorColorMethod>`\\"
@@ -4185,7 +4893,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the tensor color method."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`vectorArrowheadStyle "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorArrowheadStyle>`\\"
@@ -4195,7 +4903,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the vector arrowhead style."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`arrowSymbolSize "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowSymbolSize>`\\"
@@ -4205,7 +4913,7 @@ msgstr ""
 msgid "An Int specifying the length of vector and tensor symbols."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`vectorIntervalNumber "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorIntervalNumber>`\\"
@@ -4215,7 +4923,7 @@ msgstr ""
 msgid "An Int specifying the number of color intervals for vector symbols."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`symbolDensity "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.symbolDensity>`\\"
@@ -4225,7 +4933,7 @@ msgstr ""
 msgid "A Float specifying the factor for randomized sampling."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`constantLengthArrows "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.constantLengthArrows>`\\"
@@ -4237,7 +4945,7 @@ msgid ""
 "symbols."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`tensorIntervalNumber "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorIntervalNumber>`\\"
@@ -4247,7 +4955,7 @@ msgstr ""
 msgid "An Int specifying the number of color intervals for tensor symbols."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`tensorLineThickness "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorLineThickness>`\\"
@@ -4257,7 +4965,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the line thickness of the tensor symbols."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`tensorArrowheadStyle "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorArrowheadStyle>`\\"
@@ -4267,7 +4975,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the arrowhead style of the tensor symbols."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`numberFormatT "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numberFormatT>`\\"
@@ -4277,7 +4985,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the number format for tensor."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`numberFormatV "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numberFormatV>`\\"
@@ -4287,7 +4995,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the number format for vector."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`arrowScaleMode "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.arrowScaleMode>`\\"
@@ -4297,7 +5005,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the arrow scaling mode."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`drawLabelT "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.drawLabelT>`\\"
@@ -4307,7 +5015,7 @@ msgstr ""
 msgid "A Boolean specifying whether to draw tensor labels."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`drawLabelV "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.drawLabelV>`\\"
@@ -4317,7 +5025,7 @@ msgstr ""
 msgid "A Boolean specifying whether to draw vector labels."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`numDigitsT "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numDigitsT>`\\"
@@ -4327,7 +5035,7 @@ msgstr ""
 msgid "An Int specifying the number of digits in the tensor label."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`numDigitsV "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.numDigitsV>`\\"
@@ -4337,7 +5045,7 @@ msgstr ""
 msgid "An Int specifying the number of digits in the vector label."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`vectorColor "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColor>`\\"
@@ -4347,7 +5055,7 @@ msgstr ""
 msgid "A String specifying the vector color."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`vectorColorSpectrum "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.vectorColorSpectrum>`\\"
@@ -4357,7 +5065,7 @@ msgstr ""
 msgid "A String specifying the vector color spectrum name."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`tensorColorSpectrum "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorColorSpectrum>`\\"
@@ -4367,7 +5075,7 @@ msgstr ""
 msgid "A String specifying the tensor color spectrum name."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`textColorT "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textColorT>`\\"
@@ -4377,7 +5085,7 @@ msgstr ""
 msgid "A String specifying the text color for tensor."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`textColorV "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textColorV>`\\"
@@ -4387,7 +5095,7 @@ msgstr ""
 msgid "A String specifying the text color for vector."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`textFontT "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textFontT>`\\"
@@ -4397,7 +5105,7 @@ msgstr ""
 msgid "A String specifying the text font for tensor."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`textFontV "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.textFontV>`\\"
@@ -4407,7 +5115,7 @@ msgstr ""
 msgid "A String specifying the text font for vector."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`tensorMaxPrinColor "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMaxPrinColor>`\\"
@@ -4417,7 +5125,7 @@ msgstr ""
 msgid "A String specifying the color of the maximum principal tensor symbols."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`tensorMinPrinColor "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMinPrinColor>`\\"
@@ -4427,7 +5135,7 @@ msgstr ""
 msgid "A String specifying the color of the minimum principal tensor symbols."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`tensorMidPrinColor "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorMidPrinColor>`\\"
@@ -4439,7 +5147,7 @@ msgid ""
 "symbols."
 msgstr ""
 
-#: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
+#: ../../None:45:<autosummary>:1
 msgid ""
 ":py:obj:`tensorSelectedPrinColor "
 "<abaqus.OdbDisplay.SymbolOptions.SymbolOptions.tensorSelectedPrinColor>`\\"
@@ -4447,6 +5155,180 @@ msgstr ""
 
 #: ../../None:31:<autosummary>:1 ../../None:45:<autosummary>:1
 msgid "A String specifying the color of the selected principal tensor symbols."
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`vectorLineThickness "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.vectorLineThickness>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`vectorColorMethod "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.vectorColorMethod>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`tensorColorMethod "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.tensorColorMethod>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`vectorArrowheadStyle "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.vectorArrowheadStyle>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`arrowSymbolSize "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.arrowSymbolSize>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`vectorIntervalNumber "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.vectorIntervalNumber>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`symbolDensity "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.symbolDensity>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`constantLengthArrows "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.constantLengthArrows>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`tensorIntervalNumber "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.tensorIntervalNumber>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`tensorLineThickness "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.tensorLineThickness>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`tensorArrowheadStyle "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.tensorArrowheadStyle>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`numberFormatT "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.numberFormatT>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`numberFormatV "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.numberFormatV>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`arrowScaleMode "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.arrowScaleMode>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`drawLabelT "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.drawLabelT>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`drawLabelV "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.drawLabelV>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`numDigitsT "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.numDigitsT>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`numDigitsV "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.numDigitsV>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`vectorColor "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.vectorColor>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`vectorColorSpectrum "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.vectorColorSpectrum>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`tensorColorSpectrum "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.tensorColorSpectrum>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`textColorT "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.textColorT>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`textColorV "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.textColorV>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`textFontT "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.textFontT>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`textFontV "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.textFontV>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`tensorMaxPrinColor "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.tensorMaxPrinColor>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`tensorMinPrinColor "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.tensorMinPrinColor>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`tensorMidPrinColor "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.tensorMidPrinColor>`\\"
+msgstr ""
+
+#: ../../None:31:<autosummary>:1
+msgid ""
+":py:obj:`tensorSelectedPrinColor "
+"<abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions.tensorSelectedPrinColor>`\\"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -4785,7 +5667,7 @@ msgid ""
 "\"verdana\"."
 msgstr ""
 
-#: ../../reference/session/odb_display.rst:75
+#: ../../reference/session/odb_display.rst:91
 msgid "ViewCut"
 msgstr ""
 
@@ -4991,6 +5873,13 @@ msgid ""
 "consistent with the current primary variable."
 msgstr ""
 
+#: abaqus.OdbDisplay.ViewCut.ViewCut.__init__:10 of
+msgid ""
+"Check `ViewCut.__init__ on help.3ds.com/2016 "
+"<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewcutpyc.htm?contextscope=all"
+"#simaker-viewcut__init__pyc>`__."
+msgstr ""
+
 #: ../../docstring abaqus.OdbDisplay.ViewCut.ViewCut.motion:1
 #: abaqus.OdbDisplay.ViewCut.ViewCut.setValues:9 of
 msgid ""
@@ -5042,7 +5931,7 @@ msgid ""
 "value is OFF."
 msgstr ""
 
-#: ../../reference/session/odb_display.rst:83
+#: ../../reference/session/odb_display.rst:101
 msgid "ViewerOptions"
 msgstr ""
 
@@ -5885,5 +6774,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "**odbUpdateCheckInterval**"
+#~ msgstr ""
+
+#~ msgid "Object features"
 #~ msgstr ""
 
