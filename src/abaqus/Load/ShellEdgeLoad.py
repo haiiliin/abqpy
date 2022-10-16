@@ -198,7 +198,7 @@ class ShellEdgeLoad(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        magnitude: Union[SymbolicConstant, float] = None,
+        magnitude: Union[SymbolicConstant, float, None] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing ShellEdgeLoad object in the

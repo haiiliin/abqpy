@@ -172,12 +172,12 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     def setValuesInStep(
         self,
         stepName: str,
-        v1: Union[SymbolicConstant, float] = None,
-        v2: Union[SymbolicConstant, float] = None,
-        v3: Union[SymbolicConstant, float] = None,
-        vr1: Union[SymbolicConstant, float] = None,
-        vr2: Union[SymbolicConstant, float] = None,
-        vr3: Union[SymbolicConstant, float] = None,
+        v1: Union[SymbolicConstant, float, None] = None,
+        v2: Union[SymbolicConstant, float, None] = None,
+        v3: Union[SymbolicConstant, float, None] = None,
+        vr1: Union[SymbolicConstant, float, None] = None,
+        vr2: Union[SymbolicConstant, float, None] = None,
+        vr3: Union[SymbolicConstant, float, None] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing VelocityAdaptiveMeshConstraint
