@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 00:22+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,32 @@ msgid ""
 msgstr ""
 
 #: ../../reference/session/display_options.rst:9
-msgid "Object features"
+msgid "Classes"
 msgstr ""
 
 #: ../../reference/session/display_options.rst:12
 msgid "AssemblyDisplayOptions"
+msgstr ""
+
+#: abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions:1
+#: abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions:1
+#: abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions:1
+#: abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions:1
+#: abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions:1
+#: abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions:1
+#: abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo:1
+#: abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions:1
+#: abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions:1
+#: abaqus.DisplayOptions.Light.Light:1
+#: abaqus.DisplayOptions.LightOptions.LightOptions:1
+#: abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions:1
+#: abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions:1
+#: abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions:1
+#: abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions:1
+#: abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions:1
+#: abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions:1
+#: abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions:1 of
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions:1 of
@@ -778,7 +799,7 @@ msgid ""
 "visible in the viewport. The default value is an empty sequence."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:20
+#: ../../reference/session/display_options.rst:22
 msgid "BCDisplayOptions"
 msgstr ""
 
@@ -894,7 +915,7 @@ msgid ""
 "is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:28
+#: ../../reference/session/display_options.rst:32
 msgid "ConstraintDisplayOptions"
 msgstr ""
 
@@ -970,7 +991,7 @@ msgid ""
 "default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:36
+#: ../../reference/session/display_options.rst:42
 msgid "EngineeringFeatureDisplayOptions"
 msgstr ""
 
@@ -1054,7 +1075,7 @@ msgid ""
 "default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:44
+#: ../../reference/session/display_options.rst:52
 msgid "GeometricRestrictionDisplayOptions"
 msgstr ""
 
@@ -1236,7 +1257,7 @@ msgid ""
 "are shown. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:52
+#: ../../reference/session/display_options.rst:62
 msgid "GeometryDisplayOptions"
 msgstr ""
 
@@ -1347,7 +1368,7 @@ msgid ""
 "default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:60
+#: ../../reference/session/display_options.rst:72
 msgid "GraphicsInfo"
 msgstr ""
 
@@ -1488,7 +1509,7 @@ msgid ""
 "and a String with any additional information."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:68
+#: ../../reference/session/display_options.rst:82
 msgid "GraphicsOptions"
 msgstr ""
 
@@ -2294,7 +2315,7 @@ msgid ""
 "**translucencyMode** ≤ 6. The default value is 4."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:76
+#: ../../reference/session/display_options.rst:92
 msgid "InteractionDisplayOptions"
 msgstr ""
 
@@ -2392,7 +2413,7 @@ msgid ""
 "shown. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:84
+#: ../../reference/session/display_options.rst:102
 msgid "Light"
 msgstr ""
 
@@ -2477,11 +2498,11 @@ msgid ""
 "strings is in the **colors** map in the **session** object."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:92
+#: ../../reference/session/display_options.rst:112
 msgid "LightArray"
 msgstr ""
 
-#: ../../reference/session/display_options.rst:100
+#: ../../reference/session/display_options.rst:122
 msgid "LightOptions"
 msgstr ""
 
@@ -2640,7 +2661,7 @@ msgid ""
 "calculated. However, overall performance is decreased."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:108
+#: ../../reference/session/display_options.rst:132
 msgid "LoadDisplayOptions"
 msgstr ""
 
@@ -2858,7 +2879,7 @@ msgid ""
 "shown. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:116
+#: ../../reference/session/display_options.rst:142
 msgid "MeshDisplayOptions"
 msgstr ""
 
@@ -2974,7 +2995,7 @@ msgid ""
 " partDisplay. The default value is OFF."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:124
+#: ../../reference/session/display_options.rst:152
 msgid "OptimizationTaskDisplayOptions"
 msgstr ""
 
@@ -3030,7 +3051,7 @@ msgid ""
 "value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:132
+#: ../../reference/session/display_options.rst:162
 msgid "PartDisplayOptions"
 msgstr ""
 
@@ -3153,7 +3174,7 @@ msgid ""
 "#simaker-partdisplayoptionssetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:140
+#: ../../reference/session/display_options.rst:172
 msgid "PredefinedFieldDisplayOptions"
 msgstr ""
 
@@ -3230,7 +3251,7 @@ msgid ""
 "default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:148
+#: ../../reference/session/display_options.rst:182
 msgid "StopConditionDisplayOptions"
 msgstr ""
 
@@ -3279,7 +3300,7 @@ msgid ""
 "default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:156
+#: ../../reference/session/display_options.rst:192
 msgid "SymbolDisplayOptions"
 msgstr ""
 
@@ -3364,7 +3385,7 @@ msgid ""
 " field value. The default value is ON."
 msgstr ""
 
-#: ../../reference/session/display_options.rst:164
+#: ../../reference/session/display_options.rst:202
 msgid "ViewportAnnotationOptions"
 msgstr ""
 
@@ -5101,5 +5122,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "**compassPrivilegedPlane**"
+#~ msgstr ""
+
+#~ msgid "Object features"
 #~ msgstr ""
 
