@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 00:23+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,11 +32,17 @@ msgid ""
 msgstr ""
 
 #: ../../reference/mdb.rst:19
-msgid "Object features"
+msgid "Classes"
 msgstr ""
 
 #: ../../reference/mdb.rst:22
 msgid "Mdb"
+msgstr ""
+
+#: abaqus.Mdb.Mdb.Mdb:1 of
+msgid ""
+"Bases: :py:class:`~abaqus.Part.AcisMdb.AcisMdb`, "
+":py:class:`~abaqus.Job.JobMdb.JobMdb`"
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb:1 abaqus.Mdb.Mdb.Mdb:1 abaqus.Mdb.MdbBase.MdbBase:1
@@ -63,16 +69,16 @@ msgid "Public Data Attributes:"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`version <abaqus.Mdb.Mdb.Mdb.version>`\\"
+msgid ":py:obj:`version <abaqus.Mdb.MdbBase.MdbBase.version>`\\"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 ../../docstring abaqus.Mdb.Mdb.Mdb.version:1
+#: ../../None:12:<autosummary>:1 ../../docstring
 #: abaqus.Mdb.MdbBase.MdbBase.version:1 of
 msgid "An Int specifying the release number of the Mdb object in memory."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`lastChangedCount <abaqus.Mdb.Mdb.Mdb.lastChangedCount>`\\"
+msgid ":py:obj:`lastChangedCount <abaqus.Mdb.MdbBase.MdbBase.lastChangedCount>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -80,52 +86,50 @@ msgid "A Float specifying the value of a counter associated with the Mdb object.
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`jobs <abaqus.Mdb.Mdb.Mdb.jobs>`\\"
+msgid ":py:obj:`jobs <abaqus.Mdb.MdbBase.MdbBase.jobs>`\\"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 ../../docstring abaqus.Mdb.Mdb.Mdb.jobs:1
+#: ../../None:12:<autosummary>:1 ../../docstring
 #: abaqus.Mdb.MdbBase.MdbBase.jobs:1 of
 msgid "A repository of Job objects."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`adaptivityProcesses <abaqus.Mdb.Mdb.Mdb.adaptivityProcesses>`\\"
+msgid ""
+":py:obj:`adaptivityProcesses "
+"<abaqus.Mdb.MdbBase.MdbBase.adaptivityProcesses>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
-#: abaqus.Mdb.Mdb.Mdb.adaptivityProcesses:1
 #: abaqus.Mdb.MdbBase.MdbBase.adaptivityProcesses:1 of
 msgid "A repository of AdaptivityProcess objects."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`coexecutions <abaqus.Mdb.Mdb.Mdb.coexecutions>`\\"
+msgid ":py:obj:`coexecutions <abaqus.Mdb.MdbBase.MdbBase.coexecutions>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
-#: abaqus.Mdb.Mdb.Mdb.coexecutions:1 abaqus.Mdb.MdbBase.MdbBase.coexecutions:1
-#: of
+#: abaqus.Mdb.MdbBase.MdbBase.coexecutions:1 of
 msgid "A repository of Coexecution objects."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
 msgid ""
 ":py:obj:`optimizationProcesses "
-"<abaqus.Mdb.Mdb.Mdb.optimizationProcesses>`\\"
+"<abaqus.Mdb.MdbBase.MdbBase.optimizationProcesses>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
-#: abaqus.Mdb.Mdb.Mdb.optimizationProcesses:1
 #: abaqus.Mdb.MdbBase.MdbBase.optimizationProcesses:1 of
 msgid "A repository of OptimizationProcess objects."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`meshEditOptions <abaqus.Mdb.Mdb.Mdb.meshEditOptions>`\\"
+msgid ":py:obj:`meshEditOptions <abaqus.Mdb.MdbBase.MdbBase.meshEditOptions>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
-#: abaqus.Mdb.Mdb.Mdb.meshEditOptions:1
 #: abaqus.Mdb.MdbBase.MdbBase.meshEditOptions:1 of
 msgid ""
 "A :py:class:`~abaqus.EditMesh.MeshEditOptions.MeshEditOptions` object "
@@ -134,31 +138,31 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`models <abaqus.Mdb.Mdb.Mdb.models>`\\"
+msgid ":py:obj:`models <abaqus.Mdb.MdbBase.MdbBase.models>`\\"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1 ../../docstring abaqus.Mdb.Mdb.Mdb.models:1
+#: ../../None:12:<autosummary>:1 ../../docstring
 #: abaqus.Mdb.MdbBase.MdbBase.models:1 of
 msgid "A repository of Model objects."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`customData <abaqus.Mdb.Mdb.Mdb.customData>`\\"
+msgid ":py:obj:`customData <abaqus.Mdb.MdbBase.MdbBase.customData>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
-#: abaqus.Mdb.Mdb.Mdb.customData:1 abaqus.Mdb.MdbBase.MdbBase.customData:1 of
+#: abaqus.Mdb.MdbBase.MdbBase.customData:1 of
 msgid ""
 "A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` "
 "object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`annotations <abaqus.Mdb.Mdb.Mdb.annotations>`\\"
+msgid ":py:obj:`annotations <abaqus.Mdb.MdbBase.MdbBase.annotations>`\\"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 ../../docstring
-#: abaqus.Mdb.Mdb.Mdb.annotations:1 abaqus.Mdb.MdbBase.MdbBase.annotations:1 of
+#: abaqus.Mdb.MdbBase.MdbBase.annotations:1 of
 msgid "A repository of Annotation objects."
 msgstr ""
 
@@ -179,8 +183,8 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-":py:obj:`openAcis <abaqus.Mdb.Mdb.Mdb.openAcis>`\\ \\(fileName\\[\\, "
-"scaleFromFile\\]\\)"
+":py:obj:`openAcis <abaqus.Part.AcisMdb.AcisMdb.openAcis>`\\ "
+"\\(fileName\\[\\, scaleFromFile\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -191,8 +195,8 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-":py:obj:`openCatia <abaqus.Mdb.Mdb.Mdb.openCatia>`\\ \\(fileName\\[\\, "
-"topology\\, ...\\]\\)"
+":py:obj:`openCatia <abaqus.Part.AcisMdb.AcisMdb.openCatia>`\\ "
+"\\(fileName\\[\\, topology\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -203,7 +207,7 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-":py:obj:`openEnf <abaqus.Mdb.Mdb.Mdb.openEnf>`\\ \\(fileName\\, "
+":py:obj:`openEnf <abaqus.Part.AcisMdb.AcisMdb.openEnf>`\\ \\(fileName\\, "
 "fileType\\[\\, topology\\, ...\\]\\)"
 msgstr ""
 
@@ -216,8 +220,8 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-":py:obj:`openIges <abaqus.Mdb.Mdb.Mdb.openIges>`\\ \\(fileName\\[\\, "
-"trimCurve\\, ...\\]\\)"
+":py:obj:`openIges <abaqus.Part.AcisMdb.AcisMdb.openIges>`\\ "
+"\\(fileName\\[\\, trimCurve\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -228,7 +232,7 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-":py:obj:`openParasolid <abaqus.Mdb.Mdb.Mdb.openParasolid>`\\ "
+":py:obj:`openParasolid <abaqus.Part.AcisMdb.AcisMdb.openParasolid>`\\ "
 "\\(fileName\\[\\, topology\\]\\)"
 msgstr ""
 
@@ -240,8 +244,8 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-":py:obj:`openStep <abaqus.Mdb.Mdb.Mdb.openStep>`\\ \\(fileName\\[\\, "
-"scale\\]\\)"
+":py:obj:`openStep <abaqus.Part.AcisMdb.AcisMdb.openStep>`\\ "
+"\\(fileName\\[\\, scale\\]\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -251,7 +255,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
-msgid ":py:obj:`openVda <abaqus.Mdb.Mdb.Mdb.openVda>`\\ \\(fileName\\)"
+msgid ":py:obj:`openVda <abaqus.Part.AcisMdb.AcisMdb.openVda>`\\ \\(fileName\\)"
 msgstr ""
 
 #: ../../None:10:<autosummary>:1
@@ -262,7 +266,7 @@ msgstr ""
 
 #: ../../None:10:<autosummary>:1
 msgid ""
-":py:obj:`openSolidworks <abaqus.Mdb.Mdb.Mdb.openSolidworks>`\\ "
+":py:obj:`openSolidworks <abaqus.Part.AcisMdb.AcisMdb.openSolidworks>`\\ "
 "\\(fileName\\[\\, topology\\]\\)"
 msgstr ""
 
@@ -274,7 +278,7 @@ msgstr ""
 
 #: ../../None:5:<autosummary>:1
 msgid ""
-":py:obj:`Job <abaqus.Mdb.Mdb.Mdb.Job>`\\ \\(name\\, model\\[\\, "
+":py:obj:`Job <abaqus.Job.JobMdb.JobMdb.Job>`\\ \\(name\\, model\\[\\, "
 "description\\, type\\, queue\\, ...\\]\\)"
 msgstr ""
 
@@ -286,7 +290,7 @@ msgstr ""
 
 #: ../../None:5:<autosummary>:1
 msgid ""
-":py:obj:`JobFromInputFile <abaqus.Mdb.Mdb.Mdb.JobFromInputFile>`\\ "
+":py:obj:`JobFromInputFile <abaqus.Job.JobMdb.JobMdb.JobFromInputFile>`\\ "
 "\\(name\\, inputFileName\\[\\, ...\\]\\)"
 msgstr ""
 
@@ -298,8 +302,9 @@ msgstr ""
 
 #: ../../None:5:<autosummary>:1
 msgid ""
-":py:obj:`OptimizationProcess <abaqus.Mdb.Mdb.Mdb.OptimizationProcess>`\\ "
-"\\(name\\, model\\, task\\, ...\\)"
+":py:obj:`OptimizationProcess "
+"<abaqus.Job.JobMdb.JobMdb.OptimizationProcess>`\\ \\(name\\, model\\, "
+"task\\, ...\\)"
 msgstr ""
 
 #: ../../None:5:<autosummary>:1 abaqus.Job.JobMdb.JobMdb.OptimizationProcess:1
@@ -308,15 +313,19 @@ msgid "This method creates an OptimizationProcess object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.Mdb.Mdb.Mdb.__init__>`\\ \\(\\[pathName\\]\\)"
+msgid ""
+":py:obj:`__init__ <abaqus.Mdb.MdbBase.MdbBase.__init__>`\\ "
+"\\(\\[pathName\\]\\)"
 msgstr ""
 
-#: ../../None:12:<autosummary>:1
+#: ../../None:12:<autosummary>:1 abaqus.Mdb.MdbBase.MdbBase.__init__:1 of
 msgid "This constructor creates an empty Mdb object."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`importDxf <abaqus.Mdb.Mdb.Mdb.importDxf>`\\ \\(fileName\\)"
+msgid ""
+":py:obj:`importDxf <abaqus.Mdb.MdbBase.MdbBase.importDxf>`\\ "
+"\\(fileName\\)"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -326,7 +335,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`openMdb <abaqus.Mdb.Mdb.Mdb.openMdb>`\\ \\(pathName\\)"
+msgid ":py:obj:`openMdb <abaqus.Mdb.MdbBase.MdbBase.openMdb>`\\ \\(pathName\\)"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 abaqus.Mdb.MdbBase.MdbBase.openMdb:1 of
@@ -334,7 +343,7 @@ msgid "This method opens an existing model database file."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`close <abaqus.Mdb.Mdb.Mdb.close>`\\ \\(\\)"
+msgid ":py:obj:`close <abaqus.Mdb.MdbBase.MdbBase.close>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -344,7 +353,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`save <abaqus.Mdb.Mdb.Mdb.save>`\\ \\(\\)"
+msgid ":py:obj:`save <abaqus.Mdb.MdbBase.MdbBase.save>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 abaqus.Mdb.MdbBase.MdbBase.save:1 of
@@ -354,7 +363,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`saveAs <abaqus.Mdb.Mdb.Mdb.saveAs>`\\ \\(pathName\\)"
+msgid ":py:obj:`saveAs <abaqus.Mdb.MdbBase.MdbBase.saveAs>`\\ \\(pathName\\)"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 abaqus.Mdb.MdbBase.MdbBase.saveAs:1 of
@@ -362,7 +371,9 @@ msgid "This method saves an Mdb object to disk at the specified location."
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`openAuxMdb <abaqus.Mdb.Mdb.Mdb.openAuxMdb>`\\ \\(pathName\\)"
+msgid ""
+":py:obj:`openAuxMdb <abaqus.Mdb.MdbBase.MdbBase.openAuxMdb>`\\ "
+"\\(pathName\\)"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -372,7 +383,7 @@ msgid ""
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
-msgid ":py:obj:`closeAuxMdb <abaqus.Mdb.Mdb.Mdb.closeAuxMdb>`\\ \\(\\)"
+msgid ":py:obj:`closeAuxMdb <abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1 abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb:1 of
@@ -383,8 +394,8 @@ msgstr ""
 
 #: ../../None:12:<autosummary>:1
 msgid ""
-":py:obj:`getAuxMdbModelNames <abaqus.Mdb.Mdb.Mdb.getAuxMdbModelNames>`\\ "
-"\\(\\)"
+":py:obj:`getAuxMdbModelNames "
+"<abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:12:<autosummary>:1
@@ -396,7 +407,7 @@ msgstr ""
 
 #: ../../None:12:<autosummary>:1
 msgid ""
-":py:obj:`copyAuxMdbModel <abaqus.Mdb.Mdb.Mdb.copyAuxMdbModel>`\\ "
+":py:obj:`copyAuxMdbModel <abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel>`\\ "
 "\\(fromName\\[\\, toName\\]\\)"
 msgstr ""
 
@@ -409,8 +420,8 @@ msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.Job:5 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:4
 #: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:4 abaqus.Mdb.Mdb.Mdb.Model:4
-#: abaqus.Mdb.MdbBase.MdbBase.importDxf:6 abaqus.Mdb.MdbBase.MdbBase.openMdb:4
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:5
+#: abaqus.Mdb.MdbBase.MdbBase.__init__:4 abaqus.Mdb.MdbBase.MdbBase.importDxf:6
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:4 abaqus.Part.AcisMdb.AcisMdb.openAcis:5
 #: abaqus.Part.AcisMdb.AcisMdb.openCatia:5
 #: abaqus.Part.AcisMdb.AcisMdb.openEnf:6 abaqus.Part.AcisMdb.AcisMdb.openIges:5
 #: abaqus.Part.AcisMdb.AcisMdb.openParasolid:5
@@ -420,15 +431,15 @@ msgstr ""
 msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job:10 of
+#: abaqus.Mdb.Mdb.Mdb.Model:9 of
 msgid ""
-"Check `Job on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobpyc.htm?contextscope=all>`__."
+"Check `Model on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.Job abaqus.Job.JobMdb.JobMdb.JobFromInputFile
 #: abaqus.Job.JobMdb.JobMdb.OptimizationProcess abaqus.Mdb.Mdb.Mdb.Model
-#: abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb
+#: abaqus.Mdb.MdbBase.MdbBase.__init__ abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb
 #: abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel
 #: abaqus.Mdb.MdbBase.MdbBase.importDxf abaqus.Mdb.MdbBase.MdbBase.openAuxMdb
 #: abaqus.Mdb.MdbBase.MdbBase.openMdb abaqus.Mdb.MdbBase.MdbBase.save
@@ -439,6 +450,683 @@ msgstr ""
 #: abaqus.Part.AcisMdb.AcisMdb.openSolidworks
 #: abaqus.Part.AcisMdb.AcisMdb.openStep abaqus.Part.AcisMdb.AcisMdb.openVda of
 msgid "Parameters"
+msgstr ""
+
+#: abaqus.Mdb.Mdb.Mdb.Model:12 of
+msgid "A String specifying the repository key."
+msgstr ""
+
+#: abaqus.Mdb.Mdb.Mdb.Model:14 of
+msgid ""
+"A String specifying the purpose and contents of the Model object. The "
+"default value is an empty string."
+msgstr ""
+
+#: abaqus.Mdb.Mdb.Mdb.Model:17 of
+msgid ""
+"None or a Float specifying the Stefan-Boltzmann constant. The default "
+"value is None."
+msgstr ""
+
+#: abaqus.Mdb.Mdb.Mdb.Model:19 of
+msgid ""
+"None or a Float specifying the absolute zero constant. The default value "
+"is None."
+msgstr ""
+
+#: abaqus.Mdb.Mdb.Mdb.Model:21 of
+msgid ""
+"A SymbolicConstant specifying the type of incident wave formulation to be"
+" used in acoustic problems. Possible values are NOT_SET, SCATTERED, and "
+"TOTAL. The default value is NOT_SET."
+msgstr ""
+
+#: abaqus.Mdb.Mdb.Mdb.Model:25 of
+msgid ""
+"A SymbolicConstant specifying the analysis model type. Possible values "
+"are STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is "
+"STANDARD_EXPLICIT."
+msgstr ""
+
+#: abaqus.Mdb.Mdb.Mdb.Model:28 of
+msgid ""
+"None or a Float specifying the universal gas constant. The default value "
+"is None."
+msgstr ""
+
+#: abaqus.Mdb.Mdb.Mdb.Model:30 of
+msgid ""
+"A boolean specifying whether to copy the constraints created in the model"
+" to the model that instances this model. The default value is ON."
+msgstr ""
+
+#: abaqus.Mdb.Mdb.Mdb.Model:33 of
+msgid ""
+"A boolean specifying whether to copy the connectors created in the model "
+"to the model that instances this model. The default value is ON."
+msgstr ""
+
+#: abaqus.Mdb.Mdb.Mdb.Model:36 of
+msgid ""
+"A boolean specifying whether to copy the interactions created in the "
+"model to the model that instances this model. The default value is ON."
+msgstr ""
+
+#: abaqus.Job.JobMdb.JobMdb.Job abaqus.Job.JobMdb.JobMdb.OptimizationProcess
+#: abaqus.Mdb.Mdb.Mdb.Model abaqus.Mdb.MdbBase.MdbBase.__init__
+#: abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames
+#: abaqus.Mdb.MdbBase.MdbBase.importDxf abaqus.Mdb.MdbBase.MdbBase.openMdb
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis abaqus.Part.AcisMdb.AcisMdb.openCatia
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf abaqus.Part.AcisMdb.AcisMdb.openIges
+#: abaqus.Part.AcisMdb.AcisMdb.openParasolid
+#: abaqus.Part.AcisMdb.AcisMdb.openStep abaqus.Part.AcisMdb.AcisMdb.openVda of
+msgid "Returns"
+msgstr ""
+
+#: abaqus.Mdb.Mdb.Mdb.Model:39 of
+msgid "**model** -- A :py:class:`~abaqus.Model.Model.Model` object"
+msgstr ""
+
+#: abaqus.Job.JobMdb.JobMdb.Job abaqus.Job.JobMdb.JobMdb.OptimizationProcess
+#: abaqus.Mdb.Mdb.Mdb.Model abaqus.Mdb.MdbBase.MdbBase.__init__
+#: abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames
+#: abaqus.Mdb.MdbBase.MdbBase.importDxf abaqus.Mdb.MdbBase.MdbBase.openMdb
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis abaqus.Part.AcisMdb.AcisMdb.openCatia
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf abaqus.Part.AcisMdb.AcisMdb.openIges
+#: abaqus.Part.AcisMdb.AcisMdb.openParasolid
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks
+#: abaqus.Part.AcisMdb.AcisMdb.openStep abaqus.Part.AcisMdb.AcisMdb.openVda of
+msgid "Return type"
+msgstr ""
+
+#: abaqus.Mdb.Mdb.Mdb.Model:40 of
+msgid ":class:`Model`"
+msgstr ""
+
+#: ../../reference/mdb.rst:32
+msgid "MdbBase"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase:10 of
+msgid ""
+"Check `MdbBase on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.__init__:9 of
+msgid ""
+"Check `Mdb.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdb__init__pyc>`__."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.__init__:12 of
+msgid ""
+"A String specifying the path to be used when the model database is saved "
+"to a file. If you do not provide a file extension, .cae is appended "
+"automatically to the path. The default value is an empty string."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.__init__:17
+#: abaqus.Mdb.MdbBase.MdbBase.importDxf:16
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:16 of
+msgid "A :py:class:`~abaqus.Mdb.Mdb.Mdb` object"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.__init__:18
+#: abaqus.Mdb.MdbBase.MdbBase.importDxf:17
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:17 of
+msgid ":class:`Mdb`"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.close:1 of
+msgid ""
+"This method closes an open Mdb object but does not save the Mdb object to"
+" disk. After closing the Mdb object, this method creates a new unnamed "
+"empty Mdb object."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb:5 of
+msgid ""
+"Check `Mdb.closeAuxMdb on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdbcloseauxmdbpyc>`__."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb:7 of
+msgid ""
+"The auxiliary Mdb was not opened; If the auxiliary Mdb was not opened "
+"earlier"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel:5 of
+msgid ""
+"Check `Mdb.copyAuxMdbModel on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdbcopyauxmdbmodelpyc>`__."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel:8 of
+msgid ""
+"A String specifying the model name in the auxiliary Mdb which is to be "
+"copied."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel:10 of
+msgid ""
+"A String specifying the name to be given to the model after it is copied "
+"into the Mdb. If this argument is not specified **toName** is assumed to "
+"be the same as **fromName**. If a model with name **toName** already "
+"exists in Mdb, it is overwritten."
+msgstr ""
+
+#: abaqus.Job.JobMdb.JobMdb.Job abaqus.Job.JobMdb.JobMdb.OptimizationProcess
+#: abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel
+#: abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames
+#: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb abaqus.Mdb.MdbBase.MdbBase.openMdb
+#: abaqus.Mdb.MdbBase.MdbBase.save abaqus.Mdb.MdbBase.MdbBase.saveAs
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis abaqus.Part.AcisMdb.AcisMdb.openIges
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks
+#: abaqus.Part.AcisMdb.AcisMdb.openStep abaqus.Part.AcisMdb.AcisMdb.openVda of
+msgid "Raises"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel:14
+#: abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames:7 of
+msgid ""
+"The auxiliary Mdb was not opened;     If the auxiliary Mdb was not opened"
+" earlier"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel:15 of
+msgid ""
+"fromName does not exist;     If the model fromName does not exist in the "
+"auxiliary Mdb"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames:4 of
+msgid "A list of model names present in the auxiliaryMdb"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames:5 of
+msgid ":class:`List[str]`"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.importDxf:1 of
+msgid ""
+"This method creates a ConstrainedSketch object from a file containing "
+"dxf-format (AutoCAD) geometry. Only a limited number of entities are "
+"supported. This format should be used only if no other formats are "
+"available."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.importDxf:11 of
+msgid ""
+"Check `Mdb.importDxf on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdbimportdxfpyc>`__."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.importDxf:14 of
+msgid "A String specifying the path to the dxf file to open."
+msgstr ""
+
+#: ../../docstring abaqus.Mdb.MdbBase.MdbBase.lastChangedCount:1 of
+msgid ""
+"A Float specifying the value of a counter associated with the Mdb object."
+" The counter indicates when the Mdb object was last changed."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:1 of
+msgid ""
+"This method opens an auxiliary Mdb object on the disk at the specified "
+"location. This enables models from the auxiliary Mdb object to be copied "
+"into the current Mdb."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:5 of
+msgid ""
+"Check `Mdb.openAuxMdb on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdbopenauxmdbpyc>`__."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:8 of
+msgid ""
+"A String specifying the path to the auxiliary Mdb which is to be opened. "
+"If you do not provide a file extension, .cae is appended automatically to"
+" the path."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:12
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:19 of
+msgid "invalid model database;     If the file is an invalid model database"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:13 of
+msgid ""
+"incompatible release number;     If the file contains a model database "
+"from an Abaqus release other than the Abaqus     release you are "
+"currently running"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:14
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:22 of
+msgid ""
+"cannot open file;     If the command fails to open the model database "
+"file for reasons not mentioned above"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:9 of
+msgid ""
+"Check `Mdb.openMdb on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdbopenmdbpyc>`__."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:12 of
+msgid ""
+"A String specifying the path to the model database file to open. If you "
+"do not provide a file extension, Abaqus/CAE attempts to open the file "
+"with .cae appended to the path."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:20 of
+msgid ""
+"incompatible release number, expected *<Abaqus release>*, got *<earlier "
+"or later Abaqus release>*;     If the file contains a model database from"
+" an Abaqus release other than the Abaqus     release you are currently "
+"running"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.openMdb:21 of
+msgid ""
+"cannot open file; may be in use by another CAE session;     If the model "
+"database file is already opened in write mode"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.save:5 of
+msgid ""
+"Check `Mdb.save on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdbsavepyc>`__."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.save:7 of
+msgid ""
+"cannot save file; If the command fails to save the Mdb object to disk for"
+" reasons not mentioned above"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.save:10 of
+msgid "cannot save file: pathname member is empty;     If **pathName** is empty"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.save:11 abaqus.Mdb.MdbBase.MdbBase.saveAs:11 of
+msgid "“abaqus.cae” is an invalid CAE filename;     If **pathName** is abaqus.cae"
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.saveAs:4 of
+msgid ""
+"Check `Mdb.saveAs on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdbsaveaspyc>`__."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.saveAs:7 of
+msgid ""
+"A String specifying the path to be used when the model database is saved "
+"to a file. If you do not provide a file extension, .cae is appended "
+"automatically to the path."
+msgstr ""
+
+#: abaqus.Mdb.MdbBase.MdbBase.saveAs:12 of
+msgid ""
+"cannot save file;     If the command fails to save the Mdb object to disk"
+" for reasons not mentioned above"
+msgstr ""
+
+#: ../../reference/mdb.rst:42
+msgid "AcisMdb"
+msgstr ""
+
+#: abaqus.Job.JobMdb.JobMdb:1 abaqus.Part.AcisMdb.AcisMdb:1 of
+msgid "Bases: :py:class:`~abaqus.Mdb.MdbBase.MdbBase`"
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb:10 of
+msgid ""
+"Check `AcisMdb on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:1 of
+msgid ""
+"This method creates an AcisFile object from a file containing ACIS-format"
+" geometry. This object is subsequently used by the PartFromGeometryFile "
+"method."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:10 of
+msgid ""
+"Check `Mdb.openAcis on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdbopenacispyc>`__."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:13 of
+msgid "A String specifying the path to the ACIS file to open."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:15 of
+msgid ""
+"A Boolean specifying whether to scale, rotate, and translate the part "
+"using the transform read from the ACIS file. The default value is OFF."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:18
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:28
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:30
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:43
+#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:21
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:18
+#: abaqus.Part.AcisMdb.AcisMdb.openVda:15 of
+msgid "An :py:class:`~abaqus.Part.AcisFile.AcisFile` object."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:19
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:29
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:31
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:44
+#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:22
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:19
+#: abaqus.Part.AcisMdb.AcisMdb.openVda:16 of
+msgid ":class:`AcisFile`"
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:21 of
+msgid "File is from a newer version of ACIS than the CAE kernel."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openAcis:22 of
+msgid "The data in the ACIS file are corrupted."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:1 of
+msgid ""
+"This method creates an AcisFile object from a file containing V5-format "
+"geometry. This object is subsequently used by the PartFromGeometryFile "
+"method."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:10 of
+msgid ""
+"Check `Mdb.openCatia on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdbopencatiapyc>`__."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:13 of
+msgid "A String specifying the path to the CATIA file to open."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:15 of
+msgid ""
+"A SymbolicConstant specifying the topology of the data to be read from "
+"the file and of the part to be created. Possible values are SOLID , "
+"SHELL, and WIRE. If **topology** = SOLID, Abaqus/CAE attempts to attach "
+"cells to create a solid. If **topology** = SHELL, Abaqus/CAE builds the "
+"body as a shell entity and not as a solid entity. The default value is "
+"SOLID ."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:21 of
+msgid ""
+"A SymbolicConstant specifying whether the original units should be "
+"retained. Possible values are ON and OFF. The default value is OFF."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openCatia:24 of
+msgid ""
+"A Boolean specifying whether to combine the bodies in the CATPart file. "
+"If the bodies to be combined touch or overlap, invalid entities would "
+"result. For CATProduct files, this option will be ignored."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:1 of
+msgid ""
+"This method creates an AcisFile object from a file containing Elysium "
+"Neutral File-format geometry that was created by CATIA V5, I-DEAS, or "
+"Pro/ENGINEER. This object is subsequently used by the "
+"PartFromGeometryFile method."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:11 of
+msgid ""
+"Check `Mdb.openEnf on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdbopenenfpyc>`__."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:14 of
+msgid ""
+"A String specifying the path to the Elysium Neutral File that was created"
+" by I-DEAS, Pro/ENGINEER, or CATIA V5."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:17 of
+msgid ""
+"A String specifying the type of CAD system that created the file. "
+"Possible values are “ideas”, “proe”, or “catiav5” or a combination "
+"similar to “proe/ideas/catiav5” if the type is unknown."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:21
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:33
+#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:15 of
+msgid ""
+"A SymbolicConstant specifying the topology of the data to be read from "
+"the file and of the part to be created. Possible values are SOLID , "
+"SHELL, and WIRE. If **topology** = SOLID, Abaqus/CAE attempts to attach "
+"cells to create a solid. If **topology** = SHELL, Abaqus/CAE builds the "
+"body as a shell entity and not as a solid entity. The default value is "
+"SOLID."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openEnf:27 of
+msgid ""
+"A Boolean specifying if the dimensions of the part should be converted to"
+" millimeters. The default value is OFF."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:1 of
+msgid ""
+"This method creates an AcisFile object from a file containing IGES-format"
+" geometry. This object is subsequently used by the PartFromGeometryFile "
+"method."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:10 of
+msgid ""
+"Check `Mdb.openIges on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdbopenigespyc>`__."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:13 of
+msgid "A String specifying the path to the IGES file to open."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:15 of
+msgid ""
+"A SymbolicConstant specifying the method used to define the trim curves "
+"that bound parametric surfaces. Possible values are:DEFAULT, use either "
+"of the following as specified by the contents of the IGES "
+"file.PARAMETRIC_DATA, use the parameter space of the surface being "
+"trimmed.THREED_DATA, use real space—the coordinate system of the part "
+"along with an indication that the trim curve lies on the parametric "
+"surface.The default value is DEFAULT."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:22 of
+msgid ""
+"A SymbolicConstant specifying whether the imported geometry needs to be "
+"scaled using the units information available in the IGES file. Possible "
+"values are ON and OFF. The default value is OFF. When the argument is set"
+" to ON, the geometry is scaled to millimeters with respect to the unit "
+"system specified in the IGES file."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:27 of
+msgid ""
+"A Boolean specifying if the IGES file contains MSBO (Manifold Solid B-Rep"
+" Object) entities. The default value is False."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:30 of
+msgid ""
+"A sequence of Ints specifying the levels or layers of entities that will "
+"be translated from the IGES file to build the part. The default is to "
+"include all the layers."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:39 of
+msgid ""
+"A SymbolicConstant specifying whether the imported wires need to be "
+"united or not. Possible values are ON and OFF. The default value is ON. "
+"When importing a sketch, this value is set to OFF."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openIges:46 of
+msgid "The data in the IGES file are corrupted."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:1 of
+msgid ""
+"This method creates an AcisFile object from a file containing Parasolid-"
+"format geometry. This object is subsequently used by the "
+"PartFromGeometryFile method."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:10 of
+msgid ""
+"Check `Mdb.openParasolid on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdbopenparasolidpyc>`__."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:13 of
+msgid "A String specifying the path to the Parasolid file to open."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:1 of
+msgid ""
+"This method creates an AcisFile object from a file containing Solidworks "
+"format geometry. This object is subsequently used by the "
+"PartFromGeometryFile method."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:9 of
+msgid "The `openSolidworks` method was added."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:13 of
+msgid ""
+"Check `Mdb.openSolidworks on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdbopensolidworkspyc>`__."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:16 of
+msgid "A String specifying the path to the Solidworks file to open."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:18 of
+msgid ""
+"A SymbolicConstant specifying the topology of the data to be read from "
+"the file and of the part to be created. Possible values are SOLID, SHELL,"
+" and WIRE. If **topology** = SOLID, Abaqus/CAE attempts to attach cells "
+"to create a solid entity. If **topology** = SHELL, Abaqus/CAE builds the "
+"body as a shell entity, not as a solid entity. The default value is "
+"SOLID."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:24 of
+msgid ":class:`An AcisFile object.`"
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:26 of
+msgid "The data in the Solidworks file are corrupted."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:1 of
+msgid ""
+"This method creates an AcisFile object from a file containing STEP-format"
+" geometry. This object is subsequently used by the PartFromGeometryFile "
+"method."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:10 of
+msgid ""
+"Check `Mdb.openStep on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdbopensteppyc>`__."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:13 of
+msgid "A String specifying the path to the STEP file to open."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:15 of
+msgid ""
+"A Float specifying the scaling factor to apply to the imported geometric "
+"entities. The default value is 1.0."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openStep:21 of
+msgid "The data in the STEP file are corrupted."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openVda:1 of
+msgid ""
+"This method creates an AcisFile object from a file containing VDA-FS-"
+"format geometry. This object is subsequently used by the "
+"PartFromGeometryFile method."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openVda:10 of
+msgid ""
+"Check `Mdb.openVda on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
+"#simaker-mdbopenvdapyc>`__."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openVda:13 of
+msgid "A String specifying the path to the VDA-FS file to open."
+msgstr ""
+
+#: abaqus.Part.AcisMdb.AcisMdb.openVda:18 of
+msgid "The data in the VDA-FS file are corrupted."
+msgstr ""
+
+#: ../../reference/mdb.rst:52
+msgid "JobMdb"
+msgstr ""
+
+#: abaqus.Job.JobMdb.JobMdb:10 of
+msgid ""
+"Check `JobMdb on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Job.JobMdb.JobMdb.Job:10 of
+msgid ""
+"Check `Job on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.Job:13 abaqus.Job.JobMdb.JobMdb.JobFromInputFile:12
@@ -635,45 +1323,12 @@ msgstr ""
 msgid "The `licenseType` argument was added."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job abaqus.Job.JobMdb.JobMdb.OptimizationProcess
-#: abaqus.Mdb.Mdb.Mdb.Model abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames
-#: abaqus.Mdb.MdbBase.MdbBase.importDxf abaqus.Mdb.MdbBase.MdbBase.openMdb
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis abaqus.Part.AcisMdb.AcisMdb.openCatia
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf abaqus.Part.AcisMdb.AcisMdb.openIges
-#: abaqus.Part.AcisMdb.AcisMdb.openParasolid
-#: abaqus.Part.AcisMdb.AcisMdb.openStep abaqus.Part.AcisMdb.AcisMdb.openVda of
-msgid "Returns"
-msgstr ""
-
 #: abaqus.Job.JobMdb.JobMdb.Job:100 of
 msgid "A :py:class:`~abaqus.Job.ModelJob.ModelJob` object."
 msgstr ""
 
-#: abaqus.Job.JobMdb.JobMdb.Job abaqus.Job.JobMdb.JobMdb.OptimizationProcess
-#: abaqus.Mdb.Mdb.Mdb.Model abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames
-#: abaqus.Mdb.MdbBase.MdbBase.importDxf abaqus.Mdb.MdbBase.MdbBase.openMdb
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis abaqus.Part.AcisMdb.AcisMdb.openCatia
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf abaqus.Part.AcisMdb.AcisMdb.openIges
-#: abaqus.Part.AcisMdb.AcisMdb.openParasolid
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks
-#: abaqus.Part.AcisMdb.AcisMdb.openStep abaqus.Part.AcisMdb.AcisMdb.openVda of
-msgid "Return type"
-msgstr ""
-
 #: abaqus.Job.JobMdb.JobMdb.Job:101 of
 msgid ":class:`ModelJob`"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb.Job abaqus.Job.JobMdb.JobMdb.OptimizationProcess
-#: abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb
-#: abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel
-#: abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames
-#: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb abaqus.Mdb.MdbBase.MdbBase.openMdb
-#: abaqus.Mdb.MdbBase.MdbBase.save abaqus.Mdb.MdbBase.MdbBase.saveAs
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis abaqus.Part.AcisMdb.AcisMdb.openIges
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks
-#: abaqus.Part.AcisMdb.AcisMdb.openStep abaqus.Part.AcisMdb.AcisMdb.openVda of
-msgid "Raises"
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:9 of
@@ -719,80 +1374,6 @@ msgstr ""
 msgid ""
 "A SymbolicConstant specifying whether an analysis is decomposed into "
 "threads or into multiple processes that communicate through a message"
-msgstr ""
-
-#: abaqus.Mdb.Mdb.Mdb.Model:9 of
-msgid ""
-"Check `Model on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: abaqus.Mdb.Mdb.Mdb.Model:12 of
-msgid "A String specifying the repository key."
-msgstr ""
-
-#: abaqus.Mdb.Mdb.Mdb.Model:14 of
-msgid ""
-"A String specifying the purpose and contents of the Model object. The "
-"default value is an empty string."
-msgstr ""
-
-#: abaqus.Mdb.Mdb.Mdb.Model:17 of
-msgid ""
-"None or a Float specifying the Stefan-Boltzmann constant. The default "
-"value is None."
-msgstr ""
-
-#: abaqus.Mdb.Mdb.Mdb.Model:19 of
-msgid ""
-"None or a Float specifying the absolute zero constant. The default value "
-"is None."
-msgstr ""
-
-#: abaqus.Mdb.Mdb.Mdb.Model:21 of
-msgid ""
-"A SymbolicConstant specifying the type of incident wave formulation to be"
-" used in acoustic problems. Possible values are NOT_SET, SCATTERED, and "
-"TOTAL. The default value is NOT_SET."
-msgstr ""
-
-#: abaqus.Mdb.Mdb.Mdb.Model:25 of
-msgid ""
-"A SymbolicConstant specifying the analysis model type. Possible values "
-"are STANDARD_EXPLICIT and ELECTROMAGNETIC. The default is "
-"STANDARD_EXPLICIT."
-msgstr ""
-
-#: abaqus.Mdb.Mdb.Mdb.Model:28 of
-msgid ""
-"None or a Float specifying the universal gas constant. The default value "
-"is None."
-msgstr ""
-
-#: abaqus.Mdb.Mdb.Mdb.Model:30 of
-msgid ""
-"A boolean specifying whether to copy the constraints created in the model"
-" to the model that instances this model. The default value is ON."
-msgstr ""
-
-#: abaqus.Mdb.Mdb.Mdb.Model:33 of
-msgid ""
-"A boolean specifying whether to copy the connectors created in the model "
-"to the model that instances this model. The default value is ON."
-msgstr ""
-
-#: abaqus.Mdb.Mdb.Mdb.Model:36 of
-msgid ""
-"A boolean specifying whether to copy the interactions created in the "
-"model to the model that instances this model. The default value is ON."
-msgstr ""
-
-#: abaqus.Mdb.Mdb.Mdb.Model:39 of
-msgid "**model** -- A :py:class:`~abaqus.Model.Model.Model` object"
-msgstr ""
-
-#: abaqus.Mdb.Mdb.Mdb.Model:40 of
-msgid ":class:`Model`"
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:9 of
@@ -880,899 +1461,6 @@ msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:49 of
 msgid ":class:`OptimizationProcess`"
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.close:1 of
-msgid ""
-"This method closes an open Mdb object but does not save the Mdb object to"
-" disk. After closing the Mdb object, this method creates a new unnamed "
-"empty Mdb object."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb:4 of
-msgid ""
-"Check `Mdb.closeAuxMdb on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
-"#simaker-mdbcloseauxmdbpyc>`__."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb:6 of
-msgid ""
-"The auxiliary Mdb was not opened; If the auxiliary Mdb was not opened "
-"earlier"
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel:5 of
-msgid ""
-"Check `Mdb.copyAuxMdbModel on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
-"#simaker-mdbcopyauxmdbmodelpyc>`__."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel:8 of
-msgid ""
-"A String specifying the model name in the auxiliary Mdb which is to be "
-"copied."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel:10 of
-msgid ""
-"A String specifying the name to be given to the model after it is copied "
-"into the Mdb. If this argument is not specified **toName** is assumed to "
-"be the same as **fromName**. If a model with name **toName** already "
-"exists in Mdb, it is overwritten."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel:14
-#: abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames:7 of
-msgid ""
-"The auxiliary Mdb was not opened;     If the auxiliary Mdb was not opened"
-" earlier"
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel:15 of
-msgid ""
-"fromName does not exist;     If the model fromName does not exist in the "
-"auxiliary Mdb"
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames:4 of
-msgid "A list of model names present in the auxiliaryMdb"
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames:5 of
-msgid ":class:`List[str]`"
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.importDxf:1 of
-msgid ""
-"This method creates a ConstrainedSketch object from a file containing "
-"dxf-format (AutoCAD) geometry. Only a limited number of entities are "
-"supported. This format should be used only if no other formats are "
-"available."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.importDxf:11 of
-msgid ""
-"Check `Mdb.importDxf on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
-"#simaker-mdbimportdxfpyc>`__."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.importDxf:14 of
-msgid "A String specifying the path to the dxf file to open."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.importDxf:16
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:16 of
-msgid "A :py:class:`~abaqus.Mdb.Mdb.Mdb` object"
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.importDxf:17
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:17 of
-msgid ":class:`Mdb`"
-msgstr ""
-
-#: ../../docstring abaqus.Mdb.Mdb.Mdb.lastChangedCount:1
-#: abaqus.Mdb.MdbBase.MdbBase.lastChangedCount:1 of
-msgid ""
-"A Float specifying the value of a counter associated with the Mdb object."
-" The counter indicates when the Mdb object was last changed."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:1 of
-msgid ""
-"This method creates an AcisFile object from a file containing ACIS-format"
-" geometry. This object is subsequently used by the PartFromGeometryFile "
-"method."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:10 of
-msgid ""
-"Check `Mdb.openAcis on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
-"#simaker-mdbopenacispyc>`__."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:13 of
-msgid "A String specifying the path to the ACIS file to open."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:15 of
-msgid ""
-"A Boolean specifying whether to scale, rotate, and translate the part "
-"using the transform read from the ACIS file. The default value is OFF."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:18
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:28
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:30
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:43
-#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:21
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:18
-#: abaqus.Part.AcisMdb.AcisMdb.openVda:15 of
-msgid "An :py:class:`~abaqus.Part.AcisFile.AcisFile` object."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:19
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:29
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:31
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:44
-#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:22
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:19
-#: abaqus.Part.AcisMdb.AcisMdb.openVda:16 of
-msgid ":class:`AcisFile`"
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:21 of
-msgid "File is from a newer version of ACIS than the CAE kernel."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openAcis:22 of
-msgid "The data in the ACIS file are corrupted."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:1 of
-msgid ""
-"This method opens an auxiliary Mdb object on the disk at the specified "
-"location. This enables models from the auxiliary Mdb object to be copied "
-"into the current Mdb."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:5 of
-msgid ""
-"Check `Mdb.openAuxMdb on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
-"#simaker-mdbopenauxmdbpyc>`__."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:8 of
-msgid ""
-"A String specifying the path to the auxiliary Mdb which is to be opened. "
-"If you do not provide a file extension, .cae is appended automatically to"
-" the path."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:12
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:19 of
-msgid "invalid model database;     If the file is an invalid model database"
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:13 of
-msgid ""
-"incompatible release number;     If the file contains a model database "
-"from an Abaqus release other than the Abaqus     release you are "
-"currently running"
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.openAuxMdb:14
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:22 of
-msgid ""
-"cannot open file;     If the command fails to open the model database "
-"file for reasons not mentioned above"
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:1 of
-msgid ""
-"This method creates an AcisFile object from a file containing V5-format "
-"geometry. This object is subsequently used by the PartFromGeometryFile "
-"method."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:10 of
-msgid ""
-"Check `Mdb.openCatia on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
-"#simaker-mdbopencatiapyc>`__."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:13 of
-msgid "A String specifying the path to the CATIA file to open."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:15 of
-msgid ""
-"A SymbolicConstant specifying the topology of the data to be read from "
-"the file and of the part to be created. Possible values are SOLID , "
-"SHELL, and WIRE. If **topology** = SOLID, Abaqus/CAE attempts to attach "
-"cells to create a solid. If **topology** = SHELL, Abaqus/CAE builds the "
-"body as a shell entity and not as a solid entity. The default value is "
-"SOLID ."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:21 of
-msgid ""
-"A SymbolicConstant specifying whether the original units should be "
-"retained. Possible values are ON and OFF. The default value is OFF."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openCatia:24 of
-msgid ""
-"A Boolean specifying whether to combine the bodies in the CATPart file. "
-"If the bodies to be combined touch or overlap, invalid entities would "
-"result. For CATProduct files, this option will be ignored."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:1 of
-msgid ""
-"This method creates an AcisFile object from a file containing Elysium "
-"Neutral File-format geometry that was created by CATIA V5, I-DEAS, or "
-"Pro/ENGINEER. This object is subsequently used by the "
-"PartFromGeometryFile method."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:11 of
-msgid ""
-"Check `Mdb.openEnf on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
-"#simaker-mdbopenenfpyc>`__."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:14 of
-msgid ""
-"A String specifying the path to the Elysium Neutral File that was created"
-" by I-DEAS, Pro/ENGINEER, or CATIA V5."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:17 of
-msgid ""
-"A String specifying the type of CAD system that created the file. "
-"Possible values are “ideas”, “proe”, or “catiav5” or a combination "
-"similar to “proe/ideas/catiav5” if the type is unknown."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:21
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:33
-#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:15 of
-msgid ""
-"A SymbolicConstant specifying the topology of the data to be read from "
-"the file and of the part to be created. Possible values are SOLID , "
-"SHELL, and WIRE. If **topology** = SOLID, Abaqus/CAE attempts to attach "
-"cells to create a solid. If **topology** = SHELL, Abaqus/CAE builds the "
-"body as a shell entity and not as a solid entity. The default value is "
-"SOLID."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openEnf:27 of
-msgid ""
-"A Boolean specifying if the dimensions of the part should be converted to"
-" millimeters. The default value is OFF."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:1 of
-msgid ""
-"This method creates an AcisFile object from a file containing IGES-format"
-" geometry. This object is subsequently used by the PartFromGeometryFile "
-"method."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:10 of
-msgid ""
-"Check `Mdb.openIges on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
-"#simaker-mdbopenigespyc>`__."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:13 of
-msgid "A String specifying the path to the IGES file to open."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:15 of
-msgid ""
-"A SymbolicConstant specifying the method used to define the trim curves "
-"that bound parametric surfaces. Possible values are:DEFAULT, use either "
-"of the following as specified by the contents of the IGES "
-"file.PARAMETRIC_DATA, use the parameter space of the surface being "
-"trimmed.THREED_DATA, use real space—the coordinate system of the part "
-"along with an indication that the trim curve lies on the parametric "
-"surface.The default value is DEFAULT."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:22 of
-msgid ""
-"A SymbolicConstant specifying whether the imported geometry needs to be "
-"scaled using the units information available in the IGES file. Possible "
-"values are ON and OFF. The default value is OFF. When the argument is set"
-" to ON, the geometry is scaled to millimeters with respect to the unit "
-"system specified in the IGES file."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:27 of
-msgid ""
-"A Boolean specifying if the IGES file contains MSBO (Manifold Solid B-Rep"
-" Object) entities. The default value is False."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:30 of
-msgid ""
-"A sequence of Ints specifying the levels or layers of entities that will "
-"be translated from the IGES file to build the part. The default is to "
-"include all the layers."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:39 of
-msgid ""
-"A SymbolicConstant specifying whether the imported wires need to be "
-"united or not. Possible values are ON and OFF. The default value is ON. "
-"When importing a sketch, this value is set to OFF."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openIges:46 of
-msgid "The data in the IGES file are corrupted."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:9 of
-msgid ""
-"Check `Mdb.openMdb on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
-"#simaker-mdbopenmdbpyc>`__."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:12 of
-msgid ""
-"A String specifying the path to the model database file to open. If you "
-"do not provide a file extension, Abaqus/CAE attempts to open the file "
-"with .cae appended to the path."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:20 of
-msgid ""
-"incompatible release number, expected *<Abaqus release>*, got *<earlier "
-"or later Abaqus release>*;     If the file contains a model database from"
-" an Abaqus release other than the Abaqus     release you are currently "
-"running"
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.openMdb:21 of
-msgid ""
-"cannot open file; may be in use by another CAE session;     If the model "
-"database file is already opened in write mode"
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:1 of
-msgid ""
-"This method creates an AcisFile object from a file containing Parasolid-"
-"format geometry. This object is subsequently used by the "
-"PartFromGeometryFile method."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:10 of
-msgid ""
-"Check `Mdb.openParasolid on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
-"#simaker-mdbopenparasolidpyc>`__."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openParasolid:13 of
-msgid "A String specifying the path to the Parasolid file to open."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:1 of
-msgid ""
-"This method creates an AcisFile object from a file containing Solidworks "
-"format geometry. This object is subsequently used by the "
-"PartFromGeometryFile method."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:9 of
-msgid "The `openSolidworks` method was added."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:13 of
-msgid ""
-"Check `Mdb.openSolidworks on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
-"#simaker-mdbopensolidworkspyc>`__."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:16 of
-msgid "A String specifying the path to the Solidworks file to open."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:18 of
-msgid ""
-"A SymbolicConstant specifying the topology of the data to be read from "
-"the file and of the part to be created. Possible values are SOLID, SHELL,"
-" and WIRE. If **topology** = SOLID, Abaqus/CAE attempts to attach cells "
-"to create a solid entity. If **topology** = SHELL, Abaqus/CAE builds the "
-"body as a shell entity, not as a solid entity. The default value is "
-"SOLID."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:24 of
-msgid ":class:`An AcisFile object.`"
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openSolidworks:26 of
-msgid "The data in the Solidworks file are corrupted."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:1 of
-msgid ""
-"This method creates an AcisFile object from a file containing STEP-format"
-" geometry. This object is subsequently used by the PartFromGeometryFile "
-"method."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:10 of
-msgid ""
-"Check `Mdb.openStep on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
-"#simaker-mdbopensteppyc>`__."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:13 of
-msgid "A String specifying the path to the STEP file to open."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:15 of
-msgid ""
-"A Float specifying the scaling factor to apply to the imported geometric "
-"entities. The default value is 1.0."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openStep:21 of
-msgid "The data in the STEP file are corrupted."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openVda:1 of
-msgid ""
-"This method creates an AcisFile object from a file containing VDA-FS-"
-"format geometry. This object is subsequently used by the "
-"PartFromGeometryFile method."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openVda:10 of
-msgid ""
-"Check `Mdb.openVda on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
-"#simaker-mdbopenvdapyc>`__."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openVda:13 of
-msgid "A String specifying the path to the VDA-FS file to open."
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb.openVda:18 of
-msgid "The data in the VDA-FS file are corrupted."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.save:4 of
-msgid "cannot save file: pathname member is empty;     If **pathName** is empty"
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.save:5 abaqus.Mdb.MdbBase.MdbBase.saveAs:11 of
-msgid "“abaqus.cae” is an invalid CAE filename;     If **pathName** is abaqus.cae"
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.save:6 of
-msgid ""
-"Check `Mdb.save on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
-"#simaker-mdbsavepyc>`__."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.save:8 of
-msgid ""
-"cannot save file; If the command fails to save the Mdb object to disk for"
-" reasons not mentioned above"
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.saveAs:4 of
-msgid ""
-"Check `Mdb.saveAs on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all"
-"#simaker-mdbsaveaspyc>`__."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.saveAs:7 of
-msgid ""
-"A String specifying the path to be used when the model database is saved "
-"to a file. If you do not provide a file extension, .cae is appended "
-"automatically to the path."
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase.saveAs:12 of
-msgid ""
-"cannot save file;     If the command fails to save the Mdb object to disk"
-" for reasons not mentioned above"
-msgstr ""
-
-#: ../../reference/mdb.rst:31
-msgid "MdbBase"
-msgstr ""
-
-#: abaqus.Mdb.MdbBase.MdbBase:10 of
-msgid ""
-"Check `MdbBase on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`version <abaqus.Mdb.MdbBase.MdbBase.version>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`lastChangedCount <abaqus.Mdb.MdbBase.MdbBase.lastChangedCount>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`jobs <abaqus.Mdb.MdbBase.MdbBase.jobs>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`adaptivityProcesses "
-"<abaqus.Mdb.MdbBase.MdbBase.adaptivityProcesses>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`coexecutions <abaqus.Mdb.MdbBase.MdbBase.coexecutions>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`optimizationProcesses "
-"<abaqus.Mdb.MdbBase.MdbBase.optimizationProcesses>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`meshEditOptions <abaqus.Mdb.MdbBase.MdbBase.meshEditOptions>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`models <abaqus.Mdb.MdbBase.MdbBase.models>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`customData <abaqus.Mdb.MdbBase.MdbBase.customData>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`annotations <abaqus.Mdb.MdbBase.MdbBase.annotations>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`__init__ <abaqus.Mdb.MdbBase.MdbBase.__init__>`\\ "
-"\\(\\[pathName\\]\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`importDxf <abaqus.Mdb.MdbBase.MdbBase.importDxf>`\\ "
-"\\(fileName\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`openMdb <abaqus.Mdb.MdbBase.MdbBase.openMdb>`\\ \\(pathName\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`close <abaqus.Mdb.MdbBase.MdbBase.close>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`save <abaqus.Mdb.MdbBase.MdbBase.save>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`saveAs <abaqus.Mdb.MdbBase.MdbBase.saveAs>`\\ \\(pathName\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`openAuxMdb <abaqus.Mdb.MdbBase.MdbBase.openAuxMdb>`\\ "
-"\\(pathName\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`closeAuxMdb <abaqus.Mdb.MdbBase.MdbBase.closeAuxMdb>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`getAuxMdbModelNames "
-"<abaqus.Mdb.MdbBase.MdbBase.getAuxMdbModelNames>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`copyAuxMdbModel <abaqus.Mdb.MdbBase.MdbBase.copyAuxMdbModel>`\\ "
-"\\(fromName\\[\\, toName\\]\\)"
-msgstr ""
-
-#: ../../reference/mdb.rst:39
-msgid "AcisMdb"
-msgstr ""
-
-#: abaqus.Part.AcisMdb.AcisMdb:10 of
-msgid ""
-"Check `AcisMdb on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`version <abaqus.Part.AcisMdb.AcisMdb.version>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`lastChangedCount "
-"<abaqus.Part.AcisMdb.AcisMdb.lastChangedCount>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`jobs <abaqus.Part.AcisMdb.AcisMdb.jobs>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`adaptivityProcesses "
-"<abaqus.Part.AcisMdb.AcisMdb.adaptivityProcesses>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`coexecutions <abaqus.Part.AcisMdb.AcisMdb.coexecutions>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`optimizationProcesses "
-"<abaqus.Part.AcisMdb.AcisMdb.optimizationProcesses>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`meshEditOptions <abaqus.Part.AcisMdb.AcisMdb.meshEditOptions>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`models <abaqus.Part.AcisMdb.AcisMdb.models>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`customData <abaqus.Part.AcisMdb.AcisMdb.customData>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`annotations <abaqus.Part.AcisMdb.AcisMdb.annotations>`\\"
-msgstr ""
-
-#: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`openAcis <abaqus.Part.AcisMdb.AcisMdb.openAcis>`\\ "
-"\\(fileName\\[\\, scaleFromFile\\]\\)"
-msgstr ""
-
-#: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`openCatia <abaqus.Part.AcisMdb.AcisMdb.openCatia>`\\ "
-"\\(fileName\\[\\, topology\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`openEnf <abaqus.Part.AcisMdb.AcisMdb.openEnf>`\\ \\(fileName\\, "
-"fileType\\[\\, topology\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`openIges <abaqus.Part.AcisMdb.AcisMdb.openIges>`\\ "
-"\\(fileName\\[\\, trimCurve\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`openParasolid <abaqus.Part.AcisMdb.AcisMdb.openParasolid>`\\ "
-"\\(fileName\\[\\, topology\\]\\)"
-msgstr ""
-
-#: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`openStep <abaqus.Part.AcisMdb.AcisMdb.openStep>`\\ "
-"\\(fileName\\[\\, scale\\]\\)"
-msgstr ""
-
-#: ../../None:10:<autosummary>:1
-msgid ":py:obj:`openVda <abaqus.Part.AcisMdb.AcisMdb.openVda>`\\ \\(fileName\\)"
-msgstr ""
-
-#: ../../None:10:<autosummary>:1
-msgid ""
-":py:obj:`openSolidworks <abaqus.Part.AcisMdb.AcisMdb.openSolidworks>`\\ "
-"\\(fileName\\[\\, topology\\]\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`__init__ <abaqus.Part.AcisMdb.AcisMdb.__init__>`\\ "
-"\\(\\[pathName\\]\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`importDxf <abaqus.Part.AcisMdb.AcisMdb.importDxf>`\\ "
-"\\(fileName\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`openMdb <abaqus.Part.AcisMdb.AcisMdb.openMdb>`\\ \\(pathName\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`close <abaqus.Part.AcisMdb.AcisMdb.close>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`save <abaqus.Part.AcisMdb.AcisMdb.save>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`saveAs <abaqus.Part.AcisMdb.AcisMdb.saveAs>`\\ \\(pathName\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`openAuxMdb <abaqus.Part.AcisMdb.AcisMdb.openAuxMdb>`\\ "
-"\\(pathName\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`closeAuxMdb <abaqus.Part.AcisMdb.AcisMdb.closeAuxMdb>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`getAuxMdbModelNames "
-"<abaqus.Part.AcisMdb.AcisMdb.getAuxMdbModelNames>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`copyAuxMdbModel <abaqus.Part.AcisMdb.AcisMdb.copyAuxMdbModel>`\\"
-" \\(fromName\\[\\, toName\\]\\)"
-msgstr ""
-
-#: ../../reference/mdb.rst:48
-msgid "JobMdb"
-msgstr ""
-
-#: abaqus.Job.JobMdb.JobMdb:10 of
-msgid ""
-"Check `JobMdb on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`version <abaqus.Job.JobMdb.JobMdb.version>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`lastChangedCount <abaqus.Job.JobMdb.JobMdb.lastChangedCount>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`jobs <abaqus.Job.JobMdb.JobMdb.jobs>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`adaptivityProcesses "
-"<abaqus.Job.JobMdb.JobMdb.adaptivityProcesses>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`coexecutions <abaqus.Job.JobMdb.JobMdb.coexecutions>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`optimizationProcesses "
-"<abaqus.Job.JobMdb.JobMdb.optimizationProcesses>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`meshEditOptions <abaqus.Job.JobMdb.JobMdb.meshEditOptions>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`models <abaqus.Job.JobMdb.JobMdb.models>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`customData <abaqus.Job.JobMdb.JobMdb.customData>`\\"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`annotations <abaqus.Job.JobMdb.JobMdb.annotations>`\\"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`Job <abaqus.Job.JobMdb.JobMdb.Job>`\\ \\(name\\, model\\[\\, "
-"description\\, type\\, queue\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`JobFromInputFile <abaqus.Job.JobMdb.JobMdb.JobFromInputFile>`\\ "
-"\\(name\\, inputFileName\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:5:<autosummary>:1
-msgid ""
-":py:obj:`OptimizationProcess "
-"<abaqus.Job.JobMdb.JobMdb.OptimizationProcess>`\\ \\(name\\, model\\, "
-"task\\, ...\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`__init__ <abaqus.Job.JobMdb.JobMdb.__init__>`\\ "
-"\\(\\[pathName\\]\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`importDxf <abaqus.Job.JobMdb.JobMdb.importDxf>`\\ \\(fileName\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`openMdb <abaqus.Job.JobMdb.JobMdb.openMdb>`\\ \\(pathName\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`close <abaqus.Job.JobMdb.JobMdb.close>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`save <abaqus.Job.JobMdb.JobMdb.save>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`saveAs <abaqus.Job.JobMdb.JobMdb.saveAs>`\\ \\(pathName\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`openAuxMdb <abaqus.Job.JobMdb.JobMdb.openAuxMdb>`\\ "
-"\\(pathName\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ":py:obj:`closeAuxMdb <abaqus.Job.JobMdb.JobMdb.closeAuxMdb>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`getAuxMdbModelNames "
-"<abaqus.Job.JobMdb.JobMdb.getAuxMdbModelNames>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:12:<autosummary>:1
-msgid ""
-":py:obj:`copyAuxMdbModel <abaqus.Job.JobMdb.JobMdb.copyAuxMdbModel>`\\ "
-"\\(fromName\\[\\, toName\\]\\)"
 msgstr ""
 
 #~ msgid ""
@@ -2194,5 +1882,292 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "“abaqus.cae” is an invalid CAE filename; If **pathName** is abaqus.cae"
+#~ msgstr ""
+
+#~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`version <abaqus.Mdb.Mdb.Mdb.version>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`lastChangedCount <abaqus.Mdb.Mdb.Mdb.lastChangedCount>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`jobs <abaqus.Mdb.Mdb.Mdb.jobs>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`adaptivityProcesses "
+#~ "<abaqus.Mdb.Mdb.Mdb.adaptivityProcesses>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`coexecutions <abaqus.Mdb.Mdb.Mdb.coexecutions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`optimizationProcesses "
+#~ "<abaqus.Mdb.Mdb.Mdb.optimizationProcesses>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`meshEditOptions <abaqus.Mdb.Mdb.Mdb.meshEditOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`models <abaqus.Mdb.Mdb.Mdb.models>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`customData <abaqus.Mdb.Mdb.Mdb.customData>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`annotations <abaqus.Mdb.Mdb.Mdb.annotations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`openAcis <abaqus.Mdb.Mdb.Mdb.openAcis>`\\ "
+#~ "\\(fileName\\[\\, scaleFromFile\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`openCatia <abaqus.Mdb.Mdb.Mdb.openCatia>`\\ "
+#~ "\\(fileName\\[\\, topology\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`openEnf <abaqus.Mdb.Mdb.Mdb.openEnf>`\\ "
+#~ "\\(fileName\\, fileType\\[\\, topology\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`openIges <abaqus.Mdb.Mdb.Mdb.openIges>`\\ "
+#~ "\\(fileName\\[\\, trimCurve\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`openParasolid <abaqus.Mdb.Mdb.Mdb.openParasolid>`\\ "
+#~ "\\(fileName\\[\\, topology\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`openStep <abaqus.Mdb.Mdb.Mdb.openStep>`\\ "
+#~ "\\(fileName\\[\\, scale\\]\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`openVda <abaqus.Mdb.Mdb.Mdb.openVda>`\\ \\(fileName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`openSolidworks <abaqus.Mdb.Mdb.Mdb.openSolidworks>`\\"
+#~ " \\(fileName\\[\\, topology\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`Job <abaqus.Mdb.Mdb.Mdb.Job>`\\ \\(name\\, "
+#~ "model\\[\\, description\\, type\\, queue\\, "
+#~ "...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`JobFromInputFile "
+#~ "<abaqus.Mdb.Mdb.Mdb.JobFromInputFile>`\\ \\(name\\, "
+#~ "inputFileName\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`OptimizationProcess "
+#~ "<abaqus.Mdb.Mdb.Mdb.OptimizationProcess>`\\ \\(name\\, "
+#~ "model\\, task\\, ...\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`__init__ <abaqus.Mdb.Mdb.Mdb.__init__>`\\ \\(\\[pathName\\]\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`importDxf <abaqus.Mdb.Mdb.Mdb.importDxf>`\\ \\(fileName\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`openMdb <abaqus.Mdb.Mdb.Mdb.openMdb>`\\ \\(pathName\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`close <abaqus.Mdb.Mdb.Mdb.close>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`save <abaqus.Mdb.Mdb.Mdb.save>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`saveAs <abaqus.Mdb.Mdb.Mdb.saveAs>`\\ \\(pathName\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`openAuxMdb <abaqus.Mdb.Mdb.Mdb.openAuxMdb>`\\ \\(pathName\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`closeAuxMdb <abaqus.Mdb.Mdb.Mdb.closeAuxMdb>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getAuxMdbModelNames "
+#~ "<abaqus.Mdb.Mdb.Mdb.getAuxMdbModelNames>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyAuxMdbModel <abaqus.Mdb.Mdb.Mdb.copyAuxMdbModel>`\\"
+#~ " \\(fromName\\[\\, toName\\]\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`version <abaqus.Part.AcisMdb.AcisMdb.version>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lastChangedCount "
+#~ "<abaqus.Part.AcisMdb.AcisMdb.lastChangedCount>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`jobs <abaqus.Part.AcisMdb.AcisMdb.jobs>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`adaptivityProcesses "
+#~ "<abaqus.Part.AcisMdb.AcisMdb.adaptivityProcesses>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`coexecutions <abaqus.Part.AcisMdb.AcisMdb.coexecutions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`optimizationProcesses "
+#~ "<abaqus.Part.AcisMdb.AcisMdb.optimizationProcesses>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`meshEditOptions "
+#~ "<abaqus.Part.AcisMdb.AcisMdb.meshEditOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`models <abaqus.Part.AcisMdb.AcisMdb.models>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`customData <abaqus.Part.AcisMdb.AcisMdb.customData>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`annotations <abaqus.Part.AcisMdb.AcisMdb.annotations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init__ <abaqus.Part.AcisMdb.AcisMdb.__init__>`\\ "
+#~ "\\(\\[pathName\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importDxf <abaqus.Part.AcisMdb.AcisMdb.importDxf>`\\"
+#~ " \\(fileName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`openMdb <abaqus.Part.AcisMdb.AcisMdb.openMdb>`\\ "
+#~ "\\(pathName\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`close <abaqus.Part.AcisMdb.AcisMdb.close>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`save <abaqus.Part.AcisMdb.AcisMdb.save>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`saveAs <abaqus.Part.AcisMdb.AcisMdb.saveAs>`\\ \\(pathName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`openAuxMdb <abaqus.Part.AcisMdb.AcisMdb.openAuxMdb>`\\"
+#~ " \\(pathName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`closeAuxMdb "
+#~ "<abaqus.Part.AcisMdb.AcisMdb.closeAuxMdb>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getAuxMdbModelNames "
+#~ "<abaqus.Part.AcisMdb.AcisMdb.getAuxMdbModelNames>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyAuxMdbModel "
+#~ "<abaqus.Part.AcisMdb.AcisMdb.copyAuxMdbModel>`\\ "
+#~ "\\(fromName\\[\\, toName\\]\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`version <abaqus.Job.JobMdb.JobMdb.version>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`lastChangedCount "
+#~ "<abaqus.Job.JobMdb.JobMdb.lastChangedCount>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`jobs <abaqus.Job.JobMdb.JobMdb.jobs>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`adaptivityProcesses "
+#~ "<abaqus.Job.JobMdb.JobMdb.adaptivityProcesses>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`coexecutions <abaqus.Job.JobMdb.JobMdb.coexecutions>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`optimizationProcesses "
+#~ "<abaqus.Job.JobMdb.JobMdb.optimizationProcesses>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`meshEditOptions <abaqus.Job.JobMdb.JobMdb.meshEditOptions>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`models <abaqus.Job.JobMdb.JobMdb.models>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`customData <abaqus.Job.JobMdb.JobMdb.customData>`\\"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`annotations <abaqus.Job.JobMdb.JobMdb.annotations>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`__init__ <abaqus.Job.JobMdb.JobMdb.__init__>`\\ "
+#~ "\\(\\[pathName\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`importDxf <abaqus.Job.JobMdb.JobMdb.importDxf>`\\ "
+#~ "\\(fileName\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`openMdb <abaqus.Job.JobMdb.JobMdb.openMdb>`\\ \\(pathName\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`close <abaqus.Job.JobMdb.JobMdb.close>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`save <abaqus.Job.JobMdb.JobMdb.save>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`saveAs <abaqus.Job.JobMdb.JobMdb.saveAs>`\\ \\(pathName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`openAuxMdb <abaqus.Job.JobMdb.JobMdb.openAuxMdb>`\\ "
+#~ "\\(pathName\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`closeAuxMdb <abaqus.Job.JobMdb.JobMdb.closeAuxMdb>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`getAuxMdbModelNames "
+#~ "<abaqus.Job.JobMdb.JobMdb.getAuxMdbModelNames>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`copyAuxMdbModel "
+#~ "<abaqus.Job.JobMdb.JobMdb.copyAuxMdbModel>`\\ \\(fromName\\[\\,"
+#~ " toName\\]\\)"
 #~ msgstr ""
 

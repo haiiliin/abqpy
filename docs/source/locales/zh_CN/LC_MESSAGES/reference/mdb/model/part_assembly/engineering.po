@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 00:23+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,260 @@ msgstr ""
 msgid "Create engineering features"
 msgstr ""
 
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature:1 of
+msgid ""
+"Bases: "
+":py:class:`~abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase`"
+msgstr ""
+
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral
+#: abaqus.EngineeringFeature.Crack.Crack
+#: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature
+#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase
+#: abaqus.EngineeringFeature.Fastener.Fastener
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance
+#: abaqus.EngineeringFeature.Inertia.Inertia
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass
+#: abaqus.EngineeringFeature.PointFastener.PointFastener
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia
+#: abaqus.EngineeringFeature.SpringDashpot.SpringDashpot
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack of
+msgid "Public Data Attributes:"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ""
+":py:obj:`inertias "
+"<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.inertias>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1 ../../docstring
+#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.inertias:1
+#: of
+msgid "A repository of Inertia objects."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ""
+":py:obj:`cracks "
+"<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.cracks>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1 ../../docstring
+#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.cracks:1
+#: of
+msgid "A repository of Crack objects."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ""
+":py:obj:`fasteners "
+"<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.fasteners>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1 ../../docstring
+#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.fasteners:1
+#: of
+msgid "A repository of Fastener objects."
+msgstr ""
+
+#: ../../None:6:<autosummary>:1
+msgid ""
+":py:obj:`springDashpots "
+"<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.springDashpots>`\\"
+msgstr ""
+
+#: ../../None:6:<autosummary>:1 ../../docstring
+#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.springDashpots:1
+#: of
+msgid "A repository of SpringDashpot objects."
+msgstr ""
+
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral
+#: abaqus.EngineeringFeature.Crack.Crack
+#: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature
+#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase
+#: abaqus.EngineeringFeature.Fastener.Fastener
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance
+#: abaqus.EngineeringFeature.Inertia.Inertia
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass
+#: abaqus.EngineeringFeature.PointFastener.PointFastener
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia
+#: abaqus.EngineeringFeature.SpringDashpot.SpringDashpot
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack of
+msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`AssembledFastener "
+"<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener>`\\"
+" \\(name\\, region\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+msgid "This method creates an AssembledFastener object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`ContourIntegral "
+"<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral>`\\"
+" \\(name\\, crackFront\\, crackTip\\, ...\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+msgid "This method creates a ContourIntegral object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`DebondVCCT "
+"<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT>`\\"
+" \\(name\\, initiationStep\\, ...\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+msgid "This method creates a DebondVCCT object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`DiscreteFastener "
+"<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener>`\\"
+" \\(name\\, region\\, influenceRadius\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+msgid "This method creates a DiscreteFastener object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`HeatCapacitance "
+"<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance>`\\"
+" \\(name\\, region\\, table\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:1
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:1 of
+msgid "This method creates a HeatCapacitance object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`NonstructuralMass "
+"<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass>`\\"
+" \\(name\\, region\\, units\\, magnitude\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:1
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__:1 of
+msgid "This method creates a NonstructuralMass object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`PointFastener "
+"<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener>`\\"
+" \\(name\\, region\\, physicalRadius\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+msgid "This method creates a PointFastener object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`PointMassInertia "
+"<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia>`\\"
+" \\(name\\, region\\[\\, mass\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:1
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:1 of
+msgid "This method creates a PointMassInertia object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`SpringDashpotToGround "
+"<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround>`\\"
+" \\(name\\, region\\, dof\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:1
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__:1
+#: of
+msgid "This method creates a SpringDashpotToGround object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`TwoPointSpringDashpot "
+"<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot>`\\"
+" \\(name\\, regionPairs\\, axis\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:1
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:1
+#: of
+msgid "This method creates a TwoPointSpringDashpot object."
+msgstr ""
+
+#: ../../None:13:<autosummary>:1
+msgid ""
+":py:obj:`XFEMCrack "
+"<abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack>`\\"
+" \\(name\\, crackDomain\\[\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+msgid "This method creates a XFEMCrack object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`assignSeam "
+"<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam>`\\"
+" \\(regions\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam:1
+#: of
+msgid "This method creates a seam crack along an edge or a face."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`deleteSeam "
+"<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam>`\\"
+" \\(regions\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam:1
+#: of
+msgid "This method deletes a seam crack."
+msgstr ""
+
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:1
 #: of
 msgid ""
@@ -39,6 +293,10 @@ msgid ""
 "objects are currently supported only under the assembly."
 msgstr ""
 
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:6
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:6
+#: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__:6
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:6
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:6
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:6
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:6
@@ -50,7 +308,13 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:4
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:4
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:6
-#: of
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:4
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__:4
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:6
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:4
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__:4
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:4
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:6 of
 msgid "This function can be accessed by::"
 msgstr ""
 
@@ -62,9 +326,13 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assembledfastenerpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues
+#: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral
@@ -79,18 +347,29 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues of
 msgid "Parameters"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1 ../../docstring
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:15
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:15
 #: abaqus.EngineeringFeature.Crack.Crack.name:1
+#: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__:15
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:15
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:15
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:15
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:15
@@ -103,12 +382,20 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:13
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:15
 #: abaqus.EngineeringFeature.Fastener.Fastener.name:1
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:13
 #: abaqus.EngineeringFeature.Inertia.Inertia.name:1
-#: abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.name:1 of
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__:13
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:15
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:13
+#: abaqus.EngineeringFeature.SpringDashpot.SpringDashpot.name:1
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__:13
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:13
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:15 of
 msgid "A String specifying the repository key."
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:17
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.region:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:17
 #: of
@@ -118,6 +405,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:20
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.templateModel:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:20
 #: of
@@ -125,6 +413,7 @@ msgid "A String specifying the name of the template model."
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:22
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.controlSet:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:22
 #: of
@@ -134,6 +423,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:25
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.templateSurfaces:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:25
 #: of
@@ -143,6 +433,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:28
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.assignedSurfaces:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:28
 #: of
@@ -152,6 +443,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:31
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.propertyPrefix:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:31
 #: of
@@ -162,6 +454,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:35
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.orientMethod:1
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues:7
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:35
@@ -173,6 +466,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:39
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.localCsys:1
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues:11
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:39
@@ -185,6 +479,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:43
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.scriptName:1
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues:15
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:43
@@ -194,6 +489,10 @@ msgid ""
 "default value is an empty string."
 msgstr ""
 
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__
+#: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT
@@ -204,10 +503,18 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot
-#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack of
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__ of
 msgid "Returns"
 msgstr ""
 
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:46
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:46
 #: of
 msgid ""
@@ -216,6 +523,10 @@ msgid ""
 " object."
 msgstr ""
 
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__
+#: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT
@@ -226,15 +537,24 @@ msgstr ""
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot
-#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack of
+#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__ of
 msgid "Return type"
 msgstr ""
 
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:47
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.AssembledFastener:47
 #: of
 msgid ":class:`AssembledFastener`"
 msgstr ""
 
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:1
 #: of
 msgid ""
@@ -252,6 +572,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:17
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackFront:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:17
 #: of
@@ -263,6 +584,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:21
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackTip:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:21
 #: of
@@ -274,6 +596,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:25
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.extensionDirectionMethod:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:25
 #: of
@@ -283,6 +606,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:28
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:7
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.symmetric:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:28
@@ -294,6 +618,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:31
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.listOfRegions:1
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:10
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:31
@@ -305,6 +630,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:34
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackFrontName:1
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:13
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:34
@@ -317,6 +643,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:38
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackTipName:1
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:17
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:38
@@ -328,6 +655,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:42
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.crackNormal:1
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:21
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:42
@@ -341,6 +669,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:47
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.qVectors:1
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:26
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:47
@@ -354,6 +683,7 @@ msgid ""
 "default value is an empty sequence."
 msgstr ""
 
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:53
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:53
 #: of
 msgid ""
@@ -363,6 +693,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:57
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.collapsedElementAtTip:1
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.setValues:36
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:57
@@ -372,6 +703,7 @@ msgid ""
 "are NONE, SINGLE_NODE, and DUPLICATE_NODES. The default value is NONE."
 msgstr ""
 
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:60
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:60
 #: of
 msgid ""
@@ -379,11 +711,13 @@ msgid ""
 "object."
 msgstr ""
 
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:61
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.ContourIntegral:61
 #: of
 msgid ":class:`ContourIntegral`"
 msgstr ""
 
+#: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:1
 #: of
 msgid ""
@@ -400,7 +734,7 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-debondvcctpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../docstring
+#: ../../docstring abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__:17
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.initiationStep:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:17
 #: of
@@ -409,7 +743,7 @@ msgid ""
 "is created."
 msgstr ""
 
-#: ../../docstring
+#: ../../docstring abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__:19
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.surfToSurfInteraction:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:19
 #: of
@@ -418,7 +752,7 @@ msgid ""
 "that defines the surface to surface interaction for the crack surfaces."
 msgstr ""
 
-#: ../../docstring
+#: ../../docstring abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__:22
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.debondingForceAmplitude:1
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues:7
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:22
@@ -430,7 +764,7 @@ msgid ""
 "and RAMP. The default value is STEP."
 msgstr ""
 
-#: ../../docstring
+#: ../../docstring abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__:26
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.printToDATFrequency:1
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues:11
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:26
@@ -440,16 +774,19 @@ msgid ""
 "file. The default value is 1."
 msgstr ""
 
+#: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__:29
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:29
 #: of
 msgid "A :py:class:`~abaqus.EngineeringFeature.DebondVCCT.DebondVCCT` object."
 msgstr ""
 
+#: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__:30
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DebondVCCT:30
 #: of
 msgid ":class:`DebondVCCT`"
 msgstr ""
 
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:1
 #: of
 msgid ""
@@ -467,6 +804,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:17
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.region:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:17
 #: of
@@ -476,6 +814,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:19
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.influenceRadius:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:19
 #: of
@@ -485,10 +824,12 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:21
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:7
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.ur1:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:21
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:27
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:27
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:13
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.ur1:1 of
 msgid ""
@@ -497,10 +838,12 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:24
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:10
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.ur2:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:24
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:30
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:30
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:16
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.ur2:1 of
 msgid ""
@@ -509,10 +852,12 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:27
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:13
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.ur3:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:27
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:33
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:33
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:19
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.ur3:1 of
 msgid ""
@@ -521,6 +866,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:30
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.coupling:1
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:16
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:30
@@ -534,6 +880,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:35
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:21
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.weightingMethod:1
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:35
@@ -549,6 +896,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:42
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.localCsys:1
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:28
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:42
@@ -560,6 +908,7 @@ msgid ""
 "Int. The default value is None."
 msgstr ""
 
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:46
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:46
 #: of
 msgid ""
@@ -568,15 +917,10 @@ msgid ""
 "object."
 msgstr ""
 
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:47
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.DiscreteFastener:47
 #: of
 msgid ":class:`DiscreteFastener`"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:1
-#: of
-msgid "This method creates a HeatCapacitance object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:10
@@ -588,6 +932,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:15
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:15
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.region:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
@@ -596,6 +941,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:17
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:17
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.table:1 of
 msgid ""
 "A sequence of sequences of Floats specifying heat capacitance properties."
@@ -604,6 +950,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:20
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:20
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues:7
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.temperatureDependency:1
 #: of
@@ -614,6 +961,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:22
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:22
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.dependencies:1
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues:9 of
 msgid ""
@@ -622,21 +970,15 @@ msgid ""
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:24
-#: of
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:24 of
 msgid ""
 "A :py:class:`~abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance` "
 "object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.HeatCapacitance:25
-#: of
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:25 of
 msgid ":class:`HeatCapacitance`"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:1
-#: of
-msgid "This method creates a NonstructuralMass object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:10
@@ -648,6 +990,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:15
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__:15
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.region:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
@@ -656,6 +999,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:17
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__:17
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.units:1 of
 msgid ""
 "A SymbolicConstant specifying the units used to specify the nonstructural"
@@ -665,12 +1009,14 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:20
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__:20
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.magnitude:1 of
 msgid "A Float specifying the mass magnitude."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:22
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__:22
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.distribution:1
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues:7 of
 msgid ""
@@ -681,7 +1027,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:26
-#: of
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__:26 of
 msgid ""
 "A "
 ":py:class:`~abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass`"
@@ -689,12 +1035,12 @@ msgid ""
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.NonstructuralMass:27
-#: of
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__:27 of
 msgid ":class:`NonstructuralMass`"
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:1
-#: of
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:1 of
 msgid ""
 "This method creates a PointFastener object. Although the constructor is "
 "available both for parts and for the assembly, PointFastener objects are "
@@ -710,6 +1056,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:17
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:17
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.region:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
@@ -718,12 +1065,14 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:19
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:19
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.physicalRadius:1 of
 msgid "A Float specifying the physical fastener radius."
 msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:21
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:21
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.directionVector:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:7 of
 msgid ""
@@ -735,6 +1084,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:25
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:25
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:11
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.targetSurfaces:1 of
 msgid ""
@@ -744,6 +1094,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:36
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:36
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.attachmentMethod:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:22 of
 msgid ""
@@ -754,6 +1105,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:40
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:40
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.influenceRadius:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:26 of
 msgid ""
@@ -766,6 +1118,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:46
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:46
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.searchRadius:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:32 of
 msgid ""
@@ -776,6 +1129,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:49
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:49
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.maximumLayers:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:35 of
 msgid ""
@@ -787,6 +1141,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:53
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:53
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.coupling:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:39 of
 msgid ""
@@ -799,6 +1154,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:58
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:58
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:44
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.weightingMethod:1 of
 msgid ""
@@ -813,6 +1169,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:65
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:65
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.additionalMass:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:51 of
 msgid ""
@@ -822,6 +1179,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:68
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:68
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.adjustOrientation:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:54 of
 msgid ""
@@ -832,6 +1190,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:72
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:72
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.localCsys:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:58 of
 msgid ""
@@ -842,6 +1201,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:76
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:76
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.connectionType:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:62 of
 msgid ""
@@ -851,6 +1211,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:79
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:79
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.sectionName:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:65 of
 msgid ""
@@ -860,6 +1221,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:82
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:82
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.connectorOrientationLocalCsys1:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:68 of
 msgid ""
@@ -872,6 +1234,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:87
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:87
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.axis1:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:73 of
 msgid ""
@@ -883,6 +1246,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:91
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:91
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.angle1:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:77 of
 msgid ""
@@ -892,6 +1256,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:94
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:94
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.orient2SameAs1:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:80 of
 msgid ""
@@ -902,6 +1267,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:98
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:98
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.connectorOrientationLocalCsys2:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:84 of
 msgid ""
@@ -914,6 +1280,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:103
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:103
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.axis2:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:89 of
 msgid ""
@@ -925,6 +1292,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:107
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:107
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.angle2:1
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:93 of
 msgid ""
@@ -934,6 +1302,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:110
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:110
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:96
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.unsorted:1 of
 msgid ""
@@ -943,21 +1312,15 @@ msgid ""
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:114
-#: of
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:114 of
 msgid ""
 "A :py:class:`~abaqus.EngineeringFeature.PointFastener.PointFastener` "
 "object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointFastener:115
-#: of
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:115 of
 msgid ":class:`PointFastener`"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:1
-#: of
-msgid "This method creates a PointMassInertia object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:10
@@ -969,6 +1332,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:15
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:15
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.region:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
@@ -977,6 +1341,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:17
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:17
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass:1
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:7 of
 msgid ""
@@ -987,6 +1352,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:20
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:20
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass1:1
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:10 of
 msgid ""
@@ -997,6 +1363,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:23
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:23
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass2:1
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:13 of
 msgid ""
@@ -1007,6 +1374,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:26
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:26
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.mass3:1
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:16 of
 msgid ""
@@ -1017,6 +1385,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:29
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:29
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i11:1
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:19 of
 msgid ""
@@ -1026,6 +1395,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:32
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:32
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i22:1
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:22 of
 msgid ""
@@ -1035,6 +1405,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:35
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:35
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i33:1
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:25 of
 msgid ""
@@ -1044,6 +1415,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:38
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:38
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i12:1
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:28 of
 msgid ""
@@ -1053,6 +1425,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:40
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:40
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i13:1
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:30 of
 msgid ""
@@ -1062,6 +1435,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:42
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:42
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.i23:1
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:32 of
 msgid ""
@@ -1071,6 +1445,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:44
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:44
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.localCsys:1
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:34 of
 msgid ""
@@ -1083,6 +1458,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:49
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:49
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.alpha:1
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:39 of
 msgid ""
@@ -1092,6 +1468,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:52
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:52
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.composite:1
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:42 of
 msgid ""
@@ -1100,7 +1477,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:55
-#: of
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:55 of
 msgid ""
 "A "
 ":py:class:`~abaqus.EngineeringFeature.PointMassInertia.PointMassInertia` "
@@ -1108,14 +1485,8 @@ msgid ""
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.PointMassInertia:56
-#: of
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:56 of
 msgid ":class:`PointMassInertia`"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:1
-#: of
-msgid "This method creates a SpringDashpotToGround object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:10
@@ -1127,6 +1498,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:15
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__:15
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.region:1
 #: of
 msgid ""
@@ -1136,6 +1508,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:17
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__:17
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.dof:1
 #: of
 msgid ""
@@ -1145,6 +1518,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:20
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__:20
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.orientation:1
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:7
 #: of
@@ -1157,6 +1531,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:24
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__:24
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:11
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.springBehavior:1
 #: of
@@ -1168,6 +1543,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:28
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__:28
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.dashpotBehavior:1
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:15
 #: of
@@ -1179,6 +1555,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:32
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__:32
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:19
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.springStiffness:1
 #: of
@@ -1189,6 +1566,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:35
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__:35
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.dashpotCoefficient:1
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:22
 #: of
@@ -1198,6 +1576,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:38
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__:38
 #: of
 msgid ""
 "A "
@@ -1206,14 +1585,9 @@ msgid ""
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.SpringDashpotToGround:39
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__:39
 #: of
 msgid ":class:`SpringDashpotToGround`"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-#: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:1
-#: of
-msgid "This method creates a TwoPointSpringDashpot object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:10
@@ -1225,6 +1599,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:15
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:15
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.regionPairs:1
 #: of
 msgid ""
@@ -1234,6 +1609,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:18
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:18
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.axis:1
 #: of
 msgid ""
@@ -1244,6 +1620,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:22
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:22
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dof1:1
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:7
 #: of
@@ -1255,6 +1632,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:26
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:26
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dof2:1
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:11
 #: of
@@ -1266,6 +1644,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:30
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:30
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.orientation:1
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:15
 #: of
@@ -1279,6 +1658,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:35
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:35
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:20
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.springBehavior:1
 #: of
@@ -1290,6 +1670,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:39
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:39
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dashpotBehavior:1
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:24
 #: of
@@ -1301,6 +1682,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:43
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:43
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:28
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.springStiffness:1
 #: of
@@ -1311,6 +1693,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:46
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:46
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.dashpotCoefficient:1
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:31
 #: of
@@ -1320,6 +1703,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:49
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:49
 #: of
 msgid ""
 "A "
@@ -1328,12 +1712,13 @@ msgid ""
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.TwoPointSpringDashpot:50
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:50
 #: of
 msgid ":class:`TwoPointSpringDashpot`"
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:1
-#: of
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:1 of
 msgid ""
 "This method creates a XFEMCrack object. Although the constructor is "
 "available both for parts and for the assembly, XFEMCrack objects are "
@@ -1349,6 +1734,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:17
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:17
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackDomain:1 of
 msgid ""
 "A :py:class:`~abaqus.Region.Region.Region` object specifying the region "
@@ -1357,6 +1743,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:20
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:20
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.allowCrackGrowth:1
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:7 of
 msgid ""
@@ -1366,6 +1753,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:23
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:23
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackLocation:1
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:10 of
 msgid ""
@@ -1376,6 +1764,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:26
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:26
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:13
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.singularityCalcRadius:1 of
 msgid ""
@@ -1386,6 +1775,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:30
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:30
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.interactionProperty:1
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:17 of
 msgid ""
@@ -1396,6 +1786,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:33
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:33
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.elemId:1
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:20 of
 msgid ""
@@ -1406,6 +1797,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:36
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:36
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.nodeId:1
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:23 of
 msgid ""
@@ -1426,6 +1818,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:44
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:44
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackPlaneDist:1
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:31 of
 msgid ""
@@ -1435,6 +1828,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:47
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:47
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.crackFrontDist:1
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:34 of
 msgid ""
@@ -1444,6 +1838,7 @@ msgstr ""
 
 #: ../../None:13:<autosummary>:1 ../../docstring
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:50
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:50
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.autoDetectValue:1
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:37 of
 msgid ""
@@ -1452,21 +1847,29 @@ msgid ""
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:53
-#: of
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:53 of
 msgid "A :py:class:`~abaqus.EngineeringFeature.XFEMCrack.XFEMCrack` object."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeature.EngineeringFeature.XFEMCrack:54
-#: of
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:54 of
 msgid ":class:`XFEMCrack`"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:15
-msgid "Object features"
+#: ../../reference/mdb/model/part_assembly/engineering.rst:19
+msgid "Classes"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:18
+#: ../../reference/mdb/model/part_assembly/engineering.rst:22
 msgid "Crack"
+msgstr ""
+
+#: abaqus.EngineeringFeature.Crack.Crack:1
+#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase:1
+#: abaqus.EngineeringFeature.Fastener.Fastener:1
+#: abaqus.EngineeringFeature.Inertia.Inertia:1
+#: abaqus.EngineeringFeature.SpringDashpot.SpringDashpot:1 of
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: abaqus.EngineeringFeature.Crack.Crack:1 of
@@ -1500,25 +1903,6 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-crackpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener
-#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral
-#: abaqus.EngineeringFeature.Crack.Crack
-#: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT
-#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener
-#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase
-#: abaqus.EngineeringFeature.Fastener.Fastener
-#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance
-#: abaqus.EngineeringFeature.Inertia.Inertia
-#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass
-#: abaqus.EngineeringFeature.PointFastener.PointFastener
-#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia
-#: abaqus.EngineeringFeature.SpringDashpot.SpringDashpot
-#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround
-#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot
-#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack of
-msgid "Public Data Attributes:"
-msgstr ""
-
 #: ../../None:4:<autosummary>:1
 msgid ":py:obj:`name <abaqus.EngineeringFeature.Crack.Crack.name>`\\"
 msgstr ""
@@ -1530,25 +1914,6 @@ msgstr ""
 #: ../../None:11:<autosummary>:1 ../../None:13:<autosummary>:1
 #: ../../None:4:<autosummary>:1 ../../None:5:<autosummary>:1
 msgid "A Boolean specifying whether the crack is suppressed or not."
-msgstr ""
-
-#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener
-#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral
-#: abaqus.EngineeringFeature.Crack.Crack
-#: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT
-#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener
-#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase
-#: abaqus.EngineeringFeature.Fastener.Fastener
-#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance
-#: abaqus.EngineeringFeature.Inertia.Inertia
-#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass
-#: abaqus.EngineeringFeature.PointFastener.PointFastener
-#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia
-#: abaqus.EngineeringFeature.SpringDashpot.SpringDashpot
-#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround
-#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot
-#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack of
-msgid "Public Methods:"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1581,7 +1946,7 @@ msgid ""
 "value is OFF."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:26
+#: ../../reference/mdb/model/part_assembly/engineering.rst:32
 msgid "Fastener"
 msgstr ""
 
@@ -1644,7 +2009,7 @@ msgid ""
 "default value is OFF."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:34
+#: ../../reference/mdb/model/part_assembly/engineering.rst:42
 msgid "Inertia"
 msgstr ""
 
@@ -1707,7 +2072,7 @@ msgid ""
 "default value is OFF."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:42
+#: ../../reference/mdb/model/part_assembly/engineering.rst:52
 msgid "SpringDashpot"
 msgstr ""
 
@@ -1773,8 +2138,14 @@ msgid ""
 " default value is OFF."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:50
+#: ../../reference/mdb/model/part_assembly/engineering.rst:62
 msgid "AssembledFastener"
+msgstr ""
+
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener:1
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener:1
+#: abaqus.EngineeringFeature.PointFastener.PointFastener:1 of
+msgid "Bases: :py:class:`~abaqus.EngineeringFeature.Fastener.Fastener`"
 msgstr ""
 
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener:1 of
@@ -1783,7 +2154,7 @@ msgid ""
 "AssembledFastener object is derived from the Fastener object."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:6:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.suppressed>`\\"
@@ -1823,19 +2194,9 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
-":py:obj:`name "
-"<abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
 ":py:obj:`__init__ "
 "<abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__>`\\"
 " \\(name\\, region\\, templateModel\\, ...\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "This method creates an AssembledFastener object."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1850,18 +2211,11 @@ msgstr ""
 msgid "This method modifies the AssembledFastener object."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.__init__:12 of
 msgid ""
-":py:obj:`resume "
-"<abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.resume>`\\"
-" \\(\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.suppress>`\\"
-" \\(\\)"
+"Check `AssembledFastener.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assembledfastenerpyc.htm?contextscope=all"
+"#simaker-assembledfastener__init__pyc>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.setValues:4 of
@@ -1871,8 +2225,14 @@ msgid ""
 "#simaker-assembledfastenersetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:58
+#: ../../reference/mdb/model/part_assembly/engineering.rst:72
 msgid "ContourIntegral"
+msgstr ""
+
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral:1
+#: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT:1
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack:1 of
+msgid "Bases: :py:class:`~abaqus.EngineeringFeature.Crack.Crack`"
 msgstr ""
 
 #: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral:1 of
@@ -1899,7 +2259,7 @@ msgstr ""
 msgid "CONTOUR INTEGRAL"
 msgstr ""
 
-#: ../../None:11:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:11:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.suppressed>`\\"
@@ -2002,19 +2362,9 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
-":py:obj:`name "
-"<abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
 ":py:obj:`__init__ "
 "<abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__>`\\ "
 "\\(name\\, crackFront\\, crackTip\\, ...\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a ContourIntegral object."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2029,18 +2379,11 @@ msgstr ""
 msgid "This method modifies the ContourIntegral object."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.__init__:12 of
 msgid ""
-":py:obj:`resume "
-"<abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.resume>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.suppress>`\\ "
-"\\(\\)"
+"Check `ContourIntegral.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contourintegralpyc.htm?contextscope=all"
+"#simaker-contourintegral__init__pyc>`__."
 msgstr ""
 
 #: ../../docstring
@@ -2059,7 +2402,7 @@ msgid ""
 "#simaker-contourintegralsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:66
+#: ../../reference/mdb/model/part_assembly/engineering.rst:82
 msgid "DebondVCCT"
 msgstr ""
 
@@ -2074,7 +2417,7 @@ msgstr ""
 msgid "DEBOND"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:5:<autosummary>:1
+#: ../../None:5:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.suppressed>`\\"
@@ -2106,18 +2449,10 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`__init__ "
 "<abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__>`\\ \\(name\\, "
 "initiationStep\\, ...\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a DebondVCCT object."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2132,16 +2467,11 @@ msgstr ""
 msgid "This method modifies the DebondVCCT object."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.__init__:12 of
 msgid ""
-":py:obj:`resume "
-"<abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.resume>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.suppress>`\\ \\(\\)"
+"Check `DebondVCCT.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-debondvcctpyc.htm?contextscope=all"
+"#simaker-debondvcct__init__pyc>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.setValues:4 of
@@ -2151,7 +2481,7 @@ msgid ""
 "#simaker-debondvcctsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:74
+#: ../../reference/mdb/model/part_assembly/engineering.rst:92
 msgid "DiscreteFastener"
 msgstr ""
 
@@ -2165,7 +2495,7 @@ msgstr ""
 msgid "COUPLING"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:9:<autosummary>:1
+#: ../../None:9:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.suppressed>`\\"
@@ -2248,19 +2578,9 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
-":py:obj:`name "
-"<abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
 ":py:obj:`__init__ "
 "<abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__>`\\"
 " \\(name\\, region\\, influenceRadius\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a DiscreteFastener object."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2275,18 +2595,11 @@ msgstr ""
 msgid "This method modifies the DiscreteFastener object."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.__init__:12 of
 msgid ""
-":py:obj:`resume "
-"<abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.resume>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.suppress>`\\"
-" \\(\\)"
+"Check `DiscreteFastener.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefastenerpyc.htm?contextscope=all"
+"#simaker-discretefastener__init__pyc>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.setValues:4 of
@@ -2296,7 +2609,7 @@ msgid ""
 "#simaker-discretefastenersetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:82
+#: ../../reference/mdb/model/part_assembly/engineering.rst:102
 msgid "EngineeringFeatureBase"
 msgstr ""
 
@@ -2312,80 +2625,6 @@ msgstr ""
 msgid ""
 "Check `EngineeringFeatureBase on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-engineeringfeaturepyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`inertias "
-"<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.inertias>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.inertias:1
-#: of
-msgid "A repository of Inertia objects."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`cracks "
-"<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.cracks>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.cracks:1
-#: of
-msgid "A repository of Crack objects."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`fasteners "
-"<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.fasteners>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.fasteners:1
-#: of
-msgid "A repository of Fastener objects."
-msgstr ""
-
-#: ../../None:6:<autosummary>:1
-msgid ""
-":py:obj:`springDashpots "
-"<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.springDashpots>`\\"
-msgstr ""
-
-#: ../../None:6:<autosummary>:1 ../../docstring
-#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.springDashpots:1
-#: of
-msgid "A repository of SpringDashpot objects."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`assignSeam "
-"<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam>`\\"
-" \\(regions\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam:1
-#: of
-msgid "This method creates a seam crack along an edge or a face."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`deleteSeam "
-"<abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam>`\\"
-" \\(regions\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-#: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.deleteSeam:1
-#: of
-msgid "This method deletes a seam crack."
 msgstr ""
 
 #: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase.assignSeam:4
@@ -2412,8 +2651,14 @@ msgid ""
 "#simaker-engineeringfeaturedeleteseampyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:90
+#: ../../reference/mdb/model/part_assembly/engineering.rst:112
 msgid "HeatCapacitance"
+msgstr ""
+
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:1
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass:1
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia:1 of
+msgid "Bases: :py:class:`~abaqus.EngineeringFeature.Inertia.Inertia`"
 msgstr ""
 
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance:1 of
@@ -2451,7 +2696,7 @@ msgstr ""
 msgid "HEATCAP"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:5:<autosummary>:1
+#: ../../None:5:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.suppressed>`\\"
@@ -2479,12 +2724,6 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
-":py:obj:`name "
-"<abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
 ":py:obj:`__init__ "
 "<abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__>`\\ "
 "\\(name\\, region\\, table\\[\\, ...\\]\\)"
@@ -2502,18 +2741,11 @@ msgstr ""
 msgid "This method modifies the HeatCapacitance object."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.__init__:10 of
 msgid ""
-":py:obj:`resume "
-"<abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.resume>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.suppress>`\\ "
-"\\(\\)"
+"Check `HeatCapacitance.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-heatcapacitancepyc.htm?contextscope=all"
+"#simaker-heatcapacitance__init__pyc>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.setValues:4 of
@@ -2523,7 +2755,7 @@ msgid ""
 "#simaker-heatcapacitancesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:98
+#: ../../reference/mdb/model/part_assembly/engineering.rst:122
 msgid "NonstructuralMass"
 msgstr ""
 
@@ -2556,12 +2788,6 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
-":py:obj:`name "
-"<abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
 ":py:obj:`__init__ "
 "<abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__>`\\"
 " \\(name\\, region\\, units\\, magnitude\\[\\, ...\\]\\)"
@@ -2579,18 +2805,11 @@ msgstr ""
 msgid "This method modifies the NonstructuralMass object."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.__init__:10 of
 msgid ""
-":py:obj:`resume "
-"<abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.resume>`\\"
-" \\(\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.suppress>`\\"
-" \\(\\)"
+"Check `NonstructuralMass.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-nonstructuralmasspyc.htm?contextscope=all"
+"#simaker-nonstructuralmass__init__pyc>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.setValues:4 of
@@ -2600,7 +2819,7 @@ msgid ""
 "#simaker-nonstructuralmasssetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:106
+#: ../../reference/mdb/model/part_assembly/engineering.rst:132
 msgid "PointFastener"
 msgstr ""
 
@@ -2614,7 +2833,7 @@ msgstr ""
 msgid "FASTENER"
 msgstr ""
 
-#: ../../None:27:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:27:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.EngineeringFeature.PointFastener.PointFastener.suppressed>`\\"
@@ -2894,19 +3113,9 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
-":py:obj:`name "
-"<abaqus.EngineeringFeature.PointFastener.PointFastener.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
 ":py:obj:`__init__ "
 "<abaqus.EngineeringFeature.PointFastener.PointFastener.__init__>`\\ "
 "\\(name\\, region\\, physicalRadius\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a PointFastener object."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -2921,17 +3130,11 @@ msgstr ""
 msgid "This method modifies the PointFastener object."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.PointFastener.PointFastener.__init__:12 of
 msgid ""
-":py:obj:`resume "
-"<abaqus.EngineeringFeature.PointFastener.PointFastener.resume>`\\ \\(\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.EngineeringFeature.PointFastener.PointFastener.suppress>`\\ "
-"\\(\\)"
+"Check `PointFastener.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointfastenerpyc.htm?contextscope=all"
+"#simaker-pointfastener__init__pyc>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.PointFastener.PointFastener.setValues:4 of
@@ -2941,7 +3144,7 @@ msgid ""
 "#simaker-pointfastenersetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:114
+#: ../../reference/mdb/model/part_assembly/engineering.rst:142
 msgid "PointMassInertia"
 msgstr ""
 
@@ -2956,7 +3159,7 @@ msgstr ""
 msgid "MASS"
 msgstr ""
 
-#: ../../None:16:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:16:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.suppressed>`\\"
@@ -3097,12 +3300,6 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
-":py:obj:`name "
-"<abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
 ":py:obj:`__init__ "
 "<abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__>`\\"
 " \\(name\\, region\\[\\, mass\\, mass1\\, mass2\\, ...\\]\\)"
@@ -3120,18 +3317,11 @@ msgstr ""
 msgid "This method modifies the PointMassInertia object."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.__init__:10 of
 msgid ""
-":py:obj:`resume "
-"<abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.resume>`\\ "
-"\\(\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.suppress>`\\"
-" \\(\\)"
+"Check `PointMassInertia.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pointmassinertiapyc.htm?contextscope=all"
+"#simaker-pointmassinertia__init__pyc>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.setValues:4 of
@@ -3141,8 +3331,13 @@ msgid ""
 "#simaker-pointmassinertiasetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:122
+#: ../../reference/mdb/model/part_assembly/engineering.rst:152
 msgid "SpringDashpotToGround"
+msgstr ""
+
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround:1
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot:1 of
+msgid "Bases: :py:class:`~abaqus.EngineeringFeature.SpringDashpot.SpringDashpot`"
 msgstr ""
 
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround:1 of
@@ -3167,7 +3362,7 @@ msgstr ""
 msgid "DASHPOT"
 msgstr ""
 
-#: ../../None:4:<autosummary>:1 ../../None:8:<autosummary>:1
+#: ../../None:8:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.suppressed>`\\"
@@ -3231,12 +3426,6 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
-":py:obj:`name "
-"<abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
 ":py:obj:`__init__ "
 "<abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__>`\\"
 " \\(name\\, region\\, dof\\[\\, orientation\\, ...\\]\\)"
@@ -3255,18 +3444,12 @@ msgstr ""
 msgid "This method modifies the SpringDashpotToGround object."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.__init__:10
+#: of
 msgid ""
-":py:obj:`resume "
-"<abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.resume>`\\"
-" \\(\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.suppress>`\\"
-" \\(\\)"
+"Check `SpringDashpotToGround.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-springdashpottogroundpyc.htm?contextscope=all"
+"#simaker-springdashpottoground__init__pyc>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.setValues:4
@@ -3277,7 +3460,7 @@ msgid ""
 "#simaker-springdashpottogroundsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:130
+#: ../../reference/mdb/model/part_assembly/engineering.rst:162
 msgid "TwoPointSpringDashpot"
 msgstr ""
 
@@ -3288,7 +3471,7 @@ msgid ""
 "derived from the SpringDashpot object."
 msgstr ""
 
-#: ../../None:10:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:10:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.suppressed>`\\"
@@ -3370,12 +3553,6 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
-":py:obj:`name "
-"<abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
 ":py:obj:`__init__ "
 "<abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__>`\\"
 " \\(name\\, regionPairs\\, axis\\[\\, dof1\\, ...\\]\\)"
@@ -3394,18 +3571,12 @@ msgstr ""
 msgid "This method modifies the TwoPointSpringDashpot object."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.__init__:10
+#: of
 msgid ""
-":py:obj:`resume "
-"<abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.resume>`\\"
-" \\(\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.suppress>`\\"
-" \\(\\)"
+"Check `TwoPointSpringDashpot.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-twopointspringdashpotpyc.htm?contextscope=all"
+"#simaker-twopointspringdashpot__init__pyc>`__."
 msgstr ""
 
 #: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.setValues:4
@@ -3416,7 +3587,7 @@ msgid ""
 "#simaker-twopointspringdashpotsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/engineering.rst:138
+#: ../../reference/mdb/model/part_assembly/engineering.rst:172
 msgid "XFEMCrack"
 msgstr ""
 
@@ -3436,7 +3607,7 @@ msgstr ""
 msgid "INITIAL CONDITIONS"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:13:<autosummary>:1
 msgid ""
 ":py:obj:`suppressed "
 "<abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.suppressed>`\\"
@@ -3551,18 +3722,10 @@ msgid ""
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
-msgid ":py:obj:`name <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.name>`\\"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`__init__ "
 "<abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__>`\\ \\(name\\, "
 "crackDomain\\[\\, ...\\]\\)"
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a XFEMCrack object."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -3577,19 +3740,14 @@ msgstr ""
 msgid "This method modifies the XFEMCrack object."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
+#: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:12 of
 msgid ""
-":py:obj:`resume <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.resume>`\\"
-" \\(\\)"
+"Check `XFEMCrack.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xfemcrackpyc.htm?contextscope=all"
+"#simaker-xfemcrack__init__pyc>`__."
 msgstr ""
 
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`suppress "
-"<abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.suppress>`\\ \\(\\)"
-msgstr ""
-
-#: ../../docstring
+#: ../../docstring abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.__init__:39
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.hasCrackFront:1
 #: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.setValues:26 of
 msgid ""
@@ -4135,5 +4293,190 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "**regions**"
+#~ msgstr ""
+
+#~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.resume>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.EngineeringFeature.AssembledFastener.AssembledFastener.suppress>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.resume>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.EngineeringFeature.ContourIntegral.ContourIntegral.suppress>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`name <abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.resume>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.EngineeringFeature.DebondVCCT.DebondVCCT.suppress>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.resume>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener.suppress>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.resume>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance.suppress>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.resume>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass.suppress>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.EngineeringFeature.PointFastener.PointFastener.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.EngineeringFeature.PointFastener.PointFastener.resume>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.EngineeringFeature.PointFastener.PointFastener.suppress>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.resume>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.EngineeringFeature.PointMassInertia.PointMassInertia.suppress>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.resume>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround.suppress>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`name "
+#~ "<abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.resume>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot.suppress>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`name <abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.name>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`resume "
+#~ "<abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.resume>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`suppress "
+#~ "<abaqus.EngineeringFeature.XFEMCrack.XFEMCrack.suppress>`\\ "
+#~ "\\(\\)"
 #~ msgstr ""
 
