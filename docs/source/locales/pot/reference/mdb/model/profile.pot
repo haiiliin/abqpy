@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 09:59+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,10 @@ msgstr ""
 
 #: ../../reference/mdb/model/profile.rst:11
 msgid "In Mdb"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel:1
+msgid "Bases: :py:class:`~abaqus.Model.ModelBase.ModelBase`"
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel:1
@@ -57,13 +61,673 @@ msgstr ""
 msgid "Check `BeamSectionProfileModel on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel:0
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb:0
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/Profile.py:docstring of abaqus.BeamSectionProfile.Profile.Profile:0
+#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile:0
+msgid "Public Data Attributes:"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`name <abaqus.Model.ModelBase.ModelBase.name>`\\"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.__init__:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.HexagonalProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.LProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.PipeProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.RectangularProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TrapezoidalProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.ArbitraryProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.CircularProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.HexagonalProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.LProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.PipeProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:13
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:13
+#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile.__init__:13
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:13
+#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.__init__:13
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:13
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile.__init__:13
+#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile.__init__:13
+#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.__init__:13
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.__init__:13
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.__init__:13
+#: ../../None:3:<autosummary>:1
+#: ../../None:52:<autosummary>:1
+#: ../../docstring of abaqus.BeamSectionProfile.Profile.Profile.name:1
+msgid "A String specifying the repository key."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`stefanBoltzmann <abaqus.Model.ModelBase.ModelBase.stefanBoltzmann>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "None or a Float specifying the Stefan-Boltzmann constant."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`absoluteZero <abaqus.Model.ModelBase.ModelBase.absoluteZero>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "None or a Float specifying the absolute zero constant."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`waveFormulation <abaqus.Model.ModelBase.ModelBase.waveFormulation>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A SymbolicConstant specifying the type of incident wave formulation to be used in acoustic problems."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`universalGas <abaqus.Model.ModelBase.ModelBase.universalGas>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "None or a Float specifying the universal gas constant."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`noPartsInputFile <abaqus.Model.ModelBase.ModelBase.noPartsInputFile>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A Boolean specifying whether an input file should be written without parts and assemblies."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`restartIncrement <abaqus.Model.ModelBase.ModelBase.restartIncrement>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "An Int specifying the increment, interval, iteration or cycle where the restart analysis will start."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`endRestartStep <abaqus.Model.ModelBase.ModelBase.endRestartStep>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A Boolean specifying that the step specified by **restartStep** should be terminated at the increment specified by **restartIncrement**."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`shellToSolid <abaqus.Model.ModelBase.ModelBase.shellToSolid>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A Boolean specifying that a shell global model drives a solid submodel."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`lastChangedCount <abaqus.Model.ModelBase.ModelBase.lastChangedCount>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A Float specifying the time stamp that indicates when the model was last changed."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`description <abaqus.Model.ModelBase.ModelBase.description>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A String specifying the purpose and contents of the Model object."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`restartJob <abaqus.Model.ModelBase.ModelBase.restartJob>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A String specifying the name of the job that generated the restart data."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`restartStep <abaqus.Model.ModelBase.ModelBase.restartStep>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A String specifying the name of the step where the restart analysis will start."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`globalJob <abaqus.Model.ModelBase.ModelBase.globalJob>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A String specifying the name of the job that generated the results for the global model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`copyConstraints <abaqus.Model.ModelBase.ModelBase.copyConstraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A boolean specifying the status of constraints created in a model, in the model which instances this model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`copyConnectors <abaqus.Model.ModelBase.ModelBase.copyConnectors>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A boolean specifying the status of connectors created in a model, in the model which instances this model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`copyInteractions <abaqus.Model.ModelBase.ModelBase.copyInteractions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A boolean specifying the status of interactions created in a model, in the model which instances this model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`keywordBlock <abaqus.Model.ModelBase.ModelBase.keywordBlock>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A :py:class:`~abaqus.Model.KeywordBlock.KeywordBlock` object."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`rootAssembly <abaqus.Model.ModelBase.ModelBase.rootAssembly>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "An :py:class:`~abaqus.Assembly.Assembly.Assembly` object."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`amplitudes <abaqus.Model.ModelBase.ModelBase.amplitudes>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Amplitude objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`profiles <abaqus.Model.ModelBase.ModelBase.profiles>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Profile objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`boundaryConditions <abaqus.Model.ModelBase.ModelBase.boundaryConditions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of BoundaryCondition objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`constraints <abaqus.Model.ModelBase.ModelBase.constraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ConstrainedSketchConstraint objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`analyticalFields <abaqus.Model.ModelBase.ModelBase.analyticalFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of AnalyticalField objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`discreteFields <abaqus.Model.ModelBase.ModelBase.discreteFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of DiscreteField objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`predefinedFields <abaqus.Model.ModelBase.ModelBase.predefinedFields>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of PredefinedField objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`interactions <abaqus.Model.ModelBase.ModelBase.interactions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Interaction objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`interactionProperties <abaqus.Model.ModelBase.ModelBase.interactionProperties>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of InteractionProperty objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`contactControls <abaqus.Model.ModelBase.ModelBase.contactControls>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ContactControl objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`contactInitializations <abaqus.Model.ModelBase.ModelBase.contactInitializations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ContactInitialization objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`contactStabilizations <abaqus.Model.ModelBase.ModelBase.contactStabilizations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ContactStabilization objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`linkedInstances <abaqus.Model.ModelBase.ModelBase.linkedInstances>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A tuple of tuples of Strings specifying the linked child PartInstance name in the current model to the corresponding parent PartInstance name in a different model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`linkedParts <abaqus.Model.ModelBase.ModelBase.linkedParts>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A tuple of tuples of Strings specifying the linked child Part name in the current model to the corresponding parent Part name in a different model."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`loads <abaqus.Model.ModelBase.ModelBase.loads>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Load objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`materials <abaqus.Model.ModelBase.ModelBase.materials>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Material objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`calibrations <abaqus.Model.ModelBase.ModelBase.calibrations>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Calibration objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`sections <abaqus.Model.ModelBase.ModelBase.sections>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Section objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`remeshingRules <abaqus.Model.ModelBase.ModelBase.remeshingRules>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of RemeshingRule objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`sketches <abaqus.Model.ModelBase.ModelBase.sketches>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of ConstrainedSketch objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`parts <abaqus.Model.ModelBase.ModelBase.parts>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Part objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`steps <abaqus.Model.ModelBase.ModelBase.steps>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Step objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`featureOptions <abaqus.Model.ModelBase.ModelBase.featureOptions>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A :py:class:`~abaqus.Feature.FeatureOptions.FeatureOptions` object."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`adaptiveMeshConstraints <abaqus.Model.ModelBase.ModelBase.adaptiveMeshConstraints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of AdaptiveMeshConstraint objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`adaptiveMeshControls <abaqus.Model.ModelBase.ModelBase.adaptiveMeshControls>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of AdaptiveMeshControl objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`timePoints <abaqus.Model.ModelBase.ModelBase.timePoints>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of TimePoint objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`filters <abaqus.Model.ModelBase.ModelBase.filters>`\\"
+msgstr ""
+
+#: ../../None:16:<autosummary>:1
+#: ../../None:52:<autosummary>:1
+msgid "A repository of Filter objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`integratedOutputSections <abaqus.Model.ModelBase.ModelBase.integratedOutputSections>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of IntegratedOutputSection objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`fieldOutputRequests <abaqus.Model.ModelBase.ModelBase.fieldOutputRequests>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of FieldOutputRequest objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`historyOutputRequests <abaqus.Model.ModelBase.ModelBase.historyOutputRequests>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of HistoryOutputRequest objects."
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid ":py:obj:`optimizationTasks <abaqus.Model.ModelBase.ModelBase.optimizationTasks>`\\"
+msgstr ""
+
+#: ../../None:52:<autosummary>:1
+msgid "A repository of OptimizationTask objects."
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel:0
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb:0
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/Profile.py:docstring of abaqus.BeamSectionProfile.Profile.Profile:0
+#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile:0
+msgid "Public Methods:"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`beamProfilesFromOdb <abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.beamProfilesFromOdb>`\\ \\(fileName\\)"
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+#: ../../None:3:<autosummary>:1
+msgid "This method creates Profile objects by reading an output database."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`ArbitraryProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile>`\\ \\(name\\, table\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.__init__:1
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile:1
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.ArbitraryProfile:1
 #: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a ArbitraryProfile object."
 msgstr ""
 
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`BoxProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile>`\\ \\(name\\, a\\, b\\, uniformThickness\\, t1\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:1
+#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a BoxProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`CircularProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile>`\\ \\(name\\, r\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.CircularProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile.__init__:1
+#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a CircularProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`GeneralizedProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile>`\\ \\(name\\, area\\, i11\\, i12\\, ...\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:1
+#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a GeneralizedProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`HexagonalProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.HexagonalProfile>`\\ \\(name\\, r\\, t\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.HexagonalProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.HexagonalProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.__init__:1
+#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a HexagonalProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`IProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile>`\\ \\(name\\, l\\, h\\, b1\\, b2\\, t1\\, t2\\, t3\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:1
+#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates an IProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`LProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.LProfile>`\\ \\(name\\, a\\, b\\, t1\\, t2\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.LProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.LProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile.__init__:1
+#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a LProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`PipeProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.PipeProfile>`\\ \\(name\\, r\\, t\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.PipeProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.PipeProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile.__init__:1
+#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a PipeProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`RectangularProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.RectangularProfile>`\\ \\(name\\, a\\, b\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.RectangularProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.__init__:1
+#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a RectangularProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`TProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile>`\\ \\(name\\, b\\, h\\, l\\, tf\\, tw\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.__init__:1
+#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a TProfile object."
+msgstr ""
+
+#: ../../None:14:<autosummary>:1
+msgid ":py:obj:`TrapezoidalProfile <abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TrapezoidalProfile>`\\ \\(name\\, a\\, b\\, c\\, d\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TrapezoidalProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.__init__:1
+#: ../../None:13:<autosummary>:1
+#: ../../None:14:<autosummary>:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a TrapezoidalProfile object."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.Model.ModelBase.ModelBase.__init__>`\\ \\(name\\[\\, description\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a Model object."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`ModelFromInputFile <abaqus.Model.ModelBase.ModelBase.ModelFromInputFile>`\\ \\(name\\, inputFileName\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a Model object by reading the keywords in an input file and creating the corresponding Abaqus/CAE objects."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`ModelFromOdbFile <abaqus.Model.ModelBase.ModelBase.ModelFromOdbFile>`\\ \\(name\\, odbFileName\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a Model object by reading an output database and creating any corresponding Abaqus/CAE objects."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`ModelFromNastranFile <abaqus.Model.ModelBase.ModelBase.ModelFromNastranFile>`\\ \\(modelName\\, inputFileName\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method creates a Model object by reading the keywords in a Nastran bulk data file or Nastran input file and creating any corresponding Abaqus/CAE objects."
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid ":py:obj:`setValues <abaqus.Model.ModelBase.ModelBase.setValues>`\\ \\(\\[description\\, noPartsInputFile\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:7:<autosummary>:1
+msgid "This method modifies the Model object."
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.__init__:4
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile:4
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:4
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile:4
@@ -87,7 +751,17 @@ msgstr ""
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:4
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:4
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:4
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:4
+#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile.__init__:4
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:4
+#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.__init__:4
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:4
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile.__init__:4
+#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile.__init__:4
 #: ../../../../src/abaqus/BeamSectionProfile/Profile.py:docstring of abaqus.BeamSectionProfile.Profile.Profile.beamProfilesFromOdb:5
+#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.__init__:4
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.__init__:4
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.__init__:4
 msgid "This function can be accessed by::"
 msgstr ""
 
@@ -97,6 +771,7 @@ msgstr ""
 msgid "Check `ArbitraryProfile on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-arbitraryprofilepyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile:0
@@ -120,44 +795,29 @@ msgstr ""
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.setValues:0
+#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/Profile.py:docstring of abaqus.BeamSectionProfile.Profile.Profile.beamProfilesFromOdb:0
+#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.__init__:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.HexagonalProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.LProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.PipeProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.RectangularProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TrapezoidalProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.ArbitraryProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.CircularProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.HexagonalProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.LProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.PipeProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:13
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:13
-#: ../../None:3:<autosummary>:1
-#: ../../docstring of abaqus.BeamSectionProfile.Profile.Profile.name:1
-msgid "A String specifying the repository key."
-msgstr ""
-
+#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.__init__:15
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile:15
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.ArbitraryProfile:15
 #: ../../docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.table:1
 msgid "A sequence of sequences of Floats specifying the items described below."
 msgstr ""
 
+#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile:0
@@ -181,15 +841,27 @@ msgstr ""
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/Profile.py:docstring of abaqus.BeamSectionProfile.Profile.Profile.beamProfilesFromOdb:0
+#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.__init__:0
 msgid "Returns"
 msgstr ""
 
+#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.__init__:17
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile:17
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.ArbitraryProfile:17
 msgid "An :py:class:`~abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile` object."
 msgstr ""
 
+#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile:0
@@ -213,15 +885,27 @@ msgstr ""
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/Profile.py:docstring of abaqus.BeamSectionProfile.Profile.Profile.beamProfilesFromOdb:0
+#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.__init__:0
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.__init__:0
 msgid "Return type"
 msgstr ""
 
+#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.__init__:18
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile:18
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.ArbitraryProfile:18
 msgid ":class:`ArbitraryProfile`"
 msgstr ""
 
+#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.setValues:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.ArbitraryProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:0
@@ -245,24 +929,27 @@ msgstr ""
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:0
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:0
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.setValues:0
+#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile.setValues:0
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.setValues:0
+#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.setValues:0
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.setValues:0
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile.setValues:0
+#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile.setValues:0
+#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.setValues:0
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.setValues:0
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.__init__:0
 #: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.setValues:0
 msgid "Raises"
-msgstr ""
-
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:1
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile:1
-#: ../../None:13:<autosummary>:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a BoxProfile object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:10
@@ -273,30 +960,35 @@ msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:15
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile:15
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:15
 #: ../../docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.a:1
 msgid "A Float specifying the **a** dimension of the box profile. For more information, see [Beam cross-section library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all)."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:19
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile:19
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:19
 #: ../../docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.b:1
 msgid "A Float specifying the **b** dimension of the box profile."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:21
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile:21
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:21
 #: ../../docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.uniformThickness:1
 msgid "A Boolean specifying whether the thickness is uniform."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:23
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile:23
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:23
 #: ../../docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t1:1
 msgid "A Float specifying the uniform wall thickness if **uniformThickness** = ON, and the wall thickness of the first segment if **uniformThickness** = OFF."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:26
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile:26
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:26
 #: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.setValues:7
 #: ../../docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t2:1
 msgid "A Float specifying the wall thickness of the second segment. **t2** is required only when **uniformThickness** = OFF. The default value is 0.0."
@@ -304,6 +996,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:29
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile:29
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:29
 #: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.setValues:10
 #: ../../docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t3:1
 msgid "A Float specifying the wall thickness of the third segment. **t3** is required only when **uniformThickness** = OFF. The default value is 0.0."
@@ -311,6 +1004,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:32
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile:32
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:32
 #: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.setValues:13
 #: ../../docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.t4:1
 msgid "A Float specifying the wall thickness of the fourth segment. **t4** is required only when **uniformThickness** = OFF. The default value is 0.0."
@@ -318,19 +1012,14 @@ msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:35
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile:35
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:35
 msgid "A :py:class:`~abaqus.BeamSectionProfile.BoxProfile.BoxProfile` object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.BoxProfile:36
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.BoxProfile:36
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:36
 msgid ":class:`BoxProfile`"
-msgstr ""
-
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile:1
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.CircularProfile:1
-#: ../../None:13:<autosummary>:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a CircularProfile object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile:10
@@ -341,25 +1030,21 @@ msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile:15
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.CircularProfile:15
+#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile.__init__:15
 #: ../../docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile.r:1
 msgid "A positive Float specifying the **r** dimension (outer radius) of the circular profile. For more information, see [Beam cross-section library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all)."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile:19
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.CircularProfile:19
+#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile.__init__:19
 msgid "A :py:class:`~abaqus.BeamSectionProfile.CircularProfile.CircularProfile` object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.CircularProfile:20
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.CircularProfile:20
+#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile.__init__:20
 msgid ":class:`CircularProfile`"
-msgstr ""
-
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile:1
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile:1
-#: ../../None:13:<autosummary>:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a GeneralizedProfile object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile:10
@@ -370,61 +1055,63 @@ msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile:15
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile:15
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:15
 #: ../../docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.area:1
 msgid "A Float specifying the cross-sectional area for the profile."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile:17
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile:17
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:17
 #: ../../docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.i11:1
 msgid "A Float specifying the moment of inertia for bending about the 1-axis, I11I11."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile:19
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile:19
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:19
 #: ../../docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.i12:1
 msgid "A Float specifying the moment of inertia for cross bending, I12I12."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile:21
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile:21
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:21
 #: ../../docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.i22:1
 msgid "A Float specifying the moment of inertia for bending about the 2-axis, I22I22."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile:23
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile:23
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:23
 #: ../../docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.j:1
 msgid "A Float specifying the torsional constant, JJ."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile:25
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile:25
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:25
 #: ../../docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.gammaO:1
 msgid "A Float specifying the sectorial moment, Γ0Γ0."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile:27
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile:27
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:27
 #: ../../docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.gammaW:1
 msgid "A Float specifying the warping constant, ΓWΓW."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile:29
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile:29
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:29
 msgid "A :py:class:`~abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile` object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.GeneralizedProfile:30
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.GeneralizedProfile:30
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:30
 msgid ":class:`GeneralizedProfile`"
-msgstr ""
-
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.HexagonalProfile:1
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.HexagonalProfile:1
-#: ../../None:13:<autosummary>:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a HexagonalProfile object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.HexagonalProfile:10
@@ -435,31 +1122,28 @@ msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.HexagonalProfile:15
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.HexagonalProfile:15
+#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.__init__:15
 #: ../../docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.r:1
 msgid "A positive Float specifying the **r** dimension (outer radius) of the hexagonal profile. For more information, see [Beam cross-section library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all)."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.HexagonalProfile:19
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.HexagonalProfile:19
+#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.__init__:19
 #: ../../docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.t:1
 msgid "A positive Float specifying the **t** dimension (wall thickness) of the hexagonal profile, *t < (sqrt(3)/2)r*."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.HexagonalProfile:22
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.HexagonalProfile:22
+#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.__init__:22
 msgid "A :py:class:`~abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile` object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.HexagonalProfile:23
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.HexagonalProfile:23
+#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.__init__:23
 msgid ":class:`HexagonalProfile`"
-msgstr ""
-
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile:1
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile:1
-#: ../../None:13:<autosummary>:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates an IProfile object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile:10
@@ -470,61 +1154,63 @@ msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile:15
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile:15
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:15
 #: ../../docstring of abaqus.BeamSectionProfile.IProfile.IProfile.l:1
 msgid "A Float specifying the **l** dimension (offset of 1-axis from the bottom flange surface) of the I profile. For more information, see [Beam cross-section library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all)."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile:19
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile:19
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:19
 #: ../../docstring of abaqus.BeamSectionProfile.IProfile.IProfile.h:1
 msgid "A Float specifying the **h** dimension (height) of the I profile."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile:21
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile:21
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:21
 #: ../../docstring of abaqus.BeamSectionProfile.IProfile.IProfile.b1:1
 msgid "A Float specifying the **b1** dimension (bottom flange width) of the I profile."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile:23
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile:23
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:23
 #: ../../docstring of abaqus.BeamSectionProfile.IProfile.IProfile.b2:1
 msgid "A Float specifying the **b2** dimension (top flange width) of the I profile."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile:25
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile:25
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:25
 #: ../../docstring of abaqus.BeamSectionProfile.IProfile.IProfile.t1:1
 msgid "A Float specifying the **t1** dimension (bottom flange thickness) of the I profile."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile:27
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile:27
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:27
 #: ../../docstring of abaqus.BeamSectionProfile.IProfile.IProfile.t2:1
 msgid "A Float specifying the **t2** dimension (top flange thickness) of the I profile."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile:29
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile:29
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:29
 #: ../../docstring of abaqus.BeamSectionProfile.IProfile.IProfile.t3:1
 msgid "A Float specifying the **t3** dimension (web thickness) of the I profile."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile:31
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile:31
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:31
 msgid "An :py:class:`~abaqus.BeamSectionProfile.IProfile.IProfile` object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.IProfile:32
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.IProfile:32
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:32
 msgid ":class:`IProfile`"
-msgstr ""
-
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.LProfile:1
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.LProfile:1
-#: ../../None:13:<autosummary>:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a LProfile object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.LProfile:10
@@ -535,43 +1221,42 @@ msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.LProfile:15
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.LProfile:15
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile.__init__:15
 #: ../../docstring of abaqus.BeamSectionProfile.LProfile.LProfile.a:1
 msgid "A positive Float specifying the **a** dimension (flange length) of the L profile. For more information, see [Beam cross-section library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all)."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.LProfile:19
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.LProfile:19
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile.__init__:19
 #: ../../docstring of abaqus.BeamSectionProfile.LProfile.LProfile.b:1
 msgid "A positive Float specifying the **b** dimension (flange length) of the L profile."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.LProfile:21
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.LProfile:21
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile.__init__:21
 #: ../../docstring of abaqus.BeamSectionProfile.LProfile.LProfile.t1:1
 msgid "A positive Float specifying the **t1** dimension (flange thickness) of the L profile (*t1 < b*)."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.LProfile:24
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.LProfile:24
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile.__init__:24
 #: ../../docstring of abaqus.BeamSectionProfile.LProfile.LProfile.t2:1
 msgid "A positive Float specifying the **t2** dimension (flange thickness) of the L profile (*t2< a*)."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.LProfile:27
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.LProfile:27
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile.__init__:27
 msgid "A :py:class:`~abaqus.BeamSectionProfile.LProfile.LProfile` object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.LProfile:28
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.LProfile:28
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile.__init__:28
 msgid ":class:`LProfile`"
-msgstr ""
-
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.PipeProfile:1
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.PipeProfile:1
-#: ../../None:13:<autosummary>:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a PipeProfile object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.PipeProfile:10
@@ -582,31 +1267,28 @@ msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.PipeProfile:15
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.PipeProfile:15
+#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile.__init__:15
 #: ../../docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile.r:1
 msgid "A Float specifying the outer radius of the pipe. For more information, see [Beam cross-section library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all)."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.PipeProfile:19
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.PipeProfile:19
+#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile.__init__:19
 #: ../../docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile.t:1
 msgid "A Float specifying the wall thickness of the pipe."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.PipeProfile:21
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.PipeProfile:21
+#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile.__init__:21
 msgid "A :py:class:`~abaqus.BeamSectionProfile.PipeProfile.PipeProfile` object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.PipeProfile:22
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.PipeProfile:22
+#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile.__init__:22
 msgid ":class:`PipeProfile`"
-msgstr ""
-
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.RectangularProfile:1
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:1
-#: ../../None:13:<autosummary>:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a RectangularProfile object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.RectangularProfile:10
@@ -617,31 +1299,28 @@ msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.RectangularProfile:15
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:15
+#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.__init__:15
 #: ../../docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.a:1
 msgid "A positive Float specifying the **a** dimension of the rectangular profile. For more information, see [Beam cross-section library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all)."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.RectangularProfile:19
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:19
+#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.__init__:19
 #: ../../docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.b:1
 msgid "A positive Float specifying the **b** dimension of the rectangular profile."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.RectangularProfile:21
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:21
+#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.__init__:21
 msgid "A :py:class:`~abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile` object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.RectangularProfile:22
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.RectangularProfile:22
+#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.__init__:22
 msgid ":class:`RectangularProfile`"
-msgstr ""
-
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile:1
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:1
-#: ../../None:13:<autosummary>:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a TProfile object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile:10
@@ -652,49 +1331,49 @@ msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile:15
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:15
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.__init__:15
 #: ../../docstring of abaqus.BeamSectionProfile.TProfile.TProfile.b:1
 msgid "A positive Float specifying the **b** dimension (flange width) of the T profile. For more information, see [Beam cross-section library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all)."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile:19
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:19
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.__init__:19
 #: ../../docstring of abaqus.BeamSectionProfile.TProfile.TProfile.h:1
 msgid "A positive Float specifying the **h** dimension (height) of the T profile."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile:21
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:21
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.__init__:21
 #: ../../docstring of abaqus.BeamSectionProfile.TProfile.TProfile.l:1
 msgid "A positive Float specifying the **l** dimension (offset of 1-axis from the edge of web) of the T profile."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile:24
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:24
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.__init__:24
 #: ../../docstring of abaqus.BeamSectionProfile.TProfile.TProfile.tf:1
 msgid "A positive Float specifying the **tf** dimension (flange thickness) of the T profile (*tf < h*)."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile:27
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:27
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.__init__:27
 #: ../../docstring of abaqus.BeamSectionProfile.TProfile.TProfile.tw:1
 msgid "A positive Float specifying the **tw** dimension (web thickness) of the T profile (*tw< b*)."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile:30
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:30
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.__init__:30
 msgid "A :py:class:`~abaqus.BeamSectionProfile.TProfile.TProfile` object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TProfile:31
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TProfile:31
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.__init__:31
 msgid ":class:`TProfile`"
-msgstr ""
-
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TrapezoidalProfile:1
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:1
-#: ../../None:13:<autosummary>:1
-#: ../../None:4:<autosummary>:1
-msgid "This method creates a TrapezoidalProfile object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TrapezoidalProfile:10
@@ -705,35 +1384,41 @@ msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TrapezoidalProfile:15
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:15
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.__init__:15
 #: ../../docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.a:1
 msgid "A positive Float specifying the **a** dimension of the Trapezoidal profile. For more information, see [Beam cross-section library](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEELMRefMap/simaelm-c-beamcrosssectlib.htm?ContextScope=all)."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TrapezoidalProfile:19
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:19
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.__init__:19
 #: ../../docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.b:1
 msgid "A positive Float specifying the **b** dimension of the Trapezoidal profile."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TrapezoidalProfile:21
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:21
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.__init__:21
 #: ../../docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.c:1
 msgid "A positive Float specifying the **c** dimension of the Trapezoidal profile."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TrapezoidalProfile:23
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:23
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.__init__:23
 #: ../../docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.d:1
 msgid "A Float specifying the **d** dimension of the Trapezoidal profile."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TrapezoidalProfile:25
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:25
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.__init__:25
 msgid "A :py:class:`~abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile` object."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileModel.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel.TrapezoidalProfile:26
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.TrapezoidalProfile:26
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.__init__:26
 msgid ":class:`TrapezoidalProfile`"
 msgstr ""
 
@@ -761,8 +1446,12 @@ msgstr ""
 msgid ":class:`List[Profile]`"
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:17
+#: ../../reference/mdb/model/profile.rst:21
 msgid "In Odb"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb:1
+msgid "Bases: :py:class:`~abaqus.Odb.OdbBase.OdbBase`"
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb:1
@@ -773,24 +1462,8 @@ msgstr ""
 msgid "Check `BeamSectionProfileOdb on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb:0
-#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/Profile.py:docstring of abaqus.BeamSectionProfile.Profile.Profile:0
-#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile:0
-msgid "Public Data Attributes:"
-msgstr ""
-
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`isReadOnly <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.isReadOnly>`\\"
+msgid ":py:obj:`isReadOnly <abaqus.Odb.OdbBase.OdbBase.isReadOnly>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -798,23 +1471,15 @@ msgid "A Boolean specifying whether the output database was opened with read-onl
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`amplitudes <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.amplitudes>`\\"
+msgid ":py:obj:`amplitudes <abaqus.Odb.OdbBase.OdbBase.amplitudes>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid "A repository of Amplitude objects."
+msgid ":py:obj:`filters <abaqus.Odb.OdbBase.OdbBase.filters>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`filters <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.filters>`\\"
-msgstr ""
-
-#: ../../None:16:<autosummary>:1
-msgid "A repository of Filter objects."
-msgstr ""
-
-#: ../../None:16:<autosummary>:1
-msgid ":py:obj:`rootAssembly <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.rootAssembly>`\\"
+msgid ":py:obj:`rootAssembly <abaqus.Odb.OdbBase.OdbBase.rootAssembly>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -822,7 +1487,7 @@ msgid "An :py:class:`~abaqus.Odb.OdbAssembly.OdbAssembly` object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`jobData <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.jobData>`\\"
+msgid ":py:obj:`jobData <abaqus.Odb.OdbBase.OdbBase.jobData>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -830,7 +1495,7 @@ msgid "A :py:class:`~abaqus.Odb.JobData.JobData` object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`parts <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.parts>`\\"
+msgid ":py:obj:`parts <abaqus.Odb.OdbBase.OdbBase.parts>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -838,15 +1503,11 @@ msgid "A repository of OdbPart objects."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`materials <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.materials>`\\"
+msgid ":py:obj:`materials <abaqus.Odb.OdbBase.OdbBase.materials>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid "A repository of Material objects."
-msgstr ""
-
-#: ../../None:16:<autosummary>:1
-msgid ":py:obj:`steps <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.steps>`\\"
+msgid ":py:obj:`steps <abaqus.Odb.OdbBase.OdbBase.steps>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -854,15 +1515,11 @@ msgid "A repository of OdbStep objects."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`sections <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.sections>`\\"
+msgid ":py:obj:`sections <abaqus.Odb.OdbBase.OdbBase.sections>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid "A repository of Section objects."
-msgstr ""
-
-#: ../../None:16:<autosummary>:1
-msgid ":py:obj:`sectionCategories <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.sectionCategories>`\\"
+msgid ":py:obj:`sectionCategories <abaqus.Odb.OdbBase.OdbBase.sectionCategories>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -870,7 +1527,7 @@ msgid "A repository of SectionCategory objects."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`sectorDefinition <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.sectorDefinition>`\\"
+msgid ":py:obj:`sectorDefinition <abaqus.Odb.OdbBase.OdbBase.sectorDefinition>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -878,7 +1535,7 @@ msgid "A :py:class:`~abaqus.Odb.SectorDefinition.SectorDefinition` object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`userData <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.userData>`\\"
+msgid ":py:obj:`userData <abaqus.Odb.OdbBase.OdbBase.userData>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -886,7 +1543,7 @@ msgid "A :py:class:`~abaqus.Odb.UserData.UserData` object."
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`customData <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.customData>`\\"
+msgid ":py:obj:`customData <abaqus.Odb.OdbBase.OdbBase.customData>`\\"
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
@@ -894,27 +1551,7 @@ msgid "A :py:class:`~abaqus.CustomKernel.RepositorySupport.RepositorySupport` ob
 msgstr ""
 
 #: ../../None:16:<autosummary>:1
-msgid ":py:obj:`profiles <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.profiles>`\\"
-msgstr ""
-
-#: ../../None:16:<autosummary>:1
-msgid "A repository of Profile objects."
-msgstr ""
-
-#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/BeamSectionProfileOdb.py:docstring of abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb:0
-#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/Profile.py:docstring of abaqus.BeamSectionProfile.Profile.Profile:0
-#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile:0
-#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile:0
-msgid "Public Methods:"
+msgid ":py:obj:`profiles <abaqus.Odb.OdbBase.OdbBase.profiles>`\\"
 msgstr ""
 
 #: ../../None:13:<autosummary>:1
@@ -962,7 +1599,7 @@ msgid ":py:obj:`TrapezoidalProfile <abaqus.BeamSectionProfile.BeamSectionProfile
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`__init__ <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.__init__>`\\ \\(name\\[\\, analysisTitle\\, description\\, ...\\]\\)"
+msgid ":py:obj:`__init__ <abaqus.Odb.OdbBase.OdbBase.__init__>`\\ \\(name\\[\\, analysisTitle\\, description\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -970,7 +1607,7 @@ msgid "This method creates a new Odb object."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`close <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.close>`\\ \\(\\)"
+msgid ":py:obj:`close <abaqus.Odb.OdbBase.OdbBase.close>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -978,7 +1615,7 @@ msgid "This method closes an output database."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`getFrame <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.getFrame>`\\ \\(frameValue\\[\\, match\\]\\)"
+msgid ":py:obj:`getFrame <abaqus.Odb.OdbBase.OdbBase.getFrame>`\\ \\(frameValue\\[\\, match\\]\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -986,7 +1623,7 @@ msgid "This method returns the frame at the specified time, frequency, or mode."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`save <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.save>`\\ \\(\\)"
+msgid ":py:obj:`save <abaqus.Odb.OdbBase.OdbBase.save>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
@@ -994,19 +1631,23 @@ msgid "This method saves output to an output database (.odb ) file."
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
-msgid ":py:obj:`update <abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb.update>`\\ \\(\\)"
+msgid ":py:obj:`update <abaqus.Odb.OdbBase.OdbBase.update>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid "This method is used to update an Odb object in memory while an Abaqus analysis writes data to the associated output database."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:26
-msgid "Object features"
+#: ../../reference/mdb/model/profile.rst:32
+msgid "Classes"
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:29
+#: ../../reference/mdb/model/profile.rst:35
 msgid "Profile"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/Profile.py:docstring of abaqus.BeamSectionProfile.Profile.Profile:1
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/Profile.py:docstring of abaqus.BeamSectionProfile.Profile.Profile:1
@@ -1025,16 +1666,26 @@ msgstr ""
 msgid ":py:obj:`beamProfilesFromOdb <abaqus.BeamSectionProfile.Profile.Profile.beamProfilesFromOdb>`\\ \\(fileName\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid "This method creates Profile objects by reading an output database."
-msgstr ""
-
 #: ../../../../src/abaqus/BeamSectionProfile/Profile.py:docstring of abaqus.BeamSectionProfile.Profile.Profile.beamProfilesFromOdb:10
 msgid "Check `Profile.beamProfilesFromOdb on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-profilepyc.htm?contextscope=all#simaker-profilebeamprofilesfromodbpyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:37
+#: ../../reference/mdb/model/profile.rst:45
 msgid "ArbitraryProfile"
+msgstr ""
+
+#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile:1
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile:1
+msgid "Bases: :py:class:`~abaqus.BeamSectionProfile.Profile.Profile`"
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile:1
@@ -1096,10 +1747,6 @@ msgstr ""
 msgid "BEAM SECTION"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`name <abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.name>`\\"
-msgstr ""
-
 #: ../../None:4:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.__init__>`\\ \\(name\\, table\\)"
 msgstr ""
@@ -1113,11 +1760,11 @@ msgstr ""
 msgid "This method modifies the ArbitraryProfile object."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`beamProfilesFromOdb <abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.beamProfilesFromOdb>`\\ \\(fileName\\)"
+#: ../../../../src/abaqus/BeamSectionProfile/ArbitraryProfile.py:docstring of abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.__init__:10
+msgid "Check `ArbitraryProfile.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-arbitraryprofilepyc.htm?contextscope=all#simaker-arbitraryprofile__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:45
+#: ../../reference/mdb/model/profile.rst:55
 msgid "BoxProfile"
 msgstr ""
 
@@ -1149,10 +1796,6 @@ msgstr ""
 msgid "A Float specifying the wall thickness of the fourth segment."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`name <abaqus.BeamSectionProfile.BoxProfile.BoxProfile.name>`\\"
-msgstr ""
-
 #: ../../None:4:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__>`\\ \\(name\\, a\\, b\\, uniformThickness\\, t1\\[\\, ...\\]\\)"
 msgstr ""
@@ -1166,24 +1809,20 @@ msgstr ""
 msgid "This method modifies the BoxProfile object."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`beamProfilesFromOdb <abaqus.BeamSectionProfile.BoxProfile.BoxProfile.beamProfilesFromOdb>`\\ \\(fileName\\)"
+#: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.__init__:10
+msgid "Check `BoxProfile.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-boxprofilepyc.htm?contextscope=all#simaker-boxprofile__init__pyc>`__."
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/BoxProfile.py:docstring of abaqus.BeamSectionProfile.BoxProfile.BoxProfile.setValues:4
 msgid "Check `BoxProfile.setValues on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-boxprofilepyc.htm?contextscope=all#simaker-boxprofilesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:53
+#: ../../reference/mdb/model/profile.rst:65
 msgid "CircularProfile"
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile:1
 msgid "The CircularProfile object defines the properties of a solid circular profile. The CircularProfile object is derived from the Profile object."
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`name <abaqus.BeamSectionProfile.CircularProfile.CircularProfile.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1199,11 +1838,11 @@ msgstr ""
 msgid "This method modifies the CircularProfile object."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`beamProfilesFromOdb <abaqus.BeamSectionProfile.CircularProfile.CircularProfile.beamProfilesFromOdb>`\\ \\(fileName\\)"
+#: ../../../../src/abaqus/BeamSectionProfile/CircularProfile.py:docstring of abaqus.BeamSectionProfile.CircularProfile.CircularProfile.__init__:10
+msgid "Check `CircularProfile.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-circularprofilepyc.htm?contextscope=all#simaker-circularprofile__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:61
+#: ../../reference/mdb/model/profile.rst:75
 msgid "GeneralizedProfile"
 msgstr ""
 
@@ -1213,10 +1852,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile:15
 msgid "BEAM GENERAL SECTION"
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`name <abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1232,20 +1867,16 @@ msgstr ""
 msgid "This method modifies the GeneralizedProfile object."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`beamProfilesFromOdb <abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.beamProfilesFromOdb>`\\ \\(fileName\\)"
+#: ../../../../src/abaqus/BeamSectionProfile/GeneralizedProfile.py:docstring of abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile.__init__:10
+msgid "Check `GeneralizedProfile.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-generalizedprofilepyc.htm?contextscope=all#simaker-generalizedprofile__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:69
+#: ../../reference/mdb/model/profile.rst:85
 msgid "HexagonalProfile"
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile:1
 msgid "The HexagonalProfile object defines the properties of a hexagonal profile. The HexagonalProfile object is derived from the Profile object."
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`name <abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1261,20 +1892,16 @@ msgstr ""
 msgid "This method modifies the HexagonalProfile object."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`beamProfilesFromOdb <abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.beamProfilesFromOdb>`\\ \\(fileName\\)"
+#: ../../../../src/abaqus/BeamSectionProfile/HexagonalProfile.py:docstring of abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile.__init__:10
+msgid "Check `HexagonalProfile.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-hexagonalprofilepyc.htm?contextscope=all#simaker-hexagonalprofile__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:77
+#: ../../reference/mdb/model/profile.rst:95
 msgid "IProfile"
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile:1
 msgid "The IProfile object defines the properties of an I profile. The IProfile object is derived from the Profile object."
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`name <abaqus.BeamSectionProfile.IProfile.IProfile.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1290,20 +1917,16 @@ msgstr ""
 msgid "This method modifies the IProfile object."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`beamProfilesFromOdb <abaqus.BeamSectionProfile.IProfile.IProfile.beamProfilesFromOdb>`\\ \\(fileName\\)"
+#: ../../../../src/abaqus/BeamSectionProfile/IProfile.py:docstring of abaqus.BeamSectionProfile.IProfile.IProfile.__init__:10
+msgid "Check `IProfile.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-iprofilepyc.htm?contextscope=all#simaker-iprofile__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:85
+#: ../../reference/mdb/model/profile.rst:105
 msgid "LProfile"
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile:1
 msgid "The LProfile object defines the properties of a L profile. The LProfile object is derived from the Profile object."
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`name <abaqus.BeamSectionProfile.LProfile.LProfile.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1319,20 +1942,16 @@ msgstr ""
 msgid "This method modifies the LProfile object."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`beamProfilesFromOdb <abaqus.BeamSectionProfile.LProfile.LProfile.beamProfilesFromOdb>`\\ \\(fileName\\)"
+#: ../../../../src/abaqus/BeamSectionProfile/LProfile.py:docstring of abaqus.BeamSectionProfile.LProfile.LProfile.__init__:10
+msgid "Check `LProfile.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-lprofilepyc.htm?contextscope=all#simaker-lprofile__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:93
+#: ../../reference/mdb/model/profile.rst:115
 msgid "PipeProfile"
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile:1
 msgid "The PipeProfile object defines the properties of a circular pipe profile. The PipeProfile object is derived from the Profile object."
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`name <abaqus.BeamSectionProfile.PipeProfile.PipeProfile.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1348,20 +1967,16 @@ msgstr ""
 msgid "This method modifies the PipeProfile object."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`beamProfilesFromOdb <abaqus.BeamSectionProfile.PipeProfile.PipeProfile.beamProfilesFromOdb>`\\ \\(fileName\\)"
+#: ../../../../src/abaqus/BeamSectionProfile/PipeProfile.py:docstring of abaqus.BeamSectionProfile.PipeProfile.PipeProfile.__init__:10
+msgid "Check `PipeProfile.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pipeprofilepyc.htm?contextscope=all#simaker-pipeprofile__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:101
+#: ../../reference/mdb/model/profile.rst:125
 msgid "RectangularProfile"
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile:1
 msgid "The RectangularProfile object defines the properties of a solid rectangular profile. The RectangularProfile object is derived from the Profile object."
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`name <abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1377,20 +1992,16 @@ msgstr ""
 msgid "This method modifies the RectangularProfile object."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`beamProfilesFromOdb <abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.beamProfilesFromOdb>`\\ \\(fileName\\)"
+#: ../../../../src/abaqus/BeamSectionProfile/RectangularProfile.py:docstring of abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile.__init__:10
+msgid "Check `RectangularProfile.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rectangularprofilepyc.htm?contextscope=all#simaker-rectangularprofile__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:109
+#: ../../reference/mdb/model/profile.rst:135
 msgid "TProfile"
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile:1
 msgid "The TProfile object defines the properties of a T profile. The TProfile object is derived from the Profile object."
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`name <abaqus.BeamSectionProfile.TProfile.TProfile.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1406,20 +2017,16 @@ msgstr ""
 msgid "This method modifies the TProfile object."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`beamProfilesFromOdb <abaqus.BeamSectionProfile.TProfile.TProfile.beamProfilesFromOdb>`\\ \\(fileName\\)"
+#: ../../../../src/abaqus/BeamSectionProfile/TProfile.py:docstring of abaqus.BeamSectionProfile.TProfile.TProfile.__init__:10
+msgid "Check `TProfile.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tprofilepyc.htm?contextscope=all#simaker-tprofile__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:117
+#: ../../reference/mdb/model/profile.rst:145
 msgid "TrapezoidalProfile"
 msgstr ""
 
 #: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile:1
 msgid "The TrapezoidalProfile object defines the properties of a trapezoidal profile. The TrapezoidalProfile object is derived from the Profile object."
-msgstr ""
-
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`name <abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.name>`\\"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
@@ -1435,6 +2042,6 @@ msgstr ""
 msgid "This method modifies the TrapezoidalProfile object."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1
-msgid ":py:obj:`beamProfilesFromOdb <abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.beamProfilesFromOdb>`\\ \\(fileName\\)"
+#: ../../../../src/abaqus/BeamSectionProfile/TrapezoidalProfile.py:docstring of abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.__init__:10
+msgid "Check `TrapezoidalProfile.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-trapezoidalprofilepyc.htm?contextscope=all#simaker-trapezoidalprofile__init__pyc>`__."
 msgstr ""

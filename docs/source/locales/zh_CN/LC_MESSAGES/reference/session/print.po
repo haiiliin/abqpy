@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 00:23+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,19 @@ msgid ""
 msgstr ""
 
 #: ../../reference/session/print.rst:8
-msgid "Object features"
+msgid "Classes"
 msgstr ""
 
 #: ../../reference/session/print.rst:11
 msgid "EpsOptions"
+msgstr ""
+
+#: abaqus.Print.EpsOptions.EpsOptions:1
+#: abaqus.Print.PageSetupOptions.PageSetupOptions:1
+#: abaqus.Print.PngOptions.PngOptions:1
+#: abaqus.Print.PrintOptions.PrintOptions:1 abaqus.Print.PsOptions.PsOptions:1
+#: abaqus.Print.SvgOptions.SvgOptions:1 of
+msgid "Bases: :py:class:`~abaqus._OptionsBase._OptionsBase`"
 msgstr ""
 
 #: abaqus.Print.EpsOptions.EpsOptions:1 of
@@ -131,25 +139,35 @@ msgstr ""
 msgid "Public Methods:"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`setValues <abaqus.Print.EpsOptions.EpsOptions.setValues>`\\ "
 "\\(\\*\\[\\, imageSize\\, units\\, resolution\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Print.EpsOptions.EpsOptions.setValues:1 of
+#: ../../None:3:<autosummary>:1 abaqus.Print.EpsOptions.EpsOptions.setValues:1
+#: of
 msgid "This method modifies the EpsOptions object."
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ""
 ":py:obj:`get_user_attributes "
-"<abaqus.Print.EpsOptions.EpsOptions.get_user_attributes>`\\ \\(\\)"
+"<abaqus._OptionsBase._OptionsBase.get_user_attributes>`\\ \\(\\)"
 msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid "Returns a list of the user attributes of the class."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`setValues <abaqus._OptionsBase._OptionsBase.setValues>`\\ "
+"\\(\\*\\*kwargs\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method modifies the _OptionsBase object."
 msgstr ""
 
 #: ../../docstring abaqus.Print.EpsOptions.EpsOptions.fontType:1
@@ -237,7 +255,7 @@ msgstr ""
 msgid "If either element of **imageSize** is out of range."
 msgstr ""
 
-#: ../../reference/session/print.rst:19
+#: ../../reference/session/print.rst:21
 msgid "PageSetupOptions"
 msgstr ""
 
@@ -355,23 +373,16 @@ msgstr ""
 msgid "A Boolean specifying whether the output includes the date."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`setValues "
 "<abaqus.Print.PageSetupOptions.PageSetupOptions.setValues>`\\ "
 "\\(\\*\\[\\, imageSize\\, units\\, quality\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 #: abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:1 of
 msgid "This method modifies the PageSetupOptions object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`get_user_attributes "
-"<abaqus.Print.PageSetupOptions.PageSetupOptions.get_user_attributes>`\\ "
-"\\(\\)"
 msgstr ""
 
 #: ../../docstring
@@ -481,7 +492,7 @@ msgstr ""
 msgid "If **topMargin** + **bottomMargin** is out of range."
 msgstr ""
 
-#: ../../reference/session/print.rst:27
+#: ../../reference/session/print.rst:31
 msgid "PngOptions"
 msgstr ""
 
@@ -508,21 +519,15 @@ msgid ""
 "width and height of the image in pixels."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`setValues <abaqus.Print.PngOptions.PngOptions.setValues>`\\ "
 "\\(\\*\\[\\, imageSize\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Print.PngOptions.PngOptions.setValues:1 of
+#: ../../None:3:<autosummary>:1 abaqus.Print.PngOptions.PngOptions.setValues:1
+#: of
 msgid "This method modifies the PngOptions object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`get_user_attributes "
-"<abaqus.Print.PngOptions.PngOptions.get_user_attributes>`\\ \\(\\)"
 msgstr ""
 
 #: ../../docstring abaqus.Print.PngOptions.PngOptions.imageSize:1 of
@@ -571,7 +576,7 @@ msgid ""
 "largest allowable number of     pixels supported by the system graphics)."
 msgstr ""
 
-#: ../../reference/session/print.rst:35
+#: ../../reference/session/print.rst:41
 msgid "PrintOptions"
 msgstr ""
 
@@ -662,21 +667,15 @@ msgid ""
 "true color to 256 colors to reduce file size."
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`setValues <abaqus.Print.PrintOptions.PrintOptions.setValues>`\\ "
 "\\(\\*\\[\\, rendition\\, vpDecorations\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 #: abaqus.Print.PrintOptions.PrintOptions.setValues:1 of
 msgid "This method modifies the PrintOptions object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`get_user_attributes "
-"<abaqus.Print.PrintOptions.PrintOptions.get_user_attributes>`\\ \\(\\)"
 msgstr ""
 
 #: ../../docstring abaqus.Print.PrintOptions.PrintOptions.compass:1 of
@@ -745,7 +744,7 @@ msgid ""
 "default value is OFF."
 msgstr ""
 
-#: ../../reference/session/print.rst:43
+#: ../../reference/session/print.rst:51
 msgid "PsOptions"
 msgstr ""
 
@@ -832,21 +831,14 @@ msgid ""
 "<abaqus.Print.PsOptions.PsOptions.shadingQuality>`\\"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`setValues <abaqus.Print.PsOptions.PsOptions.setValues>`\\ "
 "\\(\\*\\[\\, paperSize\\, topMargin\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Print.PsOptions.PsOptions.setValues:1 of
+#: ../../None:3:<autosummary>:1 abaqus.Print.PsOptions.PsOptions.setValues:1 of
 msgid "This method modifies the PsOptions object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`get_user_attributes "
-"<abaqus.Print.PsOptions.PsOptions.get_user_attributes>`\\ \\(\\)"
 msgstr ""
 
 #: ../../docstring abaqus.Print.PsOptions.PsOptions.bottomMargin:1
@@ -946,7 +938,7 @@ msgid ""
 " are **topMargin** ≥ 0. The default value is 0.5."
 msgstr ""
 
-#: ../../reference/session/print.rst:51
+#: ../../reference/session/print.rst:61
 msgid "SvgOptions"
 msgstr ""
 
@@ -967,21 +959,15 @@ msgstr ""
 msgid ":py:obj:`imageSize <abaqus.Print.SvgOptions.SvgOptions.imageSize>`\\"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
+#: ../../None:3:<autosummary>:1
 msgid ""
 ":py:obj:`setValues <abaqus.Print.SvgOptions.SvgOptions.setValues>`\\ "
 "\\(\\*\\[\\, imageSize\\]\\)"
 msgstr ""
 
-#: ../../None:3:<autosummary>:1 ../../None:4:<autosummary>:1
-#: abaqus.Print.SvgOptions.SvgOptions.setValues:1 of
+#: ../../None:3:<autosummary>:1 abaqus.Print.SvgOptions.SvgOptions.setValues:1
+#: of
 msgid "This method modifies the SvgOptions object."
-msgstr ""
-
-#: ../../None:4:<autosummary>:1
-msgid ""
-":py:obj:`get_user_attributes "
-"<abaqus.Print.SvgOptions.SvgOptions.get_user_attributes>`\\ \\(\\)"
 msgstr ""
 
 #: ../../docstring abaqus.Print.SvgOptions.SvgOptions.imageSize:1
@@ -1282,5 +1268,43 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "**paperSize**"
+#~ msgstr ""
+
+#~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus.Print.EpsOptions.EpsOptions.get_user_attributes>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus.Print.PageSetupOptions.PageSetupOptions.get_user_attributes>`\\"
+#~ " \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus.Print.PngOptions.PngOptions.get_user_attributes>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus.Print.PrintOptions.PrintOptions.get_user_attributes>`\\ "
+#~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus.Print.PsOptions.PsOptions.get_user_attributes>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`get_user_attributes "
+#~ "<abaqus.Print.SvgOptions.SvgOptions.get_user_attributes>`\\ "
+#~ "\\(\\)"
 #~ msgstr ""
 
