@@ -1,5 +1,7 @@
 from __future__ import annotations
+
 from typing import overload, Optional, Sequence, Tuple
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Region import Region
@@ -17,7 +19,7 @@ from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNode import MeshNode
 from ..Mesh.MeshNodeArray import MeshNodeArray
-from ..UtilityAndView.abaqusConstants import Boolean, OVERWRITE, SymbolicConstant, UNION
+from ..UtilityAndView.abaqusConstants import Boolean, OVERWRITE, UNION, INTERSECTION, DIFFERENCE
 
 
 @abaqus_class_doc
@@ -196,7 +198,7 @@ class Set(Region):
         ...
 
     def SetByBoolean(
-        self, name: str, sets: Sequence[Set], operation: SymbolicConstant = UNION
+        self, name: str, sets: Sequence[Set], operation: Literal[UNION, INTERSECTION, DIFFERENCE] = UNION
     ) -> Set:
         """This method creates a set by performing a boolean operation on two or more input sets.
 

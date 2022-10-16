@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from typing import Optional, Union, overload, Sequence, Tuple
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Region import Region
@@ -18,7 +19,7 @@ from ..Mesh.MeshEdge import MeshEdge
 from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
-from ..UtilityAndView.abaqusConstants import Boolean, OVERWRITE, SymbolicConstant, UNION
+from ..UtilityAndView.abaqusConstants import Boolean, OVERWRITE, UNION, INTERSECTION, DIFFERENCE
 
 @abaqus_class_doc
 class RegionPart(RegionPartBase):
@@ -497,7 +498,7 @@ class RegionPart(RegionPartBase):
 # But it accessed only by `Part` and `rootAssembly` objetcs.
 
     def SetByBoolean(
-        self, name: str, sets: Sequence[Set], operation: SymbolicConstant = UNION
+        self, name: str, sets: Sequence[Set], operation: Literal[UNION, INTERSECTION, DIFFERENCE] = UNION
     ) -> Set:
         """This method creates a set by performing a boolean operation on two or more input sets.
 
