@@ -255,7 +255,7 @@ class Set(Region):
         ...
 
     @abaqus_method_doc
-    def SetFromElementLabels(self, name: str, elementLabels: tuple) -> Set:
+    def SetFromElementLabels(self, name: str, elementLabels: Sequence[int]) -> Set:
         """This method creates a set from a sequence of element labels in a model database.
 
         .. note:: 
@@ -286,7 +286,7 @@ class Set(Region):
         ...
 
     @abaqus_method_doc
-    def SetFromNodeLabels(self, name: str, nodeLabels: tuple, unsorted: Boolean = False) -> Set:
+    def SetFromNodeLabels(self, name: str, nodeLabels: Sequence[int], unsorted: Boolean = False) -> Set:
         """This method creates a set from a sequence of node labels in a model database.
 
         .. note:: 
