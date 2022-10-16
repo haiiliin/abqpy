@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2019\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-06 00:19+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,85 +104,76 @@ msgstr ""
 msgid "You may install the latest development version by cloning the `GitHub repository <https://github.com/haiiliin/abqpy>`_ and use `python` to install from the local directory:"
 msgstr ""
 
-#: ../../getting_started.rst:162
+#: ../../getting_started.rst:161
 msgid "Optional Requirements"
 msgstr ""
 
-#: ../../getting_started.rst:164
+#: ../../getting_started.rst:163
 msgid "If you want to use the Jupyter notebook to write your Abaqus/Python scripts, you need to install `ipynbname`:"
 msgstr ""
 
-#: ../../getting_started.rst:172
+#: ../../getting_started.rst:171
 msgid "Install A Specific Version"
 msgstr ""
 
-#: ../../getting_started.rst:174
+#: ../../getting_started.rst:173
 msgid "You can specify the version number when installing `abqpy`, for example:"
 msgstr ""
 
-#: ../../getting_started.rst:176
+#: ../../getting_started.rst:175
 msgid "Using `pip`:"
 msgstr ""
 
-#: ../../getting_started.rst:182
+#: ../../getting_started.rst:181
 msgid "Using `conda`:"
 msgstr ""
 
-#: ../../getting_started.rst:188
+#: ../../getting_started.rst:187
 msgid "A better way is to use * to match specific version:"
 msgstr ""
 
-#: ../../getting_started.rst:195
+#: ../../getting_started.rst:194
 msgid "Write your Abaqus/Python script"
 msgstr ""
 
-#: ../../getting_started.rst:197
+#: ../../getting_started.rst:196
 msgid "After installing the `abqpy` package, you can start writing your own Abaqus/Python script to build your model. You can refer `abqpy/examples at main · haiiliin/abqpy <https://github.com/haiiliin/abqpy/tree/main/examples>`_ for some tests of the script, for more detailed documentation, please check `abqpy documentation <https://haiiliin.com/abqpy/>`_."
 msgstr ""
 
-#: ../../getting_started.rst:204
+#: ../../getting_started.rst:203
 msgid "Setup your Abaqus Environment"
 msgstr ""
 
-#: ../../getting_started.rst:206
+#: ../../getting_started.rst:205
 msgid "In order to use Abaqus command to execute the Python script and submit the job, you need to tell `abqpy` where the Abaqus command is located. Usually, Abaqus command locates in a directory like this:"
 msgstr ""
 
-#: ../../getting_started.rst:213
-#: ../../getting_started.rst:227
+#: ../../getting_started.rst:212
 msgid "You can add the directory `C:/SIMULIA/Commands` to the system environment variable `Path`, or you can create a new system variable named `ABAQUS_BAT_PATH`, and set the value to the file path of the Abaqus command, i.e., `C:/SIMULIA/Commands/abaqus.bat`."
 msgstr ""
 
-#: ../../getting_started.rst:218
-msgid "Abaqus command"
-msgstr ""
-
-#: ../../getting_started.rst:220
-msgid "In order to use Abaqus command to execute the Python script and submit the job, you need to tell `abqpy` where the Abaqus command located. Usually, Abaqus command locates in a directory like this:"
-msgstr ""
-
-#: ../../getting_started.rst:232
+#: ../../getting_started.rst:217
 msgid "Run your Abaqus/Python script"
 msgstr ""
 
-#: ../../getting_started.rst:234
+#: ../../getting_started.rst:219
 msgid "Now you can just run your Abaqus/Python script using your own Python interpreter that `abqpy` is installed."
 msgstr ""
 
 #: ../../getting_started.rst:-1
-#: ../../getting_started.rst:236
+#: ../../getting_started.rst:221
 msgid "Create an Abaqus Model"
 msgstr ""
 
 #: ../../getting_started.rst:-1
-#: ../../getting_started.rst:243
+#: ../../getting_started.rst:228
 msgid "Extract Output Data"
 msgstr ""
 
-#: ../../getting_started.rst:251
+#: ../../getting_started.rst:236
 msgid "What next?"
 msgstr ""
 
-#: ../../getting_started.rst:253
-msgid "You may wonder how does this package work, you can go :doc:`/getting_started` for more detailed introduction and go :doc:`/tutorials` for a simple tutorial. For more documentation about Abaqus/Python scripting, please check :doc:`/summary` for a list of descriptions of objects and methods of Abaqus models, check :doc:`/references` for more detailed API references."
+#: ../../getting_started.rst:238
+msgid "You may wonder how does this package work, you can go :doc:`/getting_started` for more detailed introduction and go :doc:`/tutorials` for a simple tutorial. For more documentation about Abaqus/Python scripting, please check :doc:`/references` for more detailed API references."
 msgstr ""

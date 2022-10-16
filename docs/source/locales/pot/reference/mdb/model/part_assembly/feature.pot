@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2019\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-01 09:59+0000\n"
+"POT-Creation-Date: 2022-10-16 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,12 @@ msgid "Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly op
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/feature.rst:9
-msgid "Object features"
+msgid "Classes"
+msgstr ""
+
+#: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature:1
+#: ../../../../src/abaqus/Feature/FeatureOptions.py:docstring of abaqus.Feature.FeatureOptions.FeatureOptions:1
+msgid "Bases: :py:class:`object`"
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature:1
@@ -1896,7 +1901,7 @@ msgstr ""
 msgid "This method suppresses features. Suppressing a feature is equivalent to temporarily removing the feature from the part or assembly. Suppressed features remain suppressed when you regenerate a part or assembly. You cannot suppress the base feature. In addition, if you suppress a parent feature, all of its child features are also suppressed automatically. Suppressed features can be restored with the resume command."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/feature.rst:20
+#: ../../reference/mdb/model/part_assembly/feature.rst:22
 msgid "FeatureOptions"
 msgstr ""
 
