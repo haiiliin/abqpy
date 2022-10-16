@@ -111,6 +111,7 @@ hoverxref_role_types = {
     "ref": "tooltip",  # for hoverxref_auto_ref config
     "confval": "tooltip",  # for custom object
     "term": "tooltip",  # for glossaries
+    "numref": "tooltip", 
 }
 
 
