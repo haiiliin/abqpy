@@ -301,6 +301,7 @@ class RegionPart(RegionPartBase):
         Parameters
         ----------
         name
+            A String specifying the repository key.
 
         Returns
         -------
