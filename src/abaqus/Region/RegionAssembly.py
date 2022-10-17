@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Optional, Union, Sequence, overload
+from typing import Optional, Union, Sequence, overload, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Region import Region
@@ -14,7 +14,7 @@ from ..BasicGeometry.ReferencePoint import ReferencePoint
 from ..BasicGeometry.Vertex import Vertex
 from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshNode import MeshNode
-
+from ..Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex import ConstrainedSketchVertex
 
 @abaqus_class_doc
 class RegionAssembly(RegionAssemblyBase):
@@ -193,17 +193,17 @@ class RegionAssembly(RegionAssemblyBase):
         nodes: Optional[Sequence[MeshNode]] = None,
         elements: Optional[Sequence[MeshElement]] = None,
         region: Optional[Region] = None,
-        vertices: Optional[Sequence[Vertex]] = None,
+        vertices: Optional[Sequence[ConstrainedSketchVertex]] = None,
         edges: Optional[Sequence[Edge]] = None,
         faces: Optional[Sequence[Face]] = None,
         cells: Optional[Sequence[Cell]] = None,
-        xVertices: Optional[Sequence[Vertex]] = None,
+        xVertices: Optional[Sequence[ConstrainedSketchVertex]] = None,
         xEdges: Optional[Sequence[Edge]] = None,
         xFaces: Optional[Sequence[Face]] = None,
         referencePoints: Sequence[ReferencePoint] = (),
-        skinFaces: tuple = ...,
-        skinEdges: tuple = ...,
-        stringerEdges: tuple = ...,
+        skinFaces: Tuple[Tuple[str, Face], ...] = ...,
+        skinEdges: Tuple[Tuple[str, Edge], ...] = ...,
+        stringerEdges: Tuple[Tuple[str, Edge], ...] = ...,
     ) -> Set:
         """This method creates a set from a sequence of objects in a model database.
 
