@@ -205,9 +205,9 @@ class RegionPart(RegionPartBase):
         xEdges: Optional[Sequence[Edge]] = None,
         xFaces: Optional[Sequence[Face]] = None,
         referencePoints: Sequence[ReferencePoint] = (),
-        skinFaces: tuple = ...,
-        skinEdges: tuple = ...,
-        stringerEdges: tuple = ...,
+        skinFaces: Tuple[Tuple[str, Face], ...] = ...,
+        skinEdges: Tuple[Tuple[str, Edge], ...] = ...,
+        stringerEdges: Tuple[Tuple[str, Edge], ...] = ...,
     ) -> Set:
         """This method creates a set from a sequence of objects in a model database.
 
