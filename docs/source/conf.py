@@ -68,6 +68,7 @@ extensions = [
     'sphinx_codeautolink',
     'sphinx_toolbox.confval',
     'hoverxref.extension',
+    'myst_parser',
 ]
 
 # Default behavior for code block concatenation for sphinx_codeautolink
