@@ -5,7 +5,7 @@ on:
     branches:
     - main
     - 20**
-    types: [opened, reopened, synchronize, labeled]
+    types: [opened, reopened, synchronize]
     paths:
     - 'src/**'
   workflow_dispatch:
