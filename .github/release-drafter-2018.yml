@@ -5,10 +5,7 @@ tag-template: 'v$RESOLVED_VERSION'
 filter-by-commitish: true
 commitish: "2018"
 categories:
-  - title: '🚨 Breaking changes'
-    labels:
-      - 'breaking change'
-  - title: '🚀 Features'
+  - title: '🚀 New Features'
     labels:
       - 'feature'
       - 'new feature'
@@ -20,21 +17,23 @@ categories:
       - 'bugfix'
       - 'bug'
       - 'test'
-  - title: '🧰 Maintenance'
-    label: 'chore'
+      - 'typo'
+  - title: '💁‍♂️ Typing Annotations'
+    labels:
+      - 'typing'
   - title: '📝 Documentation'
     labels:
       - 'documentation'
       - 'docs'
       - 'doc'
-  - title: 'Backports'
+  - title: '🌐 Translations'
     labels:
-      - 'backport'
-  - title: '🤔 Miscellaneous'
+      - 'translation'
+  - title: '🤖 Automation'
     labels:
-      - 'misc'
-      - 'patch'
-      - '*'
+      - 'automation'
+      - 'release'
+      - 'workflow'
 version-template: '$MAJOR.$MINOR.$PATCH'
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
