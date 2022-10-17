@@ -66,10 +66,6 @@ abaqus cae noGUI=script.py
 
 The secret is hided in the {py:meth}`~abqpy.abaqus.run` function:
 
-```{eval-rst}
-.. autolink-concat:: off
-```
-
 ```python
 def run():
     abaqus = 'abaqus'
