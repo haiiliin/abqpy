@@ -22,9 +22,9 @@ The standard Abaqus Scripting Interface exception types are listed below:
 
   - The name can include spaces and most punctuation marks and special characters; however, only 7-bit ASCII characters are supported.
 
-    :::{warning}
+    ```{warning}
     While Python allows most punctuation marks and special characters, some of the strings you provide will be used in an Abaqus input file; therefore, you cannot use the following characters: `` \$\&\*\~\!\(\)\[\]\{\}\|\;\'\`\"\,\.\?\/\\ `` when you are naming an object, such as a part, a model or a job.
-    :::
+    ```
 
   - The name must not begin with a number.
 
@@ -44,9 +44,9 @@ The standard Abaqus Scripting Interface exception types are listed below:
 
   Context-dependent message.
 
-:::{note}
+```{note}
 The command descriptions in the {doc}`/references` list the type of standard Abaqus Scripting Interface exceptions that can occur; however, the exception messages are not included with the command description.
-:::
+```
 
 ## Additional Abaqus Scripting Interface exceptions
 
@@ -60,12 +60,12 @@ For example, {numref}`cmd-int-exception-nls` shows the layout of a typical excep
 
 (cmd-int-exception-nls)=
 
-:::{figure} /images/cmd-int-exception-nls.png
+```{figure} /images/cmd-int-exception-nls.png
 :align: center
 :width: 50%
 
 The layout of a typical exception description in the online documentation.
-:::
+```
 
 You use the exception type in your error handling routines.
 

@@ -6,9 +6,9 @@ You may want to request input from a user while an Abaqus Scripting Interface sc
 - The `getInputs` function requests multiple inputs from the user from text fields in a dialog box.
 - The `getWarningReply` function requests a reply to a warning message from the user from a warning dialog box.
 
-:::{note}
+```{note}
 Note: You cannot use a script that contains getInput, getInputs or getWarningReply if you are running the script from the command line and passing the script name to the command line options -start,-replay or -noGUI.
-:::
+```
 
 ## Requesting a single input from the user
 
@@ -27,10 +27,10 @@ The `float` function on the third line converts the string returned by `getInput
 
 (utl-getinput-nls)=
 
-:::{figure} /images/utl-getinput-nls.png
+```{figure} /images/utl-getinput-nls.png
 :align: center
 :width: 50%
-:::
+```
 
 The next example shows how to modify a macro recorded by the **Macro Manager** in Abaqus/CAE to use the getInput function. The following text shows a macro named `createViewport` that was recorded by Abaqus/CAE while the user created a viewport. Macros are stored in the file `abaqusMacros.py` in your local or home directory.
 
@@ -60,10 +60,10 @@ The `eval` function in the third line of the macro converts the string returned 
 
 (utl-getinput-default-nls)=
 
-:::{figure} /images/utl-getinput-default-nls.png
+```{figure} /images/utl-getinput-default-nls.png
 :align: center
 :width: 50%
-:::
+```
 
 ## Requesting multiple inputs from the user
 
@@ -84,10 +84,10 @@ The following figure shows the dialog box that these statements create:
 
 (utl-getinputs-nls)=
 
-:::{figure} /images/utl-getinputs-nls.png
+```{figure} /images/utl-getinputs-nls.png
 :align: center
 :width: 50%
-:::
+```
 
 The `fields` argument to the `getInputs` method is a sequence of sequences of Strings. The inner sequence is a pair of Strings that specifies the description of the text field and the default value of the field. If the text field does not have a default value, you must specify an empty string; for example,
 
@@ -128,7 +128,7 @@ The following figure shows the dialog box that appears when this script is execu
 
 (utl-getwarningreply-nls)=
 
-:::{figure} /images/utl-getwarningreply-nls.png
+```{figure} /images/utl-getwarningreply-nls.png
 :align: center
 :width: 50%
-:::
+```

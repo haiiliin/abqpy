@@ -21,9 +21,9 @@ abaqus python odbMaxMises.py -odb viewer_tutorial.odb
     -elset "ALL ELEMENTS"
 ```
 
-:::{note}
+```{note}
 If a command line argument is a String that contains spaces, some systems will interpret the String correctly only if it is enclosed in double quotation marks. For example, `"ALL ELEMENTS"`.
-:::
+```
 
 You can also run the example with only the **-help** parameter for a summary of the usage.
 
@@ -901,9 +901,9 @@ $$
 
 where $|\mathrm{POR}|$ is the magnitude of the acoustic pressure at a point, $p_{R M S}$ is the root mean square acoustic pressure, and $d B R e f$ is the decibel reference value given as user input. The far-field pressure decibel value is defined in the same manner as $\operatorname{POR} d B$, using the same reference value $d B R e f)$
 
-:::{note}
+```{note}
 If $d B R e f=20 \mu P a$ (in SI units), POR $d B$ corresponds to $d B S P L$
-:::
+```
 
 The script also calculates the far-field acoustic intensity, which is defined as
 
@@ -987,12 +987,12 @@ The results from running the script twice using the single triangular-element mo
 
 (cmd-odb-api-acousticviz)=
 
-:::{figure} /images/cmd-odb-api-acousticviz.png
+```{figure} /images/cmd-odb-api-acousticviz.png
 :align: center
 :width: 50%
 
 Displaying the acoustic pressure on several spheres.
-:::
+```
 
 This model simulates the response of a sphere in "breathing" mode (a uniform radial expansion/compression mode). The model consists of one triangular ACIN3D3 element. Each node of the element is placed on a coordinate axis at a distance of $1.0$ from the origin that serves as the reference point for the infinite element. The acoustic material properties do not have physical significance; the values used are for convenience only. The loading consists of applying an in-phase pressure boundary condition to all the nodes. Under this loading and geometry, the model behaves as a spherical source (an acoustic monopole) radiating in the radial direction only. The acoustic pressure, $p$, and the acoustic far-field pressure, $p_{F A R}$, at a distance $r$ from the center of the sphere are
 

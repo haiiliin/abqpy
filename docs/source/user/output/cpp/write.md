@@ -372,9 +372,9 @@ History output is output defined for a single point or for values calculated for
 - an element, or a location in an element
 - a region
 
-:::{note}
+```{note}
 History data from an analysis cannot contain multiple points.
-:::
+```
 
 The output from all history requests that relate to a specified point is collected in one HistoryRegion object. You use the HistoryPoint constructor to create the point. For example,
 

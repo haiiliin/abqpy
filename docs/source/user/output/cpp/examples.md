@@ -19,9 +19,9 @@ abaqus odbMaxMises.exe -odb viewer_tutorial.odb
     -elset "ALL ELEMENTS"
 ```
 
-:::{note}
+```{note}
 If a command line argument is a String that contains spaces, some systems will interpret the String correctly only if it is enclosed in double quotation marks. For example, "ALL ELEMENTS".
-:::
+```
 
 You can also run the example with only the **-help** parameter for a summary of the usage.
 
@@ -704,17 +704,17 @@ The following parameters are optional:
 
   Copy all history output from all available steps in the large output database. By default, history output is not copied.
 
-  :::{warning}
+  ```{warning}
   Copying large amounts of history data can result in the program creating a very large output database.
-  :::
+  ```
 
 - **-debug**
 
   Print a detailed report of all the operations performed during the running of the program. By default, no debug information is generated.
 
-  :::{warning}
+  ```{warning}
   If you are extracting data from a large output database, the debug option can generate large amounts of information.
-  :::
+  ```
 
 You can also run the example with only the **-help** parameter for a summary of the usage.
 

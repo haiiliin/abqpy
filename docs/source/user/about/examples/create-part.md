@@ -19,12 +19,12 @@ The new viewport and the shaded part are shown in {numref}`cmd_int_aexample_nls`
 
 (cmd-int-aexample-nls)=
 
-:::{figure} /images/cmd-int-aexample-nls.png
+```{figure} /images/cmd-int-aexample-nls.png
 :align: center
 :width: 50%
 
 The example creates a new viewport and a part.
-:::
+```
 
 The example scripts from this guide can be copied to the user's working directory by using the Abaqus fetch utility:
 
@@ -38,9 +38,9 @@ where scriptName.py is the name of the script (see [Fetching sample input files]
 abaqus fetch job=modelAExample
 ```
 
-:::{note}
+```{note}
 Abaqus does not install the sample scripts by default during the installation procedure. As a result, if the Abaqus fetch utility fails to find the sample script, the script may be missing from your Abaqus installation. You must rerun the installation procedure and request Abaqus sample problems from the list of items to install.
-:::
+```
 
 To run the program, do the following:
 
@@ -49,9 +49,9 @@ To run the program, do the following:
 3. From the Run Script dialog box that appears, select modelAExample.py.
 4. Click OK to run the script.
 
-:::{note}
+```{note}
 If Abaqus/CAE is already running, you can run the script by selecting from the main menu bar.
-:::
+```
 
 The example follows:
 
@@ -125,12 +125,12 @@ The next statement in the script is shown in {numref}`cmd-righttoleft-nls`. You 
 
 (cmd-righttoleft-nls)=
 
-:::{figure} /images/cmd-righttoleft-nls.png
+```{figure} /images/cmd-righttoleft-nls.png
 :align: center
 :width: 50%
 
 Creating a new model.
-:::
+```
 
 ```python2
 mySketch = myModel.ConstrainedSketch(name='Sketch A', sheetSize=200.0)

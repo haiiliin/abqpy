@@ -8,12 +8,12 @@ The example leads you through the Abaqus/CAE modeling process by visiting each o
 
 (gst-beam)=
 
-:::{figure} /images/gst-beam.png
+```{figure} /images/gst-beam.png
 :align: center
 :width: 100%
 
 A loaded cantilever beam.
-:::
+```
 
 ## Running the example
 
@@ -30,9 +30,9 @@ To run the script, do the following:
 3. From the **Run Script** dialog box that appears, enter the path given above and select the file containing the script.
 4. Click **OK** to run the script.
 
-:::{note}
+```{note}
 If Abaqus/CAE is already running, you can run the script by selecting **File -> Run Script** from the main menu bar.
-:::
+```
 
 ## The cantilever beam example script
 

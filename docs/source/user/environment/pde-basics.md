@@ -44,11 +44,11 @@ Use one of the following methods to start the Abaqus PDE. The first two methods 
 
   The `-script` option allows you to enter the name, including the directory path, of a main file to be opened at startup. The Abaqus PDE will create a new blank script if the named file does not exist in the specified directory. If the directory does not exist, the Abaqus PDE generates an error message.
 
-  :::{note}
+  ```{note}
   File names and paths specified without the `-script` option are opened for editing—not as the main file.
 
   The -pde option is used to specify options for use with Abaqus/CAE if you run a script in the Abaqus PDE that requires the Abaqus/CAE kernel or user interface. You can also add command line options for Abaqus/CAE using the Settings menu. For more information, see [Selecting the settings for use with a file](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-pdesettings.htm?contextscope=all).
-  :::
+  ```
 
 The sections that follow describe how to use the menus and tools within the Abaqus PDE.
 
@@ -68,12 +68,12 @@ As you play a main file script, the Abaqus PDE automatically opens any files tha
 
 (cmd-pde-filemenu-nls)=
 
-:::{figure} /images/cmd-pde-filemenu-nls.png
+```{figure} /images/cmd-pde-filemenu-nls.png
 :align: center
 :width: 50%
 
 The File menu
-:::
+```
 
 The following options are available from the File menu:
 
@@ -146,12 +146,12 @@ Use the **Settings** menu and tools to change some of the options in the Abaqus 
 
 (cmd-pde-settingsmenu-nls)=
 
-:::{figure} /images/cmd-pde-settingsmenu-nls.png
+```{figure} /images/cmd-pde-settingsmenu-nls.png
 :align: center
 :width: 50%
 
 The Settings menu.
-:::
+```
 
 The following items are available from the **Settings** menu:
 

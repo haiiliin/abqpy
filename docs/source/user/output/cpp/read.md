@@ -540,9 +540,9 @@ Node = 11 U[x] = -0.0000, U[y] = -20.3237...
 
 The data in the FieldValue object depend on the field output variable, which is displacement in the above example. In the example above the field output for displacements was of type NODAL and there is a FieldValue object for the output at each node. In this case the data method returns a pointer to an array containing the displacements at the node. For INTEGRATION_POINT data each integration point in an element will correspond to a different FieldValue object, and the data method will return a pointer to an array containing the element results data at that particular integration point.
 
-:::{note}
+```{note}
 Access to field data using the FieldValue object will be deprecated in future releases of the C++ version of the Abaqus Scripting Interface because of the improved performance of the bulk data access method. For more information, see {py:class}`~abaqus.Odb.FieldBulkData.FieldBulkData` object and :[using bulk data access to an output database].
-:::
+```
 
 ## Using bulk data access to an output database
 
@@ -710,20 +710,20 @@ History output is output defined for a single point or for values calculated for
 - a region
 - a material point
 
-:::{note}
+```{note}
 History data from an analysis cannot contain multiple points.
-:::
+```
 
 The history data object model is shown in {numref}`odb-history-nls-3`.
 
 (odb-history-nls-3)=
 
-:::{figure} /images/odb-history-nls.png
+```{figure} /images/odb-history-nls.png
 :align: center
 :width: 100%
 
 The history data object model.
-:::
+```
 
 In contrast to field output, which is associated with a frame, history output is associated with a step. History output data are stored in the historyRegions repository under an OdbStep object. Abaqus creates keys to the historyRegions repository that describe the region; for example,
 

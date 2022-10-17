@@ -89,9 +89,9 @@ Use int(*n*) to convert a variable to an integer; use long(*n*) to convert a var
 bigNumber = 18446744073709551616
 ```
 
-:::{note}
+```{note}
 All Abaqus Scripting Interface object types begin with an uppercase character; for example, a Part or a Viewport. An integer is another kind of object and follows the same convention. The Abaqus Scripting Interface refers to an integer object as an Int. Similarly, the Abaqus Scripting Interface refers to a floating-point object as a Float.
-:::
+```
 
 ### Float
 
@@ -158,7 +158,7 @@ You use the `type()` function to return the type of the object to which a variab
 <type 'string'>
 ```
 
-(id2)=
+(sequences-1)=
 
 ## Sequences
 
@@ -334,9 +334,9 @@ Strings are immutable sequences of characters. Strings are defined by single or 
 Symbol plot from load1.odb
 ```
 
-:::{note}
+```{note}
 You can also use the + operator to concatenate tuples and lists.
-:::
+```
 
 Python provides a set of functions that operate on strings.
 

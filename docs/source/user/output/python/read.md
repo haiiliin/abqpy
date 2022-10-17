@@ -261,7 +261,7 @@ The following list describes the objects in results data and the commands you us
   Step-3
   ```
 
-  :::{note}
+  ````{note}
   An index of 0 in a sequence refers to the first value in the sequence, and an index of −1 refers to the last value. You can use the following syntax to refer to an individual item in a repository:
 
   ```python2
@@ -274,7 +274,7 @@ The following list describes the objects in results data and the commands you us
   ```python2
   Step-1
   ```
-  :::
+  ````
 
 - **Frames**
 
@@ -498,20 +498,20 @@ History output is output defined for a single point or for values calculated for
 - a region
 - a material point
 
-:::{note}
+```{note}
 History data from an analysis cannot contain multiple points.
-:::
+```
 
 The history data object model is shown in {numref}`odb-history-nls`
 
 (odb-history-nls)=
 
-:::{figure} /images/odb-history-nls.png
+```{figure} /images/odb-history-nls.png
 :align: center
 :width: 100%
 
 The history data object model.
-:::
+```
 
 In contrast to field output, which is associated with a frame, history output is associated with a step. History output data are stored in the historyRegions repository under an OdbStep object. Abaqus creates keys to the historyRegions repository that describe the region; for example,
 
