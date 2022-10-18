@@ -195,7 +195,7 @@ class JobMdb(MdbBase):
         self,
         name: str,
         inputFileName: str,
-        type: Literal[C.ANALYSIS, C.SYNTAXCHECK, C.RECOVER, C.RESTART] = ANALYSIS,
+        type: Literal[C.ANALYSIS, C.SYNTAXCHECK, C.RECOVER] = ANALYSIS,
         queue: Optional[str] = "",
         waitHours: int = 0,
         waitMinutes: int = 0,
