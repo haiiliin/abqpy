@@ -803,7 +803,7 @@ class InteractionModel(
         smoothingAssignments: Optional[SmoothingAssignment] = None,
         surfaceCrushTriggerAssignments: SurfaceCrushTriggerAssignment = SurfaceCrushTriggerAssignment(),
         surfaceFrictionAssignments: SurfaceFrictionAssignment = SurfaceFrictionAssignment(),
-        mainSecondaryAssignments: Optional[MasterSlaveAssignment] = None,
+        masterSlaveAssignment: Optional[MasterSlaveAssignment] = None,
         polarityAssignments: PolarityAssignments = PolarityAssignments(),
     ):
         """This method creates a ContactExp object.
@@ -857,7 +857,7 @@ class InteractionModel(
 
             .. versionadded:: 2021
                 The `surfaceFrictionAssignments` argument was added.
-        mainSecondaryAssignments
+        masterSlaveAssignment
             A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
             contact domain.
         polarityAssignments
@@ -885,7 +885,7 @@ class InteractionModel(
             smoothingAssignments,
             surfaceCrushTriggerAssignments,
             surfaceFrictionAssignments,
-            mainSecondaryAssignments,
+            masterSlaveAssignment,
             polarityAssignments,
         )
         return interaction
@@ -905,13 +905,8 @@ class InteractionModel(
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-<<<<<<< HEAD
-        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] = None,
-        mainSecondaryAssignments: Optional[MasterSlaveAssignment] = None,
-=======
         slidingFormulationAssignments: Optional[Sequence[SlidingFormulationAssignment]] = None,
-        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
->>>>>>> 086b5e32 ([typing]: Working on `Set` object (#2872))
+        masterSlaveAssignment: Optional[MasterSlaveAssignment] = None, 
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 
         smoothingAssignments: Optional[SmoothingAssignment] = None, 
@@ -975,7 +970,7 @@ class InteractionModel(
 
             .. versionadded:: 2021
                 The `slidingFormulationAssignments` argument was added.
-        mainSecondaryAssignments
+        masterSlaveAssignment
             A :py:class:`~abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment` object specifying the master-slave assignments in the
             contact domain.
         initializationAssignments
@@ -1010,7 +1005,7 @@ class InteractionModel(
             surfaceBeamSmoothingAssignments,
             surfaceVertexCriteriaAssignments,
             slidingFormulationAssignments,
-            mainSecondaryAssignments,
+            masterSlaveAssignment,
             initializationAssignments,
             stabilizationAssignments,
             smoothingAssignments,

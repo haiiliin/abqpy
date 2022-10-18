@@ -111,13 +111,8 @@ class ContactStd(Interaction):
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-<<<<<<< HEAD
-        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] = None,
-        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
-=======
         slidingFormulationAssignments: Optional[Sequence[SlidingFormulationAssignment]] = None,
-        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
->>>>>>> 086b5e32 ([typing]: Working on `Set` object (#2872))
+        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None, 
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 
         smoothingAssignments: Optional[SmoothingAssignment] = None, 
