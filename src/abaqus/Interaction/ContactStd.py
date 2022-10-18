@@ -106,7 +106,14 @@ class ContactStd(Interaction):
         surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
         surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
+<<<<<<< HEAD
         masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
+=======
+        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
+        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
+        slidingFormulationAssignments: Optional[Sequence[SlidingFormulationAssignment]] = None,
+        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
+>>>>>>> 086b5e32 ([typing]: Working on `Set` object (#2872))
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 
         smoothingAssignments: Optional[SmoothingAssignment] = None, 
@@ -177,6 +184,12 @@ class ContactStd(Interaction):
         name: str,
         createStepName: str,
         globalSmoothing: Boolean = ON,
+<<<<<<< HEAD
+=======
+        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
+        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
+        slidingFormulationAssignments: Optional[Sequence[SlidingFormulationAssignment]] = None,
+>>>>>>> 086b5e32 ([typing]: Working on `Set` object (#2872))
         useAllstar: Boolean = OFF,
         includedPairs: Optional[SymbolicConstant] = None,
         excludedPairs: Optional[SymbolicConstant] = None,
