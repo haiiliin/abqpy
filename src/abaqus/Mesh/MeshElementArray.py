@@ -1,11 +1,13 @@
 from __future__ import annotations
 
-from typing import List, Tuple, Sequence, Dict, Union
+from typing import List, Tuple, Sequence, Dict, Union, TYPE_CHECKING
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .MeshElement import MeshElement
-from ..BasicGeometry.EdgeArray import EdgeArray
-from ..BasicGeometry.FaceArray import FaceArray
+
+if TYPE_CHECKING: # to avoid circular imports
+    from ..BasicGeometry.EdgeArray import EdgeArray
+    from ..BasicGeometry.FaceArray import FaceArray
 
 
 @abaqus_class_doc
