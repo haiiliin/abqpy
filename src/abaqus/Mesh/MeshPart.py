@@ -1,4 +1,7 @@
+from __future__ import annotations
+
 from typing import Optional, Sequence, Union
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ElemType import ElemType
@@ -6,13 +9,20 @@ from .MeshEdge import MeshEdge
 from .MeshElement import MeshElement
 from .MeshFace import MeshFace
 from .MeshNode import MeshNode
+from .ElemType import ElemType
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.IgnoredVertex import IgnoredVertex
+from ..Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry import ConstrainedSketchGeometry
 from ..Datum.DatumCsys import DatumCsys
+from ..Feature.Feature import Feature
 from ..Part.PartBase import PartBase
-from ..UtilityAndView.abaqusConstants import Boolean, FREE, OFF, ON, SymbolicConstant
+from ..Region.Region import Region
+from ..Region.Set import Set
+from ..Mesh.MeshStats import MeshStats
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, SINGLE, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -94,7 +104,7 @@ class MeshPart(PartBase):
         applyBlendControls: Boolean = False,
         blendSubtendedAngleTolerance: Optional[float] = None,
         blendRadiusTolerance: Optional[float] = None,
-    ):
+    ) -> Feature:
         """This method creates a virtual topology feature by automatically merging faces and edges
         based on a set of geometric parameters. The edges and vertices that are being merged
         will be ignored during mesh generation.
@@ -189,7 +199,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def deleteMesh(self, regions: Sequence["MeshPart"]):
+    def deleteMesh(self, regions: Sequence[MeshPart]):
         """This method deletes a subset of the mesh that contains the native elements from the
         given parts or regions.
 
@@ -229,7 +239,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def deleteSeeds(self, regions: Sequence["MeshPart"]):
+    def deleteSeeds(self, regions: Sequence[MeshPart]):
         """This method deletes the global edge seeds from the given parts or deletes the local edge
         seeds from the given edges.
 
@@ -244,7 +254,7 @@ class MeshPart(PartBase):
     @abaqus_method_doc
     def generateMesh(
         self,
-        regions: Sequence["MeshPart"] = (),
+        regions: Sequence[MeshPart] = (),
         seedConstraintOverride: Boolean = OFF,
         meshTechniqueOverride: Boolean = OFF,
         boundaryPreview: Boolean = OFF,
@@ -430,8 +440,23 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def getEdgeSeeds(
-        self, edge: Edge, attribute: Union[SymbolicConstant, float]
-    ):
+        self,
+        edge: Edge,
+        attribute: Literal[
+            C.EDGE_SEEDING_METHOD,
+            C.BIAS_METHOD,
+            C.NUMBER,
+            C.AVERAGE_SIZE,
+            C.DEVIATION_FACTOR,
+            C.MIN_SIZE_FACTOR,
+            C.BIAS_RATIO,
+            C.BIAS_MIN_SIZE,
+            C.BIAS_MAX_SIZE,
+            C.VERTEX_ADJ_TO_SMALLEST_ELEM,
+            C.SMALLEST_ELEM_LOCATION,
+            C.CONSTRAINT,
+        ],
+    ) -> Union[float, int, SymbolicConstant]:
         """This method returns an edge seed parameter for a specified edge of a part.
 
         Parameters
@@ -502,7 +527,18 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def getElementType(self, region: str, elemShape: SymbolicConstant):
+    def getElementType(
+        self,
+        region: str,
+        elemShape: Literal[
+            C.LINE,
+            C.QUAD,
+            C.TRI,
+            C.HEX,
+            C.WEDGE,
+            C.TET ,
+        ]
+    ) -> ElemType:
         """This method returns the ElemType object of a given element shape assigned to a region of
         a part.
 
@@ -535,7 +571,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def getIncompatibleMeshInterfaces(self, cells: Sequence[Cell] = ()):
+    def getIncompatibleMeshInterfaces(self, cells: Sequence[Cell] = ()) -> Sequence[Face]:
         """This method returns a sequence of :py:class:`~abaqus.BasicGeometry.Face.Face` objects that are meshed with incompatible
         elements.
 
@@ -552,7 +588,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def getMeshControl(self, region: str, attribute: SymbolicConstant):
+    def getMeshControl(self, region: str, attribute: SymbolicConstant) -> Union[Boolean, SymbolicConstant]:
         """This method returns a mesh control parameter for the specified region of a part.
 
         Parameters
@@ -594,7 +630,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def getMeshStats(self, regions: tuple):
+    def getMeshStats(self, regions: Sequence[ConstrainedSketchGeometry]) -> MeshStats:
         """This method returns the mesh statistics for the given regions.
 
         Parameters
@@ -610,7 +646,15 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def getPartSeeds(self, attribute: Union[SymbolicConstant, float]):
+    def getPartSeeds(
+        self,
+        attribute: Literal[
+            C.SIZE,
+            C.DEFAULT_SIZE,
+            C.DEVIATION_FACTOR,
+            C.MIN_SIZE_FACTOR,
+        ]
+    ) -> float:
         """This method returns a part seed parameter for the part.
 
         Parameters
@@ -650,7 +694,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def getUnmeshedRegions(self):
+    def getUnmeshedRegions(self) -> Union[Region, None]:
         """This method returns all geometric regions in the part that require a mesh for submitting
         an analysis but are either unmeshed or are meshed incompletely.
 
@@ -662,7 +706,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def ignoreEntity(self, entities: tuple):
+    def ignoreEntity(self, entities: tuple) -> Feature:
         """This method creates a virtual topology feature. Virtual topology allows unimportant
         entities to be ignored during mesh generation. You can combine two adjacent faces by
         specifying a common edge to ignore. Similarly, you can combine two adjacent edges by
@@ -681,7 +725,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def restoreIgnoredEntity(self, entities: Sequence[IgnoredVertex]):
+    def restoreIgnoredEntity(self, entities: Sequence[IgnoredVertex]) -> Feature:
         """This method restores vertices and edges that have been merged using a virtual topology
         feature.
 
@@ -701,16 +745,16 @@ class MeshPart(PartBase):
     @abaqus_method_doc
     def seedEdgeByBias(
         self,
-        biasMethod: SymbolicConstant,
-        end1Edges: Sequence[Edge],
-        end2Edges: Sequence[Edge],
-        centerEdges: Sequence[Edge],
-        endEdges: Sequence[Edge],
-        ratio: float,
-        number: int,
-        minSize: float,
-        maxSize: float,
-        constraint: SymbolicConstant = FREE,
+        biasMethod: Literal[C.SINGLE, C.DOUBLE] = SINGLE,
+        end1Edges: Sequence[Edge] = ...,
+        end2Edges: Sequence[Edge] = ...,
+        centerEdges: Sequence[Edge] = ...,
+        endEdges: Sequence[Edge] = ...,
+        ratio: float = ...,
+        number: int = ...,
+        minSize: float = ...,
+        maxSize: float = ...,
+        constraint: Literal[C.FREE, C.FINER, C.FIXED] = ...,
     ):
         """This method seeds the given edges nonuniformly using the specified number of elements
         and bias ratio or the specified minimum and maximum element sizes.
@@ -766,7 +810,7 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def seedEdgeByNumber(
-        self, edges: Sequence[Edge], number: int, constraint: SymbolicConstant = FREE
+        self, edges: Sequence[Edge], number: int, constraint: Literal[C.FREE, C.FINER, C.FIXED] = ...,
     ):
         """This method seeds the given edges uniformly based on the number of elements along the
         edges.
@@ -797,7 +841,7 @@ class MeshPart(PartBase):
         size: float,
         deviationFactor: Optional[float] = None,
         minSizeFactor: Optional[float] = None,
-        constraint: SymbolicConstant = FREE,
+        constraint: Literal[C.FREE, C.FINER, C.FIXED] = ...,
     ):
         """This method seeds the given edges either uniformly or following edge curvature
         distribution, based on the desired element size.
@@ -832,7 +876,7 @@ class MeshPart(PartBase):
         size: float,
         deviationFactor: Optional[float] = None,
         minSizeFactor: Optional[float] = None,
-        constraint: SymbolicConstant = FREE,
+        constraint: Literal[C.FREE, C.FINER] = ...,
     ):
         """This method assigns global edge seeds to the given parts.
 
@@ -849,8 +893,10 @@ class MeshPart(PartBase):
         constraint
             A SymbolicConstant specifying how closely the seeds must be matched by the mesh. The
             default value is FREE. If unspecified, the existing constraint will remain unchanged.
-            Possible values are:FREE: The resulting mesh can be finer or coarser than the specified
-            seeds.FINER: The resulting mesh can be finer than the specified seeds.
+            Possible values are:
+            
+            - FREE: The resulting mesh can be finer or coarser than the specified seeds.
+            - FINER: The resulting mesh can be finer than the specified seeds.
         """
         ...
 
@@ -891,7 +937,20 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def setElementType(self, regions: tuple, elemTypes: Sequence[ElemType]):
+    def setElementType(
+        self, 
+        regions: Union[
+            Sequence[
+                Union[
+                    ConstrainedSketchGeometry,
+                    Sequence[MeshElement],
+                    Sequence[Cell],
+                ]
+            ],
+            Set
+        ], 
+        elemTypes: Sequence[ElemType]
+    ):
         """This method assigns element types to the specified regions.
 
         Parameters
@@ -1116,7 +1175,10 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def Node(
-        self, coordinates: tuple, localCsys: Optional[DatumCsys] = None,  label: Optional[int] = None
+        self,
+        coordinates: tuple,
+        localCsys: Optional[DatumCsys] = None,
+        label: Optional[int] = None,
     ):
         """This method creates a node on an orphan mesh part.
 
