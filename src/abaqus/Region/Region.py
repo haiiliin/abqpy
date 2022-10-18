@@ -1,4 +1,4 @@
-from typing import Optional, Union, Sequence, overload
+from typing import Optional, Union, Sequence, overload, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..BasicGeometry.Cell import Cell
@@ -71,9 +71,9 @@ class Region:
         xVertices: Optional[Sequence[Vertex]] = None,
         xEdges: Optional[Sequence[Vertex]] = None,
         xFaces: Optional[Sequence[Vertex]] = None,
-        skinFaces: tuple = ...,
-        skinEdges: tuple = ...,
-        stringerEdges: tuple = ...,
+        skinFaces: Tuple[Tuple[str, Sequence[Face]], ...] = ...,
+        skinEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
+        stringerEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
     ):
         """This command creates a set-like region. For example
         myRegion = regionToolset.Region(vertices=v[2:4]
