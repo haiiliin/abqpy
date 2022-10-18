@@ -4,14 +4,9 @@ from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Job import Job
 from .MessageArray import MessageArray
-<<<<<<< HEAD
-from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, OFF, ON,
-                                              PERCENTAGE, SINGLE, SymbolicConstant, LOOP)
-=======
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, DOMAIN, OFF, ON,
-                                              PERCENTAGE, SINGLE, ODB)
->>>>>>> 3d7e1c79 ([typing][feature]: Add infer from cmd recording (#2892))
+from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, LOOP, OFF, ON,
+                                              PERCENTAGE, SINGLE)
 
 
 @abaqus_class_doc
@@ -115,16 +110,8 @@ class JobFromInputFile(Job):
     nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE
 
     #: A SymbolicConstant specifying the parallelization method for Abaqus/Explicit.
-<<<<<<< HEAD
     #: Possible values are LOOP and DOMAIN. The default value is LOOP.
-    parallelizationMethodExplicit: SymbolicConstant = LOOP
-=======
-    #: Possible values are LOOP and DOMAIN. The default value is DOMAIN.
-    #:
-    #: .. versionchanged:: 2017
-    #:     The default value for parallelizationMethodExplicit is now `DOMAIN`
-    parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN
->>>>>>> 3d7e1c79 ([typing][feature]: Add infer from cmd recording (#2892))
+    parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = LOOP
 
     #: An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When
     #: **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**.
@@ -140,18 +127,6 @@ class JobFromInputFile(Job):
     #: values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.
     multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT
 
-<<<<<<< HEAD
-=======
-    #: A SymbolicConstant specifying the type of license type being used in the case of the
-    #: DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
-    #: value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
-    #: available.
-    #:
-    #: .. versionadded:: 2022
-    #:     The `licenseType` attribute was added.
-    licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT
-
->>>>>>> 3d7e1c79 ([typing][feature]: Add infer from cmd recording (#2892))
     @abaqus_method_doc
     def __init__(
         self,
@@ -166,27 +141,13 @@ class JobFromInputFile(Job):
         userSubroutine: str = "",
         numCpus: int = 1,
         memory: int = 90,
-<<<<<<< HEAD
-        memoryUnits: SymbolicConstant = PERCENTAGE,
-        explicitPrecision: SymbolicConstant = SINGLE,
-        nodalOutputPrecision: SymbolicConstant = SINGLE,
-        parallelizationMethodExplicit: SymbolicConstant = LOOP,
-        numDomains: int = 1,
-        activateLoadBalancing: Boolean = OFF,
-        multiprocessingMode: SymbolicConstant = DEFAULT,
-=======
         memoryUnits: Literal[C.PERCENTAGE, C.MEGA_BYTES, C.GIGA_BYTES] = PERCENTAGE,
         explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = SINGLE,
         nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE,
-        parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN,
+        parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = LOOP,
         numDomains: int = 1,
         activateLoadBalancing: Boolean = OFF,
         multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT,
-        licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT,
-        getMemoryFromAnalysis: Boolean = ON,
-        numGPUs: int = 0,
-        resultsFormat: Literal[C.ODB, C.SIM, C.BOTH] = ODB,
->>>>>>> 3d7e1c79 ([typing][feature]: Add infer from cmd recording (#2892))
     ):
         """This method creates an analysis job using an input file for the model definition.
 
@@ -263,16 +224,6 @@ class JobFromInputFile(Job):
             A SymbolicConstant specifying whether an analysis is decomposed into threads or into
             multiple processes that communicate through a message passing interface (MPI). Possible
             values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.
-<<<<<<< HEAD
-=======
-        licenseType
-            A SymbolicConstant specifying the type of license type being used in the case of the
-            DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
-            value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
-            available.
-
-            .. versionchanged:: 2022
-                The `licenseType` argument was added.
         getMemoryFromAnalysis
             A Boolean specifying whether to retrieve the recommended memory settings from the last
             datacheck or analysis run and use those values in subsequent submissions. The default
@@ -282,7 +233,6 @@ class JobFromInputFile(Job):
             available. Possible values are **numCpus** >= 0. The default value is 0.
         resultsFormat
             This option specifies the results output format: ODB, SIM, or BOTH. The default value is ODB.
->>>>>>> 3d7e1c79 ([typing][feature]: Add infer from cmd recording (#2892))
 
         Returns
         -------
@@ -310,24 +260,13 @@ class JobFromInputFile(Job):
         userSubroutine: str = "",
         numCpus: int = 1,
         memory: int = 90,
-<<<<<<< HEAD
-        memoryUnits: SymbolicConstant = PERCENTAGE,
-        explicitPrecision: SymbolicConstant = SINGLE,
-        nodalOutputPrecision: SymbolicConstant = SINGLE,
-        parallelizationMethodExplicit: SymbolicConstant = LOOP,
-        numDomains: int = 1,
-        activateLoadBalancing: Boolean = OFF,
-        multiprocessingMode: SymbolicConstant = DEFAULT,
-=======
         memoryUnits: Literal[C.PERCENTAGE, C.MEGA_BYTES, C.GIGA_BYTES] = PERCENTAGE,
         explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = SINGLE,
         nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE,
-        parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN,
+        parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = LOOP,
         numDomains: int = 1,
         activateLoadBalancing: Boolean = OFF,
         multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT,
-        licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT,
->>>>>>> 3d7e1c79 ([typing][feature]: Add infer from cmd recording (#2892))
     ):
         """This method modifies the JobFromInputFile object.
 
