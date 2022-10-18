@@ -1,4 +1,5 @@
-from typing import Union
+from typing import Union, Sequence
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .ActuatorAmplitude import ActuatorAmplitude
@@ -12,9 +13,9 @@ from .SolutionDependentAmplitude import SolutionDependentAmplitude
 from .SpectrumAmplitude import SpectrumAmplitude
 from .TabularAmplitude import TabularAmplitude
 from ..Model.ModelBase import ModelBase
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ABSOLUTE_VALUE, ACCELERATION, Boolean,
-                                              EVENT_ACCELERATION, FORCE, OFF, SOLVER_DEFAULT, STEP,
-                                              SymbolicConstant)
+                                              EVENT_ACCELERATION, FORCE, OFF, SOLVER_DEFAULT, STEP, TOTAL,)
 
 
 @abaqus_class_doc
@@ -29,7 +30,7 @@ class AmplitudeModel(ModelBase):
 
     @abaqus_method_doc
     def ActuatorAmplitude(
-        self, name: str, timeSpan: SymbolicConstant = STEP
+        self, name: str, timeSpan: Literal[STEP, TOTAL] = STEP
     ) -> ActuatorAmplitude:
         """This method creates a ActuatorAmplitude object.
 
@@ -68,7 +69,7 @@ class AmplitudeModel(ModelBase):
         maximum: float,
         start: float,
         decayTime: float,
-        timeSpan: SymbolicConstant = STEP,
+        timeSpan: Literal[STEP, TOTAL] = STEP,
     ) -> DecayAmplitude:
         """This method creates a DecayAmplitude object.
 
@@ -116,8 +117,8 @@ class AmplitudeModel(ModelBase):
         fixedInterval: float,
         data: tuple,
         begin: float = 0,
-        smooth: Union[SymbolicConstant, float] = SOLVER_DEFAULT,
-        timeSpan: SymbolicConstant = STEP,
+        smooth: Union[Literal[SOLVER_DEFAULT], float] = SOLVER_DEFAULT,
+        timeSpan: Literal[STEP, TOTAL] = STEP,
     ) -> EquallySpacedAmplitude:
         """This method creates an EquallySpacedAmplitude object.
 
@@ -172,7 +173,7 @@ class AmplitudeModel(ModelBase):
         start: float,
         frequency1: float,
         frequency2: float,
-        timeSpan: SymbolicConstant = STEP,
+        timeSpan: Literal[STEP, TOTAL] = STEP,
     ) -> ModulatedAmplitude:
         """This method creates a ModulatedAmplitude object.
 
@@ -225,7 +226,7 @@ class AmplitudeModel(ModelBase):
         start: float,
         a_0: float,
         data: tuple,
-        timeSpan: SymbolicConstant = STEP,
+        timeSpan: Literal[STEP, TOTAL] = STEP,
     ) -> PeriodicAmplitude:
         """This method creates a PeriodicAmplitude object.
 
@@ -271,11 +272,11 @@ class AmplitudeModel(ModelBase):
         self,
         name: str,
         data: tuple,
-        unitType: SymbolicConstant = FORCE,
+        unitType: Literal[C.FORCE, C.BASE, C.DB] = FORCE,
         referenceGravityAcceleration: float = 1,
         referenecePower: float = 0,
         user: Boolean = OFF,
-        timeSpan: SymbolicConstant = STEP,
+        timeSpan: Literal[STEP, TOTAL] = STEP,
         amplitude: str = "",
     ) -> PsdDefinition:
         """This method creates a PsdDefinition object.
@@ -326,7 +327,7 @@ class AmplitudeModel(ModelBase):
         InvalidNameError
         RangeError
         """
-        self.amplitudes[name] = amplitude = PsdDefinition(
+        self.amplitudes[name] = amplitud = PsdDefinition(
             name,
             data,
             unitType,
@@ -336,11 +337,11 @@ class AmplitudeModel(ModelBase):
             timeSpan,
             amplitude,
         )
-        return amplitude
+        return amplitud
 
     @abaqus_method_doc
     def SmoothStepAmplitude(
-        self, name: str, data: tuple, timeSpan: SymbolicConstant = STEP
+        self, name: str, data: tuple, timeSpan: Literal[STEP, TOTAL] = STEP
     ) -> SmoothStepAmplitude:
         """This method creates a SmoothStepAmplitude object.
 
@@ -381,7 +382,7 @@ class AmplitudeModel(ModelBase):
         initial: float = 1,
         minimum: float = 0,
         maximum: float = 1000,
-        timeSpan: SymbolicConstant = STEP,
+        timeSpan: Literal[STEP, TOTAL] = STEP,
     ) -> SolutionDependentAmplitude:
         """This method creates a SolutionDependentAmplitude object.
 
@@ -427,15 +428,15 @@ class AmplitudeModel(ModelBase):
     def SpectrumAmplitude(
         self,
         name: str,
-        method: SymbolicConstant,
+        method: Literal[C.DEFINE, C.CALCULATE],
         data: tuple,
-        specificationUnits: SymbolicConstant = ACCELERATION,
-        eventUnits: SymbolicConstant = EVENT_ACCELERATION,
-        solution: SymbolicConstant = ABSOLUTE_VALUE,
+        specificationUnits: Literal[C.DISPLACEMENT, C.VELOCITY, C.ACCELERATION, C.GRAVITY] = ACCELERATION,
+        eventUnits: Literal[C.EVENT_DISPLACEMENT, C.EVENT_VELOCITY, C.EVENT_ACCELERATION, C.EVENT_GRAVITY] = EVENT_ACCELERATION,
+        solution: Literal[C.ABSOLUTE_VALUE, C.RELATIVE_VALUE] = ABSOLUTE_VALUE,
         timeIncrement: float = 0,
         gravity: float = 1,
         criticalDamping: Boolean = OFF,
-        timeSpan: SymbolicConstant = STEP,
+        timeSpan: Literal[STEP, TOTAL] = STEP,
         amplitude: str = "",
     ) -> SpectrumAmplitude:
         """This method creates a SpectrumAmplitude object.
@@ -497,7 +498,7 @@ class AmplitudeModel(ModelBase):
         InvalidNameError
         RangeError
         """
-        self.amplitudes[name] = amplitude = SpectrumAmplitude(
+        self.amplitudes[name] = amplitud = SpectrumAmplitude(
             name,
             method,
             data,
@@ -510,15 +511,15 @@ class AmplitudeModel(ModelBase):
             timeSpan,
             amplitude,
         )
-        return amplitude
+        return amplitud
 
     @abaqus_method_doc
     def TabularAmplitude(
         self,
         name: str,
-        data: tuple,
-        smooth: Union[SymbolicConstant, float] = SOLVER_DEFAULT,
-        timeSpan: SymbolicConstant = STEP,
+        data: Sequence[Sequence[float]],
+        smooth: Union[Literal[SOLVER_DEFAULT], float] = SOLVER_DEFAULT,
+        timeSpan: Literal[STEP, TOTAL] = STEP,
     ) -> TabularAmplitude:
         """This method creates a TabularAmplitude object.
 
