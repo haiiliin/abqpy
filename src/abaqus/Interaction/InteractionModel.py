@@ -879,20 +879,10 @@ class InteractionModel(
         includedPairs: Optional[RegionPairs] = None, 
         excludedPairs: Optional[RegionPairs] = None, 
         contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
-<<<<<<< HEAD
         surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None,
         surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None, 
         masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
-=======
-        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
-        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
-        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
-        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
-        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Optional[Sequence[SlidingFormulationAssignment]] = None,
-        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
->>>>>>> 086b5e32 ([typing]: Working on `Set` object (#2872))
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 
         smoothingAssignments: Optional[SmoothingAssignment] = None, 
