@@ -1,9 +1,16 @@
-from typing import Optional, Sequence
+from __future__ import annotations
+
+from typing import Optional, Sequence, Tuple, TYPE_CHECKING
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from .MeshNode import MeshNode
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C, SymbolicConstant
 
+if TYPE_CHECKING: # to avoid circular imports
+    from .MeshNode import MeshNode
+    from .MeshEdge import MeshEdge
+    from .MeshFace import MeshFace
+    from .MeshElementArray import MeshElementArray
 
 @abaqus_class_doc
 class MeshElement:
@@ -12,7 +19,7 @@ class MeshElement:
     refers to the internal numbering of the element repository. The index does not refer to
     the element label.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -54,15 +61,31 @@ class MeshElement:
     #: A tuple of Ints specifying the internal node indices that define the nodal connectivity.
     #: It is important to note the difference with OdbMeshElement object of ODB where the
     #: connectivity is node labels instead of node indices.
-    connectivity: Optional[int] = None
+    connectivity: Tuple[int, ...] = ()
 
     @abaqus_method_doc
     def Element(
-        self, nodes: Sequence[MeshNode], elemShape: SymbolicConstant, label: Optional[int] = None
-    ):
+        self,
+        nodes: Sequence[MeshNode],
+        elemShape: Literal[
+            C.LINE2,
+            C.LINE3,
+            C.TRI3,
+            C.TRI6,
+            C.QUAD4,
+            C.QUAD8,
+            C.TET4,
+            C.TET10,
+            C.WEDGE6,
+            C.WEDGE15,
+            C.HEX8,
+            C.HEX20,
+        ],
+        label: int = ...,
+    ) -> MeshElement:
         """This method creates an element on an orphan mesh part from a sequence of nodes.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].Element
@@ -85,40 +108,40 @@ class MeshElement:
         ...
 
     @abaqus_method_doc
-    def getNodes(self):
+    def getNodes(self) -> Tuple[MeshNode]:
         """This method returns a tuple of node objects of the element.
 
         Returns
         -------
-        Sequence[MeshNode]
+        Tuple[MeshNode]
             A tuple of :py:class:`~abaqus.Mesh.MeshNode.MeshNode` objects.
         """
         ...
 
     @abaqus_method_doc
-    def getElemEdges(self):
+    def getElemEdges(self) -> Tuple[MeshEdge]:
         """This method returns a tuple of unique element edge objects on the element.
 
         Returns
         -------
-        Sequence[MeshEdge]
+        Tuple[MeshEdge]
             A tuple of :py:class:`~abaqus.Mesh.MeshEdge.MeshEdge` objects.
         """
         ...
 
     @abaqus_method_doc
-    def getElemFaces(self):
+    def getElemFaces(self) -> Tuple[MeshFace]:
         """This method returns a tuple of unique element face objects on the element.
 
         Returns
         -------
-        Sequence[MeshFace]
+        Tuple[MeshFace]
             A tuple of :py:class:`~abaqus.Mesh.MeshFace.MeshFace` objects.
         """
         ...
 
     @abaqus_method_doc
-    def getAdjacentElements(self):
+    def getAdjacentElements(self) -> MeshElementArray:
         """This method returns an array of element objects adjacent to the mesh element.
 
         Returns
@@ -129,7 +152,7 @@ class MeshElement:
         ...
 
     @abaqus_method_doc
-    def getElementsByFeatureEdge(self, angle: str):
+    def getElementsByFeatureEdge(self, angle: float) -> MeshElementArray:
         """This method returns an array of mesh element objects that are obtained by recursively
         finding adjacent elements along a feature edge with a face angle of less than or equal
         to the specified angle.
@@ -147,7 +170,7 @@ class MeshElement:
         ...
 
     @abaqus_method_doc
-    def setValues(self, label: Optional[int] = None):
+    def setValues(self, label: Optional[int] = None) -> None:
         """This method modifies the MeshElement object.
 
         Parameters
