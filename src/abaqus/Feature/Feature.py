@@ -520,7 +520,7 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def DatumAxisByRotation(self, *args, **kwargs):
+    def DatumAxisByRotation(self, *args, **kwargs) -> Feature:
         ...
 
     def DatumAxisByThreePoint(self, point1: int, point2: int, point3: int) -> Feature:
@@ -920,7 +920,7 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def DatumPlaneByOffset(self, *args, **kwargs):
+    def DatumPlaneByOffset(self, *args, **kwargs) -> Feature:
         ...
 
     def DatumPlaneByRotation(self, plane: str, axis: str, angle: float) -> Feature:
