@@ -873,7 +873,14 @@ class InteractionModel(
         surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
         surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
+<<<<<<< HEAD
         masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
+=======
+        surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
+        surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
+        slidingFormulationAssignments: Optional[Sequence[SlidingFormulationAssignment]] = None,
+        mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
+>>>>>>> 086b5e32 ([typing]: Working on `Set` object (#2872))
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 
         smoothingAssignments: Optional[SmoothingAssignment] = None, 

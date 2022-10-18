@@ -396,7 +396,7 @@ class BasicOptions(_CopyOptionsBase):
     #: A tuple of Ints specifying which sectors to display when
     #: **sectorSelectionType** = SELECT_BY_NUMBER. Possible values are 1 ≤ **selectedSectorNumbers**
     #: ≤ the number of sectors. The default value is (1).
-    selectedSectorNumbers: Sequence[int] = None
+    selectedSectorNumbers: Optional[Sequence[int]] = None
 
     #: A tuple of Strings specifying either element set or display group names (depending on
     #: the value of regionBoundaries) defining the averaging region boundaries. The default
