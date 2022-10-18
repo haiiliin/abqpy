@@ -143,9 +143,9 @@ class ConnectorMoment(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        m1: Union[SymbolicConstant, float, None] = None,
-        m2: Union[SymbolicConstant, float, None] = None,
-        m3: Union[SymbolicConstant, float, None] = None,
+        m1: Union[SymbolicConstant, float] = ...,
+        m2: Union[SymbolicConstant, float] = ...,
+        m3: Union[SymbolicConstant, float] = ...,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing ConnectorMoment object in the
