@@ -917,7 +917,7 @@ class InteractionModel(
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
-        slidingFormulationAssignments: Sequence[SlidingFormulationAssignment] = None,
+        slidingFormulationAssignments: Optional[Sequence[SlidingFormulationAssignment]] = None,
         mainSecondaryAssignments: Optional[MainSecondaryAssignment] = None, 
         initializationAssignments: Optional[InitializationAssignment] = None, 
         stabilizationAssignments: Optional[StabilizationAssignment] = None, 
