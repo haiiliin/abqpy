@@ -78,7 +78,7 @@ class ImplicitDynamicsStep(AnalysisStep):
     minInc: Optional[float] = None
 
     #: The SymbolicConstant DEFAULT or a Float specifying the maximum time increment allowed.
-    maxInc: Union[SymbolicConstant, float] = None
+    maxInc: Union[SymbolicConstant, float, None] = None
 
     #: A SymbolicConstant specifying the way of specifying half-increment residual tolerance
     #: with the automatic time incrementation scheme. Possible values are
