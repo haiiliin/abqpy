@@ -90,17 +90,17 @@ def cli():
 
     abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
     proc = "cae"
-    mode = f"noGUI={args.script}" if args.script else "noGUI"
+    mode = f'noGUI="{args.script}"' if args.script else "noGUI"
     sep = "--" if args.args else ""
     options = args.gui or args.nogui or args.python or ""
     if args.gui is not None:
-        mode = f"script={args.script}" if args.script else ""
+        mode = f'script="{args.script}"' if args.script else ""
     elif args.python is not None:
         proc = "python"
         sep = ""
-        mode = args.script if args.script else ""
+        mode = f'"{args.script}"' if args.script else ""
 
-    cmd = f"{abaqus} {proc} \"{mode}\" {' '.join(options)} {sep} {' '.join(args.args)}".strip()
+    cmd = f"{abaqus} {proc} {mode} {' '.join(options)} {sep} {' '.join(args.args)}".strip()
     message = f"Running the following abaqus command: {cmd}"
     print("", "-" * len(message), message, "-" * len(message), sep="\n")
     os.system(cmd)
