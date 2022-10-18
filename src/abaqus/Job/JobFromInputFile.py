@@ -130,18 +130,6 @@ class JobFromInputFile(Job):
     #: values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.
     multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT
 
-<<<<<<< HEAD
-=======
-    #: A SymbolicConstant specifying the type of license type being used in the case of the
-    #: DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
-    #: value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
-    #: available.
-    #:
-    #: .. versionadded:: 2022
-    #:     The `licenseType` attribute was added.
-    licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT
-
->>>>>>> 3d7e1c79 ([typing][feature]: Add infer from cmd recording (#2892))
     @abaqus_method_doc
     def __init__(
         self,
@@ -162,15 +150,7 @@ class JobFromInputFile(Job):
         parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN,
         numDomains: int = 1,
         activateLoadBalancing: Boolean = OFF,
-<<<<<<< HEAD
-        multiprocessingMode: SymbolicConstant = DEFAULT,
-=======
         multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT,
-        licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT,
-        getMemoryFromAnalysis: Boolean = ON,
-        numGPUs: int = 0,
-        resultsFormat: Literal[C.ODB, C.SIM, C.BOTH] = ODB,
->>>>>>> 3d7e1c79 ([typing][feature]: Add infer from cmd recording (#2892))
     ):
         """This method creates an analysis job using an input file for the model definition.
 
@@ -250,16 +230,6 @@ class JobFromInputFile(Job):
             A SymbolicConstant specifying whether an analysis is decomposed into threads or into
             multiple processes that communicate through a message passing interface (MPI). Possible
             values are DEFAULT, THREADS, and MPI. The default value is DEFAULT.
-<<<<<<< HEAD
-=======
-        licenseType
-            A SymbolicConstant specifying the type of license type being used in the case of the
-            DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
-            value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
-            available.
-
-            .. versionchanged:: 2022
-                The `licenseType` argument was added.
         getMemoryFromAnalysis
             A Boolean specifying whether to retrieve the recommended memory settings from the last
             datacheck or analysis run and use those values in subsequent submissions. The default
@@ -269,7 +239,6 @@ class JobFromInputFile(Job):
             available. Possible values are **numCpus** >= 0. The default value is 0.
         resultsFormat
             This option specifies the results output format: ODB, SIM, or BOTH. The default value is ODB.
->>>>>>> 3d7e1c79 ([typing][feature]: Add infer from cmd recording (#2892))
 
         Returns
         -------
@@ -303,12 +272,7 @@ class JobFromInputFile(Job):
         parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN,
         numDomains: int = 1,
         activateLoadBalancing: Boolean = OFF,
-<<<<<<< HEAD
-        multiprocessingMode: SymbolicConstant = DEFAULT,
-=======
         multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT,
-        licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT,
->>>>>>> 3d7e1c79 ([typing][feature]: Add infer from cmd recording (#2892))
     ):
         """This method modifies the JobFromInputFile object.
 
