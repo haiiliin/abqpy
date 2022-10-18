@@ -1,4 +1,7 @@
-from typing import overload, Optional, Sequence
+from __future__ import annotations
+
+from typing import overload, Optional, Sequence, Tuple
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Region import Region
@@ -16,7 +19,7 @@ from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNode import MeshNode
 from ..Mesh.MeshNodeArray import MeshNodeArray
-from ..UtilityAndView.abaqusConstants import OVERWRITE, SymbolicConstant, UNION
+from ..UtilityAndView.abaqusConstants import Boolean, OVERWRITE, UNION, INTERSECTION, DIFFERENCE
 
 
 @abaqus_class_doc
@@ -87,22 +90,30 @@ class Set(Region):
     def __init__(
         self,
         name: str,
-        nodes: Sequence[MeshNode] = None,
-        elements: Sequence[MeshElement] = None,
+        nodes: Optional[Sequence[MeshNode]] = None,
+        elements: Optional[Sequence[MeshElement]] = None,
         region: Optional[Region] = None,
-        vertices: Sequence[Vertex] = None,
-        edges: Sequence[Edge] = None,
-        faces: Sequence[Face] = None,
-        cells: Sequence[Cell] = None,
-        xVertices: Sequence[Vertex] = None,
-        xEdges: Sequence[Edge] = None,
-        xFaces: Sequence[Face] = None,
+        vertices: Optional[Sequence[Vertex]] = None,
+        edges: Optional[Sequence[Edge]] = None,
+        faces: Optional[Sequence[Face]] = None,
+        cells: Optional[Sequence[Cell]] = None,
+        xVertices: Optional[Sequence[Vertex]] = None,
+        xEdges: Optional[Sequence[Edge]] = None,
+        xFaces: Optional[Sequence[Face]] = None,
         referencePoints: Sequence[ReferencePoint] = (),
-        skinFaces: tuple = (),
-        skinEdges: tuple = (),
-        stringerEdges: tuple = (),
-    ):
+        skinFaces: Tuple[Tuple[str, Sequence[Face]], ...] = ...,
+        skinEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
+        stringerEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
+    ) -> None:
         """This method creates a set from a sequence of objects in a model database.
+
+        At least one sequence argument must be provided - elements, nodes, vertices, edges,
+        faces, cells, or referencePoints. The arguments xVertices, xEdges, and xFaces are
+        used to exclude lower-dimension entities and to provide finer control on the
+        content of the set. For example, the following statement defines a region enclosing
+        a square face but without two of its edges::
+        
+            set = mdb.models['Model-1'].rootAssembly.Set(name='mySet', faces=f[3:4], xEdges=e[1:3])
 
         .. note:: 
             This function can be accessed by::
@@ -159,7 +170,7 @@ class Set(Region):
 
     @overload
     @abaqus_method_doc
-    def __init__(self, name: str, objectToCopy: "Set"):
+    def __init__(self, name: str, objectToCopy: Set) -> None:
         """This method copies a set from an existing set.
 
         .. note:: 
@@ -183,19 +194,19 @@ class Set(Region):
         ...
 
     @abaqus_method_doc
-    def __init__(self, *args, **kwargs):
+    def __init__(self, *args, **kwargs) -> None:
         ...
 
     def SetByBoolean(
-        self, name: str, sets: Sequence["Set"], operation: SymbolicConstant = UNION
-    ):
+        self, name: str, sets: Sequence[Set], operation: Literal[UNION, INTERSECTION, DIFFERENCE] = UNION
+    ) -> Set:
         """This method creates a set by performing a boolean operation on two or more input sets.
 
         .. note:: 
             This function can be accessed by::
 
-                mdb.models[name].parts[name].Set
-                mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[name].SetByBoolean
+                mdb.models[name].rootAssembly.SetByBoolean
 
         Parameters
         ----------
@@ -217,7 +228,7 @@ class Set(Region):
         ...
 
     @abaqus_method_doc
-    def SetFromColor(self, name: str, color: tuple):
+    def SetFromColor(self, name: str, color: tuple) -> Set:
         """This method creates a set containing faces of the part marked with a specified color
         attribute. Third-party applications can assign color attributes to faces, and the color
         attribute can be imported into Abaqus from an ACIS file. You can use this method to
@@ -227,8 +238,7 @@ class Set(Region):
         .. note:: 
             This function can be accessed by::
 
-                mdb.models[name].parts[name].Set
-                mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[name].SetFromColor
 
         Parameters
         ----------
@@ -247,14 +257,14 @@ class Set(Region):
         ...
 
     @abaqus_method_doc
-    def SetFromElementLabels(self, name: str, elementLabels: tuple):
+    def SetFromElementLabels(self, name: str, elementLabels: Sequence[int]) -> Set:
         """This method creates a set from a sequence of element labels in a model database.
 
         .. note:: 
             This function can be accessed by::
 
-                mdb.models[name].parts[name].Set
-                mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[name].SetFromElementLabels
+                mdb.models[name].rootAssembly.SetFromElementLabels
 
         Parameters
         ----------
@@ -262,8 +272,13 @@ class Set(Region):
             A String specifying the repository key.
         elementLabels
             A sequence of element labels. An element label is a sequence of Int element identifiers.
-            For example, for a part:`elementLabels=(2,3,5,7)`For an
-            assembly:`elementLabels=(('Instance-1', (2,3,5,7)),       ('Instance-2', (1,2,3)))`
+            For example, for a part::
+
+                elementLabels=(2,3,5,7)
+
+            For an assembly::
+
+                elementLabels=(('Instance-1', (2,3,5,7)), ('Instance-2', (1,2,3)))`
 
         Returns
         -------
@@ -273,14 +288,14 @@ class Set(Region):
         ...
 
     @abaqus_method_doc
-    def SetFromNodeLabels(self, name: str, nodeLabels: tuple):
+    def SetFromNodeLabels(self, name: str, nodeLabels: Sequence[int]):
         """This method creates a set from a sequence of node labels in a model database.
 
         .. note:: 
             This function can be accessed by::
 
-                mdb.models[name].parts[name].Set
-                mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[name].SetFromNodeLabels
+                mdb.models[name].rootAssembly.SetFromNodeLabels
 
         Parameters
         ----------
@@ -288,8 +303,13 @@ class Set(Region):
             A String specifying the repository key.
         nodeLabels
             A sequence of node labels. A node label is a sequence of Int node identifiers. For
-            example, for a part:`nodeLabels=(2,3,5,7)`For an assembly:`nodeLabels=(('Instance-1',
-            (2,3,5,7)), ('Instance-2', (1,2,3)))`
+            example, for a part::
+
+                nodeLabels=(2,3,5,7)
+
+            For an assembly::
+
+                nodeLabels=(('Instance-1', (2,3,5,7)), ('Instance-2', (1,2,3)))`
 
         Returns
         -------
@@ -301,15 +321,14 @@ class Set(Region):
     @abaqus_method_doc
     def MapSetsFromOdb(
         self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE
-    ):
+    ) -> Set:
         """This method creates sets based on mapping sets from element centroid locations in an
         Odb.
 
         .. note:: 
             This function can be accessed by::
 
-                mdb.models[name].parts[name].Set
-                mdb.models[name].rootAssembly.Set
+                mdb.models[name].parts[name].MapSetsFromOdb
 
         Parameters
         ----------
