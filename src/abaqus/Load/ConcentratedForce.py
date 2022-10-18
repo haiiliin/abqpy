@@ -162,9 +162,9 @@ class ConcentratedForce(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        cf1: Union[SymbolicConstant, float] = None,
-        cf2: Union[SymbolicConstant, float] = None,
-        cf3: Union[SymbolicConstant, float] = None,
+        cf1: Union[SymbolicConstant, float] = ...,
+        cf2: Union[SymbolicConstant, float] = ...,
+        cf3: Union[SymbolicConstant, float] = ...,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing ConcentratedForce object in
