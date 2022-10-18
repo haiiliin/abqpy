@@ -235,7 +235,7 @@ class SurfaceTraction(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        magnitude: Union[SymbolicConstant, float] = None,
+        magnitude: Union[SymbolicConstant, float] = ...,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing SurfaceTraction object in the
