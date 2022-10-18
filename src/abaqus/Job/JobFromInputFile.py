@@ -1,10 +1,12 @@
 from typing import Optional
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Job import Job
 from .MessageArray import MessageArray
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, DOMAIN, OFF, ON,
-                                              PERCENTAGE, SINGLE, SymbolicConstant)
+                                              PERCENTAGE, SINGLE, ODB, SymbolicConstant)
 
 
 @abaqus_class_doc
@@ -143,10 +145,10 @@ class JobFromInputFile(Job):
         name: str,
         inputFileName: str,
         type: SymbolicConstant = ANALYSIS,
-        queue: str = "",
+        queue: Optional[str] = "",
         waitHours: int = 0,
         waitMinutes: int = 0,
-        atTime: str = "",
+        atTime: Optional[str] = "",
         scratch: str = "",
         userSubroutine: str = "",
         numCpus: int = 1,
@@ -159,6 +161,9 @@ class JobFromInputFile(Job):
         activateLoadBalancing: Boolean = OFF,
         multiprocessingMode: SymbolicConstant = DEFAULT,
         licenseType: SymbolicConstant = DEFAULT,
+        getMemoryFromAnalysis: Boolean = ON,
+        numGPUs: int = 0,
+        resultsFormat: Literal[C.ODB, C.SIM, C.BOTH] = ODB,
     ):
         """This method creates an analysis job using an input file for the model definition.
 
@@ -246,6 +251,15 @@ class JobFromInputFile(Job):
 
             .. versionchanged:: 2022
                 The `licenseType` argument was added.
+        getMemoryFromAnalysis
+            A Boolean specifying whether to retrieve the recommended memory settings from the last
+            datacheck or analysis run and use those values in subsequent submissions. The default
+            value is ON.
+        numGPUs
+            An Int specifying the number of GPUs to use for this analysis if parallel processing is
+            available. Possible values are **numCpus** >= 0. The default value is 0.
+        resultsFormat
+            This option specifies the results output format: ODB, SIM, or BOTH. The default value is ODB.
 
         Returns
         -------
