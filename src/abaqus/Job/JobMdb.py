@@ -7,7 +7,7 @@ from .JobFromInputFile import JobFromInputFile
 from .ModelJob import ModelJob
 from .OptimizationProcess import OptimizationProcess
 from ..Mdb.MdbBase import MdbBase
-from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, DOMAIN, OFF,
+from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, DOMAIN, ON, OFF, ODB,
                                               OPT_DATASAVE_SPECIFY_CYCLE, PERCENTAGE, SINGLE)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
@@ -192,11 +192,11 @@ class JobMdb(MdbBase):
         self,
         name: str,
         inputFileName: str,
-        type: Literal[C.ANALYSIS, C.SYNTAXCHECK, C.RECOVER, C.RESTART] = ANALYSIS,
-        queue: str = "",
+        type: Literal[C.ANALYSIS, C.SYNTAXCHECK, C.RECOVER] = ANALYSIS,
+        queue: Optional[str] = "",
         waitHours: int = 0,
         waitMinutes: int = 0,
-        atTime: str = "",
+        atTime: Optional[str] = "",
         scratch: str = "",
         userSubroutine: str = "",
         numCpus: int = 1,
@@ -209,6 +209,9 @@ class JobMdb(MdbBase):
         activateLoadBalancing: Boolean = OFF,
         multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT,
         licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT,
+        getMemoryFromAnalysis: Boolean = ON,
+        numGPUs: int = 0,
+        resultsFormat: Literal[C.ODB, C.SIM, C.BOTH] = ODB,
     ) -> JobFromInputFile:
         """This method creates an analysis job using an input file for the model definition.
 
@@ -290,6 +293,15 @@ class JobMdb(MdbBase):
             DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default
             value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not
             available.
+        getMemoryFromAnalysis
+            A Boolean specifying whether to retrieve the recommended memory settings from the last
+            datacheck or analysis run and use those values in subsequent submissions. The default
+            value is ON.
+        numGPUs
+            An Int specifying the number of GPUs to use for this analysis if parallel processing is
+            available. Possible values are **numCpus** >= 0. The default value is 0.
+        resultsFormat
+            This option specifies the results output format: ODB, SIM, or BOTH. The default value is ODB.
         """
 
         self.jobs[name] = jobFromInputFile = JobFromInputFile(
