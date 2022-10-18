@@ -1,9 +1,11 @@
-from typing import Union
+from typing import Union, Sequence
+from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Amplitude import Amplitude
 from .BaselineCorrection import BaselineCorrection
-from ..UtilityAndView.abaqusConstants import SOLVER_DEFAULT, STEP, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import SOLVER_DEFAULT, STEP, TOTAL
 
 
 @abaqus_class_doc
@@ -33,25 +35,25 @@ class TabularAmplitude(Amplitude):
 
     #: A sequence of pairs of Floats specifying time/frequency and amplitude pairs. Possible
     #: values for time/frequency are positive numbers.
-    data: tuple
+    data: Sequence[Sequence[float]]
 
     #: The SymbolicConstant SOLVER_DEFAULT or a Float specifying the degree of smoothing.
     #: Possible float values are between 0 and 0.5. If **smooth** = SOLVER_DEFAULT, the default
     #: degree of smoothing will be determined by the solver. The default value is
     #: SOLVER_DEFAULT.
-    smooth: Union[SymbolicConstant, float] = SOLVER_DEFAULT
+    smooth: Union[Literal[SOLVER_DEFAULT], float] = SOLVER_DEFAULT
 
     #: A SymbolicConstant specifying the time span of the amplitude. Possible values are STEP
     #: and TOTAL. The default value is STEP.
-    timeSpan: SymbolicConstant = STEP
+    timeSpan: Literal[STEP, TOTAL] = STEP
 
     @abaqus_method_doc
     def __init__(
         self,
         name: str,
-        data: tuple,
-        smooth: Union[SymbolicConstant, float] = SOLVER_DEFAULT,
-        timeSpan: SymbolicConstant = STEP,
+        data: Sequence[Sequence[float]],
+        smooth: Union[Literal[SOLVER_DEFAULT], float] = SOLVER_DEFAULT,
+        timeSpan: Literal[STEP, TOTAL] = STEP,
     ):
         """This method creates a TabularAmplitude object.
 
@@ -92,8 +94,8 @@ class TabularAmplitude(Amplitude):
     @abaqus_method_doc
     def setValues(
         self,
-        smooth: Union[SymbolicConstant, float] = SOLVER_DEFAULT,
-        timeSpan: SymbolicConstant = STEP,
+        smooth: Union[Literal[SOLVER_DEFAULT], float] = SOLVER_DEFAULT,
+        timeSpan: Literal[STEP, TOTAL] = STEP,
     ):
         """This method modifies the TabularAmplitude object.
 
