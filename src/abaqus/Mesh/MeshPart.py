@@ -22,7 +22,7 @@ from ..Region.Region import Region
 from ..Region.Set import Set
 from ..Mesh.MeshStats import MeshStats
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import Boolean, FREE, OFF, ON, SINGLE, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, SINGLE, SymbolicConstant
 
 
 @abaqus_class_doc
