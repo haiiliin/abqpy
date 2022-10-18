@@ -4,6 +4,7 @@ from ..Canvas.Displayable import Displayable
 from ..EditMesh.MeshEditPart import MeshEditPart
 from ..Mesh.MeshPart import MeshPart
 from ..Property.PropertyPart import PropertyPart
+from ..Region.Region import Region
 from ..Region.RegionPart import RegionPart
 
 
@@ -21,3 +22,7 @@ class Part(
             mdb.models[name].parts[name]
     """
     ...
+
+    def insertElements(self, faces: Region):
+        """Insert elements on the Part"""
+        ...
