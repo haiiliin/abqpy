@@ -1,8 +1,13 @@
-from typing import Optional
+from __future__ import annotations
+
+from typing import Optional, Tuple, TYPE_CHECKING
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
+if TYPE_CHECKING: # to avoid circular imports
+    from ..Mesh.MeshElementArray import MeshElementArray
+    from ..Mesh.MeshNodeArray import MeshNodeArray
 
 @abaqus_class_doc
 class Vertex:
@@ -37,7 +42,7 @@ class Vertex:
     isReferenceRep: Boolean = OFF
 
     #: A tuple of Floats specifying the **X** -, **Y** -, and **Z** -coordinates of the vertex.
-    pointOn: Optional[float] = None
+    pointOn: Tuple[float, float, float]
 
     #: A tuple of Floats specifying the name of the feature that created this vertex.
     featureName: Optional[float] = None
@@ -47,20 +52,20 @@ class Vertex:
     instanceName: Optional[float] = None
 
     @abaqus_method_doc
-    def getEdges(self):
+    def getEdges(self) -> Tuple[int]:
         """This method returns a sequence consisting of the edge ids of the edges which share this
         vertex.
 
         Returns
         -------
-        Sequence[int]
+        Tuple[int]
             A tuple of integers.
 
         """
         ...
 
     @abaqus_method_doc
-    def getNodes(self):
+    def getNodes(self) -> MeshNodeArray:
         """This method returns an array of node objects that are associated with the vertex.
 
         Returns
@@ -72,7 +77,7 @@ class Vertex:
         ...
 
     @abaqus_method_doc
-    def getElements(self):
+    def getElements(self) -> MeshElementArray:
         """This method returns an array of element objects that are associated with the vertex.
 
         Returns
