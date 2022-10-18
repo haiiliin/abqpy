@@ -1,4 +1,6 @@
-from typing import Dict, List, Optional
+from __future__ import annotations
+
+from typing import Dict, List, Optional, Union, TYPE_CHECKING
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from ..Adaptivity.AdaptivityProcess import AdaptivityProcess
@@ -7,9 +9,13 @@ from ..CustomKernel.RepositorySupport import RepositorySupport
 from ..EditMesh.MeshEditOptions import MeshEditOptions
 from ..Job.Coexecution import Coexecution
 from ..Job.Job import Job
+from ..Job.ModelJob import ModelJob
+from ..Job.JobFromInputFile import JobFromInputFile
 from ..Job.OptimizationProcess import OptimizationProcess
 from ..Model.Model import Model
 
+if TYPE_CHECKING: # to avoid circular imports
+    from .Mdb import Mdb
 
 @abaqus_class_doc
 class MdbBase:
@@ -30,7 +36,7 @@ class MdbBase:
     lastChangedCount: Optional[float] = None
 
     #: A repository of Job objects.
-    jobs: Dict[str, Job] = {}
+    jobs: Dict[str, Union[Job, ModelJob, JobFromInputFile]] = {}
 
     #: A repository of AdaptivityProcess objects.
     adaptivityProcesses: Dict[str, AdaptivityProcess] = {}
@@ -80,7 +86,7 @@ class MdbBase:
         self.models["Model-1"].FieldOutputRequest("F-Output-1", "Initial")
 
     @abaqus_method_doc
-    def importDxf(self, fileName: str):
+    def importDxf(self, fileName: str) -> Mdb:
         """This method creates a ConstrainedSketch object from a file containing dxf-format
         (AutoCAD) geometry. Only a limited number of entities are supported. This format should
         be used only if no other formats are available.
@@ -103,7 +109,7 @@ class MdbBase:
         ...
 
     @abaqus_method_doc
-    def openMdb(self, pathName: str):
+    def openMdb(self, pathName: str) -> Mdb:
         """This method opens an existing model database file.
 
         .. note:: 
@@ -230,7 +236,7 @@ class MdbBase:
         ...
 
     @abaqus_method_doc
-    def getAuxMdbModelNames(self):
+    def getAuxMdbModelNames(self) -> List[str]:
         """This method returns a list of model names present in the auxiliary Mdb which had been
         opened earlier using the openAuxMdb command.
 
