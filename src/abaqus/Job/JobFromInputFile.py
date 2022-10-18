@@ -6,7 +6,7 @@ from .Job import Job
 from .MessageArray import MessageArray
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, DOMAIN, OFF, ON,
-                                              PERCENTAGE, SINGLE, ODB, SymbolicConstant)
+                                              PERCENTAGE, SINGLE, ODB)
 
 
 @abaqus_class_doc
