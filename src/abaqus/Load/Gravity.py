@@ -132,9 +132,9 @@ class Gravity(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        comp1: Union[SymbolicConstant, float] = None,
-        comp2: Union[SymbolicConstant, float] = None,
-        comp3: Union[SymbolicConstant, float] = None,
+        comp1: Union[SymbolicConstant, float] = ...,
+        comp2: Union[SymbolicConstant, float] = ...,
+        comp3: Union[SymbolicConstant, float] = ...,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing Gravity object in the
