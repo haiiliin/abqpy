@@ -71,9 +71,9 @@ class Region:
         xVertices: Optional[Sequence[Vertex]] = None,
         xEdges: Optional[Sequence[Vertex]] = None,
         xFaces: Optional[Sequence[Vertex]] = None,
-        skinFaces: Tuple[Tuple[str, Face], ...] = ...,
-        skinEdges: Tuple[Tuple[str, Edge], ...] = ...,
-        stringerEdges: Tuple[Tuple[str, Edge], ...] = ...,
+        skinFaces: Tuple[Tuple[str, Sequence[Face]], ...] = ...,
+        skinEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
+        stringerEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
     ):
         """This command creates a set-like region. For example
         myRegion = regionToolset.Region(vertices=v[2:4]
