@@ -1,10 +1,13 @@
-from typing import Optional, Tuple
+from __future__ import annotations
+
+from typing import Optional, Tuple, TYPE_CHECKING
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
-from ..Mesh.MeshElementArray import MeshElementArray
-from ..Mesh.MeshNodeArray import MeshNodeArray
 from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
+if TYPE_CHECKING: # to avoid circular imports
+    from ..Mesh.MeshElementArray import MeshElementArray
+    from ..Mesh.MeshNodeArray import MeshNodeArray
 
 @abaqus_class_doc
 class Vertex:
