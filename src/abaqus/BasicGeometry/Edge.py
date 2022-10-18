@@ -1,6 +1,9 @@
-from typing import Optional, Tuple
+from typing import Optional, Tuple, Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from .EdgeArray import EdgeArray
+from ..Mesh.MeshNodeArray import MeshNodeArray
+from ..Mesh.MeshElementArray import MeshElementArray
 from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 
@@ -57,7 +60,7 @@ class Edge:
     instanceName: Optional[float] = None
 
     @abaqus_method_doc
-    def isTangentFlipped(self):
+    def isTangentFlipped(self) -> Boolean:
         """This method determines whether the tangent to the edge is flipped from its default
         direction by the use of the flipTangent method on a Part object.
 
@@ -70,7 +73,7 @@ class Edge:
         ...
 
     @abaqus_method_doc
-    def getCurvature(self, parameter: float, point: Tuple[float, float, float]):
+    def getCurvature(self, parameter: float, point: Tuple[float, float, float]) -> Dict:
         """This method returns curvature information at a location on the edge.
 
         Parameters
@@ -98,20 +101,20 @@ class Edge:
         ...
 
     @abaqus_method_doc
-    def getFaces(self):
+    def getFaces(self) -> Tuple[int]:
         """This method returns a sequence consisting of the face ids of the faces which share this
         edge.
 
         Returns
         -------
-        Sequence[int]
+        Tuple[int]
             A tuple of integers.
 
         """
         ...
 
     @abaqus_method_doc
-    def getAdjacentEdges(self):
+    def getAdjacentEdges(self) -> EdgeArray:
         """This method returns an array of Edge objects that share at least one vertex of the edge.
 
         Returns
@@ -123,7 +126,7 @@ class Edge:
         ...
 
     @abaqus_method_doc
-    def getEdgesByEdgeAngle(self, angle: str):
+    def getEdgesByEdgeAngle(self, angle: str) -> EdgeArray:
         """This method returns an array of Edge objects that are obtained by recursively finding
         adjacent edges that are at an angle of less than or equal to the specified face angle.
 
@@ -141,7 +144,7 @@ class Edge:
         ...
 
     @abaqus_method_doc
-    def getNodes(self):
+    def getNodes(self) -> MeshNodeArray:
         """This method returns an array of node objects that are associated with the edge.
 
         Returns
@@ -153,7 +156,7 @@ class Edge:
         ...
 
     @abaqus_method_doc
-    def getElements(self):
+    def getElements(self) -> MeshElementArray:
         """This method returns an array of element objects that are associated with the edge.
 
         Returns
@@ -165,7 +168,7 @@ class Edge:
         ...
 
     @abaqus_method_doc
-    def getRadius(self):
+    def getRadius(self) -> float:
         """This method returns the radius of circular edges.
 
         Returns
@@ -180,7 +183,7 @@ class Edge:
         ...
 
     @abaqus_method_doc
-    def getSize(self, printResults: str = True):
+    def getSize(self, printResults: bool = True) -> float:
         """This method returns a Float indicating the length of the edge.
 
         Parameters
@@ -197,7 +200,7 @@ class Edge:
         ...
 
     @abaqus_method_doc
-    def getVertices(self):
+    def getVertices(self) -> Tuple[int]:
         """This method returns a sequence of indices of the vertices that bound this edge. The
         first index refers to the vertex where the normalized curve parameter = 0.0, and the
         second index refers to the vertex where the normalized curve parameter = 1.0. If the
@@ -205,7 +208,7 @@ class Edge:
 
         Returns
         -------
-        Sequence[int]
+        Tuple[int]
             A tuple of integers.
 
         """
