@@ -2292,9 +2292,9 @@ class Material(MaterialBase):
     def Sorption(
         self,
         absorptionTable: tuple,
-        lawAbsorption: SymbolicConstant = TABULAR,
+        lawAbsorption: Literal[C.TABULAR, C.LOG] = TABULAR,
         exsorption: Boolean = OFF,
-        lawExsorption: SymbolicConstant = TABULAR,
+        lawExsorption: Literal[C.TABULAR, C.LOG] = TABULAR,
         scanning: float = 0,
         exsorptionTable: tuple = (),
     ) -> Sorption:
@@ -2349,7 +2349,7 @@ class Material(MaterialBase):
     def SpecificHeat(
         self,
         table: tuple,
-        law: SymbolicConstant = CONSTANTVOLUME,
+        law: Literal[C.CONSTANTVOLUME, C.CONSTANTPRESSURE] = CONSTANTVOLUME,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ) -> SpecificHeat:
@@ -2391,7 +2391,7 @@ class Material(MaterialBase):
     def Swelling(
         self,
         table: tuple,
-        law: SymbolicConstant = INPUT,
+        law: Literal[C.INPUT, C.USER] = INPUT,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ) -> Swelling:
@@ -2431,12 +2431,12 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def UserMaterial(
         self,
-        type: SymbolicConstant = MECHANICAL,
+        type: Literal[C.MECHANICAL, C.THERMAL, C.THERMOMECHANICAL] = MECHANICAL,
         unsymm: Boolean = OFF,
         mechanicalConstants: tuple = (),
         thermalConstants: tuple = (),
         effmod: Boolean = OFF,
-        hybridFormulation: SymbolicConstant = INCREMENTAL,
+        hybridFormulation: Literal[C.INCREMENTAL, C.TOTAL, C.INCOMPRESSIBLE] = INCREMENTAL,
     ) -> UserMaterial:
         """This method creates a UserMaterial object.
 
@@ -2525,10 +2525,10 @@ class Material(MaterialBase):
         self,
         domain: SymbolicConstant,
         table: tuple,
-        frequency: SymbolicConstant = FORMULA,
-        type: SymbolicConstant = ISOTROPIC,
-        preload: SymbolicConstant = NONE,
-        time: SymbolicConstant = PRONY,
+        frequency: Literal[C.FORMULA, C.TABULAR, C.PRONY, C.CREEP_TEST_DATA, C.RELAXATION_TEST_DATA] = FORMULA,
+        type: Literal[C.ISOTROPIC, C.ISOTROPIC, C.TRACTION] = ISOTROPIC,
+        preload: Literal[C.NONE, C.UNIAXIAL, C.VOLUMETRIC, C.UNIAXIAL_VOLUMETRIC] = NONE,
+        time: Literal[C.PRONY, C.CREEP_TEST_DATA, C.RELAXATION_TEST_DATA, C.FREQUENCY_DATA] = PRONY,
         errtol: float = 0,
         nmax: int = 13,
         volumetricTable: tuple = (),
@@ -2598,7 +2598,7 @@ class Material(MaterialBase):
     def Viscosity(
         self,
         table: tuple,
-        type: SymbolicConstant = NEWTONIAN,
+        type: Literal[C.NEWTONIAN] = NEWTONIAN,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ) -> Viscosity:
@@ -2637,10 +2637,10 @@ class Material(MaterialBase):
     def Viscous(
         self,
         table: tuple,
-        law: SymbolicConstant = STRAIN,
+        law: Literal[C.STRAIN, C.TIME, C.USER, C.ANAND, C.DARVEAUX, C.DOUBLE_POWER, C.POWER_LAW, C.TIME_POWER_LAW] = STRAIN,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        time: SymbolicConstant = TOTAL,
+        time: Literal[C.TOTAL, C.CREEP] = TOTAL,
     ) -> Viscous:
         """This method creates a Viscous object.
 
@@ -2658,6 +2658,10 @@ class Material(MaterialBase):
             A SymbolicConstant specifying the creep law. Possible values are STRAIN, TIME, USER,
             ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and TIME_POWER_LAW. The default value is
             STRAIN.
+            
+            .. versionadded:: 2020
+                The options ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and TIME_POWER_LAW were added.
+            
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies
@@ -2678,7 +2682,7 @@ class Material(MaterialBase):
     def DuctileDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -2690,7 +2694,7 @@ class Material(MaterialBase):
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -2759,7 +2763,7 @@ class Material(MaterialBase):
     def FldDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -2771,7 +2775,7 @@ class Material(MaterialBase):
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -2840,7 +2844,7 @@ class Material(MaterialBase):
     def FlsdDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -2852,7 +2856,7 @@ class Material(MaterialBase):
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -2921,7 +2925,7 @@ class Material(MaterialBase):
     def JohnsonCookDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -2933,7 +2937,7 @@ class Material(MaterialBase):
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -3002,7 +3006,7 @@ class Material(MaterialBase):
     def MaxeDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -3014,8 +3018,8 @@ class Material(MaterialBase):
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
-        position: SymbolicConstant = CENTROID,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
+        position: Literal[C.CENTROID, C.CRACKTIP, C.COMBINED] = CENTROID,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -3087,7 +3091,7 @@ class Material(MaterialBase):
     def MaxsDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -3099,8 +3103,8 @@ class Material(MaterialBase):
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
-        position: SymbolicConstant = CENTROID,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
+        position: Literal[C.CENTROID, C.CRACKTIP, C.COMBINED] = CENTROID,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -3172,7 +3176,7 @@ class Material(MaterialBase):
     def MkDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -3184,7 +3188,7 @@ class Material(MaterialBase):
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -3253,7 +3257,7 @@ class Material(MaterialBase):
     def MsfldDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -3265,7 +3269,7 @@ class Material(MaterialBase):
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -3334,7 +3338,7 @@ class Material(MaterialBase):
     def QuadeDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -3346,8 +3350,8 @@ class Material(MaterialBase):
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
-        position: SymbolicConstant = CENTROID,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
+        position: Literal[C.CENTROID, C.CRACKTIP, C.COMBINED] = CENTROID,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -3419,7 +3423,7 @@ class Material(MaterialBase):
     def QuadsDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -3431,8 +3435,8 @@ class Material(MaterialBase):
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
-        position: SymbolicConstant = CENTROID,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
+        position: Literal[C.CENTROID, C.CRACKTIP, C.COMBINED] = CENTROID,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -3504,7 +3508,7 @@ class Material(MaterialBase):
     def MaxpeDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -3516,8 +3520,8 @@ class Material(MaterialBase):
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
-        position: SymbolicConstant = CENTROID,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
+        position: Literal[C.CENTROID, C.CRACKTIP, C.COMBINED] = CENTROID,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -3589,7 +3593,7 @@ class Material(MaterialBase):
     def MaxpsDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -3601,8 +3605,8 @@ class Material(MaterialBase):
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
-        position: SymbolicConstant = CENTROID,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
+        position: Literal[C.CENTROID, C.CRACKTIP, C.COMBINED] = CENTROID,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -3674,7 +3678,7 @@ class Material(MaterialBase):
     def ShearDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -3686,7 +3690,7 @@ class Material(MaterialBase):
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -3755,7 +3759,7 @@ class Material(MaterialBase):
     def HashinDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.MSFLD, C.FLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -3767,7 +3771,7 @@ class Material(MaterialBase):
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -3836,9 +3840,9 @@ class Material(MaterialBase):
     def MeanFieldHomogenization(
         self,
         angleSubdivision: Optional[int] = None,
-        formulation: SymbolicConstant = MT,
-        isotropization: SymbolicConstant = ALLISO,
-        uniformMatrixStrain: SymbolicConstant = NO,
+        formulation: Literal[C.MT, C.REUSS, C.VOIGT, C.INVERSED_MT, C.BALANCED, C.UNSPECIFIED] = MT,
+        isotropization: Literal[C.ALLISO, C.EISO, C.PISO] = ALLISO,
+        uniformMatrixStrain: Literal[C.NO, C.YES] = NO,
     ):
         """This method creates a MeanFieldHomogenization object.
 
