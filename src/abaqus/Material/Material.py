@@ -287,7 +287,7 @@ class Material(MaterialBase):
         self,
         table: tuple,
         intercept: Optional[float] = None,
-        hardening: Literal[C.EXPONENTIAL, C.EXPONENTIAL, C.TABULAR] = EXPONENTIAL,
+        hardening: Literal[C.EXPONENTIAL, C.TABULAR] = EXPONENTIAL,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ) -> ClayPlasticity:
