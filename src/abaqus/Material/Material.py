@@ -907,7 +907,7 @@ class Material(MaterialBase):
             The default value is ISOTROPIC.
             
             .. versionadded:: 2022
-                The optin BILAMINA was added.
+                The option BILAMINA was added.
             
         noCompression
             A Boolean specifying whether compressive stress is allowed. The default value is OFF.
