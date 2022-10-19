@@ -318,7 +318,7 @@ pull_request_rules:
   - name: Auto merge updating version number pull request
     conditions:
       - and:
-        - label=version
+        - label=release
         - label!=conflicts
         - label!=disable-auto-merge
         - and:
