@@ -2555,6 +2555,11 @@ RANGE_ALL = abaqusConstants.RANGE_ALL
 SS = abaqusConstants.SS
 TOKEN = abaqusConstants.TOKEN
 CREDIT = abaqusConstants.CREDIT
+REUSS = abaqusConstants.REUSS
+VOIGT = abaqusConstants.VOIGT
+INVERSED_MT = abaqusConstants.INVERSED_MT
+EISO = abaqusConstants.EISO
+PISO = abaqusConstants.PISO
 # okay decompiling abaqusConstants.pyc
 
 end_all()
