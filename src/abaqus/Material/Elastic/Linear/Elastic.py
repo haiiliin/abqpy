@@ -118,19 +118,6 @@ class Elastic:
             - Value of the second field variable.
             - Etc.
             
-        - If **type** = BILAMINA, the table data specify the following:
-        
-            - :math:`E_{n n}`.
-            - :math:`E_{s s}`.
-            - :math:`E_{t t}`.
-            - :math:`E_{n s}`.
-            - :math:`E_{n t}`.
-            - :math:`E_{s t}`.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
-            
         - If **type** = SHORT_FIBER, there is no table data.
 
         The corresponding analysis keywords are:
@@ -179,7 +166,6 @@ class Elastic:
             - COUPLED_TRACTION
             - SHORT_FIBER
             - SHEAR
-            - BILAMINA
             
             The default value is ISOTROPIC.
         noCompression
