@@ -2646,3 +2646,8 @@ class abaqusConstants(SymbolicConstant, Enum):
     SS = "SS"
     TOKEN = "TOKEN"
     CREDIT = "CREDIT"
+    REUSS = "REUSS"
+    VOIGT = "VOIGT"
+    INVERSED_MT = "INVERSED_MT"
+    EISO = "EISO"
+    PISO = "PISO"

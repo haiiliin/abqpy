@@ -34,23 +34,6 @@ class GapFlow:
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **type** = BINGHAM_PLASTIC the table data specify the following:
-        
-            - Consistency.
-            - Yield stress.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
-        - If **type** = HERSCHEL-BULKLEY the table data specify the following:
-        
-            - Consistency.
-            - Exponent.
-            - Yield stress.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
 
         The corresponding analysis keywords are:
 
@@ -87,8 +70,8 @@ class GapFlow:
         dependencies
             An Int specifying the number of field variable dependencies. The default value is 0.
         type
-            A SymbolicConstant specifying the type of gap flow. Possible values are NEWTONIAN,
-            POWER_LAW, BINGHAM_PLASTIC, and HERSCHEL-BULKLEY. The default value is NEWTONIAN.
+            A SymbolicConstant specifying the type of gap flow. Possible values are NEWTONIAN and
+            POWER_LAW. The default value is NEWTONIAN.
 
         Returns
         -------
