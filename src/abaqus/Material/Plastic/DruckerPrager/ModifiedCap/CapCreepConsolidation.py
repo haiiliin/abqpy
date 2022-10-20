@@ -35,16 +35,6 @@ class CapCreepConsolidation:
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **law** = POWER_LAW or **law** = TIME_POWER_LAW, the table data specify the following:
-        
-            - :math:`q_0`.
-            - :math:`n`.
-            - :math:`m`.
-            - :math:`\epsilon_0`.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
 
         The corresponding analysis keywords are:
 
