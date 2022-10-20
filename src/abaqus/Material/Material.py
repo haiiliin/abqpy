@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-from typing import Union, Optional
-=======
 from typing import Union, Optional, Sequence
 from typing_extensions import Literal
->>>>>>> 201c6461 ([typing]: Work on material module (#2946))
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Density.Density import Density
@@ -63,14 +59,9 @@ from .Plastic.Plastic import Plastic
 from .Plastic.Swelling.Swelling import Swelling
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
-<<<<<<< HEAD
-from ..UtilityAndView.abaqusConstants import (ALLISO, Boolean, CENTROID, COEFFICIENTS, CONSTANTVOLUME, DEFAULT,
-                                              ELASTIC_PLASTIC, EXPONENTIAL,
-=======
 from ..UtilityAndView.abaqusConstants import  abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALLISO, Boolean, CENTROID, COEFFICIENTS, CONSTANT,
                                               CONSTANTVOLUME, DEFAULT, ELASTIC_PLASTIC, EXPONENTIAL,
->>>>>>> 201c6461 ([typing]: Work on material module (#2946))
                                               FITTED_VALUE, FORMULA, FUNG_ANISOTROPIC, GENERAL,
                                               HALF_CYCLE, IDEALGAS, INCOMPRESSIBLE, INCREMENTAL,
                                               INPUT, ISOTROPIC, LINEAR, LOGARITHMIC, LONG_TERM,
@@ -839,7 +830,7 @@ class Material(MaterialBase):
     def Elastic(
         self,
         table: tuple,
-        type: Literal[C.ISOTROPIC, C.ORTHOTROPIC, C.ANISOTROPIC, C.ENGINEERING_CONSTANTS, C.LAMINA, C.TRACTION, C.COUPLED_TRACTION, C.SHORT_FIBER, C.SHEAR, C.BILAMINA] = ISOTROPIC,
+        type: Literal[C.ISOTROPIC, C.ORTHOTROPIC, C.ANISOTROPIC, C.ENGINEERING_CONSTANTS, C.LAMINA, C.TRACTION, C.COUPLED_TRACTION, C.SHORT_FIBER, C.SHEAR] = ISOTROPIC,
         noCompression: Boolean = OFF,
         noTension: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
@@ -870,12 +861,8 @@ class Material(MaterialBase):
             - COUPLED_TRACTION
             - SHORT_FIBER
             - SHEAR
-            - BILAMINA
             
             The default value is ISOTROPIC.
-            
-            .. versionadded:: 2022
-                The option BILAMINA was added.
             
         noCompression
             A Boolean specifying whether compressive stress is allowed. The default value is OFF.
@@ -1977,10 +1964,6 @@ class Material(MaterialBase):
         numBackstresses: int = 1,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-<<<<<<< HEAD
-=======
-        extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT,
->>>>>>> 201c6461 ([typing]: Work on material module (#2946))
     ) -> Plastic:
         """This method creates a Plastic object.
 
