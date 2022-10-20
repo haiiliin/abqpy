@@ -2047,6 +2047,9 @@ class Material(MaterialBase):
             to the equivalent plastic strain. This argument is valid only if hardening=ISOTROPIC.
             Possible values are CONSTANT and LINEAR . The default value is CONSTANT.
 
+            .. versionadded:: 2022
+                The `extrapolation` argument was added.
+
         Returns
         -------
         Plastic
