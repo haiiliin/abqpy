@@ -35,16 +35,6 @@ class CapCreepCohesion:
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **law** = POWER_LAW or **law** = TIME_POWER_LAW, the table data specify the following:
-        
-            - :math:`q_0`.
-            - :math:`n`.
-            - :math:`m`.
-            - :math:`\epsilon_0`.
-            - Temperature, if the data depend on temperature.
-            - Value of the first field variable, if the data depend on field variables.
-            - Value of the second field variable.
-            - Etc.
 
         The corresponding analysis keywords are:
 
@@ -74,7 +64,7 @@ class CapCreepCohesion:
             A sequence of sequences of Floats specifying the items described below.
         law
             A SymbolicConstant specifying the cap creep law. Possible values are STRAIN, TIME,
-            SINGHM, USER, POWER_LAW, and TIME_POWER_LAW. The default value is STRAIN.
+            SINGHM, USER and POWER_LAW. The default value is STRAIN.
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies

@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-from typing import Union, Optional
-=======
 from typing import Union, Optional, Sequence
 from typing_extensions import Literal
->>>>>>> 201c6461 ([typing]: Work on material module (#2946))
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Density.Density import Density
@@ -62,14 +58,9 @@ from .Plastic.Plastic import Plastic
 from .Plastic.Swelling.Swelling import Swelling
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
-<<<<<<< HEAD
-from ..UtilityAndView.abaqusConstants import (Boolean, CENTROID, COEFFICIENTS, CONSTANTVOLUME, DEFAULT,
-                                              ELASTIC_PLASTIC, EXPONENTIAL,
-=======
 from ..UtilityAndView.abaqusConstants import  abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALLISO, Boolean, CENTROID, COEFFICIENTS, CONSTANT,
                                               CONSTANTVOLUME, DEFAULT, ELASTIC_PLASTIC, EXPONENTIAL,
->>>>>>> 201c6461 ([typing]: Work on material module (#2946))
                                               FITTED_VALUE, FORMULA, FUNG_ANISOTROPIC, GENERAL,
                                               HALF_CYCLE, IDEALGAS, INCOMPRESSIBLE, INCREMENTAL,
                                               INPUT, ISOTROPIC, LINEAR, LOGARITHMIC, LONG_TERM,
@@ -447,7 +438,7 @@ class Material(MaterialBase):
     def Creep(
         self,
         table: tuple,
-        law: Literal[C.STRAIN, C.TIME, C.HYPERBOLIC_SINE, C.USER, C.ANAND, C.DARVEAUX, C.DOUBLE_POWER, C.POWER_LAW, C.TIME_POWER_LAW] = STRAIN,
+        law: Literal[C.STRAIN, C.TIME, C.HYPERBOLIC_SINE, C.USER] = STRAIN,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         time: Literal[C.TOTAL, C.CREEP] = TOTAL,
@@ -466,11 +457,7 @@ class Material(MaterialBase):
             A sequence of sequences of Floats specifying the items described below.
         law
             A SymbolicConstant specifying the strain-hardening law. Possible values are STRAIN,
-            TIME, HYPERBOLIC_SINE, USER, ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and
-            TIME_POWER_LAW. The default value is STRAIN.
-            
-            .. versionadded:: 2020
-                The options ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and TIME_POWER_LAW were added.
+            TIME, HYPERBOLIC_SINE and USER. The default value is STRAIN.
             
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
@@ -838,7 +825,7 @@ class Material(MaterialBase):
     def Elastic(
         self,
         table: tuple,
-        type: Literal[C.ISOTROPIC, C.ORTHOTROPIC, C.ANISOTROPIC, C.ENGINEERING_CONSTANTS, C.LAMINA, C.TRACTION, C.COUPLED_TRACTION, C.SHORT_FIBER, C.SHEAR, C.BILAMINA] = ISOTROPIC,
+        type: Literal[C.ISOTROPIC, C.ORTHOTROPIC, C.ANISOTROPIC, C.ENGINEERING_CONSTANTS, C.LAMINA, C.TRACTION, C.COUPLED_TRACTION, C.SHORT_FIBER, C.SHEAR] = ISOTROPIC,
         noCompression: Boolean = OFF,
         noTension: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
@@ -869,12 +856,8 @@ class Material(MaterialBase):
             - COUPLED_TRACTION
             - SHORT_FIBER
             - SHEAR
-            - BILAMINA
             
             The default value is ISOTROPIC.
-            
-            .. versionadded:: 2022
-                The option BILAMINA was added.
             
         noCompression
             A Boolean specifying whether compressive stress is allowed. The default value is OFF.
@@ -1156,7 +1139,7 @@ class Material(MaterialBase):
         kmax: Optional[float] = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        type: Literal[C.NEWTONIAN, C.POWER_LAW, C.BINGHAM_PLASTIC, C.HERSCHEL_BULKLEY] = NEWTONIAN,
+        type: Literal[C.NEWTONIAN, C.POWER_LAW] = NEWTONIAN,
     ) -> GapFlow:
         """This method creates a GapFlow object.
 
@@ -1180,11 +1163,8 @@ class Material(MaterialBase):
             An Int specifying the number of field variable dependencies. The default value is 0.
         type
             A SymbolicConstant specifying the type of gap flow. Possible values are NEWTONIAN,
-            POWER_LAW, BINGHAM_PLASTIC, and HERSCHEL-BULKLEY. The default value is NEWTONIAN.
+            and POWER_LAW. The default value is NEWTONIAN.
         
-            .. versionadded:: 2020
-                The options BINGHAM_PLASTIC and HERSCHEL-BULKLEY were added.
-
         Returns
         -------
         GapFlow
@@ -1976,10 +1956,6 @@ class Material(MaterialBase):
         numBackstresses: int = 1,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-<<<<<<< HEAD
-=======
-        extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT,
->>>>>>> 201c6461 ([typing]: Work on material module (#2946))
     ) -> Plastic:
         """This method creates a Plastic object.
 
@@ -2602,7 +2578,7 @@ class Material(MaterialBase):
     def Viscous(
         self,
         table: tuple,
-        law: Literal[C.STRAIN, C.TIME, C.USER, C.ANAND, C.DARVEAUX, C.DOUBLE_POWER, C.POWER_LAW, C.TIME_POWER_LAW] = STRAIN,
+        law: Literal[C.STRAIN, C.TIME, C.USER] = STRAIN,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         time: Literal[C.TOTAL, C.CREEP] = TOTAL,
@@ -2620,12 +2596,8 @@ class Material(MaterialBase):
         table
             A sequence of sequences of Floats specifying the items described below.
         law
-            A SymbolicConstant specifying the creep law. Possible values are STRAIN, TIME, USER,
-            ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and TIME_POWER_LAW. The default value is
-            STRAIN.
-            
-            .. versionadded:: 2020
-                The options ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and TIME_POWER_LAW were added.
+            A SymbolicConstant specifying the creep law. Possible values are STRAIN, TIME and USER.
+            The default value is STRAIN.
             
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
@@ -3800,153 +3772,3 @@ class Material(MaterialBase):
         RangeError
         """
         return DamageInitiation()
-<<<<<<< HEAD
-=======
-
-    @abaqus_method_doc
-    def MeanFieldHomogenization(
-        self,
-        angleSubdivision: Optional[int] = None,
-        formulation: Literal[C.MT, C.REUSS, C.VOIGT, C.INVERSED_MT, C.BALANCED, C.UNSPECIFIED] = MT,
-        isotropization: Literal[C.ALLISO, C.EISO, C.PISO] = ALLISO,
-        uniformMatrixStrain: Literal[C.NO, C.YES] = NO,
-    ):
-        """This method creates a MeanFieldHomogenization object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].materials[name].MeanFieldHomogenization
-                session.odbs[name].materials[name].MeanFieldHomogenization
-
-        .. versionadded:: 2018
-            The `MeanFieldHomogenization` method was added.
-
-        Parameters
-        ----------
-        angleSubdivision
-            An Int specifying the number of angle increments used for the discretization of the
-            orientation space.
-        formulation
-            A SymbolicConstant specifying the type of homogenization model. Possible values are MT,
-            REUSS, VOIGT, INVERSED_MT, BALANCED, and UNSPECIFIED. The default value is MT.
-        isotropization
-            A SymbolicConstant specifying the type of isotropization method. Possible values are
-            ALLISO, EISO, and PISO. The default value is ALLISO.
-        uniformMatrixStrain
-            A SymbolicConstant specifying whether the average strain in the matrix is uniform across
-            all pseudo-grains. Possible values are NO and YES. The default value is NO.
-
-        Returns
-        -------
-            A MeanFieldHomogenization object.
-
-        Raises
-        ------
-        RangeError
-        """
-        return MeanFieldHomogenization()
-
-    @abaqus_method_doc
-    def GapConductance(
-        self,
-        pressureDependency: Boolean = OFF,
-        dependencies: int = 0,
-        table: tuple = (),
-    ) -> GapConductance:
-        """This method creates a GapConductance object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].materials[name].GapConductance
-                session.odbs[name].materials[name].GapConductance
-
-        .. versionadded:: 2021
-            The `GapConductance` method was added.
-
-        Parameters
-        ----------
-        pressureDependency
-            A Boolean specifying whether the data depend on pressure. The default value is OFF.
-        dependencies
-            An Int specifying the number of field variable dependencies. The default value is 0.
-        table
-            A sequence of sequences of Floats specifying the items described below.
-
-        Returns
-        -------
-            A GapConductance object.
-        """
-        return GapConductance(pressureDependency, dependencies, table)
-
-    @abaqus_method_doc
-    def GapConvection(
-        self,
-        type: str,
-        table: tuple = (),
-        temperatureDependency: Boolean = OFF,
-        dependencies: int = 0,
-    ) -> GapConvection:
-        """This method creates a GapConvection object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].materials[name].GapConvection
-                session.odbs[name].materials[name].GapConvection
-
-        .. versionadded:: 2021
-            The `GapConvection` method was added.
-
-        Parameters
-        ----------
-        type
-            An odb_String specifying the type of gap convection. Possible values are FLUX,
-            TEMPERATURE, and TABULAR. The default value is FLUX.
-        table
-            A sequence of sequences of Floats specifying the items described below.
-        temperatureDependency
-            A Boolean specifying whether the data depend on temperature. The default value is OFF.
-        dependencies
-            An Int specifying the number of field variable dependencies. The default value is 0.
-
-        Returns
-        -------
-            A GapConvection object.
-        """
-        return GapConvection(type, table, temperatureDependency, dependencies)
-
-    @abaqus_method_doc
-    def GapRadiation(
-        self,
-        masterSurfaceEmissivity: float,
-        slaveSurfaceEmissivity: float,
-        table: tuple,
-    ) -> GapRadiation:
-        """This method creates a GapRadiation object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].materials[name].Gapradiation
-                session.odbs[name].materials[name].Gapradiation
-
-        .. versionadded:: 2021
-            The `GapRadiation` method was added.
-
-        Parameters
-        ----------
-        masterSurfaceEmissivity
-            A Float specifying the Emissivity of master surface.ϵA
-        slaveSurfaceEmissivity
-            A Float specifying the Emissivity of the slave surfaceϵB.
-        table
-            A sequence of sequences of Floats specifying the items described below.
-
-        Returns
-        -------
-            A Gapradiation object.
-        """
-        return GapRadiation(masterSurfaceEmissivity, slaveSurfaceEmissivity, table)
->>>>>>> 201c6461 ([typing]: Work on material module (#2946))
