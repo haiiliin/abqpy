@@ -19,11 +19,7 @@ from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNode import MeshNode
 from ..Mesh.MeshNodeArray import MeshNodeArray
-<<<<<<< HEAD
-from ..UtilityAndView.abaqusConstants import OVERWRITE, SymbolicConstant, UNION
-=======
 from ..UtilityAndView.abaqusConstants import Boolean, OVERWRITE, UNION, INTERSECTION, DIFFERENCE
->>>>>>> 086b5e32 ([typing]: Working on `Set` object (#2872))
 
 
 @abaqus_class_doc
@@ -292,11 +288,7 @@ class Set(Region):
         ...
 
     @abaqus_method_doc
-<<<<<<< HEAD
-    def SetFromNodeLabels(self, name: str, nodeLabels: tuple):
-=======
-    def SetFromNodeLabels(self, name: str, nodeLabels: Sequence[int], unsorted: Boolean = False) -> Set:
->>>>>>> 086b5e32 ([typing]: Working on `Set` object (#2872))
+    def SetFromNodeLabels(self, name: str, nodeLabels: Sequence[int]) -> Set:
         """This method creates a set from a sequence of node labels in a model database.
 
         .. note:: 
@@ -311,10 +303,6 @@ class Set(Region):
             A String specifying the repository key.
         nodeLabels
             A sequence of node labels. A node label is a sequence of Int node identifiers. For
-<<<<<<< HEAD
-            example, for a part:`nodeLabels=(2,3,5,7)`For an assembly:`nodeLabels=(('Instance-1',
-            (2,3,5,7)), ('Instance-2', (1,2,3)))`
-=======
             example, for a part::
 
                 nodeLabels=(2,3,5,7)
@@ -322,13 +310,6 @@ class Set(Region):
             For an assembly::
 
                 nodeLabels=(('Instance-1', (2,3,5,7)), ('Instance-2', (1,2,3)))`
-
-        unsorted
-            A Boolean specifying whether the created set is unsorted. The default value is False.
-
-            .. versionadded:: 2018
-                The `unsorted` argument was added.
->>>>>>> 086b5e32 ([typing]: Working on `Set` object (#2872))
 
         Returns
         -------
