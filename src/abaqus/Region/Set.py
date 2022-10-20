@@ -288,7 +288,7 @@ class Set(Region):
         ...
 
     @abaqus_method_doc
-    def SetFromNodeLabels(self, name: str, nodeLabels: Sequence[int], unsorted: Boolean = False) -> Set:
+    def SetFromNodeLabels(self, name: str, nodeLabels: Sequence[int]) -> Set:
         """This method creates a set from a sequence of node labels in a model database.
 
         .. note:: 
@@ -310,12 +310,6 @@ class Set(Region):
             For an assembly::
 
                 nodeLabels=(('Instance-1', (2,3,5,7)), ('Instance-2', (1,2,3)))`
-
-        unsorted
-            A Boolean specifying whether the created set is unsorted. The default value is False.
-
-            .. versionadded:: 2018
-                The `unsorted` argument was added.
 
         Returns
         -------
