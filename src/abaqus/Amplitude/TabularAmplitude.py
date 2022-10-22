@@ -1,7 +1,8 @@
 from typing import Union, Sequence
-from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
+
 from .Amplitude import Amplitude
 from .BaselineCorrection import BaselineCorrection
 from ..UtilityAndView.abaqusConstants import SOLVER_DEFAULT, STEP, TOTAL

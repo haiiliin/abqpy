@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
+
 from ..UtilityAndView.abaqusConstants import (Boolean, ELEMENT, FEATURE, HOLLOW_CIRCLE, MEDIUM, OFF,
                                               ON, SMALL, SOLID, SymbolicConstant, VERY_THIN, WIRE,
                                               WIREFRAME)

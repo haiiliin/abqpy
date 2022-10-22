@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
+
 from .BoundaryConditionState import BoundaryConditionState
 from ..UtilityAndView.abaqusConstants import FREE, INFLOW, SymbolicConstant, ZERO_PRESSURE
 

@@ -1,6 +1,7 @@
 from typing import List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .Density.Density import Density
 from .Elastic.HyperElastic.HyperFoam.Hyperfoam import Hyperfoam
 from .Elastic.HyperElastic.Hyperelastic import Hyperelastic
