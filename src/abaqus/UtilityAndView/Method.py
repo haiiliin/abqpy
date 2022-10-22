@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_function_doc
+
 from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 """The methodCallback module provides functions that allow you to register a callback that 

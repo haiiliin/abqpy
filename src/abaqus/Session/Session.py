@@ -1,4 +1,5 @@
 from abqpy.decorators import abaqus_class_doc
+
 from ..Animation.AnimationSession import AnimationSession
 from ..Canvas.CanvasSession import CanvasSession
 from ..DisplayGroup.DisplayGroupSession import DisplayGroupSession

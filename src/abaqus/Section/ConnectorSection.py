@@ -1,8 +1,8 @@
 from typing import Optional
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Section import Section
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C

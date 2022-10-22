@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .ConnectorOrientation import ConnectorOrientation
 from ..Canvas.Displayable import Displayable
 from ..Datum.DatumCsys import DatumCsys
