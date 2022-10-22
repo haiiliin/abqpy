@@ -1,4 +1,5 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .Inertia import Inertia
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import Boolean, MASS_PROPORTIONAL, OFF, SymbolicConstant

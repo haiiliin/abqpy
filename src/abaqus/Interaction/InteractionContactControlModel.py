@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .ExpContactControl import ExpContactControl
 from .StdContactControl import StdContactControl
 from ..Model.ModelBase import ModelBase

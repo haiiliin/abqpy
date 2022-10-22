@@ -3,6 +3,7 @@ from __future__ import annotations
 from typing import Union, Tuple, List, Dict, overload, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .Cell import Cell
 from .FaceArray import FaceArray
 from ..UtilityAndView.abaqusConstants import Boolean

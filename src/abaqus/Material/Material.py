@@ -1,7 +1,8 @@
 from typing import Union, Optional, Sequence
-from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
+
 from .Density.Density import Density
 from .Elastic.HyperElastic.HyperFoam.Hyperfoam import Hyperfoam
 from .Elastic.HyperElastic.Hyperelastic import Hyperelastic
@@ -63,7 +64,6 @@ from .Plastic.Plastic import Plastic
 from .Plastic.Swelling.Swelling import Swelling
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
-from ..UtilityAndView.abaqusConstants import  abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALLISO, Boolean, CENTROID, COEFFICIENTS, CONSTANT,
                                               CONSTANTVOLUME, DEFAULT, ELASTIC_PLASTIC, EXPONENTIAL,
                                               FITTED_VALUE, FORMULA, FUNG_ANISOTROPIC, GENERAL,
@@ -73,6 +73,7 @@ from ..UtilityAndView.abaqusConstants import (ALLISO, Boolean, CENTROID, COEFFIC
                                               OFF, ON, POISSON, PRONY, RELATIVE_SLOPE_DROP, STRAIN,
                                               STRESS, SymbolicConstant, TABULAR, TOTAL, UNIAXIAL,
                                               UNIFORM, UNKNOWN, VOLUMETRIC)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

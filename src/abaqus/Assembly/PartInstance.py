@@ -1,6 +1,7 @@
 from typing import Dict, List, Optional, Sequence, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..BasicGeometry.CellArray import CellArray
 from ..BasicGeometry.EdgeArray import EdgeArray
 from ..BasicGeometry.FaceArray import FaceArray

@@ -1,6 +1,7 @@
 from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Datum.DatumCsys import DatumCsys
 from ..UtilityAndView.abaqusConstants import (Boolean, CATEGORY_BASED, COARSE, DEFAULT,
                                               EXTRAPOLATE_AVERAGE_COMPUTE, FIELD_OUTPUT, GLOBAL,
