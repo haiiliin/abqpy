@@ -2567,6 +2567,10 @@ VOIGT = abaqusConstants.VOIGT
 INVERSED_MT = abaqusConstants.INVERSED_MT
 EISO = abaqusConstants.EISO
 PISO = abaqusConstants.PISO
+IGES = abaqusConstants.IGES
+ANALYTICAL_FIELD_THICKNESS = abaqusConstants.ANALYTICAL_FIELD_THICKNESS
+NORMAL_DATUM = abaqusConstants.NORMAL_DATUM
+PRIMARY_DATUM = abaqusConstants.PRIMARY_DATUM
 # okay decompiling abaqusConstants.pyc
 
 end_all()
