@@ -24,30 +24,28 @@ import sys
 import typing
 
 import git
-import pkg_resources
 
 project = 'abqpy'
 copyright = '2022, WANG Hailin'
 author = 'WANG Hailin'
 
 # The full version, including alpha/beta/rc tags
-_default_version = '2023.0.0-dev'
 try:
-    version = pkg_resources.get_distribution('abqpy').version[:4]
-    if not version.startswith('20'):
-        version = _default_version[:4]
-except pkg_resources.DistributionNotFound:
-    version = _default_version[:4]
-release = version
+    import abqpy
+    release = version = abqpy.__semver__
+except ImportError:
+    import warnings
+    warnings.warn('abqpy is not installed, using 2023.0.0')
+    release = version = '2023.0.0'
+    sys.path.insert(0, os.path.abspath('../../src'))
 
 # For multiple languages
 locale_dirs = ['locales/']   # path is example but recommended.
-gettext_compact = False     # optional.
+gettext_compact = False      # optional.
 
 # -- General configuration ---------------------------------------------------
 
-# Add source code
-sys.path.insert(0, os.path.abspath('../../src'))
+# Environment variables
 os.environ['ABQPY_MAKE_DOCS'] = 'true'
 
 # Add any Sphinx extension module names here, as strings. They can be
