@@ -19,7 +19,7 @@ def _get_version():
         try:
             return setuptools_scm.get_version(
                 root=str(root),
-                version_scheme = "post-release"
+                version_scheme = "post-release",
                 fallback_version=_default_version,
             )
         except Exception:
