@@ -23,7 +23,6 @@ import re
 import sys
 import typing
 
-import abqpy
 import git
 
 project = 'abqpy'
@@ -31,11 +30,18 @@ copyright = '2022, WANG Hailin'
 author = 'WANG Hailin'
 
 # The full version, including alpha/beta/rc tags
-release = version = abqpy.__semver_version__
+try:
+    import abqpy
+    release = version = abqpy.__semver_version__
+except ImportError:
+    import warnings
+    warnings.warn('abqpy is not installed, using 2023.0.0')
+    release = version = '2023.0.0'
+    sys.path.insert(0, os.path.abspath('../../src'))
 
 # For multiple languages
 locale_dirs = ['locales/']   # path is example but recommended.
-gettext_compact = False     # optional.
+gettext_compact = False      # optional.
 
 # -- General configuration ---------------------------------------------------
 
