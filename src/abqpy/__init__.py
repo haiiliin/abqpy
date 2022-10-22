@@ -19,8 +19,7 @@ def _get_version():
         try:
             return setuptools_scm.get_version(
                 root=str(root),
-                version_scheme="release-branch-semver",
-                local_scheme="node-and-date",
+                version_scheme = "post-release"
                 fallback_version=_default_version,
             )
         except Exception:
