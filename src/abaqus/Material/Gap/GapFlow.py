@@ -89,7 +89,7 @@ class GapFlow:
             An Int specifying the number of field variable dependencies. The default value is 0.
         type
             A SymbolicConstant specifying the type of gap flow. Possible values are NEWTONIAN,
-            POWER_LAW, BINGHAM_PLASTIC, and HERSCHEL-BULKLEY. The default value is NEWTONIAN.
+            POWER_LAW, BINGHAM_PLASTIC, and HERSCHEL_BULKLEY. The default value is NEWTONIAN.
 
         Returns
         -------
