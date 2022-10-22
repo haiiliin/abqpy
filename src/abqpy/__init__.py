@@ -1,6 +1,5 @@
 from pathlib import Path
 
-from .abaqus import run
 from .template import *
 
 try:
@@ -31,3 +30,4 @@ def _get_version():
 
 
 __version__ = _get_version()
+__semver__ = __version__.split("+")[0]
