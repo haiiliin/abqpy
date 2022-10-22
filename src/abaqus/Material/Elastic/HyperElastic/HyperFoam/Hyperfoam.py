@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ....TestData.BiaxialTestData import BiaxialTestData
 from ....TestData.PlanarTestData import PlanarTestData
 from ....TestData.SimpleShearTestData import SimpleShearTestData

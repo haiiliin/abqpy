@@ -1,6 +1,7 @@
 from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc
+
 from .DesignResponse import DesignResponse
 from .GeometricRestriction import GeometricRestriction
 from .ObjectiveFunction import ObjectiveFunction

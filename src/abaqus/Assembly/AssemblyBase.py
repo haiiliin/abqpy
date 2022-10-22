@@ -2,6 +2,7 @@ from typing import Union, overload, Dict, List, Optional, Tuple, Sequence
 
 from abaqus.Datum.DatumCsys import DatumCsys
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .AssemblyFeature import AssemblyFeature
 from .AssemblyModel import AssemblyModel
 from .ConnectorOrientationArray import ConnectorOrientationArray

@@ -1,4 +1,5 @@
 from abqpy.decorators import abaqus_class_doc
+
 from ..BasicGeometry.BasicGeometryPart import BasicGeometryPart
 from ..Canvas.Displayable import Displayable
 from ..EditMesh.MeshEditPart import MeshEditPart
