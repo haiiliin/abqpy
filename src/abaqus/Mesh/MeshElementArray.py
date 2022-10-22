@@ -3,6 +3,7 @@ from __future__ import annotations
 from typing import List, Tuple, Sequence, Dict, Union, TYPE_CHECKING
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .MeshElement import MeshElement
 
 if TYPE_CHECKING: # to avoid circular imports

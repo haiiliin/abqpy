@@ -1,4 +1,5 @@
 from abqpy.decorators import abaqus_function_doc
+
 from ..UtilityAndView.abaqusConstants import BOTH, Boolean, EARLIEST, LATEST, SymbolicConstant
 
 """The upgradeScript module allows you to upgrade scripts from one release of Abaqus to a 
