@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from typing import overload, Optional, Sequence, Tuple
-from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
+
 from .Region import Region
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.CellArray import CellArray

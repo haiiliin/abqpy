@@ -1,6 +1,6 @@
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Edge import Edge
 from .InterestingPoint import InterestingPoint
 from ..Part.PartBase import PartBase

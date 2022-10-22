@@ -1,6 +1,7 @@
 from typing import Union, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .Arrow import Arrow
 from .Text import Text
 from ..Odb.UserDataBase import UserDataBase

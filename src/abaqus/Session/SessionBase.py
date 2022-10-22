@@ -1,6 +1,7 @@
 from typing import Dict, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .AutoColors import AutoColors
 from .Color import Color
 from .Drawing import Drawing

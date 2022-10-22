@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
+
 from .OdbInstance import OdbInstance
 from .OdbPart import OdbPart
 from .SectionPoint import SectionPoint
