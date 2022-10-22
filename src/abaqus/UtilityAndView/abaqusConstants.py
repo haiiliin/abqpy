@@ -2572,6 +2572,31 @@ ANALYTICAL_FIELD_THICKNESS = abaqusConstants.ANALYTICAL_FIELD_THICKNESS
 NORMAL_DATUM = abaqusConstants.NORMAL_DATUM
 PRIMARY_DATUM = abaqusConstants.PRIMARY_DATUM
 CODE = abaqusConstants.CODE
+COMPLEX_MAG_AT_ANGLE = abaqusConstants.COMPLEX_MAG_AT_ANGLE
+VALANIS_LANDEL = abaqusConstants.VALANIS_LANDEL
+ELLIPTIC_CYLINDER = abaqusConstants.ELLIPTIC_CYLINDER
+OBLATE = abaqusConstants.OBLATE
+PENNY = abaqusConstants.PENNY
+ORIENTATION_TENSOR = abaqusConstants.ORIENTATION_TENSOR
+RANDOM3D = abaqusConstants.RANDOM3D
+UMAT = abaqusConstants.UMAT
+BRITTLE = abaqusConstants.BRITTLE
+DUCTILE = abaqusConstants.DUCTILE
+NT11 = abaqusConstants.NT11
+FLUID_PRESSURE = abaqusConstants.FLUID_PRESSURE
+WARP = abaqusConstants.WARP
+ELECTRICAL_POTENTIAL = abaqusConstants.ELECTRICAL_POTENTIAL
+NN30 = abaqusConstants.NN30
+NN11 = abaqusConstants.NN11
+NT30 = abaqusConstants.NT30
+STRING = abaqusConstants.STRING
+ELECTROMAGNETIC = abaqusConstants.ELECTROMAGNETIC
+JUSTIFY_CENTER = abaqusConstants.JUSTIFY_CENTER
+JUSTIFY_RIGHT = abaqusConstants.JUSTIFY_RIGHT
+TWO_SIDED = abaqusConstants.TWO_SIDED
+SMALL_SLIDING = abaqusConstants.SMALL_SLIDING
+NO_CRUSH = abaqusConstants.NO_CRUSH
+NO_TRIGGER = abaqusConstants.NO_TRIGGER
 # okay decompiling abaqusConstants.pyc
 
 end_all()
