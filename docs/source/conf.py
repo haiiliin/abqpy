@@ -33,7 +33,7 @@ author = 'WANG Hailin'
 try:
     import abqpy
     release = version = abqpy.__semver__
-except ImportError:
+except (ImportError, AttributeError):
     import warnings
     warnings.warn('abqpy is not installed, using 2023.0.0')
     release = version = '2023.0.0'
