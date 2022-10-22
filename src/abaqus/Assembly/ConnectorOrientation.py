@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Datum.DatumCsys import DatumCsys
 from ..Region.Set import Set
 from ..UtilityAndView.abaqusConstants import AXIS_1, Boolean, ON, SymbolicConstant

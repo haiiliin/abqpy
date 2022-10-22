@@ -1,8 +1,9 @@
 from __future__ import annotations
 
-from typing import List, Tuple, Sequence, Dict, Union, TYPE_CHECKING
+from typing import List, Tuple, Sequence, Dict, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .MeshElement import MeshElement
 
 

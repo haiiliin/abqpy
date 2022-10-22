@@ -1,6 +1,7 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from .AdaptiveMeshControl import AdaptiveMeshControl
 from .DisplacementAdaptiveMeshConstraint import DisplacementAdaptiveMeshConstraint
