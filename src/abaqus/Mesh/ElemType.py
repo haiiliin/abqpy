@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import (AVERAGE_STRAIN, Boolean, CUBIC, DEFAULT, ENHANCED,
                                               OFF, ON, STANDARD, SymbolicConstant)
 

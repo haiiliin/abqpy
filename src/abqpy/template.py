@@ -1,7 +1,7 @@
 import json
 import os
-from typing import Dict, Union, Type
 import textwrap
+from typing import Dict, Union, Type
 
 import toml
 from jinja2 import Template

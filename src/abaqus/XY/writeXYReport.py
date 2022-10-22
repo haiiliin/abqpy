@@ -1,6 +1,7 @@
 from typing import Sequence
 
 from abqpy.decorators import abaqus_function_doc
+
 from .XYData import XYData
 from ..UtilityAndView.abaqusConstants import Boolean, ON
 

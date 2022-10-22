@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .DataTableArray import DataTableArray
 from .DiscreteField import DiscreteField
 from .ExpressionField import ExpressionField

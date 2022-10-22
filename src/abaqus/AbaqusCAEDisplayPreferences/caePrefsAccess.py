@@ -1,8 +1,8 @@
 from typing import Union, List
 
+from abqpy.decorators import abaqus_function_doc
 from typing_extensions import Literal
 
-from abqpy.decorators import abaqus_function_doc
 from .CaeGuiPrefs import CaeGuiPrefs
 from .CaeKerPrefs import CaeKerPrefs
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C

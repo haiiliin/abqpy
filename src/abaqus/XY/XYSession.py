@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from typing import Union, Tuple, Sequence, List, Dict, overload
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
 from .QuantityType import QuantityType
