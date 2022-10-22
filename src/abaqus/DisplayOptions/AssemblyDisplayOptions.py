@@ -1,6 +1,7 @@
 from typing import Dict, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .BCDisplayOptions import BCDisplayOptions
 from .ConstraintDisplayOptions import ConstraintDisplayOptions
 from .EngineeringFeatureDisplayOptions import EngineeringFeatureDisplayOptions

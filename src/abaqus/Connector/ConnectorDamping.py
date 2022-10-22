@@ -1,4 +1,5 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 from .ConnectorOptions import ConnectorOptions
 from ..UtilityAndView.abaqusConstants import (Boolean, LINEAR, OFF, SymbolicConstant, UNCOUPLED)

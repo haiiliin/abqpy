@@ -1,28 +1,28 @@
 from __future__ import annotations
 
 from typing import Optional, Sequence, Union
-from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
+
 from .ElemType import ElemType
 from .MeshEdge import MeshEdge
 from .MeshElement import MeshElement
 from .MeshFace import MeshFace
 from .MeshNode import MeshNode
-from .ElemType import ElemType
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.IgnoredVertex import IgnoredVertex
-from ..Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry import ConstrainedSketchGeometry
 from ..Datum.DatumCsys import DatumCsys
 from ..Feature.Feature import Feature
+from ..Mesh.MeshStats import MeshStats
 from ..Part.PartBase import PartBase
 from ..Region.Region import Region
 from ..Region.Set import Set
-from ..Mesh.MeshStats import MeshStats
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from ..Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry import ConstrainedSketchGeometry
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, SINGLE, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

@@ -1,4 +1,5 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .Amplitude import Amplitude
 from ..UtilityAndView.abaqusConstants import (ABSOLUTE_VALUE, ACCELERATION, Boolean,
                                               EVENT_ACCELERATION, OFF, STEP, SymbolicConstant)
