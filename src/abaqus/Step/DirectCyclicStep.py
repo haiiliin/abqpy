@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -16,6 +17,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AUTOMATIC, Boolean, DEFAULT, LINEAR, NONE, OFF,
                                               PROPAGATED, SOLVER_DEFAULT, SymbolicConstant)
 
@@ -232,7 +234,7 @@ class DirectCyclicStep(AnalysisStep):
         previous: str,
         description: str = "",
         timePeriod: float = 1,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
@@ -248,12 +250,12 @@ class DirectCyclicStep(AnalysisStep):
         continueAnalysis: Boolean = OFF,
         minCycleInc: int = 100,
         maxCycleInc: int = 1000,
-        maxNumCycles: SymbolicConstant = DEFAULT,
+        maxNumCycles: Literal[C.DEFAULT] = DEFAULT,
         damageExtrapolationTolerance: float = 1,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        extrapolation: SymbolicConstant = LINEAR,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
+        extrapolation: Literal[C.PARABOLIC, C.NONE, C.LINEAR] = LINEAR,
         maintainAttributes: Boolean = False,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
     ):
         """This method creates a DirectCyclicStep object.
 
@@ -359,7 +361,7 @@ class DirectCyclicStep(AnalysisStep):
         self,
         description: str = "",
         timePeriod: float = 1,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
@@ -375,11 +377,11 @@ class DirectCyclicStep(AnalysisStep):
         continueAnalysis: Boolean = OFF,
         minCycleInc: int = 100,
         maxCycleInc: int = 1000,
-        maxNumCycles: SymbolicConstant = DEFAULT,
+        maxNumCycles: Literal[C.DEFAULT] = DEFAULT,
         damageExtrapolationTolerance: float = 1,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        extrapolation: SymbolicConstant = LINEAR,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
+        extrapolation: Literal[C.PARABOLIC, C.NONE, C.LINEAR] = LINEAR,
+        convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
     ):
         """This method modifies the DirectCyclicStep object.
 

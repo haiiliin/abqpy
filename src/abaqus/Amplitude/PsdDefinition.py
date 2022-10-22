@@ -1,6 +1,8 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Amplitude import Amplitude
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, FORCE, OFF, STEP, SymbolicConstant
 
 
@@ -63,11 +65,11 @@ class PsdDefinition(Amplitude):
         self,
         name: str,
         data: tuple,
-        unitType: SymbolicConstant = FORCE,
+        unitType: Literal[C.BASE, C.FORCE, C.DB] = FORCE,
         referenceGravityAcceleration: float = 1,
         referenecePower: float = 0,
         user: Boolean = OFF,
-        timeSpan: SymbolicConstant = STEP,
+        timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
         amplitude: str = "",
     ):
         """This method creates a PsdDefinition object.
@@ -123,11 +125,11 @@ class PsdDefinition(Amplitude):
     @abaqus_method_doc
     def setValues(
         self,
-        unitType: SymbolicConstant = FORCE,
+        unitType: Literal[C.BASE, C.FORCE, C.DB] = FORCE,
         referenceGravityAcceleration: float = 1,
         referenecePower: float = 0,
         user: Boolean = OFF,
-        timeSpan: SymbolicConstant = STEP,
+        timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
         amplitude: str = "",
     ):
         """This method modifies the PsdDefinition object.

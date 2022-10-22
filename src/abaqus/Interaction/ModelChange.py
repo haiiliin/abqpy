@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Interaction import Interaction
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, GEOMETRY, OFF, SymbolicConstant
 
 
@@ -59,7 +61,7 @@ class ModelChange(Interaction):
         name: str,
         createStepName: str,
         isRestart: Boolean = OFF,
-        regionType: SymbolicConstant = GEOMETRY,
+        regionType: Literal[C.SKINS, C.GEOMETRY, C.ELEMENTS, C.STRINGERS] = GEOMETRY,
         region: Optional[Region] = None,
         activeInStep: Boolean = OFF,
         includeStrain: Boolean = OFF,
@@ -107,7 +109,7 @@ class ModelChange(Interaction):
     def setValues(
         self,
         isRestart: Boolean = OFF,
-        regionType: SymbolicConstant = GEOMETRY,
+        regionType: Literal[C.SKINS, C.GEOMETRY, C.ELEMENTS, C.STRINGERS] = GEOMETRY,
         region: Optional[Region] = None,
         activeInStep: Boolean = OFF,
         includeStrain: Boolean = OFF,

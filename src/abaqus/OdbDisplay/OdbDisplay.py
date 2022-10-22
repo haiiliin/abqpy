@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Union, overload, Dict, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -21,6 +22,7 @@ from ..PlotOptions.DisplayOptions import DisplayOptions
 from ..PlotOptions.FreeBodyOptions import FreeBodyOptions
 from ..PlotOptions.StreamOptions import StreamOptions
 from ..PlotOptions.ViewCutOptions import ViewCutOptions
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, EMPTY_LEAF, FIRST_FRAME, OFF, ON,
                                               SymbolicConstant)
 
@@ -338,8 +340,8 @@ class OdbDisplay:
         self,
         variableLabel: str,
         field: str,
-        outputPosition: SymbolicConstant,
-        refinement: Optional[SymbolicConstant] = None,
+        outputPosition: Literal[C.ELEMENT_NODAL, C.ELEMENT_FACE, C.WHOLE_ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.WHOLE_MODEL, C.GENERAL_PARTICLE, C.WHOLE_PART_INSTANCE, C.WHOLE_REGION],
+        refinement: Optional[Literal[C.COMPONENT, C.INVARIANT]] = None,
         sectionPoint: Optional[dict] = None,
     ):
         """This method specifies the field output variable for which to obtain results.
@@ -409,8 +411,8 @@ class OdbDisplay:
         self,
         variableLabel: str,
         field: str,
-        outputPosition: SymbolicConstant,
-        refinement: Optional[SymbolicConstant] = None,
+        outputPosition: Literal[C.ELEMENT_NODAL, C.ELEMENT_FACE, C.WHOLE_ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.WHOLE_MODEL, C.GENERAL_PARTICLE, C.WHOLE_PART_INSTANCE, C.WHOLE_REGION],
+        refinement: Optional[Literal[C.COMPONENT, C.INVARIANT]] = None,
         sectionPoint: Optional[dict] = None,
         statusMinimum: Optional[float] = None,
         statusMaximum: Optional[float] = None,
@@ -473,8 +475,8 @@ class OdbDisplay:
         self,
         variableLabel: str,
         field: str,
-        outputPosition: SymbolicConstant,
-        refinement: Optional[SymbolicConstant] = None,
+        outputPosition: Literal[C.ELEMENT_NODAL, C.ELEMENT_FACE, C.WHOLE_ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.WHOLE_MODEL, C.GENERAL_PARTICLE, C.WHOLE_PART_INSTANCE, C.WHOLE_REGION],
+        refinement: Optional[Literal[C.COMPONENT, C.INVARIANT]] = None,
         sectionPoint: Optional[dict] = None,
         tensorQuantity: Optional[SymbolicConstant] = None,
         vectorQuantity: Optional[SymbolicConstant] = None,
@@ -565,15 +567,15 @@ class OdbDisplay:
     def ViewCut(
         self,
         name: str,
-        shape: SymbolicConstant,
+        shape: Literal[C.CYLINDER, C.PLANE, C.ISOSURFACE, C.SPHERE],
         origin: tuple,
-        normal: Union[SymbolicConstant, float],
-        axis2: Union[SymbolicConstant, float],
+        normal: Union[Literal[C.SPHERE, C.AXIS_1, C.AXIS_3, C.CYLINDER, C.ISOSURFACE, C.AXIS_2], float],
+        axis2: Union[Literal[C.SPHERE, C.AXIS_1, C.AXIS_3, C.CYLINDER, C.ISOSURFACE, C.AXIS_2], float],
         csysName: str,
-        cylinderAxis: Union[SymbolicConstant, float],
+        cylinderAxis: Union[Literal[C.PLANE, C.SPHERE, C.AXIS_1, C.AXIS_3, C.ISOSURFACE, C.AXIS_2], float],
         followDeformation: Boolean = OFF,
         overrideAveraging: Boolean = ON,
-        referenceFrame: SymbolicConstant = FIRST_FRAME,
+        referenceFrame: Literal[C.CURRENT_FRAME, C.LAST_FRAME, C.FIRST_FRAME] = FIRST_FRAME,
     ) -> ViewCut:
         """This method creates a ViewCut object.
 

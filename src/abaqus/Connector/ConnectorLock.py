@@ -1,8 +1,10 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import ALL, SymbolicConstant
 
 
@@ -57,7 +59,7 @@ class ConnectorLock(ConnectorBehaviorOption):
     @abaqus_method_doc
     def __init__(
         self,
-        lockingComponent: SymbolicConstant = ALL,
+        lockingComponent: Literal[C.ALL] = ALL,
         minMotion: Optional[float] = None,
         maxMotion: Optional[float] = None,
         minForce: Optional[float] = None,

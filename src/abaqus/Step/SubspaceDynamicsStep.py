@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -16,6 +17,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import ALL, Boolean, OFF, STEP, SymbolicConstant
 
 
@@ -162,11 +164,11 @@ class SubspaceDynamicsStep(AnalysisStep):
         previous: str,
         description: str = "",
         timePeriod: float = 1,
-        vectors: SymbolicConstant = ALL,
+        vectors: Literal[C.ALL] = ALL,
         nlgeom: Boolean = OFF,
         maxNumInc: int = 100,
         incSize: float = 0,
-        amplitude: SymbolicConstant = STEP,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
         maintainAttributes: Boolean = False,
     ):
         """This method creates a SubspaceDynamicsStep object.
@@ -221,11 +223,11 @@ class SubspaceDynamicsStep(AnalysisStep):
         self,
         description: str = "",
         timePeriod: float = 1,
-        vectors: SymbolicConstant = ALL,
+        vectors: Literal[C.ALL] = ALL,
         nlgeom: Boolean = OFF,
         maxNumInc: int = 100,
         incSize: float = 0,
-        amplitude: SymbolicConstant = STEP,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
     ):
         """This method modifies the SubspaceDynamicsStep object.
 

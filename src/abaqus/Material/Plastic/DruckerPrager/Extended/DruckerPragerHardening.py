@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 from .....UtilityAndView.abaqusConstants import Boolean, COMPRESSION, OFF, SymbolicConstant
 
 
@@ -37,7 +39,7 @@ class DruckerPragerHardening:
     def __init__(
         self,
         table: tuple,
-        type: SymbolicConstant = COMPRESSION,
+        type: Literal[C.SHEAR, C.TENSION, C.COMPRESSION] = COMPRESSION,
         rate: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,

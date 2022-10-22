@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Movie import Movie
 from ..Session.SessionBase import SessionBase
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import END_FRAME_TIME, SymbolicConstant
 
 
@@ -20,7 +22,7 @@ class AnimationSession(SessionBase):
 
     @abaqus_method_doc
     def writeImageAnimation(
-        self, fileName: str, format: SymbolicConstant, canvasObjects: tuple = ()
+        self, fileName: str, format: Literal[C.AVI, C.VRML, C.QUICKTIME, C.COMPRESSED_VRML], canvasObjects: tuple = ()
     ):
         """This method writes the animations present in the list of canvas objects to a file. It
         generates an animation file using the given file name and file format and uses the
@@ -50,7 +52,7 @@ class AnimationSession(SessionBase):
         timelineStartFrame: int = 0,
         timelineEndFrame: Optional[int] = None,
         timelineStartTime: float = 0,
-        timelineEndTime: Union[SymbolicConstant, float] = END_FRAME_TIME,
+        timelineEndTime: Union[Literal[C.END_FRAME_TIME], float] = END_FRAME_TIME,
     ) -> Movie:
         """This method creates a Movie object from the contents of the specified file.
 

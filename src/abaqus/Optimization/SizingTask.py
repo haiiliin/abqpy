@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -8,6 +9,7 @@ from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
 from .StopCondition import StopCondition
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, MODEL, NORMAL, OFF, ON, SymbolicConstant
 
 
@@ -109,7 +111,7 @@ class SizingTask(OptimizationTask):
         objectiveFunctionDeltaStopCriteria: float = 0,
         stopCriteriaDesignCycle: int = 4,
         thicknessMoveLimit: float = 0,
-        thicknessUpdateStrategy: SymbolicConstant = NORMAL,
+        thicknessUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
         groupOperator: Boolean = OFF,
     ):
         """This method creates a SizingTask object.
@@ -186,7 +188,7 @@ class SizingTask(OptimizationTask):
         objectiveFunctionDeltaStopCriteria: float = 0,
         stopCriteriaDesignCycle: int = 4,
         thicknessMoveLimit: float = 0,
-        thicknessUpdateStrategy: SymbolicConstant = NORMAL,
+        thicknessUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
         groupOperator: Boolean = OFF,
     ):
         """This method modifies the SizingTask object.

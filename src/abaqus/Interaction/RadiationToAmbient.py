@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Interaction import Interaction
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import AMBIENT, SymbolicConstant, UNIFORM
 
 
@@ -66,8 +68,8 @@ class RadiationToAmbient(Interaction):
         surface: Region,
         emissivity: float,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
-        radiationType: SymbolicConstant = AMBIENT,
+        distributionType: Literal[C.AMBIENT, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
+        radiationType: Literal[C.AMBIENT, C.CAVITY] = AMBIENT,
         ambientTemperature: float = 0,
         ambientTemperatureAmp: str = "",
     ):
@@ -123,8 +125,8 @@ class RadiationToAmbient(Interaction):
     def setValues(
         self,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
-        radiationType: SymbolicConstant = AMBIENT,
+        distributionType: Literal[C.AMBIENT, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
+        radiationType: Literal[C.AMBIENT, C.CAVITY] = AMBIENT,
         ambientTemperature: float = 0,
         ambientTemperatureAmp: str = "",
     ):

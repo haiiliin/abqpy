@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Interaction import Interaction
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import PRESSURE, SymbolicConstant
 
 
@@ -94,7 +96,7 @@ class IncidentWave(Interaction):
         standoffPoint: Region,
         surface: Region,
         interactionProperty: str,
-        definition: SymbolicConstant = PRESSURE,
+        definition: Literal[C.PRESSURE, C.UNDEX, C.CONWEP, C.ACCELERATION] = PRESSURE,
         amplitude: str = "",
         imaginaryAmplitude: str = "",
         surfaceNormal: tuple = (),
@@ -170,7 +172,7 @@ class IncidentWave(Interaction):
     @abaqus_method_doc
     def setValues(
         self,
-        definition: SymbolicConstant = PRESSURE,
+        definition: Literal[C.PRESSURE, C.UNDEX, C.CONWEP, C.ACCELERATION] = PRESSURE,
         amplitude: str = "",
         imaginaryAmplitude: str = "",
         surfaceNormal: tuple = (),

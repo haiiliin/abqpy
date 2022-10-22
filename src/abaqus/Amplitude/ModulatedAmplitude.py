@@ -1,6 +1,8 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Amplitude import Amplitude
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import STEP, SymbolicConstant
 
 
@@ -55,7 +57,7 @@ class ModulatedAmplitude(Amplitude):
         start: float,
         frequency1: float,
         frequency2: float,
-        timeSpan: SymbolicConstant = STEP,
+        timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
     ):
         """This method creates a ModulatedAmplitude object.
 
@@ -98,7 +100,7 @@ class ModulatedAmplitude(Amplitude):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(self, timeSpan: SymbolicConstant = STEP):
+    def setValues(self, timeSpan: Literal[C.STEP, C.TOTAL] = STEP):
         """This method modifies the ModulatedAmplitude object.
 
         Parameters

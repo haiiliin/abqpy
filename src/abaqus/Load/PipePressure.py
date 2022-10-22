@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Load import Load
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import INTERNAL, SymbolicConstant, UNIFORM, UNSET
 
 
@@ -54,8 +56,8 @@ class PipePressure(Load):
         hReference: float,
         field: str = "",
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
-        side: SymbolicConstant = INTERNAL,
+        distributionType: Literal[C.USER_DEFINED, C.HYDROSTATIC, C.UNIFORM, C.FIELD] = UNIFORM,
+        side: Literal[C.EXTERNAL, C.INTERNAL] = INTERNAL,
     ):
         """This method creates a Pressure object.
 
@@ -110,8 +112,8 @@ class PipePressure(Load):
         self,
         field: str = "",
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
-        side: SymbolicConstant = INTERNAL,
+        distributionType: Literal[C.USER_DEFINED, C.HYDROSTATIC, C.UNIFORM, C.FIELD] = UNIFORM,
+        side: Literal[C.EXTERNAL, C.INTERNAL] = INTERNAL,
     ):
         """This method modifies the data for an existing PipePressure object in the step where it
         is created.

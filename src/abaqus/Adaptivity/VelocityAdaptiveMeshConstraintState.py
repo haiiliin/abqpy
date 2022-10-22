@@ -1,8 +1,10 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
@@ -94,14 +96,14 @@ class VelocityAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
         vr1: Optional[float] = None,
         vr2: Optional[float] = None,
         vr3: Optional[float] = None,
-        v1State: Optional[SymbolicConstant] = None,
-        v2State: Optional[SymbolicConstant] = None,
-        v3State: Optional[SymbolicConstant] = None,
-        vr1State: Optional[SymbolicConstant] = None,
-        vr2State: Optional[SymbolicConstant] = None,
-        vr3State: Optional[SymbolicConstant] = None,
-        amplitudeState: Optional[SymbolicConstant] = None,
-        status: Optional[SymbolicConstant] = None,
+        v1State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
+        v2State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
+        v3State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
+        vr1State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
+        vr2State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
+        vr3State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
+        amplitudeState: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
+        status: Optional[Literal[C.NOT_YET_ACTIVE, C.PROPAGATED_FROM_BASE_STATE, C.DEACTIVATED_FROM_BASE_STATE, C.DEACTIVATED, C.MODIFIED_FROM_BASE_STATE, C.PROPAGATED, C.NO_LONGER_ACTIVE, C.CREATED, C.INSTANCE_NOT_APPLICABLE, C.BUILT_INTO_MODES, C.TYPE_NOT_APPLICABLE, C.MODIFIED]] = None,
         amplitude: str = "",
     ):
         """The VelocityAdaptiveMeshConstraintState object stores the propagating data for an

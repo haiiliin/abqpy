@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -13,6 +14,7 @@ from .SectionCategory import SectionCategory
 from ..Assembly.ConnectorOrientationArray import ConnectorOrientationArray
 from ..Property.SectionAssignmentArray import SectionAssignmentArray
 from ..Section.Section import Section
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import AXIS_1, Boolean, INPUT, OFF, SymbolicConstant
 
 
@@ -67,11 +69,11 @@ class OdbAssemblyBase:
         self,
         region: str,
         localCsys1: Optional[OdbDatumCsys] = None, 
-        axis1: SymbolicConstant = AXIS_1,
+        axis1: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle1: float = 0,
         orient2sameAs1: Boolean = OFF,
         localCsys2: Optional[OdbDatumCsys] = None, 
-        axis2: SymbolicConstant = AXIS_1,
+        axis2: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle2: float = 0,
     ):
         """This method assigns a connector orientation to a connector region.

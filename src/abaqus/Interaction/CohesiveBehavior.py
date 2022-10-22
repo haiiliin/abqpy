@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALL_NODES, Boolean, OFF, ON, SymbolicConstant,
                                               UNCOUPLED)
 
@@ -77,9 +79,9 @@ class CohesiveBehavior:
     def __init__(
         self,
         repeatedContacts: Boolean = OFF,
-        eligibility: SymbolicConstant = ALL_NODES,
+        eligibility: Literal[C.INITIAL_NODES, C.SPECIFIED, C.ALL_NODES] = ALL_NODES,
         defaultPenalties: Boolean = ON,
-        coupling: SymbolicConstant = UNCOUPLED,
+        coupling: Literal[C.COUPLED, C.UNCOUPLED] = UNCOUPLED,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         table: tuple = (),

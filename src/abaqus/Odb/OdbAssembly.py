@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -10,6 +11,7 @@ from .OdbMeshNode import OdbMeshNode
 from .OdbPart import OdbPart
 from .OdbRigidBody import OdbRigidBody
 from .OdbSet import OdbSet
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, INPUT, ON, SymbolicConstant
 
 
@@ -19,7 +21,7 @@ class OdbAssembly(OdbAssemblyBase):
     def DatumCsysByThreePoints(
         self,
         name: str,
-        coordSysType: SymbolicConstant,
+        coordSysType: Literal[C.CYLINDRICAL, C.CARTESIAN, C.SPHERICAL],
         origin: tuple,
         point1: tuple,
         point2: tuple,
@@ -59,7 +61,7 @@ class OdbAssembly(OdbAssemblyBase):
     def DatumCsysByThreeNodes(
         self,
         name: str,
-        coordSysType: SymbolicConstant,
+        coordSysType: Literal[C.CYLINDRICAL, C.CARTESIAN, C.SPHERICAL],
         origin: OdbMeshNode,
         point1: OdbMeshNode,
         point2: OdbMeshNode,
@@ -102,7 +104,7 @@ class OdbAssembly(OdbAssemblyBase):
     def DatumCsysByThreeCircNodes(
         self,
         name: str,
-        coordSysType: SymbolicConstant,
+        coordSysType: Literal[C.CYLINDRICAL, C.CARTESIAN, C.SPHERICAL],
         node1Arc: OdbMeshNode,
         node2Arc: OdbMeshNode,
         node3Arc: OdbMeshNode,
@@ -143,7 +145,7 @@ class OdbAssembly(OdbAssemblyBase):
 
     @abaqus_method_doc
     def DatumCsysBy6dofNode(
-        self, name: str, coordSysType: SymbolicConstant, origin: OdbMeshNode
+        self, name: str, coordSysType: Literal[C.CYLINDRICAL, C.CARTESIAN, C.SPHERICAL], origin: OdbMeshNode
     ):
         """A datum coordinate system created with this method results in a system that follows the
         position of a node. The node location defines the origin of the datum coordinate system.
@@ -241,7 +243,7 @@ class OdbAssembly(OdbAssemblyBase):
     def RigidBody(
         self,
         referenceNode: OdbSet,
-        position: SymbolicConstant = INPUT,
+        position: Literal[C.INPUT, C.CENTER_OF_MASS] = INPUT,
         isothermal: Boolean = ON,
         elements: OdbSet = OdbSet("set", ()),
         tieNodes: OdbSet = OdbSet("set", ()),

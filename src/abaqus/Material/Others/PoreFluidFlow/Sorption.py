@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 from ....UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant, TABULAR
 
 
@@ -39,9 +41,9 @@ class Sorption:
     def __init__(
         self,
         absorptionTable: tuple,
-        lawAbsorption: SymbolicConstant = TABULAR,
+        lawAbsorption: Literal[C.LOG, C.TABULAR] = TABULAR,
         exsorption: Boolean = OFF,
-        lawExsorption: SymbolicConstant = TABULAR,
+        lawExsorption: Literal[C.LOG, C.TABULAR] = TABULAR,
         scanning: float = 0,
         exsorptionTable: tuple = (),
     ):

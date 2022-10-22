@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .PredefinedField import PredefinedField
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import KINEMATIC_HARDENING, MAGNITUDE, SymbolicConstant
 
 
@@ -69,9 +71,9 @@ class KinematicHardening(PredefinedField):
         equivPlasticStrain: tuple = (),
         backStress: tuple = (),
         sectPtNum: tuple = (),
-        definition: SymbolicConstant = KINEMATIC_HARDENING,
+        definition: Literal[C.CRUSHABLE_FOAM, C.KINEMATIC_HARDENING, C.REBAR, C.USER_DEFINED, C.SECTION_PTS] = KINEMATIC_HARDENING,
         rebarLayerNames: tuple = (),
-        distributionType: SymbolicConstant = MAGNITUDE,
+        distributionType: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
     ):
         """This method creates a KinematicHardening object.
 
@@ -121,9 +123,9 @@ class KinematicHardening(PredefinedField):
         equivPlasticStrain: tuple = (),
         backStress: tuple = (),
         sectPtNum: tuple = (),
-        definition: SymbolicConstant = KINEMATIC_HARDENING,
+        definition: Literal[C.CRUSHABLE_FOAM, C.KINEMATIC_HARDENING, C.REBAR, C.USER_DEFINED, C.SECTION_PTS] = KINEMATIC_HARDENING,
         rebarLayerNames: tuple = (),
-        distributionType: SymbolicConstant = MAGNITUDE,
+        distributionType: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
     ):
         """This method modifies the KinematicHardening object.
 

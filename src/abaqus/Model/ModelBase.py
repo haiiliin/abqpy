@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -37,6 +38,7 @@ from ..StepOutput.TimePoint import TimePoint
 from ..TableCollection.EventSeriesData import EventSeriesData
 from ..TableCollection.EventSeriesType import EventSeriesType
 from ..TableCollection.TableCollection import TableCollection
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (B31, Boolean, C3D10, C3D8I, NOT_SET, OFF, ON,
                                               PRESERVE_SECTION, S4, STANDARD_EXPLICIT,
                                               SymbolicConstant)
@@ -242,8 +244,8 @@ class ModelBase:
         description: str = "",
         stefanBoltzmann: Optional[float] = None,
         absoluteZero: Optional[float] = None,
-        waveFormulation: SymbolicConstant = NOT_SET,
-        modelType: SymbolicConstant = STANDARD_EXPLICIT,
+        waveFormulation: Literal[C.SCATTERED, C.NOT_SET, C.TOTAL] = NOT_SET,
+        modelType: Literal[C.STANDARD_EXPLICIT, C.ELECTROMAGNETIC] = STANDARD_EXPLICIT,
         universalGas: Optional[float] = None,
         copyConstraints: Boolean = ON,
         copyConnectors: Boolean = ON,
@@ -350,7 +352,7 @@ class ModelBase:
         self,
         modelName: str,
         inputFileName: str,
-        sectionConsolidation: SymbolicConstant = PRESERVE_SECTION,
+        sectionConsolidation: Literal[C.PRESERVE_SECTION, C.GROUP_BY_MATERIAL, C.NONE] = PRESERVE_SECTION,
         preIntegratedShell: Boolean = OFF,
         weightMassScaling: Boolean = ON,
         loadCases: Boolean = ON,
@@ -439,11 +441,11 @@ class ModelBase:
         noPartsInputFile: Boolean = OFF,
         absoluteZero: Optional[float] = None,
         stefanBoltzmann: Optional[float] = None,
-        waveFormulation: SymbolicConstant = NOT_SET,
+        waveFormulation: Literal[C.SCATTERED, C.NOT_SET, C.TOTAL] = NOT_SET,
         universalGas: Optional[float] = None,
         restartJob: str = "",
         restartStep: str = "",
-        restartIncrement: Optional[SymbolicConstant] = None,
+        restartIncrement: Optional[Literal[C.STEP_END]] = None,
         endRestartStep: Boolean = OFF,
         globalJob: str = "",
         shellToSolid: Boolean = OFF,

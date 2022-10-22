@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -6,6 +7,7 @@ from ..Datum.DatumAxis import DatumAxis
 from ..Datum.DatumCsys import DatumCsys
 from ..Region.Set import Set
 from ..Region.Surface import Surface
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AXIS_1, AXIS_3, Boolean, GLOBAL, NORMAL_VECTOR, OFF,
                                               PRIMARY_VECTOR, ROTATION_NONE, STACK_3,
                                               SymbolicConstant, VECTOR)
@@ -126,19 +128,19 @@ class MaterialOrientation:
         self,
         region: Set,
         localCsys: Optional[DatumCsys] = None, 
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
-        stackDirection: SymbolicConstant = STACK_3,
+        stackDirection: Literal[C.STACK_2, C.STACK_ORIENTATION, C.STACK_3, C.STACK_1] = STACK_3,
         fieldName: str = "",
-        orientationType: SymbolicConstant = GLOBAL,
-        normalAxisDirection: SymbolicConstant = AXIS_3,
-        normalAxisDefinition: SymbolicConstant = NORMAL_VECTOR,
+        orientationType: Literal[C.FIELD, C.GLOBAL, C.USER, C.SYSTEM, C.DISCRETE] = GLOBAL,
+        normalAxisDirection: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_3,
+        normalAxisDefinition: Literal[C.SURFACE, C.NORMAL_VECTOR, C.NORMAL_DATUM] = NORMAL_VECTOR,
         normalAxisRegion: Optional[Surface] = None,
         normalAxisDatum: Optional[DatumAxis] = None, 
         flipNormalDirection: Boolean = OFF,
         normalAxisVector: tuple = (),
-        primaryAxisDirection: SymbolicConstant = AXIS_1,
-        primaryAxisDefinition: SymbolicConstant = PRIMARY_VECTOR,
+        primaryAxisDirection: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
+        primaryAxisDefinition: Literal[C.SURFACE, C.PRIMARY_VECTOR, C.PRIMARY_DATUM] = PRIMARY_VECTOR,
         primaryAxisRegion: Optional[Set] = None,
         primaryAxisDatum: Optional[DatumAxis] = None, 
         flipPrimaryDirection: Boolean = OFF,
@@ -230,21 +232,21 @@ class MaterialOrientation:
     def ReferenceOrientation(
         self,
         localCsys: Optional[DatumCsys] = None, 
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
-        stackDirection: SymbolicConstant = STACK_3,
+        stackDirection: Literal[C.STACK_2, C.STACK_ORIENTATION, C.STACK_3, C.STACK_1] = STACK_3,
         fieldName: str = "",
-        orientationType: SymbolicConstant = GLOBAL,
+        orientationType: Literal[C.FIELD, C.GLOBAL, C.USER, C.SYSTEM, C.DISCRETE] = GLOBAL,
         additionalRotationField: str = "",
-        additionalRotationType: SymbolicConstant = ROTATION_NONE,
-        normalAxisDirection: SymbolicConstant = AXIS_3,
-        normalAxisDefinition: SymbolicConstant = VECTOR,
+        additionalRotationType: Literal[C.ROTATION_NONE, C.ROTATION_FIELD, C.ROTATION_ANGLE] = ROTATION_NONE,
+        normalAxisDirection: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_3,
+        normalAxisDefinition: Literal[C.SURFACE, C.DATUM, C.VECTOR] = VECTOR,
         normalAxisRegion: Optional[Surface] = None,
         normalAxisDatum: Optional[DatumAxis] = None, 
         flipNormalDirection: Boolean = OFF,
         normalAxisVector: tuple = (),
-        primaryAxisDirection: SymbolicConstant = AXIS_1,
-        primaryAxisDefinition: SymbolicConstant = VECTOR,
+        primaryAxisDirection: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
+        primaryAxisDefinition: Literal[C.DATUM, C.VECTOR, C.EDGE] = VECTOR,
         primaryAxisRegion: Optional[Set] = None,
         primaryAxisDatum: Optional[DatumAxis] = None, 
         flipPrimaryDirection: Boolean = OFF,

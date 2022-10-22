@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, MAXIMUM, ON, SymbolicConstant
 
 
@@ -75,7 +77,7 @@ class TurnControl(GeometricRestriction):
         region: Region,
         csys: Optional[int] = None,
         mainPoint: Optional[str] = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -138,7 +140,7 @@ class TurnControl(GeometricRestriction):
         self,
         csys: Optional[int] = None,
         mainPoint: Optional[str] = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,

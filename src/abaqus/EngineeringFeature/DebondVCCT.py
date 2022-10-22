@@ -1,6 +1,8 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Crack import Crack
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, STEP, SymbolicConstant
 
 
@@ -51,7 +53,7 @@ class DebondVCCT(Crack):
         name: str,
         initiationStep: str,
         surfToSurfInteraction: str,
-        debondingForceAmplitude: SymbolicConstant = STEP,
+        debondingForceAmplitude: Literal[C.STEP, C.RAMP] = STEP,
         printToDATFrequency: int = 1,
     ):
         """This method creates a DebondVCCT object. Although the constructor is available both for
@@ -91,7 +93,7 @@ class DebondVCCT(Crack):
     @abaqus_method_doc
     def setValues(
         self,
-        debondingForceAmplitude: SymbolicConstant = STEP,
+        debondingForceAmplitude: Literal[C.STEP, C.RAMP] = STEP,
         printToDATFrequency: int = 1,
     ):
         """This method modifies the DebondVCCT object.

@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Interaction import Interaction
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import ALLOW_SUBCYCLING, DEFAULT, SymbolicConstant
 
 
@@ -50,9 +52,9 @@ class StdXplCosimulation(Interaction):
         name: str,
         createStepName: str,
         region: Region,
-        incrementation: SymbolicConstant = ALLOW_SUBCYCLING,
+        incrementation: Literal[C.LOCKSTEP, C.ALLOW_SUBCYCLING] = ALLOW_SUBCYCLING,
         stepSize: float = 0,
-        stepSizeDefinition: SymbolicConstant = DEFAULT,
+        stepSizeDefinition: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,
     ):
         """This method creates a StdXplCosimulation object.
 
@@ -94,9 +96,9 @@ class StdXplCosimulation(Interaction):
     @abaqus_method_doc
     def setValues(
         self,
-        incrementation: SymbolicConstant = ALLOW_SUBCYCLING,
+        incrementation: Literal[C.LOCKSTEP, C.ALLOW_SUBCYCLING] = ALLOW_SUBCYCLING,
         stepSize: float = 0,
-        stepSizeDefinition: SymbolicConstant = DEFAULT,
+        stepSizeDefinition: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,
     ):
         """This method modifies the StdXplCosimulation object.
 

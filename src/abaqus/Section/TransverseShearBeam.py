@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
@@ -41,10 +43,10 @@ class TransverseShearBeam:
     @abaqus_method_doc
     def __init__(
         self,
-        scfDefinition: SymbolicConstant,
+        scfDefinition: Literal[C.VALUE, C.ANALYSIS_DEFAULT, C.COMPUTED],
         k23: Optional[float] = None,
         k13: Optional[float] = None,
-        slendernessCompensation: Union[SymbolicConstant, float] = 0,
+        slendernessCompensation: Union[Literal[C.COMPUTED], float] = 0,
     ):
         """This method creates a TransverseShearBeam object.
 

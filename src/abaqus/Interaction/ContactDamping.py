@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import DAMPING_COEFFICIENT, DEFAULT, STEP, SymbolicConstant
 
 
@@ -57,9 +59,9 @@ class ContactDamping:
     @abaqus_method_doc
     def __init__(
         self,
-        definition: SymbolicConstant = DAMPING_COEFFICIENT,
-        tangentFraction: Union[SymbolicConstant, float] = DEFAULT,
-        clearanceDependence: SymbolicConstant = STEP,
+        definition: Literal[C.DAMPING_COEFFICIENT, C.CRITICAL_DAMPING_FRACTION] = DAMPING_COEFFICIENT,
+        tangentFraction: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        clearanceDependence: Literal[C.STEP, C.CRITICAL_DAMPING_FRACTION, C.BILINEAR, C.LINEAR] = STEP,
         table: tuple = (),
     ):
         """This method creates a ContactDamping object.

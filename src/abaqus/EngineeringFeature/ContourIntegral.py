@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Crack import Crack
 from ..Region.RegionArray import RegionArray
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, NONE, OFF, SymbolicConstant
 
 
@@ -90,7 +92,7 @@ class ContourIntegral(Crack):
         name: str,
         crackFront: RegionArray,
         crackTip: RegionArray,
-        extensionDirectionMethod: SymbolicConstant,
+        extensionDirectionMethod: Literal[C.Q_VECTORS, C.CRACK_NORMAL],
         symmetric: Boolean = OFF,
         listOfRegions: Boolean = OFF,
         crackFrontName: str = "",
@@ -98,7 +100,7 @@ class ContourIntegral(Crack):
         crackNormal: tuple = (),
         qVectors: tuple = (),
         midNodePosition: float = 0,
-        collapsedElementAtTip: SymbolicConstant = NONE,
+        collapsedElementAtTip: Literal[C.DUPLICATE_NODES, C.SINGLE_NODE, C.NONE] = NONE,
     ):
         """This method creates a ContourIntegral object. Although the constructor is available both
         for parts and for the assembly, ContourIntegral objects are currently supported only
@@ -175,7 +177,7 @@ class ContourIntegral(Crack):
         crackNormal: tuple = (),
         qVectors: tuple = (),
         midNodePosition: float = 0,
-        collapsedElementAtTip: SymbolicConstant = NONE,
+        collapsedElementAtTip: Literal[C.DUPLICATE_NODES, C.SINGLE_NODE, C.NONE] = NONE,
     ):
         """This method modifies the ContourIntegral object.
 

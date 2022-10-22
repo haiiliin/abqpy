@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
@@ -20,7 +22,7 @@ class MonitorMgr:
     def addMessageCallback(
         self,
         jobName: str,
-        messageType: SymbolicConstant,
+        messageType: Literal[C.HEALER_TYPE, C.MONITOR_DATA, C.JOB_COMPLETED, C.JOB_SUBMITTED, C.SIMULATION_SUBMITTED, C.STEP, C.WARNING, C.JOB_ABORTED, C.SIMULATION_INTERRUPTED, C.COMPLETED, C.ITERATION, C.STATUS, C.SIMULATION_COMPLETED, C.ODB_FRAME, C.ABORTED, C.JOB_INTERRUPTED, C.ANY_MESSAGE_TYPE, C.END_STEP, C.HEALER_JOB, C.SIMULATION_ABORTED, C.STARTED, C.ERROR, C.INTERRUPTED, C.ANY_JOB, C.ODB_FILE, C.HEADING],
         callback: SymbolicConstant,
         userData: str = "",
     ):
@@ -76,7 +78,7 @@ class MonitorMgr:
 
     @abaqus_method_doc
     def removeMessageCallback(
-        self, jobName: str, messageType: SymbolicConstant, callback: str, userData: str
+        self, jobName: str, messageType: Literal[C.HEALER_TYPE, C.MONITOR_DATA, C.JOB_COMPLETED, C.JOB_SUBMITTED, C.SIMULATION_SUBMITTED, C.STEP, C.WARNING, C.JOB_ABORTED, C.SIMULATION_INTERRUPTED, C.COMPLETED, C.ITERATION, C.STATUS, C.SIMULATION_COMPLETED, C.ODB_FRAME, C.ABORTED, C.JOB_INTERRUPTED, C.ANY_MESSAGE_TYPE, C.END_STEP, C.HEALER_JOB, C.SIMULATION_ABORTED, C.STARTED, C.ERROR, C.INTERRUPTED, C.ANY_JOB, C.ODB_FILE, C.HEADING], callback: str, userData: str
     ):
         """This method removes a callback function. You specify the callback function to remove
         using the same arguments you used to add the callback.

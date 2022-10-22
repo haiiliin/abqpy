@@ -1,8 +1,10 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .ContactArea import ContactArea
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 from ...UtilityAndView.abaqusConstants import (Boolean, ELASTIC_PLASTIC, OFF, RELATIVE_SLOPE_DROP,
                                                STRESS, SymbolicConstant)
 
@@ -90,12 +92,12 @@ class GasketThicknessBehavior:
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         tensileStiffnessFactor: Optional[float] = None,
-        type: SymbolicConstant = ELASTIC_PLASTIC,
+        type: Literal[C.DAMAGE, C.ELASTIC_PLASTIC] = ELASTIC_PLASTIC,
         unloadingDependencies: int = 0,
         unloadingTemperatureDependency: Boolean = OFF,
-        variableUnits: SymbolicConstant = STRESS,
+        variableUnits: Literal[C.STRESS, C.FORCE] = STRESS,
         yieldOnset: float = 0,
-        yieldOnsetMethod: SymbolicConstant = RELATIVE_SLOPE_DROP,
+        yieldOnsetMethod: Literal[C.RELATIVE_SLOPE_DROP, C.CLOSURE_VALUE] = RELATIVE_SLOPE_DROP,
         unloadingTable: tuple = (),
     ):
         """This method creates a GasketThicknessBehavior object.

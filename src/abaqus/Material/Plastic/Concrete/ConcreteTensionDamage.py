@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 from ....UtilityAndView.abaqusConstants import Boolean, OFF, STRAIN, SymbolicConstant
 
 
@@ -45,7 +47,7 @@ class ConcreteTensionDamage:
         self,
         table: tuple,
         compressionRecovery: float = 1,
-        type: SymbolicConstant = STRAIN,
+        type: Literal[C.STRAIN, C.DISPLACEMENT] = STRAIN,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

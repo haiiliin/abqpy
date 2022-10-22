@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 from .ConnectorOptions import ConnectorOptions
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, LINEAR, OFF, SymbolicConstant, UNCOUPLED
 
 
@@ -116,8 +118,8 @@ class ConnectorElasticity(ConnectorBehaviorOption):
     @abaqus_method_doc
     def __init__(
         self,
-        behavior: SymbolicConstant = LINEAR,
-        coupling: SymbolicConstant = UNCOUPLED,
+        behavior: Literal[C.RIGID, C.NONLINEAR, C.LINEAR] = LINEAR,
+        coupling: Literal[C.RIGID, C.UNCOUPLED, C.NONLINEAR, C.COUPLED_POSITION, C.COUPLED_MOTION, C.COUPLED, C.LINEAR] = UNCOUPLED,
         dependencies: int = 0,
         temperatureDependency: Boolean = OFF,
         frequencyDependency: Boolean = OFF,

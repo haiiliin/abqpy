@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, COEFFICIENTS, FRACTION, FRICTIONLESS,
                                               ISOTROPIC, OFF, SymbolicConstant)
 
@@ -106,16 +108,16 @@ class ContactTangentialBehavior:
     @abaqus_method_doc
     def __init__(
         self,
-        formulation: SymbolicConstant = FRICTIONLESS,
-        directionality: SymbolicConstant = ISOTROPIC,
+        formulation: Literal[C.FRICTIONLESS, C.PENALTY, C.ROUGH, C.EXPONENTIAL_DECAY, C.USER_DEFINED, C.LAGRANGE] = FRICTIONLESS,
+        directionality: Literal[C.ANISOTROPIC, C.ISOTROPIC] = ISOTROPIC,
         slipRateDependency: Boolean = OFF,
         pressureDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        exponentialDecayDefinition: SymbolicConstant = COEFFICIENTS,
+        exponentialDecayDefinition: Literal[C.TEST_DATA, C.COEFFICIENTS] = COEFFICIENTS,
         table: tuple = (),
         shearStressLimit: Optional[float] = None,
-        maximumElasticSlip: SymbolicConstant = FRACTION,
+        maximumElasticSlip: Literal[C.FRACTION, C.ABSOLUTE_DISTANCE] = FRACTION,
         fraction: float = 0,
         absoluteDistance: float = 0,
         elasticSlipStiffness: Optional[float] = None,

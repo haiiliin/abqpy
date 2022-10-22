@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .SaturationDependence import SaturationDependence
 from .VelocityDependence import VelocityDependence
+from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 from .....UtilityAndView.abaqusConstants import Boolean, ISOTROPIC, OFF, SymbolicConstant
 
 
@@ -61,7 +63,7 @@ class Permeability:
         specificWeight: float,
         inertialDragCoefficient: float,
         table: tuple,
-        type: SymbolicConstant = ISOTROPIC,
+        type: Literal[C.ANISOTROPIC, C.ISOTROPIC, C.ORTHOTROPIC] = ISOTROPIC,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

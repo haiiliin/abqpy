@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
@@ -43,7 +45,7 @@ class ParameterColumn:
     @abaqus_method_doc
     def __init__(
         self,
-        type: SymbolicConstant,
+        type: Literal[C.INTEGER, C.FLOAT, C.STRING],
         unit: str = "",
         description: str = "",
         default: str = "",

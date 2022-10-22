@@ -1,8 +1,10 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .ContactProperty import ContactProperty
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import ACOUSTIC, Boolean, ON, PLANAR, SymbolicConstant
 
 
@@ -178,8 +180,8 @@ class IncidentWaveProperty(ContactProperty):
     def __init__(
         self,
         name: str,
-        definition: SymbolicConstant = PLANAR,
-        propagationModel: SymbolicConstant = ACOUSTIC,
+        definition: Literal[C.PLANAR, C.SPHERICAL, C.DIFFUSE, C.SURFACE_BLAST, C.AIR_BLAST] = PLANAR,
+        propagationModel: Literal[C.ACOUSTIC, C.SPHERICAL, C.GENERALIZED_DECAY, C.UNDEX_CHARGE] = ACOUSTIC,
         soundSpeed: Optional[float] = None,
         fluidDensity: Optional[float] = None,
         specificHeatRatio: Optional[float] = None,
@@ -347,8 +349,8 @@ class IncidentWaveProperty(ContactProperty):
     @abaqus_method_doc
     def setValues(
         self,
-        definition: SymbolicConstant = PLANAR,
-        propagationModel: SymbolicConstant = ACOUSTIC,
+        definition: Literal[C.PLANAR, C.SPHERICAL, C.DIFFUSE, C.SURFACE_BLAST, C.AIR_BLAST] = PLANAR,
+        propagationModel: Literal[C.ACOUSTIC, C.SPHERICAL, C.GENERALIZED_DECAY, C.UNDEX_CHARGE] = ACOUSTIC,
         soundSpeed: Optional[float] = None,
         fluidDensity: Optional[float] = None,
         specificHeatRatio: Optional[float] = None,

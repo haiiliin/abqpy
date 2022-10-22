@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Optional, Sequence, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -13,6 +14,7 @@ from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.Edge import Edge
 from ..BasicGeometry.Face import Face
 from ..BasicGeometry.IgnoredVertex import IgnoredVertex
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, FREE, OFF, ON, SymbolicConstant
 
 
@@ -432,7 +434,7 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def getEdgeSeeds(
-        self, edge: Edge, attribute: Union[SymbolicConstant, float]
+        self, edge: Edge, attribute: Union[Literal[C.SMALLEST_ELEM_LOCATION, C.BIAS_RATIO, C.MIN_SIZE_FACTOR, C.DEVIATION_FACTOR, C.CONSTRAINT, C.NUMBER, C.EDGE_SEEDING_METHOD, C.VERTEX_ADJ_TO_SMALLEST_ELEM, C.BIAS_MAX_SIZE, C.BIAS_MIN_SIZE, C.AVERAGE_SIZE, C.BIAS_METHOD], float]
     ):
         """This method returns an edge seed parameter for a specified edge of an assembly.
 
@@ -546,7 +548,7 @@ class MeshAssembly(AssemblyBase):
         ...
 
     @abaqus_method_doc
-    def getMeshControl(self, region: str, attribute: SymbolicConstant):
+    def getMeshControl(self, region: str, attribute: Literal[C.HEX_DOMINATED, C.ELEM_SHAPE, C.FREE, C.QUAD, C.TRI, C.LINE, C.QUAD_DOMINATED, C.HEX, C.SWEEP, C.UNMESHABLE, C.NON_DEFAULT, C.TET, C.ALGORITHM, C.DEFAULT, C.NONE, C.MEDIAL_AXIS, C.ADVANCING_FRONT, C.WEDGE, C.MIN_TRANSITION, C.STRUCTURED, C.TECHNIQUE]):
         """This method returns a mesh control parameter for the specified region of the assembly.
 
         Parameters
@@ -605,7 +607,7 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def getPartSeeds(
-        self, region: PartInstance, attribute: Union[SymbolicConstant, float]
+        self, region: PartInstance, attribute: Union[Literal[C.DEFAULT_SIZE, C.MIN_SIZE_FACTOR, C.DEVIATION_FACTOR, C.SIZE], float]
     ):
         """This method returns a part seed parameter for the specified instance.
 
@@ -699,7 +701,7 @@ class MeshAssembly(AssemblyBase):
     @abaqus_method_doc
     def seedEdgeByBias(
         self,
-        biasMethod: SymbolicConstant,
+        biasMethod: Literal[C.DOUBLE, C.SINGLE],
         end1Edges: Sequence[Edge],
         end2Edges: Sequence[Edge],
         centerEdges: Sequence[Edge],
@@ -708,7 +710,7 @@ class MeshAssembly(AssemblyBase):
         number: int,
         minSize: float,
         maxSize: float,
-        constraint: SymbolicConstant = FREE,
+        constraint: Literal[C.FINER, C.FREE, C.FIXED] = FREE,
     ):
         """This method seeds the given edges nonuniformly using the specified number of elements
         and bias ratio or the specified minimum and maximum element sizes.
@@ -764,7 +766,7 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def seedEdgeByNumber(
-        self, edges: Sequence[Edge], number: int, constraint: SymbolicConstant = FREE
+        self, edges: Sequence[Edge], number: int, constraint: Literal[C.FREE] = FREE
     ):
         """This method seeds the given edges uniformly based on the number of elements along the
         edges.
@@ -793,7 +795,7 @@ class MeshAssembly(AssemblyBase):
         size: float,
         deviationFactor: Optional[float] = None,
         minSizeFactor: Optional[float] = None,
-        constraint: SymbolicConstant = FREE,
+        constraint: Literal[C.FREE] = FREE,
     ):
         """This method seeds the given edges either uniformly or following edge curvature
         distribution, based on the desired element size.
@@ -827,7 +829,7 @@ class MeshAssembly(AssemblyBase):
         size: float,
         deviationFactor: Optional[float] = None,
         minSizeFactor: Optional[float] = None,
-        constraint: SymbolicConstant = FREE,
+        constraint: Literal[C.FREE] = FREE,
     ):
         """This method assigns global edge seeds to the given part instances.
 
@@ -935,11 +937,11 @@ class MeshAssembly(AssemblyBase):
     def setMeshControls(
         self,
         regions: tuple,
-        elemShape: Optional[SymbolicConstant] = None,
-        technique: Optional[SymbolicConstant] = None,
-        algorithm: Optional[SymbolicConstant] = None,
+        elemShape: Optional[Literal[C.HEX_DOMINATED, C.WEDGE, C.TET, C.QUAD_DOMINATED, C.HEX, C.QUAD, C.TRI]] = None,
+        technique: Optional[Literal[C.BOTTOM_UP, C.STRUCTURED, C.FREE, C.SWEEP, C.SYSTEM_ASSIGN]] = None,
+        algorithm: Optional[Literal[C.NON_DEFAULT, C.MEDIAL_AXIS, C.ADVANCING_FRONT]] = None,
         minTransition: Boolean = ON,
-        sizeGrowth: Optional[SymbolicConstant] = None,
+        sizeGrowth: Optional[Literal[C.MODERATE, C.MAXIMUM]] = None,
         allowMapped: Boolean = OFF,
     ):
         """This method sets the mesh control parameters for the specified regions.
@@ -1013,7 +1015,7 @@ class MeshAssembly(AssemblyBase):
         ...
 
     @abaqus_method_doc
-    def setSweepPath(self, region: str, edge: Edge, sense: SymbolicConstant):
+    def setSweepPath(self, region: str, edge: Edge, sense: Literal[C.FORWARD]):
         """This method sets the sweep path for a sweepable region or the revolve path for a
         revolvable region.
 
@@ -1034,9 +1036,9 @@ class MeshAssembly(AssemblyBase):
     @abaqus_method_doc
     def verifyMeshQuality(
         self,
-        criterion: SymbolicConstant,
+        criterion: Literal[C.ANALYSIS_CHECKS, C.ANGULAR_DEVIATION, C.GEOM_DEVIATION_FACTOR, C.MAX_FREQUENCY, C.LONGEST_EDGE, C.LARGE_ANGLE, C.SHORTEST_EDGE, C.STABLE_TIME_INCREMENT, C.SHAPE_FACTOR, C.ASPECT_RATIO, C.SMALL_ANGLE],
         threshold: Optional[float] = None,
-        elemShape: Optional[SymbolicConstant] = None,
+        elemShape: Optional[Literal[C.LINE, C.WEDGE, C.TET, C.HEX, C.QUAD, C.TRI]] = None,
         regions: tuple = (),
     ):
         """This method tests the quality of part instance meshes and returns poor-quality elements.

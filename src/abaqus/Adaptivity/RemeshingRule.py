@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, DEFAULT, DEFAULT_LIMIT, LAST_INCREMENT,
                                               MODEL, OFF, ON, SymbolicConstant)
 
@@ -112,19 +114,19 @@ class RemeshingRule:
         stepName: str,
         variables: tuple,
         description: str = "",
-        region: SymbolicConstant = MODEL,
-        sizingMethod: SymbolicConstant = DEFAULT,
+        region: Literal[C.MODEL] = MODEL,
+        sizingMethod: Literal[C.MINIMUM_MAXIMUM, C.DEFAULT, C.UNIFORM_ERROR] = DEFAULT,
         errorTarget: float = 0,
         maxSolutionErrorTarget: float = 0,
         minSolutionErrorTarget: float = 0,
         meshBias: int = 0,
         minElementSize: float = 0,
         maxElementSize: float = 0,
-        outputFrequency: SymbolicConstant = LAST_INCREMENT,
+        outputFrequency: Literal[C.LAST_INCREMENT, C.ALL_INCREMENTS] = LAST_INCREMENT,
         specifyMinSize: Boolean = OFF,
         specifyMaxSize: Boolean = ON,
-        coarseningFactor: SymbolicConstant = DEFAULT_LIMIT,
-        refinementFactor: SymbolicConstant = DEFAULT_LIMIT,
+        coarseningFactor: Literal[C.NOT_ALLOWED, C.DEFAULT_LIMIT] = DEFAULT_LIMIT,
+        refinementFactor: Literal[C.NOT_ALLOWED, C.DEFAULT_LIMIT] = DEFAULT_LIMIT,
         elementCountLimit: Optional[int] = None,
     ):
         """This method creates a RemeshingRule object.
@@ -229,19 +231,19 @@ class RemeshingRule:
     def setValues(
         self,
         description: str = "",
-        region: SymbolicConstant = MODEL,
-        sizingMethod: SymbolicConstant = DEFAULT,
+        region: Literal[C.MODEL] = MODEL,
+        sizingMethod: Literal[C.MINIMUM_MAXIMUM, C.DEFAULT, C.UNIFORM_ERROR] = DEFAULT,
         errorTarget: float = 0,
         maxSolutionErrorTarget: float = 0,
         minSolutionErrorTarget: float = 0,
         meshBias: int = 0,
         minElementSize: float = 0,
         maxElementSize: float = 0,
-        outputFrequency: SymbolicConstant = LAST_INCREMENT,
+        outputFrequency: Literal[C.LAST_INCREMENT, C.ALL_INCREMENTS] = LAST_INCREMENT,
         specifyMinSize: Boolean = OFF,
         specifyMaxSize: Boolean = ON,
-        coarseningFactor: SymbolicConstant = DEFAULT_LIMIT,
-        refinementFactor: SymbolicConstant = DEFAULT_LIMIT,
+        coarseningFactor: Literal[C.NOT_ALLOWED, C.DEFAULT_LIMIT] = DEFAULT_LIMIT,
+        refinementFactor: Literal[C.NOT_ALLOWED, C.DEFAULT_LIMIT] = DEFAULT_LIMIT,
         elementCountLimit: Optional[int] = None,
     ):
         """This method modifies the RemeshingRule object.

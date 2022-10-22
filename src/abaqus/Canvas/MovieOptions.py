@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (BEST_FIT, Boolean, CENTER, FIT_TO_VIEWPORT, OFF,
                                               SymbolicConstant)
 from .._OptionsBase import _CopyOptionsBase
@@ -98,9 +100,9 @@ class MovieOptions(_CopyOptionsBase):
         self,
         movieName: str = "",
         showMovie: Boolean = OFF,
-        positionMethod: SymbolicConstant = FIT_TO_VIEWPORT,
-        fitMethod: SymbolicConstant = BEST_FIT,
-        alignment: SymbolicConstant = CENTER,
+        positionMethod: Literal[C.FIT_TO_VIEWPORT, C.MANUAL, C.AUTO_ALIGN] = FIT_TO_VIEWPORT,
+        fitMethod: Literal[C.FIT_TO_VIEWPORT, C.FIT_WIDTH, C.BEST_FIT, C.FIT_HEIGHT] = BEST_FIT,
+        alignment: Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.AUTO_ALIGN, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER] = CENTER,
         xScale: float = 1.0,
         yScale: float = 1.0,
         origin: Sequence[float] = (0.0, 0.0),

@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Load import Load
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNSET
 
 
@@ -146,9 +148,9 @@ class ConnectorForce(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        f1: Union[SymbolicConstant, float] = ...,
-        f2: Union[SymbolicConstant, float] = ...,
-        f3: Union[SymbolicConstant, float] = ...,
+        f1: Union[Literal[C.UNCHANGED], float] = ...,
+        f2: Union[Literal[C.UNCHANGED], float] = ...,
+        f3: Union[Literal[C.UNCHANGED], float] = ...,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing ConnectorForce object in the

@@ -1,8 +1,10 @@
+from typing_extensions import Literal
 from typing import Union, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Annotation import Annotation
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (BOTTOM_LEFT, Boolean, JUSTIFY_LEFT, OFF,
                                               SymbolicConstant, TRANSPARENT)
 from .._OptionsBase import _OptionsBase
@@ -109,15 +111,15 @@ class Text(Annotation, _OptionsBase):
         name: str,
         text: str = "",
         offset: Sequence[float] = (0.0, 0.0),
-        anchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        referencePoint: Union[SymbolicConstant, float] = BOTTOM_LEFT,
+        anchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
+        referencePoint: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
         rotationAngle: float = 0.0,
         color: str = "White",
         font: str = "-*-verdana-medium-r-normal--120-*",
-        backgroundStyle: SymbolicConstant = TRANSPARENT,
+        backgroundStyle: Literal[C.OTHER, C.MATCH, C.TRANSPARENT] = TRANSPARENT,
         backgroundColor: str = "",
         box: Boolean = OFF,
-        justification: SymbolicConstant = JUSTIFY_LEFT,
+        justification: Literal[C.JUSTIFY_CENTER, C.JUSTIFY_LEFT, C.JUSTIFY_RIGHT] = JUSTIFY_LEFT,
     ):
         """This method creates a Text object.
 
@@ -218,15 +220,15 @@ class Text(Annotation, _OptionsBase):
         self,
         text: str = "",
         offset: Sequence[float] = (0.0, 0.0),
-        anchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        referencePoint: Union[SymbolicConstant, float] = BOTTOM_LEFT,
+        anchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
+        referencePoint: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
         rotationAngle: float = 0.0,
         color: str = "White",
         font: str = "-*-verdana-medium-r-normal--120-*",
-        backgroundStyle: SymbolicConstant = TRANSPARENT,
+        backgroundStyle: Literal[C.OTHER, C.MATCH, C.TRANSPARENT] = TRANSPARENT,
         backgroundColor: str = "",
         box: Boolean = OFF,
-        justification: SymbolicConstant = JUSTIFY_LEFT,
+        justification: Literal[C.JUSTIFY_CENTER, C.JUSTIFY_LEFT, C.JUSTIFY_RIGHT] = JUSTIFY_LEFT,
     ):
         """This method modifies the Text object.
 

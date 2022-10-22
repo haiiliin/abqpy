@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Inertia import Inertia
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, MASS_PROPORTIONAL, OFF, SymbolicConstant
 
 
@@ -50,9 +52,9 @@ class NonstructuralMass(Inertia):
         self,
         name: str,
         region: Region,
-        units: SymbolicConstant,
+        units: Literal[C.TOTAL_MASS, C.MASS_PER_LENGTH, C.MASS_PER_AREA, C.MASS_PER_VOLUME],
         magnitude: float,
-        distribution: SymbolicConstant = MASS_PROPORTIONAL,
+        distribution: Literal[C.TOTAL_MASS, C.MASS_PROPORTIONAL, C.VOLUME_PROPORTIONAL] = MASS_PROPORTIONAL,
     ):
         """This method creates a NonstructuralMass object.
 
@@ -86,7 +88,7 @@ class NonstructuralMass(Inertia):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(self, distribution: SymbolicConstant = MASS_PROPORTIONAL):
+    def setValues(self, distribution: Literal[C.TOTAL_MASS, C.MASS_PROPORTIONAL, C.VOLUME_PROPORTIONAL] = MASS_PROPORTIONAL):
         """This method modifies the NonstructuralMass object.
 
         Parameters

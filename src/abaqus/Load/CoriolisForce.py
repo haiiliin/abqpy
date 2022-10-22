@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Load import Load
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM, UNSET
 
 
@@ -50,7 +52,7 @@ class CoriolisForce(Load):
         point1: tuple,
         point2: tuple,
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
     ):
         """This method creates a CoriolisForce object.
@@ -98,7 +100,7 @@ class CoriolisForce(Load):
     def setValues(
         self,
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
     ):
         """This method modifies the data for an existing CoriolisForce object in the step where it

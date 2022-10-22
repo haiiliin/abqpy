@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -21,6 +22,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, STEP, SymbolicConstant
 
 
@@ -182,7 +184,7 @@ class ModalDynamicsStep(AnalysisStep):
         directDamping: Optional[DirectDamping] = None, 
         compositeDamping: Optional[CompositeDamping] = None, 
         rayleighDamping: Optional[RayleighDamping] = None, 
-        amplitude: SymbolicConstant = STEP,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
         maintainAttributes: Boolean = False,
         directDampingByFrequency: Optional[DirectDampingByFrequency] = None, 
         rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None, 
@@ -248,7 +250,7 @@ class ModalDynamicsStep(AnalysisStep):
         directDamping: Optional[DirectDamping] = None, 
         compositeDamping: Optional[CompositeDamping] = None, 
         rayleighDamping: Optional[RayleighDamping] = None, 
-        amplitude: SymbolicConstant = STEP,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
         directDampingByFrequency: Optional[DirectDampingByFrequency] = None, 
         rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None, 
     ):

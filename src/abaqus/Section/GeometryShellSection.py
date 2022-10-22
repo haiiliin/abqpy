@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -6,6 +7,7 @@ from .LayerPropertiesArray import LayerPropertiesArray
 from .RebarLayers import RebarLayers
 from .ShellSection import ShellSection
 from .TransverseShearShell import TransverseShearShell
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT, DEFAULT, GRADIENT, NO_IDEALIZATION,
                                               OFF, SIMPSON, SymbolicConstant, UNIFORM)
 
@@ -106,12 +108,12 @@ class GeometryShellSection(ShellSection):
         self,
         nodalThicknessField: str = "",
         thicknessField: str = "",
-        thicknessType: SymbolicConstant = UNIFORM,
+        thicknessType: Literal[C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD] = UNIFORM,
         preIntegrate: Boolean = OFF,
-        poissonDefinition: SymbolicConstant = DEFAULT,
+        poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
-        integrationRule: SymbolicConstant = SIMPSON,
-        temperature: SymbolicConstant = GRADIENT,
+        integrationRule: Literal[C.GAUSS, C.SIMPSON] = SIMPSON,
+        temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
         nTemp: Optional[int] = None,
         thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
@@ -183,7 +185,7 @@ class GeometryShellSection(ShellSection):
 
     @abaqus_method_doc
     def RebarLayers(
-        self, rebarSpacing: SymbolicConstant, layerTable: LayerPropertiesArray
+        self, rebarSpacing: Literal[C.LIFT_EQUATION, C.CONSTANT, C.ANGULAR], layerTable: LayerPropertiesArray
     ) -> RebarLayers:
         """This method creates a RebarLayers object.
 

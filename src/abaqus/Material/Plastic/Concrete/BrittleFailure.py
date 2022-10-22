@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 from ....UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant, UNIDIRECTIONAL
 
 
@@ -43,7 +45,7 @@ class BrittleFailure:
         table: tuple,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        failureCriteria: SymbolicConstant = UNIDIRECTIONAL,
+        failureCriteria: Literal[C.BIDIRECTIONAL, C.UNIDIRECTIONAL, C.TRIDIRECTIONAL] = UNIDIRECTIONAL,
     ):
         """This method creates a BrittleFailure object.
 

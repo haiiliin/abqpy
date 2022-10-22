@@ -1,8 +1,10 @@
+from typing_extensions import Literal
 from typing import Union, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Annotation import Annotation
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (BOTTOM_LEFT, FILLED_ARROW, NONE, SOLID,
                                               SymbolicConstant, VERY_THIN)
 from .._OptionsBase import _OptionsBase
@@ -127,15 +129,15 @@ class Arrow(Annotation, _OptionsBase):
         name: str,
         startPoint: Sequence[float] = (0.0, 0.0),
         endPoint: Sequence[float] = (0.0, 0.0),
-        startAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        endAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        startHeadStyle: SymbolicConstant = NONE,
-        endHeadStyle: SymbolicConstant = FILLED_ARROW,
+        startAnchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
+        endAnchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
+        startHeadStyle: Literal[C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_SQUARE, C.FILLED_ARROW, C.HOLLOW_DIAMOND, C.ARROW, C.NONE, C.FILLED_CIRCLE] = NONE,
+        endHeadStyle: Literal[C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_SQUARE, C.FILLED_ARROW, C.HOLLOW_DIAMOND, C.ARROW, C.NONE, C.FILLED_CIRCLE] = FILLED_ARROW,
         startGap: float = 0.0,
         endGap: float = 0.0,
         color: str = "White",
-        lineStyle: SymbolicConstant = SOLID,
-        lineThickness: SymbolicConstant = VERY_THIN,
+        lineStyle: Literal[C.DASHED, C.SOLID, C.DOT_DASH, C.DOTTED] = SOLID,
+        lineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
     ):
         """This method creates an Arrow object.
 
@@ -290,15 +292,15 @@ class Arrow(Annotation, _OptionsBase):
         self,
         startPoint: Sequence[float] = (0.0, 0.0),
         endPoint: Sequence[float] = (0.0, 0.0),
-        startAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        endAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        startHeadStyle: SymbolicConstant = NONE,
-        endHeadStyle: SymbolicConstant = FILLED_ARROW,
+        startAnchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
+        endAnchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
+        startHeadStyle: Literal[C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_SQUARE, C.FILLED_ARROW, C.HOLLOW_DIAMOND, C.ARROW, C.NONE, C.FILLED_CIRCLE] = NONE,
+        endHeadStyle: Literal[C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_SQUARE, C.FILLED_ARROW, C.HOLLOW_DIAMOND, C.ARROW, C.NONE, C.FILLED_CIRCLE] = FILLED_ARROW,
         startGap: float = 0.0,
         endGap: float = 0.0,
         color: str = "White",
-        lineStyle: SymbolicConstant = SOLID,
-        lineThickness: SymbolicConstant = VERY_THIN,
+        lineStyle: Literal[C.DASHED, C.SOLID, C.DOT_DASH, C.DOTTED] = SOLID,
+        lineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
     ):
         """This method modifies the Arrow object.
 

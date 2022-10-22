@@ -1,6 +1,8 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Section import Section
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import DOF_MODE, SymbolicConstant
 
 
@@ -43,8 +45,8 @@ class MPCSection(Section):
     def __init__(
         self,
         name: str,
-        mpcType: SymbolicConstant,
-        userMode: SymbolicConstant = DOF_MODE,
+        mpcType: Literal[C.BEAM_MPC, C.ELBOW_MPC, C.TIE_MPC, C.MPC, C.USER_DEFINED, C.PIN_MPC, C.LINK_MPC],
+        userMode: Literal[C.USER_DEFINED, C.MPC, C.NODE_MODE, C.DOF_MODE] = DOF_MODE,
         userType: int = 0,
     ):
         """This method creates a MPCSection object.

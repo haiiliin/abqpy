@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, OFF, ON, SHADED, SOLID, SymbolicConstant,
                                               UNSYMMETRIC, VERY_THIN)
 from .._OptionsBase import _OptionsBase
@@ -159,19 +161,19 @@ class PlyStackPlotOptions(_OptionsBase):
     def setValues(
         self,
         *,
-        renderStyle: SymbolicConstant = SHADED,
+        renderStyle: Literal[C.WIRE_FRAME, C.FILLED, C.SHADED] = SHADED,
         showEdges: Boolean = OFF,
-        edgeStyle: SymbolicConstant = SOLID,
-        edgeThickness: SymbolicConstant = VERY_THIN,
-        plyDisplay: SymbolicConstant = UNSYMMETRIC,
+        edgeStyle: Literal[C.DASHED, C.SOLID, C.DOT_DASH, C.DOTTED] = SOLID,
+        edgeThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
+        plyDisplay: Literal[C.SYMMETRIC, C.UNSYMMETRIC] = UNSYMMETRIC,
         startLayer: int = 1,
         numLayers: int = 30,
         evenNumPlyColor: str = "",
         oddNumPlyColor: str = "",
         showFibers: Boolean = ON,
         fiberColor: str = "",
-        fiberStyle: SymbolicConstant = SOLID,
-        fiberThickness: SymbolicConstant = VERY_THIN,
+        fiberStyle: Literal[C.DASHED, C.SOLID, C.DOT_DASH, C.DOTTED] = SOLID,
+        fiberThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
         fiberSpacing: float = 0.1,
         showReferencePlane: Boolean = OFF,
         referenceSurfaceColor: str = "",
@@ -180,8 +182,8 @@ class PlyStackPlotOptions(_OptionsBase):
         translucencySort: Boolean = OFF,
         showReferenceOutline: Boolean = OFF,
         referenceOutlineColor: str = "",
-        referenceOutlineStyle: SymbolicConstant = SOLID,
-        referenceOutlineThickness: SymbolicConstant = VERY_THIN,
+        referenceOutlineStyle: Literal[C.DASHED, C.SOLID, C.DOT_DASH, C.DOTTED] = SOLID,
+        referenceOutlineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
         allLabelsFont: str = "",
         showMaterialNames: Boolean = OFF,
         materialNamesColor: str = "",

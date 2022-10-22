@@ -8,6 +8,7 @@ from typing_extensions import Literal
 from .HistoryOutput import HistoryOutput
 from .HistoryPoint import HistoryPoint
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
@@ -140,7 +141,7 @@ class HistoryRegion:
         name: str,
         description: str,
         type: Literal[C.SCALAR],
-        validInvariants: Optional[SymbolicConstant] = None,
+        validInvariants: Optional[Literal[C.MISES, C.MAX_PRINCIPAL, C.MIN_PRINCIPAL, C.MID_PRINCIPAL, C.MAGNITUDE, C.TRESCA, C.INV3, C.PRESS]] = None,
     ) -> HistoryOutput:
         """This method creates a HistoryOutput object.
 

@@ -5,6 +5,7 @@ from typing_extensions import Literal
 
 from ..Region.Region import Region
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALL, Boolean, DEFAULT,
                                               EVERY_TIME_INCREMENT, EXCLUDE, J_INTEGRAL,
                                               MODEL, MTS,
@@ -79,7 +80,7 @@ class HistoryOutputRequest:
         rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
         integratedOutputSection: str = "",
         springs: Optional[tuple] = None,
-        filter: Optional[SymbolicConstant] = None,
+        filter: Optional[Literal[C.ANTIALIASING]] = None,
         fasteners: str = "",
         assembledFastener: str = "",
         assembledFastenerSet: str = "",
@@ -249,7 +250,7 @@ class HistoryOutputRequest:
         rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
         integratedOutputSection: str = "",
         springs: Optional[tuple] = None,
-        filter: Optional[SymbolicConstant] = None,
+        filter: Optional[Literal[C.ANTIALIASING]] = None,
         fasteners: str = "",
         assembledFastener: str = "",
         assembledFastenerSet: str = "",

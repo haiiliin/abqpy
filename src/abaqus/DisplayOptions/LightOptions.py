@@ -1,6 +1,8 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .LightArray import LightArray
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import GOURAUD, INFINITE, SymbolicConstant
 
 
@@ -64,8 +66,8 @@ class LightOptions:
     @abaqus_method_doc
     def setValues(
         self,
-        shading: SymbolicConstant = GOURAUD,
-        viewpoint: SymbolicConstant = INFINITE,
+        shading: Literal[C.SHADED, C.PHONG, C.GOURAUD] = GOURAUD,
+        viewpoint: Literal[C.LOCAL, C.INFINITE] = INFINITE,
         ambientColor: str = "",
         materialShininess: float = 105,
     ):

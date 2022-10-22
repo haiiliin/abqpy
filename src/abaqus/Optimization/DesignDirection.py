@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, MAXIMUM, ON, SymbolicConstant, VECTOR
 
 
@@ -78,8 +80,8 @@ class DesignDirection(GeometricRestriction):
         region: Region,
         csys: Optional[int] = None,
         mainPoint: Optional[str] = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
-        movementRestriction: SymbolicConstant = VECTOR,
+        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+        movementRestriction: Literal[C.MAGNITUDE, C.DIRECTION, C.VECTOR] = VECTOR,
         presumeFeasibleRegionAtStart: Boolean = ON,
         u1: Boolean = ON,
         u2: Boolean = ON,
@@ -149,8 +151,8 @@ class DesignDirection(GeometricRestriction):
         self,
         csys: Optional[int] = None,
         mainPoint: Optional[str] = None,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
-        movementRestriction: SymbolicConstant = VECTOR,
+        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+        movementRestriction: Literal[C.MAGNITUDE, C.DIRECTION, C.VECTOR] = VECTOR,
         presumeFeasibleRegionAtStart: Boolean = ON,
         u1: Boolean = ON,
         u2: Boolean = ON,

@@ -1,8 +1,10 @@
+from typing_extensions import Literal
 from typing import List, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..Session.SessionBase import SessionBase
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 
@@ -24,7 +26,7 @@ class XYSessionBase(SessionBase):
         path: str,
         startPoint: str,
         endPoint: str,
-        modelShape: SymbolicConstant,
+        modelShape: Literal[C.DEFORMED, C.UNDEFORMED],
         components: tuple,
         xyMembraneComps: tuple,
         xyBendingComps: tuple,

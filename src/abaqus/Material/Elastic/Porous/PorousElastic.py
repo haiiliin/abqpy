@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 from ....UtilityAndView.abaqusConstants import Boolean, OFF, POISSON, SymbolicConstant
 
 
@@ -47,7 +49,7 @@ class PorousElastic:
     def __init__(
         self,
         table: tuple,
-        shear: SymbolicConstant = POISSON,
+        shear: Literal[C.POISSON] = POISSON,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

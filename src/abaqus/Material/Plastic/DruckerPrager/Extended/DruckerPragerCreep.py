@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 from .....UtilityAndView.abaqusConstants import Boolean, OFF, STRAIN, SymbolicConstant
 
 
@@ -46,7 +48,7 @@ class DruckerPragerCreep:
     def __init__(
         self,
         table: tuple,
-        law: SymbolicConstant = STRAIN,
+        law: Literal[C.STRAIN] = STRAIN,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

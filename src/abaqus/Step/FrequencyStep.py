@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -16,6 +17,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AC_ON, ALL, Boolean, DEFAULT, DISPLACEMENT, OFF, ON,
                                               SOLVER_DEFAULT, SymbolicConstant)
 
@@ -250,23 +252,23 @@ class FrequencyStep(AnalysisStep):
         self,
         name: str,
         previous: str,
-        eigensolver: SymbolicConstant,
-        numEigen: SymbolicConstant = ALL,
+        eigensolver: Literal[C.AMS, C.LANCZOS, C.SUBSPACE],
+        numEigen: Literal[C.ALL] = ALL,
         description: str = "",
         shift: float = 0,
         minEigen: Optional[float] = None,
         maxEigen: Optional[float] = None,
         vectors: Optional[int] = None,
         maxIterations: int = 30,
-        blockSize: SymbolicConstant = DEFAULT,
-        maxBlocks: SymbolicConstant = DEFAULT,
-        normalization: SymbolicConstant = DISPLACEMENT,
+        blockSize: Literal[C.DEFAULT] = DEFAULT,
+        maxBlocks: Literal[C.DEFAULT] = DEFAULT,
+        normalization: Literal[C.MASS, C.DISPLACEMENT] = DISPLACEMENT,
         propertyEvaluationFrequency: Optional[float] = None,
         projectDamping: Boolean = ON,
-        acousticCoupling: SymbolicConstant = AC_ON,
+        acousticCoupling: Literal[C.AC_OFF, C.AC_ON, C.TIE, C.AC_PROJECTION] = AC_ON,
         acousticRangeFactor: float = 1,
         frictionDamping: Boolean = OFF,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         maintainAttributes: Boolean = False,
         simLinearDynamics: Boolean = OFF,
         residualModes: Boolean = OFF,
@@ -399,22 +401,22 @@ class FrequencyStep(AnalysisStep):
     @abaqus_method_doc
     def setValues(
         self,
-        numEigen: SymbolicConstant = ALL,
+        numEigen: Literal[C.ALL] = ALL,
         description: str = "",
         shift: float = 0,
         minEigen: Optional[float] = None,
         maxEigen: Optional[float] = None,
         vectors: Optional[int] = None,
         maxIterations: int = 30,
-        blockSize: SymbolicConstant = DEFAULT,
-        maxBlocks: SymbolicConstant = DEFAULT,
-        normalization: SymbolicConstant = DISPLACEMENT,
+        blockSize: Literal[C.DEFAULT] = DEFAULT,
+        maxBlocks: Literal[C.DEFAULT] = DEFAULT,
+        normalization: Literal[C.MASS, C.DISPLACEMENT] = DISPLACEMENT,
         propertyEvaluationFrequency: Optional[float] = None,
         projectDamping: Boolean = ON,
-        acousticCoupling: SymbolicConstant = AC_ON,
+        acousticCoupling: Literal[C.AC_OFF, C.AC_ON, C.TIE, C.AC_PROJECTION] = AC_ON,
         acousticRangeFactor: float = 1,
         frictionDamping: Boolean = OFF,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         simLinearDynamics: Boolean = OFF,
         residualModes: Boolean = OFF,
         substructureCutoffMultiplier: float = 5,

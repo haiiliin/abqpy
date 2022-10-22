@@ -1,6 +1,8 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .OptimizationObjectiveArray import OptimizationObjectiveArray
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import MINIMIZE, SymbolicConstant
 
 
@@ -33,7 +35,7 @@ class ObjectiveFunction:
         self,
         name: str,
         objectives: OptimizationObjectiveArray,
-        target: SymbolicConstant = MINIMIZE,
+        target: Literal[C.MINIMIZE_MAXIMUM, C.MINIMIZE, C.MAXIMIZE] = MINIMIZE,
     ):
         """This method creates an ObjectiveFunction object.
 
@@ -65,7 +67,7 @@ class ObjectiveFunction:
         ...
 
     @abaqus_method_doc
-    def setValues(self, target: SymbolicConstant = MINIMIZE):
+    def setValues(self, target: Literal[C.MINIMIZE_MAXIMUM, C.MINIMIZE, C.MAXIMIZE] = MINIMIZE):
         """This method modifies the ObjectiveFunction object.
 
         Parameters

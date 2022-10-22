@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, FREE_FORM, ON, SymbolicConstant
 
 
@@ -73,7 +75,7 @@ class SlideRegionControl(GeometricRestriction):
         name: str,
         clientDirection: tuple,
         region: Region,
-        approach: SymbolicConstant = FREE_FORM,
+        approach: Literal[C.FREE_FORM, C.TURN] = FREE_FORM,
         csys: Optional[int] = None,
         freeFormRegion: Optional[str] = None,
         presumeFeasibleRegionAtStart: Boolean = ON,
@@ -139,7 +141,7 @@ class SlideRegionControl(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
-        approach: SymbolicConstant = FREE_FORM,
+        approach: Literal[C.FREE_FORM, C.TURN] = FREE_FORM,
         csys: Optional[int] = None,
         freeFormRegion: Optional[str] = None,
         presumeFeasibleRegionAtStart: Boolean = ON,

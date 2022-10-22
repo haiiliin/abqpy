@@ -1,6 +1,8 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ...Potential import Potential
+from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 from .....UtilityAndView.abaqusConstants import Boolean, OFF, STRAIN, SymbolicConstant, TOTAL
 
 
@@ -97,10 +99,10 @@ class Viscous:
     def __init__(
         self,
         table: tuple,
-        law: SymbolicConstant = STRAIN,
+        law: Literal[C.DARVEAUX, C.ANAND, C.TIME, C.POWER_LAW, C.USER, C.STRAIN, C.TIME_POWER_LAW, C.DOUBLE_POWER] = STRAIN,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        time: SymbolicConstant = TOTAL,
+        time: Literal[C.TOTAL, C.CREEP] = TOTAL,
     ):
         """This method creates a Viscous object.
 

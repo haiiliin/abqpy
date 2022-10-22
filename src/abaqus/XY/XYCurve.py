@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -5,6 +6,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .LineStyle import LineStyle
 from .SymbolStyle import SymbolStyle
 from .XYData import XYData
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, CURVE_LEGEND, ON, SymbolicConstant
 
 
@@ -88,7 +90,7 @@ class XYCurve:
     @abaqus_method_doc
     def setValues(
         self,
-        displayTypes: Optional[SymbolicConstant] = None,
+        displayTypes: Optional[Literal[C.SYMBOL, C.LINE]] = None,
         legendLabel: str = "",
         symbolFrequency: int = 1,
         useDefault: Boolean = ON,

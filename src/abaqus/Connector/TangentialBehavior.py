@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, COEFFICIENTS, FRACTION, OFF, PENALTY,
                                               SymbolicConstant)
 
@@ -93,14 +95,14 @@ class TangentialBehavior:
     @abaqus_method_doc
     def __init__(
         self,
-        formulation: SymbolicConstant = PENALTY,
+        formulation: Literal[C.PENALTY, C.EXPONENTIAL_DECAY] = PENALTY,
         slipRateDependency: Boolean = OFF,
         pressureDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        exponentialDecayDefinition: SymbolicConstant = COEFFICIENTS,
+        exponentialDecayDefinition: Literal[C.TEST_DATA, C.COEFFICIENTS] = COEFFICIENTS,
         shearStressLimit: Optional[float] = None,
-        maximumElasticSlip: SymbolicConstant = FRACTION,
+        maximumElasticSlip: Literal[C.FRACTION, C.ABSOLUTE_DISTANCE] = FRACTION,
         fraction: Optional[float] = None,
         absoluteDistance: Optional[float] = None,
         table: tuple = (),

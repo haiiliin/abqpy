@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import ABSOLUTE_EQUAL, SymbolicConstant
 
 
@@ -36,7 +38,7 @@ class OptimizationConstraint:
         name: str,
         designResponse: str,
         restrictionValue: float,
-        restrictionMethod: SymbolicConstant = ABSOLUTE_EQUAL,
+        restrictionMethod: Literal[C.ABSOLUTE_LESS_THAN_EQUAL, C.RELATIVE_GREATER_THAN_EQUAL, C.ABSOLUTE_GREATER_THAN_EQUAL, C.RELATIVE_EQUAL, C.ABSOLUTE_EQUAL, C.RELATIVE_LESS_THAN_EQUAL] = ABSOLUTE_EQUAL,
     ):
         """This method creates an OptimizationConstraint object.
 
@@ -72,7 +74,7 @@ class OptimizationConstraint:
         ...
 
     @abaqus_method_doc
-    def setValues(self, restrictionMethod: SymbolicConstant = ABSOLUTE_EQUAL):
+    def setValues(self, restrictionMethod: Literal[C.ABSOLUTE_LESS_THAN_EQUAL, C.RELATIVE_GREATER_THAN_EQUAL, C.ABSOLUTE_GREATER_THAN_EQUAL, C.RELATIVE_EQUAL, C.ABSOLUTE_EQUAL, C.RELATIVE_LESS_THAN_EQUAL] = ABSOLUTE_EQUAL):
         """This method modifies the OptimizationConstraint object.
 
         Parameters

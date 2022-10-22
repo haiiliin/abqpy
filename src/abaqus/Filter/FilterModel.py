@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -7,6 +8,7 @@ from .Chebyshev1Filter import Chebyshev1Filter
 from .Chebyshev2Filter import Chebyshev2Filter
 from .OperatorFilter import OperatorFilter
 from ..Model.ModelBase import ModelBase
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, NONE, OFF, SymbolicConstant
 
 
@@ -26,10 +28,10 @@ class FilterModel(ModelBase):
         name: str,
         cutoffFrequency: float,
         order: int = 2,
-        operation: SymbolicConstant = NONE,
+        operation: Literal[C.MIN, C.MAX, C.NONE, C.ABS] = NONE,
         halt: Boolean = OFF,
         limit: Optional[float] = None,
-        invariant: SymbolicConstant = NONE,
+        invariant: Literal[C.FIRST, C.SECOND, C.NONE] = NONE,
     ) -> ButterworthFilter:
         """This method creates a ButterworthFilter object.
 
@@ -87,10 +89,10 @@ class FilterModel(ModelBase):
         cutoffFrequency: float,
         rippleFactor: float = 0,
         order: int = 2,
-        operation: SymbolicConstant = NONE,
+        operation: Literal[C.MIN, C.MAX, C.NONE, C.ABS] = NONE,
         halt: Boolean = OFF,
         limit: Optional[float] = None,
-        invariant: SymbolicConstant = NONE,
+        invariant: Literal[C.FIRST, C.SECOND, C.NONE] = NONE,
     ) -> Chebyshev1Filter:
         """This method creates a Chebyshev1Filter object.
 
@@ -158,10 +160,10 @@ class FilterModel(ModelBase):
         cutoffFrequency: float,
         rippleFactor: float = 0,
         order: int = 2,
-        operation: SymbolicConstant = NONE,
+        operation: Literal[C.MIN, C.MAX, C.NONE, C.ABS] = NONE,
         halt: Boolean = OFF,
         limit: Optional[float] = None,
-        invariant: SymbolicConstant = NONE,
+        invariant: Literal[C.FIRST, C.SECOND, C.NONE] = NONE,
     ) -> Chebyshev2Filter:
         """This method creates a Chebyshev2Filter object.
 
@@ -228,10 +230,10 @@ class FilterModel(ModelBase):
         name: str,
         cutoffFrequency: float,
         order: int = 2,
-        operation: SymbolicConstant = NONE,
+        operation: Literal[C.MIN, C.MAX, C.NONE, C.ABS] = NONE,
         halt: Boolean = OFF,
         limit: Optional[float] = None,
-        invariant: SymbolicConstant = NONE,
+        invariant: Literal[C.FIRST, C.SECOND, C.NONE] = NONE,
     ) -> OperatorFilter:
         """This method creates an OperatorFilter object.
 

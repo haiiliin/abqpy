@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, ELEMENT, OFF, ON, SymbolicConstant
 
 
@@ -110,8 +112,8 @@ class ProbeOptions:
     def setValues(
         self,
         options: Optional["ProbeOptions"] = None,
-        probeEntity: SymbolicConstant = ELEMENT,
-        probeOutputPosition: Optional[SymbolicConstant] = None,
+        probeEntity: Literal[C.NODE, C.ODB, C.ELEMENT] = ELEMENT,
+        probeOutputPosition: Optional[Literal[C.ELEMENT_NODAL, C.ELEMENT_FACE, C.ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.NODE, C.ODB, C.ELEMENT_CENTROID]] = None,
         partInstance: Boolean = ON,
         elementID: Boolean = ON,
         elementType: Boolean = ON,

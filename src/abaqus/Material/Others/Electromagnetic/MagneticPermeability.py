@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 from ....UtilityAndView.abaqusConstants import Boolean, ISOTROPIC, OFF, SymbolicConstant
 
 
@@ -76,7 +78,7 @@ class MagneticPermeability:
         table: tuple,
         table2: tuple,
         table3: tuple,
-        type: SymbolicConstant = ISOTROPIC,
+        type: Literal[C.ANISOTROPIC, C.ISOTROPIC, C.ORTHOTROPIC] = ISOTROPIC,
         frequencyDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,

@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import AUTO, OVERHANG_REGION, SymbolicConstant
 
 
@@ -31,10 +33,10 @@ class TopologyOverhangControl(GeometricRestriction):
         region: Region,
         csys: Optional[int] = None,
         draftAngle: float = 45,
-        overhangCheckRegion: SymbolicConstant = OVERHANG_REGION,
+        overhangCheckRegion: Literal[C.OVERHANG_REGION] = OVERHANG_REGION,
         pointRegion: Region = Region(),
         radius: Optional[float] = None,
-        technique: SymbolicConstant = AUTO,
+        technique: Literal[C.POINT, C.NONE, C.AUTO] = AUTO,
     ):
         """This method creates a TopologyOverhangControl object.
 
@@ -85,10 +87,10 @@ class TopologyOverhangControl(GeometricRestriction):
         self,
         csys: Optional[int] = None,
         draftAngle: float = 45,
-        overhangCheckRegion: SymbolicConstant = OVERHANG_REGION,
+        overhangCheckRegion: Literal[C.OVERHANG_REGION] = OVERHANG_REGION,
         pointRegion: Region = Region(),
         radius: Optional[float] = None,
-        technique: SymbolicConstant = AUTO,
+        technique: Literal[C.POINT, C.NONE, C.AUTO] = AUTO,
     ):
         """This method modifies the TopologyOverhangControl object.
 

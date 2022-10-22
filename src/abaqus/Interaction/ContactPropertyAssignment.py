@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
@@ -40,7 +42,7 @@ class ContactPropertyAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(self, stepName: str, assignments: SymbolicConstant):
+    def appendInStep(self, stepName: str, assignments: Literal[C.SELF, C.GLOBAL]):
         """This method allows addition of contact property assignments to new domain pairs in a
         given step.
 
@@ -66,7 +68,7 @@ class ContactPropertyAssignment:
         ...
 
     @abaqus_method_doc
-    def delete(self, indices: tuple, surfPair: SymbolicConstant):
+    def delete(self, indices: tuple, surfPair: Literal[C.SELF, C.GLOBAL]):
         """The delete method allows you to delete existing contact property assignments.
 
         Parameters

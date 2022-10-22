@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -28,6 +29,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import ABS, Boolean, OFF, SINGLE_DIRECTION, SymbolicConstant
 
 
@@ -190,8 +192,8 @@ class ResponseSpectrumStep(AnalysisStep):
         previous: str,
         components: ResponseSpectrumComponentArray,
         description: str = "",
-        comp: SymbolicConstant = SINGLE_DIRECTION,
-        sum: SymbolicConstant = ABS,
+        comp: Literal[C.MULTIPLE_DIRECTION_FORTY_PERCENT_RULE, C.MULTIPLE_DIRECTION_THIRTY_PERCENT_RULE, C.MULTIPLE_DIRECTION_ABSOLUTE_SUM, C.MULTIPLE_DIRECTION_SRSS_SUM, C.SINGLE_DIRECTION] = SINGLE_DIRECTION,
+        sum: Literal[C.DSC, C.NRL, C.CQC, C.TENP, C.GRP, C.ABS, C.SRSS] = ABS,
         directDamping: Optional[DirectDamping] = None, 
         compositeDamping: Optional[CompositeDamping] = None, 
         rayleighDamping: Optional[RayleighDamping] = None, 
@@ -254,8 +256,8 @@ class ResponseSpectrumStep(AnalysisStep):
     def setValues(
         self,
         description: str = "",
-        comp: SymbolicConstant = SINGLE_DIRECTION,
-        sum: SymbolicConstant = ABS,
+        comp: Literal[C.MULTIPLE_DIRECTION_FORTY_PERCENT_RULE, C.MULTIPLE_DIRECTION_THIRTY_PERCENT_RULE, C.MULTIPLE_DIRECTION_ABSOLUTE_SUM, C.MULTIPLE_DIRECTION_SRSS_SUM, C.SINGLE_DIRECTION] = SINGLE_DIRECTION,
+        sum: Literal[C.DSC, C.NRL, C.CQC, C.TENP, C.GRP, C.ABS, C.SRSS] = ABS,
         directDamping: Optional[DirectDamping] = None, 
         compositeDamping: Optional[CompositeDamping] = None, 
         rayleighDamping: Optional[RayleighDamping] = None, 

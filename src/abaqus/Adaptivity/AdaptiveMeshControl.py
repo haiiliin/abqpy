@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (CURRENT, ELEMENT_CENTER_PROJECTION, GEOMETRY_ENHANCED,
                                               SECOND_ORDER_ADVECTION, SymbolicConstant, UNIFORM)
 
@@ -82,13 +84,13 @@ class AdaptiveMeshControl:
     def __init__(
         self,
         name: str,
-        remapping: SymbolicConstant = SECOND_ORDER_ADVECTION,
-        smoothingAlgorithm: SymbolicConstant = GEOMETRY_ENHANCED,
-        smoothingPriority: SymbolicConstant = UNIFORM,
+        remapping: Literal[C.SECOND_ORDER_ADVECTION, C.FIRST_ORDER_ADVECTION] = SECOND_ORDER_ADVECTION,
+        smoothingAlgorithm: Literal[C.GEOMETRY_ENHANCED, C.STANDARD] = GEOMETRY_ENHANCED,
+        smoothingPriority: Literal[C.GRADED, C.UNIFORM] = UNIFORM,
         initialFeatureAngle: float = 30,
         transitionFeatureAngle: float = 30,
-        momentumAdvection: SymbolicConstant = ELEMENT_CENTER_PROJECTION,
-        meshingPredictor: SymbolicConstant = CURRENT,
+        momentumAdvection: Literal[C.HALF_INDEX_SHIFT, C.ELEMENT_CENTER_PROJECTION] = ELEMENT_CENTER_PROJECTION,
+        meshingPredictor: Literal[C.PREVIOUS, C.CURRENT] = CURRENT,
         curvatureRefinement: float = 1,
         volumetricSmoothingWeight: float = 1,
         laplacianSmoothingWeight: float = 0,
@@ -167,13 +169,13 @@ class AdaptiveMeshControl:
     @abaqus_method_doc
     def setValues(
         self,
-        remapping: SymbolicConstant = SECOND_ORDER_ADVECTION,
-        smoothingAlgorithm: SymbolicConstant = GEOMETRY_ENHANCED,
-        smoothingPriority: SymbolicConstant = UNIFORM,
+        remapping: Literal[C.SECOND_ORDER_ADVECTION, C.FIRST_ORDER_ADVECTION] = SECOND_ORDER_ADVECTION,
+        smoothingAlgorithm: Literal[C.GEOMETRY_ENHANCED, C.STANDARD] = GEOMETRY_ENHANCED,
+        smoothingPriority: Literal[C.GRADED, C.UNIFORM] = UNIFORM,
         initialFeatureAngle: float = 30,
         transitionFeatureAngle: float = 30,
-        momentumAdvection: SymbolicConstant = ELEMENT_CENTER_PROJECTION,
-        meshingPredictor: SymbolicConstant = CURRENT,
+        momentumAdvection: Literal[C.HALF_INDEX_SHIFT, C.ELEMENT_CENTER_PROJECTION] = ELEMENT_CENTER_PROJECTION,
+        meshingPredictor: Literal[C.PREVIOUS, C.CURRENT] = CURRENT,
         curvatureRefinement: float = 1,
         volumetricSmoothingWeight: float = 1,
         laplacianSmoothingWeight: float = 0,

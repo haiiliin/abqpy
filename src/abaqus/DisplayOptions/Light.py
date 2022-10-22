@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, DIRECTIONAL, OFF, SymbolicConstant
 
 
@@ -21,7 +23,7 @@ class Light:
     def setValues(
         self,
         enabled: Boolean = OFF,
-        type: SymbolicConstant = DIRECTIONAL,
+        type: Literal[C.POINT, C.DIRECTIONAL] = DIRECTIONAL,
         latitude: float = 0,
         longitude: float = 0,
         diffuseColor: str = "",

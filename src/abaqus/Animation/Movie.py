@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import END_FRAME_TIME, SymbolicConstant
 from .._OptionsBase import _OptionsBase
 
@@ -77,7 +79,7 @@ class Movie(_OptionsBase):
         timelineStartFrame: int = 0,
         timelineEndFrame: Optional[int] = None,
         timelineStartTime: float = 0,
-        timelineEndTime: Union[SymbolicConstant, float] = END_FRAME_TIME,
+        timelineEndTime: Union[Literal[C.END_FRAME_TIME], float] = END_FRAME_TIME,
     ):
         """This method creates a Movie object from the contents of the specified file.
 
@@ -146,7 +148,7 @@ class Movie(_OptionsBase):
         timelineStartFrame: int = 0,
         timelineEndFrame: Optional[int] = None,
         timelineStartTime: float = 0,
-        timelineEndTime: Union[SymbolicConstant, float] = END_FRAME_TIME,
+        timelineEndTime: Union[Literal[C.END_FRAME_TIME], float] = END_FRAME_TIME,
     ):
         """This method modifies the Movie object.
 

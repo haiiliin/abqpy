@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import AXIS_3, ROTATION_NONE, SymbolicConstant
 
 
@@ -79,9 +81,9 @@ class SectionLayer:
         material: str,
         orientAngle: float = 0,
         numIntPts: int = 3,
-        axis: SymbolicConstant = AXIS_3,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_3,
         angle: float = 0,
-        additionalRotationType: SymbolicConstant = ROTATION_NONE,
+        additionalRotationType: Literal[C.ROTATION_NONE, C.ROTATION_FIELD, C.ROTATION_ANGLE] = ROTATION_NONE,
         plyName: str = "",
         orientation: Optional[SymbolicConstant] = None,
         additionalRotationField: str = "",

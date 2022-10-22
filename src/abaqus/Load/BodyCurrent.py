@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Load import Load
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM, UNSET
 
 
@@ -42,7 +44,7 @@ class BodyCurrent(Load):
         region: Region,
         magnitude: float,
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
     ):
         """This method creates a BodyCurrent object.
@@ -86,7 +88,7 @@ class BodyCurrent(Load):
     def setValues(
         self,
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
     ):
         """This method modifies the data for an existing BodyCurrent object in the step where it is

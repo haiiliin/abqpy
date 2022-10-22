@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Interaction import Interaction
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALL_NODAL_DIAMETER, Boolean, COMPUTED_TOLERANCE, ON,
                                               SymbolicConstant)
 
@@ -104,13 +106,13 @@ class CyclicSymmetry(Interaction):
         repetitiveSectors: int,
         axisPoint1: Region,
         axisPoint2: Region,
-        extractedNodalDiameter: SymbolicConstant = ALL_NODAL_DIAMETER,
+        extractedNodalDiameter: Literal[C.ALL_NODAL_DIAMETER, C.SPECIFIED_NODAL_DIAMETER] = ALL_NODAL_DIAMETER,
         lowestNodalDiameter: int = 0,
         highestNodalDiameter: int = 0,
         excitationNodalDiameter: int = 0,
         adjustTie: Boolean = ON,
         positionTolerance: float = 0,
-        positionToleranceMethod: SymbolicConstant = COMPUTED_TOLERANCE,
+        positionToleranceMethod: Literal[C.SPECIFY_TOLERANCE, C.COMPUTED_TOLERANCE] = COMPUTED_TOLERANCE,
     ):
         """This method creates a CyclicSymmetry object.
 
@@ -193,13 +195,13 @@ class CyclicSymmetry(Interaction):
     @abaqus_method_doc
     def setValues(
         self,
-        extractedNodalDiameter: SymbolicConstant = ALL_NODAL_DIAMETER,
+        extractedNodalDiameter: Literal[C.ALL_NODAL_DIAMETER, C.SPECIFIED_NODAL_DIAMETER] = ALL_NODAL_DIAMETER,
         lowestNodalDiameter: int = 0,
         highestNodalDiameter: int = 0,
         excitationNodalDiameter: int = 0,
         adjustTie: Boolean = ON,
         positionTolerance: float = 0,
-        positionToleranceMethod: SymbolicConstant = COMPUTED_TOLERANCE,
+        positionToleranceMethod: Literal[C.SPECIFY_TOLERANCE, C.COMPUTED_TOLERANCE] = COMPUTED_TOLERANCE,
     ):
         """This method modifies the data for an existing CyclicSymmetry object in the step where it
         is created.
@@ -241,7 +243,7 @@ class CyclicSymmetry(Interaction):
     def setValuesInStep(
         self,
         stepName: str,
-        extractedNodalDiameter: SymbolicConstant = ALL_NODAL_DIAMETER,
+        extractedNodalDiameter: Literal[C.ALL_NODAL_DIAMETER, C.SPECIFIED_NODAL_DIAMETER] = ALL_NODAL_DIAMETER,
         lowestNodalDiameter: int = 0,
         highestNodalDiameter: int = 0,
         excitationNodalDiameter: int = 0,

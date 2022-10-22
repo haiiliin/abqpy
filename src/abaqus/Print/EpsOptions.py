@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (DPI_150, INCHES, MEDIUM, PS_IF_AVAILABLE,
                                               SIZE_ON_SCREEN, SymbolicConstant, VECTOR)
 from .._OptionsBase import _OptionsBase
@@ -52,12 +54,12 @@ class EpsOptions(_OptionsBase):
     def setValues(
         self,
         *,
-        imageSize: Union[SymbolicConstant, float] = SIZE_ON_SCREEN,
-        units: SymbolicConstant = INCHES,
-        resolution: SymbolicConstant = DPI_150,
-        fontType: SymbolicConstant = PS_IF_AVAILABLE,
-        imageFormat: SymbolicConstant = VECTOR,
-        shadingQuality: SymbolicConstant = MEDIUM,
+        imageSize: Union[Literal[C.SIZE_ON_SCREEN], float] = SIZE_ON_SCREEN,
+        units: Literal[C.MM, C.SIZE_ON_SCREEN, C.INCHES] = INCHES,
+        resolution: Literal[C.VECTOR, C.DPI_150, C.DPI_600, C.DPI_1200, C.DPI_300, C.DPI_450, C.DPI_75] = DPI_150,
+        fontType: Literal[C.PS_IF_AVAILABLE, C.AS_DISPLAYED, C.PS_ALWAYS] = PS_IF_AVAILABLE,
+        imageFormat: Literal[C.RASTER, C.VECTOR] = VECTOR,
+        shadingQuality: Literal[C.FINE, C.EXTRA, C.MEDIUM, C.COARSE] = MEDIUM,
     ):
         """This method modifies the EpsOptions object.
 

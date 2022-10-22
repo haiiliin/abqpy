@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, DISPLACEMENT, ENERGY, LINEAR, MAX_STRESS,
                                               OFF, SymbolicConstant, TABULAR)
 
@@ -216,15 +218,15 @@ class ContactDamage:
     def __init__(
         self,
         initTable: tuple,
-        criterion: SymbolicConstant = MAX_STRESS,
+        criterion: Literal[C.MAX_STRESS, C.QUAD_SEPARATION, C.MAX_SEPARATION, C.QUAD_TRACTION] = MAX_STRESS,
         initTempDep: Boolean = OFF,
         initDependencies: int = 0,
         useEvolution: Boolean = OFF,
-        evolutionType: SymbolicConstant = DISPLACEMENT,
-        softening: SymbolicConstant = LINEAR,
+        evolutionType: Literal[C.ENERGY, C.DISPLACEMENT] = DISPLACEMENT,
+        softening: Literal[C.EXPONENTIAL, C.LINEAR, C.TABULAR, C.DISPLACEMENT] = LINEAR,
         useMixedMode: Boolean = OFF,
-        mixedModeType: SymbolicConstant = TABULAR,
-        modeMixRatio: SymbolicConstant = ENERGY,
+        mixedModeType: Literal[C.BK, C.ENERGY, C.POWER_LAW, C.TABULAR] = TABULAR,
+        modeMixRatio: Literal[C.TRACTION, C.ENERGY, C.TABULAR] = ENERGY,
         exponent: Optional[float] = None,
         evolTempDep: Boolean = OFF,
         evolDependencies: int = 0,

@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, COLOR, OFF, ON, SymbolicConstant
 from .._OptionsBase import _OptionsBase
 
@@ -48,7 +50,7 @@ class PrintOptions(_OptionsBase):
     def setValues(
         self,
         *,
-        rendition: SymbolicConstant = COLOR,
+        rendition: Literal[C.COLOR, C.GREYSCALE, C.BLACK_AND_WHITE] = COLOR,
         vpDecorations: Boolean = ON,
         vpBackground: Boolean = OFF,
         compass: Boolean = OFF,

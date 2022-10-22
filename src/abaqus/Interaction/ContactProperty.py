@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -14,6 +15,7 @@ from .InteractionProperty import InteractionProperty
 from .NormalBehavior import NormalBehavior
 from .Radiation import Radiation
 from .ThermalConductance import ThermalConductance
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALL_NODES, BK, Boolean, COEFFICIENTS,
                                               DAMPING_COEFFICIENT, DEFAULT, DISPLACEMENT, ENERGY,
                                               FRACTION, FRICTIONLESS, HARD, ISOTROPIC, LINEAR,
@@ -94,16 +96,16 @@ class ContactProperty(InteractionProperty):
     @abaqus_method_doc
     def TangentialBehavior(
         self,
-        formulation: SymbolicConstant = FRICTIONLESS,
-        directionality: SymbolicConstant = ISOTROPIC,
+        formulation: Literal[C.FRICTIONLESS, C.PENALTY, C.ROUGH, C.EXPONENTIAL_DECAY, C.USER_DEFINED, C.LAGRANGE] = FRICTIONLESS,
+        directionality: Literal[C.ANISOTROPIC, C.ISOTROPIC] = ISOTROPIC,
         slipRateDependency: Boolean = OFF,
         pressureDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        exponentialDecayDefinition: SymbolicConstant = COEFFICIENTS,
+        exponentialDecayDefinition: Literal[C.TEST_DATA, C.COEFFICIENTS] = COEFFICIENTS,
         table: tuple = (),
         shearStressLimit: Optional[float] = None,
-        maximumElasticSlip: SymbolicConstant = FRACTION,
+        maximumElasticSlip: Literal[C.FRACTION, C.ABSOLUTE_DISTANCE] = FRACTION,
         fraction: float = 0,
         absoluteDistance: float = 0,
         elasticSlipStiffness: Optional[float] = None,
@@ -187,18 +189,18 @@ class ContactProperty(InteractionProperty):
     @abaqus_method_doc
     def NormalBehavior(
         self,
-        contactStiffness: Union[SymbolicConstant, float] = DEFAULT,
-        pressureOverclosure: SymbolicConstant = HARD,
+        contactStiffness: Union[Literal[C.AUGMENTED_LAGRANGE, C.PENALTY, C.DEFAULT, C.HARD, C.LINEAR], float] = DEFAULT,
+        pressureOverclosure: Literal[C.EXPONENTIAL, C.TABULAR, C.HARD, C.LINEAR, C.SCALE_FACTOR] = HARD,
         allowSeparation: Boolean = ON,
         maxStiffness: Optional[float] = None,
         table: tuple = (),
-        constraintEnforcementMethod: SymbolicConstant = DEFAULT,
+        constraintEnforcementMethod: Literal[C.AUGMENTED_LAGRANGE, C.DEFAULT, C.DIRECT, C.PENALTY] = DEFAULT,
         overclosureFactor: float = 0,
         overclosureMeasure: float = 0,
         contactStiffnessScaleFactor: float = 1,
         initialStiffnessScaleFactor: float = 1,
         clearanceAtZeroContactPressure: float = 0,
-        stiffnessBehavior: SymbolicConstant = LINEAR,
+        stiffnessBehavior: Literal[C.PENALTY, C.NONLINEAR, C.LINEAR] = LINEAR,
         stiffnessRatio: float = 0,
         upperQuadraticFactor: float = 0,
         lowerQuadraticRatio: float = 0,
@@ -297,9 +299,9 @@ class ContactProperty(InteractionProperty):
     @abaqus_method_doc
     def Damping(
         self,
-        definition: SymbolicConstant = DAMPING_COEFFICIENT,
-        tangentFraction: Union[SymbolicConstant, float] = DEFAULT,
-        clearanceDependence: SymbolicConstant = STEP,
+        definition: Literal[C.DAMPING_COEFFICIENT, C.CRITICAL_DAMPING_FRACTION] = DAMPING_COEFFICIENT,
+        tangentFraction: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        clearanceDependence: Literal[C.STEP, C.CRITICAL_DAMPING_FRACTION, C.BILINEAR, C.LINEAR] = STEP,
         table: tuple = (),
     ):
         """This method creates a ContactDamping object.
@@ -340,15 +342,15 @@ class ContactProperty(InteractionProperty):
     def Damage(
         self,
         initTable: tuple,
-        criterion: SymbolicConstant = MAX_STRESS,
+        criterion: Literal[C.MAX_STRESS, C.QUAD_SEPARATION, C.MAX_SEPARATION, C.QUAD_TRACTION] = MAX_STRESS,
         initTempDep: Boolean = OFF,
         initDependencies: int = 0,
         useEvolution: Boolean = OFF,
-        evolutionType: SymbolicConstant = DISPLACEMENT,
-        softening: SymbolicConstant = LINEAR,
+        evolutionType: Literal[C.ENERGY, C.DISPLACEMENT] = DISPLACEMENT,
+        softening: Literal[C.EXPONENTIAL, C.LINEAR, C.TABULAR, C.DISPLACEMENT] = LINEAR,
         useMixedMode: Boolean = OFF,
-        mixedModeType: SymbolicConstant = TABULAR,
-        modeMixRatio: SymbolicConstant = ENERGY,
+        mixedModeType: Literal[C.BK, C.ENERGY, C.POWER_LAW, C.TABULAR] = TABULAR,
+        modeMixRatio: Literal[C.TRACTION, C.ENERGY, C.TABULAR] = ENERGY,
         exponent: Optional[float] = None,
         evolTempDep: Boolean = OFF,
         evolDependencies: int = 0,
@@ -451,13 +453,13 @@ class ContactProperty(InteractionProperty):
     def FractureCriterion(
         self,
         initTable: tuple,
-        type: SymbolicConstant = VCCT,
-        mixedModeBehavior: SymbolicConstant = BK,
+        type: Literal[C.ENHANCED, C.VCCT] = VCCT,
+        mixedModeBehavior: Literal[C.REEDER, C.BK, C.POWER] = BK,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         tolerance: float = 0,
         specifyUnstableCrackProp: Union[SymbolicConstant, Boolean] = OFF,
-        unstableTolerance: Union[SymbolicConstant, float] = DEFAULT,
+        unstableTolerance: Union[Literal[C.DEFAULT], float] = DEFAULT,
     ):
         """This method creates a FractureCriterion object.
 
@@ -514,9 +516,9 @@ class ContactProperty(InteractionProperty):
     def CohesiveBehavior(
         self,
         repeatedContacts: Boolean = OFF,
-        eligibility: SymbolicConstant = ALL_NODES,
+        eligibility: Literal[C.INITIAL_NODES, C.SPECIFIED, C.ALL_NODES] = ALL_NODES,
         defaultPenalties: Boolean = ON,
-        coupling: SymbolicConstant = UNCOUPLED,
+        coupling: Literal[C.COUPLED, C.UNCOUPLED] = UNCOUPLED,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         table: tuple = (),
@@ -573,7 +575,7 @@ class ContactProperty(InteractionProperty):
     @abaqus_method_doc
     def ThermalConductance(
         self,
-        definition: SymbolicConstant = TABULAR,
+        definition: Literal[C.USER_DEFINED, C.TABULAR] = TABULAR,
         clearanceDependency: Boolean = ON,
         pressureDependency: Boolean = OFF,
         temperatureDependencyC: Boolean = OFF,
@@ -778,7 +780,7 @@ class ContactProperty(InteractionProperty):
     @abaqus_method_doc
     def ElectricalConductance(
         self,
-        definition: SymbolicConstant = TABULAR,
+        definition: Literal[C.USER_DEFINED, C.TABULAR] = TABULAR,
         clearanceDependency: Boolean = ON,
         pressureDependency: Boolean = OFF,
         temperatureDependencyC: Boolean = OFF,

@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, ON, SOLID, SymbolicConstant
 
 
@@ -86,7 +88,7 @@ class LineStyle:
         self,
         color: str = "",
         show: Boolean = ON,
-        style: SymbolicConstant = SOLID,
+        style: Literal[C.DASHED, C.SOLID, C.DOT_DASH, C.DOTTED] = SOLID,
         thickness: float = 0,
     ):
         """This method creates a LineStyle.
@@ -129,7 +131,7 @@ class LineStyle:
         self,
         color: str = "",
         show: Boolean = ON,
-        style: SymbolicConstant = SOLID,
+        style: Literal[C.DASHED, C.SOLID, C.DOT_DASH, C.DOTTED] = SOLID,
         thickness: float = 0,
     ):
         """This method modifies the LineStyle object.

@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
@@ -48,7 +50,7 @@ class SurfaceFrictionAssignment:
 
     @abaqus_method_doc
     def appendInStep(
-        self, stepName: str, assignments: Union[SymbolicConstant, float]
+        self, stepName: str, assignments: Union[Literal[C.GLOBAL], float]
     ):
         """This method allows addition of surface friction assignments to new surfaces in a given
         step.

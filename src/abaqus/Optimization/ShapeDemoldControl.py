@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, DEMOLD_REGION, MAXIMUM, ON, SymbolicConstant
 
 
@@ -77,10 +79,10 @@ class ShapeDemoldControl(GeometricRestriction):
         name: str,
         pullDirection: tuple,
         region: Region,
-        collisionCheckRegion: SymbolicConstant = DEMOLD_REGION,
+        collisionCheckRegion: Literal[C.DEMOLD_REGION] = DEMOLD_REGION,
         csys: Optional[int] = None,
         drawAngle: float = 0,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -147,10 +149,10 @@ class ShapeDemoldControl(GeometricRestriction):
     @abaqus_method_doc
     def setValues(
         self,
-        collisionCheckRegion: SymbolicConstant = DEMOLD_REGION,
+        collisionCheckRegion: Literal[C.DEMOLD_REGION] = DEMOLD_REGION,
         csys: Optional[int] = None,
         drawAngle: float = 0,
-        mainPointDetermination: SymbolicConstant = MAXIMUM,
+        mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,

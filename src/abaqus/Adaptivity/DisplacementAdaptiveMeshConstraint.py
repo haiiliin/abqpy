@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -5,6 +6,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from ..Datum.DatumCsys import DatumCsys
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import INDEPENDENT, MECHANICAL, SymbolicConstant, UNSET
 
 
@@ -41,14 +43,14 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         name: str,
         createStepName: str,
         region: Region,
-        u1: Union[SymbolicConstant, float] = UNSET,
-        u2: Union[SymbolicConstant, float] = UNSET,
-        u3: Union[SymbolicConstant, float] = UNSET,
-        ur1: Union[SymbolicConstant, float] = UNSET,
-        ur2: Union[SymbolicConstant, float] = UNSET,
-        ur3: Union[SymbolicConstant, float] = UNSET,
+        u1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        u2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        u3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ur1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ur2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ur3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
-        motionType: SymbolicConstant = INDEPENDENT,
+        motionType: Literal[C.USER_DEFINED, C.INDEPENDENT, C.FOLLOW] = INDEPENDENT,
         localCsys: Optional[DatumCsys] = None,
     ):
         """This method creates a DisplacementAdaptiveMeshConstraint object.
@@ -114,14 +116,14 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     @abaqus_method_doc
     def setValues(
         self,
-        u1: Union[SymbolicConstant, float] = UNSET,
-        u2: Union[SymbolicConstant, float] = UNSET,
-        u3: Union[SymbolicConstant, float] = UNSET,
-        ur1: Union[SymbolicConstant, float] = UNSET,
-        ur2: Union[SymbolicConstant, float] = UNSET,
-        ur3: Union[SymbolicConstant, float] = UNSET,
+        u1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        u2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        u3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ur1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ur2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ur3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
-        motionType: SymbolicConstant = INDEPENDENT,
+        motionType: Literal[C.USER_DEFINED, C.INDEPENDENT, C.FOLLOW] = INDEPENDENT,
         localCsys: Optional[str] = None,
     ):
         """This method modifies the data for an existing DisplacementAdaptiveMeshConstraint object
@@ -172,12 +174,12 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     def setValuesInStep(
         self,
         stepName: str,
-        u1: Union[SymbolicConstant, float, None] = None,
-        u2: Union[SymbolicConstant, float, None] = None,
-        u3: Union[SymbolicConstant, float, None] = None,
-        ur1: Union[SymbolicConstant, float, None] = None,
-        ur2: Union[SymbolicConstant, float, None] = None,
-        ur3: Union[SymbolicConstant, float, None] = None,
+        u1: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float, None] = None,
+        u2: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float, None] = None,
+        u3: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float, None] = None,
+        ur1: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float, None] = None,
+        ur2: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float, None] = None,
+        ur3: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float, None] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing

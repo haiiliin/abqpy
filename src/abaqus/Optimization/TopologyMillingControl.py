@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import MILLING_REGION, SymbolicConstant
 
 
@@ -56,7 +58,7 @@ class TopologyMillingControl(GeometricRestriction):
         millingDirections: tuple,
         region: Region,
         csys: Optional[int] = None,
-        millingCheckRegion: SymbolicConstant = MILLING_REGION,
+        millingCheckRegion: Literal[C.MILLING_REGION] = MILLING_REGION,
         radius: Optional[float] = None,
     ):
         """This method creates a TopologyMillingControl object.
@@ -100,7 +102,7 @@ class TopologyMillingControl(GeometricRestriction):
     def setValues(
         self,
         csys: Optional[int] = None,
-        millingCheckRegion: SymbolicConstant = MILLING_REGION,
+        millingCheckRegion: Literal[C.MILLING_REGION] = MILLING_REGION,
         radius: Optional[float] = None,
     ):
         """This method modifies the TopologyMillingControl object.

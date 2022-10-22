@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .DesignResponse import DesignResponse
 from .StepOptionArray import StepOptionArray
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import MAXIMUM, MODEL, SUM, SymbolicConstant
 
 
@@ -60,10 +62,10 @@ class SingleTermDesignResponse(DesignResponse):
         identifier: str,
         csys: Optional[int] = None,
         drivingRegion: Optional[str] = None,
-        operation: SymbolicConstant = SUM,
-        region: SymbolicConstant = MODEL,
-        shellLayer: SymbolicConstant = MAXIMUM,
-        stepOperation: SymbolicConstant = SUM,
+        operation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
+        region: Literal[C.MODEL] = MODEL,
+        shellLayer: Literal[C.BOTTOM, C.TOP, C.MAXIMUM, C.MINIMUM, C.MIDDLE] = MAXIMUM,
+        stepOperation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
         stepOptions: Optional[StepOptionArray] = None,
     ):
         """This method creates a SingleTermDesignResponse object.
@@ -113,10 +115,10 @@ class SingleTermDesignResponse(DesignResponse):
         self,
         csys: Optional[int] = None,
         drivingRegion: Optional[str] = None,
-        operation: SymbolicConstant = SUM,
-        region: SymbolicConstant = MODEL,
-        shellLayer: SymbolicConstant = MAXIMUM,
-        stepOperation: SymbolicConstant = SUM,
+        operation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
+        region: Literal[C.MODEL] = MODEL,
+        shellLayer: Literal[C.BOTTOM, C.TOP, C.MAXIMUM, C.MINIMUM, C.MIDDLE] = MAXIMUM,
+        stepOperation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
         stepOptions: Optional[StepOptionArray] = None,
     ):
         """This method modifies the SingleTermDesignResponse object.

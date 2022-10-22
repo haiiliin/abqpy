@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -7,6 +8,7 @@ from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
 from .DerivedComponent import DerivedComponent
 from .TangentialBehavior import TangentialBehavior
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, COMPONENT_NUMBER, NO_INDEPENDENT_COMPONENTS,
                                               OFF, PREDEFINED, SPECIFY, SUM, SymbolicConstant)
 
@@ -148,18 +150,18 @@ class ConnectorFriction(ConnectorBehaviorOption):
     @abaqus_method_doc
     def __init__(
         self,
-        frictionModel: SymbolicConstant = PREDEFINED,
-        slipStyle: SymbolicConstant = SPECIFY,
+        frictionModel: Literal[C.PREDEFINED, C.USER_CUSTOMIZED] = PREDEFINED,
+        slipStyle: Literal[C.COMPUTE, C.SPECIFY, C.USER_CUSTOMIZED] = SPECIFY,
         tangentDirection: Optional[int] = None,
         stickStiffness: Optional[float] = None,
-        componentType: SymbolicConstant = NO_INDEPENDENT_COMPONENTS,
+        componentType: Literal[C.POSITION, C.MOTION, C.NO_INDEPENDENT_COMPONENTS] = NO_INDEPENDENT_COMPONENTS,
         slipDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         useContactForceComponent: Boolean = OFF,
-        contactForceStyle: SymbolicConstant = COMPONENT_NUMBER,
+        contactForceStyle: Literal[C.COMPONENT_NUMBER, C.USER_CUSTOMIZED, C.DERIVED_COMPONENT] = COMPONENT_NUMBER,
         contactForceComponent: int = 0,
-        forcePotentialOperator: SymbolicConstant = SUM,
+        forcePotentialOperator: Literal[C.SUM, C.COMPUTE, C.USER_CUSTOMIZED, C.MAXIMUM] = SUM,
         forcePotentialExponent: float = 2,
         connectorPotentials: Optional[ConnectorPotentialArray] = None,
         table: tuple = (),

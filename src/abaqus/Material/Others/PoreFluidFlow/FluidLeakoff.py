@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 from ....UtilityAndView.abaqusConstants import Boolean, COEFFICIENTS, OFF, SymbolicConstant
 
 
@@ -37,7 +39,7 @@ class FluidLeakoff:
         self,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        type: SymbolicConstant = COEFFICIENTS,
+        type: Literal[C.USER, C.COEFFICIENTS] = COEFFICIENTS,
         table: tuple = (),
     ):
         """This method creates a FluidLeakoff object.

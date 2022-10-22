@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 from .....UtilityAndView.abaqusConstants import Boolean, OFF, STRAIN, SymbolicConstant, TOTAL
 
 
@@ -56,10 +58,10 @@ class CapCreepConsolidation:
     def __init__(
         self,
         table: tuple,
-        law: SymbolicConstant = STRAIN,
+        law: Literal[C.USER, C.TIME, C.STRAIN, C.SINGHM] = STRAIN,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        time: SymbolicConstant = TOTAL,
+        time: Literal[C.TOTAL, C.CREEP] = TOTAL,
     ):
         """This method creates a CapCreepConsolidation object.
 

@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Union, Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -16,6 +17,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ANALYSIS_PRODUCT_DEFAULT, AUTOMATIC, Boolean, DEFAULT,
                                               FULL_NEWTON, OFF, PROPAGATED, SOLVER_DEFAULT, STEP,
                                               SymbolicConstant, VALUE)
@@ -237,27 +239,27 @@ class ImplicitDynamicsStep(AnalysisStep):
         description: str = "",
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        application: SymbolicConstant = ANALYSIS_PRODUCT_DEFAULT,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
+        application: Literal[C.ANALYSIS_PRODUCT_DEFAULT, C.QUASI_STATIC, C.TRANSIENT_FIDELITY, C.MODERATE_DISSIPATION] = ANALYSIS_PRODUCT_DEFAULT,
         adiabatic: Boolean = OFF,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
-        maxInc: Union[SymbolicConstant, float] = DEFAULT,
-        hafTolMethod: SymbolicConstant = VALUE,
+        maxInc: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        hafTolMethod: Literal[C.ANALYSIS_PRODUCT_DEFAULT, C.VALUE, C.SCALE] = VALUE,
         haftol: Optional[float] = None,
         halfIncScaleFactor: Optional[float] = None,
         nohaf: Boolean = OFF,
-        amplitude: SymbolicConstant = STEP,
-        alpha: Union[SymbolicConstant, float] = DEFAULT,
-        initialConditions: SymbolicConstant = DEFAULT,
-        extrapolation: SymbolicConstant = ANALYSIS_PRODUCT_DEFAULT,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
+        alpha: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        initialConditions: Literal[C.BYPASS, C.DEFAULT, C.ALLOW] = DEFAULT,
+        extrapolation: Literal[C.ANALYSIS_PRODUCT_DEFAULT, C.PARABOLIC, C.VELOCITY_PARABOLIC, C.NONE, C.LINEAR] = ANALYSIS_PRODUCT_DEFAULT,
         noStop: Boolean = OFF,
         maintainAttributes: Boolean = False,
-        solutionTechnique: SymbolicConstant = FULL_NEWTON,
+        solutionTechnique: Literal[C.QUASI_NEWTON, C.FULL_NEWTON] = FULL_NEWTON,
         reformKernel: int = 8,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
     ):
         """This method creates an ImplicitDynamicsStep object.
 
@@ -368,26 +370,26 @@ class ImplicitDynamicsStep(AnalysisStep):
         description: str = "",
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        application: SymbolicConstant = ANALYSIS_PRODUCT_DEFAULT,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
+        application: Literal[C.ANALYSIS_PRODUCT_DEFAULT, C.QUASI_STATIC, C.TRANSIENT_FIDELITY, C.MODERATE_DISSIPATION] = ANALYSIS_PRODUCT_DEFAULT,
         adiabatic: Boolean = OFF,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
-        maxInc: Union[SymbolicConstant, float] = DEFAULT,
-        hafTolMethod: SymbolicConstant = VALUE,
+        maxInc: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        hafTolMethod: Literal[C.ANALYSIS_PRODUCT_DEFAULT, C.VALUE, C.SCALE] = VALUE,
         haftol: Optional[float] = None,
         halfIncScaleFactor: Optional[float] = None,
         nohaf: Boolean = OFF,
-        amplitude: SymbolicConstant = STEP,
-        alpha: Union[SymbolicConstant, float] = DEFAULT,
-        initialConditions: SymbolicConstant = DEFAULT,
-        extrapolation: SymbolicConstant = ANALYSIS_PRODUCT_DEFAULT,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
+        alpha: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        initialConditions: Literal[C.BYPASS, C.DEFAULT, C.ALLOW] = DEFAULT,
+        extrapolation: Literal[C.ANALYSIS_PRODUCT_DEFAULT, C.PARABOLIC, C.VELOCITY_PARABOLIC, C.NONE, C.LINEAR] = ANALYSIS_PRODUCT_DEFAULT,
         noStop: Boolean = OFF,
-        solutionTechnique: SymbolicConstant = FULL_NEWTON,
+        solutionTechnique: Literal[C.QUASI_NEWTON, C.FULL_NEWTON] = FULL_NEWTON,
         reformKernel: int = 8,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
     ):
         """This method modifies the ImplicitDynamicsStep object.
 

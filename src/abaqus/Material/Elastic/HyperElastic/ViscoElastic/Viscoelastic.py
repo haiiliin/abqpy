@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .CombinedTestData import CombinedTestData
 from ....Others.Mechanical.Viscosity.Trs import Trs
 from ....TestData.ShearTestData import ShearTestData
 from ....TestData.VolumetricTestData import VolumetricTestData
+from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 from .....UtilityAndView.abaqusConstants import FORMULA, ISOTROPIC, NONE, PRONY, SymbolicConstant
 
 
@@ -100,12 +102,12 @@ class Viscoelastic:
     @abaqus_method_doc
     def __init__(
         self,
-        domain: SymbolicConstant,
+        domain: Literal[C.FREQUENCY, C.TIME],
         table: tuple,
-        frequency: SymbolicConstant = FORMULA,
-        type: SymbolicConstant = ISOTROPIC,
-        preload: SymbolicConstant = NONE,
-        time: SymbolicConstant = PRONY,
+        frequency: Literal[C.PRONY, C.CREEP_TEST_DATA, C.TABULAR, C.FREQUENCY, C.RELAXATION_TEST_DATA, C.FORMULA] = FORMULA,
+        type: Literal[C.FREQUENCY, C.TRACTION, C.ISOTROPIC, C.TABULAR] = ISOTROPIC,
+        preload: Literal[C.VOLUMETRIC, C.UNIAXIAL, C.TABULAR, C.FREQUENCY, C.UNIAXIAL_VOLUMETRIC, C.NONE] = NONE,
+        time: Literal[C.PRONY, C.CREEP_TEST_DATA, C.FREQUENCY_DATA, C.TIME, C.RELAXATION_TEST_DATA] = PRONY,
         errtol: float = 0,
         nmax: int = 13,
         volumetricTable: tuple = (),

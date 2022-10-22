@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import RLE24, SIZE_ON_SCREEN, SymbolicConstant
 from .._OptionsBase import _OptionsBase
 
@@ -46,8 +48,8 @@ class QuickTimeOptions(_OptionsBase):
     @abaqus_method_doc
     def setValues(
         self,
-        compressionMethod: SymbolicConstant = RLE24,
-        sizeDefinition: SymbolicConstant = SIZE_ON_SCREEN,
+        compressionMethod: Literal[C.RLE24, C.RAW24] = RLE24,
+        sizeDefinition: Literal[C.USER_DEFINED, C.SIZE_ON_SCREEN] = SIZE_ON_SCREEN,
         imageSize: Optional[int] = None,
     ):
         """This method modifies the QuickTimeOptions object.

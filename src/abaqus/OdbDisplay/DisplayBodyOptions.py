@@ -1,8 +1,10 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..PlotOptions.DGDisplayBodyOptions import DGDisplayBodyOptions
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, EXTERIOR, OFF, ON, SOLID, SymbolicConstant,
                                               VERY_THIN)
 
@@ -93,11 +95,11 @@ class DisplayBodyOptions(DGDisplayBodyOptions):
     def setValues(
         self,
         options: Optional["DisplayBodyOptions"] = None,
-        visibleEdges: SymbolicConstant = EXTERIOR,
+        visibleEdges: Literal[C.FEATURE, C.EXTERIOR, C.ALL, C.FREE, C.NONE, C.SHADED] = EXTERIOR,
         edgeColorWireHide: str = "",
         edgeColorFillShade: str = "",
-        edgeLineStyle: SymbolicConstant = SOLID,
-        edgeLineThickness: SymbolicConstant = VERY_THIN,
+        edgeLineStyle: Literal[C.DASHED, C.SOLID, C.DOT_DASH, C.DOTTED] = SOLID,
+        edgeLineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
         fillColor: str = "",
         colorCodeOverride: Boolean = ON,
         elementShrink: Boolean = OFF,

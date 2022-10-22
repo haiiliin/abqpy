@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -8,6 +9,7 @@ from .MeshDisplayOptions import MeshDisplayOptions
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..DisplayGroup.DisplayGroupInstance import DisplayGroupInstance
 from ..DisplayGroup.Leaf import Leaf
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, EMPTY_LEAF, OFF, SymbolicConstant, WIREFRAME
 
 
@@ -63,7 +65,7 @@ class PartDisplayOptions:
     @abaqus_method_doc
     def setValues(
         self,
-        renderStyle: SymbolicConstant = WIREFRAME,
+        renderStyle: Literal[C.SHADED, C.WIREFRAME, C.HIDDEN] = WIREFRAME,
         visibleDisplayGroups: Sequence[DisplayGroup] = (),
         engineeringFeatures: Boolean = OFF,
         renderBeamProfiles: Boolean = OFF,

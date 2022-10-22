@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -5,6 +6,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .MeanFieldInclusion import MeanFieldInclusion
 from .MeanFieldMatrix import MeanFieldMatrix
 from .MeanFieldVoid import MeanFieldVoid
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 from ...UtilityAndView.abaqusConstants import ALLISO, MT, NO, SPHERE, SymbolicConstant, UNIFORM
 
 
@@ -32,9 +34,9 @@ class MeanFieldHomogenization:
     def __init__(
         self,
         angleSubdivision: Optional[int] = None,
-        formulation: SymbolicConstant = MT,
-        isotropization: SymbolicConstant = ALLISO,
-        uniformMatrixStrain: SymbolicConstant = NO,
+        formulation: Literal[C.VOIGT, C.REUSS, C.MT, C.UNSPECIFIED, C.BALANCED, C.INVERSED_MT] = MT,
+        isotropization: Literal[C.EISO, C.PISO, C.ALLISO] = ALLISO,
+        uniformMatrixStrain: Literal[C.YES, C.NO] = NO,
     ):
         """This method creates a MeanFieldHomogenization object.
 
@@ -76,14 +78,14 @@ class MeanFieldHomogenization:
         table: tuple,
         material: str = "",
         isotropizationCoefficient: Optional[float] = None,
-        volumeFractionType: SymbolicConstant = UNIFORM,
+        volumeFractionType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
         volumeFractionFieldName: str = "",
-        aspectRatioType: SymbolicConstant = UNIFORM,
+        aspectRatioType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
         aspectRatioFieldName: str = "",
-        orientationTensorType: SymbolicConstant = UNIFORM,
+        orientationTensorType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
         orientationTensorFieldName: str = "",
-        shape: SymbolicConstant = SPHERE,
-        direction: Optional[SymbolicConstant] = None,
+        shape: Literal[C.SPHERE, C.PENNY, C.PROLATE, C.OBLATE, C.CYLINDER, C.ELLIPTIC_CYLINDER] = SPHERE,
+        direction: Optional[Literal[C.RANDOM3D, C.ORIENTATION_TENSOR, C.FIXED]] = None,
         strainConcentrationTensor: tuple = (),
         temperatureGradientConcentrationTensor: tuple = (),
     ):
@@ -197,14 +199,14 @@ class MeanFieldHomogenization:
         table: tuple,
         material: str = "",
         isotropizationCoefficient: Optional[float] = None,
-        volumeFractionType: SymbolicConstant = UNIFORM,
+        volumeFractionType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
         volumeFractionFieldName: str = "",
-        aspectRatioType: SymbolicConstant = UNIFORM,
+        aspectRatioType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
         aspectRatioFieldName: str = "",
-        orientationTensorType: SymbolicConstant = UNIFORM,
+        orientationTensorType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
         orientationTensorFieldName: str = "",
-        shape: SymbolicConstant = SPHERE,
-        direction: Optional[SymbolicConstant] = None,
+        shape: Literal[C.SPHERE, C.PENNY, C.PROLATE, C.OBLATE, C.CYLINDER, C.ELLIPTIC_CYLINDER] = SPHERE,
+        direction: Optional[Literal[C.RANDOM3D, C.ORIENTATION_TENSOR, C.FIXED]] = None,
         strainConcentrationTensor: tuple = (),
         temperatureGradientConcentrationTensor: tuple = (),
     ):

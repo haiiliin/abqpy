@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Interaction import Interaction
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import PLANE, SymbolicConstant, TABULAR
 
 
@@ -77,9 +79,9 @@ class AcousticImpedance(Interaction):
         name: str,
         createStepName: str,
         surface: Region,
-        definition: SymbolicConstant = TABULAR,
+        definition: Literal[C.TABULAR, C.NONREFLECTING] = TABULAR,
         interactionProperty: str = "",
-        nonreflectingType: SymbolicConstant = PLANE,
+        nonreflectingType: Literal[C.PLANE, C.ELLIPTICAL, C.IMPROVED, C.SPHERICAL, C.PROLATE, C.CIRCULAR, C.NONREFLECTING] = PLANE,
         radius: float = 1,
         semimajorAxis: float = 1,
         eccentricity: float = 0,
@@ -144,9 +146,9 @@ class AcousticImpedance(Interaction):
     @abaqus_method_doc
     def setValues(
         self,
-        definition: SymbolicConstant = TABULAR,
+        definition: Literal[C.TABULAR, C.NONREFLECTING] = TABULAR,
         interactionProperty: str = "",
-        nonreflectingType: SymbolicConstant = PLANE,
+        nonreflectingType: Literal[C.PLANE, C.ELLIPTICAL, C.IMPROVED, C.SPHERICAL, C.PROLATE, C.CIRCULAR, C.NONREFLECTING] = PLANE,
         radius: float = 1,
         semimajorAxis: float = 1,
         eccentricity: float = 0,

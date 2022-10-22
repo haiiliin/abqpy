@@ -19,6 +19,7 @@ from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch, ConstrainedSketchVertex
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AUTO_FIT_PTS, Boolean, IMPRINT, OFF, ON,
                                               PROJECT_BY_PROXIMITY, RIGHT,
                                               SIDE1, SymbolicConstant)
@@ -1382,7 +1383,7 @@ class Feature:
 
     @abaqus_method_doc
     def PartitionCellByExtrudeEdge(
-        self, cells: Sequence[Cell], edges: str, line: str, sense: SymbolicConstant
+        self, cells: Sequence[Cell], edges: str, line: str, sense: Literal[C.FORWARD, C.REVERSE]
     ) -> Feature:
         """This method partitions one or more cells by extruding selected edges in the given
         direction.

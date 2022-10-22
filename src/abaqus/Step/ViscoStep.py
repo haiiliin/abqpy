@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -16,6 +17,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AUTOMATIC, Boolean, DIRECT, FULL_NEWTON,
                                               IMPLICIT_EXPLICIT, LINEAR, NONE, OFF, PROPAGATED,
                                               SOLVER_DEFAULT, STEP, SymbolicConstant)
@@ -227,23 +229,23 @@ class ViscoStep(AnalysisStep):
         description: str = "",
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        stabilizationMethod: SymbolicConstant = NONE,
+        stabilizationMethod: Literal[C.DAMPING_FACTOR, C.DISSIPATED_ENERGY_FRACTION, C.NONE] = NONE,
         stabilizationMagnitude: Optional[float] = None,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
-        matrixSolver: SymbolicConstant = DIRECT,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
+        timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
+        matrixSolver: Literal[C.DIRECT, C.ITERATIVE] = DIRECT,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         initialInc: Optional[float] = None,
         maxNumInc: int = 100,
         minInc: Optional[float] = None,
         maxInc: float = 1,
-        integration: SymbolicConstant = IMPLICIT_EXPLICIT,
+        integration: Literal[C.EXPLICIT_ONLY, C.IMPLICIT_EXPLICIT] = IMPLICIT_EXPLICIT,
         cetol: float = 0,
-        amplitude: SymbolicConstant = STEP,
-        extrapolation: SymbolicConstant = LINEAR,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
+        extrapolation: Literal[C.PARABOLIC, C.NONE, C.LINEAR] = LINEAR,
         maintainAttributes: Boolean = False,
-        solutionTechnique: SymbolicConstant = FULL_NEWTON,
+        solutionTechnique: Literal[C.QUASI_NEWTON, C.FULL_NEWTON] = FULL_NEWTON,
         reformKernel: int = 8,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
         adaptiveDampingRatio: float = 0,
         continueDampingFactors: Boolean = OFF,
     ):
@@ -349,22 +351,22 @@ class ViscoStep(AnalysisStep):
         description: str = "",
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        stabilizationMethod: SymbolicConstant = NONE,
+        stabilizationMethod: Literal[C.DAMPING_FACTOR, C.DISSIPATED_ENERGY_FRACTION, C.NONE] = NONE,
         stabilizationMagnitude: Optional[float] = None,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
-        matrixSolver: SymbolicConstant = DIRECT,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
+        timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
+        matrixSolver: Literal[C.DIRECT, C.ITERATIVE] = DIRECT,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         initialInc: Optional[float] = None,
         maxNumInc: int = 100,
         minInc: Optional[float] = None,
         maxInc: float = 1,
-        integration: SymbolicConstant = IMPLICIT_EXPLICIT,
+        integration: Literal[C.EXPLICIT_ONLY, C.IMPLICIT_EXPLICIT] = IMPLICIT_EXPLICIT,
         cetol: float = 0,
-        amplitude: SymbolicConstant = STEP,
-        extrapolation: SymbolicConstant = LINEAR,
-        solutionTechnique: SymbolicConstant = FULL_NEWTON,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
+        extrapolation: Literal[C.PARABOLIC, C.NONE, C.LINEAR] = LINEAR,
+        solutionTechnique: Literal[C.QUASI_NEWTON, C.FULL_NEWTON] = FULL_NEWTON,
         reformKernel: int = 8,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
         adaptiveDampingRatio: float = 0,
         continueDampingFactors: Boolean = OFF,
     ):

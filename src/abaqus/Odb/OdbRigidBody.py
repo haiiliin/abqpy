@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .AnalyticSurface import AnalyticSurface
 from .OdbSet import OdbSet
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, INPUT, ON, SymbolicConstant
 
 
@@ -55,7 +57,7 @@ class OdbRigidBody:
     def __init__(
         self,
         referenceNode: OdbSet,
-        position: SymbolicConstant = INPUT,
+        position: Literal[C.INPUT, C.CENTER_OF_MASS] = INPUT,
         isothermal: Boolean = ON,
         elements: OdbSet = OdbSet("set", ()),
         tieNodes: OdbSet = OdbSet("set", ()),

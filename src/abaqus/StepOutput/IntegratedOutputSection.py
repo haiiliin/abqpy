@@ -5,6 +5,7 @@ from typing_extensions import Literal
 
 from ..Region.Region import Region
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, INDEPENDENT,
                                               OFF, SymbolicConstant)
 

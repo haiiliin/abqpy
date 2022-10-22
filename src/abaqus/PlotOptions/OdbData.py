@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -16,6 +17,7 @@ from .OdbDataSurfaceSet import OdbDataSurfaceSet
 from .OdbDiagnosticData import OdbDiagnosticData
 from .RigidBodyConstraint import RigidBodyConstraint
 from .TieConstraint import TieConstraint
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 from .._OptionsBase import _OptionsBase
 
@@ -112,7 +114,7 @@ class OdbData(_OptionsBase):
     diagnosticData: OdbDiagnosticData = OdbDiagnosticData()
 
     @abaqus_method_doc
-    def setValues(self, activeFrames: Optional[SymbolicConstant] = None, stepPeriods: tuple = ()):
+    def setValues(self, activeFrames: Optional[Literal[C.ALL]] = None, stepPeriods: tuple = ()):
         """This method modifies the OdbData object.
 
         Parameters

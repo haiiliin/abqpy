@@ -1,8 +1,10 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .NumberFormat import NumberFormat
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, COMPRESSEDINDEX, ENGINEERING, ON,
                                               SymbolicConstant)
 
@@ -27,8 +29,8 @@ class JournalOptions:
     @abaqus_method_doc
     def setValues(
         self,
-        replayGeometry: SymbolicConstant = COMPRESSEDINDEX,
-        recoverGeometry: SymbolicConstant = COMPRESSEDINDEX,
+        replayGeometry: Literal[C.COORDINATE, C.COMPRESSEDINDEX, C.INDEX] = COMPRESSEDINDEX,
+        recoverGeometry: Literal[C.COORDINATE, C.COMPRESSEDINDEX, C.INDEX] = COMPRESSEDINDEX,
         defaultFormat: Optional[NumberFormat] = None, 
         fieldReportFormat: Optional[NumberFormat] = None, 
         geometryFormat: Optional[NumberFormat] = None, 
@@ -61,7 +63,7 @@ class JournalOptions:
     def NumberFormat(
         self,
         blankPad: Boolean = ON,
-        format: SymbolicConstant = ENGINEERING,
+        format: Literal[C.AUTOMATIC, C.ENGINEERING, C.SCIENTIFIC] = ENGINEERING,
         numDigits: int = 6,
         precision: int = 0,
     ) -> NumberFormat:

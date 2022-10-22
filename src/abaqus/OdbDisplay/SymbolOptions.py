@@ -1,8 +1,10 @@
+from typing_extensions import Literal
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..PlotOptions.DGSymbolOptions import DGSymbolOptions
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALL_PRINCIPAL_COMPONENTS, Boolean, MODEL_SIZE,
                                               NOT_SET, OFF, ON, RESULTANT, SCIENTIFIC, SPECTRUM,
                                               SymbolicConstant, VERY_THIN, WIRE)
@@ -202,30 +204,30 @@ class SymbolOptions(DGSymbolOptions):
     def setValues(
         self,
         options: Optional["SymbolOptions"] = None,
-        vectorQuantity: SymbolicConstant = RESULTANT,
-        vectorLineThickness: SymbolicConstant = VERY_THIN,
-        vectorArrowheadStyle: SymbolicConstant = WIRE,
+        vectorQuantity: Literal[C.RESULTANT, C.VECTOR_COMPONENT] = RESULTANT,
+        vectorLineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
+        vectorArrowheadStyle: Literal[C.WIRE, C.FILLED, C.NONE] = WIRE,
         vectorColor: str = "",
-        vectorColorMethod: SymbolicConstant = SPECTRUM,
+        vectorColorMethod: Literal[C.SPECTRUM, C.UNIFORM] = SPECTRUM,
         vectorColorSpectrum: str = "",
         vectorIntervalNumber: int = 12,
         symbolDensity: float = 1,
         constantLengthArrows: Boolean = OFF,
-        tensorColorMethod: SymbolicConstant = SPECTRUM,
+        tensorColorMethod: Literal[C.SPECTRUM, C.UNIFORM] = SPECTRUM,
         tensorColorSpectrum: str = "",
         tensorIntervalNumber: int = 12,
         vectorMaxValueAutoCompute: Boolean = ON,
         vectorMaxValue: Optional[float] = None,
         vectorMinValueAutoCompute: Boolean = ON,
         vectorMinValue: Optional[float] = None,
-        tensorQuantity: SymbolicConstant = ALL_PRINCIPAL_COMPONENTS,
+        tensorQuantity: Literal[C.PRINCIPAL_COMPONENT, C.DIRECT_COMPONENT, C.ALL_DIRECT_COMPONENTS, C.ALL_PRINCIPAL_COMPONENTS] = ALL_PRINCIPAL_COMPONENTS,
         arrowSymbolSize: int = 6,
         tensorMaxPrinColor: str = "",
         tensorMinPrinColor: str = "",
         tensorMidPrinColor: str = "",
         tensorSelectedPrinColor: str = "",
-        tensorLineThickness: SymbolicConstant = VERY_THIN,
-        tensorArrowheadStyle: SymbolicConstant = WIRE,
+        tensorLineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
+        tensorArrowheadStyle: Literal[C.WIRE, C.FILLED, C.NONE] = WIRE,
         tensorMaxValueAutoCompute: Boolean = ON,
         tensorMaxValue: Optional[float] = None,
         tensorMinValueAutoCompute: Boolean = ON,

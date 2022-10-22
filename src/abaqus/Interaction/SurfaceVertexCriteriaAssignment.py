@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
@@ -27,7 +29,7 @@ class SurfaceVertexCriteriaAssignment:
 
     @abaqus_method_doc
     def changeValuesInStep(
-        self, stepName: str, index: int, value: Union[SymbolicConstant, float]
+        self, stepName: str, index: int, value: Union[Literal[C.NO_VERTICES, C.ALL_VERTICES], float]
     ):
         """This method allows modification of surface vertex criteria assignments already defined
         on surfaces in a given step.
@@ -50,7 +52,7 @@ class SurfaceVertexCriteriaAssignment:
 
     @abaqus_method_doc
     def appendInStep(
-        self, stepName: str, assignments: Union[SymbolicConstant, float]
+        self, stepName: str, assignments: Union[Literal[C.NO_VERTICES, C.ALL_VERTICES, C.GLOBAL], float]
     ):
         """This method allows addition of surface vertex criteria assignments to new surfaces in a
         given step.

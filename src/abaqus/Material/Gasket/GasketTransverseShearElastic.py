@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 from ...UtilityAndView.abaqusConstants import Boolean, OFF, STRESS, SymbolicConstant
 
 
@@ -33,7 +35,7 @@ class GasketTransverseShearElastic:
     def __init__(
         self,
         table: tuple,
-        variableUnits: SymbolicConstant = STRESS,
+        variableUnits: Literal[C.STRESS, C.FORCE] = STRESS,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

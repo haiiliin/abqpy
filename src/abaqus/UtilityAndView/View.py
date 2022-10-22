@@ -5,7 +5,9 @@ from typing import Optional, Sequence
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import ABSOLUTE, MODEL, OFF, Boolean
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant, abaqusConstants as C
 
 
@@ -329,7 +331,7 @@ class View:
 
     @abaqus_method_doc
     def setProjection(
-        self, projection: SymbolicConstant, drawImmediately: Boolean = False
+        self, projection: Literal[C.PARALLEL, C.PERSPECTIVE], drawImmediately: Boolean = False
     ):
         """This method modifies the appearance of three-dimensional models in the viewport.
         Choosing PERSPECTIVE makes a model appear more realistic by decreasing the apparent size

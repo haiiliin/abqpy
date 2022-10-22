@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Load import Load
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import GLOBAL, SymbolicConstant, UNIFORM, UNSET
 
 
@@ -44,13 +46,13 @@ class LineLoad(Load):
         name: str,
         createStepName: str,
         region: Region,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         comp1: Optional[float] = None,
         comp2: Optional[float] = None,
         comp3: Optional[float] = None,
         amplitude: str = UNSET,
-        system: SymbolicConstant = GLOBAL,
+        system: Literal[C.LOCAL, C.GLOBAL] = GLOBAL,
     ):
         """This method creates a LineLoad object.
 
@@ -101,13 +103,13 @@ class LineLoad(Load):
     @abaqus_method_doc
     def setValues(
         self,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         comp1: Optional[float] = None,
         comp2: Optional[float] = None,
         comp3: Optional[float] = None,
         amplitude: str = UNSET,
-        system: SymbolicConstant = GLOBAL,
+        system: Literal[C.LOCAL, C.GLOBAL] = GLOBAL,
     ):
         """This method modifies the data for an existing LineLoad object in the step where it is
         created.
@@ -144,7 +146,7 @@ class LineLoad(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        comp1: Union[SymbolicConstant, float] = ...,
+        comp1: Union[Literal[C.FREED, C.UNCHANGED], float] = ...,
         comp2: Union[SymbolicConstant, float] = ...,
         comp3: Union[SymbolicConstant, float] = ...,
         amplitude: str = "",

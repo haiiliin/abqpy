@@ -1,8 +1,10 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Filter import Filter
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, NONE, OFF, SymbolicConstant
 
 
@@ -60,10 +62,10 @@ class OperatorFilter(Filter):
         name: str,
         cutoffFrequency: float,
         order: int = 2,
-        operation: SymbolicConstant = NONE,
+        operation: Literal[C.MIN, C.MAX, C.NONE, C.ABS] = NONE,
         halt: Boolean = OFF,
         limit: Optional[float] = None,
-        invariant: SymbolicConstant = NONE,
+        invariant: Literal[C.FIRST, C.SECOND, C.NONE] = NONE,
     ):
         """This method creates an OperatorFilter object.
 
@@ -115,10 +117,10 @@ class OperatorFilter(Filter):
     def setValues(
         self,
         order: int = 2,
-        operation: SymbolicConstant = NONE,
+        operation: Literal[C.MIN, C.MAX, C.NONE, C.ABS] = NONE,
         halt: Boolean = OFF,
         limit: Optional[float] = None,
-        invariant: SymbolicConstant = NONE,
+        invariant: Literal[C.FIRST, C.SECOND, C.NONE] = NONE,
     ):
         """This method modifies the OperatorFilter object.
 

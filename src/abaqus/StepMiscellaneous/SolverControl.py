@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, OFF, ON, SymbolicConstant
 
 
@@ -21,9 +23,9 @@ class SolverControl:
         self,
         allowPropagation: Boolean = ON,
         resetDefaultValues: Boolean = OFF,
-        relativeTolerance: Union[SymbolicConstant, float] = DEFAULT,
-        maxIterations: SymbolicConstant = DEFAULT,
-        fillInLevel: SymbolicConstant = DEFAULT,
+        relativeTolerance: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        maxIterations: Literal[C.DEFAULT] = DEFAULT,
+        fillInLevel: Literal[C.DEFAULT] = DEFAULT,
     ):
         """This method modifies the SolverControl object.
 

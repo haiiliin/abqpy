@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
@@ -24,7 +26,7 @@ class Leaf:
     leafType: SymbolicConstant
 
     @abaqus_method_doc
-    def __init__(self, leafType: SymbolicConstant):
+    def __init__(self, leafType: Literal[C.ALL_ELEMENTS, C.ALL_SURFACES, C.EMPTY_LEAF, C.DEFAULT_MODEL, C.ALL_NODES]):
         """This method creates a Leaf object.
 
         .. note:: 

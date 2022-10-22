@@ -1,6 +1,8 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Amplitude import Amplitude
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import STEP, SymbolicConstant
 
 
@@ -35,7 +37,7 @@ class SmoothStepAmplitude(Amplitude):
     timeSpan: SymbolicConstant = STEP
 
     @abaqus_method_doc
-    def __init__(self, name: str, data: tuple, timeSpan: SymbolicConstant = STEP):
+    def __init__(self, name: str, data: tuple, timeSpan: Literal[C.STEP, C.TOTAL] = STEP):
         """This method creates a SmoothStepAmplitude object.
 
         .. note:: 
@@ -68,7 +70,7 @@ class SmoothStepAmplitude(Amplitude):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(self, timeSpan: SymbolicConstant = STEP):
+    def setValues(self, timeSpan: Literal[C.STEP, C.TOTAL] = STEP):
         """This method modifies the SmoothStepAmplitude object.
 
         Parameters

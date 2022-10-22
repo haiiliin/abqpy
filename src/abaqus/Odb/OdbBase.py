@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -15,6 +16,7 @@ from ..CustomKernel.RepositorySupport import RepositorySupport
 from ..Filter.Filter import Filter
 from ..Material.Material import Material
 from ..Section.Section import Section
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, CLOSEST, OFF, SymbolicConstant
 
 
@@ -109,7 +111,7 @@ class OdbBase:
         ...
 
     @abaqus_method_doc
-    def getFrame(self, frameValue: str, match: SymbolicConstant = CLOSEST):
+    def getFrame(self, frameValue: str, match: Literal[C.BEFORE, C.EXACT, C.AFTER, C.CLOSEST] = CLOSEST):
         """This method returns the frame at the specified time, frequency, or mode. It will not
         interpolate values between frames. The method is not applicable to an Odb object
         containing steps with different domains or to an Odb object containing a step with load

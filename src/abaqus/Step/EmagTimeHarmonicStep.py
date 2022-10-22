@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -19,6 +20,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, COMPLEX, OFF, SOLVER_DEFAULT, SymbolicConstant
 
 
@@ -158,7 +160,7 @@ class EmagTimeHarmonicStep(AnalysisStep):
         previous: str,
         frequencyRange: EmagTimeHarmonicFrequencyArray,
         description: str = "",
-        factorization: SymbolicConstant = COMPLEX,
+        factorization: Literal[C.COMPLEX, C.REAL_ONLY] = COMPLEX,
     ):
         """This method creates a EmagTimeHarmonicStep object.
 
@@ -196,7 +198,7 @@ class EmagTimeHarmonicStep(AnalysisStep):
 
     @abaqus_method_doc
     def setValues(
-        self, description: str = "", factorization: SymbolicConstant = COMPLEX
+        self, description: str = "", factorization: Literal[C.COMPLEX, C.REAL_ONLY] = COMPLEX
     ):
         """This method modifies the EmagTimeHarmonicStep object.
 

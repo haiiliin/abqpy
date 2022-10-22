@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, OFF, ON, SOLID, SymbolicConstant
 
 
@@ -54,7 +56,7 @@ class AcisFile:
     def openCatia(
         self,
         fileName: str,
-        topology: Optional[SymbolicConstant] = None,
+        topology: Optional[Literal[C.WIRE, C.SOLID, C.SHELL]] = None,
         convertUnits: Union[SymbolicConstant, Boolean] = OFF,
         combineBodies: Boolean = OFF,
     ):
@@ -96,7 +98,7 @@ class AcisFile:
         self,
         fileName: str,
         fileType: str,
-        topology: SymbolicConstant = SOLID,
+        topology: Literal[C.WIRE, C.SOLID, C.SHELL] = SOLID,
         convertUnits: Boolean = OFF,
     ):
         """This method creates an AcisFile object from a file containing Elysium Neutral
@@ -138,11 +140,11 @@ class AcisFile:
     def openIges(
         self,
         fileName: str,
-        trimCurve: SymbolicConstant = DEFAULT,
-        scaleFromFile: Union[SymbolicConstant, Boolean] = OFF,
+        trimCurve: Literal[C.IGES, C.DEFAULT] = DEFAULT,
+        scaleFromFile: Union[Literal[C.IGES], Boolean] = OFF,
         msbo: Boolean = False,
         includedLayers: tuple = (),
-        topology: SymbolicConstant = SOLID,
+        topology: Literal[C.WIRE, C.SOLID, C.SHELL] = SOLID,
         uniteWires: Union[SymbolicConstant, Boolean] = ON,
     ):
         """This method creates an AcisFile object from a file containing IGES-format geometry. This
@@ -199,7 +201,7 @@ class AcisFile:
         ...
 
     @abaqus_method_doc
-    def openParasolid(self, fileName: str, topology: SymbolicConstant = SOLID):
+    def openParasolid(self, fileName: str, topology: Literal[C.WIRE, C.SOLID, C.SHELL] = SOLID):
         """This method creates an AcisFile object from a file containing Parasolid-format geometry.
         This object is subsequently used by the PartFromGeometryFile method.
 
@@ -284,7 +286,7 @@ class AcisFile:
         ...
 
     @abaqus_method_doc
-    def openSolidworks(self, fileName: str, topology: SymbolicConstant = SOLID):
+    def openSolidworks(self, fileName: str, topology: Literal[C.WIRE, C.SOLID, C.SHELL] = SOLID):
         """This method creates an AcisFile object from a file containing Solidworks format
         geometry. This object is subsequently used by the PartFromGeometryFile method.
 

@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -16,6 +17,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AUTOMATIC, Boolean, FULL_NEWTON, IMPLICIT, LINEAR,
                                               NONE, OFF, PROPAGATED, SOLVER_DEFAULT, STEP,
                                               SymbolicConstant, TRANSIENT)
@@ -226,25 +228,25 @@ class CoupledTempDisplacementStep(AnalysisStep):
         name: str,
         previous: str,
         description: str = "",
-        response: SymbolicConstant = TRANSIENT,
+        response: Literal[C.TRANSIENT, C.STEADY_STATE] = TRANSIENT,
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        stabilizationMethod: SymbolicConstant = NONE,
+        stabilizationMethod: Literal[C.DAMPING_FACTOR, C.DISSIPATED_ENERGY_FRACTION, C.NONE] = NONE,
         stabilizationMagnitude: Optional[float] = None,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
         maxInc: Optional[float] = None,
         deltmx: float = 0,
         cetol: float = 0,
-        creepIntegration: SymbolicConstant = IMPLICIT,
-        solutionTechnique: SymbolicConstant = FULL_NEWTON,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        amplitude: SymbolicConstant = STEP,
-        extrapolation: SymbolicConstant = LINEAR,
+        creepIntegration: Literal[C.EXPLICIT, C.IMPLICIT, C.NONE] = IMPLICIT,
+        solutionTechnique: Literal[C.SEPARATED, C.FULL_NEWTON] = FULL_NEWTON,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
+        extrapolation: Literal[C.PARABOLIC, C.NONE, C.LINEAR] = LINEAR,
         maintainAttributes: Boolean = False,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
         adaptiveDampingRatio: float = 0,
         continueDampingFactors: Boolean = OFF,
     ):
@@ -348,24 +350,24 @@ class CoupledTempDisplacementStep(AnalysisStep):
     def setValues(
         self,
         description: str = "",
-        response: SymbolicConstant = TRANSIENT,
+        response: Literal[C.TRANSIENT, C.STEADY_STATE] = TRANSIENT,
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        stabilizationMethod: SymbolicConstant = NONE,
+        stabilizationMethod: Literal[C.DAMPING_FACTOR, C.DISSIPATED_ENERGY_FRACTION, C.NONE] = NONE,
         stabilizationMagnitude: Optional[float] = None,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
         maxInc: Optional[float] = None,
         deltmx: float = 0,
         cetol: float = 0,
-        creepIntegration: SymbolicConstant = IMPLICIT,
-        solutionTechnique: SymbolicConstant = FULL_NEWTON,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        amplitude: SymbolicConstant = STEP,
-        extrapolation: SymbolicConstant = LINEAR,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        creepIntegration: Literal[C.EXPLICIT, C.IMPLICIT, C.NONE] = IMPLICIT,
+        solutionTechnique: Literal[C.SEPARATED, C.FULL_NEWTON] = FULL_NEWTON,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
+        extrapolation: Literal[C.PARABOLIC, C.NONE, C.LINEAR] = LINEAR,
+        convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
         adaptiveDampingRatio: float = 0,
         continueDampingFactors: Boolean = OFF,
     ):

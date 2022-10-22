@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Load import Load
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM, UNSET
 
 
@@ -44,7 +46,7 @@ class SurfaceConcentrationFlux(Load):
         region: Region,
         magnitude: float,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
     ):
         """This method creates a SurfaceConcentrationFlux object.
@@ -89,7 +91,7 @@ class SurfaceConcentrationFlux(Load):
     def setValues(
         self,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing SurfaceConcentrationFlux object in the

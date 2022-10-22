@@ -1,6 +1,8 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Trs import Trs
+from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 from .....UtilityAndView.abaqusConstants import Boolean, NEWTONIAN, OFF, SymbolicConstant
 
 
@@ -38,7 +40,7 @@ class Viscosity:
     def __init__(
         self,
         table: tuple,
-        type: SymbolicConstant = NEWTONIAN,
+        type: Literal[C.NEWTONIAN] = NEWTONIAN,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

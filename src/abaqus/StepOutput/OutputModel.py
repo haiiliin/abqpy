@@ -10,6 +10,7 @@ from .TimePoint import TimePoint
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALL, Boolean, DEFAULT,
                                               EVERY_TIME_INCREMENT, EXCLUDE, INDEPENDENT,
                                               INTEGRATION_POINTS, J_INTEGRAL, MODEL, MTS, OFF, ON,
@@ -44,7 +45,7 @@ class OutputModel(ModelBase):
         sectionPoints: Union[Literal[C.DEFAULT], Sequence[int]] = DEFAULT,
         interactions: Optional[str] = None,
         rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
-        filter: Optional[SymbolicConstant] = None,
+        filter: Optional[Literal[C.ANTIALIASING]] = None,
         directions: Boolean = ON,
         fasteners: str = "",
         assembledFastener: str = "",
@@ -204,7 +205,7 @@ class OutputModel(ModelBase):
         rebar: Literal[C.EXCLUDE, C.INCLUDE, C.ONLY] = EXCLUDE,
         integratedOutputSection: str = "",
         springs: Optional[tuple] = None,
-        filter: Optional[SymbolicConstant] = None,
+        filter: Optional[Literal[C.ANTIALIASING]] = None,
         fasteners: str = "",
         assembledFastener: str = "",
         assembledFastenerSet: str = "",

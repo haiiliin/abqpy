@@ -1,6 +1,8 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .DerivedComponent import DerivedComponent
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import ABS, COMPONENT_NUMBER, POSITIVE, SymbolicConstant
 
 
@@ -71,13 +73,13 @@ class ConnectorPotential:
     @abaqus_method_doc
     def __init__(
         self,
-        componentStyle: SymbolicConstant = COMPONENT_NUMBER,
+        componentStyle: Literal[C.COMPONENT_NUMBER, C.DERIVED_COMPONENT] = COMPONENT_NUMBER,
         componentNumber: int = 0,
-        sign: SymbolicConstant = POSITIVE,
+        sign: Literal[C.POSITIVE, C.NEGATIVE] = POSITIVE,
         scaleFactor: float = 1,
         positiveExponent: float = 2,
         shiftFactor: float = 0,
-        hFunction: SymbolicConstant = ABS,
+        hFunction: Literal[C.MACAULEY, C.IDENTITY, C.ABS] = ABS,
     ):
         """This method creates a connector potential object to be used in conjunction with an
         allowable connector behavior option.

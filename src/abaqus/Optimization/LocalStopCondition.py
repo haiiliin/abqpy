@@ -1,6 +1,8 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .StopCondition import StopCondition
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ADD, LESS_THAN, MAXIMUM, MODEL, MOVEMENT, PREVIOUS,
                                               SymbolicConstant)
 
@@ -68,12 +70,12 @@ class LocalStopCondition(StopCondition):
         self,
         name: str,
         referenceFactor: float,
-        comparisonOperation: SymbolicConstant = LESS_THAN,
-        identifier: SymbolicConstant = MOVEMENT,
-        identifierOperation: SymbolicConstant = MAXIMUM,
-        referenceDesignCycle: SymbolicConstant = PREVIOUS,
-        referenceOperation: SymbolicConstant = ADD,
-        region: SymbolicConstant = MODEL,
+        comparisonOperation: Literal[C.EQUAL, C.GREATER_THAN_EQUAL, C.LESS_THAN_EQUAL, C.LESS_THAN, C.GREATER_THAN] = LESS_THAN,
+        identifier: Literal[C.TOTAL_ABSOLUTE_MOVEMENT, C.GROWTH_MOVEMENT, C.SURFACE_POINT_EQUIV_STRESS, C.ABSOLUTE_GROWTH_MOVEMENT, C.TASK_REGION_EQUIV_STRESS, C.SHRINK_MOVEMENT, C.RESTRICTED_TASK_REGION_EQUIV_STRESS, C.EQUIV_STRESS, C.MOVEMENT, C.FREE_TASK_REGION_EQUIV_STRESS, C.ABSOLUTE_SHRINK_MOVEMENT] = MOVEMENT,
+        identifierOperation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+        referenceDesignCycle: Literal[C.PREVIOUS, C.FIRST] = PREVIOUS,
+        referenceOperation: Literal[C.MULTIPLY, C.DIVIDE, C.SUBTRACT, C.ADD] = ADD,
+        region: Literal[C.MODEL] = MODEL,
     ):
         """This method creates a LocalStopCondition object.
 
@@ -132,12 +134,12 @@ class LocalStopCondition(StopCondition):
     @abaqus_method_doc
     def setValues(
         self,
-        comparisonOperation: SymbolicConstant = LESS_THAN,
-        identifier: SymbolicConstant = MOVEMENT,
-        identifierOperation: SymbolicConstant = MAXIMUM,
-        referenceDesignCycle: SymbolicConstant = PREVIOUS,
-        referenceOperation: SymbolicConstant = ADD,
-        region: SymbolicConstant = MODEL,
+        comparisonOperation: Literal[C.EQUAL, C.GREATER_THAN_EQUAL, C.LESS_THAN_EQUAL, C.LESS_THAN, C.GREATER_THAN] = LESS_THAN,
+        identifier: Literal[C.TOTAL_ABSOLUTE_MOVEMENT, C.GROWTH_MOVEMENT, C.SURFACE_POINT_EQUIV_STRESS, C.ABSOLUTE_GROWTH_MOVEMENT, C.TASK_REGION_EQUIV_STRESS, C.SHRINK_MOVEMENT, C.RESTRICTED_TASK_REGION_EQUIV_STRESS, C.EQUIV_STRESS, C.MOVEMENT, C.FREE_TASK_REGION_EQUIV_STRESS, C.ABSOLUTE_SHRINK_MOVEMENT] = MOVEMENT,
+        identifierOperation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+        referenceDesignCycle: Literal[C.PREVIOUS, C.FIRST] = PREVIOUS,
+        referenceOperation: Literal[C.MULTIPLY, C.DIVIDE, C.SUBTRACT, C.ADD] = ADD,
+        region: Literal[C.MODEL] = MODEL,
     ):
         """This method modifies the LocalStopCondition object.
 

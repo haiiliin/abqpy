@@ -1,8 +1,10 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .SpringDashpot import SpringDashpot
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 
@@ -82,7 +84,7 @@ class TwoPointSpringDashpot(SpringDashpot):
         self,
         name: str,
         regionPairs: tuple,
-        axis: SymbolicConstant,
+        axis: Literal[C.FIXED_DOF, C.NODAL_LINE],
         dof1: int = 0,
         dof2: int = 0,
         orientation: Optional[str] = None,

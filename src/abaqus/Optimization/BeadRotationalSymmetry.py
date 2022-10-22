@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import AXIS_1, SymbolicConstant
 
 
@@ -44,7 +46,7 @@ class BeadRotationalSymmetry(GeometricRestriction):
         name: str,
         angle: float,
         region: Region,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         csys: Optional[int] = None,
     ):
         """This method creates a BeadRotationalSymmetry object.
@@ -78,7 +80,7 @@ class BeadRotationalSymmetry(GeometricRestriction):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(self, axis: SymbolicConstant = AXIS_1, csys: Optional[int] = None):
+    def setValues(self, axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1, csys: Optional[int] = None):
         """This method modifies the BeadRotationalSymmetry object.
 
         Parameters

@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .DiagnosticPrint import DiagnosticPrint
 from .Monitor import Monitor
 from .Restart import Restart
 from ..Step.StepBase import StepBase
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, SymbolicConstant
 
 
@@ -109,7 +111,7 @@ class OutputStep(StepBase):
         return diagnosticPrint
 
     @abaqus_method_doc
-    def Monitor(self, node: str, dof: SymbolicConstant, frequency: int) -> Monitor:
+    def Monitor(self, node: str, dof: Literal[C.NN11, C.NT, C.U3, C.NT30, C.UR2, C.ELECTRICAL_POTENTIAL, C.NT11, C.U1, C.UR3, C.WARP, C.FLUID_PRESSURE, C.UR1, C.NN30, C.U2], frequency: int) -> Monitor:
         """This method creates a request for a degree of freedom to be monitored in a general or
         modal procedure.
 

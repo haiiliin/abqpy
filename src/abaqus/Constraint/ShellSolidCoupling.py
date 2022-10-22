@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Constraint import Constraint
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, COMPUTED, DEFAULT, OFF, SymbolicConstant
 
 
@@ -59,9 +61,9 @@ class ShellSolidCoupling(Constraint):
         name: str,
         shellEdge: Region,
         solidFace: Region,
-        positionToleranceMethod: SymbolicConstant = COMPUTED,
+        positionToleranceMethod: Literal[C.COMPUTED, C.SPECIFIED] = COMPUTED,
         positionTolerance: float = 0,
-        influenceDistanceMethod: SymbolicConstant = DEFAULT,
+        influenceDistanceMethod: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,
         influenceDistance: float = 0,
     ):
         """This method creates a ShellSolidCoupling object.
@@ -104,9 +106,9 @@ class ShellSolidCoupling(Constraint):
     @abaqus_method_doc
     def setValues(
         self,
-        positionToleranceMethod: SymbolicConstant = COMPUTED,
+        positionToleranceMethod: Literal[C.COMPUTED, C.SPECIFIED] = COMPUTED,
         positionTolerance: float = 0,
-        influenceDistanceMethod: SymbolicConstant = DEFAULT,
+        influenceDistanceMethod: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,
         influenceDistance: float = 0,
     ):
         """This method modifies the ShellSolidCoupling object.

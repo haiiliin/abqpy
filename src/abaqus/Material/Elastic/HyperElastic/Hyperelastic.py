@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -7,6 +8,7 @@ from ...TestData.BiaxialTestData import BiaxialTestData
 from ...TestData.PlanarTestData import PlanarTestData
 from ...TestData.UniaxialTestData import UniaxialTestData
 from ...TestData.VolumetricTestData import VolumetricTestData
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 from ....UtilityAndView.abaqusConstants import (Boolean, DEFAULT, FITTED_VALUE, FUNG_ANISOTROPIC,
                                                 INCOMPRESSIBLE, ISOTROPIC, LONG_TERM, OFF, ON,
                                                 STRAIN, SymbolicConstant, UNIAXIAL, UNKNOWN)
@@ -116,21 +118,21 @@ class Hyperelastic:
     def __init__(
         self,
         table: tuple,
-        type: SymbolicConstant = UNKNOWN,
-        moduliTimeScale: SymbolicConstant = LONG_TERM,
+        type: Literal[C.MARLOW, C.MOONEY_RIVLIN, C.POLYNOMIAL, C.YEOH, C.ARRUDA_BOYCE, C.REDUCED_POLYNOMIAL, C.UNKNOWN, C.VALANIS_LANDEL, C.USER, C.OGDEN, C.VAN_DER_WAALS, C.NEO_HOOKE] = UNKNOWN,
+        moduliTimeScale: Literal[C.INSTANTANEOUS, C.LONG_TERM] = LONG_TERM,
         temperatureDependency: Boolean = OFF,
         n: int = 1,
-        beta: Union[SymbolicConstant, float] = FITTED_VALUE,
+        beta: Union[Literal[C.FITTED_VALUE, C.VAN_DER_WAALS], float] = FITTED_VALUE,
         testData: Boolean = ON,
         compressible: Boolean = OFF,
         properties: int = 0,
-        deviatoricResponse: SymbolicConstant = UNIAXIAL,
-        volumetricResponse: SymbolicConstant = DEFAULT,
+        deviatoricResponse: Literal[C.PLANAR, C.UNIAXIAL, C.BIAXIAL] = UNIAXIAL,
+        volumetricResponse: Literal[C.LATERAL_NOMINAL_STRAIN, C.VOLUMETRIC_DATA, C.DEFAULT, C.POISSON_RATIO] = DEFAULT,
         poissonRatio: float = 0,
-        materialType: SymbolicConstant = ISOTROPIC,
-        anisotropicType: SymbolicConstant = FUNG_ANISOTROPIC,
-        formulation: SymbolicConstant = STRAIN,
-        behaviorType: SymbolicConstant = INCOMPRESSIBLE,
+        materialType: Literal[C.ANISOTROPIC, C.ISOTROPIC] = ISOTROPIC,
+        anisotropicType: Literal[C.USER_DEFINED, C.FUNG_ANISOTROPIC, C.HOLZAPFEL, C.FUNG_ORTHOTROPIC] = FUNG_ANISOTROPIC,
+        formulation: Literal[C.STRAIN, C.INVARIANT] = STRAIN,
+        behaviorType: Literal[C.COMPRESSIBLE, C.INCOMPRESSIBLE] = INCOMPRESSIBLE,
         dependencies: int = 0,
         localDirections: int = 0,
     ):

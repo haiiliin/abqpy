@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -5,6 +6,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Interaction import Interaction
 from ..BasicGeometry.ModelDot import ModelDot
 from ..Region.RegionArray import RegionArray
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import BLOCKING_ALL, Boolean, OFF, ON, SymbolicConstant
 
 
@@ -155,7 +157,7 @@ class CavityRadiation(Interaction):
         surfaces: RegionArray,
         surfaceEmissivities: tuple,
         ambientTemp: Optional[float] = None,
-        blocking: SymbolicConstant = BLOCKING_ALL,
+        blocking: Literal[C.NO_BLOCKING, C.BLOCKING_ALL, C.PARTIAL_BLOCKING] = BLOCKING_ALL,
         blockingSurfaces: Optional[RegionArray] = None,
         rangeOfView: Optional[float] = None,
         surfaceReflection: Boolean = ON,
@@ -363,7 +365,7 @@ class CavityRadiation(Interaction):
         self,
         surfaceEmissivities: tuple = (),
         ambientTemp: Optional[float] = None,
-        blocking: SymbolicConstant = BLOCKING_ALL,
+        blocking: Literal[C.NO_BLOCKING, C.BLOCKING_ALL, C.PARTIAL_BLOCKING] = BLOCKING_ALL,
         blockingSurfaces: Optional[RegionArray] = None,
         rangeOfView: Optional[float] = None,
         surfaceReflection: Boolean = ON,
@@ -553,7 +555,7 @@ class CavityRadiation(Interaction):
     def setValuesInStep(
         self,
         stepName: str,
-        blocking: SymbolicConstant = BLOCKING_ALL,
+        blocking: Literal[C.NO_BLOCKING, C.BLOCKING_ALL, C.PARTIAL_BLOCKING] = BLOCKING_ALL,
         blockingSurfaces: Optional[RegionArray] = None,
         rangeOfView: Optional[float] = None,
         surfaceReflection: Boolean = ON,

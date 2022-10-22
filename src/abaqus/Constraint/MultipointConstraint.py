@@ -1,9 +1,11 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Constraint import Constraint
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, DOF_MODE_MPC, OFF, SymbolicConstant
 
 
@@ -64,10 +66,10 @@ class MultipointConstraint(Constraint):
         name: str,
         surface: Region,
         controlPoint: Region,
-        mpcType: SymbolicConstant,
+        mpcType: Literal[C.USER_MPC, C.BEAM_MPC, C.ELBOW_MPC, C.TIE_MPC, C.MPC, C.PIN_MPC, C.LINK_MPC],
         csys: Optional[str] = None,
         userType: int = 0,
-        userMode: SymbolicConstant = DOF_MODE_MPC,
+        userMode: Literal[C.DOF_MODE_MPC, C.USER_MPC, C.NODE_MODE_MPC] = DOF_MODE_MPC,
     ):
         """This method creates a MultipointConstraint object.
 
@@ -114,7 +116,7 @@ class MultipointConstraint(Constraint):
         self,
         csys: Optional[str] = None,
         userType: int = 0,
-        userMode: SymbolicConstant = DOF_MODE_MPC,
+        userMode: Literal[C.DOF_MODE_MPC, C.USER_MPC, C.NODE_MODE_MPC] = DOF_MODE_MPC,
     ):
         """This method modifies the MultipointConstraint object.
 

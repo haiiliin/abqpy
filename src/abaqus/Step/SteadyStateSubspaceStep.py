@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -19,6 +20,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALL_FREQUENCIES, Boolean, COMPLEX, LOGARITHMIC, OFF,
                                               ON, SOLVER_DEFAULT, SymbolicConstant)
 
@@ -181,12 +183,12 @@ class SteadyStateSubspaceStep(AnalysisStep):
         previous: str,
         frequencyRange: SteadyStateSubspaceFrequencyArray,
         description: str = "",
-        factorization: SymbolicConstant = COMPLEX,
-        scale: SymbolicConstant = LOGARITHMIC,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
+        factorization: Literal[C.COMPLEX, C.REAL_ONLY] = COMPLEX,
+        scale: Literal[C.LINEAR, C.LOGARITHMIC] = LOGARITHMIC,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         maintainAttributes: Boolean = False,
         subdivideUsingEigenfrequencies: Boolean = ON,
-        projection: SymbolicConstant = ALL_FREQUENCIES,
+        projection: Literal[C.CONSTANT, C.RANGE, C.ALL_FREQUENCIES, C.PROPERTY_CHANGE, C.EIGENFREQUENCY] = ALL_FREQUENCIES,
         maxDampingChange: float = 0,
         maxStiffnessChange: float = 0,
         frictionDamping: Boolean = OFF,
@@ -254,11 +256,11 @@ class SteadyStateSubspaceStep(AnalysisStep):
     def setValues(
         self,
         description: str = "",
-        factorization: SymbolicConstant = COMPLEX,
-        scale: SymbolicConstant = LOGARITHMIC,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
+        factorization: Literal[C.COMPLEX, C.REAL_ONLY] = COMPLEX,
+        scale: Literal[C.LINEAR, C.LOGARITHMIC] = LOGARITHMIC,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         subdivideUsingEigenfrequencies: Boolean = ON,
-        projection: SymbolicConstant = ALL_FREQUENCIES,
+        projection: Literal[C.CONSTANT, C.RANGE, C.ALL_FREQUENCIES, C.PROPERTY_CHANGE, C.EIGENFREQUENCY] = ALL_FREQUENCIES,
         maxDampingChange: float = 0,
         maxStiffnessChange: float = 0,
         frictionDamping: Boolean = OFF,

@@ -1,8 +1,10 @@
+from typing_extensions import Literal
 from typing import List, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..ConstrainedSketchBase import ConstrainedSketchBase
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 from ...UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 
@@ -54,7 +56,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         center: Sequence[float],
         point1: Sequence[float],
         point2: Sequence[float],
-        direction: SymbolicConstant,
+        direction: Literal[C.COUNTERCLOCKWISE, C.CLOCKWISE],
     ):
         """This method constructs an arc using a center point and two vertices. The Arc object is
         added to the geometry repository of the ConstrainedSketch object. The arc is created in

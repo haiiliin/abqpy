@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, SSH, SymbolicConstant
 
 
@@ -61,7 +63,7 @@ class NetworkDatabaseConnector:
         hostName: str,
         directory: str,
         remoteAbaqusDriverName: str = "",
-        remoteLoginMechanism: SymbolicConstant = SSH,
+        remoteLoginMechanism: Literal[C.SSH, C.RSH] = SSH,
         sshPath: str = "",
         serverPort: int = 0,
         connectionPort: int = 0,
@@ -142,7 +144,7 @@ class NetworkDatabaseConnector:
     def setValues(
         self,
         remoteAbaqusDriverName: str = "",
-        remoteLoginMechanism: SymbolicConstant = SSH,
+        remoteLoginMechanism: Literal[C.SSH, C.RSH] = SSH,
         sshPath: str = "",
         serverPort: int = 0,
         connectionPort: int = 0,

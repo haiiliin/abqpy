@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
@@ -21,7 +23,7 @@ class SmoothingAssignment:
     """
 
     @abaqus_method_doc
-    def changeValuesInStep(self, stepName: str, index: int, value: SymbolicConstant):
+    def changeValuesInStep(self, stepName: str, index: int, value: Literal[C.TOROIDAL, C.SPHERICAL, C.REVOLUTION, C.NONE]):
         """This method allows modification of surface smoothing assignments already defined on
         surfaces in a given step.
 
@@ -42,7 +44,7 @@ class SmoothingAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(self, stepName: str, assignments: SymbolicConstant):
+    def appendInStep(self, stepName: str, assignments: Literal[C.TOROIDAL, C.SPHERICAL, C.REVOLUTION, C.NONE]):
         """This method allows addition of surface smoothing assignments to new surfaces in a given
         step.
 

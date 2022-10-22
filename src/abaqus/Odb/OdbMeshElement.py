@@ -1,8 +1,10 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .SectionCategory import SectionCategory
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import CLOSEST, SymbolicConstant
 
 
@@ -61,7 +63,7 @@ class OdbMeshElement:
         faceIndex: str,
         stepName: str = "",
         frameValue: str = "",
-        match: SymbolicConstant = CLOSEST,
+        match: Literal[C.BEFORE, C.EXACT, C.AFTER, C.CLOSEST] = CLOSEST,
     ):
         """This method returns the normal direction for the element face.
 

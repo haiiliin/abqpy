@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, EXTERIOR, OFF, ON, SymbolicConstant
 
 
@@ -25,7 +27,7 @@ class MeshDisplayOptions:
         self,
         nodeLabels: Boolean = OFF,
         elementLabels: Boolean = OFF,
-        meshVisibleEdges: SymbolicConstant = EXTERIOR,
+        meshVisibleEdges: Literal[C.FEATURE, C.EXTERIOR, C.ALL, C.FREE, C.NONE] = EXTERIOR,
         featureAngle: float = 20,
         meshEdgesInShaded: Boolean = ON,
         meshTechnique: Boolean = OFF,

@@ -1,5 +1,7 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
@@ -24,7 +26,7 @@ class SlidingFormulationAssignment:
     """
 
     @abaqus_method_doc
-    def changeValuesInStep(self, stepName: str, index: int, value: SymbolicConstant):
+    def changeValuesInStep(self, stepName: str, index: int, value: Literal[C.SMALL_SLIDING, C.NONE]):
         """This method allows you to modify sliding formulation assignments already defined on
         surface pairs in a given step.
 
@@ -44,7 +46,7 @@ class SlidingFormulationAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(self, stepName: str, assignments: SymbolicConstant):
+    def appendInStep(self, stepName: str, assignments: Literal[C.SMALL_SLIDING, C.NONE, C.GLOBAL]):
         """This method allows you to add sliding formulation assignments to new surface pairs in a
         given step.
 

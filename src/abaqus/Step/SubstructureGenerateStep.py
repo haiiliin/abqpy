@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -23,6 +24,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, NONE, OFF, SymbolicConstant, WHOLE_MODEL
 
 
@@ -197,7 +199,7 @@ class SubstructureGenerateStep(AnalysisStep):
         previous: str,
         substructureIdentifier: int,
         description: str = "",
-        recoveryMatrix: SymbolicConstant = WHOLE_MODEL,
+        recoveryMatrix: Literal[C.WHOLE_MODEL, C.REGION, C.NONE] = WHOLE_MODEL,
         recoveryRegion: Optional[Region] = None,
         computeGravityLoadVectors: Boolean = False,
         computeReducedMassMatrix: Boolean = False,
@@ -205,15 +207,15 @@ class SubstructureGenerateStep(AnalysisStep):
         computeReducedViscousDampingMatrix: Boolean = False,
         evaluateFrequencyDependentProperties: Boolean = False,
         frequency: float = 0,
-        retainedEigenmodesMethod: SymbolicConstant = NONE,
+        retainedEigenmodesMethod: Literal[C.MODE_RANGE, C.FREQUENCY_RANGE, C.NONE] = NONE,
         modeRange: Optional[SubstructureGenerateModesArray] = None,
         frequencyRange: Optional[SubstructureGenerateFrequencyArray] = None,
-        globalDampingField: SymbolicConstant = NONE,
+        globalDampingField: Literal[C.ACOUSTIC, C.ALL, C.MECHANICAL, C.NONE] = NONE,
         alphaDampingRatio: float = 0,
         betaDampingRatio: float = 0,
         structuralDampingRatio: float = 0,
-        viscousDampingControl: SymbolicConstant = NONE,
-        structuralDampingControl: SymbolicConstant = NONE,
+        viscousDampingControl: Literal[C.COMBINED, C.NONE, C.FACTOR, C.ELEMENT] = NONE,
+        structuralDampingControl: Literal[C.COMBINED, C.NONE, C.FACTOR, C.ELEMENT] = NONE,
     ):
         """This method creates a SubstructureGenerateStep object.
 
@@ -300,7 +302,7 @@ class SubstructureGenerateStep(AnalysisStep):
     def setValues(
         self,
         description: str = "",
-        recoveryMatrix: SymbolicConstant = WHOLE_MODEL,
+        recoveryMatrix: Literal[C.WHOLE_MODEL, C.REGION, C.NONE] = WHOLE_MODEL,
         recoveryRegion: Optional[Region] = None,
         computeGravityLoadVectors: Boolean = False,
         computeReducedMassMatrix: Boolean = False,
@@ -308,15 +310,15 @@ class SubstructureGenerateStep(AnalysisStep):
         computeReducedViscousDampingMatrix: Boolean = False,
         evaluateFrequencyDependentProperties: Boolean = False,
         frequency: float = 0,
-        retainedEigenmodesMethod: SymbolicConstant = NONE,
+        retainedEigenmodesMethod: Literal[C.MODE_RANGE, C.FREQUENCY_RANGE, C.NONE] = NONE,
         modeRange: Optional[SubstructureGenerateModesArray] = None,
         frequencyRange: Optional[SubstructureGenerateFrequencyArray] = None,
-        globalDampingField: SymbolicConstant = NONE,
+        globalDampingField: Literal[C.ACOUSTIC, C.ALL, C.MECHANICAL, C.NONE] = NONE,
         alphaDampingRatio: float = 0,
         betaDampingRatio: float = 0,
         structuralDampingRatio: float = 0,
-        viscousDampingControl: SymbolicConstant = NONE,
-        structuralDampingControl: SymbolicConstant = NONE,
+        viscousDampingControl: Literal[C.COMBINED, C.NONE, C.FACTOR, C.ELEMENT] = NONE,
+        structuralDampingControl: Literal[C.COMBINED, C.NONE, C.FACTOR, C.ELEMENT] = NONE,
     ):
         """This method modifies the SubstructureGenerateStep object.
 

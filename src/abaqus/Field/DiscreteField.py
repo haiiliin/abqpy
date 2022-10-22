@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -6,6 +7,7 @@ from .DataTableArray import DataTableArray
 from .Field import Field
 from ..Assembly.PartInstance import PartInstance
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, CARTESIAN, INSIDE, MEDIUM, NODES, OFF,
                                               SymbolicConstant)
 
@@ -60,12 +62,12 @@ class DiscreteField(Field):
         self,
         name: str,
         defaultValues: tuple,
-        fieldType: SymbolicConstant,
-        location: SymbolicConstant = NODES,
+        fieldType: Literal[C.PRESCRIBEDCONDITION_DOF, C.SCALAR, C.ORIENTATION],
+        location: Literal[C.NODES, C.ELEMENTS] = NODES,
         dataWidth: int = 1,
         data: Optional[DataTableArray] = None,
         description: str = "",
-        orientationType: SymbolicConstant = CARTESIAN,
+        orientationType: Literal[C.CYLINDRICAL, C.CARTESIAN, C.SPHERICAL] = CARTESIAN,
         partLevelOrientation: Boolean = OFF,
     ):
         """This method creates a DiscreteField object.
@@ -168,7 +170,7 @@ class DiscreteField(Field):
     def DiscreteFieldFromAnalytic(
         self,
         name: str,
-        location: SymbolicConstant,
+        location: Literal[C.NODES, C.ELEMENTS],
         analyticFieldName: str,
         region: Region,
     ):
@@ -205,11 +207,11 @@ class DiscreteField(Field):
     @abaqus_method_doc
     def setValues(
         self,
-        location: SymbolicConstant = NODES,
+        location: Literal[C.NODES, C.ELEMENTS] = NODES,
         dataWidth: int = 1,
         data: Optional[DataTableArray] = None,
         description: str = "",
-        orientationType: SymbolicConstant = CARTESIAN,
+        orientationType: Literal[C.CYLINDRICAL, C.CARTESIAN, C.SPHERICAL] = CARTESIAN,
         partLevelOrientation: Boolean = OFF,
     ):
         """This method modifies the DiscreteField object.
