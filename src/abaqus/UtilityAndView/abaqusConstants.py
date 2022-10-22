@@ -2571,6 +2571,7 @@ IGES = abaqusConstants.IGES
 ANALYTICAL_FIELD_THICKNESS = abaqusConstants.ANALYTICAL_FIELD_THICKNESS
 NORMAL_DATUM = abaqusConstants.NORMAL_DATUM
 PRIMARY_DATUM = abaqusConstants.PRIMARY_DATUM
+CODE = abaqusConstants.CODE
 # okay decompiling abaqusConstants.pyc
 
 end_all()
