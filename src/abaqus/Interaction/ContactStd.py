@@ -1,6 +1,7 @@
 from typing import Union, overload, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .ContactPropertyAssignment import ContactPropertyAssignment
 from .InitializationAssignment import InitializationAssignment
 from .Interaction import Interaction

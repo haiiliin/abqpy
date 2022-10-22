@@ -1,4 +1,5 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import (Boolean, FEATURE, OFF, ON, SOLID, SymbolicConstant,
                                               VERY_THIN, WIREFRAME)
 

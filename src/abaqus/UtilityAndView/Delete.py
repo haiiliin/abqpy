@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_function_doc
+
 from ..UtilityAndView.abaqusConstants import Boolean
 
 """The deleteObjectCallback module provides methods that allow you to register a callback 
