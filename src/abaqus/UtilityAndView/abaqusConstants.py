@@ -2597,6 +2597,31 @@ TWO_SIDED = abaqusConstants.TWO_SIDED
 SMALL_SLIDING = abaqusConstants.SMALL_SLIDING
 NO_CRUSH = abaqusConstants.NO_CRUSH
 NO_TRIGGER = abaqusConstants.NO_TRIGGER
+LOCATION = abaqusConstants.LOCATION
+DEPENDENT = abaqusConstants.DEPENDENT
+MAIN = abaqusConstants.MAIN
+SECONDARY = abaqusConstants.SECONDARY
+ELEMENT_ORDER_SMOOTHING = abaqusConstants.ELEMENT_ORDER_SMOOTHING
+LINEAR_SMOOTHING = abaqusConstants.LINEAR_SMOOTHING
+QUADRATIC_SMOOTHING = abaqusConstants.QUADRATIC_SMOOTHING
+NO_VERTICES = abaqusConstants.NO_VERTICES
+ALL_VERTICES = abaqusConstants.ALL_VERTICES
+SIMULATION_SUBMITTED = abaqusConstants.SIMULATION_SUBMITTED
+HEALER_JOB = abaqusConstants.HEALER_JOB
+COMPLEX_ENVELOPE_MAX_ABS = abaqusConstants.COMPLEX_ENVELOPE_MAX_ABS
+COMPLEX_ENVELOPE_MIN = abaqusConstants.COMPLEX_ENVELOPE_MIN
+COMPLEX_ENVELOPE_MAX = abaqusConstants.COMPLEX_ENVELOPE_MAX
+TRANSFORM = abaqusConstants.TRANSFORM
+WIRE_FRAME = abaqusConstants.WIRE_FRAME
+FIELD_ANALYTICAL = abaqusConstants.FIELD_ANALYTICAL
+EXTRA = abaqusConstants.EXTRA
+API = abaqusConstants.API
+ALLOW = abaqusConstants.ALLOW
+BYPASS = abaqusConstants.BYPASS
+FACET = abaqusConstants.FACET
+S11 = abaqusConstants.S11
+STEEL = abaqusConstants.STEEL
+S22 = abaqusConstants.S22
 # okay decompiling abaqusConstants.pyc
 
 end_all()
