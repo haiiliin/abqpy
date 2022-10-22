@@ -1,6 +1,7 @@
 from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc
+
 from .OdbAnalysisError import OdbAnalysisError
 from .OdbAnalysisWarning import OdbAnalysisWarning
 from .OdbDiagnosticStep import OdbDiagnosticStep

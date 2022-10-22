@@ -1,4 +1,5 @@
 from abqpy.decorators import abaqus_class_doc
+
 from ..Adaptivity.AdaptivityModel import AdaptivityModel
 from ..Amplitude.AmplitudeModel import AmplitudeModel
 from ..Assembly.AssemblyModel import AssemblyModel
