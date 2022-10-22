@@ -1,6 +1,7 @@
 from typing import overload, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .HistoryPoint import HistoryPoint
 from .HistoryRegion import HistoryRegion
 from .OdbFrame import OdbFrame

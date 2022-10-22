@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
+
 from .OdbSequenceAnalyticSurfaceSegment import OdbSequenceAnalyticSurfaceSegment
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
 

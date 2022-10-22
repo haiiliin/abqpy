@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from typing import Optional, Union, overload, Sequence, Tuple
-from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
+
 from .Region import Region
 from .RegionPartBase import RegionPartBase
 from .Set import Set
@@ -20,6 +21,7 @@ from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
 from ..UtilityAndView.abaqusConstants import Boolean, OVERWRITE, UNION, INTERSECTION, DIFFERENCE
+
 
 @abaqus_class_doc
 class RegionPart(RegionPartBase):

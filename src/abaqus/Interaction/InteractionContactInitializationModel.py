@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
+
 from .StdInitialization import StdInitialization
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import ADJUST, SymbolicConstant

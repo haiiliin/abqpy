@@ -1,6 +1,7 @@
 from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from ..Datum.DatumCsys import DatumCsys
 from ..Region.Region import Region
