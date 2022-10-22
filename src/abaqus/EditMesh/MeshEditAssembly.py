@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import overload, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -7,6 +8,7 @@ from ..Datum.DatumCsys import DatumCsys
 from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshNode import MeshNode
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, OUTWARD, SymbolicConstant
 
 
@@ -24,7 +26,7 @@ class MeshEditAssembly(AssemblyBase):
     """
 
     @abaqus_method_doc
-    def collapseMeshEdge(self, edge: str, collapseMethod: SymbolicConstant):
+    def collapseMeshEdge(self, edge: str, collapseMethod: Literal[C.FORWARD, C.REVERSE, C.AVERAGE]):
         """This method collapses an edge of a quadrilateral or triangular element of a part
         instance.
 

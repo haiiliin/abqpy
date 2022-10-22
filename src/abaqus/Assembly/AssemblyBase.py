@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Union, overload, Dict, List, Optional, Tuple, Sequence
 
 from abaqus.Datum.DatumCsys import DatumCsys
@@ -25,6 +26,7 @@ from ..Region.Set import Set
 from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import ALL_EDGES, Boolean, LOW, OFF, ON, SymbolicConstant
 
 
@@ -287,14 +289,14 @@ class AssemblyBase(AssemblyFeature):
     def getMassProperties(
         self,
         regions: str = "",
-        relativeAccuracy: SymbolicConstant = LOW,
+        relativeAccuracy: Literal[C.LOW, C.MEDIUM, C.HIGH] = LOW,
         useMesh: Boolean = False,
         specifyDensity: Boolean = False,
         density: str = "",
         specifyThickness: Boolean = False,
         thickness: str = "",
         miAboutCenterOfMass: Boolean = True,
-        miAboutPoint: Tuple[float, float, float] = (),
+        miAboutPoint: Tuple[float, float, float] = ...,
     ):
         """This method returns the mass properties of the assembly, or instances or regions. Only
         beams, trusses, shells, solids, point, nonstructural mass, and rotary inertia elements
@@ -673,7 +675,7 @@ class AssemblyBase(AssemblyFeature):
     def projectReferencesOntoSketch(
         self,
         sketch: str,
-        filter: SymbolicConstant = ALL_EDGES,
+        filter: Literal[C.ALL_EDGES, C.COPLANAR_EDGES] = ALL_EDGES,
         upToFeature: Optional[AssemblyFeature] = None,
         edges: tuple = (),
         vertices: tuple = (),

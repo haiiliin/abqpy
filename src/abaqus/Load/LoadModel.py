@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -40,6 +41,7 @@ from .SurfaceTraction import SurfaceTraction
 from ..Datum.DatumAxis import DatumAxis
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (APPLY_FORCE, AXIS_1, Boolean, GENERAL, GLOBAL,
                                               INTERNAL, NORMAL, OFF, ON, SHEAR, SymbolicConstant,
                                               UNIFORM, UNSET)
@@ -63,7 +65,7 @@ class LoadModel(ModelBase):
         region: Region,
         magnitude: float,
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
     ) -> BodyCharge:
         """This method creates a BodyCharge object.
@@ -114,7 +116,7 @@ class LoadModel(ModelBase):
         region: Region,
         magnitude: float,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
     ) -> BodyConcentrationFlux:
         """This method creates a BodyConcentrationFlux object.
@@ -165,7 +167,7 @@ class LoadModel(ModelBase):
         region: Region,
         magnitude: float,
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
     ) -> BodyCurrent:
         """This method creates a BodyCurrent object.
@@ -218,7 +220,7 @@ class LoadModel(ModelBase):
         comp2: str,
         comp3: str,
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
     ) -> BodyCurrentDensity:
         """This method creates a BodyCurrentDensity object.
 
@@ -274,7 +276,7 @@ class LoadModel(ModelBase):
         createStepName: str,
         region: Region,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         comp1: Optional[float] = None,
         comp2: Optional[float] = None,
         comp3: Optional[float] = None,
@@ -341,7 +343,7 @@ class LoadModel(ModelBase):
         region: Region,
         magnitude: float,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
     ) -> BodyHeatFlux:
         """This method creates a BodyHeatFlux object.
@@ -392,7 +394,7 @@ class LoadModel(ModelBase):
         region: Region,
         magnitude: float,
         datumAxis: DatumAxis,
-        boltMethod: SymbolicConstant = APPLY_FORCE,
+        boltMethod: Literal[C.APPLY_FORCE, C.ADJUST_LENGTH] = APPLY_FORCE,
         amplitude: str = UNSET,
         preTenSecPartLevel: Boolean = False,
     ) -> BoltLoad:
@@ -455,7 +457,7 @@ class LoadModel(ModelBase):
         createStepName: str,
         region: Region,
         magnitude: float,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
     ) -> ConcCharge:
@@ -506,7 +508,7 @@ class LoadModel(ModelBase):
         createStepName: str,
         region: Region,
         magnitude: float,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
     ) -> ConcConcFlux:
@@ -557,7 +559,7 @@ class LoadModel(ModelBase):
         createStepName: str,
         region: Region,
         magnitude: float,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
     ) -> ConcCurrent:
@@ -607,7 +609,7 @@ class LoadModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         cf1: Optional[float] = None,
         cf2: Optional[float] = None,
@@ -687,7 +689,7 @@ class LoadModel(ModelBase):
         createStepName: str,
         region: Region,
         magnitude: float,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
         dof: int = 11,
@@ -749,7 +751,7 @@ class LoadModel(ModelBase):
         createStepName: str,
         region: Region,
         magnitude: float,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
     ) -> ConcPoreFluid:
@@ -946,7 +948,7 @@ class LoadModel(ModelBase):
         point1: tuple,
         point2: tuple,
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
     ) -> CoriolisForce:
         """This method creates a CoriolisForce object.
@@ -1006,7 +1008,7 @@ class LoadModel(ModelBase):
         self,
         name: str,
         createStepName: str,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         region: Optional[Region] = None,
         comp1: Optional[float] = None,
@@ -1146,7 +1148,7 @@ class LoadModel(ModelBase):
         createStepName: str,
         region: Region,
         magnitude: float,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
     ) -> InwardVolAccel:
@@ -1196,13 +1198,13 @@ class LoadModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         comp1: Optional[float] = None,
         comp2: Optional[float] = None,
         comp3: Optional[float] = None,
         amplitude: str = UNSET,
-        system: SymbolicConstant = GLOBAL,
+        system: Literal[C.LOCAL, C.GLOBAL] = GLOBAL,
     ) -> LineLoad:
         """This method creates a LineLoad object.
 
@@ -1274,7 +1276,7 @@ class LoadModel(ModelBase):
         amplitude: str = UNSET,
         follower: Boolean = OFF,
         localCsys: Optional[int] = None,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
     ) -> Moment:
         """This method creates a Moment object.
@@ -1347,7 +1349,7 @@ class LoadModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         comp1: Optional[float] = None,
         comp2: Optional[float] = None,
@@ -1419,8 +1421,8 @@ class LoadModel(ModelBase):
         hReference: float,
         field: str = "",
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
-        side: SymbolicConstant = INTERNAL,
+        distributionType: Literal[C.USER_DEFINED, C.HYDROSTATIC, C.UNIFORM, C.FIELD] = UNIFORM,
+        side: Literal[C.EXTERNAL, C.INTERNAL] = INTERNAL,
     ) -> PipePressure:
         """This method creates a Pressure object.
 
@@ -1494,7 +1496,7 @@ class LoadModel(ModelBase):
         hReference: float = 0.0,
         field: str = "",
         refPoint: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.DISCRETE_FIELD, C.STAGNATION, C.VISCOUS, C.TOTAL_FORCE, C.HYDROSTATIC, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
         amplitude: str = UNSET,
     ) -> Pressure:
         """This method creates a Pressure object.
@@ -1565,7 +1567,7 @@ class LoadModel(ModelBase):
         magnitude: float,
         point1: tuple,
         point2: tuple,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         centrifugal: Boolean = OFF,
         rotaryAcceleration: Boolean = OFF,
@@ -1640,17 +1642,17 @@ class LoadModel(ModelBase):
         createStepName: str,
         region: Region,
         magnitude: float,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
         angle: float = 0,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2, C.GENERAL] = AXIS_1,
         localCsys: int = GENERAL,
         userCsys: str = GENERAL,
         directionVector: tuple = (),
         follower: Boolean = ON,
         resultant: Boolean = OFF,
-        traction: SymbolicConstant = NORMAL,
+        traction: Literal[C.TRANSVERSE, C.SHEAR, C.GENERAL, C.NORMAL, C.MOMENT] = NORMAL,
     ) -> ShellEdgeLoad:
         """This method creates a ShellEdgeLoad object.
 
@@ -1858,7 +1860,7 @@ class LoadModel(ModelBase):
         createStepName: str,
         region: Region,
         magnitude: float,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
     ) -> SurfaceCharge:
@@ -1910,7 +1912,7 @@ class LoadModel(ModelBase):
         region: Region,
         magnitude: float,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
     ) -> SurfaceConcentrationFlux:
         """This method creates a SurfaceConcentrationFlux object.
@@ -1961,7 +1963,7 @@ class LoadModel(ModelBase):
         createStepName: str,
         region: Region,
         magnitude: float,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
     ) -> SurfaceCurrent:
@@ -2014,7 +2016,7 @@ class LoadModel(ModelBase):
         comp1: str,
         comp2: str,
         comp3: str,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
     ) -> SurfaceCurrentDensity:
         """This method creates a SurfaceCurrentDensity object.
@@ -2072,7 +2074,7 @@ class LoadModel(ModelBase):
         region: Region,
         magnitude: float,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
     ) -> SurfaceHeatFlux:
         """This method creates a SurfaceHeatFlux object.
@@ -2123,7 +2125,7 @@ class LoadModel(ModelBase):
         region: Region,
         magnitude: float,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
     ) -> SurfacePoreFluid:
         """This method creates a SurfacePoreFluid object.
@@ -2173,17 +2175,17 @@ class LoadModel(ModelBase):
         createStepName: str,
         region: Region,
         magnitude: float,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
         angle: float = 0,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         localCsys: Optional[int] = None,
         userCsys: str = "",
         directionVector: tuple = (),
         follower: Boolean = ON,
         resultant: Boolean = OFF,
-        traction: SymbolicConstant = SHEAR,
+        traction: Literal[C.SHEAR, C.GENERAL] = SHEAR,
     ) -> SurfaceTraction:
         """This method creates a SurfaceTraction object.
 

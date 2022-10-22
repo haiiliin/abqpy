@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -13,6 +14,7 @@ from .ConnectorPotential import ConnectorPotential
 from .ConnectorPotentialArray import ConnectorPotentialArray
 from .ConnectorStop import ConnectorStop
 from ..Section.SectionBase import SectionBase
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ABS, ALL, Boolean, COMPONENT_NUMBER,
                                               FORCE, HALF_CYCLE, LINEAR, MAXIMUM,
                                               MOTION_TYPE, NO_INDEPENDENT_COMPONENTS, OFF, ON,
@@ -25,20 +27,20 @@ class ConnectorSection(SectionBase):
     @abaqus_method_doc
     def ConnectorDamage(
         self,
-        coupling: SymbolicConstant = UNCOUPLED,
-        criterion: SymbolicConstant = FORCE,
+        coupling: Literal[C.COUPLED, C.UNCOUPLED] = UNCOUPLED,
+        criterion: Literal[C.PLASTIC_MOTION, C.FORCE, C.MOTION] = FORCE,
         initiationTemperature: Boolean = OFF,
-        initiationPotentialOperator: SymbolicConstant = SUM,
+        initiationPotentialOperator: Literal[C.SUM, C.MOTION, C.COUPLED, C.FORCE, C.MAXIMUM] = SUM,
         initiationPotentialExponent: float = 2,
         initiationDependencies: int = 0,
         evolution: Boolean = ON,
-        evolutionType: SymbolicConstant = MOTION_TYPE,
-        softening: SymbolicConstant = LINEAR,
+        evolutionType: Literal[C.ENERGY_TYPE, C.MOTION_TYPE] = MOTION_TYPE,
+        softening: Literal[C.EXPONENTIAL, C.TABULAR, C.MOTION_TYPE, C.LINEAR] = LINEAR,
         useAffected: Boolean = OFF,
-        degradation: SymbolicConstant = MAXIMUM,
+        degradation: Literal[C.MULTIPLICATIVE, C.MAXIMUM] = MAXIMUM,
         evolutionTemperature: Boolean = OFF,
         evolutionDependencies: int = 0,
-        evolutionPotentialOperator: SymbolicConstant = SUM,
+        evolutionPotentialOperator: Literal[C.SUM, C.MOTION, C.MOTION_TYPE, C.COUPLED, C.FORCE, C.MAXIMUM] = SUM,
         evolutionPotentialExponent: float = 2,
         initiationPotentials: Optional[ConnectorPotentialArray] = None,
         evolutionPotentials: Optional[ConnectorPotentialArray] = None,
@@ -159,9 +161,9 @@ class ConnectorSection(SectionBase):
     @abaqus_method_doc
     def ConnectorDamping(
         self,
-        type: SymbolicConstant = VISCOUS,
-        behavior: SymbolicConstant = LINEAR,
-        coupling: SymbolicConstant = UNCOUPLED,
+        type: Literal[C.STRUCTURAL, C.VISCOUS] = VISCOUS,
+        behavior: Literal[C.NONLINEAR, C.LINEAR] = LINEAR,
+        coupling: Literal[C.UNCOUPLED, C.NONLINEAR, C.COUPLED_POSITION, C.COUPLED_MOTION, C.COUPLED, C.LINEAR] = UNCOUPLED,
         dependencies: int = 0,
         temperatureDependency: Boolean = OFF,
         frequencyDependency: Boolean = OFF,
@@ -235,8 +237,8 @@ class ConnectorSection(SectionBase):
     @abaqus_method_doc
     def ConnectorElasticity(
         self,
-        behavior: SymbolicConstant = LINEAR,
-        coupling: SymbolicConstant = UNCOUPLED,
+        behavior: Literal[C.RIGID, C.NONLINEAR, C.LINEAR] = LINEAR,
+        coupling: Literal[C.RIGID, C.UNCOUPLED, C.NONLINEAR, C.COUPLED_POSITION, C.COUPLED_MOTION, C.COUPLED, C.LINEAR] = UNCOUPLED,
         dependencies: int = 0,
         temperatureDependency: Boolean = OFF,
         frequencyDependency: Boolean = OFF,
@@ -308,7 +310,7 @@ class ConnectorSection(SectionBase):
     @abaqus_method_doc
     def ConnectorFailure(
         self,
-        releaseComponent: SymbolicConstant = ALL,
+        releaseComponent: Literal[C.ALL] = ALL,
         minMotion: Optional[float] = None,
         maxMotion: Optional[float] = None,
         minForce: Optional[float] = None,
@@ -366,18 +368,18 @@ class ConnectorSection(SectionBase):
     @abaqus_method_doc
     def ConnectorFriction(
         self,
-        frictionModel: SymbolicConstant = PREDEFINED,
-        slipStyle: SymbolicConstant = SPECIFY,
+        frictionModel: Literal[C.PREDEFINED, C.USER_CUSTOMIZED] = PREDEFINED,
+        slipStyle: Literal[C.COMPUTE, C.SPECIFY, C.USER_CUSTOMIZED] = SPECIFY,
         tangentDirection: Optional[int] = None,
         stickStiffness: Optional[float] = None,
-        componentType: SymbolicConstant = NO_INDEPENDENT_COMPONENTS,
+        componentType: Literal[C.POSITION, C.MOTION, C.NO_INDEPENDENT_COMPONENTS] = NO_INDEPENDENT_COMPONENTS,
         slipDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         useContactForceComponent: Boolean = OFF,
-        contactForceStyle: SymbolicConstant = COMPONENT_NUMBER,
+        contactForceStyle: Literal[C.COMPONENT_NUMBER, C.USER_CUSTOMIZED, C.DERIVED_COMPONENT] = COMPONENT_NUMBER,
         contactForceComponent: int = 0,
-        forcePotentialOperator: SymbolicConstant = SUM,
+        forcePotentialOperator: Literal[C.SUM, C.COMPUTE, C.USER_CUSTOMIZED, C.MAXIMUM] = SUM,
         forcePotentialExponent: float = 2,
         connectorPotentials: Optional[ConnectorPotentialArray] = None,
         table: tuple = (),
@@ -500,7 +502,7 @@ class ConnectorSection(SectionBase):
     @abaqus_method_doc
     def ConnectorLock(
         self,
-        lockingComponent: SymbolicConstant = ALL,
+        lockingComponent: Literal[C.ALL] = ALL,
         minMotion: Optional[float] = None,
         maxMotion: Optional[float] = None,
         minForce: Optional[float] = None,
@@ -559,16 +561,16 @@ class ConnectorSection(SectionBase):
     @abaqus_method_doc
     def ConnectorPlasticity(
         self,
-        coupling: SymbolicConstant = UNCOUPLED,
+        coupling: Literal[C.COUPLED, C.UNCOUPLED] = UNCOUPLED,
         isotropic: Boolean = ON,
-        isotropicType: SymbolicConstant = TABULAR,
+        isotropicType: Literal[C.TABULAR, C.EXPONENTIAL_LAW] = TABULAR,
         isotropicTemperature: Boolean = OFF,
         isotropicDependencies: int = 0,
         kinematic: Boolean = OFF,
-        kinematicType: SymbolicConstant = HALF_CYCLE,
+        kinematicType: Literal[C.PARAMETERS, C.HALF_CYCLE, C.STABILIZED] = HALF_CYCLE,
         kinematicTemperature: Boolean = OFF,
         kinematicDependencies: int = 0,
-        forcePotentialOperator: SymbolicConstant = SUM,
+        forcePotentialOperator: Literal[C.SUM, C.COUPLED, C.MAXIMUM] = SUM,
         forcePotentialExponent: float = 2,
         connectorPotentials: Optional[ConnectorPotentialArray] = None,
         isotropicTable: tuple = (),
@@ -658,13 +660,13 @@ class ConnectorSection(SectionBase):
     @abaqus_method_doc
     def ConnectorPotential(
         self,
-        componentStyle: SymbolicConstant = COMPONENT_NUMBER,
+        componentStyle: Literal[C.COMPONENT_NUMBER, C.DERIVED_COMPONENT] = COMPONENT_NUMBER,
         componentNumber: int = 0,
-        sign: SymbolicConstant = POSITIVE,
+        sign: Literal[C.POSITIVE, C.NEGATIVE] = POSITIVE,
         scaleFactor: float = 1,
         positiveExponent: float = 2,
         shiftFactor: float = 0,
-        hFunction: SymbolicConstant = ABS,
+        hFunction: Literal[C.MACAULEY, C.IDENTITY, C.ABS] = ABS,
     ):
         """This method creates a connector potential object to be used in conjunction with an
         allowable connector behavior option.

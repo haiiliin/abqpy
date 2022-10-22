@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, List, Optional, Sequence, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -21,6 +22,7 @@ from ..Region.Set import Set
 from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (BOUNDARY_ONLY, Boolean, GEOMETRY, OFF, SUPPRESS,
                                               SymbolicConstant)
 
@@ -191,7 +193,7 @@ class PartInstance:
         name: str,
         instanceToBeCut: str,
         cuttingInstances: Sequence["PartInstance"],
-        originalInstances: SymbolicConstant = SUPPRESS,
+        originalInstances: Literal[C.SUPPRESS, C.DELETE] = SUPPRESS,
     ):
         """This method creates a PartInstance in the instances repository after subtracting or
         cutting the geometries of a group of part instances from that of a base part instance.
@@ -228,9 +230,9 @@ class PartInstance:
         name: str,
         instances: Sequence["PartInstance"],
         keepIntersections: Boolean = False,
-        originalInstances: SymbolicConstant = SUPPRESS,
-        domain: SymbolicConstant = GEOMETRY,
-        mergeNodes: SymbolicConstant = BOUNDARY_ONLY,
+        originalInstances: Literal[C.SUPPRESS, C.DELETE] = SUPPRESS,
+        domain: Literal[C.MESH, C.BOTH, C.GEOMETRY] = GEOMETRY,
+        mergeNodes: Literal[C.MESH, C.ALL, C.BOUNDARY_ONLY, C.NONE] = BOUNDARY_ONLY,
         nodeMergingTolerance: Optional[float] = None,
         removeDuplicateElements: Boolean = True,
     ):

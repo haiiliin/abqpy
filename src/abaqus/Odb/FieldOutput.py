@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import overload, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -8,6 +9,7 @@ from .FieldValueArray import FieldValueArray
 from .OdbInstance import OdbInstance
 from .OdbSet import OdbSet
 from .SectionPoint import SectionPoint
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 
 
@@ -715,7 +717,7 @@ class FieldOutput:
         ...
 
     @abaqus_method_doc
-    def setDataType(self, type: SymbolicConstant):
+    def setDataType(self, type: Literal[C.TENSOR_2D_SURFACE, C.TENSOR_3D_SURFACE, C.VECTOR, C.TENSOR_3D_FULL, C.SCALAR, C.TENSOR_2D_PLANAR, C.TENSOR_3D_PLANAR]):
         """This method sets the data type of a FieldOutput object.
 
         Parameters
@@ -728,7 +730,7 @@ class FieldOutput:
         ...
 
     @abaqus_method_doc
-    def setValidInvariants(self, validInvariants: SymbolicConstant):
+    def setValidInvariants(self, validInvariants: Literal[C.MISES, C.MAX_PRINCIPAL, C.MIN_PRINCIPAL, C.MID_PRINCIPAL, C.MAGNITUDE, C.OUTOFPLANE_PRINCIPAL, C.TRESCA, C.MIN_INPLANE_PRINCIPAL, C.MAX_INPLANE_PRINCIPAL, C.INV3, C.PRESS]):
         """This method sets the invariants valid for the FieldOutput object.
 
         Parameters

@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import overload, Dict, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -14,6 +15,7 @@ from .RebarOrientationArray import RebarOrientationArray
 from .SectionCategory import SectionCategory
 from ..Property.MaterialOrientationArray import MaterialOrientationArray
 from ..Property.SectionAssignmentArray import SectionAssignmentArray
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import AXIS_1, STACK_3, SymbolicConstant
 
 
@@ -64,7 +66,7 @@ class OdbPartBase:
 
     @abaqus_method_doc
     def __init__(
-        self, name: str, embeddedSpace: SymbolicConstant, type: SymbolicConstant
+        self, name: str, embeddedSpace: Literal[C.THREE_D, C.AXISYMMETRIC, C.TWO_D_PLANAR], type: Literal[C.DEFORMABLE_BODY, C.ANALYTIC_RIGID_SURFACE]
     ):
         """This method creates an OdbPart object. Nodes and elements are added to this object at a
         later stage.
@@ -194,7 +196,7 @@ class OdbPartBase:
         ...
 
     def assignBeamOrientation(
-        self, region: str, method: SymbolicConstant, vector: tuple
+        self, region: str, method: Literal[C.N1_COSINES], vector: tuple
     ):
         """This method assigns a beam section orientation to a region of a part instance.
 
@@ -216,9 +218,9 @@ class OdbPartBase:
         self,
         region: str,
         localCSys: OdbDatumCsys,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
-        stackDirection: SymbolicConstant = STACK_3,
+        stackDirection: Literal[C.STACK_2, C.STACK_ORIENTATION, C.STACK_3, C.STACK_1] = STACK_3,
     ):
         """This method assigns a material orientation to a region of a part instance.
 
@@ -248,7 +250,7 @@ class OdbPartBase:
         self,
         region: str,
         localCsys: OdbDatumCsys,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
     ):
         """This method assigns a rebar reference orientation to a region of a part instance.

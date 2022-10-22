@@ -1,7 +1,9 @@
+from typing_extensions import Literal
 from typing import List, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import BOTH_SIDES, Boolean, OFF, SymbolicConstant
 
 
@@ -111,7 +113,7 @@ class Face:
         ...
 
     @abaqus_method_doc
-    def getElementFaces(self, faceSide: SymbolicConstant = BOTH_SIDES):
+    def getElementFaces(self, faceSide: Literal[C.SIDE2, C.SIDE1, C.BOTH_SIDES] = BOTH_SIDES):
         """This method returns an array of mesh face objects. Each mesh face object contains the
         element label and the side of the element that lies on the geometric face.
 
@@ -131,7 +133,7 @@ class Face:
         ...
 
     @abaqus_method_doc
-    def getNodes(self, faceSide: SymbolicConstant = BOTH_SIDES):
+    def getNodes(self, faceSide: Literal[C.SIDE2, C.BOTH_SIDES] = BOTH_SIDES):
         """This method returns an array of mesh node objects. Each mesh node object contains the
         label of the node that lies on the geometric face.
 

@@ -1,3 +1,4 @@
+from typing_extensions import Literal
 from typing import Dict, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
@@ -15,6 +16,7 @@ from .RebarOrientationArray import RebarOrientationArray
 from ..Property.MaterialOrientationArray import MaterialOrientationArray
 from ..Property.SectionAssignmentArray import SectionAssignmentArray
 from ..Section.Section import Section
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AXIS_1, Boolean, INPUT, OFF, PROPAGATED, STACK_3,
                                               SymbolicConstant)
 
@@ -119,7 +121,7 @@ class OdbInstanceBase:
 
     @abaqus_method_doc
     def assignBeamOrientation(
-        self, region: str, method: SymbolicConstant, vector: tuple
+        self, region: str, method: Literal[C.N1_COSINES], vector: tuple
     ):
         """This method assigns a beam section orientation to a region of a part instance.
 
@@ -141,9 +143,9 @@ class OdbInstanceBase:
         self,
         region: str,
         localCsys: OdbDatumCsys,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
-        stackDirection: SymbolicConstant = STACK_3,
+        stackDirection: Literal[C.STACK_2, C.STACK_ORIENTATION, C.STACK_3, C.STACK_1] = STACK_3,
     ):
         """This method assigns a material orientation to a region of a part instance.
 
@@ -173,7 +175,7 @@ class OdbInstanceBase:
         self,
         region: str,
         localCsys: OdbDatumCsys,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
     ):
         """This method assigns a rebar reference orientation to a region of a part instance.
