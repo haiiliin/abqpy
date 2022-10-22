@@ -36,7 +36,7 @@ Please delete options that are not relevant.
 
 Please check the following labels to add to the pull request.
 
-- [ ] automatio
+- [ ] automation
 - [ ] docs
 - [ ] bug
 - [ ] enhancement
