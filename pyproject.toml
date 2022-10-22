@@ -69,6 +69,6 @@ abqpy = ["templates/*.toml", "templates/*.tmpl"]
 [tool.setuptools_scm]
 root = "."
 relative_to = "__file__"
-local_scheme = "node-and-date"
+version_scheme = "post-release"
 write_to = "src/abqpy/_version.py"
 fallback_version = "2023.0.0-dev"
