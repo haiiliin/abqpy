@@ -1,8 +1,10 @@
+from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Queue import Queue
 from ..Session.SessionBase import SessionBase
-from ..UtilityAndView.abaqusConstants import ALL, Boolean, OFF, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+from ..UtilityAndView.abaqusConstants import ALL, Boolean, OFF, ON, LINUX
 
 
 @abaqus_class_doc
@@ -17,7 +19,7 @@ class JobSession(SessionBase):
         fileCopy: Boolean = ON,
         directory: str = "",
         driver: str = "",
-        remotePlatform: SymbolicConstant = "Linux",
+        remotePlatform: Literal[C.LINUX] = LINUX,
         filesToCopy: str = ALL,
         deleteAfterCopy: Boolean = OFF,
         description: str = "",
