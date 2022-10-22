@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .ConnectorDamage import ConnectorDamage
 from .ConnectorDamping import ConnectorDamping
 from .ConnectorElasticity import ConnectorElasticity
@@ -15,7 +16,7 @@ from ..Section.SectionBase import SectionBase
 from ..UtilityAndView.abaqusConstants import (ABS, ALL, Boolean, COMPONENT_NUMBER,
                                               FORCE, HALF_CYCLE, LINEAR, MAXIMUM,
                                               MOTION_TYPE, NO_INDEPENDENT_COMPONENTS, OFF, ON,
-                                              PENALTY, POSITIVE, PREDEFINED, SPECIFY, SUM,
+                                              POSITIVE, PREDEFINED, SPECIFY, SUM,
                                               SymbolicConstant, TABULAR, UNCOUPLED)
 
 

@@ -1,6 +1,7 @@
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc
+
 from .MdbDataInstance import MdbDataInstance
 from .MdbDataStep import MdbDataStep
 

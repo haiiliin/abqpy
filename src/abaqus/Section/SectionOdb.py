@@ -1,6 +1,7 @@
 from typing import Union, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .AcousticInfiniteSection import AcousticInfiniteSection
 from .AcousticInterfaceSection import AcousticInterfaceSection
 from .BeamSection import BeamSection

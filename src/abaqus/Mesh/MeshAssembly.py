@@ -1,6 +1,7 @@
 from typing import Optional, Sequence, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .ElemType import ElemType
 from .MeshEdge import MeshEdge
 from .MeshElement import MeshElement

@@ -3,6 +3,7 @@ from __future__ import annotations
 from typing import Optional, Tuple, Dict, TYPE_CHECKING
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 if TYPE_CHECKING: # to avoid circular imports

@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from typing import overload, Optional, Sequence, Tuple
-from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
+
 from .Region import Region
 from ..BasicGeometry.Cell import Cell
 from ..BasicGeometry.CellArray import CellArray
@@ -19,7 +20,7 @@ from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshElementArray import MeshElementArray
 from ..Mesh.MeshNode import MeshNode
 from ..Mesh.MeshNodeArray import MeshNodeArray
-from ..UtilityAndView.abaqusConstants import Boolean, OVERWRITE, UNION, INTERSECTION, DIFFERENCE
+from ..UtilityAndView.abaqusConstants import OVERWRITE, UNION, INTERSECTION, DIFFERENCE
 
 
 @abaqus_class_doc

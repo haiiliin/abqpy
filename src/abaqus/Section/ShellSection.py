@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
+
 from .Section import Section
 from .TransverseShearShell import TransverseShearShell
 
