@@ -34,6 +34,8 @@ Please delete options that are not relevant.
 
 # Check to add labels
 
+Please check the following labels to add to the pull request.
+
 - [ ] automatio
 - [ ] docs
 - [ ] bug
