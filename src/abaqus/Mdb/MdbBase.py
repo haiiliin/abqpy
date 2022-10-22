@@ -3,14 +3,15 @@ from __future__ import annotations
 from typing import Dict, List, Optional, Union, TYPE_CHECKING
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..Adaptivity.AdaptivityProcess import AdaptivityProcess
 from ..Annotation.Annotation import Annotation
 from ..CustomKernel.RepositorySupport import RepositorySupport
 from ..EditMesh.MeshEditOptions import MeshEditOptions
 from ..Job.Coexecution import Coexecution
 from ..Job.Job import Job
-from ..Job.ModelJob import ModelJob
 from ..Job.JobFromInputFile import JobFromInputFile
+from ..Job.ModelJob import ModelJob
 from ..Job.OptimizationProcess import OptimizationProcess
 from ..Model.Model import Model
 

@@ -1,6 +1,7 @@
 from typing import Dict, List
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from ..TableCollection.DataTable import DataTable
 from ..TableCollection.ParameterTable import ParameterTable
 from ..TableCollection.PropertyTable import PropertyTable

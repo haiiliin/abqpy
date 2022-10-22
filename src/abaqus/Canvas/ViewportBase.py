@@ -1,8 +1,8 @@
 from typing import Optional, Tuple, Sequence, Dict, overload
 
+from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .AttributeColorMap import AttributeColorMap
 from .Displayable import Displayable
 from .ImageOptions import ImageOptions
