@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from typing import Optional, Sequence, Tuple, TYPE_CHECKING
-from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
+
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C, SymbolicConstant
 
 if TYPE_CHECKING: # to avoid circular imports

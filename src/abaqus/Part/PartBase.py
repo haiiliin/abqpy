@@ -2,6 +2,7 @@ from typing import overload, Dict, List, Optional, Sequence
 
 # prevent circular imports
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+
 from .AcisFile import AcisFile
 from .PartFeature import PartFeature
 from ..BasicGeometry.Cell import Cell

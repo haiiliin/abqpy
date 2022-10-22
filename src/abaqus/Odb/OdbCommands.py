@@ -1,6 +1,7 @@
 from typing import Sequence
 
 from abqpy.decorators import abaqus_function_doc
+
 from .FieldOutput import FieldOutput
 from .Odb import Odb
 from .OdbSequenceAnalyticSurfaceSegment import OdbSequenceAnalyticSurfaceSegment

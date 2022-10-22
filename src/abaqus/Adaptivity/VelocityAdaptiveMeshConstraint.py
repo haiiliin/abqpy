@@ -1,11 +1,13 @@
 from typing import Union, Optional
-from typing_extensions import Literal
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
+
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from ..Datum.DatumCsys import DatumCsys
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import INDEPENDENT, MECHANICAL, THERMAL, UNSET, SET, FOLLOW, USER_DEFINED, UNCHANGED, FREED
+from ..UtilityAndView.abaqusConstants import INDEPENDENT, MECHANICAL, THERMAL, UNSET, SET, FOLLOW, USER_DEFINED, \
+    UNCHANGED, FREED
 
 
 @abaqus_class_doc
