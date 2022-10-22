@@ -30,4 +30,4 @@ def _get_version():
 
 
 __version__ = _get_version()
-__semver_version__ = __version__.split('+')[0]
+__semver__ = __version__.split("+")[0]
