@@ -588,7 +588,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def getMeshControl(self, region: str, attribute: SymbolicConstant) -> Union[Boolean, SymbolicConstant]:
+    def getMeshControl(self, region: str, attribute: Literal[C.HEX_DOMINATED, C.ELEM_SHAPE, C.FREE, C.QUAD, C.TRI, C.LINE, C.QUAD_DOMINATED, C.HEX, C.SWEEP, C.UNMESHABLE, C.NON_DEFAULT, C.TET, C.ALGORITHM, C.DEFAULT, C.NONE, C.MEDIAL_AXIS, C.ADVANCING_FRONT, C.WEDGE, C.MIN_TRANSITION, C.STRUCTURED, C.TECHNIQUE]) -> Union[Boolean, SymbolicConstant]:
         """This method returns a mesh control parameter for the specified region of a part.
 
         Parameters
@@ -997,11 +997,11 @@ class MeshPart(PartBase):
     def setMeshControls(
         self,
         regions: tuple,
-        elemShape: Optional[SymbolicConstant] = None,
-        technique: Optional[SymbolicConstant] = None,
-        algorithm: Optional[SymbolicConstant] = None,
+        elemShape: Optional[Literal[C.HEX_DOMINATED, C.WEDGE, C.TET, C.QUAD_DOMINATED, C.HEX, C.QUAD, C.TRI]] = None,
+        technique: Optional[Literal[C.BOTTOM_UP, C.STRUCTURED, C.FREE, C.SWEEP, C.SYSTEM_ASSIGN]] = None,
+        algorithm: Optional[Literal[C.NON_DEFAULT, C.MEDIAL_AXIS, C.ADVANCING_FRONT]] = None,
         minTransition: Boolean = ON,
-        sizeGrowth: Optional[SymbolicConstant] = None,
+        sizeGrowth: Optional[Literal[C.MODERATE, C.MAXIMUM]] = None,
         allowMapped: Boolean = OFF,
     ):
         """This method sets the mesh control parameters for the specified regions.
@@ -1074,7 +1074,7 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def setSweepPath(self, region: str, edge: Edge, sense: SymbolicConstant):
+    def setSweepPath(self, region: str, edge: Edge, sense: Literal[C.FORWARD]):
         """This method sets the sweep path for a sweepable region or the revolve path for a
         revolvable region.
 
@@ -1095,9 +1095,9 @@ class MeshPart(PartBase):
     @abaqus_method_doc
     def verifyMeshQuality(
         self,
-        criterion: SymbolicConstant,
+        criterion: Literal[C.ANALYSIS_CHECKS, C.ANGULAR_DEVIATION, C.GEOM_DEVIATION_FACTOR, C.MAX_FREQUENCY, C.LONGEST_EDGE, C.LARGE_ANGLE, C.SHORTEST_EDGE, C.STABLE_TIME_INCREMENT, C.SHAPE_FACTOR, C.ASPECT_RATIO, C.SMALL_ANGLE],
         threshold: Optional[float] = None,
-        elemShape: Optional[SymbolicConstant] = None,
+        elemShape: Optional[Literal[C.LINE, C.WEDGE, C.TET, C.HEX, C.QUAD, C.TRI]] = None,
         regions: tuple = (),
     ):
         """This method tests the mesh quality of a part and returns poor-quality elements.

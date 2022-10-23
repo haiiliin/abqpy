@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import MINIMUM, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -47,7 +49,7 @@ class TopologyMemberSize(GeometricRestriction):
         maxThickness: float = 0,
         minThickness: float = 0,
         separation: float = 0,
-        sizeRestriction: SymbolicConstant = MINIMUM,
+        sizeRestriction: Literal[C.ENVELOPE, C.MINIMUM, C.MAXIMUM] = MINIMUM,
     ):
         """This method creates a TopologyMemberSize object.
 
@@ -88,7 +90,7 @@ class TopologyMemberSize(GeometricRestriction):
         maxThickness: float = 0,
         minThickness: float = 0,
         separation: float = 0,
-        sizeRestriction: SymbolicConstant = MINIMUM,
+        sizeRestriction: Literal[C.ENVELOPE, C.MINIMUM, C.MAXIMUM] = MINIMUM,
     ):
         """This method modifies the TopologyMemberSize object.
 

@@ -1,9 +1,10 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (Boolean, MODEL_SIZE, OFF, ON, RESULTANT, SCIENTIFIC,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (Boolean, MODEL_SIZE, OFF, ON, RESULTANT, SCIENTIFIC)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _OptionsBase
 
 
@@ -46,11 +47,11 @@ class FreeBodyOptions(_OptionsBase):
         textColorM: str = "",
         textFontF: str = "",
         textFontM: str = "",
-        numberFormatF: SymbolicConstant = SCIENTIFIC,
-        numberFormatM: SymbolicConstant = SCIENTIFIC,
-        scaleModeF: SymbolicConstant = MODEL_SIZE,
-        scaleModeM: SymbolicConstant = MODEL_SIZE,
-        vectorDisplay: SymbolicConstant = RESULTANT,
+        numberFormatF: Literal[C.SCIENTIFIC, C.ENGINEERING, C.FIXED] = SCIENTIFIC,
+        numberFormatM: Literal[C.SCIENTIFIC, C.ENGINEERING, C.FIXED] = SCIENTIFIC,
+        scaleModeF: Literal[C.SCREEN_SIZE, C.MODEL_SIZE] = MODEL_SIZE,
+        scaleModeM: Literal[C.SCREEN_SIZE, C.MODEL_SIZE] = MODEL_SIZE,
+        vectorDisplay: Literal[C.RESULTANT, C.COMPONENT] = RESULTANT,
         numDigitsF: int = 3,
         numDigitsM: int = 3,
         sizePercentageF: float = 10,

@@ -1,8 +1,10 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -48,8 +50,8 @@ class AdaptiveMeshConstraintState:
     @abaqus_method_doc
     def __init__(
         self,
-        amplitudeState: Optional[SymbolicConstant] = None,
-        status: Optional[SymbolicConstant] = None,
+        amplitudeState: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
+        status: Optional[Literal[C.NOT_YET_ACTIVE, C.PROPAGATED_FROM_BASE_STATE, C.DEACTIVATED_FROM_BASE_STATE, C.DEACTIVATED, C.MODIFIED_FROM_BASE_STATE, C.PROPAGATED, C.NO_LONGER_ACTIVE, C.CREATED, C.INSTANCE_NOT_APPLICABLE, C.BUILT_INTO_MODES, C.TYPE_NOT_APPLICABLE, C.MODIFIED]] = None,
         amplitude: str = "",
     ):
         """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary

@@ -1,11 +1,13 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..PlotOptions.DGContourOptions import DGContourOptions
 from ..UtilityAndView.abaqusConstants import (ALL_FRAMES, BANDED, Boolean, MEDIUM, N2, OFF, ON,
                                               SOLID, SymbolicConstant, TEXTURE_MAPPED, UNIFORM,
                                               VERY_THIN)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -203,33 +205,33 @@ class ContourOptions(DGContourOptions):
     def setValues(
         self,
         options: Optional["ContourOptions"] = None,
-        contourType: SymbolicConstant = BANDED,
-        contourMethod: SymbolicConstant = TEXTURE_MAPPED,
+        contourType: Literal[C.ISOSURFACE, C.BANDED, C.LINE, C.QUILT] = BANDED,
+        contourMethod: Literal[C.TESSELLATED, C.TEXTURE_MAPPED] = TEXTURE_MAPPED,
         tickmarkPlots: Boolean = OFF,
-        contourStyle: SymbolicConstant = UNIFORM,
+        contourStyle: Literal[C.CONTINUOUS, C.UNIFORM] = UNIFORM,
         numIntervals: int = 12,
-        intervalType: SymbolicConstant = UNIFORM,
+        intervalType: Literal[C.USER_DEFINED, C.LOG, C.UNIFORM] = UNIFORM,
         intervalValues: tuple = (),
         maxAutoCompute: Boolean = ON,
         maxValue: Optional[float] = None,
         minAutoCompute: Boolean = ON,
         minValue: Optional[float] = None,
-        animationAutoLimits: SymbolicConstant = ALL_FRAMES,
+        animationAutoLimits: Literal[C.CURRENT_FRAME, C.RECOMPUTE_EACH_FRAME, C.ALL_FRAMES, C.FIRST_AND_LAST] = ALL_FRAMES,
         edgeColorLine: str = "",
         edgeColorBandedQuilt: str = "",
         spectrum: str = "",
         reversedContourLegendRange: Boolean = OFF,
-        outsideLimitsMode: Optional[SymbolicConstant] = None,
+        outsideLimitsMode: Optional[Literal[C.SPECIFY, C.SPECTRUM]] = None,
         outsideLimitsAboveColor: str = "",
         outsideLimitsBelowColor: str = "",
-        intervalLineAttributes: Optional[SymbolicConstant] = None,
+        intervalLineAttributes: Optional[Literal[C.LINE]] = None,
         contourEdges: Boolean = OFF,
         contourEdgeColor: str = "",
-        contourEdgeStyle: SymbolicConstant = SOLID,
-        contourEdgeThickness: SymbolicConstant = VERY_THIN,
-        tickmarkAxisLength: SymbolicConstant = MEDIUM,
+        contourEdgeStyle: Literal[C.SOLID, C.DOT_DASH, C.DASHED, C.DOTTED, C.ISOSURFACE, C.BANDED] = SOLID,
+        contourEdgeThickness: Literal[C.THICK, C.VERY_THIN, C.THIN, C.ISOSURFACE, C.BANDED, C.MEDIUM] = VERY_THIN,
+        tickmarkAxisLength: Literal[C.SHORT, C.MEDIUM, C.LONG] = MEDIUM,
         tickmarkBaseValue: float = 0,
-        tickmarkOrientation: SymbolicConstant = N2,
+        tickmarkOrientation: Literal[C.N1, C.N2] = N2,
         tickmarkCurveColor: str = "",
         averagedOrientationDisplay: Boolean = OFF,
         extrapolatedAveraging: Boolean = OFF,

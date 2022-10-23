@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import CENTROID, NORMAL_TANGENTIAL, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import CENTROID, NORMAL_TANGENTIAL
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -20,9 +22,9 @@ class FreeBody:
         self,
         name: str,
         edges: str,
-        summationLoc: SymbolicConstant = CENTROID,
+        summationLoc: Literal[C.SPECIFY, C.CENTROID, C.NODAL_AVERAGE] = CENTROID,
         summationPoint: tuple = (),
-        componentResolution: SymbolicConstant = NORMAL_TANGENTIAL,
+        componentResolution: Literal[C.NORMAL_TANGENTIAL, C.CSYS] = NORMAL_TANGENTIAL,
         csysName: str = "",
     ):
         """This method creates a FreeBody object and places it in the freeBodies repository.
@@ -61,9 +63,9 @@ class FreeBody:
         self,
         name: str,
         faces: str,
-        summationLoc: SymbolicConstant = CENTROID,
+        summationLoc: Literal[C.SPECIFY, C.CENTROID, C.NODAL_AVERAGE] = CENTROID,
         summationPoint: tuple = (),
-        componentResolution: SymbolicConstant = NORMAL_TANGENTIAL,
+        componentResolution: Literal[C.NORMAL_TANGENTIAL, C.CSYS] = NORMAL_TANGENTIAL,
         csysName: str = "",
     ):
         """This method creates a FreeBody object and places it in the freeBodies repository.
@@ -103,9 +105,9 @@ class FreeBody:
         name: str,
         elements: str,
         nodes: str,
-        summationLoc: SymbolicConstant = CENTROID,
+        summationLoc: Literal[C.SPECIFY, C.CENTROID, C.NODAL_AVERAGE] = CENTROID,
         summationPoint: tuple = (),
-        componentResolution: SymbolicConstant = NORMAL_TANGENTIAL,
+        componentResolution: Literal[C.NORMAL_TANGENTIAL, C.CSYS] = NORMAL_TANGENTIAL,
         csysName: str = "",
     ):
         """This method creates a FreeBody object and places it in the freeBodies repository.

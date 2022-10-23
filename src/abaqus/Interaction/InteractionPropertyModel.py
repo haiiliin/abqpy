@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AcousticImpedanceProp import AcousticImpedanceProp
 from .ActuatorSensorProp import ActuatorSensorProp
@@ -12,7 +13,8 @@ from .FluidExchangeProperty import FluidExchangeProperty
 from .IncidentWaveProperty import IncidentWaveProperty
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import (ACOUSTIC, BULK_VISCOSITY, Boolean, HYDRAULIC, OFF, ON,
-                                              PLANAR, POLYNOMIAL, SymbolicConstant)
+                                              PLANAR, POLYNOMIAL)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -21,7 +23,7 @@ class InteractionPropertyModel(ModelBase):
     def AcousticImpedanceProp(
         self,
         name: str,
-        tableType: SymbolicConstant,
+        tableType: Literal[C.ADMITTANCE, C.IMPEDANCE],
         table: tuple,
         frequencyDependency: Boolean = OFF,
     ) -> AcousticImpedanceProp:
@@ -198,7 +200,7 @@ class InteractionPropertyModel(ModelBase):
     def FluidCavityProperty(
         self,
         name: str,
-        definition: SymbolicConstant = HYDRAULIC,
+        definition: Literal[C.PNEUMATIC, C.HYDRAULIC] = HYDRAULIC,
         fluidDensity: Optional[float] = None,
         molecularWeight: Optional[float] = None,
         useExpansion: Boolean = OFF,
@@ -211,7 +213,7 @@ class InteractionPropertyModel(ModelBase):
         bulkModulusDependencies: int = 0,
         bulkModulusTable: tuple = (),
         useCapacity: Boolean = OFF,
-        capacityType: SymbolicConstant = POLYNOMIAL,
+        capacityType: Literal[C.POLYNOMIAL, C.TABULAR] = POLYNOMIAL,
         capacityTempDep: Boolean = OFF,
         capacityDependencies: int = 0,
         capacityTable: tuple = (),
@@ -353,7 +355,7 @@ class InteractionPropertyModel(ModelBase):
         self,
         name: str,
         dataTable: tuple,
-        definition: SymbolicConstant = BULK_VISCOSITY,
+        definition: Literal[C.VOL_FLUX, C.VOL_RATE_LEAK, C.BULK_VISCOSITY, C.MASS_RATE_LEAK, C.MASS_FLUX] = BULK_VISCOSITY,
         pressureDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         fieldDependencies: int = 0,
@@ -456,8 +458,8 @@ class InteractionPropertyModel(ModelBase):
     def IncidentWaveProperty(
         self,
         name: str,
-        definition: SymbolicConstant = PLANAR,
-        propagationModel: SymbolicConstant = ACOUSTIC,
+        definition: Literal[C.PLANAR, C.SPHERICAL, C.DIFFUSE, C.SURFACE_BLAST, C.AIR_BLAST] = PLANAR,
+        propagationModel: Literal[C.ACOUSTIC, C.SPHERICAL, C.GENERALIZED_DECAY, C.UNDEX_CHARGE] = ACOUSTIC,
         soundSpeed: Optional[float] = None,
         fluidDensity: Optional[float] = None,
         specificHeatRatio: Optional[float] = None,

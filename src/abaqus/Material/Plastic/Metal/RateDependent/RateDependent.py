@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from .....UtilityAndView.abaqusConstants import Boolean, OFF, POWER_LAW, SymbolicConstant
+from .....UtilityAndView.abaqusConstants import Boolean, OFF, POWER_LAW
+from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -51,7 +53,7 @@ class RateDependent:
     def __init__(
         self,
         table: tuple,
-        type: SymbolicConstant = POWER_LAW,
+        type: Literal[C.JOHNSON_COOK, C.POWER_LAW, C.YIELD_RATIO] = POWER_LAW,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

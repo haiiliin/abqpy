@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant, UNIFORM
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, UNIFORM
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _OptionsBase
 
 
@@ -32,7 +34,7 @@ class StreamOptions(_OptionsBase):
     def setValues(
         self,
         *,
-        colorMethod: SymbolicConstant = UNIFORM,
+        colorMethod: Literal[C.SPECTRUM, C.UNIFORM, C.CONTINUOUS] = UNIFORM,
         uniformColor: str = "",
         lineThickness: float = 6,
         showArrow: Boolean = OFF,
