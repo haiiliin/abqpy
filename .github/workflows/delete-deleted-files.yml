@@ -31,23 +31,29 @@ jobs:
     - name: Delete deleted files
       run: |
         python ".github/delete-deleted-files.py"
-    - name: Check if there are changes
-      id: changes
-      uses: UnicornGlobal/has-changes-action@v1.0.11
+    - uses: dorny/paths-filter@v2
+      id: filter
+      with:
+        base: HEAD
+        filters: |
+          changed:
+            - 'src/**'
+            - 'docs/**'
+            - '.github/**'
     - name: Commit files
-      if: steps.changes.outputs.changed == 1
+      if: steps.filter.outputs.changed == 'true'
       run: |
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git commit -m "Delete conflicted deleted files by GitHub Action https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" -a
     - name: Push changes
-      if: steps.changes.outputs.changed == 1
+      if: steps.filter.outputs.changed == 'true'
       uses: ad-m/github-push-action@v0.6.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref_name }}
+        branch: ${{ github.head_ref }}
     - name: Comment PR
-      if: steps.changes.outputs.changed == 1
+      if: steps.filter.outputs.changed == 'true'
       uses: Beakyn/gha-comment-pull-request@v1.0.1
       env:
         GITHUB_TOKEN: ${{ github.token }}
