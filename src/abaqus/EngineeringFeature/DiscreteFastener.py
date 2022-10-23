@@ -1,10 +1,12 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Fastener import Fastener
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import Boolean, CONTINUUM, OFF, ON, SymbolicConstant, UNIFORM
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -74,12 +76,12 @@ class DiscreteFastener(Fastener):
         self,
         name: str,
         region: Region,
-        influenceRadius: Union[SymbolicConstant, float],
+        influenceRadius: Union[Literal[C.WHOLE_SURFACE], float],
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
-        coupling: SymbolicConstant = CONTINUUM,
-        weightingMethod: SymbolicConstant = UNIFORM,
+        coupling: Literal[C.STRUCTURAL, C.CONTINUUM] = CONTINUUM,
+        weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
         localCsys: Optional[int] = None,
     ):
         """This method creates a DiscreteFastener object. Although the constructor is available
@@ -139,8 +141,8 @@ class DiscreteFastener(Fastener):
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
-        coupling: SymbolicConstant = CONTINUUM,
-        weightingMethod: SymbolicConstant = UNIFORM,
+        coupling: Literal[C.STRUCTURAL, C.CONTINUUM] = CONTINUUM,
+        weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
         localCsys: Optional[int] = None,
     ):
         """This method modifies the DiscreteFastener object.

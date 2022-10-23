@@ -1,9 +1,11 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import (AVERAGE_STRAIN, Boolean, CUBIC, DEFAULT, ENHANCED,
                                               OFF, ON, STANDARD, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -169,25 +171,25 @@ class ElemType:
     @abaqus_method_doc
     def __init__(
         self,
-        elemCode: SymbolicConstant,
-        elemLibrary: SymbolicConstant = STANDARD,
+        elemCode: Literal[C.C3D8R, C.UNKNOWN_HEX, C.CODE, C.UNKNOWN_TET, C.UNKNOWN_TRI, C.UNKNOWN_WEDGE, C.UNKNOWN_QUAD],
+        elemLibrary: Literal[C.EXPLICIT, C.STANDARD] = STANDARD,
         hourglassStiffness: float = 0,
         bendingHourglass: float = 0,
         drillingHourglass: float = 0,
-        kinematicSplit: SymbolicConstant = AVERAGE_STRAIN,
+        kinematicSplit: Literal[C.ORTHOGONAL, C.AVERAGE_STRAIN, C.CENTROID] = AVERAGE_STRAIN,
         distortionControl: Boolean = OFF,
         lengthRatio: float = ON,
         secondOrderAccuracy: Boolean = OFF,
-        hourglassControl: SymbolicConstant = ENHANCED,
+        hourglassControl: Literal[C.RELAX_STIFFNESS, C.COMBINED, C.VISCOUS, C.STIFFNESS, C.ENHANCED] = ENHANCED,
         weightFactor: float = 0,
         displacementHourglass: float = 1,
         rotationalHourglass: float = 1,
         outOfPlaneDisplacementHourglass: float = 1,
-        elemDeletion: SymbolicConstant = DEFAULT,
-        particleConversion: SymbolicConstant = DEFAULT,
+        elemDeletion: Literal[C.DEFAULT] = DEFAULT,
+        particleConversion: Literal[C.TIME, C.STRESS, C.DEFAULT, C.STRAIN] = DEFAULT,
         particleConversionThreshold: float = 0,
         particleConversionPPD: int = 1,
-        particleConversionKernel: SymbolicConstant = CUBIC,
+        particleConversionKernel: Literal[C.QUADRATIC, C.CUBIC, C.QUINTIC] = CUBIC,
         maxDegradation: Optional[float] = None,
         viscosity: float = 0,
         linearBulkViscosity: float = 1,

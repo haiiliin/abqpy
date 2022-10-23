@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .PredefinedField import PredefinedField
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import MAGNITUDE, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -68,7 +70,7 @@ class Velocity(PredefinedField):
         axisBegin: tuple,
         axisEnd: tuple,
         field: str = "",
-        distributionType: SymbolicConstant = MAGNITUDE,
+        distributionType: Literal[C.MAGNITUDE, C.FIELD_ANALYTICAL] = MAGNITUDE,
     ):
         """This method creates a Velocity predefined field object.
 
@@ -114,7 +116,7 @@ class Velocity(PredefinedField):
 
     @abaqus_method_doc
     def setValues(
-        self, field: str = "", distributionType: SymbolicConstant = MAGNITUDE
+        self, field: str = "", distributionType: Literal[C.MAGNITUDE, C.FIELD_ANALYTICAL] = MAGNITUDE
     ):
         """This method modifies the Velocity object.
 

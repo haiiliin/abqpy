@@ -1,6 +1,7 @@
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AnalysisStep import AnalysisStep
 from ..Adaptivity.AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
@@ -19,6 +20,7 @@ from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import (AUTOMATIC, Boolean, DIRECT, FULL_NEWTON, LINEAR, OFF,
                                               PROPAGATED, SOLVER_DEFAULT, STEP, SymbolicConstant,
                                               TRANSIENT)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -208,9 +210,9 @@ class HeatTransferStep(AnalysisStep):
         name: str,
         previous: str,
         description: str = "",
-        response: SymbolicConstant = TRANSIENT,
+        response: Literal[C.TRANSIENT, C.STEADY_STATE] = TRANSIENT,
         timePeriod: float = 1,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
@@ -218,14 +220,14 @@ class HeatTransferStep(AnalysisStep):
         end: Optional[float] = None,
         deltmx: float = 0,
         mxdem: float = 0,
-        amplitude: SymbolicConstant = STEP,
-        extrapolation: SymbolicConstant = LINEAR,
-        matrixSolver: SymbolicConstant = DIRECT,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
+        extrapolation: Literal[C.PARABOLIC, C.NONE, C.LINEAR] = LINEAR,
+        matrixSolver: Literal[C.DIRECT, C.ITERATIVE] = DIRECT,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         maintainAttributes: Boolean = False,
-        solutionTechnique: SymbolicConstant = FULL_NEWTON,
+        solutionTechnique: Literal[C.QUASI_NEWTON, C.FULL_NEWTON] = FULL_NEWTON,
         reformKernel: int = 8,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
     ):
         """This method creates a HeatTransferStep object.
 
@@ -315,9 +317,9 @@ class HeatTransferStep(AnalysisStep):
     def setValues(
         self,
         description: str = "",
-        response: SymbolicConstant = TRANSIENT,
+        response: Literal[C.TRANSIENT, C.STEADY_STATE] = TRANSIENT,
         timePeriod: float = 1,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
@@ -325,13 +327,13 @@ class HeatTransferStep(AnalysisStep):
         end: Optional[float] = None,
         deltmx: float = 0,
         mxdem: float = 0,
-        amplitude: SymbolicConstant = STEP,
-        extrapolation: SymbolicConstant = LINEAR,
-        matrixSolver: SymbolicConstant = DIRECT,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        solutionTechnique: SymbolicConstant = FULL_NEWTON,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
+        extrapolation: Literal[C.PARABOLIC, C.NONE, C.LINEAR] = LINEAR,
+        matrixSolver: Literal[C.DIRECT, C.ITERATIVE] = DIRECT,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
+        solutionTechnique: Literal[C.QUASI_NEWTON, C.FULL_NEWTON] = FULL_NEWTON,
         reformKernel: int = 8,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
     ):
         """This method modifies the HeatTransferStep object.
 

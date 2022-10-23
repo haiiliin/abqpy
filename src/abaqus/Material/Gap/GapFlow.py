@@ -1,8 +1,10 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ...UtilityAndView.abaqusConstants import Boolean, NEWTONIAN, OFF, SymbolicConstant
+from ...UtilityAndView.abaqusConstants import Boolean, NEWTONIAN, OFF
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -65,7 +67,7 @@ class GapFlow:
         kmax: Optional[float] = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        type: SymbolicConstant = NEWTONIAN,
+        type: Literal[C.BINGHAM_PLASTIC, C.POWER_LAW, C.HERSCHEL_BULKLEY, C.NEWTONIAN] = NEWTONIAN,
     ):
         """This method creates a GapFlow object.
 
@@ -89,7 +91,7 @@ class GapFlow:
             An Int specifying the number of field variable dependencies. The default value is 0.
         type
             A SymbolicConstant specifying the type of gap flow. Possible values are NEWTONIAN,
-            POWER_LAW, BINGHAM_PLASTIC, and HERSCHEL-BULKLEY. The default value is NEWTONIAN.
+            POWER_LAW, BINGHAM_PLASTIC, and HERSCHEL_BULKLEY. The default value is NEWTONIAN.
 
         Returns
         -------

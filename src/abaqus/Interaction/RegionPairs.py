@@ -1,8 +1,10 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import Boolean, OFF
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -28,8 +30,8 @@ class RegionPairs:
         self,
         stepName: str,
         useAllstar: Boolean = OFF,
-        addPairs: Optional[SymbolicConstant] = None,
-        removePairs: Optional[SymbolicConstant] = None,
+        addPairs: Optional[Literal[C.SELF, C.GLOBAL]] = None,
+        removePairs: Optional[Literal[C.SELF, C.GLOBAL]] = None,
     ):
         """This method allows addition and removal of domain pairs in a given step.
 

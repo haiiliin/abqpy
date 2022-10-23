@@ -1,13 +1,15 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ....TestData.BiaxialTestData import BiaxialTestData
 from ....TestData.PlanarTestData import PlanarTestData
 from ....TestData.SimpleShearTestData import SimpleShearTestData
 from ....TestData.UniaxialTestData import UniaxialTestData
 from ....TestData.VolumetricTestData import VolumetricTestData
-from .....UtilityAndView.abaqusConstants import Boolean, LONG_TERM, OFF, SymbolicConstant
+from .....UtilityAndView.abaqusConstants import Boolean, LONG_TERM, OFF
+from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -57,7 +59,7 @@ class Hyperfoam:
         poisson: Optional[float] = None,
         n: int = 1,
         temperatureDependency: Boolean = OFF,
-        moduli: SymbolicConstant = LONG_TERM,
+        moduli: Literal[C.INSTANTANEOUS, C.LONG_TERM] = LONG_TERM,
         table: tuple = (),
     ):
         """This method creates a Hyperfoam object.

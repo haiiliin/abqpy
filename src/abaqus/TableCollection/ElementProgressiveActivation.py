@@ -1,7 +1,9 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import Boolean, NONE, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -47,7 +49,7 @@ class ElementProgressiveActivation:
         name: str,
         elset: Region,
         deformation: Boolean = OFF,
-        freeSurfaceType: SymbolicConstant = NONE,
+        freeSurfaceType: Literal[C.FACET, C.NONE] = NONE,
     ):
         """This method creates an ElementProgressiveActivation object and places it in the
         elementProgressiveActivation repository.

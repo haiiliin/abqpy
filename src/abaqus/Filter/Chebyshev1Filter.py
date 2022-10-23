@@ -1,9 +1,11 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Filter import Filter
 from ..UtilityAndView.abaqusConstants import Boolean, NONE, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -65,10 +67,10 @@ class Chebyshev1Filter(Filter):
         cutoffFrequency: float,
         rippleFactor: float = 0,
         order: int = 2,
-        operation: SymbolicConstant = NONE,
+        operation: Literal[C.MIN, C.MAX, C.NONE, C.ABS] = NONE,
         halt: Boolean = OFF,
         limit: Optional[float] = None,
-        invariant: SymbolicConstant = NONE,
+        invariant: Literal[C.FIRST, C.SECOND, C.NONE] = NONE,
     ):
         """This method creates a Chebyshev1Filter object.
 
@@ -124,10 +126,10 @@ class Chebyshev1Filter(Filter):
         self,
         rippleFactor: float = 0,
         order: int = 2,
-        operation: SymbolicConstant = NONE,
+        operation: Literal[C.MIN, C.MAX, C.NONE, C.ABS] = NONE,
         halt: Boolean = OFF,
         limit: Optional[float] = None,
-        invariant: SymbolicConstant = NONE,
+        invariant: Literal[C.FIRST, C.SECOND, C.NONE] = NONE,
     ):
         """This method modifies the Chebyshev1Filter object.
 

@@ -1,8 +1,9 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..TableCollection.ParameterColumn import ParameterColumn
 from ..TableCollection.ParameterColumnArray import ParameterColumnArray
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -57,7 +58,7 @@ class ParameterTable:
     @abaqus_method_doc
     def Column(
         self,
-        type: SymbolicConstant,
+        type: Literal[C.INTEGER, C.FLOAT, C.STRING],
         unit: str = "",
         description: str = "",
         default: str = "",

@@ -1,11 +1,13 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..PlotOptions.DGSuperimposeOptions import DGSuperimposeOptions
 from ..UtilityAndView.abaqusConstants import (Boolean, ELEMENT, FEATURE, HOLLOW_CIRCLE, MEDIUM,
                                               NONE, OFF, ON, SMALL, SOLID, SymbolicConstant,
                                               VERY_THIN, WIRE, WIREFRAME)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -190,12 +192,12 @@ class SuperimposeOptions(DGSuperimposeOptions):
     def setValues(
         self,
         options: Optional["SuperimposeOptions"] = None,
-        renderStyle: SymbolicConstant = WIREFRAME,
-        visibleEdges: SymbolicConstant = FEATURE,
+        renderStyle: Literal[C.SHADED, C.FILLED, C.WIREFRAME, C.HIDDEN] = WIREFRAME,
+        visibleEdges: Literal[C.FEATURE, C.EXTERIOR, C.ALL, C.FREE, C.NONE, C.SHADED] = FEATURE,
         edgeColorWireHide: str = "",
         edgeColorFillShade: str = "",
-        edgeLineStyle: SymbolicConstant = SOLID,
-        edgeLineThickness: SymbolicConstant = VERY_THIN,
+        edgeLineStyle: Literal[C.DASHED, C.SOLID, C.DOT_DASH, C.DOTTED] = SOLID,
+        edgeLineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
         colorCodeOverride: Boolean = ON,
         fillColor: str = "",
         labelFont: str = "",
@@ -206,25 +208,25 @@ class SuperimposeOptions(DGSuperimposeOptions):
         nodeLabels: Boolean = OFF,
         nodeLabelColor: str = "",
         nodeSymbols: Boolean = OFF,
-        nodeSymbolType: SymbolicConstant = HOLLOW_CIRCLE,
+        nodeSymbolType: Literal[C.HOLLOW_CIRCLE] = HOLLOW_CIRCLE,
         nodeSymbolColor: str = "",
-        nodeSymbolSize: SymbolicConstant = SMALL,
+        nodeSymbolSize: Literal[C.SMALL, C.LARGE, C.MEDIUM] = SMALL,
         elementShrink: Boolean = OFF,
         elementShrinkFactor: int = 5,
         coordinateScale: Boolean = OFF,
         coordinateScaleFactors: tuple = (),
         normals: Boolean = OFF,
-        normalDisplay: SymbolicConstant = ELEMENT,
+        normalDisplay: Literal[C.SURFACE, C.ELEMENT] = ELEMENT,
         faceNormalColor: str = "",
         beamN1Color: str = "",
         beamN2Color: str = "",
         beamTangentColor: str = "",
-        normalArrowLength: SymbolicConstant = MEDIUM,
-        normalLineThickness: SymbolicConstant = VERY_THIN,
-        normalArrowheadStyle: SymbolicConstant = WIRE,
+        normalArrowLength: Literal[C.SHORT, C.MEDIUM, C.LONG] = MEDIUM,
+        normalLineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
+        normalArrowheadStyle: Literal[C.WIRE, C.FILLED, C.NONE] = WIRE,
         translucency: Boolean = OFF,
         translucencyFactor: float = 0,
-        deformedOffsetMode: SymbolicConstant = NONE,
+        deformedOffsetMode: Literal[C.NONUNIFORM, C.UNIFORM, C.NONE] = NONE,
         uniformOffset: float = 0,
         nonuniformOffset: tuple = (),
     ):

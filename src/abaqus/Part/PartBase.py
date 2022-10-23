@@ -2,6 +2,7 @@ from typing import overload, Dict, List, Optional, Sequence
 
 # prevent circular imports
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AcisFile import AcisFile
 from .PartFeature import PartFeature
@@ -36,6 +37,7 @@ from ..Region.Surface import Surface
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
 from ..UtilityAndView.abaqusConstants import (ALL_EDGES, BOUNDARY_ONLY, Boolean, FALSE, GEOMETRY,
                                               LOW, NONE, OFF, ON, SymbolicConstant, UNDEFORMED)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -291,10 +293,10 @@ class PartBase(PartFeature):
         name: str,
         instances: Sequence[PartInstance],
         keepIntersections: Boolean = False,
-        mergeNodes: SymbolicConstant = BOUNDARY_ONLY,
+        mergeNodes: Literal[C.ALL, C.BOUNDARY_ONLY, C.NONE] = BOUNDARY_ONLY,
         nodeMergingTolerance: Optional[float] = None,
         removeDuplicateElements: Boolean = ON,
-        domain: SymbolicConstant = GEOMETRY,
+        domain: Literal[C.MESH, C.BOTH, C.GEOMETRY] = GEOMETRY,
     ):
         """This method creates a Part in the parts repository after merging two or more part
         instances. The part instances can be either Abaqus native parts or orphan mesh parts,
@@ -379,8 +381,8 @@ class PartBase(PartFeature):
         self,
         name: str,
         geometryFile: AcisFile,
-        dimensionality: SymbolicConstant,
-        type: SymbolicConstant,
+        dimensionality: Literal[C.THREE_D, C.AXISYMMETRIC, C.TWO_D_PLANAR],
+        type: Literal[C.EULERIAN, C.DISCRETE_RIGID_SURFACE, C.DEFORMABLE_BODY, C.ANALYTIC_RIGID_SURFACE],
         bodyNum: int = 1,
         combine: Boolean = False,
         booleanSolids: Boolean = FALSE,
@@ -589,8 +591,8 @@ class PartBase(PartFeature):
     def PartFromNodesAndElements(
         self,
         name: str,
-        dimensionality: SymbolicConstant,
-        type: SymbolicConstant,
+        dimensionality: Literal[C.THREE_D, C.AXISYMMETRIC, C.TWO_D_PLANAR],
+        type: Literal[C.EULERIAN, C.DISCRETE_RIGID_SURFACE, C.DEFORMABLE_BODY, C.ANALYTIC_RIGID_SURFACE],
         nodes: tuple,
         elements: tuple,
         twist: Boolean = OFF,
@@ -642,7 +644,7 @@ class PartBase(PartFeature):
         fileName: str = "",
         instance: str = "",
         elementSet: str = "",
-        shape: SymbolicConstant = UNDEFORMED,
+        shape: Literal[C.DEFORMED, C.UNDEFORMED] = UNDEFORMED,
         step: Optional[int] = None,
         frame: Optional[int] = None,
         twist: Boolean = OFF,
@@ -1201,7 +1203,7 @@ class PartBase(PartFeature):
     def getMassProperties(
         self,
         regions: str = "",
-        relativeAccuracy: SymbolicConstant = LOW,
+        relativeAccuracy: Literal[C.LOW, C.MEDIUM, C.HIGH] = LOW,
         useMesh: Boolean = False,
         specifyDensity: Boolean = False,
         density: str = "",
@@ -1453,7 +1455,7 @@ class PartBase(PartFeature):
     def projectReferencesOntoSketch(
         self,
         sketch: str,
-        filter: SymbolicConstant = ALL_EDGES,
+        filter: Literal[C.ALL_EDGES, C.COPLANAR_EDGES] = ALL_EDGES,
         upToFeature: Optional[PartFeature] = None,
         edges: tuple = (),
         vertices: tuple = (),
@@ -1696,7 +1698,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def writeIgesFile(self, fileName: str, flavor: SymbolicConstant):
+    def writeIgesFile(self, fileName: str, flavor: Literal[C.JAMA, C.IGES, C.SOLIDWORKS, C.STANDARD, C.AUTOCAD, C.MSBO]):
         """This method exports the geometry of the part to a named file in IGES format.
 
         Parameters

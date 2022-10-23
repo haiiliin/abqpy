@@ -1,11 +1,13 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .BoundaryCondition import BoundaryCondition
 from ..Amplitude.Correlation import Correlation
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -59,7 +61,7 @@ class VelocityBaseMotionBC(BoundaryCondition):
         self,
         name: str,
         createStepName: str,
-        dof: SymbolicConstant,
+        dof: Literal[C.U3, C.UR2, C.U1, C.UR3, C.UR1, C.U2],
         amplitudeScaleFactor: float = 1,
         centerOfRotation: tuple = (),
         correlation: Optional[Correlation] = None,
