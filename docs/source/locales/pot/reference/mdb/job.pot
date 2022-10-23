@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2021.3.12.post6\n"
+"Project-Id-Version: abqpy 2021\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 14:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgid "Job"
 msgstr ""
 
 #: ../../reference/mdb/job.rst:5
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:1
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:1
 msgid "The Job object is the abstract base type for other Job objects. The Job object has no explicit constructor. The methods and members of the Job object are common to all objects derived from Job."
 msgstr ""
 
@@ -30,93 +30,93 @@ msgstr ""
 msgid "Create jobs"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:1
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:1
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:1
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:1
 #: ../../None:5:<autosummary>:1
 msgid "This method creates an analysis job using a model on a model database (MDB) for the model definition."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:4
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:5
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:5
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:5
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:4
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:5
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:4
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:5
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:5
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:5
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:4
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:5
 msgid "This function can be accessed by::"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:18
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:10
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:18
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:10
 msgid "Check `Job on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.submit:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.writeInput:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.submit:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.writeInput:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.submit:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:0
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.submit:0
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.writeInput:0
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.submit:0
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:0
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:0
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:0
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:0
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:0
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.writeInput:0
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:0
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:0
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:0
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.submit:0
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:12
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:13
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:13
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:12
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:13
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:13
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.name:1
 #: ../../docstring of abaqus.Job.Job.Job.name:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.name:1
 msgid "A String specifying the name of the new job. The name must be a valid Abaqus/CAE object name."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:16
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:16
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:16
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:16
 #: ../../None:30:<autosummary>:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.model:1
 msgid "A String specifying the name of the model to be analyzed or a Model object specifying the model to be analyzed."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:19
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:19
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:19
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:19
 #: ../../None:30:<autosummary>:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.description:1
 msgid "A String specifying a description of the job."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:21
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:21
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:21
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:21
 #: ../../docstring of abaqus.Job.Job.Job.type:1
 msgid "A SymbolicConstant specifying the type of job. Possible values are ANALYSIS, SYNTAXCHECK, RECOVER, and RESTART. The default value is ANALYSIS.If the object has the type JobFromInputFile, **type** = RESTART is not available."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:25
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:25
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:25
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:25
 #: ../../docstring of abaqus.Job.Job.Job.queue:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.queue:1
 msgid "A String specifying the name of the queue to which to submit the job. The default value is an empty string.Note:You can use the **queue** argument when creating a Job object on a Windows workstation; however, remote queues are available only on Linux platforms."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:27
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:15
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:29
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:29
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:27
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:15
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:29
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:29
 #: ../../docstring of abaqus.Job.Job.Job.waitHours:1
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.waitHours:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.waitHours:1
 msgid "An Int specifying the number of hours to wait before submitting the job. This argument is ignored if **queue** is set. The default value is 0.This argument works in conjunction with **waitMinutes**. **waitHours** and **atTime** are mutually exclusive."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:31
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:19
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:33
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:33
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:31
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:19
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:33
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:33
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.waitMinutes:1
 #: ../../docstring of abaqus.Job.Job.Job.waitMinutes:1
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.waitMinutes:1
@@ -124,178 +124,178 @@ msgstr ""
 msgid "An Int specifying the number of minutes to wait before submitting the job. This argument is ignored if **queue** is set. The default value is 0.This argument works in conjunction with **waitHours**. **waitMinutes** and **atTime** are mutually exclusive."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:37
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:37
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:37
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:37
 #: ../../docstring of abaqus.Job.Job.Job.atTime:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.atTime:1
 msgid "A String specifying the time at which to submit the job. If **queue** is empty, the string syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be valid according to the system administrator. The default value is an empty string.Note:You can use the **atTime** argument when creating a Job object on a Windows workstation; however, the `at` command is available only on Linux platforms."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:43
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:43
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:43
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:43
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.echoPrint:1
 msgid "A Boolean specifying whether an echo of the input data is printed. The default value is OFF."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:46
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:46
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:46
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:46
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.contactPrint:1
 msgid "A Boolean specifying whether contact constraint data are printed. The default value is OFF."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:49
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:49
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:49
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:49
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.modelPrint:1
 msgid "A Boolean specifying whether model definition data are printed. The default value is OFF."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:52
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:52
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:52
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:52
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.historyPrint:1
 msgid "A Boolean specifying whether history data are printed. The default value is OFF."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:41
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:29
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:54
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:54
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:41
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:29
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:54
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:54
 #: ../../docstring of abaqus.Job.Job.Job.scratch:1
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.scratch:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.scratch:1
 msgid "A String specifying the location of the scratch directory. The default value is an empty string."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:44
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:32
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:57
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:57
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:44
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:32
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:57
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:57
 #: ../../docstring of abaqus.Job.Job.Job.userSubroutine:1
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.userSubroutine:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.userSubroutine:1
 msgid "A String specifying the file containing the user's subroutine definitions. The default value is an empty string."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:47
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:35
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:60
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:60
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:47
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:35
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:60
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:60
 #: ../../docstring of abaqus.Job.Job.Job.numCpus:1
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.numCpus:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.numCpus:1
 msgid "An Int specifying the number of CPUs to use for this analysis if parallel processing is available. Possible values are **numCpus** >> 0. The default value is 1."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:50
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:38
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:63
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:63
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:50
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:38
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:63
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:63
 #: ../../docstring of abaqus.Job.Job.Job.memory:1
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.memory:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.memory:1
 msgid "An Int specifying the amount of memory available to Abaqus analysis. The value should be expressed in the units supplied in **memoryUnits**. The default value is 90."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:53
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:41
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:66
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:66
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:53
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:41
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:66
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:66
 #: ../../docstring of abaqus.Job.Job.Job.memoryUnits:1
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.memoryUnits:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.memoryUnits:1
 msgid "A SymbolicConstant specifying the units for the amount of memory used in an Abaqus analysis. Possible values are PERCENTAGE, MEGA_BYTES, and GIGA_BYTES. The default value is PERCENTAGE."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:57
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:45
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:70
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:70
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:57
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:45
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:70
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:70
 #: ../../docstring of abaqus.Job.Job.Job.explicitPrecision:1
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.explicitPrecision:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.explicitPrecision:1
 msgid "A SymbolicConstant specifying whether to use the double precision version of Abaqus/Explicit. Possible values are SINGLE, FORCE_SINGLE, DOUBLE, DOUBLE_CONSTRAINT_ONLY, and DOUBLE_PLUS_PACK. The default value is SINGLE."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:61
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:49
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:74
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:74
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:61
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:49
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:74
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:74
 #: ../../docstring of abaqus.Job.Job.Job.nodalOutputPrecision:1
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.nodalOutputPrecision:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.nodalOutputPrecision:1
 msgid "A SymbolicConstant specifying the precision of the nodal output written to the output database. Possible values are SINGLE and FULL. The default value is SINGLE."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:77
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:77
 msgid "A SymbolicConstant specifying the parallelization method for Abaqus/Explicit. This value is ignored for Abaqus/Standard. Possible values are DOMAIN and LOOP. The default value is DOMAIN."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:70
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:58
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:81
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:83
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:70
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:58
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:81
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:83
 #: ../../docstring of abaqus.Job.Job.Job.numDomains:1
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.numDomains:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.numDomains:1
 msgid "An Int specifying the number of domains for parallel execution in Abaqus/Explicit. When **parallelizationMethodExplicit** = DOMAIN, **numDomains** must be a multiple of **numCpus**. The default value is 1."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:74
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:62
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:85
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:87
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:74
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:62
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:85
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:87
 #: ../../docstring of abaqus.Job.Job.Job.activateLoadBalancing:1
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.activateLoadBalancing:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.activateLoadBalancing:1
 msgid "A Boolean specifying whether to activate dyanmic load balancing for jobs running on multiple processors with multiple domains in Abaqus/Explicit. The default value is OFF."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:77
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:65
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:88
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:90
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:77
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:65
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:88
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:90
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.multiprocessingMode:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.multiprocessingMode:1
 msgid "A SymbolicConstant specifying whether an analysis is decomposed into threads or into multiple processes that communicate through a message passing interface (MPI). Possible values are DEFAULT, THREADS, and MPI. The default value is DEFAULT."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:92
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:92
 #: ../../docstring of abaqus.Job.Job.Job.licenseType:1
 msgid "A SymbolicConstant specifying the type of license type being used in the case of the DSLS SimUnit license model. Possible values are DEFAULT, TOKEN, and CREDIT. The default value is DEFAULT.If the license model is not the DSLS SimUnit, the licenseType is not available."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:0
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:0
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:0
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:0
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:0
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:0
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:97
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:94
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:97
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:94
 msgid "A :py:class:`~abaqus.Job.ModelJob.ModelJob` object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:0
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:0
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:0
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:0
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:0
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:0
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:0
 msgid "Return type"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:98
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:95
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:98
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:95
 msgid ":class:`ModelJob`"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:0
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:0
+#: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:0
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:0
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:0
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:0
 msgid "Raises"
 msgstr ""
 
@@ -303,93 +303,93 @@ msgstr ""
 msgid "Create queues in Session"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:1
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:1
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:1
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:1
 msgid "This method creates a Queue object. Note:Remote queues are available only on Linux platforms."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:10
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue:11
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:10
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue:11
 msgid "Check `Queue on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-queuepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:13
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:13
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:13
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:13
 #: ../../docstring of abaqus.Job.Queue.Queue.name:1
 msgid "A String specifying the name of the new Queue object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:15
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:15
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:15
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:15
 #: ../../docstring of abaqus.Job.Queue.Queue.queueName:1
 msgid "A String specifying the name of the remote analysis queue."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:17
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:17
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:17
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:17
 #: ../../docstring of abaqus.Job.Queue.Queue.hostName:1
 msgid "A String specifying the name of the remote host. The default value is an empty string."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:19
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:19
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:19
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:19
 #: ../../docstring of abaqus.Job.Queue.Queue.fileCopy:1
 msgid "A Boolean specifying if the results files are to be copied from the remote machine to the local machine. The default value is ON."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:22
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:22
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:22
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:22
 #: ../../docstring of abaqus.Job.Queue.Queue.directory:1
 msgid "A String specifying the remote location for the execution of the simulation. The default value is an empty string."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:25
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:25
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:25
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:25
 #: ../../docstring of abaqus.Job.Queue.Queue.driver:1
 msgid "A String specifying the designation of the remote driver. The default value is \"abaqus\"."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:27
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:27
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:27
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:27
 #: ../../docstring of abaqus.Job.Queue.Queue.remotePlatform:1
 msgid "A SymbolicConstant specifying the type of operating system on the remote machine. The default value is Linux."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:30
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:30
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:30
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:30
 #: ../../docstring of abaqus.Job.Queue.Queue.filesToCopy:1
 msgid "A list of Strings specifying the files to be copied from the remote location to the local machine, or ALL. Strings specified in a list are the extensions of the job files that will be copied, such as ('log', 'dat', 'msg', 'sta', 'odb'). The default value is ALL."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:35
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:35
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:35
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:35
 #: ../../docstring of abaqus.Job.Queue.Queue.deleteAfterCopy:1
 msgid "A Boolean specifying whether remote files are to be deleted after they are copied to the local machine. The default value is OFF."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:38
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:38
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:38
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:38
 #: ../../docstring of abaqus.Job.Queue.Queue.description:1
 msgid "A String specifying a description of the queue. The default value is an empty string."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:40
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:40
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:40
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:40
 msgid "A :py:class:`~abaqus.Job.Queue.Queue` object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:41
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:41
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:41
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:41
 msgid ":class:`Queue`"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:43
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:43
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:43
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:43
 msgid "If **fileCopy** = ON and **hostName** is empty."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:44
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:44
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:44
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:44
 msgid ":raises Directory in which` to :class:`run the job on the remote computer is not set: If **fileCopy** = ON and **directory** is empty."
 msgstr ""
 
@@ -401,54 +401,54 @@ msgstr ""
 msgid "Coexecution"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:1
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:1
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Message.py:docstring of abaqus.Job.Message.Message:1
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess:1
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue:1
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:1
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:1
+#: ../../../../src/abaqus/Job/Message.py:docstring of abaqus.Job.Message.Message:1
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess:1
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue:1
 msgid "Bases: :py:class:`object`"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:1
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:1
 msgid "The Coexecution object contains a set of jobs as associated parameters to define a co-simulation analysis."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:5
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:6
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:6
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Message.py:docstring of abaqus.Job.Message.Message:6
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob:6
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess:5
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue:5
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:5
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:6
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:6
+#: ../../../../src/abaqus/Job/Message.py:docstring of abaqus.Job.Message.Message:6
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob:6
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess:5
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue:5
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:10
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:12
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:10
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:12
 msgid "The corresponding analysis keywords are:"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:12
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:14
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:12
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:14
 #: ../../docstring of abaqus.Job.Message.Message.type:9
 msgid "HEADING"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:13
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:15
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:13
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:15
 msgid "PREPRINT"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:16
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:16
 msgid "Check `Coexecution on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coexecutionpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Message.py:docstring of abaqus.Job.Message.Message:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess:0
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:0
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:0
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:0
+#: ../../../../src/abaqus/Job/Message.py:docstring of abaqus.Job.Message.Message:0
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob:0
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess:0
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -556,11 +556,11 @@ msgstr ""
 msgid "A String specifying the name of the master model for the co-execution."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess:0
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:0
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:0
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:0
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob:0
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess:0
 msgid "Public Methods:"
 msgstr ""
 
@@ -568,7 +568,7 @@ msgstr ""
 msgid ":py:obj:`kill <abaqus.Job.Coexecution.Coexecution.kill>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.kill:1
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.kill:1
 #: ../../None:6:<autosummary>:1
 msgid "This method kills the analysis of a co-execution."
 msgstr ""
@@ -577,7 +577,7 @@ msgstr ""
 msgid ":py:obj:`submit <abaqus.Job.Coexecution.Coexecution.submit>`\\ \\(\\[consistencyChecking\\, datacheckJob\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.submit:1
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.submit:1
 #: ../../None:6:<autosummary>:1
 msgid "This method submits a co-execution for analysis."
 msgstr ""
@@ -586,7 +586,7 @@ msgstr ""
 msgid ":py:obj:`writeInput <abaqus.Job.Coexecution.Coexecution.writeInput>`\\ \\(\\[consistencyChecking\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.writeInput:1
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.writeInput:1
 #: ../../None:6:<autosummary>:1
 msgid "This method writes an input file for each analysis in the co-execution."
 msgstr ""
@@ -620,20 +620,20 @@ msgstr ""
 msgid "A SymbolicConstant specifying the status of the co-execution. Possible values are SUBMITTED, RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_SUBMITTED, CHECK_RUNNING, and CHECK_COMPLETED.If the **message** member of all the jobs are empty, **status** is set to NONE."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.submit:4
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.submit:4
 msgid "Check `Coexecution.submit on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coexecutionpyc.htm?contextscope=all#simaker-coexecutionsubmitpyc>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.submit:7
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.writeInput:7
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.submit:7
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.writeInput:7
 msgid "A Boolean specifying whether to perform consistency checking for the individual jobs. The default value is ON. It is not recommended to turn the consistency checking off unless you are absolutely sure the models are all consistent."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.submit:11
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.submit:11
 msgid "A Boolean specifying whether to run the co-execution as a datacheck analysis. The default value is False. The **datacheckJob** and **continueJob** arguments cannot both be True."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.submit:15
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.submit:15
 msgid "A Boolean specifying whether to run the co-execution as a continuation analysis. The default value is False. The **datacheckJob** and **continueJob** arguments cannot both be True."
 msgstr ""
 
@@ -641,8 +641,8 @@ msgstr ""
 msgid "A SymbolicConstant specifying the type of analysis to execute for the co-execution. Possible values are ANALYSIS, SYNTAXCHECK, RECOVER, and RESTART. The default value is ANALYSIS."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.waitForCompletion:1
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.waitForCompletion:1
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.waitForCompletion:1
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.waitForCompletion:1
 msgid "This method interrupts the execution of the script until the end of all the analyses. If you call the waitForCompletion method and the **status** member is neither SUBMITTED nor RUNNING, Abaqus assumes the analysis has either completed or aborted and returns immediately."
 msgstr ""
 
@@ -650,7 +650,7 @@ msgstr ""
 msgid "An Int specifying the number of hours to wait before submitting the co-execution. This argument is ignored if **queue** is set. The default value is 0.This argument works in conjunction with **waitMinutes**. **waitHours** and **atTime** are mutually exclusive."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.writeInput:4
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution.writeInput:4
 msgid "Check `Coexecution.writeInput on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-coexecutionpyc.htm?contextscope=all#simaker-coexecutionwriteinputpyc>`__."
 msgstr ""
 
@@ -888,7 +888,7 @@ msgstr ""
 msgid ":py:obj:`kill <abaqus.Job.Job.Job.kill>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.kill:1
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.kill:1
 #: ../../None:6:<autosummary>:1
 msgid "This method kills the analysis of a job."
 msgstr ""
@@ -897,7 +897,7 @@ msgstr ""
 msgid ":py:obj:`submit <abaqus.Job.Job.Job.submit>`\\ \\(\\[consistencyChecking\\, datacheckJob\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.submit:1
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.submit:1
 #: ../../None:6:<autosummary>:1
 msgid "This method submits a job for analysis."
 msgstr ""
@@ -914,7 +914,7 @@ msgstr ""
 msgid ":py:obj:`clearMessage <abaqus.Job.Job.Job.clearMessage>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.clearMessage:1
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.clearMessage:1
 #: ../../None:6:<autosummary>:1
 msgid "This method clears **messages** and sets the **status** to NONE."
 msgstr ""
@@ -925,7 +925,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If the object has the type JobFromInputFile, **analysis** = UNKNOWN."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:80
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:80
 #: ../../docstring of abaqus.Job.Job.Job.getMemoryFromAnalysis:1
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.getMemoryFromAnalysis:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.getMemoryFromAnalysis:1
@@ -940,18 +940,18 @@ msgstr ""
 msgid "An Int specifying the number of threads per MPI process to use for this analysis if parallel processing is available. Possible values are **numThreadsPerMpiProcess** >> 0. The default value is 1."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:64
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:52
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:77
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:64
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:52
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:77
 #: ../../docstring of abaqus.Job.Job.Job.parallelizationMethodExplicit:1
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.parallelizationMethodExplicit:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.parallelizationMethodExplicit:1
 msgid "A SymbolicConstant specifying the parallelization method for Abaqus/Explicit. Possible values are LOOP and DOMAIN. The default value is DOMAIN."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:67
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:55
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:80
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:67
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:55
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:80
 #: ../../docstring of abaqus.Job.Job.Job.parallelizationMethodExplicit:4
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.parallelizationMethodExplicit:4
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.parallelizationMethodExplicit:4
@@ -964,23 +964,23 @@ msgstr ""
 msgid "A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED, RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If the **message** member is empty, **status** is set to NONE."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.submit:4
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.submit:4
 msgid "Check `Job.submit on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobpyc.htm?contextscope=all#simaker-jobsubmitpyc>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.submit:7
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.submit:7
 msgid "A Boolean specifying whether to perform consistency checking for the job. The default value is ON. It is not recommended to turn the consistency checking off unless you are absolutely sure the model is consistent."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.submit:11
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.submit:11
 msgid "A Boolean specifying whether to run the job as a datacheck analysis. The default value is False. The datacheckJob and continueJob arguments cannot both be True."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.submit:14
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.submit:14
 msgid "A Boolean specifying whether to run the job as a continuation analysis. The default value is False. The datacheckJob and continueJob arguments cannot both be True."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.waitForCompletion:1
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.waitForCompletion:1
 msgid "This method interrupts the execution of the script until the end of the analysis. If you call the waitForCompletion method and the **status** member is neither SUBMITTED nor RUNNING, Abaqus assumes the analysis has either completed or aborted and returns immediately."
 msgstr ""
 
@@ -988,16 +988,16 @@ msgstr ""
 msgid "JobFromInputFile"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:1
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob:1
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:1
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob:1
 msgid "Bases: :py:class:`~abaqus.Job.Job.Job`"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:1
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:1
 msgid "The JobFromInputFile object defines a Job object which analyzes a model contained in an input file. The JobFromInputFile object is derived from the Job object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:12
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:12
 msgid "Check `JobFromInputFile on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobfrominputfilepyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1089,7 +1089,7 @@ msgstr ""
 msgid ":py:obj:`__init__ <abaqus.Job.JobFromInputFile.JobFromInputFile.__init__>`\\ \\(name\\, inputFileName\\[\\, type\\, queue\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:1
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates an analysis job using an input file for the model definition."
 msgstr ""
@@ -1098,69 +1098,69 @@ msgstr ""
 msgid ":py:obj:`setValues <abaqus.Job.JobFromInputFile.JobFromInputFile.setValues>`\\ \\(\\[type\\, queue\\, waitHours\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:1
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:1
 #: ../../None:4:<autosummary>:1
 msgid "This method modifies the JobFromInputFile object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:9
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:9
 msgid "Check `JobFromInputFile.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobfrominputfilepyc.htm?contextscope=all#simaker-jobfrominputfile__init__pyc>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:15
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:15
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.inputFileName:1
 msgid "A String specifying the input file to read. Possible values are any valid file name. If the .inp extension is not included in the value of the argument, the system will append it for the user."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:19
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:7
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:19
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:7
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.type:1
 msgid "A SymbolicConstant specifying the type of job. Possible values are ANALYSIS, SYNTAXCHECK, and RECOVER. The default value is ANALYSIS.For theJobFromInputFile object, **type** = RESTART is not currently supported."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:23
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:11
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:23
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:11
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.queue:1
 msgid "A String specifying the name of the queue to which to submit the job. The default value is an empty string.Note: You can use the **queue** argument when creating a Job object on a Windows workstation; however, remote queues are available only on Linux platforms."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:35
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:23
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:35
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:23
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.atTime:1
 msgid "A String specifying the time at which to submit the job. If **queue** is empty, the string syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be valid according to the system administrator. The default value is an empty string.Note: You can use the **atTime** argument when creating a Job object on a Windows workstation; however, the `at` command is available only on Linux platforms."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:64
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:52
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:77
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:64
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:52
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:77
 msgid "A SymbolicConstant specifying the parallelization method for Abaqus/Explicit. Possible values are LOOP and DOMAIN. The default value is DOMAIN.  .. versionchanged:: 2017     The default value for parallelizationMethodExplicit is now `DOMAIN`"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:83
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:83
 msgid "An Int specifying the number of GPUs to use for this analysis if parallel processing is available. Possible values are **numCpus** >= 0. The default value is 0."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:85
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:85
 msgid "This option specifies the results output format: ODB, SIM, or BOTH. The default value is ODB."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:87
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:87
 msgid "A :py:class:`~abaqus.Job.JobFromInputFile.JobFromInputFile` object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:88
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:88
 msgid ":class:`JobFromInputFile`"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:90
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:90
 msgid "If the user attempts to provide RESTART as a value to argument type:"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:91
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:91
 msgid "RESTART of input file job is not currently supported"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:4
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:4
 msgid "Check `JobFromInputFile.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobfrominputfilepyc.htm?contextscope=all#simaker-jobfrominputfilesetvaluespyc>`__."
 msgstr ""
 
@@ -1168,11 +1168,11 @@ msgstr ""
 msgid "Message"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Message.py:docstring of abaqus.Job.Message.Message:1
+#: ../../../../src/abaqus/Job/Message.py:docstring of abaqus.Job.Message.Message:1
 msgid "The Message object contains information about a given phase of the simulation. Job messages are not returned if a script is run without the Abaqus/CAE GUI (using the noGUI option)."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Message.py:docstring of abaqus.Job.Message.Message:13
+#: ../../../../src/abaqus/Job/Message.py:docstring of abaqus.Job.Message.Message:13
 msgid "Check `Message on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-messagepyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1296,11 +1296,11 @@ msgstr ""
 msgid "ModelJob"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob:1
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob:1
 msgid "The ModelJob object defines a Job object which analyzes a model on a model database (MDB). The ModelJob object is derived from the Job object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob:13
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob:13
 msgid "Check `ModelJob on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modeljobpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1440,7 +1440,7 @@ msgstr ""
 msgid ":py:obj:`writeInput <abaqus.Job.ModelJob.ModelJob.writeInput>`\\ \\(\\[consistencyChecking\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.writeInput:1
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.writeInput:1
 #: ../../None:5:<autosummary>:1
 msgid "This method writes an input file."
 msgstr ""
@@ -1449,12 +1449,12 @@ msgstr ""
 msgid ":py:obj:`setValues <abaqus.Job.ModelJob.ModelJob.setValues>`\\ \\(\\*args\\, \\*\\*kwargs\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.setValues:1
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.setValues:1
 #: ../../None:5:<autosummary>:1
 msgid "This method modifies the ModelJob object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:10
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:10
 msgid "Check `ModelJob.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modeljobpyc.htm?contextscope=all#simaker-modeljob__init__pyc>`__."
 msgstr ""
 
@@ -1462,11 +1462,11 @@ msgstr ""
 msgid "A SymbolicConstant specifying the type of job. Possible values are ANALYSIS, SYNTAXCHECK, RECOVER, and RESTART. The default value is ANALYSIS. If the object has the type JobFromInputFile, **type** = RESTART is not available."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.writeInput:4
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.writeInput:4
 msgid "Check `ModelJob.writeInput on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modeljobpyc.htm?contextscope=all#simaker-modeljobwriteinputpyc>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.writeInput:7
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.writeInput:7
 msgid "A Boolean specifying whether to perform consistency checking for the job. The default value is ON.It is not recommended to turn the consistency checking off unless you are absolutely sure the model is consistent."
 msgstr ""
 
@@ -1474,11 +1474,11 @@ msgstr ""
 msgid "OptimizationProcess"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess:1
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess:1
 msgid "The OptimizationProcess object defines a process to perform an optimization of a model defined using an optimization task."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess:11
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess:11
 msgid "Check `OptimizationProcess on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optimizationprocesspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1486,8 +1486,8 @@ msgstr ""
 msgid ":py:obj:`description <abaqus.Job.OptimizationProcess.OptimizationProcess.description>`\\"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:22
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:7
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:22
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:7
 #: ../../None:9:<autosummary>:1
 #: ../../docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.description:1
 msgid "A String specifying a description of the optimization process."
@@ -1545,7 +1545,7 @@ msgstr ""
 msgid ":py:obj:`__init__ <abaqus.Job.OptimizationProcess.OptimizationProcess.__init__>`\\ \\(name\\, model\\, task\\, prototypeJob\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:1
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:1
 #: ../../None:8:<autosummary>:1
 msgid "This method creates an OptimizationProcess object."
 msgstr ""
@@ -1554,7 +1554,7 @@ msgstr ""
 msgid ":py:obj:`writeParAndInputFiles <abaqus.Job.OptimizationProcess.OptimizationProcess.writeParAndInputFiles>`\\ \\(\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.writeParAndInputFiles:1
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.writeParAndInputFiles:1
 #: ../../None:8:<autosummary>:1
 msgid "This method allows you to write par and input files for an optimization task."
 msgstr ""
@@ -1563,7 +1563,7 @@ msgstr ""
 msgid ":py:obj:`submit <abaqus.Job.OptimizationProcess.OptimizationProcess.submit>`\\ \\(\\[validate\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.submit:1
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.submit:1
 #: ../../None:8:<autosummary>:1
 msgid "This method submits an optimization process."
 msgstr ""
@@ -1576,7 +1576,7 @@ msgstr ""
 msgid ":py:obj:`extract <abaqus.Job.OptimizationProcess.OptimizationProcess.extract>`\\ \\(outputFileName\\, designCycle\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:1
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:1
 #: ../../None:8:<autosummary>:1
 msgid "This method extracts a surface mesh from the optimized model."
 msgstr ""
@@ -1585,132 +1585,132 @@ msgstr ""
 msgid ":py:obj:`setValues <abaqus.Job.OptimizationProcess.OptimizationProcess.setValues>`\\ \\(\\[description\\, maxDesignCycle\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:1
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:1
 #: ../../None:8:<autosummary>:1
 msgid "This method modifies the OptimizationProcess object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:9
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:9
 msgid "Check `OptimizationProcess.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optimizationprocesspyc.htm?contextscope=all#simaker-optimizationprocess__init__pyc>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:12
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:12
 #: ../../docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.name:1
 msgid "A String specifying name of the optimization process."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:14
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:14
 #: ../../docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.model:1
 msgid "A String specifying name of the model to be used for the optimization process."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:16
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:16
 #: ../../docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.task:1
 msgid "A String specifying name of the optimization task to be used for the optimization process."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:19
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:19
 #: ../../docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.prototypeJob:1
 msgid "A String specifying name of the job to be used as the prototype for all analysis jobs run by the optimization process."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:24
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:9
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:24
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:9
 #: ../../docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.maxDesignCycle:1
 msgid "An Int specifying the maximum number of allowed design cycles for the optimization process. The default value is 15."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:27
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:12
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:27
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:12
 #: ../../docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.dataSaveFrequency:1
 msgid "An Enum specifying whether Abaqus should save every iteration file in the optimization process or a selection of iteration files saved at a user-specified frequency. If you set **dataSaveFrequency** = OPT_DATASAVE_EVERY_CYCLE, Abaqus saves every iteration file; if you set **dataSaveFrequency** = OPT_DATASAVE_SPECIFY_CYCLE, Abaqus saves iteration files according to the frequency defined by the **saveEvery** parameter. The default value is OPT_DATASAVE_SPECIFY_CYCLE."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:34
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:19
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:34
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:19
 #: ../../docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.saveInitial:1
 msgid "A Boolean specifying whether the initial cycle should be saved when **dataSaveFrequency** is OPT_DATASAVE_SPECIFY_CYCLE. The default value is True."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:37
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:22
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:37
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:22
 #: ../../docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.saveFirst:1
 msgid "A Boolean specifying whether the first cycle should be saved when **dataSaveFrequency** is OPT_DATASAVE_SPECIFY_CYCLE. The default value is True."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:40
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:25
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:40
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:25
 #: ../../docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.saveLast:1
 msgid "A Boolean specifying whether the last cycle should be saved when **dataSaveFrequency** is OPT_DATASAVE_SPECIFY_CYCLE. The default value is True."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:43
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:28
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:43
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:28
 #: ../../docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.saveEvery:1
 msgid "An Int specifying every nth cycle iterations to be saved when **dataSaveFrequency** is OPT_DATASAVE_SPECIFY_CYCLE. Abaqus saves file iterations for every nth iteration after iteration 1; if you set **saveEvery** = 3, Abaqus saves file iterations for cycles 1, 4, 7, and so on. The default value is None."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:48
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:48
 msgid "An :py:class:`~abaqus.Job.OptimizationProcess.OptimizationProcess` object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:49
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.__init__:49
 msgid ":class:`OptimizationProcess`"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:4
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:4
 msgid "Check `OptimizationProcess.extract on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optimizationprocesspyc.htm?contextscope=all#simaker-optimizationprocessextractpyc>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:7
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:7
 msgid "Name of the output file for the extracted surface mesh."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:9
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:9
 msgid "The design cycle number for which the surface mesh should be extracted."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:11
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:11
 msgid "Value used to determine the positions on the element edges where the new nodes are created. Value between 0 and 1. The default value is 0.3."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:14
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:14
 msgid "Number of smoothing cycles; if set to 0, no smoothing is performed. The default value is 5."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:17
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:17
 msgid "Defines the percent of faces that should be removed during the data reduction. If set to 0, no data reduction occurs. If set to 100, the data reduction stops when no faces can be removed (that is checked using reductionAngle parameter). Value between 0 and 100. The default value is 0."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:22
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:22
 msgid "Defines the maximal angle between adjacent faces at a node such that the node may be removed during the data reduction. Value in degrees between 0 and 90. The default value is15."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:26
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:26
 msgid "Defines the target volume that is to be achieved iteratively by varying the isovalue. Value between 0 and 1. The default value is 0."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:29
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:29
 msgid "Tuple for the types of format of the output. Values are (OPT_EXTRACT_SMOOTH_ABAQUS_INPUT_FILE, OPT_EXTRACT_SMOOTH_STL). Default: OPT_EXTRACT_SMOOTH_ABAQUS_INPUT_FILE"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:32
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:32
 msgid "Possible string values are OFF or MODERATE or FULL. Defines if the element material values are to be filtered (averaged locally) before the isocut, and to what extent. The default value is OFF."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:36
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.extract:36
 msgid "Defines a list of names of part instances to be used for surface extraction. One file (according to extractFormat) is created for each part instance. If the argument is not specified, no part instance is selected and surface is generated for the whole model."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:4
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.setValues:4
 msgid "Check `OptimizationProcess.setValues on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optimizationprocesspyc.htm?contextscope=all#simaker-optimizationprocesssetvaluespyc>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.submit:4
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.submit:4
 msgid "Check `OptimizationProcess.submit on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-optimizationprocesspyc.htm?contextscope=all#simaker-optimizationprocesssubmitpyc>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.submit:7
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.submit:7
 msgid "A Boolean specifying whether Abaqus should perform the validation of the optimization process only. The default value is False."
 msgstr ""
 
@@ -1718,10 +1718,10 @@ msgstr ""
 msgid "Queue"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue:1
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue:1
 msgid "A :py:class:`~abaqus.Job.Queue.Queue` object tells the job where and how to submit a job remotely. A :py:class:`~abaqus.Job.Queue.Queue` object can be used as the **queue** argument to the Job method."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:10
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue.__init__:10
 msgid "Check `Queue.__init__ on help.3ds.com/2021 <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-queuepyc.htm?contextscope=all#simaker-queue__init__pyc>`__."
 msgstr ""
