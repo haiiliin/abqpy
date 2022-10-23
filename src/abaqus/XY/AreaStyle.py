@@ -12,7 +12,7 @@ class AreaStyle:
     AreaStyle objects are automatically created whenever an Area object is created.
     AreaStyle objects can be created using the methods described below.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -47,12 +47,10 @@ class AreaStyle:
     style: SymbolicConstant = SOLID
 
     @abaqus_method_doc
-    def __init__(
-        self, color: str = "", fill: Boolean = ON, style: Literal[C.SOLID] = SOLID
-    ):
+    def __init__(self, color: str = "", fill: Boolean = ON, style: Literal[C.SOLID] = SOLID):
         """This method creates an AreaStyle.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.AreaStyle
@@ -82,9 +80,7 @@ class AreaStyle:
         ...
 
     @abaqus_method_doc
-    def setValues(
-        self, color: str = "", fill: Boolean = ON, style: Literal[C.SOLID] = SOLID
-    ):
+    def setValues(self, color: str = "", fill: Boolean = ON, style: Literal[C.SOLID] = SOLID):
         """This method modifies the AreaStyle object.
 
         Parameters

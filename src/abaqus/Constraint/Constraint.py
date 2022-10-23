@@ -9,7 +9,7 @@ class Constraint:
     ConstrainedSketchConstraint object has no explicit constructor. The members of the ConstrainedSketchConstraint object are
     common to all objects derived from the ConstrainedSketchConstraint.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction

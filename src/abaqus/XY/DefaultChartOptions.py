@@ -17,7 +17,7 @@ class DefaultChartOptions:
     DefaultChartOptions object attributes are used whenever Chart or Axis are created. A
     DefaultChartOptions object is automatically created when opening a session.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -31,17 +31,17 @@ class DefaultChartOptions:
         self,
         areaStyle: AreaStyle,
         aspectRatio: Optional[float] = None,
-        defaultAxis1Options: Optional[Axis] = None, 
-        defaultAxis2Options: Optional[Axis] = None, 
-        gridArea: Optional[Area] = None, 
-        legend: Optional[Legend] = None, 
-        majorAxis1GridStyle: Optional[LineStyle] = None, 
-        majorAxis2GridStyle: Optional[LineStyle] = None, 
-        minorAxis1GridStyle: Optional[LineStyle] = None, 
-        minorAxis2GridStyle: Optional[LineStyle] = None, 
-        tagAreaStyle: Optional[AreaStyle] = None, 
-        tagBorder: Optional[LineStyle] = None, 
-        tagTextStyle: Optional[TextStyle] = None, 
+        defaultAxis1Options: Optional[Axis] = None,
+        defaultAxis2Options: Optional[Axis] = None,
+        gridArea: Optional[Area] = None,
+        legend: Optional[Legend] = None,
+        majorAxis1GridStyle: Optional[LineStyle] = None,
+        majorAxis2GridStyle: Optional[LineStyle] = None,
+        minorAxis1GridStyle: Optional[LineStyle] = None,
+        minorAxis2GridStyle: Optional[LineStyle] = None,
+        tagAreaStyle: Optional[AreaStyle] = None,
+        tagBorder: Optional[LineStyle] = None,
+        tagTextStyle: Optional[TextStyle] = None,
         useQuantityType: Boolean = ON,
     ):
         """This method modifies the DefaultChartOptions object.

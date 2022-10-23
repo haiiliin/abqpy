@@ -11,7 +11,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 class Creep:
     r"""The Creep object defines a creep law.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -22,7 +22,7 @@ class Creep:
         The table data for this object are:
 
         - If **law** = STRAIN or **law** = TIME, the table data specify the following:
-        
+
             - :math:`A`.
             - :math:`n`.
             - :math:`m`.
@@ -31,7 +31,7 @@ class Creep:
             - Value of the second field variable.
             - Etc.
         - If **law** = HYPERBOLIC_SINE, the table data specify the following:
-        
+
             - :math:`A`.
             - :math:`B`.
             - :math:`n`.
@@ -63,7 +63,7 @@ class Creep:
     ):
         """This method creates a Creep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Creep

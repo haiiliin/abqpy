@@ -5,7 +5,7 @@ from abqpy.decorators import abaqus_class_doc
 class ConstrainedSketchConstraint:
     """The ConstrainedSketchConstraint object stores the constraints associated with a sketch.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import sketch

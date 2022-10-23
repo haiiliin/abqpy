@@ -13,7 +13,7 @@ class EdgeArray(List[Edge]):
     """The EdgeArray is a sequence of Edge objects. If the part is modified, then EdgeArray
     must be updated for that part.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -47,7 +47,7 @@ class EdgeArray(List[Edge]):
     def __init__(self, edges: List[Edge]) -> None:
         """This method creates an EdgeArray object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 part.EdgeArray
@@ -68,7 +68,9 @@ class EdgeArray(List[Edge]):
     @overload
     @abaqus_method_doc
     def findAt(
-        self, coordinates: Tuple[float, float, float], printWarning: Boolean = True,
+        self,
+        coordinates: Tuple[float, float, float],
+        printWarning: Boolean = True,
     ) -> Edge:
         ...
 
@@ -76,7 +78,9 @@ class EdgeArray(List[Edge]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[Tuple[float, float, float],],
+        coordinates: Tuple[
+            Tuple[float, float, float],
+        ],
         printWarning: Boolean = True,
     ) -> List[Edge]:
         ...
@@ -85,8 +89,10 @@ class EdgeArray(List[Edge]):
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[Tuple[float, float, float],],
-        printWarning: Boolean = True
+        *coordinates: Tuple[
+            Tuple[float, float, float],
+        ],
+        printWarning: Boolean = True,
     ) -> List[Edge]:
         ...
 
@@ -116,9 +122,9 @@ class EdgeArray(List[Edge]):
 
             * If you omit the **coordinates** keyword argument, findAt accepts as arguments a sequence
               of sequence of floats in the following format::
-            
-                edges = e.findAt(((20.19686, -169.513997, 27.798593), ), 
-                                 ((19.657627, -167.295749, 27.056402), ), 
+
+                edges = e.findAt(((20.19686, -169.513997, 27.798593), ),
+                                 ((19.657627, -167.295749, 27.056402), ),
                                  ((18.274129, -157.144741, 25.15218), ))
         printWarning
             A Boolean specifying whether a message is to be printed to the CLI if no entity is found
@@ -130,7 +136,7 @@ class EdgeArray(List[Edge]):
             An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object or a sequence of Edge objects.
 
         """
-        first_arg = kwargs.get('coordinates', args[0] if args else ((),))
+        first_arg = kwargs.get("coordinates", args[0] if args else ((),))
         return Edge() if isinstance(first_arg[0], float) else [Edge()]
 
     @abaqus_method_doc
@@ -143,7 +149,7 @@ class EdgeArray(List[Edge]):
         coordinates
             A sequence of a sequence of floats, where each sequence of floats describes the **X**-,
             **Y**-, and **Z**- coordinates of a point::
-            
+
                 >>> r=e.getClosest(coordinates=((20.0, 20.0, 10.0), (-1.0, -15.0, 15), ))
                 >>> r.keys()
                 [0, 1]
@@ -278,7 +284,9 @@ class EdgeArray(List[Edge]):
 
     @abaqus_method_doc
     def getByBoundingSphere(
-        self, center: Tuple[float, float, float], radius: float,
+        self,
+        center: Tuple[float, float, float],
+        radius: float,
     ) -> Dict[str, Tuple[float, float, float]]:
         """This method returns an array of edge objects that lie within the specified bounding
         sphere.
@@ -307,7 +315,7 @@ class EdgeArray(List[Edge]):
         -------
         Dict[str, Tuple[float, float, float]]
             A Dictionary object with the following items:
-            
+
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z** -boundary
               values of the bounding box.
             - **high**: a tuple of three floats representing the maximum **X** -, **Y** -, and **Z** -boundary

@@ -15,7 +15,7 @@ class ProbeReport:
     module. When probing is initiated for the first time, the values in the **probeReport**
     member are initialized using the values from the **defaultProbeReport** member.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

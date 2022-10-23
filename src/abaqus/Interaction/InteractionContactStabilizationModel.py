@@ -9,7 +9,6 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 @abaqus_class_doc
 class InteractionContactStabilizationModel(ModelBase):
-
     @abaqus_method_doc
     def StdStabilization(
         self,

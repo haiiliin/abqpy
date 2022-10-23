@@ -14,7 +14,7 @@ class SurfaceCurrent(Load):
     """The SurfaceCurrent object stores the data for a surface current.
     The SurfaceCurrent object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -49,7 +49,7 @@ class SurfaceCurrent(Load):
     ):
         """This method creates a SurfaceCurrent object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceCurrent
@@ -111,9 +111,7 @@ class SurfaceCurrent(Load):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(
-        self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""
-    ):
+    def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
         """This method modifies the propagating data for an existing SurfaceCurrent object in the
         specified step.
 

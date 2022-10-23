@@ -5,7 +5,7 @@ from abqpy.decorators import abaqus_class_doc
 class OdbDataMaterial:
     """The OdbDataMaterial object stores material data.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

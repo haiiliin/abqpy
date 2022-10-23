@@ -4,8 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (Boolean, INDEPENDENT,
-                                              OFF, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import Boolean, INDEPENDENT, OFF, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -13,7 +12,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class IntegratedOutputSection:
     """The IntegratedOutputSection object specifies parameters used for integrated output.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -63,15 +62,13 @@ class IntegratedOutputSection:
         surface: Region,
         refPoint: Optional[SymbolicConstant] = None,
         refPointAtCenter: Boolean = OFF,
-        refPointMotion: Literal[
-            C.AVERAGE_TRANSLATION, C.AVERAGE, C.INDEPENDENT
-        ] = INDEPENDENT,
+        refPointMotion: Literal[C.AVERAGE_TRANSLATION, C.AVERAGE, C.INDEPENDENT] = INDEPENDENT,
         localCsys: Optional[str] = None,
         projectOrientation: Boolean = OFF,
     ) -> None:
         """This method creates an IntegratedOutputSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].IntegratedOutputSection
@@ -121,9 +118,7 @@ class IntegratedOutputSection:
         surface: Region,
         refPoint: Optional[SymbolicConstant] = None,
         refPointAtCenter: Boolean = OFF,
-        refPointMotion: Literal[
-            C.AVERAGE_TRANSLATION, C.AVERAGE, C.INDEPENDENT
-        ] = INDEPENDENT,
+        refPointMotion: Literal[C.AVERAGE_TRANSLATION, C.AVERAGE, C.INDEPENDENT] = INDEPENDENT,
         localCsys: Optional[str] = None,
         projectOrientation: Boolean = OFF,
     ) -> None:

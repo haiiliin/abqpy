@@ -24,19 +24,31 @@ from .TrussSection import TrussSection
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (BENDING, Boolean,
-                                              CONSTANT, DEFAULT,
-                                              DOF_MODE, FULLY, GRADIENT, LINEAR, NONE, NO_IDEALIZATION, OFF, ON,
-                                              SIMPSON,
-                                              SOLVER_DEFAULT, UNIFORM,
-                                              UNSPECIFIED)
+from ..UtilityAndView.abaqusConstants import (
+    BENDING,
+    Boolean,
+    CONSTANT,
+    DEFAULT,
+    DOF_MODE,
+    FULLY,
+    GRADIENT,
+    LINEAR,
+    NONE,
+    NO_IDEALIZATION,
+    OFF,
+    ON,
+    SIMPSON,
+    SOLVER_DEFAULT,
+    UNIFORM,
+    UNSPECIFIED,
+)
 
 
 @abaqus_class_doc
 class SectionModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -48,7 +60,7 @@ class SectionModel(ModelBase):
     ) -> AcousticInfiniteSection:
         """This method creates an AcousticInfiniteSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AcousticInfiniteSection
@@ -78,18 +90,14 @@ class SectionModel(ModelBase):
         InvalidNameError
         RangeError
         """
-        self.sections[name] = section = AcousticInfiniteSection(
-            name, material, thickness, order
-        )
+        self.sections[name] = section = AcousticInfiniteSection(name, material, thickness, order)
         return section
 
     @abaqus_method_doc
-    def AcousticInterfaceSection(
-        self, name: str, thickness: float = 1
-    ) -> AcousticInterfaceSection:
+    def AcousticInterfaceSection(self, name: str, thickness: float = 1) -> AcousticInterfaceSection:
         """This method creates an AcousticInterfaceSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AcousticInterfaceSection
@@ -150,7 +158,7 @@ class SectionModel(ModelBase):
     ) -> BeamSection:
         """This method creates a BeamSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BeamSection
@@ -295,7 +303,7 @@ class SectionModel(ModelBase):
     ) -> CohesiveSection:
         """This method creates a CohesiveSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CohesiveSection
@@ -361,9 +369,7 @@ class SectionModel(ModelBase):
         poisson: float = 0,
         integrationRule: Literal[C.SIMPSON, C.GAUSS] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
-        idealization: Literal[
-            C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, C.BENDING
-        ] = NO_IDEALIZATION,
+        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, C.BENDING] = NO_IDEALIZATION,
         nTemp: Optional[int] = None,
         thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
@@ -374,7 +380,7 @@ class SectionModel(ModelBase):
     ) -> CompositeShellSection:
         """This method creates a CompositeShellSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[i].CompositeShellSection
@@ -482,7 +488,7 @@ class SectionModel(ModelBase):
     ) -> CompositeSolidSection:
         """This method creates a CompositeSolidSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CompositeSolidSection
@@ -506,9 +512,7 @@ class SectionModel(ModelBase):
         CompositeSolidSection
             A :py:class:`~abaqus.Section.CompositeSolidSection.CompositeSolidSection` object.
         """
-        self.sections[name] = section = CompositeSolidSection(
-            name, layup, symmetric, layupName
-        )
+        self.sections[name] = section = CompositeSolidSection(name, layup, symmetric, layupName)
         return section
 
     @abaqus_method_doc
@@ -573,7 +577,7 @@ class SectionModel(ModelBase):
     ) -> ConnectorSection:
         """This method creates a ConnectorSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConnectorSection
@@ -696,7 +700,7 @@ class SectionModel(ModelBase):
     def EulerianSection(self, name: str, data: str) -> EulerianSection:
         """This method creates a EulerianSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EulerianSection
@@ -731,7 +735,7 @@ class SectionModel(ModelBase):
     ) -> GasketSection:
         """This method creates a GasketSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].GasketSection
@@ -796,7 +800,7 @@ class SectionModel(ModelBase):
     ) -> GeneralStiffnessSection:
         """This method creates a GeneralStiffnessSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].GeneralStiffnessSection
@@ -883,9 +887,7 @@ class SectionModel(ModelBase):
         poisson: float = 0,
         integrationRule: Literal[C.SIMPSON, C.GAUSS] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
-        idealization: Literal[
-            C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING
-        ] = NO_IDEALIZATION,
+        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING] = NO_IDEALIZATION,
         nTemp: Optional[int] = None,
         thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
@@ -895,13 +897,13 @@ class SectionModel(ModelBase):
     ) -> HomogeneousShellSection:
         """This method creates a HomogeneousShellSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[i].HomogeneousShellSection
                 mdb.models[name].HomogeneousShellSection
                 session.odbs[name].HomogeneousShellSection
-            
+
         Parameters
         ----------
         name
@@ -1001,7 +1003,7 @@ class SectionModel(ModelBase):
     ) -> HomogeneousSolidSection:
         """This method creates a HomogeneousSolidSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].HomogeneousSolidSection
@@ -1027,9 +1029,7 @@ class SectionModel(ModelBase):
         InvalidNameError
         RangeError
         """
-        self.sections[name] = section = HomogeneousSolidSection(
-            name, material, thickness
-        )
+        self.sections[name] = section = HomogeneousSolidSection(name, material, thickness)
         return section
 
     @abaqus_method_doc
@@ -1045,7 +1045,7 @@ class SectionModel(ModelBase):
     ) -> MembraneSection:
         """This method creates a MembraneSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].MembraneSection
@@ -1110,7 +1110,7 @@ class SectionModel(ModelBase):
     ) -> MPCSection:
         """This method creates a MPCSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].MPCSection
@@ -1155,7 +1155,7 @@ class SectionModel(ModelBase):
     ) -> PEGSection:
         """This method creates a PEGSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PEGSection
@@ -1187,18 +1187,14 @@ class SectionModel(ModelBase):
         InvalidNameError
         RangeError
         """
-        self.sections[name] = section = PEGSection(
-            name, material, thickness, wedgeAngle1, wedgeAngle2
-        )
+        self.sections[name] = section = PEGSection(name, material, thickness, wedgeAngle1, wedgeAngle2)
         return section
 
     @abaqus_method_doc
-    def SurfaceSection(
-        self, name: str, useDensity: Boolean = OFF, density: float = 0
-    ) -> SurfaceSection:
+    def SurfaceSection(self, name: str, useDensity: Boolean = OFF, density: float = 0) -> SurfaceSection:
         """This method creates a SurfaceSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceSection
@@ -1231,7 +1227,7 @@ class SectionModel(ModelBase):
     def TrussSection(self, name: str, material: str, area: float = 1) -> TrussSection:
         """This method creates a TrussSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TrussSection

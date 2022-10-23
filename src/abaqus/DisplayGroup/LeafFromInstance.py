@@ -15,7 +15,7 @@ class LeafFromInstance(Leaf):
     commands.
     The LeafFromInstance object is derived from the Leaf object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import displayGroupMdbToolset
@@ -29,7 +29,7 @@ class LeafFromInstance(Leaf):
     def __init__(self, instances: PartInstance):
         """This method creates a Leaf object from a sequence of part instance objects.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 LeafFromInstance

@@ -13,7 +13,7 @@ class FaceArray(List[Face]):
     """The FaceArray is a sequence of Face objects. If the part is modified, then FaceArray
     must be updated for that part.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -45,7 +45,7 @@ class FaceArray(List[Face]):
     def __init__(self, faces: List[Face]) -> None:
         """This method creates a FaceArray object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 part.FaceArray
@@ -66,7 +66,9 @@ class FaceArray(List[Face]):
     @overload
     @abaqus_method_doc
     def findAt(
-        self, coordinates: Tuple[float, float, float], printWarning: Boolean = True,
+        self,
+        coordinates: Tuple[float, float, float],
+        printWarning: Boolean = True,
     ) -> Face:
         ...
 
@@ -74,7 +76,9 @@ class FaceArray(List[Face]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[Tuple[float, float, float],],
+        coordinates: Tuple[
+            Tuple[float, float, float],
+        ],
         printWarning: Boolean = True,
     ) -> List[Face]:
         ...
@@ -83,7 +87,9 @@ class FaceArray(List[Face]):
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[Tuple[float, float, float],],
+        *coordinates: Tuple[
+            Tuple[float, float, float],
+        ],
         printWarning: Boolean = True,
     ) -> List[Face]:
         ...
@@ -109,16 +115,16 @@ class FaceArray(List[Face]):
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to
             find. `findAt` returns either a Face object or a sequence of Face objects based on the type
             of input.
-            
+
             * If **coordinates** is a sequence of Floats, findAt returns the Face object at that point.
-            
+
             * If you omit the **coordinates** keyword argument, findAt accepts as arguments a
               sequence of pairs of sequences describing each face's coordinate and normal, and findAt
               returns a sequence of Face objects at the given locations. If you omit the **coordinates**
               keyword argument, you must also omit the **normal** argument::
-            
-                faces = f.findAt(((-16.438578, -41.835673, -24.19804), ), 
-                                 ((25.210364, -35.689868, 1.860314), ), 
+
+                faces = f.findAt(((-16.438578, -41.835673, -24.19804), ),
+                                 ((25.210364, -35.689868, 1.860314), ),
                                  ((26.727683, -38.207055, 4.164759), ))
         normal
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-components of a vector
@@ -133,7 +139,7 @@ class FaceArray(List[Face]):
             A :py:class:`~abaqus.BasicGeometry.Face.Face` object.
 
         """
-        first_arg = kwargs.get('coordinates', args[0] if args else ((),))
+        first_arg = kwargs.get("coordinates", args[0] if args else ((),))
         return Face() if isinstance(first_arg[0], float) else [Face()]
 
     @abaqus_method_doc
@@ -204,9 +210,7 @@ class FaceArray(List[Face]):
         ...
 
     @abaqus_method_doc
-    def getByBoundingCylinder(
-        self, center1: tuple, center2: tuple, radius: str
-    ) -> FaceArray:
+    def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str) -> FaceArray:
         """This method returns an array of face objects that lie within the specified bounding
         cylinder.
 
@@ -258,7 +262,7 @@ class FaceArray(List[Face]):
         -------
         Dict[str, Sequence[float]]
             A Dictionary object with the following items:
-            
+
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z**  -boundary
               values of the bounding box.
             - **high**: a tuple of three floats representing the maximum **X** -, **Y** -, and **Z**  -boundary
@@ -276,7 +280,7 @@ class FaceArray(List[Face]):
         coordinates
             A sequence of a sequence of floats, where each sequence of floats describes the **X**-,
             **Y**-, and **Z**-coordinates of a point::
-            
+
                 >>> r=f.getClosest(coordinates=((20.0, 20.0, 10.0), (-1.0, -15.0, 15), ))
                 >>> r.keys()
                 [0, 1]

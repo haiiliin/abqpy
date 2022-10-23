@@ -15,7 +15,7 @@ class DatumCsys(Datum):
     a DatumCsys object.
     The DatumCsys object is derived from the Datum object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

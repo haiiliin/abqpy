@@ -9,7 +9,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 class GeometricProperties:
     """The GeometricProperties object specifies surface interaction properties.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -66,7 +66,7 @@ class GeometricProperties:
     ):
         """This method creates a GeometricProperties object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].interactionProperties[name].GeometricProperties

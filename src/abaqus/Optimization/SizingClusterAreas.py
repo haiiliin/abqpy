@@ -8,7 +8,7 @@ class SizingClusterAreas(GeometricRestriction):
     """The SizingClusterAreas object defines a sizing cluster areas geometric restriction.
     The SizingClusterAreas object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -26,7 +26,7 @@ class SizingClusterAreas(GeometricRestriction):
     def __init__(self, name: str, regions: tuple):
         """This method creates a SizingClusterAreas object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingClusterAreas

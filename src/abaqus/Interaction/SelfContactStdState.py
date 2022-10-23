@@ -14,7 +14,7 @@ class SelfContactStdState(InteractionState):
     The SelfContactStdState object has no constructor or methods.
     The SelfContactStdState object is derived from the InteractionState object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -44,7 +44,7 @@ class SelfContactStdState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:
-    #: 
+    #:
     #: - NOT_YET_ACTIVE
     #: - CREATED
     #: - PROPAGATED

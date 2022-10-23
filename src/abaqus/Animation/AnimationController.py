@@ -14,7 +14,7 @@ class AnimationController(_OptionsBase):
     the viewports. The AnimationController object has no constructor. Abaqus creates the
     **animationController** member when it creates the Session object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import animation

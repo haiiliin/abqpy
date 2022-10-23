@@ -14,7 +14,7 @@ class SurfaceHeatFlux(Load):
     """The SurfaceHeatFlux object defines surface heat flux from a region or into a region.
     The SurfaceHeatFlux object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -49,7 +49,7 @@ class SurfaceHeatFlux(Load):
     ):
         """This method creates a SurfaceHeatFlux object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceHeatFlux
@@ -111,9 +111,7 @@ class SurfaceHeatFlux(Load):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(
-        self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""
-    ):
+    def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
         """This method modifies the propagating data for an existing SurfaceHeatFlux object in the
         specified step.
 

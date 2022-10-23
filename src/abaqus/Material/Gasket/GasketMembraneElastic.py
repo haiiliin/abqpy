@@ -8,7 +8,7 @@ class GasketMembraneElastic:
     r"""The GasketMembraneElastic object defines the elastic parameters for the membrane shear
     behavior of a gasket.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -17,7 +17,7 @@ class GasketMembraneElastic:
             session.odbs[name].materials[name].gasketMembraneElastic
 
         The table data for this object are:
-        
+
         - Young's modulus, :math:`E`.
         - Poisson's ratio, :math:`\nu`.
         - Temperature, if the data depend on temperature.
@@ -31,12 +31,10 @@ class GasketMembraneElastic:
     """
 
     @abaqus_method_doc
-    def __init__(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ):
+    def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a GasketMembraneElastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].GasketMembraneElastic

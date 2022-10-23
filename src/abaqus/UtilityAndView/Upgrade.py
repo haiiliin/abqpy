@@ -34,7 +34,7 @@ def upgradeScript(
     upgrade scripts. For more information, see the summary of changed commands at the end of
     this guide.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             upgradeScript.upgradeScript

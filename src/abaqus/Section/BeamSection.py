@@ -6,9 +6,7 @@ from typing_extensions import Literal
 from .Section import Section
 from .TransverseShearBeam import TransverseShearBeam
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (ANALYSIS_DEFAULT, Boolean, CONSTANT,
-                                              FULLY, LINEAR,
-                                              OFF)
+from ..UtilityAndView.abaqusConstants import ANALYSIS_DEFAULT, Boolean, CONSTANT, FULLY, LINEAR, OFF
 
 
 @abaqus_class_doc
@@ -16,7 +14,7 @@ class BeamSection(Section):
     """The BeamSection object defines the properties of a beam section.
     The BeamSection object is derived from the Section object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -25,7 +23,7 @@ class BeamSection(Section):
             session.odbs[name].sections[name]
 
         The table data for this object are:
-        
+
         - E, the Young's modulus of the section.
         - G, the torsional shear modulus of the section.
         - Thermal expansion coefficient, if using thermal expansion.
@@ -197,7 +195,7 @@ class BeamSection(Section):
     ) -> None:
         """This method creates a BeamSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BeamSection

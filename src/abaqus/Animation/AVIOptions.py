@@ -14,12 +14,13 @@ class AVIOptions(_OptionsBase):
     AVI animation. The AVIOptions object has no constructor. Abaqus creates the **aviOptions**
     member when the animation module is imported.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import animation
             session.aviOptions
     """
+
     #: A SymbolicConstant specifying the compression method for the AVI format. Possible values are:
     #:
     #: - RAW8, specifying an uncompressed format of 8 bits per pixel.
@@ -30,20 +31,20 @@ class AVIOptions(_OptionsBase):
     #:
     #: The default value is RLE8.
     compressionMethod: SymbolicConstant = RLE8
-    
+
     #: An Int specifying the quality of the compression as a percentage when the
     #: **compressionMethod** is set to CODEC.
     compressionQuality: Optional[int] = None
-    
+
     #: A String specifying the system specific options defining the CODEC when the
     #: **compressionMethod** is set to CODEC.
     codecOptions: str = ""
-    
+
     #: A SymbolicConstant specifying how the width and height of the image are specified.
     #: Possible values are SIZE_ON_SCREEN and USER_DEFINED. The default value is
     #: SIZE_ON_SCREEN.
     sizeDefinition: SymbolicConstant = SIZE_ON_SCREEN
-    
+
     #: A pair of Ints specifying the width and height of the image in pixels when
     #: **sizeDefinition** = USER_DEFINED. Possible values are Ints in the range (*minWidth*,
     #: **minHeight**) ≤ (width, height) ≤ (*maxWidth*, **maxHeight**). The default value is the
@@ -65,13 +66,13 @@ class AVIOptions(_OptionsBase):
         ----------
         compressionMethod
             A SymbolicConstant specifying the compression method for the AVI format. Possible values are:
-            
+
             - RAW8, specifying an uncompressed format of 8 bits per pixel.
             - RAW32, specifying an uncompressed format of 32 bits per pixel.
             - RLE8, specifying a run length encoded format of 8 bits per pixel.
             - CODEC, specifying a format defined by CODEC (encoder/decoder). The availability of
               theCODEC is system dependent
-              
+
             The default value is RLE8.
         compressionQuality
             An Int specifying the quality of the compression as a percentage when the

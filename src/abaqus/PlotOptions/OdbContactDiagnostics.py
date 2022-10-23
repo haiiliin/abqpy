@@ -9,7 +9,7 @@ from .OdbAuxiliaryData import OdbAuxiliaryData
 class OdbContactDiagnostics:
     """The OdbDiagnosticContact object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

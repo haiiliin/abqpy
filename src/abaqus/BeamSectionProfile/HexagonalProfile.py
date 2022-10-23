@@ -8,7 +8,7 @@ class HexagonalProfile(Profile):
     """The HexagonalProfile object defines the properties of a hexagonal profile.
     The HexagonalProfile object is derived from the Profile object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -37,7 +37,7 @@ class HexagonalProfile(Profile):
     def __init__(self, name: str, r: float, t: float):
         """This method creates a HexagonalProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].HexagonalProfile

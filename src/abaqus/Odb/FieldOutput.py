@@ -17,7 +17,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class FieldOutput:
     """A :py:class:`~abaqus.Odb.FieldOutput.FieldOutput` object contains field data for a specific output variable.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -86,7 +86,7 @@ class FieldOutput:
     ):
         """This method creates a FieldOutput object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].steps[name].frames[i].FieldOutput
@@ -132,7 +132,7 @@ class FieldOutput:
         """This method creates a FieldOutput object from an existing FieldOutput object of the same
         output database.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].steps[name].frames[i].FieldOutput
@@ -366,7 +366,7 @@ class FieldOutput:
             **position**
             A SymbolicConstant specifying the position of the output in the element. Possible values
             are:
-            
+
             - NODAL, specifying the values calculated at the nodes.
             - INTEGRATION_POINT, specifying the values calculated at the integration points.
             - ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at
@@ -534,9 +534,7 @@ class FieldOutput:
         ...
 
     @overload
-    def getTransformedField(
-        self, datumCsys: str, projected22Axis: Optional[int] = None, projectionTol: str = ""
-    ):
+    def getTransformedField(self, datumCsys: str, projected22Axis: Optional[int] = None, projectionTol: str = ""):
         """This method generates a new vector or tensor field containing the transformed component
         values of the parent field. The new field will hold values for the same nodes or
         elements as the parent field. Results will be transformed based on the orientations
@@ -717,7 +715,18 @@ class FieldOutput:
         ...
 
     @abaqus_method_doc
-    def setDataType(self, type: Literal[C.TENSOR_2D_SURFACE, C.TENSOR_3D_SURFACE, C.VECTOR, C.TENSOR_3D_FULL, C.SCALAR, C.TENSOR_2D_PLANAR, C.TENSOR_3D_PLANAR]):
+    def setDataType(
+        self,
+        type: Literal[
+            C.TENSOR_2D_SURFACE,
+            C.TENSOR_3D_SURFACE,
+            C.VECTOR,
+            C.TENSOR_3D_FULL,
+            C.SCALAR,
+            C.TENSOR_2D_PLANAR,
+            C.TENSOR_3D_PLANAR,
+        ],
+    ):
         """This method sets the data type of a FieldOutput object.
 
         Parameters
@@ -730,7 +739,22 @@ class FieldOutput:
         ...
 
     @abaqus_method_doc
-    def setValidInvariants(self, validInvariants: Literal[C.MISES, C.MAX_PRINCIPAL, C.MIN_PRINCIPAL, C.MID_PRINCIPAL, C.MAGNITUDE, C.OUTOFPLANE_PRINCIPAL, C.TRESCA, C.MIN_INPLANE_PRINCIPAL, C.MAX_INPLANE_PRINCIPAL, C.INV3, C.PRESS]):
+    def setValidInvariants(
+        self,
+        validInvariants: Literal[
+            C.MISES,
+            C.MAX_PRINCIPAL,
+            C.MIN_PRINCIPAL,
+            C.MID_PRINCIPAL,
+            C.MAGNITUDE,
+            C.OUTOFPLANE_PRINCIPAL,
+            C.TRESCA,
+            C.MIN_INPLANE_PRINCIPAL,
+            C.MAX_INPLANE_PRINCIPAL,
+            C.INV3,
+            C.PRESS,
+        ],
+    ):
         """This method sets the invariants valid for the FieldOutput object.
 
         Parameters
@@ -751,7 +775,7 @@ class FieldOutput:
             - MAX_INPLANE_PRINCIPAL
             - MIN_INPLANE_PRINCIPAL
             - OUTOFPLANE_PRINCIPAL
-            
+
             The default value is an empty sequence.
         """
         ...

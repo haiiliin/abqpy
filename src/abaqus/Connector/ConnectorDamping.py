@@ -3,7 +3,7 @@ from typing_extensions import Literal
 
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 from .ConnectorOptions import ConnectorOptions
-from ..UtilityAndView.abaqusConstants import (Boolean, LINEAR, OFF, SymbolicConstant, UNCOUPLED)
+from ..UtilityAndView.abaqusConstants import Boolean, LINEAR, OFF, SymbolicConstant, UNCOUPLED
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -13,7 +13,7 @@ class ConnectorDamping(ConnectorBehaviorOption):
     connector's relative motion.
     The ConnectorDamping object is derived from the ConnectorBehaviorOption object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -24,7 +24,7 @@ class ConnectorDamping(ConnectorBehaviorOption):
         The table data for this object are:
 
         - If **behavior** = LINEAR and **coupling** = UNCOUPLED, then each sequence of the table data specifies the following:
-        
+
             - Damping coefficient (force or moment per relative velocity).
             - Frequency (cycles/time), if the data depend on frequency.
             - Temperature, if the data depend on temperature.
@@ -32,7 +32,7 @@ class ConnectorDamping(ConnectorBehaviorOption):
             - Value of the second field variable.
             - Etc.
         - If **behavior** = NONLINEAR and **coupling** = UNCOUPLED, then each sequence of the table data specifies the following:
-        
+
             - Force or moment.
             - Relative displacement or rotation.
             - Temperature, if the data depend on temperature.
@@ -43,21 +43,21 @@ class ConnectorDamping(ConnectorBehaviorOption):
             of the damping matrix for the specified components followed by any temperature data and then
             any field data. For example, if components 2, 3, and 5 are specified, the table portion of the command is as follows: table=( (C22C22, C23C23, C25C25, C33C33, C35C35, C55C55,), )
             The following items should then be specified as comma-separated data:
-        
+
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-        - If **behavior** = NONLINEAR and **coupling** = COUPLED_POSITION or COUPLED_MOTION, each sequence 
+        - If **behavior** = NONLINEAR and **coupling** = COUPLED_POSITION or COUPLED_MOTION, each sequence
             of the table data specifies the following:
-        
+
             - Force or moment for the directions in the **components** list.
             - Relative velocity for the directions in the **components** list.
-            - Relative position or angle for the first **independentComponents** direction if 
+            - Relative position or angle for the first **independentComponents** direction if
                 **coupling** = COUPLED_POSITION.
-            - Relative displacement or rotation for the first **independentComponents** direction if 
+            - Relative displacement or rotation for the first **independentComponents** direction if
                 **coupling** = COUPLED_MOTION.
-            - Relative position or angle for the second **independentComponents** direction if 
+            - Relative position or angle for the second **independentComponents** direction if
                 **coupling** = COUPLED_POSITION.
             - Relative displacement or rotation for the second **independentComponents** direction if
                 **coupling** = COUPLED_MOTION.
@@ -119,7 +119,9 @@ class ConnectorDamping(ConnectorBehaviorOption):
     def __init__(
         self,
         behavior: Literal[C.NONLINEAR, C.LINEAR] = LINEAR,
-        coupling: Literal[C.UNCOUPLED, C.NONLINEAR, C.COUPLED_POSITION, C.COUPLED_MOTION, C.COUPLED, C.LINEAR] = UNCOUPLED,
+        coupling: Literal[
+            C.UNCOUPLED, C.NONLINEAR, C.COUPLED_POSITION, C.COUPLED_MOTION, C.COUPLED, C.LINEAR
+        ] = UNCOUPLED,
         dependencies: int = 0,
         temperatureDependency: Boolean = OFF,
         frequencyDependency: Boolean = OFF,
@@ -129,7 +131,7 @@ class ConnectorDamping(ConnectorBehaviorOption):
     ):
         """This method creates a connector damping behavior option for a ConnectorSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 import connectorBehavior

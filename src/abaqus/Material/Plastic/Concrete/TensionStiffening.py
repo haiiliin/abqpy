@@ -10,7 +10,7 @@ class TensionStiffening:
     """The TensionStiffening object defines the retained tensile stress normal to a crack in a
     Concrete model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -21,7 +21,7 @@ class TensionStiffening:
         The table data for this object are:
 
         - If **type** = STRAIN, the table data specify the following:
-        
+
             - Fraction of remaining stress to stress at cracking.
             - Absolute value of the direct strain minus the direct strain at cracking.
             - Temperature, if the data depend on temperature.
@@ -29,7 +29,7 @@ class TensionStiffening:
             - Value of the second field variable.
             - Etc.
         - If **type** = DISPLACEMENT, the table data specify the following:
-        
+
             - Displacement, u0u0, at which a linear loss of strength after cracking gives zero stress.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
@@ -51,7 +51,7 @@ class TensionStiffening:
     ):
         """This method creates a TensionStiffening object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].concrete.TensionStiffening

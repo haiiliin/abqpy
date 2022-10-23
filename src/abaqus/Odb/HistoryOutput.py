@@ -12,7 +12,7 @@ class HistoryOutput:
     """The HistoryOutput object contains the history output at a point for the specified
     variable.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -49,11 +49,13 @@ class HistoryOutput:
         name: str,
         description: str,
         type: Literal[C.SCALAR],
-        validInvariants: Optional[Literal[C.MISES, C.MAX_PRINCIPAL, C.MIN_PRINCIPAL, C.MID_PRINCIPAL, C.MAGNITUDE, C.TRESCA, C.INV3, C.PRESS]] = None,
+        validInvariants: Optional[
+            Literal[C.MISES, C.MAX_PRINCIPAL, C.MIN_PRINCIPAL, C.MID_PRINCIPAL, C.MAGNITUDE, C.TRESCA, C.INV3, C.PRESS]
+        ] = None,
     ) -> None:
         """This method creates a HistoryOutput object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].steps[name].historyRegions[name].HistoryOutput

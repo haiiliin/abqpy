@@ -12,7 +12,7 @@ class SubstructureLoad(Load):
     """The SubstructureLoad object defines a substructure load.
     The SubstructureLoad object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -37,7 +37,7 @@ class SubstructureLoad(Load):
     ):
         """This method creates a SubstructureLoad object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SubstructureLoad

@@ -11,7 +11,7 @@ class ConstrainedSketchImageOptions:
     associated with the background image for a particular sketch. The
     ConstrainedSketchImageOptions object has no constructor.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import sketch

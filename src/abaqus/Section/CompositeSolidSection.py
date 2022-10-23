@@ -10,7 +10,7 @@ class CompositeSolidSection(Section):
     """The CompositeSolidSection object defines the properties of a composite solid section.
     The CompositeSolidSection object is derived from the Section object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -47,7 +47,7 @@ class CompositeSolidSection(Section):
     ):
         """This method creates a CompositeSolidSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CompositeSolidSection

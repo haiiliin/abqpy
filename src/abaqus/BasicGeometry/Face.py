@@ -11,7 +11,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class Face:
     """Faces are two-dimensional regions of geometry.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

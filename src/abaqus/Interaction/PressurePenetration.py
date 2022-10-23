@@ -13,7 +13,7 @@ class PressurePenetration(Interaction):
     surface-to-surface contact.
     The PressurePenetration object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -57,7 +57,7 @@ class PressurePenetration(Interaction):
     ):
         """This method creates a PressurePenetration object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PressurePenetration

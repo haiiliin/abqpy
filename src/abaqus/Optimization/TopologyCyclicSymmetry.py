@@ -15,7 +15,7 @@ class TopologyCyclicSymmetry(GeometricRestriction):
     restriction.
     The TopologyCyclicSymmetry object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -58,7 +58,7 @@ class TopologyCyclicSymmetry(GeometricRestriction):
     ):
         """This method creates a TopologyCyclicSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyCyclicSymmetry

@@ -13,7 +13,7 @@ class SpringDashpotToGround(SpringDashpot):
     ground on a part or an assembly region.
     The SpringDashpotToGround object is derived from the SpringDashpot object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -79,39 +79,39 @@ class SpringDashpotToGround(SpringDashpot):
     ):
         """This method creates a SpringDashpotToGround object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.SpringDashpotToGround
                 mdb.models[name].rootAssembly.engineeringFeatures.SpringDashpotToGround
-            
+
         Parameters
         ----------
         name
-            A String specifying the repository key. 
+            A String specifying the repository key.
         region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the springs and/or dashpots are applied. 
+            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the springs and/or dashpots are applied.
         dof
-            An Int specifying the degree of freedom associated with the spring and dashpot 
-            behaviors. 
+            An Int specifying the degree of freedom associated with the spring and dashpot
+            behaviors.
         orientation
-            None or a DatumCsys object specifying the local directions for the spring and/or 
-            dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global 
-            coordinate system. The default value is None. 
+            None or a DatumCsys object specifying the local directions for the spring and/or
+            dashpot. If **orientation** = None, the spring and/or dashpot data are defined in the global
+            coordinate system. The default value is None.
         springBehavior
-            A Boolean specifying whether to apply spring behavior to the selected points. The 
-            default value is OFF.At least one of the arguments **springBehavior** = ON or 
-            **dashpotBehavior** = ON must be specified. 
+            A Boolean specifying whether to apply spring behavior to the selected points. The
+            default value is OFF.At least one of the arguments **springBehavior** = ON or
+            **dashpotBehavior** = ON must be specified.
         dashpotBehavior
-            A Boolean specifying whether to apply dashpot behavior to the selected points. The 
-            default value is OFF.At least one of the arguments **springBehavior** = ON or 
-            **dashpotBehavior** = ON must be specified. 
+            A Boolean specifying whether to apply dashpot behavior to the selected points. The
+            default value is OFF.At least one of the arguments **springBehavior** = ON or
+            **dashpotBehavior** = ON must be specified.
         springStiffness
-            A Float specifying the force per relative displacement for the spring. The default value 
-            is 0.0. 
+            A Float specifying the force per relative displacement for the spring. The default value
+            is 0.0.
         dashpotCoefficient
-            A Float specifying the force per relative velocity for the dashpot. The default value is 
-            0.0. 
+            A Float specifying the force per relative velocity for the dashpot. The default value is
+            0.0.
 
         Returns
         -------

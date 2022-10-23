@@ -1,11 +1,12 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class TimePoint:
     """The TimePoint object defines time points at which data are written to the output
     database or restart files.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -27,7 +28,7 @@ class TimePoint:
     def __init__(self, name: str, points: tuple):
         """This method creates a TimePoint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TimePoint

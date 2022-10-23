@@ -18,8 +18,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import (AUTOMATIC_GLOBAL, Boolean, OFF, ON, PREVIOUS_STEP,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import AUTOMATIC_GLOBAL, Boolean, OFF, ON, PREVIOUS_STEP, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -29,7 +28,7 @@ class ExplicitDynamicsStep(AnalysisStep):
     analysis using explicit integration in Abaqus/Explicit.
     The ExplicitDynamicsStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -107,7 +106,7 @@ class ExplicitDynamicsStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -190,7 +189,9 @@ class ExplicitDynamicsStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = ON,
         adiabatic: Boolean = OFF,
-        timeIncrementationMethod: Literal[C.FIXED_EBE, C.AUTOMATIC_GLOBAL, C.AUTOMATIC_EBE, C.FIXED_USER_DEFINED_INC] = AUTOMATIC_GLOBAL,
+        timeIncrementationMethod: Literal[
+            C.FIXED_EBE, C.AUTOMATIC_GLOBAL, C.AUTOMATIC_EBE, C.FIXED_USER_DEFINED_INC
+        ] = AUTOMATIC_GLOBAL,
         maxIncrement: Optional[float] = None,
         scaleFactor: float = 1,
         massScaling: Union[MassScalingArray, Literal[C.PREVIOUS_STEP]] = PREVIOUS_STEP,
@@ -201,7 +202,7 @@ class ExplicitDynamicsStep(AnalysisStep):
     ):
         """This method creates an ExplicitDynamicsStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ExplicitDynamicsStep
@@ -268,7 +269,9 @@ class ExplicitDynamicsStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = ON,
         adiabatic: Boolean = OFF,
-        timeIncrementationMethod: Literal[C.FIXED_EBE, C.AUTOMATIC_GLOBAL, C.AUTOMATIC_EBE, C.FIXED_USER_DEFINED_INC] = AUTOMATIC_GLOBAL,
+        timeIncrementationMethod: Literal[
+            C.FIXED_EBE, C.AUTOMATIC_GLOBAL, C.AUTOMATIC_EBE, C.FIXED_USER_DEFINED_INC
+        ] = AUTOMATIC_GLOBAL,
         maxIncrement: Optional[float] = None,
         scaleFactor: float = 1,
         massScaling: Union[MassScalingArray, Literal[C.PREVIOUS_STEP]] = PREVIOUS_STEP,

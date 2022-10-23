@@ -17,9 +17,19 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import (AUTOMATIC, Boolean, FULL_NEWTON, LINEAR, OFF, PERIOD,
-                                              PROPAGATED, SOLVER_DEFAULT, STEP, SymbolicConstant,
-                                              TRANSIENT)
+from ..UtilityAndView.abaqusConstants import (
+    AUTOMATIC,
+    Boolean,
+    FULL_NEWTON,
+    LINEAR,
+    OFF,
+    PERIOD,
+    PROPAGATED,
+    SOLVER_DEFAULT,
+    STEP,
+    SymbolicConstant,
+    TRANSIENT,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -29,7 +39,7 @@ class CoupledThermalElectricStep(AnalysisStep):
     potential and temperature fields must be solved simultaneously.
     The CoupledThermalElectricStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -123,7 +133,7 @@ class CoupledThermalElectricStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -222,7 +232,7 @@ class CoupledThermalElectricStep(AnalysisStep):
     ):
         """This method creates a CoupledThermalElectricStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CoupledThermalElectricStep

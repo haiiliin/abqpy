@@ -11,7 +11,7 @@ class ActuatorAmplitude(Amplitude):
     """The ActuatorAmplitude object defines an actuator amplitude curve.
     The ActuatorAmplitude object is derived from the Amplitude object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import amplitude
@@ -35,7 +35,7 @@ class ActuatorAmplitude(Amplitude):
     def __init__(self, name: str, timeSpan: Literal[C.STEP, C.TOTAL] = STEP):
         """This method creates a ActuatorAmplitude object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ActuatorAmplitude

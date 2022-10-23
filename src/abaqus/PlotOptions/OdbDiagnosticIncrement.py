@@ -10,7 +10,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 class OdbDiagnosticIncrement:
     """The OdbDiagnosticIncrement object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

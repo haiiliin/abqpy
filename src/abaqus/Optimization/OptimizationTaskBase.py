@@ -17,7 +17,7 @@ class OptimizationTaskBase:
     members of the OptimizationTask object are common to all objects derived from
     OptimizationTask.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization

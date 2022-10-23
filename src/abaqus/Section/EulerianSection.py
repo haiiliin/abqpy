@@ -8,7 +8,7 @@ class EulerianSection(Section):
     """The EulerianSection object defines the properties of a Eulerian section.
     The EulerianSection object is derived from the Section object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -32,7 +32,7 @@ class EulerianSection(Section):
     def __init__(self, name: str, data: str):
         """This method creates a EulerianSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EulerianSection

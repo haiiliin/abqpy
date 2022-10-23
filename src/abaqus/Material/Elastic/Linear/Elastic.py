@@ -11,7 +11,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 class Elastic:
     r"""The Elastic object specifies elastic material properties.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -22,24 +22,24 @@ class Elastic:
         The table data for this object are:
 
         - If **type** = ISOTROPIC, the table data specify the following:
-        
+
             - The Young's modulus, :math:`E`.
             - The Poisson's ratio, :math:`\nu`.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-            
+
         - If **type** = SHEAR, the table data specify the following:
-        
+
             - The shear modulus, :math:`G`.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-            
+
         - If **type** = ENGINEERING_CONSTANTS, the table data specify the following:
-        
+
             - :math:`E_{1}`.
             - :math:`E_{2}`.
             - :math:`E_{3}`.
@@ -53,9 +53,9 @@ class Elastic:
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-            
+
         - If **type** = LAMINA, the table data specify the following:
-        
+
             - :math:`E_{1}`.
             - :math:`E_{2}`.
             - :math:`\nu_{12}`.
@@ -66,9 +66,9 @@ class Elastic:
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-            
+
         - If **type** = ORTHOTROPIC, the table data specify the following:
-        
+
             - :math:`D_{1111}`
             - :math:`D_{1122}`
             - :math:`D_{2222}`
@@ -82,9 +82,9 @@ class Elastic:
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-            
+
         - If **type** = ANISOTROPIC, the table data specify the following:
-        
+
             - :math:`D_{1111}`.
             - :math:`D_{1122}`.
             - :math:`D_{2222}`.
@@ -110,9 +110,9 @@ class Elastic:
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-            
+
         - If **type** = TRACTION, the table data specify the following:
-        
+
             - :math:`E` for warping elements; :math:`E_{nn}` for cohesive elements.
             - :math:`G_1` for warping elements; :math:`E_{ss}` for cohesive elements.
             - :math:`G_2` for warping elements; :math:`E_{tt}` for cohesive elements.
@@ -120,7 +120,7 @@ class Elastic:
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-                       
+
         - If **type** = SHORT_FIBER, there is no table data.
 
         The corresponding analysis keywords are:
@@ -138,7 +138,17 @@ class Elastic:
     def __init__(
         self,
         table: tuple,
-        type: Literal[C.ENGINEERING_CONSTANTS, C.TRACTION, C.LAMINA, C.SHEAR, C.ANISOTROPIC, C.ORTHOTROPIC, C.SHORT_FIBER, C.ISOTROPIC, C.COUPLED_TRACTION] = ISOTROPIC,
+        type: Literal[
+            C.ENGINEERING_CONSTANTS,
+            C.TRACTION,
+            C.LAMINA,
+            C.SHEAR,
+            C.ANISOTROPIC,
+            C.ORTHOTROPIC,
+            C.SHORT_FIBER,
+            C.ISOTROPIC,
+            C.COUPLED_TRACTION,
+        ] = ISOTROPIC,
         noCompression: Boolean = OFF,
         noTension: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
@@ -147,7 +157,7 @@ class Elastic:
     ):
         """This method creates an Elastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Elastic
@@ -169,7 +179,7 @@ class Elastic:
             - COUPLED_TRACTION
             - SHORT_FIBER
             - SHEAR
-            
+
             The default value is ISOTROPIC.
         noCompression
             A Boolean specifying whether compressive stress is allowed. The default value is OFF.

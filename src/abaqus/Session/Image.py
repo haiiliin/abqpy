@@ -1,11 +1,12 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class Image:
     """The Image object is used to store color values and attributes associated with a raster
     file. Upon creation, the Image object is added to the session.images repository.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.images[name]
@@ -23,7 +24,7 @@ class Image:
     def __init__(self, name: str, fileName: str):
         """This method creates an Image object from the contents of the specified file.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.Image

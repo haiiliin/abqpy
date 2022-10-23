@@ -10,7 +10,7 @@ class NetworkDatabaseConnector:
     """The NetworkDatabaseConnector object allows you to access an output database on a remote
     system.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.networkDatabaseConnectors[name]
@@ -76,7 +76,7 @@ class NetworkDatabaseConnector:
         platform; you cannot access an output database that resides on a remote Windows system.
         You can access only a remote output database; you cannot access a remote model database.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.NetworkDatabaseConnector

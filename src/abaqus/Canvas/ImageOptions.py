@@ -3,8 +3,7 @@ from typing import Optional, Sequence
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (BEST_FIT, Boolean, CENTER, FIT_TO_VIEWPORT, OFF,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import BEST_FIT, Boolean, CENTER, FIT_TO_VIEWPORT, OFF, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _CopyOptionsBase
 
@@ -23,6 +22,7 @@ class ImageOptions(_CopyOptionsBase):
 
             session.viewports[name].imageOptions
     """
+
     #: A String specifying the name of the image. A list of valid image names is in the
     #: **images** repository in the **session** object.
     imageName: str = ""
@@ -61,7 +61,7 @@ class ImageOptions(_CopyOptionsBase):
 
     #: A SymbolicConstant specifying the relative position of the image in the viewport when
     #: **positionMethod** =AUTO_ALIGN. Possible values are:
-    #: 
+    #:
     #: - BOTTOM_LEFT
     #: - BOTTOM_CENTER
     #: - BOTTOM_RIGHT
@@ -102,7 +102,18 @@ class ImageOptions(_CopyOptionsBase):
         showImage: Boolean = OFF,
         positionMethod: Literal[C.FIT_TO_VIEWPORT, C.MANUAL, C.AUTO_ALIGN] = FIT_TO_VIEWPORT,
         fitMethod: Literal[C.FIT_TO_VIEWPORT, C.FIT_WIDTH, C.BEST_FIT, C.FIT_HEIGHT] = BEST_FIT,
-        alignment: Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.AUTO_ALIGN, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER] = CENTER,
+        alignment: Literal[
+            C.CENTER_RIGHT,
+            C.TOP_CENTER,
+            C.BOTTOM_RIGHT,
+            C.BOTTOM_LEFT,
+            C.CENTER,
+            C.AUTO_ALIGN,
+            C.TOP_RIGHT,
+            C.CENTER_LEFT,
+            C.TOP_LEFT,
+            C.BOTTOM_CENTER,
+        ] = CENTER,
         xScale: float = 1.0,
         yScale: float = 1.0,
         origin: Sequence[float] = (0.0, 0.0),

@@ -5,7 +5,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 class Depvar:
     """The Depvar object specifies solution-dependent state variables.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -22,7 +22,7 @@ class Depvar:
     def __init__(self, deleteVar: int = 0, n: int = 0):
         """This method creates a Depvar object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Depvar

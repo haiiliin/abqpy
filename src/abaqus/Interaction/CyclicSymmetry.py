@@ -3,8 +3,7 @@ from typing_extensions import Literal
 
 from .Interaction import Interaction
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (ALL_NODAL_DIAMETER, Boolean, COMPUTED_TOLERANCE, ON,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import ALL_NODAL_DIAMETER, Boolean, COMPUTED_TOLERANCE, ON, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -13,7 +12,7 @@ class CyclicSymmetry(Interaction):
     """The CyclicSymmetry object defines a cyclic symmetry analysis.
     The CyclicSymmetry object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -110,7 +109,7 @@ class CyclicSymmetry(Interaction):
     ):
         """This method creates a CyclicSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CyclicSymmetry

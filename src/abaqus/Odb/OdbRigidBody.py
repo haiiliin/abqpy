@@ -14,7 +14,7 @@ class OdbRigidBody:
     """The Rigid body object is used to bind a set of elements and/or a set of nodes and/or an
     analytical surface with a reference node.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -62,11 +62,11 @@ class OdbRigidBody:
         elements: OdbSet = OdbSet("set", ()),
         tieNodes: OdbSet = OdbSet("set", ()),
         pinNodes: OdbSet = OdbSet("set", ()),
-        analyticSurface: Optional[AnalyticSurface] = None, 
+        analyticSurface: Optional[AnalyticSurface] = None,
     ):
         """This method creates a OdbRigidBody object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].rootAssembly.instances[name].RigidBody

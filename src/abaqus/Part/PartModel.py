@@ -4,15 +4,14 @@ from typing_extensions import Literal
 from ..Model.ModelBase import ModelBase
 from ..Part.Part import Part
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (Boolean,
-                                              OFF)
+from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
 class PartModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -23,14 +22,12 @@ class PartModel(ModelBase):
         self,
         name: str,
         dimensionality: Literal[C.THREE_D, C.TWO_D_PLANAR, C.AXISYMMETRIC],
-        type: Literal[
-            C.DEFORMABLE_BODY, C.EULERIAN, C.DISCRETE_RIGID_SURFACE, C.ANALYTIC_RIGID_SURFACE
-        ],
+        type: Literal[C.DEFORMABLE_BODY, C.EULERIAN, C.DISCRETE_RIGID_SURFACE, C.ANALYTIC_RIGID_SURFACE],
         twist: Boolean = OFF,
     ):
         """This method creates a Part object and places it in the parts repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Part

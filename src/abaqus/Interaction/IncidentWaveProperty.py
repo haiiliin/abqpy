@@ -14,7 +14,7 @@ class IncidentWaveProperty(ContactProperty):
     referred to by an IncidentWave object.
     The IncidentWaveProperty object is derived from the InteractionProperty object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -214,7 +214,7 @@ class IncidentWaveProperty(ContactProperty):
     ):
         """This method creates an IncidentWaveProperty object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].IncidentWaveProperty

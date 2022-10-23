@@ -10,7 +10,7 @@ class StabilizationAssignment:
     definition for domain pairs in a ContactStd object. The StabilizationAssignment object
     has no constructor or members.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction

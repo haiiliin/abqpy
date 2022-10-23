@@ -18,9 +18,7 @@ from ..Datum.DatumPoint import DatumPoint
 from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch, ConstrainedSketchVertex
-from ..UtilityAndView.abaqusConstants import (AUTO_FIT_PTS, Boolean, IMPRINT, OFF, ON,
-                                              PROJECT_BY_PROXIMITY, RIGHT,
-                                              SIDE1)
+from ..UtilityAndView.abaqusConstants import AUTO_FIT_PTS, Boolean, IMPRINT, OFF, ON, PROJECT_BY_PROXIMITY, RIGHT, SIDE1
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -32,7 +30,7 @@ class Feature:
     regeneration of the feature. Feature objects contain both the parameters and the
     resulting model modification.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -54,9 +52,7 @@ class Feature:
         self,
         name: str,
         points: float,
-        projectionMethod: Literal[
-            C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION
-        ] = PROJECT_BY_PROXIMITY,
+        projectionMethod: Literal[C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION] = PROJECT_BY_PROXIMITY,
         projectOnFaces: Sequence[Face] = (),
         projectOnElementFaces: Sequence[MeshFace] = (),
         projectionDirStartPt: Optional[float] = None,
@@ -68,7 +64,7 @@ class Feature:
         mesh nodes or coordinates. Optionally, the attachment points can be projected on
         geometric faces or element faces.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -115,9 +111,7 @@ class Feature:
         self,
         name: str,
         startPoint: float,
-        pointCreationMethod: Literal[
-            C.AUTO_FIT, C.NUM_PTS_ALONG_DIR, C.NUM_PTS_BETWEEN_PTS
-        ],
+        pointCreationMethod: Literal[C.AUTO_FIT, C.NUM_PTS_ALONG_DIR, C.NUM_PTS_BETWEEN_PTS],
         endPoint: Optional[float] = None,
         direction: str = "",
         spacing: str = "",
@@ -125,9 +119,7 @@ class Feature:
         numPtsBetweenPts: str = "",
         createPtAtStartPt: Boolean = True,
         createPtAtEndPt: Boolean = True,
-        projectionMethod: Literal[
-            C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION
-        ] = PROJECT_BY_PROXIMITY,
+        projectionMethod: Literal[C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION] = PROJECT_BY_PROXIMITY,
         projectOnFaces: Sequence[Face] = (),
         projectOnElementFaces: Sequence[MeshFace] = (),
         projectionDirStartPt: Optional[float] = None,
@@ -140,7 +132,7 @@ class Feature:
         Interesting point, or an orphan mesh Node can be specified as the start or end point.
         The direction can be specified using a straight edge or a datum axis.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -221,18 +213,14 @@ class Feature:
         offsetFromStartPoint: float = 0,
         offsetFromEndPoint: float = 0,
         spacingMethod: Literal[C.AUTO_FIT_PTS, C.SPECIFY_NUM_PTS] = AUTO_FIT_PTS,
-        patterningMethod: Literal[
-            C.PATTERN_ORTHOGONALLY, C.PATTERN_ALONG_DIRECTION
-        ] = ...,
+        patterningMethod: Literal[C.PATTERN_ORTHOGONALLY, C.PATTERN_ALONG_DIRECTION] = ...,
         referenceFace: str = "",
         startPointForPatternDirection: Sequence[float] = ...,
         endPointForPatternDirection: Sequence[float] = ...,
         offsetFromEdges: str = "",
         numberOfRows: int = 1,
         spacingBetweenRows: str = "",
-        projectionMethod: Literal[
-            C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION
-        ] = PROJECT_BY_PROXIMITY,
+        projectionMethod: Literal[C.PROJECT_BY_PROXIMITY, C.PROJECT_BY_DIRECTION] = PROJECT_BY_PROXIMITY,
         projectOnFaces: Sequence[Face] = (),
         projectOnElementFaces: Sequence[MeshFace] = (),
         projectionDirStartPt: Sequence[float] = ...,
@@ -242,7 +230,7 @@ class Feature:
         """This method creates a Feature object by creating attachment points along or offset from
         one or more connected edges.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -341,7 +329,7 @@ class Feature:
         """This method creates a Feature object and a DatumAxis object along the axis of a cylinder
         or cone.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -368,7 +356,7 @@ class Feature:
         """This method creates a Feature object and a DatumAxis object normal to the specified
         plane and passing through the specified point.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -397,7 +385,7 @@ class Feature:
         """This method creates a Feature object and a DatumAxis object parallel to the specified
         edge and passing through the specified point.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -422,13 +410,11 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def DatumAxisByPrincipalAxis(
-        self, principalAxis: Literal[C.XAXIS, C.YAXIS, C.ZAXIS]
-    ) -> Feature:
+    def DatumAxisByPrincipalAxis(self, principalAxis: Literal[C.XAXIS, C.YAXIS, C.ZAXIS]) -> Feature:
         """This method creates a Feature object and a DatumAxis object along one of the three
         principal axes.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -457,7 +443,7 @@ class Feature:
         """This method creates a Feature object and a DatumAxis object in a three-dimensional model
         by rotating a line about the specified axis through the specified angle.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -491,7 +477,7 @@ class Feature:
         """This method creates a Feature object and a DatumAxis object in a two-dimensional model
         by rotating a line about the specified point through the specified angle.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -527,7 +513,7 @@ class Feature:
         """This method creates a Feature object and a DatumAxis object normal to the circle
         described by three points and through its center.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -560,7 +546,7 @@ class Feature:
     def DatumAxisByThruEdge(self, edge: str) -> Feature:
         """This method creates a Feature object and a DatumAxis object along the specified edge.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -587,7 +573,7 @@ class Feature:
         """This method creates a Feature object and a DatumAxis object at the intersection of two
         planes.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -616,7 +602,7 @@ class Feature:
         """This method creates a Feature object and a DatumAxis object along the line joining two
         points.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -649,7 +635,7 @@ class Feature:
         """This method creates a Feature object and a DatumCsys object from the specified default
         coordinate system at the origin.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -686,7 +672,7 @@ class Feature:
         """This method creates a Feature object and a DatumCsys object by offsetting the origin of
         an existing datum coordinate system to a specified point.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -735,7 +721,7 @@ class Feature:
     ) -> Feature:
         """This method creates a Feature object and a DatumCsys object from three points.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -791,7 +777,7 @@ class Feature:
         The origin of the new datum coordinate system is placed at the intersection of the two
         lines.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -829,7 +815,7 @@ class Feature:
         """This method creates a Feature object and a DatumPlane object through the origin along
         one of the three principal planes.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -856,13 +842,11 @@ class Feature:
 
     @overload
     @abaqus_method_doc
-    def DatumPlaneByOffset(
-        self, plane: str, flip: Literal[C.SIDE1, C.SIDE2], offset: float
-    ) -> Feature:
+    def DatumPlaneByOffset(self, plane: str, flip: Literal[C.SIDE1, C.SIDE2], offset: float) -> Feature:
         """This method creates a Feature object and a DatumPlane object offset by a specified
         distance from an existing plane.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -895,7 +879,7 @@ class Feature:
         """This method creates a Feature object and a DatumPlane object offset from an existing
         plane and passing through the specified point.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -927,7 +911,7 @@ class Feature:
         """This method creates a Feature object and a DatumPlane object by rotating a plane about
         the specified axis through the specified angle.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -958,7 +942,7 @@ class Feature:
         """This method creates a Feature object and a DatumPlane object defined by passing through
         three points.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -989,7 +973,7 @@ class Feature:
         """This method creates a Feature object and a DatumPlane object that pass through the
         specified line and through the specified point that does not lie on the line.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1018,7 +1002,7 @@ class Feature:
         """This method creates a Feature object and a DatumPlane object normal to the specified
         line and running through the specified point.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1047,7 +1031,7 @@ class Feature:
         """This method creates a Feature object and a DatumPlane object midway between two points
         and normal to the line connecting the points.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1076,7 +1060,7 @@ class Feature:
         """This method creates a Feature object and a DatumPoint object at the point defined by the
         specified coordinates.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1100,7 +1084,7 @@ class Feature:
         """This method creates a Feature object and a DatumPoint object offset from an existing
         point by a vector.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1124,7 +1108,7 @@ class Feature:
     def DatumPointByMidPoint(self, point1: int, point2: int) -> Feature:
         """This method creates a Feature object and a DatumPoint object midway between two points.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1145,13 +1129,11 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def DatumPointByOnFace(
-        self, face: str, edge1: str, offset1: float, edge2: str, offset2: float
-    ) -> Feature:
+    def DatumPointByOnFace(self, face: str, edge1: str, offset1: float, edge2: str, offset2: float) -> Feature:
         """This method creates a Feature object and a DatumPoint object on the specified face,
         offset from two edges.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1186,7 +1168,7 @@ class Feature:
         """This method creates a Feature object and a DatumPoint object along an edge at a selected
         distance from one end of the edge.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1217,7 +1199,7 @@ class Feature:
         """This method creates a Feature object and a DatumPoint object along an edge by projecting
         an existing point along the normal to the edge.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1246,7 +1228,7 @@ class Feature:
         """This method creates a Feature object and a DatumPoint object on a specified face by
         projecting an existing point onto the face.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1283,7 +1265,7 @@ class Feature:
         """This method creates a Transform object. A :py:class:`~abaqus.BasicGeometry.Transform.Transform` object is a 4x3 matrix of Floats
         that represents the transformation from sketch coordinates to part coordinates.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1320,12 +1302,10 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionCellByDatumPlane(
-        self, cells: Sequence[Cell], datumPlane: DatumPlane
-    ) -> Feature:
+    def PartitionCellByDatumPlane(self, cells: Sequence[Cell], datumPlane: DatumPlane) -> Feature:
         """This method partitions one or more cells using the given datum plane.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1350,13 +1330,11 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionCellByExtendFace(
-        self, cells: Sequence[Cell], extendFace: str
-    ) -> Feature:
+    def PartitionCellByExtendFace(self, cells: Sequence[Cell], extendFace: str) -> Feature:
         """This method partitions one or more cells by extending the underlying geometry of a given
         face to partition the target cells.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1387,7 +1365,7 @@ class Feature:
         """This method partitions one or more cells by extruding selected edges in the given
         direction.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1424,7 +1402,7 @@ class Feature:
         """This method partitions a cell using an N-sided cutting patch defined by the given corner
         points.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1453,7 +1431,7 @@ class Feature:
     def PartitionCellByPatchNEdges(self, cell: str, edges: Sequence[Edge]) -> Feature:
         """This method partitions a cell using an N-sided cutting patch defined by the given edges.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1488,7 +1466,7 @@ class Feature:
         """This method partitions one or more cells using a plane normal to an edge at the given
         edge point.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1524,7 +1502,7 @@ class Feature:
         """This method partitions one or more cells using a plane defined by a point and a normal
         direction.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1551,12 +1529,10 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionCellByPlaneThreePoints(
-        self, cells: Sequence[Cell], point1: int, point2: int, point3: int
-    ) -> Feature:
+    def PartitionCellByPlaneThreePoints(self, cells: Sequence[Cell], point1: int, point2: int, point3: int) -> Feature:
         """This method partitions one or more cells using a plane defined by three points.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1586,13 +1562,11 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionCellBySweepEdge(
-        self, cells: Sequence[Cell], edges: Sequence[Edge], sweepPath: Edge
-    ) -> Feature:
+    def PartitionCellBySweepEdge(self, cells: Sequence[Cell], edges: Sequence[Edge], sweepPath: Edge) -> Feature:
         """This method partitions one or more cells by sweeping selected edges along the given
         sweep path.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1622,12 +1596,10 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionEdgeByDatumPlane(
-        self, edges: Sequence[Edge], datumPlane: DatumPlane
-    ) -> Feature:
+    def PartitionEdgeByDatumPlane(self, edges: Sequence[Edge], datumPlane: DatumPlane) -> Feature:
         """This method partitions an edge where it intersects with a datum plane.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1652,12 +1624,10 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionEdgeByParam(
-        self, edges: Sequence[Edge], parameter: float
-    ) -> Feature:
+    def PartitionEdgeByParam(self, edges: Sequence[Edge], parameter: float) -> Feature:
         """This method partitions one or more edges at the given normalized edge parameter.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1686,7 +1656,7 @@ class Feature:
     def PartitionEdgeByPoint(self, edge: Edge, point: int) -> Feature:
         """This method partitions an edge at the given point.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1715,7 +1685,7 @@ class Feature:
         """This method automatically partitions a target face into simple regions that can be
         meshed using a structured meshing technique.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1740,7 +1710,7 @@ class Feature:
         """This method partitions a face normal to two edges, using a curved path between the two
         given edge points defined by the normalized edge parameters.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1779,7 +1749,7 @@ class Feature:
         """This method partitions a face normal to two edges, using a curved path between the two
         given edge points.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1810,12 +1780,10 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionFaceByDatumPlane(
-        self, faces: Sequence[Face], datumPlane: DatumPlane
-    ) -> Feature:
+    def PartitionFaceByDatumPlane(self, faces: Sequence[Face], datumPlane: DatumPlane) -> Feature:
         """This method partitions one or more faces using the given datum plane.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1836,13 +1804,11 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionFaceByExtendFace(
-        self, faces: Sequence[Face], extendFace: Face
-    ) -> Feature:
+    def PartitionFaceByExtendFace(self, faces: Sequence[Face], extendFace: Face) -> Feature:
         """This method partitions one or more faces by extending the underlying geometry of another
         given face to partition the target faces.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1864,13 +1830,11 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionFaceByIntersectFace(
-        self, faces: Sequence[Face], cuttingFaces: Sequence[Face]
-    ) -> Feature:
+    def PartitionFaceByIntersectFace(self, faces: Sequence[Face], cuttingFaces: Sequence[Face]) -> Feature:
         """This method partitions one or more faces using the given cutting faces to partition the
         target faces.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1900,7 +1864,7 @@ class Feature:
         """This method partitions one or more faces by projecting the given edges on the target
         faces.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1925,13 +1889,11 @@ class Feature:
         ...
 
     @abaqus_method_doc
-    def PartitionFaceByShortestPath(
-        self, faces: Sequence[Face], point1: int, point2: int
-    ) -> Feature:
+    def PartitionFaceByShortestPath(self, faces: Sequence[Face], point1: int, point2: int) -> Feature:
         """This method partitions one or more faces using a minimum distance path between the two
         given points.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -1969,7 +1931,7 @@ class Feature:
     ) -> Feature:
         """This method partitions one or more planar faces by sketching on them.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -2014,7 +1976,7 @@ class Feature:
         """This method partitions one or more faces by sketching on a sketch plane and then
         projecting the sketch toward the target faces through the given distance.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -2065,7 +2027,7 @@ class Feature:
         projecting the sketch toward the target faces through a distance governed by the
         reference point.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -2113,7 +2075,7 @@ class Feature:
         """This method partitions one or more faces by sketching on a sketch plane and then
         projecting toward the target faces through an infinite distance.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -2157,7 +2119,7 @@ class Feature:
         """This method creates a Feature object and a ReferencePoint object at the specified
         location.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -2183,7 +2145,7 @@ class Feature:
     def RemoveWireEdges(self, wireEdgeList: Sequence[Edge]) -> Feature:
         """This method removes wire edges.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints
@@ -2215,7 +2177,7 @@ class Feature:
         mesh node, or the coordinates of a point. When such a feature is created at the Assembly
         level, then each point can only be a vertex, a reference point, or an orphan mesh node.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AttachmentPoints

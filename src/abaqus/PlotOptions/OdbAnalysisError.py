@@ -8,7 +8,7 @@ class OdbAnalysisError:
     """The OdbAnalysisError object stores the description of different errors encountered
     during the analysis.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

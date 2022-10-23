@@ -1,4 +1,3 @@
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .TransverseShearBeam import TransverseShearBeam
@@ -14,7 +13,7 @@ class SectionBase:
     constructor. The methods and members of the Section object are common to all objects
     derived from the Section.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -40,7 +39,7 @@ class SectionBase:
         """This method creates Section objects by reading an output database. The new sections are
         placed in the sections repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sectionsFromOdb

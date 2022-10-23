@@ -21,7 +21,7 @@ def writeFreeBodyReport(
 ):
     """This method writes a FreeBody object to a user-defined ASCII file.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             session.writeFreeBodyReport

@@ -24,7 +24,7 @@ def upgradeMdb(existingMdbPath: str, upgradedMdbPath: str) -> None:
     upgraded version of the Mdb object to a file. In addition, Abaqus/CAE writes
     information about the status of the upgrade to the log file ( upgradedMdbPath.log
     ).
-    
+
     Parameters
     ----------
     existingMdbPath : str
@@ -33,7 +33,7 @@ def upgradeMdb(existingMdbPath: str, upgradedMdbPath: str) -> None:
     upgradedMdbPath : str
         A String specifying the path to the file that will contain the upgraded model
         database.
-    
+
     Raises
     ------
     MdbError
@@ -44,9 +44,7 @@ def upgradeMdb(existingMdbPath: str, upgradedMdbPath: str) -> None:
 
 def CombineOptResults(
     optResultLocation: str,
-    optIter: Literal[
-        C.INITIAL_AND_LAST, C.NONE, C.ALL, C.LAST, C.EVERY_NCYCLES, C.SPECIFY
-    ] = INITIAL_AND_LAST,
+    optIter: Literal[C.INITIAL_AND_LAST, C.NONE, C.ALL, C.LAST, C.EVERY_NCYCLES, C.SPECIFY] = INITIAL_AND_LAST,
     nValues: Union[int, Sequence[int], Literal[C.ALL]] = ALL,
     models: Union[Sequence[str], Literal[C.ALL]] = ALL,
     steps: Union[Sequence[str], Literal[C.ALL]] = ALL,
@@ -54,10 +52,10 @@ def CombineOptResults(
     includeResultsFrom: Literal[C.ORIGINAL_MODEL, C.FIRST, C.LAST] = FIRST,
     originalModel: str = ...,
 ) -> None:
-    """   
+    """
     This method combines the results from existing ODB files for each optimization
     cycle and writes a merged ODB file.
-    
+
     Parameters
     ----------
     optResultLocation : str

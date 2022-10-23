@@ -8,7 +8,7 @@ class TrapezoidalProfile(Profile):
     """The TrapezoidalProfile object defines the properties of a trapezoidal profile.
     The TrapezoidalProfile object is derived from the Profile object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -42,7 +42,7 @@ class TrapezoidalProfile(Profile):
     def __init__(self, name: str, a: float, b: float, c: float, d: float):
         """This method creates a TrapezoidalProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TrapezoidalProfile

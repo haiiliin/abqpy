@@ -24,7 +24,7 @@ class OdbAssemblyBase:
     object is created. Abaqus creates the **rootAssembly** member when an Odb object is
     created.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -68,11 +68,11 @@ class OdbAssemblyBase:
     def ConnectorOrientation(
         self,
         region: str,
-        localCsys1: Optional[OdbDatumCsys] = None, 
+        localCsys1: Optional[OdbDatumCsys] = None,
         axis1: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle1: float = 0,
         orient2sameAs1: Boolean = OFF,
-        localCsys2: Optional[OdbDatumCsys] = None, 
+        localCsys2: Optional[OdbDatumCsys] = None,
         axis2: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle2: float = 0,
     ):

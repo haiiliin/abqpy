@@ -10,7 +10,7 @@ class Ornl:
     """The Ornl object specifies the constitutive model developed by Oak Ridge National
     Laboratory.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -29,7 +29,7 @@ class Ornl:
     def __init__(self, a: float = 0, h: Optional[float] = None, reset: Boolean = OFF):
         """This method creates an Ornl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].creep.Ornl

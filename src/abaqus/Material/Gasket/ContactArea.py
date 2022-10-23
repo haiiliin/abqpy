@@ -10,7 +10,7 @@ class ContactArea:
     defines the contact area or contact width versus closure curves to output an average
     pressure through variable CS11.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -19,7 +19,7 @@ class ContactArea:
             session.odbs[name].materials[name].gasketThicknessBehavior.contactArea
 
         The table data for this object are:
-        
+
         - Contact area or width; this value must be positive.
         - Closure; this value must be positive.
         - Temperature, if the data depend on temperature.
@@ -33,12 +33,10 @@ class ContactArea:
     """
 
     @abaqus_method_doc
-    def __init__(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ):
+    def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a ContactArea object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].gasketThicknessBehavior.ContactArea

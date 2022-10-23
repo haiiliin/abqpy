@@ -14,7 +14,7 @@ class Leaf:
     the DisplayGroup expression is evaluated, and they can have SymbolicConstant values
     (which are also evaluated when the DisplayGroup expression is evaluated).
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import displayGroupMdbToolset
@@ -29,7 +29,7 @@ class Leaf:
     def __init__(self, leafType: Literal[C.ALL_ELEMENTS, C.ALL_SURFACES, C.EMPTY_LEAF, C.DEFAULT_MODEL, C.ALL_NODES]):
         """This method creates a Leaf object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 Leaf

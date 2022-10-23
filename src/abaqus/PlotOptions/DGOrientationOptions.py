@@ -1,7 +1,6 @@
 from abqpy.decorators import abaqus_class_doc
 
-from ..UtilityAndView.abaqusConstants import (Boolean, MODEL_SIZE, NONE, ON, PLY, SymbolicConstant,
-                                              VERY_THIN)
+from ..UtilityAndView.abaqusConstants import Boolean, MODEL_SIZE, NONE, ON, PLY, SymbolicConstant, VERY_THIN
 
 
 @abaqus_class_doc
@@ -11,7 +10,7 @@ class DGOrientationOptions:
     creates an *odbDisplayOptions.materialOrientationOptions* member when a display group
     instance is created, using values from *odbDisplay.materialOrientationOptions*.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.materialOrientationOptions

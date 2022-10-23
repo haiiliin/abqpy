@@ -59,15 +59,46 @@ from .Plastic.Plastic import Plastic
 from .Plastic.Swelling.Swelling import Swelling
 from .ProgressiveDamageFailure.DamageInitiation import DamageInitiation
 from .Regularization import Regularization
-from ..UtilityAndView.abaqusConstants import (Boolean, CENTROID, COEFFICIENTS, CONSTANTVOLUME, DEFAULT, ELASTIC_PLASTIC,
-                                              EXPONENTIAL,
-                                              FITTED_VALUE, FORMULA, FUNG_ANISOTROPIC, GENERAL,
-                                              HALF_CYCLE, IDEALGAS, INCOMPRESSIBLE, INCREMENTAL,
-                                              INPUT, ISOTROPIC, LINEAR, LOGARITHMIC, LONG_TERM,
-                                              MECHANICAL, MSFLD, NEWTONIAN, NMORI, NONE,
-                                              OFF, ON, POISSON, PRONY, RELATIVE_SLOPE_DROP, STRAIN,
-                                              STRESS, TABULAR, TOTAL, UNIAXIAL, UNIFORM,
-                                              UNKNOWN, VOLUMETRIC)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    CENTROID,
+    COEFFICIENTS,
+    CONSTANTVOLUME,
+    DEFAULT,
+    ELASTIC_PLASTIC,
+    EXPONENTIAL,
+    FITTED_VALUE,
+    FORMULA,
+    FUNG_ANISOTROPIC,
+    GENERAL,
+    HALF_CYCLE,
+    IDEALGAS,
+    INCOMPRESSIBLE,
+    INCREMENTAL,
+    INPUT,
+    ISOTROPIC,
+    LINEAR,
+    LOGARITHMIC,
+    LONG_TERM,
+    MECHANICAL,
+    MSFLD,
+    NEWTONIAN,
+    NMORI,
+    NONE,
+    OFF,
+    ON,
+    POISSON,
+    PRONY,
+    RELATIVE_SLOPE_DROP,
+    STRAIN,
+    STRESS,
+    TABULAR,
+    TOTAL,
+    UNIAXIAL,
+    UNIFORM,
+    UNKNOWN,
+    VOLUMETRIC,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -82,7 +113,7 @@ class Material(MaterialBase):
     MaterialOptions was rejected because it would make it more difficult to enforce the fact
     that one Material object cannot contain two AcousticMedium objects, for example.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -108,7 +139,7 @@ class Material(MaterialBase):
     ) -> AcousticMedium:
         """This method creates an AcousticMedium object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].AcousticMedium
@@ -133,23 +164,23 @@ class Material(MaterialBase):
             **volumetricTable**. The default value is 0.
         bulkTable
             A sequence of sequences of Floats specifying the following:
-            
+
             - Bulk modulus.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-            
+
         volumetricTable
             A sequence of sequences of Floats specifying the following:
-            
+
             - Volumetric drag.
             - Frequency.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-            
+
             The default value is an empty sequence.
 
         Returns
@@ -182,7 +213,7 @@ class Material(MaterialBase):
     ) -> BrittleCracking:
         """This method creates a BrittleCracking object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].BrittleCracking
@@ -205,18 +236,14 @@ class Material(MaterialBase):
         BrittleCracking
             A :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` object.
         """
-        self.brittleCracking = BrittleCracking(
-            table, temperatureDependency, dependencies, type
-        )
+        self.brittleCracking = BrittleCracking(table, temperatureDependency, dependencies, type)
         return self.brittleCracking
 
     @abaqus_method_doc
-    def CapPlasticity(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ) -> CapPlasticity:
+    def CapPlasticity(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0) -> CapPlasticity:
         """This method creates a CapPlasticity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].CapPlasticity
@@ -249,7 +276,7 @@ class Material(MaterialBase):
     ) -> CastIronPlasticity:
         """This method creates a CastIronPlasticity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].CastIronPlasticity
@@ -273,9 +300,7 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.castIronPlasticity = CastIronPlasticity(
-            table, temperatureDependency, dependencies
-        )
+        self.castIronPlasticity = CastIronPlasticity(table, temperatureDependency, dependencies)
         return self.castIronPlasticity
 
     @abaqus_method_doc
@@ -289,7 +314,7 @@ class Material(MaterialBase):
     ) -> ClayPlasticity:
         """This method creates a ClayPlasticity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].ClayPlasticity
@@ -320,18 +345,14 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.clayPlasticity = ClayPlasticity(
-            table, intercept, hardening, temperatureDependency, dependencies
-        )
+        self.clayPlasticity = ClayPlasticity(table, intercept, hardening, temperatureDependency, dependencies)
         return self.clayPlasticity
 
     @abaqus_method_doc
-    def Concrete(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ) -> Concrete:
+    def Concrete(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0) -> Concrete:
         """This method creates a Concrete object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Concrete
@@ -364,7 +385,7 @@ class Material(MaterialBase):
     ) -> ConcreteDamagedPlasticity:
         """This method creates a ConcreteDamagedPlasticity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].ConcreteDamagedPlasticity
@@ -388,9 +409,7 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.concreteDamagedPlasticity = ConcreteDamagedPlasticity(
-            table, temperatureDependency, dependencies
-        )
+        self.concreteDamagedPlasticity = ConcreteDamagedPlasticity(table, temperatureDependency, dependencies)
         return self.concreteDamagedPlasticity
 
     @abaqus_method_doc
@@ -403,7 +422,7 @@ class Material(MaterialBase):
     ) -> Conductivity:
         """This method creates a Conductivity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Conductivity
@@ -430,9 +449,7 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.conductivity = Conductivity(
-            table, type, temperatureDependency, dependencies
-        )
+        self.conductivity = Conductivity(table, type, temperatureDependency, dependencies)
         return self.conductivity
 
     @abaqus_method_doc
@@ -446,7 +463,7 @@ class Material(MaterialBase):
     ) -> Creep:
         """This method creates a Creep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Creep
@@ -459,7 +476,7 @@ class Material(MaterialBase):
         law
             A SymbolicConstant specifying the strain-hardening law. Possible values are STRAIN,
             TIME, HYPERBOLIC_SINE and USER. The default value is STRAIN.
-            
+
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies
@@ -490,7 +507,7 @@ class Material(MaterialBase):
     ) -> CrushableFoam:
         """This method creates a CrushableFoam object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].CrushableFoam
@@ -517,9 +534,7 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.crushableFoam = CrushableFoam(
-            table, hardening, temperatureDependency, dependencies
-        )
+        self.crushableFoam = CrushableFoam(table, hardening, temperatureDependency, dependencies)
         return self.crushableFoam
 
     def Damping(
@@ -531,7 +546,7 @@ class Material(MaterialBase):
     ) -> Damping:
         """This method creates a Damping object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Damping
@@ -566,12 +581,10 @@ class Material(MaterialBase):
         return self.damping
 
     @abaqus_method_doc
-    def DeformationPlasticity(
-        self, table: tuple, temperatureDependency: Boolean = OFF
-    ) -> DeformationPlasticity:
+    def DeformationPlasticity(self, table: tuple, temperatureDependency: Boolean = OFF) -> DeformationPlasticity:
         """This method creates a DeformationPlasticity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].DeformationPlasticity
@@ -607,7 +620,7 @@ class Material(MaterialBase):
     ) -> Density:
         """This method creates a Density object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Density
@@ -639,16 +652,14 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.density = Density(
-            table, temperatureDependency, dependencies, distributionType, fieldName
-        )
+        self.density = Density(table, temperatureDependency, dependencies, distributionType, fieldName)
         return self.density
 
     @abaqus_method_doc
     def Depvar(self, deleteVar: int = 0, n: int = 0) -> Depvar:
         """This method creates a Depvar object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Depvar
@@ -686,7 +697,7 @@ class Material(MaterialBase):
     ) -> Dielectric:
         """This method creates a Dielectric object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Dielectric
@@ -711,9 +722,7 @@ class Material(MaterialBase):
         Dielectric
             A :py:class:`~abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric` object.
         """
-        self.dielectric = Dielectric(
-            table, type, frequencyDependency, temperatureDependency, dependencies
-        )
+        self.dielectric = Dielectric(table, type, frequencyDependency, temperatureDependency, dependencies)
         return self.dielectric
 
     @abaqus_method_doc
@@ -727,7 +736,7 @@ class Material(MaterialBase):
     ) -> Diffusivity:
         """This method creates a Diffusivity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Diffusivity
@@ -757,9 +766,7 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.diffusivity = Diffusivity(
-            table, type, law, temperatureDependency, dependencies
-        )
+        self.diffusivity = Diffusivity(table, type, law, temperatureDependency, dependencies)
         return self.diffusivity
 
     @abaqus_method_doc
@@ -774,7 +781,7 @@ class Material(MaterialBase):
     ) -> DruckerPrager:
         r"""This method creates a DruckerPrager object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].DruckerPrager
@@ -826,7 +833,17 @@ class Material(MaterialBase):
     def Elastic(
         self,
         table: tuple,
-        type: Literal[C.ISOTROPIC, C.ORTHOTROPIC, C.ANISOTROPIC, C.ENGINEERING_CONSTANTS, C.LAMINA, C.TRACTION, C.COUPLED_TRACTION, C.SHORT_FIBER, C.SHEAR] = ISOTROPIC,
+        type: Literal[
+            C.ISOTROPIC,
+            C.ORTHOTROPIC,
+            C.ANISOTROPIC,
+            C.ENGINEERING_CONSTANTS,
+            C.LAMINA,
+            C.TRACTION,
+            C.COUPLED_TRACTION,
+            C.SHORT_FIBER,
+            C.SHEAR,
+        ] = ISOTROPIC,
         noCompression: Boolean = OFF,
         noTension: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
@@ -835,7 +852,7 @@ class Material(MaterialBase):
     ) -> Elastic:
         """This method creates an Elastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Elastic
@@ -857,9 +874,9 @@ class Material(MaterialBase):
             - COUPLED_TRACTION
             - SHORT_FIBER
             - SHEAR
-            
+
             The default value is ISOTROPIC.
-            
+
         noCompression
             A Boolean specifying whether compressive stress is allowed. The default value is OFF.
         noTension
@@ -903,7 +920,7 @@ class Material(MaterialBase):
     ) -> ElectricalConductivity:
         """This method creates an ElectricalConductivity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].ElectricalConductivity
@@ -952,7 +969,7 @@ class Material(MaterialBase):
     ) -> Eos:
         r"""This method creates an Eos object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Eos
@@ -973,27 +990,27 @@ class Material(MaterialBase):
             A Float specifying the detonation energy text field. The default value is 0.0.
         solidTable
             A sequence of sequences of Floats specifying the following:
-            
+
             - :math:`A_{s}`.
             - :math:`B_{s}`.
             - :math:`{\omega}_{s}`.
             - :math:`R_{1s}`.
             - :math:`R_{2s}`.
-            
+
             The default value is an empty sequence.
         gasTable
             A sequence of sequences of Floats specifying the following:
-            
+
             - :math:`A_{g}`.
             - :math:`B_{g}`.
             - :math:`{\omega}_{g}`.
             - :math:`R_{1g}`.
             - :math:`R_{2g}`.
-            
+
             The default value is an empty sequence.
         reactionTable
             A sequence of sequences of Floats specifying the following:
-            
+
             - Initial Pressure, :math:`I`.
             - Product co-volume, :math:`a`.
             - Exponent on the unreacted fraction (ignition term), :math:`x`.
@@ -1008,17 +1025,17 @@ class Material(MaterialBase):
             - Initial reacted fraction, :math:`{F^{max}}_{ig}`.
             - Maximum reacted fraction for the growth term, :math:`{F^{max}}_{G1}`.
             - Minimum reacted fraction, :math:`{F^{min}}_{G2}`.
-            
+
             The default value is an empty sequence.
         gasSpecificTable
             A sequence of sequences of Floats specifying the following:
-            
+
             - Specific Heat per unit mass.
             - Temperature dependent data.
             - Value of first field variable.
             - Value of second field variable.
             - Etc.
-            
+
             The default value is an empty sequence.
         table
             A sequence of sequences of Floats specifying the items described below. The default
@@ -1055,7 +1072,7 @@ class Material(MaterialBase):
     ) -> Expansion:
         """This method creates an Expansion object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Expansion
@@ -1089,9 +1106,7 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.expansion = Expansion(
-            type, userSubroutine, zero, temperatureDependency, dependencies, table
-        )
+        self.expansion = Expansion(type, userSubroutine, zero, temperatureDependency, dependencies, table)
         return self.expansion
 
     @abaqus_method_doc
@@ -1104,7 +1119,7 @@ class Material(MaterialBase):
     ) -> FluidLeakoff:
         """This method creates a FluidLeakoff object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].FluidLeakoff
@@ -1128,9 +1143,7 @@ class Material(MaterialBase):
         FluidLeakoff
             A :py:class:`~abaqus.Material.Others.PoreFluidFlow.FluidLeakoff.FluidLeakoff` object.
         """
-        self.fluidLeakoff = FluidLeakoff(
-            temperatureDependency, dependencies, type, table
-        )
+        self.fluidLeakoff = FluidLeakoff(temperatureDependency, dependencies, type, table)
         return self.fluidLeakoff
 
     @abaqus_method_doc
@@ -1144,7 +1157,7 @@ class Material(MaterialBase):
     ) -> GapFlow:
         """This method creates a GapFlow object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].GapFlow
@@ -1165,7 +1178,7 @@ class Material(MaterialBase):
         type
             A SymbolicConstant specifying the type of gap flow. Possible values are NEWTONIAN,
             and POWER_LAW. The default value is NEWTONIAN.
-        
+
         Returns
         -------
         GapFlow
@@ -1180,7 +1193,7 @@ class Material(MaterialBase):
     ) -> GasketMembraneElastic:
         """This method creates a GasketMembraneElastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].GasketMembraneElastic
@@ -1204,9 +1217,7 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.gasketMembraneElastic = GasketMembraneElastic(
-            table, temperatureDependency, dependencies
-        )
+        self.gasketMembraneElastic = GasketMembraneElastic(table, temperatureDependency, dependencies)
         return self.gasketMembraneElastic
 
     @abaqus_method_doc
@@ -1226,7 +1237,7 @@ class Material(MaterialBase):
     ) -> GasketThicknessBehavior:
         """This method creates a GasketThicknessBehavior object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].GasketThicknessBehavior
@@ -1307,7 +1318,7 @@ class Material(MaterialBase):
     ) -> GasketTransverseShearElastic:
         """This method creates a GasketTransverseShearElastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].GasketTransverseShearElastic
@@ -1343,7 +1354,7 @@ class Material(MaterialBase):
     def Gel(self, table: tuple) -> Gel:
         """This method creates a Gel object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Gel
@@ -1366,7 +1377,19 @@ class Material(MaterialBase):
     def Hyperelastic(
         self,
         table: tuple,
-        type: Literal[C.ARRUDA_BOYCE, C.MARLOW, C.MOONEY_RIVLIN, C.NEO_HOOKE, C.OGDEN, C.POLYNOMIAL, C.REDUCED_POLYNOMIAL, C.USER, C.VAN_DER_WAALS, C.YEOH, C.UNKNOWN] = UNKNOWN,
+        type: Literal[
+            C.ARRUDA_BOYCE,
+            C.MARLOW,
+            C.MOONEY_RIVLIN,
+            C.NEO_HOOKE,
+            C.OGDEN,
+            C.POLYNOMIAL,
+            C.REDUCED_POLYNOMIAL,
+            C.USER,
+            C.VAN_DER_WAALS,
+            C.YEOH,
+            C.UNKNOWN,
+        ] = UNKNOWN,
         moduliTimeScale: Literal[C.LONG_TERM, C.INSTANTANEOUS] = LONG_TERM,
         temperatureDependency: Boolean = OFF,
         n: int = 1,
@@ -1378,7 +1401,9 @@ class Material(MaterialBase):
         volumetricResponse: Literal[C.DEFAULT, C.VOLUMETRIC_DATA, C.POISSON_RATIO, C.LATERAL_NOMINAL_STRAIN] = DEFAULT,
         poissonRatio: float = 0,
         materialType: Literal[C.ISOTROPIC, C.ANISOTROPIC] = ISOTROPIC,
-        anisotropicType: Literal[C.FUNG_ANISOTROPIC, C.FUNG_ORTHOTROPIC, C.HOLZAPFEL, C.USER_DEFINED] = FUNG_ANISOTROPIC,
+        anisotropicType: Literal[
+            C.FUNG_ANISOTROPIC, C.FUNG_ORTHOTROPIC, C.HOLZAPFEL, C.USER_DEFINED
+        ] = FUNG_ANISOTROPIC,
         formulation: Literal[C.STRAIN, C.INVARIANT] = STRAIN,
         behaviorType: Literal[C.INCOMPRESSIBLE, C.COMPRESSIBLE] = INCOMPRESSIBLE,
         dependencies: int = 0,
@@ -1386,7 +1411,7 @@ class Material(MaterialBase):
     ) -> Hyperelastic:
         """This method creates a Hyperelastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Hyperelastic
@@ -1498,7 +1523,7 @@ class Material(MaterialBase):
     ) -> Hyperfoam:
         """This method creates a Hyperfoam object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Hyperfoam
@@ -1532,16 +1557,14 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.hyperfoam = Hyperfoam(
-            testData, poisson, n, temperatureDependency, moduli, table
-        )
+        self.hyperfoam = Hyperfoam(testData, poisson, n, temperatureDependency, moduli, table)
         return self.hyperfoam
 
     @abaqus_method_doc
     def Hypoelastic(self, table: tuple, user: Boolean = OFF) -> Hypoelastic:
         """This method creates a Hypoelastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Hypoelastic
@@ -1567,7 +1590,7 @@ class Material(MaterialBase):
     def InelasticHeatFraction(self, fraction: float = 0) -> InelasticHeatFraction:
         """This method creates an InelasticHeatFraction object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].InelasticHeatFraction
@@ -1596,7 +1619,7 @@ class Material(MaterialBase):
     def JouleHeatFraction(self, fraction: float = 1) -> JouleHeatFraction:
         """This method creates a JouleHeatFraction object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].JouleHeatFraction
@@ -1624,7 +1647,7 @@ class Material(MaterialBase):
     def LatentHeat(self, table: tuple) -> LatentHeat:
         """This method creates a LatentHeat object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].LatentHeat
@@ -1660,7 +1683,7 @@ class Material(MaterialBase):
     ) -> LowDensityFoam:
         """This method creates a LowDensityFoam object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].LowDensityFoam
@@ -1722,7 +1745,7 @@ class Material(MaterialBase):
     ) -> MagneticPermeability:
         """This method creates a MagneticPermeability object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MagneticPermeability
@@ -1788,7 +1811,7 @@ class Material(MaterialBase):
     ) -> MohrCoulombPlasticity:
         r"""This method creates a MohrCoulombPlasticity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MohrCoulombPlasticity
@@ -1799,7 +1822,7 @@ class Material(MaterialBase):
         table
             A sequence of sequences of Floats specifying the items described below.
         deviatoricEccentricity
-            None or a Float specifying the flow potential eccentricity in the deviatoric plane, 
+            None or a Float specifying the flow potential eccentricity in the deviatoric plane,
             :math:`e`; :math:`1 / 2 \leq e \leq 1.0`. If **deviatoricEccentricity** = None, Abaqus calculates the value using the
             specified Mohr-Coulomb angle of friction. The default value is None.
         meridionalEccentricity
@@ -1836,7 +1859,7 @@ class Material(MaterialBase):
     def MoistureSwelling(self, table: tuple) -> MoistureSwelling:
         """This method creates a MoistureSwelling object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MoistureSwelling
@@ -1867,7 +1890,7 @@ class Material(MaterialBase):
     ) -> Permeability:
         r"""This method creates a Permeability object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Permeability
@@ -1918,7 +1941,7 @@ class Material(MaterialBase):
     ) -> Piezoelectric:
         """This method creates a Piezoelectric object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Piezoelectric
@@ -1941,9 +1964,7 @@ class Material(MaterialBase):
         Piezoelectric
             A :py:class:`~abaqus.Material.Others.Electromagnetic.Piezoelectric.Piezoelectric` object.
         """
-        self.piezoelectric = Piezoelectric(
-            table, type, temperatureDependency, dependencies
-        )
+        self.piezoelectric = Piezoelectric(table, type, temperatureDependency, dependencies)
         return self.piezoelectric
 
     @abaqus_method_doc
@@ -1960,7 +1981,7 @@ class Material(MaterialBase):
     ) -> Plastic:
         """This method creates a Plastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Plastic
@@ -2021,7 +2042,7 @@ class Material(MaterialBase):
     ) -> PoreFluidExpansion:
         """This method creates a PoreFluidExpansion object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].PoreFluidExpansion
@@ -2047,18 +2068,14 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.poreFluidExpansion = PoreFluidExpansion(
-            table, zero, temperatureDependency, dependencies
-        )
+        self.poreFluidExpansion = PoreFluidExpansion(table, zero, temperatureDependency, dependencies)
         return self.poreFluidExpansion
 
     @abaqus_method_doc
-    def PorousBulkModuli(
-        self, table: tuple, temperatureDependency: Boolean = OFF
-    ) -> PorousBulkModuli:
+    def PorousBulkModuli(self, table: tuple, temperatureDependency: Boolean = OFF) -> PorousBulkModuli:
         """This method creates a PorousBulkModuli object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].PorousBulkModuli
@@ -2089,7 +2106,7 @@ class Material(MaterialBase):
     ) -> PorousElastic:
         """This method creates a PorousElastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].PorousElastic
@@ -2116,9 +2133,7 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.porousElastic = PorousElastic(
-            table, shear, temperatureDependency, dependencies
-        )
+        self.porousElastic = PorousElastic(table, shear, temperatureDependency, dependencies)
         return self.porousElastic
 
     @abaqus_method_doc
@@ -2131,7 +2146,7 @@ class Material(MaterialBase):
     ) -> PorousMetalPlasticity:
         """This method creates a PorousMetalPlasticity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].PorousMetalPlasticity
@@ -2158,9 +2173,7 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.porousMetalPlasticity = PorousMetalPlasticity(
-            table, relativeDensity, temperatureDependency, dependencies
-        )
+        self.porousMetalPlasticity = PorousMetalPlasticity(table, relativeDensity, temperatureDependency, dependencies)
         return self.porousMetalPlasticity
 
     @abaqus_method_doc
@@ -2169,7 +2182,7 @@ class Material(MaterialBase):
     ) -> Regularization:
         """This method creates a Regularization object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Regularization
@@ -2198,12 +2211,10 @@ class Material(MaterialBase):
         return self.regularization
 
     @abaqus_method_doc
-    def Solubility(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ) -> Solubility:
+    def Solubility(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0) -> Solubility:
         """This method creates a Solubility object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Solubility
@@ -2242,7 +2253,7 @@ class Material(MaterialBase):
     ) -> Sorption:
         r"""This method creates a Sorption object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Sorption
@@ -2261,7 +2272,7 @@ class Material(MaterialBase):
             A SymbolicConstant specifying exsorption behavior. Possible values are LOG and TABULAR.
             The default value is TABULAR.
         scanning
-            A Float specifying the slope of the scanning line, :math:`\left.\left(d u_{w} / d s\right)\right|_{s}`. 
+            A Float specifying the slope of the scanning line, :math:`\left.\left(d u_{w} / d s\right)\right|_{s}`.
             This slope must be positive and larger than the slope of the absorption or exsorption behaviors. The
             default value is 0.0.
         exsorptionTable
@@ -2297,7 +2308,7 @@ class Material(MaterialBase):
     ) -> SpecificHeat:
         """This method creates a SpecificHeat object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].SpecificHeat
@@ -2324,9 +2335,7 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.specificHeat = SpecificHeat(
-            table, law, temperatureDependency, dependencies
-        )
+        self.specificHeat = SpecificHeat(table, law, temperatureDependency, dependencies)
         return self.specificHeat
 
     @abaqus_method_doc
@@ -2339,7 +2348,7 @@ class Material(MaterialBase):
     ) -> Swelling:
         """This method creates a Swelling object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Swelling
@@ -2382,7 +2391,7 @@ class Material(MaterialBase):
     ) -> UserMaterial:
         """This method creates a UserMaterial object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].UserMaterial
@@ -2438,7 +2447,7 @@ class Material(MaterialBase):
     def UserOutputVariables(self, n: int = 0) -> UserOutputVariables:
         """This method creates a UserOutputVariables object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].UserOutputVariables
@@ -2477,7 +2486,7 @@ class Material(MaterialBase):
     ) -> Viscoelastic:
         """This method creates a Viscoelastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Viscoelastic
@@ -2531,9 +2540,7 @@ class Material(MaterialBase):
         ------
         RangeError
         """
-        self.viscoelastic = Viscoelastic(
-            domain, table, frequency, type, preload, time, errtol, nmax, volumetricTable
-        )
+        self.viscoelastic = Viscoelastic(domain, table, frequency, type, preload, time, errtol, nmax, volumetricTable)
         return self.viscoelastic
 
     @abaqus_method_doc
@@ -2546,7 +2553,7 @@ class Material(MaterialBase):
     ) -> Viscosity:
         """This method creates a Viscosity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Viscosity
@@ -2586,7 +2593,7 @@ class Material(MaterialBase):
     ) -> Viscous:
         """This method creates a Viscous object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Viscous
@@ -2599,7 +2606,7 @@ class Material(MaterialBase):
         law
             A SymbolicConstant specifying the creep law. Possible values are STRAIN, TIME and USER.
             The default value is STRAIN.
-            
+
         temperatureDependency
             A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies
@@ -2636,7 +2643,7 @@ class Material(MaterialBase):
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].DuctileDamageInitiation
@@ -2717,7 +2724,7 @@ class Material(MaterialBase):
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].FldDamageInitiation
@@ -2798,7 +2805,7 @@ class Material(MaterialBase):
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].FlsdDamageInitiation
@@ -2879,7 +2886,7 @@ class Material(MaterialBase):
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].JohnsonCookDamageInitiation
@@ -2961,7 +2968,7 @@ class Material(MaterialBase):
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxeDamageInitiation
@@ -3046,7 +3053,7 @@ class Material(MaterialBase):
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxsDamageInitiation
@@ -3130,7 +3137,7 @@ class Material(MaterialBase):
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MkDamageInitiation
@@ -3211,7 +3218,7 @@ class Material(MaterialBase):
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MsfldDamageInitiation
@@ -3293,7 +3300,7 @@ class Material(MaterialBase):
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].QuadeDamageInitiation
@@ -3378,7 +3385,7 @@ class Material(MaterialBase):
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].QuadsDamageInitiation
@@ -3463,7 +3470,7 @@ class Material(MaterialBase):
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxpeDamageInitiation
@@ -3548,7 +3555,7 @@ class Material(MaterialBase):
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxpsDamageInitiation
@@ -3632,7 +3639,7 @@ class Material(MaterialBase):
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].ShearDamageInitiation
@@ -3713,7 +3720,7 @@ class Material(MaterialBase):
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].HashinDamageInitiation

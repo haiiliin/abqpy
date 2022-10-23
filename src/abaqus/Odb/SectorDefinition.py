@@ -8,7 +8,7 @@ class SectorDefinition:
     """The SectorDefinition object describes the number of symmetry sectors and axis of
     symmetry for a cyclic symmetry model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess

@@ -69,14 +69,41 @@ from ..StepMiscellaneous.SubstructureGenerateFrequencyArray import (
 from ..StepMiscellaneous.SubstructureGenerateModesArray import (
     SubstructureGenerateModesArray,
 )
-from ..UtilityAndView.abaqusConstants import (ABS, AC_ON, ALL, ALL_FREQUENCIES,
-                                              ANALYSIS_PRODUCT_DEFAULT, AUTOMATIC, AUTOMATIC_GLOBAL,
-                                              Boolean, COMPLEX, DEFAULT, DIRECT, DISPLACEMENT,
-                                              FULL_NEWTON, IMPLICIT, IMPLICIT_EXPLICIT, LINEAR, LOG,
-                                              LOGARITHMIC, NONE, OFF, ON, PERIOD, PREVIOUS_STEP,
-                                              PROPAGATED, RAMP, SINGLE_DIRECTION, SOLVER_DEFAULT,
-                                              STEP, SUBSPACE, SymbolicConstant, TRANSIENT, VALUE,
-                                              WHOLE_MODEL)
+from ..UtilityAndView.abaqusConstants import (
+    ABS,
+    AC_ON,
+    ALL,
+    ALL_FREQUENCIES,
+    ANALYSIS_PRODUCT_DEFAULT,
+    AUTOMATIC,
+    AUTOMATIC_GLOBAL,
+    Boolean,
+    COMPLEX,
+    DEFAULT,
+    DIRECT,
+    DISPLACEMENT,
+    FULL_NEWTON,
+    IMPLICIT,
+    IMPLICIT_EXPLICIT,
+    LINEAR,
+    LOG,
+    LOGARITHMIC,
+    NONE,
+    OFF,
+    ON,
+    PERIOD,
+    PREVIOUS_STEP,
+    PROPAGATED,
+    RAMP,
+    SINGLE_DIRECTION,
+    SOLVER_DEFAULT,
+    STEP,
+    SUBSPACE,
+    SymbolicConstant,
+    TRANSIENT,
+    VALUE,
+    WHOLE_MODEL,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -84,7 +111,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class StepModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -101,7 +128,7 @@ class StepModel(ModelBase):
     ) -> AnnealStep:
         """This method creates an AnnealStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AnnealStep
@@ -127,9 +154,7 @@ class StepModel(ModelBase):
         step: AnnealStep
             An :py:class:`~abaqus.Step.AnnealStep.AnnealStep` object.
         """
-        self.steps[name] = step = AnnealStep(
-            name, previous, description, refTemp, maintainAttributes
-        )
+        self.steps[name] = step = AnnealStep(name, previous, description, refTemp, maintainAttributes)
         return step
 
     @abaqus_method_doc
@@ -151,7 +176,7 @@ class StepModel(ModelBase):
     ) -> BuckleStep:
         """This method creates a BuckleStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BuckleStep
@@ -234,7 +259,7 @@ class StepModel(ModelBase):
     ) -> ComplexFrequencyStep:
         """This method creates a ComplexFrequencyStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ComplexFrequencyStep
@@ -327,7 +352,7 @@ class StepModel(ModelBase):
     ) -> CoupledTempDisplacementStep:
         """This method creates a CoupledTempDisplacementStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CoupledTempDisplacementStep
@@ -472,7 +497,7 @@ class StepModel(ModelBase):
     ) -> CoupledThermalElectricalStructuralStep:
         """This method creates a CoupledThermalElectricalStructuralStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CoupledThermalElectricalStructuralStep
@@ -609,7 +634,7 @@ class StepModel(ModelBase):
     ) -> CoupledThermalElectricStep:
         """This method creates a CoupledThermalElectricStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CoupledThermalElectricStep
@@ -732,7 +757,7 @@ class StepModel(ModelBase):
     ) -> DirectCyclicStep:
         """This method creates a DirectCyclicStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].DirectCyclicStep
@@ -864,7 +889,7 @@ class StepModel(ModelBase):
     ) -> EmagTimeHarmonicStep:
         """This method creates a EmagTimeHarmonicStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EmagTimeHarmonicStep
@@ -890,9 +915,7 @@ class StepModel(ModelBase):
         step: EmagTimeHarmonicStep
             An :py:class:`~abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep` object.
         """
-        self.steps[name] = step = EmagTimeHarmonicStep(
-            name, previous, frequencyRange, description, factorization
-        )
+        self.steps[name] = step = EmagTimeHarmonicStep(name, previous, frequencyRange, description, factorization)
         return step
 
     @abaqus_method_doc
@@ -904,18 +927,20 @@ class StepModel(ModelBase):
         timePeriod: float = 1,
         nlgeom: Boolean = ON,
         adiabatic: Boolean = OFF,
-        timeIncrementationMethod: Literal[C.FIXED_EBE, C.AUTOMATIC_GLOBAL, C.AUTOMATIC_EBE, C.FIXED_USER_DEFINED_INC] = AUTOMATIC_GLOBAL,
+        timeIncrementationMethod: Literal[
+            C.FIXED_EBE, C.AUTOMATIC_GLOBAL, C.AUTOMATIC_EBE, C.FIXED_USER_DEFINED_INC
+        ] = AUTOMATIC_GLOBAL,
         maxIncrement: Optional[float] = None,
         scaleFactor: float = 1,
         massScaling: Union[MassScalingArray, Literal[C.PREVIOUS_STEP]] = PREVIOUS_STEP,
         linearBulkViscosity: float = 0,
         quadBulkViscosity: float = 1,
         userDefinedInc: Optional[float] = None,
-        maintainAttributes: Boolean = False
+        maintainAttributes: Boolean = False,
     ) -> ExplicitDynamicsStep:
         """This method creates an ExplicitDynamicsStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ExplicitDynamicsStep
@@ -950,7 +975,7 @@ class StepModel(ModelBase):
             required only when **timeIncrementationMethod** = AUTOMATIC_GLOBAL, AUTOMATIC_EBE, or
             FIXED_EBE. The default value is 1.0.
         massScaling
-            A :py:class:`~abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray` object specifying 
+            A :py:class:`~abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray` object specifying
             mass scaling controls. The default value is PREVIOUS_STEP.
         linearBulkViscosity
             A Float specifying the linear bulk viscosity parameter, b1b1. The default value is 0.06.
@@ -1021,7 +1046,7 @@ class StepModel(ModelBase):
     ) -> FrequencyStep:
         """This method creates a FrequencyStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FrequencyStep
@@ -1187,7 +1212,7 @@ class StepModel(ModelBase):
     ) -> GeostaticStep:
         """This method creates a GeostaticStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].GeostaticStep
@@ -1303,7 +1328,7 @@ class StepModel(ModelBase):
     ) -> HeatTransferStep:
         """This method creates a HeatTransferStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].HeatTransferStep
@@ -1413,7 +1438,9 @@ class StepModel(ModelBase):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
-        application: Literal[C.ANALYSIS_PRODUCT_DEFAULT, C.QUASI_STATIC, C.TRANSIENT_FIDELITY, C.MODERATE_DISSIPATION] = ANALYSIS_PRODUCT_DEFAULT,
+        application: Literal[
+            C.ANALYSIS_PRODUCT_DEFAULT, C.QUASI_STATIC, C.TRANSIENT_FIDELITY, C.MODERATE_DISSIPATION
+        ] = ANALYSIS_PRODUCT_DEFAULT,
         adiabatic: Boolean = OFF,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
@@ -1427,7 +1454,9 @@ class StepModel(ModelBase):
         amplitude: Literal[C.STEP, C.RAMP] = STEP,
         alpha: Union[Literal[C.DEFAULT], float] = DEFAULT,
         initialConditions: Literal[C.BYPASS, C.DEFAULT, C.ALLOW] = DEFAULT,
-        extrapolation: Literal[C.ANALYSIS_PRODUCT_DEFAULT, C.PARABOLIC, C.VELOCITY_PARABOLIC, C.NONE, C.LINEAR] = ANALYSIS_PRODUCT_DEFAULT,
+        extrapolation: Literal[
+            C.ANALYSIS_PRODUCT_DEFAULT, C.PARABOLIC, C.VELOCITY_PARABOLIC, C.NONE, C.LINEAR
+        ] = ANALYSIS_PRODUCT_DEFAULT,
         noStop: Boolean = OFF,
         maintainAttributes: Boolean = False,
         solutionTechnique: Literal[C.QUASI_NEWTON, C.FULL_NEWTON] = FULL_NEWTON,
@@ -1436,7 +1465,7 @@ class StepModel(ModelBase):
     ) -> ImplicitDynamicsStep:
         """This method creates an ImplicitDynamicsStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ImplicitDynamicsStep
@@ -1583,7 +1612,7 @@ class StepModel(ModelBase):
     ) -> MassDiffusionStep:
         """This method creates a MassDiffusionStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].MassDiffusionStep
@@ -1671,17 +1700,17 @@ class StepModel(ModelBase):
         continueAnalysis: Boolean = OFF,
         timePeriod: float = 1,
         incSize: float = 1,
-        directDamping: Optional[DirectDamping] = None, 
-        compositeDamping: Optional[CompositeDamping] = None, 
-        rayleighDamping: Optional[RayleighDamping] = None, 
+        directDamping: Optional[DirectDamping] = None,
+        compositeDamping: Optional[CompositeDamping] = None,
+        rayleighDamping: Optional[RayleighDamping] = None,
         amplitude: Literal[C.STEP, C.RAMP] = STEP,
         maintainAttributes: Boolean = False,
-        directDampingByFrequency: Optional[DirectDampingByFrequency] = None, 
-        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None, 
+        directDampingByFrequency: Optional[DirectDampingByFrequency] = None,
+        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None,
     ) -> ModalDynamicsStep:
         """This method creates a ModalDynamicsStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ModalDynamicsStep
@@ -1749,18 +1778,18 @@ class StepModel(ModelBase):
         freq: RandomResponseFrequencyArray,
         description: str = "",
         scale: Literal[C.LOG, C.LINEAR] = LOG,
-        directDamping: Optional[DirectDamping] = None, 
-        compositeDamping: Optional[CompositeDamping] = None, 
-        rayleighDamping: Optional[RayleighDamping] = None, 
-        structuralDamping: Optional[StructuralDamping] = None, 
-        directDampingByFrequency: Optional[DirectDampingByFrequency] = None, 
-        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None, 
-        structuralDampingByFrequency: Optional[StructuralDampingByFrequency] = None, 
+        directDamping: Optional[DirectDamping] = None,
+        compositeDamping: Optional[CompositeDamping] = None,
+        rayleighDamping: Optional[RayleighDamping] = None,
+        structuralDamping: Optional[StructuralDamping] = None,
+        directDampingByFrequency: Optional[DirectDampingByFrequency] = None,
+        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None,
+        structuralDampingByFrequency: Optional[StructuralDampingByFrequency] = None,
         maintainAttributes: Boolean = False,
     ) -> RandomResponseStep:
         """This method creates a RandomResponseStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].RandomResponseStep
@@ -1826,18 +1855,24 @@ class StepModel(ModelBase):
         previous: str,
         components: ResponseSpectrumComponentArray,
         description: str = "",
-        comp: Literal[C.MULTIPLE_DIRECTION_FORTY_PERCENT_RULE, C.MULTIPLE_DIRECTION_THIRTY_PERCENT_RULE, C.MULTIPLE_DIRECTION_ABSOLUTE_SUM, C.MULTIPLE_DIRECTION_SRSS_SUM, C.SINGLE_DIRECTION] = SINGLE_DIRECTION,
+        comp: Literal[
+            C.MULTIPLE_DIRECTION_FORTY_PERCENT_RULE,
+            C.MULTIPLE_DIRECTION_THIRTY_PERCENT_RULE,
+            C.MULTIPLE_DIRECTION_ABSOLUTE_SUM,
+            C.MULTIPLE_DIRECTION_SRSS_SUM,
+            C.SINGLE_DIRECTION,
+        ] = SINGLE_DIRECTION,
         sum: Literal[C.DSC, C.NRL, C.CQC, C.TENP, C.GRP, C.ABS, C.SRSS] = ABS,
-        directDamping: Optional[DirectDamping] = None, 
-        compositeDamping: Optional[CompositeDamping] = None, 
-        rayleighDamping: Optional[RayleighDamping] = None, 
-        directDampingByFrequency: Optional[DirectDampingByFrequency] = None, 
-        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None, 
+        directDamping: Optional[DirectDamping] = None,
+        compositeDamping: Optional[CompositeDamping] = None,
+        rayleighDamping: Optional[RayleighDamping] = None,
+        directDampingByFrequency: Optional[DirectDampingByFrequency] = None,
+        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None,
         maintainAttributes: Boolean = False,
     ) -> ResponseSpectrumStep:
         """This method creates a ResponseSpectrumStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ResponseSpectrumStep
@@ -1929,7 +1964,7 @@ class StepModel(ModelBase):
     ) -> SoilsStep:
         """This method creates a SoilsStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SoilsStep
@@ -2068,7 +2103,7 @@ class StepModel(ModelBase):
     ) -> StaticLinearPerturbationStep:
         """This method creates a StaticLinearPerturbationStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].StaticLinearPerturbationStep
@@ -2131,7 +2166,7 @@ class StepModel(ModelBase):
     ) -> StaticRiksStep:
         """This method creates a StaticRiksStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].StaticRiksStep
@@ -2276,7 +2311,7 @@ class StepModel(ModelBase):
     ) -> StaticStep:
         """This method creates a StaticStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].StaticStep
@@ -2417,7 +2452,7 @@ class StepModel(ModelBase):
     ) -> SteadyStateDirectStep:
         """This method creates a SteadyStateDirectStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SteadyStateDirectStep
@@ -2480,19 +2515,19 @@ class StepModel(ModelBase):
         frequencyRange: SteadyStateModalFrequencyArray,
         description: str = "",
         scale: Literal[C.LINEAR, C.LOGARITHMIC] = LOGARITHMIC,
-        directDamping: Optional[DirectDamping] = None, 
-        compositeDamping: Optional[CompositeDamping] = None, 
-        rayleighDamping: Optional[RayleighDamping] = None, 
-        structuralDamping: Optional[StructuralDamping] = None, 
-        directDampingByFrequency: Optional[DirectDampingByFrequency] = None, 
-        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None, 
-        structuralDampingByFrequency: Optional[StructuralDampingByFrequency] = None, 
+        directDamping: Optional[DirectDamping] = None,
+        compositeDamping: Optional[CompositeDamping] = None,
+        rayleighDamping: Optional[RayleighDamping] = None,
+        structuralDamping: Optional[StructuralDamping] = None,
+        directDampingByFrequency: Optional[DirectDampingByFrequency] = None,
+        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None,
+        structuralDampingByFrequency: Optional[StructuralDampingByFrequency] = None,
         maintainAttributes: Boolean = False,
         subdivideUsingEigenfrequencies: Boolean = ON,
     ) -> SteadyStateModalStep:
         """This method creates a SteadyStateModalStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SteadyStateModalStep
@@ -2567,14 +2602,16 @@ class StepModel(ModelBase):
         matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         maintainAttributes: Boolean = False,
         subdivideUsingEigenfrequencies: Boolean = ON,
-        projection: Literal[C.CONSTANT, C.RANGE, C.ALL_FREQUENCIES, C.PROPERTY_CHANGE, C.EIGENFREQUENCY] = ALL_FREQUENCIES,
+        projection: Literal[
+            C.CONSTANT, C.RANGE, C.ALL_FREQUENCIES, C.PROPERTY_CHANGE, C.EIGENFREQUENCY
+        ] = ALL_FREQUENCIES,
         maxDampingChange: float = 0,
         maxStiffnessChange: float = 0,
         frictionDamping: Boolean = OFF,
     ) -> SteadyStateSubspaceStep:
         """This method creates a SteadyStateSubspaceStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SteadyStateSubspaceStep
@@ -2658,7 +2695,7 @@ class StepModel(ModelBase):
     ) -> SubspaceDynamicsStep:
         """This method creates a SubspaceDynamicsStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SubspaceDynamicsStep
@@ -2738,7 +2775,7 @@ class StepModel(ModelBase):
     ) -> SubstructureGenerateStep:
         """This method creates a SubstructureGenerateStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SubstructureGenerateStep
@@ -2844,7 +2881,9 @@ class StepModel(ModelBase):
         description: str = "",
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        timeIncrementationMethod: Literal[C.FIXED_EBE, C.AUTOMATIC_GLOBAL, C.AUTOMATIC_EBE, C.FIXED_USER_DEFINED_INC] = AUTOMATIC_GLOBAL,
+        timeIncrementationMethod: Literal[
+            C.FIXED_EBE, C.AUTOMATIC_GLOBAL, C.AUTOMATIC_EBE, C.FIXED_USER_DEFINED_INC
+        ] = AUTOMATIC_GLOBAL,
         maxIncrement: Optional[float] = None,
         scaleFactor: float = 1,
         userDefinedInc: Optional[float] = None,
@@ -2855,7 +2894,7 @@ class StepModel(ModelBase):
     ) -> TempDisplacementDynamicsStep:
         """This method creates a TempDisplacementDynamicsStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TempDisplacementDynamicsStep
@@ -2951,7 +2990,7 @@ class StepModel(ModelBase):
     ) -> ViscoStep:
         """This method creates a ViscoStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ViscoStep

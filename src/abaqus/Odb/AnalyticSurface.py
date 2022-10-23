@@ -11,7 +11,7 @@ class AnalyticSurface:
     """The AnalyticSurface object is a geometric surface that can be described with straight
     and/or curved line segments.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess

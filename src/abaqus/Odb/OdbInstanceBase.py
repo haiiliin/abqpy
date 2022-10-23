@@ -16,8 +16,7 @@ from .RebarOrientationArray import RebarOrientationArray
 from ..Property.MaterialOrientationArray import MaterialOrientationArray
 from ..Property.SectionAssignmentArray import SectionAssignmentArray
 from ..Section.Section import Section
-from ..UtilityAndView.abaqusConstants import (AXIS_1, Boolean, INPUT, OFF, PROPAGATED, STACK_3,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import AXIS_1, Boolean, INPUT, OFF, PROPAGATED, STACK_3, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -25,7 +24,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class OdbInstanceBase:
     """A part instance is the usage of a part within an assembly.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -88,7 +87,7 @@ class OdbInstanceBase:
     def __init__(self, name: str, object: OdbPart, localCoordSystem: tuple = ()):
         """This method creates an OdbInstance object from an OdbPart object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].rootAssembly.Instance
@@ -120,9 +119,7 @@ class OdbInstanceBase:
         ...
 
     @abaqus_method_doc
-    def assignBeamOrientation(
-        self, region: str, method: Literal[C.N1_COSINES], vector: tuple
-    ):
+    def assignBeamOrientation(self, region: str, method: Literal[C.N1_COSINES], vector: tuple):
         """This method assigns a beam section orientation to a region of a part instance.
 
         Parameters
@@ -261,9 +258,7 @@ class OdbInstanceBase:
         ...
 
     @abaqus_method_doc
-    def AnalyticRigidSurf2DPlanar(
-        self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0
-    ):
+    def AnalyticRigidSurf2DPlanar(self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0):
         """This method is used to define a two-dimensional AnalyticSurface object on the instance.
 
         Parameters
@@ -279,10 +274,10 @@ class OdbInstanceBase:
 
         Raises
         ------
-        OdbError: 2D-Planar Analytic Rigid Surface can be defined only if the instance is of 
+        OdbError: 2D-Planar Analytic Rigid Surface can be defined only if the instance is of
         type TWO_D_PLANAR or AXISYMMETRIC.
             If OdbPart associated with the part instance is of type THREE_D.
-              
+
         """
         ...
 
@@ -313,10 +308,10 @@ class OdbInstanceBase:
 
         Raises
         ------
-        OdbError: Analytic Rigid Surface of type CYLINDER can be defined only if the instance is 
+        OdbError: Analytic Rigid Surface of type CYLINDER can be defined only if the instance is
         of type THREE_D
             If OdbPart associated with the part instance is not of type THREE_D.
-              
+
         """
         ...
 
@@ -350,7 +345,7 @@ class OdbInstanceBase:
         OdbError: Analytic Rigid Surface of type REVOLUTION can be defined only if the
         instance is of type THREE_D
             If OdbPart associated with the part instance is not of type THREE_D.
-              
+
         """
         ...
 

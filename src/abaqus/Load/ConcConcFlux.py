@@ -14,7 +14,7 @@ class ConcConcFlux(Load):
     """The ConcConcFlux object stores the data for a concentrated concentration flux.
     The ConcConcFlux object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -49,7 +49,7 @@ class ConcConcFlux(Load):
     ):
         """This method creates a ConcConcFlux object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConcConcFlux
@@ -111,9 +111,7 @@ class ConcConcFlux(Load):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(
-        self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""
-    ):
+    def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
         """This method modifies the propagating data for an existing ConcConcFlux object in the
         specified step.
 

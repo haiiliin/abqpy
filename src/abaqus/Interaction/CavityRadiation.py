@@ -16,7 +16,7 @@ class CavityRadiation(Interaction):
     controls the calculation of viewfactors.
     The CavityRadiation object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -167,9 +167,9 @@ class CavityRadiation(Interaction):
         minLumpedAreaDS: float = 5,
         cyclicSymmetry: Boolean = OFF,
         cyclicImages: int = 2,
-        cyclicRotPt: Optional[ModelDot] = None, 
-        cyclicRotEndPt: Optional[ModelDot] = None, 
-        cyclicSymPt: Optional[ModelDot] = None, 
+        cyclicRotPt: Optional[ModelDot] = None,
+        cyclicRotEndPt: Optional[ModelDot] = None,
+        cyclicSymPt: Optional[ModelDot] = None,
         periodicSymmetries: int = 0,
         periodicImages_1: int = 2,
         periodicImages_2: int = 2,
@@ -194,7 +194,7 @@ class CavityRadiation(Interaction):
     ):
         """This method creates a CavityRadiation object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CavityRadiation
@@ -375,9 +375,9 @@ class CavityRadiation(Interaction):
         minLumpedAreaDS: float = 5,
         cyclicSymmetry: Boolean = OFF,
         cyclicImages: int = 2,
-        cyclicRotPt: Optional[ModelDot] = None, 
-        cyclicRotEndPt: Optional[ModelDot] = None, 
-        cyclicSymPt: Optional[ModelDot] = None, 
+        cyclicRotPt: Optional[ModelDot] = None,
+        cyclicRotEndPt: Optional[ModelDot] = None,
+        cyclicSymPt: Optional[ModelDot] = None,
         periodicSymmetries: int = 0,
         periodicImages_1: int = 2,
         periodicImages_2: int = 2,

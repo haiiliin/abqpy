@@ -39,7 +39,7 @@ class SteadyStateModalStep(AnalysisStep):
     of the system to harmonic excitation.
     The SteadyStateModalStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -90,14 +90,10 @@ class SteadyStateModalStep(AnalysisStep):
     directDampingByFrequency: DirectDampingByFrequency = DirectDampingByFrequency()
 
     #: A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
-    rayleighDampingByFrequency: RayleighDampingByFrequency = (
-        RayleighDampingByFrequency()
-    )
+    rayleighDampingByFrequency: RayleighDampingByFrequency = RayleighDampingByFrequency()
 
     #: A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency` object.
-    structuralDampingByFrequency: StructuralDampingByFrequency = (
-        StructuralDampingByFrequency()
-    )
+    structuralDampingByFrequency: StructuralDampingByFrequency = StructuralDampingByFrequency()
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
@@ -110,7 +106,7 @@ class SteadyStateModalStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -192,19 +188,19 @@ class SteadyStateModalStep(AnalysisStep):
         frequencyRange: SteadyStateModalFrequencyArray,
         description: str = "",
         scale: Literal[C.LINEAR, C.LOGARITHMIC] = LOGARITHMIC,
-        directDamping: Optional[DirectDamping] = None, 
-        compositeDamping: Optional[CompositeDamping] = None, 
-        rayleighDamping: Optional[RayleighDamping] = None, 
-        structuralDamping: Optional[StructuralDamping] = None, 
-        directDampingByFrequency: Optional[DirectDampingByFrequency] = None, 
-        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None, 
-        structuralDampingByFrequency: Optional[StructuralDampingByFrequency] = None, 
+        directDamping: Optional[DirectDamping] = None,
+        compositeDamping: Optional[CompositeDamping] = None,
+        rayleighDamping: Optional[RayleighDamping] = None,
+        structuralDamping: Optional[StructuralDamping] = None,
+        directDampingByFrequency: Optional[DirectDampingByFrequency] = None,
+        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None,
+        structuralDampingByFrequency: Optional[StructuralDampingByFrequency] = None,
         maintainAttributes: Boolean = False,
         subdivideUsingEigenfrequencies: Boolean = ON,
     ):
         """This method creates a SteadyStateModalStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SteadyStateModalStep
@@ -260,13 +256,13 @@ class SteadyStateModalStep(AnalysisStep):
         self,
         description: str = "",
         scale: Literal[C.LINEAR, C.LOGARITHMIC] = LOGARITHMIC,
-        directDamping: Optional[DirectDamping] = None, 
-        compositeDamping: Optional[CompositeDamping] = None, 
-        rayleighDamping: Optional[RayleighDamping] = None, 
-        structuralDamping: Optional[StructuralDamping] = None, 
-        directDampingByFrequency: Optional[DirectDampingByFrequency] = None, 
-        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None, 
-        structuralDampingByFrequency: Optional[StructuralDampingByFrequency] = None, 
+        directDamping: Optional[DirectDamping] = None,
+        compositeDamping: Optional[CompositeDamping] = None,
+        rayleighDamping: Optional[RayleighDamping] = None,
+        structuralDamping: Optional[StructuralDamping] = None,
+        directDampingByFrequency: Optional[DirectDampingByFrequency] = None,
+        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None,
+        structuralDampingByFrequency: Optional[StructuralDampingByFrequency] = None,
         subdivideUsingEigenfrequencies: Boolean = ON,
     ):
         """This method modifies the SteadyStateModalStep object.

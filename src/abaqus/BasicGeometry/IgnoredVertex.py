@@ -8,7 +8,7 @@ class IgnoredVertex:
     """An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object is a point region of the geometry that was abstracted away by a
     virtual topology feature.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

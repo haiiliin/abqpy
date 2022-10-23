@@ -18,7 +18,7 @@ class Chart:
     """The Chart object is used to display XYCurve objects. A :py:class:`~abaqus.XY.Chart.Chart` object is automatically
     created when creating an XYPlot object
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

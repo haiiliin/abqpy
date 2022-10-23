@@ -71,7 +71,7 @@ class SessionBase:
     """The Session object has no constructor. Abaqus creates the **session** member when a
     session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session
@@ -262,9 +262,7 @@ class SessionBase:
     graphicsOptions: GraphicsOptions = GraphicsOptions()
 
     #: A :py:class:`~abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions` object.
-    defaultViewportAnnotationOptions: ViewportAnnotationOptions = (
-        ViewportAnnotationOptions()
-    )
+    defaultViewportAnnotationOptions: ViewportAnnotationOptions = ViewportAnnotationOptions()
 
     #: A repository of Queue objects.
     queues: Dict[str, Queue] = {}
@@ -309,10 +307,10 @@ class SessionBase:
             boot option `/3GB /userva = SizeInMBytes` to extend the amount of memory available for
             Abaqus/CAE. In this case the limit can be changed to 2800 MB.If the kernel memory size
             reaches the **abq_ker_memory** value or the virtual memory limit of the machine, the
-            following message will be displayed: 
-            
-            `Operation did not complete due to a memory allocation failure.` 
-            
+            following message will be displayed:
+
+            `Operation did not complete due to a memory allocation failure.`
+
             For optimal performance, the memory limit should be set to a value
             less than the physical amount of memory on the machine.The minimum setting allowed is
             256 MB.
@@ -336,7 +334,7 @@ class SessionBase:
 
         Returns
         -------
-        int 
+        int
             The connection port number used for the CAD connection.
         """
         ...
@@ -502,11 +500,11 @@ class SessionBase:
             method. If you create a script to print directly to a Windows printer, the
             **printCommand** must take the following
             form::
-            
+
                 session.printToPrinter.setValues(
                     printCommand='PRINTER[number of characters in name]:printername PROPERTIES[number of characters in properties]:document properties'
                 )
-                
+
             The `PROPERTIES` is a list of characters that represents the
             printing preferences for the selected Windows printer. The properties are not required
             in a script; the printed output will use the current settings for the selected printer.
@@ -545,9 +543,7 @@ class SessionBase:
         ...
 
     @abaqus_method_doc
-    def writeVrmlFile(
-        self, fileName: str, format: Boolean = OFF, canvasObjects: Sequence[Canvas] = ()
-    ):
+    def writeVrmlFile(self, fileName: str, format: Boolean = OFF, canvasObjects: Sequence[Canvas] = ()):
         """This method exports the current viewport objects to a file.
 
         Parameters
@@ -564,9 +560,7 @@ class SessionBase:
         ...
 
     @abaqus_method_doc
-    def write3DXMLFile(
-        self, fileName: str, format: Boolean = OFF, canvasObjects: Sequence[Canvas] = ()
-    ):
+    def write3DXMLFile(self, fileName: str, format: Boolean = OFF, canvasObjects: Sequence[Canvas] = ()):
         """This method exports the current viewport objects to a file.
 
         Parameters
@@ -595,7 +589,7 @@ class SessionBase:
             A sequence of canvas objects to export.
         """
         ...
-    
+
     # The following method was originally in the `OdbCommands` page documentation
     # But it accessed only by `session` object.
     @abaqus_method_doc

@@ -16,15 +16,12 @@ from ..UtilityAndView.abaqusConstants import Boolean, FILLED_CIRCLE, ON, SOLID, 
 
 @abaqus_class_doc
 class XYPlot(XYPlotBase):
-    
     @staticmethod
     @abaqus_method_doc
-    def AreaStyle(
-        color: str = "", fill: Boolean = ON, style: SymbolicConstant = SOLID
-    ) -> AreaStyle:
+    def AreaStyle(color: str = "", fill: Boolean = ON, style: SymbolicConstant = SOLID) -> AreaStyle:
         """This method creates an AreaStyle.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.AreaStyle
@@ -64,7 +61,7 @@ class XYPlot(XYPlotBase):
     ) -> LineStyle:
         """This method creates a LineStyle.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.LineStyle
@@ -103,7 +100,7 @@ class XYPlot(XYPlotBase):
     def QuantityType(type: SymbolicConstant, label: str = "") -> QuantityType:
         """This method creates a QuantityType object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.QuantityType
@@ -207,7 +204,7 @@ class XYPlot(XYPlotBase):
     ) -> SymbolStyle:
         """This method creates a SymbolStyle object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.SymbolStyle
@@ -224,7 +221,7 @@ class XYPlot(XYPlotBase):
         marker
             A SymbolicConstant specifying the marker type be used when drawing symbols using this
             SymbolStyle object. Possible values are:
-            
+
             - FILLED_CIRCLE
             - FILLED_SQUARE
             - FILLED_DIAMOND
@@ -236,7 +233,7 @@ class XYPlot(XYPlotBase):
             - CROSS
             - XMARKER
             - POINT
-            
+
             The default value is FILLED_CIRCLE.
         size
             A Float specifying the marker size to be used when drawing markers using this
@@ -256,12 +253,10 @@ class XYPlot(XYPlotBase):
 
     @staticmethod
     @abaqus_method_doc
-    def TextStyle(
-        color: str = "", show: Boolean = ON, font: str = "", rotationAngle: float = 0
-    ) -> TextStyle:
+    def TextStyle(color: str = "", show: Boolean = ON, font: str = "", rotationAngle: float = 0) -> TextStyle:
         """This method creates a TextStyle.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.TextStyle
@@ -311,7 +306,7 @@ class XYPlot(XYPlotBase):
     ) -> XYData:
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.XYData
@@ -364,7 +359,7 @@ class XYPlot(XYPlotBase):
     def XYData(objectToCopy: XYData) -> XYData:
         """This method creates an XYData object by copying an existing XYData object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].userData.XYData

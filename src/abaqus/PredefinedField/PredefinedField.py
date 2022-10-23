@@ -13,7 +13,7 @@ class PredefinedField:
     repository of the Model object. An instance of any PredefinedFieldState object can be
     obtained through the predefined field repository of the Step object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load

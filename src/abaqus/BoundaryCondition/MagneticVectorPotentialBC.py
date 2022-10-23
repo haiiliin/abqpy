@@ -15,7 +15,7 @@ class MagneticVectorPotentialBC(BoundaryCondition):
     boundary condition.
     The MagneticVectorPotentialBC object is derived from the BoundaryCondition object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -56,7 +56,7 @@ class MagneticVectorPotentialBC(BoundaryCondition):
     ):
         """This method creates a MagneticVectorPotentialBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].MagneticVectorPotentialBC

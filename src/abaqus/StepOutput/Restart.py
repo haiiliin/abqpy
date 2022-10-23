@@ -7,7 +7,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 class Restart:
     """The Restart object defines a restart request.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -46,7 +46,7 @@ class Restart:
     ):
         """This method creates a restart request.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].steps[name].Restart
