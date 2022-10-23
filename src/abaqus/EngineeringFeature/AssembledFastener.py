@@ -1,10 +1,12 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Fastener import Fastener
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import Boolean, NORMALS, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -76,7 +78,7 @@ class AssembledFastener(Fastener):
         templateSurfaces: tuple,
         assignedSurfaces: tuple,
         propertyPrefix: str,
-        orientMethod: SymbolicConstant = NORMALS,
+        orientMethod: Literal[C.NORMALS, C.CSYS] = NORMALS,
         localCsys: Optional[int] = None,
         scriptName: str = "",
     ):
@@ -134,7 +136,7 @@ class AssembledFastener(Fastener):
     @abaqus_method_doc
     def setValues(
         self,
-        orientMethod: SymbolicConstant = NORMALS,
+        orientMethod: Literal[C.NORMALS, C.CSYS] = NORMALS,
         localCsys: Optional[int] = None,
         scriptName: str = "",
     ):

@@ -1,7 +1,9 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .ContactProperty import ContactProperty
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -44,7 +46,7 @@ class AcousticImpedanceProp(ContactProperty):
     def __init__(
         self,
         name: str,
-        tableType: SymbolicConstant,
+        tableType: Literal[C.ADMITTANCE, C.IMPEDANCE],
         table: tuple,
         frequencyDependency: Boolean = OFF,
     ):

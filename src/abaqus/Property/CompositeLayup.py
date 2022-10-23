@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .CompositePly import CompositePly
 from .CompositePlyArray import CompositePlyArray
@@ -14,6 +15,7 @@ from ..Section.SectionLayerArray import SectionLayerArray
 from ..UtilityAndView.abaqusConstants import (AXIS_1, Boolean, DEFAULT, GLOBAL, GRADIENT,
                                               NO_IDEALIZATION, OFF, ROTATION_NONE, SHELL, SIMPSON,
                                               SymbolicConstant, UNIFORM)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -75,10 +77,10 @@ class CompositeLayup:
         self,
         name: str,
         description: str = "",
-        offsetType: SymbolicConstant = GLOBAL,
+        offsetType: Literal[C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.GLOBAL, C.SINGLE_VALUE, C.OFFSET_FIELD, C.SHELL] = GLOBAL,
         offsetField: str = "",
         offsetValues: float = 0,
-        elementType: SymbolicConstant = SHELL,
+        elementType: Literal[C.SOLID, C.SHELL, C.CONTINUUM_SHELL] = SHELL,
         symmetric: Boolean = OFF,
     ):
         """This method creates a CompositeLayup object.
@@ -142,10 +144,10 @@ class CompositeLayup:
     def setValues(
         self,
         description: str = "",
-        offsetType: SymbolicConstant = GLOBAL,
+        offsetType: Literal[C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.GLOBAL, C.SINGLE_VALUE, C.OFFSET_FIELD, C.SHELL] = GLOBAL,
         offsetField: str = "",
         offsetValues: float = 0,
-        elementType: SymbolicConstant = SHELL,
+        elementType: Literal[C.SOLID, C.SHELL, C.CONTINUUM_SHELL] = SHELL,
         symmetric: Boolean = OFF,
     ):
         """This method modifies the CompositeLayup object.
@@ -181,14 +183,14 @@ class CompositeLayup:
         region: Region,
         material: str,
         plyName: str,
-        orientationType: SymbolicConstant,
-        thicknessType: SymbolicConstant,
+        orientationType: Literal[C.ANGLE_45, C.ANGLE_0, C.CSYS, C.ANGLE_NEG45, C.SPECIFY_ORIENT, C.ANGLE_90],
+        thicknessType: Literal[C.FIELD_THICKNESS, C.ANALYTICAL_FIELD_THICKNESS, C.SPECIFY_THICKNESS],
         orientationValue: float = 0,
         thicknessField: str = "",
         numIntPts: int = 3,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
-        additionalRotationType: SymbolicConstant = ROTATION_NONE,
+        additionalRotationType: Literal[C.ROTATION_NONE, C.ANGLE_0, C.ROTATION_FIELD, C.ROTATION_ANGLE] = ROTATION_NONE,
         orientation: Optional[SymbolicConstant] = None,
         additionalRotationField: str = "",
     ) -> CompositePly:
@@ -290,13 +292,13 @@ class CompositeLayup:
         name: str,
         layup: SectionLayerArray,
         symmetric: Boolean = OFF,
-        thicknessType: SymbolicConstant = UNIFORM,
+        thicknessType: Literal[C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD] = UNIFORM,
         preIntegrate: Boolean = OFF,
-        poissonDefinition: SymbolicConstant = DEFAULT,
+        poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
-        integrationRule: SymbolicConstant = SIMPSON,
-        temperature: SymbolicConstant = GRADIENT,
-        idealization: SymbolicConstant = NO_IDEALIZATION,
+        integrationRule: Literal[C.GAUSS, C.SIMPSON] = SIMPSON,
+        temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
+        idealization: Literal[C.SMEAR_ALL_LAYERS, C.BENDING, C.MEMBRANE, C.NO_IDEALIZATION] = NO_IDEALIZATION,
         nTemp: Optional[int] = None,
         thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
@@ -408,12 +410,12 @@ class CompositeLayup:
         self,
         nodalThicknessField: str = "",
         thicknessField: str = "",
-        thicknessType: SymbolicConstant = UNIFORM,
+        thicknessType: Literal[C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD] = UNIFORM,
         preIntegrate: Boolean = OFF,
-        poissonDefinition: SymbolicConstant = DEFAULT,
+        poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
-        integrationRule: SymbolicConstant = SIMPSON,
-        temperature: SymbolicConstant = GRADIENT,
+        integrationRule: Literal[C.GAUSS, C.SIMPSON] = SIMPSON,
+        temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
         nTemp: Optional[int] = None,
         thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
@@ -504,13 +506,13 @@ class CompositeLayup:
         material: str,
         thickness: float = 0,
         numIntPts: int = 5,
-        thicknessType: SymbolicConstant = UNIFORM,
+        thicknessType: Literal[C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD] = UNIFORM,
         preIntegrate: Boolean = OFF,
-        poissonDefinition: SymbolicConstant = DEFAULT,
+        poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
-        integrationRule: SymbolicConstant = SIMPSON,
-        temperature: SymbolicConstant = GRADIENT,
-        idealization: SymbolicConstant = NO_IDEALIZATION,
+        integrationRule: Literal[C.GAUSS, C.SIMPSON] = SIMPSON,
+        temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
+        idealization: Literal[C.SMEAR_ALL_LAYERS, C.BENDING, C.MEMBRANE, C.NO_IDEALIZATION] = NO_IDEALIZATION,
         nTemp: Optional[int] = None,
         thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,

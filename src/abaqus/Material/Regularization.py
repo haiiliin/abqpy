@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import LOGARITHMIC, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -32,7 +34,7 @@ class Regularization:
 
     @abaqus_method_doc
     def __init__(
-        self, rtol: float = 0, strainRateRegularization: SymbolicConstant = LOGARITHMIC
+        self, rtol: float = 0, strainRateRegularization: Literal[C.LINEAR, C.LOGARITHMIC] = LOGARITHMIC
     ):
         """This method creates a Regularization object.
 

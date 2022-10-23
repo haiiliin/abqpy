@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .DataTableArray import DataTableArray
 from .DiscreteField import DiscreteField
@@ -8,7 +9,8 @@ from .ExpressionField import ExpressionField
 from .MappedField import MappedField
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import (Boolean, CARTESIAN, NODES, OFF, POINT, RELATIVE,
-                                              SURFACE, SymbolicConstant, XYPLANE, XYZ)
+                                              SURFACE, XYPLANE, XYZ)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -18,12 +20,12 @@ class FieldModel(ModelBase):
         self,
         name: str,
         defaultValues: tuple,
-        fieldType: SymbolicConstant,
-        location: SymbolicConstant = NODES,
+        fieldType: Literal[C.PRESCRIBEDCONDITION_DOF, C.SCALAR, C.ORIENTATION],
+        location: Literal[C.NODES, C.ELEMENTS] = NODES,
         dataWidth: int = 1,
         data: Optional[DataTableArray] = None,
         description: str = "",
-        orientationType: SymbolicConstant = CARTESIAN,
+        orientationType: Literal[C.CYLINDRICAL, C.CARTESIAN, C.SPHERICAL] = CARTESIAN,
         partLevelOrientation: Boolean = OFF,
     ) -> DiscreteField:
         """This method creates a DiscreteField object.
@@ -124,13 +126,13 @@ class FieldModel(ModelBase):
     def MappedField(
         self,
         name: str,
-        regionType: SymbolicConstant = POINT,
+        regionType: Literal[C.MESH, C.POINT, C.ODB] = POINT,
         partLevelData: Boolean = OFF,
-        pointDataFormat: SymbolicConstant = XYZ,
-        gridPointPlane: SymbolicConstant = XYPLANE,
+        pointDataFormat: Literal[C.XYZ, C.GRID] = XYZ,
+        gridPointPlane: Literal[C.XYPLANE, C.YZPLANE, C.XZPLANE] = XYPLANE,
         defaultUnMappedValue: float = 0,
-        mappingAlgorithm: SymbolicConstant = SURFACE,
-        searchTolType: SymbolicConstant = RELATIVE,
+        mappingAlgorithm: Literal[C.SURFACE, C.VOLUMETRIC] = SURFACE,
+        searchTolType: Literal[C.RELATIVE, C.ABSOLUTE] = RELATIVE,
         boundarySearchTol: float = 0,
         neighborhoodSearchTol: float = 1000000,
         negativeNormalSearchTol: float = 0,

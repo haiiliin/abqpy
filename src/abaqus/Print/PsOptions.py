@@ -1,7 +1,9 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import (Boolean, DPI_150, LETTER, MEDIUM, ON, PORTRAIT,
                                               PS_IF_AVAILABLE, SymbolicConstant, VECTOR)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _OptionsBase
 
 
@@ -70,18 +72,18 @@ class PsOptions(_OptionsBase):
     def setValues(
         self,
         *,
-        paperSize: SymbolicConstant = LETTER,
+        paperSize: Literal[C.A5, C.A2, C.LETTER, C.LEDGER, C.A3, C.A1, C.A4, C.LEGAL, C.A0] = LETTER,
         topMargin: float = 0.5,
         bottomMargin: float = 0.5,
         leftMargin: float = 0.5,
         rightMargin: float = 0.5,
-        orientation: SymbolicConstant = PORTRAIT,
+        orientation: Literal[C.LANDSCAPE, C.PORTRAIT] = PORTRAIT,
         logo: Boolean = ON,
         date: Boolean = ON,
-        resolution: SymbolicConstant = DPI_150,
-        fontType: SymbolicConstant = PS_IF_AVAILABLE,
-        imageFormat: SymbolicConstant = VECTOR,
-        shadingQuality: SymbolicConstant = MEDIUM,
+        resolution: Literal[C.VECTOR, C.DPI_150, C.DPI_600, C.DPI_1200, C.DPI_300, C.DPI_450, C.DPI_75] = DPI_150,
+        fontType: Literal[C.PS_IF_AVAILABLE, C.AS_DISPLAYED, C.PS_ALWAYS] = PS_IF_AVAILABLE,
+        imageFormat: Literal[C.RASTER, C.VECTOR] = VECTOR,
+        shadingQuality: Literal[C.FINE, C.EXTRA, C.MEDIUM, C.COARSE] = MEDIUM,
     ):
         """This method modifies the PsOptions object.
 

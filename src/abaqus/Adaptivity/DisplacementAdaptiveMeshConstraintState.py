@@ -1,9 +1,11 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -100,14 +102,14 @@ class DisplacementAdaptiveMeshConstraintState(AdaptiveMeshConstraintState):
         ur1: Optional[float] = None,
         ur2: Optional[float] = None,
         ur3: Optional[float] = None,
-        u1State: Optional[SymbolicConstant] = None,
-        u2State: Optional[SymbolicConstant] = None,
-        u3State: Optional[SymbolicConstant] = None,
-        ur1State: Optional[SymbolicConstant] = None,
-        ur2State: Optional[SymbolicConstant] = None,
-        ur3State: Optional[SymbolicConstant] = None,
-        amplitudeState: Optional[SymbolicConstant] = None,
-        status: Optional[SymbolicConstant] = None,
+        u1State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
+        u2State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
+        u3State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
+        ur1State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
+        ur2State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
+        ur3State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
+        amplitudeState: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
+        status: Optional[Literal[C.NOT_YET_ACTIVE, C.PROPAGATED_FROM_BASE_STATE, C.DEACTIVATED_FROM_BASE_STATE, C.DEACTIVATED, C.MODIFIED_FROM_BASE_STATE, C.PROPAGATED, C.NO_LONGER_ACTIVE, C.CREATED, C.INSTANCE_NOT_APPLICABLE, C.BUILT_INTO_MODES, C.TYPE_NOT_APPLICABLE, C.MODIFIED]] = None,
         amplitude: str = "",
     ):
         """

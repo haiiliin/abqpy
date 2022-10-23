@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..Metal.ORNL.Ornl import Ornl
 from ..Potential import Potential
-from ....UtilityAndView.abaqusConstants import Boolean, OFF, STRAIN, SymbolicConstant, TOTAL
+from ....UtilityAndView.abaqusConstants import Boolean, OFF, STRAIN, TOTAL
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -54,10 +56,10 @@ class Creep:
     def __init__(
         self,
         table: tuple,
-        law: SymbolicConstant = STRAIN,
+        law: Literal[C.HYPERBOLIC_SINE, C.TIME, C.POWER_LAW, C.USER, C.STRAIN] = STRAIN,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        time: SymbolicConstant = TOTAL,
+        time: Literal[C.TOTAL, C.CREEP] = TOTAL,
     ):
         """This method creates a Creep object.
 

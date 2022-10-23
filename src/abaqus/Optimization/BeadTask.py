@@ -1,6 +1,7 @@
 from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .DesignResponse import DesignResponse
 from .GeometricRestriction import GeometricRestriction
@@ -10,6 +11,7 @@ from .OptimizationTask import OptimizationTask
 from ..UtilityAndView.abaqusConstants import (Boolean, CONSERVATIVE, DEFAULT, EVERY_CYCLE,
                                               GENERAL_OPTIMIZATION, MODEL, OFF, SymbolicConstant,
                                               VALUE)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -125,25 +127,25 @@ class BeadTask(OptimizationTask):
     def __init__(
         self,
         name: str,
-        algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
+        algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = GENERAL_OPTIMIZATION,
         areBCRegionsFrozen: Boolean = OFF,
         beadIter: str = 1,
         beadMaxMembraneStress: str = 0,
         beadMinStress: str = 0,
         beadPerturbation: str = 0,
-        beadWidth: SymbolicConstant = DEFAULT,
+        beadWidth: Literal[C.DEFAULT] = DEFAULT,
         curveSmooth: str = 5,
         filterRadius: str = 4,
-        filterRadiusBy: SymbolicConstant = VALUE,
+        filterRadiusBy: Literal[C.VALUE, C.REFERENCE] = VALUE,
         flipNormalDir: Boolean = OFF,
-        frozenBoundaryConditionRegion: SymbolicConstant = MODEL,
+        frozenBoundaryConditionRegion: Literal[C.MODEL] = MODEL,
         isSensCalcOnlyOnDesignNodes: Boolean = OFF,
-        modeTrackingRegion: SymbolicConstant = MODEL,
+        modeTrackingRegion: Literal[C.MODEL] = MODEL,
         nodalMoveLimit: float = 0,
-        nodeSmooth: SymbolicConstant = DEFAULT,
-        nodeUpdateStrategy: SymbolicConstant = CONSERVATIVE,
+        nodeSmooth: Literal[C.DEFAULT] = DEFAULT,
+        nodeUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = CONSERVATIVE,
         numTrackedModes: int = 5,
-        updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
+        updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
     ):
         """This method creates a BeadTask object.
 
@@ -225,25 +227,25 @@ class BeadTask(OptimizationTask):
     @abaqus_method_doc
     def setValues(
         self,
-        algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
+        algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = GENERAL_OPTIMIZATION,
         areBCRegionsFrozen: Boolean = OFF,
         beadIter: str = 1,
         beadMaxMembraneStress: str = 0,
         beadMinStress: str = 0,
         beadPerturbation: str = 0,
-        beadWidth: SymbolicConstant = DEFAULT,
+        beadWidth: Literal[C.DEFAULT] = DEFAULT,
         curveSmooth: str = 5,
         filterRadius: str = 4,
-        filterRadiusBy: SymbolicConstant = VALUE,
+        filterRadiusBy: Literal[C.VALUE, C.REFERENCE] = VALUE,
         flipNormalDir: Boolean = OFF,
-        frozenBoundaryConditionRegion: SymbolicConstant = MODEL,
+        frozenBoundaryConditionRegion: Literal[C.MODEL] = MODEL,
         isSensCalcOnlyOnDesignNodes: Boolean = OFF,
-        modeTrackingRegion: SymbolicConstant = MODEL,
+        modeTrackingRegion: Literal[C.MODEL] = MODEL,
         nodalMoveLimit: float = 0,
-        nodeSmooth: SymbolicConstant = DEFAULT,
-        nodeUpdateStrategy: SymbolicConstant = CONSERVATIVE,
+        nodeSmooth: Literal[C.DEFAULT] = DEFAULT,
+        nodeUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = CONSERVATIVE,
         numTrackedModes: int = 5,
-        updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
+        updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
     ):
         """This method modifies the BeadTask object.
 
