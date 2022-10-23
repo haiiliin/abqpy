@@ -31,3 +31,9 @@ my time, those things are left behind, if anyone is willing to make any
 contributions, please feel free to create your pull requests.
 
 Please refer [CONTRIBUTING](https://github.com/haiiliin/abqpy/blob/main/.github/CONTRIBUTING.md) for contribution guidelines.
+
+## Screenshots
+
+![screenshot](https://raw.githubusercontent.com/haiiliin/abqpy/main/docs/source/images/model-code.gif)
+
+![screenshot](https://raw.githubusercontent.com/haiiliin/abqpy/main/docs/source/images/output-code.gif)
