@@ -32,11 +32,11 @@ author = 'WANG Hailin'
 # The full version, including alpha/beta/rc tags
 try:
     import abqpy
-    release = version = abqpy.__semver__
+    release = version = abqpy.__semver__[:4]
 except (ImportError, AttributeError):
     import warnings
     warnings.warn('abqpy is not installed, using 2023.0.0')
-    release = version = '2023.0.0'
+    release = version = '2023.0.0'[:4]
 sys.path.insert(0, os.path.abspath('../../src'))
 
 # For multiple languages
