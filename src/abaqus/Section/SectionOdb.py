@@ -23,9 +23,23 @@ from .SurfaceSection import SurfaceSection
 from .TrussSection import TrussSection
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
 from ..Odb.OdbBase import OdbBase
-from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT, DEFAULT, DOF_MODE, FULLY, GRADIENT,
-                                              LINEAR, NONE, NO_IDEALIZATION, OFF, ON, SIMPSON,
-                                              SOLVER_DEFAULT, UNIFORM, UNSPECIFIED)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    CONSTANT,
+    DEFAULT,
+    DOF_MODE,
+    FULLY,
+    GRADIENT,
+    LINEAR,
+    NONE,
+    NO_IDEALIZATION,
+    OFF,
+    ON,
+    SIMPSON,
+    SOLVER_DEFAULT,
+    UNIFORM,
+    UNSPECIFIED,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -37,7 +51,7 @@ class SectionOdb(OdbBase):
     ) -> AcousticInfiniteSection:
         """This method creates an AcousticInfiniteSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AcousticInfiniteSection
@@ -67,18 +81,14 @@ class SectionOdb(OdbBase):
         InvalidNameError
         RangeError
         """
-        self.sections[name] = section = AcousticInfiniteSection(
-            name, material, thickness, order
-        )
+        self.sections[name] = section = AcousticInfiniteSection(name, material, thickness, order)
         return section
 
     @abaqus_method_doc
-    def AcousticInterfaceSection(
-        self, name: str, thickness: float = 1
-    ) -> AcousticInterfaceSection:
+    def AcousticInterfaceSection(self, name: str, thickness: float = 1) -> AcousticInterfaceSection:
         """This method creates an AcousticInterfaceSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AcousticInterfaceSection
@@ -139,7 +149,7 @@ class SectionOdb(OdbBase):
     ) -> BeamSection:
         """This method creates a BeamSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BeamSection
@@ -284,7 +294,7 @@ class SectionOdb(OdbBase):
     ) -> CohesiveSection:
         """This method creates a CohesiveSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CohesiveSection
@@ -338,7 +348,9 @@ class SectionOdb(OdbBase):
         name: str,
         layup: SectionLayerArray,
         symmetric: Boolean = OFF,
-        thicknessType: Literal[C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD] = UNIFORM,
+        thicknessType: Literal[
+            C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD
+        ] = UNIFORM,
         preIntegrate: Boolean = OFF,
         poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
@@ -355,7 +367,7 @@ class SectionOdb(OdbBase):
     ) -> CompositeShellSection:
         """This method creates a CompositeShellSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[i].CompositeShellSection
@@ -463,7 +475,7 @@ class SectionOdb(OdbBase):
     ) -> CompositeSolidSection:
         """This method creates a CompositeSolidSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CompositeSolidSection
@@ -487,9 +499,7 @@ class SectionOdb(OdbBase):
         CompositeSolidSection
             A :py:class:`~abaqus.Section.CompositeSolidSection.CompositeSolidSection` object.
         """
-        self.sections[name] = section = CompositeSolidSection(
-            name, layup, symmetric, layupName
-        )
+        self.sections[name] = section = CompositeSolidSection(name, layup, symmetric, layupName)
         return section
 
     @abaqus_method_doc
@@ -517,7 +527,7 @@ class SectionOdb(OdbBase):
     ) -> ConnectorSection:
         """This method creates a ConnectorSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConnectorSection
@@ -640,7 +650,7 @@ class SectionOdb(OdbBase):
     def EulerianSection(self, name: str, data: str) -> EulerianSection:
         """This method creates a EulerianSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EulerianSection
@@ -675,7 +685,7 @@ class SectionOdb(OdbBase):
     ) -> GasketSection:
         """This method creates a GasketSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].GasketSection
@@ -740,7 +750,7 @@ class SectionOdb(OdbBase):
     ) -> GeneralStiffnessSection:
         """This method creates a GeneralStiffnessSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].GeneralStiffnessSection
@@ -815,7 +825,9 @@ class SectionOdb(OdbBase):
         material: str,
         thickness: float = 0,
         numIntPts: int = 5,
-        thicknessType: Literal[C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD] = UNIFORM,
+        thicknessType: Literal[
+            C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD
+        ] = UNIFORM,
         preIntegrate: Boolean = OFF,
         poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
@@ -831,13 +843,13 @@ class SectionOdb(OdbBase):
     ) -> HomogeneousShellSection:
         """This method creates a HomogeneousShellSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[i].HomogeneousShellSection
                 mdb.models[name].HomogeneousShellSection
                 session.odbs[name].HomogeneousShellSection
-            
+
         Parameters
         ----------
         name
@@ -932,12 +944,10 @@ class SectionOdb(OdbBase):
         return section
 
     @abaqus_method_doc
-    def HomogeneousSolidSection(
-        self, name: str, material: str, thickness: float = 1
-    ) -> HomogeneousSolidSection:
+    def HomogeneousSolidSection(self, name: str, material: str, thickness: float = 1) -> HomogeneousSolidSection:
         """This method creates a HomogeneousSolidSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].HomogeneousSolidSection
@@ -966,9 +976,7 @@ class SectionOdb(OdbBase):
         InvalidNameError
         RangeError
         """
-        self.sections[name] = section = HomogeneousSolidSection(
-            name, material, thickness
-        )
+        self.sections[name] = section = HomogeneousSolidSection(name, material, thickness)
         return section
 
     @abaqus_method_doc
@@ -984,7 +992,7 @@ class SectionOdb(OdbBase):
     ) -> MembraneSection:
         """This method creates a MembraneSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].MembraneSection
@@ -1049,7 +1057,7 @@ class SectionOdb(OdbBase):
     ) -> MPCSection:
         """This method creates a MPCSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].MPCSection
@@ -1094,7 +1102,7 @@ class SectionOdb(OdbBase):
     ) -> PEGSection:
         """This method creates a PEGSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PEGSection
@@ -1126,18 +1134,14 @@ class SectionOdb(OdbBase):
         InvalidNameError
         RangeError
         """
-        self.sections[name] = section = PEGSection(
-            name, material, thickness, wedgeAngle1, wedgeAngle2
-        )
+        self.sections[name] = section = PEGSection(name, material, thickness, wedgeAngle1, wedgeAngle2)
         return section
 
     @abaqus_method_doc
-    def SurfaceSection(
-        self, name: str, useDensity: Boolean = OFF, density: float = 0
-    ) -> SurfaceSection:
+    def SurfaceSection(self, name: str, useDensity: Boolean = OFF, density: float = 0) -> SurfaceSection:
         """This method creates a SurfaceSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceSection
@@ -1170,7 +1174,7 @@ class SectionOdb(OdbBase):
     def TrussSection(self, name: str, material: str, area: float = 1) -> TrussSection:
         """This method creates a TrussSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TrussSection

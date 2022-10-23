@@ -10,7 +10,7 @@ class Sorption:
     r"""The Sorption object defines absorption and exsorption behaviors of a partially saturated
     porous medium in the analysis of coupled wetting liquid flow and porous medium stress.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -49,7 +49,7 @@ class Sorption:
     ):
         r"""This method creates a Sorption object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Sorption
@@ -68,7 +68,7 @@ class Sorption:
             A SymbolicConstant specifying exsorption behavior. Possible values are LOG and TABULAR.
             The default value is TABULAR.
         scanning
-            A Float specifying the slope of the scanning line, :math:`\left.\left(d u_{w} / d s\right)\right|_{s}`. 
+            A Float specifying the slope of the scanning line, :math:`\left.\left(d u_{w} / d s\right)\right|_{s}`.
             This slope must be positive and larger than the slope of the absorption or exsorption behaviors. The
             default value is 0.0.
         exsorptionTable

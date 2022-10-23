@@ -30,7 +30,7 @@ class MeshPart(PartBase):
     """The following commands operate on Part objects. For more information about the Part
     object, see Part object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import mesh
@@ -351,7 +351,7 @@ class MeshPart(PartBase):
         geometryConnectingSides: str = "",
         elemFacesConnectingSides: Sequence[MeshFace] = (),
         elemConnectingSides: tuple = (),
-        targetSide: Optional[Face] = None, 
+        targetSide: Optional[Face] = None,
         numberOfLayers: Optional[int] = None,
         extendElementSets: Boolean = False,
     ):
@@ -536,8 +536,8 @@ class MeshPart(PartBase):
             C.TRI,
             C.HEX,
             C.WEDGE,
-            C.TET ,
-        ]
+            C.TET,
+        ],
     ) -> ElemType:
         """This method returns the ElemType object of a given element shape assigned to a region of
         a part.
@@ -588,7 +588,33 @@ class MeshPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def getMeshControl(self, region: str, attribute: Literal[C.HEX_DOMINATED, C.ELEM_SHAPE, C.FREE, C.QUAD, C.TRI, C.LINE, C.QUAD_DOMINATED, C.HEX, C.SWEEP, C.UNMESHABLE, C.NON_DEFAULT, C.TET, C.ALGORITHM, C.DEFAULT, C.NONE, C.MEDIAL_AXIS, C.ADVANCING_FRONT, C.WEDGE, C.MIN_TRANSITION, C.STRUCTURED, C.TECHNIQUE]) -> Union[Boolean, SymbolicConstant]:
+    def getMeshControl(
+        self,
+        region: str,
+        attribute: Literal[
+            C.HEX_DOMINATED,
+            C.ELEM_SHAPE,
+            C.FREE,
+            C.QUAD,
+            C.TRI,
+            C.LINE,
+            C.QUAD_DOMINATED,
+            C.HEX,
+            C.SWEEP,
+            C.UNMESHABLE,
+            C.NON_DEFAULT,
+            C.TET,
+            C.ALGORITHM,
+            C.DEFAULT,
+            C.NONE,
+            C.MEDIAL_AXIS,
+            C.ADVANCING_FRONT,
+            C.WEDGE,
+            C.MIN_TRANSITION,
+            C.STRUCTURED,
+            C.TECHNIQUE,
+        ],
+    ) -> Union[Boolean, SymbolicConstant]:
         """This method returns a mesh control parameter for the specified region of a part.
 
         Parameters
@@ -604,7 +630,7 @@ class MeshPart(PartBase):
             - MIN_TRANSITION
 
             The return value is dependent on the **attribute** argument.
-            
+
             - If **attribute** = ELEM_SHAPE, the return value is a SymbolicConstant specifying the
               element shape used during meshing. Possible values are: LINE, QUAD, TRI,  QUAD_DOMINATED, HEX, TET, WEDGE, HEX_DOMINATED
 
@@ -653,7 +679,7 @@ class MeshPart(PartBase):
             C.DEFAULT_SIZE,
             C.DEVIATION_FACTOR,
             C.MIN_SIZE_FACTOR,
-        ]
+        ],
     ) -> float:
         """This method returns a part seed parameter for the part.
 
@@ -662,14 +688,14 @@ class MeshPart(PartBase):
         attribute
             A SymbolicConstant specifying the type of part seed attribute to return. Possible values
             are:
-            
+
             - SIZE
             - DEFAULT_SIZE
             - DEVIATION_FACTOR
             - MIN_SIZE_FACTOR
-            
+
             The return value depends on the value of the **attribute** argument.
-            
+
             - If **attribute** = SIZE, the return value is a Float specifying the assigned global
               element size. If part seeds are not defined, the return value is zero.
             - If **attribute** = DEFAULT_SIZE, the return value is a Float specifying a suggested
@@ -688,7 +714,7 @@ class MeshPart(PartBase):
 
         Raises
         ------
-        Error: Part does not contain native geometry            
+        Error: Part does not contain native geometry
             An exception occurs if the part does not contain native geometry.
         """
         ...
@@ -810,7 +836,10 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def seedEdgeByNumber(
-        self, edges: Sequence[Edge], number: int, constraint: Literal[C.FREE, C.FINER, C.FIXED] = ...,
+        self,
+        edges: Sequence[Edge],
+        number: int,
+        constraint: Literal[C.FREE, C.FINER, C.FIXED] = ...,
     ):
         """This method seeds the given edges uniformly based on the number of elements along the
         edges.
@@ -894,7 +923,7 @@ class MeshPart(PartBase):
             A SymbolicConstant specifying how closely the seeds must be matched by the mesh. The
             default value is FREE. If unspecified, the existing constraint will remain unchanged.
             Possible values are:
-            
+
             - FREE: The resulting mesh can be finer or coarser than the specified seeds.
             - FINER: The resulting mesh can be finer than the specified seeds.
         """
@@ -938,7 +967,7 @@ class MeshPart(PartBase):
 
     @abaqus_method_doc
     def setElementType(
-        self, 
+        self,
         regions: Union[
             Sequence[
                 Union[
@@ -947,9 +976,9 @@ class MeshPart(PartBase):
                     Sequence[Cell],
                 ]
             ],
-            Set
-        ], 
-        elemTypes: Sequence[ElemType]
+            Set,
+        ],
+        elemTypes: Sequence[ElemType],
     ):
         """This method assigns element types to the specified regions.
 
@@ -1040,7 +1069,7 @@ class MeshPart(PartBase):
             regions. Possible values are MEDIAL_AXIS, ADVANCING_FRONT, and NON_DEFAULT. If
             unspecified, the existing value will remain unchanged. This option is applicable only to
             the following:
-            
+
             - Free quadrilateral or quadrilateral-dominated meshing. In this case the possible
               values are MEDIAL_AXIS and ADVANCING_FRONT.
             - Sweep hexahedral or hexahedral-dominated meshing. In this case the possible values are
@@ -1052,7 +1081,7 @@ class MeshPart(PartBase):
             A Boolean specifying whether minimum transition is to be applied. The default value is
             ON. If unspecified, the existing value will remain unchanged. This option is applicable
             only in the following cases:
-            
+
             - Free quadrilateral meshing or hexahedral sweep meshing with **algorithm** = MEDIAL_AXIS.
             - Structured quadrilateral meshing.
         sizeGrowth
@@ -1063,7 +1092,7 @@ class MeshPart(PartBase):
         allowMapped
             A Boolean specifying whether mapped meshing can be used to replace the selected mesh
             technique. The **allowMapped** argument is applicable only in the following cases:
-            
+
             - Free triangular meshing.
             - Free quadrilateral or quadrilateral-dominated meshing with
               **algorithm** = ADVANCING_FRONT.
@@ -1095,7 +1124,19 @@ class MeshPart(PartBase):
     @abaqus_method_doc
     def verifyMeshQuality(
         self,
-        criterion: Literal[C.ANALYSIS_CHECKS, C.ANGULAR_DEVIATION, C.GEOM_DEVIATION_FACTOR, C.MAX_FREQUENCY, C.LONGEST_EDGE, C.LARGE_ANGLE, C.SHORTEST_EDGE, C.STABLE_TIME_INCREMENT, C.SHAPE_FACTOR, C.ASPECT_RATIO, C.SMALL_ANGLE],
+        criterion: Literal[
+            C.ANALYSIS_CHECKS,
+            C.ANGULAR_DEVIATION,
+            C.GEOM_DEVIATION_FACTOR,
+            C.MAX_FREQUENCY,
+            C.LONGEST_EDGE,
+            C.LARGE_ANGLE,
+            C.SHORTEST_EDGE,
+            C.STABLE_TIME_INCREMENT,
+            C.SHAPE_FACTOR,
+            C.ASPECT_RATIO,
+            C.SMALL_ANGLE,
+        ],
         threshold: Optional[float] = None,
         elemShape: Optional[Literal[C.LINE, C.WEDGE, C.TET, C.HEX, C.QUAD, C.TRI]] = None,
         regions: tuple = (),
@@ -1107,7 +1148,7 @@ class MeshPart(PartBase):
         criterion
             A SymbolicConstant specifying the criterion used for the quality check. Possible values
             are:
-            
+
             - ANALYSIS_CHECKS
               When this criterion is specified Abaqus/CAE will invoke the element quality checks
               included with the input file processor for Abaqus/Standard and Abaqus/Explicit.
@@ -1168,7 +1209,7 @@ class MeshPart(PartBase):
         Dict[str, int | float, MeshElement]
             A Dictionary object containing values for some number of the following keys:
             failedElements, warningElements, naElements (sequences of MeshElement objects);
-            numElements (Int); average, worst (Float); worstElement 
+            numElements (Int); average, worst (Float); worstElement
             (:py:class:`~abaqus.Mesh.MeshElement.MeshElement` object) .
         """
         ...
@@ -1182,7 +1223,7 @@ class MeshPart(PartBase):
     ):
         """This method creates a node on an orphan mesh part.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].Node

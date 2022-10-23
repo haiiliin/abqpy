@@ -13,7 +13,7 @@ class ButterworthFilter(Filter):
     """The ButterworthFilter object defines a Butterworth type filter.
     The ButterworthFilter object is derived from the Filter object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import filter
@@ -69,7 +69,7 @@ class ButterworthFilter(Filter):
     ):
         """This method creates a ButterworthFilter object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ButterworthFilter

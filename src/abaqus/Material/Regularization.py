@@ -10,7 +10,7 @@ class Regularization:
     """The Regularization object defines the tolerance to be used for regularizing material
     data.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -33,12 +33,10 @@ class Regularization:
     strainRateRegularization: SymbolicConstant = LOGARITHMIC
 
     @abaqus_method_doc
-    def __init__(
-        self, rtol: float = 0, strainRateRegularization: Literal[C.LINEAR, C.LOGARITHMIC] = LOGARITHMIC
-    ):
+    def __init__(self, rtol: float = 0, strainRateRegularization: Literal[C.LINEAR, C.LOGARITHMIC] = LOGARITHMIC):
         """This method creates a Regularization object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Regularization

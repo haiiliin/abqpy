@@ -8,7 +8,7 @@ class AcousticInfiniteSection(Section):
     """The AcousticInfiniteSection object defines the properties of an acoustic section.
     The AcousticInfiniteSection object is derived from the Section object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -40,7 +40,7 @@ class AcousticInfiniteSection(Section):
     def __init__(self, name: str, material: str, thickness: float = 1, order: int = 10):
         """This method creates an AcousticInfiniteSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AcousticInfiniteSection

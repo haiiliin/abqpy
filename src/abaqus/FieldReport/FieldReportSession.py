@@ -21,16 +21,41 @@ class FieldReportSession(SessionBase):
         odb: Odb,
         step: int,
         frame: int,
-        outputPosition: Literal[C.ELEMENT_NODAL, C.ELEMENT_FACE, C.WHOLE_ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.WHOLE_MODEL, C.GENERAL_PARTICLE, C.WHOLE_PART_INSTANCE, C.WHOLE_REGION],
+        outputPosition: Literal[
+            C.ELEMENT_NODAL,
+            C.ELEMENT_FACE,
+            C.WHOLE_ELEMENT,
+            C.NODAL,
+            C.INTEGRATION_POINT,
+            C.ELEMENT_CENTROID,
+            C.WHOLE_MODEL,
+            C.GENERAL_PARTICLE,
+            C.WHOLE_PART_INSTANCE,
+            C.WHOLE_REGION,
+        ],
         displayGroup: DisplayGroup,
-        variable: Literal[C.ELEMENT_FACE, C.ELEMENT_NODAL, C.SPOS, C.WHOLE_ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.WHOLE_MODEL, C.WHOLE_REGION, C.GENERAL_PARTICLE, C.WHOLE_PART_INSTANCE],
-        numericForm: Optional[Literal[C.COMPLEX_PHASE, C.COMPLEX_MAG_AT_ANGLE, C.REAL, C.IMAGINARY, C.COMPLEX_MAGNITUDE]] = None,
+        variable: Literal[
+            C.ELEMENT_FACE,
+            C.ELEMENT_NODAL,
+            C.SPOS,
+            C.WHOLE_ELEMENT,
+            C.NODAL,
+            C.INTEGRATION_POINT,
+            C.ELEMENT_CENTROID,
+            C.WHOLE_MODEL,
+            C.WHOLE_REGION,
+            C.GENERAL_PARTICLE,
+            C.WHOLE_PART_INSTANCE,
+        ],
+        numericForm: Optional[
+            Literal[C.COMPLEX_PHASE, C.COMPLEX_MAG_AT_ANGLE, C.REAL, C.IMAGINARY, C.COMPLEX_MAGNITUDE]
+        ] = None,
         complexAngle: Optional[float] = None,
         stepFrame: Literal[C.ALL, C.SPECIFY] = SPECIFY,
     ):
         """This method writes a FieldOutput object to a user-defined ASCII file.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.writeFieldReport
@@ -62,7 +87,7 @@ class FieldReportSession(SessionBase):
             A sequence of variable description sequences specifying one or more field output
             variables for which to obtain data. Each variable description sequence contains the
             following elements:
-            
+
             - **element0**: A String specifying the name of the variable.
             - **element1**: A SymbolicConstant specifying the output position at which to report data.
               Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE,
@@ -78,9 +103,9 @@ class FieldReportSession(SessionBase):
               specifying a single section point at which to report data. The key specifies a region in
               the model; the corresponding value specifies a section point within that region. For
               example::
-              
+
                   {'shell < MAT > < 7 section points >': 'SPOS (fraction = 1.0)'}
-              
+
               If this element is omitted, data are written for all section points (if applicable).
               If this element is omitted, data are written for all section points (if applicable).
         numericForm
@@ -109,7 +134,7 @@ class FieldReportSession(SessionBase):
     ):
         """This method writes a FreeBody object to a user-defined ASCII file.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.writeFreeBodyReport

@@ -13,7 +13,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 class XYPlotBase:
     """The XYPlot object is used to display Chart objects.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -41,7 +41,7 @@ class XYPlotBase:
     def __init__(self, name: str):
         """This method creates an empty XYPlot object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.XYPlot

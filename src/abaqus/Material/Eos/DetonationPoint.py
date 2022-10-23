@@ -1,12 +1,13 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class DetonationPoint:
     """A :py:class:`~abaqus.Material.Eos.DetonationPoint.DetonationPoint` object specifies a suboption of the Eos object. The DetonationPoint
     object defines either isotropic linear elastic shear or linear viscous shear behavior
     for a hydrodynamic material.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -15,7 +16,7 @@ class DetonationPoint:
             session.odbs[name].materials[name].eos.detonationPoint
 
         The table data for this object are:
-        
+
         - X value for coordinate of detonation point.
         - Y value for coordinate of detonation point.
         - Z value for coordinate of detonation point.
@@ -30,7 +31,7 @@ class DetonationPoint:
     def __init__(self, table: tuple):
         """This method creates a DetonationPoint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].eos.DetonationPoint

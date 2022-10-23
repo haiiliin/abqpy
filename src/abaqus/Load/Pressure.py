@@ -14,7 +14,7 @@ class Pressure(Load):
     """The Pressure object defines a pressure load.
     The Pressure object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -48,12 +48,14 @@ class Pressure(Load):
         hReference: float = 0.0,
         field: str = "",
         refPoint: str = "",
-        distributionType: Literal[C.FIELD, C.DISCRETE_FIELD, C.STAGNATION, C.VISCOUS, C.TOTAL_FORCE, C.HYDROSTATIC, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
+        distributionType: Literal[
+            C.FIELD, C.DISCRETE_FIELD, C.STAGNATION, C.VISCOUS, C.TOTAL_FORCE, C.HYDROSTATIC, C.UNIFORM, C.USER_DEFINED
+        ] = UNIFORM,
         amplitude: str = UNSET,
     ):
         """This method creates a Pressure object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Pressure
@@ -103,7 +105,9 @@ class Pressure(Load):
         self,
         field: str = "",
         refPoint: str = "",
-        distributionType: Literal[C.FIELD, C.DISCRETE_FIELD, C.STAGNATION, C.VISCOUS, C.TOTAL_FORCE, C.HYDROSTATIC, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
+        distributionType: Literal[
+            C.FIELD, C.DISCRETE_FIELD, C.STAGNATION, C.VISCOUS, C.TOTAL_FORCE, C.HYDROSTATIC, C.UNIFORM, C.USER_DEFINED
+        ] = UNIFORM,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing Pressure object in the step where it is

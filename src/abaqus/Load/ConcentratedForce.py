@@ -14,7 +14,7 @@ class ConcentratedForce(Load):
     """The ConcentratedForce object defines a concentrated force.
     The ConcentratedForce object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -64,7 +64,7 @@ class ConcentratedForce(Load):
     ):
         """This method creates a ConcentratedForce object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConcentratedForce

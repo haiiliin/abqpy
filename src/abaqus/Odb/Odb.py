@@ -16,7 +16,7 @@ from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayable):
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -33,7 +33,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
         """This method creates an OdbPart object. Nodes and elements are added to this object at a
         later stage.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].Part
@@ -70,7 +70,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
     ) -> OdbStep:
         """This method creates an OdbStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].Step
@@ -98,7 +98,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
         procedure
             A String specifying the step procedure. The default value is an empty string. The
             following is the list of valid procedures:
-            
+
             - `*ANNEAL`
             - `*BUCKLE`
             - `*COMPLEX FREQUENCY`
@@ -173,7 +173,7 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
     def SectionCategory(self, name: str, description: str) -> SectionCategory:
         """This method creates a SectionCategory object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].SectionCategory
@@ -190,7 +190,5 @@ class Odb(AmplitudeOdb, FilterOdb, MaterialOdb, BeamSectionProfileOdb, Displayab
         SectionCategory
             A :py:class:`~abaqus.Odb.SectionCategory.SectionCategory` object.
         """
-        self.sectionCategories[name] = sectionCategory = SectionCategory(
-            name, description
-        )
+        self.sectionCategories[name] = sectionCategory = SectionCategory(name, description)
         return sectionCategory

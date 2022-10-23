@@ -10,7 +10,7 @@ class OptimizationConstraint:
     """The OptimizationConstraint object constrains an optimization from making changes to the
     topology of the model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -38,11 +38,18 @@ class OptimizationConstraint:
         name: str,
         designResponse: str,
         restrictionValue: float,
-        restrictionMethod: Literal[C.ABSOLUTE_LESS_THAN_EQUAL, C.RELATIVE_GREATER_THAN_EQUAL, C.ABSOLUTE_GREATER_THAN_EQUAL, C.RELATIVE_EQUAL, C.ABSOLUTE_EQUAL, C.RELATIVE_LESS_THAN_EQUAL] = ABSOLUTE_EQUAL,
+        restrictionMethod: Literal[
+            C.ABSOLUTE_LESS_THAN_EQUAL,
+            C.RELATIVE_GREATER_THAN_EQUAL,
+            C.ABSOLUTE_GREATER_THAN_EQUAL,
+            C.RELATIVE_EQUAL,
+            C.ABSOLUTE_EQUAL,
+            C.RELATIVE_LESS_THAN_EQUAL,
+        ] = ABSOLUTE_EQUAL,
     ):
         """This method creates an OptimizationConstraint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].OptimizationConstraint
@@ -74,7 +81,17 @@ class OptimizationConstraint:
         ...
 
     @abaqus_method_doc
-    def setValues(self, restrictionMethod: Literal[C.ABSOLUTE_LESS_THAN_EQUAL, C.RELATIVE_GREATER_THAN_EQUAL, C.ABSOLUTE_GREATER_THAN_EQUAL, C.RELATIVE_EQUAL, C.ABSOLUTE_EQUAL, C.RELATIVE_LESS_THAN_EQUAL] = ABSOLUTE_EQUAL):
+    def setValues(
+        self,
+        restrictionMethod: Literal[
+            C.ABSOLUTE_LESS_THAN_EQUAL,
+            C.RELATIVE_GREATER_THAN_EQUAL,
+            C.ABSOLUTE_GREATER_THAN_EQUAL,
+            C.RELATIVE_EQUAL,
+            C.ABSOLUTE_EQUAL,
+            C.RELATIVE_LESS_THAN_EQUAL,
+        ] = ABSOLUTE_EQUAL,
+    ):
         """This method modifies the OptimizationConstraint object.
 
         Parameters

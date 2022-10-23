@@ -4,8 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from ..PlotOptions.DGOrientationOptions import DGOrientationOptions
-from ..UtilityAndView.abaqusConstants import (Boolean, MODEL_SIZE, NONE, ON, PLY, SymbolicConstant,
-                                              VERY_THIN)
+from ..UtilityAndView.abaqusConstants import Boolean, MODEL_SIZE, NONE, ON, PLY, SymbolicConstant, VERY_THIN
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -25,7 +24,7 @@ class OrientationOptions(DGOrientationOptions):
     - The material orientation options associated with a particular viewport.
     The OrientationOptions object is derived from the DGOrientationOptions object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

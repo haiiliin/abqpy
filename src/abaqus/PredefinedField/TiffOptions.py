@@ -11,7 +11,7 @@ class TiffOptions:
     format. The TiffOptions object has no constructor. Abaqus creates the **tiffOptions**
     member when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.tiffOptions

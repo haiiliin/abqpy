@@ -8,7 +8,7 @@ class MeshStats:
     """The MeshStats object is a query object for holding mesh statistics and is returned by
     the getMeshStats command. The object does not have any methods.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import mesh

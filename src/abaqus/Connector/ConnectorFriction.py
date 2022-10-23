@@ -8,8 +8,16 @@ from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
 from .DerivedComponent import DerivedComponent
 from .TangentialBehavior import TangentialBehavior
-from ..UtilityAndView.abaqusConstants import (Boolean, COMPONENT_NUMBER, NO_INDEPENDENT_COMPONENTS,
-                                              OFF, PREDEFINED, SPECIFY, SUM, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    COMPONENT_NUMBER,
+    NO_INDEPENDENT_COMPONENTS,
+    OFF,
+    PREDEFINED,
+    SPECIFY,
+    SUM,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -19,7 +27,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
     one or more components of a connector's relative motion.
     The ConnectorFriction object is derived from the ConnectorBehaviorOption object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -171,7 +179,7 @@ class ConnectorFriction(ConnectorBehaviorOption):
         Depending upon the arguments provided, the friction behavior can be Coulomb-like or
         hysteretic in nature.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 import connectorBehavior

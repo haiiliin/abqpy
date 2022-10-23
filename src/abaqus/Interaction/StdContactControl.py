@@ -4,8 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from .ContactControl import ContactControl
-from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTE, DEFAULT, NONE, OFF, RELATIVE,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import Boolean, COMPUTE, DEFAULT, NONE, OFF, RELATIVE, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -15,7 +14,7 @@ class StdContactControl(ContactControl):
     solution controls for problems involving contact between bodies.
     The StdContactControl object is derived from the ContactControl object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -59,10 +58,10 @@ class StdContactControl(ContactControl):
 
     #: A SymbolicConstant specifying when the application of friction occurs. Possible values
     #: are:
-    #: 
+    #:
     #: - IMMEDIATE, specifying the friction is included in the increment when contact occurs.
     #: - DELAYED, specifying the application of friction is delayed until the increment after
-    #: 
+    #:
     #: contact occurs.
     frictionOnset: Optional[SymbolicConstant] = None
 
@@ -151,7 +150,7 @@ class StdContactControl(ContactControl):
     ):
         """This method creates an StdContactControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].StdContactControl
@@ -303,7 +302,7 @@ class StdContactControl(ContactControl):
         frictionOnset
             A SymbolicConstant specifying when the application of friction occurs. Possible values
             are:
-            
+
             - IMMEDIATE, specifying the friction is included in the increment when contact occurs.
             - DELAYED, specifying the application of friction is delayed until the increment after
               contact occurs.

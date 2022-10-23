@@ -17,8 +17,17 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import (AUTOMATIC, Boolean, DEFAULT, LINEAR, NONE, OFF,
-                                              PROPAGATED, SOLVER_DEFAULT, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    AUTOMATIC,
+    Boolean,
+    DEFAULT,
+    LINEAR,
+    NONE,
+    OFF,
+    PROPAGATED,
+    SOLVER_DEFAULT,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -30,7 +39,7 @@ class DirectCyclicStep(AnalysisStep):
     at the interfaces in laminated composites in a low-cycle fatigue analysis.
     The DirectCyclicStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -153,7 +162,7 @@ class DirectCyclicStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -259,7 +268,7 @@ class DirectCyclicStep(AnalysisStep):
     ):
         """This method creates a DirectCyclicStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].DirectCyclicStep

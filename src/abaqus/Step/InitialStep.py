@@ -26,7 +26,7 @@ class InitialStep(AnalysisStep):
     boundary conditions and interactions to be defined in the model.
     The InitialStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -47,7 +47,7 @@ class InitialStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY

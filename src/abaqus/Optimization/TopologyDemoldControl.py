@@ -15,7 +15,7 @@ class TopologyDemoldControl(GeometricRestriction):
     restriction.
     The TopologyDemoldControl object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -70,7 +70,7 @@ class TopologyDemoldControl(GeometricRestriction):
     ):
         """This method creates a TopologyDemoldControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyDemoldControl

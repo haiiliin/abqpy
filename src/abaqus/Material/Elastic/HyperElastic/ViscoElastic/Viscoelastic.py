@@ -13,7 +13,7 @@ from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 class Viscoelastic:
     r"""The Viscoelastic object specifies dissipative behavior for use with elasticity.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -24,59 +24,59 @@ class Viscoelastic:
         The table data for this object are:
 
         - If **frequency** = FORMULA, the table data for **table** specify the following:
-        
+
             - Real part of :math:`g_{1}^{*}\left(g^{*}(\omega)=g_{1}^{*} f^{-a}\right)`
             - Imaginary part of :math:`g_{1}^{*}`.
             - Value of :math:`a`.
-            - Real part of :math:`k_{1}^{*}\left(k^{*}(\omega)=k_{1}^{*} f^{-b}\right)`. If 
+            - Real part of :math:`k_{1}^{*}\left(k^{*}(\omega)=k_{1}^{*} f^{-b}\right)`. If
               the material is incompressible, this value is ignored.
-            - Imaginary part of :math:`k_{1}^{*}`. If the material is incompressible, this 
+            - Imaginary part of :math:`k_{1}^{*}`. If the material is incompressible, this
               value is ignored.
             - Value of :math:`b`. If the material is incompressible, this value is ignored.
-            
-        - If **frequency** = TABULAR and **type** = ISOTROPIC and **preload** = NONE, or **time** = FREQUENCY_DATA 
+
+        - If **frequency** = TABULAR and **type** = ISOTROPIC and **preload** = NONE, or **time** = FREQUENCY_DATA
           the table data for **table** specify the following:
-          
+
             - Real part of :math:`\omega g^{*}\left(\omega \Re\left(g^{*}\right)=G_{\ell} / G_{\infty}\right)`.
             - Imaginary part of :math:`\omega g^{*}\left(\omega \mathfrak{J}\left(g^{*}\right)=1-G_{s} / G_{\infty}\right)`
             - Real part of :math:`\omega k^{*}\left(\omega \mathfrak{R}\left(k^{*}\right)=\mathrm{K}_{\ell} / \mathrm{K}_{\infty}\right)`. If the material is incompressible, this value is ignored.
             - Imaginary part of :math:`\omega k^{*}\left(\omega \mathfrak{I}\left(k^{*}\right)=1-\mathrm{K}_{s} / \mathrm{K}_{\infty}\right)`. If the material is incompressible, this value is ignored.
             - Frequency :math:`f` in cycles per time.
-            
-        - If **frequency** = TABULAR and **type** = ISOTROPIC and **preload** = UNIAXIAL the table data for **table** 
+
+        - If **frequency** = TABULAR and **type** = ISOTROPIC and **preload** = UNIAXIAL the table data for **table**
           specify the following:
-        
+
             - Loss modulus.
             - Storage modulus.
             - Frequency.
             - Uniaxial strain.
-            
-        - If **frequency** = TABULAR and **type** = TRACTION and **preload** = NONE the table data for **table** 
+
+        - If **frequency** = TABULAR and **type** = TRACTION and **preload** = NONE the table data for **table**
           specify the following:
-        
+
             - Normalized loss modulus.
             - Normalized shear modulus.
             - Frequency.
-            
-        - If **frequency** = TABULAR and **type** = TRACTION and **preload** = UNIAXIAL or 
+
+        - If **frequency** = TABULAR and **type** = TRACTION and **preload** = UNIAXIAL or
           **preload** = UNIAXIAL_VOLUMETRIC the table data for **table** specify the following:
-        
+
             - Loss modulus.
             - Storage modulus.
             - Frequency.
             - Closure.
-            
+
         - If **time** = PRONY or **frequency** = PRONY, the table data for **table** specify the following:
-        
+
             - :math:`\bar{g}_{1}^{P}`, the modulus ratio in the first term in the Prony series
               expansion of the shear relaxation modulus.
-            - :math:`\bar{k}_{1}^{P}`, the modulus ratio in the first term in the Prony series 
+            - :math:`\bar{k}_{1}^{P}`, the modulus ratio in the first term in the Prony series
               expansion of the bulk relaxation modulus.
             - :math:`\tau_{1}`, the relaxation time for the first term in the Prony series expansion.
-            
-        - If **frequency** = TABULAR and **type** = ISOTROPIC and **preload** = VOLUMETRIC or 
+
+        - If **frequency** = TABULAR and **type** = ISOTROPIC and **preload** = VOLUMETRIC or
           **preload** = UNIAXIAL_VOLUMETRIC the table data for **volumetricTable** specify the following:
-        
+
             - Loss modulus.
             - Storage modulus.
             - Frequency.
@@ -104,7 +104,9 @@ class Viscoelastic:
         self,
         domain: Literal[C.FREQUENCY, C.TIME],
         table: tuple,
-        frequency: Literal[C.PRONY, C.CREEP_TEST_DATA, C.TABULAR, C.FREQUENCY, C.RELAXATION_TEST_DATA, C.FORMULA] = FORMULA,
+        frequency: Literal[
+            C.PRONY, C.CREEP_TEST_DATA, C.TABULAR, C.FREQUENCY, C.RELAXATION_TEST_DATA, C.FORMULA
+        ] = FORMULA,
         type: Literal[C.FREQUENCY, C.TRACTION, C.ISOTROPIC, C.TABULAR] = ISOTROPIC,
         preload: Literal[C.VOLUMETRIC, C.UNIAXIAL, C.TABULAR, C.FREQUENCY, C.UNIAXIAL_VOLUMETRIC, C.NONE] = NONE,
         time: Literal[C.PRONY, C.CREEP_TEST_DATA, C.FREQUENCY_DATA, C.TIME, C.RELAXATION_TEST_DATA] = PRONY,
@@ -114,7 +116,7 @@ class Viscoelastic:
     ):
         """This method creates a Viscoelastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Viscoelastic

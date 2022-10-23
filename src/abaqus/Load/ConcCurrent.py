@@ -14,7 +14,7 @@ class ConcCurrent(Load):
     """The ConcCurrent object stores the data for a concentrated current.
     The ConcCurrent object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -49,7 +49,7 @@ class ConcCurrent(Load):
     ):
         """This method creates a ConcCurrent object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConcCurrent
@@ -111,9 +111,7 @@ class ConcCurrent(Load):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(
-        self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""
-    ):
+    def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
         """This method modifies the propagating data for an existing ConcCurrent object in the
         specified step.
 

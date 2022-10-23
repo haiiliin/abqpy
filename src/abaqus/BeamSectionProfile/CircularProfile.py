@@ -8,7 +8,7 @@ class CircularProfile(Profile):
     """The CircularProfile object defines the properties of a solid circular profile.
     The CircularProfile object is derived from the Profile object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -33,7 +33,7 @@ class CircularProfile(Profile):
     def __init__(self, name: str, r: float):
         """This method creates a CircularProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CircularProfile

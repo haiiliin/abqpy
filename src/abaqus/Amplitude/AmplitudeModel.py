@@ -14,8 +14,17 @@ from .SolutionDependentAmplitude import SolutionDependentAmplitude
 from .SpectrumAmplitude import SpectrumAmplitude
 from .TabularAmplitude import TabularAmplitude
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import (ABSOLUTE_VALUE, ACCELERATION, Boolean,
-                                              EVENT_ACCELERATION, FORCE, OFF, SOLVER_DEFAULT, STEP, TOTAL, )
+from ..UtilityAndView.abaqusConstants import (
+    ABSOLUTE_VALUE,
+    ACCELERATION,
+    Boolean,
+    EVENT_ACCELERATION,
+    FORCE,
+    OFF,
+    SOLVER_DEFAULT,
+    STEP,
+    TOTAL,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -23,19 +32,17 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class AmplitudeModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
     """
 
     @abaqus_method_doc
-    def ActuatorAmplitude(
-        self, name: str, timeSpan: Literal[STEP, TOTAL] = STEP
-    ) -> ActuatorAmplitude:
+    def ActuatorAmplitude(self, name: str, timeSpan: Literal[STEP, TOTAL] = STEP) -> ActuatorAmplitude:
         """This method creates a ActuatorAmplitude object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ActuatorAmplitude
@@ -74,7 +81,7 @@ class AmplitudeModel(ModelBase):
     ) -> DecayAmplitude:
         """This method creates a DecayAmplitude object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].DecayAmplitude
@@ -106,9 +113,7 @@ class AmplitudeModel(ModelBase):
         InvalidNameError
         RangeError
         """
-        self.amplitudes[name] = amplitude = DecayAmplitude(
-            name, initial, maximum, start, decayTime, timeSpan
-        )
+        self.amplitudes[name] = amplitude = DecayAmplitude(name, initial, maximum, start, decayTime, timeSpan)
         return amplitude
 
     @abaqus_method_doc
@@ -123,7 +128,7 @@ class AmplitudeModel(ModelBase):
     ) -> EquallySpacedAmplitude:
         """This method creates an EquallySpacedAmplitude object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EquallySpacedAmplitude
@@ -160,9 +165,7 @@ class AmplitudeModel(ModelBase):
         InvalidNameError
         RangeError
         """
-        self.amplitudes[name] = amplitude = EquallySpacedAmplitude(
-            name, fixedInterval, data, begin, smooth, timeSpan
-        )
+        self.amplitudes[name] = amplitude = EquallySpacedAmplitude(name, fixedInterval, data, begin, smooth, timeSpan)
         return amplitude
 
     @abaqus_method_doc
@@ -178,7 +181,7 @@ class AmplitudeModel(ModelBase):
     ) -> ModulatedAmplitude:
         """This method creates a ModulatedAmplitude object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ModulatedAmplitude
@@ -231,7 +234,7 @@ class AmplitudeModel(ModelBase):
     ) -> PeriodicAmplitude:
         """This method creates a PeriodicAmplitude object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PeriodicAmplitude
@@ -263,9 +266,7 @@ class AmplitudeModel(ModelBase):
         InvalidNameError
         RangeError
         """
-        self.amplitudes[name] = amplitude = PeriodicAmplitude(
-            name, frequency, start, a_0, data, timeSpan
-        )
+        self.amplitudes[name] = amplitude = PeriodicAmplitude(name, frequency, start, a_0, data, timeSpan)
         return amplitude
 
     @abaqus_method_doc
@@ -282,7 +283,7 @@ class AmplitudeModel(ModelBase):
     ) -> PsdDefinition:
         """This method creates a PsdDefinition object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PsdDefinition
@@ -341,12 +342,10 @@ class AmplitudeModel(ModelBase):
         return amplitud
 
     @abaqus_method_doc
-    def SmoothStepAmplitude(
-        self, name: str, data: tuple, timeSpan: Literal[STEP, TOTAL] = STEP
-    ) -> SmoothStepAmplitude:
+    def SmoothStepAmplitude(self, name: str, data: tuple, timeSpan: Literal[STEP, TOTAL] = STEP) -> SmoothStepAmplitude:
         """This method creates a SmoothStepAmplitude object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SmoothStepAmplitude
@@ -387,7 +386,7 @@ class AmplitudeModel(ModelBase):
     ) -> SolutionDependentAmplitude:
         """This method creates a SolutionDependentAmplitude object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SolutionDependentAmplitude
@@ -420,9 +419,7 @@ class AmplitudeModel(ModelBase):
         InvalidNameError
         RangeError
         """
-        self.amplitudes[name] = amplitude = SolutionDependentAmplitude(
-            name, initial, minimum, maximum, timeSpan
-        )
+        self.amplitudes[name] = amplitude = SolutionDependentAmplitude(name, initial, minimum, maximum, timeSpan)
         return amplitude
 
     @abaqus_method_doc
@@ -432,7 +429,9 @@ class AmplitudeModel(ModelBase):
         method: Literal[C.DEFINE, C.CALCULATE],
         data: tuple,
         specificationUnits: Literal[C.DISPLACEMENT, C.VELOCITY, C.ACCELERATION, C.GRAVITY] = ACCELERATION,
-        eventUnits: Literal[C.EVENT_DISPLACEMENT, C.EVENT_VELOCITY, C.EVENT_ACCELERATION, C.EVENT_GRAVITY] = EVENT_ACCELERATION,
+        eventUnits: Literal[
+            C.EVENT_DISPLACEMENT, C.EVENT_VELOCITY, C.EVENT_ACCELERATION, C.EVENT_GRAVITY
+        ] = EVENT_ACCELERATION,
         solution: Literal[C.ABSOLUTE_VALUE, C.RELATIVE_VALUE] = ABSOLUTE_VALUE,
         timeIncrement: float = 0,
         gravity: float = 1,
@@ -442,7 +441,7 @@ class AmplitudeModel(ModelBase):
     ) -> SpectrumAmplitude:
         """This method creates a SpectrumAmplitude object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SpectrumAmplitude
@@ -524,7 +523,7 @@ class AmplitudeModel(ModelBase):
     ) -> TabularAmplitude:
         """This method creates a TabularAmplitude object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TabularAmplitude
@@ -556,7 +555,5 @@ class AmplitudeModel(ModelBase):
         InvalidNameError
         RangeError
         """
-        self.amplitudes[name] = amplitude = TabularAmplitude(
-            name, data, smooth, timeSpan
-        )
+        self.amplitudes[name] = amplitude = TabularAmplitude(name, data, smooth, timeSpan)
         return amplitude

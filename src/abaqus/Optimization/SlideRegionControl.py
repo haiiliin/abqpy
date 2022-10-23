@@ -14,7 +14,7 @@ class SlideRegionControl(GeometricRestriction):
     """The SlideRegionControl object defines a slide region control geometric restriction.
     The SlideRegionControl object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -86,7 +86,7 @@ class SlideRegionControl(GeometricRestriction):
     ):
         """This method creates a SlideRegionControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SlideRegionControl

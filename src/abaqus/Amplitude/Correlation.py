@@ -12,7 +12,7 @@ class Correlation(Amplitude):
     definition of random loading.
     The Correlation object is derived from the Amplitude object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load

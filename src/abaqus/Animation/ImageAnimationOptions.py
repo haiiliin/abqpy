@@ -12,12 +12,13 @@ class ImageAnimationOptions(_OptionsBase):
     saving viewport animations. The ImageAnimationOptions object has no constructor. Abaqus
     creates the **imageAnimationOptions** member when the animation module is imported.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import animation
             session.imageAnimationOptions
     """
+
     #: An Int specifying the frame rate to record on the saved animation file. The effective
     #: frame rate in frames per second will be obtained by dividing the given frame rate by the
     #: time scale.

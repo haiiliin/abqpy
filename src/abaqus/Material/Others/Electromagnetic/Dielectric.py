@@ -9,7 +9,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 class Dielectric:
     r"""The Dielectric object specifies dielectric material properties.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -20,7 +20,7 @@ class Dielectric:
         The table data for this object are:
 
         - If **type** = ISOTROPIC, the table data specify the following:
-        
+
             - Dielectric constant.
             - Frequency, if the data depend on frequency.
             - Temperature, if the data depend on temperature.
@@ -28,7 +28,7 @@ class Dielectric:
             - Value of the second field variable.
             - Etc.
         - If **type** = ORTHOTROPIC, the table data specify the following:
-        
+
             - :math:`D_{11}^{\varphi}`
             - :math:`D_{22}^{\varphi}`.
             - :math:`D_{33}^{\varphi}`
@@ -38,7 +38,7 @@ class Dielectric:
             - Value of the second field variable.
             - Etc.
         - If **type** = ANISOTROPIC, the table data specify the following:
-        
+
             - :math:`D_{11}^{\varphi}`
             - :math:`D_{12}^{\varphi}`
             - :math:`D_{22}^{\varphi}`
@@ -67,7 +67,7 @@ class Dielectric:
     ):
         """This method creates a Dielectric object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Dielectric

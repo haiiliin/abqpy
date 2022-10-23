@@ -13,7 +13,7 @@ from ..UtilityAndView.View import View
 class Layer:
     """Objects can be superimposed by displaying them in different layers of a viewport.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.viewports[name].layers[name]
@@ -48,7 +48,7 @@ class Layer:
     def __init__(self, name: str, copyViewName: str = ""):
         """This method creates a Layer object in the Layer repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.viewports[name].Layer

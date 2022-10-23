@@ -9,7 +9,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 class Piezoelectric:
     r"""The Piezoelectric object specifies piezoelectric material properties.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -20,7 +20,7 @@ class Piezoelectric:
         The table data for this object are:
 
         - If **type** = STRESS, the table data specify the following:
-        
+
             - :math:`e_{111}^{\varphi}`.
             - :math:`e_{122}^{\varphi}`.
             - :math:`e_{133}^{\varphi}`.
@@ -44,7 +44,7 @@ class Piezoelectric:
             - Value of the second field variable.
             - Etc.
         - If **type** = STRAIN, the table data specify the following:
-        
+
             - :math:`d_{111}^{\varphi}`.
             - :math:`d_{122}^{\varphi}`.
             - :math:`d_{133}^{\varphi}`.
@@ -82,7 +82,7 @@ class Piezoelectric:
     ):
         """This method creates a Piezoelectric object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Piezoelectric

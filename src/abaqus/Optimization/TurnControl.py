@@ -14,7 +14,7 @@ class TurnControl(GeometricRestriction):
     """The TurnControl object defines a turn control geometric restriction.
     The TurnControl object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -79,7 +79,7 @@ class TurnControl(GeometricRestriction):
     ):
         """This method creates a TurnControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TurnControl

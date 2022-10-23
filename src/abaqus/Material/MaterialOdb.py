@@ -8,7 +8,7 @@ from ..Odb.OdbBase import OdbBase
 class MaterialOdb(OdbBase):
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -19,7 +19,7 @@ class MaterialOdb(OdbBase):
     def Material(self, name: str, description: str = "", materialIdentifier: str = ""):
         """This method creates a Material object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].Material
@@ -40,7 +40,5 @@ class MaterialOdb(OdbBase):
         Material
             A :py:class:`~abaqus.Material.Material.Material` object.
         """
-        self.materials[name] = material = Material(
-            name, description, materialIdentifier
-        )
+        self.materials[name] = material = Material(name, description, materialIdentifier)
         return material

@@ -7,7 +7,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 class Ratios:
     """The Ratios object specifies ratios that define anisotropic swelling.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -18,7 +18,7 @@ class Ratios:
             session.odbs[name].materials[name].swelling.ratios
 
         The table data for this object are:
-            
+
         - r11.
         - r22.
         - r33.
@@ -42,12 +42,10 @@ class Ratios:
     dependencies: int = 0
 
     @abaqus_method_doc
-    def __init__(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ):
+    def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a Ratios object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].moistureSwelling.Ratios

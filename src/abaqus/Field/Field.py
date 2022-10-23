@@ -7,7 +7,7 @@ class Field:
     no explicit constructor. The methods and members of the Field object are common to all
     objects derived from the Field.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import fields

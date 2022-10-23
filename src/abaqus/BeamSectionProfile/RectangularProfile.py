@@ -8,7 +8,7 @@ class RectangularProfile(Profile):
     """The RectangularProfile object defines the properties of a solid rectangular profile.
     The RectangularProfile object is derived from the Profile object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -36,7 +36,7 @@ class RectangularProfile(Profile):
     def __init__(self, name: str, a: float, b: float):
         """This method creates a RectangularProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].RectangularProfile

@@ -14,7 +14,7 @@ class RotationalBodyForce(Load):
     """The RotationalBodyForce object stores the data for a rotational body force.
     The RotationalBodyForce object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -69,7 +69,7 @@ class RotationalBodyForce(Load):
     ):
         """This method creates a RotationalBodyForce object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].RotationalBodyForce
@@ -153,9 +153,7 @@ class RotationalBodyForce(Load):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(
-        self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""
-    ):
+    def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
         """This method modifies the propagating data for an existing RotationalBodyForce object in
         the specified step.
 

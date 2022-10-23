@@ -16,7 +16,7 @@ class OutputStep(StepBase):
     constructor. The methods and members of the Step object are common to all objects
     derived from the Step.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -40,7 +40,7 @@ class OutputStep(StepBase):
     ) -> DiagnosticPrint:
         """This method creates a DiagnosticPrint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].steps[name].DiagnosticPrint
@@ -111,11 +111,31 @@ class OutputStep(StepBase):
         return diagnosticPrint
 
     @abaqus_method_doc
-    def Monitor(self, node: str, dof: Literal[C.NN11, C.NT, C.U3, C.NT30, C.UR2, C.ELECTRICAL_POTENTIAL, C.NT11, C.U1, C.UR3, C.WARP, C.FLUID_PRESSURE, C.UR1, C.NN30, C.U2], frequency: int) -> Monitor:
+    def Monitor(
+        self,
+        node: str,
+        dof: Literal[
+            C.NN11,
+            C.NT,
+            C.U3,
+            C.NT30,
+            C.UR2,
+            C.ELECTRICAL_POTENTIAL,
+            C.NT11,
+            C.U1,
+            C.UR3,
+            C.WARP,
+            C.FLUID_PRESSURE,
+            C.UR1,
+            C.NN30,
+            C.U2,
+        ],
+        frequency: int,
+    ) -> Monitor:
         """This method creates a request for a degree of freedom to be monitored in a general or
         modal procedure.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].steps[name].Monitor
@@ -127,7 +147,7 @@ class OutputStep(StepBase):
         dof
             A SymbolicConstant specifying the degree of freedom to be monitored at the node.
             Possible values are:
-            
+
             - U1
             - U2
             - U3
@@ -141,7 +161,7 @@ class OutputStep(StepBase):
             - NT30
             - NN11
             - NN30
-            
+
             The NT identifiers are not available for mass diffusion. The NN identifiers are
             available only for mass diffusion.
         frequency
@@ -166,7 +186,7 @@ class OutputStep(StepBase):
     ) -> Restart:
         """This method creates a restart request.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].steps[name].Restart

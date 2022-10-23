@@ -30,7 +30,7 @@ class EmagTimeHarmonicStep(AnalysisStep):
     system to harmonic excitation of the model.
     The EmagTimeHarmonicStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -61,7 +61,7 @@ class EmagTimeHarmonicStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -164,7 +164,7 @@ class EmagTimeHarmonicStep(AnalysisStep):
     ):
         """This method creates a EmagTimeHarmonicStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EmagTimeHarmonicStep
@@ -197,9 +197,7 @@ class EmagTimeHarmonicStep(AnalysisStep):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(
-        self, description: str = "", factorization: Literal[C.COMPLEX, C.REAL_ONLY] = COMPLEX
-    ):
+    def setValues(self, description: str = "", factorization: Literal[C.COMPLEX, C.REAL_ONLY] = COMPLEX):
         """This method modifies the EmagTimeHarmonicStep object.
 
         Parameters

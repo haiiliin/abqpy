@@ -8,7 +8,7 @@ class LProfile(Profile):
     """The LProfile object defines the properties of a L profile.
     The LProfile object is derived from the Profile object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -44,7 +44,7 @@ class LProfile(Profile):
     def __init__(self, name: str, a: float, b: float, t1: float, t2: float):
         """This method creates a LProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].LProfile

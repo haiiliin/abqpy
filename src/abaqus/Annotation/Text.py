@@ -4,8 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from .Annotation import Annotation
-from ..UtilityAndView.abaqusConstants import (BOTTOM_LEFT, Boolean, JUSTIFY_LEFT, OFF,
-                                              SymbolicConstant, TRANSPARENT)
+from ..UtilityAndView.abaqusConstants import BOTTOM_LEFT, Boolean, JUSTIFY_LEFT, OFF, SymbolicConstant, TRANSPARENT
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _OptionsBase
 
@@ -15,7 +14,7 @@ class Text(Annotation, _OptionsBase):
     """The Text object stores the text settings and location of a text annotation.
     The Text object is derived from the Annotation object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import annotationToolset
@@ -45,7 +44,7 @@ class Text(Annotation, _OptionsBase):
     #: A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
     #: the model coordinate system. A SymbolicConstant specifies a relative position. Possible
     #: values are:
-    #: 
+    #:
     #: - BOTTOM_LEFT
     #: - BOTTOM_CENTER
     #: - BOTTOM_RIGHT
@@ -55,7 +54,7 @@ class Text(Annotation, _OptionsBase):
     #: - TOP_LEFT
     #: - TOP_CENTER
     #: - TOP_RIGHT
-    #: 
+    #:
     #: The default value is BOTTOM_LEFT.
     anchor: Union[SymbolicConstant, float] = BOTTOM_LEFT
 
@@ -63,7 +62,7 @@ class Text(Annotation, _OptionsBase):
     #: Floats specifies the **X**- and **Y**-coordinates of the reference point of the Text
     #: annotation given as percentages of its width and height. The SymbolicConstant indicates
     #: a relative position. Possible values are:
-    #: 
+    #:
     #: - BOTTOM_LEFT
     #: - BOTTOM_CENTER
     #: - BOTTOM_RIGHT
@@ -73,7 +72,7 @@ class Text(Annotation, _OptionsBase):
     #: - TOP_LEFT
     #: - TOP_CENTER
     #: - TOP_RIGHT
-    #: 
+    #:
     #: The default value is BOTTOM_LEFT.
     referencePoint: Union[SymbolicConstant, float] = BOTTOM_LEFT
 
@@ -111,8 +110,34 @@ class Text(Annotation, _OptionsBase):
         name: str,
         text: str = "",
         offset: Sequence[float] = (0.0, 0.0),
-        anchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
-        referencePoint: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
+        anchor: Union[
+            Literal[
+                C.CENTER_RIGHT,
+                C.TOP_CENTER,
+                C.BOTTOM_RIGHT,
+                C.BOTTOM_LEFT,
+                C.CENTER,
+                C.TOP_RIGHT,
+                C.CENTER_LEFT,
+                C.TOP_LEFT,
+                C.BOTTOM_CENTER,
+            ],
+            float,
+        ] = BOTTOM_LEFT,
+        referencePoint: Union[
+            Literal[
+                C.CENTER_RIGHT,
+                C.TOP_CENTER,
+                C.BOTTOM_RIGHT,
+                C.BOTTOM_LEFT,
+                C.CENTER,
+                C.TOP_RIGHT,
+                C.CENTER_LEFT,
+                C.TOP_LEFT,
+                C.BOTTOM_CENTER,
+            ],
+            float,
+        ] = BOTTOM_LEFT,
         rotationAngle: float = 0.0,
         color: str = "White",
         font: str = "-*-verdana-medium-r-normal--120-*",
@@ -123,7 +148,7 @@ class Text(Annotation, _OptionsBase):
     ):
         """This method creates a Text object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.Text
@@ -144,7 +169,7 @@ class Text(Annotation, _OptionsBase):
             A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
             the model coordinate system. A SymbolicConstant specifies a relative position. Possible
             values are:
-            
+
             - BOTTOM_LEFT
             - BOTTOM_CENTER
             - BOTTOM_RIGHT
@@ -154,14 +179,14 @@ class Text(Annotation, _OptionsBase):
             - TOP_LEFT
             - TOP_CENTER
             - TOP_RIGHT
-                
+
             The default value is BOTTOM_LEFT.
         referencePoint
             A SymbolicConstant or a sequence of Floats specifying a point. The sequence of two
             Floats specifies the **X**- and **Y**-coordinates of the reference point of the Text
             annotation given as percentages of its width and height. The SymbolicConstant indicates
             a relative position. Possible values are:
-            
+
             - BOTTOM_LEFT
             - BOTTOM_CENTER
             - BOTTOM_RIGHT
@@ -171,7 +196,7 @@ class Text(Annotation, _OptionsBase):
             - TOP_LEFT
             - TOP_CENTER
             - TOP_RIGHT
-                
+
             The default value is BOTTOM_LEFT.
         rotationAngle
             A Float specifying the amount of rotation in degrees about **referencePoint**. The default
@@ -220,8 +245,34 @@ class Text(Annotation, _OptionsBase):
         self,
         text: str = "",
         offset: Sequence[float] = (0.0, 0.0),
-        anchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
-        referencePoint: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
+        anchor: Union[
+            Literal[
+                C.CENTER_RIGHT,
+                C.TOP_CENTER,
+                C.BOTTOM_RIGHT,
+                C.BOTTOM_LEFT,
+                C.CENTER,
+                C.TOP_RIGHT,
+                C.CENTER_LEFT,
+                C.TOP_LEFT,
+                C.BOTTOM_CENTER,
+            ],
+            float,
+        ] = BOTTOM_LEFT,
+        referencePoint: Union[
+            Literal[
+                C.CENTER_RIGHT,
+                C.TOP_CENTER,
+                C.BOTTOM_RIGHT,
+                C.BOTTOM_LEFT,
+                C.CENTER,
+                C.TOP_RIGHT,
+                C.CENTER_LEFT,
+                C.TOP_LEFT,
+                C.BOTTOM_CENTER,
+            ],
+            float,
+        ] = BOTTOM_LEFT,
         rotationAngle: float = 0.0,
         color: str = "White",
         font: str = "-*-verdana-medium-r-normal--120-*",

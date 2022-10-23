@@ -1,10 +1,11 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class DataSet:
     """The DataSetobject specifies material test data.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import calibration
@@ -31,7 +32,7 @@ class DataSet:
     def __init__(self, name: str, data: tuple = (), type: str = "", form: str = ""):
         """This method creates a DataSet object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].calibrations[name].DataSet

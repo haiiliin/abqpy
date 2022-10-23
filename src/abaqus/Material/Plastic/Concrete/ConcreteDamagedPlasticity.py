@@ -11,7 +11,7 @@ from ....UtilityAndView.abaqusConstants import Boolean, OFF
 class ConcreteDamagedPlasticity:
     r"""The ConcreteDamagedPlasticity object specifies the concrete damaged plasticity model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -23,14 +23,14 @@ class ConcreteDamagedPlasticity:
 
         - Dilation angle, :math:`\psi` (in degrees) in the :math:`p - q` plane.
         - Flow potential eccentricity, :math:`\epsilon`. The default value is 0.1.
-        - :math:`\sigma_{b 0} / \sigma_{t 0}`, the ratio of initial equibiaxial compressive 
-          yield stress to initial uniaxial compressive yield stress. The default value 
+        - :math:`\sigma_{b 0} / \sigma_{t 0}`, the ratio of initial equibiaxial compressive
+          yield stress to initial uniaxial compressive yield stress. The default value
           is 1.16. stress is negative. The default value is 2/3. default value is 0.0.
-        - :math:`K_c`, the ratio of the second stress invariant on the tensile meridian, to that on 
+        - :math:`K_c`, the ratio of the second stress invariant on the tensile meridian, to that on
           the compressive meridian, at initial yield for any given value of the pressure invariant :math:`p`
           such that the maximum principal stress is negative. The default value is 2/3.
-        - Viscosity parameter, :math:`\mu`, used for the viscoplastic regularization of the concrete 
-          constitutive equations in an Abaqus/Standard analysis. This parameter is ignored in an 
+        - Viscosity parameter, :math:`\mu`, used for the viscoplastic regularization of the concrete
+          constitutive equations in an Abaqus/Standard analysis. This parameter is ignored in an
           Abaqus/Explicit analysis. The default value is 0.0.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
@@ -43,30 +43,22 @@ class ConcreteDamagedPlasticity:
     """
 
     #: A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteCompressionHardening.ConcreteCompressionHardening` object.
-    concreteCompressionHardening: ConcreteCompressionHardening = (
-        ConcreteCompressionHardening(((),))
-    )
+    concreteCompressionHardening: ConcreteCompressionHardening = ConcreteCompressionHardening(((),))
 
     #: A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteTensionStiffening.ConcreteTensionStiffening` object.
-    concreteTensionStiffening: ConcreteTensionStiffening = ConcreteTensionStiffening(
-        ((),)
-    )
+    concreteTensionStiffening: ConcreteTensionStiffening = ConcreteTensionStiffening(((),))
 
     #: A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteCompressionDamage.ConcreteCompressionDamage` object.
-    concreteCompressionDamage: ConcreteCompressionDamage = ConcreteCompressionDamage(
-        ((),)
-    )
+    concreteCompressionDamage: ConcreteCompressionDamage = ConcreteCompressionDamage(((),))
 
     #: A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteTensionDamage.ConcreteTensionDamage` object.
     concreteTensionDamage: ConcreteTensionDamage = ConcreteTensionDamage(((),))
 
     @abaqus_method_doc
-    def __init__(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ):
+    def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a ConcreteDamagedPlasticity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].ConcreteDamagedPlasticity

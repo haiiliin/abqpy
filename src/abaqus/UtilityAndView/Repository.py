@@ -1,5 +1,6 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class Repository(dict):
     """Repositories are containers that store a particular type of object; for example, the

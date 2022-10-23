@@ -10,7 +10,7 @@ class Equation(Constraint):
     freedom.
     The Equation object is derived from the ConstrainedSketchConstraint object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -36,7 +36,7 @@ class Equation(Constraint):
     def __init__(self, name: str, terms: tuple):
         """This method creates an Equation object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Equation

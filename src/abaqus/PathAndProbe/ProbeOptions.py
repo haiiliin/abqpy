@@ -15,7 +15,7 @@ class ProbeOptions:
     module. When probing is initiated for the first time, the values in the **probeOptions**
     member are initialized using the values from the **defaultProbeOptions** member.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -113,7 +113,18 @@ class ProbeOptions:
         self,
         options: Optional["ProbeOptions"] = None,
         probeEntity: Literal[C.NODE, C.ODB, C.ELEMENT] = ELEMENT,
-        probeOutputPosition: Optional[Literal[C.ELEMENT_NODAL, C.ELEMENT_FACE, C.ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.NODE, C.ODB, C.ELEMENT_CENTROID]] = None,
+        probeOutputPosition: Optional[
+            Literal[
+                C.ELEMENT_NODAL,
+                C.ELEMENT_FACE,
+                C.ELEMENT,
+                C.NODAL,
+                C.INTEGRATION_POINT,
+                C.NODE,
+                C.ODB,
+                C.ELEMENT_CENTROID,
+            ]
+        ] = None,
         partInstance: Boolean = ON,
         elementID: Boolean = ON,
         elementType: Boolean = ON,

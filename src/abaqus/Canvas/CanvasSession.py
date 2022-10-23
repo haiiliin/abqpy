@@ -11,7 +11,6 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class CanvasSession(SessionBase):
-    
     @abaqus_method_doc
     def Viewport(
         self,
@@ -26,7 +25,7 @@ class CanvasSession(SessionBase):
     ):
         """This method creates a Viewport object with the specified origin and dimensions.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.Viewport

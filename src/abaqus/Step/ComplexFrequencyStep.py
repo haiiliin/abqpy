@@ -27,7 +27,7 @@ class ComplexFrequencyStep(AnalysisStep):
     the complex eigenvalues and corresponding complex mode shapes of a system.
     The ComplexFrequencyStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -92,7 +92,7 @@ class ComplexFrequencyStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -183,7 +183,7 @@ class ComplexFrequencyStep(AnalysisStep):
     ):
         """This method creates a ComplexFrequencyStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ComplexFrequencyStep

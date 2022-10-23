@@ -11,7 +11,7 @@ from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 class Permeability:
     """The Permeability object defines permeability for pore fluid flow.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -22,19 +22,19 @@ class Permeability:
         The table data for this object are:
 
         - If **type** = ISOTROPIC, the table data specify the following:
-        
+
             - :math:`k`.
             - Void ratio, :math:`e`.
             - Temperature, if the data depend on temperature.
         - If **type** = ORTHOTROPIC, the table data specify the following:
-        
+
             - :math:`k_{11}`.
             - :math:`k_{22}`.
             - :math:`k_{33}`.
             - Void ratio, :math:`e`.
             - Temperature, if the data depend on temperature.
         - If **type** = ANISOTROPIC, the table data specify the following:
-        
+
             - :math:`k_{11}`.
             - :math:`k_{12}`.
             - :math:`k_{22}`.
@@ -69,7 +69,7 @@ class Permeability:
     ):
         r"""This method creates a Permeability object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Permeability

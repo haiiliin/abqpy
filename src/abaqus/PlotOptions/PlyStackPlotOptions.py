@@ -1,8 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (Boolean, OFF, ON, SHADED, SOLID, SymbolicConstant,
-                                              UNSYMMETRIC, VERY_THIN)
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, SHADED, SOLID, SymbolicConstant, UNSYMMETRIC, VERY_THIN
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _OptionsBase
 
@@ -13,7 +12,7 @@ class PlyStackPlotOptions(_OptionsBase):
     object. The PlyStackPlotOptions object has no constructor command. Abaqus creates the
     *detailPlotOptions.plyStackPlotPlotOptions* member whenever a Viewport is created.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.viewports[name].detailPlotOptions.plyStackPlotOptions
@@ -33,7 +32,7 @@ class PlyStackPlotOptions(_OptionsBase):
     #: A SymbolicConstant specifying the edge line thickness. Possible values are VERY_THIN,
     #: THIN, MEDIUM, and THICK. The default value is VERY_THIN.
     edgeThickness: SymbolicConstant = VERY_THIN
-    
+
     #: A SymbolicConstant specifying whether to display the plies in an unsymmetric staircase
     #: fashion or symmetric staircase fashion. Possible values are UNSYMMETRIC and SYMMETRIC.
     #: The default value is UNSYMMETRIC.

@@ -15,7 +15,7 @@ class StdXplCosimulationState(InteractionState):
     The StdXplCosimulationState object has no constructor or methods.
     The StdXplCosimulationState object is derived from the InteractionState object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -30,7 +30,7 @@ class StdXplCosimulationState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:
-    #: 
+    #:
     #: - NOT_YET_ACTIVE
     #: - CREATED
     #: - PROPAGATED

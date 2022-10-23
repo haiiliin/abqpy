@@ -8,7 +8,7 @@ class IgnoredEdge:
     """An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object is a one-dimensional region of geometry that has been abstracted
     away by a virtual topology feature.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

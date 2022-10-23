@@ -13,7 +13,7 @@ class BoundaryCondition:
     members of the BoundaryCondition object are common to all objects derived from the
     BoundaryCondition.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load

@@ -4,8 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from .ContactArea import ContactArea
-from ...UtilityAndView.abaqusConstants import (Boolean, ELASTIC_PLASTIC, OFF, RELATIVE_SLOPE_DROP,
-                                               STRESS)
+from ...UtilityAndView.abaqusConstants import Boolean, ELASTIC_PLASTIC, OFF, RELATIVE_SLOPE_DROP, STRESS
 from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -14,7 +13,7 @@ class GasketThicknessBehavior:
     """The GasketThicknessBehavior object defines the behavior in the thickness direction for a
     gasket.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -25,7 +24,7 @@ class GasketThicknessBehavior:
         The table data for this object are:
 
         - If **variableUnits** = STRESS, the loading table data specify the following:
-        
+
             - Pressure; this value must be positive.
             - Closure; this value must be positive.
             - Temperature, if the data depend on temperature.
@@ -33,7 +32,7 @@ class GasketThicknessBehavior:
             - Value of the second field variable.
             - Etc.
         - If **variableUnits** = FORCE, the loading table data specify the following:
-        
+
             - Force or force per unit length; this value must be positive.
             - Closure; this value must be positive.
             - Temperature, if the data depend on temperature.
@@ -41,7 +40,7 @@ class GasketThicknessBehavior:
             - Value of the second field variable.
             - Etc.
         - If **variableUnits** = STRESS and **type** = ELASTIC_PLASTIC, the **unloadingTable** data specify the following:
-        
+
             - Pressure; this value must be positive.
             - Closure; this value must be positive.
             - Plastic closure; this value must be positive.
@@ -50,7 +49,7 @@ class GasketThicknessBehavior:
             - Value of the second field variable.
             - Etc.
         - If **variableUnits** = FORCE and **type** = ELASTIC_PLASTIC, the **unloadingTable** data specify the following:
-        
+
             - Pressure; this value must be positive.
             - Closure; this value must be positive.
             - Plastic closure; this value must be positive.
@@ -59,7 +58,7 @@ class GasketThicknessBehavior:
             - Value of the second field variable.
             - Etc.
         - If **variableUnits** = STRESS and **type** = DAMAGE, the **unloadingTable** data specify the following:
-        
+
             - Pressure; this value must be positive.
             - Closure; this value must be positive.
             - Maximum closure reached while loading the gasket; this value must be positive.
@@ -68,7 +67,7 @@ class GasketThicknessBehavior:
             - Value of the second field variable.
             - Etc.
         - If **variableUnits** = FORCE and **type** = DAMAGE, the **unloadingTable** data specify the following:
-        
+
             - Force or force per unit length; this value must be positive.
             - Closure; this value must be positive.
             - Maximum closure reached while loading the gasket; this value must be positive.
@@ -102,7 +101,7 @@ class GasketThicknessBehavior:
     ):
         """This method creates a GasketThicknessBehavior object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].GasketThicknessBehavior

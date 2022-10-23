@@ -6,15 +6,16 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
-if TYPE_CHECKING: # to avoid circular imports
+if TYPE_CHECKING:  # to avoid circular imports
     from ..Mesh.MeshElementArray import MeshElementArray
     from ..Mesh.MeshNodeArray import MeshNodeArray
+
 
 @abaqus_class_doc
 class Vertex:
     """Vertices are point regions of geometry.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

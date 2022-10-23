@@ -15,7 +15,7 @@ class ElasticFoundationState(InteractionState):
     The ElasticFoundationState object has no constructor or methods.
     The ElasticFoundationState object is derived from the InteractionState object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -31,7 +31,7 @@ class ElasticFoundationState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:
-    #: 
+    #:
     #: - NOT_YET_ACTIVE
     #: - CREATED
     #: - PROPAGATED

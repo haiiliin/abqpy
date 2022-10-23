@@ -5,8 +5,7 @@ from typing_extensions import Literal
 
 from .PredefinedField import PredefinedField
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (CONSTANT_THROUGH_THICKNESS, OFF, SymbolicConstant,
-                                              UNIFORM, UNSET, Boolean)
+from ..UtilityAndView.abaqusConstants import CONSTANT_THROUGH_THICKNESS, OFF, SymbolicConstant, UNIFORM, UNSET, Boolean
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -15,7 +14,7 @@ class Temperature(PredefinedField):
     """The Temperature object stores the data for temperature predefined fields.
     The Temperature object is derived from the PredefinedField object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -53,8 +52,15 @@ class Temperature(PredefinedField):
         name: str,
         createStepName: str,
         region: Region,
-        distributionType: Literal[C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
-        crossSectionDistribution: Literal[C.GRADIENTS_THROUGH_BEAM_CS, C.POINTS_THROUGH_SECTION, C.GRADIENTS_THROUGH_SHELL_CS, C.CONSTANT_THROUGH_THICKNESS] = CONSTANT_THROUGH_THICKNESS,
+        distributionType: Literal[
+            C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED
+        ] = UNIFORM,
+        crossSectionDistribution: Literal[
+            C.GRADIENTS_THROUGH_BEAM_CS,
+            C.POINTS_THROUGH_SECTION,
+            C.GRADIENTS_THROUGH_SHELL_CS,
+            C.CONSTANT_THROUGH_THICKNESS,
+        ] = CONSTANT_THROUGH_THICKNESS,
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
@@ -69,7 +75,7 @@ class Temperature(PredefinedField):
     ):
         """This method creates a Temperature object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Temperature
@@ -91,12 +97,12 @@ class Temperature(PredefinedField):
         crossSectionDistribution
             A SymbolicConstant specifying how the predefined field is distributed over the cross
             section of the region. Possible values are
-            
+
             - CONSTANT_THROUGH_THICKNESS
             - GRADIENTS_THROUGH_SHELL_CS
             - GRADIENTS_THROUGH_BEAM_CS
             - POINTS_THROUGH_SECTION
-            
+
             The default value is CONSTANT_THROUGH_THICKNESS.
         field
             A String specifying the name of the AnalyticalField or DiscreteField object associated
@@ -139,7 +145,7 @@ class Temperature(PredefinedField):
             A Sequence of Doubles specifying the temperature values when **distributionType** = UNIFORM
             or FIELD. The value of the **magnitudes** argument is a function of the
             **crossSectionDistribution** argument, as shown in the following list:
-            
+
             - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS then **magnitudes** is a Double
               specifying the temperature.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a
@@ -186,8 +192,15 @@ class Temperature(PredefinedField):
     @abaqus_method_doc
     def setValues(
         self,
-        distributionType: Literal[C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
-        crossSectionDistribution: Literal[C.GRADIENTS_THROUGH_BEAM_CS, C.POINTS_THROUGH_SECTION, C.GRADIENTS_THROUGH_SHELL_CS, C.CONSTANT_THROUGH_THICKNESS] = CONSTANT_THROUGH_THICKNESS,
+        distributionType: Literal[
+            C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED
+        ] = UNIFORM,
+        crossSectionDistribution: Literal[
+            C.GRADIENTS_THROUGH_BEAM_CS,
+            C.POINTS_THROUGH_SECTION,
+            C.GRADIENTS_THROUGH_SHELL_CS,
+            C.CONSTANT_THROUGH_THICKNESS,
+        ] = CONSTANT_THROUGH_THICKNESS,
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
@@ -212,12 +225,12 @@ class Temperature(PredefinedField):
         crossSectionDistribution
             A SymbolicConstant specifying how the predefined field is distributed over the cross
             section of the region. Possible values are
-            
+
             - CONSTANT_THROUGH_THICKNESS
             - GRADIENTS_THROUGH_SHELL_CS
             - GRADIENTS_THROUGH_BEAM_CS
             - POINTS_THROUGH_SECTION
-            
+
             The default value is CONSTANT_THROUGH_THICKNESS.
         field
             A String specifying the name of the AnalyticalField or DiscreteField object associated
@@ -260,7 +273,7 @@ class Temperature(PredefinedField):
             A Sequence of Doubles specifying the temperature values when **distributionType** = UNIFORM
             or FIELD. The value of the **magnitudes** argument is a function of the
             **crossSectionDistribution** argument, as shown in the following list:
-            
+
             - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS then **magnitudes** is a Double
               specifying the temperature.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a
@@ -346,7 +359,7 @@ class Temperature(PredefinedField):
             A Sequence of Doubles specifying the temperature values when **distributionType** = UNIFORM
             or FIELD. The value of the **magnitudes** argument is a function of the
             **crossSectionDistribution** argument, as shown in the following list:
-            
+
             - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS then **magnitudes** is a Double
               specifying the temperature.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a

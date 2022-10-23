@@ -12,7 +12,7 @@ class DatumPlane(Datum):
     that creates a DatumPlane object.
     The DatumPlane object is derived from the Datum object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

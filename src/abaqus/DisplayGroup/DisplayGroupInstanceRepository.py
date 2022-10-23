@@ -9,7 +9,7 @@ class DisplayGroupInstanceRepository:
     addition to all the standard Python repository methods, the DisplayGroupInstance
     repository defines additional methods as described below.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

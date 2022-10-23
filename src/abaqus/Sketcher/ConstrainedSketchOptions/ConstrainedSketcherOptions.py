@@ -13,7 +13,7 @@ class ConstrainedSketcherOptions:
     be applied to all sketches used in the current session. The ConstrainedSketcherOptions
     object has no constructor.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import sketch
@@ -30,7 +30,9 @@ class ConstrainedSketcherOptions:
         maxCoplanarEntities: int = 300,
         autoConstrainAngularTolerance: float = 0,
         autoConstrainLinearTolerance: Optional[float] = None,
-        autoConstrainOptions: Optional[Literal[C.PERPENDICULAR, C.EQUALRADIUS, C.IDENTICAL, C.TANGENT, C.PARALLEL, C.CONCENTRIC]] = None,
+        autoConstrainOptions: Optional[
+            Literal[C.PERPENDICULAR, C.EQUALRADIUS, C.IDENTICAL, C.TANGENT, C.PARALLEL, C.CONCENTRIC]
+        ] = None,
         dragMethod: Literal[C.WEIGHTED, C.RELAXATION, C.MINIMUM_MOVE, C.STANDARD] = MINIMUM_MOVE,
         editMethod: Literal[C.WEIGHTED, C.RELAXATION, C.MINIMUM_MOVE, C.STANDARD] = STANDARD,
     ):

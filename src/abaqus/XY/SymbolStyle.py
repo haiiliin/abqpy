@@ -11,7 +11,7 @@ class SymbolStyle:
     curves.
     SymbolStyle objects can be created using the methods described below.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -37,7 +37,6 @@ class SymbolStyle:
 
     #: A SymbolicConstant specifying the marker type be used when drawing symbols using this
     #: SymbolStyle object. Possible values are:
-    
 
     #: - FILLED_CIRCLE
     #: - FILLED_SQUARE
@@ -50,7 +49,7 @@ class SymbolStyle:
     #: - CROSS
     #: - XMARKER
     #: - POINT
-    #: 
+    #:
     #: The default value is FILLED_CIRCLE.
     marker: SymbolicConstant = FILLED_CIRCLE
 
@@ -63,12 +62,24 @@ class SymbolStyle:
         self,
         color: str = "",
         show: Boolean = ON,
-        marker: Literal[C.CROSS, C.FILLED_DIAMOND, C.FILLED_SQUARE, C.POINT, C.HOLLOW_CIRCLE, C.HOLLOW_TRI, C.HOLLOW_SQUARE, C.FILLED_TRI, C.HOLLOW_DIAMOND, C.FILLED_CIRCLE, C.XMARKER] = FILLED_CIRCLE,
+        marker: Literal[
+            C.CROSS,
+            C.FILLED_DIAMOND,
+            C.FILLED_SQUARE,
+            C.POINT,
+            C.HOLLOW_CIRCLE,
+            C.HOLLOW_TRI,
+            C.HOLLOW_SQUARE,
+            C.FILLED_TRI,
+            C.HOLLOW_DIAMOND,
+            C.FILLED_CIRCLE,
+            C.XMARKER,
+        ] = FILLED_CIRCLE,
         size: float = 2,
     ):
         """This method creates a SymbolStyle object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.SymbolStyle
@@ -97,7 +108,7 @@ class SymbolStyle:
             - CROSS
             - XMARKER
             - POINT
-            
+
             The default value is FILLED_CIRCLE.
         size
             A Float specifying the marker size to be used when drawing markers using this
@@ -119,7 +130,19 @@ class SymbolStyle:
         self,
         color: str = "",
         show: Boolean = ON,
-        marker: Literal[C.CROSS, C.FILLED_DIAMOND, C.FILLED_SQUARE, C.POINT, C.HOLLOW_CIRCLE, C.HOLLOW_TRI, C.HOLLOW_SQUARE, C.FILLED_TRI, C.HOLLOW_DIAMOND, C.FILLED_CIRCLE, C.XMARKER] = FILLED_CIRCLE,
+        marker: Literal[
+            C.CROSS,
+            C.FILLED_DIAMOND,
+            C.FILLED_SQUARE,
+            C.POINT,
+            C.HOLLOW_CIRCLE,
+            C.HOLLOW_TRI,
+            C.HOLLOW_SQUARE,
+            C.FILLED_TRI,
+            C.HOLLOW_DIAMOND,
+            C.FILLED_CIRCLE,
+            C.XMARKER,
+        ] = FILLED_CIRCLE,
         size: float = 2,
     ):
         """This method modifies the SymbolStyle object.
@@ -147,7 +170,7 @@ class SymbolStyle:
             - CROSS
             - XMARKER
             - POINT
-            
+
             The default value is FILLED_CIRCLE.
         size
             A Float specifying the marker size to be used when drawing markers using this

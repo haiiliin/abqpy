@@ -13,7 +13,7 @@ class RadiationToAmbient(Interaction):
     environment.
     The RadiationToAmbient object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -75,7 +75,7 @@ class RadiationToAmbient(Interaction):
     ):
         """This method creates a RadiationToAmbient object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].RadiationToAmbient

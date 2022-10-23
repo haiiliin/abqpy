@@ -28,7 +28,7 @@ class SubspaceDynamicsStep(AnalysisStep):
     method.
     The SubspaceDynamicsStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -83,7 +83,7 @@ class SubspaceDynamicsStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -173,7 +173,7 @@ class SubspaceDynamicsStep(AnalysisStep):
     ):
         """This method creates a SubspaceDynamicsStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SubspaceDynamicsStep

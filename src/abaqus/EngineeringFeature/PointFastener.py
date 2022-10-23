@@ -6,8 +6,20 @@ from typing_extensions import Literal
 from .Fastener import Fastener
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import (ALL, AXIS_1, Boolean, CONNECTOR, CONTINUUM, DEFAULT,
-                                              FACETOFACE, MODEL, OFF, ON, SymbolicConstant, UNIFORM)
+from ..UtilityAndView.abaqusConstants import (
+    ALL,
+    AXIS_1,
+    Boolean,
+    CONNECTOR,
+    CONTINUUM,
+    DEFAULT,
+    FACETOFACE,
+    MODEL,
+    OFF,
+    ON,
+    SymbolicConstant,
+    UNIFORM,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -16,7 +28,7 @@ class PointFastener(Fastener):
     """The PointFastener object defines a point fastener.
     The PointFastener object is derived from the Fastener object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -194,7 +206,7 @@ class PointFastener(Fastener):
         for parts and for the assembly, PointFastener objects are currently supported only under
         the assembly.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.PointFastener

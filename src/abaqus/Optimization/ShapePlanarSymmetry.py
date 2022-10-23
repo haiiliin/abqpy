@@ -14,7 +14,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
     """The ShapePlanarSymmetry object defines a shape planar symmetry geometric restriction.
     The ShapePlanarSymmetry object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -73,7 +73,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
     ):
         """This method creates a ShapePlanarSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapePlanarSymmetry

@@ -1,7 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (Boolean, ENGINEERING, OFF, ON, SINGLE_TABLE)
+from ..UtilityAndView.abaqusConstants import Boolean, ENGINEERING, OFF, ON, SINGLE_TABLE
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -11,7 +11,7 @@ class XYReportOptions:
     write an XYData object to an ASCII file. The XYReportOptions object has no constructor.
     Abaqus creates the **xyReportOptions** member when you import the Visualization module.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

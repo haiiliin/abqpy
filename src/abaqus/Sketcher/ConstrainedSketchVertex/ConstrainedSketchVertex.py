@@ -7,7 +7,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 class ConstrainedSketchVertex:
     """The ConstrainedSketchVertex object stores the vertex position.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import sketch
@@ -22,7 +22,7 @@ class ConstrainedSketchVertex:
     def Spot(self, point: Sequence[float]):
         """This method creates a spot (construction point) located at the specified coordinates.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].Spot

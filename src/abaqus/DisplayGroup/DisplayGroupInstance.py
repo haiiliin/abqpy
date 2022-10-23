@@ -11,7 +11,7 @@ class DisplayGroupInstance:
     plotted in a viewport, Abaqus/CAE creates a DisplayGroupInstance object for each display
     group and places it in the DisplayGroupInstanceRepository object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import assembly

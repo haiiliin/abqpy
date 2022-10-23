@@ -14,7 +14,7 @@ class ShapePointSymmetry(GeometricRestriction):
     """The ShapePointSymmetry object defines a shape point symmetry geometric restriction.
     The ShapePointSymmetry object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -68,7 +68,7 @@ class ShapePointSymmetry(GeometricRestriction):
     ):
         """This method creates a ShapePointSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapePointSymmetry

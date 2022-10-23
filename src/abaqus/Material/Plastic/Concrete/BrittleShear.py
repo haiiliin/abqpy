@@ -10,7 +10,7 @@ class BrittleShear:
     """The BrittleShear object specifies the postcracking shear behavior of a material used in
     a brittle cracking model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -21,7 +21,7 @@ class BrittleShear:
         The table data for this object are:
 
         - If **type** = RETENTION_FACTOR the table data specify the following:
-        
+
             - Shear retention factor.
             - Crack opening strain.
             - Temperature, if the data depend on temperature.
@@ -29,7 +29,7 @@ class BrittleShear:
             - Value of the second field variable.
             - Etc.
         - If **type** = POWER_LAW the table data specify the following:
-        
+
             - :math:`e`.
             - :math:`p`.
             - Temperature, if the data depend on temperature.
@@ -52,7 +52,7 @@ class BrittleShear:
     ):
         """This method creates a BrittleShear object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].brittleCracking.BrittleShear

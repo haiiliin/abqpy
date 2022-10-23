@@ -11,7 +11,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class AcisFile:
     """The AcisFile object is a file object used to open ACIS-, STEP-, and IGES-format files.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -25,7 +25,7 @@ class AcisFile:
         """This method creates an AcisFile object from a file containing ACIS-format geometry. This
         object is subsequently used by the PartFromGeometryFile method.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.openAcis
@@ -63,7 +63,7 @@ class AcisFile:
         """This method creates an AcisFile object from a file containing V5-format geometry. This
         object is subsequently used by the PartFromGeometryFile method.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.openAcis
@@ -105,7 +105,7 @@ class AcisFile:
         File-format geometry that was created by CATIA V5, I-DEAS, or Pro/ENGINEER. This object
         is subsequently used by the PartFromGeometryFile method.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.openAcis
@@ -150,7 +150,7 @@ class AcisFile:
         """This method creates an AcisFile object from a file containing IGES-format geometry. This
         object is subsequently used by the PartFromGeometryFile method.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.openAcis
@@ -205,7 +205,7 @@ class AcisFile:
         """This method creates an AcisFile object from a file containing Parasolid-format geometry.
         This object is subsequently used by the PartFromGeometryFile method.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.openAcis
@@ -233,7 +233,7 @@ class AcisFile:
         """This method creates an AcisFile object from a file containing STEP-format geometry. This
         object is subsequently used by the PartFromGeometryFile method.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.openAcis
@@ -263,7 +263,7 @@ class AcisFile:
         """This method creates an AcisFile object from a file containing VDA-FS-format geometry.
         This object is subsequently used by the PartFromGeometryFile method.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.openAcis
@@ -288,7 +288,7 @@ class AcisFile:
     @abaqus_method_doc
     def writeAcisFile(self, fileName: str, version: float = None):
         """This method exports the assembly to a named file in ACIS format.
-        
+
         Parameters
         ----------
         fileName

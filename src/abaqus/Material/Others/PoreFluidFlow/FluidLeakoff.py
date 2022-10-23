@@ -10,7 +10,7 @@ class FluidLeakoff:
     """The FluidLeakoff object specifies leak-off coefficients for pore pressure cohesive
     elements.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -19,7 +19,7 @@ class FluidLeakoff:
             session.odbs[name].materials[name].fluidLeakoff
 
         The table data for this object are:
-        
+
         The table data specify the following:
 
         - Fluid leak-off coefficient at top element surface.
@@ -44,7 +44,7 @@ class FluidLeakoff:
     ):
         """This method creates a FluidLeakoff object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].FluidLeakoff

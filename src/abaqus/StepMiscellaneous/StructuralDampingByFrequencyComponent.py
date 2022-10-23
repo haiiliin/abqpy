@@ -8,7 +8,7 @@ class StructuralDampingByFrequencyComponent:
     """A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent` object is used to define structural damping over
     a range of frequencies.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step

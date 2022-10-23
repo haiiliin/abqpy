@@ -8,7 +8,7 @@ class MohrCoulombHardening:
     """The MohrCoulombHardening object specifies hardening for the Mohr-Coulomb plasticity
     model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -31,29 +31,27 @@ class MohrCoulombHardening:
     """
 
     @abaqus_method_doc
-    def __init__(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ):
+    def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a MohrCoulombHardening object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].mohrCoulombPlasticity.MohrCoulombHardening.MohrCoulombHardeningmaterials[name].mohrCoulombPlasticity.MohrCoulombHardening
-            
+
         Parameters
         ----------
         table
-            A sequence of sequences of Floats specifying the items described below. 
+            A sequence of sequences of Floats specifying the items described below.
         temperatureDependency
-            A Boolean specifying whether the data depend on temperature. The default value is OFF. 
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies
-            An Int specifying the number of field variable dependencies. The default value is 0. 
+            An Int specifying the number of field variable dependencies. The default value is 0.
 
         Returns
         -------
         MohrCoulombHardening
-            A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening` object. 
+            A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening` object.
 
         Raises
         ------

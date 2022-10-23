@@ -17,7 +17,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
     such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
     contained in their respective repositories.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import sketch
@@ -36,7 +36,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """This method constructs a ConstrainedSketchDimension object between two
         ConstrainedSketchGeometry objects, with the given angle between them.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].AngularDimension
@@ -75,7 +75,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         horizontal dimension indicates the horizontal distance along the **X**-axis between two
         vertices.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].HorizontalDimension
@@ -113,7 +113,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """This method constructs a ConstrainedSketchDimension object between two vertices. An
         oblique dimension indicates the distance between two vertices.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].ObliqueDimension
@@ -153,7 +153,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         arc. A radial dimension indicates the radius of an arc or circle or the major or minor
         radius of an ellipse.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].RadialDimension
@@ -195,7 +195,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         """This method constructs a ConstrainedSketchDimension between two vertices. A vertical
         dimension controls the vertical distance along the **Y**-axis between two vertices.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].VerticalDimension
@@ -234,7 +234,7 @@ class ConstrainedSketchDimensionModel(ConstrainedSketchBase):
         ConstrainedSketchGeometry, or aConstrainedSketchVertex and ConstrainedSketchGeometry
         object. A distance dimension specifies the shortest distance between two entities.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].DistanceDimension

@@ -9,7 +9,7 @@ class XFEMCrackGrowth(Interaction):
     """The XFEMCrackGrowth object defines the enrichment activation state for an XFEMCrack.
     The XFEMCrackGrowth object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -34,12 +34,10 @@ class XFEMCrackGrowth(Interaction):
     allowGrowth: Boolean = ON
 
     @abaqus_method_doc
-    def __init__(
-        self, name: str, createStepName: str, crackName: str, allowGrowth: Boolean = ON
-    ):
+    def __init__(self, name: str, createStepName: str, crackName: str, allowGrowth: Boolean = ON):
         """This method creates an XFEMCrackGrowth object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].XFEMCrackGrowth

@@ -9,10 +9,23 @@ from .IntegratedOutputSection import IntegratedOutputSection
 from .TimePoint import TimePoint
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (ALL, Boolean, DEFAULT,
-                                              EVERY_TIME_INCREMENT, EXCLUDE, INDEPENDENT,
-                                              INTEGRATION_POINTS, J_INTEGRAL, MODEL, MTS, OFF, ON,
-                                              PRESELECT, SPECIFIED, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    ALL,
+    Boolean,
+    DEFAULT,
+    EVERY_TIME_INCREMENT,
+    EXCLUDE,
+    INDEPENDENT,
+    INTEGRATION_POINTS,
+    J_INTEGRAL,
+    MODEL,
+    MTS,
+    OFF,
+    ON,
+    PRESELECT,
+    SPECIFIED,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -20,7 +33,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class OutputModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -35,9 +48,7 @@ class OutputModel(ModelBase):
         variables: Union[Sequence[str], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
         frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
         modes: Union[Literal[C.ALL], Sequence[int]] = ALL,
-        timeInterval: Union[
-            Literal[C.EVERY_TIME_INCREMENT], float
-        ] = EVERY_TIME_INCREMENT,
+        timeInterval: Union[Literal[C.EVERY_TIME_INCREMENT], float] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         timeMarks: Boolean = OFF,
         boltLoad: str = "",
@@ -55,13 +66,11 @@ class OutputModel(ModelBase):
         outputAtPlyTop: Boolean = False,
         outputAtPlyMid: Boolean = True,
         outputAtPlyBottom: Boolean = False,
-        position: Literal[
-            C.INTEGRATION_POINTS, C.AVERAGED_AT_NODES, C.CENTROIDAL, C.NODES
-        ] = INTEGRATION_POINTS,
+        position: Literal[C.INTEGRATION_POINTS, C.AVERAGED_AT_NODES, C.CENTROIDAL, C.NODES] = INTEGRATION_POINTS,
     ) -> FieldOutputRequest:
         """This method creates a FieldOutputRequest object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FieldOutputRequest
@@ -188,9 +197,7 @@ class OutputModel(ModelBase):
         variables: Union[Sequence[str], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
         frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
         modes: Union[Literal[C.ALL], Sequence[int]] = ALL,
-        timeInterval: Union[
-            Literal[C.EVERY_TIME_INCREMENT], float
-        ] = EVERY_TIME_INCREMENT,
+        timeInterval: Union[Literal[C.EVERY_TIME_INCREMENT], float] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         boltLoad: str = "",
         sectionPoints: Union[Literal[C.DEFAULT], Sequence[int]] = DEFAULT,
@@ -213,7 +220,7 @@ class OutputModel(ModelBase):
     ) -> HistoryOutputRequest:
         """This method creates a HistoryOutputRequest object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].HistoryOutputRequest
@@ -339,15 +346,13 @@ class OutputModel(ModelBase):
         surface: Region,
         refPoint: Optional[SymbolicConstant] = None,
         refPointAtCenter: Boolean = OFF,
-        refPointMotion: Literal[
-            C.AVERAGE_TRANSLATION, C.AVERAGE, C.INDEPENDENT
-        ] = INDEPENDENT,
+        refPointMotion: Literal[C.AVERAGE_TRANSLATION, C.AVERAGE, C.INDEPENDENT] = INDEPENDENT,
         localCsys: Optional[str] = None,
         projectOrientation: Boolean = OFF,
     ) -> IntegratedOutputSection:
         """This method creates an IntegratedOutputSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].IntegratedOutputSection
@@ -389,9 +394,7 @@ class OutputModel(ModelBase):
         IntegratedOutputSection
             An :py:class:`~abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection` object.
         """
-        self.integratedOutputSections[
-            name
-        ] = integratedOutputSection = IntegratedOutputSection(
+        self.integratedOutputSections[name] = integratedOutputSection = IntegratedOutputSection(
             name,
             surface,
             refPoint,
@@ -406,7 +409,7 @@ class OutputModel(ModelBase):
     def TimePoint(self, name: str, points: tuple) -> TimePoint:
         """This method creates a TimePoint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TimePoint

@@ -9,7 +9,7 @@ class BoxProfile(Profile):
     """The BoxProfile object defines the properties of a box profile.
     The BoxProfile object is derived from the Profile object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -66,7 +66,7 @@ class BoxProfile(Profile):
     ):
         """This method creates a BoxProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BoxProfile

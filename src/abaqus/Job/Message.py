@@ -11,7 +11,7 @@ class Message:
     messages are not returned if a script is run without the Abaqus/CAE GUI (using the noGUI
     option).
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import job
@@ -20,7 +20,7 @@ class Message:
     """
 
     #: A SymbolicConstant specifying the type of message. Possible values are:
-    #: 
+    #:
     #: - ABORTED
     #: - ANY_JOB
     #: - ANY_MESSAGE_TYPE

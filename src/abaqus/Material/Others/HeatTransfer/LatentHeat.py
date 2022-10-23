@@ -1,10 +1,11 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class LatentHeat:
     """The LatentHeat object specifies a material's latent heat.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -27,7 +28,7 @@ class LatentHeat:
     def __init__(self, table: tuple):
         """This method creates a LatentHeat object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].LatentHeat

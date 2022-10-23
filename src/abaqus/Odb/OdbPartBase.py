@@ -24,7 +24,7 @@ class OdbPartBase:
     """The OdbPart object is similar to the kernel Part object and contains nodes and elements,
     but not geometry.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -66,12 +66,15 @@ class OdbPartBase:
 
     @abaqus_method_doc
     def __init__(
-        self, name: str, embeddedSpace: Literal[C.THREE_D, C.AXISYMMETRIC, C.TWO_D_PLANAR], type: Literal[C.DEFORMABLE_BODY, C.ANALYTIC_RIGID_SURFACE]
+        self,
+        name: str,
+        embeddedSpace: Literal[C.THREE_D, C.AXISYMMETRIC, C.TWO_D_PLANAR],
+        type: Literal[C.DEFORMABLE_BODY, C.ANALYTIC_RIGID_SURFACE],
     ):
         """This method creates an OdbPart object. Nodes and elements are added to this object at a
         later stage.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].Part
@@ -195,9 +198,7 @@ class OdbPartBase:
     def addNodes(self, *args, **kwargs):
         ...
 
-    def assignBeamOrientation(
-        self, region: str, method: Literal[C.N1_COSINES], vector: tuple
-    ):
+    def assignBeamOrientation(self, region: str, method: Literal[C.N1_COSINES], vector: tuple):
         """This method assigns a beam section orientation to a region of a part instance.
 
         Parameters
@@ -315,9 +316,7 @@ class OdbPartBase:
         ...
 
     @abaqus_method_doc
-    def AnalyticRigidSurf2DPlanar(
-        self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0
-    ):
+    def AnalyticRigidSurf2DPlanar(self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0):
         """This method is used to define a two-dimensional AnalyticSurface object on the part
         object.
 
@@ -341,9 +340,7 @@ class OdbPartBase:
         ...
 
     @abaqus_method_doc
-    def AnalyticRigidSurfExtrude(
-        self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0
-    ):
+    def AnalyticRigidSurfExtrude(self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0):
         """This method is used to define a three-dimensional cylindrical AnalyticSurface on the
         part object.
 
@@ -367,9 +364,7 @@ class OdbPartBase:
         ...
 
     @abaqus_method_doc
-    def AnalyticRigidSurfRevolve(
-        self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0
-    ):
+    def AnalyticRigidSurfRevolve(self, name: str, profile: Sequence[AnalyticSurfaceSegment], filletRadius: str = 0):
         """This method is used to define a three-dimensional AnalyticSurface of revolution on the
         part object.
 

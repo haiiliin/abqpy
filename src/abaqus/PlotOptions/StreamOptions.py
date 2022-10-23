@@ -21,7 +21,7 @@ class StreamOptions(_OptionsBase):
       preferences.
     - The stream options associated with a particular viewport.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

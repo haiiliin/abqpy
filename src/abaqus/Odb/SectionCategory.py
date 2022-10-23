@@ -13,7 +13,7 @@ class SectionCategory:
     in the output database. For more information, see Beam Section profile commands and
     Section commands.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -49,7 +49,7 @@ class SectionCategory:
     def __init__(self, name: str, description: str):
         """This method creates a SectionCategory object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].SectionCategory
@@ -72,7 +72,7 @@ class SectionCategory:
     def SectionPoint(self, number: int, description: str) -> SectionPoint:
         """This method creates a SectionPoint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].SectionCategory

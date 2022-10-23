@@ -9,7 +9,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 class BrittleFailure:
     """The BrittleFailure object specifies the brittle failure of the material.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -20,14 +20,14 @@ class BrittleFailure:
         The table data for this object are:
 
         - If parent :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` member **type** = STRAIN the table data specify the following:
-        
+
             - Direct cracking failure strain.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
         - If parent :py:class:`~abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking` member **type** = DISPLACEMENT or **type** = GFI the table data specify the following:
-        
+
             - Direct cracking failure displacement.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
@@ -49,7 +49,7 @@ class BrittleFailure:
     ):
         """This method creates a BrittleFailure object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].brittleCracking.BrittleFailure

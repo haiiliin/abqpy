@@ -10,7 +10,7 @@ class GeometricRestriction:
     members of the GeometricRestriction object are common to all objects derived from
     GeometricRestriction.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
