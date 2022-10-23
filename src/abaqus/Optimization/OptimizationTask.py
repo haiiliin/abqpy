@@ -44,16 +44,10 @@ from .TopologyRotationalSymmetry import TopologyRotationalSymmetry
 from .TurnControl import TurnControl
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (ABSOLUTE_EQUAL, AUTO, AXIS_1, Boolean, DEMOLD_REGION,
-<<<<<<< HEAD
                                               FREE_FORM, MAXIMUM, MINIMIZE, MINIMUM,
                                               MODEL, OFF, ON, SUM,
-                                              SymbolicConstant, VECTOR)
-=======
-                                              FREE_FORM, MAXIMUM, MILLING_REGION, MINIMIZE, MINIMUM,
-                                              MODEL, OFF, ON, OVERHANG_REGION, SUM,
-                                              TRUE, VECTOR)
+                                              VECTOR)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
 
 
 @abaqus_class_doc
@@ -443,15 +437,9 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         region: Region,
         csys: Optional[int] = None,
-<<<<<<< HEAD
         masterPoint: Optional[str] = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-        movementRestriction: SymbolicConstant = VECTOR,
-=======
-        mainPoint: Optional[str] = None,
-        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+        masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         movementRestriction: Literal[C.MAGNITUDE, C.DIRECTION, C.VECTOR] = VECTOR,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         presumeFeasibleRegionAtStart: Boolean = ON,
         u1: Boolean = ON,
         u2: Boolean = ON,
@@ -530,13 +518,8 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         csys: Optional[int] = None,
         drawAngle: float = 0,
-<<<<<<< HEAD
         masterPoint: Optional[str] = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
-        mainPoint: Optional[str] = None,
-        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
+        masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -783,11 +766,7 @@ class OptimizationTask(OptimizationTaskBase):
         collisionCheckRegion: Literal[C.DEMOLD_REGION] = DEMOLD_REGION,
         csys: Optional[int] = None,
         drawAngle: float = 0,
-<<<<<<< HEAD
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
-        mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
+        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -869,13 +848,7 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         maxThickness: float = 0,
         minThickness: float = 0,
-<<<<<<< HEAD
-        sizeRestriction: SymbolicConstant = MINIMUM,
-=======
         sizeRestriction: Literal[C.MINIMUM, C.MAXIMUM] = MINIMUM,
-        assignNodeGroupRegion: str = OFF,
-        nodeGroupRegion: str = "",
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ) -> ShapeMemberSize:
         """This method creates a ShapeMemberSize object.
 
@@ -921,11 +894,7 @@ class OptimizationTask(OptimizationTaskBase):
         clientDirection: tuple,
         region: Region,
         csys: Optional[int] = None,
-<<<<<<< HEAD
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
-        mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
+        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -994,11 +963,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         region: Region,
         csys: Optional[int] = None,
-<<<<<<< HEAD
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
-        mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
+        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -1064,13 +1029,8 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         angle: float = 0,
         csys: Optional[int] = None,
-<<<<<<< HEAD
         masterPoint: Optional[str] = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
-        mainPoint: Optional[str] = None,
-        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
+        masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         startPoint: Optional[float] = None,
         tolerance1: float = 0,
@@ -1495,13 +1455,8 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         csys: Optional[int] = None,
         drawAngle: float = 0,
-<<<<<<< HEAD
         masterPoint: Optional[str] = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
-        mainPoint: Optional[str] = None,
-        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
+        masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -1736,138 +1691,6 @@ class OptimizationTask(OptimizationTaskBase):
         return geometricRestriction
 
     @abaqus_method_doc
-<<<<<<< HEAD
-                                     
-=======
-    def TopologyMillingControl(
-        self,
-        name: str,
-        millingDirections: tuple,
-        region: Region,
-        csys: Optional[int] = None,
-        millingCheckRegion: Literal[C.MILLING_REGION] = MILLING_REGION,
-        radius: Optional[float] = None,
-    ) -> TopologyMillingControl:
-        """This method creates a TopologyMillingControl object.
-
-        .. note:: 
-            This function can be accessed by::
-
-                mdb.models[name].optimizationTasks[name].TopologyMillingControl
-
-        .. versionadded:: 2022
-            The `TopologyMillingControl` method was added.
-
-        Parameters
-        ----------
-        name
-            A String specifying the geometric restriction repository key.
-        millingDirections
-            A tuple of VertexArray objects of length 2 specifying the milling directions. Each point
-            can be specified through a tuple of coordinates instead of through a ConstrainedSketchVertex.
-        region
-            A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the geometric restriction is applied.
-        csys
-            None or a DatumCsys object specifying the local coordinate system of the
-            **millingDirections**. If **csys** = None, the global coordinate system is used. When this
-            member is queried, it returns an Int indicating the identifier of the DatumCsys. The
-            default value is None.
-        millingCheckRegion
-            The SymbolicConstant MILLING_REGION or a Region object specifying the milling check
-            region. If the value is MILLING_REGION, the value of **region** is used as both the
-            milling control region and the milling check region. The default value is
-            MILLING_REGION.
-        radius
-            A Float specifying the radius for the collision check during the removal of the elements
-            for the milling criteria.
-
-        Returns
-        -------
-        TopologyMillingControl
-            A :py:class:`~abaqus.Optimization.TopologyMillingControl.TopologyMillingControl` object.
-        """
-        self.geometricRestrictions[
-            name
-        ] = geometricRestriction = TopologyMillingControl(
-            name, millingDirections, region, csys, millingCheckRegion, radius
-        )
-        return geometricRestriction
-
-    @abaqus_method_doc
-    def TopologyOverhangControl(
-        self,
-        name: str,
-        pullDirection: tuple,
-        region: Region,
-        csys: Optional[int] = None,
-        draftAngle: float = 45,
-        overhangCheckRegion: Literal[C.OVERHANG_REGION] = OVERHANG_REGION,
-        pointRegion: Region = Region(),
-        radius: Optional[float] = None,
-        technique: Literal[C.POINT, C.NONE, C.AUTO] = AUTO,
-    ) -> TopologyOverhangControl:
-        """This method creates a TopologyOverhangControl object.
-
-        .. note::
-            This function can be accessed by::
-
-                mdb.models[name].optimizationTasks[name].TopologyOverhangControl
-
-        .. versionadded:: 2019
-            The `TopologyOverhangControl` method was added.
-
-        Parameters
-        ----------
-        name
-            A String specifying the geometric restriction repository key.
-        pullDirection
-            A VertexArray object of length 2 specifying the overhang control print direction.
-            Instead of through a ConstrainedSketchVertex, each point can be specified through a tuple of coordinates.
-        region
-            A Region object specifying the region to which the geometric restriction is applied.
-        csys
-            None or a DatumCsys object specifying the local coordinate system of the
-            **pullDirection**. If **csys** = None, the global coordinate system is used. When this member
-            is queried, it returns an Int indicating the identifier of the DatumCsys. The default
-            value is None.
-        draftAngle
-            A Float specifying the overhang angle. The default value is 45.0.
-        overhangCheckRegion
-            The SymbolicConstant OVERHANG_REGION or a Region object specifying the overhang check
-            region. If the value is OVERHANG_REGION, the value of **region** is used as both the
-            overhang control region and the overhang check region. The default value is
-            OVERHANG_REGION.
-        pointRegion
-            A Region object specifying the point on a plane perpendicular to the **pullDirection**
-            that is used to specify the base plane when **technique** is POINT.
-        radius
-            A Float specifying the radius to define the size of the cones that are used in the
-            internal check for the overhang criteria.
-        technique
-            A SymbolicConstant specifying the overhang control technique used to define the base
-            plane. Possible values are AUTO, POINT, and NONE. The default value is AUTO.
-
-        Returns
-        -------
-            A TopologyOverhangControl object.
-        """
-        self.geometricRestrictions[
-            name
-        ] = geometricRestriction = TopologyOverhangControl(
-            name,
-            pullDirection,
-            region,
-            csys,
-            draftAngle,
-            overhangCheckRegion,
-            pointRegion,
-            radius,
-            technique,
-        )
-        return geometricRestriction
-
-    @abaqus_method_doc
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     def TopologyPlanarSymmetry(
         self,
         name: str,
@@ -2009,13 +1832,8 @@ class OptimizationTask(OptimizationTaskBase):
         clientDirection: tuple,
         region: Region,
         csys: Optional[int] = None,
-<<<<<<< HEAD
         masterPoint: Optional[str] = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
-        mainPoint: Optional[str] = None,
-        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
+        masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,

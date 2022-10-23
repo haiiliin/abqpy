@@ -46,16 +46,10 @@ from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import (ALLOW_SUBCYCLING, ALL_NODAL_DIAMETER, AMBIENT,
                                               BLOCKING_ALL, Boolean, COMPUTED, COMPUTED_TOLERANCE,
                                               CONTACT, DEFAULT, GEOMETRY, KINEMATIC, LAGRANGIAN,
-<<<<<<< HEAD
-                                              MODEL, OFF, OMIT, ON, PLANE, PRESSURE, SURFACE_TO_SURFACE,
-                                              SymbolicConstant, TABULAR,
-                                              TO_ENVIRONMENT, UNIFORM, UNSET, USE_GEOMETRY)
-=======
-                                              MODEL, NONE, OFF, OMIT, ON, PLANE, PRESSURE, RIGHT,
-                                              SURFACE_TO_SURFACE, TABULAR, TO_ENVIRONMENT,
+                                              MODEL, NONE, OFF, OMIT, ON, PLANE, PRESSURE, SURFACE_TO_SURFACE, TABULAR,
+                                              TO_ENVIRONMENT,
                                               UNIFORM, UNSET, USE_GEOMETRY)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
 
 
 @abaqus_class_doc
@@ -1770,15 +1764,9 @@ class InteractionModel(
         self,
         name: str,
         createStepName: str,
-<<<<<<< HEAD
         master: Region,
         slave: Region,
-        sliding: SymbolicConstant,
-=======
-        main: Region,
-        secondary: Region,
         sliding: Literal[C.SMALL, C.FINITE],
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         interactionProperty: str,
         mechanicalConstraint: Literal[C.PENALTY, C.KINEMATIC] = KINEMATIC,
         weightingFactorType: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,
@@ -1890,11 +1878,7 @@ class InteractionModel(
         slave: Region,
         sliding: Literal[C.SMALL, C.FINITE],
         interactionProperty: str,
-<<<<<<< HEAD
-        interferenceType: Optional[SymbolicConstant] = None,
-=======
         interferenceType: Literal[C.UNIFORM, C.NONE, C.SHRINK_FIT] = NONE,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         overclosure: float = 0,
         interferenceDirectionType: Literal[C.COMPUTED, C.DIRECTION_COSINE] = COMPUTED,
         direction: tuple = (),
@@ -1902,11 +1886,7 @@ class InteractionModel(
         smooth: float = 0,
         hcrit: float = 0,
         extensionZone: float = 0,
-<<<<<<< HEAD
-        adjustMethod: Optional[SymbolicConstant] = None,
-=======
         adjustMethod: Literal[C.SET, C.TOLERANCE, C.OVERCLOSED, C.NONE] = NONE,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         adjustTolerance: float = 0,
         adjustSet: Optional[Region] = None,
         enforcement: Literal[C.NODE_TO_SURFACE, C.SURFACE_TO_SURFACE] = SURFACE_TO_SURFACE,
@@ -1921,15 +1901,8 @@ class InteractionModel(
         datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
-<<<<<<< HEAD
-        surfaceSmoothing: Optional[SymbolicConstant] = None,
-        bondingSet: Optional[Region] = None,
-=======
         surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
         bondingSet: Optional[Region] = None,
-        handedness: Literal[C.RIGHT, C.LEFT] = RIGHT,
-        normalAdjustment: Optional[Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT]] = None,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ) -> SurfaceToSurfaceContactStd:
         """This method creates a SurfaceToSurfaceContactStd object.
 

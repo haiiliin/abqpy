@@ -212,12 +212,7 @@ class ContourOptions(DGContourOptions):
         edgeColorLine: str = "",
         edgeColorBandedQuilt: str = "",
         spectrum: str = "",
-<<<<<<< HEAD
-        outsideLimitsMode: Optional[SymbolicConstant] = None,
-=======
-        reversedContourLegendRange: Boolean = OFF,
         outsideLimitsMode: Optional[Literal[C.SPECIFY, C.SPECTRUM]] = None,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         outsideLimitsAboveColor: str = "",
         outsideLimitsBelowColor: str = "",
         intervalLineAttributes: Optional[Literal[C.LINE]] = None,
