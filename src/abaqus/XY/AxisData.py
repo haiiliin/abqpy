@@ -5,8 +5,7 @@ from typing_extensions import Literal
 
 from .QuantityType import QuantityType
 from .XYCurveArray import XYCurveArray
-from ..UtilityAndView.abaqusConstants import (AUTOCOMPUTE, AUTOMATIC, Boolean, LINEAR, ON,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import AUTOCOMPUTE, AUTOMATIC, Boolean, LINEAR, ON, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -15,7 +14,7 @@ class AxisData:
     """The AxisData object is used to store the data attributes of axes. An :py:class:`~abaqus.XY.AxisData.AxisData` object is
     automatically created when creating an Axis object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

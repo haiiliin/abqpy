@@ -9,14 +9,13 @@ from .OdbSet import OdbSet
 
 @abaqus_class_doc
 class OdbInstance(OdbInstanceBase):
-
     @abaqus_method_doc
     def NodeSet(self, name: str, nodes: Sequence[OdbMeshNode]) -> OdbSet:
         """This method creates a node set from an array of OdbMeshNode objects (for part
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
         assembly-level sets).
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet

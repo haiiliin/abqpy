@@ -8,8 +8,7 @@ from .DiscreteField import DiscreteField
 from .ExpressionField import ExpressionField
 from .MappedField import MappedField
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import (Boolean, CARTESIAN, NODES, OFF, POINT, RELATIVE,
-                                              SURFACE, XYPLANE, XYZ)
+from ..UtilityAndView.abaqusConstants import Boolean, CARTESIAN, NODES, OFF, POINT, RELATIVE, SURFACE, XYPLANE, XYZ
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -30,7 +29,7 @@ class FieldModel(ModelBase):
     ) -> DiscreteField:
         """This method creates a DiscreteField object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].DiscreteField
@@ -89,7 +88,7 @@ class FieldModel(ModelBase):
     ) -> ExpressionField:
         """This method creates an ExpressionField object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ExpressionField
@@ -117,9 +116,7 @@ class FieldModel(ModelBase):
         ------
         TextException
         """
-        self.analyticalFields[name] = expressionField = ExpressionField(
-            name, expression, localCsys, description
-        )
+        self.analyticalFields[name] = expressionField = ExpressionField(name, expression, localCsys, description)
         return expressionField
 
     @abaqus_method_doc
@@ -146,7 +143,7 @@ class FieldModel(ModelBase):
     ) -> MappedField:
         """This method creates an MappedField object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].MappedField

@@ -10,7 +10,7 @@ class HomogeneousSolidSection(SolidSection):
     """The HomogeneousSolidSection object defines the properties of a solid section.
     The HomogeneousSolidSection object is derived from the SolidSection object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -37,12 +37,10 @@ class HomogeneousSolidSection(SolidSection):
     thickness: Optional[float] = None
 
     @abaqus_method_doc
-    def __init__(
-        self, name: str, material: str, thickness: Optional[float] = None
-    ) -> None:
+    def __init__(self, name: str, material: str, thickness: Optional[float] = None) -> None:
         """This method creates a HomogeneousSolidSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].HomogeneousSolidSection

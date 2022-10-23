@@ -14,7 +14,7 @@ class PropertyAssembly(AssemblyBase):
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import assembly
@@ -28,12 +28,14 @@ class PropertyAssembly(AssemblyBase):
         sectionName: str,
         thicknessAssignment: Literal[C.FROM_SECTION, C.FROM_GEOMETRY] = FROM_SECTION,
         offset: float = 0,
-        offsetType: Literal[C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.SINGLE_VALUE, C.FROM_GEOMETRY, C.OFFSET_FIELD] = SINGLE_VALUE,
+        offsetType: Literal[
+            C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.SINGLE_VALUE, C.FROM_GEOMETRY, C.OFFSET_FIELD
+        ] = SINGLE_VALUE,
         offsetField: str = "",
     ):
         """This method creates a SectionAssignment object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].SectionAssignment
@@ -64,8 +66,6 @@ class PropertyAssembly(AssemblyBase):
         SectionAssignment
             A :py:class:`~abaqus.Property.SectionAssignment.SectionAssignment` object.
         """
-        sectionAssignment = SectionAssignment(
-            region, sectionName, thicknessAssignment, offset, offsetType, offsetField
-        )
+        sectionAssignment = SectionAssignment(region, sectionName, thicknessAssignment, offset, offsetType, offsetField)
         self.sectionAssignments.append(sectionAssignment)
         return sectionAssignment

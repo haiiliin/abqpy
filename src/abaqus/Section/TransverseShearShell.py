@@ -1,11 +1,12 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class TransverseShearShell:
     """The TransverseShearShell object defines the transverse shear stiffness properties of a
     shell section.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -31,7 +32,7 @@ class TransverseShearShell:
     def __init__(self, k11: float, k22: float, k12: float):
         """This method creates a TransverseShearShell object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sections[name].TransverseShearShell

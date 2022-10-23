@@ -7,7 +7,7 @@ from ...UtilityAndView.abaqusConstants import Boolean, OFF
 class Potential:
     """The Potential object defines an anisotropic yield/creep model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -20,7 +20,7 @@ class Potential:
             session.odbs[name].materials[name].viscous.potential
 
         The table data for this object are:
-        
+
         - :math:`R_{11}`.
         - :math:`R_{22}`.
         - :math:`R_{33}`.
@@ -38,12 +38,10 @@ class Potential:
     """
 
     @abaqus_method_doc
-    def __init__(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ):
+    def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a Potential object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].creep.Potential

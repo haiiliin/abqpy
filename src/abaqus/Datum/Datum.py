@@ -7,7 +7,7 @@ class Datum:
     no explicit constructor. The methods and members of the Datum object are common to all
     objects derived from the Datum.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

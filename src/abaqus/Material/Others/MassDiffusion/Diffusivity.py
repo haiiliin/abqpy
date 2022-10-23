@@ -11,7 +11,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 class Diffusivity:
     r"""The Diffusivity object specifies mass diffusivity.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -22,7 +22,7 @@ class Diffusivity:
         The table data for this object are:
 
         - If **type** = ISOTROPIC, the table data specify the following:
-        
+
             - Diffusivity, :math:`D`.
             - Concentration, :math:`c`.
             - Temperature, if the data depend on temperature.
@@ -30,7 +30,7 @@ class Diffusivity:
             - Value of the second field variable.
             - Etc.
         - If **type** = ORTHOTROPIC, the table data specify the following:
-        
+
             - :math:`D_{11}`.
             - :math:`D_{22}`.
             - :math:`D_{33}`.
@@ -40,7 +40,7 @@ class Diffusivity:
             - Value of the second field variable.
             - Etc.
         - If **type** = ANISOTROPIC, the table data specify the following:
-        
+
             - :math:`D_{11}`.
             - :math:`D_{12}`.
             - :math:`D_{22}`.
@@ -75,7 +75,7 @@ class Diffusivity:
     ):
         """This method creates a Diffusivity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Diffusivity

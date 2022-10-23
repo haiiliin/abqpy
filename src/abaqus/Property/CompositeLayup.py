@@ -12,9 +12,20 @@ from ..Section.CompositeShellSection import CompositeShellSection
 from ..Section.GeometryShellSection import GeometryShellSection
 from ..Section.HomogeneousShellSection import HomogeneousShellSection
 from ..Section.SectionLayerArray import SectionLayerArray
-from ..UtilityAndView.abaqusConstants import (AXIS_1, Boolean, DEFAULT, GLOBAL, GRADIENT,
-                                              NO_IDEALIZATION, OFF, ROTATION_NONE, SHELL, SIMPSON,
-                                              SymbolicConstant, UNIFORM)
+from ..UtilityAndView.abaqusConstants import (
+    AXIS_1,
+    Boolean,
+    DEFAULT,
+    GLOBAL,
+    GRADIENT,
+    NO_IDEALIZATION,
+    OFF,
+    ROTATION_NONE,
+    SHELL,
+    SIMPSON,
+    SymbolicConstant,
+    UNIFORM,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -22,7 +33,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class CompositeLayup:
     """The CompositeLayup object is used to specify a composite layup on a part.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -39,7 +50,7 @@ class CompositeLayup:
     section: GeometryShellSection = GeometryShellSection()
 
     #: A :py:class:`~abaqus.Property.MaterialOrientation.MaterialOrientation` object.
-    orientation: MaterialOrientation = MaterialOrientation(Set(''))
+    orientation: MaterialOrientation = MaterialOrientation(Set(""))
 
     #: A :py:class:`~abaqus.Property.CompositePlyArray.CompositePlyArray` object specifying the plies that make up this composite layup.
     plies: CompositePlyArray = []
@@ -77,7 +88,9 @@ class CompositeLayup:
         self,
         name: str,
         description: str = "",
-        offsetType: Literal[C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.GLOBAL, C.SINGLE_VALUE, C.OFFSET_FIELD, C.SHELL] = GLOBAL,
+        offsetType: Literal[
+            C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.GLOBAL, C.SINGLE_VALUE, C.OFFSET_FIELD, C.SHELL
+        ] = GLOBAL,
         offsetField: str = "",
         offsetValues: float = 0,
         elementType: Literal[C.SOLID, C.SHELL, C.CONTINUUM_SHELL] = SHELL,
@@ -85,7 +98,7 @@ class CompositeLayup:
     ):
         """This method creates a CompositeLayup object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].CompositeLayup
@@ -144,7 +157,9 @@ class CompositeLayup:
     def setValues(
         self,
         description: str = "",
-        offsetType: Literal[C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.GLOBAL, C.SINGLE_VALUE, C.OFFSET_FIELD, C.SHELL] = GLOBAL,
+        offsetType: Literal[
+            C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.GLOBAL, C.SINGLE_VALUE, C.OFFSET_FIELD, C.SHELL
+        ] = GLOBAL,
         offsetField: str = "",
         offsetValues: float = 0,
         elementType: Literal[C.SOLID, C.SHELL, C.CONTINUUM_SHELL] = SHELL,
@@ -196,7 +211,7 @@ class CompositeLayup:
     ) -> CompositePly:
         """This method creates a CompositePly object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].CompositeLayup
@@ -292,7 +307,9 @@ class CompositeLayup:
         name: str,
         layup: SectionLayerArray,
         symmetric: Boolean = OFF,
-        thicknessType: Literal[C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD] = UNIFORM,
+        thicknessType: Literal[
+            C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD
+        ] = UNIFORM,
         preIntegrate: Boolean = OFF,
         poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
@@ -309,7 +326,7 @@ class CompositeLayup:
     ) -> CompositeShellSection:
         """This method creates a CompositeShellSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].CompositeLayup
@@ -410,7 +427,9 @@ class CompositeLayup:
         self,
         nodalThicknessField: str = "",
         thicknessField: str = "",
-        thicknessType: Literal[C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD] = UNIFORM,
+        thicknessType: Literal[
+            C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD
+        ] = UNIFORM,
         preIntegrate: Boolean = OFF,
         poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
@@ -423,7 +442,7 @@ class CompositeLayup:
     ) -> GeometryShellSection:
         """This method creates a GeometryShellSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].CompositeLayup
@@ -506,7 +525,9 @@ class CompositeLayup:
         material: str,
         thickness: float = 0,
         numIntPts: int = 5,
-        thicknessType: Literal[C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD] = UNIFORM,
+        thicknessType: Literal[
+            C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD
+        ] = UNIFORM,
         preIntegrate: Boolean = OFF,
         poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
@@ -522,7 +543,7 @@ class CompositeLayup:
     ) -> HomogeneousShellSection:
         """This method creates a HomogeneousShellSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].CompositeLayup

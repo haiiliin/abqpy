@@ -13,7 +13,7 @@ class QuantityType:
     odb.
     QuantityType objects can be created using the methods described below.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -289,7 +289,7 @@ class QuantityType:
     ):
         """This method creates a QuantityType object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.QuantityType
@@ -374,7 +374,7 @@ class QuantityType:
             - VOLUME_FLUX.
             - VOLUME_FLUX_AREA, specifying "Volume flux per area".
             - VOLUME_FRACTION.
-            
+
             The default value is NONE
 
         Returns

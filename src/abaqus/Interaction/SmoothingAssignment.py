@@ -10,7 +10,7 @@ class SmoothingAssignment:
     surfaces in ContactExp and ContactStd objects. The SmoothingAssignment object has no
     constructor or members.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -22,7 +22,9 @@ class SmoothingAssignment:
     """
 
     @abaqus_method_doc
-    def changeValuesInStep(self, stepName: str, index: int, value: Literal[C.TOROIDAL, C.SPHERICAL, C.REVOLUTION, C.NONE]):
+    def changeValuesInStep(
+        self, stepName: str, index: int, value: Literal[C.TOROIDAL, C.SPHERICAL, C.REVOLUTION, C.NONE]
+    ):
         """This method allows modification of surface smoothing assignments already defined on
         surfaces in a given step.
 
@@ -55,7 +57,7 @@ class SmoothingAssignment:
         assignments
             A sequence of tuples specifying the surface smoothing assignments. Each tuple contains
             two entries:
-            
+
             - A region object specifying the surface to which the smoothing is assigned.
             - A SymbolicConstant specifying the surface smoothing value to be used for the surface.
               Possible values of the SymbolicConstant are NONE, REVOLUTION, SPHERICAL, and TOROIDAL.

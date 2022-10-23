@@ -1,5 +1,6 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class DataTable:
     """The DataTable object is used to specify the parameter table of the respective parameter
@@ -9,7 +10,7 @@ class DataTable:
     should be created when all the required ParameterColumn objects are created for the
     current ParameterTable.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name].tableCollections[name].parameterTables[name].dataTables[i]
@@ -32,7 +33,7 @@ class DataTable:
     def __init__(self, label: str):
         """This method creates a DataTable object and places it in the dataTables array.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].tableCollections[name].parameterTables[name].DataTable

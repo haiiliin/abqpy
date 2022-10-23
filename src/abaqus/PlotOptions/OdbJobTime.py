@@ -5,7 +5,7 @@ from abqpy.decorators import abaqus_class_doc
 class OdbJobTime:
     """The OdbJobTime object stores the analysis time of a job.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

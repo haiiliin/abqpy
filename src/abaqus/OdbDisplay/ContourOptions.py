@@ -4,9 +4,20 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from ..PlotOptions.DGContourOptions import DGContourOptions
-from ..UtilityAndView.abaqusConstants import (ALL_FRAMES, BANDED, Boolean, MEDIUM, N2, OFF, ON,
-                                              SOLID, SymbolicConstant, TEXTURE_MAPPED, UNIFORM,
-                                              VERY_THIN)
+from ..UtilityAndView.abaqusConstants import (
+    ALL_FRAMES,
+    BANDED,
+    Boolean,
+    MEDIUM,
+    N2,
+    OFF,
+    ON,
+    SOLID,
+    SymbolicConstant,
+    TEXTURE_MAPPED,
+    UNIFORM,
+    VERY_THIN,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -25,7 +36,7 @@ class ContourOptions(DGContourOptions):
     - The contour options associated with a particular viewport.
     The ContourOptions object is derived from the DGContourOptions object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -113,7 +124,7 @@ class ContourOptions(DGContourOptions):
     #: A String specifying the name of the color spectrum to be used in the contour plot. The
     #: default value is "Rainbow".
     spectrum: str = ""
-    
+
     #: A Boolean specifying whether the contour legend should show the lowest value at the top
     #: and the highest value at the bottom (**reversedContourLegendRange=ON**) or vice versa. The
     #: default value is OFF.
@@ -224,7 +235,9 @@ class ContourOptions(DGContourOptions):
         maxValue: Optional[float] = None,
         minAutoCompute: Boolean = ON,
         minValue: Optional[float] = None,
-        animationAutoLimits: Literal[C.CURRENT_FRAME, C.RECOMPUTE_EACH_FRAME, C.ALL_FRAMES, C.FIRST_AND_LAST] = ALL_FRAMES,
+        animationAutoLimits: Literal[
+            C.CURRENT_FRAME, C.RECOMPUTE_EACH_FRAME, C.ALL_FRAMES, C.FIRST_AND_LAST
+        ] = ALL_FRAMES,
         edgeColorLine: str = "",
         edgeColorBandedQuilt: str = "",
         spectrum: str = "",

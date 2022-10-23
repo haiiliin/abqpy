@@ -8,7 +8,7 @@ class RayleighDampingComponent:
     """A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent` object is used to define Rayleigh damping over a range of
     modes.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step

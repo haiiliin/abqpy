@@ -5,8 +5,7 @@ from typing_extensions import Literal
 
 from .Job import Job
 from .MessageArray import MessageArray
-from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, DOMAIN, OFF, ON,
-                                              PERCENTAGE, SINGLE)
+from ..UtilityAndView.abaqusConstants import ANALYSIS, Boolean, DEFAULT, DOMAIN, OFF, ON, PERCENTAGE, SINGLE
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -16,7 +15,7 @@ class ModelJob(Job):
     (MDB).
     The ModelJob object is derived from the Job object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import job
@@ -86,7 +85,9 @@ class ModelJob(Job):
     #: A SymbolicConstant specifying whether to use the double precision version of
     #: Abaqus/Explicit. Possible values are SINGLE, FORCE_SINGLE, DOUBLE,
     #: DOUBLE_CONSTRAINT_ONLY, and DOUBLE_PLUS_PACK. The default value is SINGLE.
-    explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = SINGLE
+    explicitPrecision: Literal[
+        C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK
+    ] = SINGLE
 
     #: A SymbolicConstant specifying the precision of the nodal output written to the output
     #: database. Possible values are SINGLE and FULL. The default value is SINGLE.
@@ -121,7 +122,9 @@ class ModelJob(Job):
     #: A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,
     #: RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If the
     #: **message** member is empty, **status** is set to NONE.
-    status: Optional[Literal[C.SUBMITTED, C.RUNNING, C.ABORTED, C.TERMINATED, C.COMPLETED, C.CHECK_RUNNING, C.CHECK_COMPLETED]] = None
+    status: Optional[
+        Literal[C.SUBMITTED, C.RUNNING, C.ABORTED, C.TERMINATED, C.COMPLETED, C.CHECK_RUNNING, C.CHECK_COMPLETED]
+    ] = None
 
     #: A String specifying the name of the queue to which to submit the job. The default value
     #: is an empty string.Note:You can use the **queue** argument when creating a Job object on a
@@ -169,7 +172,9 @@ class ModelJob(Job):
         numCpus: int = 1,
         memory: int = 90,
         memoryUnits: Literal[C.PERCENTAGE, C.MEGA_BYTES, C.GIGA_BYTES] = PERCENTAGE,
-        explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = SINGLE,
+        explicitPrecision: Literal[
+            C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK
+        ] = SINGLE,
         nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE,
         parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN,
         numDomains: int = 1,
@@ -177,12 +182,12 @@ class ModelJob(Job):
         multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT,
         licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT,
         *args,
-        **kwargs
+        **kwargs,
     ):
         """This method creates an analysis job using a model on a model database (MDB) for the
         model definition.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.Job

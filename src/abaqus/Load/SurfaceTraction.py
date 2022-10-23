@@ -5,8 +5,7 @@ from typing_extensions import Literal
 
 from .Load import Load
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (AXIS_1, Boolean, OFF, ON, SHEAR, SymbolicConstant,
-                                              UNIFORM, UNSET)
+from ..UtilityAndView.abaqusConstants import AXIS_1, Boolean, OFF, ON, SHEAR, SymbolicConstant, UNIFORM, UNSET
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -15,7 +14,7 @@ class SurfaceTraction(Load):
     """The SurfaceTraction object defines surface traction on a region.
     The SurfaceTraction object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -99,7 +98,7 @@ class SurfaceTraction(Load):
     ):
         """This method creates a SurfaceTraction object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceTraction

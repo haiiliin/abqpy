@@ -9,7 +9,7 @@ from ...UtilityAndView.abaqusConstants import Boolean, OFF
 class VolumetricTestData:
     r"""The VolumetricTestData object provides volumetric test data.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -24,20 +24,20 @@ class VolumetricTestData:
         The table data for this object are:
 
         - For a hyperelastic or hyperfoam material model, the table data specify the following:
-        
+
             - Pressure, :math:`p`.
             - Volume ratio, :math:`J` (current volume/original volume).
-            
-        - For a viscoelastic material model, the values depend on the value of the **time** member of the 
+
+        - For a viscoelastic material model, the values depend on the value of the **time** member of the
           :py:class:`~abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic` object.
-            
+
             - If **time** = RELAXATION_TEST_DATA, the table data specify the following:
-            
+
                 - Normalized volumetric (bulk) modulus :math:`k_{R}(t), \quad\left(0 \leq k_{R}(t) \leq 1\right)`
                 - Time :math:`t (t>0)`.
-                
+
             - If **time** = CREEP_TEST_DATA, the table data specify the following:
-            
+
                 - Normalized volumetric (bulk) compliance :math:`j_{K}(t), \quad\left(j_{K}(t) \geq 1\right)`.
                 - Time :math:`t(t>0)`
 
@@ -57,7 +57,7 @@ class VolumetricTestData:
     ):
         """This method creates a VolumetricTestData object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].hyperelastic.VolumetricTestData

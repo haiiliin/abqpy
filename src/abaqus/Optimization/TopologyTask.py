@@ -9,9 +9,19 @@ from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
 from .StopCondition import StopCondition
-from ..UtilityAndView.abaqusConstants import (AVERAGE_EDGE_LENGTH, Boolean, DEFAULT,
-                                              GENERAL_OPTIMIZATION, MEDIUM, MODEL, NORMAL, OFF, ON,
-                                              STANDARD, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    AVERAGE_EDGE_LENGTH,
+    Boolean,
+    DEFAULT,
+    GENERAL_OPTIMIZATION,
+    MEDIUM,
+    MODEL,
+    NORMAL,
+    OFF,
+    ON,
+    STANDARD,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -20,7 +30,7 @@ class TopologyTask(OptimizationTask):
     """The TopologyTask object defines a topology task.
     The TopologyTask object is derived from the OptimizationTask object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -220,14 +230,19 @@ class TopologyTask(OptimizationTask):
         numTrackedModes: int = 5,
         objectiveFunctionDeltaStopCriteria: Optional[float] = None,
         region: Literal[C.MODEL] = MODEL,
-        softDeletionMethod: Literal[C.STANDARD, C.VOLUME_COMPRESSION, C.MAX_SHEAR_STRAIN, C.AGGRESSIVE, C.MIN_PRINCIPAL_STRAIN, C.MAX_ELASTOPLASTIC_STRAIN] = STANDARD,
+        softDeletionMethod: Literal[
+            C.STANDARD,
+            C.VOLUME_COMPRESSION,
+            C.MAX_SHEAR_STRAIN,
+            C.AGGRESSIVE,
+            C.MIN_PRINCIPAL_STRAIN,
+            C.MAX_ELASTOPLASTIC_STRAIN,
+        ] = STANDARD,
         softDeletionRadius: float = 0,
         softDeletionRegion: Optional[str] = None,
         softDeletionThreshold: Optional[float] = None,
         stepSize: Literal[C.SMALL, C.LARGE, C.MODERATE, C.VERY_SMALL, C.DYNAMIC, C.MEDIUM] = MEDIUM,
-        stiffnessMassDamping: Union[
-            Literal[C.AVERAGE_EDGE_LENGTH], float
-        ] = AVERAGE_EDGE_LENGTH,
+        stiffnessMassDamping: Union[Literal[C.AVERAGE_EDGE_LENGTH], float] = AVERAGE_EDGE_LENGTH,
         stopCriteriaDesignCycle: int = 4,
         structuralMassDamping: Optional[float] = None,
         viscousMassDamping: Optional[float] = None,
@@ -236,7 +251,7 @@ class TopologyTask(OptimizationTask):
     ):
         """This method creates a TopologyTask object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TopologyTask
@@ -394,14 +409,19 @@ class TopologyTask(OptimizationTask):
         numTrackedModes: int = 5,
         objectiveFunctionDeltaStopCriteria: Optional[float] = None,
         region: Literal[C.MODEL] = MODEL,
-        softDeletionMethod: Literal[C.STANDARD, C.VOLUME_COMPRESSION, C.MAX_SHEAR_STRAIN, C.AGGRESSIVE, C.MIN_PRINCIPAL_STRAIN, C.MAX_ELASTOPLASTIC_STRAIN] = STANDARD,
+        softDeletionMethod: Literal[
+            C.STANDARD,
+            C.VOLUME_COMPRESSION,
+            C.MAX_SHEAR_STRAIN,
+            C.AGGRESSIVE,
+            C.MIN_PRINCIPAL_STRAIN,
+            C.MAX_ELASTOPLASTIC_STRAIN,
+        ] = STANDARD,
         softDeletionRadius: float = 0,
         softDeletionRegion: Optional[str] = None,
         softDeletionThreshold: Optional[float] = None,
         stepSize: Literal[C.SMALL, C.LARGE, C.MODERATE, C.VERY_SMALL, C.DYNAMIC, C.MEDIUM] = MEDIUM,
-        stiffnessMassDamping: Union[
-            Literal[C.AVERAGE_EDGE_LENGTH], float
-        ] = AVERAGE_EDGE_LENGTH,
+        stiffnessMassDamping: Union[Literal[C.AVERAGE_EDGE_LENGTH], float] = AVERAGE_EDGE_LENGTH,
         stopCriteriaDesignCycle: int = 4,
         structuralMassDamping: Optional[float] = None,
         viscousMassDamping: Optional[float] = None,

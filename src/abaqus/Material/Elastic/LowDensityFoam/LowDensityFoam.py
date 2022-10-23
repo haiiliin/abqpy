@@ -12,7 +12,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 class LowDensityFoam:
     """The LowDensityFoam object specifies properties for low-density foam.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -44,7 +44,7 @@ class LowDensityFoam:
     ):
         """This method creates a LowDensityFoam object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].LowDensityFoam

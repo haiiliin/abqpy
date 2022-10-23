@@ -13,7 +13,7 @@ class KinematicHardening(PredefinedField):
     and, if relevant, the initial backstress tensor.
     The KinematicHardening object is derived from the PredefinedField object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -71,13 +71,15 @@ class KinematicHardening(PredefinedField):
         equivPlasticStrain: tuple = (),
         backStress: tuple = (),
         sectPtNum: tuple = (),
-        definition: Literal[C.CRUSHABLE_FOAM, C.KINEMATIC_HARDENING, C.REBAR, C.USER_DEFINED, C.SECTION_PTS] = KINEMATIC_HARDENING,
+        definition: Literal[
+            C.CRUSHABLE_FOAM, C.KINEMATIC_HARDENING, C.REBAR, C.USER_DEFINED, C.SECTION_PTS
+        ] = KINEMATIC_HARDENING,
         rebarLayerNames: tuple = (),
         distributionType: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
     ):
         """This method creates a KinematicHardening object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].KinematicHardening
@@ -123,7 +125,9 @@ class KinematicHardening(PredefinedField):
         equivPlasticStrain: tuple = (),
         backStress: tuple = (),
         sectPtNum: tuple = (),
-        definition: Literal[C.CRUSHABLE_FOAM, C.KINEMATIC_HARDENING, C.REBAR, C.USER_DEFINED, C.SECTION_PTS] = KINEMATIC_HARDENING,
+        definition: Literal[
+            C.CRUSHABLE_FOAM, C.KINEMATIC_HARDENING, C.REBAR, C.USER_DEFINED, C.SECTION_PTS
+        ] = KINEMATIC_HARDENING,
         rebarLayerNames: tuple = (),
         distributionType: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
     ):

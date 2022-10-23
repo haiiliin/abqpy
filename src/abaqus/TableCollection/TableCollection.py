@@ -12,7 +12,7 @@ class TableCollection:
     """A TableCollection is an object used to define the containers that encapsulate the
     ParameterTable and PropertyTable objects.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name].tableCollections[name]
@@ -39,7 +39,7 @@ class TableCollection:
         """This method creates a TableCollection object and places it in the tableCollections
         repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TableCollection
@@ -60,7 +60,7 @@ class TableCollection:
     def DataTable(self, label: str) -> DataTable:
         """This method creates a DataTable object and places it in the dataTables array.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TableCollection
@@ -88,7 +88,7 @@ class TableCollection:
         """This method creates a ParameterTable object and places it in the parameterTables
         repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TableCollection
@@ -107,12 +107,10 @@ class TableCollection:
         return parameterTable
 
     @abaqus_method_doc
-    def PropertyTable(
-        self, name: str, properties: str, variables: str = ""
-    ) -> PropertyTable:
+    def PropertyTable(self, name: str, properties: str, variables: str = "") -> PropertyTable:
         """This method creates a PropertyTable object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TableCollection
@@ -136,7 +134,5 @@ class TableCollection:
         ------
         RangeError
         """
-        self.propertyTables[name] = propertyTable = PropertyTable(
-            name, properties, variables
-        )
+        self.propertyTables[name] = propertyTable = PropertyTable(name, properties, variables)
         return propertyTable

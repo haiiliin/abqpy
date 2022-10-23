@@ -15,7 +15,7 @@ class AdaptiveMeshConstraintState:
     of the AdaptiveMeshConstraintState object are common to all objects derived from the
     AdaptiveMeshConstraintState object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -28,7 +28,7 @@ class AdaptiveMeshConstraintState:
 
     #: A SymbolicConstant specifying the propagation state of the AdaptiveMeshConstraintState
     #: object. Possible values are:
-    #: 
+    #:
     #: - NOT_YET_ACTIVE
     #: - CREATED
     #: - PROPAGATED
@@ -51,7 +51,22 @@ class AdaptiveMeshConstraintState:
     def __init__(
         self,
         amplitudeState: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        status: Optional[Literal[C.NOT_YET_ACTIVE, C.PROPAGATED_FROM_BASE_STATE, C.DEACTIVATED_FROM_BASE_STATE, C.DEACTIVATED, C.MODIFIED_FROM_BASE_STATE, C.PROPAGATED, C.NO_LONGER_ACTIVE, C.CREATED, C.INSTANCE_NOT_APPLICABLE, C.BUILT_INTO_MODES, C.TYPE_NOT_APPLICABLE, C.MODIFIED]] = None,
+        status: Optional[
+            Literal[
+                C.NOT_YET_ACTIVE,
+                C.PROPAGATED_FROM_BASE_STATE,
+                C.DEACTIVATED_FROM_BASE_STATE,
+                C.DEACTIVATED,
+                C.MODIFIED_FROM_BASE_STATE,
+                C.PROPAGATED,
+                C.NO_LONGER_ACTIVE,
+                C.CREATED,
+                C.INSTANCE_NOT_APPLICABLE,
+                C.BUILT_INTO_MODES,
+                C.TYPE_NOT_APPLICABLE,
+                C.MODIFIED,
+            ]
+        ] = None,
         amplitude: str = "",
     ):
         """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary
@@ -60,7 +75,7 @@ class AdaptiveMeshConstraintState:
         of the AdaptiveMeshConstraintState object are common to all objects derived from the
         AdaptiveMeshConstraintState object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].steps[name].AdaptiveMeshConstraintState
@@ -73,7 +88,7 @@ class AdaptiveMeshConstraintState:
         status
             A SymbolicConstant specifying the propagation state of the AdaptiveMeshConstraintState  object. Possible
             values are:
-             
+
             - NOT_YET_ACTIVE
             - CREATED
             - PROPAGATED
@@ -86,7 +101,7 @@ class AdaptiveMeshConstraintState:
             - MODIFIED_FROM_BASE_STATE
             - DEACTIVATED_FROM_BASE_STATE
             - BUILT_INTO_MODES
-            
+
         amplitude
             A String specifying the name of the amplitude reference. The String is empty if the  adaptive mesh
             constraint has no amplitude reference.

@@ -11,7 +11,7 @@ class MPCSection(Section):
     """The MPCSection object defines the properties of a multi-point constraint section.
     The MPCSection object is derived from the Section object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -51,7 +51,7 @@ class MPCSection(Section):
     ):
         """This method creates a MPCSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].MPCSection

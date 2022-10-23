@@ -9,7 +9,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 class PorousElastic:
     r"""The PorousElastic object specifies elastic material properties for porous materials.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -20,7 +20,7 @@ class PorousElastic:
         The table data for this object are:
 
         - If **shear** = :math:`G`, the table data specify the following:
-        
+
             - The logarithmic bulk modulus, :math:`\kappa`. (Dimensionless.)
             - The shear modulus, :math:`G`.
             - The elastic tensile limit, :math:`p_{t}^{e l}`.
@@ -29,9 +29,9 @@ class PorousElastic:
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-            
+
         - If **shear** = POISSON, the table data specify the following:
-        
+
             - The logarithmic bulk modulus, :math:`\kappa`. (Dimensionless.)
             - The Poisson's ratio, :math:`\nu`.
             - The elastic tensile limit, :math:`p_{t}^{e l}`. (This value cannot be negative.)
@@ -55,7 +55,7 @@ class PorousElastic:
     ):
         """This method creates a PorousElastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].PorousElastic

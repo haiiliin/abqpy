@@ -12,11 +12,12 @@ class SvgOptions(_OptionsBase):
     The SvgOptions object has no constructor. Abaqus creates the **svgOptions** member when a
     session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.svgOptions
     """
+
     #: The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of
     #: the image in pixels. Possible values are (*minWidth*, **minHeight** ) ≤ **imageSize** ≤
     #: (*maxWidth* and **maxHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value

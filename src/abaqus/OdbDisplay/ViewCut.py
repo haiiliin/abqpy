@@ -3,8 +3,17 @@ from typing import Union, Optional, Sequence
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (AXIS_1, AXIS_2, AXIS_3, Boolean, FIRST_FRAME, OFF, ON,
-                                              SymbolicConstant, TRANSLATE)
+from ..UtilityAndView.abaqusConstants import (
+    AXIS_1,
+    AXIS_2,
+    AXIS_3,
+    Boolean,
+    FIRST_FRAME,
+    OFF,
+    ON,
+    SymbolicConstant,
+    TRANSLATE,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -15,7 +24,7 @@ class ViewCut:
     accessed via the OdbDisplay object cause the ViewCut object to be added to the
     session.viewports[name].odbDisplay.viewCuts repository.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -139,7 +148,7 @@ class ViewCut:
     ):
         """This method creates a ViewCut object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.viewports[name].layers[name].odbDisplay.ViewCut

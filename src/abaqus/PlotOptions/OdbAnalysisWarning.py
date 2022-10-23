@@ -6,7 +6,7 @@ class OdbAnalysisWarning:
     """The OdbAnalysisWarning object stores the description of different warnings encountered
     during the analysis.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

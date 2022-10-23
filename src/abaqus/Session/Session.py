@@ -24,7 +24,7 @@ class Session(
     """The Session object has no constructor. Abaqus creates the **session** member when a
     session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session

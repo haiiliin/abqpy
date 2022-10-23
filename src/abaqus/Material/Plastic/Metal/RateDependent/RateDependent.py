@@ -9,7 +9,7 @@ from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 class RateDependent:
     r"""The RateDependent object defines a rate-dependent viscoplastic model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -24,7 +24,7 @@ class RateDependent:
         The table data for this object are:
 
         - If **type** = POWER_LAW, the table data specify the following:
-        
+
             - :math:`D`.
             - :math:`n`.
             - Temperature, if the data depend on temperature.
@@ -32,7 +32,7 @@ class RateDependent:
             - Value of the second field variable.
             - Etc.
         - If **type** = YIELD_RATIO, the table data specify the following:
-        
+
             - Yield stress ratio, :math:`R=\bar{\sigma} / \sigma^{0}`.
             - Equivalent plastic strain rate, :math:`\dot{\bar{\varepsilon}}^{p l}`.
             - Temperature, if the data depend on temperature.
@@ -59,7 +59,7 @@ class RateDependent:
     ):
         """This method creates a RateDependent object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].crushableFoam.RateDependent

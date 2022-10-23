@@ -5,8 +5,7 @@ from typing_extensions import Literal
 
 from .AnalyticalField import AnalyticalField
 from .OdbMeshRegionData import OdbMeshRegionData
-from ..UtilityAndView.abaqusConstants import (Boolean, OFF, POINT, RELATIVE, SURFACE,
-                                              SymbolicConstant, XYPLANE, XYZ)
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, POINT, RELATIVE, SURFACE, SymbolicConstant, XYPLANE, XYZ
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -16,7 +15,7 @@ class MappedField(AnalyticalField):
     an external source data.
     The MappedField object is derived from the AnalyticalField object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import fields
@@ -134,7 +133,7 @@ class MappedField(AnalyticalField):
     ):
         """This method creates an MappedField object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].MappedField

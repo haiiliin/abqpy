@@ -3,8 +3,15 @@ from typing import Union
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (DPI_150, INCHES, MEDIUM, PS_IF_AVAILABLE,
-                                              SIZE_ON_SCREEN, SymbolicConstant, VECTOR)
+from ..UtilityAndView.abaqusConstants import (
+    DPI_150,
+    INCHES,
+    MEDIUM,
+    PS_IF_AVAILABLE,
+    SIZE_ON_SCREEN,
+    SymbolicConstant,
+    VECTOR,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _OptionsBase
 
@@ -15,11 +22,12 @@ class EpsOptions(_OptionsBase):
     Encapsulated PostScript format. The EpsOptions object has no constructor. Abaqus creates
     the **epsOptions** member when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.epsOptions
     """
+
     #: The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the width and height
     #: of the image in the units specified by **units**. Possible numeric values are **imageSize**
     #: ≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value
@@ -101,5 +109,5 @@ class EpsOptions(_OptionsBase):
             resolution=resolution,
             fontType=fontType,
             imageFormat=imageFormat,
-            shadingQuality=shadingQuality
+            shadingQuality=shadingQuality,
         )

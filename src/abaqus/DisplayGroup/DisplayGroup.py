@@ -11,7 +11,7 @@ class DisplayGroup:
     """DisplayGroup objects are used to select a subset of the entities displayed in the
     viewport.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.displayGroups[name]
@@ -51,7 +51,7 @@ class DisplayGroup:
     def __init__(self, name: str, leaf: Leaf):
         """This method creates a DisplayGroup object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.DisplayGroup

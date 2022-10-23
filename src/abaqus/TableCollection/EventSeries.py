@@ -10,7 +10,7 @@ class EventSeries:
     After EventSeries is instantiated, making changes to EventSeriesType may lead to data
     corruption.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name].eventSeriesDatas[name]
@@ -64,7 +64,7 @@ class EventSeries:
     ):
         """This method creates an EventSeries object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EventSeriesData

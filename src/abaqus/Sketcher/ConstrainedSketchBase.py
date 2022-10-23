@@ -8,9 +8,7 @@ from .ConstrainedSketchConstraint.ConstrainedSketchConstraint import (
 from .ConstrainedSketchDimension.ConstrainedSketchDimension import (
     ConstrainedSketchDimension,
 )
-from .ConstrainedSketchGeometry.ConstrainedSketchGeometryArray import (
-    ConstrainedSketchGeometryArray
-)
+from .ConstrainedSketchGeometry.ConstrainedSketchGeometryArray import ConstrainedSketchGeometryArray
 from .ConstrainedSketchOptions.ConstrainedSketchImageOptions import (
     ConstrainedSketchImageOptions,
 )
@@ -30,7 +28,7 @@ class ConstrainedSketchBase:
     such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
     contained in their respective repositories.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import sketch

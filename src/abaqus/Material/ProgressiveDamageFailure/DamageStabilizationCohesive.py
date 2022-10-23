@@ -8,7 +8,7 @@ class DamageStabilizationCohesive:
     """The DamageStabilizationCohesive object specifies the viscosity coefficients for the
     damage model for surface-based cohesive behavior or enriched cohesive behavior.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -51,7 +51,7 @@ class DamageStabilizationCohesive:
     def __init__(self, cohesiveCoeff: Optional[float] = None):
         """This method creates a DamageStabilizationCohesive object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].ductileDamageInitiation.DamageStabilizationCohesive
@@ -82,16 +82,16 @@ class DamageStabilizationCohesive:
                 session.odbs[name].materials[name].quadeDamageInitiation.DamageStabilizationCohesive
                 session.odbs[name].materials[name].quadsDamageInitiation.DamageStabilizationCohesive
                 session.odbs[name].materials[name].shearDamageInitiation.DamageStabilizationCohesive
-            
+
         Parameters
         ----------
         cohesiveCoeff
-            None or a Float specifying the viscosity coefficient. The default value is None. 
+            None or a Float specifying the viscosity coefficient. The default value is None.
 
         Returns
         -------
         DamageStabilizationCohesive
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive` object. 
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive` object.
 
         Raises
         ------

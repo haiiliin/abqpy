@@ -12,10 +12,22 @@ from ..Datum.DatumCsys import DatumCsys
 from ..Model.ModelBase import ModelBase
 from ..Odb.Odb import Odb
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (Boolean, CURRENT, DEFAULT, DEFAULT_LIMIT,
-                                              ELEMENT_CENTER_PROJECTION, GEOMETRY_ENHANCED,
-                                              INDEPENDENT, LAST_INCREMENT, MODEL, OFF, ON,
-                                              SECOND_ORDER_ADVECTION, UNIFORM, UNSET)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    CURRENT,
+    DEFAULT,
+    DEFAULT_LIMIT,
+    ELEMENT_CENTER_PROJECTION,
+    GEOMETRY_ENHANCED,
+    INDEPENDENT,
+    LAST_INCREMENT,
+    MODEL,
+    OFF,
+    ON,
+    SECOND_ORDER_ADVECTION,
+    UNIFORM,
+    UNSET,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -23,7 +35,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class AdaptivityModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -60,7 +72,7 @@ class AdaptivityModel(ModelBase):
         the AdaptiveMeshConstraint object are common to all objects derived from the
         AdaptiveMeshConstraint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AdaptiveMeshConstraint
@@ -78,15 +90,13 @@ class AdaptivityModel(ModelBase):
             None or a DatumCsys object specifying the local coordinate system of the adaptive mesh  constraint's
             degrees of freedom. If **localCsys** = None, the degrees of freedom are defined  in the global coordinate
             system. The default value is None.
-            
+
         Returns
         -------
         AdaptiveMeshConstraint
             An :py:class:`~abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint` object
         """
-        self.adaptiveMeshConstraints[
-            name
-        ] = adaptiveMeshConstraint = AdaptiveMeshConstraint(
+        self.adaptiveMeshConstraints[name] = adaptiveMeshConstraint = AdaptiveMeshConstraint(
             name, category, region, localCsys
         )
         return adaptiveMeshConstraint
@@ -112,7 +122,7 @@ class AdaptivityModel(ModelBase):
     ) -> AdaptiveMeshControl:
         """This method creates an AdaptiveMeshControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AdaptiveMeshConstraint
@@ -208,7 +218,7 @@ class AdaptivityModel(ModelBase):
     ) -> DisplacementAdaptiveMeshConstraint:
         """This method creates a DisplacementAdaptiveMeshConstraint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AdaptiveMeshConstraint
@@ -264,9 +274,7 @@ class AdaptivityModel(ModelBase):
         DisplacementAdaptiveMeshConstraint
             A :py:class:`~abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint` object
         """
-        self.adaptiveMeshConstraints[
-            name
-        ] = adaptiveMeshConstraint = DisplacementAdaptiveMeshConstraint(
+        self.adaptiveMeshConstraints[name] = adaptiveMeshConstraint = DisplacementAdaptiveMeshConstraint(
             name,
             createStepName,
             region,
@@ -306,7 +314,7 @@ class AdaptivityModel(ModelBase):
     ) -> RemeshingRule:
         """This method creates a RemeshingRule object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AdaptiveMeshConstraint
@@ -424,7 +432,7 @@ class AdaptivityModel(ModelBase):
     ) -> VelocityAdaptiveMeshConstraint:
         """This method creates a VelocityAdaptiveMeshConstraint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AdaptiveMeshConstraint
@@ -480,9 +488,7 @@ class AdaptivityModel(ModelBase):
         VelocityAdaptiveMeshConstraint
             A :py:class:`~abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint` object
         """
-        self.adaptiveMeshConstraints[
-            name
-        ] = adaptiveMeshConstraint = VelocityAdaptiveMeshConstraint(
+        self.adaptiveMeshConstraints[name] = adaptiveMeshConstraint = VelocityAdaptiveMeshConstraint(
             name,
             createStepName,
             region,

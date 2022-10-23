@@ -15,7 +15,7 @@ class TopologyMillingControl(GeometricRestriction):
     restriction.
     The TopologyMillingControl object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -63,7 +63,7 @@ class TopologyMillingControl(GeometricRestriction):
     ):
         """This method creates a TopologyMillingControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyMillingControl

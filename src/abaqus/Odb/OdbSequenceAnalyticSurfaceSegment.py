@@ -1,10 +1,11 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class OdbSequenceAnalyticSurfaceSegment:
     """A sequence of AnalyticSurfaceSegment describing an analytic surface profile.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -17,7 +18,7 @@ class OdbSequenceAnalyticSurfaceSegment:
     def __init__(self):
         """This method creates a OdbSequenceAnalyticSurfaceSegment object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 odbAccess.AnalyticSurfaceProfile

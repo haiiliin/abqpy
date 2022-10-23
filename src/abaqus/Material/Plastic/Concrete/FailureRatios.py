@@ -8,7 +8,7 @@ class FailureRatios:
     """The FailureRatios object specifies the shape of the failure surface for a Concrete
     model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -20,13 +20,13 @@ class FailureRatios:
 
         - Ratio of the ultimate biaxial compressive stress to the uniaxial compressive ultimate
           stress. The default value is 1.16.
-        - Absolute value of the ratio of the uniaxial tensile stress at failure to the uniaxial 
+        - Absolute value of the ratio of the uniaxial tensile stress at failure to the uniaxial
           compressive stress at failure. The default value is 0.09.
-        - Ratio of the magnitude of a principal component of Plastic strain at ultimate stress in 
-          biaxial compression to the Plastic strain at ultimate stress in uniaxial compression. 
+        - Ratio of the magnitude of a principal component of Plastic strain at ultimate stress in
+          biaxial compression to the Plastic strain at ultimate stress in uniaxial compression.
           The default value is 1.28.
-        - Ratio of the tensile principal stress value at shear in plane stress, when the other 
-          nonzero principal stress component is at the ultimate compressive stress value, to the 
+        - Ratio of the tensile principal stress value at shear in plane stress, when the other
+          nonzero principal stress component is at the ultimate compressive stress value, to the
           tensile cracking stress under uniaxial tension. The default value is 1/3.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
@@ -39,12 +39,10 @@ class FailureRatios:
     """
 
     @abaqus_method_doc
-    def __init__(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ):
+    def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a FailureRatios object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].concrete.FailureRatios

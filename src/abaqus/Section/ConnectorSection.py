@@ -6,8 +6,7 @@ from typing_extensions import Literal
 from .Section import Section
 from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArray
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (Boolean,
-                                              CONSTANT, NONE, ON, UNSPECIFIED)
+from ..UtilityAndView.abaqusConstants import Boolean, CONSTANT, NONE, ON, UNSPECIFIED
 
 
 @abaqus_class_doc
@@ -15,7 +14,7 @@ class ConnectorSection(Section):
     """A :py:class:`~abaqus.Connector.ConnectorSection.ConnectorSection` object describes the connection type and the behavior of a connector.
     The ConnectorSection object is derived from the Section object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -226,7 +225,7 @@ class ConnectorSection(Section):
     ) -> None:
         """This method creates a ConnectorSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConnectorSection

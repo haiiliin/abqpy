@@ -59,7 +59,7 @@ class OdbPart(OdbPartBase):
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
         assembly-level sets).
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet

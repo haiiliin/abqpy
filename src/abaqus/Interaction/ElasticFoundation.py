@@ -11,7 +11,7 @@ class ElasticFoundation(Interaction):
     """The ElasticFoundation object defines a mechanical foundation.
     The ElasticFoundation object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -36,12 +36,10 @@ class ElasticFoundation(Interaction):
     stiffness: float
 
     @abaqus_method_doc
-    def __init__(
-        self, name: str, createStepName: str, surface: Region, stiffness: float
-    ):
+    def __init__(self, name: str, createStepName: str, surface: Region, stiffness: float):
         """This method creates an ElasticFoundation object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ElasticFoundation

@@ -7,7 +7,7 @@ from ..UtilityAndView.abaqusConstants import ALL, SymbolicConstant
 class StepOption:
     """A StepOption is an object used to define step options in a design response.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization

@@ -9,7 +9,7 @@ from ...UtilityAndView.abaqusConstants import Boolean, OFF
 class UniaxialTestData:
     r"""The UniaxialTestData object provides uniaxial test data (compression and/or tension).
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -28,16 +28,16 @@ class UniaxialTestData:
         The table data for this object are:
 
         - For a hyperelastic material model, the table data specify the following:
-        
+
             - Nominal stress, :math:`T_{U}`.
             - Nominal strain, :math:`\epsilon_{U}`.
         - For a hyperfoam material model, the table data specify the following:
-        
+
             - Nominal stress, :math:`T_{L}`.
             - Nominal strain, :math:`\epsilon_{U}`.
             - Nominal lateral strain, :math:`\epsilon_{2}=\epsilon_{3}`. The default value is 0 .
         - For a low-density foam material model, the table data specify the following:
-        
+
             - Nominal stress, :math:`T_{U}`.
             - Nominal strain, :math:`\epsilon_{U}`.
             - Nominal strain rate, :math:`\dot{\epsilon_{U}}`.
@@ -58,7 +58,7 @@ class UniaxialTestData:
     ):
         """This method creates a UniaxialTestData object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].hyperelastic.UniaxialTestData

@@ -9,7 +9,7 @@ class SizingFrozenArea(GeometricRestriction):
     """The SizingFrozenArea object defines a sizing frozen area geometric restriction.
     The SizingFrozenArea object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -26,7 +26,7 @@ class SizingFrozenArea(GeometricRestriction):
     def __init__(self, name: str, region: Region):
         """This method creates a SizingFrozenArea object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingFrozenArea

@@ -12,7 +12,7 @@ class BodyCurrentDensity(Load):
     """The BodyCurrentDensity object stores the data for a body current.
     The BodyCurrentDensity object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -43,7 +43,7 @@ class BodyCurrentDensity(Load):
     ):
         """This method creates a BodyCurrentDensity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BodyCurrentDensity
@@ -79,9 +79,7 @@ class BodyCurrentDensity(Load):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(
-        self, amplitude: str = UNSET, distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM
-    ):
+    def setValues(self, amplitude: str = UNSET, distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM):
         """This method modifies the data for an existing BodyCurrentDensity object in the step
         where it is created.
 

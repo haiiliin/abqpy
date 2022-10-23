@@ -6,8 +6,7 @@ from typing_extensions import Literal
 from .Interaction import Interaction
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTED, DEFAULT, KINEMATIC, OFF, OMIT,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import Boolean, COMPUTED, DEFAULT, KINEMATIC, OFF, OMIT, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -17,7 +16,7 @@ class SurfaceToSurfaceContactExp(Interaction):
     Abaqus/Explicit analysis.
     The SurfaceToSurfaceContactExp object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -117,13 +116,13 @@ class SurfaceToSurfaceContactExp(Interaction):
         pitch: Optional[str] = None,
         majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
-        datumAxis: Optional[DatumAxis] = None, 
+        datumAxis: Optional[DatumAxis] = None,
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
     ):
         """This method creates a SurfaceToSurfaceContactExp object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceToSurfaceContactExp
@@ -217,7 +216,7 @@ class SurfaceToSurfaceContactExp(Interaction):
         pitch: Optional[str] = None,
         majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
-        datumAxis: Optional[DatumAxis] = None, 
+        datumAxis: Optional[DatumAxis] = None,
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
     ):
@@ -266,9 +265,7 @@ class SurfaceToSurfaceContactExp(Interaction):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(
-        self, stepName: str, interactionProperty: str = "", contactControls: str = ""
-    ):
+    def setValuesInStep(self, stepName: str, interactionProperty: str = "", contactControls: str = ""):
         """This method modifies the propagating data for an existing SurfaceToSurfaceContactExp
         object in the specified step.
 

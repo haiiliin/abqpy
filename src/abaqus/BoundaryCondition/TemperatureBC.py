@@ -5,8 +5,7 @@ from typing_extensions import Literal
 
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (Boolean, OFF, SymbolicConstant, UNCHANGED, UNIFORM,
-                                              UNSET)
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant, UNCHANGED, UNIFORM, UNSET
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -15,7 +14,7 @@ class TemperatureBC(BoundaryCondition):
     """The TemperatureBC object stores the data for a temperature boundary condition.
     The TemperatureBC object is derived from the BoundaryCondition object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -61,7 +60,7 @@ class TemperatureBC(BoundaryCondition):
     ):
         """This method creates a TemperatureBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TemperatureBC

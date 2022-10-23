@@ -8,7 +8,7 @@ from .Metal.ORNL.Ornl import Ornl
 from .Metal.RateDependent.RateDependent import RateDependent
 from .Potential import Potential
 from .TensileFailure import TensileFailure
-from ...UtilityAndView.abaqusConstants import (Boolean, CONSTANT, HALF_CYCLE, ISOTROPIC, OFF)
+from ...UtilityAndView.abaqusConstants import Boolean, CONSTANT, HALF_CYCLE, ISOTROPIC, OFF
 from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -16,7 +16,7 @@ from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 class Plastic:
     r"""The Plastic object specifies a metal plasticity model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -27,7 +27,7 @@ class Plastic:
         The table data for this object are:
 
         - If **hardening** = ISOTROPIC, or if **hardening** = COMBINED and **dataType** = HALF_CYCLE, the table data specify the following:
-        
+
             - Yield stress.
             - Plastic strain.
             - Equivalent plastic strain rate, :math:`\dot{\bar{\varepsilon}} p l`.
@@ -36,7 +36,7 @@ class Plastic:
             - Value of the second field variable.
             - Etc.
         - If **hardening** = COMBINED and **dataType** = STABILIZED, the table data specify the following:
-        
+
             - Yield stress.
             - Plastic strain.
             - Strain range, if the data depend on strain range.
@@ -45,7 +45,7 @@ class Plastic:
             - Value of the second field variable.
             - Etc.
         - If **hardening** = COMBINED and **dataType** = PARAMETERS, the table data specify the following:
-        
+
             - Yield stress at zero Plastic strain.
             - The first kinematic hardening parameter, :math:`C_{1}`.
             - The first kinematic hardening parameter, :math:`\gamma_{1}`.
@@ -57,12 +57,12 @@ class Plastic:
             - Value of the second field variable.
             - Etc.
         - If **hardening** = KINEMATIC, the table data specify the following:
-        
+
             - Yield stress.
             - Plastic strain.
             - Temperature, if the data depend on temperature.
         - If **hardening** = JOHNSON_COOK, the table data specify the following:
-        
+
             - :math:`A`.
             - :math:`B`.
             - :math:`\mathrm{n}`.
@@ -70,7 +70,7 @@ class Plastic:
             - Melting temperature.
             - Transition temperature.
         - If **hardening** = USER, the table data specify the following:
-        
+
             - Hardening properties.
 
         The corresponding analysis keywords are:
@@ -114,7 +114,7 @@ class Plastic:
     ):
         """This method creates a Plastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Plastic

@@ -50,9 +50,7 @@ class SurfaceVertexCriteriaAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(
-        self, stepName: str, assignments: Union[Literal[C.NO_VERTICES, C.ALL_VERTICES, C.GLOBAL], float]
-    ):
+    def appendInStep(self, stepName: str, assignments: Union[Literal[C.NO_VERTICES, C.ALL_VERTICES, C.GLOBAL], float]):
         """This method allows addition of surface vertex criteria assignments to new surfaces in a
         given step.
 

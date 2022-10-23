@@ -10,7 +10,7 @@ from ...UtilityAndView.abaqusConstants import Boolean, CONSTANTS, OFF, SymbolicC
 class MullinsEffect:
     """The MullinsEffect specifies properties for mullins data.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material

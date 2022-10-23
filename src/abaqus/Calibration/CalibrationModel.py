@@ -8,7 +8,7 @@ from ..Model.ModelBase import ModelBase
 class CalibrationModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -18,7 +18,7 @@ class CalibrationModel(ModelBase):
     def Calibration(self, name: str) -> Calibration:
         """This method creates a Calibration object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Calibration

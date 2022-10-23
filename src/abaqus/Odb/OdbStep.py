@@ -21,7 +21,7 @@ class OdbStep(OdbStepBase):
     ) -> HistoryRegion:
         """This method creates a HistoryRegion object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].steps[name].HistoryRegion
@@ -43,19 +43,15 @@ class OdbStep(OdbStepBase):
         HistoryRegion
             A :py:class:`~abaqus.Odb.HistoryRegion.HistoryRegion` object.
         """
-        self.historyRegions[name] = historyRegion = HistoryRegion(
-            name, description, point, loadCase
-        )
+        self.historyRegions[name] = historyRegion = HistoryRegion(name, description, point, loadCase)
         return historyRegion
 
     @overload
     @abaqus_method_doc
-    def Frame(
-        self, incrementNumber: int, frameValue: float, description: str = ""
-    ) -> OdbFrame:
+    def Frame(self, incrementNumber: int, frameValue: float, description: str = "") -> OdbFrame:
         """This method creates an OdbFrame object and appends it to the frame sequence.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame
@@ -87,7 +83,7 @@ class OdbStep(OdbStepBase):
         the frame sequence. The arguments to the constructor are valid only when
         **domain** = FREQUENCY or **domain** = MODAL.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame
@@ -111,13 +107,11 @@ class OdbStep(OdbStepBase):
 
     @overload
     @abaqus_method_doc
-    def Frame(
-        self, loadCase: OdbLoadCase, description: str = "", frequency: float = 0
-    ) -> OdbFrame:
+    def Frame(self, loadCase: OdbLoadCase, description: str = "", frequency: float = 0) -> OdbFrame:
         """This constructor creates an OdbFrame object for a specific load case and appends it to
         the frame sequence.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame
@@ -148,7 +142,7 @@ class OdbStep(OdbStepBase):
     def LoadCase(self, name: str) -> OdbLoadCase:
         """This method creates an OdbLoadCase object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].steps[name].LoadCase

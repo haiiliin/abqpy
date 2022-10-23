@@ -9,7 +9,7 @@ class MeshFace:
     MeshFace object can be accessed via a MeshFaceArray or a repository on a part or part
     instance.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

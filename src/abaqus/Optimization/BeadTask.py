@@ -8,9 +8,17 @@ from .GeometricRestriction import GeometricRestriction
 from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
-from ..UtilityAndView.abaqusConstants import (Boolean, CONSERVATIVE, DEFAULT, EVERY_CYCLE,
-                                              GENERAL_OPTIMIZATION, MODEL, OFF, SymbolicConstant,
-                                              VALUE)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    CONSERVATIVE,
+    DEFAULT,
+    EVERY_CYCLE,
+    GENERAL_OPTIMIZATION,
+    MODEL,
+    OFF,
+    SymbolicConstant,
+    VALUE,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -19,7 +27,7 @@ class BeadTask(OptimizationTask):
     """The BeadTask object defines a bead task.
     The BeadTask object is derived from the OptimizationTask object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -161,7 +169,7 @@ class BeadTask(OptimizationTask):
     ):
         """This method creates a BeadTask object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BeadTask

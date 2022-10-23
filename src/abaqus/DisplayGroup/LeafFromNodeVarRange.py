@@ -14,7 +14,7 @@ class LeafFromNodeVarRange(Leaf):
     commands.
     The LeafFromNodeVarRange object is derived from the Leaf object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import displayGroupOdbToolset
@@ -45,7 +45,7 @@ class LeafFromNodeVarRange(Leaf):
     ):
         """This method creates a Leaf object from nodes with values lying in a variable range.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 LeafFromNodeVarRange

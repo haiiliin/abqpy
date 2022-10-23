@@ -8,7 +8,7 @@ class AdaptiveMeshDomain:
     """The AdaptiveMeshDomain object defines the region and controls that govern an Arbitrary
     Lagrangian Eularian (ALE) style adaptive smoothing mesh domain.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -44,7 +44,7 @@ class AdaptiveMeshDomain:
     ):
         """This method creates an AdaptiveMeshDomain object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].steps[name].AdaptiveMeshDomain

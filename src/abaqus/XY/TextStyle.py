@@ -10,7 +10,7 @@ class TextStyle:
     TextStyle objects are automatically created when creating a chart or can be created with
     methods described below.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -65,7 +65,7 @@ class TextStyle:
     ):
         """This method creates a TextStyle.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.TextStyle

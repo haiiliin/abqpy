@@ -50,8 +50,17 @@ from ..Amplitude.Correlation import Correlation
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import (Boolean, FREE, INFLOW, NOT_APPLICABLE, OFF, ON,
-                                              UNIFORM, UNSET, ZERO_PRESSURE)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    FREE,
+    INFLOW,
+    NOT_APPLICABLE,
+    OFF,
+    ON,
+    UNIFORM,
+    UNSET,
+    ZERO_PRESSURE,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -59,7 +68,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class BoundaryConditionModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -80,7 +89,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> AccelerationBaseMotionBC:
         """This method creates a AccelerationBaseMotionBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AccelerationBaseMotionBC
@@ -129,9 +138,7 @@ class BoundaryConditionModel(ModelBase):
             useComplex,
             amplitude,
         )
-        self.steps[createStepName].boundaryConditionStates[
-            name
-        ] = AccelerationBaseMotionBCState()
+        self.steps[createStepName].boundaryConditionStates[name] = AccelerationBaseMotionBCState()
         return boundaryCondition
 
     @abaqus_method_doc
@@ -153,7 +160,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> AccelerationBC:
         """This method creates an AccelerationBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AccelerationBC
@@ -243,7 +250,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> AcousticPressureBC:
         """This method creates a AcousticPressureBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AcousticPressureBC
@@ -290,9 +297,7 @@ class BoundaryConditionModel(ModelBase):
             amplitude,
             fixed,
         )
-        self.steps[createStepName].boundaryConditionStates[
-            name
-        ] = AcousticPressureBCState()
+        self.steps[createStepName].boundaryConditionStates[name] = AcousticPressureBCState()
         return boundaryCondition
 
     @abaqus_method_doc
@@ -309,7 +314,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> ConcentrationBC:
         """This method creates a ConcentrationBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConcentrationBC
@@ -356,9 +361,7 @@ class BoundaryConditionModel(ModelBase):
             amplitude,
             fixed,
         )
-        self.steps[createStepName].boundaryConditionStates[
-            name
-        ] = ConcentrationBCState()
+        self.steps[createStepName].boundaryConditionStates[name] = ConcentrationBCState()
         return boundaryCondition
 
     @abaqus_method_doc
@@ -382,7 +385,7 @@ class BoundaryConditionModel(ModelBase):
         boundary condition may also be applied to a wire set referenced from an assembled
         fastener template model.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConnAccelerationBC
@@ -460,9 +463,7 @@ class BoundaryConditionModel(ModelBase):
             amplitude,
             distributionType,
         )
-        self.steps[createStepName].boundaryConditionStates[
-            name
-        ] = ConnAccelerationBCState()
+        self.steps[createStepName].boundaryConditionStates[name] = ConnAccelerationBCState()
         return boundaryCondition
 
     @abaqus_method_doc
@@ -482,13 +483,15 @@ class BoundaryConditionModel(ModelBase):
         fixed: Boolean = OFF,
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
     ) -> ConnDisplacementBC:
         """This method creates a ConnDisplacementBC object on a wire region. Alternatively, the
         boundary condition may also be applied to a wire set referenced from an assembled
         fastener template model.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConnDisplacementBC
@@ -575,9 +578,7 @@ class BoundaryConditionModel(ModelBase):
             distributionType,
             buckleCase,
         )
-        self.steps[createStepName].boundaryConditionStates[
-            name
-        ] = ConnDisplacementBCState()
+        self.steps[createStepName].boundaryConditionStates[name] = ConnDisplacementBCState()
         return boundaryCondition
 
     @abaqus_method_doc
@@ -601,7 +602,7 @@ class BoundaryConditionModel(ModelBase):
         boundary condition may also be applied to a wire set referenced from an assembled
         fastener template model.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConnVelocityBC
@@ -697,7 +698,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> DisplacementBaseMotionBC:
         """This method creates a DisplacementBaseMotionBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].DisplacementBaseMotionBC
@@ -746,9 +747,7 @@ class BoundaryConditionModel(ModelBase):
             useComplex,
             amplitude,
         )
-        self.steps[createStepName].boundaryConditionStates[
-            name
-        ] = DisplacementBaseMotionBCState()
+        self.steps[createStepName].boundaryConditionStates[name] = DisplacementBaseMotionBCState()
         return boundaryCondition
 
     @abaqus_method_doc
@@ -768,11 +767,13 @@ class BoundaryConditionModel(ModelBase):
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM, C.DISCRETE_FIELD] = UNIFORM,
         localCsys: Optional[str] = None,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
     ) -> DisplacementBC:
         """This method creates a DisplacementBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].DisplacementBC
@@ -875,7 +876,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> ElectricPotentialBC:
         """This method creates an ElectricPotentialBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ElectricPotentialBC
@@ -922,9 +923,7 @@ class BoundaryConditionModel(ModelBase):
             amplitude,
             fixed,
         )
-        self.steps[createStepName].boundaryConditionStates[
-            name
-        ] = ElectricPotentialBCState()
+        self.steps[createStepName].boundaryConditionStates[name] = ElectricPotentialBCState()
         return boundaryCondition
 
     @abaqus_method_doc
@@ -939,7 +938,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> EulerianBC:
         """This method creates a EulerianBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EulerianBC
@@ -1006,7 +1005,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> EulerianMotionBC:
         """This method creates an EulerianMotionBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EulerianMotionBC
@@ -1130,9 +1129,7 @@ class BoundaryConditionModel(ModelBase):
             volThreshold,
             bufferSize,
         )
-        self.steps[createStepName].boundaryConditionStates[
-            name
-        ] = EulerianMotionBCState()
+        self.steps[createStepName].boundaryConditionStates[name] = EulerianMotionBCState()
         return boundaryCondition
 
     @abaqus_method_doc
@@ -1147,7 +1144,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> FluidCavityPressureBC:
         """This method creates a FluidCavityPressureBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FluidCavityPressureBC
@@ -1179,9 +1176,7 @@ class BoundaryConditionModel(ModelBase):
         self.boundaryConditions[name] = boundaryCondition = FluidCavityPressureBC(
             name, createStepName, fluidCavity, magnitude, amplitude, fixed
         )
-        self.steps[createStepName].boundaryConditionStates[
-            name
-        ] = FluidCavityPressureBCState()
+        self.steps[createStepName].boundaryConditionStates[name] = FluidCavityPressureBCState()
         return boundaryCondition
 
     @abaqus_method_doc
@@ -1199,7 +1194,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> MagneticVectorPotentialBC:
         """This method creates a MagneticVectorPotentialBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].MagneticVectorPotentialBC
@@ -1269,7 +1264,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> MaterialFlowBC:
         """This method creates a MaterialFlowBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].MaterialFlowBC
@@ -1333,7 +1328,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> PorePressureBC:
         """This method creates a PorePressureBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PorePressureBC
@@ -1398,7 +1393,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> RetainedNodalDofsBC:
         """This method creates a RetainedNodalDofsBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].RetainedNodalDofsBC
@@ -1444,12 +1439,10 @@ class BoundaryConditionModel(ModelBase):
         return boundaryCondition
 
     @abaqus_method_doc
-    def SecondaryBaseBC(
-        self, name: str, createStepName: str, regions: RegionArray, dofs: tuple
-    ) -> SecondaryBaseBC:
+    def SecondaryBaseBC(self, name: str, createStepName: str, regions: RegionArray, dofs: tuple) -> SecondaryBaseBC:
         """This method creates a SecondaryBaseBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SecondaryBaseBC
@@ -1471,12 +1464,8 @@ class BoundaryConditionModel(ModelBase):
         bc: SecondaryBaseBC
             A :py:class:`~abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC` object.
         """
-        self.boundaryConditions[name] = boundaryCondition = SecondaryBaseBC(
-            name, createStepName, regions, dofs
-        )
-        self.steps[createStepName].boundaryConditionStates[
-            name
-        ] = SecondaryBaseBCState()
+        self.boundaryConditions[name] = boundaryCondition = SecondaryBaseBC(name, createStepName, regions, dofs)
+        self.steps[createStepName].boundaryConditionStates[name] = SecondaryBaseBCState()
         return boundaryCondition
 
     @abaqus_method_doc
@@ -1499,7 +1488,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> SubmodelBC:
         """This method creates a SubmodelBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SubmodelBC
@@ -1597,7 +1586,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> TemperatureBC:
         """This method creates a TemperatureBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TemperatureBC
@@ -1665,7 +1654,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> VelocityBaseMotionBC:
         """This method creates a VelocityBaseMotionBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].VelocityBaseMotionBC
@@ -1714,9 +1703,7 @@ class BoundaryConditionModel(ModelBase):
             useComplex,
             amplitude,
         )
-        self.steps[createStepName].boundaryConditionStates[
-            name
-        ] = VelocityBaseMotionBCState()
+        self.steps[createStepName].boundaryConditionStates[name] = VelocityBaseMotionBCState()
         return boundaryCondition
 
     @abaqus_method_doc
@@ -1738,7 +1725,7 @@ class BoundaryConditionModel(ModelBase):
     ) -> VelocityBC:
         """This method creates a VelocityBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].VelocityBC
@@ -1813,19 +1800,21 @@ class BoundaryConditionModel(ModelBase):
         )
         self.steps[createStepName].boundaryConditionStates[name] = VelocityBCState()
         return boundaryCondition
-    
+
     @abaqus_method_doc
     def EncastreBC(
         self,
         name: str,
         createStepName: str,
         region: Region,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> TypeBC:
         """This method creates an encastre TypeBC object.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EncastreBC
@@ -1846,7 +1835,7 @@ class BoundaryConditionModel(ModelBase):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC
@@ -1867,12 +1856,14 @@ class BoundaryConditionModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> TypeBC:
         """This method creates a pinned TypeBC object.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PinnedBC
@@ -1893,7 +1884,7 @@ class BoundaryConditionModel(ModelBase):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC
@@ -1914,16 +1905,18 @@ class BoundaryConditionModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies symmetry about the **X**-axis.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EncastreBC
-                
+
         Parameters
         ----------
         name
@@ -1961,16 +1954,18 @@ class BoundaryConditionModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies symmetry about the **Y**-axis.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].YsymmBC
-                
+
         Parameters
         ----------
         name
@@ -2008,16 +2003,18 @@ class BoundaryConditionModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies symmetry about the **Z**-axis.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EncastreBC
-                
+
         Parameters
         ----------
         name
@@ -2055,16 +2052,18 @@ class BoundaryConditionModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies antisymmetry about the **X**-axis.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EncastreBC
-                
+
         Parameters
         ----------
         name
@@ -2102,16 +2101,18 @@ class BoundaryConditionModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies antisymmetry about the **Y**-axis.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].YasymmBC
-                
+
         Parameters
         ----------
         name
@@ -2149,16 +2150,18 @@ class BoundaryConditionModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> TypeBC:
         """This method creates a TypeBC object that specifies antisymmetry about the **Z**-axis.
-        
+
         .. note::
             This function can be accessed by::
-            
+
                 mdb.models[name].ZasymmBC
-            
+
         Parameters
         ----------
         name
@@ -2175,7 +2178,7 @@ class BoundaryConditionModel(ModelBase):
             None or a DatumCsys object specifying the local coordinate system of the boundary
             condition's degrees of freedom. If **localCsys** = None, the degrees of freedom are defined
             in the global coordinate system. The default value is None.
-        
+
         Returns
         -------
         TypeBC

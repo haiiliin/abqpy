@@ -1,4 +1,3 @@
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
@@ -7,7 +6,7 @@ class Profile:
     """The Profile object defines the geometrical properties of a beam cross-section. Profile
     is an abstract base type.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -24,7 +23,7 @@ class Profile:
         """This method creates Profile objects by reading an output database. The new profiles are
         placed in the profiles repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].beamProfilesFromOdb

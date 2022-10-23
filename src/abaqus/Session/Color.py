@@ -7,7 +7,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 class Color:
     """The Color object contains the RGB definition of a system color.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.colors[name]

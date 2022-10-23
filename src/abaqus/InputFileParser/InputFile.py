@@ -8,7 +8,7 @@ class InputFile:
     """The InputFile object is used to store the definitions in an Abaqus input file. InputFile
     objects can be created using the methods described in this section.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import inpParser
@@ -32,7 +32,7 @@ class InputFile:
     def __init__(self, file: str, directory: str = ""):
         """This method creates an InputFile object by reading an Abaqus input file.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 inpParser.InputFile

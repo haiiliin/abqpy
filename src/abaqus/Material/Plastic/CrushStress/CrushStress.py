@@ -42,9 +42,7 @@ class CrushStress:
     dependencies: int = 0
 
     #: A :py:class:`~abaqus.Material.Plastic.CrushStress.CrushStressVelocityFactor.CrushStressVelocityFactor` object.
-    crushStressVelocityFactor: CrushStressVelocityFactor = CrushStressVelocityFactor(
-        ((),)
-    )
+    crushStressVelocityFactor: CrushStressVelocityFactor = CrushStressVelocityFactor(((),))
 
     @abaqus_method_doc
     def __init__(

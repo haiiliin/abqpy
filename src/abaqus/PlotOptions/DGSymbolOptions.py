@@ -1,7 +1,15 @@
 from abqpy.decorators import abaqus_class_doc
 
-from ..UtilityAndView.abaqusConstants import (Boolean, MODEL_SIZE, OFF, SCIENTIFIC, SPECTRUM,
-                                              SymbolicConstant, VERY_THIN, WIRE)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    MODEL_SIZE,
+    OFF,
+    SCIENTIFIC,
+    SPECTRUM,
+    SymbolicConstant,
+    VERY_THIN,
+    WIRE,
+)
 
 
 @abaqus_class_doc
@@ -11,7 +19,7 @@ class DGSymbolOptions:
     *odbDisplayOptions.symbolOptions* member when a display group instance is created, using
     values from *odbDisplay.symbolOptions*.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.symbolOptions

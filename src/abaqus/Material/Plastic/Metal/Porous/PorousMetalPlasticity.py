@@ -11,7 +11,7 @@ from .....UtilityAndView.abaqusConstants import Boolean, OFF
 class PorousMetalPlasticity:
     """The PorousMetalPlasticity object specifies a porous metal plasticity model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -50,7 +50,7 @@ class PorousMetalPlasticity:
     ):
         """This method creates a PorousMetalPlasticity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].PorousMetalPlasticity

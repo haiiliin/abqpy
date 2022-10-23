@@ -6,8 +6,7 @@ from typing_extensions import Literal
 from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
 from .TangentialBehavior import TangentialBehavior
-from ..UtilityAndView.abaqusConstants import (Boolean, COEFFICIENTS, CONSTANT, FRACTION, LINEAR,
-                                              OFF, ON, PENALTY)
+from ..UtilityAndView.abaqusConstants import Boolean, COEFFICIENTS, CONSTANT, FRACTION, LINEAR, OFF, ON, PENALTY
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -23,7 +22,7 @@ class ConnectorBehaviorOption:
     constructor. The members of the ConnectorBehaviorOption object are common to all objects
     derived from the ConnectorBehaviorOption.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -77,7 +76,7 @@ class ConnectorBehaviorOption:
     ) -> TangentialBehavior:
         """This method creates a TangentialBehavior object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
@@ -142,7 +141,7 @@ class ConnectorBehaviorOption:
     def DerivedComponent(self) -> DerivedComponent:
         """This method creates a DerivedComponent object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior
@@ -176,7 +175,7 @@ class ConnectorBehaviorOption:
         """This method creates a connector options object to be used in conjunction with an
         allowable connector behavior option, derived component term, or connector section.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].TangentialBehavior

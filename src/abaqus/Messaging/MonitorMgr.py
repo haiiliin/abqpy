@@ -12,7 +12,7 @@ class MonitorMgr:
     be confused with the degree of freedom (DOF) monitor that is constructed from the Step
     object.)
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             monitorManager
@@ -22,7 +22,34 @@ class MonitorMgr:
     def addMessageCallback(
         self,
         jobName: str,
-        messageType: Literal[C.HEALER_TYPE, C.MONITOR_DATA, C.JOB_COMPLETED, C.JOB_SUBMITTED, C.SIMULATION_SUBMITTED, C.STEP, C.WARNING, C.JOB_ABORTED, C.SIMULATION_INTERRUPTED, C.COMPLETED, C.ITERATION, C.STATUS, C.SIMULATION_COMPLETED, C.ODB_FRAME, C.ABORTED, C.JOB_INTERRUPTED, C.ANY_MESSAGE_TYPE, C.END_STEP, C.HEALER_JOB, C.SIMULATION_ABORTED, C.STARTED, C.ERROR, C.INTERRUPTED, C.ANY_JOB, C.ODB_FILE, C.HEADING],
+        messageType: Literal[
+            C.HEALER_TYPE,
+            C.MONITOR_DATA,
+            C.JOB_COMPLETED,
+            C.JOB_SUBMITTED,
+            C.SIMULATION_SUBMITTED,
+            C.STEP,
+            C.WARNING,
+            C.JOB_ABORTED,
+            C.SIMULATION_INTERRUPTED,
+            C.COMPLETED,
+            C.ITERATION,
+            C.STATUS,
+            C.SIMULATION_COMPLETED,
+            C.ODB_FRAME,
+            C.ABORTED,
+            C.JOB_INTERRUPTED,
+            C.ANY_MESSAGE_TYPE,
+            C.END_STEP,
+            C.HEALER_JOB,
+            C.SIMULATION_ABORTED,
+            C.STARTED,
+            C.ERROR,
+            C.INTERRUPTED,
+            C.ANY_JOB,
+            C.ODB_FILE,
+            C.HEADING,
+        ],
         callback: SymbolicConstant,
         userData: str = "",
     ):
@@ -36,8 +63,8 @@ class MonitorMgr:
             A String specifying the name of the job to be monitored or the SymbolicConstant ANY_JOB.
         messageType
             A SymbolicConstant specifying which message type will call this callback. Possible
-            values are: 
-            
+            values are:
+
             - ABORTED
             - ANY_JOB
             - ANY_MESSAGE_TYPE
@@ -64,7 +91,7 @@ class MonitorMgr:
             - STATUS
             - STEP
             - WARNING
-            
+
         callback
             A Python function to be called. The interface definition of the callback function is
             `def onMessage(jobName, messageType, data, userData)` **jobName** is a
@@ -78,7 +105,38 @@ class MonitorMgr:
 
     @abaqus_method_doc
     def removeMessageCallback(
-        self, jobName: str, messageType: Literal[C.HEALER_TYPE, C.MONITOR_DATA, C.JOB_COMPLETED, C.JOB_SUBMITTED, C.SIMULATION_SUBMITTED, C.STEP, C.WARNING, C.JOB_ABORTED, C.SIMULATION_INTERRUPTED, C.COMPLETED, C.ITERATION, C.STATUS, C.SIMULATION_COMPLETED, C.ODB_FRAME, C.ABORTED, C.JOB_INTERRUPTED, C.ANY_MESSAGE_TYPE, C.END_STEP, C.HEALER_JOB, C.SIMULATION_ABORTED, C.STARTED, C.ERROR, C.INTERRUPTED, C.ANY_JOB, C.ODB_FILE, C.HEADING], callback: str, userData: str
+        self,
+        jobName: str,
+        messageType: Literal[
+            C.HEALER_TYPE,
+            C.MONITOR_DATA,
+            C.JOB_COMPLETED,
+            C.JOB_SUBMITTED,
+            C.SIMULATION_SUBMITTED,
+            C.STEP,
+            C.WARNING,
+            C.JOB_ABORTED,
+            C.SIMULATION_INTERRUPTED,
+            C.COMPLETED,
+            C.ITERATION,
+            C.STATUS,
+            C.SIMULATION_COMPLETED,
+            C.ODB_FRAME,
+            C.ABORTED,
+            C.JOB_INTERRUPTED,
+            C.ANY_MESSAGE_TYPE,
+            C.END_STEP,
+            C.HEALER_JOB,
+            C.SIMULATION_ABORTED,
+            C.STARTED,
+            C.ERROR,
+            C.INTERRUPTED,
+            C.ANY_JOB,
+            C.ODB_FILE,
+            C.HEADING,
+        ],
+        callback: str,
+        userData: str,
     ):
         """This method removes a callback function. You specify the callback function to remove
         using the same arguments you used to add the callback.

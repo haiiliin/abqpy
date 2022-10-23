@@ -23,7 +23,7 @@ class RegionAssembly(RegionAssemblyBase):
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import assembly
@@ -60,7 +60,7 @@ class RegionAssembly(RegionAssemblyBase):
         surface=mdb.models['Model-1'].parts['Part-1'].Surface(side1Faces=side1Faces,
         name='Surf-1')
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].Surface
@@ -71,47 +71,47 @@ class RegionAssembly(RegionAssemblyBase):
         name
             A String specifying the repository key. The default value is an empty string.
         side1Elements
-            A sequence of MeshElement objects (surface applies to SIDE1 of element). 
+            A sequence of MeshElement objects (surface applies to SIDE1 of element).
             The default value is None.
         side2Elements
-            A sequence of MeshElement objects (surface applies to SIDE2 of element). 
+            A sequence of MeshElement objects (surface applies to SIDE2 of element).
             The default value is None.
         side12Elements
-            A sequence of MeshElement objects (surface applies to both SIDE1 and SIDE2 of element). 
+            A sequence of MeshElement objects (surface applies to both SIDE1 and SIDE2 of element).
             The default value is None.
         end1Elements
-            A sequence of MeshElement objects (surface applies to END1 of element). 
+            A sequence of MeshElement objects (surface applies to END1 of element).
             The default value is None.
         end2Elements
-            A sequence of MeshElement objects (surface applies to END2 of element). 
+            A sequence of MeshElement objects (surface applies to END2 of element).
             The default value is None.
         circumElements
-            A sequence of MeshElement objects (surface applies to circumference of element). 
+            A sequence of MeshElement objects (surface applies to circumference of element).
             The default value is None.
         face1Elements
-            A sequence of MeshElement objects (surface applies to FACE1 of element) or MeshFace objects. 
+            A sequence of MeshElement objects (surface applies to FACE1 of element) or MeshFace objects.
             The default value is None.
         face2Elements
-            A sequence of MeshElement objects (surface applies to FACE2 of element) or MeshFace objects. 
+            A sequence of MeshElement objects (surface applies to FACE2 of element) or MeshFace objects.
             The default value is None.
         face3Elements
-            A sequence of MeshElement objects (surface applies to FACE3 of element) or MeshFace objects. 
+            A sequence of MeshElement objects (surface applies to FACE3 of element) or MeshFace objects.
             The default value is None.
         face4Elements
-            A sequence of MeshElement objects (surface applies to FACE4 of element) or MeshFace objects. 
+            A sequence of MeshElement objects (surface applies to FACE4 of element) or MeshFace objects.
             The default value is None.
         face5Elements
-            A sequence of MeshElement objects (surface applies to FACE5 of element) or MeshFace objects. 
+            A sequence of MeshElement objects (surface applies to FACE5 of element) or MeshFace objects.
             The default value is None.
         face6Elements
-            A sequence of MeshElement objects (surface applies to FACE6 of element) or MeshFace objects. 
+            A sequence of MeshElement objects (surface applies to FACE6 of element) or MeshFace objects.
             The default value is None.
         side1Faces
             A sequence of Face objects (surface applies to SIDE1 of face). The default value is None.
         side2Faces
             A sequence of Face objects (surface applies to SIDE2 of face). The default value is None.
         side12Faces
-            A sequence of Face objects (surface applies to both SIDE1 and SIDE2 of face). 
+            A sequence of Face objects (surface applies to both SIDE1 and SIDE2 of face).
             The default value is None.
         side1Edges
             A sequence of Edge objects (surface applies to SIDE1 of edge). The default value is None.
@@ -122,15 +122,15 @@ class RegionAssembly(RegionAssemblyBase):
         end2Edges
             A sequence of Edge objects (surface applies to END2 of edge). The default value is None.
         circumEdges
-            A sequence of Edge objects (surface applies circumferentially to edge). 
+            A sequence of Edge objects (surface applies circumferentially to edge).
             The default value is None.
         kwargs
             The required parameters for different conditions are:
-            
-            - On three-dimensional solid faces, you can use the following arguments: 
+
+            - On three-dimensional solid faces, you can use the following arguments:
               side1Faces, side2Faces
 
-            - On three-dimensional shell faces, you can use the following arguments: 
+            - On three-dimensional shell faces, you can use the following arguments:
               side1Faces, side2Faces, side12Faces
 
             - On three-dimensional wire edges, you can use the following arguments:
@@ -208,7 +208,7 @@ class RegionAssembly(RegionAssemblyBase):
     ) -> Set:
         """This method creates a set from a sequence of objects in a model database.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
@@ -266,7 +266,7 @@ class RegionAssembly(RegionAssemblyBase):
     def Set(self, name: str, objectToCopy: Set) -> Set:
         """This method copies a set from an existing set.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].Set

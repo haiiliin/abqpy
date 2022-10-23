@@ -3,8 +3,17 @@ from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (AVERAGE_STRAIN, Boolean, CUBIC, DEFAULT, ENHANCED,
-                                              OFF, ON, STANDARD, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    AVERAGE_STRAIN,
+    Boolean,
+    CUBIC,
+    DEFAULT,
+    ENHANCED,
+    OFF,
+    ON,
+    STANDARD,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -13,7 +22,7 @@ class ElemType:
     """The ElemType object is an argument object used as an argument in the setElementType
     command.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import mesh
@@ -21,7 +30,7 @@ class ElemType:
 
     #: A SymbolicConstant specifying the Abaqus element code or just the element shape.
     #: Possible values are:
-    #: 
+    #:
     #: - C3D8R, specifying a 8-node linear brick, reduced integration with hourglass control.
     #: - CODE, specifying add more codes.
     #: - UNKNOWN_TRI, specifying an unknown element type associated with a triangular shape.
@@ -171,7 +180,9 @@ class ElemType:
     @abaqus_method_doc
     def __init__(
         self,
-        elemCode: Literal[C.C3D8R, C.UNKNOWN_HEX, C.CODE, C.UNKNOWN_TET, C.UNKNOWN_TRI, C.UNKNOWN_WEDGE, C.UNKNOWN_QUAD],
+        elemCode: Literal[
+            C.C3D8R, C.UNKNOWN_HEX, C.CODE, C.UNKNOWN_TET, C.UNKNOWN_TRI, C.UNKNOWN_WEDGE, C.UNKNOWN_QUAD
+        ],
         elemLibrary: Literal[C.EXPLICIT, C.STANDARD] = STANDARD,
         hourglassStiffness: float = 0,
         bendingHourglass: float = 0,
@@ -201,7 +212,7 @@ class ElemType:
     ):
         """This method creates an ElemType object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mesh.ElemType

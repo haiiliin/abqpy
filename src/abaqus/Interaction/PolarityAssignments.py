@@ -9,7 +9,7 @@ class PolarityAssignments:
     """The PolarityAssignments object stores the polarity assignment definition for surfaces in
     ContactExp objects. The PolarityAssignments object has no constructor or members.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction

@@ -7,8 +7,7 @@ from typing_extensions import Literal
 
 from .QuantityType import QuantityType
 from ..PathAndProbe.Path import Path
-from ..UtilityAndView.abaqusConstants import (Boolean,
-                                              OFF, ON, REAL, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, REAL, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -28,7 +27,7 @@ class XYData(tuple):
     they are not used anymore. Temporary XYData objects are also created as a result of math
     operations found in the abaqusMath module.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -115,7 +114,7 @@ class XYData(tuple):
     ):
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.XYData
@@ -167,7 +166,7 @@ class XYData(tuple):
     def __init__(self, objectToCopy: "XYData"):
         """This method creates an XYData object by copying an existing XYData object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.XYData
@@ -207,7 +206,7 @@ class XYData(tuple):
     ) -> XYData:
         """This method creates an XYData object from data in an ASCII file.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.XYDataFromFile
@@ -279,15 +278,13 @@ class XYData(tuple):
         positionDescription: str = "",
         legendLabel: str = "",
         skipFrequency: Optional[int] = None,
-        numericForm: Literal[
-            C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
-        ] = REAL,
+        numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
         stepTuple: Optional[int] = None,
     ) -> XYData:
         """This method creates an XYData object by reading history data from an Odb object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.XYDataFromHistory
@@ -349,9 +346,7 @@ class XYData(tuple):
     def xyDataListFromField(
         self,
         odb: Odb,
-        outputPosition: Literal[
-            C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL
-        ],
+        outputPosition: Literal[C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL],
         variable: Tuple[
             Tuple[
                 str,
@@ -374,9 +369,7 @@ class XYData(tuple):
         elementLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
         nodeSets: Union[str, Sequence[str]] = ...,
         nodeLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
-        numericForm: Literal[
-            C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
-        ] = REAL,
+        numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
         operator: Literal[
             C.ADD,
@@ -417,7 +410,7 @@ class XYData(tuple):
     ) -> List[XYData]:
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.xyDataListFromField
@@ -432,8 +425,8 @@ class XYData(tuple):
             values are ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, and NODAL.
         variable
             A tuple of tuples containing the descriptions of variables for which to extract data
-            from the field. Each tuple specifies the following: 
-            
+            from the field. Each tuple specifies the following:
+
             * Variable label: A String specifying the variable; for example, 'U'.
             * Variable output position: A SymbolicConstant specifying the output position. Possible values are
               ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT, NODAL,
@@ -441,18 +434,18 @@ class XYData(tuple):
             * Refinement: A tuple specifying the refinement. If the refinement tuple is omitted, data are
               written  for all components and invariants (if applicable). This element is required if the
               location dictionary (the following element in the tuple) is included. The refinement tuple
-              contains the following: 
-              
+              contains the following:
+
               * Type: A SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and
                 COMPONENT.
               * Label: A String specifying the invariant or the component; for example, 'Mises' or 'S22'.
-              
+
             * Location: An optional Dictionary specifying the location. The dictionary contains pairs of the
               following:
-              
+
               * A String specifying the category selection label.
               * A String specifying the section point label.
-              
+
             For example::
 
                 variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
@@ -470,11 +463,11 @@ class XYData(tuple):
             name and a sequence of element expressions; for example,
             `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The element
             expressions can be any of the following:
-            
+
             * An Int specifying a single element label; for example, `1`.
             * A String specifying a single element label; for example, `'7'`.
             * A String specifying a sequence of element labels; for example, `'3:5'` and `'3:15:3'`.
-            
+
         nodeSets
             A sequence of Strings specifying node sets or a String specifying a single node set.
         nodeLabels
@@ -483,11 +476,11 @@ class XYData(tuple):
             name and a sequence of node expressions; for example,
             `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The node expressions
             can be any of the following:
-            
+
             * An Int specifying a single node label; for example, `1`.A
             * String specifying a single node label; for example, `'7'`.
             * A String specifying a sequence of node labels; for example, `'3:5'` and `'3:15:3'`.
-            
+
         numericForm
             A SymbolicConstant specifying the numeric form in which to display results that contain
             complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
@@ -532,7 +525,7 @@ class XYData(tuple):
         """This method creates a list of XYData objects by computing free body data from an Odb
         object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.XYDataFromFreeBody
@@ -578,9 +571,7 @@ class XYData(tuple):
     def XYDataFromShellThickness(
         self,
         odb: Odb,
-        outputPosition: Literal[
-            C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL
-        ],
+        outputPosition: Literal[C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL],
         variable: Tuple[
             Tuple[
                 str,
@@ -605,15 +596,13 @@ class XYData(tuple):
         elementLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
         nodeSets: Union[str, Sequence[str]] = ...,
         nodeLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
-        numericForm: Literal[
-            C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
-        ] = REAL,
+        numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
     ) -> List[XYData]:
         """This method creates a list of XYData objects by reading through the thickness field data
         from an Odb object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.XYDataFromShellThickness
@@ -629,7 +618,7 @@ class XYData(tuple):
         variable
             A tuple of tuples containing the descriptions of variables for which to extract data from the
             field. Each tuple specifies the following:
-            
+
             * Variable label: A String specifying the variable; for example, 'U'.
             * Variable output position: A SymbolicConstant specifying
               the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL,
@@ -639,16 +628,16 @@ class XYData(tuple):
               the refinement tuple is omitted, data are written for all components and invariants (if
               applicable). This element is required if the location dictionary (the following element in the
               tuple) is included. The refinement tuple contains the following:
-              
+
               * Type: A SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and COMPONENT.
               * Label: A String specifying the invariant or the component; for example, 'Mises' or 'S22'.
-              
+
             * Location: An optional Dictionary specifying the location. The
               dictionary contains pairs of the following:
-              
+
               * A String specifying the category selection label.
               * A String specifying the section point label.
-              
+
             For example::
 
                 variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
@@ -722,18 +711,33 @@ class XYData(tuple):
         includeAllElements: Boolean = False,
         step: Optional[int] = None,
         frame: Optional[int] = None,
-        variable: Optional[Literal[C.ELEMENT_FACE, C.ELEMENT_NODAL, C.S22, C.WHOLE_ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.INVARIANT, C.S11, C.WHOLE_MODEL, C.GENERAL_PARTICLE, C.STEEL, C.SNEG, C.WHOLE_PART_INSTANCE]] = None,
+        variable: Optional[
+            Literal[
+                C.ELEMENT_FACE,
+                C.ELEMENT_NODAL,
+                C.S22,
+                C.WHOLE_ELEMENT,
+                C.NODAL,
+                C.INTEGRATION_POINT,
+                C.ELEMENT_CENTROID,
+                C.INVARIANT,
+                C.S11,
+                C.WHOLE_MODEL,
+                C.GENERAL_PARTICLE,
+                C.STEEL,
+                C.SNEG,
+                C.WHOLE_PART_INSTANCE,
+            ]
+        ] = None,
         deformedMag: Optional[float] = None,
-        numericForm: Literal[
-            C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
-        ] = REAL,
+        numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
         projectOntoMesh: Boolean = False,
         projectionTolerance: float = 0,
     ) -> XYData:
         """This method creates an XYData object from path information.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.XYDataFromPath
@@ -798,10 +802,10 @@ class XYData(tuple):
             the location. The dictionary contains pairs of the following:A String specifying the
             category selection label.A String specifying the section point label.For
             example::
-            
-                variable = ('S',INTEGRATION_POINT, ((COMPONENT, 'S22' ), ), ) 
+
+                variable = ('S',INTEGRATION_POINT, ((COMPONENT, 'S22' ), ), )
                 variable = (('S',INTEGRATION_POINT, ((COMPONENT, 'S11' ), ), ),
-                            ('U',NODAL,((COMPONENT, 'U1'),)),) 
+                            ('U',NODAL,((COMPONENT, 'U1'),)),)
                 variable = (('S', INTEGRATION_POINT, ((INVARIANT, 'Mises' ), ),
                             {'shell < STEEL > < 3 section points >':'SNEG,
                             (fraction = -1.0)', }), )

@@ -12,7 +12,7 @@ class ConstrainedSketchVertexModel(ConstrainedSketchBase):
     such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
     contained in their respective repositories.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import sketch
@@ -23,7 +23,7 @@ class ConstrainedSketchVertexModel(ConstrainedSketchBase):
     def Spot(self, point: Sequence[float]):
         """This method creates a spot (construction point) located at the specified coordinates.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].Spot

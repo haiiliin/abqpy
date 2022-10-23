@@ -10,7 +10,7 @@ class FreeBody:
     """The FreeBody object defines a section across which resultant forces and moments are
     computed.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -29,7 +29,7 @@ class FreeBody:
     ):
         """This method creates a FreeBody object and places it in the freeBodies repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.FreeBodyFromEdges
@@ -70,7 +70,7 @@ class FreeBody:
     ):
         """This method creates a FreeBody object and places it in the freeBodies repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.FreeBodyFromEdges
@@ -112,7 +112,7 @@ class FreeBody:
     ):
         """This method creates a FreeBody object and places it in the freeBodies repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.FreeBodyFromEdges

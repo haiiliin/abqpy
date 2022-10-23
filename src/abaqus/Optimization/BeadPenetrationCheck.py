@@ -9,7 +9,7 @@ class BeadPenetrationCheck(GeometricRestriction):
     """The BeadPenetrationCheck object defines a penetration check geometric restriction.
     The BeadPenetrationCheck object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -29,7 +29,7 @@ class BeadPenetrationCheck(GeometricRestriction):
     def __init__(self, name: str, beadPenetrationCheckRegion: Region, region: Region):
         """This method creates a BeadPenetrationCheck object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].BeadPenetrationCheck

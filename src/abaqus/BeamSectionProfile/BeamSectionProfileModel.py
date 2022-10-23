@@ -22,7 +22,7 @@ from ..UtilityAndView.abaqusConstants import Boolean
 class BeamSectionProfileModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -33,7 +33,7 @@ class BeamSectionProfileModel(ModelBase):
         """This method creates Profile objects by reading an output database. The new profiles are
         placed in the profiles repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].beamProfilesFromOdb
@@ -58,7 +58,7 @@ class BeamSectionProfileModel(ModelBase):
     def ArbitraryProfile(self, name: str, table: tuple) -> ArbitraryProfile:
         """This method creates a ArbitraryProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ArbitraryProfile
@@ -97,7 +97,7 @@ class BeamSectionProfileModel(ModelBase):
     ) -> BoxProfile:
         """This method creates a BoxProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BoxProfile
@@ -137,16 +137,14 @@ class BeamSectionProfileModel(ModelBase):
         ------
         RangeError
         """
-        self.profiles[name] = boxProfile = BoxProfile(
-            name, a, b, uniformThickness, t1, t2, t3, t4
-        )
+        self.profiles[name] = boxProfile = BoxProfile(name, a, b, uniformThickness, t1, t2, t3, t4)
         return boxProfile
 
     @abaqus_method_doc
     def CircularProfile(self, name: str, r: float) -> CircularProfile:
         """This method creates a CircularProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CircularProfile
@@ -187,7 +185,7 @@ class BeamSectionProfileModel(ModelBase):
     ) -> GeneralizedProfile:
         """This method creates a GeneralizedProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].GeneralizedProfile
@@ -221,16 +219,14 @@ class BeamSectionProfileModel(ModelBase):
         ------
         RangeError
         """
-        self.profiles[name] = generalizedProfile = GeneralizedProfile(
-            name, area, i11, i12, i22, j, gammaO, gammaW
-        )
+        self.profiles[name] = generalizedProfile = GeneralizedProfile(name, area, i11, i12, i22, j, gammaO, gammaW)
         return generalizedProfile
 
     @abaqus_method_doc
     def HexagonalProfile(self, name: str, r: float, t: float) -> HexagonalProfile:
         """This method creates a HexagonalProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].HexagonalProfile
@@ -274,7 +270,7 @@ class BeamSectionProfileModel(ModelBase):
     ) -> IProfile:
         """This method creates an IProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].IProfile
@@ -317,7 +313,7 @@ class BeamSectionProfileModel(ModelBase):
     def LProfile(self, name: str, a: float, b: float, t1: float, t2: float) -> LProfile:
         """This method creates a LProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].LProfile
@@ -356,7 +352,7 @@ class BeamSectionProfileModel(ModelBase):
     def PipeProfile(self, name: str, r: float, t: float) -> PipeProfile:
         """This method creates a PipeProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PipeProfile
@@ -389,7 +385,7 @@ class BeamSectionProfileModel(ModelBase):
     def RectangularProfile(self, name: str, a: float, b: float) -> RectangularProfile:
         """This method creates a RectangularProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].RectangularProfile
@@ -419,12 +415,10 @@ class BeamSectionProfileModel(ModelBase):
         return rectangularProfile
 
     @abaqus_method_doc
-    def TProfile(
-        self, name: str, b: float, h: float, l: float, tf: float, tw: float
-    ) -> TProfile:
+    def TProfile(self, name: str, b: float, h: float, l: float, tf: float, tw: float) -> TProfile:
         """This method creates a TProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TProfile
@@ -463,12 +457,10 @@ class BeamSectionProfileModel(ModelBase):
         return tProfile
 
     @abaqus_method_doc
-    def TrapezoidalProfile(
-        self, name: str, a: float, b: float, c: float, d: float
-    ) -> TrapezoidalProfile:
+    def TrapezoidalProfile(self, name: str, a: float, b: float, c: float, d: float) -> TrapezoidalProfile:
         """This method creates a TrapezoidalProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TrapezoidalProfile

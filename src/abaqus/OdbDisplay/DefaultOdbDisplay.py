@@ -17,7 +17,7 @@ class DefaultOdbDisplay:
     """The DefaultOdbDisplay object is a limited-functionality version of the OdbDisplay
     object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

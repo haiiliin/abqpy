@@ -10,7 +10,7 @@ class InitializationAssignment:
     definition for domain pairs in a ContactStd or ContactExp object. The
     InitializationAssignment object has no constructor or members.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction

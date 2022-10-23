@@ -62,9 +62,9 @@ def raw_input(prompt: str = "") -> str:
 
 def cliCommand(text: str) -> None:
     """Excutes Abaqus/CAE CLI command
-    
+
     called from cmdK_CommandDeliveryRole::sendCliCommand
-    
+
     Parameters
     ----------
     text : str

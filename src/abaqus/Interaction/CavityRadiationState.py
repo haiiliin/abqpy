@@ -14,7 +14,7 @@ class CavityRadiationState(InteractionState):
     The CavityRadiationState object has no constructor or methods.
     The CavityRadiationState object is derived from the InteractionState object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction

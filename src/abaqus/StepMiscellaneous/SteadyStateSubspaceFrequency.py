@@ -8,7 +8,7 @@ class SteadyStateSubspaceFrequency:
     """A SteadyStateSubspaceFrequency is an object used to define frequency over range of
     modes.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step

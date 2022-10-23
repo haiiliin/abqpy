@@ -12,7 +12,7 @@ class Title:
     """The Title object is used to store the display attributes of the XYPlot title. An Title
     object is automatically created when creating a XYPlot object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -38,9 +38,9 @@ class Title:
         self,
         title: "Title",
         text: str = "",
-        area: Optional[Area] = None, 
+        area: Optional[Area] = None,
         useDefault: Boolean = OFF,
-        titleStyle: Optional[TextStyle] = None, 
+        titleStyle: Optional[TextStyle] = None,
     ):
         """This method modifies the Title object.
 

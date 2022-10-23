@@ -17,7 +17,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, CLOSEST, OFF
 class OdbStepBase:
     """An output database contains the same steps of the model database that originated it.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -78,7 +78,7 @@ class OdbStepBase:
     ) -> None:
         """This method creates an OdbStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].Step
@@ -106,7 +106,7 @@ class OdbStepBase:
         procedure
             A String specifying the step procedure. The default value is an empty string. The
             following is the list of valid procedures:
-            
+
             - `*ANNEAL`
             - `*BUCKLE`
             - `*COMPLEX FREQUENCY`
@@ -165,15 +165,13 @@ class OdbStepBase:
         ------
         ValueError: previousStepName is invalid
             If **previousStepName** is invalid.
-              
+
         """
         ...
 
     @overload
     @abaqus_method_doc
-    def getFrame(
-        self, frameValue: str, match: Literal[C.CLOSEST, C.BEFORE, C.AFTER, C.EXACT] = CLOSEST
-    ) -> OdbFrame:
+    def getFrame(self, frameValue: str, match: Literal[C.CLOSEST, C.BEFORE, C.AFTER, C.EXACT] = CLOSEST) -> OdbFrame:
         """This method retrieves an OdbFrame object associated with a given frame value.
 
         Parameters
@@ -265,9 +263,7 @@ class OdbStepBase:
     def getFrame(self, *args, **kwargs) -> OdbFrame:
         ...
 
-    def getHistoryRegion(
-        self, point: HistoryPoint, loadCase: OdbLoadCase = OdbLoadCase("loadCase")
-    ) -> HistoryRegion:
+    def getHistoryRegion(self, point: HistoryPoint, loadCase: OdbLoadCase = OdbLoadCase("loadCase")) -> HistoryRegion:
         """This method retrieves a HistoryRegion object associated with a HistoryPoint in the
         model.
 

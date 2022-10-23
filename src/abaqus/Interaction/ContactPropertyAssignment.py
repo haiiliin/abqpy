@@ -10,7 +10,7 @@ class ContactPropertyAssignment:
     for domain pairs in ContactExp and ContactStd objects. The ContactPropertyAssignment
     object has no constructor or members.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction

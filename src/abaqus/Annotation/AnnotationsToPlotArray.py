@@ -13,7 +13,7 @@ class AnnotationsToPlotArray(List[Annotation]):
     annotations. By adding annotations to and removing annotations from this sequence, you
     can control which annotations are displayed in a particular viewport.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import annotationToolset

@@ -26,7 +26,7 @@ class StepBase:
     constructor. The methods and members of the Step object are common to all objects
     derived from the Step.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -47,7 +47,7 @@ class StepBase:
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY

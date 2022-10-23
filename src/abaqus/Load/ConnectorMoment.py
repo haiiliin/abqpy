@@ -14,7 +14,7 @@ class ConnectorMoment(Load):
     """The ConnectorMoment object stores the data for a connector moment.
     The ConnectorMoment object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -54,7 +54,7 @@ class ConnectorMoment(Load):
         """This method creates a ConnectorMoment object on a wire region. Alternatively, the load
         may also be applied to a wire set referenced from an assembled fastener template model.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConnectorMoment

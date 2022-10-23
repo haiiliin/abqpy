@@ -26,7 +26,7 @@ class AnalysisStep(Step):
     members.
     The AnalysisStep object is derived from the Step object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -47,7 +47,7 @@ class AnalysisStep(Step):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY

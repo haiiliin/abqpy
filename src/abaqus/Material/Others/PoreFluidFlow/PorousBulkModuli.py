@@ -7,7 +7,7 @@ from ....UtilityAndView.abaqusConstants import Boolean, OFF
 class PorousBulkModuli:
     """The PorousBulkModuli object defines bulk moduli for soils and rocks.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -30,7 +30,7 @@ class PorousBulkModuli:
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF):
         """This method creates a PorousBulkModuli object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].PorousBulkModuli

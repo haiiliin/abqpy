@@ -12,7 +12,7 @@ class SurfaceCurrentDensity(Load):
     """The SurfaceCurrentDensity object stores the data for a surface current.
     The SurfaceCurrentDensity object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -43,7 +43,7 @@ class SurfaceCurrentDensity(Load):
     ):
         """This method creates a SurfaceCurrentDensity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceCurrentDensity
@@ -79,9 +79,7 @@ class SurfaceCurrentDensity(Load):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(
-        self, distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM, amplitude: str = UNSET
-    ):
+    def setValues(self, distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM, amplitude: str = UNSET):
         """This method modifies the data for an existing SurfaceCurrentDensity object in the step
         where it is created.
 

@@ -10,7 +10,7 @@ class MainSecondaryAssignment:
     surfaces in ContactExp and ContactStd objects. The MainSecondaryAssignment object has no
     constructor or members.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -57,7 +57,7 @@ class MainSecondaryAssignment:
         assignments
             A sequence of tuples specifying the main-secondary assignments. Each tuple contains two
             entries:
-            
+
             - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
               main-secondary attribute is assigned.
             - A SymbolicConstant specifying the overriding main-secondary value to be used for the

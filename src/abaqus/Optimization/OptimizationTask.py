@@ -45,10 +45,25 @@ from .TopologyPointSymmetry import TopologyPointSymmetry
 from .TopologyRotationalSymmetry import TopologyRotationalSymmetry
 from .TurnControl import TurnControl
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (ABSOLUTE_EQUAL, AUTO, AXIS_1, Boolean, DEMOLD_REGION,
-                                              FREE_FORM, MAXIMUM, MILLING_REGION, MINIMIZE, MINIMUM,
-                                              MODEL, OFF, ON, OVERHANG_REGION, SUM,
-                                              TRUE, VECTOR)
+from ..UtilityAndView.abaqusConstants import (
+    ABSOLUTE_EQUAL,
+    AUTO,
+    AXIS_1,
+    Boolean,
+    DEMOLD_REGION,
+    FREE_FORM,
+    MAXIMUM,
+    MILLING_REGION,
+    MINIMIZE,
+    MINIMUM,
+    MODEL,
+    OFF,
+    ON,
+    OVERHANG_REGION,
+    SUM,
+    TRUE,
+    VECTOR,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -69,7 +84,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> SingleTermDesignResponse:
         """This method creates a SingleTermDesignResponse object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SingleTermDesignResponse
@@ -107,9 +122,7 @@ class OptimizationTask(OptimizationTaskBase):
         SingleTermDesignResponse
             A :py:class:`~abaqus.Optimization.SingleTermDesignResponse.SingleTermDesignResponse` object.
         """
-        self.designResponses[
-            name
-        ] = singleTermDesignResponse = SingleTermDesignResponse(
+        self.designResponses[name] = singleTermDesignResponse = SingleTermDesignResponse(
             name,
             identifier,
             csys,
@@ -131,7 +144,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> ObjectiveFunction:
         """This method creates an ObjectiveFunction object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ObjectiveFunction
@@ -156,9 +169,7 @@ class OptimizationTask(OptimizationTaskBase):
         InvalidNameError
         RangeError
         """
-        self.objectiveFunctions[name] = objectiveFunction = ObjectiveFunction(
-            name, objectives, target
-        )
+        self.objectiveFunctions[name] = objectiveFunction = ObjectiveFunction(name, objectives, target)
         return objectiveFunction
 
     @abaqus_method_doc
@@ -167,11 +178,18 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         designResponse: str,
         restrictionValue: float,
-        restrictionMethod: Literal[C.ABSOLUTE_LESS_THAN_EQUAL, C.RELATIVE_GREATER_THAN_EQUAL, C.ABSOLUTE_GREATER_THAN_EQUAL, C.RELATIVE_EQUAL, C.ABSOLUTE_EQUAL, C.RELATIVE_LESS_THAN_EQUAL] = ABSOLUTE_EQUAL,
+        restrictionMethod: Literal[
+            C.ABSOLUTE_LESS_THAN_EQUAL,
+            C.RELATIVE_GREATER_THAN_EQUAL,
+            C.ABSOLUTE_GREATER_THAN_EQUAL,
+            C.RELATIVE_EQUAL,
+            C.ABSOLUTE_EQUAL,
+            C.RELATIVE_LESS_THAN_EQUAL,
+        ] = ABSOLUTE_EQUAL,
     ) -> OptimizationConstraint:
         """This method creates an OptimizationConstraint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].OptimizationConstraint
@@ -200,9 +218,7 @@ class OptimizationTask(OptimizationTaskBase):
         InvalidNameError
         RangeError
         """
-        self.optimizationConstraints[
-            name
-        ] = optimizationConstraint = OptimizationConstraint(
+        self.optimizationConstraints[name] = optimizationConstraint = OptimizationConstraint(
             name, designResponse, restrictionValue, restrictionMethod
         )
         return optimizationConstraint
@@ -219,7 +235,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> BeadFixedRegion:
         """This method creates a BeadFixedRegion object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].BeadFixedRegion
@@ -249,18 +265,14 @@ class OptimizationTask(OptimizationTaskBase):
         BeadFixedRegion
             A :py:class:`~abaqus.Optimization.BeadFixedRegion.BeadFixedRegion` object.
         """
-        self.geometricRestrictions[name] = geometricRestriction = BeadFixedRegion(
-            name, region, csys, u1, u2, u3
-        )
+        self.geometricRestrictions[name] = geometricRestriction = BeadFixedRegion(name, region, csys, u1, u2, u3)
         return geometricRestriction
 
     @abaqus_method_doc
-    def BeadGrowth(
-        self, name: str, region: Region, beadGrowth: float = 0, shrink: float = 0
-    ) -> BeadGrowth:
+    def BeadGrowth(self, name: str, region: Region, beadGrowth: float = 0, shrink: float = 0) -> BeadGrowth:
         """This method creates a BeadGrowth object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].BeadGrowth
@@ -283,9 +295,7 @@ class OptimizationTask(OptimizationTaskBase):
         BeadGrowth
             A :py:class:`~abaqus.Optimization.BeadGrowth.BeadGrowth` object.
         """
-        self.geometricRestrictions[name] = geometricRestriction = BeadGrowth(
-            name, region, beadGrowth, shrink
-        )
+        self.geometricRestrictions[name] = geometricRestriction = BeadGrowth(name, region, beadGrowth, shrink)
         return geometricRestriction
 
     @abaqus_method_doc
@@ -294,7 +304,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> BeadPenetrationCheck:
         """This method creates a BeadPenetrationCheck object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].BeadPenetrationCheck
@@ -328,7 +338,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> BeadPlanarSymmetry:
         """This method creates a BeadPlanarSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].BeadPlanarSymmetry
@@ -352,18 +362,14 @@ class OptimizationTask(OptimizationTaskBase):
         BeadPlanarSymmetry
             A :py:class:`~abaqus.Optimization.BeadPlanarSymmetry.BeadPlanarSymmetry` object.
         """
-        self.geometricRestrictions[name] = geometricRestriction = BeadPlanarSymmetry(
-            name, region, axis, csys
-        )
+        self.geometricRestrictions[name] = geometricRestriction = BeadPlanarSymmetry(name, region, axis, csys)
         return geometricRestriction
 
     @abaqus_method_doc
-    def BeadPointSymmetry(
-        self, name: str, region: Region, csys: Optional[int] = None
-    ) -> BeadPointSymmetry:
+    def BeadPointSymmetry(self, name: str, region: Region, csys: Optional[int] = None) -> BeadPointSymmetry:
         """This method creates a BeadPointSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].BeadPointSymmetry
@@ -384,9 +390,7 @@ class OptimizationTask(OptimizationTaskBase):
         BeadPointSymmetry
             A :py:class:`~abaqus.Optimization.BeadPointSymmetry.BeadPointSymmetry` object.
         """
-        self.geometricRestrictions[name] = geometricRestriction = BeadPointSymmetry(
-            name, region, csys
-        )
+        self.geometricRestrictions[name] = geometricRestriction = BeadPointSymmetry(name, region, csys)
         return geometricRestriction
 
     @abaqus_method_doc
@@ -400,7 +404,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> BeadRotationalSymmetry:
         """This method creates a BeadRotationalSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].BeadRotationalSymmetry
@@ -426,9 +430,7 @@ class OptimizationTask(OptimizationTaskBase):
         BeadRotationalSymmetry
             A :py:class:`~abaqus.Optimization.BeadRotationalSymmetry.BeadRotationalSymmetry` object.
         """
-        self.geometricRestrictions[
-            name
-        ] = geometricRestriction = BeadRotationalSymmetry(
+        self.geometricRestrictions[name] = geometricRestriction = BeadRotationalSymmetry(
             name, angle, region, axis, csys
         )
         return geometricRestriction
@@ -449,7 +451,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> DesignDirection:
         """This method creates a DesignDirection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].DesignDirection
@@ -536,7 +538,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> DrillControl:
         """This method creates a DrillControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].DrillControl
@@ -620,7 +622,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> FixedRegion:
         """This method creates a FixedRegion object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].FixedRegion
@@ -664,7 +666,7 @@ class OptimizationTask(OptimizationTaskBase):
     def FrozenArea(self, name: str, region: Region = Region()) -> FrozenArea:
         """This method creates a FrozenArea object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].FrozenArea
@@ -683,9 +685,7 @@ class OptimizationTask(OptimizationTaskBase):
         FrozenArea
             A :py:class:`~abaqus.Optimization.FrozenArea.FrozenArea` object.
         """
-        self.geometricRestrictions[name] = geometricRestriction = FrozenArea(
-            name, region
-        )
+        self.geometricRestrictions[name] = geometricRestriction = FrozenArea(name, region)
         return geometricRestriction
 
     @abaqus_method_doc
@@ -699,7 +699,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> Growth:
         """This method creates a Growth object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].Growth
@@ -742,7 +742,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> PenetrationCheck:
         """This method creates a PenetrationCheck object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].PenetrationCheck
@@ -789,7 +789,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> ShapeDemoldControl:
         """This method creates a ShapeDemoldControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapeDemoldControl
@@ -871,7 +871,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> ShapeMemberSize:
         """This method creates a ShapeMemberSize object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapeMemberSize
@@ -934,7 +934,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> ShapePlanarSymmetry:
         """This method creates a ShapePlanarSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapePlanarSymmetry
@@ -1013,7 +1013,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> ShapePointSymmetry:
         """This method creates a ShapePointSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapePointSymmetry
@@ -1085,7 +1085,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> ShapeRotationalSymmetry:
         """This method creates a ShapeRotationalSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapeRotationalSymmetry
@@ -1148,9 +1148,7 @@ class OptimizationTask(OptimizationTaskBase):
         ShapeRotationalSymmetry
             A :py:class:`~abaqus.Optimization.ShapeRotationalSymmetry.ShapeRotationalSymmetry` object.
         """
-        self.geometricRestrictions[
-            name
-        ] = geometricRestriction = ShapeRotationalSymmetry(
+        self.geometricRestrictions[name] = geometricRestriction = ShapeRotationalSymmetry(
             name,
             clientDirection,
             region,
@@ -1171,7 +1169,7 @@ class OptimizationTask(OptimizationTaskBase):
     def SizingClusterAreas(self, name: str, regions: tuple) -> SizingClusterAreas:
         """This method creates a SizingClusterAreas object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingClusterAreas
@@ -1189,9 +1187,7 @@ class OptimizationTask(OptimizationTaskBase):
         SizingClusterAreas
             A :py:class:`~abaqus.Optimization.SizingClusterAreas.SizingClusterAreas` object.
         """
-        self.geometricRestrictions[name] = geometricRestriction = SizingClusterAreas(
-            name, regions
-        )
+        self.geometricRestrictions[name] = geometricRestriction = SizingClusterAreas(name, regions)
         return geometricRestriction
 
     @abaqus_method_doc
@@ -1206,7 +1202,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> SizingCyclicSymmetry:
         """This method creates a SizingCyclicSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingCyclicSymmetry
@@ -1244,7 +1240,7 @@ class OptimizationTask(OptimizationTaskBase):
     def SizingFrozenArea(self, name: str, region: Region) -> SizingFrozenArea:
         """This method creates a SizingFrozenArea object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingFrozenArea
@@ -1261,18 +1257,14 @@ class OptimizationTask(OptimizationTaskBase):
         SizingFrozenArea
             A :py:class:`~abaqus.Optimization.SizingFrozenArea.SizingFrozenArea` object.
         """
-        self.geometricRestrictions[name] = geometricRestriction = SizingFrozenArea(
-            name, region
-        )
+        self.geometricRestrictions[name] = geometricRestriction = SizingFrozenArea(name, region)
         return geometricRestriction
 
     @abaqus_method_doc
-    def SizingMemberSize(
-        self, name: str, region: Region, minWidth: float
-    ) -> SizingMemberSize:
+    def SizingMemberSize(self, name: str, region: Region, minWidth: float) -> SizingMemberSize:
         """This method creates a SizingMemberSize object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingMemberSize
@@ -1292,9 +1284,7 @@ class OptimizationTask(OptimizationTaskBase):
         Raises
         ------
         """
-        self.geometricRestrictions[name] = geometricRestriction = SizingMemberSize(
-            name, region, minWidth
-        )
+        self.geometricRestrictions[name] = geometricRestriction = SizingMemberSize(name, region, minWidth)
         return geometricRestriction
 
     @abaqus_method_doc
@@ -1308,7 +1298,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> SizingPlanarSymmetry:
         """This method creates a SizingPlanarSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingPlanarSymmetry
@@ -1349,7 +1339,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> SizingPointSymmetry:
         """This method creates a SizingPointSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingPointSymmetry
@@ -1389,7 +1379,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> SizingRotationalSymmetry:
         """This method creates a SizingRotationalSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingRotationalSymmetry
@@ -1417,9 +1407,7 @@ class OptimizationTask(OptimizationTaskBase):
         SizingRotationalSymmetry
             A :py:class:`~abaqus.Optimization.SizingRotationalSymmetry.SizingRotationalSymmetry` object.
         """
-        self.geometricRestrictions[
-            name
-        ] = geometricRestriction = SizingRotationalSymmetry(
+        self.geometricRestrictions[name] = geometricRestriction = SizingRotationalSymmetry(
             name, angle, region, axis, csys, ignoreFrozenArea
         )
         return geometricRestriction
@@ -1441,7 +1429,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> SlideRegionControl:
         """This method creates a SlideRegionControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SlideRegionControl
@@ -1524,7 +1512,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> StampControl:
         """This method creates a StampControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].StampControl
@@ -1606,7 +1594,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TopologyCyclicSymmetry:
         """This method creates a TopologyCyclicSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyCyclicSymmetry
@@ -1637,9 +1625,7 @@ class OptimizationTask(OptimizationTaskBase):
         TopologyCyclicSymmetry
             A :py:class:`~abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry` object.
         """
-        self.geometricRestrictions[
-            name
-        ] = geometricRestriction = TopologyCyclicSymmetry(
+        self.geometricRestrictions[name] = geometricRestriction = TopologyCyclicSymmetry(
             name, region, translation, axis, csys, ignoreFrozenArea
         )
         return geometricRestriction
@@ -1658,7 +1644,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TopologyDemoldControl:
         """This method creates a TopologyDemoldControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyDemoldControl
@@ -1721,7 +1707,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TopologyMemberSize:
         """This method creates a TopologyMemberSize object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyMemberSize
@@ -1767,7 +1753,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TopologyMillingControl:
         """This method creates a TopologyMillingControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyMillingControl
@@ -1803,9 +1789,7 @@ class OptimizationTask(OptimizationTaskBase):
         TopologyMillingControl
             A :py:class:`~abaqus.Optimization.TopologyMillingControl.TopologyMillingControl` object.
         """
-        self.geometricRestrictions[
-            name
-        ] = geometricRestriction = TopologyMillingControl(
+        self.geometricRestrictions[name] = geometricRestriction = TopologyMillingControl(
             name, millingDirections, region, csys, millingCheckRegion, radius
         )
         return geometricRestriction
@@ -1868,9 +1852,7 @@ class OptimizationTask(OptimizationTaskBase):
         -------
             A TopologyOverhangControl object.
         """
-        self.geometricRestrictions[
-            name
-        ] = geometricRestriction = TopologyOverhangControl(
+        self.geometricRestrictions[name] = geometricRestriction = TopologyOverhangControl(
             name,
             pullDirection,
             region,
@@ -1894,7 +1876,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TopologyPlanarSymmetry:
         """This method creates a TopologyPlanarSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyPlanarSymmetry
@@ -1922,9 +1904,7 @@ class OptimizationTask(OptimizationTaskBase):
         TopologyPlanarSymmetry
             A :py:class:`~abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry` object.
         """
-        self.geometricRestrictions[
-            name
-        ] = geometricRestriction = TopologyPlanarSymmetry(
+        self.geometricRestrictions[name] = geometricRestriction = TopologyPlanarSymmetry(
             name, region, axis, csys, ignoreFrozenArea
         )
         return geometricRestriction
@@ -1939,7 +1919,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TopologyPointSymmetry:
         """This method creates a TopologyPointSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyPointSymmetry
@@ -1981,7 +1961,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TopologyRotationalSymmetry:
         """This method creates a TopologyRotationalSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TopologyRotationalSymmetry
@@ -2011,9 +1991,7 @@ class OptimizationTask(OptimizationTaskBase):
         TopologyRotationalSymmetry
             A :py:class:`~abaqus.Optimization.TopologyRotationalSymmetry.TopologyRotationalSymmetry` object.
         """
-        self.geometricRestrictions[
-            name
-        ] = geometricRestriction = TopologyRotationalSymmetry(
+        self.geometricRestrictions[name] = geometricRestriction = TopologyRotationalSymmetry(
             name, angle, region, axis, csys, ignoreFrozenArea
         )
         return geometricRestriction
@@ -2034,7 +2012,7 @@ class OptimizationTask(OptimizationTaskBase):
     ) -> TurnControl:
         """This method creates a TurnControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].TurnControl

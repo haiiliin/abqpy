@@ -9,10 +9,22 @@ from .ObjectiveFunction import ObjectiveFunction
 from .OptimizationConstraint import OptimizationConstraint
 from .OptimizationTask import OptimizationTask
 from .StopCondition import StopCondition
-from ..UtilityAndView.abaqusConstants import (Boolean, CONDITION_BASED_OPTIMIZATION,
-                                              CONSTRAINED_LAPLACIAN, EVERY_CYCLE, FE_SAFE, LOW,
-                                              MINIMUM, MODEL, NORMAL, OFF, ON, POSITIONS,
-                                              SymbolicConstant, TASK_REGION_LAYERS)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    CONDITION_BASED_OPTIMIZATION,
+    CONSTRAINED_LAPLACIAN,
+    EVERY_CYCLE,
+    FE_SAFE,
+    LOW,
+    MINIMUM,
+    MODEL,
+    NORMAL,
+    OFF,
+    ON,
+    POSITIONS,
+    SymbolicConstant,
+    TASK_REGION_LAYERS,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -21,7 +33,7 @@ class ShapeTask(OptimizationTask):
     """The ShapeTask object defines a shape task.
     The ShapeTask object is derived from the OptimizationTask object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -292,7 +304,7 @@ class ShapeTask(OptimizationTask):
     ):
         """This method creates a ShapeTask object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ShapeTask

@@ -14,7 +14,7 @@ class CoriolisForce(Load):
     """The CoriolisForce object stores the data for a coriolis force.
     The CoriolisForce object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -57,7 +57,7 @@ class CoriolisForce(Load):
     ):
         """This method creates a CoriolisForce object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CoriolisForce
@@ -123,9 +123,7 @@ class CoriolisForce(Load):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(
-        self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""
-    ):
+    def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
         """This method modifies the propagating data for an existing CoriolisForce object in the
         specified step.
 

@@ -7,7 +7,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 class Crack:
     """The Crack object is the abstract base type for ContourIntegral and future crack objects.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
