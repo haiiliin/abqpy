@@ -1,10 +1,12 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..PlotOptions.DGOrientationOptions import DGOrientationOptions
 from ..UtilityAndView.abaqusConstants import (Boolean, MODEL_SIZE, NONE, ON, PLY, SymbolicConstant,
                                               VERY_THIN)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -93,10 +95,10 @@ class OrientationOptions(DGOrientationOptions):
         axis3Color: str = "",
         showAxis3: Boolean = ON,
         symbolSize: float = 12,
-        lineThickness: SymbolicConstant = VERY_THIN,
-        orientation: SymbolicConstant = PLY,
-        arrowheadStyle: SymbolicConstant = NONE,
-        scaleMode: SymbolicConstant = MODEL_SIZE,
+        lineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
+        orientation: Literal[C.LAYUP, C.PLY] = PLY,
+        arrowheadStyle: Literal[C.WIRE, C.FILLED, C.NONE] = NONE,
+        scaleMode: Literal[C.SCREEN_SIZE, C.MODEL_SIZE] = MODEL_SIZE,
     ):
         """This method modifies the OrientationOptions object.
 

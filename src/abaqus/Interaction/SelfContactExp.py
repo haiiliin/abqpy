@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import KINEMATIC, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -46,7 +48,7 @@ class SelfContactExp(Interaction):
         createStepName: str,
         surface: Region,
         interactionProperty: str,
-        mechanicalConstraint: SymbolicConstant = KINEMATIC,
+        mechanicalConstraint: Literal[C.PENALTY, C.KINEMATIC] = KINEMATIC,
         contactControls: str = "",
     ):
         """This method creates a SelfContactExp object.
@@ -85,7 +87,7 @@ class SelfContactExp(Interaction):
     @abaqus_method_doc
     def setValues(
         self,
-        mechanicalConstraint: SymbolicConstant = KINEMATIC,
+        mechanicalConstraint: Literal[C.PENALTY, C.KINEMATIC] = KINEMATIC,
         contactControls: str = "",
     ):
         """This method modifies the data for an existing SelfContactExp object in the step where it

@@ -1,10 +1,12 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant, UNIFORM, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -57,7 +59,7 @@ class Moment(Load):
         amplitude: str = UNSET,
         follower: Boolean = OFF,
         localCsys: Optional[int] = None,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
     ):
         """This method creates a Moment object.
@@ -120,7 +122,7 @@ class Moment(Load):
         amplitude: str = UNSET,
         follower: Boolean = OFF,
         localCsys: Optional[int] = None,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
     ):
         """This method modifies the data for an existing Moment object in the step where it is
@@ -163,7 +165,7 @@ class Moment(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        comp1: Union[SymbolicConstant, float] = ...,
+        comp1: Union[Literal[C.FREED, C.UNCHANGED], float] = ...,
         comp2: Union[SymbolicConstant, float] = ...,
         comp3: Union[SymbolicConstant, float] = ...,
         amplitude: str = "",

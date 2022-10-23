@@ -1,8 +1,10 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import AS_IS, Boolean, OFF, ON, SOLID, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -264,11 +266,11 @@ class GraphicsOptions:
     @abaqus_method_doc
     def setValues(
         self,
-        graphicsDriver: Optional[SymbolicConstant] = None,
+        graphicsDriver: Optional[Literal[C.OPEN_GL]] = None,
         doubleBuffering: Boolean = ON,
         displayLists: Boolean = ON,
-        highlightMethodHint: Optional[SymbolicConstant] = None,
-        dragMode: SymbolicConstant = AS_IS,
+        highlightMethodHint: Optional[Literal[C.SOFTWARE_OVERLAY, C.HARDWARE_OVERLAY, C.XOR]] = None,
+        dragMode: Literal[C.FAST, C.AS_IS] = AS_IS,
         antiAlias: Boolean = ON,
         autoFitAfterRotate: Boolean = OFF,
         polygonOffsetConstant: Optional[float] = None,
@@ -283,7 +285,7 @@ class GraphicsOptions:
         hardwareOverlay: Boolean = OFF,
         textureMapping: Boolean = ON,
         printTextureMapping: Boolean = ON,
-        backgroundStyle: SymbolicConstant = SOLID,
+        backgroundStyle: Literal[C.SOLID, C.GRADIENT] = SOLID,
         backgroundColor: str = "",
         backgroundBottomColor: str = "",
         backgroundOverride: Boolean = OFF,

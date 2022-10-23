@@ -1,10 +1,12 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import Boolean, MAXIMUM, ON, SymbolicConstant, TRUE
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -86,8 +88,13 @@ class ShapeRotationalSymmetry(GeometricRestriction):
         allowNonSymmetricMesh: Boolean = TRUE,
         angle: float = 0,
         csys: Optional[int] = None,
+<<<<<<< HEAD
         masterPoint: Optional[str] = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
+=======
+        mainPoint: Optional[str] = None,
+        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         presumeFeasibleRegionAtStart: Boolean = ON,
         startPoint: Optional[float] = None,
         tolerance1: float = 0,
@@ -161,8 +168,13 @@ class ShapeRotationalSymmetry(GeometricRestriction):
         allowNonSymmetricMesh: Boolean = TRUE,
         angle: float = 0,
         csys: Optional[int] = None,
+<<<<<<< HEAD
         masterPoint: Optional[str] = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
+=======
+        mainPoint: Optional[str] = None,
+        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         presumeFeasibleRegionAtStart: Boolean = ON,
         startPoint: Optional[float] = None,
         tolerance1: float = 0,

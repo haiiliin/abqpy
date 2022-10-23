@@ -1,8 +1,10 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import Boolean, CCW, FILL, OFF, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -255,10 +257,10 @@ class Drawing:
     @abaqus_method_doc
     def addArrayDraw(
         self,
-        type: SymbolicConstant,
+        type: Literal[C.LINE_LOOP, C.TRIANGLE_FAN, C.LINES, C.TRIANGLES, C.TRIANGLE_STRIP, C.QUAD_STRIP, C.LINE_STRIP, C.QUADS, C.POINTS],
         startIndex: int,
         numVertices: int,
-        polygonMode: SymbolicConstant = FILL,
+        polygonMode: Literal[C.EDGES, C.POINTS, C.FILL] = FILL,
     ):
         """This method adds a rendering command to the drawing and can be called multiple times to
         add additional rendering commands. When the drawing is referenced by a Viewport, the
@@ -302,9 +304,9 @@ class Drawing:
     @abaqus_method_doc
     def addIndexDraw(
         self,
-        type: SymbolicConstant,
+        type: Literal[C.LINE_LOOP, C.TRIANGLE_FAN, C.LINES, C.TRIANGLES, C.TRIANGLE_STRIP, C.QUAD_STRIP, C.LINE_STRIP, C.QUADS, C.POINTS],
         indices: tuple,
-        polygonMode: SymbolicConstant = FILL,
+        polygonMode: Literal[C.EDGES, C.POINTS, C.FILL] = FILL,
     ):
         """This method adds a rendering command to the drawing and can be called multiple times to
         add additional rendering commands. When the drawing is referenced by a Viewport, the
@@ -350,7 +352,7 @@ class Drawing:
         self,
         show: Boolean = OFF,
         cullBackfaces: Boolean = OFF,
-        frontFaceOrder: SymbolicConstant = CCW,
+        frontFaceOrder: Literal[C.CCW] = CCW,
         smoothShade: Boolean = ON,
         edgesInShaded: Boolean = ON,
         translucency: float = 1,

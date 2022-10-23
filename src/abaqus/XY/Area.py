@@ -1,11 +1,13 @@
 from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
 from ..UtilityAndView.abaqusConstants import (AUTOMATIC, AUTO_ALIGN, BOTTOM_LEFT, Boolean, OFF,
                                               SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -107,9 +109,9 @@ class Area:
         area: "Area",
         style: AreaStyle,
         border: LineStyle,
-        positionMethod: SymbolicConstant = AUTO_ALIGN,
-        alignment: SymbolicConstant = BOTTOM_LEFT,
-        sizeMethod: SymbolicConstant = AUTOMATIC,
+        positionMethod: Literal[C.MANUAL, C.AUTO_ALIGN] = AUTO_ALIGN,
+        alignment: Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.AUTO_ALIGN, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER] = BOTTOM_LEFT,
+        sizeMethod: Literal[C.AUTOMATIC, C.MANUAL] = AUTOMATIC,
         originOffset: Sequence[float] = (),
         widthScale: float = 1,
         heightScale: float = 1,

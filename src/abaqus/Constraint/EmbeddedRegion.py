@@ -1,10 +1,12 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Constraint import Constraint
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import BOTH, Boolean, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -67,7 +69,7 @@ class EmbeddedRegion(Constraint):
         embeddedRegion: Region,
         hostRegion: Region,
         weightFactorTolerance: Optional[float] = None,
-        toleranceMethod: SymbolicConstant = BOTH,
+        toleranceMethod: Literal[C.FRACTIONAL, C.BOTH, C.ABSOLUTE] = BOTH,
         absoluteTolerance: float = 0,
         fractionalTolerance: float = 0,
     ):
@@ -117,7 +119,7 @@ class EmbeddedRegion(Constraint):
     def setValues(
         self,
         weightFactorTolerance: Optional[float] = None,
-        toleranceMethod: SymbolicConstant = BOTH,
+        toleranceMethod: Literal[C.FRACTIONAL, C.BOTH, C.ABSOLUTE] = BOTH,
         absoluteTolerance: float = 0,
         fractionalTolerance: float = 0,
     ):
