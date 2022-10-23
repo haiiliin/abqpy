@@ -105,7 +105,7 @@ class SymbolicConstant(str):
         Helper method for __new__
         Also used by AbaqusBoolean.__new__
         """
-        pass
+        ...
 
     __weakref__ = property(lambda self: object(), lambda self, v: None, lambda self: None)  # default
     """list of weak references to the object (if defined)"""
