@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -455,12 +455,9 @@ msgstr ""
 #: abaqus.BasicGeometry.Cell.Cell.getEdges:4
 #: abaqus.BasicGeometry.Cell.Cell.getFaces:5
 #: abaqus.BasicGeometry.Cell.Cell.getVertices:4
-#: abaqus.BasicGeometry.Edge.Edge.getFaces:5
-#: abaqus.BasicGeometry.Edge.Edge.getVertices:7
 #: abaqus.BasicGeometry.Face.Face.getCells:5
 #: abaqus.BasicGeometry.Face.Face.getEdges:3
-#: abaqus.BasicGeometry.Face.Face.getVertices:4
-#: abaqus.BasicGeometry.Vertex.Vertex.getEdges:5 of
+#: abaqus.BasicGeometry.Face.Face.getVertices:4 of
 msgid ":class:`Sequence[int]`"
 msgstr ""
 
@@ -1625,6 +1622,12 @@ msgstr ""
 msgid ""
 "An :py:class:`~abaqus.BasicGeometry.EdgeArray.EdgeArray` object, which is"
 " a sequence of Edgeobjects."
+msgstr ""
+
+#: abaqus.BasicGeometry.Edge.Edge.getFaces:5
+#: abaqus.BasicGeometry.Edge.Edge.getVertices:7
+#: abaqus.BasicGeometry.Vertex.Vertex.getEdges:5 of
+msgid ":class:`Tuple[int]`"
 msgstr ""
 
 #: abaqus.BasicGeometry.Edge.Edge.getNodes:3 of
@@ -3673,57 +3676,46 @@ msgid ""
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-vertexpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid ":py:obj:`index <abaqus.BasicGeometry.Vertex.Vertex.index>`\\"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1 ../../docstring
+#: ../../None:6:<autosummary>:1 ../../docstring
 #: abaqus.BasicGeometry.Vertex.Vertex.index:1 of
 msgid ""
 "An Int specifying the index of the ConstrainedSketchVertex in the "
 "VertexArray."
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid ""
 ":py:obj:`isReferenceRep "
 "<abaqus.BasicGeometry.Vertex.Vertex.isReferenceRep>`\\"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1 ../../docstring
+#: ../../None:6:<autosummary>:1 ../../docstring
 #: abaqus.BasicGeometry.Vertex.Vertex.isReferenceRep:1 of
 msgid ""
 "A Boolean specifying whether the vertex belongs to the reference "
 "representation of the Part or Instance."
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
-msgid ":py:obj:`pointOn <abaqus.BasicGeometry.Vertex.Vertex.pointOn>`\\"
-msgstr ""
-
-#: ../../None:7:<autosummary>:1 ../../docstring
-#: abaqus.BasicGeometry.Vertex.Vertex.pointOn:1 of
-msgid ""
-"A tuple of Floats specifying the **X** -, **Y** -, and **Z** -coordinates"
-" of the vertex."
-msgstr ""
-
-#: ../../None:7:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid ":py:obj:`featureName <abaqus.BasicGeometry.Vertex.Vertex.featureName>`\\"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1 ../../docstring
+#: ../../None:6:<autosummary>:1 ../../docstring
 #: abaqus.BasicGeometry.Vertex.Vertex.featureName:1 of
 msgid ""
 "A tuple of Floats specifying the name of the feature that created this "
 "vertex."
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:6:<autosummary>:1
 msgid ":py:obj:`instanceName <abaqus.BasicGeometry.Vertex.Vertex.instanceName>`\\"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1 ../../docstring
+#: ../../None:6:<autosummary>:1 ../../docstring
 #: abaqus.BasicGeometry.Vertex.Vertex.instanceName:1 of
 msgid ""
 "A tuple of Floats specifying the name of the part instance for this "
@@ -3763,6 +3755,12 @@ msgstr ""
 msgid ""
 "This method returns an array of element objects that are associated with "
 "the vertex."
+msgstr ""
+
+#: ../../docstring abaqus.BasicGeometry.Vertex.Vertex.pointOn:1 of
+msgid ""
+"A tuple of Floats specifying the **X** -, **Y** -, and **Z** -coordinates"
+" of the vertex."
 msgstr ""
 
 #: ../../reference/mdb/model/part_assembly/geometry.rst:191
@@ -6887,5 +6885,8 @@ msgstr ""
 #~ " accepts as arguments a sequence of"
 #~ " sequence of floats in the following"
 #~ " format::"
+#~ msgstr ""
+
+#~ msgid ":py:obj:`pointOn <abaqus.BasicGeometry.Vertex.Vertex.pointOn>`\\"
 #~ msgstr ""
 
