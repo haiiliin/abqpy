@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3733,7 +3733,8 @@ msgstr ""
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:43
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:43
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:13
-#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:18 of
+#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:18
+#: abaqus.Mesh.MeshPart.MeshPart.seedPart:15 of
 msgid ""
 "A SymbolicConstant specifying how closely the seeds must be matched by "
 "the mesh. The default value is FREE. If unspecified, the existing "
@@ -3743,14 +3744,16 @@ msgstr ""
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:47
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:47
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:17
-#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:22 of
+#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:22
+#: abaqus.Mesh.MeshPart.MeshPart.seedPart:19 of
 msgid "FREE: The resulting mesh can be finer or coarser than the specified seeds."
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:48
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:48
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:18
-#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:23 of
+#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:23
+#: abaqus.Mesh.MeshPart.MeshPart.seedPart:20 of
 msgid "FINER: The resulting mesh can be finer than the specified seeds."
 msgstr ""
 
@@ -3835,8 +3838,7 @@ msgstr ""
 msgid "A Float specifying the desired global element size for the edges."
 msgstr ""
 
-#: abaqus.Mesh.MeshAssembly.MeshAssembly.seedPartInstance:17
-#: abaqus.Mesh.MeshPart.MeshPart.seedPart:15 of
+#: abaqus.Mesh.MeshAssembly.MeshAssembly.seedPartInstance:17 of
 msgid ""
 "A SymbolicConstant specifying how closely the seeds must be matched by "
 "the mesh. The default value is FREE. If unspecified, the existing "
@@ -5049,7 +5051,6 @@ msgid "A tuple of :py:class:`~abaqus.Mesh.MeshFace.MeshFace` objects."
 msgstr ""
 
 #: abaqus.Mesh.MeshEdge.MeshEdge.getElemFaces:4
-#: abaqus.Mesh.MeshElement.MeshElement.getElemFaces:4
 #: abaqus.Mesh.MeshNode.MeshNode.getElemFaces:4 of
 msgid ":class:`Sequence[MeshFace]`"
 msgstr ""
@@ -5109,7 +5110,6 @@ msgid "A tuple of :py:class:`~abaqus.Mesh.MeshNode.MeshNode` objects."
 msgstr ""
 
 #: abaqus.Mesh.MeshEdge.MeshEdge.getNodes:4
-#: abaqus.Mesh.MeshElement.MeshElement.getNodes:4
 #: abaqus.Mesh.MeshFace.MeshFace.getNodes:4 of
 msgid ":class:`Sequence[MeshNode]`"
 msgstr ""
@@ -5750,10 +5750,12 @@ msgstr ""
 msgid "A tuple of :py:class:`~abaqus.Mesh.MeshEdge.MeshEdge` objects."
 msgstr ""
 
-#: abaqus.Mesh.MeshElement.MeshElement.getElemEdges:4
-#: abaqus.Mesh.MeshFace.MeshFace.getElemEdges:4
-#: abaqus.Mesh.MeshNode.MeshNode.getElemEdges:4 of
-msgid ":class:`Sequence[MeshEdge]`"
+#: abaqus.Mesh.MeshElement.MeshElement.getElemEdges:4 of
+msgid ":class:`Tuple[MeshEdge]`"
+msgstr ""
+
+#: abaqus.Mesh.MeshElement.MeshElement.getElemFaces:4 of
+msgid ":class:`Tuple[MeshFace]`"
 msgstr ""
 
 #: abaqus.Mesh.MeshElement.MeshElement.getElementsByFeatureEdge:6 of
@@ -5768,6 +5770,10 @@ msgstr ""
 #: abaqus.Mesh.MeshFace.MeshFace.getElemFacesByLimitingAngle:9
 #: abaqus.Mesh.MeshNode.MeshNode.getNodesByFeatureEdge:9 of
 msgid "A float specifying the value of the face angle in degrees."
+msgstr ""
+
+#: abaqus.Mesh.MeshElement.MeshElement.getNodes:4 of
+msgid ":class:`Tuple[MeshNode]`"
 msgstr ""
 
 #: abaqus.Mesh.MeshElement.MeshElement.setValues:4 of
@@ -6438,6 +6444,11 @@ msgstr ""
 #: abaqus.Mesh.MeshFace.MeshFace.getElemEdges:3
 #: abaqus.Mesh.MeshNode.MeshNode.getElemEdges:3 of
 msgid "**edges** -- A tuple of MeshEdge objects"
+msgstr ""
+
+#: abaqus.Mesh.MeshFace.MeshFace.getElemEdges:4
+#: abaqus.Mesh.MeshNode.MeshNode.getElemEdges:4 of
+msgid ":class:`Sequence[MeshEdge]`"
 msgstr ""
 
 #: abaqus.Mesh.MeshFace.MeshFace.getElemEdgesByFaceAngle:6 of
@@ -7588,7 +7599,7 @@ msgstr ""
 #: ../../None:34:<autosummary>:1
 msgid ""
 ":py:obj:`seedEdgeByBias <abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias>`\\"
-" \\(biasMethod\\, end1Edges\\, ...\\[\\, ...\\]\\)"
+" \\(\\[biasMethod\\, end1Edges\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1
@@ -9593,6 +9604,15 @@ msgid ""
 "Check `Part.seedPart on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-partpyc.htm?contextscope=all"
 "#simaker-partseedpartpyc>`__."
+msgstr ""
+
+#: abaqus.Mesh.MeshPart.MeshPart.seedPart:15 of
+msgid ""
+"A SymbolicConstant specifying how closely the seeds must be matched by "
+"the mesh. The default value is FREE. If unspecified, the existing "
+"constraint will remain unchanged. Possible values are:  - FREE: The "
+"resulting mesh can be finer or coarser than the specified seeds. - FINER:"
+" The resulting mesh can be finer than the specified seeds."
 msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:5 of
@@ -14157,5 +14177,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ":py:obj:`suppress <abaqus.Mesh.MeshPart.MeshPart.suppress>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`seedEdgeByBias "
+#~ "<abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias>`\\ "
+#~ "\\(biasMethod\\, end1Edges\\, ...\\[\\, ...\\]\\)"
 #~ msgstr ""
 
