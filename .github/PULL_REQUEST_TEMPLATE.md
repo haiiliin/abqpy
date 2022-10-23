@@ -25,7 +25,7 @@ Refer [here](https://github.com/haiiliin/abqpy/discussions/1500) to resolve back
 
 # Type of change
 
-Please check the options that are relevant.
+Please check the options that are relevant, the corresponding label will be added automatically.
 
 - [ ] Bug Fix (non-breaking change which fixes an issue)
   - [ ] bug (fixes an issue)
