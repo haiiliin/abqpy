@@ -18,8 +18,7 @@ from .SymbolDisplayOptions import SymbolDisplayOptions
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..DisplayGroup.DisplayGroupInstance import DisplayGroupInstance
 from ..DisplayGroup.Leaf import Leaf
-from ..UtilityAndView.abaqusConstants import (Boolean, EMPTY_LEAF, OFF, ON, SymbolicConstant,
-                                              WIREFRAME)
+from ..UtilityAndView.abaqusConstants import Boolean, EMPTY_LEAF, OFF, ON, SymbolicConstant, WIREFRAME
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -30,7 +29,7 @@ class AssemblyDisplayOptions:
     constructor. When you create a new viewport, the settings are copied from the current
     viewport.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import assembly
@@ -114,19 +113,13 @@ class AssemblyDisplayOptions:
     displayGroupInstances: Dict[str, DisplayGroupInstance] = {}
 
     #: An :py:class:`~abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions` object.
-    engineeringFeatureOptions: EngineeringFeatureDisplayOptions = (
-        EngineeringFeatureDisplayOptions()
-    )
+    engineeringFeatureOptions: EngineeringFeatureDisplayOptions = EngineeringFeatureDisplayOptions()
 
     #: A :py:class:`~abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions` object.
-    predefinedFieldOptions: PredefinedFieldDisplayOptions = (
-        PredefinedFieldDisplayOptions()
-    )
+    predefinedFieldOptions: PredefinedFieldDisplayOptions = PredefinedFieldDisplayOptions()
 
     #: A :py:class:`~abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions` object.
-    geometricRestrictionOptions: GeometricRestrictionDisplayOptions = (
-        GeometricRestrictionDisplayOptions()
-    )
+    geometricRestrictionOptions: GeometricRestrictionDisplayOptions = GeometricRestrictionDisplayOptions()
 
     #: A :py:class:`~abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions` object.
     geometryOptions: GeometryDisplayOptions = GeometryDisplayOptions()
@@ -141,9 +134,7 @@ class AssemblyDisplayOptions:
     meshOptions: MeshDisplayOptions = MeshDisplayOptions()
 
     #: An :py:class:`~abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions` object.
-    optimizationTaskOptions: OptimizationTaskDisplayOptions = (
-        OptimizationTaskDisplayOptions()
-    )
+    optimizationTaskOptions: OptimizationTaskDisplayOptions = OptimizationTaskDisplayOptions()
 
     #: A :py:class:`~abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions` object.
     stopConditionOptions: StopConditionDisplayOptions = StopConditionDisplayOptions()

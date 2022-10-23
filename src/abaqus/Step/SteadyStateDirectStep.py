@@ -20,8 +20,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import (Boolean, COMPLEX, LOGARITHMIC, OFF, SOLVER_DEFAULT,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import Boolean, COMPLEX, LOGARITHMIC, OFF, SOLVER_DEFAULT, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -32,7 +31,7 @@ class SteadyStateDirectStep(AnalysisStep):
     freedom of the model.
     The SteadyStateDirectStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -89,7 +88,7 @@ class SteadyStateDirectStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -179,7 +178,7 @@ class SteadyStateDirectStep(AnalysisStep):
     ):
         """This method creates a SteadyStateDirectStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SteadyStateDirectStep

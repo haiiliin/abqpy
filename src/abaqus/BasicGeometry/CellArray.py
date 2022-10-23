@@ -12,7 +12,7 @@ from ..UtilityAndView.abaqusConstants import Boolean
 class CellArray(List[Cell]):
     """The CellArray is a sequence of Cell objects.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -35,7 +35,7 @@ class CellArray(List[Cell]):
     def __init__(self, cells: List[Cell]) -> None:
         """This method creates a CellArray object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 part.CellArray
@@ -56,7 +56,9 @@ class CellArray(List[Cell]):
     @overload
     @abaqus_method_doc
     def findAt(
-        self, coordinates: Tuple[float, float, float], printWarning: Boolean = True,
+        self,
+        coordinates: Tuple[float, float, float],
+        printWarning: Boolean = True,
     ) -> Cell:
         ...
 
@@ -64,7 +66,9 @@ class CellArray(List[Cell]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[Tuple[float, float, float],],
+        coordinates: Tuple[
+            Tuple[float, float, float],
+        ],
         printWarning: Boolean = True,
     ) -> List[Cell]:
         ...
@@ -73,7 +77,9 @@ class CellArray(List[Cell]):
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[Tuple[float, float, float],],
+        *coordinates: Tuple[
+            Tuple[float, float, float],
+        ],
         printWarning: Boolean = True,
     ) -> List[Cell]:
         ...
@@ -97,16 +103,16 @@ class CellArray(List[Cell]):
         coordinates
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the object to
             find. `findAt` returns either a Cell object or a sequence of Cell objects based on the type
-            of input. 
+            of input.
 
-            * If **coordinates** is a sequence of Floats, findAt returns the Cell object at that point. 
-            
+            * If **coordinates** is a sequence of Floats, findAt returns the Cell object at that point.
+
             * If **coordinates** is a sequence of sequence of Floats, findAt returns a sequence of Cell
-              objects at the given locations. The sequence of sequence of Floats must be a sequence of 
+              objects at the given locations. The sequence of sequence of Floats must be a sequence of
               sequence of point and normal data, not a sequence of point data. For example::
-            
-                cells1 = myCrackedBlockInstance.cells.findAt(((5.5, -8.3, 294.2),), 
-                                                             ((12.1, -8.3, 287.8),), 
+
+                cells1 = myCrackedBlockInstance.cells.findAt(((5.5, -8.3, 294.2),),
+                                                             ((12.1, -8.3, 287.8),),
                                                              ((14.4, -10.4, 285.5),),)
         printWarning
             A Boolean specifying whether a message is to be printed to the CLI if no entity is found
@@ -118,7 +124,7 @@ class CellArray(List[Cell]):
             A :py:class:`~abaqus.BasicGeometry.Cell.Cell` object.
 
         """
-        first_arg = kwargs.get('coordinates', args[0] if args else ((),))
+        first_arg = kwargs.get("coordinates", args[0] if args else ((),))
         return Cell() if isinstance(first_arg[0], float) else [Cell()]
 
     @abaqus_method_doc
@@ -222,9 +228,7 @@ class CellArray(List[Cell]):
         ...
 
     @abaqus_method_doc
-    def getByBoundingSphere(
-        self, center: Tuple[float, float, float], radius: float
-    ) -> CellArray:
+    def getByBoundingSphere(self, center: Tuple[float, float, float], radius: float) -> CellArray:
         """This method returns an array of cell objects that lie within the specified bounding
         sphere.
 
@@ -252,7 +256,7 @@ class CellArray(List[Cell]):
         -------
         Dict[str, Tuple[float, float, float]]
             A Dictionary object with the following items:
-            
+
             - **low**: a tuple of three floats representing the minimum **X** -, **Y** -, and **Z** -boundary
               values of the bounding box.
             - **high**: a tuple of three floats representing the maximum **X** -, **Y** -, and **Z** -boundary

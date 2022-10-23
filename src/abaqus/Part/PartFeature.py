@@ -11,8 +11,7 @@ from ..Feature.Feature import Feature as BaseFeature
 from ..Region.Region import Region
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (Boolean, IMPRINT,
-                                              OFF, ON, RECOMPUTE_GEOMETRY, RIGHT)
+from ..UtilityAndView.abaqusConstants import Boolean, IMPRINT, OFF, ON, RECOMPUTE_GEOMETRY, RIGHT
 
 
 @abaqus_class_doc
@@ -20,7 +19,7 @@ class PartFeature(BaseFeature):
     """The following commands operate on Feature objects. For more information about the
     Feature object, see Feature object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -34,7 +33,7 @@ class PartFeature(BaseFeature):
         of invalid entities. Since a number of geometry repair operations and validity checks
         are performed, it could be a slow operation depending on the complexity of the geometry.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -47,13 +46,11 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def AddCells(
-        self, faceList: Sequence[Face], flipped: Boolean = OFF
-    ) -> BaseFeature:
+    def AddCells(self, faceList: Sequence[Face], flipped: Boolean = OFF) -> BaseFeature:
         """This method tries to convert a shell entity to a solid entity. The conversion is not
         always successful.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -80,7 +77,7 @@ class PartFeature(BaseFeature):
         """This method creates a first Feature object for an analytical rigid surface by creating a
         planar wire from the given ConstrainedSketch object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -98,13 +95,11 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def AnalyticRigidSurfExtrude(
-        self, sketch: ConstrainedSketch, depth: float = 1
-    ) -> BaseFeature:
+    def AnalyticRigidSurfExtrude(self, sketch: ConstrainedSketch, depth: float = 1) -> BaseFeature:
         """This method creates a first Feature object for an analytical rigid surface by extruding
         the given ConstrainedSketch object by the given depth, creating a surface.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -128,7 +123,7 @@ class PartFeature(BaseFeature):
         """This method creates a first Feature object for an analytical rigid surface by revolving
         the given ConstrainedSketch object by 360° about the **Y**-axis.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -152,7 +147,7 @@ class PartFeature(BaseFeature):
         the reference representation and deletes the **cells** from the active representation of
         the part.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -182,7 +177,7 @@ class PartFeature(BaseFeature):
         object by the given depth, creating a solid. The ConstrainedSketch object must define a
         closed profile.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -229,7 +224,7 @@ class PartFeature(BaseFeature):
         closed profile and an axis of revolution. The axis is defined by a single construction
         line.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -274,16 +269,14 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def BaseSolidSweep(
-        self, sketch: ConstrainedSketch, path: ConstrainedSketch
-    ) -> BaseFeature:
+    def BaseSolidSweep(self, sketch: ConstrainedSketch, path: ConstrainedSketch) -> BaseFeature:
         """This method creates a first Feature object by sweeping the given profile
         ConstrainedSketch object along the path defined by the path ConstrainedSketch object,
         creating a solid. The profile ConstrainedSketch object must define a closed profile. The
         origin of the profile sketch is positioned at the start of the sweep path and swept
         perpendicular to the path. No checks are made for self-intersection.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -307,7 +300,7 @@ class PartFeature(BaseFeature):
         """This method creates a first Feature object by creating a planar shell from the given
         ConstrainedSketch object. The ConstrainedSketch object must define a closed profile.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -336,7 +329,7 @@ class PartFeature(BaseFeature):
         object by the given depth, creating a shell. The ConstrainedSketch object can define
         either an open or closed profile.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -387,7 +380,7 @@ class PartFeature(BaseFeature):
         either an open or closed profile and an axis of revolution. The axis is defined by a
         single construction line.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -428,16 +421,14 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def BaseShellSweep(
-        self, sketch: ConstrainedSketch, path: ConstrainedSketch
-    ) -> BaseFeature:
+    def BaseShellSweep(self, sketch: ConstrainedSketch, path: ConstrainedSketch) -> BaseFeature:
         """This method creates a first Feature object by sweeping the given section
         ConstrainedSketch object along the path defined by the path ConstrainedSketch object,
         creating a shell. The ConstrainedSketch object can define either an open or closed
         profile. The origin of the profile sketch is positioned at the start of the sweep path
         and swept perpendicular to the path. No checks are made for self-intersection.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -461,7 +452,7 @@ class PartFeature(BaseFeature):
         """This method creates a first Feature object by creating a planar wire from the given
         ConstrainedSketch object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -489,7 +480,7 @@ class PartFeature(BaseFeature):
         """This method creates a Feature object by creating new faces that blends two sets of
         faces.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -525,7 +516,7 @@ class PartFeature(BaseFeature):
         """This method creates an additional Feature object by chamfering the given list of edges
         with a given length.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -553,7 +544,7 @@ class PartFeature(BaseFeature):
     ) -> BaseFeature:
         """This method mirrors existing part geometry across a plane to create new geometry.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -580,7 +571,7 @@ class PartFeature(BaseFeature):
         """This method attempts to change entities into a simpler form that will speed up
         processing and make entities available during feature operations.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -598,7 +589,7 @@ class PartFeature(BaseFeature):
     ) -> BaseFeature:
         """This method attempts to change imprecise entities so that the geometry becomes precise.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -618,14 +609,12 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def CoverEdges(
-        self, edgeList: Sequence[Edge], tryAnalytical: Boolean = False
-    ) -> BaseFeature:
+    def CoverEdges(self, edgeList: Sequence[Edge], tryAnalytical: Boolean = False) -> BaseFeature:
         """This method generates a face using the given edges as the face's boundaries. The
         CoverEdges method generates a face by creating the geometry consisting of the underlying
         surface, associated edges, and vertices.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -666,7 +655,7 @@ class PartFeature(BaseFeature):
         """This method creates an additional Feature object by cutting a hole using the given
         ConstrainedSketch object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -714,7 +703,7 @@ class PartFeature(BaseFeature):
         The CutExtrude method creates a blind cut (using **depth**), an up-to-face cut (using
         **upToFace**), or a through-all cut (if **depth** and **upToFace** are not specified).
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -783,7 +772,7 @@ class PartFeature(BaseFeature):
         and cutting away material from the part. You define the sections using a sequence of
         edges from the part or an EdgeArray.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -857,7 +846,7 @@ class PartFeature(BaseFeature):
         ConstrainedSketch object by the given angle and cutting away material from the part. The
         ConstrainedSketch object must define a closed profile and an axis of revolution.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -930,7 +919,7 @@ class PartFeature(BaseFeature):
         plane at the start of the sweep path or it may be created on a Datum plane or a planar
         Face. No checks are made for self-intersection.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1010,7 +999,7 @@ class PartFeature(BaseFeature):
         the surfaces. One of **distance**, **upToReferenceRep**, or **upToFaces** must be used to
         specify how far the faces need to be extended.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1056,7 +1045,7 @@ class PartFeature(BaseFeature):
     ) -> BaseFeature:
         """This method creates a geometry face from a collection of orphan element faces.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1105,7 +1094,7 @@ class PartFeature(BaseFeature):
         the part. The center of the hole is offset from two non-parallel straight edges by the
         given distances.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1151,7 +1140,7 @@ class PartFeature(BaseFeature):
         regions of the part. The center of the hole is offset from two non-parallel straight
         edges by the given distances.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1192,7 +1181,7 @@ class PartFeature(BaseFeature):
         The center of the hole is offset from two non-parallel straight edges by the given
         distances.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1223,13 +1212,11 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def MergeEdges(
-        self, edgeList: Sequence[Edge] = (), extendSelection: Boolean = OFF
-    ) -> BaseFeature:
+    def MergeEdges(self, edgeList: Sequence[Edge] = (), extendSelection: Boolean = OFF) -> BaseFeature:
         """This method merges edges either by extending the user selection or using only the
         selected edges.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1264,7 +1251,7 @@ class PartFeature(BaseFeature):
     ) -> BaseFeature:
         """This method creates new faces by offsetting existing faces.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1307,7 +1294,7 @@ class PartFeature(BaseFeature):
     def RemoveCells(self, cellList: Sequence[Cell]) -> bool:
         """This method converts a solid entity to a shell entity.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1330,12 +1317,10 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def RemoveFaces(
-        self, faceList: Sequence[Face], deleteCells: Boolean = False
-    ) -> BaseFeature:
+    def RemoveFaces(self, faceList: Sequence[Face], deleteCells: Boolean = False) -> BaseFeature:
         """This method removes faces from a solid entity or from a shell entity.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1360,7 +1345,7 @@ class PartFeature(BaseFeature):
         """This method removes faces from a solid entity and attempts to close the resulting gap by
         extending the neighboring faces of the solid.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1387,7 +1372,7 @@ class PartFeature(BaseFeature):
         """This method removes redundant edges and vertices from a solid or a shell entity. One of
         the two arguments is required.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1421,7 +1406,7 @@ class PartFeature(BaseFeature):
         normals if the solid was originally inside out. When a few shell faces are selected, it
         inverts the normals of the selected faces.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1444,7 +1429,7 @@ class PartFeature(BaseFeature):
         of selected edges are initially invalid and may leave behind invalid edges that could
         not be repaired.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1462,14 +1447,12 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def RepairSliver(
-        self, face: Face, point1: int, point2: int, toleranceChecks: Boolean = True
-    ) -> BaseFeature:
+    def RepairSliver(self, face: Face, point1: int, point2: int, toleranceChecks: Boolean = True) -> BaseFeature:
         """This method repairs the selected sliver from the selected face. The sliver area is
         specified using two points. A face partition is carried out at the specified points and
         the smaller of the two faces is removed.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1496,14 +1479,12 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def RepairSmallEdges(
-        self, edgeList: Sequence[Edge], toleranceChecks: Boolean = True
-    ) -> BaseFeature:
+    def RepairSmallEdges(self, edgeList: Sequence[Edge], toleranceChecks: Boolean = True) -> BaseFeature:
         """This method repairs small edges. This method will attempt to replace selected small
         edges with vertices and extend the adjacent faces and edges. This method might leave
         behind some small edges that cannot be removed.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1524,14 +1505,12 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def RepairSmallFaces(
-        self, faceList: Sequence[Face], toleranceChecks: Boolean = True
-    ) -> BaseFeature:
+    def RepairSmallFaces(self, faceList: Sequence[Face], toleranceChecks: Boolean = True) -> BaseFeature:
         """This method repairs small faces. It will attempt to replace the selected small faces
         with edges or vertices and extend the adjacent faces. This method might leave behind
         some small faces that cannot be removed.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1552,13 +1531,11 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def ReplaceFaces(
-        self, faceList: Sequence[Face], stitch: Boolean = True
-    ) -> BaseFeature:
+    def ReplaceFaces(self, faceList: Sequence[Face], stitch: Boolean = True) -> BaseFeature:
         """This method replaces the selected faces with a single face. If one single face is
         selected, that alone is replaced with a new face.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1579,13 +1556,11 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def Round(
-        self, radius: float, edgeList: Sequence[Edge], vertexList: Sequence[Vertex]
-    ) -> BaseFeature:
+    def Round(self, radius: float, edgeList: Sequence[Edge], vertexList: Sequence[Vertex]) -> BaseFeature:
         """This method creates an additional Feature object by rounding (filleting) the given list
         of entities with the given radius.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1623,7 +1598,7 @@ class PartFeature(BaseFeature):
         given ConstrainedSketch object. The ConstrainedSketch object must define a closed
         profile.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1670,7 +1645,7 @@ class PartFeature(BaseFeature):
         ConstrainedSketch object by the given depth, creating a shell protrusion. The
         ConstrainedSketch object can define either an open or closed profile.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1744,7 +1719,7 @@ class PartFeature(BaseFeature):
         and adding shell faces to the part. You define the sections using a sequence of edges
         from the part or an EdgeArray.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1833,7 +1808,7 @@ class PartFeature(BaseFeature):
         revolution. The axis is defined by a single construction line. For a description of the
         plane positioning arguments, see SolidExtrude.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1910,7 +1885,7 @@ class PartFeature(BaseFeature):
         of the sweep path or it may be created on a Datum plane or a planar Face. No checks are
         made for self-intersection.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -1998,7 +1973,7 @@ class PartFeature(BaseFeature):
         ConstrainedSketch object by the given depth, creating a solid protrusion. The
         ConstrainedSketch object must define a closed profile.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -2072,7 +2047,7 @@ class PartFeature(BaseFeature):
         and adding material to the part. You define the sections using a sequence of edges from
         the part or an EdgeArray.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -2159,7 +2134,7 @@ class PartFeature(BaseFeature):
         ConstrainedSketch object must define a closed profile and an axis of revolution. The
         axis is defined by a single construction line.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -2236,7 +2211,7 @@ class PartFeature(BaseFeature):
         created at the normal plane at the start of the sweep path or it may be created on a
         Datum plane or a planar Face. No checks are made for self-intersection.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -2306,14 +2281,12 @@ class PartFeature(BaseFeature):
         ...
 
     @abaqus_method_doc
-    def Stitch(
-        self, edgeList: Sequence[Edge] = (), stitchTolerance: Optional[float] = None
-    ) -> BaseFeature:
+    def Stitch(self, edgeList: Sequence[Edge] = (), stitchTolerance: Optional[float] = None) -> BaseFeature:
         """This method attempts to create a valid part by binding together free and imprecise edges
         of all the faces of a part. If **edgeList** is not given, a global stitch will be
         performed. If **stitchTolerance** is not specified, a value of 1.0 will be used.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -2348,7 +2321,7 @@ class PartFeature(BaseFeature):
         given ConstrainedSketch object. The ConstrainedSketch object must define a closed
         profile.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -2387,7 +2360,7 @@ class PartFeature(BaseFeature):
         through a sequence of given points. Each point can be a datum point, a vertex, an
         interesting point, or a tuple.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -2430,7 +2403,7 @@ class PartFeature(BaseFeature):
         through a sequence of given points. Each point can be a datum point, a vertex, an
         interesting point, or a tuple.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair
@@ -2465,7 +2438,7 @@ class PartFeature(BaseFeature):
         """This method creates an additional Feature object by creating a Wire by selecting one or
         more Edge objects of a Solid or Shell part.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].AutoRepair

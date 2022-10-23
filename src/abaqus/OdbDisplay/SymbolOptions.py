@@ -4,9 +4,20 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from ..PlotOptions.DGSymbolOptions import DGSymbolOptions
-from ..UtilityAndView.abaqusConstants import (ALL_PRINCIPAL_COMPONENTS, Boolean, MODEL_SIZE,
-                                              NOT_SET, OFF, ON, RESULTANT, SCIENTIFIC, SPECTRUM,
-                                              SymbolicConstant, VERY_THIN, WIRE)
+from ..UtilityAndView.abaqusConstants import (
+    ALL_PRINCIPAL_COMPONENTS,
+    Boolean,
+    MODEL_SIZE,
+    NOT_SET,
+    OFF,
+    ON,
+    RESULTANT,
+    SCIENTIFIC,
+    SPECTRUM,
+    SymbolicConstant,
+    VERY_THIN,
+    WIRE,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -25,7 +36,7 @@ class SymbolOptions(DGSymbolOptions):
     - The symbol options associated with a particular viewport.
     The SymbolOptions object is derived from the DGSymbolOptions object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -220,7 +231,9 @@ class SymbolOptions(DGSymbolOptions):
         vectorMaxValue: Optional[float] = None,
         vectorMinValueAutoCompute: Boolean = ON,
         vectorMinValue: Optional[float] = None,
-        tensorQuantity: Literal[C.PRINCIPAL_COMPONENT, C.DIRECT_COMPONENT, C.ALL_DIRECT_COMPONENTS, C.ALL_PRINCIPAL_COMPONENTS] = ALL_PRINCIPAL_COMPONENTS,
+        tensorQuantity: Literal[
+            C.PRINCIPAL_COMPONENT, C.DIRECT_COMPONENT, C.ALL_DIRECT_COMPONENTS, C.ALL_PRINCIPAL_COMPONENTS
+        ] = ALL_PRINCIPAL_COMPONENTS,
         arrowSymbolSize: int = 6,
         tensorMaxPrinColor: str = "",
         tensorMinPrinColor: str = "",

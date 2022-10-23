@@ -22,8 +22,7 @@ from ..PlotOptions.DisplayOptions import DisplayOptions
 from ..PlotOptions.FreeBodyOptions import FreeBodyOptions
 from ..PlotOptions.StreamOptions import StreamOptions
 from ..PlotOptions.ViewCutOptions import ViewCutOptions
-from ..UtilityAndView.abaqusConstants import (Boolean, EMPTY_LEAF, FIRST_FRAME, OFF, ON,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import Boolean, EMPTY_LEAF, FIRST_FRAME, OFF, ON, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -41,7 +40,7 @@ class OdbDisplay:
     other **odbDisplay** members are created and can be set to customize user preferences.
     - The output database display options associated with a particular viewport.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.viewports[name].layers[name].odbDisplay
@@ -56,19 +55,19 @@ class OdbDisplay:
     #: A tuple of Strings specifying field steps.
     #: Each item in the sequence consists of a tuple that contains the following step
     #: information:
-    #: 
+    #:
     #: - **element0**: A String specifying the step name.
     #: - **element1**: A String specifying the step description.
     #: - **element2**: A Float specifying the time value at the start of the step.
     #: - **element3**: A Float specifying the time period of the step.
     #: - **element4**: A Float specifying the user modified time period of the step.
     #: - **element5**: An Int specifying the domain type of the step. Possible values are:
-    #: 
+    #:
     #:   - 0: Time domain
     #:   - 1: Frequency domain
     #:   - 2: Modal domain
     #:   - 3: Arc Length (Riks) domain
-    #: 
+    #:
     #: - **element6**: A String specifying the default frame label.
     #: - **element7**: A sequence of strings specifying the frame labels for all available frames
     #:   in the step.
@@ -131,9 +130,7 @@ class OdbDisplay:
     displayGroup: DisplayGroup = DisplayGroup("dg", Leaf(EMPTY_LEAF))
 
     #: A :py:class:`~abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository` object.
-    displayGroupInstances: DisplayGroupInstanceRepository = (
-        DisplayGroupInstanceRepository()
-    )
+    displayGroupInstances: DisplayGroupInstanceRepository = DisplayGroupInstanceRepository()
 
     #: A :py:class:`~abaqus.PlotOptions.BasicOptions.BasicOptions` object.
     basicOptions: BasicOptions = BasicOptions()
@@ -148,10 +145,10 @@ class OdbDisplay:
 
     #: A tuple specifying variables.
     #: Each item in the sequence consists of a tuple containing the following elements:
-    #: 
+    #:
     #: - Element 0: A String specifying the variable label.
     #: - Element 1: An Int specifying the output position. Possible integer values are:
-    #: 
+    #:
     #:   - 0: UNDEFINED_POSITION
     #:   - 1: NODAL
     #:   - 2: INTEGRATION_POINT
@@ -163,9 +160,9 @@ class OdbDisplay:
     #:   - 8: WHOLE_PART_INSTANCE
     #:   - 9: WHOLE_MODEL
     #:   - 10: GENERAL_PARTICLE
-    #: 
+    #:
     #: - Element 2: An Int specifying the data type. Possible values are:
-    #: 
+    #:
     #:   - 0: ENUMERATION
     #:   - 1: BOOLEAN
     #:   - 2: INTEGER
@@ -179,20 +176,20 @@ class OdbDisplay:
     #:   - 10: TENSOR_3D_SURFACE
     #:   - 11: TENSOR_2D_PLANAR
     #:   - 12: TENSOR_2D_SURFACE
-    #: 
+    #:
     #: - Element 3: An Int specifying the storage type. Possible values are:
-    #: 
+    #:
     #:   - 0: FLOAT
     #:   - 1: DOUBLE
     #:   - 2: INTEGER
     #:   - 3: BOOLEAN
-    #: 
+    #:
     #: - Element 4: An Int specifying the refinement type. Possible values are:
-    #: 
+    #:
     #:   - 0: NO_REFINEMENT
     #:   - 1: INVARIANT
     #:   - 2: COMPONENT
-    #: 
+    #:
     #: - Element 5: A String specifying the refinement label.
     #: - Element 6: An Int specifying the refinement index.
     #: - Element 7: An Int specifying whether section point information is available. Possible
@@ -200,9 +197,9 @@ class OdbDisplay:
     #:   unavailable.
     #: - Element 8: A sequence of a String specifying the name of the ply and category
     #:   selection tuples (see below) specifying the section point information.
-    #: 
+    #:
     #:   A category selection tuple consists of the following elements:
-    #: 
+    #:
     #: - Element 0: A String specifying the category label.
     #: - Element 1: An Int specifying whether to use both top and bottom section points to
     #:   obtain results. Possible values are 1 to use both section points and 0 to use only the
@@ -289,7 +286,7 @@ class OdbDisplay:
         Raises
         ------
         Exception
-            If the viewport is not associated with any Odb object. The current viewport 
+            If the viewport is not associated with any Odb object. The current viewport
             is not associated with an ODB file. Requested operation cancelled.
         """
         ...
@@ -340,7 +337,18 @@ class OdbDisplay:
         self,
         variableLabel: str,
         field: str,
-        outputPosition: Literal[C.ELEMENT_NODAL, C.ELEMENT_FACE, C.WHOLE_ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.WHOLE_MODEL, C.GENERAL_PARTICLE, C.WHOLE_PART_INSTANCE, C.WHOLE_REGION],
+        outputPosition: Literal[
+            C.ELEMENT_NODAL,
+            C.ELEMENT_FACE,
+            C.WHOLE_ELEMENT,
+            C.NODAL,
+            C.INTEGRATION_POINT,
+            C.ELEMENT_CENTROID,
+            C.WHOLE_MODEL,
+            C.GENERAL_PARTICLE,
+            C.WHOLE_PART_INSTANCE,
+            C.WHOLE_REGION,
+        ],
         refinement: Optional[Literal[C.COMPONENT, C.INVARIANT]] = None,
         sectionPoint: Optional[dict] = None,
     ):
@@ -369,10 +377,10 @@ class OdbDisplay:
             A Dictionary with String keys and String values. Each key specifies a region in the
             model; the corresponding value specifies a section point within that region. For
             example::
-            
+
                 sectionPoint={
                     'shell < MAT > < 7 section points >': 'SPOS, (fraction = 1.0)',
-                    'shell < MAT > < 5 section points >': 'SPOS, (fraction = 1.0)', 
+                    'shell < MAT > < 5 section points >': 'SPOS, (fraction = 1.0)',
                 }
 
         Raises
@@ -411,7 +419,18 @@ class OdbDisplay:
         self,
         variableLabel: str,
         field: str,
-        outputPosition: Literal[C.ELEMENT_NODAL, C.ELEMENT_FACE, C.WHOLE_ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.WHOLE_MODEL, C.GENERAL_PARTICLE, C.WHOLE_PART_INSTANCE, C.WHOLE_REGION],
+        outputPosition: Literal[
+            C.ELEMENT_NODAL,
+            C.ELEMENT_FACE,
+            C.WHOLE_ELEMENT,
+            C.NODAL,
+            C.INTEGRATION_POINT,
+            C.ELEMENT_CENTROID,
+            C.WHOLE_MODEL,
+            C.GENERAL_PARTICLE,
+            C.WHOLE_PART_INSTANCE,
+            C.WHOLE_REGION,
+        ],
         refinement: Optional[Literal[C.COMPONENT, C.INVARIANT]] = None,
         sectionPoint: Optional[dict] = None,
         statusMinimum: Optional[float] = None,
@@ -475,7 +494,18 @@ class OdbDisplay:
         self,
         variableLabel: str,
         field: str,
-        outputPosition: Literal[C.ELEMENT_NODAL, C.ELEMENT_FACE, C.WHOLE_ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.WHOLE_MODEL, C.GENERAL_PARTICLE, C.WHOLE_PART_INSTANCE, C.WHOLE_REGION],
+        outputPosition: Literal[
+            C.ELEMENT_NODAL,
+            C.ELEMENT_FACE,
+            C.WHOLE_ELEMENT,
+            C.NODAL,
+            C.INTEGRATION_POINT,
+            C.ELEMENT_CENTROID,
+            C.WHOLE_MODEL,
+            C.GENERAL_PARTICLE,
+            C.WHOLE_PART_INSTANCE,
+            C.WHOLE_REGION,
+        ],
         refinement: Optional[Literal[C.COMPONENT, C.INVARIANT]] = None,
         sectionPoint: Optional[dict] = None,
         tensorQuantity: Optional[SymbolicConstant] = None,
@@ -579,7 +609,7 @@ class OdbDisplay:
     ) -> ViewCut:
         """This method creates a ViewCut object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.viewports[name].layers[name].odbDisplay.ViewCut

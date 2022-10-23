@@ -9,7 +9,7 @@ class MemoryReductionOptions:
     running in reduced memory mode. The MemoryReductionOptions object has no constructor.
     Abaqus creates the **MemoryReductionOptions** member when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.memoryReductionOptions

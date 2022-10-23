@@ -11,7 +11,7 @@ class HeatCapacitance(Inertia):
     region.
     The HeatCapacitance object is derived from the Inertia object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -20,7 +20,7 @@ class HeatCapacitance(Inertia):
             mdb.models[name].rootAssembly.engineeringFeatures.inertias[name]
 
         The table data specify the following:
-        
+
         - Heat capacitance magnitude, ρcVρ⁢c⁢V (density × specific heat × volume).
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
@@ -62,7 +62,7 @@ class HeatCapacitance(Inertia):
     ):
         """This method creates a HeatCapacitance object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.HeatCapacitance

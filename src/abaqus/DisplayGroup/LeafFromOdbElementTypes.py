@@ -14,7 +14,7 @@ class LeafFromOdbElementTypes(Leaf):
     commands.
     The LeafFromOdbElementTypes object is derived from the Leaf object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import displayGroupOdbToolset
@@ -29,7 +29,7 @@ class LeafFromOdbElementTypes(Leaf):
         """This method creates a Leaf object from a sequence of Strings specifying element names.
         Leaf objects specify the items in a display group.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 LeafFromOdbElementTypes

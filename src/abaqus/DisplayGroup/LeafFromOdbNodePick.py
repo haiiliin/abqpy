@@ -14,7 +14,7 @@ class LeafFromOdbNodePick(Leaf):
     commands.
     The LeafFromOdbNodePick object is derived from the Leaf object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import displayGroupOdbToolset
@@ -30,7 +30,7 @@ class LeafFromOdbNodePick(Leaf):
         strings defining the nodes picked for each part instance. Leaf objects specify the items
         in a display group.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 LeafFromOdbNodePick

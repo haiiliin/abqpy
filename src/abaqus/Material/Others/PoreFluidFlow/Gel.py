@@ -1,10 +1,11 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class Gel:
     r"""The Gel object defines a swelling gel.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -28,7 +29,7 @@ class Gel:
     def __init__(self, table: tuple):
         """This method creates a Gel object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Gel

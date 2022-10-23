@@ -12,7 +12,7 @@ class SurfaceSection(Section):
     """The SurfaceSection object defines the properties of a surface section.
     The SurfaceSection object is derived from the Section object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -43,7 +43,7 @@ class SurfaceSection(Section):
     def __init__(self, name: str, useDensity: Boolean = OFF, density: float = 0):
         """This method creates a SurfaceSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceSection

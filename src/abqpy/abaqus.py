@@ -3,23 +3,23 @@ import os
 import sys
 from typing import Dict, Union
 
-ABAQUS_COMMAND_OPTIONS = {'noGUI': True}
+ABAQUS_COMMAND_OPTIONS = {"noGUI": True}
 
 
 def run(cae: bool = True) -> None:
     """Runs Abaqus command in system's CLI
-    
+
     This function uses the top level script file to run the Abaqus
     command, and the arguments passed to it
-    
+
     Parameters
     ----------
     cae : bool, optional
         Whether to use `abaqus cae` command, True for `abaqus cae`, False for `abaqus python`, by default True
     """
     abaqus = os.environ.get("ABAQUS_BAT_PATH", "abaqus")
-    main = sys.modules['__main__']
-    if not hasattr(main, '__file__') or main.__file__ is None:
+    main = sys.modules["__main__"]
+    if not hasattr(main, "__file__") or main.__file__ is None:
         return
 
     filePath = os.path.abspath(main.__file__)
@@ -36,7 +36,7 @@ def run(cae: bool = True) -> None:
 
     # check if in debug mode and run
     debug = os.environ.get("ABQPY_DEBUG", "false").lower() == "true"
-    gettrace = getattr(sys, 'gettrace', None)
+    gettrace = getattr(sys, "gettrace", None)
     debug = debug or (gettrace is not None and gettrace())
 
     # Check if it is imported by sphinx to generate docs
@@ -50,15 +50,14 @@ def run(cae: bool = True) -> None:
     if cae:
         proc = "cae"
         mode = f'noGUI="{filePath}"' if abq_cmd_opt.pop("noGUI", True) else f'script="{filePath}"'
-        sep = '--' if args else ''
+        sep = "--" if args else ""
     else:
         proc = "python"
         mode = f'"{filePath}"'
-        sep = ''
+        sep = ""
 
     options = [
-        f'{key}={value}' if isinstance(value, str) else f'{key}' if value else ''
-        for key, value in abq_cmd_opt.items()
+        f"{key}={value}" if isinstance(value, str) else f"{key}" if value else "" for key, value in abq_cmd_opt.items()
     ]
 
     # If in debug mode do not run the abaqus command at all

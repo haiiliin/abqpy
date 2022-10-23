@@ -14,7 +14,7 @@ class PEGLoad(Load):
     """The PEGLoad object stores the data for a PEG load.
     The PEGLoad object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -51,7 +51,7 @@ class PEGLoad(Load):
     ):
         """This method creates a PEGLoad object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PEGLoad

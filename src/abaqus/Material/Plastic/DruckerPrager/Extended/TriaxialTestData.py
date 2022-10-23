@@ -7,7 +7,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 class TriaxialTestData:
     r"""The TriaxialTestData object provides triaxial test data.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -26,12 +26,10 @@ class TriaxialTestData:
     """
 
     @abaqus_method_doc
-    def __init__(
-        self, table: tuple, a: Optional[float] = None, b: Optional[float] = None, pt: Optional[float] = None
-    ):
+    def __init__(self, table: tuple, a: Optional[float] = None, b: Optional[float] = None, pt: Optional[float] = None):
         """This method creates a TriaxialTestData object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].druckerPrager.TriaxialTestData

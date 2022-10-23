@@ -9,7 +9,7 @@ from ...UtilityAndView.abaqusConstants import Boolean, OFF
 class BiaxialTestData:
     """The BiaxialTestData object provides equibiaxial test data (compression and/or tension).
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -37,7 +37,7 @@ class BiaxialTestData:
     ):
         """This method creates a BiaxialTestData object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].hyperelastic.BiaxialTestData
@@ -51,7 +51,7 @@ class BiaxialTestData:
         ----------
         table
             A sequence of sequences of Floats specifying the following:
-            
+
             - Nominal stress, TB.
             - Nominal strain, ϵB.
         smoothing

@@ -6,8 +6,17 @@ from typing_extensions import Literal
 from .Arrow import Arrow
 from .Text import Text
 from ..Odb.UserDataBase import UserDataBase
-from ..UtilityAndView.abaqusConstants import (BOTTOM_LEFT, Boolean, FILLED_ARROW, JUSTIFY_LEFT,
-                                              NONE, OFF, SOLID, TRANSPARENT, VERY_THIN)
+from ..UtilityAndView.abaqusConstants import (
+    BOTTOM_LEFT,
+    Boolean,
+    FILLED_ARROW,
+    JUSTIFY_LEFT,
+    NONE,
+    OFF,
+    SOLID,
+    TRANSPARENT,
+    VERY_THIN,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -19,10 +28,56 @@ class AnimationUserData(UserDataBase):
         name: str,
         startPoint: Sequence[float] = (0.0, 0.0),
         endPoint: Sequence[float] = (0.0, 0.0),
-        startAnchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
-        endAnchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
-        startHeadStyle: Literal[C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_SQUARE, C.FILLED_ARROW, C.HOLLOW_DIAMOND, C.ARROW, C.NONE, C.FILLED_CIRCLE] = NONE,
-        endHeadStyle: Literal[C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_SQUARE, C.FILLED_ARROW, C.HOLLOW_DIAMOND, C.ARROW, C.NONE, C.FILLED_CIRCLE] = FILLED_ARROW,
+        startAnchor: Union[
+            Literal[
+                C.CENTER_RIGHT,
+                C.TOP_CENTER,
+                C.BOTTOM_RIGHT,
+                C.BOTTOM_LEFT,
+                C.CENTER,
+                C.TOP_RIGHT,
+                C.CENTER_LEFT,
+                C.TOP_LEFT,
+                C.BOTTOM_CENTER,
+            ],
+            float,
+        ] = BOTTOM_LEFT,
+        endAnchor: Union[
+            Literal[
+                C.CENTER_RIGHT,
+                C.TOP_CENTER,
+                C.BOTTOM_RIGHT,
+                C.BOTTOM_LEFT,
+                C.CENTER,
+                C.TOP_RIGHT,
+                C.CENTER_LEFT,
+                C.TOP_LEFT,
+                C.BOTTOM_CENTER,
+            ],
+            float,
+        ] = BOTTOM_LEFT,
+        startHeadStyle: Literal[
+            C.FILLED_DIAMOND,
+            C.FILLED_SQUARE,
+            C.HOLLOW_CIRCLE,
+            C.HOLLOW_SQUARE,
+            C.FILLED_ARROW,
+            C.HOLLOW_DIAMOND,
+            C.ARROW,
+            C.NONE,
+            C.FILLED_CIRCLE,
+        ] = NONE,
+        endHeadStyle: Literal[
+            C.FILLED_DIAMOND,
+            C.FILLED_SQUARE,
+            C.HOLLOW_CIRCLE,
+            C.HOLLOW_SQUARE,
+            C.FILLED_ARROW,
+            C.HOLLOW_DIAMOND,
+            C.ARROW,
+            C.NONE,
+            C.FILLED_CIRCLE,
+        ] = FILLED_ARROW,
         startGap: float = 0.0,
         endGap: float = 0.0,
         color: str = "White",
@@ -31,7 +86,7 @@ class AnimationUserData(UserDataBase):
     ) -> Arrow:
         """This method creates an Arrow object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.Arrow
@@ -53,7 +108,7 @@ class AnimationUserData(UserDataBase):
             A sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
             the model coordinate system. A SymbolicConstant indicates a relative position. Possible
             values are:
-            
+
             - BOTTOM_LEFT,,
             - BOTTOM_CENTER
             - BOTTOM_RIGHT
@@ -63,7 +118,7 @@ class AnimationUserData(UserDataBase):
             - TOP_LEFT
             - TOP_CENTER
             - TOP_RIGHT
-                
+
             The default value is BOTTOM_LEFT.
         endAnchor
             A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
@@ -71,7 +126,7 @@ class AnimationUserData(UserDataBase):
             A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
             the model coordinate system. A SymbolicConstant indicates a relative position. Possible
             values are:
-            
+
             - BOTTOM_LEFT
             - BOTTOM_CENTER
             - BOTTOM_RIGHT
@@ -81,11 +136,11 @@ class AnimationUserData(UserDataBase):
             - TOP_LEFT
             - TOP_CENTER
             - TOP_RIGHT
-                
+
             The default value is BOTTOM_LEFT.
         startHeadStyle
             A SymbolicConstant specifying the style of the start head. Possible values are:
-            
+
             - ARROW
             - FILLED_ARROW
             - HOLLOW_CIRCLE
@@ -95,11 +150,11 @@ class AnimationUserData(UserDataBase):
             - HOLLOW_SQUARE
             - FILLED_SQUARE
             - NONE
-            
+
             The default value is NONE.
         endHeadStyle
             A SymbolicConstant specifying the style of the end head. Possible values are:
-            
+
             - ARROW
             - FILLED_ARROW
             - HOLLOW_CIRCLE
@@ -109,7 +164,7 @@ class AnimationUserData(UserDataBase):
             - HOLLOW_SQUARE
             - FILLED_SQUARE
             - NONE
-            
+
             The default value is FILLED_ARROW.
         startGap
             A Float specifying the distance in millimeters between the arrow start point and the
@@ -154,8 +209,34 @@ class AnimationUserData(UserDataBase):
         name: str,
         text: str = "",
         offset: Sequence[float] = (),
-        anchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
-        referencePoint: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
+        anchor: Union[
+            Literal[
+                C.CENTER_RIGHT,
+                C.TOP_CENTER,
+                C.BOTTOM_RIGHT,
+                C.BOTTOM_LEFT,
+                C.CENTER,
+                C.TOP_RIGHT,
+                C.CENTER_LEFT,
+                C.TOP_LEFT,
+                C.BOTTOM_CENTER,
+            ],
+            float,
+        ] = BOTTOM_LEFT,
+        referencePoint: Union[
+            Literal[
+                C.CENTER_RIGHT,
+                C.TOP_CENTER,
+                C.BOTTOM_RIGHT,
+                C.BOTTOM_LEFT,
+                C.CENTER,
+                C.TOP_RIGHT,
+                C.CENTER_LEFT,
+                C.TOP_LEFT,
+                C.BOTTOM_CENTER,
+            ],
+            float,
+        ] = BOTTOM_LEFT,
         rotationAngle: float = 0,
         color: str = "White",
         font: str = "-*-verdana-medium-r-normal--120-*",
@@ -166,7 +247,7 @@ class AnimationUserData(UserDataBase):
     ) -> Text:
         """This method creates a Text object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.Text
@@ -187,7 +268,7 @@ class AnimationUserData(UserDataBase):
             A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
             the model coordinate system. A SymbolicConstant specifies a relative position. Possible
             values are:
-            
+
             - BOTTOM_LEFT
             - BOTTOM_CENTER
             - BOTTOM_RIGHT
@@ -197,14 +278,14 @@ class AnimationUserData(UserDataBase):
             - TOP_LEFT
             - TOP_CENTER
             - TOP_RIGHT
-            
+
             The default value is BOTTOM_LEFT.
         referencePoint
             A SymbolicConstant or a sequence of Floats specifying a point. The sequence of two
             Floats specifies the **X**- and **Y**-coordinates of the reference point of the Text
             annotation given as percentages of its width and height. The SymbolicConstant indicates
             a relative position. Possible values are:
-            
+
             - BOTTOM_LEFT
             - BOTTOM_CENTER
             - BOTTOM_RIGHT
@@ -214,7 +295,7 @@ class AnimationUserData(UserDataBase):
             - TOP_LEFT
             - TOP_CENTER
             - TOP_RIGHT
-                
+
             The default value is BOTTOM_LEFT.
         rotationAngle
             A Float specifying the amount of rotation in degrees about **referencePoint**. The default

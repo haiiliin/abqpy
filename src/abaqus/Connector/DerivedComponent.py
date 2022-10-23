@@ -12,7 +12,7 @@ class DerivedComponent:
     """A :py:class:`~abaqus.Connector.ConnectorBehaviorOption.DerivedComponent` object describes user-customized components for use in defining
     ConnectorFriction and Potential objects.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -38,7 +38,7 @@ class DerivedComponent:
     def __init__(self):
         """This method creates a DerivedComponent object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].DerivedComponent
@@ -86,7 +86,7 @@ class DerivedComponent:
     ) -> CDCTerm:
         """This method creates a CDCTerm object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].DerivedComponent

@@ -1,10 +1,11 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class EosCompaction:
     """The EosCompaction object specifies material eos compaction.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -27,7 +28,7 @@ class EosCompaction:
     ):
         """This method creates an EosCompaction object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].eos.EosCompaction

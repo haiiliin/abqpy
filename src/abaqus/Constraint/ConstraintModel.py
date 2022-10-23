@@ -16,8 +16,17 @@ from ..Assembly.PartInstance import PartInstance
 from ..BasicGeometry.ModelDotArray import ModelDotArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (BOTH, Boolean, COMPUTED, DEFAULT, DOF_MODE_MPC, OFF,
-                                              ON, SOLVER_DEFAULT, UNIFORM)
+from ..UtilityAndView.abaqusConstants import (
+    BOTH,
+    Boolean,
+    COMPUTED,
+    DEFAULT,
+    DOF_MODE_MPC,
+    OFF,
+    ON,
+    SOLVER_DEFAULT,
+    UNIFORM,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -25,19 +34,17 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class ConstraintModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
     """
 
     @abaqus_method_doc
-    def AdjustPoints(
-        self, name: str, surface: Region, controlPoints: Region
-    ) -> AdjustPoints:
+    def AdjustPoints(self, name: str, surface: Region, controlPoints: Region) -> AdjustPoints:
         """This method creates an AdjustPoints object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AdjustPoints
@@ -79,7 +86,7 @@ class ConstraintModel(ModelBase):
     ) -> Coupling:
         """This method creates a Coupling object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Coupling
@@ -159,12 +166,10 @@ class ConstraintModel(ModelBase):
         return constraint
 
     @abaqus_method_doc
-    def DisplayBody(
-        self, name: str, instance: PartInstance, controlPoints: ModelDotArray
-    ) -> DisplayBody:
+    def DisplayBody(self, name: str, instance: PartInstance, controlPoints: ModelDotArray) -> DisplayBody:
         """This method creates a DisplayBody object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].DisplayBody
@@ -203,7 +208,7 @@ class ConstraintModel(ModelBase):
     ) -> EmbeddedRegion:
         """This method creates a EmbeddedRegion object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EmbeddedRegion
@@ -256,7 +261,7 @@ class ConstraintModel(ModelBase):
     def Equation(self, name: str, terms: tuple) -> Equation:
         """This method creates an Equation object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Equation
@@ -294,7 +299,7 @@ class ConstraintModel(ModelBase):
     ) -> MultipointConstraint:
         """This method creates a MultipointConstraint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].MultipointConstraint
@@ -349,7 +354,7 @@ class ConstraintModel(ModelBase):
     ) -> RigidBody:
         """This method creates a RigidBody object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].RigidBody
@@ -409,7 +414,7 @@ class ConstraintModel(ModelBase):
     ) -> ShellSolidCoupling:
         """This method creates a ShellSolidCoupling object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ShellSolidCoupling
@@ -470,7 +475,7 @@ class ConstraintModel(ModelBase):
     ) -> Tie:
         """This method creates a Tie object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Tie

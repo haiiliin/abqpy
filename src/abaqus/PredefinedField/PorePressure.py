@@ -80,7 +80,7 @@ class PorePressure(PredefinedField):
             A SymbolicConstant selecting the elevation distribution options, either Linear or Constant.
             Possible values are CONSTANT_RATIO and VARIABLE_RATIO.
         fileName
-            A String specifying the name of the file from which the Field values are to be read when 
+            A String specifying the name of the file from which the Field values are to be read when
             `distributionType` = FROM_FILE.
         increment
             The SymbolicConstant LAST_INCREMENT or an Int specifying the increment, interval or iteration
@@ -139,7 +139,7 @@ class PorePressure(PredefinedField):
             A SymbolicConstant selecting the elevation distribution options, either Linear or Constant.
             Possible values are CONSTANT_RATIO and VARIABLE_RATIO.
         fileName
-            A String specifying the name of the file from which the Field values are to be read when 
+            A String specifying the name of the file from which the Field values are to be read when
             `distributionType` = FROM_FILE.
         increment
             The SymbolicConstant LAST_INCREMENT or an Int specifying the increment, interval or iteration

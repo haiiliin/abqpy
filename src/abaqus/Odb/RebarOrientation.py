@@ -11,7 +11,7 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 class RebarOrientation:
     """The RebarOrientation object represents the orientation of the rebar reference.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess

@@ -18,8 +18,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import (AUTOMATIC_GLOBAL, Boolean, OFF, PREVIOUS_STEP,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import AUTOMATIC_GLOBAL, Boolean, OFF, PREVIOUS_STEP, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -29,7 +28,7 @@ class TempDisplacementDynamicsStep(AnalysisStep):
     thermal-stress analysis using explicit integration.
     The TempDisplacementDynamicsStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -101,7 +100,7 @@ class TempDisplacementDynamicsStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -183,7 +182,9 @@ class TempDisplacementDynamicsStep(AnalysisStep):
         description: str = "",
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        timeIncrementationMethod: Literal[C.FIXED_EBE, C.AUTOMATIC_GLOBAL, C.AUTOMATIC_EBE, C.FIXED_USER_DEFINED_INC] = AUTOMATIC_GLOBAL,
+        timeIncrementationMethod: Literal[
+            C.FIXED_EBE, C.AUTOMATIC_GLOBAL, C.AUTOMATIC_EBE, C.FIXED_USER_DEFINED_INC
+        ] = AUTOMATIC_GLOBAL,
         maxIncrement: Optional[float] = None,
         scaleFactor: float = 1,
         userDefinedInc: Optional[float] = None,
@@ -194,7 +195,7 @@ class TempDisplacementDynamicsStep(AnalysisStep):
     ):
         """This method creates a TempDisplacementDynamicsStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TempDisplacementDynamicsStep
@@ -255,7 +256,9 @@ class TempDisplacementDynamicsStep(AnalysisStep):
         description: str = "",
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-        timeIncrementationMethod: Literal[C.FIXED_EBE, C.AUTOMATIC_GLOBAL, C.AUTOMATIC_EBE, C.FIXED_USER_DEFINED_INC] = AUTOMATIC_GLOBAL,
+        timeIncrementationMethod: Literal[
+            C.FIXED_EBE, C.AUTOMATIC_GLOBAL, C.AUTOMATIC_EBE, C.FIXED_USER_DEFINED_INC
+        ] = AUTOMATIC_GLOBAL,
         maxIncrement: Optional[float] = None,
         scaleFactor: float = 1,
         userDefinedInc: Optional[float] = None,

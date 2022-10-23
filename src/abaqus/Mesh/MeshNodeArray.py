@@ -11,7 +11,7 @@ from .MeshNode import MeshNode
 class MeshNodeArray(List[MeshNode]):
     """The MeshNodeArray is a sequence of MeshNode objects.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -46,7 +46,7 @@ class MeshNodeArray(List[MeshNode]):
     def __init__(self, nodes: List[MeshNode]) -> None:
         """This method creates a MeshNodeArray object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mesh.MeshNodeArray
@@ -197,7 +197,7 @@ class MeshNodeArray(List[MeshNode]):
         -------
         Dict[str, Tuple[float, float, float]]
             A Dictionary object with the following items:
-            
+
             - **low**: a tuple of three floats representing the minimum x, y and z boundary values of
               the bounding box.
             - **high**: a tuple of three floats representing the maximum x, y and z boundary values of
@@ -251,7 +251,7 @@ class MeshNodeArray(List[MeshNode]):
 
         Raises
         ------
-        Error: The mask results in an empty sequence            
+        Error: The mask results in an empty sequence
             An exception occurs if the resulting sequence is empty.
         """
         ...

@@ -7,8 +7,17 @@ from .LayerPropertiesArray import LayerPropertiesArray
 from .RebarLayers import RebarLayers
 from .ShellSection import ShellSection
 from .TransverseShearShell import TransverseShearShell
-from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT, DEFAULT, GRADIENT, NO_IDEALIZATION,
-                                              OFF, SIMPSON, SymbolicConstant, UNIFORM)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    CONSTANT,
+    DEFAULT,
+    GRADIENT,
+    NO_IDEALIZATION,
+    OFF,
+    SIMPSON,
+    SymbolicConstant,
+    UNIFORM,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -19,7 +28,7 @@ class GeometryShellSection(ShellSection):
     GeometryShellSection object is an abstract base type.
     The GeometryShellSection object is derived from the ShellSection object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -108,7 +117,9 @@ class GeometryShellSection(ShellSection):
         self,
         nodalThicknessField: str = "",
         thicknessField: str = "",
-        thicknessType: Literal[C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD] = UNIFORM,
+        thicknessType: Literal[
+            C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD
+        ] = UNIFORM,
         preIntegrate: Boolean = OFF,
         poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
@@ -121,7 +132,7 @@ class GeometryShellSection(ShellSection):
     ):
         """This method creates a GeometryShellSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[name].Section
@@ -189,7 +200,7 @@ class GeometryShellSection(ShellSection):
     ) -> RebarLayers:
         """This method creates a RebarLayers object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[name].Section

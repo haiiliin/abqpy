@@ -28,7 +28,7 @@ class RegionPart(RegionPartBase):
     """The following commands operate on Part objects. For more information about the Part
     object, see Part object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import regionToolset
@@ -58,14 +58,14 @@ class RegionPart(RegionPartBase):
         end2Elements: Union[Face, Sequence[Face], None] = None,
         circumElements: Union[Face, Sequence[Face], None] = None,
         name: str = "",
-        **kwargs
+        **kwargs,
     ) -> Surface:
         """This method creates a surface from a sequence of objects in a model database. The
         surface will apply to the sides specified by the arguments.For example::
 
             surface=mdb.models['Model-1'].parts['Part-1'].Surface(side1Faces=side1Faces, name='Surf-1')
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].Surface
@@ -76,47 +76,47 @@ class RegionPart(RegionPartBase):
         name
             A String specifying the repository key. The default value is an empty string.
         side1Elements
-            A sequence of MeshElement objects (surface applies to SIDE1 of element). 
+            A sequence of MeshElement objects (surface applies to SIDE1 of element).
             The default value is None.
         side2Elements
-            A sequence of MeshElement objects (surface applies to SIDE2 of element). 
+            A sequence of MeshElement objects (surface applies to SIDE2 of element).
             The default value is None.
         side12Elements
-            A sequence of MeshElement objects (surface applies to both SIDE1 and SIDE2 of element). 
+            A sequence of MeshElement objects (surface applies to both SIDE1 and SIDE2 of element).
             The default value is None.
         end1Elements
-            A sequence of MeshElement objects (surface applies to END1 of element). 
+            A sequence of MeshElement objects (surface applies to END1 of element).
             The default value is None.
         end2Elements
-            A sequence of MeshElement objects (surface applies to END2 of element). 
+            A sequence of MeshElement objects (surface applies to END2 of element).
             The default value is None.
         circumElements
-            A sequence of MeshElement objects (surface applies to circumference of element). 
+            A sequence of MeshElement objects (surface applies to circumference of element).
             The default value is None.
         face1Elements
-            A sequence of MeshElement objects (surface applies to FACE1 of element) or MeshFace objects. 
+            A sequence of MeshElement objects (surface applies to FACE1 of element) or MeshFace objects.
             The default value is None.
         face2Elements
-            A sequence of MeshElement objects (surface applies to FACE2 of element) or MeshFace objects. 
+            A sequence of MeshElement objects (surface applies to FACE2 of element) or MeshFace objects.
             The default value is None.
         face3Elements
-            A sequence of MeshElement objects (surface applies to FACE3 of element) or MeshFace objects. 
+            A sequence of MeshElement objects (surface applies to FACE3 of element) or MeshFace objects.
             The default value is None.
         face4Elements
-            A sequence of MeshElement objects (surface applies to FACE4 of element) or MeshFace objects. 
+            A sequence of MeshElement objects (surface applies to FACE4 of element) or MeshFace objects.
             The default value is None.
         face5Elements
-            A sequence of MeshElement objects (surface applies to FACE5 of element) or MeshFace objects. 
+            A sequence of MeshElement objects (surface applies to FACE5 of element) or MeshFace objects.
             The default value is None.
         face6Elements
-            A sequence of MeshElement objects (surface applies to FACE6 of element) or MeshFace objects. 
+            A sequence of MeshElement objects (surface applies to FACE6 of element) or MeshFace objects.
             The default value is None.
         side1Faces
             A sequence of Face objects (surface applies to SIDE1 of face). The default value is None.
         side2Faces
             A sequence of Face objects (surface applies to SIDE2 of face). The default value is None.
         side12Faces
-            A sequence of Face objects (surface applies to both SIDE1 and SIDE2 of face). 
+            A sequence of Face objects (surface applies to both SIDE1 and SIDE2 of face).
             The default value is None.
         side1Edges
             A sequence of Edge objects (surface applies to SIDE1 of edge). The default value is None.
@@ -127,15 +127,15 @@ class RegionPart(RegionPartBase):
         end2Edges
             A sequence of Edge objects (surface applies to END2 of edge). The default value is None.
         circumEdges
-            A sequence of Edge objects (surface applies circumferentially to edge). 
+            A sequence of Edge objects (surface applies circumferentially to edge).
             The default value is None.
         kwargs
             The required parameters for different conditions are:
-            
-            - On three-dimensional solid faces, you can use the following arguments: 
+
+            - On three-dimensional solid faces, you can use the following arguments:
               side1Faces, side2Faces
 
-            - On three-dimensional shell faces, you can use the following arguments: 
+            - On three-dimensional shell faces, you can use the following arguments:
               side1Faces, side2Faces, side12Faces
 
             - On three-dimensional wire edges, you can use the following arguments:
@@ -213,7 +213,7 @@ class RegionPart(RegionPartBase):
     ) -> Set:
         """This method creates a set from a sequence of objects in a model database.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
@@ -271,7 +271,7 @@ class RegionPart(RegionPartBase):
     def Set(self, name: str, objectToCopy: Set) -> Set:
         """This method copies a set from an existing set.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
@@ -293,23 +293,24 @@ class RegionPart(RegionPartBase):
 
     @overload
     @abaqus_method_doc
-    def Set(self,
-            name: str,
-            nodes: Optional[Sequence[MeshNode]] = None,
-            elements: Optional[Sequence[MeshElement]] = None,
-            region: Optional[Region] = None,
-            vertices: Optional[Sequence[Vertex]] = None,
-            edges: Optional[Sequence[Edge]] = None,
-            faces: Optional[Sequence[Face]] = None,
-            cells: Optional[Sequence[Cell]] = None,
-            xVertices: Optional[Sequence[Vertex]] = None,
-            xEdges: Optional[Sequence[Edge]] = None,
-            xFaces: Optional[Sequence[Face]] = None,
-            referencePoints: Sequence[ReferencePoint] = (),
-            skinFaces: Tuple[Tuple[str, Sequence[Face]], ...] = ...,
-            skinEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
-            stringerEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
-        ) -> Set:
+    def Set(
+        self,
+        name: str,
+        nodes: Optional[Sequence[MeshNode]] = None,
+        elements: Optional[Sequence[MeshElement]] = None,
+        region: Optional[Region] = None,
+        vertices: Optional[Sequence[Vertex]] = None,
+        edges: Optional[Sequence[Edge]] = None,
+        faces: Optional[Sequence[Face]] = None,
+        cells: Optional[Sequence[Cell]] = None,
+        xVertices: Optional[Sequence[Vertex]] = None,
+        xEdges: Optional[Sequence[Edge]] = None,
+        xFaces: Optional[Sequence[Face]] = None,
+        referencePoints: Sequence[ReferencePoint] = (),
+        skinFaces: Tuple[Tuple[str, Sequence[Face]], ...] = ...,
+        skinEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
+        stringerEdges: Tuple[Tuple[str, Sequence[Edge]], ...] = ...,
+    ) -> Set:
         """This method creates a set from a sequence of objects in a model database.
 
         At least one sequence argument must be provided - elements, nodes, vertices, edges,
@@ -317,10 +318,10 @@ class RegionPart(RegionPartBase):
         used to exclude lower-dimension entities and to provide finer control on the
         content of the set. For example, the following statement defines a region enclosing
         a square face but without two of its edges::
-        
+
             set = mdb.models['Model-1'].rootAssembly.Set(name='mySet', faces=f[3:4], xEdges=e[1:3])
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
@@ -390,7 +391,7 @@ class RegionPart(RegionPartBase):
         """This method creates a skin from a sequence of objects in a model database. At least one
         of the optional arguments needs to be specified.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].Skin
@@ -432,7 +433,7 @@ class RegionPart(RegionPartBase):
         """This method modifies underlying entities of the selected skin. At least one of the
         optional arguments needs to be specified.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].EditSkin
@@ -472,7 +473,7 @@ class RegionPart(RegionPartBase):
         """This method creates a stringer from a sequence of objects in a model database. At least
         one of the optional arguments needs to be specified.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].Stringer
@@ -496,15 +497,15 @@ class RegionPart(RegionPartBase):
         self.stringers[name] = stringer = Stringer(name, edges, elementEdges)
         return stringer
 
-# The following methods was originally in the `Set` object page documentation
-# But it accessed only by `Part` and `rootAssembly` objetcs.
+    # The following methods was originally in the `Set` object page documentation
+    # But it accessed only by `Part` and `rootAssembly` objetcs.
 
     def SetByBoolean(
         self, name: str, sets: Sequence[Set], operation: Literal[UNION, INTERSECTION, DIFFERENCE] = UNION
     ) -> Set:
         """This method creates a set by performing a boolean operation on two or more input sets.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].SetByBoolean
@@ -537,7 +538,7 @@ class RegionPart(RegionPartBase):
         create sets only on parts; however, you can access the sets from instances of the parts
         in the assembly.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].SetFromColor
@@ -562,7 +563,7 @@ class RegionPart(RegionPartBase):
     def SetFromElementLabels(self, name: str, elementLabels: Sequence[int]) -> Set:
         """This method creates a set from a sequence of element labels in a model database.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].SetFromElementLabels
@@ -593,7 +594,7 @@ class RegionPart(RegionPartBase):
     def SetFromNodeLabels(self, name: str, nodeLabels: Sequence[int], unsorted: Boolean = False) -> Set:
         """This method creates a set from a sequence of node labels in a model database.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].SetFromNodeLabels
@@ -621,13 +622,11 @@ class RegionPart(RegionPartBase):
         ...
 
     @abaqus_method_doc
-    def MapSetsFromOdb(
-        self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE
-    ) -> Set:
+    def MapSetsFromOdb(self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE) -> Set:
         """This method creates sets based on mapping sets from element centroid locations in an
         Odb.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].MapSetsFromOdb

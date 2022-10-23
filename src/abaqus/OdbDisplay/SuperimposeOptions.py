@@ -4,9 +4,22 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from ..PlotOptions.DGSuperimposeOptions import DGSuperimposeOptions
-from ..UtilityAndView.abaqusConstants import (Boolean, ELEMENT, FEATURE, HOLLOW_CIRCLE, MEDIUM,
-                                              NONE, OFF, ON, SMALL, SOLID, SymbolicConstant,
-                                              VERY_THIN, WIRE, WIREFRAME)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    ELEMENT,
+    FEATURE,
+    HOLLOW_CIRCLE,
+    MEDIUM,
+    NONE,
+    OFF,
+    ON,
+    SMALL,
+    SOLID,
+    SymbolicConstant,
+    VERY_THIN,
+    WIRE,
+    WIREFRAME,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -27,7 +40,7 @@ class SuperimposeOptions(DGSuperimposeOptions):
     - The superimpose options associated with a particular viewport.
     The SuperimposeOptions object is derived from the DGSuperimposeOptions object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

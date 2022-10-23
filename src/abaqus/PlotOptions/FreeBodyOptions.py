@@ -3,7 +3,7 @@ from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (Boolean, MODEL_SIZE, OFF, ON, RESULTANT, SCIENTIFIC)
+from ..UtilityAndView.abaqusConstants import Boolean, MODEL_SIZE, OFF, ON, RESULTANT, SCIENTIFIC
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _OptionsBase
 
@@ -22,7 +22,7 @@ class FreeBodyOptions(_OptionsBase):
     preferences.
     - The free body options associated with a particular viewport.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

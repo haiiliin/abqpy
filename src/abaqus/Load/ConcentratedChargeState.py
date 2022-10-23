@@ -14,7 +14,7 @@ class ConcentratedChargeState(LoadState):
     The ConcentratedChargeState object has no constructor or methods.
     The ConcentratedChargeState object is derived from the LoadState object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -38,7 +38,7 @@ class ConcentratedChargeState(LoadState):
 
     #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
     #: values are:
-    #: 
+    #:
     #: - NOT_YET_ACTIVE
     #: - CREATED
     #: - PROPAGATED

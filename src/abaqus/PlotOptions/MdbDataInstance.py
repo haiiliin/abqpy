@@ -6,7 +6,7 @@ class MdbDataInstance:
     """The MdbDataInstance object instance data. It corresponds to same named part instance
     with a mesh in the cae model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

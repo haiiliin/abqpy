@@ -16,7 +16,7 @@ class VelocityBaseMotionBC(BoundaryCondition):
     condition.
     The VelocityBaseMotionBC object is derived from the BoundaryCondition object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -71,7 +71,7 @@ class VelocityBaseMotionBC(BoundaryCondition):
     ):
         """This method creates a VelocityBaseMotionBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].VelocityBaseMotionBC

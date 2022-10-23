@@ -24,7 +24,7 @@ class MeshAssembly(AssemblyBase):
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import assembly
@@ -310,7 +310,7 @@ class MeshAssembly(AssemblyBase):
         geometryConnectingSides: str = "",
         elemFacesConnectingSides: Sequence[MeshFace] = (),
         elemConnectingSides: tuple = (),
-        targetSide: Optional[Face] = None, 
+        targetSide: Optional[Face] = None,
         numberOfLayers: Optional[int] = None,
         extendElementSets: Boolean = False,
     ):
@@ -434,7 +434,25 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def getEdgeSeeds(
-        self, edge: Edge, attribute: Union[Literal[C.SMALLEST_ELEM_LOCATION, C.BIAS_RATIO, C.MIN_SIZE_FACTOR, C.DEVIATION_FACTOR, C.CONSTRAINT, C.NUMBER, C.EDGE_SEEDING_METHOD, C.VERTEX_ADJ_TO_SMALLEST_ELEM, C.BIAS_MAX_SIZE, C.BIAS_MIN_SIZE, C.AVERAGE_SIZE, C.BIAS_METHOD], float]
+        self,
+        edge: Edge,
+        attribute: Union[
+            Literal[
+                C.SMALLEST_ELEM_LOCATION,
+                C.BIAS_RATIO,
+                C.MIN_SIZE_FACTOR,
+                C.DEVIATION_FACTOR,
+                C.CONSTRAINT,
+                C.NUMBER,
+                C.EDGE_SEEDING_METHOD,
+                C.VERTEX_ADJ_TO_SMALLEST_ELEM,
+                C.BIAS_MAX_SIZE,
+                C.BIAS_MIN_SIZE,
+                C.AVERAGE_SIZE,
+                C.BIAS_METHOD,
+            ],
+            float,
+        ],
     ):
         """This method returns an edge seed parameter for a specified edge of an assembly.
 
@@ -468,7 +486,7 @@ class MeshAssembly(AssemblyBase):
             The return value is dependent on the **attribute** argument.
 
             - If **attribute** = EDGE_SEEDING_METHOD, the return value is a SymbolicConstant specifying
-              the edge seeding method used to create the seeds along the edge. Possible values are: 
+              the edge seeding method used to create the seeds along the edge. Possible values are:
               UNIFORM_BY_NUMBER, UNIFORM_BY_SIZE, CURVATURE_BASED_BY_SIZE, BIASED, NONE
             - If **attribute** = BIAS_METHOD, the return value is a SymbolicConstant specifying the bias
               type used to create the seeds along the edge. Possible values are: SINGLE, DOUBLE, NONE
@@ -495,7 +513,7 @@ class MeshAssembly(AssemblyBase):
               EDGE_SEEDING_METHOD is BIASED.
             - If **attribute** = SMALLEST_ELEM_LOCATION, the return value is a SymbolicConstant
               specifying the location of smallest elements for double bias seeds; only applicable if
-              the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are: 
+              the EDGE_SEEDING_METHOD is BIASED and BIAS_METHOD is DOUBLE. Possible values are:
               SMALLEST_ELEM_AT_CENTER, SMALLEST_ELEM_AT_ENDS, NONE
             - If **attribute** = CONSTRAINT, the return value is a SymbolicConstant specifying how close
               the seeds must be matched by the mesh. Possible values are: FREE, FINER, FIXED, NONE
@@ -548,7 +566,33 @@ class MeshAssembly(AssemblyBase):
         ...
 
     @abaqus_method_doc
-    def getMeshControl(self, region: str, attribute: Literal[C.HEX_DOMINATED, C.ELEM_SHAPE, C.FREE, C.QUAD, C.TRI, C.LINE, C.QUAD_DOMINATED, C.HEX, C.SWEEP, C.UNMESHABLE, C.NON_DEFAULT, C.TET, C.ALGORITHM, C.DEFAULT, C.NONE, C.MEDIAL_AXIS, C.ADVANCING_FRONT, C.WEDGE, C.MIN_TRANSITION, C.STRUCTURED, C.TECHNIQUE]):
+    def getMeshControl(
+        self,
+        region: str,
+        attribute: Literal[
+            C.HEX_DOMINATED,
+            C.ELEM_SHAPE,
+            C.FREE,
+            C.QUAD,
+            C.TRI,
+            C.LINE,
+            C.QUAD_DOMINATED,
+            C.HEX,
+            C.SWEEP,
+            C.UNMESHABLE,
+            C.NON_DEFAULT,
+            C.TET,
+            C.ALGORITHM,
+            C.DEFAULT,
+            C.NONE,
+            C.MEDIAL_AXIS,
+            C.ADVANCING_FRONT,
+            C.WEDGE,
+            C.MIN_TRANSITION,
+            C.STRUCTURED,
+            C.TECHNIQUE,
+        ],
+    ):
         """This method returns a mesh control parameter for the specified region of the assembly.
 
         Parameters
@@ -564,7 +608,7 @@ class MeshAssembly(AssemblyBase):
             - MIN_TRANSITION
 
             The return value is dependent on the **attribute** argument.
-            
+
             - If **attribute** = ELEM_SHAPE, the return value is a SymbolicConstant specifying the
               element shape used during meshing. Possible values are: LINE, QUAD, TRI,  QUAD_DOMINATED, HEX, TET, WEDGE, HEX_DOMINATED
             - If **attribute** = TECHNIQUE, the return value is a SymbolicConstant specifying the
@@ -607,7 +651,9 @@ class MeshAssembly(AssemblyBase):
 
     @abaqus_method_doc
     def getPartSeeds(
-        self, region: PartInstance, attribute: Union[Literal[C.DEFAULT_SIZE, C.MIN_SIZE_FACTOR, C.DEVIATION_FACTOR, C.SIZE], float]
+        self,
+        region: PartInstance,
+        attribute: Union[Literal[C.DEFAULT_SIZE, C.MIN_SIZE_FACTOR, C.DEVIATION_FACTOR, C.SIZE], float],
     ):
         """This method returns a part seed parameter for the specified instance.
 
@@ -618,14 +664,14 @@ class MeshAssembly(AssemblyBase):
         attribute
             A SymbolicConstant specifying the type of part seed attribute to return. Possible values
             are:
-            
+
             - SIZE
             - DEFAULT_SIZE
             - DEVIATION_FACTOR
             - MIN_SIZE_FACTOR
-            
+
             The return value is dependent on the value of the **attribute** argument.
-            
+
             - If **attribute** = SIZE, the return value is a Float specifying the assigned global
               element size. If part seeds are not defined, the return value is zero.
             - If **attribute** = DEFAULT_SIZE, the return value is a Float specifying a suggested
@@ -765,9 +811,7 @@ class MeshAssembly(AssemblyBase):
         ...
 
     @abaqus_method_doc
-    def seedEdgeByNumber(
-        self, edges: Sequence[Edge], number: int, constraint: Literal[C.FREE] = FREE
-    ):
+    def seedEdgeByNumber(self, edges: Sequence[Edge], number: int, constraint: Literal[C.FREE] = FREE):
         """This method seeds the given edges uniformly based on the number of elements along the
         edges.
 
@@ -980,7 +1024,7 @@ class MeshAssembly(AssemblyBase):
             regions. Possible values are MEDIAL_AXIS, ADVANCING_FRONT, and NON_DEFAULT. If
             unspecified, the existing value will remain unchanged. This option is applicable only to
             the following:
-            
+
             - Free quadrilateral or quadrilateral-dominated meshing. In this case the possible
               values are MEDIAL_AXIS and ADVANCING_FRONT.
             - Sweep hexahedral or hexahedral-dominated meshing. In this case the possible values are
@@ -993,7 +1037,7 @@ class MeshAssembly(AssemblyBase):
             A Boolean specifying whether minimum transition is to be applied. The default value is
             ON. If unspecified, the existing value will remain unchanged. This option is applicable
             only in the following cases:
-            
+
             - Free quadrilateral meshing or hexahedral sweep meshing with **algorithm** = MEDIAL_AXIS.
             - Structured quadrilateral meshing.
         sizeGrowth
@@ -1004,7 +1048,7 @@ class MeshAssembly(AssemblyBase):
         allowMapped
             A Boolean specifying whether mapped meshing can be used to replace the selected mesh
             technique. The **allowMapped** argument is applicable only in the following cases:
-            
+
             - Free triangular meshing.
             - Free quadrilateral or quadrilateral-dominated meshing with
               **algorithm** = ADVANCING_FRONT.
@@ -1036,7 +1080,19 @@ class MeshAssembly(AssemblyBase):
     @abaqus_method_doc
     def verifyMeshQuality(
         self,
-        criterion: Literal[C.ANALYSIS_CHECKS, C.ANGULAR_DEVIATION, C.GEOM_DEVIATION_FACTOR, C.MAX_FREQUENCY, C.LONGEST_EDGE, C.LARGE_ANGLE, C.SHORTEST_EDGE, C.STABLE_TIME_INCREMENT, C.SHAPE_FACTOR, C.ASPECT_RATIO, C.SMALL_ANGLE],
+        criterion: Literal[
+            C.ANALYSIS_CHECKS,
+            C.ANGULAR_DEVIATION,
+            C.GEOM_DEVIATION_FACTOR,
+            C.MAX_FREQUENCY,
+            C.LONGEST_EDGE,
+            C.LARGE_ANGLE,
+            C.SHORTEST_EDGE,
+            C.STABLE_TIME_INCREMENT,
+            C.SHAPE_FACTOR,
+            C.ASPECT_RATIO,
+            C.SMALL_ANGLE,
+        ],
         threshold: Optional[float] = None,
         elemShape: Optional[Literal[C.LINE, C.WEDGE, C.TET, C.HEX, C.QUAD, C.TRI]] = None,
         regions: tuple = (),

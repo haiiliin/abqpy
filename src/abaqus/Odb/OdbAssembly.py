@@ -29,7 +29,7 @@ class OdbAssembly(OdbAssemblyBase):
         """This method creates an OdbDatumCsys object using three points. A datum coordinate system
         created with this method results in a fixed system.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreePoints
@@ -73,7 +73,7 @@ class OdbAssembly(OdbAssemblyBase):
         position of its origin. The last three arguments are given in the form of an OdbMeshNode
         object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreeNodes
@@ -116,7 +116,7 @@ class OdbAssembly(OdbAssemblyBase):
         cylindrical coordinate system or to the ϕϕ-axis of a spherical coordinate system. The
         line from the origin to the first node defines the rr-axis.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreeCircNodes
@@ -154,7 +154,7 @@ class OdbAssembly(OdbAssemblyBase):
         orientation of the datum coordinate system without regard to the position of its origin.
         The last argument is given in the form of an OdbMeshNode object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysBy6dofNode
@@ -181,7 +181,7 @@ class OdbAssembly(OdbAssemblyBase):
     def DatumCsys(self, name: str, datumCsys: OdbDatumCsys):
         """This method copies oneOdbDatumCsys object to a new OdbDatumCsys object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsys
@@ -202,12 +202,10 @@ class OdbAssembly(OdbAssemblyBase):
         return datumCsys
 
     @abaqus_method_doc
-    def Instance(
-        self, name: str, object: OdbPart, localCoordSystem: tuple = ()
-    ) -> OdbInstance:
+    def Instance(self, name: str, object: OdbPart, localCoordSystem: tuple = ()) -> OdbInstance:
         """This method creates an OdbInstance object from an OdbPart object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].rootAssembly.Instance
@@ -248,11 +246,11 @@ class OdbAssembly(OdbAssemblyBase):
         elements: OdbSet = OdbSet("set", ()),
         tieNodes: OdbSet = OdbSet("set", ()),
         pinNodes: OdbSet = OdbSet("set", ()),
-        analyticSurface: Optional[AnalyticSurface] = None, 
+        analyticSurface: Optional[AnalyticSurface] = None,
     ) -> OdbRigidBody:
         """This method creates a OdbRigidBody object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].rootAssembly.instances[name].RigidBody
@@ -303,7 +301,7 @@ class OdbAssembly(OdbAssemblyBase):
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
         assembly-level sets).
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet

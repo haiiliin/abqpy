@@ -17,8 +17,7 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import (Boolean, DEFAULT, OFF, SOLVER_DEFAULT, SUBSPACE,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, OFF, SOLVER_DEFAULT, SUBSPACE, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -27,7 +26,7 @@ class BuckleStep(AnalysisStep):
     """The BuckleStep object controls eigenvalue buckling estimation.
     The BuckleStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -95,7 +94,7 @@ class BuckleStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -188,7 +187,7 @@ class BuckleStep(AnalysisStep):
     ):
         """This method creates a BuckleStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BuckleStep

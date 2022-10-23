@@ -13,7 +13,7 @@ class FluidExchangeProperty(ContactProperty):
     its environment.
     The FluidExchangeProperty object is derived from the InteractionProperty object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -30,7 +30,7 @@ class FluidExchangeProperty(ContactProperty):
     #: A sequence of sequences of Floats specifying the viscous and hydrodynamic resistance
     #: coefficients when **definition** = BULK_VISCOSITY. Each sequence contains the following
     #: data:
-    #: 
+    #:
     #: - The viscous resistance coefficient.
     #: - The hydrodynamic resistance coefficient.
     #: - The average absolute pressure, if the data depend on pressure.
@@ -38,16 +38,16 @@ class FluidExchangeProperty(ContactProperty):
     #: - The value of the first field variable, if the data depend on field variables.
     #: - The value of the second field variable.
     #: - Etc.
-    #: 
+    #:
     #: Alternatively, the sequence data may specify the mass flow rate. This is applicable only
     #: when **definition** = MASS_FLUX. In this form, only one sequence is specified and that
     #: sequence contains the following data:
-    #: 
+    #:
     #: - The mass flow rate per unit area.
-    #: 
+    #:
     #: Alternatively, the sequence data may specify the mass rate leakage. This is applicable
     #: only when **definition** = MASS_RATE_LEAK. Each sequence contains the following data:
-    #: 
+    #:
     #: - The absolute value of the mass flow rate per unit area. (The first tabular value
     #:   entered must always be zero.)
     #: - The absolute value of the pressure difference. (The first tabular value entered must
@@ -57,16 +57,16 @@ class FluidExchangeProperty(ContactProperty):
     #: - The value of the first field variable, if the data depend on field variables.
     #: - The value of the second field variable.
     #: - Etc.
-    #: 
+    #:
     #: Alternatively, the sequence data may specify the volume flow rate. This is applicable
     #: only when **definition** = VOL_FLUX. In this form, only one sequence is specified and that
     #: sequence contains the following data:
-    #: 
+    #:
     #: - The volumetric flow rate per unit area.
-    #: 
+    #:
     #: Alternatively, the sequence data may specify the volume rate leakage. This is applicable
     #: only when **definition** = VOL_RATE_LEAK. Each sequence contains the following data:
-    #: 
+    #:
     #: - The absolute value of the volumetric flow rate per unit area. (The first tabular value
     #:   entered must always be zero.)
     #: - The absolute value of the pressure difference. (The first tabular value entered must
@@ -103,14 +103,16 @@ class FluidExchangeProperty(ContactProperty):
         self,
         name: str,
         dataTable: tuple,
-        definition: Literal[C.VOL_FLUX, C.VOL_RATE_LEAK, C.BULK_VISCOSITY, C.MASS_RATE_LEAK, C.MASS_FLUX] = BULK_VISCOSITY,
+        definition: Literal[
+            C.VOL_FLUX, C.VOL_RATE_LEAK, C.BULK_VISCOSITY, C.MASS_RATE_LEAK, C.MASS_FLUX
+        ] = BULK_VISCOSITY,
         pressureDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         fieldDependencies: int = 0,
     ):
         """This method creates a FluidExchangeProperty object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FluidExchangeProperty
@@ -123,7 +125,7 @@ class FluidExchangeProperty(ContactProperty):
             A sequence of sequences of Floats specifying the viscous and hydrodynamic resistance
             coefficients when **definition** = BULK_VISCOSITY. Each sequence contains the following
             data:
-            
+
             - The viscous resistance coefficient.
             - The hydrodynamic resistance coefficient.
             - The average absolute pressure, if the data depend on pressure.
@@ -131,16 +133,16 @@ class FluidExchangeProperty(ContactProperty):
             - The value of the first field variable, if the data depend on field variables.
             - The value of the second field variable.
             - Etc.
-            
+
             Alternatively, the sequence data may specify the mass flow rate. This is applicable only
             when **definition** = MASS_FLUX. In this form, only one sequence is specified and that
             sequence contains the following data:
-            
+
             - The mass flow rate per unit area.
-            
+
             Alternatively, the sequence data may specify the mass rate leakage. This is applicable
             only when **definition** = MASS_RATE_LEAK. Each sequence contains the following data:
-              
+
             - The absolute value of the mass flow rate per unit area. (The first tabular value
               entered must always be zero.)
             - The absolute value of the pressure difference. (The first tabular value entered must
@@ -150,16 +152,16 @@ class FluidExchangeProperty(ContactProperty):
             - The value of the first field variable, if the data depend on field variables.
             - The value of the second field variable.
             - Etc.
-            
+
             Alternatively, the sequence data may specify the volume flow rate. This is applicable
             only when **definition** = VOL_FLUX. In this form, only one sequence is specified and that
             sequence contains the following data:
-            
+
             - The volumetric flow rate per unit area.
-              
+
             Alternatively, the sequence data may specify the volume rate leakage. This is applicable
             only when **definition** = VOL_RATE_LEAK. Each sequence contains the following data:
-              
+
             - The absolute value of the volumetric flow rate per unit area. (The first tabular value
               entered must always be zero.)
             - The absolute value of the pressure difference. (The first tabular value entered must
@@ -196,7 +198,9 @@ class FluidExchangeProperty(ContactProperty):
     @abaqus_method_doc
     def setValues(
         self,
-        definition: Literal[C.VOL_FLUX, C.VOL_RATE_LEAK, C.BULK_VISCOSITY, C.MASS_RATE_LEAK, C.MASS_FLUX] = BULK_VISCOSITY,
+        definition: Literal[
+            C.VOL_FLUX, C.VOL_RATE_LEAK, C.BULK_VISCOSITY, C.MASS_RATE_LEAK, C.MASS_FLUX
+        ] = BULK_VISCOSITY,
         pressureDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         fieldDependencies: int = 0,

@@ -3,8 +3,17 @@ from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .MessageArray import MessageArray
-from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, OFF, ON,
-                                              PERCENTAGE, SINGLE, SymbolicConstant, LOOP)
+from ..UtilityAndView.abaqusConstants import (
+    ANALYSIS,
+    Boolean,
+    DEFAULT,
+    OFF,
+    ON,
+    PERCENTAGE,
+    SINGLE,
+    SymbolicConstant,
+    LOOP,
+)
 
 
 @abaqus_class_doc
@@ -13,7 +22,7 @@ class Job:
     explicit constructor. The methods and members of the Job object are common to all
     objects derived from Job.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import job

@@ -12,7 +12,7 @@ class BeamOrientation:
     Specifying the beam orientation using an additional node in the element connectivity
     list is not supported.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess

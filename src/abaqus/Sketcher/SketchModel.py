@@ -10,7 +10,7 @@ from ..Model.ModelBase import ModelBase
 class SketchModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -27,7 +27,7 @@ class SketchModel(ModelBase):
         """This method creates a ConstrainedSketch object. If the sketch cannot be created, the
         method returns None.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConstrainedSketch
@@ -54,7 +54,5 @@ class SketchModel(ModelBase):
         sketch: ConstrainedSketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object.
         """
-        self.sketches[name] = sketch = ConstrainedSketch(
-            name, sheetSize, gridSpacing, transform
-        )
+        self.sketches[name] = sketch = ConstrainedSketch(name, sheetSize, gridSpacing, transform)
         return sketch

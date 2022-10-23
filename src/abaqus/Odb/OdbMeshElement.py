@@ -10,7 +10,7 @@ class OdbMeshElement:
     """OdbMeshElement objects are created with the part.addElements or rootAssembly.addElements
     methods.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess

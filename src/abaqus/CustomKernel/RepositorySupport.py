@@ -12,7 +12,7 @@ class RepositorySupport(CommandRegister):
     the GUI and are capable of notifying the GUI when the contents of the instance change.
     The RepositorySupport object is derived from the CommandRegister object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import customKernel
@@ -25,7 +25,7 @@ class RepositorySupport(CommandRegister):
     def __init__(self):
         """This method creates a RepositorySupport object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 customKernel.RepositorySupport

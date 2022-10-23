@@ -15,7 +15,7 @@ class MultipointConstraint(Constraint):
     MultipointConstraint nodes located on a region and a reference point.
     The MultipointConstraint object is derived from the ConstrainedSketchConstraint object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -73,7 +73,7 @@ class MultipointConstraint(Constraint):
     ):
         """This method creates a MultipointConstraint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].MultipointConstraint

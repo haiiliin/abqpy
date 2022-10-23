@@ -7,7 +7,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 class OdbAuxiliaryData:
     """The OdbAuxiliaryData object stores auxiliary data related to the steps in the analysis.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

@@ -40,7 +40,7 @@ class Set(Region):
         transmissionSet.elements[0]=mdb.models['Transmission'].rootAssembly.instances['Clutch-1'].elements[16]
         transmissionSet.elements[6]=mdb.models['Transmission'].rootAssembly.instances['housing-'].elements[47]
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -113,10 +113,10 @@ class Set(Region):
         used to exclude lower-dimension entities and to provide finer control on the
         content of the set. For example, the following statement defines a region enclosing
         a square face but without two of its edges::
-        
+
             set = mdb.models['Model-1'].rootAssembly.Set(name='mySet', faces=f[3:4], xEdges=e[1:3])
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
@@ -174,7 +174,7 @@ class Set(Region):
     def __init__(self, name: str, objectToCopy: Set) -> None:
         """This method copies a set from an existing set.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].Set
@@ -203,7 +203,7 @@ class Set(Region):
     ) -> Set:
         """This method creates a set by performing a boolean operation on two or more input sets.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].SetByBoolean
@@ -236,7 +236,7 @@ class Set(Region):
         create sets only on parts; however, you can access the sets from instances of the parts
         in the assembly.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].SetFromColor
@@ -261,7 +261,7 @@ class Set(Region):
     def SetFromElementLabels(self, name: str, elementLabels: Sequence[int]) -> Set:
         """This method creates a set from a sequence of element labels in a model database.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].SetFromElementLabels
@@ -292,7 +292,7 @@ class Set(Region):
     def SetFromNodeLabels(self, name: str, nodeLabels: Sequence[int]):
         """This method creates a set from a sequence of node labels in a model database.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].SetFromNodeLabels
@@ -320,13 +320,11 @@ class Set(Region):
         ...
 
     @abaqus_method_doc
-    def MapSetsFromOdb(
-        self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE
-    ) -> Set:
+    def MapSetsFromOdb(self, odbPath: str, odbSets: str, partSets: str = "", method: str = OVERWRITE) -> Set:
         """This method creates sets based on mapping sets from element centroid locations in an
         Odb.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].MapSetsFromOdb

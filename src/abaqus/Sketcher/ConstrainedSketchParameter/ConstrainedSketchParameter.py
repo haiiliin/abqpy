@@ -1,11 +1,12 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class ConstrainedSketchParameter:
     """The ConstrainedSketchParameter object stores the definition of a parameter in the
     sketch.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import sketch
@@ -38,7 +39,7 @@ class ConstrainedSketchParameter:
         """This method creates a parameter and optionally associates a dimension with this
         parameter.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].ConstrainedSketchParameter

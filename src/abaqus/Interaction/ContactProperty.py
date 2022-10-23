@@ -15,11 +15,29 @@ from .InteractionProperty import InteractionProperty
 from .NormalBehavior import NormalBehavior
 from .Radiation import Radiation
 from .ThermalConductance import ThermalConductance
-from ..UtilityAndView.abaqusConstants import (ALL_NODES, BK, Boolean, COEFFICIENTS,
-                                              DAMPING_COEFFICIENT, DEFAULT, DISPLACEMENT, ENERGY,
-                                              FRACTION, FRICTIONLESS, HARD, ISOTROPIC, LINEAR,
-                                              MAX_STRESS, OFF, ON, STEP, SymbolicConstant, TABULAR,
-                                              UNCOUPLED, VCCT)
+from ..UtilityAndView.abaqusConstants import (
+    ALL_NODES,
+    BK,
+    Boolean,
+    COEFFICIENTS,
+    DAMPING_COEFFICIENT,
+    DEFAULT,
+    DISPLACEMENT,
+    ENERGY,
+    FRACTION,
+    FRICTIONLESS,
+    HARD,
+    ISOTROPIC,
+    LINEAR,
+    MAX_STRESS,
+    OFF,
+    ON,
+    STEP,
+    SymbolicConstant,
+    TABULAR,
+    UNCOUPLED,
+    VCCT,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -28,7 +46,7 @@ class ContactProperty(InteractionProperty):
     """The ContactProperty object defines a contact interaction property.
     The ContactProperty object is derived from the InteractionProperty object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -76,7 +94,7 @@ class ContactProperty(InteractionProperty):
     def __init__(self, name: str):
         """This method creates a ContactProperty object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactProperty
@@ -96,7 +114,9 @@ class ContactProperty(InteractionProperty):
     @abaqus_method_doc
     def TangentialBehavior(
         self,
-        formulation: Literal[C.FRICTIONLESS, C.PENALTY, C.ROUGH, C.EXPONENTIAL_DECAY, C.USER_DEFINED, C.LAGRANGE] = FRICTIONLESS,
+        formulation: Literal[
+            C.FRICTIONLESS, C.PENALTY, C.ROUGH, C.EXPONENTIAL_DECAY, C.USER_DEFINED, C.LAGRANGE
+        ] = FRICTIONLESS,
         directionality: Literal[C.ANISOTROPIC, C.ISOTROPIC] = ISOTROPIC,
         slipRateDependency: Boolean = OFF,
         pressureDependency: Boolean = OFF,
@@ -114,7 +134,7 @@ class ContactProperty(InteractionProperty):
     ):
         """This method creates a ContactTangentialBehavior object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactProperty
@@ -207,7 +227,7 @@ class ContactProperty(InteractionProperty):
     ):
         """This method creates a NormalBehavior object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactProperty
@@ -306,7 +326,7 @@ class ContactProperty(InteractionProperty):
     ):
         """This method creates a ContactDamping object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactProperty
@@ -333,9 +353,7 @@ class ContactProperty(InteractionProperty):
         ContactDamping
             A :py:class:`~abaqus.Interaction.ContactDamping.ContactDamping` object.
         """
-        self.damping = ContactDamping(
-            definition, tangentFraction, clearanceDependence, table
-        )
+        self.damping = ContactDamping(definition, tangentFraction, clearanceDependence, table)
         return self.damping
 
     @abaqus_method_doc
@@ -360,7 +378,7 @@ class ContactProperty(InteractionProperty):
     ):
         """This method creates a ContactDamage object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactProperty
@@ -463,7 +481,7 @@ class ContactProperty(InteractionProperty):
     ):
         """This method creates a FractureCriterion object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactProperty
@@ -525,7 +543,7 @@ class ContactProperty(InteractionProperty):
     ):
         """This method creates a CohesiveBehavior object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactProperty
@@ -589,7 +607,7 @@ class ContactProperty(InteractionProperty):
     ):
         """This method creates a ThermalConductance object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactProperty
@@ -649,12 +667,10 @@ class ContactProperty(InteractionProperty):
         return self.thermalConductance
 
     @abaqus_method_doc
-    def HeatGeneration(
-        self, conversionFraction: float = 1, slaveFraction: float = 0
-    ):
+    def HeatGeneration(self, conversionFraction: float = 1, slaveFraction: float = 0):
         """This method creates a GapHeatGeneration object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactProperty
@@ -677,12 +693,10 @@ class ContactProperty(InteractionProperty):
         return self.heatGeneration
 
     @abaqus_method_doc
-    def Radiation(
-        self, masterEmissivity: float, slaveEmissivity: float, table: tuple
-    ):
+    def Radiation(self, masterEmissivity: float, slaveEmissivity: float, table: tuple):
         """This method creates a Radiation object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactProperty
@@ -718,7 +732,7 @@ class ContactProperty(InteractionProperty):
     ):
         """This method creates a GeometricProperties object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactProperty
@@ -783,7 +797,7 @@ class ContactProperty(InteractionProperty):
     ):
         """This method creates a GapElectricalConductance object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactProperty

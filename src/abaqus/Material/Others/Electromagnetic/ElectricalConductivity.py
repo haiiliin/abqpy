@@ -9,7 +9,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 class ElectricalConductivity:
     r"""The ElectricalConductivity object specifies electrical conductivity.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -20,7 +20,7 @@ class ElectricalConductivity:
         The table data for this object are:
 
         - If **type** = ISOTROPIC, the table data specify the following:
-        
+
             - Electrical conductivity.
             - Frequency, if the data depend on frequency.
             - Temperature, if the data depend on temperature.
@@ -28,7 +28,7 @@ class ElectricalConductivity:
             - Value of the second field variable.
             - Etc.
         - If **type** = ORTHOTROPIC, the table data specify the following:
-        
+
             - :math:`\sigma_{11}^{E}`.
             - :math:`\sigma_{22}^{E}`.
             - :math:`\sigma_{33}^{E}`.
@@ -38,7 +38,7 @@ class ElectricalConductivity:
             - Value of the second field variable.
             - Etc.
         - If **type** = ANISOTROPIC, the table data specify the following:
-        
+
             - :math:`\sigma_{11}^{E}`.
             - :math:`\sigma_{12}^{E}`.
             - :math:`\sigma_{22}^{E}`.
@@ -67,7 +67,7 @@ class ElectricalConductivity:
     ):
         """This method creates an ElectricalConductivity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].ElectricalConductivity

@@ -13,7 +13,7 @@ class IgnoredVertexArray(List[IgnoredVertex]):
     """The IgnoredVertexArray is a sequence of IgnoredVertex objects. If the part is modified,
     then IgnoredVertexArray must be updated for that part.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -32,7 +32,9 @@ class IgnoredVertexArray(List[IgnoredVertex]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[Tuple[float, float, float],],
+        coordinates: Tuple[
+            Tuple[float, float, float],
+        ],
         printWarning: Boolean = True,
     ) -> List[IgnoredVertex]:
         ...
@@ -41,13 +43,15 @@ class IgnoredVertexArray(List[IgnoredVertex]):
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[Tuple[float, float, float],],
+        *coordinates: Tuple[
+            Tuple[float, float, float],
+        ],
         printWarning: Boolean = True,
     ) -> List[IgnoredVertex]:
         ...
 
     @abaqus_method_doc
-    def findAt(self, *args, **kwargs)-> Union[IgnoredVertex, List[IgnoredVertex]]:
+    def findAt(self, *args, **kwargs) -> Union[IgnoredVertex, List[IgnoredVertex]]:
         """This method returns the object or objects in the IgnoredVertexArray located at the given
         coordinates.
         findAt initially uses the ACIS tolerance of 1E-6. As a result, findAt returns any
@@ -69,7 +73,7 @@ class IgnoredVertexArray(List[IgnoredVertex]):
 
             * If you omit the **coordinates** keyword argument, findAt accepts as arguments
               a sequence of sequence of floats in the following format::
-            
+
                 verts = v.findAt(((20.19686, -169.513997, 27.798593), ),
                                 ((19.657627, -167.295749, 27.056402), ),
                                 ((18.274129, -157.144741, 25.15218), ))
@@ -83,7 +87,7 @@ class IgnoredVertexArray(List[IgnoredVertex]):
             An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object or a sequence of IgnoredVertex objects.
 
         """
-        first_arg = kwargs.get('coordinates', args[0] if args else ((),))
+        first_arg = kwargs.get("coordinates", args[0] if args else ((),))
         return IgnoredVertex() if isinstance(first_arg[0], float) else [IgnoredVertex()]
 
     @overload
@@ -139,7 +143,7 @@ class IgnoredVertexArray(List[IgnoredVertex]):
         coordinates
             A sequence of a sequence of floats, where each sequence of floats describes the **X**-,
             **Y**-, and **Z**-coordinates of a point::
-            
+
                 >>> r=e.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, -15.0, 15), ))
                 >>> r.keys()
                 [0, 1]

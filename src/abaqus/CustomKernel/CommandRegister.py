@@ -6,7 +6,7 @@ class CommandRegister:
     """This class allows you to derive a general class that can be queried from the GUI and is
     capable of notifying the GUI when the contents of the class change.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import customKernel
@@ -17,7 +17,7 @@ class CommandRegister:
         """This class allows you to derive a general class that can be queried from the GUI and is
         capable of notifying the GUI when the contents of the class change.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 customKernel.CommandRegister

@@ -12,7 +12,7 @@ class SmoothStepAmplitude(Amplitude):
     one data point to another.
     The SmoothStepAmplitude object is derived from the Amplitude object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import amplitude
@@ -40,7 +40,7 @@ class SmoothStepAmplitude(Amplitude):
     def __init__(self, name: str, data: tuple, timeSpan: Literal[C.STEP, C.TOTAL] = STEP):
         """This method creates a SmoothStepAmplitude object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SmoothStepAmplitude

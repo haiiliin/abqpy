@@ -12,18 +12,18 @@ class FractureCriterion:
     r"""The FractureCriterion object specifies fractureCriterion options for a contact
     interaction property.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
             mdb.models[name].interactionProperties[name].fractureCriterion
 
         The table data for this object are:
-        
+
         Table data for **initTable**:
-        
+
         If **type** = VCCT for **mixedModeBehavior** = BK or REEDER, the table data specify the following:
-        
+
         - Mode I critical energy release rate, :math:`G_{I C}`.
         - Mode II critical energy release rate, :math:`G_{I I C}`.
         - Mode III critical energy release rate, :math:`G_{I I I C}`.
@@ -32,9 +32,9 @@ class FractureCriterion:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-        
+
         If **type** = VCCT for **mixedModeBehavior** = POWER, the table data specify the following:
-        
+
         - Mode I critical energy release rate, :math:`G_{I C}`.
         - Mode II critical energy release rate, :math:`G_{I I C}`.
         - Mode III critical energy release rate, :math:`G_{I I I C}`.
@@ -44,9 +44,9 @@ class FractureCriterion:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-        
+
         If **type** = ENHANCED VCCT for **mixedModeBehavior** = BK or REEDER, the table data specify the following:
-        
+
         - Mode I critical energy release rate for onset crack, :math:`G_{I C}`.
         - Mode II critical energy release rate for onset crack, :math:`G_{I I C}`.
         - Mode III critical energy release rate for onset crack, :math:`G_{I I I C}`.
@@ -58,9 +58,9 @@ class FractureCriterion:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-        
+
         If **type** = ENHANCED VCCT for **mixedModeBehavior** = POWER, the table data specify the following:
-        
+
         - Mode I critical energy release rate for onset crack, :math:`G_{I C}`.
         - Mode II critical energy release rate for onset crack, :math:`G_{I I C}`.
         - Mode III critical energy release rate for onset crack, :math:`G_{I I I C}`.
@@ -125,7 +125,7 @@ class FractureCriterion:
     ):
         r"""This method creates a FractureCriterion object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].interactionProperties[name].FractureCriterion

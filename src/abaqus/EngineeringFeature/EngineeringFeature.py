@@ -17,9 +17,23 @@ from .TwoPointSpringDashpot import TwoPointSpringDashpot
 from .XFEMCrack import XFEMCrack
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import (ALL, AXIS_1, Boolean, CONNECTOR, CONTINUUM, DEFAULT,
-                                              FACETOFACE, MASS_PROPORTIONAL, MODEL, NONE, NORMALS,
-                                              OFF, ON, STEP, UNIFORM)
+from ..UtilityAndView.abaqusConstants import (
+    ALL,
+    AXIS_1,
+    Boolean,
+    CONNECTOR,
+    CONTINUUM,
+    DEFAULT,
+    FACETOFACE,
+    MASS_PROPORTIONAL,
+    MODEL,
+    NONE,
+    NORMALS,
+    OFF,
+    ON,
+    STEP,
+    UNIFORM,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -43,7 +57,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         both for parts and for the assembly, AssembledFastener objects are currently supported
         only under the assembly.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.AssembledFastener
@@ -122,7 +136,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         for parts and for the assembly, ContourIntegral objects are currently supported only
         under the assembly.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.ContourIntegral
@@ -210,7 +224,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         parts and for the assembly, DebondVCCT objects are currently supported only under the
         assembly.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.DebondVCCT
@@ -264,7 +278,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         both for parts and for the assembly, DiscreteFastener objects are currently supported
         only under the assembly.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.DiscreteFastener
@@ -333,7 +347,7 @@ class EngineeringFeature(EngineeringFeatureBase):
     ) -> HeatCapacitance:
         """This method creates a HeatCapacitance object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.HeatCapacitance
@@ -374,7 +388,7 @@ class EngineeringFeature(EngineeringFeatureBase):
     ) -> NonstructuralMass:
         """This method creates a NonstructuralMass object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.NonstructuralMass
@@ -401,9 +415,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         NonstructuralMass
             A :py:class:`~abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass` object.
         """
-        self.inertias[name] = nonstructuralMass = NonstructuralMass(
-            name, region, units, magnitude, distribution
-        )
+        self.inertias[name] = nonstructuralMass = NonstructuralMass(name, region, units, magnitude, distribution)
         return nonstructuralMass
 
     @abaqus_method_doc
@@ -441,7 +453,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         for parts and for the assembly, PointFastener objects are currently supported only under
         the assembly.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.PointFastener
@@ -606,7 +618,7 @@ class EngineeringFeature(EngineeringFeatureBase):
     ) -> PointMassInertia:
         """This method creates a PointMassInertia object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.PointMassInertia
@@ -695,12 +707,12 @@ class EngineeringFeature(EngineeringFeatureBase):
     ) -> SpringDashpotToGround:
         """This method creates a SpringDashpotToGround object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.SpringDashpotToGround
                 mdb.models[name].rootAssembly.engineeringFeatures.SpringDashpotToGround
-            
+
         Parameters
         ----------
         name
@@ -762,12 +774,12 @@ class EngineeringFeature(EngineeringFeatureBase):
     ) -> TwoPointSpringDashpot:
         """This method creates a TwoPointSpringDashpot object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.TwoPointSpringDashpot
                 mdb.models[name].rootAssembly.engineeringFeatures.TwoPointSpringDashpot
-            
+
         Parameters
         ----------
         name
@@ -845,7 +857,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         parts and for the assembly, XFEMCrack objects are currently supported only under the
         assembly.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.XFEMCrack

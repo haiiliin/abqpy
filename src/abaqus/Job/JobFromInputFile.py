@@ -5,8 +5,7 @@ from typing_extensions import Literal
 
 from .Job import Job
 from .MessageArray import MessageArray
-from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, LOOP, OFF, ON,
-                                              PERCENTAGE, SINGLE)
+from ..UtilityAndView.abaqusConstants import ANALYSIS, Boolean, DEFAULT, LOOP, OFF, ON, PERCENTAGE, SINGLE
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -16,7 +15,7 @@ class JobFromInputFile(Job):
     input file.
     The JobFromInputFile object is derived from the Job object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import job
@@ -36,7 +35,9 @@ class JobFromInputFile(Job):
     #: A SymbolicConstant specifying the status of the analysis. Possible values are SUBMITTED,
     #: RUNNING, ABORTED, TERMINATED, COMPLETED, CHECK_RUNNING, and CHECK_COMPLETED.If the
     #: **message** member is empty, **status** is set to NONE.
-    status: Optional[Literal[C.SUBMITTED, C.RUNNING, C.ABORTED, C.TERMINATED, C.COMPLETED, C.CHECK_RUNNING, C.CHECK_COMPLETED]] = None
+    status: Optional[
+        Literal[C.SUBMITTED, C.RUNNING, C.ABORTED, C.TERMINATED, C.COMPLETED, C.CHECK_RUNNING, C.CHECK_COMPLETED]
+    ] = None
 
     #: A :py:class:`~abaqus.Job.MessageArray.MessageArray` object specifying the messages received during an analysis.
     messages: MessageArray = []
@@ -104,7 +105,9 @@ class JobFromInputFile(Job):
     #: A SymbolicConstant specifying whether to use the double precision version of
     #: Abaqus/Explicit. Possible values are SINGLE, FORCE_SINGLE, DOUBLE,
     #: DOUBLE_CONSTRAINT_ONLY, and DOUBLE_PLUS_PACK. The default value is SINGLE.
-    explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = SINGLE
+    explicitPrecision: Literal[
+        C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK
+    ] = SINGLE
 
     #: A SymbolicConstant specifying the precision of the nodal output written to the output
     #: database. Possible values are SINGLE and FULL. The default value is SINGLE.
@@ -143,7 +146,9 @@ class JobFromInputFile(Job):
         numCpus: int = 1,
         memory: int = 90,
         memoryUnits: Literal[C.PERCENTAGE, C.MEGA_BYTES, C.GIGA_BYTES] = PERCENTAGE,
-        explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = SINGLE,
+        explicitPrecision: Literal[
+            C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK
+        ] = SINGLE,
         nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE,
         parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = LOOP,
         numDomains: int = 1,
@@ -152,7 +157,7 @@ class JobFromInputFile(Job):
     ):
         """This method creates an analysis job using an input file for the model definition.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.JobFromInputFile
@@ -262,7 +267,9 @@ class JobFromInputFile(Job):
         numCpus: int = 1,
         memory: int = 90,
         memoryUnits: Literal[C.PERCENTAGE, C.MEGA_BYTES, C.GIGA_BYTES] = PERCENTAGE,
-        explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = SINGLE,
+        explicitPrecision: Literal[
+            C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK
+        ] = SINGLE,
         nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE,
         parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = LOOP,
         numDomains: int = 1,

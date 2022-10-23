@@ -41,9 +41,20 @@ from .SurfaceTraction import SurfaceTraction
 from ..Datum.DatumAxis import DatumAxis
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (APPLY_FORCE, AXIS_1, Boolean, GENERAL, GLOBAL,
-                                              INTERNAL, NORMAL, OFF, ON, SHEAR, UNIFORM,
-                                              UNSET)
+from ..UtilityAndView.abaqusConstants import (
+    APPLY_FORCE,
+    AXIS_1,
+    Boolean,
+    GENERAL,
+    GLOBAL,
+    INTERNAL,
+    NORMAL,
+    OFF,
+    ON,
+    SHEAR,
+    UNIFORM,
+    UNSET,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -51,7 +62,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class LoadModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -70,7 +81,7 @@ class LoadModel(ModelBase):
     ) -> BodyCharge:
         """This method creates a BodyCharge object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BodyCharge
@@ -121,7 +132,7 @@ class LoadModel(ModelBase):
     ) -> BodyConcentrationFlux:
         """This method creates a BodyConcentrationFlux object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BodyConcentrationFlux
@@ -172,7 +183,7 @@ class LoadModel(ModelBase):
     ) -> BodyCurrent:
         """This method creates a BodyCurrent object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BodyCurrent
@@ -224,7 +235,7 @@ class LoadModel(ModelBase):
     ) -> BodyCurrentDensity:
         """This method creates a BodyCurrentDensity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BodyCurrentDensity
@@ -284,7 +295,7 @@ class LoadModel(ModelBase):
     ) -> BodyForce:
         """This method creates a BodyForce object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BodyForce
@@ -348,7 +359,7 @@ class LoadModel(ModelBase):
     ) -> BodyHeatFlux:
         """This method creates a BodyHeatFlux object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BodyHeatFlux
@@ -399,7 +410,7 @@ class LoadModel(ModelBase):
     ) -> BoltLoad:
         """This method creates a BoltLoad object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BoltLoad
@@ -436,9 +447,7 @@ class LoadModel(ModelBase):
         ------
         TextError
         """
-        self.loads[name] = load = BoltLoad(
-            name, createStepName, region, magnitude, datumAxis, boltMethod, amplitude
-        )
+        self.loads[name] = load = BoltLoad(name, createStepName, region, magnitude, datumAxis, boltMethod, amplitude)
         return load
 
     @abaqus_method_doc
@@ -454,7 +463,7 @@ class LoadModel(ModelBase):
     ) -> ConcCharge:
         """This method creates a ConcCharge object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConcCharge
@@ -505,7 +514,7 @@ class LoadModel(ModelBase):
     ) -> ConcConcFlux:
         """This method creates a ConcConcFlux object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConcConcFlux
@@ -556,7 +565,7 @@ class LoadModel(ModelBase):
     ) -> ConcCurrent:
         """This method creates a ConcCurrent object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConcCurrent
@@ -611,7 +620,7 @@ class LoadModel(ModelBase):
     ) -> ConcentratedForce:
         """This method creates a ConcentratedForce object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConcentratedForce
@@ -687,7 +696,7 @@ class LoadModel(ModelBase):
     ) -> ConcentratedHeatFlux:
         """This method creates a ConcentratedHeatFlux object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConcentratedHeatFlux
@@ -748,7 +757,7 @@ class LoadModel(ModelBase):
     ) -> ConcPoreFluid:
         """This method creates a ConcPoreFluid object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConcPoreFluid
@@ -802,7 +811,7 @@ class LoadModel(ModelBase):
         """This method creates a ConnectorForce object on a wire region. Alternatively, the load
         may also be applied to a wire set referenced from an assembled fastener template model.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConnectorForce
@@ -874,7 +883,7 @@ class LoadModel(ModelBase):
         """This method creates a ConnectorMoment object on a wire region. Alternatively, the load
         may also be applied to a wire set referenced from an assembled fastener template model.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConnectorMoment
@@ -944,7 +953,7 @@ class LoadModel(ModelBase):
     ) -> CoriolisForce:
         """This method creates a CoriolisForce object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CoriolisForce
@@ -1009,7 +1018,7 @@ class LoadModel(ModelBase):
     ) -> Gravity:
         """This method creates a Gravity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Gravity
@@ -1076,7 +1085,7 @@ class LoadModel(ModelBase):
     ) -> InertiaRelief:
         """This method creates an InertiaRelief object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].InertiaRelief
@@ -1145,7 +1154,7 @@ class LoadModel(ModelBase):
     ) -> InwardVolAccel:
         """This method creates a InwardVolAccel object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].InwardVolAccel
@@ -1199,7 +1208,7 @@ class LoadModel(ModelBase):
     ) -> LineLoad:
         """This method creates a LineLoad object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].LineLoad
@@ -1272,7 +1281,7 @@ class LoadModel(ModelBase):
     ) -> Moment:
         """This method creates a Moment object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Moment
@@ -1349,7 +1358,7 @@ class LoadModel(ModelBase):
     ) -> PEGLoad:
         """This method creates a PEGLoad object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PEGLoad
@@ -1417,7 +1426,7 @@ class LoadModel(ModelBase):
     ) -> PipePressure:
         """This method creates a Pressure object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PipePressure
@@ -1487,12 +1496,14 @@ class LoadModel(ModelBase):
         hReference: float = 0.0,
         field: str = "",
         refPoint: str = "",
-        distributionType: Literal[C.FIELD, C.DISCRETE_FIELD, C.STAGNATION, C.VISCOUS, C.TOTAL_FORCE, C.HYDROSTATIC, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
+        distributionType: Literal[
+            C.FIELD, C.DISCRETE_FIELD, C.STAGNATION, C.VISCOUS, C.TOTAL_FORCE, C.HYDROSTATIC, C.UNIFORM, C.USER_DEFINED
+        ] = UNIFORM,
         amplitude: str = UNSET,
     ) -> Pressure:
         """This method creates a Pressure object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Pressure
@@ -1566,7 +1577,7 @@ class LoadModel(ModelBase):
     ) -> RotationalBodyForce:
         """This method creates a RotationalBodyForce object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].RotationalBodyForce
@@ -1647,7 +1658,7 @@ class LoadModel(ModelBase):
     ) -> ShellEdgeLoad:
         """This method creates a ShellEdgeLoad object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ShellEdgeLoad
@@ -1748,7 +1759,7 @@ class LoadModel(ModelBase):
     ) -> SubmodelSB:
         """This method creates a SubmodelSB object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SubmodelSB
@@ -1812,7 +1823,7 @@ class LoadModel(ModelBase):
     ) -> SubstructureLoad:
         """This method creates a SubstructureLoad object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SubstructureLoad
@@ -1839,9 +1850,7 @@ class LoadModel(ModelBase):
         SubstructureLoad
             A :py:class:`~abaqus.Load.SubstructureLoad.SubstructureLoad` object.
         """
-        self.loads[name] = load = SubstructureLoad(
-            name, createStepName, region, loadCaseNames, magnitude, amplitude
-        )
+        self.loads[name] = load = SubstructureLoad(name, createStepName, region, loadCaseNames, magnitude, amplitude)
         return load
 
     @abaqus_method_doc
@@ -1857,7 +1866,7 @@ class LoadModel(ModelBase):
     ) -> SurfaceCharge:
         """This method creates a SurfaceCharge object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceCharge
@@ -1908,7 +1917,7 @@ class LoadModel(ModelBase):
     ) -> SurfaceConcentrationFlux:
         """This method creates a SurfaceConcentrationFlux object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceConcentrationFlux
@@ -1960,7 +1969,7 @@ class LoadModel(ModelBase):
     ) -> SurfaceCurrent:
         """This method creates a SurfaceCurrent object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceCurrent
@@ -2012,7 +2021,7 @@ class LoadModel(ModelBase):
     ) -> SurfaceCurrentDensity:
         """This method creates a SurfaceCurrentDensity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceCurrentDensity
@@ -2070,7 +2079,7 @@ class LoadModel(ModelBase):
     ) -> SurfaceHeatFlux:
         """This method creates a SurfaceHeatFlux object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceHeatFlux
@@ -2121,7 +2130,7 @@ class LoadModel(ModelBase):
     ) -> SurfacePoreFluid:
         """This method creates a SurfacePoreFluid object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfacePoreFluid
@@ -2180,7 +2189,7 @@ class LoadModel(ModelBase):
     ) -> SurfaceTraction:
         """This method creates a SurfaceTraction object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceTraction

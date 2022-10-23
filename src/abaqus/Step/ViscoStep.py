@@ -17,9 +17,20 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import (AUTOMATIC, Boolean, DIRECT, FULL_NEWTON,
-                                              IMPLICIT_EXPLICIT, LINEAR, NONE, OFF, PROPAGATED,
-                                              SOLVER_DEFAULT, STEP, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    AUTOMATIC,
+    Boolean,
+    DIRECT,
+    FULL_NEWTON,
+    IMPLICIT_EXPLICIT,
+    LINEAR,
+    NONE,
+    OFF,
+    PROPAGATED,
+    SOLVER_DEFAULT,
+    STEP,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -29,7 +40,7 @@ class ViscoStep(AnalysisStep):
     time-dependent material behavior (creep, swelling, and viscoelasticity).
     The ViscoStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -147,7 +158,7 @@ class ViscoStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -251,7 +262,7 @@ class ViscoStep(AnalysisStep):
     ):
         """This method creates a ViscoStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ViscoStep

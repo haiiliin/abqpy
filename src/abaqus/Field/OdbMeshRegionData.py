@@ -3,9 +3,20 @@ from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (Boolean, EXTRAPOLATE_COMPUTE_AVERAGE, FIELD_OUTPUT,
-                                              FLOAT, NONE, OFF, ON, REAL, SCALAR, SymbolicConstant,
-                                              UNDEFINED_POSITION, DEFAULT)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    EXTRAPOLATE_COMPUTE_AVERAGE,
+    FIELD_OUTPUT,
+    FLOAT,
+    NONE,
+    OFF,
+    ON,
+    REAL,
+    SCALAR,
+    SymbolicConstant,
+    UNDEFINED_POSITION,
+    DEFAULT,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -14,7 +25,7 @@ class OdbMeshRegionData:
     """The OdbMeshRegionData object defines the external source data of MappedField from an ODB
     file.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import field
@@ -33,7 +44,7 @@ class OdbMeshRegionData:
     #: obtained only from the position at which they were written to the output database during
     #: the analysis. This position should be aligned with the field output variable. Possible
     #: values are:
-    #: 
+    #:
     #: - UNDEFINED_POSITION
     #: - NODAL
     #: - INTEGRATION_POINT
@@ -45,13 +56,13 @@ class OdbMeshRegionData:
     #: - WHOLE_PART_INSTANCE
     #: - WHOLE_MODEL
     #: - GENERAL_PARTICLE
-    #: 
+    #:
     #: The default value is UNDEFINED_POSITION.
     outputPosition: SymbolicConstant = UNDEFINED_POSITION
 
     #: A SymbolicConstant specifying the data type of the field output variable which should be
     #: aligned with the variable. Currently only SCALAR is supported. Possible values are:
-    #: 
+    #:
     #: - ENUMERATION
     #: - BOOLEAN
     #: - INTEGER
@@ -65,7 +76,7 @@ class OdbMeshRegionData:
     #: - TENSOR_3D_SURFACE
     #: - TENSOR_2D_PLANAR
     #: - TENSOR_2D_SURFACE
-    #: 
+    #:
     #: The default value is SCALAR.
     dataType: SymbolicConstant = SCALAR
 
@@ -150,7 +161,7 @@ class OdbMeshRegionData:
     #: - WHOLE_PART_INSTANCE
     #: - WHOLE_MODEL
     #: - GENERAL_PARTICLE
-    #: 
+    #:
     #: The default value is UNDEFINED_POSITION.
     displayOutputPosition: SymbolicConstant = UNDEFINED_POSITION
 
@@ -161,8 +172,34 @@ class OdbMeshRegionData:
         variableLabel: str,
         stepIndex: int = 0,
         frameIndex: int = 0,
-        outputPosition: Literal[C.ELEMENT_NODAL, C.ELEMENT_FACE, C.WHOLE_ELEMENT, C.NODAL, C.UNDEFINED_POSITION, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.WHOLE_MODEL, C.GENERAL_PARTICLE, C.WHOLE_PART_INSTANCE, C.WHOLE_REGION] = UNDEFINED_POSITION,
-        dataType: Literal[C.QUATERNION_3D, C.BOOLEAN, C.QUATERNION_2D, C.TENSOR_2D_SURFACE, C.VECTOR, C.INTEGER, C.TENSOR, C.SCALAR, C.TENSOR_3D_FULL, C.TENSOR_3D_SURFACE, C.ENUMERATION, C.TENSOR_2D_PLANAR, C.TENSOR_3D_PLANAR] = SCALAR,
+        outputPosition: Literal[
+            C.ELEMENT_NODAL,
+            C.ELEMENT_FACE,
+            C.WHOLE_ELEMENT,
+            C.NODAL,
+            C.UNDEFINED_POSITION,
+            C.INTEGRATION_POINT,
+            C.ELEMENT_CENTROID,
+            C.WHOLE_MODEL,
+            C.GENERAL_PARTICLE,
+            C.WHOLE_PART_INSTANCE,
+            C.WHOLE_REGION,
+        ] = UNDEFINED_POSITION,
+        dataType: Literal[
+            C.QUATERNION_3D,
+            C.BOOLEAN,
+            C.QUATERNION_2D,
+            C.TENSOR_2D_SURFACE,
+            C.VECTOR,
+            C.INTEGER,
+            C.TENSOR,
+            C.SCALAR,
+            C.TENSOR_3D_FULL,
+            C.TENSOR_3D_SURFACE,
+            C.ENUMERATION,
+            C.TENSOR_2D_PLANAR,
+            C.TENSOR_3D_PLANAR,
+        ] = SCALAR,
         storageType: Literal[C.INTEGER, C.DOUBLE, C.FLOAT, C.BOOLEAN] = FLOAT,
         quantityToPlot: Literal[C.DISCONTINUITIES, C.FIELD_OUTPUT] = FIELD_OUTPUT,
         averageElementOutput: str = OFF,
@@ -172,18 +209,37 @@ class OdbMeshRegionData:
         featureAngle: float = 20,
         averageOnlyDisplayed: str = OFF,
         averagingThreshold: float = 75,
-        computeOrder: Literal[C.EXTRAPOLATE_COMPUTE, C.RAW_DATA, C.EXTRAPOLATE_COMPUTE_DISCONTINUITIES, C.EXTRAPOLATE_COMPUTE_AVERAGE, C.EXTRAPOLATE_AVERAGE_COMPUTE] = EXTRAPOLATE_COMPUTE_AVERAGE,
+        computeOrder: Literal[
+            C.EXTRAPOLATE_COMPUTE,
+            C.RAW_DATA,
+            C.EXTRAPOLATE_COMPUTE_DISCONTINUITIES,
+            C.EXTRAPOLATE_COMPUTE_AVERAGE,
+            C.EXTRAPOLATE_AVERAGE_COMPUTE,
+        ] = EXTRAPOLATE_COMPUTE_AVERAGE,
         numericForm: Literal[C.COMPLEX_PHASE, C.COMPLEX_MAG_AT_ANGLE, C.REAL, C.IMAGINARY, C.COMPLEX_MAGNITUDE] = REAL,
         complexAngle: float = 0,
         transformationType: SymbolicConstant = DEFAULT,
         sectionPoint: str = "",
         refinementType: Optional[Literal[C.COMPONENT, C.NO_REFINEMENT, C.INVARIANT]] = None,
         refinementLabel: str = "",
-        displayOutputPosition: Optional[Literal[C.ELEMENT_NODAL, C.ELEMENT_FACE, C.WHOLE_ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.WHOLE_MODEL, C.GENERAL_PARTICLE, C.WHOLE_PART_INSTANCE, C.WHOLE_REGION]] = None,
+        displayOutputPosition: Optional[
+            Literal[
+                C.ELEMENT_NODAL,
+                C.ELEMENT_FACE,
+                C.WHOLE_ELEMENT,
+                C.NODAL,
+                C.INTEGRATION_POINT,
+                C.ELEMENT_CENTROID,
+                C.WHOLE_MODEL,
+                C.GENERAL_PARTICLE,
+                C.WHOLE_PART_INSTANCE,
+                C.WHOLE_REGION,
+            ]
+        ] = None,
     ):
         """This method creates an OdbMeshRegionData object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].analyticalFields[name].OdbMeshRegionData
@@ -219,7 +275,7 @@ class OdbMeshRegionData:
             - WHOLE_PART_INSTANCE
             - WHOLE_MODEL
             - GENERAL_PARTICLE
-            
+
             The default value is UNDEFINED_POSITION.
         dataType
             A SymbolicConstant specifying the data type of the field output variable which should be
@@ -238,7 +294,7 @@ class OdbMeshRegionData:
             - TENSOR_3D_SURFACE
             - TENSOR_2D_PLANAR
             - TENSOR_2D_SURFACE
-            
+
             The default value is SCALAR.
         storageType
             A SymbolicConstant specifying the storage type of the field output variable which
@@ -289,10 +345,10 @@ class OdbMeshRegionData:
             A Dictionary with String keys and String values. Each key specifies a region in the
             model; the corresponding value specifies a section point within that region. For
             example::
-            
+
                 sectionPoint = {
-                    'shell < MAT > < 7 section points >': 'SPOS, (fraction = 1.0)', 
-                    'shell < MAT > < 5 section points >': 'SPOS, (fraction = 1.0)', 
+                    'shell < MAT > < 7 section points >': 'SPOS, (fraction = 1.0)',
+                    'shell < MAT > < 5 section points >': 'SPOS, (fraction = 1.0)',
                 }
         refinementType
             A SymbolicConstant specifying the type of the FieldOutput object. Possible values for

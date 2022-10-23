@@ -17,8 +17,16 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import (AUTOMATIC, Boolean, DIRECT, FULL_NEWTON, OFF,
-                                              PROPAGATED, SOLVER_DEFAULT, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    AUTOMATIC,
+    Boolean,
+    DIRECT,
+    FULL_NEWTON,
+    OFF,
+    PROPAGATED,
+    SOLVER_DEFAULT,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -29,7 +37,7 @@ class GeostaticStep(AnalysisStep):
     if needed, to obtain equilibrium.
     The GeostaticStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -113,7 +121,7 @@ class GeostaticStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -209,7 +217,7 @@ class GeostaticStep(AnalysisStep):
     ):
         """This method creates a GeostaticStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].GeostaticStep

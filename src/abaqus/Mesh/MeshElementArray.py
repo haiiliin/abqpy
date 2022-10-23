@@ -11,7 +11,7 @@ from .MeshElement import MeshElement
 class MeshElementArray(List[MeshElement]):
     """The MeshElementArray is a sequence of MeshElement objects.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -45,7 +45,7 @@ class MeshElementArray(List[MeshElement]):
     def __init__(self, elements: List[MeshElement]) -> None:
         """This method creates a MeshElementArray object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mesh.MeshElementArray
@@ -143,9 +143,7 @@ class MeshElementArray(List[MeshElement]):
         ...
 
     @abaqus_method_doc
-    def getByBoundingCylinder(
-        self, center1: tuple, center2: tuple, radius: str
-    ) -> MeshElementArray:
+    def getByBoundingCylinder(self, center1: tuple, center2: tuple, radius: str) -> MeshElementArray:
         """This method returns an array of element objects that lie within the specified bounding
         cylinder.
 
@@ -167,9 +165,7 @@ class MeshElementArray(List[MeshElement]):
         ...
 
     @abaqus_method_doc
-    def getByBoundingSphere(
-        self, center: Tuple[float, float, float], radius: float
-    ) -> MeshElementArray:
+    def getByBoundingSphere(self, center: Tuple[float, float, float], radius: float) -> MeshElementArray:
         """This method returns an array of element objects that lie within the specified bounding
         sphere.
 
@@ -196,7 +192,7 @@ class MeshElementArray(List[MeshElement]):
         -------
         Dict[str, Tuple[float, float, float]]
             A Dictionary object with the following items:
-            
+
             - **low**: a tuple of three floats representing the minimum x, y, and z boundary values of
               the bounding box.
             - **high**: a tuple of three floats representing the maximum x, y, and z boundary values of

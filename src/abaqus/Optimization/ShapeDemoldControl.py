@@ -14,7 +14,7 @@ class ShapeDemoldControl(GeometricRestriction):
     """The ShapeDemoldControl object defines a shape demold control geometric restriction.
     The ShapeDemoldControl object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -88,7 +88,7 @@ class ShapeDemoldControl(GeometricRestriction):
     ):
         """This method creates a ShapeDemoldControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapeDemoldControl

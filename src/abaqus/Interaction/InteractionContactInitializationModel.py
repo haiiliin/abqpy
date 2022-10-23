@@ -11,7 +11,6 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class InteractionContactInitializationModel(ModelBase):
-    
     def StdInitialization(
         self,
         name: str,
@@ -23,7 +22,7 @@ class InteractionContactInitializationModel(ModelBase):
     ) -> StdInitialization:
         """This method creates a StdInitialization object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].StdInitialization

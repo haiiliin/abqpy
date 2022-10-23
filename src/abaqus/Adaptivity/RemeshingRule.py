@@ -3,8 +3,16 @@ from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (Boolean, DEFAULT, DEFAULT_LIMIT, LAST_INCREMENT,
-                                              MODEL, OFF, ON, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    DEFAULT,
+    DEFAULT_LIMIT,
+    LAST_INCREMENT,
+    MODEL,
+    OFF,
+    ON,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -13,7 +21,7 @@ class RemeshingRule:
     """The RemeshingRule object controls the adaptive remeshing resizing and the error
     indicators written to the output database for a specified region of the model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import mesh
@@ -131,7 +139,7 @@ class RemeshingRule:
     ):
         """This method creates a RemeshingRule object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].RemeshingRule

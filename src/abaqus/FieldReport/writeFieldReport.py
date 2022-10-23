@@ -27,7 +27,7 @@ def writeFieldReport(
 ):
     """This function writes a FieldOutput object to a user-defined ASCII file.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             session.writeFieldReport
@@ -59,7 +59,7 @@ def writeFieldReport(
         A sequence of variable description sequences specifying one or more field output
         variables for which to obtain data. Each variable description sequence contains the
         following elements:
-        
+
         - **element0**: A String specifying the name of the variable.
         - **element1**: A SymbolicConstant specifying the output position at which to report data.
           Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE,
@@ -75,9 +75,9 @@ def writeFieldReport(
           specifying a single section point at which to report data. The key specifies a region in
           the model; the corresponding value specifies a section point within that region. For
           example::
-          
+
             {'shell < MAT > < 7 section points >': 'SPOS (fraction = 1.0)'}
-          
+
           If this element is omitted, data are written for all section points (if applicable).
           If this element is omitted, data are written for all section points (if applicable).
     numericForm

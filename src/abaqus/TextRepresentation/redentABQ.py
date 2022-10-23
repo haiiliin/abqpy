@@ -23,9 +23,7 @@ execution.
 
 
 @abaqus_function_doc
-def indentFile(
-    path: str, indent: str = "", backup: Boolean = False, runTest: Boolean = False
-):
+def indentFile(path: str, indent: str = "", backup: Boolean = False, runTest: Boolean = False):
     """This method outputs the indented file to the terminal window or backs up the specified
     file and replaces it.
 

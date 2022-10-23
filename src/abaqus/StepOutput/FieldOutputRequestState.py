@@ -2,8 +2,7 @@ from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc
 
-from ..UtilityAndView.abaqusConstants import (ALL, Boolean, EVERY_TIME_INCREMENT, OFF,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import ALL, Boolean, EVERY_TIME_INCREMENT, OFF, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -14,7 +13,7 @@ class FieldOutputRequestState:
     FieldOutputRequest object.
     The FieldOutputRequestState object has no constructor or methods.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step

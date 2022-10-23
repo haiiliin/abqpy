@@ -9,7 +9,7 @@ class AnnotationViewport(ViewportBase):
     """The following commands operate on Viewport objects. For more information about the
     Viewport object, see Viewport object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import annotationToolset

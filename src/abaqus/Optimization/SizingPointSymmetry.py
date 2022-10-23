@@ -12,7 +12,7 @@ class SizingPointSymmetry(GeometricRestriction):
     """The SizingPointSymmetry object defines a sizing point symmetry geometric restriction.
     The SizingPointSymmetry object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -43,7 +43,7 @@ class SizingPointSymmetry(GeometricRestriction):
     ):
         """This method creates a SizingPointSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingPointSymmetry

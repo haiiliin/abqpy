@@ -14,7 +14,7 @@ class ReferencePoint:
     is created. The ReferencePoint method creates a Feature object that creates a
     ReferencePoint object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -44,7 +44,7 @@ class ReferencePoint:
         """This method creates a Feature object and a ReferencePoint object at the specified
         location.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].rootAssembly.ReferencePoint

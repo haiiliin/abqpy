@@ -1,10 +1,11 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class AnnealTemperature:
     r"""The AnnealTemperature object specifies the material annealing temperature.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -29,7 +30,7 @@ class AnnealTemperature:
     def __init__(self, table: tuple, dependencies: int = 0):
         """This method creates an AnnealTemperature object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Plastic.AnnealTemperature

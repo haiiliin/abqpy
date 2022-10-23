@@ -15,7 +15,7 @@ class OdbDisplayOptions:
     object when an OdbInstance object is created using the display options associated with
     the current viewport at the time of creation.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import assembly

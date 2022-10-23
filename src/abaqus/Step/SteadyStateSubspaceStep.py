@@ -20,8 +20,16 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import (ALL_FREQUENCIES, Boolean, COMPLEX, LOGARITHMIC, OFF,
-                                              ON, SOLVER_DEFAULT, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    ALL_FREQUENCIES,
+    Boolean,
+    COMPLEX,
+    LOGARITHMIC,
+    OFF,
+    ON,
+    SOLVER_DEFAULT,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -32,7 +40,7 @@ class SteadyStateSubspaceStep(AnalysisStep):
     method.
     The SteadyStateSubspaceStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -102,7 +110,7 @@ class SteadyStateSubspaceStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -188,14 +196,16 @@ class SteadyStateSubspaceStep(AnalysisStep):
         matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         maintainAttributes: Boolean = False,
         subdivideUsingEigenfrequencies: Boolean = ON,
-        projection: Literal[C.CONSTANT, C.RANGE, C.ALL_FREQUENCIES, C.PROPERTY_CHANGE, C.EIGENFREQUENCY] = ALL_FREQUENCIES,
+        projection: Literal[
+            C.CONSTANT, C.RANGE, C.ALL_FREQUENCIES, C.PROPERTY_CHANGE, C.EIGENFREQUENCY
+        ] = ALL_FREQUENCIES,
         maxDampingChange: float = 0,
         maxStiffnessChange: float = 0,
         frictionDamping: Boolean = OFF,
     ):
         """This method creates a SteadyStateSubspaceStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SteadyStateSubspaceStep
@@ -260,7 +270,9 @@ class SteadyStateSubspaceStep(AnalysisStep):
         scale: Literal[C.LINEAR, C.LOGARITHMIC] = LOGARITHMIC,
         matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         subdivideUsingEigenfrequencies: Boolean = ON,
-        projection: Literal[C.CONSTANT, C.RANGE, C.ALL_FREQUENCIES, C.PROPERTY_CHANGE, C.EIGENFREQUENCY] = ALL_FREQUENCIES,
+        projection: Literal[
+            C.CONSTANT, C.RANGE, C.ALL_FREQUENCIES, C.PROPERTY_CHANGE, C.EIGENFREQUENCY
+        ] = ALL_FREQUENCIES,
         maxDampingChange: float = 0,
         maxStiffnessChange: float = 0,
         frictionDamping: Boolean = OFF,

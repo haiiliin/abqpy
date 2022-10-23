@@ -13,7 +13,7 @@ class FilmCondition(Interaction):
     coupled temperature-displacement analyses.
     The FilmCondition object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -96,7 +96,7 @@ class FilmCondition(Interaction):
     ):
         """This method creates a FilmCondition object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FilmCondition

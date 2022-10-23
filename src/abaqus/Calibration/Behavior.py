@@ -10,7 +10,7 @@ from ..UtilityAndView.abaqusConstants import Boolean
 class Behavior:
     """The Behavior object specifies the method used for calibrating a material.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import calibration
@@ -42,7 +42,7 @@ class Behavior:
     def __init__(self, name: str, typeName: str):
         """This method creates a Behavior object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].calibrations[name].Behavior
@@ -292,9 +292,7 @@ class Behavior:
         ...
 
     @abaqus_method_doc
-    def xyDataDissect(
-        self, dsName: str, modelName: str, calibrationName: str, biaxial: Boolean = True
-    ):
+    def xyDataDissect(self, dsName: str, modelName: str, calibrationName: str, biaxial: Boolean = True):
         """This method extracts primary, unload, reload and permanent DataSet objects from the
         existing DataSet object.The method is only valid for FeFpBehavior type of behavior.
 

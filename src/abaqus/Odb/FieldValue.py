@@ -15,7 +15,7 @@ class FieldValue:
     object using the addData method. For faster, bulk-data access, see Using bulk data
     access to an output database.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -24,7 +24,7 @@ class FieldValue:
 
     #: A SymbolicConstant specifying the position of the output in the element. Possible values
     #: are:
-    #: 
+    #:
     #: - NODAL, specifying the values calculated at the nodes.
     #: - INTEGRATION_POINT, specifying the values calculated at the integration points.
     #: - ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at
@@ -37,7 +37,7 @@ class FieldValue:
 
     #: A SymbolicConstant specifying the precision of the output in the element. Possible
     #: values are:
-    #: 
+    #:
     #: - SINGLE_PRECISION, specifying that the output values are in single precision.
     #: - DOUBLE_PRECISION, specifying that the output values are in double precision.
     precision: Optional[SymbolicConstant] = None
@@ -119,9 +119,7 @@ class FieldValue:
     outOfPlanePrincipal: Optional[float] = None
 
     #: An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object specifying the part to which the labels belong.
-    instance: OdbInstance = OdbInstance(
-        "instance", OdbPart("part", THREE_D, DEFORMABLE_BODY)
-    )
+    instance: OdbInstance = OdbInstance("instance", OdbPart("part", THREE_D, DEFORMABLE_BODY))
 
     #: A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object.
     sectionPoint: Optional[SectionPoint] = None

@@ -10,7 +10,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class RebarLayers:
     """The RebarLayers object defines the rebar properties of a section.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -32,12 +32,10 @@ class RebarLayers:
     layerTable: LayerPropertiesArray
 
     @abaqus_method_doc
-    def __init__(
-        self, rebarSpacing: Literal[C.LIFT_EQUATION, C.CONSTANT, C.ANGULAR], layerTable: LayerPropertiesArray
-    ):
+    def __init__(self, rebarSpacing: Literal[C.LIFT_EQUATION, C.CONSTANT, C.ANGULAR], layerTable: LayerPropertiesArray):
         """This method creates a RebarLayers object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[i].section.RebarLayers

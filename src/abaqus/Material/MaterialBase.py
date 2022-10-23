@@ -1,4 +1,3 @@
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .Density.Density import Density
@@ -73,7 +72,7 @@ class MaterialBase:
     MaterialOptions was rejected because it would make it more difficult to enforce the fact
     that one Material object cannot contain two AcousticMedium objects, for example.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -105,9 +104,7 @@ class MaterialBase:
     concrete: Concrete = Concrete(((),))
 
     #: A :py:class:`~abaqus.Material.Plastic.Concrete.ConcreteDamagedPlasticity.ConcreteDamagedPlasticity` object.
-    concreteDamagedPlasticity: ConcreteDamagedPlasticity = ConcreteDamagedPlasticity(
-        ((),)
-    )
+    concreteDamagedPlasticity: ConcreteDamagedPlasticity = ConcreteDamagedPlasticity(((),))
 
     #: A :py:class:`~abaqus.Material.Others.HeatTransfer.Conductivity.Conductivity` object.
     conductivity: Conductivity = Conductivity(((),))
@@ -203,9 +200,7 @@ class MaterialBase:
     gasketThicknessBehavior: GasketThicknessBehavior = GasketThicknessBehavior(((),))
 
     #: A :py:class:`~abaqus.Material.Gasket.GasketTransverseShearElastic.GasketTransverseShearElastic` object.
-    gasketTransverseShearElastic: GasketTransverseShearElastic = (
-        GasketTransverseShearElastic(((),))
-    )
+    gasketTransverseShearElastic: GasketTransverseShearElastic = GasketTransverseShearElastic(((),))
 
     #: A :py:class:`~abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic` object.
     gasketMembraneElastic: GasketMembraneElastic = GasketMembraneElastic(((),))
@@ -238,9 +233,7 @@ class MaterialBase:
     lowDensityFoam: LowDensityFoam = LowDensityFoam()
 
     #: A :py:class:`~abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability` object.
-    magneticPermeability: MagneticPermeability = MagneticPermeability(
-        ((),), ((),), ((),)
-    )
+    magneticPermeability: MagneticPermeability = MagneticPermeability(((),), ((),), ((),))
 
     #: A :py:class:`~abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity` object.
     mohrCoulombPlasticity: MohrCoulombPlasticity = MohrCoulombPlasticity(((),))
@@ -309,7 +302,7 @@ class MaterialBase:
     def __init__(self, name: str, description: str = "", materialIdentifier: str = ""):
         """This method creates a Material object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Material
@@ -342,7 +335,7 @@ class MaterialBase:
         """This methods creates Material objects by reading an output database. The new materials
         are placed in the materials repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Material

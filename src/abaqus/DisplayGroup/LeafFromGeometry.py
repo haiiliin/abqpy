@@ -14,7 +14,7 @@ class LeafFromGeometry(Leaf):
     commands.
     The LeafFromGeometry object is derived from the Leaf object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import displayGroupMdbToolset
@@ -31,7 +31,7 @@ class LeafFromGeometry(Leaf):
         arguments must specify at least one object--it is not permissible to create an empty
         leaf.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 LeafFromGeometry

@@ -17,9 +17,19 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import (AUTOMATIC, Boolean, DIRECT, FULL_NEWTON, LINEAR, OFF,
-                                              PROPAGATED, SOLVER_DEFAULT, STEP, SymbolicConstant,
-                                              TRANSIENT)
+from ..UtilityAndView.abaqusConstants import (
+    AUTOMATIC,
+    Boolean,
+    DIRECT,
+    FULL_NEWTON,
+    LINEAR,
+    OFF,
+    PROPAGATED,
+    SOLVER_DEFAULT,
+    STEP,
+    SymbolicConstant,
+    TRANSIENT,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -29,7 +39,7 @@ class HeatTransferStep(AnalysisStep):
     transient or steady-state response.
     The HeatTransferStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -231,7 +241,7 @@ class HeatTransferStep(AnalysisStep):
     ):
         """This method creates a HeatTransferStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].HeatTransferStep

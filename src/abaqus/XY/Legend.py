@@ -14,7 +14,7 @@ class Legend:
     """The Legend object is used to store the display attributes of the chart legend. A legend
     object is automatically created when creating a Chart object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -61,8 +61,8 @@ class Legend:
         title: str = "",
         numberFormat: Literal[C.SCIENTIFIC, C.AUTOMATIC, C.ENGINEERING, C.DECIMAL] = AUTOMATIC,
         numDigits: int = 2,
-        textStyle: Optional[TextStyle] = None, 
-        titleStyle: Optional[TextStyle] = None, 
+        textStyle: Optional[TextStyle] = None,
+        titleStyle: Optional[TextStyle] = None,
     ):
         """This method modifies the Legend object.
 

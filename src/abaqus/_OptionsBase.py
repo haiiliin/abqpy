@@ -16,9 +16,12 @@ class _OptionsBase:
         list
             The list of user attributes of the class.
         """
-        boring = dir(type('dummy', (object,), {}))
-        return [key for key, value in inspect.getmembers(cls)
-                if key not in boring and not key.startswith('_') and not callable(value)]
+        boring = dir(type("dummy", (object,), {}))
+        return [
+            key
+            for key, value in inspect.getmembers(cls)
+            if key not in boring and not key.startswith("_") and not callable(value)
+        ]
 
     def setValues(self, **kwargs):
         """This method modifies the _OptionsBase object.

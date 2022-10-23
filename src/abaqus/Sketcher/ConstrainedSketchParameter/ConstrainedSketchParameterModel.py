@@ -10,7 +10,7 @@ class ConstrainedSketchParameterModel(ConstrainedSketchBase):
     such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
     contained in their respective repositories.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import sketch
@@ -28,7 +28,7 @@ class ConstrainedSketchParameterModel(ConstrainedSketchBase):
         """This method creates a parameter and optionally associates a dimension with this
         parameter.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].ConstrainedSketchParameter

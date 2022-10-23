@@ -11,7 +11,7 @@ class ExpressionField(AnalyticalField):
     from a user-supplied mathematical expression.
     The ExpressionField object is derived from the AnalyticalField object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import fields
@@ -34,12 +34,10 @@ class ExpressionField(AnalyticalField):
     description: str = ""
 
     @abaqus_method_doc
-    def __init__(
-        self, name: str, expression: str, localCsys: Optional[str] = None, description: str = ""
-    ):
+    def __init__(self, name: str, expression: str, localCsys: Optional[str] = None, description: str = ""):
         """This method creates an ExpressionField object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ExpressionField

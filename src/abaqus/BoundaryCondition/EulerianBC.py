@@ -14,7 +14,7 @@ class EulerianBC(BoundaryCondition):
     """The EulerianBC object stores the data for an Eulerian boundary condition.
     The EulerianBC object is derived from the BoundaryCondition object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -61,7 +61,7 @@ class EulerianBC(BoundaryCondition):
     ):
         """This method creates a EulerianBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EulerianBC

@@ -10,7 +10,7 @@ class PlanarTestData:
     r"""The PlanarTestData object specifies planar test (or pure shear) data (compression and/or
     tension).
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -25,11 +25,11 @@ class PlanarTestData:
         The table data for this object are:
 
         - For a hyperelastic material model, the table data specify the following:
-        
+
             - Nominal stress, :math:`T_{S}`
             - Nominal strain in the direction of loading, :math:`\epsilon_{S}`.
         - For a hyperfoam material model, the table data specify the following:
-        
+
             - Nominal stress, :math:`T_{L}`.
             - Nominal strain in the direction of loading, :math:`\epsilon_{p}`.
             - Nominal transverse strain, :math:`\epsilon_{3}`. The default value is 0 .
@@ -50,7 +50,7 @@ class PlanarTestData:
     ):
         """This method creates a PlanarTestData object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].hyperelastic.PlanarTestData

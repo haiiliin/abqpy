@@ -12,7 +12,7 @@ class CircleByCenterPerimeter(ConstrainedSketchGeometry):
         """This method constructs a circle using a center point and a point on the perimeter. The
         circle is added to the geometry repository of the ConstrainedSketch object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].CircleByCenterPerimeter

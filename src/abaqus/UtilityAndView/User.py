@@ -15,15 +15,15 @@ def getInput(prompt: str, default: str = ""):
     the text field. When the user clicks the OK button, the getInput method reads the data
     from the dialog box and closes the dialog box. You can use a \t separator in the label
     argument to provide a tooltip from the dialog box; for example::
-    
+
         getInput('Enter a number:\tEnter the number of nodes to delete')
-    
+
     .. note::
         You cannot use a script that contains getInput if you are running the script from
         the command line and passing the script name to the command line options **-start**,
         **-script**, **-replay**, or **-noGUI**.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             getInput
@@ -55,7 +55,7 @@ def getInput(fields: tuple, label: str = "", dialogTitle: str = ""):
     the command line and passing the script name to the command line options **-start**,
     **-script**, **-replay**, or **-noGUI**.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             getInputs
@@ -99,13 +99,13 @@ def getWarningReply(message: str, buttons: str):
 
         from abaqus import *
         getWarningReply('Out of disk space!\nOkay to continue', (YES, NO))
-    
-    .. note:: 
+
+    .. note::
         You cannot use a script that contains getWarningReply if you are running the script
         from the command line and passing the script name to the command line options
         **-start**, **-script**, **-replay**, or **-noGUI**.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             getWarningReply

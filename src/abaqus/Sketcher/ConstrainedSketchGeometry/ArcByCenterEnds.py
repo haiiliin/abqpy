@@ -17,7 +17,7 @@ class ArcByCenterEnds(ConstrainedSketchGeometry):
         added to the geometry repository of the ConstrainedSketch object. The arc is created in
         a clockwise fashion from **point1** to **point2**.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].ArcByCenterEnds

@@ -15,7 +15,7 @@ class FluidCavityPressureBC(BoundaryCondition):
     condition.
     The FluidCavityPressureBC object is derived from the BoundaryCondition object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -52,7 +52,7 @@ class FluidCavityPressureBC(BoundaryCondition):
     ):
         """This method creates a FluidCavityPressureBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FluidCavityPressureBC
@@ -84,9 +84,7 @@ class FluidCavityPressureBC(BoundaryCondition):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(
-        self, magnitude: float = 0, amplitude: str = UNSET, fixed: Boolean = OFF
-    ):
+    def setValues(self, magnitude: float = 0, amplitude: str = UNSET, fixed: Boolean = OFF):
         """This method modifies the data for an existing FluidCavityPressureBC object in the step
         where it is created.
 

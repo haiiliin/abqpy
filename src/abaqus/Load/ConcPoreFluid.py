@@ -14,7 +14,7 @@ class ConcPoreFluid(Load):
     """The ConcPoreFluid object stores the data for a concentrated pore fluid flow load.
     The ConcPoreFluid object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -49,7 +49,7 @@ class ConcPoreFluid(Load):
     ):
         """This method creates a ConcPoreFluid object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConcPoreFluid
@@ -111,9 +111,7 @@ class ConcPoreFluid(Load):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(
-        self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""
-    ):
+    def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
         """This method modifies the propagating data for an existing ConcPoreFluid object in the
         specified step.
 

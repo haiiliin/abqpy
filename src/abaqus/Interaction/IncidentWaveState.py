@@ -14,7 +14,7 @@ class IncidentWaveState(InteractionState):
     The IncidentWaveState object has no constructor or methods.
     The IncidentWaveState object is derived from the InteractionState object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction

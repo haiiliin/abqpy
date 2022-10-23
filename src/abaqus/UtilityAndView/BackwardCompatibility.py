@@ -1,4 +1,3 @@
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import Boolean, ON
@@ -17,7 +16,7 @@ class BackwardCompatibility:
     script containing deprecated commands with no indication that you should update the
     script. You can do either of the following to change the value of the
     **includeDeprecated** member and to determine which commands have been deprecated:
-    
+
     - From the command line interface in Abaqus/CAE or from an Abaqus Scripting Interface
       script that is run from within Abaqus/CAE, use the following command::
 
@@ -41,7 +40,7 @@ class BackwardCompatibility:
         print backwardCompatibility.getDeprecatedMembersUsed()
         print backwardCompatibility.getDeprecatedArgsUsed()
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             backwardCompatibility

@@ -7,7 +7,7 @@ from abqpy.decorators import abaqus_class_doc
 class EmagTimeHarmonicFrequency:
     """
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step

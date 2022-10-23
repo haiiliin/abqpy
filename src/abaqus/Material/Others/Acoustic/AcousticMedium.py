@@ -7,7 +7,7 @@ from ....UtilityAndView.abaqusConstants import Boolean, OFF
 class AcousticMedium:
     """The AcousticMedium object specifies the acoustic properties of a material.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -33,7 +33,7 @@ class AcousticMedium:
     ):
         """This method creates an AcousticMedium object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].AcousticMedium
@@ -58,23 +58,23 @@ class AcousticMedium:
             **volumetricTable**. The default value is 0.
         bulkTable
             A sequence of sequences of Floats specifying the following:
-            
+
             - Bulk modulus.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-            
+
         volumetricTable
             A sequence of sequences of Floats specifying the following:
-            
+
             - Volumetric drag.
             - Frequency.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
-            
+
             The default value is an empty sequence.
 
         Returns

@@ -4,7 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from .NumberFormat import NumberFormat
-from ..UtilityAndView.abaqusConstants import (Boolean, COMPRESSEDINDEX, ENGINEERING, ON)
+from ..UtilityAndView.abaqusConstants import Boolean, COMPRESSEDINDEX, ENGINEERING, ON
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -16,7 +16,7 @@ class JournalOptions:
     numeric output. The JournalOptions object has no constructor. Abaqus creates the
     **journalOptions** member when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.journalOptions
@@ -30,9 +30,9 @@ class JournalOptions:
         self,
         replayGeometry: Literal[C.COORDINATE, C.COMPRESSEDINDEX, C.INDEX] = COMPRESSEDINDEX,
         recoverGeometry: Literal[C.COORDINATE, C.COMPRESSEDINDEX, C.INDEX] = COMPRESSEDINDEX,
-        defaultFormat: Optional[NumberFormat] = None, 
-        fieldReportFormat: Optional[NumberFormat] = None, 
-        geometryFormat: Optional[NumberFormat] = None, 
+        defaultFormat: Optional[NumberFormat] = None,
+        fieldReportFormat: Optional[NumberFormat] = None,
+        geometryFormat: Optional[NumberFormat] = None,
     ):
         """This method modifies the JournalOptions object.
 
@@ -68,7 +68,7 @@ class JournalOptions:
     ) -> NumberFormat:
         """This method creates a NumberFormat object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.defaultFieldReportOptions.NumberFormat
@@ -97,7 +97,5 @@ class JournalOptions:
         NumberFormat
             A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object.
         """
-        self.numberFormat = numberFormat = NumberFormat(
-            blankPad, format, numDigits, precision
-        )
+        self.numberFormat = numberFormat = NumberFormat(blankPad, format, numDigits, precision)
         return numberFormat

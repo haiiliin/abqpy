@@ -34,8 +34,19 @@ from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
-from ..UtilityAndView.abaqusConstants import (ALL_EDGES, BOUNDARY_ONLY, Boolean, FALSE, GEOMETRY,
-                                              LOW, NONE, OFF, ON, SymbolicConstant, UNDEFORMED)
+from ..UtilityAndView.abaqusConstants import (
+    ALL_EDGES,
+    BOUNDARY_ONLY,
+    Boolean,
+    FALSE,
+    GEOMETRY,
+    LOW,
+    NONE,
+    OFF,
+    ON,
+    SymbolicConstant,
+    UNDEFORMED,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -48,7 +59,7 @@ class PartBase(PartFeature):
     """The Part object defines the physical attributes of a structure. Parts are instanced into
     the assembly and positioned before an analysis.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -178,7 +189,7 @@ class PartBase(PartFeature):
     ):
         """This method creates a Part object and places it in the parts repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Part
@@ -218,7 +229,7 @@ class PartBase(PartFeature):
     ):
         """This method copies a Part object and places the copy in the parts repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Part
@@ -258,13 +269,11 @@ class PartBase(PartFeature):
     def __init__(self, *args, **kwargs):
         ...
 
-    def PartFromBooleanCut(
-        self, name: str, instanceToBeCut: str, cuttingInstances: Sequence[PartInstance]
-    ):
+    def PartFromBooleanCut(self, name: str, instanceToBeCut: str, cuttingInstances: Sequence[PartInstance]):
         """This method creates a Part in the parts repository after subtracting or cutting the
         geometries of a group of part instances from that of a base part instance.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Part
@@ -301,7 +310,7 @@ class PartBase(PartFeature):
         instances. The part instances can be either Abaqus native parts or orphan mesh parts,
         but they cannot be a combination of both.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Part
@@ -339,13 +348,11 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def PartFromExtrude2DMesh(
-        self, name: str, part: "PartBase", depth: float, elementSize: float
-    ):
+    def PartFromExtrude2DMesh(self, name: str, part: "PartBase", depth: float, elementSize: float):
         """This method creates a Part object by extruding an existing two-dimensional orphan mesh
         Part object in the positive **Z**-direction and places it in the parts repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Part
@@ -365,7 +372,7 @@ class PartBase(PartFeature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
-            
+
             - If the specified part is not an orphan mesh part:
               Cannot extrude a geometric part.
             - If the specified part is not two-dimensional:
@@ -395,7 +402,7 @@ class PartBase(PartFeature):
     ):
         """This method creates a Part object and places it in the parts repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Part
@@ -457,7 +464,7 @@ class PartBase(PartFeature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
-            
+
             - If the ACIS file is corrupt:
               PartError: the file is corrupt
             - If the dimensionality does not correspond to what is found in the ACIS file:
@@ -478,7 +485,7 @@ class PartBase(PartFeature):
         """This method creates a Part object containing the mesh found in the supplied PartInstance
         objects and places the new Part object in the parts repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Part
@@ -502,7 +509,7 @@ class PartBase(PartFeature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
-            
+
             - If the analysis type (deformable or rigid) is not consistent among the supplied part
               instances:
               The selected part instances do not have a consistent analysis type.
@@ -518,7 +525,7 @@ class PartBase(PartFeature):
         """This method creates a Part object containing the mesh found in the part and places the
         new Part object in the parts repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Part
@@ -535,23 +542,21 @@ class PartBase(PartFeature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
-            
+
             - If the part does not contain a mesh:
               The current part does not contain a mesh for a mesh part.
         """
         ...
 
     @abaqus_method_doc
-    def PartFromMeshMirror(
-        self, name: str, part: "PartBase", point1: tuple, point2: tuple
-    ):
+    def PartFromMeshMirror(self, name: str, part: "PartBase", point1: tuple, point2: tuple):
         """This method creates a Part object by mirroring an existing orphan mesh Part object about
         a specified plane and places it in the parts repository. The result is a union of the
         original and the mirrored copy. Contrast the PartFromMeshMirror method with the
         **mirrorPlane** argument of the Part copy constructor. The **mirrorPlane** argument creates
         only the second half of the part but does not unite the two halves.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Part
@@ -573,7 +578,7 @@ class PartBase(PartFeature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
-            
+
             - If the specified part is not an orphan mesh part:
               Cannot mirror a geometric part.
             - If the specified part is a rigid body:
@@ -599,7 +604,7 @@ class PartBase(PartFeature):
         """This method creates a Part object from nodes and elements and places it in the parts
         repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Part
@@ -651,7 +656,7 @@ class PartBase(PartFeature):
         """This method creates an orphan mesh Part object by reading an output database. The new
         part is placed in the parts repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Part
@@ -693,7 +698,7 @@ class PartBase(PartFeature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
-            
+
             - If the output database contains elements of more than one dimensionality or type:
               File contains both axisymmetric and nonaxisymmetric elements.File contains both 2D and
               3D elements.File contains both rigid and deformable elements.
@@ -713,14 +718,12 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def PartFromSection3DMeshByPlane(
-        self, name: str, part: "PartBase", point1: float, point2: float, point3: tuple
-    ):
+    def PartFromSection3DMeshByPlane(self, name: str, part: "PartBase", point1: float, point2: float, point3: tuple):
         """This method creates a Part object by cutting an existing three-dimensional orphan mesh
         Part object by a plane and places it in the parts repository. This method is valid only
         for orphan mesh parts composed of 8-node brick elements.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Part
@@ -745,7 +748,7 @@ class PartBase(PartFeature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
-            
+
             - If the specified part is not an orphan mesh part:
               Cannot reduce dimension of a geometric part.
             - If the specified part is not three-dimensional:
@@ -766,7 +769,7 @@ class PartBase(PartFeature):
         """This method creates a substructure Part object by reading a substructure sim file and
         places it in the parts repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Part
@@ -784,7 +787,7 @@ class PartBase(PartFeature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
-            
+
             - If the specified part is not a substructure:
               File specified does not contain a substructure.
             - If the specified part already exists:
@@ -811,7 +814,7 @@ class PartBase(PartFeature):
         two-dimensional mesh, the method fails and creates an empty geometry part with a failed
         base shell feature.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Part
@@ -837,7 +840,7 @@ class PartBase(PartFeature):
         -------
         part: Part
             A :py:class:`~abaqus.Part.Part.Part` object
-            
+
             - If the specified part is not an orphan mesh part:
               Specified part must be an orphan mesh.
             - If the Part2DGeomFrom2DMesh method cannot create a valid two-dimensional shell section from the two-dimensional mesh:
@@ -964,9 +967,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def getAngle(
-        self, plane1: str, plane2: str, line1: str, line2: str, commonVertex: str = ""
-    ):
+    def getAngle(self, plane1: str, plane2: str, line1: str, line2: str, commonVertex: str = ""):
         """This method returns the angle between the specified entities.
 
         Parameters
@@ -1048,11 +1049,9 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def getCentroid(
-        self, faces: Sequence[Face], cells: Sequence[Face], relativeAccuracy: float = 0
-    ):
+    def getCentroid(self, faces: Sequence[Face], cells: Sequence[Face], relativeAccuracy: float = 0):
         """Location of the centroid of a given face/cell or group of faces/cells
-        
+
         Parameters
         ----------
         faces
@@ -1070,7 +1069,7 @@ class PartBase(PartFeature):
         centroid: Sequence[float]
             A sequence of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the centroid.
             Depending on the arguments provided, this method returns the following:
-        
+
             - The location of the centroid of a given face or group of faces.
             - The location of the centroid of a given cell or group of cells.
         """
@@ -1118,7 +1117,7 @@ class PartBase(PartFeature):
     @abaqus_method_doc
     def getDistance(self, entity1: str, entity2: str):
         """Depending on the arguments provided, this method returns one of the following:
-        
+
         - The distance between two points.
         - The minimum distance between a point and an edge.
         - The minimum distance between two edges.
@@ -1422,9 +1421,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def projectEdgesOntoSketch(
-        self, sketch: str, edges: tuple, constrainToBackground: Boolean = True
-    ):
+    def projectEdgesOntoSketch(self, sketch: str, edges: tuple, constrainToBackground: Boolean = True):
         """This method projects the selected edges of a part onto the specified ConstrainedSketch
         object. The edges appear as sketch geometry after projection. If the plane of projection
         is not parallel to the specified edge, the resultant sketch geometry may be of a
@@ -1666,9 +1663,7 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def writeCADParameters(
-        self, paramFile: str, modifiedParams: tuple = (), updatePaths: str = ""
-    ):
+    def writeCADParameters(self, paramFile: str, modifiedParams: tuple = (), updatePaths: str = ""):
         """This method writes the parameters that were imported from the CAD system to a parameter
         file.
 
@@ -1687,7 +1682,9 @@ class PartBase(PartFeature):
         ...
 
     @abaqus_method_doc
-    def writeIgesFile(self, fileName: str, flavor: Literal[C.JAMA, C.IGES, C.SOLIDWORKS, C.STANDARD, C.AUTOCAD, C.MSBO]):
+    def writeIgesFile(
+        self, fileName: str, flavor: Literal[C.JAMA, C.IGES, C.SOLIDWORKS, C.STANDARD, C.AUTOCAD, C.MSBO]
+    ):
         """This method exports the geometry of the part to a named file in IGES format.
 
         Parameters

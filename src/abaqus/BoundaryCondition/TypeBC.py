@@ -15,7 +15,7 @@ class TypeBC(BoundaryCondition):
     that are commonly used in stress/displacement analyses.
     The TypeBC object is derived from the BoundaryCondition object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -48,12 +48,14 @@ class TypeBC(BoundaryCondition):
         name: str,
         createStepName: str,
         region: Region,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> None:
         """This method creates an TypeBC object.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EncastreBC
@@ -98,8 +100,8 @@ class TypeBC(BoundaryCondition):
         localCsys: Optional[str] = None,
     ) -> "TypeBC":
         """This method creates an encastre TypeBC object.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EncastreBC
@@ -138,8 +140,8 @@ class TypeBC(BoundaryCondition):
         localCsys: Optional[str] = None,
     ) -> "TypeBC":
         """This method creates a pinned TypeBC object.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PinnedBC
@@ -178,8 +180,8 @@ class TypeBC(BoundaryCondition):
         localCsys: Optional[str] = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies symmetry about the **X**-axis.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].XsymmBC
@@ -218,8 +220,8 @@ class TypeBC(BoundaryCondition):
         localCsys: Optional[str] = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies symmetry about the **Y**-axis.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].YsymmBC
@@ -258,8 +260,8 @@ class TypeBC(BoundaryCondition):
         localCsys: Optional[str] = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies symmetry about the **Z**-axis.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ZsymmBC
@@ -298,8 +300,8 @@ class TypeBC(BoundaryCondition):
         localCsys: Optional[str] = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies antisymmetry about the **X**-axis.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].XasymmBC
@@ -338,8 +340,8 @@ class TypeBC(BoundaryCondition):
         localCsys: Optional[str] = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies antisymmetry about the **Y**-axis.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].YasymmBC
@@ -378,8 +380,8 @@ class TypeBC(BoundaryCondition):
         localCsys: Optional[str] = None,
     ) -> "TypeBC":
         """This method creates a TypeBC object that specifies antisymmetry about the **Z**-axis.
-        
-        .. note:: 
+
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ZasymmBC
@@ -412,13 +414,17 @@ class TypeBC(BoundaryCondition):
     def setValues(
         self,
         region: Region,
-        typeName: Optional[Literal[C.YASYMM, C.ENCASTRE, C.ZASYMM, C.ZSYMM, C.YSYMM, C.XSYMM, C.PINNED, C.XASYMM]] = None,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        typeName: Optional[
+            Literal[C.YASYMM, C.ENCASTRE, C.ZASYMM, C.ZSYMM, C.YSYMM, C.XSYMM, C.PINNED, C.XASYMM]
+        ] = None,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ):
         """This method modifies the data for an existing TypeBC object in the step where it is
         created.
-        
+
         Parameters
         ----------
         region
@@ -438,7 +444,13 @@ class TypeBC(BoundaryCondition):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(self, stepName: str, typeName: Optional[Literal[C.YASYMM, C.ENCASTRE, C.ZASYMM, C.ZSYMM, C.YSYMM, C.XSYMM, C.PINNED, C.XASYMM]] = None):
+    def setValuesInStep(
+        self,
+        stepName: str,
+        typeName: Optional[
+            Literal[C.YASYMM, C.ENCASTRE, C.ZASYMM, C.ZSYMM, C.YSYMM, C.XSYMM, C.PINNED, C.XASYMM]
+        ] = None,
+    ):
         """This method always returns a value error for a TypeBC; it is inherited from the
         BoundaryCondition object.
 

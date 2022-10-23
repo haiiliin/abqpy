@@ -11,7 +11,7 @@ class Viscous:
     r"""The Viscous object specifies the viscous properties for a two-layer viscoplastic
     material model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -22,7 +22,7 @@ class Viscous:
         The table data for this object are:
 
         - If **law** = STRAIN or **law** = TIME, the table data specify the following:
-        
+
             - :math:`A`.
             - :math:`n`.
             - :math:`m`.
@@ -32,7 +32,7 @@ class Viscous:
             - Value of the second field variable.
             - Etc.
         - If **law** = USER, the table data specify the following:
-        
+
             - :math:`f`.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
@@ -58,7 +58,7 @@ class Viscous:
     ):
         """This method creates a Viscous object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Viscous

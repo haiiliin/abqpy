@@ -11,7 +11,7 @@ from ....UtilityAndView.abaqusConstants import Boolean, OFF
 class MohrCoulombPlasticity:
     r"""The MohrCoulombPlasticity object specifies the extended Mohr-Coulomb plasticity model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -52,7 +52,7 @@ class MohrCoulombPlasticity:
     ):
         r"""This method creates a MohrCoulombPlasticity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MohrCoulombPlasticity
@@ -63,7 +63,7 @@ class MohrCoulombPlasticity:
         table
             A sequence of sequences of Floats specifying the items described below.
         deviatoricEccentricity
-            None or a Float specifying the flow potential eccentricity in the deviatoric plane, 
+            None or a Float specifying the flow potential eccentricity in the deviatoric plane,
             :math:`e`; :math:`1 / 2 \leq e \leq 1.0`. If **deviatoricEccentricity** = None, Abaqus calculates the value using the
             specified Mohr-Coulomb angle of friction. The default value is None.
         meridionalEccentricity

@@ -11,7 +11,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 class OdbFrame:
     """The domain of the OdbFrame object is taken from the parent step.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -62,7 +62,7 @@ class OdbFrame:
     def __init__(self, incrementNumber: int, frameValue: float, description: str = ""):
         """This method creates an OdbFrame object and appends it to the frame sequence.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame
@@ -94,7 +94,7 @@ class OdbFrame:
         the frame sequence. The arguments to the constructor are valid only when
         **domain** = FREQUENCY or **domain** = MODAL.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame
@@ -118,13 +118,11 @@ class OdbFrame:
 
     @overload
     @abaqus_method_doc
-    def __init__(
-        self, loadCase: OdbLoadCase, description: str = "", frequency: float = 0
-    ):
+    def __init__(self, loadCase: OdbLoadCase, description: str = "", frequency: float = 0):
         """This constructor creates an OdbFrame object for a specific load case and appends it to
         the frame sequence.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame
@@ -162,7 +160,7 @@ class OdbFrame:
     ):
         """This method creates a FieldOutput object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame
@@ -209,7 +207,7 @@ class OdbFrame:
         """This method creates a FieldOutput object from an existing FieldOutput object of the same
         output database.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].steps[name].Frame

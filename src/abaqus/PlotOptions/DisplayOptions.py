@@ -12,7 +12,7 @@ from .._OptionsBase import _CopyOptionsBase
 class DisplayOptions(_CopyOptionsBase):
     """The DisplayOptions object stores a plot state.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -27,7 +27,20 @@ class DisplayOptions(_CopyOptionsBase):
 
     @abaqus_method_doc
     def setValues(
-        self, options: Optional["DisplayOptions"] = None, plotState: Optional[Literal[C.SYMBOLS_ON_DEF, C.ORIENT_ON_UNDEF, C.DEFORMED, C.ORIENT_ON_DEF, C.CONTOURS_ON_DEF, C.CONTOURS_ON_UNDEF, C.SYMBOLS_ON_UNDEF, C.UNDEFORMED]] = None
+        self,
+        options: Optional["DisplayOptions"] = None,
+        plotState: Optional[
+            Literal[
+                C.SYMBOLS_ON_DEF,
+                C.ORIENT_ON_UNDEF,
+                C.DEFORMED,
+                C.ORIENT_ON_DEF,
+                C.CONTOURS_ON_DEF,
+                C.CONTOURS_ON_UNDEF,
+                C.SYMBOLS_ON_UNDEF,
+                C.UNDEFORMED,
+            ]
+        ] = None,
     ):
         """This method modifies the DisplayOptions object.
 

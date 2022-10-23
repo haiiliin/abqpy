@@ -9,7 +9,7 @@ class Annotation:
     Annotation object has no explicit constructor. The methods and members of the Annotation
     object are common to all objects derived from Annotation.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import annotationToolset

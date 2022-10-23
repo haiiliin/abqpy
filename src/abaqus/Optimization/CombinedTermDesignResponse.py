@@ -13,7 +13,7 @@ class CombinedTermDesignResponse(DesignResponse):
     """The CombinedTermDesignResponse object defines a combined-term design response.
     The CombinedTermDesignResponse object is derived from the DesignResponse object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -48,7 +48,6 @@ class CombinedTermDesignResponse(DesignResponse):
 
     #: A SymbolicConstant specifying the method used to combine selected design responses.
     #: Possible values are:
-    
 
     #: - ABSOLUTE_DIFFERENCE
     #: - ABSOLUTE_VALUE
@@ -81,7 +80,7 @@ class CombinedTermDesignResponse(DesignResponse):
     #: - SUBTRACT
     #: - TANGENT
     #: - WEIGHTED_ADD
-    #: 
+    #:
     #: The default value is ADD.
     method: SymbolicConstant = ADD
 
@@ -99,12 +98,44 @@ class CombinedTermDesignResponse(DesignResponse):
         filterRadiusReduction: float = 0,
         highCutOff: Optional[str] = None,
         lowCutOff: float = 0,
-        method: Literal[C.ABSOLUTE_DIFFERENCE, C.NORM, C.NTH_ROOT, C.ABSOLUTE_VALUE, C.SQUARE_ROOT, C.COSINE, C.DIVIDE, C.MULTIPLY, C.EXPONENTIAL, C.CUT_OFF, C.SINE, C.SUBTRACT, C.SIGN, C.WEIGHTED_ADD, C.FILTER, C.NTH_POWER, C.LOG, C.DELTA_OVER_6_ITERATIONS, C.DELTA_OVER_2_ITERATIONS, C.TANGENT, C.DELTA_OVER_3_ITERATIONS, C.NORM_FIRST, C.MAXIMUM, C.NEAREST_INTEGER, C.INTEGER, C.DELTA_OVER_4_ITERATIONS, C.NATURAL_LOG, C.DELTA_OVER_1_ITERATION, C.DELTA_OVER_5_ITERATIONS, C.MINIMUM, C.ADD] = ADD,
+        method: Literal[
+            C.ABSOLUTE_DIFFERENCE,
+            C.NORM,
+            C.NTH_ROOT,
+            C.ABSOLUTE_VALUE,
+            C.SQUARE_ROOT,
+            C.COSINE,
+            C.DIVIDE,
+            C.MULTIPLY,
+            C.EXPONENTIAL,
+            C.CUT_OFF,
+            C.SINE,
+            C.SUBTRACT,
+            C.SIGN,
+            C.WEIGHTED_ADD,
+            C.FILTER,
+            C.NTH_POWER,
+            C.LOG,
+            C.DELTA_OVER_6_ITERATIONS,
+            C.DELTA_OVER_2_ITERATIONS,
+            C.TANGENT,
+            C.DELTA_OVER_3_ITERATIONS,
+            C.NORM_FIRST,
+            C.MAXIMUM,
+            C.NEAREST_INTEGER,
+            C.INTEGER,
+            C.DELTA_OVER_4_ITERATIONS,
+            C.NATURAL_LOG,
+            C.DELTA_OVER_1_ITERATION,
+            C.DELTA_OVER_5_ITERATIONS,
+            C.MINIMUM,
+            C.ADD,
+        ] = ADD,
         weights: tuple = (),
     ):
         """This method creates a CombinedTermDesignResponse object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].CombinedTermDesignResponse
@@ -165,7 +196,7 @@ class CombinedTermDesignResponse(DesignResponse):
             - SUBTRACT
             - TANGENT
             - WEIGHTED_ADD
-            
+
             The default value is ADD.
         weights
             A sequence of Floats specifying the weights to apply to the list of design responses
@@ -186,7 +217,39 @@ class CombinedTermDesignResponse(DesignResponse):
         filterRadiusReduction: float = 0,
         highCutOff: Optional[str] = None,
         lowCutOff: float = 0,
-        method: Literal[C.ABSOLUTE_DIFFERENCE, C.NORM, C.NTH_ROOT, C.ABSOLUTE_VALUE, C.SQUARE_ROOT, C.COSINE, C.DIVIDE, C.MULTIPLY, C.EXPONENTIAL, C.CUT_OFF, C.SINE, C.SUBTRACT, C.SIGN, C.WEIGHTED_ADD, C.FILTER, C.NTH_POWER, C.LOG, C.DELTA_OVER_6_ITERATIONS, C.DELTA_OVER_2_ITERATIONS, C.TANGENT, C.DELTA_OVER_3_ITERATIONS, C.NORM_FIRST, C.MAXIMUM, C.NEAREST_INTEGER, C.INTEGER, C.DELTA_OVER_4_ITERATIONS, C.NATURAL_LOG, C.DELTA_OVER_1_ITERATION, C.DELTA_OVER_5_ITERATIONS, C.MINIMUM, C.ADD] = ADD,
+        method: Literal[
+            C.ABSOLUTE_DIFFERENCE,
+            C.NORM,
+            C.NTH_ROOT,
+            C.ABSOLUTE_VALUE,
+            C.SQUARE_ROOT,
+            C.COSINE,
+            C.DIVIDE,
+            C.MULTIPLY,
+            C.EXPONENTIAL,
+            C.CUT_OFF,
+            C.SINE,
+            C.SUBTRACT,
+            C.SIGN,
+            C.WEIGHTED_ADD,
+            C.FILTER,
+            C.NTH_POWER,
+            C.LOG,
+            C.DELTA_OVER_6_ITERATIONS,
+            C.DELTA_OVER_2_ITERATIONS,
+            C.TANGENT,
+            C.DELTA_OVER_3_ITERATIONS,
+            C.NORM_FIRST,
+            C.MAXIMUM,
+            C.NEAREST_INTEGER,
+            C.INTEGER,
+            C.DELTA_OVER_4_ITERATIONS,
+            C.NATURAL_LOG,
+            C.DELTA_OVER_1_ITERATION,
+            C.DELTA_OVER_5_ITERATIONS,
+            C.MINIMUM,
+            C.ADD,
+        ] = ADD,
         weights: tuple = (),
     ):
         """This method modifies the CombinedTermDesignResponse object.
@@ -243,7 +306,7 @@ class CombinedTermDesignResponse(DesignResponse):
             - SUBTRACT
             - TANGENT
             - WEIGHTED_ADD
-            
+
             The default value is ADD.
         weights
             A sequence of Floats specifying the weights to apply to the list of design responses

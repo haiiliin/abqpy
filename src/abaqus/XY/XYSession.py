@@ -15,20 +15,27 @@ from .XYSessionBase import XYSessionBase
 from ..Odb.Odb import Odb
 from ..PathAndProbe.Path import Path
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (Boolean, COMPLEX_VAL_AT_ANGLE, FILLED_CIRCLE, IMAGINARY, OFF, ON,
-                                              REAL, SOLID, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    COMPLEX_VAL_AT_ANGLE,
+    FILLED_CIRCLE,
+    IMAGINARY,
+    OFF,
+    ON,
+    REAL,
+    SOLID,
+    SymbolicConstant,
+)
 
 
 @abaqus_class_doc
 class XYSession(XYSessionBase):
     @staticmethod
     @abaqus_method_doc
-    def AreaStyle(
-        color: str = "", fill: Boolean = ON, style: SymbolicConstant = SOLID
-    ) -> AreaStyle:
+    def AreaStyle(color: str = "", fill: Boolean = ON, style: SymbolicConstant = SOLID) -> AreaStyle:
         """This method creates an AreaStyle.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.AreaStyle
@@ -68,7 +75,7 @@ class XYSession(XYSessionBase):
     ) -> LineStyle:
         """This method creates a LineStyle.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.LineStyle
@@ -183,7 +190,7 @@ class XYSession(XYSessionBase):
     ) -> QuantityType:
         """This method creates a QuantityType object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.QuantityType
@@ -299,7 +306,7 @@ class XYSession(XYSessionBase):
     ) -> SymbolStyle:
         """This method creates a SymbolStyle object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.SymbolStyle
@@ -316,7 +323,7 @@ class XYSession(XYSessionBase):
         marker
             A SymbolicConstant specifying the marker type be used when drawing symbols using this
             SymbolStyle object. Possible values are:
-            
+
             - FILLED_CIRCLE
             - FILLED_SQUARE
             - FILLED_DIAMOND
@@ -328,7 +335,7 @@ class XYSession(XYSessionBase):
             - CROSS
             - XMARKER
             - POINT
-            
+
             The default value is FILLED_CIRCLE.
         size
             A Float specifying the marker size to be used when drawing markers using this
@@ -348,12 +355,10 @@ class XYSession(XYSessionBase):
 
     @staticmethod
     @abaqus_method_doc
-    def TextStyle(
-        color: str = "", show: Boolean = ON, font: str = "", rotationAngle: float = 0
-    ) -> TextStyle:
+    def TextStyle(color: str = "", show: Boolean = ON, font: str = "", rotationAngle: float = 0) -> TextStyle:
         """This method creates a TextStyle.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.TextStyle
@@ -403,7 +408,7 @@ class XYSession(XYSessionBase):
     ) -> XYData:
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.XYData
@@ -456,7 +461,7 @@ class XYSession(XYSessionBase):
     def XYData(objectToCopy: XYData) -> XYData:
         """This method creates an XYData object by copying an existing XYData object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].userData.XYData
@@ -498,7 +503,7 @@ class XYSession(XYSessionBase):
     ) -> XYData:
         """This method creates an XYData object from data in an ASCII file.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.XYDataFromFile
@@ -571,15 +576,13 @@ class XYSession(XYSessionBase):
         positionDescription: str = "",
         legendLabel: str = "",
         skipFrequency: int = 0,
-        numericForm: Literal[
-            C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
-        ] = REAL,
+        numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
         stepTuple: Sequence[int] = ...,
     ) -> XYData:
         """This method creates an XYData object by reading history data from an Odb object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.XYDataFromHistory
@@ -642,9 +645,7 @@ class XYSession(XYSessionBase):
     def xyDataListFromField(
         self,
         odb: Odb,
-        outputPosition: Literal[
-            C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL
-        ],
+        outputPosition: Literal[C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL],
         variable: Tuple[
             Tuple[
                 str,
@@ -667,9 +668,7 @@ class XYSession(XYSessionBase):
         elementLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
         nodeSets: Union[str, Sequence[str]] = ...,
         nodeLabels: Sequence[Tuple[str, Union[int, str]]] = ...,
-        numericForm: Literal[
-            C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
-        ] = REAL,
+        numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
         operator: Literal[
             C.ADD,
@@ -710,7 +709,7 @@ class XYSession(XYSessionBase):
     ) -> List[XYData]:
         """This method creates a list of XYData objects by reading field data from an Odb object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.xyDataListFromField
@@ -725,8 +724,8 @@ class XYSession(XYSessionBase):
             values are ELEMENT_CENTROID, ELEMENT_NODAL, INTEGRATION_POINT, and NODAL.
         variable
             A tuple of tuples containing the descriptions of variables for which to extract data
-            from the field. Each tuple specifies the following: 
-            
+            from the field. Each tuple specifies the following:
+
             * Variable label: A String specifying the variable; for example, 'U'.
             * Variable output position: A SymbolicConstant specifying the output position. Possible values are
               ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT, NODAL,
@@ -734,18 +733,18 @@ class XYSession(XYSessionBase):
             * Refinement: A tuple specifying the refinement. If the refinement tuple is omitted, data are
               written  for all components and invariants (if applicable). This element is required if the
               location dictionary (the following element in the tuple) is included. The refinement tuple
-              contains the following: 
-              
+              contains the following:
+
               * Type: A SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and
                 COMPONENT.
               * Label: A String specifying the invariant or the component; for example, 'Mises' or 'S22'.
-              
+
             * Location: An optional Dictionary specifying the location. The dictionary contains pairs of the
               following:
-              
+
               * A String specifying the category selection label.
               * A String specifying the section point label.
-              
+
             For example::
 
                 variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
@@ -763,11 +762,11 @@ class XYSession(XYSessionBase):
             name and a sequence of element expressions; for example,
             `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The element
             expressions can be any of the following:
-            
+
             * An Int specifying a single element label; for example, `1`.
             * A String specifying a single element label; for example, `'7'`.
             * A String specifying a sequence of element labels; for example, `'3:5'` and `'3:15:3'`.
-            
+
         nodeSets
             A sequence of Strings specifying node sets or a String specifying a single node set.
         nodeLabels
@@ -776,11 +775,11 @@ class XYSession(XYSessionBase):
             name and a sequence of node expressions; for example,
             `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The node expressions
             can be any of the following:
-            
+
             * An Int specifying a single node label; for example, `1`.A
             * String specifying a single node label; for example, `'7'`.
             * A String specifying a sequence of node labels; for example, `'3:5'` and `'3:15:3'`.
-            
+
         numericForm
             A SymbolicConstant specifying the numeric form in which to display results that contain
             complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
@@ -826,7 +825,7 @@ class XYSession(XYSessionBase):
         """This method creates a list of XYData objects by computing free body data from an Odb
         object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.XYDataFromFreeBody
@@ -873,9 +872,7 @@ class XYSession(XYSessionBase):
     def XYDataFromShellThickness(
         self,
         odb: Odb,
-        outputPosition: Literal[
-            C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL
-        ],
+        outputPosition: Literal[C.ELEMENT_CENTROID, C.ELEMENT_NODAL, C.INTEGRATION_POINT, C.NODAL],
         variable: Tuple[
             Tuple[
                 str,
@@ -900,15 +897,13 @@ class XYSession(XYSessionBase):
         elementLabels: Sequence[Tuple[str, Union[int, str]]] = (),
         nodeSets: Union[str, Sequence[str]] = (),
         nodeLabels: Sequence[Tuple[str, Union[int, str]]] = (),
-        numericForm: Literal[
-            C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE
-        ] = REAL,
+        numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
     ) -> List[XYData]:
         """This method creates a list of XYData objects by reading through the thickness field data
         from an Odb object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.XYDataFromShellThickness
@@ -924,7 +919,7 @@ class XYSession(XYSessionBase):
         variable
             A tuple of tuples containing the descriptions of variables for which to extract data from the
             field. Each tuple specifies the following:
-            
+
             * Variable label: A String specifying the variable; for example, 'U'.
             * Variable output position: A SymbolicConstant specifying
               the output position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL,
@@ -934,16 +929,16 @@ class XYSession(XYSessionBase):
               the refinement tuple is omitted, data are written for all components and invariants (if
               applicable). This element is required if the location dictionary (the following element in the
               tuple) is included. The refinement tuple contains the following:
-              
+
               * Type: A SymbolicConstant specifying the type of refinement. Possible values are INVARIANT and COMPONENT.
               * Label: A String specifying the invariant or the component; for example, 'Mises' or 'S22'.
-              
+
             * Location: An optional Dictionary specifying the location. The
               dictionary contains pairs of the following:
-              
+
               * A String specifying the category selection label.
               * A String specifying the section point label.
-              
+
             For example::
 
                 variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )
@@ -973,11 +968,11 @@ class XYSession(XYSessionBase):
             name and a sequence of node expressions; for example,
             `(('partInstance1',(1,'7','3:15;3'),), ('partInstance2','8'),))`. The node expressions
             can be any of the following:
-            
+
             * An Int specifying a single node label; for example, `1`.
             * A String specifying a single node label; for example, `'7'`.
             * A String specifying a sequence of node labels; for example, `'3:5'` and `'3:15:3'`.
-            
+
         numericForm
             A SymbolicConstant specifying the numeric form in which to display results that contain
             complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY,
@@ -1045,16 +1040,14 @@ class XYSession(XYSessionBase):
             ...,
         ] = ...,
         deformedMag: Tuple[float, float, float] = (1, 1, 1),
-        numericForm: Literal[
-            C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, IMAGINARY, COMPLEX_VAL_AT_ANGLE
-        ] = REAL,
+        numericForm: Literal[C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, IMAGINARY, COMPLEX_VAL_AT_ANGLE] = REAL,
         complexAngle: float = 0,
         projectOntoMesh: Boolean = False,
         projectionTolerance: float = 0,
     ) -> XYData:
         """This method creates an XYData object from path information.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.XYDataFromPath
@@ -1095,7 +1088,7 @@ class XYSession(XYSessionBase):
             A tuple of tuples containing the descriptions of variables for which to extract data
             along the path. The default value is the current variable. Each tuple specifies the
             following:
-            
+
             * Variable label: A String specifying the variable; for example, 'U'.
             * Variable output position: A SymbolicConstant specifying the output position. Possible values are
               ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT,
@@ -1104,17 +1097,17 @@ class XYSession(XYSessionBase):
               for all components and invariants (if applicable). This element is required if the
               location dictionary (the following element in the tuple) is included. The refinement
               tuple contains the following:
-                
+
               * Type: A SymbolicConstant specifying the type of refinement. Possible values are INVARIANT
                 and COMPONENT.
               * Label: A String specifying the invariant or the component; for example, 'Mises' or 'S22'.
-            
+
             * Location: An optional Dictionary specifying the location. The dictionary contains pairs of the
               following:
-              
+
               * A String specifying the category selection label.
               * A String specifying the section point label.
-            
+
             For example::
 
                 variable = ('S', INTEGRATION_POINT, ((COMPONENT, 'S22'), ), )

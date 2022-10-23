@@ -10,7 +10,7 @@ from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 class Viscosity:
     """The Viscosity object specifies mechanical viscosity.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -46,7 +46,7 @@ class Viscosity:
     ):
         """This method creates a Viscosity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Viscosity

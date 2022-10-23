@@ -8,7 +8,7 @@ class Queue:
     """A :py:class:`~abaqus.Job.Queue.Queue` object tells the job where and how to submit a job remotely. A :py:class:`~abaqus.Job.Queue.Queue` object can
     be used as the **queue** argument to the Job method.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import job
@@ -69,7 +69,7 @@ class Queue:
         """This method creates a Queue object.
         Note:Remote queues are available only on Linux platforms.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.Queue
