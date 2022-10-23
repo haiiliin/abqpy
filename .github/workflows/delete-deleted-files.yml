@@ -5,6 +5,7 @@ on:
     branches:
     - 20**
     types: [opened, reopened, synchronize, labeled]
+    paths: ['src/**', 'docs/**', '.github/**']
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
