@@ -127,12 +127,7 @@ class BeadTask(OptimizationTask):
     def __init__(
         self,
         name: str,
-<<<<<<< HEAD
-        algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
-=======
-        abaqusSensitivities: Boolean = True,
         algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = GENERAL_OPTIMIZATION,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         areBCRegionsFrozen: Boolean = OFF,
         beadIter: str = 1,
         beadMaxMembraneStress: str = 0,
@@ -150,12 +145,7 @@ class BeadTask(OptimizationTask):
         nodeSmooth: Literal[C.DEFAULT] = DEFAULT,
         nodeUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = CONSERVATIVE,
         numTrackedModes: int = 5,
-<<<<<<< HEAD
-        updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
-=======
         updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method creates a BeadTask object.
 
@@ -237,12 +227,7 @@ class BeadTask(OptimizationTask):
     @abaqus_method_doc
     def setValues(
         self,
-<<<<<<< HEAD
-        algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
-=======
-        abaqusSensitivities: Boolean = True,
         algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = GENERAL_OPTIMIZATION,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         areBCRegionsFrozen: Boolean = OFF,
         beadIter: str = 1,
         beadMaxMembraneStress: str = 0,
@@ -260,12 +245,7 @@ class BeadTask(OptimizationTask):
         nodeSmooth: Literal[C.DEFAULT] = DEFAULT,
         nodeUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = CONSERVATIVE,
         numTrackedModes: int = 5,
-<<<<<<< HEAD
-        updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
-=======
         updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method modifies the BeadTask object.
 

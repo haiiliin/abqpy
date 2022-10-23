@@ -187,13 +187,8 @@ class TopologyTask(OptimizationTask):
     def __init__(
         self,
         name: str,
-<<<<<<< HEAD
         abaqusSensitivities: Boolean = True,
-        algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
-=======
-        abaqusSensitivities: Boolean = False,
         algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = GENERAL_OPTIMIZATION,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         densityMoveLimit: float = 0,
         densityUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
         elementDensityDeltaStopCriteria: float = 0,

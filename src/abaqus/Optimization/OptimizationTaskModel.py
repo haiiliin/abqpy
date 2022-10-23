@@ -30,12 +30,7 @@ class OptimizationTaskModel(ModelBase):
     def BeadTask(
         self,
         name: str,
-<<<<<<< HEAD
-        algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
-=======
-        abaqusSensitivities: Boolean = True,
         algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = GENERAL_OPTIMIZATION,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         areBCRegionsFrozen: Boolean = OFF,
         beadIter: str = 1,
         beadMaxMembraneStress: str = 0,
@@ -53,12 +48,7 @@ class OptimizationTaskModel(ModelBase):
         nodeSmooth: Literal[C.DEFAULT] = DEFAULT,
         nodeUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = CONSERVATIVE,
         numTrackedModes: int = 5,
-<<<<<<< HEAD
-        updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
-=======
         updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ) -> BeadTask:
         """This method creates a BeadTask object.
 
@@ -163,12 +153,7 @@ class OptimizationTaskModel(ModelBase):
     def ShapeTask(
         self,
         name: str,
-<<<<<<< HEAD
-        absoluteStepSizeControl: SymbolicConstant = MINIMUM,
-=======
-        abaqusSensitivities: Boolean = True,
         absoluteStepSizeControl: Literal[C.MINIMUM, C.AVERAGE] = MINIMUM,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         activateDurability: Boolean = ON,
         additionalDurabilityFiles: str = "",
         constrainedLaplacianConvergenceLevel: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
@@ -209,12 +194,7 @@ class OptimizationTaskModel(ModelBase):
         tetSkew: float = 100,
         triMaxAngle: float = 140,
         triMinAngle: float = 20,
-<<<<<<< HEAD
-        updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
-=======
         updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ) -> ShapeTask:
         """This method creates a ShapeTask object.
 
@@ -431,12 +411,7 @@ class OptimizationTaskModel(ModelBase):
         objectiveFunctionDeltaStopCriteria: float = 0,
         stopCriteriaDesignCycle: int = 4,
         thicknessMoveLimit: float = 0,
-<<<<<<< HEAD
-        thicknessUpdateStrategy: SymbolicConstant = NORMAL,
-=======
         thicknessUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ) -> SizingTask:
         """This method creates a SizingTask object.
 
@@ -503,12 +478,7 @@ class OptimizationTaskModel(ModelBase):
     def TopologyTask(
         self,
         name: str,
-<<<<<<< HEAD
-        algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
-=======
-        abaqusSensitivities: Boolean = True,
         algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = GENERAL_OPTIMIZATION,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         densityMoveLimit: float = 0,
         densityUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
         elementDensityDeltaStopCriteria: float = 0,

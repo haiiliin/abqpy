@@ -51,7 +51,7 @@ class Viscous:
     def __init__(
         self,
         table: tuple,
-        law: Literal[C.DARVEAUX, C.ANAND, C.TIME, C.POWER_LAW, C.USER, C.STRAIN, C.TIME_POWER_LAW, C.DOUBLE_POWER] = STRAIN,
+        law: Literal[C.TIME, C.POWER_LAW, C.USER, C.STRAIN] = STRAIN,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         time: Literal[C.TOTAL, C.CREEP] = TOTAL,
