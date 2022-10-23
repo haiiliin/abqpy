@@ -1,9 +1,11 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import AXIS_1, ROTATION_NONE, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -90,14 +92,14 @@ class CompositePly:
         region: Region,
         material: str,
         plyName: str,
-        orientationType: SymbolicConstant,
-        thicknessType: SymbolicConstant,
+        orientationType: Literal[C.ANGLE_45, C.ANGLE_0, C.CSYS, C.ANGLE_NEG45, C.SPECIFY_ORIENT, C.ANGLE_90],
+        thicknessType: Literal[C.FIELD_THICKNESS, C.ANALYTICAL_FIELD_THICKNESS, C.SPECIFY_THICKNESS],
         orientationValue: float = 0,
         thicknessField: str = "",
         numIntPts: int = 3,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
-        additionalRotationType: SymbolicConstant = ROTATION_NONE,
+        additionalRotationType: Literal[C.ROTATION_NONE, C.ANGLE_0, C.ROTATION_FIELD, C.ROTATION_ANGLE] = ROTATION_NONE,
         orientation: Optional[SymbolicConstant] = None,
         additionalRotationField: str = "",
     ):

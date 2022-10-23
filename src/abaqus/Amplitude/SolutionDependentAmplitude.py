@@ -1,7 +1,9 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Amplitude import Amplitude
 from ..UtilityAndView.abaqusConstants import STEP, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -49,7 +51,7 @@ class SolutionDependentAmplitude(Amplitude):
         initial: float = 1,
         minimum: float = 0,
         maximum: float = 1000,
-        timeSpan: SymbolicConstant = STEP,
+        timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
     ):
         """This method creates a SolutionDependentAmplitude object.
 
@@ -94,7 +96,7 @@ class SolutionDependentAmplitude(Amplitude):
         initial: float = 1,
         minimum: float = 0,
         maximum: float = 1000,
-        timeSpan: SymbolicConstant = STEP,
+        timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
     ):
         """This method modifies the SolutionDependentAmplitude object.
 

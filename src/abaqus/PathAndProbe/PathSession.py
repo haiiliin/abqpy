@@ -1,12 +1,13 @@
 from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Path import Path
 from .Spectrum import Spectrum
 from .Stream import Stream
 from ..Session.SessionBase import SessionBase
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -16,16 +17,16 @@ class PathSession(SessionBase):
     def Path(
         self,
         name: str,
-        type: SymbolicConstant,
+        type: Literal[C.EDGE_LIST, C.POINT_LIST, C.CIRCUMFERENTIAL, C.NODE_LIST, C.RADIAL],
         expression: tuple,
-        circleDefinition: SymbolicConstant,
+        circleDefinition: Literal[C.RADIAL, C.POINT_ARC, C.CIRCUMFERENTIAL, C.ORIGIN_AXIS],
         numSegments: int,
         startAngle: float,
         endAngle: float,
-        radius: Union[SymbolicConstant, float],
+        radius: Union[Literal[C.CIRCUMFERENTIAL, C.CIRCLE_RADIUS], float],
         radialAngle: float,
-        startRadius: Union[SymbolicConstant, float],
-        endRadius: Union[SymbolicConstant, float],
+        startRadius: Union[Literal[C.RADIAL, C.CIRCLE_RADIUS], float],
+        endRadius: Union[Literal[C.RADIAL, C.CIRCLE_RADIUS], float],
     ) -> Path:
         """This method creates a Path object.
 

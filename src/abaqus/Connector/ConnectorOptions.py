@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import Boolean, CONSTANT, LINEAR, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -109,9 +111,9 @@ class ConnectorOptions:
         regularization: float = 0,
         defaultRateFactor: Boolean = ON,
         rateFactor: float = 0,
-        interpolation: SymbolicConstant = LINEAR,
+        interpolation: Literal[C.LOGARITHMIC, C.LINEAR] = LINEAR,
         useBehExtSettings: Boolean = ON,
-        extrapolation: SymbolicConstant = CONSTANT,
+        extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT,
     ):
         """This method creates a connector options object to be used in conjunction with an
         allowable connector behavior option, derived component term, or connector section.

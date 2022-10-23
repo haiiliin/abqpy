@@ -1,11 +1,17 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Load import Load
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
+<<<<<<< HEAD
 from ..UtilityAndView.abaqusConstants import APPLY_FORCE, SymbolicConstant, UNSET
+=======
+from ..UtilityAndView.abaqusConstants import APPLY_FORCE, Boolean, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
 
 
 @abaqus_class_doc
@@ -45,7 +51,7 @@ class BoltLoad(Load):
         region: Region,
         magnitude: float,
         datumAxis: DatumAxis,
-        boltMethod: SymbolicConstant = APPLY_FORCE,
+        boltMethod: Literal[C.APPLY_FORCE, C.ADJUST_LENGTH] = APPLY_FORCE,
         amplitude: str = UNSET,
     ):
         """This method creates a BoltLoad object.
@@ -92,7 +98,7 @@ class BoltLoad(Load):
     @abaqus_method_doc
     def setValues(
         self,
-        boltMethod: SymbolicConstant = APPLY_FORCE,
+        boltMethod: Literal[C.APPLY_FORCE, C.ADJUST_LENGTH] = APPLY_FORCE,
         datumAxis: Optional[DatumAxis] = None, 
         amplitude: str = UNSET,
     ):
@@ -119,7 +125,7 @@ class BoltLoad(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        boltMethod: SymbolicConstant = APPLY_FORCE,
+        boltMethod: Literal[C.FIX_LENGTH, C.APPLY_FORCE, C.ADJUST_LENGTH] = APPLY_FORCE,
         magnitude: Optional[float] = None,
         amplitude: str = "",
     ):

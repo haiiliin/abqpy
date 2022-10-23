@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import LAGRANGIAN, SymbolicConstant, UNIFORM
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -93,9 +95,9 @@ class ConcentratedFilmCondition(Interaction):
         name: str,
         createStepName: str,
         region: Region,
-        definition: SymbolicConstant,
+        definition: Literal[C.EMBEDDED_COEFF, C.FIELD, C.USER_SUB, C.PROPERTY_REF],
         nodalArea: float = 1,
-        explicitRegionType: SymbolicConstant = LAGRANGIAN,
+        explicitRegionType: Literal[C.LAGRANGIAN, C.SLIDING, C.EULERIAN] = LAGRANGIAN,
         interactionProperty: str = "",
         field: str = "",
         sinkTemperature: float = 0,
@@ -103,7 +105,7 @@ class ConcentratedFilmCondition(Interaction):
         filmCoeff: float = 0,
         filmCoeffAmplitude: str = "",
         sinkFieldName: str = "",
-        sinkDistributionType: SymbolicConstant = UNIFORM,
+        sinkDistributionType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
     ):
         """This method creates a ConcentratedFilmCondition object.
 
@@ -181,7 +183,7 @@ class ConcentratedFilmCondition(Interaction):
     def setValues(
         self,
         nodalArea: float = 1,
-        explicitRegionType: SymbolicConstant = LAGRANGIAN,
+        explicitRegionType: Literal[C.LAGRANGIAN, C.SLIDING, C.EULERIAN] = LAGRANGIAN,
         interactionProperty: str = "",
         field: str = "",
         sinkTemperature: float = 0,
@@ -189,7 +191,7 @@ class ConcentratedFilmCondition(Interaction):
         filmCoeff: float = 0,
         filmCoeffAmplitude: str = "",
         sinkFieldName: str = "",
-        sinkDistributionType: SymbolicConstant = UNIFORM,
+        sinkDistributionType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
     ):
         """This method modifies the data for an existing ConcentratedFilmCondition object in the
         step where it is created.

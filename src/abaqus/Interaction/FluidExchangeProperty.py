@@ -1,7 +1,9 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .ContactProperty import ContactProperty
 from ..UtilityAndView.abaqusConstants import BULK_VISCOSITY, Boolean, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -101,7 +103,7 @@ class FluidExchangeProperty(ContactProperty):
         self,
         name: str,
         dataTable: tuple,
-        definition: SymbolicConstant = BULK_VISCOSITY,
+        definition: Literal[C.VOL_FLUX, C.VOL_RATE_LEAK, C.BULK_VISCOSITY, C.MASS_RATE_LEAK, C.MASS_FLUX] = BULK_VISCOSITY,
         pressureDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         fieldDependencies: int = 0,
@@ -194,7 +196,7 @@ class FluidExchangeProperty(ContactProperty):
     @abaqus_method_doc
     def setValues(
         self,
-        definition: SymbolicConstant = BULK_VISCOSITY,
+        definition: Literal[C.VOL_FLUX, C.VOL_RATE_LEAK, C.BULK_VISCOSITY, C.MASS_RATE_LEAK, C.MASS_FLUX] = BULK_VISCOSITY,
         pressureDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         fieldDependencies: int = 0,

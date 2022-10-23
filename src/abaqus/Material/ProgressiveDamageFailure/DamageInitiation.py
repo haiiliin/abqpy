@@ -253,7 +253,7 @@ class DamageInitiation:
     def DuctileDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.FLD, C.MSFLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -265,7 +265,7 @@ class DamageInitiation:
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -334,7 +334,7 @@ class DamageInitiation:
     def FldDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.FLD, C.MSFLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -346,7 +346,7 @@ class DamageInitiation:
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -415,7 +415,7 @@ class DamageInitiation:
     def FlsdDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.FLD, C.MSFLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -427,7 +427,7 @@ class DamageInitiation:
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -496,7 +496,7 @@ class DamageInitiation:
     def JohnsonCookDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.FLD, C.MSFLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -508,7 +508,7 @@ class DamageInitiation:
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -577,7 +577,7 @@ class DamageInitiation:
     def MaxeDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.FLD, C.MSFLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -589,8 +589,8 @@ class DamageInitiation:
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
-        position: SymbolicConstant = CENTROID,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
+        position: Literal[C.CRACKTIP, C.CENTROID, C.COMBINED] = CENTROID,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -662,7 +662,7 @@ class DamageInitiation:
     def MaxsDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.FLD, C.MSFLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -674,8 +674,8 @@ class DamageInitiation:
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
-        position: SymbolicConstant = CENTROID,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
+        position: Literal[C.CRACKTIP, C.CENTROID, C.COMBINED] = CENTROID,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -747,7 +747,7 @@ class DamageInitiation:
     def MkDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.FLD, C.MSFLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -759,7 +759,7 @@ class DamageInitiation:
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -828,7 +828,7 @@ class DamageInitiation:
     def MsfldDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.FLD, C.MSFLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -840,7 +840,7 @@ class DamageInitiation:
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -909,7 +909,7 @@ class DamageInitiation:
     def QuadeDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.FLD, C.MSFLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -921,8 +921,8 @@ class DamageInitiation:
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
-        position: SymbolicConstant = CENTROID,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
+        position: Literal[C.CRACKTIP, C.CENTROID, C.COMBINED] = CENTROID,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -994,7 +994,7 @@ class DamageInitiation:
     def QuadsDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.FLD, C.MSFLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -1006,8 +1006,8 @@ class DamageInitiation:
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
-        position: SymbolicConstant = CENTROID,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
+        position: Literal[C.CRACKTIP, C.CENTROID, C.COMBINED] = CENTROID,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -1079,7 +1079,7 @@ class DamageInitiation:
     def MaxpeDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.FLD, C.MSFLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -1091,8 +1091,8 @@ class DamageInitiation:
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
-        position: SymbolicConstant = CENTROID,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
+        position: Literal[C.CRACKTIP, C.CENTROID, C.COMBINED] = CENTROID,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -1164,7 +1164,7 @@ class DamageInitiation:
     def MaxpsDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.FLD, C.MSFLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -1176,8 +1176,8 @@ class DamageInitiation:
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
-        position: SymbolicConstant = CENTROID,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
+        position: Literal[C.CRACKTIP, C.CENTROID, C.COMBINED] = CENTROID,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -1249,7 +1249,7 @@ class DamageInitiation:
     def ShearDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.FLD, C.MSFLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -1261,7 +1261,7 @@ class DamageInitiation:
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
@@ -1330,7 +1330,7 @@ class DamageInitiation:
     def HashinDamageInitiation(
         self,
         table: tuple,
-        definition: SymbolicConstant = MSFLD,
+        definition: Literal[C.FLD, C.MSFLD] = MSFLD,
         feq: float = 10,
         fnn: float = 10,
         fnt: float = 10,
@@ -1342,7 +1342,7 @@ class DamageInitiation:
         alpha: float = 0,
         omega: float = 1,
         tolerance: float = 0,
-        direction: SymbolicConstant = NMORI,
+        direction: Literal[C.NMORI, C.TMORI] = NMORI,
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
