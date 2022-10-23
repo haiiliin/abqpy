@@ -8,7 +8,7 @@ class CombinedTestData:
     r"""The CombinedTestData object specifies simultaneously the normalized shear and bulk
     compliances or relaxation moduli as functions of time.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -19,13 +19,13 @@ class CombinedTestData:
         The table data for this object are:
 
         If **time** = RELAXATION_TEST_DATA, the table data specify the following:
-        
+
         - Normalized shear modulus, :math:`g_R(t)` (:math:`0\le g_R(t)\le 1`).
         - Normalized volumetric (bulk) modulus, :math:`k_R(t)` (:math:`0\le k_R(t)\le 1`).
         - Time :math:`t` (:math:`t>0`).
-            
+
         If **time** = CREEP_TEST_DATA, the table data specify the following:
-        
+
         - Normalized shear compliance, :math:`j_S(t)` (:math:`j_S(t)\ge 1`).
         - Normalized volumetric (bulk) compliance, :math:`j_K(t)` (:math:`j_K(t)\ge 1`).
         - Time :math:`t` (:math:`t>0`).
@@ -39,7 +39,7 @@ class CombinedTestData:
     def __init__(self, table: tuple, volinf: Optional[float] = None, shrinf: Optional[float] = None):
         r"""This method creates a CombinedTestData object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].viscoelastic.CombinedTestData

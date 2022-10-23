@@ -9,14 +9,12 @@ from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
 @abaqus_class_doc
 class CoincidentConstraint(ConstrainedSketchConstraint):
     @abaqus_method_doc
-    def __init__(
-        self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry
-    ):
+    def __init__(self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry):
         """This method creates a coincident constraint. This constraint applies to two vertices, to
         a vertex and a ConstrainedSketchGeometry object, or to two ConstrainedSketchGeometry
         objects of the same type and constrains them to be coincident.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].CoincidentConstraint

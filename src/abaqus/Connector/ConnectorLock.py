@@ -14,7 +14,7 @@ class ConnectorLock(ConnectorBehaviorOption):
     of a connector's relative motion.
     The ConnectorLock object is derived from the ConnectorBehaviorOption object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -68,7 +68,7 @@ class ConnectorLock(ConnectorBehaviorOption):
     ):
         """This method creates a connector lock behavior option for a ConnectorSection.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 import connectorBehavior

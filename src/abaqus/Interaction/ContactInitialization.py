@@ -7,7 +7,7 @@ class ContactInitialization:
     ContactInitialization objects. The ContactInitialization object has no explicit
     constructor, members, or methods.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction

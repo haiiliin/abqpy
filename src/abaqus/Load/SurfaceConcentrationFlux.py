@@ -15,7 +15,7 @@ class SurfaceConcentrationFlux(Load):
     into a region.
     The SurfaceConcentrationFlux object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -51,7 +51,7 @@ class SurfaceConcentrationFlux(Load):
     ):
         """This method creates a SurfaceConcentrationFlux object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceConcentrationFlux
@@ -115,9 +115,7 @@ class SurfaceConcentrationFlux(Load):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(
-        self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""
-    ):
+    def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
         """This method modifies the propagating data for an existing SurfaceConcentrationFlux
         object in the specified step.
 

@@ -3,8 +3,7 @@ from typing import Union
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (Boolean, FIT_TO_PAGE, INCHES, MEDIUM, ON, PORTRAIT,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import Boolean, FIT_TO_PAGE, INCHES, MEDIUM, ON, PORTRAIT, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _OptionsBase
 
@@ -15,11 +14,12 @@ class PageSetupOptions(_OptionsBase):
     Windows printer. The PageSetupOptions object has no constructor. Abaqus creates the
     **pageSetupOptions** member when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.pageSetupOptions
     """
+
     #: The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the width and height
     #: of the image in the units specified by **units**. Possible numeric values are **imageSize**
     #: ≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value

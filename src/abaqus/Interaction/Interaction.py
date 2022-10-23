@@ -1,5 +1,6 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class Interaction:
     """The Interaction object is the abstract base type for other Interaction objects. The
@@ -13,7 +14,7 @@ class Interaction:
     - delete
     The methods are described below.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction

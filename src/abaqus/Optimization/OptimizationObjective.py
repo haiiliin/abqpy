@@ -10,7 +10,7 @@ class OptimizationObjective:
     """An OptimizationObjective is an object used to define objectives in an objective
     function.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization

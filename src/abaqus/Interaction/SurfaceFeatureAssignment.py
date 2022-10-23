@@ -12,7 +12,7 @@ class SurfaceFeatureAssignment:
     definition for surfaces in ContactExp or ContactStd objects. The
     SurfaceFeatureAssignment object has no constructor or members.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -25,7 +25,10 @@ class SurfaceFeatureAssignment:
 
     @abaqus_method_doc
     def changeValuesInStep(
-        self, stepName: str, index: int, value: Union[Literal[C.GLOBAL, C.ALL, C.CURRENT, C.ORIGINAL, C.NONE, C.PICKED, C.PERIMETER], float]
+        self,
+        stepName: str,
+        index: int,
+        value: Union[Literal[C.GLOBAL, C.ALL, C.CURRENT, C.ORIGINAL, C.NONE, C.PICKED, C.PERIMETER], float],
     ):
         """This method allows modification of surface feature angle assignments already defined on
         surfaces in a given step.
@@ -42,7 +45,7 @@ class SurfaceFeatureAssignment:
             A tuple specifying the value of the surface feature assignments for the surface whose
             index is referenced. Each tuple contains two entries for Abaqus/Standard and three
             entries for Abaqus/Explicit:
-            
+
             - A Float or a SymbolicConstant specifying the overriding surface primary feature angle
               value to be used for the surface. Possible values of the SymbolicConstant are PERIMETER,
               ALL, PICKED, or NONE. The ALL and PICKED values cannot be specified with the GLOBAL
@@ -58,7 +61,9 @@ class SurfaceFeatureAssignment:
 
     @abaqus_method_doc
     def appendInStep(
-        self, stepName: str, assignments: Union[Literal[C.GLOBAL, C.ALL, C.CURRENT, C.ORIGINAL, C.NONE, C.PICKED, C.PERIMETER], float]
+        self,
+        stepName: str,
+        assignments: Union[Literal[C.GLOBAL, C.ALL, C.CURRENT, C.ORIGINAL, C.NONE, C.PICKED, C.PERIMETER], float],
     ):
         """This method allows addition of surface feature angle assignments to new surfaces in a
         given step.
@@ -71,7 +76,7 @@ class SurfaceFeatureAssignment:
         assignments
             A sequence of tuples specifying the surface feature angle assignments. Each tuple
             contains three entries for Abaqus/Standard and four entries for Abaqus/Explicit:
-            
+
             - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
               feature angle is assigned.
             - A Float or a SymbolicConstant specifying the overriding surface primary feature angle

@@ -14,7 +14,7 @@ class DrillControl(GeometricRestriction):
     """The DrillControl object defines a drill control geometric restriction.
     The DrillControl object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -87,7 +87,7 @@ class DrillControl(GeometricRestriction):
     ):
         """This method creates a DrillControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].DrillControl

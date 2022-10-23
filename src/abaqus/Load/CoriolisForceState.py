@@ -14,7 +14,7 @@ class CoriolisForceState(LoadState):
     The CoriolisForceState object has no constructor or methods.
     The CoriolisForceState object is derived from the LoadState object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -38,7 +38,7 @@ class CoriolisForceState(LoadState):
 
     #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
     #: values are:
-    #: 
+    #:
     #: - NOT_YET_ACTIVE
     #: - CREATED
     #: - PROPAGATED

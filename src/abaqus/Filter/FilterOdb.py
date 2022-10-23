@@ -16,7 +16,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class FilterOdb(OdbBase):
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -36,7 +36,7 @@ class FilterOdb(OdbBase):
     ) -> ButterworthFilter:
         """This method creates a ButterworthFilter object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ButterworthFilter
@@ -97,7 +97,7 @@ class FilterOdb(OdbBase):
     ) -> Chebyshev1Filter:
         """This method creates a Chebyshev1Filter object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Chebyshev1Filter
@@ -168,7 +168,7 @@ class FilterOdb(OdbBase):
     ) -> Chebyshev2Filter:
         """This method creates a Chebyshev2Filter object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Chebyshev2Filter
@@ -238,7 +238,7 @@ class FilterOdb(OdbBase):
     ) -> OperatorFilter:
         """This method creates an OperatorFilter object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].OperatorFilter

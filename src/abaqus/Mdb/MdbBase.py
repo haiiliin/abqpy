@@ -14,15 +14,16 @@ from ..Job.ModelJob import ModelJob
 from ..Job.OptimizationProcess import OptimizationProcess
 from ..Model.Model import Model
 
-if TYPE_CHECKING: # to avoid circular imports
+if TYPE_CHECKING:  # to avoid circular imports
     from .Mdb import Mdb
+
 
 @abaqus_class_doc
 class MdbBase:
     """The Mdb object is the high-level Abaqus model database. A model database stores models
     and analysis controls.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb
@@ -61,7 +62,7 @@ class MdbBase:
     def __init__(self, pathName: str = ""):
         """This constructor creates an empty Mdb object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 Mdb
@@ -88,7 +89,7 @@ class MdbBase:
         (AutoCAD) geometry. Only a limited number of entities are supported. This format should
         be used only if no other formats are available.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 Mdb
@@ -109,7 +110,7 @@ class MdbBase:
     def openMdb(self, pathName: str) -> Mdb:
         """This method opens an existing model database file.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 Mdb
@@ -223,7 +224,7 @@ class MdbBase:
     def closeAuxMdb(self):
         """This method closes the auxiliary Mdb which had been opened earlier using the openAuxMdb
         command.
-        
+
         Parameters
         ----------
         MdbError

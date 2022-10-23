@@ -23,7 +23,7 @@ Abaqus/CAE preferences file, abaqus_2021.gpr.
 def getGuiPrefsFileName() -> str:
     """This function enables you to retrieve the location of your abaqus_2021.gpr file.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             caePrefsAccess.getGuiPrefsFileName
@@ -43,7 +43,7 @@ def getDisplayNamesInGuiPreferences(fileName: str) -> List[str]:
     you use. This function returns a list of every displayName recorded in the preferences
     file.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             caePrefsAccess.getDisplayNamesInGuiPreferences
@@ -71,7 +71,7 @@ def printValuesList(
     """This function enables you to print all of the options and their values for a set of
     guiPreferences or sessionOptions settings derived from the abaqus_2021.gpr file.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             caePrefsAccess.printValuesList
@@ -105,7 +105,7 @@ def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
     graphical user interface. Abaqus stores preferences for each display you use in a
     separate guiPreferences section of the abaqus_2021.gpr file.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             caePrefsAccess.openGuiPreferences
@@ -131,15 +131,13 @@ def openGuiPreferences(displayName: str, fileName: str = "") -> CaeGuiPrefs:
 
 
 @abaqus_function_doc
-def openSessionOptions(
-    fileName: str = "", directory: Literal[C.CURRENT, C.HOME] = HOME
-) -> CaeKerPrefs:
+def openSessionOptions(fileName: str = "", directory: Literal[C.CURRENT, C.HOME] = HOME) -> CaeKerPrefs:
     """This function enables you to examine and change the default behavior for many session
     options Abaqus/CAE; that is, the settings that you can save in Abaqus/CAE from the
     FileSave Display ConstrainedSketchOptions menu option. Abaqus stores default session options in the
     sessionOptions section of the abaqus_2021.gpr file.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             caePrefsAccess.openSessionOptions
@@ -169,5 +167,5 @@ def openSessionOptions(
         A :py:class:`~abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs` object.
     """
     if fileName and directory:
-        raise TypeError('fileName and directory arguments are mutually exclusive')
+        raise TypeError("fileName and directory arguments are mutually exclusive")
     return CaeKerPrefs()

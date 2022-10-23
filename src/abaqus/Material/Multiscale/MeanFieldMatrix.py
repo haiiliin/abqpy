@@ -24,9 +24,7 @@ class MeanFieldMatrix:
     """
 
     @abaqus_method_doc
-    def __init__(
-        self, name: str, material: str = "", isotropizationCoefficient: Optional[float] = None
-    ):
+    def __init__(self, name: str, material: str = "", isotropizationCoefficient: Optional[float] = None):
         """This method creates a MeanFieldMatrix object.
 
         .. note::

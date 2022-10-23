@@ -14,12 +14,13 @@ class QuickTimeOptions(_OptionsBase):
     generating QuickTime animation. The QuickTimeOptions object has no constructor. Abaqus
     creates the **quickTimeOptions** member when the animation module is imported.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import animation
             session.quickTimeOptions
     """
+
     #: A SymbolicConstant specifying the compression method for the QuickTime format. Possible
     #: values are:
     #:
@@ -59,10 +60,10 @@ class QuickTimeOptions(_OptionsBase):
         compressionMethod
             A SymbolicConstant specifying the compression method for the QuickTime format. Possible
             values are:
-            
+
             - RAW24, specifying an uncompressed format of 24 bits per pixel.
             - RLE24, specifying a run length encoded format of 24 bits per pixel.
-            
+
             The default value is RLE24.
         sizeDefinition
             A SymbolicConstant specifying how the width and height of the image are specified.

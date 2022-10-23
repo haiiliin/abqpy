@@ -13,7 +13,7 @@ class CohesiveSection(Section):
     """The CohesiveSection object defines the properties of a cohesive section.
     The CohesiveSection object is derived from the Section object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -58,15 +58,13 @@ class CohesiveSection(Section):
         name: str,
         response: Literal[C.TRACTION_SEPARATION, C.CONTINUUM, C.GASKET],
         material: str,
-        initialThicknessType: Literal[
-            C.SOLVER_DEFAULT, C.GEOMETRY, C.SPECIFY
-        ] = SOLVER_DEFAULT,
+        initialThicknessType: Literal[C.SOLVER_DEFAULT, C.GEOMETRY, C.SPECIFY] = SOLVER_DEFAULT,
         initialThickness: float = 1,
         outOfPlaneThickness: Optional[float] = None,
     ) -> None:
         """This method creates a CohesiveSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CohesiveSection
@@ -109,9 +107,7 @@ class CohesiveSection(Section):
     @abaqus_method_doc
     def setValues(
         self,
-        initialThicknessType: Literal[
-            C.SOLVER_DEFAULT, C.GEOMETRY, C.SPECIFY
-        ] = SOLVER_DEFAULT,
+        initialThicknessType: Literal[C.SOLVER_DEFAULT, C.GEOMETRY, C.SPECIFY] = SOLVER_DEFAULT,
         initialThickness: float = 1,
         outOfPlaneThickness: Optional[float] = None,
     ) -> None:

@@ -12,7 +12,7 @@ class DatumAxis(Datum):
     creates a DatumAxis object.
     The DatumAxis object is derived from the Datum object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

@@ -1,8 +1,14 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (CURRENT, ELEMENT_CENTER_PROJECTION, GEOMETRY_ENHANCED,
-                                              SECOND_ORDER_ADVECTION, SymbolicConstant, UNIFORM)
+from ..UtilityAndView.abaqusConstants import (
+    CURRENT,
+    ELEMENT_CENTER_PROJECTION,
+    GEOMETRY_ENHANCED,
+    SECOND_ORDER_ADVECTION,
+    SymbolicConstant,
+    UNIFORM,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -12,7 +18,7 @@ class AdaptiveMeshControl:
     Lagrangian Eularian (ALE) style adaptive smoothing and advection algorithms applied to
     an ALE adaptive mesh domain.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -101,7 +107,7 @@ class AdaptiveMeshControl:
     ):
         r"""This method creates an AdaptiveMeshControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AdaptiveMeshControl

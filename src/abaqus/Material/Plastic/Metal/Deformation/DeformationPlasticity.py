@@ -7,7 +7,7 @@ from .....UtilityAndView.abaqusConstants import Boolean, OFF
 class DeformationPlasticity:
     r"""The DeformationPlasticity object specifies the deformation plasticity model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -33,7 +33,7 @@ class DeformationPlasticity:
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF):
         """This method creates a DeformationPlasticity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].DeformationPlasticity

@@ -12,7 +12,7 @@ class Drawing:
     """A drawing is the container for a geometric object. The Drawing object stores the vertex
     data and various settings that determine how the drawing will be displayed.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.drawings[name]
@@ -93,7 +93,7 @@ class Drawing:
     def __init__(self, name: str):
         """This method creates an empty Drawing object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.Drawing
@@ -196,7 +196,7 @@ class Drawing:
 
         Returns
         -------
-        int 
+        int
             The number of colors described.
 
         Raises
@@ -257,7 +257,17 @@ class Drawing:
     @abaqus_method_doc
     def addArrayDraw(
         self,
-        type: Literal[C.LINE_LOOP, C.TRIANGLE_FAN, C.LINES, C.TRIANGLES, C.TRIANGLE_STRIP, C.QUAD_STRIP, C.LINE_STRIP, C.QUADS, C.POINTS],
+        type: Literal[
+            C.LINE_LOOP,
+            C.TRIANGLE_FAN,
+            C.LINES,
+            C.TRIANGLES,
+            C.TRIANGLE_STRIP,
+            C.QUAD_STRIP,
+            C.LINE_STRIP,
+            C.QUADS,
+            C.POINTS,
+        ],
         startIndex: int,
         numVertices: int,
         polygonMode: Literal[C.EDGES, C.POINTS, C.FILL] = FILL,
@@ -304,7 +314,17 @@ class Drawing:
     @abaqus_method_doc
     def addIndexDraw(
         self,
-        type: Literal[C.LINE_LOOP, C.TRIANGLE_FAN, C.LINES, C.TRIANGLES, C.TRIANGLE_STRIP, C.QUAD_STRIP, C.LINE_STRIP, C.QUADS, C.POINTS],
+        type: Literal[
+            C.LINE_LOOP,
+            C.TRIANGLE_FAN,
+            C.LINES,
+            C.TRIANGLES,
+            C.TRIANGLE_STRIP,
+            C.QUAD_STRIP,
+            C.LINE_STRIP,
+            C.QUADS,
+            C.POINTS,
+        ],
         indices: tuple,
         polygonMode: Literal[C.EDGES, C.POINTS, C.FILL] = FILL,
     ):
@@ -328,7 +348,7 @@ class Drawing:
 
         Returns
         -------
-        int 
+        int
             The total number of rendering commands that have been specified.
 
         Raises

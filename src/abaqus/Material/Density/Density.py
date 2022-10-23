@@ -9,7 +9,7 @@ from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 class Density:
     """The Density object specifies the material density.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -36,14 +36,12 @@ class Density:
         table: tuple,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        distributionType: Literal[
-            C.UNIFORM, C.ANALYTICAL_FIELD, C.DISCRETE_FIELD
-        ] = UNIFORM,
+        distributionType: Literal[C.UNIFORM, C.ANALYTICAL_FIELD, C.DISCRETE_FIELD] = UNIFORM,
         fieldName: str = "",
     ):
         """This method creates a Density object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Density

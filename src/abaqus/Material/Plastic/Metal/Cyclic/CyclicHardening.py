@@ -8,7 +8,7 @@ class CyclicHardening:
     r"""The CyclicHardening object defines the evolution of the elastic domain for the nonlinear
     isotropic/kinematic hardening model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -41,7 +41,7 @@ class CyclicHardening:
     ):
         """This method creates a CyclicHardening object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Plastic.CyclicHardening

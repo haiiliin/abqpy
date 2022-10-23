@@ -1,10 +1,11 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class Stream:
     """TheStream object defines a set of streamlines in fluid mechanics.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -22,7 +23,7 @@ class Stream:
     ):
         """This method creates aStream object and places it in the streams repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.Stream

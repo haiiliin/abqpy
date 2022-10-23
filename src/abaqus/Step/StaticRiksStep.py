@@ -18,8 +18,15 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import (AUTOMATIC, Boolean, LINEAR, OFF, PROPAGATED,
-                                              SOLVER_DEFAULT, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    AUTOMATIC,
+    Boolean,
+    LINEAR,
+    OFF,
+    PROPAGATED,
+    SOLVER_DEFAULT,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -29,7 +36,7 @@ class StaticRiksStep(AnalysisStep):
     static load step using the modified Riks method for proportional loading cases.
     The StaticRiksStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -144,7 +151,7 @@ class StaticRiksStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -247,7 +254,7 @@ class StaticRiksStep(AnalysisStep):
     ):
         """This method creates a StaticRiksStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].StaticRiksStep

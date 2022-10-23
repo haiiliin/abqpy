@@ -10,7 +10,7 @@ class MasterSlaveAssignment:
     surfaces in ContactExp and ContactStd objects. The MasterSlaveAssignment object has no
     constructor or members.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -54,7 +54,7 @@ class MasterSlaveAssignment:
         assignments
             A sequence of tuples specifying the master-slave assignments. Each tuple contains two
             entries:
-            
+
             - A region object or the SymbolicConstant GLOBAL specifying the surface to which the
               master-slave attribute is assigned.
             - A SymbolicConstant specifying the overriding master-slave value to be used for the

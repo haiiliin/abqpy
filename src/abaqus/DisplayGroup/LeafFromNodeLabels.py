@@ -14,7 +14,7 @@ class LeafFromNodeLabels(Leaf):
     commands.
     The LeafFromNodeLabels object is derived from the Leaf object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import displayGroupOdbToolset
@@ -38,7 +38,7 @@ class LeafFromNodeLabels(Leaf):
         """This method creates a Leaf object from a sequence of node labels that belong to a single
         part instance.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 LeafFromNodeLabels

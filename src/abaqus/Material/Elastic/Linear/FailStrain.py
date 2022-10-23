@@ -7,7 +7,7 @@ from ....UtilityAndView.abaqusConstants import Boolean, OFF
 class FailStrain:
     r"""The FailStrain object defines parameters for strain-based failure measures.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -16,7 +16,7 @@ class FailStrain:
             session.odbs[name].materials[name].elastic.failStrain
 
         The table data for this object are:
-        
+
         - Tensile strain limit in fiber direction, :math:`X_{\varepsilon t}`.
         - Compressive strain limit in fiber direction, :math:`X_{\varepsilon c}`.
         - Tensile strain limit in transverse direction, :math:`Y_{\varepsilon t}`,
@@ -33,12 +33,10 @@ class FailStrain:
     """
 
     @abaqus_method_doc
-    def __init__(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ):
+    def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a FailStrain object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].elastic.FailStrain

@@ -10,7 +10,7 @@ class DruckerPragerHardening:
     r"""The DruckerPragerHardening object specifies hardening for Drucker-Prager plasticity
     models.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -23,7 +23,7 @@ class DruckerPragerHardening:
         - Yield stress.
         - Absolute value of the corresponding plastic strain. (The first tabular value
           entered must always be zero.)
-        - Equivalent plastic strain rate, :math:`\dot{\bar{\varepsilon}}{ }^{p l}`, for which this 
+        - Equivalent plastic strain rate, :math:`\dot{\bar{\varepsilon}}{ }^{p l}`, for which this
           hardening curve applies.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
@@ -46,30 +46,30 @@ class DruckerPragerHardening:
     ):
         """This method creates a DruckerPragerHardening object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].druckerPrager.DruckerPragerHardening
                     session.odbs[name].materials[name].druckerPrager.DruckerPragerHardening
-            
+
         Parameters
         ----------
         table
-            A sequence of sequences of Floats specifying the items described below. 
+            A sequence of sequences of Floats specifying the items described below.
         type
-            A SymbolicConstant specifying the type of data defining the hardening behavior. Possible 
-            values are COMPRESSION, TENSION, and SHEAR. The default value is COMPRESSION. 
+            A SymbolicConstant specifying the type of data defining the hardening behavior. Possible
+            values are COMPRESSION, TENSION, and SHEAR. The default value is COMPRESSION.
         rate
-            A Boolean specifying whether the data depend on rate. The default value is OFF. 
+            A Boolean specifying whether the data depend on rate. The default value is OFF.
         temperatureDependency
-            A Boolean specifying whether the data depend on temperature. The default value is OFF. 
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies
-            An Int specifying the number of field variable dependencies. The default value is 0. 
+            An Int specifying the number of field variable dependencies. The default value is 0.
 
         Returns
         -------
         DruckerPragerHardening
-            A :py:class:`~abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening` object. 
+            A :py:class:`~abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening` object.
 
         Raises
         ------

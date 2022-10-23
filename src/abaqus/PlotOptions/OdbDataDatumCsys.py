@@ -9,7 +9,7 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 class OdbDataDatumCsys:
     """The OdbDataDatumCsys object stores coordinate system data.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

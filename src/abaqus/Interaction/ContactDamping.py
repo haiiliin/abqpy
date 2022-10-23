@@ -11,7 +11,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class ContactDamping:
     """The ContactDamping object specifies damping for a contact interaction property.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -20,7 +20,7 @@ class ContactDamping:
         The table data for this object are:
 
         - If **definition** = DAMPING_COEFFICIENT and **clearanceDependence** = STEP, the table data specify the following:
-        
+
             - Damping coefficient.
 
         - If **definition** = DAMPING_COEFFICIENT and **clearanceDependence** = LINEAR or BILINEAR, the table data specify the following:
@@ -30,7 +30,7 @@ class ContactDamping:
 
             Two pairs must be given for **clearanceDependence** = LINEAR and three pairs for **clearanceDependence** = BILINEAR. The first pair must have **clearance** = 0.0, and the last pair must have **coefficient** = 0.0.
         - If **definition** = CRITICAL_DAMPING_FRACTION, the table data specify the following:
-        
+
             - Critical damping fraction.
 
         The corresponding analysis keywords are:
@@ -66,7 +66,7 @@ class ContactDamping:
     ):
         """This method creates a ContactDamping object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].interactionProperties[name].Damping

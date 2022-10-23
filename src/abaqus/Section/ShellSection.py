@@ -13,7 +13,7 @@ class ShellSection(Section):
     constructor and no methods or members.
     The ShellSection object is derived from the Section object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section

@@ -10,7 +10,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class ObjectiveFunction:
     """The ObjectiveFunction object defines the objective of the optimization.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -39,7 +39,7 @@ class ObjectiveFunction:
     ):
         """This method creates an ObjectiveFunction object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ObjectiveFunction

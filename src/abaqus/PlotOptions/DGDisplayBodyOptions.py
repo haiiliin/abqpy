@@ -2,8 +2,7 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
 
-from ..UtilityAndView.abaqusConstants import (Boolean, EXTERIOR, OFF, ON, SOLID, SymbolicConstant,
-                                              VERY_THIN)
+from ..UtilityAndView.abaqusConstants import Boolean, EXTERIOR, OFF, ON, SOLID, SymbolicConstant, VERY_THIN
 
 
 @abaqus_class_doc
@@ -13,7 +12,7 @@ class DGDisplayBodyOptions:
     *odbDisplayOptions.displayBodyOptions* member when a display group instance is created,
     using values from *odbDisplay.displayBodyOptions*.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.displayBodyOptions

@@ -11,7 +11,7 @@ class InteractionState:
     objects. The InteractionState object has no explicit constructor. The members of the
     InteractionState object are common to all objects derived from InteractionState.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -20,7 +20,7 @@ class InteractionState:
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:
-    #: 
+    #:
     #: - NOT_YET_ACTIVE
     #: - CREATED
     #: - PROPAGATED

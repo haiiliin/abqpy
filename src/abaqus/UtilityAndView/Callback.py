@@ -10,7 +10,7 @@ def addImportCallback(moduleName: str, callback: str, userData: str = ""):
     imported. You cannot specify a custom module.
     For more information, see An example of a callback function.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             addImportCallback
@@ -33,7 +33,7 @@ def addImportCallback(moduleName: str, callback: str, userData: str = ""):
 def removeImportCallback(callback: str, userData: str):
     """This function removes a callback added in addImportCallback.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             removeImportCallback

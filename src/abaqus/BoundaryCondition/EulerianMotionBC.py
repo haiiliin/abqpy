@@ -15,7 +15,7 @@ class EulerianMotionBC(BoundaryCondition):
     condition.
     The EulerianMotionBC object is derived from the BoundaryCondition object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -169,7 +169,7 @@ class EulerianMotionBC(BoundaryCondition):
     ):
         """This method creates an EulerianMotionBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EulerianMotionBC

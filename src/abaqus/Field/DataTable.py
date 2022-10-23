@@ -7,7 +7,7 @@ from abqpy.decorators import abaqus_class_doc
 class DataTable:
     """A DataTable is an object used to define the domain and data for a DiscreteField.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import field

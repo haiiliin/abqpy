@@ -9,7 +9,7 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 class HistoryVariable:
     """The HistoryVariable object stores history data.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

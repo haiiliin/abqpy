@@ -161,9 +161,7 @@ class MeanFieldHomogenization:
         )
 
     @abaqus_method_doc
-    def MeanFieldMatrix(
-        self, name: str, material: str = "", isotropizationCoefficient: Optional[float] = None
-    ):
+    def MeanFieldMatrix(self, name: str, material: str = "", isotropizationCoefficient: Optional[float] = None):
         """This method creates a MeanFieldMatrix object.
 
         .. note::

@@ -10,7 +10,7 @@ class PlyStackPlot:
     """The PlyStackPlot object is used to plot the stacking of plies in a composite layup or in
     a composite shell section.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -23,7 +23,7 @@ def MdbPlyStackPlot(part: Part, region: Region) -> PlyStackPlot:
     """This method creates a PlyStackPlot object from a region of a part that contains a
     composite shell layup.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             section.MdbPlyStackPlot
@@ -52,7 +52,7 @@ def OdbPlyStackPlot(odb: Odb, sectionName: str, offset: float = 0):
     """This method creates a PlyStackPlot object from a composite shell section of an Odb
     object.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             visualization.OdbPlyStackPlot

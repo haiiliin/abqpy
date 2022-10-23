@@ -9,7 +9,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 class Cell:
     """Cells are volumetric regions of geometry.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

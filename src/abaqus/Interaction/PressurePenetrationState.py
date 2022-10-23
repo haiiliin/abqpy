@@ -15,7 +15,7 @@ class PressurePenetrationState(InteractionState):
     The PressurePenetrationState object has no constructor or methods.
     The PressurePenetrationState object is derived from the InteractionState object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -61,7 +61,7 @@ class PressurePenetrationState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:
-    #: 
+    #:
     #: - NOT_YET_ACTIVE
     #: - CREATED
     #: - PROPAGATED

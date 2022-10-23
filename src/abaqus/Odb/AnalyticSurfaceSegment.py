@@ -9,7 +9,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class AnalyticSurfaceSegment:
     """An individual segment of the analytic surface.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -34,7 +34,7 @@ class AnalyticSurfaceSegment:
     def __init__(self, type: Literal[C.CIRCLE, C.START, C.LINE, C.PARABOLA], data: tuple):
         """This method creates an AnalyticSurfaceSegment object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 odbAccess.AnalyticSurfaceSegment

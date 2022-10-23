@@ -4,8 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from ..PlotOptions.DGDisplayBodyOptions import DGDisplayBodyOptions
-from ..UtilityAndView.abaqusConstants import (Boolean, EXTERIOR, OFF, ON, SOLID, SymbolicConstant,
-                                              VERY_THIN)
+from ..UtilityAndView.abaqusConstants import Boolean, EXTERIOR, OFF, ON, SOLID, SymbolicConstant, VERY_THIN
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -25,7 +24,7 @@ class DisplayBodyOptions(DGDisplayBodyOptions):
     - The display body options associated with a particular viewport.
     The DisplayBodyOptions object is derived from the DGDisplayBodyOptions object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

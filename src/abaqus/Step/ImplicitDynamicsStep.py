@@ -17,9 +17,19 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import (ANALYSIS_PRODUCT_DEFAULT, AUTOMATIC, Boolean, DEFAULT,
-                                              FULL_NEWTON, OFF, PROPAGATED, SOLVER_DEFAULT, STEP,
-                                              SymbolicConstant, VALUE)
+from ..UtilityAndView.abaqusConstants import (
+    ANALYSIS_PRODUCT_DEFAULT,
+    AUTOMATIC,
+    Boolean,
+    DEFAULT,
+    FULL_NEWTON,
+    OFF,
+    PROPAGATED,
+    SOLVER_DEFAULT,
+    STEP,
+    SymbolicConstant,
+    VALUE,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -30,7 +40,7 @@ class ImplicitDynamicsStep(AnalysisStep):
     nonlinear cases.
     The ImplicitDynamicsStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -157,7 +167,7 @@ class ImplicitDynamicsStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -240,7 +250,9 @@ class ImplicitDynamicsStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
-        application: Literal[C.ANALYSIS_PRODUCT_DEFAULT, C.QUASI_STATIC, C.TRANSIENT_FIDELITY, C.MODERATE_DISSIPATION] = ANALYSIS_PRODUCT_DEFAULT,
+        application: Literal[
+            C.ANALYSIS_PRODUCT_DEFAULT, C.QUASI_STATIC, C.TRANSIENT_FIDELITY, C.MODERATE_DISSIPATION
+        ] = ANALYSIS_PRODUCT_DEFAULT,
         adiabatic: Boolean = OFF,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
@@ -254,7 +266,9 @@ class ImplicitDynamicsStep(AnalysisStep):
         amplitude: Literal[C.STEP, C.RAMP] = STEP,
         alpha: Union[Literal[C.DEFAULT], float] = DEFAULT,
         initialConditions: Literal[C.BYPASS, C.DEFAULT, C.ALLOW] = DEFAULT,
-        extrapolation: Literal[C.ANALYSIS_PRODUCT_DEFAULT, C.PARABOLIC, C.VELOCITY_PARABOLIC, C.NONE, C.LINEAR] = ANALYSIS_PRODUCT_DEFAULT,
+        extrapolation: Literal[
+            C.ANALYSIS_PRODUCT_DEFAULT, C.PARABOLIC, C.VELOCITY_PARABOLIC, C.NONE, C.LINEAR
+        ] = ANALYSIS_PRODUCT_DEFAULT,
         noStop: Boolean = OFF,
         maintainAttributes: Boolean = False,
         solutionTechnique: Literal[C.QUASI_NEWTON, C.FULL_NEWTON] = FULL_NEWTON,
@@ -263,7 +277,7 @@ class ImplicitDynamicsStep(AnalysisStep):
     ):
         """This method creates an ImplicitDynamicsStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ImplicitDynamicsStep
@@ -371,7 +385,9 @@ class ImplicitDynamicsStep(AnalysisStep):
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
         matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
-        application: Literal[C.ANALYSIS_PRODUCT_DEFAULT, C.QUASI_STATIC, C.TRANSIENT_FIDELITY, C.MODERATE_DISSIPATION] = ANALYSIS_PRODUCT_DEFAULT,
+        application: Literal[
+            C.ANALYSIS_PRODUCT_DEFAULT, C.QUASI_STATIC, C.TRANSIENT_FIDELITY, C.MODERATE_DISSIPATION
+        ] = ANALYSIS_PRODUCT_DEFAULT,
         adiabatic: Boolean = OFF,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
@@ -385,7 +401,9 @@ class ImplicitDynamicsStep(AnalysisStep):
         amplitude: Literal[C.STEP, C.RAMP] = STEP,
         alpha: Union[Literal[C.DEFAULT], float] = DEFAULT,
         initialConditions: Literal[C.BYPASS, C.DEFAULT, C.ALLOW] = DEFAULT,
-        extrapolation: Literal[C.ANALYSIS_PRODUCT_DEFAULT, C.PARABOLIC, C.VELOCITY_PARABOLIC, C.NONE, C.LINEAR] = ANALYSIS_PRODUCT_DEFAULT,
+        extrapolation: Literal[
+            C.ANALYSIS_PRODUCT_DEFAULT, C.PARABOLIC, C.VELOCITY_PARABOLIC, C.NONE, C.LINEAR
+        ] = ANALYSIS_PRODUCT_DEFAULT,
         noStop: Boolean = OFF,
         solutionTechnique: Literal[C.QUASI_NEWTON, C.FULL_NEWTON] = FULL_NEWTON,
         reformKernel: int = 8,

@@ -13,7 +13,7 @@ class PointMassInertia(Inertia):
     an assembly region.
     The PointMassInertia object is derived from the Inertia object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -107,7 +107,7 @@ class PointMassInertia(Inertia):
     ):
         """This method creates a PointMassInertia object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.PointMassInertia

@@ -94,7 +94,7 @@ class FieldState(PredefinedFieldState):
     #: A tuple of Floats specifying the field values when **distributionType** = UNIFORM or
     #: **distributionType** = FIELD. The value of the **magnitudes** argument is a function of the
     #: **crossSectionDistribution** argument, as shown in the following list:
-    #: 
+    #:
     #: - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS, **magnitudes** is a Double
     #:   specifying the field.
     #: - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, **magnitudes** is a sequence
@@ -122,7 +122,7 @@ class FieldState(PredefinedFieldState):
     #: - BUILT_INTO_BASE_STATE
     #: - TYPE_NOT_APPLICABLE
     #: - INSTANCE_NOT_APPLICABLE
-    #: 
+    #:
     #: This member exists in all PredefinedFieldState objects, but different predefined fields
     #: use different subsets of the entire list of possible values depending on propagation
     #: rules.

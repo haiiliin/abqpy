@@ -14,7 +14,7 @@ class ConnectorOrientation:
     """The ConnectorOrientation object is used to assign a connector orientation to a
     connector.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import assembly
@@ -77,7 +77,7 @@ class ConnectorOrientation:
     ):
         """This method creates a ConnectorOrientation object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].rootAssembly.ConnectorOrientation

@@ -12,7 +12,7 @@ class BrittleCracking:
     """The BrittleCracking object specifies cracking and postcracking properties for the
     brittle cracking material model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -23,7 +23,7 @@ class BrittleCracking:
         The table data for this object are:
 
         - If **type** = STRAIN the table data specify the following:
-        
+
             - Remaining direct stress after cracking.
             - Direct cracking strain.
             - Temperature, if the data depend on temperature.
@@ -31,7 +31,7 @@ class BrittleCracking:
             - Value of the second field variable.
             - Etc.
         - If **type** = DISPLACEMENT the table data specify the following:
-        
+
             - Remaining direct stress after cracking.
             - Direct cracking displacement.
             - Temperature, if the data depend on temperature.
@@ -39,7 +39,7 @@ class BrittleCracking:
             - Value of the second field variable.
             - Etc.
         - If **type** = GFI the table data specify the following:
-        
+
             - Failure stress.
             - Mode I fracture energy.
             - Temperature, if the data depend on temperature.
@@ -68,7 +68,7 @@ class BrittleCracking:
     ):
         """This method creates a BrittleCracking object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].BrittleCracking

@@ -12,7 +12,7 @@ class InertiaRelief(Load):
     """The InertiaRelief object defines an inertia relief load.
     The InertiaRelief object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -47,7 +47,7 @@ class InertiaRelief(Load):
     ):
         """This method creates an InertiaRelief object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].InertiaRelief
@@ -172,7 +172,7 @@ class InertiaRelief(Load):
             A sequence of Floats specifying the point about which rotations are defined. The point
             can be specified only for certain combinations of free directions. The **referencePoint**
             argument can be one of the following:
-            
+
             - The **X**, **Y** and **Z**-coordinates of a fixed rotation point.
             - A point on the rotation axis.
             - A point on the symmetry line.

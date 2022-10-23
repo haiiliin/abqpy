@@ -8,7 +8,7 @@ class SpringDashpot:
     """The SpringDashpot object is the abstract base type for the SpringDashpotToGround and
     TwoPointSpringDashpot objects.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

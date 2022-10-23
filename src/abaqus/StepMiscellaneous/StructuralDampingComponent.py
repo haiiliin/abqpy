@@ -8,7 +8,7 @@ class StructuralDampingComponent:
     """A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent` object is used to define structural damping over a range of
     modes.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step

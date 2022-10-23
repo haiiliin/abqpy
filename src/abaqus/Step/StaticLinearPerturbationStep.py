@@ -27,7 +27,7 @@ class StaticLinearPerturbationStep(AnalysisStep):
     be analyzed as a linear perturbation load step.
     The StaticLinearPerturbationStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -68,7 +68,7 @@ class StaticLinearPerturbationStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -154,7 +154,7 @@ class StaticLinearPerturbationStep(AnalysisStep):
     ):
         """This method creates a StaticLinearPerturbationStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].StaticLinearPerturbationStep

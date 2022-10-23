@@ -6,8 +6,17 @@ from typing_extensions import Literal
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from ..Datum.DatumCsys import DatumCsys
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import INDEPENDENT, MECHANICAL, THERMAL, UNSET, SET, FOLLOW, USER_DEFINED, \
-    UNCHANGED, FREED
+from ..UtilityAndView.abaqusConstants import (
+    INDEPENDENT,
+    MECHANICAL,
+    THERMAL,
+    UNSET,
+    SET,
+    FOLLOW,
+    USER_DEFINED,
+    UNCHANGED,
+    FREED,
+)
 
 
 @abaqus_class_doc
@@ -17,7 +26,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     The VelocityAdaptiveMeshConstraint object is derived from the AdaptiveMeshConstraint
     object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -57,7 +66,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     ):
         """This method creates a VelocityAdaptiveMeshConstraint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].VelocityAdaptiveMeshConstraint

@@ -11,7 +11,7 @@ class Spot(ConstrainedSketchVertex):
     def __init__(self, point: Sequence[float]):
         """This method creates a spot (construction point) located at the specified coordinates.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].Spot

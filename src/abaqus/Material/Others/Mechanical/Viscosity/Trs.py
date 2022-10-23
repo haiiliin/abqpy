@@ -10,7 +10,7 @@ class Trs:
     r"""The Trs object defines the temperature-time shift for time history viscoelastic
     analysis.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -35,7 +35,7 @@ class Trs:
     def __init__(self, definition: Literal[C.USER, C.WLF, C.ARRHENIUS] = WLF, table: tuple = ()):
         """This method creates a Trs object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].viscoelastic.Trs

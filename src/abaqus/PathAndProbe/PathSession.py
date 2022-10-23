@@ -12,7 +12,6 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class PathSession(SessionBase):
-    
     @abaqus_method_doc
     def Path(
         self,
@@ -30,7 +29,7 @@ class PathSession(SessionBase):
     ) -> Path:
         """This method creates a Path object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.Path
@@ -45,7 +44,7 @@ class PathSession(SessionBase):
         expression
             A sequence specifying the nodes or points that make up the path. The definition of the
             path expression depends on the **type** argument.
-            
+
             - If **type** = NODE_LIST, **expression** must be a sequence of sequences. Each inner sequence
               contains two items, the first item is a String specifying the name of a part instance,
               and the second item can be either a sequence of Ints or a sequence of Strings, each
@@ -125,7 +124,7 @@ class PathSession(SessionBase):
     def Spectrum(self, name: str, colors: tuple) -> Spectrum:
         """This method creates a Spectrum object and places it in the spectrums repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.Spectrum
@@ -156,7 +155,7 @@ class PathSession(SessionBase):
     ) -> Stream:
         """This method creates aStream object and places it in the streams repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.Stream
@@ -181,7 +180,5 @@ class PathSession(SessionBase):
         Stream
             A :py:class:`~abaqus.PathAndProbe.Stream.Stream` object.
         """
-        self.streams[name] = stream = Stream(
-            name, numPointsOnRake, pointA, pointB, path
-        )
+        self.streams[name] = stream = Stream(name, numPointsOnRake, pointA, pointB, path)
         return stream

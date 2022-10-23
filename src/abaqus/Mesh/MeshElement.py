@@ -7,11 +7,12 @@ from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C, SymbolicConstant
 
-if TYPE_CHECKING: # to avoid circular imports
+if TYPE_CHECKING:  # to avoid circular imports
     from .MeshNode import MeshNode
     from .MeshEdge import MeshEdge
     from .MeshFace import MeshFace
     from .MeshElementArray import MeshElementArray
+
 
 @abaqus_class_doc
 class MeshElement:

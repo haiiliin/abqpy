@@ -14,7 +14,7 @@ class LineLoad(Load):
     """The LineLoad object stores the data of an applied line load.
     The LineLoad object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -56,7 +56,7 @@ class LineLoad(Load):
     ):
         """This method creates a LineLoad object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].LineLoad

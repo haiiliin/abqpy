@@ -5,7 +5,7 @@ from .template import *
 try:
     from ._version import version as _default_version
 except ImportError:
-    _default_version = '2023.0.0-dev'
+    _default_version = "2023.0.0-dev"
 
 
 def _get_version():
@@ -16,10 +16,11 @@ def _get_version():
     root = Path(__file__).resolve().parents[2]
     if (root / ".git").exists() and not (root / ".git/shallow").exists():
         import setuptools_scm
+
         try:
             return setuptools_scm.get_version(
                 root=str(root),
-                version_scheme = "post-release",
+                version_scheme="post-release",
                 fallback_version=_default_version,
             )
         except Exception:

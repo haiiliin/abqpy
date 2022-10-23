@@ -2,8 +2,17 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from .ConnectorOptions import ConnectorOptions
-from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT, LINEAR, OFF, ON, POSITION,
-                                              POSITIVE, RSS, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    CONSTANT,
+    LINEAR,
+    OFF,
+    ON,
+    POSITION,
+    POSITIVE,
+    RSS,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -11,7 +20,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class CDCTerm:
     """The CDCTerm object is used to create contributing terms for a DerivedComponent object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -93,7 +102,7 @@ class CDCTerm:
     ):
         """This method creates a CDCTerm object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.CDCTerm
@@ -154,7 +163,7 @@ class CDCTerm:
 
         Raises
         ------
-        ValueError and TextError        """
+        ValueError and TextError"""
         ...
 
     @abaqus_method_doc
@@ -183,7 +192,7 @@ class CDCTerm:
         """This method creates a connector options object to be used in conjunction with an
         allowable connector behavior option, derived component term, or connector section.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.CDCTerm
@@ -244,7 +253,7 @@ class CDCTerm:
 
         Raises
         ------
-        ValueError and TextError        """
+        ValueError and TextError"""
         self.options = connectorOptions = ConnectorOptions(
             useBehRegSettings,
             regularize,

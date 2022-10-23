@@ -4,9 +4,22 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from ..PlotOptions.DGCommonOptions import DGCommonOptions
-from ..UtilityAndView.abaqusConstants import (AUTO, Boolean, ELEMENT, EXTERIOR, HOLLOW_CIRCLE,
-                                              MEDIUM, OFF, ON, SHADED, SMALL, SOLID,
-                                              SymbolicConstant, VERY_THIN, WIRE)
+from ..UtilityAndView.abaqusConstants import (
+    AUTO,
+    Boolean,
+    ELEMENT,
+    EXTERIOR,
+    HOLLOW_CIRCLE,
+    MEDIUM,
+    OFF,
+    ON,
+    SHADED,
+    SMALL,
+    SOLID,
+    SymbolicConstant,
+    VERY_THIN,
+    WIRE,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -25,7 +38,7 @@ class CommonOptions(DGCommonOptions):
     - The common options associated with a particular viewport.
     The CommonOptions object is derived from the DGCommonOptions object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -91,7 +104,7 @@ class CommonOptions(DGCommonOptions):
     nodeSymbols: Boolean = OFF
 
     #: A SymbolicConstant specifying the node symbol types. Possible values are:
-    #: 
+    #:
     #: - FILLED_CIRCLE
     #: - FILLED_SQUARE
     #: - FILLED_DIAMOND
@@ -102,7 +115,7 @@ class CommonOptions(DGCommonOptions):
     #: - HOLLOW_TRI
     #: - CROSS
     #: - XMARKER
-    #: 
+    #:
     #: The default value is HOLLOW_CIRCLE.
     nodeSymbolType: SymbolicConstant = HOLLOW_CIRCLE
 
@@ -223,7 +236,18 @@ class CommonOptions(DGCommonOptions):
         nodeLabels: Boolean = OFF,
         nodeLabelColor: str = "",
         nodeSymbols: Boolean = OFF,
-        nodeSymbolType: Literal[C.CROSS, C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_TRI, C.HOLLOW_SQUARE, C.FILLED_TRI, C.HOLLOW_DIAMOND, C.FILLED_CIRCLE, C.XMARKER] = HOLLOW_CIRCLE,
+        nodeSymbolType: Literal[
+            C.CROSS,
+            C.FILLED_DIAMOND,
+            C.FILLED_SQUARE,
+            C.HOLLOW_CIRCLE,
+            C.HOLLOW_TRI,
+            C.HOLLOW_SQUARE,
+            C.FILLED_TRI,
+            C.HOLLOW_DIAMOND,
+            C.FILLED_CIRCLE,
+            C.XMARKER,
+        ] = HOLLOW_CIRCLE,
         nodeSymbolColor: str = "",
         nodeSymbolSize: Literal[C.SMALL, C.LARGE, C.MEDIUM] = SMALL,
         elementShrink: Boolean = OFF,
@@ -318,7 +342,7 @@ class CommonOptions(DGCommonOptions):
             - HOLLOW_TRI
             - CROSS
             - XMARKER
-            
+
             The default value is HOLLOW_CIRCLE.
         nodeSymbolColor
             A String specifying the color to be used to plot the node symbols. The default value is

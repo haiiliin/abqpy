@@ -17,7 +17,7 @@ class LoadStep(StepBase):
     ) -> LoadCase:
         """This method creates a load case in a step.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].steps[name].LoadCase
@@ -45,7 +45,5 @@ class LoadStep(StepBase):
         ------
         RangeError
         """
-        self.loadCases[name] = loadCase = LoadCase(
-            name, boundaryConditions, loads, includeActiveBaseStateBC
-        )
+        self.loadCases[name] = loadCase = LoadCase(name, boundaryConditions, loads, includeActiveBaseStateBC)
         return loadCase

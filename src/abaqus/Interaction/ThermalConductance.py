@@ -10,16 +10,16 @@ class ThermalConductance:
     """The ThermalConductance object specifies thermal conductance for a contact interaction
     property.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
             mdb.models[name].interactionProperties[name].thermalConductance
 
         The table data for this object are:
-        
+
         The **clearanceDepTable** data specify the following:
-        
+
         - Conductivity.
         - Clearance.
         - Temperature, if the data depend on temperature.
@@ -27,9 +27,9 @@ class ThermalConductance:
         - Value of the first field variable, if the data depend on field variables.
         - Value of the second field variable.
         - Etc.
-            
+
         The **pressureDepTable** data specify the following:
-        
+
         - Conductivity.
         - Pressure.
         - Temperature, if the data depend on temperature.
@@ -102,7 +102,7 @@ class ThermalConductance:
     ):
         """This method creates a ThermalConductance object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].interactionProperties[name].ThermalConductance

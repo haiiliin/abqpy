@@ -15,7 +15,7 @@ class FluidCavityPressureBCState(BoundaryConditionState):
     The FluidCavityPressureBCState object has no constructor or methods.
     The FluidCavityPressureBCState object is derived from the BoundaryConditionState object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -38,7 +38,7 @@ class FluidCavityPressureBCState(BoundaryConditionState):
     amplitudeState: Optional[SymbolicConstant] = None
 
     #: A SymbolicConstant specifying the propagation state of the BoundaryConditionState object. Possible values are:
-    #: 
+    #:
     #: - NOT_YET_ACTIVE
     #: - CREATED
     #: - PROPAGATED

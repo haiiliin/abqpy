@@ -11,7 +11,7 @@ class PeriodicAmplitude(Amplitude):
     """The PeriodicAmplitude object defines an amplitude curve using a Fourier series.
     The PeriodicAmplitude object is derived from the Amplitude object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import amplitude
@@ -55,7 +55,7 @@ class PeriodicAmplitude(Amplitude):
     ):
         """This method creates a PeriodicAmplitude object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PeriodicAmplitude

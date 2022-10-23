@@ -13,7 +13,7 @@ class HistoryOutputRequestState:
     the HistoryOutputRequest object.
     The HistoryOutputRequestState object has no constructor or methods.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step

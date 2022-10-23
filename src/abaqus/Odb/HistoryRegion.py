@@ -15,7 +15,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class HistoryRegion:
     """The HistoryRegion object contains history data for a single location in the model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -52,7 +52,7 @@ class HistoryRegion:
     ) -> None:
         """This method creates a HistoryRegion object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].steps[name].HistoryRegion
@@ -140,11 +140,13 @@ class HistoryRegion:
         name: str,
         description: str,
         type: Literal[C.SCALAR],
-        validInvariants: Optional[Literal[C.MISES, C.MAX_PRINCIPAL, C.MIN_PRINCIPAL, C.MID_PRINCIPAL, C.MAGNITUDE, C.TRESCA, C.INV3, C.PRESS]] = None,
+        validInvariants: Optional[
+            Literal[C.MISES, C.MAX_PRINCIPAL, C.MIN_PRINCIPAL, C.MID_PRINCIPAL, C.MAGNITUDE, C.TRESCA, C.INV3, C.PRESS]
+        ] = None,
     ) -> HistoryOutput:
         """This method creates a HistoryOutput object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].steps[name].HistoryRegion
@@ -167,7 +169,5 @@ class HistoryRegion:
         HistoryOutput
             A :py:class:`~abaqus.Odb.HistoryOutput.HistoryOutput` object.
         """
-        self.historyOutputs[name] = historyOutput = HistoryOutput(
-            name, description, type, validInvariants
-        )
+        self.historyOutputs[name] = historyOutput = HistoryOutput(name, description, type, validInvariants)
         return historyOutput

@@ -14,7 +14,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 class OdbDiagnosticData:
     """The OdbDiagnosticData object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

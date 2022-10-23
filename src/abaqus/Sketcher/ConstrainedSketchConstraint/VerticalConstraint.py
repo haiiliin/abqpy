@@ -13,7 +13,7 @@ class VerticalConstraint(ConstrainedSketchConstraint):
         """This method creates a vertical constraint. This constraint applies to a line and
         constrains it to be vertical.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].VerticalConstraint

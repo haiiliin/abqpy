@@ -10,7 +10,7 @@ from ...UtilityAndView.abaqusConstants import Boolean
 class ConstrainedSketchVertexArray(List[ConstrainedSketchVertex]):
     """The ConstrainedSketchVertexArray is a sequence of ConstrainedSketchVertex objects.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import sketch

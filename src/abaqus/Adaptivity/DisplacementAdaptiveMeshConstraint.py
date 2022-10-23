@@ -15,7 +15,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     """The AdaptivityProcess object defines a series of jobs that will be submitted for
     analysis. Abaqus performs adaptive remeshing between each job.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -55,7 +55,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
     ):
         """This method creates a DisplacementAdaptiveMeshConstraint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].DisplacementAdaptiveMeshConstraint

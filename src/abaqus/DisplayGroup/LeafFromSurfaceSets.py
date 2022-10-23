@@ -14,7 +14,7 @@ class LeafFromSurfaceSets(Leaf):
     commands.
     The LeafFromSurfaceSets object is derived from the Leaf object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import displayGroupOdbToolset
@@ -32,7 +32,7 @@ class LeafFromSurfaceSets(Leaf):
     def __init__(self, surfaceSets: tuple):
         """This method creates a Leaf object from a sequence of surface sets.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 LeafFromSurfaceSets

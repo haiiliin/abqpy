@@ -12,7 +12,7 @@ from abqpy.decorators import abaqus_function_doc
 def milestone(message: str):
     """This function displays a string in the prompt area.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             milestone
@@ -30,7 +30,7 @@ def milestone(message: str):
 def milestone(message: str, percent: int):
     """This function displays a percentage complete message in the prompt area.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             milestone
@@ -51,7 +51,7 @@ def milestone(message: str, object: str, done: int, total: int):
     """This function displays a message in the prompt area indicating the number done out of a
     total. The form of the message is `operation: object nn out of nn`
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             milestone

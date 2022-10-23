@@ -9,7 +9,7 @@ from ..UtilityAndView.abaqusConstants import SymbolicConstant
 class JobData:
     """The JobData object describes the context in which the analysis was run.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess

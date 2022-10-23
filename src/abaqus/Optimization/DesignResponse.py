@@ -7,7 +7,7 @@ class DesignResponse:
     The DesponseResponse object has no explicit constructor. The methods and members of the
     DesignResponse object are common to all objects derived from DesignResponse.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization

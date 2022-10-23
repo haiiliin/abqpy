@@ -8,7 +8,7 @@ class Fastener:
     """The Fastener object is the abstract base type for PointFastener, DiscreteFastener, and
     AssembledFastener.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

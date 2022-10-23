@@ -14,7 +14,7 @@ class SingleTermDesignResponse(DesignResponse):
     """The SingleTermDesignResponse object defines a single-term design response.
     The SingleTermDesignResponse object is derived from the DesignResponse object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -70,7 +70,7 @@ class SingleTermDesignResponse(DesignResponse):
     ):
         """This method creates a SingleTermDesignResponse object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SingleTermDesignResponse
