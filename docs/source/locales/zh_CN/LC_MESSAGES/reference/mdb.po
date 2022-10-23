@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1352,6 +1352,26 @@ msgstr ""
 msgid ""
 "A SymbolicConstant specifying whether an analysis is decomposed into "
 "threads or into multiple processes that communicate through a message"
+msgstr ""
+
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:83 of
+msgid ""
+"A Boolean specifying whether to retrieve the recommended memory settings "
+"from the last datacheck or analysis run and use those values in "
+"subsequent submissions. The default value is ON."
+msgstr ""
+
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:87 of
+msgid ""
+"An Int specifying the number of GPUs to use for this analysis if parallel"
+" processing is available. Possible values are **numCpus** >= 0. The "
+"default value is 0."
+msgstr ""
+
+#: abaqus.Job.JobMdb.JobMdb.JobFromInputFile:90 of
+msgid ""
+"This option specifies the results output format: ODB, SIM, or BOTH. The "
+"default value is ODB."
 msgstr ""
 
 #: abaqus.Job.JobMdb.JobMdb.OptimizationProcess:9 of

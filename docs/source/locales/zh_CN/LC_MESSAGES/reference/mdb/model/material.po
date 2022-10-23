@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1986,7 +1986,7 @@ msgstr ""
 #: abaqus.Material.Elastic.HyperElastic.ViscoElastic.Hysteresis.Hysteresis:19
 #: abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic:72
 #: abaqus.Material.Elastic.HypoElastic.Hypoelastic.Hypoelastic:19
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:128
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic:115
 #: abaqus.Material.Elastic.Linear.FailStrain.FailStrain:23
 #: abaqus.Material.Elastic.Linear.FailStress.FailStress:26
 #: abaqus.Material.Elastic.LowDensityFoam.LowDensityFoam.LowDensityFoam:11
@@ -2228,7 +2228,7 @@ msgstr ""
 msgid ":py:obj:`creep <abaqus.Material.MaterialBase.MaterialBase.creep>`\\"
 msgstr ""
 
-#: ../../None:74:<autosummary>:1 abaqus.Material.Material.Material.Creep:26
+#: ../../None:74:<autosummary>:1 abaqus.Material.Material.Material.Creep:29
 #: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:26 of
 msgid "A :py:class:`~abaqus.Material.Plastic.Creep.Creep.Creep` object."
 msgstr ""
@@ -2464,8 +2464,8 @@ msgid ":py:obj:`elastic <abaqus.Material.MaterialBase.MaterialBase.elastic>`\\"
 msgstr ""
 
 #: ../../None:74:<autosummary>:1
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:41
-#: abaqus.Material.Material.Material.Elastic:41 of
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:40
+#: abaqus.Material.Material.Material.Elastic:40 of
 msgid "An :py:class:`~abaqus.Material.Elastic.Linear.Elastic.Elastic` object."
 msgstr ""
 
@@ -2528,7 +2528,7 @@ msgstr ""
 
 #: ../../None:74:<autosummary>:1
 #: abaqus.Material.Gap.GapFlow.GapFlow.__init__:26
-#: abaqus.Material.Material.Material.GapFlow:26 of
+#: abaqus.Material.Material.Material.GapFlow:29 of
 msgid "A :py:class:`~abaqus.Material.Gap.GapFlow.GapFlow` object."
 msgstr ""
 
@@ -3009,7 +3009,7 @@ msgstr ""
 msgid ":py:obj:`viscous <abaqus.Material.MaterialBase.MaterialBase.viscous>`\\"
 msgstr ""
 
-#: ../../None:74:<autosummary>:1 abaqus.Material.Material.Material.Viscous:26
+#: ../../None:74:<autosummary>:1 abaqus.Material.Material.Material.Viscous:29
 #: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:26
 #: of
 msgid ""
@@ -4010,7 +4010,6 @@ msgstr ""
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:70
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:98
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:108
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:121
 #: abaqus.Material.Elastic.Linear.FailStrain.FailStrain:18
 #: abaqus.Material.Elastic.Linear.FailStress.FailStress:21
 #: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic:19
@@ -4168,7 +4167,6 @@ msgstr ""
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:71
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:99
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:109
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:122
 #: abaqus.Material.Elastic.Linear.FailStrain.FailStrain:19
 #: abaqus.Material.Elastic.Linear.FailStress.FailStress:22
 #: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic:20
@@ -4319,7 +4317,6 @@ msgstr ""
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:72
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:100
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:110
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:123
 #: abaqus.Material.Elastic.Linear.FailStrain.FailStrain:20
 #: abaqus.Material.Elastic.Linear.FailStress.FailStress:23
 #: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic:21
@@ -4472,7 +4469,6 @@ msgstr ""
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:73
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:101
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:111
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:124
 #: abaqus.Material.Elastic.Linear.FailStrain.FailStrain:21
 #: abaqus.Material.Elastic.Linear.FailStress.FailStress:24
 #: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic:22
@@ -5066,7 +5062,7 @@ msgstr ""
 #: ../../docstring abaqus.Material.Density.Density.Density.__init__:15
 #: abaqus.Material.Elastic.HyperElastic.HyperFoam.Hyperfoam.Hyperfoam.__init__:21
 #: abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic.__init__:36
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:34
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:33
 #: abaqus.Material.Elastic.Linear.FailStrain.FailStrain.__init__:15
 #: abaqus.Material.Elastic.Linear.FailStress.FailStress.__init__:15
 #: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic.__init__:18
@@ -5081,7 +5077,7 @@ msgstr ""
 #: abaqus.Material.Material.Material.Concrete:15
 #: abaqus.Material.Material.Material.ConcreteDamagedPlasticity:15
 #: abaqus.Material.Material.Material.Conductivity:18
-#: abaqus.Material.Material.Material.Creep:19
+#: abaqus.Material.Material.Material.Creep:22
 #: abaqus.Material.Material.Material.CrushableFoam:18
 #: abaqus.Material.Material.Material.DeformationPlasticity:15
 #: abaqus.Material.Material.Material.Density:15
@@ -5089,7 +5085,7 @@ msgstr ""
 #: abaqus.Material.Material.Material.Diffusivity:21
 #: abaqus.Material.Material.Material.DruckerPrager:29
 #: abaqus.Material.Material.Material.DuctileDamageInitiation:37
-#: abaqus.Material.Material.Material.Elastic:34
+#: abaqus.Material.Material.Material.Elastic:33
 #: abaqus.Material.Material.Material.ElectricalConductivity:20
 #: abaqus.Material.Material.Material.Expansion:22
 #: abaqus.Material.Material.Material.FldDamageInitiation:37
@@ -5125,7 +5121,7 @@ msgstr ""
 #: abaqus.Material.Material.Material.SpecificHeat:18
 #: abaqus.Material.Material.Material.Swelling:19
 #: abaqus.Material.Material.Material.Viscosity:17
-#: abaqus.Material.Material.Material.Viscous:19
+#: abaqus.Material.Material.Material.Viscous:22
 #: abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric.__init__:20
 #: abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity.__init__:20
 #: abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability.__init__:30
@@ -5213,7 +5209,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Material.Density.Density.Density.__init__:17
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:36
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:35
 #: abaqus.Material.Elastic.Linear.FailStrain.FailStrain.__init__:17
 #: abaqus.Material.Elastic.Linear.FailStress.FailStress.__init__:17
 #: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic.__init__:20
@@ -5229,14 +5225,14 @@ msgstr ""
 #: abaqus.Material.Material.Material.Concrete:17
 #: abaqus.Material.Material.Material.ConcreteDamagedPlasticity:17
 #: abaqus.Material.Material.Material.Conductivity:20
-#: abaqus.Material.Material.Material.Creep:21
+#: abaqus.Material.Material.Material.Creep:24
 #: abaqus.Material.Material.Material.CrushableFoam:20
 #: abaqus.Material.Material.Material.Density:17
 #: abaqus.Material.Material.Material.Dielectric:22
 #: abaqus.Material.Material.Material.Diffusivity:23
 #: abaqus.Material.Material.Material.DruckerPrager:31
 #: abaqus.Material.Material.Material.DuctileDamageInitiation:39
-#: abaqus.Material.Material.Material.Elastic:36
+#: abaqus.Material.Material.Material.Elastic:35
 #: abaqus.Material.Material.Material.ElectricalConductivity:22
 #: abaqus.Material.Material.Material.Expansion:24
 #: abaqus.Material.Material.Material.FldDamageInitiation:39
@@ -5270,7 +5266,7 @@ msgstr ""
 #: abaqus.Material.Material.Material.SpecificHeat:20
 #: abaqus.Material.Material.Material.Swelling:21
 #: abaqus.Material.Material.Material.Viscosity:19
-#: abaqus.Material.Material.Material.Viscous:21
+#: abaqus.Material.Material.Material.Viscous:24
 #: abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric.__init__:22
 #: abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity.__init__:22
 #: abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability.__init__:32
@@ -5484,6 +5480,15 @@ msgid ""
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-creeppyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: abaqus.Material.Material.Material.Creep:15 of
+msgid ""
+"A SymbolicConstant specifying the strain-hardening law. Possible values "
+"are STRAIN, TIME, HYPERBOLIC_SINE, USER, ANAND, DARVEAUX, DOUBLE_POWER, "
+"POWER_LAW, and TIME_POWER_LAW. The default value is STRAIN.  .. "
+"versionadded:: 2020     The options ANAND, DARVEAUX, DOUBLE_POWER, "
+"POWER_LAW, and TIME_POWER_LAW were added."
+msgstr ""
+
 #: abaqus.Material.Material.Material.Creep:15
 #: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:15 of
 msgid ""
@@ -5492,8 +5497,15 @@ msgid ""
 "POWER_LAW, and TIME_POWER_LAW. The default value is STRAIN."
 msgstr ""
 
-#: abaqus.Material.Material.Material.Creep:23
-#: abaqus.Material.Material.Material.Viscous:23
+#: abaqus.Material.Material.Material.Creep:19
+#: abaqus.Material.Material.Material.Viscous:19 of
+msgid ""
+"The options ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and TIME_POWER_LAW "
+"were added."
+msgstr ""
+
+#: abaqus.Material.Material.Material.Creep:26
+#: abaqus.Material.Material.Material.Viscous:26
 #: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:23
 #: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:23
 #: of
@@ -5502,7 +5514,7 @@ msgid ""
 "Possible values are CREEP and TOTAL. The default value is TOTAL."
 msgstr ""
 
-#: abaqus.Material.Material.Material.Creep:27
+#: abaqus.Material.Material.Material.Creep:30
 #: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:27 of
 msgid ":class:`Creep`"
 msgstr ""
@@ -6200,7 +6212,7 @@ msgstr ""
 msgid ":class:`DamageInitiation`"
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:133
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic:120
 #: abaqus.Material.Material.Material.Elastic:10 of
 msgid ""
 "Check `Elastic on help.3ds.com/2021 "
@@ -6213,7 +6225,7 @@ msgid ""
 "A SymbolicConstant specifying the type of elasticity data provided. "
 "Possible values are:  - ISOTROPIC - ORTHOTROPIC - ANISOTROPIC - "
 "ENGINEERING_CONSTANTS - LAMINA - TRACTION - COUPLED_TRACTION - "
-"SHORT_FIBER - SHEAR - BILAMINA  The default value is ISOTROPIC."
+"SHORT_FIBER - SHEAR  The default value is ISOTROPIC."
 msgstr ""
 
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:15
@@ -6268,40 +6280,35 @@ msgstr ""
 msgid "SHEAR"
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:26
-#: abaqus.Material.Material.Material.Elastic:26 of
-msgid "BILAMINA"
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:28
-#: abaqus.Material.Material.Material.Elastic:28 of
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:27
+#: abaqus.Material.Material.Material.Elastic:27 of
 msgid "The default value is ISOTROPIC."
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:30
-#: abaqus.Material.Material.Material.Elastic:30 of
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:29
+#: abaqus.Material.Material.Material.Elastic:29 of
 msgid ""
 "A Boolean specifying whether compressive stress is allowed. The default "
 "value is OFF."
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:32
-#: abaqus.Material.Material.Material.Elastic:32 of
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:31
+#: abaqus.Material.Material.Material.Elastic:31 of
 msgid ""
 "A Boolean specifying whether tensile stress is allowed. The default value"
 " is OFF."
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:38
-#: abaqus.Material.Material.Material.Elastic:38 of
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:37
+#: abaqus.Material.Material.Material.Elastic:37 of
 msgid ""
 "A SymbolicConstant specifying the time-dependence of the elastic material"
 " constants. Possible values are INSTANTANEOUS and LONG_TERM. The default "
 "value is LONG_TERM."
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:42
-#: abaqus.Material.Material.Material.Elastic:42 of
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:41
+#: abaqus.Material.Material.Material.Elastic:41 of
 msgid ":class:`Elastic`"
 msgstr ""
 
@@ -6702,6 +6709,14 @@ msgid ""
 "default value is None."
 msgstr ""
 
+#: abaqus.Material.Material.Material.GapFlow:23 of
+msgid ""
+"A SymbolicConstant specifying the type of gap flow. Possible values are "
+"NEWTONIAN, POWER_LAW, BINGHAM_PLASTIC, and HERSCHEL-BULKLEY. The default "
+"value is NEWTONIAN.  .. versionadded:: 2020     The options "
+"BINGHAM_PLASTIC and HERSCHEL-BULKLEY were added."
+msgstr ""
+
 #: abaqus.Material.Gap.GapFlow.GapFlow.__init__:23
 #: abaqus.Material.Material.Material.GapFlow:23 of
 msgid ""
@@ -6710,8 +6725,12 @@ msgid ""
 "value is NEWTONIAN."
 msgstr ""
 
+#: abaqus.Material.Material.Material.GapFlow:26 of
+msgid "The options BINGHAM_PLASTIC and HERSCHEL-BULKLEY were added."
+msgstr ""
+
 #: abaqus.Material.Gap.GapFlow.GapFlow.__init__:27
-#: abaqus.Material.Material.Material.GapFlow:27 of
+#: abaqus.Material.Material.Material.GapFlow:30 of
 msgid ":class:`GapFlow`"
 msgstr ""
 
@@ -7987,6 +8006,14 @@ msgid ""
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viscouspyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: abaqus.Material.Material.Material.Viscous:15 of
+msgid ""
+"A SymbolicConstant specifying the creep law. Possible values are STRAIN, "
+"TIME, USER, ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and TIME_POWER_LAW."
+" The default value is STRAIN.  .. versionadded:: 2020     The options "
+"ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and TIME_POWER_LAW were added."
+msgstr ""
+
 #: abaqus.Material.Material.Material.Viscous:15
 #: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:15
 #: of
@@ -7996,7 +8023,7 @@ msgid ""
 " The default value is STRAIN."
 msgstr ""
 
-#: abaqus.Material.Material.Material.Viscous:27
+#: abaqus.Material.Material.Material.Viscous:30
 #: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:27
 #: of
 msgid ":class:`Viscous`"
@@ -9553,40 +9580,12 @@ msgstr ""
 msgid ":math:`G_2` for warping elements; :math:`E_{tt}` for cohesive elements."
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:113 of
-msgid "If **type** = BILAMINA, the table data specify the following:"
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:115 of
-msgid ":math:`E_{n n}`."
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:116 of
-msgid ":math:`E_{s s}`."
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:117 of
-msgid ":math:`E_{t t}`."
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:118 of
-msgid ":math:`E_{n s}`."
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:119 of
-msgid ":math:`E_{n t}`."
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:120 of
-msgid ":math:`E_{s t}`."
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:126
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic:113
 #: abaqus.Material.Others.Mechanical.Expansion.Expansion:41 of
 msgid "If **type** = SHORT_FIBER, there is no table data."
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:130 of
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic:117 of
 msgid "ELASTIC"
 msgstr ""
 
@@ -22117,5 +22116,39 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the type "
+#~ "of elasticity data provided. Possible "
+#~ "values are:  - ISOTROPIC - ORTHOTROPIC"
+#~ " - ANISOTROPIC - ENGINEERING_CONSTANTS -"
+#~ " LAMINA - TRACTION - COUPLED_TRACTION "
+#~ "- SHORT_FIBER - SHEAR - BILAMINA  "
+#~ "The default value is ISOTROPIC."
+#~ msgstr ""
+
+#~ msgid "BILAMINA"
+#~ msgstr ""
+
+#~ msgid "If **type** = BILAMINA, the table data specify the following:"
+#~ msgstr ""
+
+#~ msgid ":math:`E_{n n}`."
+#~ msgstr ""
+
+#~ msgid ":math:`E_{s s}`."
+#~ msgstr ""
+
+#~ msgid ":math:`E_{t t}`."
+#~ msgstr ""
+
+#~ msgid ":math:`E_{n s}`."
+#~ msgstr ""
+
+#~ msgid ":math:`E_{n t}`."
+#~ msgstr ""
+
+#~ msgid ":math:`E_{s t}`."
 #~ msgstr ""
 
