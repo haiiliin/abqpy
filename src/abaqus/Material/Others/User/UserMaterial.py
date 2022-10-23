@@ -1,7 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ....UtilityAndView.abaqusConstants import (Boolean, INCREMENTAL, MECHANICAL, OFF,
-                                                SymbolicConstant)
+from ....UtilityAndView.abaqusConstants import (Boolean, INCREMENTAL, MECHANICAL, OFF)
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -25,12 +26,12 @@ class UserMaterial:
     @abaqus_method_doc
     def __init__(
         self,
-        type: SymbolicConstant = MECHANICAL,
+        type: Literal[C.THERMOMECHANICAL, C.THERMAL, C.MECHANICAL] = MECHANICAL,
         unsymm: Boolean = OFF,
         mechanicalConstants: tuple = (),
         thermalConstants: tuple = (),
         effmod: Boolean = OFF,
-        hybridFormulation: SymbolicConstant = INCREMENTAL,
+        hybridFormulation: Literal[C.UMAT, C.INCREMENTAL, C.TOTAL, C.INCOMPRESSIBLE] = INCREMENTAL,
     ):
         """This method creates a UserMaterial object.
 

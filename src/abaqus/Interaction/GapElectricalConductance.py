@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, SymbolicConstant, TABULAR
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -76,7 +78,7 @@ class GapElectricalConductance:
     @abaqus_method_doc
     def __init__(
         self,
-        definition: SymbolicConstant = TABULAR,
+        definition: Literal[C.USER_DEFINED, C.TABULAR] = TABULAR,
         clearanceDependency: Boolean = ON,
         pressureDependency: Boolean = OFF,
         temperatureDependencyC: Boolean = OFF,

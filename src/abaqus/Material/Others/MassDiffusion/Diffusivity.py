@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .PressureEffect import PressureEffect
 from .SoretEffect import SoretEffect
-from ....UtilityAndView.abaqusConstants import Boolean, GENERAL, ISOTROPIC, OFF, SymbolicConstant
+from ....UtilityAndView.abaqusConstants import Boolean, GENERAL, ISOTROPIC, OFF
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -66,8 +68,8 @@ class Diffusivity:
     def __init__(
         self,
         table: tuple,
-        type: SymbolicConstant = ISOTROPIC,
-        law: SymbolicConstant = GENERAL,
+        type: Literal[C.ANISOTROPIC, C.ISOTROPIC, C.ORTHOTROPIC] = ISOTROPIC,
+        law: Literal[C.GENERAL, C.FICK] = GENERAL,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

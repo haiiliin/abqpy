@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import LAGRANGIAN, SymbolicConstant, UNIFORM
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -71,9 +73,9 @@ class ConcentratedRadiationToAmbient(Interaction):
         ambientTemperatureAmp: str,
         emissivity: float,
         nodalArea: float = 1,
-        explicitRegionType: SymbolicConstant = LAGRANGIAN,
+        explicitRegionType: Literal[C.LAGRANGIAN, C.SLIDING, C.EULERIAN] = LAGRANGIAN,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
     ):
         """This method creates a ConcentratedRadiationToAmbient object.
 
@@ -129,9 +131,9 @@ class ConcentratedRadiationToAmbient(Interaction):
     def setValues(
         self,
         nodalArea: float = 1,
-        explicitRegionType: SymbolicConstant = LAGRANGIAN,
+        explicitRegionType: Literal[C.LAGRANGIAN, C.SLIDING, C.EULERIAN] = LAGRANGIAN,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
     ):
         """This method modifies the data for an existing ConcentratedRadiationToAmbient object in
         the step where it is created.
@@ -162,7 +164,7 @@ class ConcentratedRadiationToAmbient(Interaction):
         stepName: str,
         nodalArea: float = 1,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
     ):
         """This method modifies the propagating data of an existing ConcentratedRadiationToAmbient
         object in the specified step.

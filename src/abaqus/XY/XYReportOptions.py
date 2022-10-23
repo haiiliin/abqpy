@@ -1,7 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (Boolean, ENGINEERING, OFF, ON, SINGLE_TABLE,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (Boolean, ENGINEERING, OFF, ON, SINGLE_TABLE)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -28,8 +29,8 @@ class XYReportOptions:
         totals: Boolean = OFF,
         minMax: Boolean = OFF,
         pageWidthLimited: Boolean = OFF,
-        numberFormat: SymbolicConstant = ENGINEERING,
-        layout: SymbolicConstant = SINGLE_TABLE,
+        numberFormat: Literal[C.AUTOMATIC, C.ENGINEERING, C.SCIENTIFIC] = ENGINEERING,
+        layout: Literal[C.SINGLE_TABLE, C.SEPARATE_TABLES] = SINGLE_TABLE,
     ):
         """This method modifies the XYReportOptions object.
 

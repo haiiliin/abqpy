@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .BrittleFailure import BrittleFailure
 from .BrittleShear import BrittleShear
-from ....UtilityAndView.abaqusConstants import Boolean, OFF, STRAIN, SymbolicConstant
+from ....UtilityAndView.abaqusConstants import Boolean, OFF, STRAIN
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -62,7 +64,7 @@ class BrittleCracking:
         table: tuple,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        type: SymbolicConstant = STRAIN,
+        type: Literal[C.STRAIN, C.GFI, C.DISPLACEMENT] = STRAIN,
     ):
         """This method creates a BrittleCracking object.
 

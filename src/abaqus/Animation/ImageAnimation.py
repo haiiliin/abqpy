@@ -1,6 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -18,7 +19,7 @@ class ImageAnimation:
     fileName: str = ""
 
     @abaqus_method_doc
-    def __init__(self, fileName: str, format: SymbolicConstant):
+    def __init__(self, fileName: str, format: Literal[C.AVI, C.QUICKTIME]):
         """This method creates an ImageAnimation object from the specified filename and format.
 
         .. note:: 
