@@ -72,3 +72,8 @@ relative_to = "__file__"
 version_scheme = "post-release"
 write_to = "src/abqpy/_version.py"
 fallback_version = "2023.0.0-dev"
+
+[tool.black]
+line-length = 120
+target-version = ['py37', 'py38', 'py39', 'py310']
+include = '(src/abaqus/.*\.py|src/abqpy/.*\.py|tests/.*\.py|setup\.py)'
