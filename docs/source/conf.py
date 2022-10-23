@@ -37,7 +37,7 @@ except (ImportError, AttributeError):
     import warnings
     warnings.warn('abqpy is not installed, using 2023.0.0')
     release = version = '2023.0.0'
-    sys.path.insert(0, os.path.abspath('../../src'))
+sys.path.insert(0, os.path.abspath('../../src'))
 
 # For multiple languages
 locale_dirs = ['locales/']   # path is example but recommended.
