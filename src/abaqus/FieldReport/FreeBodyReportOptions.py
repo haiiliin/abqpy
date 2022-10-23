@@ -1,8 +1,10 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import GLOBAL, NORMAL_ANNOTATED, SCIENTIFIC, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import GLOBAL, NORMAL_ANNOTATED, SCIENTIFIC
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -26,9 +28,9 @@ class FreeBodyReportOptions:
         numDigits: int = 3,
         forceThreshold: Optional[float] = None,
         momentThreshold: Optional[float] = None,
-        numberFormat: SymbolicConstant = SCIENTIFIC,
-        reportFormat: SymbolicConstant = NORMAL_ANNOTATED,
-        csysType: SymbolicConstant = GLOBAL,
+        numberFormat: Literal[C.SCIENTIFIC, C.ENGINEERING, C.FIXED] = SCIENTIFIC,
+        reportFormat: Literal[C.COMMA_SEPARATED_VALUES, C.NORMAL_ANNOTATED] = NORMAL_ANNOTATED,
+        csysType: Literal[C.LOCAL, C.GLOBAL] = GLOBAL,
     ):
         """This method modifies the FreeBodyReportOptions object.
 

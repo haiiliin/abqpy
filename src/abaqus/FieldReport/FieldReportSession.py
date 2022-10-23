@@ -1,11 +1,13 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..Odb.Odb import Odb
 from ..Session.SessionBase import SessionBase
-from ..UtilityAndView.abaqusConstants import Boolean, SPECIFY, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import Boolean, SPECIFY
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -19,10 +21,10 @@ class FieldReportSession(SessionBase):
         odb: Odb,
         step: int,
         frame: int,
-        outputPosition: SymbolicConstant,
+        outputPosition: Literal[C.ELEMENT_NODAL, C.ELEMENT_FACE, C.WHOLE_ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.WHOLE_MODEL, C.GENERAL_PARTICLE, C.WHOLE_PART_INSTANCE, C.WHOLE_REGION],
         displayGroup: DisplayGroup,
-        variable: SymbolicConstant,
-        numericForm: Optional[SymbolicConstant] = None,
+        variable: Literal[C.ELEMENT_FACE, C.ELEMENT_NODAL, C.SPOS, C.WHOLE_ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.WHOLE_MODEL, C.WHOLE_REGION, C.GENERAL_PARTICLE, C.WHOLE_PART_INSTANCE],
+        numericForm: Optional[Literal[C.COMPLEX_PHASE, C.COMPLEX_MAG_AT_ANGLE, C.REAL, C.IMAGINARY, C.COMPLEX_MAGNITUDE]] = None,
         complexAngle: Optional[float] = None,
     ):
         """This method writes a FieldOutput object to a user-defined ASCII file.
@@ -97,7 +99,7 @@ class FieldReportSession(SessionBase):
         append: Boolean,
         step: Optional[int] = None,
         frame: Optional[int] = None,
-        stepFrame: SymbolicConstant = SPECIFY,
+        stepFrame: Literal[C.ALL, C.SPECIFY] = SPECIFY,
         odb: Optional[Odb] = None,
     ):
         """This method writes a FreeBody object to a user-defined ASCII file.

@@ -1,8 +1,10 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ...UtilityAndView.abaqusConstants import Boolean, NEWTONIAN, OFF, SymbolicConstant
+from ...UtilityAndView.abaqusConstants import Boolean, NEWTONIAN, OFF
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -48,7 +50,7 @@ class GapFlow:
         kmax: Optional[float] = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        type: SymbolicConstant = NEWTONIAN,
+        type: Literal[C.POWER_LAW, C.NEWTONIAN] = NEWTONIAN,
     ):
         """This method creates a GapFlow object.
 
