@@ -1,12 +1,14 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Interaction import Interaction
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTED, DEFAULT, KINEMATIC, OFF, OMIT,
                                               SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -96,19 +98,25 @@ class SurfaceToSurfaceContactExp(Interaction):
         self,
         name: str,
         createStepName: str,
+<<<<<<< HEAD
         master: Region,
         slave: Region,
         sliding: SymbolicConstant,
+=======
+        main: Region,
+        secondary: Region,
+        sliding: Literal[C.SMALL, C.FINITE],
+>>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004))
         interactionProperty: str,
-        mechanicalConstraint: SymbolicConstant = KINEMATIC,
-        weightingFactorType: SymbolicConstant = DEFAULT,
+        mechanicalConstraint: Literal[C.PENALTY, C.KINEMATIC] = KINEMATIC,
+        weightingFactorType: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,
         weightingFactor: float = 0,
         contactControls: str = "",
-        initialClearance: Union[SymbolicConstant, float] = OMIT,
+        initialClearance: Union[Literal[C.OMIT, C.COMPUTED], float] = OMIT,
         halfThreadAngle: Optional[str] = None,
         pitch: Optional[str] = None,
-        majorBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
-        meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
+        meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
@@ -191,15 +199,15 @@ class SurfaceToSurfaceContactExp(Interaction):
     @abaqus_method_doc
     def setValues(
         self,
-        mechanicalConstraint: SymbolicConstant = KINEMATIC,
-        weightingFactorType: SymbolicConstant = DEFAULT,
+        mechanicalConstraint: Literal[C.PENALTY, C.KINEMATIC] = KINEMATIC,
+        weightingFactorType: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,
         weightingFactor: float = 0,
         contactControls: str = "",
-        initialClearance: Union[SymbolicConstant, float] = OMIT,
+        initialClearance: Union[Literal[C.OMIT, C.COMPUTED], float] = OMIT,
         halfThreadAngle: Optional[str] = None,
         pitch: Optional[str] = None,
-        majorBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
-        meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
+        meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,

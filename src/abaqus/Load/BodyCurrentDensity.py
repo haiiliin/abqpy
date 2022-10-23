@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -37,7 +39,7 @@ class BodyCurrentDensity(Load):
         comp2: str,
         comp3: str,
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
     ):
         """This method creates a BodyCurrentDensity object.
 
@@ -78,7 +80,7 @@ class BodyCurrentDensity(Load):
 
     @abaqus_method_doc
     def setValues(
-        self, amplitude: str = UNSET, distributionType: SymbolicConstant = UNIFORM
+        self, amplitude: str = UNSET, distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM
     ):
         """This method modifies the data for an existing BodyCurrentDensity object in the step
         where it is created.

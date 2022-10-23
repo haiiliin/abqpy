@@ -1,9 +1,11 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .ClayHardening import ClayHardening
-from ....UtilityAndView.abaqusConstants import Boolean, EXPONENTIAL, OFF, SymbolicConstant
+from ....UtilityAndView.abaqusConstants import Boolean, EXPONENTIAL, OFF
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -59,7 +61,7 @@ class ClayPlasticity:
         self,
         table: tuple,
         intercept: Optional[float] = None,
-        hardening: SymbolicConstant = EXPONENTIAL,
+        hardening: Literal[C.EXPONENTIAL, C.TABULAR] = EXPONENTIAL,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

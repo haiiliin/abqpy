@@ -1,7 +1,9 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import (Boolean, FEATURE, OFF, ON, SOLID, SymbolicConstant,
                                               VERY_THIN, WIREFRAME)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -68,12 +70,12 @@ class OptionArg:
     @abaqus_method_doc
     def __init__(
         self,
-        renderStyle: SymbolicConstant = WIREFRAME,
-        visibleEdges: SymbolicConstant = FEATURE,
+        renderStyle: Literal[C.SHADED, C.FILLED, C.WIREFRAME, C.HIDDEN] = WIREFRAME,
+        visibleEdges: Literal[C.FEATURE, C.EXTERIOR, C.ALL, C.FREE, C.NONE, C.SHADED] = FEATURE,
         edgeColorWireHide: str = "",
         edgeColorFillShade: str = "",
-        edgeLineStyle: SymbolicConstant = SOLID,
-        edgeLineThickness: SymbolicConstant = VERY_THIN,
+        edgeLineStyle: Literal[C.DASHED, C.SOLID, C.DOT_DASH, C.DOTTED] = SOLID,
+        edgeLineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
         colorCodeOverride: Boolean = ON,
         fillColor: str = "",
         translucency: Boolean = OFF,

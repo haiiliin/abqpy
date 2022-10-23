@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -47,7 +49,7 @@ class Monitor:
     frequency: int
 
     @abaqus_method_doc
-    def __init__(self, node: str, dof: SymbolicConstant, frequency: int):
+    def __init__(self, node: str, dof: Literal[C.NN11, C.NT, C.U3, C.NT30, C.UR2, C.ELECTRICAL_POTENTIAL, C.NT11, C.U1, C.UR3, C.WARP, C.FLUID_PRESSURE, C.UR1, C.NN30, C.U2], frequency: int):
         """This method creates a request for a degree of freedom to be monitored in a general or
         modal procedure.
 

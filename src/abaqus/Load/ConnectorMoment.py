@@ -1,10 +1,12 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Load import Load
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNSET
+from ..UtilityAndView.abaqusConstants import UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -144,9 +146,9 @@ class ConnectorMoment(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        m1: Union[SymbolicConstant, float] = ...,
-        m2: Union[SymbolicConstant, float] = ...,
-        m3: Union[SymbolicConstant, float] = ...,
+        m1: Union[Literal[C.FREED, C.UNCHANGED], float] = ...,
+        m2: Union[Literal[C.FREED, C.UNCHANGED], float] = ...,
+        m3: Union[Literal[C.FREED, C.UNCHANGED], float] = ...,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing ConnectorMoment object in the

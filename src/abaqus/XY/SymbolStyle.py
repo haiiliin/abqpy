@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import Boolean, FILLED_CIRCLE, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -61,7 +63,7 @@ class SymbolStyle:
         self,
         color: str = "",
         show: Boolean = ON,
-        marker: SymbolicConstant = FILLED_CIRCLE,
+        marker: Literal[C.CROSS, C.FILLED_DIAMOND, C.FILLED_SQUARE, C.POINT, C.HOLLOW_CIRCLE, C.HOLLOW_TRI, C.HOLLOW_SQUARE, C.FILLED_TRI, C.HOLLOW_DIAMOND, C.FILLED_CIRCLE, C.XMARKER] = FILLED_CIRCLE,
         size: float = 2,
     ):
         """This method creates a SymbolStyle object.
@@ -117,7 +119,7 @@ class SymbolStyle:
         self,
         color: str = "",
         show: Boolean = ON,
-        marker: SymbolicConstant = FILLED_CIRCLE,
+        marker: Literal[C.CROSS, C.FILLED_DIAMOND, C.FILLED_SQUARE, C.POINT, C.HOLLOW_CIRCLE, C.HOLLOW_TRI, C.HOLLOW_SQUARE, C.FILLED_TRI, C.HOLLOW_DIAMOND, C.FILLED_CIRCLE, C.XMARKER] = FILLED_CIRCLE,
         size: float = 2,
     ):
         """This method modifies the SymbolStyle object.
