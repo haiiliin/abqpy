@@ -1,10 +1,12 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import FREE, INFLOW, SymbolicConstant, ZERO_PRESSURE
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -53,9 +55,9 @@ class EulerianBC(BoundaryCondition):
         name: str,
         createStepName: str,
         region: Region,
-        definition: SymbolicConstant = INFLOW,
-        inflowType: SymbolicConstant = FREE,
-        outflowType: SymbolicConstant = ZERO_PRESSURE,
+        definition: Literal[C.BOTH, C.INFLOW, C.OUTFLOW] = INFLOW,
+        inflowType: Literal[C.VOID, C.FREE, C.NONE] = FREE,
+        outflowType: Literal[C.FREE, C.ZERO_PRESSURE, C.EQUILIBRIUM, C.NON_REFLECTING] = ZERO_PRESSURE,
     ):
         """This method creates a EulerianBC object.
 
@@ -94,9 +96,9 @@ class EulerianBC(BoundaryCondition):
     def setValues(
         self,
         region: Region,
-        definition: SymbolicConstant = INFLOW,
-        inflowType: SymbolicConstant = FREE,
-        outflowType: SymbolicConstant = ZERO_PRESSURE,
+        definition: Literal[C.BOTH, C.INFLOW, C.OUTFLOW] = INFLOW,
+        inflowType: Literal[C.VOID, C.FREE, C.NONE] = FREE,
+        outflowType: Literal[C.FREE, C.ZERO_PRESSURE, C.EQUILIBRIUM, C.NON_REFLECTING] = ZERO_PRESSURE,
     ):
         """This method modifies the data for an existing EulerianBC object in the step where it is
         created.
@@ -122,9 +124,9 @@ class EulerianBC(BoundaryCondition):
     def setValuesInStep(
         self,
         stepName: str,
-        definition: SymbolicConstant = INFLOW,
-        inflowType: SymbolicConstant = FREE,
-        outflowType: SymbolicConstant = ZERO_PRESSURE,
+        definition: Literal[C.BOTH, C.INFLOW, C.OUTFLOW] = INFLOW,
+        inflowType: Literal[C.VOID, C.FREE, C.NONE] = FREE,
+        outflowType: Literal[C.FREE, C.ZERO_PRESSURE, C.EQUILIBRIUM, C.NON_REFLECTING] = ZERO_PRESSURE,
     ):
         """This method modifies the propagating data for an existing EulerianBC object in the
         specified step.

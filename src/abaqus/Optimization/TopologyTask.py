@@ -1,6 +1,7 @@
 from typing import Union, Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .DesignResponse import DesignResponse
 from .GeometricRestriction import GeometricRestriction
@@ -11,6 +12,7 @@ from .StopCondition import StopCondition
 from ..UtilityAndView.abaqusConstants import (AVERAGE_EDGE_LENGTH, Boolean, DEFAULT,
                                               GENERAL_OPTIMIZATION, MEDIUM, MODEL, NORMAL, OFF, ON,
                                               STANDARD, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -185,35 +187,40 @@ class TopologyTask(OptimizationTask):
     def __init__(
         self,
         name: str,
+<<<<<<< HEAD
         abaqusSensitivities: Boolean = True,
         algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
+=======
+        abaqusSensitivities: Boolean = False,
+        algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = GENERAL_OPTIMIZATION,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         densityMoveLimit: float = 0,
-        densityUpdateStrategy: SymbolicConstant = NORMAL,
+        densityUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
         elementDensityDeltaStopCriteria: float = 0,
         filterRadius: Optional[float] = None,
         firstCycleDeletedVolume: float = 5,
-        firstCycleDeletedVolumeTechnique: Union[SymbolicConstant, Boolean] = OFF,
+        firstCycleDeletedVolumeTechnique: Union[Literal[C.PERCENTAGE, C.ABSOLUTE], Boolean] = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
         freezeLoadRegions: Boolean = ON,
         frequencySpectrumWeight: float = 6,
-        initialDensity: SymbolicConstant = DEFAULT,
+        initialDensity: Literal[C.DEFAULT] = DEFAULT,
         materialInterpolationPenalty: float = 3,
-        materialInterpolationTechnique: SymbolicConstant = DEFAULT,
+        materialInterpolationTechnique: Literal[C.SIMP, C.DEFAULT, C.RAMP] = DEFAULT,
         maxDensity: float = 1,
         minDensity: Optional[float] = None,
-        modeTrackingRegion: SymbolicConstant = MODEL,
+        modeTrackingRegion: Literal[C.MODEL] = MODEL,
         numDesignCycles: int = 15,
         numFulfilledStopCriteria: int = 2,
         numTrackedModes: int = 5,
         objectiveFunctionDeltaStopCriteria: Optional[float] = None,
-        region: SymbolicConstant = MODEL,
-        softDeletionMethod: SymbolicConstant = STANDARD,
+        region: Literal[C.MODEL] = MODEL,
+        softDeletionMethod: Literal[C.STANDARD, C.VOLUME_COMPRESSION, C.MAX_SHEAR_STRAIN, C.AGGRESSIVE, C.MIN_PRINCIPAL_STRAIN, C.MAX_ELASTOPLASTIC_STRAIN] = STANDARD,
         softDeletionRadius: float = 0,
         softDeletionRegion: Optional[str] = None,
         softDeletionThreshold: Optional[float] = None,
-        stepSize: SymbolicConstant = MEDIUM,
+        stepSize: Literal[C.SMALL, C.LARGE, C.MODERATE, C.VERY_SMALL, C.DYNAMIC, C.MEDIUM] = MEDIUM,
         stiffnessMassDamping: Union[
-            SymbolicConstant, float
+            Literal[C.AVERAGE_EDGE_LENGTH], float
         ] = AVERAGE_EDGE_LENGTH,
         stopCriteriaDesignCycle: int = 4,
         structuralMassDamping: Optional[float] = None,
@@ -349,34 +356,34 @@ class TopologyTask(OptimizationTask):
     def setValues(
         self,
         abaqusSensitivities: Boolean = True,
-        algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
+        algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = GENERAL_OPTIMIZATION,
         densityMoveLimit: float = 0,
-        densityUpdateStrategy: SymbolicConstant = NORMAL,
+        densityUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
         elementDensityDeltaStopCriteria: float = 0,
         filterRadius: Optional[float] = None,
         firstCycleDeletedVolume: float = 5,
-        firstCycleDeletedVolumeTechnique: Union[SymbolicConstant, Boolean] = OFF,
+        firstCycleDeletedVolumeTechnique: Union[Literal[C.PERCENTAGE, C.ABSOLUTE], Boolean] = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
         freezeLoadRegions: Boolean = ON,
         frequencySpectrumWeight: float = 6,
-        initialDensity: SymbolicConstant = DEFAULT,
+        initialDensity: Literal[C.DEFAULT] = DEFAULT,
         materialInterpolationPenalty: float = 3,
-        materialInterpolationTechnique: SymbolicConstant = DEFAULT,
+        materialInterpolationTechnique: Literal[C.SIMP, C.DEFAULT, C.RAMP] = DEFAULT,
         maxDensity: float = 1,
         minDensity: Optional[float] = None,
-        modeTrackingRegion: SymbolicConstant = MODEL,
+        modeTrackingRegion: Literal[C.MODEL] = MODEL,
         numDesignCycles: int = 15,
         numFulfilledStopCriteria: int = 2,
         numTrackedModes: int = 5,
         objectiveFunctionDeltaStopCriteria: Optional[float] = None,
-        region: SymbolicConstant = MODEL,
-        softDeletionMethod: SymbolicConstant = STANDARD,
+        region: Literal[C.MODEL] = MODEL,
+        softDeletionMethod: Literal[C.STANDARD, C.VOLUME_COMPRESSION, C.MAX_SHEAR_STRAIN, C.AGGRESSIVE, C.MIN_PRINCIPAL_STRAIN, C.MAX_ELASTOPLASTIC_STRAIN] = STANDARD,
         softDeletionRadius: float = 0,
         softDeletionRegion: Optional[str] = None,
         softDeletionThreshold: Optional[float] = None,
-        stepSize: SymbolicConstant = MEDIUM,
+        stepSize: Literal[C.SMALL, C.LARGE, C.MODERATE, C.VERY_SMALL, C.DYNAMIC, C.MEDIUM] = MEDIUM,
         stiffnessMassDamping: Union[
-            SymbolicConstant, float
+            Literal[C.AVERAGE_EDGE_LENGTH], float
         ] = AVERAGE_EDGE_LENGTH,
         stopCriteriaDesignCycle: int = 4,
         structuralMassDamping: Optional[float] = None,

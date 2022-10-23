@@ -878,7 +878,7 @@ class XYSession(XYSessionBase):
         ],
         variable: Tuple[
             Tuple[
-                C.str,
+                str,
                 Literal[
                     C.ELEMENT_CENTROID,
                     C.ELEMENT_FACE,

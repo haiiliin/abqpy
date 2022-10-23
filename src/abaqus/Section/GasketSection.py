@@ -1,9 +1,11 @@
 from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Section import Section
 from ..UtilityAndView.abaqusConstants import DEFAULT, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -60,9 +62,9 @@ class GasketSection(Section):
         material: str,
         crossSection: float = 1,
         initialGap: float = 0,
-        initialThickness: Union[SymbolicConstant, float] = DEFAULT,
+        initialThickness: Union[Literal[C.DEFAULT], float] = DEFAULT,
         initialVoid: float = 0,
-        stabilizationStiffness: Union[SymbolicConstant, float] = DEFAULT,
+        stabilizationStiffness: Union[Literal[C.DEFAULT], float] = DEFAULT,
     ):
         """This method creates a GasketSection object.
 
@@ -109,9 +111,9 @@ class GasketSection(Section):
         self,
         crossSection: float = 1,
         initialGap: float = 0,
-        initialThickness: Union[SymbolicConstant, float] = DEFAULT,
+        initialThickness: Union[Literal[C.DEFAULT], float] = DEFAULT,
         initialVoid: float = 0,
-        stabilizationStiffness: Union[SymbolicConstant, float] = DEFAULT,
+        stabilizationStiffness: Union[Literal[C.DEFAULT], float] = DEFAULT,
     ):
         """This method modifies the GasketSection object.
 

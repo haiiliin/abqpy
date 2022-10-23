@@ -1,8 +1,10 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ...UtilityAndView.abaqusConstants import Boolean, MINIMUM_MOVE, ON, STANDARD, SymbolicConstant
+from ...UtilityAndView.abaqusConstants import Boolean, MINIMUM_MOVE, ON, STANDARD
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -28,9 +30,9 @@ class ConstrainedSketcherOptions:
         maxCoplanarEntities: int = 300,
         autoConstrainAngularTolerance: float = 0,
         autoConstrainLinearTolerance: Optional[float] = None,
-        autoConstrainOptions: Optional[SymbolicConstant] = None,
-        dragMethod: SymbolicConstant = MINIMUM_MOVE,
-        editMethod: SymbolicConstant = STANDARD,
+        autoConstrainOptions: Optional[Literal[C.PERPENDICULAR, C.EQUALRADIUS, C.IDENTICAL, C.TANGENT, C.PARALLEL, C.CONCENTRIC]] = None,
+        dragMethod: Literal[C.WEIGHTED, C.RELAXATION, C.MINIMUM_MOVE, C.STANDARD] = MINIMUM_MOVE,
+        editMethod: Literal[C.WEIGHTED, C.RELAXATION, C.MINIMUM_MOVE, C.STANDARD] = STANDARD,
     ):
         """This method modifies the ConstrainedSketchOptions object.
 

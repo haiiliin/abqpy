@@ -1,6 +1,7 @@
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AnalysisStep import AnalysisStep
 from ..Adaptivity.AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
@@ -18,6 +19,7 @@ from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import (Boolean, DEFAULT, OFF, SOLVER_DEFAULT, SUBSPACE,
                                               SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -174,14 +176,14 @@ class BuckleStep(AnalysisStep):
         previous: str,
         numEigen: int,
         description: str = "",
-        eigensolver: SymbolicConstant = SUBSPACE,
+        eigensolver: Literal[C.LANCZOS, C.SUBSPACE] = SUBSPACE,
         minEigen: Optional[float] = None,
         maxEigen: Optional[float] = None,
         vectors: Optional[int] = None,
         maxIterations: int = 30,
-        blockSize: SymbolicConstant = DEFAULT,
-        maxBlocks: SymbolicConstant = DEFAULT,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
+        blockSize: Literal[C.DEFAULT] = DEFAULT,
+        maxBlocks: Literal[C.LANCZOS, C.DEFAULT] = DEFAULT,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         maintainAttributes: Boolean = False,
     ):
         """This method creates a BuckleStep object.
@@ -245,14 +247,14 @@ class BuckleStep(AnalysisStep):
     def setValues(
         self,
         description: str = "",
-        eigensolver: SymbolicConstant = SUBSPACE,
+        eigensolver: Literal[C.LANCZOS, C.SUBSPACE] = SUBSPACE,
         minEigen: Optional[float] = None,
         maxEigen: Optional[float] = None,
         vectors: Optional[int] = None,
         maxIterations: int = 30,
-        blockSize: SymbolicConstant = DEFAULT,
-        maxBlocks: SymbolicConstant = DEFAULT,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
+        blockSize: Literal[C.DEFAULT] = DEFAULT,
+        maxBlocks: Literal[C.LANCZOS, C.DEFAULT] = DEFAULT,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
     ):
         """This method modifies the BuckleStep object.
 
