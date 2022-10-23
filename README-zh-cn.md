@@ -26,3 +26,9 @@ Abaqus/Python 脚本的类型提示
 请随时创建您的拉取请求。
 
 请参阅 [CONTRIBUTING](https://github.com/haiiliin/abqpy/blob/main/.github/CONTRIBUTING.md) 了解贡献指南.
+
+## 截图
+
+![screenshot](https://raw.githubusercontent.com/haiiliin/abqpy/main/docs/source/images/model-code.gif)
+
+![screenshot](https://raw.githubusercontent.com/haiiliin/abqpy/main/docs/source/images/output-code.gif)
