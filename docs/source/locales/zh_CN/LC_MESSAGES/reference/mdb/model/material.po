@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 14:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -6717,7 +6717,6 @@ msgid ""
 "BINGHAM_PLASTIC and HERSCHEL-BULKLEY were added."
 msgstr ""
 
-#: abaqus.Material.Gap.GapFlow.GapFlow.__init__:23
 #: abaqus.Material.Material.Material.GapFlow:23 of
 msgid ""
 "A SymbolicConstant specifying the type of gap flow. Possible values are "
@@ -10784,6 +10783,13 @@ msgid ""
 "Check `GapFlow.__init__ on help.3ds.com/2021 "
 "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gapflowpyc.htm?contextscope=all"
 "#simaker-gapflow__init__pyc>`__."
+msgstr ""
+
+#: abaqus.Material.Gap.GapFlow.GapFlow.__init__:23 of
+msgid ""
+"A SymbolicConstant specifying the type of gap flow. Possible values are "
+"NEWTONIAN, POWER_LAW, BINGHAM_PLASTIC, and HERSCHEL_BULKLEY. The default "
+"value is NEWTONIAN."
 msgstr ""
 
 #: ../../reference/mdb/model/material.rst:291
