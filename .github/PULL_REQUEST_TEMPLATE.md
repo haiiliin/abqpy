@@ -28,7 +28,7 @@ Refer [here](https://github.com/haiiliin/abqpy/discussions/1500) to resolve back
 Please check the options that are relevant.
 
 - [ ] Bug Fix (non-breaking change which fixes an issue)
-  - [ ] bug (fixes #...)
+  - [ ] bug (fixes an issue)
   - [ ] test (adds/updates test)
   - [ ] typo (fixes typo)
 - [ ] New Feature (non-breaking change which adds functionality)
