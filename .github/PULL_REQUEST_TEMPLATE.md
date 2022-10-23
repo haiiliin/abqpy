@@ -25,24 +25,18 @@ Refer [here](https://github.com/haiiliin/abqpy/discussions/1500) to resolve back
 
 # Type of change
 
-Please delete options that are not relevant.
+Please check the options that are relevant, the corresponding labels will be added automatically.
 
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] This change requires a documentation update
-
-# Check to add labels
-
-Please check the following labels to add to the pull request.
-
-- [ ] automation
-- [ ] docs
-- [ ] bug
-- [ ] enhancement
-- [ ] new feature
-- [ ] test
-- [ ] typing
-- [ ] typo
-- [ ] workflow
-- [ ] release
+- [ ] Bug Fix (non-breaking change which fixes an issue)
+  - [ ] bug (fixes an issue)
+  - [ ] test (adds/updates test)
+  - [ ] typo (fixes typo)
+- [ ] New Feature (non-breaking change which adds functionality)
+  - [ ] typing (adds/updates typing annotations)
+- [ ] Documentation Update
+  - [ ] docs (adds/updates documentation)
+  - [ ] docs-preview (check this to preview docs)
+- [ ] Automation/Translation/Automation
+  - [ ] workflow (adds/updates workflow)
+  - [ ] release (adds/updates release)
+  - [ ] translation (adds/updates translation)
