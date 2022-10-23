@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -36,7 +38,7 @@ class SurfaceCurrentDensity(Load):
         comp1: str,
         comp2: str,
         comp3: str,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
     ):
         """This method creates a SurfaceCurrentDensity object.
@@ -78,7 +80,7 @@ class SurfaceCurrentDensity(Load):
 
     @abaqus_method_doc
     def setValues(
-        self, distributionType: SymbolicConstant = UNIFORM, amplitude: str = UNSET
+        self, distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM, amplitude: str = UNSET
     ):
         """This method modifies the data for an existing SurfaceCurrentDensity object in the step
         where it is created.

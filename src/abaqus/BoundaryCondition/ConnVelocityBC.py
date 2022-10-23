@@ -1,10 +1,12 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import SET, SymbolicConstant, UNIFORM, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -58,14 +60,14 @@ class ConnVelocityBC(BoundaryCondition):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        v1: Union[SymbolicConstant, float] = UNSET,
-        v2: Union[SymbolicConstant, float] = UNSET,
-        v3: Union[SymbolicConstant, float] = UNSET,
-        vr1: Union[SymbolicConstant, float] = UNSET,
-        vr2: Union[SymbolicConstant, float] = UNSET,
-        vr3: Union[SymbolicConstant, float] = UNSET,
+        v1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        v2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        v3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        vr1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        vr2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        vr3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
     ):
         """This method creates a ConnVelocityBC object on a wire region. Alternatively, the
         boundary condition may also be applied to a wire set referenced from an assembled
@@ -142,14 +144,14 @@ class ConnVelocityBC(BoundaryCondition):
         region: str = "",
         fastenerName: str = "",
         fastenerSetName: str = "",
-        v1: Union[SymbolicConstant, float] = UNSET,
-        v2: Union[SymbolicConstant, float] = UNSET,
-        v3: Union[SymbolicConstant, float] = UNSET,
-        vr1: Union[SymbolicConstant, float] = UNSET,
-        vr2: Union[SymbolicConstant, float] = UNSET,
-        vr3: Union[SymbolicConstant, float] = UNSET,
+        v1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        v2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        v3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        vr1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        vr2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        vr3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
     ):
         """This method modifies the data for an existing ConnVelocityBC object in the step where it
         is created.
@@ -209,12 +211,12 @@ class ConnVelocityBC(BoundaryCondition):
     def setValuesInStep(
         self,
         stepName: str,
-        v1: Union[SymbolicConstant, float] = SET,
-        v2: Union[SymbolicConstant, float] = SET,
-        v3: Union[SymbolicConstant, float] = SET,
-        vr1: Union[SymbolicConstant, float] = SET,
-        vr2: Union[SymbolicConstant, float] = SET,
-        vr3: Union[SymbolicConstant, float] = SET,
+        v1: Union[Literal[C.SET, C.FREED], float] = SET,
+        v2: Union[Literal[C.SET, C.FREED], float] = SET,
+        v3: Union[Literal[C.SET, C.FREED], float] = SET,
+        vr1: Union[Literal[C.SET, C.FREED], float] = SET,
+        vr2: Union[Literal[C.SET, C.FREED], float] = SET,
+        vr3: Union[Literal[C.SET, C.FREED], float] = SET,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing ConnVelocityBC object in the

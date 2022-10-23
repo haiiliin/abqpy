@@ -1,10 +1,12 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import Boolean, MAXIMUM, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -75,8 +77,13 @@ class DrillControl(GeometricRestriction):
         region: Region,
         csys: Optional[int] = None,
         drawAngle: float = 0,
+<<<<<<< HEAD
         masterPoint: Optional[str] = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
+=======
+        mainPoint: Optional[str] = None,
+        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+>>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004))
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -141,8 +148,13 @@ class DrillControl(GeometricRestriction):
         self,
         csys: Optional[int] = None,
         drawAngle: float = 0,
+<<<<<<< HEAD
         masterPoint: Optional[str] = None,
         masterPointDetermination: SymbolicConstant = MAXIMUM,
+=======
+        mainPoint: Optional[str] = None,
+        mainPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+>>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004))
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,

@@ -1,10 +1,16 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
+<<<<<<< HEAD
 from ..UtilityAndView.abaqusConstants import Boolean, MAXIMUM, ON, SymbolicConstant
+=======
+from ..UtilityAndView.abaqusConstants import Boolean, MAXIMUM, ON, SymbolicConstant, TRUE
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+>>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004))
 
 
 @abaqus_class_doc
@@ -64,7 +70,11 @@ class ShapePlanarSymmetry(GeometricRestriction):
         clientDirection: tuple,
         region: Region,
         csys: Optional[int] = None,
+<<<<<<< HEAD
         masterPointDetermination: SymbolicConstant = MAXIMUM,
+=======
+        mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+>>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004))
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -120,7 +130,11 @@ class ShapePlanarSymmetry(GeometricRestriction):
     def setValues(
         self,
         csys: Optional[int] = None,
+<<<<<<< HEAD
         masterPointDetermination: SymbolicConstant = MAXIMUM,
+=======
+        mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+>>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004))
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,

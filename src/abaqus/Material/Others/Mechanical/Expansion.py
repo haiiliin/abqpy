@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ....UtilityAndView.abaqusConstants import Boolean, ISOTROPIC, OFF, SymbolicConstant
+from ....UtilityAndView.abaqusConstants import Boolean, ISOTROPIC, OFF
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -55,7 +57,7 @@ class Expansion:
     @abaqus_method_doc
     def __init__(
         self,
-        type: SymbolicConstant = ISOTROPIC,
+        type: Literal[C.ANISOTROPIC, C.ISOTROPIC, C.SHORT_FIBER, C.ORTHOTROPIC] = ISOTROPIC,
         userSubroutine: Boolean = OFF,
         zero: float = 0,
         temperatureDependency: Boolean = OFF,

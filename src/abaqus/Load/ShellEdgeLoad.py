@@ -1,11 +1,13 @@
 from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (AXIS_1, Boolean, GENERAL, NORMAL, OFF, ON,
                                               SymbolicConstant, UNIFORM, UNSET)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -42,17 +44,17 @@ class ShellEdgeLoad(Load):
         createStepName: str,
         region: Region,
         magnitude: float,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
         angle: float = 0,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2, C.GENERAL] = AXIS_1,
         localCsys: int = GENERAL,
         userCsys: str = GENERAL,
         directionVector: tuple = (),
         follower: Boolean = ON,
         resultant: Boolean = OFF,
-        traction: SymbolicConstant = NORMAL,
+        traction: Literal[C.TRANSVERSE, C.SHEAR, C.GENERAL, C.NORMAL, C.MOMENT] = NORMAL,
     ):
         """This method creates a ShellEdgeLoad object.
 
@@ -129,17 +131,17 @@ class ShellEdgeLoad(Load):
     @abaqus_method_doc
     def setValues(
         self,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
         angle: float = 0,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2, C.GENERAL] = AXIS_1,
         localCsys: int = GENERAL,
         userCsys: str = GENERAL,
         directionVector: tuple = (),
         follower: Boolean = ON,
         resultant: Boolean = OFF,
-        traction: SymbolicConstant = NORMAL,
+        traction: Literal[C.TRANSVERSE, C.SHEAR, C.GENERAL, C.NORMAL, C.MOMENT] = NORMAL,
     ):
         """This method modifies the data for an existing ShellEdgeLoad object in the step where it
         is created.
@@ -199,7 +201,7 @@ class ShellEdgeLoad(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        magnitude: Union[SymbolicConstant, float] = ...,
+        magnitude: Union[Literal[C.UNCHANGED], float] = ...,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing ShellEdgeLoad object in the

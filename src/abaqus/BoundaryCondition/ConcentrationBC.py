@@ -1,11 +1,13 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (Boolean, OFF, SymbolicConstant, UNCHANGED, UNIFORM,
                                               UNSET)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -52,7 +54,7 @@ class ConcentrationBC(BoundaryCondition):
         region: Region,
         fieldName: str = "",
         magnitude: float = 0,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
         fixed: Boolean = OFF,
     ):
@@ -102,7 +104,7 @@ class ConcentrationBC(BoundaryCondition):
         self,
         fieldName: str = "",
         magnitude: float = 0,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         amplitude: str = UNSET,
         fixed: Boolean = OFF,
     ):
@@ -136,7 +138,7 @@ class ConcentrationBC(BoundaryCondition):
     def setValuesInStep(
         self,
         stepName: str,
-        magnitude: Union[SymbolicConstant, float] = UNCHANGED,
+        magnitude: Union[Literal[C.FREED], float] = UNCHANGED,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing ConcentrationBC object in the

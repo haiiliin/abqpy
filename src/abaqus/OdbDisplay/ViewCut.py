@@ -1,9 +1,11 @@
 from typing import Union, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import (AXIS_1, AXIS_2, AXIS_3, Boolean, FIRST_FRAME, OFF, ON,
                                               SymbolicConstant, TRANSLATE)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -125,15 +127,15 @@ class ViewCut:
     def __init__(
         self,
         name: str,
-        shape: SymbolicConstant,
+        shape: Literal[C.CYLINDER, C.PLANE, C.ISOSURFACE, C.SPHERE],
         origin: tuple,
-        normal: Union[SymbolicConstant, float],
-        axis2: Union[SymbolicConstant, float],
+        normal: Union[Literal[C.SPHERE, C.AXIS_1, C.AXIS_3, C.CYLINDER, C.ISOSURFACE, C.AXIS_2], float],
+        axis2: Union[Literal[C.SPHERE, C.AXIS_1, C.AXIS_3, C.CYLINDER, C.ISOSURFACE, C.AXIS_2], float],
         csysName: str,
-        cylinderAxis: Union[SymbolicConstant, float],
+        cylinderAxis: Union[Literal[C.PLANE, C.SPHERE, C.AXIS_1, C.AXIS_3, C.ISOSURFACE, C.AXIS_2], float],
         followDeformation: Boolean = OFF,
         overrideAveraging: Boolean = ON,
-        referenceFrame: SymbolicConstant = FIRST_FRAME,
+        referenceFrame: Literal[C.CURRENT_FRAME, C.LAST_FRAME, C.FIRST_FRAME] = FIRST_FRAME,
     ):
         """This method creates a ViewCut object.
 
@@ -199,10 +201,10 @@ class ViewCut:
     def setValues(
         self,
         angle: Optional[float] = None,
-        motion: SymbolicConstant = TRANSLATE,
+        motion: Literal[C.ROTATE, C.PLANE, C.TRANSLATE] = TRANSLATE,
         position: Optional[float] = None,
         radius: Optional[float] = None,
-        rotationAxis: SymbolicConstant = AXIS_2,
+        rotationAxis: Literal[C.AXIS_1, C.PLANE, C.AXIS_2, C.AXIS_3] = AXIS_2,
         value: Optional[float] = None,
         showModelAboveCut: Boolean = OFF,
         showModelOnCut: Boolean = ON,
@@ -210,12 +212,12 @@ class ViewCut:
         showFreeBodyCut: Boolean = OFF,
         csysName: str = "",
         origin: tuple = (),
-        normal: Union[SymbolicConstant, float] = AXIS_1,
-        axis2: Union[SymbolicConstant, float] = AXIS_2,
-        cylinderAxis: Union[SymbolicConstant, float] = AXIS_3,
+        normal: Union[Literal[C.SPHERE, C.AXIS_1, C.AXIS_3, C.CYLINDER, C.ISOSURFACE, C.AXIS_2], float] = AXIS_1,
+        axis2: Union[Literal[C.SPHERE, C.AXIS_1, C.AXIS_3, C.CYLINDER, C.ISOSURFACE, C.AXIS_2], float] = AXIS_2,
+        cylinderAxis: Union[Literal[C.PLANE, C.SPHERE, C.AXIS_1, C.AXIS_3, C.ISOSURFACE, C.AXIS_2], float] = AXIS_3,
         followDeformation: Boolean = OFF,
         overrideAveraging: Boolean = ON,
-        referenceFrame: SymbolicConstant = FIRST_FRAME,
+        referenceFrame: Literal[C.CURRENT_FRAME, C.LAST_FRAME, C.FIRST_FRAME] = FIRST_FRAME,
     ):
         """This method modifies the ViewCut object.
 

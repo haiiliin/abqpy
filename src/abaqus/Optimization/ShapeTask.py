@@ -1,6 +1,7 @@
 from typing import Dict, Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .DesignResponse import DesignResponse
 from .GeometricRestriction import GeometricRestriction
@@ -12,6 +13,7 @@ from ..UtilityAndView.abaqusConstants import (Boolean, CONDITION_BASED_OPTIMIZAT
                                               CONSTRAINED_LAPLACIAN, EVERY_CYCLE, FE_SAFE, LOW,
                                               MINIMUM, MODEL, NORMAL, OFF, ON, POSITIONS,
                                               SymbolicConstant, TASK_REGION_LAYERS)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -236,10 +238,10 @@ class ShapeTask(OptimizationTask):
         self,
         name: str,
         abaqusSensitivities: Boolean = True,
-        absoluteStepSizeControl: SymbolicConstant = MINIMUM,
+        absoluteStepSizeControl: Literal[C.MINIMUM, C.AVERAGE] = MINIMUM,
         activateDurability: Boolean = ON,
         additionalDurabilityFiles: str = "",
-        constrainedLaplacianConvergenceLevel: SymbolicConstant = NORMAL,
+        constrainedLaplacianConvergenceLevel: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
         curvatureSmoothingEdgeLength: float = 5,
         durabilityInputfile: str = "",
         durabilitySolver: str = FE_SAFE,
@@ -248,36 +250,41 @@ class ShapeTask(OptimizationTask):
         filterExponent: float = 1,
         filterMaxRadius: Optional[float] = None,
         filterRadiusReduction: Optional[float] = None,
-        firstCycleDeletedVolumeTechnique: Union[SymbolicConstant, Boolean] = OFF,
+        firstCycleDeletedVolumeTechnique: Union[Literal[C.PERCENTAGE, C.ABSOLUTE], Boolean] = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
-        frozenBoundaryConditionRegion: SymbolicConstant = MODEL,
-        geometricRestrictionEvaluationFrequency: SymbolicConstant = LOW,
+        frozenBoundaryConditionRegion: Literal[C.MODEL] = MODEL,
+        geometricRestrictionEvaluationFrequency: Literal[C.LOW, C.MEDIUM, C.HIGH] = LOW,
         growthScaleFactor: float = 1,
         haltUponViolation: Boolean = OFF,
         layerReferenceRegion: Optional[str] = None,
-        meshSmoothingRegionMethod: SymbolicConstant = TASK_REGION_LAYERS,
-        meshSmoothingStrategy: SymbolicConstant = CONSTRAINED_LAPLACIAN,
-        midsideInterpolation: SymbolicConstant = POSITIONS,
-        numFreeNodeLayers: SymbolicConstant = 0,
+        meshSmoothingRegionMethod: Literal[C.NUMBER_OF_LAYERS, C.REGION, C.TASK_REGION_LAYERS] = TASK_REGION_LAYERS,
+        meshSmoothingStrategy: Literal[C.CONSTRAINED_LAPLACIAN, C.LOCAL_GRADIENT] = CONSTRAINED_LAPLACIAN,
+        midsideInterpolation: Literal[C.POSITIONS, C.OPTIMIZATION_DISPLACEMENT] = POSITIONS,
+        numFreeNodeLayers: Literal[C.FIX_NONE] = 0,
         numSmoothedElementLayers: Optional[int] = None,
         presumeFeasibleBCRegionAtStart: Boolean = ON,
         quadMaxAngle: float = 160,
         quadMinAngle: float = 20,
         quadSkew: float = 30,
         quadTaper: float = 0,
-        region: SymbolicConstant = MODEL,
+        region: Literal[C.MODEL] = MODEL,
         reportPoorQualityElements: Boolean = OFF,
         reportQualityViolation: Boolean = OFF,
         shrinkScaleFactor: float = 1,
         smoothingRegion: Optional[str] = None,
-        targetMeshQuality: SymbolicConstant = LOW,
+        targetMeshQuality: Literal[C.LOW, C.MEDIUM, C.NONE, C.HIGH] = LOW,
         tetAspectRatio: float = 100,
         tetMaxAspect: float = 8,
         tetMinAspect: float = 0,
         tetSkew: float = 100,
         triMaxAngle: float = 140,
         triMinAngle: float = 20,
+<<<<<<< HEAD
         updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
+=======
+        updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
+        groupOperator: Boolean = OFF,
+>>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method creates a ShapeTask object.
 
@@ -446,11 +453,11 @@ class ShapeTask(OptimizationTask):
     def setValues(
         self,
         abaqusSensitivities: Boolean = True,
-        absoluteStepSizeControl: SymbolicConstant = MINIMUM,
+        absoluteStepSizeControl: Literal[C.MINIMUM, C.AVERAGE] = MINIMUM,
         activateDurability: Boolean = ON,
         additionalDurabilityFiles: str = "",
-        algorithm: SymbolicConstant = CONDITION_BASED_OPTIMIZATION,
-        constrainedLaplacianConvergenceLevel: SymbolicConstant = NORMAL,
+        algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = CONDITION_BASED_OPTIMIZATION,
+        constrainedLaplacianConvergenceLevel: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
         curvatureSmoothingEdgeLength: float = 5,
         durabilityInputfile: str = "",
         durabilitySolver: str = FE_SAFE,
@@ -459,36 +466,41 @@ class ShapeTask(OptimizationTask):
         filterExponent: float = 1,
         filterMaxRadius: Optional[float] = None,
         filterRadiusReduction: Optional[float] = None,
-        firstCycleDeletedVolumeTechnique: Union[SymbolicConstant, Boolean] = OFF,
+        firstCycleDeletedVolumeTechnique: Union[Literal[C.PERCENTAGE, C.ABSOLUTE], Boolean] = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
-        frozenBoundaryConditionRegion: SymbolicConstant = MODEL,
-        geometricRestrictionEvaluationFrequency: SymbolicConstant = LOW,
+        frozenBoundaryConditionRegion: Literal[C.MODEL] = MODEL,
+        geometricRestrictionEvaluationFrequency: Literal[C.LOW, C.MEDIUM, C.HIGH] = LOW,
         growthScaleFactor: float = 1,
         haltUponViolation: Boolean = OFF,
         layerReferenceRegion: Optional[str] = None,
-        meshSmoothingRegionMethod: SymbolicConstant = TASK_REGION_LAYERS,
-        meshSmoothingStrategy: SymbolicConstant = CONSTRAINED_LAPLACIAN,
-        midsideInterpolation: SymbolicConstant = POSITIONS,
-        numFreeNodeLayers: SymbolicConstant = 0,
+        meshSmoothingRegionMethod: Literal[C.NUMBER_OF_LAYERS, C.REGION, C.TASK_REGION_LAYERS] = TASK_REGION_LAYERS,
+        meshSmoothingStrategy: Literal[C.CONSTRAINED_LAPLACIAN, C.LOCAL_GRADIENT] = CONSTRAINED_LAPLACIAN,
+        midsideInterpolation: Literal[C.POSITIONS, C.OPTIMIZATION_DISPLACEMENT] = POSITIONS,
+        numFreeNodeLayers: Literal[C.FIX_NONE] = 0,
         numSmoothedElementLayers: Optional[int] = None,
         presumeFeasibleBCRegionAtStart: Boolean = ON,
         quadMaxAngle: float = 160,
         quadMinAngle: float = 20,
         quadSkew: float = 30,
         quadTaper: float = 0,
-        region: SymbolicConstant = MODEL,
+        region: Literal[C.MODEL] = MODEL,
         reportPoorQualityElements: Boolean = OFF,
         reportQualityViolation: Boolean = OFF,
         shrinkScaleFactor: float = 1,
         smoothingRegion: Optional[str] = None,
-        targetMeshQuality: SymbolicConstant = LOW,
+        targetMeshQuality: Literal[C.LOW, C.MEDIUM, C.NONE, C.HIGH] = LOW,
         tetAspectRatio: float = 100,
         tetMaxAspect: float = 8,
         tetMinAspect: float = 0,
         tetSkew: float = 100,
         triMaxAngle: float = 140,
         triMinAngle: float = 20,
+<<<<<<< HEAD
         updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
+=======
+        updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
+        groupOperator: Boolean = OFF,
+>>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method modifies the ShapeTask object.
 
