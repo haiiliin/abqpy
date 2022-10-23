@@ -1,9 +1,11 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .ContactControl import ContactControl
 from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -57,7 +59,7 @@ class ExpContactControl(ContactControl):
     def __init__(
         self,
         name: str,
-        globTrkChoice: SymbolicConstant = DEFAULT,
+        globTrkChoice: Literal[C.SPECIFY, C.DEFAULT] = DEFAULT,
         globTrkInc: Optional[int] = None,
         fastLocalTrk: Boolean = ON,
         scalePenalty: float = 1,
@@ -111,7 +113,7 @@ class ExpContactControl(ContactControl):
     @abaqus_method_doc
     def setValues(
         self,
-        globTrkChoice: SymbolicConstant = DEFAULT,
+        globTrkChoice: Literal[C.SPECIFY, C.DEFAULT] = DEFAULT,
         globTrkInc: Optional[int] = None,
         fastLocalTrk: Boolean = ON,
         scalePenalty: float = 1,

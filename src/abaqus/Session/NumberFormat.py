@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import Boolean, ENGINEERING, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -42,7 +44,7 @@ class NumberFormat:
     def __init__(
         self,
         blankPad: Boolean = ON,
-        format: SymbolicConstant = ENGINEERING,
+        format: Literal[C.AUTOMATIC, C.ENGINEERING, C.SCIENTIFIC] = ENGINEERING,
         numDigits: int = 6,
         precision: int = 0,
     ):

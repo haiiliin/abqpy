@@ -1,6 +1,7 @@
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AnalysisStep import AnalysisStep
 from ..Adaptivity.AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
@@ -17,6 +18,7 @@ from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import ALL, Boolean, OFF, SOLVER_DEFAULT, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -169,11 +171,11 @@ class ComplexFrequencyStep(AnalysisStep):
         self,
         name: str,
         previous: str,
-        numEigen: SymbolicConstant = ALL,
+        numEigen: Literal[C.ALL] = ALL,
         description: str = "",
         shift: Optional[float] = None,
         frictionDamping: Boolean = OFF,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         maintainAttributes: Boolean = False,
         minEigen: Optional[float] = None,
         maxEigen: Optional[float] = None,
@@ -238,11 +240,11 @@ class ComplexFrequencyStep(AnalysisStep):
     @abaqus_method_doc
     def setValues(
         self,
-        numEigen: SymbolicConstant = ALL,
+        numEigen: Literal[C.ALL] = ALL,
         description: str = "",
         shift: Optional[float] = None,
         frictionDamping: Boolean = OFF,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         minEigen: Optional[float] = None,
         maxEigen: Optional[float] = None,
         propertyEvaluationFrequency: Optional[float] = None,

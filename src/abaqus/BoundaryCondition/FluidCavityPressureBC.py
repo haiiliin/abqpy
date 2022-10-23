@@ -1,10 +1,12 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant, UNCHANGED, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -107,7 +109,7 @@ class FluidCavityPressureBC(BoundaryCondition):
     def setValuesInStep(
         self,
         stepName: str,
-        magnitude: Union[SymbolicConstant, float] = UNCHANGED,
+        magnitude: Union[Literal[C.FREED], float] = UNCHANGED,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing FluidCavityPressureBC object

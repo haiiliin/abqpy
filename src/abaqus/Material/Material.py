@@ -67,8 +67,8 @@ from ..UtilityAndView.abaqusConstants import (ALLISO, Boolean, CENTROID, COEFFIC
                                               INPUT, ISOTROPIC, LINEAR, LOGARITHMIC, LONG_TERM,
                                               MECHANICAL, MSFLD, MT, NEWTONIAN, NMORI, NO, NONE,
                                               OFF, ON, POISSON, PRONY, RELATIVE_SLOPE_DROP, STRAIN,
-                                              STRESS, SymbolicConstant, TABULAR, TOTAL, UNIAXIAL,
-                                              UNIFORM, UNKNOWN, VOLUMETRIC)
+                                              STRESS, TABULAR, TOTAL, UNIAXIAL, UNIFORM,
+                                              UNKNOWN, VOLUMETRIC)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -1371,7 +1371,7 @@ class Material(MaterialBase):
         moduliTimeScale: Literal[C.LONG_TERM, C.INSTANTANEOUS] = LONG_TERM,
         temperatureDependency: Boolean = OFF,
         n: int = 1,
-        beta: Union[SymbolicConstant, float] = FITTED_VALUE,
+        beta: Union[Literal[C.FITTED_VALUE, C.VAN_DER_WAALS], float] = FITTED_VALUE,
         testData: Boolean = ON,
         compressible: Boolean = OFF,
         properties: int = 0,
@@ -2466,7 +2466,7 @@ class Material(MaterialBase):
     @abaqus_method_doc
     def Viscoelastic(
         self,
-        domain: SymbolicConstant,
+        domain: Literal[C.FREQUENCY, C.TIME],
         table: tuple,
         frequency: Literal[C.FORMULA, C.TABULAR, C.PRONY, C.CREEP_TEST_DATA, C.RELAXATION_TEST_DATA] = FORMULA,
         type: Literal[C.ISOTROPIC, C.ISOTROPIC, C.TRACTION] = ISOTROPIC,

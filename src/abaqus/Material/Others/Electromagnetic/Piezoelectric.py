@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ....UtilityAndView.abaqusConstants import Boolean, OFF, STRESS, SymbolicConstant
+from ....UtilityAndView.abaqusConstants import Boolean, OFF, STRESS
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -74,7 +76,7 @@ class Piezoelectric:
     def __init__(
         self,
         table: tuple,
-        type: SymbolicConstant = STRESS,
+        type: Literal[C.STRESS, C.STRAIN] = STRESS,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

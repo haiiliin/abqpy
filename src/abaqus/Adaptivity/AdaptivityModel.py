@@ -1,6 +1,7 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AdaptiveMeshConstraint import AdaptiveMeshConstraint
 from .AdaptiveMeshControl import AdaptiveMeshControl
@@ -14,8 +15,8 @@ from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (Boolean, CURRENT, DEFAULT, DEFAULT_LIMIT,
                                               ELEMENT_CENTER_PROJECTION, GEOMETRY_ENHANCED,
                                               INDEPENDENT, LAST_INCREMENT, MODEL, OFF, ON,
-                                              SECOND_ORDER_ADVECTION, SymbolicConstant, UNIFORM,
-                                              UNSET)
+                                              SECOND_ORDER_ADVECTION, UNIFORM, UNSET)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -49,7 +50,7 @@ class AdaptivityModel(ModelBase):
     def AdaptiveMeshConstraint(
         self,
         name: str,
-        category: SymbolicConstant,
+        category: Literal[C.THERMAL, C.MECHANICAL],
         region: Region,
         localCsys: Optional[DatumCsys] = None,
     ) -> AdaptiveMeshConstraint:
@@ -94,13 +95,13 @@ class AdaptivityModel(ModelBase):
     def AdaptiveMeshControl(
         self,
         name: str,
-        remapping: SymbolicConstant = SECOND_ORDER_ADVECTION,
-        smoothingAlgorithm: SymbolicConstant = GEOMETRY_ENHANCED,
-        smoothingPriority: SymbolicConstant = UNIFORM,
+        remapping: Literal[C.SECOND_ORDER_ADVECTION, C.FIRST_ORDER_ADVECTION] = SECOND_ORDER_ADVECTION,
+        smoothingAlgorithm: Literal[C.GEOMETRY_ENHANCED, C.STANDARD] = GEOMETRY_ENHANCED,
+        smoothingPriority: Literal[C.GRADED, C.UNIFORM] = UNIFORM,
         initialFeatureAngle: float = 30,
         transitionFeatureAngle: float = 30,
-        momentumAdvection: SymbolicConstant = ELEMENT_CENTER_PROJECTION,
-        meshingPredictor: SymbolicConstant = CURRENT,
+        momentumAdvection: Literal[C.HALF_INDEX_SHIFT, C.ELEMENT_CENTER_PROJECTION] = ELEMENT_CENTER_PROJECTION,
+        meshingPredictor: Literal[C.PREVIOUS, C.CURRENT] = CURRENT,
         curvatureRefinement: float = 1,
         volumetricSmoothingWeight: float = 1,
         laplacianSmoothingWeight: float = 0,
@@ -195,15 +196,15 @@ class AdaptivityModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        u1: Union[SymbolicConstant, float] = UNSET,
-        u2: Union[SymbolicConstant, float] = UNSET,
-        u3: Union[SymbolicConstant, float] = UNSET,
-        ur1: Union[SymbolicConstant, float] = UNSET,
-        ur2: Union[SymbolicConstant, float] = UNSET,
-        ur3: Union[SymbolicConstant, float] = UNSET,
+        u1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        u2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        u3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ur1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ur2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ur3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
-        motionType: SymbolicConstant = INDEPENDENT,
-        localCsys: Optional[str] = None,
+        motionType: Literal[C.USER_DEFINED, C.INDEPENDENT, C.FOLLOW] = INDEPENDENT,
+        localCsys: Optional[DatumCsys] = None,
     ) -> DisplacementAdaptiveMeshConstraint:
         """This method creates a DisplacementAdaptiveMeshConstraint object.
 
@@ -288,19 +289,19 @@ class AdaptivityModel(ModelBase):
         stepName: str,
         variables: tuple,
         description: str = "",
-        region: SymbolicConstant = MODEL,
-        sizingMethod: SymbolicConstant = DEFAULT,
+        region: Literal[C.MODEL] = MODEL,
+        sizingMethod: Literal[C.MINIMUM_MAXIMUM, C.DEFAULT, C.UNIFORM_ERROR] = DEFAULT,
         errorTarget: float = 0,
         maxSolutionErrorTarget: float = 0,
         minSolutionErrorTarget: float = 0,
         meshBias: int = 0,
         minElementSize: float = 0,
         maxElementSize: float = 0,
-        outputFrequency: SymbolicConstant = LAST_INCREMENT,
+        outputFrequency: Literal[C.LAST_INCREMENT, C.ALL_INCREMENTS] = LAST_INCREMENT,
         specifyMinSize: Boolean = OFF,
         specifyMaxSize: Boolean = ON,
-        coarseningFactor: SymbolicConstant = DEFAULT_LIMIT,
-        refinementFactor: SymbolicConstant = DEFAULT_LIMIT,
+        coarseningFactor: Literal[C.NOT_ALLOWED, C.DEFAULT_LIMIT] = DEFAULT_LIMIT,
+        refinementFactor: Literal[C.NOT_ALLOWED, C.DEFAULT_LIMIT] = DEFAULT_LIMIT,
         elementCountLimit: Optional[int] = None,
     ) -> RemeshingRule:
         """This method creates a RemeshingRule object.
@@ -411,15 +412,15 @@ class AdaptivityModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        v1: Union[SymbolicConstant, float] = UNSET,
-        v2: Union[SymbolicConstant, float] = UNSET,
-        v3: Union[SymbolicConstant, float] = UNSET,
-        vr1: Union[SymbolicConstant, float] = UNSET,
-        vr2: Union[SymbolicConstant, float] = UNSET,
-        vr3: Union[SymbolicConstant, float] = UNSET,
+        v1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        v2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        v3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        vr1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        vr2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        vr3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
-        localCsys: Optional[str] = None,
-        motionType: SymbolicConstant = INDEPENDENT,
+        localCsys: Optional[DatumCsys] = None,
+        motionType: Literal[C.USER_DEFINED, C.INDEPENDENT, C.FOLLOW] = INDEPENDENT,
     ) -> VelocityAdaptiveMeshConstraint:
         """This method creates a VelocityAdaptiveMeshConstraint object.
 

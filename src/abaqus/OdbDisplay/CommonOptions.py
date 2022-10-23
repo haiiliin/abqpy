@@ -1,11 +1,13 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..PlotOptions.DGCommonOptions import DGCommonOptions
 from ..UtilityAndView.abaqusConstants import (AUTO, Boolean, ELEMENT, EXTERIOR, HOLLOW_CIRCLE,
                                               MEDIUM, OFF, ON, SHADED, SMALL, SOLID,
                                               SymbolicConstant, VERY_THIN, WIRE)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -202,15 +204,15 @@ class CommonOptions(DGCommonOptions):
     def setValues(
         self,
         options: Optional["CommonOptions"] = None,
-        renderStyle: SymbolicConstant = SHADED,
-        visibleEdges: SymbolicConstant = EXTERIOR,
-        deformationScaling: SymbolicConstant = AUTO,
+        renderStyle: Literal[C.SHADED, C.FILLED, C.WIREFRAME, C.HIDDEN] = SHADED,
+        visibleEdges: Literal[C.FEATURE, C.EXTERIOR, C.ALL, C.FREE, C.NONE, C.SHADED] = EXTERIOR,
+        deformationScaling: Literal[C.NONUNIFORM, C.UNIFORM, C.AUTO] = AUTO,
         uniformScaleFactor: Optional[float] = None,
         nonuniformScaleFactor: tuple = (),
         edgeColorWireHide: str = "",
         edgeColorFillShade: str = "",
-        edgeLineStyle: SymbolicConstant = SOLID,
-        edgeLineThickness: SymbolicConstant = VERY_THIN,
+        edgeLineStyle: Literal[C.DASHED, C.SOLID, C.DOT_DASH, C.DOTTED] = SOLID,
+        edgeLineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
         fillColor: str = "",
         colorCodeOverride: Boolean = ON,
         labelFont: str = "",
@@ -221,22 +223,22 @@ class CommonOptions(DGCommonOptions):
         nodeLabels: Boolean = OFF,
         nodeLabelColor: str = "",
         nodeSymbols: Boolean = OFF,
-        nodeSymbolType: SymbolicConstant = HOLLOW_CIRCLE,
+        nodeSymbolType: Literal[C.CROSS, C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_TRI, C.HOLLOW_SQUARE, C.FILLED_TRI, C.HOLLOW_DIAMOND, C.FILLED_CIRCLE, C.XMARKER] = HOLLOW_CIRCLE,
         nodeSymbolColor: str = "",
-        nodeSymbolSize: SymbolicConstant = SMALL,
+        nodeSymbolSize: Literal[C.SMALL, C.LARGE, C.MEDIUM] = SMALL,
         elementShrink: Boolean = OFF,
         elementShrinkFactor: int = 5,
         coordinateScale: Boolean = OFF,
         coordinateScaleFactors: tuple = (),
         normals: Boolean = OFF,
-        normalDisplay: SymbolicConstant = ELEMENT,
+        normalDisplay: Literal[C.SURFACE, C.ELEMENT] = ELEMENT,
         faceNormalColor: str = "",
         beamN1Color: str = "",
         beamN2Color: str = "",
         beamTangentColor: str = "",
-        normalArrowLength: SymbolicConstant = MEDIUM,
-        normalLineThickness: SymbolicConstant = VERY_THIN,
-        normalArrowheadStyle: SymbolicConstant = WIRE,
+        normalArrowLength: Literal[C.SHORT, C.MEDIUM, C.LONG] = MEDIUM,
+        normalLineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
+        normalArrowheadStyle: Literal[C.WIRE, C.FILLED, C.NONE] = WIRE,
         translucency: Boolean = OFF,
         translucencyFactor: float = 0,
     ):

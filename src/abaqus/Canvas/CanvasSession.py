@@ -1,10 +1,12 @@
 from typing import Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Viewport import Viewport
 from ..Session.SessionBase import SessionBase
-from ..UtilityAndView.abaqusConstants import Boolean, ON, SYSTEM, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import Boolean, ON, SYSTEM
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -19,7 +21,7 @@ class CanvasSession(SessionBase):
         height: float = 80.0,
         border: Boolean = ON,
         titleBar: Boolean = ON,
-        titleStyle: SymbolicConstant = SYSTEM,
+        titleStyle: Literal[C.CUSTOM, C.SYSTEM] = SYSTEM,
         customTitleString: str = "",
     ):
         """This method creates a Viewport object with the specified origin and dimensions.

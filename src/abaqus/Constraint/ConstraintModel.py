@@ -1,6 +1,7 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AdjustPoints import AdjustPoints
 from .Coupling import Coupling
@@ -16,7 +17,8 @@ from ..BasicGeometry.ModelDotArray import ModelDotArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (BOTH, Boolean, COMPUTED, DEFAULT, DOF_MODE_MPC, OFF,
-                                              ON, SOLVER_DEFAULT, SymbolicConstant, UNIFORM)
+                                              ON, SOLVER_DEFAULT, UNIFORM)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -63,8 +65,8 @@ class ConstraintModel(ModelBase):
         name: str,
         surface: Region,
         controlPoint: Region,
-        influenceRadius: Union[SymbolicConstant, float],
-        couplingType: SymbolicConstant,
+        influenceRadius: Union[Literal[C.WHOLE_SURFACE], float],
+        couplingType: Literal[C.STRUCTURAL, C.DISTRIBUTING, C.KINEMATIC],
         adjust: Boolean = OFF,
         localCsys: Optional[str] = None,
         u1: Boolean = ON,
@@ -73,7 +75,7 @@ class ConstraintModel(ModelBase):
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
-        weightingMethod: SymbolicConstant = UNIFORM,
+        weightingMethod: Literal[C.QUADRATIC, C.DISTRIBUTING, C.UNIFORM, C.LINEAR, C.CUBIC] = UNIFORM,
     ) -> Coupling:
         """This method creates a Coupling object.
 
@@ -195,7 +197,7 @@ class ConstraintModel(ModelBase):
         embeddedRegion: Region,
         hostRegion: Region,
         weightFactorTolerance: Optional[float] = None,
-        toleranceMethod: SymbolicConstant = BOTH,
+        toleranceMethod: Literal[C.FRACTIONAL, C.BOTH, C.ABSOLUTE] = BOTH,
         absoluteTolerance: float = 0,
         fractionalTolerance: float = 0,
     ) -> EmbeddedRegion:
@@ -285,10 +287,10 @@ class ConstraintModel(ModelBase):
         name: str,
         surface: Region,
         controlPoint: Region,
-        mpcType: SymbolicConstant,
+        mpcType: Literal[C.USER_MPC, C.BEAM_MPC, C.ELBOW_MPC, C.TIE_MPC, C.MPC, C.PIN_MPC, C.LINK_MPC],
         csys: Optional[str] = None,
         userType: int = 0,
-        userMode: SymbolicConstant = DOF_MODE_MPC,
+        userMode: Literal[C.DOF_MODE_MPC, C.USER_MPC, C.NODE_MODE_MPC] = DOF_MODE_MPC,
     ) -> MultipointConstraint:
         """This method creates a MultipointConstraint object.
 
@@ -400,9 +402,9 @@ class ConstraintModel(ModelBase):
         name: str,
         shellEdge: Region,
         solidFace: Region,
-        positionToleranceMethod: SymbolicConstant = COMPUTED,
+        positionToleranceMethod: Literal[C.COMPUTED, C.SPECIFIED] = COMPUTED,
         positionTolerance: float = 0,
-        influenceDistanceMethod: SymbolicConstant = DEFAULT,
+        influenceDistanceMethod: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,
         influenceDistance: float = 0,
     ) -> ShellSolidCoupling:
         """This method creates a ShellSolidCoupling object.
@@ -458,12 +460,12 @@ class ConstraintModel(ModelBase):
         master: Region,
         slave: Region,
         adjust: Boolean = ON,
-        positionToleranceMethod: SymbolicConstant = COMPUTED,
+        positionToleranceMethod: Literal[C.COMPUTED, C.SPECIFIED] = COMPUTED,
         positionTolerance: float = 0,
         tieRotations: Boolean = ON,
-        constraintRatioMethod: SymbolicConstant = DEFAULT,
+        constraintRatioMethod: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,
         constraintRatio: float = 0,
-        constraintEnforcement: SymbolicConstant = SOLVER_DEFAULT,
+        constraintEnforcement: Literal[C.NODE_TO_SURFACE, C.SOLVER_DEFAULT, C.SURFACE_TO_SURFACE] = SOLVER_DEFAULT,
         thickness: Boolean = ON,
     ) -> Tie:
         """This method creates a Tie object.
