@@ -16,7 +16,7 @@ from ..Region.Surface import Surface
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AXIS_1, AXIS_3, Boolean, FROM_SECTION, GLOBAL,
                                               NORMAL_VECTOR, OFF, PRIMARY_VECTOR, SHELL,
-                                              SINGLE_VALUE, STACK_3, SymbolicConstant)
+                                              SINGLE_VALUE, STACK_3)
 
 
 @abaqus_class_doc

@@ -55,8 +55,8 @@ from ..UtilityAndView.abaqusConstants import (ALLOW_SUBCYCLING, ALL_NODAL_DIAMET
                                               BLOCKING_ALL, Boolean, COMPUTED, COMPUTED_TOLERANCE,
                                               CONTACT, DEFAULT, GEOMETRY, KINEMATIC, LAGRANGIAN,
                                               MODEL, NONE, OFF, OMIT, ON, PLANE, PRESSURE, RIGHT,
-                                              SURFACE_TO_SURFACE, SymbolicConstant, TABULAR,
-                                              TO_ENVIRONMENT, UNIFORM, UNSET, USE_GEOMETRY)
+                                              SURFACE_TO_SURFACE, TABULAR, TO_ENVIRONMENT,
+                                              UNIFORM, UNSET, USE_GEOMETRY)
 
 
 @abaqus_class_doc

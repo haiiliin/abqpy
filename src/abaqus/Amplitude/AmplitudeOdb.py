@@ -16,8 +16,7 @@ from .TabularAmplitude import TabularAmplitude
 from ..Odb.OdbBase import OdbBase
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ABSOLUTE_VALUE, ACCELERATION, Boolean,
-                                              EVENT_ACCELERATION, FORCE, OFF, SOLVER_DEFAULT, STEP,
-                                              SymbolicConstant)
+                                              EVENT_ACCELERATION, FORCE, OFF, SOLVER_DEFAULT, STEP)
 
 
 @abaqus_class_doc

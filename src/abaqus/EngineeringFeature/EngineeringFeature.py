@@ -20,7 +20,7 @@ from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALL, AXIS_1, Boolean, CONNECTOR, CONTINUUM, DEFAULT,
                                               FACETOFACE, MASS_PROPORTIONAL, MODEL, NONE, NORMALS,
-                                              OFF, ON, STEP, SymbolicConstant, UNIFORM)
+                                              OFF, ON, STEP, UNIFORM)
 
 
 @abaqus_class_doc

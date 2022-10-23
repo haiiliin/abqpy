@@ -7,7 +7,7 @@ from .Load import Load
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import APPLY_FORCE, Boolean, SymbolicConstant, UNSET
+from ..UtilityAndView.abaqusConstants import APPLY_FORCE, Boolean, UNSET
 
 
 @abaqus_class_doc

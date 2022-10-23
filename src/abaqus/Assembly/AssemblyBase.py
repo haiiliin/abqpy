@@ -27,7 +27,7 @@ from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import ALL_EDGES, Boolean, LOW, OFF, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import ALL_EDGES, Boolean, LOW, OFF, ON
 
 
 @abaqus_class_doc

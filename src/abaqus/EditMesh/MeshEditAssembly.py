@@ -9,7 +9,7 @@ from ..Mesh.MeshElement import MeshElement
 from ..Mesh.MeshNode import MeshNode
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, OUTWARD, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, OUTWARD
 
 
 @abaqus_class_doc

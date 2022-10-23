@@ -7,8 +7,7 @@ from .ExpContactControl import ExpContactControl
 from .StdContactControl import StdContactControl
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTE, DEFAULT, NONE, OFF, ON, RELATIVE,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTE, DEFAULT, NONE, OFF, ON, RELATIVE)
 
 
 @abaqus_class_doc

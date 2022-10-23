@@ -10,7 +10,7 @@ from .MappedField import MappedField
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, CARTESIAN, NODES, OFF, POINT, RELATIVE,
-                                              SURFACE, SymbolicConstant, XYPLANE, XYZ)
+                                              SURFACE, XYPLANE, XYZ)
 
 
 @abaqus_class_doc

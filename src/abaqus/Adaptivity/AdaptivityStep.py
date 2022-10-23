@@ -12,7 +12,6 @@ from .VelocityAdaptiveMeshConstraintState import VelocityAdaptiveMeshConstraintS
 from ..Region.Region import Region
 from ..Step.StepBase import StepBase
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc

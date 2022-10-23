@@ -49,7 +49,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ABSOLUTE_EQUAL, AUTO, AXIS_1, Boolean, DEMOLD_REGION,
                                               FREE_FORM, MAXIMUM, MILLING_REGION, MINIMIZE, MINIMUM,
                                               MODEL, OFF, ON, OVERHANG_REGION, SUM,
-                                              SymbolicConstant, TRUE, VECTOR)
+                                              TRUE, VECTOR)
 
 
 @abaqus_class_doc

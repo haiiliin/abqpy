@@ -4,7 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .FailStrain import FailStrain
 from .FailStress import FailStress
 from ....UtilityAndView.abaqusConstants import abaqusConstants as C
-from ....UtilityAndView.abaqusConstants import Boolean, ISOTROPIC, LONG_TERM, OFF, SymbolicConstant
+from ....UtilityAndView.abaqusConstants import Boolean, ISOTROPIC, LONG_TERM, OFF
 
 
 @abaqus_class_doc

@@ -17,7 +17,7 @@ from ..Filter.Filter import Filter
 from ..Material.Material import Material
 from ..Section.Section import Section
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import Boolean, CLOSEST, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import Boolean, CLOSEST, OFF
 
 
 @abaqus_class_doc

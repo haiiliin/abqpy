@@ -22,7 +22,7 @@ from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AUTO_FIT_PTS, Boolean, IMPRINT, OFF, ON,
                                               PROJECT_BY_PROXIMITY, RIGHT,
-                                              SIDE1, SymbolicConstant)
+                                              SIDE1)
 
 
 @abaqus_class_doc

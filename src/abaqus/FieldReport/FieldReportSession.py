@@ -7,7 +7,7 @@ from ..DisplayGroup.DisplayGroup import DisplayGroup
 from ..Odb.Odb import Odb
 from ..Session.SessionBase import SessionBase
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import Boolean, SPECIFY, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import Boolean, SPECIFY
 
 
 @abaqus_class_doc

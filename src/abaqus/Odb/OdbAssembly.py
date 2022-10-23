@@ -12,7 +12,7 @@ from .OdbPart import OdbPart
 from .OdbRigidBody import OdbRigidBody
 from .OdbSet import OdbSet
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import Boolean, INPUT, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import Boolean, INPUT, ON
 
 
 @abaqus_class_doc

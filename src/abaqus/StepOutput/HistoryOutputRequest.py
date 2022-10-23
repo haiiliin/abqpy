@@ -9,7 +9,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALL, Boolean, DEFAULT,
                                               EVERY_TIME_INCREMENT, EXCLUDE, J_INTEGRAL,
                                               MODEL, MTS,
-                                              OFF, PRESELECT, SymbolicConstant)
+                                              OFF, PRESELECT)
 
 
 @abaqus_class_doc

@@ -26,8 +26,7 @@ from ..Odb.OdbBase import OdbBase
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT, DEFAULT, DOF_MODE, FULLY, GRADIENT,
                                               LINEAR, NONE, NO_IDEALIZATION, OFF, ON, SIMPSON,
-                                              SOLVER_DEFAULT, SymbolicConstant, UNIFORM,
-                                              UNSPECIFIED)
+                                              SOLVER_DEFAULT, UNIFORM, UNSPECIFIED)
 
 
 @abaqus_class_doc

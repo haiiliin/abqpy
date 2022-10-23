@@ -8,7 +8,6 @@ from .Spectrum import Spectrum
 from .Stream import Stream
 from ..Session.SessionBase import SessionBase
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
 
 
 @abaqus_class_doc

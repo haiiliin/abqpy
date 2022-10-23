@@ -11,7 +11,7 @@ from ...TestData.VolumetricTestData import VolumetricTestData
 from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 from ....UtilityAndView.abaqusConstants import (Boolean, DEFAULT, FITTED_VALUE, FUNG_ANISOTROPIC,
                                                 INCOMPRESSIBLE, ISOTROPIC, LONG_TERM, OFF, ON,
-                                                STRAIN, SymbolicConstant, UNIAXIAL, UNKNOWN)
+                                                STRAIN, UNIAXIAL, UNKNOWN)
 
 
 @abaqus_class_doc

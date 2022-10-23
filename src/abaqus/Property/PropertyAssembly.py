@@ -5,7 +5,7 @@ from .SectionAssignment import SectionAssignment
 from ..Assembly.AssemblyBase import AssemblyBase
 from ..Region.Set import Set
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import FROM_SECTION, SINGLE_VALUE, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import FROM_SECTION, SINGLE_VALUE
 
 
 @abaqus_class_doc

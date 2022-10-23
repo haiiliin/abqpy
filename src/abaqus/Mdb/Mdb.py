@@ -7,8 +7,7 @@ from ..Job.JobMdb import JobMdb
 from ..Model.Model import Model
 from ..Part.AcisMdb import AcisMdb
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (Boolean, NOT_SET, ON, STANDARD_EXPLICIT,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (Boolean, NOT_SET, ON, STANDARD_EXPLICIT)
 
 
 @abaqus_class_doc

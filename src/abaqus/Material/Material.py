@@ -71,8 +71,8 @@ from ..UtilityAndView.abaqusConstants import (ALLISO, Boolean, CENTROID, COEFFIC
                                               INPUT, ISOTROPIC, LINEAR, LOGARITHMIC, LONG_TERM,
                                               MECHANICAL, MSFLD, MT, NEWTONIAN, NMORI, NO, NONE,
                                               OFF, ON, POISSON, PRONY, RELATIVE_SLOPE_DROP, STRAIN,
-                                              STRESS, SymbolicConstant, TABULAR, TOTAL, UNIAXIAL,
-                                              UNIFORM, UNKNOWN, VOLUMETRIC)
+                                              STRESS, TABULAR, TOTAL, UNIAXIAL, UNIFORM,
+                                              UNKNOWN, VOLUMETRIC)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 

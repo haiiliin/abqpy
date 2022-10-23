@@ -9,7 +9,7 @@ from ....TestData.SimpleShearTestData import SimpleShearTestData
 from ....TestData.UniaxialTestData import UniaxialTestData
 from ....TestData.VolumetricTestData import VolumetricTestData
 from .....UtilityAndView.abaqusConstants import abaqusConstants as C
-from .....UtilityAndView.abaqusConstants import Boolean, LONG_TERM, OFF, SymbolicConstant
+from .....UtilityAndView.abaqusConstants import Boolean, LONG_TERM, OFF
 
 
 @abaqus_class_doc

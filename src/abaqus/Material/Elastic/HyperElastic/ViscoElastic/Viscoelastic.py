@@ -6,7 +6,7 @@ from ....Others.Mechanical.Viscosity.Trs import Trs
 from ....TestData.ShearTestData import ShearTestData
 from ....TestData.VolumetricTestData import VolumetricTestData
 from .....UtilityAndView.abaqusConstants import abaqusConstants as C
-from .....UtilityAndView.abaqusConstants import FORMULA, ISOTROPIC, NONE, PRONY, SymbolicConstant
+from .....UtilityAndView.abaqusConstants import FORMULA, ISOTROPIC, NONE, PRONY
 
 
 @abaqus_class_doc

@@ -2,7 +2,7 @@ from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .....UtilityAndView.abaqusConstants import abaqusConstants as C
-from .....UtilityAndView.abaqusConstants import SymbolicConstant, WLF
+from .....UtilityAndView.abaqusConstants import WLF
 
 
 @abaqus_class_doc

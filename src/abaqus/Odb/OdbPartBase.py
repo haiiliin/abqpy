@@ -16,7 +16,7 @@ from .SectionCategory import SectionCategory
 from ..Property.MaterialOrientationArray import MaterialOrientationArray
 from ..Property.SectionAssignmentArray import SectionAssignmentArray
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import AXIS_1, STACK_3, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import AXIS_1, STACK_3
 
 
 @abaqus_class_doc

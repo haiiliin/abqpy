@@ -7,7 +7,7 @@ from .Interaction import Interaction
 from ..BasicGeometry.ModelDot import ModelDot
 from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import BLOCKING_ALL, Boolean, OFF, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import BLOCKING_ALL, Boolean, OFF, ON
 
 
 @abaqus_class_doc

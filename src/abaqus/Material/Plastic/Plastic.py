@@ -9,8 +9,7 @@ from .Metal.RateDependent.RateDependent import RateDependent
 from .Potential import Potential
 from .TensileFailure import TensileFailure
 from ...UtilityAndView.abaqusConstants import abaqusConstants as C
-from ...UtilityAndView.abaqusConstants import (Boolean, CONSTANT, HALF_CYCLE, ISOTROPIC, OFF,
-                                               SymbolicConstant)
+from ...UtilityAndView.abaqusConstants import (Boolean, CONSTANT, HALF_CYCLE, ISOTROPIC, OFF)
 
 
 @abaqus_class_doc

@@ -4,7 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .BrittleFailure import BrittleFailure
 from .BrittleShear import BrittleShear
 from ....UtilityAndView.abaqusConstants import abaqusConstants as C
-from ....UtilityAndView.abaqusConstants import Boolean, OFF, STRAIN, SymbolicConstant
+from ....UtilityAndView.abaqusConstants import Boolean, OFF, STRAIN
 
 
 @abaqus_class_doc

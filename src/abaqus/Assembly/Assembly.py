@@ -12,7 +12,7 @@ from ..Property.PropertyAssembly import PropertyAssembly
 from ..Region.RegionAssembly import RegionAssembly
 from ..Region.Set import Set
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import AXIS_1, Boolean, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import AXIS_1, Boolean, ON
 
 
 @abaqus_class_doc

@@ -16,8 +16,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, CURRENT, DEFAULT, DEFAULT_LIMIT,
                                               ELEMENT_CENTER_PROJECTION, GEOMETRY_ENHANCED,
                                               INDEPENDENT, LAST_INCREMENT, MODEL, OFF, ON,
-                                              SECOND_ORDER_ADVECTION, SymbolicConstant, UNIFORM,
-                                              UNSET)
+                                              SECOND_ORDER_ADVECTION, UNIFORM, UNSET)
 
 
 @abaqus_class_doc

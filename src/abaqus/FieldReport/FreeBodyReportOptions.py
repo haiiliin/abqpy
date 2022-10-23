@@ -4,7 +4,7 @@ from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import GLOBAL, NORMAL_ANNOTATED, SCIENTIFIC, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import GLOBAL, NORMAL_ANNOTATED, SCIENTIFIC
 
 
 @abaqus_class_doc

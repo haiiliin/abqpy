@@ -19,7 +19,7 @@ from ..UtilityAndView.abaqusConstants import (ABS, ALL, Boolean, COMPONENT_NUMBE
                                               FORCE, HALF_CYCLE, LINEAR, MAXIMUM,
                                               MOTION_TYPE, NO_INDEPENDENT_COMPONENTS, OFF, ON,
                                               POSITIVE, PREDEFINED, SPECIFY, SUM,
-                                              SymbolicConstant, TABULAR, UNCOUPLED, VISCOUS)
+                                              TABULAR, UNCOUPLED, VISCOUS)
 
 
 @abaqus_class_doc

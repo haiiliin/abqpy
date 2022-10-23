@@ -8,7 +8,7 @@ from .ConnectorPotentialArray import ConnectorPotentialArray
 from .TangentialBehavior import TangentialBehavior
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, COEFFICIENTS, CONSTANT, FRACTION, LINEAR,
-                                              OFF, ON, PENALTY, SymbolicConstant)
+                                              OFF, ON, PENALTY)
 
 
 # Prevent circular import

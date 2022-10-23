@@ -15,7 +15,7 @@ from .IncidentWaveProperty import IncidentWaveProperty
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ACOUSTIC, BULK_VISCOSITY, Boolean, HYDRAULIC, OFF, ON,
-                                              PLANAR, POLYNOMIAL, SymbolicConstant)
+                                              PLANAR, POLYNOMIAL)
 
 
 @abaqus_class_doc

@@ -8,8 +8,7 @@ from .Text import Text
 from ..Odb.UserDataBase import UserDataBase
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (BOTTOM_LEFT, Boolean, FILLED_ARROW, JUSTIFY_LEFT,
-                                              NONE, OFF, SOLID, SymbolicConstant, TRANSPARENT,
-                                              VERY_THIN)
+                                              NONE, OFF, SOLID, TRANSPARENT, VERY_THIN)
 
 
 @abaqus_class_doc

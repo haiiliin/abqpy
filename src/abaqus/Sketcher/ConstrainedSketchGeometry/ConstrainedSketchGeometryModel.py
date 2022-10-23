@@ -1,11 +1,11 @@
 from typing_extensions import Literal
-from typing import List, Sequence
+from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from ..ConstrainedSketchBase import ConstrainedSketchBase
 from ...UtilityAndView.abaqusConstants import abaqusConstants as C
-from ...UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
+from ...UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc

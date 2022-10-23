@@ -5,7 +5,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .ClayHardening import ClayHardening
 from ....UtilityAndView.abaqusConstants import abaqusConstants as C
-from ....UtilityAndView.abaqusConstants import Boolean, EXPONENTIAL, OFF, SymbolicConstant
+from ....UtilityAndView.abaqusConstants import Boolean, EXPONENTIAL, OFF
 
 
 @abaqus_class_doc

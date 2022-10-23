@@ -7,7 +7,7 @@ from .ExpInitialization import ExpInitialization
 from .StdInitialization import StdInitialization
 from ..Model.ModelBase import ModelBase
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import ADJUST, Boolean, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import ADJUST, Boolean
 
 
 @abaqus_class_doc

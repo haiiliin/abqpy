@@ -6,7 +6,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .Movie import Movie
 from ..Session.SessionBase import SessionBase
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import END_FRAME_TIME, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import END_FRAME_TIME
 
 
 @abaqus_class_doc

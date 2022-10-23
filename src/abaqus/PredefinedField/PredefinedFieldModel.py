@@ -19,7 +19,7 @@ from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT_THROUGH_THICKNESS, CONSTANT_RATIO,
                                               KINEMATIC_HARDENING, LAST_STEP, MAGNITUDE, OFF,
-                                              STEP_END, SymbolicConstant, UNIFORM, UNSET)
+                                              STEP_END, UNIFORM, UNSET)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 

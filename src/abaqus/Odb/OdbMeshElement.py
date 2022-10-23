@@ -5,7 +5,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .SectionCategory import SectionCategory
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import CLOSEST, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import CLOSEST
 
 
 @abaqus_class_doc

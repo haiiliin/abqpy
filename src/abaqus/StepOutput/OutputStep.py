@@ -6,7 +6,7 @@ from .Monitor import Monitor
 from .Restart import Restart
 from ..Step.StepBase import StepBase
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON
 
 
 @abaqus_class_doc

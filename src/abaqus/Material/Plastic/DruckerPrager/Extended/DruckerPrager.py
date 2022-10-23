@@ -6,7 +6,7 @@ from .DruckerPragerHardening import DruckerPragerHardening
 from .TriaxialTestData import TriaxialTestData
 from ...Metal.RateDependent.RateDependent import RateDependent
 from .....UtilityAndView.abaqusConstants import abaqusConstants as C
-from .....UtilityAndView.abaqusConstants import Boolean, LINEAR, OFF, SymbolicConstant
+from .....UtilityAndView.abaqusConstants import Boolean, LINEAR, OFF
 
 
 @abaqus_class_doc

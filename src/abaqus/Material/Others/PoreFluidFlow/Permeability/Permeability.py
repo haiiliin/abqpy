@@ -4,7 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .SaturationDependence import SaturationDependence
 from .VelocityDependence import VelocityDependence
 from .....UtilityAndView.abaqusConstants import abaqusConstants as C
-from .....UtilityAndView.abaqusConstants import Boolean, ISOTROPIC, OFF, SymbolicConstant
+from .....UtilityAndView.abaqusConstants import Boolean, ISOTROPIC, OFF
 
 
 @abaqus_class_doc

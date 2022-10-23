@@ -7,7 +7,7 @@ from .MeanFieldInclusion import MeanFieldInclusion
 from .MeanFieldMatrix import MeanFieldMatrix
 from .MeanFieldVoid import MeanFieldVoid
 from ...UtilityAndView.abaqusConstants import abaqusConstants as C
-from ...UtilityAndView.abaqusConstants import ALLISO, MT, NO, SPHERE, SymbolicConstant, UNIFORM
+from ...UtilityAndView.abaqusConstants import ALLISO, MT, NO, SPHERE, UNIFORM
 
 
 @abaqus_class_doc
