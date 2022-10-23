@@ -31,6 +31,7 @@ Please check the options that are relevant, the corresponding labels will be add
   - [ ] bug (fixes an issue)
   - [ ] test (adds/updates test)
   - [ ] typo (fixes typo)
+  - [ ] refactor (refactors code)
 - [ ] New Feature (non-breaking change which adds functionality)
   - [ ] typing (adds/updates typing annotations)
 - [ ] Documentation Update
