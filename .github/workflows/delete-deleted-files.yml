@@ -7,7 +7,7 @@ on:
     types: [opened]
 
 jobs:
-  delete-deleted-files:
+  delete:
     if: ${{ contains(github.event.pull_request.labels.*.name, 'backport') && contains(github.event.pull_request.labels.*.name, 'conflicts') }}
     runs-on: ubuntu-latest
     steps:
