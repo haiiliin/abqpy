@@ -59,6 +59,5 @@ jobs:
         GITHUB_TOKEN: ${{ github.token }}
       with:
         comment-message: |
-          Hi @${{ github.event.pull_request.user.login }}, I have deleted the conflicted deleted files in this pull request. 
-          Please check it again. Thanks!
+          Hi @${{ github.event.pull_request.user.login }}, I have deleted the conflicted deleted files in this pull request. Please check it again. Thanks!
         delete-previous-comment: true
