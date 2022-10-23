@@ -1,12 +1,14 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
 from ..UtilityAndView.abaqusConstants import (Boolean, HALF_CYCLE, OFF, ON, SUM, SymbolicConstant,
                                               TABULAR, UNCOUPLED)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -161,16 +163,16 @@ class ConnectorPlasticity(ConnectorBehaviorOption):
     @abaqus_method_doc
     def __init__(
         self,
-        coupling: SymbolicConstant = UNCOUPLED,
+        coupling: Literal[C.COUPLED, C.UNCOUPLED] = UNCOUPLED,
         isotropic: Boolean = ON,
-        isotropicType: SymbolicConstant = TABULAR,
+        isotropicType: Literal[C.TABULAR, C.EXPONENTIAL_LAW] = TABULAR,
         isotropicTemperature: Boolean = OFF,
         isotropicDependencies: int = 0,
         kinematic: Boolean = OFF,
-        kinematicType: SymbolicConstant = HALF_CYCLE,
+        kinematicType: Literal[C.PARAMETERS, C.HALF_CYCLE, C.STABILIZED] = HALF_CYCLE,
         kinematicTemperature: Boolean = OFF,
         kinematicDependencies: int = 0,
-        forcePotentialOperator: SymbolicConstant = SUM,
+        forcePotentialOperator: Literal[C.SUM, C.COUPLED, C.MAXIMUM] = SUM,
         forcePotentialExponent: float = 2,
         connectorPotentials: Optional[ConnectorPotentialArray] = None,
         isotropicTable: tuple = (),

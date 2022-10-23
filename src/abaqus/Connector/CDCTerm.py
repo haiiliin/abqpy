@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .ConnectorOptions import ConnectorOptions
 from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT, LINEAR, OFF, ON, POSITION,
                                               POSITIVE, RSS, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -81,10 +83,10 @@ class CDCTerm:
         self,
         intrinsicComponents: tuple,
         table: tuple,
-        termOperator: SymbolicConstant = RSS,
-        termSign: SymbolicConstant = POSITIVE,
+        termOperator: Literal[C.SUM, C.RSS, C.MACAULEY] = RSS,
+        termSign: Literal[C.POSITIVE, C.NEGATIVE] = POSITIVE,
         localDependency: Boolean = OFF,
-        indepCompType: SymbolicConstant = POSITION,
+        indepCompType: Literal[C.POSITION, C.MOTION] = POSITION,
         indepComponents: tuple = (),
         tempDependency: Boolean = OFF,
         fieldDependencies: int = 0,
@@ -174,9 +176,9 @@ class CDCTerm:
         regularization: float = 0,
         defaultRateFactor: Boolean = ON,
         rateFactor: float = 0,
-        interpolation: SymbolicConstant = LINEAR,
+        interpolation: Literal[C.LOGARITHMIC, C.LINEAR] = LINEAR,
         useBehExtSettings: Boolean = ON,
-        extrapolation: SymbolicConstant = CONSTANT,
+        extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT,
     ) -> ConnectorOptions:
         """This method creates a connector options object to be used in conjunction with an
         allowable connector behavior option, derived component term, or connector section.

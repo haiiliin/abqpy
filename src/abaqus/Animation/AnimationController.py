@@ -1,8 +1,10 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import NONE, STOP, SymbolicConstant, UNLIMITED
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _OptionsBase
 
 
@@ -28,7 +30,7 @@ class AnimationController(_OptionsBase):
     state: SymbolicConstant = STOP
 
     @abaqus_method_doc
-    def play(self, duration: SymbolicConstant = UNLIMITED):
+    def play(self, duration: Literal[C.UNLIMITED] = UNLIMITED):
         """This method begins the animation.
 
         Parameters
@@ -93,7 +95,7 @@ class AnimationController(_OptionsBase):
         ...
 
     @abaqus_method_doc
-    def setValues(self, animationType: SymbolicConstant = NONE):
+    def setValues(self, animationType: Literal[C.HARMONIC, C.SCALE_FACTOR, C.TIME_HISTORY, C.NONE] = NONE):
         """This method modifies the AnimationController object.
 
         Parameters

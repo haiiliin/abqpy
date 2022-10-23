@@ -1,6 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -40,7 +41,7 @@ class StabilizationAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(self, stepName: str, assignments: SymbolicConstant):
+    def appendInStep(self, stepName: str, assignments: Literal[C.SELF, C.GLOBAL]):
         """This method allows addition of contact stabilization assignments to new domain pairs in
         a given step.
 

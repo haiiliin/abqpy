@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -29,7 +31,7 @@ class AnalyticSurfaceSegment:
     data: tuple
 
     @abaqus_method_doc
-    def __init__(self, type: SymbolicConstant, data: tuple):
+    def __init__(self, type: Literal[C.CIRCLE, C.START, C.LINE, C.PARABOLA], data: tuple):
         """This method creates an AnalyticSurfaceSegment object.
 
         .. note:: 

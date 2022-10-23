@@ -1,6 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -21,7 +22,7 @@ class SlidingTransitionAssignment:
     """
 
     @abaqus_method_doc
-    def changeValuesInStep(self, stepName: str, index: int, value: SymbolicConstant):
+    def changeValuesInStep(self, stepName: str, index: int, value: Literal[C.QUADRATIC_SMOOTHING, C.LINEAR_SMOOTHING, C.ELEMENT_ORDER_SMOOTHING]):
         """This method allows you to modify sliding transition assignments already defined on
         surface pairs in a given step.
 
@@ -41,7 +42,7 @@ class SlidingTransitionAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(self, stepName: str, assignments: SymbolicConstant):
+    def appendInStep(self, stepName: str, assignments: Literal[C.QUADRATIC_SMOOTHING, C.LINEAR_SMOOTHING, C.ELEMENT_ORDER_SMOOTHING, C.GLOBAL]):
         """This method allows you to add sliding transition assignments to new surface pairs in a
         given step.
 

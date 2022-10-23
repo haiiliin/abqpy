@@ -1,9 +1,11 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (Boolean, ON, SELECTIVE, SURFACE_TO_SURFACE,
                                               SymbolicConstant, TWO_CONFIG)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -68,7 +70,7 @@ class SelfContactStd(Interaction):
         createStepName: str,
         surface: Region,
         interactionProperty: str,
-        enforcement: SymbolicConstant = SURFACE_TO_SURFACE,
+        enforcement: Literal[C.NODE_TO_SURFACE, C.SURFACE_TO_SURFACE] = SURFACE_TO_SURFACE,
         thickness: Boolean = ON,
         smooth: float = 0,
         contactControls: str = "",
@@ -116,7 +118,7 @@ class SelfContactStd(Interaction):
     @abaqus_method_doc
     def setValues(
         self,
-        enforcement: SymbolicConstant = SURFACE_TO_SURFACE,
+        enforcement: Literal[C.NODE_TO_SURFACE, C.SURFACE_TO_SURFACE] = SURFACE_TO_SURFACE,
         thickness: Boolean = ON,
         smooth: float = 0,
         contactControls: str = "",

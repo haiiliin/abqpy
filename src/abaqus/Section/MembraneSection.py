@@ -1,10 +1,12 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .RebarLayers import RebarLayers
 from .Section import Section
 from ..UtilityAndView.abaqusConstants import DEFAULT, SymbolicConstant, UNIFORM
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -67,8 +69,8 @@ class MembraneSection(Section):
         name: str,
         material: str,
         thickness: float = 1,
-        thicknessType: SymbolicConstant = UNIFORM,
-        poissonDefinition: SymbolicConstant = DEFAULT,
+        thicknessType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
+        poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
         thicknessField: str = "",
     ):
@@ -124,8 +126,8 @@ class MembraneSection(Section):
     def setValues(
         self,
         thickness: float = 1,
-        thicknessType: SymbolicConstant = UNIFORM,
-        poissonDefinition: SymbolicConstant = DEFAULT,
+        thicknessType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
+        poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
         thicknessField: str = "",
     ):

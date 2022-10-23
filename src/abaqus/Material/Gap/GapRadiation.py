@@ -56,9 +56,9 @@ class GapRadiation:
         -------
             A GapRadiation object.
         """
-        pass
+        ...
 
     @abaqus_method_doc
     def setValues(self):
         """This method modifies the GapRadiation object."""
-        pass
+        ...
