@@ -98,15 +98,9 @@ class SurfaceToSurfaceContactExp(Interaction):
         self,
         name: str,
         createStepName: str,
-<<<<<<< HEAD
         master: Region,
         slave: Region,
-        sliding: SymbolicConstant,
-=======
-        main: Region,
-        secondary: Region,
         sliding: Literal[C.SMALL, C.FINITE],
->>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004))
         interactionProperty: str,
         mechanicalConstraint: Literal[C.PENALTY, C.KINEMATIC] = KINEMATIC,
         weightingFactorType: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,

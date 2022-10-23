@@ -56,15 +56,10 @@ class SurfaceThicknessAssignment:
 
     @abaqus_method_doc
     def appendInStep(
-<<<<<<< HEAD
         self, 
         stepName: str, 
-        assignments: Tuple[Tuple[Union[Region, Material, SymbolicConstant], Union[SymbolicConstant, float], float], ...],
-=======
-        self, stepName: str,
         assignments: Tuple[Tuple[Union[Region, Material, Literal[C.THINNING, C.ORIGINAL, C.GLOBAL]],
                                                Union[SymbolicConstant, float], float], ...],
->>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method allows addition of surface thickness assignments to new surfaces in a given
         step.

@@ -103,12 +103,7 @@ class SizingTask(OptimizationTask):
         objectiveFunctionDeltaStopCriteria: float = 0,
         stopCriteriaDesignCycle: int = 4,
         thicknessMoveLimit: float = 0,
-<<<<<<< HEAD
-        thicknessUpdateStrategy: SymbolicConstant = NORMAL,
-=======
         thicknessUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method creates a SizingTask object.
 
@@ -177,12 +172,7 @@ class SizingTask(OptimizationTask):
         objectiveFunctionDeltaStopCriteria: float = 0,
         stopCriteriaDesignCycle: int = 4,
         thicknessMoveLimit: float = 0,
-<<<<<<< HEAD
-        thicknessUpdateStrategy: SymbolicConstant = NORMAL,
-=======
         thicknessUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method modifies the SizingTask object.
 

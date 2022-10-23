@@ -48,7 +48,7 @@ class CapCreepCohesion:
     def __init__(
         self,
         table: tuple,
-        law: Literal[C.SINGHM, C.TIME, C.POWER_LAW, C.USER, C.STRAIN, C.TIME_POWER_LAW] = STRAIN,
+        law: Literal[C.SINGHM, C.TIME, C.POWER_LAW, C.USER, C.STRAIN] = STRAIN,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         time: Literal[C.TOTAL, C.CREEP] = TOTAL,

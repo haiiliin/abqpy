@@ -153,12 +153,7 @@ class BeadTask(OptimizationTask):
         nodeSmooth: Literal[C.DEFAULT] = DEFAULT,
         nodeUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = CONSERVATIVE,
         numTrackedModes: int = 5,
-<<<<<<< HEAD
-        updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
-=======
         updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method creates a BeadTask object.
 
@@ -265,12 +260,7 @@ class BeadTask(OptimizationTask):
         nodeSmooth: Literal[C.DEFAULT] = DEFAULT,
         nodeUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = CONSERVATIVE,
         numTrackedModes: int = 5,
-<<<<<<< HEAD
-        updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
-=======
         updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method modifies the BeadTask object.
 

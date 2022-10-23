@@ -22,13 +22,8 @@ class MasterSlaveAssignment:
     """
 
     @abaqus_method_doc
-<<<<<<< HEAD:src/abaqus/Interaction/MasterSlaveAssignment.py
-    def changeValuesInStep(self, stepName: str, index: int, value: SymbolicConstant):
-        """This method allows modification of master-slave assignments already defined on surface
-=======
     def changeValuesInStep(self, stepName: str, index: int, value: Literal[C.BALANCED, C.SECONDARY, C.MAIN]):
-        """This method allows modification of main-secondary assignments already defined on surface
->>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004)):src/abaqus/Interaction/MainSecondaryAssignment.py
+        """This method allows modification of master-slave assignments already defined on surface
         pairs in a given step.
 
         Parameters
@@ -47,13 +42,8 @@ class MasterSlaveAssignment:
         ...
 
     @abaqus_method_doc
-<<<<<<< HEAD:src/abaqus/Interaction/MasterSlaveAssignment.py
-    def appendInStep(self, stepName: str, assignments: SymbolicConstant):
-        """This method allows addition of master-slave assignments to new surface pairs in a
-=======
     def appendInStep(self, stepName: str, assignments: Literal[C.BALANCED, C.SECONDARY, C.MAIN, C.GLOBAL]):
-        """This method allows addition of main-secondary assignments to new surface pairs in a
->>>>>>> 9cc45e870 ([typing]: Including remaining `Literal` in all modules (#3004)):src/abaqus/Interaction/MainSecondaryAssignment.py
+        """This method allows addition of master-slave assignments to new surface pairs in a
         given step.
 
         Parameters
