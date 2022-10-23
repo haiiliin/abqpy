@@ -37,7 +37,7 @@ Please check the options that are relevant, the corresponding labels will be add
 - [ ] Documentation Update
   - [ ] docs (adds/updates documentation)
   - [ ] docs-preview (check this to preview docs)
-- [ ] Automation/Translation/Automation
+- [ ] Automation/Translation/Release
   - [ ] workflow (adds/updates workflow)
   - [ ] release (adds/updates release)
   - [ ] translation (adds/updates translation)
