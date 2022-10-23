@@ -1,11 +1,13 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AxisData import AxisData
 from .LineStyle import LineStyle
 from .TextStyle import TextStyle
 from ..UtilityAndView.abaqusConstants import INSIDE, MIN_MAX_EDGE, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -77,12 +79,12 @@ class Axis:
         self,
         axis: "Axis",
         labelFrequency: int = 1,
-        labelPlacement: SymbolicConstant = INSIDE,
+        labelPlacement: Literal[C.INSIDE] = INSIDE,
         labelStyle: Optional[TextStyle] = None, 
         lineStyle: Optional[LineStyle] = None, 
-        placement: SymbolicConstant = MIN_MAX_EDGE,
+        placement: Literal[C.MIN_MAX_EDGE] = MIN_MAX_EDGE,
         tickLength: float = 2,
-        tickPlacement: SymbolicConstant = INSIDE,
+        tickPlacement: Literal[C.INSIDE] = INSIDE,
         tickStyle: Optional[LineStyle] = None, 
         titleStyle: Optional[TextStyle] = None, 
     ):

@@ -1,10 +1,12 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import AUTO, DEMOLD_REGION, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -61,10 +63,10 @@ class TopologyDemoldControl(GeometricRestriction):
         region: Region,
         csys: Optional[int] = None,
         draftAngle: float = 0,
-        collisionCheckRegion: SymbolicConstant = DEMOLD_REGION,
+        collisionCheckRegion: Literal[C.DEMOLD_REGION] = DEMOLD_REGION,
         pointRegion: Optional[Region] = None,
         pullDirection: tuple = (),
-        technique: SymbolicConstant = AUTO,
+        technique: Literal[C.POINT, C.AUTO_TIGHT, C.SURFACE, C.STAMP, C.AUTO] = AUTO,
     ):
         """This method creates a TopologyDemoldControl object.
 
@@ -114,10 +116,10 @@ class TopologyDemoldControl(GeometricRestriction):
         self,
         csys: Optional[int] = None,
         draftAngle: float = 0,
-        collisionCheckRegion: SymbolicConstant = DEMOLD_REGION,
+        collisionCheckRegion: Literal[C.DEMOLD_REGION] = DEMOLD_REGION,
         pointRegion: Optional[Region] = None,
         pullDirection: tuple = (),
-        technique: SymbolicConstant = AUTO,
+        technique: Literal[C.POINT, C.AUTO_TIGHT, C.SURFACE, C.STAMP, C.AUTO] = AUTO,
     ):
         """This method modifies the TopologyDemoldControl object.
 

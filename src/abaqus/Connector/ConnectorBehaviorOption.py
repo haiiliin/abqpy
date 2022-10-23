@@ -1,12 +1,14 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
 from .TangentialBehavior import TangentialBehavior
 from ..UtilityAndView.abaqusConstants import (Boolean, COEFFICIENTS, CONSTANT, FRACTION, LINEAR,
-                                              OFF, ON, PENALTY, SymbolicConstant)
+                                              OFF, ON, PENALTY)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 # Prevent circular import
@@ -61,14 +63,14 @@ class ConnectorBehaviorOption:
     @abaqus_method_doc
     def TangentialBehavior(
         self,
-        formulation: SymbolicConstant = PENALTY,
+        formulation: Literal[C.PENALTY, C.EXPONENTIAL_DECAY] = PENALTY,
         slipRateDependency: Boolean = OFF,
         pressureDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        exponentialDecayDefinition: SymbolicConstant = COEFFICIENTS,
+        exponentialDecayDefinition: Literal[C.TEST_DATA, C.COEFFICIENTS] = COEFFICIENTS,
         shearStressLimit: Optional[float] = None,
-        maximumElasticSlip: SymbolicConstant = FRACTION,
+        maximumElasticSlip: Literal[C.FRACTION, C.ABSOLUTE_DISTANCE] = FRACTION,
         fraction: Optional[float] = None,
         absoluteDistance: Optional[float] = None,
         table: tuple = (),
@@ -167,9 +169,9 @@ class ConnectorBehaviorOption:
         regularization: float = 0,
         defaultRateFactor: Boolean = ON,
         rateFactor: float = 0,
-        interpolation: SymbolicConstant = LINEAR,
+        interpolation: Literal[C.LOGARITHMIC, C.LINEAR] = LINEAR,
         useBehExtSettings: Boolean = ON,
-        extrapolation: SymbolicConstant = CONSTANT,
+        extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT,
     ) -> ConnectorOptions:
         """This method creates a connector options object to be used in conjunction with an
         allowable connector behavior option, derived component term, or connector section.

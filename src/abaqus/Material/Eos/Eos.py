@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ...UtilityAndView.abaqusConstants import Boolean, IDEALGAS, OFF, SymbolicConstant
+from ...UtilityAndView.abaqusConstants import Boolean, IDEALGAS, OFF
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -49,7 +51,7 @@ class Eos:
     @abaqus_method_doc
     def __init__(
         self,
-        type: SymbolicConstant = IDEALGAS,
+        type: Literal[C.JWL, C.IGNITIONANDGROWTH, C.TABULAR, C.IDEALGAS, C.USUP] = IDEALGAS,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         detonationEnergy: float = 0,

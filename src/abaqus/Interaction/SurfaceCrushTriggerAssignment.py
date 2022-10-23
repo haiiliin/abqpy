@@ -1,8 +1,9 @@
 from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -27,7 +28,7 @@ class SurfaceCrushTriggerAssignment:
 
     @abaqus_method_doc
     def changeValuesInStep(
-        self, stepName: str, index: int, value: Union[SymbolicConstant, float]
+        self, stepName: str, index: int, value: Union[Literal[C.NO_CRUSH, C.TRIGGER, C.NO_TRIGGER], float]
     ):
         """This method allows modification of surface crush trigger assignments already defined on
         surfaces in a given step.
@@ -53,7 +54,7 @@ class SurfaceCrushTriggerAssignment:
 
     @abaqus_method_doc
     def appendInStep(
-        self, stepName: str, assignments: Union[SymbolicConstant, float]
+        self, stepName: str, assignments: Union[Literal[C.NO_CRUSH, C.TRIGGER, C.NO_TRIGGER, C.GLOBAL], float]
     ):
         """This method allows addition of surface crush trigger assignments to new surfaces in a
         given step.

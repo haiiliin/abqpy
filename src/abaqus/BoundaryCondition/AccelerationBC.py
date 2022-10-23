@@ -1,10 +1,12 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import SET, SymbolicConstant, UNIFORM, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -50,15 +52,15 @@ class AccelerationBC(BoundaryCondition):
         createStepName: str,
         region: Region,
         fieldName: str = "",
-        a1: Union[SymbolicConstant, float] = UNSET,
-        a2: Union[SymbolicConstant, float] = UNSET,
-        a3: Union[SymbolicConstant, float] = UNSET,
-        ar1: Union[SymbolicConstant, float] = UNSET,
-        ar2: Union[SymbolicConstant, float] = UNSET,
-        ar3: Union[SymbolicConstant, float] = UNSET,
+        a1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        a2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        a3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ar1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ar2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ar3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
         localCsys: Optional[str] = None,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
     ):
         """This method creates an AccelerationBC object.
 
@@ -126,15 +128,15 @@ class AccelerationBC(BoundaryCondition):
     def setValues(
         self,
         fieldName: str = "",
-        a1: Union[SymbolicConstant, float] = UNSET,
-        a2: Union[SymbolicConstant, float] = UNSET,
-        a3: Union[SymbolicConstant, float] = UNSET,
-        ar1: Union[SymbolicConstant, float] = UNSET,
-        ar2: Union[SymbolicConstant, float] = UNSET,
-        ar3: Union[SymbolicConstant, float] = UNSET,
+        a1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        a2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        a3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ar1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ar2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ar3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         amplitude: str = UNSET,
         localCsys: Optional[str] = None,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
     ):
         """This method modifies the data for an existing AccelerationBC object in the step where it
         is created.
@@ -187,12 +189,12 @@ class AccelerationBC(BoundaryCondition):
     def setValuesInStep(
         self,
         stepName: str,
-        a1: Union[SymbolicConstant, float] = SET,
-        a2: Union[SymbolicConstant, float] = SET,
-        a3: Union[SymbolicConstant, float] = SET,
-        ar1: Union[SymbolicConstant, float] = SET,
-        ar2: Union[SymbolicConstant, float] = SET,
-        ar3: Union[SymbolicConstant, float] = SET,
+        a1: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
+        a2: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
+        a3: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
+        ar1: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
+        ar2: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
+        ar3: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing AccelerationBC object in the
