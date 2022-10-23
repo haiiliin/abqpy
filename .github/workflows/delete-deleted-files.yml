@@ -30,7 +30,6 @@ jobs:
         write-mode: overwrite
     - name: Delete deleted files
       run: |
-        echo "pull request body = ${{ github.event.pull_request.body }}"
         python ".github/delete-deleted-files.py"
     - name: Check if there are changes
       id: changes
