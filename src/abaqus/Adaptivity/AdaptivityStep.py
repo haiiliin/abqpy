@@ -21,7 +21,7 @@ class AdaptivityStep(StepBase):
     constructor. The methods and members of the Step object are common to all objects
     derived from the Step.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -32,7 +32,22 @@ class AdaptivityStep(StepBase):
     def AdaptiveMeshConstraintState(
         self,
         amplitudeState: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        status: Optional[Literal[C.NOT_YET_ACTIVE, C.PROPAGATED_FROM_BASE_STATE, C.DEACTIVATED_FROM_BASE_STATE, C.DEACTIVATED, C.MODIFIED_FROM_BASE_STATE, C.PROPAGATED, C.NO_LONGER_ACTIVE, C.CREATED, C.INSTANCE_NOT_APPLICABLE, C.BUILT_INTO_MODES, C.TYPE_NOT_APPLICABLE, C.MODIFIED]] = None,
+        status: Optional[
+            Literal[
+                C.NOT_YET_ACTIVE,
+                C.PROPAGATED_FROM_BASE_STATE,
+                C.DEACTIVATED_FROM_BASE_STATE,
+                C.DEACTIVATED,
+                C.MODIFIED_FROM_BASE_STATE,
+                C.PROPAGATED,
+                C.NO_LONGER_ACTIVE,
+                C.CREATED,
+                C.INSTANCE_NOT_APPLICABLE,
+                C.BUILT_INTO_MODES,
+                C.TYPE_NOT_APPLICABLE,
+                C.MODIFIED,
+            ]
+        ] = None,
         amplitude: str = "",
     ) -> AdaptiveMeshConstraintState:
         """The AdaptiveMeshConstraintState object is the abstract base type for other Arbitrary
@@ -41,7 +56,7 @@ class AdaptivityStep(StepBase):
         of the AdaptiveMeshConstraintState object are common to all objects derived from the
         AdaptiveMeshConstraintState object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].steps[name].AdaptiveMeshConstraintState
@@ -50,7 +65,7 @@ class AdaptivityStep(StepBase):
         ----------
         amplitudeState
             A SymbolicConstant specifying the propagation state of the amplitude reference. Possible values are
-            
+
             - UNSET
             - SET
             - UNCHANGED
@@ -76,9 +91,7 @@ class AdaptivityStep(StepBase):
             A String specifying the name of the amplitude reference. The String is empty if the  adaptive mesh
             constraint has no amplitude reference.
         """
-        self.adaptiveMeshConstraintStates[
-            amplitude
-        ] = adaptiveMeshConstraintState = AdaptiveMeshConstraintState(
+        self.adaptiveMeshConstraintStates[amplitude] = adaptiveMeshConstraintState = AdaptiveMeshConstraintState(
             amplitudeState, status, amplitude
         )
         return adaptiveMeshConstraintState
@@ -99,7 +112,22 @@ class AdaptivityStep(StepBase):
         ur2State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
         ur3State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
         amplitudeState: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        status: Optional[Literal[C.NOT_YET_ACTIVE, C.PROPAGATED_FROM_BASE_STATE, C.DEACTIVATED_FROM_BASE_STATE, C.DEACTIVATED, C.MODIFIED_FROM_BASE_STATE, C.PROPAGATED, C.NO_LONGER_ACTIVE, C.CREATED, C.INSTANCE_NOT_APPLICABLE, C.BUILT_INTO_MODES, C.TYPE_NOT_APPLICABLE, C.MODIFIED]] = None,
+        status: Optional[
+            Literal[
+                C.NOT_YET_ACTIVE,
+                C.PROPAGATED_FROM_BASE_STATE,
+                C.DEACTIVATED_FROM_BASE_STATE,
+                C.DEACTIVATED,
+                C.MODIFIED_FROM_BASE_STATE,
+                C.PROPAGATED,
+                C.NO_LONGER_ACTIVE,
+                C.CREATED,
+                C.INSTANCE_NOT_APPLICABLE,
+                C.BUILT_INTO_MODES,
+                C.TYPE_NOT_APPLICABLE,
+                C.MODIFIED,
+            ]
+        ] = None,
         amplitude: str = "",
     ) -> DisplacementAdaptiveMeshConstraintState:
         """The DisplacementAdaptiveMeshConstraintState object stores the propagating data for an
@@ -111,7 +139,7 @@ class AdaptivityStep(StepBase):
         The DisplacementAdaptiveMeshConstraintState object is derived from the
         AdaptiveMeshConstraintState object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].steps[name].DisplacementAdaptiveMeshConstraintState
@@ -154,7 +182,7 @@ class AdaptivityStep(StepBase):
         status
             A SymbolicConstant specifying the propagation state of the AdaptiveMeshConstraintState  object. Possible
             values are:
-            
+
             - NOT_YET_ACTIVE
             - CREATED
             - PROPAGATED
@@ -208,7 +236,22 @@ class AdaptivityStep(StepBase):
         vr2State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
         vr3State: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
         amplitudeState: Optional[Literal[C.UNSET, C.SET, C.FREED, C.UNCHANGED, C.MODIFIED]] = None,
-        status: Optional[Literal[C.NOT_YET_ACTIVE, C.PROPAGATED_FROM_BASE_STATE, C.DEACTIVATED_FROM_BASE_STATE, C.DEACTIVATED, C.MODIFIED_FROM_BASE_STATE, C.PROPAGATED, C.NO_LONGER_ACTIVE, C.CREATED, C.INSTANCE_NOT_APPLICABLE, C.BUILT_INTO_MODES, C.TYPE_NOT_APPLICABLE, C.MODIFIED]] = None,
+        status: Optional[
+            Literal[
+                C.NOT_YET_ACTIVE,
+                C.PROPAGATED_FROM_BASE_STATE,
+                C.DEACTIVATED_FROM_BASE_STATE,
+                C.DEACTIVATED,
+                C.MODIFIED_FROM_BASE_STATE,
+                C.PROPAGATED,
+                C.NO_LONGER_ACTIVE,
+                C.CREATED,
+                C.INSTANCE_NOT_APPLICABLE,
+                C.BUILT_INTO_MODES,
+                C.TYPE_NOT_APPLICABLE,
+                C.MODIFIED,
+            ]
+        ] = None,
         amplitude: str = "",
     ) -> VelocityAdaptiveMeshConstraintState:
         """The VelocityAdaptiveMeshConstraintState object stores the propagating data for an
@@ -220,7 +263,7 @@ class AdaptivityStep(StepBase):
         The VelocityAdaptiveMeshConstraintState object is derived from the
         AdaptiveMeshConstraintState object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].steps[name].VelocityAdaptiveMeshConstraintState
@@ -316,7 +359,7 @@ class AdaptivityStep(StepBase):
 
         This method creates an AdaptiveMeshDomain object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].steps[name].AdaptiveMeshDomain

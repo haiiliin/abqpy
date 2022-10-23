@@ -9,7 +9,7 @@ from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 class DruckerPragerCreep:
     r"""The DruckerPragerCreep object specifies creep for Drucker-Prager plasticity models.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -20,7 +20,7 @@ class DruckerPragerCreep:
         The table data for this object are:
 
         - If **law** = TIME or **law** = STRAIN, the table data specify the following:
-        
+
             - A. (Units of :math:`\mathrm{F}^{-n} \mathrm{~L}^{2 n} \mathrm{~T}^{-1-m}`.)
             - :math:`n`.
             - :math:`m`.
@@ -29,7 +29,7 @@ class DruckerPragerCreep:
             - Value of the second field variable.
             - Etc.
         - If **law** = SINGHM, the table data specify the following:
-        
+
             - A. (Units of :math:`\mathrm{T}^{-1}`. )
             - :math:`\alpha`. (Units of :math:`F^{-1} L^{2}`.)
             - :math:`m`.
@@ -54,7 +54,7 @@ class DruckerPragerCreep:
     ):
         """This method creates a DruckerPragerCreep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].druckerPrager.DruckerPragerCreep

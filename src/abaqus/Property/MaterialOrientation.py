@@ -7,9 +7,19 @@ from ..Datum.DatumAxis import DatumAxis
 from ..Datum.DatumCsys import DatumCsys
 from ..Region.Set import Set
 from ..Region.Surface import Surface
-from ..UtilityAndView.abaqusConstants import (AXIS_1, AXIS_3, Boolean, GLOBAL, NORMAL_VECTOR, OFF,
-                                              PRIMARY_VECTOR, ROTATION_NONE, STACK_3,
-                                              SymbolicConstant, VECTOR)
+from ..UtilityAndView.abaqusConstants import (
+    AXIS_1,
+    AXIS_3,
+    Boolean,
+    GLOBAL,
+    NORMAL_VECTOR,
+    OFF,
+    PRIMARY_VECTOR,
+    ROTATION_NONE,
+    STACK_3,
+    SymbolicConstant,
+    VECTOR,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -18,7 +28,7 @@ class MaterialOrientation:
     """The MaterialOrientation object represents the orientation of the material properties and
     composite layups.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -127,7 +137,7 @@ class MaterialOrientation:
     def __init__(
         self,
         region: Set,
-        localCsys: Optional[DatumCsys] = None, 
+        localCsys: Optional[DatumCsys] = None,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
         stackDirection: Literal[C.STACK_2, C.STACK_ORIENTATION, C.STACK_3, C.STACK_1] = STACK_3,
@@ -136,19 +146,19 @@ class MaterialOrientation:
         normalAxisDirection: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_3,
         normalAxisDefinition: Literal[C.SURFACE, C.NORMAL_VECTOR, C.NORMAL_DATUM] = NORMAL_VECTOR,
         normalAxisRegion: Optional[Surface] = None,
-        normalAxisDatum: Optional[DatumAxis] = None, 
+        normalAxisDatum: Optional[DatumAxis] = None,
         flipNormalDirection: Boolean = OFF,
         normalAxisVector: tuple = (),
         primaryAxisDirection: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         primaryAxisDefinition: Literal[C.SURFACE, C.PRIMARY_VECTOR, C.PRIMARY_DATUM] = PRIMARY_VECTOR,
         primaryAxisRegion: Optional[Set] = None,
-        primaryAxisDatum: Optional[DatumAxis] = None, 
+        primaryAxisDatum: Optional[DatumAxis] = None,
         flipPrimaryDirection: Boolean = OFF,
         primaryAxisVector: tuple = (),
     ):
         """This method creates a MaterialOrientation object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].MaterialOrientation
@@ -231,7 +241,7 @@ class MaterialOrientation:
     @abaqus_method_doc
     def ReferenceOrientation(
         self,
-        localCsys: Optional[DatumCsys] = None, 
+        localCsys: Optional[DatumCsys] = None,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
         stackDirection: Literal[C.STACK_2, C.STACK_ORIENTATION, C.STACK_3, C.STACK_1] = STACK_3,
@@ -242,19 +252,19 @@ class MaterialOrientation:
         normalAxisDirection: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_3,
         normalAxisDefinition: Literal[C.SURFACE, C.DATUM, C.VECTOR] = VECTOR,
         normalAxisRegion: Optional[Surface] = None,
-        normalAxisDatum: Optional[DatumAxis] = None, 
+        normalAxisDatum: Optional[DatumAxis] = None,
         flipNormalDirection: Boolean = OFF,
         normalAxisVector: tuple = (),
         primaryAxisDirection: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         primaryAxisDefinition: Literal[C.DATUM, C.VECTOR, C.EDGE] = VECTOR,
         primaryAxisRegion: Optional[Set] = None,
-        primaryAxisDatum: Optional[DatumAxis] = None, 
+        primaryAxisDatum: Optional[DatumAxis] = None,
         flipPrimaryDirection: Boolean = OFF,
         primaryAxisVector: tuple = (),
     ):
         """This method creates a MaterialOrientation object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].MaterialOrientation

@@ -15,7 +15,7 @@ class SurfaceThicknessAssignment:
     for surfaces in ContactExp and ContactStd objects. The SurfaceThicknessAssignment object
     has no constructor or members.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -27,9 +27,7 @@ class SurfaceThicknessAssignment:
     """
 
     @abaqus_method_doc
-    def changeValuesInStep(
-        self, stepName: str, index: int, value: Union[Literal[C.THINNING, C.ORIGINAL], float]
-    ):
+    def changeValuesInStep(self, stepName: str, index: int, value: Union[Literal[C.THINNING, C.ORIGINAL], float]):
         """This method allows modification of surface thickness assignments already defined on
         surfaces in a given step.
 
@@ -44,7 +42,7 @@ class SurfaceThicknessAssignment:
         value
             A tuple specifying the value of the surface thickness assignments for the surface whose
             index is referenced. Each tuple contains two entries:
-            
+
             - A Float or a SymbolicConstant specifying the overriding thickness value to be used in
               the contact definition. Possible values of the SymbolicConstant are ORIGINAL and
               THINNING. The SymbolicConstant THINNING can be specified only in an Abaqus/Explicit
@@ -56,9 +54,16 @@ class SurfaceThicknessAssignment:
 
     @abaqus_method_doc
     def appendInStep(
-        self, stepName: str,
-        assignments: Tuple[Tuple[Union[Region, Material, Literal[C.THINNING, C.ORIGINAL, C.GLOBAL]],
-                                               Union[SymbolicConstant, float], float], ...],
+        self,
+        stepName: str,
+        assignments: Tuple[
+            Tuple[
+                Union[Region, Material, Literal[C.THINNING, C.ORIGINAL, C.GLOBAL]],
+                Union[SymbolicConstant, float],
+                float,
+            ],
+            ...,
+        ],
     ):
         """This method allows addition of surface thickness assignments to new surfaces in a given
         step.

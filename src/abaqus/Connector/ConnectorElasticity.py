@@ -13,7 +13,7 @@ class ConnectorElasticity(ConnectorBehaviorOption):
     connector's relative motion.
     The ConnectorElasticity object is derived from the ConnectorBehaviorOption object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -24,39 +24,39 @@ class ConnectorElasticity(ConnectorBehaviorOption):
         The table data for this object are:
 
         - If **behavior** = LINEAR and **coupling** = UNCOUPLED, then each sequence of the table data specifies the following:
-        
+
           - Elastic stiffness (per each specified force/moment component).
           - Frequency (cycles/time), if the data depend on frequency.
           - Temperature, if the data depend on temperature.
           - Value of the first field variable, if the data depend on field variables.
           - Value of the second field variable.
           - Etc.
-          
+
         - If **behavior** = NONLINEAR and **coupling** = UNCOUPLED, then each sequence of the table data specifies the following:
-        
+
           - Force or moment.
           - Relative displacement or rotation.
           - Temperature, if the data depend on temperature.
           - Value of the first field variable, if the data depend on field variables.
           - Value of the second field variable.
           - Etc.
-          
-        - If **behavior** = LINEAR and **coupling** = COUPLED, the table data specify the symmetric portion of the elastic stiffness matrix for 
-          the specified components followed by any temperature data and then any field data. For example, if components 2, 3, and 5 are specified, 
+
+        - If **behavior** = LINEAR and **coupling** = COUPLED, the table data specify the symmetric portion of the elastic stiffness matrix for
+          the specified components followed by any temperature data and then any field data. For example, if components 2, 3, and 5 are specified,
           the table portion of the command is as follows: `table=( (D22D22, D23D23, D25D25, D33D33, D35D35, D55D55,), )`
           The following items should then be specified as comma-separated data:
-        
+
           - Temperature, if the data depend on temperature.
           - Value of the first field variable, if the data depend on field variables.
           - Value of the second field variable.
           - Etc.
-          
+
         - If **behavior** = NONLINEAR and **coupling** = COUPLED_POSITION or COUPLED_MOTION, each sequence of the table data specifies the following:
-        
+
           - Force or moment for the directions in the **components** list.
-          - Relative position or angle for the first **independentComponents** direction if **coupling** = COUPLED_POSITION. Relative 
+          - Relative position or angle for the first **independentComponents** direction if **coupling** = COUPLED_POSITION. Relative
             displacement or rotation for the first **independentComponents** direction if **coupling** = COUPLED_MOTION.
-          - Relative position or angle for the second **independentComponents** direction if **coupling** = COUPLED_POSITION. Relative 
+          - Relative position or angle for the second **independentComponents** direction if **coupling** = COUPLED_POSITION. Relative
             displacement or rotation for the second **independentComponents** direction if **coupling** = COUPLED_MOTION.
           - Etc. up to the Nth **independentComponents** direction.
           - Temperature, if the data depend on temperature.
@@ -119,7 +119,9 @@ class ConnectorElasticity(ConnectorBehaviorOption):
     def __init__(
         self,
         behavior: Literal[C.RIGID, C.NONLINEAR, C.LINEAR] = LINEAR,
-        coupling: Literal[C.RIGID, C.UNCOUPLED, C.NONLINEAR, C.COUPLED_POSITION, C.COUPLED_MOTION, C.COUPLED, C.LINEAR] = UNCOUPLED,
+        coupling: Literal[
+            C.RIGID, C.UNCOUPLED, C.NONLINEAR, C.COUPLED_POSITION, C.COUPLED_MOTION, C.COUPLED, C.LINEAR
+        ] = UNCOUPLED,
         dependencies: int = 0,
         temperatureDependency: Boolean = OFF,
         frequencyDependency: Boolean = OFF,
@@ -130,7 +132,7 @@ class ConnectorElasticity(ConnectorBehaviorOption):
         """This method creates a connector elasticity behavior option for a ConnectorSection
         object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 import connectorBehavior

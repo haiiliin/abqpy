@@ -9,7 +9,7 @@ from .....UtilityAndView.abaqusConstants import Boolean, OFF
 class CastIronPlasticity:
     r"""The CastIronPlasticity object specifies the Cast Iron plasticity model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -34,17 +34,13 @@ class CastIronPlasticity:
     castIronTensionHardening: CastIronTensionHardening = CastIronTensionHardening(((),))
 
     #: A :py:class:`~abaqus.Material.Plastic.Metal.CastIron.CastIronCompressionHardening.CastIronCompressionHardening` object.
-    castIronCompressionHardening: CastIronCompressionHardening = (
-        CastIronCompressionHardening(((),))
-    )
+    castIronCompressionHardening: CastIronCompressionHardening = CastIronCompressionHardening(((),))
 
     @abaqus_method_doc
-    def __init__(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ):
+    def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a CastIronPlasticity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].CastIronPlasticity

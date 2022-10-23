@@ -1,8 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (Boolean, FEATURE, OFF, ON, SOLID, SymbolicConstant,
-                                              VERY_THIN, WIREFRAME)
+from ..UtilityAndView.abaqusConstants import Boolean, FEATURE, OFF, ON, SOLID, SymbolicConstant, VERY_THIN, WIREFRAME
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -12,7 +11,7 @@ class OptionArg:
     associated with a viewCutOptions object. The OptionArg object has only a constructor
     command.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -83,7 +82,7 @@ class OptionArg:
     ):
         """This method creates an OptionArg object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 visualization.OptionArg

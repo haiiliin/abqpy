@@ -8,7 +8,7 @@ class RandomResponseFrequency:
     """A RandomResponseFrequency is an object used to define frequency over a range of modes.
     This page discusses:
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step

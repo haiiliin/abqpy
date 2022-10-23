@@ -8,7 +8,7 @@ class AcousticInterfaceSection(Section):
     """The AcousticInterfaceSection object defines the properties of an acoustic section.
     The AcousticInterfaceSection object is derived from the Section object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -32,7 +32,7 @@ class AcousticInterfaceSection(Section):
     def __init__(self, name: str, thickness: float = 1):
         """This method creates an AcousticInterfaceSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AcousticInterfaceSection

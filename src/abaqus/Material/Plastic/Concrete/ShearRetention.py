@@ -8,7 +8,7 @@ class ShearRetention:
     r"""The ShearRetention object defines the reduction of the shear modulus associated with
     crack surfaces in a Concrete model as a function of the tensile strain across the crack.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -19,7 +19,7 @@ class ShearRetention:
         The table data for this object are:
 
         - :math:`\varrho^{\text {close }} for dry concrete. The default value is 1.0`
-        - :math:`\varepsilon^{\max }` for dry concrete. The default value is a very large number 
+        - :math:`\varepsilon^{\max }` for dry concrete. The default value is a very large number
           (full shear retention).
         - :math:`\varrho^{\text {close }} for wet concrete. The default value is 1.0`
         - :math:`\varepsilon^{\max }` for wet concrete. The default value is a very large number
@@ -35,12 +35,10 @@ class ShearRetention:
     """
 
     @abaqus_method_doc
-    def __init__(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ):
+    def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a ShearRetention object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].concrete.ShearRetention

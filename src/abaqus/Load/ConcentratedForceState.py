@@ -15,7 +15,7 @@ class ConcentratedForceState(LoadState):
     The ConcentratedForceState object has no constructor or methods.
     The ConcentratedForceState object is derived from the LoadState object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load

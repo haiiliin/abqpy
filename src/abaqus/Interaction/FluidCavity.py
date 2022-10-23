@@ -10,7 +10,7 @@ class FluidCavity(Interaction):
     """The FluidCavity object defines a surface-based cavity.
     The FluidCavity object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -67,7 +67,7 @@ class FluidCavity(Interaction):
     ):
         """This method creates an FluidCavity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FluidCavity

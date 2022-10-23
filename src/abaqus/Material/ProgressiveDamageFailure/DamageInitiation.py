@@ -26,7 +26,7 @@ class DamageInitiation:
     """The DamageInitiation object specifies material properties to define the initiation of
     damage.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -63,7 +63,7 @@ class DamageInitiation:
         The table data for this object are:
 
         - If constructor is DuctileDamageInitiation, the table data specify the following:
-        
+
             - Equivalent fracture strain at damage initiation.
             - Stress triaxiality.
             - Strain rate.
@@ -72,7 +72,7 @@ class DamageInitiation:
             - Value of the second field variable.
             - Etc.
         - If constructor is FldDamageInitiation, the table data specify the following:
-        
+
             - Major principal strain at damage initiation.
             - Minor principal strain.
             - Temperature, if the data depend on temperature.
@@ -80,7 +80,7 @@ class DamageInitiation:
             - Value of the second field variable.
             - Etc.
         - If constructor FlsdDamageInitiation, the table data specify the following:
-        
+
             - Major principal stress at damage initiation.
             - Minor principal stress.
             - Temperature, if the data depend on temperature.
@@ -88,7 +88,7 @@ class DamageInitiation:
             - Value of the second field variable.
             - Etc.
         - If constructor is JohnsonCookDamageInitiation, the table data specify the following:
-        
+
             - Johnson-Cook failure parameter D1.
             - Johnson-Cook failure parameter D2.
             - Johnson-Cook failure parameter D3.
@@ -98,7 +98,7 @@ class DamageInitiation:
             - Transition temperature.
             - Reference strain rate.
         - If constructor MkDamageInitiation, the table data specify the following:
-        
+
             - Flaw size relative to nominal thickness of the section.
             - Angle (in degrees) with respect to the 1-direction of the local material orientation.
             - Temperature, if the data depend on temperature.
@@ -106,7 +106,7 @@ class DamageInitiation:
             - Value of the second field variable.
             - Etc.
         - If constructor is MsfldDamageInitiation and **definition** = MSFLD, the table data specify the following:
-        
+
             - Nominal strain at damage initiation in a normal-only mode.
             - Equivalent Plastic strain at initiation of localized necking.
             - Ratio of minor to major principal strains.
@@ -116,7 +116,7 @@ class DamageInitiation:
             - Value of the second field variable.
             - Etc.
         - If constructor is MsfldDamageInitiation and **definition** = FLD, the table data specify the following:
-        
+
             - Major principal strain at initiation of localized necking.
             - Equivalent Plastic strain at initiation of localized necking.
             - Ratio of minor to major principal strains.
@@ -126,7 +126,7 @@ class DamageInitiation:
             - Value of the second field variable.
             - Etc.
         - If constructor is QuadeDamageInitiation or MaxeDamageInitiation, the table data specify the following:
-        
+
             - Nominal strain at damage initiation in a normal-only mode.
             - Nominal strain at damage initiation in a shear-only mode that involves separation only along the first shear direction.
             - Nominal strain at damage initiation in a shear-only mode that involves separation only along the second shear direction.
@@ -135,7 +135,7 @@ class DamageInitiation:
             - Value of the second field variable.
             - Etc.
         - If constructor is QuadsDamageInitiation or MaxsDamageInitiation, the table data specify the following:
-        
+
             - Nominal strain at damage initiation in a normal-only mode.
             - Nominal strain at damage initiation in a shear-only mode that involves separation only along the first shear direction.
             - Nominal strain at damage initiation in a shear-only mode that involves separation only along the second shear direction.
@@ -144,21 +144,21 @@ class DamageInitiation:
             - Value of the second field variable.
             - Etc.
         - If constructor is MaxpeDamageInitiation, the table data specify the following:
-        
+
             - Maximum principal strain at damage initiation.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
         - If constructor is MaxpsDamageInitiation, the table data specify the following:
-        
+
             - Maximum principal stress at damage initiation.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
         - If constructor is ShearDamageInitiation, the table data specify the following:
-        
+
             - Equivalent fracture strain at damage initiation.
             - Shear stress ratio.
             - Strain rate.
@@ -167,7 +167,7 @@ class DamageInitiation:
             - Value of the second field variable.
             - Etc.
         - If constructor is HashinDamageInitiation, the table data specify the following:
-        
+
             - Fiber tensile strength.
             - Fiber compressive strength.
             - Matrix tensile strength.
@@ -245,9 +245,7 @@ class DamageInitiation:
     damageStabilization: Optional[DamageStabilization] = None
 
     #: A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive` object.
-    damageStabilizationCohesive: DamageStabilizationCohesive = (
-        DamageStabilizationCohesive()
-    )
+    damageStabilizationCohesive: DamageStabilizationCohesive = DamageStabilizationCohesive()
 
     @abaqus_method_doc
     def DuctileDamageInitiation(
@@ -269,7 +267,7 @@ class DamageInitiation:
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].DuctileDamageInitiation
@@ -350,7 +348,7 @@ class DamageInitiation:
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].FldDamageInitiation
@@ -431,7 +429,7 @@ class DamageInitiation:
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].FlsdDamageInitiation
@@ -512,7 +510,7 @@ class DamageInitiation:
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].JohnsonCookDamageInitiation
@@ -594,7 +592,7 @@ class DamageInitiation:
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxeDamageInitiation
@@ -679,7 +677,7 @@ class DamageInitiation:
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxsDamageInitiation
@@ -763,7 +761,7 @@ class DamageInitiation:
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MkDamageInitiation
@@ -844,7 +842,7 @@ class DamageInitiation:
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MsfldDamageInitiation
@@ -926,7 +924,7 @@ class DamageInitiation:
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].QuadeDamageInitiation
@@ -1011,7 +1009,7 @@ class DamageInitiation:
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].QuadsDamageInitiation
@@ -1096,7 +1094,7 @@ class DamageInitiation:
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxpeDamageInitiation
@@ -1181,7 +1179,7 @@ class DamageInitiation:
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MaxpsDamageInitiation
@@ -1265,7 +1263,7 @@ class DamageInitiation:
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].ShearDamageInitiation
@@ -1346,7 +1344,7 @@ class DamageInitiation:
     ):
         """This method creates A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageInitiation.DamageInitiation` object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].HashinDamageInitiation
@@ -1420,16 +1418,14 @@ class DamageInitiation:
         degradation: Literal[C.MAXIMUM, C.MULTIPLICATIVE] = MAXIMUM,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        mixedModeBehavior: Literal[
-            C.MODE_INDEPENDENT, C.TABULAR, C.POWER_LAW, C.BK
-        ] = MODE_INDEPENDENT,
+        mixedModeBehavior: Literal[C.MODE_INDEPENDENT, C.TABULAR, C.POWER_LAW, C.BK] = MODE_INDEPENDENT,
         modeMixRatio: Literal[C.TRACTION, C.ENERGY] = ENERGY,
         power: Optional[float] = None,
         softening: Literal[C.LINEAR, C.EXPONENTIAL, C.TABULAR] = LINEAR,
     ) -> DamageEvolution:
         """This method creates a DamageEvolution object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].ductileDamageInitiation.DamageEvolution
@@ -1454,39 +1450,39 @@ class DamageInitiation:
                 session.odbs[name].materials[name].mkDamageInitiation.DamageEvolution
                 session.odbs[name].materials[name].msfldDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].quadeDamageInitiation.DamageEvolution.DamageEvolutioname].materials[name].quadsDamageInitiation.DamageEvolution
                 session.odbs[name].materials[name].shearDamageInitiation.DamageEvolution
-            
+
         Parameters
         ----------
         type
-            A SymbolicConstant specifying the type of damage evolution. Possible values are 
-            DISPLACEMENT and ENERGY. 
+            A SymbolicConstant specifying the type of damage evolution. Possible values are
+            DISPLACEMENT and ENERGY.
         table
-            A sequence of sequences of Floats specifying the items described below. 
+            A sequence of sequences of Floats specifying the items described below.
         degradation
-            A SymbolicConstant specifying the degradation. Possible values are MAXIMUM and 
-            MULTIPLICATIVE. The default value is MAXIMUM. 
+            A SymbolicConstant specifying the degradation. Possible values are MAXIMUM and
+            MULTIPLICATIVE. The default value is MAXIMUM.
         temperatureDependency
-            A Boolean specifying whether the data depend on temperature. The default value is OFF. 
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies
-            An Int specifying the number of field variable dependencies. The default value is 0. 
+            An Int specifying the number of field variable dependencies. The default value is 0.
         mixedModeBehavior
-            A SymbolicConstant specifying the mixed mode behavior. Possible values are 
-            MODE_INDEPENDENT, TABULAR, POWER_LAW, and BK. The default value is MODE_INDEPENDENT. 
+            A SymbolicConstant specifying the mixed mode behavior. Possible values are
+            MODE_INDEPENDENT, TABULAR, POWER_LAW, and BK. The default value is MODE_INDEPENDENT.
         modeMixRatio
-            A SymbolicConstant specifying the mode mix ratio. Possible values are ENERGY and 
-            TRACTION. The default value is ENERGY. 
+            A SymbolicConstant specifying the mode mix ratio. Possible values are ENERGY and
+            TRACTION. The default value is ENERGY.
         power
-            None or a Float specifying the exponent in the power law or the Benzeggagh-Kenane 
-            criterion that defines the variation of fracture energy with mode mix for cohesive 
-            elements. The default value is None. 
+            None or a Float specifying the exponent in the power law or the Benzeggagh-Kenane
+            criterion that defines the variation of fracture energy with mode mix for cohesive
+            elements. The default value is None.
         softening
-            A SymbolicConstant specifying the softening. Possible values are LINEAR, EXPONENTIAL, 
-            and TABULAR. The default value is LINEAR. 
+            A SymbolicConstant specifying the softening. Possible values are LINEAR, EXPONENTIAL,
+            and TABULAR. The default value is LINEAR.
 
         Returns
         -------
         DamageEvolution
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution` object. 
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageEvolution.DamageEvolution` object.
 
         Raises
         ------
@@ -1495,12 +1491,10 @@ class DamageInitiation:
         ...
 
     @abaqus_method_doc
-    def DamageStabilizationCohesive(
-        self, cohesiveCoeff: Optional[float] = None
-    ) -> DamageStabilizationCohesive:
+    def DamageStabilizationCohesive(self, cohesiveCoeff: Optional[float] = None) -> DamageStabilizationCohesive:
         """This method creates a DamageStabilizationCohesive object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].ductileDamageInitiation.DamageStabilizationCohesive
@@ -1531,16 +1525,16 @@ class DamageInitiation:
                 session.odbs[name].materials[name].quadeDamageInitiation.DamageStabilizationCohesive
                 session.odbs[name].materials[name].quadsDamageInitiation.DamageStabilizationCohesive
                 session.odbs[name].materials[name].shearDamageInitiation.DamageStabilizationCohesive
-            
+
         Parameters
         ----------
         cohesiveCoeff
-            None or a Float specifying the viscosity coefficient. The default value is None. 
+            None or a Float specifying the viscosity coefficient. The default value is None.
 
         Returns
         -------
         DamageStabilizationCohesive
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive` object. 
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilizationCohesive.DamageStabilizationCohesive` object.
 
         Raises
         ------

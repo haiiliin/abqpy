@@ -13,7 +13,7 @@ class NonstructuralMass(Inertia):
     into the model.
     The NonstructuralMass object is derived from the Inertia object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -58,7 +58,7 @@ class NonstructuralMass(Inertia):
     ):
         """This method creates a NonstructuralMass object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.NonstructuralMass
@@ -88,7 +88,9 @@ class NonstructuralMass(Inertia):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(self, distribution: Literal[C.TOTAL_MASS, C.MASS_PROPORTIONAL, C.VOLUME_PROPORTIONAL] = MASS_PROPORTIONAL):
+    def setValues(
+        self, distribution: Literal[C.TOTAL_MASS, C.MASS_PROPORTIONAL, C.VOLUME_PROPORTIONAL] = MASS_PROPORTIONAL
+    ):
         """This method modifies the NonstructuralMass object.
 
         Parameters

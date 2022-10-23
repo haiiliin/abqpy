@@ -6,7 +6,7 @@ class OdbModelFieldVarList:
     """The read-only OdbModelFieldVarList object lists all variables available for the model in
     the current OdbDisplay object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

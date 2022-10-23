@@ -14,7 +14,7 @@ class LeafFromElementSets(Leaf):
     commands.
     The LeafFromElementSets object is derived from the Leaf object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import displayGroupOdbToolset
@@ -32,7 +32,7 @@ class LeafFromElementSets(Leaf):
     def __init__(self, elementSets: tuple):
         """This method creates a Leaf object from a sequence of element sets.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 LeafFromElementSets

@@ -9,7 +9,6 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class JobSession(SessionBase):
-
     @abaqus_method_doc
     def Queue(
         self,
@@ -27,7 +26,7 @@ class JobSession(SessionBase):
         """This method creates a Queue object.
         Note:Remote queues are available only on Linux platforms.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.Queue

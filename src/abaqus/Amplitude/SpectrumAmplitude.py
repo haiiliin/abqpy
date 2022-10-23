@@ -2,8 +2,15 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from .Amplitude import Amplitude
-from ..UtilityAndView.abaqusConstants import (ABSOLUTE_VALUE, ACCELERATION, Boolean,
-                                              EVENT_ACCELERATION, OFF, STEP, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    ABSOLUTE_VALUE,
+    ACCELERATION,
+    Boolean,
+    EVENT_ACCELERATION,
+    OFF,
+    STEP,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -13,7 +20,7 @@ class SpectrumAmplitude(Amplitude):
     velocity, or acceleration to be used in a response spectrum analysis.
     The SpectrumAmplitude object is derived from the Amplitude object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import amplitude
@@ -82,7 +89,9 @@ class SpectrumAmplitude(Amplitude):
         method: Literal[C.DEFINE, C.CALCULATE],
         data: tuple,
         specificationUnits: Literal[C.ACCELERATION, C.VELOCITY, C.GRAVITY, C.DISPLACEMENT] = ACCELERATION,
-        eventUnits: Literal[C.EVENT_DISPLACEMENT, C.EVENT_ACCELERATION, C.EVENT_GRAVITY, C.EVENT_VELOCITY] = EVENT_ACCELERATION,
+        eventUnits: Literal[
+            C.EVENT_DISPLACEMENT, C.EVENT_ACCELERATION, C.EVENT_GRAVITY, C.EVENT_VELOCITY
+        ] = EVENT_ACCELERATION,
         solution: Literal[C.ABSOLUTE_VALUE, C.RELATIVE_VALUE] = ABSOLUTE_VALUE,
         timeIncrement: float = 0,
         gravity: float = 1,
@@ -92,7 +101,7 @@ class SpectrumAmplitude(Amplitude):
     ):
         """This method creates a SpectrumAmplitude object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SpectrumAmplitude
@@ -155,7 +164,9 @@ class SpectrumAmplitude(Amplitude):
     def setValues(
         self,
         specificationUnits: Literal[C.ACCELERATION, C.VELOCITY, C.GRAVITY, C.DISPLACEMENT] = ACCELERATION,
-        eventUnits: Literal[C.EVENT_DISPLACEMENT, C.EVENT_ACCELERATION, C.EVENT_GRAVITY, C.EVENT_VELOCITY] = EVENT_ACCELERATION,
+        eventUnits: Literal[
+            C.EVENT_DISPLACEMENT, C.EVENT_ACCELERATION, C.EVENT_GRAVITY, C.EVENT_VELOCITY
+        ] = EVENT_ACCELERATION,
         solution: Literal[C.ABSOLUTE_VALUE, C.RELATIVE_VALUE] = ABSOLUTE_VALUE,
         timeIncrement: float = 0,
         gravity: float = 1,

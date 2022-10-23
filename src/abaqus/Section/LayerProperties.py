@@ -1,11 +1,12 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class LayerProperties:
     """The LayerProperties object defines the properties of a layer of reinforcement for
     membrane, shell, and surface sections.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -72,7 +73,7 @@ class LayerProperties:
     ):
         """This method creates a LayerProperties object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 section.LayerProperties

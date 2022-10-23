@@ -11,7 +11,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 class OdbDiagnosticStep:
     """The OdbDiagnosticStep object stores step data.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

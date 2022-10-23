@@ -15,7 +15,7 @@ class BoltLoad(Load):
     """The BoltLoad object defines a bolt load.
     The BoltLoad object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -53,7 +53,7 @@ class BoltLoad(Load):
     ):
         """This method creates a BoltLoad object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BoltLoad
@@ -104,7 +104,7 @@ class BoltLoad(Load):
     def setValues(
         self,
         boltMethod: Literal[C.APPLY_FORCE, C.ADJUST_LENGTH] = APPLY_FORCE,
-        datumAxis: Optional[DatumAxis] = None, 
+        datumAxis: Optional[DatumAxis] = None,
         amplitude: str = UNSET,
         preTenSecPartLevel: Boolean = False,
     ):

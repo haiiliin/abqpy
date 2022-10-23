@@ -10,7 +10,7 @@ class ConstrainedSketchGeometry:
     """The ConstrainedSketchGeometry object stores the geometry of a sketch, such as lines,
     circles, arcs, and construction lines.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import sketch

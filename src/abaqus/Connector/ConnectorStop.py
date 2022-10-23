@@ -11,7 +11,7 @@ class ConnectorStop(ConnectorBehaviorOption):
     connector's relative motion.
     The ConnectorStop object is derived from the ConnectorBehaviorOption object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -38,12 +38,10 @@ class ConnectorStop(ConnectorBehaviorOption):
     components: tuple = ()
 
     @abaqus_method_doc
-    def __init__(
-        self, minMotion: Optional[float] = None, maxMotion: Optional[float] = None, components: tuple = ()
-    ):
+    def __init__(self, minMotion: Optional[float] = None, maxMotion: Optional[float] = None, components: tuple = ()):
         """This method creates a connector stop behavior option for a ConnectorSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 import connectorBehavior

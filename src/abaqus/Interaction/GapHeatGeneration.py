@@ -1,11 +1,12 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class GapHeatGeneration:
     """The GapHeatGeneration object specifies heat generation for a contact interaction
     property.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -31,7 +32,7 @@ class GapHeatGeneration:
     def __init__(self, conversionFraction: float = 1, secondaryFraction: float = 0):
         """This method creates a GapHeatGeneration object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].interactionProperties[name].HeatGeneration

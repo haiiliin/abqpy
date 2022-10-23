@@ -11,7 +11,7 @@ class LineStyle:
     objects.
     LineStyle objects can be created using the methods described below.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -93,7 +93,7 @@ class LineStyle:
     ):
         """This method creates a LineStyle.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.LineStyle

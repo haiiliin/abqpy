@@ -16,7 +16,7 @@ from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 class Hyperfoam:
     r"""The Hyperfoam object specifies elastic properties for a hyperelastic foam.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -64,7 +64,7 @@ class Hyperfoam:
     ):
         """This method creates a Hyperfoam object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Hyperfoam

@@ -14,7 +14,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class XYCurve:
     """The XYCurve object is used to plot **X - Y** data and to store its display attributes.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -68,7 +68,7 @@ class XYCurve:
     def Curve(self, name: str, data: XYData):
         """This method creates an XYCurve object from an XYData object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.Curve

@@ -1,8 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (ALL_NODES, Boolean, OFF, ON, SymbolicConstant,
-                                              UNCOUPLED)
+from ..UtilityAndView.abaqusConstants import ALL_NODES, Boolean, OFF, ON, SymbolicConstant, UNCOUPLED
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -10,7 +9,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class CohesiveBehavior:
     """The CohesiveBehaviour
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -19,7 +18,7 @@ class CohesiveBehavior:
         The table data for this object are:
 
         - If **coupling** = UNCOUPLED, the table data specify the following:
-        
+
             - Stiffness coefficient in the normal direction, Knn.
             - Stiffness coefficient in the first shear direction, Kss.
             - Stiffness coefficient in the second shear direction, Ktt.
@@ -28,7 +27,7 @@ class CohesiveBehavior:
             - Value of the second field variable.
             - Etc.
         - If **coupling** = COUPLED, the table data specify the following:
-        
+
             - Stiffness coefficient in the normal direction, Knn.
             - Stiffness coefficient in the first shear direction, Kss.
             - Stiffness coefficient in the second shear direction, Ktt.
@@ -41,7 +40,7 @@ class CohesiveBehavior:
             - Etc.
 
         The corresponding analysis keywords are:
-        
+
         - COHESIVE BEHAVIOR
     """
 
@@ -88,7 +87,7 @@ class CohesiveBehavior:
     ):
         """This method creates a CohesiveBehavior object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].interactionProperties[name].CohesiveBehavior

@@ -22,8 +22,7 @@ from ..Region.Set import Set
 from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
-from ..UtilityAndView.abaqusConstants import (BOUNDARY_ONLY, Boolean, GEOMETRY, OFF, SUPPRESS,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import BOUNDARY_ONLY, Boolean, GEOMETRY, OFF, SUPPRESS, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -31,7 +30,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class PartInstance:
     """A :py:class:`~abaqus.Assembly.PartInstance.PartInstance` object is an instance of a Part object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import assembly
@@ -141,12 +140,10 @@ class PartInstance:
     partName: str = ""
 
     @abaqus_method_doc
-    def __init__(
-        self, name: str, part: Part, autoOffset: Boolean = OFF, dependent: Boolean = OFF
-    ):
+    def __init__(self, name: str, part: Part, autoOffset: Boolean = OFF, dependent: Boolean = OFF):
         """This method creates a PartInstance object and puts it into the instances repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
@@ -198,7 +195,7 @@ class PartInstance:
         """This method creates a PartInstance in the instances repository after subtracting or
         cutting the geometries of a group of part instances from that of a base part instance.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
@@ -239,7 +236,7 @@ class PartInstance:
         """This method creates a PartInstance in the instances repository after merging two or more
         part instances.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
@@ -292,11 +289,11 @@ class PartInstance:
         spacing2: float,
         direction1: tuple = (),
         direction2: tuple = (),
-    ) -> Sequence['PartInstance']:
+    ) -> Sequence["PartInstance"]:
         """This method creates multiple PartInstance objects in a linear pattern and puts them into
         the instances repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
@@ -343,7 +340,7 @@ class PartInstance:
         """This method creates multiple PartInstance objects in a radial pattern and puts them into
         the instances repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
@@ -492,12 +489,7 @@ class PartInstance:
         ...
 
     @abaqus_method_doc
-    def rotateAboutAxis(
-        self, 
-        axisPoint: Sequence[float], 
-        axisDirection: Sequence[float], 
-        angle: float
-    ):
+    def rotateAboutAxis(self, axisPoint: Sequence[float], axisDirection: Sequence[float], angle: float):
         """This method translates an instance by the specified amount.
 
         Parameters

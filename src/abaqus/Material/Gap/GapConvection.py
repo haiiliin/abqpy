@@ -70,6 +70,5 @@ class GapConvection:
 
     @abaqus_method_doc
     def setValues(self):
-        """This method modifies the GapConvection object.
-        """
+        """This method modifies the GapConvection object."""
         ...

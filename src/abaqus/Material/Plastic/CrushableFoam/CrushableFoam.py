@@ -11,7 +11,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 class CrushableFoam:
     r"""The CrushableFoam object specifies the crushable foam plasticity model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -22,18 +22,18 @@ class CrushableFoam:
         The table data for this object are:
 
         - If **hardening** = VOLUMETRIC, the table data specify the following:
-        
-            - Ratio, :math:`k`, of initial yield stress in uniaxial compression, :math:`\sigma_{c}^{0}`, 
+
+            - Ratio, :math:`k`, of initial yield stress in uniaxial compression, :math:`\sigma_{c}^{0}`,
               to initial yield stress in hydrostatic compression, :math:`p_{c}^{0} ; 0.0<k<3.0`.
-            - Ratio, :math:`k_{t}`, of yield stress in hydrostatic tension, :math:`p_{t}`, to initial 
+            - Ratio, :math:`k_{t}`, of yield stress in hydrostatic tension, :math:`p_{t}`, to initial
               yield stress in hydrostatic compression, :math:`p_{c}^{0}`. The default value is :math:`1.0`.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
         - If **hardening** = ISOTROPIC, the table data specify the following:
-        
-            - Ratio, :math:`k`, of initial yield stress in uniaxial compression, :math:`\sigma_{c}^{0}`, 
+
+            - Ratio, :math:`k`, of initial yield stress in uniaxial compression, :math:`\sigma_{c}^{0}`,
               to initial yield stress in hydrostatic compression, :math:`p_{c}^{0}`; :math:`0.0 \leq k \leq 3.0`
             - Plastic Poisson's ratio. :math:`\nu_{p} ;-1 \leq \nu_{p} \leq 0.5`.
             - Temperature, if the data depend on temperature.
@@ -62,7 +62,7 @@ class CrushableFoam:
     ):
         """This method creates a CrushableFoam object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].CrushableFoam

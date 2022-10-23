@@ -17,9 +17,18 @@ from .VoidsRatio import VoidsRatio
 from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT_THROUGH_THICKNESS, CONSTANT_RATIO,
-                                              KINEMATIC_HARDENING, LAST_STEP, MAGNITUDE, OFF,
-                                              STEP_END, UNIFORM, UNSET)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    CONSTANT_THROUGH_THICKNESS,
+    CONSTANT_RATIO,
+    KINEMATIC_HARDENING,
+    LAST_STEP,
+    MAGNITUDE,
+    OFF,
+    STEP_END,
+    UNIFORM,
+    UNSET,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -27,19 +36,17 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class PredefinedFieldModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
     """
 
     @abaqus_method_doc
-    def FluidCavityPressure(
-        self, name: str, fluidCavity: str, fluidPressure: float
-    ) -> FluidCavityPressure:
+    def FluidCavityPressure(self, name: str, fluidCavity: str, fluidPressure: float) -> FluidCavityPressure:
         """This method creates a FluidCavityPressure object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FluidCavityPressure
@@ -58,9 +65,7 @@ class PredefinedFieldModel(ModelBase):
         FluidCavityPressure
             A :py:class:`~abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure` object.
         """
-        self.predefinedFields[name] = predefinedField = FluidCavityPressure(
-            name, fluidCavity, fluidPressure
-        )
+        self.predefinedFields[name] = predefinedField = FluidCavityPressure(name, fluidCavity, fluidPressure)
         return predefinedField
 
     @abaqus_method_doc
@@ -75,7 +80,7 @@ class PredefinedFieldModel(ModelBase):
     ) -> InitialState:
         """This method creates an InitialState predefined field object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].InitialState
@@ -125,13 +130,15 @@ class PredefinedFieldModel(ModelBase):
         equivPlasticStrain: tuple = (),
         backStress: tuple = (),
         sectPtNum: tuple = (),
-        definition: Literal[C.CRUSHABLE_FOAM, C.KINEMATIC_HARDENING, C.REBAR, C.USER_DEFINED, C.SECTION_PTS] = KINEMATIC_HARDENING,
+        definition: Literal[
+            C.CRUSHABLE_FOAM, C.KINEMATIC_HARDENING, C.REBAR, C.USER_DEFINED, C.SECTION_PTS
+        ] = KINEMATIC_HARDENING,
         rebarLayerNames: tuple = (),
         distributionType: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
     ) -> KinematicHardening:
         """This method creates a KinematicHardening object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].KinematicHardening
@@ -193,7 +200,7 @@ class PredefinedFieldModel(ModelBase):
     ) -> MaterialAssignment:
         """This method creates a MaterialAssignment predefined field object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].MaterialAssignment
@@ -256,7 +263,7 @@ class PredefinedFieldModel(ModelBase):
         """This method creates a PorePressure predefined field object.
 
         .. note::
-        
+
             This function can be accessed by::
 
                 mdb.models[name].PorePressure
@@ -290,7 +297,7 @@ class PredefinedFieldModel(ModelBase):
             A SymbolicConstant selecting the elevation distribution options, either Linear or Constant.
             Possible values are CONSTANT_RATIO and VARIABLE_RATIO.
         fileName
-            A String specifying the name of the file from which the Field values are to be read when 
+            A String specifying the name of the file from which the Field values are to be read when
             `distributionType` = FROM_FILE.
         increment
             The SymbolicConstant LAST_INCREMENT or an Int specifying the increment, interval or iteration
@@ -329,8 +336,15 @@ class PredefinedFieldModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        distributionType: Literal[C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
-        crossSectionDistribution: Literal[C.GRADIENTS_THROUGH_BEAM_CS, C.POINTS_THROUGH_SECTION, C.GRADIENTS_THROUGH_SHELL_CS, C.CONSTANT_THROUGH_THICKNESS] = CONSTANT_THROUGH_THICKNESS,
+        distributionType: Literal[
+            C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED
+        ] = UNIFORM,
+        crossSectionDistribution: Literal[
+            C.GRADIENTS_THROUGH_BEAM_CS,
+            C.POINTS_THROUGH_SECTION,
+            C.GRADIENTS_THROUGH_SHELL_CS,
+            C.CONSTANT_THROUGH_THICKNESS,
+        ] = CONSTANT_THROUGH_THICKNESS,
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
@@ -345,7 +359,7 @@ class PredefinedFieldModel(ModelBase):
     ) -> Temperature:
         """This method creates a Temperature object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Temperature
@@ -367,12 +381,12 @@ class PredefinedFieldModel(ModelBase):
         crossSectionDistribution
             A SymbolicConstant specifying how the predefined field is distributed over the cross
             section of the region. Possible values are
-            
+
             - CONSTANT_THROUGH_THICKNESS
             - GRADIENTS_THROUGH_SHELL_CS
             - GRADIENTS_THROUGH_BEAM_CS
             - POINTS_THROUGH_SECTION
-            
+
             The default value is CONSTANT_THROUGH_THICKNESS.
         field
             A String specifying the name of the AnalyticalField or DiscreteField object associated
@@ -415,7 +429,7 @@ class PredefinedFieldModel(ModelBase):
             A Sequence of Doubles specifying the temperature values when **distributionType** = UNIFORM
             or FIELD. The value of the **magnitudes** argument is a function of the
             **crossSectionDistribution** argument, as shown in the following list:
-            
+
             - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS then **magnitudes** is a Double
               specifying the temperature.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS then **magnitudes** is a
@@ -476,7 +490,7 @@ class PredefinedFieldModel(ModelBase):
     ) -> Velocity:
         """This method creates a Velocity predefined field object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Velocity
@@ -534,8 +548,8 @@ class PredefinedFieldModel(ModelBase):
         name: str,
         region: Region,
         distributionType: Literal[C.UNIFORM, C.FIELD] = UNIFORM,
-        field: str = '',
-        value: float = ...
+        field: str = "",
+        value: float = ...,
     ) -> Saturation:
         """This method creates a Saturation predefined field object.
 
@@ -637,7 +651,7 @@ class PredefinedFieldModel(ModelBase):
             sigma23,
         )
         return predefinedField
-    
+
     @abaqus_method_doc
     def Field(
         self,
@@ -646,8 +660,15 @@ class PredefinedFieldModel(ModelBase):
         region: Region,
         outputVariable: str = "",
         fieldVariableNum: Optional[int] = None,
-        distributionType: Literal[C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
-        crossSectionDistribution: Literal[C.GRADIENTS_THROUGH_BEAM_CS, C.POINTS_THROUGH_SECTION, C.GRADIENTS_THROUGH_SHELL_CS, C.CONSTANT_THROUGH_THICKNESS] = CONSTANT_THROUGH_THICKNESS,
+        distributionType: Literal[
+            C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED
+        ] = UNIFORM,
+        crossSectionDistribution: Literal[
+            C.GRADIENTS_THROUGH_BEAM_CS,
+            C.POINTS_THROUGH_SECTION,
+            C.GRADIENTS_THROUGH_SHELL_CS,
+            C.CONSTANT_THROUGH_THICKNESS,
+        ] = CONSTANT_THROUGH_THICKNESS,
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
@@ -692,12 +713,12 @@ class PredefinedFieldModel(ModelBase):
         crossSectionDistribution
             A SymbolicConstant specifying how the predefined field is distributed over the
             cross-section of the region. Possible values are
-            
+
             - CONSTANT_THROUGH_THICKNESS
             - GRADIENTS_THROUGH_SHELL_CS
             - GRADIENTS_THROUGH_BEAM_CS
             - POINTS_THROUGH_SECTION
-            
+
             The default value is CONSTANT_THROUGH_THICKNESS.
         field
             A String specifying the name of the AnalyticalField or DiscreteField object associated
@@ -707,8 +728,8 @@ class PredefinedFieldModel(ModelBase):
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
             UNSET should be used if the predefined field has no amplitude reference. The default
-            value is UNSET. 
-            
+            value is UNSET.
+
             .. note::
                 **amplitude** should be given only if it is valid for the specified step.
         fileName
@@ -742,7 +763,7 @@ class PredefinedFieldModel(ModelBase):
             A Sequence of Doubles specifying the Field values when **distributionType** = UNIFORM or
             FIELD. The value of the **magnitudes** argument is a function of the
             **crossSectionDistribution** argument, as shown in the following list:
-            
+
             - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS, **magnitudes** is a Double
               specifying the Field.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, **magnitudes** is a sequence
@@ -831,7 +852,7 @@ class PredefinedFieldModel(ModelBase):
             A SymbolicConstant selecting the elevation distribution options, either Linear or Constant.
             Possible values are CONSTANT_RATIO and VARIABLE_RATIO.
         fileName
-            A String specifying the name of the file from which the Field values are to be read when 
+            A String specifying the name of the file from which the Field values are to be read when
             `distributionType` = FROM_FILE.
         increment
             The SymbolicConstant LAST_INCREMENT or an Int specifying the increment, interval or iteration

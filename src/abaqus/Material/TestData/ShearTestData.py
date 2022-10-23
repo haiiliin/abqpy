@@ -8,23 +8,23 @@ class ShearTestData:
     r"""The ShearTestData object specifies the normalized shear creep compliance or relaxation
     modulus as a function of time.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
             mdb.models[name].materials[name].viscoelastic.shearTestData
             import odbMaterial
             session.odbs[name].materials[name].viscoelastic.shearTestData
-            
+
         The table data for this object are:
-                
+
         - If **time** = RELAXATION_TEST_DATA, the table data specify the following:
-        
+
             - Normalized shear relaxation modulus :math:`g_{R}(t)`. :math:`\left(0 \leq g_{R}(t) \leq 1\right)`
             - Time :math:`t (t>0)`.
-            
+
         - If **time** = CREEP_TEST_DATA, the table data specify the following:
-        
+
             - Normalized shear compliance :math:`j_{S}(t)`. :math:`\left(j_{S}(t) \geq 1\right)`.
             - Time :math:`t (t>0)`.
 
@@ -37,7 +37,7 @@ class ShearTestData:
     def __init__(self, table: tuple, shrinf: Optional[float] = None):
         r"""This method creates a ShearTestData object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].viscoelastic.ShearTestData

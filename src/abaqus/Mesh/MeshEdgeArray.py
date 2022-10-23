@@ -11,7 +11,7 @@ from .MeshEdge import MeshEdge
 class MeshEdgeArray(List[MeshEdge]):
     """The MeshEdgeArray is a sequence of MeshEdge objects.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -25,7 +25,7 @@ class MeshEdgeArray(List[MeshEdge]):
     def __init__(self, elemEdges: List[MeshEdge]):
         """This method creates a MeshEdgeArray object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mesh.MeshEdgeArray

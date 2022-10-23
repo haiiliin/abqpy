@@ -38,7 +38,7 @@ def addCallback(
     """This method adds a callback function that will be invoked when certain Abaqus/CAE
     commands are about to be executed.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             methodCallback.addCallback
@@ -78,7 +78,7 @@ def removeCallback(caller: str, methodName: str, callback: str, userData: Option
     """This method removes a callback added by the addCallback method. To successfully remove a
     callback, all arguments must exactly match those used when the callback was added.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             methodCallback.removeCallback

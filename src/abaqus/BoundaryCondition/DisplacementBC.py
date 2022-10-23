@@ -5,8 +5,7 @@ from typing_extensions import Literal
 
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (Boolean, NOT_APPLICABLE, OFF, SET, SymbolicConstant,
-                                              UNIFORM, UNSET)
+from ..UtilityAndView.abaqusConstants import Boolean, NOT_APPLICABLE, OFF, SET, SymbolicConstant, UNIFORM, UNSET
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -16,7 +15,7 @@ class DisplacementBC(BoundaryCondition):
     condition.
     The DisplacementBC object is derived from the BoundaryCondition object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -75,11 +74,13 @@ class DisplacementBC(BoundaryCondition):
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM, C.DISCRETE_FIELD] = UNIFORM,
         localCsys: Optional[str] = None,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
     ):
         """This method creates a DisplacementBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].DisplacementBC
@@ -164,7 +165,9 @@ class DisplacementBC(BoundaryCondition):
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM, C.DISCRETE_FIELD] = UNIFORM,
         localCsys: Optional[str] = None,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
     ):
         """This method modifies the data for an existing DisplacementBC object in the step where it
         is created.
@@ -235,7 +238,9 @@ class DisplacementBC(BoundaryCondition):
         ur2: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
         ur3: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
         amplitude: str = "",
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
     ):
         """This method modifies the propagating data for an existing DisplacementBC object in the
         specified step.

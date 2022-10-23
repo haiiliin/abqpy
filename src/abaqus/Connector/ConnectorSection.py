@@ -14,11 +14,27 @@ from .ConnectorPotential import ConnectorPotential
 from .ConnectorPotentialArray import ConnectorPotentialArray
 from .ConnectorStop import ConnectorStop
 from ..Section.SectionBase import SectionBase
-from ..UtilityAndView.abaqusConstants import (ABS, ALL, Boolean, COMPONENT_NUMBER,
-                                              FORCE, HALF_CYCLE, LINEAR, MAXIMUM,
-                                              MOTION_TYPE, NO_INDEPENDENT_COMPONENTS, OFF, ON,
-                                              POSITIVE, PREDEFINED, SPECIFY, SUM,
-                                              TABULAR, UNCOUPLED, VISCOUS)
+from ..UtilityAndView.abaqusConstants import (
+    ABS,
+    ALL,
+    Boolean,
+    COMPONENT_NUMBER,
+    FORCE,
+    HALF_CYCLE,
+    LINEAR,
+    MAXIMUM,
+    MOTION_TYPE,
+    NO_INDEPENDENT_COMPONENTS,
+    OFF,
+    ON,
+    POSITIVE,
+    PREDEFINED,
+    SPECIFY,
+    SUM,
+    TABULAR,
+    UNCOUPLED,
+    VISCOUS,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -51,7 +67,7 @@ class ConnectorSection(SectionBase):
     ):
         """This method creates a connector damage behavior option for a ConnectorSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 import connectorBehavior
@@ -163,7 +179,9 @@ class ConnectorSection(SectionBase):
         self,
         type: Literal[C.STRUCTURAL, C.VISCOUS] = VISCOUS,
         behavior: Literal[C.NONLINEAR, C.LINEAR] = LINEAR,
-        coupling: Literal[C.UNCOUPLED, C.NONLINEAR, C.COUPLED_POSITION, C.COUPLED_MOTION, C.COUPLED, C.LINEAR] = UNCOUPLED,
+        coupling: Literal[
+            C.UNCOUPLED, C.NONLINEAR, C.COUPLED_POSITION, C.COUPLED_MOTION, C.COUPLED, C.LINEAR
+        ] = UNCOUPLED,
         dependencies: int = 0,
         temperatureDependency: Boolean = OFF,
         frequencyDependency: Boolean = OFF,
@@ -173,7 +191,7 @@ class ConnectorSection(SectionBase):
     ):
         """This method creates a connector damping behavior option for a ConnectorSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 import connectorBehavior
@@ -238,7 +256,9 @@ class ConnectorSection(SectionBase):
     def ConnectorElasticity(
         self,
         behavior: Literal[C.RIGID, C.NONLINEAR, C.LINEAR] = LINEAR,
-        coupling: Literal[C.RIGID, C.UNCOUPLED, C.NONLINEAR, C.COUPLED_POSITION, C.COUPLED_MOTION, C.COUPLED, C.LINEAR] = UNCOUPLED,
+        coupling: Literal[
+            C.RIGID, C.UNCOUPLED, C.NONLINEAR, C.COUPLED_POSITION, C.COUPLED_MOTION, C.COUPLED, C.LINEAR
+        ] = UNCOUPLED,
         dependencies: int = 0,
         temperatureDependency: Boolean = OFF,
         frequencyDependency: Boolean = OFF,
@@ -249,7 +269,7 @@ class ConnectorSection(SectionBase):
         """This method creates a connector elasticity behavior option for a ConnectorSection
         object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 import connectorBehavior
@@ -319,7 +339,7 @@ class ConnectorSection(SectionBase):
     ):
         """This method creates a connector failure behavior option for a ConnectorSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 import connectorBehavior
@@ -389,7 +409,7 @@ class ConnectorSection(SectionBase):
         Depending upon the arguments provided, the friction behavior can be Coulomb-like or
         hysteretic in nature.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 import connectorBehavior
@@ -511,7 +531,7 @@ class ConnectorSection(SectionBase):
     ):
         """This method creates a connector lock behavior option for a ConnectorSection.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 import connectorBehavior
@@ -580,7 +600,7 @@ class ConnectorSection(SectionBase):
         """This method creates a connector plasticity behavior option for a ConnectorSection
         object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 import connectorBehavior
@@ -671,7 +691,7 @@ class ConnectorSection(SectionBase):
         """This method creates a connector potential object to be used in conjunction with an
         allowable connector behavior option.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].ConnectorPotential
@@ -724,7 +744,7 @@ class ConnectorSection(SectionBase):
     ):
         """This method creates a connector stop behavior option for a ConnectorSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 import connectorBehavior

@@ -10,7 +10,7 @@ from ..UtilityAndView.abaqusConstants import NONE, STEP_TIME
 class TableCollectionModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -33,7 +33,7 @@ class TableCollectionModel(ModelBase):
     ) -> EventSeries:
         """This method creates an EventSeries object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EventSeriesData
@@ -81,12 +81,10 @@ class TableCollectionModel(ModelBase):
         return eventSeries
 
     @abaqus_method_doc
-    def EventSeriesType(
-        self, name: str, createStepName: str, fields: str = ""
-    ) -> EventSeriesType:
+    def EventSeriesType(self, name: str, createStepName: str, fields: str = "") -> EventSeriesType:
         """This method creates an EventSeriesType object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EventSeriesType
@@ -109,7 +107,5 @@ class TableCollectionModel(ModelBase):
         ------
         RangeError
         """
-        self.eventSeriesTypes[name] = eventSeriesType = EventSeriesType(
-            name, createStepName, fields
-        )
+        self.eventSeriesTypes[name] = eventSeriesType = EventSeriesType(name, createStepName, fields)
         return eventSeriesType

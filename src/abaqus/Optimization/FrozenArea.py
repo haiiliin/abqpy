@@ -9,7 +9,7 @@ class FrozenArea(GeometricRestriction):
     """The FrozenArea object defines a frozen area geometric restriction.
     The FrozenArea object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -28,7 +28,7 @@ class FrozenArea(GeometricRestriction):
     def __init__(self, name: str, region: Region = Region()):
         """This method creates a FrozenArea object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].FrozenArea

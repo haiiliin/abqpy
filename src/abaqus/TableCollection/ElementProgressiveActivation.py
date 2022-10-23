@@ -11,7 +11,7 @@ class ElementProgressiveActivation:
     """The ElementProgressiveActivation object is used to specify elements that can be
     activated during an analysis.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name].rootAssembly.elementProgressiveActivations[name]
@@ -54,7 +54,7 @@ class ElementProgressiveActivation:
         """This method creates an ElementProgressiveActivation object and places it in the
         elementProgressiveActivation repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].rootAssembly.ElementProgressiveActivation

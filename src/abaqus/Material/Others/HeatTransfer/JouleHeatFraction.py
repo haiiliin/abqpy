@@ -1,10 +1,11 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class JouleHeatFraction:
     """The JouleHeatFraction object defines the fraction of electric energy released as heat.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -21,7 +22,7 @@ class JouleHeatFraction:
     def __init__(self, fraction: float = 1):
         """This method creates a JouleHeatFraction object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].JouleHeatFraction

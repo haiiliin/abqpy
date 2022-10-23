@@ -8,11 +8,27 @@ from .ShapeTask import ShapeTask
 from .SizingTask import SizingTask
 from .TopologyTask import TopologyTask
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import (AVERAGE_EDGE_LENGTH, Boolean, CONSERVATIVE,
-                                              CONSTRAINED_LAPLACIAN, DEFAULT, EVERY_CYCLE, FE_SAFE,
-                                              GENERAL_OPTIMIZATION, LOW, MEDIUM, MINIMUM, MODEL,
-                                              NORMAL, OFF, ON, POSITIONS, STANDARD,
-                                              TASK_REGION_LAYERS, VALUE)
+from ..UtilityAndView.abaqusConstants import (
+    AVERAGE_EDGE_LENGTH,
+    Boolean,
+    CONSERVATIVE,
+    CONSTRAINED_LAPLACIAN,
+    DEFAULT,
+    EVERY_CYCLE,
+    FE_SAFE,
+    GENERAL_OPTIMIZATION,
+    LOW,
+    MEDIUM,
+    MINIMUM,
+    MODEL,
+    NORMAL,
+    OFF,
+    ON,
+    POSITIONS,
+    STANDARD,
+    TASK_REGION_LAYERS,
+    VALUE,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -20,7 +36,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class OptimizationTaskModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -54,7 +70,7 @@ class OptimizationTaskModel(ModelBase):
     ) -> BeadTask:
         """This method creates a BeadTask object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BeadTask
@@ -217,7 +233,7 @@ class OptimizationTaskModel(ModelBase):
     ) -> ShapeTask:
         """This method creates a ShapeTask object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ShapeTask
@@ -451,7 +467,7 @@ class OptimizationTaskModel(ModelBase):
     ) -> SizingTask:
         """This method creates a SizingTask object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SizingTask
@@ -551,14 +567,19 @@ class OptimizationTaskModel(ModelBase):
         numTrackedModes: int = 5,
         objectiveFunctionDeltaStopCriteria: Optional[float] = None,
         region: Literal[C.MODEL] = MODEL,
-        softDeletionMethod: Literal[C.STANDARD, C.VOLUME_COMPRESSION, C.MAX_SHEAR_STRAIN, C.AGGRESSIVE, C.MIN_PRINCIPAL_STRAIN, C.MAX_ELASTOPLASTIC_STRAIN] = STANDARD,
+        softDeletionMethod: Literal[
+            C.STANDARD,
+            C.VOLUME_COMPRESSION,
+            C.MAX_SHEAR_STRAIN,
+            C.AGGRESSIVE,
+            C.MIN_PRINCIPAL_STRAIN,
+            C.MAX_ELASTOPLASTIC_STRAIN,
+        ] = STANDARD,
         softDeletionRadius: float = 0,
         softDeletionRegion: Optional[str] = None,
         softDeletionThreshold: Optional[float] = None,
         stepSize: Literal[C.SMALL, C.LARGE, C.MODERATE, C.VERY_SMALL, C.DYNAMIC, C.MEDIUM] = MEDIUM,
-        stiffnessMassDamping: Union[
-            Literal[C.AVERAGE_EDGE_LENGTH], float
-        ] = AVERAGE_EDGE_LENGTH,
+        stiffnessMassDamping: Union[Literal[C.AVERAGE_EDGE_LENGTH], float] = AVERAGE_EDGE_LENGTH,
         stopCriteriaDesignCycle: int = 4,
         structuralMassDamping: Optional[float] = None,
         viscousMassDamping: Optional[float] = None,
@@ -567,7 +588,7 @@ class OptimizationTaskModel(ModelBase):
     ) -> TopologyTask:
         """This method creates a TopologyTask object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TopologyTask

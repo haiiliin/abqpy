@@ -14,7 +14,7 @@ class BodyCurrent(Load):
     """The BodyCurrent object stores the data for a body current.
     The BodyCurrent object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -49,7 +49,7 @@ class BodyCurrent(Load):
     ):
         """This method creates a BodyCurrent object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BodyCurrent
@@ -111,9 +111,7 @@ class BodyCurrent(Load):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(
-        self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""
-    ):
+    def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
         """This method modifies the propagating data for an existing BodyCurrent object in the
         specified step.
 

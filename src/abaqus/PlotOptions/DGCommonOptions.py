@@ -2,9 +2,21 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
 
-from ..UtilityAndView.abaqusConstants import (Boolean, ELEMENT, EXTERIOR, HOLLOW_CIRCLE, MEDIUM,
-                                              OFF, ON, SHADED, SMALL, SOLID, SymbolicConstant,
-                                              VERY_THIN, WIRE)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    ELEMENT,
+    EXTERIOR,
+    HOLLOW_CIRCLE,
+    MEDIUM,
+    OFF,
+    ON,
+    SHADED,
+    SMALL,
+    SOLID,
+    SymbolicConstant,
+    VERY_THIN,
+    WIRE,
+)
 
 
 @abaqus_class_doc
@@ -14,7 +26,7 @@ class DGCommonOptions:
     *odbDisplayOptions.commonOptions* member when a display group instance is created, using
     values from *odbDisplay.commonOptions*.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.commonOptions

@@ -12,7 +12,7 @@ class ShapeMemberSize(GeometricRestriction):
     """The ShapeMemberSize object defines a shape member size geometric restriction.
     The ShapeMemberSize object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -62,7 +62,7 @@ class ShapeMemberSize(GeometricRestriction):
     ):
         """This method creates a ShapeMemberSize object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapeMemberSize

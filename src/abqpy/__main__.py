@@ -49,11 +49,11 @@ def cli():
         epilog=epilog,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
+    parser.add_argument("script", metavar="script", type=str, nargs="?", help="the python script to run")
     parser.add_argument(
-        "script", metavar="script", type=str, nargs="?", help="the python script to run"
-    )
-    parser.add_argument(
-        "args", nargs="*", help="arguments that will be passed to the python script",
+        "args",
+        nargs="*",
+        help="arguments that will be passed to the python script",
     )
     group = parser.add_mutually_exclusive_group()
     group.add_argument(

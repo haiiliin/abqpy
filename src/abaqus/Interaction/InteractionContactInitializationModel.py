@@ -12,7 +12,6 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 @abaqus_class_doc
 class InteractionContactInitializationModel(ModelBase):
-
     @abaqus_method_doc
     def ExpInitialization(
         self,
@@ -28,7 +27,7 @@ class InteractionContactInitializationModel(ModelBase):
     ) -> ExpInitialization:
         """This method creates an ExpInitialization object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ExpInitialization
@@ -94,7 +93,7 @@ class InteractionContactInitializationModel(ModelBase):
             stepFraction,
         )
         return contactInitialization
-    
+
     @abaqus_method_doc
     def StdInitialization(
         self,
@@ -107,7 +106,7 @@ class InteractionContactInitializationModel(ModelBase):
     ) -> StdInitialization:
         """This method creates a StdInitialization object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].StdInitialization

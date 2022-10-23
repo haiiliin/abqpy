@@ -14,7 +14,7 @@ class FreeBodyReportOptions:
     FreeBodyReportOptions object has no constructor. Abaqus creates the
     **freeBodyReportOptions** member when you import the Visualization module.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

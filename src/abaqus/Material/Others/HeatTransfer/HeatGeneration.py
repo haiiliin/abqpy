@@ -1,10 +1,11 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class HeatGeneration:
     """The HeatGeneration object includes volumetric heat generation in heat transfer analyses.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -21,7 +22,7 @@ class HeatGeneration:
     def __init__(self):
         """This method creates a HeatGeneration object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].HeatGeneration

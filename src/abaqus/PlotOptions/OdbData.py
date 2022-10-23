@@ -29,7 +29,7 @@ class OdbData(_OptionsBase):
     **odbData** repository when you import the Visualization module. Abaqus creates a OdbData
     object when an odb is opened.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

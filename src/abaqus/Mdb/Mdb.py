@@ -6,7 +6,7 @@ from typing_extensions import Literal
 from ..Job.JobMdb import JobMdb
 from ..Model.Model import Model
 from ..Part.AcisMdb import AcisMdb
-from ..UtilityAndView.abaqusConstants import (Boolean, NOT_SET, ON, STANDARD_EXPLICIT)
+from ..UtilityAndView.abaqusConstants import Boolean, NOT_SET, ON, STANDARD_EXPLICIT
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -15,7 +15,7 @@ class Mdb(AcisMdb, JobMdb):
     """The Mdb object is the high-level Abaqus model database. A model database stores models
     and analysis controls.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb
@@ -37,7 +37,7 @@ class Mdb(AcisMdb, JobMdb):
     ) -> Model:
         """This method creates a Model object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.Model

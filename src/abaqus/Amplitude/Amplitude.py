@@ -9,7 +9,7 @@ class Amplitude:
     Amplitude object has no explicit constructor. The methods and members of the Amplitude
     object are common to all objects derived from the Amplitude.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import amplitude

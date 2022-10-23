@@ -13,7 +13,7 @@ class SecondaryBaseBC(BoundaryCondition):
     """The SecondaryBaseBC object stores the data for a secondary base boundary condition.
     The SecondaryBaseBC object is derived from the BoundaryCondition object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -43,12 +43,10 @@ class SecondaryBaseBC(BoundaryCondition):
     localCsys: Optional[str] = None
 
     @abaqus_method_doc
-    def __init__(
-        self, name: str, createStepName: str, regions: RegionArray, dofs: tuple
-    ):
+    def __init__(self, name: str, createStepName: str, regions: RegionArray, dofs: tuple):
         """This method creates a SecondaryBaseBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SecondaryBaseBC

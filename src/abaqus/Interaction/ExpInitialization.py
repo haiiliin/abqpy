@@ -14,7 +14,7 @@ class ExpInitialization(ContactInitialization):
     analyses to specify contact initialization data.
     The ExpInitialization object is derived from the ContactInitialization object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -89,7 +89,7 @@ class ExpInitialization(ContactInitialization):
     ):
         """This method creates an ExpInitialization object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ExpInitialization

@@ -14,7 +14,7 @@ class SizingCyclicSymmetry(GeometricRestriction):
     """The SizingCyclicSymmetry object defines a sizing cyclic symmetry geometric restriction.
     The SizingCyclicSymmetry object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -55,7 +55,7 @@ class SizingCyclicSymmetry(GeometricRestriction):
     ):
         """This method creates a SizingCyclicSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].SizingCyclicSymmetry

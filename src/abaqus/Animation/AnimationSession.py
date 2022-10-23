@@ -14,7 +14,7 @@ class AnimationSession(SessionBase):
     """The following commands operate on Session objects. For more information about the
     Session object, see Session object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import animation
@@ -56,7 +56,7 @@ class AnimationSession(SessionBase):
     ) -> Movie:
         """This method creates a Movie object from the contents of the specified file.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.Movie

@@ -8,7 +8,7 @@ class IProfile(Profile):
     """The IProfile object defines the properties of an I profile.
     The IProfile object is derived from the Profile object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -61,7 +61,7 @@ class IProfile(Profile):
     ):
         """This method creates an IProfile object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].IProfile

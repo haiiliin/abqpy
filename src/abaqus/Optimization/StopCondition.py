@@ -9,7 +9,7 @@ class StopCondition:
     StopCondition object has no explicit constructor. The methods and members of the
     StopCondition object are common to all objects derived from StopCondition.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization

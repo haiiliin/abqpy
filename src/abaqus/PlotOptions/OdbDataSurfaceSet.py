@@ -5,7 +5,7 @@ from abqpy.decorators import abaqus_class_doc
 class OdbDataSurfaceSet:
     """The OdbDataSurfaceSet object stores surface set data.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

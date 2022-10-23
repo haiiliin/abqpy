@@ -9,7 +9,7 @@ from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 class Eos:
     r"""The Eos object specifies an equation of state model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -20,12 +20,12 @@ class Eos:
         The table data for this object are:
 
         - If **type** = IDEALGAS, the table data represents the following:
-        
+
             - Gas constant, :math:`R`.
             - The ambient pressure, :math:`p_{A}`. If this field is left blank, a default of 0.0 is used.
-            
+
         - If **type** = JWL, the table data represents the following:
-        
+
             - Detonation wave speed, :math:`C_{d}`.
             - :math:`A`.
             - :math:`B`.
@@ -34,15 +34,15 @@ class Eos:
             - :math:`R_{2}`. (Dimensionless.)
             - Pre-detonation bulk modulus, :math:`K_{p d}`.
             - Detonation energy density, :math:`E_{0}`.
-            
+
         - If **type** = USUP, the table data represents the following:
-        
+
             - :math:`C_{0}`
             - :math:`\boldsymbol{S}`. (Dimensionless.)
             - :math:`\Gamma_{0}`. (Dimensionless.)
-            
+
         - If **type** = TABULAR, the table data represents the following:
-        
+
             - :math:`F_{1}`
             - :math:`F_{2}`
             - :math:`\varepsilon_{v o l}^{c}`. (Dimensionless.)
@@ -63,7 +63,7 @@ class Eos:
     ):
         r"""This method creates an Eos object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Eos
@@ -84,27 +84,27 @@ class Eos:
             A Float specifying the detonation energy text field. The default value is 0.0.
         solidTable
             A sequence of sequences of Floats specifying the following:
-            
+
             - :math:`A_{s}`.
             - :math:`B_{s}`.
             - :math:`{\omega}_{s}`.
             - :math:`R_{1s}`.
             - :math:`R_{2s}`.
-            
+
             The default value is an empty sequence.
         gasTable
             A sequence of sequences of Floats specifying the following:
-            
+
             - :math:`A_{g}`.
             - :math:`B_{g}`.
             - :math:`{\omega}_{g}`.
             - :math:`R_{1g}`.
             - :math:`R_{2g}`.
-            
+
             The default value is an empty sequence.
         reactionTable
             A sequence of sequences of Floats specifying the following:
-            
+
             - Initial Pressure, :math:`I`.
             - Product co-volume, :math:`a`.
             - Exponent on the unreacted fraction (ignition term), :math:`x`.
@@ -119,17 +119,17 @@ class Eos:
             - Initial reacted fraction, :math:`{F^{max}}_{ig}`.
             - Maximum reacted fraction for the growth term, :math:`{F^{max}}_{G1}`.
             - Minimum reacted fraction, :math:`{F^{min}}_{G2}`.
-            
+
             The default value is an empty sequence.
         gasSpecificTable
             A sequence of sequences of Floats specifying the following:
-            
+
             - Specific Heat per unit mass.
             - Temperature dependent data.
             - Value of first field variable.
             - Value of second field variable.
             - Etc.
-            
+
             The default value is an empty sequence.
         table
             A sequence of sequences of Floats specifying the items described below. The default

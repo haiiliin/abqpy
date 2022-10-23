@@ -15,7 +15,7 @@ class DatumCsys(Datum):
     a DatumCsys object.
     The DatumCsys object is derived from the Datum object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -48,9 +48,7 @@ class DatumCsys(Datum):
     axis3: DatumAxis = DatumAxis()
 
     @abaqus_method_doc
-    def globalToLocal(
-        self, coordinates: Tuple[float, float, float]
-    ) -> Tuple[float, float, float]:
+    def globalToLocal(self, coordinates: Tuple[float, float, float]) -> Tuple[float, float, float]:
         """This method transforms specified coordinates in the global coordinate system into this
         local coordinate system.
 
@@ -70,9 +68,7 @@ class DatumCsys(Datum):
         ...
 
     @abaqus_method_doc
-    def localToGlobal(
-        self, coordinates: Tuple[float, float, float]
-    ) -> Tuple[float, float, float]:
+    def localToGlobal(self, coordinates: Tuple[float, float, float]) -> Tuple[float, float, float]:
         """This method transforms specified coordinates in this local coordinate system into the global coordinate system.
 
         .. versionadded:: 2022

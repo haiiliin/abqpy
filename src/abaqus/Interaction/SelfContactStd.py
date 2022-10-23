@@ -3,8 +3,7 @@ from typing_extensions import Literal
 
 from .Interaction import Interaction
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (Boolean, ON, SELECTIVE, SURFACE_TO_SURFACE,
-                                              SymbolicConstant, TWO_CONFIG)
+from ..UtilityAndView.abaqusConstants import Boolean, ON, SELECTIVE, SURFACE_TO_SURFACE, SymbolicConstant, TWO_CONFIG
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -13,7 +12,7 @@ class SelfContactStd(Interaction):
     """The SelfContactStd object defines self-contact during an Abaqus/Standard analysis.
     The SelfContactStd object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -80,7 +79,7 @@ class SelfContactStd(Interaction):
     ):
         """This method creates a SelfContactStd object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SelfContactStd
@@ -152,9 +151,7 @@ class SelfContactStd(Interaction):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(
-        self, stepName: str, interactionProperty: str = "", contactControls: str = ""
-    ):
+    def setValuesInStep(self, stepName: str, interactionProperty: str = "", contactControls: str = ""):
         """This method modifies the propagating data of an existing SelfContactStd object in the
         specified step.
 

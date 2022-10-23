@@ -12,7 +12,7 @@ class DatumPoint(Datum):
     creates a DatumPoint object.
     The DatumPoint object is derived from the Datum object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

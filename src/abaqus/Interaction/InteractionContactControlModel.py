@@ -6,7 +6,7 @@ from typing_extensions import Literal
 from .ExpContactControl import ExpContactControl
 from .StdContactControl import StdContactControl
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTE, DEFAULT, NONE, OFF, ON, RELATIVE)
+from ..UtilityAndView.abaqusConstants import Boolean, COMPUTE, DEFAULT, NONE, OFF, ON, RELATIVE
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -25,7 +25,7 @@ class InteractionContactControlModel(ModelBase):
     ) -> ExpContactControl:
         """This method creates an ExpContactControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ExpContactControl
@@ -100,7 +100,7 @@ class InteractionContactControlModel(ModelBase):
     ) -> StdContactControl:
         """This method creates an StdContactControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].StdContactControl
@@ -136,7 +136,7 @@ class InteractionContactControlModel(ModelBase):
         frictionOnset
             A SymbolicConstant specifying when the application of friction occurs. Possible values
             are:
-            
+
             - IMMEDIATE, specifying the friction is included in the increment when contact occurs.
             - DELAYED, specifying the application of friction is delayed until the increment after
               contact occurs.

@@ -9,7 +9,7 @@ class SubstructureGenerateFrequency:
     dynamic analysis. These modes are selected from the specified frequency range including
     the frequency boundary.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step

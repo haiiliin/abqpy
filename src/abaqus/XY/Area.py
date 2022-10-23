@@ -5,8 +5,7 @@ from typing_extensions import Literal
 
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
-from ..UtilityAndView.abaqusConstants import (AUTOMATIC, AUTO_ALIGN, BOTTOM_LEFT, Boolean, OFF,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import AUTOMATIC, AUTO_ALIGN, BOTTOM_LEFT, Boolean, OFF, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -16,7 +15,7 @@ class Area:
     no constructor. Area objects are automatically created whenever a XYPlot, Chart,
     PlotTitle, or Legend objects are created.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -44,7 +43,7 @@ class Area:
 
     #: A SymbolicConstant specifying the relative position of the area in its parent when
     #: **positionMethod** = AUTO_ALIGN. Possible values are:
-    #: 
+    #:
     #: - BOTTOM_LEFT
     #: - BOTTOM_CENTER
     #: - BOTTOM_RIGHT
@@ -54,7 +53,7 @@ class Area:
     #: - TOP_LEFT
     #: - TOP_CENTER
     #: - TOP_RIGHT
-    #: 
+    #:
     #: The default value is BOTTOM_LEFT.
     alignment: SymbolicConstant = BOTTOM_LEFT
 
@@ -110,7 +109,18 @@ class Area:
         style: AreaStyle,
         border: LineStyle,
         positionMethod: Literal[C.MANUAL, C.AUTO_ALIGN] = AUTO_ALIGN,
-        alignment: Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.AUTO_ALIGN, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER] = BOTTOM_LEFT,
+        alignment: Literal[
+            C.CENTER_RIGHT,
+            C.TOP_CENTER,
+            C.BOTTOM_RIGHT,
+            C.BOTTOM_LEFT,
+            C.CENTER,
+            C.AUTO_ALIGN,
+            C.TOP_RIGHT,
+            C.CENTER_LEFT,
+            C.TOP_LEFT,
+            C.BOTTOM_CENTER,
+        ] = BOTTOM_LEFT,
         sizeMethod: Literal[C.AUTOMATIC, C.MANUAL] = AUTOMATIC,
         originOffset: Sequence[float] = (),
         widthScale: float = 1,
@@ -147,7 +157,7 @@ class Area:
             - TOP_LEFT
             - TOP_CENTER
             - TOP_RIGHT
-            
+
             The default value is BOTTOM_LEFT.
         sizeMethod
             A SymbolicConstant specifying how the area size is defined. Possible values are

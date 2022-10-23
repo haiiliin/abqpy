@@ -10,7 +10,7 @@ class GapConductance:
 
     .. note::
         This object can be accessed by::
-        
+
             import material
             mdb.models[name].materials[name].gapConductance
             import odbMaterial
@@ -70,6 +70,5 @@ class GapConductance:
 
     @abaqus_method_doc
     def setValues(self):
-        """This method modifies the GapConductance object.
-        """
+        """This method modifies the GapConductance object."""
         ...

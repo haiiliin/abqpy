@@ -10,7 +10,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 class Swelling:
     """The Swelling object specifies time-dependent volumetric swelling for a material.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -44,7 +44,7 @@ class Swelling:
     ):
         """This method creates a Swelling object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Swelling

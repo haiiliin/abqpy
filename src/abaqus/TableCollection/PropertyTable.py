@@ -15,7 +15,7 @@ class PropertyTable:
     After PropertyTableDatais instantiated, making changes to PropertyTable may lead to data
     corruption.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name].tableCollections[name].propertyTables[name]
@@ -46,7 +46,7 @@ class PropertyTable:
     def __init__(self, name: str, properties: str, variables: str = ""):
         """This method creates a PropertyTable object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].tableCollections[name].PropertyTable
@@ -104,7 +104,7 @@ class PropertyTable:
     ) -> PropertyTableData:
         """This method creates a PropertyTableData object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].tableCollections[name].PropertyTable

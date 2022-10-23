@@ -13,7 +13,7 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
     """The IgnoredEdgeArray is a sequence of IgnoredEdge objects. If the part is modified, then
     IgnoredEdgeArray must be updated for that part.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -32,7 +32,9 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
     @abaqus_method_doc
     def findAt(
         self,
-        coordinates: Tuple[Tuple[float, float, float],],
+        coordinates: Tuple[
+            Tuple[float, float, float],
+        ],
         printWarning: Boolean = True,
     ) -> List[IgnoredEdge]:
         ...
@@ -41,7 +43,9 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
     @abaqus_method_doc
     def findAt(
         self,
-        *coordinates: Tuple[Tuple[float, float, float],],
+        *coordinates: Tuple[
+            Tuple[float, float, float],
+        ],
         printWarning: Boolean = True,
     ) -> List[IgnoredEdge]:
         ...
@@ -72,7 +76,7 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
 
             * If you omit the **coordinates** keyword argument, findAt accepts as arguments a sequence
               of sequence of floats in the following format::
-            
+
                 ignoredEdges = e.findAt(((20.19686, -169.513997, 27.798593), ),
                                         ((19.657627, -167.295749, 27.056402), ),
                                         ((18.274129, -157.144741, 25.15218), ))
@@ -86,7 +90,7 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
             An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object or a sequence of IgnoredEdge objects.
 
         """
-        first_arg = kwargs.get('coordinates', args[0] if args else ((),))
+        first_arg = kwargs.get("coordinates", args[0] if args else ((),))
         return IgnoredEdge() if isinstance(first_arg[0], float) else [IgnoredEdge()]
 
     @overload
@@ -141,7 +145,7 @@ class IgnoredEdgeArray(List[IgnoredEdge]):
         coordinates
             A sequence of a sequence of floats, where each sequence of floats describes the **X**-,
             **Y**-, and **Z**-coordinates of a point::
-            
+
                 >>> r=e.getClosest(coordinates=((20.0, 20.0, 10.0),(-1.0, -15.0, 15), ))
                 >>> r.keys()
                 [0, 1]

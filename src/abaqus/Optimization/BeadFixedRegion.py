@@ -12,7 +12,7 @@ class BeadFixedRegion(GeometricRestriction):
     """The BeadFixedRegion object defines a fixed region geometric restriction.
     The BeadFixedRegion object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -54,7 +54,7 @@ class BeadFixedRegion(GeometricRestriction):
     ):
         """This method creates a BeadFixedRegion object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].BeadFixedRegion
@@ -87,9 +87,7 @@ class BeadFixedRegion(GeometricRestriction):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(
-        self, csys: Optional[int] = None, u1: Boolean = OFF, u2: Boolean = OFF, u3: Boolean = OFF
-    ):
+    def setValues(self, csys: Optional[int] = None, u1: Boolean = OFF, u2: Boolean = OFF, u3: Boolean = OFF):
         """This method modifies the BeadFixedRegion object.
 
         Parameters

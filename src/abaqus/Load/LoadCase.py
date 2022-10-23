@@ -9,7 +9,7 @@ class LoadCase:
     loading condition and the linear response of a structure subjected to that loading
     condition.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -30,7 +30,7 @@ class LoadCase:
     ):
         """This method creates a load case in a step.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].steps[name].LoadCase

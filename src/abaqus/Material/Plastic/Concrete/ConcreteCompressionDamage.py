@@ -8,7 +8,7 @@ class ConcreteCompressionDamage:
     r"""The ConcreteCompressionDamage object specifies hardening for the concrete damaged
     plasticity model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -40,7 +40,7 @@ class ConcreteCompressionDamage:
     ):
         """This method creates a ConcreteCompressionDamage object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].concreteDamagedPlasticity.ConcreteCompressionDamage

@@ -3,8 +3,7 @@ from typing_extensions import Literal
 
 from .Constraint import Constraint
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTED, DEFAULT, OFF, ON, SOLVER_DEFAULT,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import Boolean, COMPUTED, DEFAULT, OFF, ON, SOLVER_DEFAULT, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -14,7 +13,7 @@ class Tie(Constraint):
     simulation.
     The Tie object is derived from the ConstrainedSketchConstraint object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -95,7 +94,7 @@ class Tie(Constraint):
     ):
         """This method creates a Tie object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Tie

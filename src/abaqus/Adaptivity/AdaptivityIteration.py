@@ -13,7 +13,7 @@ class AdaptivityIteration:
     """The AdaptivityIteration object contains information about a given iteration of the
     varying topology adaptivity process (adaptive remeshing).
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import job
@@ -53,7 +53,7 @@ class AdaptivityIteration:
     ):
         """This method creates an AdaptivityIteration object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.adaptivityProcesses[name].AdaptivityIteration
@@ -85,7 +85,7 @@ class AdaptivityIteration:
         """This method creates an ErrorIndicatorResult with data for an error indicator variable in
         a RemeshingRule for a given adaptivity iteration.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.adaptivityProcesses[name].AdaptivityIteration
@@ -123,7 +123,7 @@ class AdaptivityIteration:
         """This method creates a RuleResult with data for a RemeshingRule for a given adaptivity
         iteration.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.adaptivityProcesses[name].AdaptivityIteration
