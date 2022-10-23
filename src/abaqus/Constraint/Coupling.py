@@ -108,12 +108,7 @@ class Coupling(Constraint):
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
-<<<<<<< HEAD
-        weightingMethod: SymbolicConstant = UNIFORM,
-=======
         weightingMethod: Literal[C.QUADRATIC, C.DISTRIBUTING, C.UNIFORM, C.LINEAR, C.CUBIC] = UNIFORM,
-        alpha: float = 0.0,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method creates a Coupling object.
 

@@ -74,11 +74,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
         region: Region,
         allowNonSymmetricMesh: Boolean = TRUE,
         csys: Optional[int] = None,
-<<<<<<< HEAD
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
-        mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
+        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -141,11 +137,7 @@ class ShapePlanarSymmetry(GeometricRestriction):
         self,
         allowNonSymmetricMesh: Boolean = TRUE,
         csys: Optional[int] = None,
-<<<<<<< HEAD
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-=======
-        mainPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
+        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,

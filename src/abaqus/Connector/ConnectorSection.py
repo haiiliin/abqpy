@@ -18,12 +18,8 @@ from ..UtilityAndView.abaqusConstants import (ABS, ALL, Boolean, COMPONENT_NUMBE
                                               FORCE, HALF_CYCLE, LINEAR, MAXIMUM,
                                               MOTION_TYPE, NO_INDEPENDENT_COMPONENTS, OFF, ON,
                                               POSITIVE, PREDEFINED, SPECIFY, SUM,
-<<<<<<< HEAD
-                                              SymbolicConstant, TABULAR, UNCOUPLED)
-=======
-                                              TABULAR, UNCOUPLED, VISCOUS)
+                                              TABULAR, UNCOUPLED)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
 
 
 @abaqus_class_doc
@@ -165,14 +161,8 @@ class ConnectorSection(SectionBase):
     @abaqus_method_doc
     def ConnectorDamping(
         self,
-<<<<<<< HEAD
-        behavior: SymbolicConstant = LINEAR,
-        coupling: SymbolicConstant = UNCOUPLED,
-=======
-        type: Literal[C.STRUCTURAL, C.VISCOUS] = VISCOUS,
         behavior: Literal[C.NONLINEAR, C.LINEAR] = LINEAR,
         coupling: Literal[C.UNCOUPLED, C.NONLINEAR, C.COUPLED_POSITION, C.COUPLED_MOTION, C.COUPLED, C.LINEAR] = UNCOUPLED,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         dependencies: int = 0,
         temperatureDependency: Boolean = OFF,
         frequencyDependency: Boolean = OFF,
