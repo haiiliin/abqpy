@@ -8,9 +8,7 @@ from .RebarLayers import RebarLayers
 from .SectionLayerArray import SectionLayerArray
 from .TransverseShearShell import TransverseShearShell
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (BENDING, Boolean, DEFAULT,
-                                              GRADIENT, NO_IDEALIZATION, OFF, SIMPSON,
-                                              UNIFORM)
+from ..UtilityAndView.abaqusConstants import BENDING, Boolean, DEFAULT, GRADIENT, NO_IDEALIZATION, OFF, SIMPSON, UNIFORM
 
 
 @abaqus_class_doc
@@ -18,7 +16,7 @@ class CompositeShellSection(GeometryShellSection):
     """The CompositeShellSection object defines the properties of a composite shell section.
     The CompositeShellSection object is derived from the GeometryShellSection object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -89,9 +87,7 @@ class CompositeShellSection(GeometryShellSection):
     #: calculations. This member is only applicable when **preIntegrate** is set to ON. Possible
     #: values are NO_IDEALIZATION, SMEAR_ALL_LAYERS, MEMBRANE, and BENDING. The default value
     #: is NO_IDEALIZATION.
-    idealization: Literal[
-        C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING
-    ] = NO_IDEALIZATION
+    idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING] = NO_IDEALIZATION
 
     #: None or an Int specifying the number of temperature points to be input. This argument is
     #: valid only when **temperature** = POINTWISE. The default value is None.
@@ -144,9 +140,7 @@ class CompositeShellSection(GeometryShellSection):
         poisson: float = 0,
         integrationRule: Literal[C.SIMPSON, C.GAUSS] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
-        idealization: Literal[
-            C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING
-        ] = NO_IDEALIZATION,
+        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING] = NO_IDEALIZATION,
         nTemp: Optional[int] = None,
         thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
@@ -157,7 +151,7 @@ class CompositeShellSection(GeometryShellSection):
     ) -> None:
         """This method creates a CompositeShellSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[i].CompositeShellSection
@@ -252,9 +246,7 @@ class CompositeShellSection(GeometryShellSection):
         poisson: float = 0,
         integrationRule: Literal[C.SIMPSON, C.GAUSS] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
-        idealization: Literal[
-            C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING
-        ] = NO_IDEALIZATION,
+        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING] = NO_IDEALIZATION,
         nTemp: Optional[int] = None,
         thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,

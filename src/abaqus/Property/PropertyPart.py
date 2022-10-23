@@ -13,9 +13,19 @@ from ..Part.PartBase import PartBase
 from ..Region.Region import Region
 from ..Region.Set import Set
 from ..Region.Surface import Surface
-from ..UtilityAndView.abaqusConstants import (AXIS_1, AXIS_3, Boolean, FROM_SECTION, GLOBAL,
-                                              NORMAL_VECTOR, OFF, PRIMARY_VECTOR, SHELL,
-                                              SINGLE_VALUE, STACK_3)
+from ..UtilityAndView.abaqusConstants import (
+    AXIS_1,
+    AXIS_3,
+    Boolean,
+    FROM_SECTION,
+    GLOBAL,
+    NORMAL_VECTOR,
+    OFF,
+    PRIMARY_VECTOR,
+    SHELL,
+    SINGLE_VALUE,
+    STACK_3,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -26,7 +36,9 @@ class PropertyPart(PartBase):
         self,
         name: str,
         description: str = "",
-        offsetType: Literal[C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.GLOBAL, C.SINGLE_VALUE, C.OFFSET_FIELD, C.SHELL] = GLOBAL,
+        offsetType: Literal[
+            C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.GLOBAL, C.SINGLE_VALUE, C.OFFSET_FIELD, C.SHELL
+        ] = GLOBAL,
         offsetField: str = "",
         offsetValues: float = 0,
         elementType: Literal[C.SOLID, C.SHELL, C.CONTINUUM_SHELL] = SHELL,
@@ -34,7 +46,7 @@ class PropertyPart(PartBase):
     ) -> CompositeLayup:
         """This method creates a CompositeLayup object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].CompositeLayup
@@ -90,12 +102,14 @@ class PropertyPart(PartBase):
         sectionName: str,
         thicknessAssignment: Literal[C.FROM_SECTION, C.FROM_GEOMETRY] = FROM_SECTION,
         offset: float = 0,
-        offsetType: Literal[C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.SINGLE_VALUE, C.FROM_GEOMETRY, C.OFFSET_FIELD] = SINGLE_VALUE,
+        offsetType: Literal[
+            C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.SINGLE_VALUE, C.FROM_GEOMETRY, C.OFFSET_FIELD
+        ] = SINGLE_VALUE,
         offsetField: str = "",
     ):
         """This method creates a SectionAssignment object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].SectionAssignment
@@ -126,9 +140,7 @@ class PropertyPart(PartBase):
         assignment: SectionAssignment
             A :py:class:`~abaqus.Property.SectionAssignment.SectionAssignment` object
         """
-        sectionAssignment = SectionAssignment(
-            region, sectionName, thicknessAssignment, offset, offsetType, offsetField
-        )
+        sectionAssignment = SectionAssignment(region, sectionName, thicknessAssignment, offset, offsetType, offsetField)
         self.sectionAssignments.append(sectionAssignment)
         return sectionAssignment
 
@@ -136,7 +148,7 @@ class PropertyPart(PartBase):
     def MaterialOrientation(
         self,
         region: Optional[Set] = None,
-        localCsys: Optional[DatumCsys] = None, 
+        localCsys: Optional[DatumCsys] = None,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
         stackDirection: Literal[C.STACK_2, C.STACK_ORIENTATION, C.STACK_3, C.STACK_1] = STACK_3,
@@ -145,19 +157,19 @@ class PropertyPart(PartBase):
         normalAxisDirection: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_3,
         normalAxisDefinition: Literal[C.SURFACE, C.NORMAL_VECTOR, C.NORMAL_DATUM] = NORMAL_VECTOR,
         normalAxisRegion: Optional[Surface] = None,
-        normalAxisDatum: Optional[DatumAxis] = None, 
+        normalAxisDatum: Optional[DatumAxis] = None,
         flipNormalDirection: Boolean = OFF,
         normalAxisVector: tuple = (),
         primaryAxisDirection: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         primaryAxisDefinition: Literal[C.SURFACE, C.PRIMARY_VECTOR, C.PRIMARY_DATUM] = PRIMARY_VECTOR,
         primaryAxisRegion: Optional[Set] = None,
-        primaryAxisDatum: Optional[DatumAxis] = None, 
+        primaryAxisDatum: Optional[DatumAxis] = None,
         flipPrimaryDirection: Boolean = OFF,
         primaryAxisVector: tuple = (),
     ) -> MaterialOrientation:
         """This method creates a MaterialOrientation object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].MaterialOrientation
@@ -258,12 +270,12 @@ class PropertyPart(PartBase):
         )
         self.materialOrientations.append(materialOrientation)
         return materialOrientation
-    
+
     @abaqus_method_doc
     def assignBeamSectionOrientation(self, region: tuple, method: Literal[C.N1_COSINES], n1: tuple):
         """This method assigns a beam section orientation to a region of a part.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].assignBeamSectionOrientation
@@ -288,7 +300,7 @@ class PropertyPart(PartBase):
     ):
         """This method assigns a material orientation to a region.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].assignMaterialOrientation
@@ -317,7 +329,7 @@ class PropertyPart(PartBase):
     ):
         """This method assigns a rebar reference orientation to a region.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].assignRebarOrientation
@@ -345,7 +357,7 @@ class PropertyPart(PartBase):
         """This method flips the normals of shell or membrane elements of an orphan mesh or of
         two-dimensional geometric regions.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].flipNormal
@@ -370,7 +382,7 @@ class PropertyPart(PartBase):
         """This method flips the tangents of beam or truss elements of an orphan mesh or of
         one-dimensional geometric regions.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].flipTangent
@@ -387,7 +399,7 @@ class PropertyPart(PartBase):
     def unassignBeamSectionOrientation(self, index: int):
         """This method deletes a beam section orientation assignment.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].unassignBeamSectionOrientation
@@ -403,7 +415,7 @@ class PropertyPart(PartBase):
     def unassignMaterialOrientation(self, index: int):
         """This method deletes a material orientation assignment.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].unassignMaterialOrientation
@@ -419,7 +431,7 @@ class PropertyPart(PartBase):
     def unassignRebarOrientation(self, index: int):
         """This method deletes a rebar orientation assignment.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].unassignRebarOrientation

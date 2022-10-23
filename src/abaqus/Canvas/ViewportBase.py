@@ -19,10 +19,16 @@ from ..OdbDisplay.OdbDisplay import OdbDisplay
 from ..PlotOptions.DetailPlotOptions import DetailPlotOptions
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from ..UtilityAndView.View import View
-from ..UtilityAndView.abaqusConstants import (Boolean,
-                                              DEFAULT_COLORS, HOLLOW_CIRCLE,
-                                              OFF, ON,
-                                              SMALL, SYSTEM, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    DEFAULT_COLORS,
+    HOLLOW_CIRCLE,
+    OFF,
+    ON,
+    SMALL,
+    SYSTEM,
+    SymbolicConstant,
+)
 from .._OptionsBase import _OptionsBase
 
 
@@ -32,7 +38,7 @@ class ViewportBase(_OptionsBase):
     object stores the various settings that determine how objects are displayed within that
     viewport.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.viewports[name]
@@ -354,7 +360,7 @@ class ViewportBase(_OptionsBase):
     ):
         """This method creates a Viewport object with the specified origin and dimensions.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.Viewport
@@ -468,9 +474,7 @@ class ViewportBase(_OptionsBase):
         ...
 
     @abaqus_method_doc
-    def getActiveElementLabels(
-        self, useCut: Boolean = OFF, printResults: Boolean = OFF
-    ):
+    def getActiveElementLabels(self, useCut: Boolean = OFF, printResults: Boolean = OFF):
         """This method returns the element labels currently active in the viewport based on the
         current display group. The element labels are printed only when the **displayedObject**
         member in the Viewport object is set to an Odb. The getActiveElementLabels method has
@@ -705,10 +709,10 @@ class ViewportBase(_OptionsBase):
         displayMode
             A SymbolicConstant specifying the display mode of the viewport. Possible values
             are:
-            
+
             * SINGLE, specifying a single **displayedObject**.
             * OVERLAY, specifying one or more layers to be displayed simultaneously—each layer contains one **displayedObject**.
-            
+
         visibleLayers
             A sequence of Strings specifying the names of layers that will be displayed in the
             viewport when **displayMode** = OVERLAY.
@@ -771,9 +775,7 @@ class ViewportBase(_OptionsBase):
         ...
 
     @abaqus_method_doc
-    def timeDisplay(
-        self, numFrames: int = 0, numSeconds: int = 10, degreesPerFrame: float = 0
-    ):
+    def timeDisplay(self, numFrames: int = 0, numSeconds: int = 10, degreesPerFrame: float = 0):
         """This method refreshes the Viewport display **numFrames** times and then checks to see if
         **numSeconds** seconds have elapsed. If not, it will continue refreshing the Viewport
         until the time has elapsed. At completion, the actual number of refreshes (frames)

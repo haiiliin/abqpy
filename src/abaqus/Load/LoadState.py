@@ -11,7 +11,7 @@ class LoadState:
     LoadState object has no explicit constructor or methods. The members of the LoadState
     object are common to all objects derived from LoadState.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -24,7 +24,7 @@ class LoadState:
 
     #: A SymbolicConstant specifying the propagation state of the LoadState object. Possible
     #: values are:
-    #: 
+    #:
     #: - NOT_YET_ACTIVE
     #: - CREATED
     #: - PROPAGATED

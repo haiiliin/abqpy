@@ -18,7 +18,7 @@ class MeshEditAssembly(AssemblyBase):
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import assembly
@@ -52,9 +52,7 @@ class MeshEditAssembly(AssemblyBase):
         ...
 
     @abaqus_method_doc
-    def deleteElement(
-        self, elements: Sequence[MeshElement], deleteUnreferencedNodes: Boolean = OFF
-    ):
+    def deleteElement(self, elements: Sequence[MeshElement], deleteUnreferencedNodes: Boolean = OFF):
         """This method deletes the given elements from a part instance. The elements must have been
         generated using the bottom-up meshing technique.
 
@@ -169,9 +167,7 @@ class MeshEditAssembly(AssemblyBase):
 
     @overload
     @abaqus_method_doc
-    def mergeNodes(
-        self, node1: MeshNode, node2: MeshNode, removeDuplicateElements: Boolean = True
-    ):
+    def mergeNodes(self, node1: MeshNode, node2: MeshNode, removeDuplicateElements: Boolean = True):
         """Merge two nodes of a part instance. At least one of the two nodes must have been
         generated using the bottom-up meshing technique.
 

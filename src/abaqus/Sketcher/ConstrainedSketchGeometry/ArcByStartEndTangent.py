@@ -12,7 +12,7 @@ class ArcByStartEndTangent(ConstrainedSketchGeometry):
         """This method constructs an arc using two vertices. The Arc object is added to the
         geometry repository of the ConstrainedSketch object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].ArcByStartEndTangent

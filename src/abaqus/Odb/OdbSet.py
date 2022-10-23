@@ -13,7 +13,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
 class OdbSet:
     """The set objects are used to identify regions of a model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -68,7 +68,7 @@ class OdbSet:
         instance-level sets) or from a sequence of arrays of OdbMeshNode objects (for
         assembly-level sets).
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet
@@ -94,7 +94,7 @@ class OdbSet:
     def NodeSetFromNodeLabels(self, name: str, nodeLabels: tuple):
         """This method creates a node set from a sequence of node labels.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet
@@ -123,7 +123,7 @@ class OdbSet:
         instance-level sets) or from a sequence of arrays of OdbMeshElement objects (for
         assembly-level sets).
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet
@@ -150,7 +150,7 @@ class OdbSet:
     def ElementSetFromElementLabels(self, name: str, elementLabels: tuple):
         """This method creates an element set from a sequence of element labels.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet
@@ -177,7 +177,7 @@ class OdbSet:
     def MeshSurface(self, name: str, meshSurfaces: tuple):
         """This method creates a surface from the element and side identifiers for the assembly.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet
@@ -192,16 +192,16 @@ class OdbSet:
             A sequence of sequences. Each sequence consists of an element sequence and a side
             identifier. The possible side identifiers depend on the type of element, as described in
             the following table:
-            
+
             | Sequence of elements             | Side identifiers                         |
             | -------------------------------- | ---------------------------------------- |
             | Solid elements                   | FACE1, FACE2, FACE3, FACE4, FACE5, FACE6 |
             | Three-dimensional shell elements | SIDE1, SIDE2                             |
             | Two-dimensional elements         | FACE1, FACE2, FACE3, FACE4               |
             | Wire elements                    | END, END2                                |
-            
+
             For example::
-            
+
                 side1Elements=instance1.elements[217:218]
                 side2Elements=instance2.elements[100:105]
                 assembly.MeshSurface(
@@ -220,7 +220,7 @@ class OdbSet:
     def MeshSurfaceFromElsets(self, name: str, elementSetSeq: tuple):
         """This method creates a mesh surface from a sequence of element sets.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet
@@ -248,7 +248,7 @@ class OdbSet:
     def MeshSurfaceFromLabels(self, name: str, surfaceLabels: tuple):
         """This method creates a mesh surface from a sequence of surface labels.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].parts[name].NodeSet

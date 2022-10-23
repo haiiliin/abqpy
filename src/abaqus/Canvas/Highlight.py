@@ -9,7 +9,7 @@ from abqpy.decorators import abaqus_function_doc
 def highlight(object):
     """This method highlights an object in the current viewport.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             highlight
@@ -57,7 +57,7 @@ def highlight(object):
 def unhighlight(object):
     """This method removes highlighting from an object in the current viewport.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             unhighlight

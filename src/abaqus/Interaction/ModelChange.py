@@ -15,7 +15,7 @@ class ModelChange(Interaction):
     reactivation.
     The ModelChange object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -68,7 +68,7 @@ class ModelChange(Interaction):
     ):
         """This method creates a ModelChange object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ModelChange
@@ -141,9 +141,7 @@ class ModelChange(Interaction):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(
-        self, stepName: str, activeInStep: Boolean = OFF, includeStrain: Boolean = OFF
-    ):
+    def setValuesInStep(self, stepName: str, activeInStep: Boolean = OFF, includeStrain: Boolean = OFF):
         """This method modifies the propagating data of an existing ModelChange object in the
         specified step.
 

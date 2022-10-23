@@ -1,10 +1,11 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class EventSeriesType:
     """The EventSeriesType object is used to define a type of event in a process.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name].eventSeriesTypes[name]
@@ -31,7 +32,7 @@ class EventSeriesType:
     def __init__(self, name: str, createStepName: str, fields: str = ""):
         """This method creates an EventSeriesType object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].EventSeriesType

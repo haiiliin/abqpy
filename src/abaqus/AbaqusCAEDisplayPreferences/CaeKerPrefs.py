@@ -9,7 +9,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, HOME, OFF
 class CaeKerPrefs:
     """The CaeKerPrefs object contains the details of the sessionOptions.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import caePrefsAccess
@@ -32,9 +32,9 @@ class CaeKerPrefs:
         """
         # TODO: Implement this method
         ...
-    
+
     @abaqus_method_doc
-    def saveAs(self, fileName: str = '', directory: Literal[C.CURRENT, C.HOME] = HOME):
+    def saveAs(self, fileName: str = "", directory: Literal[C.CURRENT, C.HOME] = HOME):
         """This method saves the sessionOptions to the specified location.
 
         Parameters
@@ -45,11 +45,11 @@ class CaeKerPrefs:
             A SymbolicConstant specifying the location of the preferences file. Possible values
             are:
 
-            - CURRENT to open the preferences file in the current directory 
+            - CURRENT to open the preferences file in the current directory
               (caePrefsAccess.CURRENT)
-            - HOME to open the preferences file in your home directory 
+            - HOME to open the preferences file in your home directory
               (caePrefsAccess.HOME)
-            
+
             The default value is HOME. Either **fileName** or **directory** must be
             supplied. The **fileName** or **directory** arguments are mutually exclusive.
         """

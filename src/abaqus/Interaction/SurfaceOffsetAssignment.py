@@ -14,7 +14,7 @@ class SurfaceOffsetAssignment:
     definition for surfaces in ContactExp and ContactStd objects. The
     SurfaceOffsetAssignment object has no constructor or members.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -26,9 +26,7 @@ class SurfaceOffsetAssignment:
     """
 
     @abaqus_method_doc
-    def changeValuesInStep(
-        self, stepName: str, index: int, value: Union[Literal[C.SPOS, C.ORIGINAL, C.SNEG], float]
-    ):
+    def changeValuesInStep(self, stepName: str, index: int, value: Union[Literal[C.SPOS, C.ORIGINAL, C.SNEG], float]):
         """This method allows modification of surface offset fraction assignments already defined
         on surfaces in a given step.
 
@@ -43,7 +41,7 @@ class SurfaceOffsetAssignment:
         value
             A tuple specifying the value of the surface offset assignments for the surface whose
             index is referenced. Each tuple contains one entry:
-            
+
             - A Float or a SymbolicConstant specifying the surface offset fraction value to be used
               for the surface. Possible values of the SymbolicConstant are ORIGINAL, SPOS, and SNEG.
         """
@@ -51,7 +49,8 @@ class SurfaceOffsetAssignment:
 
     @abaqus_method_doc
     def appendInStep(
-        self, stepName: str,
+        self,
+        stepName: str,
         assignments: Sequence[Tuple[Union[Region, Material, Literal[C.SPOS, C.ORIGINAL, C.SNEG, C.GLOBAL]], float]],
     ):
         """This method allows addition of surface offset fraction assignments to new surfaces in a

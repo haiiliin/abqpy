@@ -14,7 +14,7 @@ class ActuatorSensorState(InteractionState):
     The ActuatorSensorState object has no constructor, methods, or members.
     The ActuatorSensorState object is derived from the InteractionState object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -23,7 +23,7 @@ class ActuatorSensorState(InteractionState):
 
     #: A SymbolicConstant specifying the propagation state of the InteractionState object.
     #: Possible values are:
-    #: 
+    #:
     #: - NOT_YET_ACTIVE
     #: - CREATED
     #: - PROPAGATED

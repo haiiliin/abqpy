@@ -8,9 +8,20 @@ from ...TestData.BiaxialTestData import BiaxialTestData
 from ...TestData.PlanarTestData import PlanarTestData
 from ...TestData.UniaxialTestData import UniaxialTestData
 from ...TestData.VolumetricTestData import VolumetricTestData
-from ....UtilityAndView.abaqusConstants import (Boolean, DEFAULT, FITTED_VALUE, FUNG_ANISOTROPIC,
-                                                INCOMPRESSIBLE, ISOTROPIC, LONG_TERM, OFF, ON,
-                                                STRAIN, UNIAXIAL, UNKNOWN)
+from ....UtilityAndView.abaqusConstants import (
+    Boolean,
+    DEFAULT,
+    FITTED_VALUE,
+    FUNG_ANISOTROPIC,
+    INCOMPRESSIBLE,
+    ISOTROPIC,
+    LONG_TERM,
+    OFF,
+    ON,
+    STRAIN,
+    UNIAXIAL,
+    UNKNOWN,
+)
 from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -19,7 +30,7 @@ class Hyperelastic:
     r"""The Hyperelastic object specifies elastic properties for approximately incompressible
     elastomers.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -30,68 +41,68 @@ class Hyperelastic:
         The table data for this object are:
 
         - If **type** = ARRUDA_BOYCE, the table data specify the following:
-        
+
             - :math:`\mu`.
             - :math:`\lambda_{m}`.
             - :math:`D`.
             - Temperature, if the data depend on temperature.
-            
+
         - If **type** = MOONEY_RIVLIN, the table data specify the following:
-        
+
             - :math:`C_{10}`
             - :math:`C_{01}`.
             - :math:`D_{1}`.
             - Temperature, if the data depend on temperature.
-            
+
         - If **type** = NEO_HOOKE, the table data specify the following:
-        
+
             - :math:`C_{10}`
             - :math:`D_{1}`.
             - Temperature, if the data depend on temperature.
-            
+
         - If **type** = OGDEN, the table data specify the following for values of nn:
-        
+
             - :math:`\mu_{i}` and :math:`\alpha_{i}` for :math:`i` from 1 to :math:`n`.
             - :math:`n` coefficients :math:`D_{i}`.
-            - Temperature, if the data depend on temperature. Temperature dependence is not 
+            - Temperature, if the data depend on temperature. Temperature dependence is not
               allowed for :math:`4 \leq n \leq 6` in an Abaqus/Explicit analysis.
-              
+
         - If **type** = POLYNOMIAL, the table data specify the following for values of nn:
-        
-            - :math:`C_{i j}` for each value of :math:`(i+j)` from 1 to :math:`n` with 
-              :math:`i` decreasing from :math:`(i+j)` to zero and :math:`j` increasing 
+
+            - :math:`C_{i j}` for each value of :math:`(i+j)` from 1 to :math:`n` with
+              :math:`i` decreasing from :math:`(i+j)` to zero and :math:`j` increasing
               from zero to :math:`(i+j)`.
             - :math:`n` coefficients :math:`D_{i}`
             - Temperature, if the data depend on temperature. Temperature dependence is
               not allowed for :math:`3 \leq n \leq 6` in an Abaqus/Explicit analysis.
-        
+
         - If **type** = REDUCED_POLYNOMIAL, the table data specify the following for values of nn:
-        
+
             - :math:`C_{i 0}` for :math:`i` from 1 to :math:`n`.
             - :math:`n` coefficients :math:`D_{i}`
-            - Temperature, if the data depend on temperature. Temperature dependence 
+            - Temperature, if the data depend on temperature. Temperature dependence
               is not allowed for :math:`4 \leq n \leq 6` in an Abaqus/Explicit analysis.
-              
+
         - If **type** = VAN_DER_WAALS, the table data specify the following:
-        
+
             - :math:`\mu`.
             - :math:`\lambda_{m}`.
             - :math:`a`.
             - :math:`\beta`.
             - :math:`D`.
             - Temperature, if the data depend on temperature.
-            
+
         - If **type** = YEOH, the table data specify the following:
-        
+
             - :math:`C_{10}`
             - :math:`C_{20}`
             - :math:`C_{30}`
             - :math:`D_{1}`.
             - :math:`D_{2}`
             - :math:`D_{3}`.
-            - Temperature, if the data depend on temperature. Temperature dependence 
+            - Temperature, if the data depend on temperature. Temperature dependence
               is not allowed in an Abaqus/Explicit analysis.
-        
+
         The None object is the default value if **testData** = ON.
 
         The corresponding analysis keywords are:
@@ -118,7 +129,20 @@ class Hyperelastic:
     def __init__(
         self,
         table: tuple,
-        type: Literal[C.MARLOW, C.MOONEY_RIVLIN, C.POLYNOMIAL, C.YEOH, C.ARRUDA_BOYCE, C.REDUCED_POLYNOMIAL, C.UNKNOWN, C.VALANIS_LANDEL, C.USER, C.OGDEN, C.VAN_DER_WAALS, C.NEO_HOOKE] = UNKNOWN,
+        type: Literal[
+            C.MARLOW,
+            C.MOONEY_RIVLIN,
+            C.POLYNOMIAL,
+            C.YEOH,
+            C.ARRUDA_BOYCE,
+            C.REDUCED_POLYNOMIAL,
+            C.UNKNOWN,
+            C.VALANIS_LANDEL,
+            C.USER,
+            C.OGDEN,
+            C.VAN_DER_WAALS,
+            C.NEO_HOOKE,
+        ] = UNKNOWN,
         moduliTimeScale: Literal[C.INSTANTANEOUS, C.LONG_TERM] = LONG_TERM,
         temperatureDependency: Boolean = OFF,
         n: int = 1,
@@ -130,7 +154,9 @@ class Hyperelastic:
         volumetricResponse: Literal[C.LATERAL_NOMINAL_STRAIN, C.VOLUMETRIC_DATA, C.DEFAULT, C.POISSON_RATIO] = DEFAULT,
         poissonRatio: float = 0,
         materialType: Literal[C.ANISOTROPIC, C.ISOTROPIC] = ISOTROPIC,
-        anisotropicType: Literal[C.USER_DEFINED, C.FUNG_ANISOTROPIC, C.HOLZAPFEL, C.FUNG_ORTHOTROPIC] = FUNG_ANISOTROPIC,
+        anisotropicType: Literal[
+            C.USER_DEFINED, C.FUNG_ANISOTROPIC, C.HOLZAPFEL, C.FUNG_ORTHOTROPIC
+        ] = FUNG_ANISOTROPIC,
         formulation: Literal[C.STRAIN, C.INVARIANT] = STRAIN,
         behaviorType: Literal[C.COMPRESSIBLE, C.INCOMPRESSIBLE] = INCOMPRESSIBLE,
         dependencies: int = 0,
@@ -138,7 +164,7 @@ class Hyperelastic:
     ):
         """This method creates a Hyperelastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Hyperelastic

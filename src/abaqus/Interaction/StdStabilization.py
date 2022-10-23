@@ -12,7 +12,7 @@ class StdStabilization(ContactStabilization):
     analyses to specify contact stabilization.
     The StdStabilization object is derived from the ContactStabilization object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -64,7 +64,7 @@ class StdStabilization(ContactStabilization):
     ):
         """This method creates a StdStabilization object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].StdStabilization

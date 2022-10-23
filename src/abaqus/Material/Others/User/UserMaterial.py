@@ -1,7 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ....UtilityAndView.abaqusConstants import (Boolean, INCREMENTAL, MECHANICAL, OFF)
+from ....UtilityAndView.abaqusConstants import Boolean, INCREMENTAL, MECHANICAL, OFF
 from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -10,7 +10,7 @@ class UserMaterial:
     """The UserMaterial object defines material constants for use in subroutines UMAT, UMATHT,
     or VUMAT.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -35,7 +35,7 @@ class UserMaterial:
     ):
         """This method creates a UserMaterial object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].UserMaterial

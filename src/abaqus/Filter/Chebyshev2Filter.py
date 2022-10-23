@@ -13,7 +13,7 @@ class Chebyshev2Filter(Filter):
     """The Chebyshev2Filter object defines a Chebyshev type 2 filter.
     The Chebyshev2Filter object is derived from the Filter object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import filter
@@ -74,7 +74,7 @@ class Chebyshev2Filter(Filter):
     ):
         """This method creates a Chebyshev2Filter object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Chebyshev2Filter

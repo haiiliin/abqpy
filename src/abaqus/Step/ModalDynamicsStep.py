@@ -32,7 +32,7 @@ class ModalDynamicsStep(AnalysisStep):
     linear perturbation procedure using modal superposition.
     The ModalDynamicsStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -83,9 +83,7 @@ class ModalDynamicsStep(AnalysisStep):
     directDampingByFrequency: DirectDampingByFrequency = DirectDampingByFrequency()
 
     #: A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
-    rayleighDampingByFrequency: RayleighDampingByFrequency = (
-        RayleighDampingByFrequency()
-    )
+    rayleighDampingByFrequency: RayleighDampingByFrequency = RayleighDampingByFrequency()
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
@@ -98,7 +96,7 @@ class ModalDynamicsStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -181,17 +179,17 @@ class ModalDynamicsStep(AnalysisStep):
         continueAnalysis: Boolean = OFF,
         timePeriod: float = 1,
         incSize: float = 1,
-        directDamping: Optional[DirectDamping] = None, 
-        compositeDamping: Optional[CompositeDamping] = None, 
-        rayleighDamping: Optional[RayleighDamping] = None, 
+        directDamping: Optional[DirectDamping] = None,
+        compositeDamping: Optional[CompositeDamping] = None,
+        rayleighDamping: Optional[RayleighDamping] = None,
         amplitude: Literal[C.STEP, C.RAMP] = STEP,
         maintainAttributes: Boolean = False,
-        directDampingByFrequency: Optional[DirectDampingByFrequency] = None, 
-        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None, 
+        directDampingByFrequency: Optional[DirectDampingByFrequency] = None,
+        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None,
     ):
         """This method creates a ModalDynamicsStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ModalDynamicsStep
@@ -247,12 +245,12 @@ class ModalDynamicsStep(AnalysisStep):
         continueAnalysis: Boolean = OFF,
         timePeriod: float = 1,
         incSize: float = 1,
-        directDamping: Optional[DirectDamping] = None, 
-        compositeDamping: Optional[CompositeDamping] = None, 
-        rayleighDamping: Optional[RayleighDamping] = None, 
+        directDamping: Optional[DirectDamping] = None,
+        compositeDamping: Optional[CompositeDamping] = None,
+        rayleighDamping: Optional[RayleighDamping] = None,
         amplitude: Literal[C.STEP, C.RAMP] = STEP,
-        directDampingByFrequency: Optional[DirectDampingByFrequency] = None, 
-        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None, 
+        directDampingByFrequency: Optional[DirectDampingByFrequency] = None,
+        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None,
     ):
         """This method modifies the ModalDynamicsStep object.
 

@@ -12,7 +12,7 @@ from ...Plastic.SuperElastic.SuperElasticHardeningModifications import (
 class SuperElasticity:
     """The SuperElasticity object specifies a superelastic material model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -21,7 +21,7 @@ class SuperElasticity:
             session.odbs[name].materials[name].superElasticity
 
         The table data for this object are:
-        
+
         - Young's Modulus (Martensite).
         - Poisson's Ratio (Martensite).
         - Transformation Strain.
@@ -45,15 +45,13 @@ class SuperElasticity:
 
     #: A [SuperElasticHardeningModifications
     #: object](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-superelastichardeningmodificationpyc.htm?ContextScope=all#simaker-c-superelastichardeningmodificationpyc).
-    superElasticHardeningModifications: SuperElasticHardeningModifications = (
-        SuperElasticHardeningModifications(((),))
-    )
+    superElasticHardeningModifications: SuperElasticHardeningModifications = SuperElasticHardeningModifications(((),))
 
     @abaqus_method_doc
     def __init__(self, table: tuple, nonassociated: Optional[float] = None):
         """This method creates a SuperElasticity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].SuperElasticity

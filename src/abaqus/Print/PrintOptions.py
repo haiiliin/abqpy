@@ -12,7 +12,7 @@ class PrintOptions(_OptionsBase):
     methods. The PrintOptions object has no constructor. Abaqus creates the **printOptions**
     member when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.printOptions

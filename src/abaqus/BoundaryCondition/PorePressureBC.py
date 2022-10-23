@@ -5,8 +5,7 @@ from typing_extensions import Literal
 
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (Boolean, OFF, SymbolicConstant, UNCHANGED, UNIFORM,
-                                              UNSET)
+from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant, UNCHANGED, UNIFORM, UNSET
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -15,7 +14,7 @@ class PorePressureBC(BoundaryCondition):
     """The PorePressureBC object stores the data for a pore pressure boundary condition.
     The PorePressureBC object is derived from the BoundaryCondition object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -60,7 +59,7 @@ class PorePressureBC(BoundaryCondition):
     ):
         """This method creates a PorePressureBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PorePressureBC

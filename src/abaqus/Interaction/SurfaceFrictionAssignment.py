@@ -48,9 +48,7 @@ class SurfaceFrictionAssignment:
         ...
 
     @abaqus_method_doc
-    def appendInStep(
-        self, stepName: str, assignments: Union[Literal[C.GLOBAL], float]
-    ):
+    def appendInStep(self, stepName: str, assignments: Union[Literal[C.GLOBAL], float]):
         """This method allows addition of surface friction assignments to new surfaces in a given
         step.
 

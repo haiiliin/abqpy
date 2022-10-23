@@ -12,7 +12,7 @@ class PsdDefinition(Amplitude):
     random response loading.
     The PsdDefinition object is derived from the Amplitude object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import amplitude
@@ -74,7 +74,7 @@ class PsdDefinition(Amplitude):
     ):
         """This method creates a PsdDefinition object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PsdDefinition

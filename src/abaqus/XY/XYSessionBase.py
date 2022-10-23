@@ -13,7 +13,7 @@ class XYSessionBase(SessionBase):
     """The following commands operate on Session objects. For more information about the
     Session object, see Session object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -197,7 +197,7 @@ class XYSessionBase(SessionBase):
 
         Returns
         -------
-        int 
+        int
             Int specifying the limit for number of XY data objects.
         """
         ...

@@ -9,7 +9,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 class SpecificHeat:
     """The SpecificHeat object specifies a material's specific heat.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -40,7 +40,7 @@ class SpecificHeat:
     ):
         """This method creates a SpecificHeat object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].SpecificHeat

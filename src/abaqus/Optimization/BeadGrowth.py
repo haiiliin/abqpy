@@ -9,7 +9,7 @@ class BeadGrowth(GeometricRestriction):
     """The BeadGrowth object defines a growth geometric restriction.
     The BeadGrowth object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -31,12 +31,10 @@ class BeadGrowth(GeometricRestriction):
     shrink: float = 0
 
     @abaqus_method_doc
-    def __init__(
-        self, name: str, region: Region, beadGrowth: float = 0, shrink: float = 0
-    ):
+    def __init__(self, name: str, region: Region, beadGrowth: float = 0, shrink: float = 0):
         """This method creates a BeadGrowth object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].BeadGrowth

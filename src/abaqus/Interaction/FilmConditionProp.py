@@ -10,7 +10,7 @@ class FilmConditionProp(ContactProperty):
     as a function of temperature and field variables.
     The FilmConditionProp object is derived from the InteractionProperty object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -31,7 +31,7 @@ class FilmConditionProp(ContactProperty):
     dependencies: int = 0
 
     #: A sequence of sequences of Floats specifying the following:
-    #: 
+    #:
     #: - The film coefficient, hh.
     #: - Temperature, if the data depend on temperature.
     #: - Value of the first field variable, if the data depend on field variables.
@@ -49,7 +49,7 @@ class FilmConditionProp(ContactProperty):
     ):
         """This method creates a FilmConditionProp object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FilmConditionProp
@@ -64,7 +64,7 @@ class FilmConditionProp(ContactProperty):
             An Int specifying the number of field variable dependencies. The default value is 0.
         property
             A sequence of sequences of Floats specifying the following:
-            
+
             - The film coefficient, hh.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
@@ -95,7 +95,7 @@ class FilmConditionProp(ContactProperty):
             An Int specifying the number of field variable dependencies. The default value is 0.
         property
             A sequence of sequences of Floats specifying the following:
-            
+
             - The film coefficient, hh.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.

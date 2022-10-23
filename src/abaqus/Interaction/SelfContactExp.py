@@ -12,7 +12,7 @@ class SelfContactExp(Interaction):
     """The SelfContactExp object defines self-contact during an Abaqus/Explicit analysis.
     The SelfContactExp object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -53,7 +53,7 @@ class SelfContactExp(Interaction):
     ):
         """This method creates a SelfContactExp object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SelfContactExp
@@ -106,9 +106,7 @@ class SelfContactExp(Interaction):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(
-        self, stepName: str, interactionProperty: str = "", contactControls: str = ""
-    ):
+    def setValuesInStep(self, stepName: str, interactionProperty: str = "", contactControls: str = ""):
         """This method modifies the propagating data for an existing SelfContactExp object in the
         specified step.
 

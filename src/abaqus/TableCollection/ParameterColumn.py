@@ -11,7 +11,7 @@ class ParameterColumn:
     collectively build the type of parameter table. Once the object is created, it is
     noneditable.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name].tableCollections[name].parameterTables[name].columns[i]
@@ -55,7 +55,7 @@ class ParameterColumn:
         it in the array data structure. It is accessible from the ParameterTable object using a
         column member.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].tableCollections[name].parameterTables[name].Column

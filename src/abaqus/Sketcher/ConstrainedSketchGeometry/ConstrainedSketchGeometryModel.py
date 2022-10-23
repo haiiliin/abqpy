@@ -15,7 +15,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
     such as Line, Arc, and Spline. ConstrainedSketchVertex, ConstrainedSketchDimension, ConstrainedSketchConstraint, and ConstrainedSketchParameter objects are
     contained in their respective repositories.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import sketch
@@ -23,13 +23,11 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
     """
 
     @abaqus_method_doc
-    def Arc3Points(
-        self, point1: Sequence[float], point2: Sequence[float], point3: Sequence[float]
-    ):
+    def Arc3Points(self, point1: Sequence[float], point2: Sequence[float], point3: Sequence[float]):
         """This method constructs an arc using a two endpoints and an intermediate third point on
         the arc.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].Arc3Points
@@ -62,7 +60,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         added to the geometry repository of the ConstrainedSketch object. The arc is created in
         a clockwise fashion from **point1** to **point2**.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].ArcByCenterEnds
@@ -91,13 +89,11 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         ...
 
     @abaqus_method_doc
-    def ArcByStartEndTangent(
-        self, point1: Sequence[float], point2: Sequence[float], vector: tuple
-    ):
+    def ArcByStartEndTangent(self, point1: Sequence[float], point2: Sequence[float], vector: tuple):
         """This method constructs an arc using two vertices. The Arc object is added to the
         geometry repository of the ConstrainedSketch object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].ArcByStartEndTangent
@@ -123,7 +119,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """This method constructs a circle using a center point and a point on the perimeter. The
         circle is added to the geometry repository of the ConstrainedSketch object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].CircleByCenterPerimeter
@@ -143,14 +139,12 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         ...
 
     @abaqus_method_doc
-    def ConstructionCircleByCenterPerimeter(
-        self, center: Sequence[float], point1: Sequence[float]
-    ):
+    def ConstructionCircleByCenterPerimeter(self, center: Sequence[float], point1: Sequence[float]):
         """This method constructs a construction circle using a center point and a point on the
         perimeter. The circle is added to the geometry repository of the ConstrainedSketch
         object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].ConstructionCircleByCenterPerimeter
@@ -177,7 +171,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         axis point. The ellipse is added to the geometry repository of the ConstrainedSketch
         object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].EllipseByCenterPerimeter
@@ -210,7 +204,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """This method constructs a fillet arc of a given radius between two curves. The fillet is
         added to the geometry repository of the ConstrainedSketch object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].FilletByRadius
@@ -248,7 +242,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
     def Line(self, point1: Sequence[float], point2: Sequence[float]):
         """This method creates a line between two given points.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].Line
@@ -271,7 +265,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
     def ConstructionLine(self, point1: Sequence[float], point2: Sequence[float]):
         """This method creates an oblique construction line that runs between two given points.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].ConstructionLine
@@ -294,7 +288,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
     def Spline(self, points: tuple, constrainPoints: Boolean = True):
         """This method creates a spline curve running through a sequence of points.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].Spline
@@ -320,7 +314,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         """This method creates a spot construction point located at the specified coordinates. The
         spot is added to the vertex repository of the ConstrainedSketch object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].Spot
@@ -361,9 +355,7 @@ class ConstrainedSketchGeometryModel(ConstrainedSketchBase):
         ...
 
     @abaqus_method_doc
-    def getPointAtDistance(
-        self, point: Sequence[float], distance: str, percentage: Boolean = OFF
-    ):
+    def getPointAtDistance(self, point: Sequence[float], distance: str, percentage: Boolean = OFF):
         """This method returns a point offset along the given ConstrainedSketchGeometry from the
         given end by a specified arc length distance or a percentage of the total length of the
         ConstrainedSketchGeometry object.

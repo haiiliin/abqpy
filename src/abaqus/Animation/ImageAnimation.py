@@ -8,7 +8,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class ImageAnimation:
     """The ImageAnimation object is used to build frame by frame animation.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import animation
@@ -22,7 +22,7 @@ class ImageAnimation:
     def __init__(self, fileName: str, format: Literal[C.AVI, C.QUICKTIME]):
         """This method creates an ImageAnimation object from the specified filename and format.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.ImageAnimation

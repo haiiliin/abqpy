@@ -39,7 +39,7 @@ def evaluateMaterial(
     """This method evaluates the behavior of a hyperelastic material under standard test
     conditions.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             evaluateMaterial
@@ -56,8 +56,8 @@ def evaluateMaterial(
         COEFFICIENTS.
     strainEnergyPotentials
         A sequence of SymbolicConstants specifying for which material models the material is to
-        be evaluated. Possible values are 
-        
+        be evaluated. Possible values are
+
         - POLY_N1
         - POLY_N2
         - POLY_N3
@@ -80,8 +80,8 @@ def evaluateMaterial(
         - VAN_DER_WAALS
         - YEOH
         - MOONEY_RIVLIN
-        - NEO_HOOKE. 
-        
+        - NEO_HOOKE.
+
         **Note**: The options
         POLY_N3, POLY_N4, POLY_N5, and POLY_N6 are valid only if the material was defined by
         providing coefficients of the strain energy potential.

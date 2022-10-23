@@ -7,8 +7,18 @@ from .JobFromInputFile import JobFromInputFile
 from .ModelJob import ModelJob
 from .OptimizationProcess import OptimizationProcess
 from ..Mdb.MdbBase import MdbBase
-from ..UtilityAndView.abaqusConstants import (ANALYSIS, Boolean, DEFAULT, DOMAIN, ON, OFF, ODB,
-                                              OPT_DATASAVE_SPECIFY_CYCLE, PERCENTAGE, SINGLE)
+from ..UtilityAndView.abaqusConstants import (
+    ANALYSIS,
+    Boolean,
+    DEFAULT,
+    DOMAIN,
+    ON,
+    OFF,
+    ODB,
+    OPT_DATASAVE_SPECIFY_CYCLE,
+    PERCENTAGE,
+    SINGLE,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -17,7 +27,7 @@ class JobMdb(MdbBase):
     """The Mdb object is the high-level Abaqus model database. A model database stores models
     and analysis controls.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb
@@ -43,7 +53,9 @@ class JobMdb(MdbBase):
         numCpus: int = 1,
         memory: int = 90,
         memoryUnits: Literal[C.PERCENTAGE, C.MEGA_BYTES, C.GIGA_BYTES] = PERCENTAGE,
-        explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = SINGLE,
+        explicitPrecision: Literal[
+            C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK
+        ] = SINGLE,
         nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE,
         parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN,
         numDomains: int = 1,
@@ -51,12 +63,12 @@ class JobMdb(MdbBase):
         multiprocessingMode: Literal[C.DEFAULT, C.THREADS, C.MPI] = DEFAULT,
         licenseType: Literal[C.DEFAULT, C.TOKEN, C.CREDIT] = DEFAULT,
         *args,
-        **kwargs
+        **kwargs,
     ) -> ModelJob:
         """This method creates an analysis job using a model on a model database (MDB) for the
         model definition.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.Job
@@ -183,7 +195,7 @@ class JobMdb(MdbBase):
             multiprocessingMode,
             licenseType,
             *args,
-            **kwargs
+            **kwargs,
         )
         return job
 
@@ -202,7 +214,9 @@ class JobMdb(MdbBase):
         numCpus: int = 1,
         memory: int = 90,
         memoryUnits: Literal[C.PERCENTAGE, C.MEGA_BYTES, C.GIGA_BYTES] = PERCENTAGE,
-        explicitPrecision: Literal[C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK] = SINGLE,
+        explicitPrecision: Literal[
+            C.SINGLE, C.FORCE_SINGLE, C.DOUBLE, C.DOUBLE_CONSTRAINT_ONLY, C.DOUBLE_PLUS_PACK
+        ] = SINGLE,
         nodalOutputPrecision: Literal[C.SINGLE, C.FULL] = SINGLE,
         parallelizationMethodExplicit: Literal[C.LOOP, C.DOMAIN] = DOMAIN,
         numDomains: int = 1,
@@ -215,7 +229,7 @@ class JobMdb(MdbBase):
     ) -> JobFromInputFile:
         """This method creates an analysis job using an input file for the model definition.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.JobFromInputFile
@@ -344,7 +358,7 @@ class JobMdb(MdbBase):
     ) -> OptimizationProcess:
         """This method creates an OptimizationProcess object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.OptimizationProcess

@@ -5,8 +5,7 @@ from typing_extensions import Literal
 
 from .PredefinedField import PredefinedField
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (CONSTANT_THROUGH_THICKNESS, OFF, SymbolicConstant,
-                                              UNIFORM, UNSET, Boolean)
+from ..UtilityAndView.abaqusConstants import CONSTANT_THROUGH_THICKNESS, OFF, SymbolicConstant, UNIFORM, UNSET, Boolean
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -59,8 +58,15 @@ class Field(PredefinedField):
         region: Region,
         outputVariable: str = "",
         fieldVariableNum: Optional[int] = None,
-        distributionType: Literal[C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
-        crossSectionDistribution: Literal[C.GRADIENTS_THROUGH_BEAM_CS, C.POINTS_THROUGH_SECTION, C.GRADIENTS_THROUGH_SHELL_CS, C.CONSTANT_THROUGH_THICKNESS] = CONSTANT_THROUGH_THICKNESS,
+        distributionType: Literal[
+            C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED
+        ] = UNIFORM,
+        crossSectionDistribution: Literal[
+            C.GRADIENTS_THROUGH_BEAM_CS,
+            C.POINTS_THROUGH_SECTION,
+            C.GRADIENTS_THROUGH_SHELL_CS,
+            C.CONSTANT_THROUGH_THICKNESS,
+        ] = CONSTANT_THROUGH_THICKNESS,
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
@@ -102,12 +108,12 @@ class Field(PredefinedField):
         crossSectionDistribution
             A SymbolicConstant specifying how the predefined field is distributed over the
             cross-section of the region. Possible values are
-            
+
             - CONSTANT_THROUGH_THICKNESS
             - GRADIENTS_THROUGH_SHELL_CS
             - GRADIENTS_THROUGH_BEAM_CS
             - POINTS_THROUGH_SECTION
-            
+
             The default value is CONSTANT_THROUGH_THICKNESS.
         field
             A String specifying the name of the AnalyticalField or DiscreteField object associated
@@ -117,8 +123,8 @@ class Field(PredefinedField):
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
             UNSET should be used if the predefined field has no amplitude reference. The default
-            value is UNSET. 
-            
+            value is UNSET.
+
             .. note::
                 **amplitude** should be given only if it is valid for the specified
             step.
@@ -153,7 +159,7 @@ class Field(PredefinedField):
             A Sequence of Doubles specifying the Field values when **distributionType** = UNIFORM or
             FIELD. The value of the **magnitudes** argument is a function of the
             **crossSectionDistribution** argument, as shown in the following list:
-            
+
             - If **crossSectionDistribution** = CONSTANT_THROUGH_THICKNESS, **magnitudes** is a Double
               specifying the Field.
             - If **crossSectionDistribution** = GRADIENTS_THROUGH_SHELL_CS, **magnitudes** is a sequence
@@ -192,8 +198,15 @@ class Field(PredefinedField):
         self,
         outputVariable: str = "",
         fieldVariableNum: Optional[int] = None,
-        distributionType: Literal[C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
-        crossSectionDistribution: Literal[C.GRADIENTS_THROUGH_BEAM_CS, C.POINTS_THROUGH_SECTION, C.GRADIENTS_THROUGH_SHELL_CS, C.CONSTANT_THROUGH_THICKNESS] = CONSTANT_THROUGH_THICKNESS,
+        distributionType: Literal[
+            C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED
+        ] = UNIFORM,
+        crossSectionDistribution: Literal[
+            C.GRADIENTS_THROUGH_BEAM_CS,
+            C.POINTS_THROUGH_SECTION,
+            C.GRADIENTS_THROUGH_SHELL_CS,
+            C.CONSTANT_THROUGH_THICKNESS,
+        ] = CONSTANT_THROUGH_THICKNESS,
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",

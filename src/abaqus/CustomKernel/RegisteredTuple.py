@@ -9,7 +9,7 @@ class RegisteredTuple(CommandRegister, tuple):
     of notifying the GUI when the contents of any of the tuple's members change.
     The RegisteredTuple object is derived from the CommandRegister object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import customKernel
@@ -19,7 +19,7 @@ class RegisteredTuple(CommandRegister, tuple):
     def __init__(self, tuple: tuple):
         """This method creates a RegisteredTuple object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 customKernel.RegisteredTuple

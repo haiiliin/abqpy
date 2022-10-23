@@ -7,7 +7,7 @@ from ....Ratios import Ratios
 class MoistureSwelling:
     r"""The MoistureSwelling object defines moisture-driven swelling.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -32,7 +32,7 @@ class MoistureSwelling:
     def __init__(self, table: tuple):
         """This method creates a MoistureSwelling object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].MoistureSwelling

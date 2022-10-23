@@ -9,7 +9,7 @@ class ActuatorSensorProp(ContactProperty):
     referred to by an ActuatorSensor object.
     The ActuatorSensorProp object is derived from the InteractionProperty object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -32,12 +32,10 @@ class ActuatorSensorProp(ContactProperty):
     integerProperties: tuple = ()
 
     @abaqus_method_doc
-    def __init__(
-        self, name: str, realProperties: tuple = (), integerProperties: tuple = ()
-    ):
+    def __init__(self, name: str, realProperties: tuple = (), integerProperties: tuple = ()):
         """This method creates an ActuatorSensorProp object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ActuatorSensorProp

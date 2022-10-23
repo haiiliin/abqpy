@@ -13,7 +13,7 @@ class GasketSection(Section):
     """The GasketSection object defines the properties of a gasket section.
     The GasketSection object is derived from the Section object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -68,7 +68,7 @@ class GasketSection(Section):
     ):
         """This method creates a GasketSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].GasketSection

@@ -8,7 +8,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 class OdbDataStep:
     """The OdbDataStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

@@ -5,8 +5,7 @@ from typing_extensions import Literal
 
 from .Load import Load
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (AXIS_1, Boolean, GENERAL, NORMAL, OFF, ON,
-                                              SymbolicConstant, UNIFORM, UNSET)
+from ..UtilityAndView.abaqusConstants import AXIS_1, Boolean, GENERAL, NORMAL, OFF, ON, SymbolicConstant, UNIFORM, UNSET
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -15,7 +14,7 @@ class ShellEdgeLoad(Load):
     """The ShellEdgeLoad object defines shell edge loads on a region.
     The ShellEdgeLoad object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -58,7 +57,7 @@ class ShellEdgeLoad(Load):
     ):
         """This method creates a ShellEdgeLoad object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ShellEdgeLoad

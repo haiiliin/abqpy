@@ -13,7 +13,7 @@ class AcousticImpedance(Interaction):
     boundaries for acoustic and coupled acoustic-structural analyses.
     The AcousticImpedance object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -81,7 +81,9 @@ class AcousticImpedance(Interaction):
         surface: Region,
         definition: Literal[C.TABULAR, C.NONREFLECTING] = TABULAR,
         interactionProperty: str = "",
-        nonreflectingType: Literal[C.PLANE, C.ELLIPTICAL, C.IMPROVED, C.SPHERICAL, C.PROLATE, C.CIRCULAR, C.NONREFLECTING] = PLANE,
+        nonreflectingType: Literal[
+            C.PLANE, C.ELLIPTICAL, C.IMPROVED, C.SPHERICAL, C.PROLATE, C.CIRCULAR, C.NONREFLECTING
+        ] = PLANE,
         radius: float = 1,
         semimajorAxis: float = 1,
         eccentricity: float = 0,
@@ -90,7 +92,7 @@ class AcousticImpedance(Interaction):
     ):
         """This method creates an AcousticImpedance object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AcousticImpedance
@@ -148,7 +150,9 @@ class AcousticImpedance(Interaction):
         self,
         definition: Literal[C.TABULAR, C.NONREFLECTING] = TABULAR,
         interactionProperty: str = "",
-        nonreflectingType: Literal[C.PLANE, C.ELLIPTICAL, C.IMPROVED, C.SPHERICAL, C.PROLATE, C.CIRCULAR, C.NONREFLECTING] = PLANE,
+        nonreflectingType: Literal[
+            C.PLANE, C.ELLIPTICAL, C.IMPROVED, C.SPHERICAL, C.PROLATE, C.CIRCULAR, C.NONREFLECTING
+        ] = PLANE,
         radius: float = 1,
         semimajorAxis: float = 1,
         eccentricity: float = 0,

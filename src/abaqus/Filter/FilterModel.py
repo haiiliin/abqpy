@@ -16,7 +16,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class FilterModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -35,7 +35,7 @@ class FilterModel(ModelBase):
     ) -> ButterworthFilter:
         """This method creates a ButterworthFilter object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ButterworthFilter
@@ -96,7 +96,7 @@ class FilterModel(ModelBase):
     ) -> Chebyshev1Filter:
         """This method creates a Chebyshev1Filter object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Chebyshev1Filter
@@ -167,7 +167,7 @@ class FilterModel(ModelBase):
     ) -> Chebyshev2Filter:
         """This method creates a Chebyshev2Filter object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Chebyshev2Filter
@@ -237,7 +237,7 @@ class FilterModel(ModelBase):
     ) -> OperatorFilter:
         """This method creates an OperatorFilter object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].OperatorFilter

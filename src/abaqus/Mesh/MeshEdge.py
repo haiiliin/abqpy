@@ -9,7 +9,7 @@ class MeshEdge:
     MeshEdge object can be accessed via a MeshEdgeArray or a repository on a part or part
     instance.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

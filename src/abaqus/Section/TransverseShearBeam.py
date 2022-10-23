@@ -11,7 +11,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class TransverseShearBeam:
     """The TransverseShearBeam object defines the transverse shear stiffness properties of a beam section.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -50,7 +50,7 @@ class TransverseShearBeam:
     ):
         """This method creates a TransverseShearBeam object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sections[name].TransverseShearBeam

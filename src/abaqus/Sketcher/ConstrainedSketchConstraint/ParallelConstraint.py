@@ -9,13 +9,11 @@ from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
 @abaqus_class_doc
 class ParallelConstraint(ConstrainedSketchConstraint):
     @abaqus_method_doc
-    def __init__(
-        self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry
-    ):
+    def __init__(self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry):
         """This method creates a parallel constraint. This constraint applies to lines and
         constrains them to be parallel.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].ParallelConstraint

@@ -13,8 +13,7 @@ from .FluidExchangeProperty import FluidExchangeProperty
 from .FluidInflatorProperty import FluidInflatorProperty
 from .IncidentWaveProperty import IncidentWaveProperty
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import (ACOUSTIC, BULK_VISCOSITY, Boolean, HYDRAULIC, OFF, ON,
-                                              PLANAR, POLYNOMIAL)
+from ..UtilityAndView.abaqusConstants import ACOUSTIC, BULK_VISCOSITY, Boolean, HYDRAULIC, OFF, ON, PLANAR, POLYNOMIAL
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -30,7 +29,7 @@ class InteractionPropertyModel(ModelBase):
     ) -> AcousticImpedanceProp:
         """This method creates an AcousticImpedanceProp object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AcousticImpedanceProp
@@ -69,7 +68,7 @@ class InteractionPropertyModel(ModelBase):
     ) -> ActuatorSensorProp:
         """This method creates an ActuatorSensorProp object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ActuatorSensorProp
@@ -105,7 +104,7 @@ class InteractionPropertyModel(ModelBase):
     ) -> CavityRadiationProp:
         """This method creates a CavityRadiationProp object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CavityRadiationProp
@@ -137,7 +136,7 @@ class InteractionPropertyModel(ModelBase):
     def ContactProperty(self, name: str) -> ContactProperty:
         """This method creates a ContactProperty object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactProperty
@@ -165,7 +164,7 @@ class InteractionPropertyModel(ModelBase):
     ) -> FilmConditionProp:
         """This method creates a FilmConditionProp object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FilmConditionProp
@@ -180,7 +179,7 @@ class InteractionPropertyModel(ModelBase):
             An Int specifying the number of field variable dependencies. The default value is 0.
         property
             A sequence of sequences of Floats specifying the following:
-            
+
             - The film coefficient, hh.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
@@ -221,7 +220,7 @@ class InteractionPropertyModel(ModelBase):
     ) -> FluidCavityProperty:
         """This method creates a FluidCavityProperty object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FluidCavityProperty
@@ -260,7 +259,7 @@ class InteractionPropertyModel(ModelBase):
             A sequence of sequences of Floats specifying the thermal expansion coefficients. This
             argument is applicable only when **definition** = HYDRAULIC and when **useExpansion** = True.
             Each sequence contains the following data:
-            
+
             - The mean coefficient of thermal expansion.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
@@ -281,7 +280,7 @@ class InteractionPropertyModel(ModelBase):
             A sequence of sequences of Floats specifying the fluid bulk modulus values. This
             argument is applicable only when **definition** = HYDRAULIC and when **useBulkModulus** = True.
             Each sequence contains the following data:
-            
+
             - The fluid bulk modulus.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
@@ -306,18 +305,18 @@ class InteractionPropertyModel(ModelBase):
             of a polynomial expression. This argument is applicable only when
             **definition** = PNEUMATIC, when **useCapacity** = True, and when **capacityType** = POLYNOMIAL. In
             this form, only one sequence is specified and that sequence contains the following data:
-            
+
             - The first molar heat capacity coefficient.
             - The second molar heat capacity coefficient.
             - The third molar heat capacity coefficient.
             - The fourth molar heat capacity coefficient.
             - The fifth molar heat capacity coefficient.
-            
+
             Alternatively, the sequence data may specify the molar heat capacity values at constant
             pressure for an ideal gas species. This argument is applicable only when
             **definition** = PNEUMATIC, when **useCapacity** = True, and when **capacityType** = TABULAR. Each
             sequence contains the following data:
-            
+
             - The molar heat capacity at constant pressure.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
@@ -356,14 +355,16 @@ class InteractionPropertyModel(ModelBase):
         self,
         name: str,
         dataTable: tuple,
-        definition: Literal[C.VOL_FLUX, C.VOL_RATE_LEAK, C.BULK_VISCOSITY, C.MASS_RATE_LEAK, C.MASS_FLUX] = BULK_VISCOSITY,
+        definition: Literal[
+            C.VOL_FLUX, C.VOL_RATE_LEAK, C.BULK_VISCOSITY, C.MASS_RATE_LEAK, C.MASS_FLUX
+        ] = BULK_VISCOSITY,
         pressureDependency: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         fieldDependencies: int = 0,
     ) -> FluidExchangeProperty:
         """This method creates a FluidExchangeProperty object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FluidExchangeProperty
@@ -376,7 +377,7 @@ class InteractionPropertyModel(ModelBase):
             A sequence of sequences of Floats specifying the viscous and hydrodynamic resistance
             coefficients when **definition** = BULK_VISCOSITY. Each sequence contains the following
             data:
-            
+
             - The viscous resistance coefficient.
             - The hydrodynamic resistance coefficient.
             - The average absolute pressure, if the data depend on pressure.
@@ -384,16 +385,16 @@ class InteractionPropertyModel(ModelBase):
             - The value of the first field variable, if the data depend on field variables.
             - The value of the second field variable.
             - Etc.
-            
+
             Alternatively, the sequence data may specify the mass flow rate. This is applicable only
             when **definition** = MASS_FLUX. In this form, only one sequence is specified and that
             sequence contains the following data:
-            
+
             - The mass flow rate per unit area.
-            
+
             Alternatively, the sequence data may specify the mass rate leakage. This is applicable
             only when **definition** = MASS_RATE_LEAK. Each sequence contains the following data:
-              
+
             - The absolute value of the mass flow rate per unit area. (The first tabular value
               entered must always be zero.)
             - The absolute value of the pressure difference. (The first tabular value entered must
@@ -403,16 +404,16 @@ class InteractionPropertyModel(ModelBase):
             - The value of the first field variable, if the data depend on field variables.
             - The value of the second field variable.
             - Etc.
-            
+
             Alternatively, the sequence data may specify the volume flow rate. This is applicable
             only when **definition** = VOL_FLUX. In this form, only one sequence is specified and that
             sequence contains the following data:
-            
+
             - The volumetric flow rate per unit area.
-              
+
             Alternatively, the sequence data may specify the volume rate leakage. This is applicable
             only when **definition** = VOL_RATE_LEAK. Each sequence contains the following data:
-            
+
             - The absolute value of the volumetric flow rate per unit area. (The first tabular value
               entered must always be zero.)
             - The absolute value of the pressure difference. (The first tabular value entered must
@@ -422,7 +423,7 @@ class InteractionPropertyModel(ModelBase):
             - The value of the first field variable, if the data depend on field variables.
             - The value of the second field variable.
             - Etc.
-            
+
         definition
             A SymbolicConstant specifying the type of fluid exchange property to be defined.
             Possible values are BULK_VISCOSITY, MASS_FLUX, MASS_RATE_LEAK, VOL_FLUX, and
@@ -571,7 +572,7 @@ class InteractionPropertyModel(ModelBase):
     ) -> IncidentWaveProperty:
         """This method creates an IncidentWaveProperty object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].IncidentWaveProperty

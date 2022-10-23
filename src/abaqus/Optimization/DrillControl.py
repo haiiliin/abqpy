@@ -14,7 +14,7 @@ class DrillControl(GeometricRestriction):
     """The DrillControl object defines a drill control geometric restriction.
     The DrillControl object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -78,7 +78,7 @@ class DrillControl(GeometricRestriction):
         csys: Optional[int] = None,
         drawAngle: float = 0,
         masterPoint: Optional[str] = None,
-        masterPointDetermination:Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+        masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -87,7 +87,7 @@ class DrillControl(GeometricRestriction):
     ):
         """This method creates a DrillControl object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].DrillControl

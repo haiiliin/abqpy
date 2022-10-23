@@ -9,7 +9,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class Monitor:
     """The Monitor object defines a degree of freedom to monitor.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -25,7 +25,7 @@ class Monitor:
 
     #: A SymbolicConstant specifying the degree of freedom to be monitored at the node.
     #: Possible values are:
-    #: 
+    #:
     #: - U1
     #: - U2
     #: - U3
@@ -39,7 +39,7 @@ class Monitor:
     #: - NT30
     #: - NN11
     #: - NN30
-    #: 
+    #:
     #: The NT identifiers are not available for mass diffusion. The NN identifiers are
     #: available only for mass diffusion.
     dof: SymbolicConstant
@@ -49,11 +49,31 @@ class Monitor:
     frequency: int
 
     @abaqus_method_doc
-    def __init__(self, node: str, dof: Literal[C.NN11, C.NT, C.U3, C.NT30, C.UR2, C.ELECTRICAL_POTENTIAL, C.NT11, C.U1, C.UR3, C.WARP, C.FLUID_PRESSURE, C.UR1, C.NN30, C.U2], frequency: int):
+    def __init__(
+        self,
+        node: str,
+        dof: Literal[
+            C.NN11,
+            C.NT,
+            C.U3,
+            C.NT30,
+            C.UR2,
+            C.ELECTRICAL_POTENTIAL,
+            C.NT11,
+            C.U1,
+            C.UR3,
+            C.WARP,
+            C.FLUID_PRESSURE,
+            C.UR1,
+            C.NN30,
+            C.U2,
+        ],
+        frequency: int,
+    ):
         """This method creates a request for a degree of freedom to be monitored in a general or
         modal procedure.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].steps[name].Monitor
@@ -79,7 +99,7 @@ class Monitor:
             - NT30
             - NN11
             - NN30
-            
+
             The NT identifiers are not available for mass diffusion. The NN identifiers are
             available only for mass diffusion.
         frequency

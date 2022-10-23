@@ -9,7 +9,7 @@ class RegisteredList(CommandRegister, list):
     of notifying the GUI when the contents of the list change.
     The RegisteredList object is derived from the CommandRegister object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import customKernel
@@ -19,7 +19,7 @@ class RegisteredList(CommandRegister, list):
     def __init__(self):
         """This method creates a RegisteredList object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 customKernel.RegisteredList

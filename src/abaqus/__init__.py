@@ -24,4 +24,4 @@ NO = abaqusConstants.NO
 
 abqpy.abaqus.run(cae=True)
 
-__main__ = sys.modules['__main__']
+__main__ = sys.modules["__main__"]

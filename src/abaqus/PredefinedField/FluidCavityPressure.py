@@ -10,7 +10,7 @@ class FluidCavityPressure(PredefinedField):
     base class *region* argument can not be specifed with this object.
     The FluidCavityPressure object is derived from the PredefinedField object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -37,7 +37,7 @@ class FluidCavityPressure(PredefinedField):
     def __init__(self, name: str, fluidCavity: str, fluidPressure: float):
         """This method creates a FluidCavityPressure object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FluidCavityPressure

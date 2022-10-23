@@ -1,11 +1,12 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class SectionPoint:
     """The SectionPoint object describes the location of a section point within a section
-    category. 
+    category.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -41,7 +42,7 @@ class SectionPoint:
     def __init__(self, number: int, description: str):
         """This method creates a SectionPoint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].sectionCategories[name].SectionPoint

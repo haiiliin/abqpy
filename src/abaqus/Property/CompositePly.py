@@ -12,7 +12,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class CompositePly:
     """The CompositePly object defines the material layers in a composite layup.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -111,7 +111,7 @@ class CompositePly:
     ):
         """This method creates a CompositePly object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[name].CompositePly

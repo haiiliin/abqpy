@@ -10,7 +10,7 @@ class Growth(GeometricRestriction):
     """The Growth object defines a growth geometric restriction.
     The Growth object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -48,7 +48,7 @@ class Growth(GeometricRestriction):
     ):
         """This method creates a Growth object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].Growth

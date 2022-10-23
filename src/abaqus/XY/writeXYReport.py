@@ -14,7 +14,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, ON
 def writeXYReport(fileName: str, xyData: Sequence[XYData], appendMode: Boolean = ON):
     """This method writes an XYData object to a user-defined ASCII file.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             session.writeXYReport

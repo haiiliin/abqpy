@@ -12,7 +12,7 @@ class BoundaryConditionState:
     constructor or methods. The members of the BoundaryConditionState object are common to
     all objects derived from the BoundaryConditionState object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load

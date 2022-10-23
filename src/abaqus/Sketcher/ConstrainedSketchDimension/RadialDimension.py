@@ -25,7 +25,7 @@ class RadialDimension(ConstrainedSketchDimension):
         arc. A radial dimension indicates the radius of an arc or circle or the major or minor
         radius of an ellipse.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].RadialDimension

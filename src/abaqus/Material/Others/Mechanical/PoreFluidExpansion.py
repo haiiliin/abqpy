@@ -8,7 +8,7 @@ class PoreFluidExpansion:
     r"""The PoreFluidExpansion object specifies the thermal expansion coefficient for a
     hydraulic fluid.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -39,7 +39,7 @@ class PoreFluidExpansion:
     ):
         """This method creates a PoreFluidExpansion object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].PoreFluidExpansion

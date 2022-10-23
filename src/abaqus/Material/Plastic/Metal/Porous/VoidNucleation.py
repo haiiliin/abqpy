@@ -7,7 +7,7 @@ from .....UtilityAndView.abaqusConstants import Boolean, OFF
 class VoidNucleation:
     r"""The VoidNucleation object defines the nucleation of voids in a porous material.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -31,30 +31,28 @@ class VoidNucleation:
     """
 
     @abaqus_method_doc
-    def __init__(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ):
+    def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a VoidNucleation object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].porousMetalPlasticity.VoidNucleation
                     session.odbs[name].materials[name].porousMetalPlasticity.VoidNucleation
-            
+
         Parameters
         ----------
         table
-            A sequence of sequences of Floats specifying the items described below. 
+            A sequence of sequences of Floats specifying the items described below.
         temperatureDependency
-            A Boolean specifying whether the data depend on temperature. The default value is OFF. 
+            A Boolean specifying whether the data depend on temperature. The default value is OFF.
         dependencies
-            An Int specifying the number of field variable dependencies. The default value is 0. 
+            An Int specifying the number of field variable dependencies. The default value is 0.
 
         Returns
         -------
         VoidNucleation
-            A :py:class:`~abaqus.Material.Plastic.Metal.Porous.VoidNucleation.VoidNucleation` object. 
+            A :py:class:`~abaqus.Material.Plastic.Metal.Porous.VoidNucleation.VoidNucleation` object.
 
         Raises
         ------

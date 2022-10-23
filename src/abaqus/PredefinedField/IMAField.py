@@ -8,7 +8,7 @@ class IMAField:
     """A IMAField is an object used to define material instance name volume fractions for the
     MaterialAssignment predefined field.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load

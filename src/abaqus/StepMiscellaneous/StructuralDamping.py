@@ -7,7 +7,7 @@ from .StructuralDampingComponentArray import StructuralDampingComponentArray
 class StructuralDamping:
     """A :py:class:`~abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping` object contains structural damping parameters.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step

@@ -8,7 +8,7 @@ class CycledPlastic:
     """The CycledPlastic object specifies cycled yield stress data for the ORNL constitutive
     model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -31,7 +31,7 @@ class CycledPlastic:
     def __init__(self, table: tuple, temperatureDependency: Boolean = OFF):
         """This method creates a CycledPlastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Plastic.CycledPlastic

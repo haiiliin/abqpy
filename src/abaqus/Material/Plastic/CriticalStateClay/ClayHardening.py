@@ -7,7 +7,7 @@ from ....UtilityAndView.abaqusConstants import Boolean, OFF
 class ClayHardening:
     """The ClayHardening object specifies hardening for the clay plasticity model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -30,12 +30,10 @@ class ClayHardening:
     """
 
     @abaqus_method_doc
-    def __init__(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ):
+    def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a ClayHardening object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].clayPlasticity.ClayHardening

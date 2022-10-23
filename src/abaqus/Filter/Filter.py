@@ -11,7 +11,7 @@ class Filter:
     has no explicit constructor. The methods and members of the Filter object are common to
     all objects derived from the Filter.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import filter

@@ -3,8 +3,7 @@ from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (ADVANCING_FRONT, Boolean, HEX, OFF, ON,
-                                              QUAD_DOMINATED, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import ADVANCING_FRONT, Boolean, HEX, OFF, ON, QUAD_DOMINATED, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -16,7 +15,7 @@ class MesherOptions:
     MesherOptions commands are intended for use at the beginning of scripts and in the
     abaqus_v6.env file only; they should not be used during an Abaqus/CAE session.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.defaultMesherOptions

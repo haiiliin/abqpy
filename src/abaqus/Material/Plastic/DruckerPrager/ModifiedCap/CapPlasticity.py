@@ -10,7 +10,7 @@ from .....UtilityAndView.abaqusConstants import Boolean, OFF
 class CapPlasticity:
     r"""The CapPlasticity object specifies the modified Drucker-Prager/Cap plasticity model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -20,14 +20,14 @@ class CapPlasticity:
 
         The table data for this object are:
 
-        - Material cohesion, :math:`d`, in the :math:`p-t` plane (Abaqus/Standard) or in the :math:`p-q` 
+        - Material cohesion, :math:`d`, in the :math:`p-t` plane (Abaqus/Standard) or in the :math:`p-q`
           plane (Abaqus/Explicit).
-        - Material angle of friction, :math:`\beta`, in the :math:`p-t` plane (Abaqus/Standard) or 
+        - Material angle of friction, :math:`\beta`, in the :math:`p-t` plane (Abaqus/Standard) or
           in the :math:`p-q` plane (Abaqus/Explicit). Give the value in degrees.
-        - Cap eccentricity parameter, :math:`R`. Its value must be greater than zero (typically 
+        - Cap eccentricity parameter, :math:`R`. Its value must be greater than zero (typically
           :math:`0.0<R<1.0)`.
         - Initial cap yield surface position, :math:`\left.\varepsilon_{v o l}^{p l}\right|_{0}`
-        - Transition surface radius parameter, :math:`\alpha`. The default value is :math:`0.0` (i.e., 
+        - Transition surface radius parameter, :math:`\alpha`. The default value is :math:`0.0` (i.e.,
           no transition surface). Abaqus/Standard assumes :math:`K=1.0`.
         - Temperature, if the data depend on temperature.
         - Value of the first field variable, if the data depend on field variables.
@@ -49,12 +49,10 @@ class CapPlasticity:
     capHardening: CapHardening = CapHardening(((),))
 
     @abaqus_method_doc
-    def __init__(
-        self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0
-    ):
+    def __init__(self, table: tuple, temperatureDependency: Boolean = OFF, dependencies: int = 0):
         """This method creates a CapPlasticity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].CapPlasticity

@@ -7,9 +7,7 @@ from .GeometryShellSection import GeometryShellSection
 from .RebarLayers import RebarLayers
 from .TransverseShearShell import TransverseShearShell
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (BENDING, Boolean, DEFAULT,
-                                              GRADIENT, NO_IDEALIZATION, OFF, SIMPSON,
-                                              UNIFORM)
+from ..UtilityAndView.abaqusConstants import BENDING, Boolean, DEFAULT, GRADIENT, NO_IDEALIZATION, OFF, SIMPSON, UNIFORM
 
 
 @abaqus_class_doc
@@ -17,7 +15,7 @@ class HomogeneousShellSection(GeometryShellSection):
     """The HomogeneousShellSection object defines the properties of a shell section.
     The HomogeneousShellSection object is derived from the GeometryShellSection object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -94,9 +92,7 @@ class HomogeneousShellSection(GeometryShellSection):
     #: calculations. This member is only applicable when **preIntegrate** is set to ON. Possible
     #: values are NO_IDEALIZATION, SMEAR_ALL_LAYERS, MEMBRANE, and BENDING. The default value
     #: is NO_IDEALIZATION.
-    idealization: Literal[
-        C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, C.BENDING
-    ] = NO_IDEALIZATION
+    idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, C.BENDING] = NO_IDEALIZATION
 
     #: None or an Int specifying the number of temperature points to be input. This argument is
     #: valid only when **temperature** = POINTWISE. The default value is None.
@@ -146,9 +142,7 @@ class HomogeneousShellSection(GeometryShellSection):
         poisson: float = 0,
         integrationRule: Literal[C.SIMPSON, C.GAUSS] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
-        idealization: Literal[
-            C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING
-        ] = NO_IDEALIZATION,
+        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING] = NO_IDEALIZATION,
         nTemp: Optional[int] = None,
         thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
@@ -158,79 +152,79 @@ class HomogeneousShellSection(GeometryShellSection):
     ) -> None:
         """This method creates a HomogeneousShellSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].compositeLayups[i].HomogeneousShellSection
                 mdb.models[name].HomogeneousShellSection
                 session.odbs[name].HomogeneousShellSection
-            
+
         Parameters
         ----------
         name
-            A String specifying the repository key. 
+            A String specifying the repository key.
         material
-            A String specifying the name of the section material. 
+            A String specifying the name of the section material.
         thickness
-            A Float specifying the thickness of the section. The **thickness** argument applies only 
-            when **thicknessType** = UNIFORM. The default value is 0.0. 
+            A Float specifying the thickness of the section. The **thickness** argument applies only
+            when **thicknessType** = UNIFORM. The default value is 0.0.
         numIntPts
-            An Int specifying the number of integration points to be used through the section. 
-            Possible values are **numIntPts** >> 0. The default value is 5.To use the default settings 
-            of the analysis products, set **numIntPts** to 5 if **integrationRule** = SIMPSON or set 
-            **numIntPts** to 7 if **integrationRule** = GAUSS. 
+            An Int specifying the number of integration points to be used through the section.
+            Possible values are **numIntPts** >> 0. The default value is 5.To use the default settings
+            of the analysis products, set **numIntPts** to 5 if **integrationRule** = SIMPSON or set
+            **numIntPts** to 7 if **integrationRule** = GAUSS.
         thicknessType
-            A SymbolicConstant specifying the distribution used for defining the thickness of the 
-            elements. Possible values are UNIFORM, ANALYTICAL_FIELD, DISCRETE_FIELD, 
-            NODAL_ANALYTICAL_FIELD, and NODAL_DISCRETE_FIELD. The default value is UNIFORM. 
+            A SymbolicConstant specifying the distribution used for defining the thickness of the
+            elements. Possible values are UNIFORM, ANALYTICAL_FIELD, DISCRETE_FIELD,
+            NODAL_ANALYTICAL_FIELD, and NODAL_DISCRETE_FIELD. The default value is UNIFORM.
         preIntegrate
-            A Boolean specifying whether the shell section properties are specified by the user 
-            prior to the analysis (ON) or integrated during the analysis (OFF). The default value is 
-            OFF. 
+            A Boolean specifying whether the shell section properties are specified by the user
+            prior to the analysis (ON) or integrated during the analysis (OFF). The default value is
+            OFF.
         poissonDefinition
-            A SymbolicConstant specifying whether to use the default value for the Poisson's ratio. 
-            Possible values are:DEFAULT, specifying that the default value for the Poisson's ratio 
-            is 0.5 in an Abaqus/Standard analysis and is obtained from the material definition in an 
-            Abaqus/Explicit analysis.VALUE, specifying that the Poisson's ratio used in the analysis 
-            is the value provided in **poisson**.The default value is DEFAULT. 
+            A SymbolicConstant specifying whether to use the default value for the Poisson's ratio.
+            Possible values are:DEFAULT, specifying that the default value for the Poisson's ratio
+            is 0.5 in an Abaqus/Standard analysis and is obtained from the material definition in an
+            Abaqus/Explicit analysis.VALUE, specifying that the Poisson's ratio used in the analysis
+            is the value provided in **poisson**.The default value is DEFAULT.
         poisson
-            A Float specifying the Poisson's ratio. Possible values are −1.0 ≤ **poisson** ≤ 0.5. 
-            This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5. 
+            A Float specifying the Poisson's ratio. Possible values are −1.0 ≤ **poisson** ≤ 0.5.
+            This argument is valid only when **poissonDefinition** = VALUE. The default value is 0.5.
         integrationRule
-            A SymbolicConstant specifying the shell section integration rule. Possible values are 
-            SIMPSON and GAUSS. The default value is SIMPSON. 
+            A SymbolicConstant specifying the shell section integration rule. Possible values are
+            SIMPSON and GAUSS. The default value is SIMPSON.
         temperature
-            A SymbolicConstant specifying the mode used for temperature and field variable input 
-            across the section thickness. Possible values are GRADIENT and POINTWISE. The default 
-            value is GRADIENT. 
+            A SymbolicConstant specifying the mode used for temperature and field variable input
+            across the section thickness. Possible values are GRADIENT and POINTWISE. The default
+            value is GRADIENT.
         idealization
-            A SymbolicConstant specifying the mechanical idealization used for the section 
-            calculations. This member is only applicable when **preIntegrate** is set to ON. Possible 
-            values are NO_IDEALIZATION, SMEAR_ALL_LAYERS, MEMBRANE, and BENDING. The default value 
-            is NO_IDEALIZATION. 
+            A SymbolicConstant specifying the mechanical idealization used for the section
+            calculations. This member is only applicable when **preIntegrate** is set to ON. Possible
+            values are NO_IDEALIZATION, SMEAR_ALL_LAYERS, MEMBRANE, and BENDING. The default value
+            is NO_IDEALIZATION.
         nTemp
-            None or an Int specifying the number of temperature points to be input. This argument is 
-            valid only when **temperature** = POINTWISE. The default value is None. 
+            None or an Int specifying the number of temperature points to be input. This argument is
+            valid only when **temperature** = POINTWISE. The default value is None.
         thicknessModulus
-            None or a Float specifying the effective thickness modulus. This argument is relevant 
-            only for continuum shells and must be used in conjunction with the argument **poisson**. 
-            The default value is None. 
+            None or a Float specifying the effective thickness modulus. This argument is relevant
+            only for continuum shells and must be used in conjunction with the argument **poisson**.
+            The default value is None.
         useDensity
-            A Boolean specifying whether or not to use the value of **density**. The default value is 
-            OFF. 
+            A Boolean specifying whether or not to use the value of **density**. The default value is
+            OFF.
         density
-            A Float specifying the value of density to apply to this section. The default value is 
-            0.0. 
+            A Float specifying the value of density to apply to this section. The default value is
+            0.0.
         thicknessField
-            A String specifying the name of the AnalyticalField or DiscreteField object used to 
-            define the thickness of the shell elements. The **thicknessField** argument applies only 
-            when **thicknessType** = ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD. The default 
-            value is an empty string. 
+            A String specifying the name of the AnalyticalField or DiscreteField object used to
+            define the thickness of the shell elements. The **thicknessField** argument applies only
+            when **thicknessType** = ANALYTICAL_FIELD or **thicknessType** = DISCRETE_FIELD. The default
+            value is an empty string.
         nodalThicknessField
-            A String specifying the name of the AnalyticalField or DiscreteField object used to 
-            define the thickness of the shell elements at each node. The **nodalThicknessField** 
-            argument applies only when **thicknessType** = NODAL_ANALYTICAL_FIELD or 
-            **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string. 
+            A String specifying the name of the AnalyticalField or DiscreteField object used to
+            define the thickness of the shell elements at each node. The **nodalThicknessField**
+            argument applies only when **thicknessType** = NODAL_ANALYTICAL_FIELD or
+            **thicknessType** = NODAL_DISCRETE_FIELD. The default value is an empty string.
 
         Returns
         -------
@@ -256,9 +250,7 @@ class HomogeneousShellSection(GeometryShellSection):
         poisson: float = 0,
         integrationRule: Literal[C.SIMPSON, C.GAUSS] = SIMPSON,
         temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
-        idealization: Literal[
-            C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING
-        ] = NO_IDEALIZATION,
+        idealization: Literal[C.NO_IDEALIZATION, C.SMEAR_ALL_LAYERS, C.MEMBRANE, BENDING] = NO_IDEALIZATION,
         nTemp: Optional[int] = None,
         thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,

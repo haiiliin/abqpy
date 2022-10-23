@@ -9,13 +9,11 @@ from ..ConstrainedSketchGeometry.ConstrainedSketchGeometry import (
 @abaqus_class_doc
 class TangentConstraint(ConstrainedSketchConstraint):
     @abaqus_method_doc
-    def __init__(
-        self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry
-    ):
+    def __init__(self, entity1: ConstrainedSketchGeometry, entity2: ConstrainedSketchGeometry):
         """This method creates a tangent constraint. This constraint applies to different types of
         ConstrainedSketchGeometry objects and constrains them to remain tangential.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].TangentConstraint

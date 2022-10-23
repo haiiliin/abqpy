@@ -13,7 +13,7 @@ class FieldBulkData:
     """The FieldBulkData object represents the entire field data for a class of elements or
     nodes. All elements in a class correspond to the same element type and material.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -22,7 +22,7 @@ class FieldBulkData:
 
     #: A SymbolicConstant specifying the position of the output in the element. Possible values
     #: are:
-    #: 
+    #:
     #: - NODAL, specifying the values calculated at the nodes.
     #: - INTEGRATION_POINT, specifying the values calculated at the integration points.
     #: - ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at
@@ -38,9 +38,7 @@ class FieldBulkData:
     type: Optional[SymbolicConstant] = None
 
     #: An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object specifying the part to which the labels belong.
-    instance: OdbInstance = OdbInstance(
-        "instance", OdbPart("part", THREE_D, DEFORMABLE_BODY)
-    )
+    instance: OdbInstance = OdbInstance("instance", OdbPart("part", THREE_D, DEFORMABLE_BODY))
 
     #: A :py:class:`~abaqus.Odb.SectionPoint.SectionPoint` object specifying the section point number of the current block of data.
     sectionPoint: Optional[SectionPoint] = None

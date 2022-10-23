@@ -9,7 +9,7 @@ class NodeQuery:
     object has no constructor or methods. Abaqus creates the **nodeQuery** member when you
     import the visualization module.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

@@ -1,11 +1,12 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class DamageStabilization:
     """The DamageStabilization object specifies the viscosity coefficients for the damage model
     for fiber-reinforced materials.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -54,7 +55,7 @@ class DamageStabilization:
     ):
         """This method creates a DamageStabilization object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].ductileDamageInitiation.DamageStabilization
@@ -85,22 +86,22 @@ class DamageStabilization:
                 session.odbs[name].materials[name].quadeDamageInitiation.DamageStabilization
                 session.odbs[name].materials[name].quadsDamageInitiation.DamageStabilization
                 session.odbs[name].materials[name].shearDamageInitiation.DamageStabilization
-            
+
         Parameters
         ----------
         fiberTensileCoeff
-            A Float specifying the viscosity coefficient for the fiber tensile failure mode. 
+            A Float specifying the viscosity coefficient for the fiber tensile failure mode.
         fiberCompressiveCoeff
-            A Float specifying the viscosity coefficient for the fiber compressive failure mode. 
+            A Float specifying the viscosity coefficient for the fiber compressive failure mode.
         matrixTensileCoeff
-            A Float specifying the viscosity coefficient for the matrix tensile failure mode. 
+            A Float specifying the viscosity coefficient for the matrix tensile failure mode.
         matrixCompressiveCoeff
-            A Float specifying the viscosity coefficient for the matrix compressive failure mode. 
+            A Float specifying the viscosity coefficient for the matrix compressive failure mode.
 
         Returns
         -------
         DamageStabilization
-            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilization.DamageStabilization` object. 
+            A :py:class:`~abaqus.Material.ProgressiveDamageFailure.DamageStabilization.DamageStabilization` object.
 
         Raises
         ------

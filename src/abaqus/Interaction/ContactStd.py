@@ -25,7 +25,7 @@ class ContactStd(Interaction):
     contact in an Abaqus/Standard analysis.
     The ContactStd object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -55,9 +55,7 @@ class ContactStd(Interaction):
 
     #: A :py:class:`~abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment` object specifying the surface thickness assignments in the
     #: contact domain.
-    surfaceThicknessAssignments: SurfaceThicknessAssignment = (
-        SurfaceThicknessAssignment()
-    )
+    surfaceThicknessAssignments: SurfaceThicknessAssignment = SurfaceThicknessAssignment()
 
     #: A :py:class:`~abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment` object specifying the surface offset fraction assignments in
     #: the contact domain.
@@ -85,9 +83,7 @@ class ContactStd(Interaction):
 
     #: A SlidingTransitionAssignments object specifying the sliding transition assignments in
     #: the contact domain.
-    slidingTransitionAssignments: SlidingTransitionAssignment = (
-        SlidingTransitionAssignment()
-    )
+    slidingTransitionAssignments: SlidingTransitionAssignment = SlidingTransitionAssignment()
 
     #: A Boolean specifying whether to assign the edge-to-edge formulation. The default value
     #: is False.
@@ -104,24 +100,24 @@ class ContactStd(Interaction):
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-        includedPairs: Optional[RegionPairs] = None, 
-        excludedPairs: Optional[RegionPairs] = None, 
-        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
-        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
-        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
+        includedPairs: Optional[RegionPairs] = None,
+        excludedPairs: Optional[RegionPairs] = None,
+        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None,
+        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None,
+        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         surfaceBeamSmoothingAssignments: SurfaceBeamSmoothingAssignment = SurfaceBeamSmoothingAssignment(),
         surfaceVertexCriteriaAssignments: SurfaceVertexCriteriaAssignment = SurfaceVertexCriteriaAssignment(),
         slidingFormulationAssignments: Optional[Sequence[SlidingFormulationAssignment]] = None,
-        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None, 
-        initializationAssignments: Optional[InitializationAssignment] = None, 
-        stabilizationAssignments: Optional[StabilizationAssignment] = None, 
-        smoothingAssignments: Optional[SmoothingAssignment] = None, 
-        slidingTransitionAssignments: Optional[SlidingTransitionAssignment] = None, 
+        masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
+        initializationAssignments: Optional[InitializationAssignment] = None,
+        stabilizationAssignments: Optional[StabilizationAssignment] = None,
+        smoothingAssignments: Optional[SmoothingAssignment] = None,
+        slidingTransitionAssignments: Optional[SlidingTransitionAssignment] = None,
     ):
         """This method creates a ContactStd object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactStd
@@ -225,7 +221,7 @@ class ContactStd(Interaction):
     ):
         """This method creates a ContactStd object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactStd

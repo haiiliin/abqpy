@@ -12,7 +12,7 @@ class GapFlow:
     """The GapFlow object specifies tangential flow constitutive parameters for pore pressure
     cohesive elements.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -23,14 +23,14 @@ class GapFlow:
         The table data for this object are:
 
         - If **type** = NEWTONIAN the table data specify the following:
-        
+
             - Pore viscosity.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
         - If **type** = POWER_LAW the table data specify the following:
-        
+
             - Consistency.
             - Exponent.
             - Temperature, if the data depend on temperature.
@@ -38,7 +38,7 @@ class GapFlow:
             - Value of the second field variable.
             - Etc.
         - If **type** = BINGHAM_PLASTIC the table data specify the following:
-        
+
             - Consistency.
             - Yield stress.
             - Temperature, if the data depend on temperature.
@@ -46,7 +46,7 @@ class GapFlow:
             - Value of the second field variable.
             - Etc.
         - If **type** = HERSCHEL-BULKLEY the table data specify the following:
-        
+
             - Consistency.
             - Exponent.
             - Yield stress.
@@ -71,7 +71,7 @@ class GapFlow:
     ):
         """This method creates a GapFlow object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].GapFlow

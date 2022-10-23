@@ -19,7 +19,7 @@ class View:
     The Layer View objects store a transformation matrix used to position the contents of
     the Layer within a viewport.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.viewports[name].layers[name].view
@@ -119,7 +119,7 @@ class View:
         Note:All dimensions and coordinates are specified in the model coordinate system.
         Note:This method cannot be used to create a View for a Layer object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.View
@@ -284,11 +284,11 @@ class View:
             A Float specifying the degrees to rotate about the*Z*-axis. The default value is 0.0.
         mode
             A SymbolicConstant specifying the rotation mode. Possible values are:
-            
+
             * TOTAL : Set the view to (0, 0, 1), then rotate about the screen's axes (an absolute rotation).
             * SCREEN : Rotate incrementally about the screen's axes (a relative rotation).
             * MODEL : Rotate incrementally about the model's axes (a relative rotation).
-            
+
             The default value is MODEL.
         asMovie
             A Boolean specifying the alternate mode of the rotate view manipulation should be used.
@@ -328,9 +328,7 @@ class View:
         ...
 
     @abaqus_method_doc
-    def setProjection(
-        self, projection: Literal[C.PARALLEL, C.PERSPECTIVE], drawImmediately: Boolean = False
-    ):
+    def setProjection(self, projection: Literal[C.PARALLEL, C.PERSPECTIVE], drawImmediately: Boolean = False):
         """This method modifies the appearance of three-dimensional models in the viewport.
         Choosing PERSPECTIVE makes a model appear more realistic by decreasing the apparent size
         of features that are farther away from the viewing point.
@@ -391,8 +389,8 @@ class View:
         movieMode: Boolean = OFF,
     ) -> None:
         """This method modifies the View object.
-        
-        .. note:: 
+
+        .. note::
             This method is not available for a :py:class:`~abaqus.Canvas.Layer.Layer` View.
 
         The optional arguments to `setValues` are the same as the arguments to the
@@ -406,7 +404,7 @@ class View:
             A View object from which the view settings are to be copied. If other
             arguments are also supplied to `setValues`, they will override the values
             in the View object specified by `view`.
-        
+
         drawImmediately
             A Boolean specifying the viewport should refresh immediately after the
             command is processed. This argument is typically used only when writing a
@@ -414,7 +412,7 @@ class View:
             completes. The default value is False.
 
         fieldOfViewAngle
-            A Float specifying the viewing angle of the camera. Possible values are 
+            A Float specifying the viewing angle of the camera. Possible values are
             0.0 < filedOfViewAngle < 180.0.
 
         farPlaneMode
@@ -424,7 +422,7 @@ class View:
         Returns
         -------
         None.
-        
+
         Raises
         ------
         RangeError
@@ -475,10 +473,10 @@ class View:
             enlarges the image.
         mode
             A SymbolicConstant specifying the way the zoom is executed. Possible values are:
-            
+
             * ABSOLUTE : Execute fitView, then zoom.
             * RELATIVE : Zoom from the current camera settings.
-            
+
             The default value is ABSOLUTE.
         asMovie
             A Boolean specifying the alternate mode of the zoom view manipulation should be used.
