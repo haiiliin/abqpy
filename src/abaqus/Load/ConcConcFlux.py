@@ -1,10 +1,12 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -41,7 +43,7 @@ class ConcConcFlux(Load):
         createStepName: str,
         region: Region,
         magnitude: float,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
     ):
@@ -85,7 +87,7 @@ class ConcConcFlux(Load):
     @abaqus_method_doc
     def setValues(
         self,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
     ):

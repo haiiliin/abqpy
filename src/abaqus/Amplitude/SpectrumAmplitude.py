@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Amplitude import Amplitude
 from ..UtilityAndView.abaqusConstants import (ABSOLUTE_VALUE, ACCELERATION, Boolean,
                                               EVENT_ACCELERATION, OFF, STEP, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -77,15 +79,15 @@ class SpectrumAmplitude(Amplitude):
     def __init__(
         self,
         name: str,
-        method: SymbolicConstant,
+        method: Literal[C.DEFINE, C.CALCULATE],
         data: tuple,
-        specificationUnits: SymbolicConstant = ACCELERATION,
-        eventUnits: SymbolicConstant = EVENT_ACCELERATION,
-        solution: SymbolicConstant = ABSOLUTE_VALUE,
+        specificationUnits: Literal[C.ACCELERATION, C.VELOCITY, C.GRAVITY, C.DISPLACEMENT] = ACCELERATION,
+        eventUnits: Literal[C.EVENT_DISPLACEMENT, C.EVENT_ACCELERATION, C.EVENT_GRAVITY, C.EVENT_VELOCITY] = EVENT_ACCELERATION,
+        solution: Literal[C.ABSOLUTE_VALUE, C.RELATIVE_VALUE] = ABSOLUTE_VALUE,
         timeIncrement: float = 0,
         gravity: float = 1,
         criticalDamping: Boolean = OFF,
-        timeSpan: SymbolicConstant = STEP,
+        timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
         amplitude: str = "",
     ):
         """This method creates a SpectrumAmplitude object.
@@ -152,13 +154,13 @@ class SpectrumAmplitude(Amplitude):
     @abaqus_method_doc
     def setValues(
         self,
-        specificationUnits: SymbolicConstant = ACCELERATION,
-        eventUnits: SymbolicConstant = EVENT_ACCELERATION,
-        solution: SymbolicConstant = ABSOLUTE_VALUE,
+        specificationUnits: Literal[C.ACCELERATION, C.VELOCITY, C.GRAVITY, C.DISPLACEMENT] = ACCELERATION,
+        eventUnits: Literal[C.EVENT_DISPLACEMENT, C.EVENT_ACCELERATION, C.EVENT_GRAVITY, C.EVENT_VELOCITY] = EVENT_ACCELERATION,
+        solution: Literal[C.ABSOLUTE_VALUE, C.RELATIVE_VALUE] = ABSOLUTE_VALUE,
         timeIncrement: float = 0,
         gravity: float = 1,
         criticalDamping: Boolean = OFF,
-        timeSpan: SymbolicConstant = STEP,
+        timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
         amplitude: str = "",
     ):
         """This method modifies the SpectrumAmplitude object.

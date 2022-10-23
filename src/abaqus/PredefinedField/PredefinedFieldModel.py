@@ -19,7 +19,7 @@ from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT_THROUGH_THICKNESS, CONSTANT_RATIO,
                                               KINEMATIC_HARDENING, LAST_STEP, MAGNITUDE, OFF,
-                                              STEP_END, SymbolicConstant, UNIFORM, UNSET)
+                                              STEP_END, UNIFORM, UNSET)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -69,8 +69,8 @@ class PredefinedFieldModel(ModelBase):
         name: str,
         instances: PartInstanceArray,
         fileName: str,
-        endStep: SymbolicConstant = LAST_STEP,
-        endIncrement: SymbolicConstant = STEP_END,
+        endStep: Literal[C.LAST_STEP] = LAST_STEP,
+        endIncrement: Literal[C.STEP_END] = STEP_END,
         updateReferenceConfiguration: Boolean = OFF,
     ) -> InitialState:
         """This method creates an InitialState predefined field object.
@@ -125,9 +125,9 @@ class PredefinedFieldModel(ModelBase):
         equivPlasticStrain: tuple = (),
         backStress: tuple = (),
         sectPtNum: tuple = (),
-        definition: SymbolicConstant = KINEMATIC_HARDENING,
+        definition: Literal[C.CRUSHABLE_FOAM, C.KINEMATIC_HARDENING, C.REBAR, C.USER_DEFINED, C.SECTION_PTS] = KINEMATIC_HARDENING,
         rebarLayerNames: tuple = (),
-        distributionType: SymbolicConstant = MAGNITUDE,
+        distributionType: Literal[C.MAGNITUDE, C.ANALYTICAL_FIELD] = MAGNITUDE,
     ) -> KinematicHardening:
         """This method creates a KinematicHardening object.
 
@@ -329,16 +329,16 @@ class PredefinedFieldModel(ModelBase):
         name: str,
         createStepName: str,
         region: Region,
-        distributionType: SymbolicConstant = UNIFORM,
-        crossSectionDistribution: SymbolicConstant = CONSTANT_THROUGH_THICKNESS,
+        distributionType: Literal[C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
+        crossSectionDistribution: Literal[C.GRADIENTS_THROUGH_BEAM_CS, C.POINTS_THROUGH_SECTION, C.GRADIENTS_THROUGH_SHELL_CS, C.CONSTANT_THROUGH_THICKNESS] = CONSTANT_THROUGH_THICKNESS,
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: Optional[SymbolicConstant] = None,
-        beginIncrement: Optional[SymbolicConstant] = None,
-        endStep: Optional[SymbolicConstant] = None,
-        endIncrement: Optional[SymbolicConstant] = None,
-        interpolate: Union[SymbolicConstant, Boolean] = OFF,
+        beginStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
+        beginIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
+        endStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
+        endIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
+        interpolate: Union[Literal[C.MIDSIDE_ONLY], Boolean] = OFF,
         magnitudes: str = "",
         absoluteExteriorTolerance: float = 0,
         exteriorTolerance: float = 0,
@@ -472,7 +472,7 @@ class PredefinedFieldModel(ModelBase):
         axisBegin: tuple,
         axisEnd: tuple,
         field: str = "",
-        distributionType: SymbolicConstant = MAGNITUDE,
+        distributionType: Literal[C.MAGNITUDE, C.FIELD_ANALYTICAL] = MAGNITUDE,
     ) -> Velocity:
         """This method creates a Velocity predefined field object.
 
@@ -646,16 +646,16 @@ class PredefinedFieldModel(ModelBase):
         region: Region,
         outputVariable: str = "",
         fieldVariableNum: Optional[int] = None,
-        distributionType: SymbolicConstant = UNIFORM,
-        crossSectionDistribution: SymbolicConstant = CONSTANT_THROUGH_THICKNESS,
+        distributionType: Literal[C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
+        crossSectionDistribution: Literal[C.GRADIENTS_THROUGH_BEAM_CS, C.POINTS_THROUGH_SECTION, C.GRADIENTS_THROUGH_SHELL_CS, C.CONSTANT_THROUGH_THICKNESS] = CONSTANT_THROUGH_THICKNESS,
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: Optional[SymbolicConstant] = None,
-        beginIncrement: Optional[SymbolicConstant] = None,
-        endStep: Optional[SymbolicConstant] = None,
-        endIncrement: Optional[SymbolicConstant] = None,
-        interpolate: Union[SymbolicConstant, Boolean] = OFF,
+        beginStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
+        beginIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
+        endStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
+        endIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
+        interpolate: Union[Literal[C.MIDSIDE_ONLY], Boolean] = OFF,
         magnitudes: str = "",
     ):
         """This method creates a Field object.

@@ -1,9 +1,11 @@
 from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import (Boolean, FIT_TO_PAGE, INCHES, MEDIUM, ON, PORTRAIT,
                                               SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _OptionsBase
 
 
@@ -62,14 +64,14 @@ class PageSetupOptions(_OptionsBase):
     def setValues(
         self,
         *,
-        imageSize: Union[SymbolicConstant, float] = FIT_TO_PAGE,
-        units: SymbolicConstant = INCHES,
-        quality: SymbolicConstant = MEDIUM,
+        imageSize: Union[Literal[C.FIT_TO_PAGE, C.SIZE_ON_SCREEN], float] = FIT_TO_PAGE,
+        units: Literal[C.MM, C.INCHES] = INCHES,
+        quality: Literal[C.FINE, C.MEDIUM, C.COARSE] = MEDIUM,
         topMargin: float = 0.5,
         bottomMargin: float = 0.5,
         leftMargin: float = 0.5,
         rightMargin: float = 0.5,
-        orientation: SymbolicConstant = PORTRAIT,
+        orientation: Literal[C.LANDSCAPE, C.PORTRAIT] = PORTRAIT,
         logo: Boolean = ON,
         date: Boolean = ON,
     ):

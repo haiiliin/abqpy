@@ -1,10 +1,12 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant, UNIFORM, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -51,7 +53,7 @@ class ConcentratedForce(Load):
         name: str,
         createStepName: str,
         region: Region,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         cf1: Optional[float] = None,
         cf2: Optional[float] = None,
@@ -114,7 +116,7 @@ class ConcentratedForce(Load):
     @abaqus_method_doc
     def setValues(
         self,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         cf1: Optional[float] = None,
         cf2: Optional[float] = None,
@@ -163,9 +165,9 @@ class ConcentratedForce(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        cf1: Union[SymbolicConstant, float] = ...,
-        cf2: Union[SymbolicConstant, float] = ...,
-        cf3: Union[SymbolicConstant, float] = ...,
+        cf1: Union[Literal[C.UNCHANGED], float] = ...,
+        cf2: Union[Literal[C.UNCHANGED], float] = ...,
+        cf3: Union[Literal[C.UNCHANGED], float] = ...,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing ConcentratedForce object in

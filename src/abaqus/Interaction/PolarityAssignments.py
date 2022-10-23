@@ -1,6 +1,7 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -20,7 +21,7 @@ class PolarityAssignments:
     """
 
     @abaqus_method_doc
-    def changeValuesInStep(self, stepName: str, index: int, value: SymbolicConstant):
+    def changeValuesInStep(self, stepName: str, index: int, value: Literal[C.TWO_SIDED, C.SPOS, C.SNEG]):
         """This method allows you to modify polarity assignments already defined on surface pairs
         in a given step.
 
@@ -38,7 +39,7 @@ class PolarityAssignments:
         ...
 
     @abaqus_method_doc
-    def appendInStep(self, stepName: str, assignments: SymbolicConstant):
+    def appendInStep(self, stepName: str, assignments: Literal[C.TWO_SIDED, C.SPOS, C.SNEG, C.GLOBAL]):
         """This method allows you to add polarity assignments to new surface pairs in a given step.
 
         Parameters

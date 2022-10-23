@@ -1,7 +1,9 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Amplitude import Amplitude
 from ..UtilityAndView.abaqusConstants import STEP, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -49,7 +51,7 @@ class DecayAmplitude(Amplitude):
         maximum: float,
         start: float,
         decayTime: float,
-        timeSpan: SymbolicConstant = STEP,
+        timeSpan: Literal[C.STEP, C.TOTAL] = STEP,
     ):
         """This method creates a DecayAmplitude object.
 
@@ -88,7 +90,7 @@ class DecayAmplitude(Amplitude):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(self, timeSpan: SymbolicConstant = STEP):
+    def setValues(self, timeSpan: Literal[C.STEP, C.TOTAL] = STEP):
         """This method modifies the DecayAmplitude object.
 
         Parameters

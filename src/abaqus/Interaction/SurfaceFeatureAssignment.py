@@ -1,8 +1,9 @@
 from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -24,7 +25,7 @@ class SurfaceFeatureAssignment:
 
     @abaqus_method_doc
     def changeValuesInStep(
-        self, stepName: str, index: int, value: Union[SymbolicConstant, float]
+        self, stepName: str, index: int, value: Union[Literal[C.GLOBAL, C.ALL, C.CURRENT, C.ORIGINAL, C.NONE, C.PICKED, C.PERIMETER], float]
     ):
         """This method allows modification of surface feature angle assignments already defined on
         surfaces in a given step.
@@ -57,7 +58,7 @@ class SurfaceFeatureAssignment:
 
     @abaqus_method_doc
     def appendInStep(
-        self, stepName: str, assignments: Union[SymbolicConstant, float]
+        self, stepName: str, assignments: Union[Literal[C.GLOBAL, C.ALL, C.CURRENT, C.ORIGINAL, C.NONE, C.PICKED, C.PERIMETER], float]
     ):
         """This method allows addition of surface feature angle assignments to new surfaces in a
         given step.

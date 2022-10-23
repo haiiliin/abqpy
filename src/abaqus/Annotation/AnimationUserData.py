@@ -1,13 +1,14 @@
 from typing import Union, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Arrow import Arrow
 from .Text import Text
 from ..Odb.UserDataBase import UserDataBase
 from ..UtilityAndView.abaqusConstants import (BOTTOM_LEFT, Boolean, FILLED_ARROW, JUSTIFY_LEFT,
-                                              NONE, OFF, SOLID, SymbolicConstant, TRANSPARENT,
-                                              VERY_THIN)
+                                              NONE, OFF, SOLID, TRANSPARENT, VERY_THIN)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -18,15 +19,15 @@ class AnimationUserData(UserDataBase):
         name: str,
         startPoint: Sequence[float] = (0.0, 0.0),
         endPoint: Sequence[float] = (0.0, 0.0),
-        startAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        endAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        startHeadStyle: SymbolicConstant = NONE,
-        endHeadStyle: SymbolicConstant = FILLED_ARROW,
+        startAnchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
+        endAnchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
+        startHeadStyle: Literal[C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_SQUARE, C.FILLED_ARROW, C.HOLLOW_DIAMOND, C.ARROW, C.NONE, C.FILLED_CIRCLE] = NONE,
+        endHeadStyle: Literal[C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_SQUARE, C.FILLED_ARROW, C.HOLLOW_DIAMOND, C.ARROW, C.NONE, C.FILLED_CIRCLE] = FILLED_ARROW,
         startGap: float = 0.0,
         endGap: float = 0.0,
         color: str = "White",
-        lineStyle: SymbolicConstant = SOLID,
-        lineThickness: SymbolicConstant = VERY_THIN,
+        lineStyle: Literal[C.DASHED, C.SOLID, C.DOT_DASH, C.DOTTED] = SOLID,
+        lineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = VERY_THIN,
     ) -> Arrow:
         """This method creates an Arrow object.
 
@@ -153,15 +154,15 @@ class AnimationUserData(UserDataBase):
         name: str,
         text: str = "",
         offset: Sequence[float] = (),
-        anchor: Union[SymbolicConstant, float] = BOTTOM_LEFT,
-        referencePoint: Union[SymbolicConstant, float] = BOTTOM_LEFT,
+        anchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
+        referencePoint: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
         rotationAngle: float = 0,
         color: str = "White",
         font: str = "-*-verdana-medium-r-normal--120-*",
-        backgroundStyle: SymbolicConstant = TRANSPARENT,
+        backgroundStyle: Literal[C.OTHER, C.MATCH, C.TRANSPARENT] = TRANSPARENT,
         backgroundColor: str = "",
         box: Boolean = OFF,
-        justification: SymbolicConstant = JUSTIFY_LEFT,
+        justification: Literal[C.JUSTIFY_CENTER, C.JUSTIFY_LEFT, C.JUSTIFY_RIGHT] = JUSTIFY_LEFT,
     ) -> Text:
         """This method creates a Text object.
 
@@ -242,7 +243,7 @@ class AnimationUserData(UserDataBase):
         Text
             A :py:class:`~abaqus.Annotation.Text.Text` object.
         """
-        self.annotations[name] = text = Text(
+        self.annotations[name] = tex = Text(
             name,
             text,
             offset,
@@ -256,4 +257,4 @@ class AnimationUserData(UserDataBase):
             box,
             justification,
         )
-        return text
+        return tex
