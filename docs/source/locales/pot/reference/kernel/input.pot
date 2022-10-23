@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2017.3.12.post7\n"
+"Project-Id-Version: abqpy 2017\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 14:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,16 +28,16 @@ msgstr ""
 msgid "Create input files"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:1
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:1
 msgid "The InputFile object is used to store the definitions in an Abaqus input file. InputFile objects can be created using the methods described in this section."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:5
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/Keyword.py:docstring of abaqus.InputFileParser.Keyword.Keyword:5
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:5
+#: ../../../../src/abaqus/InputFileParser/Keyword.py:docstring of abaqus.InputFileParser.Keyword.Keyword:5
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:10
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:10
 msgid "Check `InputFile on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -49,33 +49,33 @@ msgstr ""
 msgid "AbaqusNDarray"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:1
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:1
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/Keyword.py:docstring of abaqus.InputFileParser.Keyword.Keyword:1
+#: ../../../../src/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:1
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:1
+#: ../../../../src/abaqus/InputFileParser/Keyword.py:docstring of abaqus.InputFileParser.Keyword.Keyword:1
 msgid "Bases: :py:class:`object`"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:1
+#: ../../../../src/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:1
 msgid "The AbaqusNDarray object is a sequence object derived from numpy.ndarray and is used to store numeric keyword data from an Abaqus input file. This object is similar to the numpy.ndarray object, but the numeric elements are returned as standard Python objects, not numpy numeric types. The numeric elements can be:"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:7
+#: ../../../../src/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:7
 msgid "All ints."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:8
+#: ../../../../src/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:8
 msgid "All floats."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:9
+#: ../../../../src/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:9
 msgid "First column int, all other columns floats."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:11
+#: ../../../../src/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:11
 msgid "In the last of these cases, the member **colZeroIsInt** will be True; in the other two cases, it will be False."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:15
+#: ../../../../src/abaqus/InputFileParser/AbaqusNDarray.py:docstring of abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:15
 msgid "Check `AbaqusNDarray on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-abaqusndarraypyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -83,8 +83,8 @@ msgstr ""
 msgid "InputFile"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/Keyword.py:docstring of abaqus.InputFileParser.Keyword.Keyword:0
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:0
+#: ../../../../src/abaqus/InputFileParser/Keyword.py:docstring of abaqus.InputFileParser.Keyword.Keyword:0
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -124,7 +124,7 @@ msgstr ""
 msgid "A sequence of Strings for input files included in the specified input file that could not be located."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:0
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile:0
 msgid "Public Methods:"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgstr ""
 msgid ":py:obj:`__init__ <abaqus.InputFileParser.InputFile.InputFile.__init__>`\\ \\(file\\[\\, directory\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:1
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates an InputFile object by reading an Abaqus input file."
 msgstr ""
@@ -141,83 +141,83 @@ msgstr ""
 msgid ":py:obj:`parse <abaqus.InputFileParser.InputFile.InputFile.parse>`\\ \\(\\[organize\\, verbose\\, bulk\\, usePyArray\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:1
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:1
 #: ../../None:4:<autosummary>:1
 msgid "This method parses the input file associated with the InputFile object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:4
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:4
 msgid "This function can be accessed by::"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:9
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:9
 msgid "Check `InputFile.__init__ on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all#simaker-inputfile__init__pyc>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:0
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:0
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:12
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:12
 msgid "A String specifying the path to the input file."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:14
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:14
 msgid "A String specifying the path to the directory containing the input file."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:0
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:0
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:16
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:16
 msgid "An :py:class:`~abaqus.InputFileParser.InputFile.InputFile` object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:0
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:0
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:0
 msgid "Return type"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:17
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.__init__:17
 msgid ":class:`InputFile`"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:4
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:4
 msgid "Check `InputFile.parse on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all#simaker-inputfileparsepyc>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:7
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:7
 msgid "A Boolean specifying whether keywords should be organized into suboptions. The default is False."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:10
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:10
 msgid "A Boolean specifying whether verbose output is to be printed. If **verbose** is True, information about fatal errors is printed. If no fatal errors occur, there is no output. The default is False."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:14
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:14
 msgid "A Boolean specifying whether the input file includes bulk data that should be parsed. The default is True."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:17
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:17
 msgid "A Boolean specifying that parse method can return an AbaqusNDarray object for a keyword data value. In cases where large amounts of numerical data (i.e., large node arrays) are expected, it is recommended that you use the option usePyArray=True. The default is False."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:22
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:22
 msgid "A KeywordSequence object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:23
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:23
 msgid ":class:`KeywordSequence`"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:0
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:0
 msgid "Raises"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:25
+#: ../../../../src/abaqus/InputFileParser/InputFile.py:docstring of abaqus.InputFileParser.InputFile.InputFile.parse:25
 msgid "If you parse an input file more than once, a ValueError is raised for each subsequent     parsing."
 msgstr ""
 
@@ -225,11 +225,11 @@ msgstr ""
 msgid "Keyword"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/Keyword.py:docstring of abaqus.InputFileParser.Keyword.Keyword:1
+#: ../../../../src/abaqus/InputFileParser/Keyword.py:docstring of abaqus.InputFileParser.Keyword.Keyword:1
 msgid "The Keyword object is used to store a keyword definition from an Abaqus input file. Keyword objects are returned via the InputFile.parse() method."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/InputFileParser/Keyword.py:docstring of abaqus.InputFileParser.Keyword.Keyword:10
+#: ../../../../src/abaqus/InputFileParser/Keyword.py:docstring of abaqus.InputFileParser.Keyword.Keyword:10
 msgid "Check `Keyword on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-keywordpyc.htm?contextscope=all>`__."
 msgstr ""
 
