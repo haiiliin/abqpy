@@ -1,7 +1,7 @@
-from typing_extensions import Literal
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .CohesiveBehavior import CohesiveBehavior
 from .ContactDamage import ContactDamage
@@ -15,12 +15,12 @@ from .InteractionProperty import InteractionProperty
 from .NormalBehavior import NormalBehavior
 from .Radiation import Radiation
 from .ThermalConductance import ThermalConductance
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALL_NODES, BK, Boolean, COEFFICIENTS,
                                               DAMPING_COEFFICIENT, DEFAULT, DISPLACEMENT, ENERGY,
                                               FRACTION, FRICTIONLESS, HARD, ISOTROPIC, LINEAR,
                                               MAX_STRESS, OFF, ON, STEP, SymbolicConstant, TABULAR,
                                               UNCOUPLED, VCCT)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

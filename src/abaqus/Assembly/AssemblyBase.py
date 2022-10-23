@@ -1,8 +1,8 @@
-from typing_extensions import Literal
 from typing import Union, overload, Dict, List, Optional, Tuple, Sequence
 
 from abaqus.Datum.DatumCsys import DatumCsys
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AssemblyFeature import AssemblyFeature
 from .AssemblyModel import AssemblyModel
@@ -26,8 +26,8 @@ from ..Region.Set import Set
 from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import ALL_EDGES, Boolean, LOW, OFF, ON
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

@@ -1,7 +1,7 @@
-from typing_extensions import Literal
 from typing import Union, Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AnalysisStep import AnalysisStep
 from ..Adaptivity.AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
@@ -17,10 +17,10 @@ from ..StepOutput.FieldOutputRequestState import FieldOutputRequestState
 from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ANALYSIS_PRODUCT_DEFAULT, AUTOMATIC, Boolean, DEFAULT,
                                               FULL_NEWTON, OFF, PROPAGATED, SOLVER_DEFAULT, STEP,
                                               SymbolicConstant, VALUE)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

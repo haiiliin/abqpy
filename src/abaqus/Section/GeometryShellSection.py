@@ -1,15 +1,15 @@
-from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .LayerPropertiesArray import LayerPropertiesArray
 from .RebarLayers import RebarLayers
 from .ShellSection import ShellSection
 from .TransverseShearShell import TransverseShearShell
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT, DEFAULT, GRADIENT, NO_IDEALIZATION,
                                               OFF, SIMPSON, SymbolicConstant, UNIFORM)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

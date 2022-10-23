@@ -1,7 +1,7 @@
-from typing_extensions import Literal
 from typing import Union, Optional, Sequence, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .InteractionContactControlModel import InteractionContactControlModel
 from .InteractionContactInitializationModel import InteractionContactInitializationModel
@@ -50,13 +50,13 @@ from ..Interaction.SurfaceToSurfaceContactStd import SurfaceToSurfaceContactStd
 from ..Interaction.XFEMCrackGrowth import XFEMCrackGrowth
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALLOW_SUBCYCLING, ALL_NODAL_DIAMETER, AMBIENT,
                                               BLOCKING_ALL, Boolean, COMPUTED, COMPUTED_TOLERANCE,
                                               CONTACT, DEFAULT, GEOMETRY, KINEMATIC, LAGRANGIAN,
                                               MODEL, NONE, OFF, OMIT, ON, PLANE, PRESSURE, RIGHT,
                                               SURFACE_TO_SURFACE, TABULAR, TO_ENVIRONMENT,
                                               UNIFORM, UNSET, USE_GEOMETRY)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

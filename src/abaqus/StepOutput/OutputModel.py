@@ -9,12 +9,11 @@ from .IntegratedOutputSection import IntegratedOutputSection
 from .TimePoint import TimePoint
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
-from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALL, Boolean, DEFAULT,
                                               EVERY_TIME_INCREMENT, EXCLUDE, INDEPENDENT,
                                               INTEGRATION_POINTS, J_INTEGRAL, MODEL, MTS, OFF, ON,
                                               PRESELECT, SPECIFIED, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

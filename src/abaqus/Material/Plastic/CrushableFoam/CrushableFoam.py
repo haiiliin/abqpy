@@ -1,10 +1,10 @@
-from typing_extensions import Literal
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .CrushableFoamHardening import CrushableFoamHardening
 from ..Metal.RateDependent.RateDependent import RateDependent
-from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 from ....UtilityAndView.abaqusConstants import Boolean, OFF, VOLUMETRIC
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

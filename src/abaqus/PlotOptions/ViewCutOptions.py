@@ -1,12 +1,12 @@
-from typing_extensions import Literal
 from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ACTIVE_CUT_RANGE, Boolean, CENTROID,
                                               CURRENT_DISPLAY_GROUP, GLOBAL, NORMAL_TANGENTIAL, OFF,
                                               ON, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _CopyOptionsBase
 
 

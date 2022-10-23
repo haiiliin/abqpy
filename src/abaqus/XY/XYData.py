@@ -7,10 +7,9 @@ from typing_extensions import Literal
 
 from .QuantityType import QuantityType
 from ..PathAndProbe.Path import Path
-from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean,
                                               OFF, ON, REAL, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 class Odb:

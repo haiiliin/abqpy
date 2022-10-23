@@ -1,7 +1,7 @@
-from typing_extensions import Literal
 from typing import overload, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .FieldLocation import FieldLocation
 from .FieldLocationArray import FieldLocationArray
@@ -9,8 +9,8 @@ from .FieldValueArray import FieldValueArray
 from .OdbInstance import OdbInstance
 from .OdbSet import OdbSet
 from .SectionPoint import SectionPoint
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

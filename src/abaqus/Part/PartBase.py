@@ -1,8 +1,8 @@
-from typing_extensions import Literal
 from typing import overload, Dict, List, Optional, Sequence
 
 # prevent circular imports
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AcisFile import AcisFile
 from .PartFeature import PartFeature
@@ -35,9 +35,9 @@ from ..Region.Skin import Skin
 from ..Region.Stringer import Stringer
 from ..Region.Surface import Surface
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALL_EDGES, BOUNDARY_ONLY, Boolean, FALSE, GEOMETRY,
                                               LOW, NONE, OFF, ON, SymbolicConstant, UNDEFORMED)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

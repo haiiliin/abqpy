@@ -1,19 +1,19 @@
-from typing_extensions import Literal
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .BeadTask import BeadTask
 from .ShapeTask import ShapeTask
 from .SizingTask import SizingTask
 from .TopologyTask import TopologyTask
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AVERAGE_EDGE_LENGTH, Boolean, CONSERVATIVE,
                                               CONSTRAINED_LAPLACIAN, DEFAULT, EVERY_CYCLE, FE_SAFE,
                                               GENERAL_OPTIMIZATION, LOW, MEDIUM, MINIMUM, MODEL,
                                               NORMAL, OFF, ON, POSITIONS, STANDARD,
                                               TASK_REGION_LAYERS, VALUE)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

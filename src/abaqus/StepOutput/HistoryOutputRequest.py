@@ -4,12 +4,11 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from ..Region.Region import Region
-from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALL, Boolean, DEFAULT,
                                               EVERY_TIME_INCREMENT, EXCLUDE, J_INTEGRAL,
                                               MODEL, MTS,
                                               OFF, PRESELECT)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

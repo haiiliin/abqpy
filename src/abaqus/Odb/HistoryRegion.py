@@ -7,9 +7,8 @@ from typing_extensions import Literal
 
 from .HistoryOutput import HistoryOutput
 from .HistoryPoint import HistoryPoint
-from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

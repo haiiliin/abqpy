@@ -1,15 +1,15 @@
-from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .DataTableArray import DataTableArray
 from .Field import Field
 from ..Assembly.PartInstance import PartInstance
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, CARTESIAN, INSIDE, MEDIUM, NODES, OFF,
                                               SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

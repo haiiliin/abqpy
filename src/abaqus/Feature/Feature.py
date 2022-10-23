@@ -18,11 +18,10 @@ from ..Datum.DatumPoint import DatumPoint
 from ..Mesh.MeshFace import MeshFace
 from ..Mesh.MeshNode import MeshNode
 from ..Sketcher.ConstrainedSketch import ConstrainedSketch, ConstrainedSketchVertex
-from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AUTO_FIT_PTS, Boolean, IMPRINT, OFF, ON,
                                               PROJECT_BY_PROXIMITY, RIGHT,
                                               SIDE1)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

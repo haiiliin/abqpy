@@ -1,7 +1,7 @@
-from typing_extensions import Literal
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AccelerationBC import AccelerationBC
 from .AccelerationBCState import AccelerationBCState
@@ -50,9 +50,9 @@ from ..Amplitude.Correlation import Correlation
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean, FREE, INFLOW, NOT_APPLICABLE, OFF, ON,
                                               UNIFORM, UNSET, ZERO_PRESSURE)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

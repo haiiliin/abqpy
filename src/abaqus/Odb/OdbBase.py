@@ -1,7 +1,7 @@
-from typing_extensions import Literal
 from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .JobData import JobData
 from .OdbAssembly import OdbAssembly
@@ -16,8 +16,8 @@ from ..CustomKernel.RepositorySupport import RepositorySupport
 from ..Filter.Filter import Filter
 from ..Material.Material import Material
 from ..Section.Section import Section
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import Boolean, CLOSEST, OFF
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

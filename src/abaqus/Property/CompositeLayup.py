@@ -1,7 +1,7 @@
-from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .CompositePly import CompositePly
 from .CompositePlyArray import CompositePlyArray
@@ -12,10 +12,10 @@ from ..Section.CompositeShellSection import CompositeShellSection
 from ..Section.GeometryShellSection import GeometryShellSection
 from ..Section.HomogeneousShellSection import HomogeneousShellSection
 from ..Section.SectionLayerArray import SectionLayerArray
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AXIS_1, Boolean, DEFAULT, GLOBAL, GRADIENT,
                                               NO_IDEALIZATION, OFF, ROTATION_NONE, SHELL, SIMPSON,
                                               SymbolicConstant, UNIFORM)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

@@ -1,13 +1,13 @@
-from typing_extensions import Literal
 from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AreaStyle import AreaStyle
 from .LineStyle import LineStyle
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AUTOMATIC, AUTO_ALIGN, BOTTOM_LEFT, Boolean, OFF,
                                               SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

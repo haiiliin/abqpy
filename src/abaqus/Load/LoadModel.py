@@ -1,7 +1,7 @@
-from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .BodyCharge import BodyCharge
 from .BodyConcentrationFlux import BodyConcentrationFlux
@@ -41,10 +41,10 @@ from .SurfaceTraction import SurfaceTraction
 from ..Datum.DatumAxis import DatumAxis
 from ..Model.ModelBase import ModelBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (APPLY_FORCE, AXIS_1, Boolean, GENERAL, GLOBAL,
                                               INTERNAL, NORMAL, OFF, ON, SHEAR, UNIFORM,
                                               UNSET)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

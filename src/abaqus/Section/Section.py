@@ -1,7 +1,7 @@
-from typing_extensions import Literal
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .TransverseShearBeam import TransverseShearBeam
 from .TransverseShearShell import TransverseShearShell

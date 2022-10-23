@@ -1,13 +1,13 @@
-from typing_extensions import Literal
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..PlotOptions.DGSymbolOptions import DGSymbolOptions
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (ALL_PRINCIPAL_COMPONENTS, Boolean, MODEL_SIZE,
                                               NOT_SET, OFF, ON, RESULTANT, SCIENTIFIC, SPECTRUM,
                                               SymbolicConstant, VERY_THIN, WIRE)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc

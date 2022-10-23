@@ -1,7 +1,7 @@
-from typing_extensions import Literal
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .CompositeLayup import CompositeLayup
 from .MaterialOrientation import MaterialOrientation
@@ -13,10 +13,10 @@ from ..Part.PartBase import PartBase
 from ..Region.Region import Region
 from ..Region.Set import Set
 from ..Region.Surface import Surface
-from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (AXIS_1, AXIS_3, Boolean, FROM_SECTION, GLOBAL,
                                               NORMAL_VECTOR, OFF, PRIMARY_VECTOR, SHELL,
                                               SINGLE_VALUE, STACK_3)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
