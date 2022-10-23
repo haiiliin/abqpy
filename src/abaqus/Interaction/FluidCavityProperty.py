@@ -1,9 +1,11 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .ContactProperty import ContactProperty
 from ..UtilityAndView.abaqusConstants import Boolean, HYDRAULIC, OFF, POLYNOMIAL, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -145,7 +147,7 @@ class FluidCavityProperty(ContactProperty):
     def __init__(
         self,
         name: str,
-        definition: SymbolicConstant = HYDRAULIC,
+        definition: Literal[C.PNEUMATIC, C.HYDRAULIC] = HYDRAULIC,
         fluidDensity: Optional[float] = None,
         molecularWeight: Optional[float] = None,
         useExpansion: Boolean = OFF,
@@ -158,7 +160,7 @@ class FluidCavityProperty(ContactProperty):
         bulkModulusDependencies: int = 0,
         bulkModulusTable: tuple = (),
         useCapacity: Boolean = OFF,
-        capacityType: SymbolicConstant = POLYNOMIAL,
+        capacityType: Literal[C.POLYNOMIAL, C.TABULAR] = POLYNOMIAL,
         capacityTempDep: Boolean = OFF,
         capacityDependencies: int = 0,
         capacityTable: tuple = (),
@@ -278,7 +280,7 @@ class FluidCavityProperty(ContactProperty):
     @abaqus_method_doc
     def setValues(
         self,
-        definition: SymbolicConstant = HYDRAULIC,
+        definition: Literal[C.PNEUMATIC, C.HYDRAULIC] = HYDRAULIC,
         fluidDensity: Optional[float] = None,
         molecularWeight: Optional[float] = None,
         useExpansion: Boolean = OFF,
@@ -291,7 +293,7 @@ class FluidCavityProperty(ContactProperty):
         bulkModulusDependencies: int = 0,
         bulkModulusTable: tuple = (),
         useCapacity: Boolean = OFF,
-        capacityType: SymbolicConstant = POLYNOMIAL,
+        capacityType: Literal[C.POLYNOMIAL, C.TABULAR] = POLYNOMIAL,
         capacityTempDep: Boolean = OFF,
         capacityDependencies: int = 0,
         capacityTable: tuple = (),

@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .FailStrain import FailStrain
 from .FailStress import FailStress
-from ....UtilityAndView.abaqusConstants import Boolean, ISOTROPIC, LONG_TERM, OFF, SymbolicConstant
+from ....UtilityAndView.abaqusConstants import Boolean, ISOTROPIC, LONG_TERM, OFF
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -136,12 +138,12 @@ class Elastic:
     def __init__(
         self,
         table: tuple,
-        type: SymbolicConstant = ISOTROPIC,
+        type: Literal[C.ENGINEERING_CONSTANTS, C.TRACTION, C.LAMINA, C.SHEAR, C.ANISOTROPIC, C.ORTHOTROPIC, C.SHORT_FIBER, C.BILAMINA, C.ISOTROPIC, C.COUPLED_TRACTION] = ISOTROPIC,
         noCompression: Boolean = OFF,
         noTension: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        moduli: SymbolicConstant = LONG_TERM,
+        moduli: Literal[C.INSTANTANEOUS, C.LONG_TERM] = LONG_TERM,
     ):
         """This method creates an Elastic object.
 

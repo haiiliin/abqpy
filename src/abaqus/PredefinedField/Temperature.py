@@ -1,11 +1,13 @@
 from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .PredefinedField import PredefinedField
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (CONSTANT_THROUGH_THICKNESS, OFF, SymbolicConstant,
                                               UNIFORM, UNSET, Boolean)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -51,16 +53,16 @@ class Temperature(PredefinedField):
         name: str,
         createStepName: str,
         region: Region,
-        distributionType: SymbolicConstant = UNIFORM,
-        crossSectionDistribution: SymbolicConstant = CONSTANT_THROUGH_THICKNESS,
+        distributionType: Literal[C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
+        crossSectionDistribution: Literal[C.GRADIENTS_THROUGH_BEAM_CS, C.POINTS_THROUGH_SECTION, C.GRADIENTS_THROUGH_SHELL_CS, C.CONSTANT_THROUGH_THICKNESS] = CONSTANT_THROUGH_THICKNESS,
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: Optional[SymbolicConstant] = None,
-        beginIncrement: Optional[SymbolicConstant] = None,
-        endStep: Optional[SymbolicConstant] = None,
-        endIncrement: Optional[SymbolicConstant] = None,
-        interpolate: Union[SymbolicConstant, Boolean] = OFF,
+        beginStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
+        beginIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
+        endStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
+        endIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
+        interpolate: Union[Literal[C.MIDSIDE_ONLY], Boolean] = OFF,
         magnitudes: str = "",
         absoluteExteriorTolerance: float = 0,
         exteriorTolerance: float = 0,
@@ -184,16 +186,16 @@ class Temperature(PredefinedField):
     @abaqus_method_doc
     def setValues(
         self,
-        distributionType: SymbolicConstant = UNIFORM,
-        crossSectionDistribution: SymbolicConstant = CONSTANT_THROUGH_THICKNESS,
+        distributionType: Literal[C.FIELD, C.FROM_FILE, C.DISCRETE_FIELD, C.FROM_FILE_AND_USER_DEFINED, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
+        crossSectionDistribution: Literal[C.GRADIENTS_THROUGH_BEAM_CS, C.POINTS_THROUGH_SECTION, C.GRADIENTS_THROUGH_SHELL_CS, C.CONSTANT_THROUGH_THICKNESS] = CONSTANT_THROUGH_THICKNESS,
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: Optional[SymbolicConstant] = None,
-        beginIncrement: Optional[SymbolicConstant] = None,
-        endStep: Optional[SymbolicConstant] = None,
-        endIncrement: Optional[SymbolicConstant] = None,
-        interpolate: Union[SymbolicConstant, Boolean] = OFF,
+        beginStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
+        beginIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
+        endStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
+        endIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
+        interpolate: Union[Literal[C.MIDSIDE_ONLY], Boolean] = OFF,
         magnitudes: str = "",
         absoluteExteriorTolerance: float = 0,
         exteriorTolerance: float = 0,
@@ -287,11 +289,11 @@ class Temperature(PredefinedField):
         field: str = "",
         amplitude: str = UNSET,
         fileName: str = "",
-        beginStep: Optional[SymbolicConstant] = None,
-        beginIncrement: Optional[SymbolicConstant] = None,
-        endStep: Optional[SymbolicConstant] = None,
-        endIncrement: Optional[SymbolicConstant] = None,
-        interpolate: Union[SymbolicConstant, Boolean] = OFF,
+        beginStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
+        beginIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
+        endStep: Optional[Literal[C.FROM_FILE, C.LAST_STEP, C.FROM_FILE_AND_USER_DEFINED, C.FIRST_STEP]] = None,
+        endIncrement: Optional[Literal[C.FROM_FILE, C.FROM_FILE_AND_USER_DEFINED, C.STEP_END, C.STEP_START]] = None,
+        interpolate: Union[Literal[C.MIDSIDE_ONLY], Boolean] = OFF,
         magnitudes: str = "",
         absoluteExteriorTolerance: float = 0,
         exteriorTolerance: float = 0,

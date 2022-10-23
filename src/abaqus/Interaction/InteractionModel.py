@@ -1,6 +1,7 @@
 from typing import Union, Optional, Tuple
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .InteractionContactControlModel import InteractionContactControlModel
 from .InteractionContactInitializationModel import InteractionContactInitializationModel
@@ -47,9 +48,16 @@ from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import (ALLOW_SUBCYCLING, ALL_NODAL_DIAMETER, AMBIENT,
                                               BLOCKING_ALL, Boolean, COMPUTED, COMPUTED_TOLERANCE,
                                               CONTACT, DEFAULT, GEOMETRY, KINEMATIC, LAGRANGIAN,
+<<<<<<< HEAD
                                               MODEL, OFF, OMIT, ON, PLANE, PRESSURE, RIGHT,
                                               SURFACE_TO_SURFACE, SymbolicConstant, TABULAR,
                                               TO_ENVIRONMENT, UNIFORM, UNSET, USE_GEOMETRY)
+=======
+                                              MODEL, NONE, OFF, OMIT, ON, PLANE, PRESSURE, RIGHT,
+                                              SURFACE_TO_SURFACE, TABULAR, TO_ENVIRONMENT,
+                                              UNIFORM, UNSET, USE_GEOMETRY)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
 
 
 @abaqus_class_doc
@@ -72,8 +80,8 @@ class InteractionModel(
         self,
         name: str = "",
         createStepName: str = "",
-        searchDomain: SymbolicConstant = MODEL,
-        defaultType: SymbolicConstant = CONTACT,
+        searchDomain: Literal[C.MODEL] = MODEL,
+        defaultType: Literal[C.CONTACT, C.CONTACT_EXPLICIT, C.TIE, C.CONTACT_STANDARD] = CONTACT,
         interactionProperty: str = "",
         separationTolerance: Optional[float] = None,
         extendByAngle: float = 20,
@@ -91,9 +99,9 @@ class InteractionModel(
         includeMeshMembrane: Boolean = OFF,
         includeOverclosed: Boolean = ON,
         includeNonOverlapping: Boolean = OFF,
-        meshedGeometrySearchTechnique: SymbolicConstant = USE_GEOMETRY,
+        meshedGeometrySearchTechnique: Literal[C.USE_MESH, C.USE_GEOMETRY] = USE_GEOMETRY,
         useShellThickness: Boolean = ON,
-        surfaceSmoothing: Optional[SymbolicConstant] = None,
+        surfaceSmoothing: Optional[Literal[C.AUTOMATIC, C.NONE]] = None,
     ):
         """This method uses contact detection to create SurfaceToSurfaceContactStd,
         SurfaceToSurfaceContactExp, and Tie objects.
@@ -206,9 +214,9 @@ class InteractionModel(
         name: str,
         createStepName: str,
         surface: Region,
-        definition: SymbolicConstant = TABULAR,
+        definition: Literal[C.TABULAR, C.NONREFLECTING] = TABULAR,
         interactionProperty: str = "",
-        nonreflectingType: SymbolicConstant = PLANE,
+        nonreflectingType: Literal[C.PLANE, C.ELLIPTICAL, C.IMPROVED, C.SPHERICAL, C.PROLATE, C.CIRCULAR, C.NONREFLECTING] = PLANE,
         radius: float = 1,
         semimajorAxis: float = 1,
         eccentricity: float = 0,
@@ -357,7 +365,7 @@ class InteractionModel(
         surfaces: RegionArray,
         surfaceEmissivities: tuple = (),
         ambientTemp: Optional[float] = None,
-        blocking: SymbolicConstant = BLOCKING_ALL,
+        blocking: Literal[C.NO_BLOCKING, C.BLOCKING_ALL, C.PARTIAL_BLOCKING] = BLOCKING_ALL,
         blockingSurfaces: Optional[RegionArray] = None,
         rangeOfView: Optional[float] = None,
         surfaceReflection: Boolean = ON,
@@ -607,9 +615,9 @@ class InteractionModel(
         name: str,
         createStepName: str,
         region: Region,
-        definition: SymbolicConstant,
+        definition: Literal[C.EMBEDDED_COEFF, C.FIELD, C.USER_SUB, C.PROPERTY_REF],
         nodalArea: float = 1,
-        explicitRegionType: SymbolicConstant = LAGRANGIAN,
+        explicitRegionType: Literal[C.LAGRANGIAN, C.SLIDING, C.EULERIAN] = LAGRANGIAN,
         interactionProperty: str = "",
         field: str = "",
         sinkTemperature: float = 0,
@@ -617,7 +625,7 @@ class InteractionModel(
         filmCoeff: float = 0,
         filmCoeffAmplitude: str = "",
         sinkFieldName: str = "",
-        sinkDistributionType: SymbolicConstant = UNIFORM,
+        sinkDistributionType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
     ) -> ConcentratedFilmCondition:
         """This method creates a ConcentratedFilmCondition object.
 
@@ -717,9 +725,9 @@ class InteractionModel(
         ambientTemperatureAmp: str,
         emissivity: float,
         nodalArea: float = 1,
-        explicitRegionType: SymbolicConstant = LAGRANGIAN,
+        explicitRegionType: Literal[C.LAGRANGIAN, C.SLIDING, C.EULERIAN] = LAGRANGIAN,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
     ) -> ConcentratedRadiationToAmbient:
         """This method creates a ConcentratedRadiationToAmbient object.
 
@@ -974,13 +982,13 @@ class InteractionModel(
         repetitiveSectors: int,
         axisPoint1: Region,
         axisPoint2: Region,
-        extractedNodalDiameter: SymbolicConstant = ALL_NODAL_DIAMETER,
+        extractedNodalDiameter: Literal[C.ALL_NODAL_DIAMETER, C.SPECIFIED_NODAL_DIAMETER] = ALL_NODAL_DIAMETER,
         lowestNodalDiameter: int = 0,
         highestNodalDiameter: int = 0,
         excitationNodalDiameter: int = 0,
         adjustTie: Boolean = ON,
         positionTolerance: float = 0,
-        positionToleranceMethod: SymbolicConstant = COMPUTED_TOLERANCE,
+        positionToleranceMethod: Literal[C.SPECIFY_TOLERANCE, C.COMPUTED_TOLERANCE] = COMPUTED_TOLERANCE,
     ) -> CyclicSymmetry:
         """This method creates a CyclicSymmetry object.
 
@@ -1102,7 +1110,7 @@ class InteractionModel(
         name: str,
         createStepName: str,
         surface: Region,
-        definition: SymbolicConstant,
+        definition: Literal[C.EMBEDDED_COEFF, C.FIELD, C.USER_SUB, C.PROPERTY_REF],
         interactionProperty: str = "",
         sinkTemperature: float = 0,
         sinkAmplitude: str = "",
@@ -1110,7 +1118,7 @@ class InteractionModel(
         filmCoeffAmplitude: str = "",
         field: str = "",
         sinkFieldName: str = "",
-        sinkDistributionType: SymbolicConstant = UNIFORM,
+        sinkDistributionType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
     ) -> FilmCondition:
         """This method creates a FilmCondition object.
 
@@ -1259,7 +1267,7 @@ class InteractionModel(
         createStepName: str,
         firstCavity: str,
         interactionProperty: str,
-        definition: SymbolicConstant = TO_ENVIRONMENT,
+        definition: Literal[C.BETWEEN_CAVITIES, C.TO_ENVIRONMENT] = TO_ENVIRONMENT,
         secondCavity: str = "",
         exchangeArea: float = 1,
     ) -> FluidExchange:
@@ -1366,7 +1374,7 @@ class InteractionModel(
         standoffPoint: Region,
         surface: Region,
         interactionProperty: str,
-        definition: SymbolicConstant = PRESSURE,
+        definition: Literal[C.PRESSURE, C.UNDEX, C.CONWEP, C.ACCELERATION] = PRESSURE,
         amplitude: str = "",
         imaginaryAmplitude: str = "",
         surfaceNormal: tuple = (),
@@ -1461,7 +1469,7 @@ class InteractionModel(
         name: str,
         createStepName: str,
         isRestart: Boolean = OFF,
-        regionType: SymbolicConstant = GEOMETRY,
+        regionType: Literal[C.SKINS, C.GEOMETRY, C.ELEMENTS, C.STRINGERS] = GEOMETRY,
         region: Optional[Region] = None,
         activeInStep: Boolean = OFF,
         includeStrain: Boolean = OFF,
@@ -1590,8 +1598,8 @@ class InteractionModel(
         surface: Region,
         emissivity: float,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
-        radiationType: SymbolicConstant = AMBIENT,
+        distributionType: Literal[C.AMBIENT, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
+        radiationType: Literal[C.AMBIENT, C.CAVITY] = AMBIENT,
         ambientTemperature: float = 0,
         ambientTemperatureAmp: str = "",
     ) -> RadiationToAmbient:
@@ -1661,7 +1669,7 @@ class InteractionModel(
         createStepName: str,
         surface: Region,
         interactionProperty: str,
-        mechanicalConstraint: SymbolicConstant = KINEMATIC,
+        mechanicalConstraint: Literal[C.PENALTY, C.KINEMATIC] = KINEMATIC,
         contactControls: str = "",
     ) -> SelfContactExp:
         """This method creates a SelfContactExp object.
@@ -1712,7 +1720,7 @@ class InteractionModel(
         createStepName: str,
         surface: Region,
         interactionProperty: str,
-        enforcement: SymbolicConstant = SURFACE_TO_SURFACE,
+        enforcement: Literal[C.NODE_TO_SURFACE, C.SURFACE_TO_SURFACE] = SURFACE_TO_SURFACE,
         thickness: Boolean = ON,
         smooth: float = 0,
         contactControls: str = "",
@@ -1773,9 +1781,9 @@ class InteractionModel(
         name: str,
         createStepName: str,
         region: Region,
-        incrementation: SymbolicConstant = ALLOW_SUBCYCLING,
+        incrementation: Literal[C.LOCKSTEP, C.ALLOW_SUBCYCLING] = ALLOW_SUBCYCLING,
         stepSize: float = 0,
-        stepSizeDefinition: SymbolicConstant = DEFAULT,
+        stepSizeDefinition: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,
     ) -> StdXplCosimulation:
         """This method creates a StdXplCosimulation object.
 
@@ -1822,19 +1830,25 @@ class InteractionModel(
         self,
         name: str,
         createStepName: str,
+<<<<<<< HEAD
         master: Region,
         slave: Region,
         sliding: SymbolicConstant,
+=======
+        main: Region,
+        secondary: Region,
+        sliding: Literal[C.SMALL, C.FINITE],
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         interactionProperty: str,
-        mechanicalConstraint: SymbolicConstant = KINEMATIC,
-        weightingFactorType: SymbolicConstant = DEFAULT,
+        mechanicalConstraint: Literal[C.PENALTY, C.KINEMATIC] = KINEMATIC,
+        weightingFactorType: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,
         weightingFactor: float = 0,
         contactControls: str = "",
-        initialClearance: Union[SymbolicConstant, float] = OMIT,
+        initialClearance: Union[Literal[C.OMIT, C.COMPUTED], float] = OMIT,
         halfThreadAngle: Optional[str] = None,
         pitch: Optional[str] = None,
-        majorBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
-        meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
+        meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
@@ -1934,35 +1948,47 @@ class InteractionModel(
         createStepName: str,
         master: Region,
         slave: Region,
-        sliding: SymbolicConstant,
+        sliding: Literal[C.SMALL, C.FINITE],
         interactionProperty: str,
+<<<<<<< HEAD
         interferenceType: Optional[SymbolicConstant] = None,
+=======
+        interferenceType: Literal[C.UNIFORM, C.NONE, C.SHRINK_FIT] = NONE,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         overclosure: float = 0,
-        interferenceDirectionType: SymbolicConstant = COMPUTED,
+        interferenceDirectionType: Literal[C.COMPUTED, C.DIRECTION_COSINE] = COMPUTED,
         direction: tuple = (),
         amplitude: str = "",
         smooth: float = 0,
         hcrit: float = 0,
         extensionZone: float = 0,
+<<<<<<< HEAD
         adjustMethod: Optional[SymbolicConstant] = None,
+=======
+        adjustMethod: Literal[C.SET, C.TOLERANCE, C.OVERCLOSED, C.NONE] = NONE,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         adjustTolerance: float = 0,
         adjustSet: Optional[Region] = None,
-        enforcement: SymbolicConstant = SURFACE_TO_SURFACE,
+        enforcement: Literal[C.NODE_TO_SURFACE, C.SURFACE_TO_SURFACE] = SURFACE_TO_SURFACE,
         thickness: Boolean = ON,
         contactControls: str = "",
         tied: Boolean = OFF,
-        initialClearance: Union[SymbolicConstant, float] = OMIT,
+        initialClearance: Union[Literal[C.OMIT, C.COMPUTED], float] = OMIT,
         halfThreadAngle: Optional[str] = None,
         pitch: Optional[str] = None,
-        majorBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
-        meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
+        meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
+<<<<<<< HEAD
         surfaceSmoothing: Optional[SymbolicConstant] = None,
+=======
+        surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         bondingSet: Optional[Region] = None,
-        handedness: SymbolicConstant = RIGHT,
-        normalAdjustment: Optional[SymbolicConstant] = None,
+        handedness: Literal[C.RIGHT, C.LEFT] = RIGHT,
+        normalAdjustment: Optional[Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT]] = None,
     ) -> SurfaceToSurfaceContactStd:
         """This method creates a SurfaceToSurfaceContactStd object.
 

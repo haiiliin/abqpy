@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import Boolean, ON, SOLID, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -46,7 +48,7 @@ class AreaStyle:
 
     @abaqus_method_doc
     def __init__(
-        self, color: str = "", fill: Boolean = ON, style: SymbolicConstant = SOLID
+        self, color: str = "", fill: Boolean = ON, style: Literal[C.SOLID] = SOLID
     ):
         """This method creates an AreaStyle.
 
@@ -81,7 +83,7 @@ class AreaStyle:
 
     @abaqus_method_doc
     def setValues(
-        self, color: str = "", fill: Boolean = ON, style: SymbolicConstant = SOLID
+        self, color: str = "", fill: Boolean = ON, style: Literal[C.SOLID] = SOLID
     ):
         """This method modifies the AreaStyle object.
 

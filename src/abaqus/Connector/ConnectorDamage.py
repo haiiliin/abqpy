@@ -1,12 +1,14 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .ConnectorBehaviorOption import ConnectorBehaviorOption
 from .ConnectorOptions import ConnectorOptions
 from .ConnectorPotentialArray import ConnectorPotentialArray
 from ..UtilityAndView.abaqusConstants import (Boolean, FORCE, LINEAR, MAXIMUM, MOTION_TYPE, OFF, ON,
                                               SUM, SymbolicConstant, UNCOUPLED)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -217,20 +219,20 @@ class ConnectorDamage(ConnectorBehaviorOption):
     @abaqus_method_doc
     def __init__(
         self,
-        coupling: SymbolicConstant = UNCOUPLED,
-        criterion: SymbolicConstant = FORCE,
+        coupling: Literal[C.COUPLED, C.UNCOUPLED] = UNCOUPLED,
+        criterion: Literal[C.PLASTIC_MOTION, C.FORCE, C.MOTION] = FORCE,
         initiationTemperature: Boolean = OFF,
-        initiationPotentialOperator: SymbolicConstant = SUM,
+        initiationPotentialOperator: Literal[C.SUM, C.MOTION, C.COUPLED, C.FORCE, C.MAXIMUM] = SUM,
         initiationPotentialExponent: float = 2,
         initiationDependencies: int = 0,
         evolution: Boolean = ON,
-        evolutionType: SymbolicConstant = MOTION_TYPE,
-        softening: SymbolicConstant = LINEAR,
+        evolutionType: Literal[C.ENERGY_TYPE, C.MOTION_TYPE] = MOTION_TYPE,
+        softening: Literal[C.EXPONENTIAL, C.TABULAR, C.MOTION_TYPE, C.LINEAR] = LINEAR,
         useAffected: Boolean = OFF,
-        degradation: SymbolicConstant = MAXIMUM,
+        degradation: Literal[C.MULTIPLICATIVE, C.MAXIMUM] = MAXIMUM,
         evolutionTemperature: Boolean = OFF,
         evolutionDependencies: int = 0,
-        evolutionPotentialOperator: SymbolicConstant = SUM,
+        evolutionPotentialOperator: Literal[C.SUM, C.MOTION, C.MOTION_TYPE, C.COUPLED, C.FORCE, C.MAXIMUM] = SUM,
         evolutionPotentialExponent: float = 2,
         initiationPotentials: Optional[ConnectorPotentialArray] = None,
         evolutionPotentials: Optional[ConnectorPotentialArray] = None,

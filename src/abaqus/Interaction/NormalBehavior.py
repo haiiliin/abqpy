@@ -1,8 +1,10 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, HARD, LINEAR, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -106,18 +108,18 @@ class NormalBehavior:
     @abaqus_method_doc
     def __init__(
         self,
-        contactStiffness: Union[SymbolicConstant, float] = DEFAULT,
-        pressureOverclosure: SymbolicConstant = HARD,
+        contactStiffness: Union[Literal[C.AUGMENTED_LAGRANGE, C.PENALTY, C.DEFAULT, C.HARD, C.LINEAR], float] = DEFAULT,
+        pressureOverclosure: Literal[C.EXPONENTIAL, C.TABULAR, C.HARD, C.LINEAR, C.SCALE_FACTOR] = HARD,
         allowSeparation: Boolean = ON,
         maxStiffness: Optional[float] = None,
         table: tuple = (),
-        constraintEnforcementMethod: SymbolicConstant = DEFAULT,
+        constraintEnforcementMethod: Literal[C.AUGMENTED_LAGRANGE, C.DEFAULT, C.DIRECT, C.PENALTY] = DEFAULT,
         overclosureFactor: float = 0,
         overclosureMeasure: float = 0,
         contactStiffnessScaleFactor: float = 1,
         initialStiffnessScaleFactor: float = 1,
         clearanceAtZeroContactPressure: float = 0,
-        stiffnessBehavior: SymbolicConstant = LINEAR,
+        stiffnessBehavior: Literal[C.PENALTY, C.NONLINEAR, C.LINEAR] = LINEAR,
         stiffnessRatio: float = 0,
         upperQuadraticFactor: float = 0,
         lowerQuadraticRatio: float = 0,
