@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..Session.NumberFormat import NumberFormat
 from ..UtilityAndView.abaqusConstants import (ASCENDING, Boolean, ENGINEERING, NO_LIMIT, OFF, ON,
-                                              SINGLE_TABLE, SymbolicConstant)
+                                              SINGLE_TABLE)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -31,9 +33,9 @@ class FieldReportOptions:
         printXYData: Boolean = ON,
         printTotal: Boolean = ON,
         printMinMax: Boolean = ON,
-        pageWidth: SymbolicConstant = NO_LIMIT,
-        columnLayout: SymbolicConstant = SINGLE_TABLE,
-        sort: SymbolicConstant = ASCENDING,
+        pageWidth: Literal[C.SPECIFY, C.NO_LIMIT] = NO_LIMIT,
+        columnLayout: Literal[C.SINGLE_TABLE, C.SEPARATE_TABLES] = SINGLE_TABLE,
+        sort: Literal[C.ASCENDING, C.DESCENDING] = ASCENDING,
         printLocalCSYS: Boolean = OFF,
     ):
         """This method modifies the FieldReportOptions object.
@@ -83,7 +85,7 @@ class FieldReportOptions:
     def NumberFormat(
         self,
         blankPad: Boolean = ON,
-        format: SymbolicConstant = ENGINEERING,
+        format: Literal[C.AUTOMATIC, C.ENGINEERING, C.SCIENTIFIC] = ENGINEERING,
         numDigits: int = 6,
         precision: int = 0,
     ) -> NumberFormat:

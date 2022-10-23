@@ -1,11 +1,13 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (AXIS_1, Boolean, OFF, ON, SHEAR, SymbolicConstant,
                                               UNIFORM, UNSET)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -83,17 +85,17 @@ class SurfaceTraction(Load):
         createStepName: str,
         region: Region,
         magnitude: float,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
         angle: float = 0,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         localCsys: Optional[int] = None,
         userCsys: str = "",
         directionVector: tuple = (),
         follower: Boolean = ON,
         resultant: Boolean = OFF,
-        traction: SymbolicConstant = SHEAR,
+        traction: Literal[C.SHEAR, C.GENERAL] = SHEAR,
     ):
         """This method creates a SurfaceTraction object.
 
@@ -168,17 +170,17 @@ class SurfaceTraction(Load):
     @abaqus_method_doc
     def setValues(
         self,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         amplitude: str = UNSET,
         angle: float = 0,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         localCsys: Optional[int] = None,
         userCsys: str = "",
         directionVector: tuple = (),
         follower: Boolean = ON,
         resultant: Boolean = OFF,
-        traction: SymbolicConstant = SHEAR,
+        traction: Literal[C.SHEAR, C.GENERAL] = SHEAR,
     ):
         """This method modifies the data for an existing SurfaceTraction object in the step where
         it is created.
@@ -236,7 +238,7 @@ class SurfaceTraction(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        magnitude: Union[SymbolicConstant, float] = ...,
+        magnitude: Union[Literal[C.UNCHANGED], float] = ...,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing SurfaceTraction object in the

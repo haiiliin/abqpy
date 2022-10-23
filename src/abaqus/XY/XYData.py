@@ -7,9 +7,9 @@ from typing_extensions import Literal
 
 from .QuantityType import QuantityType
 from ..PathAndProbe.Path import Path
-from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
 from ..UtilityAndView.abaqusConstants import (Boolean,
                                               OFF, ON, REAL, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 class Odb:
@@ -722,7 +722,7 @@ class XYData(tuple):
         includeAllElements: Boolean = False,
         step: Optional[int] = None,
         frame: Optional[int] = None,
-        variable: Optional[SymbolicConstant] = None,
+        variable: Optional[Literal[C.ELEMENT_FACE, C.ELEMENT_NODAL, C.S22, C.WHOLE_ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.INVARIANT, C.S11, C.WHOLE_MODEL, C.GENERAL_PARTICLE, C.STEEL, C.SNEG, C.WHOLE_PART_INSTANCE]] = None,
         deformedMag: Optional[float] = None,
         numericForm: Literal[
             C.COMPLEX_MAGNITUDE, C.COMPLEX_PHASE, C.REAL, C.IMAGINARY, C.COMPLEX_VAL_AT_ANGLE

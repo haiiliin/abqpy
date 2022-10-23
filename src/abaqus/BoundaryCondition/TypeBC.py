@@ -1,10 +1,12 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import NOT_APPLICABLE, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -46,7 +48,7 @@ class TypeBC(BoundaryCondition):
         name: str,
         createStepName: str,
         region: Region,
-        buckleCase: SymbolicConstant = NOT_APPLICABLE,
+        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ) -> None:
         """This method creates an TypeBC object.
@@ -410,8 +412,8 @@ class TypeBC(BoundaryCondition):
     def setValues(
         self,
         region: Region,
-        typeName: Optional[SymbolicConstant] = None,
-        buckleCase: SymbolicConstant = NOT_APPLICABLE,
+        typeName: Optional[Literal[C.YASYMM, C.ENCASTRE, C.ZASYMM, C.ZSYMM, C.YSYMM, C.XSYMM, C.PINNED, C.XASYMM]] = None,
+        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
         localCsys: Optional[str] = None,
     ):
         """This method modifies the data for an existing TypeBC object in the step where it is
@@ -436,7 +438,7 @@ class TypeBC(BoundaryCondition):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(self, stepName: str, typeName: Optional[SymbolicConstant] = None):
+    def setValuesInStep(self, stepName: str, typeName: Optional[Literal[C.YASYMM, C.ENCASTRE, C.ZASYMM, C.ZSYMM, C.YSYMM, C.XSYMM, C.PINNED, C.XASYMM]] = None):
         """This method always returns a value error for a TypeBC; it is inherited from the
         BoundaryCondition object.
 

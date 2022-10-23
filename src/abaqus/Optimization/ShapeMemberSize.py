@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .GeometricRestriction import GeometricRestriction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import MINIMUM, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -54,7 +56,7 @@ class ShapeMemberSize(GeometricRestriction):
         region: Region,
         maxThickness: float = 0,
         minThickness: float = 0,
-        sizeRestriction: SymbolicConstant = MINIMUM,
+        sizeRestriction: Literal[C.MINIMUM, C.MAXIMUM] = MINIMUM,
         assignNodeGroupRegion: str = OFF,
         nodeGroupRegion: str = "",
     ):
@@ -103,7 +105,7 @@ class ShapeMemberSize(GeometricRestriction):
         self,
         maxThickness: float = 0,
         minThickness: float = 0,
-        sizeRestriction: SymbolicConstant = MINIMUM,
+        sizeRestriction: Literal[C.MINIMUM, C.MAXIMUM] = MINIMUM,
         assignNodeGroupRegion: str = OFF,
         nodeGroupRegion: str = "",
     ):

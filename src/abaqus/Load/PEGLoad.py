@@ -1,10 +1,12 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -40,7 +42,7 @@ class PEGLoad(Load):
         name: str,
         createStepName: str,
         region: Region,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         comp1: Optional[float] = None,
         comp2: Optional[float] = None,
@@ -92,7 +94,7 @@ class PEGLoad(Load):
     @abaqus_method_doc
     def setValues(
         self,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         comp1: Optional[float] = None,
         comp2: Optional[float] = None,
@@ -130,7 +132,7 @@ class PEGLoad(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        comp1: Union[SymbolicConstant, float] = ...,
+        comp1: Union[Literal[C.FREED, C.UNCHANGED], float] = ...,
         comp2: Union[SymbolicConstant, float] = ...,
         comp3: Union[SymbolicConstant, float] = ...,
         amplitude: str = "",

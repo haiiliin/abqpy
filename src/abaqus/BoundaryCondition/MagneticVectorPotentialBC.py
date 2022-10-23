@@ -1,10 +1,12 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -45,11 +47,11 @@ class MagneticVectorPotentialBC(BoundaryCondition):
         name: str,
         createStepName: str,
         region: Region,
-        component1: Optional[SymbolicConstant] = None,
-        component2: SymbolicConstant = UNSET,
-        component3: SymbolicConstant = UNSET,
+        component1: Optional[Literal[C.SET, C.UNSET]] = None,
+        component2: Literal[C.SET, C.UNSET] = UNSET,
+        component3: Literal[C.SET, C.UNSET] = UNSET,
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
         localCsys: Optional[str] = None,
     ):
         """This method creates a MagneticVectorPotentialBC object.
@@ -102,11 +104,11 @@ class MagneticVectorPotentialBC(BoundaryCondition):
     @abaqus_method_doc
     def setValues(
         self,
-        component1: Optional[SymbolicConstant] = None,
-        component2: SymbolicConstant = UNSET,
-        component3: SymbolicConstant = UNSET,
+        component1: Optional[Literal[C.SET, C.UNSET]] = None,
+        component2: Literal[C.SET, C.UNSET] = UNSET,
+        component3: Literal[C.SET, C.UNSET] = UNSET,
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
         localCsys: Optional[str] = None,
     ):
         """This method modifies the data for an existing MagneticVectorPotentialBC object in the
@@ -145,9 +147,9 @@ class MagneticVectorPotentialBC(BoundaryCondition):
     def setValuesInStep(
         self,
         stepName: str,
-        component1: Optional[SymbolicConstant] = None,
-        component2: Optional[SymbolicConstant] = None,
-        component3: Optional[SymbolicConstant] = None,
+        component1: Optional[Literal[C.SET, C.UNCHANGED]] = None,
+        component2: Optional[Literal[C.SET, C.UNCHANGED]] = None,
+        component3: Optional[Literal[C.UNCHANGED]] = None,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing MagneticVectorPotentialBC

@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .CompositeLayup import CompositeLayup
 from .MaterialOrientation import MaterialOrientation
@@ -14,7 +15,8 @@ from ..Region.Set import Set
 from ..Region.Surface import Surface
 from ..UtilityAndView.abaqusConstants import (AXIS_1, AXIS_3, Boolean, FROM_SECTION, GLOBAL,
                                               NORMAL_VECTOR, OFF, PRIMARY_VECTOR, SHELL,
-                                              SINGLE_VALUE, STACK_3, SymbolicConstant)
+                                              SINGLE_VALUE, STACK_3)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -24,10 +26,10 @@ class PropertyPart(PartBase):
         self,
         name: str,
         description: str = "",
-        offsetType: SymbolicConstant = GLOBAL,
+        offsetType: Literal[C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.GLOBAL, C.SINGLE_VALUE, C.OFFSET_FIELD, C.SHELL] = GLOBAL,
         offsetField: str = "",
         offsetValues: float = 0,
-        elementType: SymbolicConstant = SHELL,
+        elementType: Literal[C.SOLID, C.SHELL, C.CONTINUUM_SHELL] = SHELL,
         symmetric: Boolean = OFF,
     ) -> CompositeLayup:
         """This method creates a CompositeLayup object.
@@ -86,9 +88,9 @@ class PropertyPart(PartBase):
         self,
         region: Set,
         sectionName: str,
-        thicknessAssignment: SymbolicConstant = FROM_SECTION,
+        thicknessAssignment: Literal[C.FROM_SECTION, C.FROM_GEOMETRY] = FROM_SECTION,
         offset: float = 0,
-        offsetType: SymbolicConstant = SINGLE_VALUE,
+        offsetType: Literal[C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.SINGLE_VALUE, C.FROM_GEOMETRY, C.OFFSET_FIELD] = SINGLE_VALUE,
         offsetField: str = "",
     ):
         """This method creates a SectionAssignment object.
@@ -135,19 +137,19 @@ class PropertyPart(PartBase):
         self,
         region: Optional[Set] = None,
         localCsys: Optional[DatumCsys] = None, 
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle: float = 0,
-        stackDirection: SymbolicConstant = STACK_3,
+        stackDirection: Literal[C.STACK_2, C.STACK_ORIENTATION, C.STACK_3, C.STACK_1] = STACK_3,
         fieldName: str = "",
-        orientationType: SymbolicConstant = GLOBAL,
-        normalAxisDirection: SymbolicConstant = AXIS_3,
-        normalAxisDefinition: SymbolicConstant = NORMAL_VECTOR,
+        orientationType: Literal[C.FIELD, C.GLOBAL, C.USER, C.SYSTEM, C.DISCRETE] = GLOBAL,
+        normalAxisDirection: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_3,
+        normalAxisDefinition: Literal[C.SURFACE, C.NORMAL_VECTOR, C.NORMAL_DATUM] = NORMAL_VECTOR,
         normalAxisRegion: Optional[Surface] = None,
         normalAxisDatum: Optional[DatumAxis] = None, 
         flipNormalDirection: Boolean = OFF,
         normalAxisVector: tuple = (),
-        primaryAxisDirection: SymbolicConstant = AXIS_1,
-        primaryAxisDefinition: SymbolicConstant = PRIMARY_VECTOR,
+        primaryAxisDirection: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
+        primaryAxisDefinition: Literal[C.SURFACE, C.PRIMARY_VECTOR, C.PRIMARY_DATUM] = PRIMARY_VECTOR,
         primaryAxisRegion: Optional[Set] = None,
         primaryAxisDatum: Optional[DatumAxis] = None, 
         flipPrimaryDirection: Boolean = OFF,
@@ -258,7 +260,7 @@ class PropertyPart(PartBase):
         return materialOrientation
     
     @abaqus_method_doc
-    def assignBeamSectionOrientation(self, region: tuple, method: SymbolicConstant, n1: tuple):
+    def assignBeamSectionOrientation(self, region: tuple, method: Literal[C.N1_COSINES], n1: tuple):
         """This method assigns a beam section orientation to a region of a part.
 
         .. note:: 
@@ -282,7 +284,7 @@ class PropertyPart(PartBase):
 
     @abaqus_method_doc
     def assignMaterialOrientation(
-        self, region: tuple, localCsys: Datum, axis: SymbolicConstant = AXIS_1, angle: float = 0
+        self, region: tuple, localCsys: Datum, axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1, angle: float = 0
     ):
         """This method assigns a material orientation to a region.
 
@@ -311,7 +313,7 @@ class PropertyPart(PartBase):
 
     @abaqus_method_doc
     def assignRebarOrientation(
-        self, region: tuple, localCsys: Datum, axis: SymbolicConstant = AXIS_1, angle: float = 0
+        self, region: tuple, localCsys: Datum, axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1, angle: float = 0
     ):
         """This method assigns a rebar reference orientation to a region.
 

@@ -1,9 +1,11 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Constraint import Constraint
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTED, DEFAULT, OFF, ON, SOLVER_DEFAULT,
                                               SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -83,12 +85,12 @@ class Tie(Constraint):
         main: Region,
         secondary: Region,
         adjust: Boolean = ON,
-        positionToleranceMethod: SymbolicConstant = COMPUTED,
+        positionToleranceMethod: Literal[C.COMPUTED, C.SPECIFIED] = COMPUTED,
         positionTolerance: float = 0,
         tieRotations: Boolean = ON,
-        constraintRatioMethod: SymbolicConstant = DEFAULT,
+        constraintRatioMethod: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,
         constraintRatio: float = 0,
-        constraintEnforcement: SymbolicConstant = SOLVER_DEFAULT,
+        constraintEnforcement: Literal[C.NODE_TO_SURFACE, C.SOLVER_DEFAULT, C.SURFACE_TO_SURFACE] = SOLVER_DEFAULT,
         thickness: Boolean = ON,
     ):
         """This method creates a Tie object.
@@ -157,12 +159,12 @@ class Tie(Constraint):
     def setValues(
         self,
         adjust: Boolean = ON,
-        positionToleranceMethod: SymbolicConstant = COMPUTED,
+        positionToleranceMethod: Literal[C.COMPUTED, C.SPECIFIED] = COMPUTED,
         positionTolerance: float = 0,
         tieRotations: Boolean = ON,
-        constraintRatioMethod: SymbolicConstant = DEFAULT,
+        constraintRatioMethod: Literal[C.DEFAULT, C.SPECIFIED] = DEFAULT,
         constraintRatio: float = 0,
-        constraintEnforcement: SymbolicConstant = SOLVER_DEFAULT,
+        constraintEnforcement: Literal[C.NODE_TO_SURFACE, C.SOLVER_DEFAULT, C.SURFACE_TO_SURFACE] = SOLVER_DEFAULT,
         thickness: Boolean = ON,
     ):
         """This method modifies the Tie object.

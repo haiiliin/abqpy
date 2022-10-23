@@ -1,11 +1,13 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .ExpInitialization import ExpInitialization
 from .StdInitialization import StdInitialization
 from ..Model.ModelBase import ModelBase
-from ..UtilityAndView.abaqusConstants import ADJUST, Boolean, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import ADJUST, Boolean
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -15,7 +17,7 @@ class InteractionContactInitializationModel(ModelBase):
     def ExpInitialization(
         self,
         name: str,
-        overclosureType: SymbolicConstant = ADJUST,
+        overclosureType: Literal[C.INTERFERENCE, C.ADJUST, C.CLEARANCE] = ADJUST,
         interferenceDistance: Optional[float] = None,
         clearanceDistance: Optional[float] = None,
         openingTolerance: Optional[float] = None,
@@ -97,7 +99,7 @@ class InteractionContactInitializationModel(ModelBase):
     def StdInitialization(
         self,
         name: str,
-        overclosureType: SymbolicConstant = ADJUST,
+        overclosureType: Literal[C.INTERFERENCE, C.ADJUST, C.CLEARANCE] = ADJUST,
         interferenceDistance: Optional[float] = None,
         clearanceDistance: Optional[float] = None,
         openingTolerance: Optional[float] = None,
