@@ -138,7 +138,7 @@ class Elastic:
     def __init__(
         self,
         table: tuple,
-        type: Literal[C.ENGINEERING_CONSTANTS, C.TRACTION, C.LAMINA, C.SHEAR, C.ANISOTROPIC, C.ORTHOTROPIC, C.SHORT_FIBER, C.BILAMINA, C.ISOTROPIC, C.COUPLED_TRACTION] = ISOTROPIC,
+        type: Literal[C.ENGINEERING_CONSTANTS, C.TRACTION, C.LAMINA, C.SHEAR, C.ANISOTROPIC, C.ORTHOTROPIC, C.SHORT_FIBER, C.ISOTROPIC, C.COUPLED_TRACTION] = ISOTROPIC,
         noCompression: Boolean = OFF,
         noTension: Boolean = OFF,
         temperatureDependency: Boolean = OFF,

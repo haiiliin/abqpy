@@ -49,12 +49,7 @@ class OptimizationTaskModel(ModelBase):
         nodeSmooth: Literal[C.DEFAULT] = DEFAULT,
         nodeUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = CONSERVATIVE,
         numTrackedModes: int = 5,
-<<<<<<< HEAD
-        updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
-=======
         updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ) -> BeadTask:
         """This method creates a BeadTask object.
 
@@ -208,12 +203,7 @@ class OptimizationTaskModel(ModelBase):
         tetSkew: float = 100,
         triMaxAngle: float = 140,
         triMinAngle: float = 20,
-<<<<<<< HEAD
-        updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
-=======
         updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ) -> ShapeTask:
         """This method creates a ShapeTask object.
 
@@ -438,12 +428,7 @@ class OptimizationTaskModel(ModelBase):
         objectiveFunctionDeltaStopCriteria: float = 0,
         stopCriteriaDesignCycle: int = 4,
         thicknessMoveLimit: float = 0,
-<<<<<<< HEAD
-        thicknessUpdateStrategy: SymbolicConstant = NORMAL,
-=======
         thicknessUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ) -> SizingTask:
         """This method creates a SizingTask object.
 

@@ -279,12 +279,7 @@ class ShapeTask(OptimizationTask):
         tetSkew: float = 100,
         triMaxAngle: float = 140,
         triMinAngle: float = 20,
-<<<<<<< HEAD
-        updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
-=======
         updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method creates a ShapeTask object.
 
@@ -495,12 +490,7 @@ class ShapeTask(OptimizationTask):
         tetSkew: float = 100,
         triMaxAngle: float = 140,
         triMinAngle: float = 20,
-<<<<<<< HEAD
-        updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
-=======
         updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method modifies the ShapeTask object.
 
