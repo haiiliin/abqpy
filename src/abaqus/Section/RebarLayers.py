@@ -1,7 +1,9 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .LayerPropertiesArray import LayerPropertiesArray
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -31,7 +33,7 @@ class RebarLayers:
 
     @abaqus_method_doc
     def __init__(
-        self, rebarSpacing: SymbolicConstant, layerTable: LayerPropertiesArray
+        self, rebarSpacing: Literal[C.LIFT_EQUATION, C.CONSTANT, C.ANGULAR], layerTable: LayerPropertiesArray
     ):
         """This method creates a RebarLayers object.
 

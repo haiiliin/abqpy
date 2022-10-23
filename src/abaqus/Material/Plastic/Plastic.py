@@ -1,4 +1,5 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Metal.Annealing.AnnealTemperature import AnnealTemperature
 from .Metal.Cyclic.CycledPlastic import CycledPlastic
@@ -7,8 +8,8 @@ from .Metal.ORNL.Ornl import Ornl
 from .Metal.RateDependent.RateDependent import RateDependent
 from .Potential import Potential
 from .TensileFailure import TensileFailure
-from ...UtilityAndView.abaqusConstants import (Boolean, HALF_CYCLE, ISOTROPIC, OFF,
-                                               SymbolicConstant)
+from ...UtilityAndView.abaqusConstants import (Boolean, HALF_CYCLE, ISOTROPIC, OFF)
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -102,9 +103,9 @@ class Plastic:
     def __init__(
         self,
         table: tuple,
-        hardening: SymbolicConstant = ISOTROPIC,
+        hardening: Literal[C.COMBINED, C.JOHNSON_COOK, C.USER, C.ISOTROPIC, C.KINEMATIC] = ISOTROPIC,
         rate: Boolean = OFF,
-        dataType: SymbolicConstant = HALF_CYCLE,
+        dataType: Literal[C.PARAMETERS, C.HALF_CYCLE, C.COMBINED, C.STABILIZED] = HALF_CYCLE,
         strainRangeDependency: Boolean = OFF,
         numBackstresses: int = 1,
         temperatureDependency: Boolean = OFF,

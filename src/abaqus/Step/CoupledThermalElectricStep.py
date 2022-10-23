@@ -1,6 +1,7 @@
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AnalysisStep import AnalysisStep
 from ..Adaptivity.AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
@@ -19,6 +20,7 @@ from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import (AUTOMATIC, Boolean, FULL_NEWTON, LINEAR, OFF, PERIOD,
                                               PROPAGATED, SOLVER_DEFAULT, STEP, SymbolicConstant,
                                               TRANSIENT)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -201,22 +203,22 @@ class CoupledThermalElectricStep(AnalysisStep):
         name: str,
         previous: str,
         description: str = "",
-        response: SymbolicConstant = TRANSIENT,
+        response: Literal[C.TRANSIENT, C.STEADY_STATE] = TRANSIENT,
         timePeriod: float = 1,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
         maxInc: Optional[float] = None,
-        end: SymbolicConstant = PERIOD,
+        end: Literal[C.SS, C.PERIOD] = PERIOD,
         deltmx: float = 0,
         mxdem: float = 0,
-        solutionTechnique: SymbolicConstant = FULL_NEWTON,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        amplitude: SymbolicConstant = STEP,
-        extrapolation: SymbolicConstant = LINEAR,
+        solutionTechnique: Literal[C.SEPARATED, C.FULL_NEWTON] = FULL_NEWTON,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
+        extrapolation: Literal[C.PARABOLIC, C.NONE, C.LINEAR] = LINEAR,
         maintainAttributes: Boolean = False,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
     ):
         """This method creates a CoupledThermalElectricStep object.
 
@@ -298,21 +300,21 @@ class CoupledThermalElectricStep(AnalysisStep):
     def setValues(
         self,
         description: str = "",
-        response: SymbolicConstant = TRANSIENT,
+        response: Literal[C.TRANSIENT, C.STEADY_STATE] = TRANSIENT,
         timePeriod: float = 1,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
         maxInc: Optional[float] = None,
-        end: SymbolicConstant = PERIOD,
+        end: Literal[C.SS, C.PERIOD] = PERIOD,
         deltmx: float = 0,
         mxdem: float = 0,
-        solutionTechnique: SymbolicConstant = FULL_NEWTON,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        amplitude: SymbolicConstant = STEP,
-        extrapolation: SymbolicConstant = LINEAR,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        solutionTechnique: Literal[C.SEPARATED, C.FULL_NEWTON] = FULL_NEWTON,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
+        amplitude: Literal[C.STEP, C.RAMP] = STEP,
+        extrapolation: Literal[C.PARABOLIC, C.NONE, C.LINEAR] = LINEAR,
+        convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
     ):
         """This method modifies the CoupledThermalElectricStep object.
 

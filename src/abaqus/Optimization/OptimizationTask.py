@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .BeadFixedRegion import BeadFixedRegion
 from .BeadGrowth import BeadGrowth
@@ -46,7 +47,8 @@ from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (ABSOLUTE_EQUAL, AUTO, AXIS_1, Boolean, DEMOLD_REGION,
                                               FREE_FORM, MAXIMUM, MINIMIZE, MINIMUM,
                                               MODEL, OFF, ON, OVERHANG_REGION, SUM,
-                                              SymbolicConstant, VECTOR)
+                                              VECTOR)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -58,10 +60,10 @@ class OptimizationTask(OptimizationTaskBase):
         identifier: str,
         csys: Optional[int] = None,
         drivingRegion: Optional[str] = None,
-        operation: SymbolicConstant = SUM,
-        region: SymbolicConstant = MODEL,
-        shellLayer: SymbolicConstant = MAXIMUM,
-        stepOperation: SymbolicConstant = SUM,
+        operation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
+        region: Literal[C.MODEL] = MODEL,
+        shellLayer: Literal[C.BOTTOM, C.TOP, C.MAXIMUM, C.MINIMUM, C.MIDDLE] = MAXIMUM,
+        stepOperation: Literal[C.SUM, C.MINIMUM, C.MAXIMUM] = SUM,
         stepOptions: Optional[StepOptionArray] = None,
     ) -> SingleTermDesignResponse:
         """This method creates a SingleTermDesignResponse object.
@@ -124,7 +126,7 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         objectives: OptimizationObjectiveArray,
-        target: SymbolicConstant = MINIMIZE,
+        target: Literal[C.MINIMIZE_MAXIMUM, C.MINIMIZE, C.MAXIMIZE] = MINIMIZE,
     ) -> ObjectiveFunction:
         """This method creates an ObjectiveFunction object.
 
@@ -164,7 +166,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         designResponse: str,
         restrictionValue: float,
-        restrictionMethod: SymbolicConstant = ABSOLUTE_EQUAL,
+        restrictionMethod: Literal[C.ABSOLUTE_LESS_THAN_EQUAL, C.RELATIVE_GREATER_THAN_EQUAL, C.ABSOLUTE_GREATER_THAN_EQUAL, C.RELATIVE_EQUAL, C.ABSOLUTE_EQUAL, C.RELATIVE_LESS_THAN_EQUAL] = ABSOLUTE_EQUAL,
     ) -> OptimizationConstraint:
         """This method creates an OptimizationConstraint object.
 
@@ -320,7 +322,7 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         csys: Optional[int] = None,
     ) -> BeadPlanarSymmetry:
         """This method creates a BeadPlanarSymmetry object.
@@ -392,7 +394,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         angle: float,
         region: Region,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         csys: Optional[int] = None,
     ) -> BeadRotationalSymmetry:
         """This method creates a BeadRotationalSymmetry object.
@@ -437,8 +439,8 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         csys: Optional[int] = None,
         masterPoint: Optional[str] = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
-        movementRestriction: SymbolicConstant = VECTOR,
+        masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
+        movementRestriction: Literal[C.MAGNITUDE, C.DIRECTION, C.VECTOR] = VECTOR,
         presumeFeasibleRegionAtStart: Boolean = ON,
         u1: Boolean = ON,
         u2: Boolean = ON,
@@ -518,7 +520,7 @@ class OptimizationTask(OptimizationTaskBase):
         csys: Optional[int] = None,
         drawAngle: float = 0,
         masterPoint: Optional[str] = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -762,10 +764,10 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         pullDirection: tuple,
         region: Region,
-        collisionCheckRegion: SymbolicConstant = DEMOLD_REGION,
+        collisionCheckRegion: Literal[C.DEMOLD_REGION] = DEMOLD_REGION,
         csys: Optional[int] = None,
         drawAngle: float = 0,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -847,7 +849,7 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         maxThickness: float = 0,
         minThickness: float = 0,
-        sizeRestriction: SymbolicConstant = MINIMUM,
+        sizeRestriction: Literal[C.MINIMUM, C.MAXIMUM] = MINIMUM,
     ) -> ShapeMemberSize:
         """This method creates a ShapeMemberSize object.
 
@@ -893,7 +895,7 @@ class OptimizationTask(OptimizationTaskBase):
         clientDirection: tuple,
         region: Region,
         csys: Optional[int] = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -962,7 +964,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         region: Region,
         csys: Optional[int] = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPointDetermination: Literal[C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -1029,7 +1031,7 @@ class OptimizationTask(OptimizationTaskBase):
         angle: float = 0,
         csys: Optional[int] = None,
         masterPoint: Optional[str] = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         startPoint: Optional[float] = None,
         tolerance1: float = 0,
@@ -1140,7 +1142,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         region: Region,
         translation: float,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> SizingCyclicSymmetry:
@@ -1242,7 +1244,7 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> SizingPlanarSymmetry:
@@ -1323,7 +1325,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         angle: float,
         region: Region,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> SizingRotationalSymmetry:
@@ -1370,7 +1372,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         clientDirection: tuple,
         region: Region,
-        approach: SymbolicConstant = FREE_FORM,
+        approach: Literal[C.FREE_FORM, C.TURN] = FREE_FORM,
         csys: Optional[int] = None,
         freeFormRegion: Optional[str] = None,
         presumeFeasibleRegionAtStart: Boolean = ON,
@@ -1455,7 +1457,7 @@ class OptimizationTask(OptimizationTaskBase):
         csys: Optional[int] = None,
         drawAngle: float = 0,
         masterPoint: Optional[str] = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,
@@ -1534,7 +1536,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         region: Region,
         translation: float,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> TopologyCyclicSymmetry:
@@ -1585,10 +1587,10 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         csys: Optional[int] = None,
         draftAngle: float = 0,
-        collisionCheckRegion: SymbolicConstant = DEMOLD_REGION,
+        collisionCheckRegion: Literal[C.DEMOLD_REGION] = DEMOLD_REGION,
         pointRegion: Optional[Region] = None,
         pullDirection: tuple = (),
-        technique: SymbolicConstant = AUTO,
+        technique: Literal[C.POINT, C.AUTO_TIGHT, C.SURFACE, C.STAMP, C.AUTO] = AUTO,
     ) -> TopologyDemoldControl:
         """This method creates a TopologyDemoldControl object.
 
@@ -1651,7 +1653,7 @@ class OptimizationTask(OptimizationTaskBase):
         maxThickness: float = 0,
         minThickness: float = 0,
         separation: float = 0,
-        sizeRestriction: SymbolicConstant = MINIMUM,
+        sizeRestriction: Literal[C.ENVELOPE, C.MINIMUM, C.MAXIMUM] = MINIMUM,
     ) -> TopologyMemberSize:
         """This method creates a TopologyMemberSize object.
 
@@ -1697,10 +1699,10 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         csys: Optional[int] = None,
         draftAngle: float = 45,
-        overhangCheckRegion: SymbolicConstant = OVERHANG_REGION,
+        overhangCheckRegion: Literal[C.OVERHANG_REGION] = OVERHANG_REGION,
         pointRegion: Region = Region(),
         radius: Optional[float] = None,
-        technique: SymbolicConstant = AUTO,
+        technique: Literal[C.POINT, C.NONE, C.AUTO] = AUTO,
     ) -> TopologyOverhangControl:
         """This method creates a TopologyOverhangControl object.
 
@@ -1767,7 +1769,7 @@ class OptimizationTask(OptimizationTaskBase):
         self,
         name: str,
         region: Region,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> TopologyPlanarSymmetry:
@@ -1854,7 +1856,7 @@ class OptimizationTask(OptimizationTaskBase):
         name: str,
         angle: float,
         region: Region,
-        axis: SymbolicConstant = AXIS_1,
+        axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         csys: Optional[int] = None,
         ignoreFrozenArea: Boolean = OFF,
     ) -> TopologyRotationalSymmetry:
@@ -1905,7 +1907,7 @@ class OptimizationTask(OptimizationTaskBase):
         region: Region,
         csys: Optional[int] = None,
         masterPoint: Optional[str] = None,
-        masterPointDetermination: SymbolicConstant = MAXIMUM,
+        masterPointDetermination: Literal[C.SPECIFY, C.MINIMUM, C.MAXIMUM] = MAXIMUM,
         presumeFeasibleRegionAtStart: Boolean = ON,
         tolerance1: float = 0,
         tolerance2: float = 0,

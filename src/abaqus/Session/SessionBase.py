@@ -1,6 +1,7 @@
 from typing import Dict, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AutoColors import AutoColors
 from .Color import Color
@@ -54,7 +55,8 @@ from ..Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions import (
     ConstrainedSketcherOptions,
 )
 from ..UtilityAndView.View import View
-from ..UtilityAndView.abaqusConstants import AVI, Boolean, OFF, PNG, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import AVI, Boolean, OFF, PNG
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from ..XY.Chart import Chart
 from ..XY.DefaultChartOptions import DefaultChartOptions
 from ..XY.DefaultPlot import DefaultPlot
@@ -455,7 +457,7 @@ class SessionBase:
     def printToFile(
         self,
         fileName: str,
-        format: SymbolicConstant = PNG,
+        format: Literal[C.PS, C.EPS, C.PNG, C.TIFF, C.SVG] = PNG,
         canvasObjects: Sequence[Canvas] = (),
         compression: Boolean = OFF,
     ):
@@ -530,7 +532,7 @@ class SessionBase:
         ...
 
     @abaqus_method_doc
-    def saveOptions(self, directory: SymbolicConstant):
+    def saveOptions(self, directory: Literal[C.HOME, C.CURRENT]):
         """This method saves your customized display settings.
 
         Parameters

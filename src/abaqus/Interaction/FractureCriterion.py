@@ -1,8 +1,10 @@
 from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import BK, Boolean, DEFAULT, OFF, SymbolicConstant, VCCT
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -113,13 +115,13 @@ class FractureCriterion:
     def __init__(
         self,
         initTable: tuple,
-        type: SymbolicConstant = VCCT,
-        mixedModeBehavior: SymbolicConstant = BK,
+        type: Literal[C.ENHANCED, C.VCCT] = VCCT,
+        mixedModeBehavior: Literal[C.REEDER, C.BK, C.POWER] = BK,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         tolerance: float = 0,
         specifyUnstableCrackProp: Union[SymbolicConstant, Boolean] = OFF,
-        unstableTolerance: Union[SymbolicConstant, float] = DEFAULT,
+        unstableTolerance: Union[Literal[C.DEFAULT], float] = DEFAULT,
     ):
         r"""This method creates a FractureCriterion object.
 
