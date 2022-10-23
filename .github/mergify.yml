@@ -13,6 +13,12 @@ pull_request_rules:
         labels:
           - backport
           - main
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
   - name: Backport to main (disable-auto-merge)
     conditions:
       - label=backport-to-main
@@ -29,6 +35,12 @@ pull_request_rules:
           - backport
           - main
           - disable-auto-merge
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
 
   - name: Backport to 2022 (auto-merge)
     conditions:
@@ -46,6 +58,12 @@ pull_request_rules:
         labels:
           - backport
           - "2022"
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
   - name: Backport to 2022 (disable-auto-merge)
     conditions:
       - or:
@@ -64,6 +82,12 @@ pull_request_rules:
           - backport
           - "2022"
           - disable-auto-merge
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
 
   - name: Backport to 2021 (auto-merge)
     conditions:
@@ -81,6 +105,12 @@ pull_request_rules:
         labels:
           - backport
           - "2021"
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
   - name: Backport to 2021 (disable-auto-merge)
     conditions:
       - or:
@@ -99,6 +129,12 @@ pull_request_rules:
           - backport
           - "2021"
           - disable-auto-merge
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
 
   - name: Backport to 2020 (auto-merge)
     conditions:
@@ -116,6 +152,12 @@ pull_request_rules:
         labels:
           - backport
           - "2020"
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
   - name: Backport to 2020 (disable-auto-merge)
     conditions:
       - or:
@@ -134,6 +176,12 @@ pull_request_rules:
           - backport
           - "2020"
           - disable-auto-merge
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
 
   - name: Backport to 2019 (auto-merge)
     conditions:
@@ -151,6 +199,12 @@ pull_request_rules:
         labels:
           - backport
           - "2019"
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
   - name: Backport to 2019 (disable-auto-merge)
     conditions:
       - or:
@@ -169,6 +223,12 @@ pull_request_rules:
           - backport
           - "2019"
           - disable-auto-merge
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
 
   - name: Backport to 2018 (auto-merge)
     conditions:
@@ -186,6 +246,12 @@ pull_request_rules:
         labels:
           - backport
           - "2018"
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
   - name: Backport to 2018 (disable-auto-merge)
     conditions:
       - or:
@@ -204,6 +270,12 @@ pull_request_rules:
           - backport
           - "2018"
           - disable-auto-merge
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
 
   - name: Backport to 2017 (auto-merge)
     conditions:
@@ -221,6 +293,12 @@ pull_request_rules:
         labels:
           - backport
           - "2017"
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
   - name: Backport to 2017 (disable-auto-merge)
     conditions:
       - or:
@@ -239,6 +317,12 @@ pull_request_rules:
           - backport
           - "2017"
           - disable-auto-merge
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
 
   - name: Backport to 2016 (auto-merge)
     conditions:
@@ -256,6 +340,12 @@ pull_request_rules:
         labels:
           - backport
           - "2016"
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
   - name: Backport to 2016 (disable-auto-merge)
     conditions:
       - or:
@@ -274,6 +364,12 @@ pull_request_rules:
           - backport
           - "2016"
           - disable-auto-merge
+        body: |
+          This is an automatic backport of pull request #{{number}} done by [Mergify](https://mergify.com).
+          
+          {{ body }}
+
+          {{ cherry_pick_error }}
 
   - name: Auto merge backport pull request
     conditions:
