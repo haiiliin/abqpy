@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2016.3.12.post7\n"
+"Project-Id-Version: abqpy 2016\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 14:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,12 +28,12 @@ msgstr ""
 msgid "Create field reports in Session"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession:1
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession:1
 msgid "Bases: :py:class:`~abaqus.Session.SessionBase.SessionBase`"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession:0
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:0
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession:0
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -185,7 +185,7 @@ msgstr ""
 msgid ":py:obj:`defaultFieldReportOptions <abaqus.Session.SessionBase.SessionBase.defaultFieldReportOptions>`\\"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:32
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:32
 #: ../../None:72:<autosummary>:1
 msgid "A :py:class:`~abaqus.FieldReport.FieldReportOptions.FieldReportOptions` object."
 msgstr ""
@@ -194,7 +194,7 @@ msgstr ""
 msgid ":py:obj:`defaultFreeBodyReportOptions <abaqus.Session.SessionBase.SessionBase.defaultFreeBodyReportOptions>`\\"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:22
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:22
 #: ../../None:72:<autosummary>:1
 msgid "A :py:class:`~abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions` object."
 msgstr ""
@@ -575,10 +575,10 @@ msgstr ""
 msgid "A repository of Drawing objects."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:0
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:0
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession:0
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:0
+#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:0
 msgid "Public Methods:"
 msgstr ""
 
@@ -586,7 +586,7 @@ msgstr ""
 msgid ":py:obj:`writeFieldReport <abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport>`\\ \\(filename\\, append\\, sortItem\\, ...\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:1
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:1
 #: ../../None:4:<autosummary>:1
 msgid "This method writes a FieldOutput object to a user-defined ASCII file."
 msgstr ""
@@ -595,8 +595,8 @@ msgstr ""
 msgid ":py:obj:`writeFreeBodyReport <abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport>`\\ \\(fileName\\, append\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:1
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:1
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:1
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:1
 #: ../../None:4:<autosummary>:1
 msgid "This method writes a FreeBody object to a user-defined ASCII file."
 msgstr ""
@@ -713,143 +713,143 @@ msgstr ""
 msgid "This method opens an existing output database (`.odb`) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:4
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:4
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:4
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:4
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:4
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:4
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:4
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:4
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:4
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:4
 msgid "This function can be accessed by::"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:9
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:9
 msgid "Check `FieldReportSession.writeFieldReport on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldreportsessionpyc.htm?contextscope=all#simaker-fieldreportsessionwritefieldreportpyc>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:0
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:0
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:0
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:0
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:0
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:0
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:0
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:0
 msgid "Parameters"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:12
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:12
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:12
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:12
 msgid "A String specifying the name of the file to which field output will be written."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:14
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:14
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:14
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:14
 msgid "A Boolean specifying whether to append the field output to an existing file. The default value is ON."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:17
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:17
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:17
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:17
 msgid "A String specifying the item by which to sort the tabular values."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:19
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:19
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:19
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:19
 msgid "An :py:class:`~abaqus.Odb.Odb.Odb` object from which to obtain field output values."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:21
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:21
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:21
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:21
 msgid "An Int (or stepIndex) specifying the step from which to obtain field output values. Possible values are 0 ≤ **step** ≤ (*numSteps* − 1)."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:24
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:24
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:24
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:24
 msgid "An Int (or frameIndex) specifying the frame from which to obtain field output values. Possible values are 0 ≤ **frame** ≤ (*numFramesInStep* − 1)."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:27
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:27
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:27
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:27
 msgid "A SymbolicConstant specifying the position from which to obtain data. Possible values are NODAL, INTEGRATION_POINT, ELEMENT_FACE, ELEMENT_NODAL, ELEMENT_CENTROID, WHOLE_ELEMENT, WHOLE_REGION, WHOLE_PART_INSTANCE, WHOLE_MODEL, and GENERAL_PARTICLE."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:31
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:31
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:31
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:31
 msgid "A :py:class:`~abaqus.DisplayGroup.DisplayGroup.DisplayGroup` object specifying the subset of the model for which to obtain data."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:33
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:33
 msgid "A sequence of variable description sequences specifying one or more field output variables for which to obtain data. Each variable description sequence contains the following elements:  - **element0**: A String specifying the name of the variable. - **element1**: A SymbolicConstant specifying the output position at which to report data.   Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE,   INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and   WHOLE_REGION. - **element2**: A Sequence of tuples each consisting of a SymbolicConstant specifying the   refinement (COMPONENT or INVARIANT), followed by a String specifying the name of a   component or invariant for which to obtain values.   If this element is omitted, data are written for all components and invariants (if   applicable). This element is required if **element3** (the following element in the tuple)   is included. - **element3 (if applicable)**: A Dictionary with a String key and a String value   specifying a single section point at which to report data. The key specifies a region in   the model; the corresponding value specifies a section point within that region. For   example::        {'shell < MAT > < 7 section points >': 'SPOS (fraction = 1.0)'}    If this element is omitted, data are written for all section points (if applicable).   If this element is omitted, data are written for all section points (if applicable)."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:33
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:33
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:33
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:33
 msgid "A sequence of variable description sequences specifying one or more field output variables for which to obtain data. Each variable description sequence contains the following elements:"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:37
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:37
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:37
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:37
 msgid "**element0**: A String specifying the name of the variable."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:38
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:38
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:38
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:38
 msgid "**element1**: A SymbolicConstant specifying the output position at which to report data. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE, INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and WHOLE_REGION."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:42
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:42
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:42
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:42
 msgid "**element2**: A Sequence of tuples each consisting of a SymbolicConstant specifying the refinement (COMPONENT or INVARIANT), followed by a String specifying the name of a component or invariant for which to obtain values. If this element is omitted, data are written for all components and invariants (if applicable). This element is required if **element3** (the following element in the tuple) is included."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:48
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:48
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:48
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:48
 msgid "**element3 (if applicable)**: A Dictionary with a String key and a String value specifying a single section point at which to report data. The key specifies a region in the model; the corresponding value specifies a section point within that region. For example::"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:55
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:55
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:55
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:55
 msgid "If this element is omitted, data are written for all section points (if applicable). If this element is omitted, data are written for all section points (if applicable)."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:58
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:58
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:58
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:58
 msgid "A SymbolicConstant specifying the numeric form in which to display results that contain complex numbers. Possible values are COMPLEX_MAGNITUDE, COMPLEX_PHASE, REAL, IMAGINARY, and COMPLEX_MAG_AT_ANGLE. The initial value is COMPLEX_MAGNITUDE."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:62
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:62
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:62
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:62
 msgid "A Float specifying the angle (in degrees) at which to display results that contain complex numbers when **numericForm** = COMPLEX_MAG_AT_ANGLE. The initial value is 0."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:9
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:9
 msgid "Check `FieldReportSession.writeFreeBodyReport on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldreportsessionpyc.htm?contextscope=all#simaker-fieldreportsessionwritefreebodyreportpyc>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:12
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:12
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:12
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:12
 msgid "A String specifying the name of the file to which the free body output will be written."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:14
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:14
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:14
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:14
 msgid "A Boolean specifying whether to append the free body output to an existing file. The default value is ON."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:17
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:17
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:17
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:17
 msgid "An Int identifying the step from which to obtain values. The default value is the current step."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:20
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:20
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:20
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:20
 msgid "An Int identifying the frame from which to obtain values. The default value is the current frame."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:23
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:23
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:23
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:23
 msgid "A SymbolicConstant indicating whether to obtain the values from the specified frame or from all active frames. Possible values are SPECIFY and ALL. The default value is SPECIFY."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:27
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:27
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:27
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:27
 msgid "An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read."
 msgstr ""
 
@@ -861,24 +861,24 @@ msgstr ""
 msgid "FieldReportOptions"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:1
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:1
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:1
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:1
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:1
+#: ../../../../src/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:1
 msgid "Bases: :py:class:`object`"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:1
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:1
 msgid "The FieldReportOptions object stores settings used by the writeFieldReport method when you write a FieldOutput object to an ASCII file. The FieldReportOptions object has no constructor. Abaqus creates the **fieldReportOptions** member when you import the Visualization module."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:7
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:7
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:6
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:5
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:7
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:7
+#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:6
+#: ../../../../src/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:5
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:14
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:14
 msgid "Check `FieldReportOptions on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldreportoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -895,7 +895,7 @@ msgstr ""
 msgid ":py:obj:`setValues <abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues>`\\ \\(numColumns\\, numberFormat\\[\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:1
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:1
 #: ../../None:4:<autosummary>:1
 msgid "This method modifies the FieldReportOptions object."
 msgstr ""
@@ -904,88 +904,88 @@ msgstr ""
 msgid ":py:obj:`NumberFormat <abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat>`\\ \\(\\[blankPad\\, format\\, numDigits\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:1
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:1
 #: ../../None:4:<autosummary>:1
 msgid "This method creates a NumberFormat object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:11
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:11
 msgid "Check `NumberFormat on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-numberformatpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:14
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:14
 msgid "A Boolean specifying whether the printed digits should be padded with blank characters to ensure equal sized fields. The **blankPad** argument is useful when your printed output includes columns. The default value is ON."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:18
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:18
 msgid "A SymbolicConstant specifying the formatting type. Possible values are ENGINEERING, SCIENTIFIC, and AUTOMATIC. The default value is ENGINEERING."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:21
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:21
 msgid "An Int specifying the number of digits to be displayed in the result. **numDigits** >0>0. The default value is 6."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:24
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:24
 msgid "An Int specifying the number of decimal places to which the number is to be truncated for display. **precision** ≤0≤0. If **precision** =0, no truncation is applied. The default value is 0."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:0
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:0
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:0
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:0
 msgid "Returns"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:28
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:28
 msgid "A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:0
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:0
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:0
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:0
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:0
 msgid "Return type"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:29
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:29
 msgid ":class:`NumberFormat`"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:4
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:4
 msgid "Check `FieldReportOptions.setValues on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fieldreportoptionspyc.htm?contextscope=all#simaker-fieldreportoptionssetvaluespyc>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:7
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:7
 msgid "An Int specifying the number of columns to display for the tabular report. The default value is 80."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:10
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:10
 msgid "A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object specifying the format type, number of digits and precision used to print the numeric output."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:13
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:13
 msgid "A Boolean specifying whether to include **X - Y** data values in the tabular report. The default value is ON."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:16
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:16
 msgid "A Boolean specifying whether to include column totals in the tabular report. The default value is ON."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:19
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:19
 msgid "A Boolean specifying whether to include column summary minimum and maximum values in the tabular report. The default value is ON."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:22
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:22
 msgid "A SymbolicConstant specifying how the width of the tabular report is to be determined. Possible values are NO_LIMIT and SPECIFY. The default value is NO_LIMIT."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:25
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:25
 msgid "A SymbolicConstant specifying how values are to be presented in the tabular report. Possible values are SINGLE_TABLE and SEPARATE_TABLES. The default value is SINGLE_TABLE."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:28
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:28
 msgid "A SymbolicConstant specifying the order in which values are to be sorted within a tabular report. Possible values are ASCENDING and DESCENDING. The default value is ASCENDING."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:33
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.setValues:33
 msgid ":class:`FieldReportOptions`"
 msgstr ""
 
@@ -993,11 +993,11 @@ msgstr ""
 msgid "FreeBodyReportOptions"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:1
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:1
 msgid "The FreeBodyReportOptions object stores settings used by the writeFreeBodyReport method when you write free body computational results to an ASCII file. The FreeBodyReportOptions object has no constructor. Abaqus creates the **freeBodyReportOptions** member when you import the Visualization module."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:14
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:14
 msgid "Check `FreeBodyReportOptions on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodyreportoptionspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1005,40 +1005,40 @@ msgstr ""
 msgid ":py:obj:`setValues <abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues>`\\ \\(\\[numDigits\\, forceThreshold\\, ...\\]\\)"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:1
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:1
 #: ../../None:3:<autosummary>:1
 msgid "This method modifies the FreeBodyReportOptions object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:4
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:4
 msgid "Check `FreeBodyReportOptions.setValues on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-freebodyreportoptionspyc.htm?contextscope=all#simaker-freebodyreportoptionssetvaluespyc>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:7
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:7
 msgid "An Int specifying the number of decimal places. The default value is 3."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:9
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:9
 msgid "A Float specifying the threshold value for force. The default value is 10-6."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:11
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:11
 msgid "A Float specifying the threshold value for moment. The default value is 10-6."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:13
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:13
 msgid "A SymbolicConstant specifying the number format. Possible values are SCIENTIFIC, FIXED, and ENGINEERING. The default value is SCIENTIFIC."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:16
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:16
 msgid "A SymbolicConstant specifying the report format. Possible values are NORMAL_ANNOTATED and COMMA_SEPARATED_VALUES. The default value is NORMAL_ANNOTATED."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:19
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:19
 msgid "A SymbolicConstant specifying the coordinate system type. Possible values are GLOBAL and LOCAL. The default value is GLOBAL."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:23
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:23
 msgid ":class:`FreeBodyReportOptions`"
 msgstr ""
 
@@ -1046,15 +1046,15 @@ msgstr ""
 msgid "OdbFieldVarList"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:1
+#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:1
 msgid "Bases: :py:class:`~typing.List`\\ [:py:class:`str`]"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:1
+#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:1
 msgid "The read-only OdbFieldVarList object is a sequence listing all variables available for the current step and frame. Each item in the sequence is itself a sequence fully describing the given variable."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:13
+#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:13
 msgid "Check `OdbFieldVarList on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbfieldvarlistpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1338,7 +1338,7 @@ msgstr ""
 msgid "This method is called when a class is subclassed."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:0
+#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:0
 msgid "Private Data Attributes:"
 msgstr ""
 
@@ -1350,11 +1350,11 @@ msgstr ""
 msgid "OdbModelFieldVarList"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:1
+#: ../../../../src/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:1
 msgid "The read-only OdbModelFieldVarList object lists all variables available for the model in the current OdbDisplay object."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:12
+#: ../../../../src/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:12
 msgid "Check `OdbModelFieldVarList on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbmodelfieldvarlistpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -1362,15 +1362,15 @@ msgstr ""
 msgid "writeFieldReport"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:1
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:1
 msgid "This function writes a FieldOutput object to a user-defined ASCII file."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:9
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:9
 msgid "Check `writeFieldReport.writeFieldReport on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionwritefieldreportpyc.htm?contextscope=all#simaker-functionwritefieldreportwritefieldreportpyc>`__."
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:33
+#: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:33
 msgid "A sequence of variable description sequences specifying one or more field output variables for which to obtain data. Each variable description sequence contains the following elements:  - **element0**: A String specifying the name of the variable. - **element1**: A SymbolicConstant specifying the output position at which to report data.   Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE,   INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and   WHOLE_REGION. - **element2**: A Sequence of tuples each consisting of a SymbolicConstant specifying the   refinement (COMPONENT or INVARIANT), followed by a String specifying the name of a   component or invariant for which to obtain values.   If this element is omitted, data are written for all components and invariants (if   applicable). This element is required if **element3** (the following element in the tuple)   is included. - **element3 (if applicable)**: A Dictionary with a String key and a String value   specifying a single section point at which to report data. The key specifies a region in   the model; the corresponding value specifies a section point within that region. For   example::      {'shell < MAT > < 7 section points >': 'SPOS (fraction = 1.0)'}    If this element is omitted, data are written for all section points (if applicable).   If this element is omitted, data are written for all section points (if applicable)."
 msgstr ""
 
@@ -1378,6 +1378,6 @@ msgstr ""
 msgid "writeFreeBodyReport"
 msgstr ""
 
-#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:9
+#: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:9
 msgid "Check `writeFreeBodyReport.writeFreeBodyReport on help.3ds.com/2016 <https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-functionwritefreebodyreportpyc.htm?contextscope=all#simaker-functionwritefreebodyreportwritefreebodyreportpyc>`__."
 msgstr ""
