@@ -1,9 +1,11 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (Boolean, NUMBERS, OFF, ON, SymbolicConstant,
-                                              TRANSPARENT, XZPLANE)
+from ..UtilityAndView.abaqusConstants import (Boolean, NUMBERS, OFF, ON, TRANSPARENT,
+                                              XZPLANE)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -32,7 +34,7 @@ class ViewportAnnotationOptions:
         triad: Boolean = ON,
         triadPosition: Optional[int] = None,
         triadColor: str = "",
-        triadLabels: SymbolicConstant = NUMBERS,
+        triadLabels: Literal[C.NUMBERS, C.LETTERS] = NUMBERS,
         triadFont: str = "",
         triadSize: int = 4,
         legend: Boolean = ON,
@@ -42,25 +44,25 @@ class ViewportAnnotationOptions:
         legendPosition: Optional[int] = None,
         legendFont: str = "",
         legendTextColor: str = "",
-        legendBackgroundStyle: SymbolicConstant = TRANSPARENT,
+        legendBackgroundStyle: Literal[C.OTHER, C.MATCH, C.TRANSPARENT] = TRANSPARENT,
         legendBackgroundColor: str = "",
         title: Boolean = ON,
         titleBox: Boolean = OFF,
         titlePosition: Optional[int] = None,
         titleFont: str = "",
         titleTextColor: str = "",
-        titleBackgroundStyle: SymbolicConstant = TRANSPARENT,
+        titleBackgroundStyle: Literal[C.OTHER, C.MATCH, C.TRANSPARENT] = TRANSPARENT,
         titleBackgroundColor: str = "",
         state: Boolean = ON,
         stateBox: Boolean = OFF,
         statePosition: Optional[int] = None,
         stateFont: str = "",
         stateTextColor: str = "",
-        stateBackgroundStyle: SymbolicConstant = TRANSPARENT,
+        stateBackgroundStyle: Literal[C.OTHER, C.MATCH, C.TRANSPARENT] = TRANSPARENT,
         stateBackgroundColor: str = "",
         compass: Boolean = ON,
         compassScale: float = 0,
-        compassPrivilegedPlane: SymbolicConstant = XZPLANE,
+        compassPrivilegedPlane: Literal[C.XYPLANE, C.YZPLANE, C.XZPLANE] = XZPLANE,
     ):
         """This method modifies the ViewportAnnotationOptions object.
 

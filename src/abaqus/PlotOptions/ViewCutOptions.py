@@ -1,10 +1,12 @@
 from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import (ACTIVE_CUT_RANGE, Boolean, CENTROID,
                                               CURRENT_DISPLAY_GROUP, GLOBAL, NORMAL_TANGENTIAL, OFF,
                                               ON, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _CopyOptionsBase
 
 
@@ -122,8 +124,8 @@ class ViewCutOptions(_CopyOptionsBase):
         useOnOptions: Boolean = OFF,
         aboveOptions: Optional[str] = None,
         useAboveOptions: Boolean = OFF,
-        freeBodyCutThru: SymbolicConstant = CURRENT_DISPLAY_GROUP,
-        freeBodyStepThru: SymbolicConstant = ACTIVE_CUT_RANGE,
+        freeBodyCutThru: Literal[C.WHOLE_MODEL, C.CURRENT_DISPLAY_GROUP] = CURRENT_DISPLAY_GROUP,
+        freeBodyStepThru: Literal[C.PREDEFINED_PATH, C.ACTIVE_CUT_RANGE] = ACTIVE_CUT_RANGE,
         numCutFreeBody: int = 1,
         displaySlicing: Boolean = OFF,
         slicingAtPathNodes: Boolean = OFF,
@@ -131,9 +133,9 @@ class ViewCutOptions(_CopyOptionsBase):
         cutFreeBodyMin: float = 0,
         cutFreeBodyMax: float = 0,
         showHeatFlowRate: Union[SymbolicConstant, Boolean] = ON,
-        summationLoc: SymbolicConstant = CENTROID,
-        componentResolution: SymbolicConstant = NORMAL_TANGENTIAL,
-        csysName: SymbolicConstant = GLOBAL,
+        summationLoc: Literal[C.SPECIFY, C.CENTROID] = CENTROID,
+        componentResolution: Literal[C.NORMAL_TANGENTIAL, C.CSYS] = NORMAL_TANGENTIAL,
+        csysName: Literal[C.GLOBAL] = GLOBAL,
         pathName: str = "",
         summationPoint: tuple = (),
         yAxis: tuple = (),

@@ -1,6 +1,7 @@
 from typing import Union, Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AcousticInfiniteSection import AcousticInfiniteSection
 from .AcousticInterfaceSection import AcousticInterfaceSection
@@ -24,8 +25,8 @@ from ..Connector.ConnectorBehaviorOptionArray import ConnectorBehaviorOptionArra
 from ..Odb.OdbBase import OdbBase
 from ..UtilityAndView.abaqusConstants import (Boolean, CONSTANT, DEFAULT, DOF_MODE, FULLY, GRADIENT,
                                               LINEAR, NONE, NO_IDEALIZATION, OFF, ON, SIMPSON,
-                                              SOLVER_DEFAULT, SymbolicConstant, UNIFORM,
-                                              UNSPECIFIED)
+                                              SOLVER_DEFAULT, UNIFORM, UNSPECIFIED)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -108,7 +109,7 @@ class SectionOdb(OdbBase):
     def BeamSection(
         self,
         name: str,
-        integration: SymbolicConstant,
+        integration: Literal[C.DURING_ANALYSIS, C.BEFORE_ANALYSIS],
         profile: str,
         poissonRatio: float = 0,
         thermalExpansion: Boolean = OFF,
@@ -116,19 +117,19 @@ class SectionOdb(OdbBase):
         dependencies: int = 0,
         density: Optional[float] = None,
         referenceTemperature: Optional[float] = None,
-        temperatureVar: SymbolicConstant = LINEAR,
+        temperatureVar: Literal[C.INTERPOLATED, C.LINEAR] = LINEAR,
         alphaDamping: float = 0,
         betaDamping: float = 0,
         compositeDamping: float = 0,
         useFluidInertia: Boolean = OFF,
-        submerged: SymbolicConstant = FULLY,
+        submerged: Literal[C.FULLY, C.HALF] = FULLY,
         fluidMassDensity: Optional[float] = None,
         crossSectionRadius: Optional[float] = None,
         lateralMassCoef: float = 1,
         axialMassCoef: float = 0,
         massOffsetX: float = 0,
         massOffsetY: float = 0,
-        beamShape: SymbolicConstant = CONSTANT,
+        beamShape: Literal[C.CONSTANT, C.TAPERED, C.ODB, C.API] = CONSTANT,
         material: str = "",
         table: tuple = (),
         outputPts: tuple = (),
@@ -275,9 +276,9 @@ class SectionOdb(OdbBase):
     def CohesiveSection(
         self,
         name: str,
-        response: SymbolicConstant,
+        response: Literal[C.TRACTION_SEPARATION, C.GASKET, C.CONTINUUM],
         material: str,
-        initialThicknessType: SymbolicConstant = SOLVER_DEFAULT,
+        initialThicknessType: Literal[C.SOLVER_DEFAULT] = SOLVER_DEFAULT,
         initialThickness: float = 1,
         outOfPlaneThickness: Optional[float] = None,
     ) -> CohesiveSection:
@@ -337,13 +338,13 @@ class SectionOdb(OdbBase):
         name: str,
         layup: SectionLayerArray,
         symmetric: Boolean = OFF,
-        thicknessType: SymbolicConstant = UNIFORM,
+        thicknessType: Literal[C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD] = UNIFORM,
         preIntegrate: Boolean = OFF,
-        poissonDefinition: SymbolicConstant = DEFAULT,
+        poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
-        integrationRule: SymbolicConstant = SIMPSON,
-        temperature: SymbolicConstant = GRADIENT,
-        idealization: SymbolicConstant = NO_IDEALIZATION,
+        integrationRule: Literal[C.GAUSS, C.SIMPSON] = SIMPSON,
+        temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
+        idealization: Literal[C.SMEAR_ALL_LAYERS, C.BENDING, C.MEMBRANE, C.NO_IDEALIZATION] = NO_IDEALIZATION,
         nTemp: Optional[int] = None,
         thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
@@ -495,10 +496,10 @@ class SectionOdb(OdbBase):
     def ConnectorSection(
         self,
         name: str,
-        assembledType: SymbolicConstant = NONE,
-        rotationalType: SymbolicConstant = NONE,
-        translationalType: SymbolicConstant = NONE,
-        integration: SymbolicConstant = UNSPECIFIED,
+        assembledType: Literal[C.NONE] = NONE,
+        rotationalType: Literal[C.NONE] = NONE,
+        translationalType: Literal[C.NONE] = NONE,
+        integration: Literal[C.EXPLICIT, C.IMPLICIT, C.UNSPECIFIED] = UNSPECIFIED,
         u1ReferenceLength: Optional[float] = None,
         u2ReferenceLength: Optional[float] = None,
         u3ReferenceLength: Optional[float] = None,
@@ -511,7 +512,7 @@ class SectionOdb(OdbBase):
         regularize: Boolean = ON,
         defaultTolerance: Boolean = ON,
         regularization: float = 0,
-        extrapolation: SymbolicConstant = CONSTANT,
+        extrapolation: Literal[C.CONSTANT, C.LINEAR] = CONSTANT,
         behaviorOptions: Optional[ConnectorBehaviorOptionArray] = None,
     ) -> ConnectorSection:
         """This method creates a ConnectorSection object.
@@ -668,9 +669,9 @@ class SectionOdb(OdbBase):
         material: str,
         crossSection: float = 1,
         initialGap: float = 0,
-        initialThickness: Union[SymbolicConstant, float] = DEFAULT,
+        initialThickness: Union[Literal[C.DEFAULT], float] = DEFAULT,
         initialVoid: float = 0,
-        stabilizationStiffness: Union[SymbolicConstant, float] = DEFAULT,
+        stabilizationStiffness: Union[Literal[C.DEFAULT], float] = DEFAULT,
     ) -> GasketSection:
         """This method creates a GasketSection object.
 
@@ -730,7 +731,7 @@ class SectionOdb(OdbBase):
         applyThermalStress: Boolean = OFF,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        poissonDefinition: SymbolicConstant = DEFAULT,
+        poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
         useDensity: Boolean = OFF,
         density: float = 0,
@@ -814,13 +815,13 @@ class SectionOdb(OdbBase):
         material: str,
         thickness: float = 0,
         numIntPts: int = 5,
-        thicknessType: SymbolicConstant = UNIFORM,
+        thicknessType: Literal[C.DISCRETE_FIELD, C.NODAL_ANALYTICAL_FIELD, C.ANALYTICAL_FIELD, C.UNIFORM, C.NODAL_DISCRETE_FIELD] = UNIFORM,
         preIntegrate: Boolean = OFF,
-        poissonDefinition: SymbolicConstant = DEFAULT,
+        poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
-        integrationRule: SymbolicConstant = SIMPSON,
-        temperature: SymbolicConstant = GRADIENT,
-        idealization: SymbolicConstant = NO_IDEALIZATION,
+        integrationRule: Literal[C.GAUSS, C.SIMPSON] = SIMPSON,
+        temperature: Literal[C.GRADIENT, C.POINTWISE] = GRADIENT,
+        idealization: Literal[C.SMEAR_ALL_LAYERS, C.BENDING, C.MEMBRANE, C.NO_IDEALIZATION] = NO_IDEALIZATION,
         nTemp: Optional[int] = None,
         thicknessModulus: Optional[float] = None,
         useDensity: Boolean = OFF,
@@ -973,8 +974,8 @@ class SectionOdb(OdbBase):
         name: str,
         material: str,
         thickness: float = 1,
-        thicknessType: SymbolicConstant = UNIFORM,
-        poissonDefinition: SymbolicConstant = DEFAULT,
+        thicknessType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
+        poissonDefinition: Literal[C.DEFAULT] = DEFAULT,
         poisson: float = 0,
         thicknessField: str = "",
     ) -> MembraneSection:
@@ -1039,8 +1040,8 @@ class SectionOdb(OdbBase):
     def MPCSection(
         self,
         name: str,
-        mpcType: SymbolicConstant,
-        userMode: SymbolicConstant = DOF_MODE,
+        mpcType: Literal[C.BEAM_MPC, C.ELBOW_MPC, C.TIE_MPC, C.MPC, C.USER_DEFINED, C.PIN_MPC, C.LINK_MPC],
+        userMode: Literal[C.USER_DEFINED, C.MPC, C.NODE_MODE, C.DOF_MODE] = DOF_MODE,
         userType: int = 0,
     ) -> MPCSection:
         """This method creates a MPCSection object.

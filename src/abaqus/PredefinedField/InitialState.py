@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .PredefinedField import PredefinedField
 from ..Assembly.PartInstanceArray import PartInstanceArray
 from ..UtilityAndView.abaqusConstants import Boolean, LAST_STEP, OFF, STEP_END, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -51,8 +53,8 @@ class InitialState(PredefinedField):
         name: str,
         instances: PartInstanceArray,
         fileName: str,
-        endStep: SymbolicConstant = LAST_STEP,
-        endIncrement: SymbolicConstant = STEP_END,
+        endStep: Literal[C.LAST_STEP] = LAST_STEP,
+        endIncrement: Literal[C.STEP_END] = STEP_END,
         updateReferenceConfiguration: Boolean = OFF,
     ):
         """This method creates an InitialState predefined field object.
@@ -93,8 +95,8 @@ class InitialState(PredefinedField):
     @abaqus_method_doc
     def setValues(
         self,
-        endStep: SymbolicConstant = LAST_STEP,
-        endIncrement: SymbolicConstant = STEP_END,
+        endStep: Literal[C.LAST_STEP] = LAST_STEP,
+        endIncrement: Literal[C.STEP_END] = STEP_END,
         updateReferenceConfiguration: Boolean = OFF,
     ):
         """This method modifies the InitialState object.

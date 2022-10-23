@@ -1,6 +1,7 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .BeadTask import BeadTask
 from .ShapeTask import ShapeTask
@@ -11,7 +12,8 @@ from ..UtilityAndView.abaqusConstants import (AVERAGE_EDGE_LENGTH, Boolean, CONS
                                               CONSTRAINED_LAPLACIAN, DEFAULT, EVERY_CYCLE, FE_SAFE,
                                               GENERAL_OPTIMIZATION, LOW, MEDIUM, MINIMUM, MODEL,
                                               NORMAL, OFF, ON, POSITIONS, STANDARD,
-                                              SymbolicConstant, TASK_REGION_LAYERS, VALUE)
+                                              TASK_REGION_LAYERS, VALUE)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -28,25 +30,35 @@ class OptimizationTaskModel(ModelBase):
     def BeadTask(
         self,
         name: str,
+<<<<<<< HEAD
         algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
+=======
+        abaqusSensitivities: Boolean = True,
+        algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = GENERAL_OPTIMIZATION,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         areBCRegionsFrozen: Boolean = OFF,
         beadIter: str = 1,
         beadMaxMembraneStress: str = 0,
         beadMinStress: str = 0,
         beadPerturbation: str = 0,
-        beadWidth: SymbolicConstant = DEFAULT,
+        beadWidth: Literal[C.DEFAULT] = DEFAULT,
         curveSmooth: str = 5,
         filterRadius: str = 4,
-        filterRadiusBy: SymbolicConstant = VALUE,
+        filterRadiusBy: Literal[C.VALUE, C.REFERENCE] = VALUE,
         flipNormalDir: Boolean = OFF,
-        frozenBoundaryConditionRegion: SymbolicConstant = MODEL,
+        frozenBoundaryConditionRegion: Literal[C.MODEL] = MODEL,
         isSensCalcOnlyOnDesignNodes: Boolean = OFF,
-        modeTrackingRegion: SymbolicConstant = MODEL,
+        modeTrackingRegion: Literal[C.MODEL] = MODEL,
         nodalMoveLimit: float = 0,
-        nodeSmooth: SymbolicConstant = DEFAULT,
-        nodeUpdateStrategy: SymbolicConstant = CONSERVATIVE,
+        nodeSmooth: Literal[C.DEFAULT] = DEFAULT,
+        nodeUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = CONSERVATIVE,
         numTrackedModes: int = 5,
+<<<<<<< HEAD
         updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
+=======
+        updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
+        groupOperator: Boolean = OFF,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ) -> BeadTask:
         """This method creates a BeadTask object.
 
@@ -151,10 +163,15 @@ class OptimizationTaskModel(ModelBase):
     def ShapeTask(
         self,
         name: str,
+<<<<<<< HEAD
         absoluteStepSizeControl: SymbolicConstant = MINIMUM,
+=======
+        abaqusSensitivities: Boolean = True,
+        absoluteStepSizeControl: Literal[C.MINIMUM, C.AVERAGE] = MINIMUM,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         activateDurability: Boolean = ON,
         additionalDurabilityFiles: str = "",
-        constrainedLaplacianConvergenceLevel: SymbolicConstant = NORMAL,
+        constrainedLaplacianConvergenceLevel: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
         curvatureSmoothingEdgeLength: float = 5,
         durabilityInputfile: str = "",
         durabilitySolver: str = FE_SAFE,
@@ -163,36 +180,41 @@ class OptimizationTaskModel(ModelBase):
         filterExponent: float = 1,
         filterMaxRadius: Optional[float] = None,
         filterRadiusReduction: Optional[float] = None,
-        firstCycleDeletedVolumeTechnique: Union[SymbolicConstant, Boolean] = OFF,
+        firstCycleDeletedVolumeTechnique: Union[Literal[C.PERCENTAGE, C.ABSOLUTE], Boolean] = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
-        frozenBoundaryConditionRegion: SymbolicConstant = MODEL,
-        geometricRestrictionEvaluationFrequency: SymbolicConstant = LOW,
+        frozenBoundaryConditionRegion: Literal[C.MODEL] = MODEL,
+        geometricRestrictionEvaluationFrequency: Literal[C.LOW, C.MEDIUM, C.HIGH] = LOW,
         growthScaleFactor: float = 1,
         haltUponViolation: Boolean = OFF,
         layerReferenceRegion: Optional[str] = None,
-        meshSmoothingRegionMethod: SymbolicConstant = TASK_REGION_LAYERS,
-        meshSmoothingStrategy: SymbolicConstant = CONSTRAINED_LAPLACIAN,
-        midsideInterpolation: SymbolicConstant = POSITIONS,
-        numFreeNodeLayers: SymbolicConstant = 0,
+        meshSmoothingRegionMethod: Literal[C.NUMBER_OF_LAYERS, C.REGION, C.TASK_REGION_LAYERS] = TASK_REGION_LAYERS,
+        meshSmoothingStrategy: Literal[C.CONSTRAINED_LAPLACIAN, C.LOCAL_GRADIENT] = CONSTRAINED_LAPLACIAN,
+        midsideInterpolation: Literal[C.POSITIONS, C.OPTIMIZATION_DISPLACEMENT] = POSITIONS,
+        numFreeNodeLayers: Literal[C.FIX_NONE] = 0,
         numSmoothedElementLayers: Optional[int] = None,
         presumeFeasibleBCRegionAtStart: Boolean = ON,
         quadMaxAngle: float = 160,
         quadMinAngle: float = 20,
         quadSkew: float = 30,
         quadTaper: float = 0,
-        region: SymbolicConstant = MODEL,
+        region: Literal[C.MODEL] = MODEL,
         reportPoorQualityElements: Boolean = OFF,
         reportQualityViolation: Boolean = OFF,
         shrinkScaleFactor: float = 1,
         smoothingRegion: Optional[str] = None,
-        targetMeshQuality: SymbolicConstant = LOW,
+        targetMeshQuality: Literal[C.LOW, C.MEDIUM, C.NONE, C.HIGH] = LOW,
         tetAspectRatio: float = 100,
         tetMaxAspect: float = 8,
         tetMinAspect: float = 0,
         tetSkew: float = 100,
         triMaxAngle: float = 140,
         triMinAngle: float = 20,
+<<<<<<< HEAD
         updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
+=======
+        updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
+        groupOperator: Boolean = OFF,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ) -> ShapeTask:
         """This method creates a ShapeTask object.
 
@@ -409,7 +431,12 @@ class OptimizationTaskModel(ModelBase):
         objectiveFunctionDeltaStopCriteria: float = 0,
         stopCriteriaDesignCycle: int = 4,
         thicknessMoveLimit: float = 0,
+<<<<<<< HEAD
         thicknessUpdateStrategy: SymbolicConstant = NORMAL,
+=======
+        thicknessUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
+        groupOperator: Boolean = OFF,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ) -> SizingTask:
         """This method creates a SizingTask object.
 
@@ -476,34 +503,39 @@ class OptimizationTaskModel(ModelBase):
     def TopologyTask(
         self,
         name: str,
+<<<<<<< HEAD
         algorithm: SymbolicConstant = GENERAL_OPTIMIZATION,
+=======
+        abaqusSensitivities: Boolean = True,
+        algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = GENERAL_OPTIMIZATION,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         densityMoveLimit: float = 0,
-        densityUpdateStrategy: SymbolicConstant = NORMAL,
+        densityUpdateStrategy: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
         elementDensityDeltaStopCriteria: float = 0,
         filterRadius: Optional[float] = None,
         firstCycleDeletedVolume: float = 5,
-        firstCycleDeletedVolumeTechnique: Union[SymbolicConstant, Boolean] = OFF,
+        firstCycleDeletedVolumeTechnique: Union[Literal[C.PERCENTAGE, C.ABSOLUTE], Boolean] = OFF,
         freezeBoundaryConditionRegions: Boolean = OFF,
         freezeLoadRegions: Boolean = ON,
         frequencySpectrumWeight: float = 6,
-        initialDensity: SymbolicConstant = DEFAULT,
+        initialDensity: Literal[C.DEFAULT] = DEFAULT,
         materialInterpolationPenalty: float = 3,
-        materialInterpolationTechnique: SymbolicConstant = DEFAULT,
+        materialInterpolationTechnique: Literal[C.SIMP, C.DEFAULT, C.RAMP] = DEFAULT,
         maxDensity: float = 1,
         minDensity: Optional[float] = None,
-        modeTrackingRegion: SymbolicConstant = MODEL,
+        modeTrackingRegion: Literal[C.MODEL] = MODEL,
         numDesignCycles: int = 15,
         numFulfilledStopCriteria: int = 2,
         numTrackedModes: int = 5,
         objectiveFunctionDeltaStopCriteria: Optional[float] = None,
-        region: SymbolicConstant = MODEL,
-        softDeletionMethod: SymbolicConstant = STANDARD,
+        region: Literal[C.MODEL] = MODEL,
+        softDeletionMethod: Literal[C.STANDARD, C.VOLUME_COMPRESSION, C.MAX_SHEAR_STRAIN, C.AGGRESSIVE, C.MIN_PRINCIPAL_STRAIN, C.MAX_ELASTOPLASTIC_STRAIN] = STANDARD,
         softDeletionRadius: float = 0,
         softDeletionRegion: Optional[str] = None,
         softDeletionThreshold: Optional[float] = None,
-        stepSize: SymbolicConstant = MEDIUM,
+        stepSize: Literal[C.SMALL, C.LARGE, C.MODERATE, C.VERY_SMALL, C.DYNAMIC, C.MEDIUM] = MEDIUM,
         stiffnessMassDamping: Union[
-            SymbolicConstant, float
+            Literal[C.AVERAGE_EDGE_LENGTH], float
         ] = AVERAGE_EDGE_LENGTH,
         stopCriteriaDesignCycle: int = 4,
         structuralMassDamping: Optional[float] = None,

@@ -1,10 +1,12 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -39,7 +41,7 @@ class Gravity(Load):
         self,
         name: str,
         createStepName: str,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         region: Optional[Region] = None,
         comp1: Optional[float] = None,
@@ -92,7 +94,7 @@ class Gravity(Load):
     @abaqus_method_doc
     def setValues(
         self,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.UNIFORM] = UNIFORM,
         field: str = "",
         region: Optional[Region] = None,
         comp1: Optional[float] = None,
@@ -133,7 +135,7 @@ class Gravity(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        comp1: Union[SymbolicConstant, float] = ...,
+        comp1: Union[Literal[C.FREED, C.UNCHANGED], float] = ...,
         comp2: Union[SymbolicConstant, float] = ...,
         comp3: Union[SymbolicConstant, float] = ...,
         amplitude: str = "",

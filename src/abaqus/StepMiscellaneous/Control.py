@@ -1,8 +1,10 @@
 from typing import Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, OFF, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, OFF, ON
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -22,19 +24,19 @@ class Control:
         allowPropagation: Boolean = ON,
         resetDefaultValues: Boolean = OFF,
         discontinuous: Boolean = OFF,
-        constraints: Union[SymbolicConstant, float] = DEFAULT,
-        lineSearch: Union[SymbolicConstant, float] = DEFAULT,
-        timeIncrementation: Union[SymbolicConstant, float] = DEFAULT,
-        directCyclic: Union[SymbolicConstant, float] = DEFAULT,
-        concentrationField: Union[SymbolicConstant, float] = DEFAULT,
-        displacementField: Union[SymbolicConstant, float] = DEFAULT,
-        electricalPotentialField: Union[SymbolicConstant, float] = DEFAULT,
-        globalField: Union[SymbolicConstant, float] = DEFAULT,
-        hydrostaticFluidPressureField: Union[SymbolicConstant, float] = DEFAULT,
-        poreFluidPressureField: Union[SymbolicConstant, float] = DEFAULT,
-        rotationField: Union[SymbolicConstant, float] = DEFAULT,
-        temperatureField: Union[SymbolicConstant, float] = DEFAULT,
-        vcctLinearScaling: Union[SymbolicConstant, float] = DEFAULT,
+        constraints: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        lineSearch: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        timeIncrementation: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        directCyclic: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        concentrationField: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        displacementField: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        electricalPotentialField: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        globalField: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        hydrostaticFluidPressureField: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        poreFluidPressureField: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        rotationField: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        temperatureField: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        vcctLinearScaling: Union[Literal[C.DEFAULT, C.VCCT], float] = DEFAULT,
     ):
         """This method modifies the Control object.
 

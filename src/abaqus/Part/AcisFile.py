@@ -1,8 +1,10 @@
 from typing import Optional, Union
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import Boolean, DEFAULT, OFF, ON, SOLID, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -54,7 +56,7 @@ class AcisFile:
     def openCatia(
         self,
         fileName: str,
-        topology: Optional[SymbolicConstant] = None,
+        topology: Optional[Literal[C.WIRE, C.SOLID, C.SHELL]] = None,
         convertUnits: Union[SymbolicConstant, Boolean] = OFF,
         combineBodies: Boolean = OFF,
     ):
@@ -96,7 +98,7 @@ class AcisFile:
         self,
         fileName: str,
         fileType: str,
-        topology: SymbolicConstant = SOLID,
+        topology: Literal[C.WIRE, C.SOLID, C.SHELL] = SOLID,
         convertUnits: Boolean = OFF,
     ):
         """This method creates an AcisFile object from a file containing Elysium Neutral
@@ -138,11 +140,11 @@ class AcisFile:
     def openIges(
         self,
         fileName: str,
-        trimCurve: SymbolicConstant = DEFAULT,
-        scaleFromFile: Union[SymbolicConstant, Boolean] = OFF,
+        trimCurve: Literal[C.IGES, C.DEFAULT] = DEFAULT,
+        scaleFromFile: Union[Literal[C.IGES], Boolean] = OFF,
         msbo: Boolean = False,
         includedLayers: tuple = (),
-        topology: SymbolicConstant = SOLID,
+        topology: Literal[C.WIRE, C.SOLID, C.SHELL] = SOLID,
         uniteWires: Union[SymbolicConstant, Boolean] = ON,
     ):
         """This method creates an AcisFile object from a file containing IGES-format geometry. This
@@ -199,7 +201,7 @@ class AcisFile:
         ...
 
     @abaqus_method_doc
-    def openParasolid(self, fileName: str, topology: SymbolicConstant = SOLID):
+    def openParasolid(self, fileName: str, topology: Literal[C.WIRE, C.SOLID, C.SHELL] = SOLID):
         """This method creates an AcisFile object from a file containing Parasolid-format geometry.
         This object is subsequently used by the PartFromGeometryFile method.
 
@@ -284,7 +286,46 @@ class AcisFile:
         ...
 
     @abaqus_method_doc
+<<<<<<< HEAD
     def writeAcisFile(self, fileName: str, version: float = None):
+=======
+    def openSolidworks(self, fileName: str, topology: Literal[C.WIRE, C.SOLID, C.SHELL] = SOLID):
+        """This method creates an AcisFile object from a file containing Solidworks format
+        geometry. This object is subsequently used by the PartFromGeometryFile method.
+
+        .. note::
+            This function can be accessed by::
+
+                mdb.openAcis
+
+        .. versionadded:: 2020
+            The `openSolidworks` method was added.
+
+        Parameters
+        ----------
+        fileName
+            A String specifying the path to the Solidworks file to open.
+        topology
+            A SymbolicConstant specifying the topology of the data to be read from the file and of
+            the part to be created. Possible values are SOLID, SHELL, and WIRE. If **topology** = SOLID,
+            Abaqus/CAE attempts to attach cells to create a solid entity. If **topology** = SHELL,
+            Abaqus/CAE builds the body as a shell entity, not as a solid entity. The default value
+            is SOLID.
+
+        Returns
+        -------
+            An AcisFile object.
+
+        Raises
+        ------
+        Texterror: Failed to read Solidworks file
+            The data in the Solidworks file are corrupted.
+        """
+        ...
+
+    @abaqus_method_doc
+    def writeAcisFile(self, fileName: str, version: Optional[float] = None):
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         """This method exports the assembly to a named file in ACIS format.
 
         Parameters

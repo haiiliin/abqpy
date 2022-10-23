@@ -1,6 +1,7 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Interaction import Interaction
 from ..Datum.DatumAxis import DatumAxis
@@ -8,6 +9,7 @@ from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTED, OFF, OMIT, ON, SELECTIVE, SURFACE_TO_SURFACE,
                                               SymbolicConstant,
                                               TWO_CONFIG)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -181,33 +183,48 @@ class SurfaceToSurfaceContactStd(Interaction):
         createStepName: str,
         master: Region,
         slave: Region,
-        sliding: SymbolicConstant,
+        sliding: Literal[C.SMALL, C.FINITE],
         interactionProperty: str,
+<<<<<<< HEAD
         interferenceType: Optional[SymbolicConstant] = None,
+=======
+        interferenceType: Literal[C.UNIFORM, C.NONE, C.SHRINK_FIT] = NONE,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         overclosure: float = 0,
-        interferenceDirectionType: SymbolicConstant = COMPUTED,
+        interferenceDirectionType: Literal[C.COMPUTED, C.DIRECTION_COSINE] = COMPUTED,
         direction: tuple = (),
         amplitude: str = "",
         smooth: float = 0,
         hcrit: float = 0,
         extensionZone: float = 0,
+<<<<<<< HEAD
         adjustMethod: Optional[SymbolicConstant] = None,
+=======
+        adjustMethod: Literal[C.SET, C.TOLERANCE, C.OVERCLOSED, C.NONE] = NONE,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         adjustTolerance: float = 0,
         adjustSet: Optional[Region] = None,
-        enforcement: SymbolicConstant = SURFACE_TO_SURFACE,
+        enforcement: Literal[C.NODE_TO_SURFACE, C.SURFACE_TO_SURFACE] = SURFACE_TO_SURFACE,
         thickness: Boolean = ON,
         contactControls: str = "",
         tied: Boolean = OFF,
-        initialClearance: Union[SymbolicConstant, float] = OMIT,
+        initialClearance: Union[Literal[C.OMIT, C.COMPUTED], float] = OMIT,
         halfThreadAngle: Optional[str] = None,
         pitch: Optional[str] = None,
-        majorBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
-        meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
+        meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
+<<<<<<< HEAD
         surfaceSmoothing: Optional[SymbolicConstant] = None,
         bondingSet: Optional[Region] = None,
+=======
+        surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
+        bondingSet: Optional[Region] = None,
+        handedness: Literal[C.RIGHT, C.LEFT] = RIGHT,
+        normalAdjustment: Optional[Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT]] = None,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method creates a SurfaceToSurfaceContactStd object.
 
@@ -342,31 +359,46 @@ class SurfaceToSurfaceContactStd(Interaction):
     @abaqus_method_doc
     def setValues(
         self,
+<<<<<<< HEAD
         interferenceType: Optional[SymbolicConstant] = None,
+=======
+        interferenceType: Literal[C.UNIFORM, C.NONE, C.SHRINK_FIT] = NONE,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         overclosure: float = 0,
-        interferenceDirectionType: SymbolicConstant = COMPUTED,
+        interferenceDirectionType: Literal[C.COMPUTED, C.DIRECTION_COSINE] = COMPUTED,
         direction: tuple = (),
         amplitude: str = "",
         smooth: float = 0,
         hcrit: float = 0,
         extensionZone: float = 0,
+<<<<<<< HEAD
         adjustMethod: Optional[SymbolicConstant] = None,
+=======
+        adjustMethod: Literal[C.SET, C.TOLERANCE, C.OVERCLOSED, C.NONE] = NONE,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         adjustTolerance: float = 0,
         adjustSet: Optional[Region] = None,
-        enforcement: SymbolicConstant = SURFACE_TO_SURFACE,
+        enforcement: Literal[C.NODE_TO_SURFACE, C.SURFACE_TO_SURFACE] = SURFACE_TO_SURFACE,
         thickness: Boolean = ON,
         contactControls: str = "",
         tied: Boolean = OFF,
-        initialClearance: Union[SymbolicConstant, float] = OMIT,
+        initialClearance: Union[Literal[C.OMIT, C.COMPUTED], float] = OMIT,
         halfThreadAngle: Optional[str] = None,
         pitch: Optional[str] = None,
-        majorBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
-        meanBoltDiameter: Union[SymbolicConstant, float] = COMPUTED,
+        majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
+        meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         datumAxis: Optional[DatumAxis] = None, 
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
+<<<<<<< HEAD
         surfaceSmoothing: Optional[SymbolicConstant] = None,
         bondingSet: Optional[Region] = None,
+=======
+        surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
+        bondingSet: Optional[Region] = None,
+        handedness: Literal[C.RIGHT, C.LEFT] = RIGHT,
+        normalAdjustment: Optional[Literal[C.AXIAL, C.LOCATION, C.COMPONENT, C.UNIFORM, C.DEPENDENT]] = None,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method modifies the data for an existing SurfaceToSurfaceContactStd object in the
         step where it is created.
@@ -472,9 +504,13 @@ class SurfaceToSurfaceContactStd(Interaction):
         self,
         stepName: str,
         interactionProperty: str = "",
+<<<<<<< HEAD
         interferenceType: Optional[SymbolicConstant] = None,
+=======
+        interferenceType: Literal[C.UNIFORM, C.NONE, C.SHRINK_FIT] = NONE,
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         overclosure: float = 0,
-        interferenceDirectionType: SymbolicConstant = COMPUTED,
+        interferenceDirectionType: Literal[C.COMPUTED, C.DIRECTION_COSINE] = COMPUTED,
         direction: tuple = (),
         amplitude: str = "",
         contactControls: str = "",

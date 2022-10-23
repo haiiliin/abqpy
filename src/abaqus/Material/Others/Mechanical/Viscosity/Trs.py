@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from .....UtilityAndView.abaqusConstants import SymbolicConstant, WLF
+from .....UtilityAndView.abaqusConstants import WLF
+from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -30,7 +32,7 @@ class Trs:
     """
 
     @abaqus_method_doc
-    def __init__(self, definition: SymbolicConstant = WLF, table: tuple = ()):
+    def __init__(self, definition: Literal[C.USER, C.WLF, C.ARRHENIUS] = WLF, table: tuple = ()):
         """This method creates a Trs object.
 
         .. note:: 

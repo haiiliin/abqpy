@@ -1,7 +1,9 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import (ADVANCING_FRONT, Boolean, HEX, OFF, ON,
                                               QUAD_DOMINATED, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -21,9 +23,9 @@ class MesherOptions:
     @abaqus_method_doc
     def setValues(
         self,
-        elemShape2D: SymbolicConstant = QUAD_DOMINATED,
-        elemShape3D: SymbolicConstant = HEX,
-        quadAlgorithm: SymbolicConstant = ADVANCING_FRONT,
+        elemShape2D: Literal[C.TRI, C.QUAD, C.QUAD_DOMINATED] = QUAD_DOMINATED,
+        elemShape3D: Literal[C.TET, C.HEX_DOMINATED, C.HEX, C.WEDGE] = HEX,
+        quadAlgorithm: Literal[C.MEDIAL_AXIS, C.ADVANCING_FRONT] = ADVANCING_FRONT,
         allowMapped: Boolean = OFF,
         minTransition: Boolean = ON,
     ):

@@ -1,10 +1,16 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import (Boolean, EXTRAPOLATE_COMPUTE_AVERAGE, FIELD_OUTPUT,
                                               FLOAT, NONE, OFF, ON, REAL, SCALAR, SymbolicConstant,
+<<<<<<< HEAD
                                               UNDEFINED_POSITION, DEFAULT)
+=======
+                                              UNDEFINED_POSITION)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
 
 
 @abaqus_class_doc
@@ -159,25 +165,25 @@ class OdbMeshRegionData:
         variableLabel: str,
         stepIndex: int = 0,
         frameIndex: int = 0,
-        outputPosition: SymbolicConstant = UNDEFINED_POSITION,
-        dataType: SymbolicConstant = SCALAR,
-        storageType: SymbolicConstant = FLOAT,
-        quantityToPlot: SymbolicConstant = FIELD_OUTPUT,
+        outputPosition: Literal[C.ELEMENT_NODAL, C.ELEMENT_FACE, C.WHOLE_ELEMENT, C.NODAL, C.UNDEFINED_POSITION, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.WHOLE_MODEL, C.GENERAL_PARTICLE, C.WHOLE_PART_INSTANCE, C.WHOLE_REGION] = UNDEFINED_POSITION,
+        dataType: Literal[C.QUATERNION_3D, C.BOOLEAN, C.QUATERNION_2D, C.TENSOR_2D_SURFACE, C.VECTOR, C.INTEGER, C.TENSOR, C.SCALAR, C.TENSOR_3D_FULL, C.TENSOR_3D_SURFACE, C.ENUMERATION, C.TENSOR_2D_PLANAR, C.TENSOR_3D_PLANAR] = SCALAR,
+        storageType: Literal[C.INTEGER, C.DOUBLE, C.FLOAT, C.BOOLEAN] = FLOAT,
+        quantityToPlot: Literal[C.DISCONTINUITIES, C.FIELD_OUTPUT] = FIELD_OUTPUT,
         averageElementOutput: str = OFF,
         useRegionBoundaries: str = OFF,
-        regionBoundaries: SymbolicConstant = NONE,
+        regionBoundaries: Literal[C.DISPLAY_GROUPS, C.ODB_REGIONS, C.NONE, C.ELEMENT_SET] = NONE,
         includeFeatureBoundaries: str = ON,
         featureAngle: float = 20,
         averageOnlyDisplayed: str = OFF,
         averagingThreshold: float = 75,
-        computeOrder: SymbolicConstant = EXTRAPOLATE_COMPUTE_AVERAGE,
-        numericForm: SymbolicConstant = REAL,
+        computeOrder: Literal[C.EXTRAPOLATE_COMPUTE, C.RAW_DATA, C.EXTRAPOLATE_COMPUTE_DISCONTINUITIES, C.EXTRAPOLATE_COMPUTE_AVERAGE, C.EXTRAPOLATE_AVERAGE_COMPUTE] = EXTRAPOLATE_COMPUTE_AVERAGE,
+        numericForm: Literal[C.COMPLEX_PHASE, C.COMPLEX_MAG_AT_ANGLE, C.REAL, C.IMAGINARY, C.COMPLEX_MAGNITUDE] = REAL,
         complexAngle: float = 0,
         transformationType: SymbolicConstant = DEFAULT,
         sectionPoint: str = "",
-        refinementType: Optional[SymbolicConstant] = None,
+        refinementType: Optional[Literal[C.COMPONENT, C.NO_REFINEMENT, C.INVARIANT]] = None,
         refinementLabel: str = "",
-        displayOutputPosition: Optional[SymbolicConstant] = None,
+        displayOutputPosition: Optional[Literal[C.ELEMENT_NODAL, C.ELEMENT_FACE, C.WHOLE_ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.WHOLE_MODEL, C.GENERAL_PARTICLE, C.WHOLE_PART_INSTANCE, C.WHOLE_REGION]] = None,
     ):
         """This method creates an OdbMeshRegionData object.
 

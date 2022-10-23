@@ -1,12 +1,14 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Fastener import Fastener
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import (ALL, AXIS_1, Boolean, CONNECTOR, CONTINUUM, DEFAULT,
                                               FACETOFACE, MODEL, OFF, ON, SymbolicConstant, UNIFORM)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -168,23 +170,23 @@ class PointFastener(Fastener):
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
-        attachmentMethod: SymbolicConstant = FACETOFACE,
-        influenceRadius: Union[SymbolicConstant, float] = DEFAULT,
-        searchRadius: Union[SymbolicConstant, float] = DEFAULT,
-        maximumLayers: SymbolicConstant = ALL,
-        coupling: SymbolicConstant = CONTINUUM,
-        weightingMethod: SymbolicConstant = UNIFORM,
+        attachmentMethod: Literal[C.FACETOEDGE, C.EDGETOFACE, C.EDGETOEDGE, C.FACETOFACE] = FACETOFACE,
+        influenceRadius: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        searchRadius: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        maximumLayers: Literal[C.ALL] = ALL,
+        coupling: Literal[C.STRUCTURAL, C.CONTINUUM] = CONTINUUM,
+        weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
         additionalMass: float = 0,
         adjustOrientation: Boolean = ON,
         localCsys: Optional[int] = None,
-        connectionType: SymbolicConstant = CONNECTOR,
+        connectionType: Literal[C.CONNECTOR, C.BEAM_MPC] = CONNECTOR,
         sectionName: str = "",
         connectorOrientationLocalCsys1: Optional[int] = None,
-        axis1: SymbolicConstant = AXIS_1,
+        axis1: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle1: float = 0,
         orient2SameAs1: Boolean = ON,
         connectorOrientationLocalCsys2: Optional[int] = None,
-        axis2: SymbolicConstant = AXIS_1,
+        axis2: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle2: float = 0,
         unsorted: Boolean = OFF,
     ):
@@ -315,23 +317,23 @@ class PointFastener(Fastener):
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
-        attachmentMethod: SymbolicConstant = FACETOFACE,
-        influenceRadius: Union[SymbolicConstant, float] = DEFAULT,
-        searchRadius: Union[SymbolicConstant, float] = DEFAULT,
-        maximumLayers: SymbolicConstant = ALL,
-        coupling: SymbolicConstant = CONTINUUM,
-        weightingMethod: SymbolicConstant = UNIFORM,
+        attachmentMethod: Literal[C.FACETOEDGE, C.EDGETOFACE, C.EDGETOEDGE, C.FACETOFACE] = FACETOFACE,
+        influenceRadius: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        searchRadius: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        maximumLayers: Literal[C.ALL] = ALL,
+        coupling: Literal[C.STRUCTURAL, C.CONTINUUM] = CONTINUUM,
+        weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
         additionalMass: float = 0,
         adjustOrientation: Boolean = ON,
         localCsys: Optional[int] = None,
-        connectionType: SymbolicConstant = CONNECTOR,
+        connectionType: Literal[C.CONNECTOR, C.BEAM_MPC] = CONNECTOR,
         sectionName: str = "",
         connectorOrientationLocalCsys1: Optional[int] = None,
-        axis1: SymbolicConstant = AXIS_1,
+        axis1: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle1: float = 0,
         orient2SameAs1: Boolean = ON,
         connectorOrientationLocalCsys2: Optional[int] = None,
-        axis2: SymbolicConstant = AXIS_1,
+        axis2: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle2: float = 0,
         unsorted: Boolean = OFF,
     ):

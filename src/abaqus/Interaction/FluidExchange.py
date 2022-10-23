@@ -1,7 +1,9 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Interaction import Interaction
 from ..UtilityAndView.abaqusConstants import SymbolicConstant, TO_ENVIRONMENT
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -52,7 +54,7 @@ class FluidExchange(Interaction):
         createStepName: str,
         firstCavity: str,
         interactionProperty: str,
-        definition: SymbolicConstant = TO_ENVIRONMENT,
+        definition: Literal[C.BETWEEN_CAVITIES, C.TO_ENVIRONMENT] = TO_ENVIRONMENT,
         secondCavity: str = "",
         exchangeArea: float = 1,
     ):
@@ -93,7 +95,7 @@ class FluidExchange(Interaction):
     @abaqus_method_doc
     def setValues(
         self,
-        definition: SymbolicConstant = TO_ENVIRONMENT,
+        definition: Literal[C.BETWEEN_CAVITIES, C.TO_ENVIRONMENT] = TO_ENVIRONMENT,
         secondCavity: str = "",
         exchangeArea: float = 1,
     ):
