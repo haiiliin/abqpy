@@ -1,0 +1,43 @@
+name: Delete deleted files when backport is in conflicts
+
+on:
+  pull_request:
+    branches:
+    - 20**
+    types: [created]
+
+jobs:
+  delete-deleted-files:
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'backport') && contains(github.event.pull_request.labels.*.name, 'conflicts') }}
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.10'
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+    - name: Delete deleted files
+      run: |
+        echo "pull request body = ${{ github.event.pull_request.body }}"
+        python ".github/delete-deleted-files.py" "${{ github.event.pull_request.body }}"
+    - name: Commit files
+      run: |
+        git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git commit -m "Delete conflicted deleted files by GitHub Action https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@v0.6.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref_name }}
+    - name: Comment PR
+      uses: Beakyn/gha-comment-pull-request@v1.0.1
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      with:
+        comment-message: |
+          Hi @${{ github.event.pull_request.user.login }}, I have deleted the conflicted deleted files in this pull request. 
+          Please check it again. Thanks!
+        delete-previous-comment: true
