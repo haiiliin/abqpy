@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1894,7 +1894,7 @@ msgstr ""
 #: abaqus.Material.Elastic.HyperElastic.ViscoElastic.Hysteresis.Hysteresis:19
 #: abaqus.Material.Elastic.HyperElastic.ViscoElastic.Viscoelastic.Viscoelastic:72
 #: abaqus.Material.Elastic.HypoElastic.Hypoelastic.Hypoelastic:19
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:128
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic:115
 #: abaqus.Material.Elastic.Linear.FailStrain.FailStrain:23
 #: abaqus.Material.Elastic.Linear.FailStress.FailStress:26
 #: abaqus.Material.Elastic.LowDensityFoam.LowDensityFoam.LowDensityFoam:11
@@ -1902,7 +1902,7 @@ msgstr ""
 #: abaqus.Material.Elastic.SuperElastic.SuperElasticity.SuperElasticity:25
 #: abaqus.Material.Eos.DetonationPoint.DetonationPoint:20
 #: abaqus.Material.Eos.EosCompaction.EosCompaction:11
-#: abaqus.Material.Gap.GapFlow.GapFlow:47
+#: abaqus.Material.Gap.GapFlow.GapFlow:30
 #: abaqus.Material.Gasket.ContactArea.ContactArea:23
 #: abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic:21
 #: abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior:67
@@ -1952,7 +1952,7 @@ msgstr ""
 #: abaqus.Material.Plastic.Concrete.FailureRatios.FailureRatios:29
 #: abaqus.Material.Plastic.Concrete.ShearRetention.ShearRetention:25
 #: abaqus.Material.Plastic.Concrete.TensionStiffening.TensionStiffening:30
-#: abaqus.Material.Plastic.Creep.Creep.Creep:77
+#: abaqus.Material.Plastic.Creep.Creep.Creep:33
 #: abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening:20
 #: abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity:39
 #: abaqus.Material.Plastic.CrushableFoam.CrushableFoam.CrushableFoam:33
@@ -1961,8 +1961,8 @@ msgstr ""
 #: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerCreep.DruckerPragerCreep:33
 #: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening:24
 #: abaqus.Material.Plastic.DruckerPrager.Extended.TriaxialTestData.TriaxialTestData:16
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:43
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:43
+#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:33
+#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:33
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapHardening.CapHardening:20
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapPlasticity.CapPlasticity:27
 #: abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature:19
@@ -1977,7 +1977,7 @@ msgstr ""
 #: abaqus.Material.Plastic.Metal.Porous.PorousMetalPlasticity.PorousMetalPlasticity:21
 #: abaqus.Material.Plastic.Metal.Porous.VoidNucleation.VoidNucleation:21
 #: abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent:38
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:80
+#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:32
 #: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening:21
 #: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity:21
 #: abaqus.Material.Plastic.MohrCoulomb.TensionCutOff.TensionCutOff:22
@@ -2128,8 +2128,8 @@ msgstr ""
 msgid ":py:obj:`creep <abaqus.Material.MaterialBase.MaterialBase.creep>`\\"
 msgstr ""
 
-#: ../../None:73:<autosummary>:1 abaqus.Material.Material.Material.Creep:26
-#: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:26 of
+#: ../../None:73:<autosummary>:1 abaqus.Material.Material.Material.Creep:25
+#: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:25 of
 msgid "A :py:class:`~abaqus.Material.Plastic.Creep.Creep.Creep` object."
 msgstr ""
 
@@ -2364,8 +2364,8 @@ msgid ":py:obj:`elastic <abaqus.Material.MaterialBase.MaterialBase.elastic>`\\"
 msgstr ""
 
 #: ../../None:73:<autosummary>:1
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:41
-#: abaqus.Material.Material.Material.Elastic:41 of
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:40
+#: abaqus.Material.Material.Material.Elastic:40 of
 msgid "An :py:class:`~abaqus.Material.Elastic.Linear.Elastic.Elastic` object."
 msgstr ""
 
@@ -2909,8 +2909,8 @@ msgstr ""
 msgid ":py:obj:`viscous <abaqus.Material.MaterialBase.MaterialBase.viscous>`\\"
 msgstr ""
 
-#: ../../None:73:<autosummary>:1 abaqus.Material.Material.Material.Viscous:26
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:26
+#: ../../None:73:<autosummary>:1 abaqus.Material.Material.Material.Viscous:25
+#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:24
 #: of
 msgid ""
 "A "
@@ -3845,15 +3845,12 @@ msgstr ""
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:70
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:98
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:108
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:121
 #: abaqus.Material.Elastic.Linear.FailStrain.FailStrain:18
 #: abaqus.Material.Elastic.Linear.FailStress.FailStress:21
 #: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic:19
 #: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic:29
 #: abaqus.Material.Gap.GapFlow.GapFlow:17
 #: abaqus.Material.Gap.GapFlow.GapFlow:25
-#: abaqus.Material.Gap.GapFlow.GapFlow:33
-#: abaqus.Material.Gap.GapFlow.GapFlow:42
 #: abaqus.Material.Gasket.ContactArea.ContactArea:18
 #: abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic:16
 #: abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior:18
@@ -3921,7 +3918,6 @@ msgstr ""
 #: abaqus.Material.Plastic.Concrete.TensionStiffening.TensionStiffening:18
 #: abaqus.Material.Plastic.Concrete.TensionStiffening.TensionStiffening:25
 #: abaqus.Material.Plastic.Creep.Creep.Creep:18
-#: abaqus.Material.Plastic.Creep.Creep.Creep:72
 #: abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening:15
 #: abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity:22
 #: abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity:34
@@ -3936,10 +3932,8 @@ msgstr ""
 #: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening:19
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:18
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:28
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:38
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:18
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:28
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:38
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapHardening.CapHardening:15
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapPlasticity.CapPlasticity:22
 #: abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature:14
@@ -3955,7 +3949,6 @@ msgstr ""
 #: abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent:29
 #: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:20
 #: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:27
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:75
 #: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening:16
 #: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity:16
 #: abaqus.Material.Plastic.MohrCoulomb.TensionCutOff.TensionCutOff:17
@@ -4001,15 +3994,12 @@ msgstr ""
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:71
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:99
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:109
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:122
 #: abaqus.Material.Elastic.Linear.FailStrain.FailStrain:19
 #: abaqus.Material.Elastic.Linear.FailStress.FailStress:22
 #: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic:20
 #: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic:30
 #: abaqus.Material.Gap.GapFlow.GapFlow:18
 #: abaqus.Material.Gap.GapFlow.GapFlow:26
-#: abaqus.Material.Gap.GapFlow.GapFlow:34
-#: abaqus.Material.Gap.GapFlow.GapFlow:43
 #: abaqus.Material.Gasket.ContactArea.ContactArea:19
 #: abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic:17
 #: abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior:19
@@ -4074,7 +4064,6 @@ msgstr ""
 #: abaqus.Material.Plastic.Concrete.TensionStiffening.TensionStiffening:26
 #: abaqus.Material.Plastic.Creep.Creep.Creep:19
 #: abaqus.Material.Plastic.Creep.Creep.Creep:29
-#: abaqus.Material.Plastic.Creep.Creep.Creep:73
 #: abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening:16
 #: abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity:23
 #: abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity:35
@@ -4089,10 +4078,8 @@ msgstr ""
 #: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening:20
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:19
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:29
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:39
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:19
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:29
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:39
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapHardening.CapHardening:16
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapPlasticity.CapPlasticity:23
 #: abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature:15
@@ -4106,7 +4093,6 @@ msgstr ""
 #: abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent:30
 #: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:21
 #: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:28
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:76
 #: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening:17
 #: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity:17
 #: abaqus.Material.Plastic.MohrCoulomb.TensionCutOff.TensionCutOff:18
@@ -4151,15 +4137,12 @@ msgstr ""
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:72
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:100
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:110
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:123
 #: abaqus.Material.Elastic.Linear.FailStrain.FailStrain:20
 #: abaqus.Material.Elastic.Linear.FailStress.FailStress:23
 #: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic:21
 #: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic:31
 #: abaqus.Material.Gap.GapFlow.GapFlow:19
 #: abaqus.Material.Gap.GapFlow.GapFlow:27
-#: abaqus.Material.Gap.GapFlow.GapFlow:35
-#: abaqus.Material.Gap.GapFlow.GapFlow:44
 #: abaqus.Material.Gasket.ContactArea.ContactArea:20
 #: abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic:18
 #: abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior:20
@@ -4224,7 +4207,6 @@ msgstr ""
 #: abaqus.Material.Plastic.Concrete.TensionStiffening.TensionStiffening:27
 #: abaqus.Material.Plastic.Creep.Creep.Creep:20
 #: abaqus.Material.Plastic.Creep.Creep.Creep:30
-#: abaqus.Material.Plastic.Creep.Creep.Creep:74
 #: abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening:17
 #: abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity:24
 #: abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity:36
@@ -4239,10 +4221,8 @@ msgstr ""
 #: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening:21
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:20
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:30
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:40
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:20
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:30
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:40
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapHardening.CapHardening:17
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapPlasticity.CapPlasticity:24
 #: abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature:16
@@ -4256,7 +4236,6 @@ msgstr ""
 #: abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent:31
 #: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:22
 #: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:29
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:77
 #: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening:18
 #: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity:18
 #: abaqus.Material.Plastic.MohrCoulomb.TensionCutOff.TensionCutOff:19
@@ -4301,7 +4280,6 @@ msgstr ""
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:73
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:101
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic:111
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:124
 #: abaqus.Material.Elastic.Linear.FailStrain.FailStrain:21
 #: abaqus.Material.Elastic.Linear.FailStress.FailStress:24
 #: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic:22
@@ -4309,8 +4287,6 @@ msgstr ""
 #: abaqus.Material.Eos.Eos.Eos.__init__:69
 #: abaqus.Material.Gap.GapFlow.GapFlow:20
 #: abaqus.Material.Gap.GapFlow.GapFlow:28
-#: abaqus.Material.Gap.GapFlow.GapFlow:36
-#: abaqus.Material.Gap.GapFlow.GapFlow:45
 #: abaqus.Material.Gasket.ContactArea.ContactArea:21
 #: abaqus.Material.Gasket.GasketMembraneElastic.GasketMembraneElastic:19
 #: abaqus.Material.Gasket.GasketThicknessBehavior.GasketThicknessBehavior:21
@@ -4376,7 +4352,6 @@ msgstr ""
 #: abaqus.Material.Plastic.Concrete.TensionStiffening.TensionStiffening:28
 #: abaqus.Material.Plastic.Creep.Creep.Creep:21
 #: abaqus.Material.Plastic.Creep.Creep.Creep:31
-#: abaqus.Material.Plastic.Creep.Creep.Creep:75
 #: abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening:18
 #: abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity:25
 #: abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity:37
@@ -4391,10 +4366,8 @@ msgstr ""
 #: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening:22
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:21
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:31
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:41
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:21
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:31
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:41
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapHardening.CapHardening:18
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapPlasticity.CapPlasticity:25
 #: abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature:17
@@ -4408,7 +4381,6 @@ msgstr ""
 #: abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent:32
 #: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:23
 #: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:30
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:78
 #: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening:19
 #: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity:19
 #: abaqus.Material.Plastic.MohrCoulomb.TensionCutOff.TensionCutOff:20
@@ -4865,7 +4837,7 @@ msgstr ""
 #: ../../docstring abaqus.Material.Density.Density.Density.__init__:15
 #: abaqus.Material.Elastic.HyperElastic.HyperFoam.Hyperfoam.Hyperfoam.__init__:21
 #: abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic.__init__:36
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:34
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:33
 #: abaqus.Material.Elastic.Linear.FailStrain.FailStrain.__init__:15
 #: abaqus.Material.Elastic.Linear.FailStress.FailStress.__init__:15
 #: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic.__init__:18
@@ -4879,7 +4851,7 @@ msgstr ""
 #: abaqus.Material.Material.Material.Concrete:15
 #: abaqus.Material.Material.Material.ConcreteDamagedPlasticity:15
 #: abaqus.Material.Material.Material.Conductivity:18
-#: abaqus.Material.Material.Material.Creep:19
+#: abaqus.Material.Material.Material.Creep:18
 #: abaqus.Material.Material.Material.CrushableFoam:18
 #: abaqus.Material.Material.Material.DeformationPlasticity:15
 #: abaqus.Material.Material.Material.Density:15
@@ -4887,7 +4859,7 @@ msgstr ""
 #: abaqus.Material.Material.Material.Diffusivity:21
 #: abaqus.Material.Material.Material.DruckerPrager:29
 #: abaqus.Material.Material.Material.DuctileDamageInitiation:37
-#: abaqus.Material.Material.Material.Elastic:34
+#: abaqus.Material.Material.Material.Elastic:33
 #: abaqus.Material.Material.Material.ElectricalConductivity:20
 #: abaqus.Material.Material.Material.Expansion:22
 #: abaqus.Material.Material.Material.FldDamageInitiation:37
@@ -4922,7 +4894,7 @@ msgstr ""
 #: abaqus.Material.Material.Material.SpecificHeat:18
 #: abaqus.Material.Material.Material.Swelling:19
 #: abaqus.Material.Material.Material.Viscosity:17
-#: abaqus.Material.Material.Material.Viscous:19
+#: abaqus.Material.Material.Material.Viscous:18
 #: abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric.__init__:20
 #: abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity.__init__:20
 #: abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability.__init__:30
@@ -4951,7 +4923,7 @@ msgstr ""
 #: abaqus.Material.Plastic.Concrete.FailureRatios.FailureRatios.__init__:15
 #: abaqus.Material.Plastic.Concrete.ShearRetention.ShearRetention.__init__:15
 #: abaqus.Material.Plastic.Concrete.TensionStiffening.TensionStiffening.__init__:18
-#: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:19
+#: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:18
 #: abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening.__init__:15
 #: abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity.__init__:22
 #: abaqus.Material.Plastic.CrushableFoam.CrushableFoam.CrushableFoam.__init__:18
@@ -4972,7 +4944,7 @@ msgstr ""
 #: abaqus.Material.Plastic.Metal.Porous.PorousMetalPlasticity.PorousMetalPlasticity.__init__:18
 #: abaqus.Material.Plastic.Metal.Porous.VoidNucleation.VoidNucleation.__init__:15
 #: abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent.__init__:22
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:19
+#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:17
 #: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening.__init__:14
 #: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity.__init__:22
 #: abaqus.Material.Plastic.MohrCoulomb.TensionCutOff.TensionCutOff.__init__:15
@@ -5010,7 +4982,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Material.Density.Density.Density.__init__:17
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:36
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:35
 #: abaqus.Material.Elastic.Linear.FailStrain.FailStrain.__init__:17
 #: abaqus.Material.Elastic.Linear.FailStress.FailStress.__init__:17
 #: abaqus.Material.Elastic.Porous.PorousElastic.PorousElastic.__init__:20
@@ -5024,14 +4996,14 @@ msgstr ""
 #: abaqus.Material.Material.Material.Concrete:17
 #: abaqus.Material.Material.Material.ConcreteDamagedPlasticity:17
 #: abaqus.Material.Material.Material.Conductivity:20
-#: abaqus.Material.Material.Material.Creep:21
+#: abaqus.Material.Material.Material.Creep:20
 #: abaqus.Material.Material.Material.CrushableFoam:20
 #: abaqus.Material.Material.Material.Density:17
 #: abaqus.Material.Material.Material.Dielectric:22
 #: abaqus.Material.Material.Material.Diffusivity:23
 #: abaqus.Material.Material.Material.DruckerPrager:31
 #: abaqus.Material.Material.Material.DuctileDamageInitiation:39
-#: abaqus.Material.Material.Material.Elastic:36
+#: abaqus.Material.Material.Material.Elastic:35
 #: abaqus.Material.Material.Material.ElectricalConductivity:22
 #: abaqus.Material.Material.Material.Expansion:24
 #: abaqus.Material.Material.Material.FldDamageInitiation:39
@@ -5063,7 +5035,7 @@ msgstr ""
 #: abaqus.Material.Material.Material.SpecificHeat:20
 #: abaqus.Material.Material.Material.Swelling:21
 #: abaqus.Material.Material.Material.Viscosity:19
-#: abaqus.Material.Material.Material.Viscous:21
+#: abaqus.Material.Material.Material.Viscous:20
 #: abaqus.Material.Others.Electromagnetic.Dielectric.Dielectric.__init__:22
 #: abaqus.Material.Others.Electromagnetic.ElectricalConductivity.ElectricalConductivity.__init__:22
 #: abaqus.Material.Others.Electromagnetic.MagneticPermeability.MagneticPermeability.__init__:32
@@ -5091,7 +5063,7 @@ msgstr ""
 #: abaqus.Material.Plastic.Concrete.FailureRatios.FailureRatios.__init__:17
 #: abaqus.Material.Plastic.Concrete.ShearRetention.ShearRetention.__init__:17
 #: abaqus.Material.Plastic.Concrete.TensionStiffening.TensionStiffening.__init__:20
-#: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:21
+#: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:20
 #: abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening.__init__:17
 #: abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity.__init__:24
 #: abaqus.Material.Plastic.CrushableFoam.CrushableFoam.CrushableFoam.__init__:20
@@ -5111,7 +5083,7 @@ msgstr ""
 #: abaqus.Material.Plastic.Metal.Porous.PorousMetalPlasticity.PorousMetalPlasticity.__init__:20
 #: abaqus.Material.Plastic.Metal.Porous.VoidNucleation.VoidNucleation.__init__:17
 #: abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent.__init__:24
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:21
+#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:19
 #: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombHardening.MohrCoulombHardening.__init__:16
 #: abaqus.Material.Plastic.MohrCoulomb.MohrCoulombPlasticity.MohrCoulombPlasticity.__init__:24
 #: abaqus.Material.Plastic.MohrCoulomb.TensionCutOff.TensionCutOff.__init__:17
@@ -5270,32 +5242,30 @@ msgid ":class:`Conductivity`"
 msgstr ""
 
 #: abaqus.Material.Material.Material.Creep:10
-#: abaqus.Material.Plastic.Creep.Creep.Creep:82 of
+#: abaqus.Material.Plastic.Creep.Creep.Creep:38 of
 msgid ""
 "Check `Creep on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-creeppyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Material.Material.Material.Creep:15
-#: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:15 of
+#: abaqus.Material.Material.Material.Creep:15 of
 msgid ""
 "A SymbolicConstant specifying the strain-hardening law. Possible values "
-"are STRAIN, TIME, HYPERBOLIC_SINE, USER, ANAND, DARVEAUX, DOUBLE_POWER, "
-"POWER_LAW, and TIME_POWER_LAW. The default value is STRAIN."
+"are STRAIN, TIME, HYPERBOLIC_SINE and USER. The default value is STRAIN."
 msgstr ""
 
-#: abaqus.Material.Material.Material.Creep:23
-#: abaqus.Material.Material.Material.Viscous:23
-#: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:23
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:23
+#: abaqus.Material.Material.Material.Creep:22
+#: abaqus.Material.Material.Material.Viscous:22
+#: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:22
+#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:21
 #: of
 msgid ""
 "A SymbolicConstant specifying the time interval for relevant laws. "
 "Possible values are CREEP and TOTAL. The default value is TOTAL."
 msgstr ""
 
-#: abaqus.Material.Material.Material.Creep:27
-#: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:27 of
+#: abaqus.Material.Material.Material.Creep:26
+#: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:26 of
 msgid ":class:`Creep`"
 msgstr ""
 
@@ -5992,7 +5962,7 @@ msgstr ""
 msgid ":class:`DamageInitiation`"
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:133
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic:120
 #: abaqus.Material.Material.Material.Elastic:10 of
 msgid ""
 "Check `Elastic on help.3ds.com/2016 "
@@ -6005,7 +5975,7 @@ msgid ""
 "A SymbolicConstant specifying the type of elasticity data provided. "
 "Possible values are:  - ISOTROPIC - ORTHOTROPIC - ANISOTROPIC - "
 "ENGINEERING_CONSTANTS - LAMINA - TRACTION - COUPLED_TRACTION - "
-"SHORT_FIBER - SHEAR - BILAMINA  The default value is ISOTROPIC."
+"SHORT_FIBER - SHEAR  The default value is ISOTROPIC."
 msgstr ""
 
 #: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:15
@@ -6060,40 +6030,35 @@ msgstr ""
 msgid "SHEAR"
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:26
-#: abaqus.Material.Material.Material.Elastic:26 of
-msgid "BILAMINA"
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:28
-#: abaqus.Material.Material.Material.Elastic:28 of
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:27
+#: abaqus.Material.Material.Material.Elastic:27 of
 msgid "The default value is ISOTROPIC."
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:30
-#: abaqus.Material.Material.Material.Elastic:30 of
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:29
+#: abaqus.Material.Material.Material.Elastic:29 of
 msgid ""
 "A Boolean specifying whether compressive stress is allowed. The default "
 "value is OFF."
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:32
-#: abaqus.Material.Material.Material.Elastic:32 of
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:31
+#: abaqus.Material.Material.Material.Elastic:31 of
 msgid ""
 "A Boolean specifying whether tensile stress is allowed. The default value"
 " is OFF."
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:38
-#: abaqus.Material.Material.Material.Elastic:38 of
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:37
+#: abaqus.Material.Material.Material.Elastic:37 of
 msgid ""
 "A SymbolicConstant specifying the time-dependence of the elastic material"
 " constants. Possible values are INSTANTANEOUS and LONG_TERM. The default "
 "value is LONG_TERM."
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:42
-#: abaqus.Material.Material.Material.Elastic:42 of
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic.__init__:41
+#: abaqus.Material.Material.Material.Elastic:41 of
 msgid ":class:`Elastic`"
 msgstr ""
 
@@ -6432,7 +6397,7 @@ msgstr ""
 msgid ":class:`FluidLeakoff`"
 msgstr ""
 
-#: abaqus.Material.Gap.GapFlow.GapFlow:52
+#: abaqus.Material.Gap.GapFlow.GapFlow:35
 #: abaqus.Material.Material.Material.GapFlow:10 of
 msgid ""
 "Check `GapFlow on help.3ds.com/2016 "
@@ -6448,12 +6413,10 @@ msgid ""
 "default value is None."
 msgstr ""
 
-#: abaqus.Material.Gap.GapFlow.GapFlow.__init__:23
 #: abaqus.Material.Material.Material.GapFlow:23 of
 msgid ""
 "A SymbolicConstant specifying the type of gap flow. Possible values are "
-"NEWTONIAN, POWER_LAW, BINGHAM_PLASTIC, and HERSCHEL-BULKLEY. The default "
-"value is NEWTONIAN."
+"NEWTONIAN, and POWER_LAW. The default value is NEWTONIAN."
 msgstr ""
 
 #: abaqus.Material.Gap.GapFlow.GapFlow.__init__:27
@@ -7652,23 +7615,20 @@ msgid ":class:`Viscosity`"
 msgstr ""
 
 #: abaqus.Material.Material.Material.Viscous:10
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:85 of
+#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:37 of
 msgid ""
 "Check `Viscous on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viscouspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Material.Material.Material.Viscous:15
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:15
-#: of
+#: abaqus.Material.Material.Material.Viscous:15 of
 msgid ""
 "A SymbolicConstant specifying the creep law. Possible values are STRAIN, "
-"TIME, USER, ANAND, DARVEAUX, DOUBLE_POWER, POWER_LAW, and TIME_POWER_LAW."
-" The default value is STRAIN."
+"TIME and USER. The default value is STRAIN."
 msgstr ""
 
-#: abaqus.Material.Material.Material.Viscous:27
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:27
+#: abaqus.Material.Material.Material.Viscous:26
+#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:25
 #: of
 msgid ":class:`Viscous`"
 msgstr ""
@@ -8055,9 +8015,7 @@ msgstr ""
 msgid "If **type** = VAN_DER_WAALS, the table data specify the following:"
 msgstr ""
 
-#: abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic:61
-#: abaqus.Material.Plastic.Creep.Creep.Creep:42
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:41 of
+#: abaqus.Material.Elastic.HyperElastic.Hyperelastic.Hyperelastic:61 of
 msgid ":math:`a`."
 msgstr ""
 
@@ -9210,40 +9168,12 @@ msgstr ""
 msgid ":math:`G_2` for warping elements; :math:`E_{tt}` for cohesive elements."
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:113 of
-msgid "If **type** = BILAMINA, the table data specify the following:"
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:115 of
-msgid ":math:`E_{n n}`."
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:116 of
-msgid ":math:`E_{s s}`."
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:117 of
-msgid ":math:`E_{t t}`."
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:118 of
-msgid ":math:`E_{n s}`."
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:119 of
-msgid ":math:`E_{n t}`."
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:120 of
-msgid ":math:`E_{s t}`."
-msgstr ""
-
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:126
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic:113
 #: abaqus.Material.Others.Mechanical.Expansion.Expansion:41 of
 msgid "If **type** = SHORT_FIBER, there is no table data."
 msgstr ""
 
-#: abaqus.Material.Elastic.Linear.Elastic.Elastic:130 of
+#: abaqus.Material.Elastic.Linear.Elastic.Elastic:117 of
 msgid "ELASTIC"
 msgstr ""
 
@@ -9852,13 +9782,11 @@ msgstr ""
 #: abaqus.Material.Others.PoreFluidFlow.Sorption.Sorption:21
 #: abaqus.Material.Plastic.Creep.Creep.Creep:15
 #: abaqus.Material.Plastic.Creep.Creep.Creep:24
-#: abaqus.Material.Plastic.Creep.Creep.Creep:36
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:15
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:24
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:15
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:24
 #: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:16
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:35
 #: abaqus.Material.Plastic.Plastic.Plastic:50 of
 msgid ":math:`A`."
 msgstr ""
@@ -9866,8 +9794,6 @@ msgstr ""
 #: abaqus.Material.Eos.Eos.Eos:22
 #: abaqus.Material.Others.PoreFluidFlow.Sorption.Sorption:22
 #: abaqus.Material.Plastic.Creep.Creep.Creep:25
-#: abaqus.Material.Plastic.Creep.Creep.Creep:56
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:56
 #: abaqus.Material.Plastic.Plastic.Plastic:51 of
 msgid ":math:`B`."
 msgstr ""
@@ -10263,36 +10189,15 @@ msgstr ""
 msgid "If **type** = POWER_LAW the table data specify the following:"
 msgstr ""
 
-#: abaqus.Material.Gap.GapFlow.GapFlow:23
-#: abaqus.Material.Gap.GapFlow.GapFlow:31
-#: abaqus.Material.Gap.GapFlow.GapFlow:39 of
+#: abaqus.Material.Gap.GapFlow.GapFlow:23 of
 msgid "Consistency."
 msgstr ""
 
-#: abaqus.Material.Gap.GapFlow.GapFlow:24
-#: abaqus.Material.Gap.GapFlow.GapFlow:40 of
+#: abaqus.Material.Gap.GapFlow.GapFlow:24 of
 msgid "Exponent."
 msgstr ""
 
-#: abaqus.Material.Gap.GapFlow.GapFlow:29 of
-msgid "If **type** = BINGHAM_PLASTIC the table data specify the following:"
-msgstr ""
-
-#: abaqus.Material.Gap.GapFlow.GapFlow:32
-#: abaqus.Material.Gap.GapFlow.GapFlow:41
-#: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening:14
-#: abaqus.Material.Plastic.Metal.Cyclic.CycledPlastic.CycledPlastic:14
-#: abaqus.Material.Plastic.Plastic.Plastic:15
-#: abaqus.Material.Plastic.Plastic.Plastic:24
-#: abaqus.Material.Plastic.Plastic.Plastic:45 of
-msgid "Yield stress."
-msgstr ""
-
-#: abaqus.Material.Gap.GapFlow.GapFlow:37 of
-msgid "If **type** = HERSCHEL-BULKLEY the table data specify the following:"
-msgstr ""
-
-#: abaqus.Material.Gap.GapFlow.GapFlow:49 of
+#: abaqus.Material.Gap.GapFlow.GapFlow:32 of
 msgid "GAP FLOW"
 msgstr ""
 
@@ -10318,6 +10223,12 @@ msgid ""
 "Check `GapFlow.__init__ on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gapflowpyc.htm?contextscope=all"
 "#simaker-gapflow__init__pyc>`__."
+msgstr ""
+
+#: abaqus.Material.Gap.GapFlow.GapFlow.__init__:23 of
+msgid ""
+"A SymbolicConstant specifying the type of gap flow. Possible values are "
+"NEWTONIAN and POWER_LAW. The default value is NEWTONIAN."
 msgstr ""
 
 #: ../../reference/mdb/model/material.rst:274
@@ -13911,36 +13822,22 @@ msgstr ""
 
 #: abaqus.Material.Plastic.Creep.Creep.Creep:16
 #: abaqus.Material.Plastic.Creep.Creep.Creep:26
-#: abaqus.Material.Plastic.Creep.Creep.Creep:41
-#: abaqus.Material.Plastic.Creep.Creep.Creep:54
-#: abaqus.Material.Plastic.Creep.Creep.Creep:69
 #: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerCreep.DruckerPragerCreep:16
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:16
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:35
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:16
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:35
 #: abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent:20
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:17
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:40
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:54
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:71 of
+#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:17 of
 msgid ":math:`n`."
 msgstr ""
 
 #: abaqus.Material.Plastic.Creep.Creep.Creep:17
-#: abaqus.Material.Plastic.Creep.Creep.Creep:38
-#: abaqus.Material.Plastic.Creep.Creep.Creep:70
 #: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerCreep.DruckerPragerCreep:17
 #: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerCreep.DruckerPragerCreep:26
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:17
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:26
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:36
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:17
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:26
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:36
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:18
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:37
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:72 of
+#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:18 of
 msgid ":math:`m`."
 msgstr ""
 
@@ -13956,141 +13853,7 @@ msgstr ""
 msgid ":math:`R`"
 msgstr ""
 
-#: abaqus.Material.Plastic.Creep.Creep.Creep:32
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:31 of
-msgid "If **law** = ANAND, the table data specify the following:"
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:34
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:33 of
-msgid ":math:`s_{1}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:35
-#: abaqus.Material.Plastic.Creep.Creep.Creep:52
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:34
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:52 of
-msgid ":math:`\\frac{Q}{R}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:37
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:36 of
-msgid ":math:`\\xi`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:39
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:38 of
-msgid ":math:`A_{0}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:40 of
-msgid ":math:`\\widehat{S}`"
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:43
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:42 of
-msgid ":math:`S_{2}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:44
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:43 of
-msgid ":math:`S_{3}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:45
-#: abaqus.Material.Plastic.Creep.Creep.Creep:59
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:44
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:60 of
-msgid ":math:`A_{1}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:46
-#: abaqus.Material.Plastic.Creep.Creep.Creep:62
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:45
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:63 of
-msgid ":math:`A_{2}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:47
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:46 of
-msgid ":math:`A_{3}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:48
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:47 of
-msgid ":math:`A_{4}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:49
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:49 of
-msgid "If **law** = DARVEAUX, the table data specify the following:"
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:51
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:51 of
-msgid ":math:`C_{s s}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:53
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:25
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:25
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:53 of
-msgid ":math:`\\alpha`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:55
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:55 of
-msgid ":math:`\\epsilon_{T}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:57
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:58 of
-msgid "If **law** = DOUBLE_POWER, the table data specify the following:"
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:60
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:61 of
-msgid ":math:`B_{1}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:61
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:62 of
-msgid ":math:`C_{1}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:63
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:64 of
-msgid ":math:`B_{2}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:64
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:65 of
-msgid ":math:`C_{2}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:65
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:66 of
-msgid ":math:`\\sigma_{0}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:66
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:32
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:32
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:68 of
-msgid ""
-"If **law** = POWER_LAW or **law** = TIME_POWER_LAW, the table data "
-"specify the following:"
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:68 of
-msgid ":math:`q_{0}`"
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:71 of
-msgid ":math:`\\varepsilon_{0}^{\\bullet}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Creep.Creep.Creep:79 of
+#: abaqus.Material.Plastic.Creep.Creep.Creep:35 of
 msgid "CREEP"
 msgstr ""
 
@@ -14143,6 +13906,12 @@ msgid ""
 "Check `Creep.__init__ on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-creeppyc.htm?contextscope=all"
 "#simaker-creep__init__pyc>`__."
+msgstr ""
+
+#: abaqus.Material.Plastic.Creep.Creep.Creep.__init__:15 of
+msgid ""
+"A SymbolicConstant specifying the strain-hardening law. Possible values "
+"are STRAIN, TIME, HYPERBOLIC_SINE and USER."
 msgstr ""
 
 #: ../../reference/mdb/model/material.rst:828
@@ -14797,6 +14566,14 @@ msgid ""
 "plasticity models."
 msgstr ""
 
+#: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening:14
+#: abaqus.Material.Plastic.Metal.Cyclic.CycledPlastic.CycledPlastic:14
+#: abaqus.Material.Plastic.Plastic.Plastic:15
+#: abaqus.Material.Plastic.Plastic.Plastic:24
+#: abaqus.Material.Plastic.Plastic.Plastic:45 of
+msgid "Yield stress."
+msgstr ""
+
 #: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening:15
 #: of
 msgid ""
@@ -14979,31 +14756,25 @@ msgid ""
 "properties."
 msgstr ""
 
+#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:25
+#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:25
+#: of
+msgid ":math:`\\alpha`."
+msgstr ""
+
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:27
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:27
 #: of
 msgid ":math:`t_{1}`."
 msgstr ""
 
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:34
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:34
-#: of
-msgid ":math:`q_0`."
-msgstr ""
-
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:37
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:37
-#: of
-msgid ":math:`\\epsilon_0`."
-msgstr ""
-
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:45
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:45
+#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:35
+#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:35
 #: of
 msgid "CAP CREEP"
 msgstr ""
 
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:48
+#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion:38
 #: of
 msgid ""
 "Check `CapCreepCohesion on help.3ds.com/2016 "
@@ -15048,8 +14819,7 @@ msgstr ""
 #: of
 msgid ""
 "A SymbolicConstant specifying the cap creep law. Possible values are "
-"STRAIN, TIME, SINGHM, USER, POWER_LAW, and TIME_POWER_LAW. The default "
-"value is STRAIN."
+"STRAIN, TIME, SINGHM, USER and POWER_LAW. The default value is STRAIN."
 msgstr ""
 
 #: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion.__init__:22
@@ -15086,7 +14856,7 @@ msgid ""
 " properties."
 msgstr ""
 
-#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:48
+#: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation:38
 #: of
 msgid ""
 "Check `CapCreepConsolidation on help.3ds.com/2016 "
@@ -16297,11 +16067,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:19
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:26
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:48
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:57
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:67
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:74 of
+#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:26 of
 msgid ":math:`f`."
 msgstr ""
 
@@ -16309,19 +16075,7 @@ msgstr ""
 msgid "If **law** = USER, the table data specify the following:"
 msgstr ""
 
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:39 of
-msgid ":math:`\\hat{s}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:70 of
-msgid ":math:`q_{0}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:73 of
-msgid ":math:`\\varepsilon_{0}`."
-msgstr ""
-
-#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:82 of
+#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous:34 of
 msgid "VISCOUS"
 msgstr ""
 
@@ -16357,6 +16111,13 @@ msgid ""
 "Check `Viscous.__init__ on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viscouspyc.htm?contextscope=all"
 "#simaker-viscous__init__pyc>`__."
+msgstr ""
+
+#: abaqus.Material.Plastic.Metal.TwoLayerViscoPlasticity.Viscous.Viscous.__init__:15
+#: of
+msgid ""
+"A SymbolicConstant specifying the creep law. Possible values are STRAIN, "
+"TIME and USER."
 msgstr ""
 
 #: ../../reference/mdb/model/material.rst:1134
@@ -20957,5 +20718,168 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the strain-"
+#~ "hardening law. Possible values are "
+#~ "STRAIN, TIME, HYPERBOLIC_SINE, USER, ANAND,"
+#~ " DARVEAUX, DOUBLE_POWER, POWER_LAW, and "
+#~ "TIME_POWER_LAW. The default value is "
+#~ "STRAIN."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the type "
+#~ "of elasticity data provided. Possible "
+#~ "values are:  - ISOTROPIC - ORTHOTROPIC"
+#~ " - ANISOTROPIC - ENGINEERING_CONSTANTS -"
+#~ " LAMINA - TRACTION - COUPLED_TRACTION "
+#~ "- SHORT_FIBER - SHEAR - BILAMINA  "
+#~ "The default value is ISOTROPIC."
+#~ msgstr ""
+
+#~ msgid "BILAMINA"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the type "
+#~ "of gap flow. Possible values are "
+#~ "NEWTONIAN, POWER_LAW, BINGHAM_PLASTIC, and "
+#~ "HERSCHEL-BULKLEY. The default value is "
+#~ "NEWTONIAN."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the creep "
+#~ "law. Possible values are STRAIN, TIME,"
+#~ " USER, ANAND, DARVEAUX, DOUBLE_POWER, "
+#~ "POWER_LAW, and TIME_POWER_LAW. The default "
+#~ "value is STRAIN."
+#~ msgstr ""
+
+#~ msgid "If **type** = BILAMINA, the table data specify the following:"
+#~ msgstr ""
+
+#~ msgid ":math:`E_{n n}`."
+#~ msgstr ""
+
+#~ msgid ":math:`E_{s s}`."
+#~ msgstr ""
+
+#~ msgid ":math:`E_{t t}`."
+#~ msgstr ""
+
+#~ msgid ":math:`E_{n s}`."
+#~ msgstr ""
+
+#~ msgid ":math:`E_{n t}`."
+#~ msgstr ""
+
+#~ msgid ":math:`E_{s t}`."
+#~ msgstr ""
+
+#~ msgid "If **type** = BINGHAM_PLASTIC the table data specify the following:"
+#~ msgstr ""
+
+#~ msgid "If **type** = HERSCHEL-BULKLEY the table data specify the following:"
+#~ msgstr ""
+
+#~ msgid "If **law** = ANAND, the table data specify the following:"
+#~ msgstr ""
+
+#~ msgid ":math:`s_{1}`."
+#~ msgstr ""
+
+#~ msgid ":math:`\\frac{Q}{R}`."
+#~ msgstr ""
+
+#~ msgid ":math:`\\xi`."
+#~ msgstr ""
+
+#~ msgid ":math:`A_{0}`."
+#~ msgstr ""
+
+#~ msgid ":math:`\\widehat{S}`"
+#~ msgstr ""
+
+#~ msgid ":math:`S_{2}`."
+#~ msgstr ""
+
+#~ msgid ":math:`S_{3}`."
+#~ msgstr ""
+
+#~ msgid ":math:`A_{1}`."
+#~ msgstr ""
+
+#~ msgid ":math:`A_{2}`."
+#~ msgstr ""
+
+#~ msgid ":math:`A_{3}`."
+#~ msgstr ""
+
+#~ msgid ":math:`A_{4}`."
+#~ msgstr ""
+
+#~ msgid "If **law** = DARVEAUX, the table data specify the following:"
+#~ msgstr ""
+
+#~ msgid ":math:`C_{s s}`."
+#~ msgstr ""
+
+#~ msgid ":math:`\\epsilon_{T}`."
+#~ msgstr ""
+
+#~ msgid "If **law** = DOUBLE_POWER, the table data specify the following:"
+#~ msgstr ""
+
+#~ msgid ":math:`B_{1}`."
+#~ msgstr ""
+
+#~ msgid ":math:`C_{1}`."
+#~ msgstr ""
+
+#~ msgid ":math:`B_{2}`."
+#~ msgstr ""
+
+#~ msgid ":math:`C_{2}`."
+#~ msgstr ""
+
+#~ msgid ":math:`\\sigma_{0}`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If **law** = POWER_LAW or **law** "
+#~ "= TIME_POWER_LAW, the table data specify"
+#~ " the following:"
+#~ msgstr ""
+
+#~ msgid ":math:`q_{0}`"
+#~ msgstr ""
+
+#~ msgid ":math:`\\varepsilon_{0}^{\\bullet}`."
+#~ msgstr ""
+
+#~ msgid ":math:`q_0`."
+#~ msgstr ""
+
+#~ msgid ":math:`\\epsilon_0`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying the cap "
+#~ "creep law. Possible values are STRAIN,"
+#~ " TIME, SINGHM, USER, POWER_LAW, and "
+#~ "TIME_POWER_LAW. The default value is "
+#~ "STRAIN."
+#~ msgstr ""
+
+#~ msgid ":math:`\\hat{s}`."
+#~ msgstr ""
+
+#~ msgid ":math:`q_{0}`."
+#~ msgstr ""
+
+#~ msgid ":math:`\\varepsilon_{0}`."
 #~ msgstr ""
 
