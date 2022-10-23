@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2483,7 +2483,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:70
 #: abaqus.XY.XYData.XYData.xyDataListFromField:73
 #: abaqus.XY.XYSession.XYSession.XYDataFromHistory:41
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:88
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:76
 #: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:66
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:73 of
 msgid ""
@@ -2498,7 +2498,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:74
 #: abaqus.XY.XYData.XYData.xyDataListFromField:77
 #: abaqus.XY.XYSession.XYSession.XYDataFromHistory:45
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:92
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:80
 #: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:69
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:77 of
 msgid ""
@@ -2578,57 +2578,21 @@ msgid ""
 "id from which to obtain values. The default is the current viewport."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:36 of
-msgid ""
-"A Boolean specifying whether to remove duplicate XY values from the final"
-" result. The default value is True.  .. versionadded:: 2018     The "
-"`removeDuplicateXYPairs` argument was added."
-msgstr ""
-
-#: abaqus.XY.XYData.XYData.XYDataFromPath:36
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:36 of
-msgid ""
-"A Boolean specifying whether to remove duplicate XY values from the final"
-" result. The default value is True."
-msgstr ""
-
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:39 of
-msgid "The `removeDuplicateXYPairs` argument was added."
-msgstr ""
-
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:42 of
-msgid ""
-"A Boolean specifying whether to include elements which do not lie in the "
-"direction of the path. The default value is False.  .. versionadded:: "
-"2018     The `includeAllElements` argument was added."
-msgstr ""
-
-#: abaqus.XY.XYData.XYData.XYDataFromPath:39
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:42 of
-msgid ""
-"A Boolean specifying whether to include elements which do not lie in the "
-"direction of the path. The default value is False."
-msgstr ""
-
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:45 of
-msgid "The `includeAllElements` argument was added."
-msgstr ""
-
 #: abaqus.XY.XYData.XYData.XYDataFromPath:42
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:48 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:36 of
 msgid ""
 "An Int identifying the step from which to obtain values. The default "
 "value is the current step."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:45
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:51 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:39 of
 msgid ""
 "An Int identifying the frame from which to obtain values. The default "
 "value is the current frame."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:54 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:42 of
 msgid ""
 "A tuple of tuples containing the descriptions of variables for which to "
 "extract data along the path. The default value is the current variable. "
@@ -2655,7 +2619,7 @@ msgid ""
 "{'shell < STEEL > < 3 section points >': 'SNEG, (fraction = -1.0)', }), )"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:54 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:42 of
 msgid ""
 "A tuple of tuples containing the descriptions of variables for which to "
 "extract data along the path. The default value is the current variable. "
@@ -2664,14 +2628,14 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:22
 #: abaqus.XY.XYData.XYData.xyDataListFromField:21
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:58
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:46
 #: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:19
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:21 of
 msgid "Variable label: A String specifying the variable; for example, 'U'."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:23
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:59
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:47
 #: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:20 of
 msgid ""
 "Variable output position: A SymbolicConstant specifying the output "
@@ -2681,7 +2645,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:27
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:62
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:50
 #: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:24 of
 msgid ""
 "Refinement: A tuple specifying the refinement. If the refinement tuple is"
@@ -2693,7 +2657,7 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:32
 #: abaqus.XY.XYData.XYData.xyDataListFromField:30
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:67
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:55
 #: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:29
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:30 of
 msgid ""
@@ -2703,7 +2667,7 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:33
 #: abaqus.XY.XYData.XYData.xyDataListFromField:32
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:69
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:57
 #: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:30
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:32 of
 msgid ""
@@ -2713,7 +2677,7 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:35
 #: abaqus.XY.XYData.XYData.xyDataListFromField:34
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:71
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:59
 #: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:32
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:34 of
 msgid ""
@@ -2723,7 +2687,7 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:38
 #: abaqus.XY.XYData.XYData.xyDataListFromField:37
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:74
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:62
 #: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:35
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:37 of
 msgid "A String specifying the category selection label."
@@ -2731,7 +2695,7 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:39
 #: abaqus.XY.XYData.XYData.xyDataListFromField:38
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:75
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:63
 #: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:36
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:38 of
 msgid "A String specifying the section point label."
@@ -2739,28 +2703,28 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:41
 #: abaqus.XY.XYData.XYData.xyDataListFromField:40
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:77
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:65
 #: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:38
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:40 of
 msgid "For example::"
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:71
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:85 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:73 of
 msgid ""
 "A tuple of three Floats specifying the deformation magnitude in the *X-*,"
 " *Y-*, and *Z-* planes. The default value is (1, 1, 1)."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:81
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:95 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:83 of
 msgid ""
 "A Boolean to specify whether to consider the data points that do not lie "
 "on or inside the mesh. The default value is False."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:84
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:98 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:86 of
 msgid ""
 "A Float specifying the tolerance value for the projected distance "
 "considered for the data extraction when **projectOntoMesh** =  True. The "
@@ -2768,7 +2732,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:87
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:101 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:89 of
 msgid ""
 "* **If **variable** specified has one fieldoutput** (:class:`Returns an "
 "XYData object.`) * **If **variable** specified has more than one "
@@ -2776,63 +2740,63 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:87
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:101 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:89 of
 msgid ""
 "**If **variable** specified has one fieldoutput** (:class:`Returns an "
 "XYData object.`)"
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:88
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:102 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:90 of
 msgid ""
 "**If **variable** specified has more than one fieldoutputs** "
 "(:class:`Returns list` of :class:`XYData objects.`)"
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:90
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:104 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:92 of
 msgid "If **path** is invalid."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:91
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:105 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:93 of
 msgid "If **viewport** is invalid."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:92
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:106 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:94 of
 msgid "If **step** and/or **frame** are invalid."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:93
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:107 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:95 of
 msgid "If the **variable** argument is empty."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:94
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:108 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:96 of
 msgid "If the specified output variable is not available in the output database."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:95
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:109 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:97 of
 msgid ""
 "If the specified output variable cannot be used to obtain **X - Y** data "
 "from path."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:96
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:110 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:98 of
 msgid "If the SymbolicConstant specifying the refinement type is invalid."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:97
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:111 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:99 of
 msgid "If the label specifying the refinement invariant or component is invalid."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromPath:98
-#: abaqus.XY.XYSession.XYSession.XYDataFromPath:112 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromPath:100 of
 msgid "If **deformedMag** does not contain three Floats."
 msgstr ""
 
@@ -6103,6 +6067,18 @@ msgstr ""
 msgid "See PEP 585"
 msgstr ""
 
+#: abaqus.XY.XYData.XYData.XYDataFromPath:36 of
+msgid ""
+"A Boolean specifying whether to remove duplicate XY values from the final"
+" result. The default value is True."
+msgstr ""
+
+#: abaqus.XY.XYData.XYData.XYDataFromPath:39 of
+msgid ""
+"A Boolean specifying whether to include elements which do not lie in the "
+"direction of the path. The default value is False."
+msgstr ""
+
 #: abaqus.XY.XYData.XYData.XYDataFromPath:48 of
 msgid ""
 "A tuple of tuples containing the descriptions of variables for which to "
@@ -8839,5 +8815,28 @@ msgstr ""
 #~ msgid ""
 #~ ":py:obj:`setValues <abaqus.XY.XYPlot.XYPlot.setValues>`\\ "
 #~ "\\(title\\, transform\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying whether to remove"
+#~ " duplicate XY values from the final"
+#~ " result. The default value is True."
+#~ "  .. versionadded:: 2018     The "
+#~ "`removeDuplicateXYPairs` argument was added."
+#~ msgstr ""
+
+#~ msgid "The `removeDuplicateXYPairs` argument was added."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Boolean specifying whether to include"
+#~ " elements which do not lie in "
+#~ "the direction of the path. The "
+#~ "default value is False.  .. "
+#~ "versionadded:: 2018     The `includeAllElements` "
+#~ "argument was added."
+#~ msgstr ""
+
+#~ msgid "The `includeAllElements` argument was added."
 #~ msgstr ""
 

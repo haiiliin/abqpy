@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: abqpy 2017\n"
+"Project-Id-Version: abqpy 2017.3.12.post7\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,23 +33,23 @@ msgstr ""
 msgid "Classes"
 msgstr ""
 
-#: ../../../../src/abaqus/Datum/Datum.py:docstring of abaqus.Datum.Datum.Datum:1
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/Datum.py:docstring of abaqus.Datum.Datum.Datum:1
 msgid "Bases: :py:class:`object`"
 msgstr ""
 
-#: ../../../../src/abaqus/Datum/Datum.py:docstring of abaqus.Datum.Datum.Datum:1
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/Datum.py:docstring of abaqus.Datum.Datum.Datum:1
 msgid "The Datum object is the abstract base type for other Datum objects. The Datum object has no explicit constructor. The methods and members of the Datum object are common to all objects derived from the Datum."
 msgstr ""
 
-#: ../../../../src/abaqus/Datum/Datum.py:docstring of abaqus.Datum.Datum.Datum:6
-#: ../../../../src/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:7
-#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:7
-#: ../../../../src/abaqus/Datum/DatumPlane.py:docstring of abaqus.Datum.DatumPlane.DatumPlane:7
-#: ../../../../src/abaqus/Datum/DatumPoint.py:docstring of abaqus.Datum.DatumPoint.DatumPoint:7
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/Datum.py:docstring of abaqus.Datum.Datum.Datum:6
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:7
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:7
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumPlane.py:docstring of abaqus.Datum.DatumPlane.DatumPlane:7
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumPoint.py:docstring of abaqus.Datum.DatumPoint.DatumPoint:7
 msgid "This object can be accessed by::"
 msgstr ""
 
-#: ../../../../src/abaqus/Datum/Datum.py:docstring of abaqus.Datum.Datum.Datum:17
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/Datum.py:docstring of abaqus.Datum.Datum.Datum:17
 msgid "Check `Datum on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -57,25 +57,25 @@ msgstr ""
 msgid "DatumAxis"
 msgstr ""
 
-#: ../../../../src/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:1
-#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:1
-#: ../../../../src/abaqus/Datum/DatumPlane.py:docstring of abaqus.Datum.DatumPlane.DatumPlane:1
-#: ../../../../src/abaqus/Datum/DatumPoint.py:docstring of abaqus.Datum.DatumPoint.DatumPoint:1
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:1
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:1
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumPlane.py:docstring of abaqus.Datum.DatumPlane.DatumPlane:1
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumPoint.py:docstring of abaqus.Datum.DatumPoint.DatumPoint:1
 msgid "Bases: :py:class:`~abaqus.Datum.Datum.Datum`"
 msgstr ""
 
-#: ../../../../src/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:1
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:1
 msgid "The DatumAxis object has no direct constructor; it is created when a Feature object is created. For example, the DatumAxisByCylFace method creates a Feature object that creates a DatumAxis object. The DatumAxis object is derived from the Datum object."
 msgstr ""
 
-#: ../../../../src/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:17
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:17
 msgid "Check `DatumAxis on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumaxispyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:0
-#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:0
-#: ../../../../src/abaqus/Datum/DatumPlane.py:docstring of abaqus.Datum.DatumPlane.DatumPlane:0
-#: ../../../../src/abaqus/Datum/DatumPoint.py:docstring of abaqus.Datum.DatumPoint.DatumPoint:0
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumAxis.py:docstring of abaqus.Datum.DatumAxis.DatumAxis:0
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:0
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumPlane.py:docstring of abaqus.Datum.DatumPlane.DatumPlane:0
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumPoint.py:docstring of abaqus.Datum.DatumPoint.DatumPoint:0
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -104,11 +104,11 @@ msgstr ""
 msgid "DatumCsys"
 msgstr ""
 
-#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:1
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:1
 msgid "The DatumCsys object has no direct constructor; it is created when a Feature object is created. For example, the DatumCsysByOffset method creates a Feature object that creates a DatumCsys object. The DatumCsys object is derived from the Datum object."
 msgstr ""
 
-#: ../../../../src/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:22
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumCsys.py:docstring of abaqus.Datum.DatumCsys.DatumCsys:22
 msgid "Check `DatumCsys on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumcsyspyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -164,11 +164,11 @@ msgstr ""
 msgid "DatumPlane"
 msgstr ""
 
-#: ../../../../src/abaqus/Datum/DatumPlane.py:docstring of abaqus.Datum.DatumPlane.DatumPlane:1
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumPlane.py:docstring of abaqus.Datum.DatumPlane.DatumPlane:1
 msgid "The DatumPlane object has no direct constructor; it is created when a Feature object is created. For example, the DatumPlaneByPrincipalPlane method creates a Feature object that creates a DatumPlane object. The DatumPlane object is derived from the Datum object."
 msgstr ""
 
-#: ../../../../src/abaqus/Datum/DatumPlane.py:docstring of abaqus.Datum.DatumPlane.DatumPlane:17
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumPlane.py:docstring of abaqus.Datum.DatumPlane.DatumPlane:17
 msgid "Check `DatumPlane on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumplanepyc.htm?contextscope=all>`__."
 msgstr ""
 
@@ -189,11 +189,11 @@ msgstr ""
 msgid "DatumPoint"
 msgstr ""
 
-#: ../../../../src/abaqus/Datum/DatumPoint.py:docstring of abaqus.Datum.DatumPoint.DatumPoint:1
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumPoint.py:docstring of abaqus.Datum.DatumPoint.DatumPoint:1
 msgid "The DatumPoint object has no direct constructor; it is created when a Feature object is created. For example, the DatumPointByCoordinate method creates a Feature object that creates a DatumPoint object. The DatumPoint object is derived from the Datum object."
 msgstr ""
 
-#: ../../../../src/abaqus/Datum/DatumPoint.py:docstring of abaqus.Datum.DatumPoint.DatumPoint:17
+#: ../../../../../../../../../opt/hostedtoolcache/Python/3.9.15/x64/lib/python3.9/site-packages/abaqus/Datum/DatumPoint.py:docstring of abaqus.Datum.DatumPoint.DatumPoint:17
 msgid "Check `DatumPoint on help.3ds.com/2017 <https://help.3ds.com/2017/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-datumpointpyc.htm?contextscope=all>`__."
 msgstr ""
 
