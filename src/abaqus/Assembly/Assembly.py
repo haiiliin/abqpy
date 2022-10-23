@@ -1,6 +1,7 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .ConnectorOrientation import ConnectorOrientation
 from ..Canvas.Displayable import Displayable
@@ -10,7 +11,8 @@ from ..Mesh.MeshAssembly import MeshAssembly
 from ..Property.PropertyAssembly import PropertyAssembly
 from ..Region.RegionAssembly import RegionAssembly
 from ..Region.Set import Set
-from ..UtilityAndView.abaqusConstants import AXIS_1, Boolean, ON, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import AXIS_1, Boolean, ON
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -31,11 +33,11 @@ class Assembly(MeshEditAssembly, MeshAssembly, PropertyAssembly, RegionAssembly,
         self,
         region: Set,
         localCsys1: Optional[DatumCsys] = None,
-        axis1: SymbolicConstant = AXIS_1,
+        axis1: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle1: float = 0,
         orient2sameAs1: Boolean = ON,
         localCsys2: Optional[DatumCsys] = None,
-        axis2: SymbolicConstant = AXIS_1,
+        axis2: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle2: float = 0,
     ) -> ConnectorOrientation:
         """This method creates a ConnectorOrientation object.

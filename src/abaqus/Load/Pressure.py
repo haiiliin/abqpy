@@ -1,10 +1,12 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -46,7 +48,7 @@ class Pressure(Load):
         hReference: float = 0.0,
         field: str = "",
         refPoint: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.DISCRETE_FIELD, C.STAGNATION, C.VISCOUS, C.TOTAL_FORCE, C.HYDROSTATIC, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
         amplitude: str = UNSET,
     ):
         """This method creates a Pressure object.
@@ -101,7 +103,7 @@ class Pressure(Load):
         self,
         field: str = "",
         refPoint: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.FIELD, C.DISCRETE_FIELD, C.STAGNATION, C.VISCOUS, C.TOTAL_FORCE, C.HYDROSTATIC, C.UNIFORM, C.USER_DEFINED] = UNIFORM,
         amplitude: str = UNSET,
     ):
         """This method modifies the data for an existing Pressure object in the step where it is

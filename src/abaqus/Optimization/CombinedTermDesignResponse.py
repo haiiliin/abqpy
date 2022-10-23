@@ -1,9 +1,11 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .DesignResponse import DesignResponse
 from ..UtilityAndView.abaqusConstants import ADD, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -97,7 +99,7 @@ class CombinedTermDesignResponse(DesignResponse):
         filterRadiusReduction: float = 0,
         highCutOff: Optional[str] = None,
         lowCutOff: float = 0,
-        method: SymbolicConstant = ADD,
+        method: Literal[C.ABSOLUTE_DIFFERENCE, C.NORM, C.NTH_ROOT, C.ABSOLUTE_VALUE, C.SQUARE_ROOT, C.COSINE, C.DIVIDE, C.MULTIPLY, C.EXPONENTIAL, C.CUT_OFF, C.SINE, C.SUBTRACT, C.SIGN, C.WEIGHTED_ADD, C.FILTER, C.NTH_POWER, C.LOG, C.DELTA_OVER_6_ITERATIONS, C.DELTA_OVER_2_ITERATIONS, C.TANGENT, C.DELTA_OVER_3_ITERATIONS, C.NORM_FIRST, C.MAXIMUM, C.NEAREST_INTEGER, C.INTEGER, C.DELTA_OVER_4_ITERATIONS, C.NATURAL_LOG, C.DELTA_OVER_1_ITERATION, C.DELTA_OVER_5_ITERATIONS, C.MINIMUM, C.ADD] = ADD,
         weights: tuple = (),
     ):
         """This method creates a CombinedTermDesignResponse object.
@@ -184,7 +186,7 @@ class CombinedTermDesignResponse(DesignResponse):
         filterRadiusReduction: float = 0,
         highCutOff: Optional[str] = None,
         lowCutOff: float = 0,
-        method: SymbolicConstant = ADD,
+        method: Literal[C.ABSOLUTE_DIFFERENCE, C.NORM, C.NTH_ROOT, C.ABSOLUTE_VALUE, C.SQUARE_ROOT, C.COSINE, C.DIVIDE, C.MULTIPLY, C.EXPONENTIAL, C.CUT_OFF, C.SINE, C.SUBTRACT, C.SIGN, C.WEIGHTED_ADD, C.FILTER, C.NTH_POWER, C.LOG, C.DELTA_OVER_6_ITERATIONS, C.DELTA_OVER_2_ITERATIONS, C.TANGENT, C.DELTA_OVER_3_ITERATIONS, C.NORM_FIRST, C.MAXIMUM, C.NEAREST_INTEGER, C.INTEGER, C.DELTA_OVER_4_ITERATIONS, C.NATURAL_LOG, C.DELTA_OVER_1_ITERATION, C.DELTA_OVER_5_ITERATIONS, C.MINIMUM, C.ADD] = ADD,
         weights: tuple = (),
     ):
         """This method modifies the CombinedTermDesignResponse object.

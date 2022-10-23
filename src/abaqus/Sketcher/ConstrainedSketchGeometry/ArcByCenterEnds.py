@@ -1,8 +1,13 @@
 from typing import Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .ConstrainedSketchGeometry import ConstrainedSketchGeometry
+<<<<<<< HEAD
+=======
+from ...UtilityAndView.abaqusConstants import abaqusConstants as C
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
 
 
 @abaqus_class_doc
@@ -12,6 +17,10 @@ class ArcByCenterEnds(ConstrainedSketchGeometry):
         center: Sequence[float],
         point1: Sequence[float],
         point2: Sequence[float],
+<<<<<<< HEAD
+=======
+        direction: Literal[C.COUNTERCLOCKWISE, C.CLOCKWISE],
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method constructs an arc using a center point and two vertices. The Arc object is
         added to the geometry repository of the ConstrainedSketch object. The arc is created in

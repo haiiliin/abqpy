@@ -1,9 +1,11 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import (Boolean, DEFAULT, FRAME_BASED, HALF_CYCLE, LOOP,
                                               MEDIUM, ON, SOLID, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _OptionsBase
 
 
@@ -128,12 +130,12 @@ class AnimationOptions(_OptionsBase):
     @abaqus_method_doc
     def setValues(
         self,
-        mode: SymbolicConstant = LOOP,
+        mode: Literal[C.LOOP, C.SWING, C.PLAY_ONCE, C.LOOP_BACKWARD] = LOOP,
         frameRate: int = 50,
         frameCounter: Boolean = ON,
-        relativeScaling: SymbolicConstant = HALF_CYCLE,
+        relativeScaling: Literal[C.HARMONIC, C.SCALE_FACTOR, C.HALF_CYCLE, C.FULL_CYCLE] = HALF_CYCLE,
         numScaleFactorFrames: int = 7,
-        timeHistoryMode: SymbolicConstant = FRAME_BASED,
+        timeHistoryMode: Literal[C.FRAME_BASED, C.TIME_BASED] = FRAME_BASED,
         maxTime: Optional[float] = None,
         maxTimeAutoCompute: Boolean = ON,
         minTime: Optional[float] = None,
@@ -141,12 +143,12 @@ class AnimationOptions(_OptionsBase):
         timeIncrement: Optional[float] = None,
         xyUseHighlightMethod: Boolean = ON,
         xyShowLine: Boolean = ON,
-        xyLineStyle: SymbolicConstant = SOLID,
-        xyLineThickness: SymbolicConstant = MEDIUM,
+        xyLineStyle: Literal[C.DASHED, C.SOLID, C.DOT_DASH, C.DOTTED] = SOLID,
+        xyLineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = MEDIUM,
         xyLineColor: str = "",
         xyShowSymbol: Boolean = ON,
-        xySymbolMarker: SymbolicConstant = DEFAULT,
-        xySymbolSize: SymbolicConstant = MEDIUM,
+        xySymbolMarker: Literal[C.CROSS, C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_TRI, C.HOLLOW_SQUARE, C.DEFAULT, C.FILLED_TRI, C.HOLLOW_DIAMOND, C.FILLED_CIRCLE, C.XMARKER] = DEFAULT,
+        xySymbolSize: Literal[C.SMALL, C.LARGE, C.MEDIUM] = MEDIUM,
         xySymbolColor: str = "",
     ):
         """This method modifies the AnimationOptions object.

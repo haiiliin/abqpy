@@ -1,7 +1,9 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ...Ratios import Ratios
-from ....UtilityAndView.abaqusConstants import Boolean, INPUT, OFF, SymbolicConstant
+from ....UtilityAndView.abaqusConstants import Boolean, INPUT, OFF
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -36,7 +38,7 @@ class Swelling:
     def __init__(
         self,
         table: tuple,
-        law: SymbolicConstant = INPUT,
+        law: Literal[C.INPUT, C.USER] = INPUT,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):

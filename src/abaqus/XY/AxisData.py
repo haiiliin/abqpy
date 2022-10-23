@@ -1,11 +1,17 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .QuantityType import QuantityType
 from .XYCurveArray import XYCurveArray
 from ..UtilityAndView.abaqusConstants import (AUTOCOMPUTE, AUTOMATIC, Boolean, LINEAR, ON,
+<<<<<<< HEAD
                                               SymbolicConstant, NONE)
+=======
+                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
+>>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
 
 
 @abaqus_class_doc
@@ -144,15 +150,15 @@ class AxisData:
     def setValues(
         self,
         axisData: Optional["AxisData"] = None,
-        labelFormat: SymbolicConstant = AUTOMATIC,
+        labelFormat: Literal[C.SCIENTIFIC, C.AUTOMATIC, C.ENGINEERING, C.DECIMAL] = AUTOMATIC,
         labelNumDigits: int = 2,
-        scale: SymbolicConstant = LINEAR,
+        scale: Literal[C.LINEAR] = LINEAR,
         dbReference: float = 1,
         minAutoCompute: Boolean = ON,
         minValue: Optional[float] = None,
         maxAutoCompute: Boolean = ON,
         maxValue: Optional[float] = None,
-        tickMode: SymbolicConstant = AUTOCOMPUTE,
+        tickMode: Literal[C.AUTOCOMPUTE] = AUTOCOMPUTE,
         tickIncrement: Optional[float] = None,
         tickCount: Optional[int] = None,
         minorTickCount: int = 1,

@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ....UtilityAndView.abaqusConstants import Boolean, OFF, RETENTION_FACTOR, SymbolicConstant
+from ....UtilityAndView.abaqusConstants import Boolean, OFF, RETENTION_FACTOR
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -46,7 +48,7 @@ class BrittleShear:
         table: tuple,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        type: SymbolicConstant = RETENTION_FACTOR,
+        type: Literal[C.POWER_LAW, C.RETENTION_FACTOR] = RETENTION_FACTOR,
     ):
         """This method creates a BrittleShear object.
 

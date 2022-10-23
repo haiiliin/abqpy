@@ -1,11 +1,13 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import (Boolean, NOT_APPLICABLE, OFF, SET, SymbolicConstant,
                                               UNIFORM, UNSET)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -63,17 +65,17 @@ class DisplacementBC(BoundaryCondition):
         createStepName: str,
         region: Region,
         fieldName: str = "",
-        u1: Union[SymbolicConstant, float] = UNSET,
-        u2: Union[SymbolicConstant, float] = UNSET,
-        u3: Union[SymbolicConstant, float] = UNSET,
-        ur1: Union[SymbolicConstant, float] = UNSET,
-        ur2: Union[SymbolicConstant, float] = UNSET,
-        ur3: Union[SymbolicConstant, float] = UNSET,
+        u1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        u2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        u3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ur1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ur2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ur3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         fixed: Boolean = OFF,
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM, C.DISCRETE_FIELD] = UNIFORM,
         localCsys: Optional[str] = None,
-        buckleCase: SymbolicConstant = NOT_APPLICABLE,
+        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
     ):
         """This method creates a DisplacementBC object.
 
@@ -152,17 +154,17 @@ class DisplacementBC(BoundaryCondition):
     def setValues(
         self,
         fieldName: str = "",
-        u1: Union[SymbolicConstant, float] = UNSET,
-        u2: Union[SymbolicConstant, float] = UNSET,
-        u3: Union[SymbolicConstant, float] = UNSET,
-        ur1: Union[SymbolicConstant, float] = UNSET,
-        ur2: Union[SymbolicConstant, float] = UNSET,
-        ur3: Union[SymbolicConstant, float] = UNSET,
+        u1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        u2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        u3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ur1: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ur2: Union[Literal[C.SET, C.UNSET], float] = UNSET,
+        ur3: Union[Literal[C.SET, C.UNSET], float] = UNSET,
         fixed: Boolean = OFF,
         amplitude: str = UNSET,
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM, C.DISCRETE_FIELD] = UNIFORM,
         localCsys: Optional[str] = None,
-        buckleCase: SymbolicConstant = NOT_APPLICABLE,
+        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
     ):
         """This method modifies the data for an existing DisplacementBC object in the step where it
         is created.
@@ -226,14 +228,14 @@ class DisplacementBC(BoundaryCondition):
     def setValuesInStep(
         self,
         stepName: str,
-        u1: Union[SymbolicConstant, float] = SET,
-        u2: Union[SymbolicConstant, float] = SET,
-        u3: Union[SymbolicConstant, float] = SET,
-        ur1: Union[SymbolicConstant, float] = SET,
-        ur2: Union[SymbolicConstant, float] = SET,
-        ur3: Union[SymbolicConstant, float] = SET,
+        u1: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
+        u2: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
+        u3: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
+        ur1: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
+        ur2: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
+        ur3: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
         amplitude: str = "",
-        buckleCase: SymbolicConstant = NOT_APPLICABLE,
+        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
     ):
         """This method modifies the propagating data for an existing DisplacementBC object in the
         specified step.
