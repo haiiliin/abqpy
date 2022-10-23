@@ -1,0 +1,54 @@
+name: black
+
+on:
+  pull_request:
+    branches: [ "main", "20**" ]
+    paths:
+      - "src/abaqus/**"
+      - "src/abqpy/**"
+      - "tests/**"
+      - "setup.py"
+
+jobs:
+  linter_name:
+    if: ${{ !contains(github.event.pull_request.labels.*.name, 'skip-black') }}
+    name: runner / black
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: psf/black@stable
+        with:
+          options: .
+      - uses: dorny/paths-filter@v2
+        id: filter
+        with:
+          base: HEAD
+          filters: |
+            changed:
+              - 'src/abaqus/**'
+              - 'src/abqpy/**'
+              - 'tests/**'
+              - 'setup.py'
+      - name: Commit files
+        if: steps.filter.outputs.changed == 'true'
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Format the code using black by GitHub Action https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}" -a
+      - name: Push changes
+        if: steps.filter.outputs.changed == 'true'
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.head_ref }}
+      - name: Comment PR
+        if: steps.filter.outputs.changed == 'true'
+        uses: Beakyn/gha-comment-pull-request@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          comment-message: |
+            Hi @${{ github.event.pull_request.user.login }}, I have formatted the code in this pull request. Please check it again. Thanks!
+          delete-previous-comment: true
