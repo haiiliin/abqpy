@@ -1,10 +1,12 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Constraint import Constraint
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import Boolean, OFF, ON, SymbolicConstant, UNIFORM
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -96,8 +98,8 @@ class Coupling(Constraint):
         name: str,
         surface: Region,
         controlPoint: Region,
-        influenceRadius: Union[SymbolicConstant, float],
-        couplingType: SymbolicConstant,
+        influenceRadius: Union[Literal[C.WHOLE_SURFACE], float],
+        couplingType: Literal[C.STRUCTURAL, C.DISTRIBUTING, C.KINEMATIC],
         adjust: Boolean = OFF,
         localCsys: Optional[str] = None,
         u1: Boolean = ON,
@@ -106,7 +108,7 @@ class Coupling(Constraint):
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
-        weightingMethod: SymbolicConstant = UNIFORM,
+        weightingMethod: Literal[C.QUADRATIC, C.DISTRIBUTING, C.UNIFORM, C.LINEAR, C.CUBIC] = UNIFORM,
     ):
         """This method creates a Coupling object.
 
@@ -184,7 +186,7 @@ class Coupling(Constraint):
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
-        weightingMethod: SymbolicConstant = UNIFORM,
+        weightingMethod: Literal[C.QUADRATIC, C.DISTRIBUTING, C.UNIFORM, C.LINEAR, C.CUBIC] = UNIFORM,
     ):
         """This method modifies the Coupling object.
 

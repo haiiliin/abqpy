@@ -1,6 +1,7 @@
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AnalysisStep import AnalysisStep
 from ..Adaptivity.AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
@@ -19,6 +20,7 @@ from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import (AUTOMATIC, Boolean, LINEAR, OFF, PROPAGATED,
                                               SOLVER_DEFAULT, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -229,19 +231,19 @@ class StaticRiksStep(AnalysisStep):
         maximumDisplacement: float = 0,
         dof: int = 0,
         region: Optional[Region] = None,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
         totalArcLength: float = 1,
         initialArcInc: Optional[float] = None,
         minArcInc: Optional[float] = None,
         maxArcInc: Optional[float] = None,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        extrapolation: SymbolicConstant = LINEAR,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
+        extrapolation: Literal[C.PARABOLIC, C.NONE, C.LINEAR] = LINEAR,
         fullyPlastic: str = "",
         noStop: Boolean = OFF,
         maintainAttributes: Boolean = False,
         useLongTermSolution: Boolean = OFF,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
     ):
         """This method creates a StaticRiksStep object.
 
@@ -348,18 +350,18 @@ class StaticRiksStep(AnalysisStep):
         maximumDisplacement: float = 0,
         dof: int = 0,
         region: Optional[Region] = None,
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
+        timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
         totalArcLength: float = 1,
         initialArcInc: Optional[float] = None,
         minArcInc: Optional[float] = None,
         maxArcInc: Optional[float] = None,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
-        extrapolation: SymbolicConstant = LINEAR,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
+        extrapolation: Literal[C.PARABOLIC, C.NONE, C.LINEAR] = LINEAR,
         fullyPlastic: str = "",
         noStop: Boolean = OFF,
         useLongTermSolution: Boolean = OFF,
-        convertSDI: SymbolicConstant = PROPAGATED,
+        convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
     ):
         """This method modifies the StaticRiksStep object.
 

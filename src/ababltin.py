@@ -1,7 +1,6 @@
 import os
 import re
 import sys
-from types import NoneType
 
 from abaqus.Session.Session import Session
 
@@ -14,6 +13,7 @@ from abaqus.UtilityAndView.abaqusConstants import (AbaqusBooleanType, Boolean, B
                                                    OFF, ON, SCATTERED, STANDARD_EXPLICIT, STEP_END,
                                                    SymbolicConstantType, TOTAL, TRUE)
 
+NoneType = type(None)
 
 def upgradeMdb(*args, **kwargs):
     pass

@@ -1,6 +1,7 @@
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AnalysisStep import AnalysisStep
 from ..Adaptivity.AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
@@ -29,6 +30,7 @@ from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import Boolean, LOG, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -185,7 +187,7 @@ class RandomResponseStep(AnalysisStep):
         previous: str,
         freq: RandomResponseFrequencyArray,
         description: str = "",
-        scale: SymbolicConstant = LOG,
+        scale: Literal[C.LOG, C.LINEAR] = LOG,
         directDamping: Optional[DirectDamping] = None, 
         compositeDamping: Optional[CompositeDamping] = None, 
         rayleighDamping: Optional[RayleighDamping] = None, 
@@ -249,7 +251,7 @@ class RandomResponseStep(AnalysisStep):
     def setValues(
         self,
         description: str = "",
-        scale: SymbolicConstant = LOG,
+        scale: Literal[C.LOG, C.LINEAR] = LOG,
         directDamping: Optional[DirectDamping] = None, 
         compositeDamping: Optional[CompositeDamping] = None, 
         rayleighDamping: Optional[RayleighDamping] = None, 

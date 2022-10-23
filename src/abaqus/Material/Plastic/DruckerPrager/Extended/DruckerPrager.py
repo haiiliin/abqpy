@@ -1,10 +1,12 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .DruckerPragerCreep import DruckerPragerCreep
 from .DruckerPragerHardening import DruckerPragerHardening
 from .TriaxialTestData import TriaxialTestData
 from ...Metal.RateDependent.RateDependent import RateDependent
-from .....UtilityAndView.abaqusConstants import Boolean, LINEAR, OFF, SymbolicConstant
+from .....UtilityAndView.abaqusConstants import Boolean, LINEAR, OFF
+from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -73,7 +75,7 @@ class DruckerPrager:
     def __init__(
         self,
         table: tuple,
-        shearCriterion: SymbolicConstant = LINEAR,
+        shearCriterion: Literal[C.EXPONENTIAL, C.HYPERBOLIC, C.LINEAR] = LINEAR,
         eccentricity: float = 0,
         testData: Boolean = OFF,
         temperatureDependency: Boolean = OFF,

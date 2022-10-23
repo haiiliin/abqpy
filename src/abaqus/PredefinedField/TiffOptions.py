@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import SIZE_ON_SCREEN, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import SIZE_ON_SCREEN
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -16,7 +18,7 @@ class TiffOptions:
     """
 
     @abaqus_method_doc
-    def setValues(self, imageSize: SymbolicConstant = SIZE_ON_SCREEN):
+    def setValues(self, imageSize: Literal[C.SIZE_ON_SCREEN] = SIZE_ON_SCREEN):
         """This method modifies the TiffOptions object.
 
         Parameters
