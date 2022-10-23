@@ -17,16 +17,20 @@ Unmerged paths:
 
 import os
 import re
-import sys
 
 # Change the work directory to the root of the repository
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 os.chdir('..')
 
 # Get the pull request body
-pr_body = sys.argv[1]
+with open('pull_request_body.txt', 'r', encoding='utf-8') as f:
+    body = f.read()
 
 # Get the list of files that have been deleted and delete them
-for file in re.findall(r"deleted by us:\s+(.+?)\n", pr_body):
-    os.remove(file)
-    print(f"Deleted file: {file}")
+for file in re.findall(r"deleted by us:\s+(.+?)\n", body):
+    if os.path.exists(file) and os.path.isfile(file):
+        os.remove(file)
+        print(f"Delete file: {file}")
+        
+# Remove the pull request body file
+os.remove('pull_request_body.txt')
