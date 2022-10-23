@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 00:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1076,6 +1076,7 @@ msgid ""
 msgstr ""
 
 #: ../../docstring abaqus.Job.Job.Job.getMemoryFromAnalysis:1
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:80
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.getMemoryFromAnalysis:1
 #: abaqus.Job.ModelJob.ModelJob.getMemoryFromAnalysis:1 of
 msgid ""
@@ -1383,19 +1384,32 @@ msgid ""
 "parallelizationMethodExplicit is now `DOMAIN`"
 msgstr ""
 
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:81 of
-msgid "A :py:class:`~abaqus.Job.JobFromInputFile.JobFromInputFile` object."
-msgstr ""
-
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:82 of
-msgid ":class:`JobFromInputFile`"
-msgstr ""
-
-#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:84 of
-msgid "If the user attempts to provide RESTART as a value to argument type:"
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:83 of
+msgid ""
+"An Int specifying the number of GPUs to use for this analysis if parallel"
+" processing is available. Possible values are **numCpus** >= 0. The "
+"default value is 0."
 msgstr ""
 
 #: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:85 of
+msgid ""
+"This option specifies the results output format: ODB, SIM, or BOTH. The "
+"default value is ODB."
+msgstr ""
+
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:87 of
+msgid "A :py:class:`~abaqus.Job.JobFromInputFile.JobFromInputFile` object."
+msgstr ""
+
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:88 of
+msgid ":class:`JobFromInputFile`"
+msgstr ""
+
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:90 of
+msgid "If the user attempts to provide RESTART as a value to argument type:"
+msgstr ""
+
+#: abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:91 of
 msgid "RESTART of input file job is not currently supported"
 msgstr ""
 
