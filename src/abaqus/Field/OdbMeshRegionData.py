@@ -5,7 +5,7 @@ from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import (Boolean, EXTRAPOLATE_COMPUTE_AVERAGE, FIELD_OUTPUT,
                                               FLOAT, NONE, OFF, ON, REAL, SCALAR, SymbolicConstant,
-                                              UNDEFINED_POSITION)
+                                              UNDEFINED_POSITION, DEFAULT)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 

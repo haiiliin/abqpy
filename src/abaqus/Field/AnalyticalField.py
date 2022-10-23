@@ -6,8 +6,9 @@ from typing_extensions import Literal
 from .Field import Field
 from .OdbMeshRegionData import OdbMeshRegionData
 from ..Datum.DatumCsys import DatumCsys
+from ..UtilityAndView.SymbolicConstant import SymbolicConstant
 from ..UtilityAndView.abaqusConstants import (EXTRAPOLATE_COMPUTE_AVERAGE, FIELD_OUTPUT, FLOAT,
-                                              NONE, OFF, ON, REAL, SCALAR, UNDEFINED_POSITION)
+                                              NONE, OFF, ON, REAL, SCALAR, UNDEFINED_POSITION, DEFAULT)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
