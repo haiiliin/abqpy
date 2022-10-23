@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 14:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2354,7 +2354,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.xyDataListFromField:13
 #: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:14
 #: abaqus.XY.XYSession.XYSession.XYDataFromHistory:13
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:13
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:14
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:13 of
 msgid ""
 "An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database "
@@ -2411,7 +2411,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:77
 #: abaqus.XY.XYData.XYData.xyDataListFromField:89
 #: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:35
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:72
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:81
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:89 of
 msgid "A list of XYData objects."
 msgstr ""
@@ -2420,7 +2420,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:78
 #: abaqus.XY.XYData.XYData.xyDataListFromField:90
 #: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:36
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:73
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:82
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:90
 #: abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:81 of
 msgid ":class:`List[XYData]`"
@@ -2492,7 +2492,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.xyDataListFromField:73
 #: abaqus.XY.XYSession.XYSession.XYDataFromHistory:41
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:88
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:66
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:74
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:73 of
 msgid ""
 "A SymbolicConstant specifying the numeric form in which to display "
@@ -2507,7 +2507,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.xyDataListFromField:77
 #: abaqus.XY.XYSession.XYSession.XYDataFromHistory:45
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:92
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:69
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:78
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:77 of
 msgid ""
 "A Float specifying the angle (in degrees) at which to display results "
@@ -2677,14 +2677,14 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:22
 #: abaqus.XY.XYData.XYData.xyDataListFromField:21
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:58
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:19
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:22
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:21 of
 msgid "Variable label: A String specifying the variable; for example, 'U'."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:23
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:59
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:20 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:23 of
 msgid ""
 "Variable output position: A SymbolicConstant specifying the output "
 "position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, "
@@ -2694,7 +2694,7 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:27
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:62
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:24 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:27 of
 msgid ""
 "Refinement: A tuple specifying the refinement. If the refinement tuple is"
 " omitted, data are written for all components and invariants (if "
@@ -2706,7 +2706,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:32
 #: abaqus.XY.XYData.XYData.xyDataListFromField:30
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:67
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:29
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:32
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:30 of
 msgid ""
 "Type: A SymbolicConstant specifying the type of refinement. Possible "
@@ -2716,7 +2716,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:33
 #: abaqus.XY.XYData.XYData.xyDataListFromField:32
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:69
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:30
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:33
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:32 of
 msgid ""
 "Label: A String specifying the invariant or the component; for example, "
@@ -2726,7 +2726,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:35
 #: abaqus.XY.XYData.XYData.xyDataListFromField:34
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:71
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:32
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:35
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:34 of
 msgid ""
 "Location: An optional Dictionary specifying the location. The dictionary "
@@ -2736,7 +2736,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:38
 #: abaqus.XY.XYData.XYData.xyDataListFromField:37
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:74
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:35
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:38
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:37 of
 msgid "A String specifying the category selection label."
 msgstr ""
@@ -2744,7 +2744,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:39
 #: abaqus.XY.XYData.XYData.xyDataListFromField:38
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:75
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:36
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:39
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:38 of
 msgid "A String specifying the section point label."
 msgstr ""
@@ -2752,7 +2752,7 @@ msgstr ""
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:41
 #: abaqus.XY.XYData.XYData.xyDataListFromField:40
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:77
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:38
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:41
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:40 of
 msgid "For example::"
 msgstr ""
@@ -2857,7 +2857,7 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:16
 #: abaqus.XY.XYData.XYData.xyDataListFromField:15
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:14
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:16
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:15 of
 msgid ""
 "A SymbolicConstant specifying the position from which output will be "
@@ -2866,7 +2866,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:19
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:16 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:19 of
 msgid ""
 "A tuple of tuples containing the descriptions of variables for which to "
 "extract data from the field. Each tuple specifies the following:  * "
@@ -2895,7 +2895,7 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:19
 #: abaqus.XY.XYData.XYData.xyDataListFromField:18
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:16
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:19
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:18 of
 msgid ""
 "A tuple of tuples containing the descriptions of variables for which to "
@@ -2904,7 +2904,7 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:49
 #: abaqus.XY.XYData.XYData.xyDataListFromField:48
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:45
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:49
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:48 of
 msgid ""
 "A sequence of Strings specifying element sets or a String specifying a "
@@ -2912,7 +2912,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.xyDataListFromField:51
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:47
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:52
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:51 of
 msgid ""
 "A sequence of expressions specifying element labels per part instance in "
@@ -2927,7 +2927,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.xyDataListFromField:51
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:47
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:52
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:51 of
 msgid ""
 "A sequence of expressions specifying element labels per part instance in "
@@ -2939,19 +2939,19 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.xyDataListFromField:57
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:53
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:58
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:57 of
 msgid "An Int specifying a single element label; for example, `1`."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.xyDataListFromField:58
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:54
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:59
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:58 of
 msgid "A String specifying a single element label; for example, `'7'`."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.xyDataListFromField:59
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:55
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:60
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:59 of
 msgid ""
 "A String specifying a sequence of element labels; for example, `'3:5'` "
@@ -2960,14 +2960,14 @@ msgstr ""
 
 #: abaqus.XY.XYData.XYData.XYDataFromShellThickness:60
 #: abaqus.XY.XYData.XYData.xyDataListFromField:61
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:56
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:62
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:61 of
 msgid ""
 "A sequence of Strings specifying node sets or a String specifying a "
 "single node set."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:57 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:64 of
 msgid ""
 "A sequence of expressions specifying node labels per part instance in the"
 " model. Each part instance node expression is a sequence of a String "
@@ -2981,7 +2981,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.xyDataListFromField:63
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:57
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:64
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:63 of
 msgid ""
 "A sequence of expressions specifying node labels per part instance in the"
@@ -2992,16 +2992,16 @@ msgid ""
 "following:"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:63 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:70 of
 msgid "An Int specifying a single node label; for example, `1`."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:64 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:71 of
 msgid "A String specifying a single node label; for example, `'7'`."
 msgstr ""
 
 #: abaqus.XY.XYData.XYData.xyDataListFromField:71
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:65
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:72
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:71 of
 msgid ""
 "A String specifying a sequence of node labels; for example, `'3:5'` and "
@@ -3156,7 +3156,7 @@ msgstr ""
 
 #: abaqus.XY.XYSessionBase.XYSessionBase.linearizeStress:4 of
 msgid ""
-"Check `XYSession.linearizeStress on help.3ds.com/2022 "
+"Check `XYSessionBase.linearizeStress on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xysessionpyc.htm?contextscope=all"
 "#simaker-xysessionlinearizestresspyc>`__."
 msgstr ""
@@ -3328,7 +3328,7 @@ msgstr ""
 
 #: abaqus.XY.XYSessionBase.XYSessionBase.setLimitForXYDataPlots:5 of
 msgid ""
-"Check `XYSession.setLimitForXYDataPlots on help.3ds.com/2022 "
+"Check `XYSessionBase.setLimitForXYDataPlots on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xysessionpyc.htm?contextscope=all"
 "#simaker-xysessionsetlimitforxydataplotspyc>`__."
 msgstr ""
@@ -3354,7 +3354,7 @@ msgstr ""
 
 #: abaqus.XY.XYSessionBase.XYSessionBase.setPathTolerance:7 of
 msgid ""
-"Check `XYSession.setPathTolerance on help.3ds.com/2022 "
+"Check `XYSessionBase.setPathTolerance on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xysessionpyc.htm?contextscope=all"
 "#simaker-xysessionsetpathtolerancepyc>`__."
 msgstr ""
@@ -6392,7 +6392,7 @@ msgstr ""
 
 #: abaqus.XY.XYPlotBase.XYPlotBase.__init__:9 of
 msgid ""
-"Check `XYPlot.__init__ on help.3ds.com/2022 "
+"Check `XYPlotBase.__init__ on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
 "#simaker-xyplot__init__pyc>`__."
 msgstr ""
@@ -6411,7 +6411,7 @@ msgstr ""
 
 #: abaqus.XY.XYPlotBase.XYPlotBase.autoColor:5 of
 msgid ""
-"Check `XYPlot.autoColor on help.3ds.com/2022 "
+"Check `XYPlotBase.autoColor on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
 "#simaker-xyplotautocolorpyc>`__."
 msgstr ""
@@ -6432,7 +6432,7 @@ msgstr ""
 
 #: abaqus.XY.XYPlotBase.XYPlotBase.next:6 of
 msgid ""
-"Check `XYPlot.next on help.3ds.com/2022 "
+"Check `XYPlotBase.next on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
 "#simaker-xyplotnextpyc>`__."
 msgstr ""
@@ -6456,14 +6456,14 @@ msgstr ""
 
 #: abaqus.XY.XYPlotBase.XYPlotBase.previous:6 of
 msgid ""
-"Check `XYPlot.previous on help.3ds.com/2022 "
+"Check `XYPlotBase.previous on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
 "#simaker-xyplotpreviouspyc>`__."
 msgstr ""
 
 #: abaqus.XY.XYPlotBase.XYPlotBase.setValues:4 of
 msgid ""
-"Check `XYPlot.setValues on help.3ds.com/2022 "
+"Check `XYPlotBase.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
 "#simaker-xyplotsetvaluespyc>`__."
 msgstr ""
@@ -8848,5 +8848,56 @@ msgstr ""
 #~ msgid ""
 #~ ":py:obj:`setValues <abaqus.XY.XYPlot.XYPlot.setValues>`\\ "
 #~ "\\(title\\, transform\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XYSession.linearizeStress on "
+#~ "help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xysessionpyc.htm?contextscope=all"
+#~ "#simaker-xysessionlinearizestresspyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XYSession.setLimitForXYDataPlots on "
+#~ "help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xysessionpyc.htm?contextscope=all"
+#~ "#simaker-xysessionsetlimitforxydataplotspyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XYSession.setPathTolerance on "
+#~ "help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xysessionpyc.htm?contextscope=all"
+#~ "#simaker-xysessionsetpathtolerancepyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XYPlot.__init__ on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
+#~ "#simaker-xyplot__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XYPlot.autoColor on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
+#~ "#simaker-xyplotautocolorpyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XYPlot.next on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
+#~ "#simaker-xyplotnextpyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XYPlot.previous on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
+#~ "#simaker-xyplotpreviouspyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `XYPlot.setValues on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xyplotpyc.htm?contextscope=all"
+#~ "#simaker-xyplotsetvaluespyc>`__."
 #~ msgstr ""
 
