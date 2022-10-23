@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Interaction import Interaction
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -82,7 +84,7 @@ class FilmCondition(Interaction):
         name: str,
         createStepName: str,
         surface: Region,
-        definition: SymbolicConstant,
+        definition: Literal[C.EMBEDDED_COEFF, C.FIELD, C.USER_SUB, C.PROPERTY_REF],
         interactionProperty: str = "",
         sinkTemperature: float = 0,
         sinkAmplitude: str = "",
@@ -90,7 +92,7 @@ class FilmCondition(Interaction):
         filmCoeffAmplitude: str = "",
         field: str = "",
         sinkFieldName: str = "",
-        sinkDistributionType: SymbolicConstant = UNIFORM,
+        sinkDistributionType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
     ):
         """This method creates a FilmCondition object.
 
@@ -165,7 +167,7 @@ class FilmCondition(Interaction):
         filmCoeffAmplitude: str = "",
         field: str = "",
         sinkFieldName: str = "",
-        sinkDistributionType: SymbolicConstant = UNIFORM,
+        sinkDistributionType: Literal[C.DISCRETE_FIELD, C.UNIFORM, C.ANALYTICAL_FIELD] = UNIFORM,
     ):
         """This method modifies the data for an existing FilmCondition object in the step where it
         is created.

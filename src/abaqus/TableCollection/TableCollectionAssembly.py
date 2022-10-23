@@ -1,11 +1,13 @@
 from typing import Dict
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .ElementProgressiveActivation import ElementProgressiveActivation
 from ..Assembly.AssemblyBase import AssemblyBase
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import Boolean, NONE, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import Boolean, NONE, OFF
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -32,7 +34,7 @@ class TableCollectionAssembly(AssemblyBase):
         name: str,
         elset: Region,
         deformation: Boolean = OFF,
-        freeSurfaceType: SymbolicConstant = NONE,
+        freeSurfaceType: Literal[C.FACET, C.NONE] = NONE,
     ) -> ElementProgressiveActivation:
         """This method creates an ElementProgressiveActivation object and places it in the
         elementProgressiveActivation repository.
