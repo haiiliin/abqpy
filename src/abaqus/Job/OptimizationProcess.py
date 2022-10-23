@@ -2,8 +2,12 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
-from ..UtilityAndView.abaqusConstants import (Boolean, OFF, OPT_DATASAVE_SPECIFY_CYCLE,
-                                              OPT_EXTRACT_SMOOTH_ABAQUS_INPUT_FILE)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    OFF,
+    OPT_DATASAVE_SPECIFY_CYCLE,
+    OPT_EXTRACT_SMOOTH_ABAQUS_INPUT_FILE,
+)
 
 
 @abaqus_class_doc
@@ -11,7 +15,7 @@ class OptimizationProcess:
     """The OptimizationProcess object defines a process to perform an optimization of a model
     defined using an optimization task.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import job
@@ -82,7 +86,7 @@ class OptimizationProcess:
     ):
         """This method creates an OptimizationProcess object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.OptimizationProcess

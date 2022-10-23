@@ -11,8 +11,7 @@ from .SmoothingAssignment import SmoothingAssignment
 from .SurfaceFeatureAssignment import SurfaceFeatureAssignment
 from .SurfaceOffsetAssignment import SurfaceOffsetAssignment
 from .SurfaceThicknessAssignment import SurfaceThicknessAssignment
-from ..UtilityAndView.abaqusConstants import (Boolean, GLOBAL, OFF, ON, ORIGINAL, PERIMETER,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import Boolean, GLOBAL, OFF, ON, ORIGINAL, PERIMETER, SymbolicConstant
 
 
 @abaqus_class_doc
@@ -21,7 +20,7 @@ class ContactExp(Interaction):
     contact in an Abaqus/Explicit analysis.
     The ContactExp object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -51,9 +50,7 @@ class ContactExp(Interaction):
 
     #: A :py:class:`~abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment` object specifying the surface thickness assignments in the
     #: contact domain.
-    surfaceThicknessAssignments: SurfaceThicknessAssignment = (
-        SurfaceThicknessAssignment()
-    )
+    surfaceThicknessAssignments: SurfaceThicknessAssignment = SurfaceThicknessAssignment()
 
     #: A :py:class:`~abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment` object specifying the surface offset fraction assignments in
     #: the contact domain.
@@ -85,11 +82,11 @@ class ContactExp(Interaction):
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-        includedPairs: Optional[RegionPairs] = None, 
-        excludedPairs: Optional[RegionPairs] = None, 
-        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
-        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
-        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
+        includedPairs: Optional[RegionPairs] = None,
+        excludedPairs: Optional[RegionPairs] = None,
+        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None,
+        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None,
+        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         smoothingAssignments: Optional[SmoothingAssignment] = None,
         masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
@@ -97,7 +94,7 @@ class ContactExp(Interaction):
     ):
         """This method creates a ContactExp object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactExp
@@ -170,7 +167,7 @@ class ContactExp(Interaction):
     ):
         """This method creates a ContactExp object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactExp

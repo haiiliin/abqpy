@@ -16,7 +16,7 @@ class DisplacementBaseMotionBC(BoundaryCondition):
     boundary condition.
     The DisplacementBaseMotionBC object is derived from the BoundaryCondition object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -71,7 +71,7 @@ class DisplacementBaseMotionBC(BoundaryCondition):
     ):
         """This method creates a DisplacementBaseMotionBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].DisplacementBaseMotionBC

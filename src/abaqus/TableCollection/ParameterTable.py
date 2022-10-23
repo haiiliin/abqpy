@@ -13,7 +13,7 @@ class ParameterTable:
     contents of ParameterColumn. After DataTable is instantiated, making changes to
     ParameterColumn may lead to data corruption.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name].tableCollections[name].parameterTables[name]
@@ -38,7 +38,7 @@ class ParameterTable:
         """This method creates a ParameterTable object and places it in the parameterTables
         repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].tableCollections[name].ParameterTable
@@ -68,7 +68,7 @@ class ParameterTable:
         it in the array data structure. It is accessible from the ParameterTable object using a
         column member.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].tableCollections[name].ParameterTable
@@ -97,8 +97,6 @@ class ParameterTable:
         ------
         Incompatible data are given
         """
-        parameterColumn = ParameterColumn(
-            type, unit, description, default, allowedValues
-        )
+        parameterColumn = ParameterColumn(type, unit, description, default, allowedValues)
         self.columns.append(parameterColumn)
         return parameterColumn

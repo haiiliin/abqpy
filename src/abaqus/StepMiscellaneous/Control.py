@@ -11,7 +11,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class Control:
     """The Control object is used to provide additional optional general solution controls.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step

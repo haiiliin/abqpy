@@ -8,7 +8,7 @@ class Inertia:
     """The Inertia object is the abstract base type for HeatCapacitance, NonstructuralMass, and
     PointMassInertia.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

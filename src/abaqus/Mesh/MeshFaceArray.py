@@ -11,7 +11,7 @@ from .MeshFace import MeshFace
 class MeshFaceArray(List[MeshFace]):
     """The MeshFaceArray is a sequence of MeshFace objects.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -25,7 +25,7 @@ class MeshFaceArray(List[MeshFace]):
     def __init__(self, faces: List[MeshFace]):
         """This method creates a MeshFaceArray object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mesh.MeshFaceArray
@@ -59,7 +59,7 @@ class MeshFaceArray(List[MeshFace]):
 
         Raises
         ------
-        Error: The mask results in an empty sequence            
+        Error: The mask results in an empty sequence
             An exception occurs if the resulting sequence is empty.
         """
         ...

@@ -1,11 +1,12 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class BaselineCorrection:
     """The BaselineCorrection object modifies an acceleration history to minimize the overall
     drift of the displacement obtained from the time integration of the given acceleration.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import amplitude
@@ -27,7 +28,7 @@ class BaselineCorrection:
     def __init__(self, intervals: tuple = ()):
         """This method creates a BaselineCorrection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].amplitudes[name].BaselineCorrection

@@ -12,7 +12,7 @@ class PropertyTableData:
     The values in each column in the PropertyTableData object corresponds to the properties
     and variables mentioned in the PropertyTable object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name].tableCollections[name].propertyTables[name].propertyTableDatas[name]
@@ -62,7 +62,7 @@ class PropertyTableData:
     ):
         """This method creates a PropertyTableData object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].tableCollections[name].propertyTables[name].PropertTableData

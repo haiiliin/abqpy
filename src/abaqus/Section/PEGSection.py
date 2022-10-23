@@ -8,7 +8,7 @@ class PEGSection(Section):
     """The PEGSection object defines the properties of a solid section.
     The PEGSection object is derived from the Section object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -50,7 +50,7 @@ class PEGSection(Section):
     ):
         """This method creates a PEGSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PEGSection
@@ -85,9 +85,7 @@ class PEGSection(Section):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(
-        self, thickness: float = 1, wedgeAngle1: float = 0, wedgeAngle2: float = 0
-    ):
+    def setValues(self, thickness: float = 1, wedgeAngle1: float = 0, wedgeAngle2: float = 0):
         """This method modifies the PEGSection object.
 
         Parameters

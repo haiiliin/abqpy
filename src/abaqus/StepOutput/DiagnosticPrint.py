@@ -8,7 +8,7 @@ class DiagnosticPrint:
     """The DiagnosticPrint object is used to request detailed diagnostic output or to disable
     specific diagnostic checks
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -65,7 +65,6 @@ class DiagnosticPrint:
     #: A Boolean specifying a request for information regarding the actual number of equations
     #: and the wavefront in each iteration. This argument is valid only for an Abaqus/Standard
     #: analysis. The default value is ON.
-    
 
     #: A Boolean specifying a request for a column containing the total mass of the model as a
     #: result of mass scaling. This argument is valid only for an Abaqus/Explicit analysis. The
@@ -89,7 +88,7 @@ class DiagnosticPrint:
     ):
         """This method creates a DiagnosticPrint object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].steps[name].DiagnosticPrint

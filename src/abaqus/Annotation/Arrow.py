@@ -4,8 +4,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from .Annotation import Annotation
-from ..UtilityAndView.abaqusConstants import (BOTTOM_LEFT, FILLED_ARROW, NONE, SOLID,
-                                              SymbolicConstant, VERY_THIN)
+from ..UtilityAndView.abaqusConstants import BOTTOM_LEFT, FILLED_ARROW, NONE, SOLID, SymbolicConstant, VERY_THIN
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _OptionsBase
 
@@ -15,7 +14,7 @@ class Arrow(Annotation, _OptionsBase):
     """The Arrow object stores the visual settings and location of an arrow annotation.
     The Arrow object is derived from the Annotation object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import annotationToolset
@@ -40,7 +39,7 @@ class Arrow(Annotation, _OptionsBase):
     #: A sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
     #: the model coordinate system. A SymbolicConstant indicates a relative position. Possible
     #: values are:
-    #: 
+    #:
     #: - BOTTOM_LEFT
     #: - BOTTOM_CENTER
     #: - BOTTOM_RIGHT
@@ -50,7 +49,7 @@ class Arrow(Annotation, _OptionsBase):
     #: - TOP_LEFT
     #: - TOP_CENTER
     #: - TOP_RIGHT
-    #: 
+    #:
     #: The default value is BOTTOM_LEFT.
     startAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT
 
@@ -59,7 +58,7 @@ class Arrow(Annotation, _OptionsBase):
     #: A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
     #: the model coordinate system. A SymbolicConstant indicates a relative position. Possible
     #: values are:
-    #: 
+    #:
     #: - BOTTOM_LEFT
     #: - BOTTOM_CENTER
     #: - BOTTOM_RIGHT
@@ -69,12 +68,12 @@ class Arrow(Annotation, _OptionsBase):
     #: - TOP_LEFT
     #: - TOP_CENTER
     #: - TOP_RIGHT
-    #: 
+    #:
     #: The default value is BOTTOM_LEFT.
     endAnchor: Union[SymbolicConstant, float] = BOTTOM_LEFT
 
     #: A SymbolicConstant specifying the style of the start head. Possible values are:
-    #: 
+    #:
     #: - ARROW
     #: - FILLED_ARROW
     #: - HOLLOW_CIRCLE
@@ -84,12 +83,12 @@ class Arrow(Annotation, _OptionsBase):
     #: - HOLLOW_SQUARE
     #: - FILLED_SQUARE
     #: - NONE
-    #: 
+    #:
     #: The default value is NONE.
     startHeadStyle: SymbolicConstant = NONE
 
     #: A SymbolicConstant specifying the style of the end head. Possible values are:
-    #: 
+    #:
     #: - ARROW
     #: - FILLED_ARROW
     #: - HOLLOW_CIRCLE
@@ -99,7 +98,7 @@ class Arrow(Annotation, _OptionsBase):
     #: - HOLLOW_SQUARE
     #: - FILLED_SQUARE
     #: - NONE
-    #: 
+    #:
     #: The default value is FILLED_ARROW.
     endHeadStyle: SymbolicConstant = FILLED_ARROW
 
@@ -129,10 +128,56 @@ class Arrow(Annotation, _OptionsBase):
         name: str,
         startPoint: Sequence[float] = (0.0, 0.0),
         endPoint: Sequence[float] = (0.0, 0.0),
-        startAnchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
-        endAnchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
-        startHeadStyle: Literal[C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_SQUARE, C.FILLED_ARROW, C.HOLLOW_DIAMOND, C.ARROW, C.NONE, C.FILLED_CIRCLE] = NONE,
-        endHeadStyle: Literal[C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_SQUARE, C.FILLED_ARROW, C.HOLLOW_DIAMOND, C.ARROW, C.NONE, C.FILLED_CIRCLE] = FILLED_ARROW,
+        startAnchor: Union[
+            Literal[
+                C.CENTER_RIGHT,
+                C.TOP_CENTER,
+                C.BOTTOM_RIGHT,
+                C.BOTTOM_LEFT,
+                C.CENTER,
+                C.TOP_RIGHT,
+                C.CENTER_LEFT,
+                C.TOP_LEFT,
+                C.BOTTOM_CENTER,
+            ],
+            float,
+        ] = BOTTOM_LEFT,
+        endAnchor: Union[
+            Literal[
+                C.CENTER_RIGHT,
+                C.TOP_CENTER,
+                C.BOTTOM_RIGHT,
+                C.BOTTOM_LEFT,
+                C.CENTER,
+                C.TOP_RIGHT,
+                C.CENTER_LEFT,
+                C.TOP_LEFT,
+                C.BOTTOM_CENTER,
+            ],
+            float,
+        ] = BOTTOM_LEFT,
+        startHeadStyle: Literal[
+            C.FILLED_DIAMOND,
+            C.FILLED_SQUARE,
+            C.HOLLOW_CIRCLE,
+            C.HOLLOW_SQUARE,
+            C.FILLED_ARROW,
+            C.HOLLOW_DIAMOND,
+            C.ARROW,
+            C.NONE,
+            C.FILLED_CIRCLE,
+        ] = NONE,
+        endHeadStyle: Literal[
+            C.FILLED_DIAMOND,
+            C.FILLED_SQUARE,
+            C.HOLLOW_CIRCLE,
+            C.HOLLOW_SQUARE,
+            C.FILLED_ARROW,
+            C.HOLLOW_DIAMOND,
+            C.ARROW,
+            C.NONE,
+            C.FILLED_CIRCLE,
+        ] = FILLED_ARROW,
         startGap: float = 0.0,
         endGap: float = 0.0,
         color: str = "White",
@@ -141,7 +186,7 @@ class Arrow(Annotation, _OptionsBase):
     ):
         """This method creates an Arrow object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.Arrow
@@ -163,7 +208,7 @@ class Arrow(Annotation, _OptionsBase):
             A sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
             the model coordinate system. A SymbolicConstant indicates a relative position. Possible
             values are:
-            
+
             - BOTTOM_LEFT
             - BOTTOM_CENTER
             - BOTTOM_RIGHT
@@ -173,7 +218,7 @@ class Arrow(Annotation, _OptionsBase):
             - TOP_LEFT
             - TOP_CENTER
             - TOP_RIGHT
-            
+
             The default value is BOTTOM_LEFT.
         endAnchor
             A SymbolicConstant or a sequence of Floats specifying a point. A sequence of two Floats
@@ -181,7 +226,7 @@ class Arrow(Annotation, _OptionsBase):
             A Sequence of three Floats specifies the **X**-, **Y**-, and **Z**-coordinates of a point in
             the model coordinate system. A SymbolicConstant indicates a relative position. Possible
             values are:
-            
+
             - BOTTOM_LEFT
             - BOTTOM_CENTER
             - BOTTOM_RIGHT
@@ -191,11 +236,11 @@ class Arrow(Annotation, _OptionsBase):
             - TOP_LEFT
             - TOP_CENTER
             - TOP_RIGHT
-            
+
             The default value is BOTTOM_LEFT.
         startHeadStyle
             A SymbolicConstant specifying the style of the start head. Possible values are:
-            
+
             - ARROW
             - FILLED_ARROW
             - HOLLOW_CIRCLE
@@ -205,11 +250,11 @@ class Arrow(Annotation, _OptionsBase):
             - HOLLOW_SQUARE
             - FILLED_SQUARE
             - NONE
-            
+
             The default value is NONE.
         endHeadStyle
             A SymbolicConstant specifying the style of the end head. Possible values are:
-            
+
             - ARROW
             - FILLED_ARROW
             - HOLLOW_CIRCLE
@@ -219,7 +264,7 @@ class Arrow(Annotation, _OptionsBase):
             - HOLLOW_SQUARE
             - FILLED_SQUARE
             - NONE
-            
+
             The default value is FILLED_ARROW.
         startGap
             A Float specifying the distance in millimeters between the arrow start point and the
@@ -292,10 +337,56 @@ class Arrow(Annotation, _OptionsBase):
         self,
         startPoint: Sequence[float] = (0.0, 0.0),
         endPoint: Sequence[float] = (0.0, 0.0),
-        startAnchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
-        endAnchor: Union[Literal[C.CENTER_RIGHT, C.TOP_CENTER, C.BOTTOM_RIGHT, C.BOTTOM_LEFT, C.CENTER, C.TOP_RIGHT, C.CENTER_LEFT, C.TOP_LEFT, C.BOTTOM_CENTER], float] = BOTTOM_LEFT,
-        startHeadStyle: Literal[C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_SQUARE, C.FILLED_ARROW, C.HOLLOW_DIAMOND, C.ARROW, C.NONE, C.FILLED_CIRCLE] = NONE,
-        endHeadStyle: Literal[C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_SQUARE, C.FILLED_ARROW, C.HOLLOW_DIAMOND, C.ARROW, C.NONE, C.FILLED_CIRCLE] = FILLED_ARROW,
+        startAnchor: Union[
+            Literal[
+                C.CENTER_RIGHT,
+                C.TOP_CENTER,
+                C.BOTTOM_RIGHT,
+                C.BOTTOM_LEFT,
+                C.CENTER,
+                C.TOP_RIGHT,
+                C.CENTER_LEFT,
+                C.TOP_LEFT,
+                C.BOTTOM_CENTER,
+            ],
+            float,
+        ] = BOTTOM_LEFT,
+        endAnchor: Union[
+            Literal[
+                C.CENTER_RIGHT,
+                C.TOP_CENTER,
+                C.BOTTOM_RIGHT,
+                C.BOTTOM_LEFT,
+                C.CENTER,
+                C.TOP_RIGHT,
+                C.CENTER_LEFT,
+                C.TOP_LEFT,
+                C.BOTTOM_CENTER,
+            ],
+            float,
+        ] = BOTTOM_LEFT,
+        startHeadStyle: Literal[
+            C.FILLED_DIAMOND,
+            C.FILLED_SQUARE,
+            C.HOLLOW_CIRCLE,
+            C.HOLLOW_SQUARE,
+            C.FILLED_ARROW,
+            C.HOLLOW_DIAMOND,
+            C.ARROW,
+            C.NONE,
+            C.FILLED_CIRCLE,
+        ] = NONE,
+        endHeadStyle: Literal[
+            C.FILLED_DIAMOND,
+            C.FILLED_SQUARE,
+            C.HOLLOW_CIRCLE,
+            C.HOLLOW_SQUARE,
+            C.FILLED_ARROW,
+            C.HOLLOW_DIAMOND,
+            C.ARROW,
+            C.NONE,
+            C.FILLED_CIRCLE,
+        ] = FILLED_ARROW,
         startGap: float = 0.0,
         endGap: float = 0.0,
         color: str = "White",

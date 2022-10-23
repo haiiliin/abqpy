@@ -9,7 +9,7 @@ from .....UtilityAndView.abaqusConstants import abaqusConstants as C
 class CapCreepCohesion:
     r"""The CapCreepCohesion object specifies a cap creep model and material properties.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -20,7 +20,7 @@ class CapCreepCohesion:
         The table data for this object are:
 
         - If **law** = STRAIN or **law** = TIME, the table data specify the following:
-        
+
             - :math:`A`.
             - :math:`n`.
             - :math:`m`.
@@ -29,7 +29,7 @@ class CapCreepCohesion:
             - Value of the second field variable.
             - Etc.
         - If **law** = SINGHM, the table data specify the following:
-        
+
             - :math:`A`.
             - :math:`\alpha`.
             - :math:`m`.
@@ -39,7 +39,7 @@ class CapCreepCohesion:
             - Value of the second field variable.
             - Etc.
         - If **law** = POWER_LAW or **law** = TIME_POWER_LAW, the table data specify the following:
-        
+
             - :math:`q_0`.
             - :math:`n`.
             - :math:`m`.
@@ -65,7 +65,7 @@ class CapCreepCohesion:
     ):
         """This method creates a CapCreepCohesion object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].capPlasticity.CapCreepCohesion

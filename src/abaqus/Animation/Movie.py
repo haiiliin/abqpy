@@ -13,7 +13,7 @@ class Movie(_OptionsBase):
     """The Movie object is used to store values and attributes associated with a movie file.
     Upon creation, the Movie object is added to the session.movies repository.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import animation
@@ -83,7 +83,7 @@ class Movie(_OptionsBase):
     ):
         """This method creates a Movie object from the contents of the specified file.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.Movie

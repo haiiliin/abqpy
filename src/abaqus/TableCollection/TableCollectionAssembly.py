@@ -16,7 +16,7 @@ class TableCollectionAssembly(AssemblyBase):
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import assembly
@@ -39,7 +39,7 @@ class TableCollectionAssembly(AssemblyBase):
         """This method creates an ElementProgressiveActivation object and places it in the
         elementProgressiveActivation repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].rootAssembly.ElementProgressiveActivation
@@ -72,9 +72,7 @@ class TableCollectionAssembly(AssemblyBase):
         AbaqusException
             If the region does not contain only elements.
         """
-        self.elementProgressiveActivations[
-            name
-        ] = elementProgressiveActivation = ElementProgressiveActivation(
+        self.elementProgressiveActivations[name] = elementProgressiveActivation = ElementProgressiveActivation(
             name, elset, deformation, freeSurfaceType
         )
         return elementProgressiveActivation

@@ -12,7 +12,7 @@ class Velocity(PredefinedField):
     """The Velocity object stores the data for an initial velocity predefined field.
     The Velocity object is derived from the PredefinedField object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -74,7 +74,7 @@ class Velocity(PredefinedField):
     ):
         """This method creates a Velocity predefined field object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Velocity
@@ -115,9 +115,7 @@ class Velocity(PredefinedField):
         super().__init__()
 
     @abaqus_method_doc
-    def setValues(
-        self, field: str = "", distributionType: Literal[C.MAGNITUDE, C.FIELD_ANALYTICAL] = MAGNITUDE
-    ):
+    def setValues(self, field: str = "", distributionType: Literal[C.MAGNITUDE, C.FIELD_ANALYTICAL] = MAGNITUDE):
         """This method modifies the Velocity object.
 
         Parameters

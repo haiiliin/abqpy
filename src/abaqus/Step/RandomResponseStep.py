@@ -39,7 +39,7 @@ class RandomResponseStep(AnalysisStep):
     random excitation.
     The RandomResponseStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -86,14 +86,10 @@ class RandomResponseStep(AnalysisStep):
     directDampingByFrequency: DirectDampingByFrequency = DirectDampingByFrequency()
 
     #: A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
-    rayleighDampingByFrequency: RayleighDampingByFrequency = (
-        RayleighDampingByFrequency()
-    )
+    rayleighDampingByFrequency: RayleighDampingByFrequency = RayleighDampingByFrequency()
 
     #: A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency` object.
-    structuralDampingByFrequency: StructuralDampingByFrequency = (
-        StructuralDampingByFrequency()
-    )
+    structuralDampingByFrequency: StructuralDampingByFrequency = StructuralDampingByFrequency()
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
@@ -106,7 +102,7 @@ class RandomResponseStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -188,18 +184,18 @@ class RandomResponseStep(AnalysisStep):
         freq: RandomResponseFrequencyArray,
         description: str = "",
         scale: Literal[C.LOG, C.LINEAR] = LOG,
-        directDamping: Optional[DirectDamping] = None, 
-        compositeDamping: Optional[CompositeDamping] = None, 
-        rayleighDamping: Optional[RayleighDamping] = None, 
-        structuralDamping: Optional[StructuralDamping] = None, 
-        directDampingByFrequency: Optional[DirectDampingByFrequency] = None, 
-        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None, 
-        structuralDampingByFrequency: Optional[StructuralDampingByFrequency] = None, 
+        directDamping: Optional[DirectDamping] = None,
+        compositeDamping: Optional[CompositeDamping] = None,
+        rayleighDamping: Optional[RayleighDamping] = None,
+        structuralDamping: Optional[StructuralDamping] = None,
+        directDampingByFrequency: Optional[DirectDampingByFrequency] = None,
+        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None,
+        structuralDampingByFrequency: Optional[StructuralDampingByFrequency] = None,
         maintainAttributes: Boolean = False,
     ):
         """This method creates a RandomResponseStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].RandomResponseStep
@@ -252,13 +248,13 @@ class RandomResponseStep(AnalysisStep):
         self,
         description: str = "",
         scale: Literal[C.LOG, C.LINEAR] = LOG,
-        directDamping: Optional[DirectDamping] = None, 
-        compositeDamping: Optional[CompositeDamping] = None, 
-        rayleighDamping: Optional[RayleighDamping] = None, 
-        structuralDamping: Optional[StructuralDamping] = None, 
-        directDampingByFrequency: Optional[DirectDampingByFrequency] = None, 
-        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None, 
-        structuralDampingByFrequency: Optional[StructuralDampingByFrequency] = None, 
+        directDamping: Optional[DirectDamping] = None,
+        compositeDamping: Optional[CompositeDamping] = None,
+        rayleighDamping: Optional[RayleighDamping] = None,
+        structuralDamping: Optional[StructuralDamping] = None,
+        directDampingByFrequency: Optional[DirectDampingByFrequency] = None,
+        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None,
+        structuralDampingByFrequency: Optional[StructuralDampingByFrequency] = None,
     ):
         """This method modifies the RandomResponseStep object.
 

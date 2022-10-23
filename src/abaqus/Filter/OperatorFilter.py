@@ -13,7 +13,7 @@ class OperatorFilter(Filter):
     """The OperatorFilter object defines an operator filter.
     The OperatorFilter object is derived from the Filter object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import filter
@@ -69,7 +69,7 @@ class OperatorFilter(Filter):
     ):
         """This method creates an OperatorFilter object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].OperatorFilter

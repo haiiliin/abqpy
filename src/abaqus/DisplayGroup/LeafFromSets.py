@@ -15,7 +15,7 @@ class LeafFromSets(Leaf):
     commands.
     The LeafFromSets object is derived from the Leaf object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import displayGroupMdbToolset
@@ -29,7 +29,7 @@ class LeafFromSets(Leaf):
     def __init__(self, sets: Sequence[Set]):
         """This method creates a Leaf object from a sequence of Set objects.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 LeafFromSets

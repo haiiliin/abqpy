@@ -7,8 +7,7 @@ from .DataTableArray import DataTableArray
 from .Field import Field
 from ..Assembly.PartInstance import PartInstance
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (Boolean, CARTESIAN, INSIDE, MEDIUM, NODES, OFF,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import Boolean, CARTESIAN, INSIDE, MEDIUM, NODES, OFF, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -18,7 +17,7 @@ class DiscreteField(Field):
     points within a domain.
     The DiscreteField object is derived from the Field object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import fields
@@ -72,7 +71,7 @@ class DiscreteField(Field):
     ):
         """This method creates a DiscreteField object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].DiscreteField
@@ -128,7 +127,7 @@ class DiscreteField(Field):
         """This method creates a DiscreteField object that represents the volume fraction of each
         element of an Eulerian Instance that is occupied by a reference instance.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].DiscreteField
@@ -176,7 +175,7 @@ class DiscreteField(Field):
     ):
         """This method creates a DiscreteField object from a AnalyticalField object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].DiscreteField

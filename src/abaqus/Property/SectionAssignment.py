@@ -2,8 +2,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from ..Region.Set import Set
-from ..UtilityAndView.abaqusConstants import (Boolean, FROM_SECTION, OFF, SINGLE_VALUE,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import Boolean, FROM_SECTION, OFF, SINGLE_VALUE, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -12,7 +11,7 @@ class SectionAssignment:
     """The SectionAssignment object is used to specify a section assignment on an assembly or
     part. Section assignments on the assembly are limited to connector elements only.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -60,12 +59,14 @@ class SectionAssignment:
         sectionName: str,
         thicknessAssignment: Literal[C.FROM_SECTION, C.FROM_GEOMETRY] = FROM_SECTION,
         offset: float = 0,
-        offsetType: Literal[C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.SINGLE_VALUE, C.FROM_GEOMETRY, C.OFFSET_FIELD] = SINGLE_VALUE,
+        offsetType: Literal[
+            C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.SINGLE_VALUE, C.FROM_GEOMETRY, C.OFFSET_FIELD
+        ] = SINGLE_VALUE,
         offsetField: str = "",
     ):
         """This method creates a SectionAssignment object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].SectionAssignment

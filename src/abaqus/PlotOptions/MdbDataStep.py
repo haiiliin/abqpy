@@ -7,7 +7,7 @@ from .MdbDataFrameArray import MdbDataFrameArray
 class MdbDataStep:
     """The MdbDataStep object.It corresponds to same named step in the cae model.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

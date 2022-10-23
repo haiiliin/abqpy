@@ -7,7 +7,7 @@ from abqpy.decorators import abaqus_class_doc
 class SteadyStateDirectFrequency:
     """A SteadyStateDirectFrequency is an object used to define frequency over range of modes.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step

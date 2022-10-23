@@ -23,7 +23,7 @@ class MeshEditPart(PartBase):
     """The following commands operate on Part objects. For more information about the Part
     object, see Part object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import meshEdit
@@ -126,9 +126,7 @@ class MeshEditPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def deleteElement(
-        self, elements: Sequence[MeshElement], deleteUnreferencedNodes: Boolean = OFF
-    ):
+    def deleteElement(self, elements: Sequence[MeshElement], deleteUnreferencedNodes: Boolean = OFF):
         """This method deletes the given elements from an orphan mesh part or an Abaqus native
         mesh. If the elements belong to an Abaqus native mesh then the elements must have been
         generated using the bottom-up meshing technique.
@@ -144,9 +142,7 @@ class MeshEditPart(PartBase):
         ...
 
     @abaqus_method_doc
-    def deleteNode(
-        self, nodes: Sequence[MeshNode], deleteUnreferencedNodes: Boolean = OFF
-    ):
+    def deleteNode(self, nodes: Sequence[MeshNode], deleteUnreferencedNodes: Boolean = OFF):
         """This method deletes the given nodes from an orphan mesh part.
 
         Parameters
@@ -384,9 +380,7 @@ class MeshEditPart(PartBase):
     def mergeNodes(self, *args, **kwargs):
         ...
 
-    def orientElements(
-        self, pickedElements: Sequence[MeshElement], referenceRegion: MeshFace
-    ):
+    def orientElements(self, pickedElements: Sequence[MeshElement], referenceRegion: MeshFace):
         """This method orients the stack direction of elements in a continuum shell or gasket mesh.
 
         Parameters

@@ -11,7 +11,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 class Creep:
     r"""The Creep object defines a creep law.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -22,7 +22,7 @@ class Creep:
         The table data for this object are:
 
         - If **law** = STRAIN or **law** = TIME, the table data specify the following:
-        
+
             - :math:`A`.
             - :math:`n`.
             - :math:`m`.
@@ -31,7 +31,7 @@ class Creep:
             - Value of the second field variable.
             - Etc.
         - If **law** = HYPERBOLIC_SINE, the table data specify the following:
-        
+
             - :math:`A`.
             - :math:`B`.
             - :math:`n`.
@@ -41,7 +41,7 @@ class Creep:
             - Value of the second field variable.
             - Etc.
         - If **law** = ANAND, the table data specify the following:
-        
+
             - :math:`s_{1}`.
             - :math:`\frac{Q}{R}`.
             - :math:`A`.
@@ -58,7 +58,7 @@ class Creep:
             - :math:`A_{3}`.
             - :math:`A_{4}`.
         - If **law** = DARVEAUX, the table data specify the following:
-        
+
             - :math:`C_{s s}`.
             - :math:`\frac{Q}{R}`.
             - :math:`\alpha`.
@@ -66,7 +66,7 @@ class Creep:
             - :math:`\epsilon_{T}`.
             - :math:`B`.
         - If **law** = DOUBLE_POWER, the table data specify the following:
-        
+
             - :math:`A_{1}`.
             - :math:`B_{1}`.
             - :math:`C_{1}`.
@@ -75,7 +75,7 @@ class Creep:
             - :math:`C_{2}`.
             - :math:`\sigma_{0}`.
         - If **law** = POWER_LAW or **law** = TIME_POWER_LAW, the table data specify the following:
-        
+
             - :math:`q_{0}`
             - :math:`n`.
             - :math:`m`.
@@ -100,14 +100,24 @@ class Creep:
     def __init__(
         self,
         table: tuple,
-        law: Literal[C.DARVEAUX, C.HYPERBOLIC_SINE, C.ANAND, C.TIME, C.POWER_LAW, C.USER, C.STRAIN, C.TIME_POWER_LAW, C.DOUBLE_POWER] = STRAIN,
+        law: Literal[
+            C.DARVEAUX,
+            C.HYPERBOLIC_SINE,
+            C.ANAND,
+            C.TIME,
+            C.POWER_LAW,
+            C.USER,
+            C.STRAIN,
+            C.TIME_POWER_LAW,
+            C.DOUBLE_POWER,
+        ] = STRAIN,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         time: Literal[C.TOTAL, C.CREEP] = TOTAL,
     ):
         """This method creates a Creep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Creep

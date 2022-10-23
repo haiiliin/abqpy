@@ -14,7 +14,7 @@ class BodyForce(Load):
     """The BodyForce object defines a distributed load.
     The BodyForce object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -55,7 +55,7 @@ class BodyForce(Load):
     ):
         """This method creates a BodyForce object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].BodyForce

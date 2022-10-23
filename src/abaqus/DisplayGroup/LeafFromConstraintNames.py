@@ -31,7 +31,13 @@ class LeafFromConstraintNames(Leaf):
     leafType: Optional[SymbolicConstant] = None
 
     @abaqus_method_doc
-    def __init__(self, name: tuple, type: Literal[C.DISTRIBUTING_COUPLING, C.TIE, C.RIGID_BODY, C.MPC, C.SHELL_TO_SOLID_COUPLING, C.KINEMATIC_COUPLING]):
+    def __init__(
+        self,
+        name: tuple,
+        type: Literal[
+            C.DISTRIBUTING_COUPLING, C.TIE, C.RIGID_BODY, C.MPC, C.SHELL_TO_SOLID_COUPLING, C.KINEMATIC_COUPLING
+        ],
+    ):
         """This method creates a Leaf object from a sequence of constraint objects. Leaf objects
         specify the items in a display group.
 

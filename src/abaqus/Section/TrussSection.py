@@ -8,7 +8,7 @@ class TrussSection(Section):
     """The TrussSection object defines the properties of a truss section.
     The TrussSection object is derived from the Section object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -35,7 +35,7 @@ class TrussSection(Section):
     def __init__(self, name: str, material: str, area: float = 1):
         """This method creates a TrussSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].TrussSection

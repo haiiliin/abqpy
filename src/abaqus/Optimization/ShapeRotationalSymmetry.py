@@ -15,7 +15,7 @@ class ShapeRotationalSymmetry(GeometricRestriction):
     restriction.
     The ShapeRotationalSymmetry object is derived from the GeometricRestriction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import optimization
@@ -90,7 +90,7 @@ class ShapeRotationalSymmetry(GeometricRestriction):
     ):
         """This method creates a ShapeRotationalSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].optimizationTasks[name].ShapeRotationalSymmetry

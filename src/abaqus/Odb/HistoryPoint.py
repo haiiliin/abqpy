@@ -9,8 +9,7 @@ from .OdbMeshNode import OdbMeshNode
 from .OdbPart import OdbPart
 from .OdbSet import OdbSet
 from .SectionPoint import SectionPoint
-from ..UtilityAndView.abaqusConstants import (DEFORMABLE_BODY, FACE_UNKNOWN, SymbolicConstant,
-                                              THREE_D)
+from ..UtilityAndView.abaqusConstants import DEFORMABLE_BODY, FACE_UNKNOWN, SymbolicConstant, THREE_D
 
 
 @abaqus_class_doc
@@ -19,7 +18,7 @@ class HistoryPoint:
     HistoryPoint object is a temporary object used as an argument to the HistoryRegion
     method.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -34,7 +33,7 @@ class HistoryPoint:
     #: A SymbolicConstant specifying the element face. This argument is used to define a
     #: history output position of ELEMENT_FACE or ELEMENT_FACE_INTEGRATION_POINT. Possible
     #: values are:
-    #: 
+    #:
     #: - FACE_UNKOWN, specifying this value indicates that no value has been specified.
     #: - FACE1, specifying this value indicates that element face 1 has been specified.
     #: - FACE2, specifying this value indicates that element face 2 has been specified.
@@ -47,13 +46,13 @@ class HistoryPoint:
     #: - END1, specifying this value indicates that element end 1 has been specified.
     #: - END2, specifying this value indicates that element end 2 has been specified.
     #: - END3, specifying this value indicates that element end 3 has been specified.
-    #: 
+    #:
     #: The default value is FACE_UNKNOWN.
     face: SymbolicConstant = FACE_UNKNOWN
 
     #: A SymbolicConstant specifying the result position of the history point. Possible values
     #: are:
-    #: 
+    #:
     #: - NODAL, specifying the values calculated at the nodes.
     #: - ELEMENT_NODAL, specifying the values obtained by extrapolating results calculated at
     #:   the integration points.
@@ -82,9 +81,7 @@ class HistoryPoint:
     assembly: OdbAssembly = OdbAssembly()
 
     #: An :py:class:`~abaqus.Odb.OdbInstance.OdbInstance` object specifying the instance for which the data are to be collected.
-    instance: OdbInstance = OdbInstance(
-        "instance", OdbPart("part", THREE_D, DEFORMABLE_BODY)
-    )
+    instance: OdbInstance = OdbInstance("instance", OdbPart("part", THREE_D, DEFORMABLE_BODY))
 
     #: An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object specifying the node for which the data are to be collected.
     node: OdbMeshNode
@@ -93,7 +90,7 @@ class HistoryPoint:
     def __init__(self, node: OdbMeshNode):
         """This method creates a HistoryPoint object for a node.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 odbAccess.HistoryPoint
@@ -117,11 +114,11 @@ class HistoryPoint:
         ipNumber: int = 0,
         sectionPoint: Optional[SectionPoint] = None,
         face: SymbolicConstant = FACE_UNKNOWN,
-        node: Optional[OdbMeshNode] = None, 
+        node: Optional[OdbMeshNode] = None,
     ):
         """This method creates a HistoryPoint object for an element.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 odbAccess.HistoryPoint
@@ -140,7 +137,7 @@ class HistoryPoint:
             A SymbolicConstant specifying the element face. This argument is used to define a
             history output position of ELEMENT_FACE or ELEMENT_FACE_INTEGRATION_POINT. Possible
             values are:
-            
+
             - FACE_UNKOWN, specifying this value indicates that no value has been specified.
             - FACE1, specifying this value indicates that element face 1 has been specified.
             - FACE2, specifying this value indicates that element face 2 has been specified.
@@ -153,7 +150,7 @@ class HistoryPoint:
             - END1, specifying this value indicates that element end 1 has been specified.
             - END2, specifying this value indicates that element end 2 has been specified.
             - END3, specifying this value indicates that element end 3 has been specified.
-            
+
             The default value is FACE_UNKNOWN.
         node
             An :py:class:`~abaqus.Odb.OdbMeshNode.OdbMeshNode` object specifying the node for which the data are to be collected.
@@ -169,7 +166,7 @@ class HistoryPoint:
     def __init__(self, region: OdbSet):
         """This method creates a HistoryPoint object for a region.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 odbAccess.HistoryPoint
@@ -190,7 +187,7 @@ class HistoryPoint:
     def __init__(self, assembly: OdbAssembly):
         """This method creates a HistoryPoint object for the OdbAssembly object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 odbAccess.HistoryPoint
@@ -211,7 +208,7 @@ class HistoryPoint:
     def __init__(self, instance: OdbInstance):
         """This method creates a HistoryPoint object for the OdbInstance object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 odbAccess.HistoryPoint

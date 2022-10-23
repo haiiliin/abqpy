@@ -10,7 +10,7 @@ class Spline(ConstrainedSketchGeometry):
     def __init__(self, points: tuple, constrainPoints: Boolean = True):
         """This method creates a spline curve running through a sequence of points.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].Spline

@@ -3,8 +3,15 @@ from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (Boolean, COEFFICIENTS, FRACTION, FRICTIONLESS,
-                                              ISOTROPIC, OFF, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    COEFFICIENTS,
+    FRACTION,
+    FRICTIONLESS,
+    ISOTROPIC,
+    OFF,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -13,7 +20,7 @@ class ContactTangentialBehavior:
     """The ContactTangentialBehavior object specifies tangential behavior for a contact
     interaction property.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -22,7 +29,7 @@ class ContactTangentialBehavior:
         The table data for this object are:
 
         - If **formulation** = PENALTY or LAGRANGE, the table data specify the following:
-        
+
             - Friction coefficient in the first slip direction, μ1μ1.
             - Friction coefficient in the second slip direction, μ2μ2 (if **directionality** = ANISOTROPIC).
             - Slip rate, if the data depend on slip rate.
@@ -32,16 +39,16 @@ class ContactTangentialBehavior:
             - Value of the second field variable.
             - Etc.
         - If **formulation** = EXPONENTIAL_DECAY and **exponentialDecayDefinition** = COEFFICIENTS, the table data specify the following:
-        
+
             - Static friction coefficient.
             - Kinetic friction coefficient.
             - Decay coefficient.
         - If **formulation** = EXPONENTIAL_DECAY and **exponentialDecayDefinition** = TEST_DATA, the table data specify the following:
-        
+
             - Friction coefficient.
             - Slip rate.
         - If **formulation** = USER_DEFINED, the table data specify the following:
-        
+
             - Friction property.
 
         The corresponding analysis keywords are:
@@ -108,7 +115,9 @@ class ContactTangentialBehavior:
     @abaqus_method_doc
     def __init__(
         self,
-        formulation: Literal[C.FRICTIONLESS, C.PENALTY, C.ROUGH, C.EXPONENTIAL_DECAY, C.USER_DEFINED, C.LAGRANGE] = FRICTIONLESS,
+        formulation: Literal[
+            C.FRICTIONLESS, C.PENALTY, C.ROUGH, C.EXPONENTIAL_DECAY, C.USER_DEFINED, C.LAGRANGE
+        ] = FRICTIONLESS,
         directionality: Literal[C.ANISOTROPIC, C.ISOTROPIC] = ISOTROPIC,
         slipRateDependency: Boolean = OFF,
         pressureDependency: Boolean = OFF,
@@ -126,7 +135,7 @@ class ContactTangentialBehavior:
     ):
         """This method creates a ContactTangentialBehavior object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].interactionProperties[name].TangentialBehavior

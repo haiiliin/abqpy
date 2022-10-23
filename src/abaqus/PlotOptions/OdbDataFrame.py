@@ -7,7 +7,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 class OdbDataFrame:
     """The OdbDataFrame object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

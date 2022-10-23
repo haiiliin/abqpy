@@ -14,7 +14,7 @@ class ConnectorFailure(ConnectorBehaviorOption):
     connector's relative motion.
     The ConnectorFailure object is derived from the ConnectorBehaviorOption object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -67,7 +67,7 @@ class ConnectorFailure(ConnectorBehaviorOption):
     ):
         """This method creates a connector failure behavior option for a ConnectorSection object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 import connectorBehavior

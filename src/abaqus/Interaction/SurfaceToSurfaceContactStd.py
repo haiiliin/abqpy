@@ -6,9 +6,19 @@ from typing_extensions import Literal
 from .Interaction import Interaction
 from ..Datum.DatumAxis import DatumAxis
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTED, NONE, OFF, OMIT, ON, RIGHT,
-                                              SELECTIVE, SURFACE_TO_SURFACE, SymbolicConstant,
-                                              TWO_CONFIG)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    COMPUTED,
+    NONE,
+    OFF,
+    OMIT,
+    ON,
+    RIGHT,
+    SELECTIVE,
+    SURFACE_TO_SURFACE,
+    SymbolicConstant,
+    TWO_CONFIG,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -18,7 +28,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     Abaqus/Standard analysis.
     The SurfaceToSurfaceContactStd object is derived from the Interaction object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import interaction
@@ -61,12 +71,11 @@ class SurfaceToSurfaceContactStd(Interaction):
 
     #: A SymbolicConstant specifying the type of time-dependent allowable interference for
     #: contact pairs and contact elements. Possible values are:
-    
 
     #: - NONE, specifying no allowable contact interference.
     #: - SHRINK_FIT.
     #: - UNIFORM.
-    #: 
+    #:
     #: The default value is NONE.
     interferenceType: SymbolicConstant = NONE
 
@@ -79,11 +88,11 @@ class SurfaceToSurfaceContactStd(Interaction):
     interferenceDirectionType: SymbolicConstant = COMPUTED
 
     #: A sequence of three Floats specifying the following:
-    #: 
+    #:
     #: - XX-direction cosine of the interference direction vector.
     #: - YY-direction cosine of the interference direction vector.
     #: - ZZ-direction cosine of the interference direction vector.
-    #: 
+    #:
     #: This argument is required only when **interferenceDirectionType** = DIRECTION_COSINE.
     direction: tuple = ()
 
@@ -220,7 +229,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         pitch: Optional[str] = None,
         majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
-        datumAxis: Optional[DatumAxis] = None, 
+        datumAxis: Optional[DatumAxis] = None,
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
         surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
@@ -230,7 +239,7 @@ class SurfaceToSurfaceContactStd(Interaction):
     ):
         """This method creates a SurfaceToSurfaceContactStd object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceToSurfaceContactStd
@@ -259,7 +268,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             - NONE, specifying no allowable contact interference.
             - SHRINK_FIT.
             - UNIFORM.
-            
+
             The default value is NONE.
         overclosure
             A Float specifying the maximum overclosure distance allowed. This argument applies only
@@ -269,11 +278,11 @@ class SurfaceToSurfaceContactStd(Interaction):
             Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.
         direction
             A sequence of three Floats specifying the following:
-            
+
             - XX-direction cosine of the interference direction vector.
             - YY-direction cosine of the interference direction vector.
             - ZZ-direction cosine of the interference direction vector.
-            
+
             This argument is required only when **interferenceDirectionType** = DIRECTION_COSINE.
         amplitude
             A String specifying the name of the amplitude curve that defines the magnitude of the
@@ -394,7 +403,7 @@ class SurfaceToSurfaceContactStd(Interaction):
         pitch: Optional[str] = None,
         majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
-        datumAxis: Optional[DatumAxis] = None, 
+        datumAxis: Optional[DatumAxis] = None,
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
         surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
@@ -414,7 +423,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             - NONE, specifying no allowable contact interference.
             - SHRINK_FIT.
             - UNIFORM.
-            
+
             The default value is NONE.
         overclosure
             A Float specifying the maximum overclosure distance allowed. This argument applies only
@@ -424,11 +433,11 @@ class SurfaceToSurfaceContactStd(Interaction):
             Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.
         direction
             A sequence of three Floats specifying the following:
-            
+
             - XX-direction cosine of the interference direction vector.
             - YY-direction cosine of the interference direction vector.
             - ZZ-direction cosine of the interference direction vector.
-            
+
             This argument is required only when **interferenceDirectionType** = DIRECTION_COSINE.
         amplitude
             A String specifying the name of the amplitude curve that defines the magnitude of the
@@ -543,7 +552,7 @@ class SurfaceToSurfaceContactStd(Interaction):
             - NONE, specifying no allowable contact interference.
             - SHRINK_FIT.
             - UNIFORM.
-            
+
             The default value is NONE.
         overclosure
             A Float specifying the maximum overclosure distance allowed. This argument applies only
@@ -553,11 +562,11 @@ class SurfaceToSurfaceContactStd(Interaction):
             Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.
         direction
             A sequence of three Floats specifying the following:
-            
+
             - XX-direction cosine of the interference direction vector.
             - YY-direction cosine of the interference direction vector.
             - ZZ-direction cosine of the interference direction vector.
-            
+
             This argument is required only when **interferenceDirectionType** = DIRECTION_COSINE.
         amplitude
             A String specifying the name of the amplitude curve that defines the magnitude of the

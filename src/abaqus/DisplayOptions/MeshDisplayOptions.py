@@ -49,7 +49,7 @@ class MeshDisplayOptions:
             - FEATURE, specifying that edges are shown based on **featureAngle**.
             - FREE, specifying that only free edges are shown.
             - NONE, specifying that no display edges are shown.
-            
+
             The default value is EXTERIOR.
         featureAngle
             A Float specifying the angle in degrees to be used in calculating a feature edge plot.

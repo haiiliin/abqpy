@@ -40,7 +40,7 @@ class ResponseSpectrumStep(AnalysisStep):
     modes of the system.
     The ResponseSpectrumStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -88,17 +88,13 @@ class ResponseSpectrumStep(AnalysisStep):
     directDampingByFrequency: DirectDampingByFrequency = DirectDampingByFrequency()
 
     #: A :py:class:`~abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency` object.
-    rayleighDampingByFrequency: RayleighDampingByFrequency = (
-        RayleighDampingByFrequency()
-    )
+    rayleighDampingByFrequency: RayleighDampingByFrequency = RayleighDampingByFrequency()
 
     #: A :py:class:`~abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping` object.
     structuralDamping: StructuralDamping = StructuralDamping()
 
     #: A :py:class:`~abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency` object.
-    structuralDampingByFrequency: StructuralDampingByFrequency = (
-        StructuralDampingByFrequency()
-    )
+    structuralDampingByFrequency: StructuralDampingByFrequency = StructuralDampingByFrequency()
 
     #: A SymbolicConstant specifying whether the step has an explicit procedure type
     #: (*procedureType* = ANNEAL, DYNAMIC_EXPLICIT, or DYNAMIC_TEMP_DISPLACEMENT).
@@ -111,7 +107,7 @@ class ResponseSpectrumStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -192,18 +188,24 @@ class ResponseSpectrumStep(AnalysisStep):
         previous: str,
         components: ResponseSpectrumComponentArray,
         description: str = "",
-        comp: Literal[C.MULTIPLE_DIRECTION_FORTY_PERCENT_RULE, C.MULTIPLE_DIRECTION_THIRTY_PERCENT_RULE, C.MULTIPLE_DIRECTION_ABSOLUTE_SUM, C.MULTIPLE_DIRECTION_SRSS_SUM, C.SINGLE_DIRECTION] = SINGLE_DIRECTION,
+        comp: Literal[
+            C.MULTIPLE_DIRECTION_FORTY_PERCENT_RULE,
+            C.MULTIPLE_DIRECTION_THIRTY_PERCENT_RULE,
+            C.MULTIPLE_DIRECTION_ABSOLUTE_SUM,
+            C.MULTIPLE_DIRECTION_SRSS_SUM,
+            C.SINGLE_DIRECTION,
+        ] = SINGLE_DIRECTION,
         sum: Literal[C.DSC, C.NRL, C.CQC, C.TENP, C.GRP, C.ABS, C.SRSS] = ABS,
-        directDamping: Optional[DirectDamping] = None, 
-        compositeDamping: Optional[CompositeDamping] = None, 
-        rayleighDamping: Optional[RayleighDamping] = None, 
-        directDampingByFrequency: Optional[DirectDampingByFrequency] = None, 
-        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None, 
+        directDamping: Optional[DirectDamping] = None,
+        compositeDamping: Optional[CompositeDamping] = None,
+        rayleighDamping: Optional[RayleighDamping] = None,
+        directDampingByFrequency: Optional[DirectDampingByFrequency] = None,
+        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None,
         maintainAttributes: Boolean = False,
     ):
         """This method creates a ResponseSpectrumStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ResponseSpectrumStep
@@ -256,13 +258,19 @@ class ResponseSpectrumStep(AnalysisStep):
     def setValues(
         self,
         description: str = "",
-        comp: Literal[C.MULTIPLE_DIRECTION_FORTY_PERCENT_RULE, C.MULTIPLE_DIRECTION_THIRTY_PERCENT_RULE, C.MULTIPLE_DIRECTION_ABSOLUTE_SUM, C.MULTIPLE_DIRECTION_SRSS_SUM, C.SINGLE_DIRECTION] = SINGLE_DIRECTION,
+        comp: Literal[
+            C.MULTIPLE_DIRECTION_FORTY_PERCENT_RULE,
+            C.MULTIPLE_DIRECTION_THIRTY_PERCENT_RULE,
+            C.MULTIPLE_DIRECTION_ABSOLUTE_SUM,
+            C.MULTIPLE_DIRECTION_SRSS_SUM,
+            C.SINGLE_DIRECTION,
+        ] = SINGLE_DIRECTION,
         sum: Literal[C.DSC, C.NRL, C.CQC, C.TENP, C.GRP, C.ABS, C.SRSS] = ABS,
-        directDamping: Optional[DirectDamping] = None, 
-        compositeDamping: Optional[CompositeDamping] = None, 
-        rayleighDamping: Optional[RayleighDamping] = None, 
-        directDampingByFrequency: Optional[DirectDampingByFrequency] = None, 
-        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None, 
+        directDamping: Optional[DirectDamping] = None,
+        compositeDamping: Optional[CompositeDamping] = None,
+        rayleighDamping: Optional[RayleighDamping] = None,
+        directDampingByFrequency: Optional[DirectDampingByFrequency] = None,
+        rayleighDampingByFrequency: Optional[RayleighDampingByFrequency] = None,
     ):
         """This method modifies the ResponseSpectrumStep object.
 

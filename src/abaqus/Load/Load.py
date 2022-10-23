@@ -9,7 +9,7 @@ class Load:
     explicit constructor. The methods and members of the Load object are common to all
     objects derived from Load.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load

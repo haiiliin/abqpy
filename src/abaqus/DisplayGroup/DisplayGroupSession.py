@@ -11,7 +11,7 @@ class DisplayGroupSession(SessionBase):
     def DisplayGroup(self, name: str, leaf: Leaf) -> DisplayGroup:
         """This method creates a DisplayGroup object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.DisplayGroup

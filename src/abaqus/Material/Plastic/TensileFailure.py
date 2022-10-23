@@ -11,7 +11,7 @@ from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 class TensileFailure:
     """The TensileFailure object specifies the material tensile failure.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -49,7 +49,7 @@ class TensileFailure:
     ):
         """This method creates a tensileFailure object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Plastic.TensileFailure

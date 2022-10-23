@@ -14,7 +14,7 @@ class DiscreteFastener(Fastener):
     """The DiscreteFastener object defines a discrete fastener.
     The DiscreteFastener object is derived from the Fastener object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -88,7 +88,7 @@ class DiscreteFastener(Fastener):
         both for parts and for the assembly, DiscreteFastener objects are currently supported
         only under the assembly.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.DiscreteFastener

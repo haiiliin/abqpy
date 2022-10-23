@@ -19,7 +19,7 @@ commands.
 def assignBeamSectionOrientation(region: tuple, method: SymbolicConstant, n1: tuple):
     """This method assigns a beam section orientation to a region of a part.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             mdb.models[name].parts[name].assignBeamSectionOrientation
@@ -40,12 +40,10 @@ def assignBeamSectionOrientation(region: tuple, method: SymbolicConstant, n1: tu
 
 
 @abaqus_function_doc
-def assignMaterialOrientation(
-    region: tuple, localCsys: Datum, axis: SymbolicConstant = AXIS_1, angle: float = 0
-):
+def assignMaterialOrientation(region: tuple, localCsys: Datum, axis: SymbolicConstant = AXIS_1, angle: float = 0):
     """This method assigns a material orientation to a region.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             mdb.models[name].parts[name].assignMaterialOrientation
@@ -70,12 +68,10 @@ def assignMaterialOrientation(
 
 
 @abaqus_function_doc
-def assignRebarOrientation(
-    region: tuple, localCsys: Datum, axis: SymbolicConstant = AXIS_1, angle: float = 0
-):
+def assignRebarOrientation(region: tuple, localCsys: Datum, axis: SymbolicConstant = AXIS_1, angle: float = 0):
     """This method assigns a rebar reference orientation to a region.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             mdb.models[name].parts[name].assignRebarOrientation
@@ -104,7 +100,7 @@ def flipNormal(regions: Region, referenceRegion: str = ""):
     """This method flips the normals of shell or membrane elements of an orphan mesh or of
     two-dimensional geometric regions.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             mdb.models[name].parts[name].flipNormal
@@ -130,7 +126,7 @@ def flipTangent(regions: Region):
     """This method flips the tangents of beam or truss elements of an orphan mesh or of
     one-dimensional geometric regions.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             mdb.models[name].parts[name].flipTangent
@@ -148,7 +144,7 @@ def flipTangent(regions: Region):
 def unassignBeamSectionOrientation(index: int):
     """This method deletes a beam section orientation assignment.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             mdb.models[name].parts[name].unassignBeamSectionOrientation
@@ -165,7 +161,7 @@ def unassignBeamSectionOrientation(index: int):
 def unassignMaterialOrientation(index: int):
     """This method deletes a material orientation assignment.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             mdb.models[name].parts[name].unassignMaterialOrientation
@@ -182,7 +178,7 @@ def unassignMaterialOrientation(index: int):
 def unassignRebarOrientation(index: int):
     """This method deletes a rebar orientation assignment.
 
-    .. note:: 
+    .. note::
         This function can be accessed by::
 
             mdb.models[name].parts[name].unassignRebarOrientation

@@ -7,7 +7,7 @@ from ....UtilityAndView.abaqusConstants import Boolean, OFF
 class Hypoelastic:
     r"""The Hypoelastic object specifies hypoelastic material properties.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -32,7 +32,7 @@ class Hypoelastic:
     def __init__(self, table: tuple, user: Boolean = OFF):
         """This method creates a Hypoelastic object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Hypoelastic

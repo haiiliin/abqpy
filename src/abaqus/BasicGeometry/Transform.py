@@ -1,4 +1,3 @@
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 
@@ -8,7 +7,7 @@ class Transform:
     direct constructor. A :py:class:`~abaqus.BasicGeometry.Transform.Transform` object is a 4×3 matrix of Floats that represents the
     transformation from sketch coordinates to assembly coordinates or to part coordinates.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part

@@ -33,7 +33,7 @@ class SubstructureGenerateStep(AnalysisStep):
     """TheSubstructureGenerateStep object is used to generate a substructure.
     The SubstructureGenerateStep object is derived from the AnalysisStep object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -118,7 +118,7 @@ class SubstructureGenerateStep(AnalysisStep):
     nonmechanical: Boolean = OFF
 
     #: A SymbolicConstant specifying the Abaqus procedure. Possible values are:
-    #: 
+    #:
     #: - ANNEAL
     #: - BUCKLE
     #: - COMPLEX_FREQUENCY
@@ -219,7 +219,7 @@ class SubstructureGenerateStep(AnalysisStep):
     ):
         """This method creates a SubstructureGenerateStep object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SubstructureGenerateStep

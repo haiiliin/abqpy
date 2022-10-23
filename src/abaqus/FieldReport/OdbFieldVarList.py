@@ -9,7 +9,7 @@ class OdbFieldVarList(List[str]):
     the current step and frame. Each item in the sequence is itself a sequence fully
     describing the given variable.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

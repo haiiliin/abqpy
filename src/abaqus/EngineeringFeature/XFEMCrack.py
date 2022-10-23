@@ -13,7 +13,7 @@ class XFEMCrack(Crack):
     growth using XFEM technology. Currently only assembly regions are supported.
     The XFEMCrack object is derived from the Crack object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -100,7 +100,7 @@ class XFEMCrack(Crack):
         parts and for the assembly, XFEMCrack objects are currently supported only under the
         assembly.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].engineeringFeatures.XFEMCrack

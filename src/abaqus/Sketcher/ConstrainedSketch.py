@@ -26,7 +26,7 @@ from .ConstrainedSketchVertex.ConstrainedSketchVertexModel import (
 )
 from ..Part.AcisFile import AcisFile
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (Boolean, OFF)
+from ..UtilityAndView.abaqusConstants import Boolean, OFF
 
 
 @abaqus_class_doc
@@ -49,7 +49,7 @@ class ConstrainedSketch(
         """This method creates a ConstrainedSketch object. If the sketch cannot be created, the
         method returns None.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConstrainedSketch
@@ -87,7 +87,7 @@ class ConstrainedSketch(
         Sketch copy constructor strips the reference geometry from the copied sketch and sets
         the transform matrix to identity, creating a standalone copy.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConstrainedSketch
@@ -110,12 +110,10 @@ class ConstrainedSketch(
     def __init__(self, *args, **kwargs) -> None:
         ...
 
-    def ConstrainedSketchFromGeometryFile(
-        self, name: str, geometryFile: AcisFile
-    ) -> ConstrainedSketch:
+    def ConstrainedSketchFromGeometryFile(self, name: str, geometryFile: AcisFile) -> ConstrainedSketch:
         """This method creates a ConstrainedSketch object and places it in the sketches repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConstrainedSketchFromGeometryFile
@@ -184,9 +182,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def autoTrimCurve(
-        self, curve1: str, point1: Tuple[float, float], parameter1: float
-    ) -> None:
+    def autoTrimCurve(self, curve1: str, point1: Tuple[float, float], parameter1: float) -> None:
         """This method automatically trims a selected ConstrainedSketchGeometry object at the
         specified location. If the object does not intersect other ConstrainedSketchGeometry
         objects, the entire selected object will be deleted.
@@ -255,9 +251,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def copyMove(
-        self, vector: tuple, objectList: Sequence[ConstrainedSketchGeometry]
-    ) -> None:
+    def copyMove(self, vector: tuple, objectList: Sequence[ConstrainedSketchGeometry]) -> None:
         """This method creates copies of the given ConstrainedSketchGeometry objects, moves them
         from their original position, and inserts them into the appropriate repositories of the
         ConstrainedSketch object.
@@ -412,9 +406,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def mergeVertices(
-        self, value: float, vertexList: Sequence[ConstrainedSketchVertex]
-    ) -> None:
+    def mergeVertices(self, value: float, vertexList: Sequence[ConstrainedSketchVertex]) -> None:
         """This method merges the ConstrainedSketchVertex objects that lie within the specified
         distance of each other. If only one ConstrainedSketchVertex object is selected, it will
         merge all ConstrainedSketchVertex objects that lie within the specified distance of that
@@ -431,9 +423,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def move(
-        self, vector: tuple, objectList: Sequence[ConstrainedSketchGeometry]
-    ) -> None:
+    def move(self, vector: tuple, objectList: Sequence[ConstrainedSketchGeometry]) -> None:
         """This method translates the given ConstrainedSketchGeometry objects by the given vector.
 
         Parameters
@@ -510,9 +500,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def rectangle(
-        self, point1: Tuple[float, float], point2: Tuple[float, float]
-    ) -> int:
+    def rectangle(self, point1: Tuple[float, float], point2: Tuple[float, float]) -> int:
         """This method creates four lines that form a rectangle with diagonal corners defined by
         the given points and inserts them into the geometry repository of the ConstrainedSketch
         object.
@@ -532,9 +520,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def removeGapsAndOverlaps(
-        self, tolerance: str, geomList: Sequence[ConstrainedSketchGeometry]
-    ) -> None:
+    def removeGapsAndOverlaps(self, tolerance: str, geomList: Sequence[ConstrainedSketchGeometry]) -> None:
         """This method removes gaps and overlaps between sketch geometries specified by the user.
         This method is particularly useful when cleaning up imported sketches
 
@@ -552,9 +538,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def repairShortEdges(
-        self, geomList: Sequence[ConstrainedSketchGeometry], tolerance: str = ""
-    ) -> None:
+    def repairShortEdges(self, geomList: Sequence[ConstrainedSketchGeometry], tolerance: str = "") -> None:
         """This method deletes the short edges specified, optionally selecting only those short
         edges whose lengths are smaller than the specified tolerance and healing the resultant
         gap in the sketch. This method is particularly useful in conjunction with
@@ -588,9 +572,7 @@ class ConstrainedSketch(
         ...
 
     @abaqus_method_doc
-    def rotate(
-        self, centerPoint: Tuple[float, float], angle: float, objectList: tuple
-    ) -> None:
+    def rotate(self, centerPoint: Tuple[float, float], angle: float, objectList: tuple) -> None:
         """This method rotates the given ConstrainedSketchGeometry objects by the given angle and
         about the given point.
 
@@ -636,7 +618,7 @@ class ConstrainedSketch(
         ----------
         option
             A SymbolicConstant specifying how the sketch is displayed. Possible values are:
-            
+
             * `STANDALONE`: Indicates a new stand-alone sketch. The current viewport is
                 cleared and is replaced by the stand-alone sketch. The view direction
                 is set to -Z.

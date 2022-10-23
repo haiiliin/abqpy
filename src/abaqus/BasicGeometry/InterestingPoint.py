@@ -12,11 +12,11 @@ class InterestingPoint:
     - The middle of an edge.
     - The middle of an arc.
     - The center of an arc.
-    
+
     An :py:class:`~abaqus.BasicGeometry.InterestingPoint.InterestingPoint` object is a temporary object and cannot be accessed from the Mdb
     object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -28,7 +28,7 @@ class InterestingPoint:
         """This method creates an interesting point along an edge. An InterestingPoint is a
         temporary object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].InterestingPoint

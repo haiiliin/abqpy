@@ -11,7 +11,7 @@ class Calibration:
     """A :py:class:`~abaqus.Material.Calibration.Calibration` object is the object used to specify a material calibration. The
     Calibration object stores the data that is used for specifying materials from test data.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import calibration
@@ -31,7 +31,7 @@ class Calibration:
     def __init__(self, name: str):
         """This method creates a Calibration object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Calibration
@@ -52,7 +52,7 @@ class Calibration:
     def Behavior(self, name: str, typeName: str) -> Behavior:
         """This method creates a Behavior object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Calibration
@@ -74,12 +74,10 @@ class Calibration:
         return behavior
 
     @abaqus_method_doc
-    def DataSet(
-        self, name: str, data: tuple = (), type: str = "", form: str = ""
-    ) -> DataSet:
+    def DataSet(self, name: str, data: tuple = (), type: str = "", form: str = "") -> DataSet:
         """This method creates a DataSet object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Calibration

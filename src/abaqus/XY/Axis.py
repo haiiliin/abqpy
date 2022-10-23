@@ -15,7 +15,7 @@ class Axis:
     """The Axis object is used to store the display attributes of axes. Axes objects are
     automatically created when adding XYCurve objects to a Chart object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -80,13 +80,13 @@ class Axis:
         axis: "Axis",
         labelFrequency: int = 1,
         labelPlacement: Literal[C.INSIDE] = INSIDE,
-        labelStyle: Optional[TextStyle] = None, 
-        lineStyle: Optional[LineStyle] = None, 
+        labelStyle: Optional[TextStyle] = None,
+        lineStyle: Optional[LineStyle] = None,
         placement: Literal[C.MIN_MAX_EDGE] = MIN_MAX_EDGE,
         tickLength: float = 2,
         tickPlacement: Literal[C.INSIDE] = INSIDE,
-        tickStyle: Optional[LineStyle] = None, 
-        titleStyle: Optional[TextStyle] = None, 
+        tickStyle: Optional[LineStyle] = None,
+        titleStyle: Optional[TextStyle] = None,
     ):
         """This method modifies the Axis object.
 

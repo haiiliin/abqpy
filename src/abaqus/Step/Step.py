@@ -12,10 +12,11 @@ class Step(AdaptivityStep, OutputStep, TableCollectionStep):
     constructor. The methods and members of the Step object are common to all objects
     derived from the Step.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
             mdb.models[name].steps[name]
     """
+
     ...

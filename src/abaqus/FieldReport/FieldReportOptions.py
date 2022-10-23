@@ -2,8 +2,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from ..Session.NumberFormat import NumberFormat
-from ..UtilityAndView.abaqusConstants import (ASCENDING, Boolean, ENGINEERING, NO_LIMIT, ON,
-                                              SINGLE_TABLE)
+from ..UtilityAndView.abaqusConstants import ASCENDING, Boolean, ENGINEERING, NO_LIMIT, ON, SINGLE_TABLE
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -14,7 +13,7 @@ class FieldReportOptions:
     constructor. Abaqus creates the **fieldReportOptions** member when you import the
     Visualization module.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -84,7 +83,7 @@ class FieldReportOptions:
     ) -> NumberFormat:
         """This method creates a NumberFormat object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.defaultFieldReportOptions.NumberFormat
@@ -113,7 +112,5 @@ class FieldReportOptions:
         NumberFormat
             A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object.
         """
-        self.numberFormat = numberFormat = NumberFormat(
-            blankPad, format, numDigits, precision
-        )
+        self.numberFormat = numberFormat = NumberFormat(blankPad, format, numDigits, precision)
         return numberFormat

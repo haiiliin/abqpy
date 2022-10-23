@@ -10,7 +10,7 @@ class DefaultPlot:
     object attributes are used whenever an XYPlot object is created. A :py:class:`~abaqus.XY.DefaultPlot.DefaultPlot` object is
     automatically created when opening a session.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

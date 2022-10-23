@@ -14,7 +14,7 @@ class VelocityBC(BoundaryCondition):
     """The VelocityBC object stores the data for a velocity boundary condition.
     The VelocityBC object is derived from the BoundaryCondition object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -64,7 +64,7 @@ class VelocityBC(BoundaryCondition):
     ):
         """This method creates a VelocityBC object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].VelocityBC

@@ -19,7 +19,7 @@ class AbaqusBoolean(int):
     Scripting Interface commands that expect an AbaqusBoolean object will also accept a
     Python bool (True, False), or a Python int (1, 0).
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             from symbolicConstants import *
@@ -30,7 +30,7 @@ class AbaqusBoolean(int):
     def __init__(self, value: int) -> None:
         """The AbaqusBoolean method creates an AbaqusBoolean object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 AbaqusBoolean
@@ -48,30 +48,30 @@ class AbaqusBoolean(int):
         """
         super().__init__()
         if value not in (0, 1):
-            raise ValueError(f'AbaqusBoolean must have value argument 0 or 1.  {value} supplied')
-    
+            raise ValueError(f"AbaqusBoolean must have value argument 0 or 1.  {value} supplied")
+
     @abaqus_method_doc
     def getId(self) -> int:
         ...
-    
+
     def getText(self) -> str:
         if bool(self):
-            return 'ON'
+            return "ON"
         else:
-            return 'OFF'
-    
+            return "OFF"
+
     def isTrue(self) -> bool:
         return bool(self)
-    
+
     def __copy__(self) -> AbaqusBoolean:
         ...
-    
+
     def __getstate__(self) -> bool:
         ...
-    
+
     def __hash__(self) -> int:
         ...
-    
+
     # @staticmethod  # known case of __new__
     # def __new__(cls, *args, **kargs):  # reliably restored by inspect
     #     # no doc
@@ -79,13 +79,13 @@ class AbaqusBoolean(int):
 
     def __reduce__(self) -> tuple:  # known return case of __reduce__
         ...
-    
-    def __repr__(self) -> str: 
+
+    def __repr__(self) -> str:
         return self.getText()
 
     def __setstate__(self, *args) -> None:
         ...
-    
+
     def __str__(self) -> str:
         return self.getText()
 

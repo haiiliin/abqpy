@@ -4,11 +4,27 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from ..Datum.DatumCsys import DatumCsys
-from ..UtilityAndView.abaqusConstants import (Boolean, CATEGORY_BASED, COARSE, DEFAULT,
-                                              EXTRAPOLATE_AVERAGE_COMPUTE, FIELD_OUTPUT, GLOBAL,
-                                              INTEGRATION_POINT, MAX_ABS_VALUE, MIDDLE,
-                                              MIRROR_RECT_CIRC, ODB_REGIONS, OFF, ON, REAL,
-                                              SELECT_BY_NUMBER, SymbolicConstant, USE_BOTTOM, ZAXIS)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    CATEGORY_BASED,
+    COARSE,
+    DEFAULT,
+    EXTRAPOLATE_AVERAGE_COMPUTE,
+    FIELD_OUTPUT,
+    GLOBAL,
+    INTEGRATION_POINT,
+    MAX_ABS_VALUE,
+    MIDDLE,
+    MIRROR_RECT_CIRC,
+    ODB_REGIONS,
+    OFF,
+    ON,
+    REAL,
+    SELECT_BY_NUMBER,
+    SymbolicConstant,
+    USE_BOTTOM,
+    ZAXIS,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _CopyOptionsBase
 
@@ -32,7 +48,7 @@ class BasicOptions(_CopyOptionsBase):
       preferences.
     - The basic options associated with a particular viewport.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -450,7 +466,16 @@ class BasicOptions(_CopyOptionsBase):
         sweepEndAngleElem: float = 180,
         numSweepSegmentsArs: Optional[int] = None,
         numSweepSegmentsElem: Optional[int] = None,
-        numericForm: Literal[C.COMPLEX_ENVELOPE_MAX_ABS, C.COMPLEX_PHASE, C.COMPLEX_MAG_AT_ANGLE, C.COMPLEX_ENVELOPE_MIN, C.REAL, C.IMAGINARY, C.COMPLEX_MAGNITUDE, C.COMPLEX_ENVELOPE_MAX] = REAL,
+        numericForm: Literal[
+            C.COMPLEX_ENVELOPE_MAX_ABS,
+            C.COMPLEX_PHASE,
+            C.COMPLEX_MAG_AT_ANGLE,
+            C.COMPLEX_ENVELOPE_MIN,
+            C.REAL,
+            C.IMAGINARY,
+            C.COMPLEX_MAGNITUDE,
+            C.COMPLEX_ENVELOPE_MAX,
+        ] = REAL,
         complexAngle: float = 0,
         sectionResults: Literal[C.USE_BOTTOM, C.USE_TOP, C.USE_BOTTOM_AND_TOP, C.USE_ENVELOPE] = USE_BOTTOM,
         envelopeCriteria: Literal[C.MIN_VALUE, C.MAX_ABS_VALUE, C.MAX_VALUE] = MAX_ABS_VALUE,
@@ -467,7 +492,14 @@ class BasicOptions(_CopyOptionsBase):
         extrudeElem: Boolean = OFF,
         extrudeArsDepth: float = 1,
         extrudeElemDepth: float = 1,
-        mirrorPatternOrder: Literal[C.RECT_CIRC_MIRROR, C.CIRC_MIRROR_RECT, C.MIRROR_CIRC_RECT, C.MIRROR_RECT_CIRC, C.CIRC_RECT_MIRROR, C.RECT_MIRROR_CIRC] = MIRROR_RECT_CIRC,
+        mirrorPatternOrder: Literal[
+            C.RECT_CIRC_MIRROR,
+            C.CIRC_MIRROR_RECT,
+            C.MIRROR_CIRC_RECT,
+            C.MIRROR_RECT_CIRC,
+            C.CIRC_RECT_MIRROR,
+            C.RECT_MIRROR_CIRC,
+        ] = MIRROR_RECT_CIRC,
         mirrorCsysName: Literal[C.GLOBAL] = GLOBAL,
         mirrorAboutXyPlane: Boolean = OFF,
         mirrorAboutXzPlane: Boolean = OFF,
@@ -486,14 +518,22 @@ class BasicOptions(_CopyOptionsBase):
         couplingDisplay: Boolean = ON,
         coordSystemDisplay: Boolean = OFF,
         scratchCoordSystemDisplay: Boolean = OFF,
-        transformationType: Literal[C.USER_SPECIFIED, C.NODAL, C.DEFAULT, C.LAYUP_ORIENTATION, C.TRANSFORM, C.ANGULAR] = DEFAULT,
-        datumCsys: Optional[DatumCsys] = None, 
+        transformationType: Literal[
+            C.USER_SPECIFIED, C.NODAL, C.DEFAULT, C.LAYUP_ORIENTATION, C.TRANSFORM, C.ANGULAR
+        ] = DEFAULT,
+        datumCsys: Optional[DatumCsys] = None,
         rigidTransformPrimary: Boolean = OFF,
         rigidTransformDeformed: Boolean = OFF,
         transformOnDeformed: Boolean = ON,
         averageElementOutput: Boolean = ON,
         averageOnlyDisplayed: Boolean = ON,
-        computeOutput: Literal[C.EXTRAPOLATE_COMPUTE, C.RAW_DATA, C.EXTRAPOLATE_COMPUTE_DISCONTINUITIES, C.EXTRAPOLATE_COMPUTE_AVERAGE, C.EXTRAPOLATE_AVERAGE_COMPUTE] = EXTRAPOLATE_AVERAGE_COMPUTE,
+        computeOutput: Literal[
+            C.EXTRAPOLATE_COMPUTE,
+            C.RAW_DATA,
+            C.EXTRAPOLATE_COMPUTE_DISCONTINUITIES,
+            C.EXTRAPOLATE_COMPUTE_AVERAGE,
+            C.EXTRAPOLATE_AVERAGE_COMPUTE,
+        ] = EXTRAPOLATE_AVERAGE_COMPUTE,
         regionBoundaries: Literal[C.DISPLAY_GROUPS, C.ODB_REGIONS, C.NONE, C.ELEMENT_SET] = ODB_REGIONS,
         useRegionBoundaries: Boolean = ON,
         userRegions: tuple = (),

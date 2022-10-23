@@ -7,7 +7,7 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from .MeshFace import MeshFace
 from ..Datum.DatumCsys import DatumCsys
 
-if TYPE_CHECKING: # to avoid circular imports
+if TYPE_CHECKING:  # to avoid circular imports
     from .MeshEdge import MeshEdge
     from .MeshElement import MeshElement
     from .MeshNodeArray import MeshNodeArray
@@ -19,7 +19,7 @@ class MeshNode:
     object can be accessed via a part or part instance using an index that refers to the
     internal numbering of the node repository. The index does not refer to the node label.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import part
@@ -68,7 +68,7 @@ class MeshNode:
     ) -> None:
         """This method creates a node on an orphan mesh part.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].parts[name].Node

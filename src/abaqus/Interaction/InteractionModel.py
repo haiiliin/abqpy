@@ -45,12 +45,34 @@ from ..Interaction.SurfaceToSurfaceContactStd import SurfaceToSurfaceContactStd
 from ..Interaction.XFEMCrackGrowth import XFEMCrackGrowth
 from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
-from ..UtilityAndView.abaqusConstants import (ALLOW_SUBCYCLING, ALL_NODAL_DIAMETER, AMBIENT,
-                                              BLOCKING_ALL, Boolean, COMPUTED, COMPUTED_TOLERANCE,
-                                              CONTACT, DEFAULT, GEOMETRY, KINEMATIC, LAGRANGIAN,
-                                              MODEL, NONE, OFF, OMIT, ON, PLANE, PRESSURE, RIGHT,
-                                              SURFACE_TO_SURFACE, TABULAR, TO_ENVIRONMENT,
-                                              UNIFORM, UNSET, USE_GEOMETRY)
+from ..UtilityAndView.abaqusConstants import (
+    ALLOW_SUBCYCLING,
+    ALL_NODAL_DIAMETER,
+    AMBIENT,
+    BLOCKING_ALL,
+    Boolean,
+    COMPUTED,
+    COMPUTED_TOLERANCE,
+    CONTACT,
+    DEFAULT,
+    GEOMETRY,
+    KINEMATIC,
+    LAGRANGIAN,
+    MODEL,
+    NONE,
+    OFF,
+    OMIT,
+    ON,
+    PLANE,
+    PRESSURE,
+    RIGHT,
+    SURFACE_TO_SURFACE,
+    TABULAR,
+    TO_ENVIRONMENT,
+    UNIFORM,
+    UNSET,
+    USE_GEOMETRY,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -63,7 +85,7 @@ class InteractionModel(
 ):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -193,7 +215,7 @@ class InteractionModel(
         Tuple[Tuple[str, str, float, bool]]
             Tuple of tuples, where each tuple holds information, to be used in contact creation as
             follows:
-            
+
             - A string specifying the name of the master surface used in contact.
             - A string specifying the name of the slave surface used in contact.
             - A float specifying the separation distance between the master surface and the slave
@@ -210,7 +232,9 @@ class InteractionModel(
         surface: Region,
         definition: Literal[C.TABULAR, C.NONREFLECTING] = TABULAR,
         interactionProperty: str = "",
-        nonreflectingType: Literal[C.PLANE, C.ELLIPTICAL, C.IMPROVED, C.SPHERICAL, C.PROLATE, C.CIRCULAR, C.NONREFLECTING] = PLANE,
+        nonreflectingType: Literal[
+            C.PLANE, C.ELLIPTICAL, C.IMPROVED, C.SPHERICAL, C.PROLATE, C.CIRCULAR, C.NONREFLECTING
+        ] = PLANE,
         radius: float = 1,
         semimajorAxis: float = 1,
         eccentricity: float = 0,
@@ -219,7 +243,7 @@ class InteractionModel(
     ) -> AcousticImpedance:
         """This method creates an AcousticImpedance object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].AcousticImpedance
@@ -301,7 +325,7 @@ class InteractionModel(
     ) -> ActuatorSensor:
         """This method creates an ActuatorSensor object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ActuatorSensor
@@ -369,9 +393,9 @@ class InteractionModel(
         minLumpedAreaDS: float = 5,
         cyclicSymmetry: Boolean = OFF,
         cyclicImages: int = 2,
-        cyclicRotPt: Optional[ModelDot] = None, 
-        cyclicRotEndPt: Optional[ModelDot] = None, 
-        cyclicSymPt: Optional[ModelDot] = None, 
+        cyclicRotPt: Optional[ModelDot] = None,
+        cyclicRotEndPt: Optional[ModelDot] = None,
+        cyclicSymPt: Optional[ModelDot] = None,
         periodicSymmetries: int = 0,
         periodicImages_1: int = 2,
         periodicImages_2: int = 2,
@@ -396,7 +420,7 @@ class InteractionModel(
     ) -> CavityRadiation:
         """This method creates a CavityRadiation object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CavityRadiation
@@ -623,7 +647,7 @@ class InteractionModel(
     ) -> ConcentratedFilmCondition:
         """This method creates a ConcentratedFilmCondition object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConcentratedFilmCondition
@@ -725,7 +749,7 @@ class InteractionModel(
     ) -> ConcentratedRadiationToAmbient:
         """This method creates a ConcentratedRadiationToAmbient object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConcentratedRadiationToAmbient
@@ -792,11 +816,11 @@ class InteractionModel(
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-        includedPairs: Optional[RegionPairs] = None, 
-        excludedPairs: Optional[RegionPairs] = None, 
-        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
-        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None, 
-        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None, 
+        includedPairs: Optional[RegionPairs] = None,
+        excludedPairs: Optional[RegionPairs] = None,
+        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None,
+        surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None,
+        surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
         surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         smoothingAssignments: Optional[SmoothingAssignment] = None,
         masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
@@ -804,7 +828,7 @@ class InteractionModel(
     ):
         """This method creates a ContactExp object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactExp
@@ -879,21 +903,21 @@ class InteractionModel(
         createStepName: str,
         useAllstar: Boolean = OFF,
         globalSmoothing: Boolean = ON,
-        includedPairs: Optional[RegionPairs] = None, 
-        excludedPairs: Optional[RegionPairs] = None, 
-        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None, 
+        includedPairs: Optional[RegionPairs] = None,
+        excludedPairs: Optional[RegionPairs] = None,
+        contactPropertyAssignments: Optional[ContactPropertyAssignment] = None,
         surfaceThicknessAssignments: Optional[SurfaceThicknessAssignment] = None,
         surfaceOffsetAssignments: Optional[SurfaceOffsetAssignment] = None,
-        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None, 
+        surfaceFeatureAssignments: Optional[SurfaceFeatureAssignment] = None,
         masterSlaveAssignments: Optional[MasterSlaveAssignment] = None,
-        initializationAssignments: Optional[InitializationAssignment] = None, 
-        stabilizationAssignments: Optional[StabilizationAssignment] = None, 
-        smoothingAssignments: Optional[SmoothingAssignment] = None, 
-        slidingTransitionAssignments: Optional[SlidingTransitionAssignment] = None, 
+        initializationAssignments: Optional[InitializationAssignment] = None,
+        stabilizationAssignments: Optional[StabilizationAssignment] = None,
+        smoothingAssignments: Optional[SmoothingAssignment] = None,
+        slidingTransitionAssignments: Optional[SlidingTransitionAssignment] = None,
     ) -> ContactStd:
         """This method creates a ContactStd object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ContactStd
@@ -986,7 +1010,7 @@ class InteractionModel(
     ) -> CyclicSymmetry:
         """This method creates a CyclicSymmetry object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].CyclicSymmetry
@@ -1066,12 +1090,10 @@ class InteractionModel(
         return interaction
 
     @abaqus_method_doc
-    def ElasticFoundation(
-        self, name: str, createStepName: str, surface: Region, stiffness: float
-    ) -> ElasticFoundation:
+    def ElasticFoundation(self, name: str, createStepName: str, surface: Region, stiffness: float) -> ElasticFoundation:
         """This method creates an ElasticFoundation object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ElasticFoundation
@@ -1093,9 +1115,7 @@ class InteractionModel(
         ElasticFoundation
             An :py:class:`~abaqus.Interaction.ElasticFoundation.ElasticFoundation` object.
         """
-        self.interactions[name] = interaction = ElasticFoundation(
-            name, createStepName, surface, stiffness
-        )
+        self.interactions[name] = interaction = ElasticFoundation(name, createStepName, surface, stiffness)
         return interaction
 
     @abaqus_method_doc
@@ -1116,7 +1136,7 @@ class InteractionModel(
     ) -> FilmCondition:
         """This method creates a FilmCondition object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FilmCondition
@@ -1206,7 +1226,7 @@ class InteractionModel(
     ) -> FluidCavity:
         """This method creates an FluidCavity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FluidCavity
@@ -1267,7 +1287,7 @@ class InteractionModel(
     ) -> FluidExchange:
         """This method creates an FluidExchange object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FluidExchange
@@ -1379,7 +1399,7 @@ class InteractionModel(
     ) -> IncidentWave:
         """This method creates an IncidentWave object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].IncidentWave
@@ -1470,7 +1490,7 @@ class InteractionModel(
     ) -> ModelChange:
         """This method creates a ModelChange object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ModelChange
@@ -1531,7 +1551,7 @@ class InteractionModel(
     ) -> PressurePenetration:
         """This method creates a PressurePenetration object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].PressurePenetration
@@ -1599,7 +1619,7 @@ class InteractionModel(
     ) -> RadiationToAmbient:
         """This method creates a RadiationToAmbient object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].RadiationToAmbient
@@ -1668,7 +1688,7 @@ class InteractionModel(
     ) -> SelfContactExp:
         """This method creates a SelfContactExp object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SelfContactExp
@@ -1721,7 +1741,7 @@ class InteractionModel(
     ) -> SelfContactStd:
         """This method creates a SelfContactStd object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SelfContactStd
@@ -1781,7 +1801,7 @@ class InteractionModel(
     ) -> StdXplCosimulation:
         """This method creates a StdXplCosimulation object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].StdXplCosimulation
@@ -1837,13 +1857,13 @@ class InteractionModel(
         pitch: Optional[str] = None,
         majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
-        datumAxis: Optional[DatumAxis] = None, 
+        datumAxis: Optional[DatumAxis] = None,
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
     ) -> SurfaceToSurfaceContactExp:
         """This method creates a SurfaceToSurfaceContactExp object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceToSurfaceContactExp
@@ -1958,7 +1978,7 @@ class InteractionModel(
         pitch: Optional[str] = None,
         majorBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
         meanBoltDiameter: Union[Literal[C.COMPUTED], float] = COMPUTED,
-        datumAxis: Optional[DatumAxis] = None, 
+        datumAxis: Optional[DatumAxis] = None,
         useReverseDatumAxis: Boolean = OFF,
         clearanceRegion: Optional[Region] = None,
         surfaceSmoothing: Literal[C.AUTOMATIC, C.NONE] = NONE,
@@ -1968,7 +1988,7 @@ class InteractionModel(
     ) -> SurfaceToSurfaceContactStd:
         """This method creates a SurfaceToSurfaceContactStd object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].SurfaceToSurfaceContactStd
@@ -1993,11 +2013,11 @@ class InteractionModel(
         interferenceType
             A SymbolicConstant specifying the type of time-dependent allowable interference for
             contact pairs and contact elements. Possible values are:
-            
+
             - NONE, specifying no allowable contact interference.
             - SHRINK_FIT.
             - UNIFORM.
-            
+
             The default value is NONE.
         overclosure
             A Float specifying the maximum overclosure distance allowed. This argument applies only
@@ -2007,11 +2027,11 @@ class InteractionModel(
             Possible values are COMPUTED and DIRECTION_COSINE. The default value is COMPUTED.
         direction
             A sequence of three Floats specifying the following:
-            
+
             - XX-direction cosine of the interference direction vector.
             - YY-direction cosine of the interference direction vector.
             - ZZ-direction cosine of the interference direction vector.
-            
+
             This argument is required only when **interferenceDirectionType** = DIRECTION_COSINE.
         amplitude
             A String specifying the name of the amplitude curve that defines the magnitude of the
@@ -2143,7 +2163,7 @@ class InteractionModel(
     ) -> XFEMCrackGrowth:
         """This method creates an XFEMCrackGrowth object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].XFEMCrackGrowth
@@ -2165,7 +2185,5 @@ class InteractionModel(
         XFEMCrackGrowth
             A :py:class:`~abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth` object.
         """
-        self.interactions[name] = interaction = XFEMCrackGrowth(
-            name, createStepName, crackName, allowGrowth
-        )
+        self.interactions[name] = interaction = XFEMCrackGrowth(name, createStepName, crackName, allowGrowth)
         return interaction

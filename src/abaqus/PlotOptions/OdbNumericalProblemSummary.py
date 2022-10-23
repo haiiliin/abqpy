@@ -7,7 +7,7 @@ from ..UtilityAndView.abaqusConstants import Boolean, OFF
 class OdbNumericalProblemSummary:
     """The OdbNumericalProblemSummary object stores the numerical problem summary of a job.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization

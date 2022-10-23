@@ -24,7 +24,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class OdbBase:
     """The Odb object is the in-memory representation of an output database (ODB) file.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -74,12 +74,10 @@ class OdbBase:
     profiles: Dict[str, Profile] = {}
 
     @abaqus_method_doc
-    def __init__(
-        self, name: str, analysisTitle: str = "", description: str = "", path: str = ""
-    ):
+    def __init__(self, name: str, analysisTitle: str = "", description: str = "", path: str = ""):
         """This method creates a new Odb object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.Odb

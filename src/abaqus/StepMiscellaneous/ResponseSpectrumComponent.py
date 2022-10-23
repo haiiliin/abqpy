@@ -7,7 +7,7 @@ from abqpy.decorators import abaqus_class_doc
 class ResponseSpectrumComponent:
     """A ResponseSpectrumComponent is an element of the ResponseSpectrumComponentArray.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step

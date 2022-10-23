@@ -1,11 +1,12 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
+
 @abaqus_class_doc
 class InelasticHeatFraction:
     """The InelasticHeatFraction object defines the fraction of the rate of inelastic
     dissipation that appears as a heat source.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -22,7 +23,7 @@ class InelasticHeatFraction:
     def __init__(self, fraction: float = 0):
         """This method creates an InelasticHeatFraction object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].InelasticHeatFraction

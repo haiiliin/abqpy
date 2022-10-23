@@ -1,4 +1,3 @@
-
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 
 from .PartInstance import PartInstance
@@ -14,7 +13,7 @@ class ModelBase:
 class AssemblyModel(ModelBase):
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -25,7 +24,7 @@ class AssemblyModel(ModelBase):
         """This method copies a PartInstance object from the specified model and creates a new
         PartInstance object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].Instance
@@ -45,9 +44,7 @@ class AssemblyModel(ModelBase):
         return self
 
     @abaqus_method_doc
-    def convertAllSketches(
-        self, regenerate: Boolean = True, convertReversedSketches: Boolean = True
-    ):
+    def convertAllSketches(self, regenerate: Boolean = True, convertReversedSketches: Boolean = True):
         """This method converts all sketches from Abaqus 6.5 or earlier to the equivalent
         ConstrainedSketch objects.
 

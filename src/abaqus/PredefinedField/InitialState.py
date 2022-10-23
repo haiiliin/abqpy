@@ -12,7 +12,7 @@ class InitialState(PredefinedField):
     """The InitialState object stores the data for an initial state predefined field.
     The InitialState object is derived from the PredefinedField object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -59,7 +59,7 @@ class InitialState(PredefinedField):
     ):
         """This method creates an InitialState predefined field object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].InitialState

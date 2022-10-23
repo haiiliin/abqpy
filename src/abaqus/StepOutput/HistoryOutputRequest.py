@@ -4,10 +4,18 @@ from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (ALL, Boolean, DEFAULT,
-                                              EVERY_TIME_INCREMENT, EXCLUDE, J_INTEGRAL,
-                                              MODEL, MTS,
-                                              OFF, PRESELECT)
+from ..UtilityAndView.abaqusConstants import (
+    ALL,
+    Boolean,
+    DEFAULT,
+    EVERY_TIME_INCREMENT,
+    EXCLUDE,
+    J_INTEGRAL,
+    MODEL,
+    MTS,
+    OFF,
+    PRESELECT,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -15,7 +23,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class HistoryOutputRequest:
     """The HistoryOutputRequest object defines a history output request.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -28,7 +36,7 @@ class HistoryOutputRequest:
         - ENERGY OUTPUT
         - CONTACT OUTPUT
         - ELEMENT OUTPUT
-        - ENERGY OUTPUT        
+        - ENERGY OUTPUT
         - MODAL OUTPUT
         - CONTACT OUTPUT
         - ELEMENT OUTPUT
@@ -63,9 +71,7 @@ class HistoryOutputRequest:
         variables: Union[Sequence[str], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
         frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
         modes: Union[Literal[C.ALL], Sequence[int]] = ALL,
-        timeInterval: Union[
-            Literal[C.EVERY_TIME_INCREMENT], float
-        ] = EVERY_TIME_INCREMENT,
+        timeInterval: Union[Literal[C.EVERY_TIME_INCREMENT], float] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         boltLoad: str = "",
         sectionPoints: Union[Literal[C.DEFAULT], Sequence[int]] = DEFAULT,
@@ -88,7 +94,7 @@ class HistoryOutputRequest:
     ) -> None:
         """This method creates a HistoryOutputRequest object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].HistoryOutputRequest
@@ -233,9 +239,7 @@ class HistoryOutputRequest:
         variables: Union[Sequence[str], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
         frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
         modes: Union[Literal[C.ALL], Sequence[int]] = ALL,
-        timeInterval: Union[
-            Literal[C.EVERY_TIME_INCREMENT], float
-        ] = EVERY_TIME_INCREMENT,
+        timeInterval: Union[Literal[C.EVERY_TIME_INCREMENT], float] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         boltLoad: str = "",
         sectionPoints: Union[Literal[C.DEFAULT], Sequence[int]] = DEFAULT,
@@ -343,9 +347,7 @@ class HistoryOutputRequest:
         variables: Union[Sequence[str], Literal[C.PRESELECT, C.ALL]] = ...,
         frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
         modes: Union[Literal[C.ALL], Sequence[int]] = ALL,
-        timeInterval: Union[
-            Literal[C.EVERY_TIME_INCREMENT], float
-        ] = EVERY_TIME_INCREMENT,
+        timeInterval: Union[Literal[C.EVERY_TIME_INCREMENT], float] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         timePoints: Optional[str] = None,
     ) -> None:

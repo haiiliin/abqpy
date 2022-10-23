@@ -3,8 +3,17 @@ from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import (Boolean, DEFAULT, FRAME_BASED, HALF_CYCLE, LOOP,
-                                              MEDIUM, ON, SOLID, SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    DEFAULT,
+    FRAME_BASED,
+    HALF_CYCLE,
+    LOOP,
+    MEDIUM,
+    ON,
+    SOLID,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _OptionsBase
 
@@ -16,7 +25,7 @@ class AnimationOptions(_OptionsBase):
     The AnimationOptions object has no constructor command. Abaqus creates the
     **animationOptions** member when it creates the AnimationController object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import animation
@@ -98,7 +107,7 @@ class AnimationOptions(_OptionsBase):
     #: A SymbolicConstant specifying the marker type to be used for all animation capable **X - Y**
     #: curve or the SymbolicConstant DEFAULT specifying that the system will take the marker
     #: associated to each curve Possible values are:
-    #: 
+    #:
     #: - FILLED_CIRCLE
     #: - FILLED_SQUARE
     #: - FILLED_DIAMOND
@@ -110,7 +119,7 @@ class AnimationOptions(_OptionsBase):
     #: - CROSS
     #: - XMARKER
     #: - DEFAULT
-    #: 
+    #:
     #: The default value is DEFAULT.
     xySymbolMarker: SymbolicConstant = DEFAULT
 
@@ -147,7 +156,19 @@ class AnimationOptions(_OptionsBase):
         xyLineThickness: Literal[C.THIN, C.THICK, C.VERY_THIN, C.MEDIUM] = MEDIUM,
         xyLineColor: str = "",
         xyShowSymbol: Boolean = ON,
-        xySymbolMarker: Literal[C.CROSS, C.FILLED_DIAMOND, C.FILLED_SQUARE, C.HOLLOW_CIRCLE, C.HOLLOW_TRI, C.HOLLOW_SQUARE, C.DEFAULT, C.FILLED_TRI, C.HOLLOW_DIAMOND, C.FILLED_CIRCLE, C.XMARKER] = DEFAULT,
+        xySymbolMarker: Literal[
+            C.CROSS,
+            C.FILLED_DIAMOND,
+            C.FILLED_SQUARE,
+            C.HOLLOW_CIRCLE,
+            C.HOLLOW_TRI,
+            C.HOLLOW_SQUARE,
+            C.DEFAULT,
+            C.FILLED_TRI,
+            C.HOLLOW_DIAMOND,
+            C.FILLED_CIRCLE,
+            C.XMARKER,
+        ] = DEFAULT,
         xySymbolSize: Literal[C.SMALL, C.LARGE, C.MEDIUM] = MEDIUM,
         xySymbolColor: str = "",
     ):
@@ -220,7 +241,7 @@ class AnimationOptions(_OptionsBase):
             - CROSS
             - XMARKER
             - DEFAULT
-            
+
             The default value is DEFAULT.
         xySymbolSize
             A SymbolicConstant specifying the size of the markers. Possible values are SMALL,

@@ -35,7 +35,7 @@ class AssemblyBase(AssemblyFeature):
     constructor command. Abaqus creates the **rootAssembly** member when a Model object is
     created.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import assembly
@@ -141,12 +141,10 @@ class AssemblyBase(AssemblyFeature):
 
     @overload
     @abaqus_method_doc
-    def Instance(
-        self, name: str, part: Part, autoOffset: Boolean = OFF, dependent: Boolean = OFF
-    ) -> PartInstance:
+    def Instance(self, name: str, part: Part, autoOffset: Boolean = OFF, dependent: Boolean = OFF) -> PartInstance:
         """This method creates a PartInstance object and puts it into the instances repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
@@ -174,12 +172,10 @@ class AssemblyBase(AssemblyFeature):
 
     @overload
     @abaqus_method_doc
-    def Instance(
-        self, name: str, model: AssemblyModel, autoOffset: Boolean = OFF
-    ) -> ModelInstance:
+    def Instance(self, name: str, model: AssemblyModel, autoOffset: Boolean = OFF) -> ModelInstance:
         """This method creates a ModelInstance object and puts it into the instances repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
@@ -203,12 +199,10 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def Instance(
-        self, name: str, *args, **kwargs
-    ) -> Union[PartInstance, ModelInstance]:
+    def Instance(self, name: str, *args, **kwargs) -> Union[PartInstance, ModelInstance]:
         """This method creates a PartInstance object and puts it into the instances repository.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].rootAssembly.Instance
@@ -403,9 +397,7 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def getAngle(
-        self, plane1: str, plane2: str, line1: str, line2: str, commonVertex: str = ""
-    ):
+    def getAngle(self, plane1: str, plane2: str, line1: str, line2: str, commonVertex: str = ""):
         """This method returns the angle between the specified entities.
 
         Parameters
@@ -457,7 +449,7 @@ class AssemblyBase(AssemblyFeature):
     @abaqus_method_doc
     def getDistance(self, entity1: str, entity2: str, printResults: Boolean = OFF):
         """Depending on the arguments provided, this method returns one of the following:
-        
+
         - The distance between two points.
         - The minimum distance between a point and an edge.
         - The minimum distance between two edges.
@@ -495,15 +487,15 @@ class AssemblyBase(AssemblyFeature):
         -------
         Sequence[dict]
             A tuple of dictionary objects. Each dictionary contains five items with the following keys:
-        
+
             - **edge**: An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the attachment line.
-            - **startFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with one end of the 
+            - **startFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with one end of the
               attachment line.
-            - **endFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with the other end of 
+            - **endFace**: A :py:class:`~abaqus.BasicGeometry.Face.Face` object specifying the face associated with the other end of
               the attachment line.
-            - **startVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` 
+            - **startVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex`
               object specifying the vertex associated with one end of the attachment line. This end is also associated with the startFace.
-            - **endVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` 
+            - **endVertex**: A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex`
               object specifying the vertex associated with the other end of the attachment line. This end is also associated with the endFace.
         """
         ...
@@ -754,10 +746,10 @@ class AssemblyBase(AssemblyFeature):
 
     @abaqus_method_doc
     def rotate(
-        self, 
+        self,
         instanceList: Sequence[str],
-        axisPoint: Sequence[float], 
-        axisDirection: Sequence[float], 
+        axisPoint: Sequence[float],
+        axisDirection: Sequence[float],
         angle: float,
     ):
         """This method rotates given instances by the specified amount.
@@ -855,9 +847,7 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def writeCADParameters(
-        self, paramFile: str, modifiedParams: tuple = (), updatePaths: str = ""
-    ):
+    def writeCADParameters(self, paramFile: str, modifiedParams: tuple = (), updatePaths: str = ""):
         """This method writes the parameters that were imported from the CAD system to a parameter
         file.
 
@@ -952,9 +942,7 @@ class AssemblyBase(AssemblyFeature):
         ...
 
     @abaqus_method_doc
-    def smoothNodes(
-        self, nodes: Sequence[MeshNode] = ()
-    ):
+    def smoothNodes(self, nodes: Sequence[MeshNode] = ()):
         """This method smooths the given nodes of a native mesh, moving them locally to a more
         optimal location that improves the quality of the mesh
 

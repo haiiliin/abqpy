@@ -2,9 +2,21 @@ from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc
 
-from ..UtilityAndView.abaqusConstants import (Boolean, ELEMENT, FEATURE, HOLLOW_CIRCLE, MEDIUM, OFF,
-                                              ON, SMALL, SOLID, SymbolicConstant, VERY_THIN, WIRE,
-                                              WIREFRAME)
+from ..UtilityAndView.abaqusConstants import (
+    Boolean,
+    ELEMENT,
+    FEATURE,
+    HOLLOW_CIRCLE,
+    MEDIUM,
+    OFF,
+    ON,
+    SMALL,
+    SOLID,
+    SymbolicConstant,
+    VERY_THIN,
+    WIRE,
+    WIREFRAME,
+)
 
 
 @abaqus_class_doc
@@ -15,7 +27,7 @@ class DGSuperimposeOptions:
     *odbDisplayOptions.superimposeOptions* member when a display group instance is created,
     using values from *odbDisplay.superimposeOptions*.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             session.viewports[name].assemblyDisplay.displayGroupInstances[name].odbDisplayOptions.superimposeOptions
@@ -60,7 +72,7 @@ class DGSuperimposeOptions:
     nodeSymbols: Boolean = OFF
 
     #: A SymbolicConstant specifying the node symbol types. Possible values are:
-    #: 
+    #:
     #: - FILLED_CIRCLE
     #: - FILLED_SQUARE
     #: - FILLED_DIAMOND
@@ -71,7 +83,7 @@ class DGSuperimposeOptions:
     #: - HOLLOW_TRI
     #: - CROSS
     #: - XMARKER
-    #: 
+    #:
     #: The default value is HOLLOW_CIRCLE.
     nodeSymbolType: SymbolicConstant = HOLLOW_CIRCLE
 

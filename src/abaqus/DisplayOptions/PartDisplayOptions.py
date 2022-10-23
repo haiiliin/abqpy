@@ -52,9 +52,7 @@ class PartDisplayOptions:
     displayGroupInstances: Dict[str, DisplayGroupInstance] = {}
 
     #: An :py:class:`~abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions` object.
-    engineeringFeatureOptions: EngineeringFeatureDisplayOptions = (
-        EngineeringFeatureDisplayOptions()
-    )
+    engineeringFeatureOptions: EngineeringFeatureDisplayOptions = EngineeringFeatureDisplayOptions()
 
     #: A :py:class:`~abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions` object.
     geometryOptions: GeometryDisplayOptions = GeometryDisplayOptions()

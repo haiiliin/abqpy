@@ -38,9 +38,19 @@ from ..StepOutput.TimePoint import TimePoint
 from ..TableCollection.EventSeriesData import EventSeriesData
 from ..TableCollection.EventSeriesType import EventSeriesType
 from ..TableCollection.TableCollection import TableCollection
-from ..UtilityAndView.abaqusConstants import (B31, Boolean, C3D10, C3D8I, NOT_SET, OFF, ON,
-                                              PRESERVE_SECTION, S4, STANDARD_EXPLICIT,
-                                              SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import (
+    B31,
+    Boolean,
+    C3D10,
+    C3D8I,
+    NOT_SET,
+    OFF,
+    ON,
+    PRESERVE_SECTION,
+    S4,
+    STANDARD_EXPLICIT,
+    SymbolicConstant,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -48,7 +58,7 @@ from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 class ModelBase:
     """Abaqus creates a Model object named `Model-1` when a session is started.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             mdb.models[name]
@@ -253,7 +263,7 @@ class ModelBase:
     ):
         """This method creates a Model object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.Model
@@ -300,7 +310,7 @@ class ModelBase:
         """This method creates a Model object by reading the keywords in an input file and creating
         the corresponding Abaqus/CAE objects.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.Model
@@ -326,7 +336,7 @@ class ModelBase:
         """This method creates a Model object by reading an output database and creating any
         corresponding Abaqus/CAE objects.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.Model
@@ -369,7 +379,7 @@ class ModelBase:
         environment file as the one used for the translator from Nastran to Abaqus. For more
         information, see Translating Nastran data to Abaqus files.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.Model

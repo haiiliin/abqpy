@@ -14,7 +14,7 @@ class FieldLocation:
     automatically as an element of the **location** member of a FieldOutput object by the
     addData method of a FieldOutput object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess

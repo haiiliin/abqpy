@@ -18,7 +18,7 @@ class ConnectorOptions:
     ConnectorOptions constructors associated with that behavior—isotropicOptions and
     kinematicOptions.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import section
@@ -118,7 +118,7 @@ class ConnectorOptions:
         """This method creates a connector options object to be used in conjunction with an
         allowable connector behavior option, derived component term, or connector section.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sections[name].behaviorOptions[i].connectorPotentials[i].derivedComponent.cdcTerms[i].ConnectorOptions

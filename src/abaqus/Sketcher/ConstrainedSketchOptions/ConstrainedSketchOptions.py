@@ -3,7 +3,7 @@ from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ...UtilityAndView.abaqusConstants import (Boolean, MINIMUM_MOVE, ON, REGULAR, STANDARD)
+from ...UtilityAndView.abaqusConstants import Boolean, MINIMUM_MOVE, ON, REGULAR, STANDARD
 from ...UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -12,7 +12,7 @@ class ConstrainedSketchOptions:
     """The ConstrainedSketchOptions object is used to store values and attributes associated
     with a particular sketch. The ConstrainedSketchOptions object has no constructor.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import sketch
@@ -39,7 +39,9 @@ class ConstrainedSketchOptions:
         maxCoplanarEntities: int = 300,
         autoConstrainAngularTolerance: float = 0,
         autoConstrainLinearTolerance: Optional[float] = None,
-        autoConstrainOptions: Optional[Literal[C.PERPENDICULAR, C.EQUALRADIUS, C.IDENTICAL, C.TANGENT, C.PARALLEL, C.CONCENTRIC]] = None,
+        autoConstrainOptions: Optional[
+            Literal[C.PERPENDICULAR, C.EQUALRADIUS, C.IDENTICAL, C.TANGENT, C.PARALLEL, C.CONCENTRIC]
+        ] = None,
         dragMethod: Literal[C.WEIGHTED, C.RELAXATION, C.MINIMUM_MOVE, C.STANDARD] = MINIMUM_MOVE,
         editMethod: Literal[C.WEIGHTED, C.RELAXATION, C.MINIMUM_MOVE, C.STANDARD] = STANDARD,
     ):

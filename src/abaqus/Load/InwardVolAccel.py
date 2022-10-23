@@ -15,7 +15,7 @@ class InwardVolAccel(Load):
     load.
     The InwardVolAccel object is derived from the Load object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -50,7 +50,7 @@ class InwardVolAccel(Load):
     ):
         """This method creates a InwardVolAccel object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].InwardVolAccel
@@ -112,9 +112,7 @@ class InwardVolAccel(Load):
         ...
 
     @abaqus_method_doc
-    def setValuesInStep(
-        self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""
-    ):
+    def setValuesInStep(self, stepName: str, magnitude: Optional[float] = None, amplitude: str = ""):
         """This method modifies the propagating data for an existing InwardVolAccel object in the
         specified step.
 

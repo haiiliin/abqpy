@@ -12,7 +12,7 @@ class UserDataBase:
     """The UserData object contains user-defined XY data. The UserData object has no
     constructor; it is created automatically when an Odb object is created.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -74,12 +74,12 @@ class UserDataBase:
         legendLabel: str = "",
         xValuesLabel: str = "",
         yValuesLabel: str = "",
-        axis1QuantityType: Optional[QuantityType] = None, 
-        axis2QuantityType: Optional[QuantityType] = None, 
+        axis1QuantityType: Optional[QuantityType] = None,
+        axis2QuantityType: Optional[QuantityType] = None,
     ):
         """This method creates an XYData object from a sequence of **X - Y** data pairs.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].userData.XYData

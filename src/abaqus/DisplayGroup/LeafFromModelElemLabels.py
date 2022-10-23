@@ -14,7 +14,7 @@ class LeafFromModelElemLabels(Leaf):
     commands.
     The LeafFromModelElemLabels object is derived from the Leaf object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import displayGroupOdbToolset
@@ -38,7 +38,7 @@ class LeafFromModelElemLabels(Leaf):
         """This method creates a Leaf object from a sequence of element labels spanning several
         part instances.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 LeafFromModelElemLabels

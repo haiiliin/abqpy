@@ -10,7 +10,7 @@ from ...UtilityAndView.abaqusConstants import Boolean
 class ConstrainedSketchGeometryArray(List[ConstrainedSketchGeometry]):
     """The ConstrainedSketchGeometryArray is a sequence of ConstrainedSketchGeometry objects.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import sketch

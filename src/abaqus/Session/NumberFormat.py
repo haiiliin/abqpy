@@ -11,7 +11,7 @@ class NumberFormat:
     certain numeric output.This page
     discusses:Access[NumberFormat(...)](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-numberformatpyc.htm?ContextScope=all#simaker-numberformatnumberformatpyc)Members
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import visualization
@@ -50,7 +50,7 @@ class NumberFormat:
     ):
         """This method creates a NumberFormat object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.defaultFieldReportOptions.NumberFormat

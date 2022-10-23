@@ -16,7 +16,7 @@ class OdbDatumCsys:
     you exit Abaqus/CAE. Alternatively, the analysis code can write the datum coordinate
     system to the output database.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import odbAccess
@@ -55,7 +55,7 @@ class OdbDatumCsys:
         """This method creates an OdbDatumCsys object using three points. A datum coordinate system
         created with this method results in a fixed system.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreePoints
@@ -98,7 +98,7 @@ class OdbDatumCsys:
         position of its origin. The last three arguments are given in the form of an OdbMeshNode
         object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreePoints
@@ -140,7 +140,7 @@ class OdbDatumCsys:
         cylindrical coordinate system or to the ϕϕ-axis of a spherical coordinate system. The
         line from the origin to the first node defines the rr-axis.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreePoints
@@ -177,7 +177,7 @@ class OdbDatumCsys:
         orientation of the datum coordinate system without regard to the position of its origin.
         The last argument is given in the form of an OdbMeshNode object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreePoints
@@ -203,7 +203,7 @@ class OdbDatumCsys:
     def DatumCsys(self, name: str, datumCsys: "OdbDatumCsys"):
         """This method copies oneOdbDatumCsys object to a new OdbDatumCsys object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 session.odbs[name].rootAssembly.DatumCsysByThreePoints
@@ -221,4 +221,3 @@ class OdbDatumCsys:
             An :py:class:`~abaqus.Odb.OdbDatumCsys.OdbDatumCsys` object.
         """
         ...
-

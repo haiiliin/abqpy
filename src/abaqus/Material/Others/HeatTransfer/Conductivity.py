@@ -9,7 +9,7 @@ from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 class Conductivity:
     r"""The Conductivity object specifies thermal conductivity.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import material
@@ -20,14 +20,14 @@ class Conductivity:
         The table data for this object are:
 
         - If **type** = ISOTROPIC, the table data specify the following:
-        
+
             - Conductivity, :math:`k`.
             - Temperature, if the data depend on temperature.
             - Value of the first field variable, if the data depend on field variables.
             - Value of the second field variable.
             - Etc.
         - If **type** = ORTHOTROPIC, the table data specify the following:
-        
+
             - :math:`k_{11}`
             - :math:`k_{22}`.
             - :math:`k_{33}`.
@@ -36,7 +36,7 @@ class Conductivity:
             - Value of the second field variable.
             - Etc.
         - If **type** = ANISOTROPIC, the table data specify the following:
-        
+
             - :math:`k_{11}`.
             - :math:`k_{12}`.
             - :math:`k_{22}`.
@@ -63,7 +63,7 @@ class Conductivity:
     ):
         """This method creates a Conductivity object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].materials[name].Conductivity

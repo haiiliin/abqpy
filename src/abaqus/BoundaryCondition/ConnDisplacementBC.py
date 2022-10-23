@@ -5,8 +5,7 @@ from typing_extensions import Literal
 
 from .BoundaryCondition import BoundaryCondition
 from ..Region.Region import Region
-from ..UtilityAndView.abaqusConstants import (Boolean, NOT_APPLICABLE, OFF, SET, SymbolicConstant,
-                                              UNIFORM, UNSET)
+from ..UtilityAndView.abaqusConstants import Boolean, NOT_APPLICABLE, OFF, SET, SymbolicConstant, UNIFORM, UNSET
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -16,7 +15,7 @@ class ConnDisplacementBC(BoundaryCondition):
     boundary condition.
     The ConnDisplacementBC object is derived from the BoundaryCondition object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -80,13 +79,15 @@ class ConnDisplacementBC(BoundaryCondition):
         fixed: Boolean = OFF,
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
     ):
         """This method creates a ConnDisplacementBC object on a wire region. Alternatively, the
         boundary condition may also be applied to a wire set referenced from an assembled
         fastener template model.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConnDisplacementBC
@@ -173,7 +174,9 @@ class ConnDisplacementBC(BoundaryCondition):
         fixed: Boolean = OFF,
         amplitude: str = UNSET,
         distributionType: Literal[C.USER_DEFINED, C.UNIFORM] = UNIFORM,
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
     ):
         """This method modifies the data for an existing ConnDisplacementBC object in the step
         where it is created.
@@ -247,7 +250,9 @@ class ConnDisplacementBC(BoundaryCondition):
         ur2: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
         ur3: Union[Literal[C.SET, C.FREED, C.UNCHANGED], float] = SET,
         amplitude: str = "",
-        buckleCase: Literal[C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING] = NOT_APPLICABLE,
+        buckleCase: Literal[
+            C.STRESS_PERTURBATION, C.NOT_APPLICABLE, C.BUCKLING_MODES, C.BUCKLE, C.PERTURBATION_AND_BUCKLING
+        ] = NOT_APPLICABLE,
     ):
         """This method modifies the propagating data for an existing ConnDisplacementBC object in
         the specified step.

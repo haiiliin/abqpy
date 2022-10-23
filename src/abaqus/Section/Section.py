@@ -21,7 +21,7 @@ class Section(ConnectorSection):
     ) -> TransverseShearBeam:
         """This method creates a TransverseShearBeam object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sections[name].TransverseShearBeam
@@ -53,12 +53,10 @@ class Section(ConnectorSection):
         return transverseShearBeam
 
     @abaqus_method_doc
-    def TransverseShearShell(
-        self, k11: float, k22: float, k12: float
-    ) -> TransverseShearShell:
+    def TransverseShearShell(self, k11: float, k22: float, k12: float) -> TransverseShearShell:
         """This method creates a TransverseShearShell object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sections[name].TransverseShearShell
@@ -78,7 +76,5 @@ class Section(ConnectorSection):
         TransverseShearShell
             A :py:class:`~abaqus.Section.TransverseShearShell.TransverseShearShell` object.
         """
-        self.transverseShear = transverseShearShell = TransverseShearShell(
-            k11, k22, k12
-        )
+        self.transverseShear = transverseShearShell = TransverseShearShell(k11, k22, k12)
         return transverseShearShell

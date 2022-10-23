@@ -5,17 +5,27 @@ from typing_extensions import Literal
 
 from ..Region.Region import Region
 from ..UtilityAndView.SymbolicConstant import abaqusConstants as C
-from ..UtilityAndView.abaqusConstants import (ALL, Boolean,
-                                              DEFAULT, EVERY_TIME_INCREMENT, EXCLUDE,
-                                              INTEGRATION_POINTS, MODEL,
-                                              NODES, OFF, ON, PRESELECT, SPECIFIED)
+from ..UtilityAndView.abaqusConstants import (
+    ALL,
+    Boolean,
+    DEFAULT,
+    EVERY_TIME_INCREMENT,
+    EXCLUDE,
+    INTEGRATION_POINTS,
+    MODEL,
+    NODES,
+    OFF,
+    ON,
+    PRESELECT,
+    SPECIFIED,
+)
 
 
 @abaqus_class_doc
 class FieldOutputRequest:
     """The FieldOutputRequest object defines a field output request.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import step
@@ -28,7 +38,7 @@ class FieldOutputRequest:
         - ENERGY OUTPUT
         - CONTACT OUTPUT
         - ELEMENT OUTPUT
-        - ENERGY OUTPUT        
+        - ENERGY OUTPUT
         - MODAL OUTPUT
         - CONTACT OUTPUT
         - ELEMENT OUTPUT
@@ -57,9 +67,7 @@ class FieldOutputRequest:
         variables: Union[Sequence[str], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
         frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
         modes: Union[Literal[C.ALL], Sequence[int]] = ALL,
-        timeInterval: Union[
-            Literal[C.EVERY_TIME_INCREMENT], float
-        ] = EVERY_TIME_INCREMENT,
+        timeInterval: Union[Literal[C.EVERY_TIME_INCREMENT], float] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         timeMarks: Boolean = OFF,
         boltLoad: str = "",
@@ -77,13 +85,11 @@ class FieldOutputRequest:
         outputAtPlyTop: Boolean = False,
         outputAtPlyMid: Boolean = True,
         outputAtPlyBottom: Boolean = False,
-        position: Literal[
-            C.INTEGRATION_POINTS, C.AVERAGED_AT_NODES, C.CENTROIDAL, C.NODES
-        ] = INTEGRATION_POINTS,
+        position: Literal[C.INTEGRATION_POINTS, C.AVERAGED_AT_NODES, C.CENTROIDAL, C.NODES] = INTEGRATION_POINTS,
     ) -> None:
         """This method creates a FieldOutputRequest object.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].FieldOutputRequest
@@ -228,9 +234,7 @@ class FieldOutputRequest:
         variables: Union[Sequence[str], Literal[C.PRESELECT, C.ALL]] = PRESELECT,
         frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
         modes: Union[Literal[C.ALL], int] = ALL,
-        timeInterval: Union[
-            Literal[C.EVERY_TIME_INCREMENT], float
-        ] = EVERY_TIME_INCREMENT,
+        timeInterval: Union[Literal[C.EVERY_TIME_INCREMENT], float] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         timeMarks: Boolean = OFF,
         boltLoad: str = "",
@@ -248,9 +252,7 @@ class FieldOutputRequest:
         outputAtPlyTop: Boolean = False,
         outputAtPlyMid: Boolean = True,
         outputAtPlyBottom: Boolean = False,
-        position: Literal[
-            C.INTEGRATION_POINTS, C.AVERAGED_AT_NODES, C.CENTROIDAL, NODES
-        ] = INTEGRATION_POINTS,
+        position: Literal[C.INTEGRATION_POINTS, C.AVERAGED_AT_NODES, C.CENTROIDAL, NODES] = INTEGRATION_POINTS,
     ) -> None:
         """This method modifies the data for an existing FieldOutputRequest object in the step
         where it is created.
@@ -339,9 +341,7 @@ class FieldOutputRequest:
         variables: Union[Sequence[str], Literal[C.PRESELECT, C.ALL], None] = None,
         frequency: Union[int, Literal[C.LAST_INCREMENT]] = 1,
         modes: Union[Literal[C.ALL], int] = ALL,
-        timeInterval: Union[
-            Literal[C.EVERY_TIME_INCREMENT], float
-        ] = EVERY_TIME_INCREMENT,
+        timeInterval: Union[Literal[C.EVERY_TIME_INCREMENT], float] = EVERY_TIME_INCREMENT,
         numIntervals: int = 20,
         timePoints: Optional[str] = None,
         timeMarks: Boolean = OFF,

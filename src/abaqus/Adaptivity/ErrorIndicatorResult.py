@@ -8,7 +8,7 @@ class ErrorIndicatorResult(RuleResult):
     """The ErrorIndicatorResult object contains result information corresponding to an error
     indicator variable in a RemeshingRule object for an adaptivity iteration.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import job
@@ -28,7 +28,7 @@ class ErrorIndicatorResult(RuleResult):
         """This method creates an ErrorIndicatorResult with data for an error indicator variable in
         a RemeshingRule for a given adaptivity iteration.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.adaptivityProcesses[name].iterations[i].ruleResults[name].ErrorIndicatorResult

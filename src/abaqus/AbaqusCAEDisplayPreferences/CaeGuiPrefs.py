@@ -8,7 +8,7 @@ class CaeGuiPrefs:
     """The CaeGuiPrefs object contains the details of the graphical preferences in a
     guiPreferences section of the abaqus_2021.gpr file.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import caePrefsAccess
@@ -16,7 +16,7 @@ class CaeGuiPrefs:
     """
 
     #: A String specifying the path to the preferences file.
-    fileName:str = ""
+    fileName: str = ""
 
     @abaqus_method_doc
     def save(self, backupFile: Boolean = True):

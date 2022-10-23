@@ -6,13 +6,11 @@ from .ConstrainedSketchParameter import ConstrainedSketchParameter
 @abaqus_class_doc
 class Parameter(ConstrainedSketchParameter):
     @abaqus_method_doc
-    def __init__(
-        self, name: str, path: str = "", expression: str = "", previous: str = ""
-    ):
+    def __init__(self, name: str, path: str = "", expression: str = "", previous: str = ""):
         """This method creates a parameter and optionally associates a dimension with this
         parameter.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].sketches[name].Parameter

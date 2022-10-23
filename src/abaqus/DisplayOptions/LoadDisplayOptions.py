@@ -53,7 +53,7 @@ class LoadDisplayOptions:
         concentratedConcentrationFlux: str = ON,
     ):
         """This method modifies the LoadDisplayOptions object.
-        
+
         Parameters
         ----------
         concentratedForce

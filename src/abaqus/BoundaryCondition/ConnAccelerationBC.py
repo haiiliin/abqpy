@@ -15,7 +15,7 @@ class ConnAccelerationBC(BoundaryCondition):
     condition.
     The ConnAccelerationBC object is derived from the BoundaryCondition object.
 
-    .. note:: 
+    .. note::
         This object can be accessed by::
 
             import load
@@ -74,7 +74,7 @@ class ConnAccelerationBC(BoundaryCondition):
         boundary condition may also be applied to a wire set referenced from an assembled
         fastener template model.
 
-        .. note:: 
+        .. note::
             This function can be accessed by::
 
                 mdb.models[name].ConnAccelerationBC
