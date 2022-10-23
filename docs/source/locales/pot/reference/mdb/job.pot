@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 14:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -974,6 +974,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying whether the job will be analyzed by Abaqus/Standard or Abaqus/Explicit. Possible values are STANDARD, EXPLICIT, and UNKNOWN.If the object has the type JobFromInputFile, **analysis** = UNKNOWN."
 msgstr ""
 
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:89
 #: ../../docstring of abaqus.Job.Job.Job.getMemoryFromAnalysis:1
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.getMemoryFromAnalysis:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.getMemoryFromAnalysis:1
@@ -1188,19 +1189,27 @@ msgstr ""
 msgid "A SymbolicConstant specifying the parallelization method for Abaqus/Explicit. Possible values are LOOP and DOMAIN. The default value is DOMAIN.  .. versionchanged:: 2017     The default value for parallelizationMethodExplicit is now `DOMAIN`"
 msgstr ""
 
-#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:89
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:93
+msgid "An Int specifying the number of GPUs to use for this analysis if parallel processing is available. Possible values are **numCpus** >= 0. The default value is 0."
+msgstr ""
+
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:96
+msgid "This option specifies the results output format: ODB, SIM, or BOTH. The default value is ODB."
+msgstr ""
+
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:98
 msgid "A :py:class:`~abaqus.Job.JobFromInputFile.JobFromInputFile` object."
 msgstr ""
 
-#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:90
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:99
 msgid ":class:`JobFromInputFile`"
 msgstr ""
 
-#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:92
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:101
 msgid "If the user attempts to provide RESTART as a value to argument type:"
 msgstr ""
 
-#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:93
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:102
 msgid "RESTART of input file job is not currently supported"
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 14:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,7 +84,11 @@ msgstr ""
 #: abaqus.Part.PartBase.PartBase.PartFromSection3DMeshByPlane:14
 #: abaqus.Part.PartBase.PartBase.PartFromSubstructure:13
 #: abaqus.Part.PartModel.PartModel.Part:12
-#: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:12 of
+#: abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:12
+#: abaqus.Region.RegionPart.RegionPart.SetByBoolean:10
+#: abaqus.Region.RegionPart.RegionPart.SetFromColor:16
+#: abaqus.Region.RegionPart.RegionPart.SetFromElementLabels:13
+#: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:13 of
 msgid "A String specifying the repository key."
 msgstr ""
 
@@ -766,7 +770,11 @@ msgstr ""
 #: abaqus.Property.PropertyPart.PropertyPart.unassignMaterialOrientation:4
 #: abaqus.Property.PropertyPart.PropertyPart.unassignRebarOrientation:4
 #: abaqus.Region.RegionPart.RegionPart.EditSkin:5
-#: abaqus.Region.RegionPart.RegionPart.Set:4
+#: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:5
+#: abaqus.Region.RegionPart.RegionPart.SetByBoolean:4
+#: abaqus.Region.RegionPart.RegionPart.SetFromColor:8
+#: abaqus.Region.RegionPart.RegionPart.SetFromElementLabels:4
+#: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:4
 #: abaqus.Region.RegionPart.RegionPart.Skin:5
 #: abaqus.Region.RegionPart.RegionPart.Stringer:5
 #: abaqus.Region.RegionPart.RegionPart.Surface:7 of
@@ -952,7 +960,11 @@ msgstr ""
 #: abaqus.Property.PropertyPart.PropertyPart.unassignMaterialOrientation
 #: abaqus.Property.PropertyPart.PropertyPart.unassignRebarOrientation
 #: abaqus.Region.RegionPart.RegionPart.EditSkin
-#: abaqus.Region.RegionPart.RegionPart.Set
+#: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb
+#: abaqus.Region.RegionPart.RegionPart.SetByBoolean
+#: abaqus.Region.RegionPart.RegionPart.SetFromColor
+#: abaqus.Region.RegionPart.RegionPart.SetFromElementLabels
+#: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels
 #: abaqus.Region.RegionPart.RegionPart.Skin
 #: abaqus.Region.RegionPart.RegionPart.Stringer
 #: abaqus.Region.RegionPart.RegionPart.Surface of
@@ -1099,7 +1111,11 @@ msgstr ""
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation
 #: abaqus.Property.PropertyPart.PropertyPart.SectionAssignment
 #: abaqus.Region.RegionPart.RegionPart.EditSkin
-#: abaqus.Region.RegionPart.RegionPart.Set
+#: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb
+#: abaqus.Region.RegionPart.RegionPart.SetByBoolean
+#: abaqus.Region.RegionPart.RegionPart.SetFromColor
+#: abaqus.Region.RegionPart.RegionPart.SetFromElementLabels
+#: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels
 #: abaqus.Region.RegionPart.RegionPart.Skin
 #: abaqus.Region.RegionPart.RegionPart.Stringer
 #: abaqus.Region.RegionPart.RegionPart.Surface of
@@ -1226,7 +1242,11 @@ msgstr ""
 #: abaqus.Property.PropertyPart.PropertyPart.MaterialOrientation
 #: abaqus.Property.PropertyPart.PropertyPart.SectionAssignment
 #: abaqus.Region.RegionPart.RegionPart.EditSkin
-#: abaqus.Region.RegionPart.RegionPart.Set
+#: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb
+#: abaqus.Region.RegionPart.RegionPart.SetByBoolean
+#: abaqus.Region.RegionPart.RegionPart.SetFromColor
+#: abaqus.Region.RegionPart.RegionPart.SetFromElementLabels
+#: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels
 #: abaqus.Region.RegionPart.RegionPart.Skin
 #: abaqus.Region.RegionPart.RegionPart.Stringer
 #: abaqus.Region.RegionPart.RegionPart.Surface of
@@ -5850,6 +5870,16 @@ msgstr ""
 
 #: ../../None:3:<autosummary>:1
 msgid ""
+":py:obj:`insertElements <abaqus.Part.Part.Part.insertElements>`\\ "
+"\\(faces\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1 abaqus.Part.Part.Part.insertElements:1 of
+msgid "Insert elements on the Part"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ""
 ":py:obj:`InterestingPoint "
 "<abaqus.BasicGeometry.BasicGeometryPart.BasicGeometryPart.InterestingPoint>`\\"
 " \\(edge\\, rule\\)"
@@ -6451,7 +6481,7 @@ msgstr ""
 #: ../../None:34:<autosummary>:1
 msgid ""
 ":py:obj:`seedEdgeByBias <abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias>`\\"
-" \\(biasMethod\\, end1Edges\\, ...\\[\\, ...\\]\\)"
+" \\(\\[biasMethod\\, end1Edges\\, ...\\]\\)"
 msgstr ""
 
 #: ../../None:34:<autosummary>:1 abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:1
@@ -6721,59 +6751,123 @@ msgstr ""
 msgid "This method deletes a rebar orientation assignment."
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ""
 ":py:obj:`Surface <abaqus.Region.RegionPart.RegionPart.Surface>`\\ "
 "\\(\\[side1Faces\\, side2Faces\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ""
 "This method creates a surface from a sequence of objects in a model "
 "database. The surface will apply to the sides specified by the "
 "arguments.For example::."
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ""
 ":py:obj:`Set <abaqus.Region.RegionPart.RegionPart.Set>`\\ "
 "\\(\\[skinFaces\\, skinEdges\\, stringerEdges\\]\\)"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1 abaqus.Region.RegionPart.RegionPart.Set:1 of
-msgid "This method creates a set from a sequence of objects in a model database."
-msgstr ""
-
-#: ../../None:7:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ""
 ":py:obj:`Skin <abaqus.Region.RegionPart.RegionPart.Skin>`\\ \\(name\\[\\,"
 " faces\\, edges\\, elementFaces\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid "This method creates a skin from a sequence of objects in a model database."
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ""
 ":py:obj:`EditSkin <abaqus.Region.RegionPart.RegionPart.EditSkin>`\\ "
 "\\(\\[name\\, faces\\, edges\\, elementFaces\\, ...\\]\\)"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid "This method modifies underlying entities of the selected skin."
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ""
 ":py:obj:`Stringer <abaqus.Region.RegionPart.RegionPart.Stringer>`\\ "
 "\\(name\\[\\, edges\\, elementEdges\\]\\)"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:12:<autosummary>:1
 msgid ""
 "This method creates a stringer from a sequence of objects in a model "
 "database."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ""
+":py:obj:`SetByBoolean "
+"<abaqus.Region.RegionPart.RegionPart.SetByBoolean>`\\ \\(name\\, "
+"sets\\[\\, operation\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+#: abaqus.Region.RegionPart.RegionPart.SetByBoolean:1 of
+msgid ""
+"This method creates a set by performing a boolean operation on two or "
+"more input sets."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ""
+":py:obj:`SetFromColor "
+"<abaqus.Region.RegionPart.RegionPart.SetFromColor>`\\ \\(name\\, color\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ""
+"This method creates a set containing faces of the part marked with a "
+"specified color attribute."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ""
+":py:obj:`SetFromElementLabels "
+"<abaqus.Region.RegionPart.RegionPart.SetFromElementLabels>`\\ \\(name\\, "
+"elementLabels\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+#: abaqus.Region.RegionPart.RegionPart.SetFromElementLabels:1 of
+msgid ""
+"This method creates a set from a sequence of element labels in a model "
+"database."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ""
+":py:obj:`SetFromNodeLabels "
+"<abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels>`\\ \\(name\\, "
+"nodeLabels\\[\\, unsorted\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+#: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:1 of
+msgid ""
+"This method creates a set from a sequence of node labels in a model "
+"database."
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+msgid ""
+":py:obj:`MapSetsFromOdb "
+"<abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb>`\\ \\(odbPath\\, "
+"odbSets\\[\\, partSets\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:12:<autosummary>:1
+#: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:1 of
+msgid ""
+"This method creates sets based on mapping sets from element centroid "
+"locations in an Odb."
 msgstr ""
 
 #: ../../None:9:<autosummary>:1
@@ -10470,7 +10564,8 @@ msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:43
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:13
-#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:18 of
+#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:18
+#: abaqus.Mesh.MeshPart.MeshPart.seedPart:15 of
 msgid ""
 "A SymbolicConstant specifying how closely the seeds must be matched by "
 "the mesh. The default value is FREE. If unspecified, the existing "
@@ -10479,13 +10574,15 @@ msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:47
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:17
-#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:22 of
+#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:22
+#: abaqus.Mesh.MeshPart.MeshPart.seedPart:19 of
 msgid "FREE: The resulting mesh can be finer or coarser than the specified seeds."
 msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:48
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByNumber:18
-#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:23 of
+#: abaqus.Mesh.MeshPart.MeshPart.seedEdgeBySize:23
+#: abaqus.Mesh.MeshPart.MeshPart.seedPart:20 of
 msgid "FINER: The resulting mesh can be finer than the specified seeds."
 msgstr ""
 
@@ -10545,9 +10642,9 @@ msgstr ""
 msgid ""
 "A SymbolicConstant specifying how closely the seeds must be matched by "
 "the mesh. The default value is FREE. If unspecified, the existing "
-"constraint will remain unchanged. Possible values are:FREE: The resulting"
-" mesh can be finer or coarser than the specified seeds.FINER: The "
-"resulting mesh can be finer than the specified seeds."
+"constraint will remain unchanged. Possible values are:  - FREE: The "
+"resulting mesh can be finer or coarser than the specified seeds. - FINER:"
+" The resulting mesh can be finer than the specified seeds."
 msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:5 of
@@ -11545,18 +11642,146 @@ msgstr ""
 msgid ":class:`Skin`"
 msgstr ""
 
-#: abaqus.Region.RegionPart.RegionPart.Set:10 of
+#: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:10 of
 msgid ""
-"Check `Set on help.3ds.com/2023 "
-"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setregpyc.htm?contextscope=all>`__."
+"Check `MapSetsFromOdb on help.3ds.com/2023 "
+"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mapsetsfromodbregpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.Region.RegionPart.RegionPart.Set:14 of
-msgid "**set** -- A :py:class:`~abaqus.Region.Set.Set` object"
+#: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:13 of
+msgid "A String specifying the path to the ODB containing the source sets."
 msgstr ""
 
-#: abaqus.Region.RegionPart.RegionPart.Set:15 of
+#: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:15 of
+msgid "A list of names of sets on the ODB to map."
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:17 of
+msgid "A list of names of sets to construct or use corresponding to the ODB sets."
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:19 of
+msgid ""
+"An enum to specify OVERWRITE, APPEND, INTERSECT, or REMOVE. The default "
+"is OVERWRITE."
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:21 of
+msgid "A :py:class:`~abaqus.Region.Set.Set` object or a tuple of Set objects."
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.MapSetsFromOdb:22
+#: abaqus.Region.RegionPart.RegionPart.SetByBoolean:20
+#: abaqus.Region.RegionPart.RegionPart.SetFromColor:23
+#: abaqus.Region.RegionPart.RegionPart.SetFromElementLabels:25
+#: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:30 of
 msgid ":class:`Set`"
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetByBoolean:12 of
+msgid "A sequence of Set objects."
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetByBoolean:14 of
+msgid ""
+"A SymbolicConstant specifying the boolean operation to perform. Possible "
+"values are UNION, INTERSECTION, and DIFFERENCE. The default value is "
+"UNION. Note that if DIFFERENCE is specified, the order of the given input"
+" sets is important; All sets specified after the first one are subtracted"
+" from the first one."
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetByBoolean:19
+#: abaqus.Region.RegionPart.RegionPart.SetFromColor:22
+#: abaqus.Region.RegionPart.RegionPart.SetFromElementLabels:24
+#: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:29 of
+msgid "A :py:class:`~abaqus.Region.Set.Set` object."
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetFromColor:1 of
+msgid ""
+"This method creates a set containing faces of the part marked with a "
+"specified color attribute. Third-party applications can assign color "
+"attributes to faces, and the color attribute can be imported into Abaqus "
+"from an ACIS file. You can use this method to create sets only on parts; "
+"however, you can access the sets from instances of the parts in the "
+"assembly."
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetFromColor:13 of
+msgid ""
+"Check `SetFromColor on help.3ds.com/2023 "
+"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setfromcolorregpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetFromColor:18 of
+msgid ""
+"A sequence of three Ints specifying the RGB color. Values can range from "
+"0 to 255. The first integer is for red, the second for green, and the "
+"third for blue. For example, a face colored in yellow is identified "
+"by:`color=(255,255,0)`"
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetFromElementLabels:10 of
+msgid ""
+"Check `SetFromElementLabels on help.3ds.com/2023 "
+"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setfromelementlabelsregpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetFromElementLabels:15 of
+msgid ""
+"A sequence of element labels. An element label is a sequence of Int "
+"element identifiers. For example, for a part::      "
+"elementLabels=(2,3,5,7)  For an assembly::      "
+"elementLabels=(('Instance-1', (2,3,5,7)), ('Instance-2', (1,2,3)))`"
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetFromElementLabels:15 of
+msgid ""
+"A sequence of element labels. An element label is a sequence of Int "
+"element identifiers. For example, for a part::"
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetFromElementLabels:20
+#: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:20 of
+msgid "For an assembly::"
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:10 of
+msgid ""
+"Check `SetFromNodeLabels on help.3ds.com/2023 "
+"<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setfromnodelabelsregpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:15 of
+msgid ""
+"A sequence of node labels. A node label is a sequence of Int node "
+"identifiers. For example, for a part::      nodeLabels=(2,3,5,7)  For an "
+"assembly::      nodeLabels=(('Instance-1', (2,3,5,7)), ('Instance-2', "
+"(1,2,3)))`"
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:15 of
+msgid ""
+"A sequence of node labels. A node label is a sequence of Int node "
+"identifiers. For example, for a part::"
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:24 of
+msgid ""
+"A Boolean specifying whether the created set is unsorted. The default "
+"value is False.  .. versionadded:: 2018     The `unsorted` argument was "
+"added."
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:24 of
+msgid ""
+"A Boolean specifying whether the created set is unsorted. The default "
+"value is False."
+msgstr ""
+
+#: abaqus.Region.RegionPart.RegionPart.SetFromNodeLabels:26 of
+msgid "The `unsorted` argument was added."
 msgstr ""
 
 #: abaqus.Region.RegionPart.RegionPart.Skin:1 of
@@ -29409,5 +29634,37 @@ msgstr ""
 #~ ":py:obj:`copyAuxMdbModel "
 #~ "<abaqus.Part.AcisMdb.AcisMdb.copyAuxMdbModel>`\\ "
 #~ "\\(fromName\\[\\, toName\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`seedEdgeByBias "
+#~ "<abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias>`\\ "
+#~ "\\(biasMethod\\, end1Edges\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method creates a set from a"
+#~ " sequence of objects in a model "
+#~ "database."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying how closely "
+#~ "the seeds must be matched by the"
+#~ " mesh. The default value is FREE. "
+#~ "If unspecified, the existing constraint "
+#~ "will remain unchanged. Possible values "
+#~ "are:FREE: The resulting mesh can be "
+#~ "finer or coarser than the specified "
+#~ "seeds.FINER: The resulting mesh can be"
+#~ " finer than the specified seeds."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Set on help.3ds.com/2023 "
+#~ "<https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-setregpyc.htm?contextscope=all>`__."
+#~ msgstr ""
+
+#~ msgid "**set** -- A :py:class:`~abaqus.Region.Set.Set` object"
 #~ msgstr ""
 
