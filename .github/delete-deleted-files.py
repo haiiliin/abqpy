@@ -29,3 +29,4 @@ pr_body = sys.argv[1]
 # Get the list of files that have been deleted and delete them
 for file in re.findall(r"deleted by us:\s+(.+?)\n", pr_body):
     os.remove(file)
+    print(f"Deleted file: {file}")
