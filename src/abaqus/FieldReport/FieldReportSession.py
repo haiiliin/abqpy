@@ -26,10 +26,6 @@ class FieldReportSession(SessionBase):
         variable: Literal[C.ELEMENT_FACE, C.ELEMENT_NODAL, C.SPOS, C.WHOLE_ELEMENT, C.NODAL, C.INTEGRATION_POINT, C.ELEMENT_CENTROID, C.WHOLE_MODEL, C.WHOLE_REGION, C.GENERAL_PARTICLE, C.WHOLE_PART_INSTANCE],
         numericForm: Optional[Literal[C.COMPLEX_PHASE, C.COMPLEX_MAG_AT_ANGLE, C.REAL, C.IMAGINARY, C.COMPLEX_MAGNITUDE]] = None,
         complexAngle: Optional[float] = None,
-<<<<<<< HEAD
-=======
-        stepFrame: Literal[C.ALL, C.SPECIFY] = SPECIFY,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method writes a FieldOutput object to a user-defined ASCII file.
 

@@ -230,12 +230,7 @@ class ShapeTask(OptimizationTask):
     def __init__(
         self,
         name: str,
-<<<<<<< HEAD
-        absoluteStepSizeControl: SymbolicConstant = MINIMUM,
-=======
-        abaqusSensitivities: Boolean = True,
         absoluteStepSizeControl: Literal[C.MINIMUM, C.AVERAGE] = MINIMUM,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         activateDurability: Boolean = ON,
         additionalDurabilityFiles: str = "",
         constrainedLaplacianConvergenceLevel: Literal[C.AGGRESSIVE, C.NORMAL, C.CONSERVATIVE] = NORMAL,
@@ -276,12 +271,7 @@ class ShapeTask(OptimizationTask):
         tetSkew: float = 100,
         triMaxAngle: float = 140,
         triMinAngle: float = 20,
-<<<<<<< HEAD
-        updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
-=======
         updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method creates a ShapeTask object.
 
@@ -443,12 +433,7 @@ class ShapeTask(OptimizationTask):
     @abaqus_method_doc
     def setValues(
         self,
-<<<<<<< HEAD
-        absoluteStepSizeControl: SymbolicConstant = MINIMUM,
-=======
-        abaqusSensitivities: Boolean = True,
         absoluteStepSizeControl: Literal[C.MINIMUM, C.AVERAGE] = MINIMUM,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         activateDurability: Boolean = ON,
         additionalDurabilityFiles: str = "",
         algorithm: Literal[C.CONDITION_BASED_OPTIMIZATION, C.GENERAL_OPTIMIZATION] = CONDITION_BASED_OPTIMIZATION,
@@ -490,12 +475,7 @@ class ShapeTask(OptimizationTask):
         tetSkew: float = 100,
         triMaxAngle: float = 140,
         triMinAngle: float = 20,
-<<<<<<< HEAD
-        updateShapeBasisVectors: SymbolicConstant = EVERY_CYCLE,
-=======
         updateShapeBasisVectors: Literal[C.EVERY_CYCLE, C.FIRST_CYCLE] = EVERY_CYCLE,
-        groupOperator: Boolean = OFF,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method modifies the ShapeTask object.
 

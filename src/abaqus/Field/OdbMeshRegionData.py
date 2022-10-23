@@ -5,12 +5,8 @@ from typing_extensions import Literal
 
 from ..UtilityAndView.abaqusConstants import (Boolean, EXTRAPOLATE_COMPUTE_AVERAGE, FIELD_OUTPUT,
                                               FLOAT, NONE, OFF, ON, REAL, SCALAR, SymbolicConstant,
-<<<<<<< HEAD
-                                              UNDEFINED_POSITION, DEFAULT)
-=======
                                               UNDEFINED_POSITION)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
 
 
 @abaqus_class_doc

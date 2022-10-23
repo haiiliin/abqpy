@@ -44,13 +44,7 @@ class ShapeMemberSize(GeometricRestriction):
         region: Region,
         maxThickness: float = 0,
         minThickness: float = 0,
-<<<<<<< HEAD
-        sizeRestriction: SymbolicConstant = MINIMUM,
-=======
         sizeRestriction: Literal[C.MINIMUM, C.MAXIMUM] = MINIMUM,
-        assignNodeGroupRegion: str = OFF,
-        nodeGroupRegion: str = "",
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ):
         """This method creates a ShapeMemberSize object.
 

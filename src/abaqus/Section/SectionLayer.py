@@ -3,12 +3,8 @@ from typing import Optional
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-<<<<<<< HEAD
-from ..UtilityAndView.abaqusConstants import AXIS_3, ROTATION_NONE, SymbolicConstant, THICKNESS_MAGNITUDE
-=======
 from ..UtilityAndView.abaqusConstants import AXIS_3, ROTATION_NONE, SymbolicConstant
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
 
 
 @abaqus_class_doc
@@ -88,12 +84,8 @@ class SectionLayer:
         numIntPts: int = 3,
         axis: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_3,
         angle: float = 0,
-<<<<<<< HEAD
-        additionalRotationType: SymbolicConstant = ROTATION_NONE,
-        thicknessType: SymbolicConstant = THICKNESS_MAGNITUDE,
-=======
         additionalRotationType: Literal[C.ROTATION_NONE, C.ROTATION_FIELD, C.ROTATION_ANGLE] = ROTATION_NONE,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
+        thicknessType: Literal[C.THICKNESS_MAGNITUDE, C.THICKNESS_DISCRETE_FIELD] = THICKNESS_MAGNITUDE,
         plyName: str = "",
         orientation: Optional[SymbolicConstant] = None,
         additionalRotationField: str = "",

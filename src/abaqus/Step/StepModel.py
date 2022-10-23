@@ -306,11 +306,7 @@ class StepModel(ModelBase):
         response: Literal[C.TRANSIENT, C.STEADY_STATE] = TRANSIENT,
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-<<<<<<< HEAD
-        stabilizationMethod: Optional[SymbolicConstant] = None,
-=======
         stabilizationMethod: Literal[C.DAMPING_FACTOR, C.DISSIPATED_ENERGY_FRACTION, C.NONE] = NONE,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         stabilizationMagnitude: Optional[float] = None,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
@@ -456,11 +452,7 @@ class StepModel(ModelBase):
         response: Literal[C.TRANSIENT, C.STEADY_STATE] = TRANSIENT,
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-<<<<<<< HEAD
-        stabilizationMethod: Optional[SymbolicConstant] = None,
-=======
         stabilizationMethod: Literal[C.DAMPING_FACTOR, C.DISSIPATED_ENERGY_FRACTION, C.NONE] = NONE,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         stabilizationMagnitude: Optional[float] = None,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         maxNumInc: int = 100,
@@ -1187,12 +1179,7 @@ class StepModel(ModelBase):
         convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
         utol: Optional[float] = None,
         timePeriod: float = 1,
-<<<<<<< HEAD
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
-=======
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
-        maxNumInc: int = 100,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
         maxInc: Optional[float] = None,
@@ -2258,11 +2245,7 @@ class StepModel(ModelBase):
         description: str = "",
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-<<<<<<< HEAD
-        stabilizationMethod: Optional[SymbolicConstant] = None,
-=======
         stabilizationMethod: Literal[C.DAMPING_FACTOR, C.DISSIPATED_ENERGY_FRACTION, C.NONE] = NONE,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         stabilizationMagnitude: Optional[float] = None,
         adiabatic: Boolean = OFF,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
@@ -2736,17 +2719,6 @@ class StepModel(ModelBase):
         computeReducedViscousDampingMatrix: Boolean = False,
         evaluateFrequencyDependentProperties: Boolean = False,
         frequency: float = 0,
-<<<<<<< HEAD
-        retainedEigenmodesMethod: Optional[SymbolicConstant] = None,
-        modeRange: Optional[SubstructureGenerateModesArray] = None,
-        frequencyRange: Optional[SubstructureGenerateFrequencyArray] = None,
-        globalDampingField: Optional[SymbolicConstant] = None,
-        alphaDampingRatio: float = 0,
-        betaDampingRatio: float = 0,
-        structuralDampingRatio: float = 0,
-        viscousDampingControl: Optional[SymbolicConstant] = None,
-        structuralDampingControl: Optional[SymbolicConstant] = None,
-=======
         retainedEigenmodesMethod: Literal[C.MODE_RANGE, C.FREQUENCY_RANGE, C.NONE] = NONE,
         modeRange: Optional[SubstructureGenerateModesArray] = None,
         frequencyRange: Optional[SubstructureGenerateFrequencyArray] = None,
@@ -2756,7 +2728,6 @@ class StepModel(ModelBase):
         structuralDampingRatio: float = 0,
         viscousDampingControl: Literal[C.COMBINED, C.NONE, C.FACTOR, C.ELEMENT] = NONE,
         structuralDampingControl: Literal[C.COMBINED, C.NONE, C.FACTOR, C.ELEMENT] = NONE,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
     ) -> SubstructureGenerateStep:
         """This method creates a SubstructureGenerateStep object.
 
@@ -2951,11 +2922,7 @@ class StepModel(ModelBase):
         description: str = "",
         timePeriod: float = 1,
         nlgeom: Boolean = OFF,
-<<<<<<< HEAD
-        stabilizationMethod: Optional[SymbolicConstant] = None,
-=======
         stabilizationMethod: Literal[C.DAMPING_FACTOR, C.DISSIPATED_ENERGY_FRACTION, C.NONE] = NONE,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         stabilizationMagnitude: Optional[float] = None,
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
         matrixSolver: Literal[C.DIRECT, C.ITERATIVE] = DIRECT,

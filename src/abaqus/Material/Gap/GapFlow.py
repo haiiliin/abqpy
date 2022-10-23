@@ -50,7 +50,7 @@ class GapFlow:
         kmax: Optional[float] = None,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
-        type: Literal[C.BINGHAM_PLASTIC, C.POWER_LAW, C.HERSCHEL_BULKLEY, C.NEWTONIAN] = NEWTONIAN,
+        type: Literal[C.POWER_LAW, C.NEWTONIAN] = NEWTONIAN,
     ):
         """This method creates a GapFlow object.
 
@@ -73,13 +73,8 @@ class GapFlow:
         dependencies
             An Int specifying the number of field variable dependencies. The default value is 0.
         type
-<<<<<<< HEAD
             A SymbolicConstant specifying the type of gap flow. Possible values are NEWTONIAN and
             POWER_LAW. The default value is NEWTONIAN.
-=======
-            A SymbolicConstant specifying the type of gap flow. Possible values are NEWTONIAN,
-            POWER_LAW, BINGHAM_PLASTIC, and HERSCHEL_BULKLEY. The default value is NEWTONIAN.
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
 
         Returns
         -------

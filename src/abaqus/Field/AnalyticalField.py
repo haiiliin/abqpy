@@ -7,13 +7,8 @@ from .Field import Field
 from .OdbMeshRegionData import OdbMeshRegionData
 from ..Datum.DatumCsys import DatumCsys
 from ..UtilityAndView.abaqusConstants import (EXTRAPOLATE_COMPUTE_AVERAGE, FIELD_OUTPUT, FLOAT,
-<<<<<<< HEAD
-                                              NONE, OFF, ON, REAL, SCALAR, SymbolicConstant,
-                                              UNDEFINED_POSITION, DEFAULT)
-=======
                                               NONE, OFF, ON, REAL, SCALAR, UNDEFINED_POSITION)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
 
 
 @abaqus_class_doc

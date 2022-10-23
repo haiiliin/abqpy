@@ -56,7 +56,7 @@ class Creep:
     def __init__(
         self,
         table: tuple,
-        law: Literal[C.DARVEAUX, C.HYPERBOLIC_SINE, C.ANAND, C.TIME, C.POWER_LAW, C.USER, C.STRAIN, C.TIME_POWER_LAW, C.DOUBLE_POWER] = STRAIN,
+        law: Literal[C.HYPERBOLIC_SINE, C.TIME, C.POWER_LAW, C.USER, C.STRAIN] = STRAIN,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
         time: Literal[C.TOTAL, C.CREEP] = TOTAL,

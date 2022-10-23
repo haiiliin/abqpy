@@ -6,12 +6,8 @@ from typing_extensions import Literal
 from .QuantityType import QuantityType
 from .XYCurveArray import XYCurveArray
 from ..UtilityAndView.abaqusConstants import (AUTOCOMPUTE, AUTOMATIC, Boolean, LINEAR, ON,
-<<<<<<< HEAD
                                               SymbolicConstant, NONE)
-=======
-                                              SymbolicConstant)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
 
 
 @abaqus_class_doc

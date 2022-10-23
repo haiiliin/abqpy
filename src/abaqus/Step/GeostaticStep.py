@@ -202,12 +202,7 @@ class GeostaticStep(AnalysisStep):
         convertSDI: Literal[C.CONVERT_SDI_OFF, C.PROPAGATED, C.CONVERT_SDI_ON] = PROPAGATED,
         utol: Optional[float] = None,
         timePeriod: float = 1,
-<<<<<<< HEAD
-        timeIncrementationMethod: SymbolicConstant = AUTOMATIC,
-=======
         timeIncrementationMethod: Literal[C.AUTOMATIC, C.FIXED] = AUTOMATIC,
-        maxNumInc: int = 100,
->>>>>>> 9cc45e87 ([typing]: Including remaining `Literal` in all modules (#3004))
         initialInc: Optional[float] = None,
         minInc: Optional[float] = None,
         maxInc: Optional[float] = None,
