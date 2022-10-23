@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 14:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,11 +131,10 @@ msgstr ""
 msgid "This function can be accessed by::"
 msgstr ""
 
-#: abaqus.Assembly.AssemblyBase.AssemblyBase.Instance:9
 #: abaqus.Assembly.AssemblyModel.AssemblyModel.Instance:10 of
 msgid ""
 "Check `Instance on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-instancepyc.htm?contextscope=all>`__."
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-instanceasmpyc.htm?contextscope=all>`__."
 msgstr ""
 
 #: abaqus.Assembly.Assembly.Assembly.ConnectorOrientation
@@ -284,8 +283,8 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyModel.AssemblyModel.convertAllSketches:5 of
 msgid ""
-"Check `Model.convertAllSketches on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all"
+"Check `AssemblyModel.convertAllSketches on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelasmpyc.htm?contextscope=all"
 "#simaker-modelconvertallsketchespyc>`__."
 msgstr ""
 
@@ -326,8 +325,8 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyModel.AssemblyModel.linkInstances:7 of
 msgid ""
-"Check `Model.linkInstances on help.3ds.com/2022 "
-"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all"
+"Check `AssemblyModel.linkInstances on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelasmpyc.htm?contextscope=all"
 "#simaker-modellinkinstancespyc>`__."
 msgstr ""
 
@@ -2861,6 +2860,12 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all>`__."
 msgstr ""
 
+#: abaqus.Assembly.AssemblyBase.AssemblyBase.Instance:9 of
+msgid ""
+"Check `Instance on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-instancepyc.htm?contextscope=all>`__."
+msgstr ""
+
 #: ../../docstring abaqus.Assembly.AssemblyBase.AssemblyBase.Instance:12
 #: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanCut:13
 #: abaqus.Assembly.PartInstance.PartInstance.InstanceFromBooleanMerge:13
@@ -2903,7 +2908,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.copyMeshPattern:6 of
 msgid ""
-"Check `Assembly.copyMeshPattern on help.3ds.com/2022 "
+"Check `AssemblyBase.copyMeshPattern on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblycopymeshpatternpyc>`__."
 msgstr ""
@@ -2949,7 +2954,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.deleteFeatures:4 of
 msgid ""
-"Check `Assembly.deleteFeatures on help.3ds.com/2022 "
+"Check `AssemblyBase.deleteFeatures on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblydeletefeaturespyc>`__."
 msgstr ""
@@ -2976,7 +2981,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.excludeFromSimulation:4 of
 msgid ""
-"Check `Assembly.excludeFromSimulation on help.3ds.com/2022 "
+"Check `AssemblyBase.excludeFromSimulation on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblyexcludefromsimulationpyc>`__."
 msgstr ""
@@ -3003,7 +3008,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getAngle:4 of
 msgid ""
-"Check `Assembly.getAngle on help.3ds.com/2022 "
+"Check `AssemblyBase.getAngle on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblygetanglepyc>`__."
 msgstr ""
@@ -3057,7 +3062,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getCoordinates:4 of
 msgid ""
-"Check `Assembly.getCoordinates on help.3ds.com/2022 "
+"Check `AssemblyBase.getCoordinates on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblygetcoordinatespyc>`__."
 msgstr ""
@@ -3092,7 +3097,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getDistance:8 of
 msgid ""
-"Check `Assembly.getDistance on help.3ds.com/2022 "
+"Check `AssemblyBase.getDistance on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblygetdistancepyc>`__."
 msgstr ""
@@ -3149,8 +3154,8 @@ msgstr ""
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getFacesAndVerticesOfAttachmentLines:6
 #: of
 msgid ""
-"Check `Assembly.getFacesAndVerticesOfAttachmentLines on help.3ds.com/2022"
-" "
+"Check `AssemblyBase.getFacesAndVerticesOfAttachmentLines on "
+"help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblygetfacesandverticesofattachmentlinespyc>`__."
 msgstr ""
@@ -3243,7 +3248,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getMassProperties:6 of
 msgid ""
-"Check `Assembly.getMassProperties on help.3ds.com/2022 "
+"Check `AssemblyBase.getMassProperties on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblygetmasspropertiespyc>`__."
 msgstr ""
@@ -3380,7 +3385,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.getSurfaceSections:5 of
 msgid ""
-"Check `Assembly.getSurfaceSections on help.3ds.com/2022 "
+"Check `AssemblyBase.getSurfaceSections on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblygetsurfacesectionspyc>`__."
 msgstr ""
@@ -3401,7 +3406,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.importCatiaV5File:5 of
 msgid ""
-"Check `Assembly.importCatiaV5File on help.3ds.com/2022 "
+"Check `AssemblyBase.importCatiaV5File on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblyimportcatiav5filepyc>`__."
 msgstr ""
@@ -3428,7 +3433,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.importEafFile:4 of
 msgid ""
-"Check `Assembly.importEafFile on help.3ds.com/2022 "
+"Check `AssemblyBase.importEafFile on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblyimporteaffilepyc>`__."
 msgstr ""
@@ -3441,7 +3446,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.importEnfFile:5 of
 msgid ""
-"Check `Assembly.importEnfFile on help.3ds.com/2022 "
+"Check `AssemblyBase.importEnfFile on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblyimportenffilepyc>`__."
 msgstr ""
@@ -3454,7 +3459,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.importIdeasFile:5 of
 msgid ""
-"Check `Assembly.importIdeasFile on help.3ds.com/2022 "
+"Check `AssemblyBase.importIdeasFile on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblyimportideasfilepyc>`__."
 msgstr ""
@@ -3467,7 +3472,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.importParasolidFile:4 of
 msgid ""
-"Check `Assembly.importParasolidFile on help.3ds.com/2022 "
+"Check `AssemblyBase.importParasolidFile on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblyimportparasolidfilepyc>`__."
 msgstr ""
@@ -3480,7 +3485,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.importProEFile:5 of
 msgid ""
-"Check `Assembly.importProEFile on help.3ds.com/2022 "
+"Check `AssemblyBase.importProEFile on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblyimportproefilepyc>`__."
 msgstr ""
@@ -3511,7 +3516,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.makeDependent:5 of
 msgid ""
-"Check `Assembly.makeDependent on help.3ds.com/2022 "
+"Check `AssemblyBase.makeDependent on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblymakedependentpyc>`__."
 msgstr ""
@@ -3522,7 +3527,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.makeIndependent:5 of
 msgid ""
-"Check `Assembly.makeIndependent on help.3ds.com/2022 "
+"Check `AssemblyBase.makeIndependent on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblymakeindependentpyc>`__."
 msgstr ""
@@ -3549,7 +3554,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.projectReferencesOntoSketch:6 of
 msgid ""
-"Check `Assembly.projectReferencesOntoSketch on help.3ds.com/2022 "
+"Check `AssemblyBase.projectReferencesOntoSketch on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblyprojectreferencesontosketchpyc>`__."
 msgstr ""
@@ -3627,7 +3632,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.resumeFeatures:4 of
 msgid ""
-"Check `Assembly.resumeFeatures on help.3ds.com/2022 "
+"Check `AssemblyBase.resumeFeatures on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblyresumefeaturespyc>`__."
 msgstr ""
@@ -3638,7 +3643,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.rotate:4 of
 msgid ""
-"Check `Assembly.rotate on help.3ds.com/2022 "
+"Check `AssemblyBase.rotate on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblyrotatepyc>`__."
 msgstr ""
@@ -3674,7 +3679,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.setMeshNumberingControl:7 of
 msgid ""
-"Check `Assembly.setMeshNumberingControl on help.3ds.com/2022 "
+"Check `AssemblyBase.setMeshNumberingControl on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblysetmeshnumberingcontrolpyc>`__."
 msgstr ""
@@ -3695,7 +3700,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.setValues:4 of
 msgid ""
-"Check `Assembly.setValues on help.3ds.com/2022 "
+"Check `AssemblyBase.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblysetvaluespyc>`__."
 msgstr ""
@@ -3716,7 +3721,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.smoothNodes:5 of
 msgid ""
-"Check `Assembly.smoothNodes on help.3ds.com/2022 "
+"Check `AssemblyBase.smoothNodes on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblysmoothnodespyc>`__."
 msgstr ""
@@ -3738,7 +3743,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.suppressFeatures:4 of
 msgid ""
-"Check `Assembly.suppressFeatures on help.3ds.com/2022 "
+"Check `AssemblyBase.suppressFeatures on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblysuppressfeaturespyc>`__."
 msgstr ""
@@ -3751,7 +3756,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.translate:4 of
 msgid ""
-"Check `Assembly.translate on help.3ds.com/2022 "
+"Check `AssemblyBase.translate on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblytranslatepyc>`__."
 msgstr ""
@@ -3775,7 +3780,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.unlinkInstances:6 of
 msgid ""
-"Check `Assembly.unlinkInstances on help.3ds.com/2022 "
+"Check `AssemblyBase.unlinkInstances on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblyunlinkinstancespyc>`__."
 msgstr ""
@@ -3801,7 +3806,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.writeAcisFile:5 of
 msgid ""
-"Check `Assembly.writeAcisFile on help.3ds.com/2022 "
+"Check `AssemblyBase.writeAcisFile on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblywriteacisfilepyc>`__."
 msgstr ""
@@ -3822,7 +3827,7 @@ msgstr ""
 
 #: abaqus.Assembly.AssemblyBase.AssemblyBase.writeCADParameters:5 of
 msgid ""
-"Check `Assembly.writeCADParameters on help.3ds.com/2022 "
+"Check `AssemblyBase.writeCADParameters on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
 "#simaker-assemblywritecadparameterspyc>`__."
 msgstr ""
@@ -14241,5 +14246,208 @@ msgstr ""
 #~ ":py:obj:`suppress "
 #~ "<abaqus.Assembly.AssemblyFeature.AssemblyFeature.suppress>`\\ "
 #~ "\\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Model.convertAllSketches on help.3ds.com/2022"
+#~ " "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all"
+#~ "#simaker-modelconvertallsketchespyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Model.linkInstances on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all"
+#~ "#simaker-modellinkinstancespyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.copyMeshPattern on help.3ds.com/2022"
+#~ " "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblycopymeshpatternpyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.deleteFeatures on help.3ds.com/2022"
+#~ " "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblydeletefeaturespyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.excludeFromSimulation on "
+#~ "help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblyexcludefromsimulationpyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.getAngle on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblygetanglepyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.getCoordinates on help.3ds.com/2022"
+#~ " "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblygetcoordinatespyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.getDistance on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblygetdistancepyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.getFacesAndVerticesOfAttachmentLines on"
+#~ " help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblygetfacesandverticesofattachmentlinespyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.getMassProperties on "
+#~ "help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblygetmasspropertiespyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.getSurfaceSections on "
+#~ "help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblygetsurfacesectionspyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.importCatiaV5File on "
+#~ "help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblyimportcatiav5filepyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.importEafFile on help.3ds.com/2022"
+#~ " "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblyimporteaffilepyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.importEnfFile on help.3ds.com/2022"
+#~ " "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblyimportenffilepyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.importIdeasFile on help.3ds.com/2022"
+#~ " "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblyimportideasfilepyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.importParasolidFile on "
+#~ "help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblyimportparasolidfilepyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.importProEFile on help.3ds.com/2022"
+#~ " "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblyimportproefilepyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.makeDependent on help.3ds.com/2022"
+#~ " "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblymakedependentpyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.makeIndependent on help.3ds.com/2022"
+#~ " "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblymakeindependentpyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.projectReferencesOntoSketch on "
+#~ "help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblyprojectreferencesontosketchpyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.resumeFeatures on help.3ds.com/2022"
+#~ " "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblyresumefeaturespyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.rotate on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblyrotatepyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.setMeshNumberingControl on "
+#~ "help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblysetmeshnumberingcontrolpyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.setValues on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblysetvaluespyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.smoothNodes on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblysmoothnodespyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.suppressFeatures on "
+#~ "help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblysuppressfeaturespyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.translate on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblytranslatepyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.unlinkInstances on help.3ds.com/2022"
+#~ " "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblyunlinkinstancespyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.writeAcisFile on help.3ds.com/2022"
+#~ " "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblywriteacisfilepyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Assembly.writeCADParameters on "
+#~ "help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all"
+#~ "#simaker-assemblywritecadparameterspyc>`__."
 #~ msgstr ""
 

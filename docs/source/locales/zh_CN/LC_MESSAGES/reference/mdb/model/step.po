@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-23 14:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -7947,36 +7947,9 @@ msgstr ""
 msgid "This method modifies the AnnealStep object."
 msgstr ""
 
-#: abaqus.Step.AnnealStep.AnnealStep.__init__:9
-#: abaqus.Step.BuckleStep.BuckleStep.__init__:9
-#: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep.__init__:9
-#: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.__init__:9
-#: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep.__init__:9
-#: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep.__init__:9
-#: abaqus.Step.DirectCyclicStep.DirectCyclicStep.__init__:9
-#: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.__init__:9
-#: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep.__init__:9
-#: abaqus.Step.FrequencyStep.FrequencyStep.__init__:9
-#: abaqus.Step.GeostaticStep.GeostaticStep.__init__:9
-#: abaqus.Step.HeatTransferStep.HeatTransferStep.__init__:9
-#: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep.__init__:9
-#: abaqus.Step.MassDiffusionStep.MassDiffusionStep.__init__:9
-#: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep.__init__:9
-#: abaqus.Step.RandomResponseStep.RandomResponseStep.__init__:9
-#: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep.__init__:9
-#: abaqus.Step.SoilsStep.SoilsStep.__init__:9
-#: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep.__init__:9
-#: abaqus.Step.StaticRiksStep.StaticRiksStep.__init__:9
-#: abaqus.Step.StaticStep.StaticStep.__init__:9
-#: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep.__init__:9
-#: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep.__init__:9
-#: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep.__init__:9
-#: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep.__init__:9
-#: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep.__init__:9
-#: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.__init__:9
-#: abaqus.Step.ViscoStep.ViscoStep.__init__:9 of
+#: abaqus.Step.AnnealStep.AnnealStep.__init__:9 of
 msgid ""
-"Check `Step.__init__ on help.3ds.com/2022 "
+"Check `AnnealStep.__init__ on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
 "#simaker-step__init__pyc>`__."
 msgstr ""
@@ -7985,36 +7958,9 @@ msgstr ""
 msgid "An :py:class:`~abaqus.Step.AnnealStep.AnnealStep` object."
 msgstr ""
 
-#: abaqus.Step.AnnealStep.AnnealStep.setValues:4
-#: abaqus.Step.BuckleStep.BuckleStep.setValues:4
-#: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep.setValues:4
-#: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.setValues:4
-#: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep.setValues:4
-#: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep.setValues:4
-#: abaqus.Step.DirectCyclicStep.DirectCyclicStep.setValues:4
-#: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.setValues:4
-#: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep.setValues:4
-#: abaqus.Step.FrequencyStep.FrequencyStep.setValues:4
-#: abaqus.Step.GeostaticStep.GeostaticStep.setValues:4
-#: abaqus.Step.HeatTransferStep.HeatTransferStep.setValues:4
-#: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep.setValues:4
-#: abaqus.Step.MassDiffusionStep.MassDiffusionStep.setValues:4
-#: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep.setValues:4
-#: abaqus.Step.RandomResponseStep.RandomResponseStep.setValues:4
-#: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep.setValues:4
-#: abaqus.Step.SoilsStep.SoilsStep.setValues:4
-#: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep.setValues:4
-#: abaqus.Step.StaticRiksStep.StaticRiksStep.setValues:4
-#: abaqus.Step.StaticStep.StaticStep.setValues:4
-#: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep.setValues:4
-#: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep.setValues:4
-#: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep.setValues:4
-#: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep.setValues:4
-#: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep.setValues:4
-#: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.setValues:4
-#: abaqus.Step.ViscoStep.ViscoStep.setValues:4 of
+#: abaqus.Step.AnnealStep.AnnealStep.setValues:4 of
 msgid ""
-"Check `Step.setValues on help.3ds.com/2022 "
+"Check `AnnealStep.setValues on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
 "#simaker-stepsetvaluespyc>`__."
 msgstr ""
@@ -8244,8 +8190,22 @@ msgstr ""
 msgid "This method modifies the BuckleStep object."
 msgstr ""
 
+#: abaqus.Step.BuckleStep.BuckleStep.__init__:9 of
+msgid ""
+"Check `BuckleStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.BuckleStep.BuckleStep.__init__:48 of
 msgid "A :py:class:`~abaqus.Step.BuckleStep.BuckleStep` object."
+msgstr ""
+
+#: abaqus.Step.BuckleStep.BuckleStep.setValues:4 of
+msgid ""
+"Check `BuckleStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:100
@@ -8499,10 +8459,24 @@ msgstr ""
 msgid "This method modifies the ComplexFrequencyStep object."
 msgstr ""
 
+#: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep.__init__:9 of
+msgid ""
+"Check `ComplexFrequencyStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep.__init__:47 of
 msgid ""
 "A :py:class:`~abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep` "
 "object."
+msgstr ""
+
+#: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep.setValues:4 of
+msgid ""
+"Check `ComplexFrequencyStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:110
@@ -8944,12 +8918,28 @@ msgstr ""
 msgid "This method modifies the CoupledTempDisplacementStep object."
 msgstr ""
 
+#: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.__init__:9
+#: of
+msgid ""
+"Check `CoupledTempDisplacementStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.__init__:87
 #: of
 msgid ""
 "A "
 ":py:class:`~abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep`"
 " object."
+msgstr ""
+
+#: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep.setValues:4
+#: of
+msgid ""
+"Check `CoupledTempDisplacementStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:120
@@ -9239,12 +9229,30 @@ msgstr ""
 msgid "This method modifies the CoupledThermalElectricalStructuralStep object."
 msgstr ""
 
+#: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep.__init__:9
+#: of
+msgid ""
+"Check `CoupledThermalElectricalStructuralStep.__init__ on "
+"help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep.__init__:84
 #: of
 msgid ""
 "A "
 ":py:class:`~abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep`"
 " object."
+msgstr ""
+
+#: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep.setValues:4
+#: of
+msgid ""
+"Check `CoupledThermalElectricalStructuralStep.setValues on "
+"help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:130
@@ -9524,12 +9532,28 @@ msgstr ""
 msgid "This method modifies the CoupledThermalElectricStep object."
 msgstr ""
 
+#: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep.__init__:9
+#: of
+msgid ""
+"Check `CoupledThermalElectricStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep.__init__:67
 #: of
 msgid ""
 "A "
 ":py:class:`~abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep`"
 " object."
+msgstr ""
+
+#: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep.setValues:4
+#: of
+msgid ""
+"Check `CoupledThermalElectricStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:140
@@ -9895,8 +9919,22 @@ msgstr ""
 msgid "This method modifies the DirectCyclicStep object."
 msgstr ""
 
+#: abaqus.Step.DirectCyclicStep.DirectCyclicStep.__init__:9 of
+msgid ""
+"Check `DirectCyclicStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.DirectCyclicStep.DirectCyclicStep.__init__:90 of
 msgid "A :py:class:`~abaqus.Step.DirectCyclicStep.DirectCyclicStep` object."
+msgstr ""
+
+#: abaqus.Step.DirectCyclicStep.DirectCyclicStep.setValues:4 of
+msgid ""
+"Check `DirectCyclicStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:150
@@ -10091,10 +10129,24 @@ msgstr ""
 msgid "This method modifies the EmagTimeHarmonicStep object."
 msgstr ""
 
+#: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.__init__:9 of
+msgid ""
+"Check `EmagTimeHarmonicStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.__init__:25 of
 msgid ""
 "An :py:class:`~abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep` "
 "object."
+msgstr ""
+
+#: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep.setValues:4 of
+msgid ""
+"Check `EmagTimeHarmonicStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:160
@@ -10397,6 +10449,13 @@ msgstr ""
 msgid "This method modifies the ExplicitDynamicsStep object."
 msgstr ""
 
+#: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep.__init__:9 of
+msgid ""
+"Check `ExplicitDynamicsStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep.__init__:53
 #: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep.setValues:40
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.__init__:48
@@ -10443,6 +10502,13 @@ msgstr ""
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.improvedDtMethod:7
 #: of
 msgid "The `improvedDtMethod` attribute was added."
+msgstr ""
+
+#: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep.setValues:4 of
+msgid ""
+"Check `ExplicitDynamicsStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:170
@@ -10822,6 +10888,13 @@ msgstr ""
 msgid "This method modifies the FrequencyStep object."
 msgstr ""
 
+#: abaqus.Step.FrequencyStep.FrequencyStep.__init__:9 of
+msgid ""
+"Check `FrequencyStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.FrequencyStep.FrequencyStep.__init__:110 of
 msgid "A :py:class:`~abaqus.Step.FrequencyStep.FrequencyStep` object."
 msgstr ""
@@ -10837,6 +10910,13 @@ msgstr ""
 msgid ""
 "None or a tuple of Strings specifying the name of a region for which "
 "residual modes are requested. The default value is None."
+msgstr ""
+
+#: abaqus.Step.FrequencyStep.FrequencyStep.setValues:4 of
+msgid ""
+"Check `FrequencyStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:180
@@ -11089,8 +11169,22 @@ msgstr ""
 msgid "This method modifies the GeostaticStep object."
 msgstr ""
 
+#: abaqus.Step.GeostaticStep.GeostaticStep.__init__:9 of
+msgid ""
+"Check `GeostaticStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.GeostaticStep.GeostaticStep.__init__:67 of
 msgid "A :py:class:`~abaqus.Step.GeostaticStep.GeostaticStep` object."
+msgstr ""
+
+#: abaqus.Step.GeostaticStep.GeostaticStep.setValues:4 of
+msgid ""
+"Check `GeostaticStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../docstring abaqus.Step.GeostaticStep.GeostaticStep.timePeriod of
@@ -11381,8 +11475,22 @@ msgstr ""
 msgid "This method modifies the HeatTransferStep object."
 msgstr ""
 
+#: abaqus.Step.HeatTransferStep.HeatTransferStep.__init__:9 of
+msgid ""
+"Check `HeatTransferStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.HeatTransferStep.HeatTransferStep.__init__:75 of
 msgid "A :py:class:`~abaqus.Step.HeatTransferStep.HeatTransferStep` object."
+msgstr ""
+
+#: abaqus.Step.HeatTransferStep.HeatTransferStep.setValues:4 of
+msgid ""
+"Check `HeatTransferStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:200
@@ -11744,10 +11852,24 @@ msgstr ""
 msgid "This method modifies the ImplicitDynamicsStep object."
 msgstr ""
 
+#: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep.__init__:9 of
+msgid ""
+"Check `ImplicitDynamicsStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep.__init__:94 of
 msgid ""
 "An :py:class:`~abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep` "
 "object."
+msgstr ""
+
+#: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep.setValues:4 of
+msgid ""
+"Check `ImplicitDynamicsStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:210
@@ -12117,8 +12239,22 @@ msgstr ""
 msgid "This method modifies the MassDiffusionStep object."
 msgstr ""
 
+#: abaqus.Step.MassDiffusionStep.MassDiffusionStep.__init__:9 of
+msgid ""
+"Check `MassDiffusionStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.MassDiffusionStep.MassDiffusionStep.__init__:58 of
 msgid "A :py:class:`~abaqus.Step.MassDiffusionStep.MassDiffusionStep` object."
+msgstr ""
+
+#: abaqus.Step.MassDiffusionStep.MassDiffusionStep.setValues:4 of
+msgid ""
+"Check `MassDiffusionStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:230
@@ -12365,8 +12501,22 @@ msgstr ""
 msgid "This method modifies the ModalDynamicsStep object."
 msgstr ""
 
+#: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep.__init__:9 of
+msgid ""
+"Check `ModalDynamicsStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep.__init__:42 of
 msgid "A :py:class:`~abaqus.Step.ModalDynamicsStep.ModalDynamicsStep` object."
+msgstr ""
+
+#: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep.setValues:4 of
+msgid ""
+"Check `ModalDynamicsStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:240
@@ -12595,8 +12745,22 @@ msgstr ""
 msgid "This method modifies the RandomResponseStep object."
 msgstr ""
 
+#: abaqus.Step.RandomResponseStep.RandomResponseStep.__init__:9 of
+msgid ""
+"Check `RandomResponseStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.RandomResponseStep.RandomResponseStep.__init__:41 of
 msgid "A :py:class:`~abaqus.Step.RandomResponseStep.RandomResponseStep` object."
+msgstr ""
+
+#: abaqus.Step.RandomResponseStep.RandomResponseStep.setValues:4 of
+msgid ""
+"Check `RandomResponseStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:250
@@ -12842,10 +13006,24 @@ msgstr ""
 msgid "This method modifies the ResponseSpectrumStep object."
 msgstr ""
 
+#: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep.__init__:9 of
+msgid ""
+"Check `ResponseSpectrumStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep.__init__:42 of
 msgid ""
 "A :py:class:`~abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep` "
 "object."
+msgstr ""
+
+#: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep.setValues:4 of
+msgid ""
+"Check `ResponseSpectrumStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:260
@@ -13115,8 +13293,22 @@ msgstr ""
 msgid "This method modifies the SoilsStep object."
 msgstr ""
 
+#: abaqus.Step.SoilsStep.SoilsStep.__init__:9 of
+msgid ""
+"Check `SoilsStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.SoilsStep.SoilsStep.__init__:95 of
 msgid "A :py:class:`~abaqus.Step.SoilsStep.SoilsStep` object."
+msgstr ""
+
+#: abaqus.Step.SoilsStep.SoilsStep.setValues:4 of
+msgid ""
+"Check `SoilsStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:270
@@ -13307,12 +13499,28 @@ msgstr ""
 msgid "This method modifies the StaticLinearPerturbationStep object."
 msgstr ""
 
+#: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep.__init__:9
+#: of
+msgid ""
+"Check `StaticLinearPerturbationStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep.__init__:28
 #: of
 msgid ""
 "A "
 ":py:class:`~abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep`"
 " object."
+msgstr ""
+
+#: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep.setValues:4
+#: of
+msgid ""
+"Check `StaticLinearPerturbationStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:280
@@ -13642,8 +13850,22 @@ msgstr ""
 msgid "This method modifies the StaticRiksStep object."
 msgstr ""
 
+#: abaqus.Step.StaticRiksStep.StaticRiksStep.__init__:9 of
+msgid ""
+"Check `StaticRiksStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.StaticRiksStep.StaticRiksStep.__init__:85 of
 msgid "A :py:class:`~abaqus.Step.StaticRiksStep.StaticRiksStep` object."
+msgstr ""
+
+#: abaqus.Step.StaticRiksStep.StaticRiksStep.setValues:4 of
+msgid ""
+"Check `StaticRiksStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:290
@@ -13907,12 +14129,26 @@ msgstr ""
 msgid "This method modifies the StaticStep object."
 msgstr ""
 
+#: abaqus.Step.StaticStep.StaticStep.__init__:9 of
+msgid ""
+"Check `StaticStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.StaticStep.StaticStep.__init__:94 of
 msgid "A :py:class:`~abaqus.Step.StaticStep.StaticStep` object."
 msgstr ""
 
 #: abaqus.Step.StaticStep.StaticStep.__init__:95 of
 msgid ":class:`StaticStep`"
+msgstr ""
+
+#: abaqus.Step.StaticStep.StaticStep.setValues:4 of
+msgid ""
+"Check `StaticStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:300
@@ -14133,10 +14369,24 @@ msgstr ""
 msgid "This method modifies the SteadyStateDirectStep object."
 msgstr ""
 
+#: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep.__init__:9 of
+msgid ""
+"Check `SteadyStateDirectStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep.__init__:40 of
 msgid ""
 "A :py:class:`~abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep` "
 "object."
+msgstr ""
+
+#: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep.setValues:4 of
+msgid ""
+"Check `SteadyStateDirectStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:310
@@ -14367,10 +14617,24 @@ msgstr ""
 msgid "This method modifies the SteadyStateModalStep object."
 msgstr ""
 
+#: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep.__init__:9 of
+msgid ""
+"Check `SteadyStateModalStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep.__init__:44 of
 msgid ""
 "A :py:class:`~abaqus.Step.SteadyStateModalStep.SteadyStateModalStep` "
 "object."
+msgstr ""
+
+#: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep.setValues:4 of
+msgid ""
+"Check `SteadyStateModalStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:320
@@ -14614,11 +14878,25 @@ msgstr ""
 msgid "This method modifies the SteadyStateSubspaceStep object."
 msgstr ""
 
+#: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep.__init__:9 of
+msgid ""
+"Check `SteadyStateSubspaceStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep.__init__:50 of
 msgid ""
 "A "
 ":py:class:`~abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep` "
 "object."
+msgstr ""
+
+#: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep.setValues:4 of
+msgid ""
+"Check `SteadyStateSubspaceStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:330
@@ -14836,10 +15114,24 @@ msgstr ""
 msgid "This method modifies the SubspaceDynamicsStep object."
 msgstr ""
 
+#: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep.__init__:9 of
+msgid ""
+"Check `SubspaceDynamicsStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep.__init__:38 of
 msgid ""
 "A :py:class:`~abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep` "
 "object."
+msgstr ""
+
+#: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep.setValues:4 of
+msgid ""
+"Check `SubspaceDynamicsStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:340
@@ -15152,11 +15444,25 @@ msgstr ""
 msgid "This method modifies the SubstructureGenerateStep object."
 msgstr ""
 
+#: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep.__init__:9 of
+msgid ""
+"Check `SubstructureGenerateStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep.__init__:72 of
 msgid ""
 "A "
 ":py:class:`~abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep`"
 " object."
+msgstr ""
+
+#: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep.setValues:4 of
+msgid ""
+"Check `SubstructureGenerateStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../docstring
@@ -15405,12 +15711,28 @@ msgstr ""
 msgid "This method modifies the TempDisplacementDynamicsStep object."
 msgstr ""
 
+#: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.__init__:9
+#: of
+msgid ""
+"Check `TempDisplacementDynamicsStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.__init__:57
 #: of
 msgid ""
 "A "
 ":py:class:`~abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep`"
 " object."
+msgstr ""
+
+#: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep.setValues:4
+#: of
+msgid ""
+"Check `TempDisplacementDynamicsStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #: ../../reference/mdb/model/step.rst:360
@@ -15649,8 +15971,22 @@ msgstr ""
 msgid "This method modifies the ViscoStep object."
 msgstr ""
 
+#: abaqus.Step.ViscoStep.ViscoStep.__init__:9 of
+msgid ""
+"Check `ViscoStep.__init__ on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-step__init__pyc>`__."
+msgstr ""
+
 #: abaqus.Step.ViscoStep.ViscoStep.__init__:87 of
 msgid "A :py:class:`~abaqus.Step.ViscoStep.ViscoStep` object."
+msgstr ""
+
+#: abaqus.Step.ViscoStep.ViscoStep.setValues:4 of
+msgid ""
+"Check `ViscoStep.setValues on help.3ds.com/2022 "
+"<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+"#simaker-stepsetvaluespyc>`__."
 msgstr ""
 
 #~ msgid ""
@@ -19141,5 +19477,17 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid ":py:obj:`suppress <abaqus.Step.ViscoStep.ViscoStep.suppress>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Step.__init__ on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+#~ "#simaker-step__init__pyc>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `Step.setValues on help.3ds.com/2022 "
+#~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-steppyc.htm?contextscope=all"
+#~ "#simaker-stepsetvaluespyc>`__."
 #~ msgstr ""
 
