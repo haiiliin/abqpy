@@ -1,10 +1,12 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .ContactControl import ContactControl
 from ..UtilityAndView.abaqusConstants import (Boolean, COMPUTE, DEFAULT, NONE, OFF, RELATIVE,
                                               SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -133,22 +135,22 @@ class StdContactControl(ContactControl):
         self,
         name: str,
         stiffnessScaleFactor: float = 1,
-        penetrationTolChoice: SymbolicConstant = RELATIVE,
+        penetrationTolChoice: Literal[C.RELATIVE, C.ABSOLUTE] = RELATIVE,
         relativePenetrationTolerance: Optional[float] = None,
         absolutePenetrationTolerance: Optional[float] = None,
-        frictionOnset: Optional[SymbolicConstant] = None,
+        frictionOnset: Optional[Literal[C.IMMEDIATE, C.DELAYED]] = None,
         automaticTolerances: Boolean = OFF,
         maxchp: int = 0,
         perrmx: float = 0,
         uerrmx: float = 0,
-        stabilizeChoice: SymbolicConstant = NONE,
+        stabilizeChoice: Literal[C.AUTOMATIC, C.NONE, C.COEFFICIENT] = NONE,
         dampFactor: float = 1,
         dampCoef: float = 0,
         tangFraction: float = 1,
         eosFraction: float = 0,
-        zeroDampingChoice: SymbolicConstant = COMPUTE,
+        zeroDampingChoice: Literal[C.COMPUTE, C.AUTOMATIC, C.SPECIFY, C.COEFFICIENT] = COMPUTE,
         zeroDamping: Optional[float] = None,
-        enforceWithLagrangeMultipliers: SymbolicConstant = DEFAULT,
+        enforceWithLagrangeMultipliers: Literal[C.ENFORCEMENT_OFF, C.DEFAULT, C.ENFORCEMENT_ON] = DEFAULT,
     ):
         """This method creates an StdContactControl object.
 
@@ -259,22 +261,22 @@ class StdContactControl(ContactControl):
     def setValues(
         self,
         stiffnessScaleFactor: float = 1,
-        penetrationTolChoice: SymbolicConstant = RELATIVE,
+        penetrationTolChoice: Literal[C.RELATIVE, C.ABSOLUTE] = RELATIVE,
         relativePenetrationTolerance: Optional[float] = None,
         absolutePenetrationTolerance: Optional[float] = None,
-        frictionOnset: Optional[SymbolicConstant] = None,
+        frictionOnset: Optional[Literal[C.IMMEDIATE, C.DELAYED]] = None,
         automaticTolerances: Boolean = OFF,
         maxchp: int = 0,
         perrmx: float = 0,
         uerrmx: float = 0,
-        stabilizeChoice: SymbolicConstant = NONE,
+        stabilizeChoice: Literal[C.AUTOMATIC, C.NONE, C.COEFFICIENT] = NONE,
         dampFactor: float = 1,
         dampCoef: float = 0,
         tangFraction: float = 1,
         eosFraction: float = 0,
-        zeroDampingChoice: SymbolicConstant = COMPUTE,
+        zeroDampingChoice: Literal[C.COMPUTE, C.AUTOMATIC, C.SPECIFY, C.COEFFICIENT] = COMPUTE,
         zeroDamping: Optional[float] = None,
-        enforceWithLagrangeMultipliers: SymbolicConstant = DEFAULT,
+        enforceWithLagrangeMultipliers: Literal[C.ENFORCEMENT_OFF, C.DEFAULT, C.ENFORCEMENT_ON] = DEFAULT,
     ):
         """This method modifies the StdContactControl object.
 

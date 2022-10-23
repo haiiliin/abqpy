@@ -1,8 +1,10 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import Boolean, ENGINEERING, NO_LIMIT, OFF, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import Boolean, ENGINEERING, NO_LIMIT, OFF
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -27,8 +29,8 @@ class ProbeReport:
         options: Optional[str] = None,
         numColumns: int = 80,
         numDigits: int = 6,
-        numFormat: SymbolicConstant = ENGINEERING,
-        pageWidth: SymbolicConstant = NO_LIMIT,
+        numFormat: Literal[C.AUTOMATIC, C.ENGINEERING, C.SCIENTIFIC] = ENGINEERING,
+        pageWidth: Literal[C.SPECIFY, C.NO_LIMIT] = NO_LIMIT,
         printTotal: Boolean = OFF,
         printMinMax: Boolean = OFF,
     ):

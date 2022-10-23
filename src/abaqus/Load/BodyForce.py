@@ -1,10 +1,12 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .Load import Load
 from ..Region.Region import Region
 from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNIFORM, UNSET
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -45,7 +47,7 @@ class BodyForce(Load):
         createStepName: str,
         region: Region,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         comp1: Optional[float] = None,
         comp2: Optional[float] = None,
         comp3: Optional[float] = None,
@@ -97,7 +99,7 @@ class BodyForce(Load):
     def setValues(
         self,
         field: str = "",
-        distributionType: SymbolicConstant = UNIFORM,
+        distributionType: Literal[C.USER_DEFINED, C.FIELD, C.UNIFORM] = UNIFORM,
         comp1: Optional[float] = None,
         comp2: Optional[float] = None,
         comp3: Optional[float] = None,
@@ -134,9 +136,9 @@ class BodyForce(Load):
     def setValuesInStep(
         self,
         stepName: str,
-        comp1: Union[SymbolicConstant, float] = ...,
-        comp2: Union[SymbolicConstant, float] = ...,
-        comp3: Union[SymbolicConstant, float] = ...,
+        comp1: Union[Literal[C.UNCHANGED], float] = ...,
+        comp2: Union[Literal[C.UNCHANGED], float] = ...,
+        comp3: Union[Literal[C.UNCHANGED], float] = ...,
         amplitude: str = "",
     ):
         """This method modifies the propagating data for an existing BodyForce object in the

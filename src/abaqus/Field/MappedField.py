@@ -1,11 +1,13 @@
 from typing import Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AnalyticalField import AnalyticalField
 from .OdbMeshRegionData import OdbMeshRegionData
 from ..UtilityAndView.abaqusConstants import (Boolean, OFF, POINT, RELATIVE, SURFACE,
                                               SymbolicConstant, XYPLANE, XYZ)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -112,13 +114,13 @@ class MappedField(AnalyticalField):
     def __init__(
         self,
         name: str,
-        regionType: SymbolicConstant = POINT,
+        regionType: Literal[C.MESH, C.POINT, C.ODB] = POINT,
         partLevelData: Boolean = OFF,
-        pointDataFormat: SymbolicConstant = XYZ,
-        gridPointPlane: SymbolicConstant = XYPLANE,
+        pointDataFormat: Literal[C.XYZ, C.GRID] = XYZ,
+        gridPointPlane: Literal[C.XYPLANE, C.YZPLANE, C.XZPLANE] = XYPLANE,
         defaultUnMappedValue: float = 0,
-        mappingAlgorithm: SymbolicConstant = SURFACE,
-        searchTolType: SymbolicConstant = RELATIVE,
+        mappingAlgorithm: Literal[C.SURFACE, C.VOLUMETRIC] = SURFACE,
+        searchTolType: Literal[C.RELATIVE, C.ABSOLUTE] = RELATIVE,
         boundarySearchTol: float = 0,
         neighborhoodSearchTol: float = 1000000,
         negativeNormalSearchTol: float = 0,
@@ -220,13 +222,13 @@ class MappedField(AnalyticalField):
     @abaqus_method_doc
     def setValues(
         self,
-        regionType: SymbolicConstant = POINT,
+        regionType: Literal[C.MESH, C.POINT, C.ODB] = POINT,
         partLevelData: Boolean = OFF,
-        pointDataFormat: SymbolicConstant = XYZ,
-        gridPointPlane: SymbolicConstant = XYPLANE,
+        pointDataFormat: Literal[C.XYZ, C.GRID] = XYZ,
+        gridPointPlane: Literal[C.XYPLANE, C.YZPLANE, C.XZPLANE] = XYPLANE,
         defaultUnMappedValue: float = 0,
-        mappingAlgorithm: SymbolicConstant = SURFACE,
-        searchTolType: SymbolicConstant = RELATIVE,
+        mappingAlgorithm: Literal[C.SURFACE, C.VOLUMETRIC] = SURFACE,
+        searchTolType: Literal[C.RELATIVE, C.ABSOLUTE] = RELATIVE,
         boundarySearchTol: float = 0,
         neighborhoodSearchTol: float = 1000000,
         negativeNormalSearchTol: float = 0,

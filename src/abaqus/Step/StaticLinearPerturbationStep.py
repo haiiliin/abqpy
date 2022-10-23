@@ -1,6 +1,7 @@
 from typing import Dict, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AnalysisStep import AnalysisStep
 from ..Adaptivity.AdaptiveMeshConstraintState import AdaptiveMeshConstraintState
@@ -17,6 +18,7 @@ from ..StepOutput.HistoryOutputRequestState import HistoryOutputRequestState
 from ..StepOutput.Monitor import Monitor
 from ..StepOutput.Restart import Restart
 from ..UtilityAndView.abaqusConstants import Boolean, DIRECT, OFF, SOLVER_DEFAULT, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -146,8 +148,8 @@ class StaticLinearPerturbationStep(AnalysisStep):
         name: str,
         previous: str,
         description: str = "",
-        matrixSolver: SymbolicConstant = DIRECT,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
+        matrixSolver: Literal[C.DIRECT, C.ITERATIVE] = DIRECT,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
         maintainAttributes: Boolean = False,
     ):
         """This method creates a StaticLinearPerturbationStep object.
@@ -191,8 +193,8 @@ class StaticLinearPerturbationStep(AnalysisStep):
     def setValues(
         self,
         description: str = "",
-        matrixSolver: SymbolicConstant = DIRECT,
-        matrixStorage: SymbolicConstant = SOLVER_DEFAULT,
+        matrixSolver: Literal[C.DIRECT, C.ITERATIVE] = DIRECT,
+        matrixStorage: Literal[C.SYMMETRIC, C.SOLVER_DEFAULT, C.UNSYMMETRIC] = SOLVER_DEFAULT,
     ):
         """This method modifies the StaticLinearPerturbationStep object.
 

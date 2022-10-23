@@ -1,8 +1,10 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from ..Region.Set import Set
 from ..UtilityAndView.abaqusConstants import (Boolean, FROM_SECTION, OFF, SINGLE_VALUE,
                                               SymbolicConstant)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -56,9 +58,9 @@ class SectionAssignment:
         self,
         region: Set,
         sectionName: str,
-        thicknessAssignment: SymbolicConstant = FROM_SECTION,
+        thicknessAssignment: Literal[C.FROM_SECTION, C.FROM_GEOMETRY] = FROM_SECTION,
         offset: float = 0,
-        offsetType: SymbolicConstant = SINGLE_VALUE,
+        offsetType: Literal[C.TOP_SURFACE, C.MIDDLE_SURFACE, C.BOTTOM_SURFACE, C.SINGLE_VALUE, C.FROM_GEOMETRY, C.OFFSET_FIELD] = SINGLE_VALUE,
         offsetField: str = "",
     ):
         """This method creates a SectionAssignment object.

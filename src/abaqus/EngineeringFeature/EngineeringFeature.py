@@ -1,6 +1,7 @@
 from typing import Union, Optional
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
 from .AssembledFastener import AssembledFastener
 from .ContourIntegral import ContourIntegral
@@ -18,7 +19,8 @@ from ..Region.Region import Region
 from ..Region.RegionArray import RegionArray
 from ..UtilityAndView.abaqusConstants import (ALL, AXIS_1, Boolean, CONNECTOR, CONTINUUM, DEFAULT,
                                               FACETOFACE, MASS_PROPORTIONAL, MODEL, NONE, NORMALS,
-                                              OFF, ON, STEP, SymbolicConstant, UNIFORM)
+                                              OFF, ON, STEP, UNIFORM)
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -33,7 +35,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         templateSurfaces: tuple,
         assignedSurfaces: tuple,
         propertyPrefix: str,
-        orientMethod: SymbolicConstant = NORMALS,
+        orientMethod: Literal[C.NORMALS, C.CSYS] = NORMALS,
         localCsys: Optional[int] = None,
         scriptName: str = "",
     ) -> AssembledFastener:
@@ -106,7 +108,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         name: str,
         crackFront: RegionArray,
         crackTip: RegionArray,
-        extensionDirectionMethod: SymbolicConstant,
+        extensionDirectionMethod: Literal[C.Q_VECTORS, C.CRACK_NORMAL],
         symmetric: Boolean = OFF,
         listOfRegions: Boolean = OFF,
         crackFrontName: str = "",
@@ -114,7 +116,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         crackNormal: tuple = (),
         qVectors: tuple = (),
         midNodePosition: float = 0,
-        collapsedElementAtTip: SymbolicConstant = NONE,
+        collapsedElementAtTip: Literal[C.DUPLICATE_NODES, C.SINGLE_NODE, C.NONE] = NONE,
     ) -> ContourIntegral:
         """This method creates a ContourIntegral object. Although the constructor is available both
         for parts and for the assembly, ContourIntegral objects are currently supported only
@@ -201,7 +203,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         name: str,
         initiationStep: str,
         surfToSurfInteraction: str,
-        debondingForceAmplitude: SymbolicConstant = STEP,
+        debondingForceAmplitude: Literal[C.STEP, C.RAMP] = STEP,
         printToDATFrequency: int = 1,
     ) -> DebondVCCT:
         """This method creates a DebondVCCT object. Although the constructor is available both for
@@ -250,12 +252,12 @@ class EngineeringFeature(EngineeringFeatureBase):
         self,
         name: str,
         region: Region,
-        influenceRadius: Union[SymbolicConstant, float],
+        influenceRadius: Union[Literal[C.WHOLE_SURFACE], float],
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
-        coupling: SymbolicConstant = CONTINUUM,
-        weightingMethod: SymbolicConstant = UNIFORM,
+        coupling: Literal[C.STRUCTURAL, C.CONTINUUM] = CONTINUUM,
+        weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
         localCsys: Optional[int] = None,
     ) -> DiscreteFastener:
         """This method creates a DiscreteFastener object. Although the constructor is available
@@ -366,9 +368,9 @@ class EngineeringFeature(EngineeringFeatureBase):
         self,
         name: str,
         region: Region,
-        units: SymbolicConstant,
+        units: Literal[C.TOTAL_MASS, C.MASS_PER_LENGTH, C.MASS_PER_AREA, C.MASS_PER_VOLUME],
         magnitude: float,
-        distribution: SymbolicConstant = MASS_PROPORTIONAL,
+        distribution: Literal[C.TOTAL_MASS, C.MASS_PROPORTIONAL, C.VOLUME_PROPORTIONAL] = MASS_PROPORTIONAL,
     ) -> NonstructuralMass:
         """This method creates a NonstructuralMass object.
 
@@ -415,23 +417,23 @@ class EngineeringFeature(EngineeringFeatureBase):
         ur1: Boolean = ON,
         ur2: Boolean = ON,
         ur3: Boolean = ON,
-        attachmentMethod: SymbolicConstant = FACETOFACE,
-        influenceRadius: Union[SymbolicConstant, float] = DEFAULT,
-        searchRadius: Union[SymbolicConstant, float] = DEFAULT,
-        maximumLayers: SymbolicConstant = ALL,
-        coupling: SymbolicConstant = CONTINUUM,
-        weightingMethod: SymbolicConstant = UNIFORM,
+        attachmentMethod: Literal[C.FACETOEDGE, C.EDGETOFACE, C.EDGETOEDGE, C.FACETOFACE] = FACETOFACE,
+        influenceRadius: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        searchRadius: Union[Literal[C.DEFAULT], float] = DEFAULT,
+        maximumLayers: Literal[C.ALL] = ALL,
+        coupling: Literal[C.STRUCTURAL, C.CONTINUUM] = CONTINUUM,
+        weightingMethod: Literal[C.QUADRATIC, C.UNIFORM, C.CUBIC, C.LINEAR] = UNIFORM,
         additionalMass: float = 0,
         adjustOrientation: Boolean = ON,
         localCsys: Optional[int] = None,
-        connectionType: SymbolicConstant = CONNECTOR,
+        connectionType: Literal[C.CONNECTOR, C.BEAM_MPC] = CONNECTOR,
         sectionName: str = "",
         connectorOrientationLocalCsys1: Optional[int] = None,
-        axis1: SymbolicConstant = AXIS_1,
+        axis1: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle1: float = 0,
         orient2SameAs1: Boolean = ON,
         connectorOrientationLocalCsys2: Optional[int] = None,
-        axis2: SymbolicConstant = AXIS_1,
+        axis2: Literal[C.AXIS_1, C.AXIS_3, C.AXIS_2] = AXIS_1,
         angle2: float = 0,
         unsorted: Boolean = OFF,
     ) -> PointFastener:
@@ -749,7 +751,7 @@ class EngineeringFeature(EngineeringFeatureBase):
         self,
         name: str,
         regionPairs: tuple,
-        axis: SymbolicConstant,
+        axis: Literal[C.FIXED_DOF, C.NODAL_LINE],
         dof1: int = 0,
         dof2: int = 0,
         orientation: Optional[str] = None,

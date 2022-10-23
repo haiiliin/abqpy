@@ -1,6 +1,8 @@
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
+from typing_extensions import Literal
 
-from ....UtilityAndView.abaqusConstants import Boolean, CONSTANTVOLUME, OFF, SymbolicConstant
+from ....UtilityAndView.abaqusConstants import Boolean, CONSTANTVOLUME, OFF
+from ....UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
 @abaqus_class_doc
@@ -32,7 +34,7 @@ class SpecificHeat:
     def __init__(
         self,
         table: tuple,
-        law: SymbolicConstant = CONSTANTVOLUME,
+        law: Literal[C.CONSTANTPRESSURE, C.CONSTANTVOLUME] = CONSTANTVOLUME,
         temperatureDependency: Boolean = OFF,
         dependencies: int = 0,
     ):
