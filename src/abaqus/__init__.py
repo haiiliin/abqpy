@@ -1,8 +1,10 @@
 import sys
 
 import abqpy.abaqus
+
 from .Canvas.Highlight import *
 from .Mdb.Mdb import Mdb
+from .Mdb.MdbCommands import *
 from .Odb.Odb import Odb
 from .Session.Session import Session
 from .UtilityAndView import abaqusConstants
@@ -10,7 +12,7 @@ from .UtilityAndView.BackwardCompatibility import BackwardCompatibility
 from .UtilityAndView.SymbolicConstant import SymbolicConstant
 from .UtilityAndView.User import *
 from .UtilityAndView.abaqusConstants import Boolean, OFF
-from .__builtin__ import execfile, execPyFile, raw_input, cliCommand, upgradeMdb
+from .builtin import *
 
 session = Session()
 mdb = Mdb()
