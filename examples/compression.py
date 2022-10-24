@@ -1,3 +1,10 @@
+"""
+Compression Model
+=================
+
+A simple example to establish a compression model.
+"""
+
 from abaqus import *
 from abaqusConstants import *
 from caeModules import *
