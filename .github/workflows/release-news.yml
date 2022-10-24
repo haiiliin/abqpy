@@ -1,0 +1,18 @@
+name: Update Release News
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  update:
+    if: ${{ startsWith(github.ref_name, 'v2022') }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: passeidireto/trigger-external-workflow-action@v1.0.0
+      env:
+        PAYLOAD_VERSION: ${{ github.ref_name }}
+      with:
+        repository: haiiliin/abqpy.com
+        event: release
+        github_pat: ${{ secrets.PAT_TOKEN }}
