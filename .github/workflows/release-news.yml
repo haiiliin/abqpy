@@ -1,4 +1,4 @@
-name: Update release news
+name: Update Release News
 
 on:
   release:
@@ -12,6 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
+        ref: "2022"
         fetch-depth: 0 # Required due to the way Git works, without it this action won't be able to find any or the correct tags
     - name: 'Get Previous tag'
       id: tag
