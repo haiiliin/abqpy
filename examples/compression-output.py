@@ -1,3 +1,10 @@
+"""
+Compression Output Script
+=========================
+
+Script to get the output of the compression model.
+"""
+
 from abaqus import *
 from abaqusConstants import *
 from driverUtils import *
