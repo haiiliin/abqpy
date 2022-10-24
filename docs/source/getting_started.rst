@@ -18,7 +18,7 @@ Installation
 `abqpy` supports Python 3.7 or a later version. If you are using Python 3.6 or an earlier version, please upgrade to Python 3.7
 or a later version.
 
-.. grid:: 2
+.. grid:: 1 2 2 2
     :gutter: 4
 
     .. grid-item-card::
