@@ -65,6 +65,7 @@ extensions = [
     'sphinx_autodoc_typehints',
     'sphinx_codeautolink',
     'sphinx_design',
+    'sphinx_gallery.gen_gallery',
     'sphinx_toolbox.confval',
     'hoverxref.extension',
 ]
@@ -113,6 +114,13 @@ hoverxref_role_types = {
     "numref": "tooltip", 
 }
 
+# Sphinx gallery configuration
+sphinx_gallery_conf = {
+     'examples_dirs': '../../examples',
+     'gallery_dirs': 'examples',
+     'filename_pattern': '/.+\.py',
+     'plot_gallery': False,
+}
 
 # linkcode source
 def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]]):
