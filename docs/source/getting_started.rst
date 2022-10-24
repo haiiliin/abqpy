@@ -12,6 +12,85 @@ It also provides some simple APIs to execute the Abaqus commands so that you can
 Python script to build the model, submit the job and extract the output data in just one 
 Python script, even without opening the Abaqus/CAE. 
 
+Installation
+------------
+
+`abqpy` supports Python 3.7 or a later version. If you are using Python 3.6 or an earlier version, please upgrade to Python 3.7
+or a later version.
+
+.. grid:: 2
+    :gutter: 4
+
+    .. grid-item-card::
+
+        Working with conda?
+        ^^^^^^^^^^^^^^^^^^^
+
+        `abqpy` is uploaded to `anaconda <https://anaconda.org/haiiliin/abqpy>`_, you can use 
+        `conda` to install it:
+
+        ++++
+
+        .. code-block:: bash
+
+            conda install -c haiiliin abqpy
+
+    .. grid-item-card::
+
+        Prefer pip?
+        ^^^^^^^^^^^
+
+        abqpy can be installed via pip from `PyPI <https://pypi.org/project/abqpy>`__.
+
+        ++++
+
+        .. code-block:: bash
+
+            pip install abqpy
+
+    .. grid-item-card::
+        :columns: 12
+
+        Install from source?
+        ^^^^^^^^^^^^^^^^^^^^
+
+        You can also install `abqpy` from source:
+
+        ++++
+
+        .. code-block:: bash
+
+            pip install git+https://github.com/haiiliin/abqpy@main
+
+    .. grid-item-card::
+
+        Install a specific version
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+        You can specify the version number when installing `abqpy`, for example:
+
+        ++++
+
+        .. code-block:: bash
+
+            pip install abqpy==2022.3.14
+            pip install abqpy==2022.*
+            conda install -c haiiliin abqpy=2022.3.14
+
+    .. grid-item-card::
+
+        Optional dependencies
+        ^^^^^^^^^^^^^^^^^^^^^
+
+        If you want to use the Jupyter notebook to write your Abaqus/Python scripts, use
+        the following command:
+
+        ++++
+
+        .. code-block:: bash
+
+            pip install abqpy[jupyter]
+
 
 Two Python interpreters
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -127,6 +206,7 @@ in :py:mod:`~abaqus` module and ``cae = False`` in :py:mod:`~odbAccess` module.
 Therefore, if you want to run your Python script in Abaqus Python environment, please make sure to import one of these modules
 on the top of your script.
 
+<<<<<<< HEAD
 Installation
 ------------
 
@@ -190,6 +270,8 @@ A better way is to use * to match specific version:
 
     pip install abqpy==2020.*
 
+=======
+>>>>>>> 3201a481 ([docs]: Use grid card in installation methods (#3207))
 Write your Abaqus/Python script
 -------------------------------
 
