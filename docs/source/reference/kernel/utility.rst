@@ -103,8 +103,10 @@ SymbolicConstant
 abaqusConstants
 ~~~~~~~~~~~~~~~
 
-.. automodule:: abaqus.UtilityAndView.abaqusConstants
+.. autoclass:: abaqus.UtilityAndView.SymbolicConstant.abaqusConstants
     :members:
+    :special-members: __init__
+    :show-inheritance:
 
 Upgrade
 ~~~~~~~
