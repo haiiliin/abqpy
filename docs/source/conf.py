@@ -64,6 +64,7 @@ extensions = [
     'sphinx_copybutton',
     'sphinx_autodoc_typehints',
     'sphinx_codeautolink',
+    'sphinx_design',
     'sphinx_toolbox.confval',
     'hoverxref.extension',
 ]
