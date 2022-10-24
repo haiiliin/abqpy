@@ -36,7 +36,7 @@ Documentation
    :caption: Contents
 
    getting_started
-   examples
+   examples/index
    tutorials
    user
    api
