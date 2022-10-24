@@ -3,6 +3,7 @@ name: Update release news
 on:
   release:
     types: [published]
+    branches: ["2022"]
 
 jobs:
   update:
