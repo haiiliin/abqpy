@@ -19,6 +19,7 @@ Installation
 or a later version.
 
 .. grid:: 2
+    :gutter: 4
 
     .. grid-item-card::
 
