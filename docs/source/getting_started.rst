@@ -82,7 +82,7 @@ or a later version.
         ^^^^^^^^^^^^^^^^^^^^^
 
         If you want to use the Jupyter notebook to write your Abaqus/Python scripts, use
-        the following command to install the `ipynbname`:
+        the following command:
 
         ++++
 
