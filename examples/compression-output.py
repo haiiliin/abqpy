@@ -2,7 +2,7 @@
 Compression Output Script
 =========================
 
-Script to get the output of the compression model.
+A script to get the output of the compression model.
 """
 
 from abaqus import *
