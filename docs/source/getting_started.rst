@@ -73,9 +73,9 @@ or a later version.
 
         .. code-block:: bash
 
-            pip install abqpy==2022.3.14
-            pip install abqpy==2022.*
-            conda install -c haiiliin abqpy=2022.3.14
+            pip install abqpy==2016.3.14
+            pip install abqpy==2016.*
+            conda install -c haiiliin abqpy=2016.3.14
 
     .. grid-item-card::
 
@@ -206,72 +206,6 @@ in :py:mod:`~abaqus` module and ``cae = False`` in :py:mod:`~odbAccess` module.
 Therefore, if you want to run your Python script in Abaqus Python environment, please make sure to import one of these modules
 on the top of your script.
 
-<<<<<<< HEAD
-Installation
-------------
-
-`abqpy` supports Python 3.7 or a later version. If you are using Python 3.6 or an earlier version, please upgrade to Python 3.7
-or a later version.
-
-`abqpy` is uploaded to `PyPI <https://pypi.org/project/abqpy>`_, you can simply install 
-it using pip:
-
-.. code-block:: sh
-    
-    pip install abqpy
-
-`abqpy` is also uploaded to `anaconda <https://anaconda.org/haiiliin/abqpy>`_, you can use 
-`conda` to install it:
-
-.. code-block:: sh
-
-    conda install -c haiiliin abqpy
-
-You may install the latest development version by cloning the 
-`GitHub repository <https://github.com/haiiliin/abqpy>`_ and use `python` to install from 
-the local directory:
-
-.. code-block:: sh
-
-    git clone https://github.com/haiiliin/abqpy.git
-    cd abqpy
-    pip install .
-
-Optional Requirements
-~~~~~~~~~~~~~~~~~~~~~
-
-If you want to use the Jupyter notebook to write your Abaqus/Python scripts, you need to install
-`ipynbname`:
-
-.. code-block:: sh
-
-    pip install ipynbname
-
-Install A Specific Version
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-You can specify the version number when installing `abqpy`, for example:
-
-Using `pip`:
-
-.. code-block:: sh
-
-    pip install abqpy==2016.3.14
-
-Using `conda`:
-
-.. code-block:: sh
-
-    conda install -c haiiliin abqpy=2016.3.14
-
-A better way is to use * to match specific version:
-
-.. code-block:: sh
-
-    pip install abqpy==2016.*
-
-=======
->>>>>>> 3201a481 ([docs]: Use grid card in installation methods (#3207))
 Write your Abaqus/Python script
 -------------------------------
 
