@@ -1,0 +1,23 @@
+name: Update release news
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Get Previous tag'
+      id: tag
+      uses: WyriHaximus/github-action-get-previous-tag@v1
+      with:
+        fallback: 0.0.0 # Optional fallback tag to use when no tag can be found
+    - uses: passeidireto/trigger-external-workflow-action@v1.0.1
+      if: ${{ steps.tag.outputs.tag != '0.0.0' }}
+      env:
+        PAYLOAD_VERSION: ${{ steps.tag.outputs.tag }}
+      with:
+        repository: haiiliin/abqpy.com
+        event: release
+        github_pat: ${{ secrets.PAT_TOKEN }}
