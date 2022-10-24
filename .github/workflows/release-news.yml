@@ -3,26 +3,15 @@ name: Update Release News
 on:
   release:
     types: [published]
-    branches: ["2022"]
-  workflow_dispatch:
 
 jobs:
   update:
+    if: ${{ startsWith(github.ref_name, 'v2022') }}
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-      with:
-        ref: "2022"
-        fetch-depth: 0 # Required due to the way Git works, without it this action won't be able to find any or the correct tags
-    - name: 'Get Previous tag'
-      id: tag
-      uses: WyriHaximus/github-action-get-previous-tag@v1
-      with:
-        fallback: 0.0.0 # Optional fallback tag to use when no tag can be found
     - uses: passeidireto/trigger-external-workflow-action@v1.0.0
-      if: ${{ steps.tag.outputs.tag != '0.0.0' }}
       env:
-        PAYLOAD_VERSION: ${{ steps.tag.outputs.tag }}
+        PAYLOAD_VERSION: ${{ github.ref_name }}
       with:
         repository: haiiliin/abqpy.com
         event: release
