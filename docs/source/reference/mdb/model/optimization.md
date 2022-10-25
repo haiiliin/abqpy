@@ -511,23 +511,7 @@ Optimization commands are used to perform topology, shape, or sizing optimizatio
     .. autoclasstoc::
 ```
 
-<<<<<<< HEAD:docs/source/reference/mdb/model/optimization.rst
-TopologyPlanarSymmetry
-~~~~~~~~~~~~~~~~~~~~~~
-=======
-### TopologyMillingControl
-
-```{eval-rst}
-.. autoclass:: abaqus.Optimization.TopologyMillingControl.TopologyMillingControl
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
 ### TopologyPlanarSymmetry
->>>>>>> d17c2dbb ([docs]: Use `myst` markdown files for docs (#3305)):docs/source/reference/mdb/model/optimization.md
 
 ```{eval-rst}
 .. autoclass:: abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry

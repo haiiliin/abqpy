@@ -15,34 +15,7 @@ A PredefinedField object stores the non-propagating data of a predefined field a
 
 ## Classes
 
-<<<<<<< HEAD:docs/source/reference/mdb/model/predefined.rst
-PredefinedField
-~~~~~~~~~~~~~~~
-=======
-### Field
-
-```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.Field.Field
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### FieldState
-
-```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.FieldState.FieldState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
 ### PredefinedField
->>>>>>> d17c2dbb ([docs]: Use `myst` markdown files for docs (#3305)):docs/source/reference/mdb/model/predefined.md
 
 ```{eval-rst}
 .. autoclass:: abaqus.PredefinedField.PredefinedField.PredefinedField

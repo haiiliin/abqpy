@@ -71,23 +71,7 @@ Display group commands are used to select a subset of the entities displayed in 
     .. autoclasstoc::
 ```
 
-<<<<<<< HEAD:docs/source/reference/session/display.rst
-LeafFromDatums
-~~~~~~~~~~~~~~
-=======
-### LeafFromConstraintNames
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
 ### LeafFromDatums
->>>>>>> d17c2dbb ([docs]: Use `myst` markdown files for docs (#3305)):docs/source/reference/session/display.md
 
 ```{eval-rst}
 .. autoclass:: abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums
@@ -434,7 +418,7 @@ LeafFromDatums
 .. autoclass:: abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange
     :members:
     :special-members: __init__
-<<<<<<< HEAD:docs/source/reference/session/display.rst
-=======
+    :show-inheritance:
+
+    .. autoclasstoc::
 ```
->>>>>>> d17c2dbb ([docs]: Use `myst` markdown files for docs (#3305)):docs/source/reference/session/display.md

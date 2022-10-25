@@ -514,45 +514,7 @@ A specific type of interaction object and a specific type of interaction state o
     .. autoclasstoc::
 ```
 
-<<<<<<< HEAD:docs/source/reference/mdb/model/interaction.rst
-FractureCriterion
-~~~~~~~~~~~~~~~~~
-=======
-### FluidInflator
-
-```{eval-rst}
-.. autoclass:: abaqus.Interaction.FluidInflator.FluidInflator
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### FluidInflatorProperty
-
-```{eval-rst}
-.. autoclass:: abaqus.Interaction.FluidInflatorProperty.FluidInflatorProperty
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### FluidInflatorState
-
-```{eval-rst}
-.. autoclass:: abaqus.Interaction.FluidInflatorState.FluidInflatorState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
 ### FractureCriterion
->>>>>>> d17c2dbb ([docs]: Use `myst` markdown files for docs (#3305)):docs/source/reference/mdb/model/interaction.md
 
 ```{eval-rst}
 .. autoclass:: abaqus.Interaction.FractureCriterion.FractureCriterion
@@ -629,17 +591,10 @@ FractureCriterion
     .. autoclasstoc::
 ```
 
-<<<<<<< HEAD:docs/source/reference/mdb/model/interaction.rst
-MasterSlaveAssignment
-~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment
-=======
-### MainSecondaryAssignment
+### MasterSlaveAssignment
 
 ```{eval-rst}
-.. autoclass:: abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment
->>>>>>> d17c2dbb ([docs]: Use `myst` markdown files for docs (#3305)):docs/source/reference/mdb/model/interaction.md
+.. autoclass:: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment
     :members:
     :special-members: __init__
     :show-inheritance:
