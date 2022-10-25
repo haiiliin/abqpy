@@ -2,11 +2,9 @@ import os
 import re
 import sys
 
-from abaqus.Session.Session import Session
-
-from abaqus.UtilityAndView import SymbolicConstant, BackwardCompatibility
-
 from abaqus import Mdb, backwardCompatibility, getInput, mdb
+from abaqus.Session.Session import Session
+from abaqus.UtilityAndView import SymbolicConstant, BackwardCompatibility
 from abaqus.UtilityAndView.AbaqusBoolean import AbaqusBoolean
 from abaqus.UtilityAndView.Repository import Repository
 from abaqus.UtilityAndView.abaqusConstants import (AbaqusBooleanType, Boolean, BooleanType, CFD, EMAG, FALSE, NOT_SET,
@@ -14,6 +12,7 @@ from abaqus.UtilityAndView.abaqusConstants import (AbaqusBooleanType, Boolean, B
                                                    SymbolicConstantType, TOTAL, TRUE)
 
 NoneType = type(None)
+
 
 def upgradeMdb(*args, **kwargs):
     pass
