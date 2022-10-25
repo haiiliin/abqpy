@@ -51,3 +51,14 @@ model/step
 
     .. autoclasstoc::
 ```
+
+### KeywordBlock
+
+```{eval-rst}
+.. autoclass:: abaqus.Model.KeywordBlock.KeywordBlock
+    :members:
+    :special-members: __init__
+    :show-inheritance:
+
+    .. autoclasstoc::
+```

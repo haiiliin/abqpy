@@ -15,7 +15,7 @@ The script does the following:
 - Creates a new viewport.
 - Displays a shaded image of the new part in the new viewport.
 
-The new viewport and the shaded part are shown in {numref}`cmd_int_aexample_nls`.
+The new viewport and the shaded part are shown in {numref}`cmd-int-aexample-nls`.
 
 (cmd-int-aexample-nls)=
 
