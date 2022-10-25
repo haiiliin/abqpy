@@ -511,8 +511,7 @@ Optimization commands are used to perform topology, shape, or sizing optimizatio
     .. autoclasstoc::
 ```
 
-TopologyPlanarSymmetry
-~~~~~~~~~~~~~~~~~~~~~~
+### TopologyPlanarSymmetry
 
 ```{eval-rst}
 .. autoclass:: abaqus.Optimization.TopologyPlanarSymmetry.TopologyPlanarSymmetry
