@@ -624,17 +624,10 @@ A specific type of interaction object and a specific type of interaction state o
     .. autoclasstoc::
 ```
 
-<<<<<<< HEAD:docs/source/reference/mdb/model/interaction.rst
-MasterSlaveAssignment
-~~~~~~~~~~~~~~~~~~~~~
-
-.. autoclass:: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment
-=======
-### MainSecondaryAssignment
+### MasterSlaveAssignment
 
 ```{eval-rst}
-.. autoclass:: abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment
->>>>>>> d17c2dbb ([docs]: Use `myst` markdown files for docs (#3305)):docs/source/reference/mdb/model/interaction.md
+.. autoclass:: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment
     :members:
     :special-members: __init__
     :show-inheritance:
