@@ -32,6 +32,7 @@ Please check the options that are relevant, the corresponding labels will be add
   - [ ] test (adds/updates test)
   - [ ] typo (fixes typo)
   - [ ] refactor (refactors code)
+  - [ ] reformat with black (check this to reformat the code with black)
 - [ ] New Feature (non-breaking change which adds functionality)
   - [ ] typing (adds/updates typing annotations)
 - [ ] Documentation Update
