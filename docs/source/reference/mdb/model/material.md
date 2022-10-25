@@ -288,24 +288,8 @@ The Material commands are used to define the materials in a model.
     .. autoclasstoc::
 ```
 
-<<<<<<< HEAD:docs/source/reference/mdb/model/material.rst
-Gasket
-~~~~~~
+#### Gasket
 
-=======
-#### GapRadiation
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Gap.GapRadiation.GapRadiation
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### Gasket
->>>>>>> d17c2dbb ([docs]: Use `myst` markdown files for docs (#3305)):docs/source/reference/mdb/model/material.md
 
 #### ContactArea
 
@@ -1306,24 +1290,8 @@ Extended
     .. autoclasstoc::
 ```
 
-<<<<<<< HEAD:docs/source/reference/mdb/model/material.rst
-ProgressiveDamageFailure
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-=======
-#### TensileFailure
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.TensileFailure.TensileFailure
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
 ### ProgressiveDamageFailure
->>>>>>> d17c2dbb ([docs]: Use `myst` markdown files for docs (#3305)):docs/source/reference/mdb/model/material.md
+
 
 #### DamageEvolution
 
