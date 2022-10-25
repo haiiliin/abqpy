@@ -36,7 +36,7 @@ Please check the options that are relevant, the corresponding labels will be add
   - [ ] typing (adds/updates typing annotations)
 - [ ] Documentation Update
   - [ ] docs (adds/updates documentation)
-  - [ ] docs-preview (check this to preview docs)
+  - [ ] docs preview (check this to preview docs)
 - [ ] Automation/Translation/Release
   - [ ] workflow (adds/updates workflow)
   - [ ] release (adds/updates release)
