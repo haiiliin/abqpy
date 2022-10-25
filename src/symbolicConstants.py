@@ -29,4 +29,4 @@ and makes this module aware of the cache by adding the _addSymConstToTable
 function to this module.
 Outside Abaqus/CAE, we do not have the same requirement.
 """
-from abaqusConstants import *
+from abaqusConstants import *  # noqa # pylint: disable=unused-import
