@@ -235,14 +235,14 @@ Now you can just run your Abaqus/Python script using your own Python interpreter
 
 - Create an Abaqus Model
 
-  .. image:: images/model-code.*
+  .. image:: images/model-code.gif
       :width: 100%
       :align: center
       :alt: Create an Abaqus Model
 
 - Extract Output Data
 
-  .. image:: images/output-code.*
+  .. image:: images/output-code.gif
       :width: 100%
       :align: center
       :alt: Extract Output Data
