@@ -418,7 +418,7 @@ Display group commands are used to select a subset of the entities displayed in 
 .. autoclass:: abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange
     :members:
     :special-members: __init__
-<<<<<<< HEAD:docs/source/reference/session/display.rst
-=======
+    :show-inheritance:
+
+    .. autoclasstoc::
 ```
->>>>>>> d17c2dbb ([docs]: Use `myst` markdown files for docs (#3305)):docs/source/reference/session/display.md
