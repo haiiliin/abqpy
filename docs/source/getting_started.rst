@@ -26,7 +26,7 @@ or a later version.
         Working with conda?
         ^^^^^^^^^^^^^^^^^^^
 
-        `abqpy` can be installed via conda from` anaconda <https://anaconda.org/haiiliin/abqpy>`_.
+        `abqpy` can be installed via conda from `anaconda <https://anaconda.org/haiiliin/abqpy>`_.
 
         ++++
 
