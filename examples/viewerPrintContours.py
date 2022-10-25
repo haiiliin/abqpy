@@ -1,6 +1,6 @@
 """
 Print Contour Plots
--------------------
+===================
 
 `viewerPrintContours.py` from `Printing a contour plot at the end of each step <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-intexaprintcontour.htm?contextscope=all&id=01196185741b4c25ae212a9cc00dc138>`_.
 

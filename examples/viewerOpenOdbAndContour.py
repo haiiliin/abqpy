@@ -1,6 +1,6 @@
 """
 Open Odb and Display a Contour Plot
------------------------------------
+===================================
 
 `viewerOpenOdbAndContour.py` from `Opening an output database and displaying a contour plot <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-c-intexaopenodb.htm?contextscope=all&id=0d282d5c2d004c5d9f115b9e7853cacf>`_.
 
