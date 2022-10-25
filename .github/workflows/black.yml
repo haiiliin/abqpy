@@ -11,7 +11,7 @@ on:
 
 jobs:
   linter_name:
-    if: ${{ !contains(github.event.pull_request.labels.*.name, 'skip-black') }}
+    if: ${{ contains(github.event.pull_request.labels.*.name, 'reformat-with-black') }}
     name: runner / black
     runs-on: ubuntu-latest
     steps:
