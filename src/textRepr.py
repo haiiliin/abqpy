@@ -1,1 +1,1 @@
-from abaqus.TextRepresentation.textRepr import *
+from abaqus.TextRepresentation.textRepr import *  # noqa # pylint: disable=unused-import

@@ -1,1 +1,1 @@
-from abaqus.Mesh.ElemType import ElemType
+from abaqus.Mesh.ElemType import ElemType  # noqa # pylint: disable=unused-import
