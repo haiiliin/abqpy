@@ -913,40 +913,12 @@ The Material commands are used to define the materials in a model.
     .. autoclasstoc::
 ```
 
-<<<<<<< HEAD:docs/source/reference/mdb/model/material.rst
 DruckerPrager
 *************
 
 
 Extended
 ''''''''
-=======
-#### CrushStress
-
-##### CrushStress
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStress.CrushStress
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### CrushStressVelocityFactor
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStressVelocityFactor.CrushStressVelocityFactor
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### DruckerPrager
->>>>>>> d17c2dbb ([docs]: Use `myst` markdown files for docs (#3305)):docs/source/reference/mdb/model/material.md
 
 ##### Extended
 
