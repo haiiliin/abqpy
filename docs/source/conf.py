@@ -79,13 +79,14 @@ suppress_warnings = [
 ]
 
 intersphinx_mapping = {
+    'jinjia2': ('https://jinja.palletsprojects.com/en/3.0.x/', None),
+    'matplotlib': ('https://matplotlib.org/stable/', None),
     'numpy': ('https://numpy.org/doc/stable/', None),
     'pandas': ('https://pandas.pydata.org/pandas-docs/stable/', None),
     'pytest': ('https://pytest.org/en/stable/', None),
     'python': ('https://docs.python.org/3/', None),
+    'readthedocs': ('https://docs.readthedocs.io/en/stable/', None),
     'scipy': ('https://docs.scipy.org/doc/scipy/', None),
-    'matplotlib': ('https://matplotlib.org/stable/', None),
-    'jinjia2': ('https://jinja.palletsprojects.com/en/3.0.x/', None),
 }
 
 # Hoverxref configuration
@@ -113,6 +114,12 @@ hoverxref_role_types = {
     "term": "tooltip",  # for glossaries
     "numref": "tooltip", 
 }
+hoverxref_intersphinx = [
+    'numpy',
+    'pytest',
+    'python',
+    'readthedocs',
+]
 
 # Sphinx gallery configuration
 sphinx_gallery_conf = {
@@ -121,83 +128,6 @@ sphinx_gallery_conf = {
      'filename_pattern': '/.+\.py',
      'plot_gallery': False,
 }
-
-# linkcode source
-def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]]):
-    """Resolve linkcode source
-    
-    Parameters
-    ----------
-    domain : str
-        specifies the language domain the object is in
-    info : dict[str, str | list[str]]
-        a dictionary with the following keys guaranteed to be present (dependent on the domain)
-
-        - py: module (name of the module), fullname (name of the object)
-        - c: names (list of names for the object)
-        - cpp: names (list of names for the object)
-        - javascript: object (name of the object), fullname (name of the item)
-
-    Returns
-    -------
-    source url of the object
-    """
-    if domain != 'py':
-        return None
-
-    modname = info['module']
-    fullname = info['fullname']
-
-    filename = modname.replace('.', '/')
-    try:
-        branch_name = git.repo.Repo('../../').active_branch.name
-    except Exception:
-        branch_name = version[:4]
-    baseurl = f'https://github.com/haiiliin/abqpy/blob/{branch_name}/src/{filename}.py'
-
-    submod = sys.modules.get(modname)
-    if submod is None:
-        return baseurl
-
-    obj = submod
-    for part in fullname.split('.'):
-        try:
-            obj = getattr(obj, part)
-        except Exception:
-            return baseurl
-    try:
-        source, lineno = inspect.getsourcelines(obj)
-    except TypeError:
-        # Find source line for an attribute, the obj is None
-        attr = fullname.split('.')[-1]
-        obj = submod
-        for part in fullname.split('.')[:-1]:
-            try:
-                obj = getattr(obj, part)
-            except Exception:
-                return baseurl
-        source, lineno = inspect.getsourcelines(obj)
-        attr_sources: list[str] = re.findall(rf'\n(    {attr}: [\w\W]+?)\n\n', '\n'.join(source))
-        if len(attr_sources) > 0:
-            attr_source = attr_sources[0].splitlines()
-
-            def find_line_number(string: str, text: list[str]):
-                for line_number, line in enumerate(text):
-                    if string in line:
-                        return line_number
-
-            index = find_line_number(attr_source[0], source)
-            for row in range(index - 1, -1, -1):
-                if source[row].startswith('    #: '):
-                    attr_source.insert(0, source[row])
-                else:
-                    break
-            lineno += find_line_number(attr_source[0], source)
-            source = attr_source
-    except Exception:
-        return baseurl
-
-    return baseurl + f'#L{lineno}-L{lineno + len(source) - 1}'
 
 
 # Show short type hints for user-defined classes and defaults for parameters
@@ -308,3 +238,81 @@ latex_elements = {
     'preamble': '\\usepackage[UTF8]{ctex}\n\\setcounter{tocdepth}{3}\n\\setcounter{secnumdepth}{5}',
     'printindex': '\\def\\twocolumn[#1]{#1}\\printindex',
 }
+
+
+# linkcode source
+def linkcode_resolve(domain: str, info: dict[str, typing.Union[str, list[str]]]):
+    """Resolve linkcode source
+    
+    Parameters
+    ----------
+    domain : str
+        specifies the language domain the object is in
+    info : dict[str, str | list[str]]
+        a dictionary with the following keys guaranteed to be present (dependent on the domain)
+
+        - py: module (name of the module), fullname (name of the object)
+        - c: names (list of names for the object)
+        - cpp: names (list of names for the object)
+        - javascript: object (name of the object), fullname (name of the item)
+
+    Returns
+    -------
+    source url of the object
+    """
+    if domain != 'py':
+        return None
+
+    modname = info['module']
+    fullname = info['fullname']
+
+    filename = modname.replace('.', '/')
+    try:
+        branch_name = git.repo.Repo('../../').active_branch.name
+    except Exception:
+        branch_name = version[:4]
+    baseurl = f'https://github.com/haiiliin/abqpy/blob/{branch_name}/src/{filename}.py'
+
+    submod = sys.modules.get(modname)
+    if submod is None:
+        return baseurl
+
+    obj = submod
+    for part in fullname.split('.'):
+        try:
+            obj = getattr(obj, part)
+        except Exception:
+            return baseurl
+    try:
+        source, lineno = inspect.getsourcelines(obj)
+    except TypeError:
+        # Find source line for an attribute, the obj is None
+        attr = fullname.split('.')[-1]
+        obj = submod
+        for part in fullname.split('.')[:-1]:
+            try:
+                obj = getattr(obj, part)
+            except Exception:
+                return baseurl
+        source, lineno = inspect.getsourcelines(obj)
+        attr_sources: list[str] = re.findall(rf'\n(    {attr}: [\w\W]+?)\n\n', '\n'.join(source))
+        if len(attr_sources) > 0:
+            attr_source = attr_sources[0].splitlines()
+
+            def find_line_number(string: str, text: list[str]):
+                for line_number, line in enumerate(text):
+                    if string in line:
+                        return line_number
+
+            index = find_line_number(attr_source[0], source)
+            for row in range(index - 1, -1, -1):
+                if source[row].startswith('    #: '):
+                    attr_source.insert(0, source[row])
+                else:
+                    break
+            lineno += find_line_number(attr_source[0], source)
+            source = attr_source
+    except Exception:
+        return baseurl
+
+    return baseurl + f'#L{lineno}-L{lineno + len(source) - 1}'
