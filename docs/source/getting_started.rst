@@ -26,8 +26,7 @@ or a later version.
         Working with conda?
         ^^^^^^^^^^^^^^^^^^^
 
-        `abqpy` is uploaded to `anaconda <https://anaconda.org/haiiliin/abqpy>`_, you can use 
-        `conda` to install it:
+        `abqpy` can be installed via conda from`anaconda <https://anaconda.org/haiiliin/abqpy>`_.
 
         ++++
 
@@ -40,7 +39,7 @@ or a later version.
         Prefer pip?
         ^^^^^^^^^^^
 
-        abqpy can be installed via pip from `PyPI <https://pypi.org/project/abqpy>`__.
+        abqpy can also be installed via pip from `PyPI <https://pypi.org/project/abqpy>`__.
 
         ++++
 
@@ -236,17 +235,17 @@ Now you can just run your Abaqus/Python script using your own Python interpreter
 
 - Create an Abaqus Model
 
-.. image:: images/model-code.*
-    :width: 100%
-    :align: center
-    :alt: Create an Abaqus Model
+  .. image:: images/model-code.*
+      :width: 100%
+      :align: center
+      :alt: Create an Abaqus Model
 
 - Extract Output Data
 
-.. image:: images/output-code.*
-    :width: 100%
-    :align: center
-    :alt: Extract Output Data
+  .. image:: images/output-code.*
+      :width: 100%
+      :align: center
+      :alt: Extract Output Data
 
 What next?
 ----------
