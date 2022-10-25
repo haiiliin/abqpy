@@ -1,3 +1,5 @@
+from math import *  # noqa # pylint: disable=unused-import
+
 import abqpy.abaqus
 
 abqpy.abaqus.run(cae=False)
