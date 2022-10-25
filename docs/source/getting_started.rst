@@ -74,6 +74,7 @@ or a later version.
 
             pip install abqpy==2022.3.14
             pip install abqpy==2022.*
+            pip install abqpy[2022]
             conda install -c haiiliin abqpy=2022.3.14
 
     .. grid-item-card::
