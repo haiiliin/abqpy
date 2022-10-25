@@ -79,13 +79,14 @@ suppress_warnings = [
 ]
 
 intersphinx_mapping = {
+    'jinjia2': ('https://jinja.palletsprojects.com/en/3.0.x/', None),
+    'matplotlib': ('https://matplotlib.org/stable/', None),
     'numpy': ('https://numpy.org/doc/stable/', None),
     'pandas': ('https://pandas.pydata.org/pandas-docs/stable/', None),
     'pytest': ('https://pytest.org/en/stable/', None),
     'python': ('https://docs.python.org/3/', None),
+    'readthedocs': ('https://docs.readthedocs.io/en/stable/', None),
     'scipy': ('https://docs.scipy.org/doc/scipy/', None),
-    'matplotlib': ('https://matplotlib.org/stable/', None),
-    'jinjia2': ('https://jinja.palletsprojects.com/en/3.0.x/', None),
 }
 
 # Hoverxref configuration
@@ -113,6 +114,12 @@ hoverxref_role_types = {
     "term": "tooltip",  # for glossaries
     "numref": "tooltip", 
 }
+hoverxref_intersphinx = [
+    'numpy',
+    'pytest',
+    'python',
+    'readthedocs',
+]
 
 # Sphinx gallery configuration
 sphinx_gallery_conf = {
