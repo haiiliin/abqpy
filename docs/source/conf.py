@@ -68,6 +68,12 @@ extensions = [
     'sphinx_gallery.gen_gallery',
     'sphinx_toolbox.confval',
     'hoverxref.extension',
+    'myst_parser',
+]
+
+# MyST configuration
+myst_enable_extensions = [
+  "colon_fence",
 ]
 
 # Default behavior for code block concatenation for sphinx_codeautolink
@@ -128,7 +134,6 @@ sphinx_gallery_conf = {
      'filename_pattern': '/.+\.py',
      'plot_gallery': False,
 }
-
 
 # Show short type hints for user-defined classes and defaults for parameters
 python_use_unqualified_type_names = True
