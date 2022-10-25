@@ -141,7 +141,7 @@ Save the model database, and name it `skew`. Abaqus/CAE saves the model database
 Using a script to perform a parametric study
 --------------------------------------------
 
-he following shows the contents of the script skewExample.py. The parametric study does the following:
+The following shows the contents of the script skewExample.py. The parametric study does the following:
 
 - Opens the model database and creates variables that refer to the part, the assembly, and the part instance stored in `Model-1`.
 

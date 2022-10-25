@@ -1,8 +1,12 @@
 """
-Cantilever beam example
-=======================
+Cantilever Beam
+===============
 
 `beamExample.py` from `Reproducing the cantilever beam tutorial <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAECMDRefMap/simacmd-m-IntExaBeam-sb.htm?contextscope=all&id=912c66dae2554e53b439b484eddbfd6e>`_.
+
+Reproduce the cantilever beam example from the
+Appendix of the Getting Started with
+Abaqus: Interactive Edition Manual.
 
 The example leads you through the Abaqus/CAE modeling process by visiting each of the modules and shows you the basic steps to create and analyze a simple model. In `Creating and Analyzing a Simple Model in Abaqus/CAE <https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEGSARefMap/simagsa-m-Caebeam-sb.htm?contextscope=all#simagsa-m-Caebeam-sb>`_, you create a model of a steel cantilever beam and load its top surface. You then analyze the beam and plot the resulting stresses and displacements. :numref:`gst-beam-example` illustrates the model that you create and analyze.
 
