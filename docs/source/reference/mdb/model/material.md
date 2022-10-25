@@ -250,31 +250,6 @@ The Material commands are used to define the materials in a model.
 
 ### Gap
 
-<<<<<<< HEAD:docs/source/reference/mdb/model/material.rst
-
-=======
-#### GapConductance
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Gap.GapConductance.GapConductance
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### GapConvection
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Gap.GapConvection.GapConvection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
->>>>>>> d17c2dbb ([docs]: Use `myst` markdown files for docs (#3305)):docs/source/reference/mdb/model/material.md
 
 #### GapFlow
 
@@ -287,24 +262,9 @@ The Material commands are used to define the materials in a model.
     .. autoclasstoc::
 ```
 
-<<<<<<< HEAD:docs/source/reference/mdb/model/material.rst
 Gasket
 ~~~~~~
 
-=======
-#### GapRadiation
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Gap.GapRadiation.GapRadiation
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### Gasket
->>>>>>> d17c2dbb ([docs]: Use `myst` markdown files for docs (#3305)):docs/source/reference/mdb/model/material.md
 
 #### ContactArea
 
@@ -923,40 +883,12 @@ Gasket
     .. autoclasstoc::
 ```
 
-<<<<<<< HEAD:docs/source/reference/mdb/model/material.rst
 DruckerPrager
 *************
 
 
 Extended
 ''''''''
-=======
-#### CrushStress
-
-##### CrushStress
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStress.CrushStress
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### CrushStressVelocityFactor
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.CrushStress.CrushStressVelocityFactor.CrushStressVelocityFactor
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### DruckerPrager
->>>>>>> d17c2dbb ([docs]: Use `myst` markdown files for docs (#3305)):docs/source/reference/mdb/model/material.md
 
 ##### Extended
 
