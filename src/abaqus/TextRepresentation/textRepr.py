@@ -45,7 +45,7 @@ def getIndentedRepr(
         elements have been printed, the remainder are indicated by the string '...'.
     significantDigits
         An Int specifying the number of significant digits for Floats in the output. Possible
-        values are 0 << **significantDigits** ≤ 15. The default value is 6.
+        values are 0 < **significantDigits** ≤ 15. The default value is 6.
 
     Returns
     -------
@@ -159,7 +159,7 @@ def prettyPrint(
         elements have been printed, the remainder are indicated by the string '...'.
     significantDigits
         An Int specifying the number of significant digits for Floats in the output. Possible
-        values are 0 << **significantDigits** ≤ 15. The default value is 6.
+        values are 0 < **significantDigits** ≤ 15. The default value is 6.
     """
     ...
 

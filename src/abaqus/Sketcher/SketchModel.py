@@ -39,7 +39,7 @@ class SketchModel(ModelBase):
         sheetSize
             A Float specifying the sheet size.
         gridSpacing
-            A Float specifying the spacing between gridlines. Possible values are Floats >> 0. The
+            A Float specifying the spacing between gridlines. Possible values are Floats > 0. The
             default value is approximately 2 percent of **sheetSize**.
         transform
             A sequence of sequences of Floats specifying the three-dimensional orientation of the

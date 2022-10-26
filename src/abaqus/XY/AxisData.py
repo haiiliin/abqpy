@@ -105,7 +105,7 @@ class AxisData:
     tickCountShown: Optional[int] = None
 
     #: A Float specifying the increment of the major tick marks on the axis when **tickMode** =
-    #: INCREMENT. Valid values are 0 << **tickIncrement**. The default value is computed based on
+    #: INCREMENT. Valid values are 0 < **tickIncrement**. The default value is computed based on
     #: the results of the automatic method and the range being plotted. When the **scale** is set
     #: to LOG, the tickIncrement is interpreted as a value per decade and should be between
     #: 0.05 and 1.
@@ -201,7 +201,7 @@ class AxisData:
             value is AUTOCOMPUTE.
         tickIncrement
             A Float specifying the increment of the major tick marks on the axis when **tickMode** =
-            INCREMENT. Valid values are 0 << **tickIncrement**. The default value is computed based on
+            INCREMENT. Valid values are 0 < **tickIncrement**. The default value is computed based on
             the results of the automatic method and the range being plotted. When the **scale** is set
             to LOG, the tickIncrement is interpreted as a value per decade and should be between
             0.05 and 1.
