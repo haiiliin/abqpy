@@ -24,7 +24,7 @@ class AcousticInterfaceSection(Section):
     #: A String specifying the repository key.
     name: str
 
-    #: A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
+    #: A Float specifying the thickness of the section. Possible values are **thickness** > 0.0.
     #: The default value is 1.0.
     thickness: float = 1
 
@@ -43,7 +43,7 @@ class AcousticInterfaceSection(Section):
         name
             A String specifying the repository key.
         thickness
-            A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
+            A Float specifying the thickness of the section. Possible values are **thickness** > 0.0.
             The default value is 1.0.
 
         Returns
@@ -65,7 +65,7 @@ class AcousticInterfaceSection(Section):
         Parameters
         ----------
         thickness
-            A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
+            A Float specifying the thickness of the section. Possible values are **thickness** > 0.0.
             The default value is 1.0.
 
         Raises

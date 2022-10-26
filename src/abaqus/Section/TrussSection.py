@@ -28,7 +28,7 @@ class TrussSection(Section):
     material: str
 
     #: A Float specifying the cross-sectional area for the section. Possible values are **area**
-    #: >> 0. The default value is 1.0.
+    #: > 0. The default value is 1.0.
     area: float = 1
 
     @abaqus_method_doc
@@ -49,7 +49,7 @@ class TrussSection(Section):
             A String specifying the name of the material.
         area
             A Float specifying the cross-sectional area for the section. Possible values are **area**
-            >> 0. The default value is 1.0.
+            > 0. The default value is 1.0.
 
         Returns
         -------
@@ -70,7 +70,7 @@ class TrussSection(Section):
         ----------
         area
             A Float specifying the cross-sectional area for the section. Possible values are **area**
-            >> 0. The default value is 1.0.
+            > 0. The default value is 1.0.
 
         Raises
         ------

@@ -47,7 +47,7 @@ class HomogeneousShellSection(GeometryShellSection):
     thickness: float = 0
 
     #: An Int specifying the number of integration points to be used through the section.
-    #: Possible values are **numIntPts** >> 0. The default value is 5.To use the default settings
+    #: Possible values are **numIntPts** > 0. The default value is 5.To use the default settings
     #: of the analysis products, set **numIntPts** to 5 if **integrationRule** = SIMPSON or set
     #: **numIntPts** to 7 if **integrationRule** = GAUSS.
     numIntPts: int = 5
@@ -170,7 +170,7 @@ class HomogeneousShellSection(GeometryShellSection):
             when **thicknessType** = UNIFORM. The default value is 0.0.
         numIntPts
             An Int specifying the number of integration points to be used through the section.
-            Possible values are **numIntPts** >> 0. The default value is 5.To use the default settings
+            Possible values are **numIntPts** > 0. The default value is 5.To use the default settings
             of the analysis products, set **numIntPts** to 5 if **integrationRule** = SIMPSON or set
             **numIntPts** to 7 if **integrationRule** = GAUSS.
         thicknessType
@@ -267,7 +267,7 @@ class HomogeneousShellSection(GeometryShellSection):
             when **thicknessType** = UNIFORM. The default value is 0.0.
         numIntPts
             An Int specifying the number of integration points to be used through the section.
-            Possible values are **numIntPts** >> 0. The default value is 5.To use the default settings
+            Possible values are **numIntPts** > 0. The default value is 5.To use the default settings
             of the analysis products, set **numIntPts** to 5 if **integrationRule** = SIMPSON or set
             **numIntPts** to 7 if **integrationRule** = GAUSS.
         thicknessType

@@ -797,7 +797,7 @@ class MeshPart(PartBase):
             A sequence of Edge objects specifying the edges to seed. The smallest elements will be
             positioned near the end where the normalized curve parameter=0.0. You must provide
             either the **end1Edges** or the **end2Edges** argument or both when **biasMethod** = SINGLE and
-            omit both of them when **biasMethod** = DOUBLE.Note:You can determine which end is which by
+            omit both of them when **biasMethod** = DOUBLE. Note: You can determine which end is which by
             the order of the vertex indices returned by
             [getVertices()](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc).
         end2Edges
@@ -820,7 +820,7 @@ class MeshPart(PartBase):
         minSize
             A Float specifying the desired smallest element size.
         maxSize
-            A Float specifying the desired largest element size.Note:You must specify either the
+            A Float specifying the desired largest element size. Note: You must specify either the
             **ratio** and **number** or **minSize** and **maxSize** pair of arguments.
         constraint
             A SymbolicConstant specifying how closely the seeds must be matched by the mesh. The
@@ -949,7 +949,7 @@ class MeshPart(PartBase):
             mesh control parameters.
         firstElemSize
             A Float specifying the height of the first element layer off boundary. Possible values
-            are 0.0 << **firstElemSize** ≤ 106.
+            are 0.0 < **firstElemSize** ≤ 106.
         growthFactor
             A Float specifying the ratio of heights of any two consecutive element layers. Possible
             values are 1.0 ≤ **growthFactor** ≤ 10.0.
@@ -990,7 +990,7 @@ class MeshPart(PartBase):
             assigned.
         elemTypes
             A sequence of ElemType objects, one for each element shape applicable to the
-            regions.Note:If an ElemType object has an UNKNOWN_*xxx* value for **elemCode**, its order
+            regions. Note: If an ElemType object has an UNKNOWN_*xxx* value for **elemCode**, its order
             will be deduced from the order of other valid ElemType objects within the same
             setElementType command. If no valid ElemType objects can be found, the order will remain
             unchanged.

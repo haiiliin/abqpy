@@ -101,7 +101,7 @@ class DisplacementBC(BoundaryCondition):
         u1
             A Float, a Complex, or a SymbolicConstant specifying the displacement component in the
             1-direction. Possible values for the SymbolicConstant are UNSET and SET. The default
-            value is UNSET.Note:Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3** are optional
+            value is UNSET. Note: Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3** are optional
             arguments, at least one of them must be specified.
         u2
             A Float, a Complex, or a SymbolicConstant specifying the displacement component in the
@@ -182,7 +182,7 @@ class DisplacementBC(BoundaryCondition):
         u1
             A Float, a Complex, or a SymbolicConstant specifying the displacement component in the
             1-direction. Possible values for the SymbolicConstant are UNSET and SET. The default
-            value is UNSET.Note:Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3** are optional
+            value is UNSET. Note: Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3** are optional
             arguments, at least one of them must be specified.
         u2
             A Float, a Complex, or a SymbolicConstant specifying the displacement component in the
