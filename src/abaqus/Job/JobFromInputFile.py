@@ -76,7 +76,7 @@ class JobFromInputFile(Job):
 
     #: A String specifying the time at which to submit the job. If **queue** is empty, the string
     #: syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
-    #: valid according to the system administrator. The default value is an empty string. Note: 
+    #: valid according to the system administrator. The default value is an empty string. Note:
     #: You can use the **atTime** argument when creating a Job object on a Windows workstation;
     #: however, the `at` command is available only on Linux platforms.
     atTime: str = ""
@@ -206,7 +206,7 @@ class JobFromInputFile(Job):
         atTime
             A String specifying the time at which to submit the job. If **queue** is empty, the string
             syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
-            valid according to the system administrator. The default value is an empty string. Note: 
+            valid according to the system administrator. The default value is an empty string. Note:
             You can use the **atTime** argument when creating a Job object on a Windows workstation;
             however, the `at` command is available only on Linux platforms.
         scratch
@@ -327,7 +327,7 @@ class JobFromInputFile(Job):
         atTime
             A String specifying the time at which to submit the job. If **queue** is empty, the string
             syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
-            valid according to the system administrator. The default value is an empty string. Note: 
+            valid according to the system administrator. The default value is an empty string. Note:
             You can use the **atTime** argument when creating a Job object on a Windows workstation;
             however, the `at` command is available only on Linux platforms.
         scratch
