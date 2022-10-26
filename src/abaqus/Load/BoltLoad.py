@@ -32,7 +32,7 @@ class BoltLoad(Load):
     name: str = ""
 
     #: A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the pre-tension section
-    #: normal.Note:*datumAxis* is required only for Solid and Shell regions; it has no meaning
+    #: normal. Note: *datumAxis* is required only for Solid and Shell regions; it has no meaning
     #: for Wire regions.
     datumAxis: DatumAxis = DatumAxis()
 
@@ -70,7 +70,7 @@ class BoltLoad(Load):
         magnitude
             A Float specifying the bolt load magnitude.
         datumAxis
-            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the pre-tension section normal.Note:
+            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the pre-tension section normal. Note: 
             **datumAxis** is applicable only for Solid and Shell regions; it has no meaning for Wire
             regions.
         boltMethod
@@ -117,7 +117,7 @@ class BoltLoad(Load):
             A SymbolicConstant specifying the method of applying the bolt load. Possible values are
             APPLY_FORCE and ADJUST_LENGTH. The default value is APPLY_FORCE.
         datumAxis
-            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the pre-tension section normal.Note:
+            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the pre-tension section normal. Note: 
             **datumAxis** is applicable only for Solid and Shell regions; it has no meaning for Wire
             regions.
         amplitude

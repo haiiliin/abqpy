@@ -36,7 +36,7 @@ class MembraneSection(Section):
     #: A String specifying the name of the material.
     material: str
 
-    #: A Float specifying the thickness for the section. Possible values are **thickness** >>
+    #: A Float specifying the thickness for the section. Possible values are **thickness** >
     #: 0.0. The default value is 1.0.
     thickness: float = 1
 
@@ -89,7 +89,7 @@ class MembraneSection(Section):
         material
             A String specifying the name of the material.
         thickness
-            A Float specifying the thickness for the section. Possible values are **thickness** >>
+            A Float specifying the thickness for the section. Possible values are **thickness** >
             0.0. The default value is 1.0.
         thicknessType
             A SymbolicConstant specifying the distribution used for defining the thickness of the
@@ -136,7 +136,7 @@ class MembraneSection(Section):
         Parameters
         ----------
         thickness
-            A Float specifying the thickness for the section. Possible values are **thickness** >>
+            A Float specifying the thickness for the section. Possible values are **thickness** >
             0.0. The default value is 1.0.
         thicknessType
             A SymbolicConstant specifying the distribution used for defining the thickness of the

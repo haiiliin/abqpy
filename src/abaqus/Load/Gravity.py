@@ -73,7 +73,7 @@ class Gravity(Load):
             A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
         comp1
             A Float or a Complex specifying the component of the load in the
-            1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
+            1-direction. Note: Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
             one of them must be nonzero.
         comp2
             A Float or a Complex specifying the component of the load in the 2-direction.
@@ -118,7 +118,7 @@ class Gravity(Load):
             A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
         comp1
             A Float or a Complex specifying the component of the load in the
-            1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
+            1-direction. Note: Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
             one of them must be nonzero.
         comp2
             A Float or a Complex specifying the component of the load in the 2-direction.

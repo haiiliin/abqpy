@@ -27,7 +27,7 @@ class ResponseSpectrumComponent:
     scale: Optional[float] = None
 
     #: A Float specifying the time duration of the dynamic event, from which this spectrum was
-    #: created.Note:This parameter is ignored unless used with the DSC modal summation rule.
+    #: created. Note: This parameter is ignored unless used with the DSC modal summation rule.
     timeDuration: Optional[float] = None
 
     #: A String specifying the name of the response spectrum specified with the keyword

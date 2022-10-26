@@ -90,7 +90,7 @@ class NormalBehavior:
 
     #: A Float specifying the ratio of the initial stiffness divided by the final stiffness.
     #: This argument is valid only when **stiffnessBehavior** = NONLINEAR. Possible values are 0 ≤
-    #: **stiffnessRatio** << 1. The default value is 0.01.
+    #: **stiffnessRatio** < 1. The default value is 0.01.
     stiffnessRatio: float = 0
 
     #: A Float specifying the ratio of the overclosure at the maximum stiffness divided by the
@@ -101,7 +101,7 @@ class NormalBehavior:
     #: A Float specifying the ratio of the overclosure at the initial stiffness divided by the
     #: overclosure at the maximum stiffness, both relative to the clearance at which the
     #: contact pressure is zero. This argument is valid only when
-    #: **stiffnessBehavior** = NONLINEAR. Possible values are 0 ≤ **stiffnessRatio** << 1. The
+    #: **stiffnessBehavior** = NONLINEAR. Possible values are 0 ≤ **stiffnessRatio** < 1. The
     #: default value is 0.33333.
     lowerQuadraticRatio: float = 0
 
@@ -179,7 +179,7 @@ class NormalBehavior:
         stiffnessRatio
             A Float specifying the ratio of the initial stiffness divided by the final stiffness.
             This argument is valid only when **stiffnessBehavior** = NONLINEAR. Possible values are 0 ≤
-            **stiffnessRatio** << 1. The default value is 0.01.
+            **stiffnessRatio** < 1. The default value is 0.01.
         upperQuadraticFactor
             A Float specifying the ratio of the overclosure at the maximum stiffness divided by the
             characteristic facet length. This argument is valid only when
@@ -188,7 +188,7 @@ class NormalBehavior:
             A Float specifying the ratio of the overclosure at the initial stiffness divided by the
             overclosure at the maximum stiffness, both relative to the clearance at which the
             contact pressure is zero. This argument is valid only when
-            **stiffnessBehavior** = NONLINEAR. Possible values are 0 ≤ **stiffnessRatio** << 1. The
+            **stiffnessBehavior** = NONLINEAR. Possible values are 0 ≤ **stiffnessRatio** < 1. The
             default value is 0.33333.
 
         Returns
