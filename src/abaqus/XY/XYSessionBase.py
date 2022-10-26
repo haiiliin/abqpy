@@ -50,7 +50,7 @@ class XYSessionBase(SessionBase):
         name
             A String specifying the name of the stress line.
         path
-            APath object specifying the end points of the stress line.Note:You must provide either
+            APath object specifying the end points of the stress line. Note: You must provide either
             the **path** argument or the **startPoint** and **endPoint** arguments.
         startPoint
             A String specifying a part instance and a node belonging to that part instance, or a
@@ -65,7 +65,7 @@ class XYSessionBase(SessionBase):
             uniform value of 1.0.
         components
             A sequence of Strings specifying the linearized stress components to be displayed in the
-            xyPlot object. Possible values are "S11", "S22", "S33", "S12", "S23", and "S13".Note:You
+            xyPlot object. Possible values are "S11", "S22", "S33", "S12", "S23", and "S13". Note: You
             must provide at least one of the **components** , **xyMembraneComps** , and **xyBendingComps**
             arguments.
         xyMembraneComps

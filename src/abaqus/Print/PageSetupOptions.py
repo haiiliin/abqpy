@@ -22,7 +22,7 @@ class PageSetupOptions(_OptionsBase):
 
     #: The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the width and height
     #: of the image in the units specified by **units**. Possible numeric values are **imageSize**
-    #: ≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value
+    #: ≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum value
     #: of width and height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 inches).
     imageSize: Union[SymbolicConstant, float] = FIT_TO_PAGE
 
@@ -82,7 +82,7 @@ class PageSetupOptions(_OptionsBase):
         imageSize
             A SymbolicConstant or a pair of Floats specifying the size of the printed image in the
             currently selected units (inches or millimeters). Possible values are FIT_TO_PAGE and
-            SIZE_ON_SCREEN. The default value is FIT_TO_PAGE.Note:The minimum value of width and
+            SIZE_ON_SCREEN. The default value is FIT_TO_PAGE. Note: The minimum value of width and
             height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 inches).
         units
             A SymbolicConstant specifying the units to use for the margins and image size. Possible

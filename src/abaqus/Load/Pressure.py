@@ -69,7 +69,7 @@ class Pressure(Load):
         region
             A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
         magnitude
-            A Float or a Complex specifying the pressure magnitude.Note:*magnitude* is optional if
+            A Float or a Complex specifying the pressure magnitude. Note: *magnitude* is optional if
             **distributionType** = USER_DEFINED.
         hZero
             A Float specifying the height of the zero pressure level when
