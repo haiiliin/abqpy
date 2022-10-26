@@ -60,7 +60,7 @@ class JobFromInputFile(Job):
     type: Literal[C.ANALYSIS, C.SYNTAXCHECK, C.RECOVER] = ANALYSIS
 
     #: A String specifying the name of the queue to which to submit the job. The default value
-    #: is an empty string.Note: You can use the **queue** argument when creating a Job object on
+    #: is an empty string. Note:  You can use the **queue** argument when creating a Job object on
     #: a Windows workstation; however, remote queues are available only on Linux platforms.
     queue: str = ""
 
@@ -76,7 +76,7 @@ class JobFromInputFile(Job):
 
     #: A String specifying the time at which to submit the job. If **queue** is empty, the string
     #: syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
-    #: valid according to the system administrator. The default value is an empty string.Note:
+    #: valid according to the system administrator. The default value is an empty string. Note: 
     #: You can use the **atTime** argument when creating a Job object on a Windows workstation;
     #: however, the `at` command is available only on Linux platforms.
     atTime: str = ""
@@ -90,7 +90,7 @@ class JobFromInputFile(Job):
     userSubroutine: str = ""
 
     #: An Int specifying the number of CPUs to use for this analysis if parallel processing is
-    #: available. Possible values are **numCpus** >> 0. The default value is 1.
+    #: available. Possible values are **numCpus** > 0. The default value is 1.
     numCpus: int = 1
 
     #: An Int specifying the amount of memory available to Abaqus analysis. The value should be
@@ -180,7 +180,7 @@ class JobFromInputFile(Job):
             **type** = RESTART is not currently supported.
         queue
             A String specifying the name of the queue to which to submit the job. The default value
-            is an empty string.Note: You can use the **queue** argument when creating a Job object on
+            is an empty string. Note:  You can use the **queue** argument when creating a Job object on
             a Windows workstation; however, remote queues are available only on Linux platforms.
         waitHours
             An Int specifying the number of hours to wait before submitting the job. This argument
@@ -193,7 +193,7 @@ class JobFromInputFile(Job):
         atTime
             A String specifying the time at which to submit the job. If **queue** is empty, the string
             syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
-            valid according to the system administrator. The default value is an empty string.Note:
+            valid according to the system administrator. The default value is an empty string. Note: 
             You can use the **atTime** argument when creating a Job object on a Windows workstation;
             however, the `at` command is available only on Linux platforms.
         scratch
@@ -204,7 +204,7 @@ class JobFromInputFile(Job):
             value is an empty string.
         numCpus
             An Int specifying the number of CPUs to use for this analysis if parallel processing is
-            available. Possible values are **numCpus** >> 0. The default value is 1.
+            available. Possible values are **numCpus** > 0. The default value is 1.
         memory
             An Int specifying the amount of memory available to Abaqus analysis. The value should be
             expressed in the units supplied in **memoryUnits**. The default value is 90.
@@ -292,7 +292,7 @@ class JobFromInputFile(Job):
             **type** = RESTART is not currently supported.
         queue
             A String specifying the name of the queue to which to submit the job. The default value
-            is an empty string.Note: You can use the **queue** argument when creating a Job object on
+            is an empty string. Note:  You can use the **queue** argument when creating a Job object on
             a Windows workstation; however, remote queues are available only on Linux platforms.
         waitHours
             An Int specifying the number of hours to wait before submitting the job. This argument
@@ -305,7 +305,7 @@ class JobFromInputFile(Job):
         atTime
             A String specifying the time at which to submit the job. If **queue** is empty, the string
             syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be
-            valid according to the system administrator. The default value is an empty string.Note:
+            valid according to the system administrator. The default value is an empty string. Note: 
             You can use the **atTime** argument when creating a Job object on a Windows workstation;
             however, the `at` command is available only on Linux platforms.
         scratch
@@ -316,7 +316,7 @@ class JobFromInputFile(Job):
             value is an empty string.
         numCpus
             An Int specifying the number of CPUs to use for this analysis if parallel processing is
-            available. Possible values are **numCpus** >> 0. The default value is 1.
+            available. Possible values are **numCpus** > 0. The default value is 1.
         memory
             An Int specifying the amount of memory available to Abaqus analysis. The value should be
             expressed in the units supplied in **memoryUnits**. The default value is 90.

@@ -32,7 +32,7 @@ class LightOptions:
     #: each pixel of a facet.The default value is GOURAUD.When set to **shading** =GOURAUD,
     #: lighting values are computed for each corner of a facet and the lighting for the
     #: remainder of the facet is interpolated from the corner values. When **shading** =PHONG,
-    #: lighting values are computed for each pixel of a facet.Note:The shading technique can
+    #: lighting values are computed for each pixel of a facet. Note: The shading technique can
     #: only be set to PHONG when the **shadersAvailable** member of GraphicsOptions is
     #: True.Printed output will only contain Phong shading if the output format is raster and
     #: the **accelerateOffScreen** member of GraphicsOptions is ON.The **renderStyle** setting is
@@ -84,7 +84,7 @@ class LightOptions:
             each pixel of a facet.The default value is GOURAUD.When set to **shading** =GOURAUD,
             lighting values are computed for each corner of a facet and the lighting for the
             remainder of the facet is interpolated from the corner values. When **shading** =PHONG,
-            lighting values are computed for each pixel of a facet.Note:The shading technique can
+            lighting values are computed for each pixel of a facet. Note: The shading technique can
             only be set to PHONG when the **shadersAvailable** member of GraphicsOptions is
             True.Printed output will only contain Phong shading if the output format is raster and
             the **accelerateOffScreen** member of GraphicsOptions is ON.The **renderStyle** setting is
