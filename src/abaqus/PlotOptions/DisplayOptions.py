@@ -1,9 +1,9 @@
-from typing import Optional
+from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import SymbolicConstant, UNDEFORMED
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 from .._OptionsBase import _CopyOptionsBase
 
@@ -23,13 +23,13 @@ class DisplayOptions(_CopyOptionsBase):
     #: A tuple of SymbolicConstants specifying the plot state of the display. Possible values
     #: are UNDEFORMED, DEFORMED, CONTOURS_ON_UNDEF, CONTOURS_ON_DEF, SYMBOLS_ON_UNDEF,
     #: SYMBOLS_ON_DEF, ORIENT_ON_UNDEF, and ORIENT_ON_DEF. The default value is (UNDEFORMED).
-    plotState: Optional[SymbolicConstant] = None
+    plotState: SymbolicConstant = (UNDEFORMED,)
 
     @abaqus_method_doc
     def setValues(
         self,
         options: Optional["DisplayOptions"] = None,
-        plotState: Optional[
+        plotState: Sequence[
             Literal[
                 C.SYMBOLS_ON_DEF,
                 C.ORIENT_ON_UNDEF,
@@ -40,7 +40,7 @@ class DisplayOptions(_CopyOptionsBase):
                 C.SYMBOLS_ON_UNDEF,
                 C.UNDEFORMED,
             ]
-        ] = None,
+        ] = (UNDEFORMED,),
     ):
         """This method modifies the DisplayOptions object.
 
