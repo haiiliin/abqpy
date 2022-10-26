@@ -1,9 +1,10 @@
-from typing import Optional
+from typing import Literal, Optional, Sequence
 
 from abqpy.decorators import abaqus_function_doc
 
 from .Material import Material
 from ..UtilityAndView.abaqusConstants import SymbolicConstant
+from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 """ This command evaluates the behavior of a hyperelastic material under standard test 
 conditions. 
@@ -21,8 +22,8 @@ conditions.
 def evaluateMaterial(
     material: Material,
     simulationName: str,
-    dataSource: Optional[SymbolicConstant] = None,
-    strainEnergyPotentials: Optional[SymbolicConstant] = None,
+    dataSource: Sequence[Literal[C.TEST_DATA, C.COEFFICIENTS]],
+    strainEnergyPotentials: Sequence[Literal[C.POLY_N1]],
     marlowData: Optional[SymbolicConstant] = None,
     marlowDataType: Optional[SymbolicConstant] = None,
     testDataTypes: Optional[SymbolicConstant] = None,
