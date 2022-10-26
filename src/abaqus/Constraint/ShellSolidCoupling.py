@@ -43,7 +43,7 @@ class ShellSolidCoupling(Constraint):
 
     #: A Float specifying the position tolerance. The default value is 0.0.The
     #: **positionTolerance** argument applies only when
-    #: **positionToleranceMethod** = SPECIFIED.Note:Abaqus will not constrain nodes on the solid
+    #: **positionToleranceMethod** = SPECIFIED. Note: Abaqus will not constrain nodes on the solid
     #: face region outside the position tolerance.
     positionTolerance: float = 0
 
@@ -87,7 +87,7 @@ class ShellSolidCoupling(Constraint):
         positionTolerance
             A Float specifying the position tolerance. The default value is 0.0.The
             **positionTolerance** argument applies only when
-            **positionToleranceMethod** = SPECIFIED.Note:Abaqus will not constrain nodes on the solid
+            **positionToleranceMethod** = SPECIFIED. Note: Abaqus will not constrain nodes on the solid
             face region outside the position tolerance.
         influenceDistanceMethod
             A SymbolicConstant specifying the method used to determine the influence distance.
@@ -121,7 +121,7 @@ class ShellSolidCoupling(Constraint):
         positionTolerance
             A Float specifying the position tolerance. The default value is 0.0.The
             **positionTolerance** argument applies only when
-            **positionToleranceMethod** = SPECIFIED.Note:Abaqus will not constrain nodes on the solid
+            **positionToleranceMethod** = SPECIFIED. Note: Abaqus will not constrain nodes on the solid
             face region outside the position tolerance.
         influenceDistanceMethod
             A SymbolicConstant specifying the method used to determine the influence distance.

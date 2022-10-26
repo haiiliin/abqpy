@@ -180,7 +180,7 @@ class BoundaryConditionModel(ModelBase):
         a1
             A Float or a SymbolicConstant specifying the acceleration component in the 1-direction.
             Possible values for the SymbolicConstant are UNSET and SET. The default value is
-            UNSET.Note:Although **a1**, **a2**, **a3**, **ar1**, **ar2**, and **ar3** are optional arguments, at
+            UNSET. Note: Although **a1**, **a2**, **a3**, **ar1**, **ar2**, and **ar3** are optional arguments, at
             least one of them must be specified.
         a2
             A Float or a SymbolicConstant specifying the acceleration component in the 2-direction.
@@ -412,7 +412,7 @@ class BoundaryConditionModel(ModelBase):
         a1
             A Float or a SymbolicConstant specifying the acceleration component in the connector's
             local 1-direction. Possible values for the SymbolicConstant are UNSET and SET. The
-            default value is UNSET.Note:Although **a1**, **a2**, **a3**, **ar1**, **ar2**, and **ar3** are
+            default value is UNSET. Note: Although **a1**, **a2**, **a3**, **ar1**, **ar2**, and **ar3** are
             optional arguments, at least one of them must be specified.
         a2
             A Float or a SymbolicConstant specifying the acceleration component in the connector's
@@ -518,7 +518,7 @@ class BoundaryConditionModel(ModelBase):
         u1
             A Float, a Complex, or a SymbolicConstant specifying the displacement component in the
             connector's local 1-direction. Possible values for the SymbolicConstant are UNSET and
-            SET. The default value is UNSET.Note:Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3**
+            SET. The default value is UNSET. Note: Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3**
             are optional arguments, at least one of them must be specified.
         u2
             A Float, a Complex, or a SymbolicConstant specifying the displacement component in the
@@ -629,7 +629,7 @@ class BoundaryConditionModel(ModelBase):
         v1
             A Float or a SymbolicConstant specifying the velocity component in the connector's local
             1-direction. Possible values for the SymbolicConstant are UNSET and SET. The default
-            value is UNSET.Note:Although **v1**, **v2**, **v3**, **vr1**, **vr2**, and **vr3** are optional
+            value is UNSET. Note: Although **v1**, **v2**, **v3**, **vr1**, **vr2**, and **vr3** are optional
             arguments, at least one of them must be specified.
         v2
             A Float or a SymbolicConstant specifying the velocity component in the connector's local
@@ -794,7 +794,7 @@ class BoundaryConditionModel(ModelBase):
         u1
             A Float, a Complex, or a SymbolicConstant specifying the displacement component in the
             1-direction. Possible values for the SymbolicConstant are UNSET and SET. The default
-            value is UNSET.Note:Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3** are optional
+            value is UNSET. Note: Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3** are optional
             arguments, at least one of them must be specified.
         u2
             A Float, a Complex, or a SymbolicConstant specifying the displacement component in the
@@ -1736,7 +1736,7 @@ class BoundaryConditionModel(ModelBase):
         v1
             A Float or a SymbolicConstant specifying the velocity component in the 1-direction.
             Possible values for the SymbolicConstant are UNSET and SET. The default value is
-            UNSET.Note:Although **v1**, **v2**, **v3**, **vr1**, **vr2**, and **vr3** are optional arguments, at
+            UNSET. Note: Although **v1**, **v2**, **v3**, **vr1**, **vr2**, and **vr3** are optional arguments, at
             least one of them must be specified.
         v2
             A Float or a SymbolicConstant specifying the velocity component in the 2-direction.

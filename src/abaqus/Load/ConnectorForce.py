@@ -79,7 +79,7 @@ class ConnectorForce(Load):
             specified, **fastenerName** must also be specified. The default value is an empty string.
         f1
             A Float or a Complex specifying the connector force component in the connector's local
-            1-direction.Note:Although **f1**, **f2**, and **f3** are optional arguments, at least one of
+            1-direction. Note: Although **f1**, **f2**, and **f3** are optional arguments, at least one of
             them must be nonzero.
         f2
             A Float or a Complex specifying the connector force component in the connector's local
@@ -129,7 +129,7 @@ class ConnectorForce(Load):
             specified, **fastenerName** must also be specified. The default value is an empty string.
         f1
             A Float or a Complex specifying the connector force component in the connector's local
-            1-direction.Note:Although **f1**, **f2**, and **f3** are optional arguments, at least one of
+            1-direction. Note: Although **f1**, **f2**, and **f3** are optional arguments, at least one of
             them must be nonzero.
         f2
             A Float or a Complex specifying the connector force component in the connector's local
