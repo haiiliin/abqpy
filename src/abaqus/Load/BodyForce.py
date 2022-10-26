@@ -77,7 +77,7 @@ class BodyForce(Load):
             UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
         comp1
             A Float or a Complex specifying the body force component in the
-            1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
+            1-direction. Note: Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
             one of them must be nonzero unless **distributionType** = USER_DEFINED.
         comp2
             A Float or a Complex specifying the body force component in the 2-direction.
@@ -119,7 +119,7 @@ class BodyForce(Load):
             UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
         comp1
             A Float or a Complex specifying the body force component in the
-            1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
+            1-direction. Note: Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
             one of them must be nonzero unless **distributionType** = USER_DEFINED.
         comp2
             A Float or a Complex specifying the body force component in the 2-direction.

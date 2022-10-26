@@ -72,7 +72,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         u1
             A Float or a SymbolicConstant specifying the displacement component in the 1-direction.
             Possible values for the SymbolicConstant are UNSET and SET. The default value is
-            UNSET.Note:Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3** are optional arguments, at
+            UNSET. Note: Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3** are optional arguments, at
             least one of them must be specified.
         u2
             A Float or a SymbolicConstant specifying the displacement component in the 2-direction.
@@ -134,7 +134,7 @@ class DisplacementAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         u1
             A Float or a SymbolicConstant specifying the displacement component in the 1-direction.
             Possible values for the SymbolicConstant are UNSET and SET. The default value is
-            UNSET.Note:Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3** are optional arguments, at
+            UNSET. Note: Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3** are optional arguments, at
             least one of them must be specified.
         u2
             A Float or a SymbolicConstant specifying the displacement component in the 2-direction.

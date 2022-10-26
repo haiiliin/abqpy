@@ -29,12 +29,12 @@ class RotationalBodyForce(Load):
     distributionType: SymbolicConstant = UNIFORM
 
     #: A Boolean specifying whether or not the effect of the load is centrifugal. The default
-    #: value is OFF.Note:At least one of **centrifugal** or **rotaryAcceleration** must be
+    #: value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** must be
     #: specified and only one must have the value ON.
     centrifugal: Boolean = OFF
 
     #: A Boolean specifying whether or not the effect of the load is rotary acceleration. The
-    #: default value is OFF.Note:At least one of **centrifugal** or **rotaryAcceleration** must be
+    #: default value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** must be
     #: specified and only one must have the value ON.
     rotaryAcceleration: Boolean = OFF
 
@@ -98,11 +98,11 @@ class RotationalBodyForce(Load):
             empty string.
         centrifugal
             A Boolean specifying whether or not the effect of the load is centrifugal. The default
-            value is OFF.Note:At least one of **centrifugal** or **rotaryAcceleration** must be
+            value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** must be
             specified and only one must have the value ON.
         rotaryAcceleration
             A Boolean specifying whether or not the effect of the load is rotary acceleration. The
-            default value is OFF.Note:At least one of **centrifugal** or **rotaryAcceleration** must be
+            default value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** must be
             specified and only one must have the value ON.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
@@ -139,11 +139,11 @@ class RotationalBodyForce(Load):
             empty string.
         centrifugal
             A Boolean specifying whether or not the effect of the load is centrifugal. The default
-            value is OFF.Note:At least one of **centrifugal** or **rotaryAcceleration** must be
+            value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** must be
             specified and only one must have the value ON.
         rotaryAcceleration
             A Boolean specifying whether or not the effect of the load is rotary acceleration. The
-            default value is OFF.Note:At least one of **centrifugal** or **rotaryAcceleration** must be
+            default value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** must be
             specified and only one must have the value ON.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.

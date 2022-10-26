@@ -43,7 +43,7 @@ class FilmCondition(Interaction):
     sinkTemperature: float = 0
 
     #: A String specifying the name of the Amplitude object that gives the variation of the
-    #: sink temperature, θ0θ0, with time. The default value is an empty string.Note:Use empty
+    #: sink temperature, θ0θ0, with time. The default value is an empty string. Note: Use empty
     #: string in an Abaqus/Standard analysis to specify that the reference sink temperature is
     #: applied immediately at the beginning of the step or linearly over the step. Use empty
     #: string in an Abaqus/Explicit analysis to specify that the reference sink temperature is
@@ -121,7 +121,7 @@ class FilmCondition(Interaction):
             A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.
         sinkAmplitude
             A String specifying the name of the Amplitude object that gives the variation of the
-            sink temperature, θ0θ0, with time. The default value is an empty string.Note:Use empty
+            sink temperature, θ0θ0, with time. The default value is an empty string. Note: Use empty
             string in an Abaqus/Standard analysis to specify that the reference sink temperature is
             applied immediately at the beginning of the step or linearly over the step. Use empty
             string in an Abaqus/Explicit analysis to specify that the reference sink temperature is
@@ -182,7 +182,7 @@ class FilmCondition(Interaction):
             A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.
         sinkAmplitude
             A String specifying the name of the Amplitude object that gives the variation of the
-            sink temperature, θ0θ0, with time. The default value is an empty string.Note:Use empty
+            sink temperature, θ0θ0, with time. The default value is an empty string. Note: Use empty
             string in an Abaqus/Standard analysis to specify that the reference sink temperature is
             applied immediately at the beginning of the step or linearly over the step. Use empty
             string in an Abaqus/Explicit analysis to specify that the reference sink temperature is

@@ -235,7 +235,7 @@ class PartFeature(BaseFeature):
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the shape to be revolved.
         angle
             A Float specifying the revolve angle in degrees. Possible values are 10-4 ≤ **angle** ≤
-            360.Note:If **pitch** >>0, there is no upper limit for **angle**.
+            360. Note: If **pitch** > 0, there is no upper limit for **angle**.
         pitch
             A Float specifying the pitch. The pitch is the distance traveled along the axial
             direction, measured between corresponding points on the sketch when it has completed one
@@ -391,7 +391,7 @@ class PartFeature(BaseFeature):
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the shape to be revolved.
         angle
             A Float specifying the revolve angle in degrees. Possible values are 0 ≤ **angle** ≤
-            360.Note:If **pitch** >> 0, there is no upper limit for **angle**.
+            360. Note: If **pitch** > 0, there is no upper limit for **angle**.
         pitch
             A Float specifying the pitch. The pitch is the distance traveled along the axial
             direction, measured between corresponding points on the sketch when it has completed one
@@ -728,7 +728,7 @@ class PartFeature(BaseFeature):
             cut. The default is to not specify a depth.
         upToFace
             A Face specifying the face up to which to cut. If **upToFace** is specified, the cut will
-            be an up-to-face cut. The default is to not specify a face.Note:If neither **depth** nor
+            be an up-to-face cut. The default is to not specify a face. Note: If neither **depth** nor
             **upToFace** is specified, the cut will be a through-all cut.
         draftAngle
             A Float specifying the draft angle in degrees. Possible values are -90.0 ≤ **draftAngle**
@@ -803,16 +803,16 @@ class PartFeature(BaseFeature):
             **startCondition** = SPECIFIED. Possible values are 0.0 ≤ **startTangent** ≤ 180.0.
         startMagnitude
             A Float specifying the magnitude of the **startTangent**. You must specify the
-            **startMagnitude** argument if **startCondition** = SPECIFIED. Possible values are 0.0 <<
-            **startMagnitude** << 100.0.
+            **startMagnitude** argument if **startCondition** = SPECIFIED. Possible values are 0.0 <
+            **startMagnitude** < 100.0.
         endTangent
             A Float specifying the angle in degrees of the tangent with respect to the plane in
             which the end section lies. You must specify the **endTangent** argument if
             **startCondition** = SPECIFIED. Possible values are 0.0 ≤ **endTangent** ≤ 180.0.
         endMagnitude
             A Float specifying the magnitude of the **endTangent**. This argument is to be used when
-            the **endCondition** argument has the value SPECIFIED. Possible values are 0.0 <<
-            **endMagnitude** << 100.0.
+            the **endCondition** argument has the value SPECIFIED. Possible values are 0.0 <
+            **endMagnitude** < 100.0.
         globalSmoothing
             A Boolean specifying whether each path defined in the **paths** argument is applied
             locally or globally.If the path is applied locally, its effect is felt only on faces
@@ -1750,16 +1750,16 @@ class PartFeature(BaseFeature):
             **startCondition** = SPECIFIED. Possible values are 0.0 ≤ **startTangent** ≤ 180.0.
         startMagnitude
             A Float specifying the magnitude of the **startTangent**. You must specify the
-            **startMagnitude** argument if **startCondition** = SPECIFIED. Possible values are 0.0 <<
-            **startMagnitude** << 100.0.
+            **startMagnitude** argument if **startCondition** = SPECIFIED. Possible values are 0.0 <
+            **startMagnitude** < 100.0.
         endTangent
             A Float specifying the angle in degrees of the tangent with respect to the plane in
             which the end section lies. You must specify the **endTangent** argument if
             **startCondition** = SPECIFIED. Possible values are 0.0 ≤ **endTangent** ≤ 180.0.
         endMagnitude
             A Float specifying the magnitude of the **endTangent**. This argument is to be used when
-            the **endCondition** argument has the value SPECIFIED. Possible values are 0.0 <<
-            **endMagnitude** << 100.0.
+            the **endCondition** argument has the value SPECIFIED. Possible values are 0.0 <
+            **endMagnitude** < 100.0.
         paths
             A sequence of sequences of edges that pass through each section in the loft feature.
             Each sequence specifies a path followed by the face or an edge created by a loft
@@ -2077,16 +2077,16 @@ class PartFeature(BaseFeature):
             **startCondition** = SPECIFIED. Possible values are 0.0 ≤ **startTangent** ≤ 180.0.
         startMagnitude
             A Float specifying the magnitude of the **startTangent**. You must specify the
-            **startMagnitude** argument if **startCondition** = SPECIFIED. Possible values are 0.0 <<
-            **startMagnitude** << 100.0.
+            **startMagnitude** argument if **startCondition** = SPECIFIED. Possible values are 0.0 <
+            **startMagnitude** < 100.0.
         endTangent
             A Float specifying the angle in degrees of the tangent with respect to the plane in
             which the end section lies. You must specify the **endTangent** argument if
             **startCondition** = SPECIFIED. Possible values are 0.0 ≤ **endTangent** ≤ 180.0.
         endMagnitude
             A Float specifying the magnitude of the **endTangent**. This argument is to be used when
-            the **endCondition** argument has the value SPECIFIED. Possible values are 0.0 <<
-            **endMagnitude** << 100.0.
+            the **endCondition** argument has the value SPECIFIED. Possible values are 0.0 <
+            **endMagnitude** < 100.0.
         paths
             A sequence of sequences of edges that pass through each section in the loft feature.
             Each sequence specifies a path followed by the face or an edge created by a loft
