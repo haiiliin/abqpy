@@ -101,7 +101,7 @@ class ConnAccelerationBC(BoundaryCondition):
         a1
             A Float or a SymbolicConstant specifying the acceleration component in the connector's
             local 1-direction. Possible values for the SymbolicConstant are UNSET and SET. The
-            default value is UNSET.Note:Although **a1**, **a2**, **a3**, **ar1**, **ar2**, and **ar3** are
+            default value is UNSET. Note: Although **a1**, **a2**, **a3**, **ar1**, **ar2**, and **ar3** are
             optional arguments, at least one of them must be specified.
         a2
             A Float or a SymbolicConstant specifying the acceleration component in the connector's
@@ -175,7 +175,7 @@ class ConnAccelerationBC(BoundaryCondition):
         a1
             A Float or a SymbolicConstant specifying the acceleration component in the connector's
             local 1-direction. Possible values for the SymbolicConstant are UNSET and SET. The
-            default value is UNSET.Note:Although **a1**, **a2**, **a3**, **ar1**, **ar2**, and **ar3** are
+            default value is UNSET. Note: Although **a1**, **a2**, **a3**, **ar1**, **ar2**, and **ar3** are
             optional arguments, at least one of them must be specified.
         a2
             A Float or a SymbolicConstant specifying the acceleration component in the connector's

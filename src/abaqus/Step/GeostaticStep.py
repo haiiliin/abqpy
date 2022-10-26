@@ -81,7 +81,7 @@ class GeostaticStep(AnalysisStep):
     #: default value is None.
     utol: Optional[float] = None
 
-    #: A Float specifying the total time period. The default value is 1.0.Note:This parameter
+    #: A Float specifying the total time period. The default value is 1.0. Note: This parameter
     #: is ignored unless **timeIncrementationMethod** = AUTOMATIC.
     timePeriod: float = 1
 
@@ -96,17 +96,17 @@ class GeostaticStep(AnalysisStep):
     maxNumInc: int
 
     #: A Float specifying the initial time increment. The default value is the total time
-    #: period for the step.Note:This parameter is ignored unless
+    #: period for the step. Note: This parameter is ignored unless
     #: **timeIncrementationMethod** = AUTOMATIC.
     initialInc: Optional[float] = None
 
     #: A Float specifying the minimum time increment allowed. The default value is the smaller
-    #: of the suggested initial time increment or 10−5 times the total time period.Note:This
+    #: of the suggested initial time increment or 10−5 times the total time period. Note: This
     #: parameter is ignored unless **timeIncrementationMethod** = AUTOMATIC.
     minInc: Optional[float] = None
 
     #: A Float specifying the maximum time increment allowed. The default value is the total
-    #: time period for the step.Note:This parameter is ignored unless
+    #: time period for the step. Note: This parameter is ignored unless
     #: **timeIncrementationMethod** = AUTOMATIC.
     maxInc: Optional[float] = None
 
@@ -265,7 +265,7 @@ class GeostaticStep(AnalysisStep):
             None or a Float specifying the tolerance for maximum change of displacements. The
             default value is None.
         timePeriod
-            A Float specifying the total time period. The default value is 1.0.Note:This parameter
+            A Float specifying the total time period. The default value is 1.0. Note: This parameter
             is ignored unless **timeIncrementationMethod** = AUTOMATIC.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
@@ -277,15 +277,15 @@ class GeostaticStep(AnalysisStep):
                 The `maxNumInc` attribute was added to the GeostaticStep class.
         initialInc
             A Float specifying the initial time increment. The default value is the total time
-            period for the step.Note:This parameter is ignored unless
+            period for the step. Note: This parameter is ignored unless
             **timeIncrementationMethod** = AUTOMATIC.
         minInc
             A Float specifying the minimum time increment allowed. The default value is the smaller
-            of the suggested initial time increment or 10−5 times the total time period.Note:This
+            of the suggested initial time increment or 10−5 times the total time period. Note: This
             parameter is ignored unless **timeIncrementationMethod** = AUTOMATIC.
         maxInc
             A Float specifying the maximum time increment allowed. The default value is the total
-            time period for the step.Note:This parameter is ignored unless
+            time period for the step. Note: This parameter is ignored unless
             **timeIncrementationMethod** = AUTOMATIC.
 
         Returns
@@ -345,22 +345,22 @@ class GeostaticStep(AnalysisStep):
             None or a Float specifying the tolerance for maximum change of displacements. The
             default value is None.
         timePeriod
-            A Float specifying the total time period. The default value is 1.0.Note:This parameter
+            A Float specifying the total time period. The default value is 1.0. Note: This parameter
             is ignored unless **timeIncrementationMethod** = AUTOMATIC.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
             are FIXED and AUTOMATIC. The default value is AUTOMATIC.
         initialInc
             A Float specifying the initial time increment. The default value is the total time
-            period for the step.Note:This parameter is ignored unless
+            period for the step. Note: This parameter is ignored unless
             **timeIncrementationMethod** = AUTOMATIC.
         minInc
             A Float specifying the minimum time increment allowed. The default value is the smaller
-            of the suggested initial time increment or 10−5 times the total time period.Note:This
+            of the suggested initial time increment or 10−5 times the total time period. Note: This
             parameter is ignored unless **timeIncrementationMethod** = AUTOMATIC.
         maxInc
             A Float specifying the maximum time increment allowed. The default value is the total
-            time period for the step.Note:This parameter is ignored unless
+            time period for the step. Note: This parameter is ignored unless
             **timeIncrementationMethod** = AUTOMATIC.
 
         Raises

@@ -78,8 +78,8 @@ class ContourIntegral(Crack):
     qVectors: tuple = ()
 
     #: A Float specifying the position of the midside node along the edges of the second-order
-    #: elements that radiate from the crack tip. Possible values are 0.0 << **midNodeParameter**
-    #: << 1.0. The default value is 0.5.
+    #: elements that radiate from the crack tip. Possible values are 0.0 < **midNodeParameter**
+    #: < 1.0. The default value is 0.5.
     midNodePosition: float = 0
 
     #: A SymbolicConstant specifying the crack-tip singularity. Possible values are NONE,
@@ -210,8 +210,8 @@ class ContourIntegral(Crack):
             default value is an empty sequence.
         midNodePosition
             A Float specifying the position of the midside node along the edges of the second-order
-            elements that radiate from the crack tip. Possible values are 0.0 << **midNodeParameter**
-            << 1.0. The default value is 0.5.
+            elements that radiate from the crack tip. Possible values are 0.0 < **midNodeParameter**
+            < 1.0. The default value is 0.5.
         collapsedElementAtTip
             A SymbolicConstant specifying the crack-tip singularity. Possible values are NONE,
             SINGLE_NODE, and DUPLICATE_NODES. The default value is NONE.
