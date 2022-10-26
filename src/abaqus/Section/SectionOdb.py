@@ -64,11 +64,11 @@ class SectionOdb(OdbBase):
         material
             A String specifying the name of the material.
         thickness
-            A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
+            A Float specifying the thickness of the section. Possible values are **thickness** > 0.0.
             The default value is 1.0.
         order
             An Int specifying the number of ninth-order polynomials that will be used to resolve the
-            variation of the acoustic field in the infinite direction. Possible values are 0 <<
+            variation of the acoustic field in the infinite direction. Possible values are 0 <
             **order** ≤ 10. The default value is 10.
 
         Returns
@@ -99,7 +99,7 @@ class SectionOdb(OdbBase):
         name
             A String specifying the repository key.
         thickness
-            A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
+            A Float specifying the thickness of the section. Possible values are **thickness** > 0.0.
             The default value is 1.0.
 
         Returns
@@ -861,7 +861,7 @@ class SectionOdb(OdbBase):
             when **thicknessType** = UNIFORM. The default value is 0.0.
         numIntPts
             An Int specifying the number of integration points to be used through the section.
-            Possible values are **numIntPts** >> 0. The default value is 5.To use the default settings
+            Possible values are **numIntPts** > 0. The default value is 5.To use the default settings
             of the analysis products, set **numIntPts** to 5 if **integrationRule** = SIMPSON or set
             **numIntPts** to 7 if **integrationRule** = GAUSS.
         thicknessType
@@ -1005,7 +1005,7 @@ class SectionOdb(OdbBase):
         material
             A String specifying the name of the material.
         thickness
-            A Float specifying the thickness for the section. Possible values are **thickness** >>
+            A Float specifying the thickness for the section. Possible values are **thickness** >
             0.0. The default value is 1.0.
         thicknessType
             A SymbolicConstant specifying the distribution used for defining the thickness of the
@@ -1115,7 +1115,7 @@ class SectionOdb(OdbBase):
         material
             A String specifying the name of the material.
         thickness
-            A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
+            A Float specifying the thickness of the section. Possible values are **thickness** > 0.0.
             The default value is 1.0.
         wedgeAngle1
             A Float specifying the value of the x component of the angle between the bounding
@@ -1188,7 +1188,7 @@ class SectionOdb(OdbBase):
             A String specifying the name of the material.
         area
             A Float specifying the cross-sectional area for the section. Possible values are **area**
-            >> 0. The default value is 1.0.
+            > 0. The default value is 1.0.
 
         Returns
         -------

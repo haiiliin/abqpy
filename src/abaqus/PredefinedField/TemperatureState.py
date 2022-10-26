@@ -83,7 +83,7 @@ class TemperatureState(PredefinedFieldState):
 
     #: The SymbolicConstant UNSET or a String specifying the name of the amplitude reference.
     #: The SymbolicConstant UNSET should be used if the predefined field has no amplitude
-    #: reference. The default value is UNSET.Note:*amplitude* should be given only if it is
+    #: reference. The default value is UNSET. Note: *amplitude* should be given only if it is
     #: valid for the specified step.
     amplitude: SymbolicConstant = UNSET
 
