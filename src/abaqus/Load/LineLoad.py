@@ -78,7 +78,7 @@ class LineLoad(Load):
             empty string.
         comp1
             A Float or a Complex specifying the component of the load in the global or the beam
-            local 1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at
+            local 1-direction. Note: Although **comp1**, **comp2**, and **comp3** are optional arguments, at
             least one of them must be nonzero unless **distributionType** = USER_DEFINED.
         comp2
             A Float or a Complex specifying the component of the load in the global or the beam
@@ -125,7 +125,7 @@ class LineLoad(Load):
             empty string.
         comp1
             A Float or a Complex specifying the component of the load in the global or the beam
-            local 1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at
+            local 1-direction. Note: Although **comp1**, **comp2**, and **comp3** are optional arguments, at
             least one of them must be nonzero unless **distributionType** = USER_DEFINED.
         comp2
             A Float or a Complex specifying the component of the load in the global or the beam
