@@ -69,8 +69,8 @@ class BasicOptions(_CopyOptionsBase):
     #: coordinate system. The default value is OFF.
     cameraFollowsRotation: Boolean = OFF
 
-    #: A Float specifying the nodal averaging threshold percentage. Possible values are 0 <<
-    #: **averagingThreshold** << 100. The default value is 75.0.
+    #: A Float specifying the nodal averaging threshold percentage. Possible values are 0 <
+    #: **averagingThreshold** < 100. The default value is 75.0.
     averagingThreshold: float = 75
 
     #: A SymbolicConstant specifying the quantity to plot. Possible values are FIELD_OUTPUT and
@@ -241,7 +241,7 @@ class BasicOptions(_CopyOptionsBase):
     sweepSectorStartAngle: float = 0
 
     #: A Float specifying the angle (in degrees) through which to sweep cyclic symmetry sectors
-    #: when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 <<
+    #: when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 <
     #: **sweepSectorEndAngle** ≤ 360. The default value is 360.0.
     sweepSectorEndAngle: float = 360
 
@@ -556,8 +556,8 @@ class BasicOptions(_CopyOptionsBase):
             A Boolean specifying whether the camera, when it moves, follows the rotation of the
             coordinate system. The default value is OFF.
         averagingThreshold
-            A Float specifying the nodal averaging threshold percentage. Possible values are 0 <<
-            **averagingThreshold** << 100. The default value is 75.0.
+            A Float specifying the nodal averaging threshold percentage. Possible values are 0 <
+            **averagingThreshold** < 100. The default value is 75.0.
         quantityToPlot
             A SymbolicConstant specifying the quantity to plot. Possible values are FIELD_OUTPUT and
             DISCONTINUITIES. The default value is FIELD_OUTPUT.
@@ -690,7 +690,7 @@ class BasicOptions(_CopyOptionsBase):
             **sweepSectorStartAngle** ≤ 360. The default value is 0.0.
         sweepSectorEndAngle
             A Float specifying the angle (in degrees) through which to sweep cyclic symmetry sectors
-            when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 <<
+            when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 <
             **sweepSectorEndAngle** ≤ 360. The default value is 360.0.
         extrudeArs
             A Boolean specifying whether to extrude analytical surfaces. The default value is ON or

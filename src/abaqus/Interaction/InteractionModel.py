@@ -699,7 +699,7 @@ class InteractionModel(
             A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.
         sinkAmplitude
             A String specifying the name of the Amplitude object that gives the variation of the
-            sink temperature, θ0θ0, with time. The default value is an empty string.Note:Use None in
+            sink temperature, θ0θ0, with time. The default value is an empty string. Note: Use None in
             an Abaqus/Standard analysis to specify that the reference sink temperature is applied
             immediately at the beginning of the step or linearly over the step. Use None in an
             Abaqus/Explicit analysis to specify that the reference sink temperature is applied
@@ -710,7 +710,7 @@ class InteractionModel(
             The default value is 0.0.
         filmCoeffAmplitude
             A String specifying the name of the Amplitude object that gives the variation of the
-            film coefficient, hh, with time. The default value is an empty string.Note:Use None in
+            film coefficient, hh, with time. The default value is an empty string. Note: Use None in
             an Abaqus/Standard analysis to specify that the reference film coefficient is applied
             immediately at the beginning of the step or linearly over the step. Use None in an
             Abaqus/Explicit analysis to specify that the reference film coefficient is applied
@@ -782,7 +782,7 @@ class InteractionModel(
             A Float specifying the reference ambient temperature, θ0θ0.
         ambientTemperatureAmp
             A String specifying the name of the Amplitude object that gives the variation of the
-            ambient temperature with time.Note:Use None in an Abaqus/Standard analysis to specify
+            ambient temperature with time. Note: Use None in an Abaqus/Standard analysis to specify
             that the reference ambient temperature is applied immediately at the beginning of the
             step or linearly over the step. Use None in an Abaqus/Explicit analysis to specify that
             the reference ambient temperature is applied throughout the step.
@@ -794,7 +794,7 @@ class InteractionModel(
         explicitRegionType
             A SymbolicConstant specifying how the concentrated radiation is applied to the boundary
             of an adaptive mesh domain. Possible values are LAGRANGIAN, SLIDING, and EULERIAN. The
-            default value is LAGRANGIAN.Note:*explicitRegionType* applies only during an
+            default value is LAGRANGIAN. Note: *explicitRegionType* applies only during an
             Abaqus/Explicit analysis.
         field
             A String specifying the name of the AnalyticalField object associated with this
@@ -1232,7 +1232,7 @@ class InteractionModel(
             A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.
         sinkAmplitude
             A String specifying the name of the Amplitude object that gives the variation of the
-            sink temperature, θ0θ0, with time. The default value is an empty string.Note:Use empty
+            sink temperature, θ0θ0, with time. The default value is an empty string. Note: Use empty
             string in an Abaqus/Standard analysis to specify that the reference sink temperature is
             applied immediately at the beginning of the step or linearly over the step. Use empty
             string in an Abaqus/Explicit analysis to specify that the reference sink temperature is
@@ -1729,7 +1729,7 @@ class InteractionModel(
             when **radiationType** = AMBIENT. The default value is 0.0.
         ambientTemperatureAmp
             A String specifying the name of the Amplitude object that gives the variation of the
-            ambient temperature with time.Note:Use None in an Abaqus/Standard analysis to specify
+            ambient temperature with time. Note: Use None in an Abaqus/Standard analysis to specify
             that the reference ambient temperature is applied immediately at the beginning of the
             step or linearly over the step. Use None in an Abaqus/Explicit analysis to specify that
             the reference ambient temperature is applied throughout the step. This argument applies

@@ -56,7 +56,7 @@ class Coexecution:
     status: Optional[SymbolicConstant] = None
 
     #: A String specifying the name of the queue to which to submit the co-execution. The
-    #: default value is an empty string.Note:You can use the **queue** argument when creating a
+    #: default value is an empty string. Note: You can use the **queue** argument when creating a
     #: Coexecution object on a Windows workstation; however, remote queues are available only
     #: on Linux platforms.
     queue: str = ""
@@ -64,7 +64,7 @@ class Coexecution:
     #: A String specifying the time at which to submit the co-execution. If **queue** is empty,
     #: the string syntax must be valid for the Linux `at` command. If **queue** is set, the
     #: syntax must be valid according to the system administrator. The default value is an
-    #: empty string.Note:You can use the **atTime** argument when creating a Coexecution object
+    #: empty string. Note: You can use the **atTime** argument when creating a Coexecution object
     #: on a Windows workstation; however, the `at` command is available only on Linux
     #: platforms.
     atTime: str = ""

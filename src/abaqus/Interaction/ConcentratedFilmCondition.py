@@ -59,7 +59,7 @@ class ConcentratedFilmCondition(Interaction):
     sinkTemperature: float = 0
 
     #: A String specifying the name of the Amplitude object that gives the variation of the
-    #: sink temperature, θ0θ0, with time. The default value is an empty string.Note:Use None in
+    #: sink temperature, θ0θ0, with time. The default value is an empty string. Note: Use None in
     #: an Abaqus/Standard analysis to specify that the reference sink temperature is applied
     #: immediately at the beginning of the step or linearly over the step. Use None in an
     #: Abaqus/Explicit analysis to specify that the reference sink temperature is applied
@@ -72,7 +72,7 @@ class ConcentratedFilmCondition(Interaction):
     filmCoeff: float = 0
 
     #: A String specifying the name of the Amplitude object that gives the variation of the
-    #: film coefficient, hh, with time. The default value is an empty string.Note:Use None in
+    #: film coefficient, hh, with time. The default value is an empty string. Note: Use None in
     #: an Abaqus/Standard analysis to specify that the reference film coefficient is applied
     #: immediately at the beginning of the step or linearly over the step. Use None in an
     #: Abaqus/Explicit analysis to specify that the reference film coefficient is applied
@@ -147,7 +147,7 @@ class ConcentratedFilmCondition(Interaction):
             A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.
         sinkAmplitude
             A String specifying the name of the Amplitude object that gives the variation of the
-            sink temperature, θ0θ0, with time. The default value is an empty string.Note:Use None in
+            sink temperature, θ0θ0, with time. The default value is an empty string. Note: Use None in
             an Abaqus/Standard analysis to specify that the reference sink temperature is applied
             immediately at the beginning of the step or linearly over the step. Use None in an
             Abaqus/Explicit analysis to specify that the reference sink temperature is applied
@@ -158,7 +158,7 @@ class ConcentratedFilmCondition(Interaction):
             The default value is 0.0.
         filmCoeffAmplitude
             A String specifying the name of the Amplitude object that gives the variation of the
-            film coefficient, hh, with time. The default value is an empty string.Note:Use None in
+            film coefficient, hh, with time. The default value is an empty string. Note: Use None in
             an Abaqus/Standard analysis to specify that the reference film coefficient is applied
             immediately at the beginning of the step or linearly over the step. Use None in an
             Abaqus/Explicit analysis to specify that the reference film coefficient is applied
@@ -218,7 +218,7 @@ class ConcentratedFilmCondition(Interaction):
             A Float specifying the reference sink temperature, θ0θ0. The default value is 0.0.
         sinkAmplitude
             A String specifying the name of the Amplitude object that gives the variation of the
-            sink temperature, θ0θ0, with time. The default value is an empty string.Note:Use None in
+            sink temperature, θ0θ0, with time. The default value is an empty string. Note: Use None in
             an Abaqus/Standard analysis to specify that the reference sink temperature is applied
             immediately at the beginning of the step or linearly over the step. Use None in an
             Abaqus/Explicit analysis to specify that the reference sink temperature is applied
@@ -229,7 +229,7 @@ class ConcentratedFilmCondition(Interaction):
             The default value is 0.0.
         filmCoeffAmplitude
             A String specifying the name of the Amplitude object that gives the variation of the
-            film coefficient, hh, with time. The default value is an empty string.Note:Use None in
+            film coefficient, hh, with time. The default value is an empty string. Note: Use None in
             an Abaqus/Standard analysis to specify that the reference film coefficient is applied
             immediately at the beginning of the step or linearly over the step. Use None in an
             Abaqus/Explicit analysis to specify that the reference film coefficient is applied
