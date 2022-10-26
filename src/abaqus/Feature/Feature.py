@@ -1180,7 +1180,7 @@ class Feature:
             An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object.
         parameter
             A Float specifying the distance along **edge** to the DatumPoint object. Possible values
-            are 0 << **parameter** << 1.
+            are 0 < **parameter** < 1.
 
         Returns
         -------
@@ -1239,7 +1239,7 @@ class Feature:
         point
             A ConstrainedSketchVertex, an InterestingPoint, a MeshNode, or a Datum object representing a datum point.
         face
-            A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a Datum object representing a datum plane.Note:Any other types of
+            A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a Datum object representing a datum plane. Note: Any other types of
             planes are not supported.
 
         Returns
@@ -1548,7 +1548,7 @@ class Feature:
             A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying a point on the plane.
         point3
             A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying a point on the
-            plane.Note:*point1*, **point2**, and **point3** must not be colinear and must not coincide.
+            plane. Note: *point1*, **point2**, and **point3** must not be colinear and must not coincide.
 
         Returns
         -------
@@ -1639,7 +1639,7 @@ class Feature:
             A sequence of Edge objects specifying the edges to partition.
         parameter
             A Float specifying the normalized distance along **edge** at which to partition. Possible
-            values are 0.0 << **parameter** << 1.0.
+            values are 0.0 < **parameter** < 1.0.
 
         Returns
         -------
@@ -1906,7 +1906,7 @@ class Feature:
         point1
             A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object.
         point2
-            A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object.Note:*point1* and **point2** must not
+            A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object. Note: *point1* and **point2** must not
             coincide, and they must both lie on the underlying surface geometry of at least one of
             the target faces.
 
@@ -1997,7 +1997,7 @@ class Feature:
         sketch
             A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object specifying the partition.
         distance
-            A Float specifying the projection distance. Possible values are **distance** >> 0.0.
+            A Float specifying the projection distance. Possible values are **distance** > 0.0.
         sketchOrientation
             A SymbolicConstant specifying the orientation of **sketchUpEdge** on the sketch. Possible
             values are RIGHT, LEFT, TOP, and BOTTOM. The default value is RIGHT.
@@ -2257,7 +2257,7 @@ class Feature:
         ----------
         parameter
             A Float specifying the normalized distance along **edge** at which to partition. Possible
-            values are 0.0 << **parameter** << 1.0. You use this argument to modify a partition
+            values are 0.0 < **parameter** < 1.0. You use this argument to modify a partition
             created with the created with the PartitionEdgeByParam method.
         parameter1
             A Float specifying the distance along **edge1** at which to partition. Possible values are
@@ -2272,7 +2272,7 @@ class Feature:
             partition object created with a sketch; for example, using the PartitionFaceBySketch
             method.
         distance
-            A Float specifying the projection **distance**. Possible values are **distance** >> 0.0. You
+            A Float specifying the projection **distance**. Possible values are **distance** > 0.0. You
             use this argument to modify a partition object created with the
             PartitionFaceBySketchDistance method.
 

@@ -27,7 +27,7 @@ class PEGSection(Section):
     #: A String specifying the name of the material.
     material: str
 
-    #: A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
+    #: A Float specifying the thickness of the section. Possible values are **thickness** > 0.0.
     #: The default value is 1.0.
     thickness: float = 1
 
@@ -63,7 +63,7 @@ class PEGSection(Section):
         material
             A String specifying the name of the material.
         thickness
-            A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
+            A Float specifying the thickness of the section. Possible values are **thickness** > 0.0.
             The default value is 1.0.
         wedgeAngle1
             A Float specifying the value of the x component of the angle between the bounding
@@ -91,7 +91,7 @@ class PEGSection(Section):
         Parameters
         ----------
         thickness
-            A Float specifying the thickness of the section. Possible values are **thickness** >> 0.0.
+            A Float specifying the thickness of the section. Possible values are **thickness** > 0.0.
             The default value is 1.0.
         wedgeAngle1
             A Float specifying the value of the x component of the angle between the bounding
