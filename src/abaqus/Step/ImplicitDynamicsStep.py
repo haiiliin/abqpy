@@ -116,7 +116,7 @@ class ImplicitDynamicsStep(AnalysisStep):
 
     #: The SymbolicConstant DEFAULT or a Float specifying the nondefault value of the numerical
     #: (artificial) damping control parameter, αα, in the implicit operator. Possible values
-    #: are −.333 <α<<α< 0. The default value is DEFAULT.
+    #: are −.333 <α< 0. The default value is DEFAULT.
     alpha: Union[SymbolicConstant, float] = DEFAULT
 
     #: A SymbolicConstant specifying whether accelerations should be calculated or recalculated
@@ -338,7 +338,7 @@ class ImplicitDynamicsStep(AnalysisStep):
         alpha
             The SymbolicConstant DEFAULT or a Float specifying the nondefault value of the numerical
             (artificial) damping control parameter, αα, in the implicit operator. Possible values
-            are −.333 <α<<α< 0. The default value is DEFAULT.
+            are −.333 <α< 0. The default value is DEFAULT.
         initialConditions
             A SymbolicConstant specifying whether accelerations should be calculated or recalculated
             at the beginning of the step. Possible values are DEFAULT, BYPASS, and ALLOW. The
@@ -462,7 +462,7 @@ class ImplicitDynamicsStep(AnalysisStep):
         alpha
             The SymbolicConstant DEFAULT or a Float specifying the nondefault value of the numerical
             (artificial) damping control parameter, αα, in the implicit operator. Possible values
-            are −.333 <α<<α< 0. The default value is DEFAULT.
+            are −.333 <α< 0. The default value is DEFAULT.
         initialConditions
             A SymbolicConstant specifying whether accelerations should be calculated or recalculated
             at the beginning of the step. Possible values are DEFAULT, BYPASS, and ALLOW. The

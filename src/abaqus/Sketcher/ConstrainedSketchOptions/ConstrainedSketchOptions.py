@@ -50,19 +50,19 @@ class ConstrainedSketchOptions:
         Parameters
         ----------
         sheetSize
-            A Float specifying the sheet size. Possible values are Floats >> 0. The default value is
+            A Float specifying the sheet size. Possible values are Floats > 0. The default value is
             the **sheetSize** specified with the Sketch method.
         gridSpacing
-            A Float specifying the spacing between gridlines. Possible values are Floats >> 0. The
+            A Float specifying the spacing between gridlines. Possible values are Floats > 0. The
             default value is approximately 2.5% of **sheetSize**.
         grid
             A Boolean specifying whether the grid is shown. The default value is ON.
         gridFrequency
-            An Int specifying how often gridlines are shown. Possible values are **gridFrequency** >>
+            An Int specifying how often gridlines are shown. Possible values are **gridFrequency** >
             0. The default value is 1.
         dimensionTextHeight
             A Float specifying the height of the dimension text in points. Possible values are
-            Floats >> 0. The default value is 12.0.
+            Floats > 0. The default value is 12.0.
         decimalPlaces
             An Int specifying how many decimal places are shown in dimensions. Possible values are 0
             ≤ **decimalPlaces** ≤ 6. The initial value depends on the value of **sheetSize**.
@@ -91,7 +91,7 @@ class ConstrainedSketchOptions:
             An Int specifying the maximum number of coplanar entities which should be automatically
             projected from the background, when a sketch based feature is created or edited. When
             this value is exceeded no entities are automatically projected and a warning issued.
-            Possible values are **maxCoplanarEntities** >> 0. The default value is 300.
+            Possible values are **maxCoplanarEntities** > 0. The default value is 300.
         autoConstrainAngularTolerance
             A Float specifying the angular tolerance in degrees which is used to determine parallel
             and tangential conditions during the auto-constrain operation. For example any two lines

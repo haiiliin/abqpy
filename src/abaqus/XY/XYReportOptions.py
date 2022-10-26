@@ -38,7 +38,7 @@ class XYReportOptions:
         ----------
         pageWidth
             An Int specifying the number of characters per line of the report file when
-            **pageWidthLimited** = ON. Possible values are **pageWidth** >> 0. The default value is 80.
+            **pageWidthLimited** = ON. Possible values are **pageWidth** > 0. The default value is 80.
         numDigits
             An Int specifying the number of significant digits to be included for each data value in
             the report file. Possible values are 0 ≤ **numDigits** ≤ 9. The default value is 6.

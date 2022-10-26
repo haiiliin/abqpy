@@ -34,7 +34,7 @@ class XYCurve:
     name: str = ""
 
     #: An Int specifying the frequency of plotting the markers. Possible values are
-    #: **symbolFrequency** >> 0. If **symbolFrequency** = 1, then markers are plotted at every point.
+    #: **symbolFrequency** > 0. If **symbolFrequency** = 1, then markers are plotted at every point.
     #: The default value is 1.
     symbolFrequency: int = 1
 
@@ -107,7 +107,7 @@ class XYCurve:
             system defined.
         symbolFrequency
             An Int specifying the frequency of plotting the markers. Possible values are
-            **symbolFrequency** >> 0. If **symbolFrequency** = 1, then markers are plotted at every point.
+            **symbolFrequency** > 0. If **symbolFrequency** = 1, then markers are plotted at every point.
             The default value is 1.
         useDefault
             A Boolean specifying whether to use the system supplied legend label. The default value

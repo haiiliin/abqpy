@@ -513,7 +513,7 @@ class MeshEditPart(PartBase):
             A single MeshEdge object specifying the element edge to split.
         parameter
             A Float specifying the normalized distance along **edge** at which to split. Possible
-            values are 0.0 << **parameter** << 1.0. The default value is 0.5.
+            values are 0.0 < **parameter** < 1.0. The default value is 0.5.
         """
         ...
 
