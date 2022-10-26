@@ -49,19 +49,19 @@ class View:
     name: str
 
     #: A Float specifying the distance from the camera to the near clipping plane. Possible
-    #: values are **nearPlane** >> 0.0.
+    #: values are **nearPlane** > 0.0.
     nearPlane: float
 
     #: A Float specifying the distance from the camera to the far clipping plane when
-    #: **farPlaneMode** =SPECIFY. Possible values are **farPlane** >> **nearPlane**.
+    #: **farPlaneMode** =SPECIFY. Possible values are **farPlane** > **nearPlane**.
     farPlane: float
 
-    #: A Float specifying the width of the front clipping plane. Possible values are **width** >>
+    #: A Float specifying the width of the front clipping plane. Possible values are **width** >
     #: 0.0.
     width: float
 
     #: A Float specifying the height of the front clipping plane. Possible values are **height**
-    #: >> 0.0.
+    #: > 0.0.
     height: float
 
     #: A SymbolicConstant specifying the projection mode. Possible values are PERSPECTIVE and
@@ -134,16 +134,16 @@ class View:
             LEFT, RIGHT, ISO, USER1, USER2, USER3, and USER4.
         nearPlane
             A Float specifying the distance from the camera to the near clipping plane. Possible
-            values are **nearPlane** >> 0.0.
+            values are **nearPlane** > 0.0.
         farPlane
             A Float specifying the distance from the camera to the far clipping plane when
-            **farPlaneMode** =SPECIFY. Possible values are **farPlane** >> **nearPlane**.
+            **farPlaneMode** =SPECIFY. Possible values are **farPlane** > **nearPlane**.
         width
-            A Float specifying the width of the front clipping plane. Possible values are **width** >>
+            A Float specifying the width of the front clipping plane. Possible values are **width** >
             0.0.
         height
             A Float specifying the height of the front clipping plane. Possible values are **height**
-            >> 0.0.
+            > 0.0.
         projection
             A SymbolicConstant specifying the projection mode. Possible values are PERSPECTIVE and
             PARALLEL.

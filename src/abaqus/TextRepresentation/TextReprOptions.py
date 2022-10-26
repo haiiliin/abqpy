@@ -52,7 +52,7 @@ class TextReprOptions:
             the object type. The initial value is '%s object'.
         maxElementsInSequence
             An Int or the SymbolicConstant UNLIMITED specifying the maximum number of elements of a
-            sequence to return. Possible values are UNLIMITED or Ints >> 0. The initial value is
+            sequence to return. Possible values are UNLIMITED or Ints > 0. The initial value is
             100. After the maximum number of elements, the remainder are indicated by the string
             '...'.
         """

@@ -211,7 +211,7 @@ class StepModel(ModelBase):
             The default value is DEFAULT.
         maxBlocks
             The SymbolicConstant DEFAULT or an Int specifying the maximum number of Lanczos block
-            steps within each Lanczos run. The default value is DEFAULT.Note:*minEigen*,
+            steps within each Lanczos run. The default value is DEFAULT. Note: *minEigen*,
             **blockSize**, and **maxBlocks** are ignored unless **eigensolver** = LANCZOS.
         matrixStorage
             A SymbolicConstant specifying the type of matrix storage. Possible values are SYMMETRIC,
@@ -1252,7 +1252,7 @@ class StepModel(ModelBase):
             None or a Float specifying the tolerance for maximum change of displacements. The
             default value is None.
         timePeriod
-            A Float specifying the total time period. The default value is 1.0.Note:This parameter
+            A Float specifying the total time period. The default value is 1.0. Note: This parameter
             is ignored unless **timeIncrementationMethod** = AUTOMATIC.
         timeIncrementationMethod
             A SymbolicConstant specifying the time incrementation method to be used. Possible values
@@ -1264,15 +1264,15 @@ class StepModel(ModelBase):
                 The `maxNumInc` attribute was added to the GeostaticStep class.
         initialInc
             A Float specifying the initial time increment. The default value is the total time
-            period for the step.Note:This parameter is ignored unless
+            period for the step. Note: This parameter is ignored unless
             **timeIncrementationMethod** = AUTOMATIC.
         minInc
             A Float specifying the minimum time increment allowed. The default value is the smaller
-            of the suggested initial time increment or 10−5 times the total time period.Note:This
+            of the suggested initial time increment or 10−5 times the total time period. Note: This
             parameter is ignored unless **timeIncrementationMethod** = AUTOMATIC.
         maxInc
             A Float specifying the maximum time increment allowed. The default value is the total
-            time period for the step.Note:This parameter is ignored unless
+            time period for the step. Note: This parameter is ignored unless
             **timeIncrementationMethod** = AUTOMATIC.
 
         Returns
@@ -1364,7 +1364,7 @@ class StepModel(ModelBase):
         end
             None or a Float specifying the temperature change rate (temperature per time) used to
             define steady state. When all nodal temperatures are changing at less than this rate,
-            the solution terminates. The default value is None.Note:This parameter is ignored unless
+            the solution terminates. The default value is None. Note: This parameter is ignored unless
             **response** = STEADY_STATE.
         deltmx
             A Float specifying the maximum temperature change to be allowed in an increment during a
@@ -1526,7 +1526,7 @@ class StepModel(ModelBase):
         alpha
             The SymbolicConstant DEFAULT or a Float specifying the nondefault value of the numerical
             (artificial) damping control parameter, αα, in the implicit operator. Possible values
-            are −.333 <α<<α< 0. The default value is DEFAULT.
+            are −.333 <α< 0. The default value is DEFAULT.
         initialConditions
             A SymbolicConstant specifying whether accelerations should be calculated or recalculated
             at the beginning of the step. Possible values are DEFAULT, BYPASS, and ALLOW. The

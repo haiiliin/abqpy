@@ -317,7 +317,7 @@ class LoadModel(ModelBase):
             UNIFORM, USER_DEFINED, and FIELD. The default value is UNIFORM.
         comp1
             A Float or a Complex specifying the body force component in the
-            1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
+            1-direction. Note: Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
             one of them must be nonzero unless **distributionType** = USER_DEFINED.
         comp2
             A Float or a Complex specifying the body force component in the 2-direction.
@@ -427,7 +427,7 @@ class LoadModel(ModelBase):
         magnitude
             A Float specifying the bolt load magnitude.
         datumAxis
-            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the pre-tension section normal.Note:
+            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the pre-tension section normal. Note: 
             **datumAxis** is applicable only for Solid and Shell regions; it has no meaning for Wire
             regions.
         boltMethod
@@ -836,7 +836,7 @@ class LoadModel(ModelBase):
             specified, **fastenerName** must also be specified. The default value is an empty string.
         f1
             A Float or a Complex specifying the connector force component in the connector's local
-            1-direction.Note:Although **f1**, **f2**, and **f3** are optional arguments, at least one of
+            1-direction. Note: Although **f1**, **f2**, and **f3** are optional arguments, at least one of
             them must be nonzero.
         f2
             A Float or a Complex specifying the connector force component in the connector's local
@@ -1040,7 +1040,7 @@ class LoadModel(ModelBase):
             A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
         comp1
             A Float or a Complex specifying the component of the load in the
-            1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
+            1-direction. Note: Although **comp1**, **comp2**, and **comp3** are optional arguments, at least
             one of them must be nonzero.
         comp2
             A Float or a Complex specifying the component of the load in the 2-direction.
@@ -1097,7 +1097,7 @@ class LoadModel(ModelBase):
         createStepName
             A String specifying the name of the step in which the load is created.
         u1
-            A Boolean specifying the 1-direction as a free direction.Note:Although **u1**, **u2**, **u3**,
+            A Boolean specifying the 1-direction as a free direction. Note: Although **u1**, **u2**, **u3**,
             **ur1**, **ur2**, and **ur3** are optional arguments, at least one of them must be specified.
             Further, any specified set of free directions cannot include only two rotational degrees
             of freedom.
@@ -1230,7 +1230,7 @@ class LoadModel(ModelBase):
             empty string.
         comp1
             A Float or a Complex specifying the component of the load in the global or the beam
-            local 1-direction.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at
+            local 1-direction. Note: Although **comp1**, **comp2**, and **comp3** are optional arguments, at
             least one of them must be nonzero unless **distributionType** = USER_DEFINED.
         comp2
             A Float or a Complex specifying the component of the load in the global or the beam
@@ -1295,7 +1295,7 @@ class LoadModel(ModelBase):
         region
             A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
         cm1
-            A Float or a Complex specifying the load component in the 4-direction.Note:Although
+            A Float or a Complex specifying the load component in the 4-direction. Note: Although
             **comp1**, **comp2**, and **comp3** are optional arguments, at least one of them must be
             nonzero.
         cm2
@@ -1380,7 +1380,7 @@ class LoadModel(ModelBase):
             empty string.
         comp1
             A Float or a Complex specifying the load component at dof 1 of reference node
-            1.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at least one of
+            1. Note: Although **comp1**, **comp2**, and **comp3** are optional arguments, at least one of
             them must be nonzero.
         comp2
             A Float or a Complex specifying the load component at dof 1 of reference node 2.
@@ -1440,7 +1440,7 @@ class LoadModel(ModelBase):
         region
             A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
         magnitude
-            A Float specifying the pressure magnitude.Note:*magnitude* is optional if
+            A Float specifying the pressure magnitude. Note: *magnitude* is optional if
             **distributionType** = USER_DEFINED.
         diameter
             A Float specifying the effective inner or outer diameter.
@@ -1517,7 +1517,7 @@ class LoadModel(ModelBase):
         region
             A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
         magnitude
-            A Float or a Complex specifying the pressure magnitude.Note:*magnitude* is optional if
+            A Float or a Complex specifying the pressure magnitude. Note: *magnitude* is optional if
             **distributionType** = USER_DEFINED.
         hZero
             A Float specifying the height of the zero pressure level when
@@ -1606,11 +1606,11 @@ class LoadModel(ModelBase):
             empty string.
         centrifugal
             A Boolean specifying whether or not the effect of the load is centrifugal. The default
-            value is OFF.Note:At least one of **centrifugal** or **rotaryAcceleration** must be
+            value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** must be
             specified and only one must have the value ON.
         rotaryAcceleration
             A Boolean specifying whether or not the effect of the load is rotary acceleration. The
-            default value is OFF.Note:At least one of **centrifugal** or **rotaryAcceleration** must be
+            default value is OFF. Note: At least one of **centrifugal** or **rotaryAcceleration** must be
             specified and only one must have the value ON.
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
