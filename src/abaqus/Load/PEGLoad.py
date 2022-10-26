@@ -73,7 +73,7 @@ class PEGLoad(Load):
             empty string.
         comp1
             A Float or a Complex specifying the load component at dof 1 of reference node
-            1.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at least one of
+            1. Note: Although **comp1**, **comp2**, and **comp3** are optional arguments, at least one of
             them must be nonzero.
         comp2
             A Float or a Complex specifying the load component at dof 1 of reference node 2.
@@ -115,7 +115,7 @@ class PEGLoad(Load):
             empty string.
         comp1
             A Float or a Complex specifying the load component at dof 1 of reference node
-            1.Note:Although **comp1**, **comp2**, and **comp3** are optional arguments, at least one of
+            1. Note: Although **comp1**, **comp2**, and **comp3** are optional arguments, at least one of
             them must be nonzero.
         comp2
             A Float or a Complex specifying the load component at dof 1 of reference node 2.

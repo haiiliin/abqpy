@@ -53,7 +53,7 @@ class ConstrainedSketcherOptions:
             An Int specifying the maximum number of coplanar entities which should be automatically
             projected from the background, when a sketch based feature is created or edited. When
             this value is exceeded no entities are automatically projected and a warning issued.
-            Possible values are **maxCoplanarEntities** >> 0. The default value is 300.
+            Possible values are **maxCoplanarEntities** > 0. The default value is 300.
         autoConstrainAngularTolerance
             A Float specifying the angular tolerance in degrees which is used to determine parallel
             and tangential conditions during the auto-constrain operation. For example any two lines

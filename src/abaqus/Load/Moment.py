@@ -78,7 +78,7 @@ class Moment(Load):
         region
             A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
         cm1
-            A Float or a Complex specifying the load component in the 4-direction.Note:Although
+            A Float or a Complex specifying the load component in the 4-direction. Note: Although
             **comp1**, **comp2**, and **comp3** are optional arguments, at least one of them must be
             nonzero.
         cm2
@@ -131,7 +131,7 @@ class Moment(Load):
         Parameters
         ----------
         cm1
-            A Float or a Complex specifying the load component in the 4-direction.Note:Although
+            A Float or a Complex specifying the load component in the 4-direction. Note: Although
             **comp1**, **comp2**, and **comp3** are optional arguments, at least one of them must be
             nonzero.
         cm2

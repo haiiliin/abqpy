@@ -249,7 +249,7 @@ class Field(PredefinedField):
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
             UNSET should be used if the predefined field has no amplitude reference. The default
-            value is UNSET.Note:*amplitude* should be given only if it is valid for the specified
+            value is UNSET. Note: *amplitude* should be given only if it is valid for the specified
             step.
         fileName
             A String specifying the name of the file from which the Field values are to be read when
@@ -332,7 +332,7 @@ class Field(PredefinedField):
         amplitude
             A String or the SymbolicConstant UNSET specifying the name of the amplitude reference.
             UNSET should be used if the predefined field has no amplitude reference. The default
-            value is UNSET.Note:*amplitude* should be given only if it is valid for the specified
+            value is UNSET. Note: *amplitude* should be given only if it is valid for the specified
             step.
         fileName
             A String specifying the name of the file from which the Field values are to be read when
