@@ -428,7 +428,7 @@ class LoadModel(ModelBase):
         magnitude
             A Float specifying the bolt load magnitude.
         datumAxis
-            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the pre-tension section normal. Note: 
+            A :py:class:`~abaqus.Datum.DatumAxis.DatumAxis` object specifying the orientation of the pre-tension section normal. Note:
             **datumAxis** is applicable only for Solid and Shell regions; it has no meaning for Wire
             regions.
         boltMethod
