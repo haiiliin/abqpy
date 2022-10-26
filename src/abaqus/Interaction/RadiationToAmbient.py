@@ -53,7 +53,7 @@ class RadiationToAmbient(Interaction):
     ambientTemperature: float = 0
 
     #: A String specifying the name of the Amplitude object that gives the variation of the
-    #: ambient temperature with time.Note:Use None in an Abaqus/Standard analysis to specify
+    #: ambient temperature with time. Note: Use None in an Abaqus/Standard analysis to specify
     #: that the reference ambient temperature is applied immediately at the beginning of the
     #: step or linearly over the step. Use None in an Abaqus/Explicit analysis to specify that
     #: the reference ambient temperature is applied throughout the step. This argument applies
@@ -108,7 +108,7 @@ class RadiationToAmbient(Interaction):
             when **radiationType** = AMBIENT. The default value is 0.0.
         ambientTemperatureAmp
             A String specifying the name of the Amplitude object that gives the variation of the
-            ambient temperature with time.Note:Use None in an Abaqus/Standard analysis to specify
+            ambient temperature with time. Note: Use None in an Abaqus/Standard analysis to specify
             that the reference ambient temperature is applied immediately at the beginning of the
             step or linearly over the step. Use None in an Abaqus/Explicit analysis to specify that
             the reference ambient temperature is applied throughout the step. This argument applies
@@ -152,7 +152,7 @@ class RadiationToAmbient(Interaction):
             when **radiationType** = AMBIENT. The default value is 0.0.
         ambientTemperatureAmp
             A String specifying the name of the Amplitude object that gives the variation of the
-            ambient temperature with time.Note:Use None in an Abaqus/Standard analysis to specify
+            ambient temperature with time. Note: Use None in an Abaqus/Standard analysis to specify
             that the reference ambient temperature is applied immediately at the beginning of the
             step or linearly over the step. Use None in an Abaqus/Explicit analysis to specify that
             the reference ambient temperature is applied throughout the step. This argument applies

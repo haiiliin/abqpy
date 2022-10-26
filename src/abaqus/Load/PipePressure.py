@@ -75,7 +75,7 @@ class PipePressure(Load):
         region
             A :py:class:`~abaqus.Region.Region.Region` object specifying the region to which the load is applied.
         magnitude
-            A Float specifying the pressure magnitude.Note:*magnitude* is optional if
+            A Float specifying the pressure magnitude. Note: *magnitude* is optional if
             **distributionType** = USER_DEFINED.
         diameter
             A Float specifying the effective inner or outer diameter.

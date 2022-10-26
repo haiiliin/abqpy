@@ -83,7 +83,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         v1
             A Float or a SymbolicConstant specifying the velocity component in the 1-direction.
             Possible values for the SymbolicConstant are UNSET and SET. The default value is
-            UNSET.Note:Although **v1**, **v2**, **v3**, **vr1**, **vr2**, and **vr3** are optional arguments, at
+            UNSET. Note: Although **v1**, **v2**, **v3**, **vr1**, **vr2**, and **vr3** are optional arguments, at
             least one of them must be specified.
         v2
             A Float or a SymbolicConstant specifying the velocity component in the 2-direction.
@@ -145,7 +145,7 @@ class VelocityAdaptiveMeshConstraint(AdaptiveMeshConstraint):
         v1
             A Float or a SymbolicConstant specifying the velocity component in the 1-direction.
             Possible values for the SymbolicConstant are UNSET and SET. The default value is
-            UNSET.Note:Although **v1**, **v2**, **v3**, **vr1**, **vr2**, and **vr3** are optional arguments, at
+            UNSET. Note: Although **v1**, **v2**, **v3**, **vr1**, **vr2**, and **vr3** are optional arguments, at
             least one of them must be specified.
         v2
             A Float or a SymbolicConstant specifying the velocity component in the 2-direction.
