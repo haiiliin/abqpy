@@ -1,9 +1,20 @@
-from typing import Optional
+from typing import Optional, Sequence
 
 from abqpy.decorators import abaqus_class_doc, abaqus_method_doc
 from typing_extensions import Literal
 
-from ..UtilityAndView.abaqusConstants import AS_IS, Boolean, OFF, ON, SOLID, SymbolicConstant
+from ..UtilityAndView.abaqusConstants import (
+    AS_IS,
+    Boolean,
+    OFF,
+    ON,
+    SOLID,
+    SymbolicConstant,
+    HARDWARE_OVERLAY,
+    XOR,
+    SOFTWARE_OVERLAY,
+    BLEND,
+)
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
 
@@ -251,7 +262,7 @@ class GraphicsOptions:
     #: alternative.You can use a single value to set the first element of the list, or you can
     #: use a tuple with one to four unique values. Abaqus sets any remaining elements of the
     #: tuple to unique values based on the default order.
-    highlightMethodHint: Optional[SymbolicConstant] = None
+    highlightMethodHint: SymbolicConstant = (HARDWARE_OVERLAY, XOR, SOFTWARE_OVERLAY, BLEND)
 
     #: A String specifying one of the two background colors for all viewport windows. The
     #: initial color is black. A list of valid color strings is in the **colors** map in the
@@ -269,7 +280,12 @@ class GraphicsOptions:
         graphicsDriver: Optional[Literal[C.OPEN_GL]] = None,
         doubleBuffering: Boolean = ON,
         displayLists: Boolean = ON,
-        highlightMethodHint: Optional[Literal[C.SOFTWARE_OVERLAY, C.HARDWARE_OVERLAY, C.XOR]] = None,
+        highlightMethodHint: Sequence[Literal[C.SOFTWARE_OVERLAY, C.HARDWARE_OVERLAY, C.XOR]] = (
+            HARDWARE_OVERLAY,
+            XOR,
+            SOFTWARE_OVERLAY,
+            BLEND,
+        ),
         dragMode: Literal[C.FAST, C.AS_IS] = AS_IS,
         antiAlias: Boolean = ON,
         autoFitAfterRotate: Boolean = OFF,
@@ -323,7 +339,7 @@ class GraphicsOptions:
             subject to the setting of **viewManipDisplayListThreshold**.
         highlightMethodHint
             A sequence of SymbolicConstants specifying a hint used to modify the highlight method.
-            Possible values are:HARDWARE_OVERLAY, specifying a hint of hardware overlay. The best
+            Possible values are: HARDWARE_OVERLAY, specifying a hint of hardware overlay. The best
             graphics performance is achieved using hardware overlay, but not all systems and
             graphics adapters support hardware overlay.XOR, specifying a hint of XOR technique. The
             XOR technique uses a boolean pixel operation to simulate the drawing operations but can
