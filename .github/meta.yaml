@@ -3,11 +3,14 @@ package:
   version: "{{ GIT_DESCRIBE_TAG }}"
 
 build:
-  script: pip instll .
+  noarch: python
+  script: |
+    pip install auto-all
+    pip instll .
   skip: True # [py<37]
 
 source:
-  path: ../
+  path: ..
 
 requirements:
   build:
@@ -15,7 +18,6 @@ requirements:
     - setuptools_scm
   run:
     - python
-    - auto-all
     - Jinja2
     - toml
 
