@@ -13,11 +13,7 @@ if current_version.startswith("v"):
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 os.chdir("..")
 
-<<<<<<< HEAD
-for file in ['README.md', 'README-zh-cn.md', 'docs/source/getting_started.rst']:
-=======
 for file in ['docs/source/getting_started.md']:
->>>>>>> 7aa43480 ([bugfix]: Fix filename error when updating version number (#3337))
     with open(file, 'r', encoding='utf-8') as f:
         content = f.read()
     
