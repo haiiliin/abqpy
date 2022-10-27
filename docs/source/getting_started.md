@@ -68,9 +68,9 @@ or a later version.
 
         .. code-block:: bash
 
-            pip install abqpy==2016.3.14
+            pip install abqpy==2016.3.15
             pip install abqpy==2016.*
-            conda install -c haiiliin abqpy=2016.3.14
+            conda install -c haiiliin abqpy=2016.3.15
 
     .. grid-item-card::
 
