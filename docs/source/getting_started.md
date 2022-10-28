@@ -55,7 +55,7 @@ or a later version.
 
         .. code-block:: bash
 
-            pip install git+https://github.com/haiiliin/abqpy@2023
+            pip install git+https://github.com/haiiliin/abqpy@2022
 
     .. grid-item-card::
 
@@ -68,9 +68,9 @@ or a later version.
 
         .. code-block:: bash
 
-            pip install abqpy==2023.3.15
-            pip install abqpy==2023.*
-            conda install -c haiiliin abqpy=2023.3.15
+            pip install abqpy==2022.3.15
+            pip install abqpy==2022.*
+            conda install -c haiiliin abqpy=2022.3.15
 
     .. grid-item-card::
 
