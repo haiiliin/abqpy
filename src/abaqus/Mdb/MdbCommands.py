@@ -12,8 +12,10 @@ This page discusses:
 """
 from typing import Union, Sequence
 
+from abqpy.decorators import abaqus_function_doc
 from typing_extensions import Literal
 
+from .Mdb import Mdb
 from ..UtilityAndView.abaqusConstants import INITIAL_AND_LAST, ALL, FIRST
 from ..UtilityAndView.abaqusConstants import abaqusConstants as C
 
@@ -86,3 +88,42 @@ def CombineOptResults(
         ORIGINAL_MODEL.
     """
     ...
+
+
+@abaqus_function_doc
+def openMdb(pathName: str) -> Mdb:
+    """This method opens an existing model database file.
+
+    .. note::
+        This function can be accessed by::
+
+            Mdb
+
+    Parameters
+    ----------
+    pathName: str
+        A String specifying the path to the model database file to open. If you do not provide a
+        file extension, Abaqus/CAE attempts to open the file with .cae appended to the path.
+
+    Returns
+    -------
+    Mdb
+        A :py:class:`~abaqus.Mdb.Mdb.Mdb` object
+
+    Raises
+    ------
+    MdbError
+        invalid model database;
+        If the file is an invalid model database
+    MdbError
+        incompatible release number, expected *<Abaqus release>*, got *<earlier or later Abaqus release>*;
+        If the file contains a model database from an Abaqus release other than the Abaqus
+        release you are currently running
+    MdbError
+        cannot open file; may be in use by another CAE session;
+        If the model database file is already opened in write mode
+    MdbError
+        cannot open file;
+        If the command fails to open the model database file for reasons not mentioned above
+    """
+    return Mdb(pathName)
