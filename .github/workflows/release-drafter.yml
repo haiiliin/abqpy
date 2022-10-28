@@ -1,7 +1,7 @@
 name: Release Drafter
 on:
   push:
-    branches: ["main", "20**"]
+    branches: ["20**"]
   # pull_request event is required only for autolabeler
   pull_request:
     # Only following types are handled by the action, but one can default to all as well
@@ -34,7 +34,11 @@ jobs:
       - uses: release-drafter/release-drafter@v5
         # (Optional) specify config name to use, relative to .github/. Default: release-drafter.yml
         with:
+<<<<<<< HEAD
           config-name: release-drafter-2020.yml
+=======
+          config-name: release-drafter-2023.yml
+>>>>>>> b011c499 ([automation]: Update default branch to 2023 (#3361))
         #   disable-autolabeler: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

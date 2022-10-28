@@ -2,7 +2,7 @@ name: black
 
 on:
   pull_request:
-    branches: [ "main", "20**" ]
+    branches: [ "20**" ]
     paths:
       - "src/abaqus/**"
       - "src/abqpy/**"
