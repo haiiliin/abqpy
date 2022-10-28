@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        branch: ["main", "2016", "2017", "2018", "2019", "2020", "2021", "2022"]
+        branch: ["2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"]
 
     steps:
       - name: Get current date
@@ -28,18 +28,11 @@ jobs:
         with:
           ref: ${{ matrix.branch }}
           fetch-depth: 0
-      - name: Determine Release Drafter Suffix
-        uses: haya14busa/action-cond@v1
-        id: drafter_suffix
-        with:
-          cond: ${{ matrix.branch == 'main' }}
-          if_true: "2022"  # string value
-          if_false: ${{ matrix.branch }} # string value
       - name: Update release drafter
         id: create_release_drafter
         uses: release-drafter/release-drafter@v5
         with:
-          config-name: release-drafter-${{ steps.drafter_suffix.outputs.value }}.yml
+          config-name: release-drafter-${{ matrix.branch }}.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Update suggested version for ${{ matrix.branch }}
