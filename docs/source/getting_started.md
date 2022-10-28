@@ -55,7 +55,7 @@ or a later version.
 
         .. code-block:: bash
 
-            pip install git+https://github.com/haiiliin/abqpy@main
+            pip install git+https://github.com/haiiliin/abqpy@2021
 
     .. grid-item-card::
 
