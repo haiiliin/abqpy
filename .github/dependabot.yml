@@ -1,0 +1,26 @@
+version: 2
+updates:
+
+  # Dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    labels:
+      - "automation"
+      - "dependency"
+      - "github-actions"
+      - "backport-to-all"
+      - "disable-auto-merge"
+    schedule:
+      interval: "weekly"
+
+  # Dependencies for pip
+  - package-ecosystem: "pip"
+    directory: "/"
+    labels:
+      - "pip"
+      - "automation"
+      - "dependency"
+      - "backport-to-all"
+      - "disable-auto-merge"
+    schedule:
+      interval: "weekly"
