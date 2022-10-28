@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # abqpy 2021
+=======
+# abqpy 2023
+>>>>>>> b011c499 ([automation]: Update default branch to 2023 (#3361))
 
 [![pytest](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/pytest.yml)
 [![docs-test](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml/badge.svg)](https://github.com/haiiliin/abqpy/actions/workflows/docs-test.yml)
