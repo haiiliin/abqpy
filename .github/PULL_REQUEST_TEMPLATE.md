@@ -17,7 +17,6 @@ Refer [here](https://github.com/haiiliin/abqpy/discussions/1500) to resolve back
 - [x] 2020
 - [x] 2021
 - [x] 2022
-- [ ] 2023
 
 # Type of change
 
