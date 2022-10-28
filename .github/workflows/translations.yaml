@@ -3,7 +3,7 @@ name: Update Translations
 on:
   push:
     branches:
-      - main
+      - "2023"
     paths:
       - 'docs/source/locales/update.sh'
   schedule:
@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        branch: ["main", "2022", "2021", "2020", "2019", "2018", "2017", "2016"]
+        branch: ["2023", "2022", "2021", "2020", "2019", "2018", "2017", "2016"]
 
     steps:
     - name: Get current date
