@@ -3,6 +3,7 @@ import re
 import sys
 
 from abaqus import Mdb, backwardCompatibility, getInput, mdb
+from abaqus.Mdb.MdbCommands import upgradeMdb, CombineOptResults, openMdb  # noqa # pylint: disable=unused-import
 from abaqus.Session.Session import Session
 from abaqus.UtilityAndView import SymbolicConstant, BackwardCompatibility
 from abaqus.UtilityAndView.AbaqusBoolean import AbaqusBoolean
@@ -12,10 +13,6 @@ from abaqus.UtilityAndView.abaqusConstants import (AbaqusBooleanType, Boolean, B
                                                    SymbolicConstantType, TOTAL, TRUE)
 
 NoneType = type(None)
-
-
-def upgradeMdb(*args, **kwargs):
-    pass
 
 
 MdbType = type(Mdb)
@@ -104,6 +101,6 @@ __all__ = [
     'sys',
     # 'uncompress',
     # 'updateVersion',
-    'upgradeMdb',
+    # 'upgradeMdb',
     # 'version'
 ]
