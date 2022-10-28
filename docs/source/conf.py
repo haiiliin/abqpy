@@ -35,8 +35,8 @@ try:
     release = version = abqpy.__semver__[:4]
 except (ImportError, AttributeError):
     import warnings
-    warnings.warn('abqpy is not installed, using 2023.0.0')
-    release = version = '2023.0.0'[:4]
+    warnings.warn('abqpy is not installed, using 2018.0.0')
+    release = version = '2018.0.0'[:4]
 sys.path.insert(0, os.path.abspath('../../src'))
 
 # For multiple languages
