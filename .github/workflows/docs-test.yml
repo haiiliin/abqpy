@@ -22,7 +22,7 @@ jobs:
       matrix:
         language: ['en']
     steps:
-    - uses: actions/setup-python@v2
+    - uses: actions/setup-python@v4
     - uses: actions/checkout@v3.1.0
       with:
         fetch-depth: 0
