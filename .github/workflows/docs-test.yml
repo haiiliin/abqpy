@@ -23,6 +23,8 @@ jobs:
         language: ['en']
     steps:
     - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
     - uses: actions/checkout@v3.1.0
       with:
         fetch-depth: 0
