@@ -258,10 +258,6 @@ The Material commands are used to define the materials in a model.
         :special-members: __init__
         :show-inheritance:
 
-<<<<<<< HEAD
-
-
-=======
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Material.Others.HeatTransfer.HeatGeneration.HeatGeneration
@@ -282,7 +278,6 @@ The Material commands are used to define the materials in a model.
         :members:
         :special-members: __init__
         :show-inheritance:
->>>>>>> 27c50e7e ([docs]: Collapse unimportant classes (#3425))
 
         .. autoclasstoc::
 
@@ -293,12 +288,6 @@ The Material commands are used to define the materials in a model.
 
         .. autoclasstoc::
 
-<<<<<<< HEAD
-### Gasket
-
-
-#### ContactArea
-=======
     .. autoclass:: abaqus.Material.Others.HeatTransfer.SpecificHeat.SpecificHeat
         :members:
         :special-members: __init__
@@ -317,7 +306,6 @@ The Material commands are used to define the materials in a model.
         :members:
         :special-members: __init__
         :show-inheritance:
->>>>>>> 27c50e7e ([docs]: Collapse unimportant classes (#3425))
 
         .. autoclasstoc::
 
@@ -566,506 +554,10 @@ The Material commands are used to define the materials in a model.
 
         .. autoclasstoc::
 
-<<<<<<< HEAD
-    .. autoclasstoc::
-```
-
-##### Viscosity
-
-###### Trs
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Others.Mechanical.Viscosity.Trs.Trs
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-###### Viscosity
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Others.Mechanical.Viscosity.Viscosity.Viscosity
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### PoreFluidFlow
-
-##### FluidLeakoff
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Others.PoreFluidFlow.FluidLeakoff.FluidLeakoff
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### Gel
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Others.PoreFluidFlow.Gel.Gel
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### MoistureSwelling
-
-###### MoistureSwelling
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Others.PoreFluidFlow.MoistureSwelling.MoistureSwelling.MoistureSwelling
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### Permeability
-
-###### Permeability
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Others.PoreFluidFlow.Permeability.Permeability.Permeability
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-###### SaturationDependence
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Others.PoreFluidFlow.Permeability.SaturationDependence.SaturationDependence
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-###### VelocityDependence
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Others.PoreFluidFlow.Permeability.VelocityDependence.VelocityDependence
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### PorousBulkModuli
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Others.PoreFluidFlow.PorousBulkModuli.PorousBulkModuli
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### Sorption
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Others.PoreFluidFlow.Sorption.Sorption
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### User
-
-##### Depvar
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Others.User.Depvar.Depvar
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### UserDefinedField
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Others.User.UserDefinedField.UserDefinedField
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### UserMaterial
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Others.User.UserMaterial.UserMaterial
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### UserOutputVariables
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Others.User.UserOutputVariables.UserOutputVariables
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### Plastic
-
-#### Concrete
-
-##### BrittleCracking
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Concrete.BrittleCracking.BrittleCracking
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### BrittleFailure
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Concrete.BrittleFailure.BrittleFailure
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### BrittleShear
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Concrete.BrittleShear.BrittleShear
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### Concrete
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Concrete.Concrete.Concrete
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### ConcreteCompressionDamage
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Concrete.ConcreteCompressionDamage.ConcreteCompressionDamage
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### ConcreteCompressionHardening
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Concrete.ConcreteCompressionHardening.ConcreteCompressionHardening
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### ConcreteDamagedPlasticity
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Concrete.ConcreteDamagedPlasticity.ConcreteDamagedPlasticity
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### ConcreteTensionDamage
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Concrete.ConcreteTensionDamage.ConcreteTensionDamage
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### ConcreteTensionStiffening
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Concrete.ConcreteTensionStiffening.ConcreteTensionStiffening
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### FailureRatios
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Concrete.FailureRatios.FailureRatios
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### ShearRetention
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Concrete.ShearRetention.ShearRetention
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### TensionStiffening
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Concrete.TensionStiffening.TensionStiffening
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### Creep
-
-##### Creep
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Creep.Creep.Creep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### CriticalStateClay
-
-##### ClayHardening
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.CriticalStateClay.ClayHardening.ClayHardening
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### ClayPlasticity
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.CriticalStateClay.ClayPlasticity.ClayPlasticity
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### CrushableFoam
-
-##### CrushableFoam
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.CrushableFoam.CrushableFoam.CrushableFoam
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### CrushableFoamHardening
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.CrushableFoam.CrushableFoamHardening.CrushableFoamHardening
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### DruckerPrager
-
-##### Extended
-
-###### DruckerPrager
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPrager.DruckerPrager
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-###### DruckerPragerCreep
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerCreep.DruckerPragerCreep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-###### DruckerPragerHardening
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.DruckerPrager.Extended.DruckerPragerHardening.DruckerPragerHardening
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-###### TriaxialTestData
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.DruckerPrager.Extended.TriaxialTestData.TriaxialTestData
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### ModifiedCap
-
-###### CapCreepCohesion
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepCohesion.CapCreepCohesion
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-###### CapCreepConsolidation
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapCreepConsolidation.CapCreepConsolidation
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-###### CapHardening
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapHardening.CapHardening
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-###### CapPlasticity
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.DruckerPrager.ModifiedCap.CapPlasticity.CapPlasticity
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### Metal
-
-##### Annealing
-
-###### AnnealTemperature
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Metal.Annealing.AnnealTemperature.AnnealTemperature
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-##### CastIron
-
-###### CastIronCompressionHardening
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Metal.CastIron.CastIronCompressionHardening.CastIronCompressionHardening
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-###### CastIronPlasticity
-
-```{eval-rst}
-.. autoclass:: abaqus.Material.Plastic.Metal.CastIron.CastIronPlasticity.CastIronPlasticity
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-=======
     .. autoclass:: abaqus.Material.Plastic.CrushableFoam.CrushableFoamHardening.CrushableFoamHardening
         :members:
         :special-members: __init__
         :show-inheritance:
->>>>>>> 27c50e7e ([docs]: Collapse unimportant classes (#3425))
 
         .. autoclasstoc::
 
@@ -1216,12 +708,6 @@ The Material commands are used to define the materials in a model.
 
         .. autoclasstoc::
 
-<<<<<<< HEAD
-### ProgressiveDamageFailure
-
-
-#### DamageEvolution
-=======
     .. autoclass:: abaqus.Material.Plastic.Metal.RateDependent.RateDependent.RateDependent
         :members:
         :special-members: __init__
@@ -1240,7 +726,6 @@ The Material commands are used to define the materials in a model.
         :members:
         :special-members: __init__
         :show-inheritance:
->>>>>>> 27c50e7e ([docs]: Collapse unimportant classes (#3425))
 
         .. autoclasstoc::
 
@@ -1405,9 +890,6 @@ The Material commands are used to define the materials in a model.
 
         .. autoclasstoc::
 
-<<<<<<< HEAD
-    .. autoclasstoc::
-=======
     .. autoclass:: abaqus.Material.TestData.VolumetricTestData.VolumetricTestData
         :members:
         :special-members: __init__
@@ -1442,5 +924,4 @@ The Material commands are used to define the materials in a model.
         :show-inheritance:
 
         .. autoclasstoc::
->>>>>>> 27c50e7e ([docs]: Collapse unimportant classes (#3425))
 ```
