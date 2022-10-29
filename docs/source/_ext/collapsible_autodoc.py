@@ -1,5 +1,5 @@
 from sphinx.application import Sphinx
-from sphinx.ext.autodoc import ClassDocumenter
+from sphinx.ext.autodoc import ClassDocumenter, ALL
 
 
 class AutoCollapsibleClassDocumenter(ClassDocumenter):
@@ -9,11 +9,16 @@ class AutoCollapsibleClassDocumenter(ClassDocumenter):
     option_spec = dict(ClassDocumenter.option_spec)
 
     def document_members(self, all_members: bool = False) -> None:
-        sourcename = self.get_sourcename()
-        self.add_line('.. rubric:: Member Details', sourcename)
-        self.add_line('', sourcename)
-        self.add_line('.. collapse:: Click here to Expand', sourcename)
-        self.indent += ' ' * 3
+        # find out all the members that are documented
+        want_all = all_members or self.options.inherited_members or self.options.members is ALL
+        _, members = self.get_object_members(want_all)
+        if members:
+            sourcename = self.get_sourcename()
+            self.add_line('', sourcename)
+            self.add_line('.. rubric:: Member Details', sourcename)
+            self.add_line('', sourcename)
+            self.add_line('.. collapse:: Click here to Expand', sourcename)
+            self.indent += ' ' * 3
         super().document_members(all_members)
 
 
