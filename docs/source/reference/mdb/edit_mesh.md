@@ -8,6 +8,9 @@ Edit mesh commands are used to edit an orphan mesh part or part instance or an A
 
 ```{eval-rst}
 .. autoclass:: abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly
+    :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
@@ -16,6 +19,9 @@ Edit mesh commands are used to edit an orphan mesh part or part instance or an A
 
 ```{eval-rst}
 .. autoclass:: abaqus.EditMesh.MeshEditPart.MeshEditPart
+    :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 ```
@@ -27,6 +33,6 @@ Edit mesh commands are used to edit an orphan mesh part or part instance or an A
 .. collapse:: Click here to Expand
 
     .. autoclass:: abaqus.EditMesh.MeshEditOptions.MeshEditOptions
-
-        .. autoclasstoc::
+        :members:
+        :special-members: __init__
 ```

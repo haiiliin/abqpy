@@ -6,6 +6,9 @@ A Field object stores the non-propagating data of a field as well as a number of
 
 ```{eval-rst}
 .. autoclass:: abaqus.Field.FieldModel.FieldModel
+    :members:
+    :special-members: __init__
+    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -18,6 +21,9 @@ A Field object stores the non-propagating data of a field as well as a number of
 .. collapse:: Click here to Expand
 
     .. autoclass:: abaqus.Field.Field.Field
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
     ```
@@ -26,6 +32,9 @@ A Field object stores the non-propagating data of a field as well as a number of
 
     ```{eval-rst}
     .. autoclass:: abaqus.Field.AnalyticalField.AnalyticalField
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
     ```
@@ -34,6 +43,9 @@ A Field object stores the non-propagating data of a field as well as a number of
 
     ```{eval-rst}
     .. autoclass:: abaqus.Field.DataTable.DataTable
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
     ```
@@ -42,6 +54,9 @@ A Field object stores the non-propagating data of a field as well as a number of
 
     ```{eval-rst}
     .. autoclass:: abaqus.Field.DataTableArray.DataTableArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
     ```
@@ -50,6 +65,9 @@ A Field object stores the non-propagating data of a field as well as a number of
 
     ```{eval-rst}
     .. autoclass:: abaqus.Field.DiscreteField.DiscreteField
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
     ```
@@ -58,6 +76,9 @@ A Field object stores the non-propagating data of a field as well as a number of
 
     ```{eval-rst}
     .. autoclass:: abaqus.Field.ExpressionField.ExpressionField
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
     ```
@@ -66,6 +87,9 @@ A Field object stores the non-propagating data of a field as well as a number of
 
     ```{eval-rst}
     .. autoclass:: abaqus.Field.MappedField.MappedField
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
     ```
@@ -74,6 +98,9 @@ A Field object stores the non-propagating data of a field as well as a number of
 
     ```{eval-rst}
     .. autoclass:: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
 ```

@@ -13,22 +13,37 @@ The customData object is an instance of the RepositorySupport class; for more in
 .. collapse:: Click here to Expand
 
     .. autoclass:: abaqus.CustomKernel.CommandRegister.CommandRegister
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.CustomKernel.RegisteredList.RegisteredList
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.CustomKernel.RepositorySupport.RepositorySupport
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
 ```

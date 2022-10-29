@@ -24,32 +24,56 @@ The Job object is the abstract base type for other Job objects. The Job object h
 .. collapse:: Click here to Expand
 
     .. autoclass:: abaqus.Job.Coexecution.Coexecution
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Job.Job.Job
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Job.JobFromInputFile.JobFromInputFile
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Job.Message.Message
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Job.MessageArray.MessageArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Job.ModelJob.ModelJob
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Job.OptimizationProcess.OptimizationProcess
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Job.Queue.Queue
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 ```
