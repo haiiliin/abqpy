@@ -17,56 +17,41 @@ Annotation commands are used to create, position, and modify viewport annotation
 
 ```
 
-## Classes
-
-### Annotation
+## Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.Annotation.Annotation.Annotation
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### AnnotationsToPlotArray
+    .. autoclass:: abaqus.Annotation.Annotation.Annotation
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### AnnotationViewport
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Annotation.AnnotationViewport.AnnotationViewport
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Annotation.AnnotationViewport.AnnotationViewport
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### Arrow
+    .. autoclass:: abaqus.Annotation.Arrow.Arrow
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Annotation.Arrow.Arrow
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
-
-### Text
-
-```{eval-rst}
-.. autoclass:: abaqus.Annotation.Text.Text
-    :members:
-    :special-members: __init__
+    .. autoclass:: abaqus.Annotation.Text.Text
+        :members:
+        :special-members: __init__
 ```

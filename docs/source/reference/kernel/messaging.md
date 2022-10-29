@@ -2,26 +2,23 @@
 
 Messaging commands are available only if Abaqus/CAE is run interactively using the GUI.
 
-## Classes
-
-### DataObject
+## Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.Messaging.DataObject.DataObject
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### MonitorMgr
+    .. autoclass:: abaqus.Messaging.DataObject.DataObject
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Messaging.MonitorMgr.MonitorMgr
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
+    .. autoclass:: abaqus.Messaging.MonitorMgr.MonitorMgr
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
 ```
