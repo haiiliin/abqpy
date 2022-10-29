@@ -9,37 +9,30 @@ The inpParser module provides functions that allow you to parse an Abaqus input 
     :noindex:
 ```
 
-## Classes
-
-### AbaqusNDarray
+## Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### InputFile
+    .. autoclass:: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.InputFileParser.InputFile.InputFile
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.InputFileParser.InputFile.InputFile
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Keyword
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.InputFileParser.Keyword.Keyword
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.InputFileParser.Keyword.Keyword
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```
