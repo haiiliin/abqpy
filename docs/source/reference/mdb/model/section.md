@@ -35,7 +35,7 @@ section/connector
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

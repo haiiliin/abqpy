@@ -31,7 +31,7 @@ session/xy
     .. autoclasstoc::
 ```
 
-### Classes
+### Other Classes
 
 ```{eval-rst}
 

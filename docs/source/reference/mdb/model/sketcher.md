@@ -14,7 +14,7 @@ Sketcher commands are used to define the entities, such as the geometry, constra
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

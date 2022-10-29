@@ -25,7 +25,7 @@ Path commands are used to define a line through your model by specifying a serie
     .. autoclasstoc::
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

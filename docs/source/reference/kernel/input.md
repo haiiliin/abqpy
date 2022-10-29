@@ -9,7 +9,7 @@ The inpParser module provides functions that allow you to parse an Abaqus input 
     :noindex:
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

@@ -14,7 +14,7 @@ A Field object stores the non-propagating data of a field as well as a number of
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

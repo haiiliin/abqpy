@@ -13,7 +13,7 @@ A PredefinedField object stores the non-propagating data of a predefined field a
     .. autoclasstoc::
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

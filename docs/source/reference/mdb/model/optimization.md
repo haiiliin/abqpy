@@ -25,7 +25,7 @@ Optimization commands are used to perform topology, shape, or sizing optimizatio
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

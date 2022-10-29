@@ -41,7 +41,7 @@ model/step
     .. autoclasstoc::
 ```
 
-### Classes
+### Other Classes
 
 ```{eval-rst}
 

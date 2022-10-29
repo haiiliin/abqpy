@@ -24,7 +24,7 @@ Step output commands are used for configuring output requests, integrated output
     .. autoclasstoc::
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

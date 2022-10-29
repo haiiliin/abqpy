@@ -20,7 +20,7 @@ step/step_miscellaneous
     .. autoclasstoc::
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

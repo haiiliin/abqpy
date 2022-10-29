@@ -15,7 +15,7 @@ The Python ODB API commands are used to read and write data from an output datab
     .. autoclasstoc::
 ```
 
-### Classes
+### Other Classes
 
 ```{eval-rst}
 

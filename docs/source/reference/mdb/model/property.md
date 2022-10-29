@@ -14,7 +14,7 @@ The Property commands are used to create and manage reinforcements and to assign
     .. autoclasstoc::
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

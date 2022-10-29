@@ -14,7 +14,7 @@ A specific type of boundary condition object and a specific type of boundary con
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

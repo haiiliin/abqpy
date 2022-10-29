@@ -51,7 +51,7 @@ Assembly sets contain regions of an assembly and are used by many commands that 
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

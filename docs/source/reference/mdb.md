@@ -25,7 +25,7 @@ mdb/edit_mesh
    .. autoclasstoc::
 ```
 
-### Classes
+### Other Classes
 
 ```{eval-rst}
 

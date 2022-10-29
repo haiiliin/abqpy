@@ -14,7 +14,7 @@ The calibration commands are used for material calibration.
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

@@ -13,7 +13,7 @@ A specific type of engineering feature object is designed for each type of engin
     .. autoclasstoc::
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

@@ -14,7 +14,7 @@ Field report commands are used to write a field output report and free body comp
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

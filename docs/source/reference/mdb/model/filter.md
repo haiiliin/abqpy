@@ -27,7 +27,7 @@ Filter commands are used to create real-time filters of output request data.
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

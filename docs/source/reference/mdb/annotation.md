@@ -17,7 +17,7 @@ Annotation commands are used to create, position, and modify viewport annotation
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

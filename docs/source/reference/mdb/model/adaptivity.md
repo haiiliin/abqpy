@@ -38,7 +38,7 @@ The Adaptivity commands are used to define objects, perform analyses, and calcul
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

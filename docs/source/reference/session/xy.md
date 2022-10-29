@@ -13,7 +13,7 @@ XY commands are used to plot X-Y data and store its display attributes and to wr
     .. autoclasstoc::
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

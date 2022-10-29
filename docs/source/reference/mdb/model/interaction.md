@@ -50,7 +50,7 @@ A specific type of interaction object and a specific type of interaction state o
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

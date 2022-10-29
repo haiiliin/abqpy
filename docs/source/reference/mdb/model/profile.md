@@ -27,7 +27,7 @@ The Beam Section profile commands are used to create profiles. A profile definit
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

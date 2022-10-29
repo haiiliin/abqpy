@@ -14,7 +14,7 @@ Utility commands are used to do the following:
 
 View commands are used to transform three-dimensional views stored in Session and Viewport objects to the screen. (See Session object and Viewport object.)
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

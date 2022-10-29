@@ -17,7 +17,7 @@ The Job object is the abstract base type for other Job objects. The Job object h
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

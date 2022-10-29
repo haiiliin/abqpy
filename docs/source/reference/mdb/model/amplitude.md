@@ -28,7 +28,7 @@ Amplitude commands are used to create arbitrary time or frequency variations of 
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

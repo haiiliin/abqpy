@@ -24,7 +24,7 @@ Table Collection commands are used to create dynamic table types and tables.
     .. autoclasstoc::
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

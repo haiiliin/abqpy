@@ -20,7 +20,7 @@ The Load object is the abstract base type for other Load objects. The Load objec
 
 ```
 
-### Classes
+### Other Classes
 
 ```{eval-rst}
 
@@ -540,7 +540,7 @@ The LoadCase object is used to define the loads and constraints comprising a par
 
 ```
 
-### Classes
+### Other Classes
 
 ```{eval-rst}
 

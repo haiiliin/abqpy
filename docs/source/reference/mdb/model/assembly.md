@@ -14,7 +14,7 @@ Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operation
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

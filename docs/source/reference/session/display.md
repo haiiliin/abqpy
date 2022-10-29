@@ -14,7 +14,7 @@ Display group commands are used to select a subset of the entities displayed in 
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 

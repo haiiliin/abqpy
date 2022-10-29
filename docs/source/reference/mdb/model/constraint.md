@@ -14,7 +14,7 @@ The Constraint commands define constraints between regions of the model.
 
 ```
 
-## Classes
+## Other Classes
 
 ```{eval-rst}
 
