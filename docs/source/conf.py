@@ -38,7 +38,6 @@ except (ImportError, AttributeError):
     warnings.warn('abqpy is not installed, using 2023.0.0')
     release = version = '2023.0.0'[:4]
 sys.path.insert(0, os.path.abspath('../../src'))
-sys.path.append(os.path.abspath("./_ext"))
 
 # For multiple languages
 locale_dirs = ['locales/']   # path is example but recommended.
@@ -65,13 +64,13 @@ extensions = [
     'sphinx_copybutton',
     'sphinx_autodoc_typehints',
     'sphinx_codeautolink',
+    'sphinx_collapsible_autodoc',
     'sphinx_design',
     'sphinx_gallery.gen_gallery',
     'sphinx_toolbox.collapse',
     'sphinx_toolbox.confval',
     'hoverxref.extension',
     'myst_parser',
-    'collapsible_autodoc',
 ]
 
 # MyST configuration
