@@ -1,13 +1,11 @@
-# Beam Section Profile
+# Table Collection
 
-The Beam Section profile commands are used to create profiles. A profile definition specifies the properties of a beam that are related to its cross-section geometry. When you define a beam section, you must include a reference to a profile in the section definition.
+Table Collection commands are used to create dynamic table types and tables.
 
-## Create beam section profiles
-
-### In Mdb
+## Creat table collections for Assembly
 
 ```{eval-rst}
-.. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel
+.. autoclass:: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly
     :members:
     :special-members: __init__
     :show-inheritance:
@@ -15,16 +13,15 @@ The Beam Section profile commands are used to create profiles. A profile definit
     .. autoclasstoc::
 ```
 
-### In Odb
+## Creat table collections for Model
 
 ```{eval-rst}
-.. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb
+.. autoclass:: abaqus.TableCollection.TableCollectionModel.TableCollectionModel
     :members:
     :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
-
 ```
 
 ## Other Classes
@@ -33,84 +30,91 @@ The Beam Section profile commands are used to create profiles. A profile definit
 
 .. collapse:: Click here to Expand
 
-    .. autoclass:: abaqus.BeamSectionProfile.Profile.Profile
+    .. autoclass:: abaqus.TableCollection.ActivateElements.ActivateElements
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile
+    .. autoclass:: abaqus.TableCollection.DataTable.DataTable
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.BeamSectionProfile.BoxProfile.BoxProfile
+    .. autoclass:: abaqus.TableCollection.DataTableArray.DataTableArray
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.BeamSectionProfile.CircularProfile.CircularProfile
+    .. autoclass:: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile
+    .. autoclass:: abaqus.TableCollection.EventSeries.EventSeries
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile
+    .. autoclass:: abaqus.TableCollection.EventSeriesData.EventSeriesData
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.BeamSectionProfile.IProfile.IProfile
+    .. autoclass:: abaqus.TableCollection.EventSeriesType.EventSeriesType
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.BeamSectionProfile.LProfile.LProfile
+    .. autoclass:: abaqus.TableCollection.ParameterColumn.ParameterColumn
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.BeamSectionProfile.PipeProfile.PipeProfile
+    .. autoclass:: abaqus.TableCollection.ParameterColumnArray.ParameterColumnArray
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile
+    .. autoclass:: abaqus.TableCollection.ParameterTable.ParameterTable
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.BeamSectionProfile.TProfile.TProfile
+    .. autoclass:: abaqus.TableCollection.PropertyTable.PropertyTable
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile
+    .. autoclass:: abaqus.TableCollection.PropertyTableData.PropertyTableData
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
+
+    .. autoclass:: abaqus.TableCollection.TableCollection.TableCollection
         :members:
         :special-members: __init__
         :show-inheritance:

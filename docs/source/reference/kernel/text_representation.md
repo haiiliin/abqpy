@@ -2,33 +2,22 @@
 
 Text representation commands are used to determine how objects are printed on the Python command line.
 
-## Classes
-
-### redentABQ
+## Other Classes
 
 ```{eval-rst}
-.. automodule:: abaqus.TextRepresentation.redentABQ
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-```
 
-### textRepr
+.. collapse:: Click here to Expand
 
-```{eval-rst}
-.. automodule:: abaqus.TextRepresentation.textRepr
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-```
+    .. automodule:: abaqus.TextRepresentation.redentABQ
+        :members:
 
-### TextReprOptions
+    .. automodule:: abaqus.TextRepresentation.textRepr
+        :members:
 
-```{eval-rst}
-.. autoclass:: abaqus.TextRepresentation.TextReprOptions.TextReprOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.TextRepresentation.TextReprOptions.TextReprOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```
