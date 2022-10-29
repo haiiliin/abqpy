@@ -21,6 +21,8 @@ jobs:
         language: ['zh_CN']
     steps:
     - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
     - uses: actions/checkout@v3.1.0
       with:
         fetch-depth: 0
@@ -32,7 +34,7 @@ jobs:
     - name: Build the documentation
       shell: bash -l {0}
       run: |
-        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}
+        sphinx-build -b html -D language=${{ matrix.language }} -j auto docs/source docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}
         touch  docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}/.nojekyll
         rm -rf docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}/.doctrees
     - name: Create pull request

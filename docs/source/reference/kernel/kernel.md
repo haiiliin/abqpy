@@ -6,56 +6,44 @@ All objects that you create under the mdb.customData and odb\[odbName\].customDa
 
 The customData object is an instance of the RepositorySupport class; for more information, see RepositorySupport. The classes described in this section register with the GUI infrastructure when you create the class. As a result, if you write a custom GUI script, you can query these objects from the GUI, and you can also be notified when the contents of these objects change so you can update the GUI accordingly. For more information, see Extending the Abaqus Scripting Interface and Accessing kernel data from the GUI.
 
-## Classes
-
-### CommandRegister
+## Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.CustomKernel.CommandRegister.CommandRegister
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### RegisteredDictionary
+    .. autoclass:: abaqus.CustomKernel.CommandRegister.CommandRegister
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### RegisteredList
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.CustomKernel.RegisteredList.RegisteredList
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.CustomKernel.RegisteredList.RegisteredList
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### RegisteredTuple
+    .. autoclass:: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.CustomKernel.RepositorySupport.RepositorySupport
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### RepositorySupport
-
-```{eval-rst}
-.. autoclass:: abaqus.CustomKernel.RepositorySupport.RepositorySupport
-    :members:
-    :special-members: __init__
+        .. autoclasstoc::
 ```
