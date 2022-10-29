@@ -67,7 +67,6 @@ extensions = [
     'sphinx_collapsible_autodoc',
     'sphinx_design',
     'sphinx_gallery.gen_gallery',
-    'sphinx_toolbox.collapse',
     'sphinx_toolbox.confval',
     'hoverxref.extension',
     'myst_parser',
