@@ -14,510 +14,331 @@ A specific type of boundary condition object and a specific type of boundary con
 
 ```
 
-## Classes
-
-### BoundaryCondition
+## Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### BoundaryConditionState
+    .. autoclass:: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BoundaryCondition.BoundaryConditionState.BoundaryConditionState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### AccelerationBaseMotionBC
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BoundaryCondition.AccelerationBaseMotionBC.AccelerationBaseMotionBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### AccelerationBaseMotionBCState
+    .. autoclass:: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.AccelerationBaseMotionBCState.AccelerationBaseMotionBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### AccelerationBC
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.AccelerationBC.AccelerationBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### AccelerationBCState
+    .. autoclass:: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.AccelerationBCState.AccelerationBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### AcousticPressureBC
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.AcousticPressureBC.AcousticPressureBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### AcousticPressureBCState
+    .. autoclass:: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.AcousticPressureBCState.AcousticPressureBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### ConcentrationBC
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.ConcentrationBC.ConcentrationBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ConcentrationBCState
+    .. autoclass:: abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.ConcentrationBCState.ConcentrationBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### ConnAccelerationBC
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.ConnAccelerationBC.ConnAccelerationBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ConnAccelerationBCState
+    .. autoclass:: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.ConnAccelerationBCState.ConnAccelerationBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### ConnDisplacementBC
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.ConnDisplacementBC.ConnDisplacementBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ConnDisplacementBCState
+    .. autoclass:: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.ConnDisplacementBCState.ConnDisplacementBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### ConnVelocityBC
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.ConnVelocityBC.ConnVelocityBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ConnVelocityBCState
+    .. autoclass:: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.ConnVelocityBCState.ConnVelocityBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BoundaryCondition.EulerianBC.EulerianBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DisplacementBaseMotionBC
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.DisplacementBaseMotionBC.DisplacementBaseMotionBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DisplacementBaseMotionBCState
+    .. autoclass:: abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.DisplacementBaseMotionBCState.DisplacementBaseMotionBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DisplacementBC
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.DisplacementBC.DisplacementBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DisplacementBCState
+    .. autoclass:: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.DisplacementBCState.DisplacementBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### ElectricPotentialBC
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.ElectricPotentialBC.ElectricPotentialBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ElectricPotentialBCState
+    .. autoclass:: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.ElectricPotentialBCState.ElectricPotentialBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BoundaryCondition.PorePressureBC.PorePressureBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### EulerianBC
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.EulerianBC.EulerianBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### EulerianBCState
+    .. autoclass:: abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.EulerianBCState.EulerianBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### EulerianMotionBC
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.EulerianMotionBC.EulerianMotionBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### EulerianMotionBCState
+    .. autoclass:: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.EulerianMotionBCState.EulerianMotionBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### FluidCavityPressureBC
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.FluidCavityPressureBC.FluidCavityPressureBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### FluidCavityPressureBCState
+    .. autoclass:: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.FluidCavityPressureBCState.FluidCavityPressureBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BoundaryCondition.TypeBC.TypeBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### MagneticVectorPotentialBC
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.MagneticVectorPotentialBC.MagneticVectorPotentialBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BoundaryCondition.TypeBCState.TypeBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### MaterialFlowBC
+    .. autoclass:: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.MaterialFlowBC.MaterialFlowBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### MaterialFlowBCState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.MaterialFlowBCState.MaterialFlowBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BoundaryCondition.VelocityBC.VelocityBC
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### PorePressureBC
+    .. autoclass:: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.PorePressureBC.PorePressureBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### PorePressureBCState
-
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.PorePressureBCState.PorePressureBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### RetainedNodalDofsBC
-
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.RetainedNodalDofsBC.RetainedNodalDofsBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SecondaryBaseBC
-
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.SecondaryBaseBC.SecondaryBaseBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SecondaryBaseBCState
-
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.SecondaryBaseBCState.SecondaryBaseBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SubmodelBC
-
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.SubmodelBC.SubmodelBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SubmodelBCState
-
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.SubmodelBCState.SubmodelBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TemperatureBC
-
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.TemperatureBC.TemperatureBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TemperatureBCState
-
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.TemperatureBCState.TemperatureBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TypeBC
-
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.TypeBC.TypeBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TypeBCState
-
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.TypeBCState.TypeBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### VelocityBaseMotionBC
-
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.VelocityBaseMotionBC.VelocityBaseMotionBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### VelocityBaseMotionBCState
-
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.VelocityBaseMotionBCState.VelocityBaseMotionBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### VelocityBC
-
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.VelocityBC.VelocityBC
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### VelocityBCState
-
-```{eval-rst}
-.. autoclass:: abaqus.BoundaryCondition.VelocityBCState.VelocityBCState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```
