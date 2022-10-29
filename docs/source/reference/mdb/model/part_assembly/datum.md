@@ -4,59 +4,44 @@ Datum commands return Feature objects and inherit the methods of Feature objects
 
 Each command also creates a Datum object in the corresponding datum repository. The Datum object is used as an argument to other commands, such as Part and Partition commands.
 
-## Classes
-
-### Datum
+## Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.Datum.Datum.Datum
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### DatumAxis
+    .. autoclass:: abaqus.Datum.Datum.Datum
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Datum.DatumAxis.DatumAxis
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Datum.DatumAxis.DatumAxis
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DatumCsys
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Datum.DatumCsys.DatumCsys
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Datum.DatumCsys.DatumCsys
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DatumPlane
+    .. autoclass:: abaqus.Datum.DatumPlane.DatumPlane
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Datum.DatumPlane.DatumPlane
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Datum.DatumPoint.DatumPoint
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DatumPoint
-
-```{eval-rst}
-.. autoclass:: abaqus.Datum.DatumPoint.DatumPoint
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

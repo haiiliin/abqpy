@@ -25,94 +25,65 @@ Path commands are used to define a line through your model by specifying a serie
     .. autoclasstoc::
 ```
 
-## Classes
-
-### CurrentProbeValues
+## Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
+.. collapse:: Click here to Expand
+
+    .. autoclass:: abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
+
+    .. autoclass:: abaqus.PathAndProbe.NodeQuery.NodeQuery
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
+
+    .. autoclass:: abaqus.PathAndProbe.Path.Path
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
+
+    .. autoclass:: abaqus.PathAndProbe.ProbeOptions.ProbeOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
+
+    .. autoclass:: abaqus.PathAndProbe.ProbeReport.ProbeReport
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
+
+    .. autoclass:: abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
+
+    .. autoclass:: abaqus.PathAndProbe.Spectrum.Spectrum
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
+
+    .. autoclass:: abaqus.PathAndProbe.Stream.Stream
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
 ```
-
-### NodeQuery
-
-```{eval-rst}
-.. autoclass:: abaqus.PathAndProbe.NodeQuery.NodeQuery
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### Path
-
-```{eval-rst}
-.. autoclass:: abaqus.PathAndProbe.Path.Path
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### ProbeOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.PathAndProbe.ProbeOptions.ProbeOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### ProbeReport
-
-```{eval-rst}
-.. autoclass:: abaqus.PathAndProbe.ProbeReport.ProbeReport
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SelectedProbeValues
-
-```{eval-rst}
-.. autoclass:: abaqus.PathAndProbe.SelectedProbeValues.SelectedProbeValues
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### Spectrum
-
-```{eval-rst}
-.. autoclass:: abaqus.PathAndProbe.Spectrum.Spectrum
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### Stream
-
-```{eval-rst}
-.. autoclass:: abaqus.PathAndProbe.Stream.Stream
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-% This is a comment ro supress the warning "(ERROR/3) Document may not end with a transition."

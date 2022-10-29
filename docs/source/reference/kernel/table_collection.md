@@ -24,147 +24,100 @@ Table Collection commands are used to create dynamic table types and tables.
     .. autoclasstoc::
 ```
 
-## Classes
-
-### ActivateElements
+## Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.TableCollection.ActivateElements.ActivateElements
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### DataTable
+    .. autoclass:: abaqus.TableCollection.ActivateElements.ActivateElements
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.TableCollection.DataTable.DataTable
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.TableCollection.DataTable.DataTable
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DataTableArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.TableCollection.DataTableArray.DataTableArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.TableCollection.DataTableArray.DataTableArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ElementProgressiveActivation
+    .. autoclass:: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.TableCollection.EventSeries.EventSeries
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### EventSeries
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.TableCollection.EventSeries.EventSeries
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.TableCollection.EventSeriesData.EventSeriesData
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### EventSeriesData
+    .. autoclass:: abaqus.TableCollection.EventSeriesType.EventSeriesType
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.TableCollection.EventSeriesData.EventSeriesData
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.TableCollection.ParameterColumn.ParameterColumn
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### EventSeriesType
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.TableCollection.EventSeriesType.EventSeriesType
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.TableCollection.ParameterColumnArray.ParameterColumnArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ParameterColumn
+    .. autoclass:: abaqus.TableCollection.ParameterTable.ParameterTable
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.TableCollection.ParameterColumn.ParameterColumn
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.TableCollection.PropertyTable.PropertyTable
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### ParameterColumnArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.TableCollection.ParameterColumnArray.ParameterColumnArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.TableCollection.PropertyTableData.PropertyTableData
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ParameterTable
+    .. autoclass:: abaqus.TableCollection.TableCollection.TableCollection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.TableCollection.ParameterTable.ParameterTable
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### PropertyTable
-
-```{eval-rst}
-.. autoclass:: abaqus.TableCollection.PropertyTable.PropertyTable
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### PropertyTableData
-
-```{eval-rst}
-.. autoclass:: abaqus.TableCollection.PropertyTableData.PropertyTableData
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TableCollection
-
-```{eval-rst}
-.. autoclass:: abaqus.TableCollection.TableCollection.TableCollection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```
