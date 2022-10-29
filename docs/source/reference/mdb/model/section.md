@@ -35,323 +35,212 @@ section/connector
 
 ```
 
-## Classes
-
-### Section
+## Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.Section.Section.Section
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### SectionBase
+    .. autoclass:: abaqus.Section.Section.Section
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.SectionBase.SectionBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Section.SectionBase.SectionBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### AcousticInfiniteSection
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.AcousticInfiniteSection.AcousticInfiniteSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Section.AcousticInfiniteSection.AcousticInfiniteSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### AcousticInterfaceSection
+    .. autoclass:: abaqus.Section.AcousticInterfaceSection.AcousticInterfaceSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.AcousticInterfaceSection.AcousticInterfaceSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Section.BeamSection.BeamSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### BeamSection
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.BeamSection.BeamSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Section.CohesiveSection.CohesiveSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### CohesiveSection
+    .. autoclass:: abaqus.Section.CompositeShellSection.CompositeShellSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.CohesiveSection.CohesiveSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Section.CompositeSolidSection.CompositeSolidSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### CompositeShellSection
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.CompositeShellSection.CompositeShellSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Section.ConnectorSection.ConnectorSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### CompositeSolidSection
+    .. autoclass:: abaqus.Section.EulerianSection.EulerianSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.CompositeSolidSection.CompositeSolidSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Section.GasketSection.GasketSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### ConnectorSection
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.ConnectorSection.ConnectorSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### EulerianSection
+    .. autoclass:: abaqus.Section.GeometryShellSection.GeometryShellSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.EulerianSection.EulerianSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Section.HomogeneousShellSection.HomogeneousShellSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### GasketSection
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.GasketSection.GasketSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Section.HomogeneousSolidSection.HomogeneousSolidSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### GeneralStiffnessSection
+    .. autoclass:: abaqus.Section.LayerProperties.LayerProperties
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Section.LayerPropertiesArray.LayerPropertiesArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### GeometryShellSection
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.GeometryShellSection.GeometryShellSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Section.MembraneSection.MembraneSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### HomogeneousShellSection
+    .. autoclass:: abaqus.Section.MPCSection.MPCSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.HomogeneousShellSection.HomogeneousShellSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Section.PEGSection.PEGSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### HomogeneousSolidSection
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.HomogeneousSolidSection.HomogeneousSolidSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Section.RebarLayers.RebarLayers
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### LayerProperties
+    .. autoclass:: abaqus.Section.SectionLayer.SectionLayer
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.LayerProperties.LayerProperties
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Section.SectionLayerArray.SectionLayerArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### LayerPropertiesArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.LayerPropertiesArray.LayerPropertiesArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Section.ShellSection.ShellSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### MembraneSection
+    .. autoclass:: abaqus.Section.SolidSection.SolidSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.MembraneSection.MembraneSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Section.SurfaceSection.SurfaceSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### MPCSection
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.MPCSection.MPCSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Section.TransverseShearBeam.TransverseShearBeam
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### PEGSection
+    .. autoclass:: abaqus.Section.TransverseShearShell.TransverseShearShell
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Section.PEGSection.PEGSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Section.TrussSection.TrussSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### RebarLayers
-
-```{eval-rst}
-.. autoclass:: abaqus.Section.RebarLayers.RebarLayers
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SectionLayer
-
-```{eval-rst}
-.. autoclass:: abaqus.Section.SectionLayer.SectionLayer
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SectionLayerArray
-
-```{eval-rst}
-.. autoclass:: abaqus.Section.SectionLayerArray.SectionLayerArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### ShellSection
-
-```{eval-rst}
-.. autoclass:: abaqus.Section.ShellSection.ShellSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SolidSection
-
-```{eval-rst}
-.. autoclass:: abaqus.Section.SolidSection.SolidSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SurfaceSection
-
-```{eval-rst}
-.. autoclass:: abaqus.Section.SurfaceSection.SurfaceSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TransverseShearBeam
-
-```{eval-rst}
-.. autoclass:: abaqus.Section.TransverseShearBeam.TransverseShearBeam
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TransverseShearShell
-
-```{eval-rst}
-.. autoclass:: abaqus.Section.TransverseShearShell.TransverseShearShell
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TrussSection
-
-```{eval-rst}
-.. autoclass:: abaqus.Section.TrussSection.TrussSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```
