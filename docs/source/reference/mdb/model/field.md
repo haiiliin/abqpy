@@ -14,92 +14,65 @@ A Field object stores the non-propagating data of a field as well as a number of
 
 ```
 
-## Classes
-
-### Field
+## Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.Field.Field.Field
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### AnalyticalField
+    .. autoclass:: abaqus.Field.Field.Field
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Field.AnalyticalField.AnalyticalField
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Field.AnalyticalField.AnalyticalField
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DataTable
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Field.DataTable.DataTable
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Field.DataTable.DataTable
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DataTableArray
+    .. autoclass:: abaqus.Field.DataTableArray.DataTableArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Field.DataTableArray.DataTableArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Field.DiscreteField.DiscreteField
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DiscreteField
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Field.DiscreteField.DiscreteField
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Field.ExpressionField.ExpressionField
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ExpressionField
+    .. autoclass:: abaqus.Field.MappedField.MappedField
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Field.ExpressionField.ExpressionField
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### MappedField
-
-```{eval-rst}
-.. autoclass:: abaqus.Field.MappedField.MappedField
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbMeshRegionData
-
-```{eval-rst}
-.. autoclass:: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

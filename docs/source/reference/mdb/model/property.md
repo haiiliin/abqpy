@@ -14,103 +14,72 @@ The Property commands are used to create and manage reinforcements and to assign
     .. autoclasstoc::
 ```
 
-## Classes
-
-### CompositeLayup
+## Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.Property.CompositeLayup.CompositeLayup
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### CompositePly
+    .. autoclass:: abaqus.Property.CompositeLayup.CompositeLayup
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Property.CompositePly.CompositePly
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Property.CompositePly.CompositePly
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### CompositePlyArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Property.CompositePlyArray.CompositePlyArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Property.CompositePlyArray.CompositePlyArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### MaterialOrientation
+    .. autoclass:: abaqus.Property.MaterialOrientation.MaterialOrientation
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Property.MaterialOrientation.MaterialOrientation
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Property.MaterialOrientationArray.MaterialOrientationArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### MaterialOrientationArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Property.MaterialOrientationArray.MaterialOrientationArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Property.PlyStackPlot.PlyStackPlot
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### PlyStackPlot
+    .. autoclass:: abaqus.Property.PropertyAssembly.PropertyAssembly
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Property.PlyStackPlot.PlyStackPlot
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Property.SectionAssignment.SectionAssignment
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### PropertyAssembly
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Property.PropertyAssembly.PropertyAssembly
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Property.SectionAssignmentArray.SectionAssignmentArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
-
-### SectionAssignment
-
-```{eval-rst}
-.. autoclass:: abaqus.Property.SectionAssignment.SectionAssignment
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SectionAssignmentArray
-
-```{eval-rst}
-.. autoclass:: abaqus.Property.SectionAssignmentArray.SectionAssignmentArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```
