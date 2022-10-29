@@ -318,24 +318,6 @@ Optimization commands are used to perform topology, shape, or sizing optimizatio
 
         .. autoclasstoc::
 
-<<<<<<< HEAD
-### TopologyPlanarSymmetry
-=======
-    .. autoclass:: abaqus.Optimization.TopologyCyclicSymmetry.TopologyCyclicSymmetry
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Optimization.TopologyDemoldControl.TopologyDemoldControl
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
->>>>>>> 27c50e7e ([docs]: Collapse unimportant classes (#3425))
-
     .. autoclass:: abaqus.Optimization.TopologyMemberSize.TopologyMemberSize
         :members:
         :special-members: __init__
