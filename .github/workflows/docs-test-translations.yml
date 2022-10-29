@@ -34,7 +34,7 @@ jobs:
     - name: Build the documentation
       shell: bash -l {0}
       run: |
-        sphinx-build -b html -D language=${{ matrix.language }} docs/source docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}
+        sphinx-build -b html -D language=${{ matrix.language }} -j auto docs/source docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}
         touch  docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}/.nojekyll
         rm -rf docs/build/${{ matrix.language }}/html/pr-${{ github.event.number }}/.doctrees
     - name: Create pull request
