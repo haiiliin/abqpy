@@ -26,77 +26,49 @@ A Field object stores the non-propagating data of a field as well as a number of
         :show-inheritance:
 
         .. autoclasstoc::
-    ```
 
-    ### AnalyticalField
-
-    ```{eval-rst}
     .. autoclass:: abaqus.Field.AnalyticalField.AnalyticalField
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
-    ```
 
-    ### DataTable
-
-    ```{eval-rst}
     .. autoclass:: abaqus.Field.DataTable.DataTable
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
-    ```
 
-    ### DataTableArray
-
-    ```{eval-rst}
     .. autoclass:: abaqus.Field.DataTableArray.DataTableArray
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
-    ```
 
-    ### DiscreteField
-
-    ```{eval-rst}
     .. autoclass:: abaqus.Field.DiscreteField.DiscreteField
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
-    ```
 
-    ### ExpressionField
-
-    ```{eval-rst}
     .. autoclass:: abaqus.Field.ExpressionField.ExpressionField
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
-    ```
 
-    ### MappedField
-
-    ```{eval-rst}
     .. autoclass:: abaqus.Field.MappedField.MappedField
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
-    ```
 
-    ### OdbMeshRegionData
-
-    ```{eval-rst}
     .. autoclass:: abaqus.Field.OdbMeshRegionData.OdbMeshRegionData
         :members:
         :special-members: __init__
