@@ -13,158 +13,107 @@ A PredefinedField object stores the non-propagating data of a predefined field a
     .. autoclasstoc::
 ```
 
-## Classes
-
-### Field
+## Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.Field.Field
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### FieldState
+    .. autoclass:: abaqus.PredefinedField.Field.Field
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.FieldState.FieldState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PredefinedField.FieldState.FieldState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### PredefinedField
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.PredefinedField.PredefinedField
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PredefinedField.PredefinedField.PredefinedField
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### PredefinedFieldState
+    .. autoclass:: abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### FluidCavityPressure
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PredefinedField.IMAField.IMAField
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### IMAField
+    .. autoclass:: abaqus.PredefinedField.IMARegion.IMARegion
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.IMAField.IMAField
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PredefinedField.InitialState.InitialState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### IMARegion
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.IMARegion.IMARegion
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PredefinedField.KinematicHardening.KinematicHardening
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### InitialState
+    .. autoclass:: abaqus.PredefinedField.MaterialAssignment.MaterialAssignment
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.InitialState.InitialState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PredefinedField.Temperature.Temperature
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### KinematicHardening
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.KinematicHardening.KinematicHardening
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PredefinedField.TemperatureState.TemperatureState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### MaterialAssignment
+    .. autoclass:: abaqus.PredefinedField.TiffOptions.TiffOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.MaterialAssignment.MaterialAssignment
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PredefinedField.Velocity.Velocity
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Temperature
-
-```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.Temperature.Temperature
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TemperatureState
-
-```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.TemperatureState.TemperatureState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TiffOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.TiffOptions.TiffOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### Velocity
-
-```{eval-rst}
-.. autoclass:: abaqus.PredefinedField.Velocity.Velocity
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

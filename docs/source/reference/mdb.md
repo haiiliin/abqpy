@@ -25,35 +25,37 @@ mdb/edit_mesh
    .. autoclasstoc::
 ```
 
-### MdbBase
+### Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.Mdb.MdbBase.MdbBase
-   :members:
-   :special-members: __init__
-   :show-inheritance:
 
-   .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### AcisMdb
+   .. autoclass:: abaqus.Mdb.MdbBase.MdbBase
+      :members:
+      :special-members: __init__
+      :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Part.AcisMdb.AcisMdb
-   :members:
-   :special-members: __init__
-   :show-inheritance:
+      .. autoclasstoc::
 
-   .. autoclasstoc::
-```
+   .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
+      :members:
+      :special-members: __init__
+      :show-inheritance:
 
-### JobMdb
+      .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Job.JobMdb.JobMdb
-   :members:
-   :special-members: __init__
-   :show-inheritance:
+   .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
+      :members:
+      :special-members: __init__
+      :show-inheritance:
 
-   .. autoclasstoc::
+      .. autoclasstoc::
+
+   .. autoclass:: abaqus.Job.JobMdb.JobMdb
+      :members:
+      :special-members: __init__
+      :show-inheritance:
+
+      .. autoclasstoc::
 ```
