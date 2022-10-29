@@ -15,576 +15,375 @@ The Python ODB API commands are used to read and write data from an output datab
     .. autoclasstoc::
 ```
 
-### OdbBase
+### Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbBase.OdbBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### AmplitudeOdb
+    .. autoclass:: abaqus.Odb.OdbBase.OdbBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-    :noindex:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+        :noindex:
 
-### FilterOdb
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Filter.FilterOdb.FilterOdb
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-    :noindex:
+    .. autoclass:: abaqus.Filter.FilterOdb.FilterOdb
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+        :noindex:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### MaterialOdb
+    .. autoclass:: abaqus.Material.MaterialOdb.MaterialOdb
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+        :noindex:
 
-```{eval-rst}
-.. autoclass:: abaqus.Material.MaterialOdb.MaterialOdb
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-    :noindex:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+        :noindex:
 
-### BeamSectionProfileOdb
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-    :noindex:
+    .. autoclass:: abaqus.Odb.AnalyticSurface.AnalyticSurface
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### AnalyticSurface
+    .. autoclass:: abaqus.Odb.AnalyticSurfaceSegment.AnalyticSurfaceSegment
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.AnalyticSurface.AnalyticSurface
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Odb.BeamOrientation.BeamOrientation
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### AnalyticSurfaceSegment
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.AnalyticSurfaceSegment.AnalyticSurfaceSegment
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Odb.BeamOrientationArray.BeamOrientationArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### BeamOrientation
+    .. autoclass:: abaqus.Odb.FieldBulkData.FieldBulkData
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.BeamOrientation.BeamOrientation
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Odb.FieldLocation.FieldLocation
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### BeamOrientationArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.BeamOrientationArray.BeamOrientationArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Odb.FieldLocationArray.FieldLocationArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### FieldBulkData
+    .. autoclass:: abaqus.Odb.FieldOutput.FieldOutput
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.FieldBulkData.FieldBulkData
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Odb.FieldValue.FieldValue
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### FieldLocation
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.FieldLocation.FieldLocation
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Odb.FieldValueArray.FieldValueArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### FieldLocationArray
+    .. autoclass:: abaqus.Odb.HistoryOutput.HistoryOutput
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.FieldLocationArray.FieldLocationArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Odb.HistoryPoint.HistoryPoint
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### FieldOutput
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.FieldOutput.FieldOutput
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Odb.HistoryRegion.HistoryRegion
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### FieldValue
+    .. autoclass:: abaqus.Odb.JobData.JobData
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.FieldValue.FieldValue
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Odb.OdbAssembly.OdbAssembly
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### FieldValueArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.FieldValueArray.FieldValueArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### HistoryOutput
+    .. automodule:: abaqus.Odb.OdbCommands
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.HistoryOutput.HistoryOutput
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Odb.OdbDatumCsys.OdbDatumCsys
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### HistoryPoint
+    .. autoclass:: abaqus.Odb.OdbFrame.OdbFrame
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.HistoryPoint.HistoryPoint
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Odb.OdbFrameArray.OdbFrameArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### HistoryRegion
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.HistoryRegion.HistoryRegion
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Odb.OdbInstance.OdbInstance
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### JobData
+    .. autoclass:: abaqus.Odb.OdbInstanceBase.OdbInstanceBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.JobData.JobData
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Odb.OdbLoadCase.OdbLoadCase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbAssembly
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbAssembly.OdbAssembly
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Odb.OdbMeshElement.OdbMeshElement
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbAssemblyBase
+    .. autoclass:: abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbAssemblyBase.OdbAssemblyBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Odb.OdbMeshNode.OdbMeshNode
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbCommands
+        .. autoclasstoc::
 
-```{eval-rst}
-.. automodule:: abaqus.Odb.OdbCommands
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-```
+    .. autoclass:: abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbDatumCsys
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbDatumCsys.OdbDatumCsys
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Odb.OdbPart.OdbPart
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbFrame
+    .. autoclass:: abaqus.Odb.OdbPartBase.OdbPartBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbFrame.OdbFrame
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Odb.OdbPretensionSection.OdbPretensionSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbFrameArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbFrameArray.OdbFrameArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Odb.OdbPretensionSectionArray.OdbPretensionSectionArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbInstance
+    .. autoclass:: abaqus.Odb.OdbRigidBody.OdbRigidBody
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbInstance.OdbInstance
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbInstanceBase
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbInstanceBase.OdbInstanceBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbLoadCase
+    .. autoclass:: abaqus.Odb.OdbSession.OdbSession
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbLoadCase.OdbLoadCase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Odb.OdbSet.OdbSet
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbMeshElement
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbMeshElement.OdbMeshElement
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Odb.OdbStep.OdbStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbMeshElementArray
+    .. autoclass:: abaqus.Odb.OdbStepBase.OdbStepBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbMeshElementArray.OdbMeshElementArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Odb.RebarOrientation.RebarOrientation
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbMeshNode
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbMeshNode.OdbMeshNode
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Odb.RebarOrientationArray.RebarOrientationArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbMeshNodeArray
+    .. autoclass:: abaqus.Odb.ScratchOdb.ScratchOdb
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbMeshNodeArray.OdbMeshNodeArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Odb.SectionCategory.SectionCategory
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbPart
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbPart.OdbPart
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Odb.SectionPoint.SectionPoint
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbPartBase
+    .. autoclass:: abaqus.Odb.SectionPointArray.SectionPointArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbPartBase.OdbPartBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Odb.SectorDefinition.SectorDefinition
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbPretensionSection
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbPretensionSection.OdbPretensionSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Odb.UserData.UserData
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbPretensionSectionArray
+    .. autoclass:: abaqus.Odb.UserDataBase.UserDataBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbPretensionSectionArray.OdbPretensionSectionArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbRigidBody
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbRigidBody.OdbRigidBody
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbRigidBodyArray
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbRigidBodyArray.OdbRigidBodyArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbSequenceAnalyticSurfaceSegment
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbSequenceAnalyticSurfaceSegment.OdbSequenceAnalyticSurfaceSegment
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbSession
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbSession.OdbSession
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbSet
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbSet.OdbSet
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbStep
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbStep.OdbStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbStepBase
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbStepBase.OdbStepBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### RebarOrientation
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.RebarOrientation.RebarOrientation
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### RebarOrientationArray
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.RebarOrientationArray.RebarOrientationArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### ScratchOdb
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.ScratchOdb.ScratchOdb
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SectionCategory
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.SectionCategory.SectionCategory
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SectionPoint
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.SectionPoint.SectionPoint
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SectionPointArray
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.SectionPointArray.SectionPointArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SectorDefinition
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.SectorDefinition.SectorDefinition
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### UserData
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.UserData.UserData
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### UserDataBase
-
-```{eval-rst}
-.. autoclass:: abaqus.Odb.UserDataBase.UserDataBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```
