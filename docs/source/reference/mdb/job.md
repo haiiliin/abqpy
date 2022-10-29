@@ -17,90 +17,63 @@ The Job object is the abstract base type for other Job objects. The Job object h
 
 ```
 
-## Features of the job
-
-### Coexecution
+## Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.Job.Coexecution.Coexecution
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### Job
+    .. autoclass:: abaqus.Job.Coexecution.Coexecution
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Job.Job.Job
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Job.Job.Job
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### JobFromInputFile
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Job.JobFromInputFile.JobFromInputFile
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Job.JobFromInputFile.JobFromInputFile
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### Message
+    .. autoclass:: abaqus.Job.Message.Message
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Job.Message.Message
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Job.MessageArray.MessageArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### MessageArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Job.MessageArray.MessageArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Job.ModelJob.ModelJob
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ModelJob
+    .. autoclass:: abaqus.Job.OptimizationProcess.OptimizationProcess
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Job.ModelJob.ModelJob
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
-
-### OptimizationProcess
-
-```{eval-rst}
-.. autoclass:: abaqus.Job.OptimizationProcess.OptimizationProcess
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### Queue
-
-```{eval-rst}
-.. autoclass:: abaqus.Job.Queue.Queue
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Job.Queue.Queue
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 ```
