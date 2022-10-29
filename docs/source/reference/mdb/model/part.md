@@ -6,18 +6,12 @@ Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operation
 
 ```{eval-rst}
 .. autoclass:: abaqus.Part.PartModel.PartModel
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
     .. autoclasstoc::
 ```
 
 ```{eval-rst}
 .. autoclass:: abaqus.Part.PartBase.PartBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
     .. autoclasstoc::
 ```
@@ -29,62 +23,38 @@ Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operation
 .. collapse:: Click here to Expand
 
     .. autoclass:: abaqus.Part.Part.Part
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Part.PartFeature.PartFeature
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.EditMesh.MeshEditPart.MeshEditPart
-        :members:
-        :special-members: __init__
-        :show-inheritance:
         :noindex:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Mesh.MeshPart.MeshPart
-        :members:
-        :special-members: __init__
-        :show-inheritance:
         :noindex:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Property.PropertyPart.PropertyPart
-        :members:
-        :special-members: __init__
-        :show-inheritance:
         :noindex:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Region.RegionPart.RegionPart
-        :members:
-        :special-members: __init__
-        :show-inheritance:
         :noindex:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Part.AcisFile.AcisFile
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
-        :members:
-        :special-members: __init__
-        :show-inheritance:
         :noindex:
 
         .. autoclasstoc::

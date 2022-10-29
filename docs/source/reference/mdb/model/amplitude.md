@@ -8,9 +8,6 @@ Amplitude commands are used to create arbitrary time or frequency variations of 
 
 ```{eval-rst}
 .. autoclass:: abaqus.Amplitude.AmplitudeModel.AmplitudeModel
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -20,9 +17,6 @@ Amplitude commands are used to create arbitrary time or frequency variations of 
 
 ```{eval-rst}
 .. autoclass:: abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
     .. autoclasstoc::
 
@@ -35,93 +29,54 @@ Amplitude commands are used to create arbitrary time or frequency variations of 
 .. collapse:: Click here to Expand
 
     .. autoclass:: abaqus.Amplitude.Amplitude.Amplitude
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Amplitude.BaselineCorrection.BaselineCorrection
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Amplitude.Correlation.Correlation
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Amplitude.DecayAmplitude.DecayAmplitude
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Amplitude.PsdDefinition.PsdDefinition
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.Amplitude.TabularAmplitude.TabularAmplitude
-        :members:
-        :special-members: __init__
-        :show-inheritance:
 
         .. autoclasstoc::
 ```

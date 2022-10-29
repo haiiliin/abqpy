@@ -18,7 +18,5 @@ templates.
 
 ```{eval-rst}
 .. autoclass:: abqpy.template.ScriptTemplate
-   :members:
-   :special-members: __init__
-   :show-inheritance:
+
 ```
