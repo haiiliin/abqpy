@@ -196,9 +196,6 @@ A specific type of interaction object and a specific type of interaction state o
 
         .. autoclasstoc::
 
-<<<<<<< HEAD
-### FractureCriterion
-=======
     .. autoclass:: abaqus.Interaction.CohesiveBehavior.CohesiveBehavior
         :members:
         :special-members: __init__
@@ -233,7 +230,6 @@ A specific type of interaction object and a specific type of interaction state o
         :show-inheritance:
 
         .. autoclasstoc::
->>>>>>> 27c50e7e ([docs]: Collapse unimportant classes (#3425))
 
     .. autoclass:: abaqus.Interaction.ContactExp.ContactExp
         :members:
@@ -304,23 +300,6 @@ A specific type of interaction object and a specific type of interaction state o
         :show-inheritance:
 
         .. autoclasstoc::
-
-<<<<<<< HEAD
-### MasterSlaveAssignment
-
-```{eval-rst}
-.. autoclass:: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-=======
-    .. autoclass:: abaqus.Interaction.FilmConditionState.FilmConditionState
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
->>>>>>> 27c50e7e ([docs]: Collapse unimportant classes (#3425))
 
     .. autoclass:: abaqus.Interaction.FluidCavity.FluidCavity
         :members:
@@ -434,7 +413,7 @@ A specific type of interaction object and a specific type of interaction state o
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.Interaction.MainSecondaryAssignment.MainSecondaryAssignment
+    .. autoclass:: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment
         :members:
         :special-members: __init__
         :show-inheritance:
