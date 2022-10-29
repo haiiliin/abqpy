@@ -14,92 +14,65 @@ Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operation
 
 ```
 
-## Classes
-
-### Assembly
+## Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.Assembly.Assembly.Assembly
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### AssemblyBase
+    .. autoclass:: abaqus.Assembly.Assembly.Assembly
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Assembly.AssemblyBase.AssemblyBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Assembly.AssemblyBase.AssemblyBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### ConnectorOrientation
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Assembly.ConnectorOrientation.ConnectorOrientation
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ConnectorOrientationArray
+    .. autoclass:: abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Assembly.AssemblyFeature.AssemblyFeature
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### AssemblyFeature
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Assembly.AssemblyFeature.AssemblyFeature
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Assembly.ModelInstance.ModelInstance
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ModelInstance
+    .. autoclass:: abaqus.Assembly.PartInstance.PartInstance
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Assembly.ModelInstance.ModelInstance
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Assembly.PartInstanceArray.PartInstanceArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### PartInstance
-
-```{eval-rst}
-.. autoclass:: abaqus.Assembly.PartInstance.PartInstance
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### PartInstanceArray
-
-```{eval-rst}
-.. autoclass:: abaqus.Assembly.PartInstanceArray.PartInstanceArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```
