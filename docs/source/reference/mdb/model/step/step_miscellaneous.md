@@ -2,455 +2,296 @@
 
 Miscellaneous Step commands are used for configuring controls, damping, and frequency tables.
 
-## Classes
-
-### CompositeDamping
+## Other Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### CompositeDampingComponent
+    .. autoclass:: abaqus.StepMiscellaneous.CompositeDamping.CompositeDamping
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepMiscellaneous.CompositeDampingComponent.CompositeDampingComponent
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### CompositeDampingComponentArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponentArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepMiscellaneous.CompositeDampingComponentArray.CompositeDampingComponentArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### Control
+    .. autoclass:: abaqus.StepMiscellaneous.Control.Control
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.Control.Control
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepMiscellaneous.DirectDamping.DirectDamping
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DirectDamping
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.DirectDamping.DirectDamping
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DirectDampingByFrequency
+    .. autoclass:: abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.DirectDampingByFrequency.DirectDampingByFrequency
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepMiscellaneous.DirectDampingByFrequencyComponentArray.DirectDampingByFrequencyComponentArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DirectDampingByFrequencyComponent
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.DirectDampingByFrequencyComponent.DirectDampingByFrequencyComponent
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DirectDampingByFrequencyComponentArray
+    .. autoclass:: abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponentArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.DirectDampingByFrequencyComponentArray.DirectDampingByFrequencyComponentArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DirectDampingComponent
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.DirectDampingComponent.DirectDampingComponent
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequencyArray.EmagTimeHarmonicFrequencyArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DirectDampingComponentArray
+    .. autoclass:: abaqus.StepMiscellaneous.MassScaling.MassScaling
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.DirectDampingComponentArray.DirectDampingComponentArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### EmagTimeHarmonicFrequency
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequency.EmagTimeHarmonicFrequency
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### EmagTimeHarmonicFrequencyArray
+    .. autoclass:: abaqus.StepMiscellaneous.RandomResponseFrequencyArray.RandomResponseFrequencyArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.EmagTimeHarmonicFrequencyArray.EmagTimeHarmonicFrequencyArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### MassScaling
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.MassScaling.MassScaling
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### MassScalingArray
+    .. autoclass:: abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.MassScalingArray.MassScalingArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponentArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### RandomResponseFrequency
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.RandomResponseFrequency.RandomResponseFrequency
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### RandomResponseFrequencyArray
+    .. autoclass:: abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponentArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.RandomResponseFrequencyArray.RandomResponseFrequencyArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### RayleighDamping
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.RayleighDamping.RayleighDamping
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepMiscellaneous.ResponseSpectrumComponentArray.ResponseSpectrumComponentArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### RayleighDampingByFrequency
+    .. autoclass:: abaqus.StepMiscellaneous.SolverControl.SolverControl
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.RayleighDampingByFrequency.RayleighDampingByFrequency
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### RayleighDampingByFrequencyComponent
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponent.RayleighDampingByFrequencyComponent
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepMiscellaneous.SteadyStateDirectFrequencyArray.SteadyStateDirectFrequencyArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### RayleighDampingByFrequencyComponentArray
+    .. autoclass:: abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.RayleighDampingByFrequencyComponentArray.RayleighDampingByFrequencyComponentArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepMiscellaneous.SteadyStateModalFrequencyArray.SteadyStateModalFrequencyArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### RayleighDampingComponent
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.RayleighDampingComponent.RayleighDampingComponent
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### RayleighDampingComponentArray
+    .. autoclass:: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequencyArray.SteadyStateSubspaceFrequencyArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.RayleighDampingComponentArray.RayleighDampingComponentArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### ResponseSpectrumComponent
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.ResponseSpectrumComponent.ResponseSpectrumComponent
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ResponseSpectrumComponentArray
+    .. autoclass:: abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.ResponseSpectrumComponentArray.ResponseSpectrumComponentArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponentArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### SolverControl
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.SolverControl.SolverControl
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### SteadyStateDirectFrequency
+    .. autoclass:: abaqus.StepMiscellaneous.StructuralDampingComponentArray.StructuralDampingComponentArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.SteadyStateDirectFrequency.SteadyStateDirectFrequency
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### SteadyStateDirectFrequencyArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.SteadyStateDirectFrequencyArray.SteadyStateDirectFrequencyArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepMiscellaneous.SubstructureGenerateFrequencyArray.SubstructureGenerateFrequencyArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### SteadyStateModalFrequency
+    .. autoclass:: abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.SteadyStateModalFrequency.SteadyStateModalFrequency
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepMiscellaneous.SubstructureGenerateModesArray.SubstructureGenerateModesArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### SteadyStateModalFrequencyArray
-
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.SteadyStateModalFrequencyArray.SteadyStateModalFrequencyArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SteadyStateSubspaceFrequency
-
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequency.SteadyStateSubspaceFrequency
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SteadyStateSubspaceFrequencyArray
-
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.SteadyStateSubspaceFrequencyArray.SteadyStateSubspaceFrequencyArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### StructuralDamping
-
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.StructuralDamping.StructuralDamping
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### StructuralDampingByFrequency
-
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.StructuralDampingByFrequency.StructuralDampingByFrequency
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### StructuralDampingByFrequencyComponent
-
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponent.StructuralDampingByFrequencyComponent
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### StructuralDampingByFrequencyComponentArray
-
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.StructuralDampingByFrequencyComponentArray.StructuralDampingByFrequencyComponentArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### StructuralDampingComponent
-
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.StructuralDampingComponent.StructuralDampingComponent
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### StructuralDampingComponentArray
-
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.StructuralDampingComponentArray.StructuralDampingComponentArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SubstructureGenerateFrequency
-
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.SubstructureGenerateFrequency.SubstructureGenerateFrequency
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SubstructureGenerateFrequencyArray
-
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.SubstructureGenerateFrequencyArray.SubstructureGenerateFrequencyArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SubstructureGenerateModes
-
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.SubstructureGenerateModes.SubstructureGenerateModes
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SubstructureGenerateModesArray
-
-```{eval-rst}
-.. autoclass:: abaqus.StepMiscellaneous.SubstructureGenerateModesArray.SubstructureGenerateModesArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```
