@@ -18,10 +18,6 @@ Display group commands are used to select a subset of the entities displayed in 
 
 ```{eval-rst}
 
-<<<<<<< HEAD
-    .. autoclasstoc:
-```
-=======
 .. collapse:: Click here to Expand
 
     .. autoclass:: abaqus.DisplayGroup.DisplayGroup.DisplayGroup
@@ -35,7 +31,6 @@ Display group commands are used to select a subset of the entities displayed in 
         :members:
         :special-members: __init__
         :show-inheritance:
->>>>>>> 27c50e7e ([docs]: Collapse unimportant classes (#3425))
 
         .. autoclasstoc::
 
@@ -54,13 +49,6 @@ Display group commands are used to select a subset of the entities displayed in 
         .. autoclasstoc::
 
     .. autoclass:: abaqus.DisplayGroup.Leaf.Leaf
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames
         :members:
         :special-members: __init__
         :show-inheritance:
