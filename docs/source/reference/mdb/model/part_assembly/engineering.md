@@ -15,178 +15,119 @@ A specific type of engineering feature object is designed for each type of engin
 
 ## Classes
 
-### Crack
-
 ```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.Crack.Crack
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### Fastener
+    .. autoclass:: abaqus.EngineeringFeature.Crack.Crack
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.Fastener.Fastener
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.EngineeringFeature.Fastener.Fastener
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Inertia
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.Inertia.Inertia
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.EngineeringFeature.Inertia.Inertia
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### SpringDashpot
+    .. autoclass:: abaqus.EngineeringFeature.SpringDashpot.SpringDashpot
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.SpringDashpot.SpringDashpot
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### AssembledFastener
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.AssembledFastener.AssembledFastener
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ContourIntegral
+    .. autoclass:: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.ContourIntegral.ContourIntegral
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DebondVCCT
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.DebondVCCT.DebondVCCT
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DiscreteFastener
+    .. autoclass:: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.DiscreteFastener.DiscreteFastener
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### EngineeringFeatureBase
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.EngineeringFeatureBase.EngineeringFeatureBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.EngineeringFeature.PointFastener.PointFastener
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### HeatCapacitance
+    .. autoclass:: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.HeatCapacitance.HeatCapacitance
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### NonstructuralMass
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.NonstructuralMass.NonstructuralMass
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### PointFastener
+    .. autoclass:: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.PointFastener.PointFastener
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### PointMassInertia
-
-```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.PointMassInertia.PointMassInertia
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SpringDashpotToGround
-
-```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.SpringDashpotToGround.SpringDashpotToGround
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TwoPointSpringDashpot
-
-```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.TwoPointSpringDashpot.TwoPointSpringDashpot
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### XFEMCrack
-
-```{eval-rst}
-.. autoclass:: abaqus.EngineeringFeature.XFEMCrack.XFEMCrack
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

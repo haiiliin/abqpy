@@ -20,788 +20,508 @@ The Load object is the abstract base type for other Load objects. The Load objec
 
 ```
 
-### Object features of loads
+### Classes
 
-#### Load
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.Load.Load
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### LoadState
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.LoadState.LoadState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### BodyCharge
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.BodyCharge.BodyCharge
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### BodyChargeState
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.BodyChargeState.BodyChargeState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### BodyConcentrationFlux
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### BodyConcentrationFluxState
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.BodyConcentrationFluxState.BodyConcentrationFluxState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### BodyCurrent
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.BodyCurrent.BodyCurrent
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### BodyCurrentDensity
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.BodyCurrentDensity.BodyCurrentDensity
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### BodyCurrentState
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.BodyCurrentState.BodyCurrentState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### BodyForce
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.BodyForce.BodyForce
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### BodyForceState
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.BodyForceState.BodyForceState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### BodyHeatFlux
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.BodyHeatFlux.BodyHeatFlux
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### BodyHeatFluxState
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.BodyHeatFluxState.BodyHeatFluxState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### BoltLoad
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.BoltLoad.BoltLoad
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### BoltLoadState
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.BoltLoadState.BoltLoadState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### ConcCharge
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.ConcCharge.ConcCharge
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### ConcConcFlux
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.ConcConcFlux.ConcConcFlux
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### ConcCurrent
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.ConcCurrent.ConcCurrent
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### ConcCurrentState
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.ConcCurrentState.ConcCurrentState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### ConcentratedChargeState
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.ConcentratedChargeState.ConcentratedChargeState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### ConcentratedConcentrationFluxState
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.ConcentratedConcentrationFluxState.ConcentratedConcentrationFluxState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### ConcentratedForce
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.ConcentratedForce.ConcentratedForce
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### ConcentratedForceState
-
-```{eval-rst}
-.. autoclass:: abaqus.Load.ConcentratedForceState.ConcentratedForceState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-#### ConcentratedHeatFlux
-
 ```{eval-rst}
-.. autoclass:: abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-#### ConcentratedHeatFluxState
+    .. autoclass:: abaqus.Load.Load.Load
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.ConcentratedHeatFluxState.ConcentratedHeatFluxState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.LoadState.LoadState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### ConcentratedPoreFluidState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.ConcentratedPoreFluidState.ConcentratedPoreFluidState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.BodyCharge.BodyCharge
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### ConcPoreFluid
+    .. autoclass:: abaqus.Load.BodyChargeState.BodyChargeState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.ConcPoreFluid.ConcPoreFluid
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.BodyConcentrationFlux.BodyConcentrationFlux
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### ConnectorForce
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.ConnectorForce.ConnectorForce
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.BodyConcentrationFluxState.BodyConcentrationFluxState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### ConnectorForceState
+    .. autoclass:: abaqus.Load.BodyCurrent.BodyCurrent
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.ConnectorForceState.ConnectorForceState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.BodyCurrentDensity.BodyCurrentDensity
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### ConnectorMoment
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.ConnectorMoment.ConnectorMoment
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.BodyCurrentState.BodyCurrentState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### ConnectorMomentState
+    .. autoclass:: abaqus.Load.BodyForce.BodyForce
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.ConnectorMomentState.ConnectorMomentState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.BodyForceState.BodyForceState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### CoriolisForce
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.CoriolisForce.CoriolisForce
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.BodyHeatFlux.BodyHeatFlux
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### CoriolisForceState
+    .. autoclass:: abaqus.Load.BodyHeatFluxState.BodyHeatFluxState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.CoriolisForceState.CoriolisForceState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.BoltLoad.BoltLoad
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### Gravity
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.Gravity.Gravity
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.BoltLoadState.BoltLoadState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### GravityState
+    .. autoclass:: abaqus.Load.ConcCharge.ConcCharge
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.GravityState.GravityState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.ConcConcFlux.ConcConcFlux
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### HydrostaticFluidFlowState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.HydrostaticFluidFlowState.HydrostaticFluidFlowState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.ConcCurrent.ConcCurrent
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### InertiaRelief
+    .. autoclass:: abaqus.Load.ConcCurrentState.ConcCurrentState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.InertiaRelief.InertiaRelief
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.ConcentratedChargeState.ConcentratedChargeState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### InertiaReliefState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.InertiaReliefState.InertiaReliefState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.ConcentratedConcentrationFluxState.ConcentratedConcentrationFluxState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### InwardVolAccel
+    .. autoclass:: abaqus.Load.ConcentratedForce.ConcentratedForce
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.InwardVolAccel.InwardVolAccel
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.ConcentratedForceState.ConcentratedForceState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### InwardVolAccelState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.InwardVolAccelState.InwardVolAccelState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.ConcentratedHeatFlux.ConcentratedHeatFlux
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### LineLoad
+    .. autoclass:: abaqus.Load.ConcentratedHeatFluxState.ConcentratedHeatFluxState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.LineLoad.LineLoad
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.ConcentratedPoreFluidState.ConcentratedPoreFluidState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### LineLoadState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.LineLoadState.LineLoadState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.ConcPoreFluid.ConcPoreFluid
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### Moment
+    .. autoclass:: abaqus.Load.ConnectorForce.ConnectorForce
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.Moment.Moment
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.ConnectorForceState.ConnectorForceState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### MomentState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.MomentState.MomentState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.ConnectorMoment.ConnectorMoment
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### PEGLoad
+    .. autoclass:: abaqus.Load.ConnectorMomentState.ConnectorMomentState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.PEGLoad.PEGLoad
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.CoriolisForce.CoriolisForce
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### PEGLoadState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.PEGLoadState.PEGLoadState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.CoriolisForceState.CoriolisForceState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### PipePressure
+    .. autoclass:: abaqus.Load.Gravity.Gravity
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.PipePressure.PipePressure
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.GravityState.GravityState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### PipePressureState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.PipePressureState.PipePressureState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.HydrostaticFluidFlowState.HydrostaticFluidFlowState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### Pressure
+    .. autoclass:: abaqus.Load.InertiaRelief.InertiaRelief
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.Pressure.Pressure
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.InertiaReliefState.InertiaReliefState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### PressureState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.PressureState.PressureState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.InwardVolAccel.InwardVolAccel
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### RotationalBodyForce
+    .. autoclass:: abaqus.Load.InwardVolAccelState.InwardVolAccelState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.RotationalBodyForce.RotationalBodyForce
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.LineLoad.LineLoad
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### RotationalBodyForceState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.RotationalBodyForceState.RotationalBodyForceState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.LineLoadState.LineLoadState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### ShellEdgeLoad
+    .. autoclass:: abaqus.Load.Moment.Moment
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.MomentState.MomentState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### ShellEdgeLoadState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.ShellEdgeLoadState.ShellEdgeLoadState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.PEGLoad.PEGLoad
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### SubmodelSB
+    .. autoclass:: abaqus.Load.PEGLoadState.PEGLoadState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SubmodelSB.SubmodelSB
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.PipePressure.PipePressure
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### SubmodelSBState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SubmodelSBState.SubmodelSBState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.PipePressureState.PipePressureState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### SubstructureLoad
+    .. autoclass:: abaqus.Load.Pressure.Pressure
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SubstructureLoad.SubstructureLoad
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.PressureState.PressureState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### SubstructureLoadState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SubstructureLoadState.SubstructureLoadState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.RotationalBodyForce.RotationalBodyForce
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### SurfaceCharge
+    .. autoclass:: abaqus.Load.RotationalBodyForceState.RotationalBodyForceState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SurfaceCharge.SurfaceCharge
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.ShellEdgeLoad.ShellEdgeLoad
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### SurfaceChargeState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SurfaceChargeState.SurfaceChargeState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.ShellEdgeLoadState.ShellEdgeLoadState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### SurfaceConcentrationFlux
+    .. autoclass:: abaqus.Load.SubmodelSB.SubmodelSB
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.SubmodelSBState.SubmodelSBState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### SurfaceConcentrationFluxState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SurfaceConcentrationFluxState.SurfaceConcentrationFluxState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.SubstructureLoad.SubstructureLoad
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### SurfaceCurrent
+    .. autoclass:: abaqus.Load.SubstructureLoadState.SubstructureLoadState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SurfaceCurrent.SurfaceCurrent
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.SurfaceCharge.SurfaceCharge
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### SurfaceCurrentDensity
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.SurfaceChargeState.SurfaceChargeState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### SurfaceCurrentState
+    .. autoclass:: abaqus.Load.SurfaceConcentrationFlux.SurfaceConcentrationFlux
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SurfaceCurrentState.SurfaceCurrentState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.SurfaceConcentrationFluxState.SurfaceConcentrationFluxState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### SurfaceHeatFlux
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.SurfaceCurrent.SurfaceCurrent
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### SurfaceHeatFluxState
+    .. autoclass:: abaqus.Load.SurfaceCurrentDensity.SurfaceCurrentDensity
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SurfaceHeatFluxState.SurfaceHeatFluxState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.SurfaceCurrentState.SurfaceCurrentState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### SurfacePoreFluid
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SurfacePoreFluid.SurfacePoreFluid
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.SurfaceHeatFlux.SurfaceHeatFlux
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### SurfacePoreFluidState
+    .. autoclass:: abaqus.Load.SurfaceHeatFluxState.SurfaceHeatFluxState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SurfacePoreFluidState.SurfacePoreFluidState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Load.SurfacePoreFluid.SurfacePoreFluid
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-#### SurfaceTraction
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SurfaceTraction.SurfaceTraction
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Load.SurfacePoreFluidState.SurfacePoreFluidState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-#### SurfaceTractionState
+    .. autoclass:: abaqus.Load.SurfaceTraction.SurfaceTraction
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Load.SurfaceTractionState.SurfaceTractionState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
+    .. autoclass:: abaqus.Load.SurfaceTractionState.SurfaceTractionState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
+        .. autoclasstoc::
 ```
 
 ## Load case
@@ -820,13 +540,16 @@ The LoadCase object is used to define the loads and constraints comprising a par
 
 ```
 
-### Object features of load cases
+### Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.Load.LoadCase.LoadCase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
+.. collapse:: Click here to Expand
+
+    .. autoclass:: abaqus.Load.LoadCase.LoadCase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
 ```

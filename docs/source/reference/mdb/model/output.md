@@ -26,101 +26,70 @@ Step output commands are used for configuring output requests, integrated output
 
 ## Classes
 
-### DiagnosticPrint
-
 ```{eval-rst}
-.. autoclass:: abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### FieldOutputRequest
+    .. autoclass:: abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepOutput.FieldOutputRequest.FieldOutputRequest
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### FieldOutputRequestState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepOutput.FieldOutputRequestState.FieldOutputRequestState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### HistoryOutputRequest
+    .. autoclass:: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepOutput.HistoryOutputRequest.HistoryOutputRequest
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### HistoryOutputRequestState
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepOutput.HistoryOutputRequestState.HistoryOutputRequestState
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### IntegratedOutputSection
+    .. autoclass:: abaqus.StepOutput.Monitor.Monitor
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepOutput.IntegratedOutputSection.IntegratedOutputSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.StepOutput.Restart.Restart
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Monitor
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.StepOutput.Monitor.Monitor
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.StepOutput.TimePoint.TimePoint
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
-
-### Restart
-
-```{eval-rst}
-.. autoclass:: abaqus.StepOutput.Restart.Restart
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TimePoint
-
-```{eval-rst}
-.. autoclass:: abaqus.StepOutput.TimePoint.TimePoint
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

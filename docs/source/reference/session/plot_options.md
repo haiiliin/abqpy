@@ -4,508 +4,329 @@ Plot options commands are used to control the appearance of plots in the Visuali
 
 ## Classes
 
-### BasicOptions
-
 ```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.BasicOptions.BasicOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### CouplingConstraint
+    .. autoclass:: abaqus.PlotOptions.BasicOptions.BasicOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.CouplingConstraint.CouplingConstraint
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PlotOptions.CouplingConstraint.CouplingConstraint
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DetailPlotOptions
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DGCommonOptions
+    .. autoclass:: abaqus.PlotOptions.DGCommonOptions.DGCommonOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.DGCommonOptions.DGCommonOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PlotOptions.DGContourOptions.DGContourOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DGContourOptions
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.DGContourOptions.DGContourOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DGDisplayBodyOptions
+    .. autoclass:: abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DGOrientationOptions
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DGSuperimposeOptions
+    .. autoclass:: abaqus.PlotOptions.DisplayOptions.DisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DGSymbolOptions
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PlotOptions.HistoryVariable.HistoryVariable
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DisplayOptions
+    .. autoclass:: abaqus.PlotOptions.MdbData.MdbData
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.DisplayOptions.DisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PlotOptions.MdbDataFrame.MdbDataFrame
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### FreeBodyOptions
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PlotOptions.MdbDataFrameArray.MdbDataFrameArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### HistoryVariable
+    .. autoclass:: abaqus.PlotOptions.MdbDataInstance.MdbDataInstance
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.HistoryVariable.HistoryVariable
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PlotOptions.MdbDataStep.MdbDataStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### MdbData
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.MdbData.MdbData
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PlotOptions.MpcConstraint.MpcConstraint
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### MdbDataFrame
+    .. autoclass:: abaqus.PlotOptions.OdbAnalysisError.OdbAnalysisError
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.MdbDataFrame.MdbDataFrame
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PlotOptions.OdbAnalysisWarning.OdbAnalysisWarning
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### MdbDataFrameArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.MdbDataFrameArray.MdbDataFrameArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PlotOptions.OdbAuxiliaryData.OdbAuxiliaryData
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### MdbDataInstance
+    .. autoclass:: abaqus.PlotOptions.OdbContactDiagnostics.OdbContactDiagnostics
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.MdbDataInstance.MdbDataInstance
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PlotOptions.OdbData.OdbData
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### MdbDataStep
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.MdbDataStep.MdbDataStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PlotOptions.OdbDataDatumCsys.OdbDataDatumCsys
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### MpcConstraint
+    .. autoclass:: abaqus.PlotOptions.OdbDataElementSet.OdbDataElementSet
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.MpcConstraint.MpcConstraint
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PlotOptions.OdbDataFrame.OdbDataFrame
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbAnalysisError
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbAnalysisError.OdbAnalysisError
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PlotOptions.OdbDataFrameArray.OdbDataFrameArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbAnalysisWarning
+    .. autoclass:: abaqus.PlotOptions.OdbDataInstance.OdbDataInstance
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbAnalysisWarning.OdbAnalysisWarning
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PlotOptions.OdbDataMaterial.OdbDataMaterial
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbAuxiliaryData
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbAuxiliaryData.OdbAuxiliaryData
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PlotOptions.OdbDataNodeSet.OdbDataNodeSet
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbContactDiagnostics
+    .. autoclass:: abaqus.PlotOptions.OdbDataSection.OdbDataSection
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbContactDiagnostics.OdbContactDiagnostics
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PlotOptions.OdbDataStep.OdbDataStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbData
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbData.OdbData
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PlotOptions.OdbDataSurfaceSet.OdbDataSurfaceSet
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbDataDatumCsys
+    .. autoclass:: abaqus.PlotOptions.OdbDiagnosticAttempt.OdbDiagnosticAttempt
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbDataDatumCsys.OdbDataDatumCsys
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbDataElementSet
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbDataElementSet.OdbDataElementSet
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PlotOptions.OdbDiagnosticIncrement.OdbDiagnosticIncrement
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbDataFrame
+    .. autoclass:: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbDataFrame.OdbDataFrame
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbDataFrameArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbDataFrameArray.OdbDataFrameArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PlotOptions.OdbJobTime.OdbJobTime
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbDataInstance
+    .. autoclass:: abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbDataInstance.OdbDataInstance
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PlotOptions.OptionArg.OptionArg
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbDataMaterial
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbDataMaterial.OdbDataMaterial
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbDataNodeSet
+    .. autoclass:: abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbDataNodeSet.OdbDataNodeSet
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PlotOptions.StreamOptions.StreamOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbDataSection
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbDataSection.OdbDataSection
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.PlotOptions.TieConstraint.TieConstraint
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbDataStep
+    .. autoclass:: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbDataStep.OdbDataStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbDataSurfaceSet
-
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbDataSurfaceSet.OdbDataSurfaceSet
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbDiagnosticAttempt
-
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbDiagnosticAttempt.OdbDiagnosticAttempt
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbDiagnosticData
-
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbDiagnosticIncrement
-
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbDiagnosticIncrement.OdbDiagnosticIncrement
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbDiagnosticStep
-
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbDisplayOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbJobTime
-
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbJobTime.OdbJobTime
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OdbNumericalProblemSummary
-
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### OptionArg
-
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.OptionArg.OptionArg
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### PlyStackPlotOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### RigidBodyConstraint
-
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### StreamOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.StreamOptions.StreamOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TieConstraint
-
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.TieConstraint.TieConstraint
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### ViewCutOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.PlotOptions.ViewCutOptions.ViewCutOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

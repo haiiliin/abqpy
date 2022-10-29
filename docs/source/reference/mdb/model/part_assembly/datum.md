@@ -6,57 +6,42 @@ Each command also creates a Datum object in the corresponding datum repository. 
 
 ## Classes
 
-### Datum
-
 ```{eval-rst}
-.. autoclass:: abaqus.Datum.Datum.Datum
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### DatumAxis
+    .. autoclass:: abaqus.Datum.Datum.Datum
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Datum.DatumAxis.DatumAxis
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Datum.DatumAxis.DatumAxis
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DatumCsys
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Datum.DatumCsys.DatumCsys
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Datum.DatumCsys.DatumCsys
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DatumPlane
+    .. autoclass:: abaqus.Datum.DatumPlane.DatumPlane
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Datum.DatumPlane.DatumPlane
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Datum.DatumPoint.DatumPoint
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DatumPoint
-
-```{eval-rst}
-.. autoclass:: abaqus.Datum.DatumPoint.DatumPoint
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

@@ -11,245 +11,165 @@ XY commands are used to plot X-Y data and store its display attributes and to wr
     :show-inheritance:
 
     .. autoclasstoc::
-
 ```
 
 ## Classes
 
-### XY features for Session
-
 ```{eval-rst}
-.. autoclass:: abaqus.XY.XYSessionBase.XYSessionBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### Area
+    .. autoclass:: abaqus.XY.XYSessionBase.XYSessionBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.XY.Area.Area
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.XY.Area.Area
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### AreaStyle
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.XY.AreaStyle.AreaStyle
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.XY.AreaStyle.AreaStyle
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### Axis
+    .. autoclass:: abaqus.XY.Axis.Axis
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.XY.Axis.Axis
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.XY.AxisArray.AxisArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### AxisArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.XY.AxisArray.AxisArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.XY.AxisData.AxisData
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### AxisData
+    .. autoclass:: abaqus.XY.Chart.Chart
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.XY.AxisData.AxisData
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.XY.DefaultChartOptions.DefaultChartOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Chart
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.XY.Chart.Chart
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.XY.DefaultPlot.DefaultPlot
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DefaultChartOptions
+    .. autoclass:: abaqus.XY.Legend.Legend
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.XY.DefaultChartOptions.DefaultChartOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.XY.LineStyle.LineStyle
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DefaultPlot
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.XY.DefaultPlot.DefaultPlot
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.XY.QuantityType.QuantityType
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### Legend
+    .. autoclass:: abaqus.XY.SymbolStyle.SymbolStyle
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.XY.Legend.Legend
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.XY.TextStyle.TextStyle
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### LineStyle
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.XY.LineStyle.LineStyle
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.XY.Title.Title
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### QuantityType
+    .. automodule:: abaqus.XY.writeXYReport
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.XY.QuantityType.QuantityType
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.XY.XYCurve.XYCurve
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### SymbolStyle
+    .. autoclass:: abaqus.XY.XYCurveArray.XYCurveArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.XY.SymbolStyle.SymbolStyle
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.XY.XYData.XYData
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### TextStyle
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.XY.TextStyle.TextStyle
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.XY.XYPlot.XYPlot
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
+    ```
 
-### Title
+    ```{eval-rst}
+    .. autoclass:: abaqus.XY.XYPlotBase.XYPlotBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.XY.Title.Title
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.XY.XYReportOptions.XYReportOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### writeXYReport
-
-```{eval-rst}
-.. automodule:: abaqus.XY.writeXYReport
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-```
-
-### XYCurve
-
-```{eval-rst}
-.. autoclass:: abaqus.XY.XYCurve.XYCurve
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### XYCurveArray
-
-```{eval-rst}
-.. autoclass:: abaqus.XY.XYCurveArray.XYCurveArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### XYData
-
-```{eval-rst}
-.. autoclass:: abaqus.XY.XYData.XYData
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### XYPlot
-
-```{eval-rst}
-.. autoclass:: abaqus.XY.XYPlot.XYPlot
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-```{eval-rst}
-.. autoclass:: abaqus.XY.XYPlotBase.XYPlotBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### XYReportOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.XY.XYReportOptions.XYReportOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

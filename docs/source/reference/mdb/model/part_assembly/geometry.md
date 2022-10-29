@@ -4,211 +4,140 @@ The basic geometry commands create geometric entities that are referenced by Par
 
 ## Classes
 
-### Cell
-
 ```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.Cell.Cell
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### CellArray
+    .. autoclass:: abaqus.BasicGeometry.Cell.Cell
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.CellArray.CellArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BasicGeometry.CellArray.CellArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Edge
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.Edge.Edge
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BasicGeometry.Edge.Edge
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### EdgeArray
+    .. autoclass:: abaqus.BasicGeometry.EdgeArray.EdgeArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.EdgeArray.EdgeArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BasicGeometry.Face.Face
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Face
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.Face.Face
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BasicGeometry.FaceArray.FaceArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### FaceArray
+    .. autoclass:: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.FaceArray.FaceArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### IgnoredEdge
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### IgnoredEdgeArray
+    .. autoclass:: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BasicGeometry.InterestingPoint.InterestingPoint
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### IgnoredVertex
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BasicGeometry.ModelDot.ModelDot
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### IgnoredVertexArray
+    .. autoclass:: abaqus.BasicGeometry.ModelDotArray.ModelDotArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BasicGeometry.ReferencePoint.ReferencePoint
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### InterestingPoint
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.InterestingPoint.InterestingPoint
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BasicGeometry.ReferencePointArray.ReferencePointArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ModelDot
+    .. autoclass:: abaqus.BasicGeometry.ReferencePoints.ReferencePoints
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.ModelDot.ModelDot
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BasicGeometry.Transform.Transform
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### ModelDotArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.ModelDotArray.ModelDotArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BasicGeometry.Vertex.Vertex
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ReferencePoint
+    .. autoclass:: abaqus.BasicGeometry.VertexArray.VertexArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.ReferencePoint.ReferencePoint
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### ReferencePointArray
-
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.ReferencePointArray.ReferencePointArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### ReferencePoints
-
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.ReferencePoints.ReferencePoints
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### Transform
-
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.Transform.Transform
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### Vertex
-
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.Vertex.Vertex
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### VertexArray
-
-```{eval-rst}
-.. autoclass:: abaqus.BasicGeometry.VertexArray.VertexArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

@@ -29,57 +29,42 @@ Filter commands are used to create real-time filters of output request data.
 
 ## Classes
 
-### Filter
-
 ```{eval-rst}
-.. autoclass:: abaqus.Filter.Filter.Filter
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### ButterworthFilter
+    .. autoclass:: abaqus.Filter.Filter.Filter
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Filter.ButterworthFilter.ButterworthFilter
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Filter.ButterworthFilter.ButterworthFilter
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Chebyshev1Filter
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Filter.Chebyshev1Filter.Chebyshev1Filter
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### Chebyshev2Filter
+    .. autoclass:: abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Filter.Chebyshev2Filter.Chebyshev2Filter
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Filter.OperatorFilter.OperatorFilter
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OperatorFilter
-
-```{eval-rst}
-.. autoclass:: abaqus.Filter.OperatorFilter.OperatorFilter
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

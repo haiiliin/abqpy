@@ -31,198 +31,137 @@ session/xy
     .. autoclasstoc::
 ```
 
-### SessionBase
+### Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.Session.SessionBase.SessionBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### AnimationSession
+    .. autoclass:: abaqus.Session.SessionBase.SessionBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Animation.AnimationSession.AnimationSession
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-    :noindex:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Animation.AnimationSession.AnimationSession
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+        :noindex:
 
-### CanvasSession
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Canvas.CanvasSession.CanvasSession
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-    :noindex:
+    .. autoclass:: abaqus.Canvas.CanvasSession.CanvasSession
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+        :noindex:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DisplayGroupSession
+    .. autoclass:: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+        :noindex:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-    :noindex:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.FieldReport.FieldReportSession.FieldReportSession
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+        :noindex:
 
-### FieldReportSession
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.FieldReport.FieldReportSession.FieldReportSession
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-    :noindex:
+    .. autoclass:: abaqus.Job.JobSession.JobSession
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+        :noindex:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### JobSession
+    .. autoclass:: abaqus.Odb.OdbSession.OdbSession
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+        :noindex:
 
-```{eval-rst}
-.. autoclass:: abaqus.Job.JobSession.JobSession
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-    :noindex:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.PathAndProbe.PathSession.PathSession
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+        :noindex:
 
-### OdbSession
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Odb.OdbSession.OdbSession
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-    :noindex:
+    .. autoclass:: abaqus.XY.XYSession.XYSession
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+        :noindex:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### PathSession
 
-```{eval-rst}
-.. autoclass:: abaqus.PathAndProbe.PathSession.PathSession
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-    :noindex:
+    .. autoclass:: abaqus.Session.AutoColors.AutoColors
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### XYSession
+    .. autoclass:: abaqus.Session.Color.Color
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.XY.XYSession.XYSession
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-    :noindex:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
+    .. autoclass:: abaqus.Session.Drawing.Drawing
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```
+        .. autoclasstoc::
 
-### AutoColors
+    .. autoclass:: abaqus.Session.Image.Image
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Session.AutoColors.AutoColors
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Session.JournalOptions.JournalOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Color
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Session.Color.Color
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Session.MemoryReductionOptions.MemoryReductionOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### Drawing
+    .. autoclass:: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Session.Drawing.Drawing
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Session.NumberFormat.NumberFormat
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Image
-
-```{eval-rst}
-.. autoclass:: abaqus.Session.Image.Image
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### JournalOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.Session.JournalOptions.JournalOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### MemoryReductionOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.Session.MemoryReductionOptions.MemoryReductionOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### NetworkDatabaseConnector
-
-```{eval-rst}
-.. autoclass:: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### NumberFormat
-
-```{eval-rst}
-.. autoclass:: abaqus.Session.NumberFormat.NumberFormat
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

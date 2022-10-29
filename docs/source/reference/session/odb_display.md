@@ -4,112 +4,77 @@ Odb display commands are used to store the context of an output database for a v
 
 ## Classes
 
-### CommonOptions
-
 ```{eval-rst}
-.. autoclass:: abaqus.OdbDisplay.CommonOptions.CommonOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### ContourOptions
+    .. autoclass:: abaqus.OdbDisplay.CommonOptions.CommonOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.OdbDisplay.ContourOptions.ContourOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.OdbDisplay.ContourOptions.ContourOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DefaultOdbDisplay
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DisplayBodyOptions
+    .. autoclass:: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.OdbDisplay.OdbDisplay.OdbDisplay
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbDisplay
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.OdbDisplay.OdbDisplay.OdbDisplay
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.OdbDisplay.OrientationOptions.OrientationOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OrientationOptions
+    .. autoclass:: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.OdbDisplay.OrientationOptions.OrientationOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.OdbDisplay.SymbolOptions.SymbolOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### SuperimposeOptions
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.OdbDisplay.ViewCut.ViewCut
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### SymbolOptions
+    .. autoclass:: abaqus.OdbDisplay.ViewerOptions.ViewerOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.OdbDisplay.SymbolOptions.SymbolOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### ViewCut
-
-```{eval-rst}
-.. autoclass:: abaqus.OdbDisplay.ViewCut.ViewCut
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### ViewerOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.OdbDisplay.ViewerOptions.ViewerOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

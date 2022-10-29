@@ -16,127 +16,70 @@ View commands are used to transform three-dimensional views stored in Session an
 
 ## Classes
 
-### AbaqusBoolean
-
 ```{eval-rst}
-.. autoclass:: abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### BackwardCompatibility
+    .. autoclass:: abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Callback
+        .. autoclasstoc::
 
-```{eval-rst}
-.. automodule:: abaqus.UtilityAndView.Callback
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-```
+    .. automodule:: abaqus.UtilityAndView.Callback
+        :members:
 
-### Customization
+    .. automodule:: abaqus.UtilityAndView.Customization
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. automodule:: abaqus.UtilityAndView.Customization
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-```
+    .. automodule:: abaqus.UtilityAndView.Delete
+        :members:
 
-### Delete
+    .. automodule:: abaqus.UtilityAndView.Method
+        :members:
 
-```{eval-rst}
-.. automodule:: abaqus.UtilityAndView.Delete
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-```
+    .. autoclass:: abaqus.UtilityAndView.Repository.Repository
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Method
+        .. autoclasstoc::
 
-```{eval-rst}
-.. automodule:: abaqus.UtilityAndView.Method
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-```
+    .. automodule:: abaqus.UtilityAndView.Status
+        :members:
 
-### Repository
+    .. autoclass:: abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.UtilityAndView.Repository.Repository
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.UtilityAndView.SymbolicConstant.abaqusConstants
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Status
+    .. automodule:: abaqus.UtilityAndView.Upgrade
+        :members:
 
-```{eval-rst}
-.. automodule:: abaqus.UtilityAndView.Status
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-```
+    .. automodule:: abaqus.UtilityAndView.User
+        :members:
 
-### SymbolicConstant
+    .. autoclass:: abaqus.UtilityAndView.View.View
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### abaqusConstants
-
-```{eval-rst}
-.. autoclass:: abaqus.UtilityAndView.SymbolicConstant.abaqusConstants
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-```
-
-### Upgrade
-
-```{eval-rst}
-.. automodule:: abaqus.UtilityAndView.Upgrade
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-```
-
-### User
-
-```{eval-rst}
-.. automodule:: abaqus.UtilityAndView.User
-    :members:
-```
-
-### View
-
-```{eval-rst}
-.. autoclass:: abaqus.UtilityAndView.View.View
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

@@ -53,90 +53,63 @@ Assembly sets contain regions of an assembly and are used by many commands that 
 
 ## Classes
 
-### Region features for Part
-
 ```{eval-rst}
-.. autoclass:: abaqus.Region.RegionPartBase.RegionPartBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### Region features for Assembly
+    .. autoclass:: abaqus.Region.RegionPartBase.RegionPartBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Region.RegionAssemblyBase.RegionAssemblyBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Region
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Region.Region.Region
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Region.Region.Region
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### RegionArray
+    .. autoclass:: abaqus.Region.RegionArray.RegionArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Region.RegionArray.RegionArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Region.Set.Set
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Set
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Region.Set.Set
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Region.Skin.Skin
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### Skin
+    .. autoclass:: abaqus.Region.Stringer.Stringer
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Region.Skin.Skin
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Region.Surface.Surface
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Stringer
-
-```{eval-rst}
-.. autoclass:: abaqus.Region.Stringer.Stringer
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### Surface
-
-```{eval-rst}
-.. autoclass:: abaqus.Region.Surface.Surface
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

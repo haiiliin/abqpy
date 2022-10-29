@@ -41,24 +41,23 @@ model/step
     .. autoclasstoc::
 ```
 
-### ModelBase
+### Classes
 
 ```{eval-rst}
-.. autoclass:: abaqus.Model.ModelBase.ModelBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### KeywordBlock
+    .. autoclass:: abaqus.Model.ModelBase.ModelBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Model.KeywordBlock.KeywordBlock
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
+    .. autoclass:: abaqus.Model.KeywordBlock.KeywordBlock
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+
+        .. autoclasstoc::
 ```

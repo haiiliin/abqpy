@@ -18,108 +18,76 @@ Canvas commands are used to create, position, and modify canvas objects. The Can
 
 ## Classes
 
-### Annotation features of Viewport
-
 ```{eval-rst}
-.. autoclass:: abaqus.Annotation.AnnotationViewport.AnnotationViewport
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-    :noindex:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### AttributeColorMap
+    .. autoclass:: abaqus.Annotation.AnnotationViewport.AnnotationViewport
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+        :noindex:
 
-```{eval-rst}
-.. autoclass:: abaqus.Canvas.AttributeColorMap.AttributeColorMap
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Canvas.AttributeColorMap.AttributeColorMap
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Canvas
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Canvas.Canvas.Canvas
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Canvas.Canvas.Canvas
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### Displayable
+    .. autoclass:: abaqus.Canvas.Displayable.Displayable
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Canvas.Displayable.Displayable
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Canvas.DrawingArea.DrawingArea
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DrawingArea
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Canvas.DrawingArea.DrawingArea
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. automodule:: abaqus.Canvas.Highlight
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Canvas.ImageOptions.ImageOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Highlight
+        .. autoclasstoc::
 
-```{eval-rst}
-.. automodule:: abaqus.Canvas.Highlight
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-```
+    .. autoclass:: abaqus.Canvas.Layer.Layer
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### ImageOptions
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Canvas.ImageOptions.ImageOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Canvas.MovieOptions.MovieOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### Layer
+    .. autoclass:: abaqus.Canvas.ViewportBase.ViewportBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Canvas.Layer.Layer
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### MovieOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.Canvas.MovieOptions.MovieOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### ViewportBase
-
-```{eval-rst}
-.. autoclass:: abaqus.Canvas.ViewportBase.ViewportBase
-    :members:
-    :special-members: __init__
+        .. autoclasstoc::
 ```

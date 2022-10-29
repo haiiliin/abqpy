@@ -4,33 +4,26 @@ Display preferences commands are used to edit the Abaqus/CAE preferences file, `
 
 ## Classes
 
-### CaeGuiPrefs
-
 ```{eval-rst}
-.. autoclass:: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### CaeKerPrefs
+    .. autoclass:: abaqus.AbaqusCAEDisplayPreferences.CaeGuiPrefs.CaeGuiPrefs
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.AbaqusCAEDisplayPreferences.CaeKerPrefs.CaeKerPrefs
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### caePrefsAccess
+        .. autoclasstoc::
 
-```{eval-rst}
-.. automodule:: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. automodule:: abaqus.AbaqusCAEDisplayPreferences.caePrefsAccess
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 ```

@@ -22,378 +22,247 @@ step/step_miscellaneous
 
 ## Classes
 
-### Step
-
 ```{eval-rst}
-.. autoclass:: abaqus.Step.Step.Step
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### StepBase
+    .. autoclass:: abaqus.Step.Step.Step
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.StepBase.StepBase
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Step.StepBase.StepBase
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### AdaptivityStep
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-    :noindex:
+    .. autoclass:: abaqus.Adaptivity.AdaptivityStep.AdaptivityStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+        :noindex:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OutputStep
+    .. autoclass:: abaqus.StepOutput.OutputStep.OutputStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
+        :noindex:
 
-```{eval-rst}
-.. autoclass:: abaqus.StepOutput.OutputStep.OutputStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-    :noindex:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Step.AnalysisStep.AnalysisStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### AnalysisStep
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.AnalysisStep.AnalysisStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Step.AnnealStep.AnnealStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### AnnealStep
+    .. autoclass:: abaqus.Step.BuckleStep.BuckleStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.AnnealStep.AnnealStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### BuckleStep
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.BuckleStep.BuckleStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ComplexFrequencyStep
+    .. autoclass:: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.ComplexFrequencyStep.ComplexFrequencyStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### CoupledTempDisplacementStep
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.CoupledTempDisplacementStep.CoupledTempDisplacementStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Step.DirectCyclicStep.DirectCyclicStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### CoupledThermalElectricalStructuralStep
+    .. autoclass:: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.CoupledThermalElectricalStructuralStep.CoupledThermalElectricalStructuralStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### CoupledThermalElectricStep
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.CoupledThermalElectricStep.CoupledThermalElectricStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Step.FrequencyStep.FrequencyStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DirectCyclicStep
+    .. autoclass:: abaqus.Step.GeostaticStep.GeostaticStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.DirectCyclicStep.DirectCyclicStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Step.HeatTransferStep.HeatTransferStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### EmagTimeHarmonicStep
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.EmagTimeHarmonicStep.EmagTimeHarmonicStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ExplicitDynamicsStep
+    .. autoclass:: abaqus.Step.InitialStep.InitialStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.ExplicitDynamicsStep.ExplicitDynamicsStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Step.MassDiffusionStep.MassDiffusionStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### FrequencyStep
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.FrequencyStep.FrequencyStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### GeostaticStep
+    .. autoclass:: abaqus.Step.RandomResponseStep.RandomResponseStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.GeostaticStep.GeostaticStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### HeatTransferStep
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.HeatTransferStep.HeatTransferStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Step.SoilsStep.SoilsStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ImplicitDynamicsStep
+    .. autoclass:: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.ImplicitDynamicsStep.ImplicitDynamicsStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Step.StaticRiksStep.StaticRiksStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### InitialStep
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.InitialStep.InitialStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Step.StaticStep.StaticStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### MassDiffusionStep
+    .. autoclass:: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.MassDiffusionStep.MassDiffusionStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### ModalDynamicsStep
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.ModalDynamicsStep.ModalDynamicsStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### RandomResponseStep
+    .. autoclass:: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.RandomResponseStep.RandomResponseStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### ResponseSpectrumStep
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.ResponseSpectrumStep.ResponseSpectrumStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### SoilsStep
+    .. autoclass:: abaqus.Step.ViscoStep.ViscoStep
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Step.SoilsStep.SoilsStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### StaticLinearPerturbationStep
-
-```{eval-rst}
-.. autoclass:: abaqus.Step.StaticLinearPerturbationStep.StaticLinearPerturbationStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### StaticRiksStep
-
-```{eval-rst}
-.. autoclass:: abaqus.Step.StaticRiksStep.StaticRiksStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### StaticStep
-
-```{eval-rst}
-.. autoclass:: abaqus.Step.StaticStep.StaticStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SteadyStateDirectStep
-
-```{eval-rst}
-.. autoclass:: abaqus.Step.SteadyStateDirectStep.SteadyStateDirectStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SteadyStateModalStep
-
-```{eval-rst}
-.. autoclass:: abaqus.Step.SteadyStateModalStep.SteadyStateModalStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SteadyStateSubspaceStep
-
-```{eval-rst}
-.. autoclass:: abaqus.Step.SteadyStateSubspaceStep.SteadyStateSubspaceStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SubspaceDynamicsStep
-
-```{eval-rst}
-.. autoclass:: abaqus.Step.SubspaceDynamicsStep.SubspaceDynamicsStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SubstructureGenerateStep
-
-```{eval-rst}
-.. autoclass:: abaqus.Step.SubstructureGenerateStep.SubstructureGenerateStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TempDisplacementDynamicsStep
-
-```{eval-rst}
-.. autoclass:: abaqus.Step.TempDisplacementDynamicsStep.TempDisplacementDynamicsStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### ViscoStep
-
-```{eval-rst}
-.. autoclass:: abaqus.Step.ViscoStep.ViscoStep
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

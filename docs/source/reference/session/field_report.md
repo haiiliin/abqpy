@@ -16,64 +16,41 @@ Field report commands are used to write a field output report and free body comp
 
 ## Classes
 
-### FieldReportOptions
-
 ```{eval-rst}
-.. autoclass:: abaqus.FieldReport.FieldReportOptions.FieldReportOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### FreeBodyReportOptions
+    .. autoclass:: abaqus.FieldReport.FieldReportOptions.FieldReportOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OdbFieldVarList
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### OdbModelFieldVarList
+    .. autoclass:: abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. automodule:: abaqus.FieldReport.writeFieldReport
+        :members:
 
-### writeFieldReport
-
-```{eval-rst}
-.. automodule:: abaqus.FieldReport.writeFieldReport
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-```
-
-### writeFreeBodyReport
-
-```{eval-rst}
-.. automodule:: abaqus.FieldReport.writeFreeBodyReport
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. automodule:: abaqus.FieldReport.writeFreeBodyReport
+        :members:
 ```

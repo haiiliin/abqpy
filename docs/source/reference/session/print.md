@@ -4,68 +4,49 @@ The print commands are used to print selected canvas objects to a file or to a W
 
 ## Classes
 
-### EpsOptions
-
 ```{eval-rst}
-.. autoclass:: abaqus.Print.EpsOptions.EpsOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### PageSetupOptions
+    .. autoclass:: abaqus.Print.EpsOptions.EpsOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Print.PageSetupOptions.PageSetupOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Print.PageSetupOptions.PageSetupOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### PngOptions
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Print.PngOptions.PngOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Print.PngOptions.PngOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### PrintOptions
+    .. autoclass:: abaqus.Print.PrintOptions.PrintOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Print.PrintOptions.PrintOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Print.PsOptions.PsOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### PsOptions
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Print.PsOptions.PsOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Print.SvgOptions.SvgOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
-
-### SvgOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.Print.SvgOptions.SvgOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

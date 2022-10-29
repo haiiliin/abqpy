@@ -4,219 +4,147 @@ Display options commands are used to store settings that specify how assemblies 
 
 ## Classes
 
-### AssemblyDisplayOptions
-
 ```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### BCDisplayOptions
+    .. autoclass:: abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayOptions.BCDisplayOptions.BCDisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### ConstraintDisplayOptions
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayOptions.ConstraintDisplayOptions.ConstraintDisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### EngineeringFeatureDisplayOptions
+    .. autoclass:: abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.EngineeringFeatureDisplayOptions.EngineeringFeatureDisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### GeometricRestrictionDisplayOptions
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.GeometricRestrictionDisplayOptions.GeometricRestrictionDisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### GeometryDisplayOptions
+    .. autoclass:: abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.GeometryDisplayOptions.GeometryDisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### GraphicsInfo
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.GraphicsInfo.GraphicsInfo
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### GraphicsOptions
+    .. autoclass:: abaqus.DisplayOptions.Light.Light
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.GraphicsOptions.GraphicsOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayOptions.LightArray.LightArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### InteractionDisplayOptions
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.InteractionDisplayOptions.InteractionDisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayOptions.LightOptions.LightOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### Light
+    .. autoclass:: abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.Light.Light
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### LightArray
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.LightArray.LightArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### LightOptions
+    .. autoclass:: abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.LightOptions.LightOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### LoadDisplayOptions
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.LoadDisplayOptions.LoadDisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### MeshDisplayOptions
+    .. autoclass:: abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.MeshDisplayOptions.MeshDisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### OptimizationTaskDisplayOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.OptimizationTaskDisplayOptions.OptimizationTaskDisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### PartDisplayOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.PartDisplayOptions.PartDisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### PredefinedFieldDisplayOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.PredefinedFieldDisplayOptions.PredefinedFieldDisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### StopConditionDisplayOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.StopConditionDisplayOptions.StopConditionDisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### SymbolDisplayOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.SymbolDisplayOptions.SymbolDisplayOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### ViewportAnnotationOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayOptions.ViewportAnnotationOptions.ViewportAnnotationOptions
-    :members:
-    :special-members: __init__
+        .. autoclasstoc::
 ```

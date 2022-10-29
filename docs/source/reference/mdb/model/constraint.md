@@ -16,113 +16,78 @@ The Constraint commands define constraints between regions of the model.
 
 ## Classes
 
-### Constraint
-
 ```{eval-rst}
-.. autoclass:: abaqus.Constraint.Constraint.Constraint
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### AdjustPoints
+    .. autoclass:: abaqus.Constraint.Constraint.Constraint
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Constraint.AdjustPoints.AdjustPoints
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
+    .. autoclass:: abaqus.Constraint.AdjustPoints.AdjustPoints
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```
+        .. autoclasstoc::
 
-### Coupling
 
-```{eval-rst}
-.. autoclass:: abaqus.Constraint.Coupling.Coupling
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Constraint.Coupling.Coupling
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DisplayBody
+    .. autoclass:: abaqus.Constraint.DisplayBody.DisplayBody
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Constraint.DisplayBody.DisplayBody
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### EmbeddedRegion
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Constraint.EmbeddedRegion.EmbeddedRegion
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Constraint.Equation.Equation
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### Equation
+    .. autoclass:: abaqus.Constraint.MultipointConstraint.MultipointConstraint
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Constraint.Equation.Equation
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Constraint.RigidBody.RigidBody
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### MultipointConstraint
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Constraint.MultipointConstraint.MultipointConstraint
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### RigidBody
+    .. autoclass:: abaqus.Constraint.Tie.Tie
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Constraint.RigidBody.RigidBody
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### ShellSolidCoupling
-
-```{eval-rst}
-.. autoclass:: abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### Tie
-
-```{eval-rst}
-.. autoclass:: abaqus.Constraint.Tie.Tie
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

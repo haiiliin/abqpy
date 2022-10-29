@@ -4,76 +4,56 @@ Animation commands are used to create and control object-based and image-based a
 
 ## Classes
 
-### AnimationOptions
-
 ```{eval-rst}
-.. autoclass:: abaqus.Animation.AnimationOptions.AnimationOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### AnimationSession
+    .. autoclass:: abaqus.Animation.AnimationOptions.AnimationOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Animation.AnimationSession.AnimationSession
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Animation.AnimationSession.AnimationSession
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### AVIOptions
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Animation.AVIOptions.AVIOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Animation.AVIOptions.AVIOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### ImageAnimation
+    .. autoclass:: abaqus.Animation.ImageAnimation.ImageAnimation
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Animation.ImageAnimation.ImageAnimation
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### ImageAnimationOptions
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.Animation.Movie.Movie
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### Movie
+    .. autoclass:: abaqus.Animation.QuickTimeOptions.QuickTimeOptions
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.Animation.Movie.Movie
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### QuickTimeOptions
-
-```{eval-rst}
-.. autoclass:: abaqus.Animation.QuickTimeOptions.QuickTimeOptions
-    :members:
-    :special-members: __init__
+        .. autoclasstoc::
 ```

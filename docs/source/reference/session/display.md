@@ -16,420 +16,273 @@ Display group commands are used to select a subset of the entities displayed in 
 
 ## Classes
 
-### DisplayGroup
-
 ```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.DisplayGroup.DisplayGroup
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### DisplayGroupArray
+    .. autoclass:: abaqus.DisplayGroup.DisplayGroup.DisplayGroup
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayGroup.DisplayGroupArray.DisplayGroupArray
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### DisplayGroupInstance
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayGroup.DisplayGroupInstance.DisplayGroupInstance
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### DisplayGroupInstanceRepository
+    .. autoclass:: abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.DisplayGroupInstanceRepository.DisplayGroupInstanceRepository
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayGroup.Leaf.Leaf
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### Leaf
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.Leaf.Leaf
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### LeafFromConstraintNames
+    .. autoclass:: abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromConstraintNames.LeafFromConstraintNames
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### LeafFromDatums
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromDatums.LeafFromDatums
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### LeafFromDisplayGroup
+    .. autoclass:: abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromDisplayGroup.LeafFromDisplayGroup
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### LeafFromElementLabels
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromElementLabels.LeafFromElementLabels
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayGroup.LeafFromGeometry.LeafFromGeometry
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### LeafFromElementSets
+    .. autoclass:: abaqus.DisplayGroup.LeafFromInstance.LeafFromInstance
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromElementSets.LeafFromElementSets
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayGroup.LeafFromInstanceElementLabels.LeafFromInstanceElementLabels
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### LeafFromElementVarRange
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromElementVarRange.LeafFromElementVarRange
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayGroup.LeafFromInstanceNodeLabels.LeafFromInstanceNodeLabels
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### LeafFromGeometry
+    .. autoclass:: abaqus.DisplayGroup.LeafFromMeshElementLabels.LeafFromMeshElementLabels
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromGeometry.LeafFromGeometry
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayGroup.LeafFromMeshNodeLabels.LeafFromMeshNodeLabels
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### LeafFromInstance
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromInstance.LeafFromInstance
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayGroup.LeafFromMeshSurfaceSets.LeafFromMeshSurfaceSets
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### LeafFromInstanceElementLabels
+    .. autoclass:: abaqus.DisplayGroup.LeafFromModelElemLabels.LeafFromModelElemLabels
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromInstanceElementLabels.LeafFromInstanceElementLabels
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### LeafFromInstanceNodeLabels
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromInstanceNodeLabels.LeafFromInstanceNodeLabels
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### LeafFromMeshElementLabels
+    .. autoclass:: abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromMeshElementLabels.LeafFromMeshElementLabels
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### LeafFromMeshNodeLabels
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromMeshNodeLabels.LeafFromMeshNodeLabels
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayGroup.LeafFromOdbEdgePick.LeafFromOdbEdgePick
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### LeafFromMeshSurfaceSets
+    .. autoclass:: abaqus.DisplayGroup.LeafFromOdbElementLayups.LeafFromOdbElementLayups
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromMeshSurfaceSets.LeafFromMeshSurfaceSets
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayGroup.LeafFromOdbElementMaterials.LeafFromOdbElementMaterials
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### LeafFromModelElemLabels
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromModelElemLabels.LeafFromModelElemLabels
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayGroup.LeafFromOdbElementPick.LeafFromOdbElementPick
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### LeafFromModelNodeLabels
+    .. autoclass:: abaqus.DisplayGroup.LeafFromOdbElementPlies.LeafFromOdbElementPlies
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromModelNodeLabels.LeafFromModelNodeLabels
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayGroup.LeafFromOdbElementSections.LeafFromOdbElementSections
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### LeafFromNodeLabels
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromNodeLabels.LeafFromNodeLabels
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayGroup.LeafFromOdbElementTypes.LeafFromOdbElementTypes
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### LeafFromNodeSets
+    .. autoclass:: abaqus.DisplayGroup.LeafFromOdbNodePick.LeafFromOdbNodePick
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromNodeSets.LeafFromNodeSets
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayGroup.LeafFromPartElementLabels.LeafFromPartElementLabels
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### LeafFromNodeVarRange
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromNodeVarRange.LeafFromNodeVarRange
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### LeafFromOdbEdgePick
+    .. autoclass:: abaqus.DisplayGroup.LeafFromPartNodeLabels.LeafFromPartNodeLabels
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromOdbEdgePick.LeafFromOdbEdgePick
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### LeafFromOdbElementLayups
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromOdbElementLayups.LeafFromOdbElementLayups
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.DisplayGroup.LeafFromSets.LeafFromSets
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### LeafFromOdbElementMaterials
+    .. autoclass:: abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromOdbElementMaterials.LeafFromOdbElementMaterials
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### LeafFromOdbElementPick
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromOdbElementPick.LeafFromOdbElementPick
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### LeafFromOdbElementPlies
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromOdbElementPlies.LeafFromOdbElementPlies
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### LeafFromOdbElementSections
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromOdbElementSections.LeafFromOdbElementSections
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### LeafFromOdbElementTypes
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromOdbElementTypes.LeafFromOdbElementTypes
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### LeafFromOdbNodePick
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromOdbNodePick.LeafFromOdbNodePick
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### LeafFromPartElementLabels
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromPartElementLabels.LeafFromPartElementLabels
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### LeafFromPartInstance
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromPartInstance.LeafFromPartInstance
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### LeafFromPartNodeLabels
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromPartNodeLabels.LeafFromPartNodeLabels
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### LeafFromReferencePoint
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromReferencePoint.LeafFromReferencePoint
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### LeafFromSets
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromSets.LeafFromSets
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### LeafFromSurfaceSets
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromSurfaceSets.LeafFromSurfaceSets
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### LeafFromSurfaceVarRange
-
-```{eval-rst}
-.. autoclass:: abaqus.DisplayGroup.LeafFromSurfaceVarRange.LeafFromSurfaceVarRange
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

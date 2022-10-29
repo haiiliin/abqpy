@@ -29,134 +29,91 @@ The Beam Section profile commands are used to create profiles. A profile definit
 
 ## Classes
 
-### Profile
-
 ```{eval-rst}
-.. autoclass:: abaqus.BeamSectionProfile.Profile.Profile
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### ArbitraryProfile
+    .. autoclass:: abaqus.BeamSectionProfile.Profile.Profile
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### BoxProfile
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BeamSectionProfile.BoxProfile.BoxProfile
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BeamSectionProfile.BoxProfile.BoxProfile
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### CircularProfile
+    .. autoclass:: abaqus.BeamSectionProfile.CircularProfile.CircularProfile
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BeamSectionProfile.CircularProfile.CircularProfile
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### GeneralizedProfile
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### HexagonalProfile
+    .. autoclass:: abaqus.BeamSectionProfile.IProfile.IProfile
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BeamSectionProfile.LProfile.LProfile
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### IProfile
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BeamSectionProfile.IProfile.IProfile
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BeamSectionProfile.PipeProfile.PipeProfile
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### LProfile
+    .. autoclass:: abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.BeamSectionProfile.LProfile.LProfile
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.BeamSectionProfile.TProfile.TProfile
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### PipeProfile
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.BeamSectionProfile.PipeProfile.PipeProfile
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
-
-### RectangularProfile
-
-```{eval-rst}
-.. autoclass:: abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TProfile
-
-```{eval-rst}
-.. autoclass:: abaqus.BeamSectionProfile.TProfile.TProfile
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
-```
-
-### TrapezoidalProfile
-
-```{eval-rst}
-.. autoclass:: abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile
-    :members:
-    :special-members: __init__
-    :show-inheritance:
-
-    .. autoclasstoc::
+        .. autoclasstoc::
 ```

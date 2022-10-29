@@ -8,54 +8,42 @@ The customData object is an instance of the RepositorySupport class; for more in
 
 ## Classes
 
-### CommandRegister
-
 ```{eval-rst}
-.. autoclass:: abaqus.CustomKernel.CommandRegister.CommandRegister
-    :members:
-    :special-members: __init__
-    :show-inheritance:
 
-    .. autoclasstoc::
-```
+.. collapse:: Click here to Expand
 
-### RegisteredDictionary
+    .. autoclass:: abaqus.CustomKernel.CommandRegister.CommandRegister
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### RegisteredList
+        .. autoclasstoc::
 
-```{eval-rst}
-.. autoclass:: abaqus.CustomKernel.RegisteredList.RegisteredList
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+    .. autoclass:: abaqus.CustomKernel.RegisteredList.RegisteredList
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-    .. autoclasstoc::
-```
+        .. autoclasstoc::
 
-### RegisteredTuple
+    .. autoclass:: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-```{eval-rst}
-.. autoclass:: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple
-    :members:
-    :special-members: __init__
-    :show-inheritance:
+        .. autoclasstoc::
 
-    .. autoclasstoc::
-```
+    .. autoclass:: abaqus.CustomKernel.RepositorySupport.RepositorySupport
+        :members:
+        :special-members: __init__
+        :show-inheritance:
 
-### RepositorySupport
-
-```{eval-rst}
-.. autoclass:: abaqus.CustomKernel.RepositorySupport.RepositorySupport
-    :members:
-    :special-members: __init__
+        .. autoclasstoc::
 ```
