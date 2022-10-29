@@ -3,13 +3,16 @@ from sphinx.ext.autodoc import ClassDocumenter
 
 
 class AutoCollapsibleClassDocumenter(ClassDocumenter):
-    objtype = 'collapsibleclass'
+    objtype = 'class'
     directivetype = ClassDocumenter.objtype
     priority = 10 + ClassDocumenter.priority
     option_spec = dict(ClassDocumenter.option_spec)
 
     def document_members(self, all_members: bool = False) -> None:
-        self.add_line('.. collapse:: Click here to Expand', self.get_sourcename())
+        sourcename = self.get_sourcename()
+        self.add_line('.. rubric:: Member Details', sourcename)
+        self.add_line('', sourcename)
+        self.add_line('.. collapse:: Click here to Expand', sourcename)
         self.indent += ' ' * 3
         super().document_members(all_members)
 
