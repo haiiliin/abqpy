@@ -144,12 +144,7 @@ typehints_defaults = 'comma'
 typehints_document_rtype = False
 autodoc_default_options = {
     'undoc-members': False,
-    'special-members': '__init__',
 }
-autodoc_default_flags = [
-    'members',
-    'show-inheritance',
-]
 
 add_module_names = False
 
