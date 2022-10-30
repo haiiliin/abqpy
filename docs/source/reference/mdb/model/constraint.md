@@ -18,7 +18,7 @@ The Constraint commands define constraints between regions of the model.
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Constraint.Constraint.Constraint
         :members:
