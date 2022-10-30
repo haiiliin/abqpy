@@ -67,6 +67,7 @@ extensions = [
     'sphinx_codeautolink',
     'sphinx_design',
     'sphinx_gallery.gen_gallery',
+    'sphinx_togglebutton',
     'sphinx_toolbox.confval',
     'sphinx_toolbox.collapse',
     'hoverxref.extension',
