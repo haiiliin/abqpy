@@ -24,7 +24,7 @@ The Load object is the abstract base type for other Load objects. The Load objec
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Load.Load.Load
         :members:
@@ -544,7 +544,7 @@ The LoadCase object is used to define the loads and constraints comprising a par
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Load.LoadCase.LoadCase
         :members:

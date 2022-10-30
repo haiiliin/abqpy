@@ -6,7 +6,7 @@ Text representation commands are used to determine how objects are printed on th
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. automodule:: abaqus.TextRepresentation.redentABQ
         :members:

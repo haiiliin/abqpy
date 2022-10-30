@@ -6,7 +6,7 @@ Animation commands are used to create and control object-based and image-based a
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Animation.AnimationOptions.AnimationOptions
         :members:

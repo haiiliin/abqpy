@@ -42,7 +42,7 @@ The Adaptivity commands are used to define objects, perform analyses, and calcul
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint
         :members:
