@@ -18,7 +18,7 @@ The Property commands are used to create and manage reinforcements and to assign
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Property.CompositeLayup.CompositeLayup
         :members:

@@ -18,7 +18,7 @@ A connector describes the relative motions between two points. A connector also 
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Connector.CDCTerm.CDCTerm
         :members:
