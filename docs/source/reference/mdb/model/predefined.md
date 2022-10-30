@@ -17,7 +17,7 @@ A PredefinedField object stores the non-propagating data of a predefined field a
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.PredefinedField.Field.Field
         :members:

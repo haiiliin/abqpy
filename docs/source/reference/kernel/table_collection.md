@@ -1,31 +1,27 @@
-# Amplitude
+# Table Collection
 
-Amplitude commands are used to create arbitrary time or frequency variations of load, displacement, and some interaction attributes throughout a step using step time or throughout an analysis using total time.
+Table Collection commands are used to create dynamic table types and tables.
 
-## Create amplitudes
-
-### In Mdb
+## Creat table collections for Assembly
 
 ```{eval-rst}
-.. autoclass:: abaqus.Amplitude.AmplitudeModel.AmplitudeModel
+.. autoclass:: abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly
     :members:
     :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
-
 ```
 
-### In Odb
+## Creat table collections for Model
 
 ```{eval-rst}
-.. autoclass:: abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb
+.. autoclass:: abaqus.TableCollection.TableCollectionModel.TableCollectionModel
     :members:
     :special-members: __init__
     :show-inheritance:
 
     .. autoclasstoc::
-
 ```
 
 ## Other Classes
@@ -34,91 +30,91 @@ Amplitude commands are used to create arbitrary time or frequency variations of 
 
 .. toggle::
 
-    .. autoclass:: abaqus.Amplitude.Amplitude.Amplitude
+    .. autoclass:: abaqus.TableCollection.ActivateElements.ActivateElements
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude
+    .. autoclass:: abaqus.TableCollection.DataTable.DataTable
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.Amplitude.BaselineCorrection.BaselineCorrection
+    .. autoclass:: abaqus.TableCollection.DataTableArray.DataTableArray
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.Amplitude.Correlation.Correlation
+    .. autoclass:: abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.Amplitude.DecayAmplitude.DecayAmplitude
+    .. autoclass:: abaqus.TableCollection.EventSeries.EventSeries
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude
+    .. autoclass:: abaqus.TableCollection.EventSeriesData.EventSeriesData
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude
+    .. autoclass:: abaqus.TableCollection.EventSeriesType.EventSeriesType
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude
+    .. autoclass:: abaqus.TableCollection.ParameterColumn.ParameterColumn
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.Amplitude.PsdDefinition.PsdDefinition
+    .. autoclass:: abaqus.TableCollection.ParameterColumnArray.ParameterColumnArray
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude
+    .. autoclass:: abaqus.TableCollection.ParameterTable.ParameterTable
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude
+    .. autoclass:: abaqus.TableCollection.PropertyTable.PropertyTable
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude
+    .. autoclass:: abaqus.TableCollection.PropertyTableData.PropertyTableData
         :members:
         :special-members: __init__
         :show-inheritance:
 
         .. autoclasstoc::
 
-    .. autoclass:: abaqus.Amplitude.TabularAmplitude.TabularAmplitude
+    .. autoclass:: abaqus.TableCollection.TableCollection.TableCollection
         :members:
         :special-members: __init__
         :show-inheritance:
