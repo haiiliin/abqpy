@@ -45,7 +45,7 @@ model/step
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Model.ModelBase.ModelBase
         :members:
