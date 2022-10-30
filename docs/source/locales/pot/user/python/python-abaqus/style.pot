@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,218 +16,218 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../user/python/python-abaqus/style.rst:3
+#: ../../user/python/python-abaqus/style.md:1
 msgid "Abaqus Scripting Interface documentation style"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:5
-msgid "This section describes the style that is used to describe Abaqus Scripting Interface commands. The commands are found in the :doc:`/references`. You may want to refer to the :doc:`/references` while you read this section and compare the style of a documented command with the descriptions provided here."
+#: ../../user/python/python-abaqus/style.md:3
+msgid "This section describes the style that is used to describe Abaqus Scripting Interface commands. The commands are found in the {doc}`/references`. You may want to refer to the {doc}`/references` while you read this section and compare the style of a documented command with the descriptions provided here."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:8
+#: ../../user/python/python-abaqus/style.md:5
 msgid "How the commands are ordered"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:10
-msgid "The following list describes the order in which commands are documented in the :doc:`/references`:"
+#: ../../user/python/python-abaqus/style.md:7
+msgid "The following list describes the order in which commands are documented in the {doc}`/references`:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:12
+#: ../../user/python/python-abaqus/style.md:9
 msgid "Chapters are grouped alphabetically by functionality. In general, the functionality corresponds to the modules and toolsets that are found in Abaqus/CAE; for example, Amplitude commands, Animation commands, and Assembly commands."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:14
+#: ../../user/python/python-abaqus/style.md:11
 msgid "Within each chapter the primary objects appear first and are followed by other objects in alphabetical order. For example, in Mesh commands the objects are listed in the following order:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:16
+#: ../../user/python/python-abaqus/style.md:13
 msgid "Assembly"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:17
+#: ../../user/python/python-abaqus/style.md:14
 msgid "Part"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:18
+#: ../../user/python/python-abaqus/style.md:15
 msgid "ElemType"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:19
+#: ../../user/python/python-abaqus/style.md:16
 msgid "MeshEdge"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:20
+#: ../../user/python/python-abaqus/style.md:17
 msgid "MeshElement"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:21
+#: ../../user/python/python-abaqus/style.md:18
 msgid "MeshFace"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:22
+#: ../../user/python/python-abaqus/style.md:19
 msgid "MeshNode"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:23
+#: ../../user/python/python-abaqus/style.md:20
 msgid "MeshStats"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:25
+#: ../../user/python/python-abaqus/style.md:22
 msgid "Within each object description, the commands are listed in the following order:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:27
+#: ../../user/python/python-abaqus/style.md:24
 msgid "Constructors (in alphabetical order)"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:28
+#: ../../user/python/python-abaqus/style.md:25
 msgid "Methods (in alphabetical order)"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:29
+#: ../../user/python/python-abaqus/style.md:26
 msgid "Members"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:31
-msgid "Some methods are not associated with an object and appear at the end of a chapter; for example, the `evaluateMaterial()` method appears at the end of :doc:`/reference/mdb/model/material` commands."
+#: ../../user/python/python-abaqus/style.md:28
+msgid "Some methods are not associated with an object and appear at the end of a chapter; for example, the `evaluateMaterial()` method appears at the end of {doc}`/reference/mdb/model/material` commands."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:34
+#: ../../user/python/python-abaqus/style.md:30
 msgid "Access"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:36
-msgid "The description of each object in the :doc:`/references` begins with a section that describes how you access an instance of the object. The import statements are provided for completeness. Abaqus/CAE imports all modules when you start a session, and you do not need to include the `import module name` statement in your scripts. However, you must import the Abaqus Scripting Interface Symbolic Constants with the following statement:"
+#: ../../user/python/python-abaqus/style.md:32
+msgid "The description of each object in the {doc}`/references` begins with a section that describes how you access an instance of the object. The import statements are provided for completeness. Abaqus/CAE imports all modules when you start a session, and you do not need to include the `import module name` statement in your scripts. However, you must import the Abaqus Scripting Interface Symbolic Constants with the following statement:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:42
+#: ../../user/python/python-abaqus/style.md:38
 msgid "These should be the first statement in all your Abaqus Scripting Interface scripts."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:44
+#: ../../user/python/python-abaqus/style.md:40
 msgid "The following is the access description for the Material object:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:51
+#: ../../user/python/python-abaqus/style.md:47
 msgid "The first line of the access description indicates the module that Abaqus/CAE imported to make this object, and its methods and members, available to your script."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:53
+#: ../../user/python/python-abaqus/style.md:49
 msgid "The access description also specifies where instances of the object are located in the data model. In the previous example the second line indicates how your script can access Material objects from a particular model. You must qualify a material object, command, or member with the variable mdb, as described in Functions and modules. For example,"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:62
+#: ../../user/python/python-abaqus/style.md:58
 msgid "Similarly, if you are reading from an output database, the following is the access description for the HistoryRegion object:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:69
+#: ../../user/python/python-abaqus/style.md:65
 msgid "The first line indicates that Abaqus/CAE imported the odbAccess module to make the Odb objects, methods, and members available to your Abaqus Scripting Interface script. The second line indicates how your script can access HistoryRegion objects from a particular step."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:71
+#: ../../user/python/python-abaqus/style.md:67
 msgid "The Access description for the FieldOutput object is"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:77
+#: ../../user/python/python-abaqus/style.md:73
 msgid "The following statements show how you use the object described by this Access description:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:88
+#: ../../user/python/python-abaqus/style.md:84
 msgid "The next to last line shows the getSubset method of the FieldOutput object."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:89
+#: ../../user/python/python-abaqus/style.md:85
 msgid "The last line shows the validInvariants member of the FieldOutput object."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:92
+#: ../../user/python/python-abaqus/style.md:87
 msgid "Path"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:94
-msgid "A method that creates an object is called a constructor. The Abaqus Scripting Interface uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the :doc:`/references` includes a path to the command. For example, the following describes the path to the Viewport constructor:"
+#: ../../user/python/python-abaqus/style.md:89
+msgid "A method that creates an object is called a constructor. The Abaqus Scripting Interface uses the convention that constructors begin with an uppercase character. In contrast, methods that operate on an object begin with a lowercase character. The description of each constructor in the {doc}`/references` includes a path to the command. For example, the following describes the path to the Viewport constructor:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:100
+#: ../../user/python/python-abaqus/style.md:95
 msgid "Some constructors include more than one path. For example, you can create a datum that is associated with either a Part object or the RootAssembly object, and each path is listed."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:107
+#: ../../user/python/python-abaqus/style.md:102
 msgid "The path is not listed if the method is not a constructor."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:109
+#: ../../user/python/python-abaqus/style.md:104
 msgid "If you are using the Abaqus Scripting Interface to read data from an output database, the objects exist when you open the output database, and you do not have to use constructors to create them. However, if you are creating or writing to an output database, you may need to use constructors to create new objects, such as part instances and steps. The documentation describes the path to the constructors that create objects in an output database."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:111
+#: ../../user/python/python-abaqus/style.md:106
 msgid "For example, the Path description for the FieldOutput constructor is"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:117
+#: ../../user/python/python-abaqus/style.md:112
 msgid "The following statement creates a FieldOutput object:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:126
+#: ../../user/python/python-abaqus/style.md:120
 msgid "Arguments"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:128
+#: ../../user/python/python-abaqus/style.md:122
 msgid "The ellipsis `(...)` in the command description indicates that the command takes one or more arguments. For example, the Viewport constructor takes arguments."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:134
+#: ../../user/python/python-abaqus/style.md:128
 msgid "In contrast, the `makeCurrent` method takes no arguments."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:140
-msgid "Some arguments of a command are required, and some arguments are optional. In the :doc:`/references` the required arguments are listed first, followed by the optional arguments. If the argument is optional, the default value is provided. The default value is the value of an optional argument when you call a method and omit the argument."
+#: ../../user/python/python-abaqus/style.md:134
+msgid "Some arguments of a command are required, and some arguments are optional. In the {doc}`/references` the required arguments are listed first, followed by the optional arguments. If the argument is optional, the default value is provided. The default value is the value of an optional argument when you call a method and omit the argument."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:142
+#: ../../user/python/python-abaqus/style.md:136
 msgid "The `setValues` method is a special case. All of the arguments to the `setValues` method are optional, but any argument that you omit retains its current value; Abaqus does not assign a default value to the argument."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:144
+#: ../../user/python/python-abaqus/style.md:138
 msgid "Some objects have no constructors; Abaqus creates the objects for you. For such objects the documentation describes the initial value of an optional argument. The initial value given for the argument is the initial value assigned to the corresponding member when Abaqus creates the object. For example, the defaultViewportAnnotationOptions object has no constructor; Abaqus creates the defaultViewportAnnotationOptions object when you start a session. When you create a new viewport, the settings are copied from the current viewport."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:146
+#: ../../user/python/python-abaqus/style.md:140
 msgid "You can use the `setValues` method to modify the value of a member; for example, to modify the value of the triad member of the defaultViewportAnnotationsOptions object. When you call session."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:152
+#: ../../user/python/python-abaqus/style.md:146
 msgid "the value of the triad member is set to off. The other member values remain unchanged; this behavior is called \"as is\" behavior because the values remain \"as is.\" The `setValuesInStep` method displays similar \"as is\" behavior."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:154
+#: ../../user/python/python-abaqus/style.md:148
 msgid "Keyword and positional arguments are described in Creating functions. We recommend that you use keyword arguments since they can be supplied in any order and they make your scripts easier to read and debug; for example,"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:161
+#: ../../user/python/python-abaqus/style.md:155
 msgid "If you choose not to use keywords, the arguments must be provided in the order in which they are documented."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:168
+#: ../../user/python/python-abaqus/style.md:162
 msgid "You can use a combination of keyword and positional arguments. Keyword arguments can be supplied after positional arguments; however, positional arguments cannot be entered after keyword arguments. For example, you can use the following statement:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:175
+#: ../../user/python/python-abaqus/style.md:169
 msgid "However, you cannot use the following statement:"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:182
+#: ../../user/python/python-abaqus/style.md:176
 msgid "You will find it easier to use keyword arguments so that you do not have to concern yourself with the positional requirements."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:185
+#: ../../user/python/python-abaqus/style.md:178
 msgid "Return value"
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:187
-msgid "All commands return a value. Many commands return the None object described in :ref:`python-none`. Constructors (methods that create an object) always return the object being created. The return value of a command can be assigned to a Python variable. For example, in the following statement the Viewport constructor returns a Viewport object, and the variable `newViewport` refers to this new object."
+#: ../../user/python/python-abaqus/style.md:180
+msgid "All commands return a value. Many commands return the None object described in {ref}`python-none`. Constructors (methods that create an object) always return the object being created. The return value of a command can be assigned to a Python variable. For example, in the following statement the Viewport constructor returns a Viewport object, and the variable `newViewport` refers to this new object."
 msgstr ""
 
-#: ../../user/python/python-abaqus/style.rst:194
+#: ../../user/python/python-abaqus/style.md:187
 msgid "You can use the object returned by a command in subsequent statements. For example, the `titlebar` member of a Viewport object is a Boolean specifying whether the viewport title bar is displayed and can have a value of either ON or OFF. The following statement tests the titlebar member of the new viewport created by the previous statement:"
 msgstr ""

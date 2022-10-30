@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/kernel/input.rst:3
+#: ../../reference/kernel/input.md:1
 msgid "Input File Parser"
 msgstr ""
 
-#: ../../reference/kernel/input.rst:5
+#: ../../reference/kernel/input.md:3
 msgid ""
 "The inpParser module provides functions that allow you to parse an Abaqus"
 " input file."
 msgstr ""
 
-#: ../../reference/kernel/input.rst:8
+#: ../../reference/kernel/input.md:5
 msgid "Create input files"
 msgstr ""
 
@@ -49,12 +49,8 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-inputfilepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/kernel/input.rst:14
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/kernel/input.rst:17
-msgid "AbaqusNDarray"
+#: ../../reference/kernel/input.md:12
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:1
@@ -96,8 +92,10 @@ msgid ""
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-abaqusndarraypyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/kernel/input.rst:27
-msgid "InputFile"
+#: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray:1
+#: abaqus.InputFileParser.InputFile.InputFile:1
+#: abaqus.InputFileParser.Keyword.Keyword:1 of
+msgid "Member Details:"
 msgstr ""
 
 #: abaqus.InputFileParser.InputFile.InputFile
@@ -270,10 +268,6 @@ msgid ""
 "each subsequent     parsing."
 msgstr ""
 
-#: ../../reference/kernel/input.rst:37
-msgid "Keyword"
-msgstr ""
-
 #: abaqus.InputFileParser.Keyword.Keyword:1 of
 msgid ""
 "The Keyword object is used to store a keyword definition from an Abaqus "
@@ -392,5 +386,17 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "AbaqusNDarray"
+#~ msgstr ""
+
+#~ msgid "InputFile"
+#~ msgstr ""
+
+#~ msgid "Keyword"
 #~ msgstr ""
 

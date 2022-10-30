@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,20 +16,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/session/plot_options.rst:3
+#: ../../reference/session/plot_options.md:1
 msgid "Plot Options"
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:5
+#: ../../reference/session/plot_options.md:3
 msgid "Plot options commands are used to control the appearance of plots in the Visualization module. Plots can be undeformed, deformed, contour, symbol, or material orientation."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:8
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:11
-msgid "BasicOptions"
+#: ../../reference/session/plot_options.md:5
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/BasicOptions.py:docstring of abaqus.PlotOptions.BasicOptions.BasicOptions:1
@@ -922,6 +918,55 @@ msgstr ""
 msgid "This method modifies the _OptionsBase object."
 msgstr ""
 
+#: ../../../../src/abaqus/PlotOptions/BasicOptions.py:docstring of abaqus.PlotOptions.BasicOptions.BasicOptions:1
+#: ../../../../src/abaqus/PlotOptions/CouplingConstraint.py:docstring of abaqus.PlotOptions.CouplingConstraint.CouplingConstraint:1
+#: ../../../../src/abaqus/PlotOptions/DGCommonOptions.py:docstring of abaqus.PlotOptions.DGCommonOptions.DGCommonOptions:1
+#: ../../../../src/abaqus/PlotOptions/DGContourOptions.py:docstring of abaqus.PlotOptions.DGContourOptions.DGContourOptions:1
+#: ../../../../src/abaqus/PlotOptions/DGDisplayBodyOptions.py:docstring of abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions:1
+#: ../../../../src/abaqus/PlotOptions/DGOrientationOptions.py:docstring of abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions:1
+#: ../../../../src/abaqus/PlotOptions/DGSuperimposeOptions.py:docstring of abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions:1
+#: ../../../../src/abaqus/PlotOptions/DGSymbolOptions.py:docstring of abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions:1
+#: ../../../../src/abaqus/PlotOptions/DetailPlotOptions.py:docstring of abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions:1
+#: ../../../../src/abaqus/PlotOptions/DisplayOptions.py:docstring of abaqus.PlotOptions.DisplayOptions.DisplayOptions:1
+#: ../../../../src/abaqus/PlotOptions/FreeBodyOptions.py:docstring of abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions:1
+#: ../../../../src/abaqus/PlotOptions/HistoryVariable.py:docstring of abaqus.PlotOptions.HistoryVariable.HistoryVariable:1
+#: ../../../../src/abaqus/PlotOptions/MdbData.py:docstring of abaqus.PlotOptions.MdbData.MdbData:1
+#: ../../../../src/abaqus/PlotOptions/MdbDataFrame.py:docstring of abaqus.PlotOptions.MdbDataFrame.MdbDataFrame:1
+#: ../../../../src/abaqus/PlotOptions/MdbDataFrameArray.py:docstring of abaqus.PlotOptions.MdbDataFrameArray.MdbDataFrameArray:1
+#: ../../../../src/abaqus/PlotOptions/MdbDataInstance.py:docstring of abaqus.PlotOptions.MdbDataInstance.MdbDataInstance:1
+#: ../../../../src/abaqus/PlotOptions/MdbDataStep.py:docstring of abaqus.PlotOptions.MdbDataStep.MdbDataStep:1
+#: ../../../../src/abaqus/PlotOptions/MpcConstraint.py:docstring of abaqus.PlotOptions.MpcConstraint.MpcConstraint:1
+#: ../../../../src/abaqus/PlotOptions/OdbAnalysisError.py:docstring of abaqus.PlotOptions.OdbAnalysisError.OdbAnalysisError:1
+#: ../../../../src/abaqus/PlotOptions/OdbAnalysisWarning.py:docstring of abaqus.PlotOptions.OdbAnalysisWarning.OdbAnalysisWarning:1
+#: ../../../../src/abaqus/PlotOptions/OdbAuxiliaryData.py:docstring of abaqus.PlotOptions.OdbAuxiliaryData.OdbAuxiliaryData:1
+#: ../../../../src/abaqus/PlotOptions/OdbContactDiagnostics.py:docstring of abaqus.PlotOptions.OdbContactDiagnostics.OdbContactDiagnostics:1
+#: ../../../../src/abaqus/PlotOptions/OdbData.py:docstring of abaqus.PlotOptions.OdbData.OdbData:1
+#: ../../../../src/abaqus/PlotOptions/OdbDataDatumCsys.py:docstring of abaqus.PlotOptions.OdbDataDatumCsys.OdbDataDatumCsys:1
+#: ../../../../src/abaqus/PlotOptions/OdbDataElementSet.py:docstring of abaqus.PlotOptions.OdbDataElementSet.OdbDataElementSet:1
+#: ../../../../src/abaqus/PlotOptions/OdbDataFrame.py:docstring of abaqus.PlotOptions.OdbDataFrame.OdbDataFrame:1
+#: ../../../../src/abaqus/PlotOptions/OdbDataFrameArray.py:docstring of abaqus.PlotOptions.OdbDataFrameArray.OdbDataFrameArray:1
+#: ../../../../src/abaqus/PlotOptions/OdbDataInstance.py:docstring of abaqus.PlotOptions.OdbDataInstance.OdbDataInstance:1
+#: ../../../../src/abaqus/PlotOptions/OdbDataMaterial.py:docstring of abaqus.PlotOptions.OdbDataMaterial.OdbDataMaterial:1
+#: ../../../../src/abaqus/PlotOptions/OdbDataNodeSet.py:docstring of abaqus.PlotOptions.OdbDataNodeSet.OdbDataNodeSet:1
+#: ../../../../src/abaqus/PlotOptions/OdbDataSection.py:docstring of abaqus.PlotOptions.OdbDataSection.OdbDataSection:1
+#: ../../../../src/abaqus/PlotOptions/OdbDataStep.py:docstring of abaqus.PlotOptions.OdbDataStep.OdbDataStep:1
+#: ../../../../src/abaqus/PlotOptions/OdbDataSurfaceSet.py:docstring of abaqus.PlotOptions.OdbDataSurfaceSet.OdbDataSurfaceSet:1
+#: ../../../../src/abaqus/PlotOptions/OdbDiagnosticAttempt.py:docstring of abaqus.PlotOptions.OdbDiagnosticAttempt.OdbDiagnosticAttempt:1
+#: ../../../../src/abaqus/PlotOptions/OdbDiagnosticData.py:docstring of abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData:1
+#: ../../../../src/abaqus/PlotOptions/OdbDiagnosticIncrement.py:docstring of abaqus.PlotOptions.OdbDiagnosticIncrement.OdbDiagnosticIncrement:1
+#: ../../../../src/abaqus/PlotOptions/OdbDiagnosticStep.py:docstring of abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep:1
+#: ../../../../src/abaqus/PlotOptions/OdbDisplayOptions.py:docstring of abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions:1
+#: ../../../../src/abaqus/PlotOptions/OdbJobTime.py:docstring of abaqus.PlotOptions.OdbJobTime.OdbJobTime:1
+#: ../../../../src/abaqus/PlotOptions/OdbNumericalProblemSummary.py:docstring of abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary:1
+#: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:1
+#: ../../../../src/abaqus/PlotOptions/PlyStackPlotOptions.py:docstring of abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions:1
+#: ../../../../src/abaqus/PlotOptions/RigidBodyConstraint.py:docstring of abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint:1
+#: ../../../../src/abaqus/PlotOptions/StreamOptions.py:docstring of abaqus.PlotOptions.StreamOptions.StreamOptions:1
+#: ../../../../src/abaqus/PlotOptions/TieConstraint.py:docstring of abaqus.PlotOptions.TieConstraint.TieConstraint:1
+#: ../../../../src/abaqus/PlotOptions/ViewCutOptions.py:docstring of abaqus.PlotOptions.ViewCutOptions.ViewCutOptions:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/PlotOptions/BasicOptions.py:docstring of abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:47
 #: ../../docstring of abaqus.PlotOptions.BasicOptions.BasicOptions.accountForDeactivatedElems:1
 msgid "A Boolean specifying whether to account for deactivated elements. The default value is ON."
@@ -944,7 +989,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/BasicOptions.py:docstring of abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:19
 #: ../../docstring of abaqus.PlotOptions.BasicOptions.BasicOptions.averagingThreshold:1
-msgid "A Float specifying the nodal averaging threshold percentage. Possible values are 0 << **averagingThreshold** << 100. The default value is 75.0."
+msgid "A Float specifying the nodal averaging threshold percentage. Possible values are 0 < **averagingThreshold** < 100. The default value is 75.0."
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/BasicOptions.py:docstring of abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:50
@@ -1344,7 +1389,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/BasicOptions.py:docstring of abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:152
 #: ../../docstring of abaqus.PlotOptions.BasicOptions.BasicOptions.sweepSectorEndAngle:1
-msgid "A Float specifying the angle (in degrees) through which to sweep cyclic symmetry sectors when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 << **sweepSectorEndAngle** ≤ 360. The default value is 360.0."
+msgid "A Float specifying the angle (in degrees) through which to sweep cyclic symmetry sectors when **sweepSectors** = ON. Possible values are multiples of the sector angle such that 0 < **sweepSectorEndAngle** ≤ 360. The default value is 360.0."
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/BasicOptions.py:docstring of abaqus.PlotOptions.BasicOptions.BasicOptions.setValues:223
@@ -1377,10 +1422,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.BasicOptions.BasicOptions.userRegions:1
 msgid "A tuple of Strings specifying either element set or display group names (depending on the value of regionBoundaries) defining the averaging region boundaries. The default value is an empty sequence."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:21
-msgid "CouplingConstraint"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/CouplingConstraint.py:docstring of abaqus.PlotOptions.CouplingConstraint.CouplingConstraint:1
@@ -1476,10 +1517,6 @@ msgstr ""
 msgid "A String specifying the type of coupling. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:31
-msgid "DetailPlotOptions"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/DetailPlotOptions.py:docstring of abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions:1
 msgid "The DetailPlotOptions object stores values and attributes associated with a Viewport object. The DetailPlotOptions object has no constructor command. Abaqus creates the **detailPlotOptions** member whenever a Viewport is created."
 msgstr ""
@@ -1495,10 +1532,6 @@ msgstr ""
 #: ../../None:3:<autosummary>:1
 #: ../../docstring of abaqus.PlotOptions.DetailPlotOptions.DetailPlotOptions.plyStackPlotOptions:1
 msgid "A :py:class:`~abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions` object."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:41
-msgid "DGCommonOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/DGCommonOptions.py:docstring of abaqus.PlotOptions.DGCommonOptions.DGCommonOptions:1
@@ -1999,10 +2032,6 @@ msgstr ""
 msgid "A SymbolicConstant specifying which edges to plot. Possible values are ALL, EXTERIOR, FEATURE, FREE, and NONE. The default value is EXTERIOR.NONE can be used only when **renderStyle** = SHADED."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:51
-msgid "DGContourOptions"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/DGContourOptions.py:docstring of abaqus.PlotOptions.DGContourOptions.DGContourOptions:1
 msgid "The DGContourOptions object stores values and attributes associated with a contour plot. The DGContourOptions object has no constructor command. Abaqus creates an *odbDisplayOptions.contourOptions* member when a display group instance is created, using values from *odbDisplay.contourOptions*."
 msgstr ""
@@ -2215,10 +2244,6 @@ msgstr ""
 msgid "A Boolean specifying whether tick mark plots should be displayed on line-type elements. If **tickmarkPlots** = ON, Abaqus displays a tick mark plot. If **tickmarkPlots** = OFF, Abaqus displays contours on the element faces. The default value is OFF."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:61
-msgid "DGDisplayBodyOptions"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/DGDisplayBodyOptions.py:docstring of abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions:1
 msgid "The DGDisplayBodyOptions object stores values and attributes applied to display bodies. The DGDisplayBodyOptions object has no constructor command. Abaqus creates an *odbDisplayOptions.displayBodyOptions* member when a display group instance is created, using values from *odbDisplay.displayBodyOptions*."
 msgstr ""
@@ -2277,10 +2302,6 @@ msgstr ""
 
 #: ../../None:15:<autosummary>:1
 msgid ":py:obj:`coordinateScaleFactors <abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions.coordinateScaleFactors>`\\"
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:71
-msgid "DGOrientationOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/DGOrientationOptions.py:docstring of abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions:1
@@ -2421,10 +2442,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions.symbolSize:1
 msgid "A Float specifying the size of the material orientation triad. The default value is 6.0."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:81
-msgid "DGSuperimposeOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/DGSuperimposeOptions.py:docstring of abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions:1
@@ -2647,10 +2664,6 @@ msgstr ""
 #: ../../docstring of abaqus.PlotOptions.DGSuperimposeOptions.DGSuperimposeOptions.visibleEdges:1
 #: ../../docstring of abaqus.PlotOptions.OptionArg.OptionArg.visibleEdges:1
 msgid "A SymbolicConstant specifying which edges to plot. Possible values are ALL, EXTERIOR, FEATURE, FREE, and NONE. The default value is FEATURE.NONE can be used only when **renderStyle** = SHADED."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:91
-msgid "DGSymbolOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/DGSymbolOptions.py:docstring of abaqus.PlotOptions.DGSymbolOptions.DGSymbolOptions:1
@@ -3009,10 +3022,6 @@ msgstr ""
 msgid "A SymbolicConstant specifying the vector line thickness. Possible values are VERY_THIN, THIN, MEDIUM, and THICK. The default value is VERY_THIN."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:101
-msgid "DisplayOptions"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/DisplayOptions.py:docstring of abaqus.PlotOptions.DisplayOptions.DisplayOptions:1
 msgid "The DisplayOptions object stores a plot state."
 msgstr ""
@@ -3052,10 +3061,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/DisplayOptions.py:docstring of abaqus.PlotOptions.DisplayOptions.DisplayOptions.setValues:11
 msgid "A sequence of SymbolicConstants specifying the plot state of the display. Possible values are UNDEFORMED, DEFORMED, CONTOURS_ON_UNDEF, CONTOURS_ON_DEF, SYMBOLS_ON_UNDEF, SYMBOLS_ON_DEF, ORIENT_ON_UNDEF, and ORIENT_ON_DEF. The default value is (UNDEFORMED)."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:111
-msgid "FreeBodyOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/FreeBodyOptions.py:docstring of abaqus.PlotOptions.FreeBodyOptions.FreeBodyOptions:1
@@ -3222,10 +3227,6 @@ msgstr ""
 msgid "A Boolean specifying whether to use a constant length for all arrows. The default value is OFF."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:121
-msgid "HistoryVariable"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/HistoryVariable.py:docstring of abaqus.PlotOptions.HistoryVariable.HistoryVariable:1
 msgid "The HistoryVariable object stores history data."
 msgstr ""
@@ -3270,10 +3271,6 @@ msgstr ""
 msgid "A tuple of (String, Int, SymbolicConstant) tuples specifying the steps. This sequence is read-only. Each inner sequence contains the following elements:*stepLabel*: A String specifying the step label. *stepNumber*: An Int specifying the step number. *procedureDomain*: A SymbolicConstant specifying the analysis type of the step, which can have these values: “TIME,” “FREQUENCY,” or “MODAL.”"
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:131
-msgid "MdbData"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/MdbData.py:docstring of abaqus.PlotOptions.MdbData.MdbData:1
 msgid "The MdbData object has no constructor. Abaqus creates an MdbData object when a cae file is opened or a new model is created. There is one MdbData for each model in session. MdbData is updated when it is displayed in a viewport."
 msgstr ""
@@ -3316,24 +3313,12 @@ msgstr ""
 msgid "A repository of MdbDataStep objects specifying the list of steps. The repository is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:141
-msgid "MdbDataFrame"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/MdbDataFrame.py:docstring of abaqus.PlotOptions.MdbDataFrame.MdbDataFrame:1
 msgid "The MdbDataFrame object. There is one and only MdbDataFrame in a MdbDataStep."
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/MdbDataFrame.py:docstring of abaqus.PlotOptions.MdbDataFrame.MdbDataFrame:10
 msgid "Check `MdbDataFrame on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mdbdataframepyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:151
-msgid "MdbDataFrameArray"
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:161
-msgid "MdbDataInstance"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/MdbDataInstance.py:docstring of abaqus.PlotOptions.MdbDataInstance.MdbDataInstance:1
@@ -3357,10 +3342,6 @@ msgstr ""
 msgid "A String specifying the instance name. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:171
-msgid "MdbDataStep"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/MdbDataStep.py:docstring of abaqus.PlotOptions.MdbDataStep.MdbDataStep:1
 msgid "The MdbDataStep object.It corresponds to same named step in the cae model."
 msgstr ""
@@ -3379,10 +3360,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.MdbDataStep.MdbDataStep.frames:1
 msgid "A :py:class:`~abaqus.PlotOptions.MdbDataFrameArray.MdbDataFrameArray` object specifying the list of frames. The list is read-only. There is only one frame in a step."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:181
-msgid "MpcConstraint"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/MpcConstraint.py:docstring of abaqus.PlotOptions.MpcConstraint.MpcConstraint:1
@@ -3430,10 +3407,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.MpcConstraint.MpcConstraint.name:1
 msgid "A String specifying the multipoint constraint name. This attribute is read-only."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:191
-msgid "OdbAnalysisError"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OdbAnalysisError.py:docstring of abaqus.PlotOptions.OdbAnalysisError.OdbAnalysisError:1
@@ -3561,20 +3534,12 @@ msgstr ""
 msgid "An int specifying the step number on which the error was encountered. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:201
-msgid "OdbAnalysisWarning"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/OdbAnalysisWarning.py:docstring of abaqus.PlotOptions.OdbAnalysisWarning.OdbAnalysisWarning:1
 msgid "The OdbAnalysisWarning object stores the description of different warnings encountered during the analysis."
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OdbAnalysisWarning.py:docstring of abaqus.PlotOptions.OdbAnalysisWarning.OdbAnalysisWarning:11
 msgid "Check `OdbAnalysisWarning on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbanalysiswarningpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:211
-msgid "OdbAuxiliaryData"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OdbAuxiliaryData.py:docstring of abaqus.PlotOptions.OdbAuxiliaryData.OdbAuxiliaryData:1
@@ -3643,10 +3608,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.OdbAuxiliaryData.OdbAuxiliaryData.nodeLables:1
 msgid "A tuple consisting of node label names. This attribute is read-only."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:221
-msgid "OdbContactDiagnostics"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OdbContactDiagnostics.py:docstring of abaqus.PlotOptions.OdbContactDiagnostics.OdbContactDiagnostics:1
@@ -3739,10 +3700,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.OdbContactDiagnostics.OdbContactDiagnostics.type:1
 msgid "A string specifying the type of contact initialization. This attribute is read-only."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:231
-msgid "OdbData"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OdbData.py:docstring of abaqus.PlotOptions.OdbData.OdbData:1
@@ -3983,10 +3940,6 @@ msgstr ""
 msgid "A repository of TieConstraint objects specifying the list of Tie constraints. The repository is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:241
-msgid "OdbDataDatumCsys"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/OdbDataDatumCsys.py:docstring of abaqus.PlotOptions.OdbDataDatumCsys.OdbDataDatumCsys:1
 msgid "The OdbDataDatumCsys object stores coordinate system data."
 msgstr ""
@@ -4067,10 +4020,6 @@ msgstr ""
 msgid "A tuple of three Floats specifying a sequence of three floats specifying the z-Axis vector. The default value is (0, 0, 1)."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:251
-msgid "OdbDataElementSet"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/OdbDataElementSet.py:docstring of abaqus.PlotOptions.OdbDataElementSet.OdbDataElementSet:1
 msgid "The OdbDataElementSet object stores element set data."
 msgstr ""
@@ -4112,10 +4061,6 @@ msgstr ""
 msgid "A String specifying the set name. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:261
-msgid "OdbDataFrame"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/OdbDataFrame.py:docstring of abaqus.PlotOptions.OdbDataFrame.OdbDataFrame:1
 msgid "The OdbDataFrame object."
 msgstr ""
@@ -4146,14 +4091,6 @@ msgstr ""
 msgid "A Boolean specifying whether to update the model. The default value is ON"
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:271
-msgid "OdbDataFrameArray"
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:281
-msgid "OdbDataInstance"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/OdbDataInstance.py:docstring of abaqus.PlotOptions.OdbDataInstance.OdbDataInstance:1
 msgid "The OdbDataInstance object instance data."
 msgstr ""
@@ -4164,10 +4101,6 @@ msgstr ""
 
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`name <abaqus.PlotOptions.OdbDataInstance.OdbDataInstance.name>`\\"
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:291
-msgid "OdbDataMaterial"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OdbDataMaterial.py:docstring of abaqus.PlotOptions.OdbDataMaterial.OdbDataMaterial:1
@@ -4184,10 +4117,6 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ":py:obj:`elements <abaqus.PlotOptions.OdbDataMaterial.OdbDataMaterial.elements>`\\"
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:301
-msgid "OdbDataNodeSet"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OdbDataNodeSet.py:docstring of abaqus.PlotOptions.OdbDataNodeSet.OdbDataNodeSet:1
@@ -4214,10 +4143,6 @@ msgstr ""
 msgid "A String-to-tuple-of-Ints Dictionary specifying the nodes in the set. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:311
-msgid "OdbDataSection"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/OdbDataSection.py:docstring of abaqus.PlotOptions.OdbDataSection.OdbDataSection:1
 msgid "The OdbDataSection object stores section data."
 msgstr ""
@@ -4232,10 +4157,6 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid ":py:obj:`elements <abaqus.PlotOptions.OdbDataSection.OdbDataSection.elements>`\\"
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:321
-msgid "OdbDataStep"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OdbDataStep.py:docstring of abaqus.PlotOptions.OdbDataStep.OdbDataStep:1
@@ -4275,10 +4196,6 @@ msgstr ""
 msgid "A Boolean specifying whether to activate all the frames in the step."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:331
-msgid "OdbDataSurfaceSet"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/OdbDataSurfaceSet.py:docstring of abaqus.PlotOptions.OdbDataSurfaceSet.OdbDataSurfaceSet:1
 msgid "The OdbDataSurfaceSet object stores surface set data."
 msgstr ""
@@ -4305,10 +4222,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.OdbDataSurfaceSet.OdbDataSurfaceSet.facets:1
 msgid "A String-to-tuple-of-Ints Dictionary specifying the facets corresponding to the **elements**. This attribute is read-only."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:341
-msgid "OdbDiagnosticAttempt"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OdbDiagnosticAttempt.py:docstring of abaqus.PlotOptions.OdbDiagnosticAttempt.OdbDiagnosticAttempt:1
@@ -4410,10 +4323,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.OdbDiagnosticAttempt.OdbDiagnosticAttempt.size:1
 msgid "A float specifying the size of the increment of the particular attempt. This attribute is read-only."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:351
-msgid "OdbDiagnosticData"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OdbDiagnosticData.py:docstring of abaqus.PlotOptions.OdbDiagnosticData.OdbDiagnosticData:1
@@ -4541,10 +4450,6 @@ msgstr ""
 msgid "An int specifying the number of steps present in the analysis. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:361
-msgid "OdbDiagnosticIncrement"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/OdbDiagnosticIncrement.py:docstring of abaqus.PlotOptions.OdbDiagnosticIncrement.OdbDiagnosticIncrement:1
 msgid "The OdbDiagnosticIncrement object."
 msgstr ""
@@ -4632,10 +4537,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.OdbDiagnosticIncrement.OdbDiagnosticIncrement.stepTimeCompleted:1
 msgid "A float specifying the amount of step time completed in the particular increment. This attribute is read-only."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:371
-msgid "OdbDiagnosticStep"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OdbDiagnosticStep.py:docstring of abaqus.PlotOptions.OdbDiagnosticStep.OdbDiagnosticStep:1
@@ -4969,10 +4870,6 @@ msgstr ""
 msgid "A float specifying the duration for the step. This attribute is read-only."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:381
-msgid "OdbDisplayOptions"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/OdbDisplayOptions.py:docstring of abaqus.PlotOptions.OdbDisplayOptions.OdbDisplayOptions:1
 msgid "The OdbDisplayOptions object stores the display options associated with an OdbInstance object. This object does not have a constructor. Abaqus creates the OdbDisplayOptions object when an OdbInstance object is created using the display options associated with the current viewport at the time of creation."
 msgstr ""
@@ -5035,10 +4932,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.PlotOptions.DGDisplayBodyOptions.DGDisplayBodyOptions` object."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:391
-msgid "OdbJobTime"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/OdbJobTime.py:docstring of abaqus.PlotOptions.OdbJobTime.OdbJobTime:1
 msgid "The OdbJobTime object stores the analysis time of a job."
 msgstr ""
@@ -5081,10 +4974,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.OdbJobTime.OdbJobTime.wallclockTime:1
 msgid "A float specifying the wallclocktime for the analysis. This attribute is read-only."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:401
-msgid "OdbNumericalProblemSummary"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OdbNumericalProblemSummary.py:docstring of abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary:1
@@ -5165,10 +5054,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.OdbNumericalProblemSummary.OdbNumericalProblemSummary.numberOfZeroPivots:1
 msgid "An int specifying the number of zero pivots. This attribute is read-only."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:411
-msgid "OptionArg"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg:1
@@ -5265,10 +5150,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/OptionArg.py:docstring of abaqus.PlotOptions.OptionArg.OptionArg.__init__:43
 msgid ":class:`OptionArg`"
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:421
-msgid "PlyStackPlotOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/PlyStackPlotOptions.py:docstring of abaqus.PlotOptions.PlyStackPlotOptions.PlyStackPlotOptions:1
@@ -5763,10 +5644,6 @@ msgstr ""
 msgid "A Float specifying the size of the ply in the Z-direction. The default value is 0.8."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:431
-msgid "RigidBodyConstraint"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/RigidBodyConstraint.py:docstring of abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint:1
 msgid "The RigidBodyConstraint object."
 msgstr ""
@@ -5797,10 +5674,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.RigidBodyConstraint.RigidBodyConstraint.name:1
 msgid "A String specifying the rigidbody constraint name. This attribute is read-only."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:441
-msgid "StreamOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/StreamOptions.py:docstring of abaqus.PlotOptions.StreamOptions.StreamOptions:1
@@ -5852,10 +5725,6 @@ msgstr ""
 msgid "An Int specifying the number of arrows on each stream line. The default value is 10."
 msgstr ""
 
-#: ../../reference/session/plot_options.rst:451
-msgid "TieConstraint"
-msgstr ""
-
 #: ../../../../src/abaqus/PlotOptions/TieConstraint.py:docstring of abaqus.PlotOptions.TieConstraint.TieConstraint:1
 msgid "The TieConstraint object."
 msgstr ""
@@ -5883,10 +5752,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.PlotOptions.TieConstraint.TieConstraint.name:1
 msgid "A String specifying the tie constraint name. This attribute is read-only."
-msgstr ""
-
-#: ../../reference/session/plot_options.rst:461
-msgid "ViewCutOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/PlotOptions/ViewCutOptions.py:docstring of abaqus.PlotOptions.ViewCutOptions.ViewCutOptions:1

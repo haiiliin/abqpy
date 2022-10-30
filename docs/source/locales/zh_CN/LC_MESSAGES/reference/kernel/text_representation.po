@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,22 +17,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/kernel/text_representation.rst:3
+#: ../../reference/kernel/text_representation.md:1
 msgid "Text Representation"
 msgstr ""
 
-#: ../../reference/kernel/text_representation.rst:5
+#: ../../reference/kernel/text_representation.md:3
 msgid ""
 "Text representation commands are used to determine how objects are "
 "printed on the Python command line."
 msgstr ""
 
-#: ../../reference/kernel/text_representation.rst:8
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/kernel/text_representation.rst:11
-msgid "redentABQ"
+#: ../../reference/kernel/text_representation.md:5
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.TextRepresentation.redentABQ.indentFile:1 of
@@ -105,10 +101,6 @@ msgstr ""
 msgid ":class:`Boolean`"
 msgstr ""
 
-#: ../../reference/kernel/text_representation.rst:19
-msgid "textRepr"
-msgstr ""
-
 #: abaqus.TextRepresentation.textRepr.getIndentedRepr:1 of
 msgid "This method returns a String with each level of parentheses indented."
 msgstr ""
@@ -157,7 +149,7 @@ msgstr ""
 #: abaqus.TextRepresentation.textRepr.prettyPrint:21 of
 msgid ""
 "An Int specifying the number of significant digits for Floats in the "
-"output. Possible values are 0 << **significantDigits** ≤ 15. The default "
+"output. Possible values are 0 < **significantDigits** ≤ 15. The default "
 "value is 6."
 msgstr ""
 
@@ -293,10 +285,6 @@ msgid ""
 "#simaker-functiontextreprprinttypespyc>`__."
 msgstr ""
 
-#: ../../reference/kernel/text_representation.rst:27
-msgid "TextReprOptions"
-msgstr ""
-
 #: abaqus.TextRepresentation.TextReprOptions.TextReprOptions:1 of
 msgid "Bases: :py:class:`object`"
 msgstr ""
@@ -335,6 +323,10 @@ msgstr ""
 #: ../../None:3:<autosummary>:1
 #: abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues:1 of
 msgid "This method modifies the TextReprOptions object."
+msgstr ""
+
+#: abaqus.TextRepresentation.TextReprOptions.TextReprOptions:1 of
+msgid "Member Details:"
 msgstr ""
 
 #: abaqus.TextRepresentation.TextReprOptions.TextReprOptions.setValues:4 of
@@ -376,8 +368,8 @@ msgstr ""
 msgid ""
 "An Int or the SymbolicConstant UNLIMITED specifying the maximum number of"
 " elements of a sequence to return. Possible values are UNLIMITED or Ints "
-">> 0. The initial value is 100. After the maximum number of elements, the"
-" remainder are indicated by the string '...'."
+"> 0. The initial value is 100. After the maximum number of elements, the "
+"remainder are indicated by the string '...'."
 msgstr ""
 
 #~ msgid ""
@@ -504,5 +496,36 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Object features"
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "redentABQ"
+#~ msgstr ""
+
+#~ msgid "textRepr"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the number of "
+#~ "significant digits for Floats in the "
+#~ "output. Possible values are 0 << "
+#~ "**significantDigits** ≤ 15. The default "
+#~ "value is 6."
+#~ msgstr ""
+
+#~ msgid "TextReprOptions"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int or the SymbolicConstant UNLIMITED"
+#~ " specifying the maximum number of "
+#~ "elements of a sequence to return. "
+#~ "Possible values are UNLIMITED or Ints"
+#~ " >> 0. The initial value is "
+#~ "100. After the maximum number of "
+#~ "elements, the remainder are indicated by"
+#~ " the string '...'."
 #~ msgstr ""
 

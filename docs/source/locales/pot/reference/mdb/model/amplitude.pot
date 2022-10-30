@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,20 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/model/amplitude.rst:3
-#: ../../reference/mdb/model/amplitude.rst:36
+#: ../../reference/mdb/model/amplitude.md:1
 msgid "Amplitude"
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:5
+#: ../../reference/mdb/model/amplitude.md:3
 msgid "Amplitude commands are used to create arbitrary time or frequency variations of load, displacement, and some interaction attributes throughout a step using step time or throughout an analysis using total time."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:8
+#: ../../reference/mdb/model/amplitude.md:5
 msgid "Create amplitudes"
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:11
+#: ../../reference/mdb/model/amplitude.md:7
 msgid "In Mdb"
 msgstr ""
 
@@ -718,6 +717,24 @@ msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid "This method modifies the Model object."
+msgstr ""
+
+#: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude:1
+#: ../../../../src/abaqus/Amplitude/Amplitude.py:docstring of abaqus.Amplitude.Amplitude.Amplitude:1
+#: ../../../../src/abaqus/Amplitude/AmplitudeModel.py:docstring of abaqus.Amplitude.AmplitudeModel.AmplitudeModel:1
+#: ../../../../src/abaqus/Amplitude/AmplitudeOdb.py:docstring of abaqus.Amplitude.AmplitudeOdb.AmplitudeOdb:1
+#: ../../../../src/abaqus/Amplitude/BaselineCorrection.py:docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection:1
+#: ../../../../src/abaqus/Amplitude/Correlation.py:docstring of abaqus.Amplitude.Correlation.Correlation:1
+#: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude:1
+#: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude:1
+#: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude:1
+#: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude:1
+#: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition:1
+#: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude:1
+#: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude:1
+#: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude:1
+#: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude:1
+msgid "Member Details:"
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude.__init__:4
@@ -1415,7 +1432,7 @@ msgstr ""
 msgid ":class:`TabularAmplitude`"
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:22
+#: ../../reference/mdb/model/amplitude.md:19
 msgid "In Odb"
 msgstr ""
 
@@ -1603,8 +1620,8 @@ msgstr ""
 msgid "This method is used to update an Odb object in memory while an Abaqus analysis writes data to the associated output database."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:33
-msgid "Classes"
+#: ../../reference/mdb/model/amplitude.md:31
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/Amplitude.py:docstring of abaqus.Amplitude.Amplitude.Amplitude:1
@@ -1635,10 +1652,6 @@ msgstr ""
 #: ../../None:6:<autosummary>:1
 #: ../../None:8:<autosummary>:1
 msgid "A SymbolicConstant specifying the time span of the amplitude."
-msgstr ""
-
-#: ../../reference/mdb/model/amplitude.rst:46
-msgid "ActuatorAmplitude"
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/ActuatorAmplitude.py:docstring of abaqus.Amplitude.ActuatorAmplitude.ActuatorAmplitude:1
@@ -1709,10 +1722,6 @@ msgstr ""
 msgid "Check `ActuatorAmplitude.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-actuatoramplitudepyc.htm?contextscope=all#simaker-actuatoramplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:56
-msgid "BaselineCorrection"
-msgstr ""
-
 #: ../../../../src/abaqus/Amplitude/BaselineCorrection.py:docstring of abaqus.Amplitude.BaselineCorrection.BaselineCorrection:1
 msgid "The BaselineCorrection object modifies an acceleration history to minimize the overall drift of the displacement obtained from the time integration of the given acceleration."
 msgstr ""
@@ -1772,10 +1781,6 @@ msgstr ""
 msgid ":class:`BaselineCorrection`"
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:66
-msgid "Correlation"
-msgstr ""
-
 #: ../../../../src/abaqus/Amplitude/Correlation.py:docstring of abaqus.Amplitude.Correlation.Correlation:1
 msgid "A Correlation is an object used to define the cross-correlation as part of the definition of random loading. The Correlation object is derived from the Amplitude object."
 msgstr ""
@@ -1816,10 +1821,6 @@ msgstr ""
 msgid "A tuple of tuples of Floats specifying the real and imaginary part of the scaling factor. If **approach** = MOVING_NOISE, then **data** represents the noise velocity components 1, 2, and 3."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:76
-msgid "DecayAmplitude"
-msgstr ""
-
 #: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude:1
 msgid "The DecayAmplitude object defines an amplitude curve using an exponential decay. The DecayAmplitude object is derived from the Amplitude object."
 msgstr ""
@@ -1847,10 +1848,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/DecayAmplitude.py:docstring of abaqus.Amplitude.DecayAmplitude.DecayAmplitude.setValues:4
 msgid "Check `DecayAmplitude.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-decayamplitudepyc.htm?contextscope=all#simaker-decayamplitudesetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/amplitude.rst:86
-msgid "EquallySpacedAmplitude"
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/EquallySpacedAmplitude.py:docstring of abaqus.Amplitude.EquallySpacedAmplitude.EquallySpacedAmplitude:1
@@ -1903,10 +1900,6 @@ msgstr ""
 msgid "Check `EquallySpacedAmplitude.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-equallyspacedamplitudepyc.htm?contextscope=all#simaker-equallyspacedamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:96
-msgid "ModulatedAmplitude"
-msgstr ""
-
 #: ../../../../src/abaqus/Amplitude/ModulatedAmplitude.py:docstring of abaqus.Amplitude.ModulatedAmplitude.ModulatedAmplitude:1
 msgid "The ModulatedAmplitude object defines a modulated amplitude curve. The ModulatedAmplitude object is derived from the Amplitude object."
 msgstr ""
@@ -1936,10 +1929,6 @@ msgstr ""
 msgid "Check `ModulatedAmplitude.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modulatedamplitudepyc.htm?contextscope=all#simaker-modulatedamplitudesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:106
-msgid "PeriodicAmplitude"
-msgstr ""
-
 #: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude:1
 msgid "The PeriodicAmplitude object defines an amplitude curve using a Fourier series. The PeriodicAmplitude object is derived from the Amplitude object."
 msgstr ""
@@ -1967,10 +1956,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/PeriodicAmplitude.py:docstring of abaqus.Amplitude.PeriodicAmplitude.PeriodicAmplitude.setValues:4
 msgid "Check `PeriodicAmplitude.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-periodicamplitudepyc.htm?contextscope=all#simaker-periodicamplitudesetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/amplitude.rst:116
-msgid "PsdDefinition"
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/PsdDefinition.py:docstring of abaqus.Amplitude.PsdDefinition.PsdDefinition:1
@@ -2046,10 +2031,6 @@ msgstr ""
 msgid "Check `PsdDefinition.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-psddefinitionpyc.htm?contextscope=all#simaker-psddefinitionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/amplitude.rst:126
-msgid "SmoothStepAmplitude"
-msgstr ""
-
 #: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude:1
 msgid "The SmoothStepAmplitude object defines an amplitude that ramps up or down smoothly from one data point to another. The SmoothStepAmplitude object is derived from the Amplitude object."
 msgstr ""
@@ -2077,10 +2058,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/SmoothStepAmplitude.py:docstring of abaqus.Amplitude.SmoothStepAmplitude.SmoothStepAmplitude.setValues:4
 msgid "Check `SmoothStepAmplitude.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-smoothstepamplitudepyc.htm?contextscope=all#simaker-smoothstepamplitudesetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/amplitude.rst:136
-msgid "SolutionDependentAmplitude"
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude:1
@@ -2134,10 +2111,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/SolutionDependentAmplitude.py:docstring of abaqus.Amplitude.SolutionDependentAmplitude.SolutionDependentAmplitude.setValues:4
 msgid "Check `SolutionDependentAmplitude.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-solutiondependentamplitudepyc.htm?contextscope=all#simaker-solutiondependentamplitudesetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/amplitude.rst:146
-msgid "SpectrumAmplitude"
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude:1
@@ -2227,10 +2200,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/SpectrumAmplitude.py:docstring of abaqus.Amplitude.SpectrumAmplitude.SpectrumAmplitude.setValues:4
 msgid "Check `SpectrumAmplitude.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-spectrumamplitudepyc.htm?contextscope=all#simaker-spectrumamplitudesetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/amplitude.rst:156
-msgid "TabularAmplitude"
 msgstr ""
 
 #: ../../../../src/abaqus/Amplitude/TabularAmplitude.py:docstring of abaqus.Amplitude.TabularAmplitude.TabularAmplitude:1

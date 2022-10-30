@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,16 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/model/part.rst:3
-#: ../../reference/mdb/model/part.rst:29
+#: ../../reference/mdb/model/part.md:1
 msgid "Part"
 msgstr ""
 
-#: ../../reference/mdb/model/part.rst:5
+#: ../../reference/mdb/model/part.md:3
 msgid "Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operations. Part commands create Feature objects on only the Part object. The commands that create Feature objects on only the rootAssembly object are described in Assembly commands. The commands that create Feature objects on both the Part and the rootAssembly objects are described in Feature commands."
 msgstr ""
 
-#: ../../reference/mdb/model/part.rst:9
+#: ../../reference/mdb/model/part.md:5
 msgid "Create parts"
 msgstr ""
 
@@ -571,6 +570,19 @@ msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid "This method modifies the Model object."
+msgstr ""
+
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart:1
+#: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart:1
+#: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile:1
+#: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb:1
+#: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.Part.Part:1
+#: ../../../../src/abaqus/Part/PartBase.py:docstring of abaqus.Part.PartBase.PartBase:1
+#: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature:1
+#: ../../../../src/abaqus/Part/PartModel.py:docstring of abaqus.Part.PartModel.PartModel:1
+#: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart:1
+#: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart:1
+msgid "Member Details:"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.Node:4
@@ -4226,8 +4238,8 @@ msgstr ""
 msgid ":raises Cannot export orphan mesh parts` to :class:`VDA-FS: If the part is an orphan mesh part."
 msgstr ""
 
-#: ../../reference/mdb/model/part.rst:26
-msgid "Classes"
+#: ../../reference/mdb/model/part.md:25
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Part/Part.py:docstring of abaqus.Part.Part.Part:1
@@ -4986,10 +4998,6 @@ msgstr ""
 msgid "This command deletes the given surfaces from the part."
 msgstr ""
 
-#: ../../reference/mdb/model/part.rst:39
-msgid "PartFeature"
-msgstr ""
-
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature:1
 msgid "Bases: :py:class:`~abaqus.Feature.Feature.Feature`"
 msgstr ""
@@ -5252,7 +5260,7 @@ msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:17
-msgid "A Float specifying the revolve angle in degrees. Possible values are 0 ≤ **angle** ≤ 360.Note:If **pitch** >> 0, there is no upper limit for **angle**."
+msgid "A Float specifying the revolve angle in degrees. Possible values are 0 ≤ **angle** ≤ 360. Note: If **pitch** > 0, there is no upper limit for **angle**."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseShellRevolve:20
@@ -5329,7 +5337,7 @@ msgid "Check `BaseSolidRevolve on help.3ds.com/2022 <https://help.3ds.com/2022/E
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseSolidRevolve:17
-msgid "A Float specifying the revolve angle in degrees. Possible values are 10-4 ≤ **angle** ≤ 360.Note:If **pitch** >>0, there is no upper limit for **angle**."
+msgid "A Float specifying the revolve angle in degrees. Possible values are 10-4 ≤ **angle** ≤ 360. Note: If **pitch** > 0, there is no upper limit for **angle**."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.BaseSolidSweep:1
@@ -5489,7 +5497,7 @@ msgid "A Float specifying the extrusion depth. If **depth** is specified, the cu
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.CutExtrude:32
-msgid "A Face specifying the face up to which to cut. If **upToFace** is specified, the cut will be an up-to-face cut. The default is to not specify a face.Note:If neither **depth** nor **upToFace** is specified, the cut will be a through-all cut."
+msgid "A Face specifying the face up to which to cut. If **upToFace** is specified, the cut will be an up-to-face cut. The default is to not specify a face. Note: If neither **depth** nor **upToFace** is specified, the cut will be a through-all cut."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.CutExtrude:49
@@ -5528,7 +5536,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.CutLoft:36
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.ShellLoft:36
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.SolidLoft:35
-msgid "A Float specifying the magnitude of the **startTangent**. You must specify the **startMagnitude** argument if **startCondition** = SPECIFIED. Possible values are 0.0 << **startMagnitude** << 100.0."
+msgid "A Float specifying the magnitude of the **startTangent**. You must specify the **startMagnitude** argument if **startCondition** = SPECIFIED. Possible values are 0.0 < **startMagnitude** < 100.0."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.CutLoft:40
@@ -5540,7 +5548,7 @@ msgstr ""
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.CutLoft:44
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.ShellLoft:44
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.SolidLoft:43
-msgid "A Float specifying the magnitude of the **endTangent**. This argument is to be used when the **endCondition** argument has the value SPECIFIED. Possible values are 0.0 << **endMagnitude** << 100.0."
+msgid "A Float specifying the magnitude of the **endTangent**. This argument is to be used when the **endCondition** argument has the value SPECIFIED. Possible values are 0.0 < **endMagnitude** < 100.0."
 msgstr ""
 
 #: ../../../../src/abaqus/Part/PartFeature.py:docstring of abaqus.Part.PartFeature.PartFeature.CutLoft:48
@@ -6167,10 +6175,6 @@ msgstr ""
 msgid "A Boolean specifying the behavior of Abaqus when the points defining a spline wire form a closed loop (the start and end points are the same). If **smoothClosedSpline** = ON, Abaqus creates a smooth spline wire where the tangencies at the end point meet smoothly. If **smoothClosedSpline** = OFF, Abaqus does not automatically create a smooth end condition. The default value in OFF."
 msgstr ""
 
-#: ../../reference/mdb/model/part.rst:49
-msgid "MeshEditPart"
-msgstr ""
-
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart:1
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart:1
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart:1
@@ -6514,7 +6518,7 @@ msgid "A single MeshEdge object specifying the element edge to split."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitMeshEdge:10
-msgid "A Float specifying the normalized distance along **edge** at which to split. Possible values are 0.0 << **parameter** << 1.0. The default value is 0.5."
+msgid "A Float specifying the normalized distance along **edge** at which to split. Possible values are 0.0 < **parameter** < 1.0. The default value is 0.5."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:4
@@ -6555,10 +6559,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.wrapMesh:7
 msgid "A Float specifying the radius of the cylinder about which the part is to be wrapped. The wrapping procedure will relocate a node at point (xx, yy) on the planar mesh to (x,θ,zx,θ,z), where rr is the specified radius, θθ = xrxr, and zz=yy."
-msgstr ""
-
-#: ../../reference/mdb/model/part.rst:60
-msgid "MeshPart"
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart:10
@@ -7230,7 +7230,7 @@ msgid "A SymbolicConstant specifying whether single- or double-biased seed distr
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:14
-msgid "A sequence of Edge objects specifying the edges to seed. The smallest elements will be positioned near the end where the normalized curve parameter=0.0. You must provide either the **end1Edges** or the **end2Edges** argument or both when **biasMethod** = SINGLE and omit both of them when **biasMethod** = DOUBLE.Note:You can determine which end is which by the order of the vertex indices returned by [getVertices()](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc)."
+msgid "A sequence of Edge objects specifying the edges to seed. The smallest elements will be positioned near the end where the normalized curve parameter=0.0. You must provide either the **end1Edges** or the **end2Edges** argument or both when **biasMethod** = SINGLE and omit both of them when **biasMethod** = DOUBLE. Note: You can determine which end is which by the order of the vertex indices returned by [getVertices()](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all#simaker-edgegetverticespyc)."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:21
@@ -7259,7 +7259,7 @@ msgid "A Float specifying the desired smallest element size."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:40
-msgid "A Float specifying the desired largest element size.Note:You must specify either the **ratio** and **number** or **minSize** and **maxSize** pair of arguments."
+msgid "A Float specifying the desired largest element size. Note: You must specify either the **ratio** and **number** or **minSize** and **maxSize** pair of arguments."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:43
@@ -7335,7 +7335,7 @@ msgid "Check `MeshPart.setBoundaryLayerControls on help.3ds.com/2022 <https://he
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:11
-msgid "A Float specifying the height of the first element layer off boundary. Possible values are 0.0 << **firstElemSize** ≤ 106."
+msgid "A Float specifying the height of the first element layer off boundary. Possible values are 0.0 < **firstElemSize** ≤ 106."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:14
@@ -7363,7 +7363,7 @@ msgid "A sequence of ConstrainedSketchGeometry regions or MeshElement objects, o
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setElementType:11
-msgid "A sequence of ElemType objects, one for each element shape applicable to the regions.Note:If an ElemType object has an UNKNOWN_*xxx* value for **elemCode**, its order will be deduced from the order of other valid ElemType objects within the same setElementType command. If no valid ElemType objects can be found, the order will remain unchanged."
+msgid "A sequence of ElemType objects, one for each element shape applicable to the regions. Note: If an ElemType object has an UNKNOWN_*xxx* value for **elemCode**, its order will be deduced from the order of other valid ElemType objects within the same setElementType command. If no valid ElemType objects can be found, the order will remain unchanged."
 msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.setElementType:17
@@ -7608,10 +7608,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Mesh/MeshPart.py:docstring of abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality:69
 msgid ":class:`Dict[str`, :class:`int | float`, :class:`MeshElement]`"
-msgstr ""
-
-#: ../../reference/mdb/model/part.rst:71
-msgid "PropertyPart"
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.CompositeLayup:9
@@ -7860,10 +7856,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart.unassignRebarOrientation:12
 msgid "An Int specifying the number of the rebar reference orientation assignment to be deleted."
-msgstr ""
-
-#: ../../reference/mdb/model/part.rst:82
-msgid "RegionPart"
 msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart:1
@@ -8189,10 +8181,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Region/RegionPart.py:docstring of abaqus.Region.RegionPart.RegionPart.Surface:101
 msgid ":class:`Surface`"
-msgstr ""
-
-#: ../../reference/mdb/model/part.rst:93
-msgid "AcisFile"
 msgstr ""
 
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile:1
@@ -8554,10 +8542,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Part/AcisFile.py:docstring of abaqus.Part.AcisFile.AcisFile.writeAcisFile:4
 msgid "Check `AcisFile.writeAcisFile on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-acisfilepyc.htm?contextscope=all#simaker-acisfilewriteacisfilepyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/part.rst:103
-msgid "AcisMdb"
 msgstr ""
 
 #: ../../../../src/abaqus/Part/AcisMdb.py:docstring of abaqus.Part.AcisMdb.AcisMdb:1

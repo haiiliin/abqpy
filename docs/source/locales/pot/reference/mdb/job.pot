@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,17 +16,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/job.rst:3
-#: ../../reference/mdb/job.rst:35
+#: ../../reference/mdb/job.md:1
 msgid "Job"
 msgstr ""
 
-#: ../../reference/mdb/job.rst:5
+#: ../../reference/mdb/job.md:3
 #: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:1
 msgid "The Job object is the abstract base type for other Job objects. The Job object has no explicit constructor. The methods and members of the Job object are common to all objects derived from Job."
 msgstr ""
 
-#: ../../reference/mdb/job.rst:9
+#: ../../reference/mdb/job.md:5
 msgid "Create jobs"
 msgstr ""
 
@@ -100,7 +99,7 @@ msgstr ""
 #: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:25
 #: ../../docstring of abaqus.Job.Job.Job.queue:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.queue:1
-msgid "A String specifying the name of the queue to which to submit the job. The default value is an empty string.Note:You can use the **queue** argument when creating a Job object on a Windows workstation; however, remote queues are available only on Linux platforms."
+msgid "A String specifying the name of the queue to which to submit the job. The default value is an empty string. Note: You can use the **queue** argument when creating a Job object on a Windows workstation; however, remote queues are available only on Linux platforms."
 msgstr ""
 
 #: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:27
@@ -124,11 +123,14 @@ msgstr ""
 msgid "An Int specifying the number of minutes to wait before submitting the job. This argument is ignored if **queue** is set. The default value is 0.This argument works in conjunction with **waitHours**. **waitMinutes** and **atTime** are mutually exclusive."
 msgstr ""
 
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:35
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:23
 #: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:37
 #: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.__init__:37
 #: ../../docstring of abaqus.Job.Job.Job.atTime:1
+#: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.atTime:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.atTime:1
-msgid "A String specifying the time at which to submit the job. If **queue** is empty, the string syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be valid according to the system administrator. The default value is an empty string.Note:You can use the **atTime** argument when creating a Job object on a Windows workstation; however, the `at` command is available only on Linux platforms."
+msgid "A String specifying the time at which to submit the job. If **queue** is empty, the string syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be valid according to the system administrator. The default value is an empty string. Note: You can use the **atTime** argument when creating a Job object on a Windows workstation; however, the `at` command is available only on Linux platforms."
 msgstr ""
 
 #: ../../../../src/abaqus/Job/JobMdb.py:docstring of abaqus.Job.JobMdb.JobMdb.Job:43
@@ -182,7 +184,7 @@ msgstr ""
 #: ../../docstring of abaqus.Job.Job.Job.numCpus:1
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.numCpus:1
 #: ../../docstring of abaqus.Job.ModelJob.ModelJob.numCpus:1
-msgid "An Int specifying the number of CPUs to use for this analysis if parallel processing is available. Possible values are **numCpus** >> 0. The default value is 1."
+msgid "An Int specifying the number of CPUs to use for this analysis if parallel processing is available. Possible values are **numCpus** > 0. The default value is 1."
 msgstr ""
 
 #: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:50
@@ -313,7 +315,7 @@ msgstr ""
 msgid "Raises"
 msgstr ""
 
-#: ../../reference/mdb/job.rst:16
+#: ../../reference/mdb/job.md:13
 msgid "Create queues in Session"
 msgstr ""
 
@@ -407,12 +409,8 @@ msgstr ""
 msgid ":raises Directory in which` to :class:`run the job on the remote computer is not set: If **fileCopy** = ON and **directory** is empty."
 msgstr ""
 
-#: ../../reference/mdb/job.rst:22
-msgid "Features of the job"
-msgstr ""
-
-#: ../../reference/mdb/job.rst:25
-msgid "Coexecution"
+#: ../../reference/mdb/job.md:20
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:1
@@ -622,8 +620,19 @@ msgstr ""
 msgid "This method interrupts the execution of the script until the end of all the analyses."
 msgstr ""
 
+#: ../../../../src/abaqus/Job/Coexecution.py:docstring of abaqus.Job.Coexecution.Coexecution:1
+#: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job:1
+#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:1
+#: ../../../../src/abaqus/Job/Message.py:docstring of abaqus.Job.Message.Message:1
+#: ../../../../src/abaqus/Job/MessageArray.py:docstring of abaqus.Job.MessageArray.MessageArray:1
+#: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob:1
+#: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess:1
+#: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.atTime:1
-msgid "A String specifying the time at which to submit the co-execution. If **queue** is empty, the string syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be valid according to the system administrator. The default value is an empty string.Note:You can use the **atTime** argument when creating a Coexecution object on a Windows workstation; however, the `at` command is available only on Linux platforms."
+msgid "A String specifying the time at which to submit the co-execution. If **queue** is empty, the string syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be valid according to the system administrator. The default value is an empty string. Note: You can use the **atTime** argument when creating a Coexecution object on a Windows workstation; however, the `at` command is available only on Linux platforms."
 msgstr ""
 
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.licenseType:1
@@ -649,7 +658,7 @@ msgid "The `masterModel` attribute was changed to `mainModel`."
 msgstr ""
 
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.queue:1
-msgid "A String specifying the name of the queue to which to submit the co-execution. The default value is an empty string.Note:You can use the **queue** argument when creating a Coexecution object on a Windows workstation; however, remote queues are available only on Linux platforms."
+msgid "A String specifying the name of the queue to which to submit the co-execution. The default value is an empty string. Note: You can use the **queue** argument when creating a Coexecution object on a Windows workstation; however, remote queues are available only on Linux platforms."
 msgstr ""
 
 #: ../../docstring of abaqus.Job.Coexecution.Coexecution.secondaryAnalysisProducts:1
@@ -986,7 +995,7 @@ msgid "A SymbolicConstant specifying whether an analysis is decomposed into thre
 msgstr ""
 
 #: ../../docstring of abaqus.Job.Job.Job.numThreadsPerMpiProcess:1
-msgid "An Int specifying the number of threads per MPI process to use for this analysis if parallel processing is available. Possible values are **numThreadsPerMpiProcess** >> 0. The default value is 1."
+msgid "An Int specifying the number of threads per MPI process to use for this analysis if parallel processing is available. Possible values are **numThreadsPerMpiProcess** > 0. The default value is 1."
 msgstr ""
 
 #: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:64
@@ -1031,10 +1040,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Job/Job.py:docstring of abaqus.Job.Job.Job.waitForCompletion:1
 msgid "This method interrupts the execution of the script until the end of the analysis. If you call the waitForCompletion method and the **status** member is neither SUBMITTED nor RUNNING, Abaqus assumes the analysis has either completed or aborted and returns immediately."
-msgstr ""
-
-#: ../../reference/mdb/job.rst:45
-msgid "JobFromInputFile"
 msgstr ""
 
 #: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile:1
@@ -1174,13 +1179,7 @@ msgstr ""
 #: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:23
 #: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:11
 #: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.queue:1
-msgid "A String specifying the name of the queue to which to submit the job. The default value is an empty string.Note: You can use the **queue** argument when creating a Job object on a Windows workstation; however, remote queues are available only on Linux platforms."
-msgstr ""
-
-#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:35
-#: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:23
-#: ../../docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.atTime:1
-msgid "A String specifying the time at which to submit the job. If **queue** is empty, the string syntax must be valid for the Linux `at` command. If **queue** is set, the syntax must be valid according to the system administrator. The default value is an empty string.Note: You can use the **atTime** argument when creating a Job object on a Windows workstation; however, the `at` command is available only on Linux platforms."
+msgid "A String specifying the name of the queue to which to submit the job. The default value is an empty string. Note:  You can use the **queue** argument when creating a Job object on a Windows workstation; however, remote queues are available only on Linux platforms."
 msgstr ""
 
 #: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.__init__:64
@@ -1215,10 +1214,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Job/JobFromInputFile.py:docstring of abaqus.Job.JobFromInputFile.JobFromInputFile.setValues:4
 msgid "Check `JobFromInputFile.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-jobfrominputfilepyc.htm?contextscope=all#simaker-jobfrominputfilesetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/job.rst:55
-msgid "Message"
 msgstr ""
 
 #: ../../../../src/abaqus/Job/Message.py:docstring of abaqus.Job.Message.Message:1
@@ -1339,14 +1334,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.Job.Message.Message.type:25
 msgid "WARNING"
-msgstr ""
-
-#: ../../reference/mdb/job.rst:65
-msgid "MessageArray"
-msgstr ""
-
-#: ../../reference/mdb/job.rst:75
-msgid "ModelJob"
 msgstr ""
 
 #: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob:1
@@ -1521,10 +1508,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Job/ModelJob.py:docstring of abaqus.Job.ModelJob.ModelJob.writeInput:7
 msgid "A Boolean specifying whether to perform consistency checking for the job. The default value is ON.It is not recommended to turn the consistency checking off unless you are absolutely sure the model is consistent."
-msgstr ""
-
-#: ../../reference/mdb/job.rst:85
-msgid "OptimizationProcess"
 msgstr ""
 
 #: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess:1
@@ -1765,10 +1748,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Job/OptimizationProcess.py:docstring of abaqus.Job.OptimizationProcess.OptimizationProcess.submit:7
 msgid "A Boolean specifying whether Abaqus should perform the validation of the optimization process only. The default value is False."
-msgstr ""
-
-#: ../../reference/mdb/job.rst:95
-msgid "Queue"
 msgstr ""
 
 #: ../../../../src/abaqus/Job/Queue.py:docstring of abaqus.Job.Queue.Queue:1
