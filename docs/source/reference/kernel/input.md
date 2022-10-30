@@ -13,7 +13,7 @@ The inpParser module provides functions that allow you to parse an Abaqus input 
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.InputFileParser.AbaqusNDarray.AbaqusNDarray
         :members:

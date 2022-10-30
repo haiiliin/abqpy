@@ -6,7 +6,7 @@ Messaging commands are available only if Abaqus/CAE is run interactively using t
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Messaging.DataObject.DataObject
         :members:
