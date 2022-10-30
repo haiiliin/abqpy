@@ -6,7 +6,7 @@ Mesh commands are used to mesh part instances and regions. Mesh commands are als
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Mesh.MeshAssembly.MeshAssembly
         :members:

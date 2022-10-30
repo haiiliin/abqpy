@@ -24,7 +24,7 @@ step/step_miscellaneous
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Step.Step.Step
         :members:

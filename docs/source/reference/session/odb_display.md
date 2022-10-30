@@ -6,7 +6,7 @@ Odb display commands are used to store the context of an output database for a v
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.OdbDisplay.CommonOptions.CommonOptions
         :members:
