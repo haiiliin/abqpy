@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,20 +16,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/session/print.rst:3
+#: ../../reference/session/print.md:1
 msgid "Print"
 msgstr ""
 
-#: ../../reference/session/print.rst:5
+#: ../../reference/session/print.md:3
 msgid "The print commands are used to print selected canvas objects to a file or to a Windows or PostScript printer and to control the format of the printed output."
 msgstr ""
 
-#: ../../reference/session/print.rst:8
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/session/print.rst:11
-msgid "EpsOptions"
+#: ../../reference/session/print.md:5
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Print/EpsOptions.py:docstring of abaqus.Print.EpsOptions.EpsOptions:1
@@ -149,6 +145,15 @@ msgstr ""
 msgid "This method modifies the _OptionsBase object."
 msgstr ""
 
+#: ../../../../src/abaqus/Print/EpsOptions.py:docstring of abaqus.Print.EpsOptions.EpsOptions:1
+#: ../../../../src/abaqus/Print/PageSetupOptions.py:docstring of abaqus.Print.PageSetupOptions.PageSetupOptions:1
+#: ../../../../src/abaqus/Print/PngOptions.py:docstring of abaqus.Print.PngOptions.PngOptions:1
+#: ../../../../src/abaqus/Print/PrintOptions.py:docstring of abaqus.Print.PrintOptions.PrintOptions:1
+#: ../../../../src/abaqus/Print/PsOptions.py:docstring of abaqus.Print.PsOptions.PsOptions:1
+#: ../../../../src/abaqus/Print/SvgOptions.py:docstring of abaqus.Print.SvgOptions.SvgOptions:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/Print/EpsOptions.py:docstring of abaqus.Print.EpsOptions.EpsOptions.setValues:20
 #: ../../../../src/abaqus/Print/PsOptions.py:docstring of abaqus.Print.PsOptions.PsOptions.setValues:45
 #: ../../docstring of abaqus.Print.EpsOptions.EpsOptions.fontType:1
@@ -164,7 +169,7 @@ msgstr ""
 #: ../../../../src/abaqus/Print/EpsOptions.py:docstring of abaqus.Print.EpsOptions.EpsOptions.setValues:7
 #: ../../docstring of abaqus.Print.EpsOptions.EpsOptions.imageSize:1
 #: ../../docstring of abaqus.Print.PageSetupOptions.PageSetupOptions.imageSize:1
-msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the width and height of the image in the units specified by **units**. Possible numeric values are **imageSize** ≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value of width and height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 inches)."
+msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Floats specifying the width and height of the image in the units specified by **units**. Possible numeric values are **imageSize** ≥ (*minWidth*, **minHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum value of width and height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 inches)."
 msgstr ""
 
 #: ../../../../src/abaqus/Print/EpsOptions.py:docstring of abaqus.Print.EpsOptions.EpsOptions.setValues:16
@@ -207,10 +212,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Print/EpsOptions.py:docstring of abaqus.Print.EpsOptions.EpsOptions.setValues:31
 msgid "If either element of **imageSize** is out of range."
-msgstr ""
-
-#: ../../reference/session/print.rst:21
-msgid "PageSetupOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PageSetupOptions.py:docstring of abaqus.Print.PageSetupOptions.PageSetupOptions:1
@@ -355,7 +356,7 @@ msgid "Check `PageSetupOptions.setValues on help.3ds.com/2018 <https://help.3ds.
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PageSetupOptions.py:docstring of abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:7
-msgid "A SymbolicConstant or a pair of Floats specifying the size of the printed image in the currently selected units (inches or millimeters). Possible values are FIT_TO_PAGE and SIZE_ON_SCREEN. The default value is FIT_TO_PAGE.Note:The minimum value of width and height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 inches)."
+msgid "A SymbolicConstant or a pair of Floats specifying the size of the printed image in the currently selected units (inches or millimeters). Possible values are FIT_TO_PAGE and SIZE_ON_SCREEN. The default value is FIT_TO_PAGE. Note: The minimum value of width and height (*minWidth* and **minHeight**) is 10 mm (approximately 0.4 inches)."
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PageSetupOptions.py:docstring of abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:12
@@ -381,10 +382,6 @@ msgstr ""
 #: ../../../../src/abaqus/Print/PageSetupOptions.py:docstring of abaqus.Print.PageSetupOptions.PageSetupOptions.setValues:41
 #: ../../../../src/abaqus/Print/PsOptions.py:docstring of abaqus.Print.PsOptions.PsOptions.setValues:58
 msgid "If **topMargin** + **bottomMargin** is out of range."
-msgstr ""
-
-#: ../../reference/session/print.rst:31
-msgid "PngOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PngOptions.py:docstring of abaqus.Print.PngOptions.PngOptions:1
@@ -427,10 +424,6 @@ msgstr ""
 #: ../../../../src/abaqus/Print/PngOptions.py:docstring of abaqus.Print.PngOptions.PngOptions.setValues:18
 #: ../../../../src/abaqus/Print/SvgOptions.py:docstring of abaqus.Print.SvgOptions.SvgOptions.setValues:17
 msgid ":raises (minWidth`, :class:`minHeight) <= (width`, :class:`height) <= (maxWidth`, :class:`maxHeight): If either the width or height arguments of **imageSize** are out of range (where     **minWidth** and **minHeight** are the number of pixels corresponding to approximately 10 mm     for a given display and **maxWidth** and **maxHeight** are the largest allowable number of     pixels supported by the system graphics)."
-msgstr ""
-
-#: ../../reference/session/print.rst:41
-msgid "PrintOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PrintOptions.py:docstring of abaqus.Print.PrintOptions.PrintOptions:1
@@ -546,10 +539,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Print/PrintOptions.py:docstring of abaqus.Print.PrintOptions.PrintOptions.setValues:16
 msgid "A Boolean specifying whether the output includes the view compass The default value is OFF."
-msgstr ""
-
-#: ../../reference/session/print.rst:51
-msgid "PsOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/Print/PsOptions.py:docstring of abaqus.Print.PsOptions.PsOptions:1
@@ -720,10 +709,6 @@ msgstr ""
 msgid "A Float specifying the top margin of the paper in inches. Possible values are **topMargin** ≥ 0. The default value is 0.5."
 msgstr ""
 
-#: ../../reference/session/print.rst:61
-msgid "SvgOptions"
-msgstr ""
-
 #: ../../../../src/abaqus/Print/SvgOptions.py:docstring of abaqus.Print.SvgOptions.SvgOptions:1
 msgid "The SvgOptions object stores the settings that Abaqus uses when printing in SVG format. The SvgOptions object has no constructor. Abaqus creates the **svgOptions** member when a session is started."
 msgstr ""
@@ -747,7 +732,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Print/SvgOptions.py:docstring of abaqus.Print.SvgOptions.SvgOptions.setValues:7
 #: ../../docstring of abaqus.Print.SvgOptions.SvgOptions.imageSize:1
-msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of the image in pixels. Possible values are (*minWidth*, **minHeight** ) ≤ **imageSize** ≤ (*maxWidth* and **maxHeight**). The default value is SIZE_ON_SCREEN.Note:The minimum value of width and height (*minWidth* and **minHeight**) is the number of pixels that occupy 10 mm at the current screen resolution. The value is typically around 50 pixels and may be different for width and height.The maximum value of width and height (*maxWidth* and **maxHeight**) is the largest number of pixels supported by the system graphics and will be at least as large as the screen dimensions."
+msgid "The SymbolicConstant SIZE_ON_SCREEN or a pair of Ints specifying the width and height of the image in pixels. Possible values are (*minWidth*, **minHeight** ) ≤ **imageSize** ≤ (*maxWidth* and **maxHeight**). The default value is SIZE_ON_SCREEN. Note: The minimum value of width and height (*minWidth* and **minHeight**) is the number of pixels that occupy 10 mm at the current screen resolution. The value is typically around 50 pixels and may be different for width and height.The maximum value of width and height (*maxWidth* and **maxHeight**) is the largest number of pixels supported by the system graphics and will be at least as large as the screen dimensions."
 msgstr ""
 
 #: ../../../../src/abaqus/Print/SvgOptions.py:docstring of abaqus.Print.SvgOptions.SvgOptions.setValues:4

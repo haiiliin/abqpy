@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,16 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/model/assembly.rst:3
-#: ../../reference/mdb/model/assembly.rst:23
+#: ../../reference/mdb/model/assembly.md:1
 msgid "Assembly"
 msgstr ""
 
-#: ../../reference/mdb/model/assembly.rst:5
+#: ../../reference/mdb/model/assembly.md:3
 msgid "Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operations. Assembly commands create Feature objects on only the rootAssembly object. The commands that create Feature objects on only the Part object are described in Part commands. The commands that create Feature objects on both the Part and the rootAssembly objects are described in Feature commands."
 msgstr ""
 
-#: ../../reference/mdb/model/assembly.rst:9
+#: ../../reference/mdb/model/assembly.md:5
 msgid "Create instances"
 msgstr ""
 
@@ -85,6 +84,18 @@ msgstr ""
 
 #: ../../None:5:<autosummary>:1
 msgid "This method links the selected PartInstance objects to the corresponding PartInstance objects from the specified models."
+msgstr ""
+
+#: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly:1
+#: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase:1
+#: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature:1
+#: ../../../../src/abaqus/Assembly/AssemblyModel.py:docstring of abaqus.Assembly.AssemblyModel.AssemblyModel:1
+#: ../../../../src/abaqus/Assembly/ConnectorOrientation.py:docstring of abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:1
+#: ../../../../src/abaqus/Assembly/ConnectorOrientationArray.py:docstring of abaqus.Assembly.ConnectorOrientationArray.ConnectorOrientationArray:1
+#: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance:1
+#: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance:1
+#: ../../../../src/abaqus/Assembly/PartInstanceArray.py:docstring of abaqus.Assembly.PartInstanceArray.PartInstanceArray:1
+msgid "Member Details:"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly.ConnectorOrientation:4
@@ -289,8 +300,8 @@ msgstr ""
 msgid "A tuple of tuples containing the instance name to be linked and the corresponding PartInstance object to which it will be linked."
 msgstr ""
 
-#: ../../reference/mdb/model/assembly.rst:20
-msgid "Classes"
+#: ../../reference/mdb/model/assembly.md:17
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/Assembly.py:docstring of abaqus.Assembly.Assembly.Assembly:1
@@ -1995,10 +2006,6 @@ msgstr ""
 msgid ":class:`ConnectorOrientation`"
 msgstr ""
 
-#: ../../reference/mdb/model/assembly.rst:33
-msgid "AssemblyBase"
-msgstr ""
-
 #: ../../../../src/abaqus/Assembly/AssemblyBase.py:docstring of abaqus.Assembly.AssemblyBase.AssemblyBase:1
 msgid "Bases: :py:class:`~abaqus.Assembly.AssemblyFeature.AssemblyFeature`"
 msgstr ""
@@ -2573,10 +2580,6 @@ msgstr ""
 msgid "A Bool specifying whether to update the path of the CAD model file specified in the **parameterFile** to the current directory, if the CAD model is present in the current directory."
 msgstr ""
 
-#: ../../reference/mdb/model/assembly.rst:43
-msgid "ConnectorOrientation"
-msgstr ""
-
 #: ../../../../src/abaqus/Assembly/ConnectorOrientation.py:docstring of abaqus.Assembly.ConnectorOrientation.ConnectorOrientation:1
 #: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance:1
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance:1
@@ -2650,14 +2653,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/ConnectorOrientation.py:docstring of abaqus.Assembly.ConnectorOrientation.ConnectorOrientation.__init__:10
 msgid "Check `ConnectorOrientation.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-connectororientationpyc.htm?contextscope=all#simaker-connectororientation__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/assembly.rst:53
-msgid "ConnectorOrientationArray"
-msgstr ""
-
-#: ../../reference/mdb/model/assembly.rst:63
-msgid "AssemblyFeature"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/AssemblyFeature.py:docstring of abaqus.Assembly.AssemblyFeature.AssemblyFeature:1
@@ -2860,10 +2855,6 @@ msgstr ""
 msgid "Check `ParallelFace on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-parallelfacepyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/assembly.rst:73
-msgid "ModelInstance"
-msgstr ""
-
 #: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance:1
 msgid "A :py:class:`~abaqus.Assembly.ModelInstance.ModelInstance` object is an instance of a Model."
 msgstr ""
@@ -3025,10 +3016,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/ModelInstance.py:docstring of abaqus.Assembly.ModelInstance.ModelInstance.translate:4
 msgid "Check `ModelInstance.translate on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelinstancepyc.htm?contextscope=all#simaker-modelinstancetranslatepyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/assembly.rst:83
-msgid "PartInstance"
 msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance:1
@@ -3608,8 +3595,4 @@ msgstr ""
 
 #: ../../../../src/abaqus/Assembly/PartInstance.py:docstring of abaqus.Assembly.PartInstance.PartInstance.translateTo:16
 msgid "A sequence of three Floats specifying a translation vector. If this argument is specified, the movable instance will be translated by the specified amount without solving for the actual contact."
-msgstr ""
-
-#: ../../reference/mdb/model/assembly.rst:93
-msgid "PartInstanceArray"
 msgstr ""

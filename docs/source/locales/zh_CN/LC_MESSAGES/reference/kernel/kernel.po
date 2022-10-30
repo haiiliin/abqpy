@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/kernel/kernel.rst:3
+#: ../../reference/kernel/kernel.md:1
 msgid "Custom Kernel"
 msgstr ""
 
-#: ../../reference/kernel/kernel.rst:6
+#: ../../reference/kernel/kernel.md:3
 msgid ""
 "The customKernel module augments the mdb, odb, and session objects with "
 "an object called customData. The customData object can contain custom "
@@ -31,16 +31,16 @@ msgid ""
 "in this section."
 msgstr ""
 
-#: ../../reference/kernel/kernel.rst:8
+#: ../../reference/kernel/kernel.md:5
 msgid ""
 "All objects that you create under the mdb.customData and "
-"odb[odbName].customData object will be stored in the Abaqus/CAE model and"
-" output database, respectively, when you save the database; all objects "
-"that you create under the session.customData object will be lost when you"
-" exit Abaqus/CAE."
+"odb\\[odbName\\].customData object will be stored in the Abaqus/CAE model"
+" and output database, respectively, when you save the database; all "
+"objects that you create under the session.customData object will be lost "
+"when you exit Abaqus/CAE."
 msgstr ""
 
-#: ../../reference/kernel/kernel.rst:10
+#: ../../reference/kernel/kernel.md:7
 msgid ""
 "The customData object is an instance of the RepositorySupport class; for "
 "more information, see RepositorySupport. The classes described in this "
@@ -52,12 +52,8 @@ msgid ""
 "kernel data from the GUI."
 msgstr ""
 
-#: ../../reference/kernel/kernel.rst:14
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/kernel/kernel.rst:17
-msgid "CommandRegister"
+#: ../../reference/kernel/kernel.md:9
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.CustomKernel.CommandRegister.CommandRegister:1 of
@@ -90,7 +86,8 @@ msgstr ""
 #: abaqus.CustomKernel.CommandRegister.CommandRegister
 #: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary
 #: abaqus.CustomKernel.RegisteredList.RegisteredList
-#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple of
+#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple
+#: abaqus.CustomKernel.RepositorySupport.RepositorySupport of
 msgid "Public Methods:"
 msgstr ""
 
@@ -98,6 +95,14 @@ msgstr ""
 msgid ""
 ":py:obj:`__init__ "
 "<abaqus.CustomKernel.CommandRegister.CommandRegister.__init__>`\\ \\(\\)"
+msgstr ""
+
+#: abaqus.CustomKernel.CommandRegister.CommandRegister:1
+#: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:1
+#: abaqus.CustomKernel.RegisteredList.RegisteredList:1
+#: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:1
+#: abaqus.CustomKernel.RepositorySupport.RepositorySupport:1 of
+msgid "Member Details:"
 msgstr ""
 
 #: abaqus.CustomKernel.CommandRegister.CommandRegister.__init__:5
@@ -130,10 +135,6 @@ msgstr ""
 
 #: abaqus.CustomKernel.CommandRegister.CommandRegister.__init__:10 of
 msgid ":class:`CommandRegister`"
-msgstr ""
-
-#: ../../reference/kernel/kernel.rst:27
-msgid "RegisteredDictionary"
 msgstr ""
 
 #: abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:1 of
@@ -485,10 +486,6 @@ msgstr ""
 msgid "A String or an integer specifying the new name for the key."
 msgstr ""
 
-#: ../../reference/kernel/kernel.rst:37
-msgid "RegisteredList"
-msgstr ""
-
 #: abaqus.CustomKernel.RegisteredList.RegisteredList:1 of
 msgid ""
 "Bases: :py:class:`~abaqus.CustomKernel.CommandRegister.CommandRegister`, "
@@ -758,10 +755,6 @@ msgstr ""
 msgid ":class:`RegisteredList`"
 msgstr ""
 
-#: ../../reference/kernel/kernel.rst:47
-msgid "RegisteredTuple"
-msgstr ""
-
 #: abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:1 of
 msgid ""
 "Bases: :py:class:`~abaqus.CustomKernel.CommandRegister.CommandRegister`, "
@@ -920,8 +913,8 @@ msgstr ""
 msgid ":class:`RegisteredTuple`"
 msgstr ""
 
-#: ../../reference/kernel/kernel.rst:57
-msgid "RepositorySupport"
+#: abaqus.CustomKernel.RepositorySupport.RepositorySupport:1 of
+msgid "Bases: :py:class:`~abaqus.CustomKernel.CommandRegister.CommandRegister`"
 msgstr ""
 
 #: abaqus.CustomKernel.RepositorySupport.RepositorySupport:1 of
@@ -937,6 +930,29 @@ msgstr ""
 msgid ""
 "Check `RepositorySupport on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repositorysupportpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`__init__ "
+"<abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__>`\\ "
+"\\(\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+#: abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:1 of
+msgid "This method creates a RepositorySupport object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ""
+":py:obj:`Repository "
+"<abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository>`\\ "
+"\\(name\\, constructors\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method installs a repository on the class."
 msgstr ""
 
 #: abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository:1 of
@@ -963,10 +979,6 @@ msgstr ""
 msgid ""
 "A constructor or sequence of constructors specifying which classes will "
 "store their instances in the repository."
-msgstr ""
-
-#: abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:1 of
-msgid "This method creates a RepositorySupport object."
 msgstr ""
 
 #: abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:8 of
@@ -1651,5 +1663,34 @@ msgstr ""
 #~ msgid ""
 #~ ":py:obj:`__class_getitem__ "
 #~ "<abaqus.CustomKernel.RegisteredTuple.RegisteredTuple.__class_getitem__>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All objects that you create under "
+#~ "the mdb.customData and odb[odbName].customData "
+#~ "object will be stored in the "
+#~ "Abaqus/CAE model and output database, "
+#~ "respectively, when you save the "
+#~ "database; all objects that you create"
+#~ " under the session.customData object will"
+#~ " be lost when you exit Abaqus/CAE."
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "CommandRegister"
+#~ msgstr ""
+
+#~ msgid "RegisteredDictionary"
+#~ msgstr ""
+
+#~ msgid "RegisteredList"
+#~ msgstr ""
+
+#~ msgid "RegisteredTuple"
+#~ msgstr ""
+
+#~ msgid "RepositorySupport"
 #~ msgstr ""
 

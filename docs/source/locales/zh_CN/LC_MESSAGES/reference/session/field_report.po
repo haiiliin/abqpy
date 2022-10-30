@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/session/field_report.rst:3
+#: ../../reference/session/field_report.md:1
 msgid "FieldReport"
 msgstr ""
 
-#: ../../reference/session/field_report.rst:5
+#: ../../reference/session/field_report.md:3
 msgid ""
 "Field report commands are used to write a field output report and free "
 "body computational results to an ASCII file."
 msgstr ""
 
-#: ../../reference/session/field_report.rst:9
+#: ../../reference/session/field_report.md:5
 msgid "Create field reports in Session"
 msgstr ""
 
@@ -920,6 +920,14 @@ msgid ""
 "output database. For example::."
 msgstr ""
 
+#: abaqus.FieldReport.FieldReportOptions.FieldReportOptions:1
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession:1
+#: abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:1
+#: abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:1
+#: abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:1 of
+msgid "Member Details:"
+msgstr ""
+
 #: abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:4
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:4
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:4
@@ -1149,12 +1157,8 @@ msgid ""
 "from which data will be read."
 msgstr ""
 
-#: ../../reference/session/field_report.rst:20
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/session/field_report.rst:23
-msgid "FieldReportOptions"
+#: ../../reference/session/field_report.md:17
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.FieldReport.FieldReportOptions.FieldReportOptions:1
@@ -1336,10 +1340,6 @@ msgstr ""
 msgid ":class:`FieldReportOptions`"
 msgstr ""
 
-#: ../../reference/session/field_report.rst:33
-msgid "FreeBodyReportOptions"
-msgstr ""
-
 #: abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:1 of
 msgid ""
 "The FreeBodyReportOptions object stores settings used by the "
@@ -1420,10 +1420,6 @@ msgstr ""
 #: abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:23
 #: of
 msgid ":class:`FreeBodyReportOptions`"
-msgstr ""
-
-#: ../../reference/session/field_report.rst:43
-msgid "OdbFieldVarList"
 msgstr ""
 
 #: abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:1 of
@@ -1741,10 +1737,6 @@ msgstr ""
 msgid ":py:obj:`_is_protocol <typing.Generic._is_protocol>`\\"
 msgstr ""
 
-#: ../../reference/session/field_report.rst:53
-msgid "OdbModelFieldVarList"
-msgstr ""
-
 #: abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:1 of
 msgid ""
 "The read-only OdbModelFieldVarList object lists all variables available "
@@ -1755,10 +1747,6 @@ msgstr ""
 msgid ""
 "Check `OdbModelFieldVarList on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbmodelfieldvarlistpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../reference/session/field_report.rst:63
-msgid "writeFieldReport"
 msgstr ""
 
 #: abaqus.FieldReport.writeFieldReport.writeFieldReport:1 of
@@ -1795,10 +1783,6 @@ msgid ""
 " (fraction = 1.0)'}    If this element is omitted, data are written for "
 "all section points (if applicable).   If this element is omitted, data "
 "are written for all section points (if applicable)."
-msgstr ""
-
-#: ../../reference/session/field_report.rst:71
-msgid "writeFreeBodyReport"
 msgstr ""
 
 #: abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:9 of
@@ -2271,5 +2255,26 @@ msgstr ""
 #~ msgid ""
 #~ ":py:obj:`_is_protocol "
 #~ "<abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList._is_protocol>`\\"
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "FieldReportOptions"
+#~ msgstr ""
+
+#~ msgid "FreeBodyReportOptions"
+#~ msgstr ""
+
+#~ msgid "OdbFieldVarList"
+#~ msgstr ""
+
+#~ msgid "OdbModelFieldVarList"
+#~ msgstr ""
+
+#~ msgid "writeFieldReport"
+#~ msgstr ""
+
+#~ msgid "writeFreeBodyReport"
 #~ msgstr ""
 

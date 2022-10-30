@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/model/sketcher.rst:3
+#: ../../reference/mdb/model/sketcher.md:1
 msgid "Sketcher"
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:5
+#: ../../reference/mdb/model/sketcher.md:3
 msgid "Sketcher commands are used to define the entities, such as the geometry, constraints, and dimensions, to create a sketch and to store the values and attributes associated with a particular sketch."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:9
+#: ../../reference/mdb/model/sketcher.md:5
 msgid "Create constrained sketches"
 msgstr ""
 
@@ -581,6 +581,55 @@ msgstr ""
 msgid "This method modifies the Model object."
 msgstr ""
 
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/CoincidentConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.CoincidentConstraint.CoincidentConstraint:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConcentricConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConcentricConstraint.ConcentricConstraint:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/EqualDistanceConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.EqualDistanceConstraint.EqualDistanceConstraint:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/EqualLengthConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.EqualLengthConstraint.EqualLengthConstraint:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/EqualRadiusConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.EqualRadiusConstraint.EqualRadiusConstraint:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/FixedConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.FixedConstraint.FixedConstraint:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/HorizontalConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.HorizontalConstraint.HorizontalConstraint:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ParallelConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ParallelConstraint.ParallelConstraint:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/PerpendicularConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.PerpendicularConstraint.PerpendicularConstraint:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/TangentConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.TangentConstraint.TangentConstraint:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/VerticalConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.VerticalConstraint.VerticalConstraint:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/AngularDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.AngularDimension.AngularDimension:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/DistanceDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.DistanceDimension.DistanceDimension:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/HorizontalDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.HorizontalDimension.HorizontalDimension:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ObliqueDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ObliqueDimension.ObliqueDimension:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/RadialDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.RadialDimension.RadialDimension:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/VerticalDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.VerticalDimension.VerticalDimension:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/Arc3Points.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.Arc3Points.Arc3Points:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ArcByCenterEnds.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds.ArcByCenterEnds:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ArcByStartEndTangent.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ArcByStartEndTangent.ArcByStartEndTangent:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/CircleByCenterPerimeter.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.CircleByCenterPerimeter.CircleByCenterPerimeter:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometry.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryArray.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryModel.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstructionCircleByCenterPerimeter.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstructionCircleByCenterPerimeter.ConstructionCircleByCenterPerimeter:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstructionLine.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstructionLine.ConstructionLine:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/EllipseByCenterPerimeter.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.EllipseByCenterPerimeter.EllipseByCenterPerimeter:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/FilletByRadius.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.FilletByRadius.FilletByRadius:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/Line.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.Line.Line:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/Spline.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.Spline.Spline:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/Spot.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.Spot.Spot:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/getPointAtDistance.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.getPointAtDistance.getPointAtDistance:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchImageOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchImageOptions.ConstrainedSketchImageOptions:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketcherOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchParameter/ConstrainedSketchParameterModel.py:docstring of abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameterModel.ConstrainedSketchParameterModel:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchParameter/Parameter.py:docstring of abaqus.Sketcher.ConstrainedSketchParameter.Parameter.Parameter:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertex.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertexArray.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexArray.ConstrainedSketchVertexArray:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertexModel.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexModel.ConstrainedSketchVertexModel:1
+#: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/Spot.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.Spot.Spot:1
+#: ../../../../src/abaqus/Sketcher/SketchModel.py:docstring of abaqus.Sketcher.SketchModel.SketchModel:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/Sketcher/SketchModel.py:docstring of abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch:1
 msgid "This method creates a ConstrainedSketch object. If the sketch cannot be created, the method returns None."
 msgstr ""
@@ -760,7 +809,7 @@ msgid "A Float specifying the sheet size."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/SketchModel.py:docstring of abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch:17
-msgid "A Float specifying the spacing between gridlines. Possible values are Floats >> 0. The default value is approximately 2 percent of **sheetSize**."
+msgid "A Float specifying the spacing between gridlines. Possible values are Floats > 0. The default value is approximately 2 percent of **sheetSize**."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/SketchModel.py:docstring of abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch:20
@@ -936,12 +985,8 @@ msgstr ""
 msgid ":class:`ConstrainedSketch`"
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:20
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:23
-msgid "ConstrainedSketch"
+#: ../../reference/mdb/model/sketcher.md:17
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketch.py:docstring of abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch:1
@@ -2066,10 +2111,6 @@ msgstr ""
 msgid "A SymbolicConstant specifying a particular flavor of IGES to export. Possible values are STANDARD, AUTOCAD, SOLIDWORKS, JAMA, and MSBO."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:33
-msgid "ConstrainedSketchConstraintModel"
-msgstr ""
-
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraintModel.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraintModel.ConstrainedSketchConstraintModel:1
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel:1
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryModel.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel:1
@@ -2278,10 +2319,6 @@ msgstr ""
 msgid "Check `VerticalConstraint on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-verticalconstraintpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:43
-msgid "ConstrainedSketchDimensionModel"
-msgstr ""
-
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel:13
 msgid "Check `ConstrainedSketchDimensionModel on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
 msgstr ""
@@ -2448,10 +2485,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/ConstrainedSketchDimensionModel.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.ConstrainedSketchDimensionModel.ConstrainedSketchDimensionModel.VerticalDimension:10
 msgid "Check `VerticalDimension on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-verticaldimensionpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:53
-msgid "ConstrainedSketchGeometryModel"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryModel.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryModel.ConstrainedSketchGeometryModel:13
@@ -2754,10 +2787,6 @@ msgstr ""
 msgid ":class:`List[ConstrainedSketchVertex]`"
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:63
-msgid "ConstrainedSketchParameterModel"
-msgstr ""
-
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchParameter/ConstrainedSketchParameterModel.py:docstring of abaqus.Sketcher.ConstrainedSketchParameter.ConstrainedSketchParameterModel.ConstrainedSketchParameterModel:13
 msgid "Check `ConstrainedSketchParameterModel on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
 msgstr ""
@@ -2791,10 +2820,6 @@ msgstr ""
 msgid ":class:`ConstrainedSketchParameter`"
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:73
-msgid "ConstrainedSketchVertexModel"
-msgstr ""
-
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertexModel.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexModel.ConstrainedSketchVertexModel:13
 msgid "Check `ConstrainedSketchVertexModel on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelpyc.htm?contextscope=all>`__."
 msgstr ""
@@ -2814,10 +2839,6 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertexModel.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexModel.ConstrainedSketchVertexModel.Spot:15
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/Spot.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.Spot.Spot.__init__:15
 msgid ":class:`ConstrainedSketchVertex`"
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:84
-msgid "CoincidentConstraint"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/CoincidentConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.CoincidentConstraint.CoincidentConstraint:1
@@ -2870,20 +2891,12 @@ msgstr ""
 msgid ":class:`ConstrainedSketchConstraint`"
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:94
-msgid "ConcentricConstraint"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchConstraint.ConcentricConstraint.ConcentricConstraint.__init__>`\\ \\(entity1\\, entity2\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConcentricConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConcentricConstraint.ConcentricConstraint.__init__:12
 msgid "Check `ConcentricConstraint.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentricconstraintpyc.htm?contextscope=all#simaker-concentricconstraint__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:104
-msgid "ConstrainedSketchConstraint"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/ConstrainedSketchConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.ConstrainedSketchConstraint.ConstrainedSketchConstraint:1
@@ -2903,20 +2916,12 @@ msgstr ""
 msgid "Check `ConstrainedSketchConstraint on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-constrainedsketchconstraintpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:114
-msgid "EqualDistanceConstraint"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchConstraint.EqualDistanceConstraint.EqualDistanceConstraint.__init__>`\\ \\(entity1\\, entity2\\, midpoint\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/EqualDistanceConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.EqualDistanceConstraint.EqualDistanceConstraint.__init__:13
 msgid "Check `EqualDistanceConstraint.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-equaldistanceconstraintpyc.htm?contextscope=all#simaker-equaldistanceconstraint__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:124
-msgid "EqualLengthConstraint"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -2927,20 +2932,12 @@ msgstr ""
 msgid "Check `EqualLengthConstraint.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-equallengthconstraintpyc.htm?contextscope=all#simaker-equallengthconstraint__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:134
-msgid "EqualRadiusConstraint"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchConstraint.EqualRadiusConstraint.EqualRadiusConstraint.__init__>`\\ \\(entity1\\, entity2\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/EqualRadiusConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.EqualRadiusConstraint.EqualRadiusConstraint.__init__:10
 msgid "Check `EqualRadiusConstraint.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-equalradiusconstraintpyc.htm?contextscope=all#simaker-equalradiusconstraint__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:144
-msgid "FixedConstraint"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -2951,20 +2948,12 @@ msgstr ""
 msgid "Check `FixedConstraint.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fixedconstraintpyc.htm?contextscope=all#simaker-fixedconstraint__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:154
-msgid "HorizontalConstraint"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchConstraint.HorizontalConstraint.HorizontalConstraint.__init__>`\\ \\(entity\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/HorizontalConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.HorizontalConstraint.HorizontalConstraint.__init__:10
 msgid "Check `HorizontalConstraint.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-horizontalconstraintpyc.htm?contextscope=all#simaker-horizontalconstraint__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:164
-msgid "ParallelConstraint"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -2975,20 +2964,12 @@ msgstr ""
 msgid "Check `ParallelConstraint.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-parallelconstraintpyc.htm?contextscope=all#simaker-parallelconstraint__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:174
-msgid "PerpendicularConstraint"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchConstraint.PerpendicularConstraint.PerpendicularConstraint.__init__>`\\ \\(entity1\\, entity2\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/PerpendicularConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.PerpendicularConstraint.PerpendicularConstraint.__init__:11
 msgid "Check `PerpendicularConstraint.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-perpendicularconstraintpyc.htm?contextscope=all#simaker-perpendicularconstraint__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:184
-msgid "TangentConstraint"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -2999,20 +2980,12 @@ msgstr ""
 msgid "Check `TangentConstraint.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tangentconstraintpyc.htm?contextscope=all#simaker-tangentconstraint__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:194
-msgid "VerticalConstraint"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchConstraint.VerticalConstraint.VerticalConstraint.__init__>`\\ \\(entity\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchConstraint/VerticalConstraint.py:docstring of abaqus.Sketcher.ConstrainedSketchConstraint.VerticalConstraint.VerticalConstraint.__init__:10
 msgid "Check `VerticalConstraint.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-verticalconstraintpyc.htm?contextscope=all#simaker-verticalconstraint__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:205
-msgid "AngularDimension"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/AngularDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.AngularDimension.AngularDimension:1
@@ -3050,10 +3023,6 @@ msgstr ""
 msgid ":class:`ConstrainedSketchDimension`"
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:215
-msgid "DistanceDimension"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchDimension.DistanceDimension.DistanceDimension.__init__>`\\ \\(entity1\\, entity2\\, textPoint\\[\\, ...\\]\\)"
 msgstr ""
@@ -3070,20 +3039,12 @@ msgstr ""
 msgid "The `vertex2` argument was renamed to `entity2`."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:225
-msgid "HorizontalDimension"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchDimension.HorizontalDimension.HorizontalDimension.__init__>`\\ \\(vertex1\\, vertex2\\, textPoint\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/HorizontalDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.HorizontalDimension.HorizontalDimension.__init__:11
 msgid "Check `HorizontalDimension.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-horizontaldimensionpyc.htm?contextscope=all#simaker-horizontaldimension__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:235
-msgid "ObliqueDimension"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3094,10 +3055,6 @@ msgstr ""
 msgid "Check `ObliqueDimension.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-obliquedimensionpyc.htm?contextscope=all#simaker-obliquedimension__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:245
-msgid "RadialDimension"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchDimension.RadialDimension.RadialDimension.__init__>`\\ \\(curve\\, textPoint\\[\\, value\\, ...\\]\\)"
 msgstr ""
@@ -3106,20 +3063,12 @@ msgstr ""
 msgid "Check `RadialDimension.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-radialdimensionpyc.htm?contextscope=all#simaker-radialdimension__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:255
-msgid "VerticalDimension"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchDimension.VerticalDimension.VerticalDimension.__init__>`\\ \\(vertex1\\, vertex2\\, textPoint\\[\\, ...\\]\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchDimension/VerticalDimension.py:docstring of abaqus.Sketcher.ConstrainedSketchDimension.VerticalDimension.VerticalDimension.__init__:10
 msgid "Check `VerticalDimension.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-verticaldimensionpyc.htm?contextscope=all#simaker-verticaldimension__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:265
-msgid "ConstrainedSketchGeometry"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometry.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry:1
@@ -3170,10 +3119,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry.type:1
 msgid "A SymbolicConstant specifying the type of sketch entity. Possible values are REGULAR, REFERENCE, and CONSTRUCTION."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:275
-msgid "ConstrainedSketchGeometryArray"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstrainedSketchGeometryArray.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometryArray.ConstrainedSketchGeometryArray:1
@@ -3504,10 +3449,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:285
-msgid "Arc3Points"
-msgstr ""
-
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/Arc3Points.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.Arc3Points.Arc3Points:1
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ArcByCenterEnds.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds.ArcByCenterEnds:1
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ArcByStartEndTangent.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ArcByStartEndTangent.ArcByStartEndTangent:1
@@ -3537,10 +3478,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the arc cannot be created)."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:295
-msgid "ArcByCenterEnds"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchGeometry.ArcByCenterEnds.ArcByCenterEnds.__init__>`\\ \\(center\\, point1\\, point2\\, direction\\)"
 msgstr ""
@@ -3561,20 +3498,12 @@ msgstr ""
 msgid ":raises If incompatible data are given`, :class:`the second endpoint is ignored.:"
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:305
-msgid "ArcByStartEndTangent"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchGeometry.ArcByStartEndTangent.ArcByStartEndTangent.__init__>`\\ \\(point1\\, point2\\, vector\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ArcByStartEndTangent.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ArcByStartEndTangent.ArcByStartEndTangent.__init__:10
 msgid "Check `ArcByStartEndTangent.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-arcbystartendtangentpyc.htm?contextscope=all#simaker-arcbystartendtangent__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:315
-msgid "CircleByCenterPerimeter"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3590,20 +3519,12 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the circle cannot be created)."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:325
-msgid "ConstructionCircleByCenterPerimeter"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchGeometry.ConstructionCircleByCenterPerimeter.ConstructionCircleByCenterPerimeter.__init__>`\\ \\(center\\, point1\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/ConstructionCircleByCenterPerimeter.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.ConstructionCircleByCenterPerimeter.ConstructionCircleByCenterPerimeter.__init__:11
 msgid "Check `ConstructionCircleByCenterPerimeter.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-constructioncirclebycenterperimeterpyc.htm?contextscope=all#simaker-constructioncirclebycenterperimeter__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:335
-msgid "ConstructionLine"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3619,10 +3540,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the line cannot be created)."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:345
-msgid "EllipseByCenterPerimeter"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchGeometry.EllipseByCenterPerimeter.EllipseByCenterPerimeter.__init__>`\\ \\(center\\, axisPoint1\\, axisPoint2\\)"
 msgstr ""
@@ -3633,10 +3550,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/EllipseByCenterPerimeter.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.EllipseByCenterPerimeter.EllipseByCenterPerimeter.__init__:20
 msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the ellipse cannot be created)."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:355
-msgid "FilletByRadius"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3651,10 +3564,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the fillet cannot be created)."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:365
-msgid "getPointAtDistance"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchGeometry.getPointAtDistance.getPointAtDistance.__init__>`\\ \\(point\\, distance\\[\\, percentage\\]\\)"
 msgstr ""
@@ -3667,20 +3576,12 @@ msgstr ""
 msgid "A pair of floats representing the point along the edge."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:375
-msgid "Line"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchGeometry.Line.Line.__init__>`\\ \\(point1\\, point2\\)"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/Line.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.Line.Line.__init__:9
 msgid "Check `Line.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-linepyc.htm?contextscope=all#simaker-line__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:385
-msgid "Spline"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
@@ -3699,11 +3600,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the spline cannot be created)."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:395
-#: ../../reference/mdb/model/sketcher.rst:467
-msgid "Spot"
-msgstr ""
-
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.Sketcher.ConstrainedSketchGeometry.Spot.Spot.__init__>`\\ \\(point\\)"
 msgstr ""
@@ -3715,10 +3611,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchGeometry/Spot.py:docstring of abaqus.Sketcher.ConstrainedSketchGeometry.Spot.Spot.__init__:15
 msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchGeometry.ConstrainedSketchGeometry.ConstrainedSketchGeometry` object (None if the spot cannot be created)."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:406
-msgid "ConstrainedSketcherOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketcherOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions:1
@@ -3766,7 +3658,7 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions.setValues:45
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketcherOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions.setValues:16
-msgid "An Int specifying the maximum number of coplanar entities which should be automatically projected from the background, when a sketch based feature is created or edited. When this value is exceeded no entities are automatically projected and a warning issued. Possible values are **maxCoplanarEntities** >> 0. The default value is 300."
+msgid "An Int specifying the maximum number of coplanar entities which should be automatically projected from the background, when a sketch based feature is created or edited. When this value is exceeded no entities are automatically projected and a warning issued. Possible values are **maxCoplanarEntities** > 0. The default value is 300."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions.setValues:50
@@ -3792,10 +3684,6 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions.setValues:69
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketcherOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketcherOptions.ConstrainedSketcherOptions.setValues:40
 msgid "A SymbolicConstant specifying the constraint solving mode used by the sketcher during regular sketch editing and adding new constraints and dimensions. Possible values are MINIMUM_MOVE, STANDARD, WEIGHTED, and RELAXATION. The default value is STANDARD."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:416
-msgid "ConstrainedSketchImageOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchImageOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchImageOptions.ConstrainedSketchImageOptions:1
@@ -3838,10 +3726,6 @@ msgstr ""
 msgid "A Float specifying the translucency factor to use when displaying the image. Possible values are 0.0 ≤ **translucency** ≤ 1.0 with 0.0 being invisible and 1.0 being opaque. The default value is 1.0."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:426
-msgid "ConstrainedSketchOptions"
-msgstr ""
-
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions:1
 msgid "The ConstrainedSketchOptions object is used to store values and attributes associated with a particular sketch. The ConstrainedSketchOptions object has no constructor."
 msgstr ""
@@ -3859,11 +3743,11 @@ msgid "Check `ConstrainedSketchOptions.setValues on help.3ds.com/2018 <https://h
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions.setValues:7
-msgid "A Float specifying the sheet size. Possible values are Floats >> 0. The default value is the **sheetSize** specified with the Sketch method."
+msgid "A Float specifying the sheet size. Possible values are Floats > 0. The default value is the **sheetSize** specified with the Sketch method."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions.setValues:10
-msgid "A Float specifying the spacing between gridlines. Possible values are Floats >> 0. The default value is approximately 2.5% of **sheetSize**."
+msgid "A Float specifying the spacing between gridlines. Possible values are Floats > 0. The default value is approximately 2.5% of **sheetSize**."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions.setValues:13
@@ -3871,11 +3755,11 @@ msgid "A Boolean specifying whether the grid is shown. The default value is ON."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions.setValues:15
-msgid "An Int specifying how often gridlines are shown. Possible values are **gridFrequency** >> 0. The default value is 1."
+msgid "An Int specifying how often gridlines are shown. Possible values are **gridFrequency** > 0. The default value is 1."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions.setValues:18
-msgid "A Float specifying the height of the dimension text in points. Possible values are Floats >> 0. The default value is 12.0."
+msgid "A Float specifying the height of the dimension text in points. Possible values are Floats > 0. The default value is 12.0."
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions.setValues:21
@@ -3896,10 +3780,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchOptions/ConstrainedSketchOptions.py:docstring of abaqus.Sketcher.ConstrainedSketchOptions.ConstrainedSketchOptions.ConstrainedSketchOptions.setValues:39
 msgid "A SymbolicConstant specifying the type of sketch displayed in the viewport. Possible values are REGULAR and AXISYM. The default value is REGULAR."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:436
-msgid "Parameter"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchParameter/Parameter.py:docstring of abaqus.Sketcher.ConstrainedSketchParameter.Parameter.Parameter:1
@@ -3962,10 +3842,6 @@ msgstr ""
 msgid "A String specifying the name of the previous ConstrainedSketch, if it exists. The **previous** argument implies an order among the parameters. No two parameters can reference the same parameter as the previous parameter."
 msgstr ""
 
-#: ../../reference/mdb/model/sketcher.rst:447
-msgid "ConstrainedSketchVertex"
-msgstr ""
-
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertex.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex:1
 msgid "The ConstrainedSketchVertex object stores the vertex position."
 msgstr ""
@@ -3990,10 +3866,6 @@ msgstr ""
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertex.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex.Spot:14
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/Spot.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.Spot.Spot.__init__:14
 msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertex.ConstrainedSketchVertex` object (None if the spot cannot be created)."
-msgstr ""
-
-#: ../../reference/mdb/model/sketcher.rst:457
-msgid "ConstrainedSketchVertexArray"
 msgstr ""
 
 #: ../../../../src/abaqus/Sketcher/ConstrainedSketchVertex/ConstrainedSketchVertexArray.py:docstring of abaqus.Sketcher.ConstrainedSketchVertex.ConstrainedSketchVertexArray.ConstrainedSketchVertexArray:1

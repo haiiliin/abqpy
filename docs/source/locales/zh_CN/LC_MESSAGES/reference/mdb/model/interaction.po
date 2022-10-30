@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/mdb/model/interaction.rst:3
-#: ../../reference/mdb/model/interaction.rst:120
+#: ../../reference/mdb/model/interaction.md:1
 msgid "Interaction"
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:5
+#: ../../reference/mdb/model/interaction.md:3
 msgid ""
 "A specific type of interaction object and a specific type of interaction "
 "state object are designed for each type of interaction. An interaction "
@@ -33,7 +32,7 @@ msgid ""
 "internally by its corresponding interaction object."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:8
+#: ../../reference/mdb/model/interaction.md:5
 msgid "Create interactions"
 msgstr ""
 
@@ -84,7 +83,6 @@ msgstr ""
 #: abaqus.Interaction.ExpContactControl.ExpContactControl:6
 #: abaqus.Interaction.FilmCondition.FilmCondition:6
 #: abaqus.Interaction.FilmConditionProp.FilmConditionProp:6
-#: abaqus.Interaction.FilmConditionState.FilmConditionState:8
 #: abaqus.Interaction.FluidCavity.FluidCavity:5
 #: abaqus.Interaction.FluidCavityProperty.FluidCavityProperty:6
 #: abaqus.Interaction.FluidCavityState.FluidCavityState:8
@@ -170,7 +168,6 @@ msgstr ""
 #: abaqus.Interaction.ExpContactControl.ExpContactControl
 #: abaqus.Interaction.FilmCondition.FilmCondition
 #: abaqus.Interaction.FilmConditionProp.FilmConditionProp
-#: abaqus.Interaction.FilmConditionState.FilmConditionState
 #: abaqus.Interaction.FluidCavity.FluidCavity
 #: abaqus.Interaction.FluidCavityProperty.FluidCavityProperty
 #: abaqus.Interaction.FluidCavityState.FluidCavityState
@@ -1347,6 +1344,93 @@ msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid "This method modifies the Model object."
+msgstr ""
+
+#: abaqus.Interaction.AcousticImpedance.AcousticImpedance:1
+#: abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp:1
+#: abaqus.Interaction.AcousticImpedanceState.AcousticImpedanceState:1
+#: abaqus.Interaction.ActuatorSensor.ActuatorSensor:1
+#: abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp:1
+#: abaqus.Interaction.ActuatorSensorState.ActuatorSensorState:1
+#: abaqus.Interaction.CavityRadiation.CavityRadiation:1
+#: abaqus.Interaction.CavityRadiationProp.CavityRadiationProp:1
+#: abaqus.Interaction.CavityRadiationState.CavityRadiationState:1
+#: abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:1
+#: abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition:1
+#: abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState:1
+#: abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient:1
+#: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState:1
+#: abaqus.Interaction.ContactControl.ContactControl:1
+#: abaqus.Interaction.ContactDamage.ContactDamage:1
+#: abaqus.Interaction.ContactDamping.ContactDamping:1
+#: abaqus.Interaction.ContactExp.ContactExp:1
+#: abaqus.Interaction.ContactInitialization.ContactInitialization:1
+#: abaqus.Interaction.ContactProperty.ContactProperty:1
+#: abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment:1
+#: abaqus.Interaction.ContactStabilization.ContactStabilization:1
+#: abaqus.Interaction.ContactStd.ContactStd:1
+#: abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior:1
+#: abaqus.Interaction.CyclicSymmetry.CyclicSymmetry:1
+#: abaqus.Interaction.CyclicSymmetryState.CyclicSymmetryState:1
+#: abaqus.Interaction.ElasticFoundation.ElasticFoundation:1
+#: abaqus.Interaction.ElasticFoundationState.ElasticFoundationState:1
+#: abaqus.Interaction.ExpContactControl.ExpContactControl:1
+#: abaqus.Interaction.FilmCondition.FilmCondition:1
+#: abaqus.Interaction.FilmConditionProp.FilmConditionProp:1
+#: abaqus.Interaction.FluidCavity.FluidCavity:1
+#: abaqus.Interaction.FluidCavityProperty.FluidCavityProperty:1
+#: abaqus.Interaction.FluidCavityState.FluidCavityState:1
+#: abaqus.Interaction.FluidExchange.FluidExchange:1
+#: abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty:1
+#: abaqus.Interaction.FluidExchangeState.FluidExchangeState:1
+#: abaqus.Interaction.FractureCriterion.FractureCriterion:1
+#: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:1
+#: abaqus.Interaction.GapHeatGeneration.GapHeatGeneration:1
+#: abaqus.Interaction.GeometricProperties.GeometricProperties:1
+#: abaqus.Interaction.IncidentWave.IncidentWave:1
+#: abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty:1
+#: abaqus.Interaction.IncidentWaveState.IncidentWaveState:1
+#: abaqus.Interaction.InitializationAssignment.InitializationAssignment:1
+#: abaqus.Interaction.Interaction.Interaction:1
+#: abaqus.Interaction.InteractionContactControlModel.InteractionContactControlModel:1
+#: abaqus.Interaction.InteractionContactInitializationModel.InteractionContactInitializationModel:1
+#: abaqus.Interaction.InteractionContactStabilizationModel.InteractionContactStabilizationModel:1
+#: abaqus.Interaction.InteractionModel.InteractionModel:1
+#: abaqus.Interaction.InteractionProperty.InteractionProperty:1
+#: abaqus.Interaction.InteractionPropertyModel.InteractionPropertyModel:1
+#: abaqus.Interaction.InteractionState.InteractionState:1
+#: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment:1
+#: abaqus.Interaction.ModelChange.ModelChange:1
+#: abaqus.Interaction.NormalBehavior.NormalBehavior:1
+#: abaqus.Interaction.PressurePenetration.PressurePenetration:1
+#: abaqus.Interaction.PressurePenetrationState.PressurePenetrationState:1
+#: abaqus.Interaction.Radiation.Radiation:1
+#: abaqus.Interaction.RadiationToAmbient.RadiationToAmbient:1
+#: abaqus.Interaction.RadiationToAmbientState.RadiationToAmbientState:1
+#: abaqus.Interaction.RegionPairs.RegionPairs:1
+#: abaqus.Interaction.SelfContactExp.SelfContactExp:1
+#: abaqus.Interaction.SelfContactExpState.SelfContactExpState:1
+#: abaqus.Interaction.SelfContactStd.SelfContactStd:1
+#: abaqus.Interaction.SelfContactStdState.SelfContactStdState:1
+#: abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment:1
+#: abaqus.Interaction.SmoothingAssignment.SmoothingAssignment:1
+#: abaqus.Interaction.StabilizationAssignment.StabilizationAssignment:1
+#: abaqus.Interaction.StdContactControl.StdContactControl:1
+#: abaqus.Interaction.StdInitialization.StdInitialization:1
+#: abaqus.Interaction.StdStabilization.StdStabilization:1
+#: abaqus.Interaction.StdXplCosimulation.StdXplCosimulation:1
+#: abaqus.Interaction.StdXplCosimulationState.StdXplCosimulationState:1
+#: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment:1
+#: abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment:1
+#: abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment:1
+#: abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp:1
+#: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd:1
+#: abaqus.Interaction.SurfaceToSurfaceExpState.SurfaceToSurfaceExpState:1
+#: abaqus.Interaction.SurfaceToSurfaceStdState.SurfaceToSurfaceStdState:1
+#: abaqus.Interaction.ThermalConductance.ThermalConductance:1
+#: abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth:1
+#: abaqus.Interaction.XFEMCrackGrowthState.XFEMCrackGrowthState:1 of
+msgid "Member Details:"
 msgstr ""
 
 #: abaqus.Interaction.AcousticImpedance.AcousticImpedance.__init__:4
@@ -2553,8 +2637,8 @@ msgstr ""
 msgid ""
 "A String specifying the name of the Amplitude object that gives the "
 "variation of the sink temperature, θ0θ0, with time. The default value is "
-"an empty string.Note:Use None in an Abaqus/Standard analysis to specify "
-"that the reference sink temperature is applied immediately at the "
+"an empty string. Note: Use None in an Abaqus/Standard analysis to specify"
+" that the reference sink temperature is applied immediately at the "
 "beginning of the step or linearly over the step. Use None in an "
 "Abaqus/Explicit analysis to specify that the reference sink temperature "
 "is applied throughout the step."
@@ -2585,7 +2669,7 @@ msgstr ""
 msgid ""
 "A String specifying the name of the Amplitude object that gives the "
 "variation of the film coefficient, hh, with time. The default value is an"
-" empty string.Note:Use None in an Abaqus/Standard analysis to specify "
+" empty string. Note: Use None in an Abaqus/Standard analysis to specify "
 "that the reference film coefficient is applied immediately at the "
 "beginning of the step or linearly over the step. Use None in an "
 "Abaqus/Explicit analysis to specify that the reference film coefficient "
@@ -2683,7 +2767,7 @@ msgstr ""
 #: of
 msgid ""
 "A String specifying the name of the Amplitude object that gives the "
-"variation of the ambient temperature with time.Note:Use None in an "
+"variation of the ambient temperature with time. Note: Use None in an "
 "Abaqus/Standard analysis to specify that the reference ambient "
 "temperature is applied immediately at the beginning of the step or "
 "linearly over the step. Use None in an Abaqus/Explicit analysis to "
@@ -2722,9 +2806,8 @@ msgstr ""
 msgid ""
 "A SymbolicConstant specifying how the concentrated radiation is applied "
 "to the boundary of an adaptive mesh domain. Possible values are "
-"LAGRANGIAN, SLIDING, and EULERIAN. The default value is "
-"LAGRANGIAN.Note:*explicitRegionType* applies only during an "
-"Abaqus/Explicit analysis."
+"LAGRANGIAN, SLIDING, and EULERIAN. The default value is LAGRANGIAN. Note:"
+" *explicitRegionType* applies only during an Abaqus/Explicit analysis."
 msgstr ""
 
 #: ../../docstring
@@ -3196,11 +3279,11 @@ msgstr ""
 msgid ""
 "A String specifying the name of the Amplitude object that gives the "
 "variation of the sink temperature, θ0θ0, with time. The default value is "
-"an empty string.Note:Use empty string in an Abaqus/Standard analysis to "
-"specify that the reference sink temperature is applied immediately at the"
-" beginning of the step or linearly over the step. Use empty string in an "
-"Abaqus/Explicit analysis to specify that the reference sink temperature "
-"is applied throughout the step."
+"an empty string. Note: Use empty string in an Abaqus/Standard analysis to"
+" specify that the reference sink temperature is applied immediately at "
+"the beginning of the step or linearly over the step. Use empty string in "
+"an Abaqus/Explicit analysis to specify that the reference sink "
+"temperature is applied throughout the step."
 msgstr ""
 
 #: ../../docstring abaqus.Interaction.FilmCondition.FilmCondition.__init__:39
@@ -3778,7 +3861,7 @@ msgstr ""
 #: abaqus.Interaction.RadiationToAmbient.RadiationToAmbient.setValues:23 of
 msgid ""
 "A String specifying the name of the Amplitude object that gives the "
-"variation of the ambient temperature with time.Note:Use None in an "
+"variation of the ambient temperature with time. Note: Use None in an "
 "Abaqus/Standard analysis to specify that the reference ambient "
 "temperature is applied immediately at the beginning of the step or "
 "linearly over the step. Use None in an Abaqus/Explicit analysis to "
@@ -6868,12 +6951,8 @@ msgstr ""
 msgid ":class:`IncidentWaveProperty`"
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:47
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:50
-msgid "ContactControl"
+#: ../../reference/mdb/model/interaction.md:53
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:1
@@ -6917,10 +6996,6 @@ msgstr ""
 msgid ""
 "Check `ContactControl on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contactcontrolpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:60
-msgid "ContactDamage"
 msgstr ""
 
 #: abaqus.Interaction.ContactDamage.ContactDamage:1 of
@@ -7137,7 +7212,6 @@ msgstr ""
 #: abaqus.Interaction.ElasticFoundation.ElasticFoundation:10
 #: abaqus.Interaction.ExpContactControl.ExpContactControl:11
 #: abaqus.Interaction.FilmConditionProp.FilmConditionProp:11
-#: abaqus.Interaction.FilmConditionState.FilmConditionState:13
 #: abaqus.Interaction.FluidCavity.FluidCavity:10
 #: abaqus.Interaction.FluidCavityProperty.FluidCavityProperty:11
 #: abaqus.Interaction.FluidExchange.FluidExchange:11
@@ -7573,10 +7647,6 @@ msgid ""
 "initiation. The items in the table data are described below."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:70
-msgid "ContactDamping"
-msgstr ""
-
 #: abaqus.Interaction.ContactDamping.ContactDamping:1 of
 msgid ""
 "The ContactDamping object specifies damping for a contact interaction "
@@ -7760,10 +7830,6 @@ msgid ""
 "in the table data are described below."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:80
-msgid "ContactInitialization"
-msgstr ""
-
 #: abaqus.Interaction.ContactInitialization.ContactInitialization:1 of
 msgid ""
 "The ContactInitialization object is the abstract base type for other "
@@ -7775,10 +7841,6 @@ msgstr ""
 msgid ""
 "Check `ContactInitialization on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-contactinitializationpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:90
-msgid "ContactProperty"
 msgstr ""
 
 #: abaqus.Interaction.ContactProperty.ContactProperty:1 of
@@ -8644,7 +8706,7 @@ msgstr ""
 msgid ""
 "A Float specifying the ratio of the initial stiffness divided by the "
 "final stiffness. This argument is valid only when **stiffnessBehavior** ="
-" NONLINEAR. Possible values are 0 ≤ **stiffnessRatio** << 1. The default "
+" NONLINEAR. Possible values are 0 ≤ **stiffnessRatio** < 1. The default "
 "value is 0.01."
 msgstr ""
 
@@ -8667,7 +8729,7 @@ msgid ""
 "divided by the overclosure at the maximum stiffness, both relative to the"
 " clearance at which the contact pressure is zero. This argument is valid "
 "only when **stiffnessBehavior** = NONLINEAR. Possible values are 0 ≤ "
-"**stiffnessRatio** << 1. The default value is 0.33333."
+"**stiffnessRatio** < 1. The default value is 0.33333."
 msgstr ""
 
 #: abaqus.Interaction.ContactProperty.ContactProperty.NormalBehavior:70
@@ -8908,10 +8970,6 @@ msgid ""
 "#simaker-contactproperty__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:100
-msgid "ContactPropertyAssignment"
-msgstr ""
-
 #: abaqus.Interaction.ContactPropertyAssignment.ContactPropertyAssignment:1 of
 msgid ""
 "The ContactPropertyAssignment object stores the contact property "
@@ -9054,10 +9112,6 @@ msgid ""
 "SELF. When used with a ContactExp object, this parameter can also be a "
 "string that references an Eulerian material surface. **surfPair** and "
 "**indices** arguments are mutually exclusive."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:110
-msgid "ContactStabilization"
 msgstr ""
 
 #: abaqus.Interaction.ContactStabilization.ContactStabilization:1 of
@@ -9219,10 +9273,6 @@ msgid ""
 "reactivated."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:130
-msgid "InitializationAssignment"
-msgstr ""
-
 #: abaqus.Interaction.InitializationAssignment.InitializationAssignment:1 of
 msgid ""
 "The InitializationAssignment object stores the contact initialization "
@@ -9359,10 +9409,6 @@ msgid ""
 "assignment to delete."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:140
-msgid "InteractionProperty"
-msgstr ""
-
 #: abaqus.Interaction.InteractionProperty.InteractionProperty:1 of
 msgid ""
 "The InteractionProperty object is the abstract base type for other "
@@ -9374,10 +9420,6 @@ msgstr ""
 msgid ""
 "Check `InteractionProperty on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-interactionpropertypyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:150
-msgid "InteractionState"
 msgstr ""
 
 #: abaqus.Interaction.InteractionState.InteractionState:1 of
@@ -9416,7 +9458,6 @@ msgstr ""
 #: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState.status:1
 #: abaqus.Interaction.CyclicSymmetryState.CyclicSymmetryState.status:1
 #: abaqus.Interaction.ElasticFoundationState.ElasticFoundationState.status:1
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.status:1
 #: abaqus.Interaction.FluidCavityState.FluidCavityState.status:1
 #: abaqus.Interaction.FluidExchangeState.FluidExchangeState.status:1
 #: abaqus.Interaction.InteractionState.InteractionState.status:1
@@ -9440,7 +9481,6 @@ msgstr ""
 #: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState.status:4
 #: abaqus.Interaction.CyclicSymmetryState.CyclicSymmetryState.status:4
 #: abaqus.Interaction.ElasticFoundationState.ElasticFoundationState.status:4
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.status:4
 #: abaqus.Interaction.FluidCavityState.FluidCavityState.status:4
 #: abaqus.Interaction.FluidExchangeState.FluidExchangeState.status:4
 #: abaqus.Interaction.InteractionState.InteractionState.status:4
@@ -9462,7 +9502,6 @@ msgstr ""
 #: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState.status:5
 #: abaqus.Interaction.CyclicSymmetryState.CyclicSymmetryState.status:5
 #: abaqus.Interaction.ElasticFoundationState.ElasticFoundationState.status:5
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.status:5
 #: abaqus.Interaction.FluidCavityState.FluidCavityState.status:5
 #: abaqus.Interaction.FluidExchangeState.FluidExchangeState.status:5
 #: abaqus.Interaction.InteractionState.InteractionState.status:5
@@ -9484,7 +9523,6 @@ msgstr ""
 #: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState.status:6
 #: abaqus.Interaction.CyclicSymmetryState.CyclicSymmetryState.status:6
 #: abaqus.Interaction.ElasticFoundationState.ElasticFoundationState.status:6
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.status:6
 #: abaqus.Interaction.FluidCavityState.FluidCavityState.status:6
 #: abaqus.Interaction.FluidExchangeState.FluidExchangeState.status:6
 #: abaqus.Interaction.InteractionState.InteractionState.status:6
@@ -9506,7 +9544,6 @@ msgstr ""
 #: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState.status:7
 #: abaqus.Interaction.CyclicSymmetryState.CyclicSymmetryState.status:7
 #: abaqus.Interaction.ElasticFoundationState.ElasticFoundationState.status:7
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.status:7
 #: abaqus.Interaction.FluidCavityState.FluidCavityState.status:7
 #: abaqus.Interaction.FluidExchangeState.FluidExchangeState.status:7
 #: abaqus.Interaction.InteractionState.InteractionState.status:7
@@ -9528,7 +9565,6 @@ msgstr ""
 #: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState.status:8
 #: abaqus.Interaction.CyclicSymmetryState.CyclicSymmetryState.status:8
 #: abaqus.Interaction.ElasticFoundationState.ElasticFoundationState.status:8
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.status:8
 #: abaqus.Interaction.FluidCavityState.FluidCavityState.status:8
 #: abaqus.Interaction.FluidExchangeState.FluidExchangeState.status:8
 #: abaqus.Interaction.InteractionState.InteractionState.status:8
@@ -9550,7 +9586,6 @@ msgstr ""
 #: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState.status:9
 #: abaqus.Interaction.CyclicSymmetryState.CyclicSymmetryState.status:9
 #: abaqus.Interaction.ElasticFoundationState.ElasticFoundationState.status:9
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.status:9
 #: abaqus.Interaction.FluidCavityState.FluidCavityState.status:9
 #: abaqus.Interaction.FluidExchangeState.FluidExchangeState.status:9
 #: abaqus.Interaction.InteractionState.InteractionState.status:9
@@ -9572,7 +9607,6 @@ msgstr ""
 #: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState.status:10
 #: abaqus.Interaction.CyclicSymmetryState.CyclicSymmetryState.status:10
 #: abaqus.Interaction.ElasticFoundationState.ElasticFoundationState.status:10
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.status:10
 #: abaqus.Interaction.FluidCavityState.FluidCavityState.status:10
 #: abaqus.Interaction.FluidExchangeState.FluidExchangeState.status:10
 #: abaqus.Interaction.InteractionState.InteractionState.status:10
@@ -9594,7 +9628,6 @@ msgstr ""
 #: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState.status:11
 #: abaqus.Interaction.CyclicSymmetryState.CyclicSymmetryState.status:11
 #: abaqus.Interaction.ElasticFoundationState.ElasticFoundationState.status:11
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.status:11
 #: abaqus.Interaction.FluidCavityState.FluidCavityState.status:11
 #: abaqus.Interaction.FluidExchangeState.FluidExchangeState.status:11
 #: abaqus.Interaction.InteractionState.InteractionState.status:11
@@ -9616,7 +9649,6 @@ msgstr ""
 #: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState.status:12
 #: abaqus.Interaction.CyclicSymmetryState.CyclicSymmetryState.status:12
 #: abaqus.Interaction.ElasticFoundationState.ElasticFoundationState.status:12
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.status:12
 #: abaqus.Interaction.FluidCavityState.FluidCavityState.status:12
 #: abaqus.Interaction.FluidExchangeState.FluidExchangeState.status:12
 #: abaqus.Interaction.InteractionState.InteractionState.status:12
@@ -9629,10 +9661,6 @@ msgstr ""
 #: abaqus.Interaction.SurfaceToSurfaceStdState.SurfaceToSurfaceStdState.status:12
 #: abaqus.Interaction.XFEMCrackGrowthState.XFEMCrackGrowthState.status:12 of
 msgid "BUILT_INTO_BASE_STATE"
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:160
-msgid "AcousticImpedance"
 msgstr ""
 
 #: abaqus.Interaction.AcousticImpedance.AcousticImpedance:1
@@ -9840,10 +9868,6 @@ msgid ""
 "modified."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:170
-msgid "AcousticImpedanceProp"
-msgstr ""
-
 #: abaqus.Interaction.AcousticImpedanceProp.AcousticImpedanceProp:1
 #: abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp:1
 #: abaqus.Interaction.CavityRadiationProp.CavityRadiationProp:1
@@ -9911,10 +9935,6 @@ msgid ""
 "#simaker-acousticimpedancepropsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:180
-msgid "AcousticImpedanceState"
-msgstr ""
-
 #: abaqus.Interaction.AcousticImpedanceState.AcousticImpedanceState:1
 #: abaqus.Interaction.ActuatorSensorState.ActuatorSensorState:1
 #: abaqus.Interaction.CavityRadiationState.CavityRadiationState:1
@@ -9922,7 +9942,6 @@ msgstr ""
 #: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState:1
 #: abaqus.Interaction.CyclicSymmetryState.CyclicSymmetryState:1
 #: abaqus.Interaction.ElasticFoundationState.ElasticFoundationState:1
-#: abaqus.Interaction.FilmConditionState.FilmConditionState:1
 #: abaqus.Interaction.FluidCavityState.FluidCavityState:1
 #: abaqus.Interaction.FluidExchangeState.FluidExchangeState:1
 #: abaqus.Interaction.IncidentWaveState.IncidentWaveState:1
@@ -9960,9 +9979,8 @@ msgid ""
 "<abaqus.Interaction.AcousticImpedanceState.AcousticImpedanceState.interactionPropertyState>`\\"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:15:<autosummary>:1
-#: ../../None:17:<autosummary>:1 ../../None:5:<autosummary>:1
-#: ../../None:7:<autosummary>:1
+#: ../../None:15:<autosummary>:1 ../../None:17:<autosummary>:1
+#: ../../None:5:<autosummary>:1 ../../None:7:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying the propagation state of the "
 "**interactionProperty** member."
@@ -9991,7 +10009,6 @@ msgstr ""
 #: ../../docstring
 #: abaqus.Interaction.AcousticImpedanceState.AcousticImpedanceState.interactionPropertyState:1
 #: abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.interactionPropertyState:1
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.interactionPropertyState:1
 #: abaqus.Interaction.SelfContactExpState.SelfContactExpState.interactionPropertyState:1
 #: abaqus.Interaction.SelfContactStdState.SelfContactStdState.interactionPropertyState:1
 #: abaqus.Interaction.SurfaceToSurfaceExpState.SurfaceToSurfaceExpState.interactionPropertyState:1
@@ -10001,10 +10018,6 @@ msgid ""
 "A SymbolicConstant specifying the propagation state of the "
 "**interactionProperty** member. Possible values are UNSET, SET, "
 "UNCHANGED, and FREED."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:190
-msgid "ActuatorSensor"
 msgstr ""
 
 #: abaqus.Interaction.ActuatorSensor.ActuatorSensor:1 of
@@ -10051,10 +10064,6 @@ msgid ""
 "Check `ActuatorSensor.__init__ on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-actuatorsensorpyc.htm?contextscope=all"
 "#simaker-actuatorsensor__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:200
-msgid "ActuatorSensorProp"
 msgstr ""
 
 #: abaqus.Interaction.ActuatorSensorProp.ActuatorSensorProp:1 of
@@ -10125,10 +10134,6 @@ msgid ""
 "#simaker-actuatorsensorpropsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:210
-msgid "ActuatorSensorState"
-msgstr ""
-
 #: abaqus.Interaction.ActuatorSensorState.ActuatorSensorState:1 of
 msgid ""
 "The ActuatorSensorState object stores the propagating data of an actuator"
@@ -10149,10 +10154,6 @@ msgstr ""
 msgid ""
 ":py:obj:`status "
 "<abaqus.Interaction.ActuatorSensorState.ActuatorSensorState.status>`\\"
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:220
-msgid "CavityRadiation"
 msgstr ""
 
 #: abaqus.Interaction.CavityRadiation.CavityRadiation:1 of
@@ -10545,10 +10546,6 @@ msgid ""
 "OFF."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:230
-msgid "CavityRadiationProp"
-msgstr ""
-
 #: abaqus.Interaction.CavityRadiationProp.CavityRadiationProp:1 of
 msgid ""
 "The CavityRadiationProp object is an interaction property that defines "
@@ -10634,10 +10631,6 @@ msgid ""
 "Check `CavityRadiationProp.setValues on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cavityradiationproppyc.htm?contextscope=all"
 "#simaker-cavityradiationpropsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:240
-msgid "CavityRadiationState"
 msgstr ""
 
 #: abaqus.Interaction.CavityRadiationState.CavityRadiationState:1 of
@@ -10858,10 +10851,6 @@ msgid ""
 "UNCHANGED, and FREED."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:250
-msgid "CohesiveBehavior"
-msgstr ""
-
 #: abaqus.Interaction.CohesiveBehavior.CohesiveBehavior:1 of
 msgid "The CohesiveBehaviour"
 msgstr ""
@@ -11005,10 +10994,6 @@ msgid ""
 "Check `CohesiveBehavior.__init__ on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cohesivebehaviorpyc.htm?contextscope=all"
 "#simaker-cohesivebehavior__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:260
-msgid "ConcentratedFilmCondition"
 msgstr ""
 
 #: abaqus.Interaction.ConcentratedFilmCondition.ConcentratedFilmCondition:1 of
@@ -11196,10 +11181,6 @@ msgid ""
 "#simaker-concentratedfilmconditionsetvaluesinsteppyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:270
-msgid "ConcentratedFilmConditionState"
-msgstr ""
-
 #: abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState:1
 #: of
 msgid ""
@@ -11236,9 +11217,8 @@ msgid ""
 "<abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.sinkTemperature>`\\"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:15:<autosummary>:1 ../../docstring
+#: ../../None:15:<autosummary>:1 ../../docstring
 #: abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.sinkTemperature:1
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.sinkTemperature:1
 #: of
 msgid "A Float specifying the sink temperature."
 msgstr ""
@@ -11249,7 +11229,7 @@ msgid ""
 "<abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.sinkTemperatureState>`\\"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:15:<autosummary>:1
+#: ../../None:15:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying the propagation state of the "
 "**sinkTemperature** member."
@@ -11261,7 +11241,7 @@ msgid ""
 "<abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.sinkAmplitudeState>`\\"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:15:<autosummary>:1
+#: ../../None:15:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying the propagation state of the "
 "**sinkAmplitude** member."
@@ -11273,9 +11253,9 @@ msgid ""
 "<abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.filmCoeff>`\\"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:15:<autosummary>:1 ../../docstring
+#: ../../None:15:<autosummary>:1 ../../docstring
 #: abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.filmCoeff:1
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.filmCoeff:1 of
+#: of
 msgid "A Float specifying the film coefficient."
 msgstr ""
 
@@ -11285,7 +11265,7 @@ msgid ""
 "<abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.filmCoeffState>`\\"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:15:<autosummary>:1
+#: ../../None:15:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying the propagation state of the **filmCoeff** "
 "member."
@@ -11297,7 +11277,7 @@ msgid ""
 "<abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.filmCoeffAmplitudeState>`\\"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:15:<autosummary>:1
+#: ../../None:15:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying the propagation state of the "
 "**filmCoeffAmplitude** member."
@@ -11327,9 +11307,8 @@ msgid ""
 "<abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.interactionProperty>`\\"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:15:<autosummary>:1 ../../docstring
+#: ../../None:15:<autosummary>:1 ../../docstring
 #: abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.interactionProperty:1
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.interactionProperty:1
 #: of
 msgid ""
 "A String specifying the FilmConditionProp object associated with this "
@@ -11342,9 +11321,9 @@ msgid ""
 "<abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.sinkAmplitude>`\\"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:15:<autosummary>:1 ../../docstring
+#: ../../None:15:<autosummary>:1 ../../docstring
 #: abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.sinkAmplitude:1
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.sinkAmplitude:1 of
+#: of
 msgid ""
 "A String specifying the name of the Amplitude object that gives the "
 "variation of the sink temperature."
@@ -11356,9 +11335,8 @@ msgid ""
 "<abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.filmCoeffAmplitude>`\\"
 msgstr ""
 
-#: ../../None:13:<autosummary>:1 ../../None:15:<autosummary>:1 ../../docstring
+#: ../../None:15:<autosummary>:1 ../../docstring
 #: abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.filmCoeffAmplitude:1
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.filmCoeffAmplitude:1
 #: of
 msgid ""
 "A String specifying the name of the Amplitude object that gives the "
@@ -11373,7 +11351,6 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.filmCoeffAmplitudeState:1
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.filmCoeffAmplitudeState:1
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the "
@@ -11383,7 +11360,7 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.filmCoeffState:1
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.filmCoeffState:1 of
+#: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the **filmCoeff** "
 "member. Possible values are UNSET, SET, UNCHANGED, and FREED."
@@ -11400,7 +11377,6 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.sinkAmplitudeState:1
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.sinkAmplitudeState:1
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the "
@@ -11410,16 +11386,11 @@ msgstr ""
 
 #: ../../docstring
 #: abaqus.Interaction.ConcentratedFilmConditionState.ConcentratedFilmConditionState.sinkTemperatureState:1
-#: abaqus.Interaction.FilmConditionState.FilmConditionState.sinkTemperatureState:1
 #: of
 msgid ""
 "A SymbolicConstant specifying the propagation state of the "
 "**sinkTemperature** member. Possible values are UNSET, SET, UNCHANGED, "
 "and FREED."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:280
-msgid "ConcentratedRadiationToAmbient"
 msgstr ""
 
 #: abaqus.Interaction.ConcentratedRadiationToAmbient.ConcentratedRadiationToAmbient:1
@@ -11531,10 +11502,6 @@ msgid ""
 "help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-concentratedradiationtoambientpyc.htm?contextscope=all"
 "#simaker-concentratedradiationtoambientsetvaluesinsteppyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:290
-msgid "ConcentratedRadiationToAmbientState"
 msgstr ""
 
 #: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState:1
@@ -11650,7 +11617,8 @@ msgid ""
 "<abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState.ambientTemperatureAmp>`\\"
 msgstr ""
 
-#: ../../None:11:<autosummary>:1 ../../None:9:<autosummary>:1 ../../docstring
+#: ../../None:11:<autosummary>:1 ../../None:7:<autosummary>:1
+#: ../../None:9:<autosummary>:1 ../../docstring
 #: abaqus.Interaction.ConcentratedRadiationToAmbientState.ConcentratedRadiationToAmbientState.ambientTemperatureAmp:1
 #: abaqus.Interaction.RadiationToAmbientState.RadiationToAmbientState.ambientTemperatureAmp:1
 #: of
@@ -11692,10 +11660,6 @@ msgstr ""
 msgid ""
 "A SymbolicConstant specifying the propagation state of the **emissivity**"
 " member. Possible values are UNSET, SET, UNCHANGED, and FREED."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:300
-msgid "ContactExp"
 msgstr ""
 
 #: abaqus.Interaction.ContactExp.ContactExp:1 of
@@ -11778,10 +11742,6 @@ msgstr ""
 msgid ""
 ":py:obj:`__init__ <abaqus.Interaction.ContactExp.ContactExp.__init__>`\\ "
 "\\(\\)"
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:310
-msgid "ContactStd"
 msgstr ""
 
 #: abaqus.Interaction.ContactStd.ContactStd:1 of
@@ -11905,10 +11865,6 @@ msgstr ""
 msgid ""
 "A symbolic constant specifying edge-to-edge formulation. The default "
 "value is NO."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:320
-msgid "ContactTangentialBehavior"
 msgstr ""
 
 #: abaqus.Interaction.ContactTangentialBehavior.ContactTangentialBehavior:1 of
@@ -12173,10 +12129,6 @@ msgid ""
 "the table data are described below."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:330
-msgid "CyclicSymmetry"
-msgstr ""
-
 #: abaqus.Interaction.CyclicSymmetry.CyclicSymmetry:1 of
 msgid ""
 "The CyclicSymmetry object defines a cyclic symmetry analysis. The "
@@ -12362,10 +12314,6 @@ msgid ""
 "interaction is created."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:340
-msgid "CyclicSymmetryState"
-msgstr ""
-
 #: abaqus.Interaction.CyclicSymmetryState.CyclicSymmetryState:1 of
 msgid ""
 "The CyclicSymmetryState object stores the propagating data for a "
@@ -12517,10 +12465,6 @@ msgid ""
 "UNCHANGED, and FREED."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:350
-msgid "ElasticFoundation"
-msgstr ""
-
 #: abaqus.Interaction.ElasticFoundation.ElasticFoundation:1 of
 msgid ""
 "The ElasticFoundation object defines a mechanical foundation. The "
@@ -12580,10 +12524,6 @@ msgid ""
 "#simaker-elasticfoundationsetvaluesinsteppyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:360
-msgid "ElasticFoundationState"
-msgstr ""
-
 #: abaqus.Interaction.ElasticFoundationState.ElasticFoundationState:1 of
 msgid ""
 "The ElasticFoundationState object stores the propagating data for an "
@@ -12637,10 +12577,6 @@ msgstr ""
 msgid ""
 "A SymbolicConstant specifying the propagation state of the stiffness "
 "member. Possible values are UNSET, SET, UNCHANGED, and FREED."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:370
-msgid "ExpContactControl"
 msgstr ""
 
 #: abaqus.Interaction.ExpContactControl.ExpContactControl:1
@@ -12772,10 +12708,6 @@ msgid ""
 "#simaker-expcontactcontrolsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:380
-msgid "FilmCondition"
-msgstr ""
-
 #: abaqus.Interaction.FilmCondition.FilmCondition:1 of
 msgid ""
 "The FilmCondition object defines film coefficients and associated sink "
@@ -12885,10 +12817,6 @@ msgid ""
 "#simaker-filmconditionsetvaluesinsteppyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:390
-msgid "FilmConditionProp"
-msgstr ""
-
 #: abaqus.Interaction.FilmConditionProp.FilmConditionProp:1 of
 msgid ""
 "The FilmConditionProp object is an interaction property that defines a "
@@ -12949,104 +12877,6 @@ msgid ""
 "Check `FilmConditionProp.setValues on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-filmconditionproppyc.htm?contextscope=all"
 "#simaker-filmconditionpropsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:400
-msgid "FilmConditionState"
-msgstr ""
-
-#: abaqus.Interaction.FilmConditionState.FilmConditionState:1 of
-msgid ""
-"The FilmConditionState object stores the propagating data for a "
-"FilmCondition object. One instance of this object is created internally "
-"by the FilmCondition object for each step. The instance is also deleted "
-"internally by the FilmCondition object. The FilmConditionState object has"
-" no constructor or methods. The FilmConditionState object is derived from"
-" the InteractionState object."
-msgstr ""
-
-#: abaqus.Interaction.FilmConditionState.FilmConditionState:15 of
-msgid "SFILM"
-msgstr ""
-
-#: abaqus.Interaction.FilmConditionState.FilmConditionState:16 of
-msgid "FILM"
-msgstr ""
-
-#: abaqus.Interaction.FilmConditionState.FilmConditionState:19 of
-msgid ""
-"Check `FilmConditionState on help.3ds.com/2018 "
-"<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-filmconditionstatepyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../None:13:<autosummary>:1
-msgid ""
-":py:obj:`interactionPropertyState "
-"<abaqus.Interaction.FilmConditionState.FilmConditionState.interactionPropertyState>`\\"
-msgstr ""
-
-#: ../../None:13:<autosummary>:1
-msgid ""
-":py:obj:`sinkTemperature "
-"<abaqus.Interaction.FilmConditionState.FilmConditionState.sinkTemperature>`\\"
-msgstr ""
-
-#: ../../None:13:<autosummary>:1
-msgid ""
-":py:obj:`sinkTemperatureState "
-"<abaqus.Interaction.FilmConditionState.FilmConditionState.sinkTemperatureState>`\\"
-msgstr ""
-
-#: ../../None:13:<autosummary>:1
-msgid ""
-":py:obj:`sinkAmplitudeState "
-"<abaqus.Interaction.FilmConditionState.FilmConditionState.sinkAmplitudeState>`\\"
-msgstr ""
-
-#: ../../None:13:<autosummary>:1
-msgid ""
-":py:obj:`filmCoeff "
-"<abaqus.Interaction.FilmConditionState.FilmConditionState.filmCoeff>`\\"
-msgstr ""
-
-#: ../../None:13:<autosummary>:1
-msgid ""
-":py:obj:`filmCoeffState "
-"<abaqus.Interaction.FilmConditionState.FilmConditionState.filmCoeffState>`\\"
-msgstr ""
-
-#: ../../None:13:<autosummary>:1
-msgid ""
-":py:obj:`filmCoeffAmplitudeState "
-"<abaqus.Interaction.FilmConditionState.FilmConditionState.filmCoeffAmplitudeState>`\\"
-msgstr ""
-
-#: ../../None:13:<autosummary>:1
-msgid ""
-":py:obj:`interactionProperty "
-"<abaqus.Interaction.FilmConditionState.FilmConditionState.interactionProperty>`\\"
-msgstr ""
-
-#: ../../None:13:<autosummary>:1
-msgid ""
-":py:obj:`sinkAmplitude "
-"<abaqus.Interaction.FilmConditionState.FilmConditionState.sinkAmplitude>`\\"
-msgstr ""
-
-#: ../../None:13:<autosummary>:1
-msgid ""
-":py:obj:`filmCoeffAmplitude "
-"<abaqus.Interaction.FilmConditionState.FilmConditionState.filmCoeffAmplitude>`\\"
-msgstr ""
-
-#: ../../None:13:<autosummary>:1
-msgid ""
-":py:obj:`status "
-"<abaqus.Interaction.FilmConditionState.FilmConditionState.status>`\\"
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:410
-msgid "FluidCavity"
 msgstr ""
 
 #: abaqus.Interaction.FluidCavity.FluidCavity:1 of
@@ -13136,10 +12966,6 @@ msgid ""
 "Check `FluidCavity.setValues on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fluidcavitypyc.htm?contextscope=all"
 "#simaker-fluidcavitysetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:420
-msgid "FluidCavityProperty"
 msgstr ""
 
 #: abaqus.Interaction.FluidCavityProperty.FluidCavityProperty:1 of
@@ -13403,10 +13229,6 @@ msgid ""
 "#simaker-fluidcavitypropertysetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:430
-msgid "FluidCavityState"
-msgstr ""
-
 #: abaqus.Interaction.FluidCavityState.FluidCavityState:1 of
 msgid ""
 "The FluidCavityState object stores the propagating data for an "
@@ -13427,10 +13249,6 @@ msgstr ""
 msgid ""
 ":py:obj:`status "
 "<abaqus.Interaction.FluidCavityState.FluidCavityState.status>`\\"
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:440
-msgid "FluidExchange"
 msgstr ""
 
 #: abaqus.Interaction.FluidExchange.FluidExchange:1 of
@@ -13507,10 +13325,6 @@ msgid ""
 "Check `FluidExchange.setValues on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-fluidexchangepyc.htm?contextscope=all"
 "#simaker-fluidexchangesetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:450
-msgid "FluidExchangeProperty"
 msgstr ""
 
 #: abaqus.Interaction.FluidExchangeProperty.FluidExchangeProperty:1 of
@@ -13602,10 +13416,6 @@ msgid ""
 "#simaker-fluidexchangepropertysetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:460
-msgid "FluidExchangeState"
-msgstr ""
-
 #: abaqus.Interaction.FluidExchangeState.FluidExchangeState:1 of
 msgid ""
 "The FluidExchangeState object stores the propagating data for an "
@@ -13626,10 +13436,6 @@ msgstr ""
 msgid ""
 ":py:obj:`status "
 "<abaqus.Interaction.FluidExchangeState.FluidExchangeState.status>`\\"
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:470
-msgid "FractureCriterion"
 msgstr ""
 
 #: abaqus.Interaction.FractureCriterion.FractureCriterion:1 of
@@ -13856,10 +13662,6 @@ msgid ""
 "default value is 0.2."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:480
-msgid "GapElectricalConductance"
-msgstr ""
-
 #: abaqus.Interaction.GapElectricalConductance.GapElectricalConductance:1 of
 msgid ""
 "The GapElectricalConductance object specifies electrical conductance for "
@@ -14025,10 +13827,6 @@ msgid ""
 "#simaker-gapelectricalconductance__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:490
-msgid "GapHeatGeneration"
-msgstr ""
-
 #: abaqus.Interaction.GapHeatGeneration.GapHeatGeneration:1 of
 msgid ""
 "The GapHeatGeneration object specifies heat generation for a contact "
@@ -14093,10 +13891,6 @@ msgid ""
 "Check `GapHeatGeneration.__init__ on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gapheatgenerationpyc.htm?contextscope=all"
 "#simaker-gapheatgeneration__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:500
-msgid "GeometricProperties"
 msgstr ""
 
 #: abaqus.Interaction.GeometricProperties.GeometricProperties:1 of
@@ -14198,10 +13992,6 @@ msgid ""
 "Check `GeometricProperties.__init__ on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-geometricpropertiespyc.htm?contextscope=all"
 "#simaker-geometricproperties__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:510
-msgid "IncidentWave"
 msgstr ""
 
 #: abaqus.Interaction.IncidentWave.IncidentWave:1 of
@@ -14321,10 +14111,6 @@ msgid ""
 "Check `IncidentWave.setValues on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-incidentwavepyc.htm?contextscope=all"
 "#simaker-incidentwavesetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:520
-msgid "IncidentWaveProperty"
 msgstr ""
 
 #: abaqus.Interaction.IncidentWaveProperty.IncidentWaveProperty:1 of
@@ -14696,10 +14482,6 @@ msgid ""
 "#simaker-incidentwavepropertysetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:530
-msgid "IncidentWaveState"
-msgstr ""
-
 #: abaqus.Interaction.IncidentWaveState.IncidentWaveState:1 of
 msgid ""
 "The IncidentWaveState object stores the propagating data of an "
@@ -14720,10 +14502,6 @@ msgstr ""
 msgid ""
 ":py:obj:`status "
 "<abaqus.Interaction.IncidentWaveState.IncidentWaveState.status>`\\"
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:540
-msgid "MasterSlaveAssignment"
 msgstr ""
 
 #: abaqus.Interaction.MasterSlaveAssignment.MasterSlaveAssignment:1 of
@@ -14881,10 +14659,6 @@ msgid ""
 "to delete."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:550
-msgid "ModelChange"
-msgstr ""
-
 #: abaqus.Interaction.ModelChange.ModelChange:1 of
 msgid ""
 "The ModelChange object defines model change interactions for element "
@@ -15007,10 +14781,6 @@ msgid ""
 "Check `ModelChange.setValuesInStep on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modelchangepyc.htm?contextscope=all"
 "#simaker-modelchangesetvaluesinsteppyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:560
-msgid "NormalBehavior"
 msgstr ""
 
 #: abaqus.Interaction.NormalBehavior.NormalBehavior:1 of
@@ -15243,10 +15013,6 @@ msgid ""
 "#simaker-normalbehavior__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:571
-msgid "PressurePenetration"
-msgstr ""
-
 #: abaqus.Interaction.PressurePenetration.PressurePenetration:1 of
 msgid ""
 "The PressurePenetration object defines pressure penetration loading "
@@ -15356,10 +15122,6 @@ msgid ""
 "previous analysis step. FREED should be used if the load is changed to "
 "have no amplitude reference. You should provide the **amplitude** "
 "argument only if it is valid for the specified step."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:581
-msgid "PressurePenetrationState"
 msgstr ""
 
 #: abaqus.Interaction.PressurePenetrationState.PressurePenetrationState:1 of
@@ -15525,10 +15287,6 @@ msgid ""
 "and FREED."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:591
-msgid "Radiation"
-msgstr ""
-
 #: abaqus.Interaction.Radiation.Radiation:1 of
 msgid ""
 "The Radiation object specifies radiation for a contact interaction "
@@ -15565,10 +15323,6 @@ msgstr ""
 
 #: ../../docstring abaqus.Interaction.Radiation.Radiation.table:1 of
 msgid "Effective viewfactor, FF.Gap clearance, dd."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:601
-msgid "RadiationToAmbient"
 msgstr ""
 
 #: abaqus.Interaction.RadiationToAmbient.RadiationToAmbient:1 of
@@ -15616,15 +15370,6 @@ msgstr ""
 msgid ""
 ":py:obj:`ambientTemperatureAmp "
 "<abaqus.Interaction.RadiationToAmbient.RadiationToAmbient.ambientTemperatureAmp>`\\"
-msgstr ""
-
-#: ../../None:7:<autosummary>:1
-msgid ""
-"A String specifying the name of the Amplitude object that gives the "
-"variation of the ambient temperature with time.Note:Use None in an "
-"Abaqus/Standard analysis to specify that the reference ambient "
-"temperature is applied immediately at the beginning of the step or "
-"linearly over the step."
 msgstr ""
 
 #: ../../None:5:<autosummary>:1
@@ -15683,10 +15428,6 @@ msgid ""
 "Check `RadiationToAmbient.setValuesInStep on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-radiationtoambientpyc.htm?contextscope=all"
 "#simaker-radiationtoambientsetvaluesinsteppyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:611
-msgid "RadiationToAmbientState"
 msgstr ""
 
 #: abaqus.Interaction.RadiationToAmbientState.RadiationToAmbientState:1 of
@@ -15750,10 +15491,6 @@ msgstr ""
 msgid ""
 ":py:obj:`status "
 "<abaqus.Interaction.RadiationToAmbientState.RadiationToAmbientState.status>`\\"
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:621
-msgid "RegionPairs"
 msgstr ""
 
 #: abaqus.Interaction.RegionPairs.RegionPairs:1 of
@@ -15827,10 +15564,6 @@ msgid ""
 "SymbolicConstants are GLOBAL and SELF. When used with a ContactExp "
 "object, the second parameter of each pair can also be a string that "
 "references an Eulerian material surface."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:631
-msgid "SelfContactExp"
 msgstr ""
 
 #: abaqus.Interaction.SelfContactExp.SelfContactExp:1 of
@@ -15925,10 +15658,6 @@ msgid ""
 "#simaker-selfcontactexpsetvaluesinsteppyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:641
-msgid "SelfContactExpState"
-msgstr ""
-
 #: abaqus.Interaction.SelfContactExpState.SelfContactExpState:1 of
 msgid ""
 "The SelfContactExpState object stores the propagating data for a "
@@ -15998,10 +15727,6 @@ msgid ""
 "A SymbolicConstant specifying the propagation state of the "
 "**contactControls** member. Possible values are UNSET, SET, UNCHANGED, "
 "and FREED."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:651
-msgid "SelfContactStd"
 msgstr ""
 
 #: abaqus.Interaction.SelfContactStd.SelfContactStd:1 of
@@ -16150,10 +15875,6 @@ msgid ""
 "**enforcement** = NODE_TO_SURFACE."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:661
-msgid "SelfContactStdState"
-msgstr ""
-
 #: abaqus.Interaction.SelfContactStdState.SelfContactStdState:1 of
 msgid ""
 "The SelfContactStdState object stores the propagating data for a "
@@ -16206,10 +15927,6 @@ msgstr ""
 msgid ""
 ":py:obj:`status "
 "<abaqus.Interaction.SelfContactStdState.SelfContactStdState.status>`\\"
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:671
-msgid "SlidingTransitionAssignment"
 msgstr ""
 
 #: abaqus.Interaction.SlidingTransitionAssignment.SlidingTransitionAssignment:1
@@ -16344,10 +16061,6 @@ msgstr ""
 msgid ""
 "A sequence of Ints specifying the index of each sliding transition "
 "assignment to delete."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:681
-msgid "SmoothingAssignment"
 msgstr ""
 
 #: abaqus.Interaction.SmoothingAssignment.SmoothingAssignment:1 of
@@ -16502,10 +16215,6 @@ msgid ""
 "assignment to delete."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:691
-msgid "StabilizationAssignment"
-msgstr ""
-
 #: abaqus.Interaction.StabilizationAssignment.StabilizationAssignment:1 of
 msgid ""
 "The StabilizationAssignment object stores the contact stabilization "
@@ -16636,10 +16345,6 @@ msgstr ""
 msgid ""
 "A sequence of Ints specifying the index of each contact stabilization "
 "assignment to delete."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:701
-msgid "StdContactControl"
 msgstr ""
 
 #: abaqus.Interaction.StdContactControl.StdContactControl:1 of
@@ -16910,10 +16615,6 @@ msgid ""
 "#simaker-stdcontactcontrolsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:711
-msgid "StdInitialization"
-msgstr ""
-
 #: abaqus.Interaction.StdInitialization.StdInitialization:1 of
 msgid ""
 "Bases: "
@@ -17017,10 +16718,6 @@ msgid ""
 "Check `StdInitialization.setValues on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-stdinitializationpyc.htm?contextscope=all"
 "#simaker-stdinitializationsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:721
-msgid "StdStabilization"
 msgstr ""
 
 #: abaqus.Interaction.StdStabilization.StdStabilization:1 of
@@ -17142,10 +16839,6 @@ msgid ""
 "#simaker-stdstabilizationsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:731
-msgid "StdXplCosimulation"
-msgstr ""
-
 #: abaqus.Interaction.StdXplCosimulation.StdXplCosimulation:1 of
 msgid ""
 "The StdXplCosimulation object defines co-simulation behavior between "
@@ -17223,10 +16916,6 @@ msgid ""
 "#simaker-stdxplcosimulationsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:741
-msgid "StdXplCosimulationState"
-msgstr ""
-
 #: abaqus.Interaction.StdXplCosimulationState.StdXplCosimulationState:1 of
 msgid ""
 "The StdXplCosimulationState object stores the propagating data for a "
@@ -17260,10 +16949,6 @@ msgstr ""
 msgid ""
 ":py:obj:`status "
 "<abaqus.Interaction.StdXplCosimulationState.StdXplCosimulationState.status>`\\"
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:752
-msgid "SurfaceFeatureAssignment"
 msgstr ""
 
 #: abaqus.Interaction.SurfaceFeatureAssignment.SurfaceFeatureAssignment:1 of
@@ -17475,10 +17160,6 @@ msgid ""
 "assignment to delete."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:763
-msgid "SurfaceOffsetAssignment"
-msgstr ""
-
 #: abaqus.Interaction.SurfaceOffsetAssignment.SurfaceOffsetAssignment:1 of
 msgid ""
 "The SurfaceOffsetAssignment object stores the surface offset fraction "
@@ -17638,10 +17319,6 @@ msgstr ""
 msgid ""
 "A sequence of Ints specifying the index of each surface offset fraction "
 "assignment to delete."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:773
-msgid "SurfaceThicknessAssignment"
 msgstr ""
 
 #: abaqus.Interaction.SurfaceThicknessAssignment.SurfaceThicknessAssignment:1
@@ -17821,10 +17498,6 @@ msgstr ""
 msgid ""
 "A sequence of Ints specifying the index of each surface thickness "
 "assignment to delete."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:783
-msgid "SurfaceToSurfaceContactExp"
 msgstr ""
 
 #: abaqus.Interaction.SurfaceToSurfaceContactExp.SurfaceToSurfaceContactExp:1
@@ -18031,10 +17704,6 @@ msgid ""
 "This method switches the master and slave surfaces of a surface-to-"
 "surface contact pair. This command is valid only during the step in which"
 " the interaction is created."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:793
-msgid "SurfaceToSurfaceContactStd"
 msgstr ""
 
 #: abaqus.Interaction.SurfaceToSurfaceContactStd.SurfaceToSurfaceContactStd:1
@@ -18362,10 +18031,6 @@ msgid ""
 "the interaction is created."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:803
-msgid "SurfaceToSurfaceExpState"
-msgstr ""
-
 #: abaqus.Interaction.SurfaceToSurfaceExpState.SurfaceToSurfaceExpState:1 of
 msgid ""
 "The SurfaceToSurfaceExpState object stores the propagating data for a "
@@ -18411,10 +18076,6 @@ msgstr ""
 msgid ""
 ":py:obj:`status "
 "<abaqus.Interaction.SurfaceToSurfaceExpState.SurfaceToSurfaceExpState.status>`\\"
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:813
-msgid "SurfaceToSurfaceStdState"
 msgstr ""
 
 #: abaqus.Interaction.SurfaceToSurfaceStdState.SurfaceToSurfaceStdState:1 of
@@ -18641,10 +18302,6 @@ msgid ""
 "DIRECTION_COSINE."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:824
-msgid "ThermalConductance"
-msgstr ""
-
 #: abaqus.Interaction.ThermalConductance.ThermalConductance:1 of
 msgid ""
 "The ThermalConductance object specifies thermal conductance for a contact"
@@ -18768,10 +18425,6 @@ msgid ""
 "#simaker-thermalconductance__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/interaction.rst:834
-msgid "XFEMCrackGrowth"
-msgstr ""
-
 #: abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth:1 of
 msgid ""
 "The XFEMCrackGrowth object defines the enrichment activation state for an"
@@ -18850,10 +18503,6 @@ msgid ""
 "Check `XFEMCrackGrowth.setValuesInStep on help.3ds.com/2018 "
 "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xfemcrackgrowthpyc.htm?contextscope=all"
 "#simaker-xfemcrackgrowthsetvaluesinsteppyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/interaction.rst:844
-msgid "XFEMCrackGrowthState"
 msgstr ""
 
 #: abaqus.Interaction.XFEMCrackGrowthState.XFEMCrackGrowthState:1 of
@@ -24351,5 +24000,449 @@ msgstr ""
 #~ ":py:obj:`delete "
 #~ "<abaqus.Interaction.XFEMCrackGrowth.XFEMCrackGrowth.delete>`\\ "
 #~ "\\(indices\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the Amplitude object that gives the "
+#~ "variation of the sink temperature, θ0θ0,"
+#~ " with time. The default value is "
+#~ "an empty string.Note:Use None in an "
+#~ "Abaqus/Standard analysis to specify that "
+#~ "the reference sink temperature is "
+#~ "applied immediately at the beginning of"
+#~ " the step or linearly over the "
+#~ "step. Use None in an Abaqus/Explicit "
+#~ "analysis to specify that the reference"
+#~ " sink temperature is applied throughout "
+#~ "the step."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the Amplitude object that gives the "
+#~ "variation of the film coefficient, hh,"
+#~ " with time. The default value is "
+#~ "an empty string.Note:Use None in an "
+#~ "Abaqus/Standard analysis to specify that "
+#~ "the reference film coefficient is "
+#~ "applied immediately at the beginning of"
+#~ " the step or linearly over the "
+#~ "step. Use None in an Abaqus/Explicit "
+#~ "analysis to specify that the reference"
+#~ " film coefficient is applied throughout "
+#~ "the step."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the Amplitude object that gives the "
+#~ "variation of the ambient temperature "
+#~ "with time.Note:Use None in an "
+#~ "Abaqus/Standard analysis to specify that "
+#~ "the reference ambient temperature is "
+#~ "applied immediately at the beginning of"
+#~ " the step or linearly over the "
+#~ "step. Use None in an Abaqus/Explicit "
+#~ "analysis to specify that the reference"
+#~ " ambient temperature is applied throughout"
+#~ " the step."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A SymbolicConstant specifying how the "
+#~ "concentrated radiation is applied to the"
+#~ " boundary of an adaptive mesh domain."
+#~ " Possible values are LAGRANGIAN, SLIDING,"
+#~ " and EULERIAN. The default value is"
+#~ " LAGRANGIAN.Note:*explicitRegionType* applies only "
+#~ "during an Abaqus/Explicit analysis."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the Amplitude object that gives the "
+#~ "variation of the sink temperature, θ0θ0,"
+#~ " with time. The default value is "
+#~ "an empty string.Note:Use empty string in"
+#~ " an Abaqus/Standard analysis to specify "
+#~ "that the reference sink temperature is"
+#~ " applied immediately at the beginning "
+#~ "of the step or linearly over the"
+#~ " step. Use empty string in an "
+#~ "Abaqus/Explicit analysis to specify that "
+#~ "the reference sink temperature is "
+#~ "applied throughout the step."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the Amplitude object that gives the "
+#~ "variation of the ambient temperature "
+#~ "with time.Note:Use None in an "
+#~ "Abaqus/Standard analysis to specify that "
+#~ "the reference ambient temperature is "
+#~ "applied immediately at the beginning of"
+#~ " the step or linearly over the "
+#~ "step. Use None in an Abaqus/Explicit "
+#~ "analysis to specify that the reference"
+#~ " ambient temperature is applied throughout"
+#~ " the step. This argument applies only"
+#~ " when **radiationType** = AMBIENT."
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "ContactControl"
+#~ msgstr ""
+
+#~ msgid "ContactDamage"
+#~ msgstr ""
+
+#~ msgid "ContactDamping"
+#~ msgstr ""
+
+#~ msgid "ContactInitialization"
+#~ msgstr ""
+
+#~ msgid "ContactProperty"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the ratio of "
+#~ "the initial stiffness divided by the "
+#~ "final stiffness. This argument is valid"
+#~ " only when **stiffnessBehavior** = "
+#~ "NONLINEAR. Possible values are 0 ≤ "
+#~ "**stiffnessRatio** << 1. The default "
+#~ "value is 0.01."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the ratio of "
+#~ "the overclosure at the initial stiffness"
+#~ " divided by the overclosure at the"
+#~ " maximum stiffness, both relative to "
+#~ "the clearance at which the contact "
+#~ "pressure is zero. This argument is "
+#~ "valid only when **stiffnessBehavior** = "
+#~ "NONLINEAR. Possible values are 0 ≤ "
+#~ "**stiffnessRatio** << 1. The default "
+#~ "value is 0.33333."
+#~ msgstr ""
+
+#~ msgid "ContactPropertyAssignment"
+#~ msgstr ""
+
+#~ msgid "ContactStabilization"
+#~ msgstr ""
+
+#~ msgid "InitializationAssignment"
+#~ msgstr ""
+
+#~ msgid "InteractionProperty"
+#~ msgstr ""
+
+#~ msgid "InteractionState"
+#~ msgstr ""
+
+#~ msgid "AcousticImpedance"
+#~ msgstr ""
+
+#~ msgid "AcousticImpedanceProp"
+#~ msgstr ""
+
+#~ msgid "AcousticImpedanceState"
+#~ msgstr ""
+
+#~ msgid "ActuatorSensor"
+#~ msgstr ""
+
+#~ msgid "ActuatorSensorProp"
+#~ msgstr ""
+
+#~ msgid "ActuatorSensorState"
+#~ msgstr ""
+
+#~ msgid "CavityRadiation"
+#~ msgstr ""
+
+#~ msgid "CavityRadiationProp"
+#~ msgstr ""
+
+#~ msgid "CavityRadiationState"
+#~ msgstr ""
+
+#~ msgid "CohesiveBehavior"
+#~ msgstr ""
+
+#~ msgid "ConcentratedFilmCondition"
+#~ msgstr ""
+
+#~ msgid "ConcentratedFilmConditionState"
+#~ msgstr ""
+
+#~ msgid "ConcentratedRadiationToAmbient"
+#~ msgstr ""
+
+#~ msgid "ConcentratedRadiationToAmbientState"
+#~ msgstr ""
+
+#~ msgid "ContactExp"
+#~ msgstr ""
+
+#~ msgid "ContactStd"
+#~ msgstr ""
+
+#~ msgid "ContactTangentialBehavior"
+#~ msgstr ""
+
+#~ msgid "CyclicSymmetry"
+#~ msgstr ""
+
+#~ msgid "CyclicSymmetryState"
+#~ msgstr ""
+
+#~ msgid "ElasticFoundation"
+#~ msgstr ""
+
+#~ msgid "ElasticFoundationState"
+#~ msgstr ""
+
+#~ msgid "ExpContactControl"
+#~ msgstr ""
+
+#~ msgid "FilmCondition"
+#~ msgstr ""
+
+#~ msgid "FilmConditionProp"
+#~ msgstr ""
+
+#~ msgid "FilmConditionState"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The FilmConditionState object stores the "
+#~ "propagating data for a FilmCondition "
+#~ "object. One instance of this object "
+#~ "is created internally by the "
+#~ "FilmCondition object for each step. The"
+#~ " instance is also deleted internally "
+#~ "by the FilmCondition object. The "
+#~ "FilmConditionState object has no constructor"
+#~ " or methods. The FilmConditionState object"
+#~ " is derived from the InteractionState "
+#~ "object."
+#~ msgstr ""
+
+#~ msgid "SFILM"
+#~ msgstr ""
+
+#~ msgid "FILM"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Check `FilmConditionState on help.3ds.com/2018 "
+#~ "<https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-filmconditionstatepyc.htm?contextscope=all>`__."
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`interactionPropertyState "
+#~ "<abaqus.Interaction.FilmConditionState.FilmConditionState.interactionPropertyState>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sinkTemperature "
+#~ "<abaqus.Interaction.FilmConditionState.FilmConditionState.sinkTemperature>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sinkTemperatureState "
+#~ "<abaqus.Interaction.FilmConditionState.FilmConditionState.sinkTemperatureState>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sinkAmplitudeState "
+#~ "<abaqus.Interaction.FilmConditionState.FilmConditionState.sinkAmplitudeState>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`filmCoeff "
+#~ "<abaqus.Interaction.FilmConditionState.FilmConditionState.filmCoeff>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`filmCoeffState "
+#~ "<abaqus.Interaction.FilmConditionState.FilmConditionState.filmCoeffState>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`filmCoeffAmplitudeState "
+#~ "<abaqus.Interaction.FilmConditionState.FilmConditionState.filmCoeffAmplitudeState>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`interactionProperty "
+#~ "<abaqus.Interaction.FilmConditionState.FilmConditionState.interactionProperty>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`sinkAmplitude "
+#~ "<abaqus.Interaction.FilmConditionState.FilmConditionState.sinkAmplitude>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`filmCoeffAmplitude "
+#~ "<abaqus.Interaction.FilmConditionState.FilmConditionState.filmCoeffAmplitude>`\\"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":py:obj:`status "
+#~ "<abaqus.Interaction.FilmConditionState.FilmConditionState.status>`\\"
+#~ msgstr ""
+
+#~ msgid "FluidCavity"
+#~ msgstr ""
+
+#~ msgid "FluidCavityProperty"
+#~ msgstr ""
+
+#~ msgid "FluidCavityState"
+#~ msgstr ""
+
+#~ msgid "FluidExchange"
+#~ msgstr ""
+
+#~ msgid "FluidExchangeProperty"
+#~ msgstr ""
+
+#~ msgid "FluidExchangeState"
+#~ msgstr ""
+
+#~ msgid "FractureCriterion"
+#~ msgstr ""
+
+#~ msgid "GapElectricalConductance"
+#~ msgstr ""
+
+#~ msgid "GapHeatGeneration"
+#~ msgstr ""
+
+#~ msgid "GeometricProperties"
+#~ msgstr ""
+
+#~ msgid "IncidentWave"
+#~ msgstr ""
+
+#~ msgid "IncidentWaveProperty"
+#~ msgstr ""
+
+#~ msgid "IncidentWaveState"
+#~ msgstr ""
+
+#~ msgid "MasterSlaveAssignment"
+#~ msgstr ""
+
+#~ msgid "ModelChange"
+#~ msgstr ""
+
+#~ msgid "NormalBehavior"
+#~ msgstr ""
+
+#~ msgid "PressurePenetration"
+#~ msgstr ""
+
+#~ msgid "PressurePenetrationState"
+#~ msgstr ""
+
+#~ msgid "Radiation"
+#~ msgstr ""
+
+#~ msgid "RadiationToAmbient"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String specifying the name of "
+#~ "the Amplitude object that gives the "
+#~ "variation of the ambient temperature "
+#~ "with time.Note:Use None in an "
+#~ "Abaqus/Standard analysis to specify that "
+#~ "the reference ambient temperature is "
+#~ "applied immediately at the beginning of"
+#~ " the step or linearly over the "
+#~ "step."
+#~ msgstr ""
+
+#~ msgid "RadiationToAmbientState"
+#~ msgstr ""
+
+#~ msgid "RegionPairs"
+#~ msgstr ""
+
+#~ msgid "SelfContactExp"
+#~ msgstr ""
+
+#~ msgid "SelfContactExpState"
+#~ msgstr ""
+
+#~ msgid "SelfContactStd"
+#~ msgstr ""
+
+#~ msgid "SelfContactStdState"
+#~ msgstr ""
+
+#~ msgid "SlidingTransitionAssignment"
+#~ msgstr ""
+
+#~ msgid "SmoothingAssignment"
+#~ msgstr ""
+
+#~ msgid "StabilizationAssignment"
+#~ msgstr ""
+
+#~ msgid "StdContactControl"
+#~ msgstr ""
+
+#~ msgid "StdInitialization"
+#~ msgstr ""
+
+#~ msgid "StdStabilization"
+#~ msgstr ""
+
+#~ msgid "StdXplCosimulation"
+#~ msgstr ""
+
+#~ msgid "StdXplCosimulationState"
+#~ msgstr ""
+
+#~ msgid "SurfaceFeatureAssignment"
+#~ msgstr ""
+
+#~ msgid "SurfaceOffsetAssignment"
+#~ msgstr ""
+
+#~ msgid "SurfaceThicknessAssignment"
+#~ msgstr ""
+
+#~ msgid "SurfaceToSurfaceContactExp"
+#~ msgstr ""
+
+#~ msgid "SurfaceToSurfaceContactStd"
+#~ msgstr ""
+
+#~ msgid "SurfaceToSurfaceExpState"
+#~ msgstr ""
+
+#~ msgid "SurfaceToSurfaceStdState"
+#~ msgstr ""
+
+#~ msgid "ThermalConductance"
+#~ msgstr ""
+
+#~ msgid "XFEMCrackGrowth"
+#~ msgstr ""
+
+#~ msgid "XFEMCrackGrowthState"
 #~ msgstr ""
 
