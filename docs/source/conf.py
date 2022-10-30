@@ -66,7 +66,7 @@ extensions = [
     'sphinx_copybutton',
     'sphinx_autodoc_toolbox.collapse',
     'sphinx_autodoc_typehints',
-    'sphinx_codeautolink',
+    # 'sphinx_codeautolink',
     'sphinx_design',
     'sphinx_gallery.gen_gallery',
     'sphinx_togglebutton',
@@ -81,7 +81,7 @@ myst_enable_extensions = [
 ]
 
 # Default behavior for code block concatenation for sphinx_codeautolink
-codeautolink_concat_default = False
+# codeautolink_concat_default = False
 
 # Suppress warnings
 suppress_warnings = [
