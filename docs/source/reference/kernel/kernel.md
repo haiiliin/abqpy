@@ -10,7 +10,7 @@ The customData object is an instance of the RepositorySupport class; for more in
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.CustomKernel.CommandRegister.CommandRegister
         :members:

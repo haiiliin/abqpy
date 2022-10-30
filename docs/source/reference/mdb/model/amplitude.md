@@ -32,7 +32,7 @@ Amplitude commands are used to create arbitrary time or frequency variations of 
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Amplitude.Amplitude.Amplitude
         :members:
