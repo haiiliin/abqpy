@@ -7,4 +7,5 @@ Plot options commands are used to control the appearance of plots in the Visuali
 ```{eval-rst}
 
 .. autopackage:: abaqus.PlotOptions
+    :members:
 ```

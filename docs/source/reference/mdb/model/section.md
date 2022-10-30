@@ -40,4 +40,5 @@ section/connector
 ```{eval-rst}
 
 .. autopackage:: abaqus.Section
+    :members:
 ```

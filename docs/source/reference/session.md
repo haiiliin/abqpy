@@ -36,4 +36,5 @@ session/xy
 ```{eval-rst}
 
 .. autopackage:: abaqus.Session
+    :members:
 ```

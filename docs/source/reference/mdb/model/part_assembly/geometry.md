@@ -7,4 +7,5 @@ The basic geometry commands create geometric entities that are referenced by Par
 ```{eval-rst}
 
 .. autopackage:: abaqus.BasicGeometry
+    :members:
 ```

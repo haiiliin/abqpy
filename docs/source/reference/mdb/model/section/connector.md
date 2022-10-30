@@ -19,4 +19,5 @@ A connector describes the relative motions between two points. A connector also 
 ```{eval-rst}
 
 .. autopackage:: abaqus.Connector
+    :members:
 ```

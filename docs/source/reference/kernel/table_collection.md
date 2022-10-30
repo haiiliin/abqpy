@@ -29,4 +29,5 @@ Table Collection commands are used to create dynamic table types and tables.
 ```{eval-rst}
 
 .. autopackage:: abaqus.TableCollection
+    :members:
 ```

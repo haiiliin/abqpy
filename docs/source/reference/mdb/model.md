@@ -46,4 +46,5 @@ model/step
 ```{eval-rst}
 
 .. autopackage:: abaqus.Model
+    :members:
 ```

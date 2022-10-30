@@ -7,4 +7,5 @@ Odb display commands are used to store the context of an output database for a v
 ```{eval-rst}
 
 .. autopackage:: abaqus.OdbDisplay
+    :members:
 ```

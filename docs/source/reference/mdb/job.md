@@ -22,4 +22,5 @@ The Job object is the abstract base type for other Job objects. The Job object h
 ```{eval-rst}
 
 .. autopackage:: abaqus.Job
+    :members:
 ```

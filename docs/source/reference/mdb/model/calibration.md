@@ -19,4 +19,5 @@ The calibration commands are used for material calibration.
 ```{eval-rst}
 
 .. autopackage:: abaqus.Calibration
+    :members:
 ```

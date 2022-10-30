@@ -7,4 +7,5 @@ Animation commands are used to create and control object-based and image-based a
 ```{eval-rst}
 
 .. autopackage:: abaqus.Animation
+    :members:
 ```

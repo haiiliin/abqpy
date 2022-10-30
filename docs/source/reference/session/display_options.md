@@ -7,4 +7,5 @@ Display options commands are used to store settings that specify how assemblies 
 ```{eval-rst}
 
 .. autopackage:: abaqus.DisplayOptions
+    :members:
 ```

@@ -7,4 +7,5 @@ Display preferences commands are used to edit the Abaqus/CAE preferences file, `
 ```{eval-rst}
 
 .. autopackage:: abaqus.AbaqusCAEDisplayPreferences
+    :members:
 ```

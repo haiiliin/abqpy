@@ -7,4 +7,5 @@ Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operation
 ```{eval-rst}
 
 .. autopackage:: abaqus.Feature
+    :members:
 ```

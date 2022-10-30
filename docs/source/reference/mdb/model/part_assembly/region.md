@@ -56,4 +56,5 @@ Assembly sets contain regions of an assembly and are used by many commands that 
 ```{eval-rst}
 
 .. autopackage:: abaqus.Region
+    :members:
 ```

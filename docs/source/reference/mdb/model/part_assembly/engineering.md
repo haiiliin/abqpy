@@ -18,4 +18,5 @@ A specific type of engineering feature object is designed for each type of engin
 ```{eval-rst}
 
 .. autopackage:: abaqus.EngineeringFeature
+    :members:
 ```

@@ -7,4 +7,5 @@ Miscellaneous Step commands are used for configuring controls, damping, and freq
 ```{eval-rst}
 
 .. autopackage:: abaqus.StepMiscellaneous
+    :members:
 ```

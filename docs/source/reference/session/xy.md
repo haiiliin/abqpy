@@ -18,4 +18,5 @@ XY commands are used to plot X-Y data and store its display attributes and to wr
 ```{eval-rst}
 
 .. autopackage:: abaqus.XY
+    :members:
 ```

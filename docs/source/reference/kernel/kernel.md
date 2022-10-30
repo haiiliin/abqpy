@@ -11,4 +11,5 @@ The customData object is an instance of the RepositorySupport class; for more in
 ```{eval-rst}
 
 .. autopackage:: abaqus.CustomKernel
+    :members:
 ```

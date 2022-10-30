@@ -19,4 +19,5 @@ View commands are used to transform three-dimensional views stored in Session an
 ```{eval-rst}
 
 .. autopackage:: abaqus.UtilityAndView
+    :members:
 ```

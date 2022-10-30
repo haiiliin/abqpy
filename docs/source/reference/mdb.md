@@ -29,33 +29,6 @@ mdb/edit_mesh
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
-
-   .. autoclass:: abaqus.Mdb.MdbBase.MdbBase
-      :members:
-      :special-members: __init__
-      :show-inheritance:
-
-      .. autoclasstoc::
-
-   .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
-      :members:
-      :special-members: __init__
-      :show-inheritance:
-
-      .. autoclasstoc::
-
-   .. autoclass:: abaqus.Part.AcisMdb.AcisMdb
-      :members:
-      :special-members: __init__
-      :show-inheritance:
-
-      .. autoclasstoc::
-
-   .. autoclass:: abaqus.Job.JobMdb.JobMdb
-      :members:
-      :special-members: __init__
-      :show-inheritance:
-
-      .. autoclasstoc::
+.. autopackage:: abaqus.Mdb
+    :members:
 ```

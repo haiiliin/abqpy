@@ -21,4 +21,5 @@ Canvas commands are used to create, position, and modify canvas objects. The Can
 ```{eval-rst}
 
 .. autopackage:: abaqus.Annotation
+    :members:
 ```

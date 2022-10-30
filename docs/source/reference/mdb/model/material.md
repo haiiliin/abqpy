@@ -44,4 +44,5 @@ The Material commands are used to define the materials in a model.
 ```{eval-rst}
 
 .. autopackage:: abaqus.Material
+    :members:
 ```

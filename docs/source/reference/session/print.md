@@ -7,4 +7,5 @@ The print commands are used to print selected canvas objects to a file or to a W
 ```{eval-rst}
 
 .. autopackage:: abaqus.Print
+    :members:
 ```

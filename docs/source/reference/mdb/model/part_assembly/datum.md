@@ -9,4 +9,5 @@ Each command also creates a Datum object in the corresponding datum repository. 
 ```{eval-rst}
 
 .. autopackage:: abaqus.Datum
+    :members:
 ```
