@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:36+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../user/examples/plot.rst:3
+#: ../../user/examples/plot.md:1
 msgid "Generating a customized plot"
 msgstr ""
 
-#: ../../user/examples/plot.rst:5
+#: ../../user/examples/plot.md:3
 msgid ""
 "The following section provides examples of Abaqus Scripting Interface "
 "scripts that open an output database and generate a customized plot. In "
@@ -29,11 +29,11 @@ msgid ""
 "module in Abaqus/CAE."
 msgstr ""
 
-#: ../../user/examples/plot.rst:8
+#: ../../user/examples/plot.md:7
 msgid "Opening the tutorial output database"
 msgstr ""
 
-#: ../../user/examples/plot.rst:10
+#: ../../user/examples/plot.md:9
 msgid ""
 "Each of the following example scripts opens the output database used by "
 "the Visualization module tutorial in Getting Started with Abaqus/CAE. Use"
@@ -41,56 +41,55 @@ msgid ""
 "the scripts:"
 msgstr ""
 
-#: ../../user/examples/plot.rst:17
+#: ../../user/examples/plot.md:17
 msgid "Opening an output database and displaying a contour plot"
 msgstr ""
 
-#: ../../user/examples/plot.rst:19
+#: ../../user/examples/plot.md:19
 msgid ""
 "The following example of a script containing Abaqus Scripting Interface "
-"commands uses the output database used by `Viewing the Output from Your "
-"Analysis "
-"<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEGSARefMap/simagsa-m"
-"-Caevismod-sb.htm?contextscope=all#simagsa-m-Caevismod-sb>`_."
+"commands uses the output database used by [Viewing the Output from Your "
+"Analysis](https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEGSARefMap/simagsa-m"
+"-Caevismod-sb.htm?contextscope=all#simagsa-m-Caevismod-sb)."
 msgstr ""
 
-#: ../../user/examples/plot.rst:21 ../../user/examples/plot.rst:96
+#: ../../user/examples/plot.md:21 ../../user/examples/plot.md:97
 msgid "Use the following command to retrieve the example script:"
 msgstr ""
 
-#: ../../user/examples/plot.rst:27 ../../user/examples/plot.rst:102
+#: ../../user/examples/plot.md:27 ../../user/examples/plot.md:103
 msgid "The script does the following:"
 msgstr ""
 
-#: ../../user/examples/plot.rst:29
+#: ../../user/examples/plot.md:29
 msgid "Creates a viewport, and makes it the current viewport."
 msgstr ""
 
-#: ../../user/examples/plot.rst:30
+#: ../../user/examples/plot.md:30
 msgid "Opens an output database."
 msgstr ""
 
-#: ../../user/examples/plot.rst:31
+#: ../../user/examples/plot.md:31
 msgid "Displays a contour plot."
 msgstr ""
 
-#: ../../user/examples/plot.rst:32
+#: ../../user/examples/plot.md:32
 msgid "Displays the model in the first frame of the third step."
 msgstr ""
 
-#: ../../user/examples/plot.rst:33
+#: ../../user/examples/plot.md:33
 msgid "Sets the number of contour intervals and the contour limits."
 msgstr ""
 
-#: ../../user/examples/plot.rst:34
+#: ../../user/examples/plot.md:34
 msgid "Prints a color image of the viewport to a .png file."
 msgstr ""
 
-#: ../../user/examples/plot.rst:92
+#: ../../user/examples/plot.md:93
 msgid "Printing a contour plot at the end of each step"
 msgstr ""
 
-#: ../../user/examples/plot.rst:94
+#: ../../user/examples/plot.md:95
 msgid ""
 "The following example script demonstrates how to produce and print a "
 "contour plot at the last frame of every step within an output database "
@@ -98,19 +97,29 @@ msgid ""
 "can be viewed within a fixed range."
 msgstr ""
 
-#: ../../user/examples/plot.rst:104
+#: ../../user/examples/plot.md:105
 msgid "Defines the contour limits function."
 msgstr ""
 
-#: ../../user/examples/plot.rst:105
+#: ../../user/examples/plot.md:106
 msgid "Determines the final frame of every step within an output database file."
 msgstr ""
 
-#: ../../user/examples/plot.rst:106
+#: ../../user/examples/plot.md:107
 msgid "Produces a contour plot at the final frame of every step."
 msgstr ""
 
-#: ../../user/examples/plot.rst:107
+#: ../../user/examples/plot.md:108
 msgid "Prints the contour plot to a file."
 msgstr ""
+
+#~ msgid ""
+#~ "The following example of a script "
+#~ "containing Abaqus Scripting Interface commands"
+#~ " uses the output database used by "
+#~ "`Viewing the Output from Your Analysis"
+#~ " "
+#~ "<https://help.3ds.com/2021/English/DSSIMULIA_Established/SIMACAEGSARefMap/simagsa-m"
+#~ "-Caevismod-sb.htm?contextscope=all#simagsa-m-Caevismod-sb>`_."
+#~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,28 +16,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/kernel/kernel.rst:3
+#: ../../reference/kernel/kernel.md:1
 msgid "Custom Kernel"
 msgstr ""
 
-#: ../../reference/kernel/kernel.rst:6
+#: ../../reference/kernel/kernel.md:3
 msgid "The customKernel module augments the mdb, odb, and session objects with an object called customData. The customData object can contain custom data that you created using standard Python objects; for example, dictionaries, strings, numbers, and classes. In addition, the customData object can contain objects that you created using the classes described in this section."
 msgstr ""
 
-#: ../../reference/kernel/kernel.rst:8
-msgid "All objects that you create under the mdb.customData and odb[odbName].customData object will be stored in the Abaqus/CAE model and output database, respectively, when you save the database; all objects that you create under the session.customData object will be lost when you exit Abaqus/CAE."
+#: ../../reference/kernel/kernel.md:5
+msgid "All objects that you create under the mdb.customData and odb\\[odbName\\].customData object will be stored in the Abaqus/CAE model and output database, respectively, when you save the database; all objects that you create under the session.customData object will be lost when you exit Abaqus/CAE."
 msgstr ""
 
-#: ../../reference/kernel/kernel.rst:10
+#: ../../reference/kernel/kernel.md:7
 msgid "The customData object is an instance of the RepositorySupport class; for more information, see RepositorySupport. The classes described in this section register with the GUI infrastructure when you create the class. As a result, if you write a custom GUI script, you can query these objects from the GUI, and you can also be notified when the contents of these objects change so you can update the GUI accordingly. For more information, see Extending the Abaqus Scripting Interface and Accessing kernel data from the GUI."
 msgstr ""
 
-#: ../../reference/kernel/kernel.rst:14
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/kernel/kernel.rst:17
-msgid "CommandRegister"
+#: ../../reference/kernel/kernel.md:9
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:1
@@ -66,11 +62,20 @@ msgstr ""
 #: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:0
 #: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList:0
 #: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:0
+#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:0
 msgid "Public Methods:"
 msgstr ""
 
 #: ../../None:3:<autosummary>:1
 msgid ":py:obj:`__init__ <abaqus.CustomKernel.CommandRegister.CommandRegister.__init__>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister:1
+#: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:1
+#: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList:1
+#: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:1
+#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:1
+msgid "Member Details:"
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister.__init__:5
@@ -103,10 +108,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/CommandRegister.py:docstring of abaqus.CustomKernel.CommandRegister.CommandRegister.__init__:10
 msgid ":class:`CommandRegister`"
-msgstr ""
-
-#: ../../reference/kernel/kernel.rst:27
-msgid "RegisteredDictionary"
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RegisteredDictionary.py:docstring of abaqus.CustomKernel.RegisteredDictionary.RegisteredDictionary:1
@@ -430,10 +431,6 @@ msgstr ""
 msgid "A String or an integer specifying the new name for the key."
 msgstr ""
 
-#: ../../reference/kernel/kernel.rst:37
-msgid "RegisteredList"
-msgstr ""
-
 #: ../../../../src/abaqus/CustomKernel/RegisteredList.py:docstring of abaqus.CustomKernel.RegisteredList.RegisteredList:1
 msgid "Bases: :py:class:`~abaqus.CustomKernel.CommandRegister.CommandRegister`, :py:class:`list`"
 msgstr ""
@@ -690,10 +687,6 @@ msgstr ""
 msgid ":class:`RegisteredList`"
 msgstr ""
 
-#: ../../reference/kernel/kernel.rst:47
-msgid "RegisteredTuple"
-msgstr ""
-
 #: ../../../../src/abaqus/CustomKernel/RegisteredTuple.py:docstring of abaqus.CustomKernel.RegisteredTuple.RegisteredTuple:1
 msgid "Bases: :py:class:`~abaqus.CustomKernel.CommandRegister.CommandRegister`, :py:class:`tuple`"
 msgstr ""
@@ -828,8 +821,8 @@ msgstr ""
 msgid ":class:`RegisteredTuple`"
 msgstr ""
 
-#: ../../reference/kernel/kernel.rst:57
-msgid "RepositorySupport"
+#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:1
+msgid "Bases: :py:class:`~abaqus.CustomKernel.CommandRegister.CommandRegister`"
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:1
@@ -838,6 +831,23 @@ msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport:15
 msgid "Check `RepositorySupport on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-repositorysupportpyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`__init__ <abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__>`\\ \\(\\)"
+msgstr ""
+
+#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:1
+#: ../../None:4:<autosummary>:1
+msgid "This method creates a RepositorySupport object."
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid ":py:obj:`Repository <abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository>`\\ \\(name\\, constructors\\)"
+msgstr ""
+
+#: ../../None:4:<autosummary>:1
+msgid "This method installs a repository on the class."
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository:1
@@ -854,10 +864,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.Repository:13
 msgid "A constructor or sequence of constructors specifying which classes will store their instances in the repository."
-msgstr ""
-
-#: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:1
-msgid "This method creates a RepositorySupport object."
 msgstr ""
 
 #: ../../../../src/abaqus/CustomKernel/RepositorySupport.py:docstring of abaqus.CustomKernel.RepositorySupport.RepositorySupport.__init__:8

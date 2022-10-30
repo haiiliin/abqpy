@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,16 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/annotation.rst:3
-#: ../../reference/mdb/annotation.rst:22
+#: ../../reference/mdb/annotation.md:1
 msgid "Annotation"
 msgstr ""
 
-#: ../../reference/mdb/annotation.rst:5
+#: ../../reference/mdb/annotation.md:3
 msgid "Annotation commands are used to create, position, and modify viewport annotations."
 msgstr ""
 
-#: ../../reference/mdb/annotation.rst:9
+#: ../../reference/mdb/annotation.md:5
 msgid "Create annotations"
 msgstr ""
 
@@ -676,8 +675,8 @@ msgstr ""
 msgid ":class:`XYData`"
 msgstr ""
 
-#: ../../reference/mdb/annotation.rst:19
-msgid "Classes"
+#: ../../reference/mdb/annotation.md:20
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Annotation/Annotation.py:docstring of abaqus.Annotation.Annotation.Annotation:1
@@ -780,6 +779,14 @@ msgstr ""
 msgid "This method translates the Annotation object on the viewport plane."
 msgstr ""
 
+#: ../../../../src/abaqus/Annotation/Annotation.py:docstring of abaqus.Annotation.Annotation.Annotation:1
+#: ../../../../src/abaqus/Annotation/AnnotationViewport.py:docstring of abaqus.Annotation.AnnotationViewport.AnnotationViewport:1
+#: ../../../../src/abaqus/Annotation/AnnotationsToPlotArray.py:docstring of abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:1
+#: ../../../../src/abaqus/Annotation/Arrow.py:docstring of abaqus.Annotation.Arrow.Arrow:1
+#: ../../../../src/abaqus/Annotation/Text.py:docstring of abaqus.Annotation.Text.Text:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/Annotation/Annotation.py:docstring of abaqus.Annotation.Annotation.Annotation.moveAfter:4
 msgid "Check `Annotation.moveAfter on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationpyc.htm?contextscope=all#simaker-annotationmoveafterpyc>`__."
 msgstr ""
@@ -805,10 +812,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Annotation/Annotation.py:docstring of abaqus.Annotation.Annotation.Annotation.translate:9
 msgid "A Float specifying the **Y** translation amount in millimeters."
-msgstr ""
-
-#: ../../reference/mdb/annotation.rst:32
-msgid "AnnotationsToPlotArray"
 msgstr ""
 
 #: ../../../../src/abaqus/Annotation/AnnotationsToPlotArray.py:docstring of abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray:1
@@ -1211,10 +1214,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Annotation/AnnotationsToPlotArray.py:docstring of abaqus.Annotation.AnnotationsToPlotArray.AnnotationsToPlotArray.sendToBack:5
 msgid "Check `AnnotationsToPlotArray.sendToBack on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-annotationstoplotarraypyc.htm?contextscope=all#simaker-annotationstoplotarraysendtobackpyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/annotation.rst:42
-msgid "AnnotationViewport"
 msgstr ""
 
 #: ../../../../src/abaqus/Annotation/AnnotationViewport.py:docstring of abaqus.Annotation.AnnotationViewport.AnnotationViewport:1
@@ -1746,10 +1745,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.UtilityAndView.View.View` object specifying the object that controls viewing of the viewport content."
 msgstr ""
 
-#: ../../reference/mdb/annotation.rst:52
-msgid "Arrow"
-msgstr ""
-
 #: ../../../../src/abaqus/Annotation/Arrow.py:docstring of abaqus.Annotation.Arrow.Arrow:1
 msgid "Bases: :py:class:`~abaqus.Annotation.Annotation.Annotation`, :py:class:`~abaqus._OptionsBase._OptionsBase`"
 msgstr ""
@@ -1897,10 +1892,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Annotation/Arrow.py:docstring of abaqus.Annotation.Arrow.Arrow.translateStartPoint:4
 msgid "Check `Arrow.translateStartPoint on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-arrowpyc.htm?contextscope=all#simaker-arrowtranslatestartpointpyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/annotation.rst:62
-msgid "Text"
 msgstr ""
 
 #: ../../../../src/abaqus/Annotation/Text.py:docstring of abaqus.Annotation.Text.Text:1
