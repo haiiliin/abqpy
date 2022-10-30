@@ -17,7 +17,7 @@ XY commands are used to plot X-Y data and store its display attributes and to wr
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.XY.XYSessionBase.XYSessionBase
         :members:
