@@ -52,8 +52,9 @@ os.environ['ABQPY_MAKE_DOCS'] = 'true'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'sphinx_toolbox.more_autodoc.overloads',
     'autoclasstoc',
+    'hoverxref.extension',
+    'myst_parser',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.linkcode',
@@ -70,8 +71,7 @@ extensions = [
     'sphinx_togglebutton',
     'sphinx_toolbox.confval',
     'sphinx_toolbox.collapse',
-    'hoverxref.extension',
-    'myst_parser',
+    'sphinx_toolbox.more_autodoc.overloads',
 ]
 
 # MyST configuration
