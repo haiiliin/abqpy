@@ -133,10 +133,11 @@ hoverxref_intersphinx = [
 
 # Sphinx gallery configuration
 sphinx_gallery_conf = {
-     'examples_dirs': '../../examples',
-     'gallery_dirs': 'examples',
-     'filename_pattern': '/.+\.py',
-     'plot_gallery': False,
+    'examples_dirs': '../../examples',
+    'gallery_dirs': 'examples',
+    'filename_pattern': '/.+\.py',
+    'plot_gallery': False,
+    'backreferences_dir': '_gallery',
 }
 
 # Show short type hints for user-defined classes and defaults for parameters
