@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/session.rst:7
+#: ../../reference/session.md:5
 msgid "Objects of Session"
 msgstr ""
 
-#: ../../reference/session.rst:3
+#: ../../reference/session.md:1
 msgid "Abaqus Session"
 msgstr ""
 
-#: ../../reference/session.rst:5
+#: ../../reference/session.md:3
 msgid ""
 "Session commands are used to create objects that are not stored with the "
 "model; for example, viewports and display groups. Abaqus/CAE retains "
@@ -33,11 +33,11 @@ msgid ""
 "when the model database is saved."
 msgstr ""
 
-#: ../../reference/session.rst:23
+#: ../../reference/session.md:21
 msgid "Classes"
 msgstr ""
 
-#: ../../reference/session.rst:26
+#: ../../reference/session.md:23
 msgid "Session"
 msgstr ""
 
@@ -1364,8 +1364,24 @@ msgid ""
 "output database. For example::."
 msgstr ""
 
-#: ../../reference/session.rst:36
-msgid "SessionBase"
+#: abaqus.Animation.AnimationSession.AnimationSession:1
+#: abaqus.Canvas.CanvasSession.CanvasSession:1
+#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession:1
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession:1
+#: abaqus.Job.JobSession.JobSession:1 abaqus.Odb.OdbSession.OdbSession:1
+#: abaqus.PathAndProbe.PathSession.PathSession:1
+#: abaqus.Session.AutoColors.AutoColors:1 abaqus.Session.Color.Color:1
+#: abaqus.Session.Drawing.Drawing:1 abaqus.Session.Image.Image:1
+#: abaqus.Session.JournalOptions.JournalOptions:1
+#: abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:1
+#: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:1
+#: abaqus.Session.NumberFormat.NumberFormat:1 abaqus.Session.Session.Session:1
+#: abaqus.Session.SessionBase.SessionBase:1 abaqus.XY.XYSession.XYSession:1 of
+msgid "Member Details:"
+msgstr ""
+
+#: ../../reference/session.md:34
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.Session.AutoColors.AutoColors:1 abaqus.Session.Color.Color:1
@@ -2011,10 +2027,6 @@ msgid ""
 "export."
 msgstr ""
 
-#: ../../reference/session.rst:46
-msgid "AnimationSession"
-msgstr ""
-
 #: abaqus.Animation.AnimationSession.AnimationSession:1
 #: abaqus.Canvas.CanvasSession.CanvasSession:1
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession:1
@@ -2174,10 +2186,6 @@ msgid ""
 " is to capture all canvas objects."
 msgstr ""
 
-#: ../../reference/session.rst:57
-msgid "CanvasSession"
-msgstr ""
-
 #: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:9 of
 msgid ""
 "Check `Viewport on help.3ds.com/2016 "
@@ -2264,10 +2272,6 @@ msgstr ""
 msgid "If **height** is out of range."
 msgstr ""
 
-#: ../../reference/session.rst:68
-msgid "DisplayGroupSession"
-msgstr ""
-
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:9
 #: of
 msgid ""
@@ -2290,10 +2294,6 @@ msgstr ""
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:17
 #: of
 msgid ":class:`DisplayGroup`"
-msgstr ""
-
-#: ../../reference/session.rst:79
-msgid "FieldReportSession"
 msgstr ""
 
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:9
@@ -2501,15 +2501,11 @@ msgstr ""
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:27
 #: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:14
 #: abaqus.XY.XYSession.XYSession.XYDataFromHistory:13
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:13
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:14
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:13 of
 msgid ""
 "An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database "
 "from which data will be read."
-msgstr ""
-
-#: ../../reference/session.rst:90
-msgid "JobSession"
 msgstr ""
 
 #: abaqus.Job.JobSession.JobSession.Queue:1 of
@@ -2600,10 +2596,6 @@ msgid ""
 " is not set: If **fileCopy** = ON and **directory** is empty."
 msgstr ""
 
-#: ../../reference/session.rst:101
-msgid "OdbSession"
-msgstr ""
-
 #: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:9 of
 msgid ""
 "Check `ScratchOdb on help.3ds.com/2016 "
@@ -2622,10 +2614,6 @@ msgstr ""
 
 #: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:15 of
 msgid ":class:`ScratchOdb`"
-msgstr ""
-
-#: ../../reference/session.rst:112
-msgid "PathSession"
 msgstr ""
 
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:9 of
@@ -2832,10 +2820,6 @@ msgstr ""
 
 #: abaqus.PathAndProbe.PathSession.PathSession.Stream:25 of
 msgid ":class:`Stream`"
-msgstr ""
-
-#: ../../reference/session.rst:123
-msgid "XYSession"
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession:1 of
@@ -3536,13 +3520,13 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:35
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:72
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:81
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:89 of
 msgid "A list of XYData objects."
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromFreeBody:36
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:73
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:82
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:90 of
 msgid ":class:`List[XYData]`"
 msgstr ""
@@ -3601,7 +3585,7 @@ msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromHistory:41
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:76
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:66
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:74
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:73 of
 msgid ""
 "A SymbolicConstant specifying the numeric form in which to display "
@@ -3612,7 +3596,7 @@ msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromHistory:45
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:80
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:69
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:78
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:77 of
 msgid ""
 "A Float specifying the angle (in degrees) at which to display results "
@@ -3716,13 +3700,13 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:46
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:19
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:22
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:21 of
 msgid "Variable label: A String specifying the variable; for example, 'U'."
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:47
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:20 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:23 of
 msgid ""
 "Variable output position: A SymbolicConstant specifying the output "
 "position. Possible values are ELEMENT_CENTROID, ELEMENT_FACE, "
@@ -3731,7 +3715,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:50
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:24 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:27 of
 msgid ""
 "Refinement: A tuple specifying the refinement. If the refinement tuple is"
 " omitted, data are written for all components and invariants (if "
@@ -3741,7 +3725,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:55
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:29
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:32
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:30 of
 msgid ""
 "Type: A SymbolicConstant specifying the type of refinement. Possible "
@@ -3749,7 +3733,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:57
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:30
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:33
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:32 of
 msgid ""
 "Label: A String specifying the invariant or the component; for example, "
@@ -3757,7 +3741,7 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:59
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:32
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:35
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:34 of
 msgid ""
 "Location: An optional Dictionary specifying the location. The dictionary "
@@ -3765,19 +3749,19 @@ msgid ""
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:62
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:35
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:38
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:37 of
 msgid "A String specifying the category selection label."
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:63
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:36
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:39
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:38 of
 msgid "A String specifying the section point label."
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession.XYDataFromPath:65
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:38
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:41
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:40 of
 msgid "For example::"
 msgstr ""
@@ -3864,7 +3848,7 @@ msgid ""
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-xydatafromshellthicknesspyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:14
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:16
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:15 of
 msgid ""
 "A SymbolicConstant specifying the position from which output will be "
@@ -3872,7 +3856,7 @@ msgid ""
 "INTEGRATION_POINT, and NODAL."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:16 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:19 of
 msgid ""
 "A tuple of tuples containing the descriptions of variables for which to "
 "extract data from the field. Each tuple specifies the following:  * "
@@ -3899,21 +3883,21 @@ msgid ""
 "points >': 'SNEG, (fraction = -1.0)', }), )"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:16
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:19
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:18 of
 msgid ""
 "A tuple of tuples containing the descriptions of variables for which to "
 "extract data from the field. Each tuple specifies the following:"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:45
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:49
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:48 of
 msgid ""
 "A sequence of Strings specifying element sets or a String specifying a "
 "single element set."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:47
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:52
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:51 of
 msgid ""
 "A sequence of expressions specifying element labels per part instance in "
@@ -3927,7 +3911,7 @@ msgid ""
 "`'3:15:3'`."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:47
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:52
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:51 of
 msgid ""
 "A sequence of expressions specifying element labels per part instance in "
@@ -3938,31 +3922,31 @@ msgid ""
 "following:"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:53
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:58
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:57 of
 msgid "An Int specifying a single element label; for example, `1`."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:54
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:59
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:58 of
 msgid "A String specifying a single element label; for example, `'7'`."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:55
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:60
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:59 of
 msgid ""
 "A String specifying a sequence of element labels; for example, `'3:5'` "
 "and `'3:15:3'`."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:56
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:62
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:61 of
 msgid ""
 "A sequence of Strings specifying node sets or a String specifying a "
 "single node set."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:57 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:64 of
 msgid ""
 "A sequence of expressions specifying node labels per part instance in the"
 " model. Each part instance node expression is a sequence of a String "
@@ -3975,7 +3959,7 @@ msgid ""
 "`'3:15:3'`."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:57
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:64
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:63 of
 msgid ""
 "A sequence of expressions specifying node labels per part instance in the"
@@ -3986,15 +3970,15 @@ msgid ""
 "following:"
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:63 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:70 of
 msgid "An Int specifying a single node label; for example, `1`."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:64 of
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:71 of
 msgid "A String specifying a single node label; for example, `'7'`."
 msgstr ""
 
-#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:65
+#: abaqus.XY.XYSession.XYSession.XYDataFromShellThickness:72
 #: abaqus.XY.XYSession.XYSession.xyDataListFromField:71 of
 msgid ""
 "A String specifying a sequence of node labels; for example, `'3:5'` and "
@@ -4087,10 +4071,6 @@ msgid ""
 " saved as is."
 msgstr ""
 
-#: ../../reference/session.rst:135
-msgid "AutoColors"
-msgstr ""
-
 #: abaqus.Session.AutoColors.AutoColors:1 of
 msgid "The AutoColors object defines a color palette."
 msgstr ""
@@ -4125,10 +4105,6 @@ msgid ""
 "be named colors or represent red, green, blue components in hexadecimal "
 "form. For instance, '#FF0000' for red, '#00FF00' for green and '#0000FF' "
 "for blue"
-msgstr ""
-
-#: ../../reference/session.rst:145
-msgid "Color"
 msgstr ""
 
 #: abaqus.Session.Color.Color:1 of
@@ -4190,10 +4166,6 @@ msgstr ""
 msgid ""
 "A sequence of three Floats specifying the RGB value of the color. The "
 "Float values must be between 0.0 and 1.0."
-msgstr ""
-
-#: ../../reference/session.rst:155
-msgid "Drawing"
 msgstr ""
 
 #: abaqus.Session.Drawing.Drawing:1 of
@@ -4911,10 +4883,6 @@ msgid ""
 " to the setVertices method. The default value is 0."
 msgstr ""
 
-#: ../../reference/session.rst:165
-msgid "Image"
-msgstr ""
-
 #: abaqus.Session.Image.Image:1 of
 msgid ""
 "The Image object is used to store color values and attributes associated "
@@ -5038,10 +5006,6 @@ msgid ""
 " image file format:       ValueError: Unsupported image format     - If "
 "the contents of **fileName** are corrupt or can not be decoded:       "
 "ValueError: Unable to decode image file"
-msgstr ""
-
-#: ../../reference/session.rst:175
-msgid "JournalOptions"
 msgstr ""
 
 #: abaqus.Session.JournalOptions.JournalOptions:1 of
@@ -5191,10 +5155,6 @@ msgid ""
 "values are the same as the default values for the NumberFormat object."
 msgstr ""
 
-#: ../../reference/session.rst:185
-msgid "MemoryReductionOptions"
-msgstr ""
-
 #: abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:1 of
 msgid ""
 "The MemoryReductionOptions object controls the default settings that "
@@ -5238,10 +5198,6 @@ msgstr ""
 msgid ""
 "A Float specifying the percent of **kernelMemoryLimit** at which the "
 "reduced memory mode starts. The default value is 75.0."
-msgstr ""
-
-#: ../../reference/session.rst:195
-msgid "NetworkDatabaseConnector"
 msgstr ""
 
 #: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:1 of
@@ -5548,10 +5504,6 @@ msgid ""
 "Check `NetworkDatabaseConnector.start on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-networkdatabaseconnectorpyc.htm?contextscope=all"
 "#simaker-networkdatabaseconnectorstartpyc>`__."
-msgstr ""
-
-#: ../../reference/session.rst:205
-msgid "NumberFormat"
 msgstr ""
 
 #: abaqus.Session.NumberFormat.NumberFormat:1 of
@@ -11703,5 +11655,56 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The `includeAllElements` argument was added."
+#~ msgstr ""
+
+#~ msgid "SessionBase"
+#~ msgstr ""
+
+#~ msgid "AnimationSession"
+#~ msgstr ""
+
+#~ msgid "CanvasSession"
+#~ msgstr ""
+
+#~ msgid "DisplayGroupSession"
+#~ msgstr ""
+
+#~ msgid "FieldReportSession"
+#~ msgstr ""
+
+#~ msgid "JobSession"
+#~ msgstr ""
+
+#~ msgid "OdbSession"
+#~ msgstr ""
+
+#~ msgid "PathSession"
+#~ msgstr ""
+
+#~ msgid "XYSession"
+#~ msgstr ""
+
+#~ msgid "AutoColors"
+#~ msgstr ""
+
+#~ msgid "Color"
+#~ msgstr ""
+
+#~ msgid "Drawing"
+#~ msgstr ""
+
+#~ msgid "Image"
+#~ msgstr ""
+
+#~ msgid "JournalOptions"
+#~ msgstr ""
+
+#~ msgid "MemoryReductionOptions"
+#~ msgstr ""
+
+#~ msgid "NetworkDatabaseConnector"
+#~ msgstr ""
+
+#~ msgid "NumberFormat"
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/mdb/model/mesh.rst:3
+#: ../../reference/mdb/model/mesh.md:1
 msgid "Mesh"
 msgstr ""
 
-#: ../../reference/mdb/model/mesh.rst:5
+#: ../../reference/mdb/model/mesh.md:3
 msgid ""
 "Mesh commands are used to mesh part instances and regions. Mesh commands "
 "are also used to assign element sizes, element types, and mesh control "
 "parameters."
 msgstr ""
 
-#: ../../reference/mdb/model/mesh.rst:8
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:11
-msgid "Mesh features for Assembly"
+#: ../../reference/mdb/model/mesh.md:5
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly:1 of
@@ -2198,6 +2194,17 @@ msgstr ""
 msgid "This method suppresses features."
 msgstr ""
 
+#: abaqus.Mesh.ElemType.ElemType:1 abaqus.Mesh.MeshAssembly.MeshAssembly:1
+#: abaqus.Mesh.MeshEdge.MeshEdge:1 abaqus.Mesh.MeshEdgeArray.MeshEdgeArray:1
+#: abaqus.Mesh.MeshElement.MeshElement:1
+#: abaqus.Mesh.MeshElementArray.MeshElementArray:1
+#: abaqus.Mesh.MeshFace.MeshFace:1 abaqus.Mesh.MeshFaceArray.MeshFaceArray:1
+#: abaqus.Mesh.MeshNode.MeshNode:1 abaqus.Mesh.MeshNodeArray.MeshNodeArray:1
+#: abaqus.Mesh.MeshPart.MeshPart:1 abaqus.Mesh.MeshStats.MeshStats:1
+#: abaqus.Mesh.MesherOptions.MesherOptions:1 of
+msgid "Member Details:"
+msgstr ""
+
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.assignStackDirection:1
 #: abaqus.Mesh.MeshPart.MeshPart.assignStackDirection:1 of
 msgid ""
@@ -3653,8 +3660,8 @@ msgid ""
 "elements will be positioned near the end where the normalized curve "
 "parameter=0.0. You must provide either the **end1Edges** or the "
 "**end2Edges** argument or both when **biasMethod** = SINGLE and omit both"
-" of them when **biasMethod** = DOUBLE.Note:You can determine which end is"
-" which by the order of the vertex indices returned by "
+" of them when **biasMethod** = DOUBLE. Note: You can determine which end "
+"is which by the order of the vertex indices returned by "
 "[getVertices()](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all"
 "#simaker-edgegetverticespyc)."
 msgstr ""
@@ -3707,9 +3714,9 @@ msgstr ""
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:40
 #: abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias:40 of
 msgid ""
-"A Float specifying the desired largest element size.Note:You must specify"
-" either the **ratio** and **number** or **minSize** and **maxSize** pair "
-"of arguments."
+"A Float specifying the desired largest element size. Note: You must "
+"specify either the **ratio** and **number** or **minSize** and "
+"**maxSize** pair of arguments."
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.seedEdgeByBias:43
@@ -3854,7 +3861,7 @@ msgstr ""
 #: abaqus.Mesh.MeshPart.MeshPart.setBoundaryLayerControls:11 of
 msgid ""
 "A Float specifying the height of the first element layer off boundary. "
-"Possible values are 0.0 << **firstElemSize** ≤ 106."
+"Possible values are 0.0 < **firstElemSize** ≤ 106."
 msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.setBoundaryLayerControls:14
@@ -3904,7 +3911,7 @@ msgstr ""
 #: abaqus.Mesh.MeshPart.MeshPart.setElementType:11 of
 msgid ""
 "A sequence of ElemType objects, one for each element shape applicable to "
-"the regions.Note:If an ElemType object has an UNKNOWN_*xxx* value for "
+"the regions. Note: If an ElemType object has an UNKNOWN_*xxx* value for "
 "**elemCode**, its order will be deduced from the order of other valid "
 "ElemType objects within the same setElementType command. If no valid "
 "ElemType objects can be found, the order will remain unchanged."
@@ -4411,10 +4418,6 @@ msgstr ""
 
 #: abaqus.Mesh.MeshAssembly.MeshAssembly.verifyMeshQuality:68 of
 msgid ":class:`Dict[str`, :class:`int | float | MeshElement]`"
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:21
-msgid "ElemType"
 msgstr ""
 
 #: abaqus.Mesh.ElemType.ElemType:1 abaqus.Mesh.MeshEdge.MeshEdge:1
@@ -4969,10 +4972,6 @@ msgstr ""
 msgid ":class:`ElemType`"
 msgstr ""
 
-#: ../../reference/mdb/model/mesh.rst:31
-msgid "MeshEdge"
-msgstr ""
-
 #: abaqus.Mesh.MeshEdge.MeshEdge:1 of
 msgid ""
 "The MeshEdge object refers to an element edge. It has no constructor or "
@@ -5136,10 +5135,6 @@ msgstr ""
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.getSequenceFromMask:12
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray.sequenceFromLabels:11 of
 msgid ":class:`MeshNodeArray`"
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:41
-msgid "MeshEdgeArray"
 msgstr ""
 
 #: abaqus.Mesh.MeshEdgeArray.MeshEdgeArray:1 of
@@ -5559,10 +5554,6 @@ msgstr ""
 msgid "An exception occurs if the resulting sequence is empty."
 msgstr ""
 
-#: ../../reference/mdb/model/mesh.rst:51
-msgid "MeshElement"
-msgstr ""
-
 #: abaqus.Mesh.MeshElement.MeshElement:1 of
 msgid ""
 "The MeshElement object refers to an element of a native mesh or an orphan"
@@ -5785,10 +5776,6 @@ msgid ""
 "the element belongs to an orphan mesh part. The specified label must be "
 "non-negative and must not be in use by any other element of the same "
 "part."
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:61
-msgid "MeshElementArray"
 msgstr ""
 
 #: abaqus.Mesh.MeshElementArray.MeshElementArray:1 of
@@ -6092,10 +6079,6 @@ msgstr ""
 msgid "A sequence of Ints specifying the labels."
 msgstr ""
 
-#: ../../reference/mdb/model/mesh.rst:71
-msgid "MesherOptions"
-msgstr ""
-
 #: abaqus.Mesh.MesherOptions.MesherOptions:1 of
 msgid ""
 "The MesherOptions object controls the default settings that Abaqus uses "
@@ -6162,10 +6145,6 @@ msgid ""
 "A Boolean specifying whether Abaqus/CAE should attempt to minimize the "
 "mesh transition when it moves from a coarse mesh to a fine mesh. The "
 "default value is ON."
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:81
-msgid "MeshFace"
 msgstr ""
 
 #: abaqus.Mesh.MeshFace.MeshFace:1 of
@@ -6451,10 +6430,6 @@ msgstr ""
 msgid ":class:`Sequence[float]`"
 msgstr ""
 
-#: ../../reference/mdb/model/mesh.rst:91
-msgid "MeshFaceArray"
-msgstr ""
-
 #: abaqus.Mesh.MeshFaceArray.MeshFaceArray:1 of
 msgid ""
 "Bases: :py:class:`~typing.List`\\ "
@@ -6529,10 +6504,6 @@ msgid ""
 "Check `MeshFaceArray.getSequenceFromMask on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshfacearraypyc.htm?contextscope=all"
 "#simaker-meshfacearraygetsequencefrommaskpyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:101
-msgid "MeshNode"
 msgstr ""
 
 #: abaqus.Mesh.MeshNode.MeshNode:1 of
@@ -6694,10 +6665,6 @@ msgstr ""
 
 #: abaqus.Mesh.MeshNode.MeshNode.setValues:11 of
 msgid ":obj:`None`"
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:111
-msgid "MeshNodeArray"
 msgstr ""
 
 #: abaqus.Mesh.MeshNodeArray.MeshNodeArray:1 of
@@ -6967,10 +6934,6 @@ msgid ""
 "Check `MeshNodeArray.sequenceFromLabels on help.3ds.com/2016 "
 "<https://help.3ds.com/2016/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-meshnodearraypyc.htm?contextscope=all"
 "#simaker-meshnodearraysequencefromlabelspyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:121
-msgid "MeshPart"
 msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart:1 of
@@ -9614,10 +9577,6 @@ msgstr ""
 
 #: abaqus.Mesh.MeshPart.MeshPart.verifyMeshQuality:69 of
 msgid ":class:`Dict[str`, :class:`int | float`, :class:`MeshElement]`"
-msgstr ""
-
-#: ../../reference/mdb/model/mesh.rst:131
-msgid "MeshStats"
 msgstr ""
 
 #: abaqus.Mesh.MeshStats.MeshStats:1 of
@@ -14065,5 +14024,92 @@ msgstr ""
 #~ ":py:obj:`seedEdgeByBias "
 #~ "<abaqus.Mesh.MeshPart.MeshPart.seedEdgeByBias>`\\ "
 #~ "\\(biasMethod\\, end1Edges\\, ...\\[\\, ...\\]\\)"
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "Mesh features for Assembly"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of Edge objects specifying"
+#~ " the edges to seed. The smallest "
+#~ "elements will be positioned near the "
+#~ "end where the normalized curve "
+#~ "parameter=0.0. You must provide either "
+#~ "the **end1Edges** or the **end2Edges** "
+#~ "argument or both when **biasMethod** ="
+#~ " SINGLE and omit both of them "
+#~ "when **biasMethod** = DOUBLE.Note:You can "
+#~ "determine which end is which by "
+#~ "the order of the vertex indices "
+#~ "returned by "
+#~ "[getVertices()](https://help.3ds.com/2022/english/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgepyc.htm?ContextScope=all"
+#~ "#simaker-edgegetverticespyc)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the desired largest"
+#~ " element size.Note:You must specify either"
+#~ " the **ratio** and **number** or "
+#~ "**minSize** and **maxSize** pair of "
+#~ "arguments."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the height of "
+#~ "the first element layer off boundary."
+#~ " Possible values are 0.0 << "
+#~ "**firstElemSize** ≤ 106."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A sequence of ElemType objects, one "
+#~ "for each element shape applicable to "
+#~ "the regions.Note:If an ElemType object "
+#~ "has an UNKNOWN_*xxx* value for "
+#~ "**elemCode**, its order will be deduced"
+#~ " from the order of other valid "
+#~ "ElemType objects within the same "
+#~ "setElementType command. If no valid "
+#~ "ElemType objects can be found, the "
+#~ "order will remain unchanged."
+#~ msgstr ""
+
+#~ msgid "ElemType"
+#~ msgstr ""
+
+#~ msgid "MeshEdge"
+#~ msgstr ""
+
+#~ msgid "MeshEdgeArray"
+#~ msgstr ""
+
+#~ msgid "MeshElement"
+#~ msgstr ""
+
+#~ msgid "MeshElementArray"
+#~ msgstr ""
+
+#~ msgid "MesherOptions"
+#~ msgstr ""
+
+#~ msgid "MeshFace"
+#~ msgstr ""
+
+#~ msgid "MeshFaceArray"
+#~ msgstr ""
+
+#~ msgid "MeshNode"
+#~ msgstr ""
+
+#~ msgid "MeshNodeArray"
+#~ msgstr ""
+
+#~ msgid "MeshPart"
+#~ msgstr ""
+
+#~ msgid "MeshStats"
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2016\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,278 +16,278 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../tutorials.rst:3
+#: ../../tutorials.md:1
 msgid "Tutorials"
 msgstr ""
 
-#: ../../tutorials.rst:6
+#: ../../tutorials.md:4
 msgid "The abqpy is built in Python 3 but the Python interpreter of Abaqus is Python 2, so you must write codes that are compatible with Python 2 and Python 3."
 msgstr ""
 
-#: ../../tutorials.rst:8
-msgid "For more examples, check `abqpy/examples at main · haiiliin/abqpy <https://github.com/haiiliin/abqpy/tree/main/examples>`_."
+#: ../../tutorials.md:7
+msgid "For more examples, check [abqpy/examples at main · haiiliin/abqpy](https://github.com/haiiliin/abqpy/tree/main/examples)."
 msgstr ""
 
-#: ../../tutorials.rst:11
+#: ../../tutorials.md:9
 msgid "Usually in Abaqus, we have several things to do:"
 msgstr ""
 
-#: ../../tutorials.rst:13
+#: ../../tutorials.md:11
 msgid "Build the model"
 msgstr ""
 
-#: ../../tutorials.rst:14
+#: ../../tutorials.md:12
 msgid "Submit and monitor the job"
 msgstr ""
 
-#: ../../tutorials.rst:15
+#: ../../tutorials.md:13
 msgid "Get the output data and visualize it"
 msgstr ""
 
-#: ../../tutorials.rst:19
+#: ../../tutorials.md:15
 msgid "Build an Abaqus model"
 msgstr ""
 
-#: ../../tutorials.rst:21
+#: ../../tutorials.md:17
 msgid "The most convenient way to build an Abaqus model is to do it in Abaqus CAE. When we use the Abaqus/CAE graphical user interface (GUI) to create a model and to visualize the results, commands are issued internally by Abaqus/CAE after every operation. These commands reflect the geometry you created along with the options and settings you selected from each dialog box."
 msgstr ""
 
-#: ../../tutorials.rst:26
+#: ../../tutorials.md:22
 msgid "Therefore, we can build our Abaqus model using Python script. We can totally use the Python script to build our Abaqus model, although it is not an efficient way. Usually, we do something in Abaqus/CAE, and check the Python script in the reply file (`.rpy`). And then copy it to our script file, this works, but not nicely."
 msgstr ""
 
-#: ../../tutorials.rst:31
+#: ../../tutorials.md:27
 msgid "However, if type hints are provided in Python scripting of Abaqus, things will getting much easier, and that is what `abqpy` does."
 msgstr ""
 
-#: ../../tutorials.rst:35
+#: ../../tutorials.md:30
 msgid "The example model described in the following is simple, there is a square structure, the vertical displacement of the bottom face is fixed, and there is a vertical pressure in the top surface, the Abaqus model is showed as follows:"
 msgstr ""
 
-#: ../../tutorials.rst:44
+#: ../../tutorials.md:37
 msgid "Header of the script"
 msgstr ""
 
-#: ../../tutorials.rst:46
+#: ../../tutorials.md:39
 msgid "Usually, when we use Python script to build the model, we need to import the following modules:"
 msgstr ""
 
-#: ../../tutorials.rst:55
+#: ../../tutorials.md:51
 msgid "Module `abaqus` contains two most important variable `mdb` and `session` which control the model. Module `abaqusConstants` contains constant strings used in modelling, i.e., when we defines a part using the following code:"
 msgstr ""
 
-#: ../../tutorials.rst:62
+#: ../../tutorials.md:61
 msgid "`THREE_D` indicates the part is a 3D part, `DEFORMABLE_BODY` indicates the part is deformable."
 msgstr ""
 
-#: ../../tutorials.rst:64
+#: ../../tutorials.md:63
 msgid "Module `driverUtils` contains an important function `executeOnCaeStartup`, this function will be execute each time we open the Abaqus, so we need to call this function in our Python script. Now, the header of our Python script would be like:"
 msgstr ""
 
-#: ../../tutorials.rst:77
+#: ../../tutorials.md:77
 msgid "Create parts"
 msgstr ""
 
-#: ../../tutorials.rst:79
-msgid "First we need to create a sketch that will be used to create the part, we need to use :py:meth:`~abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch` to create a sketch:"
+#: ../../tutorials.md:79
+msgid "First we need to create a sketch that will be used to create the part, we need to use {py:meth}`~abaqus.Sketcher.SketchModel.SketchModel.ConstrainedSketch` to create a sketch:"
 msgstr ""
 
-#: ../../tutorials.rst:88
+#: ../../tutorials.md:91
 msgid "In this code, we draw a sketch with a square. Now we can create a part using this sketch:"
 msgstr ""
 
-#: ../../tutorials.rst:96
-msgid "The first line creates a 3D and deformable part. Then we use the :py:meth:`~abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude` method to create a part using the sketch."
+#: ../../tutorials.md:102
+msgid "The first line creates a 3D and deformable part. Then we use the {py:meth}`~abaqus.Part.PartFeature.PartFeature.BaseSolidExtrude` method to create a part using the sketch."
 msgstr ""
 
-#: ../../tutorials.rst:100
+#: ../../tutorials.md:104
 msgid "Create some sets for boundary conditions and loads"
 msgstr ""
 
-#: ../../tutorials.rst:102
+#: ../../tutorials.md:106
 msgid "Unlike building a model in Abaqus/CAE, we can just click the nodes/faces to create sets, when we use a Python script to build the model, we can use coordinates to find nodes/faces we need."
 msgstr ""
 
-#: ../../tutorials.rst:104
-msgid "We can use :py:meth:`~abaqus.Region.RegionPart.RegionPart.Set` and :py:meth:`~abaqus.Region.RegionPart.RegionPart.Surface` to create sets and surfaces:"
+#: ../../tutorials.md:108
+msgid "We can use {py:meth}`~abaqus.Region.RegionPart.RegionPart.Set` and {py:meth}`~abaqus.Region.RegionPart.RegionPart.Surface` to create sets and surfaces:"
 msgstr ""
 
-#: ../../tutorials.rst:116
+#: ../../tutorials.md:122
 msgid "Merge parts to assembly"
 msgstr ""
 
-#: ../../tutorials.rst:118
-msgid "We can use :py:meth:`~abaqus.Assembly.AssemblyBase.AssemblyBase.Instance` to create instances："
+#: ../../tutorials.md:124
+msgid "We can use {py:meth}`~abaqus.Assembly.AssemblyBase.AssemblyBase.Instance` to create instances："
 msgstr ""
 
-#: ../../tutorials.rst:127
+#: ../../tutorials.md:135
 msgid "Create materials and sections, and assign materials to sections"
 msgstr ""
 
-#: ../../tutorials.rst:129
-msgid "First we create a Material object using :py:meth:`~abaqus.Material.MaterialModel.MaterialModel.Material`:"
+#: ../../tutorials.md:137
+msgid "First we create a Material object using {py:meth}`~abaqus.Material.MaterialModel.MaterialModel.Material`:"
 msgstr ""
 
-#: ../../tutorials.rst:136
-msgid "Then we assign some properties to the Material object, i.e., :py:meth:`~abaqus.Material.Material.Material.Elastic` and :py:meth:`~abaqus.Material.Material.Material.Density`:"
+#: ../../tutorials.md:147
+msgid "Then we assign some properties to the Material object, i.e., {py:meth}`~abaqus.Material.Material.Material.Elastic` and {py:meth}`~abaqus.Material.Material.Material.Density`:"
 msgstr ""
 
-#: ../../tutorials.rst:144
-msgid "Then we create a :py:meth:`~abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection` and assign the material to the section (:py:meth:`~abaqus.Property.PropertyPart.PropertyPart.SectionAssignment`):"
+#: ../../tutorials.md:158
+msgid "Then we create a {py:meth}`~abaqus.Section.SectionModel.SectionModel.HomogeneousSolidSection` and assign the material to the section ({py:meth}`~abaqus.Property.PropertyPart.PropertyPart.SectionAssignment`):"
 msgstr ""
 
-#: ../../tutorials.rst:154
+#: ../../tutorials.md:169
 msgid "Create steps"
 msgstr ""
 
-#: ../../tutorials.rst:156
-msgid "It is easy to create a :py:meth:`~abaqus.Step.StepModel.StepModel.StaticStep`:"
+#: ../../tutorials.md:171
+msgid "It is easy to create a {py:meth}`~abaqus.Step.StepModel.StepModel.StaticStep`:"
 msgstr ""
 
-#: ../../tutorials.rst:167
+#: ../../tutorials.md:183
 msgid "Specify output requests"
 msgstr ""
 
-#: ../../tutorials.rst:169
-msgid "We can use the :py:meth:`~abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest` and :py:meth:`~abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest` to specify field output and history output information."
+#: ../../tutorials.md:185
+msgid "We can use the {py:meth}`~abaqus.StepOutput.OutputModel.OutputModel.FieldOutputRequest` and {py:meth}`~abaqus.StepOutput.OutputModel.OutputModel.HistoryOutputRequest` to specify field output and history output information."
 msgstr ""
 
-#: ../../tutorials.rst:179
+#: ../../tutorials.md:196
 msgid "Create boundary conditions"
 msgstr ""
 
-#: ../../tutorials.rst:181
-msgid "We can use :py:meth:`~abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC` to create a displacement boundary condition:"
+#: ../../tutorials.md:198
+msgid "We can use {py:meth}`~abaqus.BoundaryCondition.BoundaryConditionModel.BoundaryConditionModel.DisplacementBC` to create a displacement boundary condition:"
 msgstr ""
 
-#: ../../tutorials.rst:190
+#: ../../tutorials.md:210
 msgid "It should be noted that region of the boundary condition should be a region of the instances instead of parts, since sets created in parts are copied to the instance, we can use the sets in the parts that we defined before."
 msgstr ""
 
-#: ../../tutorials.rst:193
+#: ../../tutorials.md:212
 msgid "Create loads"
 msgstr ""
 
-#: ../../tutorials.rst:195
-msgid "We can use :py:meth:`~abaqus.Load.LoadModel.LoadModel.Pressure` ro create a pressure:"
+#: ../../tutorials.md:214
+msgid "We can use {py:meth}`~abaqus.Load.LoadModel.LoadModel.Pressure` ro create a pressure:"
 msgstr ""
 
-#: ../../tutorials.rst:206
+#: ../../tutorials.md:226
 msgid "Mesh"
 msgstr ""
 
-#: ../../tutorials.rst:208
-msgid "To mesh the model, we have to set the :py:class:`~abaqus.Mesh.ElemType.ElemType`, which is defined in the `mesh` module, so we need to import `mesh` module:"
+#: ../../tutorials.md:228
+msgid "To mesh the model, we have to set the {py:class}`~abaqus.Mesh.ElemType.ElemType`, which is defined in the `mesh` module, so we need to import `mesh` module:"
 msgstr ""
 
-#: ../../tutorials.rst:224
+#: ../../tutorials.md:245
 msgid "Create jobs"
 msgstr ""
 
-#: ../../tutorials.rst:226
-msgid "We can use :py:meth:`~abaqus.Job.JobMdb.JobMdb.Job` to create a job:"
+#: ../../tutorials.md:247
+msgid "We can use {py:meth}`~abaqus.Job.JobMdb.JobMdb.Job` to create a job:"
 msgstr ""
 
-#: ../../tutorials.rst:233
+#: ../../tutorials.md:257
 msgid "Then we can write the model to an input file (`.inp`):"
 msgstr ""
 
-#: ../../tutorials.rst:240
+#: ../../tutorials.md:267
 msgid "Then we can submit the job:"
 msgstr ""
 
-#: ../../tutorials.rst:250
+#: ../../tutorials.md:278
 msgid "Save the Abaqus model to a `.cae` file"
 msgstr ""
 
-#: ../../tutorials.rst:252
-msgid "We can use :py:class:`~abaqus.Mdb.MdbBase.MdbBase.saveAs` to save the Abaqus model to a `.cae` file:"
+#: ../../tutorials.md:280
+msgid "We can use {py:class}`~abaqus.Mdb.MdbBase.MdbBase.saveAs` to save the Abaqus model to a `.cae` file:"
 msgstr ""
 
-#: ../../tutorials.rst:260
+#: ../../tutorials.md:290
 msgid "How the model is submitted to Abaqus?"
 msgstr ""
 
-#: ../../tutorials.rst:262
+#: ../../tutorials.md:292
 msgid "It should be noted that when we execute all the above codes, the Python script have to not be sent to the Python interpreter. Instead, we have to call the Abaqus kernel, using the command like this:"
 msgstr ""
 
-#: ../../tutorials.rst:269
-msgid "In order to make it simple, this has been done inside the :py:mod:`~abaqus` module, in the :py:meth:`~abqpy.abaqus.run` function:"
+#: ../../tutorials.md:302
+msgid "In order to make it simple, this has been done inside the {py:mod}`~abaqus` module, in the {py:meth}`~abqpy.abaqus.run` function:"
 msgstr ""
 
-#: ../../tutorials.rst:286
-msgid "This function is called when we import the :py:mod:`~abaqus` module, with the line ``from abaqus import *``. So, we have to import the :py:mod:`~abaqus` module to submit the model when we use `abqpy` to build an Abaqus model. All the functions mentioned above are included in `abqpy`, however, nothing has been done inside this functions, they are just provided for type hints."
+#: ../../tutorials.md:322
+msgid "This function is called when we import the {py:mod}`~abaqus` module, with the line `from abaqus import *`. So, we have to import the {py:mod}`~abaqus` module to submit the model when we use `abqpy` to build an Abaqus model. All the functions mentioned above are included in `abqpy`, however, nothing has been done inside this functions, they are just provided for type hints."
 msgstr ""
 
-#: ../../tutorials.rst:289
+#: ../../tutorials.md:324
 msgid "The whole script"
 msgstr ""
 
-#: ../../tutorials.rst:291
+#: ../../tutorials.md:326
 msgid "The whole script of this example is showed as follows:"
 msgstr ""
 
-#: ../../tutorials.rst:294
+#: ../../tutorials.md:332
 msgid "compression.py"
 msgstr ""
 
-#: ../../tutorials.rst:373
+#: ../../tutorials.md:410
 msgid "Extract output data"
 msgstr ""
 
-#: ../../tutorials.rst:375
+#: ../../tutorials.md:412
 msgid "If we want to extract the output data, we have to write an output script."
 msgstr ""
 
-#: ../../tutorials.rst:378
+#: ../../tutorials.md:414
 msgid "Header of the output script"
 msgstr ""
 
-#: ../../tutorials.rst:380
+#: ../../tutorials.md:416
 msgid "Similarly, we have to import some modules:"
 msgstr ""
 
-#: ../../tutorials.rst:393
+#: ../../tutorials.md:430
 msgid "Open the output database"
 msgstr ""
 
-#: ../../tutorials.rst:395
-msgid "We can use :py:meth:`~abaqus.Session.SessionBase.SessionBase.openOdb` to open the output database:"
+#: ../../tutorials.md:432
+msgid "We can use {py:meth}`~abaqus.Session.SessionBase.SessionBase.openOdb` to open the output database:"
 msgstr ""
 
-#: ../../tutorials.rst:405
+#: ../../tutorials.md:444
 msgid "Extract the data"
 msgstr ""
 
-#: ../../tutorials.rst:407
-msgid "We can use the :py:meth:`~abaqus.XY.XYSession.XYSession.xyDataListFromField` to extract the output data:"
+#: ../../tutorials.md:446
+msgid "We can use the {py:meth}`~abaqus.XY.XYSession.XYSession.xyDataListFromField` to extract the output data:"
 msgstr ""
 
-#: ../../tutorials.rst:416
+#: ../../tutorials.md:458
 msgid "`dataList` is a list of `XYData` objects. `XYData` is a data type defined in Abaqus, the data is stored in tuples of tuples, so we can simply save it to a file, i.e., using the `numpy` (`numpy` is installed in Python interpreter of Abaqus already):"
 msgstr ""
 
-#: ../../tutorials.rst:428
+#: ../../tutorials.md:471
 msgid "Results of above example"
 msgstr ""
 
-#: ../../tutorials.rst:430
+#: ../../tutorials.md:473
 msgid "The distribution of `U3` of above model is showed as follows:"
 msgstr ""
 
-#: ../../tutorials.rst:438
+#: ../../tutorials.md:482
 msgid "The distribution of the vertical displacement of a point in the top surface is showed as follows:"
 msgstr ""
 
-#: ../../tutorials.rst:447
+#: ../../tutorials.md:491
 msgid "The whole output script"
 msgstr ""
 
-#: ../../tutorials.rst:449
+#: ../../tutorials.md:493
 msgid "The whole output script of this example is showed as follows:"
 msgstr ""
 
-#: ../../tutorials.rst:452
+#: ../../tutorials.md:499
 msgid "compression-output.py"
 msgstr ""
