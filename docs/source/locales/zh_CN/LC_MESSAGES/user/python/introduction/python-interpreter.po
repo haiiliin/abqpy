@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-05 00:16+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../user/python/introduction/python-interpreter.rst:3
+#: ../../user/python/introduction/python-interpreter.md:9
 msgid "Using the Python interpreter"
 msgstr ""
 
-#: ../../user/python/introduction/python-interpreter.rst:5
+#: ../../user/python/introduction/python-interpreter.md:11
 msgid ""
 "Python is an interpreted language. This means you can type a statement "
 "and view the results without having to compile and link your scripts. "
@@ -31,14 +31,14 @@ msgid ""
 "the Python interpreter, do one of the following:"
 msgstr ""
 
-#: ../../user/python/introduction/python-interpreter.rst:7
+#: ../../user/python/introduction/python-interpreter.md:13
 msgid ""
 "If you have Abaqus installed on your Linux or Windows workstation, type "
 "abaqus python at the system prompt. Python enters its interpretive mode "
 "and displays the >>> prompt."
 msgstr ""
 
-#: ../../user/python/introduction/python-interpreter.rst:13
+#: ../../user/python/introduction/python-interpreter.md:20
 msgid ""
 "You can enter Python statements at the >>> prompt. To see the value of a "
 "variable or expression, type the variable name or expression at the "
@@ -46,16 +46,16 @@ msgid ""
 " systems or **Ctrl + Z + Enter** on Windows systems."
 msgstr ""
 
-#: ../../user/python/introduction/python-interpreter.rst:15
+#: ../../user/python/introduction/python-interpreter.md:22
 msgid ""
 "You can also use Python to run a script directly by typing abaqus python "
 "**scriptname.py** at the system prompt. Abaqus will run the script "
 "through the Python interpreter and return you to the system prompt. For "
-"an example of running a Python script using Abaqus, see :ref:`creating-"
+"an example of running a Python script using Abaqus, see {ref}`creating-"
 "functions`."
 msgstr ""
 
-#: ../../user/python/introduction/python-interpreter.rst:17
+#: ../../user/python/introduction/python-interpreter.md:24
 msgid ""
 "You can also use the Python interpreter provided in the command line "
 "interface by Abaqus/CAE. The command line is at the bottom of the "
@@ -63,19 +63,15 @@ msgid ""
 "displays the Python >>> prompt in the command line interface."
 msgstr ""
 
-#: ../../user/python/introduction/python-interpreter.rst:20
+#: ../../user/python/introduction/python-interpreter.md:26
 msgid ""
-"Click |afxI_commandLine| in the lower left corner of the main window to "
-"display the command line interface. You may want to drag the handle at "
-"the top of the command line interface to increase the number of lines "
+"Click {{ afxI_commandLine }} in the lower left corner of the main window "
+"to display the command line interface. You may want to drag the handle at"
+" the top of the command line interface to increase the number of lines "
 "displayed."
 msgstr ""
 
-#: ../../user/python/introduction/python-interpreter.rst:28
-msgid "afxI_commandLine"
-msgstr ""
-
-#: ../../user/python/introduction/python-interpreter.rst:26
+#: ../../user/python/introduction/python-interpreter.md:33
 msgid ""
 "If Abaqus/CAE displays new messages while you are using the command line "
 "interface, the message area tab turns red."
@@ -103,5 +99,30 @@ msgstr ""
 #~ "For an example of running a Python"
 #~ " script using Abaqus, see "
 #~ ":doc:`/programming/functions`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can also use Python to run "
+#~ "a script directly by typing abaqus "
+#~ "python **scriptname.py** at the system "
+#~ "prompt. Abaqus will run the script "
+#~ "through the Python interpreter and "
+#~ "return you to the system prompt. "
+#~ "For an example of running a Python"
+#~ " script using Abaqus, see :ref"
+#~ ":`creating-functions`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Click |afxI_commandLine| in the lower "
+#~ "left corner of the main window to"
+#~ " display the command line interface. "
+#~ "You may want to drag the handle"
+#~ " at the top of the command line"
+#~ " interface to increase the number of"
+#~ " lines displayed."
+#~ msgstr ""
+
+#~ msgid "afxI_commandLine"
 #~ msgstr ""
 

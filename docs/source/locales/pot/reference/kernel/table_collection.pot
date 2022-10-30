@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/kernel/table_collection.rst:3
+#: ../../reference/kernel/table_collection.md:1
 msgid "Table Collection"
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:5
+#: ../../reference/kernel/table_collection.md:3
 msgid "Table Collection commands are used to create dynamic table types and tables."
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:8
+#: ../../reference/kernel/table_collection.md:5
 msgid "Creat table collections for Assembly"
 msgstr ""
 
@@ -1253,6 +1253,24 @@ msgstr ""
 msgid "This method suppresses features."
 msgstr ""
 
+#: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements:1
+#: ../../../../src/abaqus/TableCollection/DataTable.py:docstring of abaqus.TableCollection.DataTable.DataTable:1
+#: ../../../../src/abaqus/TableCollection/DataTableArray.py:docstring of abaqus.TableCollection.DataTableArray.DataTableArray:1
+#: ../../../../src/abaqus/TableCollection/ElementProgressiveActivation.py:docstring of abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation:1
+#: ../../../../src/abaqus/TableCollection/EventSeries.py:docstring of abaqus.TableCollection.EventSeries.EventSeries:1
+#: ../../../../src/abaqus/TableCollection/EventSeriesData.py:docstring of abaqus.TableCollection.EventSeriesData.EventSeriesData:1
+#: ../../../../src/abaqus/TableCollection/EventSeriesType.py:docstring of abaqus.TableCollection.EventSeriesType.EventSeriesType:1
+#: ../../../../src/abaqus/TableCollection/ParameterColumn.py:docstring of abaqus.TableCollection.ParameterColumn.ParameterColumn:1
+#: ../../../../src/abaqus/TableCollection/ParameterColumnArray.py:docstring of abaqus.TableCollection.ParameterColumnArray.ParameterColumnArray:1
+#: ../../../../src/abaqus/TableCollection/ParameterTable.py:docstring of abaqus.TableCollection.ParameterTable.ParameterTable:1
+#: ../../../../src/abaqus/TableCollection/PropertyTable.py:docstring of abaqus.TableCollection.PropertyTable.PropertyTable:1
+#: ../../../../src/abaqus/TableCollection/PropertyTableData.py:docstring of abaqus.TableCollection.PropertyTableData.PropertyTableData:1
+#: ../../../../src/abaqus/TableCollection/TableCollection.py:docstring of abaqus.TableCollection.TableCollection.TableCollection:1
+#: ../../../../src/abaqus/TableCollection/TableCollectionAssembly.py:docstring of abaqus.TableCollection.TableCollectionAssembly.TableCollectionAssembly:1
+#: ../../../../src/abaqus/TableCollection/TableCollectionModel.py:docstring of abaqus.TableCollection.TableCollectionModel.TableCollectionModel:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements.__init__:4
 #: ../../../../src/abaqus/TableCollection/DataTable.py:docstring of abaqus.TableCollection.DataTable.DataTable.__init__:4
 #: ../../../../src/abaqus/TableCollection/ElementProgressiveActivation.py:docstring of abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:5
@@ -1407,7 +1425,7 @@ msgstr ""
 msgid "If the region does not contain only elements."
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:18
+#: ../../reference/kernel/table_collection.md:16
 msgid "Creat table collections for Model"
 msgstr ""
 
@@ -1997,13 +2015,8 @@ msgstr ""
 msgid ":class:`EventSeriesType`"
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:28
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/kernel/table_collection.rst:31
-#: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements:11
-msgid "ActivateElements"
+#: ../../reference/kernel/table_collection.md:27
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements:1
@@ -2037,7 +2050,10 @@ msgstr ""
 msgid "The corresponding analysis keywords are:"
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:61
+#: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements:11
+msgid "ActivateElements"
+msgstr ""
+
 #: ../../../../src/abaqus/TableCollection/ActivateElements.py:docstring of abaqus.TableCollection.ActivateElements.ActivateElements:12
 msgid "ElementProgressiveActivation"
 msgstr ""
@@ -2110,10 +2126,6 @@ msgstr ""
 msgid ":class:`ActivateElements`"
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:41
-msgid "DataTable"
-msgstr ""
-
 #: ../../../../src/abaqus/TableCollection/DataTable.py:docstring of abaqus.TableCollection.DataTable.DataTable:1
 msgid "The DataTable object is used to specify the parameter table of the respective parameter table type. The data type of the values in each column in the DataTable object corresponds to the data type mentioned for the respective ParameterColumn object. The DataTable object should be created when all the required ParameterColumn objects are created for the current ParameterTable."
 msgstr ""
@@ -2181,10 +2193,6 @@ msgstr ""
 msgid ":class:`DataTable`"
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:51
-msgid "DataTableArray"
-msgstr ""
-
 #: ../../../../src/abaqus/TableCollection/ElementProgressiveActivation.py:docstring of abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation:1
 msgid "The ElementProgressiveActivation object is used to specify elements that can be activated during an analysis."
 msgstr ""
@@ -2228,10 +2236,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ElementProgressiveActivation.py:docstring of abaqus.TableCollection.ElementProgressiveActivation.ElementProgressiveActivation.__init__:10
 msgid "Check `ElementProgressiveActivation.__init__ on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-elementprogressiveactivationpyc.htm?contextscope=all#simaker-elementprogressiveactivation__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/kernel/table_collection.rst:71
-msgid "EventSeries"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/EventSeries.py:docstring of abaqus.TableCollection.EventSeries.EventSeries:1
@@ -2301,14 +2305,6 @@ msgstr ""
 msgid "Check `EventSeries.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-eventseriespyc.htm?contextscope=all#simaker-eventseriessetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:81
-msgid "EventSeriesData"
-msgstr ""
-
-#: ../../reference/kernel/table_collection.rst:91
-msgid "EventSeriesType"
-msgstr ""
-
 #: ../../../../src/abaqus/TableCollection/EventSeriesType.py:docstring of abaqus.TableCollection.EventSeriesType.EventSeriesType:1
 msgid "The EventSeriesType object is used to define a type of event in a process."
 msgstr ""
@@ -2344,10 +2340,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/EventSeriesType.py:docstring of abaqus.TableCollection.EventSeriesType.EventSeriesType.setValues:4
 msgid "Check `EventSeriesType.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-eventseriestypepyc.htm?contextscope=all#simaker-eventseriestypesetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/kernel/table_collection.rst:101
-msgid "ParameterColumn"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ParameterColumn.py:docstring of abaqus.TableCollection.ParameterColumn.ParameterColumn:1
@@ -2452,14 +2444,6 @@ msgstr ""
 msgid ":class:`ParameterTable`"
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:111
-msgid "ParameterColumnArray"
-msgstr ""
-
-#: ../../reference/kernel/table_collection.rst:121
-msgid "ParameterTable"
-msgstr ""
-
 #: ../../../../src/abaqus/TableCollection/ParameterTable.py:docstring of abaqus.TableCollection.ParameterTable.ParameterTable:1
 msgid "A ParameterTable is an object that is used to define the containers that encapsulate ParameterColumn and DataTable objects. The data of DataTable is dependent on the contents of ParameterColumn. After DataTable is instantiated, making changes to ParameterColumn may lead to data corruption."
 msgstr ""
@@ -2512,10 +2496,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/ParameterTable.py:docstring of abaqus.TableCollection.ParameterTable.ParameterTable.__init__:10
 msgid "Check `ParameterTable.__init__ on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-parametertablepyc.htm?contextscope=all#simaker-parametertable__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/kernel/table_collection.rst:131
-msgid "PropertyTable"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/PropertyTable.py:docstring of abaqus.TableCollection.PropertyTable.PropertyTable:1
@@ -2687,10 +2667,6 @@ msgstr ""
 msgid "Check `PropertyTable.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-propertytablepyc.htm?contextscope=all#simaker-propertytablesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/kernel/table_collection.rst:141
-msgid "PropertyTableData"
-msgstr ""
-
 #: ../../../../src/abaqus/TableCollection/PropertyTableData.py:docstring of abaqus.TableCollection.PropertyTableData.PropertyTableData:1
 msgid "A PropertyTableData is an object that is used to specify the property table of the respective property table type. The values in each column in the PropertyTableData object corresponds to the properties and variables mentioned in the PropertyTable object."
 msgstr ""
@@ -2742,10 +2718,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/PropertyTableData.py:docstring of abaqus.TableCollection.PropertyTableData.PropertyTableData.__init__:9
 msgid "Check `PropertyTableData.__init__ on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-propertytabledatapyc.htm?contextscope=all#simaker-propertytabledata__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/kernel/table_collection.rst:151
-msgid "TableCollection"
 msgstr ""
 
 #: ../../../../src/abaqus/TableCollection/TableCollection.py:docstring of abaqus.TableCollection.TableCollection.TableCollection:1

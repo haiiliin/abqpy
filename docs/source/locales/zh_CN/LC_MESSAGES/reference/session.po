@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/session.rst:7
+#: ../../reference/session.md:5
 msgid "Objects of Session"
 msgstr ""
 
-#: ../../reference/session.rst:3
+#: ../../reference/session.md:1
 msgid "Abaqus Session"
 msgstr ""
 
-#: ../../reference/session.rst:5
+#: ../../reference/session.md:3
 msgid ""
 "Session commands are used to create objects that are not stored with the "
 "model; for example, viewports and display groups. Abaqus/CAE retains "
@@ -33,11 +33,11 @@ msgid ""
 "when the model database is saved."
 msgstr ""
 
-#: ../../reference/session.rst:23
+#: ../../reference/session.md:21
 msgid "Classes"
 msgstr ""
 
-#: ../../reference/session.rst:26
+#: ../../reference/session.md:23
 msgid "Session"
 msgstr ""
 
@@ -1364,8 +1364,24 @@ msgid ""
 "output database. For example::."
 msgstr ""
 
-#: ../../reference/session.rst:36
-msgid "SessionBase"
+#: abaqus.Animation.AnimationSession.AnimationSession:1
+#: abaqus.Canvas.CanvasSession.CanvasSession:1
+#: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession:1
+#: abaqus.FieldReport.FieldReportSession.FieldReportSession:1
+#: abaqus.Job.JobSession.JobSession:1 abaqus.Odb.OdbSession.OdbSession:1
+#: abaqus.PathAndProbe.PathSession.PathSession:1
+#: abaqus.Session.AutoColors.AutoColors:1 abaqus.Session.Color.Color:1
+#: abaqus.Session.Drawing.Drawing:1 abaqus.Session.Image.Image:1
+#: abaqus.Session.JournalOptions.JournalOptions:1
+#: abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:1
+#: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:1
+#: abaqus.Session.NumberFormat.NumberFormat:1 abaqus.Session.Session.Session:1
+#: abaqus.Session.SessionBase.SessionBase:1 abaqus.XY.XYSession.XYSession:1 of
+msgid "Member Details:"
+msgstr ""
+
+#: ../../reference/session.md:34
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.Session.AutoColors.AutoColors:1 abaqus.Session.Color.Color:1
@@ -2023,10 +2039,6 @@ msgid ""
 "export."
 msgstr ""
 
-#: ../../reference/session.rst:46
-msgid "AnimationSession"
-msgstr ""
-
 #: abaqus.Animation.AnimationSession.AnimationSession:1
 #: abaqus.Canvas.CanvasSession.CanvasSession:1
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession:1
@@ -2186,10 +2198,6 @@ msgid ""
 " is to capture all canvas objects."
 msgstr ""
 
-#: ../../reference/session.rst:57
-msgid "CanvasSession"
-msgstr ""
-
 #: abaqus.Canvas.CanvasSession.CanvasSession.Viewport:9 of
 msgid ""
 "Check `Viewport on help.3ds.com/2022 "
@@ -2276,10 +2284,6 @@ msgstr ""
 msgid "If **height** is out of range."
 msgstr ""
 
-#: ../../reference/session.rst:68
-msgid "DisplayGroupSession"
-msgstr ""
-
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:9
 #: of
 msgid ""
@@ -2302,10 +2306,6 @@ msgstr ""
 #: abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:17
 #: of
 msgid ":class:`DisplayGroup`"
-msgstr ""
-
-#: ../../reference/session.rst:79
-msgid "FieldReportSession"
 msgstr ""
 
 #: abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:9
@@ -2521,10 +2521,6 @@ msgid ""
 "from which data will be read."
 msgstr ""
 
-#: ../../reference/session.rst:90
-msgid "JobSession"
-msgstr ""
-
 #: abaqus.Job.JobSession.JobSession.Queue:1 of
 msgid ""
 "This method creates a Queue object. Note:Remote queues are available only"
@@ -2613,10 +2609,6 @@ msgid ""
 " is not set: If **fileCopy** = ON and **directory** is empty."
 msgstr ""
 
-#: ../../reference/session.rst:101
-msgid "OdbSession"
-msgstr ""
-
 #: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:9 of
 msgid ""
 "Check `ScratchOdb on help.3ds.com/2022 "
@@ -2635,10 +2627,6 @@ msgstr ""
 
 #: abaqus.Odb.OdbSession.OdbSession.ScratchOdb:15 of
 msgid ":class:`ScratchOdb`"
-msgstr ""
-
-#: ../../reference/session.rst:112
-msgid "PathSession"
 msgstr ""
 
 #: abaqus.PathAndProbe.PathSession.PathSession.Path:9 of
@@ -2845,10 +2833,6 @@ msgstr ""
 
 #: abaqus.PathAndProbe.PathSession.PathSession.Stream:25 of
 msgid ":class:`Stream`"
-msgstr ""
-
-#: ../../reference/session.rst:123
-msgid "XYSession"
 msgstr ""
 
 #: abaqus.XY.XYSession.XYSession:1 of
@@ -4139,10 +4123,6 @@ msgid ""
 " saved as is."
 msgstr ""
 
-#: ../../reference/session.rst:135
-msgid "AutoColors"
-msgstr ""
-
 #: abaqus.Session.AutoColors.AutoColors:1 of
 msgid "The AutoColors object defines a color palette."
 msgstr ""
@@ -4177,10 +4157,6 @@ msgid ""
 "be named colors or represent red, green, blue components in hexadecimal "
 "form. For instance, '#FF0000' for red, '#00FF00' for green and '#0000FF' "
 "for blue"
-msgstr ""
-
-#: ../../reference/session.rst:145
-msgid "Color"
 msgstr ""
 
 #: abaqus.Session.Color.Color:1 of
@@ -4242,10 +4218,6 @@ msgstr ""
 msgid ""
 "A sequence of three Floats specifying the RGB value of the color. The "
 "Float values must be between 0.0 and 1.0."
-msgstr ""
-
-#: ../../reference/session.rst:155
-msgid "Drawing"
 msgstr ""
 
 #: abaqus.Session.Drawing.Drawing:1 of
@@ -4982,10 +4954,6 @@ msgid ""
 " to the setVertices method. The default value is 0."
 msgstr ""
 
-#: ../../reference/session.rst:165
-msgid "Image"
-msgstr ""
-
 #: abaqus.Session.Image.Image:1 of
 msgid ""
 "The Image object is used to store color values and attributes associated "
@@ -5109,10 +5077,6 @@ msgid ""
 " image file format:       ValueError: Unsupported image format     - If "
 "the contents of **fileName** are corrupt or can not be decoded:       "
 "ValueError: Unable to decode image file"
-msgstr ""
-
-#: ../../reference/session.rst:175
-msgid "JournalOptions"
 msgstr ""
 
 #: abaqus.Session.JournalOptions.JournalOptions:1 of
@@ -5262,10 +5226,6 @@ msgid ""
 "values are the same as the default values for the NumberFormat object."
 msgstr ""
 
-#: ../../reference/session.rst:185
-msgid "MemoryReductionOptions"
-msgstr ""
-
 #: abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:1 of
 msgid ""
 "The MemoryReductionOptions object controls the default settings that "
@@ -5309,10 +5269,6 @@ msgstr ""
 msgid ""
 "A Float specifying the percent of **kernelMemoryLimit** at which the "
 "reduced memory mode starts. The default value is 75.0."
-msgstr ""
-
-#: ../../reference/session.rst:195
-msgid "NetworkDatabaseConnector"
 msgstr ""
 
 #: abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:1 of
@@ -5619,10 +5575,6 @@ msgid ""
 "Check `NetworkDatabaseConnector.start on help.3ds.com/2022 "
 "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-networkdatabaseconnectorpyc.htm?contextscope=all"
 "#simaker-networkdatabaseconnectorstartpyc>`__."
-msgstr ""
-
-#: ../../reference/session.rst:205
-msgid "NumberFormat"
 msgstr ""
 
 #: abaqus.Session.NumberFormat.NumberFormat:1 of
@@ -11834,5 +11786,56 @@ msgstr ""
 #~ " "
 #~ "<https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-sessionpyc.htm?contextscope=all"
 #~ "#simaker-sessionwritevrmlfilepyc>`__."
+#~ msgstr ""
+
+#~ msgid "SessionBase"
+#~ msgstr ""
+
+#~ msgid "AnimationSession"
+#~ msgstr ""
+
+#~ msgid "CanvasSession"
+#~ msgstr ""
+
+#~ msgid "DisplayGroupSession"
+#~ msgstr ""
+
+#~ msgid "FieldReportSession"
+#~ msgstr ""
+
+#~ msgid "JobSession"
+#~ msgstr ""
+
+#~ msgid "OdbSession"
+#~ msgstr ""
+
+#~ msgid "PathSession"
+#~ msgstr ""
+
+#~ msgid "XYSession"
+#~ msgstr ""
+
+#~ msgid "AutoColors"
+#~ msgstr ""
+
+#~ msgid "Color"
+#~ msgstr ""
+
+#~ msgid "Drawing"
+#~ msgstr ""
+
+#~ msgid "Image"
+#~ msgstr ""
+
+#~ msgid "JournalOptions"
+#~ msgstr ""
+
+#~ msgid "MemoryReductionOptions"
+#~ msgstr ""
+
+#~ msgid "NetworkDatabaseConnector"
+#~ msgstr ""
+
+#~ msgid "NumberFormat"
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2022\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,16 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/model/field.rst:3
-#: ../../reference/mdb/model/field.rst:23
+#: ../../reference/mdb/model/field.md:1
 msgid "Field"
 msgstr ""
 
-#: ../../reference/mdb/model/field.rst:5
+#: ../../reference/mdb/model/field.md:3
 msgid "A Field object stores the non-propagating data of a field as well as a number of instances of the corresponding FieldState object. The FieldState object stores the propagating data of the field in a single step. A specific type of Field object and a specific type of FieldState object are designed for each type of predefined field. Instances of the FieldState object are created and deleted internally by its corresponding Field object."
 msgstr ""
 
-#: ../../reference/mdb/model/field.rst:9
+#: ../../reference/mdb/model/field.md:5
 msgid "Create fields"
 msgstr ""
 
@@ -564,6 +563,18 @@ msgstr ""
 msgid "This method modifies the Model object."
 msgstr ""
 
+#: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField:1
+#: ../../../../src/abaqus/Field/DataTable.py:docstring of abaqus.Field.DataTable.DataTable:1
+#: ../../../../src/abaqus/Field/DataTableArray.py:docstring of abaqus.Field.DataTableArray.DataTableArray:1
+#: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:1
+#: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField:1
+#: ../../../../src/abaqus/Field/Field.py:docstring of abaqus.Field.Field.Field:1
+#: ../../../../src/abaqus/Field/FieldModel.py:docstring of abaqus.Field.FieldModel.FieldModel:1
+#: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:1
+#: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField.OdbMeshRegionData:4
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldByVolumeFraction:5
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField.DiscreteFieldFromAnalytic:4
@@ -867,8 +878,8 @@ msgstr ""
 msgid ":class:`MappedField`"
 msgstr ""
 
-#: ../../reference/mdb/model/field.rst:20
-msgid "Classes"
+#: ../../reference/mdb/model/field.md:17
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/DataTable.py:docstring of abaqus.Field.DataTable.DataTable:1
@@ -908,10 +919,6 @@ msgstr ""
 #: ../../None:6:<autosummary>:1
 #: ../../None:8:<autosummary>:1
 msgid "A String specifying the description of the field."
-msgstr ""
-
-#: ../../reference/mdb/model/field.rst:33
-msgid "AnalyticalField"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/AnalyticalField.py:docstring of abaqus.Field.AnalyticalField.AnalyticalField:1
@@ -1282,10 +1289,6 @@ msgstr ""
 msgid ":class:`OdbMeshRegionData`"
 msgstr ""
 
-#: ../../reference/mdb/model/field.rst:43
-msgid "DataTable"
-msgstr ""
-
 #: ../../../../src/abaqus/Field/DataTable.py:docstring of abaqus.Field.DataTable.DataTable:1
 msgid "A DataTable is an object used to define the domain and data for a DiscreteField."
 msgstr ""
@@ -1340,14 +1343,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.Field.DataTable.DataTable.dataWidth:1
 msgid "An Int specifying the width of the data. Valid widths are 1, 6, 21, corresponding to scalar data, orientations and 4D tensors."
-msgstr ""
-
-#: ../../reference/mdb/model/field.rst:53
-msgid "DataTableArray"
-msgstr ""
-
-#: ../../reference/mdb/model/field.rst:63
-msgid "DiscreteField"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/DiscreteField.py:docstring of abaqus.Field.DiscreteField.DiscreteField:1
@@ -1469,10 +1464,6 @@ msgstr ""
 msgid "Check `DiscreteField.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-discretefieldpyc.htm?contextscope=all#simaker-discretefieldsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/field.rst:73
-msgid "ExpressionField"
-msgstr ""
-
 #: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField:1
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:1
 msgid "Bases: :py:class:`~abaqus.Field.AnalyticalField.AnalyticalField`"
@@ -1509,10 +1500,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Field/ExpressionField.py:docstring of abaqus.Field.ExpressionField.ExpressionField.setValues:4
 msgid "Check `ExpressionField.setValues on help.3ds.com/2022 <https://help.3ds.com/2022/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-expressionfieldpyc.htm?contextscope=all#simaker-expressionfieldsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/field.rst:83
-msgid "MappedField"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/MappedField.py:docstring of abaqus.Field.MappedField.MappedField:1
@@ -1695,10 +1682,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.Field.MappedField.MappedField.xyzPointData:1
 msgid "A tuple of tuples of Floats specifying the point cloud source data of XYZ format. Each data item is defining the XYZ coordinates of a point and its field value. The default value is an empty sequence."
-msgstr ""
-
-#: ../../reference/mdb/model/field.rst:93
-msgid "OdbMeshRegionData"
 msgstr ""
 
 #: ../../../../src/abaqus/Field/OdbMeshRegionData.py:docstring of abaqus.Field.OdbMeshRegionData.OdbMeshRegionData:1
