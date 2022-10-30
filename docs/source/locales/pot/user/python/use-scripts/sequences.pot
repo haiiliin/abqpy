@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2019\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:43+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,66 +16,66 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../user/python/use-scripts/sequences.rst:3
+#: ../../user/python/use-scripts/sequences.md:1
 msgid "Abaqus/CAE sequences"
 msgstr ""
 
-#: ../../user/python/use-scripts/sequences.rst:5
+#: ../../user/python/use-scripts/sequences.md:3
 msgid "Some methods take arguments that are described as a sequence of sequences of Floats or a sequence of sequences of Ints. Data that are entered into the table editor in Abaqus/CAE appear as a sequence of sequences in the equivalent Abaqus Scripting Interface command. In effect the data are a two-dimensional array. The data across one row form one sequence, and multiple rows form a sequence of those sequences."
 msgstr ""
 
-#: ../../user/python/use-scripts/sequences.rst:7
+#: ../../user/python/use-scripts/sequences.md:5
 msgid "For example, consider the case where the user is creating an elastic material and describing a temperature-dependent behavior."
 msgstr ""
 
-#: ../../user/python/use-scripts/sequences.rst:14
+#: ../../user/python/use-scripts/sequences.md:14
 msgid "The equivalent Abaqus Scripting Interface command is"
 msgstr ""
 
-#: ../../user/python/use-scripts/sequences.rst:25
-msgid "The `table` argument is described in the :doc:`/references` as a sequence of sequences of Floats."
+#: ../../user/python/use-scripts/sequences.md:25
+msgid "The `table` argument is described in the {doc}`/references` as a sequence of sequences of Floats."
 msgstr ""
 
-#: ../../user/python/use-scripts/sequences.rst:27
+#: ../../user/python/use-scripts/sequences.md:27
 msgid "Lists, tuples, strings, and arrays are described in Sequences. In addition, the Abaqus Scripting Interface defines some of its own sequences that contain objects of the same type."
 msgstr ""
 
-#: ../../user/python/use-scripts/sequences.rst:29
+#: ../../user/python/use-scripts/sequences.md:29
 msgid "**GeomSequence**"
 msgstr ""
 
-#: ../../user/python/use-scripts/sequences.rst:31
+#: ../../user/python/use-scripts/sequences.md:31
 msgid "A GeomSequence is a sequence of geometry objects, such as Vertices or Edges. An Edge sequence is derived from the GeomSequence object. Use the len() function to determine the number of objects in a GeomSequence. A GeomSequence has methods and members too."
 msgstr ""
 
-#: ../../user/python/use-scripts/sequences.rst:33
+#: ../../user/python/use-scripts/sequences.md:33
 msgid "For example, the following creates a three-dimensional part by extruding a 70 × 70 square through a distance of 20. The members of the resulting Part object are listed along with some information about the sequence of Edge objects."
 msgstr ""
 
-#: ../../user/python/use-scripts/sequences.rst:46
+#: ../../user/python/use-scripts/sequences.md:46
 msgid "The following statement displays the members of the resulting three-dimensional part:"
 msgstr ""
 
-#: ../../user/python/use-scripts/sequences.rst:63
+#: ../../user/python/use-scripts/sequences.md:63
 msgid "The edges, faces, vertices, cells, and ips members are all derived from the `GeomSequence` object."
 msgstr ""
 
-#: ../../user/python/use-scripts/sequences.rst:65
+#: ../../user/python/use-scripts/sequences.md:65
 msgid "The following statements display some information about the edges sequence:"
 msgstr ""
 
-#: ../../user/python/use-scripts/sequences.rst:84
+#: ../../user/python/use-scripts/sequences.md:84
 msgid "**MeshSequence**"
 msgstr ""
 
-#: ../../user/python/use-scripts/sequences.rst:86
+#: ../../user/python/use-scripts/sequences.md:86
 msgid "A sequence of Nodes or Elements."
 msgstr ""
 
-#: ../../user/python/use-scripts/sequences.rst:88
+#: ../../user/python/use-scripts/sequences.md:88
 msgid "**SurfSequence**"
 msgstr ""
 
-#: ../../user/python/use-scripts/sequences.rst:90
+#: ../../user/python/use-scripts/sequences.md:90
 msgid "A sequence of Surfaces."
 msgstr ""

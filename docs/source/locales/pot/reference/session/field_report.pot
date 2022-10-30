@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2019\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:43+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/session/field_report.rst:3
+#: ../../reference/session/field_report.md:1
 msgid "FieldReport"
 msgstr ""
 
-#: ../../reference/session/field_report.rst:5
+#: ../../reference/session/field_report.md:3
 msgid "Field report commands are used to write a field output report and free body computational results to an ASCII file."
 msgstr ""
 
-#: ../../reference/session/field_report.rst:9
+#: ../../reference/session/field_report.md:5
 msgid "Create field reports in Session"
 msgstr ""
 
@@ -713,6 +713,14 @@ msgstr ""
 msgid "This method opens an existing output database (`.odb`) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::."
 msgstr ""
 
+#: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:1
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession:1
+#: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:1
+#: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:1
+#: ../../../../src/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions.NumberFormat:4
 #: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:4
 #: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFreeBodyReport:4
@@ -855,12 +863,8 @@ msgstr ""
 msgid "An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read."
 msgstr ""
 
-#: ../../reference/session/field_report.rst:20
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/session/field_report.rst:23
-msgid "FieldReportOptions"
+#: ../../reference/session/field_report.md:17
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/FieldReportOptions.py:docstring of abaqus.FieldReport.FieldReportOptions.FieldReportOptions:1
@@ -991,10 +995,6 @@ msgstr ""
 msgid ":class:`FieldReportOptions`"
 msgstr ""
 
-#: ../../reference/session/field_report.rst:33
-msgid "FreeBodyReportOptions"
-msgstr ""
-
 #: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions:1
 msgid "The FreeBodyReportOptions object stores settings used by the writeFreeBodyReport method when you write free body computational results to an ASCII file. The FreeBodyReportOptions object has no constructor. Abaqus creates the **freeBodyReportOptions** member when you import the Visualization module."
 msgstr ""
@@ -1042,10 +1042,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/FreeBodyReportOptions.py:docstring of abaqus.FieldReport.FreeBodyReportOptions.FreeBodyReportOptions.setValues:23
 msgid ":class:`FreeBodyReportOptions`"
-msgstr ""
-
-#: ../../reference/session/field_report.rst:43
-msgid "OdbFieldVarList"
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/OdbFieldVarList.py:docstring of abaqus.FieldReport.OdbFieldVarList.OdbFieldVarList:1
@@ -1348,20 +1344,12 @@ msgstr ""
 msgid ":py:obj:`_is_protocol <typing.Generic._is_protocol>`\\"
 msgstr ""
 
-#: ../../reference/session/field_report.rst:53
-msgid "OdbModelFieldVarList"
-msgstr ""
-
 #: ../../../../src/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:1
 msgid "The read-only OdbModelFieldVarList object lists all variables available for the model in the current OdbDisplay object."
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/OdbModelFieldVarList.py:docstring of abaqus.FieldReport.OdbModelFieldVarList.OdbModelFieldVarList:12
 msgid "Check `OdbModelFieldVarList on help.3ds.com/2019 <https://help.3ds.com/2019/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-odbmodelfieldvarlistpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../reference/session/field_report.rst:63
-msgid "writeFieldReport"
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:1
@@ -1374,10 +1362,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/writeFieldReport.py:docstring of abaqus.FieldReport.writeFieldReport.writeFieldReport:33
 msgid "A sequence of variable description sequences specifying one or more field output variables for which to obtain data. Each variable description sequence contains the following elements:  - **element0**: A String specifying the name of the variable. - **element1**: A SymbolicConstant specifying the output position at which to report data.   Possible values are ELEMENT_CENTROID, ELEMENT_FACE, ELEMENT_NODAL, GENERAL_PARTICLE,   INTEGRATION_POINT, NODAL, WHOLE_ELEMENT, WHOLE_MODEL, WHOLE_PART_INSTANCE, and   WHOLE_REGION. - **element2**: A Sequence of tuples each consisting of a SymbolicConstant specifying the   refinement (COMPONENT or INVARIANT), followed by a String specifying the name of a   component or invariant for which to obtain values.   If this element is omitted, data are written for all components and invariants (if   applicable). This element is required if **element3** (the following element in the tuple)   is included. - **element3 (if applicable)**: A Dictionary with a String key and a String value   specifying a single section point at which to report data. The key specifies a region in   the model; the corresponding value specifies a section point within that region. For   example::      {'shell < MAT > < 7 section points >': 'SPOS (fraction = 1.0)'}    If this element is omitted, data are written for all section points (if applicable).   If this element is omitted, data are written for all section points (if applicable)."
-msgstr ""
-
-#: ../../reference/session/field_report.rst:71
-msgid "writeFreeBodyReport"
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/writeFreeBodyReport.py:docstring of abaqus.FieldReport.writeFreeBodyReport.writeFreeBodyReport:9

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  abqpy\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: 2022-08-29 13:21+0800\n"
 "Last-Translator: \n"
 "Language: zh_CN\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../getting_started.rst:3
+#: ../../getting_started.md:1
 msgid "Getting Started"
 msgstr "入门指南"
 
-#: ../../getting_started.rst:7
+#: ../../getting_started.md:3
 msgid "Introduction"
 msgstr "简介"
 
-#: ../../getting_started.rst:9
+#: ../../getting_started.md:5
 msgid ""
 "`abqpy` is a Python package providing type hints for Python scripting of "
 "Abaqus, you can use it to write you Python script of Abaqus fluently, "
@@ -39,17 +39,80 @@ msgstr ""
 "Abaqus/CAE。它还提供了一些简单的API用于调用 Abaqus 命令执行你的 Python 脚本，以便使用 Python 脚本快速构建 "
 "Abaqus 模型，并提交作业给 Abaqus 进行计算，并从计算结果中提取数据。"
 
-#: ../../getting_started.rst:17
+#: ../../getting_started.md:11
+msgid "Installation"
+msgstr "安装"
+
+#: ../../getting_started.md:13
+msgid ""
+"`abqpy` supports Python 3.7 or a later version. If you are using Python "
+"3.6 or an earlier version, please upgrade to Python 3.7 or a later "
+"version."
+msgstr ""
+"`abqpy` 支持 Python 3.7 或更高版本。如果您使用的是 Python 3.6 或更早版本，请升级到 Python 3.7 "
+"或更高版本。"
+
+#: ../../getting_started.md:22
+msgid "Working with conda?"
+msgstr ""
+
+#: ../../getting_started.md:25
+#, fuzzy
+msgid ""
+"`abqpy` can be installed via conda from `anaconda "
+"<https://anaconda.org/haiiliin/abqpy>`_."
+msgstr ""
+"`abqpy` 也被上传到 `anaconda "
+"<https://anaconda.org/haiiliin/abqpy>`_，你可以使用`conda`来安装它："
+
+#: ../../getting_started.md:35
+msgid "Prefer pip?"
+msgstr ""
+
+#: ../../getting_started.md:38
+msgid ""
+"abqpy can also be installed via pip from `PyPI "
+"<https://pypi.org/project/abqpy>`__."
+msgstr ""
+
+#: ../../getting_started.md:49
+msgid "Install from source?"
+msgstr ""
+
+#: ../../getting_started.md:52
+msgid "You can also install `abqpy` from source:"
+msgstr ""
+
+#: ../../getting_started.md:62
+#, fuzzy
+msgid "Install a specific version"
+msgstr "安装特定版本"
+
+#: ../../getting_started.md:65
+msgid "You can specify the version number when installing `abqpy`, for example:"
+msgstr "您可以在安装 `abqpy` 时指定版本号，例如："
+
+#: ../../getting_started.md:77
+msgid "Optional dependencies"
+msgstr ""
+
+#: ../../getting_started.md:80
+msgid ""
+"If you want to use the Jupyter notebook to write your Abaqus/Python "
+"scripts, use the following command:"
+msgstr ""
+
+#: ../../getting_started.md:91
 msgid "Two Python interpreters"
 msgstr "两个 Python 解释器"
 
-#: ../../getting_started.rst:19
+#: ../../getting_started.md:93
 msgid ""
 "Before we go any further, it is necessary for us to understand two Python"
 " interpreters."
 msgstr "在我们进一步讨论之前，我们有必要了解两个 Python 解释器。"
 
-#: ../../getting_started.rst:21
+#: ../../getting_started.md:95
 msgid ""
 "When we use the Abaqus/CAE graphical user interface (GUI) to create a "
 "model and to visualize the results, commands are issued internally by "
@@ -67,7 +130,7 @@ msgstr ""
 "的面向对象编程语言生成命令。GUI 发出的命令将发送到 Abaqus/CAE 内核。内核解释命令，并使用选项和设置来创建模型的内部表示。内核是 "
 "Abaqus/CAE 背后的大脑。GUI 是用户和内核之间的接口。"
 
-#: ../../getting_started.rst:30
+#: ../../getting_started.md:104
 msgid ""
 "In a word, Abaqus use Python language to interact with the Abaqus kernel,"
 " everything that can be done in Abaqus/CAE, can also be done using Python"
@@ -77,7 +140,7 @@ msgstr ""
 "总之，Abaqus 使用 Python 语言与 Abaqus 内核进行交互，所有可以在 Abaqus/CAE 中 完成的事情，也可以使用 "
 "Python 脚本完成。Abaqus  已经安装了一个 Python 解释器，以便Abaqus/CAE可以使用它与 Abaqus 内核进行交互。"
 
-#: ../../getting_started.rst:34
+#: ../../getting_started.md:108
 msgid ""
 "For some reasons, we cannot directly use the Python interpreter inside "
 "Abaqus to build an Abaqus model. But fortunately, we can use the commands"
@@ -86,13 +149,13 @@ msgstr ""
 "由于某些原因，我们不能直接使用 Abaqus 内部的 Python 解释器来构建 Abaqus 模型。但幸运的是，我们可以使用 Abaqus "
 "提供的命令来访问它。即："
 
-#: ../../getting_started.rst:56
+#: ../../getting_started.md:129
 msgid ""
 "Usually, we can use the noGUI-file or script-file to execute our Python "
 "script in Abaqus."
 msgstr "通常，我们可以使用 noGUI-file 或 script-file 选项在 Abaqu 中执行我们的 Python 脚本。"
 
-#: ../../getting_started.rst:58
+#: ../../getting_started.md:131
 msgid ""
 "Another Python interpreter, is the Python interpreter installed by "
 "ourselves, where `abqpy` is installed. `abqpy` provides a bridge to "
@@ -104,11 +167,11 @@ msgstr ""
 "脚本连接到 Abaqus Python 解释器的桥梁，它为 Abaqus 的 Python 脚本提供了类型提示，使我们能够快速编写 Abaqus "
 "Python 脚本。"
 
-#: ../../getting_started.rst:65
+#: ../../getting_started.md:136
 msgid "How does this package work?"
 msgstr "这个包是如何工作的？"
 
-#: ../../getting_started.rst:67
+#: ../../getting_started.md:138
 msgid ""
 "`abqpy` is just a package to provide type hints for Abaqus/Python "
 "scripting, it is installed outside Abaqus/Python environment, you can use"
@@ -123,137 +186,67 @@ msgstr ""
 "命令的帮助下，可以实现一种更简单的方法：**您实际上可以使用自己的 Python 解释器运行脚本而无需打开 Abaqus**，这是通过 "
 "**abaqus** 命令实现的，如下所示："
 
-#: ../../getting_started.rst:76
+#: ../../getting_started.md:147
 #, fuzzy
-msgid "The secret is hided in the :py:meth:`~abqpy.abaqus.run` function:"
+msgid "The secret is hided in the {py:meth}`~abqpy.abaqus.run` function:"
 msgstr "这个秘密隐藏在 :py:meth:`~abaqus.Mdb.Mdb.Mdb.saveAs` 方法中："
 
-#: ../../getting_started.rst:93
+#: ../../getting_started.md:163
 msgid ""
-"In this package, the :py:mod:`~abaqus` module is reimplemented to "
+"In this package, the {py:mod}`~abaqus` module is reimplemented to "
 "automatically call this function. If you import this module in the top of"
-" your script (i.e., ``from abaqus import *``), your Python interpreter "
-"(not Abaqus Python interpreter) will call this function and use the "
+" your script (i.e., `from abaqus import *`), your Python interpreter (not"
+" Abaqus Python interpreter) will call this function and use the "
 "**abaqus** command to submit the script to Abaqus. After it is submitted "
-"to Abaqus, :py:meth:`~abqpy.abaqus.run` will exit the interpreter, "
+"to Abaqus, {py:meth}`~abqpy.abaqus.run` will exit the interpreter, "
 "because the script will already run in Abaqus Python interpreter."
 msgstr ""
 
-#: ../../getting_started.rst:98
+#: ../../getting_started.md:168
 msgid ""
 "In the output script, we might not want to always use the "
-":py:mod:`~abaqus` module, because it needs the Abaqus/CAE kernel (and its"
-" license). Instead, we use the module :py:mod:`~odbAccess` (i.e., ``from "
-"odbAccess import *``), which requires only the Abaqus Python interpreter."
-" Then, another similar **abaqus** command line is needed:"
+"{py:mod}`~abaqus` module, because it needs the Abaqus/CAE kernel (and its"
+" license). Instead, we use the module {py:mod}`~odbAccess` (i.e., `from "
+"odbAccess import *`), which requires only the Abaqus Python interpreter. "
+"Then, another similar **abaqus** command line is needed:"
 msgstr ""
 
-#: ../../getting_started.rst:106
+#: ../../getting_started.md:176
 msgid ""
-"So, the :py:mod:`~odbAccess` module is also reimplemented to call the "
-":py:meth:`~abqpy.abaqus.run` function, and the actual implementation of "
+"So, the {py:mod}`~odbAccess` module is also reimplemented to call the "
+"{py:meth}`~abqpy.abaqus.run` function, and the actual implementation of "
 "this function is similar to:"
 msgstr ""
 
-#: ../../getting_started.rst:125
+#: ../../getting_started.md:194
 msgid ""
 "In summary: this function will be called when you import one of the two "
-"modules (:py:mod:`~abaqus` or :py:mod:`~odbAccess`). It will pass the "
-"argument ``cae = True`` in :py:mod:`~abaqus` module and ``cae = False`` "
-"in :py:mod:`~odbAccess` module. Therefore, if you want to run your Python"
-" script in Abaqus Python environment, please make sure to import one of "
+"modules ({py:mod}`~abaqus` or {py:mod}`~odbAccess`). It will pass the "
+"argument `cae = True` in {py:mod}`~abaqus` module and `cae = False` in "
+"{py:mod}`~odbAccess` module. Therefore, if you want to run your Python "
+"script in Abaqus Python environment, please make sure to import one of "
 "these modules on the top of your script."
 msgstr ""
 
-#: ../../getting_started.rst:131
-msgid "Installation"
-msgstr "安装"
-
-#: ../../getting_started.rst:133
-msgid ""
-"`abqpy` supports Python 3.7 or a later version. If you are using Python "
-"3.6 or an earlier version, please upgrade to Python 3.7 or a later "
-"version."
-msgstr ""
-"`abqpy` 支持 Python 3.7 或更高版本。如果您使用的是 Python 3.6 或更早版本，请升级到 Python 3.7 "
-"或更高版本。"
-
-#: ../../getting_started.rst:136
-#, fuzzy
-msgid ""
-"`abqpy` is uploaded to `PyPI <https://pypi.org/project/abqpy>`_, you can "
-"simply install it using pip:"
-msgstr ""
-"`abqpy` 也被上传到 `anaconda "
-"<https://anaconda.org/haiiliin/abqpy>`_，你可以使用`conda`来安装它："
-
-#: ../../getting_started.rst:143
-msgid ""
-"`abqpy` is also uploaded to `anaconda "
-"<https://anaconda.org/haiiliin/abqpy>`_, you can use `conda` to install "
-"it:"
-msgstr ""
-"`abqpy` 也被上传到 `anaconda "
-"<https://anaconda.org/haiiliin/abqpy>`_，你可以使用`conda`来安装它："
-
-#: ../../getting_started.rst:150
-msgid ""
-"You may install the latest development version by cloning the `GitHub "
-"repository <https://github.com/haiiliin/abqpy>`_ and use `python` to "
-"install from the local directory:"
-msgstr ""
-"您可以通过克隆 `GitHub仓库 <https://github.com/haiiliin/abqpy>`_ 来安装最新的开发版本，并使用 "
-"`python` 从本地目录进行安装："
-
-#: ../../getting_started.rst:161
-msgid "Optional Requirements"
-msgstr ""
-
-#: ../../getting_started.rst:163
-msgid ""
-"If you want to use the Jupyter notebook to write your Abaqus/Python "
-"scripts, you need to install `ipynbname`:"
-msgstr ""
-
-#: ../../getting_started.rst:171
-msgid "Install A Specific Version"
-msgstr "安装特定版本"
-
-#: ../../getting_started.rst:173
-msgid "You can specify the version number when installing `abqpy`, for example:"
-msgstr "您可以在安装 `abqpy` 时指定版本号，例如："
-
-#: ../../getting_started.rst:175
-msgid "Using `pip`:"
-msgstr ""
-
-#: ../../getting_started.rst:181
-msgid "Using `conda`:"
-msgstr ""
-
-#: ../../getting_started.rst:187
-msgid "A better way is to use * to match specific version:"
-msgstr "更好的方法是使用 * 来匹配特定版本："
-
-#: ../../getting_started.rst:194
+#: ../../getting_started.md:199
 msgid "Write your Abaqus/Python script"
 msgstr ""
 
-#: ../../getting_started.rst:196
+#: ../../getting_started.md:201
 msgid ""
 "After installing the `abqpy` package, you can start writing your own "
-"Abaqus/Python script to build your model. You can refer `abqpy/examples "
-"at main · haiiliin/abqpy "
-"<https://github.com/haiiliin/abqpy/tree/main/examples>`_ for some tests "
-"of the script, for more detailed documentation, please check `abqpy "
-"documentation <https://haiiliin.com/abqpy/>`_."
+"Abaqus/Python script to build your model. You can refer [abqpy/examples "
+"at main · "
+"haiiliin/abqpy](https://github.com/haiiliin/abqpy/tree/main/examples) for"
+" some tests of the script, for more detailed documentation, please check "
+"[abqpy documentation](https://haiiliin.com/abqpy/)."
 msgstr ""
 
-#: ../../getting_started.rst:203
+#: ../../getting_started.md:207
 msgid "Setup your Abaqus Environment"
 msgstr ""
 
-#: ../../getting_started.rst:205
+#: ../../getting_started.md:209
 #, fuzzy
 msgid ""
 "In order to use Abaqus command to execute the Python script and submit "
@@ -263,7 +256,7 @@ msgstr ""
 "为了使用 Abaqus 命令执行 Python 脚本并提交作业，您需要告诉 `abqpy` Abaqus 命令所在的位置。通常，Abaqus "
 "命令位于如下目录中："
 
-#: ../../getting_started.rst:212
+#: ../../getting_started.md:216
 msgid ""
 "You can add the directory `C:/SIMULIA/Commands` to the system environment"
 " variable `Path`, or you can create a new system variable named "
@@ -274,34 +267,34 @@ msgstr ""
 "`ABAQUS_BAT_PATH` 的新系统变量，并将值设置为 Abaqus 命令的文件路径，即 "
 "`C:/SIMULIA/Commands/abaqus.bat`。"
 
-#: ../../getting_started.rst:217
+#: ../../getting_started.md:220
 msgid "Run your Abaqus/Python script"
 msgstr ""
 
-#: ../../getting_started.rst:219
+#: ../../getting_started.md:222
 msgid ""
 "Now you can just run your Abaqus/Python script using your own Python "
 "interpreter that `abqpy` is installed."
 msgstr ""
 
-#: ../../getting_started.rst:-1 ../../getting_started.rst:221
+#: ../../getting_started.md:224 ../../getting_started.md:226
 msgid "Create an Abaqus Model"
 msgstr ""
 
-#: ../../getting_started.rst:-1 ../../getting_started.rst:228
+#: ../../getting_started.md:232 ../../getting_started.md:234
 msgid "Extract Output Data"
 msgstr ""
 
-#: ../../getting_started.rst:236
+#: ../../getting_started.md:240
 msgid "What next?"
 msgstr ""
 
-#: ../../getting_started.rst:238
+#: ../../getting_started.md:242
 msgid ""
 "You may wonder how does this package work, you can go "
-":doc:`/getting_started` for more detailed introduction and go "
-":doc:`/tutorials` for a simple tutorial. For more documentation about "
-"Abaqus/Python scripting, please check :doc:`/references` for more "
+"{doc}`/getting_started` for more detailed introduction and go "
+"{doc}`/tutorials` for a simple tutorial. For more documentation about "
+"Abaqus/Python scripting, please check {doc}`/references` for more "
 "detailed API references."
 msgstr ""
 
@@ -423,5 +416,118 @@ msgstr ""
 #~ "methods of Abaqus models, check "
 #~ ":doc:`/references` for more detailed API "
 #~ "references."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In this package, the :py:mod:`~abaqus` "
+#~ "module is reimplemented to automatically "
+#~ "call this function. If you import "
+#~ "this module in the top of your "
+#~ "script (i.e., ``from abaqus import *``),"
+#~ " your Python interpreter (not Abaqus "
+#~ "Python interpreter) will call this "
+#~ "function and use the **abaqus** command"
+#~ " to submit the script to Abaqus. "
+#~ "After it is submitted to Abaqus, "
+#~ ":py:meth:`~abqpy.abaqus.run` will exit the "
+#~ "interpreter, because the script will "
+#~ "already run in Abaqus Python "
+#~ "interpreter."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In the output script, we might not"
+#~ " want to always use the "
+#~ ":py:mod:`~abaqus` module, because it needs "
+#~ "the Abaqus/CAE kernel (and its license)."
+#~ " Instead, we use the module "
+#~ ":py:mod:`~odbAccess` (i.e., ``from odbAccess "
+#~ "import *``), which requires only the "
+#~ "Abaqus Python interpreter. Then, another "
+#~ "similar **abaqus** command line is "
+#~ "needed:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "So, the :py:mod:`~odbAccess` module is "
+#~ "also reimplemented to call the "
+#~ ":py:meth:`~abqpy.abaqus.run` function, and the "
+#~ "actual implementation of this function "
+#~ "is similar to:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In summary: this function will be "
+#~ "called when you import one of the"
+#~ " two modules (:py:mod:`~abaqus` or "
+#~ ":py:mod:`~odbAccess`). It will pass the "
+#~ "argument ``cae = True`` in "
+#~ ":py:mod:`~abaqus` module and ``cae = "
+#~ "False`` in :py:mod:`~odbAccess` module. "
+#~ "Therefore, if you want to run your"
+#~ " Python script in Abaqus Python "
+#~ "environment, please make sure to import"
+#~ " one of these modules on the "
+#~ "top of your script."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "`abqpy` is uploaded to `PyPI "
+#~ "<https://pypi.org/project/abqpy>`_, you can simply"
+#~ " install it using pip:"
+#~ msgstr ""
+#~ "`abqpy` 也被上传到 `anaconda "
+#~ "<https://anaconda.org/haiiliin/abqpy>`_，你可以使用`conda`来安装它："
+
+#~ msgid ""
+#~ "You may install the latest development"
+#~ " version by cloning the `GitHub "
+#~ "repository <https://github.com/haiiliin/abqpy>`_ and "
+#~ "use `python` to install from the "
+#~ "local directory:"
+#~ msgstr ""
+#~ "您可以通过克隆 `GitHub仓库 <https://github.com/haiiliin/abqpy>`_"
+#~ " 来安装最新的开发版本，并使用 `python` 从本地目录进行安装："
+
+#~ msgid "Optional Requirements"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If you want to use the Jupyter "
+#~ "notebook to write your Abaqus/Python "
+#~ "scripts, you need to install "
+#~ "`ipynbname`:"
+#~ msgstr ""
+
+#~ msgid "Using `pip`:"
+#~ msgstr ""
+
+#~ msgid "Using `conda`:"
+#~ msgstr ""
+
+#~ msgid "A better way is to use * to match specific version:"
+#~ msgstr "更好的方法是使用 * 来匹配特定版本："
+
+#~ msgid ""
+#~ "After installing the `abqpy` package, "
+#~ "you can start writing your own "
+#~ "Abaqus/Python script to build your "
+#~ "model. You can refer `abqpy/examples at"
+#~ " main · haiiliin/abqpy "
+#~ "<https://github.com/haiiliin/abqpy/tree/main/examples>`_ for "
+#~ "some tests of the script, for more"
+#~ " detailed documentation, please check "
+#~ "`abqpy documentation <https://haiiliin.com/abqpy/>`_."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You may wonder how does this "
+#~ "package work, you can go "
+#~ ":doc:`/getting_started` for more detailed "
+#~ "introduction and go :doc:`/tutorials` for "
+#~ "a simple tutorial. For more "
+#~ "documentation about Abaqus/Python scripting, "
+#~ "please check :doc:`/references` for more "
+#~ "detailed API references."
 #~ msgstr ""
 

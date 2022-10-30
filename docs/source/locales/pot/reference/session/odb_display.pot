@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2019\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:43+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,20 +16,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/session/odb_display.rst:3
+#: ../../reference/session/odb_display.md:1
 msgid "Odb Display"
 msgstr ""
 
-#: ../../reference/session/odb_display.rst:5
+#: ../../reference/session/odb_display.md:3
 msgid "Odb display commands are used to store the context of an output database for a viewport."
 msgstr ""
 
-#: ../../reference/session/odb_display.rst:8
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/session/odb_display.rst:11
-msgid "CommonOptions"
+#: ../../reference/session/odb_display.md:5
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/CommonOptions.py:docstring of abaqus.OdbDisplay.CommonOptions.CommonOptions:1
@@ -610,6 +606,19 @@ msgstr ""
 msgid "This method modifies the CommonOptions object."
 msgstr ""
 
+#: ../../../../src/abaqus/OdbDisplay/CommonOptions.py:docstring of abaqus.OdbDisplay.CommonOptions.CommonOptions:1
+#: ../../../../src/abaqus/OdbDisplay/ContourOptions.py:docstring of abaqus.OdbDisplay.ContourOptions.ContourOptions:1
+#: ../../../../src/abaqus/OdbDisplay/DefaultOdbDisplay.py:docstring of abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay:1
+#: ../../../../src/abaqus/OdbDisplay/DisplayBodyOptions.py:docstring of abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:1
+#: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay:1
+#: ../../../../src/abaqus/OdbDisplay/OrientationOptions.py:docstring of abaqus.OdbDisplay.OrientationOptions.OrientationOptions:1
+#: ../../../../src/abaqus/OdbDisplay/SuperimposeOptions.py:docstring of abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions:1
+#: ../../../../src/abaqus/OdbDisplay/SymbolOptions.py:docstring of abaqus.OdbDisplay.SymbolOptions.SymbolOptions:1
+#: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut:1
+#: ../../../../src/abaqus/OdbDisplay/ViewerOptions.py:docstring of abaqus.OdbDisplay.ViewerOptions.ViewerOptions:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../docstring of abaqus.OdbDisplay.CommonOptions.CommonOptions.autoDeformationScaleValue:1
 msgid "A Float specifying the deformation scale factor value when **deformationScaling** = AUTO. This value is read-only."
 msgstr ""
@@ -986,10 +995,6 @@ msgstr ""
 #: ../../../../src/abaqus/OdbDisplay/SuperimposeOptions.py:docstring of abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:0
 #: ../../../../src/abaqus/OdbDisplay/SymbolOptions.py:docstring of abaqus.OdbDisplay.SymbolOptions.SymbolOptions.setValues:0
 msgid "Raises"
-msgstr ""
-
-#: ../../reference/session/odb_display.rst:21
-msgid "ContourOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/ContourOptions.py:docstring of abaqus.OdbDisplay.ContourOptions.ContourOptions:1
@@ -1617,10 +1622,6 @@ msgstr ""
 msgid "The `legendHideOutsideLimits` argument was added."
 msgstr ""
 
-#: ../../reference/session/odb_display.rst:31
-msgid "DefaultOdbDisplay"
-msgstr ""
-
 #: ../../../../src/abaqus/OdbDisplay/DefaultOdbDisplay.py:docstring of abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay:1
 #: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay:1
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut:1
@@ -1744,10 +1745,6 @@ msgstr ""
 #: ../../docstring of abaqus.OdbDisplay.DefaultOdbDisplay.DefaultOdbDisplay.viewCutOptions:1
 #: ../../docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay.viewCutOptions:1
 msgid "A :py:class:`~abaqus.PlotOptions.ViewCutOptions.ViewCutOptions` object."
-msgstr ""
-
-#: ../../reference/session/odb_display.rst:41
-msgid "DisplayBodyOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/DisplayBodyOptions.py:docstring of abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions:1
@@ -1885,10 +1882,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/DisplayBodyOptions.py:docstring of abaqus.OdbDisplay.DisplayBodyOptions.DisplayBodyOptions.setValues:36
 msgid "An Int specifying the percentage to shrink the elements when **elementShrink** = ON. Possible values are 0≤elementShrinkPercentage* ≤ 90. The default value is 5."
-msgstr ""
-
-#: ../../reference/session/odb_display.rst:51
-msgid "OdbDisplay"
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/OdbDisplay.py:docstring of abaqus.OdbDisplay.OdbDisplay.OdbDisplay:1
@@ -2765,10 +2758,6 @@ msgstr ""
 msgid "A tuple of SymbolicConstants specifying a Boolean to specify if the status range should be inside a specified minimum and maximum. The range will be outside when false."
 msgstr ""
 
-#: ../../reference/session/odb_display.rst:61
-msgid "OrientationOptions"
-msgstr ""
-
 #: ../../../../src/abaqus/OdbDisplay/OrientationOptions.py:docstring of abaqus.OdbDisplay.OrientationOptions.OrientationOptions:1
 msgid "Bases: :py:class:`~abaqus.PlotOptions.DGOrientationOptions.DGOrientationOptions`"
 msgstr ""
@@ -2983,10 +2972,6 @@ msgstr ""
 #: ../../../../src/abaqus/OdbDisplay/OrientationOptions.py:docstring of abaqus.OdbDisplay.OrientationOptions.OrientationOptions.setValues:29
 #: ../../docstring of abaqus.OdbDisplay.OrientationOptions.OrientationOptions.symbolSize:1
 msgid "A Float specifying the size of the material orientation triad. The default value is 12.0."
-msgstr ""
-
-#: ../../reference/session/odb_display.rst:71
-msgid "SuperimposeOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/SuperimposeOptions.py:docstring of abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions:1
@@ -3365,10 +3350,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/SuperimposeOptions.py:docstring of abaqus.OdbDisplay.SuperimposeOptions.SuperimposeOptions.setValues:117
 msgid "A sequence of three Floats specifying the offset value in each of the three coordinate directions when **deformedOffsetMode** = NONUNIFORM. The default value is (0, 0, 0)."
-msgstr ""
-
-#: ../../reference/session/odb_display.rst:81
-msgid "SymbolOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/SymbolOptions.py:docstring of abaqus.OdbDisplay.SymbolOptions.SymbolOptions:1
@@ -4089,10 +4070,6 @@ msgstr ""
 msgid "A String specifying the text font for vector. The default value is \"verdana\"."
 msgstr ""
 
-#: ../../reference/session/odb_display.rst:91
-msgid "ViewCut"
-msgstr ""
-
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut:1
 msgid "The ViewCut object is used to store values and attributes associate with ViewCut type objects. ViewCut objects can be created using the methods described below. The methods accessed via the OdbDisplay object cause the ViewCut object to be added to the session.viewports[name].odbDisplay.viewCuts repository."
 msgstr ""
@@ -4298,10 +4275,6 @@ msgstr ""
 #: ../../../../src/abaqus/OdbDisplay/ViewCut.py:docstring of abaqus.OdbDisplay.ViewCut.ViewCut.setValues:30
 #: ../../docstring of abaqus.OdbDisplay.ViewCut.ViewCut.showFreeBodyCut:1
 msgid "A Boolean specifying whether to display the free body cut. The default value is OFF."
-msgstr ""
-
-#: ../../reference/session/odb_display.rst:101
-msgid "ViewerOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/OdbDisplay/ViewerOptions.py:docstring of abaqus.OdbDisplay.ViewerOptions.ViewerOptions:1

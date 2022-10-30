@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-04 00:15+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,155 +17,155 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../user/output/cpp/style.rst:3
+#: ../../user/output/cpp/style.md:1
 msgid "Abaqus Scripting Interface documentation style"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:5
+#: ../../user/output/cpp/style.md:3
 msgid ""
 "This section describes the style that is used to describe a command in "
-"the :doc:`/references`. You may want to refer to the :doc:`/references` "
+"the {doc}`/references`. You may want to refer to the {doc}`/references` "
 "while you read this section and compare the style of a documented command"
 " with the descriptions provided here."
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:7
+#: ../../user/output/cpp/style.md:5
 msgid ""
 "The following list describes the order in which commands are documented "
-"in the :doc:`/references`:"
+"in the {doc}`/references`:"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:9
+#: ../../user/output/cpp/style.md:7
 msgid ""
 "Chapters are grouped alphabetically by functionality. In general, the "
 "functionality corresponds to the modules and toolsets that are found in "
-"Abaqus/CAE; for example, :doc:`/reference/session/animation`, and "
-":doc:`/reference/mdb/model/assembly`."
+"Abaqus/CAE; for example, {doc}`/reference/session/animation`, and "
+"{doc}`/reference/mdb/model/assembly`."
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:10
+#: ../../user/output/cpp/style.md:9
 msgid ""
 "Within each chapter the primary objects appear first and are followed by "
 "other objects in alphabetical order. For example, in "
-":doc:`/reference/mdb/model/mesh` the objects are listed in the following "
+"{doc}`/reference/mdb/model/mesh` the objects are listed in the following "
 "order:"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:12
+#: ../../user/output/cpp/style.md:11
 msgid "Assembly"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:13
+#: ../../user/output/cpp/style.md:12
 msgid "Part"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:14
+#: ../../user/output/cpp/style.md:13
 msgid "ElemType"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:15
+#: ../../user/output/cpp/style.md:14
 msgid "MeshEdge"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:16
+#: ../../user/output/cpp/style.md:15
 msgid "MeshElement"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:17
+#: ../../user/output/cpp/style.md:16
 msgid "MeshFace"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:18
+#: ../../user/output/cpp/style.md:17
 msgid "MeshNode"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:19
+#: ../../user/output/cpp/style.md:18
 msgid "MeshStats"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:20
+#: ../../user/output/cpp/style.md:20
 msgid ""
 "Within each object description, the commands are listed in the following "
-"order: - Constructors (in alphabetical order) - Methods (in alphabetical "
-"order) - Members"
+"order: \\- Constructors (in alphabetical order) \\- Methods (in "
+"alphabetical order) \\- Members"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:24
+#: ../../user/output/cpp/style.md:25
 msgid ""
 "Some methods are not associated with an object and appear at the end of a"
-" chapter; for example, the :py:meth:`~abaqus.Material.evaluateMaterial` "
-"method appears at the end of :doc:`/reference/mdb/model/material`."
+" chapter; for example, the {py:meth}`~abaqus.Material.evaluateMaterial` "
+"method appears at the end of {doc}`/reference/mdb/model/material`."
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:27
+#: ../../user/output/cpp/style.md:27
 msgid "Access"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:29
+#: ../../user/output/cpp/style.md:29
 msgid ""
-"The description of each object in the :doc:`/references` begins with a "
+"The description of each object in the {doc}`/references` begins with a "
 "section that describes how you access an instance of the object."
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:31
+#: ../../user/output/cpp/style.md:31
 msgid "The following is the access description for the Part object:"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:37
+#: ../../user/output/cpp/style.md:37
 msgid ""
 "The access description specifies where instances of the object are "
 "located in the data model. The Part object can accordingly be accessed "
 "as:"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:44
+#: ../../user/output/cpp/style.md:44
 msgid "The Access description for the FieldOutput object is"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:50
+#: ../../user/output/cpp/style.md:50
 msgid ""
 "The following statements show how you use the object described by this "
 "`Access` description:"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:66
+#: ../../user/output/cpp/style.md:66
 msgid ""
 "The next to last line shows the getSubset method of the FieldOutput "
 "object."
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:67
+#: ../../user/output/cpp/style.md:67
 msgid ""
 "The last line shows the **validInvariants** member of the FieldOutput "
 "object."
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:70
+#: ../../user/output/cpp/style.md:69
 msgid "Path"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:72
+#: ../../user/output/cpp/style.md:71
 msgid ""
 "A method that creates an object is called a constructor. The Abaqus C++ "
 "API uses the convention that constructors begin with an uppercase "
 "character. In contrast, methods that operate on an object begin with a "
 "lowercase character. The description of each constructor in the "
-":doc:`/references` includes a path to the command. For example, the "
+"{doc}`/references` includes a path to the command. For example, the "
 "following describes the path to the Part constructor:"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:78
+#: ../../user/output/cpp/style.md:77
 msgid ""
 "Some constructors include more than one path. For example, you can create"
 " a nodeSet that is associated with either a Part object or the "
 "RootAssembly object, and each path is listed."
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:85
+#: ../../user/output/cpp/style.md:84
 msgid "The path is not listed if the method is not a constructor."
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:87
+#: ../../user/output/cpp/style.md:86
 msgid ""
 "If you are using the Abaqus C++ API to read data from an output database,"
 " the objects exist when you open the output database, and you do not have"
@@ -176,21 +176,21 @@ msgid ""
 "database."
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:89
+#: ../../user/output/cpp/style.md:88
 msgid "For example, the Path description for the FieldOutput constructor is"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:95
+#: ../../user/output/cpp/style.md:94
 msgid "The following statement creates a FieldOutput object:"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:107
+#: ../../user/output/cpp/style.md:105
 msgid "Prototype"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:109
+#: ../../user/output/cpp/style.md:107
 msgid ""
-":doc:`/reference/odb` contains a prototype section for each C++ command. "
+"{doc}`/reference/odb` contains a prototype section for each C++ command. "
 "The prototype provides the type returned by the command, the name of the "
 "command, and a list of all its arguments along with the type of each "
 "argument. Required arguments appear first in the list followed by default"
@@ -198,7 +198,7 @@ msgid ""
 "constructor is given as"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:116
+#: ../../user/output/cpp/style.md:114
 msgid ""
 "indicating that the **incrementNumber** and **frameValue** arguments are "
 "required, that the optional **description** argument has a default value "
@@ -206,11 +206,11 @@ msgid ""
 " object created."
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:119
+#: ../../user/output/cpp/style.md:116
 msgid "Return value"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:121
+#: ../../user/output/cpp/style.md:118
 msgid ""
 "All commands return a value. Many commands return the value void. "
 "Constructors (methods that create an object) always return the object "
@@ -219,14 +219,14 @@ msgid ""
 "returns an Odb object, and the variable newOdb refers to this new object."
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:127
+#: ../../user/output/cpp/style.md:124
 msgid ""
 "You can use the object returned by a command in subsequent statements. "
 "The following statement uses the output database created by the previous "
 "statement:"
 msgstr ""
 
-#: ../../user/output/cpp/style.rst:134
+#: ../../user/output/cpp/style.md:131
 msgid ""
 "If an exception is raised while a statement is executing, the command "
 "does not return a value."
@@ -299,6 +299,93 @@ msgstr ""
 
 #~ msgid ""
 #~ ":doc:`reference/odb` contains a prototype "
+#~ "section for each C++ command. The "
+#~ "prototype provides the type returned by"
+#~ " the command, the name of the "
+#~ "command, and a list of all its "
+#~ "arguments along with the type of "
+#~ "each argument. Required arguments appear "
+#~ "first in the list followed by "
+#~ "default arguments along with their "
+#~ "default value. For example, the Frame"
+#~ " constructor is given as"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This section describes the style that"
+#~ " is used to describe a command "
+#~ "in the :doc:`/references`. You may want"
+#~ " to refer to the :doc:`/references` "
+#~ "while you read this section and "
+#~ "compare the style of a documented "
+#~ "command with the descriptions provided "
+#~ "here."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The following list describes the order"
+#~ " in which commands are documented in"
+#~ " the :doc:`/references`:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Chapters are grouped alphabetically by "
+#~ "functionality. In general, the functionality"
+#~ " corresponds to the modules and "
+#~ "toolsets that are found in Abaqus/CAE;"
+#~ " for example, :doc:`/reference/session/animation`, "
+#~ "and :doc:`/reference/mdb/model/assembly`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Within each chapter the primary objects"
+#~ " appear first and are followed by "
+#~ "other objects in alphabetical order. For"
+#~ " example, in :doc:`/reference/mdb/model/mesh` the"
+#~ " objects are listed in the following"
+#~ " order:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Within each object description, the "
+#~ "commands are listed in the following "
+#~ "order: - Constructors (in alphabetical "
+#~ "order) - Methods (in alphabetical order)"
+#~ " - Members"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Some methods are not associated with "
+#~ "an object and appear at the end"
+#~ " of a chapter; for example, the "
+#~ ":py:meth:`~abaqus.Material.evaluateMaterial` method "
+#~ "appears at the end of "
+#~ ":doc:`/reference/mdb/model/material`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The description of each object in "
+#~ "the :doc:`/references` begins with a "
+#~ "section that describes how you access"
+#~ " an instance of the object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A method that creates an object is"
+#~ " called a constructor. The Abaqus C++"
+#~ " API uses the convention that "
+#~ "constructors begin with an uppercase "
+#~ "character. In contrast, methods that "
+#~ "operate on an object begin with a"
+#~ " lowercase character. The description of"
+#~ " each constructor in the :doc:`/references`"
+#~ " includes a path to the command. "
+#~ "For example, the following describes the"
+#~ " path to the Part constructor:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":doc:`/reference/odb` contains a prototype "
 #~ "section for each C++ command. The "
 #~ "prototype provides the type returned by"
 #~ " the command, the name of the "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-04 00:15+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../user/examples/settings.rst:3
+#: ../../user/examples/settings.md:1
 msgid "Editing display preferences and GUI settings"
 msgstr ""
 
-#: ../../user/examples/settings.rst:5
+#: ../../user/examples/settings.md:3
 msgid ""
 "You can use the Abaqus Scripting Interface to edit the abaqus_2021.gpr "
 "file, which includes settings that control many default display "
@@ -30,10 +30,10 @@ msgid ""
 "section describes the structure of the abaqus_2021.gpr file and provides "
 "an overview of customizing its settings; for more detailed information "
 "about the functions available in the caePrefsAccess module, see "
-":doc:`/reference/kernel/cae_display_preferences`."
+"{doc}`/reference/kernel/cae_display_preferences`."
 msgstr ""
 
-#: ../../user/examples/settings.rst:8
+#: ../../user/examples/settings.md:6
 msgid ""
 "Editing the `abaqus_2021.gpr` file is for experienced users only. Do not "
 "use the functions in the `caePrefsAccess` module unless you are "
@@ -43,7 +43,7 @@ msgid ""
 "file."
 msgstr ""
 
-#: ../../user/examples/settings.rst:10
+#: ../../user/examples/settings.md:9
 msgid ""
 "You can retrieve the location of your `abaqus_2021.gpr` file using the "
 "`getGuiPrefsFileName` function. The file records default settings in two "
@@ -52,40 +52,40 @@ msgid ""
 "one section does not have any effect on the options in the other section."
 msgstr ""
 
-#: ../../user/examples/settings.rst:12
+#: ../../user/examples/settings.md:11
 msgid "**sessionOptions**"
 msgstr ""
 
-#: ../../user/examples/settings.rst:14
+#: ../../user/examples/settings.md:13
 msgid ""
 "The session options consist of the settings that you can save using the "
 "**File -> Save Display Options** menu option. In Abaqus/CAE you can save "
 "these options in the current directory or in your home directory."
 msgstr ""
 
-#: ../../user/examples/settings.rst:16
+#: ../../user/examples/settings.md:15
 msgid ""
 "You can display and edit session options using the `openSessionOptions` "
 "function."
 msgstr ""
 
-#: ../../user/examples/settings.rst:35
+#: ../../user/examples/settings.md:34
 msgid ""
 "The following statement changes the frame rate to 50. You should confirm "
 "that the data type you specify matches the type of the existing value."
 msgstr ""
 
-#: ../../user/examples/settings.rst:41
+#: ../../user/examples/settings.md:40
 msgid ""
 "You can save the options you change to the original file by issuing the "
 "following command:"
 msgstr ""
 
-#: ../../user/examples/settings.rst:47
+#: ../../user/examples/settings.md:46
 msgid "**guiPreferences**"
 msgstr ""
 
-#: ../../user/examples/settings.rst:49
+#: ../../user/examples/settings.md:48
 msgid ""
 "The GUI preferences control many default behaviors in the Abaqus/CAE "
 "graphical interface, including size and location of the main window, size"
@@ -94,7 +94,7 @@ msgid ""
 "**File** menu."
 msgstr ""
 
-#: ../../user/examples/settings.rst:51
+#: ../../user/examples/settings.md:50
 msgid ""
 "Abaqus/CAE saves `guiPreferences` settings to your home directory when "
 "you exit the application. A separate `guiPreferences` record is stored in"
@@ -106,48 +106,48 @@ msgid ""
 "specifying the **displayName** of the settings that you want to modify."
 msgstr ""
 
-#: ../../user/examples/settings.rst:53
+#: ../../user/examples/settings.md:52
 msgid ""
 "In the following example, the `openGuiPreferences` function is used to "
 "examine the **X** - and **Y** -location and the height and width of the "
 "following components of Abaqus/CAE:"
 msgstr ""
 
-#: ../../user/examples/settings.rst:55
+#: ../../user/examples/settings.md:54
 msgid "**Select Font** dialog box"
 msgstr ""
 
-#: ../../user/examples/settings.rst:56
+#: ../../user/examples/settings.md:55
 msgid "Abaqus/CAE main window"
 msgstr ""
 
-#: ../../user/examples/settings.rst:57
+#: ../../user/examples/settings.md:56
 msgid "**Adaptivity Plotter** plug-in"
 msgstr ""
 
-#: ../../user/examples/settings.rst:58
+#: ../../user/examples/settings.md:57
 msgid "**Amplitude Plotter** plug-in"
 msgstr ""
 
-#: ../../user/examples/settings.rst:59
+#: ../../user/examples/settings.md:58
 msgid "**Create Weld** dialog box"
 msgstr ""
 
-#: ../../user/examples/settings.rst:60
+#: ../../user/examples/settings.md:59
 msgid "**Copy Annotation** dialog box"
 msgstr ""
 
-#: ../../user/examples/settings.rst:62
+#: ../../user/examples/settings.md:61
 msgid "The sample statements follow:"
 msgstr ""
 
-#: ../../user/examples/settings.rst:94
+#: ../../user/examples/settings.md:93
 msgid ""
 "You can change the geometry of the Abaqus/CAE main window by issuing a "
 "command like the following:"
 msgstr ""
 
-#: ../../user/examples/settings.rst:100
+#: ../../user/examples/settings.md:99
 msgid ""
 "You can save the GUI preferences you change to the original file by "
 "issuing the following command:"
@@ -168,5 +168,22 @@ msgstr ""
 #~ "detailed information about the functions "
 #~ "available in the caePrefsAccess module, "
 #~ "see :doc:`reference/kernel/cae_display_preferences`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can use the Abaqus Scripting "
+#~ "Interface to edit the abaqus_2021.gpr "
+#~ "file, which includes settings that "
+#~ "control many default display preferences "
+#~ "and GUI settings in the Abaqus/CAE "
+#~ "user interface. To enable editing of "
+#~ "this file, you must import the "
+#~ "caePrefsAccess module. This section describes"
+#~ " the structure of the abaqus_2021.gpr "
+#~ "file and provides an overview of "
+#~ "customizing its settings; for more "
+#~ "detailed information about the functions "
+#~ "available in the caePrefsAccess module, "
+#~ "see :doc:`/reference/kernel/cae_display_preferences`."
 #~ msgstr ""
 
