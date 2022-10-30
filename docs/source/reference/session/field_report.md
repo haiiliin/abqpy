@@ -18,7 +18,7 @@ Field report commands are used to write a field output report and free body comp
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.FieldReport.FieldReportOptions.FieldReportOptions
         :members:

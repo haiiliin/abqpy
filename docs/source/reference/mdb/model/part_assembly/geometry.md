@@ -6,7 +6,7 @@ The basic geometry commands create geometric entities that are referenced by Par
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.BasicGeometry.Cell.Cell
         :members:

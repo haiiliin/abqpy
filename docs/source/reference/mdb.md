@@ -29,7 +29,7 @@ mdb/edit_mesh
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
    .. autoclass:: abaqus.Mdb.MdbBase.MdbBase
       :members:

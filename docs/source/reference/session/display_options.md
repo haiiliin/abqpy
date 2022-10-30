@@ -6,7 +6,7 @@ Display options commands are used to store settings that specify how assemblies 
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.DisplayOptions.AssemblyDisplayOptions.AssemblyDisplayOptions
         :members:

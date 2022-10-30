@@ -54,7 +54,7 @@ A specific type of interaction object and a specific type of interaction state o
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Interaction.ContactControl.ContactControl
         :members:

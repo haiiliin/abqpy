@@ -20,7 +20,7 @@ Canvas commands are used to create, position, and modify canvas objects. The Can
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Annotation.AnnotationViewport.AnnotationViewport
         :members:

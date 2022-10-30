@@ -21,7 +21,7 @@ Annotation commands are used to create, position, and modify viewport annotation
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Annotation.Annotation.Annotation
         :members:

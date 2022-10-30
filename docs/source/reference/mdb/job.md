@@ -21,7 +21,7 @@ The Job object is the abstract base type for other Job objects. The Job object h
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Job.Coexecution.Coexecution
         :members:
