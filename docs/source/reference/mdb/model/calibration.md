@@ -18,7 +18,7 @@ The calibration commands are used for material calibration.
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Calibration.Calibration.Calibration
         :members:

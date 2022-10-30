@@ -55,7 +55,7 @@ Assembly sets contain regions of an assembly and are used by many commands that 
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Region.RegionPartBase.RegionPartBase
         :members:

@@ -28,7 +28,7 @@ Table Collection commands are used to create dynamic table types and tables.
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.TableCollection.ActivateElements.ActivateElements
         :members:
