@@ -18,7 +18,7 @@ Sketcher commands are used to define the entities, such as the geometry, constra
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch
         :members:

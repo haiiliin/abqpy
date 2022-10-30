@@ -28,7 +28,7 @@ Step output commands are used for configuring output requests, integrated output
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.StepOutput.DiagnosticPrint.DiagnosticPrint
         :members:
