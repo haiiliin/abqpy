@@ -29,7 +29,7 @@ Path commands are used to define a line through your model by specifying a serie
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.PathAndProbe.CurrentProbeValues.CurrentProbeValues
         :members:

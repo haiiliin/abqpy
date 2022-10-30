@@ -6,7 +6,7 @@ The print commands are used to print selected canvas objects to a file or to a W
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Print.EpsOptions.EpsOptions
         :members:

@@ -17,7 +17,7 @@ A specific type of engineering feature object is designed for each type of engin
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.EngineeringFeature.Crack.Crack
         :members:

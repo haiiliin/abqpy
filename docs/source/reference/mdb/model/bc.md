@@ -18,7 +18,7 @@ A specific type of boundary condition object and a specific type of boundary con
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.BoundaryCondition.BoundaryCondition.BoundaryCondition
         :members:
