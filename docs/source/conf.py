@@ -150,7 +150,7 @@ autodoc_default_options = {
 add_module_names = False
 
 # Autoapi configuration
-autoapi_dirs = ['../src/abaqus']
+autoapi_dirs = ['../../src/abaqus']
 
 # Figure numbering
 numfig = True
