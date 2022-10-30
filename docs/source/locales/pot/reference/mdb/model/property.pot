@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/model/property.rst:3
+#: ../../reference/mdb/model/property.md:1
 msgid "Property"
 msgstr ""
 
-#: ../../reference/mdb/model/property.rst:5
+#: ../../reference/mdb/model/property.md:3
 msgid "The Property commands are used to create and manage reinforcements and to assign properties to a part. (See also Material commands and Section commands.) The Property commands are methods of a Part object."
 msgstr ""
 
-#: ../../reference/mdb/model/property.rst:9
+#: ../../reference/mdb/model/property.md:6
 msgid "Create properties for Part"
 msgstr ""
 
@@ -1919,6 +1919,19 @@ msgstr ""
 msgid "This method suppresses features."
 msgstr ""
 
+#: ../../../../src/abaqus/Property/CompositeLayup.py:docstring of abaqus.Property.CompositeLayup.CompositeLayup:1
+#: ../../../../src/abaqus/Property/CompositePly.py:docstring of abaqus.Property.CompositePly.CompositePly:1
+#: ../../../../src/abaqus/Property/CompositePlyArray.py:docstring of abaqus.Property.CompositePlyArray.CompositePlyArray:1
+#: ../../../../src/abaqus/Property/MaterialOrientation.py:docstring of abaqus.Property.MaterialOrientation.MaterialOrientation:1
+#: ../../../../src/abaqus/Property/MaterialOrientationArray.py:docstring of abaqus.Property.MaterialOrientationArray.MaterialOrientationArray:1
+#: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.PlyStackPlot:1
+#: ../../../../src/abaqus/Property/PropertyAssembly.py:docstring of abaqus.Property.PropertyAssembly.PropertyAssembly:1
+#: ../../../../src/abaqus/Property/PropertyPart.py:docstring of abaqus.Property.PropertyPart.PropertyPart:1
+#: ../../../../src/abaqus/Property/SectionAssignment.py:docstring of abaqus.Property.SectionAssignment.SectionAssignment:1
+#: ../../../../src/abaqus/Property/SectionAssignmentArray.py:docstring of abaqus.Property.SectionAssignmentArray.SectionAssignmentArray:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/Property/CompositeLayup.py:docstring of abaqus.Property.CompositeLayup.CompositeLayup.CompositePly:4
 #: ../../../../src/abaqus/Property/CompositeLayup.py:docstring of abaqus.Property.CompositeLayup.CompositeLayup.CompositeShellSection:4
 #: ../../../../src/abaqus/Property/CompositeLayup.py:docstring of abaqus.Property.CompositeLayup.CompositeLayup.GeometryShellSection:4
@@ -2365,12 +2378,8 @@ msgstr ""
 msgid "An Int specifying the number of the rebar reference orientation assignment to be deleted."
 msgstr ""
 
-#: ../../reference/mdb/model/property.rst:19
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/mdb/model/property.rst:22
-msgid "CompositeLayup"
+#: ../../reference/mdb/model/property.md:17
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Property/CompositeLayup.py:docstring of abaqus.Property.CompositeLayup.CompositeLayup:1
@@ -2778,7 +2787,7 @@ msgid "A Float specifying the thickness of the section. The **thickness** argume
 msgstr ""
 
 #: ../../../../src/abaqus/Property/CompositeLayup.py:docstring of abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:19
-msgid "An Int specifying the number of integration points to be used through the section. Possible values are **numIntPts** >> 0. The default value is 5.To use the default settings of the analysis products, set **numIntPts** to 5 if **integrationRule** = SIMPSON or set **numIntPts** to 7 if **integrationRule** = GAUSS."
+msgid "An Int specifying the number of integration points to be used through the section. Possible values are **numIntPts** > 0. The default value is 5.To use the default settings of the analysis products, set **numIntPts** to 5 if **integrationRule** = SIMPSON or set **numIntPts** to 7 if **integrationRule** = GAUSS."
 msgstr ""
 
 #: ../../../../src/abaqus/Property/CompositeLayup.py:docstring of abaqus.Property.CompositeLayup.CompositeLayup.HomogeneousShellSection:76
@@ -2799,10 +2808,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Property/CompositeLayup.py:docstring of abaqus.Property.CompositeLayup.CompositeLayup.setValues:4
 msgid "Check `CompositeLayup.setValues on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-compositelayuppyc.htm?contextscope=all#simaker-compositelayupsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/property.rst:32
-msgid "CompositePly"
 msgstr ""
 
 #: ../../../../src/abaqus/Property/CompositePly.py:docstring of abaqus.Property.CompositePly.CompositePly:1
@@ -2911,14 +2916,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.Property.CompositePly.CompositePly.thicknessType:1
 msgid "A SymbolicConstant specifying the method used to define the thickness. If thicknessType=SPECIFY_THICKNESS, the thickness argument is required. Possible values are SPECIFY_THICKNESS and FIELD_THICKNESS. The default value is SPECIFY_THICKNESS."
-msgstr ""
-
-#: ../../reference/mdb/model/property.rst:42
-msgid "CompositePlyArray"
-msgstr ""
-
-#: ../../reference/mdb/model/property.rst:52
-msgid "MaterialOrientation"
 msgstr ""
 
 #: ../../../../src/abaqus/Property/MaterialOrientation.py:docstring of abaqus.Property.MaterialOrientation.MaterialOrientation:1
@@ -3100,24 +3097,12 @@ msgstr ""
 msgid "Check `MaterialOrientation.__init__ on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialorientationpyc.htm?contextscope=all#simaker-materialorientation__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/property.rst:62
-msgid "MaterialOrientationArray"
-msgstr ""
-
-#: ../../reference/mdb/model/property.rst:72
-msgid "PlyStackPlot"
-msgstr ""
-
 #: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.PlyStackPlot:1
 msgid "The PlyStackPlot object is used to plot the stacking of plies in a composite layup or in a composite shell section."
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PlyStackPlot.py:docstring of abaqus.Property.PlyStackPlot.PlyStackPlot:11
 msgid "Check `PlyStackPlot on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-plystackplotpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/property.rst:82
-msgid "PropertyAssembly"
 msgstr ""
 
 #: ../../../../src/abaqus/Property/PropertyAssembly.py:docstring of abaqus.Property.PropertyAssembly.PropertyAssembly:1
@@ -3717,10 +3702,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Property.SectionAssignment.SectionAssignment` object."
 msgstr ""
 
-#: ../../reference/mdb/model/property.rst:92
-msgid "SectionAssignment"
-msgstr ""
-
 #: ../../../../src/abaqus/Property/SectionAssignment.py:docstring of abaqus.Property.SectionAssignment.SectionAssignment:1
 msgid "The SectionAssignment object is used to specify a section assignment on an assembly or part. Section assignments on the assembly are limited to connector elements only."
 msgstr ""
@@ -3822,8 +3803,4 @@ msgstr ""
 
 #: ../../docstring of abaqus.Property.SectionAssignment.SectionAssignment.suppressed:1
 msgid "A Boolean specifying whether the section assignment is suppressed or not. The default value is OFF."
-msgstr ""
-
-#: ../../reference/mdb/model/property.rst:102
-msgid "SectionAssignmentArray"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2023\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,19 +16,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/edit_mesh.rst:3
+#: ../../reference/mdb/edit_mesh.md:1
 msgid "Edit Mesh"
 msgstr ""
 
-#: ../../reference/mdb/edit_mesh.rst:5
+#: ../../reference/mdb/edit_mesh.md:3
 msgid "Edit mesh commands are used to edit an orphan mesh part or part instance or an Abaqus native mesh."
 msgstr ""
 
-#: ../../reference/mdb/edit_mesh.rst:9
+#: ../../reference/mdb/edit_mesh.md:5
 msgid "Classes"
 msgstr ""
 
-#: ../../reference/mdb/edit_mesh.rst:12
+#: ../../reference/mdb/edit_mesh.md:7
 msgid "Edit mesh features of Assembly"
 msgstr ""
 
@@ -1310,6 +1310,12 @@ msgstr ""
 msgid "This method suppresses features."
 msgstr ""
 
+#: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly:1
+#: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions:1
+#: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.collapseMeshEdge:5
 msgid "Check `MeshEditAssembly.collapseMeshEdge on help.3ds.com/2023 <https://help.3ds.com/2023/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-assemblypyc.htm?contextscope=all#simaker-assemblycollapsemeshedgepyc>`__."
 msgstr ""
@@ -1536,7 +1542,7 @@ msgid "A single MeshEdge object specifying the element edge to split."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.splitMeshEdge:9
-msgid "A Float specifying the normalized distance along the **edge** at which to split. Possible values are 0.0 << **parameter** << 1.0. The default value is 0.5."
+msgid "A Float specifying the normalized distance along the **edge** at which to split. Possible values are 0.0 < **parameter** < 1.0. The default value is 0.5."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditAssembly.py:docstring of abaqus.EditMesh.MeshEditAssembly.MeshEditAssembly.swapMeshEdge:4
@@ -1552,7 +1558,7 @@ msgstr ""
 msgid "This method undoes the most recent edit mesh or the bottom-up meshing operation on an assembly and restores the mesh on the affected part instance to its previous state. An edit mesh undo action must be available for the assembly. This implies that prior to executing an edit mesh command on the assembly, the user enabled edit mesh undo with a sufficient cache allowance to store the edit mesh operation."
 msgstr ""
 
-#: ../../reference/mdb/edit_mesh.rst:22
+#: ../../reference/mdb/edit_mesh.md:18
 msgid "Edit mesh features of Part"
 msgstr ""
 
@@ -3173,7 +3179,7 @@ msgid "Check `MeshEditPart.splitMeshEdge on help.3ds.com/2023 <https://help.3ds.
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.splitMeshEdge:10
-msgid "A Float specifying the normalized distance along **edge** at which to split. Possible values are 0.0 << **parameter** << 1.0. The default value is 0.5."
+msgid "A Float specifying the normalized distance along **edge** at which to split. Possible values are 0.0 < **parameter** < 1.0. The default value is 0.5."
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditPart.py:docstring of abaqus.EditMesh.MeshEditPart.MeshEditPart.subdivideElement:4
@@ -3212,8 +3218,8 @@ msgstr ""
 msgid "A Float specifying the radius of the cylinder about which the part is to be wrapped. The wrapping procedure will relocate a node at point (xx, yy) on the planar mesh to (x,θ,zx,θ,z), where rr is the specified radius, θθ = xrxr, and zz=yy."
 msgstr ""
 
-#: ../../reference/mdb/edit_mesh.rst:32
-msgid "MeshEditOptions"
+#: ../../reference/mdb/edit_mesh.md:29
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/EditMesh/MeshEditOptions.py:docstring of abaqus.EditMesh.MeshEditOptions.MeshEditOptions:1
