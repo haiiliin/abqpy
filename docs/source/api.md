@@ -11,4 +11,5 @@ cli
 envvars
 templates
 references
+autoapi/index
 ```

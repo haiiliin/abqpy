@@ -38,7 +38,6 @@ except (ImportError, AttributeError):
     warnings.warn('abqpy is not installed, using 2023.0.0')
     release = version = '2023.0.0'[:4]
 sys.path.insert(0, os.path.abspath('../../src'))
-sys.path.insert(0, os.path.abspath('./_ext'))
 
 # For multiple languages
 locale_dirs = ['locales/']   # path is example but recommended.
@@ -53,8 +52,8 @@ os.environ['ABQPY_MAKE_DOCS'] = 'true'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'autoapi.extension',
     'autoclasstoc',
-    'autopackage',
     'myst_parser',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
@@ -149,6 +148,9 @@ autodoc_default_options = {
 }
 
 add_module_names = False
+
+# Autoapi configuration
+autoapi_dirs = ['../src/abaqus']
 
 # Figure numbering
 numfig = True
