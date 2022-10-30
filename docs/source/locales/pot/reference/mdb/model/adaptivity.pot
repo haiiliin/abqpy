@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/model/adaptivity.rst:3
+#: ../../reference/mdb/model/adaptivity.md:1
 msgid "Adaptivity"
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:5
+#: ../../reference/mdb/model/adaptivity.md:3
 msgid "The Adaptivity commands are used to define objects, perform analyses, and calculate new meshes for Arbitrary Lagrangian Eularian (ALE) adaptive smoothing (adaptive meshing) and varying topology adaptivity (adaptive remeshing)."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:9
+#: ../../reference/mdb/model/adaptivity.md:5
 msgid "Create adaptivity mesh control features"
 msgstr ""
 
@@ -598,6 +598,24 @@ msgid "This method modifies the Model object."
 msgstr ""
 
 #: ../../../../src/abaqus/Adaptivity/AdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint:1
+#: ../../../../src/abaqus/Adaptivity/AdaptiveMeshConstraintState.py:docstring of abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState:1
+#: ../../../../src/abaqus/Adaptivity/AdaptiveMeshControl.py:docstring of abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl:1
+#: ../../../../src/abaqus/Adaptivity/AdaptiveMeshDomain.py:docstring of abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain:1
+#: ../../../../src/abaqus/Adaptivity/AdaptivityIteration.py:docstring of abaqus.Adaptivity.AdaptivityIteration.AdaptivityIteration:1
+#: ../../../../src/abaqus/Adaptivity/AdaptivityModel.py:docstring of abaqus.Adaptivity.AdaptivityModel.AdaptivityModel:1
+#: ../../../../src/abaqus/Adaptivity/AdaptivityProcess.py:docstring of abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess:1
+#: ../../../../src/abaqus/Adaptivity/AdaptivityStep.py:docstring of abaqus.Adaptivity.AdaptivityStep.AdaptivityStep:1
+#: ../../../../src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint:1
+#: ../../../../src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraintState.py:docstring of abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState:1
+#: ../../../../src/abaqus/Adaptivity/ErrorIndicatorResult.py:docstring of abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult:1
+#: ../../../../src/abaqus/Adaptivity/RemeshingRule.py:docstring of abaqus.Adaptivity.RemeshingRule.RemeshingRule:1
+#: ../../../../src/abaqus/Adaptivity/RuleResult.py:docstring of abaqus.Adaptivity.RuleResult.RuleResult:1
+#: ../../../../src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint:1
+#: ../../../../src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraintState.py:docstring of abaqus.Adaptivity.VelocityAdaptiveMeshConstraintState.VelocityAdaptiveMeshConstraintState:1
+msgid "Member Details:"
+msgstr ""
+
+#: ../../../../src/abaqus/Adaptivity/AdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint:1
 #: ../../../../src/abaqus/Adaptivity/AdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint.__init__:1
 #: ../../../../src/abaqus/Adaptivity/AdaptivityModel.py:docstring of abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.AdaptiveMeshConstraint:1
 msgid "The AdaptiveMeshConstraint object is the abstract base type for other Arbitrary Lagrangian Eularian (ALE) style AdaptiveMeshConstraint objects. The AdaptiveMeshConstraint object has no explicit constructor. The methods and members of the AdaptiveMeshConstraint object are common to all objects derived from the AdaptiveMeshConstraint object."
@@ -890,6 +908,8 @@ msgid "A String specifying the name of the step in which the adaptive mesh const
 msgstr ""
 
 #: ../../../../src/abaqus/Adaptivity/AdaptivityModel.py:docstring of abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.DisplacementAdaptiveMeshConstraint:19
+#: ../../../../src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:19
+#: ../../../../src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValues:8
 msgid "A Float or a SymbolicConstant specifying the displacement component in the 1-direction. Possible values for the SymbolicConstant are UNSET and SET. The default value is UNSET. Note: Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3** are optional arguments, at least one of them must be specified."
 msgstr ""
 
@@ -1101,7 +1121,7 @@ msgstr ""
 #: ../../../../src/abaqus/Adaptivity/AdaptivityModel.py:docstring of abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:19
 #: ../../../../src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.__init__:19
 #: ../../../../src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.setValues:8
-msgid "A Float or a SymbolicConstant specifying the velocity component in the 1-direction. Possible values for the SymbolicConstant are UNSET and SET. The default value is UNSET.Note:Although **v1**, **v2**, **v3**, **vr1**, **vr2**, and **vr3** are optional arguments, at least one of them must be specified."
+msgid "A Float or a SymbolicConstant specifying the velocity component in the 1-direction. Possible values for the SymbolicConstant are UNSET and SET. The default value is UNSET. Note: Although **v1**, **v2**, **v3**, **vr1**, **vr2**, and **vr3** are optional arguments, at least one of them must be specified."
 msgstr ""
 
 #: ../../../../src/abaqus/Adaptivity/AdaptivityModel.py:docstring of abaqus.Adaptivity.AdaptivityModel.AdaptivityModel.VelocityAdaptiveMeshConstraint:24
@@ -1163,7 +1183,7 @@ msgstr ""
 msgid ":class:`AdaptivityIteration`"
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:20
+#: ../../reference/mdb/model/adaptivity.md:17
 msgid "Create adaptivity mesh state features"
 msgstr ""
 
@@ -1766,7 +1786,7 @@ msgstr ""
 msgid "A SymbolicConstant specifying the propagation state of the AdaptiveMeshConstraintState  object. Possible values  are:"
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:31
+#: ../../reference/mdb/model/adaptivity.md:29
 msgid "Create features for AdaptivityIteration"
 msgstr ""
 
@@ -1955,12 +1975,8 @@ msgstr ""
 msgid "An Int specifying the number of part instances which generated errors while remeshing the model in this iteration of the adaptivity process."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:42
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/mdb/model/adaptivity.rst:45
-msgid "AdaptiveMeshConstraint"
+#: ../../reference/mdb/model/adaptivity.md:41
+msgid "Other Classes"
 msgstr ""
 
 #: ../../None:6:<autosummary>:1
@@ -2085,10 +2101,6 @@ msgstr ""
 msgid "A String specifying the name of the step in which the adaptive mesh constraint state is reset."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:55
-msgid "AdaptiveMeshConstraintState"
-msgstr ""
-
 #: ../../None:5:<autosummary>:1
 msgid ":py:obj:`amplitudeState <abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.amplitudeState>`\\"
 msgstr ""
@@ -2138,10 +2150,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.Adaptivity.AdaptiveMeshConstraintState.AdaptiveMeshConstraintState.status:1
 msgid "A SymbolicConstant specifying the propagation state of the AdaptiveMeshConstraintState object. Possible values are:"
-msgstr ""
-
-#: ../../reference/mdb/model/adaptivity.rst:66
-msgid "AdaptiveMeshControl"
 msgstr ""
 
 #: ../../../../src/abaqus/Adaptivity/AdaptiveMeshControl.py:docstring of abaqus.Adaptivity.AdaptiveMeshControl.AdaptiveMeshControl:1
@@ -2312,10 +2320,6 @@ msgstr ""
 msgid "A Float specifying the initial geometric feature angle, :math:`\\theta_c`. Possible values are :math:`0^\\circ\\le\\theta_C\\le 180^\\circ`. The default value is 60.0."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:76
-msgid "AdaptiveMeshDomain"
-msgstr ""
-
 #: ../../None:6:<autosummary>:1
 msgid ":py:obj:`controls <abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.controls>`\\"
 msgstr ""
@@ -2363,10 +2367,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Adaptivity/AdaptiveMeshDomain.py:docstring of abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain.__init__:25
 msgid "An :py:class:`~abaqus.Adaptivity.AdaptiveMeshDomain.AdaptiveMeshDomain` object."
-msgstr ""
-
-#: ../../reference/mdb/model/adaptivity.rst:86
-msgid "AdaptivityProcess"
 msgstr ""
 
 #: ../../../../src/abaqus/Adaptivity/AdaptivityProcess.py:docstring of abaqus.Adaptivity.AdaptivityProcess.AdaptivityProcess:1
@@ -2500,10 +2500,6 @@ msgstr ""
 msgid "A Boolean specifying whether to run the adaptivity as a continuation analysis. The default value is False. The datacheckJob and continueJob arguments cannot both be True."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:96
-msgid "DisplacementAdaptiveMeshConstraint"
-msgstr ""
-
 #: ../../../../src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint:1
 #: ../../../../src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint:1
 msgid "Bases: :py:class:`~abaqus.Adaptivity.AdaptiveMeshConstraint.AdaptiveMeshConstraint`"
@@ -2551,11 +2547,6 @@ msgstr ""
 msgid "Check `DisplacementAdaptiveMeshConstraint.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displacementadaptivemeshconstraintpyc.htm?contextscope=all#simaker-displacementadaptivemeshconstraint__init__pyc>`__."
 msgstr ""
 
-#: ../../../../src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:19
-#: ../../../../src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValues:8
-msgid "A Float or a SymbolicConstant specifying the displacement component in the 1-direction. Possible values for the SymbolicConstant are UNSET and SET. The default value is UNSET.Note:Although **u1**, **u2**, **u3**, **ur1**, **ur2**, and **ur3** are optional arguments, at least one of them must be specified."
-msgstr ""
-
 #: ../../../../src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.__init__:55
 msgid "A :py:class:`~abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint` object."
 msgstr ""
@@ -2600,10 +2591,6 @@ msgstr ""
 #: ../../../../src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.DisplacementAdaptiveMeshConstraint.DisplacementAdaptiveMeshConstraint.setValuesInStep:29
 #: ../../../../src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.setValuesInStep:29
 msgid "A String or a SymbolicConstant specifying the name of the amplitude reference. Possible values for the SymbolicConstant are UNCHANGED and FREED. UNCHANGED should be used if the amplitude is propagated from the previous analysis step. FREED should be used if the adaptive mesh constraint is changed to have no amplitude reference. You should provide the **amplitude** argument only if it is valid for the specified step."
-msgstr ""
-
-#: ../../reference/mdb/model/adaptivity.rst:106
-msgid "DisplacementAdaptiveMeshConstraintState"
 msgstr ""
 
 #: ../../../../src/abaqus/Adaptivity/DisplacementAdaptiveMeshConstraintState.py:docstring of abaqus.Adaptivity.DisplacementAdaptiveMeshConstraintState.DisplacementAdaptiveMeshConstraintState:1
@@ -2762,10 +2749,6 @@ msgstr ""
 msgid "A SymbolicConstant specifying the propagation state of the rotational displacement component about the 3-direction. Possible values are UNSET, SET, UNCHANGED, FREED, and MODIFIED."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:116
-msgid "ErrorIndicatorResult"
-msgstr ""
-
 #: ../../../../src/abaqus/Adaptivity/ErrorIndicatorResult.py:docstring of abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult:1
 msgid "Bases: :py:class:`~abaqus.Adaptivity.RuleResult.RuleResult`"
 msgstr ""
@@ -2788,10 +2771,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Adaptivity/ErrorIndicatorResult.py:docstring of abaqus.Adaptivity.ErrorIndicatorResult.ErrorIndicatorResult.__init__:10
 msgid "Check `ErrorIndicatorResult.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-errorindicatorresultpyc.htm?contextscope=all#simaker-errorindicatorresult__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/adaptivity.rst:126
-msgid "RemeshingRule"
 msgstr ""
 
 #: ../../../../src/abaqus/Adaptivity/RemeshingRule.py:docstring of abaqus.Adaptivity.RemeshingRule.RemeshingRule:1
@@ -2976,20 +2955,12 @@ msgstr ""
 msgid "A Boolean specifying whether the remeshing rule is suppressed. Remeshing of the remeshing rule's region will not occur if you suppress a rule. The default value is OFF."
 msgstr ""
 
-#: ../../reference/mdb/model/adaptivity.rst:136
-msgid "RuleResult"
-msgstr ""
-
 #: ../../../../src/abaqus/Adaptivity/RuleResult.py:docstring of abaqus.Adaptivity.RuleResult.RuleResult:1
 msgid "The RuleResult object contains result information corresponding to a RemeshingRule object for an adaptivity iteration."
 msgstr ""
 
 #: ../../../../src/abaqus/Adaptivity/RuleResult.py:docstring of abaqus.Adaptivity.RuleResult.RuleResult.__init__:10
 msgid "Check `RuleResult.__init__ on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ruleresultpyc.htm?contextscope=all#simaker-ruleresult__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/adaptivity.rst:146
-msgid "VelocityAdaptiveMeshConstraint"
 msgstr ""
 
 #: ../../../../src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint:1
@@ -3072,10 +3043,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Adaptivity/VelocityAdaptiveMeshConstraint.py:docstring of abaqus.Adaptivity.VelocityAdaptiveMeshConstraint.VelocityAdaptiveMeshConstraint.setValuesInStep:26
 msgid "A Float or a SymbolicConstant specifying the rotational velocity component about the 3-direction. Possible values for the SymbolicConstant are SET and FREED."
-msgstr ""
-
-#: ../../reference/mdb/model/adaptivity.rst:156
-msgid "VelocityAdaptiveMeshConstraintState"
 msgstr ""
 
 #: ../../None:17:<autosummary>:1

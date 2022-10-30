@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2018\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,23 +16,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/session.rst:7
+#: ../../reference/session.md:5
 msgid "Objects of Session"
 msgstr ""
 
-#: ../../reference/session.rst:3
+#: ../../reference/session.md:1
 msgid "Abaqus Session"
 msgstr ""
 
-#: ../../reference/session.rst:5
+#: ../../reference/session.md:3
 msgid "Session commands are used to create objects that are not stored with the model; for example, viewports and display groups. Abaqus/CAE retains Session objects only for the duration of the session; they are not saved when the model database is saved."
 msgstr ""
 
-#: ../../reference/session.rst:23
+#: ../../reference/session.md:21
 msgid "Classes"
 msgstr ""
 
-#: ../../reference/session.rst:26
+#: ../../reference/session.md:23
 msgid "Session"
 msgstr ""
 
@@ -1071,8 +1071,29 @@ msgstr ""
 msgid "This method opens an existing output database (`.odb`) file and creates a new Odb object. This method is accessed only via the session object inside Abaqus/CAE and adds the new Odb object to the session.odbs repository. This method allows you to open multiple output databases at the same time and to use the repository key to specify a particular output database. For example::."
 msgstr ""
 
-#: ../../reference/session.rst:36
-msgid "SessionBase"
+#: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession:1
+#: ../../../../src/abaqus/Canvas/CanvasSession.py:docstring of abaqus.Canvas.CanvasSession.CanvasSession:1
+#: ../../../../src/abaqus/DisplayGroup/DisplayGroupSession.py:docstring of abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession:1
+#: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession:1
+#: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession:1
+#: ../../../../src/abaqus/Odb/OdbSession.py:docstring of abaqus.Odb.OdbSession.OdbSession:1
+#: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession:1
+#: ../../../../src/abaqus/Session/AutoColors.py:docstring of abaqus.Session.AutoColors.AutoColors:1
+#: ../../../../src/abaqus/Session/Color.py:docstring of abaqus.Session.Color.Color:1
+#: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:1
+#: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:1
+#: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions:1
+#: ../../../../src/abaqus/Session/MemoryReductionOptions.py:docstring of abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:1
+#: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:1
+#: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:1
+#: ../../../../src/abaqus/Session/Session.py:docstring of abaqus.Session.Session.Session:1
+#: ../../../../src/abaqus/Session/SessionBase.py:docstring of abaqus.Session.SessionBase.SessionBase:1
+#: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession:1
+msgid "Member Details:"
+msgstr ""
+
+#: ../../reference/session.md:34
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Session/AutoColors.py:docstring of abaqus.Session.AutoColors.AutoColors:1
@@ -1527,10 +1548,6 @@ msgstr ""
 msgid "A sequence of canvas objects (viewports, text strings, or arrows) to export."
 msgstr ""
 
-#: ../../reference/session.rst:46
-msgid "AnimationSession"
-msgstr ""
-
 #: ../../../../src/abaqus/Animation/AnimationSession.py:docstring of abaqus.Animation.AnimationSession.AnimationSession:1
 #: ../../../../src/abaqus/Canvas/CanvasSession.py:docstring of abaqus.Canvas.CanvasSession.CanvasSession:1
 #: ../../../../src/abaqus/DisplayGroup/DisplayGroupSession.py:docstring of abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession:1
@@ -1654,10 +1671,6 @@ msgstr ""
 msgid "A sequence specifying the canvas objects to capture. The default behavior is to capture all canvas objects."
 msgstr ""
 
-#: ../../reference/session.rst:57
-msgid "CanvasSession"
-msgstr ""
-
 #: ../../../../src/abaqus/Canvas/CanvasSession.py:docstring of abaqus.Canvas.CanvasSession.CanvasSession.Viewport:9
 msgid "Check `Viewport on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-viewportpyc.htm?contextscope=all>`__."
 msgstr ""
@@ -1720,10 +1733,6 @@ msgstr ""
 msgid "If **height** is out of range."
 msgstr ""
 
-#: ../../reference/session.rst:68
-msgid "DisplayGroupSession"
-msgstr ""
-
 #: ../../../../src/abaqus/DisplayGroup/DisplayGroupSession.py:docstring of abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:9
 msgid "Check `DisplayGroup on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaygrouppyc.htm?contextscope=all>`__."
 msgstr ""
@@ -1738,10 +1747,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/DisplayGroup/DisplayGroupSession.py:docstring of abaqus.DisplayGroup.DisplayGroupSession.DisplayGroupSession.DisplayGroup:17
 msgid ":class:`DisplayGroup`"
-msgstr ""
-
-#: ../../reference/session.rst:79
-msgid "FieldReportSession"
 msgstr ""
 
 #: ../../../../src/abaqus/FieldReport/FieldReportSession.py:docstring of abaqus.FieldReport.FieldReportSession.FieldReportSession.writeFieldReport:9
@@ -1851,10 +1856,6 @@ msgstr ""
 msgid "An :py:class:`~abaqus.Odb.Odb.Odb` object specifying the output database from which data will be read."
 msgstr ""
 
-#: ../../reference/session.rst:90
-msgid "JobSession"
-msgstr ""
-
 #: ../../../../src/abaqus/Job/JobSession.py:docstring of abaqus.Job.JobSession.JobSession.Queue:1
 msgid "This method creates a Queue object. Note:Remote queues are available only on Linux platforms."
 msgstr ""
@@ -1919,10 +1920,6 @@ msgstr ""
 msgid ":raises Directory in which` to :class:`run the job on the remote computer is not set: If **fileCopy** = ON and **directory** is empty."
 msgstr ""
 
-#: ../../reference/session.rst:101
-msgid "OdbSession"
-msgstr ""
-
 #: ../../../../src/abaqus/Odb/OdbSession.py:docstring of abaqus.Odb.OdbSession.OdbSession.ScratchOdb:9
 msgid "Check `ScratchOdb on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-scratchodbpyc.htm?contextscope=all>`__."
 msgstr ""
@@ -1937,10 +1934,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Odb/OdbSession.py:docstring of abaqus.Odb.OdbSession.OdbSession.ScratchOdb:15
 msgid ":class:`ScratchOdb`"
-msgstr ""
-
-#: ../../reference/session.rst:112
-msgid "PathSession"
 msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Path:9
@@ -2069,10 +2062,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/PathAndProbe/PathSession.py:docstring of abaqus.PathAndProbe.PathSession.PathSession.Stream:25
 msgid ":class:`Stream`"
-msgstr ""
-
-#: ../../reference/session.rst:123
-msgid "XYSession"
 msgstr ""
 
 #: ../../../../src/abaqus/XY/XYSession.py:docstring of abaqus.XY.XYSession.XYSession:1
@@ -2999,10 +2988,6 @@ msgstr ""
 msgid "A SymbolicConstant specifying the mathematical, trigonometric, logarithmic, exponential, or other operations. Possible values are ADD, SUBTRACT, MULTIPLY, DIVIDE, POWER, MINIMUM, MAXIMUM, AVERAGE, RANGE, SRSS, ABSOLUTE, UNARY_NEGATIVE, COSINE, HYPERBOLIC_COSINE, INVERSE_COSINE, SINE, HYPERBOLIC_SINE, INVERSE_SINE, TANGENT, HYPERBOLIC_TANGENT, INVERSE_TANGENT, EXPONENTIAL, NATURAL_LOG, LOG, SQUARE_ROOT, NORMALIZE, DEG2RAD, RAD2DEG, SMOOTH, SWAP, AVERAGE_ALL, MAXIMUM_ENVELOPE, MINIMUM_ENVELOPE, and RANGE_ALL. If no value is defined, no operation will be performed on the data, and the data will be saved as is."
 msgstr ""
 
-#: ../../reference/session.rst:135
-msgid "AutoColors"
-msgstr ""
-
 #: ../../../../src/abaqus/Session/AutoColors.py:docstring of abaqus.Session.AutoColors.AutoColors:1
 msgid "The AutoColors object defines a color palette."
 msgstr ""
@@ -3026,10 +3011,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Session/AutoColors.py:docstring of abaqus.Session.AutoColors.AutoColors.setValues:7
 msgid "A sequence of Strings specifying the colors of the palette. Strings must be named colors or represent red, green, blue components in hexadecimal form. For instance, '#FF0000' for red, '#00FF00' for green and '#0000FF' for blue"
-msgstr ""
-
-#: ../../reference/session.rst:145
-msgid "Color"
 msgstr ""
 
 #: ../../../../src/abaqus/Session/Color.py:docstring of abaqus.Session.Color.Color:1
@@ -3079,10 +3060,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Session/Color.py:docstring of abaqus.Session.Color.Color.setByRGB:8
 msgid "A sequence of three Floats specifying the RGB value of the color. The Float values must be between 0.0 and 1.0."
-msgstr ""
-
-#: ../../reference/session.rst:155
-msgid "Drawing"
 msgstr ""
 
 #: ../../../../src/abaqus/Session/Drawing.py:docstring of abaqus.Session.Drawing.Drawing:1
@@ -3567,10 +3544,6 @@ msgstr ""
 msgid "An Int specifying the number of vertices in the vertex array after a call to the setVertices method. The default value is 0."
 msgstr ""
 
-#: ../../reference/session.rst:165
-msgid "Image"
-msgstr ""
-
 #: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image:1
 msgid "The Image object is used to store color values and attributes associated with a raster file. Upon creation, the Image object is added to the session.images repository."
 msgstr ""
@@ -3660,10 +3633,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Session/Image.py:docstring of abaqus.Session.Image.Image.__init__:21
 msgid "If **fileName** does not exist or can not be read:       ValueError: Unable to open image file     - If **fileName** references an unsupported image file format:       ValueError: Unsupported image format     - If the contents of **fileName** are corrupt or can not be decoded:       ValueError: Unable to decode image file"
-msgstr ""
-
-#: ../../reference/session.rst:175
-msgid "JournalOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/Session/JournalOptions.py:docstring of abaqus.Session.JournalOptions.JournalOptions:1
@@ -3766,10 +3735,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.Session.NumberFormat.NumberFormat` object specifying the default format for numbers in geometry commands output. The default values are the same as the default values for the NumberFormat object."
 msgstr ""
 
-#: ../../reference/session.rst:185
-msgid "MemoryReductionOptions"
-msgstr ""
-
 #: ../../../../src/abaqus/Session/MemoryReductionOptions.py:docstring of abaqus.Session.MemoryReductionOptions.MemoryReductionOptions:1
 msgid "The MemoryReductionOptions object controls the default settings that Abaqus/CAE uses for running in reduced memory mode. The MemoryReductionOptions object has no constructor. Abaqus creates the **MemoryReductionOptions** member when a session is started."
 msgstr ""
@@ -3797,10 +3762,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Session/MemoryReductionOptions.py:docstring of abaqus.Session.MemoryReductionOptions.MemoryReductionOptions.setValues:10
 msgid "A Float specifying the percent of **kernelMemoryLimit** at which the reduced memory mode starts. The default value is 75.0."
-msgstr ""
-
-#: ../../reference/session.rst:195
-msgid "NetworkDatabaseConnector"
 msgstr ""
 
 #: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector:1
@@ -3995,10 +3956,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Session/NetworkDatabaseConnector.py:docstring of abaqus.Session.NetworkDatabaseConnector.NetworkDatabaseConnector.start:4
 msgid "Check `NetworkDatabaseConnector.start on help.3ds.com/2018 <https://help.3ds.com/2018/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-networkdatabaseconnectorpyc.htm?contextscope=all#simaker-networkdatabaseconnectorstartpyc>`__."
-msgstr ""
-
-#: ../../reference/session.rst:205
-msgid "NumberFormat"
 msgstr ""
 
 #: ../../../../src/abaqus/Session/NumberFormat.py:docstring of abaqus.Session.NumberFormat.NumberFormat:1

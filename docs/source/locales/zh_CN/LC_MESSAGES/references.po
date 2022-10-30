@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,70 +17,96 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../references.rst:31
+#: ../../references.md:27
 msgid "Modules"
 msgstr ""
 
-#: ../../references.rst:3
+#: ../../references.md:1
 msgid "Class References"
 msgstr ""
 
-#: ../../references.rst:5
+#: ../../references.md:3
 msgid ""
 "Before you can access the Abaqus model and output database, you need to "
 "import some modules. In most cases, `abaqus`, `abaqusConstants`, and "
 "`driverUtils` are required:"
 msgstr ""
 
-#: ../../references.rst:13
+#: ../../references.md:11
 msgid ""
 "In the module `abaqus`, two important objects are provided, `mdb` and "
 "`session`, which represent the Abaqus model database and a object "
 "controls the Abaqus options."
 msgstr ""
 
-#: ../../references.rst:15
+#: ../../references.md:13
 msgid ""
 "The `mdb` object is the high-level Abaqus model database. A model "
 "database stores models and analysis controls. For more information about "
-"the `mdb` object, see :doc:`/mdb API Reference <../reference/mdb>`."
+"the `mdb` object, see {doc}`mdb API Reference <../reference/mdb>`."
 msgstr ""
 
-#: ../../references.rst:17
+#: ../../references.md:14
 msgid ""
 "The `odb` object is the in-memory representation of an output database "
-"(ODB) file. For more information about the `odb` object, see  :doc:`/odb "
+"(ODB) file. For more information about the `odb` object, see  {doc}`odb "
 "API Reference <../reference/odb>`."
 msgstr ""
 
-#: ../../references.rst:19
+#: ../../references.md:15
 msgid ""
 "The `session` object has no constructor. Abaqus creates the session "
 "member when a session is started. For more information about the "
-"`session` object, see :doc:`/session API Reference "
+"`session` object, see {doc}`session API Reference "
 "<../reference/session>`."
 msgstr ""
 
-#: ../../references.rst:21
+#: ../../references.md:17
 msgid ""
 "In the module `abaqusConstants`, all the constant strings used in the "
 "Abaqus modeling are provided such as `THREE_D` (which specifies a 3-D "
 "model), for more constant strings, please refer to the API reference."
 msgstr ""
 
-#: ../../references.rst:23
+#: ../../references.md:19
 msgid ""
 "In the module `driverUtils`, an important function `executeOnCaeStartup` "
 "is implemented, this function will be execute each time we open the "
 "Abaqus, so we need to call this function in our Python script."
 msgstr ""
 
-#: ../../references.rst:29
+#: ../../references.md:25
 msgid ""
 "Other modules like `field`, `material`, `mesh` can be imported whenever "
 "required."
 msgstr ""
 
 #~ msgid "API Reference"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The `mdb` object is the high-level"
+#~ " Abaqus model database. A model "
+#~ "database stores models and analysis "
+#~ "controls. For more information about the"
+#~ " `mdb` object, see :doc:`/mdb API "
+#~ "Reference <../reference/mdb>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The `odb` object is the in-memory"
+#~ " representation of an output database "
+#~ "(ODB) file. For more information about"
+#~ " the `odb` object, see  :doc:`/odb "
+#~ "API Reference <../reference/odb>`."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The `session` object has no constructor."
+#~ " Abaqus creates the session member "
+#~ "when a session is started. For "
+#~ "more information about the `session` "
+#~ "object, see :doc:`/session API Reference "
+#~ "<../reference/session>`."
 #~ msgstr ""
 

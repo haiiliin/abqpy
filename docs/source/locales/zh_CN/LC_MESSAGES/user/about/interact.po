@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-23 06:48+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,21 +17,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../user/about/interact.rst:3
+#: ../../user/about/interact.md:1
 msgid "How does the Abaqus Scripting Interface interact with Abaqus/CAE?"
 msgstr ""
 
-#: ../../user/about/interact.rst:5
+#: ../../user/about/interact.md:3
 msgid ""
-":numref:`acl-all-schematic-nls-1` illustrates how Abaqus Scripting "
+"{numref}`acl-all-schematic-nls-1` illustrates how Abaqus Scripting "
 "Interface commands interact with the Abaqus/CAE kernel."
 msgstr ""
 
-#: ../../user/about/interact.rst:12
+#: ../../user/about/interact.md:11
 msgid "Abaqus Scripting Interface commands and Abaqus/CAE."
 msgstr ""
 
-#: ../../user/about/interact.rst:14
+#: ../../user/about/interact.md:14
 msgid ""
 "The Abaqus Scripting Interface allows you to bypass the Abaqus/CAE GUI "
 "and communicate directly with the kernel. A file containing Abaqus "
@@ -39,7 +39,7 @@ msgid ""
 "do the following:"
 msgstr ""
 
-#: ../../user/about/interact.rst:16
+#: ../../user/about/interact.md:16
 msgid ""
 "To automate repetitive tasks. For example, you can create a script that "
 "executes when a user starts an Abaqus/CAE session. Such a script might be"
@@ -49,7 +49,7 @@ msgid ""
 "analysis jobs, and these queues will be available in the Job module."
 msgstr ""
 
-#: ../../user/about/interact.rst:18
+#: ../../user/about/interact.md:17
 msgid ""
 "To perform a parametric study. For example, you can create a script that "
 "incrementally modifies the geometry of a part and analyzes the resulting "
@@ -57,21 +57,21 @@ msgid ""
 "the results, and generate annotated hard copies from each analysis."
 msgstr ""
 
-#: ../../user/about/interact.rst:20
+#: ../../user/about/interact.md:18
 msgid ""
 "Create and modify the model databases and models that are created "
 "interactively when you work with Abaqus/CAE. The Abaqus Scripting "
 "Interface is an application programming interface (API) to your model "
 "databases and models. For a discussion of model databases and models, see"
-" `What is an Abaqus/CAE model database? "
-"<https://help.3ds.com/2021/english/dssimulia_established/SIMACAECAERefMap/simacae-c-dbsconcepts.htm?contextscope=all>`_"
-" and `What is an Abaqus/CAE model? "
-"<https://help.3ds.com/2021/english/dssimulia_established/SIMACAECAERefMap/simacae-m"
-"-DbsConcWhatismodel-sb.htm?contextscope=all>`_ \"This section describes "
-"an Abaqus/CAE model\"."
+" [What is an Abaqus/CAE model "
+"database?](https://help.3ds.com/2021/english/dssimulia_established/SIMACAECAERefMap/simacae-c-dbsconcepts.htm?contextscope=all)"
+" and [What is an Abaqus/CAE "
+"model?](https://help.3ds.com/2021/english/dssimulia_established/SIMACAECAERefMap/simacae-m"
+"-DbsConcWhatismodel-sb.htm?contextscope=all) \"This section describes an "
+"Abaqus/CAE model\"."
 msgstr ""
 
-#: ../../user/about/interact.rst:22
+#: ../../user/about/interact.md:19
 msgid ""
 "Access the data in an output database. For example, you may wish to do "
 "your own postprocessing of analysis results. You can write your own data "
@@ -79,11 +79,35 @@ msgid ""
 "view its contents."
 msgstr ""
 
-#: ../../user/about/interact.rst:25
+#: ../../user/about/interact.md:21
 msgid ""
 "The Abaqus Scripting Interface is an extension of the popular object-"
 "oriented language called Python. Any discussion of the Abaqus Scripting "
 "Interface applies equally to Python in general, and the Abaqus Scripting "
 "Interface uses the syntax and operators required by Python."
 msgstr ""
+
+#~ msgid ""
+#~ ":numref:`acl-all-schematic-nls-1` illustrates"
+#~ " how Abaqus Scripting Interface commands"
+#~ " interact with the Abaqus/CAE kernel."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Create and modify the model databases"
+#~ " and models that are created "
+#~ "interactively when you work with "
+#~ "Abaqus/CAE. The Abaqus Scripting Interface "
+#~ "is an application programming interface "
+#~ "(API) to your model databases and "
+#~ "models. For a discussion of model "
+#~ "databases and models, see `What is "
+#~ "an Abaqus/CAE model database? "
+#~ "<https://help.3ds.com/2021/english/dssimulia_established/SIMACAECAERefMap/simacae-c-dbsconcepts.htm?contextscope=all>`_"
+#~ " and `What is an Abaqus/CAE model?"
+#~ " "
+#~ "<https://help.3ds.com/2021/english/dssimulia_established/SIMACAECAERefMap/simacae-m"
+#~ "-DbsConcWhatismodel-sb.htm?contextscope=all>`_ \"This "
+#~ "section describes an Abaqus/CAE model\"."
+#~ msgstr ""
 
