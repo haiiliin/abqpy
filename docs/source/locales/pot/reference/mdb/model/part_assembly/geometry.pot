@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,20 +16,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/model/part_assembly/geometry.rst:3
+#: ../../reference/mdb/model/part_assembly/geometry.md:1
 msgid "Basic Geometry"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/geometry.rst:5
+#: ../../reference/mdb/model/part_assembly/geometry.md:3
 msgid "The basic geometry commands create geometric entities that are referenced by Part objects, Instance objects, and GeometrySet objects."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/geometry.rst:8
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/geometry.rst:11
-msgid "Cell"
+#: ../../reference/mdb/model/part_assembly/geometry.md:5
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/Cell.py:docstring of abaqus.BasicGeometry.Cell.Cell:1
@@ -213,6 +209,28 @@ msgstr ""
 #: ../../../../src/abaqus/BasicGeometry/Cell.py:docstring of abaqus.BasicGeometry.Cell.Cell.getCADAttributes:1
 #: ../../None:10:<autosummary>:1
 msgid "This method returns an array of CAD attribute strings associated with the cell when the part was created from CAD data."
+msgstr ""
+
+#: ../../../../src/abaqus/BasicGeometry/Cell.py:docstring of abaqus.BasicGeometry.Cell.Cell:1
+#: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray:1
+#: ../../../../src/abaqus/BasicGeometry/Edge.py:docstring of abaqus.BasicGeometry.Edge.Edge:1
+#: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray:1
+#: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face:1
+#: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray:1
+#: ../../../../src/abaqus/BasicGeometry/IgnoredEdge.py:docstring of abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge:1
+#: ../../../../src/abaqus/BasicGeometry/IgnoredEdgeArray.py:docstring of abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray:1
+#: ../../../../src/abaqus/BasicGeometry/IgnoredVertex.py:docstring of abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex:1
+#: ../../../../src/abaqus/BasicGeometry/IgnoredVertexArray.py:docstring of abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray:1
+#: ../../../../src/abaqus/BasicGeometry/InterestingPoint.py:docstring of abaqus.BasicGeometry.InterestingPoint.InterestingPoint:1
+#: ../../../../src/abaqus/BasicGeometry/ModelDot.py:docstring of abaqus.BasicGeometry.ModelDot.ModelDot:1
+#: ../../../../src/abaqus/BasicGeometry/ModelDotArray.py:docstring of abaqus.BasicGeometry.ModelDotArray.ModelDotArray:1
+#: ../../../../src/abaqus/BasicGeometry/ReferencePoint.py:docstring of abaqus.BasicGeometry.ReferencePoint.ReferencePoint:1
+#: ../../../../src/abaqus/BasicGeometry/ReferencePointArray.py:docstring of abaqus.BasicGeometry.ReferencePointArray.ReferencePointArray:1
+#: ../../../../src/abaqus/BasicGeometry/ReferencePoints.py:docstring of abaqus.BasicGeometry.ReferencePoints.ReferencePoints:1
+#: ../../../../src/abaqus/BasicGeometry/Transform.py:docstring of abaqus.BasicGeometry.Transform.Transform:1
+#: ../../../../src/abaqus/BasicGeometry/Vertex.py:docstring of abaqus.BasicGeometry.Vertex.Vertex:1
+#: ../../../../src/abaqus/BasicGeometry/VertexArray.py:docstring of abaqus.BasicGeometry.VertexArray.VertexArray:1
+msgid "Member Details:"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/Cell.py:docstring of abaqus.BasicGeometry.Cell.Cell.getAdjacentCells:0
@@ -535,10 +553,6 @@ msgstr ""
 #: ../../../../src/abaqus/BasicGeometry/IgnoredEdge.py:docstring of abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getRadius:4
 #: ../../../../src/abaqus/BasicGeometry/IgnoredEdge.py:docstring of abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize:10
 msgid ":class:`float`"
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/geometry.rst:21
-msgid "CellArray"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/CellArray.py:docstring of abaqus.BasicGeometry.CellArray.CellArray:1
@@ -1214,10 +1228,6 @@ msgstr ""
 msgid "An exception occurs if the resulting sequence is empty."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/geometry.rst:31
-msgid "Edge"
-msgstr ""
-
 #: ../../../../src/abaqus/BasicGeometry/Edge.py:docstring of abaqus.BasicGeometry.Edge.Edge:1
 msgid "Edges are one-dimensional regions of geometry."
 msgstr ""
@@ -1457,10 +1467,6 @@ msgstr ""
 msgid ":class:`Boolean`"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/geometry.rst:41
-msgid "EdgeArray"
-msgstr ""
-
 #: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray:1
 msgid "Bases: :py:class:`~typing.List`\\ [:py:class:`~abaqus.BasicGeometry.Edge.Edge`]"
 msgstr ""
@@ -1638,10 +1644,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/EdgeArray.py:docstring of abaqus.BasicGeometry.EdgeArray.EdgeArray.getSequenceFromMask:7
 msgid "Check `EdgeArray.getSequenceFromMask on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-edgearraypyc.htm?contextscope=all#simaker-edgearraygetsequencefrommaskpyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/geometry.rst:51
-msgid "Face"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/Face.py:docstring of abaqus.BasicGeometry.Face.Face:1
@@ -1949,10 +1951,6 @@ msgstr ""
 msgid "A tuple of tuples of Floats specifying the coordinates. For a face of a shell **pointOn** specifies the **X**-, **Y**-, and **Z**-coordinates of a point located on the face and the **X**-, **Y**-, and **Z**-components of the normal to the face.For a face of a solid **pointOn** specifies the **X**-, **Y**-, and **Z**-coordinates of a point located on the face."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/geometry.rst:61
-msgid "FaceArray"
-msgstr ""
-
 #: ../../../../src/abaqus/BasicGeometry/FaceArray.py:docstring of abaqus.BasicGeometry.FaceArray.FaceArray:1
 msgid "Bases: :py:class:`~typing.List`\\ [:py:class:`~abaqus.BasicGeometry.Face.Face`]"
 msgstr ""
@@ -2163,10 +2161,6 @@ msgstr ""
 msgid "A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a sequence of Face objects."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/geometry.rst:71
-msgid "IgnoredEdge"
-msgstr ""
-
 #: ../../../../src/abaqus/BasicGeometry/IgnoredEdge.py:docstring of abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge:1
 msgid "An :py:class:`~abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge` object is a one-dimensional region of geometry that has been abstracted away by a virtual topology feature."
 msgstr ""
@@ -2228,10 +2222,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/IgnoredEdge.py:docstring of abaqus.BasicGeometry.IgnoredEdge.IgnoredEdge.getSize:4
 msgid "Check `IgnoredEdge.getSize on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignorededgepyc.htm?contextscope=all#simaker-ignorededgegetsizepyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/geometry.rst:81
-msgid "IgnoredEdgeArray"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/IgnoredEdgeArray.py:docstring of abaqus.BasicGeometry.IgnoredEdgeArray.IgnoredEdgeArray:1
@@ -2325,10 +2315,6 @@ msgstr ""
 msgid "Check `IgnoredEdgeArray.getSequenceFromMask on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignorededgearraypyc.htm?contextscope=all#simaker-ignorededgearraygetsequencefrommaskpyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/geometry.rst:91
-msgid "IgnoredVertex"
-msgstr ""
-
 #: ../../../../src/abaqus/BasicGeometry/IgnoredVertex.py:docstring of abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex:1
 msgid "An :py:class:`~abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex` object is a point region of the geometry that was abstracted away by a virtual topology feature."
 msgstr ""
@@ -2353,10 +2339,6 @@ msgstr ""
 #: ../../None:4:<autosummary>:1
 #: ../../docstring of abaqus.BasicGeometry.IgnoredVertex.IgnoredVertex.pointOn:1
 msgid "A tuple of Floats specifying the **X**-, **Y**-, and **Z**-coordinates of the vertex."
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/geometry.rst:101
-msgid "IgnoredVertexArray"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/IgnoredVertexArray.py:docstring of abaqus.BasicGeometry.IgnoredVertexArray.IgnoredVertexArray:1
@@ -2450,10 +2432,6 @@ msgstr ""
 msgid "Check `IgnoredVertexArray.getSequenceFromMask on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-ignoredvertexarraypyc.htm?contextscope=all#simaker-ignoredvertexarraygetsequencefrommaskpyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/geometry.rst:111
-msgid "InterestingPoint"
-msgstr ""
-
 #: ../../../../src/abaqus/BasicGeometry/InterestingPoint.py:docstring of abaqus.BasicGeometry.InterestingPoint.InterestingPoint:1
 msgid "Interesting points can be located at the following:"
 msgstr ""
@@ -2510,24 +2488,12 @@ msgstr ""
 msgid ":class:`InterestingPoint`"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/geometry.rst:121
-msgid "ModelDot"
-msgstr ""
-
 #: ../../../../src/abaqus/BasicGeometry/ModelDot.py:docstring of abaqus.BasicGeometry.ModelDot.ModelDot:1
 msgid "The ModelDot object can be used to access an actual MeshNode, ReferencePoint, or ConstrainedSketchVertex object."
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/ModelDot.py:docstring of abaqus.BasicGeometry.ModelDot.ModelDot:5
 msgid "Check `ModelDot on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-modeldotpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/geometry.rst:131
-msgid "ModelDotArray"
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/geometry.rst:141
-msgid "ReferencePoint"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/ReferencePoint.py:docstring of abaqus.BasicGeometry.ReferencePoint.ReferencePoint:1
@@ -2565,14 +2531,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/ReferencePoint.py:docstring of abaqus.BasicGeometry.ReferencePoint.ReferencePoint.__init__:21
 msgid ":class:`Feature`"
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/geometry.rst:151
-msgid "ReferencePointArray"
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/geometry.rst:161
-msgid "ReferencePoints"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/ReferencePoints.py:docstring of abaqus.BasicGeometry.ReferencePoints.ReferencePoints:1
@@ -2755,10 +2713,6 @@ msgstr ""
 msgid ":py:obj:`__class_getitem__ <builtins.dict.__class_getitem__>`\\"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/geometry.rst:171
-msgid "Transform"
-msgstr ""
-
 #: ../../../../src/abaqus/BasicGeometry/Transform.py:docstring of abaqus.BasicGeometry.Transform.Transform:1
 msgid "The MakeSketchTransform method creates a Transform object. The Transform object has no direct constructor. A :py:class:`~abaqus.BasicGeometry.Transform.Transform` object is a 4×3 matrix of Floats that represents the transformation from sketch coordinates to assembly coordinates or to part coordinates."
 msgstr ""
@@ -2782,10 +2736,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/Transform.py:docstring of abaqus.BasicGeometry.Transform.Transform.matrix:4
 msgid ":class:`Tuple[float`, :class:`float`, :class:`float`, :class:`float`, :class:`float`, :class:`float`, :class:`float`, :class:`float`, :class:`float`, :class:`float`, :class:`float`, :class:`float]`"
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/geometry.rst:181
-msgid "Vertex"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/Vertex.py:docstring of abaqus.BasicGeometry.Vertex.Vertex:1
@@ -2861,10 +2811,6 @@ msgstr ""
 
 #: ../../docstring of abaqus.BasicGeometry.Vertex.Vertex.pointOn:1
 msgid "A tuple of Floats specifying the **X** -, **Y** -, and **Z** -coordinates of the vertex."
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/geometry.rst:191
-msgid "VertexArray"
 msgstr ""
 
 #: ../../../../src/abaqus/BasicGeometry/VertexArray.py:docstring of abaqus.BasicGeometry.VertexArray.VertexArray:1

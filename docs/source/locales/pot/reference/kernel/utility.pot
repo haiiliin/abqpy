@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,60 +16,56 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/kernel/utility.rst:3
+#: ../../reference/kernel/utility.md:1
 msgid "Utility and View"
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:5
+#: ../../reference/kernel/utility.md:3
 msgid "Utility commands are used to do the following:"
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:7
+#: ../../reference/kernel/utility.md:5
 msgid "Create SymbolicConstant and Boolean objects."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:8
+#: ../../reference/kernel/utility.md:6
 msgid "Change the name of a key to a Repository object."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:9
+#: ../../reference/kernel/utility.md:7
 msgid "Control the use of deprecated commands."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:10
+#: ../../reference/kernel/utility.md:8
 msgid "Request input from the user."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:11
+#: ../../reference/kernel/utility.md:9
 msgid "Display status information."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:12
+#: ../../reference/kernel/utility.md:10
 msgid "Execute Python commands or functions."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:13
+#: ../../reference/kernel/utility.md:11
 msgid "Register a callback that will be invoked when certain Abaqus Scripting Interface commands are about to be executed."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:14
+#: ../../reference/kernel/utility.md:12
 msgid "Register a callback that will be invoked when certain Abaqus Scripting Interface objects are about to be deleted."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:15
+#: ../../reference/kernel/utility.md:13
 msgid "Upgrade Abaqus kernel or GUI scripts from one release of Abaqus to a later release."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:17
+#: ../../reference/kernel/utility.md:15
 msgid "View commands are used to transform three-dimensional views stored in Session and Viewport objects to the screen. (See Session object and Viewport object.)"
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:21
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/kernel/utility.rst:24
-msgid "AbaqusBoolean"
+#: ../../reference/kernel/utility.md:17
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/AbaqusBoolean.py:docstring of abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean:1
@@ -657,6 +653,15 @@ msgstr ""
 msgid "Returns size in memory, in bytes."
 msgstr ""
 
+#: ../../../../src/abaqus/UtilityAndView/AbaqusBoolean.py:docstring of abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean:1
+#: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:1
+#: ../../../../src/abaqus/UtilityAndView/Repository.py:docstring of abaqus.UtilityAndView.Repository.Repository:1
+#: ../../../../src/abaqus/UtilityAndView/SymbolicConstant.py:docstring of abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant:1
+#: ../../../../src/abaqus/UtilityAndView/SymbolicConstant.py:docstring of abaqus.UtilityAndView.SymbolicConstant.abaqusConstants:1
+#: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/UtilityAndView/AbaqusBoolean.py:docstring of abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean.__init__:4
 #: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.addImportCallback:6
 #: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback.removeImportCallback:4
@@ -733,10 +738,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/AbaqusBoolean.py:docstring of abaqus.UtilityAndView.AbaqusBoolean.AbaqusBoolean.__init__:16
 msgid ":class:`AbaqusBoolean`"
-msgstr ""
-
-#: ../../reference/kernel/utility.rst:34
-msgid "BackwardCompatibility"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/BackwardCompatibility.py:docstring of abaqus.UtilityAndView.BackwardCompatibility.BackwardCompatibility:1
@@ -865,10 +866,6 @@ msgstr ""
 msgid "A Boolean specifying whether the keys and indices are included in the report that is displayed when **reportDeprecated** is True. The default value is False."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:44
-msgid "Callback"
-msgstr ""
-
 #: ../../../../src/abaqus/UtilityAndView/Callback.py:docstring of abaqus.UtilityAndView.Callback:1
 msgid "These functions execute Python commands or functions."
 msgstr ""
@@ -909,10 +906,6 @@ msgstr ""
 msgid "Any Python object or None; it must be the same as the **userData** argument specified in the original call to addImportCallback."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:52
-msgid "Customization"
-msgstr ""
-
 #: ../../../../src/abaqus/UtilityAndView/Customization.py:docstring of abaqus.UtilityAndView.Customization:1
 msgid "The following command is used to record a user-defined command in the Abaqus journal file."
 msgstr ""
@@ -945,10 +938,6 @@ msgstr ""
 msgid "A Python dict object specifying the keyword arguments to be written to the journal file."
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:60
-msgid "Delete"
-msgstr ""
-
 #: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:1
 msgid "This method adds a callback function that will be invoked when the specified Abaqus Scripting Interface objects are about to be deleted. The callback is invoked only when the object is deleted using the Python statement del object. The callback is not invoked when the object is deleted using an Abaqus Scripting Interface command such as mdb.models[name].parts[name].deleteFeature()."
 msgstr ""
@@ -973,10 +962,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/Delete.py:docstring of abaqus.UtilityAndView.Delete.deleteObjectCallback:30
 msgid "A Boolean specifying that the callback should be called if an object owned by the object specified by the **path** argument is about to be deleted. The default value is False."
-msgstr ""
-
-#: ../../reference/kernel/utility.rst:68
-msgid "Method"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.addCallback:1
@@ -1015,10 +1000,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/Method.py:docstring of abaqus.UtilityAndView.Method.removeCallback:19
 msgid "A Python function to be called when a command matching the specified caller and method name is about to be executed. The interface definition of the callback function is `def functionName(callingMethod, args, keywordArgs, userData)` where **callingMethod** is the method that called this function. **args** is the sequence of nonkeyword arguments that was passed to the calling method. **keywordArgs** is the dictionary of keyword arguments that was passed to the calling method. **userData** is the object passed as the **userData** argument to the removeCallback method."
-msgstr ""
-
-#: ../../reference/kernel/utility.rst:76
-msgid "Repository"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/Repository.py:docstring of abaqus.UtilityAndView.Repository.Repository:1
@@ -1242,14 +1223,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/Repository.py:docstring of abaqus.UtilityAndView.Repository.Repository.changeKey:10
 msgid "A String specifying the new name of the repository key."
-msgstr ""
-
-#: ../../reference/kernel/utility.rst:86
-msgid "Status"
-msgstr ""
-
-#: ../../reference/kernel/utility.rst:94
-msgid "SymbolicConstant"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/SymbolicConstant.py:docstring of abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant:1
@@ -1809,24 +1782,12 @@ msgstr ""
 msgid ":class:`SymbolicConstant`"
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:104
-msgid "abaqusConstants"
-msgstr ""
-
-#: ../../docstring of abaqus.UtilityAndView.abaqusConstants.OFF:1
-msgid "abaqusConstantsSupplement.py"
-msgstr ""
-
-#: ../../docstring of abaqus.UtilityAndView.abaqusConstants.OFF:3
-msgid "This module is included by abaqusConstants and contains SymbolicConstants required by ABAQUS that are not defined in C++"
+#: ../../../../src/abaqus/UtilityAndView/SymbolicConstant.py:docstring of abaqus.UtilityAndView.SymbolicConstant.abaqusConstants:1
+msgid "Bases: :py:class:`~abaqus.UtilityAndView.SymbolicConstant.SymbolicConstant`, :py:class:`~enum.Enum`"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/SymbolicConstant.py:docstring of abaqus.UtilityAndView.SymbolicConstant.abaqusConstants:1
 msgid "An enumeration."
-msgstr ""
-
-#: ../../reference/kernel/utility.rst:110
-msgid "Upgrade"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/Upgrade.py:docstring of abaqus.UtilityAndView.Upgrade.upgradeScript:1
@@ -1881,10 +1842,6 @@ msgstr ""
 msgid ":class:`int`"
 msgstr ""
 
-#: ../../reference/kernel/utility.rst:118
-msgid "User"
-msgstr ""
-
 #: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User:1
 msgid "The following commands are used to request data entry from a user."
 msgstr ""
@@ -1911,10 +1868,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/User.py:docstring of abaqus.UtilityAndView.User.getWarningReply:29
 msgid ":class:`The button that the user clicks.`"
-msgstr ""
-
-#: ../../reference/kernel/utility.rst:124
-msgid "View"
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View:1
@@ -2082,22 +2035,22 @@ msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.__init__:20
 #: ../../docstring of abaqus.UtilityAndView.View.View.nearPlane:1
-msgid "A Float specifying the distance from the camera to the near clipping plane. Possible values are **nearPlane** >> 0.0."
+msgid "A Float specifying the distance from the camera to the near clipping plane. Possible values are **nearPlane** > 0.0."
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.__init__:23
 #: ../../docstring of abaqus.UtilityAndView.View.View.farPlane:1
-msgid "A Float specifying the distance from the camera to the far clipping plane when **farPlaneMode** =SPECIFY. Possible values are **farPlane** >> **nearPlane**."
+msgid "A Float specifying the distance from the camera to the far clipping plane when **farPlaneMode** =SPECIFY. Possible values are **farPlane** > **nearPlane**."
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.__init__:26
 #: ../../docstring of abaqus.UtilityAndView.View.View.width:1
-msgid "A Float specifying the width of the front clipping plane. Possible values are **width** >> 0.0."
+msgid "A Float specifying the width of the front clipping plane. Possible values are **width** > 0.0."
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.__init__:29
 #: ../../docstring of abaqus.UtilityAndView.View.View.height:1
-msgid "A Float specifying the height of the front clipping plane. Possible values are **height** >> 0.0."
+msgid "A Float specifying the height of the front clipping plane. Possible values are **height** > 0.0."
 msgstr ""
 
 #: ../../../../src/abaqus/UtilityAndView/View.py:docstring of abaqus.UtilityAndView.View.View.__init__:32

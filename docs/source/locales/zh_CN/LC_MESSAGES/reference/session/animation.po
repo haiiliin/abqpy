@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,28 +17,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/session/animation.rst:3
+#: ../../reference/session/animation.md:1
 msgid "Animation Options"
 msgstr ""
 
-#: ../../reference/session/animation.rst:6
+#: ../../reference/session/animation.md:3
 msgid ""
 "Animation commands are used to create and control object-based and image-"
 "based animations in the viewport."
 msgstr ""
 
-#: ../../reference/session/animation.rst:10
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/session/animation.rst:13
-msgid "AnimationOptions"
+#: ../../reference/session/animation.md:5
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.Animation.AVIOptions.AVIOptions:1
 #: abaqus.Animation.AnimationOptions.AnimationOptions:1
 #: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions:1
-#: abaqus.Animation.Movie.Movie:1 of
+#: abaqus.Animation.Movie.Movie:1
+#: abaqus.Animation.QuickTimeOptions.QuickTimeOptions:1 of
 msgid "Bases: :py:class:`~abaqus._OptionsBase._OptionsBase`"
 msgstr ""
 
@@ -72,7 +69,8 @@ msgstr ""
 #: abaqus.Animation.AnimationSession.AnimationSession
 #: abaqus.Animation.ImageAnimation.ImageAnimation
 #: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions
-#: abaqus.Animation.Movie.Movie of
+#: abaqus.Animation.Movie.Movie
+#: abaqus.Animation.QuickTimeOptions.QuickTimeOptions of
 msgid "Public Data Attributes:"
 msgstr ""
 
@@ -341,7 +339,8 @@ msgstr ""
 #: abaqus.Animation.AnimationSession.AnimationSession
 #: abaqus.Animation.ImageAnimation.ImageAnimation
 #: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions
-#: abaqus.Animation.Movie.Movie of
+#: abaqus.Animation.Movie.Movie
+#: abaqus.Animation.QuickTimeOptions.QuickTimeOptions of
 msgid "Public Methods:"
 msgstr ""
 
@@ -375,6 +374,16 @@ msgstr ""
 
 #: ../../None:4:<autosummary>:1
 msgid "This method modifies the _OptionsBase object."
+msgstr ""
+
+#: abaqus.Animation.AVIOptions.AVIOptions:1
+#: abaqus.Animation.AnimationOptions.AnimationOptions:1
+#: abaqus.Animation.AnimationSession.AnimationSession:1
+#: abaqus.Animation.ImageAnimation.ImageAnimation:1
+#: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions:1
+#: abaqus.Animation.Movie.Movie:1
+#: abaqus.Animation.QuickTimeOptions.QuickTimeOptions:1 of
+msgid "Member Details:"
 msgstr ""
 
 #: ../../docstring
@@ -632,10 +641,6 @@ msgid ""
 " when **xyUseHighlightMethod** = False. When setting the color to "
 "'Default' the system will take the color associated to each curve. The "
 "default value is \"Default\"."
-msgstr ""
-
-#: ../../reference/session/animation.rst:23
-msgid "AnimationSession"
 msgstr ""
 
 #: abaqus.Animation.AnimationSession.AnimationSession:1 of
@@ -1688,10 +1693,6 @@ msgid ""
 " is to capture all canvas objects."
 msgstr ""
 
-#: ../../reference/session/animation.rst:33
-msgid "AVIOptions"
-msgstr ""
-
 #: abaqus.Animation.AVIOptions.AVIOptions:1 of
 msgid ""
 "The AVIOptions object is used to store values and attributes to be used "
@@ -1750,7 +1751,7 @@ msgid ""
 "<abaqus.Animation.AVIOptions.AVIOptions.sizeDefinition>`\\"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:5:<autosummary>:1 ../../None:7:<autosummary>:1
 msgid ""
 "A SymbolicConstant specifying how the width and height of the image are "
 "specified."
@@ -1760,7 +1761,7 @@ msgstr ""
 msgid ":py:obj:`imageSize <abaqus.Animation.AVIOptions.AVIOptions.imageSize>`\\"
 msgstr ""
 
-#: ../../None:7:<autosummary>:1
+#: ../../None:5:<autosummary>:1 ../../None:7:<autosummary>:1
 msgid ""
 "A pair of Ints specifying the width and height of the image in pixels "
 "when **sizeDefinition** = USER_DEFINED."
@@ -1860,10 +1861,6 @@ msgid ""
 "(*maxHeight*) depend on the graphics capabilities of the system. The "
 "maximum width and height will be at least as large as the screen "
 "dimensions."
-msgstr ""
-
-#: ../../reference/session/animation.rst:43
-msgid "ImageAnimation"
 msgstr ""
 
 #: abaqus.Animation.ImageAnimation.ImageAnimation:1 of
@@ -1973,10 +1970,6 @@ msgid ""
 "capture all canvas objects."
 msgstr ""
 
-#: ../../reference/session/animation.rst:53
-msgid "ImageAnimationOptions"
-msgstr ""
-
 #: abaqus.Animation.ImageAnimationOptions.ImageAnimationOptions:1 of
 msgid ""
 "The ImageAnimationOptions object is used to store values and attributes "
@@ -2083,10 +2076,6 @@ msgstr ""
 msgid ""
 "A Boolean specifying whether to capture viewport backgrounds. The default"
 " value is OFF."
-msgstr ""
-
-#: ../../reference/session/animation.rst:63
-msgid "Movie"
 msgstr ""
 
 #: abaqus.Animation.Movie.Movie:1 of
@@ -2244,10 +2233,6 @@ msgid ""
 "     or*timelineEndTime* are outside their respective valid range."
 msgstr ""
 
-#: ../../reference/session/animation.rst:73
-msgid "QuickTimeOptions"
-msgstr ""
-
 #: abaqus.Animation.QuickTimeOptions.QuickTimeOptions:1 of
 msgid ""
 "The QuickTimeOptions object is used to store values and attributes to be "
@@ -2260,6 +2245,42 @@ msgstr ""
 msgid ""
 "Check `QuickTimeOptions on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-quicktimeoptionspyc.htm?contextscope=all>`__."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`compressionMethod "
+"<abaqus.Animation.QuickTimeOptions.QuickTimeOptions.compressionMethod>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+"A SymbolicConstant specifying the compression method for the QuickTime "
+"format."
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`sizeDefinition "
+"<abaqus.Animation.QuickTimeOptions.QuickTimeOptions.sizeDefinition>`\\"
+msgstr ""
+
+#: ../../None:5:<autosummary>:1
+msgid ""
+":py:obj:`imageSize "
+"<abaqus.Animation.QuickTimeOptions.QuickTimeOptions.imageSize>`\\"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+msgid ""
+":py:obj:`setValues "
+"<abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues>`\\ "
+"\\(\\[compressionMethod\\, ...\\]\\)"
+msgstr ""
+
+#: ../../None:3:<autosummary>:1
+#: abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues:1 of
+msgid "This method modifies the QuickTimeOptions object."
 msgstr ""
 
 #: ../../docstring
@@ -2303,10 +2324,6 @@ msgid ""
 "(*maxHeight*) depend on the graphics capabilities of the system. The "
 "maximum width and height will be at least as large as the screen "
 "dimensions."
-msgstr ""
-
-#: abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues:1 of
-msgid "This method modifies the QuickTimeOptions object."
 msgstr ""
 
 #: abaqus.Animation.QuickTimeOptions.QuickTimeOptions.setValues:4 of
@@ -3042,5 +3059,29 @@ msgstr ""
 #~ msgid ""
 #~ ":py:obj:`get_user_attributes "
 #~ "<abaqus.Animation.Movie.Movie.get_user_attributes>`\\ \\(\\)"
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "AnimationOptions"
+#~ msgstr ""
+
+#~ msgid "AnimationSession"
+#~ msgstr ""
+
+#~ msgid "AVIOptions"
+#~ msgstr ""
+
+#~ msgid "ImageAnimation"
+#~ msgstr ""
+
+#~ msgid "ImageAnimationOptions"
+#~ msgstr ""
+
+#~ msgid "Movie"
+#~ msgstr ""
+
+#~ msgid "QuickTimeOptions"
 #~ msgstr ""
 

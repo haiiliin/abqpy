@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/mdb/model/predefined.rst:3
+#: ../../reference/mdb/model/predefined.md:1
 msgid "Predefined Field"
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:5
+#: ../../reference/mdb/model/predefined.md:3
 msgid ""
 "A PredefinedField object stores the non-propagating data of a predefined "
 "field as well as a number of instances of the corresponding "
@@ -33,7 +33,7 @@ msgid ""
 "deleted internally by its corresponding PredefinedField object."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:9
+#: ../../reference/mdb/model/predefined.md:5
 msgid "Create predefined fields"
 msgstr ""
 
@@ -828,6 +828,24 @@ msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid "This method modifies the Model object."
+msgstr ""
+
+#: abaqus.PredefinedField.Field.Field:1
+#: abaqus.PredefinedField.FieldState.FieldState:1
+#: abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure:1
+#: abaqus.PredefinedField.IMAField.IMAField:1
+#: abaqus.PredefinedField.IMARegion.IMARegion:1
+#: abaqus.PredefinedField.InitialState.InitialState:1
+#: abaqus.PredefinedField.KinematicHardening.KinematicHardening:1
+#: abaqus.PredefinedField.MaterialAssignment.MaterialAssignment:1
+#: abaqus.PredefinedField.PredefinedField.PredefinedField:1
+#: abaqus.PredefinedField.PredefinedFieldModel.PredefinedFieldModel:1
+#: abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState:1
+#: abaqus.PredefinedField.Temperature.Temperature:1
+#: abaqus.PredefinedField.TemperatureState.TemperatureState:1
+#: abaqus.PredefinedField.TiffOptions.TiffOptions:1
+#: abaqus.PredefinedField.Velocity.Velocity:1 of
+msgid "Member Details:"
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field.__init__:4
@@ -1773,8 +1791,8 @@ msgstr ""
 msgid ""
 "A String or the SymbolicConstant UNSET specifying the name of the "
 "amplitude reference. UNSET should be used if the predefined field has no "
-"amplitude reference. The default value is UNSET.Note:*amplitude* should "
-"be given only if it is valid for the specified step."
+"amplitude reference. The default value is UNSET. Note: *amplitude* should"
+" be given only if it is valid for the specified step."
 msgstr ""
 
 #: ../../None:19:<autosummary>:1 ../../docstring
@@ -2057,12 +2075,8 @@ msgstr ""
 msgid ":class:`A VoidsRatio object.`"
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:19
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/mdb/model/predefined.rst:22
-msgid "Field"
+#: ../../reference/mdb/model/predefined.md:16
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.PredefinedField.Field.Field:1
@@ -2352,10 +2366,6 @@ msgid ""
 " modified."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:32
-msgid "FieldState"
-msgstr ""
-
 #: abaqus.PredefinedField.FieldState.FieldState:1
 #: abaqus.PredefinedField.TemperatureState.TemperatureState:1 of
 msgid ""
@@ -2583,8 +2593,8 @@ msgstr ""
 msgid ""
 "The SymbolicConstant UNSET or a String specifying the name of the "
 "amplitude reference. The SymbolicConstant UNSET should be used if the "
-"predefined field has no amplitude reference. The default value is "
-"UNSET.Note: **amplitude** should be given only if it is valid for the "
+"predefined field has no amplitude reference. The default value is UNSET. "
+"Note:  **amplitude** should be given only if it is valid for the "
 "specified step."
 msgstr ""
 
@@ -2799,10 +2809,6 @@ msgid ""
 "values depending on propagation rules."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:42
-msgid "PredefinedField"
-msgstr ""
-
 #: abaqus.PredefinedField.IMAField.IMAField:1
 #: abaqus.PredefinedField.IMARegion.IMARegion:1
 #: abaqus.PredefinedField.PredefinedField.PredefinedField:1
@@ -2870,10 +2876,6 @@ msgid ""
 "FROM_FILE_AND_USER_DEFINED."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:52
-msgid "PredefinedFieldState"
-msgstr ""
-
 #: abaqus.PredefinedField.PredefinedFieldState.PredefinedFieldState:1 of
 msgid ""
 "The PredefinedFieldState object is the base object for the objects in the"
@@ -2887,10 +2889,6 @@ msgstr ""
 msgid ""
 "Check `PredefinedFieldState on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-predefinedfieldstatepyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/predefined.rst:62
-msgid "FluidCavityPressure"
 msgstr ""
 
 #: abaqus.PredefinedField.FluidCavityPressure.FluidCavityPressure:1 of
@@ -2941,10 +2939,6 @@ msgid ""
 "#simaker-fluidcavitypressure__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:72
-msgid "IMAField"
-msgstr ""
-
 #: abaqus.PredefinedField.IMAField.IMAField:1 of
 msgid ""
 "A IMAField is an object used to define material instance name volume "
@@ -2990,10 +2984,6 @@ msgid ""
 "Eulerian section."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:82
-msgid "IMARegion"
-msgstr ""
-
 #: abaqus.PredefinedField.IMARegion.IMARegion:1 of
 msgid ""
 "A IMARegion is an object used to define material instance name volume "
@@ -3027,10 +3017,6 @@ msgid ""
 "A tuple of Floats specifying the volume fractions, per material instance "
 "name. The length of the tuple corresponds to the number of material "
 "instance names, as established by the assigned Eulerian section."
-msgstr ""
-
-#: ../../reference/mdb/model/predefined.rst:92
-msgid "InitialState"
 msgstr ""
 
 #: abaqus.PredefinedField.InitialState.InitialState:1 of
@@ -3113,10 +3099,6 @@ msgid ""
 "Check `InitialState.setValues on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-initialstatepyc.htm?contextscope=all"
 "#simaker-initialstatesetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/predefined.rst:102
-msgid "KinematicHardening"
 msgstr ""
 
 #: abaqus.PredefinedField.KinematicHardening.KinematicHardening:1 of
@@ -3248,10 +3230,6 @@ msgid ""
 "#simaker-kinematichardeningsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/predefined.rst:112
-msgid "MaterialAssignment"
-msgstr ""
-
 #: abaqus.PredefinedField.MaterialAssignment.MaterialAssignment:1 of
 msgid ""
 "The MaterialAssignment object stores the data for an initial material "
@@ -3344,10 +3322,6 @@ msgid ""
 "Check `MaterialAssignment.setValues on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-materialassignmentpyc.htm?contextscope=all"
 "#simaker-materialassignmentsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/predefined.rst:122
-msgid "Temperature"
 msgstr ""
 
 #: abaqus.PredefinedField.Temperature.Temperature:1 of
@@ -3489,10 +3463,6 @@ msgid ""
 "Check `Temperature.setValuesInStep on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-temperaturepyc.htm?contextscope=all"
 "#simaker-temperaturesetvaluesinsteppyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/predefined.rst:132
-msgid "TemperatureState"
 msgstr ""
 
 #: abaqus.PredefinedField.TemperatureState.TemperatureState:1 of
@@ -3647,9 +3617,9 @@ msgstr ""
 msgid ""
 "The SymbolicConstant UNSET or a String specifying the name of the "
 "amplitude reference. The SymbolicConstant UNSET should be used if the "
-"predefined field has no amplitude reference. The default value is "
-"UNSET.Note:*amplitude* should be given only if it is valid for the "
-"specified step."
+"predefined field has no amplitude reference. The default value is UNSET. "
+"Note: *amplitude* should be given only if it is valid for the specified "
+"step."
 msgstr ""
 
 #: ../../docstring
@@ -3705,10 +3675,6 @@ msgstr ""
 msgid ""
 "A SymbolicConstant specifying the propagation state of the **midside** "
 "member. Possible values are UNSET, SET, and UNCHANGED."
-msgstr ""
-
-#: ../../reference/mdb/model/predefined.rst:142
-msgid "TiffOptions"
 msgstr ""
 
 #: abaqus.PredefinedField.TiffOptions.TiffOptions:1 of
@@ -3768,10 +3734,6 @@ msgstr ""
 
 #: abaqus.PredefinedField.TiffOptions.TiffOptions.setValues:18 of
 msgid "(minWidth, minHeight) <= (width, height) <= (maxWidth, maxHeight)."
-msgstr ""
-
-#: ../../reference/mdb/model/predefined.rst:152
-msgid "Velocity"
 msgstr ""
 
 #: abaqus.PredefinedField.Velocity.Velocity:1 of
@@ -4872,5 +4834,83 @@ msgstr ""
 #~ ":py:obj:`delete "
 #~ "<abaqus.PredefinedField.Velocity.Velocity.delete>`\\ "
 #~ "\\(indices\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A String or the SymbolicConstant UNSET"
+#~ " specifying the name of the amplitude"
+#~ " reference. UNSET should be used if"
+#~ " the predefined field has no "
+#~ "amplitude reference. The default value "
+#~ "is UNSET.Note:*amplitude* should be given "
+#~ "only if it is valid for the "
+#~ "specified step."
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "Field"
+#~ msgstr ""
+
+#~ msgid "FieldState"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SymbolicConstant UNSET or a String"
+#~ " specifying the name of the amplitude"
+#~ " reference. The SymbolicConstant UNSET "
+#~ "should be used if the predefined "
+#~ "field has no amplitude reference. The"
+#~ " default value is UNSET.Note: **amplitude**"
+#~ " should be given only if it is"
+#~ " valid for the specified step."
+#~ msgstr ""
+
+#~ msgid "PredefinedField"
+#~ msgstr ""
+
+#~ msgid "PredefinedFieldState"
+#~ msgstr ""
+
+#~ msgid "FluidCavityPressure"
+#~ msgstr ""
+
+#~ msgid "IMAField"
+#~ msgstr ""
+
+#~ msgid "IMARegion"
+#~ msgstr ""
+
+#~ msgid "InitialState"
+#~ msgstr ""
+
+#~ msgid "KinematicHardening"
+#~ msgstr ""
+
+#~ msgid "MaterialAssignment"
+#~ msgstr ""
+
+#~ msgid "Temperature"
+#~ msgstr ""
+
+#~ msgid "TemperatureState"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The SymbolicConstant UNSET or a String"
+#~ " specifying the name of the amplitude"
+#~ " reference. The SymbolicConstant UNSET "
+#~ "should be used if the predefined "
+#~ "field has no amplitude reference. The"
+#~ " default value is UNSET.Note:*amplitude* "
+#~ "should be given only if it is "
+#~ "valid for the specified step."
+#~ msgstr ""
+
+#~ msgid "TiffOptions"
+#~ msgstr ""
+
+#~ msgid "Velocity"
 #~ msgstr ""
 
