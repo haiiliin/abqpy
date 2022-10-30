@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/mdb/model/profile.rst:3
+#: ../../reference/mdb/model/profile.md:1
 msgid "Beam Section Profile"
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:5
+#: ../../reference/mdb/model/profile.md:3
 msgid ""
 "The Beam Section profile commands are used to create profiles. A profile "
 "definition specifies the properties of a beam that are related to its "
@@ -29,11 +29,11 @@ msgid ""
 "a reference to a profile in the section definition."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:8
+#: ../../reference/mdb/model/profile.md:5
 msgid "Create beam section profiles"
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:11
+#: ../../reference/mdb/model/profile.md:7
 msgid "In Mdb"
 msgstr ""
 
@@ -886,6 +886,23 @@ msgstr ""
 
 #: ../../None:7:<autosummary>:1
 msgid "This method modifies the Model object."
+msgstr ""
+
+#: abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile:1
+#: abaqus.BeamSectionProfile.BeamSectionProfileModel.BeamSectionProfileModel:1
+#: abaqus.BeamSectionProfile.BeamSectionProfileOdb.BeamSectionProfileOdb:1
+#: abaqus.BeamSectionProfile.BoxProfile.BoxProfile:1
+#: abaqus.BeamSectionProfile.CircularProfile.CircularProfile:1
+#: abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile:1
+#: abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile:1
+#: abaqus.BeamSectionProfile.IProfile.IProfile:1
+#: abaqus.BeamSectionProfile.LProfile.LProfile:1
+#: abaqus.BeamSectionProfile.PipeProfile.PipeProfile:1
+#: abaqus.BeamSectionProfile.Profile.Profile:1
+#: abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile:1
+#: abaqus.BeamSectionProfile.TProfile.TProfile:1
+#: abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile:1 of
+msgid "Member Details:"
 msgstr ""
 
 #: abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile.__init__:4
@@ -1777,7 +1794,7 @@ msgstr ""
 msgid ":class:`List[Profile]`"
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:21
+#: ../../reference/mdb/model/profile.md:18
 msgid "In Odb"
 msgstr ""
 
@@ -2018,12 +2035,8 @@ msgid ""
 "analysis writes data to the associated output database."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:32
-msgid "Classes"
-msgstr ""
-
-#: ../../reference/mdb/model/profile.rst:35
-msgid "Profile"
+#: ../../reference/mdb/model/profile.md:30
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.BeamSectionProfile.Profile.Profile:1 of
@@ -2058,10 +2071,6 @@ msgid ""
 "Check `Profile.beamProfilesFromOdb on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-profilepyc.htm?contextscope=all"
 "#simaker-profilebeamprofilesfromodbpyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/profile.rst:45
-msgid "ArbitraryProfile"
 msgstr ""
 
 #: abaqus.BeamSectionProfile.ArbitraryProfile.ArbitraryProfile:1
@@ -2167,10 +2176,6 @@ msgid ""
 "#simaker-arbitraryprofile__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:55
-msgid "BoxProfile"
-msgstr ""
-
 #: abaqus.BeamSectionProfile.BoxProfile.BoxProfile:1 of
 msgid ""
 "The BoxProfile object defines the properties of a box profile. The "
@@ -2234,10 +2239,6 @@ msgid ""
 "#simaker-boxprofilesetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:65
-msgid "CircularProfile"
-msgstr ""
-
 #: abaqus.BeamSectionProfile.CircularProfile.CircularProfile:1 of
 msgid ""
 "The CircularProfile object defines the properties of a solid circular "
@@ -2268,10 +2269,6 @@ msgid ""
 "Check `CircularProfile.__init__ on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-circularprofilepyc.htm?contextscope=all"
 "#simaker-circularprofile__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/profile.rst:75
-msgid "GeneralizedProfile"
 msgstr ""
 
 #: abaqus.BeamSectionProfile.GeneralizedProfile.GeneralizedProfile:1 of
@@ -2313,10 +2310,6 @@ msgid ""
 "#simaker-generalizedprofile__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:85
-msgid "HexagonalProfile"
-msgstr ""
-
 #: abaqus.BeamSectionProfile.HexagonalProfile.HexagonalProfile:1 of
 msgid ""
 "The HexagonalProfile object defines the properties of a hexagonal "
@@ -2347,10 +2340,6 @@ msgid ""
 "Check `HexagonalProfile.__init__ on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-hexagonalprofilepyc.htm?contextscope=all"
 "#simaker-hexagonalprofile__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/profile.rst:95
-msgid "IProfile"
 msgstr ""
 
 #: abaqus.BeamSectionProfile.IProfile.IProfile:1 of
@@ -2385,10 +2374,6 @@ msgid ""
 "#simaker-iprofile__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:105
-msgid "LProfile"
-msgstr ""
-
 #: abaqus.BeamSectionProfile.LProfile.LProfile:1 of
 msgid ""
 "The LProfile object defines the properties of a L profile. The LProfile "
@@ -2421,10 +2406,6 @@ msgid ""
 "#simaker-lprofile__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:115
-msgid "PipeProfile"
-msgstr ""
-
 #: abaqus.BeamSectionProfile.PipeProfile.PipeProfile:1 of
 msgid ""
 "The PipeProfile object defines the properties of a circular pipe profile."
@@ -2455,10 +2436,6 @@ msgid ""
 "Check `PipeProfile.__init__ on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-pipeprofilepyc.htm?contextscope=all"
 "#simaker-pipeprofile__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/profile.rst:125
-msgid "RectangularProfile"
 msgstr ""
 
 #: abaqus.BeamSectionProfile.RectangularProfile.RectangularProfile:1 of
@@ -2496,10 +2473,6 @@ msgid ""
 "#simaker-rectangularprofile__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/profile.rst:135
-msgid "TProfile"
-msgstr ""
-
 #: abaqus.BeamSectionProfile.TProfile.TProfile:1 of
 msgid ""
 "The TProfile object defines the properties of a T profile. The TProfile "
@@ -2530,10 +2503,6 @@ msgid ""
 "Check `TProfile.__init__ on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-tprofilepyc.htm?contextscope=all"
 "#simaker-tprofile__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/profile.rst:145
-msgid "TrapezoidalProfile"
 msgstr ""
 
 #: abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile:1 of
@@ -3015,5 +2984,44 @@ msgstr ""
 #~ ":py:obj:`beamProfilesFromOdb "
 #~ "<abaqus.BeamSectionProfile.TrapezoidalProfile.TrapezoidalProfile.beamProfilesFromOdb>`\\"
 #~ " \\(fileName\\)"
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "Profile"
+#~ msgstr ""
+
+#~ msgid "ArbitraryProfile"
+#~ msgstr ""
+
+#~ msgid "BoxProfile"
+#~ msgstr ""
+
+#~ msgid "CircularProfile"
+#~ msgstr ""
+
+#~ msgid "GeneralizedProfile"
+#~ msgstr ""
+
+#~ msgid "HexagonalProfile"
+#~ msgstr ""
+
+#~ msgid "IProfile"
+#~ msgstr ""
+
+#~ msgid "LProfile"
+#~ msgstr ""
+
+#~ msgid "PipeProfile"
+#~ msgstr ""
+
+#~ msgid "RectangularProfile"
+#~ msgstr ""
+
+#~ msgid "TProfile"
+#~ msgstr ""
+
+#~ msgid "TrapezoidalProfile"
 #~ msgstr ""
 

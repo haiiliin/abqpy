@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-16 00:35+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,16 +17,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../reference/mdb/model/section.rst:7
+#: ../../reference/mdb/model/section.md:5
 msgid "Objects in Section"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:3
-#: ../../reference/mdb/model/section.rst:43
+#: ../../reference/mdb/model/section.md:1
 msgid "Section"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:5
+#: ../../reference/mdb/model/section.md:3
 msgid ""
 "The Section commands are used to create sections and profiles with their "
 "associated properties and behavior. The various section objects are all "
@@ -35,11 +34,11 @@ msgid ""
 "assignment commands."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:15
+#: ../../reference/mdb/model/section.md:12
 msgid "Create sections"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:18
+#: ../../reference/mdb/model/section.md:14
 msgid "In Mdb"
 msgstr ""
 
@@ -1009,6 +1008,39 @@ msgstr ""
 msgid "This method modifies the Model object."
 msgstr ""
 
+#: abaqus.Section.AcousticInfiniteSection.AcousticInfiniteSection:1
+#: abaqus.Section.AcousticInterfaceSection.AcousticInterfaceSection:1
+#: abaqus.Section.BeamSection.BeamSection:1
+#: abaqus.Section.CohesiveSection.CohesiveSection:1
+#: abaqus.Section.CompositeShellSection.CompositeShellSection:1
+#: abaqus.Section.CompositeSolidSection.CompositeSolidSection:1
+#: abaqus.Section.ConnectorSection.ConnectorSection:1
+#: abaqus.Section.EulerianSection.EulerianSection:1
+#: abaqus.Section.GasketSection.GasketSection:1
+#: abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection:1
+#: abaqus.Section.GeometryShellSection.GeometryShellSection:1
+#: abaqus.Section.HomogeneousShellSection.HomogeneousShellSection:1
+#: abaqus.Section.HomogeneousSolidSection.HomogeneousSolidSection:1
+#: abaqus.Section.LayerProperties.LayerProperties:1
+#: abaqus.Section.LayerPropertiesArray.LayerPropertiesArray:1
+#: abaqus.Section.MPCSection.MPCSection:1
+#: abaqus.Section.MembraneSection.MembraneSection:1
+#: abaqus.Section.PEGSection.PEGSection:1
+#: abaqus.Section.RebarLayers.RebarLayers:1 abaqus.Section.Section.Section:1
+#: abaqus.Section.SectionBase.SectionBase:1
+#: abaqus.Section.SectionLayer.SectionLayer:1
+#: abaqus.Section.SectionLayerArray.SectionLayerArray:1
+#: abaqus.Section.SectionModel.SectionModel:1
+#: abaqus.Section.SectionOdb.SectionOdb:1
+#: abaqus.Section.ShellSection.ShellSection:1
+#: abaqus.Section.SolidSection.SolidSection:1
+#: abaqus.Section.SurfaceSection.SurfaceSection:1
+#: abaqus.Section.TransverseShearBeam.TransverseShearBeam:1
+#: abaqus.Section.TransverseShearShell.TransverseShearShell:1
+#: abaqus.Section.TrussSection.TrussSection:1 of
+msgid "Member Details:"
+msgstr ""
+
 #: abaqus.Section.AcousticInfiniteSection.AcousticInfiniteSection.__init__:4
 #: abaqus.Section.AcousticInterfaceSection.AcousticInterfaceSection.__init__:4
 #: abaqus.Section.BeamSection.BeamSection.__init__:4
@@ -1205,7 +1237,7 @@ msgstr ""
 #: abaqus.Section.SectionOdb.SectionOdb.PEGSection:17 of
 msgid ""
 "A Float specifying the thickness of the section. Possible values are "
-"**thickness** >> 0.0. The default value is 1.0."
+"**thickness** > 0.0. The default value is 1.0."
 msgstr ""
 
 #: ../../docstring
@@ -1217,7 +1249,7 @@ msgstr ""
 msgid ""
 "An Int specifying the number of ninth-order polynomials that will be used"
 " to resolve the variation of the acoustic field in the infinite "
-"direction. Possible values are 0 << **order** ≤ 10. The default value is "
+"direction. Possible values are 0 < **order** ≤ 10. The default value is "
 "10."
 msgstr ""
 
@@ -2659,7 +2691,7 @@ msgstr ""
 #: abaqus.Section.SectionOdb.SectionOdb.HomogeneousShellSection:21 of
 msgid ""
 "An Int specifying the number of integration points to be used through the"
-" section. Possible values are **numIntPts** >> 0. The default value is "
+" section. Possible values are **numIntPts** > 0. The default value is "
 "5.To use the default settings of the analysis products, set **numIntPts**"
 " to 5 if **integrationRule** = SIMPSON or set **numIntPts** to 7 if "
 "**integrationRule** = GAUSS."
@@ -2797,7 +2829,7 @@ msgstr ""
 #: abaqus.Section.SectionOdb.SectionOdb.MembraneSection:17 of
 msgid ""
 "A Float specifying the thickness for the section. Possible values are "
-"**thickness** >> 0.0. The default value is 1.0."
+"**thickness** > 0.0. The default value is 1.0."
 msgstr ""
 
 #: ../../docstring abaqus.Section.MembraneSection.MembraneSection.__init__:20
@@ -2909,7 +2941,7 @@ msgstr ""
 #: abaqus.Section.TrussSection.TrussSection.setValues:7 of
 msgid ""
 "A Float specifying the cross-sectional area for the section. Possible "
-"values are **area** >> 0. The default value is 1.0."
+"values are **area** > 0. The default value is 1.0."
 msgstr ""
 
 #: abaqus.Section.SectionModel.SectionModel.TrussSection:20
@@ -2924,7 +2956,7 @@ msgstr ""
 msgid ":class:`TrussSection`"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:29
+#: ../../reference/mdb/model/section.md:26
 msgid "In Odb"
 msgstr ""
 
@@ -3193,8 +3225,8 @@ msgid ""
 "analysis writes data to the associated output database."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:40
-msgid "Classes"
+#: ../../reference/mdb/model/section.md:38
+msgid "Other Classes"
 msgstr ""
 
 #: abaqus.Section.Section.Section:1 of
@@ -3477,10 +3509,6 @@ msgstr ""
 msgid ":class:`TransverseShearShell`"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:53
-msgid "SectionBase"
-msgstr ""
-
 #: abaqus.Section.LayerProperties.LayerProperties:1
 #: abaqus.Section.RebarLayers.RebarLayers:1
 #: abaqus.Section.SectionBase.SectionBase:1
@@ -3530,10 +3558,6 @@ msgstr ""
 
 #: abaqus.Section.SectionBase.SectionBase.sectionsFromOdb:18 of
 msgid ":class:`List[Section]`"
-msgstr ""
-
-#: ../../reference/mdb/model/section.rst:63
-msgid "AcousticInfiniteSection"
 msgstr ""
 
 #: abaqus.Section.AcousticInfiniteSection.AcousticInfiniteSection:1
@@ -3654,10 +3678,6 @@ msgid ""
 "#simaker-acousticinfinitesectionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:73
-msgid "AcousticInterfaceSection"
-msgstr ""
-
 #: abaqus.Section.AcousticInterfaceSection.AcousticInterfaceSection:1 of
 msgid ""
 "The AcousticInterfaceSection object defines the properties of an acoustic"
@@ -3709,10 +3729,6 @@ msgid ""
 "Check `AcousticInterfaceSection.setValues on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-acousticinterfacesectionpyc.htm?contextscope=all"
 "#simaker-acousticinterfacesectionsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/section.rst:83
-msgid "BeamSection"
 msgstr ""
 
 #: abaqus.Section.BeamSection.BeamSection:1 of
@@ -4076,10 +4092,6 @@ msgid ""
 "#simaker-beamsectionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:93
-msgid "CohesiveSection"
-msgstr ""
-
 #: abaqus.Section.CohesiveSection.CohesiveSection:1 of
 msgid ""
 "The CohesiveSection object defines the properties of a cohesive section. "
@@ -4164,10 +4176,6 @@ msgid ""
 "Check `CohesiveSection.setValues on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-cohesivesectionpyc.htm?contextscope=all"
 "#simaker-cohesivesectionsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/section.rst:103
-msgid "CompositeShellSection"
 msgstr ""
 
 #: abaqus.Section.CompositeShellSection.CompositeShellSection:1
@@ -4585,10 +4593,6 @@ msgid ""
 "#simaker-compositeshellsectionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:113
-msgid "CompositeSolidSection"
-msgstr ""
-
 #: abaqus.Section.CompositeSolidSection.CompositeSolidSection:1 of
 msgid ""
 "The CompositeSolidSection object defines the properties of a composite "
@@ -4639,10 +4643,6 @@ msgid ""
 "Check `CompositeSolidSection.setValues on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-compositesolidsectionpyc.htm?contextscope=all"
 "#simaker-compositesolidsectionsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/section.rst:123
-msgid "ConnectorSection"
 msgstr ""
 
 #: abaqus.Section.ConnectorSection.ConnectorSection:1 of
@@ -4936,10 +4936,6 @@ msgid ""
 " must be given an value other than NONE."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:133
-msgid "EulerianSection"
-msgstr ""
-
 #: abaqus.Section.EulerianSection.EulerianSection:1 of
 msgid ""
 "The EulerianSection object defines the properties of a Eulerian section. "
@@ -4974,10 +4970,6 @@ msgid ""
 "Check `EulerianSection.__init__ on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-euleriansectionpyc.htm?contextscope=all"
 "#simaker-euleriansection__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/section.rst:143
-msgid "GasketSection"
 msgstr ""
 
 #: abaqus.Section.GasketSection.GasketSection:1 of
@@ -5085,10 +5077,6 @@ msgid ""
 "Check `GasketSection.setValues on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-gasketsectionpyc.htm?contextscope=all"
 "#simaker-gasketsectionsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/section.rst:153
-msgid "GeneralStiffnessSection"
 msgstr ""
 
 #: abaqus.Section.GeneralStiffnessSection.GeneralStiffnessSection:1
@@ -5235,10 +5223,6 @@ msgid ""
 "#simaker-generalstiffnesssectionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:163
-msgid "GeometryShellSection"
-msgstr ""
-
 #: abaqus.Section.GeometryShellSection.GeometryShellSection:1 of
 msgid ""
 "The GeometryShellSection object defines the properties of a geometry "
@@ -5304,10 +5288,6 @@ msgstr ""
 
 #: abaqus.Section.GeometryShellSection.GeometryShellSection.__init__:60 of
 msgid ":class:`GeometryShellSection`"
-msgstr ""
-
-#: ../../reference/mdb/model/section.rst:173
-msgid "HomogeneousShellSection"
 msgstr ""
 
 #: abaqus.Section.HomogeneousShellSection.HomogeneousShellSection:1 of
@@ -5461,10 +5441,6 @@ msgid ""
 "#simaker-homogeneousshellsectionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:183
-msgid "HomogeneousSolidSection"
-msgstr ""
-
 #: abaqus.Section.HomogeneousSolidSection.HomogeneousSolidSection:1 of
 msgid "Bases: :py:class:`~abaqus.Section.SolidSection.SolidSection`"
 msgstr ""
@@ -5520,10 +5496,6 @@ msgid ""
 "Check `HomogeneousSolidSection.setValues on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-homogeneoussolidsectionpyc.htm?contextscope=all"
 "#simaker-homogeneoussolidsectionsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/section.rst:193
-msgid "LayerProperties"
 msgstr ""
 
 #: abaqus.Section.LayerProperties.LayerProperties:1 of
@@ -5683,14 +5655,6 @@ msgstr ""
 msgid ":class:`LayerProperties`"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:203
-msgid "LayerPropertiesArray"
-msgstr ""
-
-#: ../../reference/mdb/model/section.rst:213
-msgid "MembraneSection"
-msgstr ""
-
 #: abaqus.Section.MembraneSection.MembraneSection:1 of
 msgid ""
 "The MembraneSection object defines the properties of a membrane section. "
@@ -5778,10 +5742,6 @@ msgid ""
 "#simaker-membranesectionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:223
-msgid "MPCSection"
-msgstr ""
-
 #: abaqus.Section.MPCSection.MPCSection:1 of
 msgid ""
 "The MPCSection object defines the properties of a multi-point constraint "
@@ -5821,10 +5781,6 @@ msgid ""
 "Check `MPCSection.__init__ on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-mpcsectionpyc.htm?contextscope=all"
 "#simaker-mpcsection__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/section.rst:233
-msgid "PEGSection"
 msgstr ""
 
 #: abaqus.Section.PEGSection.PEGSection:1 of
@@ -5888,10 +5844,6 @@ msgid ""
 "#simaker-pegsectionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:243
-msgid "RebarLayers"
-msgstr ""
-
 #: abaqus.Section.RebarLayers.RebarLayers:1 of
 msgid "The RebarLayers object defines the rebar properties of a section."
 msgstr ""
@@ -5918,10 +5870,6 @@ msgid ""
 "Check `RebarLayers.__init__ on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rebarlayerspyc.htm?contextscope=all"
 "#simaker-rebarlayers__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/section.rst:253
-msgid "SectionLayer"
 msgstr ""
 
 #: abaqus.Section.SectionLayer.SectionLayer:1 of
@@ -6126,14 +6074,6 @@ msgstr ""
 msgid ":class:`SectionLayer`"
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:263
-msgid "SectionLayerArray"
-msgstr ""
-
-#: ../../reference/mdb/model/section.rst:273
-msgid "ShellSection"
-msgstr ""
-
 #: abaqus.Section.ShellSection.ShellSection:1
 #: abaqus.Section.SolidSection.SolidSection:1 of
 msgid ""
@@ -6149,18 +6089,10 @@ msgid ""
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shellsectionpyc.htm?contextscope=all>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:283
-msgid "SolidSection"
-msgstr ""
-
 #: abaqus.Section.SolidSection.SolidSection:15 of
 msgid ""
 "Check `SolidSection on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-solidsectionpyc.htm?contextscope=all>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/section.rst:293
-msgid "SurfaceSection"
 msgstr ""
 
 #: abaqus.Section.SurfaceSection.SurfaceSection:1 of
@@ -6201,10 +6133,6 @@ msgid ""
 "Check `SurfaceSection.__init__ on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-surfacesectionpyc.htm?contextscope=all"
 "#simaker-surfacesection__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/section.rst:303
-msgid "TransverseShearBeam"
 msgstr ""
 
 #: abaqus.Section.TransverseShearBeam.TransverseShearBeam:1 of
@@ -6276,10 +6204,6 @@ msgid ""
 "#simaker-transverseshearbeam__init__pyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/section.rst:313
-msgid "TransverseShearShell"
-msgstr ""
-
 #: abaqus.Section.TransverseShearShell.TransverseShearShell:1 of
 msgid ""
 "The TransverseShearShell object defines the transverse shear stiffness "
@@ -6310,10 +6234,6 @@ msgid ""
 "Check `TransverseShearShell.__init__ on help.3ds.com/2020 "
 "<https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-transverseshearshellpyc.htm?contextscope=all"
 "#simaker-transverseshearshell__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/section.rst:323
-msgid "TrussSection"
 msgstr ""
 
 #: abaqus.Section.TrussSection.TrussSection:1 of
@@ -10934,5 +10854,135 @@ msgstr ""
 #~ ":py:obj:`sectionsFromOdb "
 #~ "<abaqus.Section.TrussSection.TrussSection.sectionsFromOdb>`\\ "
 #~ "\\(fileName\\)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the thickness of "
+#~ "the section. Possible values are "
+#~ "**thickness** >> 0.0. The default value"
+#~ " is 1.0."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the number of "
+#~ "ninth-order polynomials that will be "
+#~ "used to resolve the variation of "
+#~ "the acoustic field in the infinite "
+#~ "direction. Possible values are 0 << "
+#~ "**order** ≤ 10. The default value "
+#~ "is 10."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An Int specifying the number of "
+#~ "integration points to be used through"
+#~ " the section. Possible values are "
+#~ "**numIntPts** >> 0. The default value"
+#~ " is 5.To use the default settings "
+#~ "of the analysis products, set "
+#~ "**numIntPts** to 5 if **integrationRule** "
+#~ "= SIMPSON or set **numIntPts** to "
+#~ "7 if **integrationRule** = GAUSS."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the thickness for "
+#~ "the section. Possible values are "
+#~ "**thickness** >> 0.0. The default value"
+#~ " is 1.0."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A Float specifying the cross-sectional"
+#~ " area for the section. Possible "
+#~ "values are **area** >> 0. The "
+#~ "default value is 1.0."
+#~ msgstr ""
+
+#~ msgid "Classes"
+#~ msgstr ""
+
+#~ msgid "SectionBase"
+#~ msgstr ""
+
+#~ msgid "AcousticInfiniteSection"
+#~ msgstr ""
+
+#~ msgid "AcousticInterfaceSection"
+#~ msgstr ""
+
+#~ msgid "BeamSection"
+#~ msgstr ""
+
+#~ msgid "CohesiveSection"
+#~ msgstr ""
+
+#~ msgid "CompositeShellSection"
+#~ msgstr ""
+
+#~ msgid "CompositeSolidSection"
+#~ msgstr ""
+
+#~ msgid "ConnectorSection"
+#~ msgstr ""
+
+#~ msgid "EulerianSection"
+#~ msgstr ""
+
+#~ msgid "GasketSection"
+#~ msgstr ""
+
+#~ msgid "GeneralStiffnessSection"
+#~ msgstr ""
+
+#~ msgid "GeometryShellSection"
+#~ msgstr ""
+
+#~ msgid "HomogeneousShellSection"
+#~ msgstr ""
+
+#~ msgid "HomogeneousSolidSection"
+#~ msgstr ""
+
+#~ msgid "LayerProperties"
+#~ msgstr ""
+
+#~ msgid "LayerPropertiesArray"
+#~ msgstr ""
+
+#~ msgid "MembraneSection"
+#~ msgstr ""
+
+#~ msgid "MPCSection"
+#~ msgstr ""
+
+#~ msgid "PEGSection"
+#~ msgstr ""
+
+#~ msgid "RebarLayers"
+#~ msgstr ""
+
+#~ msgid "SectionLayer"
+#~ msgstr ""
+
+#~ msgid "SectionLayerArray"
+#~ msgstr ""
+
+#~ msgid "ShellSection"
+#~ msgstr ""
+
+#~ msgid "SolidSection"
+#~ msgstr ""
+
+#~ msgid "SurfaceSection"
+#~ msgstr ""
+
+#~ msgid "TransverseShearBeam"
+#~ msgstr ""
+
+#~ msgid "TransverseShearShell"
+#~ msgstr ""
+
+#~ msgid "TrussSection"
 #~ msgstr ""
 

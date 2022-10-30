@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,16 +16,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/model/constraint.rst:3
-#: ../../reference/mdb/model/constraint.rst:23
+#: ../../reference/mdb/model/constraint.md:1
 msgid "Constraint"
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:6
+#: ../../reference/mdb/model/constraint.md:3
 msgid "The Constraint commands define constraints between regions of the model."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:9
+#: ../../reference/mdb/model/constraint.md:5
 msgid "Create constraints"
 msgstr ""
 
@@ -646,6 +645,20 @@ msgstr ""
 msgid "This method modifies the Model object."
 msgstr ""
 
+#: ../../../../src/abaqus/Constraint/AdjustPoints.py:docstring of abaqus.Constraint.AdjustPoints.AdjustPoints:1
+#: ../../../../src/abaqus/Constraint/Constraint.py:docstring of abaqus.Constraint.Constraint.Constraint:1
+#: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel:1
+#: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling:1
+#: ../../../../src/abaqus/Constraint/DisplayBody.py:docstring of abaqus.Constraint.DisplayBody.DisplayBody:1
+#: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion:1
+#: ../../../../src/abaqus/Constraint/Equation.py:docstring of abaqus.Constraint.Equation.Equation:1
+#: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint:1
+#: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody:1
+#: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling:1
+#: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie:1
+msgid "Member Details:"
+msgstr ""
+
 #: ../../../../src/abaqus/Constraint/AdjustPoints.py:docstring of abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:4
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.AdjustPoints:4
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.Coupling:4
@@ -1144,7 +1157,7 @@ msgstr ""
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.__init__:21
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues:10
 #: ../../docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.positionTolerance:1
-msgid "A Float specifying the position tolerance. The default value is 0.0.The **positionTolerance** argument applies only when **positionToleranceMethod** = SPECIFIED.Note:Abaqus will not constrain nodes on the solid face region outside the position tolerance."
+msgid "A Float specifying the position tolerance. The default value is 0.0.The **positionTolerance** argument applies only when **positionToleranceMethod** = SPECIFIED. Note: Abaqus will not constrain nodes on the solid face region outside the position tolerance."
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ConstraintModel.py:docstring of abaqus.Constraint.ConstraintModel.ConstraintModel.ShellSolidCoupling:26
@@ -1247,8 +1260,8 @@ msgstr ""
 msgid ":class:`Tie`"
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:20
-msgid "Classes"
+#: ../../reference/mdb/model/constraint.md:17
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/Constraint.py:docstring of abaqus.Constraint.Constraint.Constraint:1
@@ -1329,10 +1342,6 @@ msgstr ""
 msgid "A Boolean specifying whether the constraint is suppressed or not. The default value is OFF."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:33
-msgid "AdjustPoints"
-msgstr ""
-
 #: ../../../../src/abaqus/Constraint/AdjustPoints.py:docstring of abaqus.Constraint.AdjustPoints.AdjustPoints:1
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling:1
 #: ../../../../src/abaqus/Constraint/DisplayBody.py:docstring of abaqus.Constraint.DisplayBody.DisplayBody:1
@@ -1384,10 +1393,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Constraint/AdjustPoints.py:docstring of abaqus.Constraint.AdjustPoints.AdjustPoints.__init__:9
 msgid "Check `AdjustPoints.__init__ on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-adjustpointspyc.htm?contextscope=all#simaker-adjustpoints__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/constraint.rst:44
-msgid "Coupling"
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/Coupling.py:docstring of abaqus.Constraint.Coupling.Coupling:1
@@ -1495,10 +1500,6 @@ msgstr ""
 msgid "Check `Coupling.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-couplingpyc.htm?contextscope=all#simaker-couplingsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:54
-msgid "DisplayBody"
-msgstr ""
-
 #: ../../../../src/abaqus/Constraint/DisplayBody.py:docstring of abaqus.Constraint.DisplayBody.DisplayBody:1
 msgid "The DisplayBody object defines a constraint such that the specified instance is used for display only and does not take part in the analysis. However it will still be visible during postprocessing and its position at any frame will be defined by the translation and rotation of the specified control points. The DisplayBody object is derived from the ConstrainedSketchConstraint object."
 msgstr ""
@@ -1526,10 +1527,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Constraint/DisplayBody.py:docstring of abaqus.Constraint.DisplayBody.DisplayBody.__init__:9
 msgid "Check `DisplayBody.__init__ on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-displaybodypyc.htm?contextscope=all#simaker-displaybody__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/constraint.rst:64
-msgid "EmbeddedRegion"
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/EmbeddedRegion.py:docstring of abaqus.Constraint.EmbeddedRegion.EmbeddedRegion:1
@@ -1597,10 +1594,6 @@ msgstr ""
 msgid "Check `EmbeddedRegion.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-embeddedregionpyc.htm?contextscope=all#simaker-embeddedregionsetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:74
-msgid "Equation"
-msgstr ""
-
 #: ../../../../src/abaqus/Constraint/Equation.py:docstring of abaqus.Constraint.Equation.Equation:1
 msgid "The Equation object defines a linear multi-point constraint between a set of degrees of freedom. The Equation object is derived from the ConstrainedSketchConstraint object."
 msgstr ""
@@ -1628,10 +1621,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Constraint/Equation.py:docstring of abaqus.Constraint.Equation.Equation.__init__:9
 msgid "Check `Equation.__init__ on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-equationpyc.htm?contextscope=all#simaker-equation__init__pyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/constraint.rst:84
-msgid "MultipointConstraint"
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint:1
@@ -1689,10 +1678,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Constraint/MultipointConstraint.py:docstring of abaqus.Constraint.MultipointConstraint.MultipointConstraint.setValues:4
 msgid "Check `MultipointConstraint.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-multipointconstraintpyc.htm?contextscope=all#simaker-multipointconstraintsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/constraint.rst:94
-msgid "RigidBody"
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/RigidBody.py:docstring of abaqus.Constraint.RigidBody.RigidBody:1
@@ -1776,10 +1761,6 @@ msgstr ""
 msgid "Check `RigidBody.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-rigidbodypyc.htm?contextscope=all#simaker-rigidbodysetvaluespyc>`__."
 msgstr ""
 
-#: ../../reference/mdb/model/constraint.rst:104
-msgid "ShellSolidCoupling"
-msgstr ""
-
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling:1
 msgid "The ShellSolidCoupling object defines two surfaces to be tied together for the duration of a simulation. The ShellSolidCoupling object is derived from the ConstrainedSketchConstraint object."
 msgstr ""
@@ -1845,10 +1826,6 @@ msgstr ""
 
 #: ../../../../src/abaqus/Constraint/ShellSolidCoupling.py:docstring of abaqus.Constraint.ShellSolidCoupling.ShellSolidCoupling.setValues:4
 msgid "Check `ShellSolidCoupling.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/English/DSSIMULIA_Established/SIMACAEKERRefMap/simaker-c-shellsolidcouplingpyc.htm?contextscope=all#simaker-shellsolidcouplingsetvaluespyc>`__."
-msgstr ""
-
-#: ../../reference/mdb/model/constraint.rst:114
-msgid "Tie"
 msgstr ""
 
 #: ../../../../src/abaqus/Constraint/Tie.py:docstring of abaqus.Constraint.Tie.Tie:1

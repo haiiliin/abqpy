@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: abqpy 2020\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-23 14:44+0000\n"
+"POT-Creation-Date: 2022-10-30 00:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,17 +16,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../reference/mdb/model/part_assembly/feature.rst:3
-#: ../../reference/mdb/model/part_assembly/feature.rst:12
+#: ../../reference/mdb/model/part_assembly/feature.md:1
 msgid "Feature"
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/feature.rst:5
+#: ../../reference/mdb/model/part_assembly/feature.md:3
 msgid "Features in Abaqus/CAE include Parts, Datums, Partitions, and Assembly operations. The commands that create Feature objects on only the Part object are described in Part commands. The commands that create Feature objects in only the rootAssembly object are described in Assembly commands. The commands that create Feature objects on both the Part and the rootAssembly objects are described here."
 msgstr ""
 
-#: ../../reference/mdb/model/part_assembly/feature.rst:9
-msgid "Classes"
+#: ../../reference/mdb/model/part_assembly/feature.md:5
+msgid "Other Classes"
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature:1
@@ -621,6 +620,11 @@ msgstr ""
 
 #: ../../None:65:<autosummary>:1
 msgid "This method suppresses features."
+msgstr ""
+
+#: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature:1
+#: ../../../../src/abaqus/Feature/FeatureOptions.py:docstring of abaqus.Feature.FeatureOptions.FeatureOptions:1
+msgid "Member Details:"
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.AttachmentPoints:1
@@ -1407,7 +1411,7 @@ msgid "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByEdgeParam:16
-msgid "A Float specifying the distance along **edge** to the DatumPoint object. Possible values are 0 << **parameter** << 1."
+msgid "A Float specifying the distance along **edge** to the DatumPoint object. Possible values are 0 < **parameter** < 1."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByMidPoint:10
@@ -1456,7 +1460,7 @@ msgid "Check `DatumPointByProjOnFace on help.3ds.com/2020 <https://help.3ds.com/
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.DatumPointByProjOnFace:16
-msgid "A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a Datum object representing a datum plane.Note:Any other types of planes are not supported."
+msgid "A :py:class:`~abaqus.BasicGeometry.Face.Face` object or a Datum object representing a datum plane. Note: Any other types of planes are not supported."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.MakeSketchTransform:1
@@ -1604,7 +1608,7 @@ msgid "Check `PartitionCellByPlaneThreePoints on help.3ds.com/2020 <https://help
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellByPlaneThreePoints:19
-msgid "A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying a point on the plane.Note:*point1*, **point2**, and **point3** must not be colinear and must not coincide."
+msgid "A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object specifying a point on the plane. Note: *point1*, **point2**, and **point3** must not be colinear and must not coincide."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionCellBySweepEdge:11
@@ -1638,7 +1642,7 @@ msgid "Check `PartitionEdgeByParam on help.3ds.com/2020 <https://help.3ds.com/20
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionEdgeByParam:15
-msgid "A Float specifying the normalized distance along **edge** at which to partition. Possible values are 0.0 << **parameter** << 1.0."
+msgid "A Float specifying the normalized distance along **edge** at which to partition. Possible values are 0.0 < **parameter** < 1.0."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionEdgeByPoint:10
@@ -1753,7 +1757,7 @@ msgid "A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceByShortestPath:18
-msgid "A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object.Note:*point1* and **point2** must not coincide, and they must both lie on the underlying surface geometry of at least one of the target faces."
+msgid "A ConstrainedSketchVertex, InterestingPoint, or DatumPoint object. Note: *point1* and **point2** must not coincide, and they must both lie on the underlying surface geometry of at least one of the target faces."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketch:10
@@ -1790,7 +1794,7 @@ msgid "An :py:class:`~abaqus.BasicGeometry.Edge.Edge` object specifying the orie
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketchDistance:26
-msgid "A Float specifying the projection distance. Possible values are **distance** >> 0.0."
+msgid "A Float specifying the projection distance. Possible values are **distance** > 0.0."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.PartitionFaceBySketchRefPoint:12
@@ -1878,7 +1882,7 @@ msgid "Check `Feature.setValues on help.3ds.com/2020 <https://help.3ds.com/2020/
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.setValues:7
-msgid "A Float specifying the normalized distance along **edge** at which to partition. Possible values are 0.0 << **parameter** << 1.0. You use this argument to modify a partition created with the created with the PartitionEdgeByParam method."
+msgid "A Float specifying the normalized distance along **edge** at which to partition. Possible values are 0.0 < **parameter** < 1.0. You use this argument to modify a partition created with the created with the PartitionEdgeByParam method."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.setValues:11
@@ -1894,15 +1898,11 @@ msgid "A :py:class:`~abaqus.Sketcher.ConstrainedSketch.ConstrainedSketch` object
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.setValues:23
-msgid "A Float specifying the projection **distance**. Possible values are **distance** >> 0.0. You use this argument to modify a partition object created with the PartitionFaceBySketchDistance method."
+msgid "A Float specifying the projection **distance**. Possible values are **distance** > 0.0. You use this argument to modify a partition object created with the PartitionFaceBySketchDistance method."
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/Feature.py:docstring of abaqus.Feature.Feature.Feature.suppress:1
 msgid "This method suppresses features. Suppressing a feature is equivalent to temporarily removing the feature from the part or assembly. Suppressed features remain suppressed when you regenerate a part or assembly. You cannot suppress the base feature. In addition, if you suppress a parent feature, all of its child features are also suppressed automatically. Suppressed features can be restored with the resume command."
-msgstr ""
-
-#: ../../reference/mdb/model/part_assembly/feature.rst:22
-msgid "FeatureOptions"
 msgstr ""
 
 #: ../../../../src/abaqus/Feature/FeatureOptions.py:docstring of abaqus.Feature.FeatureOptions.FeatureOptions:1
