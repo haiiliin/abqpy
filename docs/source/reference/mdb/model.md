@@ -40,24 +40,3 @@ model/step
 
     .. autoclasstoc::
 ```
-
-### Other Classes
-
-```{eval-rst}
-
-.. toggle::
-
-    .. autoclass:: abaqus.Model.ModelBase.ModelBase
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-
-    .. autoclass:: abaqus.Model.KeywordBlock.KeywordBlock
-        :members:
-        :special-members: __init__
-        :show-inheritance:
-
-        .. autoclasstoc::
-```
