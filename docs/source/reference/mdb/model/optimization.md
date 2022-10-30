@@ -29,7 +29,7 @@ Optimization commands are used to perform topology, shape, or sizing optimizatio
 
 ```{eval-rst}
 
-.. collapse:: Click here to Expand
+.. toggle::
 
     .. autoclass:: abaqus.Optimization.BeadFixedRegion.BeadFixedRegion
         :members:
